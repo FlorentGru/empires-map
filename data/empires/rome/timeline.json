@@ -37,7 +37,27 @@
           "url": "https://fr.wikipedia.org/wiki/République_romaine"
         }
       ],
-      "territoryNote": "Seul l'ager Romanus (env. 800-900 km², estimation de Beloch) : rive gauche du Tibre entre l'Anio, la mer et les abords des monts Albains ; le reste du Latium (cités latines), l'Étrurie, la Sabine et le pays volsque sont indépendants."
+      "territoryNote": "Seul l'ager Romanus (env. 800-900 km², estimation de Beloch) : rive gauche du Tibre entre l'Anio, la mer et les abords des monts Albains ; le reste du Latium (cités latines), l'Étrurie, la Sabine et le pays volsque sont indépendants.",
+      "figures": [
+        {
+          "name": "Lucius Junius Brutus",
+          "role": "Premier consul",
+          "faction": "romains",
+          "archetype": "consul",
+          "quote": "Que Rome n'ait plus jamais de roi : je le jure devant les dieux (formule libre)"
+        },
+        {
+          "name": "Tarquin le Superbe",
+          "role": "Dernier roi de Rome",
+          "faction": "romains",
+          "archetype": "roi",
+          "quote": "Ils m'ont chassé de ma ville ; je la reprendrai avec les armes de l'Étrurie (formule libre)",
+          "position": [
+            12.1,
+            42
+          ]
+        }
+      ]
     },
     {
       "id": "ligue-latine-338",
@@ -68,7 +88,27 @@
           "url": "https://fr.wikipedia.org/wiki/Guerre_latine"
         }
       ],
-      "territoryNote": "Latium entier (annexé ou allié) + Étrurie méridionale (ex-territoire de Véies, Caere liée) + pays volsque et aurunque jusqu'à Terracina + Campanie du Nord (Capoue, Cumes, citoyenneté sans suffrage) ; pas le Samnium, ni le reste de l'Étrurie, ni l'Ombrie."
+      "territoryNote": "Latium entier (annexé ou allié) + Étrurie méridionale (ex-territoire de Véies, Caere liée) + pays volsque et aurunque jusqu'à Terracina + Campanie du Nord (Capoue, Cumes, citoyenneté sans suffrage) ; pas le Samnium, ni le reste de l'Étrurie, ni l'Ombrie.",
+      "figures": [
+        {
+          "name": "Caius Maenius",
+          "role": "Consul vainqueur du Latium",
+          "faction": "romains",
+          "archetype": "consul",
+          "quote": "Le Latium est vaincu : chaque cité aura désormais son statut propre envers Rome (formule libre)"
+        },
+        {
+          "name": "Lucius Annius de Sétia",
+          "role": "Préteur latin",
+          "faction": "latins",
+          "archetype": "senateur",
+          "quote": "Qu'un consul soit latin, et la moitié du Sénat aussi (exigence prêtée à Annius, selon Tite-Live)",
+          "position": [
+            13.05,
+            41.5
+          ]
+        }
+      ]
     },
     {
       "id": "tarente-272",
@@ -114,7 +154,52 @@
         "forces": "Inconnues ; siège plus que bataille rangée",
         "losses": "Non rapportées par les sources conservées"
       },
-      "territoryNote": "Italie péninsulaire de l'Arno (Pise) et du Rubicon/ager gallicus (Sena Gallica) jusqu'au détroit de Messine, Grande-Grèce incluse ; Rhegium aux mains de mutins jusqu'en 270 ; pas de plaine du Pô, ni Sicile, ni Sardaigne, ni Corse."
+      "territoryNote": "Italie péninsulaire de l'Arno (Pise) et du Rubicon/ager gallicus (Sena Gallica) jusqu'au détroit de Messine, Grande-Grèce incluse ; Rhegium aux mains de mutins jusqu'en 270 ; pas de plaine du Pô, ni Sicile, ni Sardaigne, ni Corse.",
+      "armies": [
+        {
+          "side": "Rome",
+          "faction": "romains",
+          "path": [
+            [
+              12.49,
+              41.89
+            ],
+            [
+              14.25,
+              41.1
+            ],
+            [
+              15.8,
+              40.95
+            ],
+            [
+              17.18,
+              40.5
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Tarente et Épire",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              19.9,
+              39.6
+            ],
+            [
+              18.6,
+              39.9
+            ],
+            [
+              17.3,
+              40.42
+            ]
+          ],
+          "strength": 2
+        }
+      ]
     },
     {
       "id": "sicile-241",
@@ -159,7 +244,56 @@
         "forces": "Selon Polybe, 200 quinquérèmes romaines ; flotte carthaginoise d'environ 250 navires selon Diodore, chiffre incertain",
         "losses": "Selon Polybe, 50 navires carthaginois coulés, 70 capturés et près de 10 000 prisonniers ; pertes romaines modestes"
       },
-      "territoryNote": "Italie péninsulaire + Sicile sauf le royaume de Syracuse (quart sud-est : Syracuse, Léontinoi, Akrai, Héloros, Tauroménion) + îles Lipari et Égates ; ni Sardaigne ni Corse (prises en 238-237), ni plaine du Pô."
+      "territoryNote": "Italie péninsulaire + Sicile sauf le royaume de Syracuse (quart sud-est : Syracuse, Léontinoi, Akrai, Héloros, Tauroménion) + îles Lipari et Égates ; ni Sardaigne ni Corse (prises en 238-237), ni plaine du Pô.",
+      "armies": [
+        {
+          "side": "Flotte romaine",
+          "faction": "romains",
+          "path": [
+            [
+              12.25,
+              41.75
+            ],
+            [
+              12,
+              40
+            ],
+            [
+              12.2,
+              38.5
+            ],
+            [
+              12.25,
+              37.92
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Flotte carthaginoise",
+          "faction": "carthaginois",
+          "path": [
+            [
+              10.32,
+              36.85
+            ],
+            [
+              11,
+              37.1
+            ],
+            [
+              11.8,
+              37.7
+            ],
+            [
+              12.4,
+              38.02
+            ]
+          ],
+          "strength": 3
+        }
+      ]
     },
     {
       "id": "hannibal-218",
@@ -207,7 +341,64 @@
         "forces": "Selon Polybe, environ 36 000 fantassins et 4 000 cavaliers romains et alliés ; environ 20 000 fantassins, 10 000 cavaliers (Gaulois compris) et des éléphants côté carthaginois",
         "losses": "Pertes romaines très lourdes (peut-être 20 000 tués ou capturés selon les estimations modernes) ; pertes carthaginoises surtout parmi les Gaulois ; presque tous les éléphants meurent ensuite du froid"
       },
-      "territoryNote": "Italie péninsulaire + Sicile (sauf royaume allié de Syracuse) + Sardaigne et Corse ; en Cisalpine seulement les colonies de Plaisance et Crémone (le reste, soumis en 222, est insurgé) ; tête de pont en Espagne autour d'Emporion/Tarragone ; protectorat sur la côte illyrienne."
+      "territoryNote": "Italie péninsulaire + Sicile (sauf royaume allié de Syracuse) + Sardaigne et Corse ; en Cisalpine seulement les colonies de Plaisance et Crémone (le reste, soumis en 222, est insurgé) ; tête de pont en Espagne autour d'Emporion/Tarragone ; protectorat sur la côte illyrienne.",
+      "armies": [
+        {
+          "side": "Hannibal",
+          "faction": "carthaginois",
+          "path": [
+            [
+              -0.98,
+              37.62
+            ],
+            [
+              3.1,
+              42.1
+            ],
+            [
+              4.8,
+              43.9
+            ],
+            [
+              6.95,
+              45.1
+            ],
+            [
+              7.7,
+              45.07
+            ],
+            [
+              9.55,
+              45.02
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Rome",
+          "faction": "romains",
+          "path": [
+            [
+              12.49,
+              41.89
+            ],
+            [
+              12.57,
+              44.06
+            ],
+            [
+              11.34,
+              44.49
+            ],
+            [
+              9.69,
+              45.04
+            ]
+          ],
+          "strength": 2
+        }
+      ]
     },
     {
       "id": "cannes-216",
@@ -257,7 +448,64 @@
         "forces": "Selon Polybe, environ 80 000 fantassins et 6 000 cavaliers romains et alliés ; 40 000 fantassins et 10 000 cavaliers carthaginois",
         "losses": "Selon Polybe, 70 000 morts romains (chiffre sans doute exagéré) ; Tite-Live donne 48 200 tués ; environ 5 700 morts côté carthaginois selon Polybe"
       },
-      "territoryNote": "Rome perd une large part du sud : Capoue et la Campanie intérieure, Samnium (Hirpins, Caudins), Lucanie, Bruttium, Apulie méridionale passent à Hannibal (Tarente en 212, Syracuse en 214) ; elle garde Latium, Étrurie, Ombrie, Picenum, Campanie côtière, colonies latines, Sicile provinciale, Sardaigne, Corse ; Cisalpine perdue sauf Plaisance et Crémone ; tête de pont en Espagne du Nord-Est."
+      "territoryNote": "Rome perd une large part du sud : Capoue et la Campanie intérieure, Samnium (Hirpins, Caudins), Lucanie, Bruttium, Apulie méridionale passent à Hannibal (Tarente en 212, Syracuse en 214) ; elle garde Latium, Étrurie, Ombrie, Picenum, Campanie côtière, colonies latines, Sicile provinciale, Sardaigne, Corse ; Cisalpine perdue sauf Plaisance et Crémone ; tête de pont en Espagne du Nord-Est.",
+      "armies": [
+        {
+          "side": "Hannibal",
+          "faction": "carthaginois",
+          "path": [
+            [
+              -0.98,
+              37.62
+            ],
+            [
+              4.8,
+              43.9
+            ],
+            [
+              6.95,
+              45.1
+            ],
+            [
+              12.1,
+              43.15
+            ],
+            [
+              14.6,
+              41.9
+            ],
+            [
+              16.19,
+              41.32
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Rome",
+          "faction": "romains",
+          "path": [
+            [
+              12.49,
+              41.89
+            ],
+            [
+              14.25,
+              41.1
+            ],
+            [
+              15.5,
+              41.2
+            ],
+            [
+              16.07,
+              41.29
+            ]
+          ],
+          "strength": 3
+        }
+      ]
     },
     {
       "id": "zama-202",
@@ -306,7 +554,56 @@
         "forces": "Estimations modernes : environ 29 000 fantassins et 6 000 cavaliers côté romain et numide ; 36 000 à 40 000 hommes et 80 éléphants côté carthaginois",
         "losses": "Selon Polybe, 20 000 Carthaginois tués et autant de prisonniers ; environ 1 500 morts côté romain"
       },
-      "territoryNote": "Italie péninsulaire entière (sud reconquis) + Sicile entière (Syracuse annexée en 211) + Sardaigne et Corse + Espagne orientale et méridionale (côte de l'Èbre à Gadès et vallée du Guadalquivir) ; Cisalpine encore insoumise (Boïens, Insubres, Ligures) ; aucune province en Afrique (Numidie alliée)."
+      "territoryNote": "Italie péninsulaire entière (sud reconquis) + Sicile entière (Syracuse annexée en 211) + Sardaigne et Corse + Espagne orientale et méridionale (côte de l'Èbre à Gadès et vallée du Guadalquivir) ; Cisalpine encore insoumise (Boïens, Insubres, Ligures) ; aucune province en Afrique (Numidie alliée).",
+      "armies": [
+        {
+          "side": "Scipion",
+          "faction": "romains",
+          "path": [
+            [
+              12.4,
+              37.8
+            ],
+            [
+              11,
+              37.5
+            ],
+            [
+              10.06,
+              37.06
+            ],
+            [
+              9.6,
+              36.5
+            ],
+            [
+              9.35,
+              36.18
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Carthage",
+          "faction": "carthaginois",
+          "path": [
+            [
+              10.6,
+              35.64
+            ],
+            [
+              10,
+              35.9
+            ],
+            [
+              9.46,
+              36.22
+            ]
+          ],
+          "strength": 2
+        }
+      ]
     },
     {
       "id": "pydna-168",
@@ -354,7 +651,52 @@
         "forces": "Environ 38 000 hommes de chaque côté selon les estimations modernes ; Tite-Live et Plutarque donnent environ 40 000 fantassins et 4 000 cavaliers à Persée",
         "losses": "Selon Plutarque, 20 000 à 25 000 Macédoniens tués ; une centaine de morts seulement côté romain (chiffre certainement minimisé)"
       },
-      "territoryNote": "Italie jusqu'aux Alpes (Cisalpine soumise après 191 ; Ligurie en partie) + Sicile + Sardaigne et Corse + Hispanie citérieure et ultérieure (côte méditerranéenne et Bétique, environ le tiers est et sud de la péninsule) + côte illyrienne ; Macédoine NON annexée (quatre républiques clientes), Grèce et Asie Mineure clientes mais hors provinces."
+      "territoryNote": "Italie jusqu'aux Alpes (Cisalpine soumise après 191 ; Ligurie en partie) + Sicile + Sardaigne et Corse + Hispanie citérieure et ultérieure (côte méditerranéenne et Bétique, environ le tiers est et sud de la péninsule) + côte illyrienne ; Macédoine NON annexée (quatre républiques clientes), Grèce et Asie Mineure clientes mais hors provinces.",
+      "armies": [
+        {
+          "side": "Rome",
+          "faction": "romains",
+          "path": [
+            [
+              17.94,
+              40.64
+            ],
+            [
+              19.45,
+              40.47
+            ],
+            [
+              21.2,
+              39.77
+            ],
+            [
+              22.58,
+              39.9
+            ],
+            [
+              22.55,
+              40.34
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Macédoine",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              22.52,
+              40.76
+            ],
+            [
+              22.68,
+              40.43
+            ]
+          ],
+          "strength": 2
+        }
+      ]
     },
     {
       "id": "carthage-146",
@@ -400,7 +742,72 @@
         "forces": "Inconnues avec précision ; plusieurs dizaines de milliers d'assiégeants",
         "losses": "Population décimée ; environ 50 000 survivants réduits en esclavage selon Appien"
       },
-      "territoryNote": "Comme en 168 + province d'Africa (ancien territoire carthaginois jusqu'à la fossa regia, nord-est de la Tunisie) + province de Macédoine (avec Épire et Grèce rattachées de fait) ; Hispanie toujours limitée au sud et à l'est (Lusitanie et Celtibérie insoumises) ; Numidie alliée indépendante."
+      "territoryNote": "Comme en 168 + province d'Africa (ancien territoire carthaginois jusqu'à la fossa regia, nord-est de la Tunisie) + province de Macédoine (avec Épire et Grèce rattachées de fait) ; Hispanie toujours limitée au sud et à l'est (Lusitanie et Celtibérie insoumises) ; Numidie alliée indépendante.",
+      "armies": [
+        {
+          "side": "Rome",
+          "faction": "romains",
+          "path": [
+            [
+              12.25,
+              41.75
+            ],
+            [
+              12,
+              39.2
+            ],
+            [
+              11.2,
+              37.6
+            ],
+            [
+              10.2,
+              37
+            ],
+            [
+              10.29,
+              36.88
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Carthage",
+          "faction": "carthaginois",
+          "path": [
+            [
+              10.15,
+              36.76
+            ],
+            [
+              10.35,
+              36.83
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Scipion Émilien",
+          "role": "Destructeur de Carthage",
+          "faction": "romains",
+          "archetype": "consul",
+          "quote": "Un jour viendra où périront la sainte Troie, Priam et son peuple (vers d'Homère cité par Scipion, selon Polybe)"
+        },
+        {
+          "name": "Caton l'Ancien",
+          "role": "Censeur",
+          "faction": "romains",
+          "archetype": "senateur",
+          "quote": "Du reste, je pense qu'il faut détruire Carthage (selon Plutarque et Pline)",
+          "position": [
+            12.49,
+            41.89
+          ]
+        }
+      ]
     },
     {
       "id": "pergame-133",
@@ -433,7 +840,27 @@
           "url": "https://fr.wikipedia.org/wiki/Attale_III"
         }
       ],
-      "territoryNote": "Comme en 146 + royaume de Pergame (ouest de l'Anatolie : Mysie, Troade, Lydie, Ionie, Carie occidentale), effectif seulement après 129 ; Phrygie cédée au Pont ; Hispanie étendue à la Celtibérie (Numance) mais sans le nord-ouest ni la côte cantabrique ; pas encore de Gaule transalpine (121)."
+      "territoryNote": "Comme en 146 + royaume de Pergame (ouest de l'Anatolie : Mysie, Troade, Lydie, Ionie, Carie occidentale), effectif seulement après 129 ; Phrygie cédée au Pont ; Hispanie étendue à la Celtibérie (Numance) mais sans le nord-ouest ni la côte cantabrique ; pas encore de Gaule transalpine (121).",
+      "figures": [
+        {
+          "name": "Attale III",
+          "role": "Dernier roi de Pergame",
+          "faction": "grecs-macedoniens",
+          "archetype": "roi",
+          "quote": "Je lègue mon royaume au peuple romain (formule libre)"
+        },
+        {
+          "name": "Tiberius Gracchus",
+          "role": "Tribun de la plèbe",
+          "faction": "romains",
+          "archetype": "senateur",
+          "quote": "Les bêtes sauvages d'Italie ont leur tanière ; ceux qui combattent n'ont que l'air et la lumière (Plutarque)",
+          "position": [
+            12.49,
+            41.89
+          ]
+        }
+      ]
     },
     {
       "id": "pompee-63",
@@ -466,7 +893,16 @@
           "url": "https://fr.wikipedia.org/wiki/Pompée"
         }
       ],
-      "territoryNote": "Italie et Cisalpine + Gaule narbonnaise (121) + Hispanie sauf le nord-ouest (Galice, Asturies, Cantabrie) + Sicile, Sardaigne, Corse + Africa (petite, Numidie indépendante) + Cyrénaïque + Crète + Illyricum côtier + Macédoine et Achaïe + Asie + Bithynie-Pont (Pont occidental) + Cilicie élargie + Syrie (jusqu'à l'Euphrate) ; clients non annexés : Judée, Galatie, Cappadoce, Arménie, Commagène ; Égypte indépendante ; Gaule chevelue libre."
+      "territoryNote": "Italie et Cisalpine + Gaule narbonnaise (121) + Hispanie sauf le nord-ouest (Galice, Asturies, Cantabrie) + Sicile, Sardaigne, Corse + Africa (petite, Numidie indépendante) + Cyrénaïque + Crète + Illyricum côtier + Macédoine et Achaïe + Asie + Bithynie-Pont (Pont occidental) + Cilicie élargie + Syrie (jusqu'à l'Euphrate) ; clients non annexés : Judée, Galatie, Cappadoce, Arménie, Commagène ; Égypte indépendante ; Gaule chevelue libre.",
+      "figures": [
+        {
+          "name": "Pompée",
+          "role": "Imperator d'Orient",
+          "faction": "romains",
+          "archetype": "consul",
+          "quote": "De la mer Caspienne à la mer Rouge, l'Orient est ordonné et tient de Rome ses lois (formule libre)"
+        }
+      ]
     },
     {
       "id": "alesia-52",
@@ -516,7 +952,87 @@
         "forces": "Selon César, 80 000 Gaulois dans l'oppidum et une armée de secours de 248 000 hommes (chiffres jugés très exagérés) ; côté romain, 10 à 12 légions, soit peut-être 50 000 à 60 000 hommes avec les auxiliaires",
         "losses": "Inconnues avec précision ; César évoque des pertes gauloises considérables et la répartition des captifs comme esclaves entre ses soldats"
       },
-      "territoryNote": "Comme en 63 + Gaule chevelue entière (du Rhin aux Pyrénées, Armorique et Belgique incluses) ; ni Bretagne, ni rive droite du Rhin ; Égypte, Numidie et Maurétanie indépendantes ; Arménie et Judée clientes."
+      "territoryNote": "Comme en 63 + Gaule chevelue entière (du Rhin aux Pyrénées, Armorique et Belgique incluses) ; ni Bretagne, ni rive droite du Rhin ; Égypte, Numidie et Maurétanie indépendantes ; Arménie et Judée clientes.",
+      "armies": [
+        {
+          "side": "Armée de César",
+          "faction": "romains",
+          "path": [
+            [
+              4.83,
+              43.93
+            ],
+            [
+              4.84,
+              45.76
+            ],
+            [
+              4.85,
+              46.78
+            ],
+            [
+              4.45,
+              47.52
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Vercingétorix",
+          "faction": "gaulois",
+          "path": [
+            [
+              3.1,
+              45.72
+            ],
+            [
+              4.04,
+              46.93
+            ],
+            [
+              4.55,
+              47.54
+            ]
+          ],
+          "strength": 2
+        },
+        {
+          "side": "Armée de secours gauloise",
+          "faction": "gaulois",
+          "path": [
+            [
+              2.4,
+              47.08
+            ],
+            [
+              3.4,
+              47.4
+            ],
+            [
+              4.38,
+              47.6
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Jules César",
+          "role": "Proconsul des Gaules",
+          "faction": "romains",
+          "archetype": "consul",
+          "quote": "Je les enfermerai dans leurs murs et je ferai face à ceux qui viendront les délivrer (formule libre)"
+        },
+        {
+          "name": "Vercingétorix",
+          "role": "Chef de la coalition gauloise",
+          "faction": "gaulois",
+          "archetype": "chef-barbare",
+          "quote": "Prenez-moi : j'ai combattu pour la liberté de tous les Gaulois (formule libre)"
+        }
+      ]
     },
     {
       "id": "actium-31",
@@ -565,7 +1081,83 @@
         "forces": "Selon Plutarque, environ 250 navires pour Octavien contre 500 pour Antoine (dont beaucoup ne purent être armés) ; sur terre, environ 80 000 fantassins pour Octavien et 100 000 pour Antoine",
         "losses": "Selon Plutarque, environ 5 000 morts et 300 navires capturés côté antonien ; pertes d'Octavien faibles"
       },
-      "territoryNote": "Comme en 52 + Africa nova (ancienne Numidie, annexée en 46) + Illyricum consolidé ; Égypte encore lagide jusqu'en août 30 ; Maurétanie, Galatie, Judée, Cappadoce, Thrace clientes ; nord-ouest de l'Hispanie, arc alpin et rive du Danube non soumis."
+      "territoryNote": "Comme en 52 + Africa nova (ancienne Numidie, annexée en 46) + Illyricum consolidé ; Égypte encore lagide jusqu'en août 30 ; Maurétanie, Galatie, Judée, Cappadoce, Thrace clientes ; nord-ouest de l'Hispanie, arc alpin et rive du Danube non soumis.",
+      "armies": [
+        {
+          "side": "Octavien",
+          "faction": "romains",
+          "path": [
+            [
+              17.94,
+              40.64
+            ],
+            [
+              19,
+              39.9
+            ],
+            [
+              19.8,
+              39.2
+            ],
+            [
+              20.62,
+              38.94
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Antoine",
+          "faction": "romains",
+          "path": [
+            [
+              21.73,
+              38.24
+            ],
+            [
+              21.12,
+              38.38
+            ],
+            [
+              20.8,
+              38.96
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Cléopâtre",
+          "faction": "egyptiens",
+          "path": [
+            [
+              29.9,
+              31.2
+            ],
+            [
+              24,
+              34.3
+            ],
+            [
+              21.3,
+              36.6
+            ],
+            [
+              20.1,
+              37.8
+            ],
+            [
+              20.2,
+              38.7
+            ],
+            [
+              20.78,
+              38.97
+            ]
+          ],
+          "strength": 2
+        }
+      ]
     },
     {
       "id": "auguste-27",
@@ -599,7 +1191,16 @@
           "url": "https://fr.wikipedia.org/wiki/Auguste"
         }
       ],
-      "territoryNote": "Tout le pourtour méditerranéen sauf la Maurétanie (cliente) : comme en 31 + Égypte (30) ; frontière au Rhin ; nord-ouest hispanique (Galice, Asturies, Cantabrie) en cours de conquête ; arc alpin, Rhétie, Norique, Pannonie et Mésie pas encore conquis ; Thrace, Judée, Cappadoce, Galatie (jusqu'en 25) clientes."
+      "territoryNote": "Tout le pourtour méditerranéen sauf la Maurétanie (cliente) : comme en 31 + Égypte (30) ; frontière au Rhin ; nord-ouest hispanique (Galice, Asturies, Cantabrie) en cours de conquête ; arc alpin, Rhétie, Norique, Pannonie et Mésie pas encore conquis ; Thrace, Judée, Cappadoce, Galatie (jusqu'en 25) clientes.",
+      "figures": [
+        {
+          "name": "Auguste",
+          "role": "Premier empereur",
+          "faction": "romains",
+          "archetype": "empereur",
+          "quote": "J'ai trouvé une Rome de briques, je laisse une Rome de marbre (selon Suétone)"
+        }
+      ]
     },
     {
       "id": "teutobourg-9",
@@ -645,7 +1246,68 @@
         "forces": "Trois légions, trois ailes de cavalerie et six cohortes auxiliaires, soit environ 15 000 à 20 000 soldats selon les estimations modernes, plus des non-combattants ; effectifs germaniques inconnus",
         "losses": "Quasi-totalité de l'armée de Varus ; pertes germaniques inconnues"
       },
-      "territoryNote": "Frontière ramenée au Rhin (Germanie entre Rhin et Elbe perdue) ; Hispanie entièrement soumise ; Alpes, Rhétie, Norique, Pannonie, Dalmatie, Mésie jusqu'au Danube ; Égypte ; Judée province (depuis 6) ; Galatie province ; Thrace, Maurétanie et Cappadoce encore clientes ; pas de Bretagne."
+      "territoryNote": "Frontière ramenée au Rhin (Germanie entre Rhin et Elbe perdue) ; Hispanie entièrement soumise ; Alpes, Rhétie, Norique, Pannonie, Dalmatie, Mésie jusqu'au Danube ; Égypte ; Judée province (depuis 6) ; Galatie province ; Thrace, Maurétanie et Cappadoce encore clientes ; pas de Bretagne.",
+      "armies": [
+        {
+          "side": "Varus",
+          "faction": "romains",
+          "path": [
+            [
+              9.05,
+              52.25
+            ],
+            [
+              8.6,
+              52.3
+            ],
+            [
+              8.16,
+              52.38
+            ]
+          ],
+          "strength": 2
+        },
+        {
+          "side": "Arminius",
+          "faction": "germains",
+          "path": [
+            [
+              9.4,
+              52
+            ],
+            [
+              8.8,
+              52.5
+            ],
+            [
+              8.12,
+              52.44
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Arminius",
+          "role": "Chef chérusque",
+          "faction": "germains",
+          "archetype": "chef-barbare",
+          "quote": "Libérons la Germanie : elle n'est pas une province de Rome (formule libre)"
+        },
+        {
+          "name": "Auguste",
+          "role": "Empereur",
+          "faction": "romains",
+          "archetype": "empereur",
+          "quote": "Quintilius Varus, rends-moi mes légions ! (selon Suétone)",
+          "position": [
+            12.49,
+            41.89
+          ]
+        }
+      ]
     },
     {
       "id": "bretagne-43",
@@ -694,7 +1356,65 @@
         "forces": "Quatre légions et des auxiliaires, soit environ 40 000 hommes selon les estimations modernes ; forces bretonnes inconnues",
         "losses": "Non rapportées de façon fiable"
       },
-      "territoryNote": "Comme en 9 + sud-est de la Bretagne (Kent, bassin de la Tamise, Essex jusqu'à Camulodunum ; ligne Exeter-Lincoln vers 47) + Maurétanie (Tingitane et Césarienne, vers 42-44) + Lycie (43) + Cappadoce (17) ; Thrace annexée en 46 ; Judée sous le roi Agrippa Ier jusqu'en 44."
+      "territoryNote": "Comme en 9 + sud-est de la Bretagne (Kent, bassin de la Tamise, Essex jusqu'à Camulodunum ; ligne Exeter-Lincoln vers 47) + Maurétanie (Tingitane et Césarienne, vers 42-44) + Lycie (43) + Cappadoce (17) ; Thrace annexée en 46 ; Judée sous le roi Agrippa Ier jusqu'en 44.",
+      "armies": [
+        {
+          "side": "Légions de Claude",
+          "faction": "romains",
+          "path": [
+            [
+              1.6,
+              50.73
+            ],
+            [
+              1.5,
+              51.15
+            ],
+            [
+              1.33,
+              51.29
+            ],
+            [
+              0.52,
+              51.36
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Bretons",
+          "faction": "gaulois",
+          "path": [
+            [
+              0.9,
+              51.89
+            ],
+            [
+              0.7,
+              51.6
+            ],
+            [
+              0.46,
+              51.34
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Claude",
+          "role": "Empereur",
+          "faction": "romains",
+          "archetype": "empereur",
+          "quote": "Je confie à mes légions la Bretagne que César n'a fait qu'entrevoir (formule libre)",
+          "position": [
+            0.9,
+            51.89
+          ]
+        }
+      ]
     },
     {
       "id": "trajan-117",
@@ -727,7 +1447,20 @@
           "url": "https://fr.wikipedia.org/wiki/Trajan"
         }
       ],
-      "territoryNote": "Extension maximale : Bretagne jusqu'à la ligne Solway-Tyne (pas l'Écosse) ; Rhin + champs Décumates (angle Rhin-Danube) ; Danube + Dacie (Transylvanie, Banat, Olténie) ; Thrace ; toute l'Anatolie ; Arménie (114) ; Mésopotamie et Assyrie (115-116, contrôle précaire, abandonnées dès 117-118) ; Syrie, Judée, Arabie pétrée (Sinaï, Jordanie, nord-ouest de l'Arabie jusqu'à Hégra) ; Égypte ; toute l'Afrique du Nord côtière jusqu'à l'Atlantique (Maurétanie Tingitane)."
+      "territoryNote": "Extension maximale : Bretagne jusqu'à la ligne Solway-Tyne (pas l'Écosse) ; Rhin + champs Décumates (angle Rhin-Danube) ; Danube + Dacie (Transylvanie, Banat, Olténie) ; Thrace ; toute l'Anatolie ; Arménie (114) ; Mésopotamie et Assyrie (115-116, contrôle précaire, abandonnées dès 117-118) ; Syrie, Judée, Arabie pétrée (Sinaï, Jordanie, nord-ouest de l'Arabie jusqu'à Hégra) ; Égypte ; toute l'Afrique du Nord côtière jusqu'à l'Atlantique (Maurétanie Tingitane).",
+      "figures": [
+        {
+          "name": "Trajan",
+          "role": "Empereur à l'apogée de l'Empire",
+          "faction": "romains",
+          "archetype": "empereur",
+          "quote": "Si j'étais plus jeune, j'irais jusqu'aux Indes (selon Dion Cassius)",
+          "position": [
+            47.9,
+            30.55
+          ]
+        }
+      ]
     },
     {
       "id": "dacie-271",
@@ -760,7 +1493,16 @@
           "url": "https://fr.wikipedia.org/wiki/Dacie_romaine"
         }
       ],
-      "territoryNote": "Pouvoir central d'Aurélien : Italie, Afrique, Hispanie (revenue en 269), Rhétie, Norique, Pannonie, Balkans jusqu'au Danube, Grèce ; Dacie transdanubienne abandonnée (date 271-275 discutée) et champs Décumates perdus ; sécessions encore actives : Empire des Gaules (Gaule, Bretagne, Germanies) et Palmyre (Syrie, Égypte, Arabie, partie de l'Anatolie) — à figurer comme non contrôlés ou à part ; Arménie et Mésopotamie du Nord hors Empire."
+      "territoryNote": "Pouvoir central d'Aurélien : Italie, Afrique, Hispanie (revenue en 269), Rhétie, Norique, Pannonie, Balkans jusqu'au Danube, Grèce ; Dacie transdanubienne abandonnée (date 271-275 discutée) et champs Décumates perdus ; sécessions encore actives : Empire des Gaules (Gaule, Bretagne, Germanies) et Palmyre (Syrie, Égypte, Arabie, partie de l'Anatolie) — à figurer comme non contrôlés ou à part ; Arménie et Mésopotamie du Nord hors Empire.",
+      "figures": [
+        {
+          "name": "Aurélien",
+          "role": "Empereur restaurateur",
+          "faction": "romains",
+          "archetype": "empereur",
+          "quote": "Je replie les légions sur le Danube pour sauver ce que Rome peut encore tenir (formule libre)"
+        }
+      ]
     },
     {
       "id": "tetrarchie-285",
@@ -793,7 +1535,27 @@
           "url": "https://fr.wikipedia.org/wiki/Tétrarchie"
         }
       ],
-      "territoryNote": "Empire réunifié : Bretagne jusqu'au mur d'Hadrien (aux mains de Carausius 286-296), Gaule et Germanies jusqu'au Rhin, Rhétie et Norique (sans les champs Décumates), Danube (sans la Dacie transdanubienne), Balkans, Anatolie, Syrie, Mésopotamie du Nord (Nisibe, frontière du Khabour), Arabie, Égypte, Afrique du Nord ; Maurétanie Tingitane réduite à sa partie nord (Tanger, Volubilis évacué vers 285)."
+      "territoryNote": "Empire réunifié : Bretagne jusqu'au mur d'Hadrien (aux mains de Carausius 286-296), Gaule et Germanies jusqu'au Rhin, Rhétie et Norique (sans les champs Décumates), Danube (sans la Dacie transdanubienne), Balkans, Anatolie, Syrie, Mésopotamie du Nord (Nisibe, frontière du Khabour), Arabie, Égypte, Afrique du Nord ; Maurétanie Tingitane réduite à sa partie nord (Tanger, Volubilis évacué vers 285).",
+      "figures": [
+        {
+          "name": "Dioclétien",
+          "role": "Empereur, fondateur de la Tétrarchie",
+          "faction": "romains",
+          "archetype": "empereur",
+          "quote": "Si vous voyiez les choux que j'ai plantés, vous ne me presseriez pas de régner (tradition)"
+        },
+        {
+          "name": "Maximien",
+          "role": "Coempereur d'Occident",
+          "faction": "romains",
+          "archetype": "empereur",
+          "quote": "Je veille sur l'Occident pendant que Dioclétien gouverne l'Orient (formule libre)",
+          "position": [
+            9.19,
+            45.46
+          ]
+        }
+      ]
     },
     {
       "id": "constantinople-330",
@@ -826,7 +1588,16 @@
           "url": "https://fr.wikipedia.org/wiki/Constantinople"
         }
       ],
-      "territoryNote": "Empire uni sous Constantin : frontières de la Tétrarchie (Bretagne jusqu'au mur d'Hadrien, Rhin, Danube sans la Dacie, Euphrate) + régions transtigritanes (Arzanène, Corduène… depuis 298) ; têtes de pont au nord du Danube (Sucidava) sans province ; Arménie royaume client."
+      "territoryNote": "Empire uni sous Constantin : frontières de la Tétrarchie (Bretagne jusqu'au mur d'Hadrien, Rhin, Danube sans la Dacie, Euphrate) + régions transtigritanes (Arzanène, Corduène… depuis 298) ; têtes de pont au nord du Danube (Sucidava) sans province ; Arménie royaume client.",
+      "figures": [
+        {
+          "name": "Constantin Ier",
+          "role": "Fondateur de Constantinople",
+          "faction": "romains",
+          "archetype": "empereur",
+          "quote": "Par ce signe, tu vaincras (vision de 312, selon Eusèbe de Césarée)"
+        }
+      ]
     },
     {
       "id": "partage-395",
@@ -859,7 +1630,27 @@
           "url": "https://fr.wikipedia.org/wiki/Théodose_Ier"
         }
       ],
-      "territoryNote": "Empire entier mais en deux parties : Occident (Bretagne jusqu'au mur, Gaules, Hispanie, Italie, Rhétie, Norique, Pannonie, Dalmatie, Afrique de la Tingitane à la Tripolitaine) / Orient (Dacie et Macédoine, Thrace, Anatolie, Arménie occidentale après 387, Syrie, Palestine, Égypte, Cyrénaïque) ; frontière : Drina-Sirmium/Singidunum jusqu'au golfe de Syrte ; Nisibe et le pays transtigritain perdus (363) ; Goths fédérés en Mésie inférieure."
+      "territoryNote": "Empire entier mais en deux parties : Occident (Bretagne jusqu'au mur, Gaules, Hispanie, Italie, Rhétie, Norique, Pannonie, Dalmatie, Afrique de la Tingitane à la Tripolitaine) / Orient (Dacie et Macédoine, Thrace, Anatolie, Arménie occidentale après 387, Syrie, Palestine, Égypte, Cyrénaïque) ; frontière : Drina-Sirmium/Singidunum jusqu'au golfe de Syrte ; Nisibe et le pays transtigritain perdus (363) ; Goths fédérés en Mésie inférieure.",
+      "figures": [
+        {
+          "name": "Théodose Ier",
+          "role": "Dernier empereur unique",
+          "faction": "romains",
+          "archetype": "empereur",
+          "quote": "Je partage l'Empire entre mes deux fils : Arcadius à l'Orient, Honorius à l'Occident (formule libre)"
+        },
+        {
+          "name": "Arcadius",
+          "role": "Empereur d'Orient",
+          "faction": "byzantins",
+          "archetype": "empereur-byzantin",
+          "quote": "Je gouverne l'Orient depuis Constantinople (formule libre)",
+          "position": [
+            28.9784,
+            41.0082
+          ]
+        }
+      ]
     },
     {
       "id": "sac-rome-410",
@@ -907,7 +1698,57 @@
         "forces": "Effectifs goths inconnus, peut-être quelques dizaines de milliers de combattants avec leurs familles ; garnison de Rome faible",
         "losses": "Inconnues ; pillage jugé relativement modéré par les sources chrétiennes"
       },
-      "territoryNote": "Orient intact (Balkans jusqu'au Danube, Anatolie, Syrie, Égypte, Cyrénaïque) ; Occident : Italie, Afrique, Dalmatie, Pannonie occidentale, Rhétie, Norique, Gaule méridionale (mais Gaule largement tenue par l'usurpateur Constantin III) ; Bretagne abandonnée de fait ; Hispanie envahie (Vandales, Alains, Suèves en Galice, Lusitanie, Bétique ; Tarraconaise encore romaine)."
+      "territoryNote": "Orient intact (Balkans jusqu'au Danube, Anatolie, Syrie, Égypte, Cyrénaïque) ; Occident : Italie, Afrique, Dalmatie, Pannonie occidentale, Rhétie, Norique, Gaule méridionale (mais Gaule largement tenue par l'usurpateur Constantin III) ; Bretagne abandonnée de fait ; Hispanie envahie (Vandales, Alains, Suèves en Galice, Lusitanie, Bétique ; Tarraconaise encore romaine).",
+      "armies": [
+        {
+          "side": "Alaric et les Goths",
+          "faction": "goths-vandales",
+          "path": [
+            [
+              14.5,
+              46.05
+            ],
+            [
+              12.57,
+              44.06
+            ],
+            [
+              12.52,
+              42.52
+            ],
+            [
+              12.55,
+              41.93
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Défenseurs de Rome",
+          "faction": "romains",
+          "path": [
+            [
+              12.4,
+              42
+            ],
+            [
+              12.47,
+              41.9
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Alaric",
+          "role": "Roi des Wisigoths",
+          "faction": "goths-vandales",
+          "archetype": "chef-barbare",
+          "quote": "Plus l'herbe est épaisse, plus elle se fauche aisément (selon Zosime)"
+        }
+      ]
     },
     {
       "id": "chute-occident-476",
@@ -940,7 +1781,23 @@
           "url": "https://fr.wikipedia.org/wiki/Chute_de_l'Empire_romain_d'Occident"
         }
       ],
-      "territoryNote": "Seul l'Empire d'Orient reste pleinement romain : Balkans jusqu'au Danube (Thrace, Mésies, Dacie, Macédoine, Grèce), Anatolie, Arménie occidentale, Syrie, Palestine, Égypte, Cyrénaïque ; en Occident subsistent nominalement l'Italie d'Odoacre (+ Sicile en partie), la Dalmatie de Julius Nepos (jusqu'en 480) et le domaine de Syagrius autour de Soissons — à représenter comme résidus détachés ou non ; Afrique vandale, Hispanie wisigothique et suève, Gaule barbare."
+      "territoryNote": "Seul l'Empire d'Orient reste pleinement romain : Balkans jusqu'au Danube (Thrace, Mésies, Dacie, Macédoine, Grèce), Anatolie, Arménie occidentale, Syrie, Palestine, Égypte, Cyrénaïque ; en Occident subsistent nominalement l'Italie d'Odoacre (+ Sicile en partie), la Dalmatie de Julius Nepos (jusqu'en 480) et le domaine de Syagrius autour de Soissons — à représenter comme résidus détachés ou non ; Afrique vandale, Hispanie wisigothique et suève, Gaule barbare.",
+      "figures": [
+        {
+          "name": "Odoacre",
+          "role": "Roi d'Italie",
+          "faction": "germains",
+          "archetype": "chef-barbare",
+          "quote": "Un seul empereur suffit à Constantinople : je gouverne l'Italie en son nom (formule libre)"
+        },
+        {
+          "name": "Romulus Augustule",
+          "role": "Dernier empereur d'Occident",
+          "faction": "romains",
+          "archetype": "empereur",
+          "quote": "Je dépose la pourpre et remets l'Italie à Odoacre (formule libre)"
+        }
+      ]
     },
     {
       "id": "justinien-554",
@@ -974,7 +1831,20 @@
           "url": "https://fr.wikipedia.org/wiki/Justinien"
         }
       ],
-      "territoryNote": "Empire d'Orient (Balkans jusqu'au Danube, Anatolie, Arménie, Lazique, Syrie, Palestine, Égypte, Cyrénaïque) + Afrique ex-vandale (Tripolitaine, Byzacène, Proconsulaire, Numidie côtière, Maurétanie césarienne côtière, Septem/Ceuta) + Sardaigne, Corse, Baléares + Italie entière et Sicile + Dalmatie + Spania (côte sud-est ibérique de Carthagène à Malaga/Cadix, limites incertaines) ; ni Gaule (Francs), ni intérieur de l'Hispanie (Wisigoths), ni intérieur maghrébin (Berbères)."
+      "territoryNote": "Empire d'Orient (Balkans jusqu'au Danube, Anatolie, Arménie, Lazique, Syrie, Palestine, Égypte, Cyrénaïque) + Afrique ex-vandale (Tripolitaine, Byzacène, Proconsulaire, Numidie côtière, Maurétanie césarienne côtière, Septem/Ceuta) + Sardaigne, Corse, Baléares + Italie entière et Sicile + Dalmatie + Spania (côte sud-est ibérique de Carthagène à Malaga/Cadix, limites incertaines) ; ni Gaule (Francs), ni intérieur de l'Hispanie (Wisigoths), ni intérieur maghrébin (Berbères).",
+      "figures": [
+        {
+          "name": "Justinien Ier",
+          "role": "Empereur de la reconquête",
+          "faction": "byzantins",
+          "archetype": "empereur-byzantin",
+          "quote": "Salomon, je t'ai surpassé ! (à Sainte-Sophie, tradition tardive)",
+          "position": [
+            28.9784,
+            41.0082
+          ]
+        }
+      ]
     },
     {
       "id": "yarmouk-636",
@@ -1023,7 +1893,80 @@
         "forces": "Très incertaines : les sources arabes donnent 100 000 à 200 000 Byzantins (chiffres invraisemblables) ; estimations modernes souvent entre 15 000 et 40 000 Byzantins et 20 000 à 40 000 musulmans",
         "losses": "Lourdes côté byzantin, armée de campagne d'Orient détruite ; chiffres inconnus"
       },
-      "territoryNote": "Après la bataille : Byzance perd la Syrie et la Palestine (Damas, Jérusalem, Antioche 637-638) mais garde l'Anatolie jusqu'au Taurus, l'Arménie occidentale, l'Égypte (jusqu'en 641-642), la Cyrénaïque, l'exarchat d'Afrique, l'Italie non lombarde (exarchat de Ravenne, Rome, Naples, Calabre, Apulie méridionale, Sicile, Sardaigne, Corse), les Baléares, la Thrace et les côtes grecques (intérieur des Balkans slave/avar) ; Spania perdue en 624-625."
+      "territoryNote": "Après la bataille : Byzance perd la Syrie et la Palestine (Damas, Jérusalem, Antioche 637-638) mais garde l'Anatolie jusqu'au Taurus, l'Arménie occidentale, l'Égypte (jusqu'en 641-642), la Cyrénaïque, l'exarchat d'Afrique, l'Italie non lombarde (exarchat de Ravenne, Rome, Naples, Calabre, Apulie méridionale, Sicile, Sardaigne, Corse), les Baléares, la Thrace et les côtes grecques (intérieur des Balkans slave/avar) ; Spania perdue en 624-625.",
+      "armies": [
+        {
+          "side": "Arabes",
+          "faction": "arabes",
+          "path": [
+            [
+              44.4,
+              31.9
+            ],
+            [
+              39.9,
+              30
+            ],
+            [
+              36.3,
+              33.5
+            ],
+            [
+              35.88,
+              32.78
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Byzantins",
+          "faction": "byzantins",
+          "path": [
+            [
+              36.16,
+              36.2
+            ],
+            [
+              36.72,
+              34.73
+            ],
+            [
+              36,
+              33.3
+            ],
+            [
+              36.04,
+              32.83
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Omar",
+          "role": "Calife de Médine",
+          "faction": "arabes",
+          "archetype": "calife",
+          "quote": "Si un chameau meurt de faim sur l'Euphrate, Omar en répondra (tradition)",
+          "position": [
+            39.61,
+            24.47
+          ]
+        },
+        {
+          "name": "Héraclius",
+          "role": "Empereur byzantin",
+          "faction": "byzantins",
+          "archetype": "empereur-byzantin",
+          "quote": "Adieu, Syrie, et quel beau pays à laisser à l'ennemi ! (tradition)",
+          "position": [
+            36.16,
+            36.2
+          ]
+        }
+      ]
     },
     {
       "id": "manzikert-1071",
@@ -1071,7 +2014,76 @@
         "forces": "Très débattues : armée byzantine estimée entre 20 000 et 40 000 hommes engagés (une partie détachée vers Khliat), seldjoukides peut-être 20 000 à 30 000",
         "losses": "Pertes byzantines probablement limitées en nombre mais catastrophiques politiquement ; chiffres inconnus"
       },
-      "territoryNote": "À la date de la bataille (avant l'effondrement) : Balkans jusqu'au Danube (Bulgarie, Serbie méridionale, Grèce), Crète, Chypre, toute l'Anatolie, Arménie (Ani, Vaspourakan), Antioche et Syrie du Nord (jusqu'à Lattaquié) ; Italie du Sud perdue (Bari tombe en avril 1071) ; Sicile arabe/normande ; Croatie et Hongrie hors Empire. Dans les dix années suivantes, l'Anatolie centrale et orientale est perdue."
+      "territoryNote": "À la date de la bataille (avant l'effondrement) : Balkans jusqu'au Danube (Bulgarie, Serbie méridionale, Grèce), Crète, Chypre, toute l'Anatolie, Arménie (Ani, Vaspourakan), Antioche et Syrie du Nord (jusqu'à Lattaquié) ; Italie du Sud perdue (Bari tombe en avril 1071) ; Sicile arabe/normande ; Croatie et Hongrie hors Empire. Dans les dix années suivantes, l'Anatolie centrale et orientale est perdue.",
+      "armies": [
+        {
+          "side": "Seldjoukides",
+          "faction": "turcs-seldjoukides",
+          "path": [
+            [
+              46.29,
+              38.08
+            ],
+            [
+              44.97,
+              38.55
+            ],
+            [
+              43.5,
+              39.3
+            ],
+            [
+              42.6,
+              39.12
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Byzantins",
+          "faction": "byzantins",
+          "path": [
+            [
+              28.98,
+              41.01
+            ],
+            [
+              32.86,
+              39.93
+            ],
+            [
+              37.02,
+              39.75
+            ],
+            [
+              41.27,
+              39.9
+            ],
+            [
+              42.45,
+              39.16
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Alp Arslan",
+          "role": "Sultan seldjoukide",
+          "faction": "turcs-seldjoukides",
+          "archetype": "sultan",
+          "quote": "Je combattrai pour ma foi ; si je dois mourir, ce sera en martyr (formule libre)"
+        },
+        {
+          "name": "Romain IV Diogène",
+          "role": "Empereur byzantin",
+          "faction": "byzantins",
+          "archetype": "empereur-byzantin",
+          "quote": "Je ne reculerai pas devant le sultan : l'Anatolie ne se défend que de face (formule libre)"
+        }
+      ]
     },
     {
       "id": "croisade-1204",
@@ -1119,7 +2131,65 @@
         "forces": "Environ 20 000 croisés et Vénitiens selon les estimations modernes ; défenseurs plus nombreux mais désorganisés",
         "losses": "Inconnues ; destructions et pillage massifs"
       },
-      "territoryNote": "Plus d'Empire byzantin unique : continuité romaine principale = Empire de Nicée (nord-ouest et ouest de l'Anatolie : Bithynie hors Nicomédie, Mysie, Lydie, Ionie, jusqu'au Méandre, frontière stabilisée vers 1205-1214) ; autres États grecs : despotat d'Épire (Épire, Étolie, Acarnanie) et Empire de Trébizonde (côte pontique) ; Thrace et Constantinople = Empire latin ; Thessalonique et Grèce = États croisés ; Crète, Eubée, îles = Venise ; Anatolie centrale = sultanat de Roum ; Bulgarie indépendante."
+      "territoryNote": "Plus d'Empire byzantin unique : continuité romaine principale = Empire de Nicée (nord-ouest et ouest de l'Anatolie : Bithynie hors Nicomédie, Mysie, Lydie, Ionie, jusqu'au Méandre, frontière stabilisée vers 1205-1214) ; autres États grecs : despotat d'Épire (Épire, Étolie, Acarnanie) et Empire de Trébizonde (côte pontique) ; Thrace et Constantinople = Empire latin ; Thessalonique et Grèce = États croisés ; Crète, Eubée, îles = Venise ; Anatolie centrale = sultanat de Roum ; Bulgarie indépendante.",
+      "armies": [
+        {
+          "side": "Croisés et Vénitiens",
+          "faction": "croises-latins",
+          "path": [
+            [
+              12.33,
+              45.44
+            ],
+            [
+              19.4,
+              39.6
+            ],
+            [
+              22.6,
+              36.2
+            ],
+            [
+              25.7,
+              38
+            ],
+            [
+              26.2,
+              40.05
+            ],
+            [
+              28.94,
+              40.99
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Défenseurs byzantins",
+          "faction": "byzantins",
+          "path": [
+            [
+              28.8,
+              41.03
+            ],
+            [
+              28.96,
+              41.01
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Enrico Dandolo",
+          "role": "Doge de Venise",
+          "faction": "croises-latins",
+          "archetype": "doge",
+          "quote": "Je mènerai la flotte, et mon grand âge ne m'arrêtera pas (formule libre)"
+        }
+      ]
     },
     {
       "id": "reprise-1261",
@@ -1152,7 +2222,16 @@
           "url": "https://fr.wikipedia.org/wiki/Michel_VIII_Paléologue"
         }
       ],
-      "territoryNote": "Empire restauré : Constantinople et la Thrace, Macédoine avec Thessalonique, une partie de l'Albanie et de la Thessalie septentrionale, ouest de l'Anatolie (Bithynie, Mysie, Lydie, Ionie jusqu'au Méandre et à la Carie), Rhodes et quelques îles (Lesbos, Chios, Samos) ; à partir de 1262 : forteresses du sud-est de la Morée (Mistra, Monemvasia, Magne) ; hors Empire : Épire, Trébizonde, Athènes et Achaïe latines, Crète et Eubée vénitiennes, Bulgarie, Serbie."
+      "territoryNote": "Empire restauré : Constantinople et la Thrace, Macédoine avec Thessalonique, une partie de l'Albanie et de la Thessalie septentrionale, ouest de l'Anatolie (Bithynie, Mysie, Lydie, Ionie jusqu'au Méandre et à la Carie), Rhodes et quelques îles (Lesbos, Chios, Samos) ; à partir de 1262 : forteresses du sud-est de la Morée (Mistra, Monemvasia, Magne) ; hors Empire : Épire, Trébizonde, Athènes et Achaïe latines, Crète et Eubée vénitiennes, Bulgarie, Serbie.",
+      "figures": [
+        {
+          "name": "Michel VIII Paléologue",
+          "role": "Empereur de Nicée, restaurateur de Byzance",
+          "faction": "byzantins",
+          "archetype": "empereur-byzantin",
+          "quote": "Constantinople est rendue aux Romains : elle ne sera plus latine (formule libre)"
+        }
+      ]
     },
     {
       "id": "chute-1453",
@@ -1202,7 +2281,60 @@
         "forces": "Selon Sphrantzès, environ 5 000 Grecs et 2 000 étrangers, et quelque 26 navires ; armée ottomane estimée par les historiens modernes entre 50 000 et 80 000 combattants (les contemporains avancent jusqu'à plus de 160 000)",
         "losses": "Selon Nicolò Barbaro, environ 4 000 morts parmi les défenseurs et les habitants, et quelque 30 000 personnes réduites en esclavage ; pertes ottomanes inconnues mais lourdes"
       },
-      "territoryNote": "Avant la chute : Constantinople et sa banlieue immédiate dans les murailles, quelques îles du nord de l'Égée (Imbros, Lemnos en partie) et le despotat de Morée (Péloponnèse sauf les places vénitiennes de Modon, Coron, Nauplie, Argos), tenu jusqu'en 1460 ; Trébizonde, État grec distinct, jusqu'en 1461 ; après le 29 mai, plus aucun territoire autour de la capitale."
+      "territoryNote": "Avant la chute : Constantinople et sa banlieue immédiate dans les murailles, quelques îles du nord de l'Égée (Imbros, Lemnos en partie) et le despotat de Morée (Péloponnèse sauf les places vénitiennes de Modon, Coron, Nauplie, Argos), tenu jusqu'en 1460 ; Trébizonde, État grec distinct, jusqu'en 1461 ; après le 29 mai, plus aucun territoire autour de la capitale.",
+      "armies": [
+        {
+          "side": "Ottomans",
+          "faction": "ottomans",
+          "path": [
+            [
+              26.55,
+              41.68
+            ],
+            [
+              27.8,
+              41.16
+            ],
+            [
+              28.91,
+              41.02
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Défenseurs de Constantinople",
+          "faction": "byzantins",
+          "path": [
+            [
+              28.99,
+              41
+            ],
+            [
+              28.95,
+              41.015
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Mehmed II",
+          "role": "Sultan ottoman",
+          "faction": "ottomans",
+          "archetype": "sultan",
+          "quote": "Je prendrai Constantinople, ou Constantinople me prendra (formule libre)"
+        },
+        {
+          "name": "Constantin XI",
+          "role": "Dernier empereur byzantin",
+          "faction": "byzantins",
+          "archetype": "empereur-byzantin",
+          "quote": "N'y a-t-il aucun chrétien pour me trancher la tête ? (selon Sphrantzès)"
+        }
+      ]
     }
   ]
 }
