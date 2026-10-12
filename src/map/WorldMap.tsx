@@ -66,6 +66,8 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief }: Props) {
       attributionControl: false,
       renderWorldCopies: false,
       fadeDuration: 0,
+      pixelRatio: Math.min(window.devicePixelRatio, 2),
+      maxTileCacheSize: 200,
     });
     mapRef.current = map;
     if (import.meta.env.DEV) (window as unknown as { __map: MapLibreMap }).__map = map;

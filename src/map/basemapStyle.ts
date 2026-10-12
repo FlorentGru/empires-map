@@ -31,7 +31,7 @@ function demSource() {
     tiles: ['https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png'],
     encoding: 'terrarium' as const,
     tileSize: 256,
-    maxzoom: 12,
+    maxzoom: 10,
     attribution: 'Terrain : Mapzen / AWS Terrain Tiles',
   };
 }
@@ -49,7 +49,6 @@ export function baseStyle(): StyleSpecification {
     sources: {
       graticule: { type: 'geojson', data: graticule(15) },
       [DEM_SOURCE]: demSource(),
-      'dem-shade': demSource(),
     },
     layers: [
       { id: 'ocean', type: 'background', paint: { 'background-color': MAP_COLORS.ocean } },
@@ -62,7 +61,7 @@ export function baseStyle(): StyleSpecification {
       {
         id: 'hillshade',
         type: 'hillshade',
-        source: 'dem-shade',
+        source: DEM_SOURCE,
         paint: {
           'hillshade-exaggeration': 0.4,
           'hillshade-shadow-color': '#6b5a48',
