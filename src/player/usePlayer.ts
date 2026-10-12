@@ -11,6 +11,8 @@ interface PlayerState {
   playing: boolean;
   speed: Speed;
   loop: boolean;
+  /** Mode Histoire : l'enchaînement est piloté par la narration, pas par le minuteur. */
+  story: boolean;
 }
 
 type PlayerAction =
@@ -21,7 +23,8 @@ type PlayerAction =
   | { type: 'prev' }
   | { type: 'goTo'; index: number }
   | { type: 'setSpeed'; speed: Speed }
-  | { type: 'setLoop'; loop: boolean };
+  | { type: 'setLoop'; loop: boolean }
+  | { type: 'setStory'; story: boolean };
 
 function makeReducer(count: number) {
   const clamp = (i: number) => Math.max(0, Math.min(count - 1, i));
@@ -50,6 +53,8 @@ function makeReducer(count: number) {
         return { ...state, speed: action.speed };
       case 'setLoop':
         return { ...state, loop: action.loop };
+      case 'setStory':
+        return { ...state, story: action.story };
     }
   };
 }
@@ -66,14 +71,15 @@ export function usePlayer(stepCount: number, initialIndex = 0) {
     playing: false,
     speed: 1,
     loop: false,
+    story: false,
   });
 
   // Avance automatique.
   useEffect(() => {
-    if (!state.playing) return;
+    if (!state.playing || state.story) return;
     const id = window.setTimeout(() => dispatch({ type: 'next', auto: true }), BASE_STEP_MS / state.speed);
     return () => window.clearTimeout(id);
-  }, [state.playing, state.index, state.speed]);
+  }, [state.playing, state.story, state.index, state.speed]);
 
   // Raccourcis clavier : Espace, ←, →.
   useEffect(() => {
@@ -104,10 +110,13 @@ export function usePlayer(stepCount: number, initialIndex = 0) {
       pause: () => dispatch({ type: 'pause' }),
       toggle: () => dispatch({ type: 'toggle' }),
       next: () => dispatch({ type: 'next' }),
+      /** Avance automatique (s'arrête en fin de parcours sans boucle). */
+      advance: () => dispatch({ type: 'next', auto: true }),
       prev: () => dispatch({ type: 'prev' }),
       goTo: (index: number) => dispatch({ type: 'goTo', index }),
       setSpeed: (speed: Speed) => dispatch({ type: 'setSpeed', speed }),
       setLoop: (loop: boolean) => dispatch({ type: 'setLoop', loop }),
+      setStory: (story: boolean) => dispatch({ type: 'setStory', story }),
     }),
     [],
   );

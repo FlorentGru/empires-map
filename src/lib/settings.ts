@@ -16,3 +16,19 @@ export function writeBool(key: string, value: boolean): void {
     /* stockage indisponible : le réglage vaut pour la session seulement */
   }
 }
+
+export function readString(key: string, fallback: string | null): string | null {
+  try {
+    return window.localStorage.getItem(key) ?? fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+export function writeString(key: string, value: string): void {
+  try {
+    window.localStorage.setItem(key, value);
+  } catch {
+    /* stockage indisponible */
+  }
+}

@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { EMPIRES, getEmpire } from './data/loadEmpire';
 import { WorldMap } from './map/WorldMap';
 import { AboutModal } from './panels/AboutModal';
@@ -9,6 +9,7 @@ import { readBool, writeBool } from './lib/settings';
 import { EventPanel } from './panels/EventPanel';
 import { readUrlState, writeUrlState } from './player/urlState';
 import { usePlayer } from './player/usePlayer';
+import { useStory } from './story/useStory';
 import { Timeline } from './timeline/Timeline';
 import type { Empire } from './types';
 
@@ -44,6 +45,14 @@ function Atlas({ empire, onSelectEmpire }: { empire: Empire; onSelectEmpire: (id
   const [relief, setRelief] = useState(() => readBool('atlas.relief', true));
   const [figures, setFigures] = useState(() => readBool('atlas.figures', true));
   const [countries2026, setCountries2026] = useState(() => readBool('atlas.countries2026', false));
+  const openPanel = useCallback(() => setPanelOpen(true), []);
+  const story = useStory(player, step, openPanel);
+  const storyEnabled = story.controls.enabled;
+  const storySilent = story.controls.silent;
+  const panelStory = useMemo(
+    () => (storyEnabled ? { segments: story.segments, current: story.current, silent: storySilent } : null),
+    [storyEnabled, story.segments, story.current, storySilent],
+  );
   const togglePanel = useCallback(() => setPanelOpen((o) => !o), []);
   const toggleTilt = useCallback(() => setTilted((v) => { writeBool('atlas.tilted', !v); return !v; }), []);
   const toggleRelief = useCallback(() => setRelief((v) => { writeBool('atlas.relief', !v); return !v; }), []);
@@ -71,9 +80,14 @@ function Atlas({ empire, onSelectEmpire }: { empire: Empire; onSelectEmpire: (id
         </div>
       </div>
 
-      <EventPanel step={step} open={panelOpen} onToggle={togglePanel} />
+      <EventPanel
+        step={step}
+        open={panelOpen}
+        onToggle={togglePanel}
+        story={panelStory}
+      />
       <Legend empire={empire} step={step} countries2026={countries2026} />
-      <Timeline empire={empire} player={player} compare2026={countries2026} />
+      <Timeline empire={empire} player={player} compare2026={countries2026} story={story.controls} />
       <AboutModal open={aboutOpen} onClose={() => setAboutOpen(false)} />
     </div>
   );

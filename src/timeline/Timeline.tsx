@@ -3,6 +3,8 @@ import { eventMeta } from '../lib/eventTypes';
 import { prefersReducedMotion } from '../lib/motion';
 import { formatYear } from '../lib/years';
 import { SPEEDS, type Player, type Speed } from '../player/usePlayer';
+import { StoryButton } from '../story/StoryMenu';
+import type { StoryControls } from '../story/useStory';
 import type { Empire } from '../types';
 import { makeTicks, makeYearScale } from './scale';
 
@@ -11,12 +13,13 @@ interface Props {
   player: Player;
   /** Calque « Pays 2026 » actif : la date affichée est comparée aux frontières actuelles. */
   compare2026?: boolean;
+  story: StoryControls;
 }
 
 /** Largeur minimale par étape (px) : au-delà, la frise défile horizontalement. */
 const MIN_PX_PER_STEP = 22;
 
-export const Timeline = memo(function Timeline({ empire, player, compare2026 = false }: Props) {
+export const Timeline = memo(function Timeline({ empire, player, compare2026 = false, story }: Props) {
   const { steps } = empire;
   const active = steps[player.index];
   const trackRef = useRef<HTMLDivElement>(null);
@@ -67,7 +70,7 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
         </button>
         <label className="timeline__speed">
           <span className="visually-hidden">Vitesse de lecture</span>
-          <select value={player.speed} onChange={(e) => player.setSpeed(Number(e.target.value) as Speed)}>
+          <select value={player.speed} disabled={story.enabled} title={story.enabled ? 'Mode Histoire : le rythme suit la narration' : undefined} onChange={(e) => player.setSpeed(Number(e.target.value) as Speed)}>
             {SPEEDS.map((s) => (
               <option key={s} value={s}>
                 {String(s).replace('.', ',')}×
@@ -85,6 +88,7 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
         >
           🔁
         </button>
+        <StoryButton story={story} />
         <div className="timeline__current" aria-live="polite">
           <span className="timeline__year">{active ? formatYear(active.year) : ''}
             {compare2026 && <span className="timeline__compare"> · comparé à 2026</span>}
