@@ -1,0 +1,990 @@
+[
+  {
+    "id": "roma",
+    "modern": "Rome",
+    "names": [
+      {
+        "name": "Roma"
+      }
+    ],
+    "coords": [
+      12.496,
+      41.903
+    ],
+    "founded": -753,
+    "rank": 1,
+    "capitalOf": [
+      {
+        "empire": "rome",
+        "from": -509,
+        "to": 330
+      }
+    ]
+  },
+  {
+    "id": "constantinople",
+    "modern": "Istanbul",
+    "names": [
+      {
+        "name": "Byzance",
+        "to": 329
+      },
+      {
+        "name": "Constantinople",
+        "from": 330
+      }
+    ],
+    "coords": [
+      28.978,
+      41.008
+    ],
+    "founded": -660,
+    "rank": 1,
+    "capitalOf": [
+      {
+        "empire": "rome",
+        "from": 330,
+        "to": 1204
+      },
+      {
+        "empire": "rome",
+        "from": 1261,
+        "to": 1453
+      }
+    ]
+  },
+  {
+    "id": "alexandria",
+    "modern": "Alexandrie, Égypte",
+    "names": [
+      {
+        "name": "Alexandrie"
+      }
+    ],
+    "coords": [
+      29.919,
+      31.2
+    ],
+    "founded": -331,
+    "rank": 1
+  },
+  {
+    "id": "antiochia",
+    "modern": "Antakya, Turquie",
+    "names": [
+      {
+        "name": "Antioche"
+      }
+    ],
+    "coords": [
+      36.16,
+      36.202
+    ],
+    "founded": -300,
+    "rank": 1
+  },
+  {
+    "id": "carthago",
+    "modern": "Carthage, Tunisie",
+    "names": [
+      {
+        "name": "Carthage"
+      }
+    ],
+    "coords": [
+      10.323,
+      36.853
+    ],
+    "founded": -814,
+    "rank": 1
+  },
+  {
+    "id": "athenae",
+    "modern": "Athènes",
+    "names": [
+      {
+        "name": "Athènes"
+      }
+    ],
+    "coords": [
+      23.727,
+      37.984
+    ],
+    "founded": -1200,
+    "rank": 1
+  },
+  {
+    "id": "mediolanum",
+    "modern": "Milan",
+    "names": [
+      {
+        "name": "Mediolanum",
+        "to": 1000
+      },
+      {
+        "name": "Milan",
+        "from": 1001
+      }
+    ],
+    "coords": [
+      9.19,
+      45.464
+    ],
+    "founded": -600,
+    "rank": 1,
+    "capitalOf": [
+      {
+        "empire": "rome",
+        "from": 286,
+        "to": 402
+      }
+    ]
+  },
+  {
+    "id": "lugdunum",
+    "modern": "Lyon",
+    "names": [
+      {
+        "name": "Lugdunum",
+        "to": 1000
+      },
+      {
+        "name": "Lyon",
+        "from": 1001
+      }
+    ],
+    "coords": [
+      4.832,
+      45.762
+    ],
+    "founded": -43,
+    "rank": 1
+  },
+  {
+    "id": "ctesiphon",
+    "modern": "Ctésiphon, Irak",
+    "names": [
+      {
+        "name": "Ctésiphon"
+      }
+    ],
+    "coords": [
+      44.581,
+      33.093
+    ],
+    "founded": -120,
+    "rank": 1
+  },
+  {
+    "id": "jerusalem",
+    "modern": "Jérusalem",
+    "names": [
+      {
+        "name": "Jérusalem",
+        "to": 134
+      },
+      {
+        "name": "Aelia Capitolina",
+        "from": 135,
+        "to": 637
+      },
+      {
+        "name": "Jérusalem",
+        "from": 638
+      }
+    ],
+    "coords": [
+      35.235,
+      31.778
+    ],
+    "founded": -1000,
+    "rank": 1
+  },
+  {
+    "id": "ravenna",
+    "modern": "Ravenne",
+    "names": [
+      {
+        "name": "Ravenna",
+        "to": 1000
+      },
+      {
+        "name": "Ravenne",
+        "from": 1001
+      }
+    ],
+    "coords": [
+      12.196,
+      44.418
+    ],
+    "founded": -100,
+    "rank": 2,
+    "capitalOf": [
+      {
+        "empire": "rome",
+        "from": 402,
+        "to": 476
+      }
+    ]
+  },
+  {
+    "id": "nicomedia",
+    "modern": "İzmit, Turquie",
+    "names": [
+      {
+        "name": "Nicomédie"
+      }
+    ],
+    "coords": [
+      29.92,
+      40.766
+    ],
+    "founded": -712,
+    "rank": 2,
+    "capitalOf": [
+      {
+        "empire": "rome",
+        "from": 286,
+        "to": 330
+      }
+    ]
+  },
+  {
+    "id": "nicaea",
+    "modern": "İznik, Turquie",
+    "names": [
+      {
+        "name": "Nicée"
+      }
+    ],
+    "coords": [
+      29.719,
+      40.429
+    ],
+    "founded": -316,
+    "rank": 2,
+    "capitalOf": [
+      {
+        "empire": "rome",
+        "from": 1204,
+        "to": 1261
+      }
+    ]
+  },
+  {
+    "id": "syracusae",
+    "modern": "Syracuse, Sicile",
+    "names": [
+      {
+        "name": "Syracuse"
+      }
+    ],
+    "coords": [
+      15.287,
+      37.075
+    ],
+    "founded": -734,
+    "rank": 2
+  },
+  {
+    "id": "massalia",
+    "modern": "Marseille",
+    "names": [
+      {
+        "name": "Massalia",
+        "to": 1000
+      },
+      {
+        "name": "Marseille",
+        "from": 1001
+      }
+    ],
+    "coords": [
+      5.37,
+      43.296
+    ],
+    "founded": -600,
+    "rank": 2
+  },
+  {
+    "id": "lutetia",
+    "modern": "Paris",
+    "names": [
+      {
+        "name": "Lutetia",
+        "to": 400
+      },
+      {
+        "name": "Paris",
+        "from": 401
+      }
+    ],
+    "coords": [
+      2.35,
+      48.853
+    ],
+    "founded": -250,
+    "rank": 2
+  },
+  {
+    "id": "londinium",
+    "modern": "Londres",
+    "names": [
+      {
+        "name": "Londinium",
+        "to": 600
+      },
+      {
+        "name": "Londres",
+        "from": 601
+      }
+    ],
+    "coords": [
+      -0.092,
+      51.51
+    ],
+    "founded": 47,
+    "rank": 2
+  },
+  {
+    "id": "augusta-treverorum",
+    "modern": "Trèves",
+    "names": [
+      {
+        "name": "Augusta Treverorum",
+        "to": 500
+      },
+      {
+        "name": "Trèves",
+        "from": 501
+      }
+    ],
+    "coords": [
+      6.641,
+      49.756
+    ],
+    "founded": -16,
+    "rank": 2
+  },
+  {
+    "id": "colonia-agrippina",
+    "modern": "Cologne",
+    "names": [
+      {
+        "name": "Colonia Agrippina",
+        "to": 500
+      },
+      {
+        "name": "Cologne",
+        "from": 501
+      }
+    ],
+    "coords": [
+      6.96,
+      50.938
+    ],
+    "founded": 50,
+    "rank": 2
+  },
+  {
+    "id": "aquileia",
+    "modern": "Aquilée",
+    "names": [
+      {
+        "name": "Aquileia",
+        "to": 1000
+      },
+      {
+        "name": "Aquilée",
+        "from": 1001
+      }
+    ],
+    "coords": [
+      13.37,
+      45.768
+    ],
+    "founded": -181,
+    "rank": 2
+  },
+  {
+    "id": "sirmium",
+    "modern": "Sremska Mitrovica, Serbie",
+    "names": [
+      {
+        "name": "Sirmium"
+      }
+    ],
+    "coords": [
+      19.612,
+      44.972
+    ],
+    "founded": -100,
+    "rank": 2
+  },
+  {
+    "id": "thessalonica",
+    "modern": "Thessalonique",
+    "names": [
+      {
+        "name": "Thessalonique"
+      }
+    ],
+    "coords": [
+      22.944,
+      40.64
+    ],
+    "founded": -315,
+    "rank": 2
+  },
+  {
+    "id": "ephesus",
+    "modern": "Éphèse (Selçuk), Turquie",
+    "names": [
+      {
+        "name": "Éphèse"
+      }
+    ],
+    "coords": [
+      27.341,
+      37.94
+    ],
+    "founded": -1000,
+    "rank": 2
+  },
+  {
+    "id": "damascus",
+    "modern": "Damas",
+    "names": [
+      {
+        "name": "Damas"
+      }
+    ],
+    "coords": [
+      36.292,
+      33.511
+    ],
+    "founded": -1000,
+    "rank": 2
+  },
+  {
+    "id": "tarraco",
+    "modern": "Tarragone",
+    "names": [
+      {
+        "name": "Tarraco",
+        "to": 700
+      },
+      {
+        "name": "Tarragone",
+        "from": 701
+      }
+    ],
+    "coords": [
+      1.25,
+      41.117
+    ],
+    "founded": -218,
+    "rank": 2
+  },
+  {
+    "id": "gades",
+    "modern": "Cadix",
+    "names": [
+      {
+        "name": "Gadès",
+        "to": 700
+      },
+      {
+        "name": "Cadix",
+        "from": 701
+      }
+    ],
+    "coords": [
+      -6.288,
+      36.527
+    ],
+    "founded": -1100,
+    "rank": 2
+  },
+  {
+    "id": "hispalis",
+    "modern": "Séville",
+    "names": [
+      {
+        "name": "Hispalis",
+        "to": 711
+      },
+      {
+        "name": "Séville",
+        "from": 712
+      }
+    ],
+    "coords": [
+      -5.984,
+      37.389
+    ],
+    "founded": -206,
+    "rank": 2
+  },
+  {
+    "id": "leptis-magna",
+    "modern": "Leptis Magna, Libye",
+    "names": [
+      {
+        "name": "Leptis Magna"
+      }
+    ],
+    "coords": [
+      14.292,
+      32.638
+    ],
+    "founded": -650,
+    "rank": 2
+  },
+  {
+    "id": "neapolis",
+    "modern": "Naples",
+    "names": [
+      {
+        "name": "Neapolis",
+        "to": 900
+      },
+      {
+        "name": "Naples",
+        "from": 901
+      }
+    ],
+    "coords": [
+      14.268,
+      40.852
+    ],
+    "founded": -600,
+    "rank": 2
+  },
+  {
+    "id": "pergamum",
+    "modern": "Bergama, Turquie",
+    "names": [
+      {
+        "name": "Pergame"
+      }
+    ],
+    "coords": [
+      27.184,
+      39.121
+    ],
+    "founded": -300,
+    "rank": 3
+  },
+  {
+    "id": "palmyra",
+    "modern": "Palmyre, Syrie",
+    "names": [
+      {
+        "name": "Palmyre"
+      }
+    ],
+    "coords": [
+      38.267,
+      34.551
+    ],
+    "founded": -200,
+    "rank": 3
+  },
+  {
+    "id": "edessa",
+    "modern": "Şanlıurfa, Turquie",
+    "names": [
+      {
+        "name": "Édesse",
+        "to": 1144
+      },
+      {
+        "name": "Urfa",
+        "from": 1145
+      }
+    ],
+    "coords": [
+      38.794,
+      37.159
+    ],
+    "founded": -300,
+    "rank": 3
+  },
+  {
+    "id": "nisibis",
+    "modern": "Nusaybin, Turquie",
+    "names": [
+      {
+        "name": "Nisibe"
+      }
+    ],
+    "coords": [
+      41.215,
+      37.075
+    ],
+    "founded": -900,
+    "rank": 3
+  },
+  {
+    "id": "trapezus",
+    "modern": "Trabzon, Turquie",
+    "names": [
+      {
+        "name": "Trapezous"
+      }
+    ],
+    "coords": [
+      39.717,
+      41.002
+    ],
+    "founded": -756,
+    "rank": 3
+  },
+  {
+    "id": "carthago-nova",
+    "modern": "Carthagène, Espagne",
+    "names": [
+      {
+        "name": "Carthago Nova",
+        "to": 700
+      },
+      {
+        "name": "Carthagène",
+        "from": 701
+      }
+    ],
+    "coords": [
+      -0.986,
+      37.6
+    ],
+    "founded": -227,
+    "rank": 3
+  },
+  {
+    "id": "emerita-augusta",
+    "modern": "Mérida, Espagne",
+    "names": [
+      {
+        "name": "Emerita Augusta"
+      }
+    ],
+    "coords": [
+      -6.343,
+      38.916
+    ],
+    "founded": -25,
+    "rank": 3
+  },
+  {
+    "id": "cyrene",
+    "modern": "Cyrène, Libye",
+    "names": [
+      {
+        "name": "Cyrène"
+      }
+    ],
+    "coords": [
+      21.858,
+      32.823
+    ],
+    "founded": -631,
+    "rank": 3
+  },
+  {
+    "id": "volubilis",
+    "modern": "Volubilis, Maroc",
+    "names": [
+      {
+        "name": "Volubilis"
+      }
+    ],
+    "coords": [
+      -5.554,
+      34.074
+    ],
+    "founded": -300,
+    "rank": 3
+  },
+  {
+    "id": "tingis",
+    "modern": "Tanger",
+    "names": [
+      {
+        "name": "Tingis",
+        "to": 700
+      },
+      {
+        "name": "Tanger",
+        "from": 701
+      }
+    ],
+    "coords": [
+      -5.813,
+      35.779
+    ],
+    "founded": -600,
+    "rank": 3
+  },
+  {
+    "id": "capua",
+    "modern": "Capoue",
+    "names": [
+      {
+        "name": "Capua",
+        "to": 800
+      },
+      {
+        "name": "Capoue",
+        "from": 801
+      }
+    ],
+    "coords": [
+      14.253,
+      41.106
+    ],
+    "founded": -600,
+    "rank": 3
+  },
+  {
+    "id": "tarentum",
+    "modern": "Tarente",
+    "names": [
+      {
+        "name": "Tarente"
+      }
+    ],
+    "coords": [
+      17.23,
+      40.468
+    ],
+    "founded": -706,
+    "rank": 3
+  },
+  {
+    "id": "brundisium",
+    "modern": "Brindisi",
+    "names": [
+      {
+        "name": "Brundisium",
+        "to": 900
+      },
+      {
+        "name": "Brindisi",
+        "from": 901
+      }
+    ],
+    "coords": [
+      17.941,
+      40.633
+    ],
+    "founded": -266,
+    "rank": 3
+  },
+  {
+    "id": "pella",
+    "modern": "Pella, Grèce",
+    "names": [
+      {
+        "name": "Pella"
+      }
+    ],
+    "coords": [
+      22.523,
+      40.762
+    ],
+    "founded": -400,
+    "rank": 3
+  },
+  {
+    "id": "corinthus",
+    "modern": "Corinthe",
+    "names": [
+      {
+        "name": "Corinthe"
+      }
+    ],
+    "coords": [
+      22.93,
+      37.906
+    ],
+    "founded": -900,
+    "rank": 3
+  },
+  {
+    "id": "sardis",
+    "modern": "Sart, Turquie",
+    "names": [
+      {
+        "name": "Sardes"
+      }
+    ],
+    "coords": [
+      28.04,
+      38.488
+    ],
+    "founded": -1200,
+    "rank": 3
+  },
+  {
+    "id": "ancyra",
+    "modern": "Ankara",
+    "names": [
+      {
+        "name": "Ancyre",
+        "to": 1100
+      },
+      {
+        "name": "Ankara",
+        "from": 1101
+      }
+    ],
+    "coords": [
+      32.854,
+      39.934
+    ],
+    "founded": -1000,
+    "rank": 3
+  },
+  {
+    "id": "mistra",
+    "modern": "Mistra, Grèce",
+    "names": [
+      {
+        "name": "Mistra"
+      }
+    ],
+    "coords": [
+      22.371,
+      37.073
+    ],
+    "founded": 1249,
+    "rank": 3
+  },
+  {
+    "id": "sarmizegetusa",
+    "modern": "Sarmizegetusa, Roumanie",
+    "names": [
+      {
+        "name": "Sarmizegetusa"
+      }
+    ],
+    "coords": [
+      23.31,
+      45.517
+    ],
+    "founded": -100,
+    "destroyed": 275,
+    "rank": 3
+  },
+  {
+    "id": "apulum",
+    "modern": "Alba Iulia, Roumanie",
+    "names": [
+      {
+        "name": "Apulum",
+        "to": 500
+      },
+      {
+        "name": "Alba Iulia",
+        "from": 501
+      }
+    ],
+    "coords": [
+      23.573,
+      46.067
+    ],
+    "founded": 106,
+    "rank": 3
+  },
+  {
+    "id": "rhodus",
+    "modern": "Rhodes",
+    "names": [
+      {
+        "name": "Rhodes"
+      }
+    ],
+    "coords": [
+      28.227,
+      36.443
+    ],
+    "founded": -408,
+    "rank": 3
+  },
+  {
+    "id": "cannae",
+    "modern": "Canne della Battaglia, Italie",
+    "names": [
+      {
+        "name": "Cannes"
+      }
+    ],
+    "coords": [
+      16.131,
+      41.304
+    ],
+    "founded": -300,
+    "rank": 3
+  },
+  {
+    "id": "zama",
+    "modern": "Zama, Tunisie",
+    "names": [
+      {
+        "name": "Zama"
+      }
+    ],
+    "coords": [
+      9.28,
+      35.85
+    ],
+    "founded": -300,
+    "rank": 3
+  },
+  {
+    "id": "actium",
+    "modern": "Actium, Grèce",
+    "names": [
+      {
+        "name": "Actium"
+      }
+    ],
+    "coords": [
+      20.76,
+      38.95
+    ],
+    "founded": -500,
+    "rank": 3
+  },
+  {
+    "id": "alesia",
+    "modern": "Alise-Sainte-Reine",
+    "names": [
+      {
+        "name": "Alésia"
+      }
+    ],
+    "coords": [
+      4.5,
+      47.538
+    ],
+    "founded": -300,
+    "rank": 3
+  },
+  {
+    "id": "manzikert",
+    "modern": "Malazgirt, Turquie",
+    "names": [
+      {
+        "name": "Mantzikert"
+      }
+    ],
+    "coords": [
+      42.54,
+      39.145
+    ],
+    "founded": 1000,
+    "rank": 3
+  }
+]
