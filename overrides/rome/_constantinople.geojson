@@ -1,0 +1,4 @@
+{"type":"FeatureCollection","features":[
+{"type": "Feature", "properties": {"op": "add", "noclip": true, "note": "Constantinople intra-muros : péninsule à l'est du mur de Théodose (28.92-28.99E), Galata"}, "geometry": {"type": "Polygon", "coordinates": [[[28.922, 40.99], [28.935, 41.032], [28.96, 41.026], [28.99, 41.022], [28.995, 41.005], [28.97, 40.996], [28.922, 40.99]]]}},
+{"type": "Feature", "properties": {"op": "add", "noclip": true, "note": "Galata/Péra (colonie génoise, enclave au nord de la Corne d'Or)"}, "geometry": {"type": "Polygon", "coordinates": [[[28.96, 41.028], [28.99, 41.03], [28.985, 41.047], [28.965, 41.042], [28.96, 41.028]]]}}
+]}

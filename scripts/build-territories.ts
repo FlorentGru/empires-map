@@ -16,13 +16,16 @@
 //      la géométrie est intersectée avec ces entités de l'instantané (frontières cohérentes).
 //   3. découpe sur les terres Natural Earth 1:50m, suppression des éclats
 //   4. simplification (tolérance 0.02°, highQuality, augmentée si > 150 Ko), arrondi 3 décimales
+//   5. Constantinople : si le territoire (avant découpe) contient (28.97, 41.01), on ajoute sans découpe
+//      les polygones de overrides/rome/_constantinople.geojson (trait de côte 1:50m trop grossier)
+// Puis : diffs/<id>.geojson (gagné/perdu vs étape précédente, morceaux < 2000 km² ignorés) et basemap/land.geojson (bbox réduite).
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import * as turf from '@turf/turf';
 import type { Feature, FeatureCollection, MultiPolygon, Polygon, Position } from 'geojson';
 import { ROME_STEPS, type RomeStep } from './steps.ts';
-import type { TerritoryProperties } from '../src/types.ts';
+import type { DiffKind, TerritoryProperties } from '../src/types.ts';
 import { checkTerritories } from './check-territories.ts';
 
 type Poly = Feature<Polygon | MultiPolygon>;
@@ -40,11 +43,18 @@ const NE_FILE = path.join(ROOT, '.cache/natural-earth/ne_50m_land.geojson');
 const OVERRIDES_DIR = path.join(ROOT, 'overrides/rome');
 const OUT_DIR = path.join(ROOT, 'public/data/empires/rome/territories');
 const LAND_OUT = path.join(ROOT, 'public/data/basemap/land.geojson');
+const DIFF_DIR = path.join(ROOT, 'public/data/empires/rome/diffs');
+const CONSTANTINOPLE_FILE = path.join(OVERRIDES_DIR, '_constantinople.geojson');
+const CONSTANTINOPLE_PT: Position = [28.97, 41.01];
+/** Emprise du fond de carte : Atlantique → Iran, Sahara → Écosse. */
+const LAND_BBOX: [number, number, number, number] = [-20, 15, 65, 62];
+const MIN_DIFF_KM2 = 2000;
 
 const EMPIRE = 'rome';
 const BASE_TOLERANCE = 0.02;
 const MAX_BYTES = 150 * 1024;
 const MIN_PART_KM2 = 50;
+const LAND_TOLERANCE = 0.01;
 
 function fail(msg: string): never {
   console.error(`✗ ${msg}`);
@@ -294,6 +304,17 @@ function applyOverrides(step: RomeStep, entities: Entity[]): { entities: Entity[
   return { entities: list.filter((e) => e.geom || e.raw), applied: true };
 }
 
+let cstCache: Poly | null = null;
+function constantinople(): Poly {
+  if (!cstCache) {
+    const fc = JSON.parse(fs.readFileSync(CONSTANTINOPLE_FILE, 'utf8')) as FeatureCollection;
+    const u = unionAll(fc.features.map((f) => polyFeature(f.geometry as Polygon)));
+    if (!u) fail('_constantinople.geojson vide');
+    cstCache = u;
+  }
+  return cstCache;
+}
+
 // ---------- sortie ----------
 
 function roundRing(ring: Position[]): Position[] {
@@ -371,13 +392,56 @@ function writeStep(step: RomeStep, entities: Entity[]): void {
 function writeLand(): void {
   const features: Feature[] = [];
   for (const lp of LAND) {
-    const g = finalize(lp.feature, BASE_TOLERANCE);
+    if (!bboxOverlap(lp.bbox, LAND_BBOX)) continue;
+    const inside =
+      lp.bbox[0] >= LAND_BBOX[0] && lp.bbox[1] >= LAND_BBOX[1] && lp.bbox[2] <= LAND_BBOX[2] && lp.bbox[3] <= LAND_BBOX[3];
+    const clipped = inside ? lp.feature : (turf.bboxClip(lp.feature, LAND_BBOX) as Poly);
+    if (!clipped.geometry.coordinates.length) continue;
+    const g = finalize(clipped, LAND_TOLERANCE);
     if (g) features.push({ type: 'Feature', properties: {}, geometry: g });
   }
   if (features.length === 0) fail('land.geojson vide');
   fs.mkdirSync(path.dirname(LAND_OUT), { recursive: true });
   fs.writeFileSync(LAND_OUT, JSON.stringify({ type: 'FeatureCollection', features }) + '\n');
   console.log(`✓ basemap/land.geojson (${features.length} polygones, ${(fs.statSync(LAND_OUT).size / 1024).toFixed(0)} Ko)`);
+}
+
+// ---------- diffs ----------
+
+/** Fusionne les entités d'une étape (fichier déjà simplifié/arrondi). */
+function readMerged(id: string): Poly | null {
+  const fc = JSON.parse(fs.readFileSync(path.join(OUT_DIR, `${id}.geojson`), 'utf8')) as FeatureCollection;
+  return unionAll(fc.features.map((f) => turf.cleanCoords(f) as Poly));
+}
+
+function writeDiffs(): void {
+  fs.rmSync(DIFF_DIR, { recursive: true, force: true });
+  fs.mkdirSync(DIFF_DIR, { recursive: true });
+  let prev = readMerged(ROME_STEPS[0].id);
+  let total = 0;
+  let biggest = { id: '', size: 0 };
+  for (const step of ROME_STEPS.slice(1)) {
+    const cur = readMerged(step.id);
+    const features: Feature<Polygon | MultiPolygon, { kind: DiffKind }>[] = [];
+    const add = (kind: DiffKind, f: Poly | null) => {
+      for (const p of parts(f)) {
+        if (areaKm2(polyFeature(p)) < MIN_DIFF_KM2) continue;
+        const g = finalize(polyFeature(p), BASE_TOLERANCE);
+        if (g) features.push({ type: 'Feature', properties: { kind }, geometry: g });
+      }
+    };
+    if (cur && prev) {
+      add('gained', difference(cur, prev));
+      add('lost', difference(prev, cur));
+    }
+    const file = path.join(DIFF_DIR, `${step.id}.geojson`);
+    fs.writeFileSync(file, JSON.stringify({ type: 'FeatureCollection', features }) + '\n');
+    const size = fs.statSync(file).size;
+    total += size;
+    if (size > biggest.size) biggest = { id: step.id, size };
+    prev = cur;
+  }
+  console.log(`✓ diffs/ (${ROME_STEPS.length - 1} fichiers, ${(total / 1024).toFixed(0)} Ko, max ${biggest.id} ${(biggest.size / 1024).toFixed(1)} Ko)`);
 }
 
 // ---------- main ----------
@@ -402,8 +466,14 @@ function buildStep(step: RomeStep, results: Map<string, Entity[]>): Entity[] {
   }
   const { entities: after, applied } = applyOverrides(step, entities);
   if (applied) console.log(`  + overrides/rome/${step.id}.geojson`);
+  const cstPt = turf.point(CONSTANTINOPLE_PT);
+  const cst = constantinople();
   return after
-    .map((e) => ({ ...e, geom: union(dropSlivers(clipToLand(e.geom)), e.raw ?? null), raw: null }))
+    .map((e) => {
+      // Le trait de côte 1:50m noie la péninsule de Constantinople : on la rajoute sans découpe.
+      const hasCst = !!e.geom && turf.booleanPointInPolygon(cstPt, e.geom);
+      return { ...e, geom: union(dropSlivers(clipToLand(e.geom)), union(e.raw ?? null, hasCst ? cst : null)), raw: null };
+    })
     .filter((e) => e.geom && areaKm2(e.geom) > 0);
 }
 
@@ -420,6 +490,7 @@ function main() {
   }
   if (only) return;
   writeLand();
+  writeDiffs();
   if (!checkTerritories()) fail('contrôle des territoires en échec');
 }
 
