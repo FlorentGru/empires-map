@@ -27,6 +27,7 @@ import type { Feature, FeatureCollection, MultiPolygon, Polygon, Position } from
 import { ROME_STEPS, type RomeStep } from './steps.ts';
 import type { DiffKind, TerritoryProperties } from '../src/types.ts';
 import { checkTerritories } from './check-territories.ts';
+import { checkMorph, writeMorph } from './build-morph.ts';
 
 type Poly = Feature<Polygon | MultiPolygon>;
 interface Entity {
@@ -491,7 +492,9 @@ function main() {
   if (only) return;
   writeLand();
   writeDiffs();
+  writeMorph();
   if (!checkTerritories()) fail('contrôle des territoires en échec');
+  if (!checkMorph()) fail('contrôle des morphs en échec');
 }
 
 main();
