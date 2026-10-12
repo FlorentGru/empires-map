@@ -1,8 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { EMPIRES, getEmpire } from './data/loadEmpire';
 import { WorldMap } from './map/WorldMap';
 import { AboutModal } from './panels/AboutModal';
 import { EmpirePicker } from './panels/EmpirePicker';
+import { Legend } from './panels/Legend';
+import { ViewControls } from './panels/ViewControls';
+import { readBool, writeBool } from './lib/settings';
 import { EventPanel } from './panels/EventPanel';
 import { readUrlState, writeUrlState } from './player/urlState';
 import { usePlayer } from './player/usePlayer';
@@ -37,6 +40,11 @@ function Atlas({ empire, onSelectEmpire }: { empire: Empire; onSelectEmpire: (id
   const step = empire.steps[player.index];
   const [panelOpen, setPanelOpen] = useState(true);
   const [aboutOpen, setAboutOpen] = useState(false);
+  const [tilted, setTilted] = useState(() => readBool('atlas.tilted', true));
+  const [relief, setRelief] = useState(() => readBool('atlas.relief', true));
+  const togglePanel = useCallback(() => setPanelOpen((o) => !o), []);
+  const toggleTilt = useCallback(() => setTilted((v) => { writeBool('atlas.tilted', !v); return !v; }), []);
+  const toggleRelief = useCallback(() => setRelief((v) => { writeBool('atlas.relief', !v); return !v; }), []);
 
   useEffect(() => {
     writeUrlState(empire.id, step?.id);
@@ -45,16 +53,20 @@ function Atlas({ empire, onSelectEmpire }: { empire: Empire; onSelectEmpire: (id
   return (
     <div className="app">
       <h1 className="visually-hidden">Atlas des Empires — {empire.name}</h1>
-      <WorldMap empire={empire} index={player.index} panelOpen={panelOpen} />
+      <WorldMap empire={empire} index={player.index} panelOpen={panelOpen} tilted={tilted} relief={relief} />
 
       <div className="top-bar">
         <EmpirePicker empires={EMPIRES} current={empire} onSelect={onSelectEmpire} />
-        <button type="button" className="btn btn--ghost about-btn" onClick={() => setAboutOpen(true)} aria-haspopup="dialog">
-          À propos
-        </button>
+        <div className="top-bar__right">
+          <ViewControls tilted={tilted} relief={relief} onToggleTilt={toggleTilt} onToggleRelief={toggleRelief} />
+          <button type="button" className="btn btn--ghost about-btn" onClick={() => setAboutOpen(true)} aria-haspopup="dialog">
+            À propos
+          </button>
+        </div>
       </div>
 
-      <EventPanel step={step} open={panelOpen} onToggle={() => setPanelOpen((o) => !o)} />
+      <EventPanel step={step} open={panelOpen} onToggle={togglePanel} />
+      <Legend empire={empire} step={step} />
       <Timeline empire={empire} player={player} />
       <AboutModal open={aboutOpen} onClose={() => setAboutOpen(false)} />
     </div>

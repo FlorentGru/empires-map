@@ -49,6 +49,16 @@ export function AboutModal({ open, onClose }: Props) {
             (domaine public).
           </li>
           <li>
+            Terrain : Mapzen / AWS Terrain Tiles (relief SRTM, GMTED, ETOPO1 et autres sources ouvertes), via{' '}
+            <a href="https://registry.opendata.aws/terrain-tiles/" target="_blank" rel="noopener noreferrer">
+              AWS Open Data
+            </a>
+            .
+          </li>
+          <li>
+            Polices des noms de villes : Open Sans et Noto Sans (licence SIL OFL / Apache 2.0).
+          </li>
+          <li>
             Rendu cartographique :{' '}
             <a href="https://maplibre.org/" target="_blank" rel="noopener noreferrer">
               MapLibre GL JS

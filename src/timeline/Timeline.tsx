@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState, type CSSProperties, type RefObject } from 'react';
+import { memo, useEffect, useMemo, useRef, useState, type CSSProperties, type RefObject } from 'react';
 import { eventMeta } from '../lib/eventTypes';
 import { prefersReducedMotion } from '../lib/motion';
 import { formatYear } from '../lib/years';
@@ -14,7 +14,7 @@ interface Props {
 /** Largeur minimale par étape (px) : au-delà, la frise défile horizontalement. */
 const MIN_PX_PER_STEP = 22;
 
-export function Timeline({ empire, player }: Props) {
+export const Timeline = memo(function Timeline({ empire, player }: Props) {
   const { steps } = empire;
   const active = steps[player.index];
   const trackRef = useRef<HTMLDivElement>(null);
@@ -124,7 +124,7 @@ export function Timeline({ empire, player }: Props) {
       </div>
     </footer>
   );
-}
+});
 
 function useElementWidth(ref: RefObject<HTMLElement | null>): number {
   const [width, setWidth] = useState(0);

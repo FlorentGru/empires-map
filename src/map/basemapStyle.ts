@@ -11,13 +11,45 @@ export const MAP_COLORS = {
   graticule: '#8a7a62',
 };
 
-/** Style inline, sans tuiles distantes, sans glyphs : uniquement des couches fill/line. */
+export const DEM_SOURCE = 'dem';
+export const TERRAIN_EXAGGERATION = 1.5;
+/** Zone utile : limite le nombre de tuiles de relief chargées. */
+export const MAX_BOUNDS: [[number, number], [number, number]] = [
+  [-30, 5],
+  [75, 66],
+];
+
+function glyphsUrl(): string {
+  // URL absolue : le worker de MapLibre ne résout pas les chemins relatifs à la page.
+  const base = new URL(import.meta.env.BASE_URL, window.location.href).href;
+  return `${base}fonts/{fontstack}/{range}.pbf`;
+}
+
+function demSource() {
+  return {
+    type: 'raster-dem' as const,
+    tiles: ['https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png'],
+    encoding: 'terrarium' as const,
+    tileSize: 256,
+    maxzoom: 12,
+    attribution: 'Terrain : Mapzen / AWS Terrain Tiles',
+  };
+}
+
+/**
+ * Style inline Mercator : fond océan, graticule, relief (raster-dem Terrarium public AWS)
+ * et hillshade parchemin. Les terres sont insérées avant la graticule par addLand ;
+ * territoires, villes et marqueur viennent ensuite par-dessus le hillshade.
+ */
 export function baseStyle(): StyleSpecification {
   return {
     version: 8,
-    projection: { type: 'globe' },
+    projection: { type: 'mercator' },
+    glyphs: glyphsUrl(),
     sources: {
       graticule: { type: 'geojson', data: graticule(15) },
+      [DEM_SOURCE]: demSource(),
+      'dem-shade': demSource(),
     },
     layers: [
       { id: 'ocean', type: 'background', paint: { 'background-color': MAP_COLORS.ocean } },
@@ -26,6 +58,17 @@ export function baseStyle(): StyleSpecification {
         type: 'line',
         source: 'graticule',
         paint: { 'line-color': MAP_COLORS.graticule, 'line-width': 0.5, 'line-opacity': 0.35, 'line-dasharray': [4, 4] },
+      },
+      {
+        id: 'hillshade',
+        type: 'hillshade',
+        source: 'dem-shade',
+        paint: {
+          'hillshade-exaggeration': 0.4,
+          'hillshade-shadow-color': '#6b5a48',
+          'hillshade-highlight-color': '#fff7e2',
+          'hillshade-accent-color': '#8a7560',
+        },
       },
     ],
   };

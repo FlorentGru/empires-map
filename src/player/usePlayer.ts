@@ -112,7 +112,7 @@ export function usePlayer(stepCount: number, initialIndex = 0) {
     [],
   );
 
-  return { ...state, ...actions };
+  return useMemo(() => ({ ...state, ...actions }), [state, actions]);
 }
 
 export type Player = ReturnType<typeof usePlayer>;

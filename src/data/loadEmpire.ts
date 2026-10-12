@@ -1,5 +1,5 @@
 import type { FeatureCollection, MultiPolygon, Polygon } from 'geojson';
-import type { Empire, TerritoryProperties, TimelineStep } from '../types';
+import type { DiffKind, Empire, TerritoryProperties, TimelineStep } from '../types';
 
 export type TerritoryCollection = FeatureCollection<Polygon | MultiPolygon, TerritoryProperties>;
 
@@ -32,6 +32,8 @@ export function getEmpire(id: string | null | undefined): Empire | undefined {
 }
 
 /* ---------- Territoires (fetch + cache) ---------- */
+
+export type DiffCollection = FeatureCollection<Polygon | MultiPolygon, { kind: DiffKind }>;
 
 const EMPTY: TerritoryCollection = { type: 'FeatureCollection', features: [] };
 const cache = new Map<string, Promise<TerritoryCollection>>();
@@ -67,6 +69,41 @@ export function loadTerritory(empireId: string, territory: string): Promise<Terr
 export function preloadAround(empire: Empire, index: number): void {
   for (const i of [index + 1, index - 1]) {
     const step: TimelineStep | undefined = empire.steps[i];
-    if (step) void loadTerritory(empire.id, step.territory);
+    if (!step) continue;
+    void loadTerritory(empire.id, step.territory);
+    if (i === index + 1) void loadDiff(empire.id, step.id);
   }
+}
+
+/* ---------- Diffs précalculés (étape n-1 → n) ---------- */
+
+const EMPTY_DIFF: DiffCollection = { type: 'FeatureCollection', features: [] };
+const diffCache = new Map<string, Promise<DiffCollection>>();
+
+export function diffUrl(empireId: string, stepId: string): string {
+  return `${import.meta.env.BASE_URL}data/empires/${encodeURIComponent(empireId)}/diffs/${encodeURIComponent(stepId)}.geojson`;
+}
+
+/** Diff avec l'étape précédente. Fichier absent ou invalide : aucune diff (jamais d'erreur). */
+export function loadDiff(empireId: string, stepId: string): Promise<DiffCollection> {
+  const url = diffUrl(empireId, stepId);
+  let p = diffCache.get(url);
+  if (!p) {
+    p = (async () => {
+      try {
+        const res = await fetch(url);
+        if (!res.ok) return EMPTY_DIFF;
+        const data = (await res.json()) as DiffCollection;
+        if (data?.type !== 'FeatureCollection' || !Array.isArray(data.features)) return EMPTY_DIFF;
+        const features = data.features.filter(
+          (f) => f?.geometry && (f.properties?.kind === 'gained' || f.properties?.kind === 'lost'),
+        );
+        return { type: 'FeatureCollection', features } satisfies DiffCollection;
+      } catch {
+        return EMPTY_DIFF;
+      }
+    })();
+    diffCache.set(url, p);
+  }
+  return p;
 }

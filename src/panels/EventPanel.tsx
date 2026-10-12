@@ -1,5 +1,5 @@
 import Markdown from 'react-markdown';
-import type { ComponentProps, CSSProperties } from 'react';
+import { memo, type ComponentProps, type CSSProperties } from 'react';
 import { eventMeta } from '../lib/eventTypes';
 import { formatYear } from '../lib/years';
 import type { BattleInfo, TimelineStep } from '../types';
@@ -17,7 +17,7 @@ const markdownComponents = {
   ),
 };
 
-export function EventPanel({ step, open, onToggle }: Props) {
+export const EventPanel = memo(function EventPanel({ step, open, onToggle }: Props) {
   const meta = step ? eventMeta(step.type) : null;
   return (
     <aside className={`event-panel${open ? '' : ' event-panel--collapsed'}`} aria-label="Détails de l'événement">
@@ -50,7 +50,7 @@ export function EventPanel({ step, open, onToggle }: Props) {
             </header>
 
             <div className="prose">
-              <Markdown components={markdownComponents}>{step.details}</Markdown>
+              <Details text={step.details} />
             </div>
 
             {step.battle && <BattleBlock battle={step.battle} />}
@@ -89,7 +89,12 @@ export function EventPanel({ step, open, onToggle }: Props) {
       )}
     </aside>
   );
-}
+});
+
+/** Le markdown (coûteux) ne se re-rend que si le texte change. */
+const Details = memo(function Details({ text }: { text: string }) {
+  return <Markdown components={markdownComponents}>{text}</Markdown>;
+});
 
 function BattleBlock({ battle }: { battle: BattleInfo }) {
   const rows: [string, string | undefined][] = [
