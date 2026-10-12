@@ -29,6 +29,8 @@ type Poly = Feature<Polygon | MultiPolygon>;
 interface Entity {
   name: string;
   geom: Poly | null;
+  /** Géométrie non découpée sur les terres (override `noclip` : le trait de côte 1:50m est trop grossier). */
+  raw?: Poly | null;
   sourceYear: number;
 }
 
@@ -215,6 +217,8 @@ interface OverrideProps {
   from?: string;
   match?: string;
   note?: string;
+  /** true : ne pas découper cette géométrie sur les terres Natural Earth (petites zones côtières). */
+  noclip?: boolean;
 }
 
 function overrideGeom(f: Feature, file: string): Poly {
@@ -269,7 +273,8 @@ function applyOverrides(step: RomeStep, entities: Entity[]): { entities: Entity[
       // falls through
       case 'add': {
         const e = get(props.entity ?? defaultName);
-        e.geom = union(e.geom, geom);
+        if (props.noclip) e.raw = union(e.raw ?? null, geom);
+        else e.geom = union(e.geom, geom);
         e.sourceYear = step.year;
         break;
       }
@@ -286,7 +291,7 @@ function applyOverrides(step: RomeStep, entities: Entity[]): { entities: Entity[
         fail(`${file} : op inconnue ${(props as OverrideProps).op}`);
     }
   }
-  return { entities: list.filter((e) => e.geom), applied: true };
+  return { entities: list.filter((e) => e.geom || e.raw), applied: true };
 }
 
 // ---------- sortie ----------
@@ -398,7 +403,7 @@ function buildStep(step: RomeStep, results: Map<string, Entity[]>): Entity[] {
   const { entities: after, applied } = applyOverrides(step, entities);
   if (applied) console.log(`  + overrides/rome/${step.id}.geojson`);
   return after
-    .map((e) => ({ ...e, geom: dropSlivers(clipToLand(e.geom)) }))
+    .map((e) => ({ ...e, geom: union(dropSlivers(clipToLand(e.geom)), e.raw ?? null), raw: null }))
     .filter((e) => e.geom && areaKm2(e.geom) > 0);
 }
 

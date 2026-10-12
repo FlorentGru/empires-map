@@ -1,0 +1,4 @@
+{"type":"FeatureCollection","features":[
+{"type": "Feature", "properties": {"op": "add", "entity": "Empire romain — part de Dioclétien", "note": "Mésopotamie du Nord : Édesse, Carrhes, Nisibe, frontière du Khabour"}, "geometry": {"type": "Polygon", "coordinates": [[[37.8, 38.3], [41.5, 38.3], [41.5, 36.8], [40.8, 36.2], [40.5, 35.05], [39.5, 35.4], [38.5, 35.8], [37.8, 35.9], [37.8, 38.3]]]}},
+{"type": "Feature", "properties": {"op": "subtract", "note": "Tingitane réduite au nord : Volubilis évacué, Tanger et Lixus conservés"}, "geometry": {"type": "Polygon", "coordinates": [[[-11, 28], [-2.3, 28], [-2.3, 34.8], [-11, 34.8], [-11, 28]]]}}
+]}

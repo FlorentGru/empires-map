@@ -1,0 +1,4 @@
+{"type":"FeatureCollection","features":[
+{"type": "Feature", "properties": {"op": "add", "entity": "Empire romain", "note": "Mésopotamie du Nord : Édesse, Carrhes, Nisibe, Khabour"}, "geometry": {"type": "Polygon", "coordinates": [[[37.8, 38.3], [41.5, 38.3], [41.5, 36.8], [40.8, 36.2], [40.5, 35.05], [39.5, 35.4], [38.5, 35.8], [37.8, 35.9], [37.8, 38.3]]]}},
+{"type": "Feature", "properties": {"op": "add", "entity": "Empire romain", "note": "Régions transtigritanes (Arzanène, Corduène, Zabdicène) depuis 298 jusqu'au Tigre supérieur"}, "geometry": {"type": "Polygon", "coordinates": [[[41.4, 38.4], [42.9, 38.3], [43.6, 37.8], [43.6, 37.2], [42.4, 37.0], [41.5, 36.9], [41.4, 38.4]]]}}
+]}
