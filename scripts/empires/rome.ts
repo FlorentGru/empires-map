@@ -1,23 +1,11 @@
-// Étapes de la frise « Empire romain » et paramètres de construction des territoires.
+// Configuration « Empire romain » : étapes de la frise et paramètres de construction des territoires.
 // Un fichier public/data/empires/rome/territories/<id>.geojson est produit par étape.
 //
 // Par défaut, build-territories.ts choisit automatiquement l'instantané
-// historical-basemaps le plus proche de `year` et y extrait les entités romaines.
-// Les champs optionnels permettent d'affiner :
-//   - snapshot : impose un instantané (ex. "world_bc200")
-//   - base     : part du résultat d'une étape précédente au lieu d'un instantané
-//                (utile pour les étapes reconstruites par overrides cumulatifs)
-//   - entities : correspondance NAME (historical-basemaps) → nom français de la Feature ;
-//                plusieurs NAME peuvent pointer vers le même nom (fusion)
+// historical-basemaps le plus proche de `year` et y extrait les entités romaines
+// (filtres d'entités : champ `entities`, voir EmpireStep).
 // Les corrections géographiques vont dans overrides/rome/<id>.geojson.
-
-export interface RomeStep {
-  id: string;
-  year: number;
-  snapshot?: string;
-  base?: string;
-  entities?: Record<string, string>;
-}
+import type { EmpireConfig, EmpireStep } from './types.ts';
 
 const REPUBLIQUE = { Rome: 'République romaine', 'Roman Republic': 'République romaine' };
 const TETRARCHIE_FUSION = {
@@ -27,7 +15,7 @@ const TETRARCHIE_FUSION = {
   'Rome (Constantinus)': 'Empire romain',
 };
 
-export const ROME_STEPS: RomeStep[] = [
+const STEPS: EmpireStep[] = [
   { id: 'republique-509', year: -509, entities: REPUBLIQUE },
   { id: 'ligue-latine-338', year: -338, entities: REPUBLIQUE },
   { id: 'tarente-272', year: -272, entities: REPUBLIQUE },
@@ -87,3 +75,12 @@ export const ROME_STEPS: RomeStep[] = [
   },
   { id: 'chute-1453', year: 1453, entities: { 'Byzantine Empire': 'Empire byzantin' } },
 ];
+
+export const rome: EmpireConfig = {
+  id: 'rome',
+  steps: STEPS,
+  defaultEntity: 'Empire romain',
+  // Règle Constantinople : le trait de côte 1:50m noie la péninsule ; si le territoire (avant découpe)
+  // contient ce point, on ajoute sans découpe les polygones de overrides/rome/_constantinople.geojson.
+  coastFix: { point: [28.97, 41.01], file: '_constantinople.geojson' },
+};

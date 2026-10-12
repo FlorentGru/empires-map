@@ -11,7 +11,10 @@
     "fetch:data": "bash scripts/fetch-basemaps.sh",
     "build:data": "tsx scripts/build-territories.ts && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts",
     "build:sdf": "tsx scripts/build-sdf.ts",
-    "build:countries": "tsx scripts/build-countries.ts"
+    "build:countries": "tsx scripts/build-countries.ts",
+    "build:data:rome": "tsx scripts/build-territories.ts --empire rome && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire rome",
+    "build:data:napoleon": "tsx scripts/build-territories.ts --empire napoleon && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire napoleon",
+    "build:territories": "tsx scripts/build-territories.ts"
   },
   "dependencies": {
     "maplibre-gl": "^6.14.0",

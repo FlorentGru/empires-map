@@ -1,4 +1,4 @@
-// Bandes de morphing entre deux étapes consécutives : public/data/empires/rome/morph/<stepId>.geojson
+// Bandes de morphing entre deux étapes consécutives : public/data/empires/<empire>/morph/<stepId>.geojson
 // (FeatureCollection, properties MorphProperties). Le front les anime pour faire « glisser » la frontière.
 //   - stable : prev ∩ curr (entités fusionnées), t = 0
 //   - gained : curr − prev, découpé en N bandes par distance à l'ANCIENNE frontière (t = k/N)
@@ -14,15 +14,11 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import * as turf from '@turf/turf';
 import type { Feature, FeatureCollection, MultiPolygon, Polygon, Position } from 'geojson';
-import { ROME_STEPS } from './steps.ts';
+import { loadTimeline, paths, selectedEmpires } from './empires/index.ts';
+import type { EmpireConfig } from './empires/types.ts';
 import type { MorphProperties } from '../src/types.ts';
 
 type Poly = Feature<Polygon | MultiPolygon>;
-
-const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const TERR_DIR = path.join(ROOT, 'public/data/empires/rome/territories');
-const MORPH_DIR = path.join(ROOT, 'public/data/empires/rome/morph');
-const TIMELINE = path.join(ROOT, 'data/empires/rome/timeline.json');
 
 const N = 24;
 const MIN_KM2 = 300; // morceaux entiers (gained/lost avant découpage)
@@ -47,9 +43,10 @@ function parts(f: Poly | null): Polygon[] {
   return g.type === 'Polygon' ? [g] : g.coordinates.map((c) => ({ type: 'Polygon', coordinates: c }) as Polygon);
 }
 
-function readMerged(id: string): Poly | null {
-  const fc = JSON.parse(fs.readFileSync(path.join(TERR_DIR, `${id}.geojson`), 'utf8')) as FeatureCollection;
-  return unionAll(fc.features.map((f) => turf.cleanCoords(f) as Poly));
+function readMerged(empire: string, id: string): Poly | null {
+  const fc = JSON.parse(fs.readFileSync(path.join(paths(empire).territories, `${id}.geojson`), 'utf8')) as FeatureCollection;
+  // Les alliés contraints (status 'allied') ne sont qu'un contour : exclus des diffs, morph et SDF.
+  return unionAll(fc.features.filter((f) => f.properties?.status !== 'allied').map((f) => turf.cleanCoords(f) as Poly));
 }
 
 function simplified(f: Poly): Poly {
@@ -158,7 +155,12 @@ function roundRing(ring: Position[]): Position[] {
 }
 
 function finalize(f: Poly, tol: number): Polygon | MultiPolygon | null {
-  const s = turf.simplify(f, { tolerance: tol, highQuality: true }) as Poly;
+  let s: Poly;
+  try {
+    s = turf.simplify(f, { tolerance: tol, highQuality: true }) as Poly;
+  } catch {
+    return null; // fragment dégénéré (< 4 points) : abandonné comme les éclats < MIN_FRAG_KM2
+  }
   const polys: Position[][][] = [];
   for (const p of parts(s)) {
     const outer = roundRing(p.coordinates[0]);
@@ -186,16 +188,16 @@ function buildFeatures(stable: Poly | null, gained: Band[], lost: Band[], tol: n
   return out;
 }
 
-export function writeMorph(): void {
-  const timeline = JSON.parse(fs.readFileSync(TIMELINE, 'utf8')) as { steps: { id: string; location: Position }[] };
-  const loc = new Map(timeline.steps.map((s) => [s.id, s.location]));
-  fs.rmSync(MORPH_DIR, { recursive: true, force: true });
-  fs.mkdirSync(MORPH_DIR, { recursive: true });
+export function writeMorph(cfg: EmpireConfig): void {
+  const loc = new Map(loadTimeline(cfg.id).steps.map((s) => [s.id, s.location]));
+  const morphDir = paths(cfg.id).morph;
+  fs.rmSync(morphDir, { recursive: true, force: true });
+  fs.mkdirSync(morphDir, { recursive: true });
   const t0 = Date.now();
-  let prev = readMerged(ROME_STEPS[0].id);
+  let prev = readMerged(cfg.id, cfg.steps[0].id);
   let total = 0;
-  for (const step of ROME_STEPS.slice(1)) {
-    const cur = readMerged(step.id);
+  for (const step of cfg.steps.slice(1)) {
+    const cur = readMerged(cfg.id, step.id);
     const stable = intersect(prev, cur);
     const gainedAll = cur ? difference(cur, prev) : null;
     const lostAll = prev ? difference(prev, cur) : null;
@@ -220,21 +222,22 @@ export function writeMorph(): void {
       features = buildFeatures(stable, gained, lost, tol);
       json = JSON.stringify({ type: 'FeatureCollection', features });
     }
-    fs.writeFileSync(path.join(MORPH_DIR, `${step.id}.geojson`), json + '\n');
+    fs.writeFileSync(path.join(morphDir, `${step.id}.geojson`), json + '\n');
     total += Buffer.byteLength(json);
     prev = cur;
   }
-  console.log(`✓ morph/ (${ROME_STEPS.length - 1} fichiers, ${(total / 1024).toFixed(0)} Ko, ${((Date.now() - t0) / 1000).toFixed(0)} s)`);
+  console.log(`✓ ${cfg.id}/morph/ (${cfg.steps.length - 1} fichiers, ${(total / 1024).toFixed(0)} Ko, ${((Date.now() - t0) / 1000).toFixed(0)} s)`);
 }
 
-export function checkMorph(): boolean {
+export function checkMorph(cfg: EmpireConfig): boolean {
+  const morphDir = paths(cfg.id).morph;
   const rows: string[][] = [['id', 'gained', 'lost', 'taille', 'Δ stable+gained/curr', 'Δ stable+lost/prev', '']];
   let ok = true;
-  let prevArea = areaKm2(readMerged(ROME_STEPS[0].id));
+  let prevArea = areaKm2(readMerged(cfg.id, cfg.steps[0].id));
   let total = 0;
-  for (const step of ROME_STEPS.slice(1)) {
-    const curArea = areaKm2(readMerged(step.id));
-    const file = path.join(MORPH_DIR, `${step.id}.geojson`);
+  for (const step of cfg.steps.slice(1)) {
+    const curArea = areaKm2(readMerged(cfg.id, step.id));
+    const file = path.join(morphDir, `${step.id}.geojson`);
     if (!fs.existsSync(file)) {
       rows.push([step.id, '—', '—', '—', '—', '—', 'MANQUANT']);
       ok = false;
@@ -269,7 +272,7 @@ export function checkMorph(): boolean {
     prevArea = curArea;
   }
   const w = rows[0].map((_, c) => Math.max(...rows.map((r) => r[c].length)));
-  console.log('\nContrôle morph');
+  console.log(`\nContrôle morph — ${cfg.id}`);
   for (const r of rows) console.log(r.map((v, c) => v.padEnd(w[c])).join(' | '));
   console.log(`Total morph : ${(total / 1024).toFixed(0)} Ko`);
   if (total > 2 * 1024 * 1024) ok = false;
@@ -277,6 +280,11 @@ export function checkMorph(): boolean {
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  if (process.argv[2] !== 'check') writeMorph();
-  if (!checkMorph()) process.exit(1);
+  const check = process.argv.includes('check');
+  let ok = true;
+  for (const cfg of selectedEmpires()) {
+    if (!check) writeMorph(cfg);
+    if (!checkMorph(cfg)) ok = false;
+  }
+  if (!ok) process.exit(1);
 }

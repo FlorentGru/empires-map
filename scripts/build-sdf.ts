@@ -35,7 +35,11 @@ const mercLat = (y: number) => (2 * Math.atan(Math.exp(y)) - Math.PI / 2) / DEG;
 
 function loadGeoms(file: string): Feature<Geom>[] {
   const fc = JSON.parse(fs.readFileSync(file, 'utf8')) as FeatureCollection;
-  return fc.features.filter((f): f is Feature<Geom> => !!f.geometry && (f.geometry.type === 'Polygon' || f.geometry.type === 'MultiPolygon'));
+  // Les alliés contraints (status 'allied') ne sont qu'un contour : exclus du glissement.
+  return fc.features.filter(
+    (f): f is Feature<Geom> =>
+      f.properties?.status !== 'allied' && !!f.geometry && (f.geometry.type === 'Polygon' || f.geometry.type === 'MultiPolygon'),
+  );
 }
 
 function polygonsOf(fs_: Feature<Geom>[]): Position[][][] {

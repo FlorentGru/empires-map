@@ -1,30 +1,38 @@
-// Construit public/data/empires/rome/territories/<id>.geojson à partir des instantanés
-// historical-basemaps (GPL-3.0) + Natural Earth (domaine public) + overrides manuels.
+// Construit public/data/empires/<empire>/territories/<id>.geojson pour chaque empire configuré
+// (scripts/empires/<empire>.ts) à partir des instantanés historical-basemaps (GPL-3.0)
+// + Natural Earth (domaine public) + overrides manuels (overrides/<empire>/).
 // Prérequis : npm run fetch:data
+// Usage : tsx scripts/build-territories.ts [--empire <id>] [<stepId>]
+//   sans <stepId> : construit toutes les étapes, puis land, diffs, morph et contrôles.
 //
 // Pipeline par étape :
 //   1. géométrie de départ : instantané historical-basemaps (le plus proche de l'année,
-//      ou `snapshot` imposé) filtré sur les entités romaines, OU résultat d'une étape `base`
-//   2. overrides/rome/<id>.geojson (Features avec properties.op) :
+//      ou `snapshot` imposé) filtré sur les entités de l'empire (`entities`), OU résultat d'une
+//      étape `base`, OU entités composées par code (`compose`, voir scripts/empires/napoleon.ts :
+//      pays Natural Earth, instantanés et polygones nommés overrides/<empire>/_regions.geojson).
+//      Pour `compose`, une entité ne chevauche pas les précédentes (ordre = priorité) et porte un `status`.
+//   2. overrides/<empire>/<id>.geojson (Features avec properties.op) :
 //        op "add"      : union dans l'entité `entity` (créée si absente ; défaut = 1re entité)
 //        op "subtract" : différence sur l'entité `entity`, ou sur toutes si absente
 //        op "replace"  : au 1er replace du fichier, toutes les entités de départ sont
 //                        supprimées ; ensuite se comporte comme "add"
 //      Géométrie : Polygon/MultiPolygon (approximatif, il est découpé sur les terres),
 //      ou Point = l'île / la masse terrestre Natural Earth qui contient ce point.
-//      Optionnel : `from` (instantané, ex. "world_bc1") + `match` (regex sur NAME) →
-//      la géométrie est intersectée avec ces entités de l'instantané (frontières cohérentes).
+//      Optionnel : `from` (instantané, ex. "world_bc1", ou "countries" = pays Natural Earth)
+//      + `match` (regex sur NAME / ADMIN) → la géométrie est intersectée avec ces entités (frontières cohérentes).
+//      Optionnel : `status` (core|vassal|allied) pour les entités créées ou modifiées.
 //   3. découpe sur les terres Natural Earth 1:50m, suppression des éclats
 //   4. simplification (tolérance 0.02°, highQuality, augmentée si > 150 Ko), arrondi 3 décimales
-//   5. Constantinople : si le territoire (avant découpe) contient (28.97, 41.01), on ajoute sans découpe
-//      les polygones de overrides/rome/_constantinople.geojson (trait de côte 1:50m trop grossier)
+//   5. `coastFix` de l'empire (Rome : Constantinople) : si le territoire (avant découpe) contient le point,
+//      on ajoute sans découpe les polygones du fichier d'overrides (trait de côte 1:50m trop grossier)
 // Puis : diffs/<id>.geojson (gagné/perdu vs étape précédente, morceaux < 2000 km² ignorés) et basemap/land.geojson (bbox réduite).
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import * as turf from '@turf/turf';
 import type { Feature, FeatureCollection, MultiPolygon, Polygon, Position } from 'geojson';
-import { ROME_STEPS, type RomeStep } from './steps.ts';
+import { checkConsistency, paths, selectedEmpires } from './empires/index.ts';
+import type { ComposedEntity, EmpireConfig, EmpireStep, GeoCtx, Status } from './empires/types.ts';
 import type { DiffKind, TerritoryProperties } from '../src/types.ts';
 import { checkTerritories } from './check-territories.ts';
 import { checkMorph, writeMorph } from './build-morph.ts';
@@ -32,6 +40,7 @@ import { checkMorph, writeMorph } from './build-morph.ts';
 type Poly = Feature<Polygon | MultiPolygon>;
 interface Entity {
   name: string;
+  status?: Status;
   geom: Poly | null;
   /** Géométrie non découpée sur les terres (override `noclip` : le trait de côte 1:50m est trop grossier). */
   raw?: Poly | null;
@@ -41,17 +50,12 @@ interface Entity {
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const HB_DIR = path.join(ROOT, '.cache/historical-basemaps');
 const NE_FILE = path.join(ROOT, '.cache/natural-earth/ne_50m_land.geojson');
-const OVERRIDES_DIR = path.join(ROOT, 'overrides/rome');
-const OUT_DIR = path.join(ROOT, 'public/data/empires/rome/territories');
+const NE_COUNTRIES_FILE = path.join(ROOT, '.cache/natural-earth/ne_50m_admin_0_countries.geojson');
 const LAND_OUT = path.join(ROOT, 'public/data/basemap/land.geojson');
-const DIFF_DIR = path.join(ROOT, 'public/data/empires/rome/diffs');
-const CONSTANTINOPLE_FILE = path.join(OVERRIDES_DIR, '_constantinople.geojson');
-const CONSTANTINOPLE_PT: Position = [28.97, 41.01];
 /** Emprise du fond de carte : Atlantique → Iran, Sahara → Écosse. */
 const LAND_BBOX: [number, number, number, number] = [-20, 15, 65, 62];
 const MIN_DIFF_KM2 = 2000;
 
-const EMPIRE = 'rome';
 const BASE_TOLERANCE = 0.02;
 const MAX_BYTES = 150 * 1024;
 const MIN_PART_KM2 = 50;
@@ -220,11 +224,32 @@ function snapshotGeom(name: string, matcher: (n: string) => boolean): Poly | nul
   return unionAll(cleaned);
 }
 
+// ---------- pays Natural Earth 1:50m (frontières modernes, cohérentes entre elles) ----------
+
+let countriesFc: FeatureCollection | null = null;
+function countriesGeom(match: string): Poly | null {
+  if (!countriesFc) {
+    if (!fs.existsSync(NE_COUNTRIES_FILE)) fail(`${NE_COUNTRIES_FILE} absent — lancer d'abord npm run fetch:data`);
+    countriesFc = JSON.parse(fs.readFileSync(NE_COUNTRIES_FILE, 'utf8')) as FeatureCollection;
+  }
+  const re = new RegExp(match);
+  const feats = countriesFc.features.filter(
+    (f) =>
+      f.geometry &&
+      (f.geometry.type === 'Polygon' || f.geometry.type === 'MultiPolygon') &&
+      (re.test(String(f.properties?.ADMIN ?? '')) || re.test(String(f.properties?.NAME ?? ''))),
+  ) as Poly[];
+  return unionAll(feats.map((f) => turf.cleanCoords(f) as Poly));
+}
+
 // ---------- overrides ----------
 
 interface OverrideProps {
   op: 'add' | 'subtract' | 'replace';
   entity?: string;
+  /** Statut de l'entité (empires à satellites) ; appliqué à l'entité ajoutée/modifiée. */
+  status?: Status;
+  /** Instantané (ex. "world_1800") ou "countries" (pays Natural Earth). */
   from?: string;
   match?: string;
   note?: string;
@@ -245,7 +270,7 @@ function overrideGeom(f: Feature, file: string): Poly {
   else fail(`${file} : géométrie ${g?.type} non gérée`);
   if (props.from) {
     const re = new RegExp(props.match ?? '.');
-    const src = snapshotGeom(props.from, (n) => re.test(n));
+    const src = props.from === 'countries' ? countriesGeom(props.match ?? '.') : snapshotGeom(props.from, (n) => re.test(n));
     if (!src) fail(`${file} : aucune entité ${props.match} dans ${props.from}`);
     const i = intersect(geom, src);
     if (!i) fail(`${file} : intersection vide avec ${props.from}/${props.match} (${props.note ?? ''})`);
@@ -254,15 +279,15 @@ function overrideGeom(f: Feature, file: string): Poly {
   return geom;
 }
 
-function applyOverrides(step: RomeStep, entities: Entity[]): { entities: Entity[]; applied: boolean } {
-  const file = path.join(OVERRIDES_DIR, `${step.id}.geojson`);
+function applyOverrides(cfg: EmpireConfig, step: EmpireStep, entities: Entity[]): { entities: Entity[]; applied: boolean } {
+  const file = path.join(paths(cfg.id).overrides, `${step.id}.geojson`);
   if (!fs.existsSync(file)) return { entities, applied: false };
   const fc = JSON.parse(fs.readFileSync(file, 'utf8')) as FeatureCollection;
   if (fc.type !== 'FeatureCollection' && (fc as unknown as Feature).type !== 'Feature') fail(`${file} : GeoJSON invalide`);
   const features = fc.type === 'FeatureCollection' ? fc.features : [fc as unknown as Feature];
   let list = entities.map((e) => ({ ...e }));
   let replaced = false;
-  const defaultName = list[0]?.name ?? 'Empire romain';
+  const defaultName = list[0]?.name ?? cfg.defaultEntity;
   const get = (name: string): Entity => {
     let e = list.find((x) => x.name === name);
     if (!e) {
@@ -284,6 +309,7 @@ function applyOverrides(step: RomeStep, entities: Entity[]): { entities: Entity[
       // falls through
       case 'add': {
         const e = get(props.entity ?? defaultName);
+        if (props.status) e.status = props.status;
         if (props.noclip) e.raw = union(e.raw ?? null, geom);
         else e.geom = union(e.geom, geom);
         e.sourceYear = step.year;
@@ -305,15 +331,17 @@ function applyOverrides(step: RomeStep, entities: Entity[]): { entities: Entity[
   return { entities: list.filter((e) => e.geom || e.raw), applied: true };
 }
 
-let cstCache: Poly | null = null;
-function constantinople(): Poly {
-  if (!cstCache) {
-    const fc = JSON.parse(fs.readFileSync(CONSTANTINOPLE_FILE, 'utf8')) as FeatureCollection;
-    const u = unionAll(fc.features.map((f) => polyFeature(f.geometry as Polygon)));
-    if (!u) fail('_constantinople.geojson vide');
-    cstCache = u;
+const coastFixCache = new Map<string, Poly>();
+function coastFix(cfg: EmpireConfig): Poly {
+  const file = path.join(paths(cfg.id).overrides, cfg.coastFix!.file);
+  let u = coastFixCache.get(file) ?? null;
+  if (!u) {
+    const fc = JSON.parse(fs.readFileSync(file, 'utf8')) as FeatureCollection;
+    u = unionAll(fc.features.map((f) => polyFeature(f.geometry as Polygon)));
+    if (!u) fail(`${file} vide`);
+    coastFixCache.set(file, u);
   }
-  return cstCache;
+  return u;
 }
 
 // ---------- sortie ----------
@@ -343,11 +371,11 @@ function finalize(f: Poly, tolerance: number): Polygon | MultiPolygon | null {
   return polys.length === 1 ? { type: 'Polygon', coordinates: polys[0] } : { type: 'MultiPolygon', coordinates: polys };
 }
 
-function validate(id: string, fc: FeatureCollection<Polygon | MultiPolygon, TerritoryProperties>) {
+function validate(cfg: EmpireConfig, id: string, fc: FeatureCollection<Polygon | MultiPolygon, TerritoryProperties>) {
   if (fc.features.length === 0) fail(`${id} : FeatureCollection vide`);
   for (const f of fc.features) {
     const p = f.properties;
-    if (!p || p.empire !== EMPIRE || !p.name || !Number.isFinite(p.sourceYear)) fail(`${id} : properties invalides`);
+    if (!p || p.empire !== cfg.id || !p.name || !Number.isFinite(p.sourceYear)) fail(`${id} : properties invalides`);
     const g = f.geometry;
     if (!g || (g.type !== 'Polygon' && g.type !== 'MultiPolygon')) fail(`${id} : géométrie absente`);
     const polys = g.type === 'Polygon' ? [g.coordinates] : g.coordinates;
@@ -367,7 +395,7 @@ function validate(id: string, fc: FeatureCollection<Polygon | MultiPolygon, Terr
   }
 }
 
-function writeStep(step: RomeStep, entities: Entity[]): void {
+function writeStep(cfg: EmpireConfig, step: EmpireStep, entities: Entity[]): void {
   let tolerance = BASE_TOLERANCE;
   for (;;) {
     const features: Feature<Polygon | MultiPolygon, TerritoryProperties>[] = [];
@@ -375,16 +403,18 @@ function writeStep(step: RomeStep, entities: Entity[]): void {
       if (!e.geom) continue;
       const g = finalize(e.geom, tolerance);
       if (!g) continue;
-      features.push({ type: 'Feature', properties: { empire: EMPIRE, name: e.name, sourceYear: e.sourceYear }, geometry: g });
+      features.push({ type: 'Feature', properties: { empire: cfg.id, name: e.name, sourceYear: e.sourceYear, ...(e.status ? { status: e.status } : {}) },
+        geometry: g,
+      });
     }
     const fc: FeatureCollection<Polygon | MultiPolygon, TerritoryProperties> = { type: 'FeatureCollection', features };
-    validate(step.id, fc);
+    validate(cfg, step.id, fc);
     const json = JSON.stringify(fc);
     if (Buffer.byteLength(json) > MAX_BYTES && tolerance < 0.2) {
       tolerance *= 1.5;
       continue;
     }
-    fs.writeFileSync(path.join(OUT_DIR, `${step.id}.geojson`), json + '\n');
+    fs.writeFileSync(path.join(paths(cfg.id).territories, `${step.id}.geojson`), json + '\n');
     if (tolerance !== BASE_TOLERANCE) console.log(`    (tolérance portée à ${tolerance.toFixed(3)} pour tenir sous 150 Ko)`);
     return;
   }
@@ -410,19 +440,21 @@ function writeLand(): void {
 // ---------- diffs ----------
 
 /** Fusionne les entités d'une étape (fichier déjà simplifié/arrondi). */
-function readMerged(id: string): Poly | null {
-  const fc = JSON.parse(fs.readFileSync(path.join(OUT_DIR, `${id}.geojson`), 'utf8')) as FeatureCollection;
-  return unionAll(fc.features.map((f) => turf.cleanCoords(f) as Poly));
+function readMerged(cfg: EmpireConfig, id: string): Poly | null {
+  const fc = JSON.parse(fs.readFileSync(path.join(paths(cfg.id).territories, `${id}.geojson`), 'utf8')) as FeatureCollection;
+  // Les alliés contraints (status 'allied') ne sont qu'un contour : exclus des diffs, morph et SDF.
+  return unionAll(fc.features.filter((f) => f.properties?.status !== 'allied').map((f) => turf.cleanCoords(f) as Poly));
 }
 
-function writeDiffs(): void {
-  fs.rmSync(DIFF_DIR, { recursive: true, force: true });
-  fs.mkdirSync(DIFF_DIR, { recursive: true });
-  let prev = readMerged(ROME_STEPS[0].id);
+function writeDiffs(cfg: EmpireConfig): void {
+  const dir = paths(cfg.id).diffs;
+  fs.rmSync(dir, { recursive: true, force: true });
+  fs.mkdirSync(dir, { recursive: true });
+  let prev = readMerged(cfg, cfg.steps[0].id);
   let total = 0;
   let biggest = { id: '', size: 0 };
-  for (const step of ROME_STEPS.slice(1)) {
-    const cur = readMerged(step.id);
+  for (const step of cfg.steps.slice(1)) {
+    const cur = readMerged(cfg, step.id);
     const features: Feature<Polygon | MultiPolygon, { kind: DiffKind }>[] = [];
     const add = (kind: DiffKind, f: Poly | null) => {
       for (const p of parts(f)) {
@@ -435,21 +467,98 @@ function writeDiffs(): void {
       add('gained', difference(cur, prev));
       add('lost', difference(prev, cur));
     }
-    const file = path.join(DIFF_DIR, `${step.id}.geojson`);
+    const file = path.join(dir, `${step.id}.geojson`);
     fs.writeFileSync(file, JSON.stringify({ type: 'FeatureCollection', features }) + '\n');
     const size = fs.statSync(file).size;
     total += size;
     if (size > biggest.size) biggest = { id: step.id, size };
     prev = cur;
   }
-  console.log(`✓ diffs/ (${ROME_STEPS.length - 1} fichiers, ${(total / 1024).toFixed(0)} Ko, max ${biggest.id} ${(biggest.size / 1024).toFixed(1)} Ko)`);
+  console.log(`✓ ${cfg.id}/diffs/ (${cfg.steps.length - 1} fichiers, ${(total / 1024).toFixed(0)} Ko, max ${biggest.id} ${(biggest.size / 1024).toFixed(1)} Ko)`);
+}
+
+// ---------- contexte géométrique des configs `compose` ----------
+
+function makeCtx(cfg: EmpireConfig): GeoCtx {
+  const memo = new Map<string, Poly | null>();
+  const cached = (key: string, f: () => Poly | null): Poly | null => {
+    if (!memo.has(key)) memo.set(key, f());
+    return memo.get(key) ?? null;
+  };
+  let regions: Map<string, Poly> | null = null;
+  const region = (name: string): Poly => {
+    if (!regions) {
+      const file = path.join(paths(cfg.id).overrides, '_regions.geojson');
+      if (!fs.existsSync(file)) fail(`${file} absent`);
+      const fc = JSON.parse(fs.readFileSync(file, 'utf8')) as FeatureCollection;
+      const byName = new Map<string, Poly[]>();
+      for (const f of fc.features) {
+        const n = (f.properties as { region?: string } | null)?.region;
+        if (!n) fail(`${file} : Feature sans properties.region`);
+        if (f.geometry?.type !== 'Polygon' && f.geometry?.type !== 'MultiPolygon') fail(`${file} : région ${n} non polygonale`);
+        const list = byName.get(n) ?? [];
+        list.push(polyFeature(f.geometry));
+        byName.set(n, list);
+      }
+      regions = new Map();
+      for (const [n, list] of byName) regions.set(n, unionAll(list)!);
+    }
+    const r = regions.get(name);
+    if (!r) fail(`région « ${name} » absente de overrides/${cfg.id}/_regions.geojson`);
+    return r;
+  };
+  return {
+    snap: (snapshot, match) => {
+      const re = new RegExp(match);
+      return cached(`snap|${snapshot}|${match}`, () => snapshotGeom(snapshot, (n) => re.test(n)));
+    },
+    country: (match, reg) =>
+      cached(`country|${match}|${reg ?? ''}`, () => {
+        const c = countriesGeom(match);
+        return reg ? intersect(c, region(reg)) : c;
+      }),
+    region,
+    island: (pt) => cached(`island|${pt}`, () => landAt(pt))!,
+    union: (...list) => unionAll(list.filter((x): x is Poly => !!x)),
+    inter: (a, b) => (a && b ? intersect(a, b) : null),
+    diff: (a, ...b) => {
+      let r = a;
+      for (const x of b) if (r && x) r = difference(r, x);
+      return r;
+    },
+    grow: (g, km, ...avoid) => {
+      if (!g) return null;
+      let r: Poly | null = turf.buffer(g, km, { units: 'kilometers', steps: 4 }) as Poly | null;
+      for (const x of avoid) if (r && x) r = difference(r, x);
+      return r;
+    },
+  };
 }
 
 // ---------- main ----------
 
-function buildStep(step: RomeStep, results: Map<string, Entity[]>): Entity[] {
+function composeStep(cfg: EmpireConfig, step: EmpireStep, ctx: GeoCtx): Entity[] {
+  if (!cfg.compose) fail(`${cfg.id} : l'étape ${step.id} demande compose mais la config n'en définit pas`);
+  const composed: ComposedEntity[] = cfg.compose(step, ctx);
+  const out: Entity[] = [];
+  let acc: Poly | null = null; // union des entités déjà placées (priorité = ordre)
+  for (const c of composed) {
+    if (!c.geom) {
+      console.warn(`  ⚠ ${step.id} : entité « ${c.name} » vide`);
+      continue;
+    }
+    out.push({ name: c.name, status: c.status, geom: acc ? difference(c.geom, acc) : c.geom, sourceYear: c.sourceYear ?? step.year });
+    acc = union(acc, c.geom);
+  }
+  console.log(`  compose → ${out.map((e) => `${e.name} [${e.status ?? '-'}]: ${Math.round(areaKm2(e.geom))} km²`).join(', ')}`);
+  return out;
+}
+
+function buildStep(cfg: EmpireConfig, step: EmpireStep, results: Map<string, Entity[]>, ctx: GeoCtx): Entity[] {
   let entities: Entity[];
-  if (step.base) {
+  if (step.compose) {
+    entities = composeStep(cfg, step, ctx);
+  } else if (step.base) {
     const base = results.get(step.base);
     if (!base) fail(`${step.id} : base ${step.base} non construite (ordre des étapes ?)`);
     entities = base.map((e) => ({ ...e }));
@@ -465,36 +574,48 @@ function buildStep(step: RomeStep, results: Map<string, Entity[]>): Entity[] {
     const label = entities.map((e) => `${e.name}: ${e.geom ? Math.round(areaKm2(e.geom)) + ' km²' : 'absent'}`).join(', ');
     console.log(`  ${snap} → ${label}`);
   }
-  const { entities: after, applied } = applyOverrides(step, entities);
-  if (applied) console.log(`  + overrides/rome/${step.id}.geojson`);
-  const cstPt = turf.point(CONSTANTINOPLE_PT);
-  const cst = constantinople();
+  const { entities: after, applied } = applyOverrides(cfg, step, entities);
+  if (applied) console.log(`  + overrides/${cfg.id}/${step.id}.geojson`);
+  const fix = cfg.coastFix ? { pt: turf.point(cfg.coastFix.point), geom: coastFix(cfg) } : null;
   return after
     .map((e) => {
-      // Le trait de côte 1:50m noie la péninsule de Constantinople : on la rajoute sans découpe.
-      const hasCst = !!e.geom && turf.booleanPointInPolygon(cstPt, e.geom);
-      return { ...e, geom: union(dropSlivers(clipToLand(e.geom)), union(e.raw ?? null, hasCst ? cst : null)), raw: null };
+      // Rustine de trait de côte (Rome : le 1:50m noie la péninsule de Constantinople) : ajout sans découpe.
+      const hasFix = !!fix && !!e.geom && turf.booleanPointInPolygon(fix.pt, e.geom);
+      return { ...e, geom: union(dropSlivers(clipToLand(e.geom)), union(e.raw ?? null, hasFix ? fix!.geom : null)), raw: null };
     })
     .filter((e) => e.geom && areaKm2(e.geom) > 0);
 }
 
-function main() {
-  fs.mkdirSync(OUT_DIR, { recursive: true });
-  const only = process.argv[2];
+function buildEmpire(cfg: EmpireConfig, only: string | undefined): void {
+  console.log(`\n=== ${cfg.id} ===`);
+  checkConsistency(cfg);
+  if (only && !cfg.steps.some((s) => s.id === only)) fail(`${cfg.id} : étape ${only} inconnue`);
+  fs.mkdirSync(paths(cfg.id).territories, { recursive: true });
+  const ctx = makeCtx(cfg);
   const results = new Map<string, Entity[]>();
-  for (const step of ROME_STEPS) {
+  for (const step of cfg.steps) {
     console.log(`• ${step.id} (${step.year})`);
-    const entities = buildStep(step, results);
-    if (entities.length === 0) fail(`${step.id} : aucune entité romaine trouvée`);
+    const entities = buildStep(cfg, step, results, ctx);
+    if (entities.length === 0) fail(`${step.id} : aucune entité trouvée`);
     results.set(step.id, entities);
-    if (!only || only === step.id) writeStep(step, entities);
+    if (!only || only === step.id) writeStep(cfg, step, entities);
   }
   if (only) return;
-  writeLand();
-  writeDiffs();
-  writeMorph();
-  if (!checkTerritories()) fail('contrôle des territoires en échec');
-  if (!checkMorph()) fail('contrôle des morphs en échec');
+  writeDiffs(cfg);
+  writeMorph(cfg);
+  if (!checkTerritories(cfg)) fail(`${cfg.id} : contrôle des territoires en échec`);
+  if (!checkMorph(cfg)) fail(`${cfg.id} : contrôle des morphs en échec`);
+}
+
+function main() {
+  const argv = process.argv.slice(2);
+  const empIdx = argv.indexOf('--empire');
+  const rest = argv.filter((_, i) => i !== empIdx && i !== empIdx + 1 || empIdx < 0);
+  const only = rest.find((a) => !a.startsWith('--'));
+  const list = selectedEmpires(argv);
+  if (only && list.length !== 1) fail('une étape précise exige --empire <id>');
+  if (!only) writeLand();
+  for (const cfg of list) buildEmpire(cfg, only);
 }
 
 main();
