@@ -56,3 +56,36 @@ export interface TerritoryProperties {
   /** Année de l'instantané historical-basemaps utilisé, ou de l'override. */
   sourceYear: number;
 }
+
+/** Nom d'une ville sur une période (bornes incluses ; absentes = ouvert). */
+export interface CityName {
+  name: string;
+  from?: number;
+  to?: number;
+}
+
+/** Ville affichée sur la carte (data/cities.json : City[]). */
+export interface City {
+  id: string;
+  /** Nom actuel, affiché entre parenthèses : « Lutetia (Paris) ». */
+  modern: string;
+  /** Noms d'époque successifs, triés chronologiquement. */
+  names: CityName[];
+  /** [longitude, latitude]. */
+  coords: [number, number];
+  /** Année de fondation (ou première mention) ; ville masquée avant. */
+  founded: number;
+  /** Année de destruction/abandon ; ville masquée après. */
+  destroyed?: number;
+  /** 1 = majeure (toujours visible), 2 = importante, 3 = secondaire (zoom ≥ 5). */
+  rank: 1 | 2 | 3;
+  /** Périodes où la ville est capitale de l'empire suivi. */
+  capitalOf?: { empire: string; from: number; to: number }[];
+}
+
+/**
+ * Diff précalculé entre une étape et la précédente :
+ * public/data/empires/<empire>/diffs/<stepId>.geojson
+ * (FeatureCollection, properties { kind: 'gained' | 'lost' }).
+ */
+export type DiffKind = 'gained' | 'lost';
