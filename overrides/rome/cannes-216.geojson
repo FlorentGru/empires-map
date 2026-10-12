@@ -1,0 +1,6 @@
+{"type":"FeatureCollection","features":[
+{"type": "Feature", "properties": {"op": "subtract", "note": "Défection du Bruttium, de la Lucanie et de l'Apulie méridionale"}, "geometry": {"type": "Polygon", "coordinates": [[[14.9, 40.4], [15.9, 40.65], [16.6, 40.6], [16.8, 39.9], [17.6, 39.3], [17.3, 38.5], [16.3, 37.6], [15.4, 37.8], [15.4, 38.6], [15.7, 39.4], [15.2, 39.95], [14.9, 40.1], [14.9, 40.4]]]}},
+{"type": "Feature", "properties": {"op": "subtract", "note": "Défection de Capoue, de la Campanie intérieure, des Hirpins et d'Arpi"}, "geometry": {"type": "Polygon", "coordinates": [[[13.95, 40.95], [14.45, 40.88], [15.2, 40.75], [16.1, 41.15], [16.15, 41.7], [15.3, 41.65], [14.5, 41.35], [13.95, 41.3], [13.95, 40.95]]]}},
+{"type": "Feature", "properties": {"op": "add", "note": "La Sicile provinciale reste romaine (rétablie après la soustraction précédente)"}, "geometry": {"type": "Point", "coordinates": [14.0, 37.5]}},
+{"type": "Feature", "properties": {"op": "subtract", "note": "Royaume de Syracuse (allié jusqu'en 215, hors province)"}, "geometry": {"type": "Polygon", "coordinates": [[[14.75, 36.55], [15.5, 36.55], [15.5, 37.9], [15.15, 37.88], [14.85, 37.4], [14.55, 36.95], [14.75, 36.55]]]}}
+]}

@@ -1,0 +1,6 @@
+{"type":"FeatureCollection","features":[
+{"type": "Feature", "properties": {"op": "add", "note": "Sardaigne (238)"}, "geometry": {"type": "Point", "coordinates": [9.0, 40.0]}},
+{"type": "Feature", "properties": {"op": "add", "note": "Corse (237)"}, "geometry": {"type": "Point", "coordinates": [9.1, 42.2]}},
+{"type": "Feature", "properties": {"op": "add", "note": "Colonies de Plaisance et Crémone (218) ; reste de la Cisalpine insurgé"}, "geometry": {"type": "Polygon", "coordinates": [[[9.55, 44.95], [10.15, 44.95], [10.15, 45.2], [9.55, 45.2], [9.55, 44.95]]]}},
+{"type": "Feature", "properties": {"op": "add", "note": "Tête de pont des Scipions autour d'Emporion/Tarragone"}, "geometry": {"type": "Polygon", "coordinates": [[[0.8, 40.7], [0.3, 41.2], [0.6, 41.7], [1.5, 42.2], [2.6, 42.5], [3.4, 42.45], [3.5, 42.0], [2.0, 41.0], [1.0, 40.5], [0.8, 40.7]]]}}
+]}

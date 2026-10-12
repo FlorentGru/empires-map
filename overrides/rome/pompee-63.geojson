@@ -1,0 +1,8 @@
+{"type":"FeatureCollection","features":[
+{"type": "Feature", "properties": {"op": "subtract", "note": "Nord-ouest hispanique (Galice, Asturies, Cantabrie) non soumis"}, "geometry": {"type": "Polygon", "coordinates": [[[-10, 41.2], [-6.5, 41.4], [-4.5, 42.2], [-1.8, 42.8], [-1.5, 43.8], [-10, 44.5], [-10, 41.2]]]}},
+{"type": "Feature", "properties": {"op": "add", "from": "world_bc1", "match": "^Roman Empire$", "note": "Bithynie-Pont (74 et 63)"}, "geometry": {"type": "Polygon", "coordinates": [[[29.0, 40.2], [31.5, 40.3], [34.0, 40.6], [36.5, 40.7], [37.6, 41.0], [37.6, 42.2], [29.0, 41.8], [29.0, 40.2]]]}},
+{"type": "Feature", "properties": {"op": "add", "note": "Cilicie élargie"}, "geometry": {"type": "Polygon", "coordinates": [[[32.0, 36.0], [36.3, 36.4], [36.6, 37.3], [33.8, 37.4], [32.0, 37.0], [32.0, 36.0]]]}},
+{"type": "Feature", "properties": {"op": "add", "note": "Province de Syrie (64)"}, "geometry": {"type": "Polygon", "coordinates": [[[35.0, 32.95], [35.9, 33.0], [36.6, 33.3], [37.3, 34.5], [38.4, 35.6], [38.2, 36.4], [37.5, 36.9], [36.7, 37.0], [36.3, 36.8], [35.9, 36.6], [35.5, 36.0], [35.6, 35.0], [35.0, 32.95]]]}},
+{"type": "Feature", "properties": {"op": "add", "note": "Crète (67)"}, "geometry": {"type": "Point", "coordinates": [24.9, 35.25]}},
+{"type": "Feature", "properties": {"op": "add", "note": "Cyrénaïque (74)"}, "geometry": {"type": "Polygon", "coordinates": [[[19.5, 30.0], [25.0, 30.0], [25.0, 32.3], [22.5, 33.3], [20.5, 32.8], [19.5, 31.5], [19.5, 30.0]]]}}
+]}

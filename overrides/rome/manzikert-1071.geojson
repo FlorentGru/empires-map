@@ -1,0 +1,8 @@
+{"type":"FeatureCollection","features":[
+{"type": "Feature", "properties": {"op": "subtract", "note": "Italie du Sud perdue (chute de Bari, avril 1071)"}, "geometry": {"type": "Polygon", "coordinates": [[[12.0, 36.0], [16.5, 37.0], [18.8, 39.5], [18.8, 40.6], [16.0, 42.5], [12.0, 42.5], [12.0, 36.0]]]}},
+{"type": "Feature", "properties": {"op": "add", "note": "Balkans jusqu'au Danube (thèmes de Bulgarie et Paristrion depuis 1018)"}, "geometry": {"type": "Polygon", "coordinates": [[[19.3, 42.4], [19.6, 43.0], [20.4, 44.0], [20.5, 44.8], [21.4, 44.75], [22.4, 44.65], [22.6, 44.2], [23.0, 43.8], [24.6, 43.7], [26.0, 43.85], [27.3, 44.1], [28.0, 44.4], [28.1, 45.4], [29.7, 45.2], [29.0, 44.0], [28.0, 42.0], [26.0, 41.6], [23.0, 41.3], [20.5, 41.3], [19.3, 42.4]]]}},
+{"type": "Feature", "properties": {"op": "add", "note": "Grèce continentale (thèmes d'Hellade, de Nicopolis, de Thessalonique)"}, "geometry": {"type": "Polygon", "coordinates": [[[19.3, 41.0], [23.5, 41.0], [24.4, 38.0], [22.5, 37.9], [21.0, 38.3], [19.3, 40.0], [19.3, 41.0]]]}},
+{"type": "Feature", "properties": {"op": "add", "note": "Antioche et Syrie du Nord"}, "geometry": {"type": "Polygon", "coordinates": [[[35.6, 35.4], [36.9, 35.4], [37.2, 36.8], [36.0, 36.95], [35.7, 36.3], [35.6, 35.4]]]}},
+{"type": "Feature", "properties": {"op": "add", "note": "Crète"}, "geometry": {"type": "Point", "coordinates": [24.9, 35.25]}},
+{"type": "Feature", "properties": {"op": "add", "note": "Chypre"}, "geometry": {"type": "Point", "coordinates": [33.0, 35.0]}}
+]}

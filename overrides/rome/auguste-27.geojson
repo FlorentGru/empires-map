@@ -1,0 +1,3 @@
+{"type":"FeatureCollection","features":[
+{"type": "Feature", "properties": {"op": "add", "from": "world_bc1", "match": "^Roman Empire$", "note": "Égypte (30)"}, "geometry": {"type": "Polygon", "coordinates": [[[24.6, 21.9], [37.0, 21.9], [35.0, 28.0], [34.9, 29.5], [34.25, 31.3], [34.2, 31.8], [24.6, 31.9], [24.6, 21.9]]]}}
+]}

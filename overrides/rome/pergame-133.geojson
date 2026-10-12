@@ -1,0 +1,4 @@
+{"type":"FeatureCollection","features":[
+{"type": "Feature", "properties": {"op": "add", "from": "world_bc100", "match": "^Roman Republic$", "note": "Royaume de Pergame légué à Rome (Mysie, Troade, Lydie, Ionie, Carie occ.)"}, "geometry": {"type": "Polygon", "coordinates": [[[25.9, 35.8], [29.9, 35.8], [30.2, 38.0], [29.6, 40.3], [29.0, 40.7], [27.5, 40.7], [26.68, 40.375], [26.45, 40.2], [25.9, 40.0], [25.9, 35.8]]]}},
+{"type": "Feature", "properties": {"op": "add", "note": "Hispanie étendue (Celtibérie, Lusitanie méridionale)"}, "geometry": {"type": "Polygon", "coordinates": [[[-9.7, 36.8], [-6.0, 36.0], [-1.5, 36.5], [-1.0, 42.3], [-2.6, 42.1], [-4.6, 41.4], [-8.7, 41.15], [-9.7, 41.15], [-9.7, 36.8]]]}}
+]}

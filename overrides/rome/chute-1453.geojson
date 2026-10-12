@@ -1,0 +1,5 @@
+{"type":"FeatureCollection","features":[
+{"type": "Feature", "properties": {"op": "replace", "entity": "Empire byzantin", "note": "Constantinople et sa banlieue immédiate"}, "geometry": {"type": "Polygon", "coordinates": [[[28.7, 40.96], [28.99, 40.98], [28.99, 41.12], [28.7, 41.12], [28.7, 40.96]]]}},
+{"type": "Feature", "properties": {"op": "replace", "entity": "Empire byzantin", "note": "Despotat de Morée (places vénitiennes non retirées)"}, "geometry": {"type": "Polygon", "coordinates": [[[20.9, 38.2], [21.6, 38.25], [22.0, 38.31], [22.6, 38.15], [22.85, 38.02], [23.15, 37.75], [23.6, 37.2], [23.3, 36.5], [22.8, 36.42], [22.0, 36.2], [21.0, 37.0], [20.9, 38.2]]]}},
+{"type": "Feature", "properties": {"op": "replace", "entity": "Empire byzantin", "note": "Lemnos et Imbros"}, "geometry": {"type": "MultiPoint", "coordinates": [[25.25, 39.9], [25.85, 40.18]]}}
+]}

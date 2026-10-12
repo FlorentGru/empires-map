@@ -1,0 +1,1208 @@
+{
+  "id": "rome",
+  "name": "Rome, de la République à Byzance",
+  "color": "#9b2c2c",
+  "start": -509,
+  "end": 1453,
+  "description": "Près de deux millénaires d'histoire d'un même État : une petite cité du Latium qui unifie l'Italie, fait de la Méditerranée un lac intérieur, puis se replie sur sa moitié orientale grecque. De l'expulsion des rois à la chute de Constantinople, cette chronologie suit, étape par étape, les conquêtes, les crises et les pertes qui ont dessiné ses frontières.",
+  "steps": [
+    {
+      "id": "republique-509",
+      "year": -509,
+      "title": "Naissance de la République romaine",
+      "type": "fondation",
+      "location": [
+        12.4853,
+        41.8925
+      ],
+      "zoom": 6,
+      "summary": "Selon la tradition, les Romains chassent leur dernier roi, Tarquin le Superbe, et confient le pouvoir à deux magistrats élus pour un an, les consuls.",
+      "details": "Au VIe siècle av. J.-C., Rome est une cité prospère du Latium, gouvernée par des rois dont les derniers sont d'origine étrusque. La tradition rapportée par **Tite-Live** raconte que le viol de Lucrèce par Sextus Tarquin, fils du roi, déclenche une révolte menée par **Lucius Junius Brutus** et Tarquin Collatin. Le roi **Tarquin le Superbe** est expulsé et les Romains jurent de ne plus jamais tolérer de roi.\n\nLe pouvoir est désormais partagé entre **deux consuls** élus chaque année, qui se contrôlent mutuellement, tandis que le **Sénat**, assemblée des chefs des grandes familles patriciennes, devient le cœur de l'État. Le mot *res publica*, « la chose publique », désigne ce nouveau régime.\n\nIl faut toutefois rester prudent : la date de 509 est une reconstruction des annalistes, qui l'ont fait coïncider avec la chute des Pisistratides à Athènes (510). L'archéologie suggère une transition plus progressive, et le roi étrusque **Porsenna** de Clusium semble avoir dominé Rome peu après. Le traité avec Carthage rapporté par **Polybe**, daté de la première année de la République, montre néanmoins que Rome revendique déjà une hégémonie sur une partie du Latium côtier.\n\nÀ cette date, Rome n'est qu'une cité-État parmi d'autres, entourée de voisins puissants : Étrusques au nord, Sabins, Èques et Volsques dans les collines, cités latines rivales.",
+      "consequences": [
+        "Le territoire romain se limite à environ 800 à 900 km² autour de la ville, entre le Tibre, l'Anio et les monts Albains.",
+        "Les institutions républicaines (consuls, Sénat, assemblées) encadreront l'expansion pendant près de cinq siècles.",
+        "Rome doit lutter pour sa survie face aux Étrusques (Porsenna) et aux cités latines, qu'elle affronte au lac Régille (vers 496).",
+        "Le refus de la royauté devient un pilier idéologique durable de l'identité romaine."
+      ],
+      "territory": "republique-509",
+      "sources": [
+        {
+          "label": "Tite-Live, Histoire romaine, livres I-II"
+        },
+        {
+          "label": "Polybe, Histoires, III, 22 (premier traité romano-carthaginois)"
+        },
+        {
+          "label": "Wikipédia — République romaine",
+          "url": "https://fr.wikipedia.org/wiki/République_romaine"
+        }
+      ],
+      "territoryNote": "Seul l'ager Romanus (env. 800-900 km², estimation de Beloch) : rive gauche du Tibre entre l'Anio, la mer et les abords des monts Albains ; le reste du Latium (cités latines), l'Étrurie, la Sabine et le pays volsque sont indépendants."
+    },
+    {
+      "id": "ligue-latine-338",
+      "year": -338,
+      "title": "Dissolution de la Ligue latine",
+      "type": "traité",
+      "location": [
+        12.65,
+        41.65
+      ],
+      "zoom": 5.25,
+      "summary": "Victorieuse de la guerre latine (340-338), Rome dissout la Ligue latine et impose à chaque cité un statut séparé, inventant un modèle d'intégration qui fera sa force.",
+      "details": "Au IVe siècle, Rome se relève du sac gaulois (vers 390) et s'impose comme la cité dominante du Latium. Après la prise de **Véies** (396) et l'annexion du sud de l'Étrurie, elle s'allie aux **Campaniens** de Capoue contre les Samnites (première guerre samnite, 343-341). Inquiètes de cette hégémonie, les cités de la **Ligue latine**, alliées aux Volsques et aux Campaniens, réclament l'égalité : un consul sur deux et la moitié du Sénat. Rome refuse.\n\nLa **guerre latine** (340-338) est rapportée par **Tite-Live**, qui y place des épisodes célèbres : le consul **Titus Manlius Torquatus** fait exécuter son propre fils pour avoir combattu sans ordre, et **Publius Decius Mus** se sacrifie aux dieux infernaux (*devotio*) près du Vésuve. Les Latins sont battus à Trifanum, puis leurs dernières cités tombent en 338.\n\nLe règlement de 338 est un chef-d'œuvre politique. Rome **dissout la Ligue** et traite chaque cité séparément : certaines (Lanuvium, Aricie, Tusculum) reçoivent la **citoyenneté romaine** complète ; d'autres, comme Capoue, la **citoyenneté sans droit de vote** ; les plus importantes (Tibur, Préneste) restent des alliées liées par traité. Antium, port volsque, reçoit une colonie et ses navires de guerre sont détruits ; leurs éperons (*rostra*) ornent la tribune du Forum.",
+      "consequences": [
+        "Tout le Latium passe sous contrôle romain, par annexion ou par alliance inégale.",
+        "La Campanie du Nord (Capoue, Cumes) entre dans l'orbite romaine avec la citoyenneté sans suffrage.",
+        "Le pays volsque et aurunque, sur la côte jusqu'à Terracina, est colonisé et rattaché.",
+        "Le modèle des statuts différenciés (citoyens, Latins, alliés) devient l'outil de l'unification de l'Italie.",
+        "Rome devient voisine directe des Samnites : les guerres samnites (327-290) s'annoncent."
+      ],
+      "territory": "ligue-latine-338",
+      "sources": [
+        {
+          "label": "Tite-Live, Histoire romaine, VIII, 2-14"
+        },
+        {
+          "label": "Wikipédia — Guerre latine",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_latine"
+        }
+      ],
+      "territoryNote": "Latium entier (annexé ou allié) + Étrurie méridionale (ex-territoire de Véies, Caere liée) + pays volsque et aurunque jusqu'à Terracina + Campanie du Nord (Capoue, Cumes, citoyenneté sans suffrage) ; pas le Samnium, ni le reste de l'Étrurie, ni l'Ombrie."
+    },
+    {
+      "id": "tarente-272",
+      "year": -272,
+      "title": "Reddition de Tarente : l'Italie péninsulaire unifiée",
+      "type": "bataille",
+      "location": [
+        17.2403,
+        40.4644
+      ],
+      "zoom": 4.75,
+      "summary": "Après le départ de Pyrrhus, la grande cité grecque de Tarente capitule devant Rome, qui domine désormais toute l'Italie péninsulaire.",
+      "details": "Au début du IIIe siècle, Rome a vaincu les Samnites, les Étrusques et les Gaulois Sénons (bataille de Sentinum, 295). Elle s'étend vers le sud, où la riche cité grecque de **Tarente** s'inquiète. En 282, un incident naval sert de prétexte à la guerre : les Tarentins appellent à l'aide **Pyrrhus**, roi d'Épire, l'un des meilleurs généraux de son temps.\n\nPyrrhus débarque avec une armée hellénistique et des éléphants. Il bat les Romains à **Héraclée** (280) puis à **Ausculum** (279), mais au prix de pertes si lourdes qu'elles ont donné l'expression « victoire à la Pyrrhus » (**Plutarque**). Rome refuse de négocier, à l'instigation du vieil Appius Claudius Caecus. Après une campagne en Sicile contre Carthage, Pyrrhus revient et est tenu en échec à **Bénévent** (275) ; il rentre en Grèce en laissant une garnison à Tarente sous les ordres de **Milon**.\n\nEn 272, apprenant la mort de Pyrrhus à Argos, Milon livre la citadelle au consul **Lucius Papirius Cursor** contre la liberté de repartir. Tarente devient une alliée de Rome, démantelée et désarmée. La même année, Lucaniens et Bruttiens se soumettent. Les sources sur ce siège sont tardives et lacunaires (abrégés de Tite-Live, Zonaras) : le récit détaillé reste incertain.",
+      "consequences": [
+        "Rome contrôle toute la péninsule, de l'Arno et du Rubicon jusqu'au détroit de Messine.",
+        "Les cités grecques d'Italie du Sud (Grande-Grèce) deviennent des alliées navales de Rome.",
+        "Rhegium, tenue par des mercenaires campaniens rebelles, n'est reprise qu'en 270.",
+        "Rome entre en contact direct avec la Sicile et donc avec Carthage."
+      ],
+      "territory": "tarente-272",
+      "sources": [
+        {
+          "label": "Plutarque, Vie de Pyrrhus"
+        },
+        {
+          "label": "Tite-Live, Periochae, XII-XV"
+        },
+        {
+          "label": "Wikipédia — Guerre de Pyrrhus en Italie",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_de_Pyrrhus_en_Italie"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "République romaine",
+          "Tarente et garnison épirote"
+        ],
+        "commanders": [
+          "Lucius Papirius Cursor",
+          "Milon (lieutenant de Pyrrhus)"
+        ],
+        "outcome": "Capitulation de Tarente ; la garnison épirote quitte l'Italie",
+        "forces": "Inconnues ; siège plus que bataille rangée",
+        "losses": "Non rapportées par les sources conservées"
+      },
+      "territoryNote": "Italie péninsulaire de l'Arno (Pise) et du Rubicon/ager gallicus (Sena Gallica) jusqu'au détroit de Messine, Grande-Grèce incluse ; Rhegium aux mains de mutins jusqu'en 270 ; pas de plaine du Pô, ni Sicile, ni Sardaigne, ni Corse."
+    },
+    {
+      "id": "sicile-241",
+      "year": -241,
+      "title": "Îles Égates : la Sicile, première province",
+      "type": "bataille",
+      "location": [
+        12.3,
+        37.98
+      ],
+      "zoom": 4.25,
+      "summary": "La victoire navale des îles Égates met fin à la première guerre punique : Carthage abandonne la Sicile, qui deviendra la première province romaine.",
+      "details": "La **première guerre punique** (264-241) éclate à propos de Messine, en Sicile. Puissance terrestre, Rome doit se doter d'une flotte : selon **Polybe**, elle construit ses premières quinquérèmes en copiant une épave carthaginoise et invente le **corbeau**, passerelle d'abordage qui transforme le combat naval en combat d'infanterie. Les victoires de Mylae (260) et d'Ecnome (256) alternent avec des désastres : l'expédition de Regulus en Afrique échoue (255) et des tempêtes engloutissent des flottes entières.\n\nÀ la fin des années 240, la guerre s'enlise en Sicile occidentale, où **Hamilcar Barca** tient le mont Éryx. Le trésor romain épuisé, des particuliers financent une nouvelle flotte de 200 quinquérèmes. Le 10 mars 241, le consul **Caius Lutatius Catulus** intercepte près des îles Égates la flotte de ravitaillement d'**Hannon**, alourdie par les vivres destinés aux troupes de Sicile. Les Romains, bien entraînés, l'emportent nettement.\n\nPrivée de ravitaillement et d'argent, Carthage autorise Hamilcar à négocier. Le **traité de Lutatius** lui impose d'évacuer la Sicile et les îles voisines, et de payer 3 200 talents en dix ans. Le royaume de Syracuse de **Hiéron II**, allié de Rome depuis 263, reste indépendant.",
+      "consequences": [
+        "La Sicile occidentale et centrale passe sous domination romaine ; elle sera organisée en province (premiers préteurs en 227).",
+        "Le royaume de Syracuse (sud-est de l'île) reste un allié indépendant jusqu'en 212-211.",
+        "Les îles Égates et Lipari deviennent romaines.",
+        "Rome profite de la révolte des mercenaires à Carthage pour s'emparer de la Sardaigne et de la Corse (238-237).",
+        "Rome devient une puissance navale méditerranéenne."
+      ],
+      "territory": "sicile-241",
+      "sources": [
+        {
+          "label": "Polybe, Histoires, I, 59-63"
+        },
+        {
+          "label": "Wikipédia — Bataille des îles Égates",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_des_îles_Égates"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "République romaine",
+          "Carthage"
+        ],
+        "commanders": [
+          "Caius Lutatius Catulus",
+          "Quintus Valerius Falto",
+          "Hannon"
+        ],
+        "outcome": "Victoire romaine décisive",
+        "forces": "Selon Polybe, 200 quinquérèmes romaines ; flotte carthaginoise d'environ 250 navires selon Diodore, chiffre incertain",
+        "losses": "Selon Polybe, 50 navires carthaginois coulés, 70 capturés et près de 10 000 prisonniers ; pertes romaines modestes"
+      },
+      "territoryNote": "Italie péninsulaire + Sicile sauf le royaume de Syracuse (quart sud-est : Syracuse, Léontinoi, Akrai, Héloros, Tauroménion) + îles Lipari et Égates ; ni Sardaigne ni Corse (prises en 238-237), ni plaine du Pô."
+    },
+    {
+      "id": "hannibal-218",
+      "year": -218,
+      "title": "Hannibal franchit les Alpes : la Trébie",
+      "type": "bataille",
+      "location": [
+        9.62,
+        45.03
+      ],
+      "zoom": 4.25,
+      "summary": "Parti d'Espagne, Hannibal traverse les Alpes et écrase l'armée consulaire sur la Trébie, en Cisalpine, en décembre 218.",
+      "details": "Après 241, Carthage reconstruit sa puissance en **Espagne** sous la direction des Barcides. En 219, **Hannibal**, fils d'Hamilcar, assiège Sagonte, cité alliée de Rome : c'est le casus belli de la **deuxième guerre punique**. Rome prévoit de frapper l'Espagne et l'Afrique, mais Hannibal la prend de vitesse.\n\nAu printemps 218, il quitte Carthagène avec une armée de mercenaires ibères et africains et des éléphants, franchit les Pyrénées, le Rhône, puis les **Alpes** en automne. Le col emprunté reste l'une des énigmes les plus débattues de l'histoire antique (Clapier, Traversette, Mont-Cenis…). **Polybe** rapporte qu'il arrive en Italie avec seulement 20 000 fantassins et 6 000 cavaliers, très éprouvés.\n\nEn Cisalpine, les **Gaulois Boïens et Insubres**, soumis depuis peu, se rallient à lui. Après un premier accrochage de cavalerie sur le Tessin, où le consul Publius Cornelius Scipion est blessé, Hannibal attire l'impétueux consul **Tiberius Sempronius Longus** sur la **Trébie**. Par un matin glacé, les légionnaires traversent la rivière à jeun ; **Magon**, caché dans un ravin, surgit sur leurs arrières. Seuls environ 10 000 Romains se frayent un passage jusqu'à Plaisance.",
+      "consequences": [
+        "La Gaule cisalpine se soulève ; Rome n'y conserve que ses colonies fraîchement fondées de Plaisance et Crémone.",
+        "L'Italie péninsulaire est ouverte à l'invasion : Trasimène suivra en 217.",
+        "En Espagne, Cnaeus Scipion débarque à Emporion et prend pied au nord de l'Èbre.",
+        "Sicile, Sardaigne et Corse restent romaines et servent de bases navales."
+      ],
+      "territory": "hannibal-218",
+      "sources": [
+        {
+          "label": "Polybe, Histoires, III, 33-74"
+        },
+        {
+          "label": "Tite-Live, Histoire romaine, XXI"
+        },
+        {
+          "label": "Wikipédia — Bataille de la Trébie",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_la_Trébie"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "République romaine et alliés italiens",
+          "Carthage et alliés gaulois"
+        ],
+        "commanders": [
+          "Tiberius Sempronius Longus",
+          "Publius Cornelius Scipion (blessé au Tessin)",
+          "Hannibal Barca",
+          "Magon Barca"
+        ],
+        "outcome": "Victoire carthaginoise décisive",
+        "forces": "Selon Polybe, environ 36 000 fantassins et 4 000 cavaliers romains et alliés ; environ 20 000 fantassins, 10 000 cavaliers (Gaulois compris) et des éléphants côté carthaginois",
+        "losses": "Pertes romaines très lourdes (peut-être 20 000 tués ou capturés selon les estimations modernes) ; pertes carthaginoises surtout parmi les Gaulois ; presque tous les éléphants meurent ensuite du froid"
+      },
+      "territoryNote": "Italie péninsulaire + Sicile (sauf royaume allié de Syracuse) + Sardaigne et Corse ; en Cisalpine seulement les colonies de Plaisance et Crémone (le reste, soumis en 222, est insurgé) ; tête de pont en Espagne autour d'Emporion/Tarragone ; protectorat sur la côte illyrienne."
+    },
+    {
+      "id": "cannes-216",
+      "year": -216,
+      "title": "Cannes, le désastre",
+      "type": "bataille",
+      "location": [
+        16.1325,
+        41.3064
+      ],
+      "zoom": 4.25,
+      "summary": "Le 2 août 216, Hannibal encercle et anéantit la plus grande armée jamais levée par Rome : la pire défaite de son histoire.",
+      "details": "Après la Trébie et le piège du lac **Trasimène** (217), Rome confie le commandement au dictateur **Fabius Maximus**, qui refuse la bataille et harcèle l'ennemi : c'est la stratégie « temporisatrice ». Impopulaire, elle est abandonnée en 216. Les consuls **Lucius Aemilius Paullus** et **Caius Terentius Varro** conduisent huit légions renforcées, soit environ 80 000 fantassins selon **Polybe**, face à Hannibal près du village de **Cannes**, en Apulie.\n\nHannibal dispose son centre, formé de Gaulois et d'Ibères, en arc convexe, tandis que son infanterie africaine se tient en retrait sur les ailes. Le centre recule sous la poussée romaine, aspirant les légions dans une poche. La cavalerie d'**Hasdrubal** balaie la cavalerie romaine puis revient frapper l'infanterie dans le dos. Prise en tenaille, entassée au point de ne plus pouvoir manier ses armes, l'armée romaine est massacrée.\n\nLes chiffres restent discutés : Polybe parle de 70 000 morts, Tite-Live de 48 200. Paul Émile, des dizaines de sénateurs et d'anciens magistrats périssent. Cannes deviendra le modèle absolu de la bataille d'encerclement, étudié jusqu'au XXe siècle. Pourtant, Rome refuse de traiter et ne rachète pas les prisonniers.",
+      "consequences": [
+        "Capoue, deuxième ville d'Italie, fait défection (216), suivie d'une grande partie du Samnium, de la Lucanie, du Bruttium et de l'Apulie méridionale.",
+        "Syracuse rompt avec Rome après la mort de Hiéron II (215-214) ; Tarente est livrée à Hannibal (212).",
+        "Philippe V de Macédoine s'allie à Hannibal : première guerre de Macédoine.",
+        "Le Latium, l'Étrurie, l'Ombrie, le Picenum et les colonies latines restent fidèles : le système d'alliances tient."
+      ],
+      "territory": "cannes-216",
+      "sources": [
+        {
+          "label": "Polybe, Histoires, III, 107-118"
+        },
+        {
+          "label": "Tite-Live, Histoire romaine, XXII, 36-61"
+        },
+        {
+          "label": "Wikipédia — Bataille de Cannes",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Cannes"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "République romaine et alliés italiens",
+          "Carthage, Ibères, Gaulois et Numides"
+        ],
+        "commanders": [
+          "Lucius Aemilius Paullus (tué)",
+          "Caius Terentius Varro",
+          "Hannibal Barca",
+          "Hasdrubal",
+          "Maharbal",
+          "Hannon"
+        ],
+        "outcome": "Victoire carthaginoise écrasante",
+        "forces": "Selon Polybe, environ 80 000 fantassins et 6 000 cavaliers romains et alliés ; 40 000 fantassins et 10 000 cavaliers carthaginois",
+        "losses": "Selon Polybe, 70 000 morts romains (chiffre sans doute exagéré) ; Tite-Live donne 48 200 tués ; environ 5 700 morts côté carthaginois selon Polybe"
+      },
+      "territoryNote": "Rome perd une large part du sud : Capoue et la Campanie intérieure, Samnium (Hirpins, Caudins), Lucanie, Bruttium, Apulie méridionale passent à Hannibal (Tarente en 212, Syracuse en 214) ; elle garde Latium, Étrurie, Ombrie, Picenum, Campanie côtière, colonies latines, Sicile provinciale, Sardaigne, Corse ; Cisalpine perdue sauf Plaisance et Crémone ; tête de pont en Espagne du Nord-Est."
+    },
+    {
+      "id": "zama-202",
+      "year": -202,
+      "title": "Zama : Scipion l'Africain bat Hannibal",
+      "type": "bataille",
+      "location": [
+        9.4,
+        36.2
+      ],
+      "zoom": 4.25,
+      "summary": "En Afrique, Scipion remporte la bataille décisive contre Hannibal ; Carthage capitule et perd son empire hors d'Afrique.",
+      "details": "Rome a survécu à Cannes en reprenant patiemment le terrain : **Syracuse** tombe en 211 malgré les machines d'Archimède, **Capoue** la même année, **Tarente** en 209. En Espagne, le jeune **Publius Cornelius Scipion** prend Carthagène (209) et chasse les Carthaginois de la péninsule à Ilipa (206). La tentative d'Hasdrubal de rejoindre son frère en Italie échoue sur le **Métaure** (207).\n\nEn 204, Scipion débarque en Afrique. Allié au prince numide **Masinissa**, il écrase les armées carthaginoises aux Grandes Plaines (203). Carthage rappelle Hannibal d'Italie, qu'il occupait depuis quinze ans. La rencontre a lieu en octobre 202 près de **Zama** ; l'emplacement exact du champ de bataille reste inconnu, sans doute à l'ouest de Carthage, vers Naraggara ou Sicca.\n\nScipion neutralise les 80 éléphants d'Hannibal en ménageant des couloirs dans ses lignes. Les deux infanteries se heurtent violemment, jusqu'au retour décisif de la cavalerie romaine de **Laelius** et numide de Masinissa, qui frappe les Carthaginois dans le dos. **Polybe**, qui a connu Laelius et Masinissa, en a laissé un récit de première main indirecte.\n\nLa paix de 201 réduit Carthage à son territoire africain, lui interdit toute guerre sans l'accord de Rome et lui impose 10 000 talents.",
+      "consequences": [
+        "Carthage perd l'Espagne et toutes ses possessions hors d'Afrique ; sa flotte est réduite à dix navires.",
+        "L'Espagne méridionale et orientale devient romaine (deux provinces créées en 197).",
+        "Toute la Sicile, Syracuse comprise, forme une province romaine.",
+        "Rome reconquiert l'Italie du Sud et punit sévèrement les cités qui ont fait défection.",
+        "La Numidie de Masinissa, alliée de Rome, devient la puissance montante d'Afrique du Nord."
+      ],
+      "territory": "zama-202",
+      "sources": [
+        {
+          "label": "Polybe, Histoires, XV, 5-19"
+        },
+        {
+          "label": "Tite-Live, Histoire romaine, XXX, 29-35"
+        },
+        {
+          "label": "Wikipédia — Bataille de Zama",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Zama"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "République romaine et Numides de Masinissa",
+          "Carthage"
+        ],
+        "commanders": [
+          "Publius Cornelius Scipion (l'Africain)",
+          "Caius Laelius",
+          "Masinissa",
+          "Hannibal Barca"
+        ],
+        "outcome": "Victoire romaine décisive ; fin de la deuxième guerre punique",
+        "forces": "Estimations modernes : environ 29 000 fantassins et 6 000 cavaliers côté romain et numide ; 36 000 à 40 000 hommes et 80 éléphants côté carthaginois",
+        "losses": "Selon Polybe, 20 000 Carthaginois tués et autant de prisonniers ; environ 1 500 morts côté romain"
+      },
+      "territoryNote": "Italie péninsulaire entière (sud reconquis) + Sicile entière (Syracuse annexée en 211) + Sardaigne et Corse + Espagne orientale et méridionale (côte de l'Èbre à Gadès et vallée du Guadalquivir) ; Cisalpine encore insoumise (Boïens, Insubres, Ligures) ; aucune province en Afrique (Numidie alliée)."
+    },
+    {
+      "id": "pydna-168",
+      "year": -168,
+      "title": "Pydna : la fin du royaume de Macédoine",
+      "type": "bataille",
+      "location": [
+        22.58,
+        40.37
+      ],
+      "zoom": 4.25,
+      "summary": "Les légions de Paul Émile brisent la phalange de Persée : l'héritage d'Alexandre s'effondre et Rome devient l'arbitre du monde grec.",
+      "details": "Après la défaite de Carthage, Rome se tourne vers l'Orient hellénistique. Elle bat **Philippe V** de Macédoine à Cynoscéphales (197), puis le Séleucide **Antiochos III** aux Thermopyles et à **Magnésie** (190-189), sans annexer de territoire : elle préfère des États clients comme Pergame et Rhodes. Le fils de Philippe, **Persée**, inquiète le Sénat par sa popularité en Grèce : la **troisième guerre de Macédoine** éclate en 171.\n\nAprès trois années médiocres, le consul **Lucius Aemilius Paullus**, fils du vaincu de Cannes, prend le commandement. Le 22 juin 168, près de **Pydna**, la bataille s'engage presque par accident autour d'un cheval échappé. La **phalange** macédonienne, hérissée de sarisses, repousse d'abord les légions ; mais sur un terrain inégal, elle se disloque et les manipules s'infiltrent dans ses brèches. Le combat est perdu en une heure. Une éclipse de lune la veille, rapportée par **Plutarque** et Tite-Live, permet de dater précisément l'événement.\n\nPersée est capturé et défile au triomphe de Paul Émile. **Polybe**, alors otage achéen à Rome, voit dans cette victoire l'achèvement de la domination romaine sur le monde habité.",
+      "consequences": [
+        "La monarchie macédonienne est abolie et le pays divisé en quatre républiques clientes, sans annexion immédiate.",
+        "L'Illyrie du roi Genthios, allié de Persée, est vaincue la même année.",
+        "L'Épire est dévastée : 150 000 personnes réduites en esclavage selon Polybe.",
+        "Rhodes, jugée trop tiède, est punie ; Rome domine désormais indirectement la Grèce et l'Égée.",
+        "En 148-146, la Macédoine deviendra une province romaine."
+      ],
+      "territory": "pydna-168",
+      "sources": [
+        {
+          "label": "Plutarque, Vie de Paul Émile, 16-22"
+        },
+        {
+          "label": "Tite-Live, Histoire romaine, XLIV, 36-42"
+        },
+        {
+          "label": "Wikipédia — Bataille de Pydna (168 av. J.-C.)",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Pydna_(168_av._J.-C.)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "République romaine",
+          "Royaume de Macédoine"
+        ],
+        "commanders": [
+          "Lucius Aemilius Paullus (Paul Émile)",
+          "Publius Cornelius Scipion Nasica",
+          "Persée de Macédoine"
+        ],
+        "outcome": "Victoire romaine décisive ; fin de la dynastie antigonide",
+        "forces": "Environ 38 000 hommes de chaque côté selon les estimations modernes ; Tite-Live et Plutarque donnent environ 40 000 fantassins et 4 000 cavaliers à Persée",
+        "losses": "Selon Plutarque, 20 000 à 25 000 Macédoniens tués ; une centaine de morts seulement côté romain (chiffre certainement minimisé)"
+      },
+      "territoryNote": "Italie jusqu'aux Alpes (Cisalpine soumise après 191 ; Ligurie en partie) + Sicile + Sardaigne et Corse + Hispanie citérieure et ultérieure (côte méditerranéenne et Bétique, environ le tiers est et sud de la péninsule) + côte illyrienne ; Macédoine NON annexée (quatre républiques clientes), Grèce et Asie Mineure clientes mais hors provinces."
+    },
+    {
+      "id": "carthage-146",
+      "year": -146,
+      "title": "Destruction de Carthage et de Corinthe",
+      "type": "bataille",
+      "location": [
+        10.3233,
+        36.8528
+      ],
+      "zoom": 4.25,
+      "summary": "Au terme d'un siège de trois ans, Scipion Émilien prend et rase Carthage ; la même année, Corinthe est détruite. Rome crée les provinces d'Afrique et de Macédoine.",
+      "details": "Même vaincue, Carthage reste une cité marchande prospère, ce qui inquiète une partie du Sénat. **Caton l'Ancien** termine, dit-on, chacun de ses discours par la formule « il faut détruire Carthage ». Le prétexte vient de **Masinissa**, qui grignote le territoire punique : en 150, Carthage lui fait la guerre sans l'autorisation de Rome, violant le traité de 201.\n\nRome débarque en Afrique en 149 et exige la remise des armes, puis l'abandon de la ville pour s'installer loin de la mer. Désespérés, les Carthaginois refusent et fortifient leur cité. Le siège piétine jusqu'à l'arrivée, en 147, de **Scipion Émilien**, petit-fils adoptif de l'Africain. Il bloque le port par une digue, puis lance au printemps 146 l'assaut final : six jours de combats de rue, maison par maison. Le chef punique **Hasdrubal** se rend ; sa femme se jette dans les flammes avec ses enfants. **Polybe**, présent aux côtés de Scipion, rapporte que celui-ci pleura en contemplant l'incendie, songeant au sort futur de Rome.\n\nLa ville est rasée et son sol maudit ; la légende du sel répandu sur les ruines est une invention moderne. Les survivants, environ 50 000 selon Appien, sont vendus comme esclaves. Quelques mois plus tard, le consul Mummius détruit **Corinthe**, cheffe de la Ligue achéenne révoltée.",
+      "consequences": [
+        "Création de la province d'Africa sur l'ancien territoire de Carthage (nord-est de la Tunisie actuelle).",
+        "La Macédoine devient province (148-146) ; la Grèce passe sous le contrôle de son gouverneur.",
+        "Rome n'a plus de rival en Méditerranée occidentale.",
+        "En Hispanie, les guerres contre les Lusitaniens et les Celtibères se poursuivent (Numance tombe en 133)."
+      ],
+      "territory": "carthage-146",
+      "sources": [
+        {
+          "label": "Appien, Livre libyque, 127-135"
+        },
+        {
+          "label": "Polybe, Histoires, XXXVIII-XXXIX (fragments)"
+        },
+        {
+          "label": "Wikipédia — Troisième guerre punique",
+          "url": "https://fr.wikipedia.org/wiki/Troisième_guerre_punique"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "République romaine",
+          "Carthage"
+        ],
+        "commanders": [
+          "Publius Cornelius Scipion Émilien",
+          "Hasdrubal le Boétarque"
+        ],
+        "outcome": "Prise et destruction de Carthage",
+        "forces": "Inconnues avec précision ; plusieurs dizaines de milliers d'assiégeants",
+        "losses": "Population décimée ; environ 50 000 survivants réduits en esclavage selon Appien"
+      },
+      "territoryNote": "Comme en 168 + province d'Africa (ancien territoire carthaginois jusqu'à la fossa regia, nord-est de la Tunisie) + province de Macédoine (avec Épire et Grèce rattachées de fait) ; Hispanie toujours limitée au sud et à l'est (Lusitanie et Celtibérie insoumises) ; Numidie alliée indépendante."
+    },
+    {
+      "id": "pergame-133",
+      "year": -133,
+      "title": "Le legs d'Attale III : Rome prend pied en Asie",
+      "type": "politique",
+      "location": [
+        27.184,
+        39.132
+      ],
+      "zoom": 3.75,
+      "summary": "Le roi Attale III de Pergame lègue son royaume au peuple romain ; après la révolte d'Aristonicos, il devient la province d'Asie.",
+      "details": "Le **royaume de Pergame**, dans l'ouest de l'Anatolie, était depuis un siècle le plus fidèle allié de Rome en Orient : il avait combattu à ses côtés contre Philippe V, Antiochos III et Persée, et reçu en récompense une grande partie de l'Asie Mineure en 188. Son dernier roi, **Attale III**, meurt sans héritier en 133 et lègue son royaume au peuple romain, peut-être pour éviter une guerre civile. Les raisons exactes de ce testament restent débattues.\n\nLa nouvelle arrive à Rome en pleine crise politique : le tribun **Tiberius Gracchus** propose d'utiliser le trésor royal pour financer sa réforme agraire, empiétant sur les prérogatives du Sénat. Il est assassiné la même année, ouvrant le cycle des violences civiles qui emporteront la République.\n\nEn Asie, un prétendant, **Aristonicos**, demi-frère illégitime d'Attale, soulève les campagnes et les esclaves en promettant une « cité du Soleil ». Il bat et tue le consul Crassus Mucianus (130) avant d'être capturé par Perperna (129). **Manius Aquilius** organise ensuite la **province d'Asie**, tandis que la Phrygie est un temps cédée au roi du Pont.\n\nLa même année 133, Scipion Émilien prend **Numance**, dernier bastion celtibère.",
+      "consequences": [
+        "Création de la province d'Asie (organisée en 129) : Mysie, Lydie, Ionie, Carie, Troade.",
+        "Rome dispose désormais de la région la plus riche de la Méditerranée orientale, livrée aux publicains.",
+        "La prise de Numance étend le contrôle romain au plateau celtibère.",
+        "L'exploitation fiscale de l'Asie nourrira la haine qui éclatera sous Mithridate (88)."
+      ],
+      "territory": "pergame-133",
+      "sources": [
+        {
+          "label": "Strabon, Géographie, XIII, 4, 2"
+        },
+        {
+          "label": "Plutarque, Vie de Tiberius Gracchus, 14"
+        },
+        {
+          "label": "Wikipédia — Attale III",
+          "url": "https://fr.wikipedia.org/wiki/Attale_III"
+        }
+      ],
+      "territoryNote": "Comme en 146 + royaume de Pergame (ouest de l'Anatolie : Mysie, Troade, Lydie, Ionie, Carie occidentale), effectif seulement après 129 ; Phrygie cédée au Pont ; Hispanie étendue à la Celtibérie (Numance) mais sans le nord-ouest ni la côte cantabrique ; pas encore de Gaule transalpine (121)."
+    },
+    {
+      "id": "pompee-63",
+      "year": -63,
+      "title": "Pompée réorganise l'Orient",
+      "type": "politique",
+      "location": [
+        35.2354,
+        31.778
+      ],
+      "zoom": 3.75,
+      "summary": "Vainqueur de Mithridate, Pompée annexe la Syrie, agrandit les provinces d'Anatolie et prend Jérusalem : la frontière romaine atteint l'Euphrate.",
+      "details": "Au Ier siècle av. J.-C., la République est à la fois en pleine expansion et en crise : guerre sociale contre les alliés italiens (91-88), qui obtiennent la citoyenneté, puis guerre civile entre Marius et Sylla. En Orient, le roi du Pont **Mithridate VI** fait massacrer en 88 des dizaines de milliers d'Italiens en Asie et défie Rome pendant un quart de siècle.\n\n**Pompée**, général ambitieux et populaire, reçoit en 67 un commandement extraordinaire contre les pirates, qu'il élimine en quelques mois, puis en 66 contre Mithridate. Il le chasse du Pont, soumet l'Arménie de **Tigrane**, qui devient cliente, et marche vers le sud. En 64, il dépose le dernier Séleucide et annexe la **Syrie**. En 63, intervenant dans la guerre civile entre les princes hasmonéens, il assiège **Jérusalem** et pénètre dans le Saint des Saints du Temple, geste rapporté par **Flavius Josèphe**. La Judée devient un État client tributaire. Mithridate se suicide la même année en Crimée.\n\nPompée remodèle tout l'Orient : provinces agrandies, rois clients (Galatie, Cappadoce, Commagène), dizaines de cités fondées ou restaurées. À Rome, la même année, le consul **Cicéron** déjoue la conjuration de Catilina.",
+      "consequences": [
+        "Création de la province de Syrie (64) et d'une grande province de Bithynie-Pont.",
+        "La Cilicie est agrandie et la Crète conquise (67) ; la Cyrénaïque est déjà province (74).",
+        "Une ceinture d'États clients (Arménie, Cappadoce, Galatie, Judée, Commagène) protège la frontière face aux Parthes.",
+        "Le trésor romain voit ses revenus augmenter considérablement grâce aux tributs orientaux."
+      ],
+      "territory": "pompee-63",
+      "sources": [
+        {
+          "label": "Plutarque, Vie de Pompée, 32-45"
+        },
+        {
+          "label": "Flavius Josèphe, Antiquités juives, XIV, 4"
+        },
+        {
+          "label": "Wikipédia — Pompée",
+          "url": "https://fr.wikipedia.org/wiki/Pompée"
+        }
+      ],
+      "territoryNote": "Italie et Cisalpine + Gaule narbonnaise (121) + Hispanie sauf le nord-ouest (Galice, Asturies, Cantabrie) + Sicile, Sardaigne, Corse + Africa (petite, Numidie indépendante) + Cyrénaïque + Crète + Illyricum côtier + Macédoine et Achaïe + Asie + Bithynie-Pont (Pont occidental) + Cilicie élargie + Syrie (jusqu'à l'Euphrate) ; clients non annexés : Judée, Galatie, Cappadoce, Arménie, Commagène ; Égypte indépendante ; Gaule chevelue libre."
+    },
+    {
+      "id": "alesia-52",
+      "year": -52,
+      "title": "Alésia : la Gaule soumise",
+      "type": "bataille",
+      "location": [
+        4.5,
+        47.537
+      ],
+      "zoom": 4.25,
+      "summary": "César enferme Vercingétorix dans l'oppidum d'Alésia et repousse une gigantesque armée de secours : la résistance gauloise est brisée.",
+      "details": "En 58, le proconsul **Jules César**, gouverneur de la Cisalpine, de l'Illyricum et de la Narbonnaise, saisit le prétexte de la migration des Helvètes pour intervenir en **Gaule chevelue**. En six campagnes, il soumet la Belgique, l'Armorique et l'Aquitaine, franchit le Rhin et débarque deux fois en Bretagne. Mais en 52, les Gaulois se soulèvent sous la conduite de l'Arverne **Vercingétorix**, qui pratique la terre brûlée et repousse César devant Gergovie.\n\nAprès un combat de cavalerie malheureux, Vercingétorix se retranche dans l'oppidum des Mandubiens, **Alésia**, aujourd'hui identifié par l'archéologie à Alise-Sainte-Reine (Côte-d'Or), malgré des controverses anciennes. César l'encercle d'une double ligne de fortifications longue de plusieurs dizaines de kilomètres : la **contrevallation** contre les assiégés, la **circonvallation** contre l'armée de secours. Les fouilles franco-allemandes des années 1990 en ont confirmé l'ampleur.\n\nL'armée de secours, 240 000 fantassins et 8 000 cavaliers selon César (chiffre très probablement gonflé), attaque à plusieurs reprises en coordination avec les assiégés. Lors du dernier assaut, César mène lui-même la contre-attaque, et sa cavalerie germanique prend les Gaulois à revers. Vercingétorix se rend ; il sera exécuté à Rome en 46, après le triomphe de César.",
+      "consequences": [
+        "Toute la Gaule, du Rhin aux Pyrénées et à l'Atlantique, passe sous domination romaine (pacification achevée en 51).",
+        "La frontière romaine atteint le Rhin, qui restera une limite majeure pendant quatre siècles.",
+        "César acquiert gloire, richesse et une armée dévouée, qui lui permettront de franchir le Rubicon en 49.",
+        "La Gaule ne sera organisée en provinces (Lyonnaise, Aquitaine, Belgique) que sous Auguste."
+      ],
+      "territory": "alesia-52",
+      "sources": [
+        {
+          "label": "César, La Guerre des Gaules, VII, 68-90"
+        },
+        {
+          "label": "Plutarque, Vie de César, 27"
+        },
+        {
+          "label": "Wikipédia — Siège d'Alésia",
+          "url": "https://fr.wikipedia.org/wiki/Siège_d'Alésia"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "République romaine",
+          "Coalition gauloise"
+        ],
+        "commanders": [
+          "Jules César",
+          "Titus Labienus",
+          "Marc Antoine",
+          "Vercingétorix",
+          "Vercassivellaunos",
+          "Commios"
+        ],
+        "outcome": "Victoire romaine décisive ; reddition de Vercingétorix",
+        "forces": "Selon César, 80 000 Gaulois dans l'oppidum et une armée de secours de 248 000 hommes (chiffres jugés très exagérés) ; côté romain, 10 à 12 légions, soit peut-être 50 000 à 60 000 hommes avec les auxiliaires",
+        "losses": "Inconnues avec précision ; César évoque des pertes gauloises considérables et la répartition des captifs comme esclaves entre ses soldats"
+      },
+      "territoryNote": "Comme en 63 + Gaule chevelue entière (du Rhin aux Pyrénées, Armorique et Belgique incluses) ; ni Bretagne, ni rive droite du Rhin ; Égypte, Numidie et Maurétanie indépendantes ; Arménie et Judée clientes."
+    },
+    {
+      "id": "actium-31",
+      "year": -31,
+      "title": "Actium : Octavien maître du monde romain",
+      "type": "bataille",
+      "location": [
+        20.75,
+        38.95
+      ],
+      "zoom": 4.25,
+      "summary": "Le 2 septembre 31, la flotte d'Octavien et d'Agrippa défait celle d'Antoine et de Cléopâtre : la dernière guerre civile de la République est jouée.",
+      "details": "Après l'assassinat de César (44), ses héritiers **Octavien**, son fils adoptif, et **Marc Antoine**, son lieutenant, éliminent les républicains à Philippes (42), puis se partagent le monde romain : l'Occident à Octavien, l'Orient à Antoine. Ce dernier s'installe à Alexandrie auprès de la reine d'Égypte **Cléopâtre VII** et lui distribue, ainsi qu'à leurs enfants, des territoires orientaux (« donations d'Alexandrie », 34). Octavien exploite habilement ce scandale et fait déclarer la guerre... à Cléopâtre.\n\nAu printemps 31, la flotte et l'armée d'Antoine sont bloquées dans le golfe d'**Ambracie**, près du promontoire d'**Actium**, par **Agrippa**, l'amiral d'Octavien, qui coupe leur ravitaillement. Minés par la malaria et les désertions, les antoniens tentent de forcer le blocus le 2 septembre. Au plus fort du combat, l'escadre de Cléopâtre s'enfuit vers le large avec le trésor ; Antoine la suit. Le reste de sa flotte est incendié ou se rend, et son armée terrestre se rallie à Octavien une semaine plus tard.\n\nLe déroulement exact reste discuté : fuite ou percée planifiée ? **Plutarque**, la principale source, reflète largement la propagande augustéenne.",
+      "consequences": [
+        "Antoine et Cléopâtre se suicident à Alexandrie en août 30 ; l'Égypte devient possession romaine.",
+        "Octavien reste seul maître de l'ensemble des provinces et de près de 60 légions, qu'il réduit à 28.",
+        "Les rois clients orientaux (Hérode, Amyntas de Galatie…) se rallient au vainqueur.",
+        "La fin des guerres civiles ouvre la voie au principat."
+      ],
+      "territory": "actium-31",
+      "sources": [
+        {
+          "label": "Plutarque, Vie d'Antoine, 61-68"
+        },
+        {
+          "label": "Dion Cassius, Histoire romaine, L, 31-35"
+        },
+        {
+          "label": "Wikipédia — Bataille d'Actium",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_d'Actium"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Octavien (Rome)",
+          "Marc Antoine et l'Égypte de Cléopâtre"
+        ],
+        "commanders": [
+          "Octavien",
+          "Marcus Vipsanius Agrippa",
+          "Marc Antoine",
+          "Cléopâtre VII",
+          "Caius Sosius"
+        ],
+        "outcome": "Victoire décisive d'Octavien",
+        "forces": "Selon Plutarque, environ 250 navires pour Octavien contre 500 pour Antoine (dont beaucoup ne purent être armés) ; sur terre, environ 80 000 fantassins pour Octavien et 100 000 pour Antoine",
+        "losses": "Selon Plutarque, environ 5 000 morts et 300 navires capturés côté antonien ; pertes d'Octavien faibles"
+      },
+      "territoryNote": "Comme en 52 + Africa nova (ancienne Numidie, annexée en 46) + Illyricum consolidé ; Égypte encore lagide jusqu'en août 30 ; Maurétanie, Galatie, Judée, Cappadoce, Thrace clientes ; nord-ouest de l'Hispanie, arc alpin et rive du Danube non soumis."
+    },
+    {
+      "id": "auguste-27",
+      "year": -27,
+      "title": "Octavien devient Auguste : naissance du principat",
+      "type": "réforme",
+      "location": [
+        12.4853,
+        41.8925
+      ],
+      "zoom": 2.75,
+      "summary": "En janvier 27, Octavien « rend » la République au Sénat, qui lui confère le nom d'Auguste et la plupart des provinces armées : l'Empire est né, sous une façade républicaine.",
+      "details": "Seul maître du monde romain après Actium, Octavien sait que la dictature ouverte a coûté la vie à César. Le **13 janvier 27**, il annonce solennellement au Sénat qu'il remet ses pouvoirs extraordinaires et restaure la République. Trois jours plus tard, le Sénat lui décerne le nom d'**Augustus**, « le vénérable », ainsi qu'une couronne civique, et lui confie pour dix ans un vaste commandement provincial.\n\nCe compromis fonde le **principat** : Auguste n'est officiellement que le « premier des citoyens » (*princeps*), mais il contrôle l'armée et l'essentiel des ressources. Les provinces sont partagées : celles qui sont pacifiées (Afrique, Asie, Achaïe, Bétique…) restent confiées à des proconsuls tirés au sort par le Sénat, tandis que les provinces frontalières, où stationnent les légions (Gaules, Hispanie citérieure, Syrie, et l'Égypte gouvernée par un préfet équestre), relèvent de légats nommés par le prince. Il ajoutera en 23 la puissance tribunicienne. Son propre bilan, les **Res Gestae**, gravées notamment à Ancyre, présente ce régime comme un retour à la tradition.\n\nAuguste réorganise aussi l'armée en force permanente et professionnelle, crée un trésor militaire et lance une série de conquêtes : achèvement de l'Hispanie (guerres cantabres, 26-19), Alpes, et avancée jusqu'au Danube.",
+      "consequences": [
+        "Division durable entre provinces sénatoriales et provinces impériales.",
+        "L'Égypte, annexée en 30, devient un domaine sous contrôle direct du prince, fermé aux sénateurs.",
+        "La Galatie est annexée en 25 à la mort de son roi Amyntas.",
+        "Le nord-ouest de l'Hispanie est conquis (26-19), les Alpes soumises (25-14), et le Danube atteint (Rhétie, Norique, Pannonie, Mésie).",
+        "Une armée permanente d'environ 28 légions est stationnée aux frontières."
+      ],
+      "territory": "auguste-27",
+      "sources": [
+        {
+          "label": "Auguste, Res Gestae Divi Augusti, 34"
+        },
+        {
+          "label": "Suétone, Vie d'Auguste, 7 et 47"
+        },
+        {
+          "label": "Wikipédia — Auguste",
+          "url": "https://fr.wikipedia.org/wiki/Auguste"
+        }
+      ],
+      "territoryNote": "Tout le pourtour méditerranéen sauf la Maurétanie (cliente) : comme en 31 + Égypte (30) ; frontière au Rhin ; nord-ouest hispanique (Galice, Asturies, Cantabrie) en cours de conquête ; arc alpin, Rhétie, Norique, Pannonie et Mésie pas encore conquis ; Thrace, Judée, Cappadoce, Galatie (jusqu'en 25) clientes."
+    },
+    {
+      "id": "teutobourg-9",
+      "year": 9,
+      "title": "Teutobourg : les légions de Varus anéanties",
+      "type": "bataille",
+      "location": [
+        8.13,
+        52.41
+      ],
+      "zoom": 4.25,
+      "summary": "En septembre 9 apr. J.-C., le chef chérusque Arminius attire trois légions dans un piège en forêt : Rome renonce à faire de la Germanie une province jusqu'à l'Elbe.",
+      "details": "Sous Auguste, les campagnes de **Drusus** puis de **Tibère** (12 av.-5 apr. J.-C.) portent les armes romaines jusqu'à l'**Elbe**. Des camps et même une ville romaine naissante, comme Waldgirmes dans la Hesse, montrent que la Germanie était en voie de provincialisation. En 7 apr. J.-C., **Publius Quinctilius Varus**, ancien gouverneur de Syrie, est chargé d'y imposer le droit et le tribut romains.\n\nIl fait confiance à **Arminius**, prince chérusque, citoyen romain et officier auxiliaire. À l'automne 9, Arminius l'attire, sous prétexte de réprimer une révolte, dans une région boisée et marécageuse. Les XVIIe, XVIIIe et XIXe légions, étirées sur des kilomètres avec leurs bagages et leurs civils, sont harcelées pendant plusieurs jours sous la pluie, puis massacrées. Varus se suicide. Selon **Suétone**, Auguste se serait frappé la tête contre les murs en criant : « Varus, rends-moi mes légions ! »\n\nLe lieu de la bataille a longtemps été débattu ; depuis 1987, les fouilles de **Kalkriese**, près d'Osnabrück, ont livré des milliers d'objets militaires et un rempart germanique, ce qui en fait l'hypothèse la plus solide, même si certains chercheurs restent prudents.",
+      "consequences": [
+        "Rome évacue la Germanie à l'est du Rhin, qui redevient la frontière durable de l'Empire.",
+        "Les numéros des trois légions perdues ne seront jamais réattribués.",
+        "Germanicus mène des expéditions punitives (14-16) sans reconquête durable.",
+        "Le Danube, atteint et sécurisé après la révolte pannonienne (6-9), devient l'autre grande frontière européenne."
+      ],
+      "territory": "teutobourg-9",
+      "sources": [
+        {
+          "label": "Velleius Paterculus, Histoire romaine, II, 117-120"
+        },
+        {
+          "label": "Suétone, Vie d'Auguste, 23"
+        },
+        {
+          "label": "Wikipédia — Bataille de Teutobourg",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Teutobourg"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire romain",
+          "Coalition germanique (Chérusques, Marses, Chattes, Bructères…)"
+        ],
+        "commanders": [
+          "Publius Quinctilius Varus",
+          "Arminius"
+        ],
+        "outcome": "Victoire germanique décisive ; destruction de trois légions",
+        "forces": "Trois légions, trois ailes de cavalerie et six cohortes auxiliaires, soit environ 15 000 à 20 000 soldats selon les estimations modernes, plus des non-combattants ; effectifs germaniques inconnus",
+        "losses": "Quasi-totalité de l'armée de Varus ; pertes germaniques inconnues"
+      },
+      "territoryNote": "Frontière ramenée au Rhin (Germanie entre Rhin et Elbe perdue) ; Hispanie entièrement soumise ; Alpes, Rhétie, Norique, Pannonie, Dalmatie, Mésie jusqu'au Danube ; Égypte ; Judée province (depuis 6) ; Galatie province ; Thrace, Maurétanie et Cappadoce encore clientes ; pas de Bretagne."
+    },
+    {
+      "id": "bretagne-43",
+      "year": 43,
+      "title": "Claude envahit la Bretagne",
+      "type": "bataille",
+      "location": [
+        0.5,
+        51.35
+      ],
+      "zoom": 4.25,
+      "summary": "Quatre légions débarquent dans le Kent sous Aulus Plautius et forcent le passage d'une rivière, probablement la Medway : la conquête de la Bretagne commence.",
+      "details": "César avait débarqué deux fois en Bretagne (55 et 54 av. J.-C.) sans l'annexer. Près d'un siècle plus tard, l'empereur **Claude**, porté au pouvoir par les prétoriens en 41 et en quête de prestige militaire, saisit l'occasion de l'appel à l'aide d'un roi allié chassé, Verica. Les fils du puissant roi des Catuvellaunes, **Caratacos** et **Togodumnus**, dominent alors le sud-est de l'île.\n\nAu printemps 43, **Aulus Plautius** débarque avec quatre légions, la IIe Augusta, commandée par le futur empereur **Vespasien**, la IXe Hispana, la XIVe Gemina et la XXe, ainsi que de nombreux auxiliaires. Selon **Dion Cassius**, seule source détaillée, les Bretons sont battus lors d'une bataille de deux jours sur une rivière, généralement identifiée à la **Medway**, que les auxiliaires bataves traversent à la nage, puis à nouveau sur la Tamise ; Togodumnus meurt. Le site du débarquement (Richborough, ou peut-être la côte du Sussex) reste débattu.\n\nClaude vient en personne, avec des éléphants, recevoir la reddition de **Camulodunum** (Colchester), capitale catuvellaune, où onze rois se soumettent. Il ne reste que seize jours dans l'île mais célèbre un triomphe. Caratacos poursuit la résistance dans l'ouest jusqu'à sa capture en 51.",
+      "consequences": [
+        "Création de la province de Bretagne, d'abord limitée au sud-est, puis étendue vers une ligne Exeter-Lincoln vers 47.",
+        "Sous Claude, la Maurétanie (vers 42-44), la Lycie (43) et la Thrace (46) deviennent aussi des provinces.",
+        "La révolte de Boudicca (60-61) manquera de chasser les Romains de l'île.",
+        "La conquête progressera vers le nord jusqu'à la campagne d'Agricola en Calédonie (77-84)."
+      ],
+      "territory": "bretagne-43",
+      "sources": [
+        {
+          "label": "Dion Cassius, Histoire romaine, LX, 19-23"
+        },
+        {
+          "label": "Suétone, Vie de Claude, 17"
+        },
+        {
+          "label": "Wikipédia — Conquête romaine de la Bretagne",
+          "url": "https://fr.wikipedia.org/wiki/Conquête_romaine_de_la_Bretagne"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire romain",
+          "Bretons (Catuvellaunes et alliés)"
+        ],
+        "commanders": [
+          "Aulus Plautius",
+          "Vespasien",
+          "Cnaeus Hosidius Geta",
+          "Caratacos",
+          "Togodumnus (tué)"
+        ],
+        "outcome": "Victoire romaine ; prise de Camulodunum",
+        "forces": "Quatre légions et des auxiliaires, soit environ 40 000 hommes selon les estimations modernes ; forces bretonnes inconnues",
+        "losses": "Non rapportées de façon fiable"
+      },
+      "territoryNote": "Comme en 9 + sud-est de la Bretagne (Kent, bassin de la Tamise, Essex jusqu'à Camulodunum ; ligne Exeter-Lincoln vers 47) + Maurétanie (Tingitane et Césarienne, vers 42-44) + Lycie (43) + Cappadoce (17) ; Thrace annexée en 46 ; Judée sous le roi Agrippa Ier jusqu'en 44."
+    },
+    {
+      "id": "trajan-117",
+      "year": 117,
+      "title": "Trajan et l'apogée territorial",
+      "type": "politique",
+      "location": [
+        32.25,
+        36.27
+      ],
+      "zoom": 2.5,
+      "summary": "À la mort de Trajan, en août 117 à Sélinonte de Cilicie, l'Empire atteint sa plus grande extension, de l'Écosse au golfe Persique.",
+      "details": "Premier empereur né en province (à Italica, en Bétique), **Trajan** (98-117) est le dernier grand conquérant de Rome. En deux guerres (101-102 et 105-106), il soumet la **Dacie** du roi **Décébale**, dont l'or remplit les caisses de l'État ; la colonne Trajane, à Rome, en raconte les campagnes en spirale sculptée. En 106, il annexe aussi le royaume nabatéen, qui devient la province d'**Arabie**.\n\nEn 114, il lance une grande offensive contre les **Parthes** : il annexe l'**Arménie**, puis conquiert la **Mésopotamie**, prend la capitale parthe **Ctésiphon** et atteint le golfe Persique en 116, où il aurait regretté, selon Dion Cassius, d'être trop vieux pour imiter Alexandre jusqu'en Inde. Mais ces conquêtes sont fragiles : révoltes en Mésopotamie, grande révolte juive en Cyrénaïque, en Égypte et à Chypre (115-117).\n\nMalade, Trajan meurt sur le chemin du retour, à **Sélinonte** en Cilicie. Son successeur **Hadrien** abandonne aussitôt les provinces mésopotamiennes, jugeant l'Empire trop étendu, et privilégie une politique de frontières fortifiées, dont le célèbre mur en Bretagne (à partir de 122). La carte de 117 représente donc un sommet éphémère : environ 5 millions de km² et peut-être 60 à 70 millions d'habitants, selon des estimations très incertaines.",
+      "consequences": [
+        "Extension maximale : Dacie, Arabie pétrée, Arménie, Mésopotamie et Assyrie s'ajoutent à l'Empire.",
+        "Hadrien rend dès 117-118 la Mésopotamie et l'Assyrie aux Parthes et fait de l'Arménie un royaume client.",
+        "La Dacie, au nord du Danube, reste romaine jusqu'en 271 environ.",
+        "Le passage d'une logique de conquête à une logique défensive (limes) marque le IIe siècle."
+      ],
+      "territory": "trajan-117",
+      "sources": [
+        {
+          "label": "Dion Cassius, Histoire romaine, LXVIII"
+        },
+        {
+          "label": "Eutrope, Abrégé d'histoire romaine, VIII, 2-6"
+        },
+        {
+          "label": "Wikipédia — Trajan",
+          "url": "https://fr.wikipedia.org/wiki/Trajan"
+        }
+      ],
+      "territoryNote": "Extension maximale : Bretagne jusqu'à la ligne Solway-Tyne (pas l'Écosse) ; Rhin + champs Décumates (angle Rhin-Danube) ; Danube + Dacie (Transylvanie, Banat, Olténie) ; Thrace ; toute l'Anatolie ; Arménie (114) ; Mésopotamie et Assyrie (115-116, contrôle précaire, abandonnées dès 117-118) ; Syrie, Judée, Arabie pétrée (Sinaï, Jordanie, nord-ouest de l'Arabie jusqu'à Hégra) ; Égypte ; toute l'Afrique du Nord côtière jusqu'à l'Atlantique (Maurétanie Tingitane)."
+    },
+    {
+      "id": "dacie-271",
+      "year": 271,
+      "title": "Aurélien abandonne la Dacie",
+      "type": "politique",
+      "location": [
+        23.57,
+        46.07
+      ],
+      "zoom": 3.75,
+      "summary": "En pleine crise du IIIe siècle, Aurélien évacue la Dacie au nord du Danube, première province abandonnée de façon délibérée depuis Hadrien.",
+      "details": "Au milieu du IIIe siècle, l'Empire traverse une crise profonde : succession rapide d'empereurs militaires, invasions des **Goths** et des **Alamans**, offensive de la Perse **sassanide**, qui capture même l'empereur Valérien en 260, épidémies et dévaluation monétaire. L'Empire se fragmente : à l'ouest, l'**Empire des Gaules** de Postume (260-274) contrôle la Gaule, la Bretagne et un temps l'Hispanie ; à l'est, la reine **Zénobie** de Palmyre s'empare de la Syrie, de l'Égypte et d'une partie de l'Asie Mineure.\n\nProclamé en 270, **Aurélien** doit d'abord repousser des Germains (Juthunges, Vandales) jusqu'en Italie ; il fait construire autour de Rome la grande muraille qui porte son nom. Pour raccourcir la frontière et libérer des troupes, il décide d'évacuer la **Dacie**, exposée et coûteuse. Soldats et une partie de la population civile sont réinstallés au sud du Danube, dans une nouvelle « Dacie aurélienne » taillée dans la Mésie.\n\nLa date exacte est incertaine : 271 selon une tradition, 272, voire 275, selon d'autres. La part de la population latinophone restée sur place nourrit un débat historiographique ancien sur les origines des Roumains. Aurélien reconquiert ensuite Palmyre (272-273) et la Gaule (274), ce qui lui vaut le titre de « restaurateur du monde ».",
+      "consequences": [
+        "La Dacie au nord du Danube est abandonnée ; le Danube redevient la frontière.",
+        "Une nouvelle province de Dacie est créée au sud du fleuve, aux dépens de la Mésie.",
+        "Les champs Décumates (entre Rhin et Danube) sont déjà perdus depuis les années 260.",
+        "En 271, l'Empire des Gaules et le royaume de Palmyre échappent encore au pouvoir central ; ils sont réintégrés en 272-274."
+      ],
+      "territory": "dacie-271",
+      "sources": [
+        {
+          "label": "Histoire Auguste, Vie d'Aurélien, 39"
+        },
+        {
+          "label": "Eutrope, Abrégé d'histoire romaine, IX, 15"
+        },
+        {
+          "label": "Wikipédia — Dacie romaine",
+          "url": "https://fr.wikipedia.org/wiki/Dacie_romaine"
+        }
+      ],
+      "territoryNote": "Pouvoir central d'Aurélien : Italie, Afrique, Hispanie (revenue en 269), Rhétie, Norique, Pannonie, Balkans jusqu'au Danube, Grèce ; Dacie transdanubienne abandonnée (date 271-275 discutée) et champs Décumates perdus ; sécessions encore actives : Empire des Gaules (Gaule, Bretagne, Germanies) et Palmyre (Syrie, Égypte, Arabie, partie de l'Anatolie) — à figurer comme non contrôlés ou à part ; Arménie et Mésopotamie du Nord hors Empire."
+    },
+    {
+      "id": "tetrarchie-285",
+      "year": 285,
+      "title": "Dioclétien et la refondation de l'Empire",
+      "type": "réforme",
+      "location": [
+        29.92,
+        40.77
+      ],
+      "zoom": 2.75,
+      "summary": "Vainqueur de Carin en 285, Dioclétien met fin à la crise du IIIe siècle et partage le pouvoir : c'est le début du système qui deviendra la Tétrarchie.",
+      "details": "Officier d'origine dalmate, **Dioclétien** est proclamé empereur par l'armée en novembre 284 à Nicomédie. Au printemps 285, il bat sur le **Margus** (Morava) l'empereur légitime **Carin**, assassiné par ses propres officiers. Il hérite d'un Empire réunifié par Aurélien mais épuisé.\n\nConvaincu qu'un seul homme ne peut défendre toutes les frontières à la fois, il s'associe dès 285 son compagnon d'armes **Maximien**, nommé César puis Auguste en 286, chargé de l'Occident. En 293, chacun des deux Augustes adopte un César : **Galère** pour l'Orient, **Constance Chlore** pour l'Occident. Ce collège de quatre empereurs, que les historiens modernes appellent **Tétrarchie**, gouverne depuis des capitales proches des frontières : Nicomédie, Sirmium, Milan, Trèves.\n\nLes réformes sont profondes : provinces divisées en une centaine de petites unités, regroupées en **diocèses** ; séparation des carrières civiles et militaires ; armée renforcée ; nouvelle fiscalité fondée sur la capitation et le sol ; édit sur les prix maximum (301). Le pouvoir impérial se sacralise. La fin du règne est marquée par la **Grande Persécution** des chrétiens (303-311). Les sources, notamment Lactance, chrétien hostile, sont à lire avec précaution.",
+      "consequences": [
+        "L'Empire, réunifié, retrouve des frontières stables sur le Rhin, le Danube et l'Euphrate.",
+        "La Bretagne échappe temporairement au pouvoir central avec l'usurpation de Carausius puis Allectus (286-296).",
+        "La paix de Nisibe (298) avec la Perse donne à Rome cinq régions au-delà du Tigre.",
+        "La division administrative en diocèses et le partage du pouvoir préparent la séparation Orient-Occident."
+      ],
+      "territory": "tetrarchie-285",
+      "sources": [
+        {
+          "label": "Lactance, De la mort des persécuteurs, 7-9"
+        },
+        {
+          "label": "Aurelius Victor, Livre des Césars, 39"
+        },
+        {
+          "label": "Wikipédia — Tétrarchie",
+          "url": "https://fr.wikipedia.org/wiki/Tétrarchie"
+        }
+      ],
+      "territoryNote": "Empire réunifié : Bretagne jusqu'au mur d'Hadrien (aux mains de Carausius 286-296), Gaule et Germanies jusqu'au Rhin, Rhétie et Norique (sans les champs Décumates), Danube (sans la Dacie transdanubienne), Balkans, Anatolie, Syrie, Mésopotamie du Nord (Nisibe, frontière du Khabour), Arabie, Égypte, Afrique du Nord ; Maurétanie Tingitane réduite à sa partie nord (Tanger, Volubilis évacué vers 285)."
+    },
+    {
+      "id": "constantinople-330",
+      "year": 330,
+      "title": "Fondation de Constantinople",
+      "type": "fondation",
+      "location": [
+        28.9784,
+        41.0082
+      ],
+      "zoom": 3.75,
+      "summary": "Le 11 mai 330, Constantin inaugure sa nouvelle capitale sur le site de Byzance, au carrefour de l'Europe et de l'Asie.",
+      "details": "Fils du tétrarque Constance Chlore, **Constantin** est acclamé à York en 306 et élimine un à un ses rivaux : **Maxence** au pont Milvius (312), après la vision d'un signe chrétien selon Eusèbe et Lactance, puis **Licinius**, battu près de **Chrysopolis** en 324. Il réunifie l'Empire sous son seul pouvoir et favorise ouvertement le christianisme, autorisé depuis 313 ; il réunit le **concile de Nicée** en 325.\n\nAprès sa victoire, il choisit l'antique colonie grecque de **Byzance**, sur le Bosphore, pour y fonder une nouvelle capitale à son nom. Le site est idéal : il contrôle le passage entre la mer Noire et la Méditerranée, se trouve à mi-chemin des frontières du Danube et de l'Euphrate, et se défend facilement grâce à sa presqu'île et à la Corne d'Or. Les travaux sont menés à un rythme forcené ; on dépouille les cités grecques de leurs statues pour orner la ville. L'inauguration a lieu le **11 mai 330**.\n\nConstantinople, dotée d'un Sénat et de distributions de blé comme Rome, devient progressivement la « nouvelle Rome ». L'expression byzantine apparaît bien plus tard : les habitants s'appelleront toujours **Romains** (*Rhômaioi*) jusqu'en 1453.",
+      "consequences": [
+        "Le centre de gravité politique et économique de l'Empire se déplace vers l'Orient grec.",
+        "Constantinople deviendra la capitale de l'Empire d'Orient puis de l'Empire byzantin pendant plus de mille ans.",
+        "Constantin reprend pied au nord du Danube (pont de Sucidava, 328) sans recréer de province.",
+        "Le territoire impérial reste celui de la Tétrarchie, avec les régions transtigritanes acquises en 298."
+      ],
+      "territory": "constantinople-330",
+      "sources": [
+        {
+          "label": "Eusèbe de Césarée, Vie de Constantin, III, 48"
+        },
+        {
+          "label": "Zosime, Histoire nouvelle, II, 30-31"
+        },
+        {
+          "label": "Wikipédia — Constantinople",
+          "url": "https://fr.wikipedia.org/wiki/Constantinople"
+        }
+      ],
+      "territoryNote": "Empire uni sous Constantin : frontières de la Tétrarchie (Bretagne jusqu'au mur d'Hadrien, Rhin, Danube sans la Dacie, Euphrate) + régions transtigritanes (Arzanène, Corduène… depuis 298) ; têtes de pont au nord du Danube (Sucidava) sans province ; Arménie royaume client."
+    },
+    {
+      "id": "partage-395",
+      "year": 395,
+      "title": "Mort de Théodose : le partage définitif",
+      "type": "politique",
+      "location": [
+        9.19,
+        45.4642
+      ],
+      "zoom": 2.75,
+      "summary": "À la mort de Théodose Ier à Milan, le 17 janvier 395, l'Empire est réparti entre ses deux fils : Arcadius en Orient, Honorius en Occident. Il ne sera plus jamais réuni sous un seul empereur résidant.",
+      "details": "Le IVe siècle a souvent connu plusieurs empereurs simultanés, mais l'unité de l'Empire restait la norme juridique. La catastrophe d'**Andrinople** (378), où les Goths tuent l'empereur Valens et anéantissent l'armée d'Orient, change la donne. **Théodose**, général d'origine hispanique, est appelé au pouvoir ; incapable de chasser les Goths, il les installe en 382 comme **fédérés** en Mésie, une nation armée à l'intérieur des frontières. Il fait du christianisme nicéen la religion officielle (380) et interdit les cultes païens (391-392).\n\nEn 394, à la bataille de la **Rivière froide** (Frigidus), il écrase l'usurpateur occidental Eugène et devient le dernier empereur à régner effectivement sur l'ensemble du monde romain. Il meurt quelques mois plus tard à **Milan**.\n\nSes fils sont jeunes : **Arcadius** (17 ans) à Constantinople, **Honorius** (10 ans) en Occident, sous la tutelle du général d'origine vandale **Stilicon**. Le partage n'est pas conçu comme une séparation : les lois restent communes en principe. Mais rivalités, notamment autour de l'**Illyricum**, et destins divergents font de 395 une rupture décisive. La frontière suit grosso modo une ligne de Singidunum (Belgrade) à la Cyrénaïque.",
+      "consequences": [
+        "L'Occident reçoit l'Italie, l'Afrique jusqu'à la Tripolitaine, les Gaules, la Bretagne, l'Hispanie, la Pannonie et la Dalmatie.",
+        "L'Orient reçoit les diocèses de Dacie et de Macédoine (Illyricum oriental), la Thrace, l'Anatolie, l'Orient, l'Égypte et la Cyrénaïque.",
+        "Les Goths fédérés d'Alaric, installés dans les Balkans, deviennent un enjeu entre les deux cours.",
+        "Les territoires transtigritains et Nisibe, cédés à la Perse en 363, ne sont plus romains ; l'Arménie est partagée en 387."
+      ],
+      "territory": "partage-395",
+      "sources": [
+        {
+          "label": "Zosime, Histoire nouvelle, IV, 59 et V, 1"
+        },
+        {
+          "label": "Orose, Histoires contre les païens, VII, 35-36"
+        },
+        {
+          "label": "Wikipédia — Théodose Ier",
+          "url": "https://fr.wikipedia.org/wiki/Théodose_Ier"
+        }
+      ],
+      "territoryNote": "Empire entier mais en deux parties : Occident (Bretagne jusqu'au mur, Gaules, Hispanie, Italie, Rhétie, Norique, Pannonie, Dalmatie, Afrique de la Tingitane à la Tripolitaine) / Orient (Dacie et Macédoine, Thrace, Anatolie, Arménie occidentale après 387, Syrie, Palestine, Égypte, Cyrénaïque) ; frontière : Drina-Sirmium/Singidunum jusqu'au golfe de Syrte ; Nisibe et le pays transtigritain perdus (363) ; Goths fédérés en Mésie inférieure."
+    },
+    {
+      "id": "sac-rome-410",
+      "year": 410,
+      "title": "Le sac de Rome par Alaric",
+      "type": "bataille",
+      "location": [
+        12.4853,
+        41.8925
+      ],
+      "zoom": 3.75,
+      "summary": "Le 24 août 410, les Wisigoths d'Alaric entrent dans Rome et la pillent pendant trois jours : un choc immense pour le monde romain.",
+      "details": "Chef des Goths installés dans les Balkans, **Alaric** réclame depuis des années des terres et un haut commandement pour son peuple. Il joue des rivalités entre Constantinople et Ravenne, où l'empereur **Honorius** s'est réfugié derrière les marais en 402. Le général **Stilicon**, qui l'avait contenu, est exécuté en 408 sur ordre d'Honorius ; des milliers de familles de soldats barbares de l'armée romaine sont massacrées et les survivants rejoignent Alaric.\n\nAlaric assiège Rome à trois reprises (408, 409, 410). Faute d'obtenir satisfaction d'Honorius, inaccessible à Ravenne, il entre dans la ville par la porte Salaria le **24 août 410**, peut-être grâce à une trahison. Le pillage dure trois jours ; il est réel mais relativement limité : Alaric, chrétien arien, respecte les basiliques et leurs réfugiés, selon **Orose**. Les Goths repartent vers le sud avec un immense butin et la sœur de l'empereur, **Galla Placidia**. Alaric meurt quelques mois plus tard en Calabre.\n\nC'est la première prise de Rome par un ennemi depuis les Gaulois, huit siècles plus tôt. Le choc est énorme : **saint Jérôme** pleure la chute de la ville qui avait pris le monde, et **saint Augustin** rédige *La Cité de Dieu* pour répondre aux païens qui accusent l'abandon des anciens dieux.",
+      "consequences": [
+        "La Bretagne, dégarnie de troupes, est laissée à elle-même vers 410 (la portée du « rescrit d'Honorius » est débattue).",
+        "Vandales, Alains et Suèves, entrés en Gaule en 406, s'installent en Hispanie dès 409.",
+        "L'usurpateur Constantin III contrôle une grande partie de la Gaule jusqu'en 411.",
+        "Les Wisigoths seront installés comme fédérés en Aquitaine (418), premier royaume barbare sur le sol de l'Empire.",
+        "L'Empire d'Orient, protégé par Constantinople, reste intact."
+      ],
+      "territory": "sac-rome-410",
+      "sources": [
+        {
+          "label": "Orose, Histoires contre les païens, VII, 39-40"
+        },
+        {
+          "label": "Zosime, Histoire nouvelle, V-VI"
+        },
+        {
+          "label": "Wikipédia — Sac de Rome (410)",
+          "url": "https://fr.wikipedia.org/wiki/Sac_de_Rome_(410)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Wisigoths d'Alaric",
+          "Empire romain d'Occident"
+        ],
+        "commanders": [
+          "Alaric Ier",
+          "Ataulf",
+          "Honorius (absent, à Ravenne)"
+        ],
+        "outcome": "Prise et pillage de Rome pendant trois jours",
+        "forces": "Effectifs goths inconnus, peut-être quelques dizaines de milliers de combattants avec leurs familles ; garnison de Rome faible",
+        "losses": "Inconnues ; pillage jugé relativement modéré par les sources chrétiennes"
+      },
+      "territoryNote": "Orient intact (Balkans jusqu'au Danube, Anatolie, Syrie, Égypte, Cyrénaïque) ; Occident : Italie, Afrique, Dalmatie, Pannonie occidentale, Rhétie, Norique, Gaule méridionale (mais Gaule largement tenue par l'usurpateur Constantin III) ; Bretagne abandonnée de fait ; Hispanie envahie (Vandales, Alains, Suèves en Galice, Lusitanie, Bétique ; Tarraconaise encore romaine)."
+    },
+    {
+      "id": "chute-occident-476",
+      "year": 476,
+      "title": "Odoacre dépose le dernier empereur d'Occident",
+      "type": "chute",
+      "location": [
+        12.1997,
+        44.4184
+      ],
+      "zoom": 3.75,
+      "summary": "En septembre 476, le chef germanique Odoacre dépose le jeune Romulus Augustule et renvoie les insignes impériaux à Constantinople : l'Empire d'Occident cesse d'exister.",
+      "details": "Au milieu du Ve siècle, l'Occident romain se réduit comme peau de chagrin. Les **Vandales** de Genséric prennent **Carthage** en 439, privant Rome de sa province la plus riche, puis pillent la ville en 455. La Bretagne est perdue, l'Hispanie partagée entre Suèves et Wisigoths, la Gaule entre Wisigoths, Burgondes et Francs, malgré les succès d'**Aetius** contre Attila aux champs Catalauniques (451). Les empereurs ne sont plus que des marionnettes entre les mains de généraux barbares.\n\nEn 475, le général **Oreste**, ancien secrétaire d'Attila, chasse l'empereur **Julius Nepos** et proclame son propre fils, **Romulus**, surnommé par dérision « Augustule ». Mais les soldats germaniques d'Italie réclament un tiers des terres. Leur chef, le Skire **Odoacre**, tue Oreste et dépose l'enfant à Ravenne en septembre 476, l'envoyant en retraite en Campanie. Plutôt que de prendre la pourpre, il renvoie les insignes impériaux à l'empereur d'Orient **Zénon**, signifiant qu'un seul empereur suffit.\n\nLa date de 476 est une convention : ses contemporains l'ont peu remarquée, Julius Nepos, réfugié en Dalmatie, reste empereur légitime pour Constantinople jusqu'à sa mort en 480, et l'administration romaine continue en Italie sous Odoacre. Mais l'idée impériale en Occident s'éteint pour plus de trois siècles.",
+      "consequences": [
+        "Il ne subsiste plus d'empereur en Occident ; l'Italie devient un royaume gouverné par Odoacre au nom nominal de Constantinople.",
+        "L'Empire romain se poursuit en Orient, des Balkans à l'Égypte, avec Constantinople pour capitale.",
+        "Au nord de la Gaule, le « domaine » romain de Syagrius subsiste jusqu'à sa conquête par Clovis (486).",
+        "Les royaumes barbares (Wisigoths, Vandales, Burgondes, Francs, Suèves) se partagent l'ancien Occident."
+      ],
+      "territory": "chute-occident-476",
+      "sources": [
+        {
+          "label": "Jordanès, Histoire des Goths (Getica), 242-243"
+        },
+        {
+          "label": "Anonyme de Valois, II, 37-38"
+        },
+        {
+          "label": "Wikipédia — Chute de l'Empire romain d'Occident",
+          "url": "https://fr.wikipedia.org/wiki/Chute_de_l'Empire_romain_d'Occident"
+        }
+      ],
+      "territoryNote": "Seul l'Empire d'Orient reste pleinement romain : Balkans jusqu'au Danube (Thrace, Mésies, Dacie, Macédoine, Grèce), Anatolie, Arménie occidentale, Syrie, Palestine, Égypte, Cyrénaïque ; en Occident subsistent nominalement l'Italie d'Odoacre (+ Sicile en partie), la Dalmatie de Julius Nepos (jusqu'en 480) et le domaine de Syagrius autour de Soissons — à représenter comme résidus détachés ou non ; Afrique vandale, Hispanie wisigothique et suève, Gaule barbare."
+    },
+    {
+      "id": "justinien-554",
+      "year": 554,
+      "title": "Justinien et la reconquête de l'Occident",
+      "type": "politique",
+      "location": [
+        12.1997,
+        44.4184
+      ],
+      "zoom": 2.75,
+      "summary": "Par la Pragmatique Sanction de 554, Justinien réorganise l'Italie reconquise sur les Ostrogoths : l'Empire a retrouvé l'Afrique, l'Italie et le sud de l'Espagne.",
+      "details": "Empereur de 527 à 565, **Justinien** rêve de restaurer l'Empire dans son ancienne grandeur, ce que l'on appelle la *renovatio imperii*. Il codifie le droit romain (le **Code**, le **Digeste**, les **Institutes**) et fait bâtir **Sainte-Sophie** à Constantinople (537).\n\nEn 533, son général **Bélisaire** débarque en Afrique avec une petite armée et anéantit en quelques mois le **royaume vandale** (batailles d'Ad Decimum et de Tricamarum) ; la Sardaigne, la Corse et les Baléares suivent. En 535, il attaque les **Ostrogoths** d'Italie : il prend la Sicile, Naples, Rome (536) puis Ravenne (540). Mais la guerre se prolonge vingt ans : le roi **Totila** reconquiert presque toute la péninsule dans les années 540, alors que la **peste** de 541-542 ravage l'Empire. L'eunuque **Narsès** l'écrase finalement à **Taginae** (552), puis bat Teias au mont Lactarius (552) et les Francs-Alamans à Casilinum (554).\n\nEn 552, profitant d'une guerre civile chez les Wisigoths, Justinien s'empare aussi d'une bande côtière du sud-est de l'Espagne, la province de **Spania**. La **Pragmatique Sanction** de 554 restaure l'administration romaine en Italie. **Procope de Césarée**, secrétaire de Bélisaire, a laissé le récit de ces guerres, ainsi qu'une *Histoire secrète* très hostile à l'empereur.",
+      "consequences": [
+        "L'Afrique du Nord (Tunisie, Algérie orientale côtière, Tripolitaine), la Sardaigne, la Corse et les Baléares redeviennent romaines.",
+        "L'Italie entière, la Sicile et la Dalmatie sont reconquises, mais ruinées par vingt ans de guerre.",
+        "Une province de Spania est créée sur la côte sud-est de l'Espagne (Carthagène, Malaga).",
+        "L'effort militaire à l'ouest affaiblit les frontières du Danube et face à la Perse.",
+        "Dès 568, les Lombards envahissent l'Italie du Nord."
+      ],
+      "territory": "justinien-554",
+      "sources": [
+        {
+          "label": "Procope de Césarée, Histoire des guerres (Guerre vandale, Guerre gothique)"
+        },
+        {
+          "label": "Agathias, Histoires, I-II"
+        },
+        {
+          "label": "Wikipédia — Justinien",
+          "url": "https://fr.wikipedia.org/wiki/Justinien"
+        }
+      ],
+      "territoryNote": "Empire d'Orient (Balkans jusqu'au Danube, Anatolie, Arménie, Lazique, Syrie, Palestine, Égypte, Cyrénaïque) + Afrique ex-vandale (Tripolitaine, Byzacène, Proconsulaire, Numidie côtière, Maurétanie césarienne côtière, Septem/Ceuta) + Sardaigne, Corse, Baléares + Italie entière et Sicile + Dalmatie + Spania (côte sud-est ibérique de Carthagène à Malaga/Cadix, limites incertaines) ; ni Gaule (Francs), ni intérieur de l'Hispanie (Wisigoths), ni intérieur maghrébin (Berbères)."
+    },
+    {
+      "id": "yarmouk-636",
+      "year": 636,
+      "title": "Le Yarmouk : la Syrie perdue",
+      "type": "bataille",
+      "location": [
+        35.95,
+        32.8
+      ],
+      "zoom": 4.25,
+      "summary": "En août 636, l'armée d'Héraclius est écrasée par les Arabes musulmans sur le Yarmouk : la Syrie et la Palestine échappent à jamais à l'Empire.",
+      "details": "L'empereur **Héraclius** (610-641) vient de sortir victorieux d'une guerre épuisante contre la Perse sassanide (602-628), qui avait occupé la Syrie, Jérusalem et l'Égypte. Il a rapporté triomphalement la Vraie Croix à Jérusalem en 630. Mais les deux empires sont exsangues lorsque surgissent les armées arabes unifiées par l'islam après la mort de Muhammad (632).\n\nDès 634, les musulmans envahissent la Palestine et la Syrie, battent les Byzantins à Ajnadayn et prennent **Damas** (635). Héraclius rassemble une grande armée composite (Arméniens, Arabes chrétiens ghassanides, troupes grecques) sous le commandement de **Vahan** et de Théodore Trithyrios. Les musulmans, commandés par **Abu Ubayda** et surtout par le redoutable **Khalid ibn al-Walid**, se replient vers le sud pour choisir leur terrain, près de la vallée du **Yarmouk**, affluent du Jourdain.\n\nAprès plusieurs jours de combats, en août 636, les Byzantins, divisés et peut-être affaiblis par des défections, sont pris au piège entre ravins et rivière, coupés de leur retraite et massacrés. Les effectifs donnés par les chroniqueurs arabes, jusqu'à 200 000 Byzantins, sont fantaisistes ; les historiens modernes avancent des chiffres bien plus modestes, très débattus. Héraclius, quittant la Syrie, lui aurait adressé un adieu définitif.",
+      "consequences": [
+        "La Syrie et la Palestine sont perdues : Jérusalem capitule vers 637-638, Antioche en 637.",
+        "L'Égypte tombe à son tour (Alexandrie, 641-642), privant Constantinople de son grenier à blé.",
+        "La Mésopotamie byzantine et l'Arménie méridionale passent aux Arabes dans les années suivantes.",
+        "L'Empire se replie sur l'Anatolie, défendue par le Taurus, qui devient la nouvelle frontière."
+      ],
+      "territory": "yarmouk-636",
+      "sources": [
+        {
+          "label": "Théophane le Confesseur, Chronographie, A.M. 6126"
+        },
+        {
+          "label": "Al-Baladhuri, Futuh al-Buldan"
+        },
+        {
+          "label": "Wikipédia — Bataille du Yarmouk",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_du_Yarmouk"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire byzantin et alliés arabes ghassanides",
+          "Califat rashidun"
+        ],
+        "commanders": [
+          "Vahan",
+          "Théodore Trithyrios",
+          "Jabala ibn al-Ayham",
+          "Khalid ibn al-Walid",
+          "Abu Ubayda ibn al-Jarrah"
+        ],
+        "outcome": "Victoire décisive du califat",
+        "forces": "Très incertaines : les sources arabes donnent 100 000 à 200 000 Byzantins (chiffres invraisemblables) ; estimations modernes souvent entre 15 000 et 40 000 Byzantins et 20 000 à 40 000 musulmans",
+        "losses": "Lourdes côté byzantin, armée de campagne d'Orient détruite ; chiffres inconnus"
+      },
+      "territoryNote": "Après la bataille : Byzance perd la Syrie et la Palestine (Damas, Jérusalem, Antioche 637-638) mais garde l'Anatolie jusqu'au Taurus, l'Arménie occidentale, l'Égypte (jusqu'en 641-642), la Cyrénaïque, l'exarchat d'Afrique, l'Italie non lombarde (exarchat de Ravenne, Rome, Naples, Calabre, Apulie méridionale, Sicile, Sardaigne, Corse), les Baléares, la Thrace et les côtes grecques (intérieur des Balkans slave/avar) ; Spania perdue en 624-625."
+    },
+    {
+      "id": "manzikert-1071",
+      "year": 1071,
+      "title": "Manzikert : l'Anatolie ouverte aux Turcs",
+      "type": "bataille",
+      "location": [
+        42.53,
+        39.14
+      ],
+      "zoom": 4.25,
+      "summary": "Le 26 août 1071, l'empereur Romain IV Diogène est vaincu et capturé par le sultan seldjoukide Alp Arslan : l'Anatolie byzantine va s'effondrer en dix ans.",
+      "details": "Au début du XIe siècle, sous **Basile II** (976-1025), l'Empire byzantin est à son apogée médiéval : Bulgarie annexée (1018), frontières sur le Danube, en Syrie du Nord et en Arménie. Mais ses successeurs négligent l'armée au profit de l'aristocratie civile, et de nouveaux ennemis surgissent : les **Normands** en Italie du Sud, les Petchénègues sur le Danube et surtout les **Turcs seldjoukides**, maîtres de la Perse et de Bagdad, dont les raids frappent l'Arménie et l'Anatolie.\n\nGénéral expérimenté devenu empereur en 1068, **Romain IV Diogène** veut sécuriser la frontière orientale. En 1071, il mène une grande armée, mêlant troupes thématiques, mercenaires normands, francs et turcs (Oghouzes, Petchénègues), vers la forteresse de **Mantzikert**, au nord du lac de Van. Le sultan **Alp Arslan**, qui ne cherchait pas forcément la conquête de l'Anatolie, accourt. Le 26 août, après une journée de poursuite, l'armée byzantine se désorganise au crépuscule ; **Andronic Doukas**, rival de l'empereur, se retire avec la réserve. Romain IV est capturé.\n\nAlp Arslan le traite avec honneur et le libère contre une rançon et un traité modéré. Mais la défaite déclenche une guerre civile à Constantinople : Romain est aveuglé par les Doukas. Dans le chaos, des bandes turques s'installent dans le plateau anatolien.",
+      "consequences": [
+        "En dix ans, l'essentiel de l'Anatolie centrale et orientale passe aux Turcs ; Nicée devient capitale seldjoukide vers 1081.",
+        "La même année 1071, Bari tombe aux mains de Robert Guiscard : fin de la présence byzantine en Italie.",
+        "L'Arménie byzantine est perdue ; Antioche tombe en 1084.",
+        "Les appels à l'aide d'Alexis Ier Comnène à l'Occident contribueront au lancement de la première croisade (1095)."
+      ],
+      "territory": "manzikert-1071",
+      "sources": [
+        {
+          "label": "Michel Attaleiatès, Histoire"
+        },
+        {
+          "label": "Michel Psellos, Chronographie, VII"
+        },
+        {
+          "label": "Wikipédia — Bataille de Manzikert",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Manzikert"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire byzantin",
+          "Sultanat seldjoukide"
+        ],
+        "commanders": [
+          "Romain IV Diogène (capturé)",
+          "Andronic Doukas",
+          "Nicéphore Bryenne",
+          "Alp Arslan"
+        ],
+        "outcome": "Victoire seldjoukide ; capture de l'empereur",
+        "forces": "Très débattues : armée byzantine estimée entre 20 000 et 40 000 hommes engagés (une partie détachée vers Khliat), seldjoukides peut-être 20 000 à 30 000",
+        "losses": "Pertes byzantines probablement limitées en nombre mais catastrophiques politiquement ; chiffres inconnus"
+      },
+      "territoryNote": "À la date de la bataille (avant l'effondrement) : Balkans jusqu'au Danube (Bulgarie, Serbie méridionale, Grèce), Crète, Chypre, toute l'Anatolie, Arménie (Ani, Vaspourakan), Antioche et Syrie du Nord (jusqu'à Lattaquié) ; Italie du Sud perdue (Bari tombe en avril 1071) ; Sicile arabe/normande ; Croatie et Hongrie hors Empire. Dans les dix années suivantes, l'Anatolie centrale et orientale est perdue."
+    },
+    {
+      "id": "croisade-1204",
+      "year": 1204,
+      "title": "La quatrième croisade prend Constantinople",
+      "type": "chute",
+      "location": [
+        28.9784,
+        41.0082
+      ],
+      "zoom": 3.75,
+      "summary": "Le 13 avril 1204, les croisés et les Vénitiens, détournés de leur but, prennent et pillent Constantinople : l'Empire byzantin éclate en États latins et grecs.",
+      "details": "Sous les **Comnènes** (1081-1185), l'Empire avait reconquis la moitié occidentale de l'Anatolie et les Balkans, mais il s'affaiblit à la fin du XIIe siècle : défaite de Myrioképhalon face aux Seldjoukides (1176), révolte bulgare (1185), querelles dynastiques et dépendance envers les marchands italiens.\n\nLa **quatrième croisade**, prêchée pour reconquérir Jérusalem via l'Égypte, est endettée envers **Venise**, qui a construit sa flotte. Le doge **Enrico Dandolo** obtient d'abord le détournement contre Zara, ville chrétienne de Dalmatie (1202). Puis le prince byzantin exilé **Alexis Ange** promet argent et troupes si les croisés rétablissent son père, détrôné. Ils assiègent Constantinople en 1203 et installent Alexis IV, incapable de tenir ses promesses ; il est renversé et tué par Alexis V Doukas Murzuphle.\n\nLes croisés lancent alors l'assaut depuis la Corne d'Or et prennent la ville le **13 avril 1204**. Trois jours de pillage suivent : églises dépouillées, reliques emportées, chevaux de bronze envoyés à Saint-Marc de Venise. **Nicétas Choniatès**, témoin grec, décrit le désastre ; **Villehardouin**, l'un des chefs croisés, en donne la version latine. Le comte **Baudouin de Flandre** devient empereur latin.",
+      "consequences": [
+        "Un Empire latin de Constantinople est créé (Thrace, nord-ouest de l'Anatolie), avec un royaume de Thessalonique et des principautés en Grèce.",
+        "Venise s'empare de « un quart et demi » de l'Empire : Crète, Eubée, ports de Morée, îles de l'Égée.",
+        "Trois États grecs se proclament héritiers de Byzance : l'Empire de Nicée, le despotat d'Épire et l'Empire de Trébizonde.",
+        "Le schisme entre chrétiens d'Orient et d'Occident devient une blessure durable."
+      ],
+      "territory": "croisade-1204",
+      "sources": [
+        {
+          "label": "Geoffroy de Villehardouin, La Conquête de Constantinople"
+        },
+        {
+          "label": "Nicétas Choniatès, Histoire"
+        },
+        {
+          "label": "Wikipédia — Sac de Constantinople (1204)",
+          "url": "https://fr.wikipedia.org/wiki/Sac_de_Constantinople_(1204)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Croisés et République de Venise",
+          "Empire byzantin"
+        ],
+        "commanders": [
+          "Boniface de Montferrat",
+          "Baudouin de Flandre",
+          "Enrico Dandolo",
+          "Alexis V Doukas Murzuphle"
+        ],
+        "outcome": "Prise et pillage de Constantinople ; démembrement de l'Empire",
+        "forces": "Environ 20 000 croisés et Vénitiens selon les estimations modernes ; défenseurs plus nombreux mais désorganisés",
+        "losses": "Inconnues ; destructions et pillage massifs"
+      },
+      "territoryNote": "Plus d'Empire byzantin unique : continuité romaine principale = Empire de Nicée (nord-ouest et ouest de l'Anatolie : Bithynie hors Nicomédie, Mysie, Lydie, Ionie, jusqu'au Méandre, frontière stabilisée vers 1205-1214) ; autres États grecs : despotat d'Épire (Épire, Étolie, Acarnanie) et Empire de Trébizonde (côte pontique) ; Thrace et Constantinople = Empire latin ; Thessalonique et Grèce = États croisés ; Crète, Eubée, îles = Venise ; Anatolie centrale = sultanat de Roum ; Bulgarie indépendante."
+    },
+    {
+      "id": "reprise-1261",
+      "year": 1261,
+      "title": "Michel VIII reprend Constantinople",
+      "type": "politique",
+      "location": [
+        28.9784,
+        41.0082
+      ],
+      "zoom": 3.75,
+      "summary": "Le 25 juillet 1261, un général nicéen entre presque par surprise dans Constantinople : Michel VIII Paléologue restaure l'Empire byzantin dans sa capitale.",
+      "details": "Après 1204, l'**Empire de Nicée** s'impose comme le plus solide des États grecs successeurs. Sous **Théodore Ier Lascaris** puis **Jean III Vatatzès** (1222-1254), il prospère, reprend pied en Europe, conquiert la Thrace et Thessalonique (1246) et encercle peu à peu l'Empire latin, réduit à sa capitale. En 1259, le régent et co-empereur **Michel VIII Paléologue**, qui a écarté le jeune héritier légitime Jean IV Lascaris, écrase à **Pélagonia** une coalition d'Épire, d'Achaïe et de Sicile.\n\nEn juillet 1261, le général **Alexis Strategopoulos**, envoyé en reconnaissance près de Constantinople avec une petite troupe, apprend que la flotte vénitienne et une partie de la garnison latine sont parties en expédition. Guidé par des habitants grecs, il entre dans la ville de nuit, peut-être par un passage secret ou une porte ouverte, le **25 juillet 1261**. L'empereur latin **Baudouin II** s'enfuit.\n\nLe 15 août, Michel VIII fait une entrée solennelle à pied derrière l'icône de la Vierge Hodigitria et se fait couronner à Sainte-Sophie ; il fait ensuite aveugler Jean IV. Il fonde la dernière dynastie byzantine, celle des **Paléologues**. Mais l'Empire restauré, ruiné et entouré d'ennemis, n'est plus qu'une puissance régionale.",
+      "consequences": [
+        "Constantinople redevient capitale de l'Empire romain d'Orient pour près de deux siècles.",
+        "Les forteresses de Mistra, Monemvasia et du Magne, en Morée, sont cédées par le prince d'Achaïe en 1262 : origine du futur despotat de Morée.",
+        "Le despotat d'Épire et l'Empire de Trébizonde restent indépendants.",
+        "Le transfert des troupes vers l'Europe dégarnit la frontière anatolienne face aux émirats turcs, dont celui d'Osman."
+      ],
+      "territory": "reprise-1261",
+      "sources": [
+        {
+          "label": "Georges Akropolitès, Chronique"
+        },
+        {
+          "label": "Georges Pachymérès, Histoire, II"
+        },
+        {
+          "label": "Wikipédia — Michel VIII Paléologue",
+          "url": "https://fr.wikipedia.org/wiki/Michel_VIII_Paléologue"
+        }
+      ],
+      "territoryNote": "Empire restauré : Constantinople et la Thrace, Macédoine avec Thessalonique, une partie de l'Albanie et de la Thessalie septentrionale, ouest de l'Anatolie (Bithynie, Mysie, Lydie, Ionie jusqu'au Méandre et à la Carie), Rhodes et quelques îles (Lesbos, Chios, Samos) ; à partir de 1262 : forteresses du sud-est de la Morée (Mistra, Monemvasia, Magne) ; hors Empire : Épire, Trébizonde, Athènes et Achaïe latines, Crète et Eubée vénitiennes, Bulgarie, Serbie."
+    },
+    {
+      "id": "chute-1453",
+      "year": 1453,
+      "title": "La chute de Constantinople",
+      "type": "chute",
+      "location": [
+        28.9784,
+        41.0082
+      ],
+      "zoom": 4.25,
+      "summary": "Le 29 mai 1453, après 53 jours de siège, le sultan ottoman Mehmed II prend Constantinople ; le dernier empereur romain, Constantin XI, meurt au combat.",
+      "details": "Au XIVe siècle, l'Empire des Paléologues se délite sous l'effet des guerres civiles, de la peste noire et de la poussée des **Ottomans**, qui prennent pied en Europe à Gallipoli (1354), conquièrent la Thrace et font d'Andrinople leur capitale. Vers 1400, Byzance ne contrôle plus que Constantinople, quelques îles, Thessalonique (perdue en 1430) et le despotat de **Morée**. Les appels à l'Occident et l'union des Églises proclamée à Florence (1439) n'apportent que peu de secours.\n\nEn 1452, le jeune sultan **Mehmed II** fait construire la forteresse de Rumeli Hisar sur le Bosphore pour couper la ville de la mer Noire. Le siège commence le 6 avril 1453. Les défenseurs, environ 7 000 hommes selon **Sphrantzès**, dont des Génois et des Vénitiens commandés par **Giovanni Giustiniani Longo**, tiennent les murailles théodosiennes face à une armée bien plus nombreuse dotée de canons géants, dont celui du fondeur Urbain. Mehmed fait transporter ses navires par voie de terre jusqu'à la Corne d'Or, contournant la chaîne qui en barrait l'entrée.\n\nLe 29 mai à l'aube, l'assaut final perce les défenses près de la porte Saint-Romain ; Giustiniani, blessé, se retire. L'empereur **Constantin XI Paléologue** disparaît dans la mêlée. La ville est livrée au pillage ; Mehmed entre à Sainte-Sophie, bientôt transformée en mosquée.",
+      "consequences": [
+        "Fin de l'Empire romain d'Orient, héritier direct de Rome, après plus de onze siècles à Constantinople.",
+        "Constantinople (Istanbul) devient la capitale de l'Empire ottoman.",
+        "Le despotat de Morée tombe en 1460 et l'Empire grec de Trébizonde en 1461.",
+        "Des savants grecs réfugiés en Italie nourrissent l'essor de l'humanisme ; Moscou se proclamera plus tard « troisième Rome »."
+      ],
+      "territory": "chute-1453",
+      "sources": [
+        {
+          "label": "Georges Sphrantzès, Chronique"
+        },
+        {
+          "label": "Nicolò Barbaro, Journal du siège de Constantinople"
+        },
+        {
+          "label": "Wikipédia — Chute de Constantinople",
+          "url": "https://fr.wikipedia.org/wiki/Chute_de_Constantinople"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire byzantin, Génois et Vénitiens",
+          "Empire ottoman"
+        ],
+        "commanders": [
+          "Constantin XI Paléologue (tué)",
+          "Giovanni Giustiniani Longo",
+          "Loukas Notaras",
+          "Mehmed II",
+          "Zaganos Pacha",
+          "Karaca Pacha"
+        ],
+        "outcome": "Victoire ottomane ; fin de l'Empire byzantin",
+        "forces": "Selon Sphrantzès, environ 5 000 Grecs et 2 000 étrangers, et quelque 26 navires ; armée ottomane estimée par les historiens modernes entre 50 000 et 80 000 combattants (les contemporains avancent jusqu'à plus de 160 000)",
+        "losses": "Selon Nicolò Barbaro, environ 4 000 morts parmi les défenseurs et les habitants, et quelque 30 000 personnes réduites en esclavage ; pertes ottomanes inconnues mais lourdes"
+      },
+      "territoryNote": "Avant la chute : Constantinople et sa banlieue immédiate dans les murailles, quelques îles du nord de l'Égée (Imbros, Lemnos en partie) et le despotat de Morée (Péloponnèse sauf les places vénitiennes de Modon, Coron, Nauplie, Argos), tenu jusqu'en 1460 ; Trébizonde, État grec distinct, jusqu'en 1461 ; après le 29 mai, plus aucun territoire autour de la capitale."
+    }
+  ]
+}

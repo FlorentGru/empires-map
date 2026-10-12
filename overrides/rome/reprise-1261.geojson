@@ -1,0 +1,4 @@
+{"type":"FeatureCollection","features":[
+{"type": "Feature", "properties": {"op": "subtract", "note": "Épire, Thessalie méridionale, Grèce latine, Eubée, Cyclades, Crète : hors Empire"}, "geometry": {"type": "Polygon", "coordinates": [[[19.0, 40.3], [20.4, 40.3], [21.2, 39.9], [22.0, 39.5], [22.9, 39.4], [23.6, 39.2], [24.8, 38.6], [25.6, 37.9], [26.0, 37.2], [26.7, 35.0], [23.0, 34.6], [19.0, 36.5], [19.0, 40.3]]]}},
+{"type": "Feature", "properties": {"op": "subtract", "note": "Anatolie au-delà du Sangarios et du Méandre : sultanat de Roum / beyliks"}, "geometry": {"type": "Polygon", "coordinates": [[[31.6, 42.5], [36, 42.5], [36, 35.5], [29.6, 35.5], [29.4, 37.2], [30.3, 38.7], [31.0, 40.2], [31.6, 41.2], [31.6, 42.5]]]}}
+]}

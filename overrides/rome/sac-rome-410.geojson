@@ -1,0 +1,4 @@
+{"type":"FeatureCollection","features":[
+{"type": "Feature", "properties": {"op": "subtract", "entity": "Empire romain d'Occident", "note": "Bretagne abandonnée de fait"}, "geometry": {"type": "Point", "coordinates": [-1.5, 52.5]}},
+{"type": "Feature", "properties": {"op": "subtract", "entity": "Empire romain d'Occident", "note": "Galice, Lusitanie et Bétique envahies (Vandales, Alains, Suèves)"}, "geometry": {"type": "Polygon", "coordinates": [[[-10, 35.95], [-5.0, 35.95], [-2.3, 36.6], [-3.0, 38.3], [-5.5, 40.0], [-4.8, 41.5], [-4.5, 43.8], [-10, 44.5], [-10, 35.95]]]}}
+]}
