@@ -324,7 +324,14 @@
       48.853
     ],
     "founded": -250,
-    "rank": 2
+    "rank": 1,
+    "capitalOf": [
+      {
+        "empire": "napoleon",
+        "from": 1799,
+        "to": 1815
+      }
+    ]
   },
   {
     "id": "londinium",
@@ -925,7 +932,10 @@
       41.304
     ],
     "founded": -300,
-    "rank": 3
+    "rank": 3,
+    "empires": [
+      "rome"
+    ]
   },
   {
     "id": "zama",
@@ -940,7 +950,10 @@
       35.85
     ],
     "founded": -300,
-    "rank": 3
+    "rank": 3,
+    "empires": [
+      "rome"
+    ]
   },
   {
     "id": "actium",
@@ -955,7 +968,10 @@
       38.95
     ],
     "founded": -500,
-    "rank": 3
+    "rank": 3,
+    "empires": [
+      "rome"
+    ]
   },
   {
     "id": "alesia",
@@ -970,7 +986,10 @@
       47.538
     ],
     "founded": -300,
-    "rank": 3
+    "rank": 3,
+    "empires": [
+      "rome"
+    ]
   },
   {
     "id": "manzikert",
@@ -985,6 +1004,379 @@
       39.145
     ],
     "founded": 1000,
-    "rank": 3
+    "rank": 3,
+    "empires": [
+      "rome"
+    ]
+  },
+  {
+    "id": "vindobona",
+    "modern": "Vienne, Autriche",
+    "names": [
+      {
+        "name": "Vindobona",
+        "to": 500
+      },
+      {
+        "name": "Vienne",
+        "from": 501
+      }
+    ],
+    "coords": [
+      16.373,
+      48.208
+    ],
+    "founded": -15,
+    "rank": 1
+  },
+  {
+    "id": "berlin",
+    "modern": "Berlin",
+    "names": [
+      {
+        "name": "Berlin"
+      }
+    ],
+    "coords": [
+      13.405,
+      52.52
+    ],
+    "founded": 1237,
+    "rank": 2
+  },
+  {
+    "id": "moscou",
+    "modern": "Moscou",
+    "names": [
+      {
+        "name": "Moscou"
+      }
+    ],
+    "coords": [
+      37.617,
+      55.756
+    ],
+    "founded": 1147,
+    "rank": 1
+  },
+  {
+    "id": "madrid",
+    "modern": "Madrid",
+    "names": [
+      {
+        "name": "Madrid"
+      }
+    ],
+    "coords": [
+      -3.704,
+      40.417
+    ],
+    "founded": 865,
+    "rank": 2
+  },
+  {
+    "id": "varsovie",
+    "modern": "Varsovie",
+    "names": [
+      {
+        "name": "Varsovie"
+      }
+    ],
+    "coords": [
+      21.012,
+      52.23
+    ],
+    "founded": 1300,
+    "rank": 2
+  },
+  {
+    "id": "amsterdam",
+    "modern": "Amsterdam",
+    "names": [
+      {
+        "name": "Amsterdam"
+      }
+    ],
+    "coords": [
+      4.9,
+      52.37
+    ],
+    "founded": 1275,
+    "rank": 2
+  },
+  {
+    "id": "bruxelles",
+    "modern": "Bruxelles",
+    "names": [
+      {
+        "name": "Bruxelles"
+      }
+    ],
+    "coords": [
+      4.352,
+      50.847
+    ],
+    "founded": 979,
+    "rank": 2
+  },
+  {
+    "id": "olisipo",
+    "modern": "Lisbonne",
+    "names": [
+      {
+        "name": "Olisipo",
+        "to": 500
+      },
+      {
+        "name": "Lisbonne",
+        "from": 501
+      }
+    ],
+    "coords": [
+      -9.139,
+      38.722
+    ],
+    "founded": -200,
+    "rank": 2
+  },
+  {
+    "id": "saint-petersbourg",
+    "modern": "Saint-Pétersbourg",
+    "names": [
+      {
+        "name": "Saint-Pétersbourg",
+        "from": 1703,
+        "to": 1913
+      },
+      {
+        "name": "Petrograd",
+        "from": 1914,
+        "to": 1923
+      },
+      {
+        "name": "Leningrad",
+        "from": 1924,
+        "to": 1990
+      },
+      {
+        "name": "Saint-Pétersbourg",
+        "from": 1991
+      }
+    ],
+    "coords": [
+      30.315,
+      59.939
+    ],
+    "founded": 1703,
+    "rank": 2
+  },
+  {
+    "id": "austerlitz",
+    "modern": "Slavkov u Brno, Tchéquie",
+    "names": [
+      {
+        "name": "Austerlitz",
+        "to": 1918
+      },
+      {
+        "name": "Slavkov u Brna",
+        "from": 1919
+      }
+    ],
+    "coords": [
+      16.876,
+      49.153
+    ],
+    "founded": 1235,
+    "rank": 3,
+    "empires": [
+      "napoleon"
+    ]
+  },
+  {
+    "id": "iena",
+    "modern": "Iéna (Jena), Allemagne",
+    "names": [
+      {
+        "name": "Iéna"
+      }
+    ],
+    "coords": [
+      11.589,
+      50.928
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "napoleon"
+    ]
+  },
+  {
+    "id": "wagram",
+    "modern": "Deutsch-Wagram, Autriche",
+    "names": [
+      {
+        "name": "Wagram"
+      }
+    ],
+    "coords": [
+      16.567,
+      48.296
+    ],
+    "founded": 1100,
+    "rank": 3,
+    "empires": [
+      "napoleon"
+    ]
+  },
+  {
+    "id": "borodino",
+    "modern": "Borodino, Russie",
+    "names": [
+      {
+        "name": "Borodino"
+      }
+    ],
+    "coords": [
+      35.82,
+      55.52
+    ],
+    "founded": 1500,
+    "rank": 3,
+    "empires": [
+      "napoleon"
+    ]
+  },
+  {
+    "id": "leipzig",
+    "modern": "Leipzig",
+    "names": [
+      {
+        "name": "Leipzig"
+      }
+    ],
+    "coords": [
+      12.373,
+      51.34
+    ],
+    "founded": 1015,
+    "rank": 3,
+    "empires": [
+      "napoleon"
+    ]
+  },
+  {
+    "id": "waterloo",
+    "modern": "Waterloo, Belgique",
+    "names": [
+      {
+        "name": "Waterloo"
+      }
+    ],
+    "coords": [
+      4.4,
+      50.714
+    ],
+    "founded": 1200,
+    "rank": 3,
+    "empires": [
+      "napoleon"
+    ]
+  },
+  {
+    "id": "marengo",
+    "modern": "Marengo (Alexandrie), Italie",
+    "names": [
+      {
+        "name": "Marengo"
+      }
+    ],
+    "coords": [
+      8.67,
+      44.88
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "napoleon"
+    ]
+  },
+  {
+    "id": "cap-trafalgar",
+    "modern": "Cap Trafalgar, Espagne",
+    "names": [
+      {
+        "name": "Cap Trafalgar"
+      }
+    ],
+    "coords": [
+      -6.032,
+      36.183
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "napoleon"
+    ]
+  },
+  {
+    "id": "sainte-helene",
+    "modern": "Sainte-Hélène (Jamestown), Royaume-Uni",
+    "names": [
+      {
+        "name": "Sainte-Hélène",
+        "from": 1502
+      }
+    ],
+    "coords": [
+      -5.717,
+      -15.965
+    ],
+    "founded": 1502,
+    "rank": 3,
+    "empires": [
+      "napoleon"
+    ]
+  },
+  {
+    "id": "portoferraio",
+    "modern": "Portoferraio (île d'Elbe), Italie",
+    "names": [
+      {
+        "name": "Portoferraio"
+      }
+    ],
+    "coords": [
+      10.316,
+      42.813
+    ],
+    "founded": 1548,
+    "rank": 3,
+    "empires": [
+      "napoleon"
+    ]
+  },
+  {
+    "id": "tilsit",
+    "modern": "Sovetsk, Russie (Tilsit)",
+    "names": [
+      {
+        "name": "Tilsit",
+        "to": 1945
+      },
+      {
+        "name": "Sovetsk",
+        "from": 1946
+      }
+    ],
+    "coords": [
+      21.888,
+      55.087
+    ],
+    "founded": 1288,
+    "rank": 3,
+    "empires": [
+      "napoleon"
+    ]
   }
 ]

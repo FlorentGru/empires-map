@@ -1,0 +1,1770 @@
+{
+  "id": "napoleon",
+  "name": "L'Empire napoléonien",
+  "color": "#2c4a8a",
+  "start": 1799,
+  "end": 1815,
+  "description": "Seize années qui ont changé la carte de l'Europe : du coup d'État de Brumaire à Waterloo, Napoléon Bonaparte fait de la France un empire de 130 départements entouré de royaumes vassaux, de la Hollande à Naples, de l'Espagne à Varsovie. Cette chronologie suit les victoires, les traités et les annexions qui ont dessiné ce système, puis la coalition qui l'a défait et le congrès de Vienne qui a refermé le chapitre.",
+  "view": {
+    "center": [
+      12,
+      49
+    ],
+    "zoom": 3.6
+  },
+  "steps": [
+    {
+      "id": "brumaire-1799",
+      "year": 1799,
+      "title": "Coup d'État du 18 Brumaire",
+      "type": "politique",
+      "location": [
+        2.2211,
+        48.8445
+      ],
+      "zoom": 5,
+      "summary": "Le général Bonaparte, rentré d'Égypte, renverse le Directoire avec Sieyès et se fait nommer Premier consul : la Révolution se referme sur un régime d'autorité.",
+      "details": "À l'automne 1799, la France est lasse. Le **Directoire** est discrédité par les coups d'État successifs, la banqueroute et la menace d'invasion : Autrichiens et Russes viennent de reprendre l'Italie (Suvorov), tandis que Masséna sauve la situation à Zurich en septembre. **Emmanuel-Joseph Sieyès**, directeur, cherche « une épée » pour réviser la Constitution.\n\nDébarqué à Fréjus le 9 octobre après avoir quitté l'armée d'Égypte, **Napoléon Bonaparte** est acclamé comme un sauveur. Avec son frère **Lucien**, président du Conseil des Cinq-Cents, et l'appui de Talleyrand, Fouché et Murat, il prépare le coup. Le **18 brumaire** (9 novembre), les Anciens, sous prétexte d'un complot jacobin, transfèrent les assemblées à Saint-Cloud. Le lendemain, Bonaparte est bousculé par les députés du Conseil des Cinq-Cents ; Lucien en appelle aux soldats, et **Murat** fait évacuer la salle.\n\nUn Consulat provisoire de trois membres (Bonaparte, Sieyès, Roger Ducos) est proclamé, puis la **Constitution de l'an VIII** (décembre) instaure trois consuls. Le Premier consul détient en fait tout le pouvoir exécutif et l'initiative des lois. Un plébiscite l'approuve massivement.\n\nLe territoire n'est pas encore modifié, mais le cadre est posé : la France de 1799 comprend déjà la Belgique, la rive gauche du Rhin (de fait), la Savoie et Nice, entourées de républiques sœurs.",
+      "consequences": [
+        "Fin du Directoire et naissance du Consulat : pouvoir exécutif concentré dans la personne du Premier consul.",
+        "La France conserve ses « limites naturelles » acquises en 1795-1798 : Belgique, rive gauche du Rhin (occupée), Savoie, comté de Nice, Genève.",
+        "Les républiques sœurs (batave, helvétique, ligurienne) restent des satellites ; l'Italie du Nord est à reconquérir sur les Austro-Russes.",
+        "Bonaparte ouvre aussitôt des offres de paix à l'Angleterre et à l'Autriche, repoussées, ce qui prépare la campagne de 1800."
+      ],
+      "territory": "brumaire-1799",
+      "sources": [
+        {
+          "label": "Thiers, Histoire du Consulat et de l'Empire"
+        },
+        {
+          "label": "Jean Tulard, Napoléon ou le mythe du sauveur"
+        },
+        {
+          "label": "Wikipédia — Coup d'État du 18 Brumaire",
+          "url": "https://fr.wikipedia.org/wiki/Coup_d'État_du_18_Brumaire"
+        }
+      ],
+      "territoryNote": "République française : 'limites naturelles' de 1795-1799, soit anciens départements + 9 départements belges (annexés 1795), Savoie (Mont-Blanc), Nice (Alpes-Maritimes), Genève (Léman, 1798), Mulhouse, Monaco et la rive gauche du Rhin (Sarre, Rhin-et-Moselle, Roer, Mont-Tonnerre ; occupée, annexée de droit en 1801). Satellites (vassal) : République batave (Pays-Bas), République helvétique (Suisse), République ligurienne (Gênes, assiégée fin 1799) ; l'Italie (Cisalpine, Piémont, Rome, Naples) est perdue au profit des Austro-Russes.",
+      "figures": [
+        {
+          "name": "Napoléon Bonaparte",
+          "role": "Général, futur Premier consul",
+          "faction": "francais",
+          "archetype": "general",
+          "quote": "Souvenez-vous que je marche accompagné du dieu de la fortune et du dieu de la guerre (19 brumaire)",
+          "position": [
+            2.2211,
+            48.8445
+          ]
+        },
+        {
+          "name": "Emmanuel-Joseph Sieyès",
+          "role": "Directeur, instigateur du coup d'État",
+          "faction": "francais",
+          "archetype": "diplomate",
+          "quote": "Il nous faut une tête et une épée (formule libre)",
+          "position": [
+            2.34,
+            48.86
+          ]
+        }
+      ]
+    },
+    {
+      "id": "marengo-1800",
+      "year": 1800,
+      "title": "Marengo : la reconquête de l'Italie",
+      "type": "bataille",
+      "location": [
+        8.6667,
+        44.8833
+      ],
+      "zoom": 5,
+      "summary": "Au terme d'une journée presque perdue, l'arrivée de Desaix renverse la situation : Bonaparte écrase Mélas et reprend l'Italie du Nord.",
+      "details": "Au printemps 1800, l'Autriche tient l'Italie du Nord et assiège Masséna dans **Gênes**, pendant que le général **Mélas** menace la Provence. Bonaparte constitue en secret une « armée de réserve » à Dijon, puis lui fait franchir le **Grand-Saint-Bernard** (15-23 mai) avec l'artillerie, et entre à Milan le 2 juin. Gênes capitule le 4 juin, mais Mélas doit se retourner.\n\nLe **14 juin 1800**, près d'Alexandrie, Mélas attaque à l'improviste les Français dispersés. Toute la matinée, les troupes de Victor et de Lannes reculent ; vers 15 heures, la bataille semble perdue. Mais **Louis Desaix**, rappelé de Novi, arrive avec sa division vers 17 heures. Il est tué à la première charge ; la contre-attaque de Kellermann fils sur la cavalerie autrichienne transforme la défaite en victoire.\n\nLe lendemain, Mélas signe la **convention d'Alexandrie** : l'Autriche évacue toute l'Italie jusqu'au Mincio. Les Cisalpins sont rétablis et le Piémont passe sous administration militaire française.\n\nMarengo fonde la légitimité militaire du Consulat. Bonaparte la retouchera ensuite dans ses bulletins, minimisant le rôle de Desaix, mais la victoire a bien été arrachée à l'extrême limite.",
+      "consequences": [
+        "L'Autriche perd d'un coup la Lombardie, le Piémont et la Ligurie, évacués jusqu'au Mincio (convention d'Alexandrie).",
+        "La République cisalpine est restaurée à Milan ; le Piémont est administré par la France, avant son annexion de 1802.",
+        "Gênes (République ligurienne) redevient un satellite français.",
+        "Le Consulat sort consolidé à l'intérieur, la victoire apportant la légitimité que Brumaire ne donnait qu'en promesse."
+      ],
+      "territory": "marengo-1800",
+      "sources": [
+        {
+          "label": "Thiers, Histoire du Consulat et de l'Empire"
+        },
+        {
+          "label": "Napoléon, Mémoires (campagne d'Italie de 1800)"
+        },
+        {
+          "label": "Wikipédia — Bataille de Marengo",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Marengo"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "République française (Consulat)",
+          "Empire d'Autriche (Habsbourg)"
+        ],
+        "commanders": [
+          "Napoléon Bonaparte, Louis Desaix",
+          "Michael von Melas"
+        ],
+        "outcome": "Victoire française ; Mélas signe la convention d'Alexandrie et évacue l'Italie du Nord",
+        "forces": "Environ 22 000 Français contre 31 000 Autrichiens",
+        "losses": "Environ 6 000 à 7 000 Français (dont Desaix) et 9 000 Autrichiens, selon les estimations"
+      },
+      "territoryNote": "France des limites naturelles (idem 1799). Satellites (vassal) : République batave, République helvétique, République ligurienne (Gênes, rétablie en juin) et République cisalpine (Lombardie, restaurée après Marengo). Piémont occupé et administré par la France (annexion en 1802) ; Toscane, Parme, Venise et le Sud de l'Italie ne sont pas français.",
+      "armies": [
+        {
+          "side": "Armée de réserve",
+          "faction": "francais",
+          "path": [
+            [
+              5.04,
+              47.32
+            ],
+            [
+              7.17,
+              45.87
+            ],
+            [
+              8.0,
+              45.3
+            ],
+            [
+              8.62,
+              44.9
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée d'Autriche",
+          "faction": "autrichiens",
+          "path": [
+            [
+              9.19,
+              45.1
+            ],
+            [
+              8.9,
+              44.95
+            ],
+            [
+              8.67,
+              44.87
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Louis Desaix",
+          "role": "Général, arrivé au soir",
+          "faction": "francais",
+          "archetype": "general",
+          "quote": "Cette bataille est perdue, mais il est encore temps d'en gagner une autre (attribué)",
+          "position": [
+            8.5,
+            44.85
+          ]
+        }
+      ]
+    },
+    {
+      "id": "luneville-1801",
+      "year": 1801,
+      "title": "Traité de Lunéville : la rive gauche du Rhin",
+      "type": "traité",
+      "location": [
+        6.4939,
+        48.5919
+      ],
+      "zoom": 4.5,
+      "summary": "Après Hohenlinden, l'Autriche signe la paix : elle reconnaît l'annexion de la rive gauche du Rhin et les républiques sœurs.",
+      "details": "Après Marengo, l'Autriche hésite à signer. Mais le **3 décembre 1800**, **Moreau** écrase l'archiduc Jean à **Hohenlinden**, près de Munich, tandis que Brune et Macdonald avancent en Italie. Vienne, menacée, négocie à **Lunéville** : **Joseph Bonaparte** y représente le Premier consul face au comte **Louis de Cobenzl**. Le traité est signé le **9 février 1801**.\n\nL'Autriche accepte le principe de la rive gauche du Rhin française : la France annexe ainsi définitivement Belgique et Rhénanie, quatre départements créés en 1798 (Roer, Sarre, Rhin-et-Moselle, Mont-Tonnerre). Les princes allemands dépossédés devront être indemnisés sur la rive droite, par la sécularisation des principautés ecclésiastiques : ce sera le **recès d'Empire** de 1803, qui supprime plus de cent petits États du Saint-Empire.\n\nEn Italie, l'Autriche garde la Vénétie, acquise à Campoformio (1797), mais reconnaît les républiques **batave, helvétique, cisalpine et ligurienne**, dont l'indépendance est garantie. Le grand-duc de Toscane perd sa couronne : un **royaume d'Étrurie** est donné au Bourbon-Parme, sous protection française.\n\nLa paix de Lunéville laisse la Grande-Bretagne seule face à la France, ce qui conduit à la négociation d'Amiens.",
+      "consequences": [
+        "La rive gauche du Rhin est cédée à la France : quatre départements nouveaux entrent dans la République.",
+        "La Toscane devient le royaume d'Étrurie, confié à un Bourbon-Parme, satellite de la France.",
+        "Les républiques batave, helvétique, cisalpine et ligurienne sont reconnues par l'Autriche.",
+        "Le recès d'Empire (1803) supprime environ cent petits États allemands et réorganise le Saint-Empire au profit de Bade, Bavière et Wurtemberg."
+      ],
+      "territory": "luneville-1801",
+      "sources": [
+        {
+          "label": "Thiers, Histoire du Consulat et de l'Empire"
+        },
+        {
+          "label": "Thierry Lentz, Nouvelle histoire du Premier Empire"
+        },
+        {
+          "label": "Wikipédia — Traité de Lunéville",
+          "url": "https://fr.wikipedia.org/wiki/Traité_de_Lunéville"
+        }
+      ],
+      "territoryNote": "France : limites naturelles, rive gauche du Rhin formellement cédée (départements de la Roer, de la Sarre, du Rhin-et-Moselle, du Mont-Tonnerre) + Belgique + Savoie + Nice. Satellites (vassal) : République batave, République helvétique, République cisalpine (Lombardie, Émilie-Romagne, Mantoue ; Vénétie à l'Autriche), République ligurienne (Gênes), royaume d'Étrurie (Toscane, Bourbon-Parme, créé en 1801). Piémont encore occupé, non annexé.",
+      "figures": [
+        {
+          "name": "Joseph Bonaparte",
+          "role": "Plénipotentiaire de la France",
+          "faction": "francais",
+          "archetype": "diplomate",
+          "quote": "La France garde le Rhin : c'est la condition de toute paix durable (formule libre)",
+          "position": [
+            6.4939,
+            48.5919
+          ]
+        },
+        {
+          "name": "Louis de Cobenzl",
+          "role": "Plénipotentiaire autrichien",
+          "faction": "autrichiens",
+          "archetype": "diplomate",
+          "quote": "Vienne cède ce qu'elle ne peut plus défendre (formule libre)",
+          "position": [
+            6.9,
+            48.65
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amiens-1802",
+      "year": 1802,
+      "title": "Paix d'Amiens et Consulat à vie",
+      "type": "traité",
+      "location": [
+        2.2957,
+        49.8941
+      ],
+      "zoom": 4,
+      "summary": "La Grande-Bretagne et la France signent une paix qui ne durera qu'un an, tandis que Bonaparte fait consolider son pouvoir et annexer le Piémont.",
+      "details": "Après huit années de guerre, la Grande-Bretagne, privée de ses alliés continentaux, négocie avec la France. Le **traité d'Amiens** est signé le **25 mars 1802** par **Joseph Bonaparte** et lord **Cornwallis**, avec l'Espagne et la République batave. Londres rend la plupart de ses conquêtes coloniales (Martinique, Guadeloupe, Cap), ne conservant que **Trinidad** et **Ceylan**, et promet d'évacuer Malte. La France évacue Naples et les États pontificaux.\n\nLa paix est populaire des deux côtés de la Manche, mais le contentieux reste vif : la France demeure maîtresse de la Belgique, des Pays-Bas satellites et du Rhin, et Londres craint pour ses marchés.\n\nBonaparte profite de la paix pour renforcer son régime : le **Concordat** (1801) réconcilie l'Église, la **Légion d'honneur** est créée en mai 1802, et un sénatus-consulte fait de lui **Consul à vie** (août 1802). Dans la foulée, il annexe l'**île d'Elbe** (août) et le **Piémont** (septembre), divisé en six départements. La République cisalpine devient la **République italienne** (janvier 1802, comices de Lyon), avec Bonaparte comme président ; les Suisses se voient imposer l'**Acte de médiation** (1803).\n\nLa rupture, en mai 1803, tient à Malte, aux annexions et à l'expédition de Saint-Domingue.",
+      "consequences": [
+        "Le Piémont, l'île d'Elbe et Parme sont rattachés à la France en 1802 : l'empire territorial dépasse les limites naturelles.",
+        "La Cisalpine devient la République italienne, présidée par Bonaparte lui-même.",
+        "La Suisse, objet d'une intervention, passe sous médiation française (1803).",
+        "La paix, qui ne règle ni Malte ni le commerce, cède la place à la guerre en mai 1803."
+      ],
+      "territory": "amiens-1802",
+      "sources": [
+        {
+          "label": "Thiers, Histoire du Consulat et de l'Empire"
+        },
+        {
+          "label": "Mémoires de Napoléon à Sainte-Hélène (Las Cases, Mémorial)"
+        },
+        {
+          "label": "Wikipédia — Traité d'Amiens",
+          "url": "https://fr.wikipedia.org/wiki/Traité_d'Amiens"
+        }
+      ],
+      "territoryNote": "France : limites naturelles + Piémont (6 départements : Pô, Doire, Stura, Marengo, Sésia, Tanaro ; annexé 1802) + île d'Elbe (1802) ; Parme administré depuis 1802. Satellites (vassal) : République italienne (ex-Cisalpine, Bonaparte président), République ligurienne, République batave, République helvétique (puis Confédération suisse, médiation 1803), royaume d'Étrurie (Toscane). Valais indépendant (annexé 1810). Naples et États pontificaux évacués, indépendants.",
+      "figures": [
+        {
+          "name": "Joseph Bonaparte",
+          "role": "Plénipotentiaire de la France",
+          "faction": "francais",
+          "archetype": "diplomate",
+          "quote": "La paix est signée ; reste à savoir si elle sera tenue (formule libre)",
+          "position": [
+            2.2957,
+            49.8941
+          ]
+        },
+        {
+          "name": "Charles Cornwallis",
+          "role": "Plénipotentiaire britannique",
+          "faction": "britanniques",
+          "archetype": "diplomate",
+          "quote": "Nous signons la paix, pas la confiance (formule libre)",
+          "position": [
+            2.2,
+            49.95
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sacre-1804",
+      "year": 1804,
+      "title": "Le sacre de Napoléon Ier",
+      "type": "politique",
+      "location": [
+        2.3499,
+        48.853
+      ],
+      "zoom": 5,
+      "summary": "Napoléon se fait proclamer empereur des Français puis couronner à Notre-Dame en présence du pape Pie VII, fondant l'Empire héréditaire.",
+      "details": "La reprise de la guerre (1803), la menace d'un débarquement à Boulogne et la conspiration de **Cadoudal** et **Pichegru** (1804), suivie de l'exécution du **duc d'Enghien** en mars, convainquent l'entourage de Bonaparte de rendre le pouvoir héréditaire. Le **18 mai 1804**, un sénatus-consulte proclame Napoléon **empereur des Français** ; un plébiscite l'approuve (3,5 millions de oui contre 2 500 non).\n\nLe **2 décembre 1804**, le sacre a lieu à **Notre-Dame de Paris**. Le pape **Pie VII**, venu de Rome, procède aux onctions mais Napoléon prend lui-même la couronne et couronne **Joséphine**, geste soigneusement réglé par le peintre **David**. Le protocole emprunte à Charlemagne comme à la monarchie capétienne : l'Empire se veut à la fois héritier de la Révolution et de l'Ancien Régime.\n\nL'Empire reste territorialement celui du Consulat : la France de 1804 compte environ 108 départements, y compris Piémont, Belgique et Rhénanie, entourée d'États satellites. Mais la proclamation impériale inquiète : Alexandre Ier, Pitt et l'Autriche forment la **troisième coalition** en 1805. Le 17 mars 1805, la République italienne devient un **royaume d'Italie** et Napoléon s'y fait couronner à Milan le 26 mai ; Gênes est annexée en juin.\n\nLe sacre donne à la dynastie bonapartiste sa liturgie et son prestige.",
+      "consequences": [
+        "L'Empire héréditaire est fondé ; Napoléon cumule dès 1805 les titres d'empereur des Français et de roi d'Italie.",
+        "La France de 1804 compte environ 108 départements, de la Rhénanie à l'Adriatique, sans compter les États satellites.",
+        "Gênes (juin 1805) et Parme (1805) sont annexées ; Lucques passe à Élisa Bonaparte.",
+        "La monarchie impériale précipite la formation de la troisième coalition (Angleterre, Russie, Autriche)."
+      ],
+      "territory": "sacre-1804",
+      "sources": [
+        {
+          "label": "Thierry Lentz, Nouvelle histoire du Premier Empire"
+        },
+        {
+          "label": "Jean Tulard, Napoléon ou le mythe du sauveur"
+        },
+        {
+          "label": "Wikipédia — Sacre de Napoléon Ier",
+          "url": "https://fr.wikipedia.org/wiki/Sacre_de_Napoléon_Ier"
+        }
+      ],
+      "territoryNote": "Empire français (proclamé le 18 mai 1804) : anciens départements + Belgique + rive gauche du Rhin + Savoie + Nice + Piémont (6 départements) + île d'Elbe ; Gênes et Parme seront annexées en 1805. Satellites (vassal) : République italienne (devient royaume d'Italie en mars 1805 avec Napoléon roi), République ligurienne (jusqu'en juin 1805), République batave (Pays-Bas), Confédération suisse (Acte de médiation, 1803), royaume d'Étrurie (Toscane). Espagne : alliée (allied), neutre jusqu'en 1805, pas satellite.",
+      "figures": [
+        {
+          "name": "Napoléon Ier",
+          "role": "Empereur des Français",
+          "faction": "francais",
+          "archetype": "empereur-napoleon",
+          "quote": "La couronne était à terre ; je l'ai ramassée avec mon épée (attribué)",
+          "position": [
+            2.3499,
+            48.853
+          ]
+        },
+        {
+          "name": "Pie VII",
+          "role": "Pape, venu sacrer l'Empereur",
+          "faction": "romains",
+          "archetype": "pape",
+          "quote": "Je viens consacrer l'Empire, mais c'est à Dieu seul que l'on doit la gloire (formule libre)",
+          "position": [
+            2.3465,
+            48.8515
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trafalgar-1805",
+      "year": 1805,
+      "title": "Trafalgar : la fin de l'invasion de l'Angleterre",
+      "type": "bataille",
+      "location": [
+        -6.2,
+        36.17
+      ],
+      "zoom": 5,
+      "summary": "Nelson détruit la flotte franco-espagnole de Villeneuve au large de Cadix et assure à la Grande-Bretagne la maîtrise des mers pour un siècle.",
+      "details": "En 1805, Napoléon rassemble la Grande Armée au camp de Boulogne pour envahir l'Angleterre. Il lui faut la maîtrise de la Manche pendant quelques jours : l'amiral **Villeneuve** doit attirer les Britanniques aux Antilles, revenir et rejoindre Brest. Le plan échoue après le combat du cap Finisterre (juillet) ; Villeneuve se réfugie à **Cadix**, tandis que Napoléon, furieux, tourne son armée vers l'Autriche.\n\nVilleneuve, menacé d'être remplacé, appareille le **19 octobre** avec 33 vaisseaux français et espagnols (dont l'amiral **Gravina** et le gigantesque *Santísima Trinidad*). Le **21 octobre**, au large du **cap Trafalgar**, il rencontre la flotte de **Nelson** (27 vaisseaux). Nelson attaque en deux colonnes perpendiculaires à la ligne ennemie, brisant l'ordre de bataille. Il lance le signal célèbre « L'Angleterre attend que chacun fasse son devoir » ; frappé par un tireur du *Redoutable*, il meurt à bord du *Victory* après avoir appris la victoire.\n\nLes Franco-Espagnols perdent environ 22 vaisseaux (pris ou détruits, beaucoup coulant dans la tempête qui suit) ; la Royal Navy n'en perd aucun.\n\nLa bataille consacre la supériorité maritime britannique. L'invasion devient impossible, ce qui contraint Napoléon à chercher la victoire par le **Blocus continental** (1806).",
+      "consequences": [
+        "La menace d'invasion de l'Angleterre est définitivement écartée ; la Royal Navy domine les mers jusqu'au XXe siècle.",
+        "Napoléon se tourne vers l'économie : le Blocus continental (novembre 1806) vise à étouffer le commerce britannique et à étendre l'Empire pour fermer les côtes.",
+        "La marine espagnole est détruite, affaiblissant l'alliance franco-espagnole qui conduira à l'intervention de 1808.",
+        "Aucun changement de frontière immédiat : le territoire reste celui de l'été 1805, avec l'annexion de Gênes."
+      ],
+      "territory": "trafalgar-1805",
+      "sources": [
+        {
+          "label": "Journal de bord de Nelson et lettres de Collingwood"
+        },
+        {
+          "label": "Lentz, Nouvelle histoire du Premier Empire, t. II (1804-1810)"
+        },
+        {
+          "label": "Wikipédia — Bataille de Trafalgar",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Trafalgar"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire français et Espagne",
+          "Royaume-Uni"
+        ],
+        "commanders": [
+          "Pierre de Villeneuve, Federico Gravina",
+          "Horatio Nelson, Cuthbert Collingwood"
+        ],
+        "outcome": "Victoire britannique décisive ; la flotte franco-espagnole est détruite",
+        "forces": "33 vaisseaux franco-espagnols contre 27 britanniques",
+        "losses": "Environ 22 vaisseaux perdus et plus de 13 000 hommes pour les Franco-Espagnols ; aucun vaisseau britannique perdu, environ 1 600 morts et blessés"
+      },
+      "territoryNote": "Empire français (été 1805) : anciens départements + Belgique + rive gauche du Rhin + Savoie + Nice + Piémont + île d'Elbe + Gênes (annexée en juin 1805, départements de Gênes, Apennins, Montenotte) ; Parme administré. Satellites (vassal) : royaume d'Italie (Napoléon roi depuis mai 1805 ; Lombardie, Émilie, Romagne, Marches pas encore), République batave, Confédération suisse, royaume d'Étrurie, principauté de Lucques et Piombino (Élisa Bonaparte). Espagne : alliée (allied), sa flotte détruite ici. Naples et États pontificaux neutres.",
+      "armies": [
+        {
+          "side": "Flotte franco-espagnole (France)",
+          "faction": "francais",
+          "path": [
+            [
+              -6.29,
+              36.53
+            ],
+            [
+              -6.2,
+              36.4
+            ],
+            [
+              -6.15,
+              36.27
+            ],
+            [
+              -6.2,
+              36.17
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Flotte espagnole",
+          "faction": "espagnols",
+          "path": [
+            [
+              -6.3,
+              36.5
+            ],
+            [
+              -6.28,
+              36.35
+            ],
+            [
+              -6.2,
+              36.17
+            ]
+          ],
+          "strength": 2
+        },
+        {
+          "side": "Flotte de Nelson",
+          "faction": "britanniques",
+          "path": [
+            [
+              -7.2,
+              36.0
+            ],
+            [
+              -6.8,
+              36.1
+            ],
+            [
+              -6.4,
+              36.15
+            ],
+            [
+              -6.2,
+              36.17
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Horatio Nelson",
+          "role": "Vice-amiral, commandant la flotte",
+          "faction": "britanniques",
+          "archetype": "amiral",
+          "quote": "L'Angleterre attend que chacun fasse son devoir (signal du Victory, 21 octobre 1805)",
+          "position": [
+            -6.4,
+            36.15
+          ]
+        },
+        {
+          "name": "Pierre de Villeneuve",
+          "role": "Amiral de la flotte franco-espagnole",
+          "faction": "francais",
+          "archetype": "amiral",
+          "quote": "Je ne puis sortir de Cadix sans courir à ma perte (formule libre)",
+          "position": [
+            -6.25,
+            36.45
+          ]
+        }
+      ]
+    },
+    {
+      "id": "austerlitz-1805",
+      "year": 1805,
+      "title": "Austerlitz : la bataille des Trois Empereurs",
+      "type": "bataille",
+      "location": [
+        16.78,
+        49.13
+      ],
+      "zoom": 5,
+      "summary": "Le 2 décembre 1805, Napoléon écrase les armées russe et autrichienne sur le plateau de Pratzen, chef-d'œuvre tactique qui démantèle la troisième coalition.",
+      "details": "La Grande Armée quitte Boulogne en août 1805 et réalise une marche fulgurante vers le Danube. **Mack** capitule à **Ulm** (20 octobre) avec 27 000 hommes, et Vienne est occupée le 13 novembre. Mais l'armée russe de **Koutouzov**, renforcée par celle du tsar **Alexandre Ier** et de l'empereur **François II**, se concentre à Olmütz, en Moravie.\n\nNapoléon, loin de ses bases, feint la faiblesse : il abandonne le plateau de **Pratzen** et dégarnit sa droite. Les Alliés, conseillés par Weyrother, tombent dans le piège. Le **2 décembre 1805**, à l'aube, ils dégarnissent le plateau pour tourner la droite française, défendue par la seule division de **Legrand** ; **Davout** arrive en renfort après une marche forcée depuis Vienne. **Soult** monte alors à l'assaut de Pratzen, coupant l'armée alliée en deux, puis la rabat vers les étangs glacés de Satschan.\n\nLes pertes alliées sont d'environ 27 000 hommes, contre 9 000 pour les Français. Le lendemain, François II demande l'armistice. Le **traité de Presbourg** (26 décembre) oblige l'Autriche à céder la **Vénétie, l'Istrie et la Dalmatie** au royaume d'Italie, le **Tyrol** à la Bavière, et reconnaît les nouveaux royaumes de **Bavière** et de **Wurtemberg**. L'Empire romain germanique, déjà mourant, n'a plus que quelques mois à vivre. Le soir de la bataille, Napoléon adresse à ses soldats : « Soldats, je suis content de vous. »",
+      "consequences": [
+        "La troisième coalition s'effondre ; la Russie se retire en Pologne, l'Autriche signe la paix à Presbourg (26 décembre).",
+        "Le royaume d'Italie s'agrandit de la Vénétie, de l'Istrie et de la Dalmatie ; le Tyrol et le Vorarlberg passent à la Bavière.",
+        "La Bavière et le Wurtemberg deviennent des royaumes, liés à la France par des mariages : base de la Confédération du Rhin.",
+        "L'Autriche est exclue d'Italie et d'Allemagne du Sud, ce qui prépare la disparition du Saint-Empire (août 1806)."
+      ],
+      "territory": "austerlitz-1805",
+      "sources": [
+        {
+          "label": "Napoléon, Bulletins de la Grande Armée (2 décembre 1805)"
+        },
+        {
+          "label": "Thiers, Histoire du Consulat et de l'Empire"
+        },
+        {
+          "label": "Wikipédia — Bataille d'Austerlitz",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_d'Austerlitz"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire français",
+          "Empire de Russie et Empire d'Autriche"
+        ],
+        "commanders": [
+          "Napoléon Ier, Davout, Soult, Lannes",
+          "Alexandre Ier, Mikhaïl Koutouzov, François II"
+        ],
+        "outcome": "Victoire française décisive ; armistice puis traité de Presbourg",
+        "forces": "Environ 73 000 Français contre 85 000 Austro-Russes",
+        "losses": "Environ 9 000 Français ; 27 000 Austro-Russes (morts, blessés, prisonniers)"
+      },
+      "territoryNote": "Empire français (décembre 1805) : mêmes départements qu'à Trafalgar (anciens + Belgique + rive gauche du Rhin + Savoie + Nice + Piémont + Gênes + Parme + Elbe). Satellites (vassal) : royaume d'Italie (Napoléon roi, Eugène vice-roi ; agrandi de la Vénétie, de l'Istrie et de la Dalmatie par le traité de Presbourg, 26 déc.), République batave, Confédération suisse, royaume d'Étrurie, principauté de Lucques. Alliés (allied) : Bavière (royaume, reçoit Tyrol et Vorarlberg), Wurtemberg (royaume), Bade (agrandi). Espagne : alliée (allied). Vienne occupée jusqu'en janvier 1806.",
+      "armies": [
+        {
+          "side": "Grande Armée",
+          "faction": "francais",
+          "path": [
+            [
+              16.37,
+              48.21
+            ],
+            [
+              16.55,
+              48.8
+            ],
+            [
+              16.6,
+              49.19
+            ],
+            [
+              16.78,
+              49.13
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée de Russie",
+          "faction": "russes",
+          "path": [
+            [
+              17.25,
+              49.59
+            ],
+            [
+              17.0,
+              49.35
+            ],
+            [
+              16.85,
+              49.15
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Armée d'Autriche",
+          "faction": "autrichiens",
+          "path": [
+            [
+              17.1,
+              49.7
+            ],
+            [
+              16.95,
+              49.3
+            ],
+            [
+              16.88,
+              49.15
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Napoléon Ier",
+          "role": "Empereur des Français",
+          "faction": "francais",
+          "archetype": "empereur-napoleon",
+          "quote": "Soldats, je suis content de vous (proclamation du 3 décembre 1805)",
+          "position": [
+            16.78,
+            49.15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "confederation-rhin-1806",
+      "year": 1806,
+      "title": "La Confédération du Rhin",
+      "type": "traité",
+      "location": [
+        8.27,
+        50.0
+      ],
+      "zoom": 4.5,
+      "summary": "Seize princes allemands s'unissent sous le protectorat de Napoléon et quittent le Saint-Empire, que François II dissout le 6 août 1806.",
+      "details": "Après Austerlitz, Napoléon veut un glacis allemand fidèle. Par l'acte signé à Paris le **12 juillet 1806**, **seize princes** de l'Allemagne du Sud et de l'Ouest — rois de **Bavière** et de **Wurtemberg**, grand-duc de **Bade**, nouveau grand-duc de **Berg** (Murat), **Hesse-Darmstadt**, Nassau, l'archichancelier **Dalberg** — forment la **Confédération du Rhin**. Ils rompent avec le Saint-Empire, reçoivent des territoires médiatisés (petits princes et villes libres absorbés) et s'engagent à fournir à Napoléon un contingent de 63 000 hommes. Napoléon en est le « protecteur ».\n\nLe **6 août 1806**, François II, sommé d'abdiquer sous menace de guerre, dépose la couronne impériale : le **Saint-Empire romain germanique**, vieux de plus de huit siècles, disparaît, et François devient simplement empereur d'Autriche (François Ier, depuis 1804).\n\nLa Confédération s'étend dans les années suivantes : la Saxe (décembre 1806), la Westphalie, Würzburg, le grand-duché de Francfort et jusqu'à trente-six États en 1811. Elle modernise le droit (Code civil, abolition du servage dans plusieurs États) mais impose la conscription et le Blocus continental.\n\nPour la Prusse, voisine inquiète, cette réorganisation de l'Allemagne est l'un des déclencheurs de la guerre d'octobre 1806, d'autant que Napoléon a laissé miroiter à Londres, à Berlin, des restitutions contradictoires. En parallèle, Joseph Bonaparte devient **roi de Naples** (mars) et Louis **roi de Hollande** (juin), systèmes de satellites dynastiques.",
+      "consequences": [
+        "Disparition du Saint-Empire romain germanique (6 août 1806) : fin d'une institution millénaire.",
+        "La Confédération du Rhin place l'Allemagne du Sud et de l'Ouest sous protectorat français (seize États, trente-six en 1811).",
+        "Joseph Bonaparte devient roi de Naples et Louis roi de Hollande : le système des royaumes vassaux se met en place.",
+        "La Prusse, isolée en Allemagne du Nord, entre en guerre en octobre 1806."
+      ],
+      "territory": "confederation-rhin-1806",
+      "sources": [
+        {
+          "label": "Acte de Confédération du Rhin, 12 juillet 1806 (texte)"
+        },
+        {
+          "label": "Thierry Lentz, Nouvelle histoire du Premier Empire"
+        },
+        {
+          "label": "Wikipédia — Confédération du Rhin",
+          "url": "https://fr.wikipedia.org/wiki/Confédération_du_Rhin"
+        }
+      ],
+      "territoryNote": "Empire français : mêmes limites qu'à Austerlitz (Wesel et Düsseldorf passent à Berg/France en 1805-1808). Satellites (vassal) : royaume d'Italie (Vénétie, Istrie, Dalmatie incluses), royaume de Naples (Joseph, mars 1806 ; Sicile reste aux Bourbons, sous protection britannique), royaume de Hollande (Louis, juin 1806, ex-République batave), Confédération suisse, principauté de Lucques, royaume d'Étrurie. Confédération du Rhin (vassal, 16 États en juillet 1806) : royaumes de Bavière et de Wurtemberg, grand-duchés de Bade, de Berg (Murat) et de Hesse-Darmstadt, duché de Nassau, archichancelier Dalberg (Ratisbonne, puis Francfort), etc. Autriche et Prusse indépendantes.",
+      "figures": [
+        {
+          "name": "Napoléon Ier",
+          "role": "Protecteur de la Confédération du Rhin",
+          "faction": "francais",
+          "archetype": "empereur-napoleon",
+          "quote": "Je suis le protecteur de l'Allemagne du Sud ; qu'elle me soit fidèle (formule libre)",
+          "position": [
+            8.27,
+            50.0
+          ]
+        },
+        {
+          "name": "François II",
+          "role": "Dernier empereur romain germanique",
+          "faction": "autrichiens",
+          "archetype": "roi-moderne",
+          "quote": "Je me tiens pour délié de mes devoirs envers l'Empire (formule libre, d'après la déclaration du 6 août)",
+          "position": [
+            16.37,
+            48.21
+          ]
+        },
+        {
+          "name": "Talleyrand",
+          "role": "Ministre des Relations extérieures",
+          "faction": "francais",
+          "archetype": "diplomate",
+          "quote": "Il faut organiser l'Allemagne avant qu'elle ne s'organise contre nous (formule libre)",
+          "position": [
+            2.34,
+            48.86
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iena-1806",
+      "year": 1806,
+      "title": "Iéna et Auerstaedt : l'écrasement de la Prusse",
+      "type": "bataille",
+      "location": [
+        11.589,
+        50.928
+      ],
+      "zoom": 5,
+      "summary": "Le 14 octobre 1806, Napoléon bat les Prussiens à Iéna pendant que Davout détruit leur gros à Auerstaedt ; Berlin tombe douze jours plus tard.",
+      "details": "Frédéric-Guillaume III de Prusse, poussé par la reine **Louise** et le parti belliciste, déclare la guerre à la France en octobre 1806 après avoir mal supporté la création de la Confédération du Rhin. L'armée prussienne, héritière de Frédéric II mais figée dans la tactique linéaire, se concentre en Thuringe sous le **duc de Brunswick** et le prince de **Hohenlohe**.\n\nNapoléon la prend de vitesse : il franchit la forêt de Thuringe avec la Grande Armée et la bat à **Saalfeld** (10 octobre), où meurt le prince Louis-Ferdinand. Le **14 octobre 1806**, deux batailles ont lieu simultanément : à **Iéna**, Napoléon, croyant affronter le gros de l'armée prussienne, écrase **Hohenlohe** ; à **Auerstaedt**, quelques kilomètres plus au nord, le maréchal **Davout** et ses 27 000 hommes tiennent tête à 60 000 Prussiens du duc de Brunswick (mortellement blessé) et les mettent en déroute.\n\nLa poursuite est impitoyable : en trois semaines, presque toute l'armée prussienne est capturée ou dispersée. **Napoléon entre dans Berlin le 27 octobre**, visite le tombeau de Frédéric II à Potsdam et décrète à Berlin le **Blocus continental** (21 novembre). Les forteresses de Magdebourg, Stettin et Küstrin se rendent sans combat. Le roi de Prusse se réfugie à Königsberg, en espérant l'appui des Russes.",
+      "consequences": [
+        "Écroulement militaire de la Prusse : la plus grande partie du royaume est occupée en quelques semaines.",
+        "Berlin est occupée (27 octobre) ; le Blocus continental est décrété depuis la capitale prussienne.",
+        "La Saxe change de camp et rejoint la Confédération du Rhin comme royaume (décembre 1806).",
+        "La guerre se poursuit contre les Russes en Pologne et en Prusse-Orientale (Eylau, Friedland)."
+      ],
+      "territory": "iena-1806",
+      "sources": [
+        {
+          "label": "Napoléon, Bulletins de la Grande Armée (octobre 1806)"
+        },
+        {
+          "label": "Maréchal Davout, Opérations du 3e corps (1806)"
+        },
+        {
+          "label": "Wikipédia — Bataille d'Iéna",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_d'Iéna"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire français",
+          "Royaume de Prusse"
+        ],
+        "commanders": [
+          "Napoléon Ier, Louis-Nicolas Davout",
+          "Charles-Guillaume de Brunswick, Frédéric-Louis de Hohenlohe"
+        ],
+        "outcome": "Victoire française double (Iéna et Auerstaedt) ; l'armée prussienne est détruite",
+        "forces": "Environ 96 000 Français (Iéna) et 27 000 (Auerstaedt) contre 53 000 et 63 000 Prussiens",
+        "losses": "Environ 5 000 Français à Iéna et 7 000 à Auerstaedt ; plus de 25 000 pertes prussiennes et 20 000 prisonniers"
+      },
+      "territoryNote": "Empire français (octobre 1806) : mêmes limites qu'à Austerlitz. Satellites (vassal) : royaume d'Italie, royaume de Naples (Joseph), royaume de Hollande (Louis), Confédération suisse, Confédération du Rhin (16 États ; la Saxe la rejoint en décembre 1806). Prusse en cours d'occupation : Berlin et les forteresses de l'Elbe et de l'Oder aux mains des Français, mais le royaume n'est pas encore annexé ni partagé.",
+      "armies": [
+        {
+          "side": "Grande Armée",
+          "faction": "francais",
+          "path": [
+            [
+              10.9,
+              49.9
+            ],
+            [
+              11.37,
+              50.65
+            ],
+            [
+              11.5,
+              50.85
+            ],
+            [
+              11.59,
+              50.93
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée de Hohenlohe",
+          "faction": "prussiens",
+          "path": [
+            [
+              11.03,
+              50.98
+            ],
+            [
+              11.33,
+              50.98
+            ],
+            [
+              11.55,
+              50.93
+            ]
+          ],
+          "strength": 2
+        },
+        {
+          "side": "Armée de Brunswick",
+          "faction": "prussiens",
+          "path": [
+            [
+              11.63,
+              52.12
+            ],
+            [
+              11.6,
+              51.4
+            ],
+            [
+              11.64,
+              51.1
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Frédéric-Guillaume III",
+          "role": "Roi de Prusse",
+          "faction": "prussiens",
+          "archetype": "roi-moderne",
+          "quote": "Nous voulons la guerre pour l'honneur de la Prusse (formule libre)",
+          "position": [
+            11.33,
+            50.98
+          ]
+        },
+        {
+          "name": "Louis-Nicolas Davout",
+          "role": "Maréchal, vainqueur d'Auerstaedt",
+          "faction": "francais",
+          "archetype": "general",
+          "quote": "Nous tiendrons ici, quoi qu'il en coûte (formule libre)",
+          "position": [
+            11.6,
+            51.1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tilsit-1807",
+      "year": 1807,
+      "title": "Tilsit : l'entrevue du Niémen",
+      "type": "traité",
+      "location": [
+        21.8885,
+        55.0867
+      ],
+      "zoom": 5,
+      "summary": "Sur un radeau au milieu du Niémen, Napoléon et Alexandre Ier se partagent l'Europe ; la Prusse est amputée de moitié.",
+      "details": "Après Iéna, la guerre continue contre la Russie. Les combats d'**Eylau** (février 1807), indécis et sanglants, puis la victoire de **Friedland** (14 juin) obligent le tsar **Alexandre Ier** à demander l'armistice. Les deux empereurs se rencontrent le **25 juin 1807** sur un radeau amarré au milieu du **Niémen**, près de Tilsit. Napoléon séduit le tsar ; le roi de Prusse, **Frédéric-Guillaume III**, n'est admis qu'en spectateur, et la reine Louise plaide en vain pour son royaume.\n\nLes traités sont signés les **7 et 9 juillet**. La **Russie** reconnaît les remaniements napoléoniens, adhère au **Blocus continental** et reçoit la région de Białystok ; elle se voit promettre une liberté d'action contre la Suède et l'Empire ottoman. La **Prusse** perd la moitié de son territoire et de sa population : ses provinces à l'ouest de l'Elbe forment le **royaume de Westphalie**, confié à **Jérôme Bonaparte** ; ses provinces polonaises forment le **duché de Varsovie**, donné au roi de Saxe ; **Dantzig** devient ville libre ; une lourde indemnité et l'occupation ferment le tout.\n\nTilsit marque l'apogée de la domination française sur le continent, mais l'alliance avec la Russie est fragile : le Blocus ruine ses exportations.",
+      "consequences": [
+        "Naissance du royaume de Westphalie (Jérôme Bonaparte), constitué des territoires prussiens à l'ouest de l'Elbe et de la Hesse-Cassel.",
+        "Création du duché de Varsovie, État polonais vassal confié au roi de Saxe, avec le territoire de la Prusse en Pologne.",
+        "La Prusse perd la moitié de sa population, doit payer 120 millions de francs et réduit son armée à 42 000 hommes.",
+        "La Russie adhère au Blocus continental, mais cette alliance de revers prépare la rupture de 1812."
+      ],
+      "territory": "tilsit-1807",
+      "sources": [
+        {
+          "label": "Napoléon, Correspondance (juin-juillet 1807)"
+        },
+        {
+          "label": "Thiers, Histoire du Consulat et de l'Empire"
+        },
+        {
+          "label": "Wikipédia — Traités de Tilsit",
+          "url": "https://fr.wikipedia.org/wiki/Traités_de_Tilsit"
+        }
+      ],
+      "territoryNote": "Empire français (juillet 1807) : mêmes limites ; Wesel et Flessingue annexées peu après. Satellites (vassal) : royaume d'Italie, royaume de Naples (Joseph), royaume de Hollande (Louis), royaume de Westphalie (Jérôme ; Hesse-Cassel, Brunswick, Halberstadt, Magdebourg, etc., créé à Tilsit), duché de Varsovie (créé à Tilsit, Frédéric-Auguste de Saxe), Confédération du Rhin (36 États progressivement, dont royaume de Saxe), Confédération suisse, Dantzig ville libre sous protection française. Prusse réduite à environ la moitié (Prusse-Orientale, Poméranie, Brandebourg, Silésie) et occupée ; Russie alliée (allied) depuis Tilsit ; Pologne prussienne et Białystok à la Russie.",
+      "figures": [
+        {
+          "name": "Napoléon Ier",
+          "role": "Empereur des Français",
+          "faction": "francais",
+          "archetype": "empereur-napoleon",
+          "quote": "Je ne puis pas accepter que l'Angleterre soit la maîtresse des mers (formule libre)",
+          "position": [
+            21.88,
+            55.08
+          ]
+        },
+        {
+          "name": "Alexandre Ier",
+          "role": "Tsar de Russie",
+          "faction": "russes",
+          "archetype": "tsar",
+          "quote": "Je hais les Anglais autant que vous (selon Napoléon, Tilsit)",
+          "position": [
+            21.9,
+            55.09
+          ]
+        },
+        {
+          "name": "Louise de Prusse",
+          "role": "Reine, intercède pour son royaume",
+          "faction": "prussiens",
+          "archetype": "roi-moderne",
+          "quote": "Sire, ne détruisez pas la Prusse (formule libre)",
+          "position": [
+            21.85,
+            55.1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "espagne-1808",
+      "year": 1808,
+      "title": "L'Espagne : Bayonne, Dos de Mayo et Bailén",
+      "type": "bataille",
+      "location": [
+        -3.78,
+        38.1
+      ],
+      "zoom": 4.5,
+      "summary": "Napoléon impose son frère Joseph sur le trône d'Espagne ; le soulèvement populaire et la capitulation de Dupont à Bailén ouvrent le « guêpier espagnol ».",
+      "details": "Pour fermer les ports de la péninsule au commerce britannique, Napoléon fait envahir le **Portugal** par **Junot** (novembre 1807). Profitant de la querelle entre **Charles IV**, son fils **Ferdinand** et le favori **Godoy**, il laisse entrer ses troupes en Espagne. Convoqués à **Bayonne**, les Bourbons abdiquent en mai 1808 ; le **6 juin**, **Joseph Bonaparte** est proclamé roi d'Espagne et laisse Naples à **Murat**.\n\nMais l'Espagne se soulève : le **2 mai** (*Dos de Mayo*), Madrid se révolte et la répression sanglante de Murat devient légende (Goya). Des **juntes** locales organisent la résistance ; en juillet, le général **Dupont** se laisse encercler en Andalousie et capitule à **Bailén** (**19-22 juillet 1808**), la première capitulation d'une armée napoléonienne sur le terrain. Joseph quitte Madrid. L'effet est énorme en Europe : l'invincibilité est brisée. Les Britanniques débarquent au Portugal (Wellesley) et battent Junot à Vimeiro (août).\n\nNapoléon intervient en personne à la fin de l'année, reprend Madrid, mais la **guérilla** et l'intervention britannique transforment la guerre en gouffre permanent.\n\nDans les mois précédents, l'Empire achève aussi son emprise sur l'Italie : l'Étrurie est annexée (1808), de même que Parme et Plaisance, et les Marches pontificales rejoignent le royaume d'Italie.",
+      "consequences": [
+        "Joseph Bonaparte est roi d'Espagne (dès 1808) ; Murat devient roi de Naples : trois frères sur trois trônes vassaux.",
+        "Le royaume d'Étrurie est dissous et la Toscane annexée à l'Empire en trois départements ; Parme formellement annexé.",
+        "Les Marches pontificales sont rattachées au royaume d'Italie ; Rome est occupée par Miollis (février 1808).",
+        "La guerre d'Espagne mobilise jusqu'à 300 000 Français pendant six ans et affaiblit durablement l'Empire."
+      ],
+      "territory": "espagne-1808",
+      "sources": [
+        {
+          "label": "Jean Tulard (dir.), Dictionnaire Napoléon (articles Espagne, Bailén)"
+        },
+        {
+          "label": "Lentz, Nouvelle histoire du Premier Empire, t. II"
+        },
+        {
+          "label": "Wikipédia — Guerre d'indépendance espagnole",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_d'indépendance_espagnole"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire français",
+          "Espagne (juntes insurgées)"
+        ],
+        "commanders": [
+          "Pierre Dupont de l'Étang",
+          "Francisco Javier Castaños, Teodoro Reding"
+        ],
+        "outcome": "Victoire espagnole ; capitulation de Dupont avec environ 18 000 hommes",
+        "forces": "Environ 20 000 Français contre 30 000 Espagnols",
+        "losses": "Environ 2 000 pertes françaises avant la reddition ; 17 000 prisonniers, dont beaucoup moururent dans les pontons de Cadix"
+      },
+      "territoryNote": "Empire français (été 1808) : mêmes limites qu'en 1807 + Toscane (3 départements : Arno, Méditerranée, Ombrone ; annexée mai 1808 après la dissolution de l'Étrurie) + Parme/Plaisance (annexés 1808) + Wesel et Flessingue. Satellites (vassal) : royaume d'Italie (agrandi des Marches : Ancône, Urbino, Macerata, Fermo ; mars-avril 1808), royaume de Naples (Joseph passe à Madrid ; Joachim Murat roi dès septembre 1808), royaume d'Espagne (Joseph, dès le 6 juin 1808 ; seulement Madrid et le Nord tenus par l'armée française, le Sud est aux juntes), royaume de Hollande (Louis), royaume de Westphalie (Jérôme), Confédération du Rhin, duché de Varsovie, Confédération suisse. États pontificaux : Rome occupée (février 1808), annexion en 1809. Portugal : occupé par Junot jusqu'à Vimeiro (août).",
+      "armies": [
+        {
+          "side": "Armée de Dupont",
+          "faction": "francais",
+          "path": [
+            [
+              -3.7,
+              40.4
+            ],
+            [
+              -3.9,
+              39.85
+            ],
+            [
+              -4.6,
+              38.7
+            ],
+            [
+              -3.78,
+              38.1
+            ]
+          ],
+          "strength": 2
+        },
+        {
+          "side": "Armée d'Andalousie",
+          "faction": "espagnols",
+          "path": [
+            [
+              -6.0,
+              37.39
+            ],
+            [
+              -4.8,
+              37.7
+            ],
+            [
+              -4.0,
+              38.0
+            ],
+            [
+              -3.78,
+              38.1
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Joseph Bonaparte",
+          "role": "Roi d'Espagne et des Indes",
+          "faction": "francais",
+          "archetype": "roi-moderne",
+          "quote": "Les Espagnols ne veulent pas de moi : je ne puis régner que sur des baïonnettes (formule libre)",
+          "position": [
+            -3.7,
+            40.42
+          ]
+        },
+        {
+          "name": "Francisco Javier Castaños",
+          "role": "Général vainqueur de Bailén",
+          "faction": "espagnols",
+          "archetype": "general",
+          "quote": "Nous ne déposerons les armes qu'avec notre roi Ferdinand (formule libre)",
+          "position": [
+            -3.8,
+            38.1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wagram-1809",
+      "year": 1809,
+      "title": "Wagram et le traité de Schönbrunn",
+      "type": "bataille",
+      "location": [
+        16.57,
+        48.3
+      ],
+      "zoom": 5,
+      "summary": "Deux mois après Essling, Napoléon bat l'archiduc Charles à Wagram ; Vienne signe la paix de Schönbrunn et cède des provinces, dont les Provinces illyriennes.",
+      "details": "L'Autriche profite de la guerre d'Espagne pour attaquer en avril 1809 : c'est la **cinquième coalition**. Napoléon réagit en cinq jours (campagne d'Eckmühl) et reprend Vienne le 13 mai. Mais ses ponts sur le Danube sont détruits à **Essling** (21-22 mai), où meurt **Lannes**, et l'archiduc **Charles** conserve l'initiative.\n\nNapoléon prépare minutieusement la revanche. Dans la nuit du 4 au 5 juillet, il fait passer 150 000 hommes sur la rive gauche du Danube depuis l'île de **Lobau**. Le **6 juillet 1809**, à **Wagram**, l'une des plus grandes batailles de l'époque, il pilonne les Autrichiens avec une grande batterie de 100 canons, soutenue par l'attaque de **Macdonald** et le flanquement de **Davout**. Charles se retire en bon ordre, mais l'Autriche est épuisée.\n\nL'armistice de Znaïm (12 juillet) conduit au **traité de Schönbrunn** (**14 octobre 1809**). L'Autriche perd environ 3,5 millions de sujets : **Salzbourg** et la Haute-Autriche à l'ouest du Traun à la Bavière, la **Galicie occidentale** au duché de Varsovie, un cercle de Tarnopol à la Russie, et surtout la **Carniole, la Carinthie occidentale, Trieste, la Croatie civile et la Dalmatie**, qui forment les **Provinces illyriennes** annexées à l'Empire, de Laybach (Ljubljana) à Raguse.\n\nParallèlement, le 17 mai 1809, Napoléon avait annexé les **États pontificaux** à l'Empire ; Pie VII fut arrêté le 6 juillet, jour de Wagram.",
+      "consequences": [
+        "Les Provinces illyriennes (Carniole, Trieste, Croatie civile, Dalmatie, Raguse) sont annexées à l'Empire : accès direct à l'Adriatique orientale.",
+        "Les États pontificaux sont annexés (sénatus-consulte du 17 mai 1809) : Rome devient la « seconde ville de l'Empire » ; Pie VII est arrêté le 6 juillet.",
+        "Le duché de Varsovie s'agrandit de la Galicie occidentale (Cracovie) ; la Bavière reçoit Salzbourg.",
+        "L'Autriche, réduite à 20 millions d'habitants, se rapproche de Napoléon (mariage avec Marie-Louise en 1810)."
+      ],
+      "territory": "wagram-1809",
+      "sources": [
+        {
+          "label": "Napoléon, Bulletins de la Grande Armée (juillet 1809)"
+        },
+        {
+          "label": "Thierry Lentz, Nouvelle histoire du Premier Empire"
+        },
+        {
+          "label": "Wikipédia — Bataille de Wagram",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Wagram"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire français et alliés",
+          "Empire d'Autriche"
+        ],
+        "commanders": [
+          "Napoléon Ier, Davout, Masséna, Macdonald",
+          "Archiduc Charles de Habsbourg-Teschen"
+        ],
+        "outcome": "Victoire française ; armistice de Znaïm puis traité de Schönbrunn",
+        "forces": "Environ 170 000 Français et alliés contre 150 000 Autrichiens",
+        "losses": "Environ 30 000 pertes françaises et alliées ; 40 000 autrichiennes, selon les estimations"
+      },
+      "territoryNote": "Empire français (octobre 1809, après Schönbrunn) : mêmes limites qu'en 1808 + États pontificaux (annexés le 17 mai 1809 : départements du Tibre et du Trasimène ; Rome) + Provinces illyriennes (Carniole/Laybach, Carinthie occidentale, Istrie autrichienne, Trieste, Croatie civile, Dalmatie, Raguse ; décret du 15 avril 1810) Satellites (vassal) : royaume d'Italie (Eugène), royaume de Naples (Murat), royaume d'Espagne (Joseph), royaume de Hollande (Louis), royaume de Westphalie (Jérôme), Confédération du Rhin (dont grand-duché de Würzburg), duché de Varsovie (agrandi de la Galicie occidentale), Confédération suisse. Autriche réduite ; Salzbourg à la Bavière.",
+      "armies": [
+        {
+          "side": "Grande Armée",
+          "faction": "francais",
+          "path": [
+            [
+              16.37,
+              48.21
+            ],
+            [
+              16.52,
+              48.18
+            ],
+            [
+              16.55,
+              48.25
+            ],
+            [
+              16.57,
+              48.3
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée d'Autriche",
+          "faction": "autrichiens",
+          "path": [
+            [
+              15.9,
+              49.0
+            ],
+            [
+              16.4,
+              48.7
+            ],
+            [
+              16.5,
+              48.42
+            ],
+            [
+              16.57,
+              48.31
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Archiduc Charles",
+          "role": "Généralissime autrichien",
+          "faction": "autrichiens",
+          "archetype": "general",
+          "quote": "Je ne peux plus tenir sans soutien : l'armée est à bout de forces (formule libre)",
+          "position": [
+            16.3,
+            48.55
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apogee-1811",
+      "year": 1811,
+      "title": "L'Empire à son apogée",
+      "type": "politique",
+      "location": [
+        8.5,
+        47.5
+      ],
+      "zoom": 3.5,
+      "summary": "Avec 130 départements, de Hambourg à Rome, la naissance du roi de Rome et un système de royaumes vassaux, l'Empire atteint sa plus grande extension en 1811.",
+      "details": "En 1810-1811, Napoléon domine presque tout le continent. Il a épousé **Marie-Louise** d'Autriche (avril 1810), ce qui rapproche Vienne de Paris, et son fils, le **roi de Rome**, naît le 20 mars 1811. Rome, Amsterdam et Hambourg sont des « bonnes villes » de l'Empire.\n\nL'extension territoriale s'accélère par annexions. Le royaume de **Hollande** disparaît en juillet 1810 : Louis, qui refusait d'appliquer le Blocus continental, abdique et le pays est rattaché à l'Empire. Le **Valais** est annexé en novembre 1810 (route du Simplon). Un sénatus-consulte du **13 décembre 1810** annexe les côtes de la mer du Nord : **Oldenbourg, Brême, Hambourg, Lübeck**, le Hanovre du nord et une partie de la Westphalie, formant des départements comme les Bouches-de-l'Elbe et les Bouches-du-Weser. L'Empire compte alors **130 départements**, soit près de 44 millions d'habitants.\n\nAutour, un cercle de royaumes vassaux et de confédérés : **Italie** (Eugène), **Naples** (Murat), **Espagne** (Joseph), **Westphalie** (Jérôme), **Confédération du Rhin**, **duché de Varsovie**, **Suisse**. Aux marges, les alliés (Danemark, Autriche, Prusse, Russie) restent plus fragiles.\n\nPourtant la domination est instable : le Blocus continental épuise l'économie, la guerre d'Espagne continue, la Russie s'en détache. C'est de cet apogée que part, en 1812, la campagne qui renversera l'Empire.",
+      "consequences": [
+        "L'Empire compte 130 départements, de Hambourg à Rome, soit environ 44 millions d'habitants.",
+        "La Hollande (juillet 1810), le Valais (novembre 1810) et la côte allemande de la mer du Nord (décembre 1810) sont annexés pour renforcer le Blocus.",
+        "Un cercle de royaumes vassaux (Italie, Naples, Espagne, Westphalie, Varsovie) place l'Europe continentale sous tutelle française.",
+        "Le mariage autrichien et la naissance du roi de Rome donnent à la dynastie une apparence de stabilité."
+      ],
+      "territory": "apogee-1811",
+      "sources": [
+        {
+          "label": "Thierry Lentz, Nouvelle histoire du Premier Empire"
+        },
+        {
+          "label": "Jean Tulard, Napoléon ou le mythe du sauveur"
+        },
+        {
+          "label": "Wikipédia — Premier Empire",
+          "url": "https://fr.wikipedia.org/wiki/Premier_Empire"
+        }
+      ],
+      "territoryNote": "Empire français (130 départements, 1811) : anciens départements + Belgique + rive gauche du Rhin + Savoie + Nice + Piémont + Gênes + Parme + Toscane + États pontificaux (Rome) + Provinces illyriennes + Hollande (annexée juillet 1810) + Valais (1810) + Hanse et nord de l'Allemagne jusqu'à Lübeck (Hambourg, Brême, Lübeck, Oldenbourg ; annexion du 13 décembre 1810) ; Ticino occupé. Satellites (vassal) : royaume d'Italie (Eugène ; Lombardie, Vénétie, Émilie, Marches, Trentin), royaume de Naples (Murat), royaume d'Espagne (Joseph ; guérilla et Wellington au Portugal), royaume de Westphalie (Jérôme, amputé du nord en 1810), Confédération du Rhin (≈ 36 États dont Bavière, Wurtemberg, Saxe, grand-duchés de Francfort, Berg, Bade, Würzburg), duché de Varsovie, Confédération suisse. Alliés (allied) : Danemark-Norvège, Autriche, Prusse (traités de 1812 à venir). Russie encore alliée de Tilsit, mais en tension. Portugal : hors de l'Empire (Wellington).",
+      "figures": [
+        {
+          "name": "Napoléon Ier",
+          "role": "Empereur des Français, roi d'Italie",
+          "faction": "francais",
+          "archetype": "empereur-napoleon",
+          "quote": "Je suis l'Europe : tout ce qui est en France est à moi (formule libre)",
+          "position": [
+            2.35,
+            48.85
+          ]
+        },
+        {
+          "name": "Klemens von Metternich",
+          "role": "Ambassadeur puis ministre autrichien",
+          "faction": "autrichiens",
+          "archetype": "diplomate",
+          "quote": "Le mariage de l'archiduchesse achète le temps dont l'Autriche a besoin (formule libre)",
+          "position": [
+            16.37,
+            48.21
+          ]
+        }
+      ]
+    },
+    {
+      "id": "moscou-1812",
+      "year": 1812,
+      "title": "Borodino et l'entrée dans Moscou",
+      "type": "bataille",
+      "location": [
+        35.82,
+        55.52
+      ],
+      "zoom": 4.5,
+      "summary": "Napoléon franchit le Niémen avec 600 000 hommes, bat Koutouzov à Borodino et occupe Moscou en flammes sans obtenir la paix : la retraite sera désastreuse.",
+      "details": "Le **24 juin 1812**, la Grande Armée, forte d'environ **600 000 hommes** de vingt nations (Français, Allemands, Polonais, Italiens, Autrichiens et Prussiens en contingents auxiliaires), franchit le **Niémen** pour contraindre Alexandre Ier à respecter le Blocus continental. Les Russes, commandés par **Barclay de Tolly** puis **Koutouzov**, refusent la bataille décisive et se replient, pratiquant la terre brûlée. La chaleur, la dysenterie, les chevaux morts et les marches forcées épuisent l'armée avant même le premier grand combat.\n\nÀ **Smolensk** (août), Napoléon ne peut pas l'écraser. Le **7 septembre 1812**, à **Borodino** (bataille de la Moskova), à 110 km de Moscou, les deux armées s'affrontent : plus de **70 000 morts et blessés** en une journée. Les Français enlèvent la grande redoute mais Napoléon refuse de lancer la Garde ; Koutouzov se retire en ordre.\n\n**Moscou est occupée le 14 septembre**, vidée de ses habitants et en grande partie détruite par un incendie (rôle disputé de Rostoptchine). Le tsar ne négocie pas. Le **19 octobre**, l'armée évacue la ville ; la retraite, par Maloyaroslavets, Smolensk et la **Bérézina** (26-29 novembre), sous un froid précoce, la détruit : à peine 100 000 hommes repassent le Niémen. L'Empire est atteint au cœur de son prestige.\n\nÀ l'ouest, Napoléon avait annexé la Catalogne (janvier 1812) et fait occuper la Poméranie suédoise.",
+      "consequences": [
+        "La Grande Armée est détruite : environ 400 000 morts, disparus ou prisonniers de toutes nationalités.",
+        "La Prusse (convention de Tauroggen, décembre) et bientôt l'Autriche se détachent de l'alliance française.",
+        "Le duché de Varsovie, vassal de l'Empire, est envahi par les Russes en janvier-février 1813.",
+        "Territorialement, l'Empire n'a pas bougé en 1812 (la Catalogne a même été annexée en janvier), mais son armement humain est brisé."
+      ],
+      "territory": "moscou-1812",
+      "sources": [
+        {
+          "label": "Philippe-Paul de Ségur, Histoire de Napoléon et de la Grande Armée pendant l'année 1812"
+        },
+        {
+          "label": "Armand de Caulaincourt, Mémoires (Avec Napoléon en Russie)"
+        },
+        {
+          "label": "Wikipédia — Campagne de Russie (1812)",
+          "url": "https://fr.wikipedia.org/wiki/Campagne_de_Russie_(1812)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire français et contingents alliés",
+          "Empire de Russie"
+        ],
+        "commanders": [
+          "Napoléon Ier, Murat, Ney, Davout",
+          "Mikhaïl Koutouzov, Bagration, Barclay de Tolly"
+        ],
+        "outcome": "Victoire tactique française (champ de bataille tenu) mais sans destruction de l'armée russe ; Moscou occupée une semaine plus tard",
+        "forces": "Environ 130 000 Français et alliés contre 120 000 Russes",
+        "losses": "Environ 30 000 à 35 000 Français et alliés ; 40 000 à 45 000 Russes, selon les estimations"
+      },
+      "territoryNote": "Empire français (septembre 1812) : même extension qu'en 1811 (130 départements) + Catalogne annexée (janvier 1812 : Ter, Sègre, Bouches-de-l'Èbre, Montserrat) + Poméranie suédoise occupée. Satellites (vassal) : royaume d'Italie (Eugène), royaume de Naples (Murat), royaume d'Espagne (Joseph ; Wellington à Salamanque en juillet), royaume de Westphalie, Confédération du Rhin, duché de Varsovie (base de départ, Poniatowski), Confédération suisse. Alliés auxiliaires (allied) : Prusse et Autriche, par traités de février et mars 1812 ; Danemark. La Russie est l'adversaire.",
+      "armies": [
+        {
+          "side": "Grande Armée",
+          "faction": "francais",
+          "path": [
+            [
+              23.9,
+              54.9
+            ],
+            [
+              25.28,
+              54.69
+            ],
+            [
+              32.05,
+              54.78
+            ],
+            [
+              35.82,
+              55.52
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée de Koutouzov",
+          "faction": "russes",
+          "path": [
+            [
+              26.0,
+              55.0
+            ],
+            [
+              30.0,
+              54.5
+            ],
+            [
+              34.0,
+              55.0
+            ],
+            [
+              35.8,
+              55.5
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Contingent polonais",
+          "faction": "polonais",
+          "path": [
+            [
+              21.0,
+              52.23
+            ],
+            [
+              23.5,
+              53.5
+            ],
+            [
+              28.0,
+              54.5
+            ],
+            [
+              35.7,
+              55.45
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Mikhaïl Koutouzov",
+          "role": "Feld-maréchal, généralissime russe",
+          "faction": "russes",
+          "archetype": "general",
+          "quote": "Le temps et la patience sont mes deux plus grands guerriers (attribué, selon Tolstoï)",
+          "position": [
+            34.5,
+            55.3
+          ]
+        },
+        {
+          "name": "Alexandre Ier",
+          "role": "Tsar de Russie",
+          "faction": "russes",
+          "archetype": "tsar",
+          "quote": "Je ne ferai pas la paix tant qu'un soldat ennemi restera sur mon sol (attribué)",
+          "position": [
+            30.3,
+            59.94
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leipzig-1813",
+      "year": 1813,
+      "title": "Leipzig : la bataille des Nations",
+      "type": "bataille",
+      "location": [
+        12.37,
+        51.34
+      ],
+      "zoom": 5,
+      "summary": "Du 16 au 19 octobre 1813, la plus grande bataille de l'époque oppose Napoléon à la coalition ; sa défaite détruit la Confédération du Rhin.",
+      "details": "Après le désastre de Russie, Napoléon lève une nouvelle armée de 300 000 hommes en 1813 et bat les Russes et les Prussiens à **Lützen** et **Bautzen** (mai). Il accepte l'armistice de Pläswitz, mais l'Autriche, médiatrice, bascule dans la **sixième coalition** en août. La campagne de Saxe tourne à l'avantage des Alliés (Gross-Beeren, Katzbach, Kulm) malgré la victoire française de **Dresde**.\n\nNapoléon se replie sur **Leipzig**, avec 190 000 hommes, bientôt encerclés par 320 000 Austro-Russo-Prussiens et Suédois de **Schwarzenberg**, **Blücher** et **Bernadotte**. Du **16 au 19 octobre 1813**, la « **bataille des Nations** » fait environ **90 000 morts et blessés**. Le 18, les contingents saxons et wurtembergeois passent à l'ennemi en plein combat. Le 19, Napoléon ordonne la retraite ; le pont de l'Elster est détruit trop tôt, **Poniatowski** se noie en le traversant.\n\nLa Confédération du Rhin se désintègre : la **Bavière** a déjà changé de camp (traité de Ried, 8 octobre). Le **royaume de Westphalie** s'effondre, **Jérôme** s'enfuit. Napoléon bat les Bavarois à Hanau (30-31 octobre) et repasse le Rhin début novembre, laissant des garnisons assiégées de Dantzig à Hambourg. La Hollande se soulève (novembre).\n\nL'année s'achève sur la perte de l'Espagne (Vitoria, juin) et de l'Allemagne.",
+      "consequences": [
+        "La Confédération du Rhin s'effondre ; la Westphalie, le duché de Varsovie et le grand-duché de Berg disparaissent comme États vassaux.",
+        "Napoléon repasse le Rhin : l'Empire est ramené à l'ouest du fleuve, sauf quelques garnisons (Hambourg, Dantzig, Dresde...).",
+        "La Hollande se soulève et rappelle le prince d'Orange (novembre 1813) ; les Provinces illyriennes sont perdues aux mains de l'Autriche.",
+        "La coalition décide d'envahir la France ; les « propositions de Francfort » (novembre) offrent encore les limites naturelles, refusées."
+      ],
+      "territory": "leipzig-1813",
+      "sources": [
+        {
+          "label": "Napoléon, Correspondance (octobre 1813)"
+        },
+        {
+          "label": "Thierry Lentz, Nouvelle histoire du Premier Empire"
+        },
+        {
+          "label": "Wikipédia — Bataille de Leipzig",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Leipzig"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire français et alliés (Pologne, Saxe, Wurtemberg...)",
+          "Sixième coalition (Autriche, Russie, Prusse, Suède)"
+        ],
+        "commanders": [
+          "Napoléon Ier, Poniatowski, Ney, Macdonald",
+          "Schwarzenberg, Blücher, Bernadotte, Alexandre Ier"
+        ],
+        "outcome": "Victoire décisive de la coalition ; retraite de Napoléon sur le Rhin",
+        "forces": "Environ 190 000 Français et alliés contre 320 000 coalisés",
+        "losses": "Environ 70 000 à 75 000 Français et alliés ; environ 55 000 à 60 000 pour la coalition, selon les estimations"
+      },
+      "territoryNote": "Empire français (octobre 1813) : encore 130 départements nominalement, mais Provinces illyriennes en train d'être perdues (Autriche, septembre-octobre), Catalogne et sud de la France menacés par Wellington (Vitoria en juin) ; Hollande et Hambourg sur le point d'être perdues (soulèvement et siège). Satellites (vassal) : royaume d'Italie (Eugène sur l'Adige), royaume de Naples (Murat, bientôt rallié à l'Autriche), royaume d'Espagne (Joseph chassé de Madrid), Confédération du Rhin (Bavière passée à l'ennemi le 8 octobre ; Westphalie, Berg, Francfort, Saxe, Wurtemberg s'effondrent), duché de Varsovie (évacué, Poniatowski). Coalition : Autriche, Russie, Prusse, Suède, Grande-Bretagne.",
+      "armies": [
+        {
+          "side": "Grande Armée",
+          "faction": "francais",
+          "path": [
+            [
+              13.74,
+              51.05
+            ],
+            [
+              13.0,
+              51.2
+            ],
+            [
+              12.6,
+              51.3
+            ],
+            [
+              12.37,
+              51.34
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Contingent polonais",
+          "faction": "polonais",
+          "path": [
+            [
+              13.74,
+              51.05
+            ],
+            [
+              13.0,
+              51.2
+            ],
+            [
+              12.5,
+              51.3
+            ],
+            [
+              12.38,
+              51.33
+            ]
+          ],
+          "strength": 1
+        },
+        {
+          "side": "Armée de Bohême",
+          "faction": "autrichiens",
+          "path": [
+            [
+              14.42,
+              50.08
+            ],
+            [
+              13.4,
+              50.6
+            ],
+            [
+              12.8,
+              51.0
+            ],
+            [
+              12.37,
+              51.3
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée de Silésie",
+          "faction": "prussiens",
+          "path": [
+            [
+              16.9,
+              51.1
+            ],
+            [
+              14.5,
+              51.3
+            ],
+            [
+              12.4,
+              51.5
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Armée de Russie",
+          "faction": "russes",
+          "path": [
+            [
+              14.4,
+              50.9
+            ],
+            [
+              13.3,
+              51.1
+            ],
+            [
+              12.4,
+              51.3
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Józef Poniatowski",
+          "role": "Maréchal de France, chef polonais",
+          "faction": "polonais",
+          "archetype": "general",
+          "quote": "Dieu m'a confié l'honneur des Polonais ; à Dieu seul je le rendrai (attribué)",
+          "position": [
+            12.37,
+            51.33
+          ]
+        },
+        {
+          "name": "Gebhard Blücher",
+          "role": "Feld-maréchal prussien",
+          "faction": "prussiens",
+          "archetype": "general",
+          "quote": "Vorwärts ! (« En avant ! », devise attribuée)",
+          "position": [
+            12.4,
+            51.45
+          ]
+        }
+      ]
+    },
+    {
+      "id": "abdication-1814",
+      "year": 1814,
+      "title": "Campagne de France et abdication de Fontainebleau",
+      "type": "chute",
+      "location": [
+        2.7,
+        48.4
+      ],
+      "zoom": 4.5,
+      "summary": "Malgré une campagne brillante, Napoléon ne peut empêcher l'entrée des Alliés dans Paris (31 mars) et abdique le 6 avril 1814 ; la France est ramenée à ses frontières de 1792.",
+      "details": "Début 1814, la coalition envahit la France sur trois fronts. Napoléon, avec 70 000 conscrits, mène la **campagne de France** : victoires à Brienne, Champaubert, Montmirail, Vauchamps, Montereau en février. Mais il ne peut arrêter la jonction des armées de Blücher et de Schwarzenberg. Le traité de **Chaumont** (mars) soude les Alliés ; ils refusent toute paix sans abdication.\n\nLe **31 mars 1814**, malgré la défense héroïque de Marmont et Mortier sur les hauteurs de Paris, les Alliés entrent dans la capitale. Sous l'influence de **Talleyrand**, le Sénat prononce la déchéance (2 avril). Napoléon, à **Fontainebleau**, tente une marche sur Paris mais ses maréchaux refusent ; il abdique le **6 avril**, d'abord en faveur de son fils, puis sans condition. Le **traité de Fontainebleau** (11 avril) lui laisse le titre d'empereur et la souveraineté de l'**île d'Elbe**.\n\nLe **30 mai 1814**, le premier **traité de Paris** ramène la France à ses frontières du 1er janvier 1792, avec quelques ajouts (Avignon, Montbéliard, une partie de la Savoie) et sans indemnité de guerre. Tous les États vassaux disparaissent : Murat s'est déjà rallié à l'Autriche, Eugène évacue l'Italie, **Louis XVIII** monte sur le trône ; le **pape** retrouve Rome (mai), Ferdinand VII regagne Madrid (mars) et les Provinces-Unies deviennent un royaume sous Guillaume d'Orange.",
+      "consequences": [
+        "La France est ramenée aux frontières de 1792, plus Avignon, Montbéliard, Chambéry et Annecy : perte de la Belgique, de la rive gauche du Rhin, de la Savoie du nord et de l'Italie.",
+        "Tous les États satellites disparaissent : Italie, Naples (bientôt rendu aux Bourbons), Westphalie, Hollande, Espagne, Varsovie, Confédération du Rhin.",
+        "Napoléon est exilé à l'île d'Elbe, souveraineté de 220 km² (traité de Fontainebleau).",
+        "Louis XVIII est rétabli et octroie la Charte constitutionnelle (juin 1814)."
+      ],
+      "territory": "abdication-1814",
+      "sources": [
+        {
+          "label": "Napoléon, Correspondance (campagne de 1814)"
+        },
+        {
+          "label": "Henry Houssaye, 1814"
+        },
+        {
+          "label": "Wikipédia — Campagne de France (1814)",
+          "url": "https://fr.wikipedia.org/wiki/Campagne_de_France_(1814)"
+        }
+      ],
+      "territoryNote": "Après le traité de Paris (30 mai 1814) : France aux frontières de 1792 (dont Avignon et Comtat Venaissin, Montbéliard, Mulhouse, une partie de la Savoie avec Chambéry et Annecy, Sarrelouis et Landau en partie) ; plus de Belgique, rive gauche du Rhin, Italie, Illyrie, Hollande, Allemagne du Nord. Plus aucun État vassal : le royaume d'Italie s'effondre (avril 1814, Lombardie-Vénétie à l'Autriche), le royaume de Naples reste à Murat (allié à l'Autriche, éphémère), l'Espagne revient à Ferdinand VII, la Hollande au prince d'Orange, la Confédération du Rhin se rallie. Île d'Elbe : principauté de Napoléon (souverain, 1814-1815).",
+      "figures": [
+        {
+          "name": "Napoléon Ier",
+          "role": "Empereur déchu",
+          "faction": "francais",
+          "archetype": "empereur-napoleon",
+          "quote": "Adieu, mes enfants… Je voudrais vous presser tous sur mon cœur (adieux de Fontainebleau, 20 avril 1814)",
+          "position": [
+            2.7,
+            48.4
+          ]
+        },
+        {
+          "name": "Alexandre Ier",
+          "role": "Tsar de Russie, entré dans Paris",
+          "faction": "russes",
+          "archetype": "tsar",
+          "quote": "Je ne fais pas la guerre à la France, mais à Napoléon seul (formule libre)",
+          "position": [
+            2.35,
+            48.86
+          ]
+        },
+        {
+          "name": "Talleyrand",
+          "role": "Chef du gouvernement provisoire",
+          "faction": "francais",
+          "archetype": "diplomate",
+          "quote": "C'est le commencement de la fin (attribué)",
+          "position": [
+            2.32,
+            48.86
+          ]
+        },
+        {
+          "name": "Louis XVIII",
+          "role": "Roi restauré",
+          "faction": "francais",
+          "archetype": "roi-moderne",
+          "quote": "Je rends à la France la paix et la Charte, non la gloire (formule libre)",
+          "position": [
+            2.34,
+            48.86
+          ]
+        }
+      ]
+    },
+    {
+      "id": "waterloo-1815",
+      "year": 1815,
+      "title": "Les Cent-Jours et Waterloo",
+      "type": "bataille",
+      "location": [
+        4.41,
+        50.68
+      ],
+      "zoom": 5,
+      "summary": "Revenu de l'île d'Elbe, Napoléon reprend le pouvoir pendant cent jours et est définitivement vaincu à Waterloo le 18 juin 1815.",
+      "details": "Le **1er mars 1815**, Napoléon débarque au golfe Juan avec un millier d'hommes. Les troupes envoyées pour l'arrêter (à Laffrey) se rallient et il entre aux Tuileries le **20 mars**, sans un coup de feu : ce sont les **Cent-Jours**. Les puissances réunies au congrès de Vienne le déclarent « hors la loi » et mettent 700 000 hommes en mouvement.\n\nNapoléon choisit de frapper le premier en **Belgique**, pour séparer l'armée anglo-néerlandaise de **Wellington** de l'armée prussienne de **Blücher**. Le **16 juin**, il bat Blücher à **Ligny** tandis que Ney est tenu en échec aux **Quatre-Bras**. Le **18 juin 1815**, à **Waterloo**, il attaque Wellington retranché sur le plateau de Mont-Saint-Jean. Les charges de cavalerie de Ney échouent contre les carrés britanniques ; **Grouchy**, envoyé à la poursuite des Prussiens, n'arrive pas, et Blücher survient par Plancenoit vers 16 heures. La Garde, repoussée, recule et l'armée se débande.\n\nNapoléon rentre à Paris, abdique une seconde fois le **22 juin** et se livre aux Britanniques (Rochefort, 15 juillet). Louis XVIII est rétabli. Il est exilé à **Sainte-Hélène**, où il meurt le 5 mai 1821 et dicte le *Mémorial*.\n\nLe second **traité de Paris** (20 novembre 1815) réduit la France aux frontières de 1790 : perte de Sarrelouis, Landau, de la Savoie, avec 700 millions d'indemnité et occupation alliée.",
+      "consequences": [
+        "Le second traité de Paris (20 novembre 1815) réduit la France aux frontières de 1790, perdant Sarrelouis, Landau, Philippeville, Marienbourg et la Savoie.",
+        "Elle paie 700 millions de francs d'indemnité et subit une occupation de 150 000 soldats pendant trois à cinq ans.",
+        "Napoléon est exilé à Sainte-Hélène, en plein Atlantique sud, jusqu'à sa mort en 1821.",
+        "Le royaume de Naples est rendu aux Bourbons après la défaite de Murat à Tolentino (mai 1815)."
+      ],
+      "territory": "waterloo-1815",
+      "sources": [
+        {
+          "label": "Napoléon, Mémorial de Sainte-Hélène (Las Cases)"
+        },
+        {
+          "label": "Wellington, Dépêche du 19 juin 1815"
+        },
+        {
+          "label": "Wikipédia — Bataille de Waterloo (1815)",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Waterloo_(1815)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire français (Cent-Jours)",
+          "Septième coalition (Royaume-Uni, Pays-Bas, Prusse...)"
+        ],
+        "commanders": [
+          "Napoléon Ier, Michel Ney, Emmanuel de Grouchy",
+          "Duc de Wellington, Gebhard Blücher"
+        ],
+        "outcome": "Victoire décisive des coalisés ; seconde abdication de Napoléon",
+        "forces": "Environ 72 000 Français contre 68 000 Anglo-alliés, rejoints par plus de 50 000 Prussiens",
+        "losses": "Environ 25 000 Français ; 15 000 Anglo-alliés et 7 000 Prussiens, selon les estimations"
+      },
+      "territoryNote": "France aux frontières de 1814 (traité de Paris du 30 mai 1814), rétablies de fait pendant les Cent-Jours : ni Belgique, ni rive gauche du Rhin, ni Italie. Aucun État vassal : la Belgique forme avec la Hollande le royaume uni des Pays-Bas (Guillaume Ier), le royaume de Naples (Murat) est défait à Tolentino (mai), l'île d'Elbe est quittée. Les territoires du congrès de Vienne sont déjà arbitrés (acte final du 9 juin 1815).",
+      "armies": [
+        {
+          "side": "Armée du Nord",
+          "faction": "francais",
+          "path": [
+            [
+              2.35,
+              48.85
+            ],
+            [
+              3.93,
+              50.12
+            ],
+            [
+              4.44,
+              50.41
+            ],
+            [
+              4.41,
+              50.68
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Armée anglo-alliée",
+          "faction": "britanniques",
+          "path": [
+            [
+              4.35,
+              50.85
+            ],
+            [
+              4.36,
+              50.75
+            ],
+            [
+              4.41,
+              50.68
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée prussienne",
+          "faction": "prussiens",
+          "path": [
+            [
+              4.53,
+              50.5
+            ],
+            [
+              4.61,
+              50.72
+            ],
+            [
+              4.45,
+              50.66
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Duc de Wellington",
+          "role": "Commandant l'armée anglo-alliée",
+          "faction": "britanniques",
+          "archetype": "general",
+          "quote": "Je voudrais que la nuit ou les Prussiens arrivent (attribué)",
+          "position": [
+            4.4,
+            50.7
+          ]
+        },
+        {
+          "name": "Napoléon Ier",
+          "role": "Empereur des Français",
+          "faction": "francais",
+          "archetype": "empereur-napoleon",
+          "quote": "Tout n'est pas perdu : ralliez la Garde (formule libre)",
+          "position": [
+            4.4,
+            50.65
+          ]
+        }
+      ]
+    },
+    {
+      "id": "congres-vienne-1815",
+      "year": 1815,
+      "title": "Le congrès de Vienne : l'Europe redessinée",
+      "type": "traité",
+      "location": [
+        16.37,
+        48.21
+      ],
+      "zoom": 4,
+      "summary": "Les vainqueurs réorganisent l'Europe de septembre 1814 à juin 1815, effaçant l'Empire napoléonien et restaurant l'équilibre des puissances.",
+      "details": "Le congrès de Vienne réunit de **septembre 1814 à juin 1815** les représentants des puissances victorieuses : **Metternich** (Autriche) en est la figure centrale, face à **Castlereagh** (Grande-Bretagne), au tsar **Alexandre Ier**, à **Hardenberg** (Prusse). **Talleyrand**, représentant la France de Louis XVIII, divise habilement les vainqueurs en plaidant la **légitimité**. Le retour de Napoléon (mars 1815) accélère la signature de l'**acte final** le **9 juin 1815**, neuf jours avant Waterloo.\n\nLes principes sont la **légitimité** des dynasties, l'**équilibre** des forces et la **sécurité collective**. L'Europe est redessinée : l'Autriche récupère les provinces illyriennes et reçoit la **Lombardie-Vénétie** ; la **Prusse** obtient la Rhénanie, la Westphalie et une partie de la Saxe ; la **Confédération germanique** (39 États) remplace la Confédération du Rhin ; la Russie reçoit la **Pologne** dite « du Congrès » ; la Belgique est unie à la Hollande dans le **royaume des Pays-Bas** ; le **royaume de Sardaigne** reçoit Gênes ; les États pontificaux, Naples et l'Espagne reviennent à leurs souverains ; la **Suisse** est agrandie et sa neutralité garantie.\n\nLa **Sainte-Alliance** (septembre 1815, à l'initiative du tsar) et la **Quadruple-Alliance** garantissent l'ordre nouveau. L'héritage napoléonien persiste pourtant : Code civil, administration préfectorale et idée nationale, que le congrès tentera en vain d'effacer.",
+      "consequences": [
+        "L'Empire napoléonien disparaît : la France est ramenée à ses frontières de 1790 et paie une indemnité.",
+        "La Confédération germanique (39 États) remplace le Saint-Empire et la Confédération du Rhin ; la Prusse s'installe sur le Rhin.",
+        "La Belgique est unie à la Hollande dans un royaume des Pays-Bas ; l'Autriche domine la Lombardie-Vénétie et l'Illyrie ; Gênes est donnée au royaume de Sardaigne.",
+        "La Pologne du Congrès est placée sous le sceptre du tsar ; la Suisse (22 cantons) voit sa neutralité garantie."
+      ],
+      "territory": "congres-vienne-1815",
+      "sources": [
+        {
+          "label": "Acte final du congrès de Vienne, 9 juin 1815"
+        },
+        {
+          "label": "Talleyrand, Mémoires"
+        },
+        {
+          "label": "Wikipédia — Congrès de Vienne",
+          "url": "https://fr.wikipedia.org/wiki/Congrès_de_Vienne"
+        }
+      ],
+      "territoryNote": "France aux frontières de 1790 (second traité de Paris, 20 novembre 1815 : perte de la Savoie, de Sarrelouis, de Landau). Aucun État vassal subsiste ; ex-vassaux et annexions redistribués : Belgique + Pays-Bas = royaume uni des Pays-Bas ; rive gauche du Rhin et Westphalie à la Prusse ; Lombardie-Vénétie, Illyrie et Tyrol à l'Autriche ; Gênes et le Piémont au royaume de Sardaigne ; Toscane au grand-duc, Parme à Marie-Louise ; États pontificaux et Naples restaurés ; Espagne et Portugal à leurs dynasties ; duché de Varsovie remplacé par la Pologne du Congrès (tsar) ; Confédération germanique (39 États) ; Suisse à 22 cantons.",
+      "figures": [
+        {
+          "name": "Klemens von Metternich",
+          "role": "Chancelier autrichien, architecte du congrès",
+          "faction": "autrichiens",
+          "archetype": "diplomate",
+          "quote": "L'Europe a besoin d'équilibre, non de gloire (formule libre)",
+          "position": [
+            16.37,
+            48.21
+          ]
+        },
+        {
+          "name": "Talleyrand",
+          "role": "Représentant de la France de Louis XVIII",
+          "faction": "francais",
+          "archetype": "diplomate",
+          "quote": "Le principe de légitimité est la seule règle qui vaille (formule libre)",
+          "position": [
+            16.35,
+            48.2
+          ]
+        },
+        {
+          "name": "Alexandre Ier",
+          "role": "Tsar, promoteur de la Sainte-Alliance",
+          "faction": "russes",
+          "archetype": "tsar",
+          "quote": "L'Europe sera une famille chrétienne, unie sous Dieu (formule libre)",
+          "position": [
+            16.4,
+            48.22
+          ]
+        }
+      ]
+    }
+  ]
+}
