@@ -83,13 +83,13 @@ export const Legend = memo(function Legend({ empire, step }: Props) {
             <span className="legend__swatch legend__swatch--diff" style={{ '--c': DIFF_COLORS.gained } as CSSProperties} aria-hidden="true">
               +
             </span>
-            Zone gagnée (vert)
+            Front qui avance : territoire gagné (vert)
           </li>
           <li>
             <span className="legend__swatch legend__swatch--diff" style={{ '--c': DIFF_COLORS.lost } as CSSProperties} aria-hidden="true">
               −
             </span>
-            Zone perdue (rouge)
+            Front qui recule : territoire perdu (rouge)
           </li>
           <li>
             <span className="legend__marker" aria-hidden="true">

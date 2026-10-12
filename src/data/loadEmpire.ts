@@ -1,5 +1,5 @@
 import type { FeatureCollection, MultiPolygon, Polygon } from 'geojson';
-import type { DiffKind, Empire, TerritoryProperties, TimelineStep } from '../types';
+import type { DiffKind, MorphProperties, Empire, TerritoryProperties, TimelineStep } from '../types';
 
 export type TerritoryCollection = FeatureCollection<Polygon | MultiPolygon, TerritoryProperties>;
 
@@ -71,7 +71,10 @@ export function preloadAround(empire: Empire, index: number): void {
     const step: TimelineStep | undefined = empire.steps[i];
     if (!step) continue;
     void loadTerritory(empire.id, step.territory);
-    if (i === index + 1) void loadDiff(empire.id, step.id);
+    if (i === index + 1) {
+      void loadDiff(empire.id, step.id);
+      void loadMorph(empire.id, step.id);
+    }
   }
 }
 
@@ -104,6 +107,40 @@ export function loadDiff(empireId: string, stepId: string): Promise<DiffCollecti
       }
     })();
     diffCache.set(url, p);
+  }
+  return p;
+}
+
+/* ---------- Morph (frontière qui glisse, étape n-1 → n) ---------- */
+
+export type MorphCollection = FeatureCollection<Polygon | MultiPolygon, MorphProperties>;
+
+const morphCache = new Map<string, Promise<MorphCollection | null>>();
+
+export function morphUrl(empireId: string, stepId: string): string {
+  return `${import.meta.env.BASE_URL}data/empires/${encodeURIComponent(empireId)}/morph/${encodeURIComponent(stepId)}.geojson`;
+}
+
+/** Morph depuis l'étape précédente ; null si le fichier est absent ou invalide (repli sur le fondu). */
+export function loadMorph(empireId: string, stepId: string): Promise<MorphCollection | null> {
+  const url = morphUrl(empireId, stepId);
+  let p = morphCache.get(url);
+  if (!p) {
+    p = (async () => {
+      try {
+        const res = await fetch(url);
+        if (!res.ok) return null;
+        const data = (await res.json()) as MorphCollection;
+        if (data?.type !== 'FeatureCollection' || !Array.isArray(data.features)) return null;
+        const features = data.features.filter(
+          (f) => f?.geometry && (f.properties?.kind === 'stable' || f.properties?.kind === 'gained' || f.properties?.kind === 'lost'),
+        );
+        return features.length > 0 ? ({ type: 'FeatureCollection', features } satisfies MorphCollection) : null;
+      } catch {
+        return null;
+      }
+    })();
+    morphCache.set(url, p);
   }
   return p;
 }

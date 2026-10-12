@@ -3,7 +3,7 @@ import type { TerritoryCollection } from '../data/loadEmpire';
 import { prefersReducedMotion } from '../lib/motion';
 import { variantFill, variantLine } from './color';
 
-const FILL_OPACITY = 0.48;
+export const FILL_OPACITY = 0.48;
 const LINE_OPACITY = 0.9;
 export const CROSSFADE_MS = 800;
 
@@ -60,12 +60,55 @@ export class TerritoryLayers {
     this.map.setPaintProperty(`territory-${slot}-line`, 'line-opacity', LINE_OPACITY * k);
   }
 
-  show(fc: TerritoryCollection, color: string) {
+  private instant<T>(fn: () => T): T {
+    if (!this.fading) return fn();
+    // Transition à 0 le temps de poser les valeurs, puis restauration (n'affecte que les changements suivants).
+    for (const slot of SLOTS) this.setTransition(slot, 0);
+    const r = fn();
+    for (const slot of SLOTS) this.setTransition(slot, CROSSFADE_MS);
+    return r;
+  }
+
+  private setTransition(slot: Slot, duration: number) {
+    const t = { duration: prefersReducedMotion() ? 0 : duration, delay: 0 };
+    this.map.setPaintProperty(`territory-${slot}-fill`, 'fill-opacity-transition', t);
+    this.map.setPaintProperty(`territory-${slot}-line`, 'line-opacity-transition', t);
+  }
+
+  private fading = true;
+  private prepared: Slot | null = null;
+
+  /** Écrit le territoire dans l'emplacement masqué, sans l'afficher. */
+  prepare(fc: TerritoryCollection, color: string) {
     const next: Slot = this.active === 'a' ? 'b' : 'a';
     (this.map.getSource(`territory-${next}`) as GeoJSONSource | undefined)?.setData(decorate(fc, color));
-    this.setOpacity(next, 1);
-    if (this.active) this.setOpacity(this.active, 0);
+    this.prepared = next;
+  }
+
+  /** Masque aussitôt le territoire affiché (la couche morph prend le relais). */
+  suspend() {
+    if (!this.active) return;
+    const a = this.active;
+    this.instant(() => this.setOpacity(a, 0));
+  }
+
+  /** Affiche l'emplacement préparé (fondu, ou instantané pour la bascule depuis le morph). */
+  commit(instant = false) {
+    const next = this.prepared;
+    if (!next) return;
+    const apply = () => {
+      this.setOpacity(next, 1);
+      if (this.active) this.setOpacity(this.active, 0);
+    };
+    if (instant) this.instant(apply);
+    else apply();
     this.active = next;
+    this.prepared = null;
+  }
+
+  show(fc: TerritoryCollection, color: string) {
+    this.prepare(fc, color);
+    this.commit();
   }
 
   destroy() {}

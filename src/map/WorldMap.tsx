@@ -2,13 +2,14 @@ import { Map as MapLibreMap, type PaddingOptions } from 'maplibre-gl';
 import './maplibreWorker';
 import { useEffect, useRef, useState } from 'react';
 import { loadCities } from '../data/loadCities';
-import { loadDiff, loadTerritory, preloadAround, type DiffCollection, type TerritoryCollection } from '../data/loadEmpire';
+import { loadDiff, loadMorph, loadTerritory, preloadAround, type DiffCollection, type MorphCollection, type TerritoryCollection } from '../data/loadEmpire';
 import { prefersReducedMotion } from '../lib/motion';
 import type { City, Empire } from '../types';
 import { addLand, baseStyle, DEM_SOURCE, MAX_BOUNDS, TERRAIN_EXAGGERATION } from './basemapStyle';
 import { CityLayer } from './cityLayer';
 import { DiffHighlight } from './diff';
 import { EventMarker } from './eventMarker';
+import { MORPH_MS, MorphLayer } from './morphLayer';
 import { TerritoryLayers } from './territoryLayers';
 
 interface Props {
@@ -20,10 +21,13 @@ interface Props {
   tilted: boolean;
   /** Relief 3D (effectif seulement en vue inclinée). */
   relief: boolean;
+  /** Vitesse de lecture (la durée du morph s'y adapte). */
+  speed?: number;
 }
 
 interface MapLayers {
   territories: TerritoryLayers;
+  morph: MorphLayer;
   diff: DiffHighlight;
   marker: EventMarker;
 }
@@ -38,7 +42,7 @@ function viewPadding(panelOpen: boolean): PaddingOptions {
   return { top: 80, left: 20, right: panelOpen ? 420 : 20, bottom: 150 };
 }
 
-export function WorldMap({ empire, index, panelOpen, tilted, relief }: Props) {
+export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const [layers, setLayers] = useState<MapLayers | null>(null);
@@ -50,6 +54,9 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief }: Props) {
   panelOpenRef.current = panelOpen;
   const tiltedRef = useRef(tilted);
   tiltedRef.current = tilted;
+  const speedRef = useRef(speed);
+  speedRef.current = speed;
+  const morphingRef = useRef(false);
 
   // Création de la carte (une seule fois).
   useEffect(() => {
@@ -75,6 +82,7 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief }: Props) {
     map.on('load', () => {
       created = {
         territories: new TerritoryLayers(map),
+        morph: new MorphLayer(map),
         diff: new DiffHighlight(map),
         marker: new EventMarker(map),
       };
@@ -83,6 +91,7 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief }: Props) {
     });
     return () => {
       created?.territories.destroy();
+      created?.morph.destroy();
       created?.diff.destroy();
       created?.marker.destroy();
       map.remove();
@@ -159,14 +168,34 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief }: Props) {
     }
 
     const key = `${empire.id}/${step.territory}`;
-    // La diff n'a de sens que si l'on arrive de l'étape précédente (lecture, « suivant »).
-    const consecutive = lastIndexRef.current === index - 1;
+    // Diff / morph : seulement en arrivant de l'étape précédente (avance) ou suivante (retour).
+    const prevIndex = lastIndexRef.current;
     lastIndexRef.current = index;
-    const diffPromise: Promise<DiffCollection | null> = consecutive ? loadDiff(empire.id, step.id) : Promise.resolve(null);
-    Promise.all([loadTerritory(empire.id, step.territory), diffPromise]).then(([fc, diff]: [TerritoryCollection, DiffCollection | null]) => {
+    const forward = prevIndex === index - 1;
+    const backward = prevIndex === index + 1 && index + 1 < empire.steps.length;
+    const reduced = prefersReducedMotion();
+    const morphStep = forward ? step : backward ? empire.steps[index + 1] : undefined;
+    const morphPromise: Promise<MorphCollection | null> =
+      morphStep && !reduced ? loadMorph(empire.id, morphStep.id) : Promise.resolve(null);
+    const diffPromise: Promise<DiffCollection | null> = forward ? loadDiff(empire.id, step.id) : Promise.resolve(null);
+    Promise.all([loadTerritory(empire.id, step.territory), diffPromise, morphPromise]).then(([fc, diff, morph]) => {
       if (stale) return;
       if (shownRef.current === key) return; // même territoire : rien à animer
       shownRef.current = key;
+      layers.morph.hide();
+      if (morph) {
+        // Frontière qui glisse ; bascule instantanée sur le territoire final à la fin.
+        layers.diff.stop();
+        layers.territories.prepare(fc, empire.color);
+        layers.territories.suspend();
+        morphingRef.current = true;
+        layers.morph.play(morph, empire.color, forward ? 0 : 1, MORPH_MS / Math.max(1, speedRef.current), () => {
+          morphingRef.current = false;
+          layers.territories.commit(true);
+          layers.morph.hide();
+        });
+        return;
+      }
       layers.territories.show(fc, empire.color);
       if (diff) layers.diff.flash(diff);
       else layers.diff.stop();
@@ -175,6 +204,13 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief }: Props) {
 
     return () => {
       stale = true;
+      if (morphingRef.current) {
+        // Animation interrompue : on l'annule ; l'étape suivante (re)posera son territoire.
+        morphingRef.current = false;
+        layers.morph.hide();
+        shownRef.current = null;
+        layers.territories.commit(true);
+      }
     };
   }, [layers, empire, index, step]);
 
