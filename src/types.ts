@@ -35,6 +35,10 @@ export interface TimelineStep {
   territory: string;
   sources: Source[];
   battle?: BattleInfo;
+  /** Armées animées qui convergent vers le champ de bataille. */
+  armies?: ArmyMove[];
+  /** Personnages d'époque (politique, traité, réforme… ; 2 pour un traité). */
+  figures?: Figure[];
 }
 
 export interface Empire {
@@ -102,4 +106,49 @@ export type DiffKind = 'gained' | 'lost';
 export interface MorphProperties {
   kind: 'stable' | 'gained' | 'lost';
   t: number;
+}
+
+/** Peuples représentés par une figurine dédiée (src/figures/registry.ts). */
+export type Faction =
+  | 'romains' | 'latins' | 'samnites' | 'carthaginois' | 'gaulois' | 'grecs-macedoniens'
+  | 'germains' | 'parthes-perses' | 'egyptiens' | 'daces' | 'goths-vandales' | 'arabes'
+  | 'turcs-seldjoukides' | 'croises-latins' | 'ottomans' | 'byzantins';
+
+export const FACTIONS: Faction[] = [
+  'romains', 'latins', 'samnites', 'carthaginois', 'gaulois', 'grecs-macedoniens',
+  'germains', 'parthes-perses', 'egyptiens', 'daces', 'goths-vandales', 'arabes',
+  'turcs-seldjoukides', 'croises-latins', 'ottomans', 'byzantins',
+];
+
+export type Archetype =
+  | 'senateur' | 'consul' | 'empereur' | 'empereur-byzantin' | 'roi' | 'pape'
+  | 'chef-barbare' | 'calife' | 'sultan' | 'doge';
+
+export const ARCHETYPES: Archetype[] = [
+  'senateur', 'consul', 'empereur', 'empereur-byzantin', 'roi', 'pape',
+  'chef-barbare', 'calife', 'sultan', 'doge',
+];
+
+export interface ArmyMove {
+  /** Libellé affiché : « Rome », « Carthage ». */
+  side: string;
+  faction: Faction;
+  /** [lon, lat] de la base jusqu'au champ de bataille (2 à 6 points, le dernier = le champ de bataille). */
+  path: [number, number][];
+  /** Nombre de figurines : 1 → 3, 2 → 5, 3 → 7. */
+  strength?: 1 | 2 | 3;
+  winner?: boolean;
+}
+
+export interface Figure {
+  /** « Auguste ». */
+  name: string;
+  /** « Premier empereur ». */
+  role: string;
+  faction: Faction;
+  archetype: Archetype;
+  /** ≤ 120 caractères ; citation attribuée (« selon Suétone ») ou phrase-clé neutre. */
+  quote?: string;
+  /** Position sur la carte ; défaut = location de l'étape. */
+  position?: [number, number];
 }
