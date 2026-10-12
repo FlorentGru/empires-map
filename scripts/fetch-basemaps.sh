@@ -11,6 +11,7 @@ mkdir -p "$HB_DIR" "$NE_DIR"
 
 HB_BASE="https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson"
 NE_URL="https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_land.geojson"
+NE_COUNTRIES_URL="https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson"
 
 # Instantanés réellement disponibles dans aourednik/historical-basemaps/geojson
 # couvrant -509 → 1453 (vérifié via l'API GitHub).
@@ -42,5 +43,8 @@ done
 
 echo "Natural Earth 1:50m land (domaine public) → $NE_DIR"
 fetch "$NE_URL" "$NE_DIR/ne_50m_land.geojson"
+
+echo "Natural Earth 1:50m admin-0 countries (domaine public) → $NE_DIR"
+fetch "$NE_COUNTRIES_URL" "$NE_DIR/ne_50m_admin_0_countries.geojson"
 
 echo "OK"

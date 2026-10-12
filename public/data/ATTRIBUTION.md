@@ -16,6 +16,13 @@
 - Licence : **domaine public**
 - Utilisation : `basemap/land.geojson` (simplifié, découpé à la bbox [-20, 15, 65, 62]) et découpe des territoires sur le trait de côte.
 
+## Frontières actuelles — Natural Earth
+- Natural Earth, 1:50m Cultural Vectors, « Admin 0 – Countries » — https://www.naturalearthdata.com/
+- Licence : **domaine public**
+- Utilisation : `basemap/countries-2026.geojson` (frontières terrestres communes et étiquettes de pays,
+  simplifiées, découpées à la bbox [-20, 15, 65, 62]). Frontières actuelles : Natural Earth (domaine public),
+  de facto et approximatives.
+
 ## Corrections manuelles
 Les étapes sans instantané adapté sont corrigées par les overrides de `overrides/rome/`
 (polygones approximatifs reconstitués d'après la littérature historique ; chaque Feature

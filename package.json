@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.scripts.json --noEmit",
     "fetch:data": "bash scripts/fetch-basemaps.sh",
-    "build:data": "tsx scripts/build-territories.ts"
+    "build:data": "tsx scripts/build-territories.ts && tsx scripts/build-countries.ts",
+    "build:countries": "tsx scripts/build-countries.ts"
   },
   "dependencies": {
     "maplibre-gl": "^6.14.0",
