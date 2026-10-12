@@ -1,0 +1,326 @@
+import type { Faction } from '../types';
+
+/**
+ * Soldats par faction : dessins SVG plats en chaînes (viewBox 0 0 32 40).
+ * Les chaînes sont consommées telles quelles par le front (marqueurs HTML impératifs) ;
+ * le composant React `Soldier` ne sert qu'à la démo.
+ */
+
+export const OUT = '#3b2a1a';
+export type SoldierFrame = 0 | 1;
+export type SoldierState = 'marche' | 'vaincu';
+
+const path = (d: string, fill: string, extra = '') => `<path d="${d}" fill="${fill}"${extra ? ' ' + extra : ''}/>`;
+const circ = (cx: number, cy: number, r: number, fill: string, extra = '') =>
+  `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${fill}"${extra ? ' ' + extra : ''}/>`;
+const rect = (x: number, y: number, w: number, h: number, fill: string, rx = 0, extra = '') =>
+  `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${rx}" fill="${fill}"${extra ? ' ' + extra : ''}/>`;
+const ell = (cx: number, cy: number, rx: number, ry: number, fill: string, extra = '') =>
+  `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" fill="${fill}"${extra ? ' ' + extra : ''}/>`;
+/** Trait de détail sans contour sombre. */
+const stroke = (d: string, color: string, w = 1, extra = '') =>
+  `<path d="${d}" fill="none" stroke="${color}" stroke-width="${w}"${extra ? ' ' + extra : ''}/>`;
+
+const GOLD = '#e0b43a';
+const STEEL = '#a9adb0';
+const BRONZE = '#c08a3e';
+const WOOD = '#8a5a2b';
+const RED = '#a8281e';
+const WHITE = '#f4efe0';
+const SKIN = '#e0b48a';
+
+type LegKind = 'bare' | 'pants' | 'checks';
+
+interface Spec {
+  skin?: string;
+  tunic: string;
+  legs: LegKind;
+  legColor?: string;
+  legColor2?: string;
+  boots?: string;
+  /** Jupe / robe longue par-dessus le haut des jambes. */
+  skirt?: string;
+  /** Décor du torse (dessiné après le torse). */
+  deco?: string;
+  /** Cheveux arrière, avant le visage. */
+  back?: string;
+  /** Coiffe / barbe / moustache, après le visage. */
+  head: string;
+  shield?: string;
+  weapon: string;
+}
+
+/* Jambes : [xHautG, xHautD, xBasG, xBasD] à y=26 et y=37. */
+const LEGS: Record<SoldierFrame, [number[], number[]]> = {
+  0: [[12, 16, 12, 16], [17, 21, 17, 21]],
+  1: [[12.5, 16.5, 8.5, 12.5], [15.5, 19.5, 19.5, 23.5]],
+};
+const Y0 = 26;
+const Y1 = 37;
+const xAt = (l: number[], y: number): [number, number] => {
+  const t = (y - Y0) / (Y1 - Y0);
+  return [l[0] + (l[2] - l[0]) * t, l[1] + (l[3] - l[1]) * t];
+};
+const legPoly = (l: number[], ya: number, yb: number) => {
+  const [a1, b1] = xAt(l, ya);
+  const [a2, b2] = xAt(l, yb);
+  return `M${a1} ${ya}L${b1} ${ya}L${b2} ${yb}L${a2} ${yb}Z`;
+};
+
+function legsSvg(s: Spec, frame: SoldierFrame): string {
+  const skin = s.skin ?? SKIN;
+  const color = s.legs === 'bare' ? skin : (s.legColor ?? '#8a6a3a');
+  let out = '';
+  for (const l of LEGS[frame]) {
+    out += path(legPoly(l, Y0, Y1), color);
+    if (s.legs === 'checks') {
+      const c2 = s.legColor2 ?? '#2f5f9b';
+      out += path(legPoly(l, 28.5, 30.5), c2, 'stroke="none"');
+      out += path(legPoly(l, 32.5, 34.5), c2, 'stroke="none"');
+    } else if (s.legs === 'pants' && s.legColor2) {
+      out += path(legPoly(l, 28.5, 29.7), s.legColor2, 'stroke="none"');
+    }
+    if (s.boots) out += path(legPoly(l, 33.5, Y1), s.boots);
+  }
+  return out;
+}
+
+function build(s: Spec, frame: SoldierFrame, state: SoldierState): string {
+  const skin = s.skin ?? SKIN;
+  const down = state === 'vaincu';
+  let g = '';
+  g += legsSvg(s, frame);
+  if (s.skirt) g += path('M10.5 25L21.5 25L23 33L9 33Z', s.skirt);
+  g += s.back ?? '';
+  g += rect(14.5, 11.5, 3, 4, skin);
+  // torse
+  g += path('M11 14Q16 12.5 21 14L22 27L10 27Z', s.tunic);
+  g += s.deco ?? '';
+  // visage
+  g += circ(16, 9, 4, skin);
+  g += circ(14.7, 9.3, 0.6, OUT, 'stroke="none"') + circ(17.3, 9.3, 0.6, OUT, 'stroke="none"');
+  g += s.head;
+  // bras droit + main
+  g += path('M20.5 14.5L25 20L22.8 22.2L19.5 18Z', s.tunic);
+  g += circ(24.4, 21.4, 1.8, skin);
+  // arme
+  g += down ? `<g transform="rotate(160 26 18)">${s.weapon}</g>` : s.weapon;
+  // bouclier
+  if (s.shield) {
+    g += down ? `<g transform="translate(-1 12) rotate(-75 8.5 23)">${s.shield}</g>` : s.shield;
+  }
+  return g;
+}
+
+/* ---------- pièces réutilisables ---------- */
+
+const spear = (len = 35) =>
+  rect(25.2, 38 - len, 1.6, len, WOOD) + path(`M26 ${37 - len - 2.5}L28 ${38 - len + 1}L24 ${38 - len + 1}Z`, STEEL);
+const bow = (color: string) =>
+  `<path d="M25 7Q31.5 22 25 37" fill="none" stroke="${OUT}" stroke-width="3.2" stroke-linecap="round"/>` +
+  `<path d="M25 7Q31.5 22 25 37" fill="none" stroke="${color}" stroke-width="1.6" stroke-linecap="round"/>` +
+  `<path d="M25 7L25 37" fill="none" stroke="#efe6cc" stroke-width="0.6"/>`;
+const quiver = (c: string) => path('M9.5 15L12 14.5L12.5 24L10.2 24.5Z', c) + path('M10.3 15L10.6 12.5M11.3 14.8L11.7 12.2', '#e8dcc0', 'stroke="#e8dcc0" stroke-width="0.8"');
+const stubble = (c: string) => path('M12.3 10.2Q16 15.6 19.7 10.2Q16 12.2 12.3 10.2Z', c, 'stroke="none"');
+const moustache = (c: string) =>
+  path('M13 10.6Q14.5 9.8 16 10.6Q17.5 9.8 19 10.6Q18 12.3 17 11.5L16 11.1L15 11.5Q14 12.3 13 10.6Z', c, 'stroke="none"');
+
+const dome = (c: string) =>
+  path('M11.6 9Q11.6 3.6 16 3.6Q20.4 3.6 20.4 9L19.6 9L19.6 7.4L12.4 7.4L12.4 9Z', c);
+
+/* ---------- les 16 factions ---------- */
+
+export const SOLDIER_SPECS = {
+  romains: {
+    tunic: '#b23a2b', legs: 'bare', boots: '#6b3a1e',
+    deco: rect(11.2, 17, 9.8, 6, '#9a9c9a', 1) + stroke('M11.5 19H21M11.5 21H21', '#6e706e', 0.7),
+    head: dome(STEEL) + path('M12.5 4.6Q16 -1.4 19.5 4.6L18.2 4.6Q16 1.4 13.8 4.6Z', RED),
+    shield:
+      rect(3.5, 14, 10, 19, RED, 2) + stroke('M8.5 15V32M4.5 23.5H12.5', GOLD, 1) +
+      circ(8.5, 23.5, 2.1, GOLD),
+    weapon:
+      rect(25.4, 8, 1.2, 30, WOOD) + rect(25.5, 2.5, 1, 6, '#9aa0a6') + path('M26 0.6L27.4 3L24.6 3Z', STEEL),
+  },
+  latins: {
+    tunic: '#c58a3d', legs: 'bare', boots: '#6b3a1e',
+    deco: rect(11.2, 17, 9.8, 5, '#8c6a3a', 1),
+    head: dome(BRONZE) + circ(16, 3.6, 0.9, BRONZE),
+    shield: circ(8.5, 23, 6.3, '#d2b46a') + circ(8.5, 23, 3.8, 'none', 'stroke="#7a4a24" stroke-width="0.9"') + circ(8.5, 23, 1.8, '#7a4a24'),
+    weapon: spear(),
+  },
+  samnites: {
+    tunic: '#a0522d', legs: 'bare', boots: BRONZE,
+    deco: circ(15.5, 18, 2, BRONZE) + circ(19, 18, 2, BRONZE) + circ(17.2, 22.4, 2, BRONZE),
+    head:
+      dome(BRONZE) +
+      path('M13.5 5Q10 1.5 12 0.4Q15.5 1.5 15 5Z', WHITE) +
+      path('M15 4.5Q14 0.6 16 0.4Q18 0.6 17 4.5Z', RED) +
+      path('M18.5 5Q22 1.5 20 0.4Q16.5 1.5 17 5Z', WHITE),
+    shield: ell(8.5, 23, 5, 9.5, '#b8864a') + ell(8.5, 23, 2.8, 7, 'none', 'stroke="#7a2a20" stroke-width="0.9"') + ell(8.5, 23, 1.2, 1.8, '#7a2a20'),
+    weapon: spear(),
+  },
+  carthaginois: {
+    skin: '#c98f64', tunic: '#6d2f86', legs: 'bare', boots: '#4a2f1a',
+    deco: rect(10.2, 24.5, 11.6, 1.6, GOLD, 0, 'stroke="none"'),
+    head: path('M11.8 8.5Q12 3 16 2.4Q20 3 20.2 8.5Z', BRONZE) + stubble('#2d2018'),
+    shield: circ(8.5, 23, 6.3, '#e8dcc0') + circ(8.5, 23, 4, 'none', 'stroke="#6d2f86" stroke-width="1.2"') + circ(8.5, 23, 1.6, GOLD),
+    weapon: spear(37),
+  },
+  gaulois: {
+    tunic: '#3c6aa0', legs: 'checks', legColor: '#c9473a', legColor2: '#2f5f9b', boots: '#6b3a1e',
+    deco: stroke('M13.5 15.2Q16 18 18.5 15.2', GOLD, 1.5),
+    head:
+      path('M11.6 9L11 5L13 6L13.5 2.5L15.5 5L17 2L18.5 5L20.5 3.5L20.4 9Q16 5.5 11.6 9Z', '#d9b24c') +
+      moustache('#c9952b'),
+    shield: ell(8.5, 23, 4.6, 10.5, '#3f7a52') + rect(7.7, 13, 1.6, 20, '#2f5f9b', 0, 'stroke="none"') + ell(8.5, 23, 1.8, 2.2, '#cfd4d6'),
+    weapon:
+      rect(25.2, 3, 1.8, 20, '#d0d4d6') + path('M26.1 1.2L27 3L25.2 3Z', '#d0d4d6') +
+      rect(23.4, 22.6, 5.4, 1.4, GOLD) + rect(25.4, 24, 1.4, 3.6, WOOD),
+  },
+  'grecs-macedoniens': {
+    tunic: '#c9473a', legs: 'bare', boots: BRONZE,
+    deco: rect(11.2, 16, 9.8, 7, '#d8c9a0', 1) + stroke('M11.5 19H21', '#a89860', 0.7),
+    head:
+      path('M11.6 9Q11.4 3.6 16 3.4Q19 3.4 21.5 5.2Q19 5.5 20.4 9L19.6 9L19.6 7.2L12.4 7.2L12.4 9Z', BRONZE) +
+      path('M12 4Q16 0.4 19 3.6Q16 3 12 4Z', RED),
+    shield:
+      circ(8.5, 23, 6.5, '#2f4f9b') +
+      stroke('M8.5 17.8V28.2M3.3 23H13.7M4.8 19.3L12.2 26.7M12.2 19.3L4.8 26.7', GOLD, 0.9) +
+      circ(8.5, 23, 1.7, GOLD),
+    weapon:
+      rect(26.2, 1.6, 1.2, 38.4, WOOD) + path('M26.8 -0.2L28.2 3L25.4 3Z', STEEL) + rect(25.8, 37, 2, 2.5, STEEL),
+  },
+  germains: {
+    skin: '#d9a982', tunic: '#7a5230', legs: 'pants', legColor: '#7a6a4a', boots: '#4a2f1a',
+    deco: path('M10.4 14L21.6 14L22 22L20 20.4L18.4 24L16.6 20.6L14.4 24.4L12.4 20.6L10 22Z', '#9a8a78'),
+    back: path('M11 8Q10.6 3.4 16 3.2Q21.4 3.4 21 8L21.6 14.5L19.6 12L12.4 12L10.4 14.5Z', '#a9803a'),
+    head: path('M11.8 7Q16 2.5 20.2 7Q16 5 11.8 7Z', '#a9803a') + path('M12 10Q16 17 20 10Q16 12.5 12 10Z', '#9a6a35'),
+    shield: circ(8.5, 23, 6.3, '#a9783f') + stroke('M8.5 16.8V29.2', '#7a5230', 0.8) + circ(8.5, 23, 1.9, '#9aa0a6'),
+    weapon: rect(25.4, 8, 1.2, 30, WOOD) + path('M26 3L27.4 8.4L24.6 8.4Z', STEEL),
+  },
+  'parthes-perses': {
+    skin: '#d2a070', tunic: '#c9923a', legs: 'pants', legColor: '#2f6f7a', legColor2: GOLD, boots: '#4a2f1a',
+    deco: rect(10.2, 24, 11.6, 1.8, '#7a2a20', 0, 'stroke="none"'),
+    back: quiver('#6b3a1e'),
+    head:
+      path('M11.7 8Q12 4 15.5 0.6L16.8 0.6Q20 4 20.3 8Q16 6.4 11.7 8Z', '#b8432f') +
+      stroke('M12.2 6.6Q16 5 19.8 6.6', GOLD, 1) + stubble('#2d2018'),
+    weapon: bow('#6b3a1e'),
+  },
+  egyptiens: {
+    skin: '#c98f64', tunic: '#f1ead8', legs: 'bare', boots: '#a9783f',
+    deco: stroke('M11.5 15.6Q16 20.5 20.5 15.6', GOLD, 2.2) + stroke('M12.5 15.6Q16 19 19.5 15.6', '#2f6fa8', 0.9),
+    back:
+      path('M10.8 8L10 17L13.4 15.5L13.4 10Z', GOLD) + path('M21.2 8L22 17L18.6 15.5L18.6 10Z', GOLD) +
+      stroke('M10.4 12.2L13.4 12.6M10.2 14.6L13.4 14.4M21.6 12.2L18.6 12.6M21.8 14.6L18.6 14.4', '#2f6fa8', 0.9),
+    head:
+      path('M11.3 9Q11 3 16 3Q21 3 20.7 9L19 8Q16 6.6 13 8Z', GOLD) +
+      stroke('M12.4 5.2Q16 3.7 19.6 5.2M12 7Q16 5.4 20 7', '#2f6fa8', 0.9) + circ(16, 3.2, 0.9, '#2f6fa8', 'stroke="none"'),
+    shield:
+      ell(8.5, 23, 5.2, 9, '#2f5f9b') + circ(8.5, 19.8, 1.6, 'none', `stroke="${GOLD}" stroke-width="1"`) +
+      stroke('M8.5 21.4V29.2M5.6 23.4H11.4', GOLD, 1.1),
+    weapon: spear(),
+  },
+  daces: {
+    tunic: '#e8dcc0', legs: 'pants', legColor: '#c9a878', boots: '#6b3a1e',
+    deco: rect(10.2, 24.2, 11.6, 1.6, '#a8442f', 0, 'stroke="none"'),
+    head:
+      path('M11.6 8Q11.6 4 15.5 3.5Q19 3.5 21 1Q22.5 4.5 20.5 8L19.8 7.4Q16 6 12.2 7.4Z', '#a8442f') +
+      path('M12 10Q16 16 20 10Q16 12.5 12 10Z', '#6b4a2e'),
+    weapon:
+      rect(25.4, 15, 1.4, 23, WOOD) +
+      path('M26 17L26 7Q26 1.6 31.4 2Q28 3.4 27.8 8L27.8 17Z', '#d0d4d6'),
+  },
+  'goths-vandales': {
+    tunic: '#8e949a', legs: 'pants', legColor: '#8a6a3a', boots: '#4a2f1a',
+    deco: stroke('M12 17H20M12.5 19.5H20.5M12 22H20M13 24.2H20.5', '#5e646a', 0.8) + rect(10.2, 24.6, 11.6, 1.5, '#4a2f1a', 0, 'stroke="none"'),
+    head:
+      path('M11.6 9Q11.6 2.5 16 1.5Q20.4 2.5 20.4 9L19.6 9L19.6 7.2L12.4 7.2L12.4 9Z', '#9aa0a6') +
+      stroke('M16 1.8V7.2M13.1 3.6L13.6 7.2M18.9 3.6L18.4 7.2', GOLD, 0.9) + stroke('M16 7V10.4', '#9aa0a6', 1),
+    shield: circ(8.5, 23, 6.3, '#c6a04a') + circ(8.5, 23, 4, 'none', 'stroke="#7a2a20" stroke-width="1"') + circ(8.5, 23, 1.9, '#9aa0a6'),
+    weapon:
+      rect(25.4, 10, 1.4, 28, WOOD) + path('M26.8 9.5Q32.4 10 32 16.8Q29.2 15.4 26.8 17.4Z', '#9aa0a6'),
+  },
+  arabes: {
+    skin: '#c98f64', tunic: '#efe6cc', legs: 'bare', boots: '#6b3a1e', skirt: '#efe6cc',
+    deco: rect(10.2, 23.6, 11.6, 1.8, '#a8281e', 0, 'stroke="none"'),
+    back: path('M10.6 7L9.6 14L13 12L13 9Z', WHITE) + path('M21.4 7L22.4 14L19 12L19 9Z', WHITE),
+    head: path('M11 8.5Q11 3 16 3Q21 3 21 8.5Q16 6 11 8.5Z', WHITE) + stroke('M11.2 6.8Q16 4.6 20.8 6.8', '#2b2219', 1.2) + stubble('#2d2018'),
+    shield: circ(8.5, 22, 5.2, '#8a5a2b') + circ(8.5, 22, 3.4, 'none', `stroke="${GOLD}" stroke-width="0.9"`) + circ(8.5, 22, 1.5, GOLD),
+    weapon:
+      path('M24.6 23Q23.6 10 30.6 3.6Q29.6 8.4 27.2 11.4Q26.8 17 26.4 23Z', '#d6dadc') +
+      rect(22.9, 22.4, 5.2, 1.3, GOLD) + rect(25, 23.7, 1.4, 3.4, WOOD),
+  },
+  'turcs-seldjoukides': {
+    skin: '#d2a070', tunic: '#2a6f8f', legs: 'pants', legColor: '#7a2a20', boots: '#4a2f1a',
+    deco: rect(10.2, 23.6, 11.6, 1.8, GOLD, 0, 'stroke="none"') + stroke('M16 14.5V23.5', '#d8c9a0', 0.8),
+    back: quiver('#4a2f1a'),
+    head:
+      path('M11.3 7.6Q11 2 16 2Q21 2 20.7 7.6Q16 6 11.3 7.6Z', '#6b4a2e') +
+      path('M11 8.2Q16 6 21 8.2L20.7 6.6Q16 4.6 11.3 6.6Z', '#c9a878') + moustache('#2d2018'),
+    weapon: bow('#2a6f8f'),
+  },
+  'croises-latins': {
+    tunic: WHITE, legs: 'pants', legColor: '#8e949a', boots: '#6e747a', skirt: WHITE,
+    deco: rect(15.2, 14.5, 1.8, 16, RED, 0, 'stroke="none"') + rect(12.6, 17.4, 6.8, 1.8, RED, 0, 'stroke="none"'),
+    head: path('M11.4 14L11.4 4.2Q16 2 20.6 4.2L20.6 14Z', '#aeb3b8') + rect(12.4, 8, 7.2, 1.3, '#2b2219', 0, 'stroke="none"') + stroke('M16 4.2V13', '#6e747a', 1),
+    shield:
+      path('M3.5 14H13.5V24Q13.5 31 8.5 34Q3.5 31 3.5 24Z', WHITE) +
+      rect(7.6, 15.5, 1.8, 16, RED, 0, 'stroke="none"') + rect(4.8, 19, 7.4, 1.8, RED, 0, 'stroke="none"'),
+    weapon:
+      rect(25.3, 5, 1.6, 18, '#d6dadc') + path('M26.1 2.4L27.1 5L25.1 5Z', '#d6dadc') +
+      rect(22.8, 22.4, 6.6, 1.5, GOLD) + rect(25.3, 23.8, 1.6, 3.2, WOOD) + circ(26.1, 27.6, 1, GOLD),
+  },
+  ottomans: {
+    skin: '#d2a070', tunic: '#2a4f9b', legs: 'pants', legColor: '#a8362a', boots: '#7a2a20',
+    deco: rect(10.2, 23.4, 11.6, 2.2, '#c0392b', 0, 'stroke="none"') + stroke('M16 14.5V23', GOLD, 0.8),
+    head:
+      path('M19.5 3Q24 5 23 12Q21 9 20 8Z', WHITE) +
+      path('M11.6 8Q11.2 3.5 13.5 0.8L19 0.8Q20.8 3.5 20.4 8Q16 6.4 11.6 8Z', WHITE) +
+      stroke('M11.7 6.8Q16 5.4 20.3 6.8', GOLD, 1.2) + moustache('#2d2018'),
+    weapon:
+      `<g transform="rotate(20 24 22)">` +
+      rect(23.6, 2, 1.2, 30, '#5a5a5e') + rect(22.9, 27, 2.6, 10, WOOD) + `</g>`,
+  },
+  byzantins: {
+    tunic: '#2f4f8a', legs: 'pants', legColor: '#8a6a3a', boots: '#4a2f1a',
+    deco: rect(10.2, 23.4, 11.6, 2, GOLD, 0, 'stroke="none"') + stroke('M16 14.5V23', GOLD, 0.9),
+    head:
+      path('M11.7 9Q12 4 16 1.8Q20 4 20.3 9L19.6 9L19.6 7.2L12.4 7.2L12.4 9Z', STEEL) +
+      circ(16, 1.8, 1.2, '#b8362a'),
+    shield:
+      circ(8.5, 23, 6.3, RED) +
+      stroke('M8.5 16.8V29.2M8.5 17.2Q12.2 17.2 12.2 19.6Q12.2 22 8.5 22M5.4 21.4L11.6 28.2M11.6 21.4L5.4 28.2', GOLD, 0.9),
+    weapon: spear(),
+  },
+} satisfies Record<Faction, Spec>;
+
+/** Fabrique la chaîne SVG complète d'un soldat. */
+export function soldierSvg(faction: Faction, frame: SoldierFrame = 0, state: SoldierState = 'marche'): string {
+  const spec: Spec = SOLDIER_SPECS[faction];
+  return (
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 40" width="32" height="40" role="img" ` +
+    `aria-label="${faction}" focusable="false" style="overflow:visible">` +
+    `<g stroke="${OUT}" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round">` +
+    build(spec, frame, state) +
+    `</g></svg>`
+  );
+}
+
+export function Soldier(props: {
+  faction: Faction;
+  frame: SoldierFrame;
+  state?: SoldierState;
+  width?: number;
+  height?: number;
+}) {
+  const { faction, frame, state, width = 32, height = 40 } = props;
+  return (
+    <span
+      style={{ display: 'inline-block', width, height, lineHeight: 0 }}
+      dangerouslySetInnerHTML={{
+        __html: soldierSvg(faction, frame, state).replace('width="32" height="40"', `width="${width}" height="${height}"`),
+      }}
+    />
+  );
+}
