@@ -6,9 +6,11 @@ import { loadDiff, loadMorph, loadTerritory, preloadAround, type DiffCollection,
 import { prefersReducedMotion } from '../lib/motion';
 import type { City, Empire } from '../types';
 import { addLand, baseStyle, DEM_SOURCE, MAX_BOUNDS, TERRAIN_EXAGGERATION } from './basemapStyle';
+import { ArmyLayer } from './armyLayer';
 import { CityLayer } from './cityLayer';
 import { DiffHighlight } from './diff';
 import { EventMarker } from './eventMarker';
+import { FigureLayer } from './figureLayer';
 import { MORPH_MS, MorphLayer } from './morphLayer';
 import { TerritoryLayers } from './territoryLayers';
 
@@ -23,6 +25,8 @@ interface Props {
   relief: boolean;
   /** Vitesse de lecture (la durée du morph s'y adapte). */
   speed?: number;
+  /** Figurines : armées en marche et personnages d'époque. */
+  figures?: boolean;
 }
 
 interface MapLayers {
@@ -30,6 +34,8 @@ interface MapLayers {
   morph: MorphLayer;
   diff: DiffHighlight;
   marker: EventMarker;
+  armies: ArmyLayer;
+  figures: FigureLayer;
 }
 
 export const TILT_PITCH = 50;
@@ -42,7 +48,7 @@ function viewPadding(panelOpen: boolean): PaddingOptions {
   return { top: 80, left: 20, right: panelOpen ? 420 : 20, bottom: 150 };
 }
 
-export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1 }: Props) {
+export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, figures: figuresOn = true }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const [layers, setLayers] = useState<MapLayers | null>(null);
@@ -85,6 +91,11 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1 }
         morph: new MorphLayer(map),
         diff: new DiffHighlight(map),
         marker: new EventMarker(map),
+        armies: new ArmyLayer(map),
+        figures: new FigureLayer(map, () => {
+          const mobile = window.innerWidth < 768;
+          return { left: 0, top: 70, right: panelOpenRef.current && !mobile ? 420 : 0 };
+        }),
       };
       setLayers(created);
       void addLand(map);
@@ -94,6 +105,8 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1 }
       created?.morph.destroy();
       created?.diff.destroy();
       created?.marker.destroy();
+      created?.armies.destroy();
+      created?.figures.destroy();
       map.remove();
       mapRef.current = null;
     };
@@ -213,6 +226,22 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1 }
       }
     };
   }, [layers, empire, index, step]);
+
+  // Figurines : armées et personnages de l'étape, lancés avec la caméra (le flyTo dure 2 s).
+  useEffect(() => {
+    if (!layers || !step) return;
+    layers.armies.clear();
+    layers.figures.clear();
+    if (figuresOn) {
+      const reduced = prefersReducedMotion();
+      layers.armies.start(step, speedRef.current, reduced);
+      layers.figures.show(step, speedRef.current, reduced);
+    }
+    return () => {
+      layers.armies.clear();
+      layers.figures.clear();
+    };
+  }, [layers, step, figuresOn]);
 
   // Villes : setData uniquement au changement d'étape (ou à l'arrivée des données).
   const year = step?.year;

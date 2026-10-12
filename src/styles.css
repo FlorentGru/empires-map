@@ -748,6 +748,286 @@ kbd {
   }
 }
 
+
+/* ---------- Armées en marche ---------- */
+.army-marker {
+  width: 28px;
+  height: 30px;
+  pointer-events: none;
+}
+.army-marker__form {
+  transition: opacity 0.9s ease-out;
+}
+.army-marker__flip {
+  position: relative;
+  width: 28px;
+  height: 28px;
+}
+.army-marker--west .army-marker__flip {
+  transform: scaleX(-1);
+}
+.army-frame {
+  position: absolute;
+  inset: 0;
+}
+.army-frame svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.army-frame--1,
+.army-frame--down {
+  opacity: 0;
+}
+.army-marker--walking .army-marker__shake {
+  will-change: transform;
+}
+.army-marker--walking .army-frame--0 {
+  animation: army-step-a 0.5s steps(1, end) infinite;
+  animation-delay: var(--delay, 0s);
+}
+.army-marker--walking .army-frame--1 {
+  animation: army-step-b 0.5s steps(1, end) infinite;
+  animation-delay: var(--delay, 0s);
+}
+.army-marker--walking .army-marker__shake {
+  animation: army-bob 0.5s ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+.army-marker--clash .army-marker__shake {
+  animation: army-shake 0.12s linear infinite;
+  animation-delay: var(--delay, 0s);
+}
+.army-marker--defeated .army-frame--0,
+.army-marker--defeated .army-frame--1 {
+  opacity: 0;
+}
+.army-marker--defeated .army-frame--down {
+  opacity: 1;
+}
+.army-marker--defeated .army-marker__form {
+  opacity: 0.35;
+}
+@keyframes army-step-a {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+}
+@keyframes army-step-b {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+}
+@keyframes army-bob {
+  50% { transform: translateY(-2px); }
+}
+@keyframes army-shake {
+  0% { transform: translateX(-1.5px); }
+  50% { transform: translateX(1.5px); }
+}
+
+.clash-marker {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  opacity: 0;
+}
+.clash-marker--on {
+  opacity: 1;
+}
+.clash-marker__icon {
+  position: relative;
+  z-index: 1;
+  font-size: 26px;
+  line-height: 1;
+  color: #fff8ec;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+.clash-marker--on .clash-marker__icon {
+  animation: clash-pop 0.7s cubic-bezier(0.2, 1.5, 0.4, 1) backwards;
+}
+.clash-marker__dust,
+.clash-marker__dust::before,
+.clash-marker__dust::after {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: rgba(201, 180, 138, 0.75);
+  opacity: 0;
+  content: '';
+}
+.clash-marker__dust {
+  left: 11px;
+  bottom: 2px;
+}
+.clash-marker__dust::before {
+  left: -14px;
+  bottom: -2px;
+  width: 14px;
+  height: 14px;
+}
+.clash-marker__dust::after {
+  left: 12px;
+  bottom: -2px;
+  width: 12px;
+  height: 12px;
+}
+.clash-marker--on .clash-marker__dust,
+.clash-marker--on .clash-marker__dust::before,
+.clash-marker--on .clash-marker__dust::after {
+  animation: clash-dust 1s ease-out forwards;
+}
+@keyframes clash-pop {
+  from { transform: scale(0.2); }
+  60% { transform: scale(1.35); }
+  to { transform: scale(1); }
+}
+@keyframes clash-dust {
+  from { opacity: 0.8; transform: translateY(0) scale(0.4); }
+  to { opacity: 0; transform: translateY(-14px) scale(1.6); }
+}
+
+/* ---------- Personnages d'époque ---------- */
+.figure-marker {
+  position: relative;
+  width: 44px;
+  height: 48px;
+  pointer-events: none;
+}
+.figure-marker__card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  animation: figure-pop 0.5s cubic-bezier(0.2, 1.3, 0.4, 1) backwards;
+}
+.figure-marker__sprite svg {
+  display: block;
+  width: 44px;
+  height: 44px;
+}
+.figure-marker__sprite--flip {
+  transform: scaleX(-1);
+}
+.figure-marker__label {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 100px;
+  margin-top: 2px;
+  padding: 2px 6px;
+  text-align: center;
+  line-height: 1.15;
+  color: var(--ink);
+  background: var(--parchment);
+  border: 1px solid var(--parchment-edge);
+  border-radius: 6px;
+}
+.figure-marker__label strong {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.figure-marker__label span {
+  display: block;
+  font-size: 0.62rem;
+  color: var(--ink-soft);
+}
+.figure-bubble {
+  --shift: 0px;
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  width: max-content;
+  max-width: min(220px, 55vw);
+  padding: 6px 10px;
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  font-style: italic;
+  line-height: 1.25;
+  color: var(--ink);
+  background: var(--parchment);
+  border: 1px solid var(--parchment-edge);
+  border-radius: 10px;
+  transform: translateX(calc(-50% + var(--shift)));
+}
+.figure-bubble::after {
+  position: absolute;
+  top: 100%;
+  left: calc(50% - var(--shift) - 6px);
+  width: 10px;
+  height: 10px;
+  content: '';
+  background: var(--parchment);
+  border-right: 1px solid var(--parchment-edge);
+  border-bottom: 1px solid var(--parchment-edge);
+  transform: translateY(-5px) rotate(45deg);
+}
+.figure-bubble--toleft {
+  left: auto;
+  right: calc(50% - 16px);
+  transform: translateX(var(--shift));
+}
+.figure-bubble--toleft::after {
+  left: auto;
+  right: calc(16px - 5px - var(--shift));
+}
+.figure-bubble--toright {
+  left: calc(50% - 16px);
+  transform: translateX(var(--shift));
+}
+.figure-bubble--toright::after {
+  left: calc(16px - 5px - var(--shift));
+}
+.figure-bubble--below {
+  bottom: auto;
+  top: calc(100% + 40px);
+}
+.figure-bubble--below::after {
+  display: none;
+}
+.figure-bubble__ghost {
+  visibility: hidden;
+}
+.figure-bubble__typed {
+  position: absolute;
+  inset: 6px 10px;
+}
+.treaty-marker {
+  font-size: 24px;
+  line-height: 1;
+  pointer-events: none;
+  animation: figure-pop 0.5s 0.2s cubic-bezier(0.2, 1.3, 0.4, 1) backwards;
+}
+@keyframes figure-pop {
+  from { opacity: 0; transform: translateY(8px) scale(0.85); }
+  to { opacity: 1; transform: none; }
+}
+
+.legend__soldier svg,
+.legend__figure svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.legend__soldier,
+.legend__figure {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+}
+.legend__dashes {
+  display: inline-block;
+  width: 26px;
+  vertical-align: middle;
+  border-top: 3px dotted var(--accent);
+}
+
 /* ---------- Mouvement réduit ---------- */
 @media (prefers-reduced-motion: reduce) {
   *,

@@ -3,6 +3,7 @@ import { loadTerritory } from '../data/loadEmpire';
 import { EVENT_TYPES } from '../lib/eventTypes';
 import { DIFF_COLORS } from '../map/diff';
 import { variantFill, variantLine } from '../map/color';
+import { characterSvg, soldierSvg } from '../map/sprites';
 import type { Empire, EventType, TimelineStep } from '../types';
 
 interface Props {
@@ -96,6 +97,15 @@ export const Legend = memo(function Legend({ empire, step }: Props) {
               ⚔
             </span>
             Lieu de la bataille ou de l'événement
+          </li>
+          <li>
+            <span className="legend__dashes" aria-hidden="true" />{' '}
+            <span className="legend__soldier" aria-hidden="true" dangerouslySetInnerHTML={{ __html: soldierSvg('romains', 0) }} />
+            {' '}Armées en marche
+          </li>
+          <li>
+            <span className="legend__figure" aria-hidden="true" dangerouslySetInnerHTML={{ __html: characterSvg('senateur') }} />
+            {' '}Personnage (nom et citation en bulle)
           </li>
           <li>
             <span className="legend__city" aria-hidden="true" />
