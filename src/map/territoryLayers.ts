@@ -1,13 +1,17 @@
 import type { GeoJSONSource, Map as MapLibreMap } from 'maplibre-gl';
 import type { TerritoryCollection } from '../data/loadEmpire';
 import { prefersReducedMotion } from '../lib/motion';
-import { variantFill, variantLine } from './color';
+import { variantFill, variantLine, variantVassal } from './color';
 
 export const FILL_OPACITY = 0.48;
 const LINE_OPACITY = 0.9;
 export const CROSSFADE_MS = 800;
 
 const EMPTY: TerritoryCollection = { type: 'FeatureCollection', features: [] };
+/** Entités non « core » : contour en tirets. */
+const DASHED = ['match', ['get', 'status'], ['vassal', 'allied'], true, false] as never;
+const SOLID = ['!', DASHED] as never;
+const FILL_COLOR = ['match', ['get', 'status'], 'allied', 'rgba(0,0,0,0)', 'vassal', ['get', '_fillV'], ['get', '_fill']] as never;
 const SLOTS = ['a', 'b'] as const;
 type Slot = (typeof SLOTS)[number];
 
@@ -17,7 +21,7 @@ function decorate(fc: TerritoryCollection, color: string): TerritoryCollection {
     type: 'FeatureCollection',
     features: fc.features.map((f, i) => ({
       ...f,
-      properties: { ...f.properties, _fill: variantFill(color, i), _line: variantLine(color, i) },
+      properties: { ...f.properties, _fill: variantFill(color, i), _fillV: variantVassal(color, i), _line: variantLine(color, i) },
     })),
   };
 }
@@ -39,7 +43,7 @@ export class TerritoryLayers {
           id: `territory-${slot}-fill`,
           type: 'fill',
           source: `territory-${slot}`,
-          paint: { 'fill-color': ['get', '_fill'], 'fill-opacity': 0, 'fill-opacity-transition': transition },
+          paint: { 'fill-color': FILL_COLOR, 'fill-opacity': 0, 'fill-opacity-transition': transition },
         },
         beforeId,
       );
@@ -48,7 +52,18 @@ export class TerritoryLayers {
           id: `territory-${slot}-line`,
           type: 'line',
           source: `territory-${slot}`,
+          filter: SOLID,
           paint: { 'line-color': ['get', '_line'], 'line-width': 1.4, 'line-opacity': 0, 'line-opacity-transition': transition },
+        },
+        beforeId,
+      );
+      map.addLayer(
+        {
+          id: `territory-${slot}-dash`,
+          type: 'line',
+          source: `territory-${slot}`,
+          filter: DASHED,
+          paint: { 'line-color': ['get', '_line'], 'line-width': 1.6, 'line-dasharray': [3, 2], 'line-opacity': 0, 'line-opacity-transition': transition },
         },
         beforeId,
       );
@@ -58,6 +73,7 @@ export class TerritoryLayers {
   private setOpacity(slot: Slot, k: number) {
     this.map.setPaintProperty(`territory-${slot}-fill`, 'fill-opacity', FILL_OPACITY * k);
     this.map.setPaintProperty(`territory-${slot}-line`, 'line-opacity', LINE_OPACITY * k);
+    this.map.setPaintProperty(`territory-${slot}-dash`, 'line-opacity', LINE_OPACITY * k);
   }
 
   private instant<T>(fn: () => T): T {
@@ -73,6 +89,7 @@ export class TerritoryLayers {
     const t = { duration: prefersReducedMotion() ? 0 : duration, delay: 0 };
     this.map.setPaintProperty(`territory-${slot}-fill`, 'fill-opacity-transition', t);
     this.map.setPaintProperty(`territory-${slot}-line`, 'line-opacity-transition', t);
+    this.map.setPaintProperty(`territory-${slot}-dash`, 'line-opacity-transition', t);
   }
 
   private fading = true;

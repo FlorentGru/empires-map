@@ -47,6 +47,8 @@ interface MapLayers {
 export const TILT_PITCH = 50;
 const MAX_PITCH = 70;
 const INITIAL_VIEW = { center: [16, 38] as [number, number], zoom: 3 };
+/** Dernière vue de caméra : la carte recréée au changement d'empire repart de là, puis vole vers la nouvelle vue. */
+let lastView: { center: [number, number]; zoom: number } | null = null;
 
 function viewPadding(panelOpen: boolean): PaddingOptions {
   const mobile = window.innerWidth < 768;
@@ -94,7 +96,7 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
     const map = new MapLibreMap({
       container: containerRef.current,
       style: baseStyle(),
-      ...INITIAL_VIEW,
+      ...(lastView ?? empire.view ?? INITIAL_VIEW),
       pitch: tiltedRef.current ? TILT_PITCH : 0,
       maxPitch: tiltedRef.current ? MAX_PITCH : 0,
       minZoom: 2.5,
@@ -131,6 +133,8 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
       void addLand(map);
     });
     return () => {
+      const c = map.getCenter();
+      lastView = { center: [c.lng, c.lat], zoom: map.getZoom() };
       created?.territories.destroy();
       created?.morph.destroy();
       created?.glide.destroy();
@@ -210,6 +214,12 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
         if (prefersReducedMotion()) map.jumpTo(camera);
         else map.flyTo({ ...camera, duration: 2000, curve: 1.3, essential: false });
       }
+    }
+
+    else if (empire.view) {
+      const camera = { center: empire.view.center, zoom: empire.view.zoom, pitch: tiltedRef.current ? TILT_PITCH : 0, padding: viewPadding(panelOpenRef.current) };
+      if (prefersReducedMotion()) map.jumpTo(camera);
+      else map.flyTo({ ...camera, duration: 2000, curve: 1.3, essential: false });
     }
 
     const key = `${empire.id}/${step.territory}`;

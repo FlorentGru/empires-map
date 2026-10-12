@@ -8,7 +8,7 @@ interface Props {
   onSelect: (id: string) => void;
 }
 
-const COMING_SOON = ['Empire mongol', 'Perse achéménide', 'Empire napoléonien'];
+const COMING_SOON = ['Empire mongol', 'Perse achéménide'];
 
 export function EmpirePicker({ empires, current, onSelect }: Props) {
   const [open, setOpen] = useState(false);

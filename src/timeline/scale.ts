@@ -30,7 +30,7 @@ export function makeYearScale(years: number[], start: number, end: number, linea
 /** Graduations « rondes » (sans année 0), espacées d'au moins `minGap` en position. */
 export function makeTicks(start: number, end: number, yearToX: (y: number) => number, minGap = 0.07): number[] {
   const span = end - start;
-  const step = span > 1500 ? 200 : span > 600 ? 100 : span > 200 ? 50 : 25;
+  const step = span > 1500 ? 200 : span > 600 ? 100 : span > 200 ? 50 : span > 60 ? 25 : span > 30 ? 10 : 1;
   const ticks: number[] = [];
   let lastX = -Infinity;
   for (let y = Math.ceil(start / step) * step; y <= end; y += step) {

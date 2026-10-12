@@ -2,9 +2,9 @@ import { memo, useEffect, useId, useState, type CSSProperties } from 'react';
 import { loadTerritory } from '../data/loadEmpire';
 import { EVENT_TYPES } from '../lib/eventTypes';
 import { DIFF_COLORS } from '../map/diff';
-import { variantFill, variantLine } from '../map/color';
+import { variantFill, variantLine, variantVassal } from '../map/color';
 import { characterSvg, soldierSvg } from '../map/sprites';
-import type { Empire, EventType, TimelineStep } from '../types';
+import type { Archetype, Empire, EventType, Faction, TerritoryProperties, TimelineStep } from '../types';
 
 interface Props {
   empire: Empire;
@@ -12,16 +12,35 @@ interface Props {
   countries2026?: boolean;
 }
 
+/** Figurines d'illustration de la légende, par empire (défaut : Rome). */
+const EMPIRE_SPRITES: Record<string, { faction: Faction; archetype: Archetype }> = {
+  napoleon: { faction: 'francais', archetype: 'empereur-napoleon' },
+};
+
 const TYPES = Object.keys(EVENT_TYPES) as EventType[];
 
-/** Noms des entités du territoire de l'étape (properties.name), dans l'ordre des features. */
-function useEntityNames(empire: Empire, territory: string | undefined): string[] {
-  const [names, setNames] = useState<string[]>([]);
+interface Entity {
+  name: string;
+  status: NonNullable<TerritoryProperties['status']>;
+  /** Index de la feature (détermine la variation de teinte, comme sur la carte). */
+  index: number;
+}
+
+const STATUS_LABEL = { core: '', vassal: ' (vassal)', allied: ' (allié)' } as const;
+
+/** Entités du territoire de l'étape (nom, statut), dans l'ordre des features. */
+function useEntities(empire: Empire, territory: string | undefined): Entity[] {
+  const [names, setNames] = useState<Entity[]>([]);
   useEffect(() => {
     if (!territory) return;
     let cancelled = false;
     void loadTerritory(empire.id, territory).then((fc) => {
-      if (!cancelled) setNames(fc.features.map((f) => f.properties?.name).filter((n): n is string => !!n));
+      if (cancelled) return;
+      const list: Entity[] = [];
+      fc.features.forEach((f, index) => {
+        if (f.properties?.name) list.push({ name: f.properties.name, status: f.properties.status ?? 'core', index });
+      });
+      setNames(list);
     });
     return () => {
       cancelled = true;
@@ -38,8 +57,9 @@ export const Legend = memo(function Legend({ empire, step, countries2026 = false
   const [open, setOpen] = useState(() => !isMobile());
   const titleId = useId();
   const bodyId = useId();
-  const names = useEntityNames(empire, step?.territory);
-  const entities = names.length > 0 ? names : [empire.name];
+  const found = useEntities(empire, step?.territory);
+  const entities: Entity[] = found.length > 0 ? found : [{ name: empire.name, status: 'core', index: 0 }];
+  const sprites = EMPIRE_SPRITES[empire.id] ?? { faction: 'romains' as Faction, archetype: 'senateur' as Archetype };
 
   return (
     <section className={`legend${open ? ' legend--open' : ''}`} aria-labelledby={titleId}>
@@ -71,14 +91,18 @@ export const Legend = memo(function Legend({ empire, step, countries2026 = false
 
         <h3>Carte</h3>
         <ul className="legend__list">
-          {entities.map((n, i) => (
-            <li key={n}>
+          {entities.map((e) => (
+            <li key={`${e.index}-${e.name}`}>
               <span
                 className="legend__swatch"
-                style={{ background: variantFill(empire.color, i), borderColor: variantLine(empire.color, i) }}
+                style={{
+                  background: e.status === 'allied' ? 'transparent' : e.status === 'vassal' ? variantVassal(empire.color, e.index) : variantFill(empire.color, e.index),
+                  borderColor: variantLine(empire.color, e.index),
+                  borderStyle: e.status === 'core' ? undefined : 'dashed',
+                }}
                 aria-hidden="true"
               />
-              Territoire : {n}
+              Territoire : {e.name}{STATUS_LABEL[e.status]}
             </li>
           ))}
           <li>
@@ -101,11 +125,11 @@ export const Legend = memo(function Legend({ empire, step, countries2026 = false
           </li>
           <li>
             <span className="legend__dashes" aria-hidden="true" />{' '}
-            <span className="legend__soldier" aria-hidden="true" dangerouslySetInnerHTML={{ __html: soldierSvg('romains', 0) }} />
+            <span className="legend__soldier" aria-hidden="true" dangerouslySetInnerHTML={{ __html: soldierSvg(sprites.faction, 0) }} />
             {' '}Armées en marche (étiquette : camp et peuple)
           </li>
           <li>
-            <span className="legend__figure" aria-hidden="true" dangerouslySetInnerHTML={{ __html: characterSvg('senateur') }} />
+            <span className="legend__figure" aria-hidden="true" dangerouslySetInnerHTML={{ __html: characterSvg(sprites.archetype) }} />
             {' '}Personnage (nom et citation en bulle)
           </li>
           {countries2026 && (

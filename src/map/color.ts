@@ -18,9 +18,11 @@ function hexToHsl(hex: string): [number, number, number] {
   return [h, s, l];
 }
 
-function hsl(h: number, s: number, l: number): string {
+function hsl(h: number, s: number, l: number, a?: number): string {
   const clamp = (v: number) => Math.min(1, Math.max(0, v));
-  return `hsl(${((h % 360) + 360) % 360}, ${(clamp(s) * 100).toFixed(1)}%, ${(clamp(l) * 100).toFixed(1)}%)`;
+  const hh = ((h % 360) + 360) % 360;
+  if (a !== undefined) return `hsla(${hh}, ${(clamp(s) * 100).toFixed(1)}%, ${(clamp(l) * 100).toFixed(1)}%, ${a})`;
+  return `hsl(${hh}, ${(clamp(s) * 100).toFixed(1)}%, ${(clamp(l) * 100).toFixed(1)}%)`;
 }
 
 /** Couleur de remplissage de la i-ème entité : légère rotation de teinte alternée. */
@@ -38,4 +40,15 @@ export function variantLine(base: string, index: number): string {
   const sign = index % 2 === 1 ? 1 : -1;
   const k = Math.ceil(index / 2);
   return hsl(h + sign * 14 * k, s, 0.22);
+}
+
+/** Rapport d'opacité d'un État vassal par rapport à un territoire « core » (0,22 / 0,48). */
+export const VASSAL_ALPHA = 0.46;
+
+/** Remplissage d'un État vassal : même teinte, éclaircie, alpha réduit (le calque applique déjà FILL_OPACITY). */
+export function variantVassal(base: string, index: number): string {
+  const [h, s, l] = hexToHsl(base);
+  const sign = index === 0 ? 0 : index % 2 === 1 ? 1 : -1;
+  const k = Math.ceil(index / 2);
+  return hsl(h + sign * 14 * k, s * 0.95, Math.min(0.85, l + sign * 0.05 * k + (1 - l) * 0.35), VASSAL_ALPHA);
 }

@@ -113,6 +113,7 @@ export class CityLayer {
       const features: Feature<Point, CityProps>[] = [];
       for (const c of this.cities) {
         if (!isVisible(c, year)) continue;
+        if (c.empires && !c.empires.includes(this.empire.id)) continue;
         const cap = isCapital(c, this.empire.id, year);
         const label = nameAt(c, year);
         const sub = norm(label) === norm(c.modern) ? '' : `(${c.modern})`;
