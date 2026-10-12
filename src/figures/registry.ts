@@ -23,6 +23,14 @@ export const FACTION_COLORS = {
   'croises-latins': '#7b7f8c',
   ottomans: '#e07b1a',
   byzantins: '#7a1f5a',
+  francais: '#2f4fa8',
+  britanniques: '#c0282a',
+  autrichiens: '#a89f86',
+  prussiens: '#1c2b54',
+  russes: '#2f6a3a',
+  espagnols: '#d6a81c',
+  portugais: '#5e3b22',
+  polonais: '#a3123a',
 } satisfies Record<Faction, string>;
 
 /** Composant React (démo) du soldat d'une faction. */

@@ -128,7 +128,92 @@ const moustache = (c: string) =>
 const dome = (c: string) =>
   path('M11.6 9Q11.6 3.6 16 3.6Q20.4 3.6 20.4 9L19.6 9L19.6 7.4L12.4 7.4L12.4 9Z', c);
 
-/* ---------- les 16 factions ---------- */
+
+/* ---------- époque napoléonienne ---------- */
+
+/** Fusil à baïonnette porté à l'épaule : crosse, canon fin, baïonnette. */
+const musket = () =>
+  rect(24.5, 27, 2.6, 11, WOOD) + rect(25.4, 9, 1, 18.5, '#6e7378') +
+  path('M25.9 0.8L27 9L24.8 9Z', '#d6dadc') + rect(24.9, 16, 2, 1, STEEL, 0, 'stroke="none"');
+/** Shako : fût, visière, plaque, pompon. */
+const shako = (c: string, plate = GOLD, pom?: string, h = 5.8) =>
+  rect(12.2, 7 - h, 7.6, h, c, 0.8) + rect(11.5, 6.3, 9, 1.3, '#1f1a14', 0.4) +
+  circ(16, 4.6, 1, plate, 'stroke="none"') + (pom ? circ(16, 7 - h - 0.6, 1.3, pom) : '');
+/** Buffleteries blanches croisées. */
+const belts = (c = WHITE) => stroke('M12 15.5L21 26M21 15.5L12 26', c, 1.5) + circ(16.5, 20.7, 1.1, GOLD, 'stroke="none"');
+const ndeco = (c: string) => rect(10.2, 24.4, 11.6, 1.6, c, 0, 'stroke="none"');
+
+export const NAPO_SOLDIER_SPECS = {
+  francais: {
+    tunic: '#2f4f9b', legs: 'pants', legColor: WHITE, boots: '#2b2219',
+    deco: path('M11.5 14.8L16 14.8L16 25L11.5 25Z', WHITE, 'stroke="none"') + path('M21.5 14.8L16 14.8L16 25L21.5 25Z', WHITE, 'stroke="none"') +
+      path('M13 15L16 20.5L19 15', '#2f4f9b', 'stroke="none"') + belts() + ndeco('#c9473a'),
+    head: shako('#1f1a14', GOLD, RED),
+    weapon: musket(),
+  },
+  britanniques: {
+    tunic: '#b02a22', legs: 'pants', legColor: WHITE, boots: '#2b2219',
+    deco: rect(11, 14.2, 10, 2.4, '#efe6cc', 1, 'stroke="none"') + belts() + stroke('M14.5 22H17.5', GOLD, 0.8) + ndeco('#efe6cc'),
+    head: shako('#1f1a14', GOLD, undefined, 7.2) + path('M12.2 0.2L19.8 0.2L19.8 1.4L12.2 1.4Z', '#1f1a14'),
+    weapon: musket(),
+  },
+  autrichiens: {
+    tunic: '#ece6d2', legs: 'pants', legColor: '#8fb4d8', boots: '#2b2219',
+    deco: rect(11, 14.2, 10, 2.4, '#a8281e', 1, 'stroke="none"') + stroke('M16 17V25', '#bdb59a', 0.8) + belts('#cfc8b4') + ndeco('#bdb59a'),
+    head:
+      path('M11.6 7.6Q11.4 3 16 2.8Q20.6 3 20.4 7.6L19.8 6.6L12.2 6.6Z', '#1f1a14') +
+      path('M14 3Q16 -0.8 18 3Z', '#c9a02a') + stroke('M16 1.4V3', '#c9a02a', 1) + rect(11.5, 6.3, 9, 1.2, '#1f1a14', 0.4),
+    weapon: musket(),
+  },
+  prussiens: {
+    tunic: '#1f2f5a', legs: 'pants', legColor: '#d8d2c0', boots: '#2b2219',
+    deco: rect(11, 14.2, 10, 2.4, '#b02a22', 1, 'stroke="none"') + rect(10.4, 21.5, 2, 3.4, '#b02a22', 0, 'stroke="none"') +
+      stroke('M16 17V24.5', GOLD, 0.8) + belts('#e8e0c8') + ndeco('#b02a22'),
+    head: shako('#1f1a14', '#c9a02a', undefined, 6.4) + path('M18 1.4Q21 -1 22 2Q20 1.6 18 3Z', '#efe6cc'),
+    weapon: musket(),
+  },
+  russes: {
+    tunic: '#2f5f3a', legs: 'pants', legColor: WHITE, boots: '#2b2219',
+    deco: rect(11, 14.2, 10, 2.4, '#b02a22', 1, 'stroke="none"') + stroke('M12 15.5L21 26M21 15.5L12 26', WHITE, 1.4) +
+      circ(16.5, 20.7, 1, GOLD, 'stroke="none"') + ndeco('#b02a22'),
+    head:
+      path('M11.9 7Q11.8 3.4 13.4 2.2L18.6 2.2Q20.2 3.4 20.1 7Z', '#1f1a14') + rect(11.5, 6.3, 9, 1.3, '#1f1a14', 0.4) +
+      circ(16, 4.8, 1.1, GOLD, 'stroke="none"') + path('M15 2.2Q16 -1 17 2.2Z', '#efe6cc'),
+    weapon: musket(),
+  },
+  espagnols: {
+    skin: '#d2a070', tunic: '#7a5230', legs: 'pants', legColor: '#5e4a34', boots: '#3a2a1a',
+    deco:
+      path('M10.4 14L21.6 14L23 25L9 25Z', '#6b4423') + stroke('M12 16L20 16', '#4a2f1a', 0.8) +
+      rect(10.2, 23.2, 11.6, 2.2, '#c9473a', 0, 'stroke="none"') + stroke('M12 18L20 18', '#4a2f1a', 0.8),
+    head:
+      ell(16, 5.6, 8.4, 1.9, '#2b2219') + path('M12 5.8Q12 1 16 1Q20 1 20 5.8Z', '#2b2219') + stroke('M12.2 4.6H19.8', '#c9473a', 1) +
+      moustache('#2d2018'),
+    weapon: musket(),
+  },
+  portugais: {
+    tunic: '#7a4f2a', legs: 'pants', legColor: '#cfc8b4', boots: '#2b2219',
+    deco: rect(11, 14.2, 10, 2.4, '#2f5f9b', 1, 'stroke="none"') + belts('#e8e0c8') + ndeco('#3b2a1a'),
+    head:
+      path('M12.2 7L12 4L13 1.8L19 1.8L20 4L19.8 7Z', '#1f1a14') + rect(11.5, 6.3, 9, 1.3, '#1f1a14', 0.4) +
+      path('M12 4.4L20 4.4', 'none', `stroke="${GOLD}" stroke-width="0.8"`) + circ(16, 3.2, 0.9, '#c0392b', 'stroke="none"'),
+    weapon: musket(),
+  },
+  polonais: {
+    tunic: '#2a4a8a', legs: 'pants', legColor: '#cfc8b4', boots: '#2b2219',
+    deco:
+      path('M12.5 14.6L19.5 14.6L20 25L12 25Z', '#a3123a') + stroke('M16 15.5V24.5', GOLD, 0.8) + circ(14.4, 18, 0.5, GOLD, 'stroke="none"') +
+      circ(14.4, 21, 0.5, GOLD, 'stroke="none"') + circ(17.6, 18, 0.5, GOLD, 'stroke="none"') + circ(17.6, 21, 0.5, GOLD, 'stroke="none"') + ndeco('#a3123a'),
+    head:
+      path('M12.4 7.2L12.8 3.6L19.2 3.6L19.6 7.2Z', '#1f1a14') + rect(11.5, 6.4, 9, 1.2, '#1f1a14', 0.4) +
+      path('M12.8 3.6L10.4 0.4L21.6 0.4L19.2 3.6Z', '#a3123a') + stroke('M16 -1.4V0.6', GOLD, 1.2) + circ(16, -1.6, 1, '#efe6cc'),
+    weapon:
+      rect(25.4, 3, 1.2, 35, WOOD) + path('M26 -1.6L27.2 3L24.8 3Z', STEEL) +
+      path('M26.6 3.4L32.4 5L26.6 7.4Z', WHITE) + path('M26.6 7.4L32.4 9L26.6 11.2Z', '#c0392b'),
+  },
+} satisfies Partial<Record<Faction, Spec>>;
+
+/* ---------- les 16 factions antiques ---------- */
 
 export const SOLDIER_SPECS = {
   romains: {
@@ -293,6 +378,7 @@ export const SOLDIER_SPECS = {
       stroke('M8.5 16.8V29.2M8.5 17.2Q12.2 17.2 12.2 19.6Q12.2 22 8.5 22M5.4 21.4L11.6 28.2M11.6 21.4L5.4 28.2', GOLD, 0.9),
     weapon: spear(),
   },
+  ...NAPO_SOLDIER_SPECS,
 } satisfies Record<Faction, Spec>;
 
 /** Fabrique la chaîne SVG complète d'un soldat. */
