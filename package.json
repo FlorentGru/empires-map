@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.scripts.json --noEmit",
     "fetch:data": "bash scripts/fetch-basemaps.sh",
-    "build:data": "tsx scripts/build-territories.ts && tsx scripts/build-countries.ts",
+    "build:data": "tsx scripts/build-territories.ts && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts",
+    "build:sdf": "tsx scripts/build-sdf.ts",
     "build:countries": "tsx scripts/build-countries.ts"
   },
   "dependencies": {
@@ -22,9 +23,11 @@
     "@turf/turf": "^7.4.0",
     "@types/geojson": "^7946.0.16",
     "@types/node": "^26.6.5",
+    "@types/pngjs": "^6.0.5",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
+    "pngjs": "^7.0.0",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vite": "^8.3.4"
