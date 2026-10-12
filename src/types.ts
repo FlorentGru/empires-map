@@ -89,3 +89,17 @@ export interface City {
  * (FeatureCollection, properties { kind: 'gained' | 'lost' }).
  */
 export type DiffKind = 'gained' | 'lost';
+
+/**
+ * Animation « frontière qui glisse » entre une étape et la précédente :
+ * public/data/empires/<empire>/morph/<stepId>.geojson
+ * - kind 'stable' : partie commune aux deux étapes (t = 0)
+ * - kind 'gained' : bande gagnée ; t ∈ ]0,1] = distance normalisée à l'ANCIENNE frontière
+ *   (apparaît quand la progression p ≥ t)
+ * - kind 'lost'   : bande perdue ; t ∈ ]0,1] = distance normalisée à la NOUVELLE frontière
+ *   (disparaît quand p ≥ 1 − t, donc les bords extérieurs reculent en premier)
+ */
+export interface MorphProperties {
+  kind: 'stable' | 'gained' | 'lost';
+  t: number;
+}
