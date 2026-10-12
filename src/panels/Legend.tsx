@@ -9,6 +9,7 @@ import type { Empire, EventType, TimelineStep } from '../types';
 interface Props {
   empire: Empire;
   step: TimelineStep | undefined;
+  countries2026?: boolean;
 }
 
 const TYPES = Object.keys(EVENT_TYPES) as EventType[];
@@ -33,7 +34,7 @@ function isMobile(): boolean {
   return typeof window !== 'undefined' && window.innerWidth < 768;
 }
 
-export const Legend = memo(function Legend({ empire, step }: Props) {
+export const Legend = memo(function Legend({ empire, step, countries2026 = false }: Props) {
   const [open, setOpen] = useState(() => !isMobile());
   const titleId = useId();
   const bodyId = useId();
@@ -101,12 +102,18 @@ export const Legend = memo(function Legend({ empire, step }: Props) {
           <li>
             <span className="legend__dashes" aria-hidden="true" />{' '}
             <span className="legend__soldier" aria-hidden="true" dangerouslySetInnerHTML={{ __html: soldierSvg('romains', 0) }} />
-            {' '}Armées en marche
+            {' '}Armées en marche (étiquette : camp et peuple)
           </li>
           <li>
             <span className="legend__figure" aria-hidden="true" dangerouslySetInnerHTML={{ __html: characterSvg('senateur') }} />
             {' '}Personnage (nom et citation en bulle)
           </li>
+          {countries2026 && (
+            <li>
+              <span className="legend__dashes legend__dashes--border" aria-hidden="true" />
+              Frontières actuelles (2026)
+            </li>
+          )}
           <li>
             <span className="legend__city" aria-hidden="true" />
             Ville

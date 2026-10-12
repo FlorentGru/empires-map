@@ -9,12 +9,14 @@ import { makeTicks, makeYearScale } from './scale';
 interface Props {
   empire: Empire;
   player: Player;
+  /** Calque « Pays 2026 » actif : la date affichée est comparée aux frontières actuelles. */
+  compare2026?: boolean;
 }
 
 /** Largeur minimale par étape (px) : au-delà, la frise défile horizontalement. */
 const MIN_PX_PER_STEP = 22;
 
-export const Timeline = memo(function Timeline({ empire, player }: Props) {
+export const Timeline = memo(function Timeline({ empire, player, compare2026 = false }: Props) {
   const { steps } = empire;
   const active = steps[player.index];
   const trackRef = useRef<HTMLDivElement>(null);
@@ -84,7 +86,9 @@ export const Timeline = memo(function Timeline({ empire, player }: Props) {
           🔁
         </button>
         <div className="timeline__current" aria-live="polite">
-          <span className="timeline__year">{active ? formatYear(active.year) : ''}</span>
+          <span className="timeline__year">{active ? formatYear(active.year) : ''}
+            {compare2026 && <span className="timeline__compare"> · comparé à 2026</span>}
+          </span>
           <span className="timeline__title">{active?.title}</span>
           <span className="timeline__count">
             {player.index + 1} / {steps.length}

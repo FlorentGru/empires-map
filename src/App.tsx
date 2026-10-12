@@ -43,11 +43,14 @@ function Atlas({ empire, onSelectEmpire }: { empire: Empire; onSelectEmpire: (id
   const [tilted, setTilted] = useState(() => readBool('atlas.tilted', true));
   const [relief, setRelief] = useState(() => readBool('atlas.relief', true));
   const [figures, setFigures] = useState(() => readBool('atlas.figures', true));
+  const [countries2026, setCountries2026] = useState(() => readBool('atlas.countries2026', false));
   const togglePanel = useCallback(() => setPanelOpen((o) => !o), []);
   const toggleTilt = useCallback(() => setTilted((v) => { writeBool('atlas.tilted', !v); return !v; }), []);
   const toggleRelief = useCallback(() => setRelief((v) => { writeBool('atlas.relief', !v); return !v; }), []);
 
   const toggleFigures = useCallback(() => setFigures((v) => { writeBool('atlas.figures', !v); return !v; }), []);
+
+  const toggleCountries2026 = useCallback(() => setCountries2026((v) => { writeBool('atlas.countries2026', !v); return !v; }), []);
 
   useEffect(() => {
     writeUrlState(empire.id, step?.id);
@@ -56,12 +59,12 @@ function Atlas({ empire, onSelectEmpire }: { empire: Empire; onSelectEmpire: (id
   return (
     <div className="app">
       <h1 className="visually-hidden">Atlas des Empires — {empire.name}</h1>
-      <WorldMap empire={empire} index={player.index} panelOpen={panelOpen} tilted={tilted} relief={relief} figures={figures} speed={player.speed} />
+      <WorldMap empire={empire} index={player.index} panelOpen={panelOpen} tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} speed={player.speed} />
 
       <div className="top-bar">
         <EmpirePicker empires={EMPIRES} current={empire} onSelect={onSelectEmpire} />
         <div className="top-bar__right">
-          <ViewControls tilted={tilted} relief={relief} figures={figures} onToggleTilt={toggleTilt} onToggleRelief={toggleRelief} onToggleFigures={toggleFigures} />
+          <ViewControls tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} onToggleTilt={toggleTilt} onToggleRelief={toggleRelief} onToggleFigures={toggleFigures} onToggleCountries2026={toggleCountries2026} />
           <button type="button" className="btn btn--ghost about-btn" onClick={() => setAboutOpen(true)} aria-haspopup="dialog">
             À propos
           </button>
@@ -69,8 +72,8 @@ function Atlas({ empire, onSelectEmpire }: { empire: Empire; onSelectEmpire: (id
       </div>
 
       <EventPanel step={step} open={panelOpen} onToggle={togglePanel} />
-      <Legend empire={empire} step={step} />
-      <Timeline empire={empire} player={player} />
+      <Legend empire={empire} step={step} countries2026={countries2026} />
+      <Timeline empire={empire} player={player} compare2026={countries2026} />
       <AboutModal open={aboutOpen} onClose={() => setAboutOpen(false)} />
     </div>
   );

@@ -1,5 +1,5 @@
 import { Marker, type GeoJSONSource, type Map as MapLibreMap } from 'maplibre-gl';
-import type { ArmyMove, TimelineStep } from '../types';
+import type { ArmyMove, Faction, TimelineStep } from '../types';
 import { FACTION_COLORS, soldierSvg } from './sprites';
 
 const SRC = 'army-paths';
@@ -8,6 +8,34 @@ const TOTAL_MS = 6000;
 const MAX_MARKERS = 16;
 const FAR_KM = 1500;
 const RETREAT = 0.15;
+
+const PEOPLE: Record<Faction, string> = {
+  romains: 'Romains',
+  latins: 'Latins',
+  samnites: 'Samnites',
+  carthaginois: 'Carthaginois',
+  gaulois: 'Gaulois',
+  'grecs-macedoniens': 'Macédoniens',
+  germains: 'Germains',
+  'parthes-perses': 'Parthes / Perses',
+  egyptiens: 'Égyptiens',
+  daces: 'Daces',
+  'goths-vandales': 'Goths / Vandales',
+  arabes: 'Arabes',
+  'turcs-seldjoukides': 'Seldjoukides',
+  'croises-latins': 'Croisés',
+  ottomans: 'Ottomans',
+  byzantins: 'Byzantins',
+};
+const esc = (v: string) => v.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const plain = (v: string) => v.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+
+/** Étiquette d'armée : camp en gras, peuple en petit (une seule fois s'ils sont identiques). */
+function labelHtml(a: ArmyMove): string {
+  const people = PEOPLE[a.faction];
+  const sub = plain(a.side) === plain(people) ? '' : `<small>${esc(people)}</small>`;
+  return `<strong>${esc(a.side)}</strong>${sub}<span class="army-label__win" aria-hidden="true">🏆</span>`;
+}
 
 const easeInOut = (x: number) => (x < 0.5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2);
 const clamp01 = (x: number) => (x < 0 ? 0 : x > 1 ? 1 : x);
@@ -46,6 +74,8 @@ interface ArmyRun {
   lastDir: number;
   els: HTMLDivElement[];
   settled: boolean;
+  winner: boolean;
+  label: HTMLElement | null;
 }
 
 /**
@@ -114,7 +144,8 @@ export class ArmyLayer {
       const el = document.createElement('div');
       el.className = 'clash-marker';
       el.setAttribute('aria-hidden', 'true');
-      el.innerHTML = '<span class="clash-marker__dust"></span><span class="clash-marker__icon">⚔</span>';
+      const title = armies.map((a) => esc(a.side)).join(' ⚔ ');
+      el.innerHTML = `<span class="clash-marker__title">${title}</span><span class="clash-marker__dust"></span><span class="clash-marker__icon">⚔</span>`;
       this.clashEl = el;
       this.clash = new Marker({ element: el }).setLngLat(end).addTo(this.map);
     }
@@ -172,12 +203,15 @@ export class ArmyLayer {
       el.className = 'army-marker';
       el.setAttribute('aria-hidden', 'true');
       el.innerHTML =
+        (i === 0
+          ? `<span class="army-label army-label--${lastDir > 0 ? 'left' : 'right'}" style="--c:${FACTION_COLORS[a.faction]}">${labelHtml(a)}</span>`
+          : '') +
         '<div class="army-marker__form"><div class="army-marker__shake"><div class="army-marker__flip">' +
         `<span class="army-frame army-frame--0">${soldierSvg(a.faction, 0)}</span>` +
         `<span class="army-frame army-frame--1">${soldierSvg(a.faction, 1)}</span>` +
         `<span class="army-frame army-frame--down">${soldierSvg(a.faction, 0, 'vaincu')}</span>` +
         '</div></div></div>';
-      const form = el.firstElementChild as HTMLDivElement;
+      const form = el.querySelector('.army-marker__form') as HTMLDivElement;
       // Léger écart vers l'arrière du front pour que les deux camps ne se recouvrent pas au contact.
       form.style.transform = `translate(${dx - lastDir * 16}px, ${dy}px)`;
       form.style.setProperty('--delay', `${-(i * 0.13).toFixed(2)}s`);
@@ -186,8 +220,9 @@ export class ArmyLayer {
       const marker = new Marker({ element: el, anchor: 'bottom' }).setLngLat(a.path[0]!).addTo(this.map);
       soldiers.push({ marker, form, lngLat: [0, 0] });
     }
+    const label = els[0]?.querySelector<HTMLElement>('.army-label') ?? null;
     const startDist = total > FAR_KM ? total * (2 / 3) : 0;
-    return { path: a.path, cum, total, startDist, loser, retreat, soldiers, segIdx: -1, flipped: false, lastDir, els, settled: false };
+    return { path: a.path, cum, total, startDist, loser, retreat, soldiers, segIdx: -1, flipped: false, lastDir, els, settled: false, winner: a.winner === true, label };
   }
 
   /** Point à la distance d le long du chemin, écrit dans out (aucune allocation). */
@@ -244,7 +279,9 @@ export class ArmyLayer {
   }
 
   private markFinal() {
+    const anyWinner = this.runs.some((r) => r.winner);
     for (const r of this.runs) {
+      if (anyWinner && r.winner) r.label?.classList.add('army-label--winner');
       this.settle(r, r.loser);
       for (const el of r.els) el.classList.add('army-marker--final');
     }
@@ -275,10 +312,14 @@ export class ArmyLayer {
         this.setPhase('army-marker--clash', true);
         this.setClash(true);
       }
-      if (p >= 0.5 && this.phase < 3) {
+      const hasWinnerRun = this.runs.some((r) => r.winner);
+    if (p >= 0.5 && this.phase < 3) {
         this.phase = 3;
         this.setPhase('army-marker--clash', false);
-        for (const r of this.runs) if (r.loser) for (const el of r.els) el.classList.add('army-marker--defeated');
+        for (const r of this.runs) {
+          if (r.loser) for (const el of r.els) el.classList.add('army-marker--defeated');
+          else if (hasWinnerRun) r.label?.classList.add('army-label--winner');
+        }
       }
       if (p >= 0.5 && p < 2 / 3) for (const r of this.runs) if (r.loser) this.place(r, 1, back, 1, false);
     }

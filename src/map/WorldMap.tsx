@@ -8,6 +8,7 @@ import type { City, Empire } from '../types';
 import { addLand, baseStyle, DEM_SOURCE, MAX_BOUNDS, TERRAIN_EXAGGERATION } from './basemapStyle';
 import { ArmyLayer } from './armyLayer';
 import { CityLayer } from './cityLayer';
+import { CountriesLayer } from './countriesLayer';
 import { DiffHighlight } from './diff';
 import { EventMarker } from './eventMarker';
 import { FigureLayer } from './figureLayer';
@@ -27,6 +28,8 @@ interface Props {
   speed?: number;
   /** Figurines : armées en marche et personnages d'époque. */
   figures?: boolean;
+  /** Calque « Pays 2026 » : frontières et noms actuels. */
+  countries2026?: boolean;
 }
 
 interface MapLayers {
@@ -36,6 +39,7 @@ interface MapLayers {
   marker: EventMarker;
   armies: ArmyLayer;
   figures: FigureLayer;
+  countries: CountriesLayer;
 }
 
 export const TILT_PITCH = 50;
@@ -48,7 +52,23 @@ function viewPadding(panelOpen: boolean): PaddingOptions {
   return { top: 80, left: 20, right: panelOpen ? 420 : 20, bottom: 150 };
 }
 
-export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, figures: figuresOn = true }: Props) {
+/** Attend la fin du vol de caméra en cours, ou au plus tard 1,4 s (/ vitesse) après le début de l'étape. */
+function cameraGate(map: MapLibreMap, stepStart: number, speed: number): Promise<void> {
+  const limit = 1400 / Math.max(1, speed);
+  const wait = limit - (performance.now() - stepStart);
+  if (!map.isMoving() || wait <= 0) return Promise.resolve();
+  return new Promise((resolve) => {
+    const done = () => {
+      window.clearTimeout(timer);
+      map.off('moveend', done);
+      resolve();
+    };
+    const timer = window.setTimeout(done, wait);
+    map.on('moveend', done);
+  });
+}
+
+export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, figures: figuresOn = true, countries2026 = false }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const [layers, setLayers] = useState<MapLayers | null>(null);
@@ -63,6 +83,8 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
   const speedRef = useRef(speed);
   speedRef.current = speed;
   const morphingRef = useRef(false);
+  const countriesRef = useRef(countries2026);
+  countriesRef.current = countries2026;
 
   // Création de la carte (une seule fois).
   useEffect(() => {
@@ -96,7 +118,10 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
           const mobile = window.innerWidth < 768;
           return { left: 0, top: 70, right: panelOpenRef.current && !mobile ? 420 : 0 };
         }),
+        // Après territoires / morph, avant les villes (ajoutées plus tard, donc au-dessus).
+        countries: new CountriesLayer(map),
       };
+      created.countries.setVisible(countriesRef.current);
       setLayers(created);
       void addLand(map);
     });
@@ -107,6 +132,7 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
       created?.marker.destroy();
       created?.armies.destroy();
       created?.figures.destroy();
+      created?.countries.destroy();
       map.remove();
       mapRef.current = null;
     };
@@ -191,18 +217,25 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
     const morphPromise: Promise<MorphCollection | null> =
       morphStep && !reduced ? loadMorph(empire.id, morphStep.id) : Promise.resolve(null);
     const diffPromise: Promise<DiffCollection | null> = forward ? loadDiff(empire.id, step.id) : Promise.resolve(null);
-    Promise.all([loadTerritory(empire.id, step.territory), diffPromise, morphPromise]).then(([fc, diff, morph]) => {
+    const stepStart = performance.now();
+    void Promise.all([loadTerritory(empire.id, step.territory), diffPromise, morphPromise]).then(async ([fc, diff, morph]) => {
       if (stale) return;
       if (shownRef.current === key) return; // même territoire : rien à animer
       shownRef.current = key;
       layers.morph.hide();
       if (morph) {
-        // Frontière qui glisse ; bascule instantanée sur le territoire final à la fin.
+        // Frontière qui glisse : l'ancien territoire reste affiché le temps du chargement et du vol de caméra,
+        // puis le morph prend le relais ; bascule instantanée sur le territoire final à la fin.
+        const from: 0 | 1 = forward ? 0 : 1;
         layers.diff.stop();
         layers.territories.prepare(fc, empire.color);
-        layers.territories.suspend();
         morphingRef.current = true;
-        layers.morph.play(morph, empire.color, forward ? 0 : 1, MORPH_MS / Math.max(1, speedRef.current), () => {
+        await layers.morph.prepare(morph, empire.color, from);
+        if (stale) return;
+        await cameraGate(map, stepStart, speedRef.current);
+        if (stale) return;
+        layers.territories.suspend();
+        layers.morph.play(from, MORPH_MS / Math.max(1, speedRef.current), () => {
           morphingRef.current = false;
           layers.territories.commit(true);
           layers.morph.hide();
@@ -226,6 +259,11 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
       }
     };
   }, [layers, empire, index, step]);
+
+  // Calque « Pays 2026 ».
+  useEffect(() => {
+    layers?.countries.setVisible(countries2026);
+  }, [layers, countries2026]);
 
   // Figurines : armées et personnages de l'étape, lancés avec la caméra (le flyTo dure 2 s).
   useEffect(() => {
