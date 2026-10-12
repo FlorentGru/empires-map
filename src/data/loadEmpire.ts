@@ -74,6 +74,7 @@ export function preloadAround(empire: Empire, index: number): void {
     if (i === index + 1) {
       void loadDiff(empire.id, step.id);
       void loadMorph(empire.id, step.id);
+      void loadSdf(empire.id, step.id);
     }
   }
 }
@@ -141,6 +142,56 @@ export function loadMorph(empireId: string, stepId: string): Promise<MorphCollec
       }
     })();
     morphCache.set(url, p);
+  }
+  return p;
+}
+
+/* ---------- Champs de distance (glissement continu, étape n-1 → n) ---------- */
+
+export interface SdfMeta {
+  bounds: [[number, number], [number, number], [number, number], [number, number]];
+  width: number;
+  height: number;
+  rangeKm?: number;
+  gainKm?: number;
+  lossKm?: number;
+}
+
+export interface SdfData {
+  bitmap: ImageBitmap;
+  meta: SdfMeta;
+}
+
+const sdfCache = new Map<string, Promise<SdfData | null>>();
+
+export function sdfUrl(empireId: string, stepId: string, ext: 'png' | 'json'): string {
+  return `${import.meta.env.BASE_URL}data/empires/${encodeURIComponent(empireId)}/sdf/${encodeURIComponent(stepId)}.${ext}`;
+}
+
+/** PNG + métadonnées du champ de distance ; null si absent ou invalide (repli sur les bandes puis le fondu). */
+export function loadSdf(empireId: string, stepId: string): Promise<SdfData | null> {
+  const key = `${empireId}/${stepId}`;
+  let p = sdfCache.get(key);
+  if (!p) {
+    p = (async () => {
+      try {
+        if (typeof createImageBitmap !== 'function') return null;
+        const metaRes = await fetch(sdfUrl(empireId, stepId, 'json'));
+        if (!metaRes.ok) return null;
+        const meta = (await metaRes.json()) as SdfMeta; // le serveur de dev renvoie index.html si absent : json() échoue
+        if (!Array.isArray(meta?.bounds) || meta.bounds.length !== 4 || !(meta.width > 0) || !(meta.height > 0)) return null;
+        const imgRes = await fetch(sdfUrl(empireId, stepId, 'png'));
+        if (!imgRes.ok) return null;
+        const blob = await imgRes.blob();
+        if (!blob.type.startsWith('image/')) return null;
+        const bitmap = await createImageBitmap(blob, { premultiplyAlpha: 'none', colorSpaceConversion: 'none' });
+        return { bitmap, meta };
+      } catch {
+        sdfCache.delete(key);
+        return null;
+      }
+    })();
+    sdfCache.set(key, p);
   }
   return p;
 }

@@ -12,6 +12,7 @@ import { CountriesLayer } from './countriesLayer';
 import { DiffHighlight } from './diff';
 import { EventMarker } from './eventMarker';
 import { FigureLayer } from './figureLayer';
+import { GLIDE_HANDOFF_MS, GLIDE_MS, GlideLayer } from './glideLayer';
 import { MORPH_MS, MorphLayer } from './morphLayer';
 import { TerritoryLayers } from './territoryLayers';
 
@@ -35,6 +36,7 @@ interface Props {
 interface MapLayers {
   territories: TerritoryLayers;
   morph: MorphLayer;
+  glide: GlideLayer;
   diff: DiffHighlight;
   marker: EventMarker;
   armies: ArmyLayer;
@@ -111,6 +113,8 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
       created = {
         territories: new TerritoryLayers(map),
         morph: new MorphLayer(map),
+        // Raster SDF : juste sous les couches territoire.
+        glide: new GlideLayer(map, 'territory-a-fill'),
         diff: new DiffHighlight(map),
         marker: new EventMarker(map),
         armies: new ArmyLayer(map),
@@ -122,12 +126,14 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
         countries: new CountriesLayer(map),
       };
       created.countries.setVisible(countriesRef.current);
+      if (import.meta.env.DEV) (window as unknown as { __glide: GlideLayer }).__glide = created.glide;
       setLayers(created);
       void addLand(map);
     });
     return () => {
       created?.territories.destroy();
       created?.morph.destroy();
+      created?.glide.destroy();
       created?.diff.destroy();
       created?.marker.destroy();
       created?.armies.destroy();
@@ -223,13 +229,36 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
       if (shownRef.current === key) return; // même territoire : rien à animer
       shownRef.current = key;
       layers.morph.hide();
+      layers.glide.hide();
+      if (morphStep && !reduced) {
+        // Glissement continu par champs de distance (SDF), si les fichiers existent.
+        const from: 0 | 1 = forward ? 0 : 1;
+        layers.diff.stop();
+        layers.territories.prepare(fc, empire.color);
+        morphingRef.current = true;
+        const sdfOk = await layers.glide.prepare(empire.id, morphStep.id, empire.color, from);
+        if (stale) return;
+        if (sdfOk) {
+          layers.glide.setMode('sdf');
+          await cameraGate(map, stepStart, speedRef.current);
+          if (stale) return;
+          layers.territories.suspend();
+          layers.glide.play(from, GLIDE_MS / Math.max(1, speedRef.current), () => {
+            morphingRef.current = false;
+            layers.territories.commit(false, GLIDE_HANDOFF_MS);
+            layers.glide.fadeOut(GLIDE_HANDOFF_MS);
+          });
+          return;
+        }
+      }
       if (morph) {
-        // Frontière qui glisse : l'ancien territoire reste affiché le temps du chargement et du vol de caméra,
+        // Repli : bandes. L'ancien territoire reste affiché le temps du chargement et du vol de caméra,
         // puis le morph prend le relais ; bascule instantanée sur le territoire final à la fin.
         const from: 0 | 1 = forward ? 0 : 1;
         layers.diff.stop();
         layers.territories.prepare(fc, empire.color);
         morphingRef.current = true;
+        layers.glide.setMode('bandes');
         await layers.morph.prepare(morph, empire.color, from);
         if (stale) return;
         await cameraGate(map, stepStart, speedRef.current);
@@ -242,6 +271,8 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
         });
         return;
       }
+      morphingRef.current = false;
+      layers.glide.setMode('fondu');
       layers.territories.show(fc, empire.color);
       if (diff) layers.diff.flash(diff);
       else layers.diff.stop();
@@ -254,6 +285,7 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
         // Animation interrompue : on l'annule ; l'étape suivante (re)posera son territoire.
         morphingRef.current = false;
         layers.morph.hide();
+        layers.glide.hide();
         shownRef.current = null;
         layers.territories.commit(true);
       }

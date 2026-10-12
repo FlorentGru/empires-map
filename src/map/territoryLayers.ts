@@ -93,9 +93,21 @@ export class TerritoryLayers {
   }
 
   /** Affiche l'emplacement préparé (fondu, ou instantané pour la bascule depuis le morph). */
-  commit(instant = false) {
+  commit(instant = false, fadeMs?: number) {
     const next = this.prepared;
     if (!next) return;
+    if (fadeMs !== undefined && !instant) {
+      // Fondu court (relais depuis le glissement), puis retour à la durée habituelle.
+      for (const slot of SLOTS) this.setTransition(slot, fadeMs);
+      this.setOpacity(next, 1);
+      if (this.active) this.setOpacity(this.active, 0);
+      this.active = next;
+      this.prepared = null;
+      window.setTimeout(() => {
+        for (const slot of SLOTS) this.setTransition(slot, CROSSFADE_MS);
+      }, fadeMs + 30);
+      return;
+    }
     const apply = () => {
       this.setOpacity(next, 1);
       if (this.active) this.setOpacity(this.active, 0);

@@ -243,7 +243,7 @@ function buildEmpire(id: string) {
       B = nb;
     }
 
-    const png = new PNG({ width: W, height: H, colorType: 2, inputColorType: 6, inputHasAlpha: false, deflateLevel: 9 });
+    const png = new PNG({ width: W, height: H, colorType: 2, inputColorType: 6, inputHasAlpha: true, deflateLevel: 9 });
     const q = (v: number) => 128 + Math.max(-128, Math.min(127, Math.round(((v * midKm) / rangeKm) * 127)));
     let cntCur = 0, cntPrev = 0; areaCur = 0; areaPrev = 0;
     for (let k = 0; k < N; k++) {
@@ -257,7 +257,7 @@ function buildEmpire(id: string) {
       if (gg >= 128) { cntPrev++; areaPrev += a; }
     }
     void q; void cntCur; void cntPrev;
-    buf = PNG.sync.write(png, { colorType: 2, inputColorType: 6, inputHasAlpha: false, deflateLevel: 9 });
+    buf = PNG.sync.write(png, { colorType: 2, inputColorType: 6, inputHasAlpha: true, deflateLevel: 9 });
     if (buf.length > MAX_BYTES && scale < 2) continue; // trop lourd : grille moins fine
     fs.writeFileSync(path.join(outDir, `${step.id}.png`), buf);
     fs.writeFileSync(
