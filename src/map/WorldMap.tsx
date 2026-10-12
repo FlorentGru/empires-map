@@ -50,6 +50,7 @@ export function WorldMap({ empire, index, panelOpen }: Props) {
       maxPitch: 0,
     });
     mapRef.current = map;
+    if (import.meta.env.DEV) (window as unknown as { __map: MapLibreMap }).__map = map;
     let created: MapLayers | null = null;
     map.on('load', () => {
       created = {
