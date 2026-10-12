@@ -49,6 +49,8 @@ export interface Empire {
   start: number;
   end: number;
   description: string;
+  /** Vue initiale (défaut : Méditerranée). */
+  view?: { center: [number, number]; zoom: number };
   steps: TimelineStep[];
 }
 
@@ -59,6 +61,8 @@ export interface TerritoryProperties {
   name: string;
   /** Année de l'instantané historical-basemaps utilisé, ou de l'override. */
   sourceYear: number;
+  /** core = territoire de l'empire ; vassal = État satellite/client ; allied = allié contraint. */
+  status?: 'core' | 'vassal' | 'allied';
 }
 
 /** Nom d'une ville sur une période (bornes incluses ; absentes = ouvert). */
@@ -85,6 +89,8 @@ export interface City {
   rank: 1 | 2 | 3;
   /** Périodes où la ville est capitale de l'empire suivi. */
   capitalOf?: { empire: string; from: number; to: number }[];
+  /** Si présent, la ville n'est affichée que pour ces empires (ex. lieux de bataille). */
+  empires?: string[];
 }
 
 /**
@@ -112,21 +118,29 @@ export interface MorphProperties {
 export type Faction =
   | 'romains' | 'latins' | 'samnites' | 'carthaginois' | 'gaulois' | 'grecs-macedoniens'
   | 'germains' | 'parthes-perses' | 'egyptiens' | 'daces' | 'goths-vandales' | 'arabes'
-  | 'turcs-seldjoukides' | 'croises-latins' | 'ottomans' | 'byzantins';
+  | 'turcs-seldjoukides' | 'croises-latins' | 'ottomans' | 'byzantins'
+  // Époque napoléonienne
+  | 'francais' | 'britanniques' | 'autrichiens' | 'prussiens' | 'russes' | 'espagnols'
+  | 'portugais' | 'polonais';
 
 export const FACTIONS: Faction[] = [
   'romains', 'latins', 'samnites', 'carthaginois', 'gaulois', 'grecs-macedoniens',
   'germains', 'parthes-perses', 'egyptiens', 'daces', 'goths-vandales', 'arabes',
   'turcs-seldjoukides', 'croises-latins', 'ottomans', 'byzantins',
+  'francais', 'britanniques', 'autrichiens', 'prussiens', 'russes', 'espagnols',
+  'portugais', 'polonais',
 ];
 
 export type Archetype =
   | 'senateur' | 'consul' | 'empereur' | 'empereur-byzantin' | 'roi' | 'pape'
-  | 'chef-barbare' | 'calife' | 'sultan' | 'doge';
+  | 'chef-barbare' | 'calife' | 'sultan' | 'doge'
+  // Époque napoléonienne
+  | 'empereur-napoleon' | 'general' | 'roi-moderne' | 'tsar' | 'diplomate' | 'amiral';
 
 export const ARCHETYPES: Archetype[] = [
   'senateur', 'consul', 'empereur', 'empereur-byzantin', 'roi', 'pape',
   'chef-barbare', 'calife', 'sultan', 'doge',
+  'empereur-napoleon', 'general', 'roi-moderne', 'tsar', 'diplomate', 'amiral',
 ];
 
 export interface ArmyMove {
