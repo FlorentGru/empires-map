@@ -189,7 +189,9 @@ export function Gallery({ onClose, onNavigate }: Props) {
   useEffect(() => {
     const d = ref.current;
     if (d && !d.open) d.showModal();
-    return () => d?.close();
+    // Pas de d.close() au nettoyage : en StrictMode (dev), React nettoie puis rejoue l'effet,
+    // et l'événement `close` déclencherait onClose, ce qui démonterait aussitôt la galerie.
+    // Le dialogue disparaît de toute façon avec le composant.
   }, []);
 
   const q = norm(query.trim());
@@ -248,11 +250,11 @@ export function Gallery({ onClose, onNavigate }: Props) {
       aria-labelledby="gallery-title"
       onClose={onClose}
       onCancel={(e) => {
-        // Échap : d'abord le détail, ensuite la galerie.
-        if (selectedRef.current) {
-          e.preventDefault();
-          back();
-        }
+        // Échap : d'abord le détail, ensuite la galerie. On ferme nous-mêmes (onClose explicite)
+        // plutôt que de compter sur l'événement `close` du dialogue, non relayé de façon fiable.
+        e.preventDefault();
+        if (selectedRef.current) back();
+        else onClose();
       }}
     >
       <header className="gallery__head">
@@ -279,7 +281,7 @@ export function Gallery({ onClose, onNavigate }: Props) {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />
-          <button type="button" className="btn btn--ghost" onClick={() => ref.current?.close()}>
+          <button type="button" className="btn btn--ghost" onClick={onClose}>
             Fermer
           </button>
         </div>

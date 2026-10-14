@@ -6,6 +6,7 @@ import { loadDiff, loadMorph, loadNeighbors, loadTerritory, preloadAround, type 
 import { prefersReducedMotion } from '../lib/motion';
 import type { City, Empire, TimelineStep } from '../types';
 import { addLand, baseStyle, DEM_SOURCE, MAX_BOUNDS, TERRAIN_EXAGGERATION } from './basemapStyle';
+import { FOCUS_ENTITY_EVENT, geometryBounds, type FocusEntityDetail } from './focusEntity';
 import { ArmyLayer, CHAIN_WALK_MS, continuedArmies } from './armyLayer';
 import { CityLayer } from './cityLayer';
 import { CountriesLayer } from './countriesLayer';
@@ -223,6 +224,35 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
   }, [layers, terrainOn]);
 
   const step = empire.steps[index];
+
+  // Clic sur un territoire de la légende : on cadre la carte sur cette entité.
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map) return;
+    const onFocus = (ev: Event) => {
+      const { territory, index: entity } = (ev as CustomEvent<FocusEntityDetail>).detail;
+      void loadTerritory(empire.id, territory).then((fc) => {
+        const g = fc.features[entity]?.geometry;
+        if (!g || (g.type !== 'Polygon' && g.type !== 'MultiPolygon')) return;
+        const [w, s, e, n] = geometryBounds(g);
+        if (!Number.isFinite(w)) return;
+        map.fitBounds(
+          [
+            [w, s],
+            [e, n],
+          ],
+          {
+            padding: viewPadding(panelOpenRef.current),
+            pitch: tiltedRef.current ? TILT_PITCH : 0,
+            maxZoom: 7,
+            duration: prefersReducedMotion() ? 0 : 1200,
+          },
+        );
+      });
+    };
+    window.addEventListener(FOCUS_ENTITY_EVENT, onFocus);
+    return () => window.removeEventListener(FOCUS_ENTITY_EVENT, onFocus);
+  }, [layers, empire.id]);
 
   // Réaction au changement d'étape : territoire, diff, marqueur, caméra.
   useEffect(() => {

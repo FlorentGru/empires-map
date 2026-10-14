@@ -1,3 +1,4 @@
+import { focusEntity } from '../map/focusEntity';
 import { memo, useEffect, useId, useState, type CSSProperties } from 'react';
 import { loadTerritory } from '../data/loadEmpire';
 import { EVENT_TYPES } from '../lib/eventTypes';
@@ -98,6 +99,12 @@ export const Legend = memo(function Legend({ empire, step, countries2026 = false
         <ul className="legend__list">
           {entities.slice(0, MAX_ENTITIES).map((e) => (
             <li key={`${e.index}-${e.name}`}>
+              <button
+                type="button"
+                className="legend__entity"
+                onClick={() => step && focusEntity(step.territory, e.index)}
+                title={`Zoomer sur ${e.name}`}
+              >
               <span
                 className="legend__swatch"
                 style={{
@@ -108,6 +115,7 @@ export const Legend = memo(function Legend({ empire, step, countries2026 = false
                 aria-hidden="true"
               />
               Territoire : {e.name}{STATUS_LABEL[e.status]}
+              </button>
             </li>
           ))}
           {entities.length > MAX_ENTITIES && <li>… et {entities.length - MAX_ENTITIES} autres entités</li>}
