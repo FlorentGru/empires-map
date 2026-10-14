@@ -9,14 +9,15 @@
     "preview": "vite preview",
     "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.scripts.json --noEmit",
     "fetch:data": "bash scripts/fetch-basemaps.sh",
-    "build:data": "tsx scripts/build-territories.ts && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts",
+    "build:data": "tsx scripts/build-territories.ts && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts && tsx scripts/build-neighbors.ts",
+    "build:neighbors": "tsx scripts/build-neighbors.ts",
     "build:sdf": "tsx scripts/build-sdf.ts",
     "build:countries": "tsx scripts/build-countries.ts",
-    "build:data:rome": "tsx scripts/build-territories.ts --empire rome && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire rome",
-    "build:data:napoleon": "tsx scripts/build-territories.ts --empire napoleon && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire napoleon",
+    "build:data:rome": "tsx scripts/build-territories.ts --empire rome && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire rome && tsx scripts/build-neighbors.ts --empire rome",
+    "build:data:napoleon": "tsx scripts/build-territories.ts --empire napoleon && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire napoleon && tsx scripts/build-neighbors.ts --empire napoleon",
     "build:territories": "tsx scripts/build-territories.ts",
     "start": "vite --open",
-    "build:data:china": "tsx scripts/build-territories.ts --empire china && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire china"
+    "build:data:china": "tsx scripts/build-territories.ts --empire china && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire china && tsx scripts/build-neighbors.ts --empire china"
   },
   "dependencies": {
     "maplibre-gl": "^6.14.0",
@@ -33,6 +34,7 @@
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
     "pngjs": "^7.0.0",
+    "polylabel": "^2.1.0",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vite": "^8.3.4"
