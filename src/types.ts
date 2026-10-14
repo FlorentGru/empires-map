@@ -205,3 +205,10 @@ export interface Figure {
   /** Position sur la carte ; défaut = location de l'étape. */
   position?: [number, number];
 }
+
+/**
+ * Voisins de l'époque d'une étape : public/data/empires/<empire>/neighbors/<stepId>.geojson
+ * - Point { kind: 'label', name (FR), area (km²) } au pôle d'inaccessibilité de l'État voisin ;
+ * - (Multi)LineString { kind: 'border' } : contour simplifié de l'État voisin.
+ */
+export type NeighborProperties = { kind: 'label'; name: string; area: number } | { kind: 'border' };
