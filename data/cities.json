@@ -1378,5 +1378,1329 @@
     "empires": [
       "napoleon"
     ]
+  },
+  {
+    "id": "anyang",
+    "modern": "Anyang, Chine",
+    "names": [
+      {
+        "name": "Yin",
+        "to": -1046
+      },
+      {
+        "name": "Anyang",
+        "from": -1045
+      }
+    ],
+    "coords": [
+      114.32,
+      36.12
+    ],
+    "founded": -1300,
+    "rank": 2,
+    "capitalOf": [
+      {
+        "empire": "china",
+        "from": -1300,
+        "to": -1046
+      }
+    ],
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "haojing",
+    "modern": "Haojing, près de Xi'an, Chine",
+    "names": [
+      {
+        "name": "Haojing"
+      }
+    ],
+    "coords": [
+      108.75,
+      34.22
+    ],
+    "founded": -1046,
+    "destroyed": -771,
+    "rank": 3,
+    "capitalOf": [
+      {
+        "empire": "china",
+        "from": -1046,
+        "to": -771
+      }
+    ],
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "xianyang",
+    "modern": "Xianyang, Chine",
+    "names": [
+      {
+        "name": "Xianyang"
+      }
+    ],
+    "coords": [
+      108.7,
+      34.33
+    ],
+    "founded": -350,
+    "destroyed": -206,
+    "rank": 2,
+    "capitalOf": [
+      {
+        "empire": "china",
+        "from": -350,
+        "to": -206
+      }
+    ],
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "xian",
+    "modern": "Xi'an, Chine",
+    "names": [
+      {
+        "name": "Chang'an",
+        "from": -202,
+        "to": 581
+      },
+      {
+        "name": "Daxing",
+        "from": 582,
+        "to": 617
+      },
+      {
+        "name": "Chang'an",
+        "from": 618,
+        "to": 1368
+      },
+      {
+        "name": "Xi'an",
+        "from": 1369
+      }
+    ],
+    "coords": [
+      108.94,
+      34.27
+    ],
+    "founded": -202,
+    "rank": 1,
+    "capitalOf": [
+      {
+        "empire": "china",
+        "from": -202,
+        "to": 8
+      },
+      {
+        "empire": "china",
+        "from": 190,
+        "to": 195
+      },
+      {
+        "empire": "china",
+        "from": 581,
+        "to": 904
+      }
+    ],
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "luoyang",
+    "modern": "Luoyang, Chine",
+    "names": [
+      {
+        "name": "Luoyi",
+        "to": -771
+      },
+      {
+        "name": "Luoyang",
+        "from": -770
+      }
+    ],
+    "coords": [
+      112.45,
+      34.62
+    ],
+    "founded": -1040,
+    "rank": 1,
+    "capitalOf": [
+      {
+        "empire": "china",
+        "from": -770,
+        "to": -256
+      },
+      {
+        "empire": "china",
+        "from": 25,
+        "to": 190
+      },
+      {
+        "empire": "china",
+        "from": 220,
+        "to": 311
+      },
+      {
+        "empire": "china",
+        "from": 494,
+        "to": 534
+      },
+      {
+        "empire": "china",
+        "from": 605,
+        "to": 617
+      },
+      {
+        "empire": "china",
+        "from": 684,
+        "to": 705
+      }
+    ],
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "kaifeng",
+    "modern": "Kaifeng, Chine",
+    "names": [
+      {
+        "name": "Daliang",
+        "to": -226
+      },
+      {
+        "name": "Bianzhou",
+        "from": -225,
+        "to": 906
+      },
+      {
+        "name": "Bianjing",
+        "from": 907,
+        "to": 1126
+      },
+      {
+        "name": "Kaifeng",
+        "from": 1127
+      }
+    ],
+    "coords": [
+      114.31,
+      34.8
+    ],
+    "founded": -361,
+    "rank": 1,
+    "capitalOf": [
+      {
+        "empire": "china",
+        "from": 907,
+        "to": 923
+      },
+      {
+        "empire": "china",
+        "from": 936,
+        "to": 1127
+      }
+    ],
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "hangzhou",
+    "modern": "Hangzhou, Chine",
+    "names": [
+      {
+        "name": "Hangzhou",
+        "from": 589,
+        "to": 1128
+      },
+      {
+        "name": "Lin'an",
+        "from": 1129,
+        "to": 1276
+      },
+      {
+        "name": "Hangzhou",
+        "from": 1277
+      }
+    ],
+    "coords": [
+      120.16,
+      30.27
+    ],
+    "founded": 589,
+    "rank": 1,
+    "capitalOf": [
+      {
+        "empire": "china",
+        "from": 1138,
+        "to": 1276
+      }
+    ],
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "nankin",
+    "modern": "Nankin (Nanjing), Chine",
+    "names": [
+      {
+        "name": "Jianye",
+        "from": 212,
+        "to": 312
+      },
+      {
+        "name": "Jiankang",
+        "from": 313,
+        "to": 588
+      },
+      {
+        "name": "Jinling",
+        "from": 589,
+        "to": 1367
+      },
+      {
+        "name": "Nanjing",
+        "from": 1368
+      }
+    ],
+    "coords": [
+      118.78,
+      32.06
+    ],
+    "founded": 212,
+    "rank": 1,
+    "capitalOf": [
+      {
+        "empire": "china",
+        "from": 229,
+        "to": 280
+      },
+      {
+        "empire": "china",
+        "from": 317,
+        "to": 589
+      },
+      {
+        "empire": "china",
+        "from": 1368,
+        "to": 1420
+      }
+    ],
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "pekin",
+    "modern": "Pékin (Beijing), Chine",
+    "names": [
+      {
+        "name": "Ji",
+        "to": -222
+      },
+      {
+        "name": "Youzhou",
+        "from": -221,
+        "to": 937
+      },
+      {
+        "name": "Nanjing (Yanjing)",
+        "from": 938,
+        "to": 1152
+      },
+      {
+        "name": "Zhongdu",
+        "from": 1153,
+        "to": 1271
+      },
+      {
+        "name": "Dadu",
+        "from": 1272,
+        "to": 1367
+      },
+      {
+        "name": "Beiping",
+        "from": 1368,
+        "to": 1402
+      },
+      {
+        "name": "Beijing",
+        "from": 1403
+      }
+    ],
+    "coords": [
+      116.4,
+      39.9
+    ],
+    "founded": -1045,
+    "rank": 1,
+    "capitalOf": [
+      {
+        "empire": "china",
+        "from": 1272,
+        "to": 1368
+      },
+      {
+        "empire": "china",
+        "from": 1421,
+        "to": 1912
+      }
+    ],
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "canton",
+    "modern": "Canton (Guangzhou), Chine",
+    "names": [
+      {
+        "name": "Panyu",
+        "to": 225
+      },
+      {
+        "name": "Guangzhou",
+        "from": 226,
+        "to": 1500
+      },
+      {
+        "name": "Canton",
+        "from": 1501
+      }
+    ],
+    "coords": [
+      113.26,
+      23.13
+    ],
+    "founded": -214,
+    "rank": 2,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "chengdu",
+    "modern": "Chengdu, Chine",
+    "names": [
+      {
+        "name": "Chengdu"
+      }
+    ],
+    "coords": [
+      104.07,
+      30.67
+    ],
+    "founded": -316,
+    "rank": 2,
+    "capitalOf": [
+      {
+        "empire": "china",
+        "from": 221,
+        "to": 263
+      }
+    ],
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "dunhuang",
+    "modern": "Dunhuang, Chine",
+    "names": [
+      {
+        "name": "Dunhuang"
+      }
+    ],
+    "coords": [
+      94.66,
+      40.14
+    ],
+    "founded": -111,
+    "rank": 3,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "kashgar",
+    "modern": "Kachgar (Kashi), Chine",
+    "names": [
+      {
+        "name": "Shule",
+        "to": 900
+      },
+      {
+        "name": "Kachgar",
+        "from": 901
+      }
+    ],
+    "coords": [
+      75.99,
+      39.47
+    ],
+    "founded": -200,
+    "rank": 2,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "turfan",
+    "modern": "Tourfan, Chine",
+    "names": [
+      {
+        "name": "Gaochang",
+        "to": 1300
+      },
+      {
+        "name": "Tourfan",
+        "from": 1301
+      }
+    ],
+    "coords": [
+      89.19,
+      42.95
+    ],
+    "founded": -108,
+    "rank": 3,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "lhassa",
+    "modern": "Lhassa, Tibet",
+    "names": [
+      {
+        "name": "Lhassa"
+      }
+    ],
+    "coords": [
+      91.12,
+      29.65
+    ],
+    "founded": 633,
+    "rank": 2,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "karakorum",
+    "modern": "Karakorum, Mongolie",
+    "names": [
+      {
+        "name": "Karakorum"
+      }
+    ],
+    "coords": [
+      102.84,
+      47.2
+    ],
+    "founded": 1220,
+    "destroyed": 1388,
+    "rank": 2,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "shangdu",
+    "modern": "Shangdu (Xanadu), Mongolie intérieure",
+    "names": [
+      {
+        "name": "Kaiping",
+        "from": 1256,
+        "to": 1262
+      },
+      {
+        "name": "Shangdu",
+        "from": 1263
+      }
+    ],
+    "coords": [
+      116.18,
+      42.36
+    ],
+    "founded": 1256,
+    "destroyed": 1369,
+    "rank": 2,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "datong",
+    "modern": "Datong, Chine",
+    "names": [
+      {
+        "name": "Pingcheng",
+        "to": 494
+      },
+      {
+        "name": "Datong",
+        "from": 495
+      }
+    ],
+    "coords": [
+      113.3,
+      40.09
+    ],
+    "founded": -200,
+    "rank": 2,
+    "capitalOf": [
+      {
+        "empire": "china",
+        "from": 398,
+        "to": 494
+      }
+    ],
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "shenyang",
+    "modern": "Shenyang (Moukden), Chine",
+    "names": [
+      {
+        "name": "Shenyang (Moukden)"
+      }
+    ],
+    "coords": [
+      123.43,
+      41.8
+    ],
+    "founded": -300,
+    "rank": 2,
+    "capitalOf": [
+      {
+        "empire": "china",
+        "from": 1625,
+        "to": 1644
+      }
+    ],
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "shanhaiguan",
+    "modern": "Shanhaiguan, Hebei, Chine",
+    "names": [
+      {
+        "name": "Shanhaiguan"
+      }
+    ],
+    "coords": [
+      119.77,
+      40.0
+    ],
+    "founded": 1381,
+    "rank": 3,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "quanzhou",
+    "modern": "Quanzhou, Chine",
+    "names": [
+      {
+        "name": "Zayton"
+      }
+    ],
+    "coords": [
+      118.6,
+      24.9
+    ],
+    "founded": 718,
+    "rank": 2,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "yangzhou",
+    "modern": "Yangzhou, Chine",
+    "names": [
+      {
+        "name": "Guangling",
+        "to": 588
+      },
+      {
+        "name": "Yangzhou",
+        "from": 589
+      }
+    ],
+    "coords": [
+      119.42,
+      32.39
+    ],
+    "founded": -486,
+    "rank": 2,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "suzhou",
+    "modern": "Suzhou, Chine",
+    "names": [
+      {
+        "name": "Gusu",
+        "to": 588
+      },
+      {
+        "name": "Suzhou",
+        "from": 589
+      }
+    ],
+    "coords": [
+      120.62,
+      31.3
+    ],
+    "founded": -514,
+    "rank": 2,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "shanghai",
+    "modern": "Shanghai, Chine",
+    "names": [
+      {
+        "name": "Shanghai"
+      }
+    ],
+    "coords": [
+      121.47,
+      31.23
+    ],
+    "founded": 1291,
+    "rank": 2,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "hong-kong",
+    "modern": "Hong Kong, Chine",
+    "names": [
+      {
+        "name": "Hong Kong"
+      }
+    ],
+    "coords": [
+      114.17,
+      22.28
+    ],
+    "founded": 1841,
+    "rank": 2,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "macao",
+    "modern": "Macao, Chine",
+    "names": [
+      {
+        "name": "Macao"
+      }
+    ],
+    "coords": [
+      113.54,
+      22.19
+    ],
+    "founded": 1557,
+    "rank": 3,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "taipei",
+    "modern": "Taipei, Taïwan",
+    "names": [
+      {
+        "name": "Mengjia",
+        "to": 1874
+      },
+      {
+        "name": "Taipei",
+        "from": 1875
+      }
+    ],
+    "coords": [
+      121.56,
+      25.04
+    ],
+    "founded": 1709,
+    "rank": 2,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "tainan",
+    "modern": "Tainan, Taïwan",
+    "names": [
+      {
+        "name": "Fort Zeelandia (Anping)",
+        "to": 1661
+      },
+      {
+        "name": "Tainan",
+        "from": 1662
+      }
+    ],
+    "coords": [
+      120.2,
+      23.0
+    ],
+    "founded": 1624,
+    "rank": 3,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "seoul",
+    "modern": "Séoul, Corée du Sud",
+    "names": [
+      {
+        "name": "Wiryeseong",
+        "to": 475
+      },
+      {
+        "name": "Hanyang",
+        "from": 476,
+        "to": 1393
+      },
+      {
+        "name": "Hanseong",
+        "from": 1394
+      }
+    ],
+    "coords": [
+      126.98,
+      37.57
+    ],
+    "founded": -18,
+    "rank": 2,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "pyongyang",
+    "modern": "Pyongyang, Corée du Nord",
+    "names": [
+      {
+        "name": "Pyongyang"
+      }
+    ],
+    "coords": [
+      125.75,
+      39.02
+    ],
+    "founded": -108,
+    "rank": 2,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "kyoto",
+    "modern": "Kyoto, Japon",
+    "names": [
+      {
+        "name": "Heian-kyō",
+        "from": 794,
+        "to": 1868
+      },
+      {
+        "name": "Kyoto",
+        "from": 1869
+      }
+    ],
+    "coords": [
+      135.77,
+      35.01
+    ],
+    "founded": 794,
+    "rank": 2,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "nara",
+    "modern": "Nara, Japon",
+    "names": [
+      {
+        "name": "Heijō-kyō",
+        "from": 710,
+        "to": 784
+      },
+      {
+        "name": "Nara",
+        "from": 785
+      }
+    ],
+    "coords": [
+      135.8,
+      34.69
+    ],
+    "founded": 710,
+    "rank": 3,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "hanoi",
+    "modern": "Hanoï, Vietnam",
+    "names": [
+      {
+        "name": "Songping",
+        "from": 679,
+        "to": 1009
+      },
+      {
+        "name": "Thăng Long",
+        "from": 1010,
+        "to": 1830
+      },
+      {
+        "name": "Hanoï",
+        "from": 1831
+      }
+    ],
+    "coords": [
+      105.85,
+      21.03
+    ],
+    "founded": 679,
+    "rank": 2,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "samarcande",
+    "modern": "Samarcande, Ouzbékistan",
+    "names": [
+      {
+        "name": "Marakanda",
+        "to": 700
+      },
+      {
+        "name": "Samarcande",
+        "from": 701
+      }
+    ],
+    "coords": [
+      66.96,
+      39.65
+    ],
+    "founded": -500,
+    "rank": 2,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "yinchuan",
+    "modern": "Yinchuan, Chine",
+    "names": [
+      {
+        "name": "Xingzhou",
+        "from": 1020,
+        "to": 1037
+      },
+      {
+        "name": "Xingqing",
+        "from": 1038,
+        "to": 1227
+      },
+      {
+        "name": "Yinchuan",
+        "from": 1228
+      }
+    ],
+    "coords": [
+      106.23,
+      38.49
+    ],
+    "founded": 1020,
+    "rank": 2,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "kaesong",
+    "modern": "Kaesong, Corée du Nord",
+    "names": [
+      {
+        "name": "Songak",
+        "from": 919
+      }
+    ],
+    "coords": [
+      126.55,
+      37.97
+    ],
+    "founded": 919,
+    "rank": 3,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "taiyuan",
+    "modern": "Taiyuan, Chine",
+    "names": [
+      {
+        "name": "Jinyang",
+        "to": 589
+      },
+      {
+        "name": "Taiyuan",
+        "from": 590
+      }
+    ],
+    "coords": [
+      112.55,
+      37.87
+    ],
+    "founded": -497,
+    "rank": 3,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "qufu",
+    "modern": "Qufu, Chine",
+    "names": [
+      {
+        "name": "Qufu"
+      }
+    ],
+    "coords": [
+      117.0,
+      35.6
+    ],
+    "founded": -1000,
+    "rank": 3,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "tianjin",
+    "modern": "Tianjin, Chine",
+    "names": [
+      {
+        "name": "Tianjin"
+      }
+    ],
+    "coords": [
+      117.2,
+      39.1
+    ],
+    "founded": 1404,
+    "rank": 3,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "chengde",
+    "modern": "Chengde (Jehol), Chine",
+    "names": [
+      {
+        "name": "Rehe",
+        "to": 1732
+      },
+      {
+        "name": "Chengde",
+        "from": 1733
+      }
+    ],
+    "coords": [
+      117.94,
+      40.98
+    ],
+    "founded": 1703,
+    "rank": 3,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "nertchinsk",
+    "modern": "Nertchinsk, Russie",
+    "names": [
+      {
+        "name": "Nertchinsk"
+      }
+    ],
+    "coords": [
+      116.5,
+      51.95
+    ],
+    "founded": 1653,
+    "rank": 3,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "humen",
+    "modern": "Humen, Chine",
+    "names": [
+      {
+        "name": "Bocca Tigris"
+      }
+    ],
+    "coords": [
+      113.67,
+      22.82
+    ],
+    "founded": 1400,
+    "rank": 3,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "pescadores",
+    "modern": "Penghu (Pescadores), Taïwan",
+    "names": [
+      {
+        "name": "Penghu"
+      }
+    ],
+    "coords": [
+      119.57,
+      23.57
+    ],
+    "founded": 1200,
+    "rank": 3,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "hakata",
+    "modern": "Fukuoka (Hakata), Japon",
+    "names": [
+      {
+        "name": "Hakata"
+      }
+    ],
+    "coords": [
+      130.4,
+      33.6
+    ],
+    "founded": 700,
+    "rank": 3,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "muye",
+    "modern": "Muye, près de Weihui, Henan, Chine",
+    "names": [
+      {
+        "name": "Muye"
+      }
+    ],
+    "coords": [
+      114.2,
+      35.5
+    ],
+    "founded": -1100,
+    "rank": 3,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "changping",
+    "modern": "Changping, Gaoping, Shanxi, Chine",
+    "names": [
+      {
+        "name": "Changping"
+      }
+    ],
+    "coords": [
+      112.93,
+      35.8
+    ],
+    "founded": -300,
+    "rank": 3,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "gaixia",
+    "modern": "Gaixia, Lingbi, Anhui, Chine",
+    "names": [
+      {
+        "name": "Gaixia"
+      }
+    ],
+    "coords": [
+      117.9,
+      33.5
+    ],
+    "founded": -300,
+    "rank": 3,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "chibi",
+    "modern": "Chibi, Hubei, Chine",
+    "names": [
+      {
+        "name": "Chibi (Falaise rouge)"
+      }
+    ],
+    "coords": [
+      113.67,
+      29.72
+    ],
+    "founded": -200,
+    "rank": 3,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "salsu",
+    "modern": "Cheongcheon (Salsu), Corée du Nord",
+    "names": [
+      {
+        "name": "Salsu"
+      }
+    ],
+    "coords": [
+      125.65,
+      39.62
+    ],
+    "founded": -100,
+    "rank": 3,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "talas",
+    "modern": "Taraz (Talas), Kazakhstan",
+    "names": [
+      {
+        "name": "Talas"
+      }
+    ],
+    "coords": [
+      71.37,
+      42.52
+    ],
+    "founded": -100,
+    "rank": 3,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "xiangyang",
+    "modern": "Xiangyang, Hubei, Chine",
+    "names": [
+      {
+        "name": "Xiangyang"
+      }
+    ],
+    "coords": [
+      112.13,
+      32.04
+    ],
+    "founded": -200,
+    "rank": 3,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "yamen",
+    "modern": "Yamen, Jiangmen, Guangdong, Chine",
+    "names": [
+      {
+        "name": "Yamen"
+      }
+    ],
+    "coords": [
+      113.0,
+      22.2
+    ],
+    "founded": -300,
+    "rank": 3,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "tumu",
+    "modern": "Tumu, Huailai, Hebei, Chine",
+    "names": [
+      {
+        "name": "Tumu"
+      }
+    ],
+    "coords": [
+      115.57,
+      40.2
+    ],
+    "founded": -200,
+    "rank": 3,
+    "empires": [
+      "china"
+    ]
+  },
+  {
+    "id": "sarhu",
+    "modern": "Sarhu, près de Fushun, Liaoning, Chine",
+    "names": [
+      {
+        "name": "Sarhu"
+      }
+    ],
+    "coords": [
+      124.2,
+      41.9
+    ],
+    "founded": 1400,
+    "rank": 3,
+    "empires": [
+      "china"
+    ]
   }
 ]
