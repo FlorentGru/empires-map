@@ -373,7 +373,8 @@
             ]
           ],
           "strength": 2,
-          "winner": true
+          "winner": true,
+          "id": "hannibal"
         },
         {
           "side": "Rome",
@@ -455,24 +456,24 @@
           "faction": "carthaginois",
           "path": [
             [
-              -0.98,
-              37.62
+              9.55,
+              45.02
             ],
             [
-              4.8,
-              43.9
-            ],
-            [
-              6.95,
-              45.1
+              11.2,
+              44
             ],
             [
               12.1,
               43.15
             ],
             [
-              14.6,
-              41.9
+              13.6,
+              42.4
+            ],
+            [
+              15,
+              41.6
             ],
             [
               16.19,
@@ -480,7 +481,8 @@
             ]
           ],
           "strength": 2,
-          "winner": true
+          "winner": true,
+          "id": "hannibal"
         },
         {
           "side": "Rome",

@@ -51,7 +51,7 @@
           "role": "Général, futur Premier consul",
           "faction": "francais",
           "archetype": "general",
-          "quote": "Souvenez-vous que je marche accompagné du dieu de la fortune et du dieu de la guerre (19 brumaire)",
+          "quote": "Souvenez-vous que je marche accompagné du dieu de la fortune et du dieu de la guerre (attribué, 19 brumaire)",
           "position": [
             2.2211,
             48.8445
@@ -129,7 +129,7 @@
               45.87
             ],
             [
-              8.0,
+              8,
               45.3
             ],
             [
@@ -244,7 +244,7 @@
       "summary": "La Grande-Bretagne et la France signent une paix qui ne durera qu'un an, tandis que Bonaparte fait consolider son pouvoir et annexer le Piémont.",
       "details": "Après huit années de guerre, la Grande-Bretagne, privée de ses alliés continentaux, négocie avec la France. Le **traité d'Amiens** est signé le **25 mars 1802** par **Joseph Bonaparte** et lord **Cornwallis**, avec l'Espagne et la République batave. Londres rend la plupart de ses conquêtes coloniales (Martinique, Guadeloupe, Cap), ne conservant que **Trinidad** et **Ceylan**, et promet d'évacuer Malte. La France évacue Naples et les États pontificaux.\n\nLa paix est populaire des deux côtés de la Manche, mais le contentieux reste vif : la France demeure maîtresse de la Belgique, des Pays-Bas satellites et du Rhin, et Londres craint pour ses marchés.\n\nBonaparte profite de la paix pour renforcer son régime : le **Concordat** (1801) réconcilie l'Église, la **Légion d'honneur** est créée en mai 1802, et un sénatus-consulte fait de lui **Consul à vie** (août 1802). Dans la foulée, il annexe l'**île d'Elbe** (août) et le **Piémont** (septembre), divisé en six départements. La République cisalpine devient la **République italienne** (janvier 1802, comices de Lyon), avec Bonaparte comme président ; les Suisses se voient imposer l'**Acte de médiation** (1803).\n\nLa rupture, en mai 1803, tient à Malte, aux annexions et à l'expédition de Saint-Domingue.",
       "consequences": [
-        "Le Piémont, l'île d'Elbe et Parme sont rattachés à la France en 1802 : l'empire territorial dépasse les limites naturelles.",
+        "Le Piémont et l'île d'Elbe sont rattachés à la France en 1802 (Parme passe sous administration française, annexion formelle en 1808) : l'empire territorial dépasse les limites naturelles.",
         "La Cisalpine devient la République italienne, présidée par Bonaparte lui-même.",
         "La Suisse, objet d'une intervention, passe sous médiation française (1803).",
         "La paix, qui ne règle ni Malte ni le commerce, cède la place à la guerre en mai 1803."
@@ -303,7 +303,7 @@
       "consequences": [
         "L'Empire héréditaire est fondé ; Napoléon cumule dès 1805 les titres d'empereur des Français et de roi d'Italie.",
         "La France de 1804 compte environ 108 départements, de la Rhénanie à l'Adriatique, sans compter les États satellites.",
-        "Gênes (juin 1805) et Parme (1805) sont annexées ; Lucques passe à Élisa Bonaparte.",
+        "Gênes (juin 1805) est annexée ; Lucques passe à Élisa Bonaparte.",
         "La monarchie impériale précipite la formation de la troisième coalition (Angleterre, Russie, Autriche)."
       ],
       "territory": "sacre-1804",
@@ -439,7 +439,7 @@
           "path": [
             [
               -7.2,
-              36.0
+              36
             ],
             [
               -6.8,
@@ -494,7 +494,7 @@
       ],
       "zoom": 5,
       "summary": "Le 2 décembre 1805, Napoléon écrase les armées russe et autrichienne sur le plateau de Pratzen, chef-d'œuvre tactique qui démantèle la troisième coalition.",
-      "details": "La Grande Armée quitte Boulogne en août 1805 et réalise une marche fulgurante vers le Danube. **Mack** capitule à **Ulm** (20 octobre) avec 27 000 hommes, et Vienne est occupée le 13 novembre. Mais l'armée russe de **Koutouzov**, renforcée par celle du tsar **Alexandre Ier** et de l'empereur **François II**, se concentre à Olmütz, en Moravie.\n\nNapoléon, loin de ses bases, feint la faiblesse : il abandonne le plateau de **Pratzen** et dégarnit sa droite. Les Alliés, conseillés par Weyrother, tombent dans le piège. Le **2 décembre 1805**, à l'aube, ils dégarnissent le plateau pour tourner la droite française, défendue par la seule division de **Legrand** ; **Davout** arrive en renfort après une marche forcée depuis Vienne. **Soult** monte alors à l'assaut de Pratzen, coupant l'armée alliée en deux, puis la rabat vers les étangs glacés de Satschan.\n\nLes pertes alliées sont d'environ 27 000 hommes, contre 9 000 pour les Français. Le lendemain, François II demande l'armistice. Le **traité de Presbourg** (26 décembre) oblige l'Autriche à céder la **Vénétie, l'Istrie et la Dalmatie** au royaume d'Italie, le **Tyrol** à la Bavière, et reconnaît les nouveaux royaumes de **Bavière** et de **Wurtemberg**. L'Empire romain germanique, déjà mourant, n'a plus que quelques mois à vivre. Le soir de la bataille, Napoléon adresse à ses soldats : « Soldats, je suis content de vous. »",
+      "details": "La Grande Armée quitte Boulogne en août 1805 et réalise une marche fulgurante vers le Danube. **Mack** capitule à **Ulm** (20 octobre) avec 27 000 hommes, et Vienne est occupée le 13 novembre. Mais l'armée russe de **Koutouzov**, renforcée par celle du tsar **Alexandre Ier** et de l'empereur **François II**, se concentre à Olmütz, en Moravie.\n\nNapoléon, loin de ses bases, feint la faiblesse : il abandonne le plateau de **Pratzen** et dégarnit sa droite. Les Alliés, conseillés par Weyrother, tombent dans le piège. Le **2 décembre 1805**, à l'aube, ils dégarnissent le plateau pour tourner la droite française, défendue par la seule division de **Legrand** ; **Davout** arrive en renfort après une marche forcée depuis Vienne. **Soult** monte alors à l'assaut de Pratzen, coupant l'armée alliée en deux, puis la rabat vers les étangs glacés de Satschan.\n\nLes pertes alliées sont d'environ 27 000 hommes, contre 9 000 pour les Français. Le lendemain, François II demande l'armistice. Le **traité de Presbourg** (26 décembre) oblige l'Autriche à céder la **Vénétie, l'Istrie et la Dalmatie** au royaume d'Italie, le **Tyrol** à la Bavière, et reconnaît les nouveaux royaumes de **Bavière** et de **Wurtemberg**. L'Empire romain germanique, déjà mourant, n'a plus que quelques mois à vivre. Au lendemain de la bataille, Napoléon adresse à ses soldats : « Soldats, je suis content de vous. »",
       "consequences": [
         "La troisième coalition s'effondre ; la Russie se retire en Pologne, l'Autriche signe la paix à Presbourg (26 décembre).",
         "Le royaume d'Italie s'agrandit de la Vénétie, de l'Istrie et de la Dalmatie ; le Tyrol et le Vorarlberg passent à la Bavière.",
@@ -551,7 +551,8 @@
             ]
           ],
           "strength": 3,
-          "winner": true
+          "winner": true,
+          "id": "grande-armee"
         },
         {
           "side": "Armée de Russie",
@@ -562,7 +563,7 @@
               49.59
             ],
             [
-              17.0,
+              17,
               49.35
             ],
             [
@@ -570,7 +571,8 @@
               49.15
             ]
           ],
-          "strength": 3
+          "strength": 3,
+          "id": "armee-russe"
         },
         {
           "side": "Armée d'Autriche",
@@ -589,7 +591,8 @@
               49.15
             ]
           ],
-          "strength": 2
+          "strength": 2,
+          "id": "armee-autrichienne"
         }
       ],
       "figures": [
@@ -613,7 +616,7 @@
       "type": "traité",
       "location": [
         8.27,
-        50.0
+        50
       ],
       "zoom": 4.5,
       "summary": "Seize princes allemands s'unissent sous le protectorat de Napoléon et quittent le Saint-Empire, que François II dissout le 6 août 1806.",
@@ -647,7 +650,7 @@
           "quote": "Je suis le protecteur de l'Allemagne du Sud ; qu'elle me soit fidèle (formule libre)",
           "position": [
             8.27,
-            50.0
+            50
           ]
         },
         {
@@ -684,7 +687,7 @@
         50.928
       ],
       "zoom": 5,
-      "summary": "Le 14 octobre 1806, Napoléon bat les Prussiens à Iéna pendant que Davout détruit leur gros à Auerstaedt ; Berlin tombe douze jours plus tard.",
+      "summary": "Le 14 octobre 1806, Napoléon bat les Prussiens à Iéna pendant que Davout détruit leur gros à Auerstaedt ; Berlin tombe treize jours plus tard.",
       "details": "Frédéric-Guillaume III de Prusse, poussé par la reine **Louise** et le parti belliciste, déclare la guerre à la France en octobre 1806 après avoir mal supporté la création de la Confédération du Rhin. L'armée prussienne, héritière de Frédéric II mais figée dans la tactique linéaire, se concentre en Thuringe sous le **duc de Brunswick** et le prince de **Hohenlohe**.\n\nNapoléon la prend de vitesse : il franchit la forêt de Thuringe avec la Grande Armée et la bat à **Saalfeld** (10 octobre), où meurt le prince Louis-Ferdinand. Le **14 octobre 1806**, deux batailles ont lieu simultanément : à **Iéna**, Napoléon, croyant affronter le gros de l'armée prussienne, écrase **Hohenlohe** ; à **Auerstaedt**, quelques kilomètres plus au nord, le maréchal **Davout** et ses 27 000 hommes tiennent tête à 60 000 Prussiens du duc de Brunswick (mortellement blessé) et les mettent en déroute.\n\nLa poursuite est impitoyable : en trois semaines, presque toute l'armée prussienne est capturée ou dispersée. **Napoléon entre dans Berlin le 27 octobre**, visite le tombeau de Frédéric II à Potsdam et décrète à Berlin le **Blocus continental** (21 novembre). Les forteresses de Magdebourg, Stettin et Küstrin se rendent sans combat. Le roi de Prusse se réfugie à Königsberg, en espérant l'appui des Russes.",
       "consequences": [
         "Écroulement militaire de la Prusse : la plus grande partie du royaume est occupée en quelques semaines.",
@@ -725,6 +728,18 @@
           "faction": "francais",
           "path": [
             [
+              16.78,
+              49.13
+            ],
+            [
+              13.4,
+              48.6
+            ],
+            [
+              11.6,
+              48.2
+            ],
+            [
               10.9,
               49.9
             ],
@@ -742,7 +757,8 @@
             ]
           ],
           "strength": 3,
-          "winner": true
+          "winner": true,
+          "id": "grande-armee"
         },
         {
           "side": "Armée de Hohenlohe",
@@ -950,7 +966,7 @@
           "faction": "espagnols",
           "path": [
             [
-              -6.0,
+              -6,
               37.39
             ],
             [
@@ -958,8 +974,8 @@
               37.7
             ],
             [
-              -4.0,
-              38.0
+              -4,
+              38
             ],
             [
               -3.78,
@@ -1006,7 +1022,7 @@
       ],
       "zoom": 5,
       "summary": "Deux mois après Essling, Napoléon bat l'archiduc Charles à Wagram ; Vienne signe la paix de Schönbrunn et cède des provinces, dont les Provinces illyriennes.",
-      "details": "L'Autriche profite de la guerre d'Espagne pour attaquer en avril 1809 : c'est la **cinquième coalition**. Napoléon réagit en cinq jours (campagne d'Eckmühl) et reprend Vienne le 13 mai. Mais ses ponts sur le Danube sont détruits à **Essling** (21-22 mai), où meurt **Lannes**, et l'archiduc **Charles** conserve l'initiative.\n\nNapoléon prépare minutieusement la revanche. Dans la nuit du 4 au 5 juillet, il fait passer 150 000 hommes sur la rive gauche du Danube depuis l'île de **Lobau**. Le **6 juillet 1809**, à **Wagram**, l'une des plus grandes batailles de l'époque, il pilonne les Autrichiens avec une grande batterie de 100 canons, soutenue par l'attaque de **Macdonald** et le flanquement de **Davout**. Charles se retire en bon ordre, mais l'Autriche est épuisée.\n\nL'armistice de Znaïm (12 juillet) conduit au **traité de Schönbrunn** (**14 octobre 1809**). L'Autriche perd environ 3,5 millions de sujets : **Salzbourg** et la Haute-Autriche à l'ouest du Traun à la Bavière, la **Galicie occidentale** au duché de Varsovie, un cercle de Tarnopol à la Russie, et surtout la **Carniole, la Carinthie occidentale, Trieste, la Croatie civile et la Dalmatie**, qui forment les **Provinces illyriennes** annexées à l'Empire, de Laybach (Ljubljana) à Raguse.\n\nParallèlement, le 17 mai 1809, Napoléon avait annexé les **États pontificaux** à l'Empire ; Pie VII fut arrêté le 6 juillet, jour de Wagram.",
+      "details": "L'Autriche profite de la guerre d'Espagne pour attaquer en avril 1809 : c'est la **cinquième coalition**. Napoléon réagit en cinq jours (campagne d'Eckmühl) et reprend Vienne le 13 mai. Mais ses ponts sur le Danube sont détruits à **Essling** (21-22 mai), où **Lannes** est mortellement blessé, et l'archiduc **Charles** conserve l'initiative.\n\nNapoléon prépare minutieusement la revanche. Dans la nuit du 4 au 5 juillet, il fait passer 150 000 hommes sur la rive gauche du Danube depuis l'île de **Lobau**. Le **6 juillet 1809**, à **Wagram**, l'une des plus grandes batailles de l'époque, il pilonne les Autrichiens avec une grande batterie de 100 canons, soutenue par l'attaque de **Macdonald** et le flanquement de **Davout**. Charles se retire en bon ordre, mais l'Autriche est épuisée.\n\nL'armistice de Znaïm (12 juillet) conduit au **traité de Schönbrunn** (**14 octobre 1809**). L'Autriche perd environ 3,5 millions de sujets : **Salzbourg** et la Haute-Autriche à l'ouest du Traun à la Bavière, la **Galicie occidentale** au duché de Varsovie, un cercle de Tarnopol à la Russie, et surtout la **Carniole, la Carinthie occidentale, Trieste, la Croatie civile et la Dalmatie**, qui forment les **Provinces illyriennes** annexées à l'Empire, de Laybach (Ljubljana) à Raguse.\n\nParallèlement, le 17 mai 1809, Napoléon avait annexé les **États pontificaux** à l'Empire ; Pie VII fut arrêté le 6 juillet, jour de Wagram.",
       "consequences": [
         "Les Provinces illyriennes (Carniole, Trieste, Croatie civile, Dalmatie, Raguse) sont annexées à l'Empire : accès direct à l'Adriatique orientale.",
         "Les États pontificaux sont annexés (sénatus-consulte du 17 mai 1809) : Rome devient la « seconde ville de l'Empire » ; Pie VII est arrêté le 6 juillet.",
@@ -1046,6 +1062,22 @@
           "faction": "francais",
           "path": [
             [
+              11.59,
+              50.93
+            ],
+            [
+              13.4,
+              52.5
+            ],
+            [
+              21,
+              54.4
+            ],
+            [
+              12.1,
+              49
+            ],
+            [
               16.37,
               48.21
             ],
@@ -1063,15 +1095,20 @@
             ]
           ],
           "strength": 3,
-          "winner": true
+          "winner": true,
+          "id": "grande-armee"
         },
         {
           "side": "Armée d'Autriche",
           "faction": "autrichiens",
           "path": [
             [
+              16.88,
+              49.15
+            ],
+            [
               15.9,
-              49.0
+              49
             ],
             [
               16.4,
@@ -1086,7 +1123,8 @@
               48.31
             ]
           ],
-          "strength": 3
+          "strength": 3,
+          "id": "armee-autrichienne"
         }
       ],
       "figures": [
@@ -1211,6 +1249,14 @@
           "faction": "francais",
           "path": [
             [
+              16.57,
+              48.3
+            ],
+            [
+              16.9,
+              52.4
+            ],
+            [
               23.9,
               54.9
             ],
@@ -1228,37 +1274,51 @@
             ]
           ],
           "strength": 3,
-          "winner": true
+          "winner": true,
+          "id": "grande-armee"
         },
         {
           "side": "Armée de Koutouzov",
           "faction": "russes",
           "path": [
             [
-              26.0,
-              55.0
+              16.85,
+              49.15
             ],
             [
-              30.0,
+              19.9,
+              50.06
+            ],
+            [
+              23.7,
+              52.1
+            ],
+            [
+              26,
+              55
+            ],
+            [
+              30,
               54.5
             ],
             [
-              34.0,
-              55.0
+              34,
+              55
             ],
             [
               35.8,
               55.5
             ]
           ],
-          "strength": 3
+          "strength": 3,
+          "id": "armee-russe"
         },
         {
           "side": "Contingent polonais",
           "faction": "polonais",
           "path": [
             [
-              21.0,
+              21,
               52.23
             ],
             [
@@ -1266,7 +1326,7 @@
               53.5
             ],
             [
-              28.0,
+              28,
               54.5
             ],
             [
@@ -1274,7 +1334,8 @@
               55.45
             ]
           ],
-          "strength": 2
+          "strength": 2,
+          "id": "contingent-polonais"
         }
       ],
       "figures": [
@@ -1353,12 +1414,28 @@
           "faction": "francais",
           "path": [
             [
-              13.74,
-              51.05
+              35.82,
+              55.52
             ],
             [
-              13.0,
-              51.2
+              37.62,
+              55.75
+            ],
+            [
+              32.05,
+              54.78
+            ],
+            [
+              28.35,
+              54.47
+            ],
+            [
+              25.28,
+              54.69
+            ],
+            [
+              13.74,
+              51.05
             ],
             [
               12.6,
@@ -1369,19 +1446,32 @@
               51.34
             ]
           ],
-          "strength": 3
+          "strength": 3,
+          "id": "grande-armee"
         },
         {
           "side": "Contingent polonais",
           "faction": "polonais",
           "path": [
             [
-              13.74,
-              51.05
+              35.7,
+              55.45
             ],
             [
-              13.0,
-              51.2
+              32.05,
+              54.78
+            ],
+            [
+              27.55,
+              53.9
+            ],
+            [
+              21,
+              52.23
+            ],
+            [
+              13.74,
+              51.05
             ],
             [
               12.5,
@@ -1392,12 +1482,21 @@
               51.33
             ]
           ],
-          "strength": 1
+          "strength": 1,
+          "id": "contingent-polonais"
         },
         {
           "side": "Armée de Bohême",
           "faction": "autrichiens",
           "path": [
+            [
+              16.57,
+              48.31
+            ],
+            [
+              16.6,
+              49.2
+            ],
             [
               14.42,
               50.08
@@ -1408,7 +1507,7 @@
             ],
             [
               12.8,
-              51.0
+              51
             ],
             [
               12.37,
@@ -1416,7 +1515,8 @@
             ]
           ],
           "strength": 3,
-          "winner": true
+          "winner": true,
+          "id": "armee-autrichienne"
         },
         {
           "side": "Armée de Silésie",
@@ -1436,12 +1536,29 @@
             ]
           ],
           "strength": 2,
-          "winner": true
+          "winner": true,
+          "id": "armee-prussienne"
         },
         {
           "side": "Armée de Russie",
           "faction": "russes",
           "path": [
+            [
+              35.8,
+              55.5
+            ],
+            [
+              36.4,
+              55
+            ],
+            [
+              25.28,
+              54.69
+            ],
+            [
+              18.1,
+              51.77
+            ],
             [
               14.4,
               50.9
@@ -1456,7 +1573,8 @@
             ]
           ],
           "strength": 3,
-          "winner": true
+          "winner": true,
+          "id": "armee-russe"
         }
       ],
       "figures": [
@@ -1495,7 +1613,7 @@
       ],
       "zoom": 4.5,
       "summary": "Malgré une campagne brillante, Napoléon ne peut empêcher l'entrée des Alliés dans Paris (31 mars) et abdique le 6 avril 1814 ; la France est ramenée à ses frontières de 1792.",
-      "details": "Début 1814, la coalition envahit la France sur trois fronts. Napoléon, avec 70 000 conscrits, mène la **campagne de France** : victoires à Brienne, Champaubert, Montmirail, Vauchamps, Montereau en février. Mais il ne peut arrêter la jonction des armées de Blücher et de Schwarzenberg. Le traité de **Chaumont** (mars) soude les Alliés ; ils refusent toute paix sans abdication.\n\nLe **31 mars 1814**, malgré la défense héroïque de Marmont et Mortier sur les hauteurs de Paris, les Alliés entrent dans la capitale. Sous l'influence de **Talleyrand**, le Sénat prononce la déchéance (2 avril). Napoléon, à **Fontainebleau**, tente une marche sur Paris mais ses maréchaux refusent ; il abdique le **6 avril**, d'abord en faveur de son fils, puis sans condition. Le **traité de Fontainebleau** (11 avril) lui laisse le titre d'empereur et la souveraineté de l'**île d'Elbe**.\n\nLe **30 mai 1814**, le premier **traité de Paris** ramène la France à ses frontières du 1er janvier 1792, avec quelques ajouts (Avignon, Montbéliard, une partie de la Savoie) et sans indemnité de guerre. Tous les États vassaux disparaissent : Murat s'est déjà rallié à l'Autriche, Eugène évacue l'Italie, **Louis XVIII** monte sur le trône ; le **pape** retrouve Rome (mai), Ferdinand VII regagne Madrid (mars) et les Provinces-Unies deviennent un royaume sous Guillaume d'Orange.",
+      "details": "Début 1814, la coalition envahit la France sur trois fronts. Napoléon, avec 70 000 conscrits, mène la **campagne de France** : victoires à Brienne, Champaubert, Montmirail, Vauchamps, Montereau en février. Mais il ne peut arrêter la jonction des armées de Blücher et de Schwarzenberg. Le traité de **Chaumont** (mars) soude les Alliés ; ils refusent toute paix sans abdication.\n\nLe **31 mars 1814**, malgré la défense héroïque de Marmont et Mortier sur les hauteurs de Paris, les Alliés entrent dans la capitale. Sous l'influence de **Talleyrand**, le Sénat prononce la déchéance (2 avril). Napoléon, à **Fontainebleau**, tente une marche sur Paris mais ses maréchaux refusent ; il abdique le **6 avril**, d'abord en faveur de son fils, puis sans condition. Le **traité de Fontainebleau** (11 avril) lui laisse le titre d'empereur et la souveraineté de l'**île d'Elbe**.\n\nLe **30 mai 1814**, le premier **traité de Paris** ramène la France à ses frontières du 1er janvier 1792, avec quelques ajouts (Avignon, Montbéliard, une partie de la Savoie) et sans indemnité de guerre. Tous les États vassaux disparaissent : Murat s'est déjà rallié à l'Autriche, Eugène évacue l'Italie, **Louis XVIII** monte sur le trône ; le **pape** retrouve Rome (mai), Ferdinand VII regagne Madrid (mars) et les Provinces-Unies passent sous Guillaume d'Orange (royaume des Pays-Bas en 1815).",
       "consequences": [
         "La France est ramenée aux frontières de 1792, plus Avignon, Montbéliard, Chambéry et Annecy : perte de la Belgique, de la rive gauche du Rhin, de la Savoie du nord et de l'Italie.",
         "Tous les États satellites disparaissent : Italie, Naples (bientôt rendu aux Bourbons), Westphalie, Hollande, Espagne, Varsovie, Confédération du Rhin.",
@@ -1574,7 +1692,7 @@
       ],
       "zoom": 5,
       "summary": "Revenu de l'île d'Elbe, Napoléon reprend le pouvoir pendant cent jours et est définitivement vaincu à Waterloo le 18 juin 1815.",
-      "details": "Le **1er mars 1815**, Napoléon débarque au golfe Juan avec un millier d'hommes. Les troupes envoyées pour l'arrêter (à Laffrey) se rallient et il entre aux Tuileries le **20 mars**, sans un coup de feu : ce sont les **Cent-Jours**. Les puissances réunies au congrès de Vienne le déclarent « hors la loi » et mettent 700 000 hommes en mouvement.\n\nNapoléon choisit de frapper le premier en **Belgique**, pour séparer l'armée anglo-néerlandaise de **Wellington** de l'armée prussienne de **Blücher**. Le **16 juin**, il bat Blücher à **Ligny** tandis que Ney est tenu en échec aux **Quatre-Bras**. Le **18 juin 1815**, à **Waterloo**, il attaque Wellington retranché sur le plateau de Mont-Saint-Jean. Les charges de cavalerie de Ney échouent contre les carrés britanniques ; **Grouchy**, envoyé à la poursuite des Prussiens, n'arrive pas, et Blücher survient par Plancenoit vers 16 heures. La Garde, repoussée, recule et l'armée se débande.\n\nNapoléon rentre à Paris, abdique une seconde fois le **22 juin** et se livre aux Britanniques (Rochefort, 15 juillet). Louis XVIII est rétabli. Il est exilé à **Sainte-Hélène**, où il meurt le 5 mai 1821 et dicte le *Mémorial*.\n\nLe second **traité de Paris** (20 novembre 1815) réduit la France aux frontières de 1790 : perte de Sarrelouis, Landau, de la Savoie, avec 700 millions d'indemnité et occupation alliée.",
+      "details": "Le **1er mars 1815**, Napoléon débarque au golfe Juan avec un millier d'hommes. Les troupes envoyées pour l'arrêter (à Laffrey) se rallient et il entre aux Tuileries le **20 mars**, sans un coup de feu : ce sont les **Cent-Jours**. Les puissances réunies au congrès de Vienne le déclarent « hors la loi » et mettent 700 000 hommes en mouvement.\n\nNapoléon choisit de frapper le premier en **Belgique**, pour séparer l'armée anglo-néerlandaise de **Wellington** de l'armée prussienne de **Blücher**. Le **16 juin**, il bat Blücher à **Ligny** tandis que Ney est tenu en échec aux **Quatre-Bras**. Le **18 juin 1815**, à **Waterloo**, il attaque Wellington retranché sur le plateau de Mont-Saint-Jean. Les charges de cavalerie de Ney échouent contre les carrés britanniques ; **Grouchy**, envoyé à la poursuite des Prussiens, n'arrive pas, et Blücher survient par Plancenoit vers 16 heures. La Garde, repoussée, recule et l'armée se débande.\n\nNapoléon rentre à Paris, abdique une seconde fois le **22 juin** et se livre aux Britanniques (Rochefort, 15 juillet). Louis XVIII est rétabli. Il est exilé à **Sainte-Hélène**, où il meurt le 5 mai 1821 après avoir dicté ses souvenirs à Las Cases (*Mémorial*).\n\nLe second **traité de Paris** (20 novembre 1815) réduit la France aux frontières de 1790 : perte de Sarrelouis, Landau, de la Savoie, avec 700 millions d'indemnité et occupation alliée.",
       "consequences": [
         "Le second traité de Paris (20 novembre 1815) réduit la France aux frontières de 1790, perdant Sarrelouis, Landau, Philippeville, Marienbourg et la Savoie.",
         "Elle paie 700 millions de francs d'indemnité et subit une occupation de 150 000 soldats pendant trois à cinq ans.",
@@ -1657,6 +1775,14 @@
           "faction": "prussiens",
           "path": [
             [
+              12.4,
+              51.5
+            ],
+            [
+              7.8,
+              50.1
+            ],
+            [
               4.53,
               50.5
             ],
@@ -1670,7 +1796,8 @@
             ]
           ],
           "strength": 3,
-          "winner": true
+          "winner": true,
+          "id": "armee-prussienne"
         }
       ],
       "figures": [
