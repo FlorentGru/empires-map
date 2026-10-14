@@ -60,6 +60,8 @@ interface Card {
   w: number;
   h: number;
   off: boolean;
+  /** Décalage retenu (centre de la carte − ancre, en px) : suivi tel quel pendant les mouvements. */
+  dir: [number, number] | null;
 }
 
 const overlap = (a: Rect, b: Rect) => {
@@ -84,7 +86,11 @@ export class FigureLayer {
   private layoutRaf = 0;
   private t0 = 0;
   private speed = 1;
-  private onMove = () => this.schedule();
+  private fullPending = false;
+  /** Pendant un mouvement : la carte suit son ancre avec le même décalage (pas de recalcul → pas de saut). */
+  private onMove = () => this.schedule(false);
+  /** À la fin du mouvement : on vérifie la place et on ne change de côté que si elle est devenue mauvaise. */
+  private onMoveEnd = () => this.schedule(true);
 
   /** insets : zones de l'écran à ne pas recouvrir (panneau latéral, barre du haut, frise). */
   constructor(private map: MapLibreMap, private insets: () => Insets) {}
@@ -97,7 +103,8 @@ export class FigureLayer {
     for (const t of this.timers) window.clearTimeout(t);
     this.timers = [];
     this.map.off('move', this.onMove);
-    this.map.off('resize', this.onMove);
+    this.map.off('moveend', this.onMoveEnd);
+    this.map.off('resize', this.onMoveEnd);
     this.overlay?.remove();
     this.overlay = null;
     this.cards = [];
@@ -152,7 +159,7 @@ export class FigureLayer {
       overlay.appendChild(link);
       overlay.appendChild(el);
       const arrow = el.querySelector<HTMLElement>('.figure-marker__arrow')!;
-      this.cards.push({ el, link, arrow, anchor: pos, slot, ox: 0, oy: 0, w: 0, h: 0, off: false });
+      this.cards.push({ el, link, arrow, anchor: pos, slot, ox: 0, oy: 0, w: 0, h: 0, off: false, dir: null });
     });
 
     if (pair && !battle && this.cards.length === 2) {
@@ -166,7 +173,7 @@ export class FigureLayer {
 
     // Mesure unique de chaque carte (bulle et étiquette comprises).
     for (const c of this.cards) this.measure(c);
-    this.layout();
+    this.layout(true);
 
     if (reduced) {
       for (const t of this.typed) t.el.textContent = t.chars.join('');
@@ -179,14 +186,17 @@ export class FigureLayer {
       );
     }
     this.map.off('move', this.onMove);
+    this.map.off('moveend', this.onMoveEnd);
+    this.map.off('resize', this.onMoveEnd);
     this.map.on('move', this.onMove);
-    this.map.on('resize', this.onMove);
+    this.map.on('moveend', this.onMoveEnd);
+    this.map.on('resize', this.onMoveEnd);
     // Les armées bougent encore un instant (recul du vaincu) : on replace une fois posées.
     if (arrivals && !reduced) {
-      this.timers.push(window.setTimeout(() => this.schedule(), 80));
-      this.timers.push(window.setTimeout(() => this.schedule(), 1100 / this.speed));
+      this.timers.push(window.setTimeout(() => this.schedule(true), 80));
+      this.timers.push(window.setTimeout(() => this.schedule(true), 1100 / this.speed));
     } else {
-      this.timers.push(window.setTimeout(() => this.schedule(), 80));
+      this.timers.push(window.setTimeout(() => this.schedule(true), 80));
     }
   }
 
@@ -240,11 +250,14 @@ export class FigureLayer {
   };
 
   /** Une seule passe de placement par frame. */
-  private schedule() {
+  private schedule(full: boolean) {
+    if (full) this.fullPending = true;
     if (this.layoutRaf || !this.overlay) return;
     this.layoutRaf = requestAnimationFrame(() => {
       this.layoutRaf = 0;
-      this.layout();
+      const f = this.fullPending;
+      this.fullPending = false;
+      this.layout(f);
     });
   }
 
@@ -312,7 +325,7 @@ export class FigureLayer {
     return [-vx / len, -vy / len];
   }
 
-  private layout() {
+  private layout(full: boolean) {
     const overlay = this.overlay;
     if (!overlay || this.cards.length === 0) return;
     const container = this.map.getContainer();
@@ -329,6 +342,7 @@ export class FigureLayer {
     const minY = ins.top;
     const maxY = H - (ins.bottom ?? 0);
     const zone: Rect = { x: minX, y: minY, w: Math.max(1, maxX - minX), h: Math.max(1, maxY - minY) };
+    overlay.style.clipPath = `inset(${minY.toFixed(0)}px ${(W - maxX).toFixed(0)}px ${(H - maxY).toFixed(0)}px ${minX.toFixed(0)}px)`;
     const base = window.innerWidth < 768 ? DIST_MOBILE : DIST;
 
     // Direction préférée de chaque carte.
@@ -349,33 +363,51 @@ export class FigureLayer {
       c.off = pt.x < minX || pt.x > maxX || pt.y < minY || pt.y > maxY;
       let rect: Rect;
       if (c.off) {
+        c.dir = null; // à son retour dans le cadre, la carte choisira de nouveau sa place
         // Ancre hors de la zone libre : la carte se colle au bord le plus proche.
         const x = Math.min(Math.max(pt.x - c.w / 2, zone.x), zone.x + zone.w - c.w);
         const y = Math.min(Math.max(pt.y - c.h / 2, zone.y), zone.y + zone.h - c.h);
         rect = { x, y, w: c.w, h: c.h };
       } else {
-        const pref = prefOf(c.slot);
-        const order = DIRS.map((d) => d).sort((a, b) => b[0] * pref[0] + b[1] * pref[1] - (a[0] * pref[0] + a[1] * pref[1]));
-        let best: Rect | null = null;
-        let bestScore = Infinity;
-        for (const [ux, uy] of order) {
-          const dist = Math.max(base, 24 + Math.abs(ux) * (c.w / 2) + Math.abs(uy) * (c.h / 2));
-          const r: Rect = { x: pt.x + ux * dist - c.w / 2, y: pt.y + uy * dist - c.h / 2, w: c.w, h: c.h };
+        const scoreOf = (r: Rect) => {
           const padded: Rect = { x: r.x - 4, y: r.y - 4, w: r.w + 8, h: r.h + 8 };
           let score = (c.w * c.h - overlap(r, zone)) * 2;
           for (const o of placed) score += overlap(padded, o);
           if (army) score += overlap(padded, army);
           for (const l of labels) score += overlap(padded, l);
-          if (score === 0) {
-            best = r;
-            break;
+          return score;
+        };
+        const kept: Rect | null = c.dir ? { x: pt.x + c.dir[0] - c.w / 2, y: pt.y + c.dir[1] - c.h / 2, w: c.w, h: c.h } : null;
+        if (kept && (!full || scoreOf(kept) === 0)) {
+          // Même côté qu'avant : la carte suit son ancre sans changer de place.
+          rect = kept;
+        } else {
+          const pref = prefOf(c.slot);
+          const order = DIRS.map((d) => d).sort((a, b) => b[0] * pref[0] + b[1] * pref[1] - (a[0] * pref[0] + a[1] * pref[1]));
+          let best: Rect | null = null;
+          let bestScore = Infinity;
+          for (const [ux, uy] of order) {
+            const dist = Math.max(base, 24 + Math.abs(ux) * (c.w / 2) + Math.abs(uy) * (c.h / 2));
+            const r: Rect = { x: pt.x + ux * dist - c.w / 2, y: pt.y + uy * dist - c.h / 2, w: c.w, h: c.h };
+            const score = scoreOf(r);
+            if (score === 0) {
+              best = r;
+              break;
+            }
+            if (score < bestScore) {
+              bestScore = score;
+              best = r;
+            }
           }
-          if (score < bestScore) {
-            bestScore = score;
-            best = r;
+          rect = best!;
+          if (kept) {
+            // Changement de côté (seulement en fin de mouvement) : court fondu plutôt qu'un saut.
+            c.el.classList.remove('figure-marker--moved');
+            void c.el.offsetWidth;
+            c.el.classList.add('figure-marker--moved');
           }
         }
-        rect = best!;
+        c.dir = [rect.x + rect.w / 2 - pt.x, rect.y + rect.h / 2 - pt.y];
       }
       placed.push(rect);
 

@@ -1860,3 +1860,23 @@ kbd {
   overscroll-behavior: contain;
   scrollbar-width: thin;
 }
+
+/* Personnage dont le lieu est hors champ : version compacte (portrait, nom, flèche) au bord de la carte. */
+.figure-marker--off .figure-bubble,
+.figure-marker--off .figure-marker__role {
+  display: none;
+}
+.figure-marker--off {
+  opacity: 0.85;
+}
+/* Changement de côté en fin de mouvement : court fondu au lieu d'un saut. */
+.figure-marker--moved {
+  animation: figure-moved 220ms ease-out;
+}
+@keyframes figure-moved {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .figure-marker--moved { animation: none; }
+}
