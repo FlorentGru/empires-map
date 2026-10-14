@@ -11,6 +11,8 @@ interface Props {
   open: boolean;
   onToggle: () => void;
   /** Mode Histoire actif : segments racontés et index du segment en cours (-1 = aucun). */
+  /** Chapitre (période) si l'étape ouvre sa période, affiché hors mode Histoire. */
+  chapter?: { n: number; name: string; summary: string } | null;
   story?: { segments: StorySegment[]; current: number; silent: boolean } | null;
 }
 
@@ -21,7 +23,7 @@ const markdownComponents = {
   ),
 };
 
-export const EventPanel = memo(function EventPanel({ step, open, onToggle, story }: Props) {
+export const EventPanel = memo(function EventPanel({ step, open, onToggle, story, chapter }: Props) {
   const meta = step ? eventMeta(step.type) : null;
   const bodyRef = useRef<HTMLDivElement>(null);
   const segs = story?.segments ?? [];
@@ -43,6 +45,7 @@ export const EventPanel = memo(function EventPanel({ step, open, onToggle, story
 
   const indexed = segs.map((s, i) => ({ s, i }));
   const ofKind = (k: StorySegment['kind']) => indexed.filter((x) => x.s.kind === k);
+  const chapterSegs = ofKind('chapter');
   const dateIdx = ofKind('date')[0]?.i ?? -1;
   const titleIdx = ofKind('title')[0]?.i ?? -1;
   const consIdx = ofKind('consequence')[0]?.i ?? -1;
@@ -73,6 +76,20 @@ export const EventPanel = memo(function EventPanel({ step, open, onToggle, story
       {step && meta && (
         <div id="event-panel-body" className="event-panel__body" hidden={!open} ref={bodyRef}>
           <article key={step.id} className="event-panel__content">
+            {chapterSegs.length > 0 && (
+              <div className="chapter-note">
+                <span className="chapter-note__label">Chapitre</span>
+                {chapterSegs.map(({ s, i }) => (
+                  <span key={i} data-seg={i} className={`story-sentence${reading(i)}`}>{s.text} </span>
+                ))}
+              </div>
+            )}
+            {!story && chapter && (
+              <div className="chapter-note">
+                <span className="chapter-note__label">Chapitre {chapter.n} : {chapter.name}</span>
+                {chapter.summary}
+              </div>
+            )}
             <header>
               <div className="event-panel__meta">
                 <time className={`event-panel__date${reading(dateIdx)}`} data-seg={dateIdx}>{formatYear(step.year)}</time>

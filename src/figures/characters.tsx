@@ -250,6 +250,95 @@ export const CHARACTER_SPECS = {
       path('M8.8 20.4L13.4 20.8L13.6 36.4L9.2 36.6Z', '#1f2f5a') + line('M10.2 31L12.8 36', '#161f3d', 0.6) +
       circ(12.8, 29.4, 1, GOLD),
   },
+  'empereur-chinois': {
+    robe: '#e0b43a',
+    body: WIDE,
+    deco:
+      path('M12 19Q18 17 24 19L24.6 24Q18 22.4 11.4 24Z', RED) +
+      line('M13 27Q16 24 18 28Q20 32 23 29M12 36Q15 33 18 37Q21 41 24 38', RED, 1.3) + circ(18, 31, 2.2, RED) + circ(18, 31, 0.8, GOLD, NS) +
+      rect(8.5, 43.2, 19, 2.8, RED, 0, NS) + line('M10 43.2Q13 41.4 16 43.2M20 43.2Q23 41.4 26 43.2', '#2f6fa8', 0.9),
+    head:
+      beard('#2d2018') + rect(11, 4.6, 14, 2.2, '#1f1a14', 0.6) + rect(13.4, 3, 9.2, 1.8, '#1f1a14', 0.4) +
+      line('M11.6 6.8V11M13.6 6.8V12M22.4 6.8V12M24.4 6.8V11', GOLD, 0.8) +
+      circ(11.6, 11.4, 0.9, WHITE, NS) + circ(13.6, 12.4, 0.9, WHITE, NS) + circ(22.4, 12.4, 0.9, WHITE, NS) + circ(24.4, 11.4, 0.9, WHITE, NS),
+  },
+  'lettre-mandarin': {
+    robe: '#2f5f8a',
+    body: WIDE,
+    deco:
+      path('M11.5 18Q18 15.4 24.5 18L24 21Q18 18.6 12 21Z', '#1f3f5a') +
+      rect(13.4, 24, 9.2, 8.4, '#c9473a', 1) + circ(18, 28.2, 2.2, GOLD) + circ(18, 28.2, 0.8, '#c9473a', NS) +
+      line('M10 36L12 44M26 36L24 44', '#1f3f5a', 0.9) + rect(8, 43.4, 20, 2.2, '#1f3f5a', 0, NS),
+    head:
+      beard('#2d2018') + moust('#2d2018') +
+      path('M12.6 8.4Q12.4 3.4 18 3.4Q23.6 3.4 23.4 8.4Q18 6.6 12.6 8.4Z', '#1f1a14') +
+      path('M11.6 5.2L5 4.2L5.4 6.6L12 7.6Z', '#1f1a14') + path('M24.4 5.2L31 4.2L30.6 6.6L24 7.6Z', '#1f1a14'),
+    front: rect(22, 30, 7, 9.6, '#efe6cc', 0.6) + line('M23.4 32.4H27.6M23.4 34.6H27.6M23.4 36.8H26.4', '#8a8470', 0.6) + circ(23.6, 34.4, 1.8, SKIN),
+  },
+  'general-chinois': {
+    robe: '#7a2a20',
+    back: path('M9 18Q18 14.5 27 18L31 46L5 46Z', RED),
+    deco:
+      path('M12 18.4Q18 16 24 18.4L24.6 34L11.4 34Z', '#6e5a3a') + line('M12 22H24M12 26H24M12 30H24M18 18V34', GOLD, 0.8) +
+      circ(18, 22, 1.6, GOLD) + path('M8.6 18.6Q11 16.4 14 17.4L13 20.6Q10.6 19.8 8.2 21Z', '#5c5c62') + path('M27.4 18.6Q25 16.4 22 17.4L23 20.6Q25.4 19.8 27.8 21Z', '#5c5c62') +
+      rect(10.5, 34, 15, 2.2, '#3a2a1a', 0, NS) + path('M11 36.4L25 36.4L26 44L10 44Z', '#5c5c62'),
+    head:
+      beard('#2d2018') + path('M12.6 9.4Q12.2 3.6 18 3.4Q23.8 3.6 23.4 9.4L22.4 7.6L13.6 7.6Z', '#5c5c62') +
+      path('M16.8 3.6Q18 -2 19.2 3.6Z', RED) + line('M13 7.8L12.2 12M23 7.8L23.8 12', '#5c5c62', 1.4),
+    front: rect(28.6, 5, 1.4, 41, WOOD) + path('M29.3 1.2L31 5.6L27.6 5.6Z', '#d6dadc') + path('M30 7.5L34.4 7L33.6 11.4L30 11.2Z', RED),
+  },
+  khan: {
+    skin: '#d2a070',
+    robe: '#2f5f9b',
+    body: WIDE,
+    deco:
+      path('M12 18.4Q18 16 24 18.4L18 34Z', '#264d80', NS) + line('M18 18V45M24 19L18 36', GOLD, 1) +
+      rect(10, 32.6, 16, 2.8, '#c9473a', 0, NS) + circ(18, 34, 1.5, GOLD) + rect(8, 43.4, 20, 2.2, GOLD, 0, NS),
+    back: path('M11.4 10Q11 4 18 3.6Q25 4 24.6 10L26 20L23 15L13 15L10 20Z', '#2d2018'),
+    head:
+      ell(18, 6.4, 8.6, 2.2, '#2b2219') + path('M12.8 6.4Q13 1.4 18 1.2Q23 1.4 23.2 6.4Z', '#c9a02a') + path('M17 1.4Q18 -1.4 19 1.4Z', RED) +
+      moust('#2d2018') + path('M16.6 14.4Q18 18 19.4 14.4Z', '#2d2018', NS),
+  },
+  shogun: {
+    robe: '#3a3a5a',
+    body: WIDE,
+    deco:
+      path('M12 18.4Q18 16.4 24 18.4L18 31Z', '#efe6cc') + line('M18 31V45', '#26263a', 1) +
+      rect(10, 31, 16, 3, '#a8281e', 0, NS) + circ(14.4, 38, 1.4, GOLD, NS) + circ(21.6, 38, 1.4, GOLD, NS) + circ(18, 41.4, 1.4, GOLD, NS) +
+      path('M7 20Q10 17 13 19L13 28Q9 28 7 24Z', '#3a3a5a') + path('M29 20Q26 17 23 19L23 28Q27 28 29 24Z', '#3a3a5a'),
+    head:
+      path('M12.8 10.6Q12.4 6 18 5.6Q23.6 6 23.2 10.6Q22.4 8 18 8Q13.6 8 12.8 10.6Z', '#1f1a14') +
+      path('M13.2 6.6Q14 1.4 18 1.2Q22 1.4 22.8 6.6Q18 5 13.2 6.6Z', '#1f1a14') + circ(18, 3, 0.8, GOLD, NS) + moust('#2d2018'),
+    front:
+      path('M30 24L31.4 24L26 44.6L24.8 44.6Z', '#d6dadc') + rect(23.4, 43.6, 4.8, 1.4, '#2b2219') + path('M28.8 27L33 27L33 40L28.8 40Z', '#efe6cc', 'opacity="0"'),
+  },
+  'moine-bouddhiste': {
+    skin: '#d9a982',
+    robe: '#e08a1a',
+    deco:
+      path('M12 18Q18 16 25 20L24 34L11 28Z', '#c96f10', NS) + line('M12 18Q18 24 26 20', '#a85a0a', 0.9) + line('M13 30L24 36', '#a85a0a', 0.8) +
+      rect(8, 43.4, 20, 2.2, '#c96f10', 0, NS),
+    head: line('M15.2 5.6Q18 4.6 20.8 5.6', '#c9a878', 0.8) + circ(15.4, 6.6, 0.4, '#c9a878', NS) + circ(20.6, 6.6, 0.4, '#c9a878', NS),
+    front:
+      line('M14.2 18.6Q12 28 18 31Q24 28 21.8 18.6', '#5c3a1c', 1.6, 'stroke-dasharray="1.2 1.2"') + circ(18, 31, 1.4, '#5c3a1c') +
+      rect(28.6, 14, 1.2, 32, WOOD) + circ(29.2, 12.6, 2, GOLD) + circ(29.2, 12.6, 0.8, WHITE, NS),
+  },
+  imperatrice: {
+    skin: '#e8c8a0',
+    robe: '#c0392b',
+    body: WIDE,
+    deco:
+      path('M12 18.4Q18 16 24 18.4L24.4 24Q18 22.6 11.6 24Z', GOLD) + line('M14 28Q18 25 22 28M13 34Q18 30 23 34M12 40Q18 36 24 40', GOLD, 1.1) +
+      circ(18, 30, 1.8, '#2f6fa8') + circ(14, 38, 1, '#2f8a4a', NS) + circ(22, 38, 1, '#2f8a4a', NS) +
+      rect(8.5, 43.2, 19, 2.8, GOLD, 0, NS) + path('M6 24Q3 28 6.4 33L9.4 30Z', RED) + path('M30 24Q33 28 29.6 33L26.6 30Z', RED),
+    back: path('M10.6 8Q10 3.4 18 3.4Q26 3.4 25.4 8L26 20L10 20Z', '#1f1a14'),
+    head:
+      path('M12.6 9.6Q12.4 4.8 18 4.6Q23.6 4.8 23.4 9.6Q22.8 6.6 18 6.6Q13.2 6.6 12.6 9.6Z', '#1f1a14') +
+      path('M12.4 5.4Q18 2.6 23.6 5.4L23 7Q18 5 13 7Z', GOLD) +
+      path('M18 4Q15 1.6 12.4 2.4Q14.6 0 18 1.6Q21.4 0 23.6 2.4Q21 1.6 18 4Z', '#2f8a4a') + path('M17 3.4L18 -0.6L19 3.4Z', RED) +
+      line('M12.6 7V12M23.4 7V12', GOLD, 0.8) + circ(12.6, 12.6, 1, '#2f8a4a', NS) + circ(23.4, 12.6, 1, '#2f8a4a', NS) +
+      circ(18, 13.4, 0.9, '#c0392b', NS),
+  },
 } satisfies Record<Archetype, CharSpec>;
 
 export function characterSvg(archetype: Archetype, tint?: string): string {

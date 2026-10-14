@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { readString, writeString } from '../lib/settings';
 import type { Player } from '../player/usePlayer';
-import type { TimelineStep } from '../types';
+import { chapterAt } from '../lib/periods';
+import type { Empire, TimelineStep } from '../types';
 import { Narrator } from './narrator';
 import { buildScript, type StorySegment } from './script';
 
@@ -24,10 +25,18 @@ export interface StoryControls {
 }
 
 /** Pilote la narration d'une étape et l'enchaînement des étapes via le lecteur. */
-export function useStory(player: Player, step: TimelineStep | undefined, onEnable: () => void) {
+export function useStory(player: Player, step: TimelineStep | undefined, onEnable: () => void, empire?: Empire) {
   const { story: enabled, playing, index } = player;
   const narrator = useMemo(() => new Narrator(), []);
-  const segments = useMemo<StorySegment[]>(() => (step ? buildScript(step) : []), [step]);
+  // Période dont le chapitre a été annoncé en dernier (lu à chaque changement de période, y compris après un saut).
+  const lastChapter = useRef<string | null>(null);
+  const segments = useMemo<StorySegment[]>(() => {
+    if (!step) return [];
+    const ch = empire ? chapterAt(empire, index) : null;
+    const announce = ch && (ch.first || ch.periodId !== lastChapter.current) ? ch : null;
+    return buildScript(step, announce);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [step, empire, index]);
   const [current, setCurrent] = useState(-1);
   const [voiceTick, setVoiceTick] = useState(0);
   const [voiceURI, setVoiceURI] = useState<string | null>(() => readString('atlas.story.voice', null));
@@ -74,6 +83,7 @@ export function useStory(player: Player, step: TimelineStep | undefined, onEnabl
   const begin = useCallback(() => {
     started.current = true;
     ended.current = false;
+    if (empire) lastChapter.current = chapterAt(empire, index)?.periodId ?? null;
     startedAt.current = performance.now();
     narrator.speak(segmentsRef.current, {
       onSegment: setCurrent,
@@ -82,7 +92,7 @@ export function useStory(player: Player, step: TimelineStep | undefined, onEnabl
         if (playingRef.current) scheduleAdvance();
       },
     });
-  }, [narrator, scheduleAdvance]);
+  }, [narrator, scheduleAdvance, empire, index]);
 
   // Nouvelle étape (ou mode activé/désactivé) : on repart de zéro.
   useEffect(() => {

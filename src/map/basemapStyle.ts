@@ -15,8 +15,8 @@ export const DEM_SOURCE = 'dem';
 export const TERRAIN_EXAGGERATION = 1.5;
 /** Zone utile : limite le nombre de tuiles de relief chargées. */
 export const MAX_BOUNDS: [[number, number], [number, number]] = [
-  [-30, 5],
-  [75, 66],
+  [-30, -45],
+  [160, 78],
 ];
 
 function glyphsUrl(): string {

@@ -25,13 +25,17 @@ function hsl(h: number, s: number, l: number, a?: number): string {
   return `hsl(${hh}, ${(clamp(s) * 100).toFixed(1)}%, ${(clamp(l) * 100).toFixed(1)}%)`;
 }
 
+/** Écart de teinte / de luminosité entre entités successives (7 États rivaux doivent rester distincts). */
+const HUE_STEP = 26;
+const LIGHT_STEP = 0.045;
+
 /** Couleur de remplissage de la i-ème entité : légère rotation de teinte alternée. */
 export function variantFill(base: string, index: number): string {
   const [h, s, l] = hexToHsl(base);
   if (index === 0) return hsl(h, s, l);
   const sign = index % 2 === 1 ? 1 : -1;
   const k = Math.ceil(index / 2);
-  return hsl(h + sign * 14 * k, s * 0.95, l + sign * 0.05 * k);
+  return hsl(h + sign * HUE_STEP * k, s * 0.95, l + sign * LIGHT_STEP * k);
 }
 
 /** Couleur de contour : même teinte, nettement plus sombre. */
@@ -39,7 +43,7 @@ export function variantLine(base: string, index: number): string {
   const [h, s] = hexToHsl(base);
   const sign = index % 2 === 1 ? 1 : -1;
   const k = Math.ceil(index / 2);
-  return hsl(h + sign * 14 * k, s, 0.22);
+  return hsl(h + sign * HUE_STEP * k, s, 0.22);
 }
 
 /** Rapport d'opacité d'un État vassal par rapport à un territoire « core » (0,22 / 0,48). */
@@ -50,5 +54,5 @@ export function variantVassal(base: string, index: number): string {
   const [h, s, l] = hexToHsl(base);
   const sign = index === 0 ? 0 : index % 2 === 1 ? 1 : -1;
   const k = Math.ceil(index / 2);
-  return hsl(h + sign * 14 * k, s * 0.95, Math.min(0.85, l + sign * 0.05 * k + (1 - l) * 0.35), VASSAL_ALPHA);
+  return hsl(h + sign * HUE_STEP * k, s * 0.95, Math.min(0.85, l + sign * LIGHT_STEP * k + (1 - l) * 0.35), VASSAL_ALPHA);
 }

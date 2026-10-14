@@ -10,6 +10,7 @@ import { EventPanel } from './panels/EventPanel';
 import { readUrlState, writeUrlState } from './player/urlState';
 import { continuedArmies } from './map/armyLayer';
 import { BASE_STEP_MS, CHAINED_STEP_MS, usePlayer } from './player/usePlayer';
+import { chapterAt } from './lib/periods';
 import { useStory } from './story/useStory';
 import { Timeline } from './timeline/Timeline';
 import type { Empire } from './types';
@@ -49,13 +50,17 @@ function Atlas({ empire, onSelectEmpire }: { empire: Empire; onSelectEmpire: (id
   const [figures, setFigures] = useState(() => readBool('atlas.figures', true));
   const [countries2026, setCountries2026] = useState(() => readBool('atlas.countries2026', false));
   const openPanel = useCallback(() => setPanelOpen(true), []);
-  const story = useStory(player, step, openPanel);
+  const story = useStory(player, step, openPanel, empire);
   const storyEnabled = story.controls.enabled;
   const storySilent = story.controls.silent;
   const panelStory = useMemo(
     () => (storyEnabled ? { segments: story.segments, current: story.current, silent: storySilent } : null),
     [storyEnabled, story.segments, story.current, storySilent],
   );
+  const panelChapter = useMemo(() => {
+    const c = chapterAt(empire, player.index);
+    return c?.first ? c : null;
+  }, [empire, player.index]);
   const togglePanel = useCallback(() => setPanelOpen((o) => !o), []);
   const toggleTilt = useCallback(() => setTilted((v) => { writeBool('atlas.tilted', !v); return !v; }), []);
   const toggleRelief = useCallback(() => setRelief((v) => { writeBool('atlas.relief', !v); return !v; }), []);
@@ -84,6 +89,7 @@ function Atlas({ empire, onSelectEmpire }: { empire: Empire; onSelectEmpire: (id
       </div>
 
       <EventPanel
+        chapter={panelChapter}
         step={step}
         open={panelOpen}
         onToggle={togglePanel}

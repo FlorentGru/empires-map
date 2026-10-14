@@ -16,9 +16,12 @@ const cell: React.CSSProperties = {
 
 const NAPO_F: Faction[] = ['francais', 'britanniques', 'autrichiens', 'prussiens', 'russes', 'espagnols', 'portugais', 'polonais'];
 const NAPO_A: Archetype[] = ['empereur-napoleon', 'general', 'roi-moderne', 'tsar', 'diplomate', 'amiral'];
+const ASIA_F: Faction[] = ['chinois', 'xiongnu', 'mongols', 'jurchens', 'mandchous', 'japonais', 'coreens', 'tibetains', 'vietnamiens', 'turcs-gokturks', 'khitans', 'ouighours'];
+const ASIA_A: Archetype[] = ['empereur-chinois', 'lettre-mandarin', 'general-chinois', 'khan', 'shogun', 'moine-bouddhiste', 'imperatrice'];
 const SECTIONS: { title: string; factions: Faction[]; archetypes: Archetype[] }[] = [
-  { title: 'Antiquité / Moyen Âge', factions: FACTIONS.filter((f) => !NAPO_F.includes(f)), archetypes: ARCHETYPES.filter((a) => !NAPO_A.includes(a)) },
+  { title: 'Antiquité / Moyen Âge', factions: FACTIONS.filter((f) => !NAPO_F.includes(f) && !ASIA_F.includes(f)), archetypes: ARCHETYPES.filter((a) => !NAPO_A.includes(a) && !ASIA_A.includes(a)) },
   { title: 'Époque napoléonienne', factions: NAPO_F, archetypes: NAPO_A },
+  { title: 'Asie orientale', factions: ASIA_F, archetypes: ASIA_A },
 ];
 
 export function FiguresDemo() {

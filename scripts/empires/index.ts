@@ -6,10 +6,11 @@ import type { Position } from 'geojson';
 import type { EmpireConfig } from './types.ts';
 import { rome } from './rome.ts';
 import { napoleon } from './napoleon.ts';
+import { china } from './china.ts';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 
-export const EMPIRES: EmpireConfig[] = [rome, napoleon];
+export const EMPIRES: EmpireConfig[] = [rome, napoleon, china];
 
 export function getEmpire(id: string): EmpireConfig {
   const e = EMPIRES.find((x) => x.id === id);

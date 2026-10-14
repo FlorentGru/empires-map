@@ -52,14 +52,14 @@ const HB_DIR = path.join(ROOT, '.cache/historical-basemaps');
 const NE_FILE = path.join(ROOT, '.cache/natural-earth/ne_50m_land.geojson');
 const NE_COUNTRIES_FILE = path.join(ROOT, '.cache/natural-earth/ne_50m_admin_0_countries.geojson');
 const LAND_OUT = path.join(ROOT, 'public/data/basemap/land.geojson');
-/** Emprise du fond de carte : Atlantique → Iran, Sahara → Écosse. */
-const LAND_BBOX: [number, number, number, number] = [-20, 15, 65, 62];
+/** Emprise du fond de carte : Atlantique → Japon, Afrique australe → Arctique. */
+const LAND_BBOX: [number, number, number, number] = [-25, -40, 150, 72];
 const MIN_DIFF_KM2 = 2000;
 
 const BASE_TOLERANCE = 0.02;
 const MAX_BYTES = 150 * 1024;
 const MIN_PART_KM2 = 50;
-const LAND_TOLERANCE = 0.01;
+const LAND_TOLERANCE = 0.03;
 
 function fail(msg: string): never {
   console.error(`✗ ${msg}`);

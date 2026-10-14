@@ -1,8 +1,9 @@
+import type { Chapter } from '../lib/periods';
 import type { TimelineStep } from '../types';
 import { numberToFrench } from './numbers';
 import type { SpeechSegment } from './narrator';
 
-export type SegmentKind = 'date' | 'title' | 'summary' | 'details' | 'consequence' | 'quote';
+export type SegmentKind = 'chapter' | 'date' | 'title' | 'summary' | 'details' | 'consequence' | 'quote';
 
 export interface StorySegment extends SpeechSegment {
   kind: SegmentKind;
@@ -67,13 +68,17 @@ export function toSpoken(text: string): string {
     .replace(/&/g, ' et ');
 }
 
-export function buildScript(step: TimelineStep): StorySegment[] {
+export function buildScript(step: TimelineStep, chapter?: Chapter | null): StorySegment[] {
   const segs: StorySegment[] = [];
   const push = (kind: SegmentKind, text: string, voice: 'narrator' | 'quote' = 'narrator', para?: number) => {
     const t = text.trim();
     if (!t) return;
     segs.push({ kind, text: t, spoken: toSpoken(t), voice, para });
   };
+  if (chapter) {
+    push('chapter', `Chapitre ${chapter.n} : ${chapter.name}.`);
+    splitSentences(chapter.summary).forEach((t) => push('chapter', t));
+  }
   const date = `${spokenDate(step.year)}.`;
   segs.push({ kind: 'date', text: date, spoken: date, voice: 'narrator' });
   push('title', /[.!?…]$/.test(step.title) ? step.title : `${step.title}.`);

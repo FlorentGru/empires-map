@@ -1,6 +1,7 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { formatYear } from '../lib/years';
-import type { Empire } from '../types';
+import catalogJson from '../../data/empires-catalog.json';
+import type { Empire, EmpireCatalogEntry } from '../types';
 
 interface Props {
   empires: Empire[];
@@ -8,11 +9,30 @@ interface Props {
   onSelect: (id: string) => void;
 }
 
-const COMING_SOON = ['Empire mongol', 'Perse achéménide'];
+const CATALOG = catalogJson as EmpireCatalogEntry[];
+
+/** Groupes par continent (ordre du fichier) ; disponibles d'abord, puis à venir. */
+function groupCatalog(empires: Empire[]) {
+  const byId = new Map(empires.map((e) => [e.id, e]));
+  const groups = new Map<string, { available: Empire[]; soon: EmpireCatalogEntry[] }>();
+  for (const c of CATALOG) {
+    const g = groups.get(c.region) ?? { available: [], soon: [] };
+    groups.set(c.region, g);
+    const e = byId.get(c.id);
+    if (e) g.available.push(e);
+    else g.soon.push(c);
+  }
+  // Empires chargés mais absents du catalogue.
+  const known = new Set(CATALOG.map((c) => c.id));
+  const extra = empires.filter((e) => !known.has(e.id));
+  if (extra.length) groups.set('Autres', { available: extra, soon: [] });
+  return [...groups.entries()];
+}
 
 export function EmpirePicker({ empires, current, onSelect }: Props) {
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
+  const groups = useMemo(() => groupCatalog(empires), [empires]);
 
   // Fermeture sur clic extérieur ou Échap.
   useEffect(() => {
@@ -55,32 +75,41 @@ export function EmpirePicker({ empires, current, onSelect }: Props) {
 
       {open && (
         <ul id="empire-picker-list" className="empire-picker__list">
-          {empires.map((e) => (
-            <li key={e.id}>
-              <button
-                type="button"
-                className="empire-card"
-                aria-current={e.id === current.id ? 'true' : undefined}
-                onClick={() => {
-                  onSelect(e.id);
-                  setOpen(false);
-                }}
-              >
-                <span className="empire-picker__swatch" style={{ background: e.color }} aria-hidden="true" />
-                <span className="empire-card__name">{e.name}</span>
-                <span className="empire-card__dates">
-                  {formatYear(e.start)} – {formatYear(e.end)}
-                </span>
-              </button>
-            </li>
-          ))}
-          {COMING_SOON.map((name) => (
-            <li key={name}>
-              <div className="empire-card empire-card--disabled" aria-disabled="true">
-                <span className="empire-picker__swatch" aria-hidden="true" />
-                <span className="empire-card__name">{name}</span>
-                <span className="empire-card__soon">Bientôt</span>
-              </div>
+          {groups.map(([region, g]) => (
+            <li key={region} className="empire-group">
+              <div className="empire-group__title">{region}</div>
+              <ul className="empire-group__list">
+                {g.available.map((e) => (
+                  <li key={e.id}>
+                    <button
+                      type="button"
+                      className="empire-card"
+                      aria-current={e.id === current.id ? 'true' : undefined}
+                      onClick={() => {
+                        onSelect(e.id);
+                        setOpen(false);
+                      }}
+                    >
+                      <span className="empire-picker__swatch" style={{ background: e.color }} aria-hidden="true" />
+                      <span className="empire-card__name">{e.name}</span>
+                      <span className="empire-card__dates">
+                        {formatYear(e.start)} – {formatYear(e.end)}
+                      </span>
+                    </button>
+                  </li>
+                ))}
+                {g.soon.map((c) => (
+                  <li key={c.id}>
+                    <div className="empire-card empire-card--disabled" aria-disabled="true">
+                      <span className="empire-picker__swatch" aria-hidden="true" />
+                      <span className="empire-card__name">{c.name}</span>
+                      <span className="empire-card__dates">
+                        {formatYear(c.start)} – {formatYear(c.end)}
+                      </span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
             </li>
           ))}
         </ul>

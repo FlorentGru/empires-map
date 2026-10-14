@@ -14,12 +14,13 @@ NE_URL="https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/ge
 NE_COUNTRIES_URL="https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson"
 
 # Instantanés réellement disponibles dans aourednik/historical-basemaps/geojson
-# couvrant -509 → 1453 (Rome) puis 1700 → 1880 (Napoléon) (vérifié via l'API GitHub).
+# couvrant -509 → 1453 (Rome), 1700 → 1880 (Napoléon) et -1000 → 1914 (Chine) (vérifié via l'API GitHub).
 HB_FILES=(
   world_bc500 world_bc400 world_bc323 world_bc300 world_bc200 world_bc100 world_bc1
   world_100 world_200 world_300 world_400 world_500 world_600 world_700 world_800
   world_900 world_1000 world_1100 world_1200 world_1279 world_1300 world_1400
   world_1492 world_1500
+  world_bc1000 world_1530 world_1600 world_1650 world_1900 world_1914
   world_1700 world_1715 world_1783 world_1800 world_1815 world_1880
 )
 

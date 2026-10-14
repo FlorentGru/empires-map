@@ -13,7 +13,7 @@
   --radius: 10px;
   --font-serif: 'Cormorant Garamond', 'Garamond', 'Georgia', serif;
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --timeline-h: 118px;
+  --timeline-h: 130px;
   --gap: 16px;
   color-scheme: light;
 }
@@ -211,6 +211,35 @@ a {
   border: 1px solid var(--parchment-edge);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  max-height: min(70vh, 520px);
+  overflow-y: auto;
+}
+
+.empire-group {
+  margin: 0 0 4px;
+}
+
+.empire-group__title {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  padding: 6px 10px 2px;
+}
+
+.empire-group__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.empire-group .empire-card {
+  padding: 4px 10px;
+  gap: 8px;
+}
+
+.empire-group .empire-card__name {
+  font-size: 0.95rem;
 }
 
 .empire-card {
@@ -492,6 +521,15 @@ button.empire-card:hover,
   white-space: nowrap;
 }
 
+.timeline__period {
+  font-size: 0.78rem;
+  font-style: italic;
+  white-space: nowrap;
+  color: var(--ink);
+  border-left: 4px solid var(--period-color, var(--accent));
+  padding-left: 6px;
+}
+
 .timeline__count {
   margin-left: auto;
   font-size: 0.8rem;
@@ -510,7 +548,7 @@ button.empire-card:hover,
 .timeline__track {
   position: relative;
   height: 100%;
-  min-height: 58px;
+  min-height: 70px;
 }
 
 .timeline__axis {
@@ -714,7 +752,7 @@ kbd {
 /* ---------- Mobile ---------- */
 @media (max-width: 767px) {
   :root {
-    --timeline-h: 112px;
+    --timeline-h: 124px;
     --gap: 8px;
   }
 
@@ -1430,4 +1468,65 @@ kbd {
   .event-panel__title {
     transition: none;
   }
+}
+
+/* ---------- Chapitre (période) ---------- */
+.chapter-note {
+  margin: 0 0 10px;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  background: var(--parchment-strong);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+}
+
+.chapter-note__label {
+  display: block;
+  font-style: normal;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ---------- Périodes sur la frise ---------- */
+.timeline__period-band {
+  position: absolute;
+  top: 50px;
+  height: 15px;
+  box-sizing: border-box;
+  padding: 0 3px;
+  overflow: hidden;
+  border: 1px solid rgba(43, 34, 25, 0.45);
+  border-radius: 3px;
+  background: var(--period-color);
+  opacity: 0.55;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.62rem;
+  line-height: 13px;
+  color: #fff;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.timeline__period-band span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.timeline__period-band:hover:not(:disabled),
+.timeline__period-band--active {
+  opacity: 1;
+}
+
+.timeline__period-band--active {
+  box-shadow: 0 0 0 1px var(--parchment), 0 0 0 2px rgba(43, 34, 25, 0.6);
+}
+
+.timeline__period-band:disabled {
+  cursor: default;
 }

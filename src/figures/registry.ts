@@ -31,6 +31,18 @@ export const FACTION_COLORS = {
   espagnols: '#d6a81c',
   portugais: '#5e3b22',
   polonais: '#a3123a',
+  chinois: '#c0392b',
+  xiongnu: '#8a6a4a',
+  mongols: '#2a5fa0',
+  jurchens: '#4a6a3a',
+  mandchous: '#d4a017',
+  japonais: '#b8325a',
+  coreens: '#3a8f9f',
+  tibetains: '#8a2a20',
+  vietnamiens: '#7a9a2a',
+  'turcs-gokturks': '#4a7aa8',
+  khitans: '#a85a2a',
+  ouighours: '#8a3a9a',
 } satisfies Record<Faction, string>;
 
 /** Composant React (démo) du soldat d'une faction. */

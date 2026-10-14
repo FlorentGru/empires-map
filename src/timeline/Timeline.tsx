@@ -1,6 +1,7 @@
 import { memo, useEffect, useMemo, useRef, useState, type CSSProperties, type RefObject } from 'react';
 import { eventMeta } from '../lib/eventTypes';
 import { prefersReducedMotion } from '../lib/motion';
+import { firstStepOfPeriods, periodIndexAt } from '../lib/periods';
 import { formatYear } from '../lib/years';
 import { SPEEDS, type Player, type Speed } from '../player/usePlayer';
 import { StoryButton } from '../story/StoryMenu';
@@ -25,9 +26,13 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
   const trackRef = useRef<HTMLDivElement>(null);
 
   const yearToX = useMemo(
-    () => makeYearScale(steps.map((s) => s.year), empire.start, empire.end),
+    // Beaucoup d'étapes : on donne plus de poids au rang (étapes uniformément espacées) qu'aux années.
+    () => makeYearScale(steps.map((s) => s.year), empire.start, empire.end, steps.length > 40 ? 0.3 : 0.45),
     [steps, empire.start, empire.end],
   );
+  const periods = empire.periods;
+  const firsts = useMemo(() => firstStepOfPeriods(empire), [empire]);
+  const activePeriod = active ? periodIndexAt(periods, active.year) : -1;
   const innerRef = useRef<HTMLDivElement>(null);
   const width = useElementWidth(innerRef);
   // Au moins ~72 px entre deux graduations, quelle que soit la largeur d'écran.
@@ -93,6 +98,11 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
           <span className="timeline__year">{active ? formatYear(active.year) : ''}
             {compare2026 && <span className="timeline__compare"> · comparé à 2026</span>}
           </span>
+          {periods && activePeriod >= 0 && (
+            <span className="timeline__period" style={{ '--period-color': periods[activePeriod].color } as CSSProperties}>
+              {periods[activePeriod].name}
+            </span>
+          )}
           <span className="timeline__title">{active?.title}</span>
           <span className="timeline__count">
             {player.index + 1} / {steps.length}
@@ -108,6 +118,26 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
               {formatYear(y)}
             </span>
           ))}
+          {periods?.map((p, pi) => {
+            const a = yearToX(Math.max(p.start, empire.start));
+            const b = yearToX(Math.min(p.end, empire.end));
+            const target = firsts[pi];
+            return (
+              <button
+                key={p.id}
+                type="button"
+                className={`timeline__period-band${pi === activePeriod ? ' timeline__period-band--active' : ''}`}
+                style={{ left: pct(a), width: pct(Math.max(0, b - a)), '--period-color': p.color } as CSSProperties}
+                disabled={target < 0}
+                onClick={() => target >= 0 && player.goTo(target)}
+                title={`${p.name} (${formatYear(p.start)} – ${formatYear(p.end)})`}
+                aria-label={`Période : ${p.name}`}
+                aria-current={pi === activePeriod ? 'true' : undefined}
+              >
+                <span>{p.name}</span>
+              </button>
+            );
+          })}
           {active && <div className="timeline__cursor" style={{ left: pct(yearToX(active.year)) }} aria-hidden="true" />}
           <ol className="timeline__points">
             {steps.map((s, i) => {

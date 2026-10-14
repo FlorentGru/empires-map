@@ -15,7 +15,11 @@ interface Props {
 /** Figurines d'illustration de la légende, par empire (défaut : Rome). */
 const EMPIRE_SPRITES: Record<string, { faction: Faction; archetype: Archetype }> = {
   napoleon: { faction: 'francais', archetype: 'empereur-napoleon' },
+  china: { faction: 'chinois', archetype: 'empereur-chinois' },
 };
+
+/** Au-delà, la légende des entités est tronquée (périodes de division). */
+const MAX_ENTITIES = 10;
 
 const TYPES = Object.keys(EVENT_TYPES) as EventType[];
 
@@ -91,7 +95,7 @@ export const Legend = memo(function Legend({ empire, step, countries2026 = false
 
         <h3>Carte</h3>
         <ul className="legend__list">
-          {entities.map((e) => (
+          {entities.slice(0, MAX_ENTITIES).map((e) => (
             <li key={`${e.index}-${e.name}`}>
               <span
                 className="legend__swatch"
@@ -105,6 +109,7 @@ export const Legend = memo(function Legend({ empire, step, countries2026 = false
               Territoire : {e.name}{STATUS_LABEL[e.status]}
             </li>
           ))}
+          {entities.length > MAX_ENTITIES && <li>… et {entities.length - MAX_ENTITIES} autres entités</li>}
           <li>
             <span className="legend__swatch legend__swatch--diff" style={{ '--c': DIFF_COLORS.gained } as CSSProperties} aria-hidden="true">
               +

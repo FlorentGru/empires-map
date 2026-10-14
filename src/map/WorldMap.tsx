@@ -48,7 +48,7 @@ export const TILT_PITCH = 50;
 const MAX_PITCH = 70;
 const INITIAL_VIEW = { center: [16, 38] as [number, number], zoom: 3 };
 /** Dernière vue de caméra : la carte recréée au changement d'empire repart de là, puis vole vers la nouvelle vue. */
-let lastView: { center: [number, number]; zoom: number } | null = null;
+let lastView: { empireId: string; center: [number, number]; zoom: number } | null = null;
 
 function viewPadding(panelOpen: boolean): PaddingOptions {
   const mobile = window.innerWidth < 768;
@@ -98,12 +98,12 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
     const map = new MapLibreMap({
       container: containerRef.current,
       style: baseStyle(),
-      ...(lastView ?? empire.view ?? INITIAL_VIEW),
+      ...(lastView && lastView.empireId === empire.id ? lastView : (empire.view ?? INITIAL_VIEW)),
       pitch: tiltedRef.current ? TILT_PITCH : 0,
       maxPitch: tiltedRef.current ? MAX_PITCH : 0,
       minZoom: 2.5,
       maxZoom: 9,
-      maxBounds: MAX_BOUNDS,
+      maxBounds: empire.bounds ?? MAX_BOUNDS,
       attributionControl: false,
       renderWorldCopies: false,
       fadeDuration: 0,
@@ -141,7 +141,7 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
     });
     return () => {
       const c = map.getCenter();
-      lastView = { center: [c.lng, c.lat], zoom: map.getZoom() };
+      lastView = { empireId: empire.id, center: [c.lng, c.lat], zoom: map.getZoom() };
       created?.territories.destroy();
       created?.morph.destroy();
       created?.glide.destroy();
@@ -154,6 +154,11 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
       mapRef.current = null;
     };
   }, []);
+
+  // Limites de navigation propres à l'empire (sinon globales).
+  useEffect(() => {
+    mapRef.current?.setMaxBounds(empire.bounds ?? MAX_BOUNDS);
+  }, [empire.id, empire.bounds]);
 
   // Villes : fichier optionnel, chargé à la demande (tableau vide s'il n'existe pas).
   useEffect(() => {
