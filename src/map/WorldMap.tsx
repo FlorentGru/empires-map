@@ -1,12 +1,12 @@
-import { Map as MapLibreMap, type PaddingOptions } from 'maplibre-gl';
+import { LngLatBounds, Map as MapLibreMap, type PaddingOptions } from 'maplibre-gl';
 import './maplibreWorker';
 import { useEffect, useRef, useState } from 'react';
 import { loadCities } from '../data/loadCities';
 import { loadDiff, loadMorph, loadTerritory, preloadAround, type DiffCollection, type MorphCollection, type TerritoryCollection } from '../data/loadEmpire';
 import { prefersReducedMotion } from '../lib/motion';
-import type { City, Empire } from '../types';
+import type { City, Empire, TimelineStep } from '../types';
 import { addLand, baseStyle, DEM_SOURCE, MAX_BOUNDS, TERRAIN_EXAGGERATION } from './basemapStyle';
-import { ArmyLayer } from './armyLayer';
+import { ArmyLayer, CHAIN_WALK_MS, continuedArmies } from './armyLayer';
 import { CityLayer } from './cityLayer';
 import { CountriesLayer } from './countriesLayer';
 import { DiffHighlight } from './diff';
@@ -79,6 +79,8 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
   const [cityLayer, setCityLayer] = useState<CityLayer | null>(null);
   const shownRef = useRef<string | null>(null);
   const lastIndexRef = useRef<number | null>(null);
+  /** Étape n−1 si l'étape courante a été atteinte en avance séquentielle, sinon null. */
+  const seqPrevRef = useRef<TimelineStep | null>(null);
   const cameraKeyRef = useRef('');
   const panelOpenRef = useRef(panelOpen);
   panelOpenRef.current = panelOpen;
@@ -122,7 +124,12 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
         armies: new ArmyLayer(map),
         figures: new FigureLayer(map, () => {
           const mobile = window.innerWidth < 768;
-          return { left: 0, top: 70, right: panelOpenRef.current && !mobile ? 420 : 0 };
+          return {
+            left: 0,
+            top: 70,
+            right: panelOpenRef.current && !mobile ? 420 : 0,
+            bottom: mobile && panelOpenRef.current ? window.innerHeight * 0.45 : 150,
+          };
         }),
         // Après territoires / morph, avant les villes (ajoutées plus tard, donc au-dessus).
         countries: new CountriesLayer(map),
@@ -200,7 +207,29 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
     let stale = false;
 
     layers.marker.show(step);
-    if (step.location) {
+    const seqPrev = lastIndexRef.current === index - 1 ? (empire.steps[index - 1] ?? null) : null;
+    seqPrevRef.current = seqPrev;
+    const chained = seqPrev ? continuedArmies(empire.steps, index) : [];
+    const camTimers: number[] = [];
+    if (step.location && chained.length > 0 && !prefersReducedMotion()) {
+      // Armée chaînée : on cadre d'abord toute la marche, puis on rejoint le champ de bataille au choc.
+      const bounds = new LngLatBounds();
+      for (const a of chained) for (const pt of a.path) bounds.extend(pt);
+      const sp = Math.max(0.25, speedRef.current);
+      const pitch = tiltedRef.current ? TILT_PITCH : 0;
+      const padding = viewPadding(panelOpenRef.current);
+      cameraKeyRef.current = '';
+      map.fitBounds(bounds, { padding, pitch, maxZoom: 9, duration: 1200 / sp, essential: false });
+      const loc = step.location;
+      const zoom = Math.min(9, Math.max(2.5, step.zoom ?? 4));
+      const lead = 1200 / sp;
+      camTimers.push(
+        window.setTimeout(
+          () => map.flyTo({ center: loc, zoom, pitch, padding, duration: lead, curve: 1.3, essential: false }),
+          Math.max(0, CHAIN_WALK_MS / sp - lead - 100),
+        ),
+      );
+    } else if (step.location) {
       const camera = {
         center: step.location,
         zoom: Math.min(9, Math.max(2.5, step.zoom ?? 4)),
@@ -291,6 +320,7 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
 
     return () => {
       stale = true;
+      for (const t of camTimers) window.clearTimeout(t);
       if (morphingRef.current) {
         // Animation interrompue : on l'annule ; l'étape suivante (re)posera son territoire.
         morphingRef.current = false;
@@ -310,15 +340,18 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
   // Figurines : armées et personnages de l'étape, lancés avec la caméra (le flyTo dure 2 s).
   useEffect(() => {
     if (!layers || !step) return;
-    layers.armies.clear();
     layers.figures.clear();
     if (figuresOn) {
       const reduced = prefersReducedMotion();
-      layers.armies.start(step, speedRef.current, reduced);
-      layers.figures.show(step, speedRef.current, reduced);
+      const prev = seqPrevRef.current;
+      // Pas de clear() des armées : start() réutilise les marqueurs des armées chaînées.
+      const continued = prev ? continuedArmies(empire.steps, index) : [];
+      layers.armies.start(step, prev, speedRef.current, reduced, continued);
+      layers.figures.show(step, speedRef.current, reduced, !reduced && continued.length > 0);
+    } else {
+      layers.armies.clear();
     }
     return () => {
-      layers.armies.clear();
       layers.figures.clear();
     };
   }, [layers, step, figuresOn]);

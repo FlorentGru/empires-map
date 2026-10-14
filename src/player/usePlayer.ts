@@ -1,10 +1,12 @@
-import { useEffect, useMemo, useReducer } from 'react';
+import { useEffect, useMemo, useReducer, useRef } from 'react';
 
 export const SPEEDS = [0.5, 1, 2] as const;
 export type Speed = (typeof SPEEDS)[number];
 
 /** Durée d'une étape à vitesse 1 (ms). */
 export const BASE_STEP_MS = 6000;
+/** Durée d'une étape à armée chaînée (marche plus longue). */
+export const CHAINED_STEP_MS = 8000;
 
 interface PlayerState {
   index: number;
@@ -64,7 +66,10 @@ function isEditable(target: EventTarget | null): boolean {
   return target.isContentEditable || ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName);
 }
 
-export function usePlayer(stepCount: number, initialIndex = 0) {
+/** stepMs : durée de base d'une étape (vitesse 1) ; défaut BASE_STEP_MS. */
+export function usePlayer(stepCount: number, initialIndex = 0, stepMs?: (index: number) => number) {
+  const stepMsRef = useRef(stepMs);
+  stepMsRef.current = stepMs;
   const reducer = useMemo(() => makeReducer(Math.max(1, stepCount)), [stepCount]);
   const [state, dispatch] = useReducer(reducer, {
     index: Math.max(0, Math.min(stepCount - 1, initialIndex)),
@@ -77,7 +82,7 @@ export function usePlayer(stepCount: number, initialIndex = 0) {
   // Avance automatique.
   useEffect(() => {
     if (!state.playing || state.story) return;
-    const id = window.setTimeout(() => dispatch({ type: 'next', auto: true }), BASE_STEP_MS / state.speed);
+    const id = window.setTimeout(() => dispatch({ type: 'next', auto: true }), (stepMsRef.current?.(state.index) ?? BASE_STEP_MS) / state.speed);
     return () => window.clearTimeout(id);
   }, [state.playing, state.story, state.index, state.speed]);
 

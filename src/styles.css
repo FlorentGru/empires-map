@@ -1006,22 +1006,6 @@ kbd {
   border-bottom: 1px solid var(--parchment-edge);
   transform: translateY(-5px) rotate(45deg);
 }
-.figure-bubble--toleft {
-  left: auto;
-  right: calc(50% - 16px);
-  transform: translateX(var(--shift));
-}
-.figure-bubble--toleft::after {
-  left: auto;
-  right: calc(16px - 5px - var(--shift));
-}
-.figure-bubble--toright {
-  left: calc(50% - 16px);
-  transform: translateX(var(--shift));
-}
-.figure-bubble--toright::after {
-  left: calc(16px - 5px - var(--shift));
-}
 .figure-bubble--below {
   bottom: auto;
   top: calc(100% + 40px);
@@ -1029,20 +1013,62 @@ kbd {
 .figure-bubble--below::after {
   display: none;
 }
-.figure-marker__link {
+.figure-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  overflow: hidden;
+  pointer-events: none;
+}
+.figure-overlay > .figure-marker,
+.figure-overlay > .figure-scroll,
+.figure-overlay > .figure-link {
   position: absolute;
   top: 0;
   left: 0;
+  will-change: transform;
+}
+.figure-scroll {
+  animation: figure-fade 0.5s 0.2s ease-out backwards;
+}
+.figure-link {
   height: 0;
   border-top: 1.5px dashed var(--ink-soft);
-  opacity: 0.7;
   transform-origin: 0 0;
-  pointer-events: none;
-  animation: figure-link-in 0.5s ease-out backwards;
+  opacity: 0.7;
+  animation: figure-fade 0.5s ease-out backwards;
 }
-@keyframes figure-link-in {
+@keyframes figure-fade {
   from { opacity: 0; }
-  to { opacity: 0.7; }
+}
+.figure-marker__arrow {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  margin: -7px 0 0 -4px;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 11px solid var(--ink-soft);
+}
+.figure-marker--off .figure-marker__arrow { display: block; }
+.figure-marker__where {
+  display: none;
+  max-width: 130px;
+  overflow: hidden;
+  font-size: 0.6rem;
+  font-style: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--ink-soft);
+}
+.figure-marker--off .figure-marker__where { display: block; }
+@media (prefers-reduced-motion: reduce) {
+  .figure-marker__card,
+  .figure-scroll,
+  .figure-link { animation: none; }
 }
 .figure-bubble__ghost {
   visibility: hidden;

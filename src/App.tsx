@@ -8,7 +8,8 @@ import { ViewControls } from './panels/ViewControls';
 import { readBool, writeBool } from './lib/settings';
 import { EventPanel } from './panels/EventPanel';
 import { readUrlState, writeUrlState } from './player/urlState';
-import { usePlayer } from './player/usePlayer';
+import { continuedArmies } from './map/armyLayer';
+import { BASE_STEP_MS, CHAINED_STEP_MS, usePlayer } from './player/usePlayer';
 import { useStory } from './story/useStory';
 import { Timeline } from './timeline/Timeline';
 import type { Empire } from './types';
@@ -37,7 +38,9 @@ function initialIndex(empire: Empire): number {
 }
 
 function Atlas({ empire, onSelectEmpire }: { empire: Empire; onSelectEmpire: (id: string) => void }) {
-  const player = usePlayer(empire.steps.length, initialIndex(empire));
+  const player = usePlayer(empire.steps.length, initialIndex(empire), (i) =>
+    continuedArmies(empire.steps, i).length > 0 ? CHAINED_STEP_MS : BASE_STEP_MS,
+  );
   const step = empire.steps[player.index];
   const [panelOpen, setPanelOpen] = useState(true);
   const [aboutOpen, setAboutOpen] = useState(false);

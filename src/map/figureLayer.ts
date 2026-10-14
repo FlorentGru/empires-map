@@ -1,18 +1,38 @@
-import { Marker, type Map as MapLibreMap } from 'maplibre-gl';
+import type { Map as MapLibreMap } from 'maplibre-gl';
 import type { Figure, TimelineStep } from '../types';
 import { FACTION_COLORS, characterSvg } from './sprites';
 
 const TYPE_MS = 1200;
 const TYPE_DELAY_MS = 1500; // la caméra arrive vers 2 s
-const PAIR_DX = 50;
 const BATTLE_DELAY_MS = 3500; // les figures d'une bataille n'apparaissent qu'après le choc
-const BATTLE_GAP = 150; // écart écran (px) entre le lieu de bataille et la figure
-const BATTLE_GAP_MOBILE = 100;
-const SPRITE_CENTER = 24; // centre du sprite au-dessus de l'ancre (px)
+const CHAIN_DELAY_MS = 5000; // idem pour une étape à armées chaînées (marche plus longue)
+const DIST = 90; // distance mini ancre → centre de la carte (px)
+const DIST_MOBILE = 70;
+const SPRITE_W = 44;
+const SPRITE_H = 48;
+
+/** 8 directions écran : N, NE, E, SE, S, SO, O, NO. */
+const DIRS: [number, number][] = [
+  [0, -1],
+  [Math.SQRT1_2, -Math.SQRT1_2],
+  [1, 0],
+  [Math.SQRT1_2, Math.SQRT1_2],
+  [0, 1],
+  [-Math.SQRT1_2, Math.SQRT1_2],
+  [-1, 0],
+  [-Math.SQRT1_2, -Math.SQRT1_2],
+];
 
 interface Arrival {
   last: [number, number];
   prev: [number, number];
+}
+
+interface Rect {
+  x: number;
+  y: number;
+  w: number;
+  h: number;
 }
 
 function escapeHtml(s: string): string {
@@ -23,31 +43,66 @@ interface Insets {
   right: number;
   left: number;
   top: number;
+  bottom?: number;
 }
 
-/** Personnages d'époque : sprite, nom + rôle, bulle de citation qui s'écrit. */
+/** Une carte de personnage : élément, ancre géographique, taille mesurée (une fois). */
+interface Card {
+  el: HTMLDivElement;
+  link: HTMLDivElement;
+  arrow: HTMLElement;
+  anchor: [number, number];
+  /** Direction de préférence (vecteur écran, relatif aux armées) ; null = calculée à partir de `slot`. */
+  slot: number; // 0 seule, -1 / +1 paire
+  /** Emprise de la carte autour de l'origine du sprite : décalage et taille. */
+  ox: number;
+  oy: number;
+  w: number;
+  h: number;
+  off: boolean;
+}
+
+const overlap = (a: Rect, b: Rect) => {
+  const w = Math.min(a.x + a.w, b.x + b.w) - Math.max(a.x, b.x);
+  const h = Math.min(a.y + a.h, b.y + b.h) - Math.max(a.y, b.y);
+  return w > 0 && h > 0 ? w * h : 0;
+};
+
+/**
+ * Personnages d'époque : une superposition DOM unique, une carte par personnage placée à chaque frame de
+ * mouvement de la caméra (8 candidats autour de l'ancre, sans chevaucher armées, autres cartes ni panneaux).
+ */
 export class FigureLayer {
-  private markers: Marker[] = [];
-  private bubbles: HTMLElement[] = [];
+  private overlay: HTMLDivElement | null = null;
+  private cards: Card[] = [];
+  private scroll: HTMLElement | null = null;
+  private arrivals: Arrival[] | null = null;
+  private title = '';
   private typed: { el: HTMLElement; chars: string[] }[] = [];
   private timers: number[] = [];
   private raf = 0;
+  private layoutRaf = 0;
   private t0 = 0;
   private speed = 1;
-  private onMoveEnd = () => this.fit();
+  private onMove = () => this.schedule();
 
-  /** insets : zones de l'écran à ne pas recouvrir (panneau latéral, barre du haut). */
+  /** insets : zones de l'écran à ne pas recouvrir (panneau latéral, barre du haut, frise). */
   constructor(private map: MapLibreMap, private insets: () => Insets) {}
 
   clear() {
     cancelAnimationFrame(this.raf);
+    cancelAnimationFrame(this.layoutRaf);
     this.raf = 0;
+    this.layoutRaf = 0;
     for (const t of this.timers) window.clearTimeout(t);
     this.timers = [];
-    this.map.off('moveend', this.onMoveEnd);
-    for (const m of this.markers) m.remove();
-    this.markers = [];
-    this.bubbles = [];
+    this.map.off('move', this.onMove);
+    this.map.off('resize', this.onMove);
+    this.overlay?.remove();
+    this.overlay = null;
+    this.cards = [];
+    this.scroll = null;
+    this.arrivals = null;
     this.typed = [];
   }
 
@@ -55,11 +110,12 @@ export class FigureLayer {
     this.clear();
   }
 
-  show(step: TimelineStep, speed: number, reduced: boolean) {
+  show(step: TimelineStep, speed: number, reduced: boolean, chained = false) {
     this.clear();
     const figures = step.figures ?? [];
     if (figures.length === 0) return;
     this.speed = Math.max(0.25, speed);
+    this.title = step.title;
 
     const armies = (step.armies ?? []).filter((a) => a.path.length >= 2);
     if (armies.length === 0) {
@@ -71,79 +127,46 @@ export class FigureLayer {
     if (reduced) {
       this.spawn(step, figures, arrivals, true, 0);
     } else {
-      this.timers.push(window.setTimeout(() => this.spawn(step, figures, arrivals, false, 150), BATTLE_DELAY_MS / this.speed));
+      const delay = (chained ? CHAIN_DELAY_MS : BATTLE_DELAY_MS) / this.speed;
+      this.timers.push(window.setTimeout(() => this.spawn(step, figures, arrivals, false, 150), delay));
     }
-  }
-
-  /** Décalage écran (px) de la figure par rapport au lieu de bataille : côté opposé à l'arrivée des armées. */
-  private battleOffset(arrivals: Arrival[]): [number, number] {
-    const map = this.map;
-    let vx = 0;
-    let vy = 0;
-    let first: [number, number] | null = null;
-    for (const a of arrivals) {
-      const p1 = map.project(a.last);
-      const p0 = map.project(a.prev);
-      vx += p1.x - p0.x;
-      vy += p1.y - p0.y;
-      if (!first) first = [p1.x - p0.x, p1.y - p0.y];
-    }
-    let len = Math.hypot(vx, vy);
-    if (len < 1) {
-      // Armées arrivant de côtés opposés : on s'écarte sur la perpendiculaire (vers le haut de l'écran).
-      const [fx, fy] = first ?? [1, 0];
-      vx = -fy;
-      vy = fx;
-      if (vy > 0) {
-        vx = -vx;
-        vy = -vy;
-      }
-      len = Math.hypot(vx, vy);
-      if (len < 1e-6) {
-        vx = 0;
-        vy = -1;
-        len = 1;
-      }
-    }
-    const gap = window.innerWidth < 768 ? BATTLE_GAP_MOBILE : BATTLE_GAP;
-    return [(-vx / len) * gap, (-vy / len) * gap];
   }
 
   private spawn(step: TimelineStep, figures: Figure[], arrivals: Arrival[] | null, reduced: boolean, typeDelayMs: number) {
-    const pair = figures.length === 2;
-    let battle: [number, number] | null = null;
-    let off: [number, number] = [0, 0];
-    if (arrivals) {
-      battle = arrivals[0]!.last;
-      off = this.battleOffset(arrivals);
-      // Si la figure sortirait de la carte, on prend le côté inverse.
-      const box = this.map.getContainer().getBoundingClientRect();
-      const c = this.map.project(battle);
-      const x = c.x + off[0];
-      const y = c.y + off[1];
-      if (box.width > 50 && (x < 60 || x > box.width - 60 || y < 120 || y > box.height - 80)) off = [-off[0], -off[1]];
-    }
+    const container = this.map.getContainer();
+    const overlay = document.createElement('div');
+    overlay.className = 'figure-overlay';
+    container.appendChild(overlay);
+    this.overlay = overlay;
+    this.arrivals = arrivals;
 
+    const pair = figures.length === 2;
+    const battle = arrivals ? arrivals[0]!.last : null;
     figures.forEach((f, i) => {
       const pos = battle ?? f.position ?? step.location;
       if (!pos) return;
-      const side = pair ? (i === 0 ? -1 : 1) : 0;
-      const ox = off[0] + side * PAIR_DX;
-      const oy = off[1];
-      const el = this.build(f, side, battle ? [ox, oy] : null);
-      this.markers.push(new Marker({ element: el, anchor: 'bottom', offset: [ox, oy] }).setLngLat(pos).addTo(this.map));
+      const slot = pair ? (i === 0 ? -1 : 1) : 0;
+      const el = this.build(f, slot);
+      const link = document.createElement('div');
+      link.className = 'figure-link';
+      overlay.appendChild(link);
+      overlay.appendChild(el);
+      const arrow = el.querySelector<HTMLElement>('.figure-marker__arrow')!;
+      this.cards.push({ el, link, arrow, anchor: pos, slot, ox: 0, oy: 0, w: 0, h: 0, off: false });
     });
 
-    if (pair && !battle) {
-      const pos = figures[0]?.position ?? step.location;
-      if (pos) {
-        const el = document.createElement('div');
-        el.className = 'treaty-marker';
-        el.setAttribute('aria-hidden', 'true');
-        el.textContent = '📜';
-        this.markers.push(new Marker({ element: el, anchor: 'bottom', offset: [0, -4] }).setLngLat(pos).addTo(this.map));
-      }
+    if (pair && !battle && this.cards.length === 2) {
+      const el = document.createElement('div');
+      el.className = 'treaty-marker figure-scroll';
+      el.setAttribute('aria-hidden', 'true');
+      el.textContent = '📜';
+      overlay.appendChild(el);
+      this.scroll = el;
     }
+
+    // Mesure unique de chaque carte (bulle et étiquette comprises).
+    for (const c of this.cards) this.measure(c);
+    this.layout();
 
     if (reduced) {
       for (const t of this.typed) t.el.textContent = t.chars.join('');
@@ -155,49 +178,56 @@ export class FigureLayer {
         }, typeDelayMs),
       );
     }
-    this.map.off('moveend', this.onMoveEnd);
-    this.map.on('moveend', this.onMoveEnd);
-    this.timers.push(window.setTimeout(() => this.fit(), 60));
+    this.map.off('move', this.onMove);
+    this.map.on('move', this.onMove);
+    this.map.on('resize', this.onMove);
+    // Les armées bougent encore un instant (recul du vaincu) : on replace une fois posées.
+    if (arrivals && !reduced) {
+      this.timers.push(window.setTimeout(() => this.schedule(), 80));
+      this.timers.push(window.setTimeout(() => this.schedule(), 1100 / this.speed));
+    } else {
+      this.timers.push(window.setTimeout(() => this.schedule(), 80));
+    }
   }
 
-  private build(f: Figure, side: number, link: [number, number] | null): HTMLDivElement {
+  private measure(c: Card) {
+    const b = c.el.querySelector<HTMLElement>('.figure-bubble');
+    const l = c.el.querySelector<HTMLElement>('.figure-marker__label');
+    const bw = b?.offsetWidth ?? 0;
+    const bh = b?.offsetHeight ?? 0;
+    const lw = l?.offsetWidth ?? 0;
+    const lh = l?.offsetHeight ?? 0;
+    const left = Math.min(0, (SPRITE_W - bw) / 2, (SPRITE_W - lw) / 2);
+    const right = Math.max(SPRITE_W, (SPRITE_W + bw) / 2, (SPRITE_W + lw) / 2);
+    const top = b ? -(bh + 8) : 0;
+    const bottom = SPRITE_H + 2 + lh;
+    c.ox = left;
+    c.oy = top;
+    c.w = right - left;
+    c.h = bottom - top;
+  }
+
+  private build(f: Figure, slot: number): HTMLDivElement {
     const el = document.createElement('div');
     el.className = 'figure-marker';
+    el.style.visibility = 'hidden';
     const tint = FACTION_COLORS[f.faction];
-    const flip = side > 0 ? ' figure-marker__sprite--flip' : '';
-    const dir = side < 0 ? ' figure-bubble--toleft' : side > 0 ? ' figure-bubble--toright' : '';
+    const flip = slot > 0 ? ' figure-marker__sprite--flip' : '';
     let bubble = '';
     if (f.quote) {
       bubble =
-        `<div class="figure-bubble${dir}" role="note" aria-label="${escapeHtml(f.name)} : ${escapeHtml(f.quote)}">` +
+        `<div class="figure-bubble" role="note" aria-label="${escapeHtml(f.name)} : ${escapeHtml(f.quote)}">` +
         `<span class="figure-bubble__ghost" aria-hidden="true">« ${escapeHtml(f.quote)} »</span>` +
         '<span class="figure-bubble__typed" aria-hidden="true"></span></div>';
     }
-    let linkHtml = '';
-    if (link) {
-      // Trait pointillé du centre de la figure vers le lieu de bataille (= ancre − décalage).
-      const dx = -link[0];
-      const dy = -link[1] + SPRITE_CENTER;
-      const len = Math.hypot(dx, dy);
-      const ux = dx / len;
-      const uy = dy / len;
-      const from = 24;
-      const to = Math.max(from, len - 20);
-      linkHtml =
-        `<span class="figure-marker__link" aria-hidden="true" style="width:${Math.round(to - from)}px;` +
-        `transform:translate(${(22 + ux * from).toFixed(1)}px,${(SPRITE_CENTER + uy * from).toFixed(1)}px) rotate(${Math.atan2(dy, dx).toFixed(4)}rad)"></span>`;
-    }
     el.innerHTML =
-      linkHtml +
+      '<span class="figure-marker__arrow" aria-hidden="true"></span>' +
       `<div class="figure-marker__card">${bubble}` +
       `<div class="figure-marker__sprite${flip}">${characterSvg(f.archetype, tint)}</div>` +
-      `<div class="figure-marker__label"><strong>${escapeHtml(f.name)}</strong><span>${escapeHtml(f.role)}</span></div></div>`;
-    const b = el.querySelector<HTMLElement>('.figure-bubble');
+      `<div class="figure-marker__label"><strong>${escapeHtml(f.name)}</strong><span>${escapeHtml(f.role)}</span>` +
+      `<em class="figure-marker__where">→ ${escapeHtml(this.title)}</em></div></div>`;
     const t = el.querySelector<HTMLElement>('.figure-bubble__typed');
-    if (b && t && f.quote) {
-      this.bubbles.push(b);
-      this.typed.push({ el: t, chars: Array.from(`« ${f.quote} »`) });
-    }
+    if (t && f.quote) this.typed.push({ el: t, chars: Array.from(`« ${f.quote} »`) });
     return el;
   }
 
@@ -209,9 +239,18 @@ export class FigureLayer {
     else this.raf = 0;
   };
 
-  /** Rectangle englobant des marqueurs d'armées (et du choc) présents à l'écran, ou null. */
-  private armiesRect(): DOMRect | null {
-    const els = this.map.getContainer().querySelectorAll('.army-marker, .clash-marker');
+  /** Une seule passe de placement par frame. */
+  private schedule() {
+    if (this.layoutRaf || !this.overlay) return;
+    this.layoutRaf = requestAnimationFrame(() => {
+      this.layoutRaf = 0;
+      this.layout();
+    });
+  }
+
+  /** Rectangle englobant des armées et du choc (coordonnées du conteneur), ou null. Mesuré une fois par passe. */
+  private armiesRect(cx: number, cy: number): Rect | null {
+    const els = this.map.getContainer().querySelectorAll('.army-marker, .clash-marker, .army-label');
     let l = Infinity;
     let t = Infinity;
     let r = -Infinity;
@@ -224,54 +263,139 @@ export class FigureLayer {
       r = Math.max(r, q.right);
       b = Math.max(b, q.bottom);
     });
-    return l === Infinity ? null : new DOMRect(l - 6, t - 6, r - l + 12, b - t + 12);
+    return l === Infinity ? null : { x: l - cx - 6, y: t - cy - 6, w: r - l + 12, h: b - t + 12 };
   }
 
-  /** Place chaque bulle dans la zone libre : bords, panneau, et hors du rectangle des armées. */
-  private fit() {
-    const box = this.map.getContainer().getBoundingClientRect();
-    if (box.width < 50 || box.height < 50) return; // carte masquée : mesures inexploitables
+  /** Vecteur écran « à l'opposé de l'arrivée des armées » (unitaire). */
+  private awayVector(): [number, number] {
+    let vx = 0;
+    let vy = 0;
+    let fx = 1;
+    let fy = 0;
+    let k = 0;
+    for (const a of this.arrivals ?? []) {
+      const p1 = this.map.project(a.last);
+      const p0 = this.map.project(a.prev);
+      vx += p1.x - p0.x;
+      vy += p1.y - p0.y;
+      if (k++ === 0) {
+        fx = p1.x - p0.x;
+        fy = p1.y - p0.y;
+      }
+    }
+    let len = Math.hypot(vx, vy);
+    if (len < 1) {
+      // Armées arrivant de côtés opposés : perpendiculaire, vers le haut de l'écran.
+      vx = -fy;
+      vy = fx;
+      if (vy > 0) {
+        vx = -vx;
+        vy = -vy;
+      }
+      len = Math.hypot(vx, vy);
+      if (len < 1e-6) return [0, -1];
+    }
+    return [-vx / len, -vy / len];
+  }
+
+  private layout() {
+    const overlay = this.overlay;
+    if (!overlay || this.cards.length === 0) return;
+    const container = this.map.getContainer();
+    const W = container.clientWidth;
+    const H = container.clientHeight;
+    if (W < 50 || H < 50) return; // carte masquée : mesures inexploitables
+    const cbox = container.getBoundingClientRect();
+    const army = this.armiesRect(cbox.left, cbox.top);
+
     const ins = this.insets();
-    const minX = box.left + ins.left + 8;
-    const maxX = box.right - ins.right - 8;
-    const minY = box.top + ins.top;
-    const army = this.armiesRect();
-    const hits = (r: DOMRect) =>
-      !!army && r.left < army.right && r.right > army.left && r.top < army.bottom && r.bottom > army.top;
-    const clamp = (r: DOMRect) => {
-      let shift = 0;
-      if (r.right > maxX) shift = maxX - r.right;
-      if (r.left + shift < minX) shift = minX - r.left;
-      return shift;
+    const minX = ins.left + 8;
+    const maxX = W - ins.right - 8;
+    const minY = ins.top;
+    const maxY = H - (ins.bottom ?? 0);
+    const zone: Rect = { x: minX, y: minY, w: Math.max(1, maxX - minX), h: Math.max(1, maxY - minY) };
+    const base = window.innerWidth < 768 ? DIST_MOBILE : DIST;
+
+    // Direction préférée de chaque carte.
+    let away: [number, number] = [0, -1];
+    if (this.arrivals) away = this.awayVector();
+    const prefOf = (slot: number): [number, number] => {
+      if (!this.arrivals) return slot === 0 ? [0, -1] : [slot, 0];
+      if (slot === 0) return away;
+      const a = (slot * Math.PI) / 3; // paire : éventail de ±60° autour de la direction opposée
+      return [away[0] * Math.cos(a) - away[1] * Math.sin(a), away[0] * Math.sin(a) + away[1] * Math.cos(a)];
     };
 
-    for (const b of this.bubbles) {
-      // Candidats : au-dessus, en dessous, puis à gauche / à droite du rectangle des armées.
-      let chosen: { below: boolean; shift: number } | null = null;
-      let fallback: { below: boolean; shift: number } | null = null;
-      for (const mode of ['above', 'below', 'left', 'right'] as const) {
-        if ((mode === 'left' || mode === 'right') && !army) continue;
-        const below = mode === 'below';
-        b.classList.toggle('figure-bubble--below', below);
-        b.style.setProperty('--shift', '0px');
-        const r0 = b.getBoundingClientRect();
-        let shift = 0;
-        if (mode === 'left' && army) shift = army.left - 8 - r0.right;
-        else if (mode === 'right' && army) shift = army.right + 8 - r0.left;
-        else shift = clamp(r0);
-        b.style.setProperty('--shift', `${Math.round(shift)}px`);
-        const r = b.getBoundingClientRect();
-        const inside = r.left >= minX - 1 && r.right <= maxX + 1 && r.top >= minY;
-        const cand = { below, shift: Math.round(shift) };
-        if (mode === 'above') fallback = { below: r.top < minY, shift: Math.round(clamp(r0)) };
-        if (inside && !hits(r)) {
-          chosen = cand;
-          break;
+    const placed: Rect[] = [];
+    const projected: { x: number; y: number }[] = [];
+    for (const c of this.cards) {
+      const pt = this.map.project(c.anchor);
+      projected.push({ x: pt.x, y: pt.y });
+      c.off = pt.x < minX || pt.x > maxX || pt.y < minY || pt.y > maxY;
+      let rect: Rect;
+      if (c.off) {
+        // Ancre hors de la zone libre : la carte se colle au bord le plus proche.
+        const x = Math.min(Math.max(pt.x - c.w / 2, zone.x), zone.x + zone.w - c.w);
+        const y = Math.min(Math.max(pt.y - c.h / 2, zone.y), zone.y + zone.h - c.h);
+        rect = { x, y, w: c.w, h: c.h };
+      } else {
+        const pref = prefOf(c.slot);
+        const order = DIRS.map((d) => d).sort((a, b) => b[0] * pref[0] + b[1] * pref[1] - (a[0] * pref[0] + a[1] * pref[1]));
+        let best: Rect | null = null;
+        let bestScore = Infinity;
+        for (const [ux, uy] of order) {
+          const dist = Math.max(base, 24 + Math.abs(ux) * (c.w / 2) + Math.abs(uy) * (c.h / 2));
+          const r: Rect = { x: pt.x + ux * dist - c.w / 2, y: pt.y + uy * dist - c.h / 2, w: c.w, h: c.h };
+          const padded: Rect = { x: r.x - 4, y: r.y - 4, w: r.w + 8, h: r.h + 8 };
+          let score = (c.w * c.h - overlap(r, zone)) * 2;
+          for (const o of placed) score += overlap(padded, o);
+          if (army) score += overlap(padded, army);
+          if (score === 0) {
+            best = r;
+            break;
+          }
+          if (score < bestScore) {
+            bestScore = score;
+            best = r;
+          }
         }
+        rect = best!;
       }
-      const final = chosen ?? fallback ?? { below: false, shift: 0 };
-      b.classList.toggle('figure-bubble--below', final.below);
-      b.style.setProperty('--shift', `${final.shift}px`);
+      placed.push(rect);
+
+      // Écritures : la carte (origine du sprite = rect − décalage), puis le trait de rappel ou la flèche.
+      const px = rect.x - c.ox;
+      const py = rect.y - c.oy;
+      c.el.style.transform = `translate3d(${px.toFixed(1)}px,${py.toFixed(1)}px,0)`;
+      c.el.style.visibility = 'visible';
+      c.el.classList.toggle('figure-marker--off', c.off);
+      const sx = rect.x + rect.w / 2;
+      const sy = rect.y + rect.h / 2;
+      if (c.off) {
+        c.link.style.display = 'none';
+        const ang = Math.atan2(pt.y - sy, pt.x - sx);
+        c.arrow.style.transform = `translate(${SPRITE_W / 2}px,${SPRITE_H / 2}px) rotate(${ang.toFixed(3)}rad) translateX(${(Math.max(c.w, c.h) / 2 + 6).toFixed(0)}px)`;
+      } else {
+        // Trait : de l'ancre (à 8 px) jusqu'au point de la carte le plus proche.
+        const nx = Math.min(Math.max(pt.x, rect.x), rect.x + rect.w);
+        const ny = Math.min(Math.max(pt.y, rect.y), rect.y + rect.h);
+        const dx = nx - pt.x;
+        const dy = ny - pt.y;
+        const len = Math.hypot(dx, dy);
+        if (len > 14) {
+          const ux = dx / len;
+          const uy = dy / len;
+          c.link.style.display = 'block';
+          c.link.style.width = `${(len - 12).toFixed(1)}px`;
+          c.link.style.transform = `translate3d(${(pt.x + ux * 8).toFixed(1)}px,${(pt.y + uy * 8).toFixed(1)}px,0) rotate(${Math.atan2(dy, dx).toFixed(4)}rad)`;
+        } else c.link.style.display = 'none';
+      }
+    }
+
+    if (this.scroll && projected.length === 2) {
+      const mx = (projected[0]!.x + projected[1]!.x) / 2;
+      const my = (projected[0]!.y + projected[1]!.y) / 2;
+      this.scroll.style.transform = `translate3d(${(mx - 12).toFixed(1)}px,${(my - 26).toFixed(1)}px,0)`;
     }
   }
 }
