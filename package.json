@@ -20,7 +20,10 @@
     "build:data:china": "tsx scripts/build-territories.ts --empire china && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire china && tsx scripts/build-neighbors.ts --empire china",
     "test": "vitest run tests/unit",
     "test:data": "vitest run tests/data",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "agent": "agent/.venv/bin/uvicorn agent.server:app --port 8000 --reload --reload-dir agent",
+    "agent:web": "cd agent && .venv/bin/adk web",
+    "agent:test": "agent/.venv/bin/pytest agent/tests -q"
   },
   "dependencies": {
     "maplibre-gl": "^6.14.0",

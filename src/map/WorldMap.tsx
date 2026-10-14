@@ -143,8 +143,9 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
         armies: new ArmyLayer(map),
         figures: new FigureLayer(map, () => {
           const mobile = window.innerWidth < 768;
+          // Même zone que le cadrage de la caméra : hors légende ouverte, panneau latéral et frise.
           return {
-            left: 0,
+            left: mobile ? 0 : Math.max(0, (viewPadding(panelOpenRef.current).left ?? 20) - 16),
             top: 70,
             right: panelOpenRef.current && !mobile ? 420 : 0,
             bottom: mobile && panelOpenRef.current ? window.innerHeight * 0.45 : 150,

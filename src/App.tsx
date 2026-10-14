@@ -13,6 +13,8 @@ import { BASE_STEP_MS, CHAINED_STEP_MS, usePlayer } from './player/usePlayer';
 import { chapterAt } from './lib/periods';
 import { useStory } from './story/useStory';
 import { Timeline } from './timeline/Timeline';
+import { ChatPanel } from './chat/ChatPanel';
+import type { ChatContext } from './chat/ChatPanel';
 import type { Empire } from './types';
 
 // Galerie des figurines : chargée à la demande.
@@ -31,6 +33,7 @@ export function App() {
   const empire = getEmpire(empireId);
   const [navKey, setNavKey] = useState(0);
   const [galleryOpen, setGalleryOpen] = useState(() => new URLSearchParams(window.location.search).get('figures') === 'gallery');
+  const [chatContext, setChatContext] = useState<ChatContext | null>(null);
   const closeGallery = useCallback(() => {
     clearFiguresParam();
     setGalleryOpen(false);
@@ -55,7 +58,8 @@ export function App() {
   // `key` : changer d'empire réinitialise le lecteur et la carte.
   return (
     <>
-      <Atlas key={`${empire.id}:${navKey}`} empire={empire} onSelectEmpire={setEmpireId} onOpenGallery={() => setGalleryOpen(true)} />
+      <Atlas key={`${empire.id}:${navKey}`} empire={empire} onSelectEmpire={setEmpireId} onOpenGallery={() => setGalleryOpen(true)} onContext={setChatContext} />
+      <ChatPanel context={chatContext} goToStep={goToStep} />
       {galleryOpen && (
         <Suspense fallback={null}>
           <Gallery onClose={closeGallery} onNavigate={goToStep} />
@@ -72,7 +76,7 @@ function initialIndex(empire: Empire): number {
   return i >= 0 ? i : 0;
 }
 
-function Atlas({ empire, onSelectEmpire, onOpenGallery }: { empire: Empire; onSelectEmpire: (id: string) => void; onOpenGallery: () => void }) {
+function Atlas({ empire, onSelectEmpire, onOpenGallery, onContext }: { empire: Empire; onSelectEmpire: (id: string) => void; onOpenGallery: () => void; onContext: (c: ChatContext) => void }) {
   const player = usePlayer(empire.steps.length, initialIndex(empire), (i) =>
     continuedArmies(empire.steps, i).length > 0 ? CHAINED_STEP_MS : BASE_STEP_MS,
   );
@@ -111,6 +115,10 @@ function Atlas({ empire, onSelectEmpire, onOpenGallery }: { empire: Empire; onSe
   useEffect(() => {
     writeUrlState(empire.id, step?.id);
   }, [empire.id, step?.id]);
+
+  useEffect(() => {
+    onContext({ empire: empire.id, step: step?.id, titre: step?.title });
+  }, [onContext, empire.id, step?.id, step?.title]);
 
   return (
     <div className="app">

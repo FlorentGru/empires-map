@@ -6,3 +6,9 @@ dist
 # Tests
 playwright-report/
 test-results/
+
+# Agent Python
+agent/.venv/
+agent/.env
+__pycache__/
+.pytest_cache/
