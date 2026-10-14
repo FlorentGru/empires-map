@@ -9,6 +9,7 @@
 // le centroïde de l'intersection, à défaut depuis le point `location` de l'étape.
 // Les buffers sont calculés sur la frontière simplifiée (tolérance 0.05) ; les bandes sont ensuite
 // intersectées avec les vraies géométries, donc les bords restent nets.
+import { emptyDir } from './fs-utils.ts';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -191,7 +192,7 @@ function buildFeatures(stable: Poly | null, gained: Band[], lost: Band[], tol: n
 export function writeMorph(cfg: EmpireConfig): void {
   const loc = new Map(loadTimeline(cfg.id).steps.map((s) => [s.id, s.location]));
   const morphDir = paths(cfg.id).morph;
-  fs.rmSync(morphDir, { recursive: true, force: true });
+  emptyDir(morphDir);
   fs.mkdirSync(morphDir, { recursive: true });
   const t0 = Date.now();
   let prev = readMerged(cfg.id, cfg.steps[0].id);

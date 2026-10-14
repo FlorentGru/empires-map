@@ -26,6 +26,7 @@
 //   5. `coastFix` de l'empire (Rome : Constantinople) : si le territoire (avant découpe) contient le point,
 //      on ajoute sans découpe les polygones du fichier d'overrides (trait de côte 1:50m trop grossier)
 // Puis : diffs/<id>.geojson (gagné/perdu vs étape précédente, morceaux < 2000 km² ignorés) et basemap/land.geojson (bbox réduite).
+import { emptyDir } from './fs-utils.ts';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -448,7 +449,7 @@ function readMerged(cfg: EmpireConfig, id: string): Poly | null {
 
 function writeDiffs(cfg: EmpireConfig): void {
   const dir = paths(cfg.id).diffs;
-  fs.rmSync(dir, { recursive: true, force: true });
+  emptyDir(dir);
   fs.mkdirSync(dir, { recursive: true });
   let prev = readMerged(cfg, cfg.steps[0].id);
   let total = 0;

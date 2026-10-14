@@ -5,6 +5,7 @@
 //   B = temps : 0 hors zones changées, 1..255 = 1 + round(t*254) ; gagné : t = dist. à prev / dmax_gain,
 //       perdu : t = 1 − dist. à cur / dmax_loss ; prolongé de 2 px au-delà des zones changées.
 // Usage : npx tsx scripts/build-sdf.ts [--empire <id>]
+import { emptyDir } from './fs-utils.ts';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -166,7 +167,7 @@ function buildEmpire(id: string) {
   const timeline = JSON.parse(fs.readFileSync(path.join(EMPIRES_DATA, id, 'timeline.json'), 'utf8')) as { steps: Step[] };
   const steps = [...timeline.steps].sort((a, b) => a.year - b.year);
   const outDir = path.join(EMPIRES_PUB, id, 'sdf');
-  fs.rmSync(outDir, { recursive: true, force: true });
+  emptyDir(outDir);
   fs.mkdirSync(outDir, { recursive: true });
   const terr = (s: Step) => loadGeoms(path.join(EMPIRES_PUB, id, 'territories', `${s.territory}.geojson`));
   const rows: string[][] = [];

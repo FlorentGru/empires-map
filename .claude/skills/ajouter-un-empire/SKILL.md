@@ -53,4 +53,5 @@ Corrige les petits écarts (une ville mal classée, un statut) directement dans 
 - Le trait de côte 1:50m peut faire tomber une ville en mer (Constantinople) : utiliser `noclip` ou tester un point à l'intérieur des terres.
 - Les entités `status: 'allied'` sont un simple contour : elles sont exclues des diffs, morph et SDF.
 - Les armées qui reviennent d'une bataille à l'autre ont un `id` stable et `path[0]` = dernier point de leur trajet précédent.
+- Après génération de nouvelles données, **redémarrer le serveur de dev** (le sien et celui de Florent) : un serveur Vite lancé avant la création d'un dossier de `public/` peut servir ses fichiers comme une page HTML (glissement absent, retour au fondu). Les scripts vident désormais les dossiers au lieu de les supprimer (`scripts/fs-utils.ts`), ce qui évite le cas le plus courant.
 - Ne jamais regénérer les autres empires : `git status` doit rester vide pour eux.
