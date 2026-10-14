@@ -73,6 +73,17 @@ Pour ajouter un empire, il suffit d'ajouter un dossier dans `data/empires/` et s
 - Gamification : quiz, « devine la frontière », succès
 - Rejouer les grandes batailles
 
+## Guide conversationnel (agent IA)
+
+Un chatbot construit avec **Google ADK** (Python) répond aux questions sur l'histoire des empires à partir des données du projet et peut déplacer la carte (« Montre-moi Austerlitz »). Il fonctionne avec Gemini ou Claude.
+
+```bash
+cp agent/.env.example agent/.env   # y mettre une clé Google AI Studio ou Anthropic
+npm run agent                      # serveur de l'agent (port 8000), à côté de npm start
+```
+
+Explications complètes, pour apprendre à construire un agent : [docs/AGENT.md](docs/AGENT.md).
+
 ## Documentation
 
 Le fonctionnement détaillé (pipeline géographique, animation des frontières par champs de distance, performances, organisation en agents) est expliqué dans [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
