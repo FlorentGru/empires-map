@@ -51,6 +51,10 @@ Pour ajouter un empire, il suffit d'ajouter un dossier dans `data/empires/` et s
 - Gamification : quiz, « devine la frontière », succès
 - Rejouer les grandes batailles
 
+## Documentation
+
+Le fonctionnement détaillé (pipeline géographique, animation des frontières par champs de distance, performances, organisation en agents) est expliqué dans [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+
 ## Crédits et licence
 
 - Frontières historiques : [historical-basemaps](https://github.com/aourednik/historical-basemaps) © A. Ourednik, sous licence GPL-3.0
