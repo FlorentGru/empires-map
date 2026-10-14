@@ -140,7 +140,14 @@ function makeBlocks(c: GeoCtx) {
   const nord = () =>
     once('nord', () => {
       const base = c.diff(c.inter(germany(), c.region('NORD_ALLEMAGNE')), c.region('HOLSTEIN_SCHLESWIG'));
-      return u(base, c.snap(S1815, '^(Hamburg|Lübeck|Bremen|Cuxhaven)$'));
+      // Le polygone « Lübeck » de 1815 est trop grossier (la ville tombait dans le Holstein danois) :
+      // on ajoute le territoire de la ville libre, annexé le 13 décembre 1810 (Bouches-de-l'Elbe).
+      const lubeck: Poly = {
+        type: 'Feature',
+        properties: {},
+        geometry: { type: 'Polygon', coordinates: [[[10.55, 53.78], [10.95, 53.78], [10.95, 54.0], [10.55, 54.0], [10.55, 53.78]]] },
+      };
+      return u(base, c.snap(S1815, '^(Hamburg|Lübeck|Bremen|Cuxhaven)$'), c.inter(lubeck, c.country('^Germany$')));
     });
   const petitsEtats = () => once('petitsEtats', () => c.snap(S1815, '^(Waldeck|Lippe-Detmold|Schaumburg-Lippe|Anhalt)$'));
   const westphalie = (avecHanovre: boolean) =>
@@ -300,8 +307,9 @@ function compose(step: EmpireStep, ctx: GeoCtx): ComposedEntity[] {
   if (ge('espagne-1808')) add('Espagne (Joseph)', 'vassal', B.spain());
 
   // ---------- Alliés (allied) ----------
-  // Espagne alliée (neutre jusqu'en 1805) : mentionnée dans les notes de 1804, Trafalgar et Austerlitz.
-  if (step.id === 'sacre-1804' || step.id === 'trafalgar-1805' || step.id === 'austerlitz-1805') add('Espagne', 'allied', B.spain());
+  // Espagne alliée de 1804 (traité de 1796, guerre contre l'Angleterre) jusqu'au soulèvement de 1808.
+  const espagneAlliee = ['sacre-1804', 'trafalgar-1805', 'austerlitz-1805', 'confederation-rhin-1806', 'iena-1806', 'tilsit-1807'];
+  if (espagneAlliee.includes(step.id)) add('Espagne', 'allied', B.spain());
   if (step.id === 'austerlitz-1805') {
     add('Bavière', 'allied', B.bavePlus());
     add('Wurtemberg', 'allied', c.snap(S1815, '^(Württemberg|Hohenzollern)$'));
