@@ -2,7 +2,7 @@
 
 Un planisphère interactif pour voir l'évolution des grands empires de l'histoire. Choisis un empire, appuie sur **Play** et regarde ses frontières évoluer d'une date clé à la suivante : batailles, traités, réformes, chutes. Chaque étape est accompagnée d'une explication détaillée.
 
-Empires disponibles : **Rome** (509 av. J.-C. → 1453), **l'Empire napoléonien** (1799 → 1815) et bientôt **la Chine** (-1600 → 1912). Le sélecteur liste plus de 80 empires de l'histoire, à remplir au fil du projet.
+Empires disponibles : **Rome** (509 av. J.-C. → 1453), **l'Empire napoléonien** (1799 → 1815) et bientôt **la Chine** (-1600 → 1912). Le sélecteur liste, par continent, les plus vastes et les plus célèbres empires de l’histoire, à remplir au fil du projet.
 
 ## Fonctionnalités
 
