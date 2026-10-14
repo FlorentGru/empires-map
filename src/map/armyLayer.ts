@@ -38,6 +38,18 @@ const PEOPLE: Record<Faction, string> = {
   espagnols: 'Espagnols',
   portugais: 'Portugais',
   polonais: 'Polonais',
+  chinois: 'Chinois',
+  xiongnu: 'Xiongnu',
+  mongols: 'Mongols',
+  jurchens: 'Jurchens',
+  mandchous: 'Mandchous',
+  japonais: 'Japonais',
+  coreens: 'Coréens',
+  tibetains: 'Tibétains',
+  vietnamiens: 'Vietnamiens',
+  'turcs-gokturks': 'Göktürks',
+  khitans: 'Khitans',
+  ouighours: 'Ouïghours',
 };
 const esc = (v: string) => v.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const plain = (v: string) => v.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();

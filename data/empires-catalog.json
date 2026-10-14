@@ -1,0 +1,576 @@
+[
+ {
+  "id": "akkad",
+  "name": "Empire d'Akkad",
+  "start": -2334,
+  "end": -2154,
+  "region": "Proche-Orient ancien"
+ },
+ {
+  "id": "egypte",
+  "name": "Égypte pharaonique",
+  "start": -3100,
+  "end": -30,
+  "region": "Proche-Orient ancien"
+ },
+ {
+  "id": "babylone",
+  "name": "Babylone (Hammurabi)",
+  "start": -1894,
+  "end": -1595,
+  "region": "Proche-Orient ancien"
+ },
+ {
+  "id": "hittites",
+  "name": "Empire hittite",
+  "start": -1650,
+  "end": -1180,
+  "region": "Proche-Orient ancien"
+ },
+ {
+  "id": "assyrie",
+  "name": "Empire néo-assyrien",
+  "start": -911,
+  "end": -609,
+  "region": "Proche-Orient ancien"
+ },
+ {
+  "id": "neo-babylonien",
+  "name": "Empire néo-babylonien",
+  "start": -626,
+  "end": -539,
+  "region": "Proche-Orient ancien"
+ },
+ {
+  "id": "perse-achemenide",
+  "name": "Perse achéménide",
+  "start": -550,
+  "end": -330,
+  "region": "Proche-Orient ancien"
+ },
+ {
+  "id": "parthes",
+  "name": "Empire parthe",
+  "start": -247,
+  "end": 224,
+  "region": "Proche-Orient ancien"
+ },
+ {
+  "id": "sassanides",
+  "name": "Empire sassanide",
+  "start": 224,
+  "end": 651,
+  "region": "Proche-Orient ancien"
+ },
+ {
+  "id": "athenes",
+  "name": "Empire athénien (ligue de Délos)",
+  "start": -478,
+  "end": -404,
+  "region": "Méditerranée"
+ },
+ {
+  "id": "carthage",
+  "name": "Empire carthaginois",
+  "start": -650,
+  "end": -146,
+  "region": "Méditerranée"
+ },
+ {
+  "id": "alexandre",
+  "name": "Empire d'Alexandre le Grand",
+  "start": -336,
+  "end": -323,
+  "region": "Méditerranée"
+ },
+ {
+  "id": "seleucides",
+  "name": "Empire séleucide",
+  "start": -312,
+  "end": -63,
+  "region": "Méditerranée"
+ },
+ {
+  "id": "ptolemees",
+  "name": "Égypte des Ptolémées",
+  "start": -305,
+  "end": -30,
+  "region": "Méditerranée"
+ },
+ {
+  "id": "rome",
+  "name": "Rome, de la République à Byzance",
+  "start": -509,
+  "end": 1453,
+  "region": "Méditerranée"
+ },
+ {
+  "id": "byzance",
+  "name": "Empire byzantin",
+  "start": 395,
+  "end": 1453,
+  "region": "Méditerranée"
+ },
+ {
+  "id": "carolingiens",
+  "name": "Empire carolingien",
+  "start": 751,
+  "end": 888,
+  "region": "Europe"
+ },
+ {
+  "id": "saint-empire",
+  "name": "Saint-Empire romain germanique",
+  "start": 962,
+  "end": 1806,
+  "region": "Europe"
+ },
+ {
+  "id": "vikings",
+  "name": "Empire de la mer du Nord (Knut)",
+  "start": 1016,
+  "end": 1035,
+  "region": "Europe"
+ },
+ {
+  "id": "angevin",
+  "name": "Empire Plantagenêt",
+  "start": 1154,
+  "end": 1214,
+  "region": "Europe"
+ },
+ {
+  "id": "lituanie",
+  "name": "Grand-duché de Lituanie",
+  "start": 1236,
+  "end": 1795,
+  "region": "Europe"
+ },
+ {
+  "id": "portugal",
+  "name": "Empire portugais",
+  "start": 1415,
+  "end": 1999,
+  "region": "Europe"
+ },
+ {
+  "id": "espagne",
+  "name": "Empire espagnol",
+  "start": 1492,
+  "end": 1976,
+  "region": "Europe"
+ },
+ {
+  "id": "suede",
+  "name": "Empire suédois",
+  "start": 1611,
+  "end": 1721,
+  "region": "Europe"
+ },
+ {
+  "id": "russie",
+  "name": "Empire russe",
+  "start": 1721,
+  "end": 1917,
+  "region": "Europe"
+ },
+ {
+  "id": "napoleon",
+  "name": "L'Empire napoléonien",
+  "start": 1799,
+  "end": 1815,
+  "region": "Europe"
+ },
+ {
+  "id": "britannique",
+  "name": "Empire britannique",
+  "start": 1583,
+  "end": 1997,
+  "region": "Europe"
+ },
+ {
+  "id": "france-coloniale",
+  "name": "Empire colonial français",
+  "start": 1534,
+  "end": 1980,
+  "region": "Europe"
+ },
+ {
+  "id": "autriche-hongrie",
+  "name": "Autriche-Hongrie",
+  "start": 1867,
+  "end": 1918,
+  "region": "Europe"
+ },
+ {
+  "id": "allemagne",
+  "name": "Empire allemand",
+  "start": 1871,
+  "end": 1918,
+  "region": "Europe"
+ },
+ {
+  "id": "pays-bas",
+  "name": "Empire néerlandais",
+  "start": 1602,
+  "end": 1975,
+  "region": "Europe"
+ },
+ {
+  "id": "rashidun",
+  "name": "Califat Rashidun",
+  "start": 632,
+  "end": 661,
+  "region": "Monde islamique"
+ },
+ {
+  "id": "omeyyades",
+  "name": "Califat omeyyade",
+  "start": 661,
+  "end": 750,
+  "region": "Monde islamique"
+ },
+ {
+  "id": "abbassides",
+  "name": "Califat abbasside",
+  "start": 750,
+  "end": 1258,
+  "region": "Monde islamique"
+ },
+ {
+  "id": "fatimides",
+  "name": "Califat fatimide",
+  "start": 909,
+  "end": 1171,
+  "region": "Monde islamique"
+ },
+ {
+  "id": "almoravides",
+  "name": "Empire almoravide",
+  "start": 1040,
+  "end": 1147,
+  "region": "Monde islamique"
+ },
+ {
+  "id": "almohades",
+  "name": "Empire almohade",
+  "start": 1121,
+  "end": 1269,
+  "region": "Monde islamique"
+ },
+ {
+  "id": "seldjoukides",
+  "name": "Empire seldjoukide",
+  "start": 1037,
+  "end": 1194,
+  "region": "Monde islamique"
+ },
+ {
+  "id": "ayyoubides",
+  "name": "Sultanat ayyoubide",
+  "start": 1171,
+  "end": 1260,
+  "region": "Monde islamique"
+ },
+ {
+  "id": "mamelouks",
+  "name": "Sultanat mamelouk",
+  "start": 1250,
+  "end": 1517,
+  "region": "Monde islamique"
+ },
+ {
+  "id": "ottomans",
+  "name": "Empire ottoman",
+  "start": 1299,
+  "end": 1922,
+  "region": "Monde islamique"
+ },
+ {
+  "id": "safavides",
+  "name": "Empire safavide",
+  "start": 1501,
+  "end": 1736,
+  "region": "Monde islamique"
+ },
+ {
+  "id": "moghols",
+  "name": "Empire moghol",
+  "start": 1526,
+  "end": 1857,
+  "region": "Monde islamique"
+ },
+ {
+  "id": "scythes",
+  "name": "Scythes",
+  "start": -700,
+  "end": -200,
+  "region": "Steppes d'Eurasie"
+ },
+ {
+  "id": "xiongnu",
+  "name": "Confédération xiongnu",
+  "start": -209,
+  "end": 93,
+  "region": "Steppes d'Eurasie"
+ },
+ {
+  "id": "huns",
+  "name": "Empire hunnique (Attila)",
+  "start": 370,
+  "end": 469,
+  "region": "Steppes d'Eurasie"
+ },
+ {
+  "id": "gokturks",
+  "name": "Khaganat turc (Göktürks)",
+  "start": 552,
+  "end": 744,
+  "region": "Steppes d'Eurasie"
+ },
+ {
+  "id": "khazars",
+  "name": "Khaganat khazar",
+  "start": 650,
+  "end": 969,
+  "region": "Steppes d'Eurasie"
+ },
+ {
+  "id": "mongols",
+  "name": "Empire mongol",
+  "start": 1206,
+  "end": 1368,
+  "region": "Steppes d'Eurasie"
+ },
+ {
+  "id": "horde-or",
+  "name": "Horde d'or",
+  "start": 1242,
+  "end": 1502,
+  "region": "Steppes d'Eurasie"
+ },
+ {
+  "id": "timourides",
+  "name": "Empire timouride",
+  "start": 1370,
+  "end": 1507,
+  "region": "Steppes d'Eurasie"
+ },
+ {
+  "id": "china",
+  "name": "Chine, des Shang aux Qing",
+  "start": -1600,
+  "end": 1912,
+  "region": "Asie orientale et du Sud"
+ },
+ {
+  "id": "maurya",
+  "name": "Empire maurya",
+  "start": -322,
+  "end": -185,
+  "region": "Asie orientale et du Sud"
+ },
+ {
+  "id": "kouchans",
+  "name": "Empire kouchan",
+  "start": 30,
+  "end": 375,
+  "region": "Asie orientale et du Sud"
+ },
+ {
+  "id": "gupta",
+  "name": "Empire gupta",
+  "start": 320,
+  "end": 550,
+  "region": "Asie orientale et du Sud"
+ },
+ {
+  "id": "goguryeo",
+  "name": "Royaume de Goguryeo",
+  "start": -37,
+  "end": 668,
+  "region": "Asie orientale et du Sud"
+ },
+ {
+  "id": "tibet",
+  "name": "Empire tibétain",
+  "start": 618,
+  "end": 842,
+  "region": "Asie orientale et du Sud"
+ },
+ {
+  "id": "khmer",
+  "name": "Empire khmer",
+  "start": 802,
+  "end": 1431,
+  "region": "Asie orientale et du Sud"
+ },
+ {
+  "id": "chola",
+  "name": "Empire chola",
+  "start": 848,
+  "end": 1279,
+  "region": "Asie orientale et du Sud"
+ },
+ {
+  "id": "srivijaya",
+  "name": "Empire de Srivijaya",
+  "start": 650,
+  "end": 1377,
+  "region": "Asie orientale et du Sud"
+ },
+ {
+  "id": "majapahit",
+  "name": "Empire de Majapahit",
+  "start": 1293,
+  "end": 1527,
+  "region": "Asie orientale et du Sud"
+ },
+ {
+  "id": "vijayanagara",
+  "name": "Empire de Vijayanagara",
+  "start": 1336,
+  "end": 1646,
+  "region": "Asie orientale et du Sud"
+ },
+ {
+  "id": "japon",
+  "name": "Empire du Japon",
+  "start": 1868,
+  "end": 1947,
+  "region": "Asie orientale et du Sud"
+ },
+ {
+  "id": "koush",
+  "name": "Royaume de Koush",
+  "start": -1070,
+  "end": 350,
+  "region": "Afrique"
+ },
+ {
+  "id": "aksoum",
+  "name": "Royaume d'Aksoum",
+  "start": 100,
+  "end": 940,
+  "region": "Afrique"
+ },
+ {
+  "id": "ghana",
+  "name": "Empire du Ghana",
+  "start": 300,
+  "end": 1200,
+  "region": "Afrique"
+ },
+ {
+  "id": "kanem",
+  "name": "Empire du Kanem-Bornou",
+  "start": 700,
+  "end": 1893,
+  "region": "Afrique"
+ },
+ {
+  "id": "mali",
+  "name": "Empire du Mali",
+  "start": 1235,
+  "end": 1670,
+  "region": "Afrique"
+ },
+ {
+  "id": "grand-zimbabwe",
+  "name": "Royaume du Grand Zimbabwe",
+  "start": 1220,
+  "end": 1450,
+  "region": "Afrique"
+ },
+ {
+  "id": "songhai",
+  "name": "Empire songhaï",
+  "start": 1430,
+  "end": 1591,
+  "region": "Afrique"
+ },
+ {
+  "id": "ethiopie",
+  "name": "Empire éthiopien",
+  "start": 1270,
+  "end": 1974,
+  "region": "Afrique"
+ },
+ {
+  "id": "ashanti",
+  "name": "Empire ashanti",
+  "start": 1701,
+  "end": 1901,
+  "region": "Afrique"
+ },
+ {
+  "id": "zoulou",
+  "name": "Royaume zoulou",
+  "start": 1816,
+  "end": 1897,
+  "region": "Afrique"
+ },
+ {
+  "id": "olmeques",
+  "name": "Civilisation olmèque",
+  "start": -1200,
+  "end": -400,
+  "region": "Amériques"
+ },
+ {
+  "id": "maya",
+  "name": "Cités mayas",
+  "start": -750,
+  "end": 1697,
+  "region": "Amériques"
+ },
+ {
+  "id": "teotihuacan",
+  "name": "Teotihuacan",
+  "start": -100,
+  "end": 550,
+  "region": "Amériques"
+ },
+ {
+  "id": "tiwanaku",
+  "name": "Empire de Tiwanaku",
+  "start": 500,
+  "end": 1000,
+  "region": "Amériques"
+ },
+ {
+  "id": "azteques",
+  "name": "Empire aztèque",
+  "start": 1428,
+  "end": 1521,
+  "region": "Amériques"
+ },
+ {
+  "id": "inca",
+  "name": "Empire inca",
+  "start": 1438,
+  "end": 1533,
+  "region": "Amériques"
+ },
+ {
+  "id": "comanches",
+  "name": "Comancheria",
+  "start": 1706,
+  "end": 1875,
+  "region": "Amériques"
+ },
+ {
+  "id": "tonga",
+  "name": "Empire Tu'i Tonga",
+  "start": 950,
+  "end": 1865,
+  "region": "Océanie"
+ },
+ {
+  "id": "hawaii",
+  "name": "Royaume d'Hawaï",
+  "start": 1795,
+  "end": 1893,
+  "region": "Océanie"
+ }
+]

@@ -51,7 +51,32 @@ export interface Empire {
   description: string;
   /** Vue initiale (défaut : Méditerranée). */
   view?: { center: [number, number]; zoom: number };
+  /** Limites de navigation de la carte [[ouest, sud], [est, nord]] (défaut : MAX_BOUNDS global). */
+  bounds?: [[number, number], [number, number]];
+  /** Grandes périodes (« chapitres ») affichées en bandes sur la frise et annoncées en mode Histoire. */
+  periods?: EmpirePeriod[];
   steps: TimelineStep[];
+}
+
+export interface EmpirePeriod {
+  id: string;
+  name: string;
+  start: number;
+  end: number;
+  /** Couleur de la bande sur la frise (hex). */
+  color: string;
+  /** 1 à 3 phrases de présentation, lues en mode Histoire au début de la période. */
+  summary: string;
+}
+
+/** Entrée du catalogue de tous les empires (data/empires-catalog.json), disponibles ou à venir. */
+export interface EmpireCatalogEntry {
+  /** Égal à l'id du dossier data/empires/<id> quand l'empire est disponible. */
+  id: string;
+  name: string;
+  start: number;
+  end: number;
+  region: string;
 }
 
 /** Propriétés de chaque Feature d'un GeoJSON de territoire. */
@@ -121,7 +146,10 @@ export type Faction =
   | 'turcs-seldjoukides' | 'croises-latins' | 'ottomans' | 'byzantins'
   // Époque napoléonienne
   | 'francais' | 'britanniques' | 'autrichiens' | 'prussiens' | 'russes' | 'espagnols'
-  | 'portugais' | 'polonais';
+  | 'portugais' | 'polonais'
+  // Asie orientale et steppes
+  | 'chinois' | 'xiongnu' | 'mongols' | 'jurchens' | 'mandchous' | 'japonais' | 'coreens'
+  | 'tibetains' | 'vietnamiens' | 'turcs-gokturks' | 'khitans' | 'ouighours';
 
 export const FACTIONS: Faction[] = [
   'romains', 'latins', 'samnites', 'carthaginois', 'gaulois', 'grecs-macedoniens',
@@ -129,18 +157,23 @@ export const FACTIONS: Faction[] = [
   'turcs-seldjoukides', 'croises-latins', 'ottomans', 'byzantins',
   'francais', 'britanniques', 'autrichiens', 'prussiens', 'russes', 'espagnols',
   'portugais', 'polonais',
+  'chinois', 'xiongnu', 'mongols', 'jurchens', 'mandchous', 'japonais', 'coreens',
+  'tibetains', 'vietnamiens', 'turcs-gokturks', 'khitans', 'ouighours',
 ];
 
 export type Archetype =
   | 'senateur' | 'consul' | 'empereur' | 'empereur-byzantin' | 'roi' | 'pape'
   | 'chef-barbare' | 'calife' | 'sultan' | 'doge'
   // Époque napoléonienne
-  | 'empereur-napoleon' | 'general' | 'roi-moderne' | 'tsar' | 'diplomate' | 'amiral';
+  | 'empereur-napoleon' | 'general' | 'roi-moderne' | 'tsar' | 'diplomate' | 'amiral'
+  // Asie orientale
+  | 'empereur-chinois' | 'lettre-mandarin' | 'general-chinois' | 'khan' | 'shogun' | 'moine-bouddhiste' | 'imperatrice';
 
 export const ARCHETYPES: Archetype[] = [
   'senateur', 'consul', 'empereur', 'empereur-byzantin', 'roi', 'pape',
   'chef-barbare', 'calife', 'sultan', 'doge',
   'empereur-napoleon', 'general', 'roi-moderne', 'tsar', 'diplomate', 'amiral',
+  'empereur-chinois', 'lettre-mandarin', 'general-chinois', 'khan', 'shogun', 'moine-bouddhiste', 'imperatrice',
 ];
 
 export interface ArmyMove {
