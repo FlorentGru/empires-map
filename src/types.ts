@@ -144,10 +144,16 @@ export const ARCHETYPES: Archetype[] = [
 ];
 
 export interface ArmyMove {
+  /**
+   * Identifiant stable d'une armée qui revient d'une bataille à l'autre (« grande-armee », « hannibal »).
+   * Si l'armée a déjà combattu dans une étape antérieure, path[0] = dernier point de son path précédent,
+   * et en lecture continue ses figurines repartent du champ de bataille précédent.
+   */
+  id?: string;
   /** Libellé affiché : « Rome », « Carthage ». */
   side: string;
   faction: Faction;
-  /** [lon, lat] de la base jusqu'au champ de bataille (2 à 6 points, le dernier = le champ de bataille). */
+  /** [lon, lat] de la base jusqu'au champ de bataille (2 à 8 points, le dernier = le champ de bataille). */
   path: [number, number][];
   /** Nombre de figurines : 1 → 3, 2 → 5, 3 → 7. */
   strength?: 1 | 2 | 3;
