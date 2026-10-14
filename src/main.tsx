@@ -4,19 +4,17 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import './styles.css';
 import { App } from './App';
 
-const root = createRoot(document.getElementById('root')!);
-if (new URLSearchParams(location.search).get('figures') === 'demo') {
-  void import('./figures/FiguresDemo').then(({ FiguresDemo }) =>
-    root.render(
-      <StrictMode>
-        <FiguresDemo />
-      </StrictMode>,
-    ),
-  );
-} else {
-  root.render(
-    <StrictMode>
-      <App />
-    </StrictMode>,
-  );
+// Ancienne démo : redirigée vers la galerie des figurines.
+{
+  const url = new URL(window.location.href);
+  if (url.searchParams.get('figures') === 'demo') {
+    url.searchParams.set('figures', 'gallery');
+    window.history.replaceState(null, '', url);
+  }
 }
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+);

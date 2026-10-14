@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import { formatYear } from '../lib/years';
 import catalogJson from '../../data/empires-catalog.json';
 import type { Empire, EmpireCatalogEntry } from '../types';
@@ -33,6 +33,20 @@ export function EmpirePicker({ empires, current, onSelect }: Props) {
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
   const groups = useMemo(() => groupCatalog(empires), [empires]);
+  const baseId = useId();
+  // Seul le continent de l'empire courant est déplié à l'ouverture.
+  const [expanded, setExpanded] = useState<Set<string>>(() => new Set());
+  const regionOfCurrent = useMemo(() => groups.find(([, g]) => g.available.some((e) => e.id === current.id))?.[0], [groups, current.id]);
+  const toggleOpen = () => {
+    if (!open) setExpanded(new Set(regionOfCurrent ? [regionOfCurrent] : []));
+    setOpen((o) => !o);
+  };
+  const toggleRegion = (region: string) =>
+    setExpanded((prev) => {
+      const next = new Set(prev);
+      if (!next.delete(region)) next.add(region);
+      return next;
+    });
 
   // Fermeture sur clic extérieur ou Échap.
   useEffect(() => {
@@ -59,7 +73,7 @@ export function EmpirePicker({ empires, current, onSelect }: Props) {
         aria-expanded={open}
         aria-controls="empire-picker-list"
         aria-label={`Empire affiché : ${current.name}. Changer d'empire`}
-        onClick={() => setOpen((o) => !o)}
+        onClick={toggleOpen}
       >
         <span className="empire-picker__swatch" style={{ background: current.color }} aria-hidden="true" />
         <span>
@@ -75,43 +89,63 @@ export function EmpirePicker({ empires, current, onSelect }: Props) {
 
       {open && (
         <ul id="empire-picker-list" className="empire-picker__list">
-          {groups.map(([region, g]) => (
-            <li key={region} className="empire-group">
-              <div className="empire-group__title">{region}</div>
-              <ul className="empire-group__list">
-                {g.available.map((e) => (
-                  <li key={e.id}>
-                    <button
-                      type="button"
-                      className="empire-card"
-                      aria-current={e.id === current.id ? 'true' : undefined}
-                      onClick={() => {
-                        onSelect(e.id);
-                        setOpen(false);
-                      }}
-                    >
-                      <span className="empire-picker__swatch" style={{ background: e.color }} aria-hidden="true" />
-                      <span className="empire-card__name">{e.name}</span>
-                      <span className="empire-card__dates">
-                        {formatYear(e.start)} – {formatYear(e.end)}
-                      </span>
-                    </button>
-                  </li>
-                ))}
-                {g.soon.map((c) => (
-                  <li key={c.id}>
-                    <div className="empire-card empire-card--disabled" aria-disabled="true">
-                      <span className="empire-picker__swatch" aria-hidden="true" />
-                      <span className="empire-card__name">{c.name}</span>
-                      <span className="empire-card__dates">
-                        {formatYear(c.start)} – {formatYear(c.end)}
-                      </span>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
+          {groups.map(([region, g], gi) => {
+            const isOpen = expanded.has(region);
+            const total = g.available.length + g.soon.length;
+            const panelId = `${baseId}-region-${gi}`;
+            return (
+              <li key={region} className={`empire-group${isOpen ? ' empire-group--open' : ''}`}>
+                <button
+                  type="button"
+                  className="empire-group__toggle"
+                  aria-expanded={isOpen}
+                  aria-controls={panelId}
+                  onClick={() => toggleRegion(region)}
+                >
+                  <span className="empire-group__title">
+                    {region} · {total} empire{total > 1 ? 's' : ''} ({g.available.length} disponible{g.available.length > 1 ? 's' : ''})
+                  </span>
+                  <span aria-hidden="true" className="empire-group__chevron">
+                    ▾
+                  </span>
+                </button>
+                <div id={panelId} className="empire-group__panel" role="group" aria-label={region}>
+                  <ul className="empire-group__list">
+                    {g.available.map((e) => (
+                      <li key={e.id}>
+                        <button
+                          type="button"
+                          className="empire-card"
+                          aria-current={e.id === current.id ? 'true' : undefined}
+                          onClick={() => {
+                            onSelect(e.id);
+                            setOpen(false);
+                          }}
+                        >
+                          <span className="empire-picker__swatch" style={{ background: e.color }} aria-hidden="true" />
+                          <span className="empire-card__name">{e.name}</span>
+                          <span className="empire-card__dates">
+                            {formatYear(e.start)} – {formatYear(e.end)}
+                          </span>
+                        </button>
+                      </li>
+                    ))}
+                    {g.soon.map((c) => (
+                      <li key={c.id}>
+                        <div className="empire-card empire-card--disabled" aria-disabled="true">
+                          <span className="empire-picker__swatch" aria-hidden="true" />
+                          <span className="empire-card__name">{c.name}</span>
+                          <span className="empire-card__dates">
+                            {formatYear(c.start)} – {formatYear(c.end)}
+                          </span>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </li>
+            );
+          })}
         </ul>
       )}
     </div>

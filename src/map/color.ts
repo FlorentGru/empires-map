@@ -25,25 +25,27 @@ function hsl(h: number, s: number, l: number, a?: number): string {
   return `hsl(${hh}, ${(clamp(s) * 100).toFixed(1)}%, ${(clamp(l) * 100).toFixed(1)}%)`;
 }
 
-/** Écart de teinte / de luminosité entre entités successives (7 États rivaux doivent rester distincts). */
-const HUE_STEP = 26;
-const LIGHT_STEP = 0.045;
+/** Angle d'or : deux entités successives ont toujours des teintes éloignées (≥ 137°), 7 entités restent distinctes. */
+export const GOLDEN_ANGLE = 137.5;
+const clampTo = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v));
 
-/** Couleur de remplissage de la i-ème entité : légère rotation de teinte alternée. */
-export function variantFill(base: string, index: number): string {
+/** Teinte, saturation, luminosité de la i-ème entité (entité 0 = couleur de l'empire, inchangée). */
+export function entityHsl(base: string, index: number): [number, number, number] {
   const [h, s, l] = hexToHsl(base);
-  if (index === 0) return hsl(h, s, l);
-  const sign = index % 2 === 1 ? 1 : -1;
-  const k = Math.ceil(index / 2);
-  return hsl(h + sign * HUE_STEP * k, s * 0.95, l + sign * LIGHT_STEP * k);
+  if (index === 0) return [h, s, l];
+  return [(h + index * GOLDEN_ANGLE) % 360, clampTo(s, 0.35, 0.6), clampTo(l, 0.42, 0.58)];
 }
 
-/** Couleur de contour : même teinte, nettement plus sombre. */
+/** Couleur de remplissage de la i-ème entité. */
+export function variantFill(base: string, index: number): string {
+  const [h, s, l] = entityHsl(base, index);
+  return hsl(h, s, l);
+}
+
+/** Couleur de contour et d'étiquette : même teinte, nettement plus sombre. */
 export function variantLine(base: string, index: number): string {
-  const [h, s] = hexToHsl(base);
-  const sign = index % 2 === 1 ? 1 : -1;
-  const k = Math.ceil(index / 2);
-  return hsl(h + sign * HUE_STEP * k, s, 0.22);
+  const [h, s] = entityHsl(base, index);
+  return hsl(h, s, 0.22);
 }
 
 /** Rapport d'opacité d'un État vassal par rapport à un territoire « core » (0,22 / 0,48). */
@@ -51,8 +53,6 @@ export const VASSAL_ALPHA = 0.46;
 
 /** Remplissage d'un État vassal : même teinte, éclaircie, alpha réduit (le calque applique déjà FILL_OPACITY). */
 export function variantVassal(base: string, index: number): string {
-  const [h, s, l] = hexToHsl(base);
-  const sign = index === 0 ? 0 : index % 2 === 1 ? 1 : -1;
-  const k = Math.ceil(index / 2);
-  return hsl(h + sign * HUE_STEP * k, s * 0.95, Math.min(0.85, l + sign * LIGHT_STEP * k + (1 - l) * 0.35), VASSAL_ALPHA);
+  const [h, s, l] = entityHsl(base, index);
+  return hsl(h, s, Math.min(0.85, l + (1 - l) * 0.35), VASSAL_ALPHA);
 }

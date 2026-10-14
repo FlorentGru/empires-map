@@ -2,7 +2,7 @@ import { LngLatBounds, Map as MapLibreMap, type PaddingOptions } from 'maplibre-
 import './maplibreWorker';
 import { useEffect, useRef, useState } from 'react';
 import { loadCities } from '../data/loadCities';
-import { loadDiff, loadMorph, loadTerritory, preloadAround, type DiffCollection, type MorphCollection, type TerritoryCollection } from '../data/loadEmpire';
+import { loadDiff, loadMorph, loadNeighbors, loadTerritory, preloadAround, type DiffCollection, type MorphCollection, type NeighborCollection, type TerritoryCollection } from '../data/loadEmpire';
 import { prefersReducedMotion } from '../lib/motion';
 import type { City, Empire, TimelineStep } from '../types';
 import { addLand, baseStyle, DEM_SOURCE, MAX_BOUNDS, TERRAIN_EXAGGERATION } from './basemapStyle';
@@ -14,6 +14,8 @@ import { EventMarker } from './eventMarker';
 import { FigureLayer } from './figureLayer';
 import { GLIDE_HANDOFF_MS, GLIDE_MS, GlideLayer } from './glideLayer';
 import { MORPH_MS, MorphLayer } from './morphLayer';
+import { NeighborLayers } from './neighborLayers';
+import { TerritoryLabels } from './territoryLabels';
 import { TerritoryLayers } from './territoryLayers';
 
 interface Props {
@@ -31,10 +33,16 @@ interface Props {
   figures?: boolean;
   /** Calque « Pays 2026 » : frontières et noms actuels. */
   countries2026?: boolean;
+  /** Noms des États sur la carte. */
+  stateNames?: boolean;
+  /** Voisins de l'époque (contours et noms). */
+  neighbors?: boolean;
 }
 
 interface MapLayers {
+  neighbors: NeighborLayers;
   territories: TerritoryLayers;
+  labels: TerritoryLabels;
   morph: MorphLayer;
   glide: GlideLayer;
   diff: DiffHighlight;
@@ -72,7 +80,7 @@ function cameraGate(map: MapLibreMap, stepStart: number, speed: number): Promise
   });
 }
 
-export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, figures: figuresOn = true, countries2026 = false }: Props) {
+export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, figures: figuresOn = true, countries2026 = false, stateNames = true, neighbors: neighborsOn = true }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const [layers, setLayers] = useState<MapLayers | null>(null);
@@ -91,6 +99,10 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
   const morphingRef = useRef(false);
   const countriesRef = useRef(countries2026);
   countriesRef.current = countries2026;
+  const namesRef = useRef(stateNames);
+  namesRef.current = stateNames;
+  const neighborsRef = useRef(neighborsOn);
+  neighborsRef.current = neighborsOn;
 
   // Création de la carte (une seule fois).
   useEffect(() => {
@@ -115,6 +127,8 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
     let created: MapLayers | null = null;
     map.on('load', () => {
       created = {
+        // Voisins : tout en bas des calques d'empire (sous territoires et glissement).
+        neighbors: new NeighborLayers(map),
         territories: new TerritoryLayers(map),
         morph: new MorphLayer(map),
         // Raster SDF : juste sous les couches territoire.
@@ -133,7 +147,10 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
         }),
         // Après territoires / morph, avant les villes (ajoutées plus tard, donc au-dessus).
         countries: new CountriesLayer(map),
+        labels: new TerritoryLabels(map),
       };
+      created.labels.setEnabled(namesRef.current);
+      created.neighbors.setEnabled(neighborsRef.current);
       created.countries.setVisible(countriesRef.current);
       if (import.meta.env.DEV) (window as unknown as { __glide: GlideLayer }).__glide = created.glide;
       setLayers(created);
@@ -150,6 +167,8 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
       created?.armies.destroy();
       created?.figures.destroy();
       created?.countries.destroy();
+      created?.labels.destroy();
+      created?.neighbors.destroy();
       map.remove();
       mapRef.current = null;
     };
@@ -268,13 +287,28 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
       morphStep && !reduced ? loadMorph(empire.id, morphStep.id) : Promise.resolve(null);
     const diffPromise: Promise<DiffCollection | null> = forward ? loadDiff(empire.id, step.id) : Promise.resolve(null);
     const stepStart = performance.now();
+    const neighborsPromise: Promise<NeighborCollection> = loadNeighbors(empire.id, step.id);
+    /** Territoire final affiché : noms des États et voisins, une seule mise à jour par étape. */
+    const reveal = (fc: TerritoryCollection) => {
+      layers.labels.update(fc, empire.color);
+      void neighborsPromise.then((n) => {
+        if (!stale) layers.neighbors.update(n);
+      });
+    };
     void Promise.all([loadTerritory(empire.id, step.territory), diffPromise, morphPromise]).then(async ([fc, diff, morph]) => {
       if (stale) return;
-      if (shownRef.current === key) return; // même territoire : rien à animer
+      if (shownRef.current === key) {
+        // même territoire : rien à animer, mais les voisins sont propres à l'étape
+        void neighborsPromise.then((n) => {
+          if (!stale) layers.neighbors.update(n);
+        });
+        return;
+      }
       shownRef.current = key;
       layers.morph.hide();
       layers.glide.hide();
       if (morphStep && !reduced) {
+        layers.labels.hide();
         // Glissement continu par champs de distance (SDF), si les fichiers existent.
         const from: 0 | 1 = forward ? 0 : 1;
         layers.diff.stop();
@@ -291,6 +325,7 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
             morphingRef.current = false;
             layers.territories.commit(false, GLIDE_HANDOFF_MS);
             layers.glide.fadeOut(GLIDE_HANDOFF_MS);
+            reveal(fc);
           });
           return;
         }
@@ -302,6 +337,7 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
         layers.diff.stop();
         layers.territories.prepare(fc, empire.color);
         morphingRef.current = true;
+        layers.labels.hide();
         layers.glide.setMode('bandes');
         await layers.morph.prepare(morph, empire.color, from);
         if (stale) return;
@@ -312,12 +348,14 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
           morphingRef.current = false;
           layers.territories.commit(true);
           layers.morph.hide();
+          reveal(fc);
         });
         return;
       }
       morphingRef.current = false;
       layers.glide.setMode('fondu');
       layers.territories.show(fc, empire.color);
+      reveal(fc);
       if (diff) layers.diff.flash(diff);
       else layers.diff.stop();
     });
@@ -336,6 +374,14 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
       }
     };
   }, [layers, empire, index, step]);
+
+  useEffect(() => {
+    layers?.labels.setEnabled(stateNames);
+  }, [layers, stateNames]);
+
+  useEffect(() => {
+    layers?.neighbors.setEnabled(neighborsOn);
+  }, [layers, neighborsOn]);
 
   // Calque « Pays 2026 ».
   useEffect(() => {

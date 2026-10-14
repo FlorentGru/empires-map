@@ -10,6 +10,7 @@ interface Props {
   empire: Empire;
   step: TimelineStep | undefined;
   countries2026?: boolean;
+  neighbors?: boolean;
 }
 
 /** Figurines d'illustration de la légende, par empire (défaut : Rome). */
@@ -57,7 +58,7 @@ function isMobile(): boolean {
   return typeof window !== 'undefined' && window.innerWidth < 768;
 }
 
-export const Legend = memo(function Legend({ empire, step, countries2026 = false }: Props) {
+export const Legend = memo(function Legend({ empire, step, countries2026 = false, neighbors = true }: Props) {
   const [open, setOpen] = useState(() => !isMobile());
   const titleId = useId();
   const bodyId = useId();
@@ -141,6 +142,12 @@ export const Legend = memo(function Legend({ empire, step, countries2026 = false
             <li>
               <span className="legend__dashes legend__dashes--border" aria-hidden="true" />
               Frontières actuelles (2026)
+            </li>
+          )}
+          {neighbors && (
+            <li>
+              <span className="legend__dashes legend__dashes--neighbor" aria-hidden="true" />
+              Voisins de l'époque
             </li>
           )}
           <li>

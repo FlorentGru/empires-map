@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react';
 import { EMPIRES, getEmpire } from './data/loadEmpire';
 import { WorldMap } from './map/WorldMap';
 import { AboutModal } from './panels/AboutModal';
@@ -15,9 +15,34 @@ import { useStory } from './story/useStory';
 import { Timeline } from './timeline/Timeline';
 import type { Empire } from './types';
 
+// Galerie des figurines : chargée à la demande.
+const Gallery = lazy(() => import('./figures/Gallery').then((m) => ({ default: m.Gallery })));
+
+function clearFiguresParam() {
+  const url = new URL(window.location.href);
+  if (url.searchParams.has('figures')) {
+    url.searchParams.delete('figures');
+    window.history.replaceState(null, '', url);
+  }
+}
+
 export function App() {
   const [empireId, setEmpireId] = useState(() => getEmpire(readUrlState().empire)?.id);
   const empire = getEmpire(empireId);
+  const [navKey, setNavKey] = useState(0);
+  const [galleryOpen, setGalleryOpen] = useState(() => new URLSearchParams(window.location.search).get('figures') === 'gallery');
+  const closeGallery = useCallback(() => {
+    clearFiguresParam();
+    setGalleryOpen(false);
+  }, []);
+  /** Depuis la galerie : va à l'étape d'un empire (URL puis remontage du lecteur, qui relit l'URL). */
+  const goToStep = useCallback((id: string, stepId: string) => {
+    clearFiguresParam();
+    writeUrlState(id, stepId);
+    setEmpireId(id);
+    setNavKey((k) => k + 1);
+    setGalleryOpen(false);
+  }, []);
 
   if (!empire) {
     return (
@@ -28,7 +53,16 @@ export function App() {
     );
   }
   // `key` : changer d'empire réinitialise le lecteur et la carte.
-  return <Atlas key={empire.id} empire={empire} onSelectEmpire={setEmpireId} />;
+  return (
+    <>
+      <Atlas key={`${empire.id}:${navKey}`} empire={empire} onSelectEmpire={setEmpireId} onOpenGallery={() => setGalleryOpen(true)} />
+      {galleryOpen && (
+        <Suspense fallback={null}>
+          <Gallery onClose={closeGallery} onNavigate={goToStep} />
+        </Suspense>
+      )}
+    </>
+  );
 }
 
 function initialIndex(empire: Empire): number {
@@ -38,7 +72,7 @@ function initialIndex(empire: Empire): number {
   return i >= 0 ? i : 0;
 }
 
-function Atlas({ empire, onSelectEmpire }: { empire: Empire; onSelectEmpire: (id: string) => void }) {
+function Atlas({ empire, onSelectEmpire, onOpenGallery }: { empire: Empire; onSelectEmpire: (id: string) => void; onOpenGallery: () => void }) {
   const player = usePlayer(empire.steps.length, initialIndex(empire), (i) =>
     continuedArmies(empire.steps, i).length > 0 ? CHAINED_STEP_MS : BASE_STEP_MS,
   );
@@ -49,6 +83,8 @@ function Atlas({ empire, onSelectEmpire }: { empire: Empire; onSelectEmpire: (id
   const [relief, setRelief] = useState(() => readBool('atlas.relief', true));
   const [figures, setFigures] = useState(() => readBool('atlas.figures', true));
   const [countries2026, setCountries2026] = useState(() => readBool('atlas.countries2026', false));
+  const [stateNames, setStateNames] = useState(() => readBool('atlas.stateNames', true));
+  const [neighbors, setNeighbors] = useState(() => readBool('atlas.neighbors', true));
   const openPanel = useCallback(() => setPanelOpen(true), []);
   const story = useStory(player, step, openPanel, empire);
   const storyEnabled = story.controls.enabled;
@@ -69,6 +105,9 @@ function Atlas({ empire, onSelectEmpire }: { empire: Empire; onSelectEmpire: (id
 
   const toggleCountries2026 = useCallback(() => setCountries2026((v) => { writeBool('atlas.countries2026', !v); return !v; }), []);
 
+  const toggleStateNames = useCallback(() => setStateNames((v) => { writeBool('atlas.stateNames', !v); return !v; }), []);
+  const toggleNeighbors = useCallback(() => setNeighbors((v) => { writeBool('atlas.neighbors', !v); return !v; }), []);
+
   useEffect(() => {
     writeUrlState(empire.id, step?.id);
   }, [empire.id, step?.id]);
@@ -76,12 +115,15 @@ function Atlas({ empire, onSelectEmpire }: { empire: Empire; onSelectEmpire: (id
   return (
     <div className="app">
       <h1 className="visually-hidden">Atlas des Empires — {empire.name}</h1>
-      <WorldMap empire={empire} index={player.index} panelOpen={panelOpen} tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} speed={player.speed} />
+      <WorldMap empire={empire} index={player.index} panelOpen={panelOpen} tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} stateNames={stateNames} neighbors={neighbors} speed={player.speed} />
 
       <div className="top-bar">
         <EmpirePicker empires={EMPIRES} current={empire} onSelect={onSelectEmpire} />
         <div className="top-bar__right">
-          <ViewControls tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} onToggleTilt={toggleTilt} onToggleRelief={toggleRelief} onToggleFigures={toggleFigures} onToggleCountries2026={toggleCountries2026} />
+          <ViewControls tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} stateNames={stateNames} neighbors={neighbors} onToggleTilt={toggleTilt} onToggleRelief={toggleRelief} onToggleFigures={toggleFigures} onToggleCountries2026={toggleCountries2026} onToggleStateNames={toggleStateNames} onToggleNeighbors={toggleNeighbors} />
+          <button type="button" className="btn btn--ghost" onClick={onOpenGallery} aria-haspopup="dialog">
+            Figurines
+          </button>
           <button type="button" className="btn btn--ghost about-btn" onClick={() => setAboutOpen(true)} aria-haspopup="dialog">
             À propos
           </button>
@@ -95,7 +137,7 @@ function Atlas({ empire, onSelectEmpire }: { empire: Empire; onSelectEmpire: (id
         onToggle={togglePanel}
         story={panelStory}
       />
-      <Legend empire={empire} step={step} countries2026={countries2026} />
+      <Legend empire={empire} step={step} countries2026={countries2026} neighbors={neighbors} />
       <Timeline empire={empire} player={player} compare2026={countries2026} story={story.controls} />
       <AboutModal open={aboutOpen} onClose={() => setAboutOpen(false)} />
     </div>

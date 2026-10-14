@@ -1,5 +1,6 @@
-import type { FeatureCollection, MultiPolygon, Polygon } from 'geojson';
-import type { DiffKind, MorphProperties, Empire, TerritoryProperties, TimelineStep } from '../types';
+import type { FeatureCollection, Geometry, MultiPolygon, Polygon } from 'geojson';
+import type { DiffKind, MorphProperties, Empire, NeighborProperties, TerritoryProperties, TimelineStep } from '../types';
+import { labelPointsOf } from './labelPoints';
 
 export type TerritoryCollection = FeatureCollection<Polygon | MultiPolygon, TerritoryProperties>;
 
@@ -48,6 +49,7 @@ async function fetchTerritory(url: string): Promise<TerritoryCollection> {
   // Le serveur de dev renvoie index.html pour un fichier absent : json() échoue alors.
   const data = (await res.json()) as TerritoryCollection;
   if (data?.type !== 'FeatureCollection' || !Array.isArray(data.features)) throw new Error('GeoJSON invalide');
+  labelPointsOf(data); // points d'étiquette calculés une fois, au chargement
   return data;
 }
 
@@ -75,6 +77,7 @@ export function preloadAround(empire: Empire, index: number): void {
       void loadDiff(empire.id, step.id);
       void loadMorph(empire.id, step.id);
       void loadSdf(empire.id, step.id);
+      void loadNeighbors(empire.id, step.id);
     }
   }
 }
@@ -192,6 +195,39 @@ export function loadSdf(empireId: string, stepId: string): Promise<SdfData | nul
       }
     })();
     sdfCache.set(key, p);
+  }
+  return p;
+}
+
+/* ---------- Voisins de l'époque (par étape) ---------- */
+
+export type NeighborCollection = FeatureCollection<Geometry, NeighborProperties>;
+
+const EMPTY_NEIGHBORS: NeighborCollection = { type: 'FeatureCollection', features: [] };
+const neighborCache = new Map<string, Promise<NeighborCollection>>();
+
+export function neighborsUrl(empireId: string, stepId: string): string {
+  return `${import.meta.env.BASE_URL}data/empires/${encodeURIComponent(empireId)}/neighbors/${encodeURIComponent(stepId)}.geojson`;
+}
+
+/** Voisins de l'étape. Fichier absent ou invalide : collection vide (jamais d'erreur). */
+export function loadNeighbors(empireId: string, stepId: string): Promise<NeighborCollection> {
+  const url = neighborsUrl(empireId, stepId);
+  let p = neighborCache.get(url);
+  if (!p) {
+    p = (async () => {
+      try {
+        const res = await fetch(url);
+        if (!res.ok) return EMPTY_NEIGHBORS;
+        const data = (await res.json()) as NeighborCollection; // dev : index.html si absent, json() échoue
+        if (data?.type !== 'FeatureCollection' || !Array.isArray(data.features)) return EMPTY_NEIGHBORS;
+        const features = data.features.filter((f) => f?.geometry && (f.properties?.kind === 'label' || f.properties?.kind === 'border'));
+        return { type: 'FeatureCollection', features } satisfies NeighborCollection;
+      } catch {
+        return EMPTY_NEIGHBORS;
+      }
+    })();
+    neighborCache.set(url, p);
   }
   return p;
 }
