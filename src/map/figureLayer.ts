@@ -266,6 +266,20 @@ export class FigureLayer {
     return l === Infinity ? null : { x: l - cx - 6, y: t - cy - 6, w: r - l + 12, h: b - t + 12 };
   }
 
+  /** Rectangles approximatifs des noms d'États affichés sur la carte (canvas) : les cartes ne doivent pas les masquer. */
+  private labelRects(): Rect[] {
+    if (!this.map.getLayer('territory-labels')) return [];
+    const out: Rect[] = [];
+    for (const f of this.map.queryRenderedFeatures({ layers: ['territory-labels'] })) {
+      if (f.geometry.type !== 'Point') continue;
+      const p = this.map.project(f.geometry.coordinates as [number, number]);
+      const text = String(f.properties?.label ?? '');
+      const w = Math.min(160, text.length * 8.5) + 12;
+      out.push({ x: p.x - w / 2, y: p.y - 13, w, h: 26 });
+    }
+    return out;
+  }
+
   /** Vecteur écran « à l'opposé de l'arrivée des armées » (unitaire). */
   private awayVector(): [number, number] {
     let vx = 0;
@@ -307,6 +321,7 @@ export class FigureLayer {
     if (W < 50 || H < 50) return; // carte masquée : mesures inexploitables
     const cbox = container.getBoundingClientRect();
     const army = this.armiesRect(cbox.left, cbox.top);
+    const labels = this.labelRects();
 
     const ins = this.insets();
     const minX = ins.left + 8;
@@ -350,6 +365,7 @@ export class FigureLayer {
           let score = (c.w * c.h - overlap(r, zone)) * 2;
           for (const o of placed) score += overlap(padded, o);
           if (army) score += overlap(padded, army);
+          for (const l of labels) score += overlap(padded, l);
           if (score === 0) {
             best = r;
             break;

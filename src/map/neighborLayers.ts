@@ -39,9 +39,9 @@ export class NeighborLayers {
           'text-size': [
             'step',
             ['zoom'],
-            ['case', ['>=', area, 400_000], size, 0],
-            4,
             ['case', ['>=', area, 100_000], size, 0],
+            4,
+            ['case', ['>=', area, 30_000], size, 0],
             5,
             size,
           ] as never,
@@ -49,6 +49,9 @@ export class NeighborLayers {
           'text-letter-spacing': 0.15,
           'text-max-width': 8,
           'text-padding': 2,
+          // Si la position centrale est prise (nom de ville…), on essaie autour du point.
+          'text-variable-anchor': ['center', 'top', 'bottom', 'left', 'right'],
+          'text-radial-offset': 0.6,
           'text-optional': true,
         },
         paint: { 'text-color': '#6d5f4b', 'text-halo-color': HALO, 'text-halo-width': 1.4, 'text-halo-blur': 0.3 },

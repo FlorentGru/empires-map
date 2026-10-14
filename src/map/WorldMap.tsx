@@ -62,7 +62,11 @@ let lastView: { empireId: string; center: [number, number]; zoom: number } | nul
 function viewPadding(panelOpen: boolean): PaddingOptions {
   const mobile = window.innerWidth < 768;
   if (mobile) return { top: 70, left: 10, right: 10, bottom: panelOpen ? window.innerHeight * 0.45 : 150 };
-  return { top: 80, left: 20, right: panelOpen ? 420 : 20, bottom: 150 };
+  // La légende ouverte (en bas à gauche) masque une bande de carte : on l'exclut du cadrage.
+  const legend = document.querySelector<HTMLElement>('.legend');
+  const legendOpen = legend?.querySelector('[aria-expanded="true"]');
+  const left = legend && legendOpen ? Math.round(legend.getBoundingClientRect().right) + 16 : 20;
+  return { top: 80, left, right: panelOpen ? 420 : 20, bottom: 150 };
 }
 
 /** Attend la fin du vol de caméra en cours, ou au plus tard 1,4 s (/ vitesse) après le début de l'étape. */
@@ -189,6 +193,8 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
     void loadCities().then((list: City[]) => {
       if (cancelled || list.length === 0 || !map.getStyle()) return;
       created = new CityLayer(map, list, empire);
+      // Les noms d'États passent avant les noms de villes (MapLibre place d'abord les couches du haut).
+      if (map.getLayer('territory-labels')) map.moveLayer('territory-labels');
       setCityLayer(created);
     });
     return () => {

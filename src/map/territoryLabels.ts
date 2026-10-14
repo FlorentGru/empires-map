@@ -40,6 +40,9 @@ export class TerritoryLabels {
           'text-letter-spacing': 0.12,
           'text-max-width': 8,
           'text-padding': 3,
+          // Si la position centrale est prise (nom de ville…), on essaie autour du point.
+          'text-variable-anchor': ['center', 'top', 'bottom', 'left', 'right'],
+          'text-radial-offset': 0.6,
           'text-optional': true,
         },
         paint: { 'text-color': ['get', 'color'], 'text-halo-color': HALO, 'text-halo-width': 1.5, 'text-halo-blur': 0.3 },

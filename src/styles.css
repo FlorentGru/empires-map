@@ -1837,3 +1837,26 @@ kbd {
   outline: 2px solid var(--accent, #9b2d20);
   outline-offset: 1px;
 }
+
+/* Frise : premier et dernier libellés collés au bord (sinon coupés à moitié). */
+.timeline__tick--first {
+  transform: none;
+}
+.timeline__tick--first::before {
+  left: 0;
+}
+.timeline__tick--last {
+  transform: translateX(-100%);
+}
+.timeline__tick--last::before {
+  left: auto;
+  right: 0;
+}
+
+/* Légende : la liste des territoires défile au-delà d'environ 6 entités (Napoléon, Chine divisée). */
+.legend__list--entities {
+  max-height: 11.5em;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}

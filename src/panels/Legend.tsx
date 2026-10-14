@@ -21,7 +21,7 @@ const EMPIRE_SPRITES: Record<string, { faction: Faction; archetype: Archetype }>
 };
 
 /** Au-delà, la légende des entités est tronquée (périodes de division). */
-const MAX_ENTITIES = 10;
+const MAX_ENTITIES = 40;
 
 const TYPES = Object.keys(EVENT_TYPES) as EventType[];
 
@@ -96,7 +96,7 @@ export const Legend = memo(function Legend({ empire, step, countries2026 = false
         </ul>
 
         <h3>Carte</h3>
-        <ul className="legend__list">
+        <ul className="legend__list legend__list--entities">
           {entities.slice(0, MAX_ENTITIES).map((e) => (
             <li key={`${e.index}-${e.name}`}>
               <button
@@ -119,6 +119,8 @@ export const Legend = memo(function Legend({ empire, step, countries2026 = false
             </li>
           ))}
           {entities.length > MAX_ENTITIES && <li>… et {entities.length - MAX_ENTITIES} autres entités</li>}
+        </ul>
+        <ul className="legend__list">
           <li>
             <span className="legend__swatch legend__swatch--diff" style={{ '--c': DIFF_COLORS.gained } as CSSProperties} aria-hidden="true">
               +

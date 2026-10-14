@@ -4,7 +4,7 @@ import { collectErrors } from './helpers';
 test('galerie : ouverture, détail, fermeture', async ({ page }) => {
   const errors = collectErrors(page);
   await page.goto('/?empire=rome&step=zama-202');
-  await page.getByRole('button', { name: 'Figurines', exact: true }).click();
+  await page.getByRole('button', { name: 'Galerie', exact: true }).click();
   const dialog = page.locator('dialog.gallery');
   await expect(dialog).toBeVisible();
   await expect(dialog).toHaveAttribute('open', '');

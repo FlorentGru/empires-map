@@ -35,10 +35,11 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
   const activePeriod = active ? periodIndexAt(periods, active.year) : -1;
   const innerRef = useRef<HTMLDivElement>(null);
   const width = useElementWidth(innerRef);
-  // Au moins ~72 px entre deux graduations, quelle que soit la largeur d'écran.
+  // Écart minimal entre deux graduations : plus large quand les libellés portent « av. J.-C. ».
+  const minPx = empire.start < 0 ? 100 : 72;
   const ticks = useMemo(
-    () => makeTicks(empire.start, empire.end, yearToX, width > 0 ? 72 / width : 0.07),
-    [empire.start, empire.end, yearToX, width],
+    () => makeTicks(empire.start, empire.end, yearToX, width > 0 ? minPx / width : 0.07),
+    [empire.start, empire.end, yearToX, width, minPx],
   );
 
   // Garder l'étape active visible quand la frise défile (sans faire défiler la page).
@@ -113,8 +114,13 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
       <div className="timeline__scroller" ref={trackRef}>
         <div className="timeline__track" ref={innerRef} style={{ minWidth: steps.length * MIN_PX_PER_STEP }}>
           <div className="timeline__axis" />
-          {ticks.map((y) => (
-            <span key={y} className="timeline__tick" style={{ left: pct(yearToX(y)) }}>
+          {ticks.map((y, i) => (
+            <span
+              key={y}
+              // Premier et dernier libellés alignés sur le bord pour ne pas être coupés.
+              className={`timeline__tick${i === 0 ? ' timeline__tick--first' : i === ticks.length - 1 ? ' timeline__tick--last' : ''}`}
+              style={{ left: pct(yearToX(y)) }}
+            >
               {formatYear(y)}
             </span>
           ))}

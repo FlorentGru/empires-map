@@ -36,7 +36,7 @@ export function ViewControls({ tilted, relief, figures, countries2026, stateName
         onClick={onToggleFigures}
         title="Afficher / masquer les armées en marche et les personnages"
       >
-        Figurines : {figures ? 'oui' : 'non'}
+        Soldats : {figures ? 'oui' : 'non'}
       </button>
       <button
         type="button"
