@@ -2,3 +2,7 @@ node_modules
 dist
 .cache
 *.tsbuildinfo
+
+# Tests
+playwright-report/
+test-results/

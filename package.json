@@ -17,7 +17,10 @@
     "build:data:napoleon": "tsx scripts/build-territories.ts --empire napoleon && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire napoleon && tsx scripts/build-neighbors.ts --empire napoleon",
     "build:territories": "tsx scripts/build-territories.ts",
     "start": "vite --open",
-    "build:data:china": "tsx scripts/build-territories.ts --empire china && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire china && tsx scripts/build-neighbors.ts --empire china"
+    "build:data:china": "tsx scripts/build-territories.ts --empire china && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire china && tsx scripts/build-neighbors.ts --empire china",
+    "test": "vitest run tests/unit",
+    "test:data": "vitest run tests/data",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "maplibre-gl": "^6.14.0",
@@ -26,6 +29,7 @@
     "react-markdown": "^10.1.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.64.1",
     "@turf/turf": "^7.4.0",
     "@types/geojson": "^7946.0.16",
     "@types/node": "^26.6.5",
@@ -37,7 +41,8 @@
     "polylabel": "^2.1.0",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
-    "vite": "^8.3.4"
+    "vite": "^8.3.4",
+    "vitest": "^5.0.4"
   },
   "license": "GPL-3.0-only"
 }

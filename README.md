@@ -1,5 +1,7 @@
 # Atlas des Empires
 
+[![CI](https://github.com/FlorentGru/empires-map/actions/workflows/ci.yml/badge.svg)](https://github.com/FlorentGru/empires-map/actions/workflows/ci.yml)
+
 Un planisphère interactif pour voir l'évolution des grands empires de l'histoire. Choisis un empire, appuie sur **Play** et regarde ses frontières évoluer d'une date clé à la suivante : batailles, traités, réformes, chutes. Chaque étape est accompagnée d'une explication détaillée.
 
 Empires disponibles : **Rome** (509 av. J.-C. → 1453), **l'Empire napoléonien** (1799 → 1815) et bientôt **la Chine** (-1600 → 1912). Le sélecteur liste, par continent, les plus vastes et les plus célèbres empires de l’histoire, à remplir au fil du projet.
@@ -12,6 +14,13 @@ Empires disponibles : **Rome** (509 av. J.-C. → 1453), **l'Empire napoléonien
 - Panneau d'explication : récit, conséquences, fiche bataille, sources
 - 55 villes avec leur nom d'époque et leur nom actuel, capitales selon la date
 - Légende, liens partageables (`?empire=rome&step=zama-202`), interface adaptée au mobile
+
+## Tests
+
+- `npm test` : tests unitaires (Vitest) : années, nombres en lettres, périodes, armées, échelle, palette.
+- `npm run test:data` : validation de toutes les données (timelines, territoires, diffs, SDF, voisins, villes, catalogue).
+- `npm run test:e2e` : parcours dans Chromium (Playwright) sur le site construit ; première fois : `npx playwright install chromium`.
+- Le CI GitHub Actions enchaîne typecheck, tests, build et e2e à chaque push et pull request.
 
 ## Lancer le projet
 

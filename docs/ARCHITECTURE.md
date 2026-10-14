@@ -230,3 +230,11 @@ Le coût d'un agent vient surtout de son **démarrage à froid** : il relit le c
 - **regrouper** dans un même agent les tâches qui partagent beaucoup de contexte ;
 - **enchaîner** les tâches qui dépendent l'une de l'autre (le cartographe a besoin des notes territoriales de l'historien) ;
 - **paralléliser** les tâches indépendantes qui touchent des fichiers différents, par exemple le contenu d'un empire pendant que la carte d'un autre est dessinée : c'est aussi cher, mais deux fois plus rapide.
+
+## 12. Tests
+
+- **Unitaires** (`tests/unit`, `npm test`, Vitest, environnement node) : fonctions pures de `src/` (formatage des années sans année 0, nombres en lettres pour la narration, périodes et bornes qui se touchent, chaînage des armées, échelle de la frise monotone, palette des entités, emprises géométriques).
+- **Données** (`tests/data`, `npm run test:data`) : pour chaque `data/empires/*/timeline.json`, vérifie le contrat de `src/types.ts` (ids uniques, étapes triées dans [start, end], factions et archétypes connus, citations ≤ 120 caractères, chaînage des armées, périodes couvrantes) et la présence des fichiers générés dans `public/data/` (territoires valides, diffs, SDF PNG RGB 8 bits + JSON, voisins) pour chaque transition. Vérifie aussi `cities.json` et le catalogue. Un nouvel empire est testé automatiquement dès que son dossier existe ; les messages d'erreur citent empire, étape et fichier.
+- **E2E** (`e2e/`, `npm run test:e2e`, Playwright + Chromium, WebGL logiciel SwiftShader) : construit le site, le sert avec `vite preview` (port 4173) puis joue les parcours clés : chargement sans erreur console, navigation entre étapes, sélecteur d'empire, galerie des figurines (régression StrictMode), zoom depuis la légende, mode Histoire en lecture silencieuse.
+- **CI** (`.github/workflows/ci.yml`) : typecheck, unitaires, données, build, e2e ; le rapport Playwright (traces, captures) est publié en artefact en cas d'échec.
+- Ces tests protègent surtout contre les données régénérées incomplètes (un `build:data` qui oublie un SDF casserait le glissement) et contre les régressions d'interface qu'un typecheck ne voit pas.
