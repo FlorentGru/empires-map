@@ -212,3 +212,21 @@ Le coût d'un agent vient surtout de ce qu'il **relit et redécouvre**, beaucoup
    - contrôle par points des villes témoins ;
    - `npm run typecheck && npm run build` ;
    - test dans un vrai navigateur avec `?debug=1`.
+
+---
+
+## 10. Plusieurs empires, catalogue et périodes
+
+- **Catalogue** (`data/empires-catalog.json`) : pour chaque continent, les 3 plus vastes empires de l'histoire et les plus célèbres. Le sélecteur les groupe par continent. Les empires qui ont un dossier `data/empires/<id>/` sont cliquables ; les autres sont grisés avec leurs dates.
+- **Bornes par empire** : `Empire.view` donne la vue initiale et `Empire.bounds` les limites de navigation. Le fond de carte couvre l'Europe, l'Afrique et l'Asie ([-25, -40, 150, 72]).
+- **Périodes** (`Empire.periods`) : les « chapitres » d'un long empire, comme les 7 grandes périodes de la Chine. Elles sont dessinées en bandes colorées sous la frise ; un clic saute au début d'une période. Une étape appartient à la dernière période dont le début précède ou égale son année. En mode Histoire, le chapitre est présenté au moment où il commence.
+- **Composer plutôt qu'extraire** : pour Napoléon et la Chine, les instantanés historiques sont trop grossiers. Par exemple, une seule entité « Han » couvre toute la Chine, sans distinguer Wei, Shu et Wu. Les étapes sont donc **composées** à partir de pays actuels (Natural Earth) découpés par des **régions nommées** dessinées à la main (`overrides/<empire>/_regions.geojson` : « ligne Qinling-Huai », « bloc de Shu », « rive gauche du Rhin »…). Le code qui assemble chaque étape se trouve dans `scripts/empires/<empire>.ts` et suit la `territoryNote` de chaque étape. Les **contrôles par points** vérifient le résultat ville par ville (150 pour la Chine).
+- **Statuts** : `core` pour l'empire lui-même et, en période de division, pour chacun des royaumes rivaux, qui forment ensemble « la Chine » du moment ; `vassal` pour les tributaires et les protectorats ; `allied` pour les alliés contraints, qui ne sont qu'un contour et sont exclus des animations.
+
+## 11. Organisation : parallèle ou en série ?
+
+Le coût d'un agent vient surtout de son **démarrage à froid** : il relit le contexte. Deux agents qui tournent **en même temps** ne coûtent pas plus que deux agents qui tournent **l'un après l'autre**. C'est le **nombre** d'agents qui compte. La règle appliquée :
+
+- **regrouper** dans un même agent les tâches qui partagent beaucoup de contexte ;
+- **enchaîner** les tâches qui dépendent l'une de l'autre (le cartographe a besoin des notes territoriales de l'historien) ;
+- **paralléliser** les tâches indépendantes qui touchent des fichiers différents, par exemple le contenu d'un empire pendant que la carte d'un autre est dessinée : c'est aussi cher, mais deux fois plus rapide.
