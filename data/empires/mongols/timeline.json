@@ -1,0 +1,3678 @@
+{
+  "id": "mongols",
+  "name": "Empire mongol",
+  "color": "#2e8b85",
+  "start": 1206,
+  "end": 1368,
+  "description": "L'Empire mongol naît en 1206, quand Temüdjin, chef de tribus nomades de la steppe, est proclamé Gengis Khan, « souverain universel ». En un siècle, ses cavaliers bâtissent le plus vaste empire d'un seul tenant de l'Histoire, de la Corée à la Hongrie, de la Sibérie à l'Iran. À partir de 1260, il se divise en quatre khanats : les Yuan en Chine, la Horde d'or en Russie, le khanat de Djaghataï en Asie centrale et l'Ilkhanat en Iran. Il laisse aussi la « paix mongole » : routes sûres, commerce, voyageurs entre l'Europe et la Chine, mais aussi la Peste noire.",
+  "view": {
+    "center": [
+      80,
+      45
+    ],
+    "zoom": 3
+  },
+  "bounds": [
+    [
+      2,
+      8
+    ],
+    [
+      146,
+      62
+    ]
+  ],
+  "periods": [
+    {
+      "id": "gengis",
+      "name": "Gengis Khan",
+      "start": 1206,
+      "end": 1229,
+      "color": "#d8b98a",
+      "summary": "Un chef de clan du fond de la steppe, Temüdjin, unit les tribus de Mongolie et devient Gengis Khan en 1206. En vingt ans, ses cavaliers soumettent le nord de la Chine, l'Asie centrale et l'Iran oriental, puis écrasent les princes russes sur la Kalka. Un empire de la taille d'un continent sort de la steppe."
+    },
+    {
+      "id": "grands-khans",
+      "name": "Les grands khans",
+      "start": 1229,
+      "end": 1260,
+      "color": "#86b5ad",
+      "summary": "Après Gengis Khan, ses fils et petits-fils règnent depuis Karakorum, capitale bâtie en pleine steppe. Les armées de Batu ravagent la Russie et la Hongrie, celles de Houlagou détruisent les Assassins et le califat de Bagdad, tandis que l'on s'attaque à la Chine des Song. Mais l'unité commence à se fissurer."
+    },
+    {
+      "id": "khanats",
+      "name": "Les khanats et les Yuan",
+      "start": 1260,
+      "end": 1368,
+      "color": "#a79ac6",
+      "summary": "Après la mort de Möngke et la guerre entre ses frères, l'empire éclate en quatre khanats : les Yuan en Chine, la Horde d'or en Russie, le khanat de Djaghataï en Asie centrale et l'Ilkhanat en Iran. Leurs liens se distendent, la peste et les révoltes les frappent, jusqu'à la chute de Dadu en 1368."
+    }
+  ],
+  "steps": [
+    {
+      "id": "kurultai-1206",
+      "year": 1206,
+      "title": "Le kurultaï : Temüdjin devient Gengis Khan",
+      "type": "fondation",
+      "location": [
+        112.0,
+        48.8
+      ],
+      "zoom": 5,
+      "summary": "Au printemps 1206, les chefs des tribus de la steppe se réunissent près de la rivière Onon et proclament Temüdjin « Gengis Khan », souverain de tous les Mongols.",
+      "details": "Vers 1162, le jeune **Temüdjin** naît dans un clan modeste de la steppe de Mongolie, une immense prairie où des tribus d'éleveurs nomades se disputent troupeaux et pâturages. Orphelin de père, il survit, s'allie, trahit et se venge. Il écarte tour à tour les **Merkits**, les **Naïmans**, les **Kereyits** et les **Tatars**, des peuples voisins, parfois cousins, souvent rivaux. En 1206, la steppe est à lui.\n\nAu printemps, il réunit près de la rivière **Onon** un **kurultaï**, l'assemblée des chefs de clan. Les nobles le proclament **Gengis Khan**, un titre en général traduit par « souverain universel » (son sens exact reste discuté). Il ne se contente pas d'un trône : il brise l'ancienne société des clans. L'armée est organisée en unités de dix, cent, mille et dix mille hommes qui mêlent les tribus, et l'on y monte au mérite plutôt que par la naissance. Une garde personnelle, le **keshig**, et un code de lois, le **Yassa**, soudent l'ensemble. On adapte aussi l'écriture des Ouïghours, un peuple turc voisin, pour noter la langue mongole.\n\nCette machine de guerre, tenue par la loyauté envers un seul homme, a besoin de butins pour rester unie. Gengis Khan se tourne donc vers ses voisins sédentaires, riches de villes, de greniers et d'artisans.",
+      "consequences": [
+        "La Mongolie actuelle et la Transbaïkalie (sud de la Sibérie) sont unifiées : c'est le noyau du futur empire.",
+        "Les peuples de la forêt sibérienne et les Kirghiz de l'Ienisseï sont soumis dès 1207-1208 par Djötchi, fils aîné de Gengis.",
+        "L'armée est refondue en dizaines, centaines, milliers et « tümen » (dix mille hommes) : elle devient l'outil de toutes les conquêtes.",
+        "Les royaumes voisins, Xi Xia puis Jin, deviennent les premières cibles."
+      ],
+      "territory": "kurultai-1206",
+      "sources": [
+        {
+          "label": "Histoire secrète des Mongols (XIIIe siècle)"
+        },
+        {
+          "label": "Jean-Paul Roux, Gengis Khan et l'Empire mongol"
+        },
+        {
+          "label": "Wikipédia : Gengis Khan",
+          "url": "https://fr.wikipedia.org/wiki/Gengis_Khan"
+        }
+      ],
+      "territoryNote": "Empire mongol de Gengis Khan, tout juste fondé : Mongolie actuelle (steppes de l'Onon, de la Kerülen et de l'Orkhon), Transbaïkalie (Bouriatie, Russie) ; Mongolie-Intérieure centrale en cours de ralliement (Ongüts). Voisins indépendants : Xia occidentaux ou Tangoutes (Ningxia, Gansu, Ordos), Jin jurchens (Mandchourie, Hebei, Shanxi, Shandong, Henan, Shaanxi), Song du Sud, Qara Khitaï (sud-est du Kazakhstan, Kirghizistan, bassin du Tarim), Ouïghours de Qocho (Turfan, sous tutelle khitane), Khwarezm (Ouzbékistan, Turkménistan, Iran, Afghanistan), Kirghiz de l'Ienisseï (Khakassie), Goryeo (Corée).",
+      "figures": [
+        {
+          "name": "Gengis Khan",
+          "role": "Fondateur de l'Empire mongol",
+          "faction": "mongols",
+          "archetype": "khan",
+          "quote": "« Le ciel n'a qu'un soleil ; la terre n'aura qu'un maître » (formule libre)"
+        },
+        {
+          "name": "Börte",
+          "role": "Première épouse de Gengis Khan",
+          "faction": "mongols",
+          "archetype": "khatoun",
+          "quote": "« C'est elle qui garde le foyer pendant que l'empire se fait » (formule libre)",
+          "position": [
+            112.5,
+            48.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xixia-1209",
+      "year": 1209,
+      "title": "Les Tangoutes et les Ouïghours se soumettent",
+      "type": "bataille",
+      "location": [
+        106.23,
+        38.49
+      ],
+      "zoom": 5,
+      "summary": "En 1209, Gengis Khan assiège la capitale des Tangoutes du Xi Xia et leur impose la soumission ; la même année, les Ouïghours de Turfan se rallient aux Mongols.",
+      "details": "Les **Tangoutes** sont un peuple bouddhiste venu des confins du Tibet, maître depuis 1038 du royaume de **Xi Xia** (« Xia occidentaux »), à cheval sur l'actuel Ningxia, le Gansu et l'Ordos. Leur royaume garde la route de la Soie, la voie commerciale entre la Chine et l'Occident : le soumettre, c'est ouvrir la Chine à la cavalerie mongole.\n\nAprès des raids en 1205 et 1207, Gengis Khan lance en 1209 une vraie campagne. Il enlève la forteresse de **Wulahai**, puis assiège la capitale, **Zhongxing** (aujourd'hui Yinchuan). Les Mongols ne savent pas encore prendre de villes fortifiées. Ils tentent de noyer la cité en détournant le Fleuve Jaune, mais la digue cède et inonde leur propre camp. Le souverain tangoute **Li Anquan** préfère négocier : il offre une fille à Gengis Khan, paie tribut et promet des soldats.\n\nÀ l'autre bout du monde mongol, les **Ouïghours**, un peuple turc lettré de la région de Turfan, vivent sous la tutelle des Khitans du Qara Khitaï. Leur chef, l'**idiqut Barchuk**, tue le surveillant khitan et passe au service de Gengis Khan, qui lui donne une fille en mariage. Les scribes ouïghours apporteront aux Mongols l'écriture, la comptabilité et les rouages d'une administration.",
+      "consequences": [
+        "Les Xia occidentaux deviennent vassaux des Mongols : Ningxia, nord du Gansu et Ordos fournissent tribut et soldats.",
+        "Les Ouïghours de Qocho (Turfan, Hami, est du Xinjiang) rejoignent l'empire comme alliés privilégiés.",
+        "La route de la Soie orientale est ouverte aux armées mongoles, vers le Jin comme vers l'Asie centrale.",
+        "Le refus des Tangoutes de fournir des troupes pour la guerre du Khwarezm (1219) préparera leur destruction en 1227."
+      ],
+      "territory": "xixia-1209",
+      "sources": [
+        {
+          "label": "Histoire secrète des Mongols (XIIIe siècle)"
+        },
+        {
+          "label": "Juvayni, Histoire du conquérant du monde (XIIIe siècle)"
+        },
+        {
+          "label": "Wikipédia : Invasions mongoles des Xia occidentaux",
+          "url": "https://fr.wikipedia.org/wiki/Invasions_mongoles_des_Xia_occidentaux"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire mongol",
+          "Xia occidentaux (Tangoutes)"
+        ],
+        "commanders": [
+          "Gengis Khan",
+          "Li Anquan"
+        ],
+        "outcome": "Soumission des Xia occidentaux, devenus vassaux des Mongols",
+        "forces": "Chiffres inconnus ; les Mongols ne maîtrisent pas encore les sièges",
+        "losses": "Pertes limitées : le siège de Yinchuan se termine par une négociation"
+      },
+      "territoryNote": "Empire mongol de Gengis Khan : Mongolie, Transbaïkalie, Touva et Khakassie (Kirghiz soumis en 1207) ; vassaux : Xia occidentaux ou Tangoutes (Ningxia, nord du Gansu, Ordos, après le siège de Yinchuan) et Ouïghours de Qocho (Turfan, Hami, est du Xinjiang). Voisins indépendants : Jin jurchens (Mandchourie, Hebei, Shanxi, Shandong, Henan, Shaanxi), Song du Sud, Qara Khitaï (Kazakhstan sud-est, Kirghizistan, Tarim), Khwarezm (Asie centrale et Iran), Goryeo (Corée), Tibet.",
+      "armies": [
+        {
+          "side": "Mongols",
+          "faction": "mongols",
+          "path": [
+            [
+              106.9,
+              47.9
+            ],
+            [
+              105.5,
+              44.0
+            ],
+            [
+              105.8,
+              41.2
+            ],
+            [
+              106.6,
+              39.8
+            ],
+            [
+              106.23,
+              38.49
+            ]
+          ],
+          "strength": 3,
+          "winner": true,
+          "id": "gengis"
+        },
+        {
+          "side": "Tangoutes",
+          "faction": "tangoutes",
+          "path": [
+            [
+              102.6,
+              37.9
+            ],
+            [
+              104.1,
+              37.6
+            ],
+            [
+              105.6,
+              38.0
+            ],
+            [
+              106.23,
+              38.49
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Barchuk",
+          "role": "Idiqut, chef des Ouïghours de Turfan",
+          "faction": "ouighours",
+          "archetype": "roi",
+          "quote": "« Je ne serai plus un esclave : je serai le fils de Gengis Khan » (formule libre)",
+          "position": [
+            89.19,
+            42.95
+          ]
+        },
+        {
+          "name": "Li Anquan",
+          "role": "Empereur tangoute des Xi Xia",
+          "faction": "tangoutes",
+          "archetype": "roi",
+          "position": [
+            106.23,
+            38.49
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yehuling-1211",
+      "year": 1211,
+      "title": "Yehuling, la guerre contre les Jin",
+      "type": "bataille",
+      "location": [
+        114.7,
+        40.8
+      ],
+      "zoom": 5,
+      "summary": "En 1211, la cavalerie mongole écrase l'armée des Jin à Yehuling, au nord de la Grande Muraille : la Chine du Nord est ouverte.",
+      "details": "Au nord de la Chine règne depuis 1125 la dynastie **Jin** (« l'Or »), fondée par les **Jurchens**, un peuple venu de Mandchourie qui a arraché le nord du pays aux Song. Leur empire compte une cinquantaine de millions d'habitants, mais ses tributaires, les Khitans notamment, rongent leur frein. Pour Gengis Khan, venger des offenses anciennes et piller des villes riches vont de pair.\n\nAu printemps 1211, il franchit le Gobi avec ses fils et ses généraux, dont **Djebe** et **Mukhali**. Le gros de l'armée jin, forte surtout d'infanterie, s'est avancé au-delà des passes de la Grande Muraille. À **Yehuling** (« la crête du renard sauvage »), près de l'actuel Zhangjiakou, les cavaliers mongols simulent la fuite, tournent bride et fauchent les fantassins dispersés. Des dizaines de milliers d'hommes périssent ; les chroniqueurs musulmans diront que l'on voyait encore leurs ossements des années plus tard.\n\nDjebe force ensuite la passe de **Juyongguan**, l'une des portes de Pékin, en feignant de se replier pour attirer les défenseurs hors du fort. Les Mongols pillent les plaines du Hebei et du Shanxi, puis se retirent à l'hiver. Ils ont appris l'essentiel : les villes chinoises se prennent grâce à des ingénieurs et des machines de siège, et les Khitans comme les Chinois, mécontents du pouvoir jurchen, peuvent devenir des alliés.",
+      "consequences": [
+        "Les Jin perdent leur meilleure armée et ne retrouveront jamais l'initiative.",
+        "Les Khitans de Liaoxi, sujets mécontents des Jin, se révoltent et se rallient aux Mongols (1212-1214).",
+        "Le nord du Hebei, la Mongolie-Intérieure et le nord du Shanxi sont désormais à la portée des raids mongols.",
+        "Les Mongols recrutent ingénieurs chinois et khitans : ils apprennent à prendre les villes fortifiées."
+      ],
+      "territory": "yehuling-1211",
+      "sources": [
+        {
+          "label": "Histoire secrète des Mongols (XIIIe siècle)"
+        },
+        {
+          "label": "Histoire des Jin (Jinshi, XIVe siècle)"
+        },
+        {
+          "label": "Wikipédia : Bataille de Yehuling",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Yehuling"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire mongol",
+          "Dynastie Jin (Jurchens et auxiliaires khitans)"
+        ],
+        "commanders": [
+          "Gengis Khan",
+          "Djebe",
+          "Mukhali",
+          "Wanyan Chengyu",
+          "Wanyan Jiuguan"
+        ],
+        "outcome": "Victoire mongole écrasante",
+        "forces": "Sources chinoises et persanes très exagérées ; les Jin sont largement supérieurs en infanterie",
+        "losses": "Plusieurs dizaines de milliers de morts jin selon les chroniques"
+      },
+      "territoryNote": "Empire mongol de Gengis Khan : Mongolie, Transbaïkalie, Touva et Khakassie ; Mongolie-Intérieure ralliée (Ongüts) ; vassaux : Xia occidentaux (Ningxia, nord du Gansu, Ordos) et Ouïghours de Qocho (Turfan, Hami) ; Karlouks d'Almaliq (Ili, est du Kazakhstan) ralliés en 1211 ; raids sur le nord du Hebei et du Shanxi sans occupation durable. Voisins indépendants : Jin jurchens (Mandchourie, Hebei, Shanxi, Shandong, Henan, Shaanxi ; capitale Zhongdu), Song du Sud, Qara Khitaï, Khwarezm, Goryeo (Corée).",
+      "armies": [
+        {
+          "side": "Mongols",
+          "faction": "mongols",
+          "path": [
+            [
+              106.23,
+              38.49
+            ],
+            [
+              105.9,
+              41.5
+            ],
+            [
+              109.5,
+              42.5
+            ],
+            [
+              112.5,
+              41.9
+            ],
+            [
+              114.7,
+              40.8
+            ]
+          ],
+          "strength": 3,
+          "winner": true,
+          "id": "gengis"
+        },
+        {
+          "side": "Jin",
+          "faction": "jurchens",
+          "path": [
+            [
+              116.4,
+              39.9
+            ],
+            [
+              116.07,
+              40.28
+            ],
+            [
+              115.5,
+              40.4
+            ],
+            [
+              114.7,
+              40.8
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Djebe",
+          "role": "Général de Gengis Khan",
+          "faction": "mongols",
+          "archetype": "general-mongol",
+          "quote": "« On ne prend pas une forteresse en la défiant : on la fait sortir » (formule libre)"
+        },
+        {
+          "name": "Wanyan Yongji",
+          "role": "Empereur des Jin (règne 1209-1213)",
+          "faction": "jurchens",
+          "archetype": "empereur-chinois",
+          "position": [
+            116.4,
+            39.9
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zhongdu-1215",
+      "year": 1215,
+      "title": "Zhongdu : la capitale des Jin tombe",
+      "type": "bataille",
+      "location": [
+        116.4,
+        39.9
+      ],
+      "zoom": 5,
+      "summary": "En 1215, les Mongols prennent et pillent Zhongdu, capitale des Jin, sur le site de l'actuelle Pékin : premier grand coup porté à l'empire jurchen.",
+      "details": "Après Yehuling, les Mongols reviennent chaque année. En 1213-1214, ils dévastent le Hebei, le Shanxi et le Shandong, puis assiègent **Zhongdu**, la « capitale centrale » des Jin, là où s'élèvera plus tard Pékin. L'empereur **Xuanzong** paie une lourde rançon, offre une princesse à Gengis Khan, puis, dès la retraite des Mongols, transporte sa cour à **Kaifeng**, au sud du Fleuve Jaune. Gengis Khan y voit une trahison : les Mongols reviennent au printemps 1215.\n\nCette fois, ils maîtrisent les machines de guerre. Des ingénieurs chinois et khitans dirigent catapultes et sapes, et la ville affamée, privée de renforts arrêtés en chemin, ouvre ses portes en juin. Le pillage dure, dit-on, un mois, et un incendie ravage le palais. Gengis Khan rentre en Mongolie et laisse la suite de la guerre à son lieutenant **Mukhali**, nommé en 1217 gouverneur de la Chine conquise avec le titre chinois de « prince Guowang ».\n\nParmi les prisonniers se trouve **Yelü Chucai**, un lettré khitan descendant de la dynastie Liao, que Gengis Khan prend à son service. Cet homme sage, astrologue et administrateur, apprendra aux conquérants que l'on tire plus de profit d'un paysan qui paie l'impôt que d'un champ rasé.",
+      "consequences": [
+        "Le Hebei, le nord du Shanxi et la Mongolie-Intérieure passent aux Mongols ; les Jin ne tiennent plus que le Henan, le sud du Shandong et le Shaanxi.",
+        "La cour jin s'installe à Kaifeng et s'épuise dans une guerre sans issue.",
+        "Les Khitans de Liaoxi et de Mandchourie occidentale rejoignent l'empire.",
+        "Yelü Chucai entre au service de Gengis Khan et commence à penser un impôt régulier."
+      ],
+      "territory": "zhongdu-1215",
+      "sources": [
+        {
+          "label": "Histoire des Yuan (Yuanshi, XIVe siècle)"
+        },
+        {
+          "label": "Histoire des Jin (Jinshi, XIVe siècle)"
+        },
+        {
+          "label": "Wikipédia : Invasion mongole de la dynastie Jin",
+          "url": "https://fr.wikipedia.org/wiki/Invasion_mongole_de_la_dynastie_Jin"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire mongol",
+          "Dynastie Jin"
+        ],
+        "commanders": [
+          "Mukhali",
+          "Samuqa",
+          "Shigi Qutuqu",
+          "Wanyan Fuxing"
+        ],
+        "outcome": "Prise et pillage de Zhongdu par les Mongols",
+        "forces": "Garnison nombreuse, mais coupée de ses renforts",
+        "losses": "La ville est incendiée ; les pertes civiles sont élevées"
+      },
+      "territoryNote": "Empire mongol de Gengis Khan : Mongolie, Mongolie-Intérieure, Transbaïkalie, Touva ; Hebei et nord du Shanxi conquis (1211-1215), Liaoxi (ouest du Liaoning) rallié par les Khitans ; vassaux : Xia occidentaux (Ningxia, nord du Gansu), Ouïghours de Qocho, Karlouks d'Almaliq ; Mandchourie en cours de conquête (royaume des Xia orientaux de Puxian Wannu). Voisins : Jin jurchens réduits au Henan, sud du Shandong et Shaanxi (cour à Kaifeng), Song du Sud, Qara Khitaï de Kuchlug, Khwarezm, Goryeo (Corée).",
+      "armies": [
+        {
+          "side": "Mongols (Mukhali)",
+          "faction": "mongols",
+          "path": [
+            [
+              114.7,
+              40.8
+            ],
+            [
+              115.5,
+              40.45
+            ],
+            [
+              116.07,
+              40.28
+            ],
+            [
+              116.4,
+              39.9
+            ]
+          ],
+          "strength": 3,
+          "winner": true,
+          "id": "gengis"
+        },
+        {
+          "side": "Jin (armée de secours)",
+          "faction": "jurchens",
+          "path": [
+            [
+              114.31,
+              34.8
+            ],
+            [
+              114.5,
+              37.0
+            ],
+            [
+              115.5,
+              38.8
+            ],
+            [
+              116.4,
+              39.9
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Mukhali",
+          "role": "Général de Gengis Khan, gouverneur de la Chine conquise",
+          "faction": "mongols",
+          "archetype": "general-mongol",
+          "quote": "« Qui gouverne la Chine doit savoir lire avant de savoir compter les têtes » (formule libre)",
+          "position": [
+            116.4,
+            39.9
+          ]
+        },
+        {
+          "name": "Wanyan Xuanzong",
+          "role": "Empereur des Jin (règne 1213-1224)",
+          "faction": "jurchens",
+          "archetype": "empereur-chinois",
+          "position": [
+            114.31,
+            34.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "karakitai-1218",
+      "year": 1218,
+      "title": "Le Qara Khitaï s'effondre",
+      "type": "bataille",
+      "location": [
+        75.2,
+        42.75
+      ],
+      "zoom": 5,
+      "summary": "En 1218, le général Djebe renverse Kuchlug, usurpateur du Qara Khitaï : les Mongols s'installent en Asie centrale, aux portes du Khwarezm.",
+      "details": "Quand les Jurchens détruisent l'empire khitan des Liao en 1125, une partie des vaincus fuit vers l'ouest. Ils fondent le **Qara Khitaï** (« Khitans noirs »), un empire d'Asie centrale qui s'étend sur le Kazakhstan du sud-est, le Kirghizistan et le bassin du Tarim, aujourd'hui le Xinjiang du sud. Bouddhistes et nestoriens gouvernent des sujets musulmans, turcs et ouïghours qu'ils taxent sans les convertir.\n\nVers 1211, le prince **Kuchlug**, chef des Naïmans que Gengis Khan avait chassés de Mongolie, épouse la fille du souverain khitan puis le détrône. Bouddhiste fervent, il interdit la prière publique musulmane à Kachgar et à Khotan : les populations le haïssent.\n\nEn 1218, Gengis Khan envoie **Djebe** avec environ 20 000 cavaliers. Ses hommes proclament la liberté de culte : les musulmans de Kachgar ouvrent leurs portes, et les troupes de Kuchlug fondent. Le prince s'enfuit dans les montagnes du Pamir, où des chasseurs le livrent aux Mongols, qui le décapitent.\n\nL'empire des Mongols atteint ainsi une frontière commune avec le **Khwarezm**, un puissant sultanat turc qui domine l'Iran et l'Asie centrale. Les caravanes de marchands vont bientôt provoquer le choc.",
+      "consequences": [
+        "Le Kazakhstan du sud-est (Semiretchié), le Kirghizistan et le Xinjiang du sud (Kachgar, Khotan, Yarkand) passent sous contrôle mongol.",
+        "La frontière mongole touche désormais le Khwarezm sur le Syr-Daria et dans les monts Tian Shan.",
+        "La tolérance religieuse affichée par Djebe devient un outil de conquête.",
+        "La route de la Soie, de la Chine à l'Iran, est presque entièrement dans les mains d'un seul pouvoir."
+      ],
+      "territory": "karakitai-1218",
+      "sources": [
+        {
+          "label": "Juvayni, Histoire du conquérant du monde (XIIIe siècle)"
+        },
+        {
+          "label": "Rachid ad-Din, Histoire universelle (XIVe siècle)"
+        },
+        {
+          "label": "Wikipédia : Qara-Khitaï",
+          "url": "https://fr.wikipedia.org/wiki/Qara-Khita%C3%AF"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire mongol",
+          "Qara Khitaï de Kuchlug"
+        ],
+        "commanders": [
+          "Djebe",
+          "Kuchlug"
+        ],
+        "outcome": "Victoire mongole ; Kuchlug capturé et exécuté",
+        "forces": "Environ 20 000 cavaliers mongols",
+        "losses": "Faibles côté mongol ; l'armée de Kuchlug se disperse"
+      },
+      "territoryNote": "Empire mongol de Gengis Khan : Mongolie, Mongolie-Intérieure, Transbaïkalie, Touva ; nord de la Chine (Hebei, nord du Shanxi, Liaoxi) en guerre contre les Jin ; Qara Khitaï conquis : sud-est du Kazakhstan (Semiretchié, Talas), Kirghizistan, Xinjiang du sud (Kachgar, Khotan, Yarkand) ; vassaux : Xia occidentaux, Ouïghours de Qocho, Karlouks ; Goryeo (Corée) s'allie en 1219. Voisins : Jin réduits au Henan et au Shaanxi, Song du Sud, Khwarezm (Ouzbékistan, Turkménistan, Iran, Afghanistan) à la frontière du Syr-Daria.",
+      "armies": [
+        {
+          "side": "Mongols",
+          "faction": "mongols",
+          "path": [
+            [
+              102.8,
+              47.2
+            ],
+            [
+              92.0,
+              47.0
+            ],
+            [
+              82.4,
+              45.2
+            ],
+            [
+              80.2,
+              44.2
+            ],
+            [
+              77.5,
+              42.8
+            ],
+            [
+              75.2,
+              42.75
+            ]
+          ],
+          "strength": 2,
+          "winner": true,
+          "id": "djebe"
+        },
+        {
+          "side": "Kuchlug",
+          "faction": "khitans",
+          "path": [
+            [
+              75.99,
+              39.47
+            ],
+            [
+              75.4,
+              40.5
+            ],
+            [
+              75.6,
+              41.8
+            ],
+            [
+              75.2,
+              42.75
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Kuchlug",
+          "role": "Prince naïman, usurpateur du Qara Khitaï",
+          "faction": "khitans",
+          "archetype": "roi",
+          "position": [
+            75.99,
+            39.47
+          ]
+        },
+        {
+          "name": "Djebe",
+          "role": "Général de Gengis Khan",
+          "faction": "mongols",
+          "archetype": "general-mongol",
+          "quote": "« Chacun reste libre de prier selon sa foi » (formule libre)",
+          "position": [
+            77.5,
+            42.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "otrar-1219",
+      "year": 1219,
+      "title": "Otrar : le Khwarezm entre en guerre",
+      "type": "bataille",
+      "location": [
+        68.3,
+        42.85
+      ],
+      "zoom": 5,
+      "summary": "En 1219, le massacre d'une caravane mongole à Otrar déclenche la guerre contre le Khwarezm, le plus puissant État musulman d'Asie centrale.",
+      "details": "Le **Khwarezm** est un sultanat turc musulman gouverné par le shah **Muhammad II**. Il règne sur l'Iran, l'Afghanistan et l'Asie centrale, de la mer d'Aral à l'océan Indien, mais ses chefs turcs détestent la mère du shah, et l'armée est dispersée dans des garnisons. Gengis Khan lui propose d'abord le commerce.\n\nEn 1218, une caravane de plusieurs centaines de marchands envoyés par le Khan arrive à **Otrar**, sur le Syr-Daria. Le gouverneur **Inalchuq** la fait massacrer, soupçonnant des espions, et s'empare de ses richesses. Gengis Khan demande réparation ; Muhammad II fait exécuter l'ambassadeur. Pour un Mongol, la personne d'un ambassadeur est sacrée : c'est la guerre.\n\nÀ l'été 1219, une armée d'environ 100 000 hommes, dont de nombreux auxiliaires turcs, ouïghours et chinois, se rassemble sur l'Irtych. Gengis Khan la divise en plusieurs colonnes : ses fils **Djaghataï** et **Ögödei** assiègent Otrar pendant cinq mois, **Djötchi** descend le Syr-Daria, d'autres généraux visent Khodjent. Lui-même, avec son fils **Tolui**, tourne l'ennemi par le désert. Otrar tombe en février 1220. Inalchuq est capturé et mis à mort ; la légende dit qu'on lui versa de l'argent fondu dans les yeux. Le shah, plutôt que de livrer bataille, disperse ses troupes dans les villes.",
+      "consequences": [
+        "Otrar et la vallée du Syr-Daria (sud du Kazakhstan) sont conquises en quelques mois.",
+        "La stratégie défensive du shah, qui disperse ses troupes dans les villes, laisse la place à la guerre éclair mongole.",
+        "La guerre contre le Khwarezm mobilise toutes les forces : Gengis Khan confie la Chine à Mukhali.",
+        "Les Tangoutes, qui refusent de fournir des soldats, s'attirent la colère de Gengis Khan (voir 1227)."
+      ],
+      "territory": "otrar-1219",
+      "sources": [
+        {
+          "label": "Juvayni, Histoire du conquérant du monde (XIIIe siècle)"
+        },
+        {
+          "label": "Ibn al-Athir, La Perfection de l'Histoire (XIIIe siècle)"
+        },
+        {
+          "label": "Wikipédia : Siège d'Otrar",
+          "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_d%27Otrar"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire mongol",
+          "Sultanat du Khwarezm"
+        ],
+        "commanders": [
+          "Djaghataï",
+          "Ögödei",
+          "Inalchuq"
+        ],
+        "outcome": "Prise d'Otrar après cinq mois de siège",
+        "forces": "Environ 20 000 Mongols contre une garnison de 20 000 hommes selon les chroniques",
+        "losses": "Garnison massacrée ; Inalchuq exécuté"
+      },
+      "territoryNote": "Empire mongol de Gengis Khan : Mongolie, Mongolie-Intérieure, Transbaïkalie, Touva ; nord de la Chine (Hebei, nord du Shanxi) en guerre contre les Jin ; Kazakhstan du sud-est, Kirghizistan, Xinjiang du sud (ex-Qara Khitaï) ; vassaux : Xia occidentaux (Ningxia, Gansu), Ouïghours de Qocho, Karlouks ; Goryeo (Corée) tributaire. Voisins : Khwarezm intact (Ouzbékistan, Turkménistan, Tadjikistan, Iran, Afghanistan) avec Otrar sur le Syr-Daria, Jin au Henan et au Shaanxi, Song du Sud, califat abbasside (Irak), Géorgie, principautés russes et Coumans (steppe pontique).",
+      "armies": [
+        {
+          "side": "Djaghataï et Ögödei",
+          "faction": "mongols",
+          "path": [
+            [
+              80.2,
+              44.2
+            ],
+            [
+              76.5,
+              43.0
+            ],
+            [
+              71.4,
+              42.5
+            ],
+            [
+              68.3,
+              42.85
+            ]
+          ],
+          "strength": 2,
+          "winner": true,
+          "id": "djaghatai-ogodei"
+        },
+        {
+          "side": "Khwarezm",
+          "faction": "khwarezmiens",
+          "path": [
+            [
+              59.15,
+              42.3
+            ],
+            [
+              63.0,
+              43.0
+            ],
+            [
+              65.8,
+              43.0
+            ],
+            [
+              68.3,
+              42.85
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Gengis Khan",
+          "role": "Fondateur de l'Empire mongol",
+          "faction": "mongols",
+          "archetype": "khan",
+          "quote": "« Je suis le maître du soleil levant, tu l'es du couchant : faisons la paix » (selon Juvayni, abrégé)",
+          "position": [
+            84.0,
+            47.5
+          ]
+        },
+        {
+          "name": "Muhammad II",
+          "role": "Shah du Khwarezm",
+          "faction": "khwarezmiens",
+          "archetype": "sultan",
+          "position": [
+            66.96,
+            39.65
+          ]
+        }
+      ]
+    },
+    {
+      "id": "samarcande-1220",
+      "year": 1220,
+      "title": "Boukhara et Samarcande",
+      "type": "bataille",
+      "location": [
+        66.96,
+        39.65
+      ],
+      "zoom": 5,
+      "summary": "Au printemps 1220, Gengis Khan prend Boukhara, puis Samarcande, les deux joyaux de l'Asie centrale : le shah du Khwarezm n'a plus d'armée.",
+      "details": "Pendant que ses fils assiègent Otrar, Gengis Khan fait ce que personne n'attend : il traverse le désert du **Kyzylkoum**, réputé infranchissable, et surgit en février 1220 devant **Boukhara**, la grande cité religieuse et savante de la Transoxiane. La ville se rend après trois jours, la citadelle tient douze jours de plus puis succombe. Gengis Khan monte en chaire dans la grande mosquée et proclame, selon l'historien persan **Juvayni**, qu'il est « le châtiment de Dieu ». La ville de bois brûle en grande partie.\n\nEn mars, il paraît devant **Samarcande**, la capitale commerciale de la région. La garnison, forte surtout de Turcs kankli qui n'aiment pas le shah, tente une sortie et est écrasée. Au bout de quelques jours, les notables ouvrent les portes ; la citadelle est enlevée, les soldats massacrés, les artisans emmenés en Mongolie. Les chiffres d'époque, délirants, parlent de centaines de milliers de morts.\n\n**Muhammad II** s'enfuit vers l'ouest, hanté par la trahison. Gengis Khan lance à ses trousses **Subötaï** et **Djebe** avec 20 000 hommes. Le shah, en fuite de ville en ville, mourra seul, malade, sur une île de la mer Caspienne, au début de 1221. Son empire est décapité.",
+      "consequences": [
+        "La Transoxiane (Ouzbékistan et Tadjikistan actuels) tombe aux mains des Mongols avec ses villes les plus riches.",
+        "L'armée du Khwarezm cesse d'exister : le shah en fuite abandonne ses sujets.",
+        "Les artisans de Samarcande et de Boukhara sont déportés en Mongolie, enrichissant les ateliers de l'empire.",
+        "Subötaï et Djebe partent en reconnaissance au-delà de l'Iran, ce qui conduira à la Kalka (1223)."
+      ],
+      "territory": "samarcande-1220",
+      "sources": [
+        {
+          "label": "Juvayni, Histoire du conquérant du monde (XIIIe siècle)"
+        },
+        {
+          "label": "Ibn al-Athir, La Perfection de l'Histoire (XIIIe siècle)"
+        },
+        {
+          "label": "Wikipédia : Siège de Samarcande (1220)",
+          "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_Samarcande_(1220)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire mongol",
+          "Sultanat du Khwarezm"
+        ],
+        "commanders": [
+          "Gengis Khan",
+          "Tolui",
+          "Muhammad II"
+        ],
+        "outcome": "Prise de Boukhara puis de Samarcande par les Mongols",
+        "forces": "Garnison de Samarcande de 40 000 à 110 000 hommes selon les sources, sans doute exagérée",
+        "losses": "Massacres importants ; artisans déportés"
+      },
+      "territoryNote": "Empire mongol de Gengis Khan : Mongolie, Mongolie-Intérieure, Transbaïkalie, Touva ; Hebei et nord du Shanxi (guerre de Mukhali contre les Jin) ; ex-Qara Khitaï (sud-est du Kazakhstan, Kirghizistan, Xinjiang du sud) ; Transoxiane conquise (Boukhara, Samarcande, Tachkent ; Ouzbékistan, Tadjikistan) ; vassaux : Xia occidentaux, Ouïghours de Qocho, Karlouks ; Goryeo (Corée) tributaire. Voisins : Khwarezm réduit au Khorasan, à l'Iran, à l'Afghanistan et au Khwarezm propre (Ourguentch), Jin au Henan et au Shaanxi, Song du Sud, califat abbasside, Géorgie.",
+      "armies": [
+        {
+          "side": "Gengis Khan",
+          "faction": "mongols",
+          "path": [
+            [
+              116.4,
+              39.9
+            ],
+            [
+              106.0,
+              46.5
+            ],
+            [
+              92.0,
+              47.5
+            ],
+            [
+              80.2,
+              44.2
+            ],
+            [
+              69.5,
+              44.3
+            ],
+            [
+              64.42,
+              39.77
+            ],
+            [
+              66.96,
+              39.65
+            ]
+          ],
+          "strength": 3,
+          "winner": true,
+          "id": "gengis"
+        },
+        {
+          "side": "Khwarezm",
+          "faction": "khwarezmiens",
+          "path": [
+            [
+              67.28,
+              37.22
+            ],
+            [
+              66.8,
+              39.05
+            ],
+            [
+              66.96,
+              39.65
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Gengis Khan",
+          "role": "Fondateur de l'Empire mongol",
+          "faction": "mongols",
+          "archetype": "khan",
+          "quote": "« Je suis le châtiment de Dieu : sans vos grands péchés, il ne m'aurait pas envoyé » (selon Juvayni)",
+          "position": [
+            64.42,
+            39.77
+          ]
+        },
+        {
+          "name": "Muhammad II",
+          "role": "Shah du Khwarezm, en fuite",
+          "faction": "khwarezmiens",
+          "archetype": "sultan",
+          "position": [
+            53.9,
+            36.9
+          ]
+        }
+      ]
+    },
+    {
+      "id": "indus-1221",
+      "year": 1221,
+      "title": "L'Indus : la fin du Khwarezm",
+      "type": "bataille",
+      "location": [
+        72.0,
+        33.9
+      ],
+      "zoom": 5,
+      "summary": "En novembre 1221, Gengis Khan rattrape le prince Jalal ad-Din sur les rives de l'Indus : le Khwarezm est détruit, mais Jalal échappe en traversant le fleuve à cheval.",
+      "details": "La campagne de 1221 est la plus cruelle. **Ourguentch**, capitale du Khwarezm, est prise après des combats de rue de plusieurs mois ; les Mongols détournent l'Amou-Daria pour inonder la cité. Le fils cadet de Gengis Khan, **Tolui**, ravage le Khorasan : Merv, Nichapour, Hérat, ces cités savantes aux bibliothèques fameuses, sont mises à sac ; les chroniqueurs musulmans parlent de centaines de milliers de morts, des chiffres sans doute très exagérés.\n\nSeul le prince **Jalal ad-Din**, fils du shah mort, tient tête. Il bat les Mongols à **Parwan** (Afghanistan), la seule vraie défaite de Gengis Khan dans cette guerre, puis ses alliés turcs se disputent le butin et le laissent seul. Gengis Khan le poursuit à marche forcée. Acculé en novembre 1221 contre l'**Indus**, dans l'actuel Pakistan, Jalal ad-Din est battu. Il lance son cheval, tout armé, du haut de la berge dans le fleuve. Gengis Khan, saluant un tel courage, aurait désigné le prince à ses fils comme un modèle.\n\nLe prince se réfugie en Inde, où le sultanat de Delhi refuse de l'accueillir. Gengis Khan, lui, s'attarde en Afghanistan jusqu'en 1222, puis reprend lentement le chemin de la Mongolie.",
+      "consequences": [
+        "Le Khorasan, le Khwarezm propre et l'Afghanistan septentrional sont conquis ; leurs villes sont rasées ou saignées.",
+        "La frontière mongole atteint l'Indus, aux portes de l'Inde.",
+        "Jalal ad-Din s'enfuit en Inde puis en Perse : il reviendra harceler les Mongols jusqu'en 1231.",
+        "La destruction des canaux d'irrigation du Khorasan et du Khwarezm provoque un déclin agricole durable."
+      ],
+      "territory": "indus-1221",
+      "sources": [
+        {
+          "label": "Juvayni, Histoire du conquérant du monde (XIIIe siècle)"
+        },
+        {
+          "label": "Rachid ad-Din, Histoire universelle (XIVe siècle)"
+        },
+        {
+          "label": "Wikipédia : Bataille de l'Indus (1221)",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_l%27Indus"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire mongol",
+          "Khwarezm (armée de Jalal ad-Din)"
+        ],
+        "commanders": [
+          "Gengis Khan",
+          "Jalal ad-Din"
+        ],
+        "outcome": "Victoire mongole ; Jalal ad-Din s'enfuit à travers l'Indus",
+        "forces": "Armée mongole nettement supérieure en nombre",
+        "losses": "Armée de Jalal ad-Din anéantie"
+      },
+      "territoryNote": "Empire mongol de Gengis Khan : Mongolie, Mongolie-Intérieure, Transbaïkalie, Touva ; Hebei et nord du Shanxi ; ex-Qara Khitaï (sud-est du Kazakhstan, Kirghizistan, Xinjiang du sud) ; Transoxiane (Ouzbékistan, Tadjikistan) ; Khwarezm propre (Ourguentch), Turkménistan, Khorasan (Merv, Nichapour, Hérat) et Afghanistan septentrional conquis ; vassaux : Xia occidentaux, Ouïghours de Qocho ; Goryeo tributaire. Voisins : Jalal ad-Din en fuite vers l'Inde, sultanat de Delhi (Pakistan, Inde du Nord), Iran occidental (atabeks), califat abbasside, Géorgie, Jin au Henan et au Shaanxi, Song du Sud.",
+      "armies": [
+        {
+          "side": "Gengis Khan",
+          "faction": "mongols",
+          "path": [
+            [
+              66.96,
+              39.65
+            ],
+            [
+              67.3,
+              37.2
+            ],
+            [
+              66.9,
+              36.75
+            ],
+            [
+              67.8,
+              34.8
+            ],
+            [
+              69.2,
+              34.5
+            ],
+            [
+              71.0,
+              34.1
+            ],
+            [
+              72.0,
+              33.9
+            ]
+          ],
+          "strength": 3,
+          "winner": true,
+          "id": "gengis"
+        },
+        {
+          "side": "Jalal ad-Din",
+          "faction": "khwarezmiens",
+          "path": [
+            [
+              68.4,
+              33.55
+            ],
+            [
+              70.0,
+              33.2
+            ],
+            [
+              71.2,
+              33.5
+            ],
+            [
+              72.0,
+              33.9
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Gengis Khan",
+          "role": "Fondateur de l'Empire mongol",
+          "faction": "mongols",
+          "archetype": "khan",
+          "quote": "« Heureux le père qui a un tel fils ! » (à propos de Jalal ad-Din, selon Juvayni)",
+          "position": [
+            71.0,
+            34.1
+          ]
+        },
+        {
+          "name": "Jalal ad-Din",
+          "role": "Dernier prince du Khwarezm",
+          "faction": "khwarezmiens",
+          "archetype": "sultan",
+          "position": [
+            72.1,
+            33.9
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kalka-1223",
+      "year": 1223,
+      "title": "La Kalka : les Mongols apparaissent en Europe",
+      "type": "bataille",
+      "location": [
+        37.6,
+        47.5
+      ],
+      "zoom": 5,
+      "summary": "Le 31 mai 1223, les cavaliers de Subötaï écrasent sur la rivière Kalka l'armée des princes russes : c'est la première rencontre de l'Europe avec les Mongols.",
+      "details": "Après avoir poursuivi le shah, **Subötaï** et **Djebe** ne rentrent pas : ils explorent le monde. En trois ans, avec 20 000 cavaliers, ils traversent l'Iran, défont les Géorgiens, franchissent le Caucase par Derbent, battent les Alains, les Lezghiens et les **Coumans**, un peuple turc nomade de la steppe pontique, la plaine qui borde la mer Noire.\n\nLes Coumans réclament l'aide de leurs voisins, les princes russes. Trois d'entre eux, dont **Mstislav de Kiev** et **Mstislav le Hardi** de Galicie, réunissent une grande armée mal coordonnée. Subötaï simule la retraite pendant neuf jours pour l'étirer, puis se retourne sur les rives de la **Kalka** (aujourd'hui en Ukraine, près de la mer d'Azov). Les Coumans fuient et piétinent les rangs russes. Mstislav de Kiev, assiégé trois jours dans son camp retranché, accepte de se rendre ; les Mongols l'étouffent, dit-on, sous des planches sur lesquelles ils banquettent.\n\nSatisfaits, Subötaï et Djebe se retirent vers l'est. Ils sont arrêtés par les Bulgares de la Volga, puis rejoignent Gengis Khan. La Russie, elle, n'a pas compris : elle reçoit un avertissement et l'oublie pendant quatorze ans.",
+      "consequences": [
+        "L'Azerbaïdjan et le nord de l'Iran sont dévastés ; la Géorgie, vaincue, ne se relèvera pas de sitôt.",
+        "Les Mongols découvrent la steppe pontique et les richesses de la Russie : un itinéraire à reprendre en 1236-1237.",
+        "Les princes russes, divisés, n'ont pas tiré de leçon : leur désunion sera fatale en 1237.",
+        "Subötaï et Djebe rapportent à Gengis Khan des renseignements précieux sur l'ouest."
+      ],
+      "territory": "kalka-1223",
+      "sources": [
+        {
+          "label": "Chronique de Novgorod (XIIIe siècle)"
+        },
+        {
+          "label": "Ibn al-Athir, La Perfection de l'Histoire (XIIIe siècle)"
+        },
+        {
+          "label": "Wikipédia : Bataille de la Kalka",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_la_Kalka"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire mongol",
+          "Coalition des princes russes et des Coumans"
+        ],
+        "commanders": [
+          "Subötaï",
+          "Djebe",
+          "Mstislav Romanovitch de Kiev",
+          "Mstislav le Hardi",
+          "Mstislav de Tchernigov"
+        ],
+        "outcome": "Victoire mongole écrasante",
+        "forces": "Environ 20 000 Mongols contre 40 000 à 80 000 Russes et Coumans selon les chroniques",
+        "losses": "Neuf princes russes tués selon la chronique de Novgorod ; la plupart de l'armée alliée anéantie"
+      },
+      "territoryNote": "Empire mongol de Gengis Khan : Mongolie, Mongolie-Intérieure, Transbaïkalie, Touva ; Hebei et nord du Shanxi ; Asie centrale (Kazakhstan sud-est, Kirghizistan, Xinjiang du sud, Ouzbékistan, Tadjikistan, Turkménistan) ; Khorasan et Afghanistan septentrional ; raids sans occupation durable sur l'Azerbaïdjan, le nord de l'Iran, la Géorgie et la steppe pontique ; vassaux : Xia occidentaux, Ouïghours, Goryeo. Voisins : principautés russes (Kiev, Galicie-Volhynie, Tchernigov, Vladimir-Souzdal), Coumans de la steppe pontique, Bulgarie de la Volga (Tatarstan), Géorgie, califat abbasside (Irak), Jin au Henan, Song du Sud.",
+      "armies": [
+        {
+          "side": "Subötaï et Djebe",
+          "faction": "mongols",
+          "path": [
+            [
+              46.3,
+              38.1
+            ],
+            [
+              44.8,
+              41.7
+            ],
+            [
+              48.3,
+              42.06
+            ],
+            [
+              47.0,
+              44.0
+            ],
+            [
+              42.0,
+              46.2
+            ],
+            [
+              37.6,
+              47.5
+            ]
+          ],
+          "strength": 2,
+          "winner": true,
+          "id": "subotai"
+        },
+        {
+          "side": "Russes et Coumans",
+          "faction": "rus",
+          "path": [
+            [
+              30.52,
+              50.45
+            ],
+            [
+              32.5,
+              49.0
+            ],
+            [
+              35.1,
+              47.85
+            ],
+            [
+              37.6,
+              47.5
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Subötaï",
+          "role": "Général de Gengis Khan",
+          "faction": "mongols",
+          "archetype": "general-mongol",
+          "quote": "« Qu'ils s'avancent : plus ils sont nombreux, plus la poursuite sera facile » (formule libre)",
+          "position": [
+            42.0,
+            46.2
+          ]
+        },
+        {
+          "name": "Mstislav de Kiev",
+          "role": "Grand-prince de Kiev",
+          "faction": "rus",
+          "archetype": "roi",
+          "position": [
+            30.52,
+            50.45
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gengis-1227",
+      "year": 1227,
+      "title": "Mort de Gengis Khan et fin du Xi Xia",
+      "type": "chute",
+      "location": [
+        106.23,
+        38.49
+      ],
+      "zoom": 5,
+      "summary": "En août 1227, Gengis Khan meurt pendant sa dernière campagne ; peu après, la capitale des Tangoutes tombe et leur royaume disparaît.",
+      "details": "Gengis Khan n'a jamais pardonné aux **Tangoutes** d'avoir refusé de lui fournir des soldats contre le Khwarezm. En 1226, à plus de soixante ans, il revient d'Asie centrale pour les punir. Les villes du Gansu tombent l'une après l'autre ; sur le Fleuve Jaune, la dernière grande armée tangoute est battue sur la glace. Au cours d'une chasse, le Khan chute de cheval et tombe malade.\n\nIl meurt en août 1227, près des monts Liupan, au moment où ses troupes encerclent **Zhongxing**. On cacha sa mort pour ne pas alerter l'ennemi. Le dernier empereur tangoute, **Li Xian**, se rend en septembre ; il est exécuté, la ville est livrée au massacre. De l'État des Xi Xia, de sa langue et de son écriture, il ne reste presque rien.\n\nLa dépouille de Gengis Khan est ramenée en Mongolie et enterrée dans un lieu tenu secret, probablement près du mont **Burkhan Khaldun**. Il laisse un empire qui va de la mer de Chine à la mer Caspienne. Selon ses volontés, il est partagé entre ses fils : **Djaghataï** reçoit l'Asie centrale, **Ögödei** l'est du Kazakhstan et la Dzoungarie, les descendants de **Djötchi** (mort avant lui) les steppes de l'ouest, et le cadet **Tolui**, gardien du foyer, la Mongolie. Le trône de Grand Khan revient à Ögödei, mais seulement après deux ans de régence de Tolui.",
+      "consequences": [
+        "Les Xia occidentaux sont annexés : le Ningxia, le Gansu et l'Ordos deviennent mongols.",
+        "L'empire est partagé en apanages : Djötchi (steppes occidentales), Djaghataï (Transoxiane, Xinjiang), Ögödei (Dzoungarie), Tolui (Mongolie).",
+        "Tolui gouverne en régent jusqu'au kurultaï de 1229.",
+        "Les Jin, privés de leur voisin tangoute, restent seuls face aux Mongols."
+      ],
+      "territory": "gengis-1227",
+      "sources": [
+        {
+          "label": "Histoire secrète des Mongols (XIIIe siècle)"
+        },
+        {
+          "label": "Jean-Paul Roux, Gengis Khan et l'Empire mongol"
+        },
+        {
+          "label": "Wikipédia : Gengis Khan",
+          "url": "https://fr.wikipedia.org/wiki/Gengis_Khan"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire mongol",
+          "Xia occidentaux (Tangoutes)"
+        ],
+        "commanders": [
+          "Gengis Khan (mort), puis Tolui",
+          "Li Xian"
+        ],
+        "outcome": "Destruction des Xia occidentaux ; mort de Gengis Khan pendant la campagne",
+        "forces": "Armée mongole nombreuse, rappelée d'Asie centrale",
+        "losses": "Massacre de la population de Zhongxing"
+      },
+      "territoryNote": "Empire mongol à la mort de Gengis Khan : Mongolie, Mongolie-Intérieure, Touva, Khakassie, Transbaïkalie ; Xia occidentaux annexés (Ningxia, Gansu, Ordos) ; nord de la Chine conquis (Hebei, nord du Shanxi, nord du Shandong) ; Xinjiang ; Asie centrale (Kazakhstan, Kirghizistan, Ouzbékistan, Tadjikistan, Turkménistan) ; Khorasan et Afghanistan septentrional ; vassaux : Ouïghours de Qocho, Goryeo tributaire. Apanages : Djötchi (steppes à l'ouest de l'Irtych, futur noyau de la Horde d'or), Djaghataï (Transoxiane, Xinjiang), Ögödei (Dzoungarie), Tolui (Mongolie). Voisins : Jin au Henan et au Shaanxi (cour à Kaifeng), Song du Sud, Jalal ad-Din (Iran), califat abbasside, Géorgie, principautés russes, Coumans, Bulgarie de la Volga.",
+      "armies": [
+        {
+          "side": "Gengis Khan",
+          "faction": "mongols",
+          "path": [
+            [
+              72.0,
+              33.9
+            ],
+            [
+              69.2,
+              34.5
+            ],
+            [
+              67.3,
+              37.2
+            ],
+            [
+              71.4,
+              42.5
+            ],
+            [
+              84.0,
+              47.5
+            ],
+            [
+              100.0,
+              46.0
+            ],
+            [
+              105.5,
+              41.5
+            ],
+            [
+              106.23,
+              38.49
+            ]
+          ],
+          "strength": 3,
+          "winner": true,
+          "id": "gengis"
+        },
+        {
+          "side": "Tangoutes",
+          "faction": "tangoutes",
+          "path": [
+            [
+              102.6,
+              37.9
+            ],
+            [
+              105.0,
+              38.0
+            ],
+            [
+              106.23,
+              38.49
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Gengis Khan",
+          "role": "Fondateur de l'Empire mongol (mort en 1227)",
+          "faction": "mongols",
+          "archetype": "khan",
+          "quote": "« Que ma mort reste secrète jusqu'à la chute de leur capitale » (formule libre)",
+          "position": [
+            105.9,
+            35.5
+          ]
+        },
+        {
+          "name": "Li Xian",
+          "role": "Dernier empereur des Xi Xia",
+          "faction": "tangoutes",
+          "archetype": "roi",
+          "position": [
+            106.23,
+            38.49
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ogodei-1229",
+      "year": 1229,
+      "title": "Ögödei et Karakorum",
+      "type": "fondation",
+      "location": [
+        102.84,
+        47.2
+      ],
+      "zoom": 5,
+      "summary": "Élu Grand Khan en 1229, Ögödei fait de Karakorum la capitale d'un empire qu'il organise avec l'aide de lettrés chinois et khitans.",
+      "details": "En septembre 1229, le kurultaï réunit les princes sur les bords de la Kerülen et élit **Ögödei**, troisième fils de Gengis Khan, conformément à la volonté du fondateur. Homme affable, généreux, grand buveur, il est plus un organisateur qu'un conquérant. Il poursuit pourtant la guerre sur tous les fronts : en Corée à partir de 1231, en Iran avec le général **Chormaqan**, et en Chine contre les Jin.\n\nSa grande œuvre est **Karakorum**, la « montagne noire », sur l'Orkhon, au cœur de la Mongolie. Ce n'est d'abord qu'un campement de Gengis Khan en 1220 ; Ögödei y fait élever des murailles et un palais en 1235, avec des artisans chinois et musulmans. La ville ne dépassera jamais quelques milliers d'habitants, mais elle devient le centre d'un empire de plus de dix millions de km2.\n\nÖgödei adopte les idées de **Yelü Chucai**, son chancelier khitan. Quand des conseillers proposent de transformer le nord de la Chine en pâturages après avoir massacré les paysans, Yelü Chucai réplique qu'un impôt régulier rapportera davantage. On recense les foyers, on installe un service de relais de poste, le **yam**, avec des courriers qui parcourent plus de 300 km par jour. L'empire commence à ressembler à un État.",
+      "consequences": [
+        "Karakorum devient la capitale de l'Empire mongol.",
+        "Le nord de la Chine est épargné par la destruction systématique : on y lève l'impôt et on recense la population.",
+        "Le réseau de postes du yam relie la Mongolie aux confins de l'empire.",
+        "Les conquêtes reprennent à grande échelle : Corée (1231), Iran occidental, bientôt Russie et Europe."
+      ],
+      "territory": "ogodei-1229",
+      "sources": [
+        {
+          "label": "Histoire des Yuan (Yuanshi, XIVe siècle)"
+        },
+        {
+          "label": "Guillaume de Rubrouck, Voyage dans l'Empire mongol (XIIIe siècle)"
+        },
+        {
+          "label": "Wikipédia : Ögedeï",
+          "url": "https://fr.wikipedia.org/wiki/%C3%96gede%C3%AF"
+        }
+      ],
+      "territoryNote": "Empire mongol du Grand Khan Ögödei (capitale Karakorum) : Mongolie, Mongolie-Intérieure, Touva, Khakassie, Transbaïkalie ; Ningxia, Gansu, Ordos ; nord de la Chine (Hebei, Shanxi, nord du Shandong) ; Xinjiang ; Asie centrale (Kazakhstan, Kirghizistan, Ouzbékistan, Tadjikistan, Turkménistan), Khorasan et Afghanistan septentrional ; Iran occidental et Azerbaïdjan en cours de conquête par Chormaqan ; vassaux : Ouïghours de Qocho. Voisins : Jin (Henan, Shaanxi), Song du Sud, Goryeo (Corée, attaquée dès 1231), califat abbasside, Géorgie, principautés russes, Coumans.",
+      "figures": [
+        {
+          "name": "Ögödei",
+          "role": "Deuxième Grand Khan, fondateur de Karakorum",
+          "faction": "mongols",
+          "archetype": "khan",
+          "quote": "« Mon père a conquis, je dois fonder » (formule libre)"
+        },
+        {
+          "name": "Yelü Chucai",
+          "role": "Chancelier khitan d'Ögödei",
+          "faction": "khitans",
+          "archetype": "lettre-mandarin",
+          "quote": "« On conquiert l'empire à cheval, mais on ne le gouverne pas à cheval » (selon l'Histoire des Yuan)"
+        }
+      ]
+    },
+    {
+      "id": "kaifeng-1234",
+      "year": 1234,
+      "title": "La chute de Kaifeng et la fin des Jin",
+      "type": "bataille",
+      "location": [
+        114.31,
+        34.8
+      ],
+      "zoom": 5,
+      "summary": "En 1233-1234, les Mongols, alliés aux Song, prennent Kaifeng puis Caizhou et achèvent la dynastie jurchen des Jin.",
+      "details": "Ögödei décide d'en finir avec les **Jin**, retranchés à **Kaifeng**, la plus grande ville du monde de son époque. En 1231, son frère **Tolui** traverse le territoire des Song pour prendre les Jin à revers ; en février 1232, la bataille de la montagne des Trois Pics écrase leur dernière grande armée. **Subötaï**, le vétéran de la Kalka, vient assiéger Kaifeng.\n\nLa ville se défend avec ce que la Chine a de plus moderne. Ses assiégés lancent des « bombes qui ébranlent le ciel », des engins de fer bourrés de poudre, et des lances à feu : l'un des premiers usages militaires de la **poudre à canon**. Faute de vivres, la ville capitule en 1233 après une épidémie qui fait, dit-on, des centaines de milliers de morts. L'empereur **Aizong** s'enfuit à **Caizhou**.\n\nLes Song, pensant récupérer le Henan, s'allient aux Mongols. Caizhou est prise en février 1234 ; Aizong se suicide pour ne pas tomber vivant aux mains de l'ennemi, après avoir transmis le trône à un général aussitôt tué. Les Song récupèrent Kaifeng et Luoyang pour quelques mois seulement : les Mongols les chassent. Les anciens alliés deviennent des ennemis, et une guerre de quarante-cinq ans commence.",
+      "consequences": [
+        "Les Jin disparaissent : le Henan, le Shaanxi, le Shandong et le reste de la Chine du Nord passent aux Mongols.",
+        "Les Song du Sud, voisins directs de l'empire mongol, entrent en guerre contre lui dès 1234-1235.",
+        "L'usage militaire de la poudre est connu des Mongols, qui l'adopteront.",
+        "Les Mongols administrent la Chine du Nord avec des fonctionnaires chinois, khitans et jurchens."
+      ],
+      "territory": "kaifeng-1234",
+      "sources": [
+        {
+          "label": "Histoire des Jin (Jinshi, XIVe siècle)"
+        },
+        {
+          "label": "Histoire secrète des Mongols (XIIIe siècle)"
+        },
+        {
+          "label": "Wikipédia : Siège de Kaifeng",
+          "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_Kaifeng"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire mongol et Song du Sud",
+          "Dynastie Jin"
+        ],
+        "commanders": [
+          "Subötaï",
+          "Tolui",
+          "Meng Gong",
+          "Wanyan Shouxu (Aizong)"
+        ],
+        "outcome": "Chute de Kaifeng (1233) puis de Caizhou (1234) ; fin des Jin",
+        "forces": "Mongols et Song contre une garnison épuisée par la famine",
+        "losses": "Épidémie et famine à Kaifeng ; chiffres des chroniques très élevés (jusqu'à plusieurs centaines de milliers de morts)"
+      },
+      "territoryNote": "Empire mongol du Grand Khan Ögödei : Mongolie, Mongolie-Intérieure, Touva, Khakassie, Transbaïkalie ; Chine du Nord conquise (Hebei, Shanxi, Shandong, Henan, Shaanxi, Liaoxi, Mandchourie) ; Ningxia, Gansu, Ordos ; Xinjiang ; Asie centrale ; Iran occidental, Azerbaïdjan et Arran sous Chormaqan ; Goryeo (Corée) tributaire, soumis après les invasions de 1231-1232 (cour réfugiée à Ganghwa) ; vassaux : Ouïghours de Qocho. Voisins : Song du Sud (Chine au sud du Huai : Sichuan, Hubei, Hunan, Jiangsu, Zhejiang, Fujian, Guangdong, Guangxi), Royaume de Dali (Yunnan), Tibet, califat abbasside, Géorgie, principautés russes, Coumans.",
+      "armies": [
+        {
+          "side": "Mongols (Subötaï)",
+          "faction": "mongols",
+          "path": [
+            [
+              108.94,
+              34.27
+            ],
+            [
+              110.3,
+              34.55
+            ],
+            [
+              112.45,
+              34.62
+            ],
+            [
+              114.31,
+              34.8
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Jin",
+          "faction": "jurchens",
+          "path": [
+            [
+              114.9,
+              33.0
+            ],
+            [
+              114.6,
+              33.9
+            ],
+            [
+              114.31,
+              34.8
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Aizong",
+          "role": "Dernier empereur des Jin",
+          "faction": "jurchens",
+          "archetype": "empereur-chinois",
+          "position": [
+            114.9,
+            33.0
+          ]
+        },
+        {
+          "name": "Subötaï",
+          "role": "Général d'Ögödei, vainqueur de Kaifeng",
+          "faction": "mongols",
+          "archetype": "general-mongol",
+          "quote": "« Qu'ils tirent leurs bombes : leurs murs, eux, ne tireront pas » (formule libre)"
+        }
+      ]
+    },
+    {
+      "id": "riazan-1237",
+      "year": 1237,
+      "title": "Riazan : la Russie envahie",
+      "type": "bataille",
+      "location": [
+        40.1,
+        54.4
+      ],
+      "zoom": 5,
+      "summary": "À l'hiver 1237, Batu et Subötaï détruisent Riazan, première des grandes villes russes : en trois ans, toute la Russie du nord et du centre passe sous le joug mongol.",
+      "details": "Au kurultaï de 1235, les Mongols décident d'attaquer l'Occident. Le chef nominal est **Batu**, petit-fils de Gengis Khan, entouré de nombreux princes, mais l'architecte est toujours **Subötaï**. En 1236, les Bulgares de la Volga, riches marchands de fourrures, sont écrasés. À l'automne 1237, 100 000 cavaliers, selon les chroniques, surgissent devant **Riazan**, une principauté russe, les terres des Rus', ces Slaves orientaux dont dépend Kiev.\n\nBatu exige le dixième des biens. Le prince **Iouri** répond que lorsqu'ils ne seront plus là, les Mongols pourront tout prendre. Sa sortie est écrasée, la ville assiégée six jours, puis prise le 21 décembre 1237 : les habitants sont massacrés, la cité rasée. Elle ne sera jamais reconstruite à cet endroit.\n\nLes Mongols avancent en plein hiver, quand les fleuves gelés servent de routes. Ils prennent Kolomna, Moscou (alors petit fort), puis **Vladimir**, capitale du grand-prince, en février 1238. Le grand-prince Iouri II est tué sur la rivière Sit. Seule Novgorod, protégée par les marécages dégelés, est épargnée ; la ville de Kozelsk résiste sept semaines, ce qui lui vaut le surnom de « ville du mal ».",
+      "consequences": [
+        "Riazan est détruite, puis Vladimir-Souzdal (région de Moscou et de Vladimir) tombe en 1238.",
+        "Les princes russes sont forcés de prêter allégeance et de payer tribut : c'est le début du « joug tatar ».",
+        "Les Bulgares de la Volga (Tatarstan actuel) sont annexés à l'empire.",
+        "Novgorod, épargnée, deviendra tributaire en 1257 sans avoir été conquise."
+      ],
+      "territory": "riazan-1237",
+      "sources": [
+        {
+          "label": "Récit de la ruine de Riazan (XIVe siècle)"
+        },
+        {
+          "label": "Chronique de Novgorod (XIIIe siècle)"
+        },
+        {
+          "label": "Wikipédia : Invasion mongole des principautés russes",
+          "url": "https://fr.wikipedia.org/wiki/Invasion_mongole_des_principaut%C3%A9s_russes"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire mongol (armée de Batu)",
+          "Principauté de Riazan"
+        ],
+        "commanders": [
+          "Batu",
+          "Subötaï",
+          "Iouri Igorevitch de Riazan"
+        ],
+        "outcome": "Riazan prise et rasée le 21 décembre 1237",
+        "forces": "Environ 100 000 Mongols selon les chroniques russes, sans doute moins (30 000 à 50 000 selon les historiens)",
+        "losses": "La population est massacrée ; la ville est détruite"
+      },
+      "territoryNote": "Empire mongol du Grand Khan Ögödei : Mongolie, Chine du Nord (Hebei, Shanxi, Shandong, Henan, Shaanxi), Mandchourie, Xinjiang, Asie centrale, Iran occidental et Azerbaïdjan ; Géorgie en voie de soumission ; Goryeo tributaire ; ulus de Djötchi (Batu) : steppe pontique et caspienne conquise, Bulgarie de la Volga annexée (Tatarstan, Bachkirie, Mordovie), Kazakhstan occidental ; Riazan détruite. Voisins : principautés russes indépendantes (Vladimir-Souzdal, Novgorod, Kiev, Tchernigov, Smolensk, Galicie-Volhynie), Coumans en fuite, Hongrie, Pologne, Lituanie, Song du Sud.",
+      "armies": [
+        {
+          "side": "Mongols (Batu et Subötaï)",
+          "faction": "mongols",
+          "path": [
+            [
+              37.6,
+              47.5
+            ],
+            [
+              46.0,
+              49.5
+            ],
+            [
+              50.0,
+              55.0
+            ],
+            [
+              44.0,
+              54.4
+            ],
+            [
+              40.1,
+              54.4
+            ]
+          ],
+          "strength": 3,
+          "winner": true,
+          "id": "subotai"
+        },
+        {
+          "side": "Riazan",
+          "faction": "rus",
+          "path": [
+            [
+              40.9,
+              54.0
+            ],
+            [
+              40.1,
+              54.4
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Batu",
+          "role": "Chef de la campagne d'Europe, petit-fils de Gengis Khan",
+          "faction": "mongols",
+          "archetype": "khan",
+          "position": [
+            44.0,
+            54.4
+          ]
+        },
+        {
+          "name": "Iouri Igorevitch",
+          "role": "Prince de Riazan",
+          "faction": "rus",
+          "archetype": "roi",
+          "quote": "« Quand nous ne serons plus là, alors tout sera à vous » (selon le Récit de la ruine de Riazan)",
+          "position": [
+            40.1,
+            54.4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kiev-1240",
+      "year": 1240,
+      "title": "Kiev : la mère des villes russes",
+      "type": "bataille",
+      "location": [
+        30.52,
+        50.45
+      ],
+      "zoom": 5,
+      "summary": "Le 6 décembre 1240, la ville de Kiev tombe après un siège acharné : la Russie, de Moscou à l'Ukraine, est désormais sous domination mongole.",
+      "details": "Après l'hiver 1237-1238, les Mongols laissent la Russie du nord et se tournent vers la steppe, où ils soumettent la Crimée (Soudak, 1239) et poursuivent les Coumans, dont le khan **Köten** s'enfuit en Hongrie. Ils prennent Pereïaslav puis Tchernigov, aujourd'hui en Ukraine, avant de se présenter en 1240 devant **Kiev**.\n\nC'est alors la plus grande ville des Rus' : cathédrale Sainte-Sophie, monastères, porte d'Or, des dizaines de milliers d'habitants. Son prince **Mikhaïl** a pris la fuite ; le prince de Galicie, **Danylo**, a quitté la ville ; c'est un voïvode, un chef de guerre, **Dmytro**, qui la défend. Batu fait donner ses machines de siège, qui ouvrent une brèche près de la porte des Polonais. Les défenseurs se replient autour de l'église de la Dîme, qui s'effondre sous le poids de la foule.\n\nLa ville est mise à sac le 6 décembre 1240. Batu épargne Dmytro, blessé, par respect pour son courage. Six ans plus tard, le moine franciscain **Jean de Plan Carpin** traversera les ruines : « Une quantité innombrable de crânes et d'ossements gisait par terre », notera-t-il. Kiev ne se relèvera que lentement.",
+      "consequences": [
+        "La Russie de Kiev, de Vladimir et de Riazan est soumise : les princes doivent obtenir du khan un « iarlyk » (charte) pour régner.",
+        "Le centre de gravité russe se déplace vers le nord, vers Moscou et Novgorod, loin de la steppe.",
+        "Les Coumans fuient vers la Hongrie, offrant à Batu le prétexte pour l'attaquer.",
+        "Le bas Volga devient le centre de l'ulus de Batu, futur khanat de la Horde d'or."
+      ],
+      "territory": "kiev-1240",
+      "sources": [
+        {
+          "label": "Chronique de Galicie-Volhynie (XIIIe siècle)"
+        },
+        {
+          "label": "Jean de Plan Carpin, Histoire des Mongols (XIIIe siècle)"
+        },
+        {
+          "label": "Wikipédia : Siège de Kiev (1240)",
+          "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_Kiev_(1240)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire mongol (armée de Batu)",
+          "Principauté de Kiev"
+        ],
+        "commanders": [
+          "Batu",
+          "Subötaï",
+          "Dmytro, voïvode de Kiev"
+        ],
+        "outcome": "Kiev prise et pillée le 6 décembre 1240",
+        "forces": "Armée mongole nombreuse, équipée de machines de siège ; garnison réduite",
+        "losses": "Population largement massacrée ; la cathédrale de la Dîme s'effondre"
+      },
+      "territoryNote": "Empire mongol du Grand Khan Ögödei : Mongolie, Chine du Nord, Mandchourie, Xinjiang, Asie centrale, Iran occidental, Azerbaïdjan ; Géorgie vassale ; Goryeo tributaire ; ulus de Djötchi (Batu) : steppe pontique et caspienne, Crimée, Volga, Kazakhstan occidental ; Russie conquise : Riazan, Vladimir-Souzdal (Moscou, Vladimir, Souzdal), Pereïaslav, Tchernigov, Kiev (Ukraine centrale) et ses environs. Voisins : Novgorod (indépendante), Smolensk, Galicie-Volhynie (en sursis), Hongrie, Pologne, Lituanie, Chevaliers teutoniques, Empire latin de Constantinople, Nicée, Bulgarie, Song du Sud.",
+      "armies": [
+        {
+          "side": "Mongols (Batu et Subötaï)",
+          "faction": "mongols",
+          "path": [
+            [
+              40.1,
+              54.4
+            ],
+            [
+              40.4,
+              56.13
+            ],
+            [
+              35.8,
+              54.0
+            ],
+            [
+              31.3,
+              51.5
+            ],
+            [
+              30.52,
+              50.45
+            ]
+          ],
+          "strength": 3,
+          "winner": true,
+          "id": "subotai"
+        },
+        {
+          "side": "Kiev",
+          "faction": "rus",
+          "path": [
+            [
+              30.0,
+              50.0
+            ],
+            [
+              30.52,
+              50.45
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Batu",
+          "role": "Chef de la campagne d'Europe",
+          "faction": "mongols",
+          "archetype": "khan",
+          "quote": "« Ne le tuez pas : il a défendu sa ville avec courage » (à propos de Dmytro, d'après la chronique)",
+          "position": [
+            30.8,
+            50.45
+          ]
+        },
+        {
+          "name": "Dmytro",
+          "role": "Voïvode, défenseur de Kiev",
+          "faction": "rus",
+          "archetype": "general",
+          "position": [
+            30.52,
+            50.45
+          ]
+        }
+      ]
+    },
+    {
+      "id": "legnica-mohi-1241",
+      "year": 1241,
+      "title": "Legnica et Mohi : l'Europe tremble",
+      "type": "bataille",
+      "location": [
+        18.6,
+        49.6
+      ],
+      "zoom": 4.6,
+      "summary": "En avril 1241, les Mongols battent coup sur coup les Polonais à Legnica, puis les Hongrois à Mohi : l'Europe centrale est à leur merci.",
+      "details": "Au printemps 1241, Batu divise son armée. Au nord, **Baïdar** et **Orda** ravagent la Petite-Pologne, brûlent Cracovie et se dirigent vers la Silésie. Le duc **Henri II le Pieux** rassemble des chevaliers polonais, silésiens et allemands, avec des Templiers et des chevaliers Teutoniques, mais il ne peut attendre l'armée du roi de Bohême. Le 9 avril, devant **Legnica**, les Mongols simulent la fuite, rompent les rangs des chevaliers, et un écran de fumée désoriente les lourds cavaliers. Henri II est tué.\n\nAu sud, Batu et **Subötaï** franchissent les Carpates par le col de Verecke. Le roi **Béla IV** de Hongrie, qui a accueilli les Coumans fugitifs, rassemble son armée au camp de **Mohi**, au bord de la Sajó. Dans la nuit du 10 au 11 avril, Subötaï fait traverser le fleuve par un pont de fortune et par un gué, et attaque le camp encerclé par un cercle de chariots. Les Mongols ménagent une brèche : les Hongrois fuient dans les marais, où ils sont massacrés.\n\nLa Hongrie, selon les estimations, perd entre le quart et la moitié de sa population. Les chroniqueurs d'Europe parlent de « Tartares » venus de l'enfer (le Tartare). L'empereur Frédéric II et le pape Grégoire IX s'inquiètent, mais personne n'a de moyen d'arrêter ces cavaliers.",
+      "consequences": [
+        "La Hongrie orientale et la plaine du Danube sont occupées ; la Transylvanie, la Moldavie et la Valachie sont ravagées.",
+        "La Pologne méridionale et la Silésie sont dévastées sans occupation durable.",
+        "Béla IV s'enfuit en Dalmatie ; son royaume perd une large part de sa population.",
+        "L'Europe latine découvre la menace mongole et envoie bientôt des ambassadeurs (Plan Carpin, 1245)."
+      ],
+      "territory": "legnica-mohi-1241",
+      "sources": [
+        {
+          "label": "Roger de Torre Maggiore, Carmen miserabile (XIIIe siècle)"
+        },
+        {
+          "label": "Matthieu Paris, Chronica majora (XIIIe siècle)"
+        },
+        {
+          "label": "Wikipédia : Bataille de Legnica",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Legnica"
+        },
+        {
+          "label": "Wikipédia : Bataille de Mohi",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Mohi"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire mongol",
+          "Royaume de Hongrie ; Silésie, Pologne et Ordres militaires"
+        ],
+        "commanders": [
+          "Batu",
+          "Subötaï",
+          "Baïdar",
+          "Orda",
+          "Kadan",
+          "Béla IV",
+          "Henri II le Pieux"
+        ],
+        "outcome": "Deux victoires mongoles écrasantes (Legnica, 9 avril ; Mohi, 11 avril 1241)",
+        "forces": "Environ 20 000 Mongols à Mohi contre 15 000 à 60 000 Hongrois selon les estimations ; 8 000 à 10 000 hommes de chaque côté à Legnica",
+        "losses": "Henri II tué à Legnica ; plusieurs milliers de chevaliers hongrois tués à Mohi, dont plusieurs évêques et seigneurs"
+      },
+      "territoryNote": "Empire mongol du Grand Khan Ögödei (qui meurt en décembre) : Mongolie, Chine du Nord, Mandchourie, Xinjiang, Asie centrale, Iran occidental et Azerbaïdjan ; Géorgie vassale ; Goryeo tributaire ; ulus de Djötchi (Batu) : steppe pontique, Crimée, Volga ; Russie conquise (Riazan, Vladimir-Souzdal, Kiev, Tchernigov, Pereïaslav) ; zones ravagées par la campagne d'Europe en 1241 : Galicie-Volhynie, Transylvanie, plaine hongroise jusqu'au Danube, Petite-Pologne et Silésie, sans occupation durable. Voisins : royaume de Hongrie, Pologne, Bohême, Saint Empire (Autriche), Ordre teutonique, Lituanie, Novgorod, Bulgarie, Empire latin, Nicée.",
+      "armies": [
+        {
+          "side": "Mongols (Baïdar)",
+          "faction": "mongols",
+          "path": [
+            [
+              24.3,
+              50.85
+            ],
+            [
+              21.75,
+              50.68
+            ],
+            [
+              19.94,
+              50.06
+            ],
+            [
+              17.93,
+              50.67
+            ],
+            [
+              16.2,
+              51.2
+            ]
+          ],
+          "strength": 2,
+          "winner": true,
+          "id": "baidar"
+        },
+        {
+          "side": "Silésie et Pologne (Henri II)",
+          "faction": "chevaliers-europeens",
+          "path": [
+            [
+              17.03,
+              51.1
+            ],
+            [
+              16.2,
+              51.2
+            ]
+          ],
+          "strength": 2
+        },
+        {
+          "side": "Mongols (Subötaï)",
+          "faction": "mongols",
+          "path": [
+            [
+              30.52,
+              50.45
+            ],
+            [
+              24.7,
+              49.0
+            ],
+            [
+              23.0,
+              48.8
+            ],
+            [
+              21.0,
+              47.97
+            ]
+          ],
+          "strength": 3,
+          "winner": true,
+          "id": "subotai"
+        },
+        {
+          "side": "Hongrie (Béla IV)",
+          "faction": "chevaliers-europeens",
+          "path": [
+            [
+              19.04,
+              47.5
+            ],
+            [
+              20.2,
+              47.9
+            ],
+            [
+              21.0,
+              47.97
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Henri II le Pieux",
+          "role": "Duc de Silésie, tué à Legnica",
+          "faction": "chevaliers-europeens",
+          "archetype": "roi",
+          "position": [
+            17.03,
+            51.1
+          ]
+        },
+        {
+          "name": "Béla IV",
+          "role": "Roi de Hongrie",
+          "faction": "chevaliers-europeens",
+          "archetype": "roi",
+          "position": [
+            19.04,
+            47.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "retrait-1242",
+      "year": 1242,
+      "title": "Mort d'Ögödei et retrait d'Europe",
+      "type": "politique",
+      "location": [
+        16.0,
+        45.8
+      ],
+      "zoom": 4.5,
+      "summary": "Début 1242, les armées de Batu quittent soudain la Hongrie : Ögödei est mort, et l'Europe centrale est sauvée.",
+      "details": "Après Mohi, les Mongols prennent Pest, traversent le Danube gelé en janvier 1242, s'emparent d'Esztergom et poursuivent le roi **Béla IV** jusqu'à l'Adriatique. Ils ravagent Zagreb, puis la Dalmatie. L'Autriche et l'Italie se préparent au pire.\n\nAu printemps, les Mongols se retirent en bon ordre. Ce n'est pas une défaite : le Grand Khan **Ögödei** est mort à Karakorum en décembre 1241, et les princes, Batu en tête, doivent rentrer pour le kurultaï qui élira son successeur. Les historiens ajoutent d'autres raisons : les pâturages de la plaine hongroise suffisent mal aux troupeaux de plusieurs dizaines de milliers de cavaliers, les châteaux de pierre se prennent difficilement, et une épidémie pourrait avoir frappé. Batu regagne la steppe de la basse Volga. Il y installe sa capitale, **Sarai**, et y règne sur le futur khanat de la Horde d'or.\n\nÀ Karakorum, la veuve d'Ögödei, **Töregene**, prend la régence. Elle écarte le chancelier Yelü Chucai, confie les finances à un fermier d'impôts musulman et prépare l'élection de son fils **Güyük**. L'unité de l'empire se fissure : Batu, qui déteste Güyük, refusera de venir à l'assemblée.",
+      "consequences": [
+        "Les Mongols se retirent de Hongrie et des Balkans, mais gardent la steppe pontique et la Russie.",
+        "Batu fonde Sarai sur la basse Volga : c'est le noyau de la Horde d'or.",
+        "La régence de Töregene (1241-1246) ouvre une période d'intrigues et de querelles entre princes.",
+        "L'Europe latine se sent épargnée par miracle et envoie des émissaires (concile de Lyon, 1245)."
+      ],
+      "territory": "retrait-1242",
+      "sources": [
+        {
+          "label": "Roger de Torre Maggiore, Carmen miserabile (XIIIe siècle)"
+        },
+        {
+          "label": "Rachid ad-Din, Histoire universelle (XIVe siècle)"
+        },
+        {
+          "label": "Wikipédia : Invasions mongoles de la Hongrie",
+          "url": "https://fr.wikipedia.org/wiki/Invasions_mongoles_de_la_Hongrie"
+        }
+      ],
+      "territoryNote": "Empire mongol, trône vacant (régence de Töregene) : Mongolie, Chine du Nord, Mandchourie, Xinjiang, Asie centrale, Iran occidental, Azerbaïdjan ; Géorgie vassale ; Goryeo tributaire ; ulus de Djötchi (Batu, futur khanat de la Horde d'or) : steppe pontique et caspienne, Crimée, Volga, Kazakhstan occidental, Bulgarie de la Volga ; principautés russes tributaires ou détruites (Vladimir-Souzdal, Riazan, Kiev, Tchernigov) ; Valachie et Moldavie, steppe des Coumans, contrôlées ; la Hongrie et la Pologne sont évacuées après les raids de 1241-1242. Voisins : royaume de Hongrie, Pologne, Bohême, Autriche, Novgorod, Lituanie, Bulgarie, Empire latin, Nicée, Song du Sud.",
+      "figures": [
+        {
+          "name": "Töregene",
+          "role": "Régente de l'empire (1241-1246)",
+          "faction": "mongols",
+          "archetype": "khatoun",
+          "position": [
+            102.84,
+            47.2
+          ]
+        },
+        {
+          "name": "Batu",
+          "role": "Chef de l'ulus de Djötchi, futur khan de la Horde d'or",
+          "faction": "mongols",
+          "archetype": "khan",
+          "quote": "« La route de retour est longue : mieux vaut revenir et choisir le nouveau maître » (formule libre)"
+        }
+      ]
+    },
+    {
+      "id": "kosedag-1243",
+      "year": 1243,
+      "title": "Köse Dağ : les Seldjoukides de Roum vassaux",
+      "type": "bataille",
+      "location": [
+        38.0,
+        40.1
+      ],
+      "zoom": 5,
+      "summary": "Le 26 juin 1243, l'armée du sultan seldjoukide de Roum est écrasée à Köse Dağ : l'Anatolie devient vassale des Mongols.",
+      "details": "Dans les années 1240, les Mongols d'Iran, commandés par **Baïdju**, tournent leurs regards vers l'Anatolie. Les **Seldjoukides de Roum** sont une dynastie turque musulmane, héritière des vainqueurs de Byzance à Manzikert. Leur capitale, **Konya**, rayonne depuis des décennies, avec ses caravansérails, ses poètes comme Rûmî et ses mosquées.\n\nLe sultan **Kay Khusraw II** rassemble une armée composite : Turcs, mercenaires francs et géorgiens, Arméniens, Grecs. Il tient les cols de **Köse Dağ**, au nord-est de Sivas. Baïdju, venu de la plaine de Mugan (Azerbaïdjan), prend Erzurum en 1242, puis attaque. Les Mongols simulent la retraite, l'armée turque se disperse à leur poursuite et est taillée en pièces. Le sultan s'enfuit sans avoir pu rallier ses troupes.\n\nLes Mongols pillent Sivas et Kayseri, mais n'occupent pas durablement le pays. Le vizir **Muhadhdhib al-Din** négocie un tribut annuel : les Seldjoukides de Roum deviennent vassaux, puis, au fil des ans, des fantoches. Le royaume arménien de Cilicie et l'empire grec de Trébizonde se soumettent à leur tour. Cette soumission est un tournant : en dominant l'Anatolie, les Mongols touchent la mer Noire et la Méditerranée.",
+      "consequences": [
+        "L'Anatolie centrale et orientale (Seldjoukides de Roum, Erzurum, Sivas) tombe sous tutelle mongole.",
+        "L'empire de Trébizonde et la Petite-Arménie (Cilicie) deviennent tributaires.",
+        "La dynastie seldjoukide, affaiblie, perd son pouvoir réel ; des émirats turcs (beyliks) commencent à émerger.",
+        "La Géorgie, déjà soumise, reste sous contrôle."
+      ],
+      "territory": "kosedag-1243",
+      "sources": [
+        {
+          "label": "Ibn Bibi, Chronique seldjoukide (XIIIe siècle)"
+        },
+        {
+          "label": "Rachid ad-Din, Histoire universelle (XIVe siècle)"
+        },
+        {
+          "label": "Wikipédia : Bataille de Köse Dağ",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_K%C3%B6se_Da%C4%9F"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire mongol",
+          "Sultanat seldjoukide de Roum et alliés"
+        ],
+        "commanders": [
+          "Baïdju",
+          "Kay Khusraw II"
+        ],
+        "outcome": "Victoire mongole décisive ; le sultanat devient tributaire",
+        "forces": "Environ 30 000 Mongols contre 80 000 à 100 000 Turcs et alliés selon les chroniques, sans doute exagérés",
+        "losses": "L'armée seldjoukide est anéantie"
+      },
+      "territoryNote": "Empire mongol, trône vacant (régence de Töregene) : Mongolie, Chine du Nord, Mandchourie, Xinjiang, Asie centrale, Iran, Azerbaïdjan, Arran, Anatolie orientale (Erzurum) ; ulus de Djötchi (Batu) : steppe pontique et caspienne, Crimée, Volga, Kazakhstan occidental ; Rus' tributaires ; vassaux : Seldjoukides de Roum (Anatolie centrale : Konya, Kayseri, Sivas), empire de Trébizonde, royaume de Géorgie, Petite-Arménie (Cilicie, dès 1244), Mossoul ; Goryeo tributaire. Voisins : empire de Nicée (Byzantins), Ayyoubides de Syrie, califat abbasside (Irak), Égypte, Bulgarie, Hongrie, Song du Sud.",
+      "armies": [
+        {
+          "side": "Mongols (Baïdju)",
+          "faction": "mongols",
+          "path": [
+            [
+              48.0,
+              39.3
+            ],
+            [
+              44.5,
+              39.9
+            ],
+            [
+              41.27,
+              39.9
+            ],
+            [
+              39.5,
+              39.75
+            ],
+            [
+              38.0,
+              40.1
+            ]
+          ],
+          "strength": 2,
+          "winner": true,
+          "id": "baiju"
+        },
+        {
+          "side": "Seldjoukides de Roum",
+          "faction": "turcs-seldjoukides",
+          "path": [
+            [
+              32.5,
+              37.87
+            ],
+            [
+              35.5,
+              38.7
+            ],
+            [
+              37.02,
+              39.75
+            ],
+            [
+              38.0,
+              40.1
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Kay Khusraw II",
+          "role": "Sultan seldjoukide de Roum",
+          "faction": "turcs-seldjoukides",
+          "archetype": "sultan",
+          "position": [
+            37.02,
+            39.75
+          ]
+        },
+        {
+          "name": "Baïdju",
+          "role": "Général mongol d'Iran",
+          "faction": "mongols",
+          "archetype": "general-mongol",
+          "position": [
+            41.27,
+            39.9
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guyuk-1246",
+      "year": 1246,
+      "title": "Plan Carpin et Güyük",
+      "type": "politique",
+      "location": [
+        102.2,
+        47.3
+      ],
+      "zoom": 5,
+      "summary": "En 1246, le moine franciscain Jean de Plan Carpin assiste à l'intronisation de Güyük : la lettre du Grand Khan au pape exige la soumission de l'Occident.",
+      "details": "En 1246, **Güyük**, fils d'Ögödei, est enfin élu Grand Khan, au terme de cinq ans de régence de sa mère **Töregene**. Il est intronisé à la **Shira Ordu**, le « camp jaune », non loin de Karakorum. Autour de lui se pressent des milliers d'envoyés : un prince russe, **Iaroslav II de Vladimir**, qui y meurt peut-être empoisonné, un prince géorgien, le sultan seldjoukide, un envoyé du calife de Bagdad.\n\nParmi eux se trouve **Jean de Plan Carpin**, un moine franciscain, c'est-à-dire un religieux mendiant, envoyé par le pape **Innocent IV** après le concile de Lyon (1245) pour comprendre ce peuple venu de nulle part et demander qu'il cesse de massacrer les chrétiens. Après quinze mois de voyage par Kiev et la Volga, Plan Carpin est reçu.\n\nLa réponse de Güyük, rédigée en persan, est brutale. Il demande au pape et aux rois d'Europe de venir lui rendre hommage en personne, car « par la puissance du Ciel éternel », les Mongols ont reçu mission de dominer le monde. Plan Carpin ramène la lettre et rédige son **Histoire des Mongols**, la première description européenne de ce peuple. Güyük meurt en 1248, sans doute en route pour affronter Batu, avec qui il était en conflit.",
+      "consequences": [
+        "Première ambassade européenne officielle auprès des Mongols : l'Occident découvre leur organisation et leurs ambitions.",
+        "La lettre de Güyük au pape (conservée aux archives du Vatican) affirme la prétention mongole à la domination universelle.",
+        "Le règne bref de Güyük (1246-1248) aggrave la rivalité entre la famille d'Ögödei et celle de Batu.",
+        "Les chrétiens nestoriens de l'entourage du Khan nourrissent en Europe l'espoir d'une alliance contre l'islam."
+      ],
+      "territory": "guyuk-1246",
+      "sources": [
+        {
+          "label": "Jean de Plan Carpin, Histoire des Mongols (XIIIe siècle)"
+        },
+        {
+          "label": "Lettre de Güyük à Innocent IV (1246), archives du Vatican"
+        },
+        {
+          "label": "Wikipédia : Jean de Plan Carpin",
+          "url": "https://fr.wikipedia.org/wiki/Jean_de_Plan_Carpin"
+        }
+      ],
+      "territoryNote": "Empire mongol du Grand Khan Güyük : Mongolie, Chine du Nord, Mandchourie, Xinjiang, Asie centrale, Iran, Azerbaïdjan, Arran, Anatolie orientale ; ulus de Djötchi (Batu), autonome : steppe pontique et caspienne, Crimée, Volga, Kazakhstan occidental, Bulgarie de la Volga ; principautés russes tributaires (Vladimir-Souzdal, Kiev, Tchernigov, Riazan, Galicie-Volhynie dès 1245) ; vassaux : Seldjoukides de Roum, Trébizonde, Géorgie, Petite-Arménie, Mossoul ; Goryeo (Corée) tributaire sous occupation partielle ; Tibet en voie de soumission. Voisins : Song du Sud, royaume de Dali (Yunnan), califat abbasside, Ayyoubides, Hongrie, Pologne, Novgorod, empire de Nicée.",
+      "figures": [
+        {
+          "name": "Jean de Plan Carpin",
+          "role": "Moine franciscain, envoyé du pape",
+          "faction": "croises-latins",
+          "archetype": "diplomate",
+          "position": [
+            102.84,
+            47.2
+          ]
+        },
+        {
+          "name": "Güyük",
+          "role": "Troisième Grand Khan",
+          "faction": "mongols",
+          "archetype": "khan",
+          "quote": "« Venez en personne, avec vos rois, nous rendre hommage » (d'après sa lettre au pape, formule libre)"
+        },
+        {
+          "name": "Innocent IV",
+          "role": "Pape, auteur de l'ambassade",
+          "faction": "croises-latins",
+          "archetype": "pape",
+          "position": [
+            4.832,
+            45.762
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mongke-1251",
+      "year": 1251,
+      "title": "Möngke, la lignée de Tolui au pouvoir",
+      "type": "politique",
+      "location": [
+        110.8,
+        48.6
+      ],
+      "zoom": 5,
+      "summary": "En 1251, Möngke, petit-fils de Gengis Khan, devient Grand Khan avec l'appui de Batu et de sa mère Sorghaghtani Beki : la lignée de Tolui prend le pouvoir.",
+      "details": "À la mort de Güyük, c'est une veuve habile, **Sorghaghtani Beki**, nièce d'un roi kereyit chrétien (nestorien) et mère de quatre futurs khans, qui joue la bonne carte. Elle s'allie à **Batu**, l'homme le plus puissant de l'ouest, pour faire élire son fils aîné **Möngke**. Le kurultaï se tient en 1251 sur la Kerülen. Les descendants d'Ögödei et de Djaghataï protestent ; Möngke les fait arrêter et exécuter, parfois noyer. Le pouvoir passe de la lignée d'Ögödei à celle de Tolui, définitivement.\n\nRigoureux, austère, ce nouveau Grand Khan réforme l'État : il rationalise l'impôt, fait recenser les populations et confie à son frère **Kubilaï** le gouvernement de la Chine du Nord, et à son autre frère **Houlagou** celui de l'Iran. Il lance une nouvelle vague de conquêtes : le royaume de Dali (Yunnan) en 1253-1254 et bientôt les Song.\n\nKarakorum est alors un lieu de rencontres. En 1254, un franciscain envoyé par le roi Louis IX, **Guillaume de Rubrouck**, y est reçu. Il y raconte une joute de religions en présence du Khan, où chrétiens, musulmans et bouddhistes plaident chacun sa cause, et note que la ville ne vaut pas le village de Saint-Denis. Il y rencontre aussi un orfèvre parisien, Guillaume Boucher, qui construit pour la cour un arbre d'argent distribuant boissons.",
+      "consequences": [
+        "La lignée de Tolui monopolise le pouvoir : Kubilaï, Houlagou, Ariq Böke seront tous khans.",
+        "Le Tibet, le Yunnan et la Corée sont durablement rattachés ou contraints dans l'orbite mongole.",
+        "Le recensement et l'impôt unifié renforcent l'État.",
+        "Rubrouck rapporte à Louis IX le refus du Khan de reconnaître un autre souverain que lui."
+      ],
+      "territory": "mongke-1251",
+      "sources": [
+        {
+          "label": "Guillaume de Rubrouck, Voyage dans l'Empire mongol (XIIIe siècle)"
+        },
+        {
+          "label": "Rachid ad-Din, Histoire universelle (XIVe siècle)"
+        },
+        {
+          "label": "Wikipédia : Möngke",
+          "url": "https://fr.wikipedia.org/wiki/M%C3%B6ngke"
+        }
+      ],
+      "territoryNote": "Empire mongol du Grand Khan Möngke : Mongolie, Chine du Nord (Hebei, Shanxi, Shandong, Henan, Shaanxi, Gansu, Ningxia), Mandchourie, Xinjiang, Asie centrale, Iran, Azerbaïdjan, Arran, Anatolie orientale ; Tibet vassal (dès 1247) ; ulus de Batu (Horde d'or naissante) : steppe pontique et caspienne, Crimée, Volga, Kazakhstan occidental, Rus' tributaires ; vassaux : Seldjoukides de Roum, Trébizonde, Géorgie, Petite-Arménie, Mossoul ; Goryeo (Corée) encore en guerre mais tributaire. Voisins : Song du Sud, royaume de Dali (Yunnan, conquis en 1253-1254), Dai Viet, califat abbasside, Ayyoubides, Hongrie, Pologne.",
+      "figures": [
+        {
+          "name": "Möngke",
+          "role": "Quatrième Grand Khan",
+          "faction": "mongols",
+          "archetype": "khan",
+          "quote": "« Au ciel un seul Dieu, sur terre un seul maître : Gengis Khan » (selon sa lettre à Louis IX, 1254)"
+        },
+        {
+          "name": "Sorghaghtani Beki",
+          "role": "Mère de Möngke, Kubilaï, Houlagou et Ariq Böke",
+          "faction": "mongols",
+          "archetype": "khatoun",
+          "position": [
+            110.8,
+            48.6
+          ]
+        },
+        {
+          "name": "Guillaume de Rubrouck",
+          "role": "Franciscain envoyé de Louis IX",
+          "faction": "croises-latins",
+          "archetype": "diplomate",
+          "quote": "« Sans le palais du khan, Karakorum ne vaut pas le bourg de Saint-Denis » (selon Rubrouck)",
+          "position": [
+            102.84,
+            47.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alamut-1256",
+      "year": 1256,
+      "title": "Alamut : la fin des Assassins",
+      "type": "bataille",
+      "location": [
+        50.58,
+        36.44
+      ],
+      "zoom": 5,
+      "summary": "À la fin de 1256, Houlagou, frère de Möngke, reçoit la reddition d'Alamut, forteresse des Ismaéliens nizarites, les « Assassins ».",
+      "details": "Depuis le XIe siècle, la secte des **Nizarites**, une branche de l'islam ismaélien, dirige depuis des forteresses de montagne en Iran et en Syrie un réseau de fidèles qui frappent les rois et vizirs à coups de poignard. L'Occident racontera qu'on les drogue au haschisch (« hashishin », d'où le mot « assassins »). Leur chef, l'**imam Rukn al-Din Khurshah**, règne depuis **Alamut**, le « nid d'aigle », une forteresse d'Alborz.\n\nEn 1253, Möngke envoie son frère **Houlagou** détruire ces redoutables ennemis. Houlagou est à la tête d'une armée immense (jusqu'à 100 000 hommes selon les sources), dotée de centaines d'ingénieurs chinois, de lance-flammes, d'arbalètes géantes. Il progresse lentement, forteresse par forteresse. Impressionné par la puissance mongole, Rukn al-Din se rend en novembre 1256 à Maymun-Diz, puis ordonne à ses fidèles de déposer les armes. Alamut capitule en décembre.\n\nL'historien persan **Juvayni**, qui accompagne les Mongols, visite la célèbre bibliothèque : il y sauve quelques ouvrages et brûle ce qu'il juge hérétique. Rukn al-Din, envoyé auprès de Möngke, est tué en route. Les Nizarites survivent en Syrie, mais leur puissance est brisée. Le savant **Nasir al-Din Tusi**, qui servait ces maîtres, passe au service de Houlagou et fondera l'observatoire de Maragha.",
+      "consequences": [
+        "Les forteresses nizarites d'Iran (Mazandaran, Rudbar, Qohistan) sont démantelées.",
+        "Houlagou dispose d'une base solide pour la suite : Bagdad.",
+        "Les savants persans, comme Tusi et Juvayni, entrent au service des Mongols.",
+        "Les Nizarites de Syrie subsistent un temps, jusqu'à leur soumission aux Mamelouks (1273)."
+      ],
+      "territory": "alamut-1256",
+      "sources": [
+        {
+          "label": "Juvayni, Histoire du conquérant du monde (XIIIe siècle)"
+        },
+        {
+          "label": "Rachid ad-Din, Histoire universelle (XIVe siècle)"
+        },
+        {
+          "label": "Wikipédia : Campagne mongole contre les Nizârites",
+          "url": "https://fr.wikipedia.org/wiki/Campagne_mongole_contre_les_Niz%C3%A2rites"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire mongol (armée de Houlagou)",
+          "Ismaéliens nizarites (« Assassins »)"
+        ],
+        "commanders": [
+          "Houlagou",
+          "Rukn al-Din Khurshah"
+        ],
+        "outcome": "Reddition d'Alamut et démantèlement des forteresses nizarites d'Iran",
+        "forces": "Armée mongole très supérieure, avec machines de siège chinoises",
+        "losses": "Massacres après la reddition ; bibliothèque en partie détruite"
+      },
+      "territoryNote": "Empire mongol du Grand Khan Möngke : Mongolie, Chine du Nord (Hebei, Shanxi, Shandong, Henan, Shaanxi, Gansu, Ningxia), Mandchourie, Yunnan (Dali, 1253-1254), Xinjiang, Asie centrale, Iran, Azerbaïdjan, Arran, Anatolie orientale ; Tibet vassal ; ulus de Batu : steppe pontique, Volga, Kazakhstan occidental, Rus' tributaires ; vassaux : Seldjoukides de Roum, Trébizonde, Géorgie, Petite-Arménie, Mossoul, Goryeo. Nizarites détruits en Iran (Mazandaran, Alborz). Voisins : Song du Sud, Dai Viet, califat abbasside (Irak), Ayyoubides de Syrie, Mamelouks d'Égypte, sultanat de Delhi.",
+      "armies": [
+        {
+          "side": "Mongols (Houlagou)",
+          "faction": "mongols",
+          "path": [
+            [
+              66.8,
+              39.05
+            ],
+            [
+              62.2,
+              37.65
+            ],
+            [
+              59.6,
+              36.3
+            ],
+            [
+              54.4,
+              36.4
+            ],
+            [
+              50.58,
+              36.44
+            ]
+          ],
+          "strength": 3,
+          "winner": true,
+          "id": "houlagou"
+        },
+        {
+          "side": "Ismaéliens nizarites",
+          "faction": "parthes-perses",
+          "path": [
+            [
+              50.75,
+              36.55
+            ],
+            [
+              50.58,
+              36.44
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Houlagou",
+          "role": "Frère de Möngke, conquérant de l'Iran",
+          "faction": "mongols",
+          "archetype": "khan",
+          "position": [
+            51.4,
+            35.7
+          ]
+        },
+        {
+          "name": "Rukn al-Din Khurshah",
+          "role": "Dernier imam nizarite d'Alamut",
+          "faction": "parthes-perses",
+          "archetype": "sultan",
+          "position": [
+            50.75,
+            36.55
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bagdad-1258",
+      "year": 1258,
+      "title": "La prise de Bagdad",
+      "type": "bataille",
+      "location": [
+        44.4,
+        33.3
+      ],
+      "zoom": 5,
+      "summary": "Le 10 février 1258, Bagdad capitule devant Houlagou : le calife abbasside est mis à mort et cinq siècles de califat s'achèvent.",
+      "details": "**Bagdad** est depuis 762 la capitale du califat abbasside, le « successeur du Prophète », chef spirituel de l'islam sunnite, mais son pouvoir réel est réduit à l'Irak. Le calife **al-Musta'sim**, indécis, refuse de se soumettre à l'ultimatum de **Houlagou** en 1257 et croit sa ville protégée par ses murs et ses canaux.\n\nÀ partir de janvier 1258, les Mongols encerclent la ville de trois côtés, avec des contingents géorgiens et arméniens. Leurs ingénieurs chinois montent des catapultes. L'armée du calife, tentant une sortie, est noyée quand les Mongols ouvrent les digues. Le siège dure douze jours ; la ville capitule le 10 février. Pendant plus d'une semaine, on pille, on tue, on brûle. Les estimations de morts vont de quelques dizaines de milliers à un million ; la légende dit que le Tigre en devint noir de l'encre des livres jetés à l'eau par les Mongols, qui auraient détruit la Maison de la Sagesse.\n\nLe calife est exécuté, enroulé dans un tapis et piétiné par des chevaux : les Mongols évitent de verser le sang d'un homme de haute naissance. Les chrétiens sont épargnés, grâce à la princesse **Doquz Khatun**, épouse nestorienne de Houlagou. Les Abbassides se maintiendront comme califes fantoches au Caire, sous la tutelle des Mamelouks.",
+      "consequences": [
+        "L'Irak (Mésopotamie) passe sous domination mongole et devient une province de l'Iran.",
+        "Le califat abbasside disparaît de Bagdad ; une branche se réfugie au Caire.",
+        "Bagdad, jadis première ville du monde, décline durablement ; le centre se déplace vers Tabriz.",
+        "Houlagou prépare l'invasion de la Syrie, qui s'ouvre en 1260."
+      ],
+      "territory": "bagdad-1258",
+      "sources": [
+        {
+          "label": "Rachid ad-Din, Histoire universelle (XIVe siècle)"
+        },
+        {
+          "label": "Ibn Kathir, Le Commencement et la Fin (XIVe siècle)"
+        },
+        {
+          "label": "Wikipédia : Bataille de Bagdad (1258)",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Bagdad_(1258)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire mongol (armée de Houlagou)",
+          "Califat abbasside"
+        ],
+        "commanders": [
+          "Houlagou",
+          "Kitbuqa",
+          "Baïdju",
+          "al-Musta'sim",
+          "Aybak Dawatdar"
+        ],
+        "outcome": "Bagdad prise et pillée ; fin du califat abbasside de Bagdad",
+        "forces": "Une centaine de milliers de Mongols et auxiliaires contre une armée abbasside réduite",
+        "losses": "De quelques dizaines de milliers à un million de morts selon les sources, sans doute très exagérés"
+      },
+      "territoryNote": "Empire mongol du Grand Khan Möngke : Mongolie, Chine du Nord, Mandchourie, Yunnan, Xinjiang, Asie centrale, Iran, Irak (Bagdad conquise), Azerbaïdjan, Arran, Anatolie orientale ; Tibet vassal ; ulus de Batu puis de Berké (Horde d'or naissante) : steppe pontique et caspienne, Crimée, Volga, Kazakhstan occidental, Rus' tributaires ; vassaux : Seldjoukides de Roum, Trébizonde, Géorgie, Petite-Arménie, Mossoul, Goryeo, Dai Viet (tribut dès 1258). Voisins : Song du Sud, Ayyoubides de Syrie (Alep, Damas), Mamelouks d'Égypte, sultanat de Delhi, Mongols de Houlagou en route vers la Syrie.",
+      "armies": [
+        {
+          "side": "Mongols (Houlagou)",
+          "faction": "mongols",
+          "path": [
+            [
+              50.58,
+              36.44
+            ],
+            [
+              48.5,
+              34.8
+            ],
+            [
+              47.1,
+              34.3
+            ],
+            [
+              45.4,
+              34.35
+            ],
+            [
+              44.4,
+              33.3
+            ]
+          ],
+          "strength": 3,
+          "winner": true,
+          "id": "houlagou"
+        },
+        {
+          "side": "Califat abbasside",
+          "faction": "arabes",
+          "path": [
+            [
+              43.5,
+              33.4
+            ],
+            [
+              44.4,
+              33.3
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Houlagou",
+          "role": "Frère de Möngke, conquérant de l'Iran et de l'Irak",
+          "faction": "mongols",
+          "archetype": "khan",
+          "position": [
+            44.9,
+            33.9
+          ]
+        },
+        {
+          "name": "al-Musta'sim",
+          "role": "Dernier calife abbasside de Bagdad",
+          "faction": "arabes",
+          "archetype": "calife",
+          "position": [
+            44.4,
+            33.3
+          ]
+        },
+        {
+          "name": "Doquz Khatun",
+          "role": "Épouse nestorienne de Houlagou",
+          "faction": "mongols",
+          "archetype": "khatoun",
+          "position": [
+            44.9,
+            33.9
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diaoyu-1259",
+      "year": 1259,
+      "title": "Diaoyu : la mort de Möngke",
+      "type": "bataille",
+      "location": [
+        106.3,
+        30.0
+      ],
+      "zoom": 5,
+      "summary": "En 1259, Möngke meurt devant la forteresse de Diaoyu, dans le Sichuan : l'invasion de la Chine des Song échoue et l'empire va se déchirer.",
+      "details": "Les **Song du Sud** résistent depuis un quart de siècle aux Mongols, adossés aux fleuves, aux montagnes et aux rizières. En 1258, Möngke décide de les attaquer en personne selon un plan en trois colonnes : lui-même par le Sichuan, son frère **Kubilaï** par le Hubei, et le général **Uriyangkhadai** depuis le Yunnan et le Dai Viet.\n\nAu printemps 1259, il assiège la forteresse de **Diaoyu**, perchée sur une falaise au confluent du Jialing, près de l'actuelle Chongqing. Le commandant **Wang Jian** tient bon pendant plus de cinq mois contre les assauts, les mines et les catapultes. L'été étouffant, la dysenterie, le choléra ou la peste déciment l'armée. Le 11 août, Möngke meurt, de maladie ou d'un projectile reçu au siège, selon les sources.\n\nLa nouvelle atteint les autres armées avec un décalage de plusieurs semaines. **Houlagou**, en Syrie, interrompt sa campagne pour rentrer. Kubilaï, qui vient d'encercler Wuchang sur le Yangzi, signe un armistice avec le Premier ministre Song et rentre en Chine du Nord. Diaoyu tient. La mort de Möngke prive l'empire de son dernier maître unanimement reconnu : deux de ses frères, Kubilaï et **Ariq Böke**, se disputeront bientôt le trône.",
+      "consequences": [
+        "Les Song gagnent un répit de dix ans en Sichuan et sur le Yangzi.",
+        "La Syrie est dégarnie : Houlagou laisse un petit corps d'armée, battu à Aïn Djalout en 1260.",
+        "L'empire se divise : Kubilaï et Ariq Böke se font chacun proclamer Grand Khan en 1260.",
+        "La Corée, épuisée, se soumet et son prince héritier va rendre hommage à Kubilaï (1259)."
+      ],
+      "territory": "diaoyu-1259",
+      "sources": [
+        {
+          "label": "Histoire des Song (Songshi, XIVe siècle)"
+        },
+        {
+          "label": "Histoire des Yuan (Yuanshi, XIVe siècle)"
+        },
+        {
+          "label": "Wikipédia : Forteresse de Diaoyu",
+          "url": "https://fr.wikipedia.org/wiki/Forteresse_de_Diaoyu"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire mongol",
+          "Song du Sud"
+        ],
+        "commanders": [
+          "Möngke (mort pendant le siège)",
+          "Wang Jian"
+        ],
+        "outcome": "Victoire de la défense Song ; levée du siège après la mort de Möngke",
+        "forces": "Armée mongole nombreuse ; garnison de Diaoyu et renforts Song",
+        "losses": "Perte du Grand Khan ; épidémie dans l'armée mongole"
+      },
+      "territoryNote": "Empire mongol du Grand Khan Möngke (mort en août) : Mongolie, Chine du Nord (Hebei, Shanxi, Shandong, Henan, Shaanxi, Gansu, Ningxia) et nord du Sichuan, Mandchourie, Yunnan, Xinjiang, Asie centrale, Iran, Irak, Azerbaïdjan, Arran, Anatolie orientale ; Tibet vassal ; ulus de Berké (Horde d'or naissante) : steppe pontique et caspienne, Crimée, Volga, Kazakhstan occidental, Rus' tributaires ; vassaux : Goryeo (Corée, soumise en 1259), Dai Viet (tribut), Seldjoukides de Roum, Trébizonde, Géorgie, Petite-Arménie. Voisins : Song du Sud (Chongqing, Hubei, Hunan, Jiangxi, Zhejiang, Jiangsu, Fujian, Guangdong, Guangxi, Guizhou), Mamelouks d'Égypte, Ayyoubides de Syrie, Champa, Japon.",
+      "armies": [
+        {
+          "side": "Mongols (Möngke)",
+          "faction": "mongols",
+          "path": [
+            [
+              107.03,
+              33.07
+            ],
+            [
+              105.84,
+              32.43
+            ],
+            [
+              105.97,
+              31.55
+            ],
+            [
+              106.3,
+              30.0
+            ]
+          ],
+          "strength": 3,
+          "id": "mongke"
+        },
+        {
+          "side": "Song (Wang Jian)",
+          "faction": "chinois",
+          "path": [
+            [
+              106.55,
+              29.56
+            ],
+            [
+              106.3,
+              30.0
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Möngke",
+          "role": "Quatrième Grand Khan, mort au siège",
+          "faction": "mongols",
+          "archetype": "khan",
+          "position": [
+            106.3,
+            30.0
+          ]
+        },
+        {
+          "name": "Wang Jian",
+          "role": "Commandant de Diaoyu",
+          "faction": "chinois",
+          "archetype": "general-chinois",
+          "position": [
+            106.3,
+            30.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aindjalout-1260",
+      "year": 1260,
+      "title": "Aïn Djalout : les Mongols vaincus",
+      "type": "bataille",
+      "location": [
+        35.38,
+        32.55
+      ],
+      "zoom": 5,
+      "summary": "Le 3 septembre 1260, les Mamelouks d'Égypte battent à Aïn Djalout, en Galilée, un corps d'armée mongol : c'est la première grande défaite des Mongols en bataille rangée.",
+      "details": "En janvier 1260, **Houlagou** prend Alep, massacre sa population, puis ses lieutenants entrent à Damas en mars. Pour la première fois, les armées chrétiennes d'Arménie et d'Antioche combattent aux côtés des Mongols. Le sultanat des **Mamelouks**, ces anciens esclaves-soldats turcs qui règnent sur l'Égypte depuis 1250, est le dernier grand État musulman du Proche-Orient.\n\nHoulagou envoie au sultan **Qutuz** un ultimatum menaçant. Qutuz fait exécuter les ambassadeurs. Entre-temps, la nouvelle de la mort de Möngke arrive : Houlagou, prétendant potentiel, repart vers l'Iran avec la majeure partie de l'armée et laisse en Syrie à peine 10 000 à 20 000 cavaliers sous le Naïman **Kitbuqa**. Qutuz et son bras droit **Baybars** traversent le Sinaï, obtiennent des Francs d'Acre la neutralité et attirent Kitbuqa dans une plaine de Galilée, près de la source d'**Aïn Djalout**, la « source de Goliath ». Les Mamelouks simulent la fuite, attirent les Mongols dans une embuscade, et Kitbuqa est tué.\n\nLa victoire sauve l'Égypte et l'islam du Proche-Orient. Pourtant, Baybars assassine Qutuz au retour, prend le pouvoir et s'illustre pendant dix-sept ans comme le grand ennemi des Mongols et des croisés. Les Mongols de l'Iran, devenus l'**Ilkhanat**, ne franchiront plus jamais l'Euphrate de façon durable.",
+      "consequences": [
+        "La Syrie (Alep, Damas) revient aux Mamelouks, qui tiennent désormais l'Égypte et la Syrie.",
+        "La frontière entre l'Ilkhanat de Houlagou et les Mamelouks se fixe sur l'Euphrate pour soixante ans.",
+        "Berké, khan de la Horde d'or converti à l'islam, s'allie aux Mamelouks contre Houlagou.",
+        "Baybars fonde la puissance mamelouke, qui détruira les États croisés de Terre sainte."
+      ],
+      "territory": "aindjalout-1260",
+      "sources": [
+        {
+          "label": "Al-Maqrizi, Le Livre des chemins pour connaître les rois (XVe siècle)"
+        },
+        {
+          "label": "Rachid ad-Din, Histoire universelle (XIVe siècle)"
+        },
+        {
+          "label": "Wikipédia : Bataille d'Aïn Djalout",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_d%27A%C3%AFn_Djalout"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Ilkhanat (corps mongol de Syrie)",
+          "Sultanat mamelouk d'Égypte"
+        ],
+        "commanders": [
+          "Kitbuqa",
+          "Qutuz",
+          "Baybars"
+        ],
+        "outcome": "Victoire mamelouke ; Kitbuqa tué ; la Syrie est évacuée par les Mongols",
+        "forces": "Environ 10 000 à 20 000 Mongols contre 12 000 à 20 000 Mamelouks selon les estimations",
+        "losses": "Détachement mongol anéanti ; pertes mameloukes limitées"
+      },
+      "territoryNote": "L'empire se fragmente en quatre khanats. Empire Yuan (Kubilaï, proclamé Grand Khan à Kaiping en 1260) : Chine du Nord (Hebei, Shanxi, Shandong, Henan, Shaanxi, Gansu, Ningxia), nord du Sichuan, Yunnan, Mandchourie, Mongolie-Intérieure, Tibet vassal, Goryeo (Corée) vassal ; la Mongolie (Karakorum) est tenue par son frère Ariq Böke jusqu'en 1264. Horde d'or (Berké) : steppe pontique, Volga, Kazakhstan occidental, Crimée, Bulgarie de la Volga, Caucase du Nord ; principautés russes vassales. Khanat de Djaghataï (Alghu) : Transoxiane (Ouzbékistan, Tadjikistan), Semiretchié (Kazakhstan sud-est, Kirghizistan), Xinjiang du sud. Ilkhanat (Houlagou) : Iran, Irak, Azerbaïdjan, Arran, Arménie, nord de l'Afghanistan occidental ; vassaux : Seldjoukides de Roum, Trébizonde, Géorgie, Petite-Arménie. Dzoungarie et Tarbagataï : apanage ögödeïde (futur khanat de Qaïdu). Voisins : Song du Sud, Mamelouks (Égypte, Syrie reconquise), sultanat de Delhi, Dai Viet, Japon, Hongrie, Byzance.",
+      "armies": [
+        {
+          "side": "Mongols (Kitbuqa)",
+          "faction": "mongols",
+          "path": [
+            [
+              36.29,
+              33.51
+            ],
+            [
+              35.9,
+              32.9
+            ],
+            [
+              35.38,
+              32.55
+            ]
+          ],
+          "strength": 1
+        },
+        {
+          "side": "Mamelouks (Qutuz et Baybars)",
+          "faction": "mamelouks",
+          "path": [
+            [
+              31.24,
+              30.04
+            ],
+            [
+              32.3,
+              30.9
+            ],
+            [
+              34.47,
+              31.5
+            ],
+            [
+              34.9,
+              32.4
+            ],
+            [
+              35.38,
+              32.55
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Qutuz",
+          "role": "Sultan mamelouk d'Égypte",
+          "faction": "mamelouks",
+          "archetype": "sultan",
+          "quote": "« Ô Islam ! » (cri de Qutuz à Aïn Djalout, selon Al-Maqrizi)",
+          "position": [
+            35.38,
+            32.55
+          ]
+        },
+        {
+          "name": "Kitbuqa",
+          "role": "Général mongol de Syrie",
+          "faction": "mongols",
+          "archetype": "general-mongol",
+          "position": [
+            36.29,
+            33.51
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eclatement-1262",
+      "year": 1262,
+      "title": "L'empire se déchire",
+      "type": "bataille",
+      "location": [
+        45.0,
+        43.7
+      ],
+      "zoom": 4,
+      "summary": "De 1260 à 1264, Kubilaï bat son frère Ariq Böke pour le trône ; en 1262, Berké, khan de la Horde d'or converti à l'islam, affronte Houlagou : les Mongols se font la guerre entre eux.",
+      "details": "À la mort de Möngke, deux assemblées proclament deux Grands Khans au printemps 1260 : **Kubilaï**, gouverneur de la Chine du Nord, à Kaiping, et son cadet **Ariq Böke** à Karakorum. Pendant quatre ans, les deux frères se font la guerre. Kubilaï, qui contrôle les greniers chinois, affame la Mongolie ; Ariq Böke, trahi par son allié **Alghu** du Djaghataï, se rend en 1264 et meurt peu après. Kubilaï l'emporte, mais son autorité sur les autres khanats devient purement nominale.\n\nÀ l'ouest, une autre guerre éclate. **Berké**, frère de Batu et khan de la Horde d'or, s'est converti à l'islam. Il reproche à **Houlagou** le sac de Bagdad et la mort du calife, et revendique les pâturages d'Azerbaïdjan. Il s'allie aux Mamelouks, qui lui envoient des ambassadeurs. Durant l'hiver 1262-1263, les armées s'affrontent sur la rivière **Terek**, dans le Caucase du Nord : les troupes de Berké l'emportent et Houlagou renonce à franchir le Caucase.\n\nLes Mongols qui s'unissaient pour conquérir le monde se battent désormais pour leurs pâturages. Les khanats se constituent comme États séparés : l'empire de Kubilaï (futur Yuan), la Horde d'or, le khanat de Djaghataï et l'Ilkhanat de Houlagou.",
+      "consequences": [
+        "Kubilaï reste seul Grand Khan, mais l'Asie centrale et l'Occident échappent à son autorité.",
+        "La Horde d'or et l'Ilkhanat entrent dans un conflit qui durera un siècle, centré sur le Caucase.",
+        "L'Ilkhanat, menacé au nord et au sud, cherchera une alliance avec les chrétiens d'Europe.",
+        "La Mongolie perd son rôle de centre : Kubilaï déplace sa capitale vers la Chine."
+      ],
+      "territory": "eclatement-1262",
+      "sources": [
+        {
+          "label": "Rachid ad-Din, Histoire universelle (XIVe siècle)"
+        },
+        {
+          "label": "Histoire des Yuan (Yuanshi, XIVe siècle)"
+        },
+        {
+          "label": "Wikipédia : Guerre civile toluid",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_civile_toluid"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Ilkhanat (Houlagou)",
+          "Horde d'or (Berké)"
+        ],
+        "commanders": [
+          "Houlagou",
+          "Abaqa",
+          "Berké",
+          "Nogaï"
+        ],
+        "outcome": "Victoire de la Horde d'Or sur le Terek ; Houlagou renonce à franchir le Caucase",
+        "forces": "Plusieurs dizaines de milliers de cavaliers de part et d'autre",
+        "losses": "Lourdes pertes de l'Ilkhanat"
+      },
+      "territoryNote": "Quatre khanats en guerre civile. Empire Yuan (Kubilaï, vainqueur d'Ariq Böke en 1264) : Chine du Nord (Hebei, Shanxi, Shandong, Henan, Shaanxi, Gansu, Ningxia), nord du Sichuan, Yunnan, Mandchourie, Mongolie-Intérieure, Mongolie (Karakorum reprise en 1264), Tibet vassal, Goryeo (Corée) vassal. Horde d'or (Berké) : steppe pontique, Volga, Kazakhstan occidental, Crimée, Caucase du Nord jusqu'au Terek ; principautés russes vassales ; Novgorod tributaire (1257). Khanat de Djaghataï (Alghu, allié de Kubilaï) : Transoxiane, Semiretchié (Kazakhstan sud-est, Kirghizistan), Xinjiang du sud. Ilkhanat (Houlagou) : Iran, Irak, Azerbaïdjan, Arran, Arménie ; vassaux : Seldjoukides de Roum, Trébizonde, Géorgie, Petite-Arménie ; frontière avec les Mamelouks sur l'Euphrate. Apanage ögödeïde de Qaïdu : Dzoungarie, Tarbagataï. Voisins : Song du Sud, Mamelouks, Delhi, Dai Viet.",
+      "armies": [
+        {
+          "side": "Ilkhanat (Houlagou)",
+          "faction": "mongols",
+          "path": [
+            [
+              44.4,
+              33.3
+            ],
+            [
+              46.3,
+              38.08
+            ],
+            [
+              48.3,
+              42.06
+            ],
+            [
+              45.0,
+              43.7
+            ]
+          ],
+          "strength": 3,
+          "id": "houlagou"
+        },
+        {
+          "side": "Horde d'or (Berké)",
+          "faction": "mongols",
+          "path": [
+            [
+              46.0,
+              48.8
+            ],
+            [
+              44.0,
+              45.5
+            ],
+            [
+              45.0,
+              43.7
+            ]
+          ],
+          "strength": 3,
+          "winner": true,
+          "id": "berke"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Kubilaï",
+          "role": "Grand Khan, vainqueur de la guerre civile",
+          "faction": "mongols",
+          "archetype": "khan",
+          "position": [
+            116.18,
+            42.36
+          ]
+        },
+        {
+          "name": "Ariq Böke",
+          "role": "Frère cadet de Kubilaï, rival",
+          "faction": "mongols",
+          "archetype": "khan",
+          "position": [
+            102.84,
+            47.2
+          ]
+        },
+        {
+          "name": "Berké",
+          "role": "Khan de la Horde d'or, premier khan musulman",
+          "faction": "mongols",
+          "archetype": "khan",
+          "quote": "« Houlagou a tué le calife : je lui ferai la guerre au nom de l'islam » (formule libre)",
+          "position": [
+            46.0,
+            48.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yuan-1271",
+      "year": 1271,
+      "title": "Kubilaï fonde la dynastie des Yuan",
+      "type": "fondation",
+      "location": [
+        116.4,
+        39.9
+      ],
+      "zoom": 4.5,
+      "summary": "En 1271, le Grand Khan Kubilaï donne à son empire le nom chinois de Yuan et en fait la capitale à Dadu (Pékin) : un Mongol devient empereur de Chine.",
+      "details": "**Kubilaï** gouverne depuis des années la Chine du Nord. Contrairement à ses prédécesseurs, il admire les Chinois : il s'entoure de conseillers chinois, dont **Liu Bingzhong**, adopte les rites impériaux, le papier-monnaie et un calendrier à la chinoise. En 1264, il installe sa cour à **Zhongdu**, l'ancienne capitale des Jin. À partir de 1267, un immense chantier fait surgir à côté une cité neuve, **Dadu** (« la Grande Capitale »), avec ses palais, ses murailles carrées, ses canaux, au futur emplacement de Pékin. Sa résidence d'été est **Shangdu** (Xanadu), au nord de la Grande Muraille.\n\nEn décembre 1271, il proclame la dynastie **Yuan** (« l'Origine »), tirée du *Livre des mutations*. Les Mongols sont au sommet, suivis des étrangers à leur service (Ouïghours, Persans, Arabes, Européens), puis des Chinois du Nord, puis de ceux du Sud : une hiérarchie qui frustre les lettrés.\n\nDans le même temps, les autres khanats ne lui obéissent plus. Au congrès de Talas en 1269, **Qaïdu**, petit-fils d'Ögödei, a fondé en Asie centrale un khanat rival. Cette année-là, trois voyageurs vénitiens, **Niccolò, Maffeo et Marco Polo**, se mettent en route ; Marco arrivera à Shangdu en 1275. Il restera 17 ans au service de Kubilaï.",
+      "consequences": [
+        "Dadu (Pékin) devient capitale ; la Chine entre dans l'orbite de la steppe pour un siècle.",
+        "Kubilaï poursuit la conquête de la Chine du Sud, centre de la richesse du monde.",
+        "Qaïdu, maître de la Dzoungarie, du Kazakhstan oriental et de l'Irtych, dirige un khanat hostile à Kubilaï (1269-1301).",
+        "La Route de la Soie, protégée par les Mongols, accueille marchands, missionnaires et voyageurs européens."
+      ],
+      "territory": "yuan-1271",
+      "sources": [
+        {
+          "label": "Histoire des Yuan (Yuanshi, XIVe siècle)"
+        },
+        {
+          "label": "Marco Polo, Le Devisement du monde (vers 1298)"
+        },
+        {
+          "label": "Wikipédia : Dynastie Yuan",
+          "url": "https://fr.wikipedia.org/wiki/Dynastie_Yuan"
+        }
+      ],
+      "territoryNote": "Quatre khanats et un rival. Empire Yuan (Kubilaï, capitale Dadu) : Mongolie, Mongolie-Intérieure, Mandchourie, Chine du Nord (Hebei, Shanxi, Shandong, Henan, Shaanxi, Gansu, Ningxia), Sichuan en grande partie, Yunnan, Tibet vassal, Goryeo (Corée) vassal. Horde d'or (Möngke Temür) : steppe pontique, Volga, Kazakhstan occidental, Crimée, Caucase du Nord ; principautés russes vassales ; Novgorod tributaire. Khanat de Djaghataï (Baraq puis sous influence de Qaïdu) : Transoxiane, Xinjiang du sud. Ilkhanat (Abaqa) : Iran, Irak, Azerbaïdjan, Arran, Arménie ; vassaux : Seldjoukides de Roum, Géorgie, Trébizonde, Petite-Arménie. Khanat d'Ögödei de Qaïdu (1269-1301) : Dzoungarie, Tarbagataï, Kazakhstan oriental, Irtych. Voisins : Song du Sud (Hubei, Hunan, Jiangxi, Zhejiang, Jiangsu, Fujian, Guangdong, Guangxi, Guizhou, Chongqing), Mamelouks, Delhi, Dai Viet, Champa, Japon.",
+      "figures": [
+        {
+          "name": "Kubilaï",
+          "role": "Grand Khan, fondateur de la dynastie Yuan",
+          "faction": "mongols",
+          "archetype": "khan",
+          "quote": "« Un empire se conquiert à cheval mais se gouverne avec des lettrés » (formule libre)"
+        },
+        {
+          "name": "Marco Polo",
+          "role": "Marchand vénitien, au service de Kubilaï",
+          "faction": "croises-latins",
+          "archetype": "diplomate",
+          "quote": "« Je n'ai pas dit la moitié de ce que j'ai vu » (attribué à Marco Polo, sur son lit de mort)",
+          "position": [
+            116.18,
+            42.36
+          ]
+        },
+        {
+          "name": "Qaïdu",
+          "role": "Petit-fils d'Ögödei, khan rival d'Asie centrale",
+          "faction": "mongols",
+          "archetype": "khan",
+          "position": [
+            80.2,
+            44.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xiangyang-1273",
+      "year": 1273,
+      "title": "Xiangyang : la porte du Sud s'ouvre",
+      "type": "bataille",
+      "location": [
+        112.13,
+        32.04
+      ],
+      "zoom": 5,
+      "summary": "Après cinq ans de siège, la forteresse de Xiangyang se rend aux Mongols en 1273 : la route du Yangzi, et donc de la Chine du Sud, est ouverte.",
+      "details": "**Xiangyang** et sa jumelle **Fancheng**, de part et d'autre de la rivière Han, verrouillent l'accès au Yangzi, le grand fleuve qui coupe la Chine en deux. Les Song du Sud y ont installé une garnison considérable, avec des réserves de grain et de sel. De 1268 à 1273, les Mongols de Kubilaï, avec des généraux chinois comme **Liu Zheng** et le chef turc **Aju**, assiègent les deux cités.\n\nLes Mongols, cavaliers des steppes, apprennent la guerre des fleuves. Kubilaï fait construire des milliers de navires, forme des marins chinois et ferme la rivière par des barrages. Les renforts song, forcés de remonter la Han, sont coulés. Pour briser les murs, il fait venir d'Iran deux ingénieurs musulmans, **Ismaïl** et **Ala al-Din**, constructeurs de catapultes à contrepoids bien plus puissantes que les anciennes : leurs projectiles de 75 kg fracassent les défenses de Fancheng en janvier 1273.\n\nPrivé d'espoir, le commandant **Lü Wenhuan**, qui avait tenu cinq ans, se rend en mars 1273. Il passe au service des Mongols et guide les Yuan sur le Yangzi. En 1274, le général **Bayan** lance l'offensive finale : Hangzhou, capitale des Song, capitulera en 1276.",
+      "consequences": [
+        "La vallée de la Han et le Hubei septentrional passent aux Yuan, qui contrôlent le Yangzi moyen.",
+        "L'armée mongole acquiert une flotte et des techniques de siège de pointe, d'origine chinoise et persane.",
+        "En 1276, Hangzhou se rend ; les Song n'ont plus qu'un empire en fuite.",
+        "L'événement montre que les Mongols peuvent vaincre une grande puissance sédentaire par la patience."
+      ],
+      "territory": "xiangyang-1273",
+      "sources": [
+        {
+          "label": "Histoire des Song (Songshi, XIVe siècle)"
+        },
+        {
+          "label": "Histoire des Yuan (Yuanshi, XIVe siècle)"
+        },
+        {
+          "label": "Wikipédia : Conquête mongole de l'empire des Song",
+          "url": "https://fr.wikipedia.org/wiki/Conqu%C3%AAte_mongole_de_l%27empire_des_Song"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Dynastie Yuan",
+          "Song du Sud"
+        ],
+        "commanders": [
+          "Aju",
+          "Liu Zheng",
+          "Ismaïl et Ala al-Din (ingénieurs)",
+          "Lü Wenhuan"
+        ],
+        "outcome": "Reddition de Xiangyang (mars 1273) après cinq ans de siège",
+        "forces": "Plusieurs dizaines de milliers d'hommes et de nombreux navires de part et d'autre",
+        "losses": "Lourdes pertes pour les Song ; flottille de secours détruite"
+      },
+      "territoryNote": "Quatre khanats et un rival. Empire Yuan (Kubilaï, capitale Dadu) : Mongolie, Mongolie-Intérieure, Mandchourie, Chine du Nord (Hebei, Shanxi, Shandong, Henan, Shaanxi, Gansu, Ningxia), Sichuan, Hubei septentrional (Xiangyang, après 1273), Yunnan, Tibet vassal, Goryeo (Corée) vassal (révolte des Sambyeolcho écrasée en 1273) ; Dai Viet tributaire. Horde d'or (Möngke Temür) : steppe pontique, Volga, Kazakhstan occidental, Crimée ; principautés russes vassales. Khanat de Djaghataï : Transoxiane, Xinjiang du sud. Ilkhanat (Abaqa) : Iran, Irak, Azerbaïdjan, Arménie ; vassaux : Seldjoukides de Roum, Géorgie, Petite-Arménie. Khanat d'Ögödei de Qaïdu : Dzoungarie, Kazakhstan oriental. Voisins : Song du Sud (au sud du Yangzi : Hunan, Jiangxi, Zhejiang, Jiangsu, Fujian, Guangdong, Guangxi, Guizhou, Chongqing), Mamelouks, Japon, Champa.",
+      "armies": [
+        {
+          "side": "Yuan (Aju et Liu Zheng)",
+          "faction": "mongols",
+          "path": [
+            [
+              114.31,
+              34.8
+            ],
+            [
+              112.6,
+              33.0
+            ],
+            [
+              112.13,
+              32.04
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Song (Lü Wenhuan)",
+          "faction": "chinois",
+          "path": [
+            [
+              112.2,
+              30.35
+            ],
+            [
+              112.1,
+              31.2
+            ],
+            [
+              112.13,
+              32.04
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Lü Wenhuan",
+          "role": "Commandant de Xiangyang",
+          "faction": "chinois",
+          "archetype": "general-chinois",
+          "position": [
+            112.13,
+            32.04
+          ]
+        },
+        {
+          "name": "Bayan",
+          "role": "Général de Kubilaï, conquérant des Song",
+          "faction": "mongols",
+          "archetype": "general-mongol",
+          "position": [
+            112.4,
+            32.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yamen-1279",
+      "year": 1279,
+      "title": "Yamen : la fin des Song",
+      "type": "bataille",
+      "location": [
+        113.0,
+        22.2
+      ],
+      "zoom": 5,
+      "summary": "Le 19 mars 1279, la flotte des Song est détruite à Yamen, près de Canton : le jeune empereur se noie, et Kubilaï règne sur toute la Chine.",
+      "details": "En 1276, l'impératrice douairière capitule à **Hangzhou** devant **Bayan** et livre son petit-fils de cinq ans. Des fidèles s'enfuient vers le sud avec deux autres enfants de la famille impériale, **Zhao Shi** puis **Zhao Bing**, et organisent à Fuzhou puis dans le Guangdong une cour d'exil. Le lettré **Wen Tianxiang** lève des troupes ; capturé en 1278, il refuse de servir les Mongols et sera exécuté.\n\nLa dernière flotte song, réfugiée à **Yamen**, une île-forteresse à l'embouchure de la rivière des Perles, compte un millier de navires, que l'on attache entre eux, avec des dizaines de milliers de civils. Le général chinois au service des Mongols, **Zhang Hongfan**, bloque le détroit, coupe l'accès à l'eau douce et lance l'attaque le 19 mars 1279. La flotte, immobilisée, est incendiée navire après navire. Le ministre **Lu Xiufu** prend sur son dos l'enfant-empereur âgé de huit ans et se jette à la mer avec lui. Des dizaines de milliers de personnes les suivent dans la mer.\n\nLa dynastie Song disparaît après plus de trois siècles. Pour la première fois, des étrangers dominent toute la Chine. Kubilaï célèbre sa victoire, mais Yamen restera dans la mémoire chinoise comme le symbole de la loyauté jusqu'à la mort.",
+      "consequences": [
+        "Toute la Chine est réunie sous les Yuan : Guangdong, Guangxi, Fujian, Zhejiang, Jiangsu, Hunan, Jiangxi et Guizhou passent à l'empire.",
+        "L'ancienne cour du Sud disparaît ; les familles impériales Song sont dispersées ou exilées.",
+        "Kubilaï dispose de la plus grande flotte du monde pour de nouvelles expéditions (Japon, Champa, Java).",
+        "Le souvenir de Yamen nourrit la résistance morale des lettrés chinois contre la dynastie mongole."
+      ],
+      "territory": "yamen-1279",
+      "sources": [
+        {
+          "label": "Histoire des Song (Songshi, XIVe siècle)"
+        },
+        {
+          "label": "Histoire des Yuan (Yuanshi, XIVe siècle)"
+        },
+        {
+          "label": "Wikipédia : Bataille de Yamen",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Yamen"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Dynastie Yuan",
+          "Song du Sud (cour en exil)"
+        ],
+        "commanders": [
+          "Zhang Hongfan",
+          "Li Heng",
+          "Lu Xiufu",
+          "Zhang Shijie"
+        ],
+        "outcome": "Destruction de la flotte song ; fin de la dynastie",
+        "forces": "Environ 20 000 hommes de Zhang Hongfan contre 1 000 navires song et de nombreux civils selon les chroniques",
+        "losses": "Plus de 100 000 morts selon l'Histoire des Yuan, dont l'empereur-enfant"
+      },
+      "territoryNote": "Quatre khanats et un rival. Empire Yuan (Kubilaï, capitale Dadu) : toute la Chine désormais conquise (Chine du Nord, Sichuan, Hubei, Hunan, Jiangxi, Zhejiang, Jiangsu, Fujian, Guangdong, Guangxi, Guizhou), Yunnan, Mandchourie, Mongolie, Mongolie-Intérieure, Tibet vassal, Goryeo (Corée) vassal, Dai Viet tributaire. Horde d'or (Möngke Temür puis Tuda Mengu) : steppe pontique, Volga, Kazakhstan occidental, Crimée ; principautés russes vassales. Khanat de Djaghataï (Duwa) : Transoxiane, Xinjiang du sud. Ilkhanat (Abaqa) : Iran, Irak, Azerbaïdjan, Arménie ; vassaux : Seldjoukides de Roum, Géorgie, Petite-Arménie. Khanat d'Ögödei de Qaïdu : Dzoungarie, Kazakhstan oriental. Voisins : Japon (Kamakura), Champa, Dai Viet, Pagan (Birmanie), Mamelouks, sultanat de Delhi.",
+      "armies": [
+        {
+          "side": "Yuan (Zhang Hongfan)",
+          "faction": "mongols",
+          "path": [
+            [
+              113.26,
+              23.13
+            ],
+            [
+              113.6,
+              22.45
+            ],
+            [
+              113.2,
+              22.15
+            ],
+            [
+              113.0,
+              22.2
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Flotte des Song",
+          "faction": "chinois",
+          "path": [
+            [
+              114.0,
+              22.2
+            ],
+            [
+              113.5,
+              22.05
+            ],
+            [
+              113.0,
+              22.2
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Wen Tianxiang",
+          "role": "Ministre et poète loyaliste des Song",
+          "faction": "chinois",
+          "archetype": "lettre-mandarin",
+          "quote": "« Que ce cœur loyal reste, pour éclairer l'histoire » (selon Wen Tianxiang, poème de 1279)",
+          "position": [
+            113.5,
+            22.4
+          ]
+        },
+        {
+          "name": "Zhao Bing",
+          "role": "Dernier empereur Song, âgé de huit ans",
+          "faction": "chinois",
+          "archetype": "empereur-chinois",
+          "position": [
+            113.0,
+            22.2
+          ]
+        },
+        {
+          "name": "Zhang Hongfan",
+          "role": "Général chinois au service des Yuan",
+          "faction": "mongols",
+          "archetype": "general-chinois",
+          "position": [
+            113.2,
+            22.4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "japon-1281",
+      "year": 1281,
+      "title": "Les invasions du Japon (1274 et 1281)",
+      "type": "bataille",
+      "location": [
+        130.4,
+        33.6
+      ],
+      "zoom": 5,
+      "summary": "En 1274 puis en 1281, d'immenses flottes de Kubilaï attaquent le Japon à Hakata ; la seconde est détruite par un typhon, le « vent divin » (kamikaze).",
+      "details": "Dès 1266, **Kubilaï** somme le Japon de lui rendre hommage. Le régent de Kamakura, **Hōjō Tokimune**, qui gouverne au nom du shogun, refuse. En novembre 1274, 900 navires emportent 30 000 Mongols, Chinois et Coréens vers la baie de **Hakata**, dans l'île de Kyushu. Les samouraïs, habitués aux duels, subissent le choc des flèches empoisonnées, des grenades à poudre et des formations serrées. Mais une tempête nocturne endommage la flotte, qui doit se replier. En 1275, Tokimune fait décapiter les ambassadeurs envoyés par Kubilaï. Il élève sur vingt kilomètres un mur de pierre le long de la baie.\n\nEn 1281, la seconde invasion est colossale : deux flottes, l'une de 900 navires partie de Corée avec 40 000 hommes, l'autre de 3 500 navires partie de Ningbo avec 100 000 hommes, selon les sources. Le mur empêche le débarquement massif ; les assauts nocturnes de samouraïs sur des barques harcèlent les navires. Le 15 août (calendrier lunaire), un typhon détruit une grande partie de la flotte au large de Takashima. Les Japonais nommeront ce vent le **kamikaze**.\n\nKubilaï prépare une troisième expédition qui ne sera jamais lancée. Le Japon restera indépendant, mais la guerre ruine le shogunat de Kamakura, qui ne pourra pas récompenser ses guerriers, ce qui fragilisera son pouvoir.",
+      "consequences": [
+        "Le Japon échappe à la domination mongole et garde son indépendance jusqu'à l'époque moderne.",
+        "La Corée, qui a fourni navires et soldats, est épuisée par les préparatifs.",
+        "Les expéditions maritimes de Kubilaï continuent ailleurs : Champa (1283), Vietnam (1285, 1287), Java (1293).",
+        "Le mythe du kamikaze nourrira durablement l'idée d'une protection divine du Japon."
+      ],
+      "territory": "japon-1281",
+      "sources": [
+        {
+          "label": "Mōko shūrai ekotoba (rouleaux illustrés, XIIIe siècle)"
+        },
+        {
+          "label": "Histoire des Yuan (Yuanshi, XIVe siècle)"
+        },
+        {
+          "label": "Wikipédia : Invasions mongoles du Japon",
+          "url": "https://fr.wikipedia.org/wiki/Invasions_mongoles_du_Japon"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Dynastie Yuan et Goryeo (Corée)",
+          "Shogunat de Kamakura (Japon)"
+        ],
+        "commanders": [
+          "Hong Dagu",
+          "Kim Bangyeong",
+          "Fan Wenhu",
+          "Hōjō Tokimune",
+          "Takezaki Suenaga"
+        ],
+        "outcome": "Échec des deux invasions, la seconde détruite par un typhon (15 août 1281)",
+        "forces": "1274 : environ 30 000 hommes ; 1281 : jusqu'à 140 000 selon les sources",
+        "losses": "Une grande partie de la flotte de 1281 coulée ; plusieurs dizaines de milliers de morts"
+      },
+      "territoryNote": "Quatre khanats et un rival. Empire Yuan (Kubilaï, capitale Dadu) : toute la Chine (Chine du Nord, Sichuan, Hubei, Hunan, Jiangxi, Zhejiang, Jiangsu, Fujian, Guangdong, Guangxi, Guizhou), Yunnan, Mandchourie, Mongolie, Mongolie-Intérieure, Tibet vassal, Goryeo (Corée) vassal fournissant les flottes, Dai Viet tributaire, Birmanie (Pagan) attaquée. Horde d'or (Tuda Mengu) : steppe pontique, Volga, Kazakhstan occidental, Crimée ; principautés russes vassales. Khanat de Djaghataï (Duwa) : Transoxiane, Xinjiang du sud. Ilkhanat (Tegüder Ahmad, puis Arghun) : Iran, Irak, Azerbaïdjan, Arménie ; vassaux : Seldjoukides de Roum, Géorgie, Petite-Arménie. Khanat d'Ögödei de Qaïdu : Dzoungarie, Kazakhstan oriental. Voisins : Japon (Kamakura, Kyushu défendu), Champa, Dai Viet, Mamelouks.",
+      "armies": [
+        {
+          "side": "Flotte de Corée (Yuan)",
+          "faction": "mongols",
+          "path": [
+            [
+              128.57,
+              35.18
+            ],
+            [
+              129.3,
+              34.3
+            ],
+            [
+              129.7,
+              33.78
+            ],
+            [
+              130.35,
+              33.65
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Flotte du Sud (Yuan)",
+          "faction": "mongols",
+          "path": [
+            [
+              121.9,
+              29.9
+            ],
+            [
+              126.0,
+              31.5
+            ],
+            [
+              129.2,
+              33.3
+            ],
+            [
+              129.75,
+              33.45
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Japon",
+          "faction": "japonais",
+          "path": [
+            [
+              130.52,
+              33.51
+            ],
+            [
+              130.4,
+              33.62
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Hōjō Tokimune",
+          "role": "Régent du shogunat de Kamakura",
+          "faction": "japonais",
+          "archetype": "shogun",
+          "quote": "« Que nul ne négocie avec eux : nous défendrons chaque pouce de rivage » (formule libre)",
+          "position": [
+            130.4,
+            33.6
+          ]
+        },
+        {
+          "name": "Kubilaï",
+          "role": "Grand Khan, empereur des Yuan",
+          "faction": "mongols",
+          "archetype": "khan",
+          "position": [
+            116.4,
+            39.9
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bachdang-1288",
+      "year": 1288,
+      "title": "Bạch Đằng : le piège de la marée",
+      "type": "bataille",
+      "location": [
+        106.8,
+        20.95
+      ],
+      "zoom": 5,
+      "summary": "En avril 1288, la flotte mongole est détruite sur la rivière Bạch Đằng par les Vietnamiens du général Trần Hưng Đạo, qui ont planté des pieux dans le lit du fleuve.",
+      "details": "Le **Dai Viet**, l'actuel Vietnam du Nord, a pour capitale **Thăng Long** (Hanoï). Il est gouverné par la dynastie des **Trần**. Les Mongols ont déjà attaqué en 1257-1258 (le chaud climat a vite chassé les envahisseurs), puis en 1285 : le prince **Toghan**, fils de Kubilaï, force les passes du Nord pendant que le général **Sögetü** remonte du Champa. Les Vietnamiens évitent le combat, se replient, harcèlent leurs lignes et sont aidés par la chaleur et les maladies. Sögetü est tué.\n\nEn 1287, Kubilaï frappe encore une fois avec 70 000 hommes. Les Mongols prennent Thăng Long, désertée. Mais leur flotte de ravitaillement est coulée par les Vietnamiens, les vivres manquent. Toghan se retire en 1288, en suivant la rivière **Bạch Đằng**, un cours d'eau à marées. Le généralissime **Trần Hưng Đạo**, reprenant la ruse utilisée contre les Chinois au Xe siècle, a fait planter dans le lit de grands pieux de bois aux pointes de fer, invisibles à marée haute. Il attire la flotte mongole en amont ; à marée basse, les navires s'embrochent. L'amiral **Omar** et une grande partie de la flotte sont capturés ou détruits.\n\nAprès trois invasions repoussées, le Vietnam paie un tribut symbolique à Kubilaï, qui renonce à le soumettre.",
+      "consequences": [
+        "Le Dai Viet conserve son indépendance, comme le Japon, malgré le tribut symbolique.",
+        "Trần Hưng Đạo devient un héros national vietnamien, honoré encore aujourd'hui.",
+        "Les Yuan échouent aussi au Champa et à Java (1293) : les expéditions tropicales épuisent l'empire.",
+        "La Birmanie (royaume de Pagan, conquis en 1287) reste cependant tributaire des Yuan pendant quelques années."
+      ],
+      "territory": "bachdang-1288",
+      "sources": [
+        {
+          "label": "Đại Việt sử ký toàn thư (XVe siècle)"
+        },
+        {
+          "label": "Histoire des Yuan (Yuanshi, XIVe siècle)"
+        },
+        {
+          "label": "Wikipédia : Bataille de Bạch Đằng (1288)",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_B%E1%BA%A1ch_%C4%90%E1%BA%B1ng_(1288)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Dynastie Yuan",
+          "Dai Viet (dynastie Trần)"
+        ],
+        "commanders": [
+          "Toghan",
+          "Omar",
+          "Trần Hưng Đạo"
+        ],
+        "outcome": "Victoire vietnamienne ; la flotte yuan est détruite et Omar capturé",
+        "forces": "Environ 400 navires yuan contre une flotte vietnamienne plus légère",
+        "losses": "Flotte yuan détruite ; retraite désastreuse de l'armée de terre"
+      },
+      "territoryNote": "Quatre khanats et un rival. Empire Yuan (Kubilaï, capitale Dadu) : toute la Chine (Chine du Nord, Sichuan, Hubei, Hunan, Jiangxi, Zhejiang, Jiangsu, Fujian, Guangdong, Guangxi, Guizhou), Yunnan, Haute-Birmanie tributaire, Mandchourie, Mongolie, Tibet vassal, Goryeo (Corée) vassal. Horde d'or (Tula Buqa) : steppe pontique, Volga, Kazakhstan occidental, Crimée ; principautés russes vassales. Khanat de Djaghataï (Duwa) : Transoxiane, Xinjiang du sud. Ilkhanat (Arghun) : Iran, Irak, Azerbaïdjan, Arménie ; vassaux : Seldjoukides de Roum, Géorgie, Petite-Arménie. Khanat d'Ögödei de Qaïdu : Dzoungarie, Kazakhstan oriental. Voisins : Dai Viet indépendant et victorieux (Vietnam du Nord), Champa, Japon, Java (Singhasari), Mamelouks.",
+      "armies": [
+        {
+          "side": "Dai Viet (Trần Hưng Đạo)",
+          "faction": "vietnamiens",
+          "path": [
+            [
+              105.85,
+              21.03
+            ],
+            [
+              106.3,
+              21.0
+            ],
+            [
+              106.6,
+              20.95
+            ],
+            [
+              106.8,
+              20.95
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Flotte yuan",
+          "faction": "mongols",
+          "path": [
+            [
+              108.35,
+              21.6
+            ],
+            [
+              107.4,
+              21.1
+            ],
+            [
+              106.8,
+              20.95
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Trần Hưng Đạo",
+          "role": "Généralissime du Dai Viet",
+          "faction": "vietnamiens",
+          "archetype": "general-chinois",
+          "quote": "« Majesté, coupez d'abord ma tête, et rendez-vous ensuite » (selon le Đại Việt sử ký toàn thư)",
+          "position": [
+            106.6,
+            20.95
+          ]
+        },
+        {
+          "name": "Toghan",
+          "role": "Prince yuan, fils de Kubilaï",
+          "faction": "mongols",
+          "archetype": "khan",
+          "position": [
+            105.85,
+            21.03
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ghazan-1295",
+      "year": 1295,
+      "title": "Ghazan, l'Ilkhan converti à l'islam",
+      "type": "politique",
+      "location": [
+        46.3,
+        38.08
+      ],
+      "zoom": 4.5,
+      "summary": "En 1295, le prince Ghazan se convertit à l'islam sunnite et devient Ilkhan : l'Iran mongol devient musulman et se réorganise.",
+      "details": "Les premiers Ilkhans d'Iran, **Houlagou** et ses fils, étaient bouddhistes ou nestoriens et cherchaient des alliés chrétiens contre les Mamelouks. Mais leurs sujets étaient presque tous musulmans, et les armées mongoles elles-mêmes comptaient des chefs convertis. Le prince **Ghazan**, né en 1271, a grandi dans la foi bouddhiste de ses parents. Dès juin 1295, sous l'influence de l'émir **Nawruz**, il se convertit à l'islam sunnite avant même de monter sur le trône, puis ordonne que ses soldats en fassent autant.\n\nDevenu Ilkhan, il fait de l'islam la religion d'État, détruit les temples bouddhistes et réforme l'administration avec l'aide de son vizir **Rashid al-Din**, médecin et grand historien. Il réorganise l'impôt, fixe les poids et mesures, répare canaux et routes, lutte contre les abus des gouverneurs, fonde près de Tabriz un quartier de mosquées, d'écoles et d'hôpitaux. Il fait aussi rédiger une histoire des Mongols, qui deviendra l'*Histoire universelle* de Rashid al-Din.\n\nContre les Mamelouks, Ghazan remporte la bataille de Wadi al-Khazandar (décembre 1299), occupe Damas quelques semaines en 1300, mais ne peut tenir la Syrie. Les Mongols d'Iran s'intègrent à la société persane, et ceux d'Asie centrale suivront ; la Horde d'or se convertira sous Özbeg, au début du XIVe siècle.",
+      "consequences": [
+        "L'Ilkhanat devient musulman, et la culture persane s'impose à ses maîtres mongols.",
+        "Les réformes de Ghazan redressent les finances et l'agriculture de l'Iran.",
+        "Les expéditions en Syrie (1299-1303) échouent à ébranler les Mamelouks.",
+        "La conversion annonce celle de la Horde d'or (vers 1313) et du Djaghataï (vers 1326)."
+      ],
+      "territory": "ghazan-1295",
+      "sources": [
+        {
+          "label": "Rachid ad-Din, Histoire universelle (XIVe siècle)"
+        },
+        {
+          "label": "Rachid ad-Din, Histoire de Ghazan (XIVe siècle)"
+        },
+        {
+          "label": "Wikipédia : Ghazan",
+          "url": "https://fr.wikipedia.org/wiki/Ghazan"
+        }
+      ],
+      "territoryNote": "Quatre khanats et un rival. Empire Yuan (Temür Khan, capitale Dadu) : toute la Chine, Yunnan, Mandchourie, Mongolie, Mongolie-Intérieure, Tibet vassal, Goryeo (Corée) vassal. Horde d'or (Toqta, avec l'émir Noghaï jusqu'en 1299) : steppe pontique, Volga, Kazakhstan occidental, Crimée, Caucase du Nord ; principautés russes vassales (Moscou, Tver, Vladimir, Riazan). Khanat de Djaghataï (Duwa) : Transoxiane, Xinjiang du sud. Ilkhanat (Ghazan) : Iran, Irak, Azerbaïdjan, Arran, Arménie, Khorasan ; vassaux : Anatolie (Seldjoukides de Roum et émirats turcs), Géorgie, Petite-Arménie. Khanat d'Ögödei de Qaïdu : Dzoungarie, Kazakhstan oriental. Voisins : Mamelouks (Égypte, Syrie), sultanat de Delhi, Byzance, Dai Viet, Japon.",
+      "figures": [
+        {
+          "name": "Ghazan",
+          "role": "Ilkhan d'Iran, convertisseur de l'Ilkhanat à l'islam",
+          "faction": "mongols",
+          "archetype": "khan",
+          "quote": "« Désormais, mon peuple sera musulman » (formule libre)"
+        },
+        {
+          "name": "Nawruz",
+          "role": "Émir qui persuade Ghazan",
+          "faction": "mongols",
+          "archetype": "general-mongol",
+          "position": [
+            59.6,
+            36.3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paix-1304",
+      "year": 1304,
+      "title": "La paix entre les khanats",
+      "type": "traité",
+      "location": [
+        80.2,
+        44.2
+      ],
+      "zoom": 3.3,
+      "summary": "En 1304, les quatre khanats mongols concluent une paix générale : les routes d'Asie sont de nouveau ouvertes, de la Chine à la mer Noire.",
+      "details": "La paix commence en 1301 par la mort de **Qaïdu**, le khan rebelle d'Asie centrale qui avait harcelé Kubilaï et ses successeurs pendant trente ans. Son fils **Chapar** ne tient pas la place. **Duwa**, khan de Djaghataï, et l'empereur Yuan **Temür** (Chengzong), petit-fils de Kubilaï, concluent une alliance contre lui. En 1303-1304, tous les princes conviennent d'une paix générale qui est confirmée par des ambassades croisées. En 1306, Chapar fait sa soumission ; le khanat de Qaïdu disparaît, partagé entre Djaghataï et Yuan.\n\nEn 1305, l'Ilkhan **Öljeitü** écrit à Philippe le Bel, au roi d'Angleterre et au pape que les Mongols sont désormais réconciliés. La lettre trace l'image d'une grande famille unie, même si chacun garde ses territoires.\n\nC'est l'apogée de la **paix mongole** (*Pax Mongolica*). Un marchand peut aller de Crimée à Pékin avec un passeport de bronze, le *paiza*, qui lui donne droit aux relais de poste. On voit passer des moines comme **Jean de Montecorvino**, premier archevêque catholique de Pékin, ou le Nestorien **Rabban Sauma**, qui rejoint l'Europe depuis la Chine. Mais ces mêmes routes porteront bientôt la peste.",
+      "consequences": [
+        "Les routes de la Soie sont sûres de la Chine à la mer Noire : commerce, voyages et échanges de savoirs prospèrent.",
+        "Le khanat de Qaïdu disparaît (1301-1306) ; ses terres sont partagées entre Djaghataï et Yuan.",
+        "Les khanats s'éloignent et se transforment selon leurs peuples : chinois, russes, turcs, persans.",
+        "Les conversions à l'islam des khanats occidentaux se confirment."
+      ],
+      "territory": "paix-1304",
+      "sources": [
+        {
+          "label": "Marco Polo, Le Devisement du monde (vers 1298)"
+        },
+        {
+          "label": "Lettre d'Öljeitü à Philippe le Bel (1305)"
+        },
+        {
+          "label": "Wikipédia : Pax Mongolica",
+          "url": "https://fr.wikipedia.org/wiki/Pax_Mongolica"
+        }
+      ],
+      "territoryNote": "Les quatre khanats en paix (1304). Empire Yuan (Temür Khan, capitale Dadu) : toute la Chine, Yunnan, Mandchourie, Mongolie, Mongolie-Intérieure, Tibet vassal, Goryeo (Corée) vassal. Horde d'or (Toqta) : steppe pontique, Volga, Kazakhstan occidental, Crimée, Caucase du Nord ; principautés russes vassales (Moscou, Tver, Vladimir, Riazan) ; Novgorod tributaire. Khanat de Djaghataï (Duwa) : Transoxiane, Ferghana, Semiretchié (Kazakhstan sud-est, Kirghizistan), Xinjiang du sud et de l'ouest, qui absorbe une grande partie du khanat de Qaïdu ; Dzoungarie et Kazakhstan oriental partagés avec les Yuan. Ilkhanat (Öljeitü) : Iran, Irak, Azerbaïdjan, Arran, Arménie, Khorasan ; vassaux : Anatolie (Seldjoukides de Roum, émirats turcs), Géorgie, Petite-Arménie. Voisins : Mamelouks, sultanat de Delhi, Byzance, Hongrie, Lituanie, Dai Viet, Japon.",
+      "figures": [
+        {
+          "name": "Temür Khan",
+          "role": "Empereur des Yuan, petit-fils de Kubilaï",
+          "faction": "mongols",
+          "archetype": "empereur-chinois",
+          "position": [
+            116.4,
+            39.9
+          ]
+        },
+        {
+          "name": "Öljeitü",
+          "role": "Ilkhan d'Iran",
+          "faction": "mongols",
+          "archetype": "khan",
+          "quote": "« Nous sommes tous frères : les routes sont ouvertes » (d'après sa lettre de 1305, formule libre)",
+          "position": [
+            48.8,
+            36.43
+          ]
+        },
+        {
+          "name": "Duwa",
+          "role": "Khan de Djaghataï",
+          "faction": "mongols",
+          "archetype": "khan",
+          "position": [
+            80.2,
+            44.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ilkhanat-1335",
+      "year": 1335,
+      "title": "La fin de l'Ilkhanat",
+      "type": "chute",
+      "location": [
+        48.8,
+        36.43
+      ],
+      "zoom": 4.5,
+      "summary": "À la mort d'Abu Saïd en 1335, sans héritier, l'Ilkhanat se disloque en États rivaux : l'Iran mongol cesse d'exister.",
+      "details": "**Abu Saïd** monte sur le trône à douze ans en 1316 et règne dix-neuf ans. En 1323, il signe avec les Mamelouks un traité de paix qui met fin à soixante ans de guerre. Son règne voit l'apogée de **Soltaniyeh**, la capitale fondée par son père Öljeitü, dont le dôme de briques de cinquante mètres est l'un des plus grands du monde. Rashid al-Din, victime d'intrigues de cour, a été exécuté en 1318.\n\nMais l'État s'use. Les chefs des tribus, les émirs, rivalisent avec les princes mongols ; les impôts, mal réformés, épuisent les paysans ; la monnaie papier (imitation du *chao* des Yuan) a échoué en 1294. Abu Saïd, qui meurt en novembre 1335 sans héritier (empoisonné par sa femme, dit-on), laisse un vide.\n\nEn quelques années, l'Ilkhanat éclate : les **Djalayirides** s'établissent à Bagdad et Tabriz, les **Chupanides** à Tabriz, les **Injuides** au Fars, les **Muzaffarides** à Kerman puis à Chiraz, les **Sarbadars** au Khorasan. L'Anatolie échappe aux gouverneurs mongols. Une génération plus tard, **Tamerlan** profitera de ce morcellement pour conquérir l'Iran.",
+      "consequences": [
+        "L'Iran, l'Irak et l'Azerbaïdjan sont divisés en États rivaux : Djalayirides, Chupanides, Injuides, Muzaffarides, Sarbadars.",
+        "L'Anatolie échappe aux Mongols ; les émirats turcs, dont celui des Ottomans, prospèrent.",
+        "La Horde d'or d'Özbeg, devenue musulmane, domine le Caucase du Nord sans rival.",
+        "Tamerlan, en Transoxiane, conquerra le morcellement iranien à partir de 1380."
+      ],
+      "territory": "ilkhanat-1335",
+      "sources": [
+        {
+          "label": "Hamdallah Mustawfi, Histoire choisie (XIVe siècle)"
+        },
+        {
+          "label": "Rachid ad-Din, Histoire universelle (XIVe siècle)"
+        },
+        {
+          "label": "Wikipédia : Ilkhanat",
+          "url": "https://fr.wikipedia.org/wiki/Ilkhanat"
+        }
+      ],
+      "territoryNote": "Quatre khanats dont l'un s'effondre. Empire Yuan (Toghon Temür, capitale Dadu) : toute la Chine, Yunnan, Mandchourie, Mongolie, Mongolie-Intérieure, Tibet vassal, Goryeo (Corée) vassal. Horde d'or (Özbeg) : steppe pontique, Volga, Kazakhstan occidental, Crimée, Khwarezm nord, Caucase du Nord ; principautés russes vassales (Moscou, Tver, Vladimir, Riazan) ; Novgorod tributaire. Khanat de Djaghataï : Transoxiane, Semiretchié (Kazakhstan sud-est, Kirghizistan), Xinjiang. Ilkhanat (Abu Saïd, mort en 1335) : Iran, Irak, Azerbaïdjan, Arménie, Khorasan, qui se fragmente ensuite en Djalayirides (Bagdad, Tabriz), Chupanides, Injuides (Fars), Muzaffarides (Kerman), Kartides (Hérat), Sarbadars ; Anatolie livrée aux émirats turcs. Voisins : Mamelouks, Delhi, Byzance, Ottomans naissants, Lituanie.",
+      "figures": [
+        {
+          "name": "Abu Saïd",
+          "role": "Dernier Ilkhan efficace",
+          "faction": "mongols",
+          "archetype": "khan",
+          "position": [
+            48.8,
+            36.43
+          ]
+        },
+        {
+          "name": "Özbeg",
+          "role": "Khan de la Horde d'or, converti à l'islam",
+          "faction": "mongols",
+          "archetype": "khan",
+          "position": [
+            46.0,
+            48.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kaffa-1346",
+      "year": 1346,
+      "title": "Kaffa et la Peste noire",
+      "type": "bataille",
+      "location": [
+        35.38,
+        45.03
+      ],
+      "zoom": 5,
+      "summary": "En 1346, l'armée de la Horde d'or assiège Kaffa, comptoir génois de Crimée, atteinte par la peste : la maladie gagnera l'Europe l'année suivante.",
+      "details": "**Kaffa** (aujourd'hui Feodosia), en Crimée, est depuis 1266 un comptoir de **Gênes**, rival de Venise, qui l'a bâtie en escale de la mer Noire. Elle est l'un des plus grands marchés d'esclaves du monde et un point d'arrivée de la route de la Soie. En 1343, une rixe éclate à Tana, un comptoir vénitien, entre un Italien et des musulmans ; le khan de la Horde d'or, **Janibeg**, assiège Tana puis Kaffa. Il revient en 1345-1346 avec une armée plus nombreuse.\n\nLa peste, venue d'Asie centrale où elle était présente depuis les années 1330, frappe l'armée mongole. Selon le notaire italien **Gabriele de' Mussi**, Janibeg fait catapulter des cadavres de pestiférés par-dessus les murs. Les historiens doutent de ce récit, car la maladie se transmet par les puces des rats, mais le fait est établi : la peste est dans la ville. Les Génois s'enfuient par la mer, vers Constantinople, Messine, Gênes, Marseille.\n\nDès l'automne 1347, la **Peste noire** ravage la Méditerranée. En quelques années, elle emporte entre un tiers et la moitié des Européens, et frappe aussi le Moyen-Orient et l'Asie. Les routes sûres créées par la paix mongole ont, sans le vouloir, transporté la mort. Les khanats seront eux-mêmes ravagés.",
+      "consequences": [
+        "La Peste noire (1347-1352) tue un tiers à la moitié de la population européenne.",
+        "Gênes garde Kaffa, qui reste une grande place marchande jusqu'à sa prise par les Ottomans en 1475.",
+        "Les khanats mongols, déjà affaiblis, sont frappés à leur tour : leurs populations s'effondrent.",
+        "Le commerce de la route de la Soie est durablement perturbé."
+      ],
+      "territory": "kaffa-1346",
+      "sources": [
+        {
+          "label": "Gabriele de' Mussi, Historia de morbo (vers 1348)"
+        },
+        {
+          "label": "Giovanni Villani, Nuova Cronica (XIVe siècle)"
+        },
+        {
+          "label": "Wikipédia : Siège de Caffa",
+          "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_Caffa"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Horde d'or (Janibeg)",
+          "République de Gênes (comptoir de Kaffa)"
+        ],
+        "commanders": [
+          "Janibeg"
+        ],
+        "outcome": "Siège levé ; Kaffa reste génoise ; la peste se propage depuis la ville",
+        "forces": "Armée de la Horde d'or ; garnison génoise réduite",
+        "losses": "Épidémie de peste parmi les assiégeants ; fuite des Génois par la mer"
+      },
+      "territoryNote": "Un seul khanat domine l'Occident. Horde d'or (Janibeg) : steppe pontique, Volga, Kazakhstan occidental, Crimée (sauf les comptoirs génois de Kaffa et Soldaia), Khwarezm nord, Caucase du Nord, Azerbaïdjan du nord ; principautés russes vassales (Moscou, Tver, Souzdal-Nijni Novgorod, Riazan) ; Novgorod tributaire. Empire Yuan (Toghon Temür, capitale Dadu) : toute la Chine, Yunnan, Mandchourie, Mongolie, Mongolie-Intérieure, Tibet vassal, Goryeo (Corée) vassal. Khanat de Djaghataï (scission vers 1346) : Transoxiane (émir Qazaghan) à l'ouest et Mogholistan (Semiretchié, Xinjiang, Kirghizistan) à l'est. Ilkhanat disparu : Djalayirides (Irak, Azerbaïdjan), Muzaffarides, Kartides, Sarbadars. Voisins : Lituanie (Gediminas, Algirdas), Pologne (Casimir III, Galicie reprise en 1349), Hongrie, Byzance, Gênes, Venise, Mamelouks, Ottomans.",
+      "armies": [
+        {
+          "side": "Horde d'or (Janibeg)",
+          "faction": "mongols",
+          "path": [
+            [
+              46.0,
+              48.8
+            ],
+            [
+              40.5,
+              47.4
+            ],
+            [
+              34.7,
+              46.3
+            ],
+            [
+              33.9,
+              45.6
+            ],
+            [
+              35.38,
+              45.03
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Gênes (Kaffa)",
+          "faction": "croises-latins",
+          "path": [
+            [
+              28.98,
+              41.01
+            ],
+            [
+              31.5,
+              42.8
+            ],
+            [
+              34.0,
+              44.5
+            ],
+            [
+              35.38,
+              45.03
+            ]
+          ],
+          "strength": 1,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Janibeg",
+          "role": "Khan de la Horde d'or",
+          "faction": "mongols",
+          "archetype": "khan",
+          "position": [
+            35.0,
+            45.3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "turbans-rouges-1351",
+      "year": 1351,
+      "title": "Les Turbans rouges",
+      "type": "politique",
+      "location": [
+        115.81,
+        32.89
+      ],
+      "zoom": 5,
+      "summary": "En 1351, une révolte de paysans, les Turbans rouges, éclate dans la plaine du Fleuve Jaune : la dynastie Yuan n'y survivra pas.",
+      "details": "Sous le dernier empereur **Toghon Temür**, la dynastie Yuan est affaiblie par les intrigues de cour, les dettes et une inflation galopante due au papier-monnaie. Le **Fleuve Jaune** déborde, inondant les campagnes. En 1351, le grand ministre **Toqto'a** envoie des centaines de milliers de paysans réparer les digues. Parmi eux circule une prophétie : « Quand l'homme de pierre n'aura qu'un œil, la Chine se révoltera. » Des conjurés enterrent une statue de pierre borgne sur le chantier.\n\nLes sociétaires secrets du **Lotus blanc**, une secte bouddhiste qui attend la venue du Bouddha Maitreya, soulèvent le peuple : **Han Shantong**, leur chef, est capturé, mais ses compagnons se couvrent d'un turban rouge et s'emparent de villes. L'insurrection gagne le Henan, l'Anhui et le Hubei. D'autres chefs entrent en rébellion : le contrebandier de sel **Zhang Shicheng**, **Chen Youliang**, fils de pêcheur, et un ancien moine mendiant, **Zhu Yuanzhang**.\n\nLa cour mongole, déchirée, ne parvient pas à y répondre : Toqto'a, qui remporte des succès, est destitué en 1355 et meurt empoisonné. Le sud de la Chine échappe au pouvoir, et les généraux yuan se battent entre eux.",
+      "consequences": [
+        "Toute la plaine du Huai et le Yangzi moyen échappent progressivement aux Yuan.",
+        "Les rebelles se divisent : Zhang Shicheng, Chen Youliang et Zhu Yuanzhang se disputent le Sud.",
+        "Les Yuan perdent des provinces : Fujian, Zhejiang, Jiangsu, Hubei, Jiangxi.",
+        "La Corée (Goryeo) en profite pour secouer la tutelle yuan (Gongmin, 1356)."
+      ],
+      "territory": "turbans-rouges-1351",
+      "sources": [
+        {
+          "label": "Histoire des Yuan (Yuanshi, XIVe siècle)"
+        },
+        {
+          "label": "Histoire des Ming (Mingshi, XVIIIe siècle)"
+        },
+        {
+          "label": "Wikipédia : Révolte des Turbans rouges",
+          "url": "https://fr.wikipedia.org/wiki/R%C3%A9volte_des_Turbans_rouges"
+        }
+      ],
+      "territoryNote": "Deux khanats solides, deux fantômes. Empire Yuan (Toghon Temür, capitale Dadu) : Mongolie, Mongolie-Intérieure, Mandchourie, Chine du Nord (Hebei, Shanxi, Shandong, Henan, Shaanxi), Gansu, Sichuan, Yunnan, Tibet vassal, Goryeo (Corée) vassal ; la plaine du Huai (Anhui, nord du Jiangsu) échappe aux rebelles des Turbans rouges ; le Sud n'est plus contrôlé. Horde d'or (Janibeg) : steppe pontique, Volga, Kazakhstan occidental, Crimée, Caucase du Nord, Azerbaïdjan du nord ; principautés russes vassales (Moscou, Tver, Riazan). Khanat de Djaghataï : Transoxiane à l'ouest, Mogholistan (Xinjiang, Semiretchié) à l'est. Ilkhanat disparu : Djalayirides (Irak, Azerbaïdjan), Muzaffarides (Fars, Kerman), Kartides, Sarbadars. Voisins : Lituanie, Pologne, Ottomans, Mamelouks, Dai Viet, Japon.",
+      "figures": [
+        {
+          "name": "Han Shantong",
+          "role": "Chef du Lotus blanc, initiateur de la révolte",
+          "faction": "chinois",
+          "archetype": "moine-bouddhiste",
+          "quote": "« Quand l'homme de pierre n'aura qu'un œil, la Chine se révoltera » (prophétie rapportée par l'Histoire des Yuan)",
+          "position": [
+            115.81,
+            32.89
+          ]
+        },
+        {
+          "name": "Toghon Temür",
+          "role": "Dernier empereur Yuan",
+          "faction": "mongols",
+          "archetype": "empereur-chinois",
+          "position": [
+            116.4,
+            39.9
+          ]
+        },
+        {
+          "name": "Toqto'a",
+          "role": "Grand ministre mongol",
+          "faction": "mongols",
+          "archetype": "general-mongol",
+          "position": [
+            116.0,
+            35.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dadu-1368",
+      "year": 1368,
+      "title": "Dadu tombe : la fin des Yuan",
+      "type": "chute",
+      "location": [
+        116.4,
+        39.9
+      ],
+      "zoom": 5,
+      "summary": "En septembre 1368, les armées de Zhu Yuanzhang entrent à Dadu (Pékin), d'où le dernier empereur yuan s'est enfui : les Mongols perdent la Chine.",
+      "details": "**Zhu Yuanzhang**, fils de paysans pauvres de l'Anhui, orphelin, moine mendiant, puis chef Turban rouge, s'empare de Nankin en 1356. En douze ans, il élimine ses rivaux : **Chen Youliang** est vaincu sur le lac Poyang en 1363, **Zhang Shicheng** en 1367. Il proclame en janvier 1368 la dynastie **Ming** (« éclatante ») sous le nom d'empereur **Hongwu**. Sa proclamation promet de « chasser les barbares et de rétablir la Chine ».\n\nIl lance alors vers le nord le général **Xu Da** : il s'empare du Shandong, puis du Henan. À l'été, ses troupes arrivent devant **Dadu**. L'empereur Yuan, **Toghon Temür**, évite le combat. Dans la nuit du 10 septembre, il quitte la capitale par la porte nord avec sa famille et sa cour et part pour Shangdu. Les Ming entrent presque sans lutte dans la ville, qui reçoit le nom de **Beiping** (« Paix du Nord »).\n\nLes Mongols ne sont pas détruits : ils forment les **Yuan du Nord**, qui régneront sur la Mongolie jusqu'en 1635 et reviendront souvent menacer la Chine. Au bout de 97 ans, l'une des plus grandes dynasties étrangères de la Chine s'achève, laissant le souvenir d'un empire immense et la découverte d'un monde relié.",
+      "consequences": [
+        "La Chine redevient chinoise sous les Ming ; la capitale Nankin est fixée dans le sud.",
+        "Les Yuan du Nord se replient en Mongolie, en Mandchourie et au Yunnan (jusqu'en 1381).",
+        "Pour les Chinois, la fin des Yuan est une restauration ; pour les Mongols, elle commence une longue guerre de frontière.",
+        "Ailleurs, les khanats survivent diversement : la Horde d'or jusqu'à Tamerlan (1395), le Djaghataï jusqu'au XVIe siècle."
+      ],
+      "territory": "dadu-1368",
+      "sources": [
+        {
+          "label": "Histoire des Ming (Mingshi, XVIIIe siècle)"
+        },
+        {
+          "label": "Histoire des Yuan (Yuanshi, XIVe siècle)"
+        },
+        {
+          "label": "Wikipédia : Dynastie Ming",
+          "url": "https://fr.wikipedia.org/wiki/Dynastie_Ming"
+        }
+      ],
+      "territoryNote": "Fin de l'unité mongole. Yuan du Nord (Toghon Temür, replié à Shangdu) : Mongolie, Mongolie-Intérieure, Mandchourie ; Yunnan (jusqu'en 1381) ; la Chine (Dadu et le reste) passe aux Ming. Horde d'or (Berdi Beg puis Mamaï, en crise) : steppe pontique, Volga, Kazakhstan occidental, Crimée ; principautés russes vassales (Moscou, Tver, Riazan, Vladimir). Khanat de Djaghataï : Transoxiane (émirs, Tamerlan dès 1370) et Mogholistan (Xinjiang, Semiretchié). Ilkhanat disparu : Djalayirides (Irak, Azerbaïdjan), Muzaffarides, Kartides, Sarbadars. Voisins : Ming (Chine), Goryeo (Corée indépendante), Japon, Dai Viet, Lituanie, Pologne, Mamelouks, Ottomans.",
+      "armies": [
+        {
+          "side": "Ming (Xu Da)",
+          "faction": "chinois",
+          "path": [
+            [
+              118.78,
+              32.06
+            ],
+            [
+              117.0,
+              36.65
+            ],
+            [
+              116.6,
+              38.3
+            ],
+            [
+              116.4,
+              39.9
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Zhu Yuanzhang",
+          "role": "Fondateur des Ming, empereur Hongwu",
+          "faction": "chinois",
+          "archetype": "empereur-chinois",
+          "quote": "« Chassons les barbares, restaurons la Chine » (selon sa proclamation de 1367)",
+          "position": [
+            118.78,
+            32.06
+          ]
+        },
+        {
+          "name": "Toghon Temür",
+          "role": "Dernier empereur Yuan",
+          "faction": "mongols",
+          "archetype": "empereur-chinois",
+          "position": [
+            116.18,
+            42.36
+          ]
+        }
+      ]
+    }
+  ]
+}

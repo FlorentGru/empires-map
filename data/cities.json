@@ -1609,7 +1609,8 @@
       }
     ],
     "empires": [
-      "china"
+      "china",
+      "mongols"
     ]
   },
   {
@@ -1645,7 +1646,8 @@
       }
     ],
     "empires": [
-      "china"
+      "china",
+      "mongols"
     ]
   },
   {
@@ -1753,10 +1755,16 @@
         "empire": "china",
         "from": 1421,
         "to": 1912
+      },
+      {
+        "empire": "mongols",
+        "from": 1271,
+        "to": 1368
       }
     ],
     "empires": [
-      "china"
+      "china",
+      "mongols"
     ]
   },
   {
@@ -1784,7 +1792,8 @@
     "founded": -214,
     "rank": 2,
     "empires": [
-      "china"
+      "china",
+      "mongols"
     ]
   },
   {
@@ -1850,7 +1859,8 @@
     "founded": -200,
     "rank": 2,
     "empires": [
-      "china"
+      "china",
+      "mongols"
     ]
   },
   {
@@ -1873,7 +1883,8 @@
     "founded": -108,
     "rank": 3,
     "empires": [
-      "china"
+      "china",
+      "mongols"
     ]
   },
   {
@@ -1910,7 +1921,15 @@
     "destroyed": 1388,
     "rank": 2,
     "empires": [
-      "china"
+      "china",
+      "mongols"
+    ],
+    "capitalOf": [
+      {
+        "empire": "mongols",
+        "from": 1229,
+        "to": 1260
+      }
     ]
   },
   {
@@ -1935,7 +1954,15 @@
     "destroyed": 1369,
     "rank": 2,
     "empires": [
-      "china"
+      "china",
+      "mongols"
+    ],
+    "capitalOf": [
+      {
+        "empire": "mongols",
+        "from": 1260,
+        "to": 1368
+      }
     ]
   },
   {
@@ -2026,7 +2053,8 @@
     "founded": 718,
     "rank": 2,
     "empires": [
-      "china"
+      "china",
+      "mongols"
     ]
   },
   {
@@ -2295,7 +2323,8 @@
     "founded": 679,
     "rank": 2,
     "empires": [
-      "china"
+      "china",
+      "mongols"
     ]
   },
   {
@@ -2318,7 +2347,8 @@
     "founded": -500,
     "rank": 2,
     "empires": [
-      "china"
+      "china",
+      "mongols"
     ]
   },
   {
@@ -2347,7 +2377,8 @@
     "founded": 1020,
     "rank": 2,
     "empires": [
-      "china"
+      "china",
+      "mongols"
     ]
   },
   {
@@ -2366,7 +2397,8 @@
     "founded": 919,
     "rank": 3,
     "empires": [
-      "china"
+      "china",
+      "mongols"
     ]
   },
   {
@@ -2520,7 +2552,8 @@
     "founded": 700,
     "rank": 3,
     "empires": [
-      "china"
+      "china",
+      "mongols"
     ]
   },
   {
@@ -2646,7 +2679,8 @@
     "founded": -200,
     "rank": 3,
     "empires": [
-      "china"
+      "china",
+      "mongols"
     ]
   },
   {
@@ -2664,7 +2698,8 @@
     "founded": -300,
     "rank": 3,
     "empires": [
-      "china"
+      "china",
+      "mongols"
     ]
   },
   {
@@ -2701,6 +2736,516 @@
     "rank": 3,
     "empires": [
       "china"
+    ]
+  },
+  {
+    "id": "otrar",
+    "modern": "Otrar (ruines), Kazakhstan",
+    "names": [
+      {
+        "name": "Farab"
+      },
+      {
+        "name": "Otrar"
+      }
+    ],
+    "coords": [
+      68.3,
+      42.85
+    ],
+    "founded": 500,
+    "rank": 3,
+    "empires": [
+      "mongols"
+    ]
+  },
+  {
+    "id": "boukhara",
+    "modern": "Boukhara, Ouzbékistan",
+    "names": [
+      {
+        "name": "Boukhara"
+      }
+    ],
+    "coords": [
+      64.42,
+      39.77
+    ],
+    "founded": -500,
+    "rank": 2,
+    "empires": [
+      "mongols"
+    ]
+  },
+  {
+    "id": "ourguentch",
+    "modern": "Kounia-Ourguentch, Turkménistan",
+    "names": [
+      {
+        "name": "Gurganj",
+        "to": 1221
+      },
+      {
+        "name": "Ourguentch",
+        "from": 1222
+      }
+    ],
+    "coords": [
+      59.15,
+      42.32
+    ],
+    "founded": 995,
+    "rank": 3,
+    "empires": [
+      "mongols"
+    ]
+  },
+  {
+    "id": "balasagun",
+    "modern": "Balasagun (près de Tokmok), Kirghizistan",
+    "names": [
+      {
+        "name": "Balasagun"
+      },
+      {
+        "name": "Quz Ordu"
+      }
+    ],
+    "coords": [
+      75.2,
+      42.75
+    ],
+    "founded": 900,
+    "rank": 3,
+    "empires": [
+      "mongols"
+    ]
+  },
+  {
+    "id": "kalka",
+    "modern": "Rivière Kalka (près de Marioupol), Ukraine",
+    "names": [
+      {
+        "name": "Kalka"
+      }
+    ],
+    "coords": [
+      37.6,
+      47.5
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "mongols"
+    ]
+  },
+  {
+    "id": "yehuling",
+    "modern": "Yehuling (Wanquan), Hebei, Chine",
+    "names": [
+      {
+        "name": "Yehuling"
+      }
+    ],
+    "coords": [
+      114.7,
+      40.8
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "mongols"
+    ]
+  },
+  {
+    "id": "indus-attock",
+    "modern": "Indus (près d'Attock), Pakistan",
+    "names": [
+      {
+        "name": "Bataille de l'Indus"
+      }
+    ],
+    "coords": [
+      72.0,
+      33.9
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "mongols"
+    ]
+  },
+  {
+    "id": "ryazan",
+    "modern": "Staraïa Riazan (près de Riazan), Russie",
+    "names": [
+      {
+        "name": "Riazan"
+      }
+    ],
+    "coords": [
+      40.05,
+      54.38
+    ],
+    "founded": 1095,
+    "destroyed": 1237,
+    "rank": 3,
+    "empires": [
+      "mongols"
+    ]
+  },
+  {
+    "id": "vladimir",
+    "modern": "Vladimir, Russie",
+    "names": [
+      {
+        "name": "Vladimir-sur-la-Kliazma"
+      },
+      {
+        "name": "Vladimir"
+      }
+    ],
+    "coords": [
+      40.41,
+      56.13
+    ],
+    "founded": 990,
+    "rank": 3,
+    "empires": [
+      "mongols"
+    ]
+  },
+  {
+    "id": "novgorod",
+    "modern": "Veliki Novgorod, Russie",
+    "names": [
+      {
+        "name": "Novgorod"
+      },
+      {
+        "name": "Veliki Novgorod"
+      }
+    ],
+    "coords": [
+      31.27,
+      58.52
+    ],
+    "founded": 859,
+    "rank": 2,
+    "empires": [
+      "mongols"
+    ]
+  },
+  {
+    "id": "kiev",
+    "modern": "Kiev (Kyïv), Ukraine",
+    "names": [
+      {
+        "name": "Kiev"
+      }
+    ],
+    "coords": [
+      30.52,
+      50.45
+    ],
+    "founded": 482,
+    "rank": 2,
+    "empires": [
+      "mongols"
+    ]
+  },
+  {
+    "id": "sarai",
+    "modern": "Selitrennoïe (Sarai), Russie",
+    "names": [
+      {
+        "name": "Sarai"
+      }
+    ],
+    "coords": [
+      46.17,
+      48.75
+    ],
+    "founded": 1242,
+    "destroyed": 1395,
+    "rank": 2,
+    "capitalOf": [
+      {
+        "empire": "mongols",
+        "from": 1242,
+        "to": 1368
+      }
+    ],
+    "empires": [
+      "mongols"
+    ]
+  },
+  {
+    "id": "kaffa",
+    "modern": "Féodossia, Crimée",
+    "names": [
+      {
+        "name": "Théodosia",
+        "to": 1265
+      },
+      {
+        "name": "Kaffa",
+        "from": 1266,
+        "to": 1475
+      },
+      {
+        "name": "Kefe",
+        "from": 1476,
+        "to": 1783
+      },
+      {
+        "name": "Féodossia",
+        "from": 1784
+      }
+    ],
+    "coords": [
+      35.38,
+      45.03
+    ],
+    "founded": -600,
+    "rank": 3,
+    "empires": [
+      "mongols"
+    ]
+  },
+  {
+    "id": "legnica",
+    "modern": "Legnica, Pologne",
+    "names": [
+      {
+        "name": "Liegnitz",
+        "to": 1945
+      },
+      {
+        "name": "Legnica",
+        "from": 1946
+      }
+    ],
+    "coords": [
+      16.16,
+      51.21
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "mongols"
+    ]
+  },
+  {
+    "id": "mohi",
+    "modern": "Muhi, Hongrie",
+    "names": [
+      {
+        "name": "Mohi"
+      },
+      {
+        "name": "Muhi"
+      }
+    ],
+    "coords": [
+      20.97,
+      47.96
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "mongols"
+    ]
+  },
+  {
+    "id": "kose-dag",
+    "modern": "Köse Dağ (près de Zara), Turquie",
+    "names": [
+      {
+        "name": "Köse Dağ"
+      }
+    ],
+    "coords": [
+      38.0,
+      40.1
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "mongols"
+    ]
+  },
+  {
+    "id": "alamut",
+    "modern": "Alamut, Iran",
+    "names": [
+      {
+        "name": "Alamut"
+      }
+    ],
+    "coords": [
+      50.58,
+      36.44
+    ],
+    "founded": 865,
+    "destroyed": 1256,
+    "rank": 3,
+    "empires": [
+      "mongols"
+    ]
+  },
+  {
+    "id": "baghdad",
+    "modern": "Bagdad, Irak",
+    "names": [
+      {
+        "name": "Bagdad"
+      }
+    ],
+    "coords": [
+      44.37,
+      33.31
+    ],
+    "founded": 762,
+    "rank": 1,
+    "empires": [
+      "mongols"
+    ]
+  },
+  {
+    "id": "maragha",
+    "modern": "Maragheh, Iran",
+    "names": [
+      {
+        "name": "Maragha"
+      }
+    ],
+    "coords": [
+      46.24,
+      37.39
+    ],
+    "founded": 700,
+    "rank": 3,
+    "capitalOf": [
+      {
+        "empire": "mongols",
+        "from": 1256,
+        "to": 1265
+      }
+    ],
+    "empires": [
+      "mongols"
+    ]
+  },
+  {
+    "id": "tabriz",
+    "modern": "Tabriz, Iran",
+    "names": [
+      {
+        "name": "Tabriz"
+      }
+    ],
+    "coords": [
+      46.29,
+      38.08
+    ],
+    "founded": 300,
+    "rank": 2,
+    "capitalOf": [
+      {
+        "empire": "mongols",
+        "from": 1265,
+        "to": 1306
+      }
+    ],
+    "empires": [
+      "mongols"
+    ]
+  },
+  {
+    "id": "soltaniyeh",
+    "modern": "Soltaniyeh, Iran",
+    "names": [
+      {
+        "name": "Soltaniyeh"
+      }
+    ],
+    "coords": [
+      48.8,
+      36.43
+    ],
+    "founded": 1305,
+    "rank": 3,
+    "capitalOf": [
+      {
+        "empire": "mongols",
+        "from": 1306,
+        "to": 1335
+      }
+    ],
+    "empires": [
+      "mongols"
+    ]
+  },
+  {
+    "id": "almaliq",
+    "modern": "Almaliq (près de Yining), Xinjiang, Chine",
+    "names": [
+      {
+        "name": "Almaliq"
+      }
+    ],
+    "coords": [
+      80.4,
+      44.15
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "capitalOf": [
+      {
+        "empire": "mongols",
+        "from": 1260,
+        "to": 1346
+      }
+    ],
+    "empires": [
+      "mongols"
+    ]
+  },
+  {
+    "id": "ain-djalout",
+    "modern": "Aïn Djalout (Ein Harod), Israël",
+    "names": [
+      {
+        "name": "Aïn Djalout"
+      }
+    ],
+    "coords": [
+      35.38,
+      32.55
+    ],
+    "founded": -1000,
+    "rank": 3,
+    "empires": [
+      "mongols"
+    ]
+  },
+  {
+    "id": "diaoyu",
+    "modern": "Fort de Diaoyu (Hechuan), Chongqing, Chine",
+    "names": [
+      {
+        "name": "Diaoyucheng"
+      }
+    ],
+    "coords": [
+      106.3,
+      30.0
+    ],
+    "founded": 1243,
+    "rank": 3,
+    "empires": [
+      "mongols"
     ]
   }
 ]
