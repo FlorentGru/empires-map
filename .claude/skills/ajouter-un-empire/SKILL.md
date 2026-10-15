@@ -43,7 +43,7 @@ git status --short public/data/empires   # seuls les fichiers du nouvel empire d
 Corrige les petits écarts (une ville mal classée, un statut) directement dans `scripts/empires/<id>.ts`, relance `npm run build:data:<id>`, puis commit + push.
 
 ### 4. Vérifications finales (toi)
-- Attends la CI : `~/.local/bin/gh run watch $(~/.local/bin/gh run list --limit 1 --json databaseId -q '.[0].databaseId') --exit-status`.
+- Attends la CI : `gh run watch $(gh run list --limit 1 --json databaseId -q '.[0].databaseId') --exit-status`.
 - Mets à jour `README.md` (empires disponibles) et `docs/ARCHITECTURE.md` si une technique nouvelle a été introduite.
 - Donne à Florent 3-4 liens de test `http://localhost:5173/?empire=<id>&step=<stepId>` sur les étapes marquantes, et rappelle `npm start` si le serveur ne tourne pas.
 - Signale honnêtement les limites (frontières approximatives, citations « attribuées », figurines empruntées à un autre peuple).
@@ -55,3 +55,4 @@ Corrige les petits écarts (une ville mal classée, un statut) directement dans 
 - Les armées qui reviennent d'une bataille à l'autre ont un `id` stable et `path[0]` = dernier point de leur trajet précédent.
 - Après génération de nouvelles données, **redémarrer le serveur de dev** (le sien et celui de Florent) : un serveur Vite lancé avant la création d'un dossier de `public/` peut servir ses fichiers comme une page HTML (glissement absent, retour au fondu). Les scripts vident désormais les dossiers au lieu de les supprimer (`scripts/fs-utils.ts`), ce qui évite le cas le plus courant.
 - Ne jamais regénérer les autres empires : `git status` doit rester vide pour eux.
+- Sous Windows, `npm run fetch:data` peut lancer le `bash` de WSL au lieu de Git Bash : lancer directement `bash scripts/fetch-basemaps.sh` depuis Git Bash.

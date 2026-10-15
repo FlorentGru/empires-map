@@ -4,7 +4,7 @@
 
 ---
 
-Projet « Atlas des Empires », /home/florent/projects/empires-map (Vite + React + TS strict + maplibre-gl ; pipeline géo en tsx). Tu es l'unique agent de cette livraison : CARTE + FRONT + FIGURINES pour l'empire « <id> ». Pas de commit.
+Projet « Atlas des Empires », C:\Users\fgru\project\empires-map (Windows ; dans Git Bash : /c/Users/fgru/project/empires-map) (Vite + React + TS strict + maplibre-gl ; pipeline géo en tsx). Tu es l'unique agent de cette livraison : CARTE + FRONT + FIGURINES pour l'empire « <id> ». Pas de commit.
 
 RÈGLES D'ÉCONOMIE (impératives) : ne lis jamais en entier les gros JSON/GeoJSON — `node -e`. Lis seulement le code utile. Pas de navigateur. Ne lance que `npm run build:data:<id>` (jamais le build complet). Rapport final court. Ordre : figurines, front, puis pipeline.
 

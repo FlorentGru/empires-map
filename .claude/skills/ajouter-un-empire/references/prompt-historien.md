@@ -4,7 +4,7 @@
 
 ---
 
-Projet « Atlas des Empires », /home/florent/projects/empires-map. Tu es l'HISTORIEN. Périmètre d'écriture : `data/empires/<id>/timeline.json` (nouveau) et `data/cities.json`. Rien d'autre. Pas de commit.
+Projet « Atlas des Empires », C:\Users\fgru\project\empires-map (Windows ; dans Git Bash : /c/Users/fgru/project/empires-map). Tu es l'HISTORIEN. Périmètre d'écriture : `data/empires/<id>/timeline.json` (nouveau) et `data/cities.json`. Rien d'autre. Pas de commit.
 
 RÈGLES D'ÉCONOMIE (impératives) : ne lis JAMAIS en entier les gros JSON (data/empires/*/timeline.json, cities.json) — utilise de petits scripts `node -e`/python pour lire un extrait ou écrire. Pour le format, lis `src/types.ts` (Empire, EmpirePeriod, TimelineStep, BattleInfo, ArmyMove avec `id` chaîné, Figure, Faction/FACTIONS, Archetype/ARCHETYPES, City) et extrais UNE étape d'exemple de `data/empires/rome/timeline.json` (ex. cannes-216). Pas de navigateur. Rapport final court.
 
