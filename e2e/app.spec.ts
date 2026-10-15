@@ -37,3 +37,20 @@ test('mode Histoire : la phrase lue est surlignée', async ({ page }) => {
   await expect(page.locator('.is-reading').first()).toBeVisible({ timeout: 20_000 });
   expect(errors).toEqual([]);
 });
+
+// Régression : un SDF absent ou mal servi fait retomber la carte sur un simple fondu.
+for (const [empire, step] of [
+  ['rome', 'zama-202'],
+  ['napoleon', 'austerlitz-1805'],
+  ['china', 'muye-1046'],
+] as const) {
+  test(`${empire} : l’étape suivante glisse par champs de distance (pas de fondu)`, async ({ page }) => {
+    const errors = collectErrors(page);
+    await page.goto(`/?empire=${empire}&step=${step}`);
+    const map = page.locator('.world-map');
+    await expect(map).toHaveAttribute('data-transition', 'fondu');
+    await page.getByRole('button', { name: 'Étape suivante' }).click();
+    await expect(map).toHaveAttribute('data-transition', 'sdf', { timeout: 30_000 });
+    expect(errors).toEqual([]);
+  });
+}

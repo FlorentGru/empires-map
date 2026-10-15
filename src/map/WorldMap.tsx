@@ -69,9 +69,17 @@ function viewPadding(panelOpen: boolean): PaddingOptions {
   return { top: 80, left, right: panelOpen ? 420 : 20, bottom: 150 };
 }
 
-/** Attend la fin du vol de caméra en cours, ou au plus tard 1,4 s (/ vitesse) après le début de l'étape. */
-function cameraGate(map: MapLibreMap, stepStart: number, speed: number): Promise<void> {
-  const limit = 1400 / Math.max(1, speed);
+/** Durée du vol de caméra vers une étape (ms) : raccourci aux vitesses rapides pour que vol + glissement tiennent dans l'étape. */
+const FLY_MS = 2000;
+const flyMs = (speed: number) => FLY_MS / Math.max(1, speed);
+
+/**
+ * Attend la fin du vol de caméra en cours : le glissement ne partage pas ses images avec le vol
+ * (et, en relief, avec le chargement des tuiles). Plafond : fin prévue du vol, ou 1,4 s (/ vitesse)
+ * pour les marches d'armées chaînées dont la caméra rebondit pendant le glissement.
+ */
+function cameraGate(map: MapLibreMap, stepStart: number, speed: number, chained: boolean): Promise<void> {
+  const limit = chained ? 1400 / Math.max(1, speed) : flyMs(speed) + 100;
   const wait = limit - (performance.now() - stepStart);
   if (!map.isMoving() || wait <= 0) return Promise.resolve();
   return new Promise((resolve) => {
@@ -302,14 +310,14 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
       if (!(key === cameraKeyRef.current && map.isMoving())) {
         cameraKeyRef.current = key;
         if (prefersReducedMotion()) map.jumpTo(camera);
-        else map.flyTo({ ...camera, duration: 2000, curve: 1.3, essential: false });
+        else map.flyTo({ ...camera, duration: flyMs(speedRef.current), curve: 1.3, essential: false });
       }
     }
 
     else if (empire.view) {
       const camera = { center: empire.view.center, zoom: empire.view.zoom, pitch: tiltedRef.current ? TILT_PITCH : 0, padding: viewPadding(panelOpenRef.current) };
       if (prefersReducedMotion()) map.jumpTo(camera);
-      else map.flyTo({ ...camera, duration: 2000, curve: 1.3, essential: false });
+      else map.flyTo({ ...camera, duration: flyMs(speedRef.current), curve: 1.3, essential: false });
     }
 
     const key = `${empire.id}/${step.territory}`;
@@ -355,7 +363,7 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
         if (stale) return;
         if (sdfOk) {
           layers.glide.setMode('sdf');
-          await cameraGate(map, stepStart, speedRef.current);
+          await cameraGate(map, stepStart, speedRef.current, chained.length > 0);
           if (stale) return;
           layers.territories.suspend();
           layers.glide.play(from, GLIDE_MS / Math.max(1, speedRef.current), () => {
@@ -378,7 +386,7 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
         layers.glide.setMode('bandes');
         await layers.morph.prepare(morph, empire.color, from);
         if (stale) return;
-        await cameraGate(map, stepStart, speedRef.current);
+        await cameraGate(map, stepStart, speedRef.current, chained.length > 0);
         if (stale) return;
         layers.territories.suspend();
         layers.morph.play(from, MORPH_MS / Math.max(1, speedRef.current), () => {

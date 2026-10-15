@@ -4,7 +4,7 @@
 
 Un planisphère interactif pour voir l'évolution des grands empires de l'histoire. Choisis un empire, appuie sur **Play** et regarde ses frontières évoluer d'une date clé à la suivante : batailles, traités, réformes, chutes. Chaque étape est accompagnée d'une explication détaillée.
 
-Empires disponibles : **Rome** (509 av. J.-C. → 1453), **l'Empire napoléonien** (1799 → 1815) et bientôt **la Chine** (-1600 → 1912). Le sélecteur liste, par continent, les plus vastes et les plus célèbres empires de l’histoire, à remplir au fil du projet.
+Empires disponibles : **Rome** (509 av. J.-C. → 1453), **l'Empire napoléonien** (1799 → 1815) et **la Chine** (-1600 → 1912). Le sélecteur liste, par continent, les plus vastes et les plus célèbres empires de l’histoire, à remplir au fil du projet.
 
 ## Fonctionnalités
 
@@ -39,7 +39,7 @@ Ensuite, au choix :
 | **Depuis Claude** | dire « lance le serveur » | Claude démarre la configuration `dev` de `.claude/launch.json`, ou réutilise le serveur s'il tourne déjà, et ouvre le panneau navigateur. Le serveur s'arrête avec la session. |
 | **Version de production** | `npm run build && npm run preview` | Tester le site optimisé sur http://localhost:4173. |
 
-> Le panneau navigateur intégré à Claude ralentit l'affichage (environ 1 image/s) quand il n'a pas le focus : pour juger la fluidité, ouvrir http://localhost:5173 dans son propre navigateur. Ajouter `?debug=1` à l'URL affiche le compteur d'images par seconde.
+> Le panneau navigateur intégré à Claude ralentit l'affichage (environ 1 image/s) quand il n'a pas le focus : pour juger la fluidité, ouvrir http://localhost:5173 dans son propre navigateur. Ajouter `?debug=1` à l'URL affiche le compteur d'images par seconde (et, pendant un glissement de frontière, la pire image et le nombre d'images lentes).
 
 Si la page ne s'affiche pas, c'est presque toujours que le serveur n'est pas lancé : relancer `npm start`. Si le port 5173 est déjà pris, un ancien serveur tourne encore : le fermer, ou utiliser l'adresse qu'il affiche.
 

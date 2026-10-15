@@ -121,7 +121,9 @@ Comme `p` est continu, le front avance **pixel par pixel**, à 60 images par sec
 Quelques subtilités :
 - **Projection** : la grille est en **Web Mercator**, comme la carte, sinon le raster ne serait pas aligné.
 - **Pas d'alpha** : le PNG est en RGB pur. Le navigateur « prémultiplie » l'alpha au décodage, ce qui corromprait les distances.
-- **Affichage** : le résultat est dessiné dans un canvas hors écran, affiché par MapLibre comme une **source `canvas`**. Une source raster est drapée sur le relief 3D, alors qu'une couche WebGL personnalisée ne l'aurait pas été.
+- **Affichage** : le shader tourne dans le contexte WebGL de MapLibre, comme une **couche personnalisée** (`type: 'custom'`). Sur carte plate, `render` dessine un quad sur l'emprise du SDF. En relief 3D, MapLibre 6 appelle `renderToTerrainTile` pour **draper** la couche sur le terrain avec les autres ; à chaque image, la couche incrémente `terrainTileRevision`, sinon MapLibre réutiliserait ses tuiles drapées en cache.
+- **Pourquoi pas une source `canvas`** (première version) : le canvas hors écran était recopié vers MapLibre à chaque image (jusqu'à 1 736 × 1 306 px pour la Chine), et surtout, en relief, une mise à jour du canvas **ne redrapait pas** les tuiles du terrain : le front ne se rafraîchissait que quand autre chose (caméra, chargement de tuiles) forçait un redrapage, tuile par tuile. D'où des saccades pendant le glissement, relief activé (le réglage par défaut).
+- **Après la caméra** : le glissement attend la fin du vol de caméra (2 s, divisées par la vitesse au-delà de ×1), pour ne pas partager ses images avec le vol et le chargement des tuiles de relief.
 - **Fin d'animation** : à la fin, on bascule en fondu de 250 ms vers les polygones vectoriels, qui sont nets à tous les zooms et distinguent les vassaux.
 
 ---
@@ -139,7 +141,9 @@ Quelques subtilités :
 3. **Précalcul** : les diffs, SDF et simplifications sont faits au build.
 4. **Fond de carte recadré** : 694 Ko → 105 Ko. **Résolution plafonnée** : `pixelRatio ≤ 2`. **Relief limité** à `maxzoom` 10.
 
-Une leçon apprise : le panneau navigateur intégré à l'outil de développement limite l'affichage à environ 1 image par seconde quand il n'a pas le focus. **La fluidité se mesure dans un vrai navigateur.** On peut ajouter `?debug=1` à l'URL pour afficher le compteur d'images par seconde.
+5. **Une seule boucle par animation**, et rien à recopier par image : le glissement ne change qu'un uniform (`p`) par image ; en relief, il redemande explicitement le drapage (`terrainTileRevision`).
+
+Une leçon apprise : le panneau navigateur intégré à l'outil de développement limite l'affichage à environ 1 image par seconde quand il n'a pas le focus. **La fluidité se mesure dans un vrai navigateur.** On peut ajouter `?debug=1` à l'URL pour afficher le compteur d'images par seconde ; pendant un glissement, l'overlay indique aussi la pire image (ms) et le nombre d'images lentes (> 25 ms).
 
 ---
 
