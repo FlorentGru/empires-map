@@ -50,6 +50,11 @@ const PEOPLE: Record<Faction, string> = {
   'turcs-gokturks': 'Göktürks',
   khitans: 'Khitans',
   ouighours: 'Ouïghours',
+  tangoutes: 'Tangoutes',
+  khwarezmiens: 'Khwarezmiens',
+  rus: 'Rus’',
+  'chevaliers-europeens': 'Chevaliers',
+  mamelouks: 'Mamelouks',
 };
 const esc = (v: string) => v.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const plain = (v: string) => v.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();

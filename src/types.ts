@@ -149,7 +149,9 @@ export type Faction =
   | 'portugais' | 'polonais'
   // Asie orientale et steppes
   | 'chinois' | 'xiongnu' | 'mongols' | 'jurchens' | 'mandchous' | 'japonais' | 'coreens'
-  | 'tibetains' | 'vietnamiens' | 'turcs-gokturks' | 'khitans' | 'ouighours';
+  | 'tibetains' | 'vietnamiens' | 'turcs-gokturks' | 'khitans' | 'ouighours'
+  // Empire mongol
+  | 'tangoutes' | 'khwarezmiens' | 'rus' | 'chevaliers-europeens' | 'mamelouks';
 
 export const FACTIONS: Faction[] = [
   'romains', 'latins', 'samnites', 'carthaginois', 'gaulois', 'grecs-macedoniens',
@@ -159,6 +161,7 @@ export const FACTIONS: Faction[] = [
   'portugais', 'polonais',
   'chinois', 'xiongnu', 'mongols', 'jurchens', 'mandchous', 'japonais', 'coreens',
   'tibetains', 'vietnamiens', 'turcs-gokturks', 'khitans', 'ouighours',
+  'tangoutes', 'khwarezmiens', 'rus', 'chevaliers-europeens', 'mamelouks',
 ];
 
 export type Archetype =
@@ -167,13 +170,16 @@ export type Archetype =
   // Époque napoléonienne
   | 'empereur-napoleon' | 'general' | 'roi-moderne' | 'tsar' | 'diplomate' | 'amiral'
   // Asie orientale
-  | 'empereur-chinois' | 'lettre-mandarin' | 'general-chinois' | 'khan' | 'shogun' | 'moine-bouddhiste' | 'imperatrice';
+  | 'empereur-chinois' | 'lettre-mandarin' | 'general-chinois' | 'khan' | 'shogun' | 'moine-bouddhiste' | 'imperatrice'
+  // Empire mongol
+  | 'general-mongol' | 'khatoun';
 
 export const ARCHETYPES: Archetype[] = [
   'senateur', 'consul', 'empereur', 'empereur-byzantin', 'roi', 'pape',
   'chef-barbare', 'calife', 'sultan', 'doge',
   'empereur-napoleon', 'general', 'roi-moderne', 'tsar', 'diplomate', 'amiral',
   'empereur-chinois', 'lettre-mandarin', 'general-chinois', 'khan', 'shogun', 'moine-bouddhiste', 'imperatrice',
+  'general-mongol', 'khatoun',
 ];
 
 export interface ArmyMove {
