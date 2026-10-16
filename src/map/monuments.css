@@ -1,0 +1,98 @@
+/* Monuments : badge de pile et éventail au survol (src/map/monumentLayers.ts). */
+.monument-badge {
+  position: absolute;
+  z-index: 2;
+  min-width: 15px;
+  height: 15px;
+  padding: 0 3px;
+  font: 700 10px/15px var(--font-sans);
+  text-align: center;
+  color: #fff8e6;
+  background: #6d4c2a;
+  border: 1px solid #f7efd9;
+  border-radius: 8px;
+  pointer-events: none;
+}
+.monument-fan {
+  position: absolute;
+  z-index: 4; /* au-dessus des cartes de personnages (.figure-overlay : 2) */
+  width: 0;
+  height: 0;
+}
+/* Zone de survol : un disque invisible qui couvre l'éventail (évite qu'il se referme entre deux pastilles). */
+.monument-fan::before {
+  content: '';
+  position: absolute;
+  left: calc(var(--reach) * -1);
+  top: calc(var(--reach) * -1);
+  width: calc(var(--reach) * 2);
+  height: calc(var(--reach) * 2);
+  border-radius: 50%;
+}
+.monument-fan__lines {
+  position: absolute;
+  left: calc(var(--reach) * -1);
+  top: calc(var(--reach) * -1);
+  width: calc(var(--reach) * 2);
+  height: calc(var(--reach) * 2);
+  overflow: visible;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.monument-fan__lines line {
+  stroke: #6d4c2a;
+  stroke-width: 1.2;
+  stroke-dasharray: 2 2;
+}
+.monument-fan__hub {
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #6d4c2a;
+}
+.monument-fan__item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 84px;
+  margin-left: -42px;
+  margin-top: -14px;
+  padding: 0;
+  font: inherit;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  transform: translate(0, 0) scale(0.4);
+  opacity: 0;
+  transition: transform 0.2s ease-out, opacity 0.2s;
+}
+.monument-fan--open .monument-fan__lines { opacity: 1; }
+.monument-fan--open .monument-fan__item {
+  transform: translate(var(--x), var(--y)) scale(1);
+  opacity: 1;
+}
+.monument-fan__icon { width: 28px; height: 28px; line-height: 0; transition: transform 0.12s; filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3)); }
+.monument-fan__icon svg { width: 28px; height: 28px; }
+.monument-fan__name {
+  margin-top: 1px;
+  padding: 0 4px;
+  font: 10px/1.25 var(--font-sans);
+  color: var(--ink);
+  text-align: center;
+  background: rgba(244, 234, 211, 0.92);
+  border-radius: 4px;
+}
+.monument-fan__item:hover .monument-fan__icon,
+.monument-fan__item:focus-visible .monument-fan__icon { transform: scale(1.18); }
+.monument-fan__item:hover .monument-fan__name,
+.monument-fan__item:focus-visible .monument-fan__name { font-weight: 700; }
+@media (prefers-reduced-motion: reduce) {
+  .monument-fan__item, .monument-fan__lines { transition: none; }
+}

@@ -42,3 +42,26 @@ test('monuments : visibles à la date, réglage et fiche au clic', async ({ page
   await page.getByRole('button', { name: /Monuments : oui/ }).click();
   await expect.poll(async () => (await visible())?.length ?? 0).toBe(0);
 });
+
+test('monuments empilés : le survol les écarte en éventail', async ({ page }) => {
+  test.setTimeout(90_000);
+  // Paris en 1804 (étape sans armée, donc sans vol de caméra différé) : Notre-Dame, les Invalides et Versailles sont empilés.
+  await page.goto('/?empire=napoleon&step=sacre-1804&e2e');
+  await page.waitForFunction(() => (window as any).__map?.getLayer('monuments-icons'), null, { timeout: 60_000 });
+  await page.waitForTimeout(2500);
+  await page.evaluate(() => (window as any).__map.jumpTo({ center: [2.35, 48.85], zoom: 5, pitch: 0 }));
+  await expect(page.locator('.monument-badge').first()).toBeVisible({ timeout: 20_000 });
+  const pt = await page.evaluate(() => {
+    const m = (window as any).__map;
+    const p = m.project([2.35, 48.853]); // Notre-Dame
+    return [p.x, p.y];
+  });
+  // Survol réel : la souris arrive de côté (l'entrée sur le calque déclenche l'éventail).
+  await page.mouse.move(pt[0] - 40, pt[1] - 40);
+  await page.mouse.move(pt[0], pt[1], { steps: 5 });
+  const items = page.locator('.monument-fan__item');
+  await expect(items.first()).toBeVisible();
+  expect(await items.count()).toBeGreaterThanOrEqual(2);
+  await page.getByRole('button', { name: /Invalides/ }).click();
+  await expect(page.getByRole('dialog', { name: /Invalides/ })).toBeVisible();
+});
