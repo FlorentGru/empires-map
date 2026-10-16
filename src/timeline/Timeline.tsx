@@ -1,4 +1,5 @@
 import { memo, useEffect, useMemo, useRef, useState, type CSSProperties, type RefObject } from 'react';
+import { apogeeStepId, formatArea, normalizedAreas } from '../lib/apogee';
 import { eventMeta } from '../lib/eventTypes';
 import { prefersReducedMotion } from '../lib/motion';
 import { firstStepOfPeriods, periodIndexAt } from '../lib/periods';
@@ -19,6 +20,8 @@ interface Props {
 
 /** Largeur minimale par étape (px) : au-delà, la frise défile horizontalement. */
 const MIN_PX_PER_STEP = 22;
+/** Hauteur (px) de la courbe de puissance, posée sur l'axe. */
+const CURVE_H = 20;
 
 export const Timeline = memo(function Timeline({ empire, player, compare2026 = false, story }: Props) {
   const { steps } = empire;
@@ -53,6 +56,19 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
       behavior: prefersReducedMotion() ? 'auto' : 'smooth',
     });
   }, [player.index]);
+
+  // Apogée (plus grande surface) et courbe de puissance : surfaces normalisées, posées au-dessus de l'axe.
+  const apogeeId = useMemo(() => apogeeStepId(empire), [empire]);
+  const areas = empire.stats?.areas;
+  const curve = useMemo(() => {
+    if (!areas) return null;
+    const values = normalizedAreas(steps.map((s) => s.id), areas);
+    const pts = steps.map((s, i) => `${(yearToX(s.year) * 1000).toFixed(1)},${(CURVE_H * (1 - values[i])).toFixed(2)}`);
+    const first = (yearToX(steps[0].year) * 1000).toFixed(1);
+    const last = (yearToX(steps[steps.length - 1].year) * 1000).toFixed(1);
+    return { line: pts.join(' '), area: `${first},${CURVE_H} ${pts.join(' ')} ${last},${CURVE_H}` };
+  }, [areas, steps, yearToX]);
+  const isApogee = !!active && active.id === apogeeId;
 
   const pct = (x: number) => `${(x * 100).toFixed(3)}%`;
 
@@ -104,6 +120,11 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
               {periods[activePeriod].name}
             </span>
           )}
+          {isApogee && (
+            <span className="timeline__apogee-badge" title={empire.apogee?.note ?? "L'empire atteint ici sa plus grande étendue"}>
+              ♛ Apogée{areas?.[active.id] ? ` · ${formatArea(areas[active.id])}` : ''}
+            </span>
+          )}
           <span className="timeline__title">{active?.title}</span>
           <span className="timeline__count">
             {player.index + 1} / {steps.length}
@@ -113,6 +134,12 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
 
       <div className="timeline__scroller" ref={trackRef}>
         <div className="timeline__track" ref={innerRef} style={{ minWidth: steps.length * MIN_PX_PER_STEP }}>
+          {curve && (
+            <svg className="timeline__power" viewBox={`0 0 1000 ${CURVE_H}`} preserveAspectRatio="none" aria-hidden="true">
+              <polygon points={curve.area} />
+              <polyline points={curve.line} vectorEffect="non-scaling-stroke" />
+            </svg>
+          )}
           <div className="timeline__axis" />
           {ticks.map((y, i) => (
             <span
@@ -149,16 +176,19 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
             {steps.map((s, i) => {
               const meta = eventMeta(s.type);
               const isActive = i === player.index;
+              const apogee = s.id === apogeeId;
+              const area = areas?.[s.id] ? ` · ${formatArea(areas[s.id])}` : '';
               return (
-                <li key={s.id} style={{ left: pct(yearToX(s.year)) }}>
+                <li key={s.id} className={apogee ? 'timeline__apogee' : undefined} style={{ left: pct(yearToX(s.year)) }}>
+                  {apogee && <span className="timeline__apogee-crown" aria-hidden="true">♛ Apogée</span>}
                   <button
                     type="button"
-                    className={`timeline__point${isActive ? ' timeline__point--active' : ''}`}
+                    className={`timeline__point${isActive ? ' timeline__point--active' : ''}${apogee ? ' timeline__point--apogee' : ''}`}
                     style={{ '--point-color': meta.color } as CSSProperties}
                     onClick={() => player.goTo(i)}
-                    aria-label={`${formatYear(s.year)} — ${s.title} (${meta.label})`}
+                    aria-label={`${formatYear(s.year)} — ${s.title} (${meta.label})${apogee ? ' — apogée de l\'empire' : ''}`}
                     aria-current={isActive ? 'step' : undefined}
-                    title={`${formatYear(s.year)} — ${s.title}`}
+                    title={`${formatYear(s.year)} — ${s.title}${apogee ? ' — ♛ apogée' : ''}${area}`}
                   />
                 </li>
               );

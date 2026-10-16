@@ -12,6 +12,16 @@ describe.each(ids)('empire « %s »', (empireId) => {
   const steps: any[] = empire.steps ?? [];
   const at = (s: any) => `${empireId}/${s.id}`;
 
+  it('stats.json : une surface par étape et une apogée existante', () => {
+    const file = join(DATA, 'empires', empireId, 'stats.json');
+    expect(exists(file), `${empireId}/stats.json (npm run build:stats)`).toBe(true);
+    const stats = readJson(file);
+    const ids = new Set(steps.map((s) => s.id));
+    expect(ids.has(stats.apogee), `apogée ${stats.apogee}`).toBe(true);
+    for (const s of steps) expect(stats.areas[s.id], `surface de ${at(s)}`).toBeGreaterThan(0);
+    if (empire.apogee) expect(ids.has(empire.apogee.stepId), 'surcharge apogee.stepId').toBe(true);
+  });
+
   it('champs requis et identifiant du dossier', () => {
     expect(empire.id, 'id = nom du dossier').toBe(empireId);
     for (const k of ['name', 'color', 'description']) expect(typeof empire[k], `${empireId}.${k}`).toBe('string');

@@ -1,0 +1,23 @@
+{
+ "areas": {
+  "brumaire-1799": 611081,
+  "marengo-1800": 611081,
+  "luneville-1801": 611081,
+  "amiens-1802": 647009,
+  "sacre-1804": 647009,
+  "trafalgar-1805": 651687,
+  "austerlitz-1805": 651687,
+  "confederation-rhin-1806": 651687,
+  "iena-1806": 651687,
+  "tilsit-1807": 651687,
+  "espagne-1808": 677789,
+  "wagram-1809": 755436,
+  "apogee-1811": 835358,
+  "moscou-1812": 867888,
+  "leipzig-1813": 867888,
+  "abdication-1814": 537374,
+  "waterloo-1815": 537168,
+  "congres-vienne-1815": 532009
+ },
+ "apogee": "moscou-1812"
+}

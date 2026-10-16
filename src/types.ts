@@ -55,7 +55,17 @@ export interface Empire {
   bounds?: [[number, number], [number, number]];
   /** Grandes périodes (« chapitres ») affichées en bandes sur la frise et annoncées en mode Histoire. */
   periods?: EmpirePeriod[];
+  /** Surcharge de l'apogée (par défaut : l'étape de plus grande surface, calculée dans stats.json). */
+  apogee?: { stepId: string; note?: string };
+  /** Surfaces par étape, générées par scripts/build-stats.ts (data/empires/<id>/stats.json). */
+  stats?: EmpireStats;
   steps: TimelineStep[];
+}
+
+/** data/empires/<id>/stats.json : surface « core » (km²) de chaque étape et étape de plus grande surface. */
+export interface EmpireStats {
+  areas: Record<string, number>;
+  apogee: string;
 }
 
 export interface EmpirePeriod {
@@ -172,13 +182,15 @@ export type Archetype =
   // Asie orientale
   | 'empereur-chinois' | 'lettre-mandarin' | 'general-chinois' | 'khan' | 'shogun' | 'moine-bouddhiste' | 'imperatrice'
   // Empire mongol
-  | 'general-mongol' | 'khatoun';
+  | 'general-mongol' | 'khatoun'
+  // Tous empires : savant, philosophe (et figure du guide de l'Atlas)
+  | 'sage';
 
 export const ARCHETYPES: Archetype[] = [
   'senateur', 'consul', 'empereur', 'empereur-byzantin', 'roi', 'pape',
   'chef-barbare', 'calife', 'sultan', 'doge',
   'empereur-napoleon', 'general', 'roi-moderne', 'tsar', 'diplomate', 'amiral',
-  'empereur-chinois', 'lettre-mandarin', 'general-chinois', 'khan', 'shogun', 'moine-bouddhiste', 'imperatrice',
+  'empereur-chinois', 'lettre-mandarin', 'general-chinois', 'khan', 'shogun', 'moine-bouddhiste', 'imperatrice', 'sage',
   'general-mongol', 'khatoun',
 ];
 

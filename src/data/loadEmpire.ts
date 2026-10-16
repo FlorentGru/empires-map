@@ -1,5 +1,5 @@
 import type { FeatureCollection, Geometry, MultiPolygon, Polygon } from 'geojson';
-import type { DiffKind, MorphProperties, Empire, NeighborProperties, TerritoryProperties, TimelineStep } from '../types';
+import type { DiffKind, MorphProperties, Empire, EmpireStats, NeighborProperties, TerritoryProperties, TimelineStep } from '../types';
 import { labelPointsOf } from './labelPoints';
 
 export type TerritoryCollection = FeatureCollection<Polygon | MultiPolygon, TerritoryProperties>;
@@ -14,13 +14,23 @@ const modules = import.meta.glob<Empire>('../../data/empires/*/timeline.json', {
   import: 'default',
 });
 
+// Surfaces par étape (scripts/build-stats.ts), rattachées à chaque empire.
+const statsModules = import.meta.glob<EmpireStats>('../../data/empires/*/stats.json', {
+  eager: true,
+  import: 'default',
+});
+
+function statsOf(id: string): EmpireStats | undefined {
+  return statsModules[`../../data/empires/${id}/stats.json`];
+}
+
 function byStartYear(a: Empire, b: Empire) {
   return a.start - b.start;
 }
 
 function sanitize(empire: Empire): Empire {
   const steps = [...(empire.steps ?? [])].sort((a, b) => a.year - b.year);
-  return { ...empire, steps };
+  return { ...empire, steps, stats: empire.stats ?? statsOf(empire.id) };
 }
 
 const all = Object.values(modules).filter((e): e is Empire => !!e && typeof e.id === 'string').map(sanitize);

@@ -54,3 +54,13 @@ for (const [empire, step] of [
     expect(errors).toEqual([]);
   });
 }
+
+test('l’apogée est marquée sur la frise et y mène', async ({ page }) => {
+  await page.goto('/?empire=rome&step=zama-202');
+  const crown = page.getByRole('button', { name: /apogée de l'empire/ });
+  await expect(crown).toBeVisible();
+  await expect(page.locator('.timeline__apogee-crown')).toHaveText(/Apogée/);
+  await crown.click();
+  await expect(page).toHaveURL(/step=trajan-117/);
+  await expect(page.locator('.timeline__apogee-badge')).toContainText(/M km²/);
+});

@@ -302,6 +302,11 @@ export const ARCHETYPE_INFO: Record<Archetype, FigureInfo> = {
     era: 'IIIe s. av. J.-C. – 1912',
     text: "Le « Fils du Ciel » règne en vertu du mandat céleste, qu'il perd en cas de désordre. Il porte la robe jaune brodée de dragons et le bonnet à pendeloques de perles. Il préside les rites, le calendrier et l'administration, appuyée sur des fonctionnaires lettrés. La fonction naît avec Qin Shi Huangdi en 221 av. J.-C. et prend fin avec Puyi, en 1912.",
   },
+  sage: {
+    label: 'Sage',
+    era: 'Toutes époques',
+    text: "Philosophe, savant ou conseiller réputé pour sa connaissance : Confucius en Chine, Aristote en Grèce, Ibn Sina en Perse. Longue barbe, robe sobre et livre à la main, il enseigne, conseille les souverains et transmet le savoir d'une génération à l'autre. Dans l'Atlas, c'est aussi le guide qui répond à vos questions.",
+  },
   'lettre-mandarin': {
     label: 'Lettré mandarin',
     era: 'Han – Qing',
