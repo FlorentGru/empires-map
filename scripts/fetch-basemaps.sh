@@ -22,6 +22,7 @@ HB_FILES=(
   world_1492 world_1500
   world_bc1000 world_1530 world_1600 world_1650 world_1900 world_1914
   world_1700 world_1715 world_1783 world_1800 world_1815 world_1880
+  world_1878 world_1920 world_1930 world_1938 world_1945 world_1960 world_1994
 )
 
 fetch() {

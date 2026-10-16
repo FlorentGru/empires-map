@@ -1,0 +1,66 @@
+{
+  "factions": [
+    {
+      "id": "francs",
+      "label": "Francs",
+      "drawing": "Guerrier franc du VIIIe-IXe siècle : cotte de mailles (broigne) ou tunique de laine, casque conique à nasal, grand bouclier rond à umbo, lance et épée longue (spatha), cape bleue ou rouge ; chef à cheval avec fanion. Pas de heaume complet.",
+      "info": "Peuple germanique devenu maître de la Gaule avec Clovis. Sous Pépin et Charlemagne, ses cavaliers cuirassés et ses fantassins levés par les comtes conquièrent l'Italie, la Saxe et la Bavière. L'armée est convoquée chaque printemps au Champ de mai. L'équipement coûte cher, d'où une aristocratie guerrière montée. Les Carolingiens règnent sur les Francs de 751 à 987."
+    },
+    {
+      "id": "lombards",
+      "label": "Lombards",
+      "drawing": "Guerrier lombard du VIIIe siècle : longue chevelure et barbe, tunique courte, casque à crête, cotte de mailles pour les chefs, bouclier rond, lance et épée à lame droite ; couronne de fer pour le roi.",
+      "info": "Peuple germanique installé en Italie du Nord en 568. Son royaume, avec Pavie pour capitale, domine la plaine du Pô et deux grands duchés au sud, Spolète et Bénévent. Les rois Aistolf puis Didier menacent Rome et se heurtent aux Francs. Charlemagne y met fin en 774 mais garde la couronne de fer lombarde."
+    },
+    {
+      "id": "saxons",
+      "label": "Saxons",
+      "drawing": "Guerrier saxon du VIIIe siècle : tunique de lin ou de laine, braies, cheveux longs, bouclier rond en bois, lance, long couteau (seax) à la ceinture ; peu ou pas de cotte de mailles ; bonnet de feutre ou tête nue.",
+      "info": "Peuple germanique païen établi entre le Rhin et l'Elbe, sans roi mais organisé en tribus et en assemblées. Ses sanctuaires, comme l'Irminsul, sont détruits par Charlemagne. Le chef Widukind dirige la résistance. La guerre dure de 772 à 804 ; la Saxe est alors convertie et annexée à l'empire."
+    },
+    {
+      "id": "avars",
+      "label": "Avars",
+      "drawing": "Cavalier des steppes du VIIIe siècle : long arc composite, flèches, lance, cotte de lamelles ou de mailles, casque pointu, cheveux tressés ; étriers de métal, petit cheval robuste ; pas de bouclier.",
+      "info": "Cavaliers nomades venus d'Asie centrale au VIe siècle, installés en Pannonie (Hongrie). Leur chef est le khagan. Ils pillent Byzance et la Germanie et amassent un trésor dans leur camp fortifié, le Ring. Les Francs le prennent en 796, et les Avars disparaissent en quelques décennies."
+    },
+    {
+      "id": "vikings",
+      "label": "Vikings",
+      "drawing": "Guerrier scandinave du IXe siècle : casque rond à nasal, cotte de mailles ou tunique de cuir, bouclier rond peint, hache à barbe, épée et lance ; barbe, cheveux tressés ; drakkar en arrière-plan, voile carrée rayée.",
+      "info": "Marins et guerriers du Danemark, de la Norvège et de la Suède. Dès la fin du VIIIe siècle, leurs drakkars frappent les côtes et remontent les fleuves de l'Occident. Ils pillent Paris en 845 et l'assiègent en 885-886. Les rois affaiblis achètent leur départ par un tribut, le Danegeld, avant de leur céder la Normandie (911)."
+    },
+    {
+      "id": "basques",
+      "label": "Basques",
+      "drawing": "Montagnard basque du VIIIe siècle : tunique courte de laine, béret ou bonnet, javelots légers, petit bouclier rond, épée courte ; pas d'armure ; décor de forêt et de montagne.",
+      "info": "Peuple ancien des Pyrénées occidentales, appelé Vascons dans les textes latins. Leur langue n'est pas indo-européenne. Ils résistent aux Wisigoths, aux Francs et aux Arabes. En 778, ils tendent une embuscade à l'arrière-garde de Charlemagne à Roncevaux. Leur royaume de Pampelune (la future Navarre) se forme en 824."
+    }
+  ],
+  "archetypes": [
+    {
+      "id": "roi-franc",
+      "label": "Roi franc",
+      "drawing": "Roi du VIIIe-IXe siècle : longue tunique et manteau de pourpre, couronne d'or simple, longue moustache, épée au côté ; sceptre ou lance.",
+      "info": "Chef de guerre élu à l'origine par les grands, le roi des Francs devient avec l'onction un souverain sacré. Il rend la justice, convoque l'armée au Champ de mai et partage ses terres entre ses fils."
+    },
+    {
+      "id": "empereur-carolingien",
+      "label": "Empereur carolingien",
+      "drawing": "Empereur d'Occident vers 800-880 : manteau de pourpre à bordure d'or, couronne d'or ornée de pierres, globe et épée ; barbe courte ou moustache ; allure plus solennelle que le roi.",
+      "info": "Titre rétabli pour Charlemagne en 800 par le pape Léon III. L'empereur se veut chef de la chrétienté d'Occident, protecteur de l'Église et héritier de Rome. Le titre passe ensuite aux descendants de Charlemagne, de plus en plus faibles."
+    },
+    {
+      "id": "seigneur-franc",
+      "label": "Comte ou seigneur franc",
+      "drawing": "Noble franc : broigne de cuir ou de mailles, casque conique, manteau agrafé sur l'épaule, épée ; version féminine possible en robe longue et voile.",
+      "info": "Comte, marquis ou grand propriétaire qui gouverne une région au nom du roi et lève des hommes pour l'armée. Au IXe siècle ces charges deviennent héréditaires, origine de la féodalité."
+    },
+    {
+      "id": "prelat",
+      "label": "Évêque ou abbé",
+      "drawing": "Prélat du IXe siècle : longue robe, chape brodée, mitre basse ou calotte, crosse ou croix pectorale, livre à la main ; tonsure pour les moines.",
+      "info": "Évêques et abbés conseillent le roi, rédigent les actes, tiennent les écoles et possèdent de vastes domaines. Ils dirigent souvent des contingents de guerriers et jouent un rôle politique de premier plan."
+    }
+  ]
+}

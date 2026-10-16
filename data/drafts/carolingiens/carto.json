@@ -1,0 +1,1697 @@
+{
+  "empire": "carolingiens",
+  "basemapNote": "Étendue nécessaire ≈ [-12, 36, 26, 58] : tout est à l'intérieur du fond de carte actuel [-25,-40,150,72]. Pas d'antiméridien.",
+  "steps": [
+    {
+      "id": "pepin-sacre-751",
+      "year": 751,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Royaume des Francs",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "snapshot": "world_700",
+                "match": "^Frankish Kingdom$"
+              },
+              {
+                "snapshot": "world_700",
+                "match": "^Neustria$"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Gascogne (Vasconie)",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_700",
+            "match": "^Vasconia$"
+          }
+        },
+        {
+          "name": "Frise",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_700",
+            "match": "^Frisians$"
+          }
+        }
+      ],
+      "notes": "Instantané world_700 : Frankish Kingdom + Neustria (royaume des Francs), Vasconie et Frise en vassaux. Aquitaine et Bavière, duchés quasi autonomes, restent comptés dans le bloc franc du snapshot. Septimanie encore musulmane (hors empire)."
+    },
+    {
+      "id": "donation-pepin-756",
+      "year": 756,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "États pontificaux",
+          "status": "vassal",
+          "source": {
+            "region": "États pontificaux"
+          }
+        },
+        {
+          "name": "Royaume des Francs",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "snapshot": "world_700",
+                "match": "^Frankish Kingdom$"
+              },
+              {
+                "snapshot": "world_700",
+                "match": "^Neustria$"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Gascogne (Vasconie)",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_700",
+            "match": "^Vasconia$"
+          }
+        },
+        {
+          "name": "Frise",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_700",
+            "match": "^Frisians$"
+          }
+        }
+      ],
+      "notes": "Même base qu'en 751 ; États pontificaux dessinés à la main (duché de Rome, exarchat de Ravenne, Pentapole), en vassal sous protection franque. Royaume lombard hors empire."
+    },
+    {
+      "id": "charlemagne-roi-768",
+      "year": 768,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "États pontificaux",
+          "status": "vassal",
+          "source": {
+            "region": "États pontificaux"
+          }
+        },
+        {
+          "name": "Royaume des Francs",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "snapshot": "world_700",
+                "match": "^Frankish Kingdom$"
+              },
+              {
+                "snapshot": "world_700",
+                "match": "^Neustria$"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Septimanie",
+          "status": "core",
+          "source": {
+            "region": "Septimanie"
+          }
+        },
+        {
+          "name": "Gascogne (Vasconie)",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_700",
+            "match": "^Vasconia$"
+          }
+        },
+        {
+          "name": "Frise",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_700",
+            "match": "^Frisians$"
+          }
+        }
+      ],
+      "notes": "Base 700 + Septimanie (région dessinée, prise de Narbonne en 759). Bretagne, Saxe, Lombardie hors empire."
+    },
+    {
+      "id": "pavie-774",
+      "year": 774,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "États pontificaux",
+          "status": "vassal",
+          "source": {
+            "region": "États pontificaux"
+          }
+        },
+        {
+          "name": "Royaume des Francs",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "snapshot": "world_700",
+                    "match": "^Frankish Kingdom$"
+                  },
+                  {
+                    "snapshot": "world_700",
+                    "match": "^Neustria$"
+                  }
+                ]
+              },
+              {
+                "snapshot": "world_700",
+                "match": "^Frisians$"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Septimanie",
+          "status": "core",
+          "source": {
+            "region": "Septimanie"
+          }
+        },
+        {
+          "name": "Royaume lombard (Charlemagne)",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "region": "Royaume d'Italie"
+              },
+              {
+                "region": "Lagune de Venise"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Gascogne (Vasconie)",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_700",
+            "match": "^Vasconia$"
+          }
+        }
+      ],
+      "notes": "Base 700 + royaume lombard (région « Royaume d'Italie », qui inclut aussi Spolète par simplification) ; Frise intégrée. Bénévent hors empire. Instantané 700 trop ancien pour l'Italie : composition manuelle."
+    },
+    {
+      "id": "roncevaux-778",
+      "year": 778,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "États pontificaux",
+          "status": "vassal",
+          "source": {
+            "region": "États pontificaux"
+          }
+        },
+        {
+          "name": "Royaume des Francs",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "snapshot": "world_700",
+                    "match": "^Frankish Kingdom$"
+                  },
+                  {
+                    "snapshot": "world_700",
+                    "match": "^Neustria$"
+                  }
+                ]
+              },
+              {
+                "snapshot": "world_700",
+                "match": "^Frisians$"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Septimanie",
+          "status": "core",
+          "source": {
+            "region": "Septimanie"
+          }
+        },
+        {
+          "name": "Royaume lombard (Charlemagne)",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "region": "Royaume d'Italie"
+              },
+              {
+                "region": "Lagune de Venise"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Gascogne (Vasconie)",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_700",
+            "match": "^Vasconia$"
+          }
+        }
+      ],
+      "notes": "Identique à 774 ; Pampelune et la Vasconie sud-pyrénéenne restent hors empire."
+    },
+    {
+      "id": "verden-782",
+      "year": 782,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "États pontificaux",
+          "status": "vassal",
+          "source": {
+            "region": "États pontificaux"
+          }
+        },
+        {
+          "name": "Royaume des Francs",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "snapshot": "world_700",
+                    "match": "^Frankish Kingdom$"
+                  },
+                  {
+                    "snapshot": "world_700",
+                    "match": "^Neustria$"
+                  }
+                ]
+              },
+              {
+                "snapshot": "world_700",
+                "match": "^Frisians$"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Septimanie",
+          "status": "core",
+          "source": {
+            "region": "Septimanie"
+          }
+        },
+        {
+          "name": "Royaume lombard (Charlemagne)",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "region": "Royaume d'Italie"
+              },
+              {
+                "region": "Lagune de Venise"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Saxe (en cours de soumission)",
+          "status": "vassal",
+          "source": {
+            "region": "Saxe"
+          }
+        },
+        {
+          "name": "Gascogne (Vasconie)",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_700",
+            "match": "^Vasconia$"
+          }
+        }
+      ],
+      "notes": "Base 774 + Saxe en vassal (région dessinée, l'instantané 700 découpe mal la Saxe)."
+    },
+    {
+      "id": "baviere-788",
+      "year": 788,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "États pontificaux",
+          "status": "vassal",
+          "source": {
+            "region": "États pontificaux"
+          }
+        },
+        {
+          "name": "Royaume des Francs",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "snapshot": "world_700",
+                    "match": "^Frankish Kingdom$"
+                  },
+                  {
+                    "snapshot": "world_700",
+                    "match": "^Neustria$"
+                  }
+                ]
+              },
+              {
+                "snapshot": "world_700",
+                "match": "^Frisians$"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Bavière orientale et Salzbourg",
+          "status": "core",
+          "source": {
+            "region": "Bavière orientale et Salzbourg"
+          }
+        },
+        {
+          "name": "Septimanie",
+          "status": "core",
+          "source": {
+            "region": "Septimanie"
+          }
+        },
+        {
+          "name": "Marche d'Espagne (Gérone)",
+          "status": "core",
+          "source": {
+            "region": "Catalogne septentrionale"
+          }
+        },
+        {
+          "name": "Royaume lombard (Charlemagne)",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "region": "Royaume d'Italie"
+              },
+              {
+                "region": "Lagune de Venise"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Saxe",
+          "status": "core",
+          "source": {
+            "region": "Saxe"
+          }
+        },
+        {
+          "name": "Duché de Bénévent",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Lombard duchies$"
+          }
+        },
+        {
+          "name": "Gascogne (Vasconie)",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_700",
+            "match": "^Vasconia$"
+          }
+        }
+      ],
+      "notes": "Base 782 + Saxe core, Bavière orientale/Salzbourg annexée (région), Gérone (Marche d'Espagne), Bénévent tributaire depuis 787 (instantané 800)."
+    },
+    {
+      "id": "avars-796",
+      "year": 796,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "États pontificaux",
+          "status": "vassal",
+          "source": {
+            "region": "États pontificaux"
+          }
+        },
+        {
+          "name": "Royaume des Francs",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "snapshot": "world_700",
+                    "match": "^Frankish Kingdom$"
+                  },
+                  {
+                    "snapshot": "world_700",
+                    "match": "^Neustria$"
+                  }
+                ]
+              },
+              {
+                "snapshot": "world_700",
+                "match": "^Frisians$"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Bavière orientale et Salzbourg",
+          "status": "core",
+          "source": {
+            "region": "Bavière orientale et Salzbourg"
+          }
+        },
+        {
+          "name": "Septimanie",
+          "status": "core",
+          "source": {
+            "region": "Septimanie"
+          }
+        },
+        {
+          "name": "Marche d'Espagne (Gérone)",
+          "status": "core",
+          "source": {
+            "region": "Catalogne septentrionale"
+          }
+        },
+        {
+          "name": "Royaume lombard (Charlemagne)",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "region": "Royaume d'Italie"
+              },
+              {
+                "region": "Lagune de Venise"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Saxe",
+          "status": "core",
+          "source": {
+            "region": "Saxe"
+          }
+        },
+        {
+          "name": "Duché de Bénévent",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Lombard duchies$"
+          }
+        },
+        {
+          "name": "Marche d'Avarie",
+          "status": "vassal",
+          "source": {
+            "region": "Pannonie occidentale"
+          }
+        },
+        {
+          "name": "Gascogne (Vasconie)",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_700",
+            "match": "^Vasconia$"
+          }
+        }
+      ],
+      "notes": "Base 788 + marche d'Avarie (Pannonie occidentale, région) en vassal."
+    },
+    {
+      "id": "empereur-800",
+      "year": 800,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "États pontificaux",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Papal States$"
+          }
+        },
+        {
+          "name": "Empire carolingien",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "snapshot": "world_800",
+                "match": "^Carolingian Empire$"
+              },
+              {
+                "region": "Pampelune et Vasconie sud-pyrénéenne"
+              },
+              {
+                "region": "Lagune de Venise"
+              },
+              {
+                "region": "Slaves à l'est de l'Elbe et de la Saale"
+              },
+              {
+                "region": "Barcelone et Catalogne méridionale"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Duché de Bénévent",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Lombard duchies$"
+          }
+        },
+        {
+          "name": "Bretagne",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Britany$"
+          }
+        },
+        {
+          "name": "Marche d'Avarie",
+          "status": "vassal",
+          "source": {
+            "region": "Pannonie occidentale"
+          }
+        }
+      ],
+      "notes": "Instantané world_800 (Carolingian Empire, Papal States, Lombard duchies, Britany) ; retraits : lagune de Venise (byzantine), Pampelune (hors empire), Barcelone (prise en 801). Marche d'Avarie ajoutée en vassal."
+    },
+    {
+      "id": "barcelone-801",
+      "year": 801,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "États pontificaux",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Papal States$"
+          }
+        },
+        {
+          "name": "Empire carolingien",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "snapshot": "world_800",
+                "match": "^Carolingian Empire$"
+              },
+              {
+                "region": "Pampelune et Vasconie sud-pyrénéenne"
+              },
+              {
+                "region": "Lagune de Venise"
+              },
+              {
+                "region": "Slaves à l'est de l'Elbe et de la Saale"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Duché de Bénévent",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Lombard duchies$"
+          }
+        },
+        {
+          "name": "Bretagne",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Britany$"
+          }
+        },
+        {
+          "name": "Marche d'Avarie",
+          "status": "vassal",
+          "source": {
+            "region": "Pannonie occidentale"
+          }
+        }
+      ],
+      "notes": "Instantané 800 complet : la Catalogne méridionale est incluse après la prise de Barcelone."
+    },
+    {
+      "id": "mort-charlemagne-814",
+      "year": 814,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "États pontificaux",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Papal States$"
+          }
+        },
+        {
+          "name": "Empire carolingien",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "snapshot": "world_800",
+                "match": "^Carolingian Empire$"
+              },
+              {
+                "region": "Pampelune et Vasconie sud-pyrénéenne"
+              },
+              {
+                "region": "Lagune de Venise"
+              },
+              {
+                "region": "Slaves à l'est de l'Elbe et de la Saale"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Duché de Bénévent",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Lombard duchies$"
+          }
+        },
+        {
+          "name": "Bretagne",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Britany$"
+          }
+        },
+        {
+          "name": "Marche d'Avarie",
+          "status": "vassal",
+          "source": {
+            "region": "Pannonie occidentale"
+          }
+        }
+      ],
+      "notes": "Identique à 801 (apogée territorial)."
+    },
+    {
+      "id": "ordinatio-817",
+      "year": 817,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "États pontificaux",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Papal States$"
+          }
+        },
+        {
+          "name": "Empire carolingien",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "snapshot": "world_800",
+                "match": "^Carolingian Empire$"
+              },
+              {
+                "region": "Pampelune et Vasconie sud-pyrénéenne"
+              },
+              {
+                "region": "Lagune de Venise"
+              },
+              {
+                "region": "Slaves à l'est de l'Elbe et de la Saale"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Duché de Bénévent",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Lombard duchies$"
+          }
+        },
+        {
+          "name": "Bretagne",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Britany$"
+          }
+        },
+        {
+          "name": "Marche d'Avarie",
+          "status": "vassal",
+          "source": {
+            "region": "Pannonie occidentale"
+          }
+        }
+      ],
+      "notes": "Identique à 814 ; les sous-royaumes d'Aquitaine et de Bavière ne sont pas distingués."
+    },
+    {
+      "id": "fontenoy-841",
+      "year": 841,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "États pontificaux",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Papal States$"
+          }
+        },
+        {
+          "name": "Empire carolingien",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "snapshot": "world_800",
+                "match": "^Carolingian Empire$"
+              },
+              {
+                "region": "Pampelune et Vasconie sud-pyrénéenne"
+              },
+              {
+                "region": "Lagune de Venise"
+              },
+              {
+                "region": "Slaves à l'est de l'Elbe et de la Saale"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Bretagne",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Britany$"
+          }
+        },
+        {
+          "name": "Marche d'Avarie",
+          "status": "vassal",
+          "source": {
+            "region": "Pannonie occidentale"
+          }
+        }
+      ],
+      "notes": "Instantané 800 ; Bénévent retiré (indépendant depuis 839). Les camps (Lothaire, Charles, Louis) ne sont pas cartographiés."
+    },
+    {
+      "id": "strasbourg-842",
+      "year": 842,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "États pontificaux",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Papal States$"
+          }
+        },
+        {
+          "name": "Empire carolingien",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "snapshot": "world_800",
+                "match": "^Carolingian Empire$"
+              },
+              {
+                "region": "Pampelune et Vasconie sud-pyrénéenne"
+              },
+              {
+                "region": "Lagune de Venise"
+              },
+              {
+                "region": "Slaves à l'est de l'Elbe et de la Saale"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Bretagne",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Britany$"
+          }
+        },
+        {
+          "name": "Marche d'Avarie",
+          "status": "vassal",
+          "source": {
+            "region": "Pannonie occidentale"
+          }
+        }
+      ],
+      "notes": "Identique à 841."
+    },
+    {
+      "id": "verdun-843",
+      "year": 843,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "États pontificaux",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Papal States$"
+          }
+        },
+        {
+          "name": "Francie occidentale (Charles le Chauve)",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "snapshot": "world_900",
+                "match": "^West Francia$"
+              },
+              {
+                "region": "Pampelune et Vasconie sud-pyrénéenne"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Francie orientale (Louis le Germanique)",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "snapshot": "world_900",
+                "match": "^East Francia$"
+              },
+              {
+                "region": "Lotharingie"
+              },
+              {
+                "region": "Slaves à l'est de l'Elbe et de la Saale"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Francie médiane (Lothaire Ier)",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "union": [
+                  {
+                    "snapshot": "world_900",
+                    "match": "^Carolingian Empire$"
+                  },
+                  {
+                    "region": "Lotharingie"
+                  }
+                ]
+              },
+              {
+                "region": "Lagune de Venise"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition à partir de world_900 : West Francia = Francie occidentale (la limite est proche de la ligne Escaut-Meuse-Saône-Rhône) ; East Francia moins la région Lotharingie = Francie orientale ; Carolingian Empire + Lotharingie = Francie médiane. Écart : Spire, Worms et Mayence (rive gauche du Rhin, à Louis en 843) restent dans l'est car hors Lotharingie ; Pampelune et Venise retirées."
+    },
+    {
+      "id": "paris-845",
+      "year": 845,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "États pontificaux",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Papal States$"
+          }
+        },
+        {
+          "name": "Francie occidentale (Charles le Chauve)",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "snapshot": "world_900",
+                "match": "^West Francia$"
+              },
+              {
+                "region": "Pampelune et Vasconie sud-pyrénéenne"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Francie orientale (Louis le Germanique)",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "snapshot": "world_900",
+                "match": "^East Francia$"
+              },
+              {
+                "region": "Lotharingie"
+              },
+              {
+                "region": "Slaves à l'est de l'Elbe et de la Saale"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Francie médiane (Lothaire Ier)",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "union": [
+                  {
+                    "snapshot": "world_900",
+                    "match": "^Carolingian Empire$"
+                  },
+                  {
+                    "region": "Lotharingie"
+                  }
+                ]
+              },
+              {
+                "region": "Lagune de Venise"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Identique à 843."
+    },
+    {
+      "id": "prum-855",
+      "year": 855,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "États pontificaux",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Papal States$"
+          }
+        },
+        {
+          "name": "Francie occidentale (Charles le Chauve)",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "snapshot": "world_900",
+                "match": "^West Francia$"
+              },
+              {
+                "region": "Pampelune et Vasconie sud-pyrénéenne"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Francie orientale (Louis le Germanique)",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "snapshot": "world_900",
+                "match": "^East Francia$"
+              },
+              {
+                "region": "Lotharingie"
+              },
+              {
+                "region": "Slaves à l'est de l'Elbe et de la Saale"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Lotharingie (Lothaire II)",
+          "status": "core",
+          "source": {
+            "region": "Lotharingie"
+          }
+        },
+        {
+          "name": "Provence et Bourgogne (Charles de Provence)",
+          "status": "core",
+          "source": {
+            "region": "Provence et Bourgogne"
+          }
+        },
+        {
+          "name": "Royaume d'Italie (Louis II, empereur)",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "region": "Royaume d'Italie"
+              },
+              {
+                "region": "Lagune de Venise"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Partage de Lothaire Ier en trois : régions dessinées « Lotharingie », « Provence et Bourgogne », « Royaume d'Italie » (inclut Spolète). Francie occidentale et orientale comme en 843."
+    },
+    {
+      "id": "meerssen-870",
+      "year": 870,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "États pontificaux",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Papal States$"
+          }
+        },
+        {
+          "name": "Francie occidentale (Charles le Chauve)",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "snapshot": "world_900",
+                    "match": "^West Francia$"
+                  },
+                  {
+                    "region": "Pampelune et Vasconie sud-pyrénéenne"
+                  }
+                ]
+              },
+              {
+                "region": "Lotharingie occidentale (Meerssen)"
+              },
+              {
+                "region": "Lyonnais et Vienne"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Francie orientale (Louis le Germanique)",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "snapshot": "world_900",
+                    "match": "^East Francia$"
+                  },
+                  {
+                    "region": "Lotharingie"
+                  },
+                  {
+                    "region": "Slaves à l'est de l'Elbe et de la Saale"
+                  }
+                ]
+              },
+              {
+                "diff": [
+                  {
+                    "region": "Lotharingie"
+                  },
+                  {
+                    "region": "Lotharingie occidentale (Meerssen)"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume d'Italie et Provence (Louis II, empereur)",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "union": [
+                  {
+                    "region": "Royaume d'Italie"
+                  },
+                  {
+                    "diff": [
+                      {
+                        "region": "Provence et Bourgogne"
+                      },
+                      {
+                        "region": "Lyonnais et Vienne"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "region": "Lagune de Venise"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Lotharingie coupée en deux (région « Lotharingie occidentale » à l'ouest, le reste à l'est) ; Lyon et Vienne à Charles le Chauve ; Louis II garde l'Italie et la Provence méridionale. Tracé de la ligne approximatif."
+    },
+    {
+      "id": "charles-gros-884",
+      "year": 884,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "États pontificaux",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Papal States$"
+          }
+        },
+        {
+          "name": "Empire carolingien réunifié (Charles le Gros)",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "snapshot": "world_800",
+                "match": "^Carolingian Empire$"
+              },
+              {
+                "region": "Pampelune et Vasconie sud-pyrénéenne"
+              },
+              {
+                "region": "Lagune de Venise"
+              },
+              {
+                "region": "Slaves à l'est de l'Elbe et de la Saale"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Bretagne",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Britany$"
+          }
+        }
+      ],
+      "notes": "Instantané 800 (étendue maximale de l'empire) ; Pampelune et Venise retirées ; Bretagne en vassal ; Pannonie et Bénévent hors empire."
+    },
+    {
+      "id": "siege-paris-885",
+      "year": 885,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "États pontificaux",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Papal States$"
+          }
+        },
+        {
+          "name": "Empire carolingien réunifié (Charles le Gros)",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "snapshot": "world_800",
+                "match": "^Carolingian Empire$"
+              },
+              {
+                "region": "Pampelune et Vasconie sud-pyrénéenne"
+              },
+              {
+                "region": "Lagune de Venise"
+              },
+              {
+                "region": "Slaves à l'est de l'Elbe et de la Saale"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Bretagne",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_800",
+            "match": "^Britany$"
+          }
+        }
+      ],
+      "notes": "Identique à 884."
+    },
+    {
+      "id": "deposition-887",
+      "year": 887,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Francie occidentale (Eudes)",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "snapshot": "world_900",
+                "match": "^West Francia$"
+              },
+              {
+                "region": "Pampelune et Vasconie sud-pyrénéenne"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Francie orientale (Arnulf de Carinthie)",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "snapshot": "world_900",
+                    "match": "^East Francia$"
+                  },
+                  {
+                    "region": "Slaves à l'est de l'Elbe et de la Saale"
+                  }
+                ]
+              },
+              {
+                "region": "Lotharingie"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Haute-Bourgogne et Provence (Rodolphe, Louis l'Aveugle)",
+          "status": "core",
+          "source": {
+            "region": "Provence et Bourgogne"
+          }
+        },
+        {
+          "name": "Royaume d'Italie (Bérenger de Frioul)",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "region": "Royaume d'Italie"
+              },
+              {
+                "region": "Lagune de Venise"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Cinq royaumes : Francie occidentale (world_900), orientale (world_900 + Lotharingie), Haute-Bourgogne/Provence et Italie (régions dessinées). États pontificaux laissés hors des entités (autonomes)."
+    }
+  ],
+  "checkpoints": [
+    {
+      "name": "Aix-la-Chapelle",
+      "pt": [
+        6.0839,
+        50.7753
+      ],
+      "where": "core"
+    },
+    {
+      "name": "Paris",
+      "pt": [
+        2.3522,
+        48.8566
+      ],
+      "where": "core"
+    },
+    {
+      "name": "Rome (avant les États pontificaux)",
+      "pt": [
+        12.4964,
+        41.9028
+      ],
+      "where": "not-core",
+      "from": "pepin-sacre-751",
+      "to": "pepin-sacre-751"
+    },
+    {
+      "name": "Rome (États pontificaux)",
+      "pt": [
+        12.4964,
+        41.9028
+      ],
+      "where": "vassal",
+      "from": "donation-pepin-756",
+      "to": "siege-paris-885"
+    },
+    {
+      "name": "Pavie (lombarde)",
+      "pt": [
+        9.1594,
+        45.1847
+      ],
+      "where": "not-core",
+      "from": "pepin-sacre-751",
+      "to": "donation-pepin-756"
+    },
+    {
+      "name": "Pavie",
+      "pt": [
+        9.1594,
+        45.1847
+      ],
+      "where": "core",
+      "from": "pavie-774"
+    },
+    {
+      "name": "Gérone",
+      "pt": [
+        2.8214,
+        41.9794
+      ],
+      "where": "core",
+      "from": "baviere-788"
+    },
+    {
+      "name": "Barcelone (avant 801)",
+      "pt": [
+        2.1,
+        41.45
+      ],
+      "where": "not-core",
+      "from": "pepin-sacre-751",
+      "to": "empereur-800"
+    },
+    {
+      "name": "Barcelone",
+      "pt": [
+        2.1,
+        41.45
+      ],
+      "where": "core",
+      "from": "barcelone-801",
+      "to": "ordinatio-817"
+    },
+    {
+      "name": "Pampelune",
+      "pt": [
+        -1.6432,
+        42.8125
+      ],
+      "where": "not-core"
+    },
+    {
+      "name": "Roncevaux (Vasconie)",
+      "pt": [
+        -1.3197,
+        43.0199
+      ],
+      "where": "vassal",
+      "from": "pepin-sacre-751",
+      "to": "avars-796"
+    },
+    {
+      "name": "Ratisbonne",
+      "pt": [
+        12.1016,
+        49.0134
+      ],
+      "where": "core"
+    },
+    {
+      "name": "Salzbourg (avant 788)",
+      "pt": [
+        13.04,
+        47.8
+      ],
+      "where": "not-core",
+      "from": "pepin-sacre-751",
+      "to": "verden-782"
+    },
+    {
+      "name": "Salzbourg",
+      "pt": [
+        13.04,
+        47.8
+      ],
+      "where": "core",
+      "from": "baviere-788"
+    },
+    {
+      "name": "Paderborn (avant)",
+      "pt": [
+        8.7544,
+        51.7189
+      ],
+      "where": "not-core",
+      "from": "pepin-sacre-751",
+      "to": "roncevaux-778"
+    },
+    {
+      "name": "Paderborn (Saxe soumise)",
+      "pt": [
+        8.7544,
+        51.7189
+      ],
+      "where": "vassal",
+      "from": "verden-782",
+      "to": "verden-782"
+    },
+    {
+      "name": "Paderborn",
+      "pt": [
+        8.7544,
+        51.7189
+      ],
+      "where": "core",
+      "from": "baviere-788"
+    },
+    {
+      "name": "Verden",
+      "pt": [
+        9.2294,
+        52.9214
+      ],
+      "where": "vassal",
+      "from": "verden-782",
+      "to": "verden-782"
+    },
+    {
+      "name": "Hambourg",
+      "pt": [
+        9.9937,
+        53.5511
+      ],
+      "where": "core",
+      "from": "baviere-788"
+    },
+    {
+      "name": "Brandebourg sur la Havel (Slaves)",
+      "pt": [
+        12.5606,
+        52.4125
+      ],
+      "where": "not-core"
+    },
+    {
+      "name": "Magdebourg (rive gauche, poste frontière)",
+      "pt": [
+        11.6276,
+        52.1205
+      ],
+      "where": "core",
+      "from": "empereur-800"
+    },
+    {
+      "name": "Venise",
+      "pt": [
+        12.3155,
+        45.4408
+      ],
+      "where": "not-core"
+    },
+    {
+      "name": "Bénévent (tributaire)",
+      "pt": [
+        14.7758,
+        41.1298
+      ],
+      "where": "vassal",
+      "from": "baviere-788",
+      "to": "ordinatio-817"
+    },
+    {
+      "name": "Cordoue",
+      "pt": [
+        -4.7794,
+        37.8882
+      ],
+      "where": "not-core"
+    },
+    {
+      "name": "Londres",
+      "pt": [
+        -0.092,
+        51.51
+      ],
+      "where": "not-core"
+    },
+    {
+      "name": "Narbonne (musulmane)",
+      "pt": [
+        3.0,
+        43.18
+      ],
+      "where": "not-core",
+      "from": "pepin-sacre-751",
+      "to": "donation-pepin-756"
+    },
+    {
+      "name": "Narbonne",
+      "pt": [
+        3.0,
+        43.18
+      ],
+      "where": "core",
+      "from": "charlemagne-roi-768"
+    },
+    {
+      "name": "Lyon",
+      "pt": [
+        4.832,
+        45.764
+      ],
+      "where": "core"
+    },
+    {
+      "name": "Strasbourg",
+      "pt": [
+        7.7521,
+        48.5734
+      ],
+      "where": "core"
+    },
+    {
+      "name": "Quimper (Bretagne indépendante)",
+      "pt": [
+        -4.1,
+        48.0
+      ],
+      "where": "not-core",
+      "from": "pepin-sacre-751",
+      "to": "avars-796"
+    },
+    {
+      "name": "Quimper (Bretagne soumise)",
+      "pt": [
+        -4.1,
+        48.0
+      ],
+      "where": "vassal",
+      "from": "empereur-800",
+      "to": "strasbourg-842"
+    },
+    {
+      "name": "Vienne (Autriche, marche d'Avarie)",
+      "pt": [
+        16.37,
+        48.2
+      ],
+      "where": "vassal",
+      "from": "avars-796",
+      "to": "strasbourg-842"
+    },
+    {
+      "name": "Vienne (Autriche, Francie orientale)",
+      "pt": [
+        16.37,
+        48.2
+      ],
+      "where": "core",
+      "from": "verdun-843",
+      "to": "meerssen-870"
+    },
+    {
+      "name": "Trèves (Francie orientale après 870)",
+      "pt": [
+        6.6414,
+        49.7567
+      ],
+      "where": "core",
+      "from": "meerssen-870",
+      "to": "meerssen-870"
+    }
+  ]
+}

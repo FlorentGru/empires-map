@@ -1,0 +1,1849 @@
+{
+  "id": "carolingiens",
+  "name": "Empire carolingien",
+  "color": "#6b4c9a",
+  "start": 751,
+  "end": 888,
+  "description": "En 751, Pépin le Bref se fait sacrer roi des Francs. Son fils Charlemagne, couronné empereur à Rome en l'an 800, rassemble presque tout l'Occident chrétien, de l'Elbe aux Pyrénées. Après sa mort, ses petits-fils se disputent l'héritage, le partagent à Verdun en 843, et les Vikings ravagent les fleuves. En 888, l'unité disparaît : la France et l'Allemagne sont en gestation.",
+  "view": {
+    "center": [
+      8,
+      48
+    ],
+    "zoom": 4
+  },
+  "bounds": [
+    [
+      -12,
+      36
+    ],
+    [
+      26,
+      58
+    ]
+  ],
+  "periods": [
+    {
+      "id": "pepin-charlemagne",
+      "name": "Pépin et Charlemagne",
+      "start": 751,
+      "end": 814,
+      "color": "#a68bc9",
+      "summary": "Les Carolingiens prennent la couronne des Francs et, en une génération, conquièrent l'Italie lombarde, la Saxe, la Bavière et la Catalogne. Le jour de Noël 800, le pape couronne Charlemagne empereur à Rome : l'Occident chrétien a de nouveau un empereur."
+    },
+    {
+      "id": "partages",
+      "name": "Louis le Pieux et les partages",
+      "start": 814,
+      "end": 888,
+      "color": "#c98b6b",
+      "summary": "Après la mort de Charlemagne, l'empire est tiraillé entre les fils et petits-fils de Louis le Pieux. Le traité de Verdun (843) le coupe en trois royaumes, les Vikings remontent les fleuves jusqu'à Paris, et en 888 l'unité disparaît pour toujours."
+    }
+  ],
+  "steps": [
+    {
+      "id": "pepin-sacre-751",
+      "year": 751,
+      "title": "Pépin le Bref devient roi des Francs",
+      "type": "politique",
+      "location": [
+        3.3272,
+        49.3817
+      ],
+      "zoom": 4.5,
+      "summary": "En 751, Pépin le Bref, maire du palais, fait enfermer le dernier roi mérovingien dans un monastère et se fait élire roi à Soissons : la dynastie des Carolingiens naît.",
+      "details": "Depuis plus d'un siècle, les rois **mérovingiens** (la dynastie de Clovis) règnent sans gouverner : le vrai pouvoir appartient au **maire du palais**, sorte de Premier ministre qui commande l'armée et distribue les terres. La famille des **Pippinides**, ancêtres des Carolingiens, tient ce poste de père en fils. Charles Martel a arrêté les cavaliers musulmans à Poitiers en 732 ; son fils **Pépin**, dit « le Bref » (le Petit), en recueille les fruits.\n\nPépin veut le titre autant que la réalité du pouvoir, mais détrôner un roi est un sacrilège. Il envoie donc des messagers à Rome demander au pape **Zacharie** si celui qui n'a pas le pouvoir mérite d'être roi. La réponse, favorable, lui donne la caution morale dont il rêvait. À l'automne 751, une assemblée de grands à **Soissons** l'élit à la façon franque, en le hissant sur un bouclier. Le dernier Mérovingien, **Childéric III**, est tondu, symbole de la perte de sa royauté, et envoyé finir ses jours au monastère.\n\nEn 751 ou 752, Pépin reçoit aussi une **onction** d'huile sainte des mains d'évêques, comme les rois de l'Ancien Testament. Ce rite, nouveau chez les Francs, fait du roi un représentant de Dieu. Il scelle l'alliance entre la monarchie franque et l'Église, qui structurera tout le Moyen Âge. Le royaume s'étend alors de l'Atlantique à la Germanie, sans la Septimanie (le Languedoc côtier), encore aux mains des musulmans.",
+      "consequences": [
+        "La couronne des Francs passe des Mérovingiens aux Carolingiens, qui la garderont jusqu'en 987.",
+        "Le roi franc reçoit une onction religieuse : son pouvoir devient sacré et lié à l'Église.",
+        "Le pape trouve en Pépin un protecteur possible face aux Lombards qui menacent Rome.",
+        "Le royaume reste le plus vaste d'Occident : Neustrie, Austrasie, Burgondie, Provence, Aquitaine à demi autonome et Bavière vassale."
+      ],
+      "territory": "pepin-sacre-751",
+      "sources": [
+        {
+          "label": "Annales royales franques, année 750-751"
+        },
+        {
+          "label": "Éginhard, Vie de Charlemagne, I"
+        },
+        {
+          "label": "Wikipédia — Pépin le Bref",
+          "url": "https://fr.wikipedia.org/wiki/P%C3%A9pin_le_Bref"
+        }
+      ],
+      "territoryNote": "Royaume des Francs de Pépin : Neustrie, Austrasie, Bourgogne, Provence, Alémanie, Thuringe, Bavière (duché vassal de Tassilon III, soumis en 757) et Aquitaine (duché pratiquement autonome) ; Frise en partie soumise ; Gascogne (Vasconie) tributaire. La Septimanie (Narbonne, Nîmes) reste musulmane jusqu'en 759. Bretagne, Saxe, Lombardie et Espagne hors du royaume.",
+      "figures": [
+        {
+          "name": "Pépin le Bref",
+          "role": "Maire du palais, élu roi des Francs",
+          "faction": "francs",
+          "archetype": "roi-franc",
+          "quote": "Mieux vaut appeler roi celui qui a le pouvoir (d'après les Annales royales franques)",
+          "position": [
+            3.3272,
+            49.3817
+          ]
+        },
+        {
+          "name": "Zacharie",
+          "role": "Pape, qui approuve le changement de dynastie",
+          "faction": "romains",
+          "archetype": "pape",
+          "quote": "(formule libre) Qui a le pouvoir doit porter le titre.",
+          "position": [
+            12.4534,
+            41.9022
+          ]
+        }
+      ]
+    },
+    {
+      "id": "donation-pepin-756",
+      "year": 756,
+      "title": "La donation de Pépin : naissance des États pontificaux",
+      "type": "traité",
+      "location": [
+        12.4964,
+        41.9028
+      ],
+      "zoom": 4.25,
+      "summary": "Après avoir battu deux fois le roi lombard Aistolf, Pépin offre au pape les villes de l'ancien exarchat de Ravenne : le futur « patrimoine de saint Pierre » est né.",
+      "details": "Les **Lombards**, un peuple germanique installé en Italie du Nord depuis 568, ont repris en 751 **Ravenne**, dernier bastion byzantin de la région. Leur roi **Aistolf** menace maintenant Rome. Le pape **Étienne II**, abandonné par l'empereur byzantin, fait un geste sans précédent : il traverse les Alpes en plein hiver 753-754 pour supplier Pépin de le protéger. Il le reçoit à **Ponthion**, puis l'oint de nouveau à **Saint-Denis** (754), avec ses deux fils, **Charles** et **Carloman**, et interdit aux Francs de choisir un roi hors de cette famille.\n\nÀ Quierzy, en 754, Pépin promet de restituer au pape les territoires pris aux Byzantins. Il passe les Alpes avec son armée, assiège **Pavie**, la capitale lombarde, et force Aistolf à céder une première fois. Quand celui-ci reprend les armes et attaque Rome, Pépin intervient de nouveau en 756 : il l'oblige à livrer **Ravenne**, la Pentapole (les cinq villes de l'Adriatique, dont Rimini et Ancône) et d'autres cités. Les clés de ces villes sont déposées sur la tombe de saint Pierre.\n\nCe don, connu sous le nom de **donation de Pépin**, crée un État pontifical sous la protection des Francs. Le pape devient aussi un prince temporel, appelé à le rester jusqu'au XIXe siècle. L'empereur byzantin, pourtant propriétaire légitime, proteste en vain.",
+      "consequences": [
+        "Naissance des États pontificaux : le duché de Rome, l'exarchat de Ravenne et la Pentapole passent au pape, sous protection franque.",
+        "Le royaume lombard, affaibli, devient tributaire des Francs.",
+        "Les Byzantins perdent définitivement tout pouvoir dans le centre et le nord de l'Italie.",
+        "L'alliance du roi franc et de la papauté devient la base politique de l'Occident chrétien."
+      ],
+      "territory": "donation-pepin-756",
+      "sources": [
+        {
+          "label": "Liber Pontificalis, vie d'Étienne II"
+        },
+        {
+          "label": "Annales royales franques, années 754-756"
+        },
+        {
+          "label": "Wikipédia — Donation de Pépin",
+          "url": "https://fr.wikipedia.org/wiki/Donation_de_P%C3%A9pin"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Royaume des Francs et papauté",
+          "Royaume des Lombards"
+        ],
+        "commanders": [
+          "Pépin le Bref",
+          "Aistolf"
+        ],
+        "outcome": "Victoire franque : Aistolf cède Ravenne et la Pentapole",
+        "forces": "Effectifs inconnus",
+        "losses": "Inconnues"
+      },
+      "territoryNote": "Royaume franc de Pépin : mêmes limites qu'en 751 (Neustrie, Austrasie, Bourgogne, Provence, Alémanie, Bavière vassale, Aquitaine autonome, Gascogne tributaire, Frise soumise). États pontificaux nouvellement créés sous protection franque (statut vassal) : duché de Rome, exarchat de Ravenne et Pentapole. Royaume lombard (Lombardie, Toscane, Vénétie) tributaire mais indépendant, hors de l'empire. Septimanie encore musulmane.",
+      "armies": [
+        {
+          "side": "Francs de Pépin",
+          "faction": "francs",
+          "path": [
+            [
+              5.92,
+              45.57
+            ],
+            [
+              7.05,
+              45.13
+            ],
+            [
+              8.2,
+              45.2
+            ],
+            [
+              9.16,
+              45.19
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Lombards d'Aistolf",
+          "faction": "lombards",
+          "path": [
+            [
+              9.9,
+              45.5
+            ],
+            [
+              9.5,
+              45.3
+            ],
+            [
+              9.16,
+              45.19
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Étienne II",
+          "role": "Pape, premier souverain des États pontificaux",
+          "faction": "romains",
+          "archetype": "pape",
+          "quote": "(formule libre) Ô Francs, défendez Pierre et son Église.",
+          "position": [
+            12.4534,
+            41.9022
+          ]
+        },
+        {
+          "name": "Pépin le Bref",
+          "role": "Roi des Francs, protecteur de Rome",
+          "faction": "francs",
+          "archetype": "roi-franc",
+          "position": [
+            9.16,
+            45.19
+          ]
+        }
+      ]
+    },
+    {
+      "id": "charlemagne-roi-768",
+      "year": 768,
+      "title": "Charlemagne devient roi, d'abord avec Carloman",
+      "type": "politique",
+      "location": [
+        2.9981,
+        49.5856
+      ],
+      "zoom": 4.5,
+      "summary": "À la mort de Pépin en 768, ses fils Charles et Carloman se partagent le royaume ; la mort de Carloman en 771 laisse Charlemagne seul maître.",
+      "details": "Pépin le Bref meurt le 24 septembre 768. Suivant la coutume franque, qui traite le royaume comme un héritage familial, il le partage entre ses deux fils. **Charles**, 26 ans environ, reçoit une grande bande de territoire à l'ouest et au nord, de l'Aquitaine à la Frise, en passant par la Neustrie. **Carloman**, plus jeune, hérite de l'est et du sud : Bourgogne, Provence, Septimanie, Alsace et Alémanie. Les deux frères sont couronnés le même jour, l'un à **Noyon**, l'autre à **Soissons**.\n\nLa cohabitation est tendue. En 769, Charles doit écraser seul une révolte d'**Aquitaine** menée par Hunald, tandis que Carloman refuse de l'aider. Leur mère **Bertrade** tente de les réconcilier et prépare un mariage de Charles avec la fille du roi lombard **Didier**. Une guerre fratricide semble proche quand Carloman meurt brusquement le 4 décembre 771, sans doute de maladie. Sa veuve s'enfuit en Italie chez Didier avec ses fils, ce qui préparera la guerre contre les Lombards.\n\nCharles, que l'on appellera bientôt **Carolus Magnus**, c'est-à-dire **Charlemagne**, « Charles le Grand », se fait reconnaître seul roi des Francs par les grands de Carloman. Il vient d'avoir une trentaine d'années, et un règne de plus de quarante ans commence.",
+      "consequences": [
+        "Le royaume est réuni sous un seul roi dès la fin de 771, après trois ans de partage.",
+        "L'Aquitaine, rebelle en 769, est ramenée sous l'autorité royale.",
+        "La veuve et les fils de Carloman se réfugient à la cour lombarde : la guerre en Italie devient probable.",
+        "Le principe du partage de l'héritage entre fils reste la règle franque, source de futures divisions."
+      ],
+      "territory": "charlemagne-roi-768",
+      "sources": [
+        {
+          "label": "Éginhard, Vie de Charlemagne, III"
+        },
+        {
+          "label": "Annales royales franques, années 768-771"
+        },
+        {
+          "label": "Wikipédia — Charlemagne",
+          "url": "https://fr.wikipedia.org/wiki/Charlemagne"
+        }
+      ],
+      "territoryNote": "Royaume des Francs partagé en 768 entre Charles (nord, ouest et Aquitaine) et Carloman (est et sud), réuni en 771. Il comprend Neustrie, Austrasie, Bourgogne, Provence, Alémanie, Thuringe, Aquitaine (soumise après la révolte de 769) et la Septimanie conquise en 759 ; Bavière vassale de Tassilon III, Gascogne tributaire, Frise soumise. États pontificaux sous protection franque. Lombardie, Saxe, Bretagne et al-Andalus hors du royaume.",
+      "figures": [
+        {
+          "name": "Charlemagne",
+          "role": "Roi des Francs, futur empereur",
+          "faction": "francs",
+          "archetype": "roi-franc",
+          "quote": "(formule libre) Un seul royaume, un seul roi.",
+          "position": [
+            2.9981,
+            49.5856
+          ]
+        },
+        {
+          "name": "Carloman Ier",
+          "role": "Frère de Charles, roi de l'est du royaume",
+          "faction": "francs",
+          "archetype": "roi-franc",
+          "position": [
+            3.3272,
+            49.3817
+          ]
+        },
+        {
+          "name": "Bertrade de Laon",
+          "role": "Reine mère, médiatrice entre ses fils",
+          "faction": "francs",
+          "archetype": "seigneur-franc",
+          "position": [
+            3.62,
+            49.56
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pavie-774",
+      "year": 774,
+      "title": "La chute de Pavie et la fin du royaume lombard",
+      "type": "bataille",
+      "location": [
+        9.1594,
+        45.1847
+      ],
+      "zoom": 4.5,
+      "summary": "Après un siège de neuf mois, Charlemagne prend Pavie, capitale des Lombards, renverse le roi Didier et se proclame roi des Francs et des Lombards.",
+      "details": "Le roi lombard **Didier** menace Rome, que le pape **Hadrien Ier** place sous la protection des Francs. Il a aussi accueilli la veuve et les fils de Carloman, rivaux potentiels de Charles. En 773, Charlemagne répond à l'appel du pape : il lève une grande armée et la divise en deux colonnes qui franchissent les Alpes, l'une par le **Mont-Cenis**, l'autre par le col du **Grand-Saint-Bernard**, conduite par son oncle Bernard.\n\nDidier a fortifié les **Clusae**, les défilés de la vallée de Suse. Les Francs ne parviennent pas à les forcer, mais un chemin de contournement, guidé selon la légende par un jongleur, permet de prendre les défenseurs à revers. Les Lombards se débandent. Didier s'enferme dans **Pavie**, sa capitale, tandis que son fils Adelchis se réfugie à Vérone. Charlemagne assiège Pavie tout l'hiver, passe à Rome pour les fêtes de Pâques 774 et confirme la donation de son père. Affamée, Pavie capitule en juin 774.\n\nDidier est envoyé dans un monastère en Gaule. Charlemagne ceint la **couronne de fer** des Lombards et prend le titre de « roi des Francs et des Lombards ». Il laisse les lois et les ducs lombards en place, ce qui facilite la transition. Seul le duché de **Bénévent**, au sud, garde une pleine indépendance.",
+      "consequences": [
+        "Le royaume lombard disparaît : Lombardie, Piémont, Vénétie, Émilie et Toscane entrent dans l'orbite franque.",
+        "Charlemagne devient « roi des Lombards » et gouverne désormais la plaine du Pô.",
+        "Le pape reçoit la confirmation de la donation de Pépin et un puissant protecteur.",
+        "Les duchés de Spolète et de Bénévent restent semi-indépendants ; le second ne se soumet qu'en 787."
+      ],
+      "territory": "pavie-774",
+      "sources": [
+        {
+          "label": "Liber Pontificalis, vie d'Hadrien Ier"
+        },
+        {
+          "label": "Annales royales franques, année 774"
+        },
+        {
+          "label": "Wikipédia — Siège de Pavie (773-774)",
+          "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_Pavie_(773-774)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Royaume des Francs",
+          "Royaume des Lombards"
+        ],
+        "commanders": [
+          "Charlemagne",
+          "Bernard (oncle de Charlemagne)",
+          "Didier",
+          "Adelchis"
+        ],
+        "outcome": "Victoire franque : Pavie capitule, fin du royaume lombard",
+        "forces": "Effectifs inconnus",
+        "losses": "Inconnues"
+      },
+      "territoryNote": "Royaume des Francs de Charlemagne (France actuelle sauf la Bretagne, Belgique, Pays-Bas méridionaux, Rhénanie, Alémanie, Thuringe, Septimanie, Aquitaine), plus le royaume lombard conquis : Lombardie, Piémont, Ligurie, Émilie, Vénétie orientale et Frioul, Toscane. Bavière vassale, Gascogne tributaire. États pontificaux sous protection franque (vassal). Hors empire : Saxe, Bretagne, duchés de Spolète et de Bénévent, al-Andalus, Avars.",
+      "armies": [
+        {
+          "side": "Francs de Charlemagne",
+          "faction": "francs",
+          "path": [
+            [
+              6.15,
+              46.2
+            ],
+            [
+              6.9,
+              45.25
+            ],
+            [
+              7.05,
+              45.13
+            ],
+            [
+              8.2,
+              45.3
+            ],
+            [
+              9.16,
+              45.19
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Lombards de Didier",
+          "faction": "lombards",
+          "path": [
+            [
+              10.9,
+              45.45
+            ],
+            [
+              9.9,
+              45.4
+            ],
+            [
+              9.16,
+              45.19
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Charlemagne",
+          "role": "Roi des Francs, devenu roi des Lombards",
+          "faction": "francs",
+          "archetype": "roi-franc",
+          "position": [
+            9.1594,
+            45.1847
+          ]
+        },
+        {
+          "name": "Didier",
+          "role": "Dernier roi des Lombards",
+          "faction": "lombards",
+          "archetype": "chef-barbare",
+          "quote": "(formule libre) Pavie tiendra tant que ses murs tiendront.",
+          "position": [
+            9.1594,
+            45.1847
+          ]
+        },
+        {
+          "name": "Hadrien Ier",
+          "role": "Pape, allié des Francs",
+          "faction": "romains",
+          "archetype": "pape",
+          "position": [
+            12.4534,
+            41.9022
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roncevaux-778",
+      "year": 778,
+      "title": "Roncevaux : l'embuscade qui devint légende",
+      "type": "bataille",
+      "location": [
+        -1.3197,
+        43.0199
+      ],
+      "zoom": 5.0,
+      "summary": "Au retour d'une expédition en Espagne, l'arrière-garde de Charlemagne est massacrée par les Basques dans les Pyrénées ; la Chanson de Roland en fera une épopée.",
+      "details": "En 777, un gouverneur musulman de Barcelone et de Gérone, **Sulayman al-Arabi**, vient à Paderborn demander l'aide de Charlemagne contre l'émir de **Cordoue**. Le roi y voit l'occasion d'ouvrir un front au sud des Pyrénées. Au printemps 778, il entre en Espagne avec deux armées. Mais **Saragosse** lui ferme ses portes, car son gouverneur, loin d'être un allié sûr, a changé de camp. Après un siège sans résultat, Charlemagne doit repartir. Il rase les murailles de **Pampelune**, ville des Basques, pour se garantir.\n\nLe 15 août 778, l'armée franque repasse les Pyrénées par le col de **Roncevaux**. Les chroniques racontent que les **Basques**, ou Vascons, humiliés par la destruction de leur ville, attendent dans les forêts, tombent sur la colonne étirée dans le défilé et tuent l'arrière-garde, avant de se disperser avec le butin. Parmi les morts figurent **Eggihard**, intendant du palais, et **Roland**, comte des marches de Bretagne.\n\nLe fait est minime pour l'époque, mais il inspire, trois siècles plus tard, la **Chanson de Roland** : le poète fait de Roland un preux trahi, de l'embuscade basque une bataille contre les Sarrasins, et de Charlemagne un champion de la chrétienté. Cette transformation en fait un mythe fondateur de la littérature française.",
+      "consequences": [
+        "L'expédition échoue : la frontière reste sur les Pyrénées, au nord de l'Èbre.",
+        "Charlemagne organise ensuite l'Aquitaine en royaume confié à son fils Louis (781).",
+        "La Marche d'Espagne sera construite plus à l'est, sur la Catalogne, avec la prise de Gérone (785) puis de Barcelone (801).",
+        "L'épisode alimente la Chanson de Roland, qui transforme les Basques en Sarrasins."
+      ],
+      "territory": "roncevaux-778",
+      "sources": [
+        {
+          "label": "Éginhard, Vie de Charlemagne, IX"
+        },
+        {
+          "label": "Chanson de Roland (vers 1100)"
+        },
+        {
+          "label": "Wikipédia — Bataille de Roncevaux (778)",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Roncevaux_(778)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Arrière-garde de l'armée franque",
+          "Basques (Vascons)"
+        ],
+        "commanders": [
+          "Eggihard",
+          "Anselme",
+          "Roland",
+          "chefs basques inconnus"
+        ],
+        "outcome": "Victoire basque : l'arrière-garde franque est anéantie",
+        "forces": "Effectifs inconnus",
+        "losses": "Arrière-garde massacrée, dont Roland, d'après Éginhard"
+      },
+      "territoryNote": "Royaume des Francs et des Lombards de Charlemagne : France actuelle sauf Bretagne, Pays-Bas méridionaux, Belgique, Rhénanie, Alémanie, Thuringe, Septimanie, Aquitaine ; plus royaume lombard conquis (Italie du Nord et Toscane). Bavière vassale, Gascogne tributaire. États pontificaux sous protection franque (vassal). Hors empire : Saxe (campagnes en cours), Bretagne, Pampelune et la Vasconie sud-pyrénéenne, Asturies, al-Andalus, Bénévent.",
+      "armies": [
+        {
+          "side": "Arrière-garde franque",
+          "faction": "francs",
+          "path": [
+            [
+              -1.64,
+              42.82
+            ],
+            [
+              -1.45,
+              42.95
+            ],
+            [
+              -1.32,
+              43.02
+            ]
+          ],
+          "strength": 2
+        },
+        {
+          "side": "Basques",
+          "faction": "basques",
+          "path": [
+            [
+              -1.1,
+              43.18
+            ],
+            [
+              -1.22,
+              43.1
+            ],
+            [
+              -1.32,
+              43.02
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Roland",
+          "role": "Comte des marches de Bretagne, mort à Roncevaux",
+          "faction": "francs",
+          "archetype": "seigneur-franc",
+          "quote": "Roland est preux et Olivier est sage (Chanson de Roland)",
+          "position": [
+            -1.32,
+            43.02
+          ]
+        },
+        {
+          "name": "Charlemagne",
+          "role": "Roi des Francs, de retour d'Espagne",
+          "faction": "francs",
+          "archetype": "roi-franc",
+          "position": [
+            -1.1,
+            43.35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verden-782",
+      "year": 782,
+      "title": "Verden et la guerre de Saxe",
+      "type": "bataille",
+      "location": [
+        9.2294,
+        52.9214
+      ],
+      "zoom": 4.75,
+      "summary": "En 782, après le désastre franc du Süntel, Charlemagne fait exécuter des milliers de Saxons à Verden : la plus longue et la plus dure de ses guerres se durcit.",
+      "details": "Les **Saxons** sont un peuple germanique païen, divisé en tribus sans roi, établi entre le Rhin et l'Elbe. Depuis longtemps ils pillent les marches franques. En 772, Charlemagne détruit leur sanctuaire de l'**Irminsul**, un grand tronc sacré. Commence alors une guerre de trente-deux ans, faite de campagnes d'été, de baptêmes forcés et de révoltes aussitôt la frontière dégarnie.\n\nEn 777, un chef saxon, **Widukind**, s'enfuit chez les Danois au lieu de se soumettre à l'assemblée de **Paderborn**. Il revient en 782, quand Charlemagne est occupé à l'est. Les Saxons détruisent au **Süntel**, au sud de Hanovre, une armée franque dont le commandement s'était divisé. Charlemagne accourt, mais ne trouve plus Widukind, retourné chez les Danois.\n\nC'est alors qu'à **Verden**, sur l'Aller, il ordonne l'exécution de **4 500 Saxons** rebelles, selon les Annales royales franques, un des épisodes les plus sombres de son règne. Les historiens débattent du chiffre et du sens de la mesure : exemple terrifiant pour décourager les révoltes, ou simple répression. Quelques années plus tard, il publie le **capitulaire de 785**, qui punit de mort le refus du baptême. La Saxe se soulève de plus belle. Elle ne cédera qu'après vingt ans de lutte acharnée.",
+      "consequences": [
+        "La Saxe tombe progressivement sous contrôle franc : les révoltes s'éteignent après 804.",
+        "Les Saxons sont convertis de force au christianisme, avec des évêchés fondés à Brême, Minden et Paderborn.",
+        "La frontière franque atteint l'Elbe, au contact des Slaves et des Danois.",
+        "Widukind se soumet en 785 et accepte le baptême, mais la répression reste féroce."
+      ],
+      "territory": "verden-782",
+      "sources": [
+        {
+          "label": "Annales royales franques, année 782"
+        },
+        {
+          "label": "Éginhard, Vie de Charlemagne, VII"
+        },
+        {
+          "label": "Wikipédia — Massacre de Verden",
+          "url": "https://fr.wikipedia.org/wiki/Massacre_de_Verden"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Royaume des Francs",
+          "Saxons rebelles"
+        ],
+        "commanders": [
+          "Charlemagne",
+          "Widukind"
+        ],
+        "outcome": "Répression franque : exécution d'environ 4 500 Saxons à Verden",
+        "forces": "Effectifs inconnus",
+        "losses": "4 500 Saxons exécutés, d'après les Annales royales franques"
+      },
+      "territoryNote": "Royaume des Francs et des Lombards : France actuelle sauf Bretagne, Belgique, Pays-Bas méridionaux, Rhénanie, Alémanie, Thuringe, Septimanie, Aquitaine, Italie du Nord et Toscane, Frise désormais intégrée. Saxe en cours de soumission (statut vassal, marches de Paderborn et de Verden). Bavière vassale de Tassilon III, Gascogne tributaire. États pontificaux sous protection franque. Hors empire : Slaves, Danois, Bretagne, Bénévent, Spolète, Asturies, al-Andalus.",
+      "armies": [
+        {
+          "side": "Francs de Charlemagne",
+          "faction": "francs",
+          "path": [
+            [
+              6.08,
+              50.78
+            ],
+            [
+              8.0,
+              51.7
+            ],
+            [
+              9.2,
+              52.5
+            ],
+            [
+              9.23,
+              52.92
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Saxons de Widukind",
+          "faction": "saxons",
+          "path": [
+            [
+              9.8,
+              53.8
+            ],
+            [
+              9.5,
+              53.3
+            ],
+            [
+              9.23,
+              52.92
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Widukind",
+          "role": "Chef saxon, principal adversaire de Charlemagne",
+          "faction": "saxons",
+          "archetype": "chef-barbare",
+          "quote": "(formule libre) Nos dieux ne se vendent pas contre un baptême.",
+          "position": [
+            9.5,
+            53.3
+          ]
+        },
+        {
+          "name": "Charlemagne",
+          "role": "Roi des Francs, qui impose le baptême",
+          "faction": "francs",
+          "archetype": "roi-franc",
+          "position": [
+            9.23,
+            52.92
+          ]
+        }
+      ]
+    },
+    {
+      "id": "baviere-788",
+      "year": 788,
+      "title": "La Bavière est annexée",
+      "type": "politique",
+      "location": [
+        8.0586,
+        49.9732
+      ],
+      "zoom": 4.5,
+      "summary": "En 788, Charlemagne fait déposer son cousin Tassilon III, duc de Bavière, à l'assemblée d'Ingelheim et réunit la Bavière au royaume franc.",
+      "details": "La **Bavière** est un duché puissant et ancien, tenu par la famille des Agilolfinges. Son duc **Tassilon III**, cousin de Charlemagne par sa mère, a prêté serment à Pépin en 757, mais il règne presque en roi. Il possède sa propre cour, ses évêchés, sa monnaie, des alliés chez les Avars et chez les Lombards. Quand Charlemagne conquiert l'Italie, la Bavière se retrouve entourée de terres franques.\n\nEn 787, le roi lance un ultimatum : trois armées convergent vers Augsbourg, Tassilon se soumet et renouvelle son serment. L'année suivante, des seigneurs bavarois l'accusent de conspiration avec les **Avars**, ce peuple de cavaliers des steppes installé en Pannonie (Hongrie actuelle). À l'assemblée d'**Ingelheim**, en 788, le duc est condamné à mort pour désertion à l'armée. Charlemagne commue la peine en réclusion monastique : Tassilon et sa famille finiront leurs jours dans des abbayes.\n\nLa Bavière est désormais gouvernée par des comtes francs, sous l'autorité d'un préfet. Son grand territoire, qui s'étend des Alpes au Danube, jusqu'à Salzbourg et au-delà de l'Enns, forme un tremplin direct contre les Avars. Charlemagne peut désormais mener la guerre à l'est sans craindre de revers.",
+      "consequences": [
+        "La Bavière cesse d'être un duché autonome et devient une province franque, bientôt dotée d'un préfet royal.",
+        "Les Francs touchent directement le territoire avar, ce qui prépare la guerre de 791-796.",
+        "Charlemagne est désormais maître de toute la Germanie du sud, de l'Alémanie à Salzbourg.",
+        "Le sort de Tassilon sert d'avertissement aux autres ducs et princes vassaux."
+      ],
+      "territory": "baviere-788",
+      "sources": [
+        {
+          "label": "Annales royales franques, années 787-788"
+        },
+        {
+          "label": "Éginhard, Vie de Charlemagne, XI"
+        },
+        {
+          "label": "Wikipédia — Tassilon III de Bavière",
+          "url": "https://fr.wikipedia.org/wiki/Tassilon_III_de_Bavi%C3%A8re"
+        }
+      ],
+      "territoryNote": "Royaume des Francs et des Lombards : France actuelle sauf Bretagne, Belgique, Pays-Bas méridionaux, Rhénanie, Alémanie, Thuringe, Septimanie, Aquitaine ; Italie du Nord et Toscane ; Frise ; Bavière annexée (y compris Salzbourg et la vallée de l'Inn) ; Saxe en cours de soumission mais déjà tenue par des marches et des forteresses. Duché de Bénévent devenu tributaire en 787 (vassal). États pontificaux sous protection franque. Hors empire : Avars, Slaves, Bretagne, Asturies, al-Andalus, Danois.",
+      "figures": [
+        {
+          "name": "Tassilon III",
+          "role": "Dernier duc de Bavière, déposé",
+          "faction": "francs",
+          "archetype": "seigneur-franc",
+          "quote": "(formule libre) Mon serment, je l'ai tenu tant que je l'ai pu.",
+          "position": [
+            11.5754,
+            48.1372
+          ]
+        },
+        {
+          "name": "Charlemagne",
+          "role": "Roi des Francs et des Lombards",
+          "faction": "francs",
+          "archetype": "roi-franc",
+          "position": [
+            8.0586,
+            49.9732
+          ]
+        }
+      ]
+    },
+    {
+      "id": "avars-796",
+      "year": 796,
+      "title": "Le Ring des Avars est pris",
+      "type": "bataille",
+      "location": [
+        19.0,
+        47.3
+      ],
+      "zoom": 4.25,
+      "summary": "En 796, l'armée de Pépin d'Italie s'empare du Ring, la forteresse-trésor des Avars en Pannonie ; l'or du butin remplit les chariots du roi.",
+      "details": "Les **Avars** sont un peuple de cavaliers venu des steppes, installé depuis le VIe siècle en Pannonie, dans l'actuelle Hongrie. Leur chef, le **khagan**, tire sa puissance des tributs payés par les Byzantins et les Slaves. Leur centre est le **Ring**, immense camp circulaire entouré de remparts concentriques où est entassé leur trésor. Ils ont aidé Tassilon de Bavière et pillent régulièrement les frontières de Charlemagne.\n\nEn 791, Charlemagne attaque en personne avec deux armées qui suivent les rives du Danube. Une épizootie décime ses chevaux, mais les Avars, effrayés, abandonnent leurs positions. Une guerre civile éclate ensuite parmi eux : leurs chefs s'entretuent. En 795, le margrave **Éric de Frioul** lance un raid fructueux. En 796, son souverain **Pépin**, fils de Charlemagne, roi d'Italie, avance en Pannonie, passe le Danube, et s'empare de l'enceinte principale du Ring, que les Avars ne défendent presque pas.\n\nLes textes décrivent un butin colossal en or, en soie et en pierres précieuses, accumulé pendant deux siècles de tributs. Quinze chariots tirés par quatre bœufs l'acheminent à Aix. Le pape et les rois anglo-saxons reçoivent des cadeaux prélevés sur ce trésor. Cet or finance les constructions de Charlemagne, dont la grande église d'Aix-la-Chapelle. Après 803, les Avars sont convertis et disparaissent comme peuple.",
+      "consequences": [
+        "Le royaume avar s'effondre : la Pannonie occidentale devient une marche franque (la « marche d'Avarie »).",
+        "Les Avars survivants se soumettent, se convertissent au christianisme et sont absorbés par les Slaves et les Bavarois.",
+        "Un énorme butin d'or finance le gouvernement et la construction du palais d'Aix.",
+        "La frontière orientale du royaume avance jusqu'à la Raab (Hongrie occidentale)."
+      ],
+      "territory": "avars-796",
+      "sources": [
+        {
+          "label": "Annales royales franques, années 791-796"
+        },
+        {
+          "label": "Éginhard, Vie de Charlemagne, XIII"
+        },
+        {
+          "label": "Wikipédia — Avars",
+          "url": "https://fr.wikipedia.org/wiki/Avars"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Royaume des Francs et des Lombards",
+          "Avars"
+        ],
+        "commanders": [
+          "Pépin d'Italie",
+          "Éric de Frioul",
+          "khagan des Avars"
+        ],
+        "outcome": "Victoire franque : prise du Ring et pillage du trésor avar",
+        "forces": "Effectifs inconnus",
+        "losses": "Inconnues"
+      },
+      "territoryNote": "Royaume des Francs et des Lombards : France actuelle sauf Bretagne, Belgique, Pays-Bas méridionaux, Rhénanie, Alémanie, Thuringe, Septimanie, Aquitaine ; Italie du Nord et Toscane ; Bavière jusqu'à l'Enns ; Saxe désormais tenue par les Francs (la plupart des révoltes éteintes) ; Marche d'Espagne (Gérone) ; duché de Bénévent tributaire (vassal) ; États pontificaux sous protection franque. Marche d'Avarie (Pannonie occidentale) conquise en 796. Hors empire : Slaves de l'est, Danois, Bretagne, Asturies, al-Andalus.",
+      "armies": [
+        {
+          "side": "Francs de Pépin d'Italie",
+          "faction": "francs",
+          "path": [
+            [
+              13.43,
+              46.09
+            ],
+            [
+              15.6,
+              46.6
+            ],
+            [
+              17.2,
+              46.9
+            ],
+            [
+              19.0,
+              47.3
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Avars",
+          "faction": "avars",
+          "path": [
+            [
+              21.0,
+              47.4
+            ],
+            [
+              20.0,
+              47.3
+            ],
+            [
+              19.0,
+              47.3
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Pépin d'Italie",
+          "role": "Fils de Charlemagne, roi d'Italie",
+          "faction": "francs",
+          "archetype": "roi-franc",
+          "position": [
+            17.2,
+            46.9
+          ]
+        },
+        {
+          "name": "Éric de Frioul",
+          "role": "Margrave, premier pillard du Ring",
+          "faction": "francs",
+          "archetype": "seigneur-franc",
+          "position": [
+            15.6,
+            46.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "empereur-800",
+      "year": 800,
+      "title": "Charlemagne couronné empereur à Rome",
+      "type": "politique",
+      "location": [
+        12.4534,
+        41.9022
+      ],
+      "zoom": 4.5,
+      "summary": "Le jour de Noël 800, dans la basilique Saint-Pierre, le pape Léon III pose une couronne sur la tête de Charlemagne : l'Empire d'Occident renaît.",
+      "details": "En 799, le pape **Léon III** est agressé dans Rome par des nobles hostiles, qui veulent lui crever les yeux et lui couper la langue. Il s'enfuit chez Charlemagne à **Paderborn**. À l'automne 800, le roi des Francs vient à Rome rétablir l'ordre et faire juger les accusations contre le pape. Le 23 décembre, Léon III se purge de tout soupçon par un serment.\n\nLe 25 décembre, pendant la messe de Noël à **Saint-Pierre**, Léon III s'avance vers Charlemagne agenouillé et lui pose sur la tête une couronne. La foule romaine l'acclame : « À Charles Auguste, couronné par Dieu, grand et pacifique empereur des Romains, vie et victoire ! » Éginhard raconte que Charlemagne aurait déclaré qu'il ne serait pas entré dans l'église ce jour-là s'il avait connu le projet du pape, signe qu'il a été pris de court ou qu'il joue la surprise.\n\nPourquoi un empereur ? Le trône de Constantinople est occupé depuis 797 par une femme, **Irène**, ce que beaucoup jugent illégitime. Le pape a besoin d'un protecteur à sa taille. Charlemagne gouverne déjà l'essentiel de l'Occident chrétien. Mais la couronne vient de la main du pape, ce qui fait de lui le dispensateur de l'empire. Ce précédent sera à l'origine de querelles entre papes et empereurs pendant des siècles.",
+      "consequences": [
+        "Un empereur d'Occident règne de nouveau sur l'Europe latine, quatre siècles après la chute de Romulus Augustule.",
+        "L'Empire byzantin conteste ce titre et ne le reconnaîtra qu'en 812.",
+        "Le couronnement par le pape crée un lien de dépendance mutuelle entre l'Église et l'empereur.",
+        "L'empire de Charlemagne couvre la France, les Pays-Bas, l'Allemagne occidentale, l'Italie du Nord et du centre, la Catalogne."
+      ],
+      "territory": "empereur-800",
+      "sources": [
+        {
+          "label": "Éginhard, Vie de Charlemagne, XXVIII"
+        },
+        {
+          "label": "Annales royales franques, année 801"
+        },
+        {
+          "label": "Wikipédia — Couronnement de Charlemagne",
+          "url": "https://fr.wikipedia.org/wiki/Couronnement_de_Charlemagne"
+        }
+      ],
+      "territoryNote": "Empire de Charlemagne : France actuelle sauf la Bretagne (marche vassale), Belgique, Pays-Bas, Luxembourg, Allemagne jusqu'à l'Elbe et à la Saale (Saxe, Bavière, Thuringe, Alémanie), Autriche occidentale, Suisse, Italie du Nord et de la Toscane (royaume d'Italie), Frioul, Istrie, marche d'Avarie en Pannonie, Catalogne du nord (Marche d'Espagne, Gérone). Vassaux : États pontificaux (duché de Rome, Ravenne, Pentapole), duché de Bénévent (tributaire). Bretagne soumise en marche. Venise reste byzantine.",
+      "figures": [
+        {
+          "name": "Charlemagne",
+          "role": "Roi des Francs, couronné empereur",
+          "faction": "francs",
+          "archetype": "empereur-carolingien",
+          "quote": "Il n'aurait pas mis les pieds dans l'église, s'il avait su (d'après Éginhard)",
+          "position": [
+            12.4534,
+            41.9022
+          ]
+        },
+        {
+          "name": "Léon III",
+          "role": "Pape, qui couronne l'empereur",
+          "faction": "romains",
+          "archetype": "pape",
+          "position": [
+            12.4534,
+            41.9022
+          ]
+        }
+      ]
+    },
+    {
+      "id": "barcelone-801",
+      "year": 801,
+      "title": "Barcelone et la Marche d'Espagne",
+      "type": "bataille",
+      "location": [
+        2.1734,
+        41.3851
+      ],
+      "zoom": 4.75,
+      "summary": "Après un long siège, Louis, fils de Charlemagne et roi d'Aquitaine, prend Barcelone aux Maures en 801 : la Marche d'Espagne devient une frontière durable.",
+      "details": "Après l'échec de Roncevaux (778), Charlemagne a compris que la frontière avec le monde musulman doit être tenue par des marches, c'est-à-dire des régions-frontières confiées à des comtes. En 781, il fait de l'**Aquitaine** un royaume pour son fils **Louis**, encore enfant. En 785, la population de **Gérone** se donne aux Francs. Mais **Barcelone**, port et forteresse tenus par un gouverneur de l'émir de Cordoue, résiste.\n\nEn 800, Louis réunit les comtes d'Aquitaine, de Gascogne, de Provence et de Septimanie. Il envoie une armée vers l'Èbre, tandis qu'une autre commence le siège de Barcelone. Une armée de secours envoyée par l'émir est repoussée, et la ville, affamée, ouvre ses portes en avril 801, après plus d'un an de blocus. Louis fait une entrée solennelle en robe de laine, précédé de la croix.\n\nLa prise est suivie de la mise en place de la **Marche d'Espagne** : un chapelet de comtés (Barcelone, Gérone, Ausone, Urgell, Cerdagne) confiés à des comtes comme Bera, qui défendent la frontière jusqu'à l'Ebre sans jamais la dépasser durablement. Almanzor pillera Barcelone en 985, mais la région est destinée à devenir la **Catalogne**, longtemps rattachée aux rois francs avant de s'émanciper.",
+      "consequences": [
+        "La Catalogne actuelle entre dans l'orbite franque : les comtés de Barcelone, Gérone, Urgell et Cerdagne forment la Marche d'Espagne.",
+        "Louis, futur Louis le Pieux, gagne un prestige qui le prépare à succéder à son père.",
+        "La frontière avec l'émirat de Cordoue se stabilise en Catalogne : les attaques contre Tortose (809, 811) échouent.",
+        "Les comtes de Barcelone resteront vassaux des Carolingiens jusqu'au Xe siècle."
+      ],
+      "territory": "barcelone-801",
+      "sources": [
+        {
+          "label": "Annales royales franques, année 801"
+        },
+        {
+          "label": "L'Astronome, Vie de Louis le Pieux"
+        },
+        {
+          "label": "Wikipédia — Siège de Barcelone (801)",
+          "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_Barcelone_(801)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Royaume d'Aquitaine (Francs)",
+          "Émirat de Cordoue"
+        ],
+        "commanders": [
+          "Louis (futur Louis le Pieux)",
+          "Rostaing de Gérone",
+          "gouverneur musulman de Barcelone"
+        ],
+        "outcome": "Victoire franque : Barcelone se rend après plus d'un an de siège",
+        "forces": "Effectifs inconnus",
+        "losses": "Inconnues"
+      },
+      "territoryNote": "Empire de Charlemagne, désormais agrandi de la Marche d'Espagne (Barcelone, Gérone, Urgell, Cerdagne) : France actuelle sauf Bretagne (marche vassale), Belgique, Pays-Bas, Rhénanie, Saxe, Bavière, Alémanie, Autriche occidentale, Suisse, Italie du Nord et de la Toscane, Istrie, marche d'Avarie, Catalogne du nord. Vassaux : États pontificaux, duché de Bénévent, Bretagne. Pampelune et la Vasconie sud-pyrénéenne : zone d'influence franque mais autonome (non incluse). Venise byzantine, al-Andalus indépendant.",
+      "armies": [
+        {
+          "side": "Francs de Louis",
+          "faction": "francs",
+          "path": [
+            [
+              1.44,
+              43.6
+            ],
+            [
+              3.0,
+              43.18
+            ],
+            [
+              2.9,
+              42.7
+            ],
+            [
+              2.82,
+              41.98
+            ],
+            [
+              2.15,
+              41.42
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée de secours de Cordoue",
+          "faction": "arabes",
+          "path": [
+            [
+              -0.88,
+              41.65
+            ],
+            [
+              0.62,
+              41.62
+            ],
+            [
+              1.6,
+              41.55
+            ],
+            [
+              2.15,
+              41.42
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Louis, roi d'Aquitaine",
+          "role": "Fils de Charlemagne, futur Louis le Pieux",
+          "faction": "francs",
+          "archetype": "roi-franc",
+          "quote": "(formule libre) Que la croix ouvre la porte que le fer n'a pas forcée.",
+          "position": [
+            2.82,
+            41.98
+          ]
+        },
+        {
+          "name": "Guillaume de Gellone",
+          "role": "Comte de Toulouse, compagnon d'armes de Louis",
+          "faction": "francs",
+          "archetype": "seigneur-franc",
+          "position": [
+            1.44,
+            43.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mort-charlemagne-814",
+      "year": 814,
+      "title": "Mort de Charlemagne",
+      "type": "chute",
+      "location": [
+        6.0839,
+        50.7753
+      ],
+      "zoom": 5.0,
+      "summary": "Charlemagne meurt le 28 janvier 814 à Aix-la-Chapelle. Il laisse un empire immense, mais un seul fils, Louis, pour le gouverner.",
+      "details": "Au soir de sa vie, Charlemagne a plus de soixante-cinq ans. Il règne depuis plus de quarante ans sur un empire qui s'étend de l'Elbe à l'Èbre, du Danemark à Rome. Son palais d'**Aix-la-Chapelle** (Aachen), qu'il a fait construire à partir de 794, avec sa chapelle octogonale, ses bains d'eaux chaudes et sa bibliothèque, est la vraie capitale de l'Europe occidentale. Autour de lui, des savants comme **Alcuin** (mort en 804), **Paul Diacre** ou **Théodulf** ont créé un renouveau des lettres, de l'écriture (la minuscule caroline) et des écoles, qu'on appelle la **renaissance carolingienne**.\n\nSes fils aînés, **Pépin d'Italie** (810) et **Charles le Jeune** (811), sont morts avant lui. Il ne lui reste que **Louis**, roi d'Aquitaine. En septembre 813, à Aix, Charlemagne le fait couronner co-empereur en lui faisant prendre lui-même la couronne sur l'autel, sans l'intervention du pape.\n\nEn janvier 814, il attrape une fièvre suivie d'une pleurésie et meurt le 28 janvier. Il est enterré le jour même dans la chapelle d'Aix, dans un sarcophage antique. Son empire est à son apogée territorial, mais il n'a pas de structure administrative assez solide : il repose sur la personne de l'empereur, sur des comtes fidèles et sur la guerre victorieuse qui apporte le butin. À sa mort, le dernier élément fait défaut.",
+      "consequences": [
+        "Louis le Pieux hérite seul de l'empire entier, sans avoir à le partager avec des frères.",
+        "L'empire atteint son extension maximale : de l'Elbe à la Marche d'Espagne et de la Manche à la Pannonie.",
+        "Les ducs de Bretagne, les Slaves et Bénévent profitent de la transition pour reprendre de l'autonomie.",
+        "Aix-la-Chapelle reste la capitale de l'empire et le modèle de toute cour impériale."
+      ],
+      "territory": "mort-charlemagne-814",
+      "sources": [
+        {
+          "label": "Éginhard, Vie de Charlemagne, XXIV-XXXI"
+        },
+        {
+          "label": "Thégan, Gesta Hludowici imperatoris"
+        },
+        {
+          "label": "Wikipédia — Charlemagne",
+          "url": "https://fr.wikipedia.org/wiki/Charlemagne"
+        }
+      ],
+      "territoryNote": "Empire carolingien à son apogée : France actuelle sauf Bretagne (marche vassale), Belgique, Pays-Bas, Luxembourg, Allemagne jusqu'à l'Elbe et à la Saale (Saxe, Bavière, Thuringe, Alémanie), Suisse, Autriche occidentale, Italie du Nord et de la Toscane (royaume d'Italie), Frioul, Istrie, marche d'Avarie, Catalogne du nord (Marche d'Espagne). Vassaux : États pontificaux, duché de Bénévent, Bretagne, Pampelune (zone d'influence). Venise reconnue byzantine en 812. Le royaume d'Italie est confié à Bernard, petit-fils de l'empereur.",
+      "figures": [
+        {
+          "name": "Charlemagne",
+          "role": "Empereur d'Occident, mourant",
+          "faction": "francs",
+          "archetype": "empereur-carolingien",
+          "quote": "(formule libre) Seigneur, entre tes mains je remets mon esprit.",
+          "position": [
+            6.0839,
+            50.7753
+          ]
+        },
+        {
+          "name": "Louis le Pieux",
+          "role": "Seul fils survivant, héritier de l'empire",
+          "faction": "francs",
+          "archetype": "empereur-carolingien",
+          "position": [
+            6.0839,
+            50.7753
+          ]
+        },
+        {
+          "name": "Éginhard",
+          "role": "Lettré de la cour, biographe de Charlemagne",
+          "faction": "francs",
+          "archetype": "seigneur-franc",
+          "position": [
+            6.0839,
+            50.7753
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ordinatio-817",
+      "year": 817,
+      "title": "L'Ordinatio imperii : un partage pour sauver l'unité",
+      "type": "réforme",
+      "location": [
+        6.0839,
+        50.7753
+      ],
+      "zoom": 4.0,
+      "summary": "En 817, Louis le Pieux règle sa succession à Aix : l'empire restera un, sous Lothaire, tandis que ses frères Pépin et Louis auront des royaumes subordonnés.",
+      "details": "**Louis le Pieux**, fils de Charlemagne, hérite en 814 de tout l'empire, mais il a trois fils, ce qui pose le vieux problème franc du partage. Selon la coutume, chacun devrait recevoir une part égale. Mais l'Église, qui voit dans l'empire l'image d'une seule chrétienté, souhaite l'unité. En 817, en pleine assemblée à **Aix-la-Chapelle**, Louis publie un grand texte, l'**Ordinatio imperii** (l'« organisation de l'empire »), après avoir manqué de peu de mourir quand une galerie de bois s'effondre sous lui.\n\nLe principe est clair : l'aîné, **Lothaire**, devient co-empereur et héritier de la dignité impériale. Il aura l'essentiel du pouvoir. Ses deux frères cadets reçoivent des royaumes aux marges, soumis à son autorité : **Pépin** reçoit l'Aquitaine, la Gascogne et la Marche de Toulouse ; **Louis**, plus tard dit « le Germanique », reçoit la Bavière, la Carinthie et les marches orientales. Aucun roi ne pourra faire la guerre ni se marier sans l'accord de l'empereur.\n\nL'ordre est heurté dès l'année suivante par la révolte de **Bernard**, roi d'Italie et neveu de Louis, qui se voit rétrogradé au profit de Lothaire. Vaincu, aveuglé en 818, il meurt des suites de ce supplice. Louis fait pénitence publique pour ce crime en 822. Quand un quatrième fils, **Charles**, naît en 823 d'un second mariage, le système est à refaire, ce qui provoquera vingt ans de guerres civiles.",
+      "consequences": [
+        "L'empire est proclamé indivisible : Lothaire, co-empereur, domine ses frères cadets, rois d'Aquitaine et de Bavière.",
+        "La révolte et la mort de Bernard d'Italie (818) affaiblissent l'autorité morale de Louis.",
+        "La naissance de Charles (823) rend le partage de 817 caduc et déclenche les guerres entre les fils.",
+        "L'Église et la haute aristocratie jouent un rôle croissant en arbitrant entre les héritiers."
+      ],
+      "territory": "ordinatio-817",
+      "sources": [
+        {
+          "label": "Ordinatio imperii (capitulaire de juillet 817)"
+        },
+        {
+          "label": "L'Astronome, Vie de Louis le Pieux"
+        },
+        {
+          "label": "Wikipédia — Ordinatio Imperii",
+          "url": "https://fr.wikipedia.org/wiki/Ordinatio_Imperii"
+        }
+      ],
+      "territoryNote": "Empire carolingien entier sous Louis le Pieux et Lothaire, co-empereur : France actuelle sauf Bretagne (marche vassale), Belgique, Pays-Bas, Luxembourg, Allemagne jusqu'à l'Elbe, Autriche occidentale, Suisse, Italie du Nord et de la Toscane (royaume d'Italie), Marche d'Espagne (Catalogne). Sous-royaumes : Aquitaine (Pépin) et Bavière (Louis). Vassaux : États pontificaux, Bretagne. Pampelune passe à l'indépendance basque en 824. Venise byzantine.",
+      "figures": [
+        {
+          "name": "Louis le Pieux",
+          "role": "Empereur, auteur du partage",
+          "faction": "francs",
+          "archetype": "empereur-carolingien",
+          "quote": "(formule libre) L'empire est un : un seul empereur le gouvernera.",
+          "position": [
+            6.0839,
+            50.7753
+          ]
+        },
+        {
+          "name": "Lothaire Ier",
+          "role": "Fils aîné, co-empereur",
+          "faction": "francs",
+          "archetype": "empereur-carolingien",
+          "position": [
+            6.0839,
+            50.7753
+          ]
+        },
+        {
+          "name": "Agobard de Lyon",
+          "role": "Archevêque, défenseur de l'unité de l'empire",
+          "faction": "francs",
+          "archetype": "prelat",
+          "position": [
+            4.832,
+            45.762
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fontenoy-841",
+      "year": 841,
+      "title": "Fontenoy-en-Puisaye : la bataille des frères",
+      "type": "bataille",
+      "location": [
+        3.3547,
+        47.5792
+      ],
+      "zoom": 4.5,
+      "summary": "Le 25 juin 841, Charles le Chauve et Louis le Germanique battent leur frère aîné Lothaire dans une bataille d'une violence inouïe ; l'unité de l'empire est brisée.",
+      "details": "À la mort de **Louis le Pieux** (840), l'empire est déjà un champ de bataille familial. **Lothaire**, l'aîné et empereur, exige de régner seul sur tout l'empire selon le texte de 817. Ses frères **Louis**, roi de Bavière, et **Charles**, le benjamin, qui tient la Neustrie et l'Aquitaine du nord, s'allient contre lui. Lothaire s'unit à son neveu **Pépin II d'Aquitaine**.\n\nLes deux camps se rencontrent le 25 juin 841 à **Fontenoy**, en Bourgogne (près d'Auxerre). L'historien **Nithard**, petit-fils de Charlemagne, combat dans l'armée de Charles et raconte la journée. Lothaire s'est retranché sur une colline, Charles et Louis lancent plusieurs assauts. Au bout d'un jour entier de mêlée, les troupes de Lothaire cèdent. Lothaire s'enfuit vers Aix. Les chroniqueurs parlent de carnage : les Annales de Fulda évoquent 40 000 morts, un chiffre sans doute exagéré mais qui exprime l'horreur ressentie.\n\nCharles et Louis n'ont pas détruit Lothaire, mais ils ont acquis le sentiment que Dieu a jugé en leur faveur. Les évêques voient dans cette bataille une fraternelle catastrophe : toute l'élite militaire franque a perdu ses hommes, ce qui affaiblit durablement la défense contre les **Vikings** et les **Sarrasins**, qui profitent du chaos.",
+      "consequences": [
+        "Lothaire, battu, perd l'espoir de gouverner seul : le principe de l'empire indivisible est abandonné de fait.",
+        "Charles le Chauve et Louis le Germanique renforcent leur alliance, scellée l'année suivante à Strasbourg.",
+        "Les pertes de l'aristocratie guerrière franque affaiblissent la défense des côtes contre les Vikings.",
+        "Pépin II d'Aquitaine perd du terrain face à Charles, qui profitera de sa faiblesse."
+      ],
+      "territory": "fontenoy-841",
+      "sources": [
+        {
+          "label": "Nithard, Histoire des fils de Louis le Pieux, livre II"
+        },
+        {
+          "label": "Annales de Fulda, année 841"
+        },
+        {
+          "label": "Wikipédia — Bataille de Fontenoy-en-Puisaye",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Fontenoy-en-Puisaye"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Charles le Chauve et Louis le Germanique",
+          "Lothaire Ier et Pépin II d'Aquitaine"
+        ],
+        "commanders": [
+          "Charles le Chauve",
+          "Louis le Germanique",
+          "Nithard (chroniqueur)",
+          "Lothaire Ier",
+          "Pépin II"
+        ],
+        "outcome": "Victoire de Charles et Louis ; Lothaire s'enfuit à Aix",
+        "forces": "Effectifs inconnus",
+        "losses": "Très lourdes, jusqu'à 40 000 morts selon les Annales de Fulda (sans doute exagéré)"
+      },
+      "territoryNote": "Empire carolingien en guerre civile : Lothaire tient l'Italie, la Lotharingie, la Provence et la Bourgogne ; Charles, la Neustrie et l'Aquitaine du nord ; Louis, la Bavière et la Germanie ; Pépin II, l'Aquitaine du sud. Étendue globale de l'empire encore proche de celle de 814 : France sauf Bretagne (indépendante de fait sous Nominoë), Belgique, Pays-Bas, Allemagne jusqu'à l'Elbe, Autriche occidentale, Suisse, Italie du Nord et de la Toscane, Marche d'Espagne. États pontificaux vassaux. Pampelune indépendante.",
+      "armies": [
+        {
+          "side": "Charles et Louis",
+          "faction": "francs",
+          "path": [
+            [
+              2.35,
+              48.85
+            ],
+            [
+              3.0,
+              48.3
+            ],
+            [
+              3.3,
+              47.9
+            ],
+            [
+              3.35,
+              47.58
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Lothaire et Pépin II",
+          "faction": "francs",
+          "path": [
+            [
+              6.08,
+              50.78
+            ],
+            [
+              5.4,
+              49.2
+            ],
+            [
+              4.1,
+              48.3
+            ],
+            [
+              3.57,
+              47.8
+            ],
+            [
+              3.35,
+              47.58
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Nithard",
+          "role": "Chroniqueur et combattant, petit-fils de Charlemagne",
+          "faction": "francs",
+          "archetype": "seigneur-franc",
+          "position": [
+            3.0,
+            48.3
+          ]
+        },
+        {
+          "name": "Lothaire Ier",
+          "role": "Empereur vaincu à Fontenoy",
+          "faction": "francs",
+          "archetype": "empereur-carolingien",
+          "position": [
+            4.1,
+            48.3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "strasbourg-842",
+      "year": 842,
+      "title": "Les serments de Strasbourg",
+      "type": "traité",
+      "location": [
+        7.7521,
+        48.5734
+      ],
+      "zoom": 4.5,
+      "summary": "Le 14 février 842, Charles le Chauve et Louis le Germanique se jurent fidélité devant leurs armées, chacun dans la langue de l'autre : première trace écrite du français et de l'allemand.",
+      "details": "Après Fontenoy, **Lothaire** se refait une armée et menace de nouveau ses frères. **Charles** et **Louis** se retrouvent à **Strasbourg** le 14 février 842 pour sceller une alliance contre lui. Leur situation est délicate : ils savent que leurs troupes sont fatiguées et incertaines. Ils veulent prouver, devant leurs armées, qu'ils sont décidés à ne jamais s'abandonner l'un l'autre.\n\nLa cérémonie est solennelle. Louis, qui règne sur des pays de langue germanique, prête serment en **langue romane**, c'est-à-dire en vieux français, pour que les soldats de Charles le comprennent. Charles, qui règne sur des pays de langue romane, jure en **langue tudesque**, un vieux dialecte germanique, pour être compris des hommes de Louis. Puis chaque armée jure dans sa propre langue de ne pas se joindre à celui des deux rois qui trahirait son serment.\n\nLe texte nous est parvenu grâce à **Nithard**, qui l'a recopié dans son histoire. C'est le plus ancien texte en **vieux français** que l'on possède, par exemple la formule « Pro Deo amur et pro christian poblo et nostro commun salvament » (« Par amour de Dieu et pour le salut commun du peuple chrétien et le nôtre »). Pour la première fois, deux royaumes montrent qu'ils parlent deux langues différentes, et que chacune est digne d'un acte public. Ils préfigurent les États qui sortiront de la division carolingienne.",
+      "consequences": [
+        "Charles et Louis forment une alliance durable qui isole Lothaire.",
+        "Le texte est le premier document écrit en langue romane (ancêtre du français), à côté d'un des plus anciens textes en vieil allemand.",
+        "Les deux armées confirment que les peuples du royaume se distinguent désormais par la langue.",
+        "La paix de 843 à Verdun sera négociée sur la base de cette alliance."
+      ],
+      "territory": "strasbourg-842",
+      "sources": [
+        {
+          "label": "Nithard, Histoire des fils de Louis le Pieux, livre III"
+        },
+        {
+          "label": "Serments de Strasbourg (14 février 842)"
+        },
+        {
+          "label": "Wikipédia — Serments de Strasbourg",
+          "url": "https://fr.wikipedia.org/wiki/Serments_de_Strasbourg"
+        }
+      ],
+      "territoryNote": "Empire carolingien en guerre civile, étendue globale inchangée depuis 841 : France sauf Bretagne indépendante de fait, Belgique, Pays-Bas, Allemagne jusqu'à l'Elbe, Suisse, Autriche occidentale, Italie du Nord et de la Toscane, Marche d'Espagne. Charles tient l'ouest, Louis la Bavière et la Germanie, Lothaire l'Italie et le couloir entre Frise et Provence ; Pépin II l'Aquitaine disputée. États pontificaux vassaux. Pampelune indépendante.",
+      "figures": [
+        {
+          "name": "Charles le Chauve",
+          "role": "Roi de la partie occidentale",
+          "faction": "francs",
+          "archetype": "roi-franc",
+          "quote": "Pro Deo amur et pro christian poblo et nostro commun salvament (Nithard)",
+          "position": [
+            7.7521,
+            48.5734
+          ]
+        },
+        {
+          "name": "Louis le Germanique",
+          "role": "Roi de Bavière",
+          "faction": "francs",
+          "archetype": "roi-franc",
+          "position": [
+            7.7521,
+            48.5734
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verdun-843",
+      "year": 843,
+      "title": "Le traité de Verdun : trois royaumes",
+      "type": "traité",
+      "location": [
+        5.3844,
+        49.1604
+      ],
+      "zoom": 3.9,
+      "summary": "En août 843, les trois fils de Louis le Pieux se partagent l'empire : Charles à l'ouest, Louis à l'est, Lothaire au centre avec le titre d'empereur.",
+      "details": "Après deux ans de guerre, les trois frères s'entendent. Une commission de 120 notables est chargée de dresser l'inventaire des terres de l'empire et de les répartir en trois parts équilibrées. Les frères se retrouvent à **Verdun** en août 843 pour signer le partage.\n\n**Charles le Chauve** reçoit la **Francie occidentale**, à l'ouest de l'Escaut, de la Meuse, de la Saône et du Rhône : c'est la base de la future France, avec la Neustrie, l'Aquitaine, la Gothie et la Marche d'Espagne. **Louis le Germanique** reçoit la **Francie orientale**, à l'est du Rhin, plus quelques villes de la rive gauche (Spire, Worms, Mayence) : c'est la base de la future Allemagne. **Lothaire** garde le titre d'empereur et la **Francie médiane**, une bande étroite de la mer du Nord à l'Italie qui comprend la Frise, la **Lotharingie**, la Bourgogne, la Provence, la Lombardie et Rome, avec les deux capitales, Aix-la-Chapelle et Rome.\n\nCe partage n'a pas été conçu comme une rupture : les trois rois restent frères et se disent unis par la « fraternité ». Mais le royaume du milieu, tiré en longueur, mal défendable et peu uni par la langue ou la géographie, est condamné. Entre la France et l'Allemagne actuelles, les terres de Lothaire seront disputées pendant plus de mille ans, de la Lorraine à l'Alsace.",
+      "consequences": [
+        "L'empire carolingien est divisé en trois royaumes distincts : Francie occidentale, médiane et orientale.",
+        "La Francie occidentale et la Francie orientale préfigurent la France et l'Allemagne.",
+        "La Francie médiane, la plus fragile, sera morcelée en Lotharingie, Provence et Italie.",
+        "Le titre impérial demeure attaché à Lothaire et à ses descendants, mais sans pouvoir réel sur ses frères."
+      ],
+      "territory": "verdun-843",
+      "sources": [
+        {
+          "label": "Annales de Saint-Bertin, année 843"
+        },
+        {
+          "label": "Nithard, Histoire des fils de Louis le Pieux, livre IV"
+        },
+        {
+          "label": "Wikipédia — Traité de Verdun",
+          "url": "https://fr.wikipedia.org/wiki/Trait%C3%A9_de_Verdun"
+        }
+      ],
+      "territoryNote": "Trois royaumes rivaux issus du partage. Francie occidentale (Charles le Chauve) : France actuelle à l'ouest de l'Escaut, de la Meuse, de la Saône et du Rhône (Neustrie, Aquitaine, Gothie, Marche d'Espagne), sans la Bretagne. Francie orientale (Louis le Germanique) : Allemagne à l'est du Rhin, Bavière, Saxe, plus Spire, Worms et Mayence. Francie médiane (Lothaire Ier, empereur) : Frise, Lotharingie, Alsace, Bourgogne, Provence, Italie du Nord et du centre. États pontificaux sous protection de Lothaire (vassal).",
+      "figures": [
+        {
+          "name": "Charles le Chauve",
+          "role": "Roi de la Francie occidentale",
+          "faction": "francs",
+          "archetype": "roi-franc",
+          "position": [
+            2.35,
+            48.85
+          ]
+        },
+        {
+          "name": "Louis le Germanique",
+          "role": "Roi de la Francie orientale",
+          "faction": "francs",
+          "archetype": "roi-franc",
+          "position": [
+            12.1,
+            49.01
+          ]
+        },
+        {
+          "name": "Lothaire Ier",
+          "role": "Empereur, roi de la Francie médiane",
+          "faction": "francs",
+          "archetype": "empereur-carolingien",
+          "quote": "(formule libre) Le titre d'empereur me reste, au moins.",
+          "position": [
+            6.0839,
+            50.7753
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paris-845",
+      "year": 845,
+      "title": "Les Vikings remontent la Seine jusqu'à Paris",
+      "type": "bataille",
+      "location": [
+        2.3522,
+        48.8566
+      ],
+      "zoom": 4.5,
+      "summary": "Au printemps 845, le chef danois Ragnar remonte la Seine avec 120 navires et pille Paris ; Charles le Chauve doit acheter son départ pour 7 000 livres d'argent.",
+      "details": "Depuis la fin du VIIIe siècle, les **Vikings**, marins scandinaves du Danemark, de Norvège et de Suède, attaquent les côtes de l'Occident. Leurs navires à fond plat, les **drakkars**, peuvent remonter les fleuves et frapper loin à l'intérieur. Jusqu'alors, ce sont des raids isolés. Mais le conflit entre les fils de Louis le Pieux désorganise la défense.\n\nAu printemps 845, un chef nommé **Ragnar** (Reginherus dans les textes latins), peut-être l'ancêtre de héros de sagas, remonte la **Seine** avec, dit-on, 120 navires. **Charles le Chauve** divise ses forces sur les deux rives du fleuve, une erreur : les Vikings battent séparément l'une des moitiés, pendent 111 prisonniers sur une île devant l'autre armée et atteignent **Paris** le jour de Pâques, 28 mars, la pillent, ainsi que l'abbaye de **Saint-Germain-des-Prés**. Une épidémie de dysenterie frappe ensuite les envahisseurs.\n\nCharles, impuissant, négocie. Il remet à Ragnar **7 000 livres d'argent** pour qu'il reparte. C'est le premier **Danegeld**, tribut payé aux Vikings pour acheter la paix, que d'autres rois imiteront. La même année, d'autres Vikings détruisent **Hambourg**, base de l'évangélisation du Nord. L'empire, divisé, n'a plus les moyens de défendre ses fleuves.",
+      "consequences": [
+        "Le tribut de 7 000 livres d'argent donne le modèle du Danegeld : les raids se multiplieront.",
+        "Les monastères et villes de Neustrie, dont Saint-Denis et Saint-Germain-des-Prés, sont dépeuplés ou fortifiés.",
+        "Hambourg est détruite en 845 : la mission vers le Nord est interrompue.",
+        "Les rois carolingiens, empêtrés dans leurs querelles, renoncent à une défense navale efficace."
+      ],
+      "territory": "paris-845",
+      "sources": [
+        {
+          "label": "Annales de Saint-Bertin, année 845"
+        },
+        {
+          "label": "Annales de Saint-Vaast"
+        },
+        {
+          "label": "Wikipédia — Siège de Paris (845)",
+          "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_Paris_(845)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Francie occidentale",
+          "Vikings danois"
+        ],
+        "commanders": [
+          "Charles le Chauve",
+          "Ragnar (Reginherus)"
+        ],
+        "outcome": "Victoire viking : pillage de Paris, tribut de 7 000 livres",
+        "forces": "120 navires selon les Annales de Saint-Bertin",
+        "losses": "Inconnues ; 111 prisonniers francs pendus"
+      },
+      "territoryNote": "Francie occidentale (Charles le Chauve) : France actuelle à l'ouest de l'Escaut, de la Meuse, de la Saône et du Rhône, sans la Bretagne (autonome sous Nominoë) ; Marche d'Espagne. Francie orientale (Louis le Germanique) : Allemagne à l'est du Rhin, Bavière, Saxe, plus Spire, Worms et Mayence. Francie médiane (Lothaire Ier) : Frise, Lotharingie, Alsace, Bourgogne, Provence, Italie du Nord, avec les États pontificaux (vassal). Les Vikings hors des royaumes, mais en raid sur la Seine, l'Elbe et la Loire.",
+      "armies": [
+        {
+          "side": "Vikings de Ragnar",
+          "faction": "vikings",
+          "path": [
+            [
+              0.1,
+              49.48
+            ],
+            [
+              1.09,
+              49.44
+            ],
+            [
+              1.9,
+              49.1
+            ],
+            [
+              2.35,
+              48.85
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Francs de Charles le Chauve",
+          "faction": "francs",
+          "path": [
+            [
+              2.36,
+              48.94
+            ],
+            [
+              2.35,
+              48.85
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Ragnar",
+          "role": "Chef viking, assaillant de Paris",
+          "faction": "vikings",
+          "archetype": "chef-barbare",
+          "position": [
+            2.35,
+            48.85
+          ]
+        },
+        {
+          "name": "Charles le Chauve",
+          "role": "Roi de Francie occidentale, qui paie le tribut",
+          "faction": "francs",
+          "archetype": "roi-franc",
+          "quote": "(formule libre) Il vaut mieux payer que perdre Paris.",
+          "position": [
+            2.36,
+            48.94
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prum-855",
+      "year": 855,
+      "title": "Le partage de Prüm",
+      "type": "traité",
+      "location": [
+        6.4167,
+        50.2078
+      ],
+      "zoom": 4.0,
+      "summary": "À la mort de Lothaire Ier en 855, le royaume du milieu est lui-même divisé en trois entre ses fils : l'Italie, la Lotharingie et la Provence.",
+      "details": "Lothaire Ier, épuisé, abdique en septembre 855 et entre dans l'abbaye de **Prüm**, dans l'Eifel, où il meurt quelques jours plus tard, le 29 septembre. Peu avant, il a réglé sa succession, une nouvelle fois par un partage. Ses trois fils reçoivent chacun une part de la Francie médiane.\n\n**Louis II**, l'aîné, déjà roi d'Italie depuis 844, garde l'Italie et le titre d'**empereur**. Il passera sa vie à combattre les Sarrasins dans le sud de la péninsule. **Lothaire II** reçoit la partie septentrionale, de la Frise au Jura, qu'on appellera désormais **Lotharingie** (« royaume de Lothaire », d'où le nom de la Lorraine). **Charles**, le benjamin, reçoit la **Provence**, la Bourgogne méridionale et le Lyonnais. Il est faible et épileptique, il mourra jeune en 863.\n\nChaque part est trop petite pour compter parmi les grandes puissances d'Europe, ce qui attire les convoitises de leurs oncles, Charles le Chauve et Louis le Germanique. Chaque mort sans héritier ouvrira une succession disputée. La Francie médiane, déjà étirée et dépourvue d'unité linguistique, commence à s'effilocher. Elle est le premier territoire de l'empire à disparaître.",
+      "consequences": [
+        "La Francie médiane éclate en trois royaumes : Italie (avec le titre impérial), Lotharingie, Provence-Bourgogne.",
+        "Le titre d'empereur ne s'accompagne plus que du seul royaume d'Italie.",
+        "Les oncles Charles le Chauve et Louis le Germanique surveillent chaque décès pour s'emparer de parts.",
+        "La Lotharingie, entre France et Allemagne, deviendra un enjeu de conflits durables."
+      ],
+      "territory": "prum-855",
+      "sources": [
+        {
+          "label": "Annales de Saint-Bertin, année 855"
+        },
+        {
+          "label": "Réginon de Prüm, Chronique"
+        },
+        {
+          "label": "Wikipédia — Traité de Prüm",
+          "url": "https://fr.wikipedia.org/wiki/Trait%C3%A9_de_Pr%C3%BCm"
+        }
+      ],
+      "territoryNote": "Francie occidentale (Charles le Chauve), Francie orientale (Louis le Germanique), puis trois royaumes issus de la Francie médiane : Italie (Louis II, empereur, avec Spolète ; États pontificaux sous sa protection, vassal), Lotharingie (Lothaire II : Frise, Lorraine, Belgique orientale, Alsace, Franche-Comté du nord) et Provence-Bourgogne (Charles de Provence : Lyonnais, Provence, Dauphiné, Savoie). Bretagne indépendante, Marche d'Espagne à la Francie occidentale.",
+      "figures": [
+        {
+          "name": "Lothaire Ier",
+          "role": "Empereur retiré à Prüm, qui partage son royaume",
+          "faction": "francs",
+          "archetype": "empereur-carolingien",
+          "quote": "(formule libre) Je laisse à chacun de mes fils sa part.",
+          "position": [
+            6.4167,
+            50.2078
+          ]
+        },
+        {
+          "name": "Louis II",
+          "role": "Fils aîné, roi d'Italie et empereur",
+          "faction": "francs",
+          "archetype": "empereur-carolingien",
+          "position": [
+            9.16,
+            45.19
+          ]
+        },
+        {
+          "name": "Lothaire II",
+          "role": "Roi de Lotharingie",
+          "faction": "francs",
+          "archetype": "roi-franc",
+          "position": [
+            6.0839,
+            50.7753
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meerssen-870",
+      "year": 870,
+      "title": "Le traité de Meerssen partage la Lotharingie",
+      "type": "traité",
+      "location": [
+        5.7517,
+        50.8847
+      ],
+      "zoom": 4.25,
+      "summary": "À la mort de Lothaire II en 869, ses oncles Charles le Chauve et Louis le Germanique se partagent son royaume : la Lotharingie est coupée en deux.",
+      "details": "**Lothaire II**, roi de Lotharingie, a passé sa vie à tenter d'obtenir du pape l'annulation de son mariage avec Teutberge, qui ne lui donne pas d'enfant, pour épouser sa maîtresse Waldrade. Le pape **Nicolas Ier** s'y refuse. Lothaire meurt à Plaisance le 8 août 869, sans héritier légitime. Son frère **Louis II**, empereur, tient l'Italie et ne peut intervenir.\n\n**Charles le Chauve** réagit aussitôt : il envahit la Lotharingie, se fait couronner roi à **Metz** en septembre 869 et prend possession de ses villes. Son frère **Louis le Germanique**, malade, proteste puis menace. Les deux oncles s'accordent finalement en août 870 à **Meerssen**, près de Maastricht, sur un partage à peu près égal.\n\nLa partie occidentale revient à Charles le Chauve : le Brabant, le Hainaut, la Bourgogne, avec **Besançon**, **Lyon** et **Vienne**. La partie orientale revient à Louis : la Frise, **Aix-la-Chapelle**, **Cologne**, **Trèves**, **Metz** et l'Alsace avec **Strasbourg**. Aix, ancienne capitale de Charlemagne, passe ainsi dans l'orbite de la Francie orientale. L'accord est négocié sans tenir compte des habitants ni de l'empereur Louis II. En 880, au traité de Ribemont, la Lotharingie passera tout entière à la Francie orientale.",
+      "consequences": [
+        "La Lotharingie disparaît comme royaume : la Meuse et la Moselle servent de limite entre l'ouest et l'est.",
+        "La Francie orientale gagne Aix-la-Chapelle, Cologne, Trèves, Metz, Strasbourg et la Frise.",
+        "La Francie occidentale gagne le Hainaut, le Brabant, la Bourgogne, Lyon et Vienne.",
+        "L'empereur Louis II, qui garde l'Italie et la Provence méridionale, est écarté du partage."
+      ],
+      "territory": "meerssen-870",
+      "sources": [
+        {
+          "label": "Annales de Saint-Bertin, année 870"
+        },
+        {
+          "label": "Annales de Fulda, année 870"
+        },
+        {
+          "label": "Wikipédia — Traité de Meerssen",
+          "url": "https://fr.wikipedia.org/wiki/Trait%C3%A9_de_Meerssen"
+        }
+      ],
+      "territoryNote": "Après Meerssen : Francie occidentale (Charles le Chauve) étendue au Hainaut, au Brabant, à la Bourgogne, à Lyon et à Vienne ; Francie orientale (Louis le Germanique) étendue à Aix-la-Chapelle, Cologne, Trèves, Metz, Strasbourg et la Frise ; royaume d'Italie (Louis II, empereur) avec Provence méridionale ; États pontificaux sous protection impériale (vassal). Bretagne indépendante.",
+      "figures": [
+        {
+          "name": "Charles le Chauve",
+          "role": "Roi de Francie occidentale, nouveau roi de la moitié ouest de la Lotharingie",
+          "faction": "francs",
+          "archetype": "roi-franc",
+          "position": [
+            5.7517,
+            50.8847
+          ]
+        },
+        {
+          "name": "Louis le Germanique",
+          "role": "Roi de Francie orientale, âgé et malade",
+          "faction": "francs",
+          "archetype": "roi-franc",
+          "position": [
+            5.7517,
+            50.8847
+          ]
+        },
+        {
+          "name": "Hincmar de Reims",
+          "role": "Archevêque, conseiller de Charles le Chauve",
+          "faction": "francs",
+          "archetype": "prelat",
+          "position": [
+            4.03,
+            49.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "charles-gros-884",
+      "year": 884,
+      "title": "Charles le Gros réunit l'empire",
+      "type": "politique",
+      "location": [
+        6.0839,
+        50.7753
+      ],
+      "zoom": 3.9,
+      "summary": "À la fin de 884, la mort de Carloman II laisse Charles le Gros seul survivant de la famille : il reçoit la couronne de Francie occidentale et reconstitue pour un temps l'empire de Charlemagne.",
+      "details": "Depuis 870, les rois carolingiens meurent un à un, souvent jeunes. **Charles le Gros**, fils de Louis le Germanique, hérite de l'Italie en 879, de la Francie orientale en 882 à la mort de son frère, puis se fait couronner **empereur** par le pape en 881. Il règne aussi sur la Lotharingie et la Souabe. Mais il est malade (épilepsie ou maux de tête) et indécis.\n\nEn 882, il achète le départ de **Godfrid**, chef danois installé en Frise, en lui cédant des terres (il sera assassiné en 885). En 884, son cousin **Carloman II**, roi de Francie occidentale, meurt d'un accident de chasse, la dernière victime d'une chaîne de morts prématurées. Il ne reste en lice que Charles, car le seul héritier de la dynastie, **Charles le Simple**, n'a que cinq ans. Les grands de l'ouest, accablés par les Vikings, appellent Charles le Gros à leur tête.\n\nÀ la fin de 884 ou au début de 885, l'empereur reçoit leur serment : il règne désormais sur la quasi-totalité de l'empire de Charlemagne, de la Marche d'Espagne à la Saxe et de la Manche à Rome. Mais ce n'est qu'une façade. Charles n'est pas de taille à affronter les Vikings, que les Francs de l'ouest attendent de lui. L'effort va échouer devant Paris.",
+      "consequences": [
+        "L'empire de Charlemagne est reconstitué en apparence, sous un seul souverain, pour la dernière fois.",
+        "Charles le Simple, enfant de cinq ans, est écarté de la succession occidentale.",
+        "Le pouvoir réel appartient aux grands, comtes, ducs et évêques, qui se choisissent un chef.",
+        "Les Vikings menacent toujours la Seine, la Loire et le Rhin : le test décisif est proche."
+      ],
+      "territory": "charles-gros-884",
+      "sources": [
+        {
+          "label": "Annales de Fulda (continuation de Mayence)"
+        },
+        {
+          "label": "Réginon de Prüm, Chronique, année 885"
+        },
+        {
+          "label": "Wikipédia — Charles le Gros",
+          "url": "https://fr.wikipedia.org/wiki/Charles_le_Gros"
+        }
+      ],
+      "territoryNote": "Empire carolingien réunifié sous Charles le Gros : France actuelle sauf Bretagne (royaume de Salomon, vassal en pratique), Belgique, Pays-Bas, Luxembourg, Allemagne jusqu'à l'Elbe, Autriche occidentale, Suisse, Italie du Nord et de la Toscane, Provence et Bourgogne (Louis le Bègue, Boson, vassaux), Marche d'Espagne. Vassaux : États pontificaux, Bretagne. Venise, al-Andalus et Asturies indépendants.",
+      "figures": [
+        {
+          "name": "Charles le Gros",
+          "role": "Empereur, roi de tout l'ancien empire carolingien",
+          "faction": "francs",
+          "archetype": "empereur-carolingien",
+          "quote": "(formule libre) Seul survivant, je porte toutes les couronnes.",
+          "position": [
+            6.0839,
+            50.7753
+          ]
+        },
+        {
+          "name": "Foulques de Reims",
+          "role": "Archevêque, qui appelle Charles à l'ouest",
+          "faction": "francs",
+          "archetype": "prelat",
+          "position": [
+            4.03,
+            49.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "siege-paris-885",
+      "year": 885,
+      "title": "Le siège de Paris par les Vikings",
+      "type": "bataille",
+      "location": [
+        2.3484,
+        48.8553
+      ],
+      "zoom": 5.0,
+      "summary": "De novembre 885 à l'automne 886, Paris, défendue sur l'île de la Cité par l'évêque Gozlin et le comte Eudes, résiste à une immense armée viking.",
+      "details": "En novembre 885, un énorme convoi viking remonte la Seine. Le poète **Abbon**, moine de Saint-Germain-des-Prés, qui assiste au siège, parle de 700 navires et de 30 000 hommes, chiffres exagérés mais révélateurs. Le chef **Sigfred** réclame passage vers la Bourgogne. Il se heurte au refus de l'évêque **Gozlin** et du comte **Eudes**, fils de Robert le Fort. Paris n'est alors qu'une petite ville sur l'**île de la Cité**, entourée de murs, gardée par deux tours aux têtes de ponts.\n\nLes Vikings donnent l'assaut dès novembre, par des machines et des brûlots, sans succès. Ils entreprennent un long siège, ravagent la campagne, mais se heurtent à une résistance inattendue. Gozlin meurt en avril 886, de maladie. Eudes sort de la ville pour presser l'empereur d'intervenir, puis y rentre en forçant le blocus.\n\nCharles le Gros arrive enfin à l'automne 886 avec une armée, mais refuse la bataille. Il négocie, verse 700 livres d'argent et autorise les Vikings à aller piller la Bourgogne, qui ne lui appartient pas encore pleinement. Les Parisiens, qui ont tenu un an, en conçoivent mépris pour un empereur lâche. Eudes, héros du siège, sera élu roi en 888.",
+      "consequences": [
+        "La résistance de Paris fait d'Eudes un héros national et le futur roi de Francie occidentale.",
+        "L'empereur, qui paie un tribut au lieu de combattre, perd le respect des grands.",
+        "Les Vikings pillent la Bourgogne, qui reste un temps sans défense.",
+        "Paris acquiert un statut de ville-refuge : les comtes de Paris deviennent les vrais défenseurs du royaume."
+      ],
+      "territory": "siege-paris-885",
+      "sources": [
+        {
+          "label": "Abbon de Saint-Germain-des-Prés, Bella Parisiacae urbis"
+        },
+        {
+          "label": "Annales de Saint-Vaast, années 885-886"
+        },
+        {
+          "label": "Wikipédia — Siège de Paris (885-886)",
+          "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_Paris_(885-886)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Défenseurs de Paris (Francie occidentale)",
+          "Vikings"
+        ],
+        "commanders": [
+          "Eudes, comte de Paris",
+          "Gozlin, évêque de Paris",
+          "Sigfred (Sigefroi)"
+        ],
+        "outcome": "Victoire parisienne : la ville tient un an ; les Vikings partent contre tribut",
+        "forces": "700 navires et 30 000 hommes selon Abbon (très exagéré)",
+        "losses": "Inconnues"
+      },
+      "territoryNote": "Empire carolingien réunifié sous Charles le Gros, comme en 884 : France actuelle sauf Bretagne (royaume de Salomon, vassal en pratique), Belgique, Pays-Bas, Allemagne jusqu'à l'Elbe, Autriche occidentale, Suisse, Italie du Nord et de la Toscane, Provence et Bourgogne, Marche d'Espagne. États pontificaux vassaux. Les Vikings tiennent des camps sur la Seine, la Meuse et en Frise.",
+      "armies": [
+        {
+          "side": "Vikings de Sigfred",
+          "faction": "vikings",
+          "path": [
+            [
+              1.09,
+              49.44
+            ],
+            [
+              1.7,
+              49.2
+            ],
+            [
+              2.1,
+              49.0
+            ],
+            [
+              2.35,
+              48.86
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Parisiens d'Eudes",
+          "faction": "francs",
+          "path": [
+            [
+              2.3,
+              48.86
+            ],
+            [
+              2.35,
+              48.855
+            ]
+          ],
+          "strength": 1,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Eudes",
+          "role": "Comte de Paris, héros du siège",
+          "faction": "francs",
+          "archetype": "seigneur-franc",
+          "quote": "(formule libre) Pas un pouce de la Cité ne sera cédé.",
+          "position": [
+            2.3484,
+            48.8553
+          ]
+        },
+        {
+          "name": "Gozlin",
+          "role": "Évêque de Paris, mort pendant le siège",
+          "faction": "francs",
+          "archetype": "prelat",
+          "position": [
+            2.3484,
+            48.8553
+          ]
+        },
+        {
+          "name": "Sigfred",
+          "role": "Chef viking du siège",
+          "faction": "vikings",
+          "archetype": "chef-barbare",
+          "position": [
+            2.35,
+            48.86
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deposition-887",
+      "year": 887,
+      "title": "La déposition de Charles le Gros : la fin de l'unité",
+      "type": "chute",
+      "location": [
+        8.4,
+        49.92
+      ],
+      "zoom": 3.9,
+      "summary": "En novembre 887, les grands abandonnent Charles le Gros à Tribur et élisent son neveu Arnulf : en quelques mois, l'empire se dissout en cinq royaumes rivaux.",
+      "details": "Charles le Gros, malade et discrédité par l'affaire de Paris, perd la confiance de l'aristocratie. Sa tentative d'adopter **Bernard**, un fils illégitime, pour lui laisser le trône, indigne les grands. Son neveu **Arnulf de Carinthie**, bâtard du roi Carloman de Bavière mais valeureux guerrier, se révolte. En novembre 887, à **Tribur**, près de Mayence, les grands de Germanie déposent l'empereur, qui se retire dans un monastère de Souabe. Il meurt le 13 janvier 888.\n\nPersonne ne succède à l'ensemble : l'héritage de Charlemagne éclate. Arnulf est roi de **Francie orientale**, avec la Lotharingie. À l'ouest, les grands élisent **Eudes**, comte de Paris, héros du siège (février 888). En Bourgogne, **Rodolphe Ier** se fait roi de la Haute-Bourgogne (Jura, Suisse romande). En Italie, **Bérenger de Frioul** et **Gui de Spolète** se disputent la couronne. En Provence, **Louis l'Aveugle** sera couronné en 890.\n\nLe chroniqueur Réginon de Prüm écrit que les royaumes, privés de leur seigneur légitime, se sont comportés comme s'ils devaient chacun se donner un roi, « de leurs propres entrailles ». Les Carolingiens ne disparaîtront ni en France (où ils reviennent avec Charles le Simple en 893) ni en Germanie (jusqu'en 911). Mais l'idée d'un empire unique est morte : l'Europe a désormais deux grands royaumes, France et Allemagne.",
+      "consequences": [
+        "L'empire carolingien se divise définitivement en cinq royaumes : Francie occidentale, Francie orientale, Italie, Haute-Bourgogne et Provence.",
+        "Arnulf règne à l'est et ressuscitera le titre impérial en 896, mais sans unité réelle.",
+        "À l'ouest, Eudes inaugure le rôle des ducs robertiens, ancêtres des futurs Capétiens.",
+        "Le titre impérial, disputé entre princes italiens, perd presque toute valeur jusqu'à Otton Ier (962)."
+      ],
+      "territory": "deposition-887",
+      "sources": [
+        {
+          "label": "Réginon de Prüm, Chronique, années 887-888"
+        },
+        {
+          "label": "Annales de Fulda (continuation de Mayence), année 887"
+        },
+        {
+          "label": "Wikipédia — Arnulf de Carinthie",
+          "url": "https://fr.wikipedia.org/wiki/Arnulf_de_Carinthie"
+        }
+      ],
+      "territoryNote": "Fin de l'unité : Francie occidentale (Eudes, élu en 888 : France actuelle à l'ouest de l'Escaut, de la Meuse, de la Saône et du Rhône, Gothie, Marche d'Espagne, sans la Bretagne), Francie orientale (Arnulf de Carinthie : Allemagne, Bavière, Saxe, Lotharingie, Frise), royaume d'Italie (Bérenger de Frioul, Italie du Nord), Haute-Bourgogne (Rodolphe Ier : Jura, Suisse romande), Provence (Louis l'Aveugle dès 890). États pontificaux autonomes. Les Vikings tiennent des camps en Neustrie et en Frise.",
+      "figures": [
+        {
+          "name": "Arnulf de Carinthie",
+          "role": "Neveu rebelle, nouveau roi de Francie orientale",
+          "faction": "francs",
+          "archetype": "roi-franc",
+          "position": [
+            8.4,
+            49.92
+          ]
+        },
+        {
+          "name": "Charles le Gros",
+          "role": "Empereur déposé, mort en 888",
+          "faction": "francs",
+          "archetype": "empereur-carolingien",
+          "quote": "(formule libre) Même mon pain m'est désormais compté.",
+          "position": [
+            8.4,
+            49.92
+          ]
+        },
+        {
+          "name": "Eudes",
+          "role": "Comte de Paris, roi de Francie occidentale en 888",
+          "faction": "francs",
+          "archetype": "seigneur-franc",
+          "position": [
+            2.35,
+            48.85
+          ]
+        }
+      ]
+    }
+  ]
+}
