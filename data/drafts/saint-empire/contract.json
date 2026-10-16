@@ -1,0 +1,72 @@
+{
+  "factions": [
+    {
+      "id": "imperiaux",
+      "label": "Impériaux (chevaliers allemands)",
+      "drawing": "Chevalier allemand du Moyen Âge central : heaume à fente ou cervelière sur coiffe de mailles, haubert, surcotte jaune frappée de l'aigle noir, grand écu triangulaire jaune à l'aigle noir, épée et lance, fanion jaune et noir. Pour les souverains et notables des siècles suivants : armure de plates et manteau court jaune et noir.",
+      "info": "Les troupes de l'empereur sont d'abord des cavaliers lourds levés par les ducs et les évêques, puis des contingents mixtes. L'aigle noir sur fond jaune orne leurs bannières, et devient bicéphale à partir de Sigismond (XVe siècle). Ces soldats combattent en Italie, en Bohême et en Hongrie. L'armée dépend des princes, sans corps permanent avant le XVIIe siècle."
+    },
+    {
+      "id": "communes-lombardes",
+      "label": "Milices des communes lombardes",
+      "drawing": "Fantassin urbain du XIIe siècle : cotte de mailles courte ou gambeson matelassé, casque conique à nasal ou chapel de fer, long écu, lance de deux mètres, couteau ; grande bannière blanche à croix rouge (Milan) ; chariot de guerre (Carroccio) avec mât, croix et cloche.",
+      "info": "Les villes d'Italie du Nord (Milan, Brescia, Crémone, Vérone…) lèvent leurs propres milices de bourgeois et de petits chevaliers. Au centre, le Carroccio, un chariot portant l'étendard et un autel, sert de point de ralliement. Unies dans la Ligue lombarde (1167), elles battent Barberousse à Legnano en 1176."
+    },
+    {
+      "id": "suisses",
+      "label": "Confédérés suisses",
+      "drawing": "Montagnard fantassin des XIVe-XVe siècles : habit de laine court, jambes en bas colorés, bonnet ou capeline de fer, hallebarde à long fer (ou pique de cinq mètres), grande épée au côté ; bannière rouge à croix blanche.",
+      "info": "Paysans et artisans des cantons alpins, ils combattent à pied, en carrés serrés armés de hallebardes puis de piques. Morgarten (1315), Sempach (1386) et Morat (1476) enseignent qu'une infanterie disciplinée peut vaincre des chevaliers. Leurs mercenaires seront recherchés dans toute l'Europe."
+    },
+    {
+      "id": "hussites",
+      "label": "Hussites",
+      "drawing": "Paysan de Bohême en armes (XVe siècle) : jaque de cuir ou de laine, casque de fer rond, fléau ferré ou arbalète, arquebuse à main sur l'épaule ; étendard blanc au calice rouge ; chariot de guerre aux bordages renforcés.",
+      "info": "Partisans de Jan Hus, brûlé à Constance en 1415, ils sont issus de la petite noblesse, des bourgeois de Prague et des paysans de Tábor. Jan Žižka les organise autour du Wagenburg, un fort de chariots enchaînés d'où partent canons, arquebuses et arbalètes. Ils repoussent cinq croisades avant de se diviser en 1434."
+    },
+    {
+      "id": "lansquenets",
+      "label": "Lansquenets",
+      "drawing": "Fantassin allemand de 1500-1650 : pourpoint et chausses taillées, bouffantes, multicolores ; béret à grandes plumes ou morion ; longue pique de quatre à cinq mètres, hallebarde ou épée à deux mains (Zweihänder) ; arquebusiers avec bandoulière ; écharpe aux couleurs du chef.",
+      "info": "Créés par Maximilien Ier vers 1486, les « valets du pays » (Landsknechte) sont des mercenaires allemands qui combattent en carrés de piquiers, appuyés par des arquebusiers. Ils servent Charles Quint à Pavie et à Mühlberg, puis les armées de la guerre de Trente Ans et de la défense de Vienne. Ils sont payés par contrat, et le pillage fait partie de leur salaire."
+    },
+    {
+      "id": "magyars",
+      "label": "Magyars (Hongrois)",
+      "drawing": "Cavalier hongrois du XVIe siècle : kalpak de fourrure surmonté d'une plume de héron, dolman et mente (veste) brodés rouges ou verts, bottes de cuir, sabre recourbé, arc ou lance, petit bouclier rond ; cuirasse de plates pour les nobles.",
+      "info": "Les Magyars, cavaliers de la steppe installés dans la plaine du Danube vers 896, fondent le royaume de Hongrie en l'an 1000. Au XVIe siècle, la cavalerie légère et les nobles en armure y forment le gros de l'armée. À Mohács, en 1526, ils sont détruits par les Ottomans, et le royaume se partage en trois."
+    },
+    {
+      "id": "suedois",
+      "label": "Suédois (armée de Gustave-Adolphe)",
+      "drawing": "Soldat suédois de la guerre de Trente Ans : casque à bords ou chapeau de feutre, justaucorps de cuir de buffle, écharpe bleue et jaune, mousquet à mèche avec fourquine, piquier en cuirasse légère, épée courte ; drapeaux bleu et jaune.",
+      "info": "Armée nationale levée par conscription et réorganisée par Gustave-Adolphe : bataillons de mousquetaires et de piquiers peu profonds, artillerie légère, cavalerie qui charge à l'épée. Elle bat les impériaux à Breitenfeld (1631) et à Lützen (1632). Le roi y trouve la mort, mais la Suède restera une grande puissance jusqu'en 1721."
+    }
+  ],
+  "archetypes": [
+    {
+      "id": "empereur-germanique",
+      "label": "Empereur germanique",
+      "drawing": "Souverain en manteau pourpre ou rouge doublé d'hermine, couronne impériale en forme de mitre à arche et à croix, globe et sceptre ; cotte brodée de l'aigle noir sur fond jaune ; épée de cérémonie ; barbu au Moyen Âge, perruque aux XVIIe-XVIIIe siècles.",
+      "info": "Chef élu du Saint-Empire, couronné par le pape jusqu'en 1530. Il porte la couronne d'Otton Ier, conservée à Vienne, et prétend succéder à Charlemagne et aux empereurs romains. Son pouvoir réel dépend de ses terres propres et du soutien des princes. Les Habsbourg tiennent la dignité presque sans interruption de 1438 à 1806."
+    },
+    {
+      "id": "prince-electeur",
+      "label": "Prince d'Empire (prince-électeur)",
+      "drawing": "Grand seigneur allemand en habit d'apparat : manteau rouge doublé d'hermine, bonnet électoral rouge bordé d'hermine ou toque à plume, chaîne d'or, épée à poignée dorée ; archevêque-électeur en chape et mitre. À la guerre : armure de plates avec bâton de commandement.",
+      "info": "Les princes d'Empire sont des ducs, margraves, comtes, archevêques ou évêques qui gouvernent leurs terres presque comme des souverains. Sept d'entre eux, les électeurs, élisent le roi des Romains depuis la Bulle d'or de 1356 ; ils seront huit puis neuf. Ils forment le premier ordre de la diète."
+    },
+    {
+      "id": "reformateur",
+      "label": "Réformateur (Luther)",
+      "drawing": "Docteur en théologie à la robe noire et au col blanc plat, bonnet de docteur, visage rond et regard ferme ; tient une grosse Bible ouverte ou une plume ; sans arme.",
+      "info": "Martin Luther (1483-1546), moine augustin et professeur à Wittenberg, affirme que le salut vient de la foi et de l'Écriture seule. Il traduit la Bible en allemand, compose des cantiques et renouvelle l'enseignement. Sa rupture avec Rome ouvre la Réforme, qui divisera durablement l'Empire."
+    },
+    {
+      "id": "capitaine",
+      "label": "Capitaine d'Empire",
+      "drawing": "Chef de guerre d'Europe centrale (XVe-XVIIe siècle) : armure de plates ou cuirasse de buffle avec grand col de dentelle, écharpe de commandement, chapeau à plumes ou casque sallet, bâton de commandement, épée à garde ; petit drapeau.",
+      "info": "Les chefs d'armée du Saint-Empire sont souvent des nobles bohémiens, bavarois ou wallons, parfois des entrepreneurs de guerre qui lèvent des régiments à leurs frais. Jan Žižka, Tilly, Wallenstein ou Pappenheim relèvent de ce type. Ils s'appuient sur des mercenaires payés par contrat."
+    }
+  ]
+}

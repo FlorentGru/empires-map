@@ -1,0 +1,5137 @@
+{
+  "empire": "saint-empire",
+  "basemapNote": "Étendue nécessaire ≈ [-6,37,28,58] (Europe centrale et occidentale, Méditerranée centrale), la Castille (Charles Quint) et la Hongrie/Galicie/Transylvanie (Habsbourg) incluses ; reste dans le fond de carte actuel [-25,-40,150,72] ; pas d'antiméridien. Les pays Natural Earth « Netherlands », « France » et « Spain » portent aussi des territoires d'outre-mer : prévoir de les restreindre à l'Europe (région nommée « Europe » du fichier _regions.geojson).",
+  "steps": [
+    {
+      "id": "otton-962",
+      "year": 962,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Royaume de Bourgogne-Arles (sous protection)",
+          "status": "vassal",
+          "source": {
+            "region": "Royaume de Bourgogne-Arles"
+          }
+        },
+        {
+          "name": "Duché de Bohême (tributaire)",
+          "status": "vassal",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Peuples slaves tributaires (Obodrites, Wilzes)",
+          "status": "vassal",
+          "source": {
+            "region": "Pays slaves de l'Elbe"
+          }
+        },
+        {
+          "name": "Royaume de Germanie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Germany$"
+              },
+              {
+                "country": "^Austria$"
+              },
+              {
+                "country": "^Slovenia$"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Suisse alémanique",
+          "status": "core",
+          "source": {
+            "country": "^(Switzerland|Liechtenstein)$"
+          }
+        },
+        {
+          "name": "Lotharingie (Pays-Bas, Belgique, Lorraine, Alsace)",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Europe"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Alsace"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              },
+              {
+                "country": "^France$",
+                "region": "Trois-Évêchés"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume d'Italie et Rome",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1000",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "États pontificaux"
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition entière : les instantanés historical-basemaps représentent l'Empire par un seul bloc « Holy Roman Empire » qui déborde (Zagreb, Rome) ou omet des morceaux (Bohême en 1200, Bourgogne séparée, Lyon/Arles en France). L'instantané ne sert ici qu'à retirer la lagune/le territoire de Venise, hors Empire. Pays Natural Earth actuels (Germany, Austria, Czechia, Switzerland, Netherlands, Belgium…) découpés par les régions nommées de _regions.geojson. Statuts : core = territoire de l'Empire ; vassal = royaumes tributaires, États Habsbourg hors Empire, autorité impériale nominale ; allied = États sortis de l'Empire en 1806. Approximation : l'Allemagne actuelle sert de base au royaume de Germanie, mais l'est (au-delà de l'Elbe, Mecklembourg et nord du Brandebourg) est en vassal (Slaves tributaires). Rome et le Latium sont figurés en core (protection impériale, privilège ottonien). Le royaume de Bourgogne-Arles est un protectorat de fait (vassal). Les Alpes orientales (Autriche, Slovénie) et le Frioul sont inclus en core, sans tenir compte du recul temporaire de la marche d'Orient."
+    },
+    {
+      "id": "royaume-bourgogne-1033",
+      "year": 1033,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Duché de Bohême",
+          "status": "vassal",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Royaume de Bourgogne-Arles",
+          "status": "core",
+          "source": {
+            "region": "Royaume de Bourgogne-Arles"
+          }
+        },
+        {
+          "name": "Royaume de Germanie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "region": "Pays slaves de l'Elbe"
+                  }
+                ]
+              },
+              {
+                "country": "^Austria$"
+              },
+              {
+                "country": "^Slovenia$"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Suisse",
+          "status": "core",
+          "source": {
+            "country": "^(Switzerland|Liechtenstein)$"
+          }
+        },
+        {
+          "name": "Lotharingie (Pays-Bas, Belgique, Lorraine, Alsace)",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Europe"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Alsace"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              },
+              {
+                "country": "^France$",
+                "region": "Trois-Évêchés"
+              },
+              {
+                "country": "^France$",
+                "region": "Franche-Comté"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume d'Italie et Rome",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1000",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "États pontificaux"
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Bourgogne-Arles passe en core (Conrad II, 1033-1034). Les Slaves de l'Elbe sont hors Empire (révolte de 983) ; la Bohême reste vassale. La région « Royaume de Bourgogne-Arles » est un polygone simple ; elle déborde un peu sur le Piémont occidental (Val d'Aoste), ce qui est cohérent."
+    },
+    {
+      "id": "canossa-1077",
+      "year": 1077,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Duché de Bohême",
+          "status": "vassal",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Royaume de Bourgogne-Arles",
+          "status": "core",
+          "source": {
+            "region": "Royaume de Bourgogne-Arles"
+          }
+        },
+        {
+          "name": "Royaume de Germanie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "region": "Pays slaves de l'Elbe"
+                  }
+                ]
+              },
+              {
+                "country": "^Austria$"
+              },
+              {
+                "country": "^Slovenia$"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Suisse",
+          "status": "core",
+          "source": {
+            "country": "^(Switzerland|Liechtenstein)$"
+          }
+        },
+        {
+          "name": "Lotharingie (Pays-Bas, Belgique, Lorraine, Alsace)",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Europe"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Alsace"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              },
+              {
+                "country": "^France$",
+                "region": "Trois-Évêchés"
+              },
+              {
+                "country": "^France$",
+                "region": "Franche-Comté"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume d'Italie et Rome",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1000",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "États pontificaux"
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Même emprise qu'en 1033. Le pouvoir réel de Henri IV est très contesté (Saxe, Italie) mais le territoire reste celui de l'Empire. Rome est conservée en core jusqu'à 1100 environ (prise de Rome en 1084)."
+    },
+    {
+      "id": "concordat-worms-1122",
+      "year": 1122,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Duché de Bohême",
+          "status": "vassal",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Royaume de Bourgogne-Arles",
+          "status": "core",
+          "source": {
+            "region": "Royaume de Bourgogne-Arles"
+          }
+        },
+        {
+          "name": "Royaume de Germanie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "region": "Pays slaves de l'Elbe"
+                  }
+                ]
+              },
+              {
+                "country": "^Austria$"
+              },
+              {
+                "country": "^Slovenia$"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Suisse",
+          "status": "core",
+          "source": {
+            "country": "^(Switzerland|Liechtenstein)$"
+          }
+        },
+        {
+          "name": "Lotharingie (Pays-Bas, Belgique, Lorraine, Alsace)",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Europe"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Alsace"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              },
+              {
+                "country": "^France$",
+                "region": "Trois-Évêchés"
+              },
+              {
+                "country": "^France$",
+                "region": "Franche-Comté"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume d'Italie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1100",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Après Worms, l'autorité impériale sur Rome et le patrimoine de saint Pierre disparaît : les États pontificaux (région « États pontificaux ») ne sont plus figurés. Les Romagnes (Ravenne) restent dans le royaume d'Italie."
+    },
+    {
+      "id": "barberousse-1155",
+      "year": 1155,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Duché de Bohême",
+          "status": "vassal",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Royaume de Bourgogne-Arles",
+          "status": "core",
+          "source": {
+            "region": "Royaume de Bourgogne-Arles"
+          }
+        },
+        {
+          "name": "Royaume de Germanie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "region": "Pays slaves de l'Elbe"
+                  }
+                ]
+              },
+              {
+                "country": "^Austria$"
+              },
+              {
+                "country": "^Slovenia$"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Suisse",
+          "status": "core",
+          "source": {
+            "country": "^(Switzerland|Liechtenstein)$"
+          }
+        },
+        {
+          "name": "Lotharingie (Pays-Bas, Belgique, Lorraine, Alsace)",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Europe"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Alsace"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              },
+              {
+                "country": "^France$",
+                "region": "Trois-Évêchés"
+              },
+              {
+                "country": "^France$",
+                "region": "Franche-Comté"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume d'Italie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1100",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Même emprise qu'en 1122 ; l'est slave n'est pas encore conquis (les conquêtes de Henri le Lion et d'Albert l'Ours datent de 1157-1181)."
+    },
+    {
+      "id": "legnano-1176",
+      "year": 1176,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Royaume de Bohême",
+          "status": "vassal",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Royaume de Bourgogne-Arles",
+          "status": "core",
+          "source": {
+            "region": "Royaume de Bourgogne-Arles"
+          }
+        },
+        {
+          "name": "Royaume de Germanie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Germany$"
+              },
+              {
+                "country": "^Austria$"
+              },
+              {
+                "country": "^Slovenia$"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Suisse",
+          "status": "core",
+          "source": {
+            "country": "^(Switzerland|Liechtenstein)$"
+          }
+        },
+        {
+          "name": "Lotharingie (Pays-Bas, Belgique, Lorraine, Alsace)",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Europe"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Alsace"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              },
+              {
+                "country": "^France$",
+                "region": "Trois-Évêchés"
+              },
+              {
+                "country": "^France$",
+                "region": "Franche-Comté"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume d'Italie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1100",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Les terres slaves du nord-est (Mecklembourg, Brandebourg septentrional) passent en core : Henri le Lion et Albert l'Ours les ont conquises (dès 1157-1160). La Bohême est un royaume depuis 1158 (vassal). Les villes de la Ligue lombarde sont figurées en core malgré leur révolte, car elles se déclarent fidèles à l'empereur en principe."
+    },
+    {
+      "id": "bouvines-1214",
+      "year": 1214,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Royaume de Bohême",
+          "status": "vassal",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Duché de Poméranie",
+          "status": "vassal",
+          "source": {
+            "country": "^Poland$",
+            "region": "Poméranie et Neumark"
+          }
+        },
+        {
+          "name": "Allemagne impériale, Autriche et Slovénie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Germany$"
+              },
+              {
+                "country": "^Austria$"
+              },
+              {
+                "country": "^Slovenia$"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Haute-Bourgogne (Franche-Comté, Savoie) et Suisse",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Switzerland|Liechtenstein)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Franche-Comté"
+              },
+              {
+                "country": "^France$",
+                "region": "Savoie et Nice"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Lotharingie (Pays-Bas, Belgique, Lorraine, Alsace)",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Europe"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Alsace"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              },
+              {
+                "country": "^France$",
+                "region": "Trois-Évêchés"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume d'Italie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1200",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Le royaume d'Arles (Lyon, Dauphiné, Provence) n'est plus figuré : l'autorité impériale n'y est que nominale ; la Haute-Bourgogne (Franche-Comté, Savoie) et la Suisse restent en core. Lyon passe donc hors couche. Le comté de Flandre (Lille) n'est pas figuré (France). Poméranie en vassal (fief impérial depuis 1181). Sicile non figurée (Frédéric II y règne en rival d'Otton IV)."
+    },
+    {
+      "id": "sicile-1220",
+      "year": 1220,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Royaume de Bohême",
+          "status": "vassal",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Royaume de Sicile (union personnelle)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "country": "^Italy$",
+                "region": "Royaume de Naples"
+              },
+              {
+                "country": "^Italy$",
+                "region": "Sicile"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Duché de Poméranie",
+          "status": "vassal",
+          "source": {
+            "country": "^Poland$",
+            "region": "Poméranie et Neumark"
+          }
+        },
+        {
+          "name": "Allemagne impériale, Autriche et Slovénie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Germany$"
+              },
+              {
+                "country": "^Austria$"
+              },
+              {
+                "country": "^Slovenia$"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Haute-Bourgogne (Franche-Comté, Savoie) et Suisse",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Switzerland|Liechtenstein)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Franche-Comté"
+              },
+              {
+                "country": "^France$",
+                "region": "Savoie et Nice"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Lotharingie (Pays-Bas, Belgique, Lorraine, Alsace)",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Europe"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Alsace"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              },
+              {
+                "country": "^France$",
+                "region": "Trois-Évêchés"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume d'Italie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1200",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Le royaume de Sicile (Italie du Sud et Sicile) est figuré en vassal : union personnelle avec l'empereur, mais royaume distinct. Les États pontificaux restent hors couche. Même emprise qu'en 1214 pour le reste."
+    },
+    {
+      "id": "conradin-1268",
+      "year": 1268,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Royaume de Bohême",
+          "status": "vassal",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Duché de Poméranie",
+          "status": "vassal",
+          "source": {
+            "country": "^Poland$",
+            "region": "Poméranie et Neumark"
+          }
+        },
+        {
+          "name": "Allemagne impériale, Autriche et Slovénie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Germany$"
+              },
+              {
+                "country": "^Austria$"
+              },
+              {
+                "country": "^Slovenia$"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Haute-Bourgogne (Franche-Comté, Savoie) et Suisse",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Switzerland|Liechtenstein)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Franche-Comté"
+              },
+              {
+                "country": "^France$",
+                "region": "Savoie et Nice"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Lotharingie (Pays-Bas, Belgique, Lorraine, Alsace)",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Europe"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Alsace"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              },
+              {
+                "country": "^France$",
+                "region": "Trois-Évêchés"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume d'Italie (autorité impériale nominale)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1200",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Sicile non figurée (angevine). L'Italie du Nord passe en vassal : autorité impériale purement nominale pendant le Grand Interrègne. L'Allemagne est conservée en core (l'Empire existe sans empereur)."
+    },
+    {
+      "id": "rodolphe-1273",
+      "year": 1273,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Royaume de Bohême",
+          "status": "core",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Allemagne impériale, Autriche et Slovénie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "country": "^Austria$"
+                  },
+                  {
+                    "country": "^Slovenia$"
+                  }
+                ]
+              },
+              {
+                "country": "^Poland$",
+                "region": "Poméranie et Neumark"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Haute-Bourgogne (Franche-Comté, Savoie) et Suisse",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Switzerland|Liechtenstein)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Franche-Comté"
+              },
+              {
+                "country": "^France$",
+                "region": "Savoie et Nice"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Pays-Bas et Lorraine",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Europe"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Alsace"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              },
+              {
+                "country": "^France$",
+                "region": "Trois-Évêchés"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Italie impériale (autorité nominale)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1200",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). La Poméranie et le Neumark (Pologne actuelle) passent en core (Brandebourg, duché de Poméranie intégrés). La Bohême passe en core (royaume d'Ottokar II, électeur). Silésie hors couche (duchés piasts polonais). L'Italie reste en vassal (nominale)."
+    },
+    {
+      "id": "morgarten-1315",
+      "year": 1315,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Royaume de Bohême",
+          "status": "core",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Allemagne impériale, Autriche et Slovénie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "country": "^Austria$"
+                  },
+                  {
+                    "country": "^Slovenia$"
+                  }
+                ]
+              },
+              {
+                "country": "^Poland$",
+                "region": "Poméranie et Neumark"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Haute-Bourgogne (Franche-Comté, Savoie) et Suisse",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Switzerland|Liechtenstein)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Franche-Comté"
+              },
+              {
+                "country": "^France$",
+                "region": "Savoie et Nice"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Pays-Bas et Lorraine",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Europe"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Alsace"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              },
+              {
+                "country": "^France$",
+                "region": "Trois-Évêchés"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Italie impériale (autorité nominale)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1300",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Même emprise qu'en 1273. Suisse en core (Waldstätten immédiats d'Empire)."
+    },
+    {
+      "id": "bulle-or-1356",
+      "year": 1356,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Royaume de Bohême",
+          "status": "core",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Silésie (couronne de Bohême)",
+          "status": "core",
+          "source": {
+            "country": "^Poland$",
+            "region": "Silésie"
+          }
+        },
+        {
+          "name": "Allemagne impériale, Autriche et Slovénie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "country": "^Austria$"
+                  },
+                  {
+                    "country": "^Slovenia$"
+                  }
+                ]
+              },
+              {
+                "country": "^Poland$",
+                "region": "Poméranie et Neumark"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Haute-Bourgogne (Franche-Comté, Savoie) et Suisse",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Switzerland|Liechtenstein)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Franche-Comté"
+              },
+              {
+                "country": "^France$",
+                "region": "Savoie et Nice"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Pays-Bas et Lorraine",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Europe"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Alsace"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              },
+              {
+                "country": "^France$",
+                "region": "Trois-Évêchés"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Italie impériale (autorité nominale)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1300",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). La Silésie (couronne de Bohême depuis 1335) entre en core. Italie en vassal. Même emprise sinon."
+    },
+    {
+      "id": "hussites-1419",
+      "year": 1419,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Royaume de Bohême (insurgé hussite)",
+          "status": "vassal",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Silésie (couronne de Bohême)",
+          "status": "core",
+          "source": {
+            "country": "^Poland$",
+            "region": "Silésie"
+          }
+        },
+        {
+          "name": "Allemagne impériale, Autriche et Slovénie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "country": "^Austria$"
+                  },
+                  {
+                    "country": "^Slovenia$"
+                  }
+                ]
+              },
+              {
+                "country": "^Poland$",
+                "region": "Poméranie et Neumark"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Haute-Bourgogne (Franche-Comté, Savoie) et Suisse",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Switzerland|Liechtenstein)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Franche-Comté"
+              },
+              {
+                "country": "^France$",
+                "region": "Savoie et Nice"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Pays-Bas et Lorraine",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Europe"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Alsace"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              },
+              {
+                "country": "^France$",
+                "region": "Trois-Évêchés"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Italie impériale (autorité nominale)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1492",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Bohême et Moravie en vassal : royaume insurgé (Sigismond, roi de jure). Silésie en core."
+    },
+    {
+      "id": "albert-ii-1438",
+      "year": 1438,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Royaume de Bohême",
+          "status": "core",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Silésie (couronne de Bohême)",
+          "status": "core",
+          "source": {
+            "country": "^Poland$",
+            "region": "Silésie"
+          }
+        },
+        {
+          "name": "Royaume de Hongrie (union personnelle d'Albert)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "country": "^Hungary$"
+              },
+              {
+                "country": "^Slovakia$"
+              },
+              {
+                "country": "^Croatia$",
+                "region": "Croatie-Slavonie"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Allemagne impériale, Autriche et Slovénie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "country": "^Austria$"
+                  },
+                  {
+                    "country": "^Slovenia$"
+                  }
+                ]
+              },
+              {
+                "country": "^Poland$",
+                "region": "Poméranie et Neumark"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Haute-Bourgogne (Franche-Comté, Savoie) et Suisse",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Switzerland|Liechtenstein)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Franche-Comté"
+              },
+              {
+                "country": "^France$",
+                "region": "Savoie et Nice"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Pays-Bas et Lorraine",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Europe"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Alsace"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              },
+              {
+                "country": "^France$",
+                "region": "Trois-Évêchés"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Italie impériale (autorité nominale)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1492",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Hongrie, Slovaquie et Croatie-Slavonie en vassal (union personnelle d'Albert II, brève). Le reste est inchangé. Venise : on soustrait l'instantané world_1492 (terre ferme vénitienne), qui est plus juste que world_1400 pour 1438."
+    },
+    {
+      "id": "mariage-bourgogne-1477",
+      "year": 1477,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Royaume de Bohême",
+          "status": "core",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Silésie (couronne de Bohême)",
+          "status": "core",
+          "source": {
+            "country": "^Poland$",
+            "region": "Silésie"
+          }
+        },
+        {
+          "name": "Allemagne impériale, Autriche et Slovénie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "country": "^Austria$"
+                  },
+                  {
+                    "country": "^Slovenia$"
+                  }
+                ]
+              },
+              {
+                "country": "^Poland$",
+                "region": "Poméranie et Neumark"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Haute-Bourgogne (Franche-Comté, Savoie) et Suisse",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Switzerland|Liechtenstein)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Franche-Comté"
+              },
+              {
+                "country": "^France$",
+                "region": "Savoie et Nice"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Pays-Bas et Lorraine",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Europe"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Alsace"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              },
+              {
+                "country": "^France$",
+                "region": "Trois-Évêchés"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Italie impériale (autorité nominale)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1492",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Pays-Bas, Belgique, Luxembourg, Franche-Comté entrent dans l'héritage des Habsbourg (déjà en core car terres d'Empire). La Hongrie de Mathias Corvin est hors couche."
+    },
+    {
+      "id": "diete-worms-1495",
+      "year": 1495,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Royaume de Bohême",
+          "status": "core",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Silésie (couronne de Bohême)",
+          "status": "core",
+          "source": {
+            "country": "^Poland$",
+            "region": "Silésie"
+          }
+        },
+        {
+          "name": "Allemagne impériale, Autriche et Slovénie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "country": "^Austria$"
+                  },
+                  {
+                    "country": "^Slovenia$"
+                  }
+                ]
+              },
+              {
+                "country": "^Poland$",
+                "region": "Poméranie et Neumark"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Haute-Bourgogne (Franche-Comté, Savoie) et Suisse",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Switzerland|Liechtenstein)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Franche-Comté"
+              },
+              {
+                "country": "^France$",
+                "region": "Savoie et Nice"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Pays-Bas et Lorraine",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Europe"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Alsace"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              },
+              {
+                "country": "^France$",
+                "region": "Trois-Évêchés"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Italie impériale (autorité nominale)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1492",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Même emprise que 1477. La Suisse reste en core (de droit) malgré l'indépendance de fait après 1499."
+    },
+    {
+      "id": "charles-quint-1519",
+      "year": 1519,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Bohême et Silésie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Czechia$"
+              },
+              {
+                "country": "^Poland$",
+                "region": "Silésie"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume d'Espagne (Charles Quint)",
+          "status": "vassal",
+          "source": {
+            "country": "^Spain$",
+            "region": "Europe"
+          }
+        },
+        {
+          "name": "Naples, Sicile et Sardaigne (Charles Quint)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "country": "^Italy$",
+                "region": "Royaume de Naples"
+              },
+              {
+                "country": "^Italy$",
+                "region": "Sicile"
+              },
+              {
+                "country": "^Italy$",
+                "region": "Sardaigne"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Allemagne impériale, Autriche et Slovénie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "country": "^Austria$"
+                  },
+                  {
+                    "country": "^Slovenia$"
+                  }
+                ]
+              },
+              {
+                "country": "^Poland$",
+                "region": "Poméranie et Neumark"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Haute-Bourgogne et Suisse",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Switzerland|Liechtenstein)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Franche-Comté"
+              },
+              {
+                "country": "^France$",
+                "region": "Savoie et Nice"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Pays-Bas et Lorraine",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Europe"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Alsace"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              },
+              {
+                "country": "^France$",
+                "region": "Trois-Évêchés"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Italie impériale",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1530",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Espagne, Naples, Sicile, Sardaigne en vassal : territoires de Charles Quint hors Empire (union personnelle), pour faire lire l'étendue de sa puissance. Italie impériale en vassal (Milanais français jusqu'en 1521). Pays-Bas, Franche-Comté, Metz-Toul-Verdun en core."
+    },
+    {
+      "id": "luther-worms-1521",
+      "year": 1521,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Bohême et Silésie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Czechia$"
+              },
+              {
+                "country": "^Poland$",
+                "region": "Silésie"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume d'Espagne (Charles Quint)",
+          "status": "vassal",
+          "source": {
+            "country": "^Spain$",
+            "region": "Europe"
+          }
+        },
+        {
+          "name": "Naples, Sicile et Sardaigne (Charles Quint)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "country": "^Italy$",
+                "region": "Royaume de Naples"
+              },
+              {
+                "country": "^Italy$",
+                "region": "Sicile"
+              },
+              {
+                "country": "^Italy$",
+                "region": "Sardaigne"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Allemagne impériale, Autriche et Slovénie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "country": "^Austria$"
+                  },
+                  {
+                    "country": "^Slovenia$"
+                  }
+                ]
+              },
+              {
+                "country": "^Poland$",
+                "region": "Poméranie et Neumark"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Haute-Bourgogne et Suisse",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Switzerland|Liechtenstein)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Franche-Comté"
+              },
+              {
+                "country": "^France$",
+                "region": "Savoie et Nice"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Pays-Bas et Lorraine",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Europe"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Alsace"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              },
+              {
+                "country": "^France$",
+                "region": "Trois-Évêchés"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Italie impériale",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1530",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Même emprise que 1519. L'Espagne est découpée à l'Europe pour ne pas inclure les Canaries."
+    },
+    {
+      "id": "mohacs-1526",
+      "year": 1526,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Bohême et Silésie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Czechia$"
+              },
+              {
+                "country": "^Poland$",
+                "region": "Silésie"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume d'Espagne (Charles Quint)",
+          "status": "vassal",
+          "source": {
+            "country": "^Spain$",
+            "region": "Europe"
+          }
+        },
+        {
+          "name": "Naples, Sicile et Sardaigne (Charles Quint)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "country": "^Italy$",
+                "region": "Royaume de Naples"
+              },
+              {
+                "country": "^Italy$",
+                "region": "Sicile"
+              },
+              {
+                "country": "^Italy$",
+                "region": "Sardaigne"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Hongrie royale (Habsbourg)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "country": "^Hungary$",
+                "region": "Hongrie royale"
+              },
+              {
+                "country": "^Slovakia$"
+              },
+              {
+                "country": "^Croatia$",
+                "region": "Croatie-Slavonie"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Allemagne impériale, Autriche et Slovénie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "country": "^Austria$"
+                  },
+                  {
+                    "country": "^Slovenia$"
+                  }
+                ]
+              },
+              {
+                "country": "^Poland$",
+                "region": "Poméranie et Neumark"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Haute-Bourgogne et Suisse",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Switzerland|Liechtenstein)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Franche-Comté"
+              },
+              {
+                "country": "^France$",
+                "region": "Savoie et Nice"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Pays-Bas et Lorraine",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Europe"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Alsace"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              },
+              {
+                "country": "^France$",
+                "region": "Trois-Évêchés"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Italie impériale",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1530",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). La Hongrie royale (Slovaquie, Croatie-Slavonie, ouest de la Hongrie jusqu'à 18,9° E, avec Pozsony) figure en vassal : territoire que Ferdinand revendique et tient après 1526. Budapest, aux mains de Zápolya puis des Ottomans, reste hors couche. L'instantané world_1530 place Budapest chez les Ottomans, ce qui est juste à partir de 1541 seulement."
+    },
+    {
+      "id": "muhlberg-1547",
+      "year": 1547,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Bohême et Silésie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Czechia$"
+              },
+              {
+                "country": "^Poland$",
+                "region": "Silésie"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume d'Espagne (Charles Quint)",
+          "status": "vassal",
+          "source": {
+            "country": "^Spain$",
+            "region": "Europe"
+          }
+        },
+        {
+          "name": "Naples, Sicile et Sardaigne (Charles Quint)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "country": "^Italy$",
+                "region": "Royaume de Naples"
+              },
+              {
+                "country": "^Italy$",
+                "region": "Sicile"
+              },
+              {
+                "country": "^Italy$",
+                "region": "Sardaigne"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Hongrie royale (Habsbourg)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "country": "^Hungary$",
+                "region": "Hongrie royale"
+              },
+              {
+                "country": "^Slovakia$"
+              },
+              {
+                "country": "^Croatia$",
+                "region": "Croatie-Slavonie"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Allemagne impériale, Autriche et Slovénie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "country": "^Austria$"
+                  },
+                  {
+                    "country": "^Slovenia$"
+                  }
+                ]
+              },
+              {
+                "country": "^Poland$",
+                "region": "Poméranie et Neumark"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Haute-Bourgogne et Suisse",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Switzerland|Liechtenstein)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Franche-Comté"
+              },
+              {
+                "country": "^France$",
+                "region": "Savoie et Nice"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Pays-Bas et Lorraine",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Europe"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Alsace"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              },
+              {
+                "country": "^France$",
+                "region": "Trois-Évêchés"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Italie impériale",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1530",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Italie impériale repassée en core (Milan aux Habsbourg). Mêmes vassaux qu'en 1526 (Espagne, Naples, Sicile, Sardaigne, Hongrie royale)."
+    },
+    {
+      "id": "augsbourg-1555",
+      "year": 1555,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Bohême",
+          "status": "core",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Silésie",
+          "status": "core",
+          "source": {
+            "country": "^Poland$",
+            "region": "Silésie"
+          }
+        },
+        {
+          "name": "Hongrie royale (Habsbourg)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "country": "^Hungary$",
+                "region": "Hongrie royale"
+              },
+              {
+                "country": "^Slovakia$"
+              },
+              {
+                "country": "^Croatia$",
+                "region": "Croatie-Slavonie"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Allemagne impériale, Autriche et Slovénie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "country": "^Austria$"
+                  },
+                  {
+                    "country": "^Slovenia$"
+                  }
+                ]
+              },
+              {
+                "country": "^Poland$",
+                "region": "Poméranie et Neumark"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Haute-Bourgogne et Suisse",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Switzerland|Liechtenstein)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Franche-Comté"
+              },
+              {
+                "country": "^France$",
+                "region": "Savoie et Nice"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Pays-Bas (Dix-Sept Provinces) et Alsace-Lorraine",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Europe"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Alsace"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Italie impériale",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1530",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Metz, Toul et Verdun (France depuis 1552) sont retirées. Espagne et Naples n'apparaissent plus (séparation des branches). Les Pays-Bas (Dix-Sept Provinces) sont en core (cercle de Bourgogne)."
+    },
+    {
+      "id": "defenestration-1618",
+      "year": 1618,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Bohême (insurgée)",
+          "status": "vassal",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Silésie",
+          "status": "core",
+          "source": {
+            "country": "^Poland$",
+            "region": "Silésie"
+          }
+        },
+        {
+          "name": "Hongrie royale (Habsbourg)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "country": "^Hungary$",
+                "region": "Hongrie royale"
+              },
+              {
+                "country": "^Slovakia$"
+              },
+              {
+                "country": "^Croatia$",
+                "region": "Croatie-Slavonie"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Allemagne impériale, Autriche et Slovénie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "country": "^Austria$"
+                  },
+                  {
+                    "country": "^Slovenia$"
+                  }
+                ]
+              },
+              {
+                "country": "^Poland$",
+                "region": "Poméranie et Neumark"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Haute-Bourgogne et Suisse",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Switzerland|Liechtenstein)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Franche-Comté"
+              },
+              {
+                "country": "^France$",
+                "region": "Savoie et Nice"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Pays-Bas (Dix-Sept Provinces) et Alsace-Lorraine",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Europe"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Alsace"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Italie impériale",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1600",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Bohême et Moravie en vassal (insurgées contre Ferdinand). Provinces-Unies encore en core de droit (indépendance de fait depuis 1581, reconnue en 1648)."
+    },
+    {
+      "id": "montagne-blanche-1620",
+      "year": 1620,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Bohême",
+          "status": "core",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Silésie",
+          "status": "core",
+          "source": {
+            "country": "^Poland$",
+            "region": "Silésie"
+          }
+        },
+        {
+          "name": "Hongrie royale (Habsbourg)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "country": "^Hungary$",
+                "region": "Hongrie royale"
+              },
+              {
+                "country": "^Slovakia$"
+              },
+              {
+                "country": "^Croatia$",
+                "region": "Croatie-Slavonie"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Allemagne impériale, Autriche et Slovénie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "country": "^Austria$"
+                  },
+                  {
+                    "country": "^Slovenia$"
+                  }
+                ]
+              },
+              {
+                "country": "^Poland$",
+                "region": "Poméranie et Neumark"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Haute-Bourgogne et Suisse",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Switzerland|Liechtenstein)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Franche-Comté"
+              },
+              {
+                "country": "^France$",
+                "region": "Savoie et Nice"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Pays-Bas (Dix-Sept Provinces) et Alsace-Lorraine",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Europe"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Alsace"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Italie impériale",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1600",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Bohême repassée en core."
+    },
+    {
+      "id": "lutzen-1632",
+      "year": 1632,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Bohême",
+          "status": "core",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Silésie",
+          "status": "core",
+          "source": {
+            "country": "^Poland$",
+            "region": "Silésie"
+          }
+        },
+        {
+          "name": "Hongrie royale (Habsbourg)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "country": "^Hungary$",
+                "region": "Hongrie royale"
+              },
+              {
+                "country": "^Slovakia$"
+              },
+              {
+                "country": "^Croatia$",
+                "region": "Croatie-Slavonie"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Allemagne impériale, Autriche et Slovénie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "country": "^Austria$"
+                  },
+                  {
+                    "country": "^Slovenia$"
+                  }
+                ]
+              },
+              {
+                "country": "^Poland$",
+                "region": "Poméranie et Neumark"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Haute-Bourgogne et Suisse",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Switzerland|Liechtenstein)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Franche-Comté"
+              },
+              {
+                "country": "^France$",
+                "region": "Savoie et Nice"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Pays-Bas (Dix-Sept Provinces) et Alsace-Lorraine",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Europe"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "country": "^France$",
+                "region": "Alsace"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Italie impériale",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1600",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Même emprise qu'en 1620 (Alsace en partie occupée par les Suédois, non figuré)."
+    },
+    {
+      "id": "westphalie-1648",
+      "year": 1648,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Bohême et Silésie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Czechia$"
+              },
+              {
+                "country": "^Poland$",
+                "region": "Silésie"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Hongrie royale (Habsbourg)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "country": "^Hungary$",
+                "region": "Hongrie royale"
+              },
+              {
+                "country": "^Slovakia$"
+              },
+              {
+                "country": "^Croatia$",
+                "region": "Croatie-Slavonie"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Allemagne impériale, Autriche et Slovénie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "country": "^Austria$"
+                  },
+                  {
+                    "country": "^Slovenia$"
+                  }
+                ]
+              },
+              {
+                "country": "^Poland$",
+                "region": "Poméranie et Neumark"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Franche-Comté et Savoie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^France$",
+                "region": "Franche-Comté"
+              },
+              {
+                "country": "^France$",
+                "region": "Savoie et Nice"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Pays-Bas espagnols, Luxembourg, Lorraine, Strasbourg",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              },
+              {
+                "country": "^France$",
+                "region": "Strasbourg et Décapole"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Italie impériale",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1600",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Sortent : Suisse, Provinces-Unies, Alsace (sauf Strasbourg et les villes de la Décapole, région « Strasbourg et Décapole »), Metz-Toul-Verdun. La Poméranie suédoise reste en core (fief d'Empire de la Suède). Franche-Comté (espagnole) et Pays-Bas espagnols en core de droit. Hongrie royale en vassal."
+    },
+    {
+      "id": "vienne-1683",
+      "year": 1683,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Bohême et Silésie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Czechia$"
+              },
+              {
+                "country": "^Poland$",
+                "region": "Silésie"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Hongrie royale (Habsbourg)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "country": "^Hungary$",
+                "region": "Hongrie royale"
+              },
+              {
+                "country": "^Slovakia$"
+              },
+              {
+                "country": "^Croatia$",
+                "region": "Croatie-Slavonie"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Allemagne impériale, Autriche et Slovénie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "country": "^Austria$"
+                  },
+                  {
+                    "country": "^Slovenia$"
+                  }
+                ]
+              },
+              {
+                "country": "^Poland$",
+                "region": "Poméranie et Neumark"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Savoie",
+          "status": "core",
+          "source": {
+            "country": "^France$",
+            "region": "Savoie et Nice"
+          }
+        },
+        {
+          "name": "Pays-Bas espagnols, Luxembourg et Lorraine",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Italie impériale",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1650",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Strasbourg et l'Alsace (1681) et la Franche-Comté (1678) quittent la couche. Lorraine en core (duché d'Empire, occupé par la France). Hongrie royale en vassal ; la Hongrie centrale est ottomane."
+    },
+    {
+      "id": "rastatt-1714",
+      "year": 1714,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Bohême et Moravie",
+          "status": "core",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Silésie",
+          "status": "core",
+          "source": {
+            "country": "^Poland$",
+            "region": "Silésie"
+          }
+        },
+        {
+          "name": "Royaume de Hongrie, Croatie et Transylvanie (Habsbourg)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "country": "^Hungary$"
+                  },
+                  {
+                    "country": "^Slovakia$"
+                  },
+                  {
+                    "country": "^Croatia$",
+                    "region": "Croatie-Slavonie"
+                  }
+                ]
+              },
+              {
+                "country": "^Romania$",
+                "region": "Transylvanie"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Naples et Sardaigne (Habsbourg, hors Empire)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "country": "^Italy$",
+                "region": "Royaume de Naples"
+              },
+              {
+                "country": "^Italy$",
+                "region": "Sardaigne"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Allemagne impériale, Autriche et Slovénie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "country": "^Austria$"
+                  },
+                  {
+                    "country": "^Slovenia$"
+                  }
+                ]
+              },
+              {
+                "country": "^Poland$",
+                "region": "Poméranie et Neumark"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Savoie",
+          "status": "core",
+          "source": {
+            "country": "^France$",
+            "region": "Savoie et Nice"
+          }
+        },
+        {
+          "name": "Pays-Bas autrichiens, Luxembourg et Lorraine",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Italie impériale (Milan, Toscane, Parme, Modène…)",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1715",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Hongrie, Slovaquie, Croatie-Slavonie et Transylvanie (pris en 1699-1711) en vassal ; Naples et Sardaigne (acquis) en vassal, hors Empire. Pays-Bas autrichiens et Milanais en core. Sicile non figurée (Savoie). Italie, Savoie et Lorraine en core. Silésie en core (avant 1740)."
+    },
+    {
+      "id": "silesie-1740",
+      "year": 1740,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Bohême et Moravie",
+          "status": "core",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Royaume de Hongrie, Croatie, Transylvanie et Banat (Habsbourg)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "country": "^Hungary$"
+                  },
+                  {
+                    "country": "^Slovakia$"
+                  },
+                  {
+                    "country": "^Croatia$",
+                    "region": "Croatie-Slavonie"
+                  }
+                ]
+              },
+              {
+                "country": "^Romania$",
+                "region": "Transylvanie"
+              },
+              {
+                "country": "^Romania$",
+                "region": "Banat"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Allemagne impériale, Autriche et Slovénie",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "country": "^Austria$"
+                  },
+                  {
+                    "country": "^Slovenia$"
+                  }
+                ]
+              },
+              {
+                "country": "^Poland$",
+                "region": "Poméranie et Neumark"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Savoie",
+          "status": "core",
+          "source": {
+            "country": "^France$",
+            "region": "Savoie et Nice"
+          }
+        },
+        {
+          "name": "Pays-Bas autrichiens, Luxembourg et Lorraine",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "diff": [
+                  {
+                    "country": "^France$",
+                    "region": "Alsace-Lorraine"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Alsace"
+                  },
+                  {
+                    "country": "^France$",
+                    "region": "Trois-Évêchés"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "Italie impériale (Milan, Toscane, Parme, Modène…)",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Italy$",
+                    "region": "Italie impériale"
+                  },
+                  {
+                    "snapshot": "world_1715",
+                    "match": "^Venice$"
+                  }
+                ]
+              },
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Silésie retirée (Prusse, hors Empire). Banat ajouté à la Hongrie habsbourgeoise (acquis en 1718). Naples, Sardaigne et Sicile ne sont plus aux Habsbourg. La Prusse royale (Königsberg) reste hors couche, comme toujours."
+    },
+    {
+      "id": "luneville-1801",
+      "year": 1801,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Royaume de Hongrie, Croatie, Transylvanie et Banat (Habsbourg)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "country": "^Hungary$"
+                  },
+                  {
+                    "country": "^Slovakia$"
+                  },
+                  {
+                    "country": "^Croatia$",
+                    "region": "Croatie-Slavonie"
+                  }
+                ]
+              },
+              {
+                "country": "^Romania$",
+                "region": "Transylvanie"
+              },
+              {
+                "country": "^Romania$",
+                "region": "Banat"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Galicie et Bucovine (Habsbourg)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "country": "^Poland$",
+                "region": "Galicie et Bucovine"
+              },
+              {
+                "country": "^Ukraine$",
+                "region": "Galicie et Bucovine"
+              },
+              {
+                "country": "^Romania$",
+                "region": "Galicie et Bucovine"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Vénétie autrichienne (hors Empire)",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_1800",
+            "match": "^Venetia$"
+          }
+        },
+        {
+          "name": "Bohême et Moravie",
+          "status": "core",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Allemagne impériale (rive droite du Rhin), Autriche et Slovénie",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "union": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "country": "^Austria$"
+                  },
+                  {
+                    "country": "^Slovenia$"
+                  }
+                ]
+              },
+              {
+                "country": "^Germany$",
+                "region": "Rive gauche du Rhin"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Poméranie et Neumark (Brandebourg, Suède)",
+          "status": "core",
+          "source": {
+            "country": "^Poland$",
+            "region": "Poméranie et Neumark"
+          }
+        },
+        {
+          "name": "Littoral autrichien et Tyrol méridional",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              },
+              {
+                "country": "^Italy$",
+                "region": "Tyrol méridional et Trentin"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Rive gauche du Rhin, Belgique, Luxembourg, Lorraine, Alsace, Savoie, Italie du Nord et Toscane quittent la couche (annexées ou républiques sœurs). Littoral autrichien (Trieste, Gorizia) et Tyrol méridional en core (terres héréditaires de l'Autriche). La Vénétie autrichienne (acquise à Campo-Formio, 1797) est en vassal via l'instantané world_1800 (entité « Venetia »)."
+    },
+    {
+      "id": "recez-1803",
+      "year": 1803,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Royaume de Hongrie, Croatie, Transylvanie et Banat (Habsbourg)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "country": "^Hungary$"
+                  },
+                  {
+                    "country": "^Slovakia$"
+                  },
+                  {
+                    "country": "^Croatia$",
+                    "region": "Croatie-Slavonie"
+                  }
+                ]
+              },
+              {
+                "country": "^Romania$",
+                "region": "Transylvanie"
+              },
+              {
+                "country": "^Romania$",
+                "region": "Banat"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Galicie et Bucovine (Habsbourg)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "country": "^Poland$",
+                "region": "Galicie et Bucovine"
+              },
+              {
+                "country": "^Ukraine$",
+                "region": "Galicie et Bucovine"
+              },
+              {
+                "country": "^Romania$",
+                "region": "Galicie et Bucovine"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Vénétie autrichienne (hors Empire)",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_1800",
+            "match": "^Venetia$"
+          }
+        },
+        {
+          "name": "Bohême et Moravie",
+          "status": "core",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Allemagne impériale (rive droite du Rhin), Autriche et Slovénie",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "union": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "country": "^Austria$"
+                  },
+                  {
+                    "country": "^Slovenia$"
+                  }
+                ]
+              },
+              {
+                "country": "^Germany$",
+                "region": "Rive gauche du Rhin"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Poméranie et Neumark (Brandebourg, Suède)",
+          "status": "core",
+          "source": {
+            "country": "^Poland$",
+            "region": "Poméranie et Neumark"
+          }
+        },
+        {
+          "name": "Littoral autrichien et Tyrol méridional",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              },
+              {
+                "country": "^Italy$",
+                "region": "Tyrol méridional et Trentin"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). L'emprise ne change pas par rapport à 1801 (les sécularisations sont internes) ; Salzbourg est dans l'Autriche actuelle (en core)."
+    },
+    {
+      "id": "austerlitz-1805",
+      "year": 1805,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Royaume de Hongrie, Croatie, Transylvanie et Banat (Habsbourg)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "country": "^Hungary$"
+                  },
+                  {
+                    "country": "^Slovakia$"
+                  },
+                  {
+                    "country": "^Croatia$",
+                    "region": "Croatie-Slavonie"
+                  }
+                ]
+              },
+              {
+                "country": "^Romania$",
+                "region": "Transylvanie"
+              },
+              {
+                "country": "^Romania$",
+                "region": "Banat"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Galicie et Bucovine (Habsbourg)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "country": "^Poland$",
+                "region": "Galicie et Bucovine"
+              },
+              {
+                "country": "^Ukraine$",
+                "region": "Galicie et Bucovine"
+              },
+              {
+                "country": "^Romania$",
+                "region": "Galicie et Bucovine"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Vénétie autrichienne (hors Empire)",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_1800",
+            "match": "^Venetia$"
+          }
+        },
+        {
+          "name": "Bohême et Moravie",
+          "status": "core",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Allemagne impériale (rive droite du Rhin), Autriche et Slovénie",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "union": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "country": "^Austria$"
+                  },
+                  {
+                    "country": "^Slovenia$"
+                  }
+                ]
+              },
+              {
+                "country": "^Germany$",
+                "region": "Rive gauche du Rhin"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Poméranie et Neumark (Brandebourg, Suède)",
+          "status": "core",
+          "source": {
+            "country": "^Poland$",
+            "region": "Poméranie et Neumark"
+          }
+        },
+        {
+          "name": "Littoral autrichien et Tyrol méridional",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Italy$",
+                "region": "Littoral autrichien"
+              },
+              {
+                "country": "^Italy$",
+                "region": "Tyrol méridional et Trentin"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Même emprise qu'en 1803 (Presbourg n'est signé que le 26 décembre)."
+    },
+    {
+      "id": "fin-empire-1806",
+      "year": 1806,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Littoral autrichien (Trieste, Gorizia)",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        },
+        {
+          "name": "Royaume de Hongrie, Croatie, Transylvanie et Banat (Habsbourg)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "union": [
+                  {
+                    "country": "^Hungary$"
+                  },
+                  {
+                    "country": "^Slovakia$"
+                  },
+                  {
+                    "country": "^Croatia$",
+                    "region": "Croatie-Slavonie"
+                  }
+                ]
+              },
+              {
+                "country": "^Romania$",
+                "region": "Transylvanie"
+              },
+              {
+                "country": "^Romania$",
+                "region": "Banat"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Galicie et Bucovine (Habsbourg)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "country": "^Poland$",
+                "region": "Galicie et Bucovine"
+              },
+              {
+                "country": "^Ukraine$",
+                "region": "Galicie et Bucovine"
+              },
+              {
+                "country": "^Romania$",
+                "region": "Galicie et Bucovine"
+              }
+            ]
+          }
+        },
+        {
+          "name": "États de la Confédération du Rhin (sortis de l'Empire)",
+          "status": "allied",
+          "source": {
+            "union": [
+              {
+                "diff": [
+                  {
+                    "country": "^Germany$",
+                    "region": "Confédération du Rhin"
+                  },
+                  {
+                    "country": "^Germany$",
+                    "region": "Rive gauche du Rhin"
+                  }
+                ]
+              },
+              {
+                "country": "^Austria$",
+                "region": "Tyrol et Vorarlberg"
+              },
+              {
+                "country": "^Italy$",
+                "region": "Tyrol méridional et Trentin"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Bohême et Moravie",
+          "status": "core",
+          "source": {
+            "country": "^Czechia$"
+          }
+        },
+        {
+          "name": "Derniers territoires de l'Empire (Autriche, Prusse, Saxe, Hanovre, Nord)",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "union": [
+                  {
+                    "country": "^Germany$"
+                  },
+                  {
+                    "country": "^Austria$"
+                  },
+                  {
+                    "country": "^Slovenia$"
+                  }
+                ]
+              },
+              {
+                "country": "^Germany$",
+                "region": "Rive gauche du Rhin"
+              },
+              {
+                "region": "Tyrol et Vorarlberg"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Poméranie et Neumark (Brandebourg, Suède)",
+          "status": "core",
+          "source": {
+            "country": "^Poland$",
+            "region": "Poméranie et Neumark"
+          }
+        },
+        {
+          "name": "Littoral autrichien",
+          "status": "core",
+          "source": {
+            "country": "^Italy$",
+            "region": "Littoral autrichien"
+          }
+        }
+      ],
+      "notes": "Composition comme pour otton-962 (pays actuels découpés par régions nommées ; Venise soustraite d'un instantané). Les États de la Confédération du Rhin (Bavière, Wurtemberg, Bade, Hesse-Darmstadt, Nassau, Berg, Mayence-Francfort, plus le Tyrol et le Vorarlberg passés à la Bavière) figurent en allied : ils ont quitté l'Empire en juillet 1806. Le polygone « Confédération du Rhin » est une approximation (Allemagne du Sud et de l'Ouest). Le reste (Autriche, Prusse, Saxe, Hanovre, Nord) est en core : derniers territoires."
+    }
+  ],
+  "checkpoints": [
+    {
+      "name": "Aix-la-Chapelle",
+      "pt": [
+        6.08,
+        50.78
+      ],
+      "where": "core",
+      "to": "silesie-1740"
+    },
+    {
+      "name": "Aix-la-Chapelle",
+      "pt": [
+        6.08,
+        50.78
+      ],
+      "where": "not-core",
+      "from": "luneville-1801"
+    },
+    {
+      "name": "Francfort",
+      "pt": [
+        8.68,
+        50.11
+      ],
+      "where": "core",
+      "to": "austerlitz-1805"
+    },
+    {
+      "name": "Francfort",
+      "pt": [
+        8.68,
+        50.11
+      ],
+      "where": "allied",
+      "from": "fin-empire-1806"
+    },
+    {
+      "name": "Vienne",
+      "pt": [
+        16.37,
+        48.21
+      ],
+      "where": "core"
+    },
+    {
+      "name": "Prague",
+      "pt": [
+        14.42,
+        50.08
+      ],
+      "where": "vassal",
+      "to": "conradin-1268"
+    },
+    {
+      "name": "Prague",
+      "pt": [
+        14.42,
+        50.08
+      ],
+      "where": "core",
+      "from": "rodolphe-1273",
+      "to": "bulle-or-1356"
+    },
+    {
+      "name": "Prague",
+      "pt": [
+        14.42,
+        50.08
+      ],
+      "where": "vassal",
+      "from": "hussites-1419",
+      "to": "hussites-1419"
+    },
+    {
+      "name": "Prague",
+      "pt": [
+        14.42,
+        50.08
+      ],
+      "where": "core",
+      "from": "albert-ii-1438",
+      "to": "augsbourg-1555"
+    },
+    {
+      "name": "Prague",
+      "pt": [
+        14.42,
+        50.08
+      ],
+      "where": "vassal",
+      "from": "defenestration-1618",
+      "to": "defenestration-1618"
+    },
+    {
+      "name": "Prague",
+      "pt": [
+        14.42,
+        50.08
+      ],
+      "where": "core",
+      "from": "montagne-blanche-1620"
+    },
+    {
+      "name": "Milan",
+      "pt": [
+        9.19,
+        45.46
+      ],
+      "where": "core",
+      "to": "sicile-1220"
+    },
+    {
+      "name": "Milan",
+      "pt": [
+        9.19,
+        45.46
+      ],
+      "where": "vassal",
+      "from": "conradin-1268",
+      "to": "mohacs-1526"
+    },
+    {
+      "name": "Milan",
+      "pt": [
+        9.19,
+        45.46
+      ],
+      "where": "core",
+      "from": "muhlberg-1547",
+      "to": "silesie-1740"
+    },
+    {
+      "name": "Milan",
+      "pt": [
+        9.19,
+        45.46
+      ],
+      "where": "not-core",
+      "from": "luneville-1801"
+    },
+    {
+      "name": "Rome",
+      "pt": [
+        12.5,
+        41.9
+      ],
+      "where": "core",
+      "to": "canossa-1077"
+    },
+    {
+      "name": "Rome",
+      "pt": [
+        12.5,
+        41.9
+      ],
+      "where": "not-core",
+      "from": "concordat-worms-1122"
+    },
+    {
+      "name": "Berne",
+      "pt": [
+        7.45,
+        46.95
+      ],
+      "where": "vassal",
+      "to": "otton-962"
+    },
+    {
+      "name": "Berne",
+      "pt": [
+        7.45,
+        46.95
+      ],
+      "where": "core",
+      "from": "royaume-bourgogne-1033",
+      "to": "lutzen-1632"
+    },
+    {
+      "name": "Berne",
+      "pt": [
+        7.45,
+        46.95
+      ],
+      "where": "not-core",
+      "from": "westphalie-1648"
+    },
+    {
+      "name": "Amsterdam",
+      "pt": [
+        4.9,
+        52.37
+      ],
+      "where": "core",
+      "to": "lutzen-1632"
+    },
+    {
+      "name": "Amsterdam",
+      "pt": [
+        4.9,
+        52.37
+      ],
+      "where": "not-core",
+      "from": "westphalie-1648"
+    },
+    {
+      "name": "Bruxelles",
+      "pt": [
+        4.35,
+        50.85
+      ],
+      "where": "core",
+      "to": "silesie-1740"
+    },
+    {
+      "name": "Bruxelles",
+      "pt": [
+        4.35,
+        50.85
+      ],
+      "where": "not-core",
+      "from": "luneville-1801"
+    },
+    {
+      "name": "Strasbourg",
+      "pt": [
+        7.75,
+        48.58
+      ],
+      "where": "core",
+      "to": "westphalie-1648"
+    },
+    {
+      "name": "Strasbourg",
+      "pt": [
+        7.75,
+        48.58
+      ],
+      "where": "not-core",
+      "from": "vienne-1683"
+    },
+    {
+      "name": "Hambourg",
+      "pt": [
+        9.99,
+        53.55
+      ],
+      "where": "core"
+    },
+    {
+      "name": "Berlin",
+      "pt": [
+        13.4,
+        52.5
+      ],
+      "where": "vassal",
+      "to": "otton-962"
+    },
+    {
+      "name": "Berlin",
+      "pt": [
+        13.4,
+        52.5
+      ],
+      "where": "not-core",
+      "from": "royaume-bourgogne-1033",
+      "to": "barberousse-1155"
+    },
+    {
+      "name": "Berlin",
+      "pt": [
+        13.4,
+        52.5
+      ],
+      "where": "core",
+      "from": "legnano-1176"
+    },
+    {
+      "name": "Königsberg",
+      "pt": [
+        20.5,
+        54.7
+      ],
+      "where": "not-core"
+    },
+    {
+      "name": "Budapest",
+      "pt": [
+        19.04,
+        47.5
+      ],
+      "where": "not-core",
+      "to": "hussites-1419"
+    },
+    {
+      "name": "Budapest",
+      "pt": [
+        19.04,
+        47.5
+      ],
+      "where": "vassal",
+      "from": "albert-ii-1438",
+      "to": "albert-ii-1438"
+    },
+    {
+      "name": "Budapest",
+      "pt": [
+        19.04,
+        47.5
+      ],
+      "where": "not-core",
+      "from": "mariage-bourgogne-1477",
+      "to": "vienne-1683"
+    },
+    {
+      "name": "Budapest",
+      "pt": [
+        19.04,
+        47.5
+      ],
+      "where": "vassal",
+      "from": "rastatt-1714"
+    },
+    {
+      "name": "Paris",
+      "pt": [
+        2.35,
+        48.85
+      ],
+      "where": "not-core"
+    },
+    {
+      "name": "Trieste",
+      "pt": [
+        13.77,
+        45.65
+      ],
+      "where": "core"
+    },
+    {
+      "name": "Lyon",
+      "pt": [
+        4.83,
+        45.76
+      ],
+      "where": "vassal",
+      "to": "otton-962"
+    },
+    {
+      "name": "Lyon",
+      "pt": [
+        4.83,
+        45.76
+      ],
+      "where": "core",
+      "from": "royaume-bourgogne-1033",
+      "to": "legnano-1176"
+    },
+    {
+      "name": "Lyon",
+      "pt": [
+        4.83,
+        45.76
+      ],
+      "where": "not-core",
+      "from": "bouvines-1214"
+    },
+    {
+      "name": "Venise",
+      "pt": [
+        12.34,
+        45.44
+      ],
+      "where": "not-core",
+      "to": "silesie-1740"
+    },
+    {
+      "name": "Venise",
+      "pt": [
+        12.34,
+        45.44
+      ],
+      "where": "vassal",
+      "from": "luneville-1801",
+      "to": "austerlitz-1805"
+    },
+    {
+      "name": "Venise",
+      "pt": [
+        12.34,
+        45.44
+      ],
+      "where": "not-core",
+      "from": "fin-empire-1806"
+    },
+    {
+      "name": "Besançon",
+      "pt": [
+        6.02,
+        47.24
+      ],
+      "where": "core",
+      "from": "royaume-bourgogne-1033",
+      "to": "westphalie-1648"
+    },
+    {
+      "name": "Besançon",
+      "pt": [
+        6.02,
+        47.24
+      ],
+      "where": "not-core",
+      "from": "vienne-1683"
+    },
+    {
+      "name": "Metz",
+      "pt": [
+        6.18,
+        49.12
+      ],
+      "where": "core",
+      "to": "muhlberg-1547"
+    },
+    {
+      "name": "Metz",
+      "pt": [
+        6.18,
+        49.12
+      ],
+      "where": "not-core",
+      "from": "augsbourg-1555"
+    },
+    {
+      "name": "Breslau",
+      "pt": [
+        17.03,
+        51.11
+      ],
+      "where": "not-core",
+      "to": "morgarten-1315"
+    },
+    {
+      "name": "Breslau",
+      "pt": [
+        17.03,
+        51.11
+      ],
+      "where": "core",
+      "from": "bulle-or-1356",
+      "to": "rastatt-1714"
+    },
+    {
+      "name": "Breslau",
+      "pt": [
+        17.03,
+        51.11
+      ],
+      "where": "not-core",
+      "from": "silesie-1740"
+    },
+    {
+      "name": "Naples",
+      "pt": [
+        14.27,
+        40.85
+      ],
+      "where": "vassal",
+      "from": "sicile-1220",
+      "to": "sicile-1220"
+    },
+    {
+      "name": "Naples",
+      "pt": [
+        14.27,
+        40.85
+      ],
+      "where": "vassal",
+      "from": "charles-quint-1519",
+      "to": "muhlberg-1547"
+    },
+    {
+      "name": "Naples",
+      "pt": [
+        14.27,
+        40.85
+      ],
+      "where": "vassal",
+      "from": "rastatt-1714",
+      "to": "rastatt-1714"
+    },
+    {
+      "name": "Madrid",
+      "pt": [
+        -3.7,
+        40.4
+      ],
+      "where": "vassal",
+      "from": "charles-quint-1519",
+      "to": "muhlberg-1547"
+    },
+    {
+      "name": "Madrid",
+      "pt": [
+        -3.7,
+        40.4
+      ],
+      "where": "not-core",
+      "from": "augsbourg-1555"
+    },
+    {
+      "name": "Cologne",
+      "pt": [
+        6.96,
+        50.94
+      ],
+      "where": "core",
+      "to": "silesie-1740"
+    },
+    {
+      "name": "Cologne",
+      "pt": [
+        6.96,
+        50.94
+      ],
+      "where": "not-core",
+      "from": "luneville-1801"
+    },
+    {
+      "name": "Munich",
+      "pt": [
+        11.58,
+        48.14
+      ],
+      "where": "core",
+      "to": "austerlitz-1805"
+    },
+    {
+      "name": "Munich",
+      "pt": [
+        11.58,
+        48.14
+      ],
+      "where": "allied",
+      "from": "fin-empire-1806"
+    },
+    {
+      "name": "Gand",
+      "pt": [
+        3.72,
+        51.05
+      ],
+      "where": "core",
+      "to": "silesie-1740"
+    },
+    {
+      "name": "Zurich",
+      "pt": [
+        8.54,
+        47.37
+      ],
+      "where": "core",
+      "to": "lutzen-1632"
+    },
+    {
+      "name": "Zurich",
+      "pt": [
+        8.54,
+        47.37
+      ],
+      "where": "not-core",
+      "from": "westphalie-1648"
+    }
+  ]
+}

@@ -1,0 +1,2718 @@
+{
+  "id": "saint-empire",
+  "name": "Saint-Empire romain germanique",
+  "color": "#4b5320",
+  "start": 962,
+  "end": 1806,
+  "description": "De 962 à 1806, le Saint-Empire réunit sous la couronne d'un empereur élu une mosaïque de royaumes, de duchés, d'évêchés et de villes libres : l'Allemagne, la Bohême, l'Italie du Nord, la Bourgogne et les Pays-Bas. Né du couronnement d'Otton Ier à Rome, il se mesure à la papauté, aux villes lombardes, à la France et aux Ottomans. Il passe des Ottoniens aux Hohenstaufen, aux princes électeurs puis aux Habsbourg, traverse la Réforme et la guerre de Trente Ans, et s'éteint sous les coups de Napoléon, quand François II dépose la couronne en 1806.",
+  "view": {
+    "center": [
+      11,
+      49
+    ],
+    "zoom": 4
+  },
+  "bounds": [
+    [
+      -6,
+      37
+    ],
+    [
+      28,
+      58
+    ]
+  ],
+  "periods": [
+    {
+      "id": "ottoniens-saliens",
+      "name": "Ottoniens et Saliens",
+      "start": 962,
+      "end": 1138,
+      "color": "#b8c18a",
+      "summary": "Otton Ier, vainqueur des Magyars, relève l'empire d'Occident à Rome en 962. Ses successeurs saxons puis saliens gouvernent avec leurs évêques, s'étendent jusqu'en Bourgogne et affrontent le pape dans la querelle des Investitures, de Canossa au concordat de Worms."
+    },
+    {
+      "id": "hohenstaufen",
+      "name": "Les Hohenstaufen",
+      "start": 1138,
+      "end": 1273,
+      "color": "#d9b36c",
+      "summary": "La dynastie de Souabe, de Barberousse à Frédéric II, veut refaire de l'Empire la première puissance d'Occident. Elle se heurte aux villes lombardes, au pape et au roi de France, puis s'éteint avec Conradin, laissant l'Allemagne sans roi pendant le Grand Interrègne."
+    },
+    {
+      "id": "princes-electeurs",
+      "name": "Le temps des princes électeurs",
+      "start": 1273,
+      "end": 1438,
+      "color": "#8fa8c8",
+      "summary": "Le trône passe de famille en famille, élu par sept princes que la Bulle d'or de 1356 reconnaît. Les Suisses défient les Habsbourg, la Bohême devient le cœur de l'Empire sous Charles IV, puis la révolte de Jan Hus l'ébranle."
+    },
+    {
+      "id": "habsbourg-reforme",
+      "name": "Les Habsbourg et la Réforme",
+      "start": 1438,
+      "end": 1648,
+      "color": "#c99a9a",
+      "summary": "Avec Albert II, la couronne reste presque toujours dans la maison de Habsbourg, qui s'agrandit par mariages jusqu'à Charles Quint. La Réforme de Luther divise l'Allemagne, et la guerre de Trente Ans la ravage."
+    },
+    {
+      "id": "apres-westphalie",
+      "name": "Après Westphalie",
+      "start": 1648,
+      "end": 1806,
+      "color": "#a99bc7",
+      "summary": "Les traités de Westphalie font des princes de quasi-souverains. L'Autriche repousse les Ottomans et s'étend vers le sud-est, la Prusse la défie, puis la Révolution et Napoléon détruisent l'Empire, dissous en 1806."
+    }
+  ],
+  "steps": [
+    {
+      "id": "otton-962",
+      "year": 962,
+      "title": "Otton Ier, empereur à Rome",
+      "type": "fondation",
+      "location": [
+        12.4964,
+        41.9028
+      ],
+      "zoom": 4.2,
+      "summary": "Le 2 février 962, le pape couronne à Saint-Pierre Otton Ier, roi de Germanie : l'empire d'Occident renaît, mais il est désormais germanique.",
+      "details": "Depuis la mort de Charlemagne, l'idée d'empire n'a pas disparu, mais le dernier empereur carolingien est mort en 924. Pendant près de quarante ans, la couronne reste vacante. **Otton Ier**, duc de Saxe devenu roi de Germanie en 936, la relève. Son prestige vient d'une victoire éclatante : en août 955, sur le **Lechfeld**, près d'Augsbourg, il a écrasé les **Magyars**, cavaliers venus de la plaine hongroise qui pillaient l'Europe depuis un demi-siècle. Le roi apparaît alors comme le sauveur de la chrétienté.\n\nEn 961, le pape **Jean XII**, menacé par un roi lombard, appelle Otton à l'aide. Le roi franchit les Alpes, prend le titre de roi d'Italie, puis entre à Rome. Le **2 février 962**, dans la basilique Saint-Pierre, il est couronné empereur, avec son épouse Adélaïde. Quelques jours plus tard, le **Privilège ottonien** garantit les possessions du pape, mais exige de lui un serment de fidélité : l'empereur se pose en protecteur, et même en arbitre, de la papauté.\n\nLe nom « Saint-Empire romain germanique » est plus tardif ; on parle alors d'« empire des Romains ». Mais l'essentiel est là : un pouvoir fondé sur l'Allemagne, ses ducs et ses évêques, qui regarde vers l'Italie et vers Rome. Otton ira jusqu'à déposer Jean XII en 963, preuve que le dialogue avec le pape sera rude.",
+      "consequences": [
+        "Le royaume de Germanie, la Lotharingie et le royaume d'Italie du Nord sont réunis sous une même couronne impériale.",
+        "Le duché de Bohême devient tributaire de l'empereur, et le royaume de Bourgogne, déjà protégé par Otton, gravite dans son orbite.",
+        "Rome et le patrimoine de saint Pierre passent sous protection impériale, ce qui lie durablement l'Allemagne à l'Italie.",
+        "Les peuples slaves entre l'Elbe et l'Oder versent un tribut, avant de se révolter en 983."
+      ],
+      "territory": "otton-962",
+      "sources": [
+        {
+          "label": "Wikipédia — Otton Ier (empereur du Saint-Empire)",
+          "url": "https://fr.wikipedia.org/wiki/Otton_Ier_(empereur_du_Saint-Empire)"
+        },
+        {
+          "label": "Wikipédia — Bataille du Lechfeld",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_du_Lechfeld"
+        },
+        {
+          "label": "Widukind de Corvey, Res gestae Saxonicae"
+        }
+      ],
+      "territoryNote": "Core : royaume de Germanie (Allemagne actuelle sauf le nord-est slave, Autriche, Slovénie, Suisse alémanique), Lotharingie (Pays-Bas, Belgique, Luxembourg, Lorraine, Alsace), royaume d'Italie (Italie du Nord, Toscane, Romagne) et territoire de Rome jusqu'au Latium (États pontificaux sous protection impériale). Vassal : duché de Bohême (Tchéquie, tributaire), royaume de Bourgogne-Arles (Suisse romande, Franche-Comté, Savoie, Dauphiné, Provence, protégé par Otton), Slaves tributaires du Mecklembourg et du nord du Brandebourg. Venise est indépendante.",
+      "armies": [
+        {
+          "side": "Otton Ier",
+          "faction": "imperiaux",
+          "strength": 2,
+          "path": [
+            [
+              10.9,
+              48.37
+            ],
+            [
+              11.5,
+              47.0
+            ],
+            [
+              10.99,
+              45.44
+            ],
+            [
+              9.16,
+              45.19
+            ],
+            [
+              10.5,
+              43.84
+            ],
+            [
+              12.5,
+              41.9
+            ]
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "name": "Otton Ier",
+          "role": "Roi de Germanie, premier empereur du Saint-Empire",
+          "faction": "imperiaux",
+          "archetype": "empereur-germanique",
+          "quote": "(formule libre) Je protège l'Église, et l'Église me couronne.",
+          "position": [
+            12.46,
+            41.9
+          ]
+        },
+        {
+          "name": "Jean XII",
+          "role": "Pape, qui couronne Otton",
+          "faction": "croises-latins",
+          "archetype": "pape",
+          "position": [
+            12.4,
+            41.95
+          ]
+        }
+      ]
+    },
+    {
+      "id": "royaume-bourgogne-1033",
+      "year": 1033,
+      "title": "Conrad II reçoit le royaume de Bourgogne",
+      "type": "politique",
+      "location": [
+        6.94,
+        46.82
+      ],
+      "zoom": 4.4,
+      "summary": "Le 2 février 1033, à Payerne, Conrad II le Salique est couronné roi de Bourgogne : l'empereur règne désormais sur trois royaumes, Germanie, Italie et Bourgogne.",
+      "details": "Au Moyen Âge, le « royaume de Bourgogne », appelé aussi royaume d'**Arles**, s'étend de la Suisse romande à la Provence en passant par la Savoie, la Franche-Comté, le Dauphiné et la vallée du Rhône jusqu'à Lyon. Son roi, **Rodolphe III**, n'a pas de fils et se sait entouré de seigneurs turbulents. Dès 1016, il promet son héritage à l'empereur **Henri II**, puis, à sa mort le 6 septembre 1032, la succession s'ouvre dans la confusion.\n\n**Conrad II**, le premier empereur de la dynastie des **Saliens** (ainsi appelée parce qu'elle descend des Francs saliens), fait valoir ses droits. Il est le mari de Gisèle de Souabe, nièce de Rodolphe. Mais le comte **Eudes II de Blois et de Champagne**, autre neveu du défunt, s'empare de plusieurs places. Conrad se fait couronner à Payerne le 2 février 1033, puis, aidé par des alliés dont le roi de France Henri Ier, il chasse son rival. En 1034, il reçoit à Genève l'hommage de la noblesse bourguignonne.\n\nLe Saint-Empire possède dès lors ses « trois couronnes » : l'empereur est roi des Allemands, roi des Lombards et roi des Bourguignons. Mais la Bourgogne est lointaine et ses seigneurs puissants : le pouvoir impérial y restera toujours plus théorique que réel. Il s'effritera dès le XIIe siècle, au profit des comtes de Savoie, des dauphins de Viennois et des rois de France.",
+      "consequences": [
+        "Le royaume de Bourgogne-Arles (Suisse romande, Franche-Comté, Savoie, Dauphiné, Provence, Lyonnais) entre dans l'Empire.",
+        "Lyon, Besançon, Genève, Berne, Bâle et Marseille relèvent désormais, au moins en théorie, de l'empereur.",
+        "L'Empire gagne un accès à la Méditerranée et une frontière directe avec la France capétienne.",
+        "L'autorité impériale restera faible en Bourgogne, où les comtes et les évêques gouvernent presque seuls."
+      ],
+      "territory": "royaume-bourgogne-1033",
+      "sources": [
+        {
+          "label": "Wikipédia — Conrad II le Salique",
+          "url": "https://fr.wikipedia.org/wiki/Conrad_II_le_Salique"
+        },
+        {
+          "label": "Wikipédia — Royaume de Bourgogne-Arles",
+          "url": "https://fr.wikipedia.org/wiki/Royaume_d%27Arles"
+        },
+        {
+          "label": "Wipo, Gesta Chuonradi imperatoris"
+        }
+      ],
+      "territoryNote": "Core : Allemagne actuelle à l'ouest de l'Elbe (les terres slaves du nord-est restent hors de l'Empire), Autriche, Slovénie, Suisse, Pays-Bas, Belgique, Luxembourg, Alsace-Lorraine, Italie du Nord et centrale jusqu'à Rome, et désormais tout le royaume de Bourgogne-Arles (Suisse romande, Franche-Comté, Savoie, Dauphiné, Provence, Lyonnais). Vassal : duché de Bohême (Tchéquie). Hors Empire : France capétienne (dont Paris et Dijon), Pologne, Hongrie, Venise.",
+      "armies": [
+        {
+          "side": "Conrad II",
+          "faction": "imperiaux",
+          "strength": 2,
+          "path": [
+            [
+              7.75,
+              48.58
+            ],
+            [
+              7.59,
+              47.56
+            ],
+            [
+              7.54,
+              47.21
+            ],
+            [
+              6.94,
+              46.82
+            ]
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "name": "Conrad II le Salique",
+          "role": "Empereur, roi de Germanie, d'Italie et de Bourgogne",
+          "faction": "imperiaux",
+          "archetype": "empereur-germanique",
+          "position": [
+            6.94,
+            46.82
+          ]
+        }
+      ]
+    },
+    {
+      "id": "canossa-1077",
+      "year": 1077,
+      "title": "Canossa : l'empereur à genoux devant le pape",
+      "type": "politique",
+      "location": [
+        10.45,
+        44.58
+      ],
+      "zoom": 4.6,
+      "summary": "En janvier 1077, l'empereur Henri IV attend trois jours dans la neige devant le château de Canossa pour obtenir le pardon du pape Grégoire VII.",
+      "details": "Au XIe siècle, les empereurs nomment eux-mêmes les évêques et les abbés, cérémonie appelée **investiture** : l'évêque reçoit de l'empereur la crosse et l'anneau. Or les évêques gouvernent de vastes territoires et l'empereur s'appuie sur eux contre les ducs. Le pape **Grégoire VII**, réformateur intransigeant, veut mettre fin à cet usage. En 1075, ses *Dictatus papae* affirment que le pape peut déposer les empereurs.\n\n**Henri IV**, âgé de 25 ans, riposte : en janvier 1076, à Worms, ses évêques déclarent le pape déchu. Grégoire VII excommunie alors le roi et délie ses sujets de leur serment. Les princes allemands, trop heureux d'affaiblir le pouvoir royal, menacent d'élire un autre souverain si Henri n'est pas relevé de la sentence avant le 2 février 1077.\n\nL'hiver est terrible, mais Henri franchit les Alpes par le col du Mont-Cenis avec sa famille. Il retrouve le pape au château de **Canossa**, en Émilie, qui appartient à la comtesse **Mathilde de Toscane**, alliée de Grégoire. Du 25 au 28 janvier, il se présente en pénitent, pieds nus, vêtu de laine. Le pape finit par l'absoudre. L'humiliation est réelle, mais Henri a sauvé sa couronne. La querelle n'est pas finie : les princes élisent quand même un anti-roi, Rodolphe de Rheinfelden, et en 1084 Henri prendra Rome et chassera Grégoire.",
+      "consequences": [
+        "Henri IV conserve la couronne, mais il faut encore trois ans de guerre civile pour vaincre le roi rival, Rodolphe de Rheinfelden.",
+        "La querelle des Investitures s'enlise : elle ne sera réglée qu'en 1122 par le concordat de Worms.",
+        "Le prestige du pape monte, celui de l'empereur recule : la papauté s'affirme comme une puissance rivale.",
+        "Les princes allemands, qui ont montré qu'ils peuvent choisir leur roi, renforcent leur rôle dans l'élection."
+      ],
+      "territory": "canossa-1077",
+      "sources": [
+        {
+          "label": "Wikipédia — Pénitence de Canossa",
+          "url": "https://fr.wikipedia.org/wiki/P%C3%A9nitence_de_Canossa"
+        },
+        {
+          "label": "Wikipédia — Querelle des Investitures",
+          "url": "https://fr.wikipedia.org/wiki/Querelle_des_Investitures"
+        },
+        {
+          "label": "Lambert de Hersfeld, Annales"
+        }
+      ],
+      "territoryNote": "Core : Allemagne à l'ouest de l'Elbe, Autriche, Slovénie, Suisse, Pays-Bas, Belgique, Luxembourg, Alsace-Lorraine, royaume de Bourgogne-Arles (Franche-Comté, Savoie, Dauphiné, Provence, Lyonnais), Italie du Nord et centrale jusqu'à Rome, que Henri IV prendra en 1084. Vassal : Bohême. Hors Empire : France, Pologne, Hongrie, Venise, sud de l'Italie normand. L'autorité réelle de Henri IV est très contestée en Saxe et en Italie.",
+      "armies": [
+        {
+          "side": "Henri IV",
+          "faction": "imperiaux",
+          "strength": 1,
+          "path": [
+            [
+              8.44,
+              49.32
+            ],
+            [
+              6.02,
+              47.24
+            ],
+            [
+              6.9,
+              45.25
+            ],
+            [
+              7.68,
+              45.07
+            ],
+            [
+              10.63,
+              44.7
+            ],
+            [
+              10.45,
+              44.58
+            ]
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "name": "Henri IV",
+          "role": "Roi de Germanie, venu demander l'absolution",
+          "faction": "imperiaux",
+          "archetype": "empereur-germanique",
+          "quote": "(formule libre) Je viens, nu-pieds, supplier celui qui m'a retranché de l'Église.",
+          "position": [
+            10.4,
+            44.6
+          ]
+        },
+        {
+          "name": "Grégoire VII",
+          "role": "Pape réformateur, ancien moine Hildebrand",
+          "faction": "croises-latins",
+          "archetype": "pape",
+          "position": [
+            10.5,
+            44.57
+          ]
+        }
+      ]
+    },
+    {
+      "id": "concordat-worms-1122",
+      "year": 1122,
+      "title": "Le concordat de Worms",
+      "type": "traité",
+      "location": [
+        8.3611,
+        49.6327
+      ],
+      "zoom": 4.6,
+      "summary": "Le 23 septembre 1122, Henri V et le pape Calixte II mettent fin à la querelle des Investitures : l'Église choisit ses évêques, l'empereur leur confie les fiefs.",
+      "details": "Quarante-cinq ans après Canossa, la querelle des Investitures dure encore. Les papes ont excommunié trois empereurs successifs ; l'Empire a vu des antipapes, des guerres civiles et des sièges de Rome. En 1119, le pape **Calixte II**, un Bourguignon, tente de négocier à Mouzon, sans succès. Les princes allemands, fatigués d'une guerre sans fin, pressent **Henri V**, le dernier souverain de la dynastie salienne, de conclure.\n\nLe compromis est signé à Worms, en septembre 1122. L'empereur renonce à investir les évêques par la crosse et l'anneau, symboles religieux. En revanche, l'élection se fait en sa présence et, en Allemagne, il remet à l'élu le **sceptre**, signe du pouvoir temporel sur les terres et droits attachés à l'évêché, *avant* la consécration. En Italie et en Bourgogne, il le fera seulement six mois *après*. Ce détail a une grande portée : en Allemagne, l'empereur garde la main sur ses évêques-princes ; en Italie, il perd presque toute influence.\n\nLe premier concile du Latran confirme l'accord en 1123. Henri V meurt en 1125 sans enfant : les princes élisent **Lothaire de Supplinbourg**, non son héritier Frédéric de Souabe. Commence alors la rivalité des familles Welf (Guelfes) et Hohenstaufen (Gibelins), qui déchirera l'Empire.",
+      "consequences": [
+        "L'Église d'Allemagne garde un lien étroit avec l'empereur, ce qui fait des évêques de grands princes d'Empire.",
+        "En Italie et en Bourgogne, l'autorité impériale sur les évêques s'affaiblit, et Rome échappe dans les faits à l'empereur.",
+        "La dynastie salienne s'éteint en 1125 : le principe électif l'emporte sur l'hérédité.",
+        "La rivalité des Welf et des Hohenstaufen s'ouvre, source de guerres civiles pendant un siècle."
+      ],
+      "territory": "concordat-worms-1122",
+      "sources": [
+        {
+          "label": "Wikipédia — Concordat de Worms",
+          "url": "https://fr.wikipedia.org/wiki/Concordat_de_Worms"
+        },
+        {
+          "label": "Wikipédia — Henri V (empereur germanique)",
+          "url": "https://fr.wikipedia.org/wiki/Henri_V_(empereur_germanique)"
+        },
+        {
+          "label": "Texte du concordat de Worms (Calixtinum et Heinricianum), 1122"
+        }
+      ],
+      "territoryNote": "Core : Allemagne à l'ouest de l'Elbe, Autriche, Slovénie, Suisse, Pays-Bas, Belgique, Luxembourg, Alsace-Lorraine, royaume de Bourgogne-Arles (Franche-Comté, Savoie, Dauphiné, Provence, Lyonnais), royaume d'Italie du Nord et de Toscane. Rome et le patrimoine de saint Pierre ne sont plus contrôlés par l'empereur (hors Empire à partir d'ici). Vassal : Bohême. Hors Empire : France, Pologne, Hongrie, Venise, sud de l'Italie normand ; les Slaves du nord-est (Obodrites, Poméraniens) restent indépendants.",
+      "figures": [
+        {
+          "name": "Henri V",
+          "role": "Empereur, dernier des Saliens",
+          "faction": "imperiaux",
+          "archetype": "empereur-germanique",
+          "position": [
+            8.36,
+            49.63
+          ]
+        },
+        {
+          "name": "Calixte II",
+          "role": "Pape, négociateur du concordat",
+          "faction": "croises-latins",
+          "archetype": "pape",
+          "quote": "(formule libre) Qu'à l'Église revienne la crosse, et à l'empereur le sceptre.",
+          "position": [
+            8.3,
+            49.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "barberousse-1155",
+      "year": 1155,
+      "title": "Frédéric Barberousse couronné empereur",
+      "type": "politique",
+      "location": [
+        12.4964,
+        41.9028
+      ],
+      "zoom": 4.2,
+      "summary": "Le 18 juin 1155, Frédéric Ier Hohenstaufen, dit Barberousse, reçoit la couronne impériale à Rome : il veut refaire de l'Empire la première puissance de l'Occident.",
+      "details": "Élu roi de Germanie en 1152, **Frédéric Ier**, de la maison de **Hohenstaufen** (famille de Souabe, rivale des Welf), est surnommé *Barberousse* par les Italiens à cause de sa barbe rousse. Il réconcilie les deux camps allemands en donnant la Bavière à son cousin Henri le Lion, le chef des Welf, et se tourne vers l'Italie, où les riches cités lombardes ne reconnaissent guère son autorité.\n\nEn 1155, il descend en Italie avec une armée et s'accorde avec le pape **Adrien IV**, seul pape anglais de l'histoire : en échange de son appui contre les Normands de Sicile et contre le tribun **Arnaud de Brescia**, qui voulait faire de Rome une commune sans pape, Frédéric livre ce prédicateur, qui sera exécuté. Une querelle de protocole (tenir ou non l'étrier du pape) manque tout gâcher, puis le couronnement a lieu le 18 juin à Saint-Pierre. Les Romains se soulèvent le soir même ; l'armée impériale les écrase, mais doit se retirer, minée par la chaleur et la maladie.\n\nFrédéric conçoit l'Empire comme un héritage direct de Rome et de Charlemagne. Dès 1157, sa chancellerie parle de *sacrum imperium*, l'**Empire saint**, d'où naîtra le nom de Saint-Empire. À la diète de Roncaglia (1158), il revendique les « régales » (droits de justice, monnaie, péages) des villes lombardes, ce qui prépare le choc de Legnano.",
+      "consequences": [
+        "L'Empire retrouve un souverain énergique, qui concilie Hohenstaufen et Welf en Allemagne.",
+        "L'alliance avec la papauté se brise vite : à partir de 1159, Frédéric reconnaît des antipapes et le conflit rebondit.",
+        "La revendication des droits impériaux sur les villes lombardes mène à la guerre avec la Ligue lombarde.",
+        "L'expression « Saint Empire » apparaît dans les actes impériaux pour affirmer l'origine divine du pouvoir."
+      ],
+      "territory": "barberousse-1155",
+      "sources": [
+        {
+          "label": "Wikipédia — Frédéric Ier Barberousse",
+          "url": "https://fr.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Ier_Barberousse"
+        },
+        {
+          "label": "Wikipédia — Adrien IV",
+          "url": "https://fr.wikipedia.org/wiki/Adrien_IV"
+        },
+        {
+          "label": "Otton de Freising et Rahewin, Gesta Friderici imperatoris"
+        }
+      ],
+      "territoryNote": "Core : Allemagne à l'ouest de l'Elbe, Autriche (érigée en duché en 1156), Slovénie, Suisse, Pays-Bas, Belgique, Luxembourg, Alsace-Lorraine, Franche-Comté (Barberousse y épouse Béatrice en 1156), royaume de Bourgogne-Arles (Savoie, Dauphiné, Provence, Lyonnais), royaume d'Italie du Nord et de Toscane. Vassal : Bohême (royaume depuis 1158). Hors Empire : les terres slaves du nord-est (Mecklembourg, Poméranie), la France, la Pologne, la Hongrie, le royaume normand de Sicile et le patrimoine pontifical.",
+      "figures": [
+        {
+          "name": "Frédéric Ier Barberousse",
+          "role": "Empereur, de la maison de Hohenstaufen",
+          "faction": "imperiaux",
+          "archetype": "empereur-germanique",
+          "quote": "(formule libre) L'Empire est un héritage de Rome et de Charlemagne : je veux le rendre à sa grandeur.",
+          "position": [
+            12.45,
+            41.9
+          ]
+        },
+        {
+          "name": "Adrien IV",
+          "role": "Pape, le seul Anglais à avoir régné à Rome",
+          "faction": "croises-latins",
+          "archetype": "pape",
+          "position": [
+            12.5,
+            41.92
+          ]
+        }
+      ]
+    },
+    {
+      "id": "legnano-1176",
+      "year": 1176,
+      "title": "Legnano : les villes lombardes tiennent tête à l'empereur",
+      "type": "bataille",
+      "location": [
+        8.9333,
+        45.5958
+      ],
+      "zoom": 5.0,
+      "summary": "Le 29 mai 1176, l'infanterie des villes de la Ligue lombarde brise la charge de la cavalerie de Frédéric Barberousse : l'empereur renonce à plier l'Italie du Nord.",
+      "details": "Depuis 1158, Frédéric Barberousse veut que les grandes villes de Lombardie, comme Milan, Crémone ou Brescia, lui versent impôts et droits de justice. En 1162, il rase Milan. Mais les cités, rapprochées par la haine de l'impôt impérial, forment en 1167 la **Ligue lombarde**, soutenue par le pape **Alexandre III** : la ville nouvelle d'*Alessandria* est même fondée en son honneur. Un long siège de cette place échoue en 1175.\n\nEn 1176, Barberousse attend à Côme des renforts d'Allemagne, qui lui arrivent par les cols des Alpes. Son cousin **Henri le Lion** a refusé de venir, malgré une humiliante supplication de l'empereur à Chiavenna. Le 29 mai, la colonne impériale marche vers Pavie, alliée de l'empereur. Près de **Legnano**, elle tombe sur les milices milanaises, groupées autour du **Carroccio**, grand chariot sacré portant l'étendard de la ville. La cavalerie lourde des chevaliers enfonce d'abord les lignes ; puis les fantassins serrés autour du chariot tiennent, pendant que des renforts de la Ligue prennent l'ennemi de flanc. Barberousse, désarçonné, passe pour mort et reparaît trois jours plus tard à Pavie.\n\nDéfait, il négocie. La trêve de Venise (1177) le réconcilie avec le pape, puis la **paix de Constance** (1183) reconnaît aux villes leurs libertés et leurs magistrats, contre un serment de fidélité.",
+      "consequences": [
+        "L'empereur renonce à gouverner directement les villes d'Italie du Nord, qui deviennent de fait des républiques.",
+        "La paix de Constance (1183) légalise les communes lombardes, en échange d'un hommage nominal.",
+        "Frédéric se détourne vers l'Allemagne et le royaume de Bourgogne (couronnement à Arles en 1178), puis vers la croisade.",
+        "L'abandon de Henri le Lion conduit à sa disgrâce en 1180 et à l'éclatement de son immense duché."
+      ],
+      "territory": "legnano-1176",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Legnano",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Legnano"
+        },
+        {
+          "label": "Wikipédia — Ligue lombarde",
+          "url": "https://fr.wikipedia.org/wiki/Ligue_lombarde"
+        },
+        {
+          "label": "Romuald de Salerne, Chronicon"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire (Frédéric Ier Barberousse, chevaliers allemands et alliés de Pavie)",
+          "Ligue lombarde (milices de Milan, Brescia, Vérone et autres villes)"
+        ],
+        "commanders": [
+          "Frédéric Ier Barberousse",
+          "Guido da Landriano (Milan)"
+        ],
+        "outcome": "Victoire de la Ligue lombarde",
+        "forces": "Chiffres très incertains : quelques milliers de combattants de chaque côté, avec une forte cavalerie impériale",
+        "losses": "Non connues avec précision ; lourdes pertes dans la cavalerie impériale, selon les chroniqueurs"
+      },
+      "territoryNote": "Core : Allemagne (désormais jusqu'à la Baltique, où Henri le Lion et Albert l'Ours poussent vers l'est), Autriche, Slovénie, Suisse, Pays-Bas, Belgique, Luxembourg, Alsace-Lorraine, Franche-Comté, royaume de Bourgogne-Arles (Savoie, Dauphiné, Provence, Lyonnais), royaume d'Italie du Nord et de Toscane (en révolte pour sa partie lombarde). Vassal : Bohême. Hors Empire : France, Pologne, Hongrie, royaume de Sicile, États du pape.",
+      "armies": [
+        {
+          "id": "barberousse",
+          "side": "Frédéric Barberousse",
+          "faction": "imperiaux",
+          "strength": 2,
+          "path": [
+            [
+              9.4,
+              46.32
+            ],
+            [
+              9.08,
+              45.81
+            ],
+            [
+              8.93,
+              45.6
+            ]
+          ]
+        },
+        {
+          "id": "ligue-lombarde",
+          "side": "Ligue lombarde",
+          "faction": "communes-lombardes",
+          "strength": 3,
+          "winner": true,
+          "path": [
+            [
+              9.19,
+              45.46
+            ],
+            [
+              9.05,
+              45.52
+            ],
+            [
+              8.93,
+              45.6
+            ]
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "name": "Alexandre III",
+          "role": "Pape, protecteur de la Ligue lombarde",
+          "faction": "croises-latins",
+          "archetype": "pape",
+          "position": [
+            9.19,
+            45.46
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bouvines-1214",
+      "year": 1214,
+      "title": "Bouvines : le trône impérial se joue en Flandre",
+      "type": "bataille",
+      "location": [
+        3.2,
+        50.5833
+      ],
+      "zoom": 5.0,
+      "summary": "Le 27 juillet 1214, Philippe Auguste bat à Bouvines l'empereur Otton IV, le comte de Flandre et le roi d'Angleterre : la France s'impose, et Frédéric II gagne l'Empire.",
+      "details": "Depuis 1198, deux rois se disputent la couronne allemande : **Otton IV** de la famille Welf, soutenu par l'Angleterre dont il est le neveu, et **Philippe de Souabe**, puis son neveu **Frédéric II**, un Hohenstaufen appuyé par le roi de France **Philippe Auguste**. Otton, couronné empereur en 1209, s'attaque au pape et à la Sicile : il est excommunié en 1210. Frédéric II, jeune roi de Sicile, passe en Allemagne et se fait reconnaître.\n\nEn 1214, **Jean sans Terre** attaque la France par l'ouest, tandis qu'Otton, le comte de Flandre **Ferrand** et le comte de Boulogne **Renaud de Dammartin** l'attaquent par le nord. Le fils de Philippe, **Louis**, bat Jean à La Roche-aux-Moines le 2 juillet. Le dimanche 27, à **Bouvines**, près de Lille, l'armée coalisée rattrape l'arrière-garde française qui franchissait un pont. Philippe Auguste fait demi-tour et accepte le combat avec ses chevaliers et les milices des communes. La mêlée est longue et confuse : le roi, jeté à terre, est sauvé par ses chevaliers. Ferrand et Renaud sont capturés ; Otton, qui a failli être pris, s'enfuit.\n\nCette victoire consolide la monarchie capétienne et ruine les ambitions anglaises : Jean, affaibli, devra signer la Grande Charte en 1215. Pour l'Empire, elle élimine Otton IV, qui meurt en 1218. Frédéric II reste seul empereur, mais il doit tout au roi de France et à l'Église.",
+      "consequences": [
+        "Otton IV est ruiné ; Frédéric II est reconnu comme seul roi des Romains et sera couronné à Aix-la-Chapelle en 1215.",
+        "La monarchie française devient la grande puissance continentale, et la Flandre est tenue par le roi.",
+        "La défaite de Jean sans Terre conduit à la révolte des barons et à la Grande Charte (1215).",
+        "En Bourgogne, Provence et Dauphiné, l'autorité impériale devient purement nominale : ces régions passent peu à peu dans l'orbite française."
+      ],
+      "territory": "bouvines-1214",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Bouvines",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Bouvines"
+        },
+        {
+          "label": "Georges Duby, Le Dimanche de Bouvines (Gallimard, 1973)"
+        },
+        {
+          "label": "Guillaume le Breton, Gesta Philippi Augusti"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Royaume de France (Philippe Auguste et ses communes)",
+          "Coalition d'Otton IV (Empire welf, Flandre, Boulogne, Angleterre)"
+        ],
+        "commanders": [
+          "Philippe II Auguste",
+          "Guérin, évêque de Senlis",
+          "Otton IV",
+          "Ferrand de Flandre",
+          "Renaud de Dammartin",
+          "Guillaume Longue-Épée"
+        ],
+        "outcome": "Victoire française",
+        "forces": "Chiffres très discutés : de l'ordre de 7 000 à 15 000 combattants par camp selon les historiens",
+        "losses": "Incertaines ; plusieurs dizaines de grands seigneurs coalisés capturés, dont Ferrand et Renaud"
+      },
+      "territoryNote": "Core : Allemagne, Autriche, Slovénie, Suisse, Franche-Comté et Savoie (Haute-Bourgogne), Pays-Bas, Belgique, Luxembourg (le comté de Flandre relève en partie du roi de France), Alsace-Lorraine, royaume d'Italie du Nord et de Toscane. Le royaume d'Arles (Lyon, Dauphiné, Provence) n'est plus figuré : l'autorité impériale n'y est plus que nominale. Vassal : Bohême (royauté héréditaire depuis 1212), Poméranie (fief impérial depuis 1181). Hors Empire : France, Danemark, Pologne, Hongrie, royaume de Sicile (aux mains de Frédéric II, rival d'Otton), États du pape.",
+      "armies": [
+        {
+          "side": "France",
+          "faction": "chevaliers-europeens",
+          "strength": 3,
+          "winner": true,
+          "path": [
+            [
+              2.93,
+              49.93
+            ],
+            [
+              3.2,
+              50.3
+            ],
+            [
+              3.39,
+              50.6
+            ],
+            [
+              3.2,
+              50.58
+            ]
+          ]
+        },
+        {
+          "side": "Coalition d'Otton IV",
+          "faction": "imperiaux",
+          "strength": 3,
+          "path": [
+            [
+              3.52,
+              50.36
+            ],
+            [
+              3.45,
+              50.5
+            ],
+            [
+              3.2,
+              50.58
+            ]
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "name": "Philippe Auguste",
+          "role": "Roi de France, allié de Frédéric II",
+          "faction": "chevaliers-europeens",
+          "archetype": "roi",
+          "position": [
+            3.3,
+            50.55
+          ]
+        },
+        {
+          "name": "Otton IV",
+          "role": "Empereur Welf, vaincu à Bouvines",
+          "faction": "imperiaux",
+          "archetype": "empereur-germanique",
+          "position": [
+            3.1,
+            50.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sicile-1220",
+      "year": 1220,
+      "title": "Frédéric II, empereur et roi de Sicile",
+      "type": "politique",
+      "location": [
+        14.2,
+        41.1
+      ],
+      "zoom": 4.0,
+      "summary": "Couronné empereur à Rome le 22 novembre 1220, Frédéric II concède des droits aux princes allemands pour gouverner en paix sa Sicile natale.",
+      "details": "Frédéric II est un Hohenstaufen élevé à Palerme, parlant latin, grec, arabe et italien, sensible à la science et au droit. Par sa mère Constance, héritière des rois normands, il est roi de **Sicile** (qui comprend l'Italie du Sud) depuis l'enfance. Par son père, l'empereur Henri VI, il descend des empereurs. Dès 1212, il est venu chercher en Allemagne la couronne ; Bouvines lui a ôté son rival.\n\nSon problème est de tenir l'Allemagne et la Sicile ensemble, malgré la crainte du pape, qui craint d'être pris en tenaille entre ces deux royaumes réunis dans les mêmes mains. En 1220, il fait élire son fils **Henri (VII)** roi des Romains en Allemagne, puis, pour obtenir l'accord des princes, il signe la *Confœderatio cum principibus ecclesiasticis*, qui reconnaît aux princes-évêques de larges droits (monnaie, péages, justice). C'est le début d'une longue histoire : l'empereur échange des pouvoirs locaux contre la fidélité des princes, qui deviennent presque des souverains.\n\nLe 22 novembre 1220, **Honorius III** le couronne empereur à Rome. Frédéric promet de partir à la croisade, mais retourne d'abord en Sicile, où il réorganise le royaume par les *Constitutions de Capoue* : fonctionnaires, justice royale, impôts. Surnommé *Stupor mundi* (l'étonnement du monde), il fera de la Sicile un État moderne, tandis que l'Allemagne lui échappe peu à peu.",
+      "consequences": [
+        "Les princes ecclésiastiques puis laïques obtiennent des droits régaliens : l'Allemagne s'oriente vers une mosaïque de principautés.",
+        "L'Empire s'étend en pratique sur la Sicile et l'Italie du Sud, à l'exception des États du pape qui se retrouvent encerclés.",
+        "Le pape, enserré entre Allemagne, Lombardie et Sicile, voit dans Frédéric un danger : il l'excommuniera à plusieurs reprises.",
+        "Le roi Henri (VII), laissé en Allemagne, finira par se révolter contre son père."
+      ],
+      "territory": "sicile-1220",
+      "sources": [
+        {
+          "label": "Wikipédia — Frédéric II du Saint-Empire",
+          "url": "https://fr.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_II_du_Saint-Empire"
+        },
+        {
+          "label": "Ernst Kantorowicz, Frédéric II (Gallimard)"
+        },
+        {
+          "label": "Matthieu Paris, Chronica majora"
+        }
+      ],
+      "territoryNote": "Core : Allemagne, Autriche, Slovénie, Suisse, Franche-Comté et Savoie, Pays-Bas, Belgique, Luxembourg, Alsace-Lorraine, royaume d'Italie du Nord et de Toscane. Vassal : royaume de Sicile (Italie du Sud et Sicile, union personnelle sous Frédéric II, hors Empire en droit), Bohême, Poméranie. Hors Empire : États du pape, France, Pologne, Hongrie, Venise.",
+      "figures": [
+        {
+          "name": "Frédéric II",
+          "role": "Empereur et roi de Sicile, « stupeur du monde »",
+          "faction": "imperiaux",
+          "archetype": "empereur-germanique",
+          "quote": "(formule libre) Je gouverne la Sicile comme un État, l'Allemagne comme une fédération.",
+          "position": [
+            14.2,
+            41.1
+          ]
+        },
+        {
+          "name": "Honorius III",
+          "role": "Pape, qui le couronne en 1220",
+          "faction": "croises-latins",
+          "archetype": "pape",
+          "position": [
+            12.5,
+            41.9
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conradin-1268",
+      "year": 1268,
+      "title": "Conradin décapité : la fin des Hohenstaufen",
+      "type": "chute",
+      "location": [
+        13.25,
+        42.07
+      ],
+      "zoom": 4.2,
+      "summary": "Le 23 août 1268, Conradin, dernier Hohenstaufen, est battu à Tagliacozzo par Charles d'Anjou ; capturé, il est exécuté à Naples le 29 octobre.",
+      "details": "Le pape **Innocent IV** a déclaré Frédéric II déchu en 1245 ; l'empereur meurt en 1250. Son fils **Conrad IV** meurt en 1254 ; la Sicile revient au bâtard **Manfred**, qui est tué en 1266 à Bénévent par **Charles d'Anjou**, frère du roi de France Louis IX, à qui le pape a offert la couronne de Sicile. En Allemagne, le « Grand Interrègne » s'est ouvert : plusieurs rois étrangers, dont Richard de Cornouailles et Alphonse X de Castille, sont élus par des factions rivales, mais aucun ne gouverne vraiment. Les princes en profitent pour agrandir leurs territoires.\n\nLe dernier héritier est **Conradin**, né en 1252, duc de Souabe, qui n'a que quinze ans. Appelé par les gibelins d'Italie (le parti de l'empereur, opposé aux guelfes du pape), il passe les Alpes en 1267 avec quelques milliers de cavaliers allemands. Il traverse l'Italie, entre à Rome, puis se heurte à Charles d'Anjou à **Tagliacozzo**, dans les Abruzzes, le 23 août 1268. Après un début favorable, l'armée de Conradin est tournée par une réserve que Charles avait gardée cachée. Le jeune prince est capturé, jugé et décapité sur la place du Marché à Naples le 29 octobre.\n\nAvec lui s'éteint la lignée des Hohenstaufen. En Italie, les guelfes triomphent ; en Allemagne, le trône est vacant. Il faudra encore cinq ans pour élire Rodolphe de Habsbourg.",
+      "consequences": [
+        "La Sicile et l'Italie du Sud passent à la maison d'Anjou, hors de l'orbite de l'Empire.",
+        "L'autorité impériale en Italie est réduite à une simple prétention ; les cités et les seigneurs deviennent indépendants de fait.",
+        "En Allemagne, le Grand Interrègne se prolonge : les princes accaparent les domaines royaux.",
+        "Le pape sort victorieux, mais la présence angevine en Italie prépare les « Vêpres siciliennes » de 1282."
+      ],
+      "territory": "conradin-1268",
+      "sources": [
+        {
+          "label": "Wikipédia — Conradin",
+          "url": "https://fr.wikipedia.org/wiki/Conradin"
+        },
+        {
+          "label": "Wikipédia — Bataille de Tagliacozzo",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Tagliacozzo"
+        },
+        {
+          "label": "Wikipédia — Grand Interrègne",
+          "url": "https://fr.wikipedia.org/wiki/Grand_Interr%C3%A8gne"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Conradin (gibelins, chevaliers allemands et espagnols)",
+          "Charles d'Anjou (guelfes, chevaliers provençaux et français)"
+        ],
+        "commanders": [
+          "Conradin de Souabe",
+          "Henri de Castille, sénateur de Rome",
+          "Charles Ier d'Anjou",
+          "Érard de Valéry"
+        ],
+        "outcome": "Victoire de Charles d'Anjou",
+        "forces": "Estimations très variables : de l'ordre de 5 000 à 6 000 hommes pour Conradin, un peu moins pour Charles",
+        "losses": "Lourdes pertes parmi les partisans de Conradin ; Conradin est capturé puis exécuté"
+      },
+      "territoryNote": "Core : Allemagne, Autriche, Slovénie, Suisse, Franche-Comté et Savoie, Pays-Bas, Belgique, Luxembourg, Alsace-Lorraine (l'Empire existe encore, mais sans empereur). Vassal : Bohême (Ottokar II, qui tient aussi l'Autriche), Poméranie, royaume d'Italie du Nord (autorité impériale purement nominale ; Charles d'Anjou est vicaire du pape en Toscane). Hors Empire : royaume de Sicile (désormais angevin), États du pape, Provence angevine, France, Pologne, Hongrie.",
+      "armies": [
+        {
+          "side": "Conradin",
+          "faction": "imperiaux",
+          "strength": 2,
+          "path": [
+            [
+              10.99,
+              45.44
+            ],
+            [
+              9.16,
+              45.19
+            ],
+            [
+              10.4,
+              43.7
+            ],
+            [
+              12.5,
+              41.9
+            ],
+            [
+              13.25,
+              42.07
+            ]
+          ]
+        },
+        {
+          "side": "Charles d'Anjou",
+          "faction": "chevaliers-europeens",
+          "strength": 2,
+          "winner": true,
+          "path": [
+            [
+              15.33,
+              41.5
+            ],
+            [
+              13.93,
+              42.05
+            ],
+            [
+              13.25,
+              42.07
+            ]
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "name": "Conradin",
+          "role": "Dernier Hohenstaufen, exécuté à 16 ans",
+          "faction": "imperiaux",
+          "archetype": "roi",
+          "position": [
+            14.25,
+            40.85
+          ]
+        },
+        {
+          "name": "Charles d'Anjou",
+          "role": "Roi de Sicile, champion du pape",
+          "faction": "chevaliers-europeens",
+          "archetype": "roi",
+          "position": [
+            14.2,
+            40.9
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rodolphe-1273",
+      "year": 1273,
+      "title": "Rodolphe de Habsbourg, roi des Romains",
+      "type": "politique",
+      "location": [
+        6.0839,
+        50.7753
+      ],
+      "zoom": 4.2,
+      "summary": "Après vingt ans de trône vacant, les princes élisent en 1273 un modeste comte de Souabe et d'Alsace, Rodolphe de Habsbourg, qui donnera à sa famille l'Autriche.",
+      "details": "Après la mort de Conradin, le « Grand Interrègne » laisse l'Allemagne sans vrai roi. Les princes y trouvent leur compte, mais le pape **Grégoire X** veut un souverain capable de mener la croisade et menace de désigner lui-même un candidat. Les grands électeurs choisissent alors un homme sans grande puissance : le comte **Rodolphe de Habsbourg**, né en 1218, dont les terres s'étendent de l'Alsace à l'Argovie. Il est élu à Francfort le 1er octobre 1273, puis couronné à Aix-la-Chapelle, dans la chapelle de Charlemagne, le 24 octobre.\n\nÀ cette date, l'Empire est un ensemble de principautés, avec des évêques, des ducs et des villes qui gouvernent chez eux. Le pouvoir du roi dépend surtout de son domaine personnel. Rodolphe le sait : il refuse de partir pour Rome, renonce à l'Italie et se concentre sur l'Allemagne. Il s'oppose au roi de Bohême **Ottokar II**, qui a refusé de reconnaître son élection et qui tient l'Autriche, la Styrie, la Carinthie et la Carniole. Le 26 août 1278, Rodolphe écrase Ottokar sur le **Marchfeld**, près de Vienne. En 1282, il donne l'Autriche et la Styrie à ses fils, fondant ainsi la **maison d'Autriche**, qui règnera sur ce pays jusqu'en 1918.\n\nLe pape ne couronnera jamais Rodolphe empereur : il sera « roi des Romains », titre de l'héritier de l'Empire. C'est un tournant, car l'Empire devient de plus en plus allemand.",
+      "consequences": [
+        "Le Grand Interrègne s'achève, mais l'empereur ne règne plus vraiment sur l'Italie, désormais aux mains des cités et des seigneurs.",
+        "Après la victoire de 1278 sur Ottokar II, l'Autriche et la Styrie passent aux Habsbourg (1282) pour plus de six siècles.",
+        "Les princes-électeurs, qui choisissent le roi, voient leur rôle reconnu et leur nombre se fixer autour de sept.",
+        "Le pouvoir royal repose désormais sur la puissance patrimoniale de chaque roi, d'où les changements fréquents de dynastie."
+      ],
+      "territory": "rodolphe-1273",
+      "sources": [
+        {
+          "label": "Wikipédia — Rodolphe Ier du Saint-Empire",
+          "url": "https://fr.wikipedia.org/wiki/Rodolphe_Ier_du_Saint-Empire"
+        },
+        {
+          "label": "Wikipédia — Grand Interrègne",
+          "url": "https://fr.wikipedia.org/wiki/Grand_Interr%C3%A8gne"
+        },
+        {
+          "label": "Wikipédia — Bataille de Marchfeld (1278)",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Marchfeld"
+        }
+      ],
+      "territoryNote": "Core : Allemagne actuelle (avec la Poméranie et la Marche de Brandebourg), Autriche et Slovénie (tenues par Ottokar II jusqu'en 1278), Bohême et Moravie (royaume de Bohême, électeur), Suisse, Franche-Comté et Savoie, Pays-Bas, Belgique, Luxembourg, Alsace-Lorraine. Vassal : l'Italie du Nord et de Toscane, où l'autorité impériale est nominale. Hors Empire : les duchés piasts de Silésie (alors polonais), la Prusse de l'Ordre teutonique, la Hongrie, le royaume de Naples angevin, les États du pape et le royaume d'Arles passé dans l'orbite angevine et française.",
+      "figures": [
+        {
+          "name": "Rodolphe de Habsbourg",
+          "role": "Roi des Romains, fondateur de la puissance des Habsbourg",
+          "faction": "imperiaux",
+          "archetype": "roi",
+          "position": [
+            6.08,
+            50.78
+          ]
+        },
+        {
+          "name": "Grégoire X",
+          "role": "Pape, qui presse l'élection d'un roi",
+          "faction": "croises-latins",
+          "archetype": "pape",
+          "position": [
+            4.83,
+            45.76
+          ]
+        }
+      ]
+    },
+    {
+      "id": "morgarten-1315",
+      "year": 1315,
+      "title": "Morgarten : les paysans suisses tiennent tête aux Habsbourg",
+      "type": "bataille",
+      "location": [
+        8.6625,
+        47.0928
+      ],
+      "zoom": 5.2,
+      "summary": "Le 15 novembre 1315, des montagnards de Schwyz, Uri et Unterwald prennent en embuscade la colonne du duc Léopold d'Autriche : une victoire fondatrice pour la Confédération.",
+      "details": "À la fin du XIIIe siècle, trois vallées alpines, **Uri, Schwyz et Unterwald**, se sont unies dans une alliance dont le pacte de 1291 reste la légende fondatrice. Leur but : défendre leurs libertés, garanties par l'empereur, contre les ambitions des Habsbourg qui accaparent la région du Gothard, route majeure entre l'Allemagne et l'Italie.\n\nEn 1314, l'Empire a deux rois : **Louis de Bavière** et **Frédéric le Bel**, un Habsbourg. Les Waldstätten (« pays des forêts ») prennent parti pour Louis. Le frère de Frédéric, le duc **Léopold Ier d'Autriche**, veut les châtier. Il rassemble chevaliers et fantassins à Zoug, et en novembre 1315 s'engage sur la rive du lac d'Ägeri, par un étroit chemin entre le lac et la montagne.\n\nLes Confédérés, bien renseignés, ont dressé une embuscade au lieu-dit **Morgarten**. Des troncs et des rochers roulés sur la colonne brisent sa marche ; puis les montagnards, armés de hallebardes, tombent sur les chevaliers coincés au bord du marais. La cavalerie lourde, privée de toute manœuvre, est massacrée. Le duc Léopold s'enfuit. Quelques semaines plus tard, le 9 décembre, à Brunnen, les trois cantons renouvellent leur alliance par écrit.\n\nLucerne (1332), Zurich (1351), Berne (1353) et d'autres cités rejoindront la Confédération, qui reste encore dans l'Empire, mais de plus en plus à part.",
+      "consequences": [
+        "Les Waldstätten gardent leur immédiateté impériale (ils ne dépendent que de l'empereur) et leur liberté face aux Habsbourg.",
+        "Le pacte de Brunnen (1315) devient l'acte de naissance durable de la Confédération suisse.",
+        "L'infanterie armée de hallebardes montre qu'elle peut vaincre la chevalerie : un tournant militaire.",
+        "Lucerne, Zurich, Berne et d'autres villes rejoignent peu à peu l'alliance, ce qui prépare les victoires de Sempach (1386) et de Näfels (1388)."
+      ],
+      "territory": "morgarten-1315",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Morgarten",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Morgarten"
+        },
+        {
+          "label": "Wikipédia — Histoire de la Suisse",
+          "url": "https://fr.wikipedia.org/wiki/Histoire_de_la_Suisse"
+        },
+        {
+          "label": "Jean de Winterthour, Chronica"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Waldstätten (Uri, Schwyz, Unterwald)",
+          "Duché d'Autriche (Léopold Ier de Habsbourg)"
+        ],
+        "commanders": [
+          "Werner Stauffacher (selon la tradition)",
+          "Léopold Ier de Habsbourg"
+        ],
+        "outcome": "Victoire des Confédérés",
+        "forces": "Chiffres très incertains : environ 1 500 Confédérés contre plusieurs milliers de chevaliers et de fantassins autrichiens",
+        "losses": "Lourdes pertes autrichiennes ; les chroniques parlent de plusieurs centaines de chevaliers tués"
+      },
+      "territoryNote": "Core : Allemagne actuelle (avec la Poméranie et la Marche de Brandebourg), Autriche, Slovénie, Bohême et Moravie (royaume de Jean de Luxembourg depuis 1310), Suisse (dont les Waldstätten, immédiats d'Empire), Franche-Comté et Savoie, Pays-Bas, Belgique, Luxembourg, Alsace-Lorraine. Vassal : l'Italie du Nord et de Toscane, simple titre royal. Hors Empire : la Silésie des Piasts, l'Ordre teutonique en Prusse, la Pologne, la Hongrie et le royaume de France qui absorbe peu à peu Lyon et le Dauphiné.",
+      "armies": [
+        {
+          "side": "Autriche (Léopold Ier)",
+          "faction": "imperiaux",
+          "strength": 3,
+          "path": [
+            [
+              8.54,
+              47.37
+            ],
+            [
+              8.52,
+              47.17
+            ],
+            [
+              8.63,
+              47.12
+            ],
+            [
+              8.66,
+              47.09
+            ]
+          ]
+        },
+        {
+          "side": "Confédérés suisses",
+          "faction": "suisses",
+          "strength": 2,
+          "winner": true,
+          "path": [
+            [
+              8.65,
+              47.02
+            ],
+            [
+              8.66,
+              47.09
+            ]
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "name": "Léopold Ier de Habsbourg",
+          "role": "Duc d'Autriche, battu à Morgarten",
+          "faction": "imperiaux",
+          "archetype": "prince-electeur",
+          "position": [
+            8.54,
+            47.17
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bulle-or-1356",
+      "year": 1356,
+      "title": "La Bulle d'or de Charles IV",
+      "type": "réforme",
+      "location": [
+        6.18,
+        49.12
+      ],
+      "zoom": 4.4,
+      "summary": "En 1356, l'empereur Charles IV fixe par écrit comment on élit le roi des Romains : sept princes-électeurs décident, sans demander l'accord du pape.",
+      "details": "Au XIVe siècle, la couronne passe d'une famille à l'autre : Luxembourg, Wittelsbach, Habsbourg. Les élections sont souvent contestées et divisent l'Empire entre deux rois, deux camps. **Charles IV**, roi de Bohême de la maison de **Luxembourg**, devenu empereur en 1355, veut mettre fin à ces querelles. Aux diètes de Nuremberg (janvier) et de Metz (décembre) 1356, il fait publier un grand texte juridique, scellé d'une boule d'or (*bulla aurea*, d'où son nom).\n\nLa **Bulle d'or** désigne sept **princes-électeurs** : les archevêques de Mayence, de Trèves et de Cologne, le roi de Bohême, le comte palatin du Rhin, le duc de Saxe et le margrave de Brandebourg. Ils se réunissent à Francfort, élisent le roi des Romains à la majorité, puis celui-ci est couronné à Aix-la-Chapelle. Aucune confirmation papale n'est nécessaire. Les territoires des électeurs sont indivisibles, transmis à l'aîné, et leurs sujets ne peuvent faire appel à un autre tribunal.\n\nLes Habsbourg, exclus de la liste, s'en vengeront par un faux célèbre, le *Privilegium maius* (1358-1359). Le texte de 1356 restera la « constitution » de l'Empire jusqu'en 1806. Il consacre aussi la puissance des princes face à l'empereur : la couronne est élective, et les électeurs sont presque des rois dans leurs États. Charles IV, lui, fait de **Prague** une grande capitale, avec sa cathédrale, son pont et la première université d'Europe centrale (1348).",
+      "consequences": [
+        "Les sept princes-électeurs deviennent le premier ordre de l'Empire, avec une quasi-souveraineté sur leurs États.",
+        "Le roi des Romains est élu sans intervention du pape : l'Empire s'affirme comme un pouvoir autonome.",
+        "L'indivisibilité des électorats stabilise les grandes principautés, source de la future Prusse (Brandebourg) et de la Saxe.",
+        "Prague devient la capitale de l'Empire sous Charles IV, avec la couronne de Bohême, la Silésie et la Lusace."
+      ],
+      "territory": "bulle-or-1356",
+      "sources": [
+        {
+          "label": "Wikipédia — Bulle d'or (1356)",
+          "url": "https://fr.wikipedia.org/wiki/Bulle_d%27or_(1356)"
+        },
+        {
+          "label": "Wikipédia — Charles IV du Saint-Empire",
+          "url": "https://fr.wikipedia.org/wiki/Charles_IV_du_Saint-Empire"
+        },
+        {
+          "label": "Texte de la Bulle d'or (Aurea bulla), 1356"
+        }
+      ],
+      "territoryNote": "Core : Allemagne actuelle (avec Poméranie et Marche de Brandebourg), Autriche et Slovénie, Bohême et Moravie, Silésie (rattachée à la couronne de Bohême depuis 1335, avec Breslau), Suisse, Franche-Comté et Savoie, Pays-Bas, Belgique, Luxembourg, Alsace-Lorraine. Vassal : l'Italie du Nord et de Toscane, où l'empereur fait couronner son titre à Rome en 1355 sans y régner. Hors Empire : Pologne, Hongrie, Ordre teutonique, France (qui tient Lyon et le Dauphiné), Venise, royaume de Naples.",
+      "figures": [
+        {
+          "name": "Charles IV",
+          "role": "Empereur, roi de Bohême, de la maison de Luxembourg",
+          "faction": "imperiaux",
+          "archetype": "empereur-germanique",
+          "position": [
+            6.18,
+            49.12
+          ]
+        },
+        {
+          "name": "Gerlach de Nassau",
+          "role": "Archevêque de Mayence, prince-électeur et archichancelier",
+          "faction": "imperiaux",
+          "archetype": "prince-electeur",
+          "position": [
+            6.1,
+            49.1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hussites-1419",
+      "year": 1419,
+      "title": "Les guerres hussites",
+      "type": "bataille",
+      "location": [
+        14.4569,
+        50.0923
+      ],
+      "zoom": 5.0,
+      "summary": "La mort de Jan Hus sur le bûcher (1415) soulève la Bohême : de 1419 à 1434, les hussites repoussent cinq croisades lancées par l'empereur Sigismond.",
+      "details": "**Jan Hus**, prédicateur et professeur de l'université de Prague, critique la richesse de l'Église et réclame la communion sous les deux espèces (pain et vin) pour tous les fidèles. Convoqué au concile de Constance avec un sauf-conduit de l'empereur **Sigismond**, il est arrêté, condamné pour hérésie et brûlé vif le 6 juillet 1415. La Bohême, outrée, forme un mouvement national et religieux : les **hussites**.\n\nLe 30 juillet 1419, des Pragois emmenés par le prêtre **Jean Želivský** jettent par les fenêtres de l'hôtel de ville les conseillers du roi : c'est la première « défenestration de Prague ». Le roi **Venceslas IV** meurt quelques jours plus tard ; son frère Sigismond, héritier de la couronne de Bohême, est détesté. Entre 1420 et 1431, cinq croisades contre les hussites échouent. Le chef de guerre **Jan Žižka**, borgne puis aveugle, invente avec ses paysans de Tábor la tactique du *Wagenburg* : des chariots de guerre enchaînés en cercle, d'où partent canons et arquebuses. Dès le 14 juillet 1420, sur la colline de Vítkov, il bat l'armée de Sigismond devant Prague.\n\nLes hussites se divisent ensuite entre modérés (utraquistes) et radicaux (taborites). Ces derniers sont écrasés à Lipany en 1434. Les *Compactata* (1433-1436) acceptent la communion sous les deux espèces en Bohême : c'est une première tolérance officielle d'une Église dissidente.",
+      "consequences": [
+        "La Bohême reste dans l'Empire mais devient pendant deux siècles un royaume à moitié protestant, avec des États puissants.",
+        "Sigismond n'est reconnu roi de Bohême qu'en 1436, au prix de concessions religieuses et politiques.",
+        "L'infanterie à chariots et armes à feu des hussites inspire les armées européennes.",
+        "L'héritage de Hus nourrira la Réforme du XVIe siècle : Luther dira en 1520 être « hussite sans le savoir »."
+      ],
+      "territory": "hussites-1419",
+      "sources": [
+        {
+          "label": "Wikipédia — Guerres hussites",
+          "url": "https://fr.wikipedia.org/wiki/Guerres_hussites"
+        },
+        {
+          "label": "Wikipédia — Jan Hus",
+          "url": "https://fr.wikipedia.org/wiki/Jan_Hus"
+        },
+        {
+          "label": "Wikipédia — Jan Žižka",
+          "url": "https://fr.wikipedia.org/wiki/Jan_%C5%BDi%C5%BEka"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Hussites de Prague et de Tábor",
+          "Croisés de l'empereur Sigismond (chevaliers allemands, hongrois et silésiens)"
+        ],
+        "commanders": [
+          "Jan Žižka",
+          "Sigismond de Luxembourg"
+        ],
+        "outcome": "Victoire des hussites à Vítkov (14 juillet 1420)",
+        "forces": "Environ 30 000 croisés contre quelques milliers de défenseurs à Vítkov (chiffres très incertains)",
+        "losses": "Mal connues ; la défaite de Sigismond est nette, et la croisade se disperse"
+      },
+      "territoryNote": "Core : Allemagne actuelle (avec Poméranie et Marche de Brandebourg), Autriche et Slovénie, Silésie (couronne de Bohême), Suisse, Franche-Comté et Savoie, Pays-Bas, Belgique, Luxembourg, Alsace-Lorraine. Vassal : la Bohême et la Moravie, où les hussites rejettent l'autorité de Sigismond, roi de jure, et l'Italie du Nord et de Toscane, nominale. Hors Empire : Pologne, Hongrie (que Sigismond tient aussi comme roi), Ordre teutonique, France, Venise.",
+      "armies": [
+        {
+          "side": "Hussites",
+          "faction": "hussites",
+          "strength": 2,
+          "winner": true,
+          "path": [
+            [
+              14.66,
+              49.41
+            ],
+            [
+              14.52,
+              49.78
+            ],
+            [
+              14.46,
+              50.09
+            ]
+          ]
+        },
+        {
+          "side": "Croisés de Sigismond",
+          "faction": "imperiaux",
+          "strength": 3,
+          "path": [
+            [
+              17.03,
+              51.11
+            ],
+            [
+              16.2,
+              50.6
+            ],
+            [
+              15.27,
+              49.95
+            ],
+            [
+              14.46,
+              50.09
+            ]
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "name": "Jan Žižka",
+          "role": "Chef de guerre hussite, inventeur du Wagenburg",
+          "faction": "hussites",
+          "archetype": "capitaine",
+          "position": [
+            14.5,
+            50.08
+          ]
+        },
+        {
+          "name": "Sigismond de Luxembourg",
+          "role": "Roi des Romains, roi de Hongrie et héritier de Bohême",
+          "faction": "imperiaux",
+          "archetype": "empereur-germanique",
+          "position": [
+            14.7,
+            50.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "albert-ii-1438",
+      "year": 1438,
+      "title": "Albert II et le retour durable des Habsbourg",
+      "type": "politique",
+      "location": [
+        8.6821,
+        50.1109
+      ],
+      "zoom": 4.0,
+      "summary": "Le 18 mars 1438, les électeurs élisent Albert II de Habsbourg, déjà roi de Hongrie et de Bohême : jusqu'en 1806, presque tous les empereurs viendront de sa famille.",
+      "details": "En 1437, l'empereur **Sigismond de Luxembourg** meurt sans fils. Son gendre **Albert V** de Habsbourg, duc d'Autriche, lui succède comme roi de Hongrie (1437) puis de Bohême (1438). Le 18 mars 1438, les sept électeurs, réunis à Francfort, l'élisent roi des Romains sous le nom d'**Albert II**. Pour la première fois, un seul homme réunit sur sa tête la couronne d'Allemagne, celle de Bohême et celle de Hongrie.\n\nAlbert n'aura pas le temps de régner : il meurt dès octobre 1439, en menant campagne contre les Ottomans, de plus en plus menaçants dans les Balkans. Il n'a jamais été couronné empereur. Mais son cousin **Frédéric III**, élu en 1440, tiendra la couronne pendant cinquante-trois ans, jusqu'en 1493, et la transmettra à son fils Maximilien. À partir de cette date, à l'exception d'un bref intermède (le Bavarois Charles VII, de 1742 à 1745), la dignité impériale restera dans la famille Habsbourg, devenue \"maison d'Autriche\", jusqu'à la fin de l'Empire en 1806.\n\nLe pouvoir de l'empereur reste limité : il règne sur ses terres héréditaires (Autriche, Styrie, Tyrol…), mais dépend des princes pour lever des armées et des impôts dans le reste de l'Empire. La devise de Frédéric III, **AEIOU**, mystérieuse, sera interprétée plus tard par « Austriae est imperare orbi universo » (« il appartient à l'Autriche de gouverner l'univers »).",
+      "consequences": [
+        "Les Habsbourg s'installent à la tête de l'Empire pour presque quatre siècles, sans que la couronne soit pour autant héréditaire.",
+        "La Bohême et la Hongrie entrent brièvement dans leur orbite, avant que Jean Hunyadi et Georges de Podiebrad ne reprennent leur indépendance.",
+        "Le règne de Frédéric III, trop passif face aux Ottomans et à la Hongrie, prépare l'effondrement militaire de la famille avant le redressement de Maximilien.",
+        "L'Empire devient de fait une affaire autrichienne et allemande, et plus italienne ni bourguignonne."
+      ],
+      "territory": "albert-ii-1438",
+      "sources": [
+        {
+          "label": "Wikipédia — Albert II du Saint-Empire",
+          "url": "https://fr.wikipedia.org/wiki/Albert_II_du_Saint-Empire"
+        },
+        {
+          "label": "Wikipédia — Maison de Habsbourg",
+          "url": "https://fr.wikipedia.org/wiki/Maison_de_Habsbourg"
+        },
+        {
+          "label": "Wikipédia — Frédéric III du Saint-Empire",
+          "url": "https://fr.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_III_du_Saint-Empire"
+        }
+      ],
+      "territoryNote": "Core : Allemagne actuelle (avec Poméranie et Marche de Brandebourg), Autriche, Slovénie, Bohême et Moravie, Silésie, Suisse, Franche-Comté et Savoie, Pays-Bas, Belgique, Luxembourg, Alsace-Lorraine. Vassal : le royaume de Hongrie (avec la Slovaquie et la Croatie), tenu par Albert II en union personnelle, et l'Italie du Nord et de Toscane, nominale. Hors Empire : Pologne, Ordre teutonique, France, Venise, royaume de Naples.",
+      "figures": [
+        {
+          "name": "Albert II",
+          "role": "Roi des Romains, de Hongrie et de Bohême",
+          "faction": "imperiaux",
+          "archetype": "roi",
+          "position": [
+            8.68,
+            50.11
+          ]
+        },
+        {
+          "name": "Frédéric III",
+          "role": "Cousin et successeur, empereur de 1452 à 1493",
+          "faction": "imperiaux",
+          "archetype": "empereur-germanique",
+          "quote": "AEIOU (devise de Frédéric III, d'après ses carnets)",
+          "position": [
+            8.7,
+            50.1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mariage-bourgogne-1477",
+      "year": 1477,
+      "title": "Le mariage bourguignon de Maximilien",
+      "type": "politique",
+      "location": [
+        3.7174,
+        51.0543
+      ],
+      "zoom": 4.6,
+      "summary": "En épousant Marie de Bourgogne à Gand en août 1477, l'archiduc Maximilien de Habsbourg ajoute les Pays-Bas à l'héritage de sa famille.",
+      "details": "Le 5 janvier 1477, **Charles le Téméraire**, duc de Bourgogne, est tué sous les murs de Nancy par des Lorrains et des mercenaires suisses. Il laisse une fille de dix-neuf ans, **Marie**, héritière du plus riche ensemble de terres d'Europe occidentale : la Flandre, le Brabant, le Hainaut, la Hollande, le Luxembourg et la Franche-Comté, auxquels s'ajoutent le duché de Bourgogne et l'Artois. Le roi de France **Louis XI** saisit aussitôt le duché de Bourgogne et la Picardie, en les déclarant fiefs revenus à la Couronne.\n\nMarie, assiégée de prétendants et de révoltes (elle doit accorder le « Grand Privilège » aux villes flamandes), choisit de s'unir à **Maximilien**, fils de l'empereur **Frédéric III**. Le mariage est célébré à Gand le 19 août 1477. Maximilien, 18 ans, arrive avec peu d'argent, mais avec un nom et une armée possible. Marie meurt en 1482 d'une chute de cheval, et le jeune veuf doit défendre les Pays-Bas contre la France et contre ses propres sujets révoltés, qui l'emprisonnent même brièvement à Bruges en 1488.\n\nLa paix de Senlis (1493) confirme la possession de l'Artois et de la Franche-Comté à son fils **Philippe le Beau**. Celui-ci épousera Jeanne de Castille en 1496 : leur fils sera **Charles Quint**. Une formule célèbre résume la politique des Habsbourg : « Que d'autres fassent la guerre ; toi, heureuse Autriche, marie-toi ! »",
+      "consequences": [
+        "Les Pays-Bas et la Franche-Comté entrent dans l'héritage des Habsbourg, qui y tiennent leur plus riche province.",
+        "La France conserve le duché de Bourgogne et la Picardie : la rivalité France-Habsbourg commence, et elle durera jusqu'au XVIIIe siècle.",
+        "Les Pays-Bas, bientôt appelés « cercle de Bourgogne », resteront dans l'Empire sous un souverain étranger.",
+        "Le mariage de Philippe le Beau avec Jeanne de Castille (1496) amènera l'Espagne et ses colonies dans le même héritage."
+      ],
+      "territory": "mariage-bourgogne-1477",
+      "sources": [
+        {
+          "label": "Wikipédia — Marie de Bourgogne",
+          "url": "https://fr.wikipedia.org/wiki/Marie_de_Bourgogne"
+        },
+        {
+          "label": "Wikipédia — Maximilien Ier du Saint-Empire",
+          "url": "https://fr.wikipedia.org/wiki/Maximilien_Ier_du_Saint-Empire"
+        },
+        {
+          "label": "Wikipédia — Bataille de Nancy (1477)",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Nancy_(1477)"
+        }
+      ],
+      "territoryNote": "Core : Allemagne actuelle (avec Poméranie et Marche de Brandebourg), Autriche et Slovénie, Bohême et Moravie, Silésie, Suisse, Franche-Comté et Savoie, et désormais Pays-Bas, Belgique et Luxembourg tenus par les Habsbourg ; Alsace-Lorraine. Vassal : l'Italie du Nord et de Toscane (nominale). Hors Empire : le duché de Bourgogne et la Picardie, saisis par Louis XI (France), la Hongrie de Mathias Corvin (qui occupe Vienne en 1485), la Pologne, Venise, les Ottomans.",
+      "figures": [
+        {
+          "name": "Maximilien de Habsbourg",
+          "role": "Archiduc d'Autriche, époux de Marie de Bourgogne",
+          "faction": "imperiaux",
+          "archetype": "prince-electeur",
+          "quote": "Bella gerant alii, tu felix Austria nube (devise populaire, souvent attribuée à Mathias Corvin)",
+          "position": [
+            3.72,
+            51.05
+          ]
+        },
+        {
+          "name": "Louis XI",
+          "role": "Roi de France, qui saisit le duché de Bourgogne",
+          "faction": "chevaliers-europeens",
+          "archetype": "roi",
+          "position": [
+            3.0,
+            50.4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diete-worms-1495",
+      "year": 1495,
+      "title": "La diète de Worms et la réforme impériale",
+      "type": "réforme",
+      "location": [
+        8.3611,
+        49.6327
+      ],
+      "zoom": 4.4,
+      "summary": "En 1495, Maximilien Ier accepte de créer une justice commune et une paix perpétuelle : l'Empire se dote enfin de véritables institutions.",
+      "details": "Depuis 1493, **Maximilien Ier**, fils de Frédéric III, est seul maître des domaines habsbourgeois. Lorsque le roi de France **Charles VIII** envahit l'Italie en 1494, Maximilien a besoin d'argent et de soldats pour défendre ses droits. Mais l'Empire est une mosaïque de principautés où l'on se fait encore la guerre pour des querelles privées (*Fehde*), où la justice est lente et l'impôt impossible à lever.\n\nLa diète s'ouvre à **Worms** au printemps 1495. L'archevêque-électeur de Mayence, **Berthold de Henneberg**, conduit le parti des réformateurs : en échange de l'argent demandé, les princes exigent des institutions où ils auront leur mot à dire. Le 7 août, trois mesures sont adoptées : une **paix perpétuelle** (*Ewiger Landfriede*) qui interdit les guerres privées ; un **tribunal d'Empire** (*Reichskammergericht*), indépendant de l'empereur, qui juge les conflits entre princes ; et un impôt général, le *Gemeiner Pfennig*, qui sera très mal payé.\n\nEn 1500, l'Empire est divisé en six « cercles » (puis dix en 1512) pour organiser la défense et la justice ; on commence à parler officiellement de « Saint-Empire romain de la nation germanique ». Le tribunal siégera à Spire, puis à Wetzlar jusqu'en 1806. Les Suisses, eux, refusent d'appliquer ces lois : après la guerre de Souabe (1499), ils sont de fait indépendants de l'Empire.",
+      "consequences": [
+        "L'Empire acquiert un cadre commun : justice d'Empire, paix publique, cercles régionaux et diète permanente à terme.",
+        "Les États (princes et villes) partagent le pouvoir avec l'empereur : l'Empire devient une sorte de fédération.",
+        "Les Suisses, malgré leur appartenance théorique à l'Empire, s'en séparent de fait après 1499.",
+        "L'impôt commun ne rentre pas, et Maximilien doit continuer à financer ses guerres par des prêts des banquiers Fugger."
+      ],
+      "territory": "diete-worms-1495",
+      "sources": [
+        {
+          "label": "Wikipédia — Diète de Worms",
+          "url": "https://fr.wikipedia.org/wiki/Di%C3%A8te_de_Worms"
+        },
+        {
+          "label": "Wikipédia — Chambre impériale (Reichskammergericht)",
+          "url": "https://fr.wikipedia.org/wiki/Chambre_imp%C3%A9riale"
+        },
+        {
+          "label": "Wikipédia — Berthold de Henneberg",
+          "url": "https://fr.wikipedia.org/wiki/Berthold_de_Henneberg"
+        }
+      ],
+      "territoryNote": "Core : Allemagne actuelle (avec Poméranie et Marche de Brandebourg), Autriche et Slovénie, Bohême et Moravie, Silésie, Suisse (théoriquement dans l'Empire, indépendante de fait après 1499), Franche-Comté et Savoie, Pays-Bas, Belgique, Luxembourg, Alsace-Lorraine. Vassal : l'Italie du Nord et de Toscane (autorité impériale très faible, face à l'invasion française). Hors Empire : France, Hongrie, Pologne, Venise, Ottomans.",
+      "figures": [
+        {
+          "name": "Maximilien Ier",
+          "role": "Roi des Romains, « dernier chevalier »",
+          "faction": "imperiaux",
+          "archetype": "empereur-germanique",
+          "position": [
+            8.36,
+            49.63
+          ]
+        },
+        {
+          "name": "Berthold de Henneberg",
+          "role": "Archevêque de Mayence, chef du parti réformateur",
+          "faction": "imperiaux",
+          "archetype": "prince-electeur",
+          "position": [
+            8.3,
+            49.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "charles-quint-1519",
+      "year": 1519,
+      "title": "Charles Quint, élu empereur",
+      "type": "politique",
+      "location": [
+        8.6821,
+        50.1109
+      ],
+      "zoom": 3.8,
+      "summary": "Le 28 juin 1519, les électeurs réunis à Francfort préfèrent Charles de Habsbourg, déjà roi d'Espagne, à François Ier : il règne sur un empire « où le soleil ne se couche jamais ».",
+      "details": "À la mort de Maximilien Ier en janvier 1519, son petit-fils **Charles**, âgé de dix-neuf ans, hérite des Pays-Bas, de la Franche-Comté, de l'Autriche, mais aussi de l'Espagne (Castille et Aragon), de Naples, de la Sicile, de la Sardaigne, et de territoires encore naissants en Amérique. Il est né à Gand, parle français et s'est toujours senti bourguignon. Reste à lui assurer la couronne impériale.\n\nLe roi de France **François Ier** se présente aussi, soutenu par l'argent du pape ; Henri VIII d'Angleterre envisage de le faire. Les sept électeurs sont courtisés et achetés à prix d'or : le banquier d'Augsbourg **Jacob Fugger** avance à Charles plus de la moitié de la somme, soit plus de 500 000 florins. Le 28 juin, Charles est élu à l'unanimité, après avoir signé une **capitulation électorale** qui lui interdit d'amener des troupes étrangères et l'oblige à respecter les droits des princes. Il est couronné à Aix-la-Chapelle en octobre 1520, puis à Bologne par le pape en 1530 : il sera le dernier empereur ainsi couronné.\n\nCharles Quint gouverne un ensemble sans équivalent depuis Charlemagne, mais ses États sont dispersés, sans langue ni lois communes. Il doit faire face à la rivalité française, aux Ottomans, et à la Réforme. En 1521-1522, il cède les terres autrichiennes à son frère **Ferdinand**. On lui prête la phrase fameuse : « Dans mes États, le soleil ne se couche jamais. »",
+      "consequences": [
+        "La même famille tient l'Empire, l'Espagne, les Pays-Bas, Naples et Sicile : l'Europe se partage entre Habsbourg et Valois.",
+        "L'élection est financée par les banquiers d'Augsbourg : l'argent devient le nerf de la politique impériale.",
+        "La capitulation électorale devient la loi fondamentale qui limite chaque nouvel empereur.",
+        "La France, encerclée, entre dans une longue guerre contre les Habsbourg, qui la mènera à s'allier avec les protestants et les Ottomans."
+      ],
+      "territory": "charles-quint-1519",
+      "sources": [
+        {
+          "label": "Wikipédia — Charles Quint",
+          "url": "https://fr.wikipedia.org/wiki/Charles_Quint"
+        },
+        {
+          "label": "Wikipédia — Jakob Fugger",
+          "url": "https://fr.wikipedia.org/wiki/Jakob_Fugger"
+        },
+        {
+          "label": "Karl Brandi, Kaiser Karl V. (1937)"
+        }
+      ],
+      "territoryNote": "Core : Allemagne actuelle (avec Poméranie et Marche de Brandebourg), Autriche et Slovénie, Bohême et Moravie, Silésie, Suisse, Franche-Comté et Savoie, Pays-Bas, Belgique, Luxembourg, Alsace-Lorraine (avec Metz, Toul et Verdun). Vassal : l'Espagne, Naples, la Sicile et la Sardaigne, qui sont des royaumes distincts réunis dans la personne de Charles (union personnelle, hors Empire) ; l'Italie impériale du Nord, où le Milanais est alors aux mains des Français. Hors Empire : France, Hongrie, Pologne, Venise, Ottomans, ainsi que les colonies américaines qui sortent des limites de la carte.",
+      "figures": [
+        {
+          "name": "Charles Quint",
+          "role": "Roi d'Espagne, souverain des Pays-Bas, élu empereur",
+          "faction": "imperiaux",
+          "archetype": "empereur-germanique",
+          "quote": "Dans mes États, le soleil ne se couche jamais (formule traditionnelle, authenticité douteuse)",
+          "position": [
+            8.68,
+            50.11
+          ]
+        },
+        {
+          "name": "François Ier",
+          "role": "Roi de France, candidat malheureux à l'Empire",
+          "faction": "chevaliers-europeens",
+          "archetype": "roi",
+          "position": [
+            2.35,
+            48.85
+          ]
+        }
+      ]
+    },
+    {
+      "id": "luther-worms-1521",
+      "year": 1521,
+      "title": "Luther devant la diète de Worms",
+      "type": "réforme",
+      "location": [
+        8.3611,
+        49.6327
+      ],
+      "zoom": 4.6,
+      "summary": "En avril 1521, le moine Martin Luther refuse de se rétracter devant l'empereur Charles Quint : il est mis au ban de l'Empire, mais la Réforme est lancée.",
+      "details": "Le 31 octobre 1517, à Wittenberg, le moine augustin **Martin Luther** publie 95 thèses contre la vente des indulgences, ces pardons de péchés que l'on achète à l'Église. Grâce à l'imprimerie, ses idées se répandent en quelques semaines dans toute l'Allemagne. En 1520, le pape condamne Luther par la bulle *Exsurge Domine*, qu'il brûle en public.\n\nLe jeune empereur **Charles Quint** convoque Luther devant la diète, réunie à **Worms** au printemps 1521, avec un sauf-conduit. Luther arrive le 16 avril, acclamé par la foule. Le 18, devant l'empereur et les princes, il reconnaît ses livres mais refuse de les renier tant qu'on ne l'a pas convaincu « par l'Écriture ou par une raison évidente ». La tradition lui prête la formule : « Me voici, je ne puis faire autrement. » Charles Quint, héritier de l'Espagne catholique, répond le lendemain qu'il défendra la foi de ses ancêtres.\n\nL'**édit de Worms** (25 mai 1521) met Luther au ban de l'Empire : il est hors la loi, et ses livres sont interdits. Mais son protecteur, l'électeur **Frédéric le Sage** de Saxe, le fait enlever sur la route du retour et cacher au château de la **Wartburg**. Luther y traduit le Nouveau Testament en allemand (1522), acte fondateur de la langue allemande écrite. Les princes qui soutiennent Luther, par foi ou par intérêt, formeront bientôt un camp opposé à l'empereur.",
+      "consequences": [
+        "La Réforme devient un fait politique : l'Empire se divise entre princes luthériens et princes restés catholiques.",
+        "Le ban impérial contre Luther n'est pas appliqué en Saxe, ce qui montre les limites du pouvoir impérial.",
+        "La traduction de la Bible en allemand soude une langue commune et accélère l'alphabétisation.",
+        "Les guerres de religion allemandes (guerre des Paysans 1524-1525, ligue de Smalkalde 1531) en découlent."
+      ],
+      "territory": "luther-worms-1521",
+      "sources": [
+        {
+          "label": "Wikipédia — Martin Luther",
+          "url": "https://fr.wikipedia.org/wiki/Martin_Luther"
+        },
+        {
+          "label": "Wikipédia — Diète de Worms",
+          "url": "https://fr.wikipedia.org/wiki/Di%C3%A8te_de_Worms"
+        },
+        {
+          "label": "Wikipédia — Édit de Worms",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89dit_de_Worms"
+        }
+      ],
+      "territoryNote": "Core : Allemagne actuelle (avec Poméranie et Marche de Brandebourg), Autriche et Slovénie, Bohême et Silésie, Suisse, Franche-Comté et Savoie, Pays-Bas, Belgique, Luxembourg, Alsace-Lorraine (Metz, Toul, Verdun inclus). Vassal : l'Espagne, Naples, la Sicile et la Sardaigne (union personnelle de Charles Quint, hors Empire) et l'Italie impériale du Nord, où Charles reprend le Milanais à la fin de 1521. Hors Empire : France, Hongrie (Louis II Jagellon), Pologne, Venise, Ottomans.",
+      "figures": [
+        {
+          "name": "Martin Luther",
+          "role": "Moine augustin, initiateur de la Réforme",
+          "faction": "imperiaux",
+          "archetype": "reformateur",
+          "quote": "Me voici, je ne puis faire autrement (phrase traditionnelle, authenticité discutée)",
+          "position": [
+            8.36,
+            49.63
+          ]
+        },
+        {
+          "name": "Charles Quint",
+          "role": "Empereur, défenseur de la foi catholique",
+          "faction": "imperiaux",
+          "archetype": "empereur-germanique",
+          "position": [
+            8.38,
+            49.64
+          ]
+        },
+        {
+          "name": "Frédéric le Sage",
+          "role": "Électeur de Saxe, protecteur de Luther",
+          "faction": "imperiaux",
+          "archetype": "prince-electeur",
+          "position": [
+            8.33,
+            49.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mohacs-1526",
+      "year": 1526,
+      "title": "Mohács : la Hongrie s'effondre, la Bohême devient habsbourgeoise",
+      "type": "bataille",
+      "location": [
+        18.6833,
+        45.9944
+      ],
+      "zoom": 4.6,
+      "summary": "Le 29 août 1526, Soliman le Magnifique détruit l'armée hongroise à Mohács. Louis II meurt, et les Habsbourg héritent de la Bohême et d'une partie de la Hongrie.",
+      "details": "En 1521, les Ottomans ont pris Belgrade, la grande forteresse qui protège la Hongrie. Le jeune **Louis II Jagellon**, roi de Hongrie et de Bohême, n'a ni argent ni autorité sur ses nobles. En 1526, le sultan **Soliman le Magnifique** remonte le Danube avec une armée de plusieurs dizaines de milliers d'hommes, avec une artillerie puissante et ses janissaires (fantassins d'élite).\n\nLe 29 août, près du village de **Mohács**, les Hongrois, deux fois moins nombreux, attaquent sans attendre les renforts de Transylvanie. La cavalerie lourde enfonce d'abord la première ligne ottomane, mais elle se heurte aux canons et aux janissaires. En moins de deux heures, l'armée hongroise est détruite ; le roi, âgé de vingt ans, se noie dans un ruisseau en fuyant, tout comme de nombreux évêques et seigneurs.\n\nLa succession est un enjeu : Louis meurt sans enfant. Son beau-frère **Ferdinand de Habsbourg**, frère de Charles Quint, est élu roi de Bohême en octobre, puis roi de Hongrie à Presbourg en décembre, mais un autre prétendant, **Jean Zápolya**, est couronné roi de Hongrie à Székesfehérvár. Les Ottomans prennent Buda en 1541 : la Hongrie est coupée en trois, entre Habsbourg, Ottomans et principauté de Transylvanie. Soliman assiégera Vienne en 1529, sans succès.",
+      "consequences": [
+        "La Bohême, avec la Moravie, la Silésie et la Lusace, passe durablement aux Habsbourg.",
+        "La Hongrie est partagée : la « Hongrie royale » (Slovaquie, Croatie, ouest de la Hongrie) aux Habsbourg, le centre aux Ottomans, la Transylvanie vassale du sultan.",
+        "L'Autriche devient la forteresse de la chrétienté face aux Ottomans, avec une longue frontière militaire.",
+        "Les ressources des Habsbourg sont absorbées par la guerre turque, ce qui limite leur capacité à réprimer la Réforme."
+      ],
+      "territory": "mohacs-1526",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Mohács (1526)",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Moh%C3%A1cs_(1526)"
+        },
+        {
+          "label": "Wikipédia — Soliman le Magnifique",
+          "url": "https://fr.wikipedia.org/wiki/Soliman_le_Magnifique"
+        },
+        {
+          "label": "Wikipédia — Ferdinand Ier du Saint-Empire",
+          "url": "https://fr.wikipedia.org/wiki/Ferdinand_Ier_du_Saint-Empire"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Royaume de Hongrie (Louis II Jagellon)",
+          "Empire ottoman (Soliman le Magnifique)"
+        ],
+        "commanders": [
+          "Louis II de Hongrie (tué)",
+          "Pál Tomori, archevêque de Kalocsa (tué)",
+          "Soliman le Magnifique",
+          "Ibrahim Pacha"
+        ],
+        "outcome": "Victoire écrasante des Ottomans",
+        "forces": "Selon les estimations, environ 25 000 Hongrois contre 50 000 Ottomans ou davantage",
+        "losses": "Une grande partie de l'armée hongroise, dont le roi, sept évêques et de nombreux nobles ; pertes ottomanes bien moindres"
+      },
+      "territoryNote": "Core : Allemagne actuelle (avec Poméranie et Marche de Brandebourg), Autriche et Slovénie, Bohême et Moravie, Silésie, Suisse, Franche-Comté et Savoie, Pays-Bas, Belgique, Luxembourg, Alsace-Lorraine (avec Metz, Toul, Verdun). Vassal : la Hongrie royale (Slovaquie, Croatie et ouest de la Hongrie), revendiquée par Ferdinand ; l'Espagne, Naples, la Sicile et la Sardaigne (Charles Quint, hors Empire) ; l'Italie impériale du Nord (Milan à Charles Quint). Hors Empire : Buda et le centre de la Hongrie, bientôt ottomans ; France, Pologne, Venise.",
+      "armies": [
+        {
+          "id": "soliman-hongrie",
+          "side": "Soliman",
+          "faction": "ottomans",
+          "strength": 3,
+          "winner": true,
+          "path": [
+            [
+              20.46,
+              44.82
+            ],
+            [
+              19.5,
+              45.2
+            ],
+            [
+              18.69,
+              45.55
+            ],
+            [
+              18.68,
+              45.99
+            ]
+          ]
+        },
+        {
+          "side": "Hongrie",
+          "faction": "magyars",
+          "strength": 2,
+          "path": [
+            [
+              19.04,
+              47.5
+            ],
+            [
+              18.9,
+              46.9
+            ],
+            [
+              18.78,
+              46.42
+            ],
+            [
+              18.68,
+              45.99
+            ]
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "name": "Louis II Jagellon",
+          "role": "Roi de Hongrie et de Bohême, mort à 20 ans",
+          "faction": "magyars",
+          "archetype": "roi",
+          "position": [
+            18.78,
+            46.1
+          ]
+        },
+        {
+          "name": "Soliman le Magnifique",
+          "role": "Sultan ottoman",
+          "faction": "ottomans",
+          "archetype": "sultan",
+          "position": [
+            18.6,
+            45.9
+          ]
+        }
+      ]
+    },
+    {
+      "id": "muhlberg-1547",
+      "year": 1547,
+      "title": "Mühlberg : Charles Quint bat la ligue de Smalkalde",
+      "type": "bataille",
+      "location": [
+        13.2167,
+        51.4333
+      ],
+      "zoom": 5.0,
+      "summary": "Le 24 avril 1547, l'empereur surprend les princes protestants au passage de l'Elbe : leur chef, l'électeur de Saxe, est capturé.",
+      "details": "Depuis 1531, les princes luthériens se sont alliés dans la **ligue de Smalkalde**, dirigée par l'électeur **Jean-Frédéric de Saxe** et le landgrave **Philippe de Hesse**. Ils refusent l'autorité du concile de Trente et du ban de Charles Quint. En 1546, l'empereur, libéré de la guerre contre la France et les Ottomans par des trêves, décide de les réduire par la force. Il s'appuie sur des troupes espagnoles et italiennes, ainsi que sur des fantassins allemands, les **lansquenets**, et sur le duc protestant **Maurice de Saxe**, cousin et rival de Jean-Frédéric, qui espère obtenir son électorat.\n\nLa campagne se joue sur l'Elbe. Au printemps 1547, l'armée impériale remonte d'Ingolstadt et de Nuremberg, par Eger, vers la Saxe. Jean-Frédéric, qui s'était retranché à Wittenberg, recule le long du fleuve. Le matin du 24 avril, dans le brouillard, des paysans montrent un gué aux Espagnols, qui traversent à la nage l'épée entre les dents, tandis que les ponts de bateaux sont installés. La cavalerie impériale rattrape les Saxons, qui sont écrasés. Jean-Frédéric, blessé au visage, est pris.\n\nPar la capitulation de Wittenberg, il perd son électorat au profit de Maurice. Le landgrave de Hesse se soumet. Charles Quint est au sommet de sa puissance : le peintre Titien le représente à cheval, vainqueur. Mais ce triomphe est éphémère : en 1552, Maurice se retourne contre l'empereur.",
+      "consequences": [
+        "Jean-Frédéric perd l'électorat de Saxe au profit de la branche albertine de Maurice.",
+        "Charles Quint tente d'imposer l'Intérim d'Augsbourg (1548), compromis religieux que les protestants rejettent.",
+        "La victoire est éphémère : Maurice change de camp en 1552, avec l'appui du roi de France Henri II, qui occupe Metz, Toul et Verdun.",
+        "Le principe d'une cohabitation entre catholiques et luthériens s'imposera par la paix d'Augsbourg (1555)."
+      ],
+      "territory": "muhlberg-1547",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Mühlberg",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_M%C3%BChlberg"
+        },
+        {
+          "label": "Wikipédia — Ligue de Smalkalde",
+          "url": "https://fr.wikipedia.org/wiki/Ligue_de_Smalkalde"
+        },
+        {
+          "label": "Wikipédia — Guerre de Smalkalde",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_de_Smalkalde"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire de Charles Quint (Espagnols, Italiens, lansquenets, Maurice de Saxe)",
+          "Ligue de Smalkalde (Saxe électorale, Hesse)"
+        ],
+        "commanders": [
+          "Charles Quint",
+          "duc d'Albe",
+          "Maurice de Saxe",
+          "Jean-Frédéric de Saxe (capturé)"
+        ],
+        "outcome": "Victoire impériale",
+        "forces": "Selon les estimations, environ 27 000 impériaux contre 6 000 à 9 000 Saxons engagés",
+        "losses": "Plusieurs milliers de morts et de prisonniers du côté protestant ; pertes impériales très faibles"
+      },
+      "territoryNote": "Core : Allemagne actuelle (avec Poméranie et Marche de Brandebourg), Autriche et Slovénie, Bohême et Silésie, Suisse, Franche-Comté et Savoie, Pays-Bas (Dix-Sept Provinces), Belgique, Luxembourg, Alsace-Lorraine (avec Metz, Toul, Verdun, encore impériales), Italie impériale du Nord (avec le Milanais, désormais aux Habsbourg). Vassal : la Hongrie royale ; l'Espagne, Naples, la Sicile et la Sardaigne (Charles Quint, hors Empire). Hors Empire : France, Pologne, Venise, les Ottomans à Buda.",
+      "armies": [
+        {
+          "id": "charles-quint-smalkalde",
+          "side": "Charles Quint",
+          "faction": "lansquenets",
+          "strength": 3,
+          "winner": true,
+          "path": [
+            [
+              11.08,
+              49.45
+            ],
+            [
+              12.37,
+              50.08
+            ],
+            [
+              12.92,
+              50.83
+            ],
+            [
+              13.48,
+              51.16
+            ],
+            [
+              13.21,
+              51.44
+            ]
+          ]
+        },
+        {
+          "side": "Ligue de Smalkalde",
+          "faction": "imperiaux",
+          "strength": 2,
+          "path": [
+            [
+              13.74,
+              51.05
+            ],
+            [
+              13.4,
+              51.25
+            ],
+            [
+              13.21,
+              51.44
+            ]
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "name": "Charles Quint",
+          "role": "Empereur, vainqueur de la ligue de Smalkalde",
+          "faction": "imperiaux",
+          "archetype": "empereur-germanique",
+          "position": [
+            13.1,
+            51.4
+          ]
+        },
+        {
+          "name": "Jean-Frédéric de Saxe",
+          "role": "Électeur de Saxe, chef des protestants",
+          "faction": "imperiaux",
+          "archetype": "prince-electeur",
+          "position": [
+            13.3,
+            51.45
+          ]
+        }
+      ]
+    },
+    {
+      "id": "augsbourg-1555",
+      "year": 1555,
+      "title": "La paix d'Augsbourg : « tel prince, telle religion »",
+      "type": "traité",
+      "location": [
+        10.8978,
+        48.3705
+      ],
+      "zoom": 4.4,
+      "summary": "Le 25 septembre 1555, la diète d'Augsbourg reconnaît deux religions dans l'Empire : chaque prince choisit celle de ses sujets, catholique ou luthérienne.",
+      "details": "Après l'échec de l'Intérim et la révolte de Maurice de Saxe en 1552 (traité de Passau), Charles Quint, épuisé et malade, laisse son frère **Ferdinand** négocier. La diète s'ouvre à **Augsbourg** en février 1555 et débouche sur un accord, signé le 25 septembre. Le principe retenu sera résumé plus tard par la formule latine ***cuius regio, eius religio*** : « tel prince, telle religion ».\n\nChaque prince d'Empire, et chaque ville libre, peut choisir entre le catholicisme et la **confession d'Augsbourg**, c'est-à-dire le luthéranisme. Ses sujets doivent suivre ou émigrer, avec leurs biens (*ius emigrandi*). Les biens d'Église sécularisés avant 1552 restent aux protestants, mais un « réservat ecclésiastique » prévoit que si un prélat se convertit, il perd son siège, ce qui protège les évêchés catholiques. Les calvinistes, eux, ne sont pas reconnus, et les anabaptistes encore moins.\n\nCette paix met un terme aux guerres de religion en Allemagne pendant plus de soixante ans, mais elle pose des problèmes insolubles : la liberté de conscience est celle du prince, pas celle de l'individu ; et l'éloignement des calvinistes prépare le conflit suivant. Quelques semaines plus tard, le 25 octobre 1555, Charles Quint abdique ses États des Pays-Bas à Bruxelles en faveur de son fils **Philippe II** ; il cédera l'Espagne en janvier 1556. Ferdinand sera élu empereur en 1558. L'Empire se sépare ainsi de l'Espagne.",
+      "consequences": [
+        "L'Allemagne devient un pays bi-confessionnel, avec une carte religieuse qui fige les choix des princes.",
+        "Le pouvoir des princes sur l'Église de leur territoire s'accroît : naissance des Églises d'État.",
+        "L'abdication de Charles Quint sépare les branches espagnole et autrichienne de la maison Habsbourg.",
+        "Les calvinistes, exclus de la paix, préparent les tensions qui mèneront à la guerre de Trente Ans."
+      ],
+      "territory": "augsbourg-1555",
+      "sources": [
+        {
+          "label": "Wikipédia — Paix d'Augsbourg",
+          "url": "https://fr.wikipedia.org/wiki/Paix_d%27Augsbourg"
+        },
+        {
+          "label": "Wikipédia — Ferdinand Ier du Saint-Empire",
+          "url": "https://fr.wikipedia.org/wiki/Ferdinand_Ier_du_Saint-Empire"
+        },
+        {
+          "label": "Texte de la paix d'Augsbourg (Reichsabschied), 1555"
+        }
+      ],
+      "territoryNote": "Core : Allemagne actuelle (avec Poméranie et Marche de Brandebourg), Autriche et Slovénie, Bohême et Silésie, Suisse, Franche-Comté et Savoie, Pays-Bas, Belgique, Luxembourg (cercle de Bourgogne, sous Philippe II dès 1555), Lorraine et Alsace, Italie impériale du Nord. Metz, Toul et Verdun sont perdues au profit de la France (1552) et ne sont plus figurées. Vassal : la Hongrie royale (Habsbourg). L'Espagne et Naples n'apparaissent plus : Charles Quint abdique et les branches se séparent.",
+      "figures": [
+        {
+          "name": "Ferdinand Ier",
+          "role": "Roi des Romains, futur empereur, négociateur",
+          "faction": "imperiaux",
+          "archetype": "empereur-germanique",
+          "quote": "Cuius regio, eius religio (formule juridique résumée plus tard, en 1599, par Joachim Stephani)",
+          "position": [
+            10.9,
+            48.37
+          ]
+        },
+        {
+          "name": "Auguste de Saxe",
+          "role": "Électeur de Saxe, luthérien modéré",
+          "faction": "imperiaux",
+          "archetype": "prince-electeur",
+          "position": [
+            10.85,
+            48.35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "defenestration-1618",
+      "year": 1618,
+      "title": "La défenestration de Prague",
+      "type": "politique",
+      "location": [
+        14.4005,
+        50.0907
+      ],
+      "zoom": 4.8,
+      "summary": "Le 23 mai 1618, des nobles protestants jettent deux représentants de l'empereur par les fenêtres du château de Prague : la guerre de Trente Ans commence.",
+      "details": "Depuis la paix d'Augsbourg, les tensions religieuses n'ont cessé de croître : en 1608-1609, les princes protestants forment l'**Union évangélique**, les catholiques la **Ligue** (menée par le duc de Bavière). En Bohême, l'empereur **Rodolphe II** avait accordé en 1609 la **Lettre de Majesté**, qui garantissait la liberté de culte aux protestants. Mais l'empereur **Matthias**, sans enfant, fait élire en 1617 comme futur roi de Bohême son cousin **Ferdinand de Styrie**, élevé par les jésuites et décidé à rétablir le catholicisme. Les nobles protestants craignent pour leurs droits.\n\nLe 23 mai 1618, une délégation emmenée par le comte **Henri-Mathias de Thurn** se rend au château de Prague (Hradčany), où deux gouverneurs catholiques, **Jaroslav de Martinic** et **Guillaume Slavata**, sont accusés d'avoir violé la Lettre de Majesté. Après un procès improvisé, les deux hommes et leur secrétaire sont jetés par la fenêtre, d'une quinzaine de mètres. Ils survivent à la chute, en tombant sur un tas de fumier ou de détritus, ce que les catholiques attribueront à l'intervention des anges.\n\nLes États de Bohême forment un gouvernement provisoire, déposent Ferdinand en août 1619 et élisent roi l'électeur palatin **Frédéric V**, calviniste. L'affaire n'est plus bohémienne mais européenne : l'Espagne, la Bavière, la Saxe, puis le Danemark, la Suède et la France s'engagent dans une guerre qui durera trente ans.",
+      "consequences": [
+        "La Bohême se dresse contre les Habsbourg et se choisit un roi protestant, Frédéric V du Palatinat.",
+        "Un conflit local devient européen, engageant bientôt l'Espagne, le Danemark, la Suède et la France.",
+        "Le sort de la Bohême se joue à la Montagne Blanche en 1620.",
+        "La guerre de Trente Ans dévastera l'Allemagne, qui perdra une part considérable de sa population."
+      ],
+      "territory": "defenestration-1618",
+      "sources": [
+        {
+          "label": "Wikipédia — Défenestration de Prague (1618)",
+          "url": "https://fr.wikipedia.org/wiki/D%C3%A9fenestration_de_Prague_(1618)"
+        },
+        {
+          "label": "Wikipédia — Guerre de Trente Ans",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_de_Trente_Ans"
+        },
+        {
+          "label": "Wikipédia — Lettre de Majesté",
+          "url": "https://fr.wikipedia.org/wiki/Lettre_de_majest%C3%A9_de_Rodolphe_II"
+        }
+      ],
+      "territoryNote": "Core : Allemagne actuelle (avec Poméranie et Marche de Brandebourg), Autriche et Slovénie, Silésie, Suisse, Franche-Comté et Savoie, Pays-Bas (Provinces-Unies et Pays-Bas espagnols, encore de droit dans l'Empire), Belgique, Luxembourg, Lorraine et Alsace, Italie impériale du Nord. Vassal : la Bohême et la Moravie, insurgées contre Ferdinand ; la Hongrie royale (Habsbourg). Hors Empire : Metz, Toul, Verdun (France), Pologne, Venise, Ottomans, Transylvanie.",
+      "figures": [
+        {
+          "name": "Henri-Mathias de Thurn",
+          "role": "Chef des nobles protestants de Bohême",
+          "faction": "hussites",
+          "archetype": "capitaine",
+          "position": [
+            14.4,
+            50.09
+          ]
+        },
+        {
+          "name": "Ferdinand de Styrie",
+          "role": "Roi de Bohême désigné, futur empereur Ferdinand II",
+          "faction": "imperiaux",
+          "archetype": "empereur-germanique",
+          "position": [
+            14.45,
+            50.1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "montagne-blanche-1620",
+      "year": 1620,
+      "title": "La Montagne Blanche",
+      "type": "bataille",
+      "location": [
+        14.3597,
+        50.0786
+      ],
+      "zoom": 5.0,
+      "summary": "Le 8 novembre 1620, aux portes de Prague, l'armée catholique écrase les troupes de Frédéric V en une heure : la Bohême redevient habsbourgeoise et catholique.",
+      "details": "Le roi élu **Frédéric V**, calviniste et gendre du roi d'Angleterre, ne reçoit presque aucune aide. Les États de Bohême n'ont ni argent ni armée aguerrie, tandis que l'empereur **Ferdinand II** (élu en août 1619) obtient les secours de l'Espagne, de la Saxe et surtout de la Ligue catholique, conduite par le duc **Maximilien Ier de Bavière** et son chef de guerre, le comte de **Tilly**. À l'automne 1620, une armée de près de 25 000 hommes, entrée en Bohême par le sud, marche sur Prague.\n\nLe 8 novembre, sur la colline de la **Montagne Blanche** (*Bílá hora*), à l'ouest de la ville, les troupes bohémiennes de **Christian d'Anhalt** tiennent une position retranchée. Mais les soldats, mal payés, sont surpris par l'assaut de la cavalerie ligueuse et de l'infanterie impériale. En moins d'une heure, la ligne est enfoncée et l'armée s'enfuit. Frédéric, qui dînait en ville, s'échappe : on l'appellera « le Roi d'hiver ».\n\nLa répression est impitoyable : 27 chefs protestants sont exécutés sur la place de la Vieille-Ville le 21 juin 1621, des centaines de familles nobles sont dépossédées ou exilées, la noblesse est refaite sur des bases catholiques et germanophones. La *Constitution renouvelée* de 1627 fait du trône de Bohême un bien héréditaire des Habsbourg. Maximilien de Bavière reçoit l'électorat de Frédéric (1623), puis le Haut-Palatinat.",
+      "consequences": [
+        "La Bohême devient héréditaire dans la famille des Habsbourg et est recatholicisée de force, ce qui provoque l'exil des élites protestantes.",
+        "La noblesse tchèque est dépossédée et remplacée par des familles catholiques, souvent allemandes ou espagnoles.",
+        "Maximilien de Bavière gagne le Haut-Palatinat et la dignité électorale, ce qui déplace l'équilibre en faveur des catholiques.",
+        "La guerre se poursuit en Palatinat, puis éclate au Danemark (1625), en Suède (1630) et en France (1635)."
+      ],
+      "territory": "montagne-blanche-1620",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de la Montagne Blanche",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_la_Montagne_Blanche"
+        },
+        {
+          "label": "Wikipédia — Frédéric V du Palatinat",
+          "url": "https://fr.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_V_du_Palatinat"
+        },
+        {
+          "label": "Wikipédia — Maximilien Ier de Bavière",
+          "url": "https://fr.wikipedia.org/wiki/Maximilien_Ier_de_Bavi%C3%A8re"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Ligue catholique et armée impériale (Bavière, Habsbourg)",
+          "Armée des États de Bohême (Frédéric V)"
+        ],
+        "commanders": [
+          "Jean t'Serclaes, comte de Tilly",
+          "Charles de Bucquoy",
+          "Christian d'Anhalt",
+          "Frédéric V du Palatinat"
+        ],
+        "outcome": "Victoire des armées catholiques",
+        "forces": "Selon les estimations, environ 25 000 hommes du côté catholique contre 20 000 à 25 000 Bohémiens",
+        "losses": "Selon les estimations, plusieurs milliers de morts côté bohémien et de faibles pertes catholiques"
+      },
+      "territoryNote": "Core : Allemagne actuelle (avec Poméranie et Marche de Brandebourg), Autriche et Slovénie, Bohême et Moravie (reconquises), Silésie, Suisse, Franche-Comté et Savoie, Pays-Bas, Belgique, Luxembourg, Lorraine et Alsace, Italie impériale du Nord. Vassal : la Hongrie royale (Habsbourg). Hors Empire : Metz, Toul, Verdun (France), Pologne, Venise, Ottomans, Transylvanie.",
+      "armies": [
+        {
+          "side": "Ligue catholique et Empereur",
+          "faction": "lansquenets",
+          "strength": 3,
+          "winner": true,
+          "path": [
+            [
+              13.46,
+              48.57
+            ],
+            [
+              14.47,
+              48.97
+            ],
+            [
+              14.66,
+              49.41
+            ],
+            [
+              14.2,
+              49.9
+            ],
+            [
+              14.36,
+              50.08
+            ]
+          ]
+        },
+        {
+          "side": "États de Bohême",
+          "faction": "hussites",
+          "strength": 2,
+          "path": [
+            [
+              13.73,
+              50.1
+            ],
+            [
+              14.0,
+              50.1
+            ],
+            [
+              14.36,
+              50.08
+            ]
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "name": "Maximilien Ier de Bavière",
+          "role": "Duc de Bavière, chef de la Ligue catholique",
+          "faction": "imperiaux",
+          "archetype": "prince-electeur",
+          "position": [
+            14.2,
+            50.0
+          ]
+        },
+        {
+          "name": "Frédéric V du Palatinat",
+          "role": "Électeur palatin, « Roi d'hiver »",
+          "faction": "imperiaux",
+          "archetype": "prince-electeur",
+          "position": [
+            14.42,
+            50.09
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lutzen-1632",
+      "year": 1632,
+      "title": "Lützen : la mort de Gustave-Adolphe",
+      "type": "bataille",
+      "location": [
+        12.1411,
+        51.2606
+      ],
+      "zoom": 5.0,
+      "summary": "Le 16 novembre 1632, les Suédois battent Wallenstein à Lützen, mais leur roi Gustave-Adolphe est tué : la guerre de Trente Ans se poursuit sans lui.",
+      "details": "Après la Montagne Blanche, les Habsbourg et la Ligue catholique triomphent. Le Danemark, qui est intervenu en 1625, est battu. En 1630, le roi de Suède **Gustave-Adolphe**, luthérien et grand réformateur militaire, débarque en Poméranie. Il s'inquiète du pouvoir impérial sur la Baltique, mais prétend aussi défendre la religion protestante, et la France de Richelieu finance son armée. En septembre 1631 il remporte à **Breitenfeld** une grande victoire sur le comte de Tilly, puis parcourt l'Allemagne du Sud.\n\nL'empereur **Ferdinand II** rappelle alors son généralissime **Albrecht de Wallenstein**, un riche noble bohémien. Le 16 novembre 1632, près de **Lützen**, en Saxe, les deux armées se rencontrent dans un épais brouillard. L'infanterie suédoise, organisée en lignes minces et soutenue par une artillerie légère, mène l'assaut contre les positions impériales. À la tête de sa cavalerie, Gustave-Adolphe se perd dans la brume et tombe sous les balles. Le maréchal impérial **Pappenheim** est tué lui aussi. Les Suédois, désormais conduits par **Bernard de Saxe-Weimar**, emportent la décision.\n\nLa victoire est cependant amère. Sans son roi, la Suède perd son moteur ; la fille de Gustave, **Christine**, n'a que six ans. Wallenstein sera assassiné en 1634. La guerre se prolonge et s'élargit : en 1635, la France intervient directement contre les Habsbourg.",
+      "consequences": [
+        "La Suède devient une grande puissance en Allemagne, qu'elle ne quittera qu'en 1648, avec la Poméranie occidentale.",
+        "Le camp protestant perd son chef, et la guerre entre dans une phase de lassitude et de dévastations.",
+        "Wallenstein, soupçonné de trahison, est assassiné en 1634 à Eger sur ordre de l'empereur.",
+        "La paix de Prague (1635) échoue à rétablir la paix, car la France entre en guerre."
+      ],
+      "territory": "lutzen-1632",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Lützen (1632)",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_L%C3%BCtzen_(1632)"
+        },
+        {
+          "label": "Wikipédia — Gustave II Adolphe",
+          "url": "https://fr.wikipedia.org/wiki/Gustave_II_Adolphe"
+        },
+        {
+          "label": "Wikipédia — Albrecht von Wallenstein",
+          "url": "https://fr.wikipedia.org/wiki/Albrecht_von_Wallenstein"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Suède et alliés protestants allemands",
+          "Armée impériale de Wallenstein"
+        ],
+        "commanders": [
+          "Gustave II Adolphe (tué)",
+          "Bernard de Saxe-Weimar",
+          "Albrecht de Wallenstein",
+          "Gottfried Pappenheim (tué)"
+        ],
+        "outcome": "Victoire suédoise, mais mort du roi",
+        "forces": "Selon les estimations, de l'ordre de 19 000 hommes de chaque côté",
+        "losses": "Plusieurs milliers de morts et de blessés de chaque côté, dont le roi de Suède et le maréchal Pappenheim"
+      },
+      "territoryNote": "Core : Allemagne actuelle (avec Poméranie et Marche de Brandebourg), Autriche et Slovénie, Bohême et Moravie, Silésie, Suisse, Franche-Comté et Savoie, Pays-Bas, Belgique, Luxembourg, Lorraine et Alsace (en partie occupée par les Suédois), Italie impériale du Nord. Vassal : la Hongrie royale (Habsbourg). Hors Empire : Metz, Toul, Verdun (France), Pologne, Venise, Ottomans, Suède et Danemark.",
+      "armies": [
+        {
+          "side": "Suède",
+          "faction": "suedois",
+          "strength": 3,
+          "winner": true,
+          "path": [
+            [
+              11.81,
+              51.15
+            ],
+            [
+              11.97,
+              51.2
+            ],
+            [
+              12.14,
+              51.26
+            ]
+          ]
+        },
+        {
+          "side": "Armée impériale",
+          "faction": "lansquenets",
+          "strength": 3,
+          "path": [
+            [
+              12.37,
+              51.34
+            ],
+            [
+              12.25,
+              51.3
+            ],
+            [
+              12.14,
+              51.26
+            ]
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "name": "Gustave II Adolphe",
+          "role": "Roi de Suède, tué au combat",
+          "faction": "suedois",
+          "archetype": "roi",
+          "position": [
+            12.1,
+            51.25
+          ]
+        },
+        {
+          "name": "Albrecht de Wallenstein",
+          "role": "Généralissime de l'empereur",
+          "faction": "lansquenets",
+          "archetype": "capitaine",
+          "position": [
+            12.2,
+            51.3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "westphalie-1648",
+      "year": 1648,
+      "title": "Les traités de Westphalie",
+      "type": "traité",
+      "location": [
+        7.6261,
+        51.9607
+      ],
+      "zoom": 4.2,
+      "summary": "Signés à Münster et Osnabrück en octobre 1648, les traités mettent fin à la guerre de Trente Ans : l'Empire survit, mais comme une confédération de princes presque souverains.",
+      "details": "La guerre de Trente Ans a ravagé l'Allemagne : par les combats, les pillages, la faim et les épidémies, elle a coûté la vie à environ un habitant sur cinq, et bien davantage dans certaines régions. À partir de 1643, des délégués de toute l'Europe négocient dans deux villes de Westphalie : **Münster** pour les catholiques et **Osnabrück** pour les protestants. Les traités sont signés le 24 octobre 1648.\n\nLes gains territoriaux sont considérables : la **Suède** reçoit la Poméranie occidentale, Brême et Wismar et siège désormais à la diète ; la **France** obtient les droits des Habsbourg en Alsace (sauf Strasbourg et plusieurs villes libres) et la confirmation de Metz, Toul et Verdun ; le **Brandebourg** gagne la Poméranie orientale et l'archevêché de Magdebourg ; la **Bavière** garde la dignité électorale. Le Palatinat est rendu à Charles-Louis, avec un huitième électorat. La Confédération suisse et les Provinces-Unies voient leur indépendance reconnue.\n\nLes calvinistes sont désormais protégés comme les luthériens. Surtout, les princes obtiennent le droit de conclure des alliances (sauf contre l'empereur), si bien que l'Empire ressemble à une fédération de plus de trois cents États. L'empereur **Ferdinand III** garde son prestige, mais son pouvoir réel se limite à ses États héréditaires, surtout l'Autriche, la Bohême et la Hongrie. La diète siège à Ratisbonne à partir de 1663, de façon permanente.",
+      "consequences": [
+        "Suède, France et Brandebourg gagnent des territoires, tandis que la Suisse et les Provinces-Unies sortent de fait de l'Empire.",
+        "Les princes d'Empire reçoivent la quasi-souveraineté : droit de lever des impôts et des armées, de conclure des alliances.",
+        "L'empereur se tourne vers ses États héréditaires (Autriche, Bohême, Hongrie), qui deviennent le cœur de sa puissance.",
+        "La paix établit un équilibre entre catholiques, luthériens et calvinistes qui durera jusqu'à la fin de l'Empire."
+      ],
+      "territory": "westphalie-1648",
+      "sources": [
+        {
+          "label": "Wikipédia — Traités de Westphalie",
+          "url": "https://fr.wikipedia.org/wiki/Trait%C3%A9s_de_Westphalie"
+        },
+        {
+          "label": "Wikipédia — Guerre de Trente Ans",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_de_Trente_Ans"
+        },
+        {
+          "label": "Instrumentum Pacis Osnabrugensis et Monasteriensis, 1648"
+        }
+      ],
+      "territoryNote": "Core : Allemagne actuelle (avec la Poméranie suédoise et brandebourgeoise), Autriche et Slovénie, Bohême, Moravie et Silésie, Franche-Comté et Savoie, Pays-Bas espagnols (Belgique et Luxembourg), Lorraine, Strasbourg et ses villes libres, Italie impériale du Nord. Vassal : la Hongrie royale (Habsbourg). Hors Empire : la Confédération suisse (exemptée de la justice d'Empire), les Provinces-Unies (Pays-Bas du Nord, reconnues par l'Espagne), l'Alsace cédée à la France, Metz, Toul et Verdun, Venise, la Pologne, la Hongrie ottomane.",
+      "figures": [
+        {
+          "name": "Maximilien de Trauttmansdorff",
+          "role": "Chef de la délégation impériale",
+          "faction": "imperiaux",
+          "archetype": "prince-electeur",
+          "position": [
+            7.63,
+            51.96
+          ]
+        },
+        {
+          "name": "Johan Oxenstierna",
+          "role": "Chef de la délégation suédoise à Osnabrück",
+          "faction": "suedois",
+          "archetype": "prince-electeur",
+          "position": [
+            8.04,
+            52.28
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vienne-1683",
+      "year": 1683,
+      "title": "Le siège de Vienne et le Kahlenberg",
+      "type": "bataille",
+      "location": [
+        16.3337,
+        48.2761
+      ],
+      "zoom": 5.0,
+      "summary": "Le 12 septembre 1683, une armée de secours menée par le roi de Pologne Jean Sobieski et le duc de Lorraine brise le siège de Vienne par les Ottomans.",
+      "details": "En 1681, Louis XIV s'était emparé de Strasbourg sans que l'Empire puisse réagir. L'empereur **Léopold Ier**, occupé à l'ouest, négocie mal avec les Hongrois révoltés et avec les Ottomans. Le grand vizir **Kara Mustafa Pacha** voit alors l'occasion de s'emparer de « la Pomme d'or », Vienne. Au printemps 1683, une immense armée, les chiffres ottomans allant de 100 000 à 200 000 hommes, marche vers la ville. Léopold quitte Vienne pour Linz puis Passau.\n\nLe comte **Ernst Rüdiger von Starhemberg** défend Vienne avec environ 11 000 hommes. Le siège commence le 14 juillet ; mines, assauts et famine épuisent la garnison. Un appel à l'aide est lancé. Le pape **Innocent XI** réunit une alliance, et le roi de Pologne **Jean III Sobieski** accourt avec des hussards ailés, la cavalerie lourde de sa noblesse. Il rejoint à Tulln les contingents impériaux de **Charles de Lorraine**, ceux de Bavière, de Saxe et de Franconie, soit 65 000 hommes environ.\n\nLe 12 septembre, depuis le **Kahlenberg**, collines au nord-ouest de la ville, l'armée de secours descend sur le camp ottoman. En fin d'après-midi, Sobieski lance quelque 18 000 cavaliers. Les Ottomans s'enfuient en désordre. Sobieski écrit au pape : « *Venimus, vidimus, et Deus vicit* » (« nous sommes venus, nous avons vu, et Dieu a vaincu »). Kara Mustafa sera étranglé à Belgrade sur ordre du sultan en décembre.",
+      "consequences": [
+        "Les Ottomans, battus devant Vienne, ne s'en remettront pas : c'est le début de leur reflux en Europe centrale.",
+        "La Sainte Ligue (Autriche, Pologne, Venise, puis Russie) reprend Buda (1686) et la Hongrie ; la paix de Karlowitz (1699) la donne aux Habsbourg.",
+        "L'Autriche devient une grande puissance d'Europe centrale et danubienne, plus que simplement allemande.",
+        "À l'ouest, Louis XIV continue ses « réunions » (Strasbourg 1681, Luxembourg 1684) : l'Empire est pris entre deux fronts."
+      ],
+      "territory": "vienne-1683",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Vienne (1683)",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Vienne"
+        },
+        {
+          "label": "Wikipédia — Jean III Sobieski",
+          "url": "https://fr.wikipedia.org/wiki/Jean_III_Sobieski"
+        },
+        {
+          "label": "Wikipédia — Kara Mustafa",
+          "url": "https://fr.wikipedia.org/wiki/Kara_Mustafa"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Sainte Ligue : Habsbourg, Pologne-Lituanie, Bavière, Saxe, Franconie",
+          "Empire ottoman et ses vassaux (Tatars de Crimée, Valaques, Moldaves)"
+        ],
+        "commanders": [
+          "Jean III Sobieski",
+          "Charles V de Lorraine",
+          "Ernst Rüdiger von Starhemberg",
+          "Kara Mustafa Pacha"
+        ],
+        "outcome": "Victoire de la Sainte Ligue ; siège levé",
+        "forces": "Selon les estimations, environ 65 000 hommes de l'armée de secours contre 100 000 à 150 000 Ottomans autour de la ville",
+        "losses": "Environ 4 500 morts côté chrétien d'après certaines estimations ; au moins 15 000 morts côté ottoman, selon les mêmes sources"
+      },
+      "territoryNote": "Core : Allemagne actuelle (avec la Poméranie suédoise et brandebourgeoise), Autriche et Slovénie, Bohême, Moravie et Silésie, Savoie, Pays-Bas espagnols (Belgique et Luxembourg), Lorraine, Italie impériale du Nord. Strasbourg et l'Alsace (1681) et la Franche-Comté (1678) sont perdues au profit de la France. Vassal : la Hongrie royale (Slovaquie, Croatie et bande ouest de la Hongrie, Habsbourg). Hors Empire : Buda et le centre de la Hongrie (ottomans), Suisse, Provinces-Unies, Venise, Pologne.",
+      "armies": [
+        {
+          "id": "kara-mustafa",
+          "side": "Ottomans (Kara Mustafa)",
+          "faction": "ottomans",
+          "strength": 3,
+          "path": [
+            [
+              20.46,
+              44.82
+            ],
+            [
+              19.04,
+              47.5
+            ],
+            [
+              17.63,
+              47.69
+            ],
+            [
+              16.33,
+              48.27
+            ]
+          ]
+        },
+        {
+          "side": "Impériaux (Charles de Lorraine)",
+          "faction": "lansquenets",
+          "strength": 3,
+          "winner": true,
+          "path": [
+            [
+              14.29,
+              48.31
+            ],
+            [
+              15.4,
+              48.3
+            ],
+            [
+              16.05,
+              48.33
+            ],
+            [
+              16.33,
+              48.27
+            ]
+          ]
+        },
+        {
+          "side": "Pologne (Sobieski)",
+          "faction": "polonais",
+          "strength": 2,
+          "winner": true,
+          "path": [
+            [
+              19.94,
+              50.06
+            ],
+            [
+              18.3,
+              49.8
+            ],
+            [
+              16.9,
+              49.2
+            ],
+            [
+              16.05,
+              48.33
+            ],
+            [
+              16.33,
+              48.27
+            ]
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "name": "Léopold Ier",
+          "role": "Empereur, réfugié à Passau",
+          "faction": "imperiaux",
+          "archetype": "empereur-germanique",
+          "position": [
+            13.46,
+            48.57
+          ]
+        },
+        {
+          "name": "Jean III Sobieski",
+          "role": "Roi de Pologne, vainqueur du Kahlenberg",
+          "faction": "polonais",
+          "archetype": "roi",
+          "quote": "Venimus, vidimus, et Deus vicit (lettre au pape, d'après la tradition)",
+          "position": [
+            16.3,
+            48.28
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rastatt-1714",
+      "year": 1714,
+      "title": "Utrecht et Rastatt : la guerre de Succession d'Espagne",
+      "type": "traité",
+      "location": [
+        8.2,
+        48.86
+      ],
+      "zoom": 4.2,
+      "summary": "En 1713-1714, les traités d'Utrecht et de Rastatt partagent l'héritage espagnol : l'Autriche des Habsbourg reçoit les Pays-Bas, Milan, Naples et la Sardaigne.",
+      "details": "En 1700, le roi **Charles II d'Espagne** meurt sans enfant, léguant sa couronne à **Philippe d'Anjou**, petit-fils de Louis XIV. L'empereur **Léopold Ier** refuse : il réclame l'héritage pour son fils, l'archiduc **Charles**. La guerre de Succession d'Espagne (1701-1714) oppose la France et l'Espagne à la Grande Alliance de La Haye (Empire, Angleterre, Provinces-Unies). Le prince **Eugène de Savoie**, qui sert l'empereur, et Marlborough s'illustrent à Blenheim (1704) et à Malplaquet (1709).\n\nEn 1711, la mort de l'empereur Joseph Ier fait de Charles l'empereur **Charles VI**. Les Anglais et les Hollandais, qui ne veulent pas voir renaître l'empire de Charles Quint, négocient seuls à Utrecht en avril 1713 : Philippe V garde l'Espagne et ses colonies. Charles VI continue la guerre un an, puis, à court de moyens, traite à **Rastatt** (6 mars 1714), par l'intermédiaire du prince Eugène et du maréchal **de Villars**. Le traité de Baden (septembre) conclut la paix pour l'Empire.\n\nL'Autriche reçoit les **Pays-Bas espagnols** (désormais autrichiens), le **Milanais**, Mantoue, le royaume de **Naples** et la **Sardaigne**. Mais l'Espagne est perdue pour les Habsbourg. Charles VI, qui n'a pas de fils, fait reconnaître par la Pragmatique Sanction (1713) la succession de sa fille, la future Marie-Thérèse.",
+      "consequences": [
+        "Les Habsbourg d'Autriche atteignent leur plus grande extension territoriale : Pays-Bas, Lombardie, Naples, Sardaigne.",
+        "L'Espagne reste aux Bourbons ; l'équilibre européen, voulu par l'Angleterre, est consacré à Utrecht.",
+        "L'Autriche, enrichie en Italie, devient une puissance méditerranéenne et danubienne plus qu'allemande.",
+        "La question de la succession de Charles VI (Pragmatique Sanction) sera la source de la guerre de Succession d'Autriche."
+      ],
+      "territory": "rastatt-1714",
+      "sources": [
+        {
+          "label": "Wikipédia — Traité de Rastatt",
+          "url": "https://fr.wikipedia.org/wiki/Trait%C3%A9_de_Rastatt"
+        },
+        {
+          "label": "Wikipédia — Traité d'Utrecht",
+          "url": "https://fr.wikipedia.org/wiki/Trait%C3%A9s_d%27Utrecht"
+        },
+        {
+          "label": "Wikipédia — Guerre de Succession d'Espagne",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_de_Succession_d%27Espagne"
+        }
+      ],
+      "territoryNote": "Core : Allemagne actuelle (avec la Poméranie suédoise et brandebourgeoise), Autriche et Slovénie, Bohême, Moravie et Silésie, Savoie, Pays-Bas autrichiens (Belgique et Luxembourg), Lorraine, Italie impériale (Milanais, Mantoue, Toscane, Parme, Modène, Gênes). Vassal : Hongrie, Croatie et Transylvanie (Habsbourg, hors Empire), Naples et Sardaigne (acquis par Charles VI, hors Empire). Hors Empire : Alsace et Strasbourg (France), Suisse, Provinces-Unies, Venise, Sicile (donnée au duc de Savoie).",
+      "figures": [
+        {
+          "name": "Eugène de Savoie",
+          "role": "Prince et généralissime au service de l'empereur",
+          "faction": "autrichiens",
+          "archetype": "general",
+          "position": [
+            8.2,
+            48.86
+          ]
+        },
+        {
+          "name": "Claude de Villars",
+          "role": "Maréchal de France, négociateur à Rastatt",
+          "faction": "francais",
+          "archetype": "general",
+          "position": [
+            8.22,
+            48.85
+          ]
+        }
+      ]
+    },
+    {
+      "id": "silesie-1740",
+      "year": 1740,
+      "title": "Frédéric II envahit la Silésie",
+      "type": "politique",
+      "location": [
+        17.0385,
+        51.1079
+      ],
+      "zoom": 4.4,
+      "summary": "En décembre 1740, le jeune roi de Prusse Frédéric II envahit la Silésie sans déclaration de guerre : le duel entre Prusse et Autriche commence.",
+      "details": "L'empereur **Charles VI** meurt le 20 octobre 1740 sans fils. Grâce à la Pragmatique Sanction, que toutes les puissances avaient reconnue, sa fille **Marie-Thérèse**, âgée de vingt-trois ans, hérite des États des Habsbourg. Mais la plupart des puissances ne tiennent plus leur promesse : l'Électeur de Bavière, le roi d'Espagne, le roi de Pologne-Saxe, la France contestent ses droits.\n\nLe roi de Prusse **Frédéric II**, couronné en mai 1740, possède une armée de 80 000 hommes, la meilleure d'Europe, et un trésor plein. Il convoite la **Silésie**, riche province industrielle de la couronne de Bohême, pour laquelle les Hohenzollern revendiquent d'anciens droits. Le 16 décembre, sans déclarer la guerre, il y fait entrer 20 000 hommes. Il prend Breslau, puis bat les Autrichiens à Mollwitz (avril 1741). La Silésie est perdue, malgré la guerre de Succession d'Autriche (1740-1748) puis la guerre de Sept Ans (1756-1763).\n\nMarie-Thérèse, soutenue par les magnats hongrois à Presbourg, résiste à tout. Mais la guerre voit un Wittelsbach, **Charles VII**, devenir empereur de 1742 à 1745, seule rupture dans la suite des Habsbourg. Son époux, François de Lorraine, est élu empereur en 1745. La Prusse sort de ce conflit comme seconde puissance allemande, face à l'Autriche : c'est le « dualisme allemand ».",
+      "consequences": [
+        "La Prusse conserve la Silésie (confirmée en 1742, 1745 et 1763) et devient une grande puissance ; la Silésie, comme la Prusse royale, se trouve hors de l'Empire.",
+        "L'Autriche et la Prusse se disputent la domination de l'Allemagne : le dualisme dure jusqu'en 1866.",
+        "Le renversement des alliances de 1756 oppose l'Autriche (alliée à la France et à la Russie) à la Prusse alliée de l'Angleterre.",
+        "L'Empire devient un simple arrière-plan pour les deux grandes puissances qui s'y affrontent."
+      ],
+      "territory": "silesie-1740",
+      "sources": [
+        {
+          "label": "Wikipédia — Guerre de Succession d'Autriche",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_de_Succession_d%27Autriche"
+        },
+        {
+          "label": "Wikipédia — Frédéric II de Prusse",
+          "url": "https://fr.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_II_(roi_de_Prusse)"
+        },
+        {
+          "label": "Wikipédia — Marie-Thérèse d'Autriche",
+          "url": "https://fr.wikipedia.org/wiki/Marie-Th%C3%A9r%C3%A8se_d%27Autriche"
+        }
+      ],
+      "territoryNote": "Core : Allemagne actuelle (avec la Poméranie suédoise et brandebourgeoise), Autriche et Slovénie, Bohême et Moravie, Savoie, Pays-Bas autrichiens (Belgique et Luxembourg), Lorraine (jusqu'en 1766), Italie impériale (Milanais, Mantoue, Toscane des Habsbourg-Lorraine, Parme, Modène, Gênes). La Silésie, conquise par la Prusse, n'est plus figurée. Vassal : Hongrie, Croatie, Transylvanie et Banat (Habsbourg, hors Empire). Hors Empire : Prusse royale (Königsberg), Silésie prussienne, Suisse, Provinces-Unies, Venise, Russie, Pologne.",
+      "armies": [
+        {
+          "id": "prusse-frederic",
+          "side": "Prusse (Frédéric II)",
+          "faction": "prussiens",
+          "strength": 3,
+          "path": [
+            [
+              13.4,
+              52.5
+            ],
+            [
+              15.1,
+              52.05
+            ],
+            [
+              16.08,
+              51.66
+            ],
+            [
+              17.03,
+              51.11
+            ]
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "name": "Frédéric II de Prusse",
+          "role": "Roi de Prusse, « le Grand »",
+          "faction": "prussiens",
+          "archetype": "roi-moderne",
+          "position": [
+            17.0,
+            51.1
+          ]
+        },
+        {
+          "name": "Marie-Thérèse",
+          "role": "Archiduchesse d'Autriche, reine de Hongrie et de Bohême",
+          "faction": "autrichiens",
+          "archetype": "roi-moderne",
+          "quote": "Moriamur pro rege nostro ! (cri des magnats hongrois à Presbourg, 1741, d'après la tradition)",
+          "position": [
+            16.37,
+            48.21
+          ]
+        }
+      ]
+    },
+    {
+      "id": "luneville-1801",
+      "year": 1801,
+      "title": "Lunéville : la rive gauche du Rhin passe à la France",
+      "type": "traité",
+      "location": [
+        6.4967,
+        48.5917
+      ],
+      "zoom": 4.2,
+      "summary": "Le 9 février 1801, après Marengo et Hohenlinden, l'empereur François II reconnaît à Napoléon la rive gauche du Rhin et les républiques sœurs d'Italie.",
+      "details": "En 1792, la Révolution française a déclaré la guerre à l'Autriche, et le Saint-Empire est entré dans la guerre pour défendre ses frontières de l'ouest. En 1797, le traité de Campo-Formio avait déjà laissé à la France la Belgique et prévu la cession de la rive gauche du Rhin, tandis que l'Autriche recevait Venise. En 1799, la seconde coalition reprend les armes. Mais le Premier consul **Bonaparte** bat les Autrichiens à Marengo (14 juin 1800), puis le général **Moreau** remporte la victoire décisive de Hohenlinden (3 décembre) près de Munich.\n\nL'empereur **François II** doit négocier. À Lunéville, **Joseph Bonaparte**, frère du Premier consul, traite avec le comte **Louis de Cobenzl**. Le traité est signé le 9 février 1801 : l'Empire cède à la France toute la **rive gauche du Rhin**, depuis la Suisse jusqu'aux Pays-Bas, y compris Cologne, Aix-la-Chapelle, Trèves, Mayence et Worms. La France garantit en retour les républiques « sœurs » : batave, helvétique, cisalpine, ligurienne. L'Autriche conserve Venise mais perd la Lombardie, le grand-duc de Toscane perd son trône.\n\nPuisque des princes d'Allemagne perdent leurs États du Rhin, la diète doit les dédommager ailleurs, en dépouillant les évêchés, les abbayes et les villes libres. La diète de Ratisbonne ratifie le traité en mars. Ce principe de « compensation » démolira l'ancien Empire.",
+      "consequences": [
+        "Environ un million et demi d'habitants de la rive gauche du Rhin, de Cologne à Mayence, deviennent français.",
+        "Les princes dépossédés réclament des compensations, ce qui ouvre la voie à la sécularisation des principautés ecclésiastiques (Recès de 1803).",
+        "La Lombardie et l'Italie du Nord échappent à l'Empire, et la France domine l'Italie.",
+        "Le prestige de l'empereur chute : il a traité pour l'Empire sans le consulter vraiment."
+      ],
+      "territory": "luneville-1801",
+      "sources": [
+        {
+          "label": "Wikipédia — Traité de Lunéville",
+          "url": "https://fr.wikipedia.org/wiki/Trait%C3%A9_de_Lun%C3%A9ville"
+        },
+        {
+          "label": "Wikipédia — Bataille de Hohenlinden",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Hohenlinden"
+        },
+        {
+          "label": "Wikipédia — Campagne d'Italie de 1800 (Marengo)",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Marengo"
+        }
+      ],
+      "territoryNote": "Core : Allemagne actuelle à l'est du Rhin, Autriche et Slovénie, Bohême et Moravie, Poméranie et Neumark (Prusse, Suède), Littoral autrichien et Tyrol méridional. Perdus (non figurés) : rive gauche du Rhin (Aix-la-Chapelle, Cologne, Trèves, Mayence), Belgique, Luxembourg, Lorraine et Alsace, Savoie, Italie du Nord (Milanais, Toscane, Piémont), tous passés à la France et à ses républiques sœurs. Vassal : Hongrie, Croatie, Transylvanie, Banat, Galicie et Bucovine (Habsbourg, hors Empire), Vénétie autrichienne (acquise en 1797). Hors Empire : Suisse (République helvétique), Pays-Bas (République batave), Prusse royale, Silésie prussienne.",
+      "figures": [
+        {
+          "name": "Joseph Bonaparte",
+          "role": "Négociateur français, frère aîné de Napoléon",
+          "faction": "francais",
+          "archetype": "diplomate",
+          "position": [
+            6.5,
+            48.59
+          ]
+        },
+        {
+          "name": "Louis de Cobenzl",
+          "role": "Ministre autrichien, négociateur de l'empereur",
+          "faction": "autrichiens",
+          "archetype": "diplomate",
+          "position": [
+            6.52,
+            48.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recez-1803",
+      "year": 1803,
+      "title": "Le Recès d'Empire de 1803",
+      "type": "réforme",
+      "location": [
+        12.1016,
+        49.0134
+      ],
+      "zoom": 4.2,
+      "summary": "Le 25 février 1803, la diète de Ratisbonne supprime plus de cent principautés ecclésiastiques et villes libres pour dédommager les princes dépossédés : c'est la fin du vieil Empire.",
+      "details": "Le traité de Lunéville avait promis des compensations aux princes qui perdaient leurs terres de la rive gauche du Rhin. Une « députation d'Empire » (*Reichsdeputation*) s'installe à **Ratisbonne** pour répartir les dépouilles. Les vrais maîtres du jeu sont ailleurs : à Paris, **Talleyrand** et Bonaparte, et à Saint-Pétersbourg le tsar **Alexandre Ier**, qui soutient ses parents de Bade et de Wurtemberg. Les princes se pressent aux portes de Paris pour acheter les faveurs des ministres.\n\nLe 25 février 1803, le recès (*Reichsdeputationshauptschluss*) est adopté. Il supprime presque toutes les **principautés ecclésiastiques** (archevêchés de Cologne et de Trèves, nombreux évêchés et abbayes, sécularisés) et 45 des 51 **villes libres** d'Empire, ce qui représente plusieurs millions d'habitants. Leurs terres sont données aux grands États laïques : la **Prusse**, la **Bavière**, le **Wurtemberg**, **Bade** et la Hesse s'agrandissent. Quatre nouveaux électeurs sont créés (Bade, Wurtemberg, Hesse-Cassel, Salzbourg), et seul l'archevêque de Mayence, **Dalberg**, garde son électorat, transféré à Ratisbonne.\n\nL'ancien équilibre est détruit : l'Empire, majoritairement catholique, perd ses évêques-princes, ses plus fidèles soutiens de l'empereur. Les États moyens, pro-français, deviennent un contre-poids à l'Autriche et à la Prusse. Trois ans plus tard, ils quitteront l'Empire.",
+      "consequences": [
+        "Plus de cent États ecclésiastiques, abbayes et villes libres disparaissent : l'Allemagne passe de plus de trois cents États à quelques dizaines.",
+        "La Bavière, le Wurtemberg et Bade s'agrandissent fortement et deviennent des États moyens clients de la France.",
+        "Le collège électoral devient majoritairement protestant, ce qui diminue l'influence des Habsbourg.",
+        "L'Église d'Empire, soutien traditionnel de l'empereur, disparaît : le vieux système politique est détruit."
+      ],
+      "territory": "recez-1803",
+      "sources": [
+        {
+          "label": "Wikipédia — Recès d'Empire de 1803",
+          "url": "https://fr.wikipedia.org/wiki/Rec%C3%A8s_d%27Empire"
+        },
+        {
+          "label": "Wikipédia — Charles de Dalberg",
+          "url": "https://fr.wikipedia.org/wiki/Charles_Th%C3%A9odore_de_Dalberg"
+        },
+        {
+          "label": "Wikipédia — Médiatisation",
+          "url": "https://fr.wikipedia.org/wiki/M%C3%A9diatisation"
+        }
+      ],
+      "territoryNote": "Core : Allemagne actuelle à l'est du Rhin (dont les nouveaux territoires sécularisés), Autriche et Slovénie, Bohême et Moravie, Poméranie et Neumark, Littoral autrichien et Tyrol méridional. Vassal : Hongrie, Croatie, Transylvanie, Banat, Galicie et Bucovine (Habsbourg, hors Empire), Vénétie autrichienne. Hors Empire : rive gauche du Rhin et Belgique (annexées à la France), Suisse, Pays-Bas (République batave), Italie napoléonienne, Prusse royale, Silésie prussienne. Le territoire change peu sur la carte : la transformation est interne, avec la disparition des principautés ecclésiastiques.",
+      "figures": [
+        {
+          "name": "Charles de Talleyrand",
+          "role": "Ministre des Relations extérieures de la France",
+          "faction": "francais",
+          "archetype": "diplomate",
+          "position": [
+            12.1,
+            49.01
+          ]
+        },
+        {
+          "name": "Charles de Dalberg",
+          "role": "Archevêque-électeur de Mayence, archichancelier de l'Empire",
+          "faction": "imperiaux",
+          "archetype": "prince-electeur",
+          "position": [
+            12.08,
+            49.02
+          ]
+        }
+      ]
+    },
+    {
+      "id": "austerlitz-1805",
+      "year": 1805,
+      "title": "Austerlitz : la bataille des trois empereurs",
+      "type": "bataille",
+      "location": [
+        16.7667,
+        49.1286
+      ],
+      "zoom": 5.0,
+      "summary": "Le 2 décembre 1805, Napoléon écrase les armées russe et autrichienne sur le plateau de Pratzen : l'Autriche doit signer la paix de Presbourg.",
+      "details": "Depuis 1804, l'empereur d'Autriche **François** (deuxième du nom comme empereur romain germanique, premier comme empereur d'Autriche) est aussi empereur du Saint-Empire. En 1805, il rejoint la troisième coalition avec le Royaume-Uni, la Russie et la Suède. Napoléon, qui préparait l'invasion de l'Angleterre, lance la Grande Armée vers le Danube : en octobre, il capture l'armée autrichienne de Mack à Ulm, puis il entre à Vienne le 13 novembre.\n\nPrès de Brünn (Brno), il rejoint l'armée des deux empereurs allemands, François et le tsar **Alexandre Ier**, commandée par le Russe **Koutouzov**. Napoléon feint la faiblesse et abandonne le plateau de **Pratzen**. Les alliés, trop confiants, s'y précipitent pour déborder sa droite. Le 2 décembre, au matin brumeux, il frappe le centre allié dégarni avec les corps de Soult et de Bernadotte. Les Russes, coupés en deux, sont acculés aux étangs gelés de Satschan. Les pertes alliées sont de l'ordre de 27 000 hommes contre environ 9 000 Français.\n\nLe traité de **Presbourg** (26 décembre) oblige l'Autriche à céder la Vénétie, l'Istrie, la Dalmatie, le Tyrol et le Vorarlberg. Napoléon fait de la Bavière et du Wurtemberg des royaumes. Le Saint-Empire, ainsi ébranlé, a quelques mois à vivre.",
+      "consequences": [
+        "La troisième coalition s'effondre ; la Russie se retire derrière ses frontières.",
+        "L'Autriche perd la Vénétie, l'Istrie, la Dalmatie, le Tyrol et le Vorarlberg, cédés à l'Italie napoléonienne et à la Bavière.",
+        "La Bavière et le Wurtemberg deviennent des royaumes souverains, alliés de la France : l'Empire se désagrège.",
+        "Napoléon domine l'Europe continentale et peut créer en 1806 la Confédération du Rhin."
+      ],
+      "territory": "austerlitz-1805",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille d'Austerlitz",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_d%27Austerlitz"
+        },
+        {
+          "label": "Wikipédia — Traité de Presbourg",
+          "url": "https://fr.wikipedia.org/wiki/Trait%C3%A9_de_Presbourg"
+        },
+        {
+          "label": "Bulletin de la Grande Armée et proclamation du 3 décembre 1805"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire français (Grande Armée)",
+          "Troisième coalition : Russie et Autriche"
+        ],
+        "commanders": [
+          "Napoléon Ier",
+          "Louis-Nicolas Davout",
+          "Jean de Dieu Soult",
+          "Michel Koutouzov",
+          "Alexandre Ier",
+          "François II"
+        ],
+        "outcome": "Victoire française décisive",
+        "forces": "Environ 73 000 Français contre 85 000 Austro-Russes",
+        "losses": "Environ 9 000 Français ; environ 27 000 Austro-Russes, morts, blessés et prisonniers"
+      },
+      "territoryNote": "Core : Allemagne actuelle à l'est du Rhin, Autriche et Slovénie, Bohême et Moravie (théâtre de la bataille), Poméranie et Neumark, Littoral autrichien et Tyrol méridional. Vassal : Hongrie, Croatie, Transylvanie, Banat, Galicie et Bucovine (Habsbourg, hors Empire), Vénétie autrichienne (cédée à Presbourg quelques semaines plus tard). Hors Empire : rive gauche du Rhin, Belgique, Suisse, Pays-Bas, Italie napoléonienne, Prusse royale (neutre), Silésie prussienne. L'empire napoléonien (1799-1815) couvre la même année.",
+      "armies": [
+        {
+          "id": "grande-armee-1805",
+          "side": "Grande Armée",
+          "faction": "francais",
+          "strength": 3,
+          "winner": true,
+          "path": [
+            [
+              16.37,
+              48.21
+            ],
+            [
+              16.5,
+              48.8
+            ],
+            [
+              16.6,
+              49.2
+            ],
+            [
+              16.77,
+              49.13
+            ]
+          ]
+        },
+        {
+          "id": "russes-1805",
+          "side": "Russes",
+          "faction": "russes",
+          "strength": 3,
+          "path": [
+            [
+              17.25,
+              49.59
+            ],
+            [
+              17.0,
+              49.28
+            ],
+            [
+              16.77,
+              49.13
+            ]
+          ]
+        },
+        {
+          "id": "autrichiens-1805",
+          "side": "Autrichiens",
+          "faction": "autrichiens",
+          "strength": 2,
+          "path": [
+            [
+              17.1,
+              49.5
+            ],
+            [
+              16.95,
+              49.25
+            ],
+            [
+              16.77,
+              49.13
+            ]
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "name": "Napoléon Ier",
+          "role": "Empereur des Français",
+          "faction": "francais",
+          "archetype": "empereur-napoleon",
+          "quote": "Soldats, je suis content de vous (proclamation du 3 décembre 1805)",
+          "position": [
+            16.7,
+            49.15
+          ]
+        },
+        {
+          "name": "François II",
+          "role": "Empereur romain germanique et empereur d'Autriche",
+          "faction": "autrichiens",
+          "archetype": "empereur-germanique",
+          "position": [
+            16.95,
+            49.2
+          ]
+        },
+        {
+          "name": "Alexandre Ier",
+          "role": "Tsar de Russie",
+          "faction": "russes",
+          "archetype": "tsar",
+          "position": [
+            16.9,
+            49.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fin-empire-1806",
+      "year": 1806,
+      "title": "La fin du Saint-Empire",
+      "type": "chute",
+      "location": [
+        16.3738,
+        48.2082
+      ],
+      "zoom": 4.2,
+      "summary": "Le 6 août 1806, François II dépose la couronne impériale et déclare l'Empire dissous, après la création par Napoléon de la Confédération du Rhin.",
+      "details": "Après Austerlitz, Napoléon veut réorganiser l'Allemagne à son profit. Le 12 juillet 1806, seize princes, dont les rois de Bavière et de Wurtemberg, le grand-duc de Bade et l'archevêque Dalberg, signent à Paris l'acte fondant la **Confédération du Rhin**, placée sous le « protectorat » de Napoléon. Ils déclarent quitter l'Empire, et la diète de Ratisbonne apprend la nouvelle le 1er août. Napoléon exige que l'empereur renonce à son titre ; sinon, il le considérera comme un ennemi.\n\nLe 6 août, **François II** publie à Vienne une déclaration : il considère le lien qui l'unissait au corps de l'Empire comme dissous, dépose la couronne impériale et délie les États, les sujets et les fonctionnaires de leurs obligations. Il avait déjà pris, en 1804, le titre d'**empereur héréditaire d'Autriche** sous le nom de François Ier : il ne perd donc pas son rang. Le Saint-Empire romain germanique avait duré 844 ans depuis Otton Ier.\n\nSes derniers jours passent presque inaperçus. Peu d'Allemands se lamentent, car l'Empire était depuis longtemps une coquille vide ; d'autres y voient la fin du \"Reich\" et la liberté enfin des petits États. La Prusse, qui entre en guerre contre Napoléon, sera écrasée à Iéna en octobre. En 1815, le congrès de Vienne créera une **Confédération germanique** de 39 États présidée par l'Autriche, premier pas vers l'unité allemande de 1871.",
+      "consequences": [
+        "Le Saint-Empire, héritier de Charlemagne et d'Otton Ier, disparaît après 844 ans : fin de la dignité d'empereur romain germanique.",
+        "La Confédération du Rhin regroupe d'abord seize, puis trente-six princes allemands sous protectorat de Napoléon.",
+        "La Prusse et l'Autriche, humiliées, engagent des réformes qui mèneront à la libération de 1813.",
+        "Après 1815, la Confédération germanique remplace l'Empire ; l'unité allemande de 1871 fondera un nouvel « empire » (le « Deuxième Reich »)."
+      ],
+      "territory": "fin-empire-1806",
+      "sources": [
+        {
+          "label": "Wikipédia — Dissolution du Saint-Empire romain germanique",
+          "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique#Dissolution"
+        },
+        {
+          "label": "Wikipédia — Confédération du Rhin",
+          "url": "https://fr.wikipedia.org/wiki/Conf%C3%A9d%C3%A9ration_du_Rhin"
+        },
+        {
+          "label": "Déclaration de François II du 6 août 1806 (Niederlegung der Kaiserkrone)"
+        }
+      ],
+      "territoryNote": "Core : derniers territoires de l'Empire encore en place en août 1806 (Autriche, Slovénie, Bohême et Moravie, Prusse et Brandebourg, Saxe, Hanovre, Hesse-Cassel, Brunswick, Mecklembourg, Poméranie, villes hanséatiques, États du nord et de l'est de l'Allemagne), Littoral autrichien. Allied : États de la Confédération du Rhin (Bavière, Wurtemberg, Bade, Hesse-Darmstadt, Nassau, Berg, Mayence-Francfort, Tyrol et Vorarlberg cédés à la Bavière), sortis de l'Empire en juillet 1806. Vassal : Hongrie, Croatie, Transylvanie, Banat, Galicie et Bucovine (Habsbourg, hors Empire). Hors Empire : rive gauche du Rhin et Belgique (France), Suisse, Pays-Bas, Italie napoléonienne.",
+      "figures": [
+        {
+          "name": "François II",
+          "role": "Dernier empereur romain germanique, devenu François Ier d'Autriche",
+          "faction": "imperiaux",
+          "archetype": "empereur-germanique",
+          "quote": "Je tiens le lien qui m'unissait à l'Empire pour dissous (paraphrase de la déclaration du 6 août 1806)",
+          "position": [
+            16.37,
+            48.21
+          ]
+        },
+        {
+          "name": "Napoléon Ier",
+          "role": "Protecteur de la Confédération du Rhin",
+          "faction": "francais",
+          "archetype": "empereur-napoleon",
+          "position": [
+            2.35,
+            48.85
+          ]
+        }
+      ]
+    }
+  ]
+}
