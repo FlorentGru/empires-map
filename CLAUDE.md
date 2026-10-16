@@ -11,7 +11,7 @@ Carte interactive (React + Vite + TS strict + MapLibre GL, relief 3D) qui montre
 ## État (à mettre à jour en fin de session)
 - Sur `main` : Rome, Napoléon, Chine, Mongols ; chatbot ADK (le « sage », Gemini ou Claude via `ATLAS_MODEL`) ; apogée sur la frise ; régiments animés (marche proportionnelle à la distance, `src/lib/march.ts`) ; empires contemporains ; carte du monde entière ; formulaire « Votre avis » (mailto).
 - À faire par l'utilisateur : renseigner son adresse dédiée dans `src/config.ts` (`FEEDBACK_EMAIL`, publique).
-- Brouillons à finaliser, un par session : `data/drafts/{carolingiens,saint-empire,espagne}/` (voir `data/drafts/README.md`). Espagne : élargir le fond de carte vers [-130,-56,165,62].
+- Brouillons à finaliser, un par session : `data/drafts/{carolingiens,saint-empire,espagne}/` (voir `data/drafts/README.md`). (Le fond de carte couvre déjà le monde entier.)
 
 ## Règles de travail
 - Répondre en français. L'utilisateur se forme au métier d'ingénieur IA : expliquer les choix.
