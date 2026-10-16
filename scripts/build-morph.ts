@@ -30,10 +30,36 @@ const MAX_BYTES = 120 * 1024;
 const AREA_TOL = 0.03;
 const ABS_TOL_KM2 = 300;
 
+/** Opération booléenne robuste : sur l'erreur « Unable to complete output ring » de polyclip, on réessaie en arrondissant les coordonnées. */
+const robust = (op: (a: Poly, b: Poly) => Poly | null, a: Poly, b: Poly): Poly | null => {
+  try {
+    return op(a, b);
+  } catch {
+    const attempts: ((f: Poly) => Poly)[] = [
+      (f) => turf.cleanCoords(turf.truncate(f, { precision: 5 })) as Poly,
+      (f) => turf.cleanCoords(turf.truncate(f, { precision: 4 })) as Poly,
+      (f) => turf.simplify(f, { tolerance: 0.0005, highQuality: true }) as Poly,
+    ];
+    for (const fix of attempts) {
+      try {
+        return op(fix(a), fix(b));
+      } catch {
+        /* essai suivant */
+      }
+    }
+    // Dernier recours : léger décalage de b (évite les sommets rigoureusement coïncidents).
+    try {
+      return op(a, turf.transformTranslate(b, 0.0005, 45, { units: 'kilometers' }) as Poly);
+    } catch {
+      /* abandon */
+    }
+    throw new Error('opération booléenne impossible après arrondi');
+  }
+};
 const intersect = (a: Poly | null, b: Poly | null): Poly | null =>
-  a && b ? ((turf.intersect(turf.featureCollection([a, b])) as Poly | null) ?? null) : null;
+  a && b ? robust((x, y) => (turf.intersect(turf.featureCollection([x, y])) as Poly | null) ?? null, a, b) : null;
 const difference = (a: Poly | null, b: Poly | null): Poly | null =>
-  a ? (b ? ((turf.difference(turf.featureCollection([a, b])) as Poly | null) ?? null) : a) : null;
+  a ? (b ? robust((x, y) => (turf.difference(turf.featureCollection([x, y])) as Poly | null) ?? null, a, b) : a) : null;
 const unionAll = (l: Poly[]): Poly | null =>
   l.length === 0 ? null : l.length === 1 ? l[0] : ((turf.union(turf.featureCollection(l)) as Poly | null) ?? null);
 const areaKm2 = (f: Poly | null): number => (f ? turf.area(f) / 1e6 : 0);

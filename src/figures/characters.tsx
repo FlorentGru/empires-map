@@ -20,6 +20,7 @@ const RED = '#a8281e';
 const WHITE = '#f4efe0';
 const WOOD = '#8a5a2b';
 const SKIN = '#e0b48a';
+const STEEL_C = '#a9adb0';
 
 interface CharSpec {
   skin?: string;
@@ -338,6 +339,33 @@ export const CHARACTER_SPECS = {
       path('M18 4Q15 1.6 12.4 2.4Q14.6 0 18 1.6Q21.4 0 23.6 2.4Q21 1.6 18 4Z', '#2f8a4a') + path('M17 3.4L18 -0.6L19 3.4Z', RED) +
       line('M12.6 7V12M23.4 7V12', GOLD, 0.8) + circ(12.6, 12.6, 1, '#2f8a4a', NS) + circ(23.4, 12.6, 1, '#2f8a4a', NS) +
       circ(18, 13.4, 0.9, '#c0392b', NS),
+  },
+  'general-mongol': {
+    skin: '#d2a070',
+    robe: '#2f5f9b',
+    body: WIDE,
+    deco:
+      path('M12 18.4Q18 16 24 18.4L24.6 34L11.4 34Z', '#6e5a3a') + line('M12 22H24M12 26H24M12 30H24M18 18V34', GOLD, 0.8) +
+      rect(10.5, 34, 15, 2.2, '#c9473a', 0, NS) + circ(18, 35.1, 1.2, GOLD) + path('M11 36.4L25 36.4L26 44L10 44Z', '#264d80'),
+    back: path('M11.4 10Q11 4 18 3.6Q25 4 24.6 10L25.4 18L22.6 14L13.4 14L10.6 18Z', '#2d2018'),
+    head:
+      path('M12.6 9Q12.4 3.4 18 3Q23.6 3.4 23.4 9L22.4 7.6L13.6 7.6Z', '#8e949a') + path('M17.2 3.2L18 -1.6L18.8 3.2Z', STEEL_C) +
+      path('M18 -1.4Q22 -3 21 1.6Q20 -0.4 18 -1.2Z', RED) + line('M13 7.8L12.2 12.4M23 7.8L23.8 12.4', '#8e949a', 1.4) +
+      moust('#2d2018') + path('M16.6 14.4Q18 18 19.4 14.4Z', '#2d2018', NS),
+    front: rect(28.6, 12, 1.4, 34, WOOD) + circ(29.3, 10.6, 2.2, GOLD) + path('M27.8 12.4L26.4 17M30.8 12.4L32.2 17', RED, 'stroke-width="1"'),
+  },
+  khatoun: {
+    skin: '#e0b48a',
+    robe: '#a8281e',
+    body: WIDE,
+    back: path('M8.6 18Q18 14 27.4 18L31 46L5 46Z', '#2f5f9b'),
+    deco:
+      path('M12 18.4Q18 16 24 18.4L24.4 24Q18 22.6 11.6 24Z', GOLD) + line('M13 28Q18 25 23 28M12 34Q18 30 24 34M11 40Q18 36 25 40', GOLD, 1.1) +
+      circ(18, 30, 1.6, '#2f8a8f') + rect(8.5, 43.2, 19, 2.8, GOLD, 0, NS) + line('M12.4 18.6L11 46M23.6 18.6L25 46', '#2f5f9b', 1.6),
+    head:
+      path('M12.8 10.4Q12.4 6 18 5.8Q23.6 6 23.2 10.4Q22.4 8 18 8Q13.6 8 12.8 10.4Z', '#1f1a14') +
+      path('M14.6 6.4L14 -2.6Q18 -4.6 22 -2.6L21.4 6.4Z', '#c0392b') + line('M14.3 1.6H21.7M14.2 -1H21.8', GOLD, 1) +
+      path('M17 -3L18 -6.4L19 -3Z', '#f4efe0') + line('M12.8 9L11.8 15M23.2 9L24.2 15', '#1f1a14', 1.2) + circ(18, 13.6, 0.8, '#c0392b', NS),
   },
 } satisfies Record<Archetype, CharSpec>;
 

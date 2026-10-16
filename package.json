@@ -18,6 +18,7 @@
     "build:territories": "tsx scripts/build-territories.ts",
     "start": "vite --open",
     "build:data:china": "tsx scripts/build-territories.ts --empire china && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire china && tsx scripts/build-neighbors.ts --empire china",
+    "build:data:mongols": "tsx scripts/build-territories.ts --empire mongols && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire mongols && tsx scripts/build-neighbors.ts --empire mongols",
     "test": "vitest run tests/unit",
     "test:data": "vitest run tests/data",
     "test:e2e": "playwright test",

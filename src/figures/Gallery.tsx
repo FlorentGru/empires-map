@@ -25,7 +25,7 @@ interface Item {
 }
 
 const NAPO: Faction[] = ['francais', 'britanniques', 'autrichiens', 'prussiens', 'russes', 'espagnols', 'portugais', 'polonais'];
-const ASIA: Faction[] = ['chinois', 'xiongnu', 'mongols', 'jurchens', 'mandchous', 'japonais', 'coreens', 'tibetains', 'vietnamiens', 'turcs-gokturks', 'khitans', 'ouighours'];
+const ASIA: Faction[] = ['chinois', 'xiongnu', 'mongols', 'jurchens', 'mandchous', 'japonais', 'coreens', 'tibetains', 'vietnamiens', 'turcs-gokturks', 'khitans', 'ouighours', 'tangoutes', 'khwarezmiens', 'rus', 'chevaliers-europeens', 'mamelouks'];
 
 const factionItem = (f: Faction): Item => ({ uid: `f:${f}`, kind: 'faction', faction: f, info: FACTION_INFO[f], color: FACTION_COLORS[f] });
 const archetypeItem = (a: Archetype): Item => ({ uid: `a:${a}`, kind: 'archetype', archetype: a, info: ARCHETYPE_INFO[a], color: '#8a7350' });

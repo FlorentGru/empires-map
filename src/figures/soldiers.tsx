@@ -315,6 +315,47 @@ export const ASIA_SOLDIER_SPECS = {
 
 /* ---------- les 16 factions antiques ---------- */
 
+/* ---------- XIIIe siècle : adversaires des Mongols ---------- */
+
+const MONGOL_ADV_SOLDIER_SPECS = {
+  tangoutes: {
+    skin: '#d2a070', tunic: '#8a3a22', legs: 'pants', legColor: '#4a3a2a', boots: '#2b2219',
+    deco: rect(10.6, 15, 10.8, 10, '#a8563a', 1) + stroke('M11 17.5H21M11 20H21M11 22.5H21', '#5c2a18', 0.8) + stroke('M16 15V25', '#5c2a18', 0.7) + rect(10.2, 24.4, 11.6, 1.6, '#3a2a1a', 0, 'stroke="none"'),
+    head: path('M11.7 9Q11.7 3.4 16 3.4Q20.3 3.4 20.3 9L19.5 9L19.5 7.2L12.5 7.2L12.5 9Z', '#7a4a32') + path('M15.4 3.6L16 0.6L16.6 3.6Z', STEEL) +
+      path('M11.2 7.6L9.6 12.4L12 12L12.4 8.6Z', '#7a4a32') + path('M20.8 7.6L22.4 12.4L20 12L19.6 8.6Z', '#7a4a32') + moustache('#2d2018'),
+    weapon: spear(),
+  },
+  khwarezmiens: {
+    skin: '#d2a070', tunic: '#2f7a6a', legs: 'pants', legColor: '#e8dcc0', boots: '#4a2f1a',
+    deco: rect(10.4, 15, 11.2, 10, '#9aa0a5', 1) + stroke('M11 17H21M11 19.5H21M11 22H21', '#6e747a', 0.7) + rect(10.2, 24, 11.6, 1.8, '#c9473a', 0, 'stroke="none"'),
+    head: path('M12 8.4Q12 2.4 16 0.6Q20 2.4 20 8.4Z', '#8e949a') + path('M11.4 8.2Q16 5.4 20.6 8.2L20.2 5.8Q16 3.4 11.8 5.8Z', WHITE) + stroke('M12 7Q16 5.2 20 7', GOLD, 0.8) + circ(16, 3.8, 0.9, '#c9473a', 'stroke="none"') + moustache('#2d2018'),
+    shield: circ(8.5, 23, 6.3, '#2f7a6a') + circ(8.5, 23, 4.2, 'none', `stroke="${GOLD}" stroke-width="0.9"`) + circ(8.5, 23, 1.7, GOLD),
+    weapon: `<g transform="rotate(14 26 20)">` + path('M25.2 3Q28.8 8 27 22L25.4 22Z', '#d6dadc') + rect(23.6, 22, 4.6, 1.4, GOLD) + rect(25.2, 23.4, 1.6, 5, WOOD) + `</g>`,
+  },
+  rus: {
+    skin: '#e0b48a', tunic: '#7a8a4a', legs: 'pants', legColor: '#5a4a3a', boots: '#4a2f1a',
+    deco: rect(10.6, 15, 10.8, 9, '#8e949a', 1) + stroke('M11 17.5H21M11 20H21', '#6e747a', 0.7) + rect(10.2, 24, 11.6, 1.6, '#4a2f1a', 0, 'stroke="none"'),
+    back: path('M12 9L11.6 14L20.4 14L20 9Z', '#8e949a'),
+    head: path('M11.8 8.6Q12 3.6 16 -0.4Q20 3.6 20.2 8.6L19.4 8.6L19.4 7.2L12.6 7.2L12.6 8.6Z', STEEL) + rect(15.4, 7.6, 1.2, 3.6, STEEL) + stubble('#8a5a2b'),
+    shield: path('M8.5 13Q14 15 14 23Q14 30 8.5 35Q3 30 3 23Q3 15 8.5 13Z', RED) + stroke('M8.5 15V33M5.2 22H11.8', GOLD, 0.8) + circ(8.5, 23, 1.5, GOLD),
+    weapon: spear(),
+  },
+  'chevaliers-europeens': {
+    tunic: '#2f4f9b', legs: 'pants', legColor: '#8e949a', boots: '#6e747a', skirt: '#2f4f9b',
+    deco: path('M10.6 14.5L21.4 14.5L21.4 22L16 26L10.6 22Z', '#e8c53a', 'stroke="none"') + path('M16 15.5L18.4 19L16 23L13.6 19Z', '#2f4f9b', 'stroke="none"') + rect(10.2, 24.4, 11.6, 1.6, '#e8c53a', 0, 'stroke="none"'),
+    head: path('M11.4 14L11.4 3.6L20.6 3.6L20.6 14Z', '#aeb3b8') + rect(12.4, 7.6, 7.2, 1.2, '#2b2219', 0, 'stroke="none"') + stroke('M16 3.6V13', '#6e747a', 1) + path('M13.5 3.6Q16 0.4 18.5 3.6Z', '#e8c53a'),
+    shield: path('M3.5 14H13.5V24Q13.5 31 8.5 34Q3.5 31 3.5 24Z', '#e8c53a') + path('M3.5 14H8.5V34Q3.5 31 3.5 24Z', '#2f4f9b', 'stroke="none"') + circ(11, 19, 1.3, '#2f4f9b', 'stroke="none"'),
+    weapon: rect(25.3, 2, 1.7, 21, '#d6dadc') + path('M26.15 -0.6L27.2 2L25.1 2Z', '#d6dadc') + rect(22.8, 22.4, 6.8, 1.5, '#8a5a2b') + rect(25.3, 23.8, 1.7, 3.6, WOOD) + circ(26.15, 28, 1.1, '#e8c53a'),
+  },
+  mamelouks: {
+    skin: '#c89a6a', tunic: '#e0b43a', legs: 'pants', legColor: '#a8281e', boots: '#4a2f1a',
+    deco: path('M10.4 14L16 14L21.6 25L10.4 25Z', '#c9871e', 'stroke="none"') + stroke('M16 14.5L21.4 25', '#a8281e', 0.9) + rect(10.2, 23.4, 11.6, 1.8, '#a8281e', 0, 'stroke="none"'),
+    back: quiver('#a8281e'),
+    head: path('M11.4 8.4Q11.2 4.6 16 4.2Q20.8 4.6 20.6 8.4Q16 6.2 11.4 8.4Z', '#f4efe0') + path('M12.4 5.6Q12.6 2.6 16 2.4Q19.4 2.6 19.6 5.6Z', '#a9adb0') + path('M15.3 2.6L16 -1.4L16.7 2.6Z', STEEL) + stroke('M11.6 6.6Q16 4.8 20.4 6.6', '#a8281e', 1) + moustache('#2d2018'),
+    weapon: `<g transform="rotate(12 26 20)">` + path('M25 4Q29.6 10 27.4 22L25.4 22Z', '#d6dadc') + rect(23.6, 22, 5, 1.4, GOLD) + rect(25.2, 23.4, 1.6, 5, WOOD) + `</g>` + stroke('M24 9Q29 18 24 29', '#8a3a1e', 1.2),
+  },
+} satisfies Partial<Record<Faction, Spec>>;
+
 export const SOLDIER_SPECS = {
   romains: {
     tunic: '#b23a2b', legs: 'bare', boots: '#6b3a1e',
@@ -480,6 +521,7 @@ export const SOLDIER_SPECS = {
   },
   ...NAPO_SOLDIER_SPECS,
   ...ASIA_SOLDIER_SPECS,
+  ...MONGOL_ADV_SOLDIER_SPECS,
 } satisfies Record<Faction, Spec>;
 
 /** Fabrique la chaîne SVG complète d'un soldat. */

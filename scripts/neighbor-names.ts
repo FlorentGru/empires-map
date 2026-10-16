@@ -526,4 +526,12 @@ export const NEIGHBOR_NAMES: Record<string, string> = {
   'minor states': 'Petits États',
   'minor states under Indian influence': 'Petits États indianisés',
   'Đại Việt': 'Đại Việt',
+  'Beylik of Aydin': 'Beylik d’Aydin',
+  'Blue Horde': 'Horde bleue',
+  'Bosnia': 'Bosnie',
+  'Kalmar Union': 'Union de Kalmar',
+  'Kingdom of Hungary': 'Royaume de Hongrie',
+  'Moldova': 'Moldavie',
+  'Principality of Wallachia': 'Principauté de Valachie',
+  'Raška': 'Rascie',
 };

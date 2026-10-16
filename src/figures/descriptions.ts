@@ -189,6 +189,31 @@ export const FACTION_INFO: Record<Faction, FigureInfo> = {
     era: 'VIIIe – IXe s.',
     text: "Peuple turc de Mongolie qui succède aux Gökturks. Le khanat ouïghour (744-840) s'allie aux Tang et aide à réprimer la rébellion d'An Lushan. Ses cavaliers sont des archers expérimentés, protégés par une cuirasse de lamelles. Les Ouïghours adoptent le manichéisme, puis le bouddhisme, et se sédentarisent. Écrasé par les Kirghiz en 840, le peuple se replie vers le Turkestan oriental.",
   },
+  tangoutes: {
+    label: 'Tangoutes (Xia occidentaux)',
+    era: '1038 – 1227',
+    text: "Peuple tibéto-birman qui fonde l'empire des Xia occidentaux dans le Gansu et l'Ordos, entre les Song et les Liao puis les Jin. Ses soldats portent un casque à oreillettes et une armure de lamelles, et manient lance et arc ; la cavalerie lourde est réputée. Le royaume possède une écriture propre et un bouddhisme florissant. Gengis Khan le ravage en six campagnes et meurt pendant le siège final, en 1227.",
+  },
+  khwarezmiens: {
+    label: 'Khwarezmiens',
+    era: '1077 – 1231',
+    text: "Dynastie turque musulmane qui domine l'Asie centrale et l'Iran oriental vers 1200, de Samarcande à Boukhara et Nichapour. Ses cavaliers portent turban sur casque pointu, cotte de mailles, sabre et bouclier rond. Le massacre d'une caravane mongole à Otrar (1218) déclenche l'invasion de Gengis Khan. Le chah Muhammad II fuit et meurt en 1220 ; son fils Djalal ad-Din résiste jusqu'en 1231.",
+  },
+  rus: {
+    label: "Guerriers de la Rus'",
+    era: 'XIIIe s.',
+    text: "Fantassins et druzhina des princes de Kiev, Riazan, Vladimir ou Tchernigov. Ils portent un casque conique à nasal, une cotte de mailles, un bouclier en amande et manient la lance. Divisés entre principautés rivales, les Russes sont battus à la Kalka (1223), puis écrasés en 1237-1240 : Riazan, Vladimir et Kiev tombent. Les princes deviennent tributaires de la Horde d'or, le « joug tatar ».",
+  },
+  'chevaliers-europeens': {
+    label: 'Chevaliers européens',
+    era: 'XIIIe s.',
+    text: "Cavaliers lourds d'Europe centrale, en heaume fermé, cotte de mailles, surcot armorié, écu et épée longue. En 1241, une armée polono-allemande est battue à Legnica, puis les Hongrois à la Sajó : les Mongols dévastent la Pologne et la Hongrie. Les chevaliers, faits pour le combat en ligne, subissent les feintes et les volées de flèches. Les Mongols se retirent en 1242, à la mort du grand khan Ögödei.",
+  },
+  mamelouks: {
+    label: 'Mamelouks',
+    era: '1250 – 1517',
+    text: "Esclaves-soldats d'origine turque ou caucasienne devenus maîtres de l'Égypte et de la Syrie. Le cavalier mamelouk, casque à pointe et turban, caftan de couleur, tire à l'arc monté et charge au sabre après un long entraînement. Sous Qutuz et Baybars, ils arrêtent les Mongols à Aïn Djalout (1260), première grande défaite de l'armée mongole en campagne.",
+  },
 };
 
 export const ARCHETYPE_INFO: Record<Archetype, FigureInfo> = {
@@ -306,5 +331,14 @@ export const ARCHETYPE_INFO: Record<Archetype, FigureInfo> = {
     label: 'Impératrice',
     era: 'Han – Qing',
     text: "Épouse ou mère d'empereur, coiffée d'un diadème à pendeloques et vêtue de soie brodée. Certaines exercent la régence ou le pouvoir : l'impératrice Lü sous les Han, Wu Zetian, seule femme à avoir régné en son nom sur la Chine (690-705), ou Cixi à la fin des Qing. Elles s'appuient sur la cour, l'administration et leur famille.",
+  },  'general-mongol': {
+    label: 'Général mongol',
+    era: '1206 – 1368',
+    text: "Commandant d'un tumen (dix mille cavaliers), en armure lamellaire de cuir ou de fer, casque à pointe et plumet, bâton de commandement. Des chefs comme Subötai, Djebé ou Muqali mènent des campagnes coordonnées sur des milliers de kilomètres, selon des plans arrêtés au quriltai. Ils appliquent la feinte, l'encerclement et un renseignement très étendu.",
+  },
+  khatoun: {
+    label: 'Khatoun',
+    era: '1206 – 1368',
+    text: "Reine ou princesse mongole, coiffée de la haute boqta, vêtue d'une robe brodée et d'un ample manteau. Les khatouns gèrent les campements, les troupeaux et parfois la régence : Töregene gouverne l'empire (1241-1246), Sorgaqtani Beki éduque ses fils, Möngke, Kubilai, Hülegü et Ariq Böke. Doquz Khatoun, chrétienne nestorienne, protège les églises de l'Ilkhanat.",
   },
 };

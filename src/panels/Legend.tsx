@@ -18,6 +18,7 @@ interface Props {
 const EMPIRE_SPRITES: Record<string, { faction: Faction; archetype: Archetype }> = {
   napoleon: { faction: 'francais', archetype: 'empereur-napoleon' },
   china: { faction: 'chinois', archetype: 'empereur-chinois' },
+  mongols: { faction: 'mongols', archetype: 'khan' },
 };
 
 /** Au-delà, la légende des entités est tronquée (périodes de division). */

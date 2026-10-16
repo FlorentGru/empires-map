@@ -43,6 +43,11 @@ export const FACTION_COLORS = {
   'turcs-gokturks': '#4a7aa8',
   khitans: '#a85a2a',
   ouighours: '#8a3a9a',
+  tangoutes: '#9a4a2a',
+  khwarezmiens: '#1f8a7a',
+  rus: '#7a2a5a',
+  'chevaliers-europeens': '#2a4f9a',
+  mamelouks: '#c9921a',
 } satisfies Record<Faction, string>;
 
 /** Composant React (démo) du soldat d'une faction. */
