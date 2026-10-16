@@ -7,6 +7,8 @@ interface Props {
   empires: Empire[];
   current: Empire;
   onSelect: (id: string) => void;
+  /** Ouvre la vue « Le monde en l'an… ». */
+  onOpenWorld?: () => void;
 }
 
 const CATALOG = catalogJson as EmpireCatalogEntry[];
@@ -29,7 +31,7 @@ function groupCatalog(empires: Empire[]) {
   return [...groups.entries()];
 }
 
-export function EmpirePicker({ empires, current, onSelect }: Props) {
+export function EmpirePicker({ empires, current, onSelect, onOpenWorld }: Props) {
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
   const groups = useMemo(() => groupCatalog(empires), [empires]);
@@ -89,6 +91,21 @@ export function EmpirePicker({ empires, current, onSelect }: Props) {
 
       {open && (
         <ul id="empire-picker-list" className="empire-picker__list">
+          {onOpenWorld && (
+            <li>
+              <button
+                type="button"
+                className="empire-card empire-card--world"
+                onClick={() => {
+                  setOpen(false);
+                  onOpenWorld();
+                }}
+              >
+                <span aria-hidden="true">🌍</span>
+                <span className="empire-card__name">Le monde en l'an…</span>
+              </button>
+            </li>
+          )}
           {groups.map(([region, g], gi) => {
             const isOpen = expanded.has(region);
             const total = g.available.length + g.soon.length;

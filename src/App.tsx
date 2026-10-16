@@ -18,6 +18,7 @@ import { useStory } from './story/useStory';
 import { Timeline } from './timeline/Timeline';
 import { ChatPanel } from './chat/ChatPanel';
 import type { ChatContext } from './chat/ChatPanel';
+import { clearWorldUrl, DEFAULT_WORLD_YEAR, readWorldYear, WorldYearView } from './world/WorldYearView';
 import type { Empire } from './types';
 
 // Galerie des figurines : chargée à la demande.
@@ -35,6 +36,12 @@ export function App() {
   const [empireId, setEmpireId] = useState(() => getEmpire(readUrlState().empire)?.id);
   const empire = getEmpire(empireId);
   const [navKey, setNavKey] = useState(0);
+  // Vue « Le monde en l'an X » (?world=1&year=…) à la place de l'Atlas d'un empire.
+  const [world, setWorld] = useState<{ year: number } | null>(() => (new URLSearchParams(window.location.search).get('world') === '1' ? { year: readWorldYear() } : null));
+  const leaveWorld = useCallback(() => {
+    clearWorldUrl();
+    setWorld(null);
+  }, []);
   const [galleryOpen, setGalleryOpen] = useState(() => new URLSearchParams(window.location.search).get('figures') === 'gallery');
   const [chatContext, setChatContext] = useState<ChatContext | null>(null);
   const closeGallery = useCallback(() => {
@@ -45,6 +52,8 @@ export function App() {
   /** Depuis la galerie : va à l'étape d'un empire (URL puis remontage du lecteur, qui relit l'URL). */
   const goToStep = useCallback((id: string, stepId: string) => {
     clearFiguresParam();
+    clearWorldUrl();
+    setWorld(null);
     writeUrlState(id, stepId);
     setEmpireId(id);
     setNavKey((k) => k + 1);
@@ -80,10 +89,23 @@ export function App() {
       </main>
     );
   }
+  if (world) {
+    return (
+      <>
+        <WorldYearView initialYear={world.year} backName={empire.name} onBack={leaveWorld} />
+        <ChatPanel context={chatContext} goToStep={goToStep} />
+        {galleryOpen && (
+          <Suspense fallback={null}>
+            <Gallery onClose={closeGallery} onNavigate={goToStep} initialPerson={personRef} />
+          </Suspense>
+        )}
+      </>
+    );
+  }
   // `key` : changer d'empire réinitialise le lecteur et la carte.
   return (
     <>
-      <Atlas key={`${empire.id}:${navKey}`} empire={empire} onSelectEmpire={setEmpireId} onOpenGallery={() => setGalleryOpen(true)} onContext={setChatContext} />
+      <Atlas key={`${empire.id}:${navKey}`} empire={empire} onSelectEmpire={setEmpireId} onOpenWorld={(year) => setWorld({ year })} onOpenGallery={() => setGalleryOpen(true)} onContext={setChatContext} />
       <ChatPanel context={chatContext} goToStep={goToStep} />
       {galleryOpen && (
         <Suspense fallback={null}>
@@ -101,7 +123,7 @@ function initialIndex(empire: Empire): number {
   return i >= 0 ? i : 0;
 }
 
-function Atlas({ empire, onSelectEmpire, onOpenGallery, onContext }: { empire: Empire; onSelectEmpire: (id: string) => void; onOpenGallery: () => void; onContext: (c: ChatContext) => void }) {
+function Atlas({ empire, onSelectEmpire, onOpenWorld, onOpenGallery, onContext }: { empire: Empire; onSelectEmpire: (id: string) => void; onOpenWorld: (year: number) => void; onOpenGallery: () => void; onContext: (c: ChatContext) => void }) {
   const player = usePlayer(empire.steps.length, initialIndex(empire), (i) =>
     battleStepMs(empire.steps[i]) ?? BASE_STEP_MS,
   );
@@ -160,7 +182,7 @@ function Atlas({ empire, onSelectEmpire, onOpenGallery, onContext }: { empire: E
       <WorldMap empire={empire} index={player.index} panelOpen={panelOpen} tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} stateNames={stateNames} neighbors={neighbors} contemporaries={contemporaries} monuments={monuments} routes={routes} disasters={disasters} speed={player.speed} />
 
       <div className="top-bar">
-        <EmpirePicker empires={EMPIRES} current={empire} onSelect={onSelectEmpire} />
+        <EmpirePicker empires={EMPIRES} current={empire} onSelect={onSelectEmpire} onOpenWorld={() => onOpenWorld(step?.year ?? DEFAULT_WORLD_YEAR)} />
         <div className="top-bar__right">
           <ViewControls tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} stateNames={stateNames} neighbors={neighbors} contemporaries={contemporaries} monuments={monuments} routes={routes} disasters={disasters} onToggleTilt={toggleTilt} onToggleRelief={toggleRelief} onToggleFigures={toggleFigures} onToggleCountries2026={toggleCountries2026} onToggleStateNames={toggleStateNames} onToggleNeighbors={toggleNeighbors} onToggleContemporaries={toggleContemporaries} onToggleMonuments={toggleMonuments} onToggleRoutes={toggleRoutes} onToggleDisasters={toggleDisasters} />
           <button type="button" className="btn btn--ghost" onClick={onOpenGallery} aria-haspopup="dialog">
