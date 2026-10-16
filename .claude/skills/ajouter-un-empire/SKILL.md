@@ -38,7 +38,7 @@ Produit `scripts/empires/<id>.ts`, `overrides/<id>/`, les données dans `public/
 À la livraison, vérifie toi-même :
 ```bash
 npm run typecheck && npm test && npm run test:data && npx vite build
-git status --short public/data/empires   # seuls les fichiers du nouvel empire doivent changer
+git status --short public/data/empires   # seuls les fichiers du nouvel empire doivent changer (+ les */contemporaries/ des autres empires, régénérés automatiquement)
 ```
 Corrige les petits écarts (une ville mal classée, un statut) directement dans `scripts/empires/<id>.ts`, relance `npm run build:data:<id>`, puis commit + push.
 

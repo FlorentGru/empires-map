@@ -2,7 +2,7 @@ import { LngLatBounds, Map as MapLibreMap, type PaddingOptions } from 'maplibre-
 import './maplibreWorker';
 import { useEffect, useRef, useState } from 'react';
 import { loadCities } from '../data/loadCities';
-import { loadDiff, loadMorph, loadNeighbors, loadTerritory, preloadAround, type DiffCollection, type MorphCollection, type NeighborCollection, type TerritoryCollection } from '../data/loadEmpire';
+import { loadContemporaries, loadDiff, loadMorph, loadNeighbors, loadTerritory, preloadAround, type ContemporaryCollection, type DiffCollection, type MorphCollection, type NeighborCollection, type TerritoryCollection } from '../data/loadEmpire';
 import { prefersReducedMotion } from '../lib/motion';
 import type { City, Empire, TimelineStep } from '../types';
 import { addLand, baseStyle, DEM_SOURCE, MAX_BOUNDS, TERRAIN_EXAGGERATION } from './basemapStyle';
@@ -16,6 +16,8 @@ import { FigureLayer } from './figureLayer';
 import { GLIDE_HANDOFF_MS, GLIDE_MS, GlideLayer } from './glideLayer';
 import { MORPH_MS, MorphLayer } from './morphLayer';
 import { NeighborLayers } from './neighborLayers';
+import { ContemporaryLayers } from './contemporaryLayers';
+import { dropCoveredLabels } from '../lib/contemporaries';
 import { TerritoryLabels } from './territoryLabels';
 import { TerritoryLayers } from './territoryLayers';
 
@@ -38,10 +40,12 @@ interface Props {
   stateNames?: boolean;
   /** Voisins de l'époque (contours et noms). */
   neighbors?: boolean;
+  contemporaries?: boolean;
 }
 
 interface MapLayers {
   neighbors: NeighborLayers;
+  contemporaries: ContemporaryLayers;
   territories: TerritoryLayers;
   labels: TerritoryLabels;
   morph: MorphLayer;
@@ -93,7 +97,7 @@ function cameraGate(map: MapLibreMap, stepStart: number, speed: number, chained:
   });
 }
 
-export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, figures: figuresOn = true, countries2026 = false, stateNames = true, neighbors: neighborsOn = true }: Props) {
+export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, figures: figuresOn = true, countries2026 = false, stateNames = true, neighbors: neighborsOn = true, contemporaries: contemporariesOn = true }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const [layers, setLayers] = useState<MapLayers | null>(null);
@@ -116,6 +120,8 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
   namesRef.current = stateNames;
   const neighborsRef = useRef(neighborsOn);
   neighborsRef.current = neighborsOn;
+  const contemporariesRef = useRef(contemporariesOn);
+  contemporariesRef.current = contemporariesOn;
 
   // Création de la carte (une seule fois).
   useEffect(() => {
@@ -142,6 +148,8 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
       created = {
         // Voisins : tout en bas des calques d'empire (sous territoires et glissement).
         neighbors: new NeighborLayers(map),
+        // Autres empires de l'époque : juste au-dessus des voisins, sous les territoires.
+        contemporaries: new ContemporaryLayers(map),
         territories: new TerritoryLayers(map),
         morph: new MorphLayer(map),
         // Raster SDF : juste sous les couches territoire.
@@ -165,6 +173,7 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
       };
       created.labels.setEnabled(namesRef.current);
       created.neighbors.setEnabled(neighborsRef.current);
+      created.contemporaries.setEnabled(contemporariesRef.current);
       created.countries.setVisible(countriesRef.current);
       if (import.meta.env.DEV) (window as unknown as { __glide: GlideLayer }).__glide = created.glide;
       setLayers(created);
@@ -183,6 +192,7 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
       created?.countries.destroy();
       created?.labels.destroy();
       created?.neighbors.destroy();
+      created?.contemporaries.destroy();
       map.remove();
       mapRef.current = null;
     };
@@ -332,10 +342,17 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
       morphStep && !reduced ? loadMorph(empire.id, morphStep.id) : Promise.resolve(null);
     const diffPromise: Promise<DiffCollection | null> = forward ? loadDiff(empire.id, step.id) : Promise.resolve(null);
     const stepStart = performance.now();
-    const neighborsPromise: Promise<NeighborCollection> = loadNeighbors(empire.id, step.id);
+    const contemporariesPromise: Promise<ContemporaryCollection> = loadContemporaries(empire.id, step.id);
+    // Voisins sans les noms recouverts par un empire contemporain (évite les doubles étiquettes).
+    const neighborsPromise: Promise<NeighborCollection> = Promise.all([loadNeighbors(empire.id, step.id), contemporariesPromise]).then(
+      ([n, c]) => (contemporariesRef.current ? { ...n, features: dropCoveredLabels(n.features, c.features) } : n),
+    );
     /** Territoire final affiché : noms des États et voisins, une seule mise à jour par étape. */
     const reveal = (fc: TerritoryCollection) => {
       layers.labels.update(fc, empire.color);
+      void contemporariesPromise.then((c) => {
+        if (!stale) layers.contemporaries.update(c);
+      });
       void neighborsPromise.then((n) => {
         if (!stale) layers.neighbors.update(n);
       });
@@ -343,7 +360,10 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
     void Promise.all([loadTerritory(empire.id, step.territory), diffPromise, morphPromise]).then(async ([fc, diff, morph]) => {
       if (stale) return;
       if (shownRef.current === key) {
-        // même territoire : rien à animer, mais les voisins sont propres à l'étape
+        // même territoire : rien à animer, mais voisins et contemporains sont propres à l'étape
+        void contemporariesPromise.then((c) => {
+          if (!stale) layers.contemporaries.update(c);
+        });
         void neighborsPromise.then((n) => {
           if (!stale) layers.neighbors.update(n);
         });
@@ -427,6 +447,22 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
   useEffect(() => {
     layers?.neighbors.setEnabled(neighborsOn);
   }, [layers, neighborsOn]);
+
+  useEffect(() => {
+    if (!layers) return;
+    layers.contemporaries.setEnabled(contemporariesOn);
+    // les étiquettes de voisins dépendent des contemporains affichés : recalcul à la bascule
+    const step = empire.steps[index];
+    if (!step) return;
+    let stale = false;
+    void Promise.all([loadNeighbors(empire.id, step.id), loadContemporaries(empire.id, step.id)]).then(([n, c]) => {
+      if (!stale) layers.neighbors.update(contemporariesOn ? { ...n, features: dropCoveredLabels(n.features, c.features) } : n);
+    });
+    return () => {
+      stale = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [layers, contemporariesOn]);
 
   // Calque « Pays 2026 ».
   useEffect(() => {

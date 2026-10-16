@@ -5,15 +5,17 @@ interface Props {
   countries2026: boolean;
   stateNames: boolean;
   neighbors: boolean;
+  contemporaries: boolean;
   onToggleTilt: () => void;
   onToggleRelief: () => void;
   onToggleFigures: () => void;
   onToggleCountries2026: () => void;
   onToggleStateNames: () => void;
   onToggleNeighbors: () => void;
+  onToggleContemporaries: () => void;
 }
 
-export function ViewControls({ tilted, relief, figures, countries2026, stateNames, neighbors, onToggleTilt, onToggleRelief, onToggleFigures, onToggleCountries2026, onToggleStateNames, onToggleNeighbors }: Props) {
+export function ViewControls({ tilted, relief, figures, countries2026, stateNames, neighbors, contemporaries, onToggleTilt, onToggleRelief, onToggleFigures, onToggleCountries2026, onToggleStateNames, onToggleNeighbors, onToggleContemporaries }: Props) {
   return (
     <div className="view-controls" role="group" aria-label="Affichage de la carte">
       <button type="button" className="btn btn--ghost" onClick={onToggleTilt} title="Basculer entre vue à plat et vue inclinée">
@@ -64,6 +66,15 @@ export function ViewControls({ tilted, relief, figures, countries2026, stateName
         title="Afficher / masquer les États voisins de l'époque (contours et noms)"
       >
         Voisins : {neighbors ? 'oui' : 'non'}
+      </button>
+      <button
+        type="button"
+        className="btn btn--ghost"
+        aria-pressed={contemporaries}
+        onClick={onToggleContemporaries}
+        title="Afficher / masquer les autres empires de l'Atlas existant à la même date"
+      >
+        Contemporains : {contemporaries ? 'oui' : 'non'}
       </button>
     </div>
   );

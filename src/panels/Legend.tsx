@@ -1,6 +1,6 @@
 import { focusEntity } from '../map/focusEntity';
 import { memo, useEffect, useId, useState, type CSSProperties } from 'react';
-import { loadTerritory } from '../data/loadEmpire';
+import { loadContemporaries, loadTerritory } from '../data/loadEmpire';
 import { EVENT_TYPES } from '../lib/eventTypes';
 import { DIFF_COLORS } from '../map/diff';
 import { variantFill, variantLine, variantVassal } from '../map/color';
@@ -12,6 +12,7 @@ interface Props {
   step: TimelineStep | undefined;
   countries2026?: boolean;
   neighbors?: boolean;
+  contemporaries?: boolean;
 }
 
 /** Figurines d'illustration de la légende, par empire (défaut : Rome). */
@@ -60,7 +61,30 @@ function isMobile(): boolean {
   return typeof window !== 'undefined' && window.innerWidth < 768;
 }
 
-export const Legend = memo(function Legend({ empire, step, countries2026 = false, neighbors = true }: Props) {
+/** Empires contemporains présents à l'étape (couleur + nom), dans l'ordre d'apparition. */
+function useContemporaryEmpires(empireId: string, stepId: string | undefined, on: boolean) {
+  const [list, setList] = useState<{ id: string; name: string; color: string }[]>([]);
+  useEffect(() => {
+    if (!on || !stepId) {
+      setList([]);
+      return;
+    }
+    let stale = false;
+    void loadContemporaries(empireId, stepId).then((fc) => {
+      if (stale) return;
+      const seen = new Map<string, { id: string; name: string; color: string }>();
+      for (const f of fc.features) if (!seen.has(f.properties.empire)) seen.set(f.properties.empire, { id: f.properties.empire, name: f.properties.empireName, color: f.properties.color });
+      setList([...seen.values()]);
+    });
+    return () => {
+      stale = true;
+    };
+  }, [empireId, stepId, on]);
+  return list;
+}
+
+export const Legend = memo(function Legend({ empire, step, countries2026 = false, neighbors = true, contemporaries = true }: Props) {
+  const others = useContemporaryEmpires(empire.id, step?.id, contemporaries);
   const [open, setOpen] = useState(() => !isMobile());
   const titleId = useId();
   const bodyId = useId();
@@ -121,6 +145,19 @@ export const Legend = memo(function Legend({ empire, step, countries2026 = false
           ))}
           {entities.length > MAX_ENTITIES && <li>… et {entities.length - MAX_ENTITIES} autres entités</li>}
         </ul>
+        {others.length > 0 && (
+          <>
+            <h3>Empires contemporains</h3>
+            <ul className="legend__list legend__list--entities">
+              {others.map((o) => (
+                <li key={o.id}>
+                  <span className="legend__swatch legend__swatch--contemporary" style={{ background: `${o.color}38`, borderColor: o.color }} aria-hidden="true" />
+                  {o.name}
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
         <ul className="legend__list">
           <li>
             <span className="legend__swatch legend__swatch--diff" style={{ '--c': DIFF_COLORS.gained } as CSSProperties} aria-hidden="true">

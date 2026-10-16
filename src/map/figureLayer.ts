@@ -263,7 +263,7 @@ export class FigureLayer {
 
   /** Rectangle englobant des armées et du choc (coordonnées du conteneur), ou null. Mesuré une fois par passe. */
   private armiesRect(cx: number, cy: number): Rect | null {
-    const els = this.map.getContainer().querySelectorAll('.army-marker, .clash-marker, .army-label');
+    const els = this.map.getContainer().querySelectorAll('.army-regiment, .clash-marker, .clash-marker__title, .army-label');
     let l = Infinity;
     let t = Infinity;
     let r = -Infinity;

@@ -1,5 +1,5 @@
 import type { FeatureCollection, Geometry, MultiPolygon, Polygon } from 'geojson';
-import type { DiffKind, MorphProperties, Empire, EmpireStats, NeighborProperties, TerritoryProperties, TimelineStep } from '../types';
+import type { ContemporaryProperties, DiffKind, MorphProperties, Empire, EmpireStats, NeighborProperties, TerritoryProperties, TimelineStep } from '../types';
 import { labelPointsOf } from './labelPoints';
 
 export type TerritoryCollection = FeatureCollection<Polygon | MultiPolygon, TerritoryProperties>;
@@ -88,6 +88,7 @@ export function preloadAround(empire: Empire, index: number): void {
       void loadMorph(empire.id, step.id);
       void loadSdf(empire.id, step.id);
       void loadNeighbors(empire.id, step.id);
+      void loadContemporaries(empire.id, step.id);
     }
   }
 }
@@ -238,6 +239,39 @@ export function loadNeighbors(empireId: string, stepId: string): Promise<Neighbo
       }
     })();
     neighborCache.set(url, p);
+  }
+  return p;
+}
+
+/* ---------- Empires contemporains (par étape) ---------- */
+
+export type ContemporaryCollection = FeatureCollection<Geometry, ContemporaryProperties>;
+
+const EMPTY_CONTEMPORARIES: ContemporaryCollection = { type: 'FeatureCollection', features: [] };
+const contemporaryCache = new Map<string, Promise<ContemporaryCollection>>();
+
+export function contemporariesUrl(empireId: string, stepId: string): string {
+  return `${import.meta.env.BASE_URL}data/empires/${encodeURIComponent(empireId)}/contemporaries/${encodeURIComponent(stepId)}.geojson`;
+}
+
+/** Empires contemporains de l'étape. Fichier absent ou invalide : collection vide (jamais d'erreur). */
+export function loadContemporaries(empireId: string, stepId: string): Promise<ContemporaryCollection> {
+  const url = contemporariesUrl(empireId, stepId);
+  let p = contemporaryCache.get(url);
+  if (!p) {
+    p = (async () => {
+      try {
+        const res = await fetch(url);
+        if (!res.ok) return EMPTY_CONTEMPORARIES;
+        const data = (await res.json()) as ContemporaryCollection; // dev : index.html si absent, json() échoue
+        if (data?.type !== 'FeatureCollection' || !Array.isArray(data.features)) return EMPTY_CONTEMPORARIES;
+        const features = data.features.filter((f) => f?.geometry && typeof f.properties?.empire === 'string');
+        return { type: 'FeatureCollection', features } satisfies ContemporaryCollection;
+      } catch {
+        return EMPTY_CONTEMPORARIES;
+      }
+    })();
+    contemporaryCache.set(url, p);
   }
   return p;
 }

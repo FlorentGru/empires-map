@@ -230,3 +230,20 @@ export interface Figure {
  * - (Multi)LineString { kind: 'border' } : contour simplifié de l'État voisin.
  */
 export type NeighborProperties = { kind: 'label'; name: string; area: number } | { kind: 'border' };
+
+/**
+ * Empires contemporains d'une étape : public/data/empires/<empire>/contemporaries/<stepId>.geojson
+ * Territoire (privé de l'emprise de l'empire regardé) d'un autre empire F, à son étape la plus récente d'année ≤ celle de l'étape.
+ */
+export interface ContemporaryProperties {
+  /** Id de l'empire F. */
+  empire: string;
+  empireName: string;
+  /** Nom de l'entité (État) dans F. */
+  name: string;
+  color: string;
+  /** Étape de F dont vient le territoire. */
+  stepId: string;
+  year: number;
+  status: 'core' | 'vassal';
+}

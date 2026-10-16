@@ -9,7 +9,7 @@ import { readBool, writeBool } from './lib/settings';
 import { EventPanel } from './panels/EventPanel';
 import { readUrlState, writeUrlState } from './player/urlState';
 import { continuedArmies } from './map/armyLayer';
-import { BASE_STEP_MS, CHAINED_STEP_MS, usePlayer } from './player/usePlayer';
+import { BASE_STEP_MS, BATTLE_STEP_MS, CHAINED_STEP_MS, usePlayer } from './player/usePlayer';
 import { chapterAt } from './lib/periods';
 import { useStory } from './story/useStory';
 import { Timeline } from './timeline/Timeline';
@@ -47,6 +47,16 @@ export function App() {
     setGalleryOpen(false);
   }, []);
 
+  // Clic « Voir cet empire » d'un empire contemporain sur la carte (calque contemporaryLayers).
+  useEffect(() => {
+    const onGoto = (e: Event) => {
+      const d = (e as CustomEvent<{ empire: string; step: string }>).detail;
+      if (d && getEmpire(d.empire)) goToStep(d.empire, d.step);
+    };
+    window.addEventListener('atlas:goto', onGoto);
+    return () => window.removeEventListener('atlas:goto', onGoto);
+  }, [goToStep]);
+
   if (!empire) {
     return (
       <main className="empty-state">
@@ -78,7 +88,9 @@ function initialIndex(empire: Empire): number {
 
 function Atlas({ empire, onSelectEmpire, onOpenGallery, onContext }: { empire: Empire; onSelectEmpire: (id: string) => void; onOpenGallery: () => void; onContext: (c: ChatContext) => void }) {
   const player = usePlayer(empire.steps.length, initialIndex(empire), (i) =>
-    continuedArmies(empire.steps, i).length > 0 ? CHAINED_STEP_MS : BASE_STEP_MS,
+    continuedArmies(empire.steps, i).length > 0
+      ? CHAINED_STEP_MS
+      : (empire.steps[i]?.armies ?? []).some((a) => a.path.length >= 2) ? BATTLE_STEP_MS : BASE_STEP_MS,
   );
   const step = empire.steps[player.index];
   const [panelOpen, setPanelOpen] = useState(true);
@@ -89,6 +101,7 @@ function Atlas({ empire, onSelectEmpire, onOpenGallery, onContext }: { empire: E
   const [countries2026, setCountries2026] = useState(() => readBool('atlas.countries2026', false));
   const [stateNames, setStateNames] = useState(() => readBool('atlas.stateNames', true));
   const [neighbors, setNeighbors] = useState(() => readBool('atlas.neighbors', true));
+  const [contemporaries, setContemporaries] = useState(() => readBool('atlas.contemporaries', true));
   const openPanel = useCallback(() => setPanelOpen(true), []);
   const story = useStory(player, step, openPanel, empire);
   const storyEnabled = story.controls.enabled;
@@ -111,6 +124,7 @@ function Atlas({ empire, onSelectEmpire, onOpenGallery, onContext }: { empire: E
 
   const toggleStateNames = useCallback(() => setStateNames((v) => { writeBool('atlas.stateNames', !v); return !v; }), []);
   const toggleNeighbors = useCallback(() => setNeighbors((v) => { writeBool('atlas.neighbors', !v); return !v; }), []);
+  const toggleContemporaries = useCallback(() => setContemporaries((v) => { writeBool('atlas.contemporaries', !v); return !v; }), []);
 
   useEffect(() => {
     writeUrlState(empire.id, step?.id);
@@ -123,12 +137,12 @@ function Atlas({ empire, onSelectEmpire, onOpenGallery, onContext }: { empire: E
   return (
     <div className="app">
       <h1 className="visually-hidden">Atlas des Empires — {empire.name}</h1>
-      <WorldMap empire={empire} index={player.index} panelOpen={panelOpen} tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} stateNames={stateNames} neighbors={neighbors} speed={player.speed} />
+      <WorldMap empire={empire} index={player.index} panelOpen={panelOpen} tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} stateNames={stateNames} neighbors={neighbors} contemporaries={contemporaries} speed={player.speed} />
 
       <div className="top-bar">
         <EmpirePicker empires={EMPIRES} current={empire} onSelect={onSelectEmpire} />
         <div className="top-bar__right">
-          <ViewControls tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} stateNames={stateNames} neighbors={neighbors} onToggleTilt={toggleTilt} onToggleRelief={toggleRelief} onToggleFigures={toggleFigures} onToggleCountries2026={toggleCountries2026} onToggleStateNames={toggleStateNames} onToggleNeighbors={toggleNeighbors} />
+          <ViewControls tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} stateNames={stateNames} neighbors={neighbors} contemporaries={contemporaries} onToggleTilt={toggleTilt} onToggleRelief={toggleRelief} onToggleFigures={toggleFigures} onToggleCountries2026={toggleCountries2026} onToggleStateNames={toggleStateNames} onToggleNeighbors={toggleNeighbors} onToggleContemporaries={toggleContemporaries} />
           <button type="button" className="btn btn--ghost" onClick={onOpenGallery} aria-haspopup="dialog">
             Galerie
           </button>
@@ -145,7 +159,7 @@ function Atlas({ empire, onSelectEmpire, onOpenGallery, onContext }: { empire: E
         onToggle={togglePanel}
         story={panelStory}
       />
-      <Legend empire={empire} step={step} countries2026={countries2026} neighbors={neighbors} />
+      <Legend empire={empire} step={step} countries2026={countries2026} neighbors={neighbors} contemporaries={contemporaries} />
       <Timeline empire={empire} player={player} compare2026={countries2026} story={story.controls} />
       <AboutModal open={aboutOpen} onClose={() => setAboutOpen(false)} />
     </div>
