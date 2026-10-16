@@ -51,7 +51,7 @@ def test_agent_se_construit():
     from atlas_agent.agent import root_agent
 
     assert root_agent.name == "guide_atlas"
-    assert len(root_agent.tools) == 7
+    assert len(root_agent.tools) == 8
 
 
 def test_chercher_personnage_trouve_cesar_et_ses_etapes():
@@ -74,3 +74,11 @@ def test_evenement_mondial_peste_noire_et_monde_en_1347():
     assert any("Peste noire" in e["nom"] for e in monde["evenements"])
     assert monde["routes_actives"], "des routes commerciales sont actives en 1347"
     assert "Notre-Dame de Paris" in monde["monuments_debout"]
+
+
+def test_profil_empire_rome_sous_trajan():
+    r = tools.profil_empire("rome", 117)
+    assert r["periode"]["id"] == "haut-empire"
+    assert r["periode"]["population"]["total"]["value"] > 10_000_000
+    assert "periodes" in tools.profil_empire("rome")
+    assert "erreur" in tools.profil_empire("atlantide")

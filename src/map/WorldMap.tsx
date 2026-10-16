@@ -52,6 +52,8 @@ interface Props {
   routes?: boolean;
   /** Épidémies, catastrophes et guerres meurtrières en cours. */
   disasters?: boolean;
+  /** Carte d'un panneau de comparaison : marges réduites, sans panneaux par-dessus. */
+  compact?: boolean;
 }
 
 interface MapLayers {
@@ -77,7 +79,11 @@ const INITIAL_VIEW = { center: [16, 38] as [number, number], zoom: 3 };
 /** Dernière vue de caméra : la carte recréée au changement d'empire repart de là, puis vole vers la nouvelle vue. */
 let lastView: { empireId: string; center: [number, number]; zoom: number } | null = null;
 
-function viewPadding(panelOpen: boolean): PaddingOptions {
+/** Carte compacte (vue de comparaison) : pas de panneaux par-dessus, marges réduites. */
+let compactMaps = 0;
+
+function viewPadding(panelOpen: boolean, compact = compactMaps > 0): PaddingOptions {
+  if (compact) return { top: 16, left: 16, right: 16, bottom: 16 };
   const mobile = window.innerWidth < 768;
   if (mobile) return { top: 70, left: 10, right: 10, bottom: panelOpen ? window.innerHeight * 0.45 : 150 };
   // La légende ouverte (en bas à gauche) masque une bande de carte : on l'exclut du cadrage.
@@ -111,7 +117,15 @@ function cameraGate(map: MapLibreMap, stepStart: number, speed: number, chained:
   });
 }
 
-export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, figures: figuresOn = true, countries2026 = false, stateNames = true, neighbors: neighborsOn = true, contemporaries: contemporariesOn = true, monuments: monumentsOn = true, routes: routesOn = true, disasters: disastersOn = true }: Props) {
+export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, figures: figuresOn = true, countries2026 = false, stateNames = true, neighbors: neighborsOn = true, contemporaries: contemporariesOn = true, monuments: monumentsOn = true, routes: routesOn = true, disasters: disastersOn = true, compact = false }: Props) {
+  // Les cartes compactes ne cohabitent pas avec la vue normale : un compteur global suffit.
+  useEffect(() => {
+    if (!compact) return;
+    compactMaps++;
+    return () => {
+      compactMaps--;
+    };
+  }, [compact]);
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const [layers, setLayers] = useState<MapLayers | null>(null);

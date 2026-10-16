@@ -20,6 +20,22 @@ import { ChatPanel } from './chat/ChatPanel';
 import { QuizDialog } from './quiz/QuizDialog';
 import type { ChatContext } from './chat/ChatPanel';
 import { clearWorldUrl, DEFAULT_WORLD_YEAR, readWorldYear, WorldYearView } from './world/WorldYearView';
+import { CompareView } from './compare/CompareView';
+
+/** ?compare=rome,china → les deux empires comparés (connus et distincts), sinon null. */
+function readCompare(): { a: string; b: string } | null {
+  const [a, b] = (new URLSearchParams(window.location.search).get('compare') ?? '').split(',');
+  if (!a || !b || a === b || !EMPIRES.some((e) => e.id === a) || !EMPIRES.some((e) => e.id === b)) return null;
+  return { a, b };
+}
+
+function writeCompare(c: { a: string; b: string } | null) {
+  const url = new URL(window.location.href);
+  if (c) url.searchParams.set('compare', `${c.a},${c.b}`);
+  else url.searchParams.delete('compare');
+  // Virgule lisible dans l'URL partagée (?compare=rome,china plutôt que rome%2Cchina).
+  window.history.replaceState(null, '', url.toString().replace(/compare=([a-z_-]+)%2C/, 'compare=$1,'));
+}
 import type { Empire } from './types';
 
 // Galerie des figurines : chargée à la demande.
@@ -37,6 +53,13 @@ export function App() {
   const [empireId, setEmpireId] = useState(() => getEmpire(readUrlState().empire)?.id);
   const empire = getEmpire(empireId);
   const [navKey, setNavKey] = useState(0);
+  // Comparaison de deux empires (?compare=a,b) à la place de l'Atlas.
+  const [compare, setCompareState] = useState(readCompare);
+  const setCompare = useCallback((c: { a: string; b: string } | null) => {
+    writeCompare(c);
+    setCompareState(c);
+  }, []);
+
   // Vue « Le monde en l'an X » (?world=1&year=…) à la place de l'Atlas d'un empire.
   const [world, setWorld] = useState<{ year: number } | null>(() => (new URLSearchParams(window.location.search).get('world') === '1' ? { year: readWorldYear() } : null));
   const leaveWorld = useCallback(() => {
@@ -92,6 +115,20 @@ export function App() {
       </main>
     );
   }
+  if (compare) {
+    return (
+      <CompareView
+        key={`${compare.a}|${compare.b}`}
+        a={compare.a}
+        b={compare.b}
+        onChange={(a, b) => setCompare({ a, b })}
+        onExit={() => {
+          setEmpireId(compare.a);
+          setCompare(null);
+        }}
+      />
+    );
+  }
   if (world) {
     return (
       <>
@@ -109,7 +146,7 @@ export function App() {
   // `key` : changer d'empire réinitialise le lecteur et la carte.
   return (
     <>
-      <Atlas key={`${empire.id}:${navKey}`} empire={empire} onSelectEmpire={setEmpireId} onOpenWorld={(year) => setWorld({ year })} onOpenGallery={() => setGalleryOpen(true)} onContext={setChatContext} />
+      <Atlas key={`${empire.id}:${navKey}`} empire={empire} onSelectEmpire={setEmpireId} onOpenWorld={(year) => setWorld({ year })} onOpenCompare={() => setCompare({ a: empire.id, b: EMPIRES.find((e) => e.id !== empire.id)!.id })} onOpenGallery={() => setGalleryOpen(true)} onContext={setChatContext} />
       <ChatPanel context={chatContext} goToStep={goToStep} onOpenQuiz={openQuiz} />
       <QuizDialog open={quizOpen} onClose={() => setQuizOpen(false)} empire={empire.id} />
       {galleryOpen && (
@@ -128,7 +165,7 @@ function initialIndex(empire: Empire): number {
   return i >= 0 ? i : 0;
 }
 
-function Atlas({ empire, onSelectEmpire, onOpenWorld, onOpenGallery, onContext }: { empire: Empire; onSelectEmpire: (id: string) => void; onOpenWorld: (year: number) => void; onOpenGallery: () => void; onContext: (c: ChatContext) => void }) {
+function Atlas({ empire, onSelectEmpire, onOpenWorld, onOpenCompare, onOpenGallery, onContext }: { empire: Empire; onSelectEmpire: (id: string) => void; onOpenWorld: (year: number) => void; onOpenCompare: () => void; onOpenGallery: () => void; onContext: (c: ChatContext) => void }) {
   const player = usePlayer(empire.steps.length, initialIndex(empire), (i) =>
     battleStepMs(empire.steps[i]) ?? BASE_STEP_MS,
   );
@@ -192,6 +229,9 @@ function Atlas({ empire, onSelectEmpire, onOpenWorld, onOpenGallery, onContext }
           <ViewControls tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} stateNames={stateNames} neighbors={neighbors} contemporaries={contemporaries} monuments={monuments} routes={routes} disasters={disasters} onToggleTilt={toggleTilt} onToggleRelief={toggleRelief} onToggleFigures={toggleFigures} onToggleCountries2026={toggleCountries2026} onToggleStateNames={toggleStateNames} onToggleNeighbors={toggleNeighbors} onToggleContemporaries={toggleContemporaries} onToggleMonuments={toggleMonuments} onToggleRoutes={toggleRoutes} onToggleDisasters={toggleDisasters} />
           <button type="button" className="btn btn--ghost" onClick={onOpenGallery} aria-haspopup="dialog">
             Galerie
+          </button>
+          <button type="button" className="btn btn--ghost" onClick={onOpenCompare} title="Comparer cet empire à un autre : cartes, population, économie, armée, politique…">
+            ⇄ Comparer
           </button>
           <button type="button" className="btn btn--ghost" onClick={() => setFeedbackOpen(true)} aria-haspopup="dialog" title="Proposer une idée ou signaler une erreur">
             Votre avis

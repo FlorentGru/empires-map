@@ -319,6 +319,34 @@ def chercher_evenement_mondial(requete: str = "", annee: int | None = None) -> d
     return resultat
 
 
+def profil_empire(empire: str, annee: int | None = None) -> dict:
+    """Donne le profil d'un empire pour une période : population, économie, armée, politique, société, culture, infrastructures.
+
+    Args:
+        empire: identifiant de l'empire (ex. « rome », « china », « mongols », « napoleon »).
+        annee: année visée (négative avant J.-C.) ; si absente, toutes les périodes sont résumées.
+
+    Returns:
+        La période contenant l'année (ou la plus proche), avec ses estimations chiffrées (valeur, fourchette,
+        année de référence, source) et ses descriptions ; sans année, la liste des périodes avec population.
+    """
+    fichier = DOSSIER_EMPIRES / empire / "profile.json"
+    if not fichier.exists():
+        return {"erreur": f"Pas de profil pour l'empire « {empire} »."}
+    periodes = json.loads(fichier.read_text(encoding="utf-8"))["periods"]
+    if annee is None:
+        return {
+            "empire": empire,
+            "periodes": [
+                {"id": p["id"], "nom": p["name"], "debut": _annee(p["start"]), "fin": _annee(p["end"]), "population": p["population"]["total"]["value"]}
+                for p in periodes
+            ],
+        }
+    dedans = [p for p in periodes if p["start"] <= annee <= p["end"]]
+    periode = dedans[-1] if dedans else min(periodes, key=lambda p: abs(p["start"] - annee))
+    return {"empire": empire, "periode": periode}
+
+
 def naviguer_vers_etape(empire: str, etape_id: str, tool_context: ToolContext) -> dict:
     """Déplace la carte de l'utilisateur sur une étape précise de la frise.
 
@@ -341,4 +369,4 @@ def naviguer_vers_etape(empire: str, etape_id: str, tool_context: ToolContext) -
     return {"statut": "ok", "message": f"La carte va s'ouvrir sur « {etape['title']} » ({_annee(etape['year'])})."}
 
 
-OUTILS = [lister_empires, chercher_etapes, lire_etape, chercher_ville, chercher_personnage, chercher_evenement_mondial, naviguer_vers_etape]
+OUTILS = [lister_empires, chercher_etapes, lire_etape, chercher_ville, chercher_personnage, chercher_evenement_mondial, profil_empire, naviguer_vers_etape]
