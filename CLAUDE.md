@@ -1,0 +1,23 @@
+# Atlas des Empires — contexte pour Claude
+
+Chargé automatiquement au début de chaque session Claude Code, sur toutes les machines (versionné dans git). À garder court : il est relu à chaque session. Le détail est dans `docs/`.
+
+## Le projet
+Carte interactive (React + Vite + TS strict + MapLibre GL, relief 3D) qui montre étape par étape l'évolution d'empires : frontières qui glissent (SDF + shader en custom layer), batailles, armées, personnages, mode Histoire narré, chatbot ADK.
+- Architecture : `docs/ARCHITECTURE.md`. Agent ADK (Python, `agent/`) : `docs/AGENT.md`. Lancement et tests : `README.md`.
+- Contrat de données : `src/types.ts`. Données : `data/empires/<id>/timeline.json`, `data/cities.json`, pipeline géo `scripts/` → `public/data/empires/<id>/`.
+- Ajouter un empire : skill `.claude/skills/ajouter-un-empire/` (historien, puis carte + front + figurines).
+
+## État (à mettre à jour en fin de session)
+- Sur `main` : Rome, Napoléon, Chine, Mongols ; chatbot ADK (Gemini ou Claude via `ATLAS_MODEL`).
+- Brouillons à finaliser, un par session : `data/drafts/{carolingiens,saint-empire,espagne}/` (voir `data/drafts/README.md`). Espagne : élargir le fond de carte vers [-130,-56,165,62].
+
+## Règles de travail
+- Répondre en français. L'utilisateur se forme au métier d'ingénieur IA : expliquer les choix.
+- Commit + push après chaque changement. CI GitHub seulement sur `main` et les PR.
+- Ne jamais créer, lire ni manipuler de clé API (l'utilisateur la met lui-même dans `agent/.env`).
+- Sous-agents : modèle Sonnet, peu nombreux, séquentiels (parallèles seulement sur fichiers disjoints), prompts précis.
+- Économie de tokens : ne jamais lire en entier les gros JSON/GeoJSON (extraits via `node -e`), peu de captures.
+- Captures : Chromium du projet (`@playwright/test`) en headless ; l'utilisateur juge la fluidité dans son navigateur (Brave).
+- Le serveur Vite doit être relancé après régénération de `public/data` ; ne pas utiliser `pkill -f` avec un motif qui correspond à la commande elle-même.
+- Deux machines : Linux (ce PC, Node installé) et un PC Windows (`C:\Users\fgru\project\empires-map`, sans Node). `git pull` en début de session.
