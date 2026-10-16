@@ -29,9 +29,11 @@ interface Props {
   context: ChatContext | null;
   /** Navigation existante de l'app (même fonction que la galerie). */
   goToStep: (empire: string, step: string) => void;
+  /** Ouvre le quiz du sage (bouton à côté de « Demander au sage »). */
+  onOpenQuiz?: () => void;
 }
 
-export function ChatPanel({ context, goToStep }: Props) {
+export function ChatPanel({ context, goToStep, onOpenQuiz }: Props) {
   const [open, setOpen] = useState(false);
   const [msgs, setMsgs] = useState<Msg[]>([]);
   const [input, setInput] = useState('');
@@ -86,10 +88,17 @@ export function ChatPanel({ context, goToStep }: Props) {
 
   if (!open) {
     return (
-      <button ref={fabRef} type="button" className="chat-fab" onClick={() => setOpen(true)} aria-haspopup="dialog">
-        <span className="chat-fab__sage" aria-hidden="true"><Character archetype="sage" width={38} height={51} /></span>
-        Demander au sage
-      </button>
+      <>
+        {onOpenQuiz && (
+          <button type="button" className="chat-fab chat-fab--quiz" onClick={onOpenQuiz} aria-haspopup="dialog">
+            🎓 Quiz
+          </button>
+        )}
+        <button ref={fabRef} type="button" className="chat-fab" onClick={() => setOpen(true)} aria-haspopup="dialog">
+          <span className="chat-fab__sage" aria-hidden="true"><Character archetype="sage" width={38} height={51} /></span>
+          Demander au sage
+        </button>
+      </>
     );
   }
   return (

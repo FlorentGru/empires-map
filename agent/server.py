@@ -6,19 +6,22 @@ Lancement depuis la racine du dépôt : npm run agent
 import os
 import uuid
 from pathlib import Path
+from typing import Literal
 
 from dotenv import load_dotenv
 
 load_dotenv(Path(__file__).parent / ".env")  # avant l'import de l'agent (lit ATLAS_MODEL)
 
-from fastapi import FastAPI, HTTPException  # noqa: E402
+from fastapi import FastAPI, HTTPException, Query  # noqa: E402
 from fastapi.middleware.cors import CORSMiddleware  # noqa: E402
 from google.adk.runners import Runner  # noqa: E402
 from google.adk.sessions import InMemorySessionService  # noqa: E402
 from google.genai import types  # noqa: E402
-from pydantic import BaseModel  # noqa: E402
+from pydantic import BaseModel, Field  # noqa: E402
 
+from agent.atlas_agent import tools  # noqa: E402
 from agent.atlas_agent.agent import root_agent  # noqa: E402
+from agent.atlas_agent.quiz import generer_quiz, quiz_hors_ligne  # noqa: E402
 
 APP_NAME = "atlas"
 USER_ID = "visiteur"
@@ -85,3 +88,32 @@ async def chat(req: ChatRequest):
     session = await session_service.get_session(app_name=APP_NAME, user_id=USER_ID, session_id=session_id)
     actions = session.state.get("actions", []) if session else []
     return {"reponse": reponse, "actions": actions, "session_id": session_id, "outils_appeles": outils}
+
+
+# ---------------------------------------------------------------- quiz
+
+
+class QuizRequest(BaseModel):
+    empire: str | None = None
+    theme: str | None = None
+    difficulte: Literal["facile", "moyen", "difficile"] = "moyen"
+    n: int = Field(default=5, ge=3, le=10)
+
+
+def _verifier_empire(empire: str | None) -> str | None:
+    empire = empire or None
+    if empire and empire not in tools._empires():
+        raise HTTPException(status_code=400, detail=f"Empire inconnu : {empire}")
+    return empire
+
+
+@app.post("/api/quiz")
+async def quiz(req: QuizRequest):
+    empire = _verifier_empire(req.empire)
+    resultat, source = await generer_quiz(empire, req.theme, req.difficulte, req.n)
+    return {"source": source, "quiz": resultat.model_dump()}
+
+
+@app.get("/api/quiz/hors-ligne")
+async def quiz_hors_ligne_endpoint(empire: str | None = None, n: int = Query(default=5, ge=3, le=10)):
+    return {"source": "hors_ligne", "quiz": quiz_hors_ligne(_verifier_empire(empire), n).model_dump()}

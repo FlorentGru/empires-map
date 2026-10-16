@@ -17,6 +17,7 @@ import { chapterAt } from './lib/periods';
 import { useStory } from './story/useStory';
 import { Timeline } from './timeline/Timeline';
 import { ChatPanel } from './chat/ChatPanel';
+import { QuizDialog } from './quiz/QuizDialog';
 import type { ChatContext } from './chat/ChatPanel';
 import { clearWorldUrl, DEFAULT_WORLD_YEAR, readWorldYear, WorldYearView } from './world/WorldYearView';
 import type { Empire } from './types';
@@ -44,6 +45,8 @@ export function App() {
   }, []);
   const [galleryOpen, setGalleryOpen] = useState(() => new URLSearchParams(window.location.search).get('figures') === 'gallery');
   const [chatContext, setChatContext] = useState<ChatContext | null>(null);
+  const [quizOpen, setQuizOpen] = useState(false);
+  const openQuiz = useCallback(() => setQuizOpen(true), []);
   const closeGallery = useCallback(() => {
     clearFiguresParam();
     setPersonRef(null);
@@ -93,7 +96,8 @@ export function App() {
     return (
       <>
         <WorldYearView initialYear={world.year} backName={empire.name} onBack={leaveWorld} />
-        <ChatPanel context={chatContext} goToStep={goToStep} />
+        <ChatPanel context={chatContext} goToStep={goToStep} onOpenQuiz={openQuiz} />
+      <QuizDialog open={quizOpen} onClose={() => setQuizOpen(false)} empire={empire.id} />
         {galleryOpen && (
           <Suspense fallback={null}>
             <Gallery onClose={closeGallery} onNavigate={goToStep} initialPerson={personRef} />
@@ -106,7 +110,8 @@ export function App() {
   return (
     <>
       <Atlas key={`${empire.id}:${navKey}`} empire={empire} onSelectEmpire={setEmpireId} onOpenWorld={(year) => setWorld({ year })} onOpenGallery={() => setGalleryOpen(true)} onContext={setChatContext} />
-      <ChatPanel context={chatContext} goToStep={goToStep} />
+      <ChatPanel context={chatContext} goToStep={goToStep} onOpenQuiz={openQuiz} />
+      <QuizDialog open={quizOpen} onClose={() => setQuizOpen(false)} empire={empire.id} />
       {galleryOpen && (
         <Suspense fallback={null}>
           <Gallery onClose={closeGallery} onNavigate={goToStep} initialPerson={personRef} />

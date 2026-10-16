@@ -1,0 +1,31 @@
+/* Quiz du sage. Préfixe .quiz- ; réutilise la charte parchemin de .about. */
+.quiz { width: min(520px, calc(100vw - 32px)); }
+.quiz__form, .quiz__play, .quiz__end, .quiz__error { display: flex; flex-direction: column; gap: 12px; }
+.quiz__field { display: flex; flex-direction: column; gap: 4px; font-weight: 600; }
+.quiz__field select {
+  padding: 7px 9px; font: inherit; color: var(--ink);
+  background: var(--parchment-strong); border: 1px solid var(--parchment-edge); border-radius: 6px;
+}
+.quiz__hint { margin: 0; font-size: 0.85rem; color: var(--ink-soft); }
+.quiz__status { margin: 8px 0; font-style: italic; }
+.quiz__actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.quiz__meta { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin: 0; font-size: 0.85rem; color: var(--ink-soft); }
+.quiz__badge { padding: 2px 9px; border: 1px solid var(--parchment-edge); border-radius: 999px; font-size: 0.78rem; }
+.quiz__badge--sage { background: var(--parchment-strong); }
+.quiz__question { margin: 0; font-size: 1.05rem; outline: none; }
+.quiz__choices { display: grid; gap: 8px; }
+.quiz__choice {
+  padding: 10px 12px; font: inherit; text-align: left; color: var(--ink);
+  background: var(--parchment); border: 1px solid var(--parchment-edge); border-radius: 8px; cursor: pointer;
+}
+.quiz__choice:hover:not(:disabled) { background: var(--parchment-strong); }
+.quiz__choice:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.quiz__choice:disabled { cursor: default; color: var(--ink); }
+.quiz__choice--right { background: #cfe5c4; border-color: #3f7a2e; }
+.quiz__choice--wrong { background: #f0c9c2; border-color: #a63a2b; }
+.quiz__result p { margin: 0 0 8px; }
+.quiz__verdict { font-weight: 700; }
+.quiz__verdict--ok { color: #2f6a1f; }
+.quiz__verdict--ko { color: #8f2c1f; }
+.quiz__score { margin: 0; font-size: 1.6rem; font-weight: 700; }
+.quiz__error code { padding: 1px 5px; background: var(--parchment-strong); border-radius: 4px; }

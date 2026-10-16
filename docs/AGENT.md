@@ -201,7 +201,31 @@ Règles d'or pour un agent métier sensible :
 
 ---
 
-## 10. Lancer et expérimenter
+## 10. Quiz : agents enchaînés et sorties structurées
+
+Le quiz du sage (`agent/atlas_agent/quiz.py`, `POST /api/quiz`) assemble **deux agents** dans un `SequentialAgent` :
+
+```python
+chercheur = LlmAgent(name="chercheur_quiz", tools=[lister_empires, chercher_etapes, lire_etape, ...],
+                     output_key="matiere")            # faits sourcés, texte libre
+redacteur = LlmAgent(name="redacteur_quiz", output_schema=Quiz, output_key="quiz",
+                     instruction="... Matière collectée : {matiere} ...")   # JSON validé, sans outil
+SequentialAgent(name="quiz_atlas", sub_agents=[chercheur, redacteur])
+```
+
+**Pourquoi deux agents ?** Historiquement, un `LlmAgent` avec `output_schema` ne pouvait pas appeler d'outils : le schéma impose au modèle de ne répondre qu'en JSON. Dans la version installée (ADK 2.x, `llm_agent.py`, `_capabilities.py`), le couple est accepté seulement si le modèle le déclare (`capabilities.output_schema_and_tools`) : c'est le cas de Gemini **sur Vertex AI**, pas de Gemini via clé API ni de Claude via LiteLLM. Séparer « chercher » et « rédiger » reste donc la solution portable, et elle clarifie les rôles : un agent qui explore, un agent qui met en forme.
+
+**`output_key` et l'état de session.** Chaque agent écrit sa réponse finale dans `session.state[output_key]`. `{matiere}` dans l'instruction du second agent est remplacé par cette valeur : c'est ainsi que les agents se passent le relais. Avec `output_schema`, ADK valide la réponse (`validate_schema`) et stocke un `dict` ; on relit `session.state["quiz"]` après `runner.run_async(...)`, dans une session neuve par quiz.
+
+**Valider, puis se replier.** Le schéma pydantic impose la forme (4 choix, index 0-3), mais pas la vérité : `valider_quiz` vérifie que `empire` et `etape_id` existent vraiment dans `data/empires`, que les choix sont distincts, etc. `generer_quiz` essaie deux fois (la 2e en renvoyant les erreurs au modèle) puis, en cas d'échec ou d'exception (pas de clé, réseau), retombe sur `quiz_hors_ligne`, déterministe (années, vainqueurs, capitales, personnages tirés des données) : la réponse porte `source: "sage" | "hors_ligne"` et l'interface l'affiche.
+
+**Tester sans modèle** (`agent/tests/test_quiz.py`) : on inspecte la structure de l'agent (types, `output_schema`, `output_key`), on teste `valider_quiz` et `quiz_hors_ligne` (graine fixée), et on remplace `_lancer_agent` par un faux via `monkeypatch` pour vérifier le réessai et le repli. Aucun test n'appelle de modèle.
+
+**Transposition aux fiches de paie.** Même architecture : un agent *collecteur* lit les données par des outils minimaux (contrat, heures, primes) et écrit `donnees_paie` dans l'état ; un agent *rédacteur* sans outil produit un `Bulletin` (schéma pydantic) ; le code, jamais le modèle, calcule les montants et `valider_bulletin` rejette les incohérences (totaux, taux, champs obligatoires) avant toute écriture. En cas d'échec : repli sur un brouillon déterministe ou renvoi à un humain, jamais une valeur inventée.
+
+---
+
+## 11. Lancer et expérimenter
 
 ```bash
 cp agent/.env.example agent/.env      # puis mets ta clé dans agent/.env
