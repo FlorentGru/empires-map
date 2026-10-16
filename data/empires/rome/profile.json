@@ -1,0 +1,670 @@
+{
+  "empire": "rome",
+  "periods": [
+    {
+      "id": "republique",
+      "name": "La République romaine",
+      "start": -509,
+      "end": -27,
+      "population": {
+        "total": {
+          "value": 50000000,
+          "low": 40000000,
+          "high": 60000000,
+          "year": -27,
+          "note": "Population des territoires contrôlés à la fin de la République ; bien plus modeste aux débuts.",
+          "source": {
+            "label": "Wikipédia : Empire romain",
+            "url": "https://fr.wikipedia.org/wiki/Empire_romain"
+          }
+        },
+        "cities": [
+          {
+            "name": "Rome",
+            "population": {
+              "value": 1000000,
+              "low": 500000,
+              "high": 1200000,
+              "year": -27,
+              "source": {
+                "label": "Wikipédia : Rome antique",
+                "url": "https://fr.wikipedia.org/wiki/Rome_antique"
+              }
+            }
+          },
+          {
+            "name": "Alexandrie",
+            "population": {
+              "value": 400000,
+              "low": 300000,
+              "high": 500000,
+              "year": -27,
+              "source": {
+                "label": "Wikipédia : Alexandrie",
+                "url": "https://fr.wikipedia.org/wiki/Alexandrie"
+              }
+            }
+          },
+          {
+            "name": "Carthage",
+            "population": {
+              "value": 100000,
+              "low": 50000,
+              "high": 200000,
+              "year": -27,
+              "source": {
+                "label": "Wikipédia : Carthage",
+                "url": "https://fr.wikipedia.org/wiki/Carthage"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Blé de Sicile et d'Égypte",
+          "Argent des mines d'Espagne",
+          "Esclaves de guerre",
+          "Vin et huile d'olive"
+        ],
+        "currency": "Denier d'argent, frappé à partir de 211 av. J.-C.",
+        "taxation": "Tribut payé par les provinces, collecté par des sociétés de publicains ; les citoyens romains paient peu.",
+        "trade": "Commerce méditerranéen actif ; la mer devient un « lac romain » après la chute de Carthage."
+      },
+      "army": {
+        "size": {
+          "value": 150000,
+          "low": 100000,
+          "high": 250000,
+          "year": -50,
+          "note": "Légions de César et de ses rivaux ; en 218 av. J.-C., Rome et ses alliés pouvaient lever plus de 700 000 hommes.",
+          "source": {
+            "label": "Wikipédia : Armée romaine",
+            "url": "https://fr.wikipedia.org/wiki/Arm%C3%A9e_romaine"
+          }
+        },
+        "composition": "Légions de citoyens-fantassins, appuyées par des alliés italiens et de la cavalerie étrangère.",
+        "recruitment": "Levée de citoyens propriétaires, puis, après Marius (107 av. J.-C.), armée de volontaires pauvres.",
+        "famousUnits": [
+          "Légions de Scipion",
+          "Légions de César",
+          "Dixième légion"
+        ],
+        "innovations": [
+          "Manipule souple",
+          "Camp fortifié bâti chaque soir",
+          "Réforme de Marius"
+        ]
+      },
+      "politics": {
+        "regime": "République aristocratique à magistratures annuelles.",
+        "head": "Deux consuls élus pour un an ; un dictateur en cas de crise grave.",
+        "succession": "Élection annuelle ; aucun pouvoir héréditaire, en théorie.",
+        "institutions": "Sénat, assemblées du peuple, tribuns de la plèbe.",
+        "administration": "Provinces confiées à d'anciens magistrats ; cités alliées gardant leurs coutumes.",
+        "provinces": {
+          "value": 15,
+          "low": 12,
+          "high": 18,
+          "year": -44,
+          "source": {
+            "label": "Wikipédia : République romaine",
+            "url": "https://fr.wikipedia.org/wiki/R%C3%A9publique_romaine"
+          }
+        },
+        "law": "Loi des Douze Tables (450 av. J.-C.), puis édits des préteurs."
+      },
+      "society": {
+        "religions": [
+          "Religion romaine traditionnelle",
+          "Cultes grecs et orientaux",
+          "Culte de Cybèle"
+        ],
+        "languages": [
+          "Latin",
+          "Grec",
+          "Langues italiques et celtiques"
+        ],
+        "structure": "Patriciens, plébéiens, affranchis et esclaves ; les chevaliers forment l'élite de l'argent.",
+        "women": "Sous l'autorité d'un père ou d'un mari, mais pouvant hériter et gérer des biens ; aucun droit politique."
+      },
+      "culture": {
+        "inventions": [
+          "Béton romain",
+          "Aqueduc à grande échelle",
+          "Droit civil",
+          "Chiffres romains"
+        ],
+        "works": [
+          "Via Appia",
+          "Forum romain",
+          "Annales de Tite-Live"
+        ],
+        "scholars": [
+          "Cicéron",
+          "Caton l'Ancien",
+          "Lucrèce",
+          "Varron"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Premières grandes voies pavées et aqueducs ; l'Italie se couvre de colonies reliées à Rome."
+      },
+      "legacy": "Naissance du droit, du Sénat et de l'idée de res publica, longtemps imités. Les guerres civiles ouvrent la voie à un pouvoir personnel."
+    },
+    {
+      "id": "haut-empire",
+      "name": "Le Haut-Empire",
+      "start": -27,
+      "end": 284,
+      "population": {
+        "total": {
+          "value": 60000000,
+          "low": 50000000,
+          "high": 70000000,
+          "year": 150,
+          "source": {
+            "label": "Wikipédia : Empire romain",
+            "url": "https://fr.wikipedia.org/wiki/Empire_romain"
+          }
+        },
+        "cities": [
+          {
+            "name": "Rome",
+            "population": {
+              "value": 1000000,
+              "low": 700000,
+              "high": 1200000,
+              "year": 150,
+              "source": {
+                "label": "Wikipédia : Rome antique",
+                "url": "https://fr.wikipedia.org/wiki/Rome_antique"
+              }
+            }
+          },
+          {
+            "name": "Alexandrie",
+            "population": {
+              "value": 400000,
+              "low": 250000,
+              "high": 500000,
+              "year": 150,
+              "source": {
+                "label": "Wikipédia : Alexandrie",
+                "url": "https://fr.wikipedia.org/wiki/Alexandrie"
+              }
+            }
+          },
+          {
+            "name": "Antioche",
+            "population": {
+              "value": 250000,
+              "low": 150000,
+              "high": 300000,
+              "year": 150,
+              "source": {
+                "label": "Wikipédia : Antioche",
+                "url": "https://fr.wikipedia.org/wiki/Antioche"
+              }
+            }
+          },
+          {
+            "name": "Carthage",
+            "population": {
+              "value": 100000,
+              "low": 50000,
+              "high": 150000,
+              "year": 150,
+              "source": {
+                "label": "Wikipédia : Carthage",
+                "url": "https://fr.wikipedia.org/wiki/Carthage"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 25,
+          "low": 20,
+          "high": 30,
+          "year": 1,
+          "note": "Estimation reconstruite (type Maddison), très incertaine.",
+          "source": {
+            "label": "Wikipédia : Empire romain",
+            "url": "https://fr.wikipedia.org/wiki/Empire_romain"
+          }
+        },
+        "resources": [
+          "Blé d'Égypte et d'Afrique",
+          "Or et argent d'Espagne et de Dacie",
+          "Vin, huile, garum",
+          "Marbre et métaux"
+        ],
+        "currency": "Denier d'argent et aureus d'or ; l'argent se dévalue au IIIe siècle.",
+        "taxation": "Impôts sur la terre et les personnes, droits de douane (portoria), taxe sur les héritages.",
+        "trade": "Routes maritimes et terrestres reliant l'Inde, la Chine et l'Afrique ; le blé nourrit la capitale."
+      },
+      "army": {
+        "size": {
+          "value": 300000,
+          "low": 250000,
+          "high": 400000,
+          "year": 150,
+          "note": "Environ 30 légions et autant d'auxiliaires.",
+          "source": {
+            "label": "Wikipédia : Armée romaine",
+            "url": "https://fr.wikipedia.org/wiki/Arm%C3%A9e_romaine"
+          }
+        },
+        "composition": "Légions de citoyens, troupes auxiliaires de provinciaux, flottes et garde prétorienne.",
+        "recruitment": "Volontaires engagés pour environ 25 ans ; terre ou prime à la fin du service.",
+        "famousUnits": [
+          "Garde prétorienne",
+          "Légion X Gemina",
+          "Légion III Augusta"
+        ],
+        "innovations": [
+          "Armée permanente professionnelle",
+          "Camps et forts frontaliers",
+          "Limes fortifiés"
+        ]
+      },
+      "politics": {
+        "regime": "Principat : monarchie qui garde les formes de la République.",
+        "head": "Empereur (Auguste puis ses successeurs), à la fois chef des armées et magistrat suprême.",
+        "succession": "Adoption d'un héritier, ou choix des légions ; guerres civiles fréquentes à la mort d'un empereur.",
+        "institutions": "Sénat respecté mais soumis, préfet du prétoire, conseil du prince.",
+        "administration": "Provinces impériales et sénatoriales ; fonctionnaires de plus en plus nombreux.",
+        "provinces": {
+          "value": 45,
+          "low": 40,
+          "high": 50,
+          "year": 117,
+          "source": {
+            "label": "Wikipédia : Empire romain",
+            "url": "https://fr.wikipedia.org/wiki/Empire_romain"
+          }
+        },
+        "law": "Droit romain développé par les juristes ; citoyenneté étendue à tous les hommes libres en 212."
+      },
+      "society": {
+        "religions": [
+          "Religion romaine et culte impérial",
+          "Cultes orientaux (Isis, Mithra)",
+          "Judaïsme",
+          "Christianisme persécuté"
+        ],
+        "languages": [
+          "Latin à l'ouest",
+          "Grec à l'est",
+          "Langues locales (celtique, punique, copte)"
+        ],
+        "structure": "Citoyens, non-citoyens et esclaves, ces derniers très nombreux ; une élite sénatoriale et équestre riche.",
+        "women": "Plus autonomes que dans la Grèce voisine : propriété, commerce et testament possibles, mais pas de charges publiques."
+      },
+      "culture": {
+        "inventions": [
+          "Codex (livre relié)",
+          "Moulin à eau",
+          "Verre soufflé",
+          "Thermes à hypocauste"
+        ],
+        "works": [
+          "Colisée",
+          "Panthéon",
+          "Énéide de Virgile"
+        ],
+        "scholars": [
+          "Pline l'Ancien",
+          "Galien",
+          "Ptolémée",
+          "Tacite"
+        ]
+      },
+      "infrastructure": {
+        "roads": {
+          "value": 85000,
+          "low": 80000,
+          "high": 120000,
+          "year": 150,
+          "note": "Ordre de grandeur du réseau de voies pavées principales.",
+          "source": {
+            "label": "Wikipédia : Voie romaine",
+            "url": "https://fr.wikipedia.org/wiki/Voie_romaine"
+          }
+        },
+        "summary": "Voies pavées, ponts, aqueducs, ports et ville de Rome alimentée en eau courante."
+      },
+      "legacy": "Une unité méditerranéenne inégalée : un droit, une monnaie, des villes à l'antique. Elle imprègne durablement les langues, les lois et l'architecture européennes."
+    },
+    {
+      "id": "bas-empire",
+      "name": "Le Bas-Empire",
+      "start": 284,
+      "end": 476,
+      "population": {
+        "total": {
+          "value": 50000000,
+          "low": 40000000,
+          "high": 60000000,
+          "year": 400,
+          "note": "Empire d'Occident et d'Orient réunis.",
+          "source": {
+            "label": "Wikipédia : Empire romain",
+            "url": "https://fr.wikipedia.org/wiki/Empire_romain"
+          }
+        },
+        "cities": [
+          {
+            "name": "Rome",
+            "population": {
+              "value": 500000,
+              "low": 300000,
+              "high": 800000,
+              "year": 400,
+              "source": {
+                "label": "Wikipédia : Rome antique",
+                "url": "https://fr.wikipedia.org/wiki/Rome_antique"
+              }
+            }
+          },
+          {
+            "name": "Constantinople",
+            "population": {
+              "value": 200000,
+              "low": 150000,
+              "high": 300000,
+              "year": 400,
+              "source": {
+                "label": "Wikipédia : Constantinople",
+                "url": "https://fr.wikipedia.org/wiki/Constantinople"
+              }
+            }
+          },
+          {
+            "name": "Alexandrie",
+            "population": {
+              "value": 300000,
+              "low": 200000,
+              "high": 400000,
+              "year": 400,
+              "source": {
+                "label": "Wikipédia : Alexandrie",
+                "url": "https://fr.wikipedia.org/wiki/Alexandrie"
+              }
+            }
+          },
+          {
+            "name": "Carthage",
+            "population": {
+              "value": 100000,
+              "low": 50000,
+              "high": 150000,
+              "year": 400,
+              "source": {
+                "label": "Wikipédia : Carthage",
+                "url": "https://fr.wikipedia.org/wiki/Carthage"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 15,
+          "low": 10,
+          "high": 20,
+          "year": 300,
+          "note": "Estimation reconstruite très incertaine ; la crise du IIIe siècle a réduit les richesses.",
+          "source": {
+            "label": "Wikipédia : Empire romain",
+            "url": "https://fr.wikipedia.org/wiki/Empire_romain"
+          }
+        },
+        "resources": [
+          "Blé d'Afrique et d'Égypte",
+          "Or d'orient",
+          "Huile et vin",
+          "Tissus de luxe"
+        ],
+        "currency": "Solidus d'or stable (Constantin, 309), face à un monnayage d'argent dévalué.",
+        "taxation": "Impôt en nature et en or lourd (annone), collecté par les curiales, de plus en plus écrasant.",
+        "trade": "Réseau méditerranéen encore vivant, mais pillé par les invasions ; l'Occident s'appauvrit."
+      },
+      "army": {
+        "size": {
+          "value": 500000,
+          "low": 350000,
+          "high": 650000,
+          "year": 350,
+          "note": "Chiffres anciens contradictoires.",
+          "source": {
+            "label": "Wikipédia : Armée romaine",
+            "url": "https://fr.wikipedia.org/wiki/Arm%C3%A9e_romaine"
+          }
+        },
+        "composition": "Troupes de frontière (limitanei), armées mobiles (comitatenses) et nombreux alliés barbares (fédérés).",
+        "recruitment": "Conscription héréditaire des fils de soldats, mercenaires germaniques de plus en plus nombreux.",
+        "famousUnits": [
+          "Comitatenses",
+          "Scholes palatines",
+          "Fédérés goths"
+        ],
+        "innovations": [
+          "Armée de manœuvre mobile",
+          "Cavalerie lourde (cataphractaires)",
+          "Défense en profondeur"
+        ]
+      },
+      "politics": {
+        "regime": "Dominat : monarchie absolue de droit divin, cérémonial de cour.",
+        "head": "Un ou plusieurs empereurs (Dioclétien établit la tétrarchie), maîtres de l'État et des armées.",
+        "succession": "Désignation par l'empereur ou acclamation par l'armée ; l'empire est souvent partagé entre co-empereurs.",
+        "institutions": "Consistoire impérial, Sénat sans pouvoir réel, préfets du prétoire.",
+        "administration": "Provinces plus petites, regroupées en diocèses et préfectures ; fonctionnariat très nombreux.",
+        "provinces": {
+          "value": 100,
+          "low": 95,
+          "high": 120,
+          "year": 300,
+          "note": "Environ 100 provinces après les réformes de Dioclétien.",
+          "source": {
+            "label": "Wikipédia : Empire romain",
+            "url": "https://fr.wikipedia.org/wiki/Empire_romain"
+          }
+        },
+        "law": "Codification des lois impériales (Code Théodosien, 438) ; le droit s'appuie sur la volonté de l'empereur."
+      },
+      "society": {
+        "religions": [
+          "Christianisme (religion officielle en 380)",
+          "Paganisme en recul",
+          "Judaïsme",
+          "Hérésies (arianisme)"
+        ],
+        "languages": [
+          "Latin",
+          "Grec",
+          "Langues locales (copte, syriaque, germanique)"
+        ],
+        "structure": "Colons attachés à la terre, grands propriétaires, fonctionnaires, clergé ; la mobilité sociale se fige.",
+        "women": "Droits patrimoniaux conservés ; le christianisme valorise le mariage et l'ascétisme, avec de rares femmes influentes (impératrices, abbesses)."
+      },
+      "culture": {
+        "inventions": [
+          "Codex et textes chrétiens",
+          "Basilique chrétienne",
+          "Calendrier chrétien"
+        ],
+        "works": [
+          "Cité de Dieu d'Augustin",
+          "Vulgate de saint Jérôme",
+          "Sainte-Sophie (début)"
+        ],
+        "scholars": [
+          "Augustin d'Hippone",
+          "Jérôme",
+          "Ammien Marcellin",
+          "Ambroise de Milan"
+        ]
+      },
+      "infrastructure": {
+        "roads": {
+          "value": 85000,
+          "low": 80000,
+          "high": 120000,
+          "year": 300,
+          "note": "Réseau hérité du Haut-Empire, mal entretenu à l'Ouest.",
+          "source": {
+            "label": "Wikipédia : Voie romaine",
+            "url": "https://fr.wikipedia.org/wiki/Voie_romaine"
+          }
+        },
+        "summary": "Réseau routier et murailles urbaines (Aurélien, Constantinople) ; on fortifie les villes face aux invasions."
+      },
+      "legacy": "La capitale se déplace vers l'Orient, le christianisme devient la religion de l'État. En 476, le dernier empereur d'Occident est déposé."
+    },
+    {
+      "id": "byzantin",
+      "name": "L'Empire romain d'Orient",
+      "start": 476,
+      "end": 1453,
+      "population": {
+        "total": {
+          "value": 26000000,
+          "low": 17000000,
+          "high": 30000000,
+          "year": 565,
+          "note": "Sommet sous Justinien, selon les reconstitutions ; autour de 12 M vers l'an 1000.",
+          "source": {
+            "label": "Wikipédia : Empire byzantin",
+            "url": "https://fr.wikipedia.org/wiki/Empire_byzantin"
+          }
+        },
+        "cities": [
+          {
+            "name": "Constantinople",
+            "population": {
+              "value": 400000,
+              "low": 300000,
+              "high": 500000,
+              "year": 565,
+              "source": {
+                "label": "Wikipédia : Constantinople",
+                "url": "https://fr.wikipedia.org/wiki/Constantinople"
+              }
+            }
+          },
+          {
+            "name": "Alexandrie",
+            "population": {
+              "value": 200000,
+              "low": 100000,
+              "high": 300000,
+              "year": 565,
+              "source": {
+                "label": "Wikipédia : Alexandrie",
+                "url": "https://fr.wikipedia.org/wiki/Alexandrie"
+              }
+            }
+          },
+          {
+            "name": "Thessalonique",
+            "population": {
+              "value": 100000,
+              "low": 50000,
+              "high": 150000,
+              "year": 565,
+              "source": {
+                "label": "Wikipédia : Thessalonique",
+                "url": "https://fr.wikipedia.org/wiki/Thessalonique"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Soie (dès Justinien)",
+          "Blé d'Égypte (jusqu'en 641)",
+          "Or et épices du commerce",
+          "Orfèvrerie et verre"
+        ],
+        "currency": "Solidus (nomisma) d'or, monnaie de référence pendant des siècles.",
+        "taxation": "Impôt foncier et capitation, taxes sur le commerce et les ports ; un fisc bien organisé.",
+        "trade": "Constantinople, carrefour entre mer Noire, Méditerranée et Orient ; Venise et Gênes finissent par en profiter."
+      },
+      "army": {
+        "size": {
+          "value": 150000,
+          "low": 80000,
+          "high": 250000,
+          "year": 1025,
+          "note": "Très variable selon l'époque et les estimations.",
+          "source": {
+            "label": "Wikipédia : Armée byzantine",
+            "url": "https://fr.wikipedia.org/wiki/Arm%C3%A9e_byzantine"
+          }
+        },
+        "composition": "Cavalerie lourde (cataphractaires), archers, infanterie, flotte armée du feu grégeois.",
+        "recruitment": "Soldats-paysans des thèmes, puis mercenaires (garde varangienne) à partir du XIe siècle.",
+        "famousUnits": [
+          "Cataphractaires",
+          "Garde varangienne",
+          "Tagmata"
+        ],
+        "innovations": [
+          "Feu grégeois",
+          "Système des thèmes",
+          "Manuels de tactique écrits"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie impériale de droit divin, héritière de Rome.",
+        "head": "Basileus (empereur), chef de l'État, de l'armée et protecteur de l'Église.",
+        "succession": "Héréditaire, mais souvent contestée par coups d'État ; usurpateurs et régents nombreux.",
+        "institutions": "Sénat, cour de dignitaires, patriarche de Constantinople.",
+        "administration": "Thèmes (provinces militaires) dirigés par un stratège, bureaux centraux très spécialisés.",
+        "law": "Corpus juris civilis de Justinien (529-534), Basiliques (IXe siècle) en grec."
+      },
+      "society": {
+        "religions": [
+          "Christianisme orthodoxe",
+          "Judaïsme",
+          "Hérésies (monophysisme, iconoclasme)"
+        ],
+        "languages": [
+          "Grec",
+          "Latin (jusqu'au VIIe siècle)",
+          "Arménien, slave, syriaque"
+        ],
+        "structure": "Aristocratie foncière, paysans libres, clergé et moines puissants ; esclavage encore présent.",
+        "women": "Quelques impératrices au pouvoir (Théodora, Irène, Zoé) ; mais la plupart des femmes restent dans le cadre familial."
+      },
+      "culture": {
+        "inventions": [
+          "Feu grégeois",
+          "Coupole sur pendentifs",
+          "Icônes et mosaïques",
+          "Droit codifié"
+        ],
+        "works": [
+          "Sainte-Sophie",
+          "Corpus juris civilis",
+          "Mosaïques de Ravenne"
+        ],
+        "scholars": [
+          "Procope de Césarée",
+          "Michel Psellos",
+          "Anne Comnène",
+          "Jean Philopon"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Constantinople protégée par les murailles de Théodose (Ve siècle), citernes, aqueducs ; peu de nouvelles routes."
+      },
+      "legacy": "L'empire protège le droit romain, la culture grecque et le christianisme orthodoxe pendant mille ans. Sa chute en 1453 marque pour beaucoup la fin du Moyen Âge."
+    }
+  ]
+}

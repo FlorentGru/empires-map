@@ -1,0 +1,319 @@
+{
+  "empire": "napoleon",
+  "periods": [
+    {
+      "id": "consulat",
+      "name": "Le Consulat",
+      "start": 1799,
+      "end": 1804,
+      "population": {
+        "total": {
+          "value": 33000000,
+          "low": 29000000,
+          "high": 34000000,
+          "year": 1802,
+          "note": "27,4 M recensés en 1801 dans les frontières de l'Ancien Régime ; le reste vient des territoires annexés.",
+          "source": {
+            "label": "Wikipédia : Consulat",
+            "url": "https://fr.wikipedia.org/wiki/Consulat"
+          }
+        },
+        "cities": [
+          {
+            "name": "Paris",
+            "population": {
+              "value": 547000,
+              "low": 540000,
+              "high": 560000,
+              "year": 1801,
+              "source": {
+                "label": "Wikipédia : Paris",
+                "url": "https://fr.wikipedia.org/wiki/Paris"
+              }
+            }
+          },
+          {
+            "name": "Marseille",
+            "population": {
+              "value": 111000,
+              "low": 100000,
+              "high": 115000,
+              "year": 1801,
+              "source": {
+                "label": "Wikipédia : Marseille",
+                "url": "https://fr.wikipedia.org/wiki/Marseille"
+              }
+            }
+          },
+          {
+            "name": "Lyon",
+            "population": {
+              "value": 110000,
+              "low": 100000,
+              "high": 115000,
+              "year": 1801,
+              "source": {
+                "label": "Wikipédia : Lyon",
+                "url": "https://fr.wikipedia.org/wiki/Lyon"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Blé et vignes",
+          "Soie de Lyon",
+          "Textiles de Normandie et du Nord",
+          "Charbon et fer (naissants)"
+        ],
+        "currency": "Franc germinal (1803), pièces d'or et d'argent stables.",
+        "taxation": "Contributions directes cadastrées et impôts indirects rétablis ; levée plus efficace.",
+        "trade": "Commerce maritime freiné par la guerre avec l'Angleterre ; paix d'Amiens (1802-1803)."
+      },
+      "army": {
+        "size": {
+          "value": 400000,
+          "low": 300000,
+          "high": 500000,
+          "year": 1803,
+          "note": "Ordre de grandeur de l'armée française après la paix d'Amiens.",
+          "source": {
+            "label": "Wikipédia : Grande Armée",
+            "url": "https://fr.wikipedia.org/wiki/Grande_Arm%C3%A9e"
+          }
+        },
+        "composition": "Infanterie de ligne, cavalerie, artillerie légère de Gribeauval, garde consulaire.",
+        "recruitment": "Conscription annuelle (loi Jourdan de 1798) avec tirage au sort et remplacement possible.",
+        "famousUnits": [
+          "Garde consulaire",
+          "Armée de réserve",
+          "Armée du Rhin"
+        ],
+        "innovations": [
+          "Corps d'armée autonomes",
+          "Artillerie mobile",
+          "Marches rapides"
+        ]
+      },
+      "politics": {
+        "regime": "République autoritaire dirigée par un Premier consul.",
+        "head": "Napoléon Bonaparte, Premier consul (1799), puis consul à vie (1802).",
+        "succession": "Pas de règle fixe : le pouvoir devient héréditaire de fait, avant 1804.",
+        "institutions": "Sénat conservateur, Tribunat, Corps législatif, Conseil d'État.",
+        "administration": "Préfets dans chaque département, nommés par Paris ; maires nommés dans les communes.",
+        "provinces": {
+          "value": 98,
+          "low": 96,
+          "high": 100,
+          "year": 1802,
+          "unit": "départements",
+          "source": {
+            "label": "Wikipédia : Département français",
+            "url": "https://fr.wikipedia.org/wiki/D%C3%A9partement_fran%C3%A7ais"
+          }
+        },
+        "law": "Rédaction du Code civil (1800-1804), promulgué en mars 1804."
+      },
+      "society": {
+        "religions": [
+          "Catholicisme (Concordat de 1801)",
+          "Protestantisme",
+          "Judaïsme"
+        ],
+        "languages": [
+          "Français",
+          "Alsacien, breton, occitan, flamand"
+        ],
+        "structure": "Égalité civile, mais hiérarchie par la fortune ; notables de l'Empire en formation.",
+        "women": "Aucun droit politique ; sous le Code civil, la femme mariée doit obéissance à son mari."
+      },
+      "culture": {
+        "inventions": [
+          "Légion d'honneur (1802)",
+          "Lycées d'État (1802)",
+          "Banque de France (1800)",
+          "Code civil"
+        ],
+        "works": [
+          "Code civil des Français",
+          "Concordat de 1801",
+          "Banque de France"
+        ],
+        "scholars": [
+          "Laplace",
+          "Monge",
+          "Berthollet",
+          "Portalis"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Remise en état des routes, ouverture de la route du Simplon, canaux et ponts à Paris."
+      },
+      "legacy": "Napoléon met fin à la Révolution en gardant l'égalité devant la loi, mais au prix des libertés. Beaucoup d'institutions (préfets, Code civil, Banque de France) existent encore."
+    },
+    {
+      "id": "empire",
+      "name": "Le Premier Empire",
+      "start": 1804,
+      "end": 1815,
+      "population": {
+        "total": {
+          "value": 44000000,
+          "low": 42000000,
+          "high": 45000000,
+          "year": 1812,
+          "note": "France avec ses territoires annexés (Belgique, Rhénanie, Piémont, Rome…).",
+          "source": {
+            "label": "Wikipédia : Premier Empire",
+            "url": "https://fr.wikipedia.org/wiki/Premier_Empire"
+          }
+        },
+        "cities": [
+          {
+            "name": "Paris",
+            "population": {
+              "value": 623000,
+              "low": 600000,
+              "high": 650000,
+              "year": 1811,
+              "source": {
+                "label": "Wikipédia : Paris",
+                "url": "https://fr.wikipedia.org/wiki/Paris"
+              }
+            }
+          },
+          {
+            "name": "Lyon",
+            "population": {
+              "value": 115000,
+              "low": 100000,
+              "high": 125000,
+              "year": 1811,
+              "source": {
+                "label": "Wikipédia : Lyon",
+                "url": "https://fr.wikipedia.org/wiki/Lyon"
+              }
+            }
+          },
+          {
+            "name": "Rome",
+            "population": {
+              "value": 120000,
+              "low": 100000,
+              "high": 130000,
+              "year": 1810,
+              "source": {
+                "label": "Wikipédia : Rome",
+                "url": "https://fr.wikipedia.org/wiki/Rome"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 5.4,
+          "low": 4.5,
+          "high": 7,
+          "year": 1820,
+          "note": "Estimation reconstruite (type Maddison) pour la France seule en 1820 ; avec les territoires annexés, un peu plus.",
+          "source": {
+            "label": "Wikipédia : Premier Empire",
+            "url": "https://fr.wikipedia.org/wiki/Premier_Empire"
+          }
+        },
+        "resources": [
+          "Blé",
+          "Vin",
+          "Soie et textiles",
+          "Sucre de betterave (Blocus)"
+        ],
+        "currency": "Franc germinal, stable pendant tout le règne.",
+        "taxation": "Impôts directs sur terre et patentes, impôts indirects, contributions imposées aux pays vaincus.",
+        "trade": "Blocus continental contre l'Angleterre (1806), contrebande et crise du commerce maritime."
+      },
+      "army": {
+        "size": {
+          "value": 650000,
+          "low": 450000,
+          "high": 700000,
+          "year": 1812,
+          "note": "Grande Armée en Russie, alliés compris ; plus d'un million d'hommes sous les armes sur tous les fronts.",
+          "source": {
+            "label": "Wikipédia : Grande Armée",
+            "url": "https://fr.wikipedia.org/wiki/Grande_Arm%C3%A9e"
+          }
+        },
+        "composition": "Corps d'armée mêlant infanterie, cavalerie et artillerie, avec contingents alliés.",
+        "recruitment": "Conscription annuelle, appels anticipés de classes entières à la fin du règne.",
+        "famousUnits": [
+          "Vieille Garde",
+          "Grande Armée",
+          "Cuirassiers de Murat"
+        ],
+        "innovations": [
+          "Corps d'armée",
+          "Ordre mixte",
+          "Artillerie massée en grande batterie"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie héréditaire autoritaire, sacre de 1804.",
+        "head": "Napoléon Ier, empereur des Français, roi d'Italie.",
+        "succession": "Héréditaire (naissance du roi de Rome, 1811) ; frères et beaux-frères placés sur des trônes alliés.",
+        "institutions": "Conseil d'État, Sénat, Corps législatif sans pouvoir, ministère de la Police.",
+        "administration": "Préfets, administrations centralisées ; États satellites confiés à des proches.",
+        "provinces": {
+          "value": 130,
+          "low": 128,
+          "high": 130,
+          "year": 1811,
+          "unit": "départements",
+          "source": {
+            "label": "Wikipédia : Département français",
+            "url": "https://fr.wikipedia.org/wiki/D%C3%A9partement_fran%C3%A7ais"
+          }
+        },
+        "law": "Code civil (1804), Code de procédure, Code pénal : diffusés dans une grande partie de l'Europe."
+      },
+      "society": {
+        "religions": [
+          "Catholicisme concordataire",
+          "Protestantisme",
+          "Judaïsme (Grand Sanhédrin, 1807)"
+        ],
+        "languages": [
+          "Français",
+          "Langues régionales",
+          "Allemand, italien, néerlandais dans les territoires annexés"
+        ],
+        "structure": "Noblesse d'Empire fondée sur le mérite ; bourgeoisie et propriétaires en tête.",
+        "women": "Soumises au mari dans le Code civil ; divorce restreint, presque pas de droits politiques ou professionnels."
+      },
+      "culture": {
+        "inventions": [
+          "Conserve alimentaire (Appert)",
+          "Métier à tisser Jacquard",
+          "Télégraphe optique Chappe",
+          "Cadastre napoléonien"
+        ],
+        "works": [
+          "Arc de triomphe (commencé)",
+          "Sacre de Napoléon (David)",
+          "Code Napoléon"
+        ],
+        "scholars": [
+          "Laplace",
+          "Cuvier",
+          "Champollion (jeune)",
+          "Chaptal"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Routes impériales, canaux (canal de l'Ourcq), grands ponts et chantiers à Paris."
+      },
+      "legacy": "Les conquêtes se terminent en 1815 à Waterloo, mais le Code civil, les préfets et l'idée d'égalité devant la loi restent. La légende napoléonienne marque durablement la France."
+    }
+  ]
+}

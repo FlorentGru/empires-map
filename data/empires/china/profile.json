@@ -1,0 +1,1038 @@
+{
+  "empire": "china",
+  "periods": [
+    {
+      "id": "antique",
+      "name": "La Chine antique",
+      "start": -1600,
+      "end": -221,
+      "population": {
+        "total": {
+          "value": 25000000,
+          "low": 20000000,
+          "high": 40000000,
+          "year": -221,
+          "note": "Estimation reconstruite pour l'ensemble des États des Royaumes combattants.",
+          "source": {
+            "label": "Wikipédia : Période des Royaumes combattants",
+            "url": "https://fr.wikipedia.org/wiki/P%C3%A9riode_des_Royaumes_combattants"
+          }
+        },
+        "cities": [
+          {
+            "name": "Linzi (Qi)",
+            "population": {
+              "value": 350000,
+              "low": 200000,
+              "high": 400000,
+              "year": -300,
+              "note": "Chiffre tiré de sources antiques, probablement gonflé.",
+              "source": {
+                "label": "Wikipédia : Linzi",
+                "url": "https://fr.wikipedia.org/wiki/Linzi"
+              }
+            }
+          },
+          {
+            "name": "Anyang (Yin)",
+            "population": {
+              "value": 100000,
+              "low": 30000,
+              "high": 150000,
+              "year": -1200,
+              "source": {
+                "label": "Wikipédia : Anyang",
+                "url": "https://fr.wikipedia.org/wiki/Anyang"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Millet et riz",
+          "Bronze puis fer",
+          "Soie",
+          "Sel"
+        ],
+        "currency": "Cauris, puis pièces de bronze en forme de bêche ou de couteau ; unifiées par Qin en -221.",
+        "taxation": "Corvées et prélèvements en grain sur les paysans, redevances aux nobles.",
+        "trade": "Commerce régional de sel, fer et soie entre États rivaux ; premières routes vers l'Asie centrale."
+      },
+      "army": {
+        "size": {
+          "value": 500000,
+          "low": 200000,
+          "high": 1000000,
+          "year": -260,
+          "note": "Armée du plus puissant État (Qin) ; chiffres anciens probablement exagérés.",
+          "source": {
+            "label": "Wikipédia : Période des Royaumes combattants",
+            "url": "https://fr.wikipedia.org/wiki/P%C3%A9riode_des_Royaumes_combattants"
+          }
+        },
+        "composition": "Chars de guerre à l'époque Shang et Zhou, puis infanterie de masse et cavalerie légère.",
+        "recruitment": "Levée de paysans en armée de conscrits, dans les États réformés.",
+        "famousUnits": [
+          "Chars de guerre Shang",
+          "Arbalétriers de Qin",
+          "Armée de terre cuite"
+        ],
+        "innovations": [
+          "Arbalète à gâchette en bronze",
+          "Cavalerie montée",
+          "Lames de fer"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie féodale des Shang et des Zhou, puis États territoriaux rivaux.",
+        "head": "Roi (wang) disposant du « Mandat du Ciel » ; les ducs des États forts rivalisent avec lui.",
+        "succession": "Succession héréditaire dans les familles royales ; l'autorité des Zhou décline peu à peu.",
+        "institutions": "Cour des conseillers, ministres, généraux ; les États Qin développent le légisme.",
+        "administration": "Fiefs confiés à des parents du roi, puis préfectures dirigées par des fonctionnaires nommés.",
+        "law": "Codes pénaux écrits dans plusieurs États, dont les lois sévères du légiste Shang Yang."
+      },
+      "society": {
+        "religions": [
+          "Culte des ancêtres",
+          "Divination par les os oraculaires",
+          "Pensée confucéenne et taoïste"
+        ],
+        "languages": [
+          "Chinois archaïque",
+          "Langues des peuples voisins"
+        ],
+        "structure": "Nobles, guerriers, paysans, artisans, marchands et esclaves, avec une aristocratie héréditaire qui s'affaiblit.",
+        "women": "Écartées de l'héritage et des fonctions publiques ; quelques femmes sont prêtresses ou cheffes de guerre à l'époque Shang."
+      },
+      "culture": {
+        "inventions": [
+          "Écriture chinoise",
+          "Fonte du bronze",
+          "Fonte du fer",
+          "Boussole primitive"
+        ],
+        "works": [
+          "Os oraculaires de Yin",
+          "Classique des Odes",
+          "Entretiens de Confucius",
+          "Art de la guerre"
+        ],
+        "scholars": [
+          "Confucius",
+          "Laozi",
+          "Sun Tzu",
+          "Mencius"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Muraille de terre défensive, canaux d'irrigation (Dujiangyan, -256) et routes de chars."
+      },
+      "legacy": "Naissance de l'écriture et des grandes écoles de pensée (confucianisme, taoïsme, légisme). Ce socle intellectuel orientera la Chine pendant deux millénaires."
+    },
+    {
+      "id": "premier-empire",
+      "name": "Le premier empire : Qin et Han",
+      "start": -221,
+      "end": 220,
+      "population": {
+        "total": {
+          "value": 57700000,
+          "low": 50000000,
+          "high": 65000000,
+          "year": 2,
+          "note": "Recensement de l'an 2, parmi les plus anciens du monde.",
+          "source": {
+            "label": "Wikipédia : Dynastie Han",
+            "url": "https://fr.wikipedia.org/wiki/Dynastie_Han"
+          }
+        },
+        "cities": [
+          {
+            "name": "Chang'an",
+            "population": {
+              "value": 250000,
+              "low": 200000,
+              "high": 400000,
+              "year": 2,
+              "source": {
+                "label": "Wikipédia : Chang'an",
+                "url": "https://fr.wikipedia.org/wiki/Chang'an"
+              }
+            }
+          },
+          {
+            "name": "Luoyang",
+            "population": {
+              "value": 400000,
+              "low": 300000,
+              "high": 500000,
+              "year": 140,
+              "source": {
+                "label": "Wikipédia : Luoyang",
+                "url": "https://fr.wikipedia.org/wiki/Luoyang"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 26,
+          "low": 20,
+          "high": 30,
+          "year": 1,
+          "note": "Estimation reconstruite (type Maddison).",
+          "source": {
+            "label": "Wikipédia : Démographie de la Chine",
+            "url": "https://fr.wikipedia.org/wiki/D%C3%A9mographie_de_la_Chine"
+          }
+        },
+        "resources": [
+          "Millet, blé et riz",
+          "Soie",
+          "Fer et sel (monopoles d'État)",
+          "Laque et céramique"
+        ],
+        "currency": "Pièce de bronze à trou carré (wuzhu), unifiée par les Han.",
+        "taxation": "Taxe foncière en grain, capitation, corvées ; monopoles d'État sur le sel et le fer.",
+        "trade": "Route de la soie vers l'Asie centrale, Parthes et Rome ; exportation de soie contre chevaux et verre."
+      },
+      "army": {
+        "size": {
+          "value": 400000,
+          "low": 200000,
+          "high": 600000,
+          "year": -100,
+          "note": "Ordre de grandeur de l'armée de Han Wudi.",
+          "source": {
+            "label": "Wikipédia : Dynastie Han",
+            "url": "https://fr.wikipedia.org/wiki/Dynastie_Han"
+          }
+        },
+        "composition": "Infanterie de conscrits, arbalétriers, cavalerie contre les Xiongnu, quelques chars.",
+        "recruitment": "Service militaire obligatoire d'un an pour les hommes, remplacé par des soldats de métier.",
+        "famousUnits": [
+          "Armée de terre cuite",
+          "Cavalerie des Han",
+          "Arbalétriers Han"
+        ],
+        "innovations": [
+          "Arbalète à gâchette en bronze",
+          "Étriers (début)",
+          "Armure en plaques"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie impériale bureaucratique, inspirée du légisme puis du confucianisme.",
+        "head": "Huangdi, « Empereur », fils du Ciel, titre créé par Qin Shi Huang en -221.",
+        "succession": "Héréditaire, souvent aux mains d'impératrices douairières et de leurs familles ; usurpation de Wang Mang (9-23).",
+        "institutions": "Trois Ducs et Neuf Ministres, académie impériale, examens de recommandation.",
+        "administration": "Commanderies et districts dirigés par des fonctionnaires nommés par le centre.",
+        "provinces": {
+          "value": 103,
+          "low": 100,
+          "high": 105,
+          "year": 2,
+          "unit": "commanderies et royaumes",
+          "source": {
+            "label": "Wikipédia : Dynastie Han",
+            "url": "https://fr.wikipedia.org/wiki/Dynastie_Han"
+          }
+        },
+        "law": "Code Han hérité des Qin, adouci puis imprégné de principes confucéens."
+      },
+      "society": {
+        "religions": [
+          "Culte des ancêtres et du Ciel",
+          "Confucianisme d'État",
+          "Taoïsme",
+          "Bouddhisme (dès le Ier siècle)"
+        ],
+        "languages": [
+          "Chinois classique",
+          "Langues des peuples frontaliers"
+        ],
+        "structure": "Empereur et lettrés, paysans libres, artisans, marchands méprisés ; grands propriétaires et esclaves.",
+        "women": "Subordonnées au père et au mari par la morale confucéenne ; quelques impératrices, ou lettrées comme Ban Zhao, ont de l'influence."
+      },
+      "culture": {
+        "inventions": [
+          "Papier",
+          "Sismoscope",
+          "Brouette",
+          "Gouvernail axial"
+        ],
+        "works": [
+          "Mémoires historiques de Sima Qian",
+          "Grande Muraille des Qin",
+          "Armée de terre cuite",
+          "Livre des Han"
+        ],
+        "scholars": [
+          "Sima Qian",
+          "Cai Lun",
+          "Zhang Heng",
+          "Ban Zhao"
+        ]
+      },
+      "infrastructure": {
+        "roads": {
+          "value": 6800,
+          "low": 4000,
+          "high": 7000,
+          "year": -210,
+          "note": "Réseau de routes impériales construit par Qin Shi Huang.",
+          "source": {
+            "label": "Wikipédia : Dynastie Qin",
+            "url": "https://fr.wikipedia.org/wiki/Dynastie_Qin"
+          }
+        },
+        "summary": "Routes impériales, canaux, premières Grandes Murailles reliées et greniers d'État."
+      },
+      "legacy": "Le modèle d'un empire unifié, dirigé par des fonctionnaires lettrés, devient la norme de la Chine pour deux mille ans. Les Chinois s'appellent encore « Han »."
+    },
+    {
+      "id": "division",
+      "name": "L'ère de la division",
+      "start": 220,
+      "end": 589,
+      "population": {
+        "total": {
+          "value": 20000000,
+          "low": 16200000,
+          "high": 35000000,
+          "year": 280,
+          "note": "16,2 M recensés en 280 ; la population réelle était plus haute.",
+          "source": {
+            "label": "Wikipédia : Trois Royaumes",
+            "url": "https://fr.wikipedia.org/wiki/Trois_Royaumes"
+          }
+        },
+        "cities": [
+          {
+            "name": "Luoyang",
+            "population": {
+              "value": 500000,
+              "low": 300000,
+              "high": 700000,
+              "year": 500,
+              "note": "Capitale des Wei du Nord.",
+              "source": {
+                "label": "Wikipédia : Luoyang",
+                "url": "https://fr.wikipedia.org/wiki/Luoyang"
+              }
+            }
+          },
+          {
+            "name": "Jiankang (Nankin)",
+            "population": {
+              "value": 400000,
+              "low": 200000,
+              "high": 1000000,
+              "year": 500,
+              "source": {
+                "label": "Wikipédia : Nankin",
+                "url": "https://fr.wikipedia.org/wiki/Nankin"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Riz du Sud",
+          "Millet du Nord",
+          "Soie",
+          "Thé (début)"
+        ],
+        "currency": "Pièces de bronze dévaluées, usage important du grain et de la soie comme monnaie.",
+        "taxation": "Impôt par foyer sous les Jin, système de répartition des terres (juntian) chez les Wei du Nord.",
+        "trade": "Commerce maritime du Sud avec l'Asie du Sud-Est ; route de la soie tenue par des peuples d'Asie centrale."
+      },
+      "army": {
+        "composition": "Cavalerie lourde des peuples du Nord, infanterie et flottes sur le Yangzi.",
+        "recruitment": "Familles de soldats héréditaires, levées de paysans et contingents des clans nomades.",
+        "famousUnits": [
+          "Cavalerie cuirassée Xianbei",
+          "Flotte du Yangzi",
+          "Gardes des Trois Royaumes"
+        ],
+        "innovations": [
+          "Étriers métalliques",
+          "Cavalerie cuirassée",
+          "Navires de guerre à roues"
+        ]
+      },
+      "politics": {
+        "regime": "Rivalité de royaumes et dynasties : Trois Royaumes, Jin, dynasties du Nord et du Sud.",
+        "head": "Empereurs ou rois de courte durée ; le pouvoir est souvent aux mains de grandes familles.",
+        "succession": "Héréditaire mais instable ; coups d'État, abdications forcées et guerres civiles fréquents.",
+        "institutions": "Conseillers militaires, grandes familles aristocratiques, cours de lettrés.",
+        "administration": "Commanderies et préfectures, avec des gouverneurs militaires puissants et des aristocrates hors de contrôle.",
+        "provinces": {
+          "value": 19,
+          "low": 19,
+          "high": 19,
+          "year": 280,
+          "unit": "provinces (zhou)",
+          "source": {
+            "label": "Wikipédia : Dynastie Jin",
+            "url": "https://fr.wikipedia.org/wiki/Dynastie_Jin"
+          }
+        },
+        "law": "Code Jin (268), plus clément ; les Wei du Nord adaptent le droit chinois aux Xianbei."
+      },
+      "society": {
+        "religions": [
+          "Bouddhisme en plein essor",
+          "Taoïsme",
+          "Confucianisme",
+          "Cultes locaux"
+        ],
+        "languages": [
+          "Chinois",
+          "Langues xianbei et turco-mongoles",
+          "Sanskrit des textes bouddhiques"
+        ],
+        "structure": "Grandes familles aristocratiques, paysans attachés aux domaines, monastères riches.",
+        "women": "Moins strictement encadrées sous les Wei du Nord ; quelques femmes régentes exercent un pouvoir réel."
+      },
+      "culture": {
+        "inventions": [
+          "Étrier",
+          "Brouette perfectionnée",
+          "Calcul de pi à sept décimales",
+          "Acier de fonte"
+        ],
+        "works": [
+          "Grottes de Yungang et Longmen",
+          "Calligraphie de Wang Xizhi",
+          "Traductions des sutras bouddhiques"
+        ],
+        "scholars": [
+          "Zu Chongzhi",
+          "Wang Xizhi",
+          "Faxian",
+          "Ge Hong"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Travaux d'irrigation et de défense régionaux ; pas d'unification des réseaux, ni de grande entreprise commune."
+      },
+      "legacy": "La Chine apprend à vivre avec des peuples du Nord et un bouddhisme profondément enraciné. Ces siècles préparent la réunification de 589."
+    },
+    {
+      "id": "age-or",
+      "name": "L'âge d'or : Sui et Tang",
+      "start": 589,
+      "end": 907,
+      "population": {
+        "total": {
+          "value": 60000000,
+          "low": 52900000,
+          "high": 80000000,
+          "year": 754,
+          "note": "52,9 M recensés en 754, probablement sous-estimés.",
+          "source": {
+            "label": "Wikipédia : Dynastie Tang",
+            "url": "https://fr.wikipedia.org/wiki/Dynastie_Tang"
+          }
+        },
+        "cities": [
+          {
+            "name": "Chang'an",
+            "population": {
+              "value": 1000000,
+              "low": 800000,
+              "high": 1200000,
+              "year": 742,
+              "note": "Avec les faubourgs ; probablement la plus grande ville du monde.",
+              "source": {
+                "label": "Wikipédia : Chang'an",
+                "url": "https://fr.wikipedia.org/wiki/Chang'an"
+              }
+            }
+          },
+          {
+            "name": "Luoyang",
+            "population": {
+              "value": 500000,
+              "low": 300000,
+              "high": 1000000,
+              "year": 742,
+              "source": {
+                "label": "Wikipédia : Luoyang",
+                "url": "https://fr.wikipedia.org/wiki/Luoyang"
+              }
+            }
+          },
+          {
+            "name": "Yangzhou",
+            "population": {
+              "value": 300000,
+              "low": 150000,
+              "high": 500000,
+              "year": 750,
+              "source": {
+                "label": "Wikipédia : Yangzhou",
+                "url": "https://fr.wikipedia.org/wiki/Yangzhou"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Riz",
+          "Soie",
+          "Thé",
+          "Céramique",
+          "Papier"
+        ],
+        "currency": "Pièce de bronze kaiyuan tongbao ; les rouleaux de soie servent aussi de monnaie.",
+        "taxation": "Système des trois impôts (grain, étoffe, corvée), puis taxe sur les deux saisons (780).",
+        "trade": "Route de la soie, ports de Canton et Yangzhou ouverts aux marchands arabes, persans et indiens."
+      },
+      "army": {
+        "size": {
+          "value": 490000,
+          "low": 400000,
+          "high": 600000,
+          "year": 742,
+          "note": "Armées de frontière au VIIIe siècle.",
+          "source": {
+            "label": "Wikipédia : Dynastie Tang",
+            "url": "https://fr.wikipedia.org/wiki/Dynastie_Tang"
+          }
+        },
+        "composition": "Cavalerie, archers, infanterie de milice et contingents turcs ou ouïghours.",
+        "recruitment": "Milices paysannes (fubing), puis soldats de métier aux frontières (jiedushi).",
+        "famousUnits": [
+          "Cavalerie impériale",
+          "Armées des protectorats d'Asie centrale",
+          "Garde impériale"
+        ],
+        "innovations": [
+          "Poudre noire (usage militaire naissant)",
+          "Armées de frontière permanentes",
+          "Fortifications mobiles"
+        ]
+      },
+      "politics": {
+        "regime": "Empire bureaucratique, aristocratique et cosmopolite.",
+        "head": "Empereur, dont Taizong et l'impératrice Wu Zetian (seule femme à régner officiellement, 690-705).",
+        "succession": "Héréditaire, mais disputée entre princes, eunuques et généraux.",
+        "institutions": "Trois Départements et Six Ministères, académie Hanlin, examens impériaux.",
+        "administration": "Dao (circuits) divisés en préfectures et districts ; gouverneurs militaires aux frontières.",
+        "provinces": {
+          "value": 15,
+          "low": 10,
+          "high": 15,
+          "year": 742,
+          "unit": "circuits (dao)",
+          "source": {
+            "label": "Wikipédia : Dynastie Tang",
+            "url": "https://fr.wikipedia.org/wiki/Dynastie_Tang"
+          }
+        },
+        "law": "Code Tang (653), modèle copié par le Japon, la Corée et le Vietnam."
+      },
+      "society": {
+        "religions": [
+          "Bouddhisme",
+          "Taoïsme (religion d'État)",
+          "Confucianisme",
+          "Nestorianisme, manichéisme, islam"
+        ],
+        "languages": [
+          "Chinois moyen",
+          "Sogdien, turc, tibétain"
+        ],
+        "structure": "Aristocratie de la capitale, lettrés issus des examens, paysans et marchands étrangers.",
+        "women": "Plus libres que sous les autres dynasties (équitation, polo, rôle politique), avant un retour à plus de réserve."
+      },
+      "culture": {
+        "inventions": [
+          "Imprimerie (xylographie)",
+          "Poudre noire",
+          "Porcelaine",
+          "Thé en boisson"
+        ],
+        "works": [
+          "Poèmes de Li Bai et de Du Fu",
+          "Grand Canal",
+          "Grande Pagode de l'Oie sauvage"
+        ],
+        "scholars": [
+          "Li Bai",
+          "Du Fu",
+          "Xuanzang",
+          "Yi Xing"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Grand Canal (près de 2 000 km, sous les Sui), routes postales, ponts et capitale quadrillée."
+      },
+      "legacy": "Modèle de grandeur pour tous les empires chinois suivants et pour tout l'Extrême-Orient. Les poètes Tang sont encore appris par les écoliers chinois."
+    },
+    {
+      "id": "song",
+      "name": "Les Song et les conquérants du Nord",
+      "start": 907,
+      "end": 1271,
+      "population": {
+        "total": {
+          "value": 100000000,
+          "low": 80000000,
+          "high": 120000000,
+          "year": 1100,
+          "note": "Estimation reconstruite.",
+          "source": {
+            "label": "Wikipédia : Démographie de la Chine",
+            "url": "https://fr.wikipedia.org/wiki/D%C3%A9mographie_de_la_Chine"
+          }
+        },
+        "cities": [
+          {
+            "name": "Kaifeng",
+            "population": {
+              "value": 1000000,
+              "low": 500000,
+              "high": 1400000,
+              "year": 1100,
+              "source": {
+                "label": "Wikipédia : Kaifeng",
+                "url": "https://fr.wikipedia.org/wiki/Kaifeng"
+              }
+            }
+          },
+          {
+            "name": "Hangzhou",
+            "population": {
+              "value": 1000000,
+              "low": 700000,
+              "high": 1500000,
+              "year": 1270,
+              "source": {
+                "label": "Wikipédia : Hangzhou",
+                "url": "https://fr.wikipedia.org/wiki/Hangzhou"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 22.7,
+          "low": 18,
+          "high": 26,
+          "year": 1000,
+          "note": "Estimation reconstruite de type Maddison.",
+          "source": {
+            "label": "Wikipédia : Démographie de la Chine",
+            "url": "https://fr.wikipedia.org/wiki/D%C3%A9mographie_de_la_Chine"
+          }
+        },
+        "resources": [
+          "Riz de deux récoltes",
+          "Soie",
+          "Thé",
+          "Fer et charbon",
+          "Porcelaine"
+        ],
+        "currency": "Pièces de cuivre en quantité énorme et premiers billets de banque (jiaozi, XIe siècle).",
+        "taxation": "Impôt foncier et taxes commerciales ; l'État dépend beaucoup des revenus du commerce.",
+        "trade": "Jonques chinoises vers l'Asie du Sud-Est, l'Inde et l'Arabie ; marchés urbains et foires permanents."
+      },
+      "army": {
+        "size": {
+          "value": 1259000,
+          "low": 600000,
+          "high": 1259000,
+          "year": 1045,
+          "note": "Effectif nominal, de qualité inégale.",
+          "source": {
+            "label": "Wikipédia : Dynastie Song",
+            "url": "https://fr.wikipedia.org/wiki/Dynastie_Song"
+          }
+        },
+        "composition": "Grande infanterie professionnelle, arbalétriers, artillerie à poudre et marine de guerre.",
+        "recruitment": "Armée de métier recrutée par l'État, avec une forte part de pauvres engagés.",
+        "famousUnits": [
+          "Armée impériale",
+          "Marine du Yangzi",
+          "Troupes de Yue Fei"
+        ],
+        "innovations": [
+          "Bombes et lance-flammes à poudre",
+          "Marine de guerre à roues",
+          "Boussole de navigation"
+        ]
+      },
+      "politics": {
+        "regime": "Empire civil et lettré, dominé par les fonctionnaires.",
+        "head": "Empereur, entouré de ministres ; Song du Nord (960-1127), Song du Sud (1127-1279).",
+        "succession": "Héréditaire, avec des régences et des rivalités entre factions de ministres.",
+        "institutions": "Conseil des affaires d'État, Cour des censeurs, examens impériaux ouverts.",
+        "administration": "Circuits, préfectures et districts avec rotation fréquente des fonctionnaires.",
+        "law": "Code des Song, inspiré des Tang, avec une justice très écrite et appuyée sur des enquêtes."
+      },
+      "society": {
+        "religions": [
+          "Néoconfucianisme",
+          "Bouddhisme chan (zen)",
+          "Taoïsme",
+          "Islam sur la côte"
+        ],
+        "languages": [
+          "Chinois ancien et moyen tardif",
+          "Khitan, jurchen, tangut au Nord"
+        ],
+        "structure": "Lettrés fonctionnaires, riches marchands, paysans fermiers ; le prestige va aux examens.",
+        "women": "Contraintes accrues avec le néoconfucianisme et le bandage des pieds, mais gestion active de la dot et des affaires."
+      },
+      "culture": {
+        "inventions": [
+          "Imprimerie à caractères mobiles",
+          "Boussole marine",
+          "Billet de banque",
+          "Horloge astronomique de Su Song"
+        ],
+        "works": [
+          "Rouleau de la fête de Qingming",
+          "Miroir exhaustif de Sima Guang",
+          "Peinture de paysage"
+        ],
+        "scholars": [
+          "Su Shi",
+          "Shen Kuo",
+          "Sima Guang",
+          "Zhu Xi"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Canaux, ports et ponts marchands ; la région du Yangzi devient le cœur économique."
+      },
+      "legacy": "Pays le plus avancé du monde en technique et en commerce, malgré sa faiblesse militaire. Il pose les bases de la Chine moderne, entre papier-monnaie et néoconfucianisme."
+    },
+    {
+      "id": "yuan-ming",
+      "name": "Mongols et Ming",
+      "start": 1271,
+      "end": 1644,
+      "population": {
+        "total": {
+          "value": 160000000,
+          "low": 150000000,
+          "high": 200000000,
+          "year": 1600,
+          "note": "Après le creux de la fin des Yuan ; estimation reconstruite.",
+          "source": {
+            "label": "Wikipédia : Démographie de la Chine",
+            "url": "https://fr.wikipedia.org/wiki/D%C3%A9mographie_de_la_Chine"
+          }
+        },
+        "cities": [
+          {
+            "name": "Pékin",
+            "population": {
+              "value": 672000,
+              "low": 600000,
+              "high": 1000000,
+              "year": 1500,
+              "source": {
+                "label": "Wikipédia : Pékin",
+                "url": "https://fr.wikipedia.org/wiki/P%C3%A9kin"
+              }
+            }
+          },
+          {
+            "name": "Nankin",
+            "population": {
+              "value": 487000,
+              "low": 300000,
+              "high": 1000000,
+              "year": 1400,
+              "source": {
+                "label": "Wikipédia : Nankin",
+                "url": "https://fr.wikipedia.org/wiki/Nankin"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 29,
+          "low": 25,
+          "high": 32,
+          "year": 1600,
+          "note": "Estimation reconstruite de type Maddison.",
+          "source": {
+            "label": "Wikipédia : Démographie de la Chine",
+            "url": "https://fr.wikipedia.org/wiki/D%C3%A9mographie_de_la_Chine"
+          }
+        },
+        "resources": [
+          "Riz et blé",
+          "Soie et coton",
+          "Porcelaine",
+          "Argent importé"
+        ],
+        "currency": "Billets (chao) à l'époque Yuan, puis argent en lingots, reçu en masse d'Amérique.",
+        "taxation": "Impôt foncier en argent après la réforme du « fouet unique » (1580), corvées moins lourdes.",
+        "trade": "Voyages de Zheng He (1405-1433), puis commerce de l'argent avec les Européens à Macao et Manille."
+      },
+      "army": {
+        "size": {
+          "value": 1200000,
+          "low": 800000,
+          "high": 1800000,
+          "year": 1392,
+          "note": "Effectif nominal sous Hongwu.",
+          "source": {
+            "label": "Wikipédia : Dynastie Ming",
+            "url": "https://fr.wikipedia.org/wiki/Dynastie_Ming"
+          }
+        },
+        "composition": "Soldats héréditaires des garnisons, infanterie armée de canons et de mousquets, cavalerie.",
+        "recruitment": "Familles militaires héréditaires (weisuo), puis mercenaires quand le système s'effondre.",
+        "famousUnits": [
+          "Armée des garnisons weisuo",
+          "Flottes de Zheng He",
+          "Armée de Qi Jiguang"
+        ],
+        "innovations": [
+          "Canons et arquebuses",
+          "Navires à trésors",
+          "Grande Muraille de briques"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie impériale mongole (Yuan), puis Ming très centralisée.",
+        "head": "Khan Kubilaï et ses successeurs, puis empereurs Ming (Hongwu, Yongle…).",
+        "succession": "Succession héréditaire ; coups d'État, eunuques et grands secrétaires pèsent sur la cour.",
+        "institutions": "Grand Secrétariat, six ministères, eunuques puissants, censeurs.",
+        "administration": "Provinces (Yuan, puis 13 provinces et 2 directions sous les Ming).",
+        "provinces": {
+          "value": 15,
+          "low": 13,
+          "high": 15,
+          "year": 1430,
+          "unit": "13 provinces et 2 régions directes",
+          "source": {
+            "label": "Wikipédia : Dynastie Ming",
+            "url": "https://fr.wikipedia.org/wiki/Dynastie_Ming"
+          }
+        },
+        "law": "Grand Code des Ming (1397) ; sous les Yuan, quatre classes selon l'origine."
+      },
+      "society": {
+        "religions": [
+          "Néoconfucianisme",
+          "Bouddhisme et taoïsme",
+          "Islam et christianisme (jésuites)",
+          "Culte des ancêtres"
+        ],
+        "languages": [
+          "Chinois mandarin",
+          "Mongol (cour des Yuan)",
+          "Langues des minorités"
+        ],
+        "structure": "Lettrés, grands propriétaires, marchands de plus en plus riches, paysans ; quatre classes sous les Yuan.",
+        "women": "Chasteté valorisée, bandage des pieds répandu ; veuves vertueuses honorées, mais des marchandes et lettrées émergent."
+      },
+      "culture": {
+        "inventions": [
+          "Roman populaire",
+          "Porcelaine bleue et blanche",
+          "Cadran astronomique",
+          "Compas de navigation perfectionné"
+        ],
+        "works": [
+          "Cité interdite",
+          "Grande Muraille des Ming",
+          "Le Voyage en Occident",
+          "Encyclopédie de Yongle"
+        ],
+        "scholars": [
+          "Wang Yangming",
+          "Li Shizhen",
+          "Xu Guangqi",
+          "Matteo Ricci"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Grand Canal rétabli, Cité interdite (1420) et Grande Muraille reconstruite sur environ 8 850 km."
+      },
+      "legacy": "La Chine se referme après les expéditions maritimes mais reste prospère ; Pékin devient capitale pour six siècles. Les Ming reconstruisent l'identité chinoise après les Yuan."
+    },
+    {
+      "id": "qing",
+      "name": "Les Qing, dernière dynastie",
+      "start": 1644,
+      "end": 1912,
+      "population": {
+        "total": {
+          "value": 430000000,
+          "low": 400000000,
+          "high": 450000000,
+          "year": 1850,
+          "note": "Environ 150 M en 1700 ; forte croissance avant les révoltes.",
+          "source": {
+            "label": "Wikipédia : Démographie de la Chine",
+            "url": "https://fr.wikipedia.org/wiki/D%C3%A9mographie_de_la_Chine"
+          }
+        },
+        "cities": [
+          {
+            "name": "Pékin",
+            "population": {
+              "value": 1100000,
+              "low": 800000,
+              "high": 1300000,
+              "year": 1800,
+              "source": {
+                "label": "Wikipédia : Pékin",
+                "url": "https://fr.wikipedia.org/wiki/P%C3%A9kin"
+              }
+            }
+          },
+          {
+            "name": "Canton",
+            "population": {
+              "value": 800000,
+              "low": 600000,
+              "high": 1000000,
+              "year": 1800,
+              "source": {
+                "label": "Wikipédia : Canton (Chine)",
+                "url": "https://fr.wikipedia.org/wiki/Canton_(Chine)"
+              }
+            }
+          },
+          {
+            "name": "Shanghai",
+            "population": {
+              "value": 1000000,
+              "low": 800000,
+              "high": 1200000,
+              "year": 1900,
+              "source": {
+                "label": "Wikipédia : Shanghai",
+                "url": "https://fr.wikipedia.org/wiki/Shanghai"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 33,
+          "low": 28,
+          "high": 36,
+          "year": 1820,
+          "note": "Estimation reconstruite de type Maddison ; 17 % en 1870, 9 % en 1913.",
+          "source": {
+            "label": "Wikipédia : Démographie de la Chine",
+            "url": "https://fr.wikipedia.org/wiki/D%C3%A9mographie_de_la_Chine"
+          }
+        },
+        "resources": [
+          "Riz et blé",
+          "Thé",
+          "Soie",
+          "Coton",
+          "Opium (importé)"
+        ],
+        "currency": "Pièces de cuivre pour la vie courante, lingots d'argent pour les grosses sommes.",
+        "taxation": "Impôt foncier stable, taxes sur le sel et douanes ; les caisses se vident après les guerres de l'opium.",
+        "trade": "Commerce canalisé vers Canton jusqu'en 1842, puis ports ouverts de force aux Européens."
+      },
+      "army": {
+        "size": {
+          "value": 800000,
+          "low": 600000,
+          "high": 900000,
+          "year": 1800,
+          "note": "Bannières mandchoues et Armée de l'étendard vert, effectif nominal.",
+          "source": {
+            "label": "Wikipédia : Dynastie Qing",
+            "url": "https://fr.wikipedia.org/wiki/Dynastie_Qing"
+          }
+        },
+        "composition": "Huit Bannières (mandchous, mongols, chinois), armée de l'étendard vert, puis armées régionales.",
+        "recruitment": "Familles de bannières héréditaires, puis armées levées par les gouverneurs (Xiang, Huai).",
+        "famousUnits": [
+          "Huit Bannières",
+          "Armée de l'étendard vert",
+          "Armée Huai"
+        ],
+        "innovations": [
+          "Armes à feu importées",
+          "Arsenal de Jiangnan",
+          "Marine de Beiyang"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie impériale mandchoue absolue.",
+        "head": "Empereur (Kangxi, Qianlong…) et, à la fin, l'impératrice douairière Cixi.",
+        "succession": "Désignation par l'empereur ; les cours de la fin du siècle sont dominées par des régences.",
+        "institutions": "Grand Conseil, six ministères, censeurs, double administration mandchoue et han.",
+        "administration": "Dix-huit provinces chinoises, plus dépendances (Mongolie, Tibet, Xinjiang).",
+        "provinces": {
+          "value": 18,
+          "low": 18,
+          "high": 22,
+          "year": 1800,
+          "unit": "provinces",
+          "source": {
+            "label": "Wikipédia : Dynastie Qing",
+            "url": "https://fr.wikipedia.org/wiki/Dynastie_Qing"
+          }
+        },
+        "law": "Grand Code des Qing (1740), fondé sur celui des Ming ; extraterritorialité pour les étrangers."
+      },
+      "society": {
+        "religions": [
+          "Confucianisme",
+          "Bouddhisme et taoïsme",
+          "Islam, christianisme",
+          "Culte des ancêtres"
+        ],
+        "languages": [
+          "Mandarin",
+          "Mandchou (cour)",
+          "Tibétain, mongol, ouïghour"
+        ],
+        "structure": "Mandchous privilégiés, lettrés han, paysans pauvres ; forte pression démographique.",
+        "women": "Pieds bandés chez les Han, mais pas chez les Mandchous ; fin XIXe, premières écoles de filles."
+      },
+      "culture": {
+        "inventions": [
+          "Opéra de Pékin",
+          "Porcelaine famille rose",
+          "Premiers chemins de fer",
+          "Télégraphe (années 1880)"
+        ],
+        "works": [
+          "Palais d'Été",
+          "Dictionnaire de Kangxi",
+          "Le Rêve du pavillon rouge",
+          "Siku quanshu"
+        ],
+        "scholars": [
+          "Cao Xueqin",
+          "Kang Youwei",
+          "Wei Yuan",
+          "Yan Fu"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Grand Canal, routes impériales ; premières voies ferrées dans les années 1880 et 1900."
+      },
+      "legacy": "Plus grande extension territoriale de la Chine, mais humiliation par les puissances étrangères. La chute de 1912 clôt deux millénaires de régime impérial."
+    }
+  ]
+}

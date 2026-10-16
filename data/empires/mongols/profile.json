@@ -1,0 +1,407 @@
+{
+  "empire": "mongols",
+  "periods": [
+    {
+      "id": "gengis",
+      "name": "Gengis Khan",
+      "start": 1206,
+      "end": 1229,
+      "population": {
+        "total": {
+          "value": 50000000,
+          "low": 30000000,
+          "high": 70000000,
+          "year": 1227,
+          "note": "Population des régions sous domination ; les Mongols eux-mêmes ne dépassaient pas 1 à 2 millions. Estimation très incertaine.",
+          "source": {
+            "label": "Wikipédia : Empire mongol",
+            "url": "https://fr.wikipedia.org/wiki/Empire_mongol"
+          }
+        },
+        "cities": [
+          {
+            "name": "Merv",
+            "population": {
+              "value": 150000,
+              "low": 70000,
+              "high": 250000,
+              "year": 1220,
+              "note": "Les chiffres des massacres de 1221 (jusqu'à 1 M) sont jugés très exagérés.",
+              "source": {
+                "label": "Wikipédia : Merv",
+                "url": "https://fr.wikipedia.org/wiki/Merv"
+              }
+            }
+          },
+          {
+            "name": "Karakorum",
+            "population": {
+              "value": 10000,
+              "low": 5000,
+              "high": 20000,
+              "year": 1235,
+              "note": "Campement devenu capitale sous Ögödei.",
+              "source": {
+                "label": "Wikipédia : Karakorum",
+                "url": "https://fr.wikipedia.org/wiki/Karakorum"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Chevaux et troupeaux",
+          "Butin de guerre",
+          "Tribut des peuples soumis",
+          "Artisans déportés"
+        ],
+        "currency": "Pas de monnaie propre ; paiement en argent, soie et butin.",
+        "taxation": "Tribut en nature et en hommes ; le qubchur, impôt sur les troupeaux.",
+        "trade": "Protection des caravanes de la route de la soie, premières garanties pour les marchands (ortoq)."
+      },
+      "army": {
+        "size": {
+          "value": 129000,
+          "low": 100000,
+          "high": 150000,
+          "year": 1227,
+          "note": "Selon les sources persanes ; effectif central de l'armée mongole.",
+          "source": {
+            "label": "Wikipédia : Armée mongole",
+            "url": "https://fr.wikipedia.org/wiki/Arm%C3%A9e_mongole"
+          }
+        },
+        "composition": "Cavaliers-archers rapides, avec chevaux de rechange ; ingénieurs de siège recrutés chez les vaincus.",
+        "recruitment": "Tous les hommes valides, organisés en dizaines, centaines, milliers (arbans) et tumens.",
+        "famousUnits": [
+          "Keshig (garde de Gengis)",
+          "Tumens",
+          "Archers montés"
+        ],
+        "innovations": [
+          "Organisation décimale",
+          "Tactique de la fausse retraite",
+          "Poste à cheval (yam)"
+        ]
+      },
+      "politics": {
+        "regime": "Confédération tribale devenue empire personnel.",
+        "head": "Gengis Khan (Grand Khan), proclamé au kurultai de 1206.",
+        "succession": "Désignation par le khan, confirmée par l'assemblée des princes (kurultai).",
+        "institutions": "Kurultai, conseil des généraux, garde impériale.",
+        "administration": "Territoires partagés entre fils ; le yam et des gouverneurs (darughachi) contrôlent les peuples soumis.",
+        "law": "Le Yassa, ensemble de lois et d'interdits oraux attribués à Gengis Khan."
+      },
+      "society": {
+        "religions": [
+          "Tengrisme (religion de la steppe)",
+          "Bouddhisme",
+          "Islam",
+          "Christianisme nestorien"
+        ],
+        "languages": [
+          "Mongol",
+          "Turc",
+          "Persan",
+          "Chinois"
+        ],
+        "structure": "Aristocratie guerrière des clans, éleveurs libres, étrangers soumis ; promotion au mérite parmi les chefs.",
+        "women": "Épouses et mères de khans conseillent et régentent (Töregene, Sorgaghtani) ; en steppe, les femmes gèrent le camp et les troupeaux."
+      },
+      "culture": {
+        "inventions": [
+          "Écriture ouïgoure adaptée au mongol",
+          "Poste à cheval (yam)",
+          "Papier-monnaie (plus tard)"
+        ],
+        "works": [
+          "Histoire secrète des Mongols",
+          "Sceau impérial"
+        ],
+        "scholars": [
+          "Yelü Chucai",
+          "Chang Chun",
+          "Tata Tonga"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Relais de poste (yam) tous les 30 à 50 km sur les routes de steppe ; ni routes pavées ni grandes villes."
+      },
+      "legacy": "Gengis Khan fonde en vingt ans un empire de dimension continentale. Ses conquêtes ont fait des millions de morts, mais ont aussi relié l'Asie."
+    },
+    {
+      "id": "grands-khans",
+      "name": "Les grands khans",
+      "start": 1229,
+      "end": 1260,
+      "population": {
+        "total": {
+          "value": 80000000,
+          "low": 60000000,
+          "high": 110000000,
+          "year": 1260,
+          "note": "Estimation très incertaine, sans la Chine des Song du Sud.",
+          "source": {
+            "label": "Wikipédia : Empire mongol",
+            "url": "https://fr.wikipedia.org/wiki/Empire_mongol"
+          }
+        },
+        "cities": [
+          {
+            "name": "Bagdad",
+            "population": {
+              "value": 500000,
+              "low": 300000,
+              "high": 800000,
+              "year": 1258,
+              "note": "Avant le sac par Houlagou ; les chiffres de victimes (jusqu'à 1 M) sont discutés.",
+              "source": {
+                "label": "Wikipédia : Bagdad",
+                "url": "https://fr.wikipedia.org/wiki/Bagdad"
+              }
+            }
+          },
+          {
+            "name": "Karakorum",
+            "population": {
+              "value": 15000,
+              "low": 10000,
+              "high": 30000,
+              "year": 1260,
+              "source": {
+                "label": "Wikipédia : Karakorum",
+                "url": "https://fr.wikipedia.org/wiki/Karakorum"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Tribut de la Chine du Nord",
+          "Soie de Perse",
+          "Métaux d'Asie centrale",
+          "Artisans déportés"
+        ],
+        "currency": "Lingots d'argent (balish), puis premiers billets sur le modèle chinois.",
+        "taxation": "Recensement des peuples soumis, impôt par tête (qubchur) et tribut ; collecte par des fermiers d'impôts.",
+        "trade": "Pax Mongolica : route de la soie sécurisée, caravanes de Chine à la Perse."
+      },
+      "army": {
+        "size": {
+          "value": 130000,
+          "low": 100000,
+          "high": 150000,
+          "year": 1241,
+          "note": "Ordre de grandeur de l'armée de Batu en Europe ; chiffres très débattus.",
+          "source": {
+            "label": "Wikipédia : Armée mongole",
+            "url": "https://fr.wikipedia.org/wiki/Arm%C3%A9e_mongole"
+          }
+        },
+        "composition": "Cavalerie d'archers, artillerie de siège chinoise et persane, auxiliaires turcs.",
+        "recruitment": "Conscription générale des hommes, avec les peuples vaincus fournissant des contingents.",
+        "famousUnits": [
+          "Armée de Batu",
+          "Armée de Houlagou",
+          "Keshig impérial"
+        ],
+        "innovations": [
+          "Trébuchets à contrepoids",
+          "Engins à poudre chinois",
+          "Ingénieurs de siège"
+        ]
+      },
+      "politics": {
+        "regime": "Empire mongol unifié sous le Grand Khan, puis sans arbitre.",
+        "head": "Ögödei (1229-1241), Güyük, Möngke (1251-1259), élus au kurultai.",
+        "succession": "Élection par les princes ; régences et querelles entre les fils de Gengis Khan.",
+        "institutions": "Chancellerie, kurultai, gouverneurs, secrétaires étrangers.",
+        "administration": "Régions confiées à des princes ; capitale à Karakorum, cour itinérante.",
+        "law": "Yassa de Gengis Khan, complétée par des décrets de chaque khan."
+      },
+      "society": {
+        "religions": [
+          "Tengrisme (religion de la steppe)",
+          "Bouddhisme",
+          "Islam",
+          "Christianisme nestorien"
+        ],
+        "languages": [
+          "Mongol",
+          "Turc",
+          "Persan",
+          "Chinois"
+        ],
+        "structure": "Aristocratie mongole, fonctionnaires étrangers (ouïghours, persans, chinois), artisans déportés, paysans soumis.",
+        "women": "Épouses et mères de khans conseillent et régentent (Töregene, Sorgaghtani) ; en steppe, les femmes gèrent le camp et les troupeaux."
+      },
+      "culture": {
+        "inventions": [
+          "Poste à cheval étendue (yam)",
+          "Passeport (paiza)",
+          "Ateliers d'artisans"
+        ],
+        "works": [
+          "Palais de Karakorum",
+          "Voyage de Plan Carpin",
+          "Voyage de Guillaume de Rubrouck"
+        ],
+        "scholars": [
+          "Jean de Plan Carpin",
+          "Guillaume de Rubrouck",
+          "Nasir al-Din al-Tusi",
+          "Juvaini"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Réseau de relais (yam) sur des milliers de kilomètres ; ponts et routes remis en état pour les courriers."
+      },
+      "legacy": "L'empire est le plus vaste d'un seul tenant, mais l'unité se brise après Möngke. Il laisse des ruines en Perse et en Russie, et des échanges inédits entre Orient et Occident."
+    },
+    {
+      "id": "khanats",
+      "name": "Les khanats et les Yuan",
+      "start": 1260,
+      "end": 1368,
+      "population": {
+        "total": {
+          "value": 100000000,
+          "low": 80000000,
+          "high": 130000000,
+          "year": 1300,
+          "note": "Cumul des quatre khanats ; estimation très incertaine.",
+          "source": {
+            "label": "Wikipédia : Empire mongol",
+            "url": "https://fr.wikipedia.org/wiki/Empire_mongol"
+          }
+        },
+        "cities": [
+          {
+            "name": "Dadu (Pékin)",
+            "population": {
+              "value": 400000,
+              "low": 200000,
+              "high": 1000000,
+              "year": 1300,
+              "source": {
+                "label": "Wikipédia : Pékin",
+                "url": "https://fr.wikipedia.org/wiki/P%C3%A9kin"
+              }
+            }
+          },
+          {
+            "name": "Hangzhou",
+            "population": {
+              "value": 1000000,
+              "low": 700000,
+              "high": 1500000,
+              "year": 1280,
+              "source": {
+                "label": "Wikipédia : Hangzhou",
+                "url": "https://fr.wikipedia.org/wiki/Hangzhou"
+              }
+            }
+          },
+          {
+            "name": "Sarai",
+            "population": {
+              "value": 100000,
+              "low": 50000,
+              "high": 150000,
+              "year": 1340,
+              "source": {
+                "label": "Wikipédia : Sarai",
+                "url": "https://fr.wikipedia.org/wiki/Sarai"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Soie et coton",
+          "Épices de l'océan Indien",
+          "Chevaux de steppe",
+          "Sel et fer"
+        ],
+        "currency": "Billets d'État (chao) imposés en Chine ; émissions excessives, inflation.",
+        "taxation": "Impôts sur les récoltes en Chine, tribut des princes russes, monopole du sel et du thé.",
+        "trade": "Caravanes et navires entre Chine, Perse et mer Noire ; marchands italiens, dont Marco Polo."
+      },
+      "army": {
+        "composition": "Cavaliers mongols et turcs, armées chinoises ou persanes alliées, flottes en Chine.",
+        "recruitment": "Familles militaires héréditaires en Chine ; levées tribales et conscrits dans les autres khanats.",
+        "famousUnits": [
+          "Armée des Yuan",
+          "Armée de la Horde d'or",
+          "Garde du Khan"
+        ],
+        "innovations": [
+          "Grandes flottes de transport",
+          "Canons à main (début)",
+          "Artillerie à poudre"
+        ]
+      },
+      "politics": {
+        "regime": "Khanats rivaux issus de Gengis Khan, avec empereur Yuan en Chine.",
+        "head": "Kubilaï Khan (Yuan), Houlagou (Ilkhanat), Batu puis Özbeg (Horde d'or).",
+        "succession": "Héréditaire dans la famille de Gengis Khan ; luttes de princes (Kubilaï contre Ariq Böke).",
+        "institutions": "Chancellerie, assemblées de princes, conseils de ministres étrangers.",
+        "administration": "Province (xingsheng) en Chine ; vassaux locaux pour la Russie et la Perse.",
+        "provinces": {
+          "value": 11,
+          "low": 10,
+          "high": 12,
+          "year": 1330,
+          "unit": "provinces (xingsheng)",
+          "source": {
+            "label": "Wikipédia : Dynastie Yuan",
+            "url": "https://fr.wikipedia.org/wiki/Dynastie_Yuan"
+          }
+        },
+        "law": "Droit mongol et lois locales ; les Yuan classent leurs sujets en quatre catégories."
+      },
+      "society": {
+        "religions": [
+          "Bouddhisme tibétain à la cour Yuan",
+          "Islam (Ilkhanat, Horde d'or)",
+          "Christianisme nestorien",
+          "Tengrisme"
+        ],
+        "languages": [
+          "Mongol",
+          "Chinois",
+          "Persan",
+          "Turc"
+        ],
+        "structure": "Mongols au sommet, puis alliés d'Asie centrale, Chinois du Nord, Chinois du Sud ; marchands étrangers favorisés.",
+        "women": "Les princesses gardent une influence réelle ; au Yuan, la sinisation réduit peu à peu leur place."
+      },
+      "culture": {
+        "inventions": [
+          "Papier-monnaie à grande échelle",
+          "Théâtre yuan (zaju)",
+          "Observatoire de Maragha",
+          "Almanach Shoushi"
+        ],
+        "works": [
+          "Livre des merveilles de Marco Polo",
+          "Observatoire de Maragha",
+          "Grand Canal remis en état"
+        ],
+        "scholars": [
+          "Guo Shoujing",
+          "Rachid al-Din",
+          "Marco Polo",
+          "Nasir al-Din al-Tusi"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Grand Canal prolongé jusqu'à Dadu, relais de poste de Chine à la Perse, ports de la mer de Chine."
+      },
+      "legacy": "Quatre États se partagent l'héritage mongol, que la peste noire et les révoltes affaiblissent. Les Yuan tombent en 1368 ; la Horde d'or marquera la Russie pour des siècles."
+    }
+  ]
+}
