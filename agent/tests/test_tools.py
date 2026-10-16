@@ -51,4 +51,17 @@ def test_agent_se_construit():
     from atlas_agent.agent import root_agent
 
     assert root_agent.name == "guide_atlas"
-    assert len(root_agent.tools) == 5
+    assert len(root_agent.tools) == 6
+
+
+def test_chercher_personnage_trouve_cesar_et_ses_etapes():
+    r = tools.chercher_personnage("césar")
+    assert "personnages" in r
+    fiche = r["personnages"][0]
+    assert fiche["empire"] == "rome"
+    assert len(fiche["biographie"].split()) >= 100
+    assert fiche["apparait_dans"], "César apparaît dans au moins une étape"
+
+
+def test_chercher_personnage_inconnu():
+    assert "erreur" in tools.chercher_personnage("Personne Inconnue")

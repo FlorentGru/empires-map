@@ -1,0 +1,373 @@
+[
+  {
+    "id": "confucius",
+    "name": "Confucius",
+    "archetype": "lettre-mandarin",
+    "faction": "chinois",
+    "born": -551,
+    "died": -479,
+    "title": "Maître et philosophe",
+    "bio": "Kong Qiu, que l'on appelle Kongzi, « Maître Kong », naît en 551 av. J.-C. dans l'État de Lu, au temps où la dynastie Zhou ne contrôle plus ses princes. Orphelin de père, issu d'une famille modeste, il apprend seul les rites, la musique et l'histoire. Il rêve d'un gouvernement fondé sur la vertu plutôt que sur la force : le prince doit donner l'exemple, et chacun tenir sa place dans la famille et l'État. Il occupe brièvement des charges à Lu, puis voyage treize ans de cour en cour sans trouver de souverain qui applique ses idées. De retour chez lui, il enseigne à des disciples venus de tous milieux, ce qui est alors une nouveauté. Ses propos sont recueillis après sa mort dans les Entretiens (Lunyu). Il meurt en 479 av. J.-C. Sous les Han, sa doctrine devient la base de l'éducation des fonctionnaires et le restera jusqu'au début du XXe siècle. Son enseignement a façonné les sociétés d'Asie orientale.",
+    "keyFacts": [
+      "551 av. J.-C. : naissance à Lu",
+      "Vers 497-484 av. J.-C. : années de voyage de cour en cour",
+      "479 av. J.-C. : mort à Qufu",
+      "Sous les Han (IIe siècle av. J.-C.) : le confucianisme devient doctrine d'État"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Confucius"
+      }
+    ]
+  },
+  {
+    "id": "sun-zi",
+    "name": "Sun Zi",
+    "archetype": "general-chinois",
+    "faction": "chinois",
+    "title": "Stratège, auteur de L'Art de la guerre",
+    "bio": "Sun Wu, honoré sous le nom de Sun Zi, « Maître Sun », vit à la fin de la période des Printemps et Automnes. Selon la tradition, il serait né dans l'État de Qi et aurait servi le roi Helü de Wu, qui aurait été convaincu après un épisode célèbre : il aurait transformé en soldats disciplinés les concubines du roi. Son livre, L'Art de la guerre, est un petit traité de treize chapitres au style dense. Il y prône l'information, la ruse, la rapidité et la préparation : le meilleur général est celui qui gagne sans combattre, et qui connaît à la fois l'ennemi et lui-même. Les historiens discutent de son existence réelle et de la date du texte, que beaucoup attribuent plutôt aux Royaumes combattants. Quoi qu'il en soit, l'ouvrage est devenu un classique mondial, étudié par des officiers, des chefs d'entreprise et des joueurs de stratégie. Il a été traduit en français par le jésuite Joseph Amiot au XVIIIe siècle.",
+    "keyFacts": [
+      "Vers 512 av. J.-C. : entre au service du roi de Wu, selon la tradition",
+      "Vers 506 av. J.-C. : victoire de Wu sur Chu, que la tradition lui attribue",
+      "Ve-IVe siècle av. J.-C. : rédaction probable de L'Art de la guerre",
+      "1772 : première traduction en français, par Joseph Amiot"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Sun_Zi"
+      }
+    ]
+  },
+  {
+    "id": "gengis-khan",
+    "name": "Gengis Khan",
+    "archetype": "khan",
+    "faction": "mongols",
+    "born": 1162,
+    "died": 1227,
+    "title": "Fondateur de l'Empire mongol",
+    "bio": "Né vers 1162 sous le nom de Temüjin, il perd son père à neuf ans et grandit dans la misère, parmi des tribus qui se déchirent. À force de ruse et d'alliances, il bat ses rivaux (Tatars, Kereyit, Naïman) et, en 1206, un grand rassemblement lui donne le titre de Gengis Khan, « souverain universel ». Il organise son armée en dizaines, centaines et milliers, fondée sur le mérite plutôt que sur la naissance. Il lance l'invasion de la Chine du Nord, prend Pékin (Zhongdu) en 1215 aux Jin, puis détruit l'empire du Khwarezm en Asie centrale. Dans le même temps, il fait mettre par écrit la langue mongole, impose la tolérance religieuse et protège les routes commerciales. Il meurt en 1227 en pleine campagne contre les Xi Xia. Sa tombe reste inconnue. Ses fils et petits-fils feront de son héritage le plus vaste empire continu de l'histoire. Les populations conquises ont parfois subi d'énormes massacres.",
+    "keyFacts": [
+      "Vers 1162 : naissance de Temüjin",
+      "1206 : proclamé Gengis Khan",
+      "1215 : prise de Zhongdu (Pékin)",
+      "1227 : mort pendant la campagne contre les Xi Xia"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Gengis_Khan"
+      }
+    ]
+  },
+  {
+    "id": "qin-shi-huang",
+    "name": "Qin Shi Huang",
+    "archetype": "empereur-chinois",
+    "faction": "chinois",
+    "born": -259,
+    "died": -210,
+    "title": "Premier empereur de Chine",
+    "bio": "Ying Zheng naît en 259 av. J.-C. et devient roi de Qin à treize ans. Avec l'aide de légistes comme Li Si, il fait de ce royaume une machine de guerre. Entre 230 et 221 av. J.-C., il élimine un à un les six autres grands royaumes. En 221, il fonde l'empire et prend le titre de Shi Huangdi, « Premier Empereur ». Il unifie tout ce qui peut l'être : écriture, poids, mesures, monnaie, largeur des essieux. Il remplace les fiefs par des commanderies dirigées par des fonctionnaires. Il fait relier les fortifications du Nord, premier état de la Grande Muraille, et bâtit des routes et des canaux. Mais son régime est brutal : corvées immenses, censure, autodafé de livres en 213 et exécution de lettrés. Obsédé par l'immortalité, il consomme des élixirs de mercure. Il meurt en 210 av. J.-C. au cours d'un voyage. Son tombeau, près de Xi'an, abrite l'armée de terre cuite. Sa dynastie ne lui survit que quatre ans.",
+    "keyFacts": [
+      "246 av. J.-C. : devient roi de Qin à 13 ans",
+      "221 av. J.-C. : unification de la Chine, titre de Premier Empereur",
+      "213 av. J.-C. : autodafé des livres",
+      "210 av. J.-C. : mort ; l'armée de terre cuite garde son tombeau"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Qin_Shi_Huang"
+      }
+    ]
+  },
+  {
+    "id": "liu-bang",
+    "name": "Liu Bang",
+    "archetype": "empereur-chinois",
+    "faction": "chinois",
+    "died": -195,
+    "title": "Fondateur de la dynastie Han",
+    "bio": "Fils de paysans, Liu Bang naît dans la région de Pei. Il devient petit chef de village, chargé de surveiller des forçats. Quand ceux-ci s'échappent, il les libère et prend le maquis : c'est le début de sa carrière rebelle. En 209 av. J.-C., alors que l'empire Qin s'effondre, il rejoint la révolte. Il entre le premier dans la capitale Xianyang en 207, avant son rival Xiang Yu, et se montre modéré avec les habitants. Xiang Yu le rejette alors sur le Hanzhong, mais Liu Bang s'entoure de conseillers brillants (Zhang Liang, Xiao He, Han Xin) et finit par l'emporter. Xiang Yu, vaincu à Gaixia en 202, se suicide. Liu Bang prend le titre d'empereur : c'est Gaozu des Han. Il assouplit les lois des Qin, baisse les impôts et fait la paix avec les Xiongnu après un revers à Pingcheng. Il meurt en 195 av. J.-C. Sa dynastie durera, avec une brève coupure, plus de quatre siècles.",
+    "keyFacts": [
+      "209 av. J.-C. : rejoint la révolte contre les Qin",
+      "207 av. J.-C. : entre dans Xianyang",
+      "202 av. J.-C. : victoire de Gaixia sur Xiang Yu",
+      "195 av. J.-C. : mort, après avoir fondé les Han"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Han_Gaozu"
+      }
+    ]
+  },
+  {
+    "id": "han-wudi",
+    "name": "Han Wudi",
+    "archetype": "empereur-chinois",
+    "faction": "chinois",
+    "born": -156,
+    "died": -87,
+    "title": "« Empereur martial » des Han",
+    "bio": "Liu Che monte sur le trône en 141 av. J.-C. à seize ans, après plusieurs décennies de prudence. L'empire est riche et prêt pour des ambitions nouvelles. Wudi rompt avec la politique de paix achetée aux Xiongnu : il envoie contre eux des armées de cavalerie conduites par Wei Qing et Huo Qubing, qui repoussent les nomades au-delà du désert de Gobi. Il envoie aussi Zhang Qian vers l'Ouest, d'où partent les routes de la soie. Il étend l'empire vers la Corée, le Vietnam et le Yunnan. Pour payer ces guerres, il instaure des monopoles d'État sur le sel et le fer et taxe les marchands. Il fait du confucianisme la base de la formation des fonctionnaires, avec une université impériale. Dans sa vieillesse, miné par la crainte de sorcellerie, son héritier Liu Ju est poussé au suicide. Il meurt en 87 av. J.-C., après cinquante-quatre ans de règne, laissant un empire immense mais épuisé financièrement.",
+    "keyFacts": [
+      "141 av. J.-C. : accède au trône",
+      "139-126 av. J.-C. : première mission de Zhang Qian vers l'Ouest",
+      "119 av. J.-C. : grande campagne de Mobei contre les Xiongnu",
+      "87 av. J.-C. : mort après 54 ans de règne"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Han_Wudi"
+      }
+    ]
+  },
+  {
+    "id": "cao-cao",
+    "name": "Cao Cao",
+    "archetype": "general-chinois",
+    "faction": "chinois",
+    "born": 155,
+    "died": 220,
+    "title": "Seigneur de la guerre du Nord",
+    "bio": "Cao Cao naît en 155, petit-fils d'un puissant eunuque de cour. Il commence sa carrière comme jeune fonctionnaire puis combat les Turbans jaunes en 184. Quand la dynastie Han vacille, il accueille en 196 l'empereur Xian et gouverne en son nom depuis Xuchang. En 200, avec une armée plus faible, il bat Yuan Shao à Guandu, puis réunifie le Nord. Mais il échoue à la bataille de la Falaise rouge, en 208, face à l'alliance de Sun Quan et de Liu Bei. La Chine reste divisée en trois. Cao Cao est un chef redoutable, stratège, administrateur, mais aussi poète : ses vers sont parmi les plus beaux de l'époque. Le Roman des Trois Royaumes, composé plus de mille ans plus tard, le dépeint en traître, alors que les historiens le jugent plus nuancé. Il meurt en 220 sans avoir pris le titre d'empereur. Son fils Cao Pi dépose le dernier Han la même année et fonde le royaume de Wei.",
+    "keyFacts": [
+      "184 : combat les Turbans jaunes",
+      "196 : prend l'empereur Xian sous sa protection",
+      "200 : victoire de Guandu sur Yuan Shao",
+      "208 : défaite de la Falaise rouge"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Cao_Cao"
+      }
+    ]
+  },
+  {
+    "id": "zhuge-liang",
+    "name": "Zhuge Liang",
+    "archetype": "lettre-mandarin",
+    "faction": "chinois",
+    "born": 181,
+    "died": 234,
+    "title": "Stratège et chancelier du royaume de Shu",
+    "bio": "Zhuge Liang naît en 181 dans le Shandong. Orphelin, il s'installe à Longzhong, dans le Hubei, où il vit en lettré retiré, qu'on surnomme le « Dragon couché ». En 207, Liu Bei, descendant des Han et chef sans territoire, vient le chercher trois fois dans sa chaumière. Zhuge Liang lui propose un plan : s'allier à Sun Quan, prendre le Sichuan, puis attaquer le Nord. Il devient l'un des artisans de la victoire de la Falaise rouge en 208 puis de la fondation du royaume de Shu en 221. Après la mort de Liu Bei en 223, il gouverne au nom du jeune Liu Shan, développe l'agriculture, réforme les lois et pacifie le Sud. À partir de 228, il lance cinq expéditions vers le Nord contre le Wei, sans résultat décisif. Il meurt de maladie en 234, devant les armées ennemies, à Wuzhangyuan. Le Roman des Trois Royaumes en fait un génie presque magique. Les Chinois le voient comme le modèle du ministre loyal.",
+    "keyFacts": [
+      "207 : Liu Bei vient le chercher trois fois",
+      "208 : rôle clé dans l'alliance de la Falaise rouge",
+      "221 : fondation du royaume de Shu, dont il est chancelier",
+      "234 : meurt à Wuzhangyuan pendant sa dernière expédition"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Zhuge_Liang"
+      }
+    ]
+  },
+  {
+    "id": "tang-taizong",
+    "name": "Tang Taizong",
+    "archetype": "empereur-chinois",
+    "faction": "chinois",
+    "born": 598,
+    "died": 649,
+    "title": "Empereur des Tang et Khagan céleste",
+    "bio": "Li Shimin, deuxième fils de Li Yuan, joue un rôle capital dans la fondation des Tang. Général brillant, il est l'artisan de plusieurs victoires dès 618. Il s'oppose à ses frères et, en 626, les fait tuer lors de l'incident de la porte Xuanwu, puis force son père à abdiquer. Devenu empereur sous le nom de Taizong, il reste célèbre comme l'un des meilleurs souverains de Chine. Il s'entoure de conseillers courageux, comme Wei Zheng, qui n'hésitent pas à le critiquer. Il réorganise les institutions, développe le système d'examens et protège les lettrés. En 630, son général Li Jing bat les Turcs orientaux, et les chefs de la steppe le proclament Khagan céleste. Il étend l'influence chinoise sur l'Asie centrale, accueille Xuanzang et laisse toutes les religions s'établir à Chang'an, capitale cosmopolite. Mais ses campagnes en Corée échouent. Il meurt en 649. Le Règne de Zhenguan est resté le modèle du bon gouvernement.",
+    "keyFacts": [
+      "626 : incident de la porte Xuanwu, devient empereur",
+      "630 : victoire sur les Turcs orientaux, titre de Khagan céleste",
+      "645 : accueille Xuanzang de retour d'Inde",
+      "649 : mort ; fin du règne de Zhenguan"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Tang_Taizong"
+      }
+    ]
+  },
+  {
+    "id": "wu-zetian",
+    "name": "Wu Zetian",
+    "archetype": "imperatrice",
+    "faction": "chinois",
+    "born": 624,
+    "died": 705,
+    "title": "Seule femme à avoir régné comme empereur de Chine",
+    "bio": "Fille d'un riche marchand de bois devenu fonctionnaire, Wu Zhao entre adolescente dans le palais de Taizong comme concubine. À la mort de l'empereur, elle est envoyée dans un monastère, mais le nouvel empereur Gaozong la ramène à la cour et en fait son impératrice en 655. Intelligente, elle élimine ses rivales et gouverne de plus en plus à la place de son mari, atteint de maladie. Après sa mort en 683, elle écarte deux de ses fils, puis fonde en 690 sa propre dynastie, les Zhou. Elle est la seule femme à avoir porté le titre d'empereur. Elle s'appuie sur des fonctionnaires issus des examens plutôt que sur l'aristocratie, soutient le bouddhisme et fait creuser les grottes de Longmen. Sa police secrète et ses exécutions ont laissé de mauvais souvenirs. Contrainte d'abdiquer en 705, elle meurt la même année. Les historiens confucéens l'ont dépeinte en usurpatrice, mais son administration fut efficace.",
+    "keyFacts": [
+      "655 : devient impératrice, épouse de Gaozong",
+      "690 : proclame la dynastie Zhou et devient empereur",
+      "Vers 690-705 : développe les examens et le bouddhisme",
+      "705 : contrainte d'abdiquer, mort la même année"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Wu_Zetian"
+      }
+    ]
+  },
+  {
+    "id": "yue-fei",
+    "name": "Yue Fei",
+    "archetype": "general-chinois",
+    "faction": "chinois",
+    "born": 1103,
+    "died": 1142,
+    "title": "Général patriote des Song du Sud",
+    "bio": "Né en 1103 dans une famille de paysans du Henan, Yue Fei s'engage dans l'armée au moment où les Jurchens de la dynastie Jin envahissent le Nord de la Chine et capturent l'empereur Huizong en 1127. Entré au service du nouvel empereur Gaozong, il s'impose par sa discipline : ses soldats ne pillent pas, et la population lui est fidèle. Il reprend plusieurs régions du Yangzi aux rebelles, puis mène des offensives contre les Jin et aux portes de Kaifeng. Mais le chancelier Qin Hui préfère négocier avec les Jin, et l'empereur le suit. En 1142, Yue Fei est rappelé, arrêté et condamné pour trahison. Il meurt en prison, probablement étranglé, à 39 ans, dans des circonstances jamais éclaircies. Réhabilité en 1162, il devient l'incarnation de la loyauté et de la résistance patriotique. Une tradition lui attribue quatre caractères tatoués sur le dos par sa mère : « servir le pays avec une loyauté absolue ». Son tombeau est à Hangzhou.",
+    "keyFacts": [
+      "1127 : prise de Kaifeng par les Jin, capture de Huizong",
+      "Vers 1134-1140 : campagnes de reconquête dans le Henan et le Hubei",
+      "1142 : exécuté en prison sur ordre de Qin Hui",
+      "1162 : réhabilité à titre posthume"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Yue_Fei"
+      }
+    ]
+  },
+  {
+    "id": "kubilai-khan",
+    "name": "Kubilai Khan",
+    "archetype": "khan",
+    "faction": "mongols",
+    "born": 1215,
+    "died": 1294,
+    "title": "Grand Khan et fondateur de la dynastie Yuan",
+    "bio": "Petit-fils de Gengis Khan, Kubilai naît en 1215. Sa mère, Sorghaghtani Beki, lui donne une éducation ouverte à plusieurs cultures. Son frère Möngke, devenu Grand Khan, l'envoie gouverner la Chine du Nord, où il s'entoure de conseillers chinois. À la mort de Möngke en 1259, il se fait proclamer khan en 1260 et gagne la guerre civile contre son frère Ariq Böke. En 1271, il adopte le nom chinois de dynastie, Yuan, et fait bâtir sa capitale Dadu, l'actuelle Pékin. Il achève la conquête des Song du Sud en 1279 à la bataille de Yamen et devient le premier souverain venu de l'extérieur à régner sur toute la Chine. Il fait creuser des canaux, introduire le papier-monnaie, accueillir des étrangers comme Marco Polo. Ses expéditions contre le Japon (1274, 1281), le Vietnam et Java échouent en partie. À sa mort en 1294, l'empire mongol est déjà divisé en quatre khanats. Les Yuan lui survivront soixante-quatorze ans.",
+    "keyFacts": [
+      "1260 : proclamé Grand Khan",
+      "1271 : fondation de la dynastie Yuan",
+      "1279 : bataille de Yamen, fin des Song",
+      "1274 et 1281 : deux invasions manquées du Japon"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Kubilai_Khan"
+      }
+    ]
+  },
+  {
+    "id": "zhu-yuanzhang",
+    "name": "Zhu Yuanzhang (Hongwu)",
+    "archetype": "empereur-chinois",
+    "faction": "chinois",
+    "born": 1328,
+    "died": 1398,
+    "title": "Fondateur de la dynastie Ming",
+    "bio": "Né en 1328 dans une famille de paysans très pauvres, Zhu Yuanzhang perd presque tous ses proches lors d'une famine et d'une épidémie. Il devient moine mendiant, puis rejoint en 1352 les Turbans rouges, révoltés contre les Mongols. Il s'impose par son sens de l'organisation et s'empare de Nankin en 1356. Il élimine ses rivaux, dont Chen Youliang et Zhang Shicheng, puis proclame la dynastie Ming en 1368. Ses armées, commandées par Xu Da, entrent à Dadu la même année, et les Mongols retournent dans la steppe. Sous le nom de Hongwu, il refait de la Chine un État d'agriculteurs. Il redistribue les terres, recense les familles, reboise et lance des travaux d'irrigation. Mais il se méfie des lettrés et des ministres : il supprime la charge de chancelier et fait exécuter des dizaines de milliers de personnes. Il meurt en 1398, laissant le trône à son petit-fils Jianwen, bientôt renversé par l'oncle Yongle.",
+    "keyFacts": [
+      "1352 : rejoint les Turbans rouges",
+      "1356 : prend Nankin",
+      "1368 : fondation de la dynastie Ming",
+      "1398 : mort ; son petit-fils lui succède"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Hongwu"
+      }
+    ]
+  },
+  {
+    "id": "zheng-he",
+    "name": "Zheng He",
+    "archetype": "amiral",
+    "faction": "chinois",
+    "born": 1371,
+    "died": 1433,
+    "title": "Amiral eunuque des grandes expéditions maritimes",
+    "bio": "Ma He naît en 1371 dans une famille musulmane du Yunnan. Capturé enfant lors de la conquête de la province par les Ming, il est castré et placé dans la maison du prince de Yan, futur empereur Yongle. Il se distingue pendant la guerre civile de 1399-1402 et reçoit le nom de Zheng. En 1405, l'empereur lui confie une immense flotte : plus de 300 navires et près de 28 000 hommes pour la première expédition vers l'océan Indien. Entre 1405 et 1433, il conduit sept voyages, qui l'amènent à Java, Sumatra, Ceylan, Calicut, Ormuz, Aden et jusqu'à la côte orientale de l'Afrique. Ses « navires aux trésors » transportent soie, porcelaines, ambassadeurs et cadeaux, pour affirmer la grandeur des Ming et obtenir des hommages. La Chine ne cherche pas à conquérir. Après la mort de Yongle, les expéditions sont jugées trop coûteuses. Zheng He meurt vers 1433, pendant ou juste après le septième voyage. Ses archives sont perdues.",
+    "keyFacts": [
+      "1405 : première expédition de la flotte au trésor",
+      "1405-1433 : sept voyages jusqu'en Afrique de l'Est",
+      "1424 : mort de Yongle, premier coup d'arrêt aux voyages",
+      "Vers 1433 : mort de Zheng He"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Zheng_He"
+      }
+    ]
+  },
+  {
+    "id": "kangxi",
+    "name": "Kangxi",
+    "archetype": "empereur-chinois",
+    "faction": "mandchous",
+    "born": 1654,
+    "died": 1722,
+    "title": "Deuxième empereur Qing, au règne de soixante et un ans",
+    "bio": "Monté sur le trône en 1661 à sept ans, Kangxi gouverne d'abord sous la régence de grands seigneurs. En 1669, à quinze ans, il fait arrêter le régent Oboi et prend le pouvoir. Il doit alors affronter la révolte des Trois Feudataires (1673-1681), puis soumet Taïwan en 1683, qui était tenue par les héritiers de Koxinga. Il bat les Mongols dzoungars, repousse les Russes et signe en 1689 le traité de Nertchinsk, premier traité entre la Chine et une puissance européenne. Lettré, curieux de mathématiques et d'astronomie, il prend des leçons de jésuites comme Verbiest et Gerbillon. Il fait compiler un grand dictionnaire, le Kangxi zidian. Il réduit les impôts, fait entretenir les digues du fleuve Jaune et visite le Sud. Ses dernières années sont troublées par la succession, après la disgrâce de plusieurs fils. Il meurt en 1722, après le plus long règne de l'histoire chinoise. Son héritage prépare l'apogée des Qing.",
+    "keyFacts": [
+      "1661 : accède au trône à 7 ans",
+      "1669 : renverse le régent Oboi",
+      "1683 : annexion de Taïwan",
+      "1689 : traité de Nertchinsk avec la Russie"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Kangxi"
+      }
+    ]
+  },
+  {
+    "id": "qianlong",
+    "name": "Qianlong",
+    "archetype": "empereur-chinois",
+    "faction": "mandchous",
+    "born": 1711,
+    "died": 1799,
+    "title": "Empereur Qing de l'apogée territoriale",
+    "bio": "Petit-fils de Kangxi, Qianlong règne de 1735 à 1796, puis garde l'influence d'un empereur retiré jusqu'à sa mort en 1799. Sous son règne, la Chine atteint sa plus grande étendue : conquête de la Dzoungarie, du Xinjiang (« Nouvelle frontière ») en 1759, mainmise sur le Tibet et campagnes en Birmanie et au Népal. L'empire compte alors plus de 300 millions d'habitants et reste prospère. Grand mécène, Qianlong fait copier toute la littérature chinoise dans le Siku quanshu, mais fait aussi détruire des livres jugés hostiles aux Mandchous. Passionné de peinture, il fait aussi bâtir le Palais d'été et accueille des jésuites peintres, dont Castiglione. En 1793, il reçoit la mission de lord Macartney, venu demander l'ouverture du commerce, et la renvoie avec une lettre condescendante au roi George III. Sur la fin du règne, la corruption de son favori Heshen et les révoltes affaiblissent l'empire. Il abdique en 1796 en faveur de son fils Jiaqing, par respect pour la durée du règne de son grand-père.",
+    "keyFacts": [
+      "1735 : accède au trône",
+      "1759 : conquête du Xinjiang",
+      "1793 : reçoit la mission Macartney",
+      "1796 : abdique en faveur de Jiaqing après soixante ans de règne"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Qianlong"
+      }
+    ]
+  },
+  {
+    "id": "cixi",
+    "name": "Cixi",
+    "archetype": "imperatrice",
+    "faction": "chinois",
+    "born": 1835,
+    "died": 1908,
+    "title": "Impératrice douairière qui gouverna la Chine des Qing",
+    "bio": "Entrée toute jeune au palais comme concubine, Yehenara devient la mère de l'unique fils de l'empereur Xianfeng. À la mort de celui-ci en 1861, elle s'allie avec le prince Gong pour écarter les régents et gouverne au nom de son fils Tongzhi, puis de son neveu Guangxu. Pendant près d'un demi-siècle, elle domine la cour de Pékin. Elle s'appuie sur des généraux comme Zeng Guofan et Li Hongzhang pour écraser les Taiping et lancer un mouvement de modernisation militaire et industrielle. Mais la Chine subit les défaites de 1884 contre la France et de 1895 contre le Japon. En 1898, elle fait échouer les réformes des Cent Jours de Guangxu et l'assigne à résidence. Elle soutient ensuite les Boxers en 1900, ce qui entraîne l'occupation de Pékin par huit puissances. Elle doit alors s'enfuir à Xi'an. De retour, elle lance des réformes tardives. Elle meurt en novembre 1908, un jour après Guangxu. Son jugement reste débattu.",
+    "keyFacts": [
+      "1861 : coup d'État de Xinyou, début de sa régence",
+      "1898 : met fin aux réformes des Cent Jours",
+      "1900 : soutient les Boxers, fuite à Xi'an",
+      "1908 : mort, un jour après l'empereur Guangxu"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Cixi"
+      }
+    ]
+  }
+]

@@ -214,6 +214,60 @@ def chercher_ville(nom: str) -> dict:
     return {"villes": trouvees[:5]}
 
 
+@lru_cache(maxsize=1)
+def _personnages() -> list[dict]:
+    """Fiches de data/empires/<id>/people.json, chacune annotée de son empire."""
+    fiches = []
+    for fichier in sorted(DOSSIER_EMPIRES.glob("*/people.json")):
+        empire = fichier.parent.name
+        if empire.startswith("_"):
+            continue
+        for p in json.loads(fichier.read_text(encoding="utf-8")):
+            fiches.append({**p, "empire": empire})
+    return fiches
+
+
+def chercher_personnage(nom: str) -> dict:
+    """Cherche la fiche biographique d'un personnage illustre (ex. « Hannibal », « Kubilai », « Wu Zetian »).
+
+    Args:
+        nom: nom du personnage, complet ou partiel.
+
+    Returns:
+        Les fiches trouvées (au plus 3) : empire, nom, titre, dates de vie, biographie, faits clés,
+        sources, et les étapes de l'empire où le personnage apparaît.
+    """
+    cible = _normaliser(nom).strip()
+    if not cible:
+        return {"erreur": "Nom de personnage vide."}
+    trouvees = []
+    for p in _personnages():
+        if cible not in _normaliser(f"{p['name']} {p['id'].replace('-', ' ')}"):
+            continue
+        empire = _empires().get(p["empire"], {})
+        etapes = [
+            {"etape_id": e["id"], "annee": _annee(e["year"]), "titre": e["title"]}
+            for e in empire.get("steps", [])
+            if any(f.get("person") == p["id"] for f in e.get("figures", []))
+        ]
+        trouvees.append(
+            {
+                "empire": p["empire"],
+                "nom": p["name"],
+                "titre": p["title"],
+                "naissance": _annee(p["born"]) if "born" in p else None,
+                "mort": _annee(p["died"]) if "died" in p else None,
+                "biographie": p["bio"],
+                "faits_cles": p.get("keyFacts", []),
+                "sources": p.get("sources", []),
+                "apparait_dans": etapes,
+            }
+        )
+    if not trouvees:
+        return {"erreur": f"Aucune fiche ne correspond à « {nom} »."}
+    return {"personnages": trouvees[:3]}
+
+
 def naviguer_vers_etape(empire: str, etape_id: str, tool_context: ToolContext) -> dict:
     """Déplace la carte de l'utilisateur sur une étape précise de la frise.
 
@@ -236,4 +290,4 @@ def naviguer_vers_etape(empire: str, etape_id: str, tool_context: ToolContext) -
     return {"statut": "ok", "message": f"La carte va s'ouvrir sur « {etape['title']} » ({_annee(etape['year'])})."}
 
 
-OUTILS = [lister_empires, chercher_etapes, lire_etape, chercher_ville, naviguer_vers_etape]
+OUTILS = [lister_empires, chercher_etapes, lire_etape, chercher_ville, chercher_personnage, naviguer_vers_etape]

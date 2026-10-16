@@ -9,6 +9,7 @@ interface Props {
   stateNames: boolean;
   neighbors: boolean;
   contemporaries: boolean;
+  monuments: boolean;
   onToggleTilt: () => void;
   onToggleRelief: () => void;
   onToggleFigures: () => void;
@@ -16,9 +17,10 @@ interface Props {
   onToggleStateNames: () => void;
   onToggleNeighbors: () => void;
   onToggleContemporaries: () => void;
+  onToggleMonuments: () => void;
 }
 
-export function ViewControls({ tilted, relief, figures, countries2026, stateNames, neighbors, contemporaries, onToggleTilt, onToggleRelief, onToggleFigures, onToggleCountries2026, onToggleStateNames, onToggleNeighbors, onToggleContemporaries }: Props) {
+export function ViewControls({ tilted, relief, figures, countries2026, stateNames, neighbors, contemporaries, monuments, onToggleTilt, onToggleRelief, onToggleFigures, onToggleCountries2026, onToggleStateNames, onToggleNeighbors, onToggleContemporaries, onToggleMonuments }: Props) {
   // Réglages repliables (mémorisés) : repliés par défaut sur petit écran.
   const [open, setOpen] = useState(() => readBool('atlas.controlsOpen', typeof window === 'undefined' || window.innerWidth >= 900));
   const id = useId();
@@ -90,6 +92,15 @@ export function ViewControls({ tilted, relief, figures, countries2026, stateName
         title="Afficher / masquer les autres empires de l'Atlas existant à la même date"
       >
         Contemporains : {contemporaries ? 'oui' : 'non'}
+      </button>
+      <button
+        type="button"
+        className="btn btn--ghost"
+        aria-pressed={monuments}
+        onClick={onToggleMonuments}
+        title="Afficher / masquer les grands monuments debout à cette date"
+      >
+        Monuments : {monuments ? 'oui' : 'non'}
       </button>
     </div>
     </>

@@ -71,10 +71,11 @@ const esc = (v: string) => v.replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
 const plain = (v: string) => v.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
 
 /** Étiquette d'armée : camp en gras, peuple en petit (une seule fois s'ils sont identiques). */
-function labelHtml(a: ArmyMove): string {
+function labelHtml(a: ArmyMove, origin?: string | null): string {
   const people = PEOPLE[a.faction];
   const sub = plain(a.side) === plain(people) ? '' : `<small>${esc(people)}</small>`;
-  return `<strong>${esc(a.side)}</strong>${sub}<span class="army-label__win" aria-hidden="true">🏆</span>`;
+  const from = origin ? `<small class="army-label__from">· depuis ${esc(origin)}</small>` : '';
+  return `<strong>${esc(a.side)}</strong>${sub}${from}<span class="army-label__win" aria-hidden="true">🏆</span>`;
 }
 
 const easeInOut = (x: number) => (x < 0.5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2);
@@ -187,6 +188,8 @@ export class ArmyLayer {
   private tmp: [number, number] = [0, 0];
   private hasPaths = false;
   private lastTrail = 0;
+  /** Fanions « Départ : … » posés au premier point de chaque marche. */
+  private origins: Marker[] = [];
   private onZoom = () => {
     const k = String(zoomScale(this.map.getZoom()));
     for (const r of this.runs) r.el.style.setProperty('--army-scale', k);
@@ -206,6 +209,8 @@ export class ArmyLayer {
     this.clash = null;
     this.clashEl = null;
     this.clashOn = false;
+    for (const o of this.origins) o.remove();
+    this.origins = [];
   }
 
   private removePaths() {
@@ -230,7 +235,15 @@ export class ArmyLayer {
    * prevStep : étape n−1 en avance séquentielle (sinon null). Les armées non vaincues qui y figuraient
    * (même id) gardent leur régiment et repartent de leur position.
    */
-  start(step: TimelineStep, prevStep: TimelineStep | null, speed: number, reduced: boolean, continued: ArmyMove[] = []) {
+  start(
+    step: TimelineStep,
+    prevStep: TimelineStep | null,
+    speed: number,
+    reduced: boolean,
+    continued: ArmyMove[] = [],
+    /** Nom du lieu de départ de chaque armée (src/lib/origin.ts), ou null. */
+    originOf: (a: ArmyMove) => string | null = () => null,
+  ) {
     const armies = (step.armies ?? []).filter((a) => a.path.length >= 2);
     const reuse = new Map<ArmyMove, ArmyRun>();
     if (prevStep && !reduced) {
@@ -267,7 +280,10 @@ export class ArmyLayer {
     armies.forEach((a, i) => {
       const loser = hasWinner && a.winner !== true;
       const old = reuse.get(a);
-      this.runs.push(old ? this.rebuild(old, a, loser) : this.build(a, counts[i] ?? REGIMENT[2], loser, cont.has(a), i));
+      const origin = originOf(a);
+      const run = old ? this.rebuild(old, a, loser, origin) : this.build(a, counts[i] ?? REGIMENT[2], loser, cont.has(a), i, origin);
+      this.runs.push(run);
+      if (origin) this.addOrigin(a, origin);
     });
     // Les camps se font face : si deux armées arrivent dans le même sens, la seconde se range en face.
     const firstSide = this.runs[0] ? -this.runs[0].lastDir : -1;
@@ -424,7 +440,17 @@ export class ArmyLayer {
     return { html, halfW: w / 2, h };
   }
 
-  private build(a: ArmyMove, n: number, loser: boolean, fullMarch: boolean, index: number): ArmyRun {
+  /** Fanion de départ à la couleur du camp, au premier point de la marche. */
+  private addOrigin(a: ArmyMove, origin: string) {
+    const el = document.createElement('div');
+    el.className = 'army-origin';
+    el.setAttribute('aria-hidden', 'true');
+    el.style.setProperty('--c', FACTION_COLORS[a.faction]);
+    el.innerHTML = `<span class="army-origin__flag"></span><span class="army-origin__label">Départ : ${esc(origin)}</span>`;
+    this.origins.push(new Marker({ element: el, anchor: 'bottom-left', offset: [-2, 0] }).setLngLat(a.path[0]!).addTo(this.map));
+  }
+
+  private build(a: ArmyMove, n: number, loser: boolean, fullMarch: boolean, index: number, origin: string | null = null): ArmyRun {
     const { cum, total, lastDir, retreat } = geom(a);
     const seed = hashOf(`${a.id ?? a.side}|${a.faction}|${index}`) % 10_000;
     const { html, halfW, h } = this.regimentHtml(a, n, loser, seed);
@@ -435,7 +461,7 @@ export class ArmyLayer {
     el.style.setProperty('--hw', `${halfW}px`);
     el.style.setProperty('--rh', `${h}px`);
     el.innerHTML =
-      `<span class="army-label army-label--${lastDir > 0 ? 'left' : 'right'}" style="--c:${FACTION_COLORS[a.faction]}">${labelHtml(a)}</span>` +
+      `<span class="army-label army-label--${lastDir > 0 ? 'left' : 'right'}" style="--c:${FACTION_COLORS[a.faction]}">${labelHtml(a, origin)}</span>` +
       `<div class="army-regiment"><span class="army-dust"></span><div class="army-marker__flip">${html}</div></div>`;
     const regiment = el.querySelector('.army-regiment') as HTMLDivElement;
     const label = el.querySelector<HTMLElement>('.army-label');
@@ -448,7 +474,7 @@ export class ArmyLayer {
   }
 
   /** Réutilise le régiment d'une armée de l'étape précédente : état « marche » depuis sa position. */
-  private rebuild(r: ArmyRun, a: ArmyMove, loser: boolean): ArmyRun {
+  private rebuild(r: ArmyRun, a: ArmyMove, loser: boolean, origin: string | null = null): ArmyRun {
     const { cum, total, lastDir, retreat } = geom(a);
     Object.assign(r, { id: a.id, path: a.path, cum, total, startDist: 0, loser, retreat, segIdx: -1, flipped: false, lastDir, settled: false, winner: a.winner === true, trail: [], side: -lastDir });
     // Ne retirer que les états d'animation : les classes maplibregl-marker positionnent le marqueur.
@@ -457,7 +483,7 @@ export class ArmyLayer {
     if (r.label) {
       r.label.className = `army-label army-label--${lastDir > 0 ? 'left' : 'right'}`;
       r.label.style.setProperty('--c', FACTION_COLORS[a.faction]);
-      r.label.innerHTML = labelHtml(a);
+      r.label.innerHTML = labelHtml(a, origin);
     }
     this.setFront(r, false);
     return r;

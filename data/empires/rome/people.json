@@ -1,0 +1,310 @@
+[
+  {
+    "id": "hannibal",
+    "name": "Hannibal Barca",
+    "archetype": "general",
+    "faction": "carthaginois",
+    "born": -247,
+    "died": -183,
+    "title": "Général carthaginois, l'homme qui franchit les Alpes",
+    "bio": "Fils d'Hamilcar Barca, Hannibal jure dès l'enfance une haine éternelle à Rome. À 26 ans, il prend la tête de l'armée carthaginoise d'Espagne. En 218 av. J.-C., il déclenche la deuxième guerre punique en attaquant Sagonte, puis réalise un exploit stupéfiant : conduire son armée, éléphants compris, de Carthagène jusqu'en Italie en passant par les Pyrénées, le Rhône et les Alpes, au prix de lourdes pertes. Il écrase les Romains à la Trébie, au lac Trasimène puis à Cannes (216), où sa manoeuvre d'encerclement reste un modèle d'art militaire. Mais sans siège efficace ni renforts suffisants, il ne parvient pas à prendre Rome. Rappelé en Afrique, il est vaincu à Zama en 202 par Scipion. Devenu magistrat à Carthage, il réforme la cité, puis doit fuir devant l'hostilité de Rome. Réfugié auprès de rois d'Orient, il s'empoisonne vers 183 pour ne pas être livré à ses ennemis. Son nom est resté synonyme d'audace stratégique.",
+    "keyFacts": [
+      "218 av. J.-C. : traversée des Alpes avec son armée et ses éléphants",
+      "216 av. J.-C. : victoire écrasante de Cannes",
+      "202 av. J.-C. : défaite de Zama face à Scipion",
+      "Vers 183 av. J.-C. : suicide en Bithynie pour échapper aux Romains"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Hannibal_Barca"
+      }
+    ]
+  },
+  {
+    "id": "scipion-l-africain",
+    "name": "Scipion l'Africain",
+    "archetype": "consul",
+    "faction": "romains",
+    "born": -236,
+    "died": -183,
+    "title": "Vainqueur d'Hannibal à Zama",
+    "bio": "Publius Cornelius Scipio naît dans l'une des plus grandes familles de Rome. Il survit à la catastrophe de Cannes (216 av. J.-C.) et, à seulement 25 ans, obtient le commandement des légions en Espagne, alors aux mains de Carthage. Audacieux et méthodique, il s'empare de Carthagène par surprise en 209, puis chasse les Carthaginois de la péninsule. Élu consul, il impose l'idée d'attaquer Carthage chez elle pour obliger Hannibal à quitter l'Italie. Il débarque en Afrique en 204 et, en 202, bat Hannibal à Zama grâce à une cavalerie alliée numide et à des légions bien entraînées. Il reçoit le surnom d'Africain. Admiré mais jalousé, notamment par Caton l'Ancien, il est ensuite accusé de malversations par ses adversaires politiques. Il se retire alors dans sa villa de Literne, en Campanie, où il meurt vers 183, dans l'amertume d'un grand homme que la République ne sait plus récompenser. Son petit-fils adoptif, Scipion Émilien, détruira Carthage en 146.",
+    "keyFacts": [
+      "209 av. J.-C. : prise de Carthagène, grande base carthaginoise d'Espagne",
+      "204 av. J.-C. : débarquement en Afrique du Nord",
+      "202 av. J.-C. : victoire sur Hannibal à Zama",
+      "Vers 183 av. J.-C. : mort en exil volontaire à Literne"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Scipion_l%27Africain"
+      }
+    ]
+  },
+  {
+    "id": "jules-cesar",
+    "name": "Jules César",
+    "archetype": "consul",
+    "faction": "romains",
+    "born": -100,
+    "died": -44,
+    "title": "Conquérant de la Gaule, dictateur de Rome",
+    "bio": "Issu d'une vieille famille patricienne, Caius Julius Caesar fait carrière en s'appuyant sur le peuple. Allié à Pompée et Crassus dans le premier triumvirat, il devient consul en 59 av. J.-C., puis proconsul des Gaules. De 58 à 51, il conquiert un territoire immense jusqu'au Rhin et à l'océan, et raconte lui-même ses campagnes dans La Guerre des Gaules. Son triomphe le plus célèbre est le siège d'Alésia (52), où il enferme Vercingétorix derrière un double rempart. Menacé de poursuites par le Sénat, il franchit en 49 le Rubicon, ce qui déclenche la guerre civile. Il bat Pompée à Pharsale, s'allie à Cléopâtre en Égypte, puis devient dictateur à vie en 44. Il lance de grandes réformes : calendrier julien, colonies, citoyenneté élargie. Craignant une royauté déguisée, des sénateurs, dont Brutus et Cassius, l'assassinent aux ides de mars 44 av. J.-C. Sa mort ouvre la voie à son fils adoptif Octave, futur Auguste.",
+    "keyFacts": [
+      "58-51 av. J.-C. : conquête de la Gaule",
+      "52 av. J.-C. : victoire d'Alésia sur Vercingétorix",
+      "49 av. J.-C. : passage du Rubicon, début de la guerre civile",
+      "15 mars 44 av. J.-C. : assassiné au Sénat"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Jules_César"
+      }
+    ]
+  },
+  {
+    "id": "auguste",
+    "name": "Auguste",
+    "archetype": "empereur",
+    "faction": "romains",
+    "born": -63,
+    "died": 14,
+    "title": "Premier empereur de Rome",
+    "bio": "Né Caius Octavius, il est le petit-neveu et l'héritier de Jules César. À 18 ans, il apprend l'assassinat de son grand-oncle et décide de réclamer son nom et son héritage. Avec Antoine et Lépide, il forme le second triumvirat, venge César, puis se retourne contre Antoine. Sa flotte l'emporte à Actium en 31 av. J.-C. et l'Égypte tombe l'année suivante. Seul maître du monde romain, il se garde de se proclamer roi. En 27, le Sénat lui donne le titre d'Auguste, « le vénérable ». Sous des apparences républicaines, il bâtit le Principat : armée permanente, administration des provinces, préfets, police, ravitaillement de Rome. Il ouvre une longue période de paix intérieure, la pax romana, et fait de Rome une ville de marbre. Il subit cependant un désastre en l'an 9 : trois légions anéanties en Germanie. Il meurt à Nola en 14 apr. J.-C. après plus de quarante ans de pouvoir, laissant un empire stable.",
+    "keyFacts": [
+      "44 av. J.-C. : accepte l'héritage de César à 18 ans",
+      "31 av. J.-C. : victoire navale d'Actium sur Antoine et Cléopâtre",
+      "27 av. J.-C. : reçoit le titre d'Auguste, début de l'Empire",
+      "9 apr. J.-C. : désastre de la forêt de Teutobourg"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Auguste"
+      }
+    ]
+  },
+  {
+    "id": "vercingetorix",
+    "name": "Vercingétorix",
+    "archetype": "chef-barbare",
+    "faction": "gaulois",
+    "born": -82,
+    "died": -46,
+    "title": "Chef de la coalition gauloise contre César",
+    "bio": "Jeune noble arverne, fils d'un chef qu'on accusait de viser la royauté, Vercingétorix se révolte à l'hiver 53-52 av. J.-C. et se fait proclamer chef par ses guerriers. Il réussit un exploit rare : unir de nombreux peuples gaulois, d'ordinaire rivaux, contre Jules César. Sa stratégie est cruelle mais efficace : harceler les Romains, détruire les vivres et brûler les villes pour les affamer. Il remporte une victoire à Gergovie, où César est repoussé. Mais, à Alésia, il choisit de s'enfermer dans l'oppidum avec quatre-vingt mille hommes. César l'encercle avec un double système de fortifications, et l'armée de secours gauloise échoue. Pour épargner ses hommes, Vercingétorix se rend en 52. Emmené à Rome, il est gardé six ans en captivité, puis exhibé au triomphe de César en 46 et mis à mort. Il est devenu, au XIXe siècle, un symbole de l'identité gauloise puis française.",
+    "keyFacts": [
+      "52 av. J.-C. : soulèvement général des Gaulois",
+      "52 av. J.-C. : succès de Gergovie",
+      "52 av. J.-C. : défaite et reddition à Alésia",
+      "46 av. J.-C. : exécuté après le triomphe de César"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Vercingétorix"
+      }
+    ]
+  },
+  {
+    "id": "arminius",
+    "name": "Arminius",
+    "archetype": "chef-barbare",
+    "faction": "germains",
+    "born": -17,
+    "died": 21,
+    "title": "Chef chérusque, vainqueur de Varus",
+    "bio": "Arminius, chef de la tribu germanique des Chérusques, passe une partie de sa jeunesse au service de Rome. Il y reçoit la citoyenneté, le rang de chevalier et une solide formation militaire. De retour en Germanie, il observe la manière dont le gouverneur Varus impose tributs et justice romaine aux tribus de la rive droite du Rhin. En l'an 9 apr. J.-C., il l'attire dans une marche difficile à travers les forêts et marais de Teutobourg. Surpris sur un terrain étroit, trois légions, soit environ vingt mille hommes, sont anéanties, et Varus se donne la mort. Auguste, dit-on, aurait réclamé ses légions en pleurant. Rome renonce à faire de la Germanie une province au-delà de l'Elbe et fixe sa frontière sur le Rhin. Arminius affronte ensuite Germanicus, puis son rival Marobod. Il est finalement assassiné vers 21 par des membres de son propre entourage, jaloux de son pouvoir.",
+    "keyFacts": [
+      "Vers 17 av. J.-C. : naissance chez les Chérusques",
+      "9 apr. J.-C. : embuscade de Teutobourg, trois légions détruites",
+      "16 apr. J.-C. : affronte Germanicus en Germanie",
+      "Vers 21 : assassiné par des proches"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Arminius"
+      }
+    ]
+  },
+  {
+    "id": "trajan",
+    "name": "Trajan",
+    "archetype": "empereur",
+    "faction": "romains",
+    "born": 53,
+    "died": 117,
+    "title": "Empereur à l'apogée de l'Empire",
+    "bio": "Né près de Séville, en Hispanie, Marcus Ulpius Traianus est le premier empereur d'origine provinciale. Général apprécié, il est adopté par l'empereur Nerva en 97, puis lui succède l'année suivante. Il gouverne avec le Sénat, mais surtout avec l'armée, qu'il guide lui-même. Il conquiert la Dacie, riche en or, en deux guerres (101-102 et 105-106), dont les scènes sont sculptées sur la colonne Trajane à Rome. Il multiplie les grands travaux : forum, marchés, ports, routes, aqueducs. Il soutient aussi les enfants pauvres d'Italie par une œuvre d'assistance, les alimenta. À partir de 113, il se lance contre l'empire parthe et atteint le golfe Persique, mais ses conquêtes de Mésopotamie sont fragiles et des révoltes éclatent derrière lui. Il meurt en 117 à Sélinonte, en Cilicie, en retournant vers Rome. Son successeur Hadrien abandonne une partie de ses gains. Le Sénat l'honorera ensuite par la formule « plus heureux qu'Auguste, meilleur que Trajan ».",
+    "keyFacts": [
+      "98 : devient empereur après son adoption par Nerva",
+      "101-106 : conquête de la Dacie",
+      "113-116 : campagne contre les Parthes jusqu'au golfe Persique",
+      "117 : meurt en Cilicie, l'Empire à son extension maximale"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Trajan"
+      }
+    ]
+  },
+  {
+    "id": "diocletien",
+    "name": "Dioclétien",
+    "archetype": "empereur",
+    "faction": "romains",
+    "born": 244,
+    "died": 311,
+    "title": "Fondateur de la Tétrarchie",
+    "bio": "Fils d'un affranchi dalmate, Dioclétien gravit les rangs de l'armée jusqu'à être proclamé empereur par ses soldats en 284, à la fin de la grande crise du IIIe siècle. Il comprend qu'un seul homme ne peut défendre seul un empire attaqué sur toutes ses frontières. Il s'associe Maximien, puis crée en 293 la Tétrarchie : deux Augustes et deux Césars, qui se partagent les régions. Il divise les provinces, sépare l'administration civile et militaire, réforme la monnaie et tente de contrôler les prix par l'édit du Maximum (301). Il impose aussi un cérémonial inspiré des monarchies d'Orient. Sa politique religieuse lui vaut une triste célébrité : il lance en 303 la dernière et la plus dure des persécutions contre les chrétiens. En 305, fait inédit, il abdique volontairement et se retire dans son immense palais de Split, sur la côte dalmate, où il cultive ses légumes. Il y meurt vers 311, alors que la Tétrarchie s'effondre dans les guerres civiles.",
+    "keyFacts": [
+      "284 : proclamé empereur par l'armée",
+      "293 : création de la Tétrarchie",
+      "303 : début de la Grande Persécution des chrétiens",
+      "305 : abdique et se retire à Split"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Dioclétien"
+      }
+    ]
+  },
+  {
+    "id": "constantin-ier",
+    "name": "Constantin Ier",
+    "archetype": "empereur",
+    "faction": "romains",
+    "born": 272,
+    "died": 337,
+    "title": "Premier empereur favorable au christianisme",
+    "bio": "Fils de Constance Chlore, Constantin est proclamé empereur par ses troupes à York en 306. Il s'impose peu à peu dans les guerres civiles qui suivent la Tétrarchie. En 312, il bat Maxence au pont Milvius, aux portes de Rome, après avoir, selon la tradition chrétienne, vu un signe du Christ. En 313, l'édit de Milan, pris avec Licinius, garantit la liberté de culte aux chrétiens. En 324, il écrase Licinius et reste seul maître de l'Empire. Il convoque en 325 le concile de Nicée pour régler la querelle arienne et soutient l'Église par des faveurs et des basiliques. En 330, il inaugure une nouvelle capitale sur le Bosphore, Constantinople, qui deviendra la plus grande ville d'Europe. Il réforme la monnaie avec le solidus, d'or stable, qui durera presque mille ans. Baptisé juste avant sa mort, en 337, il laisse l'Empire à ses trois fils, qui se déchireront.",
+    "keyFacts": [
+      "306 : proclamé empereur à York",
+      "312 : victoire du pont Milvius",
+      "313 : édit de Milan en faveur des chrétiens",
+      "330 : inauguration de Constantinople"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Constantin_Ier_(empereur_romain)"
+      }
+    ]
+  },
+  {
+    "id": "theodose-ier",
+    "name": "Théodose Ier",
+    "archetype": "empereur",
+    "faction": "romains",
+    "born": 347,
+    "died": 395,
+    "title": "Dernier empereur à régner sur tout l'Empire",
+    "bio": "Général d'origine espagnole, Théodose est appelé en 379 par l'empereur Gratien pour redresser l'Orient, après la défaite d'Andrinople face aux Goths. Il signe avec eux un traité qui les installe dans l'Empire comme fédérés, solution qui préfigure les royaumes barbares. Il fait du christianisme de Nicée la religion officielle par l'édit de Thessalonique de 380, puis interdit les cultes païens, ce qui met fin aux Jeux olympiques antiques. Face à un usurpateur en Occident, il remporte la bataille de la Rivière froide en 394 et réunit pour quelques mois tout l'Empire sous son autorité. Sa piété est mise à l'épreuve par l'évêque de Milan, Ambroise, qui l'oblige à faire pénitence après le massacre de Thessalonique. Il meurt à Milan en janvier 395. Il partage alors l'Empire entre ses deux fils : Arcadius reçoit l'Orient et Honorius l'Occident. Cette division ne sera plus jamais défaite.",
+    "keyFacts": [
+      "379 : proclamé empereur d'Orient",
+      "380 : édit de Thessalonique, religion d'État chrétienne",
+      "394 : victoire de la Rivière froide, empire réunifié",
+      "395 : mort à Milan, partage entre ses deux fils"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Théodose_Ier"
+      }
+    ]
+  },
+  {
+    "id": "alaric-ier",
+    "name": "Alaric Ier",
+    "archetype": "chef-barbare",
+    "faction": "goths-vandales",
+    "born": 370,
+    "died": 410,
+    "title": "Roi des Wisigoths, vainqueur de Rome",
+    "bio": "Chef goth né vers 370, Alaric commence comme officier au service de l'empereur Théodose, dont il commande des auxiliaires. À la mort de celui-ci, en 395, il est élu roi par ses hommes et réclame pour son peuple terres, rang et argent. Il ravage la Grèce, puis se tourne vers l'Italie, en jouant tantôt la négociation, tantôt la menace. Le général romain Stilicon l'arrête un temps, mais, après l'exécution de ce dernier en 408, Alaric assiège Rome à trois reprises. Faute d'obtenir un accord avec l'empereur Honorius, retranché à Ravenne, il fait entrer ses troupes dans la ville le 24 août 410. Le sac dure trois jours. Rome n'avait pas été prise depuis huit siècles, et l'événement frappe tout le monde méditerranéen. Saint Jérôme, à Bethléem, en perd la parole. Alaric veut ensuite gagner l'Afrique, mais il meurt de maladie à Cosenza, en Calabre, à la fin de 410. Selon la tradition, on l'enterre dans le lit détourné d'une rivière.",
+    "keyFacts": [
+      "395 : élu roi des Wisigoths",
+      "408 : premier siège de Rome",
+      "24 août 410 : prise et sac de Rome",
+      "410 : mort à Cosenza"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Alaric_Ier"
+      }
+    ]
+  },
+  {
+    "id": "justinien-ier",
+    "name": "Justinien Ier",
+    "archetype": "empereur-byzantin",
+    "faction": "byzantins",
+    "born": 482,
+    "died": 565,
+    "title": "Empereur de la reconquête et du droit",
+    "bio": "Paysan de Macédoine devenu empereur, Justinien monte sur le trône d'Orient en 527 grâce à son oncle Justin. Il épouse Théodora, ancienne actrice, qui devient sa conseillère la plus écoutée. En 532, la révolte Nika embrase Constantinople et il pense fuir, mais Théodora le convainc de rester. Ses généraux, Bélisaire puis Narsès, reprennent l'Afrique aux Vandales (533-534), l'Italie aux Ostrogoths (535-554) et une partie de l'Espagne. La Méditerranée redevient presque un lac romain. Il fait aussi compiler le droit romain dans le Corpus juris civilis, base des droits européens, et reconstruit Sainte-Sophie, achevée en 537. Mais ces entreprises ruinent le trésor et la peste de 541 décime la population. Les guerres contre la Perse épuisent encore l'Empire. À sa mort, en 565, les Lombards s'apprêtent à envahir l'Italie. Il laisse un empire immense, mais fragile.",
+    "keyFacts": [
+      "527 : devient empereur",
+      "532 : révolte Nika, Constantinople en feu",
+      "533-534 : reconquête de l'Afrique vandale",
+      "537 : consécration de Sainte-Sophie"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Justinien_Ier"
+      }
+    ]
+  },
+  {
+    "id": "constantin-xi",
+    "name": "Constantin XI Paléologue",
+    "archetype": "empereur-byzantin",
+    "faction": "byzantins",
+    "born": 1404,
+    "died": 1453,
+    "title": "Dernier empereur byzantin",
+    "bio": "Constantin XI naît en 1404, fils de Manuel II Paléologue. Despote de Morée, il y mène des campagnes contre les Latins, puis devient empereur en 1449, héritant d'un État réduit à Constantinople et à quelques territoires. Il sait que l'Empire n'a plus les moyens de résister seul. Il tente de rallier l'Occident en acceptant l'union des Églises, proclamée à Sainte-Sophie en 1452, mais cette décision divise son peuple et les secours restent faibles. Au printemps 1453, le sultan Mehmed II assiège la ville avec une armée immense et de grands canons. Constantin dispose d'à peine sept mille défenseurs, dont des Génois commandés par Giustiniani. Les murailles théodosiennes tiennent près de deux mois. Le 29 mai 1453, une brèche s'ouvre et les Ottomans entrent. L'empereur aurait jeté ses insignes pour combattre avec ses soldats, et on ne retrouva jamais son corps avec certitude. Sa mort marque la fin symbolique de l'Empire romain, après plus de quinze siècles.",
+    "keyFacts": [
+      "1449 : couronné empereur à Mistra",
+      "1452 : union des Églises proclamée à Sainte-Sophie",
+      "Avril-mai 1453 : siège de Constantinople",
+      "29 mai 1453 : tué lors de l'assaut final"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Constantin_XI_Paléologue"
+      }
+    ]
+  },
+  {
+    "id": "mehmed-ii",
+    "name": "Mehmed II",
+    "archetype": "sultan",
+    "faction": "ottomans",
+    "born": 1432,
+    "died": 1481,
+    "title": "Le Conquérant de Constantinople",
+    "bio": "Fils du sultan Mourad II, Mehmed monte une première fois sur le trône à 12 ans, puis définitivement en 1451, à 19 ans. Dès le début de son règne, il décide de prendre Constantinople, que ses prédécesseurs n'avaient pas réussi à enlever. Il fait construire une forteresse sur le Bosphore, rassemble une armée énorme et fait fondre des canons géants. Après un siège de cinquante-trois jours, la ville tombe le 29 mai 1453. Pour contourner la chaîne qui ferme la Corne d'Or, ses hommes font passer des navires par la terre. Mehmed s'installe dans la ville, qui devient Istanbul, et la repeuple. Il protège l'Église orthodoxe, nomme un patriarche et accueille artistes et savants, dont le peintre italien Gentile Bellini. Il conquiert ensuite la Serbie, la Morée, la Bosnie et la Crimée. Il organise l'État, codifie les lois et affermit le pouvoir du sultan. Il meurt en 1481, en pleine préparation d'une nouvelle campagne.",
+    "keyFacts": [
+      "1451 : sultan à 19 ans",
+      "29 mai 1453 : prise de Constantinople",
+      "1458-1460 : conquête d'Athènes et de la Morée",
+      "1481 : mort en campagne, près de Gebze"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Mehmed_II"
+      }
+    ]
+  }
+]

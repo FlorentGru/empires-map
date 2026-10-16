@@ -203,6 +203,8 @@ export interface ArmyMove {
   id?: string;
   /** Libellé affiché : « Rome », « Carthage ». */
   side: string;
+  /** Lieu de départ affiché (« Samarcande », « camp de Boulogne ») ; défaut : ville la plus proche de path[0] ou champ de bataille précédent. */
+  from?: string;
   faction: Faction;
   /** [lon, lat] de la base jusqu'au champ de bataille (2 à 8 points, le dernier = le champ de bataille). */
   path: [number, number][];
@@ -222,6 +224,26 @@ export interface Figure {
   quote?: string;
   /** Position sur la carte ; défaut = location de l'étape. */
   position?: [number, number];
+  /** Id d'une fiche de data/empires/<id>/people.json. */
+  person?: string;
+}
+
+/** Fiche détaillée d'un personnage (data/empires/<id>/people.json). Années négatives = av. J.-C. */
+export interface Person {
+  /** Identifiant kebab-case, unique dans l'empire. */
+  id: string;
+  name: string;
+  archetype: Archetype;
+  faction: Faction;
+  born?: number;
+  died?: number;
+  /** Titre court (« Fondateur de la dynastie Han »). */
+  title: string;
+  /** Récit de 120 à 220 mots. */
+  bio: string;
+  /** 3 à 5 faits brefs et datés. */
+  keyFacts: string[];
+  sources: { label: string; url: string }[];
 }
 
 /**

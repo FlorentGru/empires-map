@@ -1,5 +1,6 @@
 import { focusEntity } from '../map/focusEntity';
 import { GOTO_EVENT, type GotoDetail } from '../map/contemporaryLayers';
+import { monumentIconSvg } from '../map/monumentIcons';
 import { memo, useEffect, useId, useState, type CSSProperties } from 'react';
 import { loadContemporaries, loadTerritory } from '../data/loadEmpire';
 import { EVENT_TYPES } from '../lib/eventTypes';
@@ -14,6 +15,7 @@ interface Props {
   countries2026?: boolean;
   neighbors?: boolean;
   contemporaries?: boolean;
+  monuments?: boolean;
 }
 
 /** Figurines d'illustration de la légende, par empire (défaut : Rome). */
@@ -84,7 +86,7 @@ function useContemporaryEmpires(empireId: string, stepId: string | undefined, on
   return list;
 }
 
-export const Legend = memo(function Legend({ empire, step, countries2026 = false, neighbors = true, contemporaries = true }: Props) {
+export const Legend = memo(function Legend({ empire, step, countries2026 = false, neighbors = true, contemporaries = true, monuments = true }: Props) {
   const others = useContemporaryEmpires(empire.id, step?.id, contemporaries);
   const [open, setOpen] = useState(() => !isMobile());
   const titleId = useId();
@@ -204,6 +206,12 @@ export const Legend = memo(function Legend({ empire, step, countries2026 = false
             <li>
               <span className="legend__dashes legend__dashes--neighbor" aria-hidden="true" />
               Voisins de l'époque
+            </li>
+          )}
+          {monuments && (
+            <li>
+              <span className="legend__monument" aria-hidden="true" dangerouslySetInnerHTML={{ __html: monumentIconSvg('temple') }} />
+              Monuments de l'époque (cliquables)
             </li>
           )}
           <li>

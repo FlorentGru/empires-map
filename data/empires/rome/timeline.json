@@ -158,6 +158,7 @@
       "armies": [
         {
           "side": "Rome",
+          "from": "Rome",
           "faction": "romains",
           "path": [
             [
@@ -182,6 +183,7 @@
         },
         {
           "side": "Tarente et Épire",
+          "from": "Épire",
           "faction": "grecs-macedoniens",
           "path": [
             [
@@ -248,6 +250,7 @@
       "armies": [
         {
           "side": "Flotte romaine",
+          "from": "Ostie",
           "faction": "romains",
           "path": [
             [
@@ -272,6 +275,7 @@
         },
         {
           "side": "Flotte carthaginoise",
+          "from": "Carthage",
           "faction": "carthaginois",
           "path": [
             [
@@ -345,6 +349,7 @@
       "armies": [
         {
           "side": "Hannibal",
+          "from": "Carthagène",
           "faction": "carthaginois",
           "path": [
             [
@@ -378,6 +383,7 @@
         },
         {
           "side": "Rome",
+          "from": "Rome",
           "faction": "romains",
           "path": [
             [
@@ -486,6 +492,7 @@
         },
         {
           "side": "Rome",
+          "from": "Rome",
           "faction": "romains",
           "path": [
             [
@@ -560,6 +567,7 @@
       "armies": [
         {
           "side": "Scipion",
+          "from": "Lilybée",
           "faction": "romains",
           "path": [
             [
@@ -588,6 +596,7 @@
         },
         {
           "side": "Carthage",
+          "from": "Hadrumète",
           "faction": "carthaginois",
           "path": [
             [
@@ -657,6 +666,7 @@
       "armies": [
         {
           "side": "Rome",
+          "from": "Rome",
           "faction": "romains",
           "path": [
             [
@@ -693,6 +703,7 @@
         },
         {
           "side": "Macédoine",
+          "from": "Pella",
           "faction": "grecs-macedoniens",
           "path": [
             [
@@ -756,6 +767,7 @@
       "armies": [
         {
           "side": "Rome",
+          "from": "Ostie",
           "faction": "romains",
           "path": [
             [
@@ -784,6 +796,7 @@
         },
         {
           "side": "Carthage",
+          "from": "Carthage",
           "faction": "carthaginois",
           "path": [
             [
@@ -966,6 +979,7 @@
       "armies": [
         {
           "side": "Armée de César",
+          "from": "Provence romaine",
           "faction": "romains",
           "path": [
             [
@@ -990,6 +1004,7 @@
         },
         {
           "side": "Vercingétorix",
+          "from": "Gergovie",
           "faction": "gaulois",
           "path": [
             [
@@ -1009,6 +1024,7 @@
         },
         {
           "side": "Armée de secours gauloise",
+          "from": "Gaule centrale",
           "faction": "gaulois",
           "path": [
             [
@@ -1033,14 +1049,16 @@
           "role": "Proconsul des Gaules",
           "faction": "romains",
           "archetype": "consul",
-          "quote": "Je les enfermerai dans leurs murs et je ferai face à ceux qui viendront les délivrer (formule libre)"
+          "quote": "Je les enfermerai dans leurs murs et je ferai face à ceux qui viendront les délivrer (formule libre)",
+          "person": "jules-cesar"
         },
         {
           "name": "Vercingétorix",
           "role": "Chef de la coalition gauloise",
           "faction": "gaulois",
           "archetype": "chef-barbare",
-          "quote": "Prenez-moi : j'ai combattu pour la liberté de tous les Gaulois (formule libre)"
+          "quote": "Prenez-moi : j'ai combattu pour la liberté de tous les Gaulois (formule libre)",
+          "person": "vercingetorix"
         }
       ]
     },
@@ -1095,6 +1113,7 @@
       "armies": [
         {
           "side": "Octavien",
+          "from": "Brindes",
           "faction": "romains",
           "path": [
             [
@@ -1119,6 +1138,7 @@
         },
         {
           "side": "Antoine",
+          "from": "Patras",
           "faction": "romains",
           "path": [
             [
@@ -1138,6 +1158,7 @@
         },
         {
           "side": "Cléopâtre",
+          "from": "Alexandrie",
           "faction": "egyptiens",
           "path": [
             [
@@ -1208,7 +1229,8 @@
           "role": "Premier empereur",
           "faction": "romains",
           "archetype": "empereur",
-          "quote": "J'ai trouvé une Rome de briques, je laisse une Rome de marbre (selon Suétone)"
+          "quote": "J'ai trouvé une Rome de briques, je laisse une Rome de marbre (selon Suétone)",
+          "person": "auguste"
         }
       ]
     },
@@ -1260,6 +1282,7 @@
       "armies": [
         {
           "side": "Varus",
+          "from": "camp de la Weser",
           "faction": "romains",
           "path": [
             [
@@ -1279,6 +1302,7 @@
         },
         {
           "side": "Arminius",
+          "from": "forêts de Germanie",
           "faction": "germains",
           "path": [
             [
@@ -1304,7 +1328,8 @@
           "role": "Chef chérusque",
           "faction": "germains",
           "archetype": "chef-barbare",
-          "quote": "Libérons la Germanie : elle n'est pas une province de Rome (formule libre)"
+          "quote": "Libérons la Germanie : elle n'est pas une province de Rome (formule libre)",
+          "person": "arminius"
         },
         {
           "name": "Auguste",
@@ -1315,7 +1340,8 @@
           "position": [
             12.49,
             41.89
-          ]
+          ],
+          "person": "auguste"
         }
       ]
     },
@@ -1370,6 +1396,7 @@
       "armies": [
         {
           "side": "Légions de Claude",
+          "from": "Boulogne (Gesoriacum)",
           "faction": "romains",
           "path": [
             [
@@ -1394,6 +1421,7 @@
         },
         {
           "side": "Bretons",
+          "from": "Camulodunum (Colchester)",
           "faction": "gaulois",
           "path": [
             [
@@ -1468,7 +1496,8 @@
           "position": [
             47.9,
             30.55
-          ]
+          ],
+          "person": "trajan"
         }
       ]
     },
@@ -1552,7 +1581,8 @@
           "role": "Empereur, fondateur de la Tétrarchie",
           "faction": "romains",
           "archetype": "empereur",
-          "quote": "Si vous voyiez les choux que j'ai plantés, vous ne me presseriez pas de régner (tradition)"
+          "quote": "Si vous voyiez les choux que j'ai plantés, vous ne me presseriez pas de régner (tradition)",
+          "person": "diocletien"
         },
         {
           "name": "Maximien",
@@ -1605,7 +1635,8 @@
           "role": "Fondateur de Constantinople",
           "faction": "romains",
           "archetype": "empereur",
-          "quote": "Par ce signe, tu vaincras (vision de 312, selon Eusèbe de Césarée)"
+          "quote": "Par ce signe, tu vaincras (vision de 312, selon Eusèbe de Césarée)",
+          "person": "constantin-ier"
         }
       ]
     },
@@ -1647,7 +1678,8 @@
           "role": "Dernier empereur unique",
           "faction": "romains",
           "archetype": "empereur",
-          "quote": "Je partage l'Empire entre mes deux fils : Arcadius à l'Orient, Honorius à l'Occident (formule libre)"
+          "quote": "Je partage l'Empire entre mes deux fils : Arcadius à l'Orient, Honorius à l'Occident (formule libre)",
+          "person": "theodose-ier"
         },
         {
           "name": "Arcadius",
@@ -1712,6 +1744,7 @@
       "armies": [
         {
           "side": "Alaric et les Goths",
+          "from": "Alpes juliennes",
           "faction": "goths-vandales",
           "path": [
             [
@@ -1736,6 +1769,7 @@
         },
         {
           "side": "Défenseurs de Rome",
+          "from": "Rome",
           "faction": "romains",
           "path": [
             [
@@ -1756,7 +1790,8 @@
           "role": "Roi des Wisigoths",
           "faction": "goths-vandales",
           "archetype": "chef-barbare",
-          "quote": "Plus l'herbe est épaisse, plus elle se fauche aisément (selon Zosime)"
+          "quote": "Plus l'herbe est épaisse, plus elle se fauche aisément (selon Zosime)",
+          "person": "alaric-ier"
         }
       ]
     },
@@ -1852,7 +1887,8 @@
           "position": [
             28.9784,
             41.0082
-          ]
+          ],
+          "person": "justinien-ier"
         }
       ]
     },
@@ -1907,6 +1943,7 @@
       "armies": [
         {
           "side": "Arabes",
+          "from": "Al-Hira (Irak)",
           "faction": "arabes",
           "path": [
             [
@@ -1931,6 +1968,7 @@
         },
         {
           "side": "Byzantins",
+          "from": "Antioche",
           "faction": "byzantins",
           "path": [
             [
@@ -2028,6 +2066,7 @@
       "armies": [
         {
           "side": "Seldjoukides",
+          "from": "Ispahan",
           "faction": "turcs-seldjoukides",
           "path": [
             [
@@ -2060,6 +2099,7 @@
         },
         {
           "side": "Byzantins",
+          "from": "Constantinople",
           "faction": "byzantins",
           "path": [
             [
@@ -2153,6 +2193,7 @@
       "armies": [
         {
           "side": "Croisés et Vénitiens",
+          "from": "Venise",
           "faction": "croises-latins",
           "path": [
             [
@@ -2185,6 +2226,7 @@
         },
         {
           "side": "Défenseurs byzantins",
+          "from": "Constantinople",
           "faction": "byzantins",
           "path": [
             [
@@ -2303,6 +2345,7 @@
       "armies": [
         {
           "side": "Ottomans",
+          "from": "Andrinople",
           "faction": "ottomans",
           "path": [
             [
@@ -2323,6 +2366,7 @@
         },
         {
           "side": "Défenseurs de Constantinople",
+          "from": "Constantinople",
           "faction": "byzantins",
           "path": [
             [
@@ -2343,14 +2387,16 @@
           "role": "Sultan ottoman",
           "faction": "ottomans",
           "archetype": "sultan",
-          "quote": "Je prendrai Constantinople, ou Constantinople me prendra (formule libre)"
+          "quote": "Je prendrai Constantinople, ou Constantinople me prendra (formule libre)",
+          "person": "mehmed-ii"
         },
         {
           "name": "Constantin XI",
           "role": "Dernier empereur byzantin",
           "faction": "byzantins",
           "archetype": "empereur-byzantin",
-          "quote": "N'y a-t-il aucun chrétien pour me trancher la tête ? (selon Sphrantzès)"
+          "quote": "N'y a-t-il aucun chrétien pour me trancher la tête ? (selon Sphrantzès)",
+          "person": "constantin-xi"
         }
       ]
     }

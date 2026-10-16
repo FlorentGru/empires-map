@@ -176,6 +176,7 @@
       "armies": [
         {
           "side": "Zhou",
+          "from": "Haojing (près de Xi'an)",
           "faction": "chinois",
           "path": [
             [
@@ -204,6 +205,7 @@
         },
         {
           "side": "Shang",
+          "from": "Yin (Anyang)",
           "faction": "chinois",
           "path": [
             [
@@ -332,7 +334,8 @@
           "role": "Maître et philosophe",
           "faction": "chinois",
           "archetype": "lettre-mandarin",
-          "quote": "Ce que tu ne veux pas qu'on te fasse, ne le fais pas aux autres (Entretiens, XV, 24)."
+          "quote": "Ce que tu ne veux pas qu'on te fasse, ne le fais pas aux autres (Entretiens, XV, 24).",
+          "person": "confucius"
         },
         {
           "name": "Laozi",
@@ -398,7 +401,8 @@
           "position": [
             118.5,
             37
-          ]
+          ],
+          "person": "sun-zi"
         }
       ]
     },
@@ -504,6 +508,7 @@
       "armies": [
         {
           "side": "Qin",
+          "from": "Xianyang",
           "faction": "chinois",
           "path": [
             [
@@ -532,6 +537,7 @@
         },
         {
           "side": "Zhao",
+          "from": "royaume de Zhao",
           "faction": "chinois",
           "path": [
             [
@@ -611,7 +617,8 @@
           "role": "Premier Empereur de Chine",
           "faction": "chinois",
           "archetype": "empereur-chinois",
-          "quote": "Nous prenons le titre de Huangdi, et nos descendants seront Deuxième, Troisième... (selon le Shiji)."
+          "quote": "Nous prenons le titre de Huangdi, et nos descendants seront Deuxième, Troisième... (selon le Shiji).",
+          "person": "qin-shi-huang"
         },
         {
           "name": "Li Si",
@@ -660,6 +667,7 @@
       "armies": [
         {
           "side": "Qin (Meng Tian)",
+          "from": "Xianyang",
           "faction": "chinois",
           "path": [
             [
@@ -684,6 +692,7 @@
         },
         {
           "side": "Xiongnu",
+          "from": "steppe de Mongolie",
           "faction": "xiongnu",
           "path": [
             [
@@ -718,7 +727,8 @@
           "position": [
             108.7,
             34.33
-          ]
+          ],
+          "person": "qin-shi-huang"
         }
       ]
     },
@@ -773,6 +783,7 @@
       "armies": [
         {
           "side": "Han",
+          "from": "Chang'an",
           "faction": "chinois",
           "path": [
             [
@@ -801,6 +812,7 @@
         },
         {
           "side": "Chu",
+          "from": "Jiangsu (Chu)",
           "faction": "chinois",
           "path": [
             [
@@ -825,7 +837,8 @@
           "role": "Fondateur des Han",
           "faction": "chinois",
           "archetype": "empereur-chinois",
-          "quote": "Je n'égale ni Zhang Liang, ni Xiao He, ni Han Xin, mais je sais les employer (selon le Shiji)."
+          "quote": "Je n'égale ni Zhang Liang, ni Xiao He, ni Han Xin, mais je sais les employer (selon le Shiji).",
+          "person": "liu-bang"
         },
         {
           "name": "Xiang Yu",
@@ -889,7 +902,8 @@
           "position": [
             108.9,
             34.3
-          ]
+          ],
+          "person": "han-wudi"
         }
       ]
     },
@@ -942,6 +956,7 @@
       "armies": [
         {
           "side": "Han (Wei Qing)",
+          "from": "Chang'an",
           "faction": "chinois",
           "path": [
             [
@@ -970,6 +985,7 @@
         },
         {
           "side": "Han (Huo Qubing)",
+          "from": "Chang'an",
           "faction": "chinois",
           "path": [
             [
@@ -998,6 +1014,7 @@
         },
         {
           "side": "Xiongnu",
+          "from": "steppe de Mongolie",
           "faction": "xiongnu",
           "path": [
             [
@@ -1036,7 +1053,8 @@
           "position": [
             108.9,
             34.3
-          ]
+          ],
+          "person": "han-wudi"
         }
       ]
     },
@@ -1179,6 +1197,7 @@
       "armies": [
         {
           "side": "Turbans jaunes",
+          "from": "Julu",
           "faction": "chinois",
           "path": [
             [
@@ -1202,6 +1221,7 @@
         },
         {
           "side": "Han (Huangfu Song)",
+          "from": "Luoyang",
           "faction": "chinois",
           "path": [
             [
@@ -1292,6 +1312,7 @@
       "armies": [
         {
           "side": "Cao Cao",
+          "from": "Henan",
           "faction": "chinois",
           "path": [
             [
@@ -1319,6 +1340,7 @@
         },
         {
           "side": "Alliance Sun-Liu",
+          "from": "Xiakou (Wuhan)",
           "faction": "chinois",
           "path": [
             [
@@ -1358,7 +1380,8 @@
           "position": [
             114.3,
             34.8
-          ]
+          ],
+          "person": "cao-cao"
         }
       ]
     },
@@ -1410,7 +1433,8 @@
           "position": [
             104.07,
             30.67
-          ]
+          ],
+          "person": "zhuge-liang"
         },
         {
           "name": "Sun Quan",
@@ -1459,6 +1483,7 @@
       "armies": [
         {
           "side": "Jin (Wang Jun)",
+          "from": "Chengdu",
           "faction": "chinois",
           "path": [
             [
@@ -1491,6 +1516,7 @@
         },
         {
           "side": "Wu",
+          "from": "Jianye (Nankin)",
           "faction": "chinois",
           "path": [
             [
@@ -1560,6 +1586,7 @@
       "armies": [
         {
           "side": "Han-Zhao (Xiongnu)",
+          "from": "Pingyang",
           "faction": "xiongnu",
           "path": [
             [
@@ -1580,6 +1607,7 @@
         },
         {
           "side": "Jin",
+          "from": "Henan",
           "faction": "chinois",
           "path": [
             [
@@ -1672,6 +1700,7 @@
       "armies": [
         {
           "side": "Qin antérieur (Fu Jian)",
+          "from": "Chang'an",
           "faction": "chinois",
           "path": [
             [
@@ -1699,6 +1728,7 @@
         },
         {
           "side": "Jin orientaux",
+          "from": "Jiankang (Nankin)",
           "faction": "chinois",
           "path": [
             [
@@ -1882,6 +1912,7 @@
       "armies": [
         {
           "side": "Sui (Yang Guang)",
+          "from": "Chang'an",
           "faction": "chinois",
           "path": [
             [
@@ -1910,6 +1941,7 @@
         },
         {
           "side": "Chen",
+          "from": "Jiankang (Nankin)",
           "faction": "chinois",
           "path": [
             [
@@ -2049,6 +2081,7 @@
       "armies": [
         {
           "side": "Sui (Yangdi)",
+          "from": "Zhuojun (près de Pékin)",
           "faction": "chinois",
           "path": [
             [
@@ -2076,6 +2109,7 @@
         },
         {
           "side": "Goguryeo",
+          "from": "Pyongyang",
           "faction": "coreens",
           "path": [
             [
@@ -2168,7 +2202,8 @@
           "position": [
             112,
             34.7
-          ]
+          ],
+          "person": "tang-taizong"
         }
       ]
     },
@@ -2221,6 +2256,7 @@
       "armies": [
         {
           "side": "Tang (Li Jing)",
+          "from": "Chang'an",
           "faction": "chinois",
           "path": [
             [
@@ -2249,6 +2285,7 @@
         },
         {
           "side": "Turcs orientaux",
+          "from": "steppe de Mongolie",
           "faction": "turcs-gokturks",
           "path": [
             [
@@ -2273,7 +2310,8 @@
           "role": "Empereur et Khagan céleste",
           "faction": "chinois",
           "archetype": "empereur-chinois",
-          "quote": "L'histoire est un miroir pour savoir ce qui fait prospérer ou périr (formule libre)."
+          "quote": "L'histoire est un miroir pour savoir ce qui fait prospérer ou périr (formule libre).",
+          "person": "tang-taizong"
         },
         {
           "name": "Li Jing",
@@ -2335,7 +2373,8 @@
           "position": [
             112.45,
             34.62
-          ]
+          ],
+          "person": "tang-taizong"
         }
       ]
     },
@@ -2377,7 +2416,8 @@
           "role": "Impératrice-empereur de Chine",
           "faction": "chinois",
           "archetype": "imperatrice",
-          "quote": "Je suis la seule à avoir fait de la loi un instrument de gouvernement (formule libre)."
+          "quote": "Je suis la seule à avoir fait de la loi un instrument de gouvernement (formule libre).",
+          "person": "wu-zetian"
         },
         {
           "name": "Di Renjie",
@@ -2440,6 +2480,7 @@
       "armies": [
         {
           "side": "Tang (Gao Xianzhi)",
+          "from": "Aksou",
           "faction": "chinois",
           "path": [
             [
@@ -2467,6 +2508,7 @@
         },
         {
           "side": "Abbassides",
+          "from": "Samarcande",
           "faction": "arabes",
           "path": [
             [
@@ -2487,6 +2529,7 @@
         },
         {
           "side": "Karlouks",
+          "from": "Semiretchié",
           "faction": "turcs-gokturks",
           "path": [
             [
@@ -2564,6 +2607,7 @@
       "armies": [
         {
           "side": "Rebelles d'An Lushan",
+          "from": "Pékin",
           "faction": "turcs-gokturks",
           "path": [
             [
@@ -2596,6 +2640,7 @@
         },
         {
           "side": "Tang (Geshu Han)",
+          "from": "Chang'an",
           "faction": "chinois",
           "path": [
             [
@@ -2747,6 +2792,7 @@
       "armies": [
         {
           "side": "Khitans (Yelü Deguang)",
+          "from": "steppe khitane",
           "faction": "khitans",
           "path": [
             [
@@ -2771,6 +2817,7 @@
         },
         {
           "side": "Tang postérieurs",
+          "from": "Kaifeng",
           "faction": "chinois",
           "path": [
             [
@@ -2897,6 +2944,7 @@
       "armies": [
         {
           "side": "Liao (Shengzong)",
+          "from": "Pékin (Yanjing)",
           "faction": "khitans",
           "path": [
             [
@@ -2920,6 +2968,7 @@
         },
         {
           "side": "Song (Zhenzong)",
+          "from": "Kaifeng",
           "faction": "chinois",
           "path": [
             [
@@ -3007,6 +3056,7 @@
       "armies": [
         {
           "side": "Xia occidentaux",
+          "from": "Yinchuan",
           "faction": "tibetains",
           "path": [
             [
@@ -3031,6 +3081,7 @@
         },
         {
           "side": "Song",
+          "from": "Chang'an",
           "faction": "chinois",
           "path": [
             [
@@ -3185,6 +3236,7 @@
       "armies": [
         {
           "side": "Jin (Jurchens)",
+          "from": "Mandchourie (Huining)",
           "faction": "jurchens",
           "path": [
             [
@@ -3213,6 +3265,7 @@
         },
         {
           "side": "Song du Nord",
+          "from": "Kaifeng",
           "faction": "chinois",
           "path": [
             [
@@ -3296,6 +3349,7 @@
       "armies": [
         {
           "side": "Song (Yue Fei)",
+          "from": "Wuhan",
           "faction": "chinois",
           "path": [
             [
@@ -3320,6 +3374,7 @@
         },
         {
           "side": "Jin",
+          "from": "Kaifeng",
           "faction": "jurchens",
           "path": [
             [
@@ -3340,7 +3395,8 @@
           "role": "Général patriote",
           "faction": "chinois",
           "archetype": "general-chinois",
-          "quote": "Je rendrai à notre pays ses fleuves et ses montagnes (poème Man Jiang Hong, attribué)."
+          "quote": "Je rendrai à notre pays ses fleuves et ses montagnes (poème Man Jiang Hong, attribué).",
+          "person": "yue-fei"
         },
         {
           "name": "Qin Hui",
@@ -3415,6 +3471,7 @@
       "armies": [
         {
           "side": "Mongols",
+          "from": "steppe de Mongolie",
           "faction": "mongols",
           "path": [
             [
@@ -3444,6 +3501,7 @@
         },
         {
           "side": "Jin",
+          "from": "Pékin (Zhongdu)",
           "faction": "jurchens",
           "path": [
             [
@@ -3468,7 +3526,8 @@
           "position": [
             106.9,
             47.9
-          ]
+          ],
+          "person": "gengis-khan"
         },
         {
           "name": "Yelü Chucai",
@@ -3558,6 +3617,7 @@
         },
         {
           "side": "Song (Lü Wenhuan)",
+          "from": "Hangzhou",
           "faction": "chinois",
           "path": [
             [
@@ -3585,7 +3645,8 @@
           "position": [
             116.4,
             39.9
-          ]
+          ],
+          "person": "kubilai-khan"
         },
         {
           "name": "Lü Wenhuan",
@@ -3637,7 +3698,8 @@
           "role": "Grand Khan et empereur Yuan",
           "faction": "mongols",
           "archetype": "khan",
-          "quote": "Je suis l'empereur de tous les peuples (formule libre, d'après la proclamation de 1271)."
+          "quote": "Je suis l'empereur de tous les peuples (formule libre, d'après la proclamation de 1271).",
+          "person": "kubilai-khan"
         },
         {
           "name": "Liu Bingzhong",
@@ -3699,7 +3761,8 @@
           "position": [
             116,
             42.35
-          ]
+          ],
+          "person": "kubilai-khan"
         }
       ]
     },
@@ -3753,6 +3816,7 @@
       "armies": [
         {
           "side": "Yuan (Zhang Hongfan)",
+          "from": "Hangzhou",
           "faction": "mongols",
           "path": [
             [
@@ -3782,6 +3846,7 @@
         },
         {
           "side": "Flotte Song",
+          "from": "Hangzhou",
           "faction": "chinois",
           "path": [
             [
@@ -3875,6 +3940,7 @@
       "armies": [
         {
           "side": "Flotte de l'Est (Yuan)",
+          "from": "Masan (Corée)",
           "faction": "mongols",
           "path": [
             [
@@ -3894,6 +3960,7 @@
         },
         {
           "side": "Flotte du Sud (Chinois)",
+          "from": "Quanzhou",
           "faction": "chinois",
           "path": [
             [
@@ -3917,6 +3984,7 @@
         },
         {
           "side": "Samouraïs de Kyushu",
+          "from": "Kyushu",
           "faction": "japonais",
           "path": [
             [
@@ -3951,7 +4019,8 @@
           "position": [
             116.4,
             39.9
-          ]
+          ],
+          "person": "kubilai-khan"
         }
       ]
     },
@@ -3991,6 +4060,7 @@
       "armies": [
         {
           "side": "Ming (Xu Da)",
+          "from": "Nankin",
           "faction": "chinois",
           "path": [
             [
@@ -4015,6 +4085,7 @@
         },
         {
           "side": "Yuan (Toghon Temür)",
+          "from": "Pékin (Dadu)",
           "faction": "mongols",
           "path": [
             [
@@ -4039,7 +4110,8 @@
           "role": "Fondateur des Ming",
           "faction": "chinois",
           "archetype": "empereur-chinois",
-          "quote": "Je suis un paysan du Huai ; le Ciel m'a donné l'empire (formule libre)."
+          "quote": "Je suis un paysan du Huai ; le Ciel m'a donné l'empire (formule libre).",
+          "person": "zhu-yuanzhang"
         },
         {
           "name": "Xu Da",
@@ -4095,7 +4167,8 @@
           "position": [
             75.78,
             11.25
-          ]
+          ],
+          "person": "zheng-he"
         },
         {
           "name": "Yongle",
@@ -4211,6 +4284,7 @@
       "armies": [
         {
           "side": "Ming (Zhengtong)",
+          "from": "Pékin",
           "faction": "chinois",
           "path": [
             [
@@ -4234,6 +4308,7 @@
         },
         {
           "side": "Oïrats (Esen)",
+          "from": "steppe de Mongolie",
           "faction": "mongols",
           "path": [
             [
@@ -4331,6 +4406,7 @@
       "armies": [
         {
           "side": "Tümed (Altan Khan)",
+          "from": "Hohhot",
           "faction": "mongols",
           "path": [
             [
@@ -4355,6 +4431,7 @@
         },
         {
           "side": "Ming (garnisons du Nord)",
+          "from": "Pékin",
           "faction": "chinois",
           "path": [
             [
@@ -4446,6 +4523,7 @@
       "armies": [
         {
           "side": "Japon (Konishi)",
+          "from": "Busan",
           "faction": "japonais",
           "path": [
             [
@@ -4469,6 +4547,7 @@
         },
         {
           "side": "Ming (Li Rusong)",
+          "from": "Shenyang",
           "faction": "chinois",
           "path": [
             [
@@ -4493,6 +4572,7 @@
         },
         {
           "side": "Joseon (Corée)",
+          "from": "Corée",
           "faction": "coreens",
           "path": [
             [
@@ -4583,6 +4663,7 @@
       "armies": [
         {
           "side": "Ming (quatre colonnes)",
+          "from": "Shenyang",
           "faction": "chinois",
           "path": [
             [
@@ -4602,6 +4683,7 @@
         },
         {
           "side": "Jin postérieurs (Nurhaci)",
+          "from": "Hetu Ala",
           "faction": "mandchous",
           "path": [
             [
@@ -4715,6 +4797,7 @@
         },
         {
           "side": "Wu Sangui",
+          "from": "Ningyuan",
           "faction": "chinois",
           "path": [
             [
@@ -4731,6 +4814,7 @@
         },
         {
           "side": "Shun (Li Zicheng)",
+          "from": "Pékin",
           "faction": "chinois",
           "path": [
             [
@@ -4833,6 +4917,7 @@
       "armies": [
         {
           "side": "Qing (Shi Lang)",
+          "from": "Tongshan (Fujian)",
           "faction": "chinois",
           "path": [
             [
@@ -4853,6 +4938,7 @@
         },
         {
           "side": "Zheng (Taïwan)",
+          "from": "Tainan",
           "faction": "chinois",
           "path": [
             [
@@ -4881,7 +4967,8 @@
           "position": [
             116.4,
             39.9
-          ]
+          ],
+          "person": "kangxi"
         },
         {
           "name": "Shi Lang",
@@ -4930,6 +5017,7 @@
       "armies": [
         {
           "side": "Qing (Songgotu)",
+          "from": "Pékin",
           "faction": "mandchous",
           "path": [
             [
@@ -4957,6 +5045,7 @@
         },
         {
           "side": "Russie (Golovine)",
+          "from": "Albazine",
           "faction": "russes",
           "path": [
             [
@@ -5058,6 +5147,7 @@
       "armies": [
         {
           "side": "Qing (Zhaohui)",
+          "from": "Pékin",
           "faction": "mandchous",
           "path": [
             [
@@ -5094,6 +5184,7 @@
         },
         {
           "side": "Khojas",
+          "from": "Yarkand",
           "faction": "ouighours",
           "path": [
             [
@@ -5121,7 +5212,8 @@
           "position": [
             116.4,
             39.9
-          ]
+          ],
+          "person": "qianlong"
         },
         {
           "name": "Zhaohui",
@@ -5187,7 +5279,8 @@
           "position": [
             117.94,
             40.98
-          ]
+          ],
+          "person": "qianlong"
         }
       ]
     },
@@ -5241,6 +5334,7 @@
       "armies": [
         {
           "side": "Royal Navy",
+          "from": "Hong Kong",
           "faction": "britanniques",
           "path": [
             [
@@ -5262,6 +5356,7 @@
         },
         {
           "side": "Marine qing",
+          "from": "Canton",
           "faction": "chinois",
           "path": [
             [
@@ -5373,6 +5468,7 @@
         },
         {
           "side": "Défenseurs qing",
+          "from": "Hangzhou",
           "faction": "chinois",
           "path": [
             [
@@ -5453,6 +5549,7 @@
       "armies": [
         {
           "side": "Taiping",
+          "from": "Jintian (Guangxi)",
           "faction": "chinois",
           "path": [
             [
@@ -5481,6 +5578,7 @@
         },
         {
           "side": "Qing (armée du Hunan)",
+          "from": "Changsha",
           "faction": "chinois",
           "path": [
             [
@@ -5574,6 +5672,7 @@
       "armies": [
         {
           "side": "Corps britannique",
+          "from": "Tianjin",
           "faction": "britanniques",
           "path": [
             [
@@ -5598,6 +5697,7 @@
         },
         {
           "side": "Corps français",
+          "from": "Tianjin",
           "faction": "francais",
           "path": [
             [
@@ -5618,6 +5718,7 @@
         },
         {
           "side": "Qing (Sengge Rinchen)",
+          "from": "Tongzhou",
           "faction": "mandchous",
           "path": [
             [
@@ -5700,7 +5801,8 @@
           "position": [
             116.4,
             39.9
-          ]
+          ],
+          "person": "cixi"
         },
         {
           "name": "Prince Gong (Yixin)",
@@ -5775,6 +5877,7 @@
       "armies": [
         {
           "side": "Flotte de Beiyang",
+          "from": "Weihaiwei",
           "faction": "chinois",
           "path": [
             [
@@ -5794,6 +5897,7 @@
         },
         {
           "side": "Flotte japonaise",
+          "from": "Incheon",
           "faction": "japonais",
           "path": [
             [
@@ -5897,6 +6001,7 @@
       "armies": [
         {
           "side": "Britanniques et Indiens",
+          "from": "Tianjin",
           "faction": "britanniques",
           "path": [
             [
@@ -5921,6 +6026,7 @@
         },
         {
           "side": "Japonais",
+          "from": "Tianjin",
           "faction": "japonais",
           "path": [
             [
@@ -5941,6 +6047,7 @@
         },
         {
           "side": "Russes",
+          "from": "Tianjin",
           "faction": "russes",
           "path": [
             [
@@ -5961,6 +6068,7 @@
         },
         {
           "side": "Boxers et armée qing",
+          "from": "Pékin",
           "faction": "chinois",
           "path": [
             [
@@ -5989,7 +6097,8 @@
           "position": [
             116.4,
             39.9
-          ]
+          ],
+          "person": "cixi"
         },
         {
           "name": "Robert Hart",

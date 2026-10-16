@@ -1,0 +1,1123 @@
+[
+  {
+    "id": "grande-muraille",
+    "name": "Grande Muraille de Chine (Badaling)",
+    "location": [
+      116.0069,
+      40.3542
+    ],
+    "built": -214,
+    "kind": "muraille",
+    "civilization": "Chine",
+    "description": "Sous Qin Shi Huangdi, les murs des royaumes combattants sont reliés pour protéger la Chine des nomades du nord. Prolongée par les Han puis rebâtie en pierre et en brique par les Ming, la muraille court sur des milliers de kilomètres ; le tronçon de Badaling, près de Pékin, en est le plus célèbre.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Grande_Muraille"
+  },
+  {
+    "id": "pyramides-de-gizeh",
+    "name": "Pyramides de Gizeh",
+    "location": [
+      31.1304,
+      29.9761
+    ],
+    "built": -2560,
+    "kind": "tombeau",
+    "civilization": "Égypte ancienne",
+    "description": "Sur le plateau de Gizeh, près du Caire, les pharaons Khéops, Khéphren et Mykérinos firent bâtir trois pyramides. Celle de Khéops, haute de près de 147 mètres, resta la plus haute construction humaine pendant environ quatre mille ans. Seule des sept merveilles du monde antique à subsister.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Pyramides_de_Gizeh"
+  },
+  {
+    "id": "pyramide-de-djoser",
+    "name": "Pyramide à degrés de Djéser",
+    "location": [
+      31.2163,
+      29.8711
+    ],
+    "built": -2670,
+    "kind": "tombeau",
+    "civilization": "Égypte ancienne",
+    "description": "Érigée à Saqqarah par l'architecte Imhotep pour le pharaon Djéser, cette pyramide à six degrés est le plus ancien grand édifice en pierre taillée connu. Elle superpose des mastabas de taille décroissante et ouvre la grande tradition des tombeaux royaux pyramidaux de l'Égypte ancienne.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Complexe_fun%C3%A9raire_de_Dj%C3%A9ser"
+  },
+  {
+    "id": "caral",
+    "name": "Cité sacrée de Caral",
+    "location": [
+      -77.5214,
+      -10.8917
+    ],
+    "built": -2600,
+    "until": -1800,
+    "kind": "cite",
+    "civilization": "Civilisation de Caral-Supe",
+    "description": "Dans la vallée de Supe, au Pérou, Caral est l'une des plus anciennes cités des Amériques. Ses pyramides à degrés et ses places circulaires enfoncées montrent une société organisée, sans poterie ni écriture connue, qui commerçait avec la côte et l'Amazonie avant d'être abandonnée vers 1800 av. J.-C.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Caral"
+  },
+  {
+    "id": "stonehenge",
+    "name": "Stonehenge",
+    "location": [
+      -1.8264,
+      51.1789
+    ],
+    "built": -2500,
+    "kind": "temple",
+    "civilization": "Britannie préhistorique",
+    "description": "Sur la plaine de Salisbury, en Angleterre, ce cercle de monolithes dressés et de linteaux fut édifié en plusieurs phases entre le Néolithique et l'âge du bronze. Alignés sur le solstice d'été, ses blocs venaient de loin. Il servait sans doute de lieu cérémoniel, funéraire et astronomique.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Stonehenge"
+  },
+  {
+    "id": "mohenjo-daro",
+    "name": "Mohenjo-daro",
+    "location": [
+      68.1389,
+      27.3292
+    ],
+    "built": -2500,
+    "until": -1900,
+    "kind": "cite",
+    "civilization": "Civilisation de l'Indus",
+    "description": "Sur les rives de l'Indus, au Pakistan actuel, Mohenjo-daro était l'une des grandes villes de la civilisation harappéenne. Son plan en damier, ses puits, ses égouts couverts et son grand bain public témoignent d'un urbanisme remarquable. La cité fut abandonnée vers 1900 av. J.-C., pour des raisons encore débattues.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Mohenjo-daro"
+  },
+  {
+    "id": "ziggourat-d-ur",
+    "name": "Ziggourat d'Ur",
+    "location": [
+      46.1025,
+      30.9625
+    ],
+    "built": -2100,
+    "kind": "temple",
+    "civilization": "Sumer",
+    "description": "Construite par le roi Ur-Nammu en l'honneur du dieu-lune Nanna, cette ziggourat en briques crues, revêtue de briques cuites, dominait la cité sumérienne d'Ur, en Mésopotamie. Ses trois terrasses superposées, reliées par de grands escaliers, portaient un sanctuaire au sommet. Elle fut restaurée plus tard par Nabonide.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Ziggurat_d'Ur"
+  },
+  {
+    "id": "palais-de-knossos",
+    "name": "Palais de Cnossos",
+    "location": [
+      25.1622,
+      35.2983
+    ],
+    "built": -1700,
+    "until": -1375,
+    "kind": "palais",
+    "civilization": "Civilisation minoenne",
+    "description": "En Crète, le palais de Cnossos fut le centre de la civilisation minoenne. Ses cours, ses magasins, ses fresques colorées et son dédale de pièces ont nourri la légende du Minotaure. Détruit puis reconstruit après un séisme, il est définitivement ruiné vers 1375 av. J.-C.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Cnossos"
+  },
+  {
+    "id": "temple-d-hatchepsout",
+    "name": "Temple funéraire d'Hatchepsout",
+    "location": [
+      32.6067,
+      25.7384
+    ],
+    "built": -1458,
+    "kind": "temple",
+    "civilization": "Égypte ancienne",
+    "description": "Adossé aux falaises de Deir el-Bahari, face à Thèbes, ce temple à trois terrasses à colonnades fut bâti par l'architecte Senmout pour la reine-pharaon Hatchepsout. Ses reliefs célèbrent l'expédition commerciale au pays de Pcount. Son architecture harmonieuse s'intègre remarquablement au paysage de roche.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Temple_fun%C3%A9raire_d'Hatchepsout"
+  },
+  {
+    "id": "mycenes",
+    "name": "Citadelle de Mycènes",
+    "location": [
+      22.7561,
+      37.7308
+    ],
+    "built": -1250,
+    "until": -1100,
+    "kind": "forteresse",
+    "civilization": "Civilisation mycénienne",
+    "description": "Au nord-est du Péloponnèse, la citadelle de Mycènes dominait le monde grec de l'âge du bronze. On y entrait par la porte des Lionnes, aux murs cyclopéens. Les tombes royales renfermaient des masques d'or. Le site périclita après l'effondrement des palais, vers 1100 av. J.-C.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Myc%C3%A8nes"
+  },
+  {
+    "id": "abou-simbel",
+    "name": "Temples d'Abou Simbel",
+    "location": [
+      31.6256,
+      22.3369
+    ],
+    "built": -1244,
+    "kind": "temple",
+    "civilization": "Égypte ancienne",
+    "description": "Creusés dans la falaise de Nubie sous Ramsès II, deux temples rupestres glorifient le pharaon et la reine Néfertari. La façade du grand temple s'orne de quatre colosses de vingt mètres. Au XXe siècle, les édifices furent déplacés pour échapper à la montée des eaux du barrage d'Assouan.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Abou_Simbel"
+  },
+  {
+    "id": "carthage",
+    "name": "Carthage",
+    "location": [
+      10.3309,
+      36.858
+    ],
+    "built": -814,
+    "until": -146,
+    "kind": "cite",
+    "civilization": "Carthage",
+    "description": "Fondée par des Phéniciens de Tyr, Carthage devint la grande puissance maritime de la Méditerranée occidentale, avec un port circulaire et la colline de Byrsa. Rivale de Rome lors des guerres puniques, elle fut rasée en 146 av. J.-C. par Scipion Émilien, puis refondée par les Romains.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Carthage"
+  },
+  {
+    "id": "persepolis",
+    "name": "Persépolis",
+    "location": [
+      52.8914,
+      29.9344
+    ],
+    "built": -515,
+    "until": -330,
+    "kind": "palais",
+    "civilization": "Empire achéménide",
+    "description": "Capitale cérémonielle de l'Empire perse, Persépolis fut édifiée par Darius Ier et ses successeurs sur une vaste terrasse. L'Apadana et les bas-reliefs montrent les délégations de tout l'empire apportant leurs tributs. Alexandre le Grand l'incendia en 330 av. J.-C., après avoir vaincu Darius III, ce qui marqua symboliquement la fin de l'Empire perse.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Pers%C3%A9polis"
+  },
+  {
+    "id": "parthenon",
+    "name": "Parthénon",
+    "location": [
+      23.7267,
+      37.9715
+    ],
+    "built": -432,
+    "kind": "temple",
+    "civilization": "Grèce antique",
+    "description": "Dédié à Athéna, protectrice d'Athènes, le Parthénon domine l'Acropole. Conçu par Ictinos et Callicratès sous Périclès, avec les sculptures de Phidias, il incarne l'âge d'or de la démocratie athénienne. Devenu église puis mosquée, il fut éventré en 1687 par une explosion de poudre.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Parth%C3%A9non"
+  },
+  {
+    "id": "temple-d-artemis",
+    "name": "Temple d'Artémis à Éphèse",
+    "location": [
+      27.3639,
+      37.9497
+    ],
+    "built": -323,
+    "until": 262,
+    "kind": "temple",
+    "civilization": "Grèce antique",
+    "description": "Au sud-est d'Éphèse, en Asie Mineure, ce vaste temple de marbre dédié à Artémis comptait parmi les sept merveilles du monde. Reconstruit après l'incendie d'Érostrate en 356 av. J.-C., il fut pillé par les Goths en 262 puis abandonné à l'époque chrétienne.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Temple_d'Art%C3%A9mis_%C3%A0_%C3%89ph%C3%A8se"
+  },
+  {
+    "id": "mausolee-d-halicarnasse",
+    "name": "Mausolée d'Halicarnasse",
+    "location": [
+      27.4241,
+      37.0379
+    ],
+    "built": -350,
+    "until": 1404,
+    "kind": "tombeau",
+    "civilization": "Carie hellénisée",
+    "description": "Tombeau monumental du satrape Mausole, élevé à Halicarnasse, aujourd'hui Bodrum, ce mausolée aux frises sculptées par de grands artistes grecs a donné son nom à tous les mausolées. Détruit par des séismes, ses pierres servirent aux chevaliers de Saint-Jean pour bâtir le château de Bodrum.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Mausol%C3%A9e_d'Halicarnasse"
+  },
+  {
+    "id": "colosse-de-rhodes",
+    "name": "Colosse de Rhodes",
+    "location": [
+      28.2278,
+      36.4511
+    ],
+    "built": -280,
+    "until": -226,
+    "kind": "statue",
+    "civilization": "Grèce hellénistique",
+    "description": "Statue en bronze du dieu Hélios, haute d'une trentaine de mètres, érigée à l'entrée du port de Rhodes pour célébrer la défaite d'un siège. Elle s'effondra lors d'un séisme vers 226 av. J.-C. Ses ruines gisaient encore des siècles plus tard, admirées des voyageurs.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Colosse_de_Rhodes"
+  },
+  {
+    "id": "phare-d-alexandrie",
+    "name": "Phare d'Alexandrie",
+    "location": [
+      29.886,
+      31.2148
+    ],
+    "built": -280,
+    "until": 1323,
+    "kind": "phare",
+    "civilization": "Égypte ptolémaïque",
+    "description": "Élevé sur l'île de Pharos sous les premiers Ptolémées, ce phare haut d'environ cent mètres guidait les navires vers le grand port d'Alexandrie. Merveille du monde antique, il fut endommagé par plusieurs séismes et définitivement ruiné en 1323. Ses blocs servirent à construire le fort Qaitbay.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Phare_d'Alexandrie"
+  },
+  {
+    "id": "armee-de-terre-cuite",
+    "name": "Mausolée de Qin Shi Huangdi",
+    "location": [
+      109.2539,
+      34.3817
+    ],
+    "built": -210,
+    "kind": "tombeau",
+    "civilization": "Chine des Qin",
+    "description": "Près de Xi'an, le tombeau du premier empereur de Chine est gardé par une armée de plusieurs milliers de soldats en terre cuite, tous différents, avec chars et chevaux. Découverte en 1974 par des paysans, elle témoigne de la puissance et de la croyance en l'au-delà du fondateur de l'empire.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Mausol%C3%A9e_de_l'empereur_Qin"
+  },
+  {
+    "id": "babylone",
+    "name": "Babylone",
+    "location": [
+      44.42,
+      32.542
+    ],
+    "built": -575,
+    "kind": "cite",
+    "civilization": "Empire néo-babylonien",
+    "description": "Capitale de Nabuchodonosor II, Babylone était traversée par l'Euphrate et ceinte de remparts. On y accédait par la porte d'Ishtar, ornée de briques bleues émaillées, et la tour de Babel est associée à sa ziggourat Etemenanki. Ses ruines se trouvent en Irak, au sud de Bagdad.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Babylone"
+  },
+  {
+    "id": "petra",
+    "name": "Pétra",
+    "location": [
+      35.4436,
+      30.3292
+    ],
+    "built": -100,
+    "kind": "cite",
+    "civilization": "Royaume nabatéen",
+    "description": "Au sud de la Jordanie, la capitale des Nabatéens, riche du commerce caravanier de l'encens, est taillée dans la roche rose. On y arrive par le Siq, un étroit canyon, avant de découvrir le Khazneh, tombeau monumental. Passée sous domination romaine en 106, elle déclina après des séismes.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/P%C3%A9tra"
+  },
+  {
+    "id": "pont-du-gard",
+    "name": "Pont du Gard",
+    "location": [
+      4.5356,
+      43.9472
+    ],
+    "built": 50,
+    "kind": "pont",
+    "civilization": "Rome",
+    "description": "Ce pont à trois niveaux d'arcades, haut de près de 50 mètres, porte l'aqueduc qui amenait l'eau de la source d'Uzès jusqu'à Nîmes (Nemausus) sur environ cinquante kilomètres. Construit sans mortier sous l'Empire romain, il illustre la maîtrise des ingénieurs romains et se trouve en Occitanie.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Pont_du_Gard"
+  },
+  {
+    "id": "colisee",
+    "name": "Colisée",
+    "location": [
+      12.4926,
+      41.8905
+    ],
+    "built": 80,
+    "kind": "amphitheatre",
+    "civilization": "Rome",
+    "description": "Commencé sous Vespasien et inauguré par Titus, l'amphithéâtre Flavien pouvait accueillir environ cinquante mille spectateurs pour des combats de gladiateurs et des chasses. Ses quatre niveaux d'arcades et ses dispositifs souterrains en font un chef-d'œuvre d'ingénierie, symbole de Rome et de l'Empire.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Colis%C3%A9e"
+  },
+  {
+    "id": "pantheon-de-rome",
+    "name": "Panthéon de Rome",
+    "location": [
+      12.4768,
+      41.8986
+    ],
+    "built": 126,
+    "kind": "temple",
+    "civilization": "Rome",
+    "description": "Reconstruit sous Hadrien, le Panthéon est un temple dédié à tous les dieux, devenu église. Sa coupole en béton, large de 43 mètres et percée d'un oculus central, resta la plus grande du monde pendant plus de mille ans. Raphaël et des rois d'Italie y reposent.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Panth%C3%A9on_(Rome)"
+  },
+  {
+    "id": "mur-d-hadrien",
+    "name": "Mur d'Hadrien",
+    "location": [
+      -2.2925,
+      55.0242
+    ],
+    "built": 128,
+    "kind": "muraille",
+    "civilization": "Rome",
+    "description": "Commandé par l'empereur Hadrien pour marquer la frontière nord de la Bretagne romaine, ce mur de pierre long d'environ 118 kilomètres était jalonné de fortins et de forts garnis de soldats. Il servait à contrôler les passages et à affirmer la puissance de l'empire face aux tribus calédoniennes.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Mur_d'Hadrien"
+  },
+  {
+    "id": "baalbek",
+    "name": "Temples de Baalbek",
+    "location": [
+      36.2039,
+      34.0069
+    ],
+    "built": 60,
+    "kind": "temple",
+    "civilization": "Rome",
+    "description": "Dans la plaine de la Bekaa, au Liban, l'antique Héliopolis abrite l'un des plus grands complexes religieux romains. Les temples de Jupiter, Bacchus et Vénus reposent sur des blocs gigantesques. Les six colonnes encore debout du temple de Jupiter comptent parmi les plus hautes de l'Antiquité.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Baalbek"
+  },
+  {
+    "id": "teotihuacan",
+    "name": "Teotihuacan",
+    "location": [
+      -98.8417,
+      19.6917
+    ],
+    "built": 150,
+    "until": 550,
+    "kind": "cite",
+    "civilization": "Teotihuacan",
+    "description": "Au nord de Mexico, Teotihuacan fut la plus grande cité de la Mésoamérique classique, avec peut-être cent mille habitants. L'avenue des Morts relie la pyramide du Soleil, haute de 65 mètres, et celle de la Lune. La ville fut incendiée et abandonnée vers 550, laissant son nom aztèque, « lieu où les hommes deviennent dieux ».",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Teotihuacan"
+  },
+  {
+    "id": "palmyre",
+    "name": "Palmyre",
+    "location": [
+      38.2667,
+      34.5542
+    ],
+    "built": 130,
+    "kind": "cite",
+    "civilization": "Royaume de Palmyre",
+    "description": "Oasis du désert de Syrie, Palmyre prospéra grâce aux caravanes entre Rome et la Perse. Sa grande colonnade, son temple de Bêl et ses tours funéraires marient styles grec, romain et oriental. La reine Zénobie défia Rome avant que l'empereur Aurélien ne prenne la ville en 272.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Palmyre"
+  },
+  {
+    "id": "stele-d-axoum",
+    "name": "Stèles d'Aksoum",
+    "location": [
+      38.7333,
+      14.1167
+    ],
+    "built": 300,
+    "kind": "statue",
+    "civilization": "Royaume d'Aksoum",
+    "description": "Dans le nord de l'Éthiopie, la capitale du royaume d'Aksoum, grande puissance commerciale de la mer Rouge, est célèbre pour ses stèles monolithiques sculptées en forme de tours à étages. La plus haute, brisée, mesurait plus de trente mètres. Elles marquaient les tombes des souverains.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Aksoum"
+  },
+  {
+    "id": "palais-de-diocletien",
+    "name": "Palais de Dioclétien",
+    "location": [
+      16.4397,
+      43.5081
+    ],
+    "built": 305,
+    "kind": "palais",
+    "civilization": "Rome",
+    "description": "Construit à Split, en Croatie, par l'empereur Dioclétien pour sa retraite, ce palais fortifié mêle villa de luxe et camp militaire. Après la chute de l'empire, les habitants s'installèrent entre ses murailles : la vieille ville de Split s'y est développée, et son mausolée est devenu cathédrale.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Palais_de_Diocl%C3%A9tien"
+  },
+  {
+    "id": "sainte-sophie",
+    "name": "Sainte-Sophie",
+    "location": [
+      -73.9,
+      45.8167
+    ],
+    "built": 537,
+    "kind": "eglise",
+    "civilization": "Empire byzantin",
+    "description": "Bâtie en cinq ans à Constantinople sous Justinien par Anthémios de Tralles et Isidore de Milet, Sainte-Sophie est coiffée d'une immense coupole de 31 mètres de diamètre. Cathédrale orthodoxe, puis mosquée après 1453, elle symbolise la grandeur de l'Empire byzantin.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Sainte-Sophie"
+  },
+  {
+    "id": "sigiriya",
+    "name": "Sigiriya",
+    "location": [
+      80.75,
+      7.95
+    ],
+    "built": 477,
+    "kind": "forteresse",
+    "civilization": "Royaume d'Anurâdhapura",
+    "description": "Au centre du Sri Lanka, le roi Kassapa fit de ce rocher de 200 mètres de haut une forteresse-palais. On y accède par des jardins en terrasses et une porte en forme de lion. Les célèbres fresques de dames aux seins nus ornent la paroi. Le site devint ensuite un monastère bouddhiste.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Sigir%C3%AEya"
+  },
+  {
+    "id": "mahabodhi",
+    "name": "Temple de la Mahabodhi",
+    "location": [
+      84.9914,
+      24.696
+    ],
+    "built": 550,
+    "kind": "temple",
+    "civilization": "Inde des Gupta",
+    "description": "À Bodh Gayā, en Inde, ce temple en briques marque le lieu où le Bouddha aurait atteint l'Éveil sous un figuier. La tour pyramidale actuelle date de l'époque Gupta, sur un sanctuaire fondé par l'empereur Ashoka. Il demeure un des principaux lieux de pèlerinage du bouddhisme.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Temple_de_la_Mahabodhi"
+  },
+  {
+    "id": "leshan",
+    "name": "Grand Bouddha de Leshan",
+    "location": [
+      103.7692,
+      29.547
+    ],
+    "built": 803,
+    "kind": "statue",
+    "civilization": "Chine des Tang",
+    "description": "Taillé dans la falaise, à la confluence de trois rivières du Sichuan, ce Bouddha assis haut de 71 mètres est la plus grande statue de pierre du monde. Commencé en 713 par un moine pour calmer les eaux, il fut achevé en 803 sous la dynastie Tang.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Grand_Bouddha_de_Leshan"
+  },
+  {
+    "id": "dome-du-rocher",
+    "name": "Dôme du Rocher",
+    "location": [
+      35.2353,
+      31.7781
+    ],
+    "built": 691,
+    "kind": "mosquee",
+    "civilization": "Califat omeyyade",
+    "description": "Édifié à Jérusalem par le calife omeyyade Abd al-Malik sur l'esplanade du Temple, ce sanctuaire octogonal à coupole dorée abrite le rocher d'où Mahomet aurait entamé son voyage nocturne. C'est l'un des premiers grands monuments de l'architecture islamique, et l'un des plus anciens édifices religieux musulmans encore intacts dans le monde.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/D%C3%B4me_du_Rocher"
+  },
+  {
+    "id": "grande-mosquee-de-damas",
+    "name": "Grande Mosquée des Omeyyades",
+    "location": [
+      36.3067,
+      33.5114
+    ],
+    "built": 715,
+    "kind": "mosquee",
+    "civilization": "Califat omeyyade",
+    "description": "Élevée à Damas par le calife al-Walid Ier sur l'emplacement d'une basilique Saint-Jean-Baptiste, elle fut le modèle de nombreuses mosquées. Sa vaste cour, ses mosaïques à fond d'or et ses trois minarets en font un joyau de l'art omeyyade. Elle abrite, dit-on, la tête de Jean-Baptiste.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Grande_mosqu%C3%A9e_des_Omeyyades"
+  },
+  {
+    "id": "horyu-ji",
+    "name": "Hōryū-ji",
+    "location": [
+      135.7333,
+      34.6167
+    ],
+    "built": 607,
+    "kind": "temple",
+    "civilization": "Japon d'Asuka",
+    "description": "Fondé près de Nara par le prince Shōtoku, ce monastère bouddhiste abrite les plus anciens bâtiments en bois du monde encore debout, dont la pagode à cinq étages. Les édifices ont été reconstruits après un incendie en 670. Ils marquent l'introduction du bouddhisme au Japon.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/H%C5%8Dry%C5%AB-ji"
+  },
+  {
+    "id": "kailasa-ellora",
+    "name": "Temple de Kailasa",
+    "location": [
+      75.1792,
+      20.0239
+    ],
+    "built": 780,
+    "kind": "temple",
+    "civilization": "Dynastie Rashtrakuta",
+    "description": "À Ellora, en Inde, le temple de Kailasa, dédié à Shiva, a été sculpté d'un seul bloc dans la falaise de basalte, du haut vers le bas, sous le roi Rashtrakuta Krishna Ier. Cette réplique du mont Kailash, ornée de milliers de sculptures, est l'un des plus grands monolithes.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Temple_de_Kail%C3%A2san%C3%A2tha"
+  },
+  {
+    "id": "chapelle-palatine",
+    "name": "Chapelle palatine d'Aix-la-Chapelle",
+    "location": [
+      6.0844,
+      50.7747
+    ],
+    "built": 800,
+    "kind": "eglise",
+    "civilization": "Empire carolingien",
+    "description": "Construite par Eudes de Metz pour Charlemagne, cette chapelle octogonale à coupole, inspirée de San Vitale de Ravenne, faisait partie du palais impérial. Elle abrite le trône de l'empereur. Pendant des siècles, les rois germaniques y furent couronnés, lui conférant une valeur symbolique.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Chapelle_palatine_d'Aix-la-Chapelle"
+  },
+  {
+    "id": "borobudur",
+    "name": "Borobudur",
+    "location": [
+      110.2038,
+      -7.6079
+    ],
+    "built": 825,
+    "kind": "temple",
+    "civilization": "Dynastie Sailendra",
+    "description": "Sur l'île de Java, en Indonésie, ce stupa-mandala bouddhiste du IXe siècle compte neuf terrasses superposées, ornées de plus de 2 600 bas-reliefs et de 504 statues de Bouddha. Les pèlerins l'escaladent en suivant un parcours spirituel. Abandonné, il fut redécouvert sous Raffles en 1814.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Borobudur"
+  },
+  {
+    "id": "grande-mosquee-de-kairouan",
+    "name": "Grande Mosquée de Kairouan",
+    "location": [
+      10.1042,
+      35.6814
+    ],
+    "built": 836,
+    "kind": "mosquee",
+    "civilization": "Aghlabides",
+    "description": "Fondée en 670 et reconstruite par les Aghlabides, la mosquée Oqba ibn Nafi de Kairouan, en Tunisie, est l'un des plus anciens lieux de culte de l'Occident musulman. Son minaret carré, sa vaste cour et sa forêt de colonnes de remploi en font un modèle d'architecture.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Grande_Mosqu%C3%A9e_de_Kairouan"
+  },
+  {
+    "id": "minaret-de-samarra",
+    "name": "Grande Mosquée de Samarra",
+    "location": [
+      43.8798,
+      34.2062
+    ],
+    "built": 852,
+    "kind": "mosquee",
+    "civilization": "Califat abbasside",
+    "description": "Bâtie par le calife abbasside al-Mutawakkil à Samarra, en Irak, elle fut la plus grande mosquée du monde pendant des siècles. De l'édifice subsiste surtout son étonnant minaret de brique, la Malwiya, haut de 52 mètres, à la rampe hélicoïdale extérieure.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Grande_mosqu%C3%A9e_de_Samarra"
+  },
+  {
+    "id": "grande-pagode-de-l-oie-sauvage",
+    "name": "Grande pagode de l'Oie sauvage",
+    "location": [
+      108.9593,
+      34.2201
+    ],
+    "built": 652,
+    "kind": "temple",
+    "civilization": "Chine des Tang",
+    "description": "À Xi'an, ancienne capitale des Tang, cette pagode de brique fut construite pour conserver les sutras rapportés d'Inde par le moine Xuanzang. Haute de 64 mètres après restauration, elle domine le temple Da Ci'en et illustre l'essor du bouddhisme chinois et les échanges le long de la route de la soie.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Grande_pagode_de_l'oie_sauvage"
+  },
+  {
+    "id": "mosquee-de-cordoue",
+    "name": "Mosquée-cathédrale de Cordoue",
+    "location": [
+      -4.7795,
+      37.879
+    ],
+    "built": 987,
+    "kind": "mosquee",
+    "civilization": "Al-Andalus",
+    "description": "Commencée en 785 par Abd al-Rahman Ier et agrandie jusqu'à l'an 987, la mosquée de Cordoue, capitale du califat omeyyade d'Espagne, est célèbre pour sa forêt de 856 colonnes et ses arcs bicolores. Transformée en cathédrale après 1236, elle mêle les styles islamique et chrétien.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Mosqu%C3%A9e-cath%C3%A9drale_de_Cordoue"
+  },
+  {
+    "id": "brihadisvara",
+    "name": "Temple de Brihadishvara",
+    "location": [
+      79.1317,
+      10.7828
+    ],
+    "built": 1010,
+    "kind": "temple",
+    "civilization": "Empire chola",
+    "description": "À Thanjavur, en Inde du Sud, le roi Rajaraja Ier fit bâtir ce temple dédié à Shiva, couronné d'une tour pyramidale de 66 mètres et d'un monolithe sommital. Il est le chef-d'œuvre de l'architecture chola et témoigne de la puissance maritime et culturelle de cet empire.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Temple_de_Brihadesvara"
+  },
+  {
+    "id": "angkor-vat",
+    "name": "Angkor Vat",
+    "location": [
+      103.8668,
+      13.4125
+    ],
+    "built": 1150,
+    "kind": "temple",
+    "civilization": "Empire khmer",
+    "description": "Bâti par le roi Suryavarman II au Cambodge, Angkor Vat est le plus grand monument religieux du monde. Dédié à Vishnou puis devenu bouddhiste, il figure le mont Meru avec ses cinq tours, ses galeries ornées de bas-reliefs et ses douves. Il est resté un lieu de culte.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Angkor_Vat"
+  },
+  {
+    "id": "saint-marc-de-venise",
+    "name": "Basilique Saint-Marc",
+    "location": [
+      12.3398,
+      45.4344
+    ],
+    "built": 1094,
+    "kind": "eglise",
+    "civilization": "République de Venise",
+    "description": "Élevée pour abriter les reliques de saint Marc volées à Alexandrie, la basilique de Venise, aux cinq coupoles et aux mosaïques d'or, mêle influences byzantines et occidentales. Chapelle du doge, elle symbolise la puissance et la richesse de la République maritime, tournée vers l'Orient.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Basilique_Saint-Marc_de_Venise"
+  },
+  {
+    "id": "tour-de-londres",
+    "name": "Tour de Londres",
+    "location": [
+      -0.0761,
+      51.5081
+    ],
+    "built": 1100,
+    "kind": "forteresse",
+    "civilization": "Royaume d'Angleterre",
+    "description": "Commencée par Guillaume le Conquérant après 1066, la Tour Blanche domine la Tamise à Londres. Forteresse, palais, arsenal, prison et lieu d'exécution, elle a vu mourir et enfermer bien des personnages célèbres. Elle abrite aujourd'hui les joyaux de la Couronne britannique.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Tour_de_Londres"
+  },
+  {
+    "id": "krak-des-chevaliers",
+    "name": "Krak des Chevaliers",
+    "location": [
+      36.2944,
+      34.7569
+    ],
+    "built": 1271,
+    "kind": "forteresse",
+    "civilization": "États latins d'Orient",
+    "description": "Dans l'ouest de la Syrie, cette forteresse des Hospitaliers fut agrandie pour devenir le château croisé le mieux conservé. Ses doubles murailles et ses salles voûtées purent loger deux mille hommes. Elle ne tomba qu'en 1271, aux mains du sultan mamelouk Baybars.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Krak_des_Chevaliers"
+  },
+  {
+    "id": "lalibela",
+    "name": "Églises rupestres de Lalibela",
+    "location": [
+      39.0411,
+      12.0317
+    ],
+    "built": 1200,
+    "kind": "eglise",
+    "civilization": "Éthiopie des Zagwé",
+    "description": "Sous le règne du roi Lalibela, onze églises monolithes furent creusées dans le tuf volcanique, en Éthiopie, pour former une « nouvelle Jérusalem ». Reliées par des tranchées et des tunnels, elles sont encore le cœur d'un pèlerinage chrétien orthodoxe. La plus célèbre est Beta Giyorgis, en forme de croix.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Lalibela"
+  },
+  {
+    "id": "cahokia",
+    "name": "Cahokia",
+    "location": [
+      -90.0644,
+      38.6539
+    ],
+    "built": 1100,
+    "until": 1350,
+    "kind": "cite",
+    "civilization": "Culture du Mississippi",
+    "description": "Près de Saint-Louis, aux États-Unis, Cahokia fut la plus grande cité précolombienne au nord du Mexique, avec peut-être vingt mille habitants vers 1100. Son Monks Mound, tertre de terre de 30 mètres de haut, dominait des dizaines de tertres. Elle fut abandonnée vers 1350.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Cahokia"
+  },
+  {
+    "id": "qutb-minar",
+    "name": "Qutb Minar",
+    "location": [
+      77.1854,
+      28.5244
+    ],
+    "built": 1220,
+    "kind": "mosquee",
+    "civilization": "Sultanat de Delhi",
+    "description": "Commencé par Qutb al-Din Aibak et achevé par Iltutmish, ce minaret de grès rouge de 73 mètres domine Delhi. Ses cinq étages cannelés, ornés d'inscriptions coraniques, célèbrent la victoire du premier sultanat musulman d'Inde. Il voisine avec la mosquée Quwwat al-Islam et le pilier de fer.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Q%C3%BBtb_Min%C3%A2r"
+  },
+  {
+    "id": "cathedrale-de-chartres",
+    "name": "Cathédrale de Chartres",
+    "location": [
+      1.4874,
+      48.4472
+    ],
+    "built": 1220,
+    "kind": "eglise",
+    "civilization": "Royaume de France",
+    "description": "Reconstruite après l'incendie de 1194, la cathédrale de Chartres est un sommet de l'art gothique. Elle conserve l'essentiel de ses vitraux du XIIIe siècle, aux bleus célèbres, et ses portails sculptés. Elle abrite la tunique supposée de la Vierge, et attire les pèlerins depuis des siècles.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Cath%C3%A9drale_Notre-Dame_de_Chartres"
+  },
+  {
+    "id": "karakorum",
+    "name": "Karakorum",
+    "location": [
+      102.8211,
+      47.1981
+    ],
+    "built": 1235,
+    "until": 1388,
+    "kind": "cite",
+    "civilization": "Empire mongol",
+    "description": "Fondée par Ögödei, fils de Gengis Khan, au cœur de la Mongolie, Karakorum fut la capitale de l'Empire mongol. Ses palais, ses temples et son arbre d'argent émerveillaient les voyageurs. Devenue secondaire après la fondation de Pékin, elle fut détruite par les troupes Ming en 1388.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Karakorum"
+  },
+  {
+    "id": "koutoubia",
+    "name": "Mosquée de la Koutoubia",
+    "location": [
+      -7.9931,
+      31.6244
+    ],
+    "built": 1158,
+    "kind": "mosquee",
+    "civilization": "Empire almohade",
+    "description": "Principale mosquée de Marrakech, la Koutoubia doit son nom aux libraires qui travaillaient à son pied. Édifiée par les Almohades, son minaret de 77 mètres, aux décors raffinés, a servi de modèle à la Giralda de Séville et à la tour Hassan de Rabat.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Mosqu%C3%A9e_Koutoubia"
+  },
+  {
+    "id": "grand-zimbabwe",
+    "name": "Grand Zimbabwe",
+    "location": [
+      30.933,
+      -20.2733
+    ],
+    "built": 1300,
+    "until": 1450,
+    "kind": "cite",
+    "civilization": "Royaume du Zimbabwe",
+    "description": "Dans le sud-est de l'Afrique, Grand Zimbabwe fut la capitale d'un puissant royaume commerçant l'or et l'ivoire avec la côte swahilie. Son enceinte de pierres sèches, haute de onze mètres, est l'une des plus grandes constructions d'Afrique subsaharienne. Le site fut abandonné vers 1450.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Grand_Zimbabwe"
+  },
+  {
+    "id": "mosquee-djinguereber",
+    "name": "Mosquée Djingareyber de Tombouctou",
+    "location": [
+      -3.01,
+      16.7714
+    ],
+    "built": 1327,
+    "kind": "mosquee",
+    "civilization": "Empire du Mali",
+    "description": "Commandée par Mansa Moussa, souverain de l'Empire du Mali, à son retour de La Mecque, cette mosquée en terre crue fut conçue par l'architecte andalou Abu Ishaq al-Sahili. Centre d'une université coranique, elle symbolise le rôle de Tombouctou, carrefour du commerce et du savoir.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Mosqu%C3%A9e_Djingareyber"
+  },
+  {
+    "id": "alhambra",
+    "name": "Alhambra",
+    "location": [
+      -3.59,
+      37.1775
+    ],
+    "built": 1354,
+    "kind": "palais",
+    "civilization": "Royaume de Grenade",
+    "description": "Sur une colline de Grenade, la forteresse et le palais des émirs nasrides forment un chef-d'œuvre de l'art hispano-mauresque. Cours à fontaines, stucs ciselés, plafonds de bois et inscriptions poétiques décorent ses palais. En 1492, elle passa aux Rois Catholiques, derniers conquérants de l'Espagne musulmane.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Alhambra"
+  },
+  {
+    "id": "notre-dame-de-paris",
+    "name": "Notre-Dame de Paris",
+    "location": [
+      2.3497,
+      48.8531
+    ],
+    "built": 1345,
+    "kind": "eglise",
+    "civilization": "Royaume de France",
+    "description": "Commencée en 1163 sous l'évêque Maurice de Sully, la cathédrale de Paris fut achevée vers 1345. Chef-d'œuvre de l'art gothique, avec ses arcs-boutants et sa rosace, elle vit le sacre de Napoléon Ier en 1804. L'incendie de 2019 a ravagé sa charpente et sa flèche.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Cath%C3%A9drale_Notre-Dame_de_Paris"
+  },
+  {
+    "id": "tour-de-pise",
+    "name": "Tour de Pise",
+    "location": [
+      10.3966,
+      43.723
+    ],
+    "built": 1372,
+    "kind": "eglise",
+    "civilization": "République de Pise",
+    "description": "Campanile de la cathédrale de Pise, sur la place des Miracles, cette tour de marbre blanc s'est mise à pencher dès la construction, à cause d'un sol meuble. Les travaux, interrompus par les guerres, furent achevés en 1372. Galilée, dit-on, y mena des expériences sur la chute des corps.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Tour_de_Pise"
+  },
+  {
+    "id": "gur-e-amir",
+    "name": "Gour-e Amir",
+    "location": [
+      66.9689,
+      39.6483
+    ],
+    "built": 1404,
+    "kind": "tombeau",
+    "civilization": "Empire timouride",
+    "description": "À Samarcande, ce mausolée à coupole nervurée bleue fut commencé pour le petit-fils de Tamerlan, puis devint la sépulture du conquérant lui-même, mort en 1405. Il abrite aussi les tombes de ses fils et de son petit-fils Ulugh Beg, et inspira plus tard l'architecture moghole.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Gour_Emir"
+  },
+  {
+    "id": "cite-interdite",
+    "name": "Cité interdite",
+    "location": [
+      116.3906,
+      39.9147
+    ],
+    "built": 1420,
+    "kind": "palais",
+    "civilization": "Chine des Ming",
+    "description": "Construite à Pékin sous l'empereur Yongle, la Cité interdite fut le palais impérial pendant près de cinq cents ans, des Ming aux Qing. Ses 980 bâtiments et son plan symétrique, entourés de douves, reflétaient l'ordre cosmique. Elle est aujourd'hui le musée du Palais.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Cit%C3%A9_interdite"
+  },
+  {
+    "id": "temple-du-ciel",
+    "name": "Temple du Ciel",
+    "location": [
+      116.4066,
+      39.8822
+    ],
+    "built": 1420,
+    "kind": "temple",
+    "civilization": "Chine des Ming",
+    "description": "À Pékin, l'empereur, fils du Ciel, y offrait des sacrifices pour de bonnes récoltes. Le hall de la Prière pour les bonnes moissons, rond, à toit de tuiles bleues, est entièrement construit en bois sans clou. Le complexe symbolise l'union du Ciel rond et de la Terre carrée.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Temple_du_Ciel"
+  },
+  {
+    "id": "machu-picchu",
+    "name": "Machu Picchu",
+    "location": [
+      -72.5456,
+      -13.1633
+    ],
+    "built": 1450,
+    "kind": "cite",
+    "civilization": "Empire inca",
+    "description": "Perchée à 2 430 mètres dans les Andes péruviennes, cette cité de pierre, construite pour l'empereur Pachacutec, servait peut-être de résidence royale. Terrasses agricoles, temples et observatoire solaire s'y insèrent dans la montagne. Abandonnée à la conquête espagnole, elle fut révélée au monde en 1911.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Machu_Picchu"
+  },
+  {
+    "id": "sacsayhuaman",
+    "name": "Sacsayhuamán",
+    "location": [
+      -71.9822,
+      -13.5078
+    ],
+    "built": 1500,
+    "kind": "forteresse",
+    "civilization": "Empire inca",
+    "description": "Dominant Cuzco, la capitale inca, cette forteresse cérémonielle est célèbre pour ses murs en zigzag formés de blocs de pierre de plusieurs tonnes, ajustés sans mortier. Ce fut le théâtre d'un siège acharné lors de la révolte de Manco Inca contre les Espagnols en 1536.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Saqsaywaman"
+  },
+  {
+    "id": "templo-mayor",
+    "name": "Templo Mayor",
+    "location": [
+      -99.1314,
+      19.435
+    ],
+    "built": 1487,
+    "until": 1521,
+    "kind": "temple",
+    "civilization": "Empire aztèque",
+    "description": "Au cœur de Tenochtitlan, aujourd'hui Mexico, ce double temple dédié à Huitzilopochtli et à Tlaloc dominait la cité aztèque. Agrandi à plusieurs reprises, il fut inauguré en 1487 par des sacrifices massifs. Les Espagnols le détruisirent en 1521 pour bâtir leur ville sur ses ruines.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Templo_Mayor"
+  },
+  {
+    "id": "chichen-itza",
+    "name": "Chichén Itzá",
+    "location": [
+      -88.5686,
+      20.6831
+    ],
+    "built": 1000,
+    "kind": "cite",
+    "civilization": "Civilisation maya",
+    "description": "Dans le Yucatán, au Mexique, cette grande cité maya et toltèque est dominée par la pyramide d'El Castillo, dont les escaliers rappellent le calendrier solaire. Elle possède aussi le plus grand terrain de jeu de balle de Mésoamérique et un puits sacré, le cénote.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Chich%C3%A9n_Itz%C3%A1"
+  },
+  {
+    "id": "kremlin-de-moscou",
+    "name": "Kremlin de Moscou",
+    "location": [
+      37.6171,
+      55.7525
+    ],
+    "built": 1495,
+    "kind": "forteresse",
+    "civilization": "Russie moscovite",
+    "description": "Au cœur de Moscou, le Kremlin forme une enceinte de briques rouges aux tours pointues, reconstruite sous Ivan III par des architectes italiens. Résidence des grands-princes et des tsars, il abrite des cathédrales et des palais. Il est aujourd'hui le siège de la présidence russe.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Kremlin_de_Moscou"
+  },
+  {
+    "id": "topkapi",
+    "name": "Palais de Topkapı",
+    "location": [
+      28.984,
+      41.013
+    ],
+    "built": 1478,
+    "kind": "palais",
+    "civilization": "Empire ottoman",
+    "description": "Construit après la prise de Constantinople par Mehmed II, ce palais d'Istanbul fut jusqu'au milieu du XIXe siècle la résidence des sultans ottomans et le centre du gouvernement. Cours successives, harem, trésor et kiosques dominent le Bosphore, la Corne d'Or et la mer de Marmara.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Palais_de_Topkap%C4%B1"
+  },
+  {
+    "id": "saint-basile",
+    "name": "Cathédrale Saint-Basile-le-Bienheureux",
+    "location": [
+      37.6231,
+      55.7525
+    ],
+    "built": 1561,
+    "kind": "eglise",
+    "civilization": "Russie moscovite",
+    "description": "Élevée sur la place Rouge à Moscou par Ivan le Terrible pour commémorer la prise de Kazan, elle est faite de neuf chapelles aux coupoles bulbeuses multicolores. Légende : l'empereur aurait fait aveugler son architecte pour qu'il ne puisse jamais rien construire d'aussi beau.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Cath%C3%A9drale_Saint-Basile-le-Bienheureux_de_Moscou"
+  },
+  {
+    "id": "mosquee-suleymaniye",
+    "name": "Mosquée Süleymaniye",
+    "location": [
+      28.9639,
+      41.0161
+    ],
+    "built": 1557,
+    "kind": "mosquee",
+    "civilization": "Empire ottoman",
+    "description": "Dominant la Corne d'Or à Istanbul, cette mosquée impériale fut édifiée par Mimar Sinan pour Soliman le Magnifique. Sa grande coupole, élevée à 53 mètres, s'inspire de Sainte-Sophie. Le complexe comprend aussi des écoles, un hôpital, des bains et le mausolée du sultan.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Mosqu%C3%A9e_de_Soliman"
+  },
+  {
+    "id": "mosquee-du-chah",
+    "name": "Mosquée de l'Imam d'Ispahan",
+    "location": [
+      51.6775,
+      32.6544
+    ],
+    "built": 1629,
+    "kind": "mosquee",
+    "civilization": "Perse séfévide",
+    "description": "Au sud de la grande place Naqsh-e Djahan d'Ispahan, cette mosquée bâtie sous Chah Abbas Ier est couverte de faïences bleues et turquoise. Son portail monumental s'oriente sur la place, tandis que la salle de prière est tournée vers La Mecque. Elle incarne l'âge d'or séfévide.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Mosqu%C3%A9e_du_Chah"
+  },
+  {
+    "id": "himeji",
+    "name": "Château de Himeji",
+    "location": [
+      134.6939,
+      34.8394
+    ],
+    "built": 1609,
+    "kind": "forteresse",
+    "civilization": "Japon d'Edo",
+    "description": "Surnommé le Héron blanc pour ses murs de plâtre immaculé, ce château du Japon féodal a été agrandi par Ikeda Terumasa au début de l'époque d'Edo. Son donjon de six étages, ses douves et ses labyrinthes de défense sont restés intacts, sans jamais avoir subi d'assaut ni d'incendie.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Himeji"
+  },
+  {
+    "id": "basilique-saint-pierre",
+    "name": "Basilique Saint-Pierre de Rome",
+    "location": [
+      12.4533,
+      41.9022
+    ],
+    "built": 1626,
+    "kind": "eglise",
+    "civilization": "États pontificaux",
+    "description": "Édifiée sur le tombeau supposé de l'apôtre Pierre, la plus grande église de la chrétienté fut conçue par Bramante, Michel-Ange, Maderno et Bernin. Sa coupole, haute de 136 mètres, domine Rome. Elle fut consacrée en 1626 et reste le centre de l'Église catholique.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Basilique_Saint-Pierre"
+  },
+  {
+    "id": "taj-mahal",
+    "name": "Taj Mahal",
+    "location": [
+      78.0419,
+      27.175
+    ],
+    "built": 1653,
+    "kind": "tombeau",
+    "civilization": "Empire moghol",
+    "description": "À Agra, l'empereur moghol Shah Jahan fit élever ce mausolée de marbre blanc pour son épouse bien-aimée Mumtaz Mahal, morte en 1631. Entouré de jardins et de bassins, symétrique et incrusté de pierres semi-précieuses, il est devenu l'emblème de l'Inde.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Taj_Mahal"
+  },
+  {
+    "id": "fort-rouge-de-delhi",
+    "name": "Fort Rouge de Delhi",
+    "location": [
+      77.2408,
+      28.6556
+    ],
+    "built": 1648,
+    "kind": "forteresse",
+    "civilization": "Empire moghol",
+    "description": "Résidence des empereurs moghols pendant près de deux siècles, ce fort de grès rouge fut construit par Shah Jahan pour sa nouvelle capitale, Shahjahanabad. Il abritait salles d'audience, pavillons et jardins. Le Premier ministre indien y prononce chaque année le discours de l'indépendance.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Fort_Rouge_(Delhi)"
+  },
+  {
+    "id": "versailles",
+    "name": "Château de Versailles",
+    "location": [
+      2.1204,
+      48.8048
+    ],
+    "built": 1682,
+    "kind": "palais",
+    "civilization": "Royaume de France",
+    "description": "Transformé par Louis XIV d'un petit pavillon de chasse en résidence royale, le château de Versailles, avec sa galerie des Glaces et ses jardins de Le Nôtre, fut le siège du pouvoir français de 1682 à la Révolution. Il symbolise la monarchie absolue et fut le théâtre du traité de 1919.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Versailles"
+  },
+  {
+    "id": "potala",
+    "name": "Palais du Potala",
+    "location": [
+      91.1172,
+      29.6579
+    ],
+    "built": 1694,
+    "kind": "palais",
+    "civilization": "Tibet",
+    "description": "Dominant Lhassa depuis la colline rouge, le Potala fut la résidence d'hiver des dalaï-lamas. Le cinquième dalaï-lama le fit reconstruire au XVIIe siècle sur d'anciennes fondations, avec treize étages et un millier de pièces. Il abrite des temples, des tombeaux et des bibliothèques bouddhistes.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Palais_du_Potala"
+  },
+  {
+    "id": "invalides",
+    "name": "Dôme des Invalides",
+    "location": [
+      2.3125,
+      48.855
+    ],
+    "built": 1706,
+    "kind": "tombeau",
+    "civilization": "Royaume de France",
+    "description": "Chapelle royale bâtie par Jules Hardouin-Mansart pour l'hôtel des Invalides de Louis XIV, son dôme doré domine Paris. Les cendres de Napoléon Ier, ramenées de Sainte-Hélène en 1840, y reposent depuis 1861 dans un sarcophage de quartzite rouge, sous la rotonde.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/D%C3%B4me_des_Invalides"
+  },
+  {
+    "id": "arc-de-triomphe",
+    "name": "Arc de triomphe de l'Étoile",
+    "location": [
+      2.295,
+      48.8738
+    ],
+    "built": 1836,
+    "kind": "statue",
+    "civilization": "Empire français",
+    "description": "Commandé par Napoléon en 1806 pour honorer la Grande Armée, il fut achevé sous Louis-Philippe. Haut de 50 mètres, il porte les noms des victoires et des généraux de la Révolution et de l'Empire. Sous sa voûte brûle la flamme du Soldat inconnu depuis 1923.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Arc_de_triomphe_de_l'%C3%89toile"
+  },
+  {
+    "id": "brooklyn-bridge",
+    "name": "Pont de Brooklyn",
+    "location": [
+      -73.9969,
+      40.7061
+    ],
+    "built": 1883,
+    "kind": "pont",
+    "civilization": "États-Unis",
+    "description": "Inauguré à New York en 1883, il fut le premier pont suspendu soutenu par des câbles d'acier et le plus long du monde. Conçu par John Roebling et achevé par son fils Washington et son épouse Emily, il relie Manhattan à Brooklyn au-dessus de l'East River.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Pont_de_Brooklyn"
+  },
+  {
+    "id": "statue-de-la-liberte",
+    "name": "Statue de la Liberté",
+    "location": [
+      -74.0444,
+      40.6892
+    ],
+    "built": 1886,
+    "kind": "statue",
+    "civilization": "États-Unis",
+    "description": "Offerte par la France aux États-Unis pour le centenaire de l'indépendance, cette statue de cuivre de Bartholdi, à la structure signée Eiffel, domine l'entrée du port de New York depuis 1886. La Liberté éclairant le monde est devenue le symbole de l'immigration et de la démocratie.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Statue_de_la_Libert%C3%A9"
+  },
+  {
+    "id": "cathedrale-de-cologne",
+    "name": "Cathédrale de Cologne",
+    "location": [
+      6.9577,
+      50.9414
+    ],
+    "built": 1880,
+    "kind": "eglise",
+    "civilization": "Empire allemand",
+    "description": "Commencée en 1248 et interrompue pendant trois siècles, la cathédrale gothique de Cologne fut achevée en 1880 selon les plans médiévaux. Ses deux flèches de 157 mètres en firent un temps la plus haute construction du monde. Elle abrite le reliquaire des Rois mages.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Cath%C3%A9drale_de_Cologne"
+  },
+  {
+    "id": "ahu-tongariki",
+    "name": "Ahu Tongariki",
+    "location": [
+      -109.2769,
+      -27.1258
+    ],
+    "built": 1400,
+    "kind": "statue",
+    "civilization": "Rapa Nui",
+    "description": "Sur l'île de Pâques, la plus grande plateforme cérémonielle, l'ahu Tongariki, porte quinze moaï alignés face à l'intérieur des terres. Sculptés dans le tuf du volcan Rano Raraku, ces géants représentaient des ancêtres divinisés. Un tsunami a renversé la plateforme en 1960 ; elle a été restaurée.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Ahu_Tongariki"
+  },
+  {
+    "id": "nan-madol",
+    "name": "Nan Madol",
+    "location": [
+      158.335,
+      6.8447
+    ],
+    "built": 1200,
+    "until": 1600,
+    "kind": "cite",
+    "civilization": "Dynastie Saudeleur",
+    "description": "Sur l'îlot de Pohnpei, en Micronésie, Nan Madol est une cité de plus de cent îlots artificiels reliés par des canaux, bâtis de colonnes de basalte. Résidence des chefs Saudeleur et centre cérémoniel, elle fut abandonnée vers 1600, après le renversement de la dynastie.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Nan_Madol"
+  }
+]

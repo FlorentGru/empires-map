@@ -18,6 +18,8 @@ import { GLIDE_HANDOFF_MS, GLIDE_MS, GlideLayer } from './glideLayer';
 import { MORPH_MS, MorphLayer } from './morphLayer';
 import { NeighborLayers } from './neighborLayers';
 import { ContemporaryLayers } from './contemporaryLayers';
+import { MonumentLayers } from './monumentLayers';
+import { originName } from '../lib/origin';
 import { dropCoveredLabels } from '../lib/contemporaries';
 import { TerritoryLabels } from './territoryLabels';
 import { TerritoryLayers } from './territoryLayers';
@@ -42,11 +44,14 @@ interface Props {
   /** Voisins de l'époque (contours et noms). */
   neighbors?: boolean;
   contemporaries?: boolean;
+  /** Grands monuments debout à la date de l'étape. */
+  monuments?: boolean;
 }
 
 interface MapLayers {
   neighbors: NeighborLayers;
   contemporaries: ContemporaryLayers;
+  monuments: MonumentLayers;
   territories: TerritoryLayers;
   labels: TerritoryLabels;
   morph: MorphLayer;
@@ -98,7 +103,7 @@ function cameraGate(map: MapLibreMap, stepStart: number, speed: number, chained:
   });
 }
 
-export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, figures: figuresOn = true, countries2026 = false, stateNames = true, neighbors: neighborsOn = true, contemporaries: contemporariesOn = true }: Props) {
+export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, figures: figuresOn = true, countries2026 = false, stateNames = true, neighbors: neighborsOn = true, contemporaries: contemporariesOn = true, monuments: monumentsOn = true }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const [layers, setLayers] = useState<MapLayers | null>(null);
@@ -123,6 +128,13 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
   neighborsRef.current = neighborsOn;
   const contemporariesRef = useRef(contemporariesOn);
   contemporariesRef.current = contemporariesOn;
+  // Villes (noms d'époque) : nomment le point de départ des armées.
+  const citiesRef = useRef<City[]>([]);
+  useEffect(() => {
+    void loadCities().then((c) => (citiesRef.current = c));
+  }, []);
+  const monumentsRef = useRef(monumentsOn);
+  monumentsRef.current = monumentsOn;
 
   // Création de la carte (une seule fois).
   useEffect(() => {
@@ -152,6 +164,7 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
         neighbors: new NeighborLayers(map),
         // Autres empires de l'époque : juste au-dessus des voisins, sous les territoires.
         contemporaries: new ContemporaryLayers(map),
+        monuments: new MonumentLayers(map),
         territories: new TerritoryLayers(map),
         morph: new MorphLayer(map),
         // Raster SDF : juste sous les couches territoire.
@@ -176,6 +189,7 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
       created.labels.setEnabled(namesRef.current);
       created.neighbors.setEnabled(neighborsRef.current);
       created.contemporaries.setEnabled(contemporariesRef.current);
+      created.monuments.setEnabled(monumentsRef.current);
       created.countries.setVisible(countriesRef.current);
       if (import.meta.env.DEV) (window as unknown as { __glide: GlideLayer }).__glide = created.glide;
       setLayers(created);
@@ -195,6 +209,7 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
       created?.labels.destroy();
       created?.neighbors.destroy();
       created?.contemporaries.destroy();
+      created?.monuments.destroy();
       map.remove();
       mapRef.current = null;
     };
@@ -467,6 +482,14 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [layers, contemporariesOn]);
 
+  // Monuments : réglage d'affichage et année de l'étape.
+  useEffect(() => {
+    layers?.monuments.setEnabled(monumentsOn);
+  }, [layers, monumentsOn]);
+  useEffect(() => {
+    if (layers && step) layers.monuments.setYear(step.year);
+  }, [layers, step]);
+
   // Calque « Pays 2026 ».
   useEffect(() => {
     layers?.countries.setVisible(countries2026);
@@ -481,7 +504,9 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
       const prev = seqPrevRef.current;
       // Pas de clear() des armées : start() réutilise les marqueurs des armées chaînées.
       const continued = prev ? continuedArmies(empire.steps, index) : [];
-      layers.armies.start(step, prev, speedRef.current, reduced, continued);
+      const cities = citiesRef.current;
+      layers.armies.start(step, prev, speedRef.current, reduced, continued, (a) => originName(a, step, empire.steps, cities));
+      layers.figures.empireId = empire.id;
       layers.figures.show(step, speedRef.current, reduced, !reduced && continued.length > 0);
     } else {
       layers.armies.clear();

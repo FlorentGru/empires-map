@@ -55,7 +55,8 @@
           "position": [
             2.2211,
             48.8445
-          ]
+          ],
+          "person": "napoleon-ier"
         },
         {
           "name": "Emmanuel-Joseph Sieyès",
@@ -118,6 +119,7 @@
       "armies": [
         {
           "side": "Armée de réserve",
+          "from": "Dijon",
           "faction": "francais",
           "path": [
             [
@@ -142,6 +144,7 @@
         },
         {
           "side": "Armée d'Autriche",
+          "from": "Lombardie",
           "faction": "autrichiens",
           "path": [
             [
@@ -330,7 +333,8 @@
           "position": [
             2.3499,
             48.853
-          ]
+          ],
+          "person": "napoleon-ier"
         },
         {
           "name": "Pie VII",
@@ -341,7 +345,8 @@
           "position": [
             2.3465,
             48.8515
-          ]
+          ],
+          "person": "pie-vii"
         }
       ]
     },
@@ -393,6 +398,7 @@
       "armies": [
         {
           "side": "Flotte franco-espagnole (France)",
+          "from": "Cadix",
           "faction": "francais",
           "path": [
             [
@@ -416,6 +422,7 @@
         },
         {
           "side": "Flotte espagnole",
+          "from": "Cadix",
           "faction": "espagnols",
           "path": [
             [
@@ -435,6 +442,7 @@
         },
         {
           "side": "Flotte de Nelson",
+          "from": "au large de Cadix",
           "faction": "britanniques",
           "path": [
             [
@@ -468,7 +476,8 @@
           "position": [
             -6.4,
             36.15
-          ]
+          ],
+          "person": "nelson"
         },
         {
           "name": "Pierre de Villeneuve",
@@ -531,6 +540,7 @@
       "armies": [
         {
           "side": "Grande Armée",
+          "from": "camp de Boulogne",
           "faction": "francais",
           "path": [
             [
@@ -564,6 +574,7 @@
         },
         {
           "side": "Armée de Russie",
+          "from": "Brody (Galicie)",
           "faction": "russes",
           "path": [
             [
@@ -592,6 +603,7 @@
         },
         {
           "side": "Armée d'Autriche",
+          "from": "Olmütz (Olomouc)",
           "faction": "autrichiens",
           "path": [
             [
@@ -621,7 +633,8 @@
           "position": [
             16.78,
             49.15
-          ]
+          ],
+          "person": "napoleon-ier"
         }
       ]
     },
@@ -667,7 +680,8 @@
           "position": [
             8.27,
             50
-          ]
+          ],
+          "person": "napoleon-ier"
         },
         {
           "name": "François II",
@@ -689,7 +703,8 @@
           "position": [
             2.34,
             48.86
-          ]
+          ],
+          "person": "talleyrand"
         }
       ]
     },
@@ -778,6 +793,7 @@
         },
         {
           "side": "Armée de Hohenlohe",
+          "from": "Erfurt",
           "faction": "prussiens",
           "path": [
             [
@@ -797,6 +813,7 @@
         },
         {
           "side": "Armée de Brunswick",
+          "from": "Magdebourg",
           "faction": "prussiens",
           "path": [
             [
@@ -836,7 +853,8 @@
           "position": [
             11.6,
             51.1
-          ]
+          ],
+          "person": "davout"
         }
       ]
     },
@@ -882,7 +900,8 @@
           "position": [
             21.88,
             55.08
-          ]
+          ],
+          "person": "napoleon-ier"
         },
         {
           "name": "Alexandre Ier",
@@ -893,7 +912,8 @@
           "position": [
             21.9,
             55.09
-          ]
+          ],
+          "person": "alexandre-ier"
         },
         {
           "name": "Louise de Prusse",
@@ -956,6 +976,7 @@
       "armies": [
         {
           "side": "Armée de Dupont",
+          "from": "Madrid",
           "faction": "francais",
           "path": [
             [
@@ -979,6 +1000,7 @@
         },
         {
           "side": "Armée d'Andalousie",
+          "from": "Séville",
           "faction": "espagnols",
           "path": [
             [
@@ -1075,6 +1097,7 @@
       "armies": [
         {
           "side": "Grande Armée",
+          "from": "Paris",
           "faction": "francais",
           "path": [
             [
@@ -1112,6 +1135,7 @@
         },
         {
           "side": "Armée d'Autriche",
+          "from": "Prague",
           "faction": "autrichiens",
           "path": [
             [
@@ -1153,7 +1177,8 @@
           "position": [
             16.3,
             48.55
-          ]
+          ],
+          "person": "archiduc-charles"
         }
       ]
     },
@@ -1199,7 +1224,8 @@
           "position": [
             2.35,
             48.85
-          ]
+          ],
+          "person": "napoleon-ier"
         },
         {
           "name": "Klemens von Metternich",
@@ -1210,7 +1236,8 @@
           "position": [
             16.37,
             48.21
-          ]
+          ],
+          "person": "metternich"
         }
       ]
     },
@@ -1262,6 +1289,7 @@
       "armies": [
         {
           "side": "Grande Armée",
+          "from": "Dresde",
           "faction": "francais",
           "path": [
             [
@@ -1295,6 +1323,7 @@
         },
         {
           "side": "Armée de Koutouzov",
+          "from": "Vilna",
           "faction": "russes",
           "path": [
             [
@@ -1323,6 +1352,7 @@
         },
         {
           "side": "Contingent polonais",
+          "from": "Varsovie",
           "faction": "polonais",
           "path": [
             [
@@ -1356,7 +1386,8 @@
           "position": [
             34.5,
             55.3
-          ]
+          ],
+          "person": "koutouzov"
         },
         {
           "name": "Alexandre Ier",
@@ -1367,7 +1398,8 @@
           "position": [
             30.3,
             59.94
-          ]
+          ],
+          "person": "alexandre-ier"
         }
       ]
     },
@@ -1495,6 +1527,7 @@
         },
         {
           "side": "Armée de Bohême",
+          "from": "Autriche",
           "faction": "autrichiens",
           "path": [
             [
@@ -1528,6 +1561,7 @@
         },
         {
           "side": "Armée de Silésie",
+          "from": "Breslau",
           "faction": "prussiens",
           "path": [
             [
@@ -1595,7 +1629,8 @@
           "position": [
             12.37,
             51.33
-          ]
+          ],
+          "person": "poniatowski"
         },
         {
           "name": "Gebhard Blücher",
@@ -1606,7 +1641,8 @@
           "position": [
             12.4,
             51.45
-          ]
+          ],
+          "person": "blucher"
         }
       ]
     },
@@ -1652,7 +1688,8 @@
           "position": [
             2.7,
             48.4
-          ]
+          ],
+          "person": "napoleon-ier"
         },
         {
           "name": "Alexandre Ier",
@@ -1663,7 +1700,8 @@
           "position": [
             2.35,
             48.86
-          ]
+          ],
+          "person": "alexandre-ier"
         },
         {
           "name": "Talleyrand",
@@ -1674,7 +1712,8 @@
           "position": [
             2.32,
             48.86
-          ]
+          ],
+          "person": "talleyrand"
         },
         {
           "name": "Louis XVIII",
@@ -1737,6 +1776,7 @@
       "armies": [
         {
           "side": "Armée du Nord",
+          "from": "Paris",
           "faction": "francais",
           "path": [
             [
@@ -1760,6 +1800,7 @@
         },
         {
           "side": "Armée anglo-alliée",
+          "from": "Bruxelles",
           "faction": "britanniques",
           "path": [
             [
@@ -1780,6 +1821,7 @@
         },
         {
           "side": "Armée prussienne",
+          "from": "Liège",
           "faction": "prussiens",
           "path": [
             [
@@ -1814,7 +1856,8 @@
           "position": [
             4.4,
             50.7
-          ]
+          ],
+          "person": "wellington"
         },
         {
           "name": "Napoléon Ier",
@@ -1825,7 +1868,8 @@
           "position": [
             4.4,
             50.65
-          ]
+          ],
+          "person": "napoleon-ier"
         }
       ]
     },
@@ -1871,7 +1915,8 @@
           "position": [
             16.37,
             48.21
-          ]
+          ],
+          "person": "metternich"
         },
         {
           "name": "Talleyrand",
@@ -1882,7 +1927,8 @@
           "position": [
             16.35,
             48.2
-          ]
+          ],
+          "person": "talleyrand"
         },
         {
           "name": "Alexandre Ier",
@@ -1893,7 +1939,8 @@
           "position": [
             16.4,
             48.22
-          ]
+          ],
+          "person": "alexandre-ier"
         }
       ]
     }

@@ -1,0 +1,289 @@
+[
+  {
+    "id": "napoleon-ier",
+    "name": "Napoléon Ier",
+    "archetype": "empereur-napoleon",
+    "faction": "francais",
+    "born": 1769,
+    "died": 1821,
+    "title": "Empereur des Français",
+    "bio": "Né à Ajaccio en 1769, dans une famille de petite noblesse corse, Napoléon Bonaparte entre à l'école militaire et devient officier d'artillerie. La Révolution accélère sa carrière : général à 24 ans après Toulon, il conquiert l'Italie du Nord en 1796-1797, puis tente l'expédition d'Égypte. Le coup d'État du 18 brumaire (1799) fait de lui le Premier consul. Il réorganise la France : préfets, Banque de France, lycées, Code civil de 1804. Sacré empereur le 2 décembre 1804, il bat l'Autriche et la Russie à Austerlitz, la Prusse à Iéna, et domine bientôt l'Europe. Le blocus continental contre l'Angleterre l'entraîne en Espagne, puis en Russie, où la campagne de 1812 détruit la Grande Armée. Vaincu à Leipzig en 1813, il abdique en 1814 et part pour l'île d'Elbe. Il revient pour les Cent-Jours, mais Waterloo, le 18 juin 1815, y met fin. Exilé à Sainte-Hélène par les Britanniques, il y meurt le 5 mai 1821.",
+    "keyFacts": [
+      "1799 : coup d'État du 18 brumaire",
+      "2 décembre 1804 : sacre à Notre-Dame",
+      "2 décembre 1805 : victoire d'Austerlitz",
+      "1812 : désastre de la campagne de Russie",
+      "18 juin 1815 : défaite de Waterloo"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Napoléon_Ier"
+      }
+    ]
+  },
+  {
+    "id": "josephine",
+    "name": "Joséphine de Beauharnais",
+    "archetype": "roi-moderne",
+    "faction": "francais",
+    "born": 1763,
+    "died": 1814,
+    "title": "Première impératrice des Français",
+    "bio": "Marie-Josèphe Tascher de La Pagerie naît en 1763 en Martinique. Mariée en France à Alexandre de Beauharnais, elle donne naissance à Eugène et Hortense, puis devient veuve : son mari est guillotiné en 1794 et elle-même échappe de peu à l'échafaud. Élégante et introduite dans les cercles du Directoire, elle rencontre le général Bonaparte, qui la rebaptise Joséphine et l'épouse en 1796. Pendant que Napoléon est à l'armée, elle tient le salon qui l'aide à asseoir son pouvoir. Elle est sacrée impératrice à Notre-Dame en 1804. Passionnée de botanique, elle fait de son château de Malmaison un jardin exceptionnel, où fleurissent de nombreuses roses rares. Mais elle ne peut donner d'héritier à l'Empereur. Il divorce en 1810 pour épouser Marie-Louise d'Autriche, tout en lui conservant titre, revenus et affection. Joséphine meurt à Malmaison en mai 1814, peu après l'entrée des Alliés à Paris. Ses descendants, par Eugène et Hortense, régneront sur plusieurs trônes d'Europe.",
+    "keyFacts": [
+      "1796 : épouse Napoléon Bonaparte",
+      "1804 : couronnée impératrice par l'Empereur lui-même",
+      "1810 : divorce, faute d'héritier",
+      "29 mai 1814 : meurt à la Malmaison"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Joséphine_de_Beauharnais"
+      }
+    ]
+  },
+  {
+    "id": "talleyrand",
+    "name": "Talleyrand",
+    "archetype": "diplomate",
+    "faction": "francais",
+    "born": 1754,
+    "died": 1838,
+    "title": "Le diplomate qui servit tous les régimes",
+    "bio": "Charles-Maurice de Talleyrand-Périgord naît en 1754 dans l'aristocratie. Boiteux, il est destiné à l'Église et devient évêque d'Autun. En 1789, il se rallie à la Révolution et propose de nationaliser les biens du clergé. Ministre des Relations extérieures sous le Directoire puis sous Bonaparte, il joue un rôle clé après le 18 brumaire. Il participe à la diplomatie de l'Empire, mais, jugeant que Napoléon va trop loin, il s'en éloigne dès 1807, avant de le critiquer en secret. En 1814, il dirige le gouvernement provisoire qui prépare le retour des Bourbons. Au congrès de Vienne, il réussit un tour de force : faire accepter la France vaincue comme partenaire à part entière, en invoquant le principe de légitimité. Il sert ensuite Louis-Philippe comme ambassadeur à Londres. Cynique, habile, souvent soupçonné de trahison, il meurt en 1838 en s'étant réconcilié avec l'Église. Son nom est devenu synonyme de souplesse politique.",
+    "keyFacts": [
+      "1789 : propose la nationalisation des biens du clergé",
+      "1797 : ministre des Relations extérieures du Directoire",
+      "1814 : chef du gouvernement provisoire",
+      "1814-1815 : défend la France au congrès de Vienne"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Charles-Maurice_de_Talleyrand-Périgord"
+      }
+    ]
+  },
+  {
+    "id": "nelson",
+    "name": "Horatio Nelson",
+    "archetype": "amiral",
+    "faction": "britanniques",
+    "born": 1758,
+    "died": 1805,
+    "title": "Amiral vainqueur de Trafalgar",
+    "bio": "Fils d'un pasteur du Norfolk, Horatio Nelson entre dans la Royal Navy à douze ans. Il perd la vue d'un oeil à Calvi et un bras à Santa Cruz de Tenerife, ce qui ne diminue ni son audace ni son goût de l'initiative. À Aboukir, en 1798, il détruit presque toute la flotte française qui avait amené Bonaparte en Égypte, laissant l'armée française isolée. À Copenhague en 1801, il passe outre aux signaux de retraite en plaçant sa longue-vue contre son oeil aveugle. En 1805, Napoléon prépare l'invasion de l'Angleterre, mais il lui faut la maîtrise de la Manche. Nelson poursuit l'amiral français Villeneuve, puis l'attaque près du cap Trafalgar le 21 octobre en coupant sa ligne par deux colonnes. La flotte franco-espagnole est détruite, sans aucun navire britannique perdu. Mais un tireur d'élite touche Nelson sur le pont du Victory, et il meurt quelques heures plus tard. L'Angleterre lui fait des funérailles nationales : sa suprématie navale est établie pour un siècle.",
+    "keyFacts": [
+      "1798 : destruction de la flotte française à Aboukir",
+      "1801 : bataille de Copenhague",
+      "21 octobre 1805 : victoire de Trafalgar",
+      "21 octobre 1805 : blessé mortellement sur le Victory"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Horatio_Nelson"
+      }
+    ]
+  },
+  {
+    "id": "koutouzov",
+    "name": "Mikhaïl Koutouzov",
+    "archetype": "general",
+    "faction": "russes",
+    "born": 1745,
+    "died": 1813,
+    "title": "Feld-maréchal russe de la guerre de 1812",
+    "bio": "Disciple du grand Souvorov, Koutouzov a perdu un oeil dans les guerres contre les Turcs. Prudent, rusé, souvent écarté par la cour, il se retrouve en 1805 à la tête d'une armée russe qu'il juge mal engagée avant Austerlitz, où il ne peut empêcher la défaite. Au printemps 1812, il conclut avec les Ottomans la paix de Bucarest, ce qui libère les troupes russes pour affronter Napoléon. Lorsque la Grande Armée envahit la Russie en 1812, l'opinion réclame un chef russe : on lui confie le commandement en août. Il livre la sanglante bataille de la Moskova (Borodino), le 7 septembre, puis abandonne Moscou pour sauver son armée. Contrairement à ceux qui voulaient écraser les Français, il refuse les grandes batailles et laisse le froid, la faim et les partisans détruire l'ennemi. La Russie célèbre en lui le sauveur de la patrie. Il meurt en avril 1813 à Bunzlau, en Silésie, pendant la campagne d'Allemagne. Tolstoï, dans Guerre et Paix, a fait de lui un sage presque mystique.",
+    "keyFacts": [
+      "1805 : commande l'armée russe avant Austerlitz",
+      "Août 1812 : nommé général en chef",
+      "7 septembre 1812 : bataille de la Moskova",
+      "Avril 1813 : mort à Bunzlau"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Mikhaïl_Koutouzov"
+      }
+    ]
+  },
+  {
+    "id": "wellington",
+    "name": "Duc de Wellington",
+    "archetype": "general",
+    "faction": "britanniques",
+    "born": 1769,
+    "died": 1852,
+    "title": "Vainqueur de Napoléon à Waterloo",
+    "bio": "Né la même année que Napoléon, Arthur Wellesley fait sa carrière militaire en Inde, puis au Portugal et en Espagne. À partir de 1808, il commande l'armée britannique de la guerre d'Espagne. Méthodique, il s'appuie sur des positions défensives, évite les risques inutiles et combine ses forces avec les troupes portugaises et espagnoles. Il bat plusieurs maréchaux français à Talavera, Salamanque, Vitoria, puis envahit le sud de la France en 1814. Créé duc de Wellington, il représente la Grande-Bretagne au congrès de Vienne. Lorsque Napoléon revient de l'île d'Elbe, il prend la tête de l'armée anglo-alliée en Belgique. Le 18 juin 1815, à Waterloo, il tient ses positions toute la journée face aux assauts français jusqu'à l'arrivée des Prussiens de Blücher, ce qui provoque l'effondrement de l'armée impériale. Il devient ensuite Premier ministre de 1828 à 1830. Il meurt en 1852, respecté et conservateur.",
+    "keyFacts": [
+      "1808 : débarque au Portugal",
+      "1813 : victoire de Vitoria",
+      "18 juin 1815 : victoire de Waterloo avec Blücher",
+      "1828-1830 : Premier ministre"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Arthur_Wellesley_(1er_duc_de_Wellington)"
+      }
+    ]
+  },
+  {
+    "id": "alexandre-ier",
+    "name": "Alexandre Ier de Russie",
+    "archetype": "tsar",
+    "faction": "russes",
+    "born": 1777,
+    "died": 1825,
+    "title": "Tsar vainqueur de Napoléon",
+    "bio": "Petit-fils de Catherine la Grande, élevé dans les idées des Lumières, Alexandre monte sur le trône en 1801 après l'assassinat de son père Paul Ier. Il hésite entre réformes libérales et pouvoir autocratique. Battu à Austerlitz en 1805 et à Friedland en 1807, il rencontre Napoléon sur un radeau du Niémen, à Tilsit, et signe avec lui une alliance. Mais le blocus continental ruine la Russie et il s'en détache. En 1812, lorsque Napoléon envahit son pays, il refuse toute négociation, même après la chute de Moscou. L'année suivante, il conduit la coalition en Europe, et il entre à Paris à la tête des Alliés en mars 1814. Il pèse sur le congrès de Vienne et lance la Sainte-Alliance, pacte de souverains chrétiens contre les révolutions. Devenu mystique et plus conservateur, il meurt en décembre 1825 à Taganrog. Sa mort soudaine, à 47 ans, nourrira la légende d'un tsar devenu ermite, et sa succession sera troublée par la révolte des décembristes.",
+    "keyFacts": [
+      "1801 : accède au trône",
+      "1807 : paix et alliance de Tilsit avec Napoléon",
+      "1812 : refuse de négocier après l'incendie de Moscou",
+      "31 mars 1814 : entre dans Paris"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Alexandre_Ier_(empereur_de_Russie)"
+      }
+    ]
+  },
+  {
+    "id": "metternich",
+    "name": "Klemens von Metternich",
+    "archetype": "diplomate",
+    "faction": "autrichiens",
+    "born": 1773,
+    "died": 1859,
+    "title": "Chancelier d'Autriche, architecte du congrès de Vienne",
+    "bio": "Aristocrate rhénan formé à Strasbourg, Klemens von Metternich fuit la Révolution et entre au service de l'Autriche. Ambassadeur à Paris en 1806, il observe Napoléon de près. Après la défaite de Wagram en 1809, il devient ministre des Affaires étrangères et organise le mariage de l'archiduchesse Marie-Louise avec l'Empereur des Français, pour gagner du temps. En 1813, il fait entrer l'Autriche dans la coalition qui écrase Napoléon à Leipzig. Au congrès de Vienne (1814-1815), il bâtit un équilibre européen fondé sur la monarchie, le respect des frontières et le refus des révolutions. Pendant trente ans, il domine la diplomatie du continent, le « concert européen », avec une police efficace et une censure sévère. Cet ordre est secoué par les révolutions de 1848, qui le chassent du pouvoir : il s'enfuit à Londres. Il revient plus tard en Autriche et meurt à Vienne en 1859. Il reste le symbole du conservatisme européen du XIXe siècle.",
+    "keyFacts": [
+      "1809 : devient ministre des Affaires étrangères d'Autriche",
+      "1810 : organise le mariage de Napoléon et Marie-Louise",
+      "1814-1815 : dirige le congrès de Vienne",
+      "1848 : chassé du pouvoir par la révolution"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Klemens_Wenzel_von_Metternich"
+      }
+    ]
+  },
+  {
+    "id": "davout",
+    "name": "Louis-Nicolas Davout",
+    "archetype": "general",
+    "faction": "francais",
+    "born": 1770,
+    "died": 1823,
+    "title": "Le « maréchal de fer », vainqueur d'Auerstaedt",
+    "bio": "Noble de Bourgogne rallié à la Révolution, Davout sert en Égypte auprès de Desaix et de Bonaparte. Fait maréchal en 1804, il commande le IIIe corps de la Grande Armée. À Austerlitz, il arrive à marche forcée et tient l'aile droite. Mais son chef-d'oeuvre est Auerstaedt, le 14 octobre 1806 : avec 27 000 hommes, il bat une armée prussienne de 60 000 soldats, le jour même où Napoléon gagne à Iéna. L'Empereur le fait duc d'Auerstaedt, puis prince d'Eckmühl après sa victoire de 1809. Rigoureux, juste avec ses soldats mais impitoyable avec les pillards, il gouverne l'Allemagne du Nord. En 1812, il combat à Smolensk et à la Moskova. En 1813-1814, il tient Hambourg pendant un siège terrible, et ne la rend qu'après l'abdication de l'Empereur. Aux Cent-Jours, il est ministre de la Guerre. Il commande après Waterloo l'armée de la Loire, couvre sa retraite, puis meurt en 1823. Beaucoup l'estiment le meilleur des maréchaux de l'Empire.",
+    "keyFacts": [
+      "1804 : fait maréchal d'Empire",
+      "14 octobre 1806 : victoire d'Auerstaedt",
+      "1809 : victoire d'Eckmühl",
+      "1813-1814 : défense de Hambourg"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Louis-Nicolas_Davout"
+      }
+    ]
+  },
+  {
+    "id": "blucher",
+    "name": "Gebhard Leberecht von Blücher",
+    "archetype": "general",
+    "faction": "prussiens",
+    "born": 1742,
+    "died": 1819,
+    "title": "« Maréchal En-avant », décisif à Waterloo",
+    "bio": "Né dans le Mecklembourg, Blücher passe d'abord quelques années dans l'armée suédoise avant de rejoindre la Prusse. Cavalier hardi, il s'illustre dans les guerres contre la France révolutionnaire. Après la débâcle de 1806, il est capturé près de Lübeck. Libéré, il reste l'un des chefs du parti de la revanche contre Napoléon. En 1813, à plus de soixante-dix ans, il prend le commandement de l'armée de Silésie. Ses soldats le surnomment « Maréchal En-avant » pour son goût de l'offensive. Il bat les Français à la Katzbach, franchit le Rhin à Kaub dans la nuit du Nouvel An 1814, puis contribue au succès de Leipzig. Il entre à Paris en 1814. En juin 1815, battu à Ligny, il se reprend aussitôt et, malgré ses blessures, conduit ses troupes jusqu'au champ de bataille de Waterloo. Son arrivée en fin de journée sur le flanc français décide du sort de la bataille. Il meurt en 1819 dans son domaine de Silésie, considéré comme un héros national allemand.",
+    "keyFacts": [
+      "1813 : chef de l'armée de Silésie",
+      "16 octobre 1813 : participe à la bataille de Leipzig",
+      "16 juin 1815 : battu à Ligny",
+      "18 juin 1815 : arrive à Waterloo et décide la victoire"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Gebhard_Leberecht_von_Blücher"
+      }
+    ]
+  },
+  {
+    "id": "archiduc-charles",
+    "name": "Archiduc Charles",
+    "archetype": "general",
+    "faction": "autrichiens",
+    "born": 1771,
+    "died": 1847,
+    "title": "Meilleur général autrichien face à Napoléon",
+    "bio": "Troisième fils de l'empereur Léopold II, frère de François II, Charles de Habsbourg-Teschen se révèle très tôt un stratège. Il bat les généraux de la République à Amberg et Würzburg en 1796 et sauve l'Allemagne du Sud. Il écrit aussi des ouvrages militaires qui feront autorité. Réformateur, il modernise l'armée autrichienne, soutient la création de la landwehr et prône la guerre nationale. En 1805, il tient l'Italie du Nord et défait Masséna à Caldiero, mais Austerlitz anéantit la campagne. En 1809, il lance la guerre contre Napoléon. Il remporte la dure bataille d'Aspern-Essling, la première défaite personnelle de l'Empereur, les 21 et 22 mai. Mais il est vaincu à Wagram, les 5 et 6 juillet, et se retire du commandement. Il ne reviendra jamais aux armées. Il consacre alors ses dernières années à l'écriture et à sa famille, et meurt à Vienne en 1847. Une statue équestre est élevée en son honneur sur la Heldenplatz.",
+    "keyFacts": [
+      "1796 : victoires sur les généraux français en Allemagne",
+      "21-22 mai 1809 : victoire d'Aspern-Essling",
+      "5-6 juillet 1809 : défaite de Wagram",
+      "1847 : mort à Vienne"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Charles-Louis_d%27Autriche-Teschen"
+      }
+    ]
+  },
+  {
+    "id": "poniatowski",
+    "name": "Józef Poniatowski",
+    "archetype": "general",
+    "faction": "polonais",
+    "born": 1763,
+    "died": 1813,
+    "title": "Prince polonais, maréchal de France",
+    "bio": "Neveu du dernier roi de Pologne, Stanislas Auguste, le prince Józef Poniatowski sert d'abord dans l'armée autrichienne puis celle de la Pologne réformée. En 1792, il commande les troupes polonaises qui combattent l'invasion russe. Il participe à l'insurrection de Kosciuszko en 1794, puis se retire. Quand Napoléon crée le duché de Varsovie en 1807, il en devient ministre de la Guerre et chef de l'armée. Sa petite armée bat les Autrichiens à Raszyn en 1809 et ajoute à la Pologne de nouveaux territoires. En 1812, il commande le Ve corps, composé de Polonais, dans la campagne de Russie : il est à Smolensk et à la Moskova. En 1813, il reste fidèle à Napoléon, lorsque presque tous les autres alliés l'abandonnent. À Leipzig, l'Empereur le nomme maréchal de France, le 16 octobre. Trois jours plus tard, blessé, il est chargé de couvrir la retraite. Le pont sur l'Elster saute prématurément, et il se noie en tentant de traverser la rivière à cheval. Il est resté un héros national polonais.",
+    "keyFacts": [
+      "1807 : ministre de la Guerre du duché de Varsovie",
+      "1809 : victoire de Raszyn sur les Autrichiens",
+      "1812 : commande le corps polonais en Russie",
+      "19 octobre 1813 : noyé dans l'Elster après Leipzig"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Józef_Poniatowski"
+      }
+    ]
+  },
+  {
+    "id": "pie-vii",
+    "name": "Pie VII",
+    "archetype": "pape",
+    "faction": "romains",
+    "born": 1742,
+    "died": 1823,
+    "title": "Pape du Concordat et du sacre",
+    "bio": "Moine bénédictin devenu évêque d'Imola, Barnaba Chiaramonti est élu pape en 1800, après plusieurs mois de conclave à Venise. Rome, alors occupée, est dans un état désastreux. Il négocie avec Bonaparte le Concordat de 1801, qui rétablit la paix religieuse en France : le catholicisme y est reconnu comme la religion de la majorité des Français. En 1804, il accepte le voyage jusqu'à Paris pour sacrer Napoléon, mais ce dernier se couronne lui-même sous ses yeux, à Notre-Dame, le 2 décembre. Les relations se dégradent quand l'Empereur occupe les États pontificaux. Pie VII excommunie les spoliateurs en 1809 ; il est arrêté, emmené en Italie du Nord puis à Savone, et enfin à Fontainebleau, où on lui arrache, en 1813, un nouveau concordat qu'il renie. Rétabli à Rome en 1814, il restaure la Compagnie de Jésus et obtient au congrès de Vienne le retour de ses États. Il accueille même la famille Bonaparte à Rome. Il meurt en 1823, après une chute.",
+    "keyFacts": [
+      "1800 : élu pape à Venise",
+      "1801 : Concordat avec Bonaparte",
+      "2 décembre 1804 : assiste au sacre de Napoléon",
+      "1809-1814 : prisonnier de l'Empereur"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Pie_VII"
+      }
+    ]
+  }
+]

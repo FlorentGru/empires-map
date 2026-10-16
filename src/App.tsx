@@ -3,6 +3,7 @@ import { EMPIRES, getEmpire } from './data/loadEmpire';
 import { WorldMap } from './map/WorldMap';
 import { AboutModal } from './panels/AboutModal';
 import { FeedbackDialog } from './feedback/FeedbackDialog';
+import { OPEN_PERSON_EVENT, type OpenPersonDetail } from './data/loadPeople';
 import { EmpirePicker } from './panels/EmpirePicker';
 import { Legend } from './panels/Legend';
 import { ViewControls } from './panels/ViewControls';
@@ -38,6 +39,7 @@ export function App() {
   const [chatContext, setChatContext] = useState<ChatContext | null>(null);
   const closeGallery = useCallback(() => {
     clearFiguresParam();
+    setPersonRef(null);
     setGalleryOpen(false);
   }, []);
   /** Depuis la galerie : va à l'étape d'un empire (URL puis remontage du lecteur, qui relit l'URL). */
@@ -47,6 +49,17 @@ export function App() {
     setEmpireId(id);
     setNavKey((k) => k + 1);
     setGalleryOpen(false);
+  }, []);
+
+  // « Sa fiche » sur une carte de personnage : galerie ouverte sur sa biographie.
+  const [personRef, setPersonRef] = useState<OpenPersonDetail | null>(null);
+  useEffect(() => {
+    const onOpen = (e: Event) => {
+      setPersonRef((e as CustomEvent<OpenPersonDetail>).detail);
+      setGalleryOpen(true);
+    };
+    window.addEventListener(OPEN_PERSON_EVENT, onOpen);
+    return () => window.removeEventListener(OPEN_PERSON_EVENT, onOpen);
   }, []);
 
   // Clic « Voir cet empire » d'un empire contemporain sur la carte (calque contemporaryLayers).
@@ -74,7 +87,7 @@ export function App() {
       <ChatPanel context={chatContext} goToStep={goToStep} />
       {galleryOpen && (
         <Suspense fallback={null}>
-          <Gallery onClose={closeGallery} onNavigate={goToStep} />
+          <Gallery onClose={closeGallery} onNavigate={goToStep} initialPerson={personRef} />
         </Suspense>
       )}
     </>
@@ -103,6 +116,7 @@ function Atlas({ empire, onSelectEmpire, onOpenGallery, onContext }: { empire: E
   const [stateNames, setStateNames] = useState(() => readBool('atlas.stateNames', true));
   const [neighbors, setNeighbors] = useState(() => readBool('atlas.neighbors', true));
   const [contemporaries, setContemporaries] = useState(() => readBool('atlas.contemporaries', true));
+  const [monuments, setMonuments] = useState(() => readBool('atlas.monuments', true));
   const openPanel = useCallback(() => setPanelOpen(true), []);
   const story = useStory(player, step, openPanel, empire);
   const storyEnabled = story.controls.enabled;
@@ -126,6 +140,7 @@ function Atlas({ empire, onSelectEmpire, onOpenGallery, onContext }: { empire: E
   const toggleStateNames = useCallback(() => setStateNames((v) => { writeBool('atlas.stateNames', !v); return !v; }), []);
   const toggleNeighbors = useCallback(() => setNeighbors((v) => { writeBool('atlas.neighbors', !v); return !v; }), []);
   const toggleContemporaries = useCallback(() => setContemporaries((v) => { writeBool('atlas.contemporaries', !v); return !v; }), []);
+  const toggleMonuments = useCallback(() => setMonuments((v) => { writeBool('atlas.monuments', !v); return !v; }), []);
 
   useEffect(() => {
     writeUrlState(empire.id, step?.id);
@@ -138,12 +153,12 @@ function Atlas({ empire, onSelectEmpire, onOpenGallery, onContext }: { empire: E
   return (
     <div className="app">
       <h1 className="visually-hidden">Atlas des Empires — {empire.name}</h1>
-      <WorldMap empire={empire} index={player.index} panelOpen={panelOpen} tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} stateNames={stateNames} neighbors={neighbors} contemporaries={contemporaries} speed={player.speed} />
+      <WorldMap empire={empire} index={player.index} panelOpen={panelOpen} tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} stateNames={stateNames} neighbors={neighbors} contemporaries={contemporaries} monuments={monuments} speed={player.speed} />
 
       <div className="top-bar">
         <EmpirePicker empires={EMPIRES} current={empire} onSelect={onSelectEmpire} />
         <div className="top-bar__right">
-          <ViewControls tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} stateNames={stateNames} neighbors={neighbors} contemporaries={contemporaries} onToggleTilt={toggleTilt} onToggleRelief={toggleRelief} onToggleFigures={toggleFigures} onToggleCountries2026={toggleCountries2026} onToggleStateNames={toggleStateNames} onToggleNeighbors={toggleNeighbors} onToggleContemporaries={toggleContemporaries} />
+          <ViewControls tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} stateNames={stateNames} neighbors={neighbors} contemporaries={contemporaries} monuments={monuments} onToggleTilt={toggleTilt} onToggleRelief={toggleRelief} onToggleFigures={toggleFigures} onToggleCountries2026={toggleCountries2026} onToggleStateNames={toggleStateNames} onToggleNeighbors={toggleNeighbors} onToggleContemporaries={toggleContemporaries} onToggleMonuments={toggleMonuments} />
           <button type="button" className="btn btn--ghost" onClick={onOpenGallery} aria-haspopup="dialog">
             Galerie
           </button>
@@ -163,7 +178,7 @@ function Atlas({ empire, onSelectEmpire, onOpenGallery, onContext }: { empire: E
         onToggle={togglePanel}
         story={panelStory}
       />
-      <Legend empire={empire} step={step} countries2026={countries2026} neighbors={neighbors} contemporaries={contemporaries} />
+      <Legend empire={empire} step={step} countries2026={countries2026} neighbors={neighbors} contemporaries={contemporaries} monuments={monuments} />
       <Timeline empire={empire} player={player} compare2026={countries2026} story={story.controls} />
       <AboutModal open={aboutOpen} onClose={() => setAboutOpen(false)} />
       <FeedbackDialog open={feedbackOpen} onClose={() => setFeedbackOpen(false)} empire={empire.id} step={step?.id} />

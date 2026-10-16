@@ -1,0 +1,306 @@
+[
+  {
+    "id": "gengis-khan",
+    "name": "Gengis Khan",
+    "archetype": "khan",
+    "faction": "mongols",
+    "born": 1162,
+    "died": 1227,
+    "title": "Fondateur de l'Empire mongol",
+    "bio": "Né vers 1162 sous le nom de Temüjin, il perd son père, empoisonné, alors qu'il a neuf ans. Sa famille est abandonnée par son clan et survit dans la misère. Peu à peu, grâce à son courage, à des alliances et à une loyauté qui attire les hommes, il bat les Tatars, les Kereyit puis les Naïman. En 1206, la grande assemblée, le kurultai, le proclame Gengis Khan, « souverain universel ». Il réorganise l'armée en unités de dix, cent, mille et dix mille hommes, nomme ses officiers selon leur valeur et fait rédiger un code, le yasa. Il attaque ensuite les Xi Xia, puis les Jin de Chine du Nord, dont il prend la capitale Zhongdu en 1215. Il anéantit en 1219-1221 l'empire du Khwarezm, après le massacre de ses marchands à Otrar. Il meurt en août 1227, lors de la campagne contre les Xi Xia. Son tombeau reste introuvable. Son empire, partagé entre ses fils et petits-fils, deviendra le plus vaste empire terrestre de l'histoire, au prix de massacres considérables.",
+    "keyFacts": [
+      "Vers 1162 : naissance de Temüjin",
+      "1206 : proclamé Gengis Khan au kurultai",
+      "1215 : prise de Zhongdu (Pékin)",
+      "1219-1221 : destruction de l'empire khwarezmien",
+      "Août 1227 : mort pendant la campagne contre les Xi Xia"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Gengis_Khan"
+      }
+    ]
+  },
+  {
+    "id": "borte",
+    "name": "Börte",
+    "archetype": "khatoun",
+    "faction": "mongols",
+    "title": "Première épouse de Gengis Khan",
+    "bio": "Börte appartient au peuple des Qongirat. Elle est promise à Temüjin dès l'enfance, et ils se marient vers 1178. Peu après, des guerriers Merkit attaquent le camp, et l'enlèvent comme butin. Temüjin, alors faible, demande l'aide de ses alliés pour la récupérer. Elle revient enceinte de Djötchi, son premier fils, dont la paternité sera discutée toute sa vie et entraînera plus tard des tensions entre ses fils. Börte reste la première épouse de Gengis Khan, même si celui-ci épouse d'autres femmes, selon l'usage de la steppe. Elle lui donne quatre fils, Djötchi, Djaghataï, Ögödei et Tolui, qui régneront sur la plupart de l'empire. Elle gère le camp et ses troupeaux, conseille son mari et dirige sa maison pendant les absences du khan. Les sources mongoles, notamment l'Histoire secrète des Mongols, lui accordent une place de choix. La date de sa mort est mal connue : elle disparaît sans doute peu après l'élection de son fils Ögödei, après avoir vu naître la puissance mongole.",
+    "keyFacts": [
+      "Vers 1178 : mariage avec Temüjin",
+      "Vers 1180 : enlevée par les Merkit puis délivrée",
+      "1206 : devient la principale épouse du Grand Khan",
+      "Vers 1229-1230 : disparaît, peu après l'élection d'Ögödei"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Börte"
+      }
+    ]
+  },
+  {
+    "id": "subotai",
+    "name": "Subötaï",
+    "archetype": "general-mongol",
+    "faction": "mongols",
+    "born": 1175,
+    "died": 1248,
+    "title": "Le plus grand stratège mongol",
+    "bio": "Fils d'un forgeron de la tribu des Uriankhai, Subötaï rejoint très jeune Temüjin et devient l'un de ses commandants les plus sûrs. Il pense à l'échelle du continent. Il participe à la guerre contre les Jin, puis à la campagne du Khwarezm. En 1220, Gengis Khan l'envoie avec Djebe poursuivre le shah Muhammad II. Les deux généraux traversent l'Iran, le Caucase, battent les Géorgiens, puis les Russes et les Coumans à la Kalka en 1223. Après la mort du khan, il sert Ögödei et détruit le royaume Jin à Kaifeng en 1234. En 1237-1241, il est le véritable stratège de l'invasion de l'Europe conduite par Batu : Riazan, Kiev, puis la Pologne et la Hongrie. À Mohi, en avril 1241, il manoeuvre brillamment pour détruire l'armée hongroise. Il rentre en Mongolie à la mort d'Ögödei et meurt vers 1248, âgé de plus de soixante-dix ans. Il aurait mené plus de soixante-cinq batailles sans défaite décisive. Sa mémoire reste celle d'un maître de la guerre de mouvement.",
+    "keyFacts": [
+      "1220-1223 : grand raid autour de la mer Caspienne avec Djebe",
+      "1223 : victoire de la Kalka sur les Russes",
+      "1234 : prise de Kaifeng, fin des Jin",
+      "1241 : victoire de Mohi contre les Hongrois"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Subötaï"
+      }
+    ]
+  },
+  {
+    "id": "djebe",
+    "name": "Djebe",
+    "archetype": "general-mongol",
+    "faction": "mongols",
+    "died": 1223,
+    "title": "La « Flèche », général de Gengis Khan",
+    "bio": "Djebe se nomme d'abord Jirqo'adai. Il combat dans le camp des Taïtchiout et blesse Temüjin à la nuque d'une flèche d'un tir précis. Au lieu de le punir, Gengis Khan, admiratif, l'accueille parmi ses hommes et lui donne le nom de Djebe, « la flèche ». Il devient un de ses meilleurs généraux. En 1218, il est envoyé détruire Kuchlug, le chef naïman qui s'est emparé du Qara Khitaï, et il y rétablit la liberté religieuse, ce qui lui assure le ralliement des habitants. Lors de la guerre contre le Khwarezm, il poursuit le shah Muhammad II avec Subötaï, à travers l'Iran puis le Caucase. Les deux généraux affrontent les Géorgiens, battent une coalition de Russes et de Coumans à la bataille de la Kalka en 1223. Djebe meurt sur le chemin du retour, vers 1223, quelque part en Asie centrale. Il reste le symbole du général mongol qui sait être à la fois fougueux et inventif.",
+    "keyFacts": [
+      "Vers 1201 : blesse Temüjin d'une flèche, puis rejoint ses rangs",
+      "1218 : défait Kuchlug au Qara Khitaï",
+      "1220-1223 : raid autour de la Caspienne avec Subötaï",
+      "1223 : victoire de la Kalka, mort sur le chemin du retour"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Djebe"
+      }
+    ]
+  },
+  {
+    "id": "ogodei",
+    "name": "Ögödei",
+    "archetype": "khan",
+    "faction": "mongols",
+    "born": 1186,
+    "died": 1241,
+    "title": "Deuxième Grand Khan",
+    "bio": "Troisième fils de Gengis Khan et de Börte, Ögödei est choisi par son père pour lui succéder. Il est élu Grand Khan en 1229, après deux ans de régence de son frère Tolui. Généreux, sociable, parfois trop porté sur la boisson, il poursuit l'expansion de l'empire. Ses armées détruisent l'empire Jin en 1234, avec l'aide des Song, soumettent la Corée, les Géorgiens et l'Iran occidental, et lancent en 1236 l'invasion de l'Europe sous la direction de Batu. Il fonde en 1235 la capitale Karakorum, au coeur de la Mongolie, avec un palais, des entrepôts et des quartiers pour artisans étrangers. Il met en place un service postal rapide, le yam, et fait établir un système d'impôts dirigé par le sage Yelü Chucai. Il meurt en décembre 1241, à la suite d'un banquet ; la rumeur évoque un empoisonnement. Sa mort provoque le retrait des armées mongoles d'Europe, car les princes doivent revenir élire son successeur.",
+    "keyFacts": [
+      "1229 : élu Grand Khan",
+      "1234 : chute des Jin",
+      "1235 : fondation de Karakorum",
+      "Décembre 1241 : mort ; les armées d'Europe reviennent en Mongolie"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Ögödei"
+      }
+    ]
+  },
+  {
+    "id": "toregene",
+    "name": "Töregene",
+    "archetype": "khatoun",
+    "faction": "mongols",
+    "died": 1246,
+    "title": "Régente de l'Empire mongol",
+    "bio": "Épouse d'Ögödei, Töregene est une femme de caractère. À la mort de son mari en 1241, elle prend la régence en attendant l'élection d'un nouveau Grand Khan. Elle y reste cinq ans, ce qui fait d'elle l'une des femmes les plus puissantes de l'histoire des steppes. Dès son arrivée, elle écarte les conseillers de son mari, comme Yelü Chucai, et appelle d'autres administrateurs, notamment la Persane Fatima, qu'elle écoute beaucoup. Elle fait voter des mesures fiscales, distribue des charges à ses partisans et prépare l'accession de son fils aîné Güyük. Le puissant Batu, chef de la Horde d'or, se tient à l'écart de ce clan et refuse de venir à l'assemblée. Il faut attendre 1246 pour que le kurultai proclame Güyük. La régence de Töregene a fait entrer l'empire dans une période de rivalités entre branches de la famille. Elle meurt peu après l'accession de son fils, dans des conditions mal connues.",
+    "keyFacts": [
+      "1241 : régente après la mort d'Ögödei",
+      "1242 : écarte les conseillers de son mari, dont Yelü Chucai",
+      "1246 : fait élire son fils Güyük",
+      "1246 : meurt peu après son avènement"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Töregene"
+      }
+    ]
+  },
+  {
+    "id": "mongke",
+    "name": "Möngke",
+    "archetype": "khan",
+    "faction": "mongols",
+    "born": 1209,
+    "died": 1259,
+    "title": "Quatrième Grand Khan",
+    "bio": "Fils de Tolui et de Sorghaghtani Beki, Möngke se distingue sous Ögödei lors de la campagne d'Europe, puis revient en Mongolie. Il devient Grand Khan en 1251 grâce à l'appui de Batu et de sa propre famille, au prix de purges contre les descendants d'Ögödei. Austère, sérieux, il remet de l'ordre dans les finances de l'empire : recensements, impôts mieux répartis, contrôle des fonctionnaires. Il tolère toutes les religions et organise à Karakorum un débat entre bouddhistes, chrétiens nestoriens et musulmans, auquel assiste Guillaume de Rubrouck. Il lance deux grandes entreprises : son frère Houlagou doit soumettre l'Iran et l'Irak, et son frère Kubilai la Chine du Sud. Möngke prend lui-même la tête de l'attaque contre les Song du Sud dans la région du Sichuan. Il meurt en août 1259, durant le siège de Diaoyu, de maladie ou de dysenterie. Sa mort ouvre la guerre entre Kubilai et Ariq Böke, et brise l'unité de l'empire.",
+    "keyFacts": [
+      "1251 : élu Grand Khan",
+      "1253 : envoie Houlagou en Iran et Kubilai au Yunnan",
+      "1254 : accueille Guillaume de Rubrouck à Karakorum",
+      "1259 : meurt devant Diaoyu"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Möngke"
+      }
+    ]
+  },
+  {
+    "id": "sorghaghtani-beki",
+    "name": "Sorghaghtani Beki",
+    "archetype": "khatoun",
+    "faction": "mongols",
+    "born": 1190,
+    "died": 1252,
+    "title": "Mère de quatre souverains",
+    "bio": "Chrétienne nestorienne de la famille des Kereyit, Sorghaghtani Beki épouse Tolui, le plus jeune fils de Gengis Khan. Veuve en 1232, elle refuse d'épouser le fils du khan, comme l'usage le permettait. Elle consacre sa vie à ses quatre fils, Möngke, Kubilai, Houlagou et Ariq Böke, à qui elle fait donner une éducation soignée. Chargée du fief de son mari, au nord de la Chine, elle y gouverne avec modération : elle limite les exactions des collecteurs d'impôts et protège les paysans, ce que le conseiller Yelü Chucai approuve. Elle protège aussi les religions, finançant des écoles musulmanes, bouddhistes et confucéennes, tout en restant chrétienne. À la mort d'Ögödei, elle soutient Batu et prépare l'accession de Möngke en 1251. Elle meurt en 1252, un an plus tard. Elle a vu ses fils régner sur la Mongolie, la Chine et l'Iran, ce qui fait d'elle l'une des mères les plus influentes de l'histoire.",
+    "keyFacts": [
+      "Vers 1190 : naissance dans la famille des Kereyit",
+      "1232 : veuve de Tolui, refuse de se remarier",
+      "1251 : voit son fils Möngke devenir Grand Khan",
+      "1252 : mort"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Sorgaqtani"
+      }
+    ]
+  },
+  {
+    "id": "batu",
+    "name": "Batu",
+    "archetype": "khan",
+    "faction": "mongols",
+    "born": 1205,
+    "died": 1255,
+    "title": "Fondateur de la Horde d'or",
+    "bio": "Petit-fils de Gengis Khan, Batu est le fils de Djötchi, dont il hérite le territoire occidental, vers la Volga. En 1236, Ögödei le charge de conquérir l'Ouest, avec Subötaï pour conseiller. En quatre ans, l'armée mongole détruit la Bulgarie de la Volga, prend Riazan (décembre 1237), Vladimir, puis Kiev en décembre 1240. En 1241, elle attaque la Pologne et la Hongrie. Les Polonais sont vaincus à Legnica, et les Hongrois à Mohi, en avril. Batu est sur le point d'avancer plus loin quand la nouvelle de la mort d'Ögödei arrive. Il se retire en 1242 et s'installe sur la basse Volga, où il fonde Saraï. Son ulus devient la Horde d'or, qui domine la Russie pendant plus de deux siècles. Il refuse de se rendre à Karakorum pour reconnaître Güyük et soutient plus tard Möngke, qui lui doit la couronne. Il meurt en 1255. Pour les Russes, son nom reste associé au « joug tatar ».",
+    "keyFacts": [
+      "1236 : commande l'armée de l'Ouest",
+      "Décembre 1240 : prise de Kiev",
+      "Avril 1241 : victoires de Legnica et de Mohi",
+      "1242 : retrait et fondation de la Horde d'or"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Batu_Khan"
+      }
+    ]
+  },
+  {
+    "id": "houlagou",
+    "name": "Houlagou",
+    "archetype": "khan",
+    "faction": "mongols",
+    "born": 1217,
+    "died": 1265,
+    "title": "Fondateur de l'Ilkhanat de Perse",
+    "bio": "Petit-fils de Gengis Khan, fils de Tolui et frère de Möngke et de Kubilai, Houlagou est envoyé en 1253 par Möngke pour soumettre l'Iran et le Moyen-Orient. Il avance avec une grande armée d'ingénieurs chinois et de machines de siège. En 1256, il détruit les forteresses des Ismaéliens nizarites, dont Alamut, siège des célèbres « Assassins ». Il marche ensuite sur Bagdad. En février 1258, après quelques jours de siège, la capitale abbasside tombe et le calife al-Musta'sim est tué. Le sac fait des dizaines ou des centaines de milliers de victimes et détruit des bibliothèques entières. Il entre en Syrie, prend Alep et Damas, Mais, informé de la mort de Möngke, il rentre en Perse avec une partie de ses troupes, et l'armée laissée en Syrie est écrasée par les mamelouks à Aïn Djalout en 1260. Il fonde alors l'Ilkhanat, avec Maragha pour capitale, et s'oppose à la Horde d'or de son cousin Berké. Il meurt en 1265. Son épouse Doquz Khatun, nestorienne, a protégé les chrétiens.",
+    "keyFacts": [
+      "1253 : mission d'Iran confiée par Möngke",
+      "1256 : chute d'Alamut",
+      "Février 1258 : prise et sac de Bagdad",
+      "1265 : mort ; ses descendants règnent sur l'Ilkhanat"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Houlagou_Khan"
+      }
+    ]
+  },
+  {
+    "id": "kubilai",
+    "name": "Kubilaï",
+    "archetype": "khan",
+    "faction": "mongols",
+    "born": 1215,
+    "died": 1294,
+    "title": "Grand Khan et empereur de la dynastie Yuan",
+    "bio": "Petit-fils de Gengis Khan, Kubilaï grandit sous l'influence de sa mère, Sorghaghtani Beki, et se montre curieux de la civilisation chinoise. Son frère Möngke l'envoie gouverner la Chine du Nord, puis conquérir le royaume de Dali (Yunnan). Il s'entoure de conseillers chinois, comme Liu Bingzhong, et fait bâtir Shangdu. À la mort de Möngke en 1259, il se fait proclamer Grand Khan en 1260 et doit combattre son frère Ariq Böke, qu'il bat en 1264. Cette guerre fait éclater l'unité mongole : les khanats de l'Ouest deviennent de fait indépendants. Il choisit de régner sur la Chine : en 1271, il adopte le nom de dynastie Yuan et fait construire la capitale Dadu, l'actuelle Pékin. Il gagne la guerre contre les Song avec la chute de Xiangyang (1273) et de Yamen (1279). Ses flottes échouent contre le Japon en 1274 et en 1281. Marco Polo prétendra l'avoir servi. Kubilaï meurt en 1294, affaibli par le deuil et l'obésité.",
+    "keyFacts": [
+      "1260 : proclamé Grand Khan",
+      "1264 : victoire sur son frère Ariq Böke",
+      "1271 : proclamation de la dynastie Yuan",
+      "1279 : fin des Song à Yamen"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Kubilai_Khan"
+      }
+    ]
+  },
+  {
+    "id": "ghazan",
+    "name": "Ghazan",
+    "archetype": "khan",
+    "faction": "mongols",
+    "born": 1271,
+    "died": 1304,
+    "title": "Ilkhan réformateur converti à l'islam",
+    "bio": "Arrière-petit-fils de Houlagou, Ghazan naît en 1271 et monte sur le trône de l'Ilkhanat de Perse en 1295 avec l'aide de l'émir Nawruz. Élevé dans un milieu bouddhiste, il se convertit à l'islam sunnite et déclare la nouvelle religion d'État, ce qui rapproche la dynastie mongole de ses sujets iraniens. Il choisit ses ministres parmi les meilleurs lettrés, notamment le médecin et historien Rachid al-Din. Il règle les impôts, mesure les terres, fait réparer les canaux, stabilise la monnaie, et limite les abus des collecteurs. Il lance aussi des constructions, comme l'observatoire de Tabriz et une ville nouvelle, Shamb-i Ghazan. Contre les mamelouks d'Égypte, il lance plusieurs offensives en Syrie. En 1299, il bat leur armée près de Homs et occupe Damas pendant quelques mois, mais ne peut pas conserver ses conquêtes. Il rêve de s'allier avec les croisés. Il meurt à 32 ans en mai 1304, à Qazvin, laissant la couronne à son frère Öljeitü.",
+    "keyFacts": [
+      "1295 : devient ilkhan et se convertit à l'islam",
+      "1295-1304 : réformes fiscales et monétaires",
+      "Décembre 1299 : victoire de Wadi al-Khazandar près de Homs",
+      "1304 : mort à 32 ans"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Ghazan"
+      }
+    ]
+  },
+  {
+    "id": "yelu-chucai",
+    "name": "Yelü Chucai",
+    "archetype": "lettre-mandarin",
+    "faction": "khitans",
+    "born": 1190,
+    "died": 1244,
+    "title": "Conseiller khitan de Gengis Khan et d'Ögödei",
+    "bio": "Descendant de la famille royale khitane des Liao, Yelü Chucai reçoit une éducation chinoise complète. Il sert les Jin, mais Gengis Khan, après la prise de Zhongdu en 1215, le remarque et le prend à son service comme astrologue et conseiller. Il le suit en Asie centrale. Sous Ögödei, il devient le plus grand ministre de l'empire. Il s'oppose à ceux qui veulent massacrer les Chinois du Nord et transformer leurs champs en pâturages, en soutenant qu'il vaut mieux tirer parti des paysans par l'impôt. Il met en place un système fiscal stable, organise des recensements en 1234-1236, crée des écoles et ouvre le premier examen de recrutement pour fonctionnaires, en 1237. Il sauve ainsi de nombreux lettrés de l'esclavage. Mais sous la régente Töregene, il perd son pouvoir et se voit remplacer par des fermiers d'impôts. Il meurt en 1244, peut-être de chagrin. Les historiens chinois voient en lui un modèle de ministre confucéen au service d'un conquérant.",
+    "keyFacts": [
+      "1215 : entre au service de Gengis Khan après la prise de Zhongdu",
+      "1229 : conseiller en chef d'Ögödei",
+      "1234-1237 : recensements et premier examen de fonctionnaires",
+      "1244 : mort, disgracié"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Yelü_Chucai"
+      }
+    ]
+  },
+  {
+    "id": "qutuz",
+    "name": "Qutuz",
+    "archetype": "sultan",
+    "faction": "mamelouks",
+    "died": 1260,
+    "title": "Sultan mamelouk vainqueur d'Aïn Djalout",
+    "bio": "Mamelouk d'origine turque, probablement issu d'une famille princière du Khwarezm, Qutuz est vendu comme esclave, passe en Égypte et se hisse parmi les émirs. En 1259, il prend le pouvoir au Caire après avoir écarté le jeune sultan, au motif que le péril mongol exige un chef adulte. À ce moment, les Mongols de Houlagou ont détruit Bagdad en 1258 et pris Damas en 1260. Houlagou envoie des émissaires pour exiger sa soumission, mais Qutuz les fait exécuter. Il rassemble l'armée avec l'aide de l'émir Baybars, et marche en Palestine. Le 3 septembre 1260, à Aïn Djalout, ses troupes battent l'avant-garde mongole commandée par Kitbuqa, qui est tué. C'est la première grande défaite de l'armée mongole en rase campagne. Qutuz reprend Damas, mais il est assassiné sur le chemin du retour en octobre 1260, vraisemblablement par Baybars, qui lui succède. Cette victoire a sauvé l'Égypte de l'invasion.",
+    "keyFacts": [
+      "1259 : prend le pouvoir au Caire",
+      "1260 : fait exécuter les émissaires de Houlagou",
+      "3 septembre 1260 : victoire d'Aïn Djalout",
+      "Octobre 1260 : assassiné, Baybars lui succède"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Qutuz"
+      }
+    ]
+  }
+]

@@ -959,6 +959,37 @@ kbd {
   filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.3));
 }
 
+/* Fanion de départ (« Départ : Samarcande ») au premier point de la marche. */
+.army-origin {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  pointer-events: none;
+  animation: army-origin-in 0.6s ease-out backwards;
+}
+.army-origin__flag {
+  width: 12px;
+  height: 18px;
+  background:
+    linear-gradient(var(--c), var(--c)) 2px 1px / 9px 7px no-repeat,
+    linear-gradient(#5c3a1c, #5c3a1c) 0 0 / 2px 18px no-repeat;
+  clip-path: polygon(0 0, 100% 0, 80% 22%, 100% 44%, 18% 44%, 18% 100%, 0 100%);
+}
+.army-origin__label {
+  margin-bottom: 8px;
+  padding: 0 5px;
+  font: italic 10.5px/1.4 var(--font-serif);
+  color: var(--ink);
+  white-space: nowrap;
+  background: rgba(244, 234, 211, 0.92);
+  border: 1px solid var(--parchment-edge);
+  border-radius: 6px;
+}
+.army-label__from { font-style: italic; }
+@keyframes army-origin-in {
+  from { opacity: 0; transform: translateY(4px); }
+}
+
 /* Marche : deux images alternées, balancement décalé d'un soldat à l'autre, poussière derrière. */
 .army-marker--walking .army-frame--0 {
   animation: army-step-a 0.5s steps(1, end) infinite;
@@ -1268,6 +1299,20 @@ kbd {
 .figure-marker__sprite--flip {
   transform: scaleX(-1);
 }
+.figure-marker__bio {
+  display: block;
+  margin: 3px auto 0;
+  padding: 0 7px;
+  font: 600 10px/1.6 var(--font-sans);
+  color: var(--focus);
+  background: #fff8;
+  border: 1px solid var(--parchment-edge);
+  border-radius: 8px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.figure-marker__bio:hover,
+.figure-marker__bio:focus-visible { background: var(--parchment-strong); }
 .figure-marker__label {
   position: absolute;
   top: 100%;
@@ -1508,7 +1553,17 @@ kbd {
 .feedback__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 .feedback__soon { margin: 0 auto 0 0; font-style: italic; color: var(--ink-soft); }
 
+/* ---------- Galerie : personnages illustres ---------- */
+.people__empires { margin: 0 0 12px; }
+.people__card { gap: 2px; }
+.people__span { font-size: 0.75rem; color: var(--ink-soft); }
+.people__facts { margin: 8px 0; padding-left: 18px; }
+.people__facts li { margin: 2px 0; }
+.people__sources { font-size: 0.85rem; color: var(--ink-soft); }
+
 /* ---------- Légende ---------- */
+.legend__monument { display: inline-block; width: 18px; height: 18px; line-height: 0; }
+.legend__monument svg { width: 18px; height: 18px; }
 .legend {
   position: absolute;
   z-index: 2;

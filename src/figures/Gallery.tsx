@@ -5,15 +5,19 @@ import { prefersReducedMotion } from '../lib/motion';
 import { FACTIONS, ARCHETYPES, type Archetype, type Faction } from '../types';
 import { characterSvg, FACTION_COLORS, soldierSvg } from './registry';
 import { ARCHETYPE_INFO, FACTION_INFO, type FigureInfo } from './descriptions';
+import { norm, scaled, Svg } from './svgUtils';
+import { PeopleView, type PersonRef } from './People';
 
 interface Props {
   onClose: () => void;
   /** Ferme la galerie et affiche l'étape voulue. */
   onNavigate: (empireId: string, stepId: string) => void;
+  /** Ouvre directement la fiche d'un personnage illustre. */
+  initialPerson?: PersonRef | null;
 }
 
 type Kind = 'faction' | 'archetype';
-type Filter = 'all' | 'soldiers' | 'characters';
+type Filter = 'all' | 'soldiers' | 'characters' | 'people';
 
 interface Item {
   uid: string;
@@ -36,19 +40,6 @@ const SECTIONS: { id: string; title: string; items: Item[] }[] = [
   { id: 'asie', title: 'Asie orientale', items: ASIA.map(factionItem) },
   { id: 'persos', title: 'Personnages', items: ARCHETYPES.map(archetypeItem) },
 ];
-
-const norm = (v: string) => v.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-
-/** Redimensionne un SVG de figurine (décoratif : le nom est porté par le bouton). */
-function scaled(svg: string, scale: number): string {
-  return svg
-    .replace(/width="(\d+)" height="(\d+)"/, (_m, w: string, h: string) => `width="${Number(w) * scale}" height="${Number(h) * scale}"`)
-    .replace(/ role="img" aria-label="[^"]*"/, ' aria-hidden="true"');
-}
-
-const Svg = ({ html, className }: { html: string; className?: string }) => (
-  <span className={className} aria-hidden="true" dangerouslySetInnerHTML={{ __html: html }} />
-);
 
 /** Soldat qui marche (alternance des deux frames) tant que `active`. */
 function Figure({ item, scale, active }: { item: Item; scale: number; active: boolean }) {
@@ -176,10 +167,10 @@ function Card({ item, onOpen }: { item: Item; onOpen: () => void }) {
   );
 }
 
-export function Gallery({ onClose, onNavigate }: Props) {
+export function Gallery({ onClose, onNavigate, initialPerson = null }: Props) {
   const ref = useRef<HTMLDialogElement>(null);
   const bodyRef = useRef<HTMLDivElement>(null);
-  const [filter, setFilter] = useState<Filter>('all');
+  const [filter, setFilter] = useState<Filter>(initialPerson ? 'people' : 'all');
   const [query, setQuery] = useState('');
   const [selected, setSelected] = useState<Item | null>(null);
   const selectedRef = useRef<Item | null>(null);
@@ -266,6 +257,7 @@ export function Gallery({ onClose, onNavigate }: Props) {
                 ['all', 'Tous'],
                 ['soldiers', 'Soldats'],
                 ['characters', 'Personnages'],
+                ['people', 'Personnages illustres'],
               ] as const
             ).map(([id, label]) => (
               <button key={id} type="button" className="btn btn--ghost" aria-pressed={filter === id} onClick={() => setFilter(id)}>
@@ -288,7 +280,9 @@ export function Gallery({ onClose, onNavigate }: Props) {
       </header>
 
       <div className="gallery__body" ref={bodyRef} onKeyDown={onGridKey}>
-        {selected ? (
+        {filter === 'people' ? (
+          <PeopleView query={query} initial={initialPerson} onNavigate={onNavigate} />
+        ) : selected ? (
           <Detail item={selected} onBack={back} onNavigate={onNavigate} />
         ) : (
           <>

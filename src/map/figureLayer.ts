@@ -1,3 +1,4 @@
+import { OPEN_PERSON_EVENT, type OpenPersonDetail } from '../data/loadPeople';
 import type { Map as MapLibreMap } from 'maplibre-gl';
 import type { Figure, TimelineStep } from '../types';
 import { FACTION_COLORS, characterSvg } from './sprites';
@@ -75,6 +76,8 @@ const overlap = (a: Rect, b: Rect) => {
  * mouvement de la caméra (8 candidats autour de l'ancre, sans chevaucher armées, autres cartes ni panneaux).
  */
 export class FigureLayer {
+  /** Empire affiché (fiches des personnages illustres). */
+  empireId = '';
   private overlay: HTMLDivElement | null = null;
   private cards: Card[] = [];
   private scroll: HTMLElement | null = null;
@@ -235,7 +238,17 @@ export class FigureLayer {
       `<div class="figure-marker__card">${bubble}` +
       `<div class="figure-marker__sprite${flip}">${characterSvg(f.archetype, tint)}</div>` +
       `<div class="figure-marker__label"><strong>${escapeHtml(f.name)}</strong><span>${escapeHtml(f.role)}</span>` +
-      `<em class="figure-marker__where">→ ${escapeHtml(this.title)}</em></div></div>`;
+      `<em class="figure-marker__where">→ ${escapeHtml(this.title)}</em>` +
+      (f.person ? `<button type="button" class="figure-marker__bio" aria-label="Fiche de ${escapeHtml(f.name)}">Sa fiche</button>` : '') +
+      '</div></div>';
+    const bio = el.querySelector<HTMLButtonElement>('.figure-marker__bio');
+    const person = f.person;
+    if (bio && person) {
+      bio.addEventListener('click', (e) => {
+        e.stopPropagation();
+        window.dispatchEvent(new CustomEvent<OpenPersonDetail>(OPEN_PERSON_EVENT, { detail: { empire: this.empireId, id: person } }));
+      });
+    }
     const t = el.querySelector<HTMLElement>('.figure-bubble__typed');
     if (t && f.quote) this.typed.push({ el: t, chars: Array.from(`« ${f.quote} »`) });
     return el;

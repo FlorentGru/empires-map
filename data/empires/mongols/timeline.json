@@ -77,7 +77,8 @@
           "role": "Fondateur de l'Empire mongol",
           "faction": "mongols",
           "archetype": "khan",
-          "quote": "« Le ciel n'a qu'un soleil ; la terre n'aura qu'un maître » (formule libre)"
+          "quote": "« Le ciel n'a qu'un soleil ; la terre n'aura qu'un maître » (formule libre)",
+          "person": "gengis-khan"
         },
         {
           "name": "Börte",
@@ -88,7 +89,8 @@
           "position": [
             112.5,
             48.6
-          ]
+          ],
+          "person": "borte"
         }
       ]
     },
@@ -140,6 +142,7 @@
       "armies": [
         {
           "side": "Mongols",
+          "from": "steppe de Mongolie",
           "faction": "mongols",
           "path": [
             [
@@ -169,6 +172,7 @@
         },
         {
           "side": "Tangoutes",
+          "from": "Liangzhou",
           "faction": "tangoutes",
           "path": [
             [
@@ -295,6 +299,7 @@
         },
         {
           "side": "Jin",
+          "from": "Pékin (Zhongdu)",
           "faction": "jurchens",
           "path": [
             [
@@ -323,7 +328,8 @@
           "role": "Général de Gengis Khan",
           "faction": "mongols",
           "archetype": "general-mongol",
-          "quote": "« On ne prend pas une forteresse en la défiant : on la fait sortir » (formule libre)"
+          "quote": "« On ne prend pas une forteresse en la défiant : on la fait sortir » (formule libre)",
+          "person": "djebe"
         },
         {
           "name": "Wanyan Yongji",
@@ -412,6 +418,7 @@
         },
         {
           "side": "Jin (armée de secours)",
+          "from": "Kaifeng",
           "faction": "jurchens",
           "path": [
             [
@@ -506,6 +513,7 @@
       "armies": [
         {
           "side": "Mongols",
+          "from": "steppe de Mongolie",
           "faction": "mongols",
           "path": [
             [
@@ -539,6 +547,7 @@
         },
         {
           "side": "Kuchlug",
+          "from": "Kachgar",
           "faction": "khitans",
           "path": [
             [
@@ -581,7 +590,8 @@
           "position": [
             77.5,
             42.8
-          ]
+          ],
+          "person": "djebe"
         }
       ]
     },
@@ -634,6 +644,7 @@
       "armies": [
         {
           "side": "Djaghataï et Ögödei",
+          "from": "Almaliq",
           "faction": "mongols",
           "path": [
             [
@@ -659,6 +670,7 @@
         },
         {
           "side": "Khwarezm",
+          "from": "Ourgentch",
           "faction": "khwarezmiens",
           "path": [
             [
@@ -691,7 +703,8 @@
           "position": [
             84,
             47.5
-          ]
+          ],
+          "person": "gengis-khan"
         },
         {
           "name": "Muhammad II",
@@ -791,6 +804,7 @@
         },
         {
           "side": "Khwarezm",
+          "from": "Termez",
           "faction": "khwarezmiens",
           "path": [
             [
@@ -819,7 +833,8 @@
           "position": [
             64.42,
             39.77
-          ]
+          ],
+          "person": "gengis-khan"
         },
         {
           "name": "Muhammad II",
@@ -918,6 +933,7 @@
         },
         {
           "side": "Jalal ad-Din",
+          "from": "Ghazni",
           "faction": "khwarezmiens",
           "path": [
             [
@@ -950,7 +966,8 @@
           "position": [
             71,
             34.1
-          ]
+          ],
+          "person": "gengis-khan"
         },
         {
           "name": "Jalal ad-Din",
@@ -1015,6 +1032,7 @@
       "armies": [
         {
           "side": "Subötaï et Djebe",
+          "from": "Samarcande",
           "faction": "mongols",
           "path": [
             [
@@ -1056,6 +1074,7 @@
         },
         {
           "side": "Russes et Coumans",
+          "from": "Kiev",
           "faction": "rus",
           "path": [
             [
@@ -1088,7 +1107,8 @@
           "position": [
             42,
             46.2
-          ]
+          ],
+          "person": "subotai"
         },
         {
           "name": "Mstislav de Kiev",
@@ -1191,6 +1211,7 @@
         },
         {
           "side": "Tangoutes",
+          "from": "Liangzhou",
           "faction": "tangoutes",
           "path": [
             [
@@ -1219,7 +1240,8 @@
           "position": [
             105.9,
             35.5
-          ]
+          ],
+          "person": "gengis-khan"
         },
         {
           "name": "Li Xian",
@@ -1271,14 +1293,16 @@
           "role": "Deuxième Grand Khan, fondateur de Karakorum",
           "faction": "mongols",
           "archetype": "khan",
-          "quote": "« Mon père a conquis, je dois fonder » (formule libre)"
+          "quote": "« Mon père a conquis, je dois fonder » (formule libre)",
+          "person": "ogodei"
         },
         {
           "name": "Yelü Chucai",
           "role": "Chancelier khitan d'Ögödei",
           "faction": "khitans",
           "archetype": "lettre-mandarin",
-          "quote": "« On conquiert l'empire à cheval, mais on ne le gouverne pas à cheval » (selon l'Histoire des Yuan)"
+          "quote": "« On conquiert l'empire à cheval, mais on ne le gouverne pas à cheval » (selon l'Histoire des Yuan)",
+          "person": "yelu-chucai"
         }
       ]
     },
@@ -1332,6 +1356,7 @@
       "armies": [
         {
           "side": "Mongols (Subötaï)",
+          "from": "Xi'an",
           "faction": "mongols",
           "path": [
             [
@@ -1356,6 +1381,7 @@
         },
         {
           "side": "Jin",
+          "from": "Caizhou",
           "faction": "jurchens",
           "path": [
             [
@@ -1390,7 +1416,8 @@
           "role": "Général d'Ögödei, vainqueur de Kaifeng",
           "faction": "mongols",
           "archetype": "general-mongol",
-          "quote": "« Qu'ils tirent leurs bombes : leurs murs, eux, ne tireront pas » (formule libre)"
+          "quote": "« Qu'ils tirent leurs bombes : leurs murs, eux, ne tireront pas » (formule libre)",
+          "person": "subotai"
         }
       ]
     },
@@ -1472,6 +1499,7 @@
         },
         {
           "side": "Riazan",
+          "from": "principauté de Riazan",
           "faction": "rus",
           "path": [
             [
@@ -1495,7 +1523,8 @@
           "position": [
             44,
             54.4
-          ]
+          ],
+          "person": "batu"
         },
         {
           "name": "Iouri Igorevitch",
@@ -1588,6 +1617,7 @@
         },
         {
           "side": "Kiev",
+          "from": "Kiev",
           "faction": "rus",
           "path": [
             [
@@ -1612,7 +1642,8 @@
           "position": [
             30.8,
             50.45
-          ]
+          ],
+          "person": "batu"
         },
         {
           "name": "Dmytro",
@@ -1683,6 +1714,7 @@
       "armies": [
         {
           "side": "Mongols (Baïdar)",
+          "from": "Kiev",
           "faction": "mongols",
           "path": [
             [
@@ -1716,6 +1748,7 @@
         },
         {
           "side": "Silésie et Pologne (Henri II)",
+          "from": "Breslau",
           "faction": "chevaliers-europeens",
           "path": [
             [
@@ -1756,6 +1789,7 @@
         },
         {
           "side": "Hongrie (Béla IV)",
+          "from": "Pest",
           "faction": "chevaliers-europeens",
           "path": [
             [
@@ -1838,14 +1872,16 @@
           "position": [
             102.84,
             47.2
-          ]
+          ],
+          "person": "toregene"
         },
         {
           "name": "Batu",
           "role": "Chef de l'ulus de Djötchi, futur khan de la Horde d'or",
           "faction": "mongols",
           "archetype": "khan",
-          "quote": "« La route de retour est longue : mieux vaut revenir et choisir le nouveau maître » (formule libre)"
+          "quote": "« La route de retour est longue : mieux vaut revenir et choisir le nouveau maître » (formule libre)",
+          "person": "batu"
         }
       ]
     },
@@ -1897,6 +1933,7 @@
       "armies": [
         {
           "side": "Mongols (Baïdju)",
+          "from": "Azerbaïdjan",
           "faction": "mongols",
           "path": [
             [
@@ -1926,6 +1963,7 @@
         },
         {
           "side": "Seldjoukides de Roum",
+          "from": "Konya",
           "faction": "turcs-seldjoukides",
           "path": [
             [
@@ -2071,7 +2109,8 @@
           "role": "Quatrième Grand Khan",
           "faction": "mongols",
           "archetype": "khan",
-          "quote": "« Au ciel un seul Dieu, sur terre un seul maître : Gengis Khan » (selon sa lettre à Louis IX, 1254)"
+          "quote": "« Au ciel un seul Dieu, sur terre un seul maître : Gengis Khan » (selon sa lettre à Louis IX, 1254)",
+          "person": "mongke"
         },
         {
           "name": "Sorghaghtani Beki",
@@ -2081,7 +2120,8 @@
           "position": [
             110.8,
             48.6
-          ]
+          ],
+          "person": "sorghaghtani-beki"
         },
         {
           "name": "Guillaume de Rubrouck",
@@ -2144,6 +2184,7 @@
       "armies": [
         {
           "side": "Mongols (Houlagou)",
+          "from": "Karakorum",
           "faction": "mongols",
           "path": [
             [
@@ -2181,6 +2222,7 @@
         },
         {
           "side": "Ismaéliens nizarites",
+          "from": "Alamut",
           "faction": "parthes-perses",
           "path": [
             [
@@ -2204,7 +2246,8 @@
           "position": [
             51.4,
             35.7
-          ]
+          ],
+          "person": "houlagou"
         },
         {
           "name": "Rukn al-Din Khurshah",
@@ -2298,6 +2341,7 @@
         },
         {
           "side": "Califat abbasside",
+          "from": "Irak",
           "faction": "arabes",
           "path": [
             [
@@ -2321,7 +2365,8 @@
           "position": [
             44.9,
             33.9
-          ]
+          ],
+          "person": "houlagou"
         },
         {
           "name": "al-Musta'sim",
@@ -2393,6 +2438,7 @@
       "armies": [
         {
           "side": "Mongols (Möngke)",
+          "from": "Karakorum",
           "faction": "mongols",
           "path": [
             [
@@ -2425,6 +2471,7 @@
         },
         {
           "side": "Song (Wang Jian)",
+          "from": "Chongqing",
           "faction": "chinois",
           "path": [
             [
@@ -2449,7 +2496,8 @@
           "position": [
             106.3,
             30
-          ]
+          ],
+          "person": "mongke"
         },
         {
           "name": "Wang Jian",
@@ -2512,6 +2560,7 @@
       "armies": [
         {
           "side": "Mongols (Kitbuqa)",
+          "from": "vallée de la Bekaa",
           "faction": "mongols",
           "path": [
             [
@@ -2531,6 +2580,7 @@
         },
         {
           "side": "Mamelouks (Qutuz et Baybars)",
+          "from": "Le Caire",
           "faction": "mamelouks",
           "path": [
             [
@@ -2568,7 +2618,8 @@
           "position": [
             35.38,
             32.55
-          ]
+          ],
+          "person": "qutuz"
         },
         {
           "name": "Kitbuqa",
@@ -2656,6 +2707,7 @@
         },
         {
           "side": "Horde d'or (Berké)",
+          "from": "Saraï",
           "faction": "mongols",
           "path": [
             [
@@ -2685,7 +2737,8 @@
           "position": [
             116.18,
             42.36
-          ]
+          ],
+          "person": "kubilai"
         },
         {
           "name": "Ariq Böke",
@@ -2748,7 +2801,8 @@
           "role": "Grand Khan, fondateur de la dynastie Yuan",
           "faction": "mongols",
           "archetype": "khan",
-          "quote": "« Un empire se conquiert à cheval mais se gouverne avec des lettrés » (formule libre)"
+          "quote": "« Un empire se conquiert à cheval mais se gouverne avec des lettrés » (formule libre)",
+          "person": "kubilai"
         },
         {
           "name": "Marco Polo",
@@ -2823,6 +2877,7 @@
       "armies": [
         {
           "side": "Yuan (Aju et Liu Zheng)",
+          "from": "Kaifeng",
           "faction": "mongols",
           "path": [
             [
@@ -2843,6 +2898,7 @@
         },
         {
           "side": "Song (Lü Wenhuan)",
+          "from": "Jingzhou",
           "faction": "chinois",
           "path": [
             [
@@ -2935,6 +2991,7 @@
         {
           "id": "zhang-hongfan",
           "side": "Yuan (Zhang Hongfan)",
+          "from": "Hangzhou",
           "faction": "mongols",
           "path": [
             [
@@ -2971,6 +3028,7 @@
         },
         {
           "side": "Flotte des Song",
+          "from": "delta de la rivière des Perles",
           "faction": "chinois",
           "path": [
             [
@@ -3074,6 +3132,7 @@
       "armies": [
         {
           "side": "Flotte de Corée (Yuan)",
+          "from": "Masan (Corée)",
           "faction": "mongols",
           "path": [
             [
@@ -3097,6 +3156,7 @@
         },
         {
           "side": "Flotte du Sud (Yuan)",
+          "from": "Ningbo",
           "faction": "mongols",
           "path": [
             [
@@ -3120,6 +3180,7 @@
         },
         {
           "side": "Japon",
+          "from": "Hakata",
           "faction": "japonais",
           "path": [
             [
@@ -3155,7 +3216,8 @@
           "position": [
             116.4,
             39.9
-          ]
+          ],
+          "person": "kubilai"
         }
       ]
     },
@@ -3208,6 +3270,7 @@
       "armies": [
         {
           "side": "Dai Viet (Trần Hưng Đạo)",
+          "from": "Thang Long (Hanoï)",
           "faction": "vietnamiens",
           "path": [
             [
@@ -3232,6 +3295,7 @@
         },
         {
           "side": "Flotte yuan",
+          "from": "golfe du Tonkin",
           "faction": "mongols",
           "path": [
             [
@@ -3312,7 +3376,8 @@
           "role": "Ilkhan d'Iran, convertisseur de l'Ilkhanat à l'islam",
           "faction": "mongols",
           "archetype": "khan",
-          "quote": "« Désormais, mon peuple sera musulman » (formule libre)"
+          "quote": "« Désormais, mon peuple sera musulman » (formule libre)",
+          "person": "ghazan"
         },
         {
           "name": "Nawruz",
@@ -3494,6 +3559,7 @@
       "armies": [
         {
           "side": "Horde d'or (Janibeg)",
+          "from": "Saraï",
           "faction": "mongols",
           "path": [
             [
@@ -3521,6 +3587,7 @@
         },
         {
           "side": "Gênes (Kaffa)",
+          "from": "Constantinople",
           "faction": "croises-latins",
           "path": [
             [
@@ -3658,6 +3725,7 @@
       "armies": [
         {
           "side": "Ming (Xu Da)",
+          "from": "Nankin",
           "faction": "chinois",
           "path": [
             [
