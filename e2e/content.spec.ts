@@ -65,3 +65,24 @@ test('monuments empilés : le survol les écarte en éventail', async ({ page })
   await page.getByRole('button', { name: /Invalides/ }).click();
   await expect(page.getByRole('dialog', { name: /Invalides/ })).toBeVisible();
 });
+
+test('catastrophes et routes : la peste noire à Kaffa en 1346, fiche au clic', async ({ page }) => {
+  test.setTimeout(90_000);
+  await page.goto('/?empire=mongols&step=kaffa-1346&e2e');
+  const plague = page.getByRole('button', { name: /Épidémie : Peste noire/ });
+  await expect(plague).toBeVisible({ timeout: 30_000 });
+  await plague.click();
+  await expect(page.getByRole('dialog', { name: /Peste noire/ })).toContainText('morts');
+  // Des routes commerciales actives sont tracées.
+  await expect
+    .poll(
+      () =>
+        page.evaluate(() => {
+          const m = (window as any).__map;
+          m.jumpTo({ center: [60, 40], zoom: 2.5 });
+          return m.getLayer('trade-routes-line') ? m.queryRenderedFeatures({ layers: ['trade-routes-line', 'trade-routes-sea'] }).length : 0;
+        }),
+      { timeout: 30_000 },
+    )
+    .toBeGreaterThan(0);
+});

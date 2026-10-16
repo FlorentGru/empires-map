@@ -10,6 +10,8 @@ interface Props {
   neighbors: boolean;
   contemporaries: boolean;
   monuments: boolean;
+  routes: boolean;
+  disasters: boolean;
   onToggleTilt: () => void;
   onToggleRelief: () => void;
   onToggleFigures: () => void;
@@ -18,9 +20,11 @@ interface Props {
   onToggleNeighbors: () => void;
   onToggleContemporaries: () => void;
   onToggleMonuments: () => void;
+  onToggleRoutes: () => void;
+  onToggleDisasters: () => void;
 }
 
-export function ViewControls({ tilted, relief, figures, countries2026, stateNames, neighbors, contemporaries, monuments, onToggleTilt, onToggleRelief, onToggleFigures, onToggleCountries2026, onToggleStateNames, onToggleNeighbors, onToggleContemporaries, onToggleMonuments }: Props) {
+export function ViewControls({ tilted, relief, figures, countries2026, stateNames, neighbors, contemporaries, monuments, routes, disasters, onToggleTilt, onToggleRelief, onToggleFigures, onToggleCountries2026, onToggleStateNames, onToggleNeighbors, onToggleContemporaries, onToggleMonuments, onToggleRoutes, onToggleDisasters }: Props) {
   // Réglages repliables (mémorisés) : repliés par défaut sur petit écran.
   const [open, setOpen] = useState(() => readBool('atlas.controlsOpen', typeof window === 'undefined' || window.innerWidth >= 900));
   const id = useId();
@@ -101,6 +105,12 @@ export function ViewControls({ tilted, relief, figures, countries2026, stateName
         title="Afficher / masquer les grands monuments debout à cette date"
       >
         Monuments : {monuments ? 'oui' : 'non'}
+      </button>
+      <button type="button" className="btn btn--ghost" aria-pressed={routes} onClick={onToggleRoutes} title="Afficher / masquer les routes commerciales actives à cette date">
+        Routes : {routes ? 'oui' : 'non'}
+      </button>
+      <button type="button" className="btn btn--ghost" aria-pressed={disasters} onClick={onToggleDisasters} title="Afficher / masquer les épidémies, catastrophes et guerres meurtrières en cours">
+        Catastrophes : {disasters ? 'oui' : 'non'}
       </button>
     </div>
     </>

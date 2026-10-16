@@ -1,0 +1,56 @@
+/* Catastrophes, épidémies et guerres (src/map/disasterLayers.ts). */
+.disaster-marker {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  font: inherit;
+  background: #f7efd9;
+  border: 1.5px solid var(--c, #5c2a2a);
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.disaster-marker--epidemie { --c: #6d2a7a; }
+.disaster-marker--guerre { --c: #7a1f1a; }
+.disaster-marker--eruption,
+.disaster-marker--seisme,
+.disaster-marker--tsunami { --c: #a4471c; }
+.disaster-marker--famine,
+.disaster-marker--inondation { --c: #6b5a2a; }
+.disaster-marker__icon { font-size: 14px; line-height: 1; color: var(--c); }
+.disaster-marker__ring {
+  position: absolute;
+  inset: -2px;
+  border: 2px solid var(--c);
+  border-radius: 50%;
+  opacity: 0;
+  animation: disaster-ring 2.4s ease-out infinite;
+  pointer-events: none;
+}
+.disaster-marker__label {
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 6px;
+  font: 600 10.5px/1.5 var(--font-sans);
+  white-space: nowrap;
+  color: #fff8ec;
+  background: var(--c);
+  border-radius: 8px;
+  pointer-events: none;
+}
+.disaster-marker:hover,
+.disaster-marker:focus-visible { transform: scale(1.12); }
+@keyframes disaster-ring {
+  from { opacity: 0.8; transform: scale(1); }
+  to { opacity: 0; transform: scale(2.4); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .disaster-marker__ring { animation: none; }
+}
+.map-card__deaths { margin: 0 0 4px; font-family: var(--font-sans); font-size: 13px; font-weight: 700; color: #7a1f1a; }
+.map-card__note { margin: 0 0 8px; font-family: var(--font-sans); font-size: 12px; font-style: italic; color: var(--ink-soft); }

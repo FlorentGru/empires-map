@@ -16,6 +16,8 @@ interface Props {
   neighbors?: boolean;
   contemporaries?: boolean;
   monuments?: boolean;
+  routes?: boolean;
+  disasters?: boolean;
 }
 
 /** Figurines d'illustration de la légende, par empire (défaut : Rome). */
@@ -86,7 +88,7 @@ function useContemporaryEmpires(empireId: string, stepId: string | undefined, on
   return list;
 }
 
-export const Legend = memo(function Legend({ empire, step, countries2026 = false, neighbors = true, contemporaries = true, monuments = true }: Props) {
+export const Legend = memo(function Legend({ empire, step, countries2026 = false, neighbors = true, contemporaries = true, monuments = true, routes = true, disasters = true }: Props) {
   const others = useContemporaryEmpires(empire.id, step?.id, contemporaries);
   const [open, setOpen] = useState(() => !isMobile());
   const titleId = useId();
@@ -213,6 +215,30 @@ export const Legend = memo(function Legend({ empire, step, countries2026 = false
               <span className="legend__monument" aria-hidden="true" dangerouslySetInnerHTML={{ __html: monumentIconSvg('temple') }} />
               Monuments de l'époque (cliquables)
             </li>
+          )}
+          {routes && (
+            <>
+              <li>
+                <span className="legend__route" aria-hidden="true" />
+                Route commerciale terrestre (🐫 caravanes)
+              </li>
+              <li>
+                <span className="legend__route legend__route--sea" aria-hidden="true" />
+                Route maritime (⛵ navires)
+              </li>
+            </>
+          )}
+          {disasters && (
+            <>
+              <li>
+                <span className="legend__plague" aria-hidden="true" />
+                Épidémie : diffusion (vague récente en vif)
+              </li>
+              <li>
+                <span className="legend__war" aria-hidden="true" />
+                Guerre meurtrière (zone des combats) · ☣ 🌋 ≋ catastrophes
+              </li>
+            </>
           )}
           <li>
             <span className="legend__city" aria-hidden="true" />

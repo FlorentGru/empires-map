@@ -1,5 +1,8 @@
 import { memo, useEffect, useMemo, useRef, useState, type CSSProperties, type RefObject } from 'react';
 import { apogeeStepId, formatArea, normalizedAreas } from '../lib/apogee';
+import disastersData from '../../data/disasters.json';
+import type { Disaster } from '../types-disaster';
+import { disastersBetween, formatDeaths } from '../lib/worldEvents';
 import { eventMeta } from '../lib/eventTypes';
 import { prefersReducedMotion } from '../lib/motion';
 import { firstStepOfPeriods, periodIndexAt } from '../lib/periods';
@@ -69,6 +72,8 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
     return { line: pts.join(' '), area: `${first},${CURVE_H} ${pts.join(' ')} ${last},${CURVE_H}` };
   }, [areas, steps, yearToX]);
   const isApogee = !!active && active.id === apogeeId;
+  // Catastrophes et guerres meurtrières pendant la vie de l'empire : fines barres en haut de la piste.
+  const disasters = useMemo(() => disastersBetween(disastersData as Disaster[], empire.start, empire.end), [empire.start, empire.end]);
 
   const pct = (x: number) => `${(x * 100).toFixed(3)}%`;
 
@@ -140,6 +145,18 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
               <polyline points={curve.line} vectorEffect="non-scaling-stroke" />
             </svg>
           )}
+          {disasters.map((d) => {
+            const a = yearToX(Math.max(d.start, empire.start));
+            const b = yearToX(Math.min(d.end, empire.end));
+            return (
+              <span
+                key={d.id}
+                className={`timeline__disaster timeline__disaster--${d.kind}`}
+                style={{ left: pct(a), width: `max(3px, ${pct(b - a)})` }}
+                title={`${d.name} (${formatYear(d.start)}${d.end !== d.start ? ` – ${formatYear(d.end)}` : ''}) · ${formatDeaths(d.deaths)}`}
+              />
+            );
+          })}
           <div className="timeline__axis" />
           {ticks.map((y, i) => (
             <span

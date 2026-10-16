@@ -268,6 +268,57 @@ def chercher_personnage(nom: str) -> dict:
     return {"personnages": trouvees[:3]}
 
 
+@lru_cache(maxsize=None)
+def _donnees_monde(nom: str) -> list[dict]:
+    """data/disasters.json, data/routes.json ou data/monuments.json (liste vide si absent)."""
+    fichier = RACINE / "data" / f"{nom}.json"
+    return json.loads(fichier.read_text(encoding="utf-8")) if fichier.exists() else []
+
+
+def chercher_evenement_mondial(requete: str = "", annee: int | None = None) -> dict:
+    """Cherche les épidémies, catastrophes et guerres meurtrières de l'Atlas, et ce qui existait dans le monde à une date.
+
+    Args:
+        requete: nom ou mot-clé (ex. « peste noire », « Vésuve », « Taiping ») ; vide pour tout lister à une année.
+        annee: année (négative avant J.-C.) ; si fournie, renvoie aussi les routes commerciales actives
+            et les grands monuments debout cette année-là.
+
+    Returns:
+        Les événements trouvés (au plus 5) : nom, type, années, bilan humain estimé avec fourchette et
+        incertitude, description, sources ; plus, si `annee` est fournie, les routes et monuments de l'époque.
+    """
+    cible = _normaliser(requete).strip()
+    evenements = []
+    for d in _donnees_monde("disasters"):
+        if cible and cible not in _normaliser(f"{d['name']} {d['description']}"):
+            continue
+        if annee is not None and not (d["start"] <= annee <= d["end"]):
+            continue
+        evenements.append(
+            {
+                "nom": d["name"],
+                "type": d["kind"],
+                "debut": _annee(d["start"]),
+                "fin": _annee(d["end"]),
+                "morts_estimes": d["deaths"],
+                "fourchette": [d["deathsLow"], d["deathsHigh"]],
+                "incertitude": d["uncertainty"],
+                "description": d["description"],
+                "belligerants": d.get("belligerents", []),
+                "sources": d.get("sources", []),
+            }
+        )
+    resultat: dict = {"evenements": evenements[:5]}
+    if annee is not None:
+        resultat["routes_actives"] = [r["name"] for r in _donnees_monde("routes") if r["from"] <= annee < r["to"]]
+        resultat["monuments_debout"] = [
+            m["name"] for m in _donnees_monde("monuments") if m["built"] <= annee and annee < m.get("until", 10**6)
+        ]
+    if not evenements and annee is None:
+        return {"erreur": f"Aucun événement mondial ne correspond à « {requete} »."}
+    return resultat
+
+
 def naviguer_vers_etape(empire: str, etape_id: str, tool_context: ToolContext) -> dict:
     """Déplace la carte de l'utilisateur sur une étape précise de la frise.
 
@@ -290,4 +341,4 @@ def naviguer_vers_etape(empire: str, etape_id: str, tool_context: ToolContext) -
     return {"statut": "ok", "message": f"La carte va s'ouvrir sur « {etape['title']} » ({_annee(etape['year'])})."}
 
 
-OUTILS = [lister_empires, chercher_etapes, lire_etape, chercher_ville, chercher_personnage, naviguer_vers_etape]
+OUTILS = [lister_empires, chercher_etapes, lire_etape, chercher_ville, chercher_personnage, chercher_evenement_mondial, naviguer_vers_etape]

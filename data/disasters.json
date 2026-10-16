@@ -1,0 +1,2761 @@
+[
+ {
+  "id": "peste-athenes",
+  "name": "Peste d'Athènes",
+  "kind": "epidemie",
+  "start": -430,
+  "end": -426,
+  "location": [
+   23.73,
+   37.98
+  ],
+  "deaths": 75000,
+  "deathsLow": 30000,
+  "deathsHigh": 100000,
+  "uncertainty": "Estimations très incertaines : un seul témoin direct (Thucydide) et la maladie n'est pas identifiée avec certitude.",
+  "description": "Au début de la guerre du Péloponnèse, des milliers de réfugiés s'entassent derrière les Longs Murs d'Athènes. Une maladie venue par le Pirée se répand dans la ville surpeuplée et frappe aussi Périclès, qui meurt en 429. Thucydide, qui en réchappe, décrit fièvre, soif brûlante et pustules. Athènes perd peut-être le quart de sa population, ce qui affaiblit durablement sa puissance militaire et son moral.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Peste_d'Ath%C3%A8nes"
+   }
+  ],
+  "spread": [
+   {
+    "year": -430,
+    "points": [
+     [
+      23.65,
+      37.94
+     ],
+     [
+      23.73,
+      37.98
+     ]
+    ]
+   },
+   {
+    "year": -429,
+    "points": [
+     [
+      23.65,
+      37.94
+     ],
+     [
+      23.73,
+      37.98
+     ],
+     [
+      23.33,
+      40.18
+     ]
+    ]
+   },
+   {
+    "year": -427,
+    "points": [
+     [
+      23.73,
+      37.98
+     ],
+     [
+      23.65,
+      37.94
+     ]
+    ]
+   },
+   {
+    "year": -426,
+    "points": [
+     [
+      23.73,
+      37.98
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "peste-antonine",
+  "name": "Peste antonine",
+  "kind": "epidemie",
+  "start": 165,
+  "end": 180,
+  "location": [
+   44.52,
+   33.09
+  ],
+  "deaths": 5000000,
+  "deathsLow": 2000000,
+  "deathsHigh": 10000000,
+  "uncertainty": "Estimations très incertaines, fondées sur des sources antiques lacunaires (Galien, Dion Cassius) ; la maladie, sans doute la variole, n'est pas certaine.",
+  "description": "Rapportée d'Orient par les troupes de Lucius Verus après le siège de Séleucie du Tigre, cette épidémie traverse l'Empire romain. Galien la décrit avec fièvre, diarrhée et éruption cutanée, ce qui évoque la variole. Elle frappe les armées sur le Danube et Rome elle-même, et emporte peut-être Marc Aurèle en 180. Elle aurait fait disparaître une part notable de la population et désorganisé le recrutement des légions.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Peste_antonine"
+   }
+  ],
+  "spread": [
+   {
+    "year": 165,
+    "points": [
+     [
+      44.52,
+      33.09
+     ]
+    ]
+   },
+   {
+    "year": 166,
+    "points": [
+     [
+      44.52,
+      33.09
+     ],
+     [
+      36.16,
+      36.2
+     ],
+     [
+      27.14,
+      38.42
+     ]
+    ]
+   },
+   {
+    "year": 167,
+    "points": [
+     [
+      44.52,
+      33.09
+     ],
+     [
+      36.16,
+      36.2
+     ],
+     [
+      27.14,
+      38.42
+     ],
+     [
+      12.5,
+      41.9
+     ]
+    ]
+   },
+   {
+    "year": 168,
+    "points": [
+     [
+      36.16,
+      36.2
+     ],
+     [
+      12.5,
+      41.9
+     ],
+     [
+      13.37,
+      45.77
+     ]
+    ]
+   },
+   {
+    "year": 172,
+    "points": [
+     [
+      12.5,
+      41.9
+     ],
+     [
+      13.37,
+      45.77
+     ],
+     [
+      16.86,
+      48.11
+     ]
+    ]
+   },
+   {
+    "year": 180,
+    "points": [
+     [
+      13.37,
+      45.77
+     ],
+     [
+      16.86,
+      48.11
+     ],
+     [
+      16.37,
+      48.21
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "peste-cyprien",
+  "name": "Peste de Cyprien",
+  "kind": "epidemie",
+  "start": 249,
+  "end": 262,
+  "location": [
+   29.92,
+   31.2
+  ],
+  "deaths": 1000000,
+  "deathsLow": 500000,
+  "deathsHigh": 5000000,
+  "uncertainty": "Estimations très incertaines : on ne dispose que de témoignages chrétiens et de brèves mentions d'historiens tardifs.",
+  "description": "Venue d'Égypte, cette épidémie ravage l'Empire romain en pleine crise du IIIe siècle. Elle tient son nom de Cyprien, évêque de Carthage, qui la décrit dans son traité sur la mortalité : fièvre, vomissements, gangrène des extrémités. À Rome, il mourrait jusqu'à cinq mille personnes par jour selon un récit tardif. Les armées en sont affaiblies, et les chrétiens, qui soignent les malades, y gagnent du prestige.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Peste_de_Cyprien"
+   }
+  ],
+  "spread": [
+   {
+    "year": 249,
+    "points": [
+     [
+      29.92,
+      31.2
+     ]
+    ]
+   },
+   {
+    "year": 251,
+    "points": [
+     [
+      29.92,
+      31.2
+     ],
+     [
+      12.5,
+      41.9
+     ]
+    ]
+   },
+   {
+    "year": 252,
+    "points": [
+     [
+      29.92,
+      31.2
+     ],
+     [
+      12.5,
+      41.9
+     ],
+     [
+      10.32,
+      36.85
+     ]
+    ]
+   },
+   {
+    "year": 254,
+    "points": [
+     [
+      12.5,
+      41.9
+     ],
+     [
+      10.32,
+      36.85
+     ],
+     [
+      23.73,
+      37.98
+     ]
+    ]
+   },
+   {
+    "year": 262,
+    "points": [
+     [
+      29.92,
+      31.2
+     ],
+     [
+      23.73,
+      37.98
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "peste-justinien",
+  "name": "Peste de Justinien",
+  "kind": "epidemie",
+  "start": 541,
+  "end": 549,
+  "location": [
+   32.55,
+   31.05
+  ],
+  "deaths": 25000000,
+  "deathsLow": 15000000,
+  "deathsHigh": 100000000,
+  "uncertainty": "Fourchette immense : les sources sont littéraires (Procope, Jean d'Éphèse) et les historiens débattent encore de l'ampleur réelle.",
+  "description": "Premier grand épisode de peste bubonique en Europe, venu d'Égypte par les navires de blé. En 542, elle atteint Constantinople, où Procope la voit tuer des milliers de personnes par jour, puis gagne le Proche-Orient, l'Italie et la Gaule. Elle ravage l'Empire byzantin au moment où Justinien tente de reconquérir l'Occident. Des vagues successives frappent la Méditerranée pendant deux siècles et affaiblissent l'économie.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Peste_justinienne"
+   }
+  ],
+  "spread": [
+   {
+    "year": 541,
+    "points": [
+     [
+      32.55,
+      31.05
+     ]
+    ]
+   },
+   {
+    "year": 542,
+    "points": [
+     [
+      32.55,
+      31.05
+     ],
+     [
+      29.92,
+      31.2
+     ],
+     [
+      28.98,
+      41.01
+     ]
+    ]
+   },
+   {
+    "year": 543,
+    "points": [
+     [
+      28.98,
+      41.01
+     ],
+     [
+      36.16,
+      36.2
+     ],
+     [
+      12.5,
+      41.9
+     ]
+    ]
+   },
+   {
+    "year": 544,
+    "points": [
+     [
+      12.5,
+      41.9
+     ],
+     [
+      10.32,
+      36.85
+     ],
+     [
+      36.16,
+      36.2
+     ]
+    ]
+   },
+   {
+    "year": 547,
+    "points": [
+     [
+      10.32,
+      36.85
+     ],
+     [
+      12.5,
+      41.9
+     ],
+     [
+      4.63,
+      43.68
+     ]
+    ]
+   },
+   {
+    "year": 549,
+    "points": [
+     [
+      12.5,
+      41.9
+     ],
+     [
+      4.63,
+      43.68
+     ],
+     [
+      5.37,
+      43.3
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "peste-noire",
+  "name": "Peste noire",
+  "kind": "epidemie",
+  "start": 1346,
+  "end": 1353,
+  "location": [
+   35.38,
+   45.03
+  ],
+  "deaths": 50000000,
+  "deathsLow": 25000000,
+  "deathsHigh": 200000000,
+  "uncertainty": "L'Europe aurait perdu 30 à 50 % de sa population, mais les registres sont lacunaires et le bilan mondial varie du simple au triple.",
+  "description": "Partie d'Asie centrale, la peste bubonique atteint la mer Noire en 1346 et, selon la tradition, entre en Europe par les galères génoises de Caffa. En trois ans elle gagne tous les ports de Méditerranée, puis toute l'Europe jusqu'à la Scandinavie et la Russie. Elle tue peut-être un Européen sur trois ou sur deux. Les campagnes se vident, les salaires montent, et des pogroms frappent les juifs accusés d'avoir empoisonné les puits.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Peste_noire"
+   }
+  ],
+  "spread": [
+   {
+    "year": 1346,
+    "points": [
+     [
+      35.38,
+      45.03
+     ]
+    ]
+   },
+   {
+    "year": 1347,
+    "points": [
+     [
+      35.38,
+      45.03
+     ],
+     [
+      28.98,
+      41.01
+     ],
+     [
+      15.55,
+      38.19
+     ],
+     [
+      29.92,
+      31.2
+     ]
+    ]
+   },
+   {
+    "year": 1348,
+    "points": [
+     [
+      15.55,
+      38.19
+     ],
+     [
+      5.37,
+      43.3
+     ],
+     [
+      12.33,
+      45.44
+     ],
+     [
+      8.93,
+      44.41
+     ],
+     [
+      11.25,
+      43.77
+     ],
+     [
+      2.35,
+      48.86
+     ],
+     [
+      -0.12,
+      51.51
+     ]
+    ]
+   },
+   {
+    "year": 1349,
+    "points": [
+     [
+      2.35,
+      48.86
+     ],
+     [
+      -0.12,
+      51.51
+     ],
+     [
+      9.99,
+      53.55
+     ],
+     [
+      5.32,
+      60.39
+     ]
+    ]
+   },
+   {
+    "year": 1350,
+    "points": [
+     [
+      5.32,
+      60.39
+     ],
+     [
+      18.07,
+      59.33
+     ],
+     [
+      9.99,
+      53.55
+     ]
+    ]
+   },
+   {
+    "year": 1352,
+    "points": [
+     [
+      18.07,
+      59.33
+     ],
+     [
+      37.62,
+      55.75
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "variole-tenpyo",
+  "name": "Épidémie de variole de l'ère Tenpyō",
+  "kind": "epidemie",
+  "start": 735,
+  "end": 738,
+  "location": [
+   130.52,
+   33.51
+  ],
+  "deaths": 1000000,
+  "deathsLow": 800000,
+  "deathsHigh": 1500000,
+  "uncertainty": "Estimations incertaines, reconstituées à partir des chroniques de la cour et de rares registres fiscaux.",
+  "description": "Venue de Corée par le port de Dazaifu, au nord de Kyushu, la variole frappe un archipel qui n'y avait jamais été exposé. Elle gagne la région de Nara, alors capitale, et emporte plusieurs hauts dignitaires de la cour, dont les quatre fils de Fujiwara no Fuhito. Un quart à un tiers de la population aurait péri. L'empereur Shōmu, ébranlé, fait ensuite construire le grand Bouddha de Nara pour apaiser le pays.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/%C3%89pid%C3%A9mie_de_variole_de_735-737_au_Japon"
+   }
+  ],
+  "spread": [
+   {
+    "year": 735,
+    "points": [
+     [
+      130.52,
+      33.51
+     ]
+    ]
+   },
+   {
+    "year": 736,
+    "points": [
+     [
+      130.52,
+      33.51
+     ],
+     [
+      135.5,
+      34.68
+     ]
+    ]
+   },
+   {
+    "year": 737,
+    "points": [
+     [
+      130.52,
+      33.51
+     ],
+     [
+      135.5,
+      34.68
+     ],
+     [
+      135.8,
+      34.69
+     ]
+    ]
+   },
+   {
+    "year": 738,
+    "points": [
+     [
+      135.5,
+      34.68
+     ],
+     [
+      135.8,
+      34.69
+     ],
+     [
+      140.4,
+      36.37
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "variole-ameriques",
+  "name": "Variole des Amériques",
+  "kind": "epidemie",
+  "start": 1518,
+  "end": 1527,
+  "location": [
+   -99.13,
+   19.43
+  ],
+  "deaths": 5000000,
+  "deathsLow": 3000000,
+  "deathsHigh": 8000000,
+  "uncertainty": "Très incertain : la population précolombienne est mal connue, et il est difficile de séparer variole, guerre et travail forcé.",
+  "description": "Introduite par les Espagnols dans les Caraïbes en 1518, la variole atteint le Mexique avec l'expédition de Narváez. Elle se répand dans Tenochtitlan en 1520 et décime les défenseurs peu avant la chute de la ville en 1521. Le virus précède ensuite les conquistadors vers le sud : l'empereur inca Huayna Capac meurt vers 1527, ce qui déclenche une guerre de succession. Les peuples, sans immunité, perdent la majorité de leurs membres.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Variole"
+   }
+  ],
+  "spread": [
+   {
+    "year": 1518,
+    "points": [
+     [
+      -70.2,
+      18.5
+     ]
+    ]
+   },
+   {
+    "year": 1520,
+    "points": [
+     [
+      -70.2,
+      18.5
+     ],
+     [
+      -99.13,
+      19.43
+     ]
+    ]
+   },
+   {
+    "year": 1521,
+    "points": [
+     [
+      -99.13,
+      19.43
+     ],
+     [
+      -98.2,
+      19.04
+     ],
+     [
+      -89.62,
+      20.97
+     ]
+    ]
+   },
+   {
+    "year": 1524,
+    "points": [
+     [
+      -99.13,
+      19.43
+     ],
+     [
+      -89.62,
+      20.97
+     ],
+     [
+      -79.5,
+      8.98
+     ]
+    ]
+   },
+   {
+    "year": 1526,
+    "points": [
+     [
+      -79.5,
+      8.98
+     ],
+     [
+      -78.5,
+      -0.2
+     ]
+    ]
+   },
+   {
+    "year": 1527,
+    "points": [
+     [
+      -78.5,
+      -0.2
+     ],
+     [
+      -71.97,
+      -13.52
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "cocoliztli-1545",
+  "name": "Épidémie de cocoliztli",
+  "kind": "epidemie",
+  "start": 1545,
+  "end": 1548,
+  "location": [
+   -99.13,
+   19.43
+  ],
+  "deaths": 8000000,
+  "deathsLow": 5000000,
+  "deathsHigh": 15000000,
+  "uncertainty": "Estimations très incertaines : la maladie (peut-être une fièvre hémorragique) reste débattue et les populations de départ sont mal connues.",
+  "description": "Appelée cocoliztli (« le fléau ») en nahuatl, cette fièvre hémorragique ravage les hauts plateaux du Mexique à partir de 1545. Les victimes saignent du nez et des yeux avant de mourir en quelques jours. Elle frappe surtout les Indiens, déjà éprouvés par la variole et le travail forcé. Une seconde vague, en 1576, est encore plus meurtrière. Des analyses d'ADN récentes évoquent une salmonelle venue d'Europe.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Cocoliztli"
+   }
+  ],
+  "spread": [
+   {
+    "year": 1545,
+    "points": [
+     [
+      -99.13,
+      19.43
+     ],
+     [
+      -98.2,
+      19.04
+     ]
+    ]
+   },
+   {
+    "year": 1546,
+    "points": [
+     [
+      -99.13,
+      19.43
+     ],
+     [
+      -98.2,
+      19.04
+     ],
+     [
+      -96.73,
+      17.06
+     ],
+     [
+      -101.6,
+      19.51
+     ]
+    ]
+   },
+   {
+    "year": 1547,
+    "points": [
+     [
+      -96.73,
+      17.06
+     ],
+     [
+      -101.6,
+      19.51
+     ],
+     [
+      -92.64,
+      16.74
+     ]
+    ]
+   },
+   {
+    "year": 1548,
+    "points": [
+     [
+      -92.64,
+      16.74
+     ],
+     [
+      -89.62,
+      20.97
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "peste-londres-1665",
+  "name": "Grande peste de Londres",
+  "kind": "epidemie",
+  "start": 1663,
+  "end": 1666,
+  "location": [
+   -0.12,
+   51.516
+  ],
+  "deaths": 100000,
+  "deathsLow": 70000,
+  "deathsHigh": 100000,
+  "uncertainty": "Chiffres relativement fiables grâce aux bulletins de mortalité paroissiaux, mais ils sous-estiment les pauvres et les dissidents.",
+  "description": "Après avoir touché Amsterdam, la peste atteint Londres à l'hiver 1664-1665, d'abord dans la paroisse de St Giles. Le roi et la cour fuient, tandis que les maisons contaminées sont closes avec leurs habitants. Samuel Pepys et Daniel Defoe en ont laissé des récits célèbres. Le fléau s'éteint à l'hiver 1666, peu avant le grand incendie. Dans le village d'Eyam, les habitants choisissent de s'isoler pour protéger leurs voisins.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Grande_peste_de_Londres"
+   }
+  ],
+  "spread": [
+   {
+    "year": 1663,
+    "points": [
+     [
+      4.9,
+      52.37
+     ]
+    ]
+   },
+   {
+    "year": 1664,
+    "points": [
+     [
+      4.9,
+      52.37
+     ],
+     [
+      -0.12,
+      51.516
+     ]
+    ]
+   },
+   {
+    "year": 1665,
+    "points": [
+     [
+      -0.12,
+      51.516
+     ],
+     [
+      -0.12,
+      51.51
+     ],
+     [
+      -0.09,
+      51.5
+     ]
+    ]
+   },
+   {
+    "year": 1666,
+    "points": [
+     [
+      -0.12,
+      51.51
+     ],
+     [
+      -1.68,
+      53.28
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "peste-marseille-1720",
+  "name": "Peste de Marseille",
+  "kind": "epidemie",
+  "start": 1720,
+  "end": 1722,
+  "location": [
+   5.37,
+   43.3
+  ],
+  "deaths": 120000,
+  "deathsLow": 90000,
+  "deathsHigh": 126000,
+  "uncertainty": "Les bilans proviennent de registres officiels de l'époque ; la fourchette reflète les écarts entre Marseille et l'ensemble de la Provence.",
+  "description": "En mai 1720, le navire Le Grand-Saint-Antoine arrive du Levant avec des marins morts de peste, mais la quarantaine est levée sous la pression des marchands. L'épidémie ravage Marseille, où l'évêque Belsunce et le chevalier Roze se distinguent par leur dévouement, puis la Provence. Le « mur de la peste » est dressé dans le Comtat. Elle s'éteint en 1722 et reste la dernière grande peste en France.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Peste_de_Marseille_(1720)"
+   }
+  ],
+  "spread": [
+   {
+    "year": 1720,
+    "points": [
+     [
+      5.37,
+      43.3
+     ]
+    ]
+   },
+   {
+    "year": 1721,
+    "points": [
+     [
+      5.37,
+      43.3
+     ],
+     [
+      5.45,
+      43.53
+     ],
+     [
+      4.63,
+      43.68
+     ],
+     [
+      5.93,
+      43.12
+     ]
+    ]
+   },
+   {
+    "year": 1721,
+    "points": [
+     [
+      5.45,
+      43.53
+     ],
+     [
+      4.63,
+      43.68
+     ],
+     [
+      5.93,
+      43.12
+     ],
+     [
+      4.81,
+      43.95
+     ]
+    ]
+   },
+   {
+    "year": 1722,
+    "points": [
+     [
+      4.81,
+      43.95
+     ],
+     [
+      3.5,
+      44.52
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "cholera-1817",
+  "name": "Première pandémie de choléra",
+  "kind": "epidemie",
+  "start": 1817,
+  "end": 1824,
+  "location": [
+   89.2,
+   23.17
+  ],
+  "deaths": 500000,
+  "deathsLow": 200000,
+  "deathsHigh": 1000000,
+  "uncertainty": "Mal documenté : peu de statistiques hors des colonies britanniques ; les chiffres sont des ordres de grandeur.",
+  "description": "Le choléra, jusque-là cantonné au delta du Gange, éclate à Jessore en 1817 et suit les routes de l'armée britannique et du commerce. Il atteint Calcutta, Bombay, puis l'Asie du Sud-Est, Bangkok et Java. Il touche aussi le golfe Persique, Zanzibar et la Caspienne, mais s'arrête avant d'atteindre l'Europe. Cette première pandémie révèle le rôle des échanges maritimes et inaugure une longue série de vagues au XIXe siècle.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Pand%C3%A9mie_de_chol%C3%A9ra"
+   }
+  ],
+  "spread": [
+   {
+    "year": 1817,
+    "points": [
+     [
+      89.2,
+      23.17
+     ],
+     [
+      88.36,
+      22.57
+     ]
+    ]
+   },
+   {
+    "year": 1818,
+    "points": [
+     [
+      88.36,
+      22.57
+     ],
+     [
+      72.88,
+      19.07
+     ]
+    ]
+   },
+   {
+    "year": 1820,
+    "points": [
+     [
+      72.88,
+      19.07
+     ],
+     [
+      100.5,
+      13.75
+     ]
+    ]
+   },
+   {
+    "year": 1821,
+    "points": [
+     [
+      72.88,
+      19.07
+     ],
+     [
+      47.8,
+      30.5
+     ],
+     [
+      58.4,
+      23.6
+     ]
+    ]
+   },
+   {
+    "year": 1822,
+    "points": [
+     [
+      100.5,
+      13.75
+     ],
+     [
+      106.8,
+      -6.2
+     ]
+    ]
+   },
+   {
+    "year": 1823,
+    "points": [
+     [
+      47.8,
+      30.5
+     ],
+     [
+      48.04,
+      46.35
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "cholera-1829",
+  "name": "Deuxième pandémie de choléra",
+  "kind": "epidemie",
+  "start": 1829,
+  "end": 1851,
+  "location": [
+   55.1,
+   51.77
+  ],
+  "deaths": 2500000,
+  "deathsLow": 1500000,
+  "deathsHigh": 4000000,
+  "uncertainty": "Ordres de grandeur : bilans précis seulement pour quelques pays européens, très flous pour l'Inde et la Russie.",
+  "description": "Parti du Gange en 1826, le choléra remonte par la Perse jusqu'à Orenbourg en 1829, puis atteint Moscou et Varsovie. En 1831-1832, il frappe l'Angleterre, Paris, où il tue près de vingt mille personnes, puis traverse l'Atlantique jusqu'à New York et le Mexique. Il alimente la peur des classes pauvres et pousse à l'assainissement des villes. Le médecin John Snow démontre en 1854 le rôle de l'eau contaminée.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Deuxi%C3%A8me_pand%C3%A9mie_de_chol%C3%A9ra"
+   }
+  ],
+  "spread": [
+   {
+    "year": 1829,
+    "points": [
+     [
+      55.1,
+      51.77
+     ]
+    ]
+   },
+   {
+    "year": 1830,
+    "points": [
+     [
+      55.1,
+      51.77
+     ],
+     [
+      37.62,
+      55.75
+     ]
+    ]
+   },
+   {
+    "year": 1831,
+    "points": [
+     [
+      37.62,
+      55.75
+     ],
+     [
+      21.01,
+      52.23
+     ],
+     [
+      -1.38,
+      54.9
+     ],
+     [
+      9.99,
+      53.55
+     ]
+    ]
+   },
+   {
+    "year": 1832,
+    "points": [
+     [
+      -1.38,
+      54.9
+     ],
+     [
+      -0.12,
+      51.51
+     ],
+     [
+      2.35,
+      48.86
+     ],
+     [
+      -74,
+      40.71
+     ]
+    ]
+   },
+   {
+    "year": 1833,
+    "points": [
+     [
+      2.35,
+      48.86
+     ],
+     [
+      -74,
+      40.71
+     ],
+     [
+      -99.13,
+      19.43
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "grippe-russe",
+  "name": "Grippe russe",
+  "kind": "epidemie",
+  "start": 1889,
+  "end": 1890,
+  "location": [
+   64.4,
+   39.77
+  ],
+  "deaths": 1000000,
+  "deathsLow": 360000,
+  "deathsHigh": 1000000,
+  "uncertainty": "Bilan discuté : les registres de l'époque sont partiels et la grippe a pu être confondue avec d'autres maladies respiratoires.",
+  "description": "Apparue à Boukhara à l'automne 1889, cette grippe suit les chemins de fer et les paquebots. Elle gagne Saint-Pétersbourg en quelques semaines, puis Paris, Berlin, Vienne et Londres avant de franchir l'Atlantique. C'est l'une des premières pandémies dont on peut suivre la progression jour après jour grâce au télégraphe et à la presse. Elle aurait fait environ un million de morts, surtout chez les personnes âgées.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Pand%C3%A9mie_de_grippe_de_1889-1890"
+   }
+  ],
+  "spread": [
+   {
+    "year": 1889,
+    "points": [
+     [
+      64.4,
+      39.77
+     ]
+    ]
+   },
+   {
+    "year": 1889,
+    "points": [
+     [
+      64.4,
+      39.77
+     ],
+     [
+      30.3,
+      59.93
+     ],
+     [
+      37.62,
+      55.75
+     ]
+    ]
+   },
+   {
+    "year": 1889,
+    "points": [
+     [
+      30.3,
+      59.93
+     ],
+     [
+      2.35,
+      48.86
+     ],
+     [
+      13.4,
+      52.52
+     ],
+     [
+      16.37,
+      48.21
+     ]
+    ]
+   },
+   {
+    "year": 1890,
+    "points": [
+     [
+      -0.12,
+      51.51
+     ],
+     [
+      -74,
+      40.71
+     ],
+     [
+      2.35,
+      48.86
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eruption-santorin",
+  "name": "Éruption minoenne de Santorin",
+  "kind": "eruption",
+  "start": -1600,
+  "end": -1500,
+  "location": [
+   25.4,
+   36.42
+  ],
+  "deaths": 10000,
+  "deathsLow": 0,
+  "deathsHigh": 50000,
+  "uncertainty": "Le nombre de victimes est purement conjectural : aucun corps n'a été retrouvé à Akrotiri et la date reste débattue (de -1627 à -1500).",
+  "description": "L'une des plus puissantes éruptions volcaniques de l'histoire humaine fait s'effondrer le centre de l'île de Théra, créant la caldeira de Santorin. Les habitants d'Akrotiri semblent avoir fui avant la catastrophe, car aucun corps n'y a été trouvé. Des cendres et des tsunamis ont touché la Crète minoenne. Certains historiens y voient une cause du déclin de la civilisation minoenne, voire l'origine du mythe de l'Atlantide.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/%C3%89ruption_minoenne"
+   }
+  ]
+ },
+ {
+  "id": "seisme-crete-365",
+  "name": "Séisme et tsunami de Crète",
+  "kind": "tsunami",
+  "start": 365,
+  "end": 365,
+  "location": [
+   23.65,
+   35.5
+  ],
+  "deaths": 20000,
+  "deathsLow": 5000,
+  "deathsHigh": 50000,
+  "uncertainty": "Chiffres incertains, issus d'Ammien Marcellin qui écrit plusieurs années après les faits ; la région touchée est vaste.",
+  "description": "Le 21 juillet 365, un violent séisme au large de la Crète soulève l'île de plusieurs mètres. Une vague géante déferle sur la Méditerranée orientale. Ammien Marcellin raconte que des navires furent projetés sur les toits d'Alexandrie et que des milliers de personnes périrent noyées. L'événement fut commémoré à Alexandrie pendant des siècles comme jour de deuil. Des travaux de géologues ont daté ce soulèvement et en font l'un des plus grands séismes antiques.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/S%C3%A9isme_du_21_juillet_365_en_Cr%C3%A8te"
+   }
+  ]
+ },
+ {
+  "id": "eruption-vesuve-79",
+  "name": "Éruption du Vésuve",
+  "kind": "eruption",
+  "start": 79,
+  "end": 79,
+  "location": [
+   14.49,
+   40.75
+  ],
+  "deaths": 16000,
+  "deathsLow": 2000,
+  "deathsHigh": 20000,
+  "uncertainty": "Environ 1 500 corps ont été retrouvés ; le bilan total, incluant les fuyards, est une extrapolation.",
+  "description": "En août ou octobre 79, le Vésuve se réveille après des siècles de silence. Une colonne de cendres retombe sur Pompéi, puis des nuées ardentes ensevelissent Herculanum et Pompéi en quelques heures. Pline le Jeune en fait un récit célèbre ; son oncle Pline l'Ancien meurt en tentant de secourir des habitants. Les villes, préservées sous les cendres, sont redécouvertes au XVIIIe siècle et offrent un témoignage unique de la vie romaine.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/%C3%89ruption_du_V%C3%A9suve_en_79"
+   }
+  ]
+ },
+ {
+  "id": "seisme-antioche-526",
+  "name": "Séisme d'Antioche",
+  "kind": "seisme",
+  "start": 526,
+  "end": 526,
+  "location": [
+   36.16,
+   36.2
+  ],
+  "deaths": 250000,
+  "deathsLow": 150000,
+  "deathsHigh": 300000,
+  "uncertainty": "Chiffre antique de Procope, probablement exagéré ; la ville comptait alors quelques centaines de milliers d'habitants.",
+  "description": "En mai 526, un tremblement de terre détruit Antioche, l'une des plus grandes villes de l'Empire byzantin, alors remplie de pèlerins venus pour la fête de l'Ascension. Un incendie achève de ravager ce que le séisme a épargné. Les chroniqueurs byzantins parlent de plus de deux cent mille morts. L'empereur Justin Ier envoie des secours, et la ville est reconstruite sous le nom de Théoupolis, avant d'être de nouveau ravagée par les Perses en 540.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/S%C3%A9isme_de_526_%C3%A0_Antioche"
+   }
+  ]
+ },
+ {
+  "id": "seisme-alep-1138",
+  "name": "Séisme d'Alep",
+  "kind": "seisme",
+  "start": 1138,
+  "end": 1138,
+  "location": [
+   37.16,
+   36.2
+  ],
+  "deaths": 230000,
+  "deathsLow": 100000,
+  "deathsHigh": 230000,
+  "uncertainty": "Les chiffres médiévaux sont très probablement exagérés et sont repris de chroniques arabes ; le bilan réel est inconnu.",
+  "description": "Le 11 octobre 1138, un séisme majeur frappe le nord de la Syrie, détruisant Alep et de nombreuses villes voisines, dont Hama, Shaizar et Apamée. Les chroniqueurs musulmans parlent de plusieurs centaines de milliers de morts. Les citadelles des croisés et des musulmans sont touchées, ce qui interrompt brièvement les combats dans la région. C'est l'une des catastrophes les plus meurtrières du Moyen Âge, mais ses détails restent connus par des sources partielles.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/S%C3%A9isme_de_1138_%C3%A0_Alep"
+   }
+  ]
+ },
+ {
+  "id": "seisme-shaanxi-1556",
+  "name": "Séisme du Shaanxi",
+  "kind": "seisme",
+  "start": 1556,
+  "end": 1556,
+  "location": [
+   109.77,
+   34.54
+  ],
+  "deaths": 830000,
+  "deathsLow": 600000,
+  "deathsHigh": 830000,
+  "uncertainty": "Le chiffre de 830 000 provient de registres chinois officiels ; il est jugé crédible mais impossible à vérifier.",
+  "description": "Le 23 janvier 1556, un séisme de très grande magnitude frappe la vallée de la Wei, dans les provinces du Shaanxi, du Shanxi et du Henan. Beaucoup d'habitants vivaient dans des maisons creusées dans le lœss, qui s'effondrèrent. On estime à 830 000 le nombre de morts, ce qui en fait la catastrophe naturelle la plus meurtrière connue. Un témoin, le lettré Qin Keda, recommanda de bâtir des maisons légères.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/S%C3%A9isme_de_1556_au_Shaanxi"
+   }
+  ]
+ },
+ {
+  "id": "seisme-lisbonne-1755",
+  "name": "Séisme de Lisbonne",
+  "kind": "seisme",
+  "start": 1755,
+  "end": 1755,
+  "location": [
+   -9.14,
+   38.72
+  ],
+  "deaths": 50000,
+  "deathsLow": 30000,
+  "deathsHigh": 100000,
+  "uncertainty": "Les estimations varient selon que l'on compte ou non les victimes du tsunami et de l'incendie, et celles du Maroc.",
+  "description": "Le 1er novembre 1755, jour de la Toussaint, un séisme de magnitude proche de 9 secoue Lisbonne. Un tsunami submerge ensuite le port, et un incendie dévore ce qui reste de la ville. Au Portugal, au sud de l'Espagne et au Maroc, des dizaines de milliers de personnes périssent. Le ministre Pombal dirige la reconstruction. La catastrophe nourrit le débat des Lumières sur la Providence, notamment chez Voltaire et Rousseau.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/S%C3%A9isme_de_1755_%C3%A0_Lisbonne"
+   }
+  ]
+ },
+ {
+  "id": "eruption-laki-1783",
+  "name": "Éruption du Laki",
+  "kind": "eruption",
+  "start": 1783,
+  "end": 1784,
+  "location": [
+   -18.23,
+   64.07
+  ],
+  "deaths": 100000,
+  "deathsLow": 32000,
+  "deathsHigh": 6000000,
+  "uncertainty": "Seuls les décès en Islande (environ 9 000) et en Angleterre (environ 23 000) sont documentés ; l'impact mondial est spéculatif.",
+  "description": "De juin 1783 à février 1784, une fissure du Laki, en Islande, émet des coulées de lave et un énorme nuage de gaz et de fluor. Le bétail meurt, la famine qui suit tue environ un cinquième des Islandais. Le brouillard sec, dit « Haze », traverse l'Europe en été et provoque des milliers de décès. Certains historiens y voient l'un des facteurs qui aggravèrent les mauvaises récoltes précédant la Révolution française.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Lakag%C3%ADgar"
+   }
+  ]
+ },
+ {
+  "id": "eruption-tambora-1815",
+  "name": "Éruption du Tambora",
+  "kind": "eruption",
+  "start": 1815,
+  "end": 1816,
+  "location": [
+   118,
+   -8.25
+  ],
+  "deaths": 71000,
+  "deathsLow": 10000,
+  "deathsHigh": 117000,
+  "uncertainty": "Seuls 10 000 à 12 000 morts directes sont attestées ; les autres chiffres incluent la famine et les maladies dans la région.",
+  "description": "En avril 1815, le Tambora, sur l'île de Sumbawa en Indonésie, explose en la plus puissante éruption des temps historiques. Elle tue plusieurs milliers de personnes sur place, puis la famine fait des dizaines de milliers de victimes dans les îles voisines. Les cendres dans la stratosphère abaissent la température du globe : 1816 est « l'année sans été » en Europe et en Amérique du Nord, avec récoltes perdues et disettes. Mary Shelley y écrit Frankenstein.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/%C3%89ruption_du_Tambora_en_1815"
+   }
+  ]
+ },
+ {
+  "id": "eruption-krakatoa-1883",
+  "name": "Éruption du Krakatoa",
+  "kind": "eruption",
+  "start": 1883,
+  "end": 1883,
+  "location": [
+   105.42,
+   -6.1
+  ],
+  "deaths": 36417,
+  "deathsLow": 36000,
+  "deathsHigh": 120000,
+  "uncertainty": "Le bilan officiel néerlandais est de 36 417 morts ; quelques sources parlent de plus de 100 000.",
+  "description": "Le 27 août 1883, le Krakatoa, dans le détroit de la Sonde, s'effondre en quatre explosions dont la dernière s'entend jusqu'à Maurice et en Australie. Les tsunamis qu'elles déclenchent détruisent des villages côtiers à Java et à Sumatra et tuent la majorité des victimes. Les cendres colorent les couchers de soleil du monde entier pendant des mois. C'est l'une des premières catastrophes relayées en quelques heures par le télégraphe sous-marin.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/%C3%89ruption_du_Krakatoa_en_1883"
+   }
+  ]
+ },
+ {
+  "id": "tsunami-sanriku-1896",
+  "name": "Tsunami de Sanriku",
+  "kind": "tsunami",
+  "start": 1896,
+  "end": 1896,
+  "location": [
+   141.88,
+   39.27
+  ],
+  "deaths": 22000,
+  "deathsLow": 22000,
+  "deathsHigh": 27000,
+  "uncertainty": "Bilan assez fiable, issu des recensements japonais de l'époque, avec des variations mineures selon les sources.",
+  "description": "Le 15 juin 1896, un séisme sous-marin au large de la côte de Sanriku, dans le nord-est du Japon, engendre un tsunami dont les vagues dépassent 30 mètres par endroits. Il frappe le soir, pendant une fête, alors que la secousse a été à peine ressentie à terre, et détruit des villages entiers. Près de 22 000 personnes périssent. La catastrophe a incité le Japon à étudier ces vagues et à les prévenir.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/S%C3%A9isme_de_1896_%C3%A0_Sanriku"
+   }
+  ]
+ },
+ {
+  "id": "famine-europe-1315",
+  "name": "Grande famine européenne",
+  "kind": "famine",
+  "start": 1315,
+  "end": 1317,
+  "location": [
+   2.88,
+   50.85
+  ],
+  "deaths": 7500000,
+  "deathsLow": 3000000,
+  "deathsHigh": 10000000,
+  "uncertainty": "Aucun recensement : estimations d'historiens à partir de registres locaux, avec une mortalité très variable (5 à 10 % selon les villes).",
+  "description": "Après des étés exceptionnellement pluvieux, les récoltes pourrissent en Europe du Nord de 1315 à 1317. Les prix des grains s'envolent, les paysans mangent les semences, puis le bétail meurt d'épizootie. Ypres perdrait environ un dixième de ses habitants en un seul été. La famine fragilise la population, déjà dense, quelques décennies avant la peste noire. Elle marque la fin de la longue croissance médiévale.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Grande_famine_de_1315-1317"
+   }
+  ]
+ },
+ {
+  "id": "famine-france-1693",
+  "name": "Grande famine de 1693-1694",
+  "kind": "famine",
+  "start": 1693,
+  "end": 1694,
+  "location": [
+   2.08,
+   49.43
+  ],
+  "deaths": 1300000,
+  "deathsLow": 1000000,
+  "deathsHigh": 2000000,
+  "uncertainty": "Estimations d'historiens fondées sur les registres paroissiaux, sans recensement général ; les chiffres varient beaucoup selon les provinces.",
+  "description": "Dans le Petit Âge glaciaire, un printemps et un été pluvieux ruinent les moissons de 1692 et 1693 en France, alors que Louis XIV mène la guerre de la Ligue d'Augsbourg. Le prix du blé s'envole, les paysans mangent de l'herbe, les mendiants affluent dans les villes. Les décès sont deux fois plus nombreux que d'ordinaire, surtout dans le Nord et le Centre. Cette crise démographique précède celle du grand hiver de 1709.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Grande_famine_de_1693-1694"
+   }
+  ]
+ },
+ {
+  "id": "inondation-kaifeng-1642",
+  "name": "Inondation de Kaifeng",
+  "kind": "inondation",
+  "start": 1642,
+  "end": 1642,
+  "location": [
+   114.35,
+   34.8
+  ],
+  "deaths": 300000,
+  "deathsLow": 300000,
+  "deathsHigh": 344000,
+  "uncertainty": "La population de la ville et le nombre de survivants proviennent de chroniques locales de qualité inégale.",
+  "description": "En 1642, pendant le siège de Kaifeng par les rebelles de Li Zicheng, le gouverneur ou les assiégeants ouvrent une digue du fleuve Jaune. La crue submerge la ville, déjà affamée, et noie la plus grande partie des habitants. D'après les chroniques, seuls environ 34 000 des quelque 378 000 habitants survivent. La ville est ensevelie sous la boue, et l'effondrement des Ming s'accélère.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_Kaifeng"
+   }
+  ]
+ },
+ {
+  "id": "famine-bengale-1770",
+  "name": "Grande famine du Bengale",
+  "kind": "famine",
+  "start": 1770,
+  "end": 1770,
+  "location": [
+   88.27,
+   24.18
+  ],
+  "deaths": 3000000,
+  "deathsLow": 1200000,
+  "deathsHigh": 10000000,
+  "uncertainty": "Le chiffre de dix millions (un tiers de la population) est une estimation coloniale ; les historiens modernes proposent beaucoup moins.",
+  "description": "Après l'échec de la mousson de 1769, une famine frappe le Bengale, où la Compagnie des Indes orientales vient d'obtenir le droit de lever l'impôt. Elle continue de le percevoir rigoureusement malgré la disette. Des villages entiers sont abandonnés, des rizières retournent à la jungle. William Hunter évalue la perte à un tiers de la population. La famine illustre les effets du pouvoir colonial et de la spéculation sur les grains.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Famine_au_Bengale_de_1770"
+   }
+  ]
+ },
+ {
+  "id": "famine-irlande-1845",
+  "name": "Grande famine irlandaise",
+  "kind": "famine",
+  "start": 1845,
+  "end": 1852,
+  "location": [
+   -9.27,
+   51.55
+  ],
+  "deaths": 1000000,
+  "deathsLow": 800000,
+  "deathsHigh": 1500000,
+  "uncertainty": "Les recensements de 1841 et 1851 sont fiables ; les causes précises de mortalité (faim ou maladie) le sont moins.",
+  "description": "À partir de 1845, le mildiou détruit les pommes de terre, aliment principal de la moitié des Irlandais. L'aide du gouvernement britannique est lente et insuffisante, alors que du blé et du bétail continuent d'être exportés. Environ un million de personnes meurent de faim ou de typhus, et plus d'un million émigrent, surtout aux États-Unis. L'Irlande perd en quelques années un quart de sa population.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Grande_Famine_(Irlande)"
+   }
+  ]
+ },
+ {
+  "id": "famine-chine-nord-1876",
+  "name": "Famine chinoise du Nord",
+  "kind": "famine",
+  "start": 1876,
+  "end": 1879,
+  "location": [
+   112.55,
+   37.87
+  ],
+  "deaths": 10000000,
+  "deathsLow": 9000000,
+  "deathsHigh": 13000000,
+  "uncertainty": "Estimations des missionnaires et des administrateurs, sans recensement : l'ordre de grandeur est accepté mais pas la précision.",
+  "description": "Une sécheresse extrême, liée à un fort El Niño, ravage le nord de la Chine de 1876 à 1879, surtout les provinces du Shanxi, du Henan et du Shandong. Les récoltes disparaissent, les paysans vendent leurs terres et leurs enfants, certains recourent au cannibalisme. Le missionnaire Timothy Richard est l'un des premiers à alerter l'étranger. Le désastre fait au moins neuf millions de victimes et ébranle la dynastie Qing.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Famine_du_nord_de_la_Chine_(1876%E2%80%931879)"
+   }
+  ]
+ },
+ {
+  "id": "famine-inde-1876",
+  "name": "Grande famine indienne de 1876-1878",
+  "kind": "famine",
+  "start": 1876,
+  "end": 1878,
+  "location": [
+   80.27,
+   13.08
+  ],
+  "deaths": 5500000,
+  "deathsLow": 5500000,
+  "deathsHigh": 10000000,
+  "uncertainty": "Les chiffres coloniaux sont partiels ; les historiens récents ont avancé jusqu'à dix millions de morts.",
+  "description": "La sécheresse et un fort El Niño font échouer les moussons dans le sud et le sud-ouest de l'Inde, notamment dans la présidence de Madras, le Mysore et Hyderabad. La politique britannique, qui exporte du grain et limite les secours, aggrave la mortalité. Environ cinq millions et demi de personnes meurent, peut-être beaucoup plus. La catastrophe conduit le pouvoir colonial à créer une commission et un code de la famine.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Famine_en_Inde_de_1876_%C3%A0_1878"
+   }
+  ]
+ },
+ {
+  "id": "crue-fleuve-jaune-1887",
+  "name": "Crue du fleuve Jaune de 1887",
+  "kind": "inondation",
+  "start": 1887,
+  "end": 1888,
+  "location": [
+   113.65,
+   34.75
+  ],
+  "deaths": 900000,
+  "deathsLow": 900000,
+  "deathsHigh": 2000000,
+  "uncertainty": "Les chiffres varient fortement selon les sources chinoises et occidentales ; le seuil de 900 000 est le plus souvent cité.",
+  "description": "En septembre 1887, le fleuve Jaune rompt ses digues près de Zhengzhou, dans le Henan. L'eau s'étend sur plus de cinquante mille kilomètres carrés et noie des milliers de villages. Les rescapés meurent ensuite de faim et de maladies. Entre neuf cent mille et deux millions de morts selon les estimations, ce qui en fait l'une des inondations les plus meurtrières de l'histoire. Le fleuve change à nouveau de cours.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Inondations_de_1887_en_Chine"
+   }
+  ]
+ },
+ {
+  "id": "royaumes-combattants",
+  "name": "Guerres de la période des Royaumes combattants",
+  "kind": "guerre",
+  "start": -475,
+  "end": -221,
+  "location": [
+   113,
+   35.8
+  ],
+  "deaths": 2000000,
+  "deathsLow": 1000000,
+  "deathsHigh": 4000000,
+  "uncertainty": "Les chiffres de Sima Qian sont probablement très exagérés ; aucun recensement fiable n'existe pour cette période.",
+  "description": "Pendant plus de deux siècles, sept grands royaumes chinois se livrent des guerres de plus en plus meurtrières, avec des armées de centaines de milliers de fantassins armés d'arbalètes et de fer. À Changping, en -260, Qin aurait massacré des centaines de milliers de prisonniers de Zhao. Entre -230 et -221, Qin annexe les six autres États et fonde le premier empire chinois sous Qin Shi Huang.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/P%C3%A9riode_des_Royaumes_combattants"
+   }
+  ],
+  "area": [
+   [
+    105,
+    34.5
+   ],
+   [
+    108,
+    38
+   ],
+   [
+    113,
+    40.5
+   ],
+   [
+    119,
+    40
+   ],
+   [
+    120,
+    36
+   ],
+   [
+    118,
+    32
+   ],
+   [
+    113,
+    30.5
+   ],
+   [
+    108,
+    31
+   ]
+  ],
+  "belligerents": [
+   "Royaume de Qin",
+   "Royaumes de Zhao, Wei, Han",
+   "Royaumes de Chu, Qi, Yan"
+  ]
+ },
+ {
+  "id": "seconde-guerre-punique",
+  "name": "Seconde guerre punique",
+  "kind": "guerre",
+  "start": -218,
+  "end": -201,
+  "location": [
+   16.13,
+   41.3
+  ],
+  "deaths": 500000,
+  "deathsLow": 300000,
+  "deathsHigh": 770000,
+  "uncertainty": "Les pertes antiques sont très approximatives : les auteurs romains (Tite-Live, Polybe) donnent des chiffres divergents pour chaque bataille.",
+  "description": "Hannibal franchit les Alpes avec ses éléphants et écrase les Romains à la Trébie, au lac Trasimène puis à Cannes en -216, où des dizaines de milliers de légionnaires périssent en une journée. Rome tient bon, soutenue par ses alliés, et porte la guerre en Espagne puis en Afrique. Scipion bat Hannibal à Zama en -202. Carthage perd son empire et Rome devient la maîtresse de la Méditerranée occidentale.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Seconde_guerre_punique"
+   }
+  ],
+  "area": [
+   [
+    -2,
+    37.5
+   ],
+   [
+    -1,
+    42
+   ],
+   [
+    7,
+    44
+   ],
+   [
+    13,
+    45.5
+   ],
+   [
+    18,
+    40.5
+   ],
+   [
+    15.5,
+    37.8
+   ],
+   [
+    11,
+    36.8
+   ],
+   [
+    10.5,
+    34
+   ],
+   [
+    0,
+    35
+   ]
+  ],
+  "belligerents": [
+   "République romaine",
+   "Carthage et ses alliés (Hannibal)"
+  ]
+ },
+ {
+  "id": "conquete-gaule",
+  "name": "Conquête de la Gaule",
+  "kind": "guerre",
+  "start": -58,
+  "end": -50,
+  "location": [
+   4.5,
+   47.54
+  ],
+  "deaths": 500000,
+  "deathsLow": 200000,
+  "deathsHigh": 1000000,
+  "uncertainty": "Les chiffres de Plutarque (un million de morts) sont jugés exagérés ; les historiens modernes avancent des estimations plus basses.",
+  "description": "De -58 à -50, Jules César conquiert la Gaule au prix de campagnes brutales, qu'il raconte dans La Guerre des Gaules. Contre les Helvètes, les Belges, les Vénètes puis la coalition de Vercingétorix, il utilise massacres, déportations et esclavage. Le siège d'Alésia, en -52, scelle la reddition gauloise. Le conquérant se constitue une armée fidèle et une fortune qui lui permettront de défier le Sénat.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Guerre_des_Gaules"
+   }
+  ],
+  "area": [
+   [
+    -4.5,
+    48.5
+   ],
+   [
+    -1,
+    49.5
+   ],
+   [
+    2,
+    51
+   ],
+   [
+    6,
+    51.5
+   ],
+   [
+    7.5,
+    48.5
+   ],
+   [
+    7,
+    46
+   ],
+   [
+    7,
+    43.5
+   ],
+   [
+    3,
+    42.8
+   ],
+   [
+    -1.5,
+    43.4
+   ],
+   [
+    -1.5,
+    46.5
+   ]
+  ],
+  "belligerents": [
+   "République romaine (César)",
+   "Peuples gaulois (Vercingétorix)",
+   "Peuples germaniques"
+  ]
+ },
+ {
+  "id": "trois-royaumes",
+  "name": "Guerre des Trois Royaumes",
+  "kind": "guerre",
+  "start": 184,
+  "end": 280,
+  "location": [
+   113.65,
+   29.85
+  ],
+  "deaths": 20000000,
+  "deathsLow": 10000000,
+  "deathsHigh": 40000000,
+  "uncertainty": "Le recul des recensements (de 56 à 16 millions de Chinois) inclut les fuites et la sous-déclaration ; le vrai nombre de morts est inconnu.",
+  "description": "La révolte des Turbans jaunes en 184 fait éclater l'Empire des Han. Trois États se disputent la Chine : Wei au nord, Shu à l'ouest, Wu au sud. Les batailles de Guandu et de la falaise Rouge, où Cao Cao est battu, décident du partage. Épidémies, famines et guerres réduisent la population de façon spectaculaire. L'unité revient avec les Jin en 280. Le Roman des Trois Royaumes en a fait une légende.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Trois_Royaumes_de_Chine"
+   }
+  ],
+  "area": [
+   [
+    103,
+    30
+   ],
+   [
+    104,
+    34
+   ],
+   [
+    108,
+    36
+   ],
+   [
+    114,
+    36
+   ],
+   [
+    119,
+    35
+   ],
+   [
+    121,
+    31
+   ],
+   [
+    119,
+    27
+   ],
+   [
+    113,
+    25
+   ],
+   [
+    108,
+    26
+   ],
+   [
+    104,
+    27
+   ]
+  ],
+  "belligerents": [
+   "Royaume de Wei (Cao Cao)",
+   "Royaume de Shu Han (Liu Bei)",
+   "Royaume de Wu (Sun Quan)"
+  ]
+ },
+ {
+  "id": "an-lushan",
+  "name": "Révolte d'An Lushan",
+  "kind": "guerre",
+  "start": 755,
+  "end": 763,
+  "location": [
+   108.94,
+   34.27
+  ],
+  "deaths": 13000000,
+  "deathsLow": 5000000,
+  "deathsHigh": 36000000,
+  "uncertainty": "Débat ouvert : les recensements Tang (52 puis 17 millions) mesurent surtout l'effondrement de l'administration, pas seulement les morts.",
+  "description": "En 755, le général An Lushan, gouverneur de trois provinces frontalières, se révolte contre l'empereur Xuanzong et se proclame empereur. Ses troupes prennent Luoyang et Chang'an. Après sa mort, la guerre continue sous d'autres chefs jusqu'en 763, au prix d'alliances avec les Ouïghours. Les chroniques évoquent des millions de morts, sans doute exagérés. Les Tang survivent mais perdent leur autorité sur les provinces.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/R%C3%A9volte_d'An_Lushan"
+   }
+  ],
+  "area": [
+   [
+    106,
+    33
+   ],
+   [
+    107,
+    37
+   ],
+   [
+    111,
+    40
+   ],
+   [
+    117,
+    41
+   ],
+   [
+    121,
+    39
+   ],
+   [
+    120,
+    35
+   ],
+   [
+    115,
+    33
+   ],
+   [
+    111,
+    32.5
+   ]
+  ],
+  "belligerents": [
+   "Dynastie Tang",
+   "Rebelles d'An Lushan (Yan)",
+   "Ouïghours (alliés des Tang)"
+  ]
+ },
+ {
+  "id": "conquetes-mongoles",
+  "name": "Conquêtes mongoles",
+  "kind": "guerre",
+  "start": 1206,
+  "end": 1368,
+  "location": [
+   102.8,
+   47.2
+  ],
+  "deaths": 40000000,
+  "deathsLow": 30000000,
+  "deathsHigh": 60000000,
+  "uncertainty": "Les chroniqueurs médiévaux exagèrent souvent les massacres ; les estimations modernes s'appuient sur des baisses de population contestées.",
+  "description": "Proclamé Gengis Khan en 1206, le chef mongol soumet la steppe, puis la Chine du Nord, la Perse et l'Asie centrale. Ses successeurs prennent Bagdad en 1258, ravagent la Russie et poussent jusqu'en Hongrie. Les villes qui résistent sont massacrées, des réseaux d'irrigation détruits. Les pertes cumulées sont évaluées à des dizaines de millions. L'empire, le plus vaste d'un seul tenant, favorise ensuite les échanges de la Route de la soie.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Empire_mongol"
+   }
+  ],
+  "area": [
+   [
+    25,
+    50
+   ],
+   [
+    40,
+    56
+   ],
+   [
+    60,
+    58
+   ],
+   [
+    100,
+    56
+   ],
+   [
+    130,
+    50
+   ],
+   [
+    140,
+    38
+   ],
+   [
+    122,
+    22
+   ],
+   [
+    100,
+    12
+   ],
+   [
+    92,
+    22
+   ],
+   [
+    70,
+    24
+   ],
+   [
+    48,
+    28
+   ],
+   [
+    38,
+    36
+   ]
+  ],
+  "belligerents": [
+   "Empire mongol",
+   "Jin et Song (Chine)",
+   "Khwarezm et califat abbasside",
+   "Principautés russes"
+  ]
+ },
+ {
+  "id": "conquetes-tamerlan",
+  "name": "Conquêtes de Tamerlan",
+  "kind": "guerre",
+  "start": 1370,
+  "end": 1405,
+  "location": [
+   66.96,
+   39.65
+  ],
+  "deaths": 17000000,
+  "deathsLow": 7000000,
+  "deathsHigh": 20000000,
+  "uncertainty": "Estimations spéculatives, calculées à partir des chroniques de villes détruites ; le chiffre de 17 millions est controversé.",
+  "description": "Né près de Samarcande, Tamerlan se proclame héritier de Gengis Khan et bâtit entre 1370 et 1405 un empire de la Perse à l'Inde. Il saccage Ispahan, Delhi, Damas et bat le sultan ottoman Bayezid à Ankara en 1402. Il fait élever des pyramides de crânes et déporte les artisans vers Samarcande. Ses campagnes auraient causé la mort d'environ 5 % de la population mondiale d'alors.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Tamerlan"
+   }
+  ],
+  "area": [
+   [
+    30,
+    38
+   ],
+   [
+    44,
+    42
+   ],
+   [
+    52,
+    44
+   ],
+   [
+    66,
+    46
+   ],
+   [
+    78,
+    43
+   ],
+   [
+    82,
+    36
+   ],
+   [
+    78,
+    28
+   ],
+   [
+    72,
+    24
+   ],
+   [
+    56,
+    26
+   ],
+   [
+    45,
+    30
+   ],
+   [
+    38,
+    33
+   ]
+  ],
+  "belligerents": [
+   "Empire timouride",
+   "Sultanat de Delhi",
+   "Empire ottoman (Bayezid)",
+   "Mamelouks d'Égypte",
+   "Horde d'Or"
+  ]
+ },
+ {
+  "id": "guerre-cent-ans",
+  "name": "Guerre de Cent Ans",
+  "kind": "guerre",
+  "start": 1337,
+  "end": 1453,
+  "location": [
+   1.89,
+   50.25
+  ],
+  "deaths": 3000000,
+  "deathsLow": 2300000,
+  "deathsHigh": 3500000,
+  "uncertainty": "Chiffres incluant les civils morts de faim et de maladie ; les combats seuls firent beaucoup moins de victimes.",
+  "description": "Querelle dynastique entre les rois de France et d'Angleterre, la guerre de Cent Ans se déroule en cycles de batailles et de trêves. Les victoires anglaises de Crécy, Poitiers et Azincourt sont suivies des reconquêtes de Du Guesclin et de Jeanne d'Arc. Les chevauchées de pillage, la peste et les brigands dévastent les campagnes. La guerre s'achève en 1453 avec la bataille de Castillon et l'expulsion des Anglais, sauf de Calais.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Guerre_de_Cent_Ans"
+   }
+  ],
+  "area": [
+   [
+    -1.8,
+    49.7
+   ],
+   [
+    1.5,
+    51
+   ],
+   [
+    4,
+    50
+   ],
+   [
+    4,
+    47.5
+   ],
+   [
+    1,
+    45
+   ],
+   [
+    -1,
+    43.5
+   ],
+   [
+    -1.5,
+    45
+   ],
+   [
+    -3,
+    47.5
+   ]
+  ],
+  "belligerents": [
+   "Royaume de France",
+   "Royaume d'Angleterre",
+   "Duché de Bourgogne"
+  ]
+ },
+ {
+  "id": "transition-ming-qing",
+  "name": "Transition Ming-Qing",
+  "kind": "guerre",
+  "start": 1618,
+  "end": 1683,
+  "location": [
+   119.77,
+   40
+  ],
+  "deaths": 25000000,
+  "deathsLow": 10000000,
+  "deathsHigh": 25000000,
+  "uncertainty": "Estimations controversées, déduites des recensements fiscaux ; elles incluent aussi la famine et les épidémies.",
+  "description": "À partir de 1618, les Mandchous s'attaquent à la Chine des Ming, déjà minée par les rebellions paysannes et les famines. En 1644, Li Zicheng prend Pékin ; le général Wu Sangui ouvre alors Shanhaiguan aux Mandchous, qui s'emparent de la capitale. La conquête du Sud dure des décennies et s'accompagne de massacres, comme ceux de Yangzhou et de Jiading. La dernière résistance, à Taïwan, cède en 1683.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Transition_Ming-Qing"
+   }
+  ],
+  "area": [
+   [
+    100,
+    22
+   ],
+   [
+    100,
+    32
+   ],
+   [
+    106,
+    38
+   ],
+   [
+    112,
+    42
+   ],
+   [
+    121,
+    42
+   ],
+   [
+    126,
+    42
+   ],
+   [
+    122,
+    32
+   ],
+   [
+    120,
+    25
+   ],
+   [
+    112,
+    22
+   ]
+  ],
+  "belligerents": [
+   "Dynastie Ming et Ming du Sud",
+   "Mandchous (Qing)",
+   "Rebelles de Li Zicheng et Zhang Xianzhong"
+  ]
+ },
+ {
+  "id": "guerre-trente-ans",
+  "name": "Guerre de Trente Ans",
+  "kind": "guerre",
+  "start": 1618,
+  "end": 1648,
+  "location": [
+   14.42,
+   50.08
+  ],
+  "deaths": 6000000,
+  "deathsLow": 4500000,
+  "deathsHigh": 8000000,
+  "uncertainty": "Le chiffre inclut la famine et la peste ; la mortalité varie fortement selon les régions de l'Empire.",
+  "description": "Commencée à Prague par la défenestration de 1618, la guerre oppose d'abord catholiques et protestants du Saint-Empire, puis entraîne le Danemark, la Suède et la France. Armées de mercenaires pillent les campagnes. Le sac de Magdebourg en 1631 reste un symbole. Certaines régions d'Allemagne perdent plus de la moitié de leurs habitants. Les traités de Westphalie de 1648 consacrent l'équilibre des États européens.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Guerre_de_Trente_Ans"
+   }
+  ],
+  "area": [
+   [
+    6,
+    47.5
+   ],
+   [
+    6,
+    52
+   ],
+   [
+    12,
+    54.5
+   ],
+   [
+    18,
+    52.5
+   ],
+   [
+    19,
+    49.5
+   ],
+   [
+    17,
+    47.5
+   ],
+   [
+    12,
+    47.3
+   ]
+  ],
+  "belligerents": [
+   "Habsbourg et Ligue catholique",
+   "Union protestante",
+   "Suède",
+   "France",
+   "Danemark"
+  ]
+ },
+ {
+  "id": "guerre-sept-ans",
+  "name": "Guerre de Sept Ans",
+  "kind": "guerre",
+  "start": 1756,
+  "end": 1763,
+  "location": [
+   11.95,
+   51.3
+  ],
+  "deaths": 1000000,
+  "deathsLow": 900000,
+  "deathsHigh": 1400000,
+  "uncertainty": "Les pertes militaires sont assez bien connues ; la fourchette s'élargit avec les victimes civiles et les maladies.",
+  "description": "Souvent qualifiée de première guerre mondiale, elle oppose la Prusse et la Grande-Bretagne à la France, l'Autriche et la Russie, en Europe, en Amérique du Nord, aux Indes et sur mer. Frédéric II de Prusse survit à de lourdes défaites grâce aux victoires de Rossbach et de Leuthen et à la mort de la tsarine Élisabeth. Le traité de Paris de 1763 chasse la France du Canada et de l'Inde.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Guerre_de_Sept_Ans"
+   }
+  ],
+  "area": [
+   [
+    5,
+    49
+   ],
+   [
+    7,
+    53.5
+   ],
+   [
+    14,
+    54.5
+   ],
+   [
+    21,
+    54.5
+   ],
+   [
+    25,
+    51
+   ],
+   [
+    22,
+    48
+   ],
+   [
+    16,
+    46
+   ],
+   [
+    10,
+    46.5
+   ]
+  ],
+  "belligerents": [
+   "Prusse, Grande-Bretagne et Hanovre",
+   "France, Autriche et Russie"
+  ]
+ },
+ {
+  "id": "guerres-napoleoniennes",
+  "name": "Guerres napoléoniennes",
+  "kind": "guerre",
+  "start": 1803,
+  "end": 1815,
+  "location": [
+   4.41,
+   50.68
+  ],
+  "deaths": 5000000,
+  "deathsLow": 3000000,
+  "deathsHigh": 7000000,
+  "uncertainty": "Les pertes militaires sont connues à quelques centaines de milliers près ; celles des civils restent très mal évaluées.",
+  "description": "Après la rupture de la paix d'Amiens, Napoléon bat tour à tour l'Autriche, la Prusse et la Russie à Austerlitz, Iéna et Friedland. La guerre d'Espagne et l'échec de la campagne de Russie en 1812 brisent la Grande Armée. Battu à Leipzig en 1813, puis à Waterloo en 1815, il est exilé à Sainte-Hélène. Le congrès de Vienne redessine l'Europe. Le conflit a fait entre trois et sept millions de morts.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Guerres_napol%C3%A9oniennes"
+   }
+  ],
+  "area": [
+   [
+    -9,
+    37
+   ],
+   [
+    -9,
+    43
+   ],
+   [
+    -2,
+    48
+   ],
+   [
+    2,
+    51
+   ],
+   [
+    8,
+    54
+   ],
+   [
+    22,
+    55
+   ],
+   [
+    38,
+    56
+   ],
+   [
+    38,
+    50
+   ],
+   [
+    28,
+    44
+   ],
+   [
+    20,
+    40
+   ],
+   [
+    15,
+    38
+   ],
+   [
+    0,
+    36.5
+   ]
+  ],
+  "belligerents": [
+   "Empire français et alliés",
+   "Royaume-Uni",
+   "Russie",
+   "Autriche et Prusse",
+   "Espagne"
+  ]
+ },
+ {
+  "id": "revolte-taiping",
+  "name": "Révolte des Taiping",
+  "kind": "guerre",
+  "start": 1850,
+  "end": 1864,
+  "location": [
+   118.8,
+   32.06
+  ],
+  "deaths": 20000000,
+  "deathsLow": 20000000,
+  "deathsHigh": 30000000,
+  "uncertainty": "Les estimations oscillent selon les méthodes, de 20 à 30 millions, et certains auteurs avancent davantage ; il n'existe aucun décompte fiable.",
+  "description": "Hong Xiuquan, qui se dit frère cadet du Christ, fonde en 1851 le Royaume céleste de la grande paix, dans le sud de la Chine. Ses armées prennent Nankin en 1853 et en font leur capitale. La guerre qui oppose les Taiping à la dynastie Qing, aidée par des officiers occidentaux, ravage le Yangzi. Nankin tombe en 1864. C'est le conflit civil le plus meurtrier de l'histoire, après celui des Trois Royaumes.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/R%C3%A9volte_des_Taiping"
+   }
+  ],
+  "area": [
+   [
+    108,
+    22
+   ],
+   [
+    107,
+    29
+   ],
+   [
+    111,
+    34
+   ],
+   [
+    117,
+    35.5
+   ],
+   [
+    121,
+    34
+   ],
+   [
+    122,
+    30
+   ],
+   [
+    120,
+    26
+   ],
+   [
+    115,
+    22.5
+   ]
+  ],
+  "belligerents": [
+   "Royaume céleste des Taiping",
+   "Dynastie Qing",
+   "Armée toujours victorieuse (Ward, Gordon)"
+  ]
+ },
+ {
+  "id": "guerre-secession",
+  "name": "Guerre de Sécession",
+  "kind": "guerre",
+  "start": 1861,
+  "end": 1865,
+  "location": [
+   -77.23,
+   39.83
+  ],
+  "deaths": 700000,
+  "deathsLow": 620000,
+  "deathsHigh": 850000,
+  "uncertainty": "Le chiffre traditionnel de 620 000 a été relevé à environ 750 000 par des études récentes ; certaines évaluations montent à 850 000.",
+  "description": "Après l'élection d'Abraham Lincoln, onze États esclavagistes font sécession et forment les États confédérés. La guerre commence en 1861 à Fort Sumter et voit les batailles de Gettysburg, Antietam et Vicksburg. L'abolition de l'esclavage devient un but de guerre en 1863. Le général Lee se rend à Appomattox en 1865. Il s'agit du conflit le plus meurtrier des États-Unis, surtout à cause des maladies.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Guerre_de_S%C3%A9cession"
+   }
+  ],
+  "area": [
+   [
+    -97,
+    26
+   ],
+   [
+    -97,
+    37
+   ],
+   [
+    -90,
+    41
+   ],
+   [
+    -80,
+    41
+   ],
+   [
+    -75,
+    39
+   ],
+   [
+    -76,
+    35
+   ],
+   [
+    -80,
+    32
+   ],
+   [
+    -81,
+    25.5
+   ],
+   [
+    -85,
+    29.5
+   ],
+   [
+    -90,
+    29
+   ],
+   [
+    -94,
+    29.5
+   ]
+  ],
+  "belligerents": [
+   "États-Unis (Union)",
+   "États confédérés d'Amérique"
+  ]
+ },
+ {
+  "id": "guerre-triple-alliance",
+  "name": "Guerre de la Triple-Alliance",
+  "kind": "guerre",
+  "start": 1864,
+  "end": 1870,
+  "location": [
+   -58.3,
+   -27.05
+  ],
+  "deaths": 400000,
+  "deathsLow": 300000,
+  "deathsHigh": 1200000,
+  "uncertainty": "Fourchette énorme : le Paraguay n'a plus de recensements fiables ; les pertes réelles de population restent débattues.",
+  "description": "Le président paraguayen Solano López attaque le Brésil, puis l'Argentine, en 1864 et 1865. Le Brésil, l'Argentine et l'Uruguay signent la Triple-Alliance contre lui. La guerre, la plus meurtrière de l'histoire de l'Amérique du Sud, détruit le Paraguay : sa population masculine est en grande partie décimée par les combats, la faim et le choléra. López est tué en 1870 à Cerro Corá.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/Guerre_de_la_Triple-Alliance"
+   }
+  ],
+  "area": [
+   [
+    -60,
+    -20
+   ],
+   [
+    -55,
+    -20.5
+   ],
+   [
+    -53,
+    -26
+   ],
+   [
+    -54.5,
+    -31
+   ],
+   [
+    -58.5,
+    -33.5
+   ],
+   [
+    -60,
+    -28
+   ],
+   [
+    -62,
+    -24
+   ]
+  ],
+  "belligerents": [
+   "Paraguay",
+   "Brésil",
+   "Argentine",
+   "Uruguay"
+  ]
+ },
+ {
+  "id": "revolte-dounganes",
+  "name": "Révolte des Dounganes",
+  "kind": "guerre",
+  "start": 1862,
+  "end": 1877,
+  "location": [
+   87.6,
+   43.8
+  ],
+  "deaths": 10000000,
+  "deathsLow": 8000000,
+  "deathsHigh": 12000000,
+  "uncertainty": "Les chiffres sont très débattus : ils reposent sur des estimations de population hasardeuses dans les provinces du nord-ouest.",
+  "description": "Une querelle locale à Shaanxi en 1862 déclenche un soulèvement des musulmans hui, ou Dounganes, contre la dynastie Qing. Il se répand dans le Gansu et le Xinjiang, avec des massacres dans les deux camps. Le général Zuo Zongtang mène la reconquête et écrase les rebelles en 1873 puis le chef Yakub Beg, en 1877. Des centaines de milliers de Dounganes fuient vers l'Asie centrale russe.",
+  "sources": [
+   {
+    "label": "Wikipédia (fr)",
+    "url": "https://fr.wikipedia.org/wiki/R%C3%A9volte_des_Dounganes"
+   }
+  ],
+  "area": [
+   [
+    80,
+    40
+   ],
+   [
+    80,
+    44
+   ],
+   [
+    88,
+    46
+   ],
+   [
+    96,
+    42
+   ],
+   [
+    106,
+    41
+   ],
+   [
+    108,
+    35
+   ],
+   [
+    103,
+    33
+   ],
+   [
+    96,
+    35
+   ],
+   [
+    88,
+    38
+   ]
+  ],
+  "belligerents": [
+   "Dynastie Qing",
+   "Musulmans hui (Dounganes)",
+   "Émirat de Yakub Beg"
+  ]
+ }
+]

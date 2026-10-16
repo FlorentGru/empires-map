@@ -19,6 +19,8 @@ import { MORPH_MS, MorphLayer } from './morphLayer';
 import { NeighborLayers } from './neighborLayers';
 import { ContemporaryLayers } from './contemporaryLayers';
 import { MonumentLayers } from './monumentLayers';
+import { RouteLayers } from './routeLayers';
+import { DisasterLayers } from './disasterLayers';
 import { originName } from '../lib/origin';
 import { dropCoveredLabels } from '../lib/contemporaries';
 import { TerritoryLabels } from './territoryLabels';
@@ -46,12 +48,18 @@ interface Props {
   contemporaries?: boolean;
   /** Grands monuments debout à la date de l'étape. */
   monuments?: boolean;
+  /** Routes commerciales actives à la date de l'étape. */
+  routes?: boolean;
+  /** Épidémies, catastrophes et guerres meurtrières en cours. */
+  disasters?: boolean;
 }
 
 interface MapLayers {
   neighbors: NeighborLayers;
   contemporaries: ContemporaryLayers;
   monuments: MonumentLayers;
+  routes: RouteLayers;
+  disasters: DisasterLayers;
   territories: TerritoryLayers;
   labels: TerritoryLabels;
   morph: MorphLayer;
@@ -103,7 +111,7 @@ function cameraGate(map: MapLibreMap, stepStart: number, speed: number, chained:
   });
 }
 
-export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, figures: figuresOn = true, countries2026 = false, stateNames = true, neighbors: neighborsOn = true, contemporaries: contemporariesOn = true, monuments: monumentsOn = true }: Props) {
+export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, figures: figuresOn = true, countries2026 = false, stateNames = true, neighbors: neighborsOn = true, contemporaries: contemporariesOn = true, monuments: monumentsOn = true, routes: routesOn = true, disasters: disastersOn = true }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const [layers, setLayers] = useState<MapLayers | null>(null);
@@ -135,6 +143,10 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
   }, []);
   const monumentsRef = useRef(monumentsOn);
   monumentsRef.current = monumentsOn;
+  const routesRef = useRef(routesOn);
+  routesRef.current = routesOn;
+  const disastersRef = useRef(disastersOn);
+  disastersRef.current = disastersOn;
 
   // Création de la carte (une seule fois).
   useEffect(() => {
@@ -164,6 +176,8 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
         neighbors: new NeighborLayers(map),
         // Autres empires de l'époque : juste au-dessus des voisins, sous les territoires.
         contemporaries: new ContemporaryLayers(map),
+        routes: new RouteLayers(map),
+        disasters: new DisasterLayers(map),
         monuments: new MonumentLayers(map),
         territories: new TerritoryLayers(map),
         morph: new MorphLayer(map),
@@ -190,6 +204,8 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
       created.neighbors.setEnabled(neighborsRef.current);
       created.contemporaries.setEnabled(contemporariesRef.current);
       created.monuments.setEnabled(monumentsRef.current);
+      created.routes.setEnabled(routesRef.current);
+      created.disasters.setEnabled(disastersRef.current);
       created.countries.setVisible(countriesRef.current);
       if (import.meta.env.DEV) (window as unknown as { __glide: GlideLayer }).__glide = created.glide;
       setLayers(created);
@@ -210,6 +226,8 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
       created?.neighbors.destroy();
       created?.contemporaries.destroy();
       created?.monuments.destroy();
+      created?.routes.destroy();
+      created?.disasters.destroy();
       map.remove();
       mapRef.current = null;
     };
@@ -487,7 +505,16 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
     layers?.monuments.setEnabled(monumentsOn);
   }, [layers, monumentsOn]);
   useEffect(() => {
-    if (layers && step) layers.monuments.setYear(step.year);
+    layers?.routes.setEnabled(routesOn);
+  }, [layers, routesOn]);
+  useEffect(() => {
+    layers?.disasters.setEnabled(disastersOn);
+  }, [layers, disastersOn]);
+  useEffect(() => {
+    if (!layers || !step) return;
+    layers.monuments.setYear(step.year);
+    layers.routes.setYear(step.year);
+    layers.disasters.setYear(step.year);
   }, [layers, step]);
 
   // Calque « Pays 2026 ».

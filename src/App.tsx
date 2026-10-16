@@ -117,6 +117,8 @@ function Atlas({ empire, onSelectEmpire, onOpenGallery, onContext }: { empire: E
   const [neighbors, setNeighbors] = useState(() => readBool('atlas.neighbors', true));
   const [contemporaries, setContemporaries] = useState(() => readBool('atlas.contemporaries', true));
   const [monuments, setMonuments] = useState(() => readBool('atlas.monuments', true));
+  const [routes, setRoutes] = useState(() => readBool('atlas.routes', true));
+  const [disasters, setDisasters] = useState(() => readBool('atlas.disasters', true));
   const openPanel = useCallback(() => setPanelOpen(true), []);
   const story = useStory(player, step, openPanel, empire);
   const storyEnabled = story.controls.enabled;
@@ -141,6 +143,8 @@ function Atlas({ empire, onSelectEmpire, onOpenGallery, onContext }: { empire: E
   const toggleNeighbors = useCallback(() => setNeighbors((v) => { writeBool('atlas.neighbors', !v); return !v; }), []);
   const toggleContemporaries = useCallback(() => setContemporaries((v) => { writeBool('atlas.contemporaries', !v); return !v; }), []);
   const toggleMonuments = useCallback(() => setMonuments((v) => { writeBool('atlas.monuments', !v); return !v; }), []);
+  const toggleRoutes = useCallback(() => setRoutes((v) => { writeBool('atlas.routes', !v); return !v; }), []);
+  const toggleDisasters = useCallback(() => setDisasters((v) => { writeBool('atlas.disasters', !v); return !v; }), []);
 
   useEffect(() => {
     writeUrlState(empire.id, step?.id);
@@ -153,12 +157,12 @@ function Atlas({ empire, onSelectEmpire, onOpenGallery, onContext }: { empire: E
   return (
     <div className="app">
       <h1 className="visually-hidden">Atlas des Empires — {empire.name}</h1>
-      <WorldMap empire={empire} index={player.index} panelOpen={panelOpen} tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} stateNames={stateNames} neighbors={neighbors} contemporaries={contemporaries} monuments={monuments} speed={player.speed} />
+      <WorldMap empire={empire} index={player.index} panelOpen={panelOpen} tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} stateNames={stateNames} neighbors={neighbors} contemporaries={contemporaries} monuments={monuments} routes={routes} disasters={disasters} speed={player.speed} />
 
       <div className="top-bar">
         <EmpirePicker empires={EMPIRES} current={empire} onSelect={onSelectEmpire} />
         <div className="top-bar__right">
-          <ViewControls tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} stateNames={stateNames} neighbors={neighbors} contemporaries={contemporaries} monuments={monuments} onToggleTilt={toggleTilt} onToggleRelief={toggleRelief} onToggleFigures={toggleFigures} onToggleCountries2026={toggleCountries2026} onToggleStateNames={toggleStateNames} onToggleNeighbors={toggleNeighbors} onToggleContemporaries={toggleContemporaries} onToggleMonuments={toggleMonuments} />
+          <ViewControls tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} stateNames={stateNames} neighbors={neighbors} contemporaries={contemporaries} monuments={monuments} routes={routes} disasters={disasters} onToggleTilt={toggleTilt} onToggleRelief={toggleRelief} onToggleFigures={toggleFigures} onToggleCountries2026={toggleCountries2026} onToggleStateNames={toggleStateNames} onToggleNeighbors={toggleNeighbors} onToggleContemporaries={toggleContemporaries} onToggleMonuments={toggleMonuments} onToggleRoutes={toggleRoutes} onToggleDisasters={toggleDisasters} />
           <button type="button" className="btn btn--ghost" onClick={onOpenGallery} aria-haspopup="dialog">
             Galerie
           </button>
@@ -178,7 +182,7 @@ function Atlas({ empire, onSelectEmpire, onOpenGallery, onContext }: { empire: E
         onToggle={togglePanel}
         story={panelStory}
       />
-      <Legend empire={empire} step={step} countries2026={countries2026} neighbors={neighbors} contemporaries={contemporaries} monuments={monuments} />
+      <Legend empire={empire} step={step} countries2026={countries2026} neighbors={neighbors} contemporaries={contemporaries} monuments={monuments} routes={routes} disasters={disasters} />
       <Timeline empire={empire} player={player} compare2026={countries2026} story={story.controls} />
       <AboutModal open={aboutOpen} onClose={() => setAboutOpen(false)} />
       <FeedbackDialog open={feedbackOpen} onClose={() => setFeedbackOpen(false)} empire={empire.id} step={step?.id} />

@@ -682,6 +682,23 @@ button.empire-card:hover,
   transform: scale(1.6);
 }
 
+/* ---------- Catastrophes et guerres sur la frise (infobulle au survol) ---------- */
+.timeline__disaster {
+  position: absolute;
+  top: 1px;
+  height: 3px;
+  border-radius: 2px;
+  background: #7a1f1a;
+  opacity: 0.55;
+}
+.timeline__disaster:hover { opacity: 1; height: 5px; }
+.timeline__disaster--epidemie { background: #6d2a7a; }
+.timeline__disaster--eruption,
+.timeline__disaster--seisme,
+.timeline__disaster--tsunami { background: #a4471c; }
+.timeline__disaster--famine,
+.timeline__disaster--inondation { background: #6b5a2a; }
+
 /* ---------- Apogée : courbe de puissance, couronne, badge ---------- */
 .timeline__power {
   position: absolute;
@@ -1562,6 +1579,10 @@ kbd {
 .people__sources { font-size: 0.85rem; color: var(--ink-soft); }
 
 /* ---------- Légende ---------- */
+.legend__route { display: inline-block; width: 22px; height: 0; border-top: 3px solid #8a5a2b; vertical-align: middle; }
+.legend__route--sea { border-top-style: dashed; border-top-color: #3f6f8f; }
+.legend__plague { display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: rgba(109, 42, 122, 0.55); border: 1.5px solid #6d2a7a; }
+.legend__war { display: inline-block; width: 18px; height: 12px; border: 1px dashed #7a1f1a; background: repeating-linear-gradient(-45deg, rgba(122, 31, 26, 0.55) 0 2px, transparent 2px 6px); }
 .legend__monument { display: inline-block; width: 18px; height: 18px; line-height: 0; }
 .legend__monument svg { width: 18px; height: 18px; }
 .legend {
