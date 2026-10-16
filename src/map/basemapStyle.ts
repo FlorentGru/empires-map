@@ -13,11 +13,11 @@ export const MAP_COLORS = {
 
 export const DEM_SOURCE = 'dem';
 export const TERRAIN_EXAGGERATION = 1.5;
-/** Zone utile : limite le nombre de tuiles de relief chargées. */
-export const MAX_BOUNDS: [[number, number], [number, number]] = [
-  [-30, -45],
-  [160, 78],
-];
+/**
+ * Navigation : le monde entier, sans bornes (des bornes couvrant les 360° de longitude cassent le calcul
+ * de projection de MapLibre). Les tuiles de relief ne sont chargées qu'à la demande.
+ */
+export const MAX_BOUNDS = null;
 
 function glyphsUrl(): string {
   // URL absolue : le worker de MapLibre ne résout pas les chemins relatifs à la page.

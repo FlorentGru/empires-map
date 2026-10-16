@@ -534,12 +534,20 @@
           "faction": "francais",
           "path": [
             [
-              16.37,
-              48.21
+              1.6,
+              50.73
             ],
             [
-              16.55,
-              48.8
+              7.75,
+              48.58
+            ],
+            [
+              10,
+              48.4
+            ],
+            [
+              16.37,
+              48.21
             ],
             [
               16.6,
@@ -558,6 +566,14 @@
           "side": "Armée de Russie",
           "faction": "russes",
           "path": [
+            [
+              25.1,
+              50.1
+            ],
+            [
+              19.94,
+              50.06
+            ],
             [
               17.25,
               49.59
@@ -1062,16 +1078,16 @@
           "faction": "francais",
           "path": [
             [
-              11.59,
-              50.93
+              2.35,
+              48.85
             ],
             [
-              13.4,
-              52.5
+              7.75,
+              48.58
             ],
             [
-              21,
-              54.4
+              10.8,
+              48.72
             ],
             [
               12.1,
@@ -1080,10 +1096,6 @@
             [
               16.37,
               48.21
-            ],
-            [
-              16.52,
-              48.18
             ],
             [
               16.55,
@@ -1096,15 +1108,19 @@
           ],
           "strength": 3,
           "winner": true,
-          "id": "grande-armee"
+          "id": "armee-d-allemagne"
         },
         {
           "side": "Armée d'Autriche",
           "faction": "autrichiens",
           "path": [
             [
-              16.88,
-              49.15
+              14.42,
+              50.08
+            ],
+            [
+              14.47,
+              48.97
             ],
             [
               15.9,
@@ -1124,7 +1140,7 @@
             ]
           ],
           "strength": 3,
-          "id": "armee-autrichienne"
+          "id": "armee-autrichienne-1809"
         }
       ],
       "figures": [
@@ -1249,8 +1265,8 @@
           "faction": "francais",
           "path": [
             [
-              16.57,
-              48.3
+              13.74,
+              51.05
             ],
             [
               16.9,
@@ -1275,35 +1291,27 @@
           ],
           "strength": 3,
           "winner": true,
-          "id": "grande-armee"
+          "id": "grande-armee-1812"
         },
         {
           "side": "Armée de Koutouzov",
           "faction": "russes",
           "path": [
             [
-              16.85,
-              49.15
+              25.28,
+              54.69
             ],
             [
-              19.9,
-              50.06
+              30.2,
+              55.2
             ],
             [
-              23.7,
-              52.1
+              32.05,
+              54.78
             ],
             [
-              26,
-              55
-            ],
-            [
-              30,
-              54.5
-            ],
-            [
-              34,
-              55
+              34.3,
+              55.2
             ],
             [
               35.8,
@@ -1311,7 +1319,7 @@
             ]
           ],
           "strength": 3,
-          "id": "armee-russe"
+          "id": "armee-russe-1812"
         },
         {
           "side": "Contingent polonais",
@@ -1447,7 +1455,7 @@
             ]
           ],
           "strength": 3,
-          "id": "grande-armee"
+          "id": "grande-armee-1812"
         },
         {
           "side": "Contingent polonais",
@@ -1516,7 +1524,7 @@
           ],
           "strength": 3,
           "winner": true,
-          "id": "armee-autrichienne"
+          "id": "armee-de-boheme"
         },
         {
           "side": "Armée de Silésie",
@@ -1574,7 +1582,7 @@
           ],
           "strength": 3,
           "winner": true,
-          "id": "armee-russe"
+          "id": "armee-russe-1812"
         }
       ],
       "figures": [
@@ -1775,12 +1783,8 @@
           "faction": "prussiens",
           "path": [
             [
-              12.4,
-              51.5
-            ],
-            [
-              7.8,
-              50.1
+              5.57,
+              50.63
             ],
             [
               4.53,
@@ -1797,7 +1801,7 @@
           ],
           "strength": 3,
           "winner": true,
-          "id": "armee-prussienne"
+          "id": "armee-prussienne-1815"
         }
       ],
       "figures": [

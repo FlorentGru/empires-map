@@ -12,16 +12,6 @@
     ],
     "zoom": 3
   },
-  "bounds": [
-    [
-      2,
-      8
-    ],
-    [
-      146,
-      62
-    ]
-  ],
   "periods": [
     {
       "id": "gengis",
@@ -55,7 +45,7 @@
       "title": "Le kurultaï : Temüdjin devient Gengis Khan",
       "type": "fondation",
       "location": [
-        112.0,
+        112,
         48.8
       ],
       "zoom": 5,
@@ -158,7 +148,7 @@
             ],
             [
               105.5,
-              44.0
+              44
             ],
             [
               105.8,
@@ -191,7 +181,7 @@
             ],
             [
               105.6,
-              38.0
+              38
             ],
             [
               106.23,
@@ -430,7 +420,7 @@
             ],
             [
               114.5,
-              37.0
+              37
             ],
             [
               115.5,
@@ -523,8 +513,8 @@
               47.2
             ],
             [
-              92.0,
-              47.0
+              92,
+              47
             ],
             [
               82.4,
@@ -652,7 +642,7 @@
             ],
             [
               76.5,
-              43.0
+              43
             ],
             [
               71.4,
@@ -676,12 +666,12 @@
               42.3
             ],
             [
-              63.0,
-              43.0
+              63,
+              43
             ],
             [
               65.8,
-              43.0
+              43
             ],
             [
               68.3,
@@ -699,7 +689,7 @@
           "archetype": "khan",
           "quote": "« Je suis le maître du soleil levant, tu l'es du couchant : faisons la paix » (selon Juvayni, abrégé)",
           "position": [
-            84.0,
+            84,
             47.5
           ]
         },
@@ -771,11 +761,11 @@
               39.9
             ],
             [
-              106.0,
+              106,
               46.5
             ],
             [
-              92.0,
+              92,
               47.5
             ],
             [
@@ -849,7 +839,7 @@
       "title": "L'Indus : la fin du Khwarezm",
       "type": "bataille",
       "location": [
-        72.0,
+        72,
         33.9
       ],
       "zoom": 5,
@@ -914,11 +904,11 @@
               34.5
             ],
             [
-              71.0,
+              71,
               34.1
             ],
             [
-              72.0,
+              72,
               33.9
             ]
           ],
@@ -935,7 +925,7 @@
               33.55
             ],
             [
-              70.0,
+              70,
               33.2
             ],
             [
@@ -943,7 +933,7 @@
               33.5
             ],
             [
-              72.0,
+              72,
               33.9
             ]
           ],
@@ -958,7 +948,7 @@
           "archetype": "khan",
           "quote": "« Heureux le père qui a un tel fils ! » (à propos de Jalal ad-Din, selon Juvayni)",
           "position": [
-            71.0,
+            71,
             34.1
           ]
         },
@@ -1028,6 +1018,18 @@
           "faction": "mongols",
           "path": [
             [
+              66.96,
+              39.65
+            ],
+            [
+              58.8,
+              36.2
+            ],
+            [
+              51.4,
+              35.7
+            ],
+            [
               46.3,
               38.1
             ],
@@ -1040,11 +1042,7 @@
               42.06
             ],
             [
-              47.0,
-              44.0
-            ],
-            [
-              42.0,
+              42,
               46.2
             ],
             [
@@ -1066,7 +1064,7 @@
             ],
             [
               32.5,
-              49.0
+              49
             ],
             [
               35.1,
@@ -1088,7 +1086,7 @@
           "archetype": "general-mongol",
           "quote": "« Qu'ils s'avancent : plus ils sont nombreux, plus la poursuite sera facile » (formule libre)",
           "position": [
-            42.0,
+            42,
             46.2
           ]
         },
@@ -1155,7 +1153,7 @@
           "faction": "mongols",
           "path": [
             [
-              72.0,
+              72,
               33.9
             ],
             [
@@ -1171,12 +1169,12 @@
               42.5
             ],
             [
-              84.0,
+              84,
               47.5
             ],
             [
-              100.0,
-              46.0
+              100,
+              46
             ],
             [
               105.5,
@@ -1200,8 +1198,8 @@
               37.9
             ],
             [
-              105.0,
-              38.0
+              105,
+              38
             ],
             [
               106.23,
@@ -1362,7 +1360,7 @@
           "path": [
             [
               114.9,
-              33.0
+              33
             ],
             [
               114.6,
@@ -1384,7 +1382,7 @@
           "archetype": "empereur-chinois",
           "position": [
             114.9,
-            33.0
+            33
           ]
         },
         {
@@ -1452,15 +1450,15 @@
               47.5
             ],
             [
-              46.0,
+              46,
               49.5
             ],
             [
-              50.0,
-              55.0
+              50,
+              55
             ],
             [
-              44.0,
+              44,
               54.4
             ],
             [
@@ -1478,7 +1476,7 @@
           "path": [
             [
               40.9,
-              54.0
+              54
             ],
             [
               40.1,
@@ -1495,7 +1493,7 @@
           "faction": "mongols",
           "archetype": "khan",
           "position": [
-            44.0,
+            44,
             54.4
           ]
         },
@@ -1573,7 +1571,7 @@
             ],
             [
               35.8,
-              54.0
+              54
             ],
             [
               31.3,
@@ -1593,8 +1591,8 @@
           "faction": "rus",
           "path": [
             [
-              30.0,
-              50.0
+              30,
+              50
             ],
             [
               30.52,
@@ -1688,6 +1686,10 @@
           "faction": "mongols",
           "path": [
             [
+              30.5,
+              50.5
+            ],
+            [
               24.3,
               50.85
             ],
@@ -1737,14 +1739,14 @@
             ],
             [
               24.7,
-              49.0
+              49
             ],
             [
-              23.0,
+              23,
               48.8
             ],
             [
-              21.0,
+              21,
               47.97
             ]
           ],
@@ -1765,7 +1767,7 @@
               47.9
             ],
             [
-              21.0,
+              21,
               47.97
             ]
           ],
@@ -1801,7 +1803,7 @@
       "title": "Mort d'Ögödei et retrait d'Europe",
       "type": "politique",
       "location": [
-        16.0,
+        16,
         45.8
       ],
       "zoom": 4.5,
@@ -1853,7 +1855,7 @@
       "title": "Köse Dağ : les Seldjoukides de Roum vassaux",
       "type": "bataille",
       "location": [
-        38.0,
+        38,
         40.1
       ],
       "zoom": 5,
@@ -1898,7 +1900,7 @@
           "faction": "mongols",
           "path": [
             [
-              48.0,
+              48,
               39.3
             ],
             [
@@ -1914,7 +1916,7 @@
               39.75
             ],
             [
-              38.0,
+              38,
               40.1
             ]
           ],
@@ -1939,7 +1941,7 @@
               39.75
             ],
             [
-              38.0,
+              38,
               40.1
             ]
           ],
@@ -2145,6 +2147,14 @@
           "faction": "mongols",
           "path": [
             [
+              102.8,
+              47.2
+            ],
+            [
+              80.2,
+              44.2
+            ],
+            [
               66.8,
               39.05
             ],
@@ -2342,7 +2352,7 @@
       "type": "bataille",
       "location": [
         106.3,
-        30.0
+        30
       ],
       "zoom": 5,
       "summary": "En 1259, Möngke meurt devant la forteresse de Diaoyu, dans le Sichuan : l'invasion de la Chine des Song échoue et l'empire va se déchirer.",
@@ -2386,6 +2396,14 @@
           "faction": "mongols",
           "path": [
             [
+              102.8,
+              47.2
+            ],
+            [
+              106.2,
+              35.5
+            ],
+            [
               107.03,
               33.07
             ],
@@ -2399,7 +2417,7 @@
             ],
             [
               106.3,
-              30.0
+              30
             ]
           ],
           "strength": 3,
@@ -2415,7 +2433,7 @@
             ],
             [
               106.3,
-              30.0
+              30
             ]
           ],
           "strength": 2,
@@ -2430,7 +2448,7 @@
           "archetype": "khan",
           "position": [
             106.3,
-            30.0
+            30
           ]
         },
         {
@@ -2440,7 +2458,7 @@
           "archetype": "general-chinois",
           "position": [
             106.3,
-            30.0
+            30
           ]
         }
       ]
@@ -2570,7 +2588,7 @@
       "title": "L'empire se déchire",
       "type": "bataille",
       "location": [
-        45.0,
+        45,
         43.7
       ],
       "zoom": 4,
@@ -2629,7 +2647,7 @@
               42.06
             ],
             [
-              45.0,
+              45,
               43.7
             ]
           ],
@@ -2641,15 +2659,15 @@
           "faction": "mongols",
           "path": [
             [
-              46.0,
+              46,
               48.8
             ],
             [
-              44.0,
+              44,
               45.5
             ],
             [
-              45.0,
+              45,
               43.7
             ]
           ],
@@ -2686,7 +2704,7 @@
           "archetype": "khan",
           "quote": "« Houlagou a tué le calife : je lui ferai la guerre au nom de l'islam » (formule libre)",
           "position": [
-            46.0,
+            46,
             48.8
           ]
         }
@@ -2813,7 +2831,7 @@
             ],
             [
               112.6,
-              33.0
+              33
             ],
             [
               112.13,
@@ -2872,7 +2890,7 @@
       "title": "Yamen : la fin des Song",
       "type": "bataille",
       "location": [
-        113.0,
+        113,
         22.2
       ],
       "zoom": 5,
@@ -2915,9 +2933,22 @@
       "territoryNote": "Quatre khanats et un rival. Empire Yuan (Kubilaï, capitale Dadu) : toute la Chine désormais conquise (Chine du Nord, Sichuan, Hubei, Hunan, Jiangxi, Zhejiang, Jiangsu, Fujian, Guangdong, Guangxi, Guizhou), Yunnan, Mandchourie, Mongolie, Mongolie-Intérieure, Tibet vassal, Goryeo (Corée) vassal, Dai Viet tributaire. Horde d'or (Möngke Temür puis Tuda Mengu) : steppe pontique, Volga, Kazakhstan occidental, Crimée ; principautés russes vassales. Khanat de Djaghataï (Duwa) : Transoxiane, Xinjiang du sud. Ilkhanat (Abaqa) : Iran, Irak, Azerbaïdjan, Arménie ; vassaux : Seldjoukides de Roum, Géorgie, Petite-Arménie. Khanat d'Ögödei de Qaïdu : Dzoungarie, Kazakhstan oriental. Voisins : Japon (Kamakura), Champa, Dai Viet, Pagan (Birmanie), Mamelouks, sultanat de Delhi.",
       "armies": [
         {
+          "id": "zhang-hongfan",
           "side": "Yuan (Zhang Hongfan)",
           "faction": "mongols",
           "path": [
+            [
+              120.16,
+              30.27
+            ],
+            [
+              118.6,
+              24.9
+            ],
+            [
+              116.6,
+              23.7
+            ],
             [
               113.26,
               23.13
@@ -2931,7 +2962,7 @@
               22.15
             ],
             [
-              113.0,
+              113,
               22.2
             ]
           ],
@@ -2943,7 +2974,7 @@
           "faction": "chinois",
           "path": [
             [
-              114.0,
+              114,
               22.2
             ],
             [
@@ -2951,7 +2982,7 @@
               22.05
             ],
             [
-              113.0,
+              113,
               22.2
             ]
           ],
@@ -2976,7 +3007,7 @@
           "faction": "chinois",
           "archetype": "empereur-chinois",
           "position": [
-            113.0,
+            113,
             22.2
           ]
         },
@@ -3073,7 +3104,7 @@
               29.9
             ],
             [
-              126.0,
+              126,
               31.5
             ],
             [
@@ -3185,7 +3216,7 @@
             ],
             [
               106.3,
-              21.0
+              21
             ],
             [
               106.6,
@@ -3410,7 +3441,7 @@
           "faction": "mongols",
           "archetype": "khan",
           "position": [
-            46.0,
+            46,
             48.8
           ]
         }
@@ -3466,7 +3497,7 @@
           "faction": "mongols",
           "path": [
             [
-              46.0,
+              46,
               48.8
             ],
             [
@@ -3501,7 +3532,7 @@
               42.8
             ],
             [
-              34.0,
+              34,
               44.5
             ],
             [
@@ -3520,7 +3551,7 @@
           "faction": "mongols",
           "archetype": "khan",
           "position": [
-            35.0,
+            35,
             45.3
           ]
         }
@@ -3586,8 +3617,8 @@
           "faction": "mongols",
           "archetype": "general-mongol",
           "position": [
-            116.0,
-            35.0
+            116,
+            35
           ]
         }
       ]
@@ -3634,7 +3665,7 @@
               32.06
             ],
             [
-              117.0,
+              117,
               36.65
             ],
             [

@@ -1,4 +1,4 @@
-import { Popup, type GeoJSONSource, type Map as MapLibreMap, type MapMouseEvent } from 'maplibre-gl';
+import { type GeoJSONSource, type Map as MapLibreMap, type MapMouseEvent } from 'maplibre-gl';
 import type { Feature, Point } from 'geojson';
 import type { ContemporaryCollection } from '../data/loadEmpire';
 import { labelPointsOf } from '../data/labelPoints';
@@ -29,7 +29,8 @@ export interface GotoDetail {
  */
 export class ContemporaryLayers {
   private timer: ReturnType<typeof setTimeout> | undefined;
-  private popup: Popup | null = null;
+  /** Bulle « Voir cet empire » : posée au-dessus de toute l'interface (une Popup MapLibre passerait sous les panneaux). */
+  private card: HTMLDivElement | null = null;
   private hasData = false;
 
   constructor(private map: MapLibreMap, beforeId?: string) {
@@ -111,21 +112,51 @@ export class ContemporaryLayers {
   private onClick = (e: MapMouseEvent & { features?: Feature[] }) => {
     const p = e.features?.[0]?.properties as ContemporaryProperties | undefined;
     if (!p) return;
-    this.popup?.remove();
-    const box = document.createElement('div');
+    this.closeCard();
+    const card = document.createElement('div');
+    card.className = 'contemporary-card';
+    card.setAttribute('role', 'dialog');
+    card.setAttribute('aria-label', `${p.name} · ${p.empireName}`);
     const title = document.createElement('p');
-    title.className = 'contemporary-popup__title';
+    title.className = 'contemporary-card__title';
     title.textContent = `${p.name} · ${p.empireName}, ${formatYear(p.year)}`;
     const btn = document.createElement('button');
     btn.type = 'button';
-    btn.className = 'contemporary-popup__go';
-    btn.textContent = 'Voir cet empire';
+    btn.className = 'contemporary-card__go';
+    btn.textContent = 'Voir cet empire →';
     btn.addEventListener('click', () => {
-      this.popup?.remove();
+      this.closeCard();
       window.dispatchEvent(new CustomEvent<GotoDetail>(GOTO_EVENT, { detail: { empire: p.empire, step: p.stepId } }));
     });
-    box.append(title, btn);
-    this.popup = new Popup({ className: 'contemporary-popup', closeButton: true, maxWidth: '260px' }).setLngLat(e.lngLat).setDOMContent(box).addTo(this.map);
+    const close = document.createElement('button');
+    close.type = 'button';
+    close.className = 'contemporary-card__close';
+    close.setAttribute('aria-label', 'Fermer');
+    close.textContent = '✕';
+    close.addEventListener('click', () => this.closeCard());
+    card.append(close, title, btn);
+    document.body.append(card);
+    // Près du clic, mais toujours entièrement à l'écran.
+    const { clientX, clientY } = e.originalEvent;
+    const w = card.offsetWidth;
+    const h = card.offsetHeight;
+    card.style.left = `${Math.min(window.innerWidth - w - 8, Math.max(8, clientX - w / 2))}px`;
+    card.style.top = `${clientY - h - 14 >= 8 ? clientY - h - 14 : Math.min(window.innerHeight - h - 8, clientY + 14)}px`;
+    this.card = card;
+    btn.focus({ preventScroll: true });
+    document.addEventListener('keydown', this.onKey);
+    this.map.once('movestart', this.closeCard);
+  };
+
+  private onKey = (e: KeyboardEvent) => {
+    if (e.key === 'Escape') this.closeCard();
+  };
+
+  private closeCard = () => {
+    this.card?.remove();
+    this.card = null;
+    document.removeEventListener('keydown', this.onKey);
+    this.map.off('movestart', this.closeCard);
   };
 
   private setOpacity(v: 0 | 1) {
@@ -141,7 +172,7 @@ export class ContemporaryLayers {
     for (const id of IDS) {
       if (this.map.getLayer(id)) this.map.setLayoutProperty(id, 'visibility', on ? 'visible' : 'none');
     }
-    if (!on) this.popup?.remove();
+    if (!on) this.closeCard();
   }
 
   /** Fondu sortant, remplacement des données, fondu entrant. */
@@ -150,7 +181,7 @@ export class ContemporaryLayers {
     const labelSrc = this.map.getSource(SRC_LABELS) as GeoJSONSource | undefined;
     if (!src || !labelSrc) return;
     clearTimeout(this.timer);
-    this.popup?.remove();
+    this.closeCard();
     const apply = () => {
       src.setData(fc);
       const pts = labelPointsOf(fc as unknown as TerritoryCollection);
@@ -173,7 +204,7 @@ export class ContemporaryLayers {
 
   destroy() {
     clearTimeout(this.timer);
-    this.popup?.remove();
+    this.closeCard();
     for (const id of ['contemporaries-fill-core', 'contemporaries-fill-vassal']) {
       this.map.off('click', id, this.onClick);
       this.map.off('mouseenter', id, this.onEnter);

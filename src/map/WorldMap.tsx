@@ -7,7 +7,8 @@ import { prefersReducedMotion } from '../lib/motion';
 import type { City, Empire, TimelineStep } from '../types';
 import { addLand, baseStyle, DEM_SOURCE, MAX_BOUNDS, TERRAIN_EXAGGERATION } from './basemapStyle';
 import { FOCUS_ENTITY_EVENT, geometryBounds, type FocusEntityDetail } from './focusEntity';
-import { ArmyLayer, CHAIN_WALK_MS, continuedArmies } from './armyLayer';
+import { ArmyLayer, continuedArmies } from './armyLayer';
+import { LONG_MARCH_KM, longestMarchKm, marchMs } from '../lib/march';
 import { CityLayer } from './cityLayer';
 import { CountriesLayer } from './countriesLayer';
 import { DiffHighlight } from './diff';
@@ -134,7 +135,7 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
       maxPitch: tiltedRef.current ? MAX_PITCH : 0,
       minZoom: 2.5,
       maxZoom: 9,
-      maxBounds: empire.bounds ?? MAX_BOUNDS,
+      maxBounds: empire.bounds ?? undefined,
       attributionControl: false,
       renderWorldCopies: false,
       fadeDuration: 0,
@@ -142,7 +143,8 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
       maxTileCacheSize: 200,
     });
     mapRef.current = map;
-    if (import.meta.env.DEV) (window as unknown as { __map: MapLibreMap }).__map = map;
+    // Crochet de test : en dev, ou avec ?e2e dans l'URL (tests Playwright sur le build de production).
+    if (import.meta.env.DEV || new URLSearchParams(window.location.search).has('e2e')) (window as unknown as { __map: MapLibreMap }).__map = map;
     let created: MapLayers | null = null;
     map.on('load', () => {
       created = {
@@ -290,10 +292,11 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
     seqPrevRef.current = seqPrev;
     const chained = seqPrev ? continuedArmies(empire.steps, index) : [];
     const camTimers: number[] = [];
-    if (step.location && chained.length > 0 && !prefersReducedMotion()) {
-      // Armée chaînée : on cadre d'abord toute la marche, puis on rejoint le champ de bataille au choc.
+    const longMarch = longestMarchKm(step.armies) > LONG_MARCH_KM;
+    if (step.location && (chained.length > 0 || longMarch) && !prefersReducedMotion()) {
+      // Campagne : on cadre d'abord toute la marche, puis on rejoint le champ de bataille au choc.
       const bounds = new LngLatBounds();
-      for (const a of chained) for (const pt of a.path) bounds.extend(pt);
+      for (const a of step.armies ?? []) if (a.path.length >= 2) for (const pt of a.path) bounds.extend(pt);
       const sp = Math.max(0.25, speedRef.current);
       const pitch = tiltedRef.current ? TILT_PITCH : 0;
       const padding = viewPadding(panelOpenRef.current);
@@ -305,7 +308,7 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
       camTimers.push(
         window.setTimeout(
           () => map.flyTo({ center: loc, zoom, pitch, padding, duration: lead, curve: 1.3, essential: false }),
-          Math.max(0, CHAIN_WALK_MS / sp - lead - 100),
+          Math.max(0, marchMs(step.armies) / sp - lead - 100),
         ),
       );
     } else if (step.location) {

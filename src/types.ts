@@ -51,7 +51,7 @@ export interface Empire {
   description: string;
   /** Vue initiale (défaut : Méditerranée). */
   view?: { center: [number, number]; zoom: number };
-  /** Limites de navigation de la carte [[ouest, sud], [est, nord]] (défaut : MAX_BOUNDS global). */
+  /** Limites de navigation de la carte [[ouest, sud], [est, nord]] (défaut : le monde entier). */
   bounds?: [[number, number], [number, number]];
   /** Grandes périodes (« chapitres ») affichées en bandes sur la frise et annoncées en mode Histoire. */
   periods?: EmpirePeriod[];

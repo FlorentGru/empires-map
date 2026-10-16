@@ -1,22 +1,35 @@
-.contemporary-popup .maplibregl-popup-content {
-  font-family: Georgia, 'Times New Roman', serif;
-  background: #f4ead3;
-  color: #3b3225;
-  border: 1px solid #c9b88f;
-  padding: 10px 12px;
-  max-width: 240px;
+.contemporary-card {
+  position: fixed;
+  z-index: 60;
+  max-width: 260px;
+  padding: 10px 30px 10px 12px;
+  font-family: var(--font-serif, Georgia, serif);
+  color: var(--ink, #2b2219);
+  background: var(--parchment, #f4ead3);
+  border: 1px solid var(--parchment-edge, #c9b48a);
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(43, 34, 25, 0.3);
 }
-.contemporary-popup .maplibregl-popup-tip { border-top-color: #f4ead3; border-bottom-color: #f4ead3; }
-.contemporary-popup__title { margin: 0 0 8px; font-size: 14px; line-height: 1.35; }
-.contemporary-popup__go {
+.contemporary-card__title { margin: 0 0 8px; font-size: 15px; line-height: 1.35; }
+.contemporary-card__go {
   font: inherit;
-  font-size: 13px;
+  font-size: 14px;
   cursor: pointer;
   color: #f4ead3;
   background: #6d4c2a;
   border: 0;
-  border-radius: 4px;
-  padding: 4px 10px;
+  border-radius: 5px;
+  padding: 5px 12px;
 }
-.contemporary-popup__go:hover, .contemporary-popup__go:focus-visible { background: #8a6035; }
+.contemporary-card__go:hover, .contemporary-card__go:focus-visible { background: #8a6035; }
+.contemporary-card__close {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  font: inherit;
+  color: var(--ink-soft, #5c4a38);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
 .legend__swatch--contemporary { opacity: 0.8; }

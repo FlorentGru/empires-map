@@ -5,10 +5,7 @@ export type Speed = (typeof SPEEDS)[number];
 
 /** Durée d'une étape à vitesse 1 (ms). */
 export const BASE_STEP_MS = 6000;
-/** Durée d'une étape de bataille : marche 4 s, mêlée 2,5 s, issue 1,5 s, puis 2 s pour regarder. */
-export const BATTLE_STEP_MS = 10000;
-/** Durée d'une étape à armée chaînée (marche plus longue). */
-export const CHAINED_STEP_MS = 11500;
+/* Étapes avec armées : durée calculée selon la longueur des marches (battleStepMs, src/lib/march.ts). */
 
 interface PlayerState {
   index: number;

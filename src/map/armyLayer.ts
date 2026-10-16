@@ -2,21 +2,19 @@ import { Marker, type GeoJSONSource, type Map as MapLibreMap } from 'maplibre-gl
 import type { ArmyMove, Faction, TimelineStep } from '../types';
 import { FACTION_COLORS, soldierSvg } from './sprites';
 import { standardSvg } from './standard';
+import { CLASH_MS, haversineKm, marchMs, OUTCOME_MS } from '../lib/march';
 
 const SRC = 'army-paths';
 const LAYER = 'army-paths-line';
 const TRAIL_SRC = 'army-trails';
 const TRAIL_CASING = 'army-trails-casing';
 const TRAIL_LAYER = 'army-trails-line';
-/** Durées (ms à vitesse 1) : marche, mêlée, puis issue (déroute du vaincu, victoire). */
+/** Durées (ms à vitesse 1) : marche selon la distance (src/lib/march.ts), mêlée, puis issue. */
 const WALK_MS = 4000;
-export const CHAIN_WALK_MS = 5500;
-const CLASH_MS = 2500;
-const RETREAT_MS = 1500;
+const RETREAT_MS = OUTCOME_MS;
 /** Soldats par régiment selon `strength` (1, 2, 3), et plafond pour l'ensemble de l'étape. */
 const REGIMENT = { 1: 12, 2: 20, 3: 30 } as const;
 const MAX_SOLDIERS = 96;
-const FAR_KM = 1500;
 const RETREAT = 0.15;
 /** Part des soldats qui tombent pendant la mêlée. */
 const FALL_LOSER = 0.45;
@@ -82,13 +80,6 @@ function labelHtml(a: ArmyMove): string {
 const easeInOut = (x: number) => (x < 0.5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2);
 const clamp01 = (x: number) => (x < 0 ? 0 : x > 1 ? 1 : x);
 
-function haversineKm(a: [number, number], b: [number, number]): number {
-  const r = Math.PI / 180;
-  const dLat = (b[1] - a[1]) * r;
-  const dLon = (b[0] - a[0]) * r;
-  const h = Math.sin(dLat / 2) ** 2 + Math.cos(a[1] * r) * Math.cos(b[1] * r) * Math.sin(dLon / 2) ** 2;
-  return 12742 * Math.asin(Math.min(1, Math.sqrt(h)));
-}
 
 function geom(a: ArmyMove) {
   const cum = [0];
@@ -257,7 +248,8 @@ export class ArmyLayer {
     }
     this.sp = Math.max(0.25, speed);
     const cont = new Set(continued);
-    this.walkMs = reuse.size > 0 || cont.size > 0 ? CHAIN_WALK_MS : WALK_MS;
+    // Marche entière, d'autant plus longue que la route est longue (campagnes à travers la carte).
+    this.walkMs = marchMs(armies);
     this.total = (this.walkMs + CLASH_MS + RETREAT_MS) / this.sp;
     const mobile = window.innerWidth < 768;
     const hasWinner = armies.some((a) => a.winner === true);
@@ -448,8 +440,8 @@ export class ArmyLayer {
     const regiment = el.querySelector('.army-regiment') as HTMLDivElement;
     const label = el.querySelector<HTMLElement>('.army-label');
     const marker = new Marker({ element: el, anchor: 'bottom' }).setLngLat(a.path[0]!).addTo(this.map);
-    // Campagne poursuivie : toute la marche depuis le champ de bataille précédent.
-    const startDist = !fullMarch && total > FAR_KM ? total * (2 / 3) : 0;
+    // Toujours toute la marche : depuis la base de départ ou le champ de bataille précédent.
+    const startDist = 0;
     const run: ArmyRun = { id: a.id, path: a.path, cum, total, startDist, loser, retreat, marker, el, regiment, halfW, segIdx: -1, flipped: false, lastDir, settled: false, winner: a.winner === true, label, trail: [], side: -lastDir };
     this.setFront(run, false);
     return run;

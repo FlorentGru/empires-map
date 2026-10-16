@@ -53,8 +53,8 @@ const HB_DIR = path.join(ROOT, '.cache/historical-basemaps');
 const NE_FILE = path.join(ROOT, '.cache/natural-earth/ne_50m_land.geojson');
 const NE_COUNTRIES_FILE = path.join(ROOT, '.cache/natural-earth/ne_50m_admin_0_countries.geojson');
 const LAND_OUT = path.join(ROOT, 'public/data/basemap/land.geojson');
-/** Emprise du fond de carte : Atlantique → Japon, Afrique australe → Arctique. */
-const LAND_BBOX: [number, number, number, number] = [-25, -40, 150, 72];
+/** Emprise du fond de carte : le monde entier (Antarctique exclu). */
+const LAND_BBOX: [number, number, number, number] = [-180, -60, 180, 84];
 const MIN_DIFF_KM2 = 2000;
 
 const BASE_TOLERANCE = 0.02;
@@ -616,6 +616,8 @@ function main() {
   const list = selectedEmpires(argv);
   if (only && list.length !== 1) fail('une étape précise exige --empire <id>');
   if (!only) writeLand();
+  // --land : régénère seulement le fond de carte (land.geojson), sans toucher aux territoires.
+  if (argv.includes('--land')) return;
   for (const cfg of list) buildEmpire(cfg, only);
 }
 

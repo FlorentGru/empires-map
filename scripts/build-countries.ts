@@ -10,9 +10,9 @@ import type { Feature, FeatureCollection, LineString, MultiLineString, Point, Po
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SRC = path.join(ROOT, '.cache/natural-earth/ne_50m_admin_0_countries.geojson');
 const OUT = path.join(ROOT, 'public/data/basemap/countries-2026.geojson');
-const BBOX: [number, number, number, number] = [-25, -40, 150, 72];
+const BBOX: [number, number, number, number] = [-180, -60, 180, 84];
 const TOLERANCE = 0.04;
-const MAX_BYTES = 150 * 1024;
+const MAX_BYTES = 220 * 1024; // monde entier
 
 const r3 = (n: number) => Math.round(n * 1000) / 1000;
 const key = (p: Position) => `${r3(p[0])},${r3(p[1])}`;

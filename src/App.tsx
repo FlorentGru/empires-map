@@ -2,6 +2,7 @@ import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react
 import { EMPIRES, getEmpire } from './data/loadEmpire';
 import { WorldMap } from './map/WorldMap';
 import { AboutModal } from './panels/AboutModal';
+import { FeedbackDialog } from './feedback/FeedbackDialog';
 import { EmpirePicker } from './panels/EmpirePicker';
 import { Legend } from './panels/Legend';
 import { ViewControls } from './panels/ViewControls';
@@ -9,7 +10,8 @@ import { readBool, writeBool } from './lib/settings';
 import { EventPanel } from './panels/EventPanel';
 import { readUrlState, writeUrlState } from './player/urlState';
 import { continuedArmies } from './map/armyLayer';
-import { BASE_STEP_MS, BATTLE_STEP_MS, CHAINED_STEP_MS, usePlayer } from './player/usePlayer';
+import { BASE_STEP_MS, usePlayer } from './player/usePlayer';
+import { battleStepMs } from './lib/march';
 import { chapterAt } from './lib/periods';
 import { useStory } from './story/useStory';
 import { Timeline } from './timeline/Timeline';
@@ -88,13 +90,12 @@ function initialIndex(empire: Empire): number {
 
 function Atlas({ empire, onSelectEmpire, onOpenGallery, onContext }: { empire: Empire; onSelectEmpire: (id: string) => void; onOpenGallery: () => void; onContext: (c: ChatContext) => void }) {
   const player = usePlayer(empire.steps.length, initialIndex(empire), (i) =>
-    continuedArmies(empire.steps, i).length > 0
-      ? CHAINED_STEP_MS
-      : (empire.steps[i]?.armies ?? []).some((a) => a.path.length >= 2) ? BATTLE_STEP_MS : BASE_STEP_MS,
+    battleStepMs(empire.steps[i]) ?? BASE_STEP_MS,
   );
   const step = empire.steps[player.index];
   const [panelOpen, setPanelOpen] = useState(true);
   const [aboutOpen, setAboutOpen] = useState(false);
+  const [feedbackOpen, setFeedbackOpen] = useState(false);
   const [tilted, setTilted] = useState(() => readBool('atlas.tilted', true));
   const [relief, setRelief] = useState(() => readBool('atlas.relief', true));
   const [figures, setFigures] = useState(() => readBool('atlas.figures', true));
@@ -146,6 +147,9 @@ function Atlas({ empire, onSelectEmpire, onOpenGallery, onContext }: { empire: E
           <button type="button" className="btn btn--ghost" onClick={onOpenGallery} aria-haspopup="dialog">
             Galerie
           </button>
+          <button type="button" className="btn btn--ghost" onClick={() => setFeedbackOpen(true)} aria-haspopup="dialog" title="Proposer une idée ou signaler une erreur">
+            Votre avis
+          </button>
           <button type="button" className="btn btn--ghost about-btn" onClick={() => setAboutOpen(true)} aria-haspopup="dialog">
             À propos
           </button>
@@ -162,6 +166,7 @@ function Atlas({ empire, onSelectEmpire, onOpenGallery, onContext }: { empire: E
       <Legend empire={empire} step={step} countries2026={countries2026} neighbors={neighbors} contemporaries={contemporaries} />
       <Timeline empire={empire} player={player} compare2026={countries2026} story={story.controls} />
       <AboutModal open={aboutOpen} onClose={() => setAboutOpen(false)} />
+      <FeedbackDialog open={feedbackOpen} onClose={() => setFeedbackOpen(false)} empire={empire.id} step={step?.id} />
     </div>
   );
 }

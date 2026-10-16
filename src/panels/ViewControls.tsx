@@ -1,3 +1,6 @@
+import { useId, useState } from 'react';
+import { readBool, writeBool } from '../lib/settings';
+
 interface Props {
   tilted: boolean;
   relief: boolean;
@@ -16,8 +19,20 @@ interface Props {
 }
 
 export function ViewControls({ tilted, relief, figures, countries2026, stateNames, neighbors, contemporaries, onToggleTilt, onToggleRelief, onToggleFigures, onToggleCountries2026, onToggleStateNames, onToggleNeighbors, onToggleContemporaries }: Props) {
+  // Réglages repliables (mémorisés) : repliés par défaut sur petit écran.
+  const [open, setOpen] = useState(() => readBool('atlas.controlsOpen', typeof window === 'undefined' || window.innerWidth >= 900));
+  const id = useId();
+  const toggle = () =>
+    setOpen((v) => {
+      writeBool('atlas.controlsOpen', !v);
+      return !v;
+    });
   return (
-    <div className="view-controls" role="group" aria-label="Affichage de la carte">
+    <>
+    <button type="button" className="btn btn--ghost view-controls__toggle" aria-expanded={open} aria-controls={id} onClick={toggle} title={open ? 'Masquer les réglages d\'affichage' : 'Afficher les réglages d\'affichage'}>
+      ⚙ Affichage {open ? '▴' : '▾'}
+    </button>
+    <div className="view-controls" id={id} role="group" aria-label="Affichage de la carte" hidden={!open}>
       <button type="button" className="btn btn--ghost" onClick={onToggleTilt} title="Basculer entre vue à plat et vue inclinée">
         {tilted ? 'Vue 2D' : 'Vue inclinée'}
       </button>
@@ -77,5 +92,6 @@ export function ViewControls({ tilted, relief, figures, countries2026, stateName
         Contemporains : {contemporaries ? 'oui' : 'non'}
       </button>
     </div>
+    </>
   );
 }

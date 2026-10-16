@@ -1,4 +1,5 @@
 import { focusEntity } from '../map/focusEntity';
+import { GOTO_EVENT, type GotoDetail } from '../map/contemporaryLayers';
 import { memo, useEffect, useId, useState, type CSSProperties } from 'react';
 import { loadContemporaries, loadTerritory } from '../data/loadEmpire';
 import { EVENT_TYPES } from '../lib/eventTypes';
@@ -63,7 +64,7 @@ function isMobile(): boolean {
 
 /** Empires contemporains présents à l'étape (couleur + nom), dans l'ordre d'apparition. */
 function useContemporaryEmpires(empireId: string, stepId: string | undefined, on: boolean) {
-  const [list, setList] = useState<{ id: string; name: string; color: string }[]>([]);
+  const [list, setList] = useState<{ id: string; name: string; color: string; stepId: string }[]>([]);
   useEffect(() => {
     if (!on || !stepId) {
       setList([]);
@@ -72,8 +73,8 @@ function useContemporaryEmpires(empireId: string, stepId: string | undefined, on
     let stale = false;
     void loadContemporaries(empireId, stepId).then((fc) => {
       if (stale) return;
-      const seen = new Map<string, { id: string; name: string; color: string }>();
-      for (const f of fc.features) if (!seen.has(f.properties.empire)) seen.set(f.properties.empire, { id: f.properties.empire, name: f.properties.empireName, color: f.properties.color });
+      const seen = new Map<string, { id: string; name: string; color: string; stepId: string }>();
+      for (const f of fc.features) if (!seen.has(f.properties.empire)) seen.set(f.properties.empire, { id: f.properties.empire, name: f.properties.empireName, color: f.properties.color, stepId: f.properties.stepId });
       setList([...seen.values()]);
     });
     return () => {
@@ -151,8 +152,15 @@ export const Legend = memo(function Legend({ empire, step, countries2026 = false
             <ul className="legend__list legend__list--entities">
               {others.map((o) => (
                 <li key={o.id}>
-                  <span className="legend__swatch legend__swatch--contemporary" style={{ background: `${o.color}38`, borderColor: o.color }} aria-hidden="true" />
-                  {o.name}
+                  <button
+                    type="button"
+                    className="legend__entity"
+                    title={`Aller à « ${o.name} » à cette époque`}
+                    onClick={() => window.dispatchEvent(new CustomEvent<GotoDetail>(GOTO_EVENT, { detail: { empire: o.id, step: o.stepId } }))}
+                  >
+                    <span className="legend__swatch legend__swatch--contemporary" style={{ background: `${o.color}38`, borderColor: o.color }} aria-hidden="true" />
+                    {o.name} →
+                  </button>
                 </li>
               ))}
             </ul>
