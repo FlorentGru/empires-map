@@ -1,0 +1,3730 @@
+{
+  "empire": "espagne",
+  "basemapNote": "Empire mondial : étendue nécessaire ≈ [-130,-56,165,62] contre le fond de carte actuel [-25,-40,150,72]. Il manque à l'ouest toute l'Amérique (de -125° à -35°), au sud la Patagonie (jusqu'à -56°) et à l'est les Carolines (jusqu'à 163°E) ; la Floride, la Louisiane et le Mexique septentrional s'étendent jusqu'à 49°N, dans les limites. Aucune géométrie ne franchit l'antiméridien : les Philippines, les Mariannes et les Carolines restent en dessous de 180°E.",
+  "steps": [
+    {
+      "id": "grenade-1492",
+      "year": 1492,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Couronnes de Castille et d'Aragon",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "union": [
+                  {
+                    "country": "^Spain$"
+                  },
+                  {
+                    "region": "Roussillon et Cerdagne"
+                  },
+                  {
+                    "region": "Melilla"
+                  }
+                ]
+              },
+              {
+                "region": "Navarre"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume de Sicile",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sicily$"
+          }
+        },
+        {
+          "name": "Royaume de Sardaigne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sardinia$"
+          }
+        }
+      ],
+      "notes": "Péninsule par Natural Earth (Espagne actuelle) moins la Navarre (région), plus Roussillon-Cerdagne (aragonais) et Melilla (1497). Le Portugal, Naples et la Navarre sont exclus. Les instantanés world_1492/1500 omettent la Catalogne et les côtes : composition préférée. Canaries incluses d'office dans l'Espagne actuelle (conquête inachevée en 1492)."
+    },
+    {
+      "id": "tordesillas-1494",
+      "year": 1494,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Couronnes de Castille et d'Aragon",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "union": [
+                  {
+                    "country": "^Spain$"
+                  },
+                  {
+                    "region": "Roussillon et Cerdagne"
+                  },
+                  {
+                    "region": "Melilla"
+                  }
+                ]
+              },
+              {
+                "region": "Navarre"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume de Sicile",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sicily$"
+          }
+        },
+        {
+          "name": "Royaume de Sardaigne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sardinia$"
+          }
+        },
+        {
+          "name": "Hispaniola (La Isabela)",
+          "status": "core",
+          "source": {
+            "country": "^(Haiti|Dominican Republic)$"
+          }
+        }
+      ],
+      "notes": "Idem 1492 avec Hispaniola entière (revendiquée ; la colonisation réelle se limite à la côte nord puis au sud en 1496)."
+    },
+    {
+      "id": "naples-1504",
+      "year": 1504,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Couronnes de Castille et d'Aragon",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "union": [
+                  {
+                    "country": "^Spain$"
+                  },
+                  {
+                    "region": "Roussillon et Cerdagne"
+                  },
+                  {
+                    "region": "Melilla"
+                  }
+                ]
+              },
+              {
+                "region": "Navarre"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume de Naples",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Naples$"
+          }
+        },
+        {
+          "name": "Royaume de Sicile",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sicily$"
+          }
+        },
+        {
+          "name": "Royaume de Sardaigne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sardinia$"
+          }
+        },
+        {
+          "name": "Antilles espagnoles",
+          "status": "core",
+          "source": {
+            "country": "^(Haiti|Dominican Republic|Cuba|Puerto Rico|Jamaica)$"
+          }
+        }
+      ],
+      "notes": "Naples d'après l'instantané 1530 (bloc simple, côtes généralisées). Antilles des 1504 prises en bloc (Cuba, Porto Rico et Jamaïque sont explorés mais colonisés après 1508-1511 : approximation assumée)."
+    },
+    {
+      "id": "charles-quint-1516",
+      "year": 1516,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Couronnes de Castille et d'Aragon",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Roussillon et Cerdagne"
+              },
+              {
+                "region": "Melilla"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume de Naples",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Naples$"
+          }
+        },
+        {
+          "name": "Royaume de Sicile",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sicily$"
+          }
+        },
+        {
+          "name": "Royaume de Sardaigne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sardinia$"
+          }
+        },
+        {
+          "name": "Pays-Bas bourguignons",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Pays-Bas du Nord"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "region": "Flandre et Hainaut français"
+              },
+              {
+                "region": "Artois"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Franche-Comté",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Franche-Comté$"
+          }
+        },
+        {
+          "name": "Oran",
+          "status": "core",
+          "source": {
+            "region": "Oran"
+          }
+        },
+        {
+          "name": "Antilles espagnoles",
+          "status": "core",
+          "source": {
+            "country": "^(Haiti|Dominican Republic|Cuba|Puerto Rico|Jamaica)$"
+          }
+        },
+        {
+          "name": "Panama (Darién)",
+          "status": "core",
+          "source": {
+            "country": "^Panama$"
+          }
+        }
+      ],
+      "notes": "Pays-Bas = Belgique + Luxembourg + Pays-Bas actuels + Artois et Flandre/Hainaut français (régions) ; Franche-Comté de l'instantané 1650. Navarre incluse (annexée 1512-1515). Milan français : exclu. Autriche exclue."
+    },
+    {
+      "id": "tenochtitlan-1521",
+      "year": 1521,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Couronnes de Castille et d'Aragon",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Roussillon et Cerdagne"
+              },
+              {
+                "region": "Melilla"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume de Naples",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Naples$"
+          }
+        },
+        {
+          "name": "Royaume de Sicile",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sicily$"
+          }
+        },
+        {
+          "name": "Royaume de Sardaigne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sardinia$"
+          }
+        },
+        {
+          "name": "Pays-Bas bourguignons",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Pays-Bas du Nord"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "region": "Flandre et Hainaut français"
+              },
+              {
+                "region": "Artois"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Franche-Comté",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Franche-Comté$"
+          }
+        },
+        {
+          "name": "Oran",
+          "status": "core",
+          "source": {
+            "region": "Oran"
+          }
+        },
+        {
+          "name": "Antilles espagnoles",
+          "status": "core",
+          "source": {
+            "country": "^(Haiti|Dominican Republic|Cuba|Puerto Rico|Jamaica)$"
+          }
+        },
+        {
+          "name": "Panama (Darién)",
+          "status": "core",
+          "source": {
+            "country": "^Panama$"
+          }
+        },
+        {
+          "name": "Nouvelle-Espagne (Mexique central)",
+          "status": "core",
+          "source": {
+            "region": "Mexique central"
+          }
+        }
+      ],
+      "notes": "Mexique central par région (conquête de 1521) ; le reste du Mexique et l'Amérique centrale ne sont pas encore pris."
+    },
+    {
+      "id": "pavie-1525",
+      "year": 1525,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Couronnes de Castille et d'Aragon",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Roussillon et Cerdagne"
+              },
+              {
+                "region": "Melilla"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume de Naples",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Naples$"
+          }
+        },
+        {
+          "name": "Royaume de Sicile",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sicily$"
+          }
+        },
+        {
+          "name": "Royaume de Sardaigne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sardinia$"
+          }
+        },
+        {
+          "name": "Pays-Bas bourguignons",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Pays-Bas du Nord"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "region": "Flandre et Hainaut français"
+              },
+              {
+                "region": "Artois"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Franche-Comté",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Franche-Comté$"
+          }
+        },
+        {
+          "name": "Oran",
+          "status": "core",
+          "source": {
+            "region": "Oran"
+          }
+        },
+        {
+          "name": "Antilles espagnoles",
+          "status": "core",
+          "source": {
+            "country": "^(Haiti|Dominican Republic|Cuba|Puerto Rico|Jamaica)$"
+          }
+        },
+        {
+          "name": "Panama (Darién)",
+          "status": "core",
+          "source": {
+            "country": "^Panama$"
+          }
+        },
+        {
+          "name": "Nouvelle-Espagne (Mexique central)",
+          "status": "core",
+          "source": {
+            "region": "Mexique central"
+          }
+        },
+        {
+          "name": "Duché de Milan (occupé par les impériaux)",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Milan$"
+          }
+        }
+      ],
+      "notes": "Milan occupé par l'armée impériale après Pavie, rendu aux Sforza comme fief impérial : statut vassal."
+    },
+    {
+      "id": "cajamarca-1532",
+      "year": 1532,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Couronnes de Castille et d'Aragon",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Roussillon et Cerdagne"
+              },
+              {
+                "region": "Melilla"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume de Naples",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Naples$"
+          }
+        },
+        {
+          "name": "Royaume de Sicile",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sicily$"
+          }
+        },
+        {
+          "name": "Royaume de Sardaigne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sardinia$"
+          }
+        },
+        {
+          "name": "Pays-Bas bourguignons",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Pays-Bas du Nord"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "region": "Flandre et Hainaut français"
+              },
+              {
+                "region": "Artois"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Franche-Comté",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Franche-Comté$"
+          }
+        },
+        {
+          "name": "Oran",
+          "status": "core",
+          "source": {
+            "region": "Oran"
+          }
+        },
+        {
+          "name": "Antilles espagnoles",
+          "status": "core",
+          "source": {
+            "country": "^(Haiti|Dominican Republic|Cuba|Puerto Rico|Jamaica)$"
+          }
+        },
+        {
+          "name": "Nouvelle-Espagne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Viceroyalty of New Spain$"
+          }
+        },
+        {
+          "name": "Duché de Milan (fief impérial)",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Milan$"
+          }
+        }
+      ],
+      "notes": "Nouvelle-Espagne = « Viceroyalty of New Spain » de l'instantané 1530 (Mexique, Amérique centrale, Panama, côte du Venezuela). Pérou non conquis : exclu."
+    },
+    {
+      "id": "philippe-ii-1556",
+      "year": 1556,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Couronnes de Castille et d'Aragon",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Roussillon et Cerdagne"
+              },
+              {
+                "region": "Melilla"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume de Naples",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Naples$"
+          }
+        },
+        {
+          "name": "Royaume de Sicile",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sicily$"
+          }
+        },
+        {
+          "name": "Royaume de Sardaigne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sardinia$"
+          }
+        },
+        {
+          "name": "Duché de Milan",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Milan$"
+          }
+        },
+        {
+          "name": "Pays-Bas bourguignons",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Pays-Bas du Nord"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "region": "Flandre et Hainaut français"
+              },
+              {
+                "region": "Artois"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Franche-Comté",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Franche-Comté$"
+          }
+        },
+        {
+          "name": "Oran",
+          "status": "core",
+          "source": {
+            "region": "Oran"
+          }
+        },
+        {
+          "name": "Antilles espagnoles",
+          "status": "core",
+          "source": {
+            "country": "^(Haiti|Dominican Republic|Cuba|Puerto Rico|Jamaica)$"
+          }
+        },
+        {
+          "name": "Nouvelle-Espagne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Viceroyalty of New Spain$"
+          }
+        },
+        {
+          "name": "Vice-royauté du Pérou",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "snapshot": "world_1650",
+                "match": "^Viceroyalty of Peru$"
+              },
+              {
+                "country": "^(Colombia|Venezuela|Ecuador|Uruguay)$"
+              },
+              {
+                "region": "Río de la Plata"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Amérique du Sud = « Viceroyalty of Peru » de l'instantané 1650 (englobe la Nouvelle-Grenade, le Chili et le Rio de la Plata ; frontière orientale approximative). Floride (1565) et Philippines (1565-1571) pas encore."
+    },
+    {
+      "id": "saint-quentin-1557",
+      "year": 1557,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Couronnes de Castille et d'Aragon",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Roussillon et Cerdagne"
+              },
+              {
+                "region": "Melilla"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume de Naples",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Naples$"
+          }
+        },
+        {
+          "name": "Royaume de Sicile",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sicily$"
+          }
+        },
+        {
+          "name": "Royaume de Sardaigne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sardinia$"
+          }
+        },
+        {
+          "name": "Duché de Milan",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Milan$"
+          }
+        },
+        {
+          "name": "Pays-Bas bourguignons",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Pays-Bas du Nord"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "region": "Flandre et Hainaut français"
+              },
+              {
+                "region": "Artois"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Franche-Comté",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Franche-Comté$"
+          }
+        },
+        {
+          "name": "Oran",
+          "status": "core",
+          "source": {
+            "region": "Oran"
+          }
+        },
+        {
+          "name": "Antilles espagnoles",
+          "status": "core",
+          "source": {
+            "country": "^(Haiti|Dominican Republic|Cuba|Puerto Rico|Jamaica)$"
+          }
+        },
+        {
+          "name": "Nouvelle-Espagne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Viceroyalty of New Spain$"
+          }
+        },
+        {
+          "name": "Vice-royauté du Pérou",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "snapshot": "world_1650",
+                "match": "^Viceroyalty of Peru$"
+              },
+              {
+                "country": "^(Colombia|Venezuela|Ecuador|Uruguay)$"
+              },
+              {
+                "region": "Río de la Plata"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Idem 1556."
+    },
+    {
+      "id": "manille-1571",
+      "year": 1571,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Couronnes de Castille et d'Aragon",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Roussillon et Cerdagne"
+              },
+              {
+                "region": "Melilla"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume de Naples",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Naples$"
+          }
+        },
+        {
+          "name": "Royaume de Sicile",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sicily$"
+          }
+        },
+        {
+          "name": "Royaume de Sardaigne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sardinia$"
+          }
+        },
+        {
+          "name": "Duché de Milan",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Milan$"
+          }
+        },
+        {
+          "name": "Pays-Bas bourguignons",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Pays-Bas du Nord"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "region": "Flandre et Hainaut français"
+              },
+              {
+                "region": "Artois"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Franche-Comté",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Franche-Comté$"
+          }
+        },
+        {
+          "name": "Oran",
+          "status": "core",
+          "source": {
+            "region": "Oran"
+          }
+        },
+        {
+          "name": "Antilles espagnoles",
+          "status": "core",
+          "source": {
+            "country": "^(Haiti|Dominican Republic|Cuba|Puerto Rico|Jamaica)$"
+          }
+        },
+        {
+          "name": "Nouvelle-Espagne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Viceroyalty of New Spain$"
+          }
+        },
+        {
+          "name": "Vice-royauté du Pérou",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "snapshot": "world_1650",
+                "match": "^Viceroyalty of Peru$"
+              },
+              {
+                "country": "^(Colombia|Venezuela|Ecuador|Uruguay)$"
+              },
+              {
+                "region": "Río de la Plata"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Floride",
+          "status": "core",
+          "source": {
+            "region": "Floride"
+          }
+        },
+        {
+          "name": "Philippines",
+          "status": "core",
+          "source": {
+            "country": "^Philippines$"
+          }
+        }
+      ],
+      "notes": "Idem 1556 + Floride (région, 1565) + Philippines (Natural Earth, colonisation réelle partielle). Pays-Bas du Nord encore sous la Couronne en 1571 (révolte en cours)."
+    },
+    {
+      "id": "lepante-1571",
+      "year": 1571,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Couronnes de Castille et d'Aragon",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Roussillon et Cerdagne"
+              },
+              {
+                "region": "Melilla"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume de Naples",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Naples$"
+          }
+        },
+        {
+          "name": "Royaume de Sicile",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sicily$"
+          }
+        },
+        {
+          "name": "Royaume de Sardaigne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sardinia$"
+          }
+        },
+        {
+          "name": "Duché de Milan",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Milan$"
+          }
+        },
+        {
+          "name": "Pays-Bas bourguignons",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Netherlands$",
+                "region": "Pays-Bas du Nord"
+              },
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "region": "Flandre et Hainaut français"
+              },
+              {
+                "region": "Artois"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Franche-Comté",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Franche-Comté$"
+          }
+        },
+        {
+          "name": "Oran",
+          "status": "core",
+          "source": {
+            "region": "Oran"
+          }
+        },
+        {
+          "name": "Antilles espagnoles",
+          "status": "core",
+          "source": {
+            "country": "^(Haiti|Dominican Republic|Cuba|Puerto Rico|Jamaica)$"
+          }
+        },
+        {
+          "name": "Nouvelle-Espagne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Viceroyalty of New Spain$"
+          }
+        },
+        {
+          "name": "Vice-royauté du Pérou",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "snapshot": "world_1650",
+                "match": "^Viceroyalty of Peru$"
+              },
+              {
+                "country": "^(Colombia|Venezuela|Ecuador|Uruguay)$"
+              },
+              {
+                "region": "Río de la Plata"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Floride",
+          "status": "core",
+          "source": {
+            "region": "Floride"
+          }
+        },
+        {
+          "name": "Philippines",
+          "status": "core",
+          "source": {
+            "country": "^Philippines$"
+          }
+        }
+      ],
+      "notes": "Idem manille-1571."
+    },
+    {
+      "id": "union-iberique-1580",
+      "year": 1580,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Couronnes de Castille et d'Aragon",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Roussillon et Cerdagne"
+              },
+              {
+                "region": "Melilla"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume de Naples",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Naples$"
+          }
+        },
+        {
+          "name": "Royaume de Sicile",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sicily$"
+          }
+        },
+        {
+          "name": "Royaume de Sardaigne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sardinia$"
+          }
+        },
+        {
+          "name": "Duché de Milan",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Milan$"
+          }
+        },
+        {
+          "name": "Pays-Bas espagnols (provinces du Sud)",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "region": "Flandre et Hainaut français"
+              },
+              {
+                "region": "Artois"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Franche-Comté",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Franche-Comté$"
+          }
+        },
+        {
+          "name": "Oran",
+          "status": "core",
+          "source": {
+            "region": "Oran"
+          }
+        },
+        {
+          "name": "Antilles espagnoles",
+          "status": "core",
+          "source": {
+            "country": "^(Haiti|Dominican Republic|Cuba|Puerto Rico|Jamaica)$"
+          }
+        },
+        {
+          "name": "Nouvelle-Espagne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Viceroyalty of New Spain$"
+          }
+        },
+        {
+          "name": "Vice-royauté du Pérou",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "snapshot": "world_1650",
+                "match": "^Viceroyalty of Peru$"
+              },
+              {
+                "country": "^(Colombia|Venezuela|Ecuador|Uruguay)$"
+              },
+              {
+                "region": "Río de la Plata"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Floride",
+          "status": "core",
+          "source": {
+            "region": "Floride"
+          }
+        },
+        {
+          "name": "Philippines",
+          "status": "core",
+          "source": {
+            "country": "^Philippines$"
+          }
+        },
+        {
+          "name": "Royaume de Portugal",
+          "status": "vassal",
+          "source": {
+            "country": "^Portugal$"
+          }
+        },
+        {
+          "name": "Brésil portugais",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Portuguese Brazil$"
+          }
+        },
+        {
+          "name": "Empire portugais d'Afrique et d'Asie",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "region": "Luanda et Benguela"
+              },
+              {
+                "region": "Mozambique côtier"
+              },
+              {
+                "region": "Goa"
+              },
+              {
+                "country": "^(Cabo Verde|Guinea-Bissau)$"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Choix : le Portugal et son empire sont `vassal` (royaume distinct, mêmes lois et institutions, même roi : union personnelle). Pays-Bas du Nord rebelles (Union d'Utrecht 1579) exclus. Brésil = côte de l'instantané 1650 ; Afrique et Asie portugaises par petites régions (Luanda-Benguela, Mozambique côtier, Goa), sans Macao, Malacca ni les Moluques (limite)."
+    },
+    {
+      "id": "armada-1588",
+      "year": 1588,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Couronnes de Castille et d'Aragon",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Roussillon et Cerdagne"
+              },
+              {
+                "region": "Melilla"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume de Naples",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Naples$"
+          }
+        },
+        {
+          "name": "Royaume de Sicile",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sicily$"
+          }
+        },
+        {
+          "name": "Royaume de Sardaigne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sardinia$"
+          }
+        },
+        {
+          "name": "Duché de Milan",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Milan$"
+          }
+        },
+        {
+          "name": "Pays-Bas espagnols (provinces du Sud)",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "region": "Flandre et Hainaut français"
+              },
+              {
+                "region": "Artois"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Franche-Comté",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Franche-Comté$"
+          }
+        },
+        {
+          "name": "Oran",
+          "status": "core",
+          "source": {
+            "region": "Oran"
+          }
+        },
+        {
+          "name": "Antilles espagnoles",
+          "status": "core",
+          "source": {
+            "country": "^(Haiti|Dominican Republic|Cuba|Puerto Rico|Jamaica)$"
+          }
+        },
+        {
+          "name": "Nouvelle-Espagne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Viceroyalty of New Spain$"
+          }
+        },
+        {
+          "name": "Vice-royauté du Pérou",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "snapshot": "world_1650",
+                "match": "^Viceroyalty of Peru$"
+              },
+              {
+                "country": "^(Colombia|Venezuela|Ecuador|Uruguay)$"
+              },
+              {
+                "region": "Río de la Plata"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Floride",
+          "status": "core",
+          "source": {
+            "region": "Floride"
+          }
+        },
+        {
+          "name": "Philippines",
+          "status": "core",
+          "source": {
+            "country": "^Philippines$"
+          }
+        },
+        {
+          "name": "Royaume de Portugal",
+          "status": "vassal",
+          "source": {
+            "country": "^Portugal$"
+          }
+        },
+        {
+          "name": "Brésil portugais",
+          "status": "vassal",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Portuguese Brazil$"
+          }
+        },
+        {
+          "name": "Empire portugais d'Afrique et d'Asie",
+          "status": "vassal",
+          "source": {
+            "union": [
+              {
+                "region": "Luanda et Benguela"
+              },
+              {
+                "region": "Mozambique côtier"
+              },
+              {
+                "region": "Goa"
+              },
+              {
+                "country": "^(Cabo Verde|Guinea-Bissau)$"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Idem 1580."
+    },
+    {
+      "id": "rocroi-1643",
+      "year": 1643,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Couronnes de Castille et d'Aragon",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Melilla"
+              },
+              {
+                "region": "Ceuta"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume de Naples",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Naples$"
+          }
+        },
+        {
+          "name": "Royaume de Sicile",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sicily$"
+          }
+        },
+        {
+          "name": "Royaume de Sardaigne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sardinia$"
+          }
+        },
+        {
+          "name": "Duché de Milan",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Milan$"
+          }
+        },
+        {
+          "name": "Pays-Bas espagnols",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "region": "Flandre et Hainaut français"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Franche-Comté",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Franche-Comté$"
+          }
+        },
+        {
+          "name": "Oran",
+          "status": "core",
+          "source": {
+            "region": "Oran"
+          }
+        },
+        {
+          "name": "Antilles espagnoles",
+          "status": "core",
+          "source": {
+            "country": "^(Haiti|Dominican Republic|Cuba|Puerto Rico|Jamaica)$"
+          }
+        },
+        {
+          "name": "Nouvelle-Espagne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Viceroyalty of New Spain$"
+          }
+        },
+        {
+          "name": "Vice-royauté du Pérou",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "snapshot": "world_1650",
+                "match": "^Viceroyalty of Peru$"
+              },
+              {
+                "country": "^(Colombia|Venezuela|Ecuador|Uruguay)$"
+              },
+              {
+                "region": "Río de la Plata"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Floride",
+          "status": "core",
+          "source": {
+            "region": "Floride"
+          }
+        },
+        {
+          "name": "Philippines",
+          "status": "core",
+          "source": {
+            "country": "^Philippines$"
+          }
+        }
+      ],
+      "notes": "Portugal séparé (1640) : exclu. Roussillon occupé par la France (1642) : exclu. Catalogne laissée en `core` bien qu'en révolte sous protection française (limite). Ceuta devient espagnole avec le choix de 1640. Artois retiré (Arras française en 1640)."
+    },
+    {
+      "id": "westphalie-1648",
+      "year": 1648,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Couronnes de Castille et d'Aragon",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Melilla"
+              },
+              {
+                "region": "Ceuta"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume de Naples",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Naples$"
+          }
+        },
+        {
+          "name": "Royaume de Sicile",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sicily$"
+          }
+        },
+        {
+          "name": "Royaume de Sardaigne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sardinia$"
+          }
+        },
+        {
+          "name": "Duché de Milan",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Milan$"
+          }
+        },
+        {
+          "name": "Pays-Bas espagnols",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "region": "Flandre et Hainaut français"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Franche-Comté",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Franche-Comté$"
+          }
+        },
+        {
+          "name": "Oran",
+          "status": "core",
+          "source": {
+            "region": "Oran"
+          }
+        },
+        {
+          "name": "Antilles espagnoles",
+          "status": "core",
+          "source": {
+            "country": "^(Haiti|Dominican Republic|Cuba|Puerto Rico|Jamaica)$"
+          }
+        },
+        {
+          "name": "Nouvelle-Espagne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Viceroyalty of New Spain$"
+          }
+        },
+        {
+          "name": "Vice-royauté du Pérou",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "snapshot": "world_1650",
+                "match": "^Viceroyalty of Peru$"
+              },
+              {
+                "country": "^(Colombia|Venezuela|Ecuador|Uruguay)$"
+              },
+              {
+                "region": "Río de la Plata"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Floride",
+          "status": "core",
+          "source": {
+            "region": "Floride"
+          }
+        },
+        {
+          "name": "Philippines",
+          "status": "core",
+          "source": {
+            "country": "^Philippines$"
+          }
+        }
+      ],
+      "notes": "Idem 1643 ; Provinces-Unies exclues (indépendantes)."
+    },
+    {
+      "id": "pyrenees-1659",
+      "year": 1659,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Couronnes de Castille et d'Aragon",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Melilla"
+              },
+              {
+                "region": "Ceuta"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume de Naples",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Naples$"
+          }
+        },
+        {
+          "name": "Royaume de Sicile",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sicily$"
+          }
+        },
+        {
+          "name": "Royaume de Sardaigne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Sardinia$"
+          }
+        },
+        {
+          "name": "Duché de Milan",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1530",
+            "match": "^Milan$"
+          }
+        },
+        {
+          "name": "Pays-Bas espagnols",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^(Belgium|Luxembourg)$"
+              },
+              {
+                "region": "Flandre et Hainaut français"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Franche-Comté",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Franche-Comté$"
+          }
+        },
+        {
+          "name": "Oran",
+          "status": "core",
+          "source": {
+            "region": "Oran"
+          }
+        },
+        {
+          "name": "Antilles espagnoles",
+          "status": "core",
+          "source": {
+            "country": "^(Haiti|Dominican Republic|Cuba|Puerto Rico)$"
+          }
+        },
+        {
+          "name": "Nouvelle-Espagne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Viceroyalty of New Spain$"
+          }
+        },
+        {
+          "name": "Vice-royauté du Pérou",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "snapshot": "world_1650",
+                "match": "^Viceroyalty of Peru$"
+              },
+              {
+                "country": "^(Colombia|Venezuela|Ecuador|Uruguay)$"
+              },
+              {
+                "region": "Río de la Plata"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Floride",
+          "status": "core",
+          "source": {
+            "region": "Floride"
+          }
+        },
+        {
+          "name": "Philippines",
+          "status": "core",
+          "source": {
+            "country": "^Philippines$"
+          }
+        }
+      ],
+      "notes": "Jamaïque perdue (1655). Roussillon-Cerdagne déjà exclus. Artois exclu ; Flandre et Hainaut français (Lille, Valenciennes, Cambrai…) restent espagnols jusqu'en 1668-1678. Places du Luxembourg cédées (Thionville, Montmédy) non retirées : limite."
+    },
+    {
+      "id": "succession-1700",
+      "year": 1700,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Couronnes de Castille et d'Aragon",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Melilla"
+              },
+              {
+                "region": "Ceuta"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Royaume de Naples",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1700",
+            "match": "^Naples$"
+          }
+        },
+        {
+          "name": "Royaume de Sicile",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1700",
+            "match": "^Sicily$"
+          }
+        },
+        {
+          "name": "Royaume de Sardaigne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1700",
+            "match": "^Sardinia$"
+          }
+        },
+        {
+          "name": "Duché de Milan",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1700",
+            "match": "^Milan$"
+          }
+        },
+        {
+          "name": "Pays-Bas espagnols",
+          "status": "core",
+          "source": {
+            "country": "^(Belgium|Luxembourg)$"
+          }
+        },
+        {
+          "name": "Oran",
+          "status": "core",
+          "source": {
+            "region": "Oran"
+          }
+        },
+        {
+          "name": "Antilles espagnoles",
+          "status": "core",
+          "source": {
+            "country": "^(Dominican Republic|Cuba|Puerto Rico)$"
+          }
+        },
+        {
+          "name": "Nouvelle-Espagne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Viceroyalty of New Spain$"
+          }
+        },
+        {
+          "name": "Vice-royauté du Pérou",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "snapshot": "world_1650",
+                "match": "^Viceroyalty of Peru$"
+              },
+              {
+                "country": "^(Colombia|Venezuela|Ecuador|Uruguay)$"
+              },
+              {
+                "region": "Río de la Plata"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Floride",
+          "status": "core",
+          "source": {
+            "region": "Floride"
+          }
+        },
+        {
+          "name": "Philippines",
+          "status": "core",
+          "source": {
+            "country": "^Philippines$"
+          }
+        },
+        {
+          "name": "Mariannes",
+          "status": "core",
+          "source": {
+            "country": "^(Guam|Northern Mariana Islands)$"
+          }
+        }
+      ],
+      "notes": "Partie française de Saint-Domingue (Haïti) retirée (traité de Ryswick 1697). Franche-Comté perdue en 1678. Lille et le Hainaut français aussi (1668-1678) : Pays-Bas = Belgique + Luxembourg actuels."
+    },
+    {
+      "id": "utrecht-1713",
+      "year": 1713,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Royaume d'Espagne",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "union": [
+                  {
+                    "country": "^Spain$"
+                  },
+                  {
+                    "region": "Melilla"
+                  },
+                  {
+                    "region": "Ceuta"
+                  }
+                ]
+              },
+              {
+                "region": "Minorque"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Antilles espagnoles",
+          "status": "core",
+          "source": {
+            "country": "^(Dominican Republic|Cuba|Puerto Rico)$"
+          }
+        },
+        {
+          "name": "Nouvelle-Espagne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1650",
+            "match": "^Viceroyalty of New Spain$"
+          }
+        },
+        {
+          "name": "Vice-royauté du Pérou",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "snapshot": "world_1650",
+                "match": "^Viceroyalty of Peru$"
+              },
+              {
+                "country": "^(Colombia|Venezuela|Ecuador|Uruguay)$"
+              },
+              {
+                "region": "Río de la Plata"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Floride",
+          "status": "core",
+          "source": {
+            "region": "Floride"
+          }
+        },
+        {
+          "name": "Philippines",
+          "status": "core",
+          "source": {
+            "country": "^Philippines$"
+          }
+        },
+        {
+          "name": "Mariannes",
+          "status": "core",
+          "source": {
+            "country": "^(Guam|Northern Mariana Islands)$"
+          }
+        }
+      ],
+      "notes": "Perdus : Italie, Pays-Bas, Gibraltar (hors Natural Earth), Minorque (région retirée), Oran (1708). Amérique : géométrie de 1650 (la Louisiane française et la Floride sont discutables ; Nouvelle-Grenade incluse dans le Pérou)."
+    },
+    {
+      "id": "louisiane-1763",
+      "year": 1763,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Royaume d'Espagne",
+          "status": "core",
+          "source": {
+            "diff": [
+              {
+                "union": [
+                  {
+                    "country": "^Spain$"
+                  },
+                  {
+                    "region": "Melilla"
+                  },
+                  {
+                    "region": "Ceuta"
+                  }
+                ]
+              },
+              {
+                "region": "Minorque"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Oran",
+          "status": "core",
+          "source": {
+            "region": "Oran"
+          }
+        },
+        {
+          "name": "Cuba, Porto Rico et Santo Domingo",
+          "status": "core",
+          "source": {
+            "country": "^(Dominican Republic|Cuba|Puerto Rico)$"
+          }
+        },
+        {
+          "name": "Nouvelle-Espagne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1783",
+            "match": "^Viceroyalty of New Spain$"
+          }
+        },
+        {
+          "name": "Nouvelle-Grenade",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1783",
+            "match": "^Viceroyalty of New Granada$"
+          }
+        },
+        {
+          "name": "Vice-royauté du Pérou",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1783",
+            "match": "^Viceroyalty of Peru$"
+          }
+        },
+        {
+          "name": "Río de la Plata",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "snapshot": "world_1783",
+                "match": "^Viceroyalty of the Río de la Plata$"
+              },
+              {
+                "region": "Río de la Plata"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Paraguay",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1783",
+            "match": "^Paraguay$"
+          }
+        },
+        {
+          "name": "Louisiane espagnole",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1783",
+            "match": "^Luisiana$"
+          }
+        },
+        {
+          "name": "Philippines",
+          "status": "core",
+          "source": {
+            "country": "^Philippines$"
+          }
+        },
+        {
+          "name": "Mariannes",
+          "status": "core",
+          "source": {
+            "country": "^(Guam|Northern Mariana Islands)$"
+          }
+        }
+      ],
+      "notes": "Amérique du Sud d'après l'instantané 1783 (le vice-royaume du Río de la Plata date de 1776 : anticipation d'une génération). Floride britannique : exclue. Louisiane = « Luisiana » de l'instantané 1783 (étiquetée France dans l'instantané, ici espagnole). Minorque britannique : retirée. Oran (reprise en 1732) incluse."
+    },
+    {
+      "id": "nootka-1790",
+      "year": 1790,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Royaume d'Espagne",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Melilla"
+              },
+              {
+                "region": "Ceuta"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Oran",
+          "status": "core",
+          "source": {
+            "region": "Oran"
+          }
+        },
+        {
+          "name": "Cuba, Porto Rico et Santo Domingo",
+          "status": "core",
+          "source": {
+            "country": "^(Dominican Republic|Cuba|Puerto Rico)$"
+          }
+        },
+        {
+          "name": "Nouvelle-Espagne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1783",
+            "match": "^Viceroyalty of New Spain$"
+          }
+        },
+        {
+          "name": "Nouvelle-Grenade",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1783",
+            "match": "^Viceroyalty of New Granada$"
+          }
+        },
+        {
+          "name": "Vice-royauté du Pérou",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1783",
+            "match": "^Viceroyalty of Peru$"
+          }
+        },
+        {
+          "name": "Río de la Plata",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "snapshot": "world_1783",
+                "match": "^Viceroyalty of the Río de la Plata$"
+              },
+              {
+                "region": "Río de la Plata"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Paraguay",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1783",
+            "match": "^Paraguay$"
+          }
+        },
+        {
+          "name": "Floride",
+          "status": "core",
+          "source": {
+            "region": "Floride"
+          }
+        },
+        {
+          "name": "Louisiane espagnole",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1783",
+            "match": "^Luisiana$"
+          }
+        },
+        {
+          "name": "Philippines",
+          "status": "core",
+          "source": {
+            "country": "^Philippines$"
+          }
+        },
+        {
+          "name": "Mariannes",
+          "status": "core",
+          "source": {
+            "country": "^(Guam|Northern Mariana Islands)$"
+          }
+        }
+      ],
+      "notes": "Apogée : instantané 1783 pour l'Amérique ; l'Alaska et Nootka, revendiqués, ne sont pas représentés (Nouvelle-Espagne s'arrête vers 44°N sur l'instantané). Guinée (Fernando Poo, nominale) exclue."
+    },
+    {
+      "id": "trafalgar-1805",
+      "year": 1805,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Royaume d'Espagne",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Melilla"
+              },
+              {
+                "region": "Ceuta"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Cuba et Porto Rico",
+          "status": "core",
+          "source": {
+            "country": "^(Cuba|Puerto Rico)$"
+          }
+        },
+        {
+          "name": "Nouvelle-Espagne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1783",
+            "match": "^Viceroyalty of New Spain$"
+          }
+        },
+        {
+          "name": "Nouvelle-Grenade",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1783",
+            "match": "^Viceroyalty of New Granada$"
+          }
+        },
+        {
+          "name": "Vice-royauté du Pérou",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1783",
+            "match": "^Viceroyalty of Peru$"
+          }
+        },
+        {
+          "name": "Río de la Plata",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "snapshot": "world_1783",
+                "match": "^Viceroyalty of the Río de la Plata$"
+              },
+              {
+                "region": "Río de la Plata"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Paraguay",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1783",
+            "match": "^Paraguay$"
+          }
+        },
+        {
+          "name": "Floride",
+          "status": "core",
+          "source": {
+            "region": "Floride"
+          }
+        },
+        {
+          "name": "Philippines",
+          "status": "core",
+          "source": {
+            "country": "^Philippines$"
+          }
+        },
+        {
+          "name": "Mariannes",
+          "status": "core",
+          "source": {
+            "country": "^(Guam|Northern Mariana Islands)$"
+          }
+        }
+      ],
+      "notes": "Louisiane (rendue à la France 1800 puis vendue en 1803), Santo Domingo (cédée à la France 1795) et Oran (1792) exclues."
+    },
+    {
+      "id": "dos-de-mayo-1808",
+      "year": 1808,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Royaume d'Espagne",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Melilla"
+              },
+              {
+                "region": "Ceuta"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Cuba et Porto Rico",
+          "status": "core",
+          "source": {
+            "country": "^(Cuba|Puerto Rico)$"
+          }
+        },
+        {
+          "name": "Nouvelle-Espagne",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1783",
+            "match": "^Viceroyalty of New Spain$"
+          }
+        },
+        {
+          "name": "Nouvelle-Grenade",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1783",
+            "match": "^Viceroyalty of New Granada$"
+          }
+        },
+        {
+          "name": "Vice-royauté du Pérou",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1783",
+            "match": "^Viceroyalty of Peru$"
+          }
+        },
+        {
+          "name": "Río de la Plata",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "snapshot": "world_1783",
+                "match": "^Viceroyalty of the Río de la Plata$"
+              },
+              {
+                "region": "Río de la Plata"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Paraguay",
+          "status": "core",
+          "source": {
+            "snapshot": "world_1783",
+            "match": "^Paraguay$"
+          }
+        },
+        {
+          "name": "Floride",
+          "status": "core",
+          "source": {
+            "region": "Floride"
+          }
+        },
+        {
+          "name": "Philippines",
+          "status": "core",
+          "source": {
+            "country": "^Philippines$"
+          }
+        },
+        {
+          "name": "Mariannes",
+          "status": "core",
+          "source": {
+            "country": "^(Guam|Northern Mariana Islands)$"
+          }
+        }
+      ],
+      "notes": "Idem 1805 : l'autorité de Ferdinand VII reste reconnue aux Amériques, même si les juntes se forment (1809-1810). Le royaume de Joseph n'est pas distingué."
+    },
+    {
+      "id": "mexique-1821",
+      "year": 1821,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Royaume d'Espagne",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Melilla"
+              },
+              {
+                "region": "Ceuta"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Cuba et Porto Rico",
+          "status": "core",
+          "source": {
+            "country": "^(Cuba|Puerto Rico)$"
+          }
+        },
+        {
+          "name": "Pérou royaliste (Pérou, Haut-Pérou, Équateur)",
+          "status": "core",
+          "source": {
+            "country": "^(Peru|Bolivia|Ecuador)$"
+          }
+        },
+        {
+          "name": "Philippines",
+          "status": "core",
+          "source": {
+            "country": "^Philippines$"
+          }
+        },
+        {
+          "name": "Mariannes",
+          "status": "core",
+          "source": {
+            "country": "^(Guam|Northern Mariana Islands)$"
+          }
+        }
+      ],
+      "notes": "Pérou royaliste en pays actuels (Pérou, Bolivie, Équateur) : bastion tenu jusqu'en 1822-1824. Mexique, Amérique centrale, Colombie, Venezuela, Argentine, Chili, Paraguay, Floride retirés. Santo Domingo indépendante en décembre 1821."
+    },
+    {
+      "id": "ayacucho-1824",
+      "year": 1824,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Royaume d'Espagne",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Melilla"
+              },
+              {
+                "region": "Ceuta"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Cuba et Porto Rico",
+          "status": "core",
+          "source": {
+            "country": "^(Cuba|Puerto Rico)$"
+          }
+        },
+        {
+          "name": "Philippines",
+          "status": "core",
+          "source": {
+            "country": "^Philippines$"
+          }
+        },
+        {
+          "name": "Mariannes",
+          "status": "core",
+          "source": {
+            "country": "^(Guam|Northern Mariana Islands)$"
+          }
+        }
+      ],
+      "notes": "Callao tient jusqu'en 1826 (non représenté). Carolines et Palau revendiquées mais non occupées avant 1885 : exclues."
+    },
+    {
+      "id": "hispano-americaine-1898",
+      "year": 1898,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Royaume d'Espagne",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Melilla"
+              },
+              {
+                "region": "Ceuta"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Mariannes du Nord",
+          "status": "core",
+          "source": {
+            "country": "^Northern Mariana Islands$"
+          }
+        },
+        {
+          "name": "Carolines et Palau",
+          "status": "core",
+          "source": {
+            "country": "^(Federated States of Micronesia|Palau)$"
+          }
+        },
+        {
+          "name": "Guinée espagnole",
+          "status": "core",
+          "source": {
+            "country": "^Equatorial Guinea$"
+          }
+        },
+        {
+          "name": "Sahara espagnol",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Western Sahara$"
+              },
+              {
+                "country": "^Morocco$",
+                "region": "Saguia el-Hamra"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "État de fin 1898 (traité de Paris) : Cuba, Porto Rico, Guam et Philippines retirés. Sahara = Sahara occidental Natural Earth (partie sud) + Saguia el-Hamra (région découpée dans le Maroc de Natural Earth, qui y inclut Laâyoune), occupée seulement en 1934. Les instantanés 1880/1900 mettent encore Cuba et les Philippines à l'Espagne : non utilisés. Ceuta et Melilla (enclaves) en `core`."
+    },
+    {
+      "id": "carolines-1899",
+      "year": 1899,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Royaume d'Espagne",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Melilla"
+              },
+              {
+                "region": "Ceuta"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Guinée espagnole",
+          "status": "core",
+          "source": {
+            "country": "^Equatorial Guinea$"
+          }
+        },
+        {
+          "name": "Sahara espagnol",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Western Sahara$"
+              },
+              {
+                "country": "^Morocco$",
+                "region": "Saguia el-Hamra"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Carolines, Palau et Mariannes du Nord vendues à l'Allemagne."
+    },
+    {
+      "id": "maroc-1912",
+      "year": 1912,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Royaume d'Espagne",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Melilla"
+              },
+              {
+                "region": "Ceuta"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Ifni",
+          "status": "core",
+          "source": {
+            "region": "Ifni"
+          }
+        },
+        {
+          "name": "Guinée espagnole",
+          "status": "core",
+          "source": {
+            "country": "^Equatorial Guinea$"
+          }
+        },
+        {
+          "name": "Sahara espagnol",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Western Sahara$"
+              },
+              {
+                "country": "^Morocco$",
+                "region": "Saguia el-Hamra"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Protectorat espagnol du Maroc (zone nord)",
+          "status": "vassal",
+          "source": {
+            "diff": [
+              {
+                "snapshot": "world_1914",
+                "match": "^Spanish Morocco$"
+              },
+              {
+                "region": "Tanger international"
+              },
+              {
+                "region": "Ceuta"
+              },
+              {
+                "region": "Melilla"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Protectorat espagnol du Maroc (zone sud, Tarfaya)",
+          "status": "vassal",
+          "source": {
+            "region": "Tarfaya"
+          }
+        }
+      ],
+      "notes": "Zone nord = « Spanish Morocco » de l'instantané 1914 (bbox 34,2-35,9 N), Tanger international retiré. Zone sud (Tarfaya) par région. Ifni : cédé en 1860, occupé en 1934 seulement (nominal ici)."
+    },
+    {
+      "id": "anoual-1921",
+      "year": 1921,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Royaume d'Espagne",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Melilla"
+              },
+              {
+                "region": "Ceuta"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Ifni",
+          "status": "core",
+          "source": {
+            "region": "Ifni"
+          }
+        },
+        {
+          "name": "Guinée espagnole",
+          "status": "core",
+          "source": {
+            "country": "^Equatorial Guinea$"
+          }
+        },
+        {
+          "name": "Sahara espagnol",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Western Sahara$"
+              },
+              {
+                "country": "^Morocco$",
+                "region": "Saguia el-Hamra"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Protectorat espagnol du Maroc (zone nord)",
+          "status": "vassal",
+          "source": {
+            "diff": [
+              {
+                "snapshot": "world_1914",
+                "match": "^Spanish Morocco$"
+              },
+              {
+                "region": "Tanger international"
+              },
+              {
+                "region": "Ceuta"
+              },
+              {
+                "region": "Melilla"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Protectorat espagnol du Maroc (zone sud, Tarfaya)",
+          "status": "vassal",
+          "source": {
+            "region": "Tarfaya"
+          }
+        }
+      ],
+      "notes": "Idem 1912. L'est du Rif perdu en 1921 n'est pas retiré (limite : épisode de quelques mois)."
+    },
+    {
+      "id": "guerre-civile-1936",
+      "year": 1936,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Royaume d'Espagne",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Melilla"
+              },
+              {
+                "region": "Ceuta"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Ifni",
+          "status": "core",
+          "source": {
+            "region": "Ifni"
+          }
+        },
+        {
+          "name": "Guinée espagnole",
+          "status": "core",
+          "source": {
+            "country": "^Equatorial Guinea$"
+          }
+        },
+        {
+          "name": "Sahara espagnol",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Western Sahara$"
+              },
+              {
+                "country": "^Morocco$",
+                "region": "Saguia el-Hamra"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Protectorat espagnol du Maroc (zone nord)",
+          "status": "vassal",
+          "source": {
+            "diff": [
+              {
+                "snapshot": "world_1914",
+                "match": "^Spanish Morocco$"
+              },
+              {
+                "region": "Tanger international"
+              },
+              {
+                "region": "Ceuta"
+              },
+              {
+                "region": "Melilla"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Protectorat espagnol du Maroc (zone sud, Tarfaya)",
+          "status": "vassal",
+          "source": {
+            "region": "Tarfaya"
+          }
+        }
+      ],
+      "notes": "Idem 1912 (la guerre civile ne change pas les frontières coloniales). L'instantané 1938 fusionne le Maroc espagnol dans « Morocco (France) » : non utilisé."
+    },
+    {
+      "id": "maroc-1956",
+      "year": 1956,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Royaume d'Espagne",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Melilla"
+              },
+              {
+                "region": "Ceuta"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Ifni",
+          "status": "core",
+          "source": {
+            "region": "Ifni"
+          }
+        },
+        {
+          "name": "Guinée espagnole",
+          "status": "core",
+          "source": {
+            "country": "^Equatorial Guinea$"
+          }
+        },
+        {
+          "name": "Sahara espagnol",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Western Sahara$"
+              },
+              {
+                "country": "^Morocco$",
+                "region": "Saguia el-Hamra"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Protectorat espagnol du Maroc (zone sud, Tarfaya)",
+          "status": "vassal",
+          "source": {
+            "region": "Tarfaya"
+          }
+        }
+      ],
+      "notes": "Zone nord rendue au Maroc (avril 1956). Tarfaya garde le statut vassal jusqu'en avril 1958."
+    },
+    {
+      "id": "guinee-1968",
+      "year": 1968,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Royaume d'Espagne",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Melilla"
+              },
+              {
+                "region": "Ceuta"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Ifni",
+          "status": "core",
+          "source": {
+            "region": "Ifni"
+          }
+        },
+        {
+          "name": "Sahara espagnol",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Western Sahara$"
+              },
+              {
+                "country": "^Morocco$",
+                "region": "Saguia el-Hamra"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Guinée équatoriale indépendante (octobre 1968) ; Tarfaya cédée en 1958."
+    },
+    {
+      "id": "ifni-1969",
+      "year": 1969,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Royaume d'Espagne",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Melilla"
+              },
+              {
+                "region": "Ceuta"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Sahara espagnol",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Western Sahara$"
+              },
+              {
+                "country": "^Morocco$",
+                "region": "Saguia el-Hamra"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Ifni rendu au Maroc le 30 juin 1969."
+    },
+    {
+      "id": "sahara-1976",
+      "year": 1976,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Royaume d'Espagne",
+          "status": "core",
+          "source": {
+            "union": [
+              {
+                "country": "^Spain$"
+              },
+              {
+                "region": "Melilla"
+              },
+              {
+                "region": "Ceuta"
+              }
+            ]
+          }
+        }
+      ],
+      "notes": "Sahara espagnol évacué en février 1976 : il ne reste que l'Espagne actuelle (Canaries, Baléares, Ceuta, Melilla). L'instantané 1960 convient pour la silhouette, mais la composition est plus simple."
+    }
+  ],
+  "checkpoints": [
+    {
+      "name": "Madrid",
+      "pt": [
+        -3.7,
+        40.42
+      ],
+      "where": "core"
+    },
+    {
+      "name": "Séville",
+      "pt": [
+        -5.98,
+        37.39
+      ],
+      "where": "core"
+    },
+    {
+      "name": "Grenade",
+      "pt": [
+        -3.6,
+        37.18
+      ],
+      "where": "core"
+    },
+    {
+      "name": "Barcelone",
+      "pt": [
+        2.15,
+        41.4
+      ],
+      "where": "core"
+    },
+    {
+      "name": "Pampelune (avant l'annexion)",
+      "pt": [
+        -1.64,
+        42.81
+      ],
+      "where": "not-core",
+      "from": "grenade-1492",
+      "to": "naples-1504"
+    },
+    {
+      "name": "Pampelune",
+      "pt": [
+        -1.64,
+        42.81
+      ],
+      "where": "core",
+      "from": "charles-quint-1516"
+    },
+    {
+      "name": "Perpignan",
+      "pt": [
+        2.9,
+        42.7
+      ],
+      "where": "core",
+      "from": "grenade-1492",
+      "to": "armada-1588"
+    },
+    {
+      "name": "Perpignan (cédée à la France)",
+      "pt": [
+        2.9,
+        42.7
+      ],
+      "where": "not-core",
+      "from": "rocroi-1643"
+    },
+    {
+      "name": "Naples",
+      "pt": [
+        14.5,
+        40.95
+      ],
+      "where": "not-core",
+      "from": "grenade-1492",
+      "to": "tordesillas-1494"
+    },
+    {
+      "name": "Naples (espagnole)",
+      "pt": [
+        14.5,
+        40.95
+      ],
+      "where": "core",
+      "from": "naples-1504",
+      "to": "succession-1700"
+    },
+    {
+      "name": "Naples (perdue)",
+      "pt": [
+        14.5,
+        40.95
+      ],
+      "where": "not-core",
+      "from": "utrecht-1713"
+    },
+    {
+      "name": "Palerme",
+      "pt": [
+        13.36,
+        38.12
+      ],
+      "where": "core",
+      "from": "grenade-1492",
+      "to": "succession-1700"
+    },
+    {
+      "name": "Milan (impérial)",
+      "pt": [
+        9.19,
+        45.46
+      ],
+      "where": "vassal",
+      "from": "pavie-1525",
+      "to": "cajamarca-1532"
+    },
+    {
+      "name": "Milan",
+      "pt": [
+        9.19,
+        45.46
+      ],
+      "where": "core",
+      "from": "philippe-ii-1556",
+      "to": "succession-1700"
+    },
+    {
+      "name": "Milan (hors empire)",
+      "pt": [
+        9.19,
+        45.46
+      ],
+      "where": "not-core",
+      "from": "utrecht-1713"
+    },
+    {
+      "name": "Bruxelles",
+      "pt": [
+        4.35,
+        50.85
+      ],
+      "where": "core",
+      "from": "charles-quint-1516",
+      "to": "succession-1700"
+    },
+    {
+      "name": "Bruxelles (perdue)",
+      "pt": [
+        4.35,
+        50.85
+      ],
+      "where": "not-core",
+      "from": "utrecht-1713"
+    },
+    {
+      "name": "Amsterdam",
+      "pt": [
+        4.9,
+        52.37
+      ],
+      "where": "core",
+      "from": "charles-quint-1516",
+      "to": "lepante-1571"
+    },
+    {
+      "name": "Amsterdam (indépendante)",
+      "pt": [
+        4.9,
+        52.37
+      ],
+      "where": "not-core",
+      "from": "union-iberique-1580"
+    },
+    {
+      "name": "Lille",
+      "pt": [
+        3.06,
+        50.63
+      ],
+      "where": "core",
+      "from": "charles-quint-1516",
+      "to": "pyrenees-1659"
+    },
+    {
+      "name": "Besançon",
+      "pt": [
+        6.02,
+        47.24
+      ],
+      "where": "core",
+      "from": "charles-quint-1516",
+      "to": "pyrenees-1659"
+    },
+    {
+      "name": "Lisbonne (avant l'union)",
+      "pt": [
+        -9.15,
+        38.78
+      ],
+      "where": "not-core",
+      "from": "grenade-1492",
+      "to": "lepante-1571"
+    },
+    {
+      "name": "Lisbonne (union ibérique)",
+      "pt": [
+        -9.15,
+        38.78
+      ],
+      "where": "vassal",
+      "from": "union-iberique-1580",
+      "to": "armada-1588"
+    },
+    {
+      "name": "Lisbonne (indépendante)",
+      "pt": [
+        -9.15,
+        38.78
+      ],
+      "where": "not-core",
+      "from": "rocroi-1643"
+    },
+    {
+      "name": "Rio de Janeiro (Brésil portugais)",
+      "pt": [
+        -43.2,
+        -22.9
+      ],
+      "where": "vassal",
+      "from": "union-iberique-1580",
+      "to": "armada-1588"
+    },
+    {
+      "name": "Goa",
+      "pt": [
+        74.0,
+        15.4
+      ],
+      "where": "vassal",
+      "from": "union-iberique-1580",
+      "to": "armada-1588"
+    },
+    {
+      "name": "Mexico (avant Cortés)",
+      "pt": [
+        -99.13,
+        19.43
+      ],
+      "where": "not-core",
+      "from": "grenade-1492",
+      "to": "charles-quint-1516"
+    },
+    {
+      "name": "Mexico",
+      "pt": [
+        -99.13,
+        19.43
+      ],
+      "where": "core",
+      "from": "tenochtitlan-1521",
+      "to": "dos-de-mayo-1808"
+    },
+    {
+      "name": "Mexico (indépendant)",
+      "pt": [
+        -99.13,
+        19.43
+      ],
+      "where": "not-core",
+      "from": "mexique-1821"
+    },
+    {
+      "name": "Lima (avant Pizarro)",
+      "pt": [
+        -77.04,
+        -12.05
+      ],
+      "where": "not-core",
+      "from": "grenade-1492",
+      "to": "cajamarca-1532"
+    },
+    {
+      "name": "Lima",
+      "pt": [
+        -77.04,
+        -12.05
+      ],
+      "where": "core",
+      "from": "philippe-ii-1556",
+      "to": "mexique-1821"
+    },
+    {
+      "name": "Lima (indépendante)",
+      "pt": [
+        -77.04,
+        -12.05
+      ],
+      "where": "not-core",
+      "from": "ayacucho-1824"
+    },
+    {
+      "name": "Santiago du Chili",
+      "pt": [
+        -70.65,
+        -33.45
+      ],
+      "where": "core",
+      "from": "philippe-ii-1556",
+      "to": "dos-de-mayo-1808"
+    },
+    {
+      "name": "Bogotá",
+      "pt": [
+        -74.07,
+        4.71
+      ],
+      "where": "core",
+      "from": "philippe-ii-1556",
+      "to": "dos-de-mayo-1808"
+    },
+    {
+      "name": "La Havane",
+      "pt": [
+        -82.37,
+        23.1
+      ],
+      "where": "core",
+      "from": "charles-quint-1516",
+      "to": "ayacucho-1824"
+    },
+    {
+      "name": "La Havane (indépendante)",
+      "pt": [
+        -82.37,
+        23.1
+      ],
+      "where": "not-core",
+      "from": "hispano-americaine-1898"
+    },
+    {
+      "name": "Santo Domingo",
+      "pt": [
+        -69.9,
+        18.5
+      ],
+      "where": "core",
+      "from": "charles-quint-1516",
+      "to": "nootka-1790"
+    },
+    {
+      "name": "Buenos Aires",
+      "pt": [
+        -58.45,
+        -34.62
+      ],
+      "where": "core",
+      "from": "philippe-ii-1556",
+      "to": "dos-de-mayo-1808"
+    },
+    {
+      "name": "Buenos Aires (indépendante)",
+      "pt": [
+        -58.45,
+        -34.62
+      ],
+      "where": "not-core",
+      "from": "mexique-1821"
+    },
+    {
+      "name": "Saint Augustine (Floride)",
+      "pt": [
+        -81.31,
+        29.89
+      ],
+      "where": "core",
+      "from": "manille-1571",
+      "to": "utrecht-1713"
+    },
+    {
+      "name": "Saint Augustine (britannique)",
+      "pt": [
+        -81.31,
+        29.89
+      ],
+      "where": "not-core",
+      "from": "louisiane-1763",
+      "to": "louisiane-1763"
+    },
+    {
+      "name": "Saint Augustine (rendue)",
+      "pt": [
+        -81.31,
+        29.89
+      ],
+      "where": "core",
+      "from": "nootka-1790",
+      "to": "dos-de-mayo-1808"
+    },
+    {
+      "name": "La Nouvelle-Orléans",
+      "pt": [
+        -90.07,
+        29.95
+      ],
+      "where": "core",
+      "from": "louisiane-1763",
+      "to": "nootka-1790"
+    },
+    {
+      "name": "La Nouvelle-Orléans (française)",
+      "pt": [
+        -90.07,
+        29.95
+      ],
+      "where": "not-core",
+      "from": "trafalgar-1805"
+    },
+    {
+      "name": "Manille",
+      "pt": [
+        120.98,
+        14.6
+      ],
+      "where": "core",
+      "from": "manille-1571",
+      "to": "ayacucho-1824"
+    },
+    {
+      "name": "Manille (américaine)",
+      "pt": [
+        120.98,
+        14.6
+      ],
+      "where": "not-core",
+      "from": "hispano-americaine-1898"
+    },
+    {
+      "name": "Hagåtña (Guam)",
+      "pt": [
+        144.75,
+        13.45
+      ],
+      "where": "core",
+      "from": "succession-1700",
+      "to": "ayacucho-1824"
+    },
+    {
+      "name": "Pohnpei (Carolines)",
+      "pt": [
+        158.2,
+        6.96
+      ],
+      "where": "core",
+      "from": "hispano-americaine-1898",
+      "to": "hispano-americaine-1898"
+    },
+    {
+      "name": "Oran",
+      "pt": [
+        -0.63,
+        35.7
+      ],
+      "where": "core",
+      "from": "charles-quint-1516",
+      "to": "succession-1700"
+    },
+    {
+      "name": "Tétouan (hors protectorat)",
+      "pt": [
+        -5.37,
+        35.57
+      ],
+      "where": "not-core",
+      "from": "grenade-1492",
+      "to": "carolines-1899"
+    },
+    {
+      "name": "Tétouan (protectorat)",
+      "pt": [
+        -5.37,
+        35.57
+      ],
+      "where": "vassal",
+      "from": "maroc-1912",
+      "to": "guerre-civile-1936"
+    },
+    {
+      "name": "Tétouan (indépendante)",
+      "pt": [
+        -5.37,
+        35.57
+      ],
+      "where": "not-core",
+      "from": "maroc-1956"
+    },
+    {
+      "name": "Tarfaya",
+      "pt": [
+        -12.93,
+        27.94
+      ],
+      "where": "vassal",
+      "from": "maroc-1912",
+      "to": "maroc-1956"
+    },
+    {
+      "name": "Sidi Ifni",
+      "pt": [
+        -10.17,
+        29.38
+      ],
+      "where": "core",
+      "from": "maroc-1912",
+      "to": "guinee-1968"
+    },
+    {
+      "name": "Sidi Ifni (rétrocédée)",
+      "pt": [
+        -10.17,
+        29.38
+      ],
+      "where": "not-core",
+      "from": "ifni-1969"
+    },
+    {
+      "name": "Laâyoune",
+      "pt": [
+        -13.2,
+        27.15
+      ],
+      "where": "core",
+      "from": "hispano-americaine-1898",
+      "to": "ifni-1969"
+    },
+    {
+      "name": "Laâyoune (hors empire)",
+      "pt": [
+        -13.2,
+        27.15
+      ],
+      "where": "not-core",
+      "from": "sahara-1976"
+    },
+    {
+      "name": "Malabo",
+      "pt": [
+        8.78,
+        3.75
+      ],
+      "where": "core",
+      "from": "hispano-americaine-1898",
+      "to": "maroc-1956"
+    },
+    {
+      "name": "Malabo (indépendante)",
+      "pt": [
+        8.78,
+        3.75
+      ],
+      "where": "not-core",
+      "from": "guinee-1968"
+    },
+    {
+      "name": "Paris",
+      "pt": [
+        2.35,
+        48.85
+      ],
+      "where": "not-core"
+    },
+    {
+      "name": "Rome",
+      "pt": [
+        12.5,
+        41.9
+      ],
+      "where": "not-core"
+    },
+    {
+      "name": "Londres",
+      "pt": [
+        -0.12,
+        51.5
+      ],
+      "where": "not-core"
+    }
+  ]
+}

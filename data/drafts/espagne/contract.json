@@ -1,0 +1,96 @@
+{
+  "factions": [
+    {
+      "id": "tercios",
+      "label": "Espagnols de la Renaissance (conquistadors et tercios)",
+      "drawing": "Soldat espagnol du XVIe-XVIIe siècle : morion (casque à crête) ou cabasset, cuirasse ou plastron d'acier sur pourpoint, haut-de-chausses bouffants, collerette plissée pour les officiers, cape rouge ou brune ; arquebuse à mèche avec fourquine, ou longue pique, ou épée à garde en coquille (rapière) ; écharpe rouge de la couronne de Castille. Conquistador : même équipement, avec cheval caparaçonné et épée de Tolède.",
+      "info": "L'infanterie espagnole des Habsbourg domine les champs de bataille d'Europe de Pavie (1525) à Rocroi (1643). Ses unités permanentes, les tercios, associent piquiers, arquebusiers et soldats d'épée. Les conquistadors, quelques centaines d'hommes en armure, renversent les empires aztèque et inca avec l'aide d'alliés indigènes. Les troupes sont payées par l'argent d'Amérique, souvent en retard : les mutineries sont fréquentes."
+    },
+    {
+      "id": "azteques",
+      "label": "Aztèques (Mexicas)",
+      "drawing": "Guerrier mexica du début du XVIe siècle : cuirasse matelassée de coton (ichcahuipilli), bouclier rond décoré de plumes (chimalli), massue d'obsidienne (macuahuitl), lance à propulseur (atlatl) ; coiffe de plumes, casque-jaguar ou casque-aigle pour les guerriers d'élite ; peau peinte, cheveux noués. Pas de métal.",
+      "info": "Les Aztèques ou Mexicas dominent depuis 1428 le centre du Mexique à partir de leur capitale lacustre, Tenochtitlan. Leur armée, levée parmi les citoyens, compte des ordres d'élite, les chevaliers aigles et jaguars. Ils combattent surtout pour capturer des prisonniers et exigent un lourd tribut des cités soumises, d'où le ralliement de nombreux peuples à Cortés en 1519."
+    },
+    {
+      "id": "incas",
+      "label": "Incas",
+      "drawing": "Guerrier inca du XVIe siècle : tunique de laine à motifs géométriques (unku), casque de bois ou de tissu rembourré, bouclier carré de bois et de cuir, massue à tête étoilée de bronze ou de pierre, fronde et lance ; pour l'escorte impériale, plumes et bandeau rouge (mascaipacha). Pas de métal sur le corps.",
+      "info": "L'empire inca, le Tawantinsuyu, s'étend vers 1530 du sud de la Colombie au centre du Chili, avec Cuzco pour capitale. Un réseau de routes de plus de 20 000 km, des relais et des entrepôts permet de le gouverner sans écriture, grâce aux cordelettes à nœuds (quipus). En 1532, une guerre civile entre deux frères l'a affaibli."
+    },
+    {
+      "id": "francais-ancien-regime",
+      "label": "Français d'Ancien Régime",
+      "drawing": "Soldat ou noble français des XVIe-XVIIe siècles : gendarme en armure complète avec bourguignotte, cavalier avec cuirasse, buffle et grandes bottes, chapeau à plume ou casque ; fantassin en pourpoint, arquebuse ou mousquet, ou pique ; écharpe blanche ; bannière aux fleurs de lis.",
+      "info": "L'armée royale de France mêle, de François Ier à Louis XIV, une cavalerie de gentilshommes, des fantassins levés dans le royaume et des mercenaires suisses ou allemands. Elle s'oppose à l'Espagne dans les guerres d'Italie, puis dans la guerre de Trente Ans (Rocroi, 1643). L'écharpe blanche distingue les troupes du roi."
+    },
+    {
+      "id": "neerlandais",
+      "label": "Néerlandais (gueux et Provinces-Unies)",
+      "drawing": "Soldat ou marin néerlandais de la fin du XVIe et du XVIIe siècle : chapeau noir à large bord ou casque ouvert, pourpoint sobre noir ou brun, collerette ou col rabattu blanc, mousquet à mèche et fourquine, écharpe orange (couleur d'Orange-Nassau) ; gueux de mer : bonnet de fourrure et vêtements dépareillés.",
+      "info": "Les « gueux » sont les rebelles des Pays-Bas qui, à partir de 1566, se révoltent contre Philippe II. Menés par Guillaume d'Orange, puis par ses fils, ils fondent la république des Provinces-Unies (1581), reconnue par l'Espagne en 1648. Leur armée réformée par Maurice de Nassau et leur flotte marchande font de la Hollande une grande puissance."
+    },
+    {
+      "id": "anglais-elisabethains",
+      "label": "Anglais élisabéthains",
+      "drawing": "Marin ou soldat anglais de la fin du XVIe siècle : chapeau à plume ou bonnet, pourpoint de laine, haut-de-chausses, collerette, épée courte ; marin avec bonnet rouge et gilet ; officier avec cuirasse légère et morion ; croix de Saint-Georges rouge sur fond blanc.",
+      "info": "L'Angleterre d'Élisabeth Ire (1558-1603) est une puissance protestante en plein essor maritime. Ses navires rapides, armés de canons à longue portée, et ses corsaires, comme Francis Drake et John Hawkins, harcèlent les galions espagnols. En 1588, ils repoussent l'Invincible Armada."
+    },
+    {
+      "id": "espagnols-xxe",
+      "label": "Espagnols du XXe siècle",
+      "drawing": "Soldat espagnol de 1898 à 1975 : uniforme de toile rayée bleu et blanc (rayadillo) avec chapeau de paille ou casque colonial en 1898 ; uniforme kaki avec casquette (chapiri) et fusil Mauser dans les années 1920 ; Légion : chemise ouverte, bonnet à gland ; civil de 1936 : bleu de travail (mono), béret ; officier : ceinturon, étoiles sur les épaulettes.",
+      "info": "L'armée espagnole du XXe siècle est faite de conscrits issus des campagnes, commandés par des officiers souvent politisés. Elle perd à Cuba, aux Philippines et à Anoual, s'illustre dans la guerre du Rif (Légion, Regulares) et se divise en 1936. Le régime de Franco (1939-1975) s'appuie sur elle."
+    },
+    {
+      "id": "rifains",
+      "label": "Rifains",
+      "drawing": "Combattant rifain des années 1920 : djellaba de laine brune ou rayée à capuche, turban blanc, babouches ou pieds nus, fusil Mauser ou Remington et cartouchière croisée ; poignard au ceinturon. Pas d'uniforme.",
+      "info": "Les Rifains sont les Berbères du Rif, massif montagneux du nord du Maroc. Mobilisés en 1921 par Abd el-Krim, ils infligent à l'Espagne la défaite d'Anoual, fondent une éphémère République du Rif (1921-1926) et pratiquent une guérilla étudiée plus tard dans le monde entier. Ils sont vaincus en 1926 par l'Espagne et la France."
+    },
+    {
+      "id": "americains",
+      "label": "Américains (XIXe-XXe siècles)",
+      "drawing": "Marin ou soldat américain de 1898 : marin en vareuse bleue et col marin, chapeau rond blanc ; soldat en chemise de laine bleue, chapeau de feutre à bord large (Rough Riders), fusil Krag-Jørgensen ; drapeau étoilé. Navires gris de la flotte moderne.",
+      "info": "Les États-Unis, en 1898, sont déjà la première puissance industrielle du monde. Leur marine neuve détruit en quelques heures les flottes espagnoles de Manille et de Santiago de Cuba. Le traité de Paris fait d'eux une puissance coloniale en Asie et dans les Caraïbes."
+    },
+    {
+      "id": "independantistes",
+      "label": "Indépendantistes hispano-américains",
+      "drawing": "Soldat des armées de Bolívar et de San Martín (1810-1825) : habit bleu ou vert, collet rouge, shako ou bicorne, cocarde aux couleurs du pays, baudrier blanc croisé ; cavalerie des llaneros en poncho et chapeau de paille, lance ; pieds nus pour les soldats ordinaires.",
+      "info": "Les armées indépendantistes sont composées de créoles, de métis, d'indigènes, d'esclaves affranchis et de volontaires britanniques. Elles combattent dans des conditions extrêmes, comme la traversée des Andes en 1817 par San Martín. Leur victoire à Ayacucho (1824) met fin à la domination espagnole en Amérique du Sud."
+    }
+  ],
+  "archetypes": [
+    {
+      "id": "conquistador",
+      "label": "Conquistador (capitaine espagnol de la Renaissance)",
+      "drawing": "Capitaine espagnol du XVIe siècle : morion à crête, plastron d'acier poli sur pourpoint noir ou rouge, collerette blanche, cape courte, épée à garde en coquille, bâton de commandement ou carte à la main ; barbe taillée en pointe. Peut tenir un étendard.",
+      "info": "Capitaine ou conquérant au service de la couronne : Colomb, Cortés, Pizarro, Gonzalve de Cordoue, Don Juan d'Autriche. Ils sont souvent de petite noblesse (hidalgos) et partent chercher fortune, titres et gloire."
+    },
+    {
+      "id": "vice-roi",
+      "label": "Vice-roi (grand d'Espagne)",
+      "drawing": "Haut dignitaire espagnol du XVIe-XVIIe siècle : habit de velours noir, grande collerette plissée, chaîne d'or et croix d'un ordre (Santiago, Calatrava), chapeau noir, gants ; épée au côté, parchemin scellé à la main.",
+      "info": "Représentant du roi dans un royaume lointain (Naples, Mexique, Pérou) ou ministre de la monarchie. Les vice-rois gouvernent au nom du roi avec des pouvoirs étendus mais surveillés par des tribunaux (audiencias)."
+    },
+    {
+      "id": "roi-habsbourg",
+      "label": "Roi Habsbourg d'Espagne",
+      "drawing": "Souverain espagnol des XVIe-XVIIe siècles : vêtement noir, grande collerette ou golilla, toison d'or au cou (ordre de la Toison d'or), couronne ou chapeau, sceptre ; lèvre inférieure saillante caractéristique des Habsbourg.",
+      "info": "Les Habsbourg règnent sur l'Espagne de 1516 à 1700 (Charles Ier, Philippe II, III, IV, Charles II). Le noir, couleur de la gravité castillane, est la marque de la cour. Les mariages entre cousins entraînent la dégénérescence de la dynastie."
+    },
+    {
+      "id": "souverain-precolombien",
+      "label": "Souverain précolombien",
+      "drawing": "Souverain aztèque ou inca : grande coiffe de plumes de quetzal et diadème d'or, manteau décoré, pectoral et bracelets d'or, boucles d'oreilles en disque ; Inca : tunique carrée, frange rouge (mascaipacha), litière ; sandales.",
+      "info": "Les souverains aztèque (tlatoani) et inca (Sapa Inca) sont des chefs religieux et militaires, considérés comme des intermédiaires avec les dieux. Moctezuma II, Cuauhtémoc et Atahualpa sont pris par les Espagnols entre 1519 et 1533."
+    },
+    {
+      "id": "militaire-xxe",
+      "label": "Militaire ou homme d'État espagnol du XXe siècle",
+      "drawing": "Officier espagnol de 1898 à 1975 : uniforme kaki à col droit, casquette à visière (ou képi), ceinturon et baudrier, décorations sur la poitrine ; pour les civils, costume sombre et chapeau. Moustache.",
+      "info": "Officiers, ministres et dirigeants de l'Espagne contemporaine. L'armée joue un rôle politique majeur, de la guerre de Cuba aux coups d'État de 1923 et de 1936."
+    }
+  ]
+}

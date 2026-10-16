@@ -1,0 +1,582 @@
+{
+  "add": [
+    {
+      "id": "mexico",
+      "modern": "Mexico, Mexique",
+      "names": [
+        {
+          "name": "Tenochtitlan",
+          "to": 1521
+        },
+        {
+          "name": "Mexico",
+          "from": 1522
+        }
+      ],
+      "coords": [
+        -99.133,
+        19.433
+      ],
+      "founded": 1325,
+      "rank": 1
+    },
+    {
+      "id": "lima",
+      "modern": "Lima, Pérou",
+      "names": [
+        {
+          "name": "Lima (Ciudad de los Reyes)"
+        }
+      ],
+      "coords": [
+        -77.043,
+        -12.046
+      ],
+      "founded": 1535,
+      "rank": 1
+    },
+    {
+      "id": "la-havane",
+      "modern": "La Havane, Cuba",
+      "names": [
+        {
+          "name": "La Havane"
+        }
+      ],
+      "coords": [
+        -82.366,
+        23.133
+      ],
+      "founded": 1519,
+      "rank": 1
+    },
+    {
+      "id": "buenos-aires",
+      "modern": "Buenos Aires, Argentine",
+      "names": [
+        {
+          "name": "Buenos Aires"
+        }
+      ],
+      "coords": [
+        -58.382,
+        -34.604
+      ],
+      "founded": 1536,
+      "rank": 1
+    },
+    {
+      "id": "manille",
+      "modern": "Manille, Philippines",
+      "names": [
+        {
+          "name": "Maynilad",
+          "to": 1570
+        },
+        {
+          "name": "Manille",
+          "from": 1571
+        }
+      ],
+      "coords": [
+        120.984,
+        14.599
+      ],
+      "founded": 1258,
+      "rank": 1
+    },
+    {
+      "id": "cuzco",
+      "modern": "Cuzco, Pérou",
+      "names": [
+        {
+          "name": "Cuzco (Qosqo)"
+        }
+      ],
+      "coords": [
+        -71.967,
+        -13.532
+      ],
+      "founded": 1200,
+      "rank": 2
+    },
+    {
+      "id": "potosi",
+      "modern": "Potosí, Bolivie",
+      "names": [
+        {
+          "name": "Potosí"
+        }
+      ],
+      "coords": [
+        -65.753,
+        -19.583
+      ],
+      "founded": 1545,
+      "rank": 2
+    },
+    {
+      "id": "santo-domingo",
+      "modern": "Saint-Domingue (Santo Domingo), République dominicaine",
+      "names": [
+        {
+          "name": "Santo Domingo"
+        }
+      ],
+      "coords": [
+        -69.89,
+        18.486
+      ],
+      "founded": 1496,
+      "rank": 2
+    },
+    {
+      "id": "nouvelle-orleans",
+      "modern": "La Nouvelle-Orléans, États-Unis",
+      "names": [
+        {
+          "name": "La Nouvelle-Orléans"
+        }
+      ],
+      "coords": [
+        -90.071,
+        29.951
+      ],
+      "founded": 1718,
+      "rank": 2
+    },
+    {
+      "id": "grenade",
+      "modern": "Grenade, Espagne",
+      "names": [
+        {
+          "name": "Gharnata",
+          "to": 1491
+        },
+        {
+          "name": "Grenade",
+          "from": 1492
+        }
+      ],
+      "coords": [
+        -3.599,
+        37.177
+      ],
+      "founded": 713,
+      "rank": 2
+    },
+    {
+      "id": "tetouan",
+      "modern": "Tétouan, Maroc",
+      "names": [
+        {
+          "name": "Tétouan"
+        }
+      ],
+      "coords": [
+        -5.368,
+        35.572
+      ],
+      "founded": 1300,
+      "rank": 2
+    },
+    {
+      "id": "laayoune",
+      "modern": "Laâyoune, Sahara occidental",
+      "names": [
+        {
+          "name": "El Aaiún",
+          "from": 1938,
+          "to": 1975
+        },
+        {
+          "name": "Laâyoune",
+          "from": 1976
+        }
+      ],
+      "coords": [
+        -13.2,
+        27.15
+      ],
+      "founded": 1938,
+      "rank": 2
+    },
+    {
+      "id": "malabo",
+      "modern": "Malabo, Guinée équatoriale",
+      "names": [
+        {
+          "name": "Port Clarence",
+          "from": 1827,
+          "to": 1843
+        },
+        {
+          "name": "Santa Isabel",
+          "from": 1844,
+          "to": 1972
+        },
+        {
+          "name": "Malabo",
+          "from": 1973
+        }
+      ],
+      "coords": [
+        8.78,
+        3.75
+      ],
+      "founded": 1827,
+      "rank": 2
+    },
+    {
+      "id": "valladolid",
+      "modern": "Valladolid, Espagne",
+      "names": [
+        {
+          "name": "Valladolid"
+        }
+      ],
+      "coords": [
+        -4.7245,
+        41.6523
+      ],
+      "founded": 1000,
+      "rank": 3,
+      "capitalOf": [
+        {
+          "empire": "espagne",
+          "from": 1601,
+          "to": 1605
+        }
+      ]
+    },
+    {
+      "id": "gibraltar",
+      "modern": "Gibraltar, Royaume-Uni",
+      "names": [
+        {
+          "name": "Gibraltar"
+        }
+      ],
+      "coords": [
+        -5.353,
+        36.141
+      ],
+      "founded": 711,
+      "rank": 3
+    },
+    {
+      "id": "palos",
+      "modern": "Palos de la Frontera, Espagne",
+      "names": [
+        {
+          "name": "Palos de la Frontera"
+        }
+      ],
+      "coords": [
+        -6.893,
+        37.21
+      ],
+      "founded": 1100,
+      "rank": 3,
+      "empires": [
+        "espagne"
+      ]
+    },
+    {
+      "id": "tordesillas",
+      "modern": "Tordesillas, Espagne",
+      "names": [
+        {
+          "name": "Tordesillas"
+        }
+      ],
+      "coords": [
+        -4.9967,
+        41.5039
+      ],
+      "founded": 900,
+      "rank": 3,
+      "empires": [
+        "espagne"
+      ]
+    },
+    {
+      "id": "cajamarca",
+      "modern": "Cajamarca, Pérou",
+      "names": [
+        {
+          "name": "Cajamarca"
+        }
+      ],
+      "coords": [
+        -78.51,
+        -7.16
+      ],
+      "founded": 1200,
+      "rank": 3,
+      "empires": [
+        "espagne"
+      ]
+    },
+    {
+      "id": "saint-quentin",
+      "modern": "Saint-Quentin, France",
+      "names": [
+        {
+          "name": "Saint-Quentin"
+        }
+      ],
+      "coords": [
+        3.285,
+        49.848
+      ],
+      "founded": 1,
+      "rank": 3,
+      "empires": [
+        "espagne"
+      ]
+    },
+    {
+      "id": "escurial",
+      "modern": "San Lorenzo de El Escorial, Espagne",
+      "names": [
+        {
+          "name": "L'Escurial (El Escorial)"
+        }
+      ],
+      "coords": [
+        -4.147,
+        40.589
+      ],
+      "founded": 1563,
+      "rank": 3,
+      "empires": [
+        "espagne"
+      ]
+    },
+    {
+      "id": "naupacte",
+      "modern": "Naupacte (Lépante), Grèce",
+      "names": [
+        {
+          "name": "Lépante (Naupacte)"
+        }
+      ],
+      "coords": [
+        21.83,
+        38.39
+      ],
+      "founded": 1000,
+      "rank": 3,
+      "empires": [
+        "espagne"
+      ]
+    },
+    {
+      "id": "rocroi",
+      "modern": "Rocroi, France",
+      "names": [
+        {
+          "name": "Rocroi"
+        }
+      ],
+      "coords": [
+        4.52,
+        49.92
+      ],
+      "founded": 1100,
+      "rank": 3,
+      "empires": [
+        "espagne"
+      ]
+    },
+    {
+      "id": "ile-des-faisans",
+      "modern": "Île des Faisans (Hendaye), France",
+      "names": [
+        {
+          "name": "Île des Faisans"
+        }
+      ],
+      "coords": [
+        -1.7747,
+        43.3436
+      ],
+      "founded": 1500,
+      "rank": 3,
+      "empires": [
+        "espagne"
+      ]
+    },
+    {
+      "id": "utrecht",
+      "modern": "Utrecht, Pays-Bas",
+      "names": [
+        {
+          "name": "Utrecht"
+        }
+      ],
+      "coords": [
+        5.121,
+        52.091
+      ],
+      "founded": 47,
+      "rank": 3,
+      "empires": [
+        "espagne"
+      ]
+    },
+    {
+      "id": "nootka",
+      "modern": "Nootka (Yuquot), Canada",
+      "names": [
+        {
+          "name": "Nootka (Yuquot)"
+        }
+      ],
+      "coords": [
+        -126.62,
+        49.59
+      ],
+      "founded": 1778,
+      "rank": 3,
+      "empires": [
+        "espagne"
+      ]
+    },
+    {
+      "id": "ayacucho",
+      "modern": "Ayacucho (Huamanga), Pérou",
+      "names": [
+        {
+          "name": "Huamanga",
+          "to": 1824
+        },
+        {
+          "name": "Ayacucho",
+          "from": 1825
+        }
+      ],
+      "coords": [
+        -74.22,
+        -13.16
+      ],
+      "founded": 1540,
+      "rank": 3,
+      "empires": [
+        "espagne"
+      ]
+    },
+    {
+      "id": "santiago-de-cuba",
+      "modern": "Santiago de Cuba, Cuba",
+      "names": [
+        {
+          "name": "Santiago de Cuba"
+        }
+      ],
+      "coords": [
+        -75.83,
+        20.02
+      ],
+      "founded": 1515,
+      "rank": 3,
+      "empires": [
+        "espagne"
+      ]
+    },
+    {
+      "id": "hagatna",
+      "modern": "Hagåtña (Guam), États-Unis",
+      "names": [
+        {
+          "name": "Agaña"
+        }
+      ],
+      "coords": [
+        144.75,
+        13.47
+      ],
+      "founded": 1668,
+      "rank": 3,
+      "empires": [
+        "espagne"
+      ]
+    },
+    {
+      "id": "ponape",
+      "modern": "Kolonia (Pohnpei), Micronésie",
+      "names": [
+        {
+          "name": "Ponape (Pohnpei)"
+        }
+      ],
+      "coords": [
+        158.2,
+        6.96
+      ],
+      "founded": 1887,
+      "rank": 3,
+      "empires": [
+        "espagne"
+      ]
+    },
+    {
+      "id": "anoual",
+      "modern": "Anoual (Annual), Maroc",
+      "names": [
+        {
+          "name": "Anoual (Annual)"
+        }
+      ],
+      "coords": [
+        -3.88,
+        34.93
+      ],
+      "founded": 1900,
+      "rank": 3,
+      "empires": [
+        "espagne"
+      ]
+    },
+    {
+      "id": "sidi-ifni",
+      "modern": "Sidi Ifni, Maroc",
+      "names": [
+        {
+          "name": "Sidi Ifni"
+        }
+      ],
+      "coords": [
+        -10.172,
+        29.379
+      ],
+      "founded": 1934,
+      "rank": 3,
+      "empires": [
+        "espagne"
+      ]
+    }
+  ],
+  "patch": [
+    {
+      "id": "madrid",
+      "capitalOf": [
+        {
+          "empire": "espagne",
+          "from": 1561,
+          "to": 1600
+        },
+        {
+          "empire": "espagne",
+          "from": 1606,
+          "to": 1976
+        }
+      ]
+    },
+    {
+      "id": "cap-trafalgar",
+      "addEmpire": true
+    }
+  ]
+}

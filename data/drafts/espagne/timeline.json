@@ -1,0 +1,2724 @@
+{
+  "id": "espagne",
+  "name": "Empire espagnol",
+  "color": "#c2571a",
+  "start": 1492,
+  "end": 1976,
+  "description": "En 1492, deux royaumes ibériques achèvent la Reconquista et financent Christophe Colomb. En un siècle, l'Espagne conquiert le Mexique et le Pérou, domine l'Italie et les Pays-Bas, et ses galions relient Séville à Manille : c'est le premier empire où « le soleil ne se couche jamais ». Affaibli dès le XVIIe siècle, il perd l'Europe en 1713, l'Amérique entre 1808 et 1824, Cuba et les Philippines en 1898, puis ses dernières colonies africaines, jusqu'au départ du Sahara en 1976.",
+  "view": {
+    "center": [
+      -30,
+      15
+    ],
+    "zoom": 1.8
+  },
+  "bounds": [
+    [
+      -130,
+      -56
+    ],
+    [
+      165,
+      62
+    ]
+  ],
+  "periods": [
+    {
+      "id": "conquista",
+      "name": "Conquista et Charles Quint",
+      "start": 1492,
+      "end": 1556,
+      "color": "#e0b872",
+      "summary": "En 1492, les Rois Catholiques achèvent la Reconquista, et Colomb ouvre la route de l'Amérique. En soixante ans, des conquistadors renversent les empires aztèque et inca, et Charles Quint réunit sous sa couronne l'Espagne, l'Italie du Sud, les Pays-Bas et les Indes."
+    },
+    {
+      "id": "siecle-or",
+      "name": "Le Siècle d'or",
+      "start": 1556,
+      "end": 1700,
+      "color": "#c98a5b",
+      "summary": "Sous Philippe II puis ses successeurs, la monarchie hispanique est la première puissance du monde : elle encercle le globe, unit un temps le Portugal, mais s'épuise dans les guerres contre les Pays-Bas, l'Angleterre et la France. Les arts et les lettres, de Cervantes à Velázquez, connaissent un âge d'or."
+    },
+    {
+      "id": "bourbons",
+      "name": "Les Bourbons",
+      "start": 1700,
+      "end": 1808,
+      "color": "#9fb7d0",
+      "summary": "Une dynastie française s'installe à Madrid et réorganise l'État. L'Espagne perd ses possessions d'Europe, mais son empire américain atteint sa plus grande étendue avant que les guerres de la Révolution et de Napoléon ne ruinent sa marine."
+    },
+    {
+      "id": "independances",
+      "name": "Les indépendances",
+      "start": 1808,
+      "end": 1898,
+      "color": "#8fbf9f",
+      "summary": "L'invasion napoléonienne de 1808 désorganise la monarchie. En quinze ans, la plupart des colonies d'Amérique deviennent indépendantes ; il ne reste que Cuba, Porto Rico et les Philippines, qui échapperont à l'Espagne en 1898."
+    },
+    {
+      "id": "afrique",
+      "name": "Les dernières colonies",
+      "start": 1898,
+      "end": 1976,
+      "color": "#c9a0b4",
+      "summary": "Après le Désastre de 1898, l'Espagne n'a plus que des territoires africains : un protectorat dans le nord du Maroc, la Guinée équatoriale et le Sahara occidental. Elle les abandonne l'un après l'autre, jusqu'en 1976."
+    }
+  ],
+  "steps": [
+    {
+      "id": "grenade-1492",
+      "year": 1492,
+      "title": "Grenade et Colomb : le monde bascule",
+      "type": "chute",
+      "location": [
+        -3.5986,
+        37.1773
+      ],
+      "zoom": 4.2,
+      "summary": "Le 2 janvier 1492, les Rois Catholiques entrent dans Grenade, dernier royaume musulman de la péninsule ; quelques mois plus tard, Christophe Colomb part vers l'ouest au service de la Castille.",
+      "details": "**Isabelle de Castille** et **Ferdinand d'Aragon** se sont mariés en 1469. Ils gouvernent deux couronnes qui gardent chacune leurs lois, leurs assemblées et leur monnaie, mais font cause commune contre le dernier royaume musulman d'Espagne, l'émirat nasride de **Grenade**. Après dix ans de guerre, l'émir **Boabdil** (Muhammad XII) rend la ville le 2 janvier 1492 : c'est la fin de la *Reconquista*, commencée huit siècles plus tôt. Les souverains s'installent dans l'**Alhambra**, le palais des émirs.\n\nTrois mois plus tard, l'édit de l'Alhambra (31 mars) ordonne aux juifs de se convertir ou de partir : plusieurs dizaines de milliers d'entre eux quittent le royaume. Dans le camp militaire de **Santa Fe**, près de Grenade, la reine accepte enfin le projet d'un navigateur génois, **Christophe Colomb** : atteindre l'Asie en naviguant vers l'ouest. Les « capitulations » du 17 avril lui promettent titres et part des profits.\n\nColomb appareille de Palos le 3 août avec trois navires, la *Santa María*, la *Pinta* et la *Niña*. Le 12 octobre, il touche une île des Bahamas, puis explore Cuba et Hispaniola. Il croit avoir trouvé les abords de l'Asie ; il vient d'ouvrir à l'Europe un continent inconnu, que la Castille va s'attribuer.",
+      "consequences": [
+        "La Reconquista s'achève : la Castille absorbe le royaume de Grenade, et l'Andalousie tout entière passe sous la Couronne.",
+        "La Castille prend pied outre-Atlantique : Hispaniola (Saint-Domingue) devient la première base de l'empire américain.",
+        "Les juifs non convertis sont expulsés, puis, dix ans plus tard, les musulmans de Castille doivent choisir entre baptême et exil.",
+        "La Navarre et le Portugal restent indépendants : l'unité de l'Espagne n'est encore qu'une union dynastique."
+      ],
+      "territory": "grenade-1492",
+      "sources": [
+        {
+          "label": "Joseph Pérez, L'Espagne des Rois Catholiques (Hachette)"
+        },
+        {
+          "label": "Wikipédia — Guerre de Grenade",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_de_Grenade"
+        },
+        {
+          "label": "Wikipédia — Christophe Colomb",
+          "url": "https://fr.wikipedia.org/wiki/Christophe_Colomb"
+        }
+      ],
+      "territoryNote": "Couronne de Castille (Castille, León, Galice, Asturies, Estrémadure, Andalousie avec Grenade, Murcie, Canaries en cours de conquête) et couronne d'Aragon (Aragon, Catalogne, Valence, Baléares, Sicile, Sardaigne), deux États distincts unis par le mariage des Rois Catholiques. Hors de l'empire : la Navarre indépendante, le Portugal, le royaume de Naples (branche cadette aragonaise) et le Roussillon français. Aucune possession outre-mer : Colomb aborde les Bahamas en octobre.",
+      "figures": [
+        {
+          "name": "Isabelle la Catholique",
+          "role": "Reine de Castille",
+          "faction": "tercios",
+          "archetype": "roi",
+          "quote": "Tanto monta, monta tanto, Isabelle comme Ferdinand (devise des Rois Catholiques)",
+          "position": [
+            -3.5886,
+            37.1768
+          ]
+        },
+        {
+          "name": "Christophe Colomb",
+          "role": "Navigateur génois au service de la Castille",
+          "faction": "tercios",
+          "archetype": "conquistador",
+          "quote": "Je vais chercher l'Orient en naviguant vers l'Occident (formule libre)",
+          "position": [
+            -6.8928,
+            37.2108
+          ]
+        },
+        {
+          "name": "Boabdil",
+          "role": "Dernier émir de Grenade",
+          "faction": "arabes",
+          "archetype": "sultan",
+          "quote": "Pleure comme une femme ce que tu n'as pas su défendre comme un homme (attribué à sa mère Aïcha)",
+          "position": [
+            -3.6,
+            37.17
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tordesillas-1494",
+      "year": 1494,
+      "title": "Tordesillas : le monde partagé en deux",
+      "type": "traité",
+      "location": [
+        -4.9967,
+        41.5039
+      ],
+      "zoom": 2.6,
+      "summary": "Par le traité de Tordesillas, la Castille et le Portugal se partagent les terres à découvrir le long d'un méridien tracé en plein Atlantique : l'ouest aux Espagnols, l'est aux Portugais.",
+      "details": "Au retour de Colomb, les Rois Catholiques obtiennent du pape **Alexandre VI**, un Espagnol, des bulles (1493) qui leur réservent les terres découvertes à l'ouest d'une ligne nord-sud. Le roi du Portugal **Jean II**, qui explore depuis un siècle la côte africaine pour atteindre l'Inde, juge la ligne trop proche de ses îles du Cap-Vert et menace de la guerre.\n\nLes deux royaumes négocient donc sans arbitre. Le **traité de Tordesillas**, signé le 7 juin 1494 dans cette petite ville de Castille, déplace la ligne à 370 lieues à l'ouest des îles du Cap-Vert, soit environ 46° de longitude ouest. Tout ce qui se trouve à l'ouest sera à la Castille, tout ce qui se trouve à l'est au Portugal. Personne ne sait alors ce que la ligne recouvre : le Brésil n'est pas encore découvert, et ce traité place par hasard sa pointe orientale du côté portugais (1500).\n\nLe partage est fondé sur l'idée que le pape peut disposer des terres des « infidèles ». Les autres puissances, comme la France de François Ier, le contesteront. Mais pendant plus d'un siècle, il fonde les droits de l'Espagne sur presque toute l'Amérique et ceux du Portugal sur l'Afrique, l'Asie et le Brésil.",
+      "consequences": [
+        "L'Espagne obtient la quasi-totalité du Nouveau Monde, le Portugal la route de l'Inde et le Brésil.",
+        "Le partage ne sera pas accepté par la France, l'Angleterre ni les Provinces-Unies, qui armeront corsaires et colons.",
+        "La question des Moluques (côté de l'Asie) sera réglée plus tard par le traité de Saragosse (1529).",
+        "Le Portugal et l'Espagne restent deux royaumes, mais leurs destins se croiseront en 1580."
+      ],
+      "territory": "tordesillas-1494",
+      "sources": [
+        {
+          "label": "Wikipédia — Traité de Tordesillas",
+          "url": "https://fr.wikipedia.org/wiki/Trait%C3%A9_de_Tordesillas"
+        },
+        {
+          "label": "John H. Elliott, Imperial Spain, 1469-1716"
+        }
+      ],
+      "territoryNote": "Couronnes de Castille et d'Aragon (mêmes limites qu'en 1492, Sicile et Sardaigne comprises), plus Hispaniola (La Isabela, première colonie, fondée en 1493). Hors de l'empire : la Navarre indépendante, le Portugal, qui reçoit tout ce qui se trouve à l'est de la ligne, et Naples.",
+      "figures": [
+        {
+          "name": "Ferdinand II d'Aragon",
+          "role": "Roi d'Aragon, corégent de Castille",
+          "faction": "tercios",
+          "archetype": "roi",
+          "quote": "Il est plus facile de conquérir un monde que de le partager (formule libre)",
+          "position": [
+            -4.9967,
+            41.5039
+          ]
+        },
+        {
+          "name": "Jean II du Portugal",
+          "role": "Roi du Portugal, le « Prince parfait »",
+          "faction": "portugais",
+          "archetype": "roi",
+          "quote": "Le Portugal ne cédera pas la route de l'Inde (formule libre)",
+          "position": [
+            -9.14,
+            38.72
+          ]
+        }
+      ]
+    },
+    {
+      "id": "naples-1504",
+      "year": 1504,
+      "title": "Naples conquise par le Gran Capitán",
+      "type": "traité",
+      "location": [
+        14.2681,
+        40.8518
+      ],
+      "zoom": 4.2,
+      "summary": "Gonzalve de Cordoue, le « Grand Capitaine », chasse les Français du royaume de Naples ; le traité de Lyon (1504) le donne à Ferdinand d'Aragon.",
+      "details": "Depuis 1494, la France de Charles VIII puis de Louis XII mène les guerres d'Italie, et Naples est au centre du conflit : Louis XII et Ferdinand d'Aragon se la partagent en 1500, puis se brouillent sur le butin. **Gonzalve Fernández de Cordoue**, surnommé le **Gran Capitán**, commande l'armée espagnole du sud de l'Italie. Il refuse la bataille rangée tant qu'il n'est pas prêt, puis frappe deux fois : à **Cerignola** (avril 1503), où des arquebusiers abrités derrière un fossé fauchent la chevalerie française, et au **Garigliano** (décembre 1503).\n\nCette armée mélange piquiers, soldats d'épée et arquebusiers, avec une discipline neuve : c'est l'ancêtre des **tercios**, les régiments d'infanterie qui domineront les champs de bataille d'Europe pendant plus d'un siècle. Par le traité de Lyon (janvier 1504), la France renonce à Naples.\n\nLe royaume devient une province gouvernée par un **vice-roi**, première pièce d'un système que l'Espagne étendra à l'Amérique. Naples fournira hommes, impôts et ports pour les guerres de la monarchie. La même année meurt Isabelle de Castille (novembre 1504), laissant sa couronne à sa fille Jeanne, bientôt déclarée incapable ; son gendre Philippe de Habsbourg lui succédera, avant que Ferdinand n'assure la régence.",
+      "consequences": [
+        "Le royaume de Naples (sud de l'Italie) passe à la couronne d'Aragon et reçoit un vice-roi espagnol.",
+        "L'infanterie espagnole, avec ses arquebuses et ses piques, s'impose comme la première d'Europe.",
+        "L'Espagne devient une puissance italienne, face à la France et au pape.",
+        "La mort d'Isabelle (1504) ouvre une crise de succession en Castille."
+      ],
+      "territory": "naples-1504",
+      "sources": [
+        {
+          "label": "Wikipédia — Gonzalve de Cordoue",
+          "url": "https://fr.wikipedia.org/wiki/Gonzalve_de_Cordoue"
+        },
+        {
+          "label": "Geoffrey Parker, The Military Revolution"
+        }
+      ],
+      "territoryNote": "Couronnes de Castille et d'Aragon (Castille, León, Andalousie avec Grenade, Aragon, Catalogne, Valence, Baléares, Sicile, Sardaigne) auxquelles s'ajoute le royaume de Naples, conquis sur la France ; Hispaniola et les Antilles de Colomb (Cuba et Porto Rico seront colonisés en 1508-1511). Navarre toujours indépendante, Portugal indépendant.",
+      "figures": [
+        {
+          "name": "Gonzalve de Cordoue (le Gran Capitán)",
+          "role": "Vice-roi de Naples",
+          "faction": "tercios",
+          "archetype": "conquistador",
+          "quote": "Je ne me suis jamais battu qu'avec du fer (formule libre)",
+          "position": [
+            14.2681,
+            40.8518
+          ]
+        },
+        {
+          "name": "Louis XII",
+          "role": "Roi de France",
+          "faction": "francais-ancien-regime",
+          "archetype": "roi",
+          "quote": "Naples est à qui peut la tenir (formule libre)",
+          "position": [
+            4.83,
+            45.76
+          ]
+        }
+      ]
+    },
+    {
+      "id": "charles-quint-1516",
+      "year": 1516,
+      "title": "Charles Quint, héritier de quatre dynasties",
+      "type": "politique",
+      "location": [
+        -4.7245,
+        41.6523
+      ],
+      "zoom": 3.0,
+      "summary": "À la mort de Ferdinand, son petit-fils Charles de Habsbourg hérite de la Castille, de l'Aragon, de leurs possessions italiennes et américaines, et des Pays-Bas bourguignons : le noyau de l'empire est réuni.",
+      "details": "Né à Gand en 1500, **Charles** hérite de quatre grands-parents. De ses grands-parents bourguignons et habsbourgeois (Marie de Bourgogne et Maximilien d'Autriche), il reçoit les **Pays-Bas** et la Franche-Comté. De ses grands-parents espagnols, **Isabelle** et **Ferdinand**, la Castille avec ses colonies d'Amérique, l'Aragon, la Sicile, la Sardaigne et Naples. Quand Ferdinand meurt en janvier 1516, il devient roi des deux couronnes sous le nom de **Carlos I**, aux côtés de sa mère Jeanne la Folle, enfermée à Tordesillas.\n\nLe jeune prince, qui ne parle pas castillan, arrive en 1517 avec ses conseillers flamands. Les villes de Castille se révoltent en 1520 (révolte des **Comuneros**), écrasée en 1521. En 1519, il bat François Ier à coups de florins prêtés par les banquiers allemands **Fugger** et est élu **empereur du Saint-Empire** : il règne désormais sur l'Allemagne, mais l'Espagne demeure la base de ses ressources.\n\nLa même année, **Magellan** appareille de Séville pour le tour du monde, achevé par Elcano en 1522. Le monarque est contraint de gouverner un territoire éclaté ; il voyage sans cesse, d'où le surnom d'« empire où le soleil ne se couche jamais », né plus tard sous la plume de ses chroniqueurs.",
+      "consequences": [
+        "La Castille, l'Aragon, Naples, la Sicile, la Sardaigne, les Pays-Bas et la Franche-Comté sont réunis sous un seul souverain.",
+        "La Navarre haute, annexée par Ferdinand en 1512-1515, est incorporée à la Castille.",
+        "L'élection impériale de 1519 lie l'Espagne aux guerres d'Allemagne et d'Italie.",
+        "Les Antilles (Hispaniola, Cuba, Porto Rico, Jamaïque) et Panama forment les premières colonies de peuplement."
+      ],
+      "territory": "charles-quint-1516",
+      "sources": [
+        {
+          "label": "Wikipédia — Charles Quint",
+          "url": "https://fr.wikipedia.org/wiki/Charles_Quint"
+        },
+        {
+          "label": "Joseph Pérez, Charles Quint, empereur des deux mondes (Gallimard)"
+        }
+      ],
+      "territoryNote": "Couronnes de Castille (avec la Haute-Navarre annexée en 1512-1515, Oran prise en 1509, Canaries) et d'Aragon (Catalogne, Valence, Baléares), Sicile, Sardaigne, Naples ; Pays-Bas bourguignons (Flandre, Brabant, Hainaut, Artois, Hollande, Zélande) et Franche-Comté, hérités de Marie de Bourgogne ; Antilles espagnoles (Hispaniola, Cuba, Porto Rico, Jamaïque) et Darién (Panama). Hors de l'empire : le Portugal, le duché de Milan (alors français), la Basse-Navarre française, l'Autriche (dont héritera son frère Ferdinand).",
+      "figures": [
+        {
+          "name": "Charles de Habsbourg",
+          "role": "Roi d'Espagne, futur Charles Quint",
+          "faction": "tercios",
+          "archetype": "roi-habsbourg",
+          "quote": "Je parle espagnol à Dieu, italien aux femmes, français aux hommes, allemand à mon cheval (attribué, douteux)",
+          "position": [
+            -4.7245,
+            41.6523
+          ]
+        },
+        {
+          "name": "Francisco Jiménez de Cisneros",
+          "role": "Cardinal et régent de Castille",
+          "faction": "tercios",
+          "archetype": "vice-roi",
+          "quote": "Les canons sont mes meilleurs arguments (attribué, douteux)",
+          "position": [
+            -3.6,
+            40.52
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tenochtitlan-1521",
+      "year": 1521,
+      "title": "Tenochtitlan : Cortés renverse l'empire aztèque",
+      "type": "bataille",
+      "location": [
+        -99.1333,
+        19.4326
+      ],
+      "zoom": 4.6,
+      "summary": "En 1521, après un siège de trois mois mené avec des dizaines de milliers d'alliés indigènes, Hernán Cortés prend la capitale des Aztèques, qui devient Mexico.",
+      "details": "En 1519, **Hernán Cortés** débarque sur la côte du Mexique avec environ 500 hommes et une douzaine de chevaux. Il apprend que les **Aztèques** (ou Mexicas), peuple de la vallée du Mexique, dominent par la terreur des cités soumises à un lourd tribut. Il s'allie aux **Tlaxcaltèques** et à d'autres rivaux, accompagné de la traductrice **Malinche**. L'empereur **Moctezuma II** le reçoit à **Tenochtitlan**, une capitale lacustre de plusieurs centaines de milliers d'habitants, plus peuplée que la plupart des villes d'Europe.\n\nLes Espagnols prennent Moctezuma en otage, puis sont chassés lors de la « Noche Triste » (30 juin 1520). Une épidémie de variole, apportée d'Europe, ravage alors la cité. Cortés revient avec des brigantins construits pour le lac de Texcoco et des dizaines de milliers de guerriers indigènes. Le siège dure du 26 mai au 13 août 1521 : on coupe l'eau et les vivres, on avance digue par digue. Le dernier empereur, **Cuauhtémoc**, est capturé.\n\nSur les ruines, les Espagnols bâtissent Mexico. La **Nouvelle-Espagne**, érigée en vice-royauté en 1535, s'étendra du Panama à la Californie, et ses mines d'argent nourriront la monarchie.",
+      "consequences": [
+        "L'empire aztèque disparaît ; le centre du Mexique devient le noyau de la Nouvelle-Espagne.",
+        "Une catastrophe démographique frappe les peuples d'Amérique (variole, travail forcé), dont la population s'effondre en quelques décennies.",
+        "Mexico, bâtie sur Tenochtitlan, devient la capitale d'un vaste territoire et le point de départ des conquêtes vers le nord et vers le Pacifique.",
+        "Le système de l'encomienda donne aux conquérants des Indiens à faire travailler ; Bartolomé de Las Casas en dénoncera les abus."
+      ],
+      "territory": "tenochtitlan-1521",
+      "sources": [
+        {
+          "label": "Wikipédia — Siège de Tenochtitlan",
+          "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_Tenochtitlan"
+        },
+        {
+          "label": "Hugh Thomas, La Conquête du Mexique (Robert Laffont)"
+        },
+        {
+          "label": "Bernal Díaz del Castillo, Histoire véridique de la conquête de la Nouvelle-Espagne"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Espagnols et alliés indigènes (Tlaxcaltèques, Texcocans)",
+          "Empire aztèque (Tenochtitlan)"
+        ],
+        "commanders": [
+          "Hernán Cortés",
+          "Pedro de Alvarado",
+          "Cuauhtémoc"
+        ],
+        "outcome": "Victoire des Espagnols et de leurs alliés ; chute de Tenochtitlan",
+        "forces": "Environ 900 Espagnols et plusieurs dizaines de milliers d'alliés indigènes (estimations très variables)",
+        "losses": "Plusieurs dizaines de milliers de morts aztèques, victimes des combats, de la faim et de la variole"
+      },
+      "territoryNote": "Couronnes de Castille et d'Aragon, Sicile, Sardaigne, Naples, Pays-Bas bourguignons et Franche-Comté ; Antilles espagnoles (Hispaniola, Cuba, Porto Rico, Jamaïque) et Panama ; vallée de Mexico et régions voisines conquises (Mexique central). Reste du Mexique, Amérique centrale et Pérou pas encore conquis. Hors de l'empire : Portugal, Milan, Navarre française.",
+      "armies": [
+        {
+          "id": "cortes",
+          "side": "Cortés et ses alliés tlaxcaltèques",
+          "faction": "tercios",
+          "path": [
+            [
+              -96.13,
+              19.2
+            ],
+            [
+              -97.2,
+              19.15
+            ],
+            [
+              -98.2,
+              19.31
+            ],
+            [
+              -98.88,
+              19.51
+            ],
+            [
+              -99.1333,
+              19.4326
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Cuauhtémoc et les Mexicas",
+          "faction": "azteques",
+          "path": [
+            [
+              -99.14,
+              19.45
+            ],
+            [
+              -99.1333,
+              19.4326
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Hernán Cortés",
+          "role": "Conquistador",
+          "faction": "tercios",
+          "archetype": "conquistador",
+          "quote": "Nous avons mal au cœur d'une maladie que l'or seul peut guérir (attribué à Cortés)",
+          "position": [
+            -99.0,
+            19.43
+          ]
+        },
+        {
+          "name": "Cuauhtémoc",
+          "role": "Dernier empereur aztèque",
+          "faction": "azteques",
+          "archetype": "souverain-precolombien",
+          "quote": "Prenez ce poignard et tuez-moi (attribué par Bernal Díaz à Cuauhtémoc)",
+          "position": [
+            -99.15,
+            19.45
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pavie-1525",
+      "year": 1525,
+      "title": "Pavie : François Ier prisonnier",
+      "type": "bataille",
+      "location": [
+        9.16,
+        45.19
+      ],
+      "zoom": 4.4,
+      "summary": "Le 24 février 1525, l'armée de Charles Quint écrase l'armée française devant Pavie, et capture le roi François Ier : l'Italie du Nord passe sous contrôle impérial.",
+      "details": "Depuis 1494, la France et l'Espagne se disputent l'Italie. **François Ier**, vainqueur à Marignan en 1515, reprend Milan en 1524 et assiège **Pavie**. L'armée de **Charles Quint**, commandée par le vice-roi de Naples **Charles de Lannoy** et le marquis de **Pescara**, avec des lansquenets allemands de **Georg von Frundsberg** et le connétable de **Bourbon** (un grand seigneur français passé au service de l'empereur), vient la secourir.\n\nLe 24 février 1525, au petit matin, les Impériaux percent le mur du parc de **Mirabello**, où campe l'armée française. La cavalerie lourde de François Ier charge, puis se retrouve devant les arquebusiers espagnols, qui tirent en rangs dispersés dans les bois et les fossés : elle est paralysée et massacrée. Le roi, blessé, se rend à Lannoy. On lui prête la formule : « Tout est perdu fors l'honneur » (sans doute apocryphe).\n\nEmmené prisonnier à Madrid, François Ier signe le **traité de Madrid** (1526) : il renonce à l'Italie et à la Bourgogne, mais le reniera aussitôt libre. Les troupes impériales, impayées, saccagent Rome en 1527. La victoire de Pavie confirme l'infanterie à armes à feu comme l'arme maîtresse et installe la domination espagnole sur la péninsule italienne pour près de deux siècles.",
+      "consequences": [
+        "Le duché de Milan passe sous l'influence de Charles Quint (il sera donné à son fils Philippe en 1540).",
+        "La France renonce, provisoirement, à l'Italie ; François Ier est libéré en 1526 contre ses deux fils en otages.",
+        "L'infanterie à arquebuses prend l'avantage sur la cavalerie lourde.",
+        "Le sac de Rome (1527) montre que l'empereur ne contrôle pas ses propres troupes."
+      ],
+      "territory": "pavie-1525",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Pavie (1525)",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Pavie_(1525)"
+        },
+        {
+          "label": "Jean Jacquart, François Ier (Fayard)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Armée impériale (Espagnols, lansquenets, Italiens)",
+          "Royaume de France"
+        ],
+        "commanders": [
+          "Charles de Lannoy",
+          "Fernando de Ávalos, marquis de Pescara",
+          "Georg von Frundsberg",
+          "François Ier (capturé)"
+        ],
+        "outcome": "Victoire impériale ; François Ier capturé",
+        "forces": "Environ 23 000 Impériaux contre 28 000 Français (selon les estimations courantes)",
+        "losses": "Environ 8 000 morts français, dont de nombreux nobles ; pertes impériales beaucoup plus faibles"
+      },
+      "territoryNote": "Couronnes de Castille et d'Aragon, Sicile, Sardaigne, Naples, Pays-Bas bourguignons, Franche-Comté ; Antilles et Panama, Mexique central (Nouvelle-Espagne en formation). Après la victoire, le duché de Milan est tenu militairement par les impériaux. Hors de l'empire : France, États pontificaux, Venise, Portugal, Navarre française.",
+      "armies": [
+        {
+          "side": "Armée impériale",
+          "faction": "tercios",
+          "path": [
+            [
+              9.5,
+              45.31
+            ],
+            [
+              9.4,
+              45.25
+            ],
+            [
+              9.28,
+              45.22
+            ],
+            [
+              9.16,
+              45.19
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée de François Ier",
+          "faction": "francais-ancien-regime",
+          "path": [
+            [
+              4.83,
+              45.76
+            ],
+            [
+              6.5,
+              45.2
+            ],
+            [
+              7.68,
+              45.07
+            ],
+            [
+              8.62,
+              45.32
+            ],
+            [
+              9.16,
+              45.19
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "François Ier",
+          "role": "Roi de France, capturé",
+          "faction": "francais-ancien-regime",
+          "archetype": "roi",
+          "quote": "Madame, tout est perdu fors l'honneur (attribué, sans doute apocryphe)",
+          "position": [
+            9.17,
+            45.2
+          ]
+        },
+        {
+          "name": "Ferdinand d'Ávalos, marquis de Pescara",
+          "role": "Général impérial",
+          "faction": "tercios",
+          "archetype": "conquistador",
+          "quote": "Les arquebuses ont gagné la bataille (formule libre)",
+          "position": [
+            9.2,
+            45.21
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cajamarca-1532",
+      "year": 1532,
+      "title": "Cajamarca : Pizarro capture l'Inca",
+      "type": "bataille",
+      "location": [
+        -78.5,
+        -7.16
+      ],
+      "zoom": 4.2,
+      "summary": "Le 16 novembre 1532, Francisco Pizarro et moins de deux cents hommes capturent l'empereur inca Atahualpa au milieu de son armée : la route du Pérou est ouverte.",
+      "details": "L'**empire inca**, le Tawantinsuyu, s'étire sur 4 000 kilomètres le long des Andes, de la Colombie au Chili, avec Cuzco pour capitale. Il sort d'une guerre civile entre deux frères, **Huáscar** et **Atahualpa**, que ce dernier vient de gagner, tandis qu'une épidémie, venue des Antilles, a déjà frappé le pays. **Francisco Pizarro**, un ancien porcher d'Estrémadure devenu conquistador, débarque en 1532 à Tumbes avec 168 hommes, dont une soixantaine de cavaliers.\n\nAtahualpa accepte une rencontre à **Cajamarca**, dans les montagnes du nord, avec une escorte de plusieurs milliers d'hommes, presque sans armes. Dans la grand-place, le moine Vicente de Valverde le somme de reconnaître le roi d'Espagne et la Bible. L'Inca jette le livre. Pizarro donne le signal : les arquebuses et les chevaux chargent la foule, massacrent sa garde et capturent l'empereur.\n\nAtahualpa propose de remplir de ses richesses une pièce de sa prison ; en un an, l'or et l'argent affluent. Pizarro le fait pourtant exécuter en juillet 1533 et marche sur **Cuzco**. L'Espagne contrôle bientôt les Andes, d'où viendra l'argent de **Potosí** (découvert en 1545). Les Incas résistent encore dans le réduit de Vilcabamba jusqu'en 1572.",
+      "consequences": [
+        "L'empire inca s'effondre en quelques années ; Cuzco est prise fin 1533 et Lima fondée en 1535.",
+        "Le Pérou devient une vice-royauté en 1542-1544, la seconde de l'Amérique espagnole.",
+        "Les mines d'argent de Potosí (1545) font de l'Amérique la principale source de richesse de la monarchie.",
+        "Les conquistadors se déchirent : Pizarro est assassiné en 1541 lors des guerres civiles du Pérou."
+      ],
+      "territory": "cajamarca-1532",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Cajamarca",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Cajamarca"
+        },
+        {
+          "label": "Nathan Wachtel, La Vision des vaincus (Gallimard)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Espagnols de Pizarro",
+          "Empire inca"
+        ],
+        "commanders": [
+          "Francisco Pizarro",
+          "Hernando de Soto",
+          "Atahualpa (capturé)"
+        ],
+        "outcome": "Victoire espagnole ; Atahualpa capturé",
+        "forces": "168 Espagnols contre une escorte de quelques milliers d'Incas, peu armés",
+        "losses": "Environ 2 000 à 7 000 morts incas selon les sources (chiffre très incertain) ; aucun Espagnol tué"
+      },
+      "territoryNote": "Couronnes de Castille et d'Aragon, Sicile, Sardaigne, Naples, Pays-Bas et Franche-Comté ; Milan tenu par les impériaux ; Nouvelle-Espagne (Mexique, Yucatán, Amérique centrale, Venezuela côtier) et Antilles ; Panama. Pérou : Pizarro n'a encore qu'une tête de pont à Tumbes et San Miguel de Piura, l'empire inca reste debout en dehors de Cajamarca. Hors de l'empire : le Portugal, la France, les États pontificaux, Venise.",
+      "armies": [
+        {
+          "id": "pizarro",
+          "side": "Pizarro",
+          "faction": "tercios",
+          "path": [
+            [
+              -80.45,
+              -3.57
+            ],
+            [
+              -80.63,
+              -5.19
+            ],
+            [
+              -79.8,
+              -6.1
+            ],
+            [
+              -78.5,
+              -7.16
+            ]
+          ],
+          "strength": 1,
+          "winner": true
+        },
+        {
+          "side": "Escorte d'Atahualpa",
+          "faction": "incas",
+          "path": [
+            [
+              -78.52,
+              -0.22
+            ],
+            [
+              -79.0,
+              -2.9
+            ],
+            [
+              -79.2,
+              -4.0
+            ],
+            [
+              -78.5,
+              -7.16
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Francisco Pizarro",
+          "role": "Conquistador du Pérou",
+          "faction": "tercios",
+          "archetype": "conquistador",
+          "quote": "Que ceux qui aiment l'honneur me suivent, les autres retournent à Panama (attribué à Pizarro)",
+          "position": [
+            -78.52,
+            -7.15
+          ]
+        },
+        {
+          "name": "Atahualpa",
+          "role": "Sapa Inca, empereur",
+          "faction": "incas",
+          "archetype": "souverain-precolombien",
+          "quote": "Je suis venu en paix, mais vous êtes venus pour me prendre (formule libre)",
+          "position": [
+            -78.48,
+            -7.15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "philippe-ii-1556",
+      "year": 1556,
+      "title": "Philippe II, l'Espagne au centre",
+      "type": "politique",
+      "location": [
+        4.3517,
+        50.8467
+      ],
+      "zoom": 3.0,
+      "summary": "Charles Quint abdique : son fils Philippe II reçoit l'Espagne, l'Italie, les Pays-Bas et l'Amérique, son frère Ferdinand l'Empire. La monarchie hispanique devient une puissance à part.",
+      "details": "Fatigué, malade et dépassé par la division religieuse de l'Allemagne, **Charles Quint** abdique en deux temps : les Pays-Bas en octobre 1555 à Bruxelles, puis l'Espagne et ses possessions en janvier 1556. Il se retire au monastère de Yuste, en Estrémadure. À son frère **Ferdinand** va l'Autriche, puis le titre impérial : l'empire des Habsbourg se coupe en deux branches, de Madrid et de Vienne.\n\nSon fils **Philippe II**, né à Valladolid en 1527, est un roi castillan de culture et de goût. Travailleur acharné, il gouverne par écrit depuis son bureau, entouré de secrétaires. Il installe sa cour à **Madrid**, en 1561, et bâtit le monastère-palais de l'**Escurial**. Dévot, il se veut le champion du catholicisme contre les protestants et les Turcs.\n\nLes ressources viennent de plus en plus d'Amérique : l'argent de **Potosí** (Pérou) et de Zacatecas (Mexique) arrive chaque année à Séville. Mais les guerres coûtent plus que les mines ne rapportent, et l'État fait faillite en 1557, 1560 et 1575. La monarchie dispose d'une puissante infanterie, la flotte de la Méditerranée et un empire où, dit-on, le soleil ne se couche pas.",
+      "consequences": [
+        "La monarchie hispanique réunit l'Espagne, les Pays-Bas, la Franche-Comté, Naples, la Sicile, la Sardaigne, Milan, l'Amérique et bientôt les Philippines.",
+        "L'Empire revient à la branche autrichienne : les Habsbourg de Madrid et de Vienne s'allieront sans fusionner.",
+        "Madrid devient capitale en 1561 ; l'Escurial est le centre du pouvoir.",
+        "L'argent américain finance l'armée mais ne suffit pas : l'État fait faillite plusieurs fois."
+      ],
+      "territory": "philippe-ii-1556",
+      "sources": [
+        {
+          "label": "Wikipédia — Philippe II (roi d'Espagne)",
+          "url": "https://fr.wikipedia.org/wiki/Philippe_II_(roi_d%27Espagne)"
+        },
+        {
+          "label": "Geoffrey Parker, Philip II (Little, Brown)"
+        }
+      ],
+      "territoryNote": "Monarchie hispanique de Philippe II : couronnes de Castille (avec Navarre haute, Canaries, Oran, Peñón de Vélez) et d'Aragon ; Naples, Sicile, Sardaigne, duché de Milan ; Pays-Bas (dix-sept provinces) et Franche-Comté ; Nouvelle-Espagne et vice-royauté du Pérou, Antilles, Venezuela. Hors de l'empire : le Portugal (indépendant jusqu'en 1580), les États pontificaux, le Saint-Empire passé à Ferdinand, la France.",
+      "figures": [
+        {
+          "name": "Charles Quint",
+          "role": "Empereur abdiquant",
+          "faction": "tercios",
+          "archetype": "roi-habsbourg",
+          "quote": "Je vous laisse un lourd héritage (formule libre)",
+          "position": [
+            4.3517,
+            50.8467
+          ]
+        },
+        {
+          "name": "Philippe II",
+          "role": "Roi d'Espagne, « le Prudent »",
+          "faction": "tercios",
+          "archetype": "roi-habsbourg",
+          "quote": "Je préfère ne pas régner que régner sur des hérétiques (attribué, douteux)",
+          "position": [
+            -4.15,
+            40.58
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saint-quentin-1557",
+      "year": 1557,
+      "title": "Saint-Quentin : la victoire de la Saint-Laurent",
+      "type": "bataille",
+      "location": [
+        3.2851,
+        49.8489
+      ],
+      "zoom": 4.6,
+      "summary": "Le 10 août 1557, l'armée de Philippe II, commandée par Emmanuel-Philibert de Savoie, écrase les Français devant Saint-Quentin ; Philippe fera bâtir l'Escurial en action de grâce.",
+      "details": "Philippe II hérite aussi de la vieille guerre contre la France. En 1557, le duc de **Savoie**, **Emmanuel-Philibert**, dépossédé de ses États par la France, lève une armée de près de 50 000 hommes, avec des Espagnols, des Flamands, des Allemands et des Anglais, car Philippe est le mari de la reine d'Angleterre, **Marie Tudor**. Il assiège **Saint-Quentin**, ville picarde qui ouvre la route de Paris.\n\nLe connétable **Anne de Montmorency** tente d'y faire entrer des renforts. Le 10 août 1557, jour de la Saint-Laurent, l'armée française est surprise en plein repli par la cavalerie du comte d'**Egmont** : elle est détruite, Montmorency est capturé. Saint-Quentin tombe le 27 août. Philippe, réticent à avancer vers Paris, laisse passer sa chance.\n\nCette victoire, suivie de celle de **Gravelines** (1558), pousse Henri II à négocier le **traité du Cateau-Cambrésis** (avril 1559), qui met fin aux guerres d'Italie : la France renonce à l'Italie, la Savoie est restituée à Emmanuel-Philibert et le roi d'Espagne épouse la princesse Élisabeth de Valois. En remerciement à saint Laurent, Philippe fait bâtir le monastère de l'**Escurial** en forme de gril, instrument du martyre du saint.",
+      "consequences": [
+        "La France renonce à l'Italie au traité du Cateau-Cambrésis (1559) : l'hégémonie espagnole sur la péninsule est confirmée.",
+        "Philippe II fait élever l'Escurial, symbole de la monarchie.",
+        "La Savoie est restituée à Emmanuel-Philibert, qui épouse la sœur d'Henri II.",
+        "La France, affaiblie, entre dans les guerres de Religion (1562)."
+      ],
+      "territory": "saint-quentin-1557",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Saint-Quentin (1557)",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Saint-Quentin_(1557)"
+        },
+        {
+          "label": "Geoffrey Parker, The Army of Flanders and the Spanish Road"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Armée de Philippe II (Espagnols, Flamands, Allemands, Anglais)",
+          "Royaume de France"
+        ],
+        "commanders": [
+          "Emmanuel-Philibert de Savoie",
+          "Lamoral d'Egmont",
+          "Anne de Montmorency (capturé)"
+        ],
+        "outcome": "Victoire espagnole écrasante ; Montmorency capturé",
+        "forces": "Environ 50 000 hommes côté espagnol contre 20 000 à 25 000 côté français",
+        "losses": "Environ 5 000 morts et 7 000 prisonniers français ; pertes espagnoles faibles"
+      },
+      "territoryNote": "Monarchie de Philippe II (Espagne, Naples, Sicile, Sardaigne, Milan, Pays-Bas, Franche-Comté, Amérique espagnole : Nouvelle-Espagne, Pérou, Antilles). Hors de l'empire : le Portugal, la France, la Savoie (occupée par la France jusqu'en 1559), les États pontificaux, Venise, l'Angleterre (alliée par le mariage de Philippe avec Marie Tudor).",
+      "armies": [
+        {
+          "side": "Armée de Philippe II",
+          "faction": "tercios",
+          "path": [
+            [
+              4.35,
+              50.85
+            ],
+            [
+              3.9,
+              50.45
+            ],
+            [
+              3.24,
+              50.18
+            ],
+            [
+              3.2851,
+              49.8489
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée du connétable de Montmorency",
+          "faction": "francais-ancien-regime",
+          "path": [
+            [
+              3.62,
+              49.56
+            ],
+            [
+              3.35,
+              49.73
+            ],
+            [
+              3.2851,
+              49.8489
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Emmanuel-Philibert de Savoie",
+          "role": "Duc de Savoie, chef de l'armée espagnole",
+          "faction": "tercios",
+          "archetype": "conquistador",
+          "quote": "Je reprendrai mes États par l'épée (formule libre)",
+          "position": [
+            3.25,
+            49.85
+          ]
+        },
+        {
+          "name": "Anne de Montmorency",
+          "role": "Connétable de France",
+          "faction": "francais-ancien-regime",
+          "archetype": "conquistador",
+          "quote": "Faites sonner le boute-selle (formule libre)",
+          "position": [
+            3.3,
+            49.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "manille-1571",
+      "year": 1571,
+      "title": "Manille et les Philippines : la route du Pacifique",
+      "type": "fondation",
+      "location": [
+        120.9842,
+        14.5995
+      ],
+      "zoom": 3.2,
+      "summary": "En 1571, Miguel López de Legazpi fonde Manille : l'Espagne relie le Mexique à l'Asie par le galion de Manille, et son empire fait le tour du globe.",
+      "details": "Les Philippines portent le nom de **Philippe II**. Magellan, qui y est mort en 1521 sur l'île de Mactan, les avait atteintes pour le compte de l'Espagne, mais il fallait encore trouver le chemin du retour. En 1564, l'expédition de **Miguel López de Legazpi** quitte la côte du Mexique avec quatre navires, accompagnée du moine navigateur **Andrés de Urdaneta**. Elle s'installe à Cebu en 1565. Urdaneta ouvre ensuite le **tornaviaje**, la route de retour : on remonte vers le nord-est jusqu'au Japon, puis on se laisse porter par les vents d'ouest vers la Californie et le Mexique.\n\nEn mai-juin 1571, Legazpi prend le royaume musulman de **Maynilad**, sur la baie de Manille, et y fonde la ville, capitale de l'archipel. Chaque année, un **galion de Manille** relie désormais Manille à Acapulco, chargé de soies, de porcelaines et d'épices achetées aux marchands chinois, et revient avec l'argent américain. Ce commerce, qui durera jusqu'en 1815, fait de Manille un des premiers carrefours mondiaux.\n\nLes Philippines sont gouvernées depuis le Mexique. Les moines convertissent les populations, et la Chine, d'où viennent des milliers de marchands (les *sangleys*), fournit la main-d'œuvre commerciale.",
+      "consequences": [
+        "Les Philippines deviennent une colonie espagnole, rattachée à la Nouvelle-Espagne pour plus de deux siècles.",
+        "Le galion de Manille crée la première liaison commerciale régulière entre l'Amérique et l'Asie.",
+        "L'argent d'Amérique alimente le commerce avec la Chine, où il devient une monnaie de fait.",
+        "L'empire espagnol est le premier à encercler le globe : de Séville à Mexico, de Mexico à Manille."
+      ],
+      "territory": "manille-1571",
+      "sources": [
+        {
+          "label": "Wikipédia — Manille",
+          "url": "https://fr.wikipedia.org/wiki/Manille"
+        },
+        {
+          "label": "Serge Gruzinski, Les Quatre Parties du monde (La Martinière)"
+        }
+      ],
+      "territoryNote": "Monarchie de Philippe II : Espagne (Castille et Aragon), Naples, Sicile, Sardaigne, Milan, Pays-Bas du Sud (le Nord est en pleine révolte), Franche-Comté ; Amérique espagnole (Nouvelle-Espagne, Pérou, Antilles, Floride depuis 1565) ; Philippines (Cebu, Manille). Hors de l'empire : le Portugal (indépendant jusqu'en 1580), les sultanats de Sulu et de Mindanao, la Chine.",
+      "armies": [
+        {
+          "id": "legazpi",
+          "side": "Expédition de Legazpi (de Cebu à Manille)",
+          "faction": "tercios",
+          "path": [
+            [
+              123.9,
+              10.3
+            ],
+            [
+              122.5,
+              11.0
+            ],
+            [
+              121.0,
+              13.3
+            ],
+            [
+              120.9842,
+              14.5995
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Miguel López de Legazpi",
+          "role": "Fondateur de Manille",
+          "faction": "tercios",
+          "archetype": "conquistador",
+          "quote": "Nous prenons possession de ces îles au nom du roi (formule libre)",
+          "position": [
+            120.97,
+            14.6
+          ]
+        },
+        {
+          "name": "Andrés de Urdaneta",
+          "role": "Moine navigateur, inventeur du tornaviaje",
+          "faction": "tercios",
+          "archetype": "conquistador",
+          "quote": "Il existe un chemin de retour par le nord (formule libre)",
+          "position": [
+            123.9,
+            10.3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lepante-1571",
+      "year": 1571,
+      "title": "Lépante : la Sainte Ligue brise la flotte turque",
+      "type": "bataille",
+      "location": [
+        21.2,
+        38.3
+      ],
+      "zoom": 4.6,
+      "summary": "Le 7 octobre 1571, au large de la Grèce, la flotte de la Sainte Ligue de Don Juan d'Autriche détruit la flotte ottomane : c'est la plus grande bataille navale de galères.",
+      "details": "Au XVIe siècle, la Méditerranée est disputée entre les **Ottomans** du sultan Sélim II et les États chrétiens. En 1570, les Turcs attaquent Chypre, possession vénitienne. Le pape Pie V met sur pied une **Sainte Ligue** (Espagne, Venise, Papauté, Gênes, Savoie, Malte), dont le chef est **Don Juan d'Autriche**, fils naturel de Charles Quint et demi-frère de Philippe II, âgé de vingt-quatre ans.\n\nLe 7 octobre 1571, près de deux cents galères de chaque côté se rencontrent dans le golfe de Patras, à l'entrée de **Lépante** (Naupacte). Les galéasses vénitiennes, énormes navires à canons, brisent l'ordre turc. Le combat à l'abordage dure quatre heures. **Ali Pacha**, le chef de la flotte turque, est tué et sa tête brandie au bout d'une pique. Environ 200 navires turcs sont pris ou coulés, quelque 12 000 chrétiens ramant sur les galères turques sont libérés. Parmi les blessés se trouve le jeune **Miguel de Cervantes**, qui perd l'usage de la main gauche.\n\nLa victoire arrête la progression navale turque, mais les Ottomans reconstruisent leur flotte en un an. Venise fait la paix en 1573, la Ligue se dissout, et Tunis retombe aux mains des Turcs en 1574.",
+      "consequences": [
+        "Le mythe de l'invincibilité navale turque s'effondre ; la Méditerranée occidentale reste hors de portée des Ottomans.",
+        "La Sainte Ligue ne reprend pas Chypre : Venise négocie la paix avec le sultan en 1573.",
+        "Tunis, prise par Don Juan en 1573, est reperdue en 1574.",
+        "Lépante devient un symbole de la Contre-Réforme ; Cervantes en tirera la fierté de sa vie."
+      ],
+      "territory": "lepante-1571",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Lépante",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_L%C3%A9pante"
+        },
+        {
+          "label": "Fernand Braudel, La Méditerranée et le monde méditerranéen à l'époque de Philippe II"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Sainte Ligue (Espagne, Venise, Saint-Siège, Gênes, Savoie, Malte)",
+          "Empire ottoman"
+        ],
+        "commanders": [
+          "Don Juan d'Autriche",
+          "Sebastiano Venier",
+          "Marcantonio Colonna",
+          "Ali Pacha (tué)"
+        ],
+        "outcome": "Victoire de la Sainte Ligue ; flotte ottomane détruite",
+        "forces": "Environ 200 galères et 6 galéasses chrétiennes contre environ 250 galères ottomanes",
+        "losses": "Environ 25 000 morts ottomans, 200 navires perdus ; environ 8 000 morts chrétiens, 12 galères"
+      },
+      "territoryNote": "Monarchie de Philippe II : Espagne, Naples, Sicile, Sardaigne, Milan, Pays-Bas du Sud, Franche-Comté, Amérique espagnole, Philippines. Hors de l'empire : le Portugal, la République de Venise, les États pontificaux, Gênes et la Savoie (alliés dans la Sainte Ligue), l'Empire ottoman (adversaire).",
+      "armies": [
+        {
+          "id": "ligue",
+          "side": "Flotte de la Sainte Ligue",
+          "faction": "tercios",
+          "path": [
+            [
+              15.55,
+              38.19
+            ],
+            [
+              17.1,
+              38.9
+            ],
+            [
+              19.9,
+              39.6
+            ],
+            [
+              21.2,
+              38.3
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Flotte ottomane",
+          "faction": "ottomans",
+          "path": [
+            [
+              21.83,
+              38.39
+            ],
+            [
+              21.5,
+              38.35
+            ],
+            [
+              21.2,
+              38.3
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Don Juan d'Autriche",
+          "role": "Chef de la flotte de la Sainte Ligue",
+          "faction": "tercios",
+          "archetype": "conquistador",
+          "quote": "Il n'y a pas de place au ciel pour des lâches (formule libre)",
+          "position": [
+            21.25,
+            38.31
+          ]
+        },
+        {
+          "name": "Miguel de Cervantes",
+          "role": "Soldat blessé, futur auteur de Don Quichotte",
+          "faction": "tercios",
+          "archetype": "conquistador",
+          "quote": "La plus noble occasion que les siècles aient jamais vue (attribué à Cervantes)",
+          "position": [
+            21.18,
+            38.29
+          ]
+        }
+      ]
+    },
+    {
+      "id": "union-iberique-1580",
+      "year": 1580,
+      "title": "L'union ibérique : Philippe II roi du Portugal",
+      "type": "politique",
+      "location": [
+        -9.1393,
+        38.7223
+      ],
+      "zoom": 3.0,
+      "summary": "À la mort du cardinal-roi Henri, Philippe II revendique le trône du Portugal ; son armée l'emporte, et les deux empires coloniaux, espagnol et portugais, passent sous le même souverain.",
+      "details": "En 1578, le jeune roi du Portugal **Sébastien** meurt à la bataille d'Alcácer-Quibir, au Maroc, sans enfant. Son grand-oncle, le cardinal **Henri**, lui succède puis meurt en janvier 1580. Plusieurs prétendants se disputent le trône ; **Philippe II**, fils de l'infante portugaise Isabelle, est le mieux placé par la généalogie, et le plus puissant. Il achète une partie de la noblesse, des banquiers et du clergé. Le prieur de Crato, **Antoine**, se proclame roi.\n\nL'armée du duc d'**Albe**, âgé de soixante-douze ans, entre au Portugal en juin 1580 et bat Antoine à **Alcântara**, près de Lisbonne (25 août). Aux Cortès de **Tomar** (1581), Philippe est reconnu roi sous le nom de **Philippe Ier** du Portugal. On lui prête le mot : « Je l'ai hérité, je l'ai acheté, je l'ai conquis. »\n\nPhilippe promet de respecter les lois, la langue, la monnaie et les officiers portugais : le Portugal reste un royaume distinct et garde son empire, du Brésil à Goa et Macao. Les deux empires, le plus vaste du monde, sont unis jusqu'à 1640. Mais les ennemis de l'Espagne, notamment les Néerlandais, peuvent désormais attaquer partout les comptoirs portugais.",
+      "consequences": [
+        "L'union ibérique réunit tout l'espace péninsulaire sous un seul roi et l'essentiel des Amériques, d'Afrique et d'Asie.",
+        "Le Portugal garde ses institutions : nous le représentons ici comme royaume « vassal » (union de couronnes), non comme province.",
+        "Les Pays-Bas du Nord et l'Angleterre attaquent les possessions portugaises, devenues cibles de l'ennemi espagnol.",
+        "Lisbonne devient la base de la flotte de l'Atlantique et de l'Invincible Armada."
+      ],
+      "territory": "union-iberique-1580",
+      "sources": [
+        {
+          "label": "Wikipédia — Union ibérique",
+          "url": "https://fr.wikipedia.org/wiki/Union_ib%C3%A9rique"
+        },
+        {
+          "label": "Geoffrey Parker, Philip II (Little, Brown)"
+        }
+      ],
+      "territoryNote": "Monarchie de Philippe II : Espagne, Naples, Sicile, Sardaigne, Milan, Pays-Bas du Sud (le Nord, passé à l'Union d'Utrecht de 1579, échappe à l'autorité du roi), Franche-Comté, Amérique espagnole, Philippines. Le Portugal et son empire (Brésil, îles atlantiques, comptoirs d'Afrique et d'Asie) forment un royaume distinct sous le même roi : statut vassal. Hors de l'empire : les provinces rebelles du Nord, la France, l'Angleterre.",
+      "armies": [
+        {
+          "side": "Armée du duc d'Albe",
+          "faction": "tercios",
+          "path": [
+            [
+              -6.97,
+              38.88
+            ],
+            [
+              -7.9,
+              38.75
+            ],
+            [
+              -8.89,
+              38.52
+            ],
+            [
+              -9.17,
+              38.7
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Philippe II (Philippe Ier du Portugal)",
+          "role": "Roi d'Espagne et du Portugal",
+          "faction": "tercios",
+          "archetype": "roi-habsbourg",
+          "quote": "Je l'ai hérité, je l'ai acheté, je l'ai conquis (attribué à Philippe II)",
+          "position": [
+            -9.14,
+            38.72
+          ]
+        },
+        {
+          "name": "Fernando Álvarez de Tolède, duc d'Albe",
+          "role": "Général victorieux à Alcântara",
+          "faction": "tercios",
+          "archetype": "conquistador",
+          "quote": "Je n'ai fait que mon devoir de soldat (formule libre)",
+          "position": [
+            -9.17,
+            38.7
+          ]
+        }
+      ]
+    },
+    {
+      "id": "armada-1588",
+      "year": 1588,
+      "title": "L'Invincible Armada",
+      "type": "bataille",
+      "location": [
+        2.13,
+        51.0
+      ],
+      "zoom": 4.2,
+      "summary": "En 1588, Philippe II lance contre l'Angleterre une immense flotte, qui échoue devant Gravelines puis périt dans les tempêtes du retour.",
+      "details": "Depuis la mort de Marie Tudor en 1558, l'Angleterre de la protestante **Élisabeth Ire** soutient les Néerlandais révoltés et ses corsaires, **Francis Drake** en tête, pillent les galions espagnols. En 1587, Élisabeth fait exécuter Marie Stuart, la catholique. Philippe II décide d'envahir l'Angleterre : une flotte de 130 navires, l'« **Invincible Armada** » (mot donné par les Anglais), doit rejoindre en Flandre les 30 000 soldats du duc de **Parme**, qui traverseront la Manche sur des barges.\n\nL'Armada, commandée par le duc de **Medina Sidonia**, quitte Lisbonne en mai et remonte la Manche en août. Les navires anglais, plus rapides et mieux armés en canons, harcèlent la flotte sans l'arrêter. Le 7 août, au large de Calais, des brûlots dispersent les navires espagnols. Le lendemain, au combat de **Gravelines**, l'Armada est repoussée vers la mer du Nord.\n\nElle ne peut plus rejoindre Parme et rentre en contournant l'Écosse et l'Irlande. Les tempêtes de l'automne causent la perte d'une soixantaine de navires et de plusieurs milliers d'hommes. Philippe aurait dit : « J'ai envoyé mes navires combattre des hommes, non les éléments. » L'Espagne se reconstruit vite, mais l'invasion n'aura plus lieu.",
+      "consequences": [
+        "L'Angleterre échappe à l'invasion et voit grandir sa confiance maritime.",
+        "L'Espagne reconstruit sa flotte : en 1589, la contre-armada anglaise échoue à son tour.",
+        "La guerre se prolonge jusqu'en 1604 ; le traité de Londres met fin à l'affrontement avec l'Angleterre.",
+        "Le mythe de l'invincibilité espagnole est atteint, sans que son empire territorial recule."
+      ],
+      "territory": "armada-1588",
+      "sources": [
+        {
+          "label": "Wikipédia — Invincible Armada",
+          "url": "https://fr.wikipedia.org/wiki/Invincible_Armada"
+        },
+        {
+          "label": "Geoffrey Parker, The Grand Strategy of Philip II (Yale)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Espagne (Invincible Armada)",
+          "Angleterre d'Élisabeth Ire"
+        ],
+        "commanders": [
+          "Alonso Pérez de Guzmán, duc de Medina Sidonia",
+          "Charles Howard",
+          "Francis Drake",
+          "John Hawkins"
+        ],
+        "outcome": "Échec stratégique de l'Armada, repoussée vers le nord puis dispersée par les tempêtes",
+        "forces": "Environ 130 navires espagnols contre environ 200 navires anglais, d'inégale valeur",
+        "losses": "Une soixantaine de navires espagnols perdus et plusieurs milliers d'hommes (estimations jusqu'à 20 000) ; pertes anglaises faibles au combat"
+      },
+      "territoryNote": "Monarchie de Philippe II : Espagne, Naples, Sicile, Sardaigne, Milan, Pays-Bas du Sud (« Pays-Bas espagnols » : Flandre, Brabant, Hainaut, Artois, Luxembourg), Franche-Comté, Amérique espagnole (Nouvelle-Espagne, Pérou, Antilles, Floride), Philippines. Le Portugal, uni à l'Espagne depuis 1580, est un royaume vassal avec son empire. Hors de l'empire : les Provinces-Unies rebelles du Nord, l'Angleterre.",
+      "armies": [
+        {
+          "side": "Invincible Armada",
+          "faction": "tercios",
+          "path": [
+            [
+              -9.2,
+              38.7
+            ],
+            [
+              -8.4,
+              43.37
+            ],
+            [
+              -5.1,
+              48.5
+            ],
+            [
+              -4.1,
+              50.2
+            ],
+            [
+              1.85,
+              50.95
+            ],
+            [
+              2.13,
+              51.0
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Flotte anglaise",
+          "faction": "anglais-elisabethains",
+          "path": [
+            [
+              -4.14,
+              50.37
+            ],
+            [
+              -1.3,
+              50.65
+            ],
+            [
+              1.3,
+              51.1
+            ],
+            [
+              2.13,
+              51.0
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Alonso Pérez de Guzmán, duc de Medina Sidonia",
+          "role": "Chef de l'Armada",
+          "faction": "tercios",
+          "archetype": "vice-roi",
+          "quote": "Je ne suis ni marin ni soldat (attribué, d'après sa lettre au roi)",
+          "position": [
+            1.9,
+            50.95
+          ]
+        },
+        {
+          "name": "Philippe II",
+          "role": "Roi d'Espagne",
+          "faction": "tercios",
+          "archetype": "roi-habsbourg",
+          "quote": "J'ai envoyé mes navires combattre des hommes, non les éléments (attribué à Philippe II)",
+          "position": [
+            -4.15,
+            40.58
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rocroi-1643",
+      "year": 1643,
+      "title": "Rocroi : la fin des vieux tercios",
+      "type": "bataille",
+      "location": [
+        4.52,
+        49.92
+      ],
+      "zoom": 4.6,
+      "summary": "Le 19 mai 1643, le duc d'Enghien, vingt et un ans, bat l'armée espagnole de Flandre à Rocroi ; les vieux tercios s'y font tuer sur place, mais l'Espagne a déjà perdu le Portugal et la Catalogne.",
+      "details": "En 1643, l'Espagne est en guerre depuis 1635 contre la France de Louis XIII et de Richelieu, et affronte des révoltes chez elle. En 1640, la **Catalogne** s'est soulevée contre le comte-duc d'**Olivares**, qui voulait faire contribuer toutes les provinces à l'effort de guerre ; elle se place sous protection française. La même année, le **Portugal** proclame roi le duc de Bragance, **Jean IV** : l'union ibérique, vieille de soixante ans, est brisée. Olivares tombe en 1643.\n\nÀ Rocroi, dans les Ardennes, le gouverneur espagnol des Pays-Bas **Francisco de Melo** assiège la place avec environ 27 000 hommes. Louis XIII vient de mourir (14 mai) et son fils **Louis XIV** a quatre ans. Le jeune **duc d'Enghien**, futur Grand Condé, attaque le 19 mai : sa cavalerie bat les ailes espagnoles, puis se tourne contre l'infanterie. Les **tercios** espagnols, anciens du temps de Charles Quint, restent en carré et refusent de se rendre ; beaucoup meurent sur place.\n\nLa légende de leur fin fait de Rocroi le symbole de la fin de l'hégémonie militaire espagnole. En réalité, la guerre continue seize ans encore. Mais l'Espagne ne gagnera plus de grande bataille décisive.",
+      "consequences": [
+        "Le Portugal est séparé de l'Espagne de fait depuis 1640 ; l'Espagne ne le reconnaîtra qu'en 1668.",
+        "La Catalogne, en révolte jusqu'en 1652, est reprise en grande partie ; le Roussillon passera à la France en 1659.",
+        "Le prestige des tercios, longtemps invincibles, est brisé.",
+        "La France devient la première puissance militaire d'Europe."
+      ],
+      "territory": "rocroi-1643",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Rocroi",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Rocroi"
+        },
+        {
+          "label": "John H. Elliott, The Count-Duke of Olivares (Yale)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Royaume de France",
+          "Armée espagnole de Flandre"
+        ],
+        "commanders": [
+          "Louis II de Bourbon, duc d'Enghien",
+          "Francisco de Melo",
+          "Paul-Bernard de Fontaine (tué)"
+        ],
+        "outcome": "Victoire française ; destruction de l'infanterie espagnole",
+        "forces": "Environ 23 000 Français contre environ 27 000 Espagnols et alliés",
+        "losses": "Environ 8 000 à 9 000 morts et 7 000 prisonniers espagnols ; environ 4 000 pertes françaises"
+      },
+      "territoryNote": "Monarchie de Philippe IV : Castille et Aragon (avec une Catalogne en révolte depuis 1640 et placée sous protection française, Perpignan et le Roussillon pris par la France en 1642), Naples, Sicile, Sardaigne, Milan, Pays-Bas espagnols (Flandre, Brabant, Hainaut, Artois, Luxembourg), Franche-Comté, Amérique espagnole, Philippines. Le Portugal s'est détaché en 1640 (dynastie de Bragance) et les Provinces-Unies du Nord sont de fait indépendantes.",
+      "armies": [
+        {
+          "side": "Armée du duc d'Enghien",
+          "faction": "francais-ancien-regime",
+          "path": [
+            [
+              4.03,
+              49.25
+            ],
+            [
+              4.3,
+              49.55
+            ],
+            [
+              4.52,
+              49.92
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée de Flandre",
+          "faction": "tercios",
+          "path": [
+            [
+              4.35,
+              50.85
+            ],
+            [
+              4.4,
+              50.4
+            ],
+            [
+              4.6,
+              50.1
+            ],
+            [
+              4.52,
+              49.92
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Louis de Bourbon, duc d'Enghien",
+          "role": "Futur Grand Condé",
+          "faction": "francais-ancien-regime",
+          "archetype": "conquistador",
+          "quote": "Je donnerai bataille, quoi qu'on dise (formule libre)",
+          "position": [
+            4.5,
+            49.9
+          ]
+        },
+        {
+          "name": "Francisco de Melo",
+          "role": "Gouverneur des Pays-Bas espagnols",
+          "faction": "tercios",
+          "archetype": "vice-roi",
+          "quote": "Les tercios ne reculent pas (formule libre)",
+          "position": [
+            4.55,
+            49.94
+          ]
+        }
+      ]
+    },
+    {
+      "id": "westphalie-1648",
+      "year": 1648,
+      "title": "Münster : l'Espagne reconnaît les Provinces-Unies",
+      "type": "traité",
+      "location": [
+        7.6261,
+        51.9607
+      ],
+      "zoom": 4.4,
+      "summary": "Le 30 janvier 1648, par le traité de Münster, l'Espagne reconnaît l'indépendance des Provinces-Unies, après quatre-vingts ans de guerre ; elle continue pourtant le combat contre la France.",
+      "details": "La révolte des Pays-Bas contre la domination de Philippe II a commencé en 1568. Menée par la maison d'Orange (Guillaume le Taciturne, puis Maurice et Frédéric-Henri), elle a donné naissance en 1581 à une république protestante, les **Provinces-Unies** : sept provinces, dont la Hollande, riche de commerce maritime. Après la trêve de Douze Ans (1609-1621), la guerre reprend et épuise l'Espagne. La marine néerlandaise s'empare du Brésil (Pernambouc), de Ceylan et de comptoirs portugais d'Asie.\n\nÀ Münster, en Westphalie, des diplomates de toute l'Europe négocient depuis 1643 la fin de la guerre de Trente Ans. L'Espagne, épuisée par la banqueroute, les révoltes de Catalogne et du Portugal, sacrifie ses Pays-Bas du Nord pour pouvoir continuer à se battre contre la France. Les envoyés **Gaspar de Bracamonte, comte de Peñaranda**, et **Adriaan Pauw**, grand-pensionnaire de Hollande, signent la paix le 30 janvier 1648. Les Néerlandais obtiennent la fermeture de l'Escaut, ce qui ruine Anvers.\n\nLa paix de Westphalie, conclue en octobre avec le Saint-Empire, reconnaît aussi l'indépendance de la Suisse. L'Espagne reste en guerre contre la France jusqu'en 1659 : elle perd son rôle de première puissance, mais garde un vaste empire colonial.",
+      "consequences": [
+        "Les Provinces-Unies (Pays-Bas du Nord) sont indépendantes ; l'Espagne ne garde que les Pays-Bas du Sud (Belgique actuelle).",
+        "L'Escaut est fermé, au profit d'Amsterdam et au détriment d'Anvers.",
+        "L'Espagne continue la guerre contre la France malgré l'épuisement de ses finances.",
+        "Les Provinces-Unies deviennent la première puissance commerciale d'Europe."
+      ],
+      "territory": "westphalie-1648",
+      "sources": [
+        {
+          "label": "Wikipédia — Traités de Westphalie",
+          "url": "https://fr.wikipedia.org/wiki/Trait%C3%A9s_de_Westphalie"
+        },
+        {
+          "label": "Jonathan Israel, The Dutch Republic (Oxford)"
+        }
+      ],
+      "territoryNote": "Monarchie de Philippe IV : Castille et Aragon (Catalogne en révolte), Naples, Sicile, Sardaigne, Milan, Pays-Bas espagnols du Sud (Flandre, Brabant, Hainaut, Artois, Luxembourg), Franche-Comté, Amérique espagnole, Philippines. Hors de l'empire : les Provinces-Unies (reconnues indépendantes), le Portugal (Bragance, non reconnu par l'Espagne), la France.",
+      "figures": [
+        {
+          "name": "Gaspar de Bracamonte, comte de Peñaranda",
+          "role": "Plénipotentiaire espagnol à Münster",
+          "faction": "tercios",
+          "archetype": "vice-roi",
+          "quote": "La paix avec les Hollandais vaut mieux que mille batailles (formule libre)",
+          "position": [
+            7.63,
+            51.96
+          ]
+        },
+        {
+          "name": "Adriaan Pauw",
+          "role": "Grand-pensionnaire de Hollande, négociateur néerlandais",
+          "faction": "neerlandais",
+          "archetype": "diplomate",
+          "quote": "Nous ne signerons rien sans la liberté de l'Escaut (formule libre)",
+          "position": [
+            7.62,
+            51.96
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pyrenees-1659",
+      "year": 1659,
+      "title": "La paix des Pyrénées : la France l'emporte",
+      "type": "traité",
+      "location": [
+        -1.7747,
+        43.3436
+      ],
+      "zoom": 4.6,
+      "summary": "Après vingt-quatre ans de guerre, l'Espagne signe avec la France la paix des Pyrénées, sur l'île des Faisans : elle perd le Roussillon et l'Artois, et marie l'infante Marie-Thérèse à Louis XIV.",
+      "details": "En 1659, le cardinal **Mazarin**, premier ministre de la France, et **Luis de Haro**, favori de Philippe IV, se rencontrent sur l'**île des Faisans**, un îlot de la Bidassoa, à la frontière. Les deux États sont épuisés, ils négocient depuis des mois. L'accord est signé le 7 novembre 1659.\n\nLa France obtient le **Roussillon** et une partie de la **Cerdagne** au sud des Pyrénées (Perpignan), l'**Artois** et plusieurs places du Nord et du Luxembourg (Thionville, Montmédy). Le prince de **Condé**, ancien rebelle devenu général d'Espagne, est amnistié. En échange, la France abandonne la Catalogne et le Portugal, qu'elle soutenait contre l'Espagne. Le mariage de **Louis XIV** avec l'infante **Marie-Thérèse**, fille de Philippe IV, est prévu pour 1660 ; sa dot de 500 000 écus d'or ne sera jamais payée, ce qui donnera à Louis XIV un prétexte pour envahir les Pays-Bas espagnols en 1667.\n\nLe traité marque le passage d'hégémonie entre l'Espagne et la France. Le Portugal ne sera reconnu indépendant qu'en 1668.",
+      "consequences": [
+        "La frontière franco-espagnole est fixée sur les Pyrénées (Roussillon français, Catalogne espagnole).",
+        "La France gagne l'Artois et des places fortes dans le Nord et le Luxembourg.",
+        "Le mariage de Louis XIV avec une Habsbourg d'Espagne prépare la question de la succession d'Espagne.",
+        "La France devient la première puissance d'Europe."
+      ],
+      "territory": "pyrenees-1659",
+      "sources": [
+        {
+          "label": "Wikipédia — Traité des Pyrénées",
+          "url": "https://fr.wikipedia.org/wiki/Trait%C3%A9_des_Pyr%C3%A9n%C3%A9es"
+        },
+        {
+          "label": "Lucien Bély, Les Relations internationales en Europe, XVIIe-XVIIIe siècles (PUF)"
+        }
+      ],
+      "territoryNote": "Monarchie de Philippe IV : Castille et Aragon (Catalogne reprise en 1652, hors Roussillon et Cerdagne française cédés), Naples, Sicile, Sardaigne, Milan, Pays-Bas espagnols (privés de l'Artois), Franche-Comté, Amérique espagnole, Philippines. Le Portugal combat encore pour son indépendance jusqu'en 1668. Hors de l'empire : les Provinces-Unies, la France.",
+      "figures": [
+        {
+          "name": "Jules Mazarin",
+          "role": "Cardinal, premier ministre de France",
+          "faction": "francais-ancien-regime",
+          "archetype": "prelat",
+          "quote": "La paix est le plus grand de tous les biens (formule libre)",
+          "position": [
+            -1.7747,
+            43.3436
+          ]
+        },
+        {
+          "name": "Luis de Haro",
+          "role": "Premier ministre de Philippe IV",
+          "faction": "tercios",
+          "archetype": "vice-roi",
+          "quote": "L'Espagne a besoin de repos (formule libre)",
+          "position": [
+            -1.775,
+            43.343
+          ]
+        }
+      ]
+    },
+    {
+      "id": "succession-1700",
+      "year": 1700,
+      "title": "1700 : un Bourbon sur le trône d'Espagne",
+      "type": "politique",
+      "location": [
+        -3.7038,
+        40.4168
+      ],
+      "zoom": 3.2,
+      "summary": "Charles II, dernier Habsbourg d'Espagne, meurt sans enfant en léguant tout à Philippe d'Anjou, petit-fils de Louis XIV : les Bourbons arrivent à Madrid et l'Europe s'enflamme.",
+      "details": "**Charles II**, surnommé « l'Ensorcelé » pour sa santé fragile, règne sur un empire encore immense mais appauvri. Sans enfant, il laisse une succession explosive : l'empereur Léopold Ier (Habsbourg de Vienne) et le roi **Louis XIV** (Bourbon de Versailles) ont tous deux épousé une infante, et chacun veut l'héritage pour un de ses fils ou petits-fils. Les puissances maritimes, l'Angleterre et la Hollande, redoutent qu'un seul souverain réunisse la France et l'Espagne.\n\nCharles II désigne par testament, avant sa mort le 1er novembre 1700, le petit-fils de Louis XIV, **Philippe d'Anjou**, à condition qu'il ne soit jamais roi de France. Louis XIV accepte : le 16 novembre, devant l'ambassadeur d'Espagne, il le présente à la cour de Versailles. La phrase « Il n'y a plus de Pyrénées », attribuée à l'ambassadeur ou au roi, est sans doute légendaire. Philippe entre à Madrid en 1701 sous le nom de **Philippe V**.\n\nC'est le début de la dynastie des **Bourbons d'Espagne**, qui règne encore. Le territoire se limite aux couronnes de Castille et d'Aragon, aux possessions italiennes (Naples, Sicile, Sardaigne, Milan), aux Pays-Bas du Sud et à un empire américain et asiatique intact. Les puissances refusent un tel bloc : la guerre de Succession d'Espagne commence en 1701.",
+      "consequences": [
+        "Les Bourbons succèdent aux Habsbourg sur le trône d'Espagne : cette dynastie y règne encore au XXIe siècle.",
+        "L'Espagne conserve en principe l'ensemble de son empire, mais l'Europe s'unit contre l'union franco-espagnole.",
+        "La guerre de Succession d'Espagne (1701-1714) sera aussi une guerre civile entre la Castille et la Catalogne.",
+        "La dynastie introduit un modèle d'État centralisé à la française."
+      ],
+      "territory": "succession-1700",
+      "sources": [
+        {
+          "label": "Wikipédia — Guerre de Succession d'Espagne",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_de_Succession_d%27Espagne"
+        },
+        {
+          "label": "Henry Kamen, Philip V of Spain (Yale)"
+        }
+      ],
+      "territoryNote": "Monarchie d'Espagne à la mort de Charles II : Castille et Aragon (avec Baléares, Canaries, Ceuta, Oran), Naples, Sicile, Sardaigne, duché de Milan, Pays-Bas espagnols (Flandre, Brabant, Hainaut, Luxembourg), Amérique espagnole (Nouvelle-Espagne, Pérou, Antilles, Floride), Philippines, Mariannes. Hors de l'empire : le Portugal indépendant, les Provinces-Unies, la France, la Franche-Comté (perdue en 1678).",
+      "figures": [
+        {
+          "name": "Charles II d'Espagne",
+          "role": "Dernier roi Habsbourg d'Espagne",
+          "faction": "tercios",
+          "archetype": "roi-habsbourg",
+          "quote": "Je suis déjà un mort qui parle (formule libre)",
+          "position": [
+            -3.7038,
+            40.4168
+          ]
+        },
+        {
+          "name": "Philippe V",
+          "role": "Premier roi Bourbon d'Espagne",
+          "faction": "espagnols",
+          "archetype": "roi-moderne",
+          "quote": "Il n'y a plus de Pyrénées (attribué à Louis XIV ou à l'ambassadeur d'Espagne, apocryphe)",
+          "position": [
+            -3.7,
+            40.42
+          ]
+        }
+      ]
+    },
+    {
+      "id": "utrecht-1713",
+      "year": 1713,
+      "title": "Utrecht : l'Espagne perd l'Europe",
+      "type": "traité",
+      "location": [
+        5.1214,
+        52.0907
+      ],
+      "zoom": 3.4,
+      "summary": "Les traités d'Utrecht et de Rastatt confirment Philippe V sur le trône, mais l'Espagne abandonne l'Italie, les Pays-Bas du Sud, Gibraltar et Minorque.",
+      "details": "La guerre de Succession d'Espagne tourne mal pour Louis XIV, mais la mort de l'empereur Joseph Ier en 1711 apporte un renversement : son frère l'archiduc **Charles**, prétendant au trône d'Espagne, devient empereur, et l'Angleterre craint à son tour de voir réunis l'Espagne et l'Empire. Elle négocie en secret avec la France.\n\nLes **traités d'Utrecht** (1713), complétés par Rastatt (1714), partagent la monarchie. **Philippe V** reste roi d'Espagne et des Indes, mais renonce pour lui et ses descendants à la couronne de France. L'Autriche obtient les **Pays-Bas du Sud**, le **Milanais**, **Naples** et la **Sardaigne** ; le duc de Savoie reçoit la **Sicile** (échangée contre la Sardaigne en 1720). La Grande-Bretagne garde **Gibraltar** et **Minorque**, et obtient pour trente ans l'*asiento*, le monopole de la traite des esclaves vers l'Amérique espagnole.\n\nLa Catalogne, qui avait soutenu l'archiduc, résiste jusqu'à la chute de **Barcelone** (11 septembre 1714). Les décrets de **Nueva Planta** abolissent alors les institutions propres de l'Aragon, de Valence et de la Catalogne, et soumettent l'Espagne à des lois castillanes. Réduit à la péninsule et à ses colonies, l'empire se recentre sur l'Atlantique.",
+      "consequences": [
+        "L'Espagne perd ses possessions européennes : Pays-Bas du Sud, Milan, Naples, Sicile, Sardaigne passent à l'Autriche et à la Savoie.",
+        "Gibraltar et Minorque deviennent britanniques ; Gibraltar l'est toujours.",
+        "Les décrets de Nueva Planta suppriment les institutions propres de la Couronne d'Aragon : l'État espagnol devient unitaire.",
+        "Le monopole de la traite négrière (asiento) ouvre aux Britanniques le commerce de l'Amérique espagnole."
+      ],
+      "territory": "utrecht-1713",
+      "sources": [
+        {
+          "label": "Wikipédia — Traité d'Utrecht",
+          "url": "https://fr.wikipedia.org/wiki/Trait%C3%A9_d%27Utrecht"
+        },
+        {
+          "label": "Joseph Pérez, Histoire de l'Espagne (Fayard)"
+        }
+      ],
+      "territoryNote": "Espagne bourbonienne : péninsule (Castille, Aragon, Catalogne, Valence, Baléares sauf Minorque cédée aux Britanniques en 1713), Canaries, Ceuta ; Amérique espagnole (Nouvelle-Espagne, Pérou, Antilles, Floride, Santo Domingo) ; Philippines et Mariannes. Perdu : Gibraltar (britannique), Naples, Milan, Sardaigne, Pays-Bas du Sud (Autriche), Sicile (Savoie). Colonia do Sacramento est rendue au Portugal.",
+      "figures": [
+        {
+          "name": "Henry St John, vicomte Bolingbroke",
+          "role": "Secrétaire d'État britannique, négociateur d'Utrecht",
+          "faction": "britanniques",
+          "archetype": "diplomate",
+          "quote": "La paix est notre intérêt (formule libre)",
+          "position": [
+            5.12,
+            52.09
+          ]
+        },
+        {
+          "name": "Philippe V",
+          "role": "Roi d'Espagne et des Indes",
+          "faction": "espagnols",
+          "archetype": "roi-moderne",
+          "quote": "Je renonce à la couronne de France pour régner sur l'Espagne (formule libre)",
+          "position": [
+            -3.7,
+            40.42
+          ]
+        }
+      ]
+    },
+    {
+      "id": "louisiane-1763",
+      "year": 1763,
+      "title": "1762-1763 : la Louisiane gagnée, la Floride perdue",
+      "type": "traité",
+      "location": [
+        -90.0715,
+        29.9511
+      ],
+      "zoom": 3.4,
+      "summary": "Entrée dans la guerre de Sept Ans aux côtés de la France, l'Espagne perd La Havane et Manille, puis les récupère contre la Floride ; en compensation, la France lui cède la Louisiane.",
+      "details": "Le roi **Charles III**, arrivé de Naples en 1759, s'allie à la France par le « Pacte de famille » (1761) et entre en guerre contre la Grande-Bretagne. C'est un désastre : en 1762, les Britanniques prennent **La Havane** (après deux mois de siège) et **Manille**, deux des principaux ports de l'empire. À Paris, la défaite pousse Louis XV à abandonner son allié : par le traité secret de **Fontainebleau** (novembre 1762), il cède à l'Espagne la **Louisiane** à l'ouest du Mississippi et La Nouvelle-Orléans, afin de la dédommager.\n\nLe traité de **Paris** (10 février 1763) restitue La Havane et Manille à l'Espagne, qui cède en échange la **Floride** aux Britanniques. L'Espagne reprend possession effective de la Louisiane en 1766-1769, après des révoltes de colons français à La Nouvelle-Orléans, écrasées par le général O'Reilly.\n\nCharles III lance alors les « réformes bourbonniennes » : intendants, armée coloniale, liberté de commerce entre ports espagnols (1778), puis création de la vice-royauté du Río de la Plata (1776). Le territoire est sauvé, mais la défaite a montré la fragilité de la flotte. En 1783, la Floride sera récupérée.",
+      "consequences": [
+        "L'Espagne obtient la Louisiane, un territoire immense à l'ouest du Mississippi (jusqu'aux montagnes Rocheuses).",
+        "La Floride passe aux Britanniques jusqu'en 1783, où l'Espagne la reprend après la guerre d'Indépendance américaine.",
+        "Les réformes de Charles III modernisent l'administration, le commerce et l'armée de l'empire.",
+        "La France quitte l'Amérique du Nord (Canada et Louisiane) : le continent est partagé entre Britanniques et Espagnols."
+      ],
+      "territory": "louisiane-1763",
+      "sources": [
+        {
+          "label": "Wikipédia — Traité de Paris (1763)",
+          "url": "https://fr.wikipedia.org/wiki/Trait%C3%A9_de_Paris_(1763)"
+        },
+        {
+          "label": "John Lynch, Bourbon Spain, 1700-1808 (Blackwell)"
+        }
+      ],
+      "territoryNote": "Espagne de Charles III : péninsule (Minorque britannique), Canaries ; Cuba rendue par les Britanniques, Porto Rico, Santo Domingo ; Nouvelle-Espagne avec Californie et Nouveau-Mexique ; Louisiane espagnole (rive droite du Mississippi et La Nouvelle-Orléans) ; Nouvelle-Grenade, Pérou, Chili, Río de la Plata ; Philippines et Mariannes. Floride perdue (britannique). Hors de l'empire : le Portugal et le Brésil, la Grande-Bretagne (treize colonies, Canada, Floride).",
+      "figures": [
+        {
+          "name": "Charles III",
+          "role": "Roi d'Espagne, souverain réformateur",
+          "faction": "espagnols",
+          "archetype": "roi-moderne",
+          "quote": "Je ne laisserai pas l'empire se défaire (formule libre)",
+          "position": [
+            -3.7,
+            40.42
+          ]
+        },
+        {
+          "name": "Étienne-François de Choiseul",
+          "role": "Secrétaire d'État français, négociateur de Fontainebleau",
+          "faction": "francais-ancien-regime",
+          "archetype": "diplomate",
+          "quote": "Il vaut mieux perdre une colonie qu'un allié (formule libre)",
+          "position": [
+            2.35,
+            48.85
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nootka-1790",
+      "year": 1790,
+      "title": "L'apogée territorial : de Nootka à la Terre de Feu",
+      "type": "politique",
+      "location": [
+        -126.6167,
+        49.5917
+      ],
+      "zoom": 2.2,
+      "summary": "Vers 1790, l'empire espagnol atteint sa plus grande étendue, de l'Alaska à la Patagonie ; la crise de Nootka, avec la Grande-Bretagne, montre pourtant qu'il ne peut plus défendre ses frontières.",
+      "details": "Sous **Charles III** puis **Charles IV**, l'empire espagnol atteint son apogée territorial : plus de 12 millions de km² (estimation courante), de la Californie et de l'Alaska au cap Horn, avec la Louisiane et la Floride récupérées en 1783. Quatre vice-royautés, Nouvelle-Espagne, Pérou, Nouvelle-Grenade et Río de la Plata, administrent 15 millions d'habitants environ. Les missions franciscaines, comme celles de **Junípero Serra** en Californie (San Diego 1769, San Francisco 1776), étendent la présence espagnole vers le nord.\n\nSur la côte pacifique, l'Espagne revendique tout le littoral jusqu'à l'Alaska, que les Russes et les Britanniques fréquentent. En 1789, l'officier **Esteban José Martínez** saisit des navires britanniques dans la baie de **Nootka**, sur l'île de Vancouver. Londres menace de guerre, et Madrid, privée du soutien de la France révolutionnaire, cède : par la **convention de Nootka** (octobre 1790), l'Espagne renonce à tout monopole sur le Pacifique Nord, la navigation et le commerce y seront libres. L'Espagne évacue Nootka en 1795.\n\nCet épisode montre la limite de l'empire : trop vaste, trop faiblement peuplé pour tenir ses marges. La Révolution française, en 1789, a brisé l'alliance qui le protégeait.",
+      "consequences": [
+        "L'Espagne abandonne en pratique toute prétention exclusive sur la côte nord-ouest du Pacifique.",
+        "La Grande-Bretagne s'impose comme puissance du Pacifique Nord ; le Canada pacifique naîtra de cette ouverture.",
+        "Les frontières septentrionales de l'empire sont fragiles : l'Espagne ne peuple guère le Texas ni la Californie.",
+        "La Révolution française met fin à l'alliance avec la France : l'Espagne basculera bientôt dans la guerre contre elle (1793)."
+      ],
+      "territory": "nootka-1790",
+      "sources": [
+        {
+          "label": "Wikipédia — Crise de Nootka",
+          "url": "https://fr.wikipedia.org/wiki/Crise_de_Nootka"
+        },
+        {
+          "label": "Raymond Carr, Spain, 1808-1975 (Oxford) — chapitre d'introduction"
+        }
+      ],
+      "territoryNote": "Empire espagnol à son apogée : péninsule, Baléares (avec Minorque, reprise en 1782), Canaries, Ceuta ; Nouvelle-Espagne (Mexique, Amérique centrale, Californie, Nouveau-Mexique, Texas), Floride et Louisiane espagnoles, Cuba, Porto Rico, Santo Domingo ; Nouvelle-Grenade (Colombie, Venezuela, Équateur, Panama), Pérou, Chili, Río de la Plata (Argentine, Uruguay, Paraguay, Bolivie) ; Philippines et Mariannes. Hors de l'empire : le Portugal et le Brésil, la Grande-Bretagne et les États-Unis.",
+      "figures": [
+        {
+          "name": "José Moñino, comte de Floridablanca",
+          "role": "Premier ministre de Charles IV",
+          "faction": "espagnols",
+          "archetype": "diplomate",
+          "quote": "Il faut éviter la guerre à tout prix (formule libre)",
+          "position": [
+            -3.7,
+            40.42
+          ]
+        },
+        {
+          "name": "Juan Francisco de la Bodega y Quadra",
+          "role": "Officier de marine, commissaire à Nootka",
+          "faction": "espagnols",
+          "archetype": "amiral",
+          "quote": "Nous ouvrons la route vers le nord (formule libre)",
+          "position": [
+            -126.6,
+            49.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trafalgar-1805",
+      "year": 1805,
+      "title": "Trafalgar : la flotte franco-espagnole détruite",
+      "type": "bataille",
+      "location": [
+        -6.2,
+        36.17
+      ],
+      "zoom": 4.4,
+      "summary": "Le 21 octobre 1805, Nelson anéantit au large de Cadix la flotte franco-espagnole ; l'Espagne perd l'essentiel de sa marine et le contrôle de ses liaisons avec l'Amérique.",
+      "details": "Depuis 1796, l'Espagne est l'alliée contrainte de la France de Napoléon contre la Grande-Bretagne. En 1800-1803, elle a restitué la **Louisiane** à la France (traité de San Ildefonso), qui l'a aussitôt vendue aux États-Unis, et la **Trinité** a été perdue en 1797. Le Premier ministre **Manuel Godoy**, favori de la reine, dirige une politique de soumission à Paris.\n\nEn octobre 1805, l'amiral français **Villeneuve** sort de Cadix avec 33 vaisseaux (18 français, 15 espagnols). Le vice-amiral britannique **Nelson**, avec 27 vaisseaux, l'attaque en deux colonnes qui coupent la ligne ennemie. Le *Santísima Trinidad*, le plus grand navire du monde (quatre ponts), est démâté et coule après le combat. L'amiral espagnol **Federico Gravina** est mortellement blessé, et le brigadier **Churruca** est tué. Nelson meurt lui aussi, mais la victoire est totale : 22 navires alliés sont perdus.\n\nL'Espagne n'a plus de flotte pour protéger le commerce avec l'Amérique. Les colonies, coupées de la métropole, apprennent à commercer librement avec les Britanniques. Trois ans plus tard, l'invasion napoléonienne ouvrira la crise finale de l'empire.",
+      "consequences": [
+        "La marine espagnole est anéantie ; la Grande-Bretagne contrôle désormais l'Atlantique.",
+        "Les colonies, coupées de la métropole, s'ouvrent au commerce britannique.",
+        "Napoléon, pour compenser, renforce son emprise sur l'Espagne : le piège de 1808 se prépare.",
+        "L'empire espagnol d'Amérique conserve son étendue, mais se délite."
+      ],
+      "territory": "trafalgar-1805",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Trafalgar",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Trafalgar"
+        },
+        {
+          "label": "Raymond Carr, Spain, 1808-1975 (Oxford)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Flotte franco-espagnole",
+          "Royal Navy"
+        ],
+        "commanders": [
+          "Pierre de Villeneuve",
+          "Federico Gravina",
+          "Cosme Damián Churruca (tué)",
+          "Horatio Nelson (tué)",
+          "Cuthbert Collingwood"
+        ],
+        "outcome": "Victoire britannique décisive ; flotte franco-espagnole détruite",
+        "forces": "33 vaisseaux franco-espagnols contre 27 britanniques",
+        "losses": "Environ 22 vaisseaux alliés perdus ; plus de 4 000 morts et 2 500 blessés alliés ; aucun vaisseau britannique perdu, environ 1 600 morts et blessés"
+      },
+      "territoryNote": "Espagne alliée de la France : péninsule, Baléares (avec Minorque, rendue en 1802), Canaries ; Cuba, Porto Rico, Floride ; Nouvelle-Espagne (Mexique, Californie, Texas), Nouvelle-Grenade, Pérou, Chili, Río de la Plata ; Philippines et Mariannes. Perdus : Louisiane (rendue à la France en 1800, vendue aux États-Unis en 1803), Trinité (1797), partie orientale de Saint-Domingue (cédée à la France en 1795). Hors de l'empire : le Portugal et le Brésil, la Grande-Bretagne.",
+      "armies": [
+        {
+          "side": "Escadre espagnole (Gravina)",
+          "faction": "espagnols",
+          "path": [
+            [
+              -6.3,
+              36.5
+            ],
+            [
+              -6.28,
+              36.35
+            ],
+            [
+              -6.2,
+              36.17
+            ]
+          ],
+          "strength": 2
+        },
+        {
+          "side": "Flotte de Nelson",
+          "faction": "britanniques",
+          "path": [
+            [
+              -7.2,
+              36.0
+            ],
+            [
+              -6.8,
+              36.1
+            ],
+            [
+              -6.4,
+              36.15
+            ],
+            [
+              -6.2,
+              36.17
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Federico Gravina",
+          "role": "Amiral espagnol, mortellement blessé",
+          "faction": "espagnols",
+          "archetype": "amiral",
+          "quote": "L'honneur de notre pavillon doit être sauvé (formule libre)",
+          "position": [
+            -6.25,
+            36.4
+          ]
+        },
+        {
+          "name": "Cosme Damián Churruca",
+          "role": "Brigadier, tué sur le San Juan Nepomuceno",
+          "faction": "espagnols",
+          "archetype": "amiral",
+          "quote": "Nous coulerons avant de nous rendre (formule libre)",
+          "position": [
+            -6.2,
+            36.3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dos-de-mayo-1808",
+      "year": 1808,
+      "title": "Le Dos de Mayo : l'Espagne se soulève",
+      "type": "bataille",
+      "location": [
+        -3.7038,
+        40.4168
+      ],
+      "zoom": 4.6,
+      "summary": "Le 2 mai 1808, Madrid se soulève contre l'occupation française et la mainmise de Napoléon sur la couronne ; la guerre d'indépendance commence, et les colonies américaines entrent en crise.",
+      "details": "Pour attaquer le Portugal, **Napoléon** a obtenu en 1807 le passage de ses troupes à travers l'Espagne. Il s'y installe en maître, profite des querelles entre **Charles IV**, son fils **Ferdinand VII** et le favori **Godoy**, et les convoque à Bayonne. Le 5 mai, il obtient leurs abdications et place sur le trône son frère **Joseph**.\n\nMais dès le **2 mai 1808**, à Madrid, la foule se soulève quand les Français veulent emmener les derniers infants. Le maréchal **Murat** fait charger la cavalerie, dont des mamelouks, contre les insurgés, et la répression est violente : le lendemain, des fusillades sur la montagne du Príncipe Pío tuent des dizaines de prisonniers, scène immortalisée par **Goya** dans *Les Fusillades du 3 mai*. À Madrid, l'artillerie du parc de Monteleón, défendue par les capitaines **Daoíz** et **Velarde**, résiste jusqu'à la mort.\n\nL'insurrection gagne tout le pays. Des juntes locales lèvent des armées ; en juillet, la capitulation du général Dupont à Bailén (voir l'étape correspondante de l'Empire napoléonien) est la première grande défaite de la Grande Armée. En Amérique, où l'on refuse de reconnaître Joseph, des juntes se forment dès 1809-1810 au nom de Ferdinand VII, première étape vers l'indépendance.",
+      "consequences": [
+        "La guerre d'indépendance espagnole (1808-1814) devient le « guêpier » de Napoléon ; l'Espagne est ravagée.",
+        "Les Cortès de Cadix (1810-1812) adoptent la Constitution libérale de 1812.",
+        "Dans l'empire, les juntes d'Amérique se réclament de Ferdinand VII ; les premières revendications d'indépendance éclatent en 1810.",
+        "La monarchie, absente et divisée, perd le contrôle de ses colonies."
+      ],
+      "territory": "dos-de-mayo-1808",
+      "sources": [
+        {
+          "label": "Wikipédia — Dos de Mayo",
+          "url": "https://fr.wikipedia.org/wiki/Dos_de_Mayo"
+        },
+        {
+          "label": "Raymond Carr, Spain, 1808-1975 (Oxford)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Population de Madrid et artilleurs de Monteleón",
+          "Armée française de Murat"
+        ],
+        "commanders": [
+          "Luis Daoíz",
+          "Pedro Velarde (tué)",
+          "Joachim Murat"
+        ],
+        "outcome": "Insurrection écrasée en une journée ; point de départ de la guerre d'indépendance espagnole",
+        "forces": "Quelques milliers d'insurgés mal armés contre environ 30 000 Français dans la région de Madrid",
+        "losses": "Plusieurs centaines de morts espagnols ; environ 150 Français tués"
+      },
+      "territoryNote": "Espagne en 1808 : péninsule en insurrection contre le roi Joseph (Madrid et le nord tenus par les Français, le Sud aux juntes), Baléares, Canaries ; Cuba, Porto Rico, Floride ; Nouvelle-Espagne (Mexique, Californie, Texas), Nouvelle-Grenade, Pérou, Chili, Río de la Plata ; Philippines et Mariannes. L'autorité de Ferdinand VII reste reconnue aux Amériques, mais des juntes apparaissent en 1809-1810. Hors de l'empire : le Portugal (occupé par Junot).",
+      "armies": [
+        {
+          "side": "Cavalerie de Murat",
+          "faction": "francais",
+          "path": [
+            [
+              -3.73,
+              40.42
+            ],
+            [
+              -3.71,
+              40.417
+            ],
+            [
+              -3.7038,
+              40.4168
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Insurgés madrilènes",
+          "faction": "espagnols",
+          "path": [
+            [
+              -3.7055,
+              40.4262
+            ],
+            [
+              -3.705,
+              40.42
+            ],
+            [
+              -3.7038,
+              40.4168
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Joachim Murat",
+          "role": "Maréchal, commandant à Madrid",
+          "faction": "francais",
+          "archetype": "general",
+          "quote": "Qu'on fasse feu sur cette canaille (formule libre)",
+          "position": [
+            -3.71,
+            40.42
+          ]
+        },
+        {
+          "name": "Pedro Velarde",
+          "role": "Capitaine d'artillerie, héros de Monteleón",
+          "faction": "espagnols",
+          "archetype": "general",
+          "quote": "On se bat pour la patrie (formule libre)",
+          "position": [
+            -3.7055,
+            40.4262
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mexique-1821",
+      "year": 1821,
+      "title": "1821 : le Mexique et l'Amérique centrale se détachent",
+      "type": "politique",
+      "location": [
+        -96.93,
+        18.89
+      ],
+      "zoom": 3.0,
+      "summary": "Entre 1810 et 1821, les mouvements indépendantistes arrachent à l'Espagne la majeure partie de ses colonies d'Amérique ; le Mexique devient indépendant par le traité de Cordoue (1821).",
+      "details": "En 1810, la crise espagnole fait éclater les premiers soulèvements. Au Mexique, le prêtre **Miguel Hidalgo** lance le « cri de Dolores » (16 septembre 1810) ; en Amérique du Sud, **Simón Bolívar** et **José de San Martín** combattent les armées royales. Entre 1810 et 1820, le Paraguay (1811), le Venezuela, l'Argentine (1816), le Chili (1818) et la Colombie (Boyacá, 1819) s'émancipent.\n\nEn 1820, un soulèvement libéral en Espagne (le colonel **Riego**) empêche l'envoi de renforts à l'Amérique. Au Mexique, les élites conservatrices, effrayées par le libéralisme, se rallient à l'indépendance : **Agustín de Iturbide**, officier royaliste, proclame le plan d'**Iguala** (février 1821). Le dernier vice-roi, **Juan O'Donojú**, signe en août le traité de **Cordoue** reconnaissant l'indépendance du Mexique, qui s'étend alors de la Californie au Guatemala. L'armée d'Iturbide entre à Mexico le 27 septembre ; la capitainerie générale du Guatemala se détache le 15 septembre.\n\nÀ Lima, San Martín proclame l'indépendance du Pérou le 28 juillet 1821 ; la guerre continuera dans les Andes jusqu'en 1824. La même année, l'Espagne cède la **Floride** aux États-Unis (traité Adams-Onís, ratifié en 1821).",
+      "consequences": [
+        "Le Mexique, l'Amérique centrale, le Venezuela, la Colombie, l'Argentine, le Chili et le Paraguay sont de fait indépendants.",
+        "L'Espagne perd la Floride, cédée aux États-Unis (1819-1821).",
+        "Au Pérou, bastion royaliste, la guerre se prolonge jusqu'en 1824.",
+        "Il ne reste à l'Espagne en Amérique que Cuba, Porto Rico, Saint-Domingue (brièvement) et le Pérou."
+      ],
+      "territory": "mexique-1821",
+      "sources": [
+        {
+          "label": "Wikipédia — Guerres d'indépendance hispano-américaines",
+          "url": "https://fr.wikipedia.org/wiki/Guerres_d%27ind%C3%A9pendance_hispano-am%C3%A9ricaines"
+        },
+        {
+          "label": "John Lynch, The Spanish American Revolutions, 1808-1826 (Norton)"
+        }
+      ],
+      "territoryNote": "Espagne en 1821 : péninsule (régime libéral de 1820-1823), Baléares, Canaries ; Cuba et Porto Rico ; bastions royalistes du Pérou (vice-royauté du Pérou, Haut-Pérou/Bolivie, Équateur, Callao) ; Philippines, Mariannes et Carolines. Perdus : Mexique, Amérique centrale, Venezuela, Colombie, Argentine, Uruguay, Paraguay, Chili, Floride (États-Unis), Santo Domingo (indépendant en décembre).",
+      "figures": [
+        {
+          "name": "Agustín de Iturbide",
+          "role": "Chef de l'armée des Trois Garanties",
+          "faction": "espagnols",
+          "archetype": "general",
+          "quote": "Indépendance, union, religion (devise du plan d'Iguala)",
+          "position": [
+            -99.13,
+            19.43
+          ]
+        },
+        {
+          "name": "Juan O'Donojú",
+          "role": "Dernier vice-roi de Nouvelle-Espagne",
+          "faction": "espagnols",
+          "archetype": "vice-roi",
+          "quote": "Je reconnais ce qu'on ne peut plus empêcher (formule libre)",
+          "position": [
+            -96.93,
+            18.89
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ayacucho-1824",
+      "year": 1824,
+      "title": "Ayacucho : la fin de l'Amérique espagnole",
+      "type": "bataille",
+      "location": [
+        -74.14,
+        -13.05
+      ],
+      "zoom": 4.4,
+      "summary": "Le 9 décembre 1824, l'armée de Sucre bat les royalistes à Ayacucho (Pérou) : la dernière grande armée espagnole d'Amérique du Sud est vaincue et le vice-roi capturé.",
+      "details": "Après Boyacá (1819) et Carabobo (1821), le Pérou reste, avec sa capitale **Lima** et ses mines, le dernier bastion espagnol d'Amérique du Sud. Le vice-roi **José de la Serna** a replié son armée dans les Andes, autour de Cuzco. Les royalistes sont divisés : le général absolutiste **Olañeta** s'est révolté contre le vice-roi, libéral. Leur armée est composée en grande partie de soldats indigènes et métis : des Péruviens se battent des deux côtés.\n\nLe maréchal **Antonio José de Sucre**, lieutenant de **Simón Bolívar**, avance avec environ 6 000 hommes. Le 9 décembre 1824, sur le plateau de **Quinua**, près d'Ayacucho, il fait face à l'armée royaliste, qui compte plus de 9 000 hommes. La bataille dure quelques heures : la cavalerie colombienne et les bataillons péruviens brisent les lignes royalistes. Le vice-roi est blessé et capturé, les officiers capitulent. Le général **Canterac** signe la capitulation d'Ayacucho.\n\nLa résistance espagnole subsiste encore dans le port de **Callao** jusqu'en janvier 1826. Ayacucho met fin à trois siècles de domination sur le continent. Ne reste à l'Espagne que ses colonies des Caraïbes et du Pacifique : Cuba, Porto Rico, les Philippines et les Mariannes.",
+      "consequences": [
+        "L'Amérique du Sud continentale est perdue ; le Pérou et la Bolivie (créée en 1825) deviennent indépendants.",
+        "L'Espagne ne garde qu'un empire résiduel : Cuba, Porto Rico, les Philippines, les Mariannes et les Carolines.",
+        "Les nouveaux États, divisés, ne se fédèrent pas : le rêve d'unité de Bolívar échoue.",
+        "L'Espagne, ruinée par les guerres, se déchire en conflits dynastiques (guerres carlistes)."
+      ],
+      "territory": "ayacucho-1824",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille d'Ayacucho",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_d%27Ayacucho"
+        },
+        {
+          "label": "John Lynch, The Spanish American Revolutions, 1808-1826 (Norton)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Armée royaliste du Pérou",
+          "Armée unie libératrice (Colombiens, Péruviens, Argentins, Chiliens)"
+        ],
+        "commanders": [
+          "José de la Serna (capturé)",
+          "José de Canterac",
+          "Antonio José de Sucre",
+          "José María Córdova"
+        ],
+        "outcome": "Victoire indépendantiste décisive ; capitulation des royalistes",
+        "forces": "Environ 9 300 royalistes contre environ 5 800 indépendantistes",
+        "losses": "Environ 1 800 morts et 700 blessés royalistes, 2 500 prisonniers ; environ 370 morts et 600 blessés indépendantistes"
+      },
+      "territoryNote": "Espagne en 1824 : péninsule, Baléares, Canaries, Ceuta ; Cuba, Porto Rico ; Philippines, Mariannes (avec Guam) et Carolines. Perdus : toute l'Amérique du Sud et centrale, le Mexique, la Floride, Santo Domingo ; Callao tient encore jusqu'en 1826. Hors de l'empire : le Portugal, le Brésil (indépendant en 1822), les républiques américaines.",
+      "armies": [
+        {
+          "side": "Armée royaliste du vice-roi",
+          "faction": "espagnols",
+          "path": [
+            [
+              -71.97,
+              -13.52
+            ],
+            [
+              -73.37,
+              -13.65
+            ],
+            [
+              -74.1,
+              -13.1
+            ],
+            [
+              -74.14,
+              -13.05
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Armée libératrice de Sucre",
+          "faction": "independantistes",
+          "path": [
+            [
+              -75.2,
+              -12.07
+            ],
+            [
+              -74.6,
+              -12.8
+            ],
+            [
+              -74.22,
+              -13.16
+            ],
+            [
+              -74.14,
+              -13.05
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Antonio José de Sucre",
+          "role": "Maréchal d'Ayacucho",
+          "faction": "independantistes",
+          "archetype": "general",
+          "quote": "Soldats, de l'effort de ce jour dépend le destin de l'Amérique du Sud (attribué à Sucre)",
+          "position": [
+            -74.15,
+            -13.06
+          ]
+        },
+        {
+          "name": "José de la Serna",
+          "role": "Dernier vice-roi du Pérou",
+          "faction": "espagnols",
+          "archetype": "vice-roi",
+          "quote": "Je suis vaincu, mais fidèle à mon roi (formule libre)",
+          "position": [
+            -74.13,
+            -13.04
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hispano-americaine-1898",
+      "year": 1898,
+      "title": "1898 : le Désastre, Cuba, Porto Rico et les Philippines perdus",
+      "type": "bataille",
+      "location": [
+        -76.05,
+        19.9
+      ],
+      "zoom": 3.2,
+      "summary": "En 1898, la flotte espagnole est détruite par l'US Navy à Santiago de Cuba et à Manille ; par le traité de Paris, l'Espagne perd Cuba, Porto Rico, Guam et les Philippines.",
+      "details": "À Cuba, la guerre d'indépendance a repris en 1895 sous **José Martí** et **Máximo Gómez**. Le général espagnol **Weyler** enferme les paysans dans des camps de « reconcentration », où meurent plus de 100 000 personnes selon les estimations. La presse américaine à scandale s'en empare. Le 15 février 1898, le cuirassé américain *Maine* explose dans le port de La Havane ; les États-Unis déclarent la guerre à l'Espagne en avril.\n\nLe 1er mai, le commodore **Dewey** détruit sans pertes la flotte du Pacifique à **Manille**. Le 3 juillet, l'amiral espagnol **Cervera**, bloqué dans la baie de **Santiago de Cuba**, reçoit l'ordre de sortir : ses quatre croiseurs cuirassés, sous le feu des navires américains plus nombreux et plus modernes, sont tous détruits en quelques heures. L'armée de terre capitule à Santiago, puis Manille tombe en août.\n\nLe traité de **Paris** (10 décembre 1898) cède aux États-Unis **Porto Rico**, **Guam** et les **Philippines** (contre 20 millions de dollars) ; Cuba devient indépendante sous tutelle américaine. Pour les Espagnols, c'est le « Désastre » : une génération d'écrivains, la « génération de 98 », s'interroge sur le déclin du pays. Ne reste de l'empire que l'Afrique, le Pacifique des Carolines et quelques îles.",
+      "consequences": [
+        "Cuba, Porto Rico, Guam et les Philippines sont perdus ; l'Amérique espagnole disparaît.",
+        "L'Espagne est humiliée : la « génération de 98 » (Unamuno, Machado, Baroja) s'interroge sur la décadence nationale.",
+        "Les États-Unis deviennent une puissance coloniale du Pacifique.",
+        "L'Espagne se replie sur l'Afrique, où elle cherchera sa compensation."
+      ],
+      "territory": "hispano-americaine-1898",
+      "sources": [
+        {
+          "label": "Wikipédia — Guerre hispano-américaine",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_hispano-am%C3%A9ricaine"
+        },
+        {
+          "label": "Raymond Carr, Spain, 1808-1975 (Oxford)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Espagne",
+          "États-Unis"
+        ],
+        "commanders": [
+          "Pascual Cervera",
+          "William T. Sampson",
+          "Winfield S. Schley"
+        ],
+        "outcome": "Victoire américaine ; flotte de Cervera détruite",
+        "forces": "Six navires espagnols contre une escadre américaine de sept bâtiments principaux",
+        "losses": "Environ 350 morts espagnols et 1 700 prisonniers ; un mort américain"
+      },
+      "territoryNote": "Espagne après le traité de Paris (décembre 1898) : péninsule, Baléares, Canaries, Ceuta et Melilla ; Carolines, Palau et Mariannes sauf Guam (vendues à l'Allemagne en 1899) ; Guinée espagnole (Fernando Poo, Annobón, Río Muni) ; Río de Oro (Sahara espagnol). Perdus : Cuba (indépendante sous tutelle américaine), Porto Rico, Guam et les Philippines (États-Unis).",
+      "armies": [
+        {
+          "side": "Escadre de Cervera",
+          "faction": "espagnols-xxe",
+          "path": [
+            [
+              -75.87,
+              19.96
+            ],
+            [
+              -75.95,
+              19.93
+            ],
+            [
+              -76.15,
+              19.9
+            ],
+            [
+              -76.05,
+              19.9
+            ]
+          ],
+          "strength": 2
+        },
+        {
+          "side": "Escadre américaine",
+          "faction": "americains",
+          "path": [
+            [
+              -75.4,
+              19.6
+            ],
+            [
+              -75.8,
+              19.8
+            ],
+            [
+              -76.05,
+              19.9
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Pascual Cervera",
+          "role": "Amiral de l'escadre espagnole",
+          "faction": "espagnols-xxe",
+          "archetype": "militaire-xxe",
+          "quote": "La flotte est condamnée à périr (formule libre, d'après ses dépêches)",
+          "position": [
+            -75.88,
+            19.97
+          ]
+        }
+      ]
+    },
+    {
+      "id": "carolines-1899",
+      "year": 1899,
+      "title": "1899 : l'Espagne vend ses îles du Pacifique",
+      "type": "traité",
+      "location": [
+        158.2,
+        6.96
+      ],
+      "zoom": 2.6,
+      "summary": "Privée de l'essentiel de son empire, l'Espagne vend à l'Allemagne les Carolines, Palau et les Mariannes du Nord pour 25 millions de pesetas.",
+      "details": "Après la défaite de 1898, l'Espagne n'a plus les moyens de garder ses archipels du Pacifique. Les **Carolines** (aujourd'hui les États fédérés de Micronésie), **Palau** et les **Mariannes du Nord** ne comptent que quelques dizaines de milliers d'habitants et sont très loin de Madrid. Ces îles sont une charge, mais aussi une proie pour les autres puissances : les États-Unis ont pris Guam, et l'Allemagne, qui s'installe en Chine à Qingdao (1898) et aux Samoa, convoite la région.\n\nPar le traité signé à Madrid le **12 février 1899**, l'Espagne vend ces archipels à l'Allemagne pour **25 millions de pesetas** (une somme estimée à 17 millions de marks). Le gouvernement libéral de **Sagasta** y voit une façon de se désengager sans gloire. Les Allemands y installent de petites administrations, exportent du coprah et des phosphates.\n\nL'épisode est la dernière grande cession territoriale de l'empire. L'Allemagne perdra ces îles en 1914 au profit du Japon, puis ces îles passeront aux États-Unis après la Seconde Guerre mondiale. L'Espagne n'a désormais que des possessions africaines, aux frontières encore mal fixées : Guinée espagnole, Río de Oro et petits territoires de la côte marocaine (Ceuta, Melilla).",
+      "consequences": [
+        "L'Espagne perd ses derniers territoires du Pacifique.",
+        "Les Carolines et les Mariannes du Nord deviennent allemandes, puis japonaises (1914-1919) et américaines (1944-1947).",
+        "L'empire espagnol se réduit à l'Afrique : Guinée, Sahara, présides marocains.",
+        "La monarchie cherche une compensation en Afrique du Nord, où la rivalité avec la France s'aiguise."
+      ],
+      "territory": "carolines-1899",
+      "sources": [
+        {
+          "label": "Wikipédia — Carolines",
+          "url": "https://fr.wikipedia.org/wiki/Carolines"
+        },
+        {
+          "label": "Raymond Carr, Spain, 1808-1975 (Oxford)"
+        }
+      ],
+      "territoryNote": "Espagne après la vente de février 1899 : péninsule, Baléares, Canaries, Ceuta et Melilla ; Guinée espagnole (Fernando Poo, Annobón, Río Muni, Corisco) ; Río de Oro (Sahara espagnol). Perdus : Carolines, Palau et Mariannes du Nord (Allemagne), Guam, Philippines, Porto Rico (États-Unis), Cuba.",
+      "figures": [
+        {
+          "name": "Práxedes Mateo Sagasta",
+          "role": "Président du Conseil espagnol",
+          "faction": "espagnols-xxe",
+          "archetype": "militaire-xxe",
+          "quote": "Nous devons solder les comptes de la défaite (formule libre)",
+          "position": [
+            -3.7,
+            40.42
+          ]
+        },
+        {
+          "name": "Bernhard von Bülow",
+          "role": "Secrétaire d'État allemand aux Affaires étrangères",
+          "faction": "prussiens",
+          "archetype": "diplomate",
+          "quote": "L'Allemagne réclame sa place au soleil (formule attribuée à Bülow, 1897)",
+          "position": [
+            13.4,
+            52.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maroc-1912",
+      "year": 1912,
+      "title": "Le protectorat espagnol du Maroc",
+      "type": "traité",
+      "location": [
+        -5.37,
+        35.57
+      ],
+      "zoom": 4.2,
+      "summary": "En novembre 1912, la France et l'Espagne se partagent le Maroc : l'Espagne reçoit le nord (le Rif, avec Tétouan) et une bande au sud de l'Atlas, le cap Juby.",
+      "details": "Au début du XXe siècle, le Maroc est l'enjeu de la rivalité entre les grandes puissances. La conférence d'**Algésiras** (1906) place le pays sous contrôle de l'Europe ; l'Allemagne et la France s'affrontent à Agadir en 1911. Le traité de **Fès** (30 mars 1912) impose le protectorat de la France sur le sultan **Moulay Hafid**.\n\nL'Espagne, déchue en 1898, réclame sa part, au nom de ses « présides » (Ceuta, Melilla) et de sa proximité. Par la convention de **Madrid** du 27 novembre 1912, la France lui reconnaît une zone de **protectorat au nord**, de Larache à Melilla (le Rif, montagneux, avec des tribus peu soumises), dont la capitale est **Tétouan**, et une bande au sud, autour de **Cap Juby** (Tarfaya). Le sultan est représenté dans la zone par un **khalifa**, en pratique sous l'autorité d'un haut-commissaire espagnol. **Tanger** reçoit un statut international.\n\nL'Espagne n'a pas les moyens militaires de contrôler un tel pays : les premières opérations coûtent cher. Mais l'armée d'Afrique devient l'école d'une génération d'officiers, parmi eux **Francisco Franco**, qui y fera sa carrière.",
+      "consequences": [
+        "L'Espagne obtient un protectorat sur le nord du Maroc (le Rif, capitale Tétouan) et sur la bande de Tarfaya (cap Juby).",
+        "Le Rif, difficile à soumettre, deviendra le théâtre de guerres coûteuses (Anoual, 1921).",
+        "Les officiers de l'armée d'Afrique, dont Franco, forment une élite politique et militaire.",
+        "Tanger devient une zone internationale, que l'Espagne occupera en 1940-1945."
+      ],
+      "territory": "maroc-1912",
+      "sources": [
+        {
+          "label": "Wikipédia — Protectorat espagnol au Maroc",
+          "url": "https://fr.wikipedia.org/wiki/Protectorat_espagnol_au_Maroc"
+        },
+        {
+          "label": "Sebastian Balfour, Deadly Embrace: Morocco and the Road to the Spanish Civil War (Oxford)"
+        }
+      ],
+      "territoryNote": "Espagne en 1912 : péninsule, Baléares, Canaries, Ceuta et Melilla ; Guinée espagnole (Fernando Poo, Río Muni, Annobón) ; Río de Oro (Sahara espagnol) ; Ifni (cédé par le sultan en 1860, non occupé). Protectorat (statut vassal) : zone nord du Maroc (Rif, Tétouan, Larache, Chefchaouen) et zone sud (Tarfaya, cap Juby). Hors de l'empire : protectorat français du Maroc, Tanger international.",
+      "figures": [
+        {
+          "name": "Alphonse XIII",
+          "role": "Roi d'Espagne",
+          "faction": "espagnols-xxe",
+          "archetype": "roi-moderne",
+          "quote": "L'Espagne a besoin de l'Afrique (formule libre)",
+          "position": [
+            -3.7,
+            40.42
+          ]
+        },
+        {
+          "name": "Hubert Lyautey",
+          "role": "Premier résident général de France au Maroc",
+          "faction": "francais",
+          "archetype": "general",
+          "quote": "Il faut que le Maroc reste uni (formule libre)",
+          "position": [
+            -6.84,
+            34.02
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anoual-1921",
+      "year": 1921,
+      "title": "Anoual : le désastre du Rif",
+      "type": "bataille",
+      "location": [
+        -3.88,
+        34.93
+      ],
+      "zoom": 4.6,
+      "summary": "En juillet 1921, l'armée espagnole du Rif est anéantie à Anoual par les combattants d'Abd el-Krim : plusieurs milliers de soldats meurent, et la monarchie s'en trouve ébranlée.",
+      "details": "Au Maroc espagnol, le général **Manuel Fernández Silvestre**, commandant de Melilla, avance vers l'ouest depuis 1920 avec des colonnes dispersées et des postes isolés. Dans les montagnes du Rif, la tribu des **Beni Urriaguel**, conduite par un juge devenu chef de guerre, **Abd el-Krim**, prépare la riposte.\n\nEn juillet 1921, les Rifains encerclent le camp d'**Anoual**. Le 22 juillet, Silvestre ordonne la retraite : elle tourne à la débâcle. Les soldats, en grande partie des conscrits mal équipés, sont massacrés ou capturés. Silvestre meurt, sans doute suicidé. En quelques semaines, les Rifains reprennent presque tout le territoire jusqu'aux portes de **Melilla**, que la Légion étrangère nouvellement créée par Millán-Astray sauve. Les pertes espagnoles dépassent 8 000 hommes, selon les estimations.\n\nEn Espagne, l'émotion est immense. Une enquête parlementaire (rapport Picasso) met en cause l'armée et le roi **Alphonse XIII**. Elle ne sera jamais publiée : en 1923, le général **Primo de Rivera** prend le pouvoir pour éviter le procès. Abd el-Krim proclame la République du Rif, qui ne sera vaincue qu'en 1926 par l'Espagne et la France réunies.",
+      "consequences": [
+        "L'Espagne perd l'essentiel du Rif oriental, qu'elle reconquerra en 1925-1927 avec l'aide de la France.",
+        "La défaite provoque la crise politique qui mène au coup d'État de Primo de Rivera (1923).",
+        "L'armée d'Afrique (Légion, Regulares) se politise et fournira les cadres du soulèvement de 1936.",
+        "Abd el-Krim devient une figure de la lutte anticoloniale."
+      ],
+      "territory": "anoual-1921",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille d'Anoual",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_d%27Anoual"
+        },
+        {
+          "label": "Sebastian Balfour, Deadly Embrace: Morocco and the Road to the Spanish Civil War (Oxford)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Espagne",
+          "Rifains (tribus du Rif)"
+        ],
+        "commanders": [
+          "Manuel Fernández Silvestre (tué)",
+          "Dámaso Berenguer",
+          "Abd el-Krim"
+        ],
+        "outcome": "Victoire rifaine écrasante ; effondrement de la ligne espagnole",
+        "forces": "Environ 20 000 soldats espagnols dans la région de Melilla ; quelques milliers de combattants rifains",
+        "losses": "Entre 8 000 et 13 000 morts espagnols selon les estimations, pertes rifaines nettement moindres"
+      },
+      "territoryNote": "Espagne en 1921 : péninsule, Baléares, Canaries, Ceuta et Melilla ; Guinée espagnole ; Río de Oro et Tarfaya (cap Juby) ; Ifni (non occupé). Protectorat (vassal) : zone nord du Maroc (Tétouan, Larache, Chefchaouen) ; l'est du Rif, jusqu'aux abords de Melilla, échappe provisoirement à l'Espagne en août 1921.",
+      "armies": [
+        {
+          "side": "Colonne de Silvestre",
+          "faction": "espagnols-xxe",
+          "path": [
+            [
+              -2.94,
+              35.29
+            ],
+            [
+              -3.2,
+              35.1
+            ],
+            [
+              -3.5,
+              35.0
+            ],
+            [
+              -3.88,
+              34.93
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Combattants d'Abd el-Krim",
+          "faction": "rifains",
+          "path": [
+            [
+              -3.85,
+              35.17
+            ],
+            [
+              -3.9,
+              35.0
+            ],
+            [
+              -3.88,
+              34.93
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Manuel Fernández Silvestre",
+          "role": "Général, commandant de Melilla",
+          "faction": "espagnols-xxe",
+          "archetype": "militaire-xxe",
+          "quote": "Il n'y a qu'à avancer (formule libre, d'après ses déclarations de 1921)",
+          "position": [
+            -3.85,
+            34.95
+          ]
+        },
+        {
+          "name": "Abd el-Krim",
+          "role": "Chef de la résistance rifaine",
+          "faction": "rifains",
+          "archetype": "calife",
+          "quote": "Le Rif sera libre ou ne sera pas (formule libre)",
+          "position": [
+            -3.85,
+            35.15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guerre-civile-1936",
+      "year": 1936,
+      "title": "1936 : l'armée d'Afrique et la guerre civile",
+      "type": "bataille",
+      "location": [
+        -3.75,
+        40.43
+      ],
+      "zoom": 4.0,
+      "summary": "Le 17 juillet 1936, les généraux se soulèvent depuis le Maroc espagnol contre la République ; l'armée d'Afrique traverse le détroit et marche sur Madrid, où commence une guerre de trois ans.",
+      "details": "Depuis 1931, l'Espagne est une République. En février 1936, le Front populaire de gauche remporte les élections. Le **17 juillet**, la garnison de Melilla se soulève, suivie de nombreuses autres : c'est le coup d'État du général **Sanjurjo**, de **Mola** et de **Franco**. Franco, relégué aux Canaries, gagne Tétouan en avion le 19 juillet pour prendre le commandement de l'**armée d'Afrique**, la meilleure armée d'Espagne, avec la Légion et les troupes marocaines des *Regulares*.\n\nLa flotte républicaine bloquant le détroit de Gibraltar, Franco obtient des avions allemands (Junkers Ju 52) et italiens : c'est le premier grand pont aérien militaire de l'histoire. Les colonnes d'Afrique remontent d'Andalousie et d'Estrémadure, prennent Badajoz (14 août) puis Tolède, et arrivent aux portes de Madrid en novembre. Les Madrilènes, soutenus par les Brigades internationales, tiennent bon (« ¡No pasarán! »), et la ville ne tombera que le 28 mars 1939.\n\nLa guerre dure trois ans, fait plus de 300 000 morts (les estimations montent à 500 000) et se termine par la victoire de Franco. Le Maroc espagnol reste un protectorat, mais sert de base à la rébellion ; le régime de Franco durera jusqu'en 1975.",
+      "consequences": [
+        "Le coup d'État militaire se transforme en guerre civile de près de trois ans (1936-1939) et fait plus de 300 000 morts.",
+        "Le protectorat du Maroc est une base arrière du soulèvement : des dizaines de milliers de Marocains combattent dans l'armée de Franco.",
+        "L'Allemagne nazie et l'Italie fasciste soutiennent Franco, l'URSS et les Brigades internationales la République.",
+        "La victoire de Franco (1939) établit une dictature de 36 ans."
+      ],
+      "territory": "guerre-civile-1936",
+      "sources": [
+        {
+          "label": "Wikipédia — Guerre d'Espagne",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_d%27Espagne"
+        },
+        {
+          "label": "Paul Preston, La Guerre d'Espagne (Tallandier)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Armée d'Afrique (rebelles nationalistes)",
+          "République (milices et armée loyale)"
+        ],
+        "commanders": [
+          "Francisco Franco",
+          "José Varela",
+          "José Miaja",
+          "Vicente Rojo"
+        ],
+        "outcome": "Les Républicains tiennent Madrid ; les rebelles conservent l'initiative sur le reste du pays",
+        "forces": "Environ 20 000 à 25 000 assaillants contre des défenseurs mal armés renforcés par les Brigades internationales",
+        "losses": "Plusieurs milliers de morts de chaque côté (Casa de Campo, Cité universitaire, Jarama)"
+      },
+      "territoryNote": "Espagne en 1936 : péninsule, Baléares, Canaries, Ceuta et Melilla ; Guinée espagnole ; Sahara espagnol (Río de Oro, Saguia el-Hamra) ; Ifni (occupé en 1934) ; Tarfaya (zone sud du protectorat). Protectorat (vassal) : zone nord du Maroc (Tétouan, Larache, Chefchaouen, Rif). La guerre civile est interne : elle ne change pas le territoire de l'empire.",
+      "armies": [
+        {
+          "side": "Armée d'Afrique",
+          "faction": "espagnols-xxe",
+          "path": [
+            [
+              -5.37,
+              35.57
+            ],
+            [
+              -5.45,
+              36.13
+            ],
+            [
+              -5.98,
+              37.39
+            ],
+            [
+              -6.34,
+              38.92
+            ],
+            [
+              -4.02,
+              39.86
+            ],
+            [
+              -4.01,
+              40.27
+            ],
+            [
+              -3.75,
+              40.43
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Défenseurs de Madrid",
+          "faction": "espagnols-xxe",
+          "path": [
+            [
+              -3.6,
+              40.4
+            ],
+            [
+              -3.72,
+              40.43
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Francisco Franco",
+          "role": "Général, chef de l'armée d'Afrique",
+          "faction": "espagnols-xxe",
+          "archetype": "militaire-xxe",
+          "quote": "Je sauverai l'Espagne, quoi qu'il en coûte (formule libre)",
+          "position": [
+            -5.37,
+            35.57
+          ]
+        },
+        {
+          "name": "Dolores Ibárruri (La Pasionaria)",
+          "role": "Dirigeante communiste",
+          "faction": "espagnols-xxe",
+          "archetype": "militaire-xxe",
+          "quote": "¡No pasarán! (mot d'ordre de Dolores Ibárruri, juillet 1936)",
+          "position": [
+            -3.7,
+            40.42
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maroc-1956",
+      "year": 1956,
+      "title": "1956-1958 : la fin du protectorat espagnol",
+      "type": "traité",
+      "location": [
+        -5.37,
+        35.57
+      ],
+      "zoom": 4.2,
+      "summary": "Le 7 avril 1956, l'Espagne reconnaît l'indépendance du Maroc et met fin au protectorat du Nord ; en 1958, elle cède Tarfaya, mais garde Ifni, le Sahara, Ceuta et Melilla.",
+      "details": "Après la Seconde Guerre mondiale, le mouvement nationaliste marocain, l'**Istiqlal** (« indépendance »), se renforce, et le sultan **Mohammed V**, exilé par la France en 1953, rentre en triomphe en novembre 1955. Le 2 mars 1956, la France reconnaît l'indépendance du Maroc. Franco, qui avait tenté de se poser en protecteur du monde arabe, ne peut s'y opposer : le **7 avril 1956**, une déclaration conjointe à Madrid met fin au protectorat espagnol sur la zone nord. Tétouan, capitale de la zone, devient une ville marocaine.\n\nL'Espagne garde cependant des territoires : **Ceuta** et **Melilla**, que le Maroc réclame encore, **Ifni**, **Tarfaya** (cap Juby) et le **Sahara** espagnol. En 1957, l'armée de libération marocaine attaque Ifni : c'est la « guerre oubliée ». Après des combats où l'Espagne se maintient à Sidi Ifni et au Sahara, elle cède **Tarfaya** par l'accord d'**Angra de Cintra** (1er avril 1958) et regroupe le Sahara en province unique.\n\nDans le même temps, l'Espagne sort de l'isolement des années 1940 : accords avec les États-Unis (1953), entrée à l'ONU (1955). Le régime tente de rattacher le reste de son empire (Guinée, Sahara, Ifni) à l'Espagne en faisant de ces territoires des « provinces ».",
+      "consequences": [
+        "Le protectorat espagnol du nord du Maroc prend fin ; Tétouan redevient marocaine.",
+        "Tarfaya est cédée au Maroc en 1958 ; l'Espagne garde Ifni, le Sahara, Ceuta et Melilla.",
+        "La guerre d'Ifni (1957-1958) oppose l'armée marocaine de libération aux troupes espagnoles.",
+        "Le régime franquiste transforme ses colonies en « provinces » pour résister à la décolonisation."
+      ],
+      "territory": "maroc-1956",
+      "sources": [
+        {
+          "label": "Wikipédia — Protectorat espagnol au Maroc",
+          "url": "https://fr.wikipedia.org/wiki/Protectorat_espagnol_au_Maroc"
+        },
+        {
+          "label": "Wikipédia — Guerre d'Ifni",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_d%27Ifni"
+        }
+      ],
+      "territoryNote": "Espagne en 1956-1958 : péninsule, Baléares, Canaries, Ceuta et Melilla ; Guinée espagnole (Fernando Poo, Río Muni, Annobón) ; Ifni ; Sahara espagnol (Río de Oro et Saguia el-Hamra, province en 1958). Perdus : zone nord du Maroc (indépendance en avril 1956) et Tarfaya (cédée en 1958). Hors de l'empire : Maroc indépendant.",
+      "figures": [
+        {
+          "name": "Mohammed V",
+          "role": "Sultan puis roi du Maroc",
+          "faction": "arabes",
+          "archetype": "sultan",
+          "quote": "L'indépendance est notre droit (formule libre)",
+          "position": [
+            -6.84,
+            34.02
+          ]
+        },
+        {
+          "name": "Francisco Franco",
+          "role": "Chef de l'État espagnol",
+          "faction": "espagnols-xxe",
+          "archetype": "militaire-xxe",
+          "quote": "Nous respecterons l'amitié hispano-arabe (formule libre)",
+          "position": [
+            -3.7,
+            40.42
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guinee-1968",
+      "year": 1968,
+      "title": "Guinée équatoriale : l'indépendance",
+      "type": "politique",
+      "location": [
+        8.78,
+        3.75
+      ],
+      "zoom": 4.2,
+      "summary": "Le 12 octobre 1968, la Guinée espagnole, devenue Guinée équatoriale, accède à l'indépendance ; Francisco Macías Nguema en devient le premier président, avant d'instaurer l'une des pires dictatures d'Afrique.",
+      "details": "La **Guinée espagnole** est faite de l'île de **Fernando Poo** (aujourd'hui Bioko, avec **Malabo** pour capitale, alors Santa Isabel), de l'île d'**Annobón** et du **Río Muni**, territoire continental. L'Espagne l'exploite pour le cacao, cultivé par une main-d'œuvre importée du Nigeria, et le bois. Avec 300 000 habitants et un revenu par tête relativement élevé, c'est la colonie africaine la mieux dotée, avec une population alphabétisée.\n\nSous la pression de l'ONU et des mouvements nationalistes, l'Espagne transforme la Guinée en « province » (1959), puis lui accorde l'autonomie (1963) et prépare une conférence constitutionnelle (1967-1968). Un référendum approuve la Constitution (août 1968), et l'élection de septembre porte au pouvoir **Francisco Macías Nguema**, candidat nationaliste au discours anticolonial. L'indépendance est proclamée le **12 octobre 1968** ; **Manuel Fraga**, ministre espagnol de l'Information, représente Franco à la cérémonie.\n\nMacías Nguema, qui se déclarera président à vie en 1972, tue ou chasse la moitié de la population par la terreur. Il est renversé en 1979 par son neveu **Teodoro Obiang**, qui dirige toujours le pays. L'Espagne n'a plus alors, en Afrique tropicale, aucun territoire.",
+      "consequences": [
+        "La Guinée équatoriale devient indépendante, première colonie africaine lâchée par Franco.",
+        "Le pays tombe sous la dictature de Macías Nguema (1968-1979), puis de son neveu Obiang.",
+        "L'Espagne perd son seul territoire d'Afrique tropicale.",
+        "Il lui reste le Sahara, Ifni, Ceuta et Melilla en Afrique du Nord."
+      ],
+      "territory": "guinee-1968",
+      "sources": [
+        {
+          "label": "Wikipédia — Guinée équatoriale",
+          "url": "https://fr.wikipedia.org/wiki/Guin%C3%A9e_%C3%A9quatoriale"
+        },
+        {
+          "label": "Wikipédia — Francisco Macías Nguema",
+          "url": "https://fr.wikipedia.org/wiki/Francisco_Mac%C3%ADas_Nguema"
+        }
+      ],
+      "territoryNote": "Espagne en 1968 : péninsule, Baléares, Canaries, Ceuta et Melilla ; Ifni (jusqu'en 1969) ; Sahara espagnol. Perdue : Guinée équatoriale (Bioko, Río Muni, Annobón, Corisco, indépendante le 12 octobre 1968). Hors de l'empire : Maroc, Mauritanie.",
+      "figures": [
+        {
+          "name": "Manuel Fraga Iribarne",
+          "role": "Ministre espagnol de l'Information et du Tourisme",
+          "faction": "espagnols-xxe",
+          "archetype": "militaire-xxe",
+          "quote": "L'Espagne a rempli sa mission en Guinée (formule libre)",
+          "position": [
+            8.78,
+            3.75
+          ]
+        },
+        {
+          "name": "Francisco Macías Nguema",
+          "role": "Premier président de la Guinée équatoriale",
+          "faction": "espagnols-xxe",
+          "archetype": "militaire-xxe",
+          "quote": "Nous avons enfin notre pays (formule libre)",
+          "position": [
+            8.78,
+            3.76
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ifni-1969",
+      "year": 1969,
+      "title": "1969 : Ifni rendu au Maroc",
+      "type": "traité",
+      "location": [
+        -10.1732,
+        29.3797
+      ],
+      "zoom": 4.6,
+      "summary": "Le 30 juin 1969, l'Espagne remet l'enclave d'Ifni au Maroc : c'est sa dernière rétrocession avant le Sahara.",
+      "details": "**Ifni**, territoire côtier de 1 500 km² face aux Canaries, avait été cédé à l'Espagne par le sultan du Maroc en 1860 (traité de Wad-Ras), mais les Espagnols ne l'ont occupé qu'en 1934. Sa capitale, **Sidi Ifni**, est une petite ville de style art déco avec un port. Depuis la guerre de 1957-1958, l'enclave est réduite à la côte et à Sidi Ifni.\n\nL'ONU demande dès 1960, par la résolution 1514, la fin de la colonisation, puis en 1965 celle d'Ifni et du Sahara espagnol. Franco, isolé, ne peut tenir longtemps. Le **4 janvier 1969**, l'Espagne et le Maroc signent à Fès un accord de rétrocession, par lequel le roi **Hassan II** reçoit officiellement Ifni le **30 juin 1969**. En échange, l'Espagne conserve des droits de pêche sur la côte.\n\nLa remise de l'enclave est la dernière étape avant celle du Sahara espagnol. À Madrid, le régime vieillit, mais s'accroche à la dernière partie de l'empire, le Sahara, riche en phosphates (mine de Bou Craa) et en poisson. Le Maroc, qui revendique ce territoire, a désormais en Hassan II un roi qui se veut l'unificateur du « Grand Maroc ».",
+      "consequences": [
+        "Ifni devient marocaine après 109 ans de souveraineté nominale espagnole.",
+        "L'Espagne ne garde plus en Afrique que le Sahara espagnol, Ceuta et Melilla.",
+        "La question du Sahara devient le dernier front de la décolonisation espagnole.",
+        "Le Maroc de Hassan II poursuit son projet de « Grand Maroc »."
+      ],
+      "territory": "ifni-1969",
+      "sources": [
+        {
+          "label": "Wikipédia — Ifni",
+          "url": "https://fr.wikipedia.org/wiki/Ifni"
+        },
+        {
+          "label": "Wikipédia — Guerre d'Ifni",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_d%27Ifni"
+        }
+      ],
+      "territoryNote": "Espagne en 1969 : péninsule, Baléares, Canaries, Ceuta et Melilla ; Sahara espagnol (Saguia el-Hamra et Río de Oro). Perdu : Ifni (rétrocédé au Maroc le 30 juin 1969) ; Guinée équatoriale déjà perdue en 1968.",
+      "figures": [
+        {
+          "name": "Hassan II",
+          "role": "Roi du Maroc",
+          "faction": "arabes",
+          "archetype": "sultan",
+          "quote": "Le Maroc recouvre l'un de ses territoires (formule libre)",
+          "position": [
+            -6.84,
+            34.02
+          ]
+        },
+        {
+          "name": "Francisco Franco",
+          "role": "Chef de l'État espagnol",
+          "faction": "espagnols-xxe",
+          "archetype": "militaire-xxe",
+          "quote": "Nous ne garderons que ce que nous pouvons défendre (formule libre)",
+          "position": [
+            -3.7,
+            40.42
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sahara-1976",
+      "year": 1976,
+      "title": "1975-1976 : la Marche verte et le départ du Sahara",
+      "type": "politique",
+      "location": [
+        -13.2,
+        27.15
+      ],
+      "zoom": 3.6,
+      "summary": "En novembre 1975, la Marche verte marocaine, puis les accords de Madrid, mènent au départ de l'Espagne du Sahara occidental : en février 1976, son empire colonial prend fin.",
+      "details": "Le **Sahara espagnol** (Saguia el-Hamra et Río de Oro) est une province depuis 1958. Le territoire, d'environ 266 000 km², est peu peuplé, mais riche en phosphates. À partir de 1973, le **Front Polisario**, mouvement sahraoui, mène la lutte armée pour l'indépendance. Le Maroc et la Mauritanie revendiquent le territoire.\n\nLe 16 octobre 1975, la **Cour internationale de justice** estime que le Sahara n'était pas un territoire sans maître et qu'aucun lien de souveraineté ne le liait au Maroc, tout en reconnaissant des liens d'allégeance. Le même jour, **Hassan II** annonce la **Marche verte** : le 6 novembre, environ 350 000 Marocains, selon les chiffres marocains, franchissent la frontière à Tarfaya, avec le Coran à la main. Franco, mourant, ne veut pas la guerre. Les **accords de Madrid** du 14 novembre partagent l'administration du territoire entre le Maroc et la Mauritanie.\n\nFranco meurt le 20 novembre 1975. Le nouveau roi **Juan Carlos Ier** achève le retrait : l'Espagne quitte le Sahara le **26 février 1976**. Le lendemain, le Polisario proclame la République arabe sahraouie démocratique. Une guerre de seize ans suit ; le statut du territoire n'est toujours pas réglé. Pour l'Espagne, c'est la fin de cinq siècles d'empire, de Grenade et Colomb à Laâyoune.",
+      "consequences": [
+        "L'Espagne quitte le Sahara occidental : son empire colonial prend fin, après 484 ans (1492-1976).",
+        "Le territoire est partagé entre le Maroc et la Mauritanie (qui se retirera en 1979) ; le Polisario proclame la RASD.",
+        "La question du Sahara occidental reste, un demi-siècle plus tard, un conflit non résolu.",
+        "L'Espagne, après la mort de Franco, s'oriente vers la démocratie (Constitution de 1978)."
+      ],
+      "territory": "sahara-1976",
+      "sources": [
+        {
+          "label": "Wikipédia — Marche verte",
+          "url": "https://fr.wikipedia.org/wiki/Marche_verte"
+        },
+        {
+          "label": "Wikipédia — Sahara occidental",
+          "url": "https://fr.wikipedia.org/wiki/Sahara_occidental"
+        }
+      ],
+      "territoryNote": "Espagne en 1976 : péninsule, Baléares, Canaries, Ceuta et Melilla (territoires nationaux). Le Sahara espagnol, évacué en février 1976, est partagé de fait entre le Maroc (nord, Laâyoune) et la Mauritanie (sud, Tiris el-Gharbia) ; l'empire d'outre-mer n'existe plus.",
+      "figures": [
+        {
+          "name": "Hassan II",
+          "role": "Roi du Maroc, instigateur de la Marche verte",
+          "faction": "arabes",
+          "archetype": "sultan",
+          "quote": "Marchez, le Coran à la main (formule libre, d'après son appel du 16 octobre 1975)",
+          "position": [
+            -12.93,
+            27.94
+          ]
+        },
+        {
+          "name": "Juan Carlos Ier",
+          "role": "Roi d'Espagne",
+          "faction": "espagnols-xxe",
+          "archetype": "roi-moderne",
+          "quote": "L'Espagne tournera la page (formule libre)",
+          "position": [
+            -3.7,
+            40.42
+          ]
+        }
+      ]
+    }
+  ]
+}
