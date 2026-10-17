@@ -1,10 +1,11 @@
-import { Marker, type GeoJSONSource, type Map as MapLibreMap, type MapMouseEvent } from 'maplibre-gl';
+import { LngLatBounds, Marker, type GeoJSONSource, type Map as MapLibreMap, type MapMouseEvent } from 'maplibre-gl';
 import type { Feature, FeatureCollection, Point, Polygon } from 'geojson';
 import disasters from '../../data/disasters.json';
 import type { Disaster, DisasterKind } from '../types-disaster';
 import { activeDisasters, convexHull, formatDeaths, OPEN_DISASTER_EVENT, spreadUpTo } from '../lib/worldEvents';
 import { formatYear } from '../lib/years';
-import { openMapCard } from './mapCard';
+import { closeMapCard, openMapCard } from './mapCard';
+import { prefersReducedMotion } from '../lib/motion';
 import './disasters.css';
 
 const ALL = disasters as Disaster[];
@@ -13,6 +14,12 @@ const SRC_WAR = 'disasters-war';
 const IDS = ['disasters-war-fill', 'disasters-war-line', 'disasters-spread'];
 const PLAGUE = '#6d2a7a';
 const WAR = '#7a1f1a';
+
+/** Aperçu demandé depuis la galerie : montré dès que la carte de l'étape choisie est prête. */
+let pendingPreview: string | null = null;
+export function requestDisasterPreview(id: string): void {
+  pendingPreview = id;
+}
 
 export const DISASTER_LABELS: Record<DisasterKind, { label: string; icon: string }> = {
   epidemie: { label: 'Épidémie', icon: '☣' },
@@ -63,6 +70,8 @@ export class DisasterLayers {
   private enabled = true;
   private markers: Marker[] = [];
   private markerOf = new Map<string, HTMLElement>();
+  /** Événement montré en aperçu, hors de la date de l'étape (clic sur la frise ou la galerie). */
+  private previewId: string | null = null;
 
   constructor(private map: MapLibreMap) {
     if (!map.hasImage('war-hatch')) map.addImage('war-hatch', hatchImage());
@@ -107,11 +116,46 @@ export class DisasterLayers {
   /** Clic sur la barre de la frise : fiche ouverte près de la pastille, si l'événement est visible. */
   private onOpenRequest = (e: Event) => {
     const id = (e as CustomEvent<string>).detail;
+    pendingPreview = null; // traitée ici : inutile de la rejouer au prochain setYear
+    if (this.markerOf.has(id) && this.previewId !== id && activeDisasters(ALL, this.year).some((d) => d.id === id)) {
+      // Déjà visible à cette date : cadrer et ouvrir sa fiche.
+      this.frame(ALL.find((d) => d.id === id)!, () => this.openAtMarker(id));
+    } else this.preview(id);
+  };
+
+  private openAtMarker(id: string, note?: string) {
     const d = ALL.find((x) => x.id === id);
     const el = this.markerOf.get(id);
     if (!d || !el) return;
     const r = el.getBoundingClientRect();
-    this.openCard(d, r.left + r.width / 2, r.top);
+    this.openCard(d, r.left + r.width / 2, r.top, note);
+  }
+
+  /** Cadre l'événement entier (lieu, diffusion, zone), puis appelle `then` à l'arrivée. */
+  private frame(d: Disaster, then: () => void) {
+    const b = new LngLatBounds(d.location, d.location);
+    for (const w of d.spread ?? []) for (const p of w.points) b.extend(p);
+    for (const p of d.area ?? []) b.extend(p);
+    const single = b.getNorthEast().distanceTo(b.getSouthWest()) < 50_000;
+    const reduced = prefersReducedMotion();
+    if (single) this.map.flyTo({ center: d.location, zoom: 6, duration: reduced ? 0 : 1500, essential: false });
+    else this.map.fitBounds(b, { padding: 90, maxZoom: 6, duration: reduced ? 0 : 1500, essential: false });
+    this.map.once('moveend', then);
+  }
+
+  /** Aperçu d'un événement hors de la date de l'étape : affiché en entier, cadré, fiche ouverte. */
+  preview(id: string) {
+    const d = ALL.find((x) => x.id === id);
+    if (!d) return;
+    this.previewId = id;
+    this.apply();
+    this.frame(d, () => this.openAtMarker(id, `Aperçu hors de la date de l'étape (${formatYear(this.year)}).`));
+  }
+
+  private endPreview = () => {
+    if (!this.previewId) return;
+    this.previewId = null;
+    this.apply();
   };
 
   private onLayerClick = (e: MapMouseEvent & { features?: Feature[] }) => {
@@ -119,7 +163,7 @@ export class DisasterLayers {
     if (d) this.openCard(d, e.originalEvent.clientX, e.originalEvent.clientY);
   };
 
-  private openCard(d: Disaster, x: number, y: number) {
+  private openCard(d: Disaster, x: number, y: number, note?: string) {
     const k = DISASTER_LABELS[d.kind];
     const p = (cls: string, text: string) => {
       const el = document.createElement('p');
@@ -130,6 +174,7 @@ export class DisasterLayers {
     const parts: Node[] = [
       p('map-card__title', `${k.icon} ${d.name}`),
       p('map-card__meta', `${k.label} · ${span(d)}`),
+      ...(note ? [p('map-card__preview', note)] : []),
       p('map-card__deaths', `${formatDeaths(d.deaths)} (estimations : ${formatDeaths(d.deathsLow).replace('≈ ', '')} à ${formatDeaths(d.deathsHigh).replace('≈ ', '')})`),
       p('map-card__note', d.uncertainty),
     ];
@@ -144,7 +189,7 @@ export class DisasterLayers {
       a.textContent = `${s.label} ↗`;
       parts.push(a);
     }
-    openMapCard(this.map, x, y, d.name, parts);
+    openMapCard(this.map, x, y, d.name, parts, undefined, d.id === this.previewId ? this.endPreview : undefined);
   }
 
   private apply() {
@@ -152,6 +197,8 @@ export class DisasterLayers {
     this.markers = [];
     this.markerOf.clear();
     const list = this.enabled ? activeDisasters(ALL, this.year) : [];
+    const shown = this.previewId ? ALL.find((x) => x.id === this.previewId) : undefined;
+    if (shown && !list.includes(shown)) list.push(shown);
     const war: FeatureCollection<Polygon, { id: string }> = {
       type: 'FeatureCollection',
       features: list
@@ -161,7 +208,7 @@ export class DisasterLayers {
     const spread: FeatureCollection<Point, { id: string; age: number }> = {
       type: 'FeatureCollection',
       features: list.flatMap((d) =>
-        d.kind === 'epidemie' ? spreadUpTo(d, this.year).map((s) => ({ type: 'Feature' as const, properties: { id: d.id, age: s.age }, geometry: { type: 'Point' as const, coordinates: s.point } })) : [],
+        d.kind === 'epidemie' ? spreadUpTo(d, d.id === this.previewId ? d.end : this.year).map((s) => ({ type: 'Feature' as const, properties: { id: d.id, age: s.age }, geometry: { type: 'Point' as const, coordinates: s.point } })) : [],
       ),
     };
     (this.map.getSource(SRC_WAR) as GeoJSONSource | undefined)?.setData(war);
@@ -184,8 +231,20 @@ export class DisasterLayers {
   }
 
   setYear(year: number) {
+    const changed = year !== this.year;
     this.year = year;
+    // Un aperçu ne disparaît que si l'on change vraiment de date (pas lors d'une simple réinitialisation).
+    if (this.previewId && changed) {
+      this.previewId = null;
+      closeMapCard();
+    }
     this.apply();
+    if (pendingPreview) {
+      const id = pendingPreview;
+      pendingPreview = null;
+      // Après le vol de caméra vers l'étape, qui serait sinon prioritaire.
+      window.setTimeout(() => this.preview(id), 400);
+    }
   }
 
   setEnabled(on: boolean) {

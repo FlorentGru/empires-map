@@ -1,19 +1,21 @@
 import type { GeoJSONSource, Map as MapLibreMap, MapMouseEvent } from 'maplibre-gl';
 import type { Feature, FeatureCollection, LineString, Point } from 'geojson';
 import routes from '../../data/routes.json';
-import type { TradeRoute } from '../types-route';
+import { ROUTE_CARRIERS, type TradeRoute } from '../types-route';
 import { activeRoutes, cumulative, pointAlong } from '../lib/worldEvents';
 import { formatYear } from '../lib/years';
 import { prefersReducedMotion } from '../lib/motion';
 import { openMapCard } from './mapCard';
 import { addSvgImages } from './svgImages';
+import { carrierSvg, CARRIER_LABELS } from './routeIcons';
 
 const ALL = routes as TradeRoute[];
 const SRC = 'trade-routes';
 const SRC_MOVERS = 'trade-routes-movers';
-const IDS = ['trade-routes-hit', 'trade-routes-casing', 'trade-routes-line', 'trade-routes-sea', 'trade-routes-label', 'trade-routes-movers'];
+const SRC_STOPS = 'trade-routes-stops';
+const IDS = ['trade-routes-hit', 'trade-routes-casing', 'trade-routes-line', 'trade-routes-sea', 'trade-routes-label', 'trade-routes-stops', 'trade-routes-stops-label', 'trade-routes-movers'];
 /** Zone de clic invisible et large (14 px) : une ligne de 2 px est trop fine pour la souris. */
-const CLICKABLE = ['trade-routes-hit'];
+const CLICKABLE = ['trade-routes-hit', 'trade-routes-stops'];
 const LAND = '#8a5a2b';
 const SEA = '#3f6f8f';
 /** Teintes plus foncées pour les noms (contraste sur le parchemin et la mer). */
@@ -23,15 +25,6 @@ const SEA_TEXT = '#22465e';
 const TRIP_MS = 45_000;
 const MOVERS_PER_ROUTE = 3;
 const INK = '#3b2a1a';
-
-const CAMEL =
-  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><g stroke="${INK}" stroke-width="1" stroke-linejoin="round">` +
-  '<path d="M4 13Q4 9 7 9Q8 6 10 9Q11.5 7 13 9H16L18 6.5L20 7L19.5 9.5L18 11V17H16.8V13.5H8.5V17H7.3V13.5Q5 14 4 13Z" fill="#c9a26a"/>' +
-  '<path d="M9 9.2L10 7.5L11 9.2Z" fill="#a8281e" stroke-width="0.6"/></g></svg>';
-const SHIP =
-  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"><g stroke="${INK}" stroke-width="1" stroke-linejoin="round">` +
-  '<path d="M3.5 15H20.5L18 19H6Z" fill="#8a5a2b"/><path d="M11.5 3.5V15" fill="none"/>' +
-  '<path d="M12 4.5Q17.5 8 12.3 13Z" fill="#f4ead3"/><path d="M11 6Q7 9.5 11 13Z" fill="#efe3c2"/></g></svg>';
 
 type RouteProps = { id: string; name: string; kind: string };
 
@@ -48,11 +41,17 @@ export class RouteLayers {
   private active: { route: TradeRoute; cum: number[] }[] = [];
 
   constructor(private map: MapLibreMap) {
-    this.ready = addSvgImages(map, [['route-camel', CAMEL, 24], ['route-ship', SHIP, 24]]).then(() => {
+    // Un porteur par route (dromadaire, lama, jonque, galion…), dans les deux sens de marche.
+    const images = ROUTE_CARRIERS.flatMap((c) => [
+      [`carrier-${c}-e`, carrierSvg(c), 32, 24] as [string, string, number, number],
+      [`carrier-${c}-w`, carrierSvg(c, true), 32, 24] as [string, string, number, number],
+    ]);
+    this.ready = addSvgImages(map, images).then(() => {
       if (!map.getStyle() || map.getSource(SRC)) return;
       const before = map.getLayer('city-dot') ? 'city-dot' : undefined;
       map.addSource(SRC, { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
       map.addSource(SRC_MOVERS, { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+      map.addSource(SRC_STOPS, { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
       map.addLayer({ id: 'trade-routes-hit', type: 'line', source: SRC, layout: { 'line-cap': 'round', 'line-join': 'round' }, paint: { 'line-color': '#000', 'line-width': 14, 'line-opacity': 0 } }, before);
       map.addLayer({ id: 'trade-routes-casing', type: 'line', source: SRC, layout: { 'line-cap': 'round', 'line-join': 'round' }, paint: { 'line-color': '#f4ead3', 'line-width': ['case', ['boolean', ['feature-state', 'hover'], false], 8, 5] as never, 'line-opacity': ['case', ['boolean', ['feature-state', 'hover'], false], 0.9, 0.55] as never } }, before);
       // Terre : trait plein brun ; mer : pointillé bleu (line-dasharray ne dépend pas des données → deux calques).
@@ -86,14 +85,40 @@ export class RouteLayers {
         },
         before,
       );
+      // Escales (villes clés) : petit rond à la couleur de la route, nom à partir du zoom 3,5.
+      map.addLayer(
+        {
+          id: 'trade-routes-stops',
+          type: 'circle',
+          source: SRC_STOPS,
+          paint: {
+            'circle-radius': ['interpolate', ['linear'], ['zoom'], 2, 2.6, 6, 4.5] as never,
+            'circle-color': '#f7efd9',
+            'circle-stroke-color': ['match', ['get', 'kind'], 'mer', SEA_TEXT, LAND_TEXT] as never,
+            'circle-stroke-width': 1.8,
+          },
+        },
+        before,
+      );
+      map.addLayer(
+        {
+          id: 'trade-routes-stops-label',
+          type: 'symbol',
+          source: SRC_STOPS,
+          minzoom: 3.5,
+          layout: { 'text-field': ['get', 'name'], 'text-font': ['Noto Sans Regular'], 'text-size': 11, 'text-offset': [0, 0.9], 'text-anchor': 'top', 'text-optional': true, 'text-max-width': 8 },
+          paint: { 'text-color': ['match', ['get', 'kind'], 'mer', SEA_TEXT, LAND_TEXT] as never, 'text-halo-color': '#f7efd9', 'text-halo-width': 1.8 },
+        },
+        before,
+      );
       map.addLayer(
         {
           id: 'trade-routes-movers',
           type: 'symbol',
           source: SRC_MOVERS,
           layout: {
-            'icon-image': ['match', ['get', 'kind'], 'mer', 'route-ship', 'route-camel'] as never,
-            'icon-size': ['interpolate', ['linear'], ['zoom'], 2, 0.55, 6, 0.9] as never,
+            'icon-image': ['concat', 'carrier-', ['get', 'carrier'], '-', ['get', 'dir']] as never,
+            'icon-size': ['interpolate', ['linear'], ['zoom'], 2, 0.6, 6, 1] as never,
             'icon-allow-overlap': true,
             'icon-ignore-placement': true,
           },
@@ -133,6 +158,27 @@ export class RouteLayers {
   };
 
   private onClick = (e: MapMouseEvent & { features?: Feature[] }) => {
+    // Escale cliquée (au-dessus de la zone de clic des routes) : fiche de l'escale.
+    const stopHit = this.map.queryRenderedFeatures(e.point, { layers: ['trade-routes-stops'] })[0];
+    if (stopHit) {
+      const sp = stopHit.properties as { route: string; name: string; note?: string };
+      const route = ALL.find((x) => x.id === sp.route);
+      const t = document.createElement('p');
+      t.className = 'map-card__title';
+      t.textContent = sp.name;
+      const m = document.createElement('p');
+      m.className = 'map-card__meta';
+      m.textContent = route ? `Escale · ${route.name}` : 'Escale';
+      const parts: Node[] = [t, m];
+      if (sp.note) {
+        const n = document.createElement('p');
+        n.className = 'map-card__text';
+        n.textContent = sp.note;
+        parts.push(n);
+      }
+      openMapCard(this.map, e.originalEvent.clientX, e.originalEvent.clientY, sp.name, parts);
+      return;
+    }
     const id = (e.features?.[0]?.properties as RouteProps | undefined)?.id;
     const r = ALL.find((x) => x.id === id);
     if (!r) return;
@@ -141,10 +187,17 @@ export class RouteLayers {
     title.textContent = r.name;
     const meta = document.createElement('p');
     meta.className = 'map-card__meta';
-    meta.textContent = `${r.kind === 'mer' ? 'Route maritime' : 'Route terrestre'} · ${formatYear(r.from)} – ${formatYear(r.to)}`;
+    meta.textContent = `${r.kind === 'mer' ? 'Route maritime' : 'Route terrestre'} · ${CARRIER_LABELS[r.carrier]} · ${formatYear(r.from)} – ${formatYear(r.to)}`;
     const goods = document.createElement('p');
     goods.className = 'map-card__text';
-    goods.textContent = `Marchandises : ${r.goods.join(', ')}. Étapes : ${r.stops.join(' → ')}.`;
+    goods.textContent = `Marchandises : ${r.goods.join(', ')}.`;
+    const stops = document.createElement('ol');
+    stops.className = 'map-card__stops';
+    for (const st of r.stops) {
+      const li = document.createElement('li');
+      li.textContent = st.note ? `${st.name} — ${st.note}` : st.name;
+      stops.append(li);
+    }
     const text = document.createElement('p');
     text.className = 'map-card__text';
     text.textContent = r.description;
@@ -154,7 +207,7 @@ export class RouteLayers {
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
     link.textContent = 'En savoir plus sur Wikipédia ↗';
-    openMapCard(this.map, e.originalEvent.clientX, e.originalEvent.clientY, r.name, [title, meta, goods, text, link]);
+    openMapCard(this.map, e.originalEvent.clientX, e.originalEvent.clientY, r.name, [title, meta, goods, stops, text, link]);
   };
 
   private apply() {
@@ -168,6 +221,12 @@ export class RouteLayers {
     };
     this.setHover(null);
     src.setData(fc);
+    (this.map.getSource(SRC_STOPS) as GeoJSONSource | undefined)?.setData({
+      type: 'FeatureCollection',
+      features: list.flatMap((r) =>
+        r.stops.map((st) => ({ type: 'Feature' as const, properties: { route: r.id, name: st.name, note: st.note ?? '', kind: r.kind }, geometry: { type: 'Point' as const, coordinates: st.at } })),
+      ),
+    });
     this.drawMovers(performance.now());
     cancelAnimationFrame(this.raf);
     this.raf = 0;
@@ -178,11 +237,12 @@ export class RouteLayers {
   private drawMovers(now: number) {
     const src = this.map.getSource(SRC_MOVERS) as GeoJSONSource | undefined;
     if (!src) return;
-    const features: Feature<Point, { kind: string }>[] = [];
+    const features: Feature<Point, { carrier: string; dir: 'e' | 'w' }>[] = [];
     for (const { route, cum } of this.active) {
       for (let k = 0; k < MOVERS_PER_ROUTE; k++) {
         const t = (now / TRIP_MS + k / MOVERS_PER_ROUTE) % 1;
-        features.push({ type: 'Feature', properties: { kind: route.kind }, geometry: { type: 'Point', coordinates: pointAlong(route.path, cum, t).at } });
+        const p = pointAlong(route.path, cum, t);
+        features.push({ type: 'Feature', properties: { carrier: route.carrier, dir: p.east ? 'e' : 'w' }, geometry: { type: 'Point', coordinates: p.at } });
       }
     }
     src.setData({ type: 'FeatureCollection', features });
@@ -229,6 +289,6 @@ export class RouteLayers {
     }
     if (!m.getStyle()) return;
     for (const id of [...IDS].reverse()) if (m.getLayer(id)) m.removeLayer(id);
-    for (const s of [SRC, SRC_MOVERS]) if (m.getSource(s)) m.removeSource(s);
+    for (const s of [SRC, SRC_MOVERS, SRC_STOPS]) if (m.getSource(s)) m.removeSource(s);
   }
 }

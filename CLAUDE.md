@@ -10,7 +10,8 @@ Carte interactive (React + Vite + TS strict + MapLibre GL, relief 3D) qui montre
 
 ## État (à mettre à jour en fin de session)
 - Sur `main` : Rome, Napoléon, Chine, Mongols ; chatbot ADK (le « sage », Gemini ou Claude via `ATLAS_MODEL`) ; apogée sur la frise ; régiments animés (marche proportionnelle à la distance, `src/lib/march.ts`) ; empires contemporains ; carte du monde entière ; formulaire « Votre avis » (mailto) ; villes de départ des armées (`from`, `src/lib/origin.ts`) ; personnages illustres (`data/empires/<id>/people.json`, galerie, outil `chercher_personnage` du sage) ; monuments (`data/monuments.json`, calque, éventail des piles) ; routes commerciales (`data/routes.json`) et catastrophes/guerres (`data/disasters.json`) ; vue « Le monde en l'an X » (`src/world/`, `?world=1&year=`) ; quiz du sage (`agent/atlas_agent/quiz.py`, `src/quiz/`) ; comparaison de deux empires (`src/compare/`, `?compare=a,b`, profils `data/empires/<id>/profile.json`).
-- À faire par l'utilisateur : renseigner son adresse dédiée dans `src/config.ts` (`FEEDBACK_EMAIL`, publique).
+- Hébergement gratuit : `npm run serve` (local + réseau domestique) ; GitHub Pages via `.github/workflows/pages.yml` (build `VITE_STATIC=1`, sans sage ; quiz hors ligne en TS `src/quiz/offline.ts`).
+- À faire par l'utilisateur : renseigner son adresse dédiée dans `src/config.ts` (`FEEDBACK_EMAIL`, publique) ; activer Pages (Settings → Pages → Source : GitHub Actions).
 - Brouillons à finaliser, un par session : `data/drafts/{carolingiens,saint-empire,espagne}/` (voir `data/drafts/README.md`). (Le fond de carte couvre déjà le monde entier.)
 
 ## Règles de travail

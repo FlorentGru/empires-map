@@ -53,6 +53,26 @@ npm run build:data:napoleon   # un seul empire (rome, napoleon, china)
 
 Les corrections historiques des frontières se trouvent dans `overrides/rome/*.geojson`.
 
+## Lancer l'Atlas gratuitement
+
+Aucun serveur payant n'est nécessaire : l'Atlas est un site statique (HTML, JS, données), et le sage tourne sur ton propre PC.
+
+### Sur ton PC (Linux, macOS ou Windows)
+1. Installer **Node.js LTS** (gratuit, [nodejs.org](https://nodejs.org)) et **Git**.
+2. Récupérer le projet : `git clone https://github.com/FlorentGru/empires-map.git`, puis `cd empires-map` (ou `git pull` s'il est déjà là).
+3. Installer les dépendances (une fois, puis après chaque mise à jour) : `npm ci`.
+4. Lancer : `npm run serve`, puis ouvrir **http://localhost:4173**.
+   - Le serveur écoute aussi sur le réseau local : depuis un téléphone ou une tablette sur le même Wi-Fi, ouvrir `http://<adresse-IP-du-PC>:4173` (Windows : `ipconfig` ; Linux : `ip addr`). Le pare-feu peut demander l'autorisation la première fois.
+   - Pour développer (rechargement à chaud) : `npm run dev`, puis http://localhost:5173.
+5. Facultatif, le **sage** (chatbot et quiz rédigé par l'IA) : dans un second terminal, `npm run agent` (Python 3.12 et une clé d'API dans `agent/.env`, voir [agent/README.md](agent/README.md)).
+
+Arrêter le serveur : `Ctrl+C` dans le terminal.
+
+### En ligne, gratuitement, avec GitHub Pages
+Le workflow [.github/workflows/pages.yml](.github/workflows/pages.yml) construit et publie l'Atlas à chaque push sur `main`, à l'adresse `https://<compte>.github.io/empires-map/`.
+- **Activation (une seule fois)** : sur GitHub, dépôt → **Settings** → **Pages** → *Build and deployment* → **Source : GitHub Actions**. Le prochain push (ou *Actions → Pages → Run workflow*) publie le site.
+- **Limites de la version en ligne** : le sage et le quiz rédigé par l'IA n'y sont pas (ils ont besoin du serveur Python et d'une clé, qu'on ne publie jamais). Le **quiz hors ligne**, la carte et tout le reste fonctionnent.
+
 ## Structure
 
 | Dossier | Contenu |

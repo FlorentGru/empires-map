@@ -2,8 +2,8 @@ import { memo, useEffect, useMemo, useRef, useState, type CSSProperties, type Re
 import { apogeeStepId, formatArea, normalizedAreas } from '../lib/apogee';
 import disastersData from '../../data/disasters.json';
 import type { Disaster } from '../types-disaster';
-import { disastersBetween, formatDeaths, lanes, nearestStepIndex, OPEN_DISASTER_EVENT } from '../lib/worldEvents';
-import { DISASTER_LABELS } from '../map/disasterLayers';
+import { disastersBetween, formatDeaths, lanes, OPEN_DISASTER_EVENT } from '../lib/worldEvents';
+import { DISASTER_LABELS, requestDisasterPreview } from '../map/disasterLayers';
 import { eventMeta } from '../lib/eventTypes';
 import { prefersReducedMotion } from '../lib/motion';
 import { firstStepOfPeriods, periodIndexAt } from '../lib/periods';
@@ -98,7 +98,7 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
             {tip.d.end !== tip.d.start ? ` – ${formatYear(tip.d.end)}` : ''}
           </span>
           <span>{formatDeaths(tip.d.deaths)}</span>
-          <em>Cliquer pour voir sur la carte</em>
+          <em>Cliquer pour la voir sur la carte</em>
         </div>
       )}
       <div className="timeline__controls">
@@ -185,10 +185,9 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
                 onFocus={(e) => showTip(d, e.currentTarget)}
                 onBlur={() => setTip(null)}
                 onClick={() => {
-                  const i = nearestStepIndex(steps, d.start);
-                  if (i < 0) return;
-                  player.goTo(i);
-                  window.setTimeout(() => window.dispatchEvent(new CustomEvent(OPEN_DISASTER_EVENT, { detail: d.id })), 1200);
+                  // En attente si la carte n'est pas encore prête (consommée par DisasterLayers.setYear).
+                  requestDisasterPreview(d.id);
+                  window.dispatchEvent(new CustomEvent(OPEN_DISASTER_EVENT, { detail: d.id }));
                 }}
               >
                 <span className="timeline__disaster-bar" aria-hidden="true" />

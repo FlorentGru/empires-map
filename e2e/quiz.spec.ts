@@ -54,7 +54,7 @@ test('serveur absent : message clair puis quiz hors ligne', async ({ page }) => 
   await expect(dialog.locator('.quiz__badge')).toHaveText('hors ligne');
 });
 
-test('même le quiz hors ligne indisponible : message clair', async ({ page }) => {
+test('sans aucun serveur, le quiz hors ligne est généré dans le navigateur', async ({ page }) => {
   await page.route('**/api/quiz', (route) => route.abort());
   await page.route('**/api/quiz/hors-ligne**', (route) => route.abort());
   await page.goto('/?empire=rome&step=zama-202');
@@ -62,5 +62,6 @@ test('même le quiz hors ligne indisponible : message clair', async ({ page }) =
   const dialog = page.getByRole('dialog', { name: /Quiz du sage/ });
   await dialog.getByRole('button', { name: 'Commencer' }).click();
   await dialog.getByRole('button', { name: 'Quiz hors ligne' }).click();
-  await expect(dialog.getByRole('alert')).toContainText('même hors ligne');
+  await expect(dialog).toContainText('hors ligne');
+  await expect(dialog.getByRole('button').filter({ hasNotText: /Fermer|Commencer|Rejouer|Quiz hors ligne/ }).first()).toBeVisible();
 });

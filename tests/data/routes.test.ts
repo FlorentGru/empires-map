@@ -1,7 +1,19 @@
 import { describe, expect, it } from 'vitest';
 import { join } from 'node:path';
-import type { TradeRoute } from '../../src/types-route';
+import { ROUTE_CARRIERS, type TradeRoute } from '../../src/types-route';
 import { DATA, readJson } from './helpers';
+
+/** Distance (km) d'un point à un segment, approximation équirectangulaire. */
+function segmentKm(p: number[], a: number[], b: number[]): number {
+  const k = Math.cos((p[1] * Math.PI) / 180) * 111.32;
+  const m = 110.57;
+  const ax = (a[0] - p[0]) * k, ay = (a[1] - p[1]) * m;
+  const bx = (b[0] - p[0]) * k, by = (b[1] - p[1]) * m;
+  const dx = bx - ax, dy = by - ay;
+  const l = dx * dx + dy * dy;
+  const t = l ? Math.max(0, Math.min(1, -(ax * dx + ay * dy) / l)) : 0;
+  return Math.hypot(ax + t * dx, ay + t * dy);
+}
 
 const routes = readJson<TradeRoute[]>(join(DATA, 'routes.json'));
 
@@ -34,9 +46,25 @@ describe('data/routes.json', () => {
       expect(lat).toBeGreaterThanOrEqual(-60);
       expect(lat).toBeLessThanOrEqual(85);
     }
+    expect(ROUTE_CARRIERS).toContain(r.carrier);
     expect(r.stops.length).toBeGreaterThanOrEqual(3);
-    expect(r.stops.length).toBeLessThanOrEqual(10);
-    for (const s of r.stops) expect(s.trim().length).toBeGreaterThan(0);
+    expect(r.stops.length).toBeLessThanOrEqual(14);
+    for (const s of r.stops) {
+      expect(s.name.trim().length).toBeGreaterThan(0);
+      expect(s.at).toHaveLength(2);
+      expect(s.at[0], `${s.name} lon`).toBeGreaterThanOrEqual(-180);
+      expect(s.at[0], `${s.name} lon`).toBeLessThanOrEqual(360);
+      expect(s.at[1], `${s.name} lat`).toBeGreaterThanOrEqual(-60);
+      expect(s.at[1], `${s.name} lat`).toBeLessThanOrEqual(85);
+      if (s.note !== undefined) {
+        const n = s.note.trim().split(/\s+/).length;
+        expect(n, `${s.name} note`).toBeGreaterThan(0);
+        expect(n, `${s.name} note`).toBeLessThanOrEqual(12);
+      }
+      let min = Infinity;
+      for (let i = 0; i < r.path.length - 1; i++) min = Math.min(min, segmentKm(s.at, r.path[i], r.path[i + 1]));
+      expect(min, `${s.name} à ${min.toFixed(0)} km du tracé`).toBeLessThan(30);
+    }
     expect(r.goods.length).toBeGreaterThanOrEqual(2);
     expect(r.goods.length).toBeLessThanOrEqual(6);
     const words = r.description.trim().split(/\s+/).length;

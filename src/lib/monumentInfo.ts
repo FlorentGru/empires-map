@@ -41,3 +41,20 @@ export function stepsShowing(m: Monument, empires: Empire[], maxKm = 2500, limit
   }
   return out.sort((a, b) => a.year - b.year).slice(0, limit);
 }
+
+/** Étape de l'Atlas la plus proche d'un événement : d'abord par la date, puis par la distance au lieu. */
+export function nearestStepFor(at: [number, number], year: number, empires: Empire[]) {
+  let best: { empireId: string; stepId: string; title: string; year: number; empireName: string } | null = null;
+  let score = Infinity;
+  for (const e of empires)
+    for (const s of e.steps) {
+      if (!s.location) continue;
+      // 1 an d'écart pèse autant que 50 km : la date compte d'abord.
+      const sc = Math.abs(s.year - year) * 50 + haversineKm(s.location, at);
+      if (sc < score) {
+        score = sc;
+        best = { empireId: e.id, stepId: s.id, title: s.title, year: s.year, empireName: e.name.split(',')[0]! };
+      }
+    }
+  return best;
+}

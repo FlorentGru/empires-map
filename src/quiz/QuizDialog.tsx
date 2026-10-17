@@ -2,11 +2,13 @@ import { useEffect, useRef, useState } from 'react';
 import { EMPIRES } from '../data/loadEmpire';
 import { GOTO_EVENT, type GotoDetail } from '../map/contemporaryLayers';
 import { readString, writeString } from '../lib/settings';
-import { fetchQuiz, fetchQuizHorsLigne, type Difficulte, type Quiz, type QuizParams, type QuizSource } from './api';
+import { fetchQuiz, fetchQuizHorsLigne, STATIC_SITE, type Difficulte, type Quiz, type QuizParams, type QuizSource } from './api';
 import './quiz.css';
 
 const BEST_KEY = 'atlas.quizBest';
-const SERVER_DOWN = "Le sage n'est pas lancé : npm run agent";
+const SERVER_DOWN = STATIC_SITE
+  ? "Le quiz rédigé par le sage n'existe que dans la version locale (il faut le serveur Python et une clé). Le quiz hors ligne, lui, marche ici."
+  : "Le sage n'est pas lancé : npm run agent";
 
 interface Props {
   open: boolean;

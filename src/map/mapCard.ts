@@ -3,7 +3,7 @@
 import type { Map as MapLibreMap } from 'maplibre-gl';
 import './mapCard.css';
 
-let current: { el: HTMLDivElement; map: MapLibreMap } | null = null;
+let current: { el: HTMLDivElement; map: MapLibreMap; onClose?: () => void } | null = null;
 
 function onKey(e: KeyboardEvent) {
   if (e.key === 'Escape') closeMapCard();
@@ -16,9 +16,10 @@ function onMoveStart(e: { originalEvent?: Event }) {
 
 export function closeMapCard(): void {
   if (!current) return;
-  const { el, map } = current;
+  const { el, map, onClose } = current;
   current = null;
   el.remove();
+  onClose?.();
   document.removeEventListener('keydown', onKey);
   map.off('movestart', onMoveStart);
 }
@@ -27,7 +28,7 @@ export function closeMapCard(): void {
  * Ouvre la bulle près de (clientX, clientY), toujours entièrement à l'écran.
  * Se ferme avec ✕, Échap, ou dès que l'utilisateur déplace la carte. Le focus va sur `focus` s'il est fourni.
  */
-export function openMapCard(map: MapLibreMap, clientX: number, clientY: number, label: string, content: Node[], focus?: HTMLElement): HTMLDivElement {
+export function openMapCard(map: MapLibreMap, clientX: number, clientY: number, label: string, content: Node[], focus?: HTMLElement, onClose?: () => void): HTMLDivElement {
   closeMapCard();
   const card = document.createElement('div');
   card.className = 'map-card';
@@ -45,7 +46,7 @@ export function openMapCard(map: MapLibreMap, clientX: number, clientY: number, 
   const h = card.offsetHeight;
   card.style.left = `${Math.min(window.innerWidth - w - 8, Math.max(8, clientX - w / 2))}px`;
   card.style.top = `${clientY - h - 14 >= 8 ? clientY - h - 14 : Math.min(window.innerHeight - h - 8, clientY + 14)}px`;
-  current = { el: card, map };
+  current = { el: card, map, onClose };
   (focus ?? close).focus({ preventScroll: true });
   document.addEventListener('keydown', onKey);
   map.on('movestart', onMoveStart);

@@ -24,3 +24,12 @@ describe('galerie des monuments', () => {
     expect(s.map((x) => x.stepId)).toEqual(['trajan', 'constantinople', 'chute-1453']);
   });
 });
+
+import { nearestStepFor } from '../../src/lib/monumentInfo';
+describe('étape la plus proche d’un événement', () => {
+  it('privilégie la date, puis la distance', () => {
+    const r = nearestStepFor([23.73, 37.98], -430, [rome, china]);
+    expect(r?.stepId).toBe('cannes'); // seule étape antique proche dans le temps
+    expect(nearestStepFor([12.5, 41.9], 125, [rome, china])?.stepId).toBe('hadrien');
+  });
+});

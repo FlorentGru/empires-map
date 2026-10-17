@@ -52,3 +52,39 @@ test('monuments : le badge de pile suit la carte pendant un glissement', async (
   await page.mouse.up();
   expect(gap).toBeLessThan(40); // même pile : le badge suit (une pile ancrée sur un monument voisin reste à quelques px)
 });
+
+test('frise : la peste d’Athènes, hors de la date de l’étape, s’ouvre en aperçu', async ({ page }) => {
+  test.setTimeout(90_000);
+  await page.goto('/?empire=rome&step=republique-509');
+  await page.getByRole('button', { name: /Peste d'Athènes/ }).click();
+  const card = page.getByRole('dialog', { name: /Peste d'Athènes/ });
+  await expect(card).toBeVisible({ timeout: 30_000 });
+  await expect(card).toContainText('Aperçu');
+  await expect(card).toContainText('morts');
+});
+
+test('galerie : onglet Catastrophes et guerres', async ({ page }) => {
+  await page.goto('/?empire=rome&step=zama-202');
+  await page.getByRole('button', { name: 'Galerie' }).click();
+  await page.getByRole('button', { name: 'Catastrophes et guerres' }).click();
+  await page.getByRole('button', { name: /^Peste noire/ }).click();
+  await expect(page.getByRole('heading', { name: 'Peste noire' })).toBeVisible();
+  await expect(page.locator('.gallery__appears button')).toHaveCount(1);
+});
+
+test('routes : les escales du commerce triangulaire existent aux Antilles', async ({ page }) => {
+  test.setTimeout(90_000);
+  await page.goto('/?empire=napoleon&step=brumaire-1799&e2e');
+  await expect
+    .poll(
+      () =>
+        page.evaluate(() => {
+          const m = (window as any).__map;
+          if (!m?.getLayer('trade-routes-stops')) return [];
+          m.jumpTo({ center: [-68, 16], zoom: 4.5, pitch: 0 });
+          return m.queryRenderedFeatures({ layers: ['trade-routes-stops'] }).map((f: any) => f.properties.name);
+        }),
+      { timeout: 60_000 },
+    )
+    .toEqual(expect.arrayContaining([expect.stringMatching(/^Bridgetown/), expect.stringMatching(/^Cap-Français/)]));
+});

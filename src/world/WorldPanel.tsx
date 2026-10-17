@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import disasters from '../../data/disasters.json';
 import monuments from '../../data/monuments.json';
 import routes from '../../data/routes.json';
-import { activeDisasters, activeRoutes, formatDeaths } from '../lib/worldEvents';
+import { activeDisasters, activeRoutes, formatDeaths, OPEN_DISASTER_EVENT } from '../lib/worldEvents';
 import { formatYear } from '../lib/years';
 import type { PresentEmpire } from '../lib/worldYear';
 import { standingAt } from '../map/monumentLayers';
@@ -91,7 +91,10 @@ export function WorldPanel({ year, present, open, onToggle, onGoto }: Props) {
               <ul className="world-panel__plain">
                 {live.map((d) => (
                   <li key={d.id}>
-                    {d.name} <span className="world-panel__step">{formatDeaths(d.deaths)}</span>
+                    <button type="button" className="world-panel__link" onClick={() => window.dispatchEvent(new CustomEvent(OPEN_DISASTER_EVENT, { detail: d.id }))} title="Voir sur la carte">
+                      {d.name}
+                    </button>{' '}
+                    <span className="world-panel__step">{formatDeaths(d.deaths)}</span>
                   </li>
                 ))}
               </ul>

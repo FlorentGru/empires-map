@@ -23,7 +23,10 @@ interface Msg {
   tools?: string[];
 }
 
-const SERVER_DOWN = "Le guide n'est pas lancé : ouvre un terminal et lance `npm run agent` (voir agent/README.md).";
+const SERVER_DOWN =
+  import.meta.env.VITE_STATIC === '1'
+    ? "Le sage n'est disponible que dans la version locale de l'Atlas : il a besoin du serveur Python et d'une clé d'API (voir le README)."
+    : "Le guide n'est pas lancé : ouvre un terminal et lance `npm run agent` (voir agent/README.md).";
 
 interface Props {
   context: ChatContext | null;

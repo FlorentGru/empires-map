@@ -8,6 +8,7 @@ import { ARCHETYPE_INFO, FACTION_INFO, type FigureInfo } from './descriptions';
 import { norm, scaled, Svg } from './svgUtils';
 import { PeopleView, type PersonRef } from './People';
 import { MonumentsView } from './Monuments';
+import { DisastersView } from './Disasters';
 
 interface Props {
   onClose: () => void;
@@ -18,7 +19,7 @@ interface Props {
 }
 
 type Kind = 'faction' | 'archetype';
-type Filter = 'all' | 'soldiers' | 'characters' | 'people' | 'monuments';
+type Filter = 'all' | 'soldiers' | 'characters' | 'people' | 'monuments' | 'disasters';
 
 interface Item {
   uid: string;
@@ -260,6 +261,7 @@ export function Gallery({ onClose, onNavigate, initialPerson = null }: Props) {
                 ['characters', 'Personnages'],
                 ['people', 'Personnages illustres'],
                 ['monuments', 'Monuments'],
+                ['disasters', 'Catastrophes et guerres'],
               ] as const
             ).map(([id, label]) => (
               <button key={id} type="button" className="btn btn--ghost" aria-pressed={filter === id} onClick={() => setFilter(id)}>
@@ -286,6 +288,8 @@ export function Gallery({ onClose, onNavigate, initialPerson = null }: Props) {
           <PeopleView query={query} initial={initialPerson} onNavigate={onNavigate} />
         ) : filter === 'monuments' ? (
           <MonumentsView query={query} onNavigate={onNavigate} />
+        ) : filter === 'disasters' ? (
+          <DisastersView query={query} onNavigate={onNavigate} />
         ) : selected ? (
           <Detail item={selected} onBack={back} onNavigate={onNavigate} />
         ) : (

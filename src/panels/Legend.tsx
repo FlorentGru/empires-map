@@ -207,8 +207,8 @@ export const Legend = memo(function Legend({ empire, step, countries2026 = false
         {(monuments || routes || disasters) && (
           <Group title="Le monde de l'époque">
             {monuments && <Row icon={<span className="legend__monument" aria-hidden="true" dangerouslySetInnerHTML={{ __html: monumentIconSvg('temple') }} />} label="Monument" hint="cliquer ; les piles s'écartent au survol" />}
-            {routes && <Row icon={<span className="legend__route" aria-hidden="true" />} label="Route terrestre" hint="🐫 caravanes" />}
-            {routes && <Row icon={<span className="legend__route legend__route--sea" aria-hidden="true" />} label="Route maritime" hint="⛵ navires" />}
+            {routes && <Row icon={<span className="legend__route" aria-hidden="true" />} label="Route terrestre" hint="dromadaires, mules, lamas… selon la région" />}
+            {routes && <Row icon={<span className="legend__route legend__route--sea" aria-hidden="true" />} label="Route maritime" hint="galères, jonques, galions… ; ronds : escales" />}
             {disasters && <Row icon={<span className="legend__plague" aria-hidden="true" />} label="Épidémie" hint="diffusion, vague récente en vif" />}
             {disasters && <Row icon={<span className="legend__war" aria-hidden="true" />} label="Guerre meurtrière" hint="zone des combats et bilan" />}
             {disasters && <Row icon={<span className="legend__glyphs" aria-hidden="true">☣🌋</span>} label="Catastrophe" hint="épidémie, éruption, séisme, famine…" />}
