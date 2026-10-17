@@ -1,3 +1,5 @@
+import { OPEN_INVENTION_EVENT } from '../data/loadInventions';
+import type { Invention } from '../types-invention';
 import Markdown from 'react-markdown';
 import { memo, useEffect, useRef, type ComponentProps, type CSSProperties } from 'react';
 import { prefersReducedMotion } from '../lib/motion';
@@ -14,6 +16,8 @@ interface Props {
   /** Chapitre (période) si l'étape ouvre sa période, affiché hors mode Histoire. */
   chapter?: { n: number; name: string; summary: string } | null;
   story?: { segments: StorySegment[]; current: number; silent: boolean } | null;
+  /** Inventions apparues depuis l'étape précédente (cliquables : fiche sur la carte). */
+  inventions?: Invention[];
 }
 
 const markdownComponents = {
@@ -23,7 +27,7 @@ const markdownComponents = {
   ),
 };
 
-export const EventPanel = memo(function EventPanel({ step, open, onToggle, story, chapter }: Props) {
+export const EventPanel = memo(function EventPanel({ step, open, onToggle, story, chapter, inventions = [] }: Props) {
   const meta = step ? eventMeta(step.type) : null;
   const bodyRef = useRef<HTMLDivElement>(null);
   const segs = story?.segments ?? [];
@@ -135,6 +139,25 @@ export const EventPanel = memo(function EventPanel({ step, open, onToggle, story
             )}
 
             {step.battle && <BattleBlock battle={step.battle} />}
+
+            {inventions.length > 0 && (
+              <section className="event-panel__inventions">
+                <h3>💡 Inventions de l'époque</h3>
+                <ul>
+                  {inventions.map((inv) => (
+                    <li key={inv.id}>
+                      <button type="button" onClick={() => window.dispatchEvent(new CustomEvent(OPEN_INVENTION_EVENT, { detail: inv.id }))}>
+                        {inv.name}
+                      </button>{' '}
+                      <small>
+                        ({inv.approx ? 'vers ' : ''}
+                        {formatYear(inv.year)})
+                      </small>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
 
             {step.consequences.length > 0 && (
               <section>

@@ -1,6 +1,7 @@
 import { focusEntity } from '../map/focusEntity';
 import { GOTO_EVENT, type GotoDetail } from '../map/contemporaryLayers';
 import { monumentIconSvg } from '../map/monumentIcons';
+import { inventionIconSvg } from '../map/inventionIcons';
 import { memo, useEffect, useId, useState, type CSSProperties, type ReactNode } from 'react';
 import { loadContemporaries, loadTerritory } from '../data/loadEmpire';
 import { EVENT_TYPES } from '../lib/eventTypes';
@@ -18,6 +19,7 @@ interface Props {
   monuments?: boolean;
   routes?: boolean;
   disasters?: boolean;
+  inventions?: boolean;
 }
 
 /** Figurines d'illustration de la légende, par empire (défaut : Rome). */
@@ -111,7 +113,7 @@ function Row({ icon, label, hint }: { icon: ReactNode; label: string; hint?: str
   );
 }
 
-export const Legend = memo(function Legend({ empire, step, countries2026 = false, neighbors = true, contemporaries = true, monuments = true, routes = true, disasters = true }: Props) {
+export const Legend = memo(function Legend({ empire, step, countries2026 = false, neighbors = true, contemporaries = true, monuments = true, routes = true, disasters = true, inventions = true }: Props) {
   const others = useContemporaryEmpires(empire.id, step?.id, contemporaries);
   const [open, setOpen] = useState(() => !isMobile());
   const titleId = useId();
@@ -204,7 +206,7 @@ export const Legend = memo(function Legend({ empire, step, countries2026 = false
           <Row icon={<span className="legend__figure" aria-hidden="true" dangerouslySetInnerHTML={{ __html: characterSvg(sprites.archetype) }} />} label="Personnage" hint="citation en bulle, « Sa fiche »" />
         </Group>
 
-        {(monuments || routes || disasters) && (
+        {(monuments || routes || disasters || inventions) && (
           <Group title="Le monde de l'époque">
             {monuments && <Row icon={<span className="legend__monument" aria-hidden="true" dangerouslySetInnerHTML={{ __html: monumentIconSvg('temple') }} />} label="Monument" hint="cliquer ; les piles s'écartent au survol" />}
             {routes && <Row icon={<span className="legend__route" aria-hidden="true" />} label="Route terrestre" hint="dromadaires, mules, lamas… selon la région" />}
@@ -212,6 +214,7 @@ export const Legend = memo(function Legend({ empire, step, countries2026 = false
             {disasters && <Row icon={<span className="legend__plague" aria-hidden="true" />} label="Épidémie" hint="diffusion, vague récente en vif" />}
             {disasters && <Row icon={<span className="legend__war" aria-hidden="true" />} label="Guerre meurtrière" hint="zone des combats et bilan" />}
             {disasters && <Row icon={<span className="legend__glyphs" aria-hidden="true">☣🌋</span>} label="Catastrophe" hint="épidémie, éruption, séisme, famine…" />}
+            {inventions && <Row icon={<span className="legend__monument" aria-hidden="true" dangerouslySetInnerHTML={{ __html: inventionIconSvg('technique') }} />} label="Invention" hint="halo doré : apparue à cette étape" />}
           </Group>
         )}
 

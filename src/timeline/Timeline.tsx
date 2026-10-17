@@ -4,6 +4,9 @@ import disastersData from '../../data/disasters.json';
 import type { Disaster } from '../types-disaster';
 import { disastersBetween, formatDeaths, lanes, OPEN_DISASTER_EVENT } from '../lib/worldEvents';
 import { DISASTER_LABELS, requestDisasterPreview } from '../map/disasterLayers';
+import { INVENTIONS, OPEN_INVENTION_EVENT } from '../data/loadInventions';
+import { CATEGORY_LABELS } from '../map/inventionIcons';
+import type { Invention } from '../types-invention';
 import { eventMeta } from '../lib/eventTypes';
 import { prefersReducedMotion } from '../lib/motion';
 import { firstStepOfPeriods, periodIndexAt } from '../lib/periods';
@@ -78,26 +81,33 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
   // Lignes distinctes pour les événements qui se chevauchent (ex. conquêtes mongoles et guerre de Cent Ans).
   const disasterLane = useMemo(() => lanes(disasters), [disasters]);
   // Infobulle des catastrophes : position fixe (la piste défile et couperait une bulle interne).
-  const [tip, setTip] = useState<{ d: Disaster; x: number; y: number } | null>(null);
-  const showTip = (d: Disaster, el: HTMLElement) => {
+  // Infobulle générique (catastrophes, inventions) : titre, lignes, couleur de bordure.
+  const [tip, setTip] = useState<{ kind: string; title: string; lines: string[]; x: number; y: number } | null>(null);
+  const place = (el: HTMLElement) => {
     const r = el.getBoundingClientRect();
-    setTip({ d, x: Math.min(window.innerWidth - 130, Math.max(130, r.left + r.width / 2)), y: r.top });
+    return { x: Math.min(window.innerWidth - 130, Math.max(130, r.left + r.width / 2)), y: r.top };
   };
+  const showTip = (d: Disaster, el: HTMLElement) =>
+    setTip({
+      kind: d.kind,
+      title: `${DISASTER_LABELS[d.kind].icon} ${d.name}`,
+      lines: [`${DISASTER_LABELS[d.kind].label} · ${formatYear(d.start)}${d.end !== d.start ? ` – ${formatYear(d.end)}` : ''}`, formatDeaths(d.deaths)],
+      ...place(el),
+    });
+  const showInventionTip = (inv: Invention, el: HTMLElement) =>
+    setTip({ kind: 'invention', title: `💡 ${inv.name}`, lines: [`${CATEGORY_LABELS[inv.category]} · ${inv.approx ? 'vers ' : ''}${formatYear(inv.year)}`, inv.place], ...place(el) });
+  const inventions = INVENTIONS[empire.id] ?? [];
 
   const pct = (x: number) => `${(x * 100).toFixed(3)}%`;
 
   return (
     <footer className="timeline" aria-label="Frise chronologique">
       {tip && (
-        <div className="timeline__tip" role="tooltip" style={{ left: tip.x, top: tip.y }} data-kind={tip.d.kind}>
-          <strong>
-            {DISASTER_LABELS[tip.d.kind].icon} {tip.d.name}
-          </strong>
-          <span>
-            {DISASTER_LABELS[tip.d.kind].label} · {formatYear(tip.d.start)}
-            {tip.d.end !== tip.d.start ? ` – ${formatYear(tip.d.end)}` : ''}
-          </span>
-          <span>{formatDeaths(tip.d.deaths)}</span>
+        <div className="timeline__tip" role="tooltip" style={{ left: tip.x, top: tip.y }} data-kind={tip.kind}>
+          <strong>{tip.title}</strong>
+          {tip.lines.map((l) => (
+            <span key={l}>{l}</span>
+          ))}
           <em>Cliquer pour la voir sur la carte</em>
         </div>
       )}
@@ -194,6 +204,22 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
               </button>
             );
           })}
+          {inventions
+            .filter((inv) => inv.year >= empire.start && inv.year <= empire.end)
+            .map((inv) => (
+              <button
+                key={inv.id}
+                type="button"
+                className="timeline__invention"
+                style={{ left: pct(yearToX(inv.year)) }}
+                aria-label={`Invention : ${inv.name}, ${formatYear(inv.year)}`}
+                onPointerEnter={(e) => showInventionTip(inv, e.currentTarget)}
+                onPointerLeave={() => setTip(null)}
+                onFocus={(e) => showInventionTip(inv, e.currentTarget)}
+                onBlur={() => setTip(null)}
+                onClick={() => window.dispatchEvent(new CustomEvent(OPEN_INVENTION_EVENT, { detail: inv.id }))}
+              />
+            ))}
           <div className="timeline__axis" />
           {ticks.map((y, i) => (
             <span

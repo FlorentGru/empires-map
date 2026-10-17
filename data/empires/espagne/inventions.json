@@ -1,0 +1,212 @@
+[
+  {
+    "id": "nebrija-grammaire",
+    "name": "Grammaire castillane de Nebrija",
+    "year": 1492,
+    "place": "Salamanque",
+    "at": [
+      -5.66,
+      40.97
+    ],
+    "inventor": "Antonio de Nebrija",
+    "category": "ecriture",
+    "description": "En 1492, l'humaniste Antonio de Nebrija publie à Salamanque la première grammaire d'une langue romane moderne, la Gramática de la lengua castellana. Il la dédie à la reine Isabelle, à qui il aurait dit que la langue est « compagne de l'empire ». Le castillan devient une langue standardisée et se répand avec la colonisation, jusqu'à plus de 500 millions de locuteurs.",
+    "impact": "Elle fixe une langue européenne moderne, devenue outil d'unité politique et de colonisation. L'espagnol est aujourd'hui l'une des langues les plus parlées du monde.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Antonio_de_Nebrija"
+      }
+    ]
+  },
+  {
+    "id": "real-de-a-ocho",
+    "name": "Real de a ocho, « dollar espagnol »",
+    "year": 1497,
+    "place": "Medina del Campo",
+    "at": [
+      -4.91,
+      41.31
+    ],
+    "inventor": "Rois catholiques",
+    "category": "monnaie",
+    "description": "Une pragmatique de 1497 de Ferdinand et Isabelle crée la pièce d'argent de huit réaux, le real de a ocho. Frappée en masse à Mexico et à Potosí avec l'argent américain, elle circule du XVIe au XIXe siècle en Europe, en Amérique et en Asie. Le dollar américain, les pesos et le yuan en conservent la trace. C'est la première monnaie à usage mondial.",
+    "impact": "Elle est la première monnaie vraiment mondiale, acceptée de Manille à Londres. Elle relie les économies d'Amérique, d'Europe et d'Asie, et le dollar en est l'héritier.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Réal_espagnol"
+      },
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Pièce_de_huit"
+      }
+    ]
+  },
+  {
+    "id": "casa-de-contratacion",
+    "name": "Casa de Contratación et Padrón Real",
+    "year": 1503,
+    "place": "Séville",
+    "at": [
+      -5.99,
+      37.39
+    ],
+    "category": "navigation",
+    "description": "Fondée en 1503 à Séville, la Casa de Contratación contrôle tout le commerce avec le Nouveau Monde : navires, marchandises, passagers et trésors. Elle forme les pilotes et tient le Padrón Real, la carte officielle, mise à jour grâce aux relevés rapportés par chaque voyage. Séville, seul port autorisé pour les Indes, devient l'une des villes les plus riches d'Europe.",
+    "impact": "Cette institution centralise cartographie, formation des pilotes et commerce. Elle est l'un des premiers centres scientifiques d'État consacrés à la navigation.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Casa_de_Contratación"
+      }
+    ]
+  },
+  {
+    "id": "lois-de-burgos",
+    "name": "Lois de Burgos et Leyes Nuevas",
+    "year": 1512,
+    "place": "Burgos",
+    "at": [
+      -3.7,
+      42.34
+    ],
+    "category": "droit",
+    "description": "Promulguées en 1512, les lois de Burgos sont les premières lois à encadrer le traitement des Indiens d'Amérique par les colons : elles limitent le travail forcé, exigent leur évangélisation et leur salaire. Elles sont peu appliquées. Après les protestations du dominicain Bartolomé de Las Casas, les Leyes Nuevas de 1542 vont plus loin et abolissent l'esclavage des Indiens.",
+    "impact": "Un empire discute pour la première fois les droits des peuples conquis. Ces lois, rarement appliquées, annoncent l'idée de droits universels.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Lois_de_Burgos"
+      },
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Bartolomé_de_Las_Casas"
+      }
+    ]
+  },
+  {
+    "id": "galion",
+    "name": "Galion",
+    "year": 1520,
+    "approx": true,
+    "place": "Séville",
+    "at": [
+      -6,
+      37.35
+    ],
+    "category": "navigation",
+    "description": "Le galion est un grand voilier armé, à plusieurs ponts, plus long et plus bas que la caraque. Il apparaît en Espagne dans les années 1520-1550, à partir de modèles portugais et vénitiens. Armé de canons, il transporte l'argent d'Amérique dans les flottes des Indes. Le galion de Manille traverse le Pacifique de 1565 à 1815. La date est une approximation.",
+    "impact": "Il est le navire du premier commerce mondial : les galions relient l'Amérique, l'Europe et l'Asie, et leurs trésors attirent les corsaires.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Galion"
+      }
+    ]
+  },
+  {
+    "id": "ecole-de-salamanque",
+    "name": "École de Salamanque",
+    "year": 1539,
+    "place": "Salamanque",
+    "at": [
+      -5.66,
+      40.97
+    ],
+    "inventor": "Francisco de Vitoria",
+    "category": "droit",
+    "description": "En 1539, le dominicain Francisco de Vitoria enseigne à Salamanque que les Indiens sont des hommes libres, propriétaires de leurs terres, et que la conquête n'est pas légitime par principe. Avec ses élèves, il jette les bases du droit des gens, ancêtre du droit international. Ses successeurs étudient aussi la monnaie, les prix et l'inflation, posant des idées économiques modernes.",
+    "impact": "Cette école invente un droit des peuples et pense les prix et la monnaie. Elle est considérée comme un jalon du droit international et de la pensée économique.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/École_de_Salamanque"
+      }
+    ]
+  },
+  {
+    "id": "patio-amalgamation",
+    "name": "Procédé d'amalgamation du patio",
+    "year": 1554,
+    "place": "Pachuca (Mexique)",
+    "at": [
+      -98.73,
+      20.12
+    ],
+    "inventor": "Bartolomé de Medina",
+    "category": "technique",
+    "description": "En 1554, le marchand sévillan Bartolomé de Medina met au point à Pachuca, au Mexique, une méthode pour extraire l'argent du minerai : on broie le minerai, on le mélange à du mercure et du sel, puis on le piétine sur un « patio ». L'argent se fond dans le mercure, qu'on chauffe ensuite. Le mercure vient d'Almadén en Espagne et de Huancavelica au Pérou.",
+    "impact": "Il permet d'exploiter les minerais pauvres, multiplie la production d'argent américain et nourrit l'économie mondiale, au prix d'un travail minier très meurtrier.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Pachuca_de_Soto"
+      }
+    ]
+  },
+  {
+    "id": "flotas-de-indias",
+    "name": "Système des flottes des Indes",
+    "year": 1564,
+    "approx": true,
+    "place": "Séville",
+    "at": [
+      -5.99,
+      37.39
+    ],
+    "category": "administration",
+    "description": "Face aux corsaires et aux pirates, la Couronne organise vers 1564 la Carrera de Indias en convois protégés. Chaque année, deux flottes quittent Séville : la flota pour la Nouvelle-Espagne et les galeones pour Tierra Firme. Elles se retrouvent à La Havane avant de rentrer ensemble. Ce système, maintenu pendant près de deux siècles, protège l'essentiel des convois d'argent.",
+    "impact": "Il sécurise des milliers de traversées d'un commerce transatlantique d'une valeur sans précédent. C'est un modèle de convois que d'autres puissances imiteront.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Flotte_des_Indes"
+      }
+    ]
+  },
+  {
+    "id": "expedition-balmis",
+    "name": "Expédition Balmis (vaccination mondiale)",
+    "year": 1803,
+    "place": "La Corogne",
+    "at": [
+      -8.41,
+      43.37
+    ],
+    "inventor": "Francisco Javier de Balmis",
+    "category": "medecine",
+    "description": "En novembre 1803, le médecin Francisco Javier de Balmis quitte La Corogne avec vingt-deux orphelins porteurs du virus de la vaccine, transmis de bras en bras pendant le voyage pour garder le vaccin actif. L'expédition vaccine contre la variole en Amérique, aux Philippines et en Chine. Elle est considérée comme la première campagne de vaccination internationale de l'histoire.",
+    "impact": "C'est la première campagne de santé publique à l'échelle de la planète. Elle prouve qu'un vaccin peut voyager et sauve des dizaines de milliers de vies.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Expédition_Balmis"
+      }
+    ]
+  },
+  {
+    "id": "autogire",
+    "name": "Autogire de Cierva",
+    "year": 1923,
+    "place": "Getafe (Madrid)",
+    "at": [
+      -3.73,
+      40.31
+    ],
+    "inventor": "Juan de la Cierva",
+    "category": "technique",
+    "description": "Le 17 janvier 1923, à Getafe près de Madrid, l'ingénieur Juan de la Cierva fait voler son autogire C.6 : un aéronef dont le rotor, non motorisé, tourne librement sous l'effet du vent relatif, tandis qu'une hélice assure l'avancée. Il résout les problèmes de portance du rotor, grâce aux articulations de pales. Ces découvertes ont préparé la voie à l'hélicoptère.",
+    "impact": "Ses articulations de pales, inventées pour l'autogire, sont à la base de l'hélicoptère. Un ingénieur espagnol a ouvert la voie du vol à voilure tournante.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Juan_de_la_Cierva"
+      },
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Autogire"
+      }
+    ]
+  }
+]

@@ -8,10 +8,11 @@ import { rome } from './rome.ts';
 import { napoleon } from './napoleon.ts';
 import { china } from './china.ts';
 import { mongols } from './mongols.ts';
+import { espagne } from './espagne.ts';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 
-export const EMPIRES: EmpireConfig[] = [rome, napoleon, china, mongols];
+export const EMPIRES: EmpireConfig[] = [rome, napoleon, china, mongols, espagne];
 
 export function getEmpire(id: string): EmpireConfig {
   const e = EMPIRES.find((x) => x.id === id);

@@ -214,6 +214,56 @@ export const FACTION_INFO: Record<Faction, FigureInfo> = {
     era: '1250 – 1517',
     text: "Esclaves-soldats d'origine turque ou caucasienne devenus maîtres de l'Égypte et de la Syrie. Le cavalier mamelouk, casque à pointe et turban, caftan de couleur, tire à l'arc monté et charge au sabre après un long entraînement. Sous Qutuz et Baybars, ils arrêtent les Mongols à Aïn Djalout (1260), première grande défaite de l'armée mongole en campagne.",
   },
+  tercios: {
+    label: "Tercios et conquistadors",
+    era: "1492 – 1714",
+    text: "L'infanterie espagnole des Habsbourg domine les champs de bataille d'Europe de Pavie (1525) à Rocroi (1643). Ses unités permanentes, les tercios, associent piquiers, arquebusiers et soldats d'épée. Les conquistadors, quelques centaines d'hommes en armure, renversent les empires aztèque et inca avec l'aide d'alliés indigènes. Les troupes sont payées par l'argent d'Amérique, souvent en retard : les mutineries sont fréquentes.",
+  },
+  azteques: {
+    label: "Aztèques (Mexicas)",
+    era: "1428 – 1521",
+    text: "Les Aztèques ou Mexicas dominent depuis 1428 le centre du Mexique à partir de leur capitale lacustre, Tenochtitlan. Leur armée, levée parmi les citoyens, compte des ordres d'élite, les chevaliers aigles et jaguars. Ils combattent surtout pour capturer des prisonniers et exigent un lourd tribut des cités soumises, d'où le ralliement de nombreux peuples à Cortés en 1519.",
+  },
+  incas: {
+    label: "Incas",
+    era: "1438 – 1533",
+    text: "L'empire inca, le Tawantinsuyu, s'étend vers 1530 du sud de la Colombie au centre du Chili, avec Cuzco pour capitale. Un réseau de routes de plus de 20 000 km, des relais et des entrepôts permet de le gouverner sans écriture, grâce aux cordelettes à nœuds (quipus). En 1532, une guerre civile entre deux frères l'a affaibli.",
+  },
+  "francais-ancien-regime": {
+    label: "Français d'Ancien Régime",
+    era: "XVIe – XVIIIe s.",
+    text: "L'armée royale de France mêle, de François Ier à Louis XIV, une cavalerie de gentilshommes, des fantassins levés dans le royaume et des mercenaires suisses ou allemands. Elle s'oppose à l'Espagne dans les guerres d'Italie, puis dans la guerre de Trente Ans (Rocroi, 1643). L'écharpe blanche distingue les troupes du roi.",
+  },
+  neerlandais: {
+    label: "Néerlandais (gueux et Provinces-Unies)",
+    era: "1566 – 1648",
+    text: "Les « gueux » sont les rebelles des Pays-Bas qui, à partir de 1566, se révoltent contre Philippe II. Menés par Guillaume d'Orange, puis par ses fils, ils fondent la république des Provinces-Unies (1581), reconnue par l'Espagne en 1648. Leur armée réformée par Maurice de Nassau et leur flotte marchande font de la Hollande une grande puissance.",
+  },
+  "anglais-elisabethains": {
+    label: "Anglais élisabéthains",
+    era: "1558 – 1603",
+    text: "L'Angleterre d'Élisabeth Ire (1558-1603) est une puissance protestante en plein essor maritime. Ses navires rapides, armés de canons à longue portée, et ses corsaires, comme Francis Drake et John Hawkins, harcèlent les galions espagnols. En 1588, ils repoussent l'Invincible Armada.",
+  },
+  "espagnols-xxe": {
+    label: "Espagnols du XXe siècle",
+    era: "1898 – 1975",
+    text: "L'armée espagnole du XXe siècle est faite de conscrits issus des campagnes, commandés par des officiers souvent politisés. Elle perd à Cuba, aux Philippines et à Anoual, s'illustre dans la guerre du Rif (Légion, Regulares) et se divise en 1936. Le régime de Franco (1939-1975) s'appuie sur elle.",
+  },
+  rifains: {
+    label: "Rifains",
+    era: "1921 – 1926",
+    text: "Les Rifains sont les Berbères du Rif, massif montagneux du nord du Maroc. Mobilisés en 1921 par Abd el-Krim, ils infligent à l'Espagne la défaite d'Anoual, fondent une éphémère République du Rif (1921-1926) et pratiquent une guérilla étudiée plus tard dans le monde entier. Ils sont vaincus en 1926 par l'Espagne et la France.",
+  },
+  americains: {
+    label: "Américains (XIXe-XXe siècles)",
+    era: "1898",
+    text: "Les États-Unis, en 1898, sont déjà la première puissance industrielle du monde. Leur marine neuve détruit en quelques heures les flottes espagnoles de Manille et de Santiago de Cuba. Le traité de Paris fait d'eux une puissance coloniale en Asie et dans les Caraïbes.",
+  },
+  independantistes: {
+    label: "Indépendantistes hispano-américains",
+    era: "1810 – 1825",
+    text: "Les armées indépendantistes sont composées de créoles, de métis, d'indigènes, d'esclaves affranchis et de volontaires britanniques. Elles combattent dans des conditions extrêmes, comme la traversée des Andes en 1817 par San Martín. Leur victoire à Ayacucho (1824) met fin à la domination espagnole en Amérique du Sud.",
+  },
 };
 
 export const ARCHETYPE_INFO: Record<Archetype, FigureInfo> = {
@@ -336,7 +386,8 @@ export const ARCHETYPE_INFO: Record<Archetype, FigureInfo> = {
     label: 'Impératrice',
     era: 'Han – Qing',
     text: "Épouse ou mère d'empereur, coiffée d'un diadème à pendeloques et vêtue de soie brodée. Certaines exercent la régence ou le pouvoir : l'impératrice Lü sous les Han, Wu Zetian, seule femme à avoir régné en son nom sur la Chine (690-705), ou Cixi à la fin des Qing. Elles s'appuient sur la cour, l'administration et leur famille.",
-  },  'general-mongol': {
+  },
+  'general-mongol': {
     label: 'Général mongol',
     era: '1206 – 1368',
     text: "Commandant d'un tumen (dix mille cavaliers), en armure lamellaire de cuir ou de fer, casque à pointe et plumet, bâton de commandement. Des chefs comme Subötai, Djebé ou Muqali mènent des campagnes coordonnées sur des milliers de kilomètres, selon des plans arrêtés au quriltai. Ils appliquent la feinte, l'encerclement et un renseignement très étendu.",
@@ -345,5 +396,30 @@ export const ARCHETYPE_INFO: Record<Archetype, FigureInfo> = {
     label: 'Khatoun',
     era: '1206 – 1368',
     text: "Reine ou princesse mongole, coiffée de la haute boqta, vêtue d'une robe brodée et d'un ample manteau. Les khatouns gèrent les campements, les troupeaux et parfois la régence : Töregene gouverne l'empire (1241-1246), Sorgaqtani Beki éduque ses fils, Möngke, Kubilai, Hülegü et Ariq Böke. Doquz Khatoun, chrétienne nestorienne, protège les églises de l'Ilkhanat.",
+  },
+  conquistador: {
+    label: "Conquistador",
+    era: "1492 – 1600",
+    text: "Capitaine ou conquérant au service de la couronne : Colomb, Cortés, Pizarro, Gonzalve de Cordoue, Don Juan d'Autriche. Ils sont souvent de petite noblesse (hidalgos) et partent chercher fortune, titres et gloire.",
+  },
+  "vice-roi": {
+    label: "Vice-roi",
+    era: "XVIe – XVIIIe s.",
+    text: "Représentant du roi dans un royaume lointain (Naples, Mexique, Pérou) ou ministre de la monarchie. Les vice-rois gouvernent au nom du roi avec des pouvoirs étendus mais surveillés par des tribunaux (audiencias).",
+  },
+  "roi-habsbourg": {
+    label: "Roi Habsbourg",
+    era: "1516 – 1700",
+    text: "Les Habsbourg règnent sur l'Espagne de 1516 à 1700 (Charles Ier, Philippe II, III, IV, Charles II). Le noir, couleur de la gravité castillane, est la marque de la cour. Les mariages entre cousins entraînent la dégénérescence de la dynastie.",
+  },
+  "souverain-precolombien": {
+    label: "Souverain précolombien",
+    era: "1428 – 1533",
+    text: "Les souverains aztèque (tlatoani) et inca (Sapa Inca) sont des chefs religieux et militaires, considérés comme des intermédiaires avec les dieux. Moctezuma II, Cuauhtémoc et Atahualpa sont pris par les Espagnols entre 1519 et 1533.",
+  },
+  "militaire-xxe": {
+    label: "Militaire du XXe siècle",
+    era: "1898 – 1975",
+    text: "Officiers, ministres et dirigeants de l'Espagne contemporaine. L'armée joue un rôle politique majeur, de la guerre de Cuba aux coups d'État de 1923 et de 1936.",
   },
 };

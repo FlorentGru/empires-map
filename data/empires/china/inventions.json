@@ -1,0 +1,249 @@
+[
+  {
+    "id": "fonte-du-fer",
+    "name": "Fonte du fer et haut fourneau",
+    "year": -500,
+    "approx": true,
+    "place": "Royaume de Wu (bas Yangzi)",
+    "at": [
+      118.8,
+      32.06
+    ],
+    "category": "technique",
+    "description": "Dès le Ve siècle av. J.-C., les forgerons chinois savent chauffer le minerai assez fort pour obtenir du fer liquide, qu'on coule dans des moules, alors que l'Europe n'y parvient qu'au Moyen Âge. Les fourneaux, souvent soufflés par des soufflets actionnés par l'eau, produisent charrues, outils et armes en grande série. La date est approximative et reflète les plus anciennes traces connues.",
+    "impact": "Le fer coulé bon marché équipe paysans et soldats en masse. Il explique en partie la puissance agricole et militaire de la Chine, avec près de seize siècles d'avance sur l'Europe.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Histoire_de_la_sidérurgie"
+      }
+    ]
+  },
+  {
+    "id": "papier",
+    "name": "Papier",
+    "year": 105,
+    "place": "Luoyang",
+    "at": [
+      112.45,
+      34.62
+    ],
+    "inventor": "Cai Lun",
+    "category": "ecriture",
+    "description": "En 105, l'eunuque Cai Lun présente à l'empereur Han He un papier fabriqué à partir d'écorce, de chiffons et de filets de pêche. Des fragments plus anciens existent déjà, mais Cai Lun perfectionne et standardise le procédé. Moins cher que la soie et plus léger que les lamelles de bambou, le papier se répand en Chine, puis en Asie, dans le monde arabe et en Europe.",
+    "impact": "Le papier rend l'écriture bon marché et accessible. Il permet l'essor de l'administration, des livres et, plus tard, de l'imprimerie dans le monde entier.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Papier"
+      },
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Cai_Lun"
+      }
+    ]
+  },
+  {
+    "id": "sismographe-zhang-heng",
+    "name": "Sismographe de Zhang Heng",
+    "year": 132,
+    "place": "Luoyang",
+    "at": [
+      112.45,
+      34.62
+    ],
+    "inventor": "Zhang Heng",
+    "category": "science",
+    "description": "En 132, l'astronome et savant Zhang Heng présente à la cour des Han un « instrument pour mesurer les vents et les mouvements de la Terre ». Une grande jarre de bronze porte huit dragons, chacun tenant une boule dans la gueule. Lors d'un séisme lointain, une boule tombe dans la bouche d'un crapaud, indiquant la direction. Son fonctionnement interne exact reste débattu.",
+    "impact": "C'est le premier instrument connu pour détecter un tremblement de terre à distance, mille huit cents ans avant les sismographes modernes occidentaux.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Zhang_Heng"
+      }
+    ]
+  },
+  {
+    "id": "porcelaine",
+    "name": "Porcelaine",
+    "year": 600,
+    "approx": true,
+    "place": "Chine du Nord et du Sud (Sui-Tang)",
+    "at": [
+      117.18,
+      29.27
+    ],
+    "category": "technique",
+    "description": "La porcelaine apparaît progressivement : on cuit de l'argile blanche riche en kaolin à plus de 1 200 degrés, ce qui donne une céramique dure, fine et translucide. Sa date d'origine varie selon les définitions, ici fixée sous les Sui et les Tang. Les fours de Jingdezhen, au Jiangxi, deviennent la capitale de la porcelaine et exportent vers l'Asie, le monde musulman et l'Europe.",
+    "impact": "Un produit de luxe devenu emblème de la Chine, longtemps impossible à imiter en Europe, ce qui a nourri tout un commerce mondial et la fameuse « Route de la soie » maritime.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Porcelaine"
+      },
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Jingdezhen"
+      }
+    ]
+  },
+  {
+    "id": "examens-imperiaux",
+    "name": "Examens impériaux",
+    "year": 605,
+    "place": "Luoyang",
+    "at": [
+      112.45,
+      34.62
+    ],
+    "category": "administration",
+    "description": "Sous la dynastie Sui, en 605, l'empereur Yang instaure un concours pour recruter des fonctionnaires selon leur savoir en lettres et en textes classiques, plutôt que selon leur naissance. Le système est développé sous les Tang et les Song puis dure jusqu'en 1905. Des milliers de candidats passent des épreuves écrites très sélectives, en cellules fermées, sous surveillance.",
+    "impact": "C'est le premier grand recrutement par concours de l'histoire. Il crée une élite administrative lettrée qui gouverne la Chine pendant treize siècles et inspire d'autres pays.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Examen_impérial"
+      }
+    ]
+  },
+  {
+    "id": "poudre-noire",
+    "name": "Poudre noire",
+    "year": 850,
+    "approx": true,
+    "place": "Chine du Nord (Tang)",
+    "at": [
+      108.94,
+      34.27
+    ],
+    "category": "militaire",
+    "description": "Des alchimistes taoïstes, cherchant un élixir d'immortalité, mélangent salpêtre, soufre et charbon vers le IXe siècle, sous les Tang, et découvrent un mélange explosif. Les Song l'utilisent dès le XIe siècle pour des flèches incendiaires, des grenades et des fusées, puis pour les premiers canons et lances à feu. Elle se diffuse ensuite vers l'ouest, par les Mongols et les marchands.",
+    "impact": "La poudre transformera la guerre mondiale : forteresses, armées et empires changent, et le Moyen Âge féodal vacille. Elle naît pourtant d'une quête d'immortalité.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Poudre_noire"
+      }
+    ]
+  },
+  {
+    "id": "imprimerie-xylographique",
+    "name": "Imprimerie xylographique",
+    "year": 868,
+    "place": "Dunhuang",
+    "at": [
+      94.66,
+      40.14
+    ],
+    "category": "ecriture",
+    "description": "L'impression sur planches de bois gravées existe en Chine depuis le VIIe ou VIIIe siècle. Le plus ancien livre imprimé daté au monde est le Sûtra du Diamant, retrouvé à Dunhuang, dont le colophon porte la date de 868. Le texte et l'image y sont gravés en relief sur une seule planche, puis encrés et pressés sur papier. Le procédé se répand sous les Tang et les Song.",
+    "impact": "Elle multiplie les textes à bas coût, favorise l'alphabétisation et la diffusion des savoirs, des siècles avant Gutenberg.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Xylographie"
+      },
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Sûtra_du_Diamant"
+      }
+    ]
+  },
+  {
+    "id": "ecluse-a-sas",
+    "name": "Écluse à sas",
+    "year": 984,
+    "place": "Huai'an (Jiangsu)",
+    "at": [
+      119.02,
+      33.6
+    ],
+    "inventor": "Qiao Weiyue",
+    "category": "technique",
+    "description": "En 984, l'inspecteur des transports Qiao Weiyue fait construire sur le Grand Canal, près de Huai'an, une écluse à deux portes formant un bassin. On y fait monter ou baisser l'eau pour qu'un bateau passe d'un niveau à l'autre sans danger. Elle remplace les plans inclinés où l'on halait les bateaux. L'Europe ne connaît le principe qu'au XIVe siècle.",
+    "impact": "Elle rend les canaux praticables sur les terrains en pente et sécurise le trafic du Grand Canal, artère vitale reliant le Nord et le Sud de la Chine.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Écluse"
+      },
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Grand_Canal_(Chine)"
+      }
+    ]
+  },
+  {
+    "id": "papier-monnaie",
+    "name": "Papier-monnaie (jiaozi)",
+    "year": 1024,
+    "place": "Chengdu (Sichuan)",
+    "at": [
+      104.07,
+      30.67
+    ],
+    "category": "monnaie",
+    "description": "À Chengdu, les marchands utilisaient des reçus de dépôt pour éviter de transporter des pièces de fer très lourdes. En 1024, l'État Song reprend l'idée et émet officiellement des billets, les jiaozi, garantis par des réserves. Au XIIIe siècle, Marco Polo s'étonne de voir circuler des billets en Chine. L'Europe n'adoptera ce système que plusieurs siècles plus tard.",
+    "impact": "C'est la première monnaie fiduciaire émise par un État. Elle libère le commerce du poids des pièces, mais expose aussi à l'inflation quand on imprime trop.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Billet_de_banque"
+      },
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Jiaozi"
+      }
+    ]
+  },
+  {
+    "id": "caracteres-mobiles",
+    "name": "Caractères mobiles d'imprimerie",
+    "year": 1040,
+    "approx": true,
+    "place": "Hangzhou",
+    "at": [
+      120.16,
+      30.27
+    ],
+    "inventor": "Bi Sheng",
+    "category": "ecriture",
+    "description": "Vers 1040, selon le savant Shen Kuo, un artisan nommé Bi Sheng grave des caractères dans de l'argile cuite, les assemble sur une plaque de fer enduite de résine, puis les réutilise. Le procédé reste peu répandu en Chine, où l'on compte des milliers de signes. La Corée développe plus tard des caractères en métal, bien avant Gutenberg.",
+    "impact": "Il pose le principe de l'imprimerie moderne : composer un texte avec des éléments réutilisables, quatre siècles avant Gutenberg.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Bi_Sheng"
+      },
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Caractère_mobile"
+      }
+    ]
+  },
+  {
+    "id": "boussole",
+    "name": "Boussole magnétique",
+    "year": 1086,
+    "approx": true,
+    "place": "Kaifeng",
+    "at": [
+      114.31,
+      34.8
+    ],
+    "inventor": "Shen Kuo",
+    "category": "navigation",
+    "description": "Les Chinois connaissent depuis les Han l'attraction de la magnétite, utilisée pour la divination. Vers 1086, le savant Shen Kuo décrit dans ses « Notes du ruisseau des rêves » une aiguille aimantée qui pointe vers le sud, et note la déclinaison magnétique. Au XIIe siècle, la boussole est utilisée en mer et gagne le monde arabe, puis l'Europe.",
+    "impact": "Elle permet de s'orienter par temps couvert ou en pleine mer, ouvrant la voie aux grandes navigations transocéaniques.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Boussole"
+      },
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Shen_Kuo"
+      }
+    ]
+  }
+]

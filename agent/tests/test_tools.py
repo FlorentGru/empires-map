@@ -51,7 +51,7 @@ def test_agent_se_construit():
     from atlas_agent.agent import root_agent
 
     assert root_agent.name == "guide_atlas"
-    assert len(root_agent.tools) == 8
+    assert len(root_agent.tools) == 9
 
 
 def test_chercher_personnage_trouve_cesar_et_ses_etapes():
@@ -82,3 +82,10 @@ def test_profil_empire_rome_sous_trajan():
     assert r["periode"]["population"]["total"]["value"] > 10_000_000
     assert "periodes" in tools.profil_empire("rome")
     assert "erreur" in tools.profil_empire("atlantide")
+
+
+def test_chercher_invention_papier_en_chine():
+    r = tools.chercher_invention("papier", "china")
+    assert r["inventions"], "le papier est une invention chinoise de l'Atlas"
+    assert all(i["empire"] == "china" for i in r["inventions"])
+    assert "erreur" in tools.chercher_invention("téléportation")

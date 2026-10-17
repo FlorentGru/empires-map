@@ -63,3 +63,6 @@
   .compare-pane__map { height: 38vh; }
   .compare-table tbody th { width: 30%; }
 }
+.compare-inventions { margin: 0; padding-left: 16px; }
+.compare-inventions li { margin: 2px 0; }
+.compare-inventions small { color: var(--ink-soft); }

@@ -1,0 +1,204 @@
+[
+  {
+    "id": "systeme-metrique",
+    "name": "Système métrique",
+    "year": 1799,
+    "place": "Paris",
+    "at": [
+      2.35,
+      48.86
+    ],
+    "inventor": "Delambre, Méchain et l'Académie des sciences",
+    "category": "science",
+    "description": "Né pendant la Révolution, le système métrique repose sur le mètre, défini comme la dix-millionième partie du quart du méridien terrestre. Le 22 juin 1799, les étalons en platine du mètre et du kilogramme sont déposés aux Archives. Napoléon rend le système obligatoire en 1801, puis l'assouplit en 1812 avec les « mesures usuelles ». La conquête de l'Europe contribue à sa diffusion.",
+    "impact": "Il remplace des milliers d'unités locales par un système décimal rationnel, facilitant commerce et science. Il est aujourd'hui utilisé par presque tous les pays.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Système_métrique"
+      }
+    ]
+  },
+  {
+    "id": "banque-de-france",
+    "name": "Banque de France",
+    "year": 1800,
+    "place": "Paris",
+    "at": [
+      2.34,
+      48.86
+    ],
+    "inventor": "Napoléon Bonaparte",
+    "category": "monnaie",
+    "description": "Fondée le 18 janvier 1800 par Bonaparte avec des banquiers privés, la Banque de France doit rétablir la confiance après les assignats de la Révolution. Elle escompte des effets de commerce et émet des billets. La loi de 1803 lui donne le privilège d'émission à Paris, et le franc germinal, créé la même année, fixe une monnaie stable adossée à l'or et à l'argent.",
+    "impact": "Elle stabilise les finances d'un État sorti de l'hyperinflation. Elle deviendra la banque centrale de la France, un modèle suivi par d'autres pays.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Banque_de_France"
+      }
+    ]
+  },
+  {
+    "id": "lycees",
+    "name": "Lycées",
+    "year": 1802,
+    "place": "Paris",
+    "at": [
+      2.34,
+      48.85
+    ],
+    "inventor": "Napoléon Bonaparte et Fourcroy",
+    "category": "administration",
+    "description": "La loi du 1er mai 1802 crée les lycées : des établissements d'État pour l'enseignement secondaire, dotés de professeurs recrutés par concours et d'une discipline quasi militaire. Elle s'appuie sur les écoles centrales de la Révolution, jugées trop libres. Les premiers lycées ouvrent en 1803. En 1808, l'Université impériale organise l'ensemble de l'enseignement, jusqu'au baccalauréat.",
+    "impact": "Il crée un enseignement secondaire public centralisé qui forme les cadres de l'État. Le baccalauréat et le lycée, hérités de cette époque, existent toujours.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Lycée_(France)"
+      }
+    ]
+  },
+  {
+    "id": "legion-d-honneur",
+    "name": "Légion d'honneur",
+    "year": 1802,
+    "place": "Paris",
+    "at": [
+      2.32,
+      48.86
+    ],
+    "inventor": "Napoléon Bonaparte",
+    "category": "administration",
+    "description": "Créée par la loi du 19 mai 1802, la Légion d'honneur récompense les services civils et militaires rendus à la nation, sans distinction de naissance, à la différence des ordres d'Ancien Régime. Napoléon en remet les premières décorations en 1804. L'ordre est organisé en grades : légionnaire, officier, commandeur, grand officier, grand-croix, et reste aujourd'hui la plus haute distinction française.",
+    "impact": "Elle remplace les privilèges de naissance par la reconnaissance du mérite. Elle sert aussi à fidéliser les élites au régime.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Ordre_national_de_la_Légion_d'honneur"
+      }
+    ]
+  },
+  {
+    "id": "code-civil",
+    "name": "Code civil des Français",
+    "year": 1804,
+    "place": "Paris",
+    "at": [
+      2.34,
+      48.86
+    ],
+    "inventor": "Portalis, Tronchet et Napoléon",
+    "category": "droit",
+    "description": "Promulgué le 21 mars 1804, le Code civil réunit en un seul texte clair les lois civiles de la France : égalité devant la loi, propriété privée, liberté contractuelle, laïcité de l'état civil, mariage civil. Il est rédigé par des juristes, dont Portalis, sous la direction de Napoléon. Il reste inégalitaire envers les femmes. Il s'étend avec les conquêtes et inspire des dizaines de pays.",
+    "impact": "Il unifie le droit d'un pays aux coutumes très diverses et met fin aux privilèges. Son modèle a influencé le droit de nombreux pays d'Europe et d'Amérique.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Code_civil_(France)"
+      }
+    ]
+  },
+  {
+    "id": "ambulances-volantes",
+    "name": "Ambulances volantes (Larrey)",
+    "year": 1805,
+    "approx": true,
+    "place": "Austerlitz",
+    "at": [
+      16.76,
+      49.13
+    ],
+    "inventor": "Dominique Larrey",
+    "category": "medecine",
+    "description": "Le chirurgien Dominique Larrey invente en 1792 des voitures légères et attelées, capables de suivre les troupes pour ramasser les blessés en plein combat, au lieu d'attendre la fin de la bataille. La Grande Armée les généralise sous Napoléon : on les voit à Austerlitz en 1805, puis à Eylau et à Wagram. Larrey instaure aussi le tri des blessés selon leur gravité.",
+    "impact": "Il fonde le principe de la médecine de guerre moderne : secourir et trier les blessés sur le champ de bataille, et sauver ainsi des milliers de vies.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Dominique_Jean_Larrey"
+      }
+    ]
+  },
+  {
+    "id": "cadastre",
+    "name": "Cadastre napoléonien",
+    "year": 1807,
+    "place": "Paris",
+    "at": [
+      2.34,
+      48.86
+    ],
+    "inventor": "Napoléon Bonaparte",
+    "category": "administration",
+    "description": "La loi du 15 septembre 1807 ordonne l'établissement d'un cadastre : un plan de chaque commune, parcelle par parcelle, avec le nom du propriétaire et la valeur de chaque terrain. Dressé par des géomètres, il sert à répartir l'impôt foncier de façon équitable. Il prend de nombreuses années à réaliser et reste, avec ses mises à jour, la base de la propriété foncière en France.",
+    "impact": "Il fixe la propriété de chaque parcelle et rend l'impôt foncier plus juste. Il constitue l'un des plus grands inventaires d'un territoire jamais réalisés à l'époque.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Cadastre_napoléonien"
+      }
+    ]
+  },
+  {
+    "id": "telegraphe-chappe",
+    "name": "Réseau du télégraphe Chappe",
+    "year": 1809,
+    "approx": true,
+    "place": "Paris",
+    "at": [
+      2.34,
+      48.86
+    ],
+    "inventor": "Claude Chappe",
+    "category": "technique",
+    "description": "Inventé en 1792 par Claude Chappe, le télégraphe optique transmet des signaux par des bras articulés placés sur des tours, lisibles à la lunette. Il n'est pas né sous Napoléon, mais celui-ci en fait un outil d'État : les lignes sont prolongées vers Milan, Amsterdam, Mayence et l'Italie. Un message parcourt ainsi plusieurs centaines de kilomètres en quelques minutes.",
+    "impact": "Il permet à l'empereur de commander à distance et lance l'ère des télécommunications, bien avant le télégraphe électrique.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Télégraphe_Chappe"
+      }
+    ]
+  },
+  {
+    "id": "conserve-appert",
+    "name": "Conserve alimentaire (Appert)",
+    "year": 1810,
+    "place": "Massy",
+    "at": [
+      2.27,
+      48.73
+    ],
+    "inventor": "Nicolas Appert",
+    "category": "technique",
+    "description": "Pour nourrir les armées, le Directoire puis Napoléon offrent un prix à qui saura conserver les aliments. En 1810, le confiseur Nicolas Appert le reçoit pour son procédé : placer les aliments dans des bocaux de verre hermétiques, puis les chauffer dans l'eau bouillante. Il agit sans connaître les microbes, que Pasteur n'expliquera que cinquante ans plus tard. La boîte de fer-blanc suivra en Angleterre.",
+    "impact": "Il ouvre l'ère de la conserve : l'alimentation échappe aux saisons, armées et marins sont mieux nourris, et l'industrie agroalimentaire naît.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Nicolas_Appert"
+      }
+    ]
+  },
+  {
+    "id": "sucre-de-betterave",
+    "name": "Sucre de betterave",
+    "year": 1812,
+    "place": "Passy (Paris)",
+    "at": [
+      2.28,
+      48.86
+    ],
+    "inventor": "Benjamin Delessert",
+    "category": "agriculture",
+    "description": "Le procédé d'extraction du sucre de betterave a été découvert en Prusse par Andreas Marggraf puis Franz Achard. Le Blocus continental coupe la France du sucre de canne : Napoléon encourage donc la culture de la betterave par un décret de 1811. En 1812, Benjamin Delessert obtient du sucre cristallisé dans sa raffinerie de Passy, et Napoléon lui décerne la Légion d'honneur.",
+    "impact": "La France se passe du sucre colonial. La betterave devient une grande culture du Nord de l'Europe, et le sucre, longtemps luxe, devient accessible à tous.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Sucre_de_betterave"
+      }
+    ]
+  }
+]

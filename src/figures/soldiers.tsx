@@ -356,6 +356,108 @@ const MONGOL_ADV_SOLDIER_SPECS = {
   },
 } satisfies Partial<Record<Faction, Spec>>;
 
+/* ---------- Espagne : Renaissance, Amériques, XXe siècle ---------- */
+
+/** Arquebuse à mèche (canon long, crosse) tenue en travers. */
+const arquebus = () =>
+  rect(24.6, 26, 2.6, 11, WOOD) + rect(25.5, 8, 1, 18.5, '#5e646a') + rect(24.9, 6.8, 2.4, 1.6, '#2b2219', 0, 'stroke="none"') +
+  circ(26, 6.4, 0.8, '#e07b1a', 'stroke="none"');
+/** Rapière à garde en coquille. */
+const rapier = () =>
+  rect(25.5, 5, 1.1, 19, '#d6dadc') + path('M26 2.6L26.9 5L25.1 5Z', '#d6dadc') + ell(26, 24.4, 3.2, 1.6, GOLD) + rect(25.4, 25.4, 1.3, 3.6, '#2b2219');
+/** Morion : calotte, crête, bords relevés. */
+const morion = (c: string, plume?: string) =>
+  path('M11.6 8.6Q11.8 4 16 3.6Q20.2 4 20.4 8.6L19.6 7.4L12.4 7.4Z', c) +
+  path('M10.2 7.2Q16 9 21.8 7.2Q21.6 6 20 6.4Q16 7.4 12 6.4Q10.4 6 10.2 7.2Z', c) +
+  path('M13 3.8Q16 -0.8 19 3.8Q16 2.6 13 3.8Z', c) + (plume ? path('M16 2.4Q19.6 -1.2 21.6 1Q19 1.4 17.2 3Z', plume) : '');
+const ruff = (c = WHITE) => path('M11.4 13.6Q16 16.4 20.6 13.6L20.2 15.4Q16 17.8 11.8 15.4Z', c);
+const goatee = (c: string) => path('M14.6 11.6Q16 15 17.4 11.6Q16 12.6 14.6 11.6Z', c, 'stroke="none"');
+
+export const ESP_SOLDIER_SPECS = {
+  tercios: {
+    tunic: '#8a2a20', legs: 'pants', legColor: '#7a5a34', boots: '#3a2a1a',
+    deco: path('M11 14.4Q16 12.8 21 14.4L21.6 23.6Q16 25.6 10.4 23.6Z', '#a9adb0') + stroke('M16 14.4V24.4', '#6e747a', 0.8) + stroke('M12 17.6H20', '#6e747a', 0.6) +
+      stroke('M10.6 14L21.4 14L22.6 26', '#c0282a', 1.4) + ruff(),
+    head: morion('#8e949a', RED) + goatee('#2d2018') + moustache('#2d2018'),
+    weapon: arquebus(),
+  },
+  azteques: {
+    skin: '#b97a50', tunic: '#e8dcc0', legs: 'bare', boots: '#a9783f',
+    deco: path('M10.6 14.4Q16 13 21.4 14.4L21.4 25L10.6 25Z', '#e8dcc0') + stroke('M11.5 17.5H20.5M11.5 20.5H20.5', '#c9473a', 0.9) + stroke('M16 14.6V25', '#2f7a52', 0.9) + rect(10.2, 24, 11.6, 1.6, '#c9473a', 0, 'stroke="none"'),
+    head:
+      path('M11.2 8.6Q10.8 2.8 16 2.4Q21.2 2.8 20.8 8.6L19.6 8.6L19.6 7L12.4 7L12.4 8.6Z', '#d9902a') +
+      circ(14, 5.6, 0.7, OUT, 'stroke="none"') + circ(18, 5.6, 0.7, OUT, 'stroke="none"') +
+      path('M12 3.6Q10 -1 13 0.4Q14 2 14 3.4ZM20 3.6Q22 -1 19 0.4Q18 2 18 3.4ZM14.6 2.6Q16 -2.6 17.4 2.6Z', '#2f9a6a'),
+    shield: circ(8.5, 23, 6.3, '#2f9a6a') + circ(8.5, 23, 4.2, 'none', `stroke="${GOLD}" stroke-width="1"`) + circ(8.5, 23, 1.8, '#c9473a') + stroke('M8.5 16.8V29.2M2.3 23H14.7', '#e8dcc0', 0.7),
+    weapon:
+      rect(25.4, 14, 1.8, 24, WOOD) + path('M24.6 15.4L28 15.4L28.4 6Q26.3 3.4 24.2 6Z', '#6b4a2e') +
+      path('M25 6.6L25 14.8M27.6 6.6L27.6 14.8', '#1f1a14', 'stroke="#1f1a14" stroke-width="1.1"'),
+  },
+  incas: {
+    skin: '#b97a50', tunic: '#c9473a', legs: 'bare', boots: '#a9783f',
+    deco:
+      path('M10.6 14.4Q16 13 21.4 14.4L21.4 25L10.6 25Z', '#c9473a') + rect(11.2, 17, 9.6, 5.4, '#efe6cc', 0, 'stroke="none"') +
+      path('M13 17L16 19.7L13 22.4ZM19 17L16 19.7L19 22.4Z', '#2f5f9b', 'stroke="none"') + rect(10.2, 24, 11.6, 1.6, '#e0b43a', 0, 'stroke="none"'),
+    head:
+      path('M11.6 8.6Q11.6 3.4 16 3.2Q20.4 3.4 20.4 8.6L19.6 8.6L19.6 6.8L12.4 6.8L12.4 8.6Z', '#a9783f') +
+      stroke('M12 5.4H20', '#c9473a', 1.2) + path('M15 3.4Q16 0 17 3.4Z', '#c9473a') + path('M16 3.2Q18.6 -1 20.4 0.8Q18.4 1.2 17 3.4Z', '#efe6cc'),
+    shield: rect(3.4, 14.6, 10.4, 16.6, '#7a2a20', 1.5) + rect(3.4, 14.6, 10.4, 8.3, '#e0b43a', 1.5, 'stroke="none"') + circ(8.6, 22.9, 1.9, '#efe6cc'),
+    weapon:
+      rect(25.6, 12, 1.4, 26, WOOD) + circ(26.3, 9.6, 3, '#9aa0a6') + stroke('M26.3 6.2V13M22.9 9.6H29.7M24 7.3L28.6 11.9M28.6 7.3L24 11.9', '#6e747a', 0.8),
+  },
+  'francais-ancien-regime': {
+    tunic: '#efe6cc', legs: 'pants', legColor: '#8a6a3a', boots: '#4a2f1a',
+    deco: path('M10.6 14.4Q16 13 21.4 14.4L21.4 24.4L10.6 24.4Z', '#c9a878') + path('M10.4 14L21.6 14L22.8 25.6', 'none', 'stroke="#f4efe0" stroke-width="2.4"') + stroke('M12 17H20M12 20H20', '#8a6a3a', 0.7) + ruff('#efe6cc'),
+    head:
+      path('M11.6 7.4Q16 6.6 20.4 7.4L19.4 4.6Q16 3.2 12.6 4.6Z', '#4a3a2a') + ell(16, 6.6, 8.6, 1.6, '#4a3a2a') +
+      path('M18 3.8Q22 -1 23 3.6Q20.6 2.8 19 5.2Z', WHITE) + moustache('#2d2018') + goatee('#2d2018'),
+    weapon: rapier() + path('M23.8 6.4L29 6.4L29 11.6L23.8 11.6Z', WHITE, 'stroke="none"') + path('M26.4 7.4L26.4 10.6M24.8 9H28', '#2f4fa8', 'stroke="#2f4fa8" stroke-width="0.8"'),
+  },
+  neerlandais: {
+    tunic: '#2b2219', legs: 'pants', legColor: '#4a3a2a', boots: '#2b2219',
+    deco: path('M10.6 14.4Q16 13 21.4 14.4L21.4 24.6L10.6 24.6Z', '#3a3028') + stroke('M16 14.6V24.6', '#8a7a5a', 0.8) + circ(16, 17, 0.5, GOLD, 'stroke="none"') + circ(16, 20, 0.5, GOLD, 'stroke="none"') +
+      stroke('M10.6 14.6L21.6 25.6', '#e07b1a', 1.8) + ruff(),
+    head:
+      ell(16, 6.4, 9.2, 1.7, '#1f1a14') + path('M12 6.6Q12 1.8 16 1.6Q20 1.8 20 6.6Z', '#1f1a14') + stroke('M12.2 5.2H19.8', '#e07b1a', 1) +
+      moustache('#8a5a2b') + goatee('#8a5a2b'),
+    weapon: arquebus(),
+  },
+  'anglais-elisabethains': {
+    tunic: '#7a5a34', legs: 'pants', legColor: '#efe6cc', legColor2: '#a8281e', boots: '#4a2f1a',
+    deco: path('M10.6 14.4Q16 13 21.4 14.4L21.4 24.4L10.6 24.4Z', '#b02a22') + stroke('M16 14.6V24.4', GOLD, 0.8) + stroke('M12 17.4H20M12 20.6H20', '#6b2018', 0.7) +
+      rect(10.2, 23.6, 11.6, 1.6, '#efe6cc', 0, 'stroke="none"') + ruff(),
+    head: path('M11.8 7Q12 3 16 2.8Q20 3 20.2 7L19.4 7Q16 5.8 12.6 7Z', '#a8281e') + stroke('M12 6.2Q16 5 20 6.2', WHITE, 1) + path('M19 3.6Q22 0.6 22.6 4Q20.8 3.2 19.6 5Z', WHITE) + goatee('#8a5a2b') + moustache('#8a5a2b'),
+    weapon: rapier(),
+    shield: path('M3.8 14H13.2V26H3.8Z', WHITE) + rect(7.6, 14, 1.8, 12, RED, 0, 'stroke="none"') + rect(3.8, 19, 9.4, 1.8, RED, 0, 'stroke="none"'),
+  },
+  'espagnols-xxe': {
+    skin: '#d2a070', tunic: '#7a7a4a', legs: 'pants', legColor: '#6a6a40', boots: '#4a2f1a',
+    deco: path('M10.6 14.4Q16 13 21.4 14.4L21.4 25L10.6 25Z', '#8a8a54') + stroke('M16 14.6V25', '#5a5a34', 0.8) + circ(14.4, 18, 0.5, GOLD, 'stroke="none"') + circ(14.4, 21, 0.5, GOLD, 'stroke="none"') +
+      stroke('M10.4 14.2L21.6 24.6', '#4a2f1a', 1.4) + rect(10.2, 23.8, 11.6, 1.6, '#4a2f1a', 0, 'stroke="none"'),
+    head: path('M11.8 6.8Q12 3 16 2.8Q20 3 20.2 6.8Q16 5.4 11.8 6.8Z', '#8a8a54') + path('M11.4 6.8Q16 8.6 20.6 6.8L20.6 5.8Q16 7 11.4 5.8Z', '#4a3a2a') + circ(16, 4.2, 0.8, '#c9473a', 'stroke="none"') + moustache('#2d2018'),
+    weapon: musket(),
+  },
+  rifains: {
+    skin: '#c98f64', tunic: '#8a6a44', legs: 'pants', legColor: '#6a5030', boots: '#a9783f', skirt: '#8a6a44',
+    deco: stroke('M11 16L21 25M21 16L11 25', '#4a2f1a', 1.4) + stroke('M12 17V24M20 17V24', '#a9783f', 0.8) + rect(10.2, 23.4, 11.6, 1.4, '#4a2f1a', 0, 'stroke="none"'),
+    back: path('M10.6 8Q10.2 3.6 16 3.4Q21.8 3.6 21.4 8L22 14.4L20 12L12 12L10 14.4Z', '#6a5030'),
+    head: path('M11.4 7.4Q11.4 2.8 16 2.6Q20.6 2.8 20.6 7.4Q16 5.4 11.4 7.4Z', WHITE) + stroke('M11.6 6.2Q16 4.4 20.4 6.2', '#d8d0b8', 1) + stubble('#2d2018'),
+    weapon: musket(),
+  },
+  americains: {
+    tunic: '#2f4f9b', legs: 'pants', legColor: '#d8cfae', boots: '#4a2f1a',
+    deco: rect(10.6, 14.4, 10.8, 10.4, '#2f4f9b', 1, 'stroke="none"') + path('M13 14.6L16 19L19 14.6', '#efe6cc', 'stroke="none"') + stroke('M11 15.2L16 24M21 15.2L16 24', '#efe6cc', 1) + rect(10.2, 24, 11.6, 1.6, '#4a2f1a', 0, 'stroke="none"'),
+    head: ell(16, 6.2, 8.6, 1.8, '#c9a878') + path('M12 6.2Q12 2.2 16 2Q20 2.2 20 6.2Z', '#c9a878') + stroke('M12.2 5Q16 4 19.8 5', '#6b4a2e', 1) + moustache('#8a5a2b'),
+    weapon: musket(),
+  },
+  independantistes: {
+    skin: '#c98f64', tunic: '#2f6f4a', legs: 'pants', legColor: '#d8cfae', boots: '#4a2f1a',
+    deco: path('M11 14.4Q16 12.8 21 14.4L21.4 24.4L10.6 24.4Z', '#2f6f4a') + path('M10.6 14.2L13.6 14.2L13.6 17L10.8 17Z', '#c0282a') + path('M18.4 14.2L21.4 14.2L21.2 17L18.4 17Z', '#c0282a') + belts() + ndeco('#efe6cc'),
+    head: shako('#1f1a14', GOLD, undefined, 5.4) + circ(16.4, 4, 1.1, '#e0b43a') + circ(16.4, 4, 0.5, '#c0282a', 'stroke="none"') + moustache('#2d2018'),
+    weapon: musket(),
+  },
+} satisfies Partial<Record<Faction, Spec>>;
+
 export const SOLDIER_SPECS = {
   romains: {
     tunic: '#b23a2b', legs: 'bare', boots: '#6b3a1e',
@@ -522,6 +624,7 @@ export const SOLDIER_SPECS = {
   ...NAPO_SOLDIER_SPECS,
   ...ASIA_SOLDIER_SPECS,
   ...MONGOL_ADV_SOLDIER_SPECS,
+  ...ESP_SOLDIER_SPECS,
 } satisfies Record<Faction, Spec>;
 
 /** Fabrique la chaîne SVG complète d'un soldat. */

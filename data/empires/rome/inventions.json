@@ -1,0 +1,205 @@
+[
+  {
+    "id": "aqueducs-romains",
+    "name": "Aqueducs romains",
+    "year": -312,
+    "place": "Rome",
+    "at": [
+      12.5,
+      41.88
+    ],
+    "inventor": "Appius Claudius Caecus",
+    "category": "technique",
+    "description": "Le premier aqueduc de Rome, l'Aqua Appia, est construit en 312 av. J.-C. par le censeur Appius Claudius Caecus. L'eau coule par simple gravité dans un canal presque entièrement souterrain, avec une pente régulière, puis sur des arcades. Ce modèle est ensuite copié dans tout l'Empire : à Rome, onze aqueducs finissent par alimenter fontaines, thermes et maisons.",
+    "impact": "Il apporte l'eau potable en abondance aux grandes villes, favorise l'hygiène et permet à des cités de plusieurs centaines de milliers d'habitants de subsister.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Aqueduc_romain"
+      }
+    ]
+  },
+  {
+    "id": "voies-romaines",
+    "name": "Voies romaines",
+    "year": -312,
+    "place": "Rome (via Appia)",
+    "at": [
+      12.51,
+      41.86
+    ],
+    "inventor": "Appius Claudius Caecus",
+    "category": "technique",
+    "description": "La via Appia, ouverte en 312 av. J.-C. entre Rome et Capoue, est la première grande route pavée de la République. Les Romains superposent plusieurs couches de pierres et de gravier, avec drainage et bornes milliaires. À son apogée, le réseau dépasse 80 000 kilomètres, relie l'Empire de l'Écosse à l'Euphrate et sert d'abord aux légions, puis au commerce et à la poste.",
+    "impact": "Un réseau routier durable et rapide unifie un empire immense : les armées, les marchandises, les lettres et les idées circulent bien plus vite.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Voie_romaine"
+      }
+    ]
+  },
+  {
+    "id": "beton-romain",
+    "name": "Béton romain (opus caementicium)",
+    "year": -200,
+    "approx": true,
+    "place": "Latium (Rome)",
+    "at": [
+      12.48,
+      41.89
+    ],
+    "category": "architecture",
+    "description": "Les ingénieurs romains mélangent chaux, cendres volcaniques (pouzzolane) et fragments de pierre pour obtenir un mortier qui durcit même sous l'eau. Cette recette, mise au point en Italie centrale au IIe siècle av. J.-C., permet de couler des voûtes, des ports et des fondations sans tailleurs de pierre. Plusieurs ouvrages antiques, comme le Panthéon, tiennent encore debout aujourd'hui.",
+    "impact": "Il permet des constructions gigantesques, rapides et peu coûteuses : voûtes, dômes, ports en pleine mer. Sans lui, pas d'architecture monumentale romaine.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Opus_caementicium"
+      }
+    ]
+  },
+  {
+    "id": "hypocauste",
+    "name": "Chauffage par hypocauste",
+    "year": -80,
+    "approx": true,
+    "place": "Baïes (Campanie)",
+    "at": [
+      14.07,
+      40.82
+    ],
+    "inventor": "Caius Sergius Orata",
+    "category": "technique",
+    "description": "L'hypocauste est un chauffage par le sol : un foyer envoie de l'air chaud sous un plancher surélevé sur de petits piliers, puis dans des conduits creusés dans les murs. La tradition l'attribue à Caius Sergius Orata, vers 80 av. J.-C., pour des viviers et des bains. Il équipe ensuite thermes, villas et camps militaires, jusqu'en Bretagne et en Germanie.",
+    "impact": "Il invente le chauffage central : les Romains peuvent vivre confortablement dans des régions froides, et les thermes deviennent de grands lieux de vie sociale.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Hypocauste"
+      }
+    ]
+  },
+  {
+    "id": "verre-souffle",
+    "name": "Verre soufflé, diffusé dans l'Empire",
+    "year": -50,
+    "approx": true,
+    "place": "Sidon (Phénicie)",
+    "at": [
+      35.37,
+      33.56
+    ],
+    "category": "technique",
+    "description": "Le soufflage du verre apparaît vers le milieu du Ier siècle av. J.-C. chez des artisans de Syrie-Palestine, au moment où la région passe sous domination romaine. Plutôt que de modeler le verre sur un noyau, on souffle une bulle au bout d'une canne. Rome ne l'invente donc pas, mais le diffuse partout : fioles, coupes et vitres se fabriquent en grande série.",
+    "impact": "Le verre devient un objet courant et bon marché. Bouteilles, gobelets et premières vitres transforment la table, le stockage et l'éclairage des maisons.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Verre_soufflé"
+      }
+    ]
+  },
+  {
+    "id": "calendrier-julien",
+    "name": "Calendrier julien",
+    "year": -45,
+    "place": "Rome",
+    "at": [
+      12.48,
+      41.89
+    ],
+    "inventor": "Jules César et Sosigène d'Alexandrie",
+    "category": "science",
+    "description": "Pour mettre fin au désordre du calendrier romain, que les prêtres ajustaient à leur guise, Jules César fait adopter en 45 av. J.-C. une année solaire de 365 jours et un quart, avec un jour supplémentaire tous les quatre ans. L'astronome alexandrin Sosigène en dessine le principe. Il reste en usage en Europe jusqu'à la réforme grégorienne de 1582.",
+    "impact": "Il donne à l'Europe un calendrier solaire stable pendant seize siècles, dont la structure en douze mois et l'année bissextile sont encore les nôtres.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Calendrier_julien"
+      }
+    ]
+  },
+  {
+    "id": "codex",
+    "name": "Codex (livre à pages reliées)",
+    "year": 100,
+    "approx": true,
+    "place": "Rome",
+    "at": [
+      12.48,
+      41.9
+    ],
+    "category": "ecriture",
+    "description": "Vers la fin du Ier siècle, des cahiers de tablettes de bois, puis de parchemin, remplacent peu à peu les rouleaux : c'est le codex, ancêtre direct du livre. Le poète Martial en vante la maniabilité dès les années 80-90. Les chrétiens l'adoptent massivement, et au IVe siècle il l'emporte sur le rouleau. On peut y feuilleter, annoter et retrouver un passage.",
+    "impact": "Le livre à pages permet de consulter, copier et transporter les textes bien plus facilement que le rouleau. Il reste le format du livre jusqu'à nos jours.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Codex"
+      }
+    ]
+  },
+  {
+    "id": "dome-du-pantheon",
+    "name": "Dôme du Panthéon",
+    "year": 126,
+    "approx": true,
+    "place": "Rome",
+    "at": [
+      12.4769,
+      41.8986
+    ],
+    "inventor": "Hadrien",
+    "category": "architecture",
+    "description": "Reconstruit sous l'empereur Hadrien vers 126, le Panthéon est couronné d'un dôme de 43 mètres de diamètre, coulé en béton dont la densité diminue vers le sommet pour alléger l'ensemble. Une ouverture circulaire, l'oculus, laisse entrer la lumière. Il demeure le plus grand dôme en béton non armé jamais construit, et il a inspiré Brunelleschi.",
+    "impact": "Il prouve qu'on peut couvrir un immense espace sans colonnes. Sa voûte a servi de modèle à l'architecture occidentale, de la Renaissance aux églises modernes.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Panthéon_(Rome)"
+      }
+    ]
+  },
+  {
+    "id": "corpus-juris-civilis",
+    "name": "Corpus juris civilis de Justinien",
+    "year": 534,
+    "place": "Constantinople",
+    "at": [
+      28.98,
+      41.01
+    ],
+    "inventor": "Justinien et Tribonien",
+    "category": "droit",
+    "description": "Entre 529 et 534, l'empereur Justinien charge le juriste Tribonien de rassembler mille ans de lois et d'avis de juristes romains. Le Code, le Digeste, les Institutes, puis les Novelles, forment le Corpus juris civilis. Redécouvert en Italie au XIe siècle, il est enseigné à Bologne et devient la base du droit de l'Europe continentale.",
+    "impact": "Cette compilation sauve le droit romain de l'oubli. Elle inspire la plupart des codes civils européens, dont le Code Napoléon, et reste un socle du droit moderne.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Corpus_juris_civilis"
+      }
+    ]
+  },
+  {
+    "id": "feu-gregeois",
+    "name": "Feu grégeois",
+    "year": 672,
+    "approx": true,
+    "place": "Constantinople",
+    "at": [
+      28.98,
+      41.01
+    ],
+    "inventor": "Callinicos d'Héliopolis",
+    "category": "militaire",
+    "description": "Vers 672, selon la tradition, l'architecte Callinicos, réfugié de Syrie, apporte à Constantinople un liquide incendiaire projeté par des siphons depuis les navires byzantins. La recette exacte reste inconnue, et le feu brûlait même sur l'eau. Il aide à repousser les flottes arabes devant la capitale, notamment en 678, et reste un secret d'État pendant des siècles.",
+    "impact": "Cette arme secrète sauve plusieurs fois Constantinople des sièges arabes. C'est l'un des premiers lance-flammes de l'histoire, et son secret fut si bien gardé qu'il est aujourd'hui perdu.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Feu_grégeois"
+      }
+    ]
+  }
+]

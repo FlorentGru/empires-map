@@ -9,7 +9,7 @@ Ce dossier n'est lu par aucun code : un empire n'y devient pas « disponible ».
 | Mongols (1206-1368) | `data/empires/mongols/` + factions dans `src/types.ts` | histoire (35 étapes), villes | figurines (`src/figures/`), `scripts/empires/mongols.ts`, données `public/`, README. **La CI échoue tant que ce n'est pas fait** (typecheck + test:data). |
 | Carolingiens (751-888) | `data/drafts/carolingiens/` | histoire (21 étapes), carto préparée | tout le reste |
 | Saint-Empire (962-1806) | `data/drafts/saint-empire/` | histoire (32 étapes), carto préparée | tout le reste |
-| Espagne (1492-1976) | `data/drafts/espagne/` | histoire (33 étapes), carto préparée | tout le reste ; fond de carte à élargir (≈ [-130,-56,165,62]) |
+| Espagne (1492-1976) | `data/empires/espagne/` | **fait** (octobre 2026) : disponible ; `carto.json` reste ici comme référence (copie dans `overrides/espagne/_carto.json`) | — |
 | Britannique, Russie | — | rien | volontairement non lancés |
 
 ## Contenu d'un brouillon

@@ -1,6 +1,7 @@
 import { useMemo, useState, type ReactNode } from 'react';
 import { EMPIRES, getEmpire } from '../data/loadEmpire';
 import { PROFILES } from '../data/loadProfiles';
+import { INVENTIONS } from '../data/loadInventions';
 import { lastStepAtOrBefore } from '../lib/contemporaries';
 import { apogeeStepId, formatArea } from '../lib/apogee';
 import { apogeePeriod, battleCount, density, factor, formatEstimate, formatNumber, maxAreaIn, mobilisation } from '../lib/compare';
@@ -19,6 +20,21 @@ interface Props {
 
 const dur = (e: Empire) => `${formatNumber(e.end - e.start)} ans`;
 const short = (e: Empire) => e.name.split(',')[0]!;
+
+/** Inventions d'un empire, en liste datée. */
+function InventionList({ id }: { id: string }) {
+  const list = INVENTIONS[id] ?? [];
+  if (!list.length) return <span className="compare-na">—</span>;
+  return (
+    <ul className="compare-inventions">
+      {list.map((i) => (
+        <li key={i.id} title={i.impact}>
+          <strong>{i.name}</strong> <small>({i.approx ? 'vers ' : ''}{formatYear(i.year)})</small>
+        </li>
+      ))}
+    </ul>
+  );
+}
 
 /** Une carte et sa frise compacte (curseur d'étapes). */
 function Pane({ empire, index, onIndex, onEmpire, other }: { empire: Empire; index: number; onIndex: (i: number) => void; onEmpire: (id: string) => void; other: string }) {
@@ -244,6 +260,13 @@ export function CompareView({ a, b, onChange, onExit }: Props) {
           <TextRow label="Inventions" a={list(PA?.culture.inventions)} b={list(PB?.culture.inventions)} />
           <TextRow label="Œuvres" a={list(PA?.culture.works)} b={list(PB?.culture.works)} />
           <TextRow label="Savants et penseurs" a={list(PA?.culture.scholars)} b={list(PB?.culture.scholars)} />
+        </Section>
+        <Section title="Inventions révolutionnaires">
+          <TextRow
+            label={`${(INVENTIONS[A.id] ?? []).length} / ${(INVENTIONS[B.id] ?? []).length} inventions`}
+            a={<InventionList id={A.id} />}
+            b={<InventionList id={B.id} />}
+          />
         </Section>
         <Section title="Infrastructures">
           <NumRow label="Routes (km)" a={PA?.infrastructure.roads?.value} b={PB?.infrastructure.roads?.value} ea={PA?.infrastructure.roads} eb={PB?.infrastructure.roads} fmt={formatNumber} />

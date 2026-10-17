@@ -20,6 +20,7 @@
     "start": "vite --open",
     "build:data:china": "tsx scripts/build-territories.ts --empire china && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire china && tsx scripts/build-neighbors.ts --empire china && tsx scripts/build-stats.ts --empire china && tsx scripts/build-contemporaries.ts",
     "build:data:mongols": "tsx scripts/build-territories.ts --empire mongols && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire mongols && tsx scripts/build-neighbors.ts --empire mongols && tsx scripts/build-stats.ts --empire mongols && tsx scripts/build-contemporaries.ts",
+    "build:data:espagne": "tsx scripts/build-territories.ts --empire espagne && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire espagne && tsx scripts/build-neighbors.ts --empire espagne && tsx scripts/build-stats.ts --empire espagne && tsx scripts/build-contemporaries.ts",
     "test": "vitest run tests/unit",
     "test:data": "vitest run tests/data",
     "test:e2e": "playwright test",

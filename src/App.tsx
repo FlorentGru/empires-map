@@ -4,6 +4,7 @@ import { WorldMap } from './map/WorldMap';
 import { AboutModal } from './panels/AboutModal';
 import { FeedbackDialog } from './feedback/FeedbackDialog';
 import { OPEN_PERSON_EVENT, type OpenPersonDetail } from './data/loadPeople';
+import { inventionsBetween } from './data/loadInventions';
 import { EmpirePicker } from './panels/EmpirePicker';
 import { Legend } from './panels/Legend';
 import { ViewControls } from './panels/ViewControls';
@@ -170,6 +171,11 @@ function Atlas({ empire, onSelectEmpire, onOpenWorld, onOpenCompare, onOpenGalle
     battleStepMs(empire.steps[i]) ?? BASE_STEP_MS,
   );
   const step = empire.steps[player.index];
+  // Inventions apparues depuis l'étape précédente (panneau de l'étape).
+  const stepInventions = useMemo(
+    () => (step ? inventionsBetween(empire.id, empire.steps[player.index - 1]?.year ?? -Infinity, step.year) : []),
+    [empire, step, player.index],
+  );
   const [panelOpen, setPanelOpen] = useState(true);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [feedbackOpen, setFeedbackOpen] = useState(false);
@@ -183,6 +189,7 @@ function Atlas({ empire, onSelectEmpire, onOpenWorld, onOpenCompare, onOpenGalle
   const [monuments, setMonuments] = useState(() => readBool('atlas.monuments', true));
   const [routes, setRoutes] = useState(() => readBool('atlas.routes', true));
   const [disasters, setDisasters] = useState(() => readBool('atlas.disasters', true));
+  const [inventions, setInventions] = useState(() => readBool('atlas.inventions', true));
   const openPanel = useCallback(() => setPanelOpen(true), []);
   const story = useStory(player, step, openPanel, empire);
   const storyEnabled = story.controls.enabled;
@@ -209,6 +216,7 @@ function Atlas({ empire, onSelectEmpire, onOpenWorld, onOpenCompare, onOpenGalle
   const toggleMonuments = useCallback(() => setMonuments((v) => { writeBool('atlas.monuments', !v); return !v; }), []);
   const toggleRoutes = useCallback(() => setRoutes((v) => { writeBool('atlas.routes', !v); return !v; }), []);
   const toggleDisasters = useCallback(() => setDisasters((v) => { writeBool('atlas.disasters', !v); return !v; }), []);
+  const toggleInventions = useCallback(() => setInventions((v) => { writeBool('atlas.inventions', !v); return !v; }), []);
 
   useEffect(() => {
     writeUrlState(empire.id, step?.id);
@@ -221,12 +229,12 @@ function Atlas({ empire, onSelectEmpire, onOpenWorld, onOpenCompare, onOpenGalle
   return (
     <div className="app">
       <h1 className="visually-hidden">Atlas des Empires — {empire.name}</h1>
-      <WorldMap empire={empire} index={player.index} panelOpen={panelOpen} tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} stateNames={stateNames} neighbors={neighbors} contemporaries={contemporaries} monuments={monuments} routes={routes} disasters={disasters} speed={player.speed} />
+      <WorldMap empire={empire} index={player.index} panelOpen={panelOpen} tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} stateNames={stateNames} neighbors={neighbors} contemporaries={contemporaries} monuments={monuments} routes={routes} disasters={disasters} inventions={inventions} speed={player.speed} />
 
       <div className="top-bar">
         <EmpirePicker empires={EMPIRES} current={empire} onSelect={onSelectEmpire} onOpenWorld={() => onOpenWorld(step?.year ?? DEFAULT_WORLD_YEAR)} />
         <div className="top-bar__right">
-          <ViewControls tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} stateNames={stateNames} neighbors={neighbors} contemporaries={contemporaries} monuments={monuments} routes={routes} disasters={disasters} onToggleTilt={toggleTilt} onToggleRelief={toggleRelief} onToggleFigures={toggleFigures} onToggleCountries2026={toggleCountries2026} onToggleStateNames={toggleStateNames} onToggleNeighbors={toggleNeighbors} onToggleContemporaries={toggleContemporaries} onToggleMonuments={toggleMonuments} onToggleRoutes={toggleRoutes} onToggleDisasters={toggleDisasters} />
+          <ViewControls tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} stateNames={stateNames} neighbors={neighbors} contemporaries={contemporaries} monuments={monuments} routes={routes} disasters={disasters} inventions={inventions} onToggleTilt={toggleTilt} onToggleRelief={toggleRelief} onToggleFigures={toggleFigures} onToggleCountries2026={toggleCountries2026} onToggleStateNames={toggleStateNames} onToggleNeighbors={toggleNeighbors} onToggleContemporaries={toggleContemporaries} onToggleMonuments={toggleMonuments} onToggleRoutes={toggleRoutes} onToggleDisasters={toggleDisasters} onToggleInventions={toggleInventions} />
           <button type="button" className="btn btn--ghost" onClick={onOpenGallery} aria-haspopup="dialog">
             Galerie
           </button>
@@ -248,8 +256,9 @@ function Atlas({ empire, onSelectEmpire, onOpenWorld, onOpenCompare, onOpenGalle
         open={panelOpen}
         onToggle={togglePanel}
         story={panelStory}
+        inventions={stepInventions}
       />
-      <Legend empire={empire} step={step} countries2026={countries2026} neighbors={neighbors} contemporaries={contemporaries} monuments={monuments} routes={routes} disasters={disasters} />
+      <Legend empire={empire} step={step} countries2026={countries2026} neighbors={neighbors} contemporaries={contemporaries} monuments={monuments} routes={routes} disasters={disasters} inventions={inventions} />
       <Timeline empire={empire} player={player} compare2026={countries2026} story={story.controls} />
       <AboutModal open={aboutOpen} onClose={() => setAboutOpen(false)} />
       <FeedbackDialog open={feedbackOpen} onClose={() => setFeedbackOpen(false)} empire={empire.id} step={step?.id} />

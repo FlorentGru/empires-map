@@ -4,7 +4,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Navarre"
+        "region": "Navarre"
       },
       "geometry": {
         "type": "Polygon",
@@ -53,7 +53,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Roussillon et Cerdagne"
+        "region": "Roussillon et Cerdagne"
       },
       "geometry": {
         "type": "Polygon",
@@ -94,7 +94,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Artois"
+        "region": "Artois"
       },
       "geometry": {
         "type": "Polygon",
@@ -131,7 +131,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Flandre et Hainaut français"
+        "region": "Flandre et Hainaut français"
       },
       "geometry": {
         "type": "Polygon",
@@ -184,7 +184,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Pays-Bas du Nord"
+        "region": "Pays-Bas du Nord"
       },
       "geometry": {
         "type": "Polygon",
@@ -217,7 +217,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Ceuta"
+        "region": "Ceuta"
       },
       "geometry": {
         "type": "Polygon",
@@ -250,7 +250,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Melilla"
+        "region": "Melilla"
       },
       "geometry": {
         "type": "Polygon",
@@ -283,7 +283,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Oran"
+        "region": "Oran"
       },
       "geometry": {
         "type": "Polygon",
@@ -316,7 +316,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Minorque"
+        "region": "Minorque"
       },
       "geometry": {
         "type": "Polygon",
@@ -349,7 +349,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Mexique central"
+        "region": "Mexique central"
       },
       "geometry": {
         "type": "Polygon",
@@ -402,7 +402,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Floride"
+        "region": "Floride"
       },
       "geometry": {
         "type": "Polygon",
@@ -475,7 +475,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Protectorat espagnol du nord"
+        "region": "Protectorat espagnol du nord"
       },
       "geometry": {
         "type": "Polygon",
@@ -532,7 +532,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Tanger international"
+        "region": "Tanger international"
       },
       "geometry": {
         "type": "Polygon",
@@ -565,7 +565,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Tarfaya"
+        "region": "Tarfaya"
       },
       "geometry": {
         "type": "Polygon",
@@ -602,7 +602,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Ifni"
+        "region": "Ifni"
       },
       "geometry": {
         "type": "Polygon",
@@ -635,7 +635,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Luanda et Benguela"
+        "region": "Luanda et Benguela"
       },
       "geometry": {
         "type": "Polygon",
@@ -668,7 +668,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Mozambique côtier"
+        "region": "Mozambique côtier"
       },
       "geometry": {
         "type": "Polygon",
@@ -729,7 +729,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Goa"
+        "region": "Goa"
       },
       "geometry": {
         "type": "Polygon",
@@ -762,7 +762,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Saguia el-Hamra"
+        "region": "Saguia el-Hamra"
       },
       "geometry": {
         "type": "Polygon",
@@ -795,7 +795,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Río de la Plata"
+        "region": "Río de la Plata"
       },
       "geometry": {
         "type": "Polygon",

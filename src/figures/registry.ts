@@ -48,6 +48,16 @@ export const FACTION_COLORS = {
   rus: '#7a2a5a',
   'chevaliers-europeens': '#2a4f9a',
   mamelouks: '#c9921a',
+  tercios: '#b8860b',
+  azteques: '#1f8a6a',
+  incas: '#c4501f',
+  'francais-ancien-regime': '#3a6fc4',
+  neerlandais: '#e8731a',
+  'anglais-elisabethains': '#9a1f2e',
+  'espagnols-xxe': '#8a8a2f',
+  rifains: '#6a4a2a',
+  americains: '#1f3f7a',
+  independantistes: '#2a8f5a',
 } satisfies Record<Faction, string>;
 
 /** Composant React (démo) du soldat d'une faction. */

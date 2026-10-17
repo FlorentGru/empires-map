@@ -1,0 +1,345 @@
+[
+  {
+    "id": "isabelle-la-catholique",
+    "name": "Isabelle la Catholique",
+    "archetype": "roi",
+    "faction": "tercios",
+    "born": 1451,
+    "died": 1504,
+    "title": "Reine de Castille, souveraine de la Reconquista",
+    "bio": "Fille cadette du roi de Castille, Isabelle accède au trône en 1474 après une guerre de succession contre sa nièce Jeanne. Son mariage secret avec Ferdinand d'Aragon en 1469 prépare l'union des deux grandes couronnes d'Espagne, même si chacune garde ses lois et ses institutions. Elle restaure l'autorité royale face à la haute noblesse, réorganise la justice et crée la Sainte Hermandad, une police rurale. En 1478, elle obtient du pape l'Inquisition espagnole, qui vise d'abord les convertis soupçonnés de judaïser. Elle mène la dernière phase de la Reconquista : Grenade tombe le 2 janvier 1492. La même année, elle décrète l'expulsion des Juifs qui refusent le baptême et accepte de financer le voyage de Christophe Colomb. Elle soutient aussi le cardinal Cisneros et la réforme du clergé. Sa fille Jeanne la Folle héritera de la Castille et transmettra l'Espagne aux Habsbourg. Elle meurt en 1504 à Medina del Campo. Sa figure reste débattue : bâtisseuse d'un État moderne pour les uns, souveraine intolérante pour les autres.",
+    "keyFacts": [
+      "1469 : mariage avec Ferdinand d'Aragon",
+      "1474 : devient reine de Castille",
+      "1478 : fondation de l'Inquisition espagnole",
+      "1492 : prise de Grenade, expulsion des Juifs et voyage de Colomb",
+      "1504 : mort à Medina del Campo"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Isabelle_Ire_de_Castille"
+      }
+    ]
+  },
+  {
+    "id": "ferdinand-d-aragon",
+    "name": "Ferdinand II d'Aragon",
+    "archetype": "roi",
+    "faction": "tercios",
+    "born": 1452,
+    "died": 1516,
+    "title": "Roi d'Aragon, artisan de l'union des couronnes",
+    "bio": "Ferdinand devient roi d'Aragon en 1479, après avoir épousé Isabelle de Castille dix ans plus tôt. Le couple gouverne ensemble sans fusionner les royaumes : les Cortes, les monnaies et les lois restent distinctes. Habile diplomate, Ferdinand voit surtout vers la Méditerranée. Il récupère le Roussillon et la Cerdagne auprès de la France en 1493, s'oppose aux ambitions des rois de France en Italie et soutient le Gran Capitán, qui conquiert Naples en 1504. Pour isoler Paris, il marie ses filles dans toute l'Europe : Jeanne avec un Habsbourg, Catherine avec l'héritier d'Angleterre. Après la mort d'Isabelle, il continue de gouverner l'Aragon et administre aussi la Castille, puis conquiert la Navarre en 1512. Machiavel voyait en lui un modèle de prince rusé. Il meurt en 1516 et laisse l'ensemble de ses États à son petit-fils, le futur Charles Quint, qui deviendra le premier roi commun de toute l'Espagne.",
+    "keyFacts": [
+      "1469 : mariage avec Isabelle de Castille",
+      "1479 : roi d'Aragon",
+      "1504 : conquête du royaume de Naples par le Gran Capitán",
+      "1512 : annexion de la Navarre",
+      "1516 : mort, héritage transmis à Charles"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Ferdinand_II_d%27Aragon"
+      }
+    ]
+  },
+  {
+    "id": "christophe-colomb",
+    "name": "Christophe Colomb",
+    "archetype": "conquistador",
+    "faction": "tercios",
+    "born": 1451,
+    "died": 1506,
+    "title": "Navigateur génois qui ouvre la route de l'Amérique",
+    "bio": "Né à Gênes, Christophe Colomb devient marin et s'installe au Portugal. Il imagine atteindre l'Asie en naviguant vers l'ouest, mais sous-estime beaucoup la taille de la Terre. Refusé par Jean II de Portugal, il convainc finalement Isabelle de Castille après la chute de Grenade. Le 3 août 1492, il quitte Palos avec trois navires, la Santa María, la Pinta et la Niña. Le 12 octobre, il aborde dans les Bahamas, persuadé d'être près du Japon. Trois autres voyages l'emmènent aux Antilles, puis sur les côtes de l'Amérique centrale et du Venezuela. Gouverneur de Saint-Domingue, il se montre mauvais administrateur et dur envers les Indiens comme envers les colons ; il est même ramené en Espagne enchaîné en 1500. Il meurt à Valladolid en 1506, sans avoir compris qu'il avait rencontré un continent nouveau. Son voyage a pourtant relié durablement l'Europe et l'Amérique, avec des conséquences immenses, heureuses pour certains, tragiques pour les peuples indigènes.",
+    "keyFacts": [
+      "1492 : premier voyage, arrivée aux Bahamas le 12 octobre",
+      "1493 : deuxième voyage, fondation de La Isabela",
+      "1498 : troisième voyage, côtes du Venezuela",
+      "1500 : rappelé en Espagne enchaîné",
+      "1506 : mort à Valladolid"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Christophe_Colomb"
+      }
+    ]
+  },
+  {
+    "id": "hernan-cortes",
+    "name": "Hernán Cortés",
+    "archetype": "conquistador",
+    "faction": "tercios",
+    "born": 1485,
+    "died": 1547,
+    "title": "Conquérant de l'empire aztèque",
+    "bio": "Né en Estrémadure, Hernán Cortés gagne les Antilles en 1504 et participe à la conquête de Cuba. En 1519, le gouverneur Velázquez lui confie une expédition vers le Mexique, puis cherche à la lui retirer ; Cortés passe outre. Il fonde Veracruz, fait détruire ses navires, selon la tradition, pour empêcher tout retour, et marche vers l'intérieur. Grâce à l'interprète Malintzin, il noue des alliances avec les Tlaxcaltèques et d'autres peuples hostiles à la domination aztèque. Reçu à Tenochtitlan par Moctezuma, il le prend en otage. Chassé de la ville lors de la Noche Triste en 1520, il revient avec ses alliés, assiège la cité et la prend en août 1521. La variole, qui dévaste la population, joue un rôle capital. Il devient gouverneur de la Nouvelle-Espagne, puis perd peu à peu la faveur de Charles Quint. Il rentre en Espagne et meurt près de Séville en 1547. Il reste un personnage contrasté, entre audace militaire et brutalité de la conquête.",
+    "keyFacts": [
+      "1519 : débarque au Mexique et fonde Veracruz",
+      "1520 : Noche Triste, retraite de Tenochtitlan",
+      "1521 : prise de Tenochtitlan",
+      "1522 : nommé gouverneur de la Nouvelle-Espagne",
+      "1547 : mort près de Séville"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Hern%C3%A1n_Cort%C3%A9s"
+      }
+    ]
+  },
+  {
+    "id": "moctezuma-ii",
+    "name": "Moctezuma II",
+    "archetype": "souverain-precolombien",
+    "faction": "azteques",
+    "born": 1466,
+    "died": 1520,
+    "title": "Empereur aztèque lors de l'arrivée des Espagnols",
+    "bio": "Moctezuma II devient tlatoani de Mexico-Tenochtitlan en 1502. Ancien prêtre et chef militaire, il renforce le pouvoir impérial : il réserve les hautes charges à la noblesse de naissance, intensifie le tribut exigé des peuples soumis et multiplie les campagnes. Cette pression nourrit pourtant des rancunes, que Cortés saura exploiter. En 1519, il apprend l'arrivée d'étrangers barbus venus de la mer. Hésitant, il envoie des présents en espérant les voir repartir ; ces richesses ne font qu'attiser leur convoitise. Les Espagnols entrent dans Tenochtitlan en novembre 1519 et le placent en résidence surveillée. Il meurt en juin 1520, dans des circonstances controversées : les sources espagnoles évoquent une pierre lancée par ses sujets révoltés, d'autres récits un assassinat par les Espagnols. Sa mémoire est ambiguë : roi faible aux yeux de certains, souverain pris au piège d'un affrontement sans précédent pour d'autres. Son successeur Cuitláhuac mène la résistance, puis Cuauhtémoc jusqu'à la chute de 1521.",
+    "keyFacts": [
+      "1502 : devient tlatoani de Tenochtitlan",
+      "1519 : accueille Cortés dans sa capitale",
+      "1519 : placé en résidence surveillée par les Espagnols",
+      "1520 : mort lors du soulèvement de Mexico"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Moctezuma_II"
+      }
+    ]
+  },
+  {
+    "id": "francisco-pizarro",
+    "name": "Francisco Pizarro",
+    "archetype": "conquistador",
+    "faction": "tercios",
+    "born": 1475,
+    "died": 1541,
+    "title": "Conquérant de l'empire inca",
+    "bio": "Fils illégitime d'un capitaine, Francisco Pizarro quitte l'Estrémadure pour les Indes. Il suit Balboa à Panamá en 1513 et s'y installe. Informé de l'existence d'un riche empire au sud, il organise trois expéditions, financées avec Diego de Almagro. En 1528, il obtient de Charles Quint, en Espagne, le titre de gouverneur des terres à conquérir. En 1532, il débarque dans le nord du Pérou avec environ 170 hommes. L'empire inca sort alors d'une guerre civile entre Huáscar et Atahualpa, ce qui l'affaiblit. À Cajamarca, le 16 novembre 1532, Pizarro tend une embuscade, capture Atahualpa et fait massacrer son escorte. Malgré une énorme rançon, il fait exécuter l'Inca en 1533. Il entre à Cuzco, puis fonde Lima en 1535. Mais la rivalité avec Almagro mène à une guerre civile entre conquistadors. Almagro est exécuté en 1538, et Pizarro est assassiné à Lima par ses partisans le 26 juin 1541.",
+    "keyFacts": [
+      "1513 : accompagne Balboa jusqu'au Pacifique",
+      "1532 : capture Atahualpa à Cajamarca",
+      "1533 : exécution d'Atahualpa, entrée à Cuzco",
+      "1535 : fondation de Lima",
+      "1541 : assassiné à Lima"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Francisco_Pizarro"
+      }
+    ]
+  },
+  {
+    "id": "atahualpa",
+    "name": "Atahualpa",
+    "archetype": "souverain-precolombien",
+    "faction": "incas",
+    "born": 1502,
+    "died": 1533,
+    "title": "Dernier empereur inca indépendant",
+    "bio": "Fils de l'Inca Huayna Capac, Atahualpa gouverne le nord de l'empire depuis Quito. À la mort de son père, vers 1527, probablement de maladie, l'empire est partagé avec son demi-frère Huáscar. Une guerre civile éclate et dure plusieurs années ; Atahualpa l'emporte en 1532, grâce à ses généraux aguerris. Il est près de Cajamarca lorsque Pizarro arrive avec une petite troupe. Le 16 novembre 1532, il accepte de rencontrer les Espagnols sur la place, escorté par des milliers d'hommes presque sans armes. Les cavaliers, l'artillerie et les arquebuses provoquent un massacre, et l'Inca est capturé. Pour sa libération, il promet de remplir d'or une grande salle et deux fois d'argent. Les Espagnols prennent le trésor, mais le jugent malgré tout dangereux. Accusé de complot, il est condamné et exécuté par strangulation le 26 juillet 1533. Sa mort ouvre la voie à la conquête de Cuzco et à la fin de l'empire inca.",
+    "keyFacts": [
+      "Vers 1527 : mort de Huayna Capac, partage de l'empire",
+      "1532 : victoire sur Huáscar à l'issue de la guerre civile",
+      "1532 : capturé à Cajamarca",
+      "1533 : exécuté après le paiement de la rançon"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Atahualpa"
+      }
+    ]
+  },
+  {
+    "id": "charles-quint",
+    "name": "Charles Quint",
+    "archetype": "roi-habsbourg",
+    "faction": "tercios",
+    "born": 1500,
+    "died": 1558,
+    "title": "Empereur du Saint-Empire et roi d'Espagne",
+    "bio": "Né à Gand, Charles hérite de ses grands-parents un empire de quatre dynasties : les Pays-Bas bourguignons, l'Espagne et ses possessions italiennes, l'Autriche et, avec son élection de 1519, le Saint-Empire. Il devient roi d'Espagne en 1516 sous le nom de Charles Ier, puis empereur sous celui de Charles Quint. Son règne est dominé par la rivalité avec François Ier de France, qu'il bat et fait prisonnier à Pavie en 1525. Ses troupes saccagent Rome en 1527. Il doit aussi affronter la Réforme luthérienne en Allemagne et la menace ottomane en Méditerranée et en Autriche. Pendant ce temps, les conquistadors lui offrent le Mexique et le Pérou, dont l'argent finance ses guerres. Épuisé et endetté, il abdique en 1555-1556 : l'Espagne, les Pays-Bas et l'Italie passent à son fils Philippe II, le Saint-Empire à son frère Ferdinand. Il se retire au monastère de Yuste, où il meurt en 1558.",
+    "keyFacts": [
+      "1516 : devient roi d'Espagne",
+      "1519 : élu empereur du Saint-Empire",
+      "1525 : victoire de Pavie contre François Ier",
+      "1555-1556 : abdication au profit de Philippe II et de Ferdinand",
+      "1558 : mort au monastère de Yuste"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Charles_Quint"
+      }
+    ]
+  },
+  {
+    "id": "philippe-ii",
+    "name": "Philippe II",
+    "archetype": "roi-habsbourg",
+    "faction": "tercios",
+    "born": 1527,
+    "died": 1598,
+    "title": "Roi d'Espagne et du Portugal, souverain de l'empire le plus vaste de son temps",
+    "bio": "Fils de Charles Quint, Philippe II reçoit de son père la plus grande partie de ses États en 1555-1556. Roi très travailleur, il gouverne depuis ses bureaux, à Madrid devenue capitale en 1561, et fait bâtir le monastère de l'Escurial. Il bat la France à Saint-Quentin en 1557, puis signe la paix du Cateau-Cambrésis. Défenseur du catholicisme, il combat les Turcs, qui sont battus à Lépante en 1571, et la révolte des Pays-Bas, qui s'enlise pendant des décennies. En 1580, il fait valoir ses droits à la succession portugaise et réunit les deux empires coloniaux, ibérique et espagnol. Son échec le plus célèbre est celui de l'Invincible Armada, repoussée par l'Angleterre en 1588. Le métal d'Amérique ne suffit plus à payer ses guerres : l'État fait banqueroute à plusieurs reprises. Il meurt en 1598 à l'Escurial. Sa réputation de roi sombre, la « légende noire », a été forgée en partie par ses adversaires protestants.",
+    "keyFacts": [
+      "1556 : succède à Charles Quint",
+      "1557 : victoire de Saint-Quentin",
+      "1571 : victoire de Lépante",
+      "1580 : devient roi du Portugal",
+      "1588 : échec de l'Invincible Armada"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Philippe_II_(roi_d%27Espagne)"
+      }
+    ]
+  },
+  {
+    "id": "bartolome-de-las-casas",
+    "name": "Bartolomé de Las Casas",
+    "archetype": "diplomate",
+    "faction": "tercios",
+    "born": 1484,
+    "died": 1566,
+    "title": "Dominicain, défenseur des Indiens",
+    "bio": "Né à Séville, Bartolomé de Las Casas passe aux Antilles en 1502. D'abord colon propriétaire d'une encomienda, il est ensuite ordonné prêtre. Frappé par la violence de la conquête de Cuba, il renonce à ses Indiens en 1514 et se consacre à les défendre. Il entre chez les dominicains et plaide pendant des décennies devant la cour de Charles Quint. Son action contribue aux Lois nouvelles de 1542, qui limitent l'encomienda. Évêque du Chiapas, il se heurte à l'hostilité des colons. En 1550-1551, il affronte le théologien Juan Ginés de Sepúlveda à Valladolid, lors d'un débat sur la légitimité de la conquête et la nature des Indiens. Son livre Très brève relation de la destruction des Indes, publié en 1552, est traduit dans toute l'Europe et nourrit la « légende noire » contre l'Espagne. Il commit lui-même une erreur qu'il regretta, en proposant au début d'importer des esclaves africains. Il meurt à Madrid en 1566.",
+    "keyFacts": [
+      "1514 : renonce à son encomienda",
+      "1542 : influence sur les Lois nouvelles",
+      "1544 : nommé évêque du Chiapas",
+      "1550-1551 : controverse de Valladolid",
+      "1552 : publication de la Brève relation"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Bartolom%C3%A9_de_Las_Casas"
+      }
+    ]
+  },
+  {
+    "id": "miguel-de-cervantes",
+    "name": "Miguel de Cervantes",
+    "archetype": "conquistador",
+    "faction": "tercios",
+    "born": 1547,
+    "died": 1616,
+    "title": "Soldat de Lépante et auteur de Don Quichotte",
+    "bio": "Né à Alcalá de Henares dans une famille modeste, Miguel de Cervantes s'engage dans les armées espagnoles en Italie. En 1571, il combat à Lépante sur la galère Marquesa et reçoit trois blessures, dont une à la main gauche qui lui vaut le surnom de « manchot de Lépante ». En 1575, il est capturé par des corsaires et retenu captif cinq ans à Alger. Plusieurs tentatives d'évasion échouent, avant le paiement de sa rançon en 1580. De retour en Espagne, il vit de petits emplois, notamment comme commissaire aux vivres de l'Armada, et connaît la prison pour dettes. Il se fait connaître par un roman pastoral puis, en 1605, publie la première partie de Don Quichotte de la Manche, un immense succès. La seconde partie paraît en 1615. L'histoire de ce chevalier fou et de son écuyer Sancho Pança est considérée comme le premier roman moderne. Cervantes meurt à Madrid le 22 avril 1616, la même année que Shakespeare, sans avoir connu la fortune.",
+    "keyFacts": [
+      "1571 : blessé à la bataille de Lépante",
+      "1575-1580 : captif à Alger",
+      "1605 : première partie de Don Quichotte",
+      "1615 : seconde partie de Don Quichotte",
+      "1616 : mort à Madrid"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Miguel_de_Cervantes"
+      }
+    ]
+  },
+  {
+    "id": "gonzalve-de-cordoue",
+    "name": "Gonzalve de Cordoue",
+    "archetype": "conquistador",
+    "faction": "tercios",
+    "born": 1453,
+    "died": 1515,
+    "title": "Le Gran Capitán, créateur de l'infanterie espagnole moderne",
+    "bio": "Gonzalo Fernández de Córdoba sert d'abord Isabelle la Catholique contre les derniers Maures. Lors de la guerre de Grenade, il se distingue par son courage et sa diplomatie. En 1495, les Rois Catholiques l'envoient en Italie défendre le royaume de Naples contre Charles VIII de France. Il y réforme l'armée : il associe des piquiers, des arquebusiers et des soldats équipés d'épées, une combinaison qui annonce les futurs tercios. Il bat les Français à Cerignola en avril 1503, où l'artillerie et les arquebuses jouent un rôle décisif, puis sur le Garigliano en décembre. Naples passe alors à la couronne d'Aragon. Nommé vice-roi, il est pourtant soupçonné par Ferdinand le Catholique, qui le rappelle en 1507. Le roi lui reproche, dit-on, des dépenses excessives, au point que l'anecdote des « comptes du Gran Capitán » est restée célèbre. Il se retire en Andalousie et meurt à Grenade en 1515, auréolé d'une gloire qui inspire des générations d'officiers.",
+    "keyFacts": [
+      "1495 : envoyé à Naples contre les Français",
+      "1503 : victoires de Cerignola et du Garigliano",
+      "1504 : devient vice-roi de Naples",
+      "1507 : rappelé en Espagne par Ferdinand",
+      "1515 : mort à Grenade"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Gonzalve_de_Cordoue"
+      }
+    ]
+  },
+  {
+    "id": "simon-bolivar",
+    "name": "Simón Bolívar",
+    "archetype": "general",
+    "faction": "independantistes",
+    "born": 1783,
+    "died": 1830,
+    "title": "Le Libertador des Amériques",
+    "bio": "Né à Caracas dans une riche famille créole, Simón Bolívar voyage en Europe où il découvre les idées des Lumières. De retour, il rejoint le mouvement pour l'indépendance du Venezuela, déclaré en 1811 mais vite écrasé par les royalistes. Exilé, il organise de nouvelles campagnes. En 1819, il traverse les Andes avec son armée et bat les Espagnols à Boyacá, libérant la Nouvelle-Grenade. Il fonde la Grande Colombie, qui réunit le Venezuela, la Colombie et l'Équateur. Avec son lieutenant Sucre, il bat les royalistes à Carabobo en 1821, puis à Ayacucho en 1824, qui scelle la fin de la domination espagnole en Amérique du Sud. La Bolivie, créée en 1825, prend son nom. Il rêve d'une union des nouveaux États, mais ses idées de président à vie et les rivalités régionales provoquent la dislocation de la Grande Colombie. Il démissionne en 1830 et meurt de tuberculose à Santa Marta le 17 décembre, sans avoir vu son rêve réalisé.",
+    "keyFacts": [
+      "1811 : participe à la proclamation d'indépendance du Venezuela",
+      "1819 : victoire de Boyacá",
+      "1821 : victoire de Carabobo",
+      "1824 : Ayacucho, fin de la domination espagnole au Pérou",
+      "1830 : mort à Santa Marta"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Sim%C3%B3n_Bol%C3%ADvar"
+      }
+    ]
+  },
+  {
+    "id": "charles-iii",
+    "name": "Charles III d'Espagne",
+    "archetype": "roi-moderne",
+    "faction": "espagnols",
+    "born": 1716,
+    "died": 1788,
+    "title": "Roi réformateur de l'Espagne des Lumières",
+    "bio": "Fils de Philippe V, Charles est d'abord duc de Parme, puis roi de Naples et de Sicile, où il mène des réformes. En 1759, il hérite du trône d'Espagne. Entouré de ministres éclairés comme Floridablanca, il modernise le royaume : développement des travaux publics, liberté de commerce du grain, création de manufactures royales, embellissement de Madrid. Il expulse les jésuites d'Espagne en 1767, contrôle l'Inquisition et réduit le poids de l'Église dans l'État. Aux colonies, il réorganise l'empire par les intendants et crée le vice-royaume du Río de la Plata en 1776. Il s'allie à la France par le « Pacte de famille » et s'engage aux côtés des insurgés américains contre l'Angleterre, ce qui permet de reprendre la Floride en 1783. L'empire espagnol d'Amérique connaît alors sa plus grande étendue. Les réformes se heurtent toutefois à des résistances, comme l'émeute d'Esquilache en 1766. Il meurt à Madrid en 1788. L'Espagne lui doit aussi plusieurs monuments, dont le musée du Prado, commencé sous son règne.",
+    "keyFacts": [
+      "1759 : roi d'Espagne",
+      "1766 : émeute d'Esquilache",
+      "1767 : expulsion des jésuites",
+      "1776 : création du vice-royaume du Río de la Plata",
+      "1783 : traité de Paris, Floride reprise"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Charles_III_(roi_d%27Espagne)"
+      }
+    ]
+  },
+  {
+    "id": "francisco-franco",
+    "name": "Francisco Franco",
+    "archetype": "militaire-xxe",
+    "faction": "espagnols-xxe",
+    "born": 1892,
+    "died": 1975,
+    "title": "Dictateur de l'Espagne de 1939 à 1975",
+    "bio": "Officier de carrière, Francisco Franco se forge une réputation dans les guerres du Maroc, où il commande la Légion espagnole. Devenu à 33 ans le plus jeune général d'Europe, il est écarté par la République en 1936 et envoyé aux Canaries. En juillet, il participe au coup d'État militaire et prend la tête de l'armée d'Afrique, transportée en Espagne avec l'aide de l'Allemagne et de l'Italie. La guerre civile dure trois ans ; Franco devient le chef des nationalistes et, en 1939, le vainqueur. Il instaure un régime autoritaire fondé sur l'armée, l'Église catholique et un parti unique, avec une répression sévère des opposants. Resté neutre durant la Seconde Guerre mondiale, l'Espagne est isolée jusqu'aux accords avec les États-Unis en 1953. À partir de 1959, le plan de stabilisation ouvre l'économie et provoque un essor. Il prépare sa succession en désignant Juan Carlos de Bourbon. Il meurt le 20 novembre 1975, ouvrant la voie à la transition démocratique.",
+    "keyFacts": [
+      "1936 : prend la tête de l'armée d'Afrique",
+      "1939 : victoire dans la guerre civile",
+      "1953 : accords avec les États-Unis",
+      "1969 : désigne Juan Carlos comme successeur",
+      "1975 : mort à Madrid"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Francisco_Franco"
+      }
+    ]
+  }
+]

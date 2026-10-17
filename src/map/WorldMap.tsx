@@ -21,6 +21,7 @@ import { ContemporaryLayers } from './contemporaryLayers';
 import { MonumentLayers } from './monumentLayers';
 import { RouteLayers } from './routeLayers';
 import { DisasterLayers } from './disasterLayers';
+import { InventionLayers } from './inventionLayers';
 import { originName } from '../lib/origin';
 import { dropCoveredLabels } from '../lib/contemporaries';
 import { TerritoryLabels } from './territoryLabels';
@@ -52,6 +53,8 @@ interface Props {
   routes?: boolean;
   /** Épidémies, catastrophes et guerres meurtrières en cours. */
   disasters?: boolean;
+  /** Inventions révolutionnaires de l'empire déjà apparues. */
+  inventions?: boolean;
   /** Carte d'un panneau de comparaison : marges réduites, sans panneaux par-dessus. */
   compact?: boolean;
 }
@@ -62,6 +65,7 @@ interface MapLayers {
   monuments: MonumentLayers;
   routes: RouteLayers;
   disasters: DisasterLayers;
+  inventions: InventionLayers;
   territories: TerritoryLayers;
   labels: TerritoryLabels;
   morph: MorphLayer;
@@ -117,7 +121,7 @@ function cameraGate(map: MapLibreMap, stepStart: number, speed: number, chained:
   });
 }
 
-export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, figures: figuresOn = true, countries2026 = false, stateNames = true, neighbors: neighborsOn = true, contemporaries: contemporariesOn = true, monuments: monumentsOn = true, routes: routesOn = true, disasters: disastersOn = true, compact = false }: Props) {
+export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, figures: figuresOn = true, countries2026 = false, stateNames = true, neighbors: neighborsOn = true, contemporaries: contemporariesOn = true, monuments: monumentsOn = true, routes: routesOn = true, disasters: disastersOn = true, inventions: inventionsOn = true, compact = false }: Props) {
   // Les cartes compactes ne cohabitent pas avec la vue normale : un compteur global suffit.
   useEffect(() => {
     if (!compact) return;
@@ -161,6 +165,8 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
   routesRef.current = routesOn;
   const disastersRef = useRef(disastersOn);
   disastersRef.current = disastersOn;
+  const inventionsRef = useRef(inventionsOn);
+  inventionsRef.current = inventionsOn;
 
   // Création de la carte (une seule fois).
   useEffect(() => {
@@ -192,6 +198,7 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
         contemporaries: new ContemporaryLayers(map),
         routes: new RouteLayers(map),
         disasters: new DisasterLayers(map),
+        inventions: new InventionLayers(map),
         monuments: new MonumentLayers(map),
         territories: new TerritoryLayers(map),
         morph: new MorphLayer(map),
@@ -220,6 +227,7 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
       created.monuments.setEnabled(monumentsRef.current);
       created.routes.setEnabled(routesRef.current);
       created.disasters.setEnabled(disastersRef.current);
+      created.inventions.setEnabled(inventionsRef.current);
       created.countries.setVisible(countriesRef.current);
       if (import.meta.env.DEV) (window as unknown as { __glide: GlideLayer }).__glide = created.glide;
       setLayers(created);
@@ -242,6 +250,7 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
       created?.monuments.destroy();
       created?.routes.destroy();
       created?.disasters.destroy();
+      created?.inventions.destroy();
       map.remove();
       mapRef.current = null;
     };
@@ -532,10 +541,16 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
     layers?.disasters.setEnabled(disastersOn);
   }, [layers, disastersOn]);
   useEffect(() => {
+    layers?.inventions.setEnabled(inventionsOn);
+  }, [layers, inventionsOn]);
+  useEffect(() => {
     if (!layers || !step) return;
     layers.monuments.setYear(step.year);
     layers.routes.setYear(step.year);
     layers.disasters.setYear(step.year);
+    // « Nouvelles » inventions : apparues depuis l'étape précédente de la frise.
+    layers.inventions.setStep(empire.id, step.year, empire.steps[index - 1]?.year ?? step.year);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [layers, step]);
 
   // Calque « Pays 2026 ».

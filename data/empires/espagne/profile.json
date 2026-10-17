@@ -1,0 +1,839 @@
+{
+  "empire": "espagne",
+  "periods": [
+    {
+      "id": "conquista",
+      "name": "Conquista et Charles Quint",
+      "start": 1492,
+      "end": 1556,
+      "population": {
+        "total": {
+          "value": 20000000,
+          "low": 15000000,
+          "high": 28000000,
+          "year": 1550,
+          "note": "Estimation reconstruite : Espagne (~7 millions), Italie du Sud et Pays-Bas, Amériques espagnoles en plein effondrement démographique.",
+          "source": {
+            "label": "Wikipédia : Empire colonial espagnol",
+            "url": "https://fr.wikipedia.org/wiki/Empire_colonial_espagnol"
+          }
+        },
+        "cities": [
+          {
+            "name": "Naples",
+            "population": {
+              "value": 200000,
+              "low": 150000,
+              "high": 250000,
+              "year": 1550,
+              "source": {
+                "label": "Wikipédia : Naples",
+                "url": "https://fr.wikipedia.org/wiki/Naples"
+              }
+            }
+          },
+          {
+            "name": "Séville",
+            "population": {
+              "value": 100000,
+              "low": 70000,
+              "high": 130000,
+              "year": 1550,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Séville",
+                "url": "https://fr.wikipedia.org/wiki/S%C3%A9ville"
+              }
+            }
+          },
+          {
+            "name": "Mexico (Tenochtitlan)",
+            "population": {
+              "value": 200000,
+              "low": 150000,
+              "high": 250000,
+              "year": 1519,
+              "note": "Capitale aztèque à l'arrivée de Cortés.",
+              "source": {
+                "label": "Wikipédia : Mexico",
+                "url": "https://fr.wikipedia.org/wiki/Mexico"
+              }
+            }
+          },
+          {
+            "name": "Anvers",
+            "population": {
+              "value": 100000,
+              "low": 80000,
+              "high": 120000,
+              "year": 1560,
+              "source": {
+                "label": "Wikipédia : Anvers",
+                "url": "https://fr.wikipedia.org/wiki/Anvers"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Laine de la Mesta",
+          "Or des Antilles puis argent du Mexique et du Pérou",
+          "Soie de Grenade",
+          "Sucre des Antilles"
+        ],
+        "currency": "Ducat et excelente d'or en Castille ; premières pièces d'argent américaines à partir de 1535.",
+        "taxation": "Impôts castillans (alcabala, servicios votés par les Cortes), le quint royal (un cinquième) sur les métaux d'Amérique, subsides de l'Église.",
+        "trade": "Séville obtient le monopole du commerce avec les Indes (Casa de Contratación, 1503) ; la laine castillane s'exporte vers Anvers."
+      },
+      "army": {
+        "size": {
+          "value": 60000,
+          "low": 40000,
+          "high": 100000,
+          "year": 1552,
+          "note": "Estimation reconstruite, tous fronts confondus ; les expéditions américaines ne comptent que quelques centaines d'hommes.",
+          "source": {
+            "label": "Wikipédia : Charles Quint",
+            "url": "https://fr.wikipedia.org/wiki/Charles_Quint"
+          }
+        },
+        "composition": "Piquiers, arquebusiers et cavalerie lourde ; mercenaires allemands (lansquenets) et italiens ; galères en Méditerranée.",
+        "recruitment": "Volontaires et mercenaires payés par l'argent des Indes, noblesse armée ; les compagnies d'ordonnance du Gran Capitán.",
+        "famousUnits": [
+          "Compagnies d'ordonnance",
+          "Premiers tercios (1534)",
+          "Expéditions de Cortés et de Pizarro"
+        ],
+        "innovations": [
+          "Combinaison piques-arquebuses en carrés",
+          "Usage tactique de l'artillerie de campagne",
+          "Colonne d'infanterie sur le champ de bataille"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie composite : Castille, Aragon, puis possessions habsbourgeoises, sans fusion des royaumes.",
+        "head": "Isabelle et Ferdinand, puis Charles Ier (Charles Quint) à partir de 1516.",
+        "succession": "Héréditaire ; Jeanne la Folle transmet les couronnes à son fils Charles.",
+        "institutions": "Conseils royaux (Castille, Aragon, Indes, Italie), Cortes affaiblies, Inquisition espagnole depuis 1478.",
+        "administration": "Corregidores dans les villes, vice-rois à Naples et en Nouvelle-Espagne (1535), audiences en Amérique.",
+        "law": "Droits propres à chaque royaume ; Lois de Burgos (1512) et Lois nouvelles (1542) pour les Indiens."
+      },
+      "society": {
+        "religions": [
+          "Catholicisme imposé à tous",
+          "Juifs expulsés ou convertis (1492)",
+          "Morisques baptisés de force",
+          "Religions indigènes réprimées"
+        ],
+        "languages": [
+          "Castillan",
+          "Catalan",
+          "Basque et galicien",
+          "Nahuatl et quechua en Amérique"
+        ],
+        "structure": "Noblesse et clergé privilégiés, paysans, marchands de Séville ; en Amérique, hiérarchie raciale et système de l'encomienda.",
+        "women": "Isabelle règne en son nom propre, mais les femmes ordinaires restent soumises au père ou au mari ; les couvents offrent un refuge."
+      },
+      "culture": {
+        "inventions": [
+          "Caravelle perfectionnée",
+          "Cartographie des Indes",
+          "Imprimerie à Séville et à Mexico (1539)"
+        ],
+        "works": [
+          "Grammaire castillane de Nebrija (1492)",
+          "Université d'Alcalá de Henares",
+          "Palais de Charles Quint à Grenade"
+        ],
+        "scholars": [
+          "Antonio de Nebrija",
+          "Francisco de Vitoria",
+          "Bartolomé de Las Casas"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Ports de Séville et de Cadix, chemins muletiers ; en Amérique, les conquérants s'appuient sur les routes incas et aztèques existantes."
+      },
+      "legacy": "Les Rois Catholiques et Charles Quint créent un empire où l'Amérique devient espagnole, avec la langue, la religion et les villes qui subsistent aujourd'hui."
+    },
+    {
+      "id": "siecle-or",
+      "name": "Le Siècle d'or",
+      "start": 1556,
+      "end": 1700,
+      "population": {
+        "total": {
+          "value": 35000000,
+          "low": 25000000,
+          "high": 45000000,
+          "year": 1600,
+          "note": "Estimation reconstruite ; inclut le Portugal et ses colonies de 1580 à 1640, mais l'effondrement des populations indigènes d'Amérique pèse sur le total.",
+          "source": {
+            "label": "Wikipédia : Empire colonial espagnol",
+            "url": "https://fr.wikipedia.org/wiki/Empire_colonial_espagnol"
+          }
+        },
+        "cities": [
+          {
+            "name": "Naples",
+            "population": {
+              "value": 250000,
+              "low": 200000,
+              "high": 300000,
+              "year": 1600,
+              "source": {
+                "label": "Wikipédia : Naples",
+                "url": "https://fr.wikipedia.org/wiki/Naples"
+              }
+            }
+          },
+          {
+            "name": "Séville",
+            "population": {
+              "value": 130000,
+              "low": 100000,
+              "high": 150000,
+              "year": 1600,
+              "source": {
+                "label": "Wikipédia : Séville",
+                "url": "https://fr.wikipedia.org/wiki/S%C3%A9ville"
+              }
+            }
+          },
+          {
+            "name": "Madrid",
+            "population": {
+              "value": 90000,
+              "low": 70000,
+              "high": 100000,
+              "year": 1600,
+              "source": {
+                "label": "Wikipédia : Madrid",
+                "url": "https://fr.wikipedia.org/wiki/Madrid"
+              }
+            }
+          },
+          {
+            "name": "Potosí",
+            "population": {
+              "value": 160000,
+              "low": 100000,
+              "high": 200000,
+              "year": 1650,
+              "note": "Mine d'argent du Haut-Pérou, l'une des plus grandes villes du monde.",
+              "source": {
+                "label": "Wikipédia : Potosí",
+                "url": "https://fr.wikipedia.org/wiki/Potos%C3%AD"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Argent de Potosí et du Mexique",
+          "Laine mérinos",
+          "Épices et soie via Manille",
+          "Sucre et cuir des Amériques"
+        ],
+        "currency": "Réal d'argent et « pièces de huit » (piastre) frappés aux mines américaines ; inflation du vellón de cuivre au XVIIe siècle.",
+        "taxation": "Millones, alcabalas, rente sur les revenus de la Couronne ; le quint de l'argent américain ; banqueroutes d'État (1557, 1575, 1596, 1607, 1627, 1647).",
+        "trade": "Flotte des Indes (Séville-Veracruz-La Havane), galion de Manille entre Acapulco et les Philippines, banquiers génois."
+      },
+      "army": {
+        "size": {
+          "value": 200000,
+          "low": 100000,
+          "high": 300000,
+          "year": 1600,
+          "note": "Estimation reconstruite ; troupes éparpillées entre Flandre, Italie, Méditerranée et Amériques.",
+          "source": {
+            "label": "Wikipédia : Tercio",
+            "url": "https://fr.wikipedia.org/wiki/Tercio"
+          }
+        },
+        "composition": "Tercios d'infanterie (piquiers et mousquetaires), galères, galions de l'Armada, garnisons de forteresses.",
+        "recruitment": "Volontaires espagnols, régiments italiens, wallons et allemands payés ; pénurie de recrues en Castille après 1600.",
+        "famousUnits": [
+          "Tercios de Flandre",
+          "Invincible Armada (1588)",
+          "Galères de Lépante"
+        ],
+        "innovations": [
+          "Le carré de piques et d'arquebuses (tercio)",
+          "Route espagnole entre Milan et les Flandres",
+          "Galéasses de Lépante"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie catholique habsbourgeoise, absolue en pratique.",
+        "head": "Philippe II (1556-1598), Philippe III, Philippe IV, Charles II (1665-1700).",
+        "succession": "Héréditaire dans la maison de Habsbourg d'Espagne ; Charles II meurt sans enfant en 1700.",
+        "institutions": "Système de conseils (polysynodie), valido (favori) sous Philippe III et IV, Inquisition, Cortes réduites.",
+        "administration": "Vice-rois (Naples, Sicile, Sardaigne, Nouvelle-Espagne, Pérou) et gouverneurs des Pays-Bas ; audiences en Amérique.",
+        "provinces": {
+          "value": 8,
+          "low": 8,
+          "high": 8,
+          "year": 1650,
+          "unit": "vice-royautés et gouvernements",
+          "note": "Grandes entités sous vice-roi ou gouverneur : Naples, Sicile, Sardaigne, Milan, Pays-Bas, Nouvelle-Espagne, Pérou, Portugal (jusqu'en 1640) ; comptage approximatif.",
+          "source": {
+            "label": "Wikipédia : Empire colonial espagnol",
+            "url": "https://fr.wikipedia.org/wiki/Empire_colonial_espagnol"
+          }
+        },
+        "law": "Lois de Castille et des Indes (Recopilación, 1680) ; les privilèges des royaumes périphériques causent des révoltes (1640)."
+      },
+      "society": {
+        "religions": [
+          "Catholicisme d'État",
+          "Moriscos expulsés (1609-1614)",
+          "Religions indigènes en syncrétisme"
+        ],
+        "languages": [
+          "Castillan",
+          "Catalan",
+          "Portugais (1580-1640)",
+          "Langues indigènes d'Amérique"
+        ],
+        "structure": "Hidalgos et grands d'Espagne, clergé nombreux, paysans accablés d'impôts ; système de castes en Amérique.",
+        "women": "Rôles domestiques ou religieux, mais certaines (Thérèse d'Avila, Sor Juana Inés de la Cruz) deviennent des figures intellectuelles."
+      },
+      "culture": {
+        "inventions": [
+          "Roman moderne (Don Quichotte)",
+          "Comedia nueva (Lope de Vega)",
+          "Réalisme de Velázquez"
+        ],
+        "works": [
+          "Don Quichotte (1605-1615)",
+          "Les Ménines (1656)",
+          "Monastère de l'Escurial"
+        ],
+        "scholars": [
+          "Cervantes",
+          "Lope de Vega",
+          "Velázquez",
+          "Francisco Suárez"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Escurial, Plaza Mayor de Madrid, forteresses d'Amérique (Carthagène, La Havane), route espagnole vers les Flandres."
+      },
+      "legacy": "Un siècle d'or artistique et littéraire en même temps qu'un déclin politique : l'argent d'Amérique n'a pas empêché les banqueroutes ni la perte de la prééminence européenne."
+    },
+    {
+      "id": "bourbons",
+      "name": "Les Bourbons",
+      "start": 1700,
+      "end": 1808,
+      "population": {
+        "total": {
+          "value": 28000000,
+          "low": 24000000,
+          "high": 32000000,
+          "year": 1800,
+          "note": "Estimation reconstruite : Espagne (~10,5 millions), Amériques espagnoles (~15 millions), Philippines (~1,5 million).",
+          "source": {
+            "label": "Wikipédia : Empire colonial espagnol",
+            "url": "https://fr.wikipedia.org/wiki/Empire_colonial_espagnol"
+          }
+        },
+        "cities": [
+          {
+            "name": "Mexico",
+            "population": {
+              "value": 130000,
+              "low": 120000,
+              "high": 140000,
+              "year": 1800,
+              "source": {
+                "label": "Wikipédia : Mexico",
+                "url": "https://fr.wikipedia.org/wiki/Mexico"
+              }
+            }
+          },
+          {
+            "name": "Madrid",
+            "population": {
+              "value": 170000,
+              "low": 150000,
+              "high": 190000,
+              "year": 1800,
+              "source": {
+                "label": "Wikipédia : Madrid",
+                "url": "https://fr.wikipedia.org/wiki/Madrid"
+              }
+            }
+          },
+          {
+            "name": "Barcelone",
+            "population": {
+              "value": 100000,
+              "low": 90000,
+              "high": 110000,
+              "year": 1800,
+              "source": {
+                "label": "Wikipédia : Barcelone",
+                "url": "https://fr.wikipedia.org/wiki/Barcelone"
+              }
+            }
+          },
+          {
+            "name": "Lima",
+            "population": {
+              "value": 60000,
+              "low": 50000,
+              "high": 70000,
+              "year": 1800,
+              "source": {
+                "label": "Wikipédia : Lima",
+                "url": "https://fr.wikipedia.org/wiki/Lima"
+              }
+            }
+          },
+          {
+            "name": "La Havane",
+            "population": {
+              "value": 60000,
+              "low": 50000,
+              "high": 80000,
+              "year": 1800,
+              "source": {
+                "label": "Wikipédia : La Havane",
+                "url": "https://fr.wikipedia.org/wiki/La_Havane"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Argent mexicain",
+          "Sucre et tabac de Cuba",
+          "Cacao du Venezuela",
+          "Cuivre, laine, vin"
+        ],
+        "currency": "Réal d'argent et piastre espagnole (« réal de huit »), monnaie de référence mondiale.",
+        "taxation": "Intendances et monopoles royaux (tabac, eau-de-vie), alcabala, quint de l'argent ; réforme fiscale sous Charles III.",
+        "trade": "Libre commerce décrété en 1778 entre les ports espagnols et américains, fin du monopole de Cadix."
+      },
+      "army": {
+        "size": {
+          "value": 70000,
+          "low": 50000,
+          "high": 100000,
+          "year": 1790,
+          "note": "Estimation approximative ; armée de terre, milices et marine comprises. Environ 70 vaisseaux de ligne en 1790.",
+          "source": {
+            "label": "Wikipédia : Charles III",
+            "url": "https://fr.wikipedia.org/wiki/Charles_III_(roi_d%27Espagne)"
+          }
+        },
+        "composition": "Régiments d'infanterie et de cavalerie, milices américaines, une marine rebâtie de 70 vaisseaux de ligne.",
+        "recruitment": "Tirage au sort (quintas) et engagements ; officiers nobles ; milices coloniales.",
+        "famousUnits": [
+          "Gardes wallonnes",
+          "Marine royale",
+          "Armée de Charles III"
+        ],
+        "innovations": [
+          "Ordonnances militaires de 1768",
+          "Arsenaux de Ferrol et Carthagène",
+          "Escadres pour l'Atlantique"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie absolue de style français, réformatrice.",
+        "head": "Philippe V (1700-1746), Ferdinand VI, Charles III (1759-1788), Charles IV.",
+        "succession": "Loi salique introduite par Philippe V en 1713 ; guerre de Succession d'Espagne de 1701 à 1714.",
+        "institutions": "Secrétariats d'État (ministères), décrets de Nueva Planta supprimant les droits d'Aragon (1707-1716).",
+        "administration": "Intendants de type français, quatre vice-royautés en Amérique en 1776 (Nouvelle-Espagne, Pérou, Nouvelle-Grenade, Río de la Plata), capitaineries générales.",
+        "provinces": {
+          "value": 4,
+          "low": 4,
+          "high": 4,
+          "year": 1776,
+          "unit": "vice-royautés",
+          "note": "Nombre de vice-royautés d'Amérique en 1776.",
+          "source": {
+            "label": "Wikipédia : Vice-royauté de Nouvelle-Espagne",
+            "url": "https://fr.wikipedia.org/wiki/Vice-royaut%C3%A9_de_Nouvelle-Espagne"
+          }
+        },
+        "law": "Droit castillan étendu à l'Aragon ; expulsion des jésuites (1767)."
+      },
+      "society": {
+        "religions": [
+          "Catholicisme",
+          "Inquisition amoindrie",
+          "Religions indigènes sous couvert chrétien"
+        ],
+        "languages": [
+          "Castillan",
+          "Catalan",
+          "Basque",
+          "Langues indigènes et créoles"
+        ],
+        "structure": "Peninsulares, créoles, métis, indigènes, Noirs libres et esclaves ; le privilège de naissance ouvre les hautes charges.",
+        "women": "Salons éclairés à Madrid, quelques femmes de lettres ; capacité légale encore limitée."
+      },
+      "culture": {
+        "inventions": [
+          "Académies royales (Langue, Histoire, San Fernando)",
+          "Bibliothèque royale",
+          "Jardin botanique de Madrid"
+        ],
+        "works": [
+          "Palais royal de Madrid",
+          "Musée du Prado (commencé en 1785)",
+          "Tableaux de Goya"
+        ],
+        "scholars": [
+          "Benito Feijoo",
+          "Jorge Juan",
+          "Francisco de Goya",
+          "Alexandre de Humboldt (voyageur en Amérique espagnole)"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Routes royales en étoile depuis Madrid, canal de Castille, Camino Real américain, arsenaux de marine."
+      },
+      "legacy": "Les Bourbons modernisent l'État et portent l'empire américain à sa plus grande étendue vers 1790, mais en brisant les privilèges locaux ils nourrissent le mécontentement des créoles."
+    },
+    {
+      "id": "independances",
+      "name": "Les indépendances",
+      "start": 1808,
+      "end": 1898,
+      "population": {
+        "total": {
+          "value": 27500000,
+          "low": 26000000,
+          "high": 30000000,
+          "year": 1898,
+          "note": "Estimation reconstruite : Espagne (~18 millions), Cuba (~1,6 million), Porto Rico (~0,9 million) et Philippines (~7 millions).",
+          "source": {
+            "label": "Wikipédia : Histoire de l'Espagne",
+            "url": "https://fr.wikipedia.org/wiki/Histoire_de_l%27Espagne"
+          }
+        },
+        "cities": [
+          {
+            "name": "Madrid",
+            "population": {
+              "value": 540000,
+              "low": 500000,
+              "high": 600000,
+              "year": 1900,
+              "source": {
+                "label": "Wikipédia : Madrid",
+                "url": "https://fr.wikipedia.org/wiki/Madrid"
+              }
+            }
+          },
+          {
+            "name": "Barcelone",
+            "population": {
+              "value": 530000,
+              "low": 500000,
+              "high": 560000,
+              "year": 1900,
+              "source": {
+                "label": "Wikipédia : Barcelone",
+                "url": "https://fr.wikipedia.org/wiki/Barcelone"
+              }
+            }
+          },
+          {
+            "name": "La Havane",
+            "population": {
+              "value": 240000,
+              "low": 200000,
+              "high": 270000,
+              "year": 1899,
+              "source": {
+                "label": "Wikipédia : La Havane",
+                "url": "https://fr.wikipedia.org/wiki/La_Havane"
+              }
+            }
+          },
+          {
+            "name": "Manille",
+            "population": {
+              "value": 200000,
+              "low": 150000,
+              "high": 250000,
+              "year": 1898,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Manille",
+                "url": "https://fr.wikipedia.org/wiki/Manille"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 1.8,
+          "low": 1.5,
+          "high": 2.1,
+          "year": 1820,
+          "note": "Estimation reconstruite de type Maddison, Espagne métropolitaine seule ; peu fiable.",
+          "source": {
+            "label": "Wikipédia : Angus Maddison",
+            "url": "https://fr.wikipedia.org/wiki/Angus_Maddison"
+          }
+        },
+        "resources": [
+          "Sucre et tabac de Cuba",
+          "Mercure d'Almadén",
+          "Plomb et cuivre",
+          "Vin, huile, liège"
+        ],
+        "currency": "Réal puis peseta (1868) ; le peso cubain et philippin circulent aux colonies.",
+        "taxation": "Contribution foncière et douanes ; fortes dettes publiques ; désamortissements (vente des biens d'Église).",
+        "trade": "Exportation de matières premières ; tarifs douaniers protectionnistes ; commerce colonial désormais restreint à Cuba, Porto Rico et Philippines."
+      },
+      "army": {
+        "size": {
+          "value": 200000,
+          "low": 180000,
+          "high": 240000,
+          "year": 1897,
+          "note": "Troupes envoyées à Cuba pendant la guerre d'indépendance ; estimation reconstruite.",
+          "source": {
+            "label": "Wikipédia : Guerre hispano-américaine",
+            "url": "https://fr.wikipedia.org/wiki/Guerre_hispano-am%C3%A9ricaine"
+          }
+        },
+        "composition": "Infanterie conscrite, guerrilla locale, marine vieillissante.",
+        "recruitment": "Quintas, avec possibilité de se faire remplacer en payant ; unité inégale.",
+        "famousUnits": [
+          "Armée de Cuba",
+          "Escadre de Cervera",
+          "Carlistes (adversaires intérieurs)"
+        ],
+        "innovations": [
+          "Fusil Remington (1871)",
+          "Chemins de fer militaires",
+          "Pronunciamientos comme moyens politiques"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie libérale instable : Ferdinand VII, régences, première République (1873-1874), Restauration.",
+        "head": "Ferdinand VII (jusqu'en 1833), Isabelle II, Amédée Ier, Alphonse XII, Alphonse XIII.",
+        "succession": "Guerres carlistes contre Isabelle II (1833-1876) sur la loi de succession.",
+        "institutions": "Constitution libérale de Cadix (1812), Cortes, pronunciamientos, système du turno pacífico (Restauration).",
+        "administration": "Division provinciale de 1833 sur le modèle français ; capitaineries générales à Cuba et aux Philippines.",
+        "provinces": {
+          "value": 49,
+          "low": 49,
+          "high": 49,
+          "year": 1833,
+          "unit": "provinces",
+          "note": "Provinces de l'Espagne métropolitaine après la division de Javier de Burgos.",
+          "source": {
+            "label": "Wikipédia : Provinces d'Espagne",
+            "url": "https://fr.wikipedia.org/wiki/Provinces_d%27Espagne"
+          }
+        },
+        "law": "Constitutions de 1812, 1837, 1845, 1869, 1876 ; codes civil (1889) et pénal."
+      },
+      "society": {
+        "religions": [
+          "Catholicisme majoritaire",
+          "Anticléricalisme libéral",
+          "Protestantisme minoritaire"
+        ],
+        "languages": [
+          "Castillan",
+          "Catalan",
+          "Galicien",
+          "Basque",
+          "Tagalog et langues philippines"
+        ],
+        "structure": "Oligarchie foncière et caciques, bourgeoisie industrielle en Catalogne et au Pays basque, paysans et ouvriers très pauvres.",
+        "women": "Éducation limitée, peu de droits civils ; Concepción Arenal et d'autres plaident pour leur instruction."
+      },
+      "culture": {
+        "inventions": [
+          "Sous-marin d'Isaac Peral (1888)",
+          "Chemin de fer (Barcelone-Mataró, 1848)",
+          "Peseta"
+        ],
+        "works": [
+          "Tableaux et gravures de Goya",
+          "Sagrada Família (1882)",
+          "Zarzuela et opéra romantique"
+        ],
+        "scholars": [
+          "Ramón y Cajal",
+          "Benito Pérez Galdós",
+          "Goya"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Chemin de fer national construit surtout après 1850, canaux, télégraphe ; les colonies restent peu équipées."
+      },
+      "legacy": "Entre 1810 et 1825, l'Amérique continentale s'émancipe ; en 1898 Cuba, Porto Rico et les Philippines suivent. L'Espagne perd en moins d'un siècle l'empire qu'elle avait mis trois siècles à bâtir."
+    },
+    {
+      "id": "afrique",
+      "name": "Les dernières colonies",
+      "start": 1898,
+      "end": 1976,
+      "population": {
+        "total": {
+          "value": 24500000,
+          "low": 23500000,
+          "high": 25500000,
+          "year": 1930,
+          "note": "Estimation reconstruite : Espagne métropolitaine (~23,5 millions) et protectorat du Maroc (~0,9 million) ; Guinée et Sahara très peu peuplés.",
+          "source": {
+            "label": "Wikipédia : Histoire de l'Espagne",
+            "url": "https://fr.wikipedia.org/wiki/Histoire_de_l%27Espagne"
+          }
+        },
+        "cities": [
+          {
+            "name": "Barcelone",
+            "population": {
+              "value": 1050000,
+              "low": 1000000,
+              "high": 1100000,
+              "year": 1930,
+              "source": {
+                "label": "Wikipédia : Barcelone",
+                "url": "https://fr.wikipedia.org/wiki/Barcelone"
+              }
+            }
+          },
+          {
+            "name": "Madrid",
+            "population": {
+              "value": 950000,
+              "low": 900000,
+              "high": 1000000,
+              "year": 1930,
+              "source": {
+                "label": "Wikipédia : Madrid",
+                "url": "https://fr.wikipedia.org/wiki/Madrid"
+              }
+            }
+          },
+          {
+            "name": "Séville",
+            "population": {
+              "value": 250000,
+              "low": 220000,
+              "high": 280000,
+              "year": 1930,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Séville",
+                "url": "https://fr.wikipedia.org/wiki/S%C3%A9ville"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Pyrite et minerais de fer",
+          "Phosphates du Sahara",
+          "Cacao de Guinée équatoriale",
+          "Agrumes, huile, vin"
+        ],
+        "currency": "Peseta.",
+        "taxation": "Impôts directs faibles, droits de douane élevés ; autarcie sous le premier franquisme.",
+        "trade": "Protectionnisme, autarcie après 1939, ouverture avec le plan de stabilisation de 1959."
+      },
+      "army": {
+        "size": {
+          "value": 30000,
+          "low": 25000,
+          "high": 35000,
+          "year": 1936,
+          "note": "Armée d'Afrique seule en 1936 ; l'armée nationaliste dépasse le million d'hommes en 1939.",
+          "source": {
+            "label": "Wikipédia : Guerre civile espagnole",
+            "url": "https://fr.wikipedia.org/wiki/Guerre_civile_espagnole"
+          }
+        },
+        "composition": "Légion étrangère, Regulares marocains, infanterie conscrite, quelques chars et avions.",
+        "recruitment": "Service militaire, volontaires de la Légion, recrutements marocains.",
+        "famousUnits": [
+          "Légion espagnole",
+          "Regulares",
+          "Armée d'Afrique"
+        ],
+        "innovations": [
+          "Première opération aérienne d'envergure : débarquement d'Alhucemas (1925)",
+          "Pont aérien d'Africa à Séville (1936)",
+          "Légion espagnole"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie, dictature de Primo de Rivera, Seconde République (1931), dictature franquiste (1939-1975).",
+        "head": "Alphonse XIII, Primo de Rivera, Manuel Azaña, Francisco Franco, Juan Carlos Ier.",
+        "succession": "Franco désigne Juan Carlos de Bourbon en 1969.",
+        "institutions": "Cortes de la République, puis parti unique (Movimiento) et Cortes organiques sous Franco.",
+        "administration": "Protectorat du Maroc, colonie de Guinée espagnole, province du Sahara espagnol (1958).",
+        "provinces": {
+          "value": 50,
+          "low": 50,
+          "high": 50,
+          "year": 1927,
+          "unit": "provinces",
+          "note": "Provinces de l'Espagne métropolitaine depuis la division de la province des Canaries en 1927.",
+          "source": {
+            "label": "Wikipédia : Provinces d'Espagne",
+            "url": "https://fr.wikipedia.org/wiki/Provinces_d%27Espagne"
+          }
+        },
+        "law": "Constitution de 1931, lois fondamentales du franquisme."
+      },
+      "society": {
+        "religions": [
+          "Catholicisme d'État sous Franco",
+          "Islam au Maroc espagnol",
+          "Laïcité de la République"
+        ],
+        "languages": [
+          "Castillan",
+          "Catalan, basque et galicien réprimés sous Franco",
+          "Arabe et amazigh",
+          "Fang"
+        ],
+        "structure": "Société divisée par la guerre civile ; essor des classes moyennes à partir des années 1960.",
+        "women": "Droit de vote en 1931, perdu en pratique sous Franco, avec retour à la tutelle du père ou du mari."
+      },
+      "culture": {
+        "inventions": [
+          "Autogire de Juan de la Cierva",
+          "Cubisme de Picasso",
+          "Surréalisme de Dalí"
+        ],
+        "works": [
+          "Guernica (1937)",
+          "Architecture de Gaudí",
+          "Poésie de Lorca"
+        ],
+        "scholars": [
+          "Ramón y Cajal",
+          "Miguel de Unamuno",
+          "Federico García Lorca",
+          "Severo Ochoa"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Réseau ferré nationalisé (RENFE, 1941), barrages et électrification franquistes, routes du protectorat, port de Tétouan."
+      },
+      "legacy": "Les derniers territoires d'Afrique sont abandonnés entre 1956 et 1976, au moment où l'Espagne passe à la démocratie. Cette fin de l'empire a laissé des liens avec l'Amérique latine et une présence à Ceuta et Melilla."
+    }
+  ]
+}

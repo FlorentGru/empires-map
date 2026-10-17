@@ -1,0 +1,191 @@
+[
+  {
+    "id": "yassa",
+    "name": "Yassa, code de Gengis Khan",
+    "year": 1206,
+    "approx": true,
+    "place": "Haute vallée de l'Onon",
+    "at": [
+      110.8,
+      48.9
+    ],
+    "inventor": "Gengis Khan",
+    "category": "droit",
+    "description": "Lors du grand kurultai de 1206, Gengis Khan est proclamé souverain et promulgue la Yassa, un ensemble de règles orales puis écrites. Elles interdisent par exemple le vol de bétail et l'enlèvement de femmes, imposent la discipline militaire et garantissent une forme de tolérance religieuse. Le texte original est perdu : on le connaît par des auteurs persans, arabes et latins.",
+    "impact": "Ce droit commun applique les mêmes règles à des peuples très divers et soutient la discipline qui rend l'armée mongole redoutable.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Yassa"
+      }
+    ]
+  },
+  {
+    "id": "paiza",
+    "name": "Paiza, passeport mongol",
+    "year": 1206,
+    "approx": true,
+    "place": "Mongolie",
+    "at": [
+      104,
+      47
+    ],
+    "category": "administration",
+    "description": "La paiza est une plaquette de métal ou de bois, gravée au nom du khan, remise aux messagers, officiers et marchands de confiance. Elle leur donne droit aux chevaux de poste, au logement et à la nourriture dans tout l'empire. Elle est attestée dès Gengis Khan et se généralise sous ses successeurs. Ses matériaux, or, argent ou bois, indiquent le rang du porteur.",
+    "impact": "C'est un laissez-passer unique valable sur des milliers de kilomètres : il sécurise les voyageurs, les messagers et les marchands de toute l'Eurasie.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Paiza"
+      }
+    ]
+  },
+  {
+    "id": "yam",
+    "name": "Yam, relais postal mongol",
+    "year": 1234,
+    "approx": true,
+    "place": "Karakorum",
+    "at": [
+      102.84,
+      47.2
+    ],
+    "inventor": "Ögödei Khan",
+    "category": "administration",
+    "description": "Sous Ögödei, le Yam est organisé en réseau de relais espacés d'environ une journée de cheval, où messagers munis de la paiza trouvent chevaux frais, vivres et gîte. Les Mongols s'inspirent de systèmes plus anciens, mais l'étendent de la Chine à la Perse et à la Russie. Un courrier pouvait parcourir plus de 300 kilomètres par jour en cas d'urgence.",
+    "impact": "Il crée le réseau de communication le plus rapide de son temps, qui relie les provinces et permet à un empire immense d'être gouverné.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Örtöö"
+      }
+    ]
+  },
+  {
+    "id": "recensements",
+    "name": "Recensements impériaux",
+    "year": 1235,
+    "approx": true,
+    "place": "Chine du Nord (Zhongdu)",
+    "at": [
+      116.4,
+      39.9
+    ],
+    "category": "administration",
+    "description": "Dès Ögödei, les Mongols organisent des recensements des populations de leur empire pour lever l'impôt et recruter des soldats : en Chine du Nord vers 1235, puis en Iran, en Russie et en Asie centrale. Ils s'appuient sur des scribes chinois, ouïghours et persans. La Rus' de Kiev compte ainsi ses habitants en 1257, sous Berke. L'invention est administrative et appliquée avec méthode.",
+    "impact": "Compter les hommes et les biens permet de lever l'impôt et les soldats avec précision, et fait de l'empire une administration, pas une simple conquête.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Recensement"
+      }
+    ]
+  },
+  {
+    "id": "maragha",
+    "name": "Observatoire de Maragha",
+    "year": 1259,
+    "place": "Maragha (Iran)",
+    "at": [
+      46.27,
+      37.39
+    ],
+    "inventor": "Nasir al-Din al-Tusi",
+    "category": "science",
+    "description": "Vers 1259, Houlagou, petit-fils de Gengis Khan, finance la création d'un grand observatoire à Maragha, en Azerbaïdjan iranien, sous la direction de l'astronome Nasir al-Din al-Tusi. Des savants venus de Chine, de Syrie et d'Espagne y travaillent, avec des instruments de grande taille. Ils établissent les tables astronomiques ilkhaniennes. On y a introduit le « couple de Tusi », qui a peut-être influencé Copernic.",
+    "impact": "Cet observatoire réunit des astronomes de plusieurs civilisations. Ses tables, et le couple de Tusi, ont marqué l'astronomie, jusqu'aux travaux de Copernic.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Maragha"
+      },
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Nasir_al-Din_al-Tusi"
+      }
+    ]
+  },
+  {
+    "id": "papier-monnaie-mongol",
+    "name": "Papier-monnaie, diffusion mongole",
+    "year": 1260,
+    "place": "Khanbaliq (Pékin)",
+    "at": [
+      116.4,
+      39.9
+    ],
+    "inventor": "Kubilai Khan",
+    "category": "monnaie",
+    "description": "Le papier-monnaie n'est pas une invention mongole : la Chine des Song l'utilise depuis le XIe siècle. Mais Kubilai Khan l'impose comme monnaie unique de l'empire Yuan à partir de 1260, avec des billets de soie ou de papier. En 1294, l'Iran mongol tente d'importer le système à Tabriz, sans succès. Marco Polo décrit ces billets, qui étonnent l'Europe.",
+    "impact": "Les Mongols font du billet une monnaie d'État à grande échelle, mais l'abus d'émission provoque l'inflation. L'expérience fait découvrir la monnaie fiduciaire à l'Eurasie.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Dynastie_Yuan"
+      },
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Billet_de_banque"
+      }
+    ]
+  },
+  {
+    "id": "alphabet-phags-pa",
+    "name": "Alphabet phags-pa",
+    "year": 1269,
+    "place": "Khanbaliq (Dadu)",
+    "at": [
+      116.4,
+      39.9
+    ],
+    "inventor": "Phags-pa Lama",
+    "category": "ecriture",
+    "description": "En 1269, Kubilai Khan fait adopter par décret l'alphabet phags-pa, conçu par le moine tibétain Phags-pa, pour noter toutes les langues de l'empire Yuan : mongol, chinois, tibétain, turc. L'écriture, dérivée du tibétain, se lit de haut en bas. Elle n'a pas réussi à s'imposer face aux écritures locales, mais elle a influencé la création de l'écriture coréenne, hangeul, selon certains chercheurs.",
+    "impact": "C'est une tentative audacieuse d'écriture universelle pour un empire multilingue. Le projet échoue, mais il marque l'histoire des écritures asiatiques.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Écriture_phags-pa"
+      }
+    ]
+  },
+  {
+    "id": "trebuchet-contrepoids",
+    "name": "Trébuchet à contrepoids en Chine (diffusion)",
+    "year": 1272,
+    "place": "Xiangyang (Hubei)",
+    "at": [
+      112.13,
+      32.04
+    ],
+    "category": "militaire",
+    "description": "Le trébuchet à contrepoids existait déjà dans le monde musulman et byzantin. Lors du siège de Xiangyang, que les Mongols mènent contre les Song de 1268 à 1273, Kubilai fait venir des ingénieurs du Moyen-Orient. Ils construisent de grandes machines à contrepoids qui lancent des projectiles bien plus lourds. Les Mongols diffusent ainsi une technologie, sans l'avoir inventée.",
+    "impact": "Cette technique de siège transforme la guerre en Chine : elle précipite la chute de Xiangyang, puis celle des Song du Sud.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Trébuchet"
+      }
+    ]
+  },
+  {
+    "id": "jami-al-tawarikh",
+    "name": "Jami al-tawarikh, première histoire universelle",
+    "year": 1307,
+    "place": "Tabriz",
+    "at": [
+      46.3,
+      38.08
+    ],
+    "inventor": "Rashid al-Din",
+    "category": "ecriture",
+    "description": "Le vizir persan Rashid al-Din est chargé par l'Ilkhan Ghazan, puis par son frère Oljeitu, de rédiger l'histoire des Mongols. Il élargit la tâche à celle de tous les peuples connus : Chinois, Indiens, Francs, Juifs. Achevé vers 1307, le « Compendium des chroniques » est la première histoire mondiale. Il s'appuie sur des informateurs de plusieurs cultures et sur de superbes miniatures.",
+    "impact": "C'est une des toutes premières histoires du monde, rédigée à partir de sources multiples. Elle témoigne de l'ouverture intellectuelle permise par l'empire mongol.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Rashid_al-Din"
+      }
+    ]
+  }
+]

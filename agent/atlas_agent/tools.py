@@ -319,6 +319,44 @@ def chercher_evenement_mondial(requete: str = "", annee: int | None = None) -> d
     return resultat
 
 
+def chercher_invention(requete: str = "", empire: str = "") -> dict:
+    """Cherche les inventions révolutionnaires de l'Atlas (ex. « papier », « Code civil », « galion »).
+
+    Args:
+        requete: nom ou mot-clé ; vide pour lister toutes les inventions d'un empire.
+        empire: identifiant de l'empire (ex. « china », « rome ») pour filtrer ; vide pour tous.
+
+    Returns:
+        Les inventions trouvées (au plus 8) : empire, nom, année, lieu, inventeur, catégorie,
+        description, pourquoi elle est révolutionnaire, sources.
+    """
+    cible = _normaliser(requete).strip()
+    trouvees = []
+    for fichier in sorted(DOSSIER_EMPIRES.glob("*/inventions.json")):
+        cle = fichier.parent.name
+        if cle.startswith("_") or (empire and cle != empire):
+            continue
+        for i in json.loads(fichier.read_text(encoding="utf-8")):
+            if cible and cible not in _normaliser(f"{i['name']} {i['description']} {i.get('inventor', '')}"):
+                continue
+            trouvees.append(
+                {
+                    "empire": cle,
+                    "nom": i["name"],
+                    "annee": ("vers " if i.get("approx") else "") + _annee(i["year"]),
+                    "lieu": i["place"],
+                    "inventeur": i.get("inventor"),
+                    "categorie": i["category"],
+                    "description": i["description"],
+                    "impact": i["impact"],
+                    "sources": i.get("sources", []),
+                }
+            )
+    if not trouvees:
+        return {"erreur": f"Aucune invention ne correspond à « {requete or empire} »."}
+    return {"inventions": trouvees[:8]}
+
+
 def profil_empire(empire: str, annee: int | None = None) -> dict:
     """Donne le profil d'un empire pour une période : population, économie, armée, politique, société, culture, infrastructures.
 
@@ -369,4 +407,4 @@ def naviguer_vers_etape(empire: str, etape_id: str, tool_context: ToolContext) -
     return {"statut": "ok", "message": f"La carte va s'ouvrir sur « {etape['title']} » ({_annee(etape['year'])})."}
 
 
-OUTILS = [lister_empires, chercher_etapes, lire_etape, chercher_ville, chercher_personnage, chercher_evenement_mondial, profil_empire, naviguer_vers_etape]
+OUTILS = [lister_empires, chercher_etapes, lire_etape, chercher_ville, chercher_personnage, chercher_evenement_mondial, profil_empire, chercher_invention, naviguer_vers_etape]

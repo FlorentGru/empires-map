@@ -7,10 +7,10 @@
   "description": "En 1492, deux royaumes ibériques achèvent la Reconquista et financent Christophe Colomb. En un siècle, l'Espagne conquiert le Mexique et le Pérou, domine l'Italie et les Pays-Bas, et ses galions relient Séville à Manille : c'est le premier empire où « le soleil ne se couche jamais ». Affaibli dès le XVIIe siècle, il perd l'Europe en 1713, l'Amérique entre 1808 et 1824, Cuba et les Philippines en 1898, puis ses dernières colonies africaines, jusqu'au départ du Sahara en 1976.",
   "view": {
     "center": [
-      -30,
-      15
+      15,
+      12
     ],
-    "zoom": 1.8
+    "zoom": 1.5
   },
   "bounds": [
     [
@@ -108,7 +108,8 @@
           "position": [
             -3.5886,
             37.1768
-          ]
+          ],
+          "person": "isabelle-la-catholique"
         },
         {
           "name": "Christophe Colomb",
@@ -119,7 +120,8 @@
           "position": [
             -6.8928,
             37.2108
-          ]
+          ],
+          "person": "christophe-colomb"
         },
         {
           "name": "Boabdil",
@@ -173,7 +175,8 @@
           "position": [
             -4.9967,
             41.5039
-          ]
+          ],
+          "person": "ferdinand-d-aragon"
         },
         {
           "name": "Jean II du Portugal",
@@ -227,7 +230,8 @@
           "position": [
             14.2681,
             40.8518
-          ]
+          ],
+          "person": "gonzalve-de-cordoue"
         },
         {
           "name": "Louis XII",
@@ -346,15 +350,28 @@
         {
           "id": "cortes",
           "side": "Cortés et ses alliés tlaxcaltèques",
+          "from": "Santiago de Cuba",
           "faction": "tercios",
           "path": [
             [
-              -96.13,
-              19.2
+              -75.83,
+              19.97
             ],
             [
-              -97.2,
-              19.15
+              -78,
+              19.4
+            ],
+            [
+              -85.5,
+              21.8
+            ],
+            [
+              -91,
+              22.2
+            ],
+            [
+              -96.13,
+              19.2
             ],
             [
               -98.2,
@@ -398,7 +415,8 @@
           "position": [
             -99,
             19.43
-          ]
+          ],
+          "person": "hernan-cortes"
         },
         {
           "name": "Cuauhtémoc",
@@ -460,6 +478,7 @@
       "armies": [
         {
           "side": "Armée impériale",
+          "from": "Lodi",
           "faction": "tercios",
           "path": [
             [
@@ -484,6 +503,7 @@
         },
         {
           "side": "Armée de François Ier",
+          "from": "Lyon",
           "faction": "francais-ancien-regime",
           "path": [
             [
@@ -582,8 +602,25 @@
         {
           "id": "pizarro",
           "side": "Pizarro",
+          "from": "Panamá",
           "faction": "tercios",
           "path": [
+            [
+              -79.52,
+              8.98
+            ],
+            [
+              -79.5,
+              5
+            ],
+            [
+              -81.5,
+              0
+            ],
+            [
+              -81.3,
+              -2.8
+            ],
             [
               -80.45,
               -3.57
@@ -606,6 +643,7 @@
         },
         {
           "side": "Escorte d'Atahualpa",
+          "from": "Quito",
           "faction": "incas",
           "path": [
             [
@@ -638,7 +676,8 @@
           "position": [
             -78.52,
             -7.15
-          ]
+          ],
+          "person": "francisco-pizarro"
         },
         {
           "name": "Atahualpa",
@@ -649,7 +688,8 @@
           "position": [
             -78.48,
             -7.15
-          ]
+          ],
+          "person": "atahualpa"
         }
       ]
     },
@@ -692,7 +732,8 @@
           "position": [
             4.3517,
             50.8467
-          ]
+          ],
+          "person": "charles-quint"
         },
         {
           "name": "Philippe II",
@@ -703,7 +744,8 @@
           "position": [
             -4.15,
             40.58
-          ]
+          ],
+          "person": "philippe-ii"
         }
       ]
     },
@@ -753,6 +795,7 @@
       "armies": [
         {
           "side": "Armée de Philippe II",
+          "from": "Bruxelles",
           "faction": "tercios",
           "path": [
             [
@@ -777,6 +820,7 @@
         },
         {
           "side": "Armée du connétable de Montmorency",
+          "from": "Laon",
           "faction": "francais-ancien-regime",
           "path": [
             [
@@ -853,6 +897,7 @@
         {
           "id": "legazpi",
           "side": "Expédition de Legazpi (de Cebu à Manille)",
+          "from": "Cebu",
           "faction": "tercios",
           "path": [
             [
@@ -949,6 +994,7 @@
         {
           "id": "ligue",
           "side": "Flotte de la Sainte Ligue",
+          "from": "Messine",
           "faction": "tercios",
           "path": [
             [
@@ -960,8 +1006,8 @@
               38.9
             ],
             [
-              19.9,
-              39.6
+              19.4,
+              39.5
             ],
             [
               21.2,
@@ -973,6 +1019,7 @@
         },
         {
           "side": "Flotte ottomane",
+          "from": "Lépante",
           "faction": "ottomans",
           "path": [
             [
@@ -1012,7 +1059,8 @@
           "position": [
             21.18,
             38.29
-          ]
+          ],
+          "person": "miguel-de-cervantes"
         }
       ]
     },
@@ -1047,7 +1095,9 @@
       "territoryNote": "Monarchie de Philippe II : Espagne, Naples, Sicile, Sardaigne, Milan, Pays-Bas du Sud (le Nord, passé à l'Union d'Utrecht de 1579, échappe à l'autorité du roi), Franche-Comté, Amérique espagnole, Philippines. Le Portugal et son empire (Brésil, îles atlantiques, comptoirs d'Afrique et d'Asie) forment un royaume distinct sous le même roi : statut vassal. Hors de l'empire : les provinces rebelles du Nord, la France, l'Angleterre.",
       "armies": [
         {
+          "id": "albe",
           "side": "Armée du duc d'Albe",
+          "from": "Badajoz",
           "faction": "tercios",
           "path": [
             [
@@ -1081,7 +1131,8 @@
           "position": [
             -9.14,
             38.72
-          ]
+          ],
+          "person": "philippe-ii"
         },
         {
           "name": "Fernando Álvarez de Tolède, duc d'Albe",
@@ -1142,12 +1193,22 @@
       "territoryNote": "Monarchie de Philippe II : Espagne, Naples, Sicile, Sardaigne, Milan, Pays-Bas du Sud (« Pays-Bas espagnols » : Flandre, Brabant, Hainaut, Artois, Luxembourg), Franche-Comté, Amérique espagnole (Nouvelle-Espagne, Pérou, Antilles, Floride), Philippines. Le Portugal, uni à l'Espagne depuis 1580, est un royaume vassal avec son empire. Hors de l'empire : les Provinces-Unies rebelles du Nord, l'Angleterre.",
       "armies": [
         {
+          "id": "armada",
           "side": "Invincible Armada",
+          "from": "Lisbonne",
           "faction": "tercios",
           "path": [
             [
               -9.2,
               38.7
+            ],
+            [
+              -9.9,
+              40.5
+            ],
+            [
+              -9.8,
+              43.4
             ],
             [
               -8.4,
@@ -1174,6 +1235,7 @@
         },
         {
           "side": "Flotte anglaise",
+          "from": "Plymouth",
           "faction": "anglais-elisabethains",
           "path": [
             [
@@ -1218,7 +1280,8 @@
           "position": [
             -4.15,
             40.58
-          ]
+          ],
+          "person": "philippe-ii"
         }
       ]
     },
@@ -1268,6 +1331,7 @@
       "armies": [
         {
           "side": "Armée du duc d'Enghien",
+          "from": "Reims",
           "faction": "francais-ancien-regime",
           "path": [
             [
@@ -1288,6 +1352,7 @@
         },
         {
           "side": "Armée de Flandre",
+          "from": "Bruxelles",
           "faction": "tercios",
           "path": [
             [
@@ -1590,7 +1655,8 @@
           "position": [
             -3.7,
             40.42
-          ]
+          ],
+          "person": "charles-iii"
         },
         {
           "name": "Étienne-François de Choiseul",
@@ -1706,7 +1772,9 @@
       "territoryNote": "Espagne alliée de la France : péninsule, Baléares (avec Minorque, rendue en 1802), Canaries ; Cuba, Porto Rico, Floride ; Nouvelle-Espagne (Mexique, Californie, Texas), Nouvelle-Grenade, Pérou, Chili, Río de la Plata ; Philippines et Mariannes. Perdus : Louisiane (rendue à la France en 1800, vendue aux États-Unis en 1803), Trinité (1797), partie orientale de Saint-Domingue (cédée à la France en 1795). Hors de l'empire : le Portugal et le Brésil, la Grande-Bretagne.",
       "armies": [
         {
+          "id": "gravina",
           "side": "Escadre espagnole (Gravina)",
+          "from": "Cadix",
           "faction": "espagnols",
           "path": [
             [
@@ -1983,7 +2051,9 @@
       "territoryNote": "Espagne en 1824 : péninsule, Baléares, Canaries, Ceuta ; Cuba, Porto Rico ; Philippines, Mariannes (avec Guam) et Carolines. Perdus : toute l'Amérique du Sud et centrale, le Mexique, la Floride, Santo Domingo ; Callao tient encore jusqu'en 1826. Hors de l'empire : le Portugal, le Brésil (indépendant en 1822), les républiques américaines.",
       "armies": [
         {
+          "id": "la-serna",
           "side": "Armée royaliste du vice-roi",
+          "from": "Cuzco",
           "faction": "espagnols",
           "path": [
             [
@@ -2007,6 +2077,7 @@
         },
         {
           "side": "Armée libératrice de Sucre",
+          "from": "Huancayo",
           "faction": "independantistes",
           "path": [
             [
@@ -2100,7 +2171,9 @@
       "territoryNote": "Espagne après le traité de Paris (décembre 1898) : péninsule, Baléares, Canaries, Ceuta et Melilla ; Carolines, Palau et Mariannes sauf Guam (vendues à l'Allemagne en 1899) ; Guinée espagnole (Fernando Poo, Annobón, Río Muni) ; Río de Oro (Sahara espagnol). Perdus : Cuba (indépendante sous tutelle américaine), Porto Rico, Guam et les Philippines (États-Unis).",
       "armies": [
         {
+          "id": "cervera",
           "side": "Escadre de Cervera",
+          "from": "Santiago de Cuba",
           "faction": "espagnols-xxe",
           "path": [
             [
@@ -2310,7 +2383,9 @@
       "territoryNote": "Espagne en 1921 : péninsule, Baléares, Canaries, Ceuta et Melilla ; Guinée espagnole ; Río de Oro et Tarfaya (cap Juby) ; Ifni (non occupé). Protectorat (vassal) : zone nord du Maroc (Tétouan, Larache, Chefchaouen) ; l'est du Rif, jusqu'aux abords de Melilla, échappe provisoirement à l'Espagne en août 1921.",
       "armies": [
         {
+          "id": "silvestre",
           "side": "Colonne de Silvestre",
+          "from": "Melilla",
           "faction": "espagnols-xxe",
           "path": [
             [
@@ -2424,7 +2499,9 @@
       "territoryNote": "Espagne en 1936 : péninsule, Baléares, Canaries, Ceuta et Melilla ; Guinée espagnole ; Sahara espagnol (Río de Oro, Saguia el-Hamra) ; Ifni (occupé en 1934) ; Tarfaya (zone sud du protectorat). Protectorat (vassal) : zone nord du Maroc (Tétouan, Larache, Chefchaouen, Rif). La guerre civile est interne : elle ne change pas le territoire de l'empire.",
       "armies": [
         {
+          "id": "armee-d-afrique",
           "side": "Armée d'Afrique",
+          "from": "Tétouan",
           "faction": "espagnols-xxe",
           "path": [
             [
@@ -2485,7 +2562,8 @@
           "position": [
             -5.37,
             35.57
-          ]
+          ],
+          "person": "francisco-franco"
         },
         {
           "name": "Dolores Ibárruri (La Pasionaria)",
@@ -2551,7 +2629,8 @@
           "position": [
             -3.7,
             40.42
-          ]
+          ],
+          "person": "francisco-franco"
         }
       ]
     },
@@ -2661,7 +2740,8 @@
           "position": [
             -3.7,
             40.42
-          ]
+          ],
+          "person": "francisco-franco"
         }
       ]
     },

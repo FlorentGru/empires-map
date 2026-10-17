@@ -741,6 +741,24 @@ button.empire-card:hover,
 .timeline__tip strong { font-size: 0.85rem; }
 .timeline__tip em { color: var(--ink-soft); font-size: 0.72rem; }
 
+/* ---------- Inventions sur la frise : petits losanges bleu-vert, infobulle, clic → fiche ---------- */
+.timeline__invention {
+  position: absolute;
+  z-index: 2;
+  top: 13px;
+  width: 9px;
+  height: 9px;
+  margin-left: -4.5px;
+  padding: 0;
+  background: #2f7a84;
+  border: 1.5px solid #f4ead3;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.timeline__invention:hover,
+.timeline__invention:focus-visible { background: #f2c14e; transform: rotate(45deg) scale(1.35); z-index: 3; }
+.timeline__tip[data-kind='invention'] { border-left-color: #2f7a84; }
+
 /* ---------- Apogée : courbe de puissance, couronne, badge ---------- */
 .timeline__power {
   position: absolute;
@@ -2296,3 +2314,9 @@ kbd {
 @media (prefers-reduced-motion: reduce) {
   .figure-marker--moved { animation: none; }
 }
+
+/* Panneau de l'étape : inventions de l'époque */
+.event-panel__inventions ul { margin: 0; padding-left: 18px; }
+.event-panel__inventions button { padding: 0; font: inherit; color: #1f5f6a; background: none; border: 0; text-decoration: underline; cursor: pointer; text-align: left; }
+.event-panel__inventions small { color: var(--ink-soft); }
+.inventions__impact { padding: 8px 10px; color: #1f4f57; background: #e6f1ee; border-left: 3px solid #2f7a84; border-radius: 4px; }
