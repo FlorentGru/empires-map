@@ -1,4 +1,4 @@
-/* Monuments : badge de pile et éventail au survol (src/map/monumentLayers.ts). */
+/* Badges de pile et éventail au survol (src/map/pileFan.ts) : monuments, inventions (variante --invention). */
 .monument-badge {
   position: absolute;
   left: 0;
@@ -99,3 +99,8 @@
 @media (prefers-reduced-motion: reduce) {
   .monument-fan__item, .monument-fan__lines { transition: none; }
 }
+
+/* Inventions : même éventail, teinte bleu-vert. */
+.monument-badge--invention { background: #2f7a84; }
+.monument-fan--invention .monument-fan__hub { background: #2f7a84; }
+.monument-fan--invention .monument-fan__lines line { stroke: #2f7a84; }
