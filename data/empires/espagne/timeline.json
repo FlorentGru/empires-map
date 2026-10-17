@@ -251,7 +251,7 @@
         -4.7245,
         41.6523
       ],
-      "zoom": 3.0,
+      "zoom": 3,
       "summary": "À la mort de Ferdinand, son petit-fils Charles de Habsbourg hérite de la Castille, de l'Aragon, de leurs possessions italiennes et américaines, et des Pays-Bas bourguignons : le noyau de l'empire est réuni.",
       "details": "Né à Gand en 1500, **Charles** hérite de quatre grands-parents. De ses grands-parents bourguignons et habsbourgeois (Marie de Bourgogne et Maximilien d'Autriche), il reçoit les **Pays-Bas** et la Franche-Comté. De ses grands-parents espagnols, **Isabelle** et **Ferdinand**, la Castille avec ses colonies d'Amérique, l'Aragon, la Sicile, la Sardaigne et Naples. Quand Ferdinand meurt en janvier 1516, il devient roi des deux couronnes sous le nom de **Carlos I**, aux côtés de sa mère Jeanne la Folle, enfermée à Tordesillas.\n\nLe jeune prince, qui ne parle pas castillan, arrive en 1517 avec ses conseillers flamands. Les villes de Castille se révoltent en 1520 (révolte des **Comuneros**), écrasée en 1521. En 1519, il bat François Ier à coups de florins prêtés par les banquiers allemands **Fugger** et est élu **empereur du Saint-Empire** : il règne désormais sur l'Allemagne, mais l'Espagne demeure la base de ses ressources.\n\nLa même année, **Magellan** appareille de Séville pour le tour du monde, achevé par Elcano en 1522. Le monarque est contraint de gouverner un territoire éclaté ; il voyage sans cesse, d'où le surnom d'« empire où le soleil ne se couche jamais », né plus tard sous la plume de ses chroniqueurs.",
       "consequences": [
@@ -396,7 +396,7 @@
           "archetype": "conquistador",
           "quote": "Nous avons mal au cœur d'une maladie que l'or seul peut guérir (attribué à Cortés)",
           "position": [
-            -99.0,
+            -99,
             19.43
           ]
         },
@@ -613,12 +613,12 @@
               -0.22
             ],
             [
-              -79.0,
+              -79,
               -2.9
             ],
             [
               -79.2,
-              -4.0
+              -4
             ],
             [
               -78.5,
@@ -662,7 +662,7 @@
         4.3517,
         50.8467
       ],
-      "zoom": 3.0,
+      "zoom": 3,
       "summary": "Charles Quint abdique : son fils Philippe II reçoit l'Espagne, l'Italie, les Pays-Bas et l'Amérique, son frère Ferdinand l'Empire. La monarchie hispanique devient une puissance à part.",
       "details": "Fatigué, malade et dépassé par la division religieuse de l'Allemagne, **Charles Quint** abdique en deux temps : les Pays-Bas en octobre 1555 à Bruxelles, puis l'Espagne et ses possessions en janvier 1556. Il se retire au monastère de Yuste, en Estrémadure. À son frère **Ferdinand** va l'Autriche, puis le titre impérial : l'empire des Habsbourg se coupe en deux branches, de Madrid et de Vienne.\n\nSon fils **Philippe II**, né à Valladolid en 1527, est un roi castillan de culture et de goût. Travailleur acharné, il gouverne par écrit depuis son bureau, entouré de secrétaires. Il installe sa cour à **Madrid**, en 1561, et bâtit le monastère-palais de l'**Escurial**. Dévot, il se veut le champion du catholicisme contre les protestants et les Turcs.\n\nLes ressources viennent de plus en plus d'Amérique : l'argent de **Potosí** (Pérou) et de Zacatecas (Mexique) arrive chaque année à Séville. Mais les guerres coûtent plus que les mines ne rapportent, et l'État fait faillite en 1557, 1560 et 1575. La monarchie dispose d'une puissante infanterie, la flotte de la Méditerranée et un empire où, dit-on, le soleil ne se couche pas.",
       "consequences": [
@@ -861,10 +861,10 @@
             ],
             [
               122.5,
-              11.0
+              11
             ],
             [
-              121.0,
+              121,
               13.3
             ],
             [
@@ -1025,7 +1025,7 @@
         -9.1393,
         38.7223
       ],
-      "zoom": 3.0,
+      "zoom": 3,
       "summary": "À la mort du cardinal-roi Henri, Philippe II revendique le trône du Portugal ; son armée l'emporte, et les deux empires coloniaux, espagnol et portugais, passent sous le même souverain.",
       "details": "En 1578, le jeune roi du Portugal **Sébastien** meurt à la bataille d'Alcácer-Quibir, au Maroc, sans enfant. Son grand-oncle, le cardinal **Henri**, lui succède puis meurt en janvier 1580. Plusieurs prétendants se disputent le trône ; **Philippe II**, fils de l'infante portugaise Isabelle, est le mieux placé par la généalogie, et le plus puissant. Il achète une partie de la noblesse, des banquiers et du clergé. Le prieur de Crato, **Antoine**, se proclame roi.\n\nL'armée du duc d'**Albe**, âgé de soixante-douze ans, entre au Portugal en juin 1580 et bat Antoine à **Alcântara**, près de Lisbonne (25 août). Aux Cortès de **Tomar** (1581), Philippe est reconnu roi sous le nom de **Philippe Ier** du Portugal. On lui prête le mot : « Je l'ai hérité, je l'ai acheté, je l'ai conquis. »\n\nPhilippe promet de respecter les lois, la langue, la monnaie et les officiers portugais : le Portugal reste un royaume distinct et garde son empire, du Brésil à Goa et Macao. Les deux empires, le plus vaste du monde, sont unis jusqu'à 1640. Mais les ennemis de l'Espagne, notamment les Néerlandais, peuvent désormais attaquer partout les comptoirs portugais.",
       "consequences": [
@@ -1103,7 +1103,7 @@
       "type": "bataille",
       "location": [
         2.13,
-        51.0
+        51
       ],
       "zoom": 4.2,
       "summary": "En 1588, Philippe II lance contre l'Angleterre une immense flotte, qui échoue devant Gravelines puis périt dans les tempêtes du retour.",
@@ -1167,7 +1167,7 @@
             ],
             [
               2.13,
-              51.0
+              51
             ]
           ],
           "strength": 3
@@ -1190,7 +1190,7 @@
             ],
             [
               2.13,
-              51.0
+              51
             ]
           ],
           "strength": 3,
@@ -1423,7 +1423,7 @@
           "name": "Jules Mazarin",
           "role": "Cardinal, premier ministre de France",
           "faction": "francais-ancien-regime",
-          "archetype": "prelat",
+          "archetype": "diplomate",
           "quote": "La paix est le plus grand de tous les biens (formule libre)",
           "position": [
             -1.7747,
@@ -1730,7 +1730,7 @@
           "path": [
             [
               -7.2,
-              36.0
+              36
             ],
             [
               -6.8,
@@ -1892,7 +1892,7 @@
         -96.93,
         18.89
       ],
-      "zoom": 3.0,
+      "zoom": 3,
       "summary": "Entre 1810 et 1821, les mouvements indépendantistes arrachent à l'Espagne la majeure partie de ses colonies d'Amérique ; le Mexique devient indépendant par le traité de Cordoue (1821).",
       "details": "En 1810, la crise espagnole fait éclater les premiers soulèvements. Au Mexique, le prêtre **Miguel Hidalgo** lance le « cri de Dolores » (16 septembre 1810) ; en Amérique du Sud, **Simón Bolívar** et **José de San Martín** combattent les armées royales. Entre 1810 et 1820, le Paraguay (1811), le Venezuela, l'Argentine (1816), le Chili (1818) et la Colombie (Boyacá, 1819) s'émancipent.\n\nEn 1820, un soulèvement libéral en Espagne (le colonel **Riego**) empêche l'envoi de renforts à l'Amérique. Au Mexique, les élites conservatrices, effrayées par le libéralisme, se rallient à l'indépendance : **Agustín de Iturbide**, officier royaliste, proclame le plan d'**Iguala** (février 1821). Le dernier vice-roi, **Juan O'Donojú**, signe en août le traité de **Cordoue** reconnaissant l'indépendance du Mexique, qui s'étend alors de la Californie au Guatemala. L'armée d'Iturbide entre à Mexico le 27 septembre ; la capitainerie générale du Guatemala se détache le 15 septembre.\n\nÀ Lima, San Martín proclame l'indépendance du Pérou le 28 juillet 1821 ; la guerre continuera dans les Andes jusqu'en 1824. La même année, l'Espagne cède la **Floride** aux États-Unis (traité Adams-Onís, ratifié en 1821).",
       "consequences": [
@@ -2323,7 +2323,7 @@
             ],
             [
               -3.5,
-              35.0
+              35
             ],
             [
               -3.88,
@@ -2342,7 +2342,7 @@
             ],
             [
               -3.9,
-              35.0
+              35
             ],
             [
               -3.88,
@@ -2387,7 +2387,7 @@
         -3.75,
         40.43
       ],
-      "zoom": 4.0,
+      "zoom": 4,
       "summary": "Le 17 juillet 1936, les généraux se soulèvent depuis le Maroc espagnol contre la République ; l'armée d'Afrique traverse le détroit et marche sur Madrid, où commence une guerre de trois ans.",
       "details": "Depuis 1931, l'Espagne est une République. En février 1936, le Front populaire de gauche remporte les élections. Le **17 juillet**, la garnison de Melilla se soulève, suivie de nombreuses autres : c'est le coup d'État du général **Sanjurjo**, de **Mola** et de **Franco**. Franco, relégué aux Canaries, gagne Tétouan en avion le 19 juillet pour prendre le commandement de l'**armée d'Afrique**, la meilleure armée d'Espagne, avec la Légion et les troupes marocaines des *Regulares*.\n\nLa flotte républicaine bloquant le détroit de Gibraltar, Franco obtient des avions allemands (Junkers Ju 52) et italiens : c'est le premier grand pont aérien militaire de l'histoire. Les colonnes d'Afrique remontent d'Andalousie et d'Estrémadure, prennent Badajoz (14 août) puis Tolède, et arrivent aux portes de Madrid en novembre. Les Madrilènes, soutenus par les Brigades internationales, tiennent bon (« ¡No pasarán! »), et la ville ne tombera que le 28 mars 1939.\n\nLa guerre dure trois ans, fait plus de 300 000 morts (les estimations montent à 500 000) et se termine par la victoire de Franco. Le Maroc espagnol reste un protectorat, mais sert de base à la rébellion ; le régime de Franco durera jusqu'en 1975.",
       "consequences": [

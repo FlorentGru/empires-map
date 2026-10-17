@@ -66,6 +66,16 @@ const PEOPLE: Record<Faction, string> = {
   rus: 'Rus’',
   'chevaliers-europeens': 'Chevaliers',
   mamelouks: 'Mamelouks',
+  tercios: 'Espagnols',
+  azteques: 'Aztèques',
+  incas: 'Incas',
+  'francais-ancien-regime': 'Français',
+  neerlandais: 'Néerlandais',
+  'anglais-elisabethains': 'Anglais',
+  'espagnols-xxe': 'Espagnols',
+  rifains: 'Rifains',
+  americains: 'Américains',
+  independantistes: 'Indépendantistes',
 };
 const esc = (v: string) => v.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const plain = (v: string) => v.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();

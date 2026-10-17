@@ -161,7 +161,10 @@ export type Faction =
   | 'chinois' | 'xiongnu' | 'mongols' | 'jurchens' | 'mandchous' | 'japonais' | 'coreens'
   | 'tibetains' | 'vietnamiens' | 'turcs-gokturks' | 'khitans' | 'ouighours'
   // Empire mongol
-  | 'tangoutes' | 'khwarezmiens' | 'rus' | 'chevaliers-europeens' | 'mamelouks';
+  | 'tangoutes' | 'khwarezmiens' | 'rus' | 'chevaliers-europeens' | 'mamelouks'
+  // Empire espagnol
+  | 'tercios' | 'azteques' | 'incas' | 'francais-ancien-regime' | 'neerlandais' | 'anglais-elisabethains'
+  | 'espagnols-xxe' | 'rifains' | 'americains' | 'independantistes';
 
 export const FACTIONS: Faction[] = [
   'romains', 'latins', 'samnites', 'carthaginois', 'gaulois', 'grecs-macedoniens',
@@ -172,6 +175,8 @@ export const FACTIONS: Faction[] = [
   'chinois', 'xiongnu', 'mongols', 'jurchens', 'mandchous', 'japonais', 'coreens',
   'tibetains', 'vietnamiens', 'turcs-gokturks', 'khitans', 'ouighours',
   'tangoutes', 'khwarezmiens', 'rus', 'chevaliers-europeens', 'mamelouks',
+  'tercios', 'azteques', 'incas', 'francais-ancien-regime', 'neerlandais', 'anglais-elisabethains',
+  'espagnols-xxe', 'rifains', 'americains', 'independantistes',
 ];
 
 export type Archetype =
@@ -183,6 +188,8 @@ export type Archetype =
   | 'empereur-chinois' | 'lettre-mandarin' | 'general-chinois' | 'khan' | 'shogun' | 'moine-bouddhiste' | 'imperatrice'
   // Empire mongol
   | 'general-mongol' | 'khatoun'
+  // Empire espagnol
+  | 'conquistador' | 'vice-roi' | 'roi-habsbourg' | 'souverain-precolombien' | 'militaire-xxe'
   // Tous empires : savant, philosophe (et figure du guide de l'Atlas)
   | 'sage';
 
@@ -191,6 +198,7 @@ export const ARCHETYPES: Archetype[] = [
   'chef-barbare', 'calife', 'sultan', 'doge',
   'empereur-napoleon', 'general', 'roi-moderne', 'tsar', 'diplomate', 'amiral',
   'empereur-chinois', 'lettre-mandarin', 'general-chinois', 'khan', 'shogun', 'moine-bouddhiste', 'imperatrice', 'sage',
+  'conquistador', 'vice-roi', 'roi-habsbourg', 'souverain-precolombien', 'militaire-xxe',
   'general-mongol', 'khatoun',
 ];
 
