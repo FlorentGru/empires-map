@@ -3,6 +3,7 @@ import type { NeighborCollection } from '../data/loadEmpire';
 
 const SRC = 'neighbors';
 const HALO = '#f4ead3';
+const INK = '#5e5040';
 const EMPTY: NeighborCollection = { type: 'FeatureCollection', features: [] };
 
 const area = ['get', 'area'] as never;
@@ -58,10 +59,55 @@ export class NeighborLayers {
       },
       beforeId,
     );
+    // Capitale de l'époque (data/capitals.json) : point cerclé, nom dessous, à partir du zoom 3.
+    const capital = ['==', ['get', 'kind'], 'capital'] as never;
+    map.addLayer(
+      {
+        id: 'neighbors-capital-ring',
+        type: 'circle',
+        source: SRC,
+        minzoom: 3,
+        filter: capital,
+        paint: { 'circle-radius': 5.5, 'circle-color': HALO, 'circle-opacity': 0.8, 'circle-stroke-color': INK, 'circle-stroke-width': 1.2 },
+      },
+      beforeId,
+    );
+    map.addLayer(
+      {
+        id: 'neighbors-capital',
+        type: 'symbol',
+        source: SRC,
+        minzoom: 3,
+        filter: capital,
+        layout: {
+          'symbol-sort-key': 5,
+          'text-field': ['get', 'name'],
+          'text-font': ['Noto Sans Regular'],
+          'text-size': 10.5,
+          'text-anchor': 'top',
+          'text-offset': [0, 0.6],
+          'text-max-width': 8,
+          'text-optional': true,
+        },
+        paint: { 'text-color': INK, 'text-halo-color': HALO, 'text-halo-width': 1.4 },
+      },
+      beforeId,
+    );
+    map.addLayer(
+      {
+        id: 'neighbors-capital-dot',
+        type: 'circle',
+        source: SRC,
+        minzoom: 3,
+        filter: capital,
+        paint: { 'circle-radius': 2.2, 'circle-color': INK },
+      },
+      beforeId,
+    );
   }
 
   setEnabled(on: boolean) {
-    for (const id of ['neighbors-border', 'neighbors-label']) {
+    for (const id of ['neighbors-border', 'neighbors-label', 'neighbors-capital-ring', 'neighbors-capital', 'neighbors-capital-dot']) {
       if (this.map.getLayer(id)) this.map.setLayoutProperty(id, 'visibility', on ? 'visible' : 'none');
     }
   }

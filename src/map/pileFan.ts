@@ -6,11 +6,9 @@ import './monuments.css';
 /** Deux icônes plus proches que cela (px) forment une pile. */
 const STACK_PX = 18;
 
-/** Un seul éventail ouvert à la fois, tous calques confondus (monuments et inventions d'une même ville). */
-let openFan: PileFan | null = null;
-
-export interface PileFanOptions {
-  /** Calque symbol dont on cherche les piles. */
+/** Un calque d'icônes qui participe aux piles (monuments, inventions…). */
+export interface PileSource {
+  /** Calque symbol MapLibre. */
   layer: string;
   /** Coordonnée d'un élément du calque. */
   locate: (id: string) => [number, number] | undefined;
@@ -18,29 +16,40 @@ export interface PileFanOptions {
   item: (id: string) => { name: string; iconSvg: string } | undefined;
   /** Clic sur une pastille de l'éventail (coordonnées écran du haut de la pastille). */
   onPick: (id: string, clientX: number, clientY: number) => void;
-  /** Éléments à masquer dans le calque (ceux déployés dans l'éventail ; [] à la fermeture). */
+  /** Éléments de ce calque à masquer (ceux déployés dans l'éventail ; [] à la fermeture). */
   onHidden: (ids: string[]) => void;
-  /** Libellé accessible de l'éventail, ex. « 3 monuments ». */
-  label: (n: number) => string;
-  /** Variante de style (classe ajoutée à l'éventail et aux badges), ex. 'invention'. */
-  variant?: string;
+}
+
+/** Point d'une pile : `key` = « calque|id ». */
+type Pt = ScreenPoint & { src: PileSource; ref: string };
+
+const managers = new WeakMap<MapLibreMap, PileFan>();
+
+/** Gestionnaire unique d'une carte : monuments et inventions d'une même ville forment une seule pile. */
+export function pileFanFor(map: MapLibreMap): PileFan {
+  let m = managers.get(map);
+  if (!m) {
+    m = new PileFan(map);
+    managers.set(map, m);
+  }
+  return m;
 }
 
 /**
- * Icônes empilées d'un calque (monuments d'une même ville, inventions d'une même capitale…) : badge de nombre
- * collé à la pile, et éventail qui écarte les icônes au survol (ou au premier toucher), refermé dès que la carte bouge.
+ * Icônes empilées (tous calques inscrits confondus) : badge de nombre collé à la pile, et éventail qui écarte
+ * les icônes au survol (ou au premier toucher), refermé dès que la carte bouge.
  */
 export class PileFan {
+  private sources: PileSource[] = [];
   /** Piles visibles (≥ 2 éléments), recalculées à chaque fin de mouvement. */
-  private piles: ScreenPoint[][] = [];
+  private piles: Pt[][] = [];
   /** Badges de nombre et coordonnée de leur pile (repositionnés à chaque mouvement de la carte). */
   private badges: { el: HTMLDivElement; at: [number, number] }[] = [];
-  /** Éventail ouvert : ses pastilles, et les ids masqués dans le calque. */
-  private fan: { el: HTMLDivElement; ids: string[] } | null = null;
+  /** Éventail ouvert : son élément et les points déployés (masqués dans leurs calques). */
+  private fan: { el: HTMLDivElement; pts: Pt[] } | null = null;
   private closeTimer = 0;
-  private enabled = true;
 
-  constructor(private map: MapLibreMap, private o: PileFanOptions) {
+  constructor(private map: MapLibreMap) {
     map.on('moveend', this.refresh);
     map.on('move', this.placeBadges);
     map.on('movestart', this.close);
@@ -48,15 +57,19 @@ export class PileFan {
     map.on('zoomstart', this.close);
   }
 
-  /** Ids actuellement déployés (à exclure du filtre du calque). */
-  get hidden(): string[] {
-    return this.fan?.ids ?? [];
+  register(src: PileSource) {
+    this.sources.push(src);
   }
 
-  setEnabled(on: boolean) {
-    this.enabled = on;
-    if (!on) this.close();
-    this.refreshWhenIdle();
+  unregister(src: PileSource) {
+    this.close();
+    this.sources = this.sources.filter((s) => s !== src);
+    this.refresh();
+  }
+
+  /** Ids d'un calque actuellement déployés (à exclure de son filtre). */
+  hiddenOf(src: PileSource): string[] {
+    return (this.fan?.pts ?? []).filter((p) => p.src === src).map((p) => p.id);
   }
 
   /** Recalcule les piles une fois la carte redessinée (après un changement de filtre ou de données). */
@@ -69,27 +82,33 @@ export class PileFan {
     for (const b of this.badges) b.el.remove();
     this.badges = [];
     this.piles = [];
-    if (!this.enabled || !this.map.getLayer(this.o.layer)) return;
-    const seen = new Set<string>();
-    const pts: ScreenPoint[] = [];
-    for (const f of this.map.queryRenderedFeatures({ layers: [this.o.layer] })) {
-      const id = f.properties?.id as string;
-      const at = this.o.locate(id);
-      if (!at || seen.has(id)) continue;
-      seen.add(id);
-      const p = this.map.project(at);
-      pts.push({ id, x: p.x, y: p.y });
+    const pts: Pt[] = [];
+    for (const src of this.sources) {
+      if (!this.map.getLayer(src.layer) || this.map.getLayoutProperty(src.layer, 'visibility') === 'none') continue;
+      const seen = new Set<string>();
+      for (const f of this.map.queryRenderedFeatures({ layers: [src.layer] })) {
+        const id = f.properties?.id as string;
+        const at = src.locate(id);
+        if (!at || seen.has(id)) continue;
+        seen.add(id);
+        const p = this.map.project(at);
+        pts.push({ id, x: p.x, y: p.y, src, ref: `${src.layer}|${id}` });
+      }
     }
-    this.piles = stacks(pts, STACK_PX).filter((g) => g.length > 1);
+    // stacks() regroupe par proximité ; on garde la référence de chaque point (calque + id).
+    const byRef = new Map(pts.map((p) => [p.ref, p]));
+    this.piles = stacks(pts.map((p) => ({ id: p.ref, x: p.x, y: p.y })), STACK_PX)
+      .filter((g) => g.length > 1)
+      .map((g) => g.map((p) => byRef.get(p.id)!));
     const box = this.map.getContainer();
     for (const g of this.piles) {
       const b = document.createElement('div');
-      b.className = `monument-badge${this.o.variant ? ` monument-badge--${this.o.variant}` : ''}`;
+      b.className = 'monument-badge';
       b.textContent = String(g.length);
       b.setAttribute('aria-hidden', 'true');
       if (this.fan) b.hidden = true;
       box.append(b);
-      this.badges.push({ el: b, at: this.o.locate(g[0]!.id)! });
+      this.badges.push({ el: b, at: g[0]!.src.locate(g[0]!.id)! });
     }
     this.placeBadges();
   };
@@ -102,19 +121,19 @@ export class PileFan {
     }
   };
 
-  private pileOf(id: string): ScreenPoint[] | undefined {
-    return this.piles.find((g) => g.some((p) => p.id === id));
+  private pileOf(src: PileSource, id: string): Pt[] | undefined {
+    return this.piles.find((g) => g.some((p) => p.src === src && p.id === id));
   }
 
   /** Survol d'une icône : ouvre l'éventail si elle fait partie d'une pile. */
-  enter(id: string | undefined) {
-    const pile = id ? this.pileOf(id) : undefined;
-    if (pile && !this.fan && !openFan) this.open(pile);
+  enter(src: PileSource, id: string | undefined) {
+    const pile = id ? this.pileOf(src, id) : undefined;
+    if (pile && !this.fan) this.open(pile);
   }
 
   /** Clic sur une icône : vrai si le clic a ouvert l'éventail (tactile, sans survol) au lieu d'une fiche. */
-  click(id: string): boolean {
-    const pile = this.pileOf(id);
+  click(src: PileSource, id: string): boolean {
+    const pile = this.pileOf(src, id);
     if (pile && !this.fan) {
       this.open(pile);
       return true;
@@ -123,33 +142,32 @@ export class PileFan {
   }
 
   /** Écarte les éléments d'une pile en éventail autour de leur point commun. */
-  private open(pile: ScreenPoint[]) {
+  private open(pile: Pt[]) {
     this.close();
-    openFan?.close();
-    openFan = this;
     const cx = pile.reduce((s, p) => s + p.x, 0) / pile.length;
     const cy = pile.reduce((s, p) => s + p.y, 0) / pile.length;
     // Rayon assez grand pour que les noms (84 px de large) ne se chevauchent pas.
     const pos = fanPositions(pile.length, pile.length > 4 ? 68 : 56);
     const reduced = prefersReducedMotion();
     const el = document.createElement('div');
-    el.className = `monument-fan${this.o.variant ? ` monument-fan--${this.o.variant}` : ''}`;
+    el.className = 'monument-fan';
     el.style.left = `${cx}px`;
     el.style.top = `${cy}px`;
     el.setAttribute('role', 'group');
-    el.setAttribute('aria-label', this.o.label(pile.length));
+    el.setAttribute('aria-label', `${pile.length} lieux empilés`);
     const reach = Math.max(...pos.map(([x, y]) => Math.hypot(x, y))) + 40;
     el.style.setProperty('--reach', `${reach}px`);
     let lines = '';
     pos.forEach(([x, y]) => (lines += `<line x1="0" y1="0" x2="${x}" y2="${y}"/>`));
     el.innerHTML = `<svg class="monument-fan__lines" viewBox="${-reach} ${-reach} ${reach * 2} ${reach * 2}" aria-hidden="true">${lines}</svg><span class="monument-fan__hub" aria-hidden="true"></span>`;
     pile.forEach((p, i) => {
-      const it = this.o.item(p.id);
+      const it = p.src.item(p.id);
       if (!it) return;
       const [x, y] = pos[i]!;
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'monument-fan__item';
+      btn.dataset.layer = p.src.layer;
       btn.style.setProperty('--x', `${x}px`);
       btn.style.setProperty('--y', `${y}px`);
       btn.setAttribute('aria-label', it.name);
@@ -157,7 +175,7 @@ export class PileFan {
       btn.addEventListener('click', (e) => {
         e.stopPropagation();
         const r = btn.getBoundingClientRect();
-        this.o.onPick(p.id, r.left + r.width / 2, r.top);
+        p.src.onPick(p.id, r.left + r.width / 2, r.top);
       });
       el.append(btn);
     });
@@ -170,9 +188,9 @@ export class PileFan {
       if (e.key === 'Escape') this.close();
     });
     this.map.getContainer().append(el);
-    this.fan = { el, ids: pile.map((p) => p.id) };
+    this.fan = { el, pts: pile };
     for (const b of this.badges) b.el.hidden = true;
-    this.o.onHidden(this.fan.ids);
+    for (const src of new Set(pile.map((p) => p.src))) src.onHidden(this.hiddenOf(src));
     // Déploiement : du centre vers chaque place (transition CSS), sauf mouvement réduit.
     if (reduced) el.classList.add('monument-fan--open');
     else requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add('monument-fan--open')));
@@ -181,22 +199,10 @@ export class PileFan {
   close = () => {
     window.clearTimeout(this.closeTimer);
     if (!this.fan) return;
-    if (openFan === this) openFan = null;
+    const srcs = new Set(this.fan.pts.map((p) => p.src));
     this.fan.el.remove();
     this.fan = null;
     for (const b of this.badges) b.el.hidden = false;
-    this.o.onHidden([]);
+    for (const src of srcs) src.onHidden([]);
   };
-
-  destroy() {
-    const m = this.map;
-    m.off('moveend', this.refresh);
-    m.off('move', this.placeBadges);
-    m.off('movestart', this.close);
-    m.off('dragstart', this.close);
-    m.off('zoomstart', this.close);
-    this.close();
-    for (const b of this.badges) b.el.remove();
-    this.badges = [];
-  }
 }

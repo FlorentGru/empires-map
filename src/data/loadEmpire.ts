@@ -232,7 +232,7 @@ export function loadNeighbors(empireId: string, stepId: string): Promise<Neighbo
         if (!res.ok) return EMPTY_NEIGHBORS;
         const data = (await res.json()) as NeighborCollection; // dev : index.html si absent, json() échoue
         if (data?.type !== 'FeatureCollection' || !Array.isArray(data.features)) return EMPTY_NEIGHBORS;
-        const features = data.features.filter((f) => f?.geometry && (f.properties?.kind === 'label' || f.properties?.kind === 'border'));
+        const features = data.features.filter((f) => f?.geometry && (f.properties?.kind === 'label' || f.properties?.kind === 'capital' || f.properties?.kind === 'border'));
         return { type: 'FeatureCollection', features } satisfies NeighborCollection;
       } catch {
         return EMPTY_NEIGHBORS;

@@ -220,7 +220,8 @@ export const Legend = memo(function Legend({ empire, step, countries2026 = false
 
         <Group title="Repères">
           <Row icon={<span className="legend__city" aria-hidden="true" />} label="Ville" />
-          <Row icon={<span className="legend__city legend__city--capital" aria-hidden="true" />} label="Capitale" hint="nom en gras" />
+          <Row icon={<span className="legend__city legend__city--capital" aria-hidden="true" />} label="Capitale de l'empire" hint="nom en gras" />
+          {(neighbors || contemporaries) && <Row icon={<span className="legend__city legend__city--foreign" aria-hidden="true" />} label="Capitale d'un voisin ou d'un autre empire" hint="point cerclé" />}
           {neighbors && <Row icon={<span className="legend__dashes legend__dashes--neighbor" aria-hidden="true" />} label="Voisins de l'époque" />}
           {countries2026 && <Row icon={<span className="legend__dashes legend__dashes--border" aria-hidden="true" />} label="Frontières de 2026" />}
         </Group>

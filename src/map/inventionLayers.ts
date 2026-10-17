@@ -7,7 +7,7 @@ import { prefersReducedMotion } from '../lib/motion';
 import { closeMapCard, openMapCard } from './mapCard';
 import { addSvgImages } from './svgImages';
 import { CATEGORY_LABELS, inventionIconSvg } from './inventionIcons';
-import { PileFan } from './pileFan';
+import { pileFanFor, type PileFan, type PileSource } from './pileFan';
 
 const SRC = 'inventions';
 const IDS = ['inventions-glow', 'inventions-icons'];
@@ -28,9 +28,11 @@ export class InventionLayers {
   private previewId: string | null = null;
   /** Inventions d'une même ville empilées : badge de nombre et éventail au survol, comme les monuments. */
   private fan: PileFan;
+  private pile: PileSource;
 
   constructor(private map: MapLibreMap) {
-    this.fan = new PileFan(map, {
+    this.fan = pileFanFor(map);
+    this.pile = {
       layer: 'inventions-icons',
       locate: (id) => this.find(id)?.at,
       item: (id) => {
@@ -42,9 +44,8 @@ export class InventionLayers {
         if (inv) this.openCard(inv, x, y, inv.id === this.previewId ? this.previewNote(inv) : undefined);
       },
       onHidden: (ids) => this.hide(ids),
-      label: (n) => `${n} inventions`,
-      variant: 'invention',
-    });
+    };
+    this.fan.register(this.pile);
     this.ready = addSvgImages(map, INVENTION_CATEGORIES.map((c) => [`invention-${c}`, inventionIconSvg(c), 28] as [string, string, number])).then(() => {
       if (!map.getStyle() || map.getSource(SRC)) return;
       const before = map.getLayer('city-dot') ? 'city-dot' : undefined;
@@ -92,7 +93,7 @@ export class InventionLayers {
 
   private onEnter = (e: MapMouseEvent & { features?: Feature[] }) => {
     this.map.getCanvas().style.cursor = 'pointer';
-    this.fan.enter((e.features?.[0]?.properties as Props | undefined)?.id);
+    this.fan.enter(this.pile, (e.features?.[0]?.properties as Props | undefined)?.id);
   };
 
   /** Masque dans les calques les inventions déployées dans l'éventail. */
@@ -112,7 +113,7 @@ export class InventionLayers {
   private onClick = (e: MapMouseEvent & { features?: Feature[] }) => {
     const inv = this.find((e.features?.[0]?.properties as Props | undefined)?.id ?? '');
     // Pile (tactile, sans survol) : le premier toucher ouvre l'éventail.
-    if (inv && this.fan.click(inv.id)) return;
+    if (inv && this.fan.click(this.pile, inv.id)) return;
     if (inv) this.openCard(inv, e.originalEvent.clientX, e.originalEvent.clientY, inv.id === this.previewId ? this.previewNote(inv) : undefined);
   };
 
@@ -199,7 +200,7 @@ export class InventionLayers {
   setEnabled(on: boolean) {
     this.enabled = on;
     if (!on) this.previewId = null;
-    this.fan.setEnabled(on);
+    this.fan.close();
     void this.ready.then(() => {
       for (const id of IDS) if (this.map.getLayer(id)) this.map.setLayoutProperty(id, 'visibility', on ? 'visible' : 'none');
       this.apply();
@@ -208,7 +209,7 @@ export class InventionLayers {
 
   destroy() {
     window.removeEventListener(OPEN_INVENTION_EVENT, this.onOpenRequest);
-    this.fan.destroy();
+    this.fan.unregister(this.pile);
     const m = this.map;
     m.off('click', 'inventions-icons', this.onClick);
     m.off('mouseenter', 'inventions-icons', this.onEnter);

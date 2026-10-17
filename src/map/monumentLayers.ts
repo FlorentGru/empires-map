@@ -6,7 +6,7 @@ import { formatYear } from '../lib/years';
 import { addMonumentIcons } from './monumentIcons';
 import { openMapCard } from './mapCard';
 import { monumentIconSvg } from './monumentIcons';
-import { PileFan } from './pileFan';
+import { pileFanFor, type PileFan, type PileSource } from './pileFan';
 import './monuments.css';
 
 const SRC = 'monuments';
@@ -31,11 +31,13 @@ export function monumentSpan(m: Pick<Monument, 'built' | 'until'>): string {
 export class MonumentLayers {
   private ready: Promise<void>;
   private year = 0;
-  /** Monuments d'une même ville empilés : badge de nombre et éventail au survol. */
+  /** Piles d'icônes (partagées avec les inventions) : badge de nombre et éventail au survol. */
   private fan: PileFan;
+  private pile: PileSource;
 
   constructor(private map: MapLibreMap, beforeId?: string) {
-    this.fan = new PileFan(map, {
+    this.fan = pileFanFor(map);
+    this.pile = {
       layer: LAYER,
       locate: (id) => ALL.find((x) => x.id === id)?.location as [number, number] | undefined,
       item: (id) => {
@@ -44,8 +46,8 @@ export class MonumentLayers {
       },
       onPick: (id, x, y) => this.openCard(ALL.find((m) => m.id === id)!, x, y),
       onHidden: () => this.applyFilter(),
-      label: (n) => `${n} monuments`,
-    });
+    };
+    this.fan.register(this.pile);
     const data: FeatureCollection<Point, { id: string; kind: string; name: string; built: number; until: number }> = {
       type: 'FeatureCollection',
       features: ALL.map((m) => ({
@@ -94,12 +96,12 @@ export class MonumentLayers {
   }
 
   private applyFilter() {
-    if (this.map.getLayer(LAYER)) this.map.setFilter(LAYER, this.filterFor(this.year, this.fan.hidden));
+    if (this.map.getLayer(LAYER)) this.map.setFilter(LAYER, this.filterFor(this.year, this.fan.hiddenOf(this.pile)));
   }
 
   private onEnter = (e: MapMouseEvent & { features?: Feature[] }) => {
     this.map.getCanvas().style.cursor = 'pointer';
-    this.fan.enter(e.features?.[0]?.properties?.id as string | undefined);
+    this.fan.enter(this.pile, e.features?.[0]?.properties?.id as string | undefined);
   };
   private onLeave = () => {
     this.map.getCanvas().style.cursor = '';
@@ -110,7 +112,7 @@ export class MonumentLayers {
     const m = ALL.find((x) => x.id === id);
     if (!m) return;
     // Pile (tactile, sans survol) : le premier toucher ouvre l'éventail.
-    if (this.fan.click(m.id)) return;
+    if (this.fan.click(this.pile, m.id)) return;
     this.openCard(m, e.originalEvent.clientX, e.originalEvent.clientY);
   };
 
@@ -146,8 +148,8 @@ export class MonumentLayers {
   setEnabled(on: boolean) {
     void this.ready.then(() => {
       if (this.map.getLayer(LAYER)) this.map.setLayoutProperty(LAYER, 'visibility', on ? 'visible' : 'none');
-      this.fan.setEnabled(on);
-      if (!on) this.fan.refresh();
+      this.fan.close();
+      this.fan.refreshWhenIdle();
     });
   }
 
@@ -156,7 +158,7 @@ export class MonumentLayers {
     m.off('click', LAYER, this.onClick);
     m.off('mouseenter', LAYER, this.onEnter);
     m.off('mouseleave', LAYER, this.onLeave);
-    this.fan.destroy();
+    this.fan.unregister(this.pile);
     if (!m.getStyle()) return;
     if (m.getLayer(LAYER)) m.removeLayer(LAYER);
     if (m.getSource(SRC)) m.removeSource(SRC);

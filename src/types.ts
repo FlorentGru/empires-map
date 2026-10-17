@@ -257,9 +257,10 @@ export interface Person {
 /**
  * Voisins de l'époque d'une étape : public/data/empires/<empire>/neighbors/<stepId>.geojson
  * - Point { kind: 'label', name (FR), area (km²) } au pôle d'inaccessibilité de l'État voisin ;
+ * - Point { kind: 'capital', name, of } : capitale de l'époque du voisin `of` (data/capitals.json).
  * - (Multi)LineString { kind: 'border' } : contour simplifié de l'État voisin.
  */
-export type NeighborProperties = { kind: 'label'; name: string; area: number } | { kind: 'border' };
+export type NeighborProperties = { kind: 'label'; name: string; area: number } | { kind: 'capital'; name: string; of: string } | { kind: 'border' };
 
 /**
  * Empires contemporains d'une étape : public/data/empires/<empire>/contemporaries/<stepId>.geojson

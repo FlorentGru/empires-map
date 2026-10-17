@@ -1816,6 +1816,14 @@ kbd {
   margin: 0 3px;
   background: #9b2d20;
 }
+.legend__city--foreign {
+  width: 6px;
+  height: 6px;
+  margin: 0 7px;
+  border: 0;
+  background: #5e5040;
+  box-shadow: 0 0 0 3px var(--parchment), 0 0 0 4.3px #5e5040;
+}
 
 @media (max-width: 767px) {
   .legend {

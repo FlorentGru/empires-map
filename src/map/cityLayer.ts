@@ -14,6 +14,8 @@ interface CityProps {
   sub: string;
   rank: number;
   capital: boolean;
+  /** Capitale d'un autre empire de l'Atlas à cette date (empire contemporain) : anneau, toujours affichée. */
+  foreign: boolean;
   sort: number;
 }
 
@@ -37,6 +39,11 @@ export function isCapital(city: City, empireId: string, year: number): boolean {
   return !!city.capitalOf?.some((c) => c.empire === empireId && c.from <= year && year <= c.to);
 }
 
+/** Capitale, à cette date, d'un autre empire que `empireId` (empires contemporains de l'Atlas). */
+export function isForeignCapital(city: City, empireId: string, year: number): boolean {
+  return !!city.capitalOf?.some((c) => c.empire !== empireId && c.from <= year && year <= c.to);
+}
+
 /** Niveau de zoom minimal d'affichage par rang : 1 toujours, 2 dès 4, 3 dès 5,5. */
 const byRank = (r1: unknown, r2: unknown, r3: unknown) => ['step', ['zoom'], r1, 4, r2, 5.5, r3] as never;
 
@@ -51,21 +58,36 @@ export class CityLayer {
   ) {
     map.addSource('cities', { type: 'geojson', data: EMPTY });
     const capital = ['get', 'capital'] as never;
+    const shown = ['any', capital, ['get', 'foreign']] as never;
     // rang 1 : toujours ; rang 2 : zoom ≥ 4 ; rang 3 : zoom ≥ 5,5 (taille 0 = non placé).
     const size = (px: number) =>
       byRank(
-        ['case', ['any', capital, ['==', ['get', 'rank'], 1]], px, 0],
-        ['case', ['any', capital, ['<=', ['get', 'rank'], 2]], px, 0],
+        ['case', ['any', shown, ['==', ['get', 'rank'], 1]], px, 0],
+        ['case', ['any', shown, ['<=', ['get', 'rank'], 2]], px, 0],
         px,
       );
+    // Symbole de capitale étrangère : anneau autour du point (comme sur les cartes d'atlas).
+    map.addLayer({
+      id: 'city-capital-ring',
+      type: 'circle',
+      source: 'cities',
+      filter: ['all', ['get', 'foreign'], ['!', capital]] as never,
+      paint: {
+        'circle-radius': 7,
+        'circle-opacity': 0,
+        'circle-stroke-color': INK,
+        'circle-stroke-width': 1.3,
+        'circle-pitch-alignment': 'map',
+      },
+    });
     map.addLayer({
       id: 'city-dot',
       type: 'circle',
       source: 'cities',
       paint: {
         'circle-radius': byRank(
-          ['case', capital, 5.5, ['==', ['get', 'rank'], 1], 3.6, 0],
-          ['case', capital, 5.5, ['<=', ['get', 'rank'], 2], 3.2, 0],
+          ['case', capital, 5.5, ['any', ['get', 'foreign'], ['==', ['get', 'rank'], 1]], 3.6, 0],
+          ['case', capital, 5.5, ['any', ['get', 'foreign'], ['<=', ['get', 'rank'], 2]], 3.2, 0],
           ['case', capital, 5.5, 2.6],
         ),
         'circle-color': ['case', capital, CAPITAL, INK],
@@ -113,13 +135,15 @@ export class CityLayer {
       const features: Feature<Point, CityProps>[] = [];
       for (const c of this.cities) {
         if (!isVisible(c, year)) continue;
-        if (c.empires && !c.empires.includes(this.empire.id)) continue;
         const cap = isCapital(c, this.empire.id, year);
+        const foreign = !cap && isForeignCapital(c, this.empire.id, year);
+        // Ville réservée à un autre empire : affichée quand même si elle est sa capitale à cette date.
+        if (c.empires && !c.empires.includes(this.empire.id) && !foreign) continue;
         const label = nameAt(c, year);
         const sub = norm(label) === norm(c.modern) ? '' : `(${c.modern})`;
         features.push({
           type: 'Feature',
-          properties: { label, sub, rank: c.rank, capital: cap, sort: (cap ? 0 : c.rank) * 10 },
+          properties: { label, sub, rank: c.rank, capital: cap, foreign, sort: (cap ? 0 : foreign ? 0.5 : c.rank) * 10 },
           geometry: { type: 'Point', coordinates: c.coords },
         });
       }

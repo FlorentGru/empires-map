@@ -1,0 +1,1809 @@
+{
+ "Empire russe": [
+  {
+   "city": "Saint-Pétersbourg",
+   "at": [30.32, 59.93],
+   "to": 1917
+  },
+  {
+   "city": "Moscou",
+   "at": [37.62, 55.75],
+   "from": 1918
+  }
+ ],
+ "Tsarat de Russie": [
+  {
+   "city": "Moscou",
+   "at": [37.62, 55.75]
+  }
+ ],
+ "Empire Qing": [
+  {
+   "city": "Pékin",
+   "at": [116.4, 39.9]
+  }
+ ],
+ "Empire mandchou": [
+  {
+   "city": "Pékin",
+   "at": [116.4, 39.9]
+  }
+ ],
+ "Grand Khanat": [
+  {
+   "city": "Karakorum",
+   "at": [102.84, 47.2]
+  }
+ ],
+ "Canada": [
+  {
+   "city": "Ottawa",
+   "at": [-75.7, 45.42]
+  }
+ ],
+ "États-Unis": [
+  {
+   "city": "Philadelphie",
+   "at": [-75.17, 39.95],
+   "to": 1799
+  },
+  {
+   "city": "Washington",
+   "at": [-77.04, 38.91],
+   "from": 1800
+  }
+ ],
+ "Brésil": [
+  {
+   "city": "Rio de Janeiro",
+   "at": [-43.17, -22.91],
+   "to": 1959
+  },
+  {
+   "city": "Brasilia",
+   "at": [-47.93, -15.78],
+   "from": 1960
+  }
+ ],
+ "Vice-royauté du Brésil": [
+  {
+   "city": "Salvador",
+   "at": [-38.51, -12.97],
+   "to": 1762
+  },
+  {
+   "city": "Rio de Janeiro",
+   "at": [-43.17, -22.91],
+   "from": 1763
+  }
+ ],
+ "Royaume du Brésil": [
+  {
+   "city": "Rio de Janeiro",
+   "at": [-43.17, -22.91]
+  }
+ ],
+ "Australie": [
+  {
+   "city": "Melbourne",
+   "at": [144.96, -37.81],
+   "to": 1926
+  },
+  {
+   "city": "Canberra",
+   "at": [149.13, -35.28],
+   "from": 1927
+  }
+ ],
+ "Afrique-Occidentale française": [
+  {
+   "city": "Saint-Louis",
+   "at": [-16.5, 16.02],
+   "to": 1901
+  },
+  {
+   "city": "Dakar",
+   "at": [-17.47, 14.69],
+   "from": 1902
+  }
+ ],
+ "Empire achéménide": [
+  {
+   "city": "Suse",
+   "at": [48.26, 32.19]
+  }
+ ],
+ "Empire Ming": [
+  {
+   "city": "Pékin",
+   "at": [116.4, 39.9]
+  }
+ ],
+ "Empire ottoman": [
+  {
+   "city": "Édirne",
+   "at": [26.56, 41.68],
+   "to": 1452
+  },
+  {
+   "city": "Constantinople",
+   "at": [28.98, 41.01],
+   "from": 1453,
+   "to": 1922
+  },
+  {
+   "city": "Ankara",
+   "at": [32.85, 39.93],
+   "from": 1923
+  }
+ ],
+ "Horde d’Or": [
+  {
+   "city": "Saraï",
+   "at": [46.8, 48.75]
+  }
+ ],
+ "Califat abbasside": [
+  {
+   "city": "Bagdad",
+   "at": [44.37, 33.31]
+  }
+ ],
+ "Empire timouride": [
+  {
+   "city": "Samarcande",
+   "at": [66.96, 39.65]
+  }
+ ],
+ "Raj britannique": [
+  {
+   "city": "Calcutta",
+   "at": [88.36, 22.57],
+   "to": 1911
+  },
+  {
+   "city": "Delhi",
+   "at": [77.21, 28.61],
+   "from": 1912
+  }
+ ],
+ "Vice-royauté de Nouvelle-Espagne": [
+  {
+   "city": "Mexico",
+   "at": [-99.13, 19.43]
+  }
+ ],
+ "Empire tibétain": [
+  {
+   "city": "Lhassa",
+   "at": [91.12, 29.65]
+  }
+ ],
+ "Khanat des Kara Khitaï": [
+  {
+   "city": "Balasagun",
+   "at": [75.2, 42.75]
+  }
+ ],
+ "Empire romain": [
+  {
+   "city": "Rome",
+   "at": [12.5, 41.9]
+  }
+ ],
+ "Empire moghol": [
+  {
+   "city": "Agra",
+   "at": [78.01, 27.18],
+   "to": 1647
+  },
+  {
+   "city": "Delhi",
+   "at": [77.21, 28.61],
+   "from": 1648
+  }
+ ],
+ "Nouvelle-Galles du Sud": [
+  {
+   "city": "Sydney",
+   "at": [151.21, -33.87]
+  }
+ ],
+ "Ilkhanat": [
+  {
+   "city": "Tabriz",
+   "at": [46.29, 38.08]
+  }
+ ],
+ "Empire sassanide": [
+  {
+   "city": "Ctésiphon",
+   "at": [44.58, 33.09]
+  }
+ ],
+ "Empire séleucide": [
+  {
+   "city": "Antioche",
+   "at": [36.16, 36.2]
+  }
+ ],
+ "Louisiane": [
+  {
+   "city": "La Nouvelle-Orléans",
+   "at": [-90.07, 29.95]
+  }
+ ],
+ "Vice-royauté de Nouvelle-Grenade": [
+  {
+   "city": "Bogota",
+   "at": [-74.07, 4.71]
+  }
+ ],
+ "Union de Kalmar": [
+  {
+   "city": "Copenhague",
+   "at": [12.57, 55.68]
+  }
+ ],
+ "Empire Song": [
+  {
+   "city": "Hangzhou",
+   "at": [120.16, 30.27]
+  }
+ ],
+ "Sultanat de Delhi": [
+  {
+   "city": "Delhi",
+   "at": [77.21, 28.61]
+  }
+ ],
+ "Empire maurya": [
+  {
+   "city": "Pataliputra",
+   "at": [85.14, 25.61]
+  }
+ ],
+ "Empire kouchan": [
+  {
+   "city": "Peshawar",
+   "at": [71.58, 34.01]
+  }
+ ],
+ "Vice-royauté du Pérou": [
+  {
+   "city": "Lima",
+   "at": [-77.04, -12.05]
+  }
+ ],
+ "Argentine": [
+  {
+   "city": "Buenos Aires",
+   "at": [-58.38, -34.6]
+  }
+ ],
+ "Grand-duché de Moscou": [
+  {
+   "city": "Moscou",
+   "at": [37.62, 55.75]
+  }
+ ],
+ "Danemark-Norvège": [
+  {
+   "city": "Copenhague",
+   "at": [12.57, 55.68]
+  }
+ ],
+ "Soudan anglo-égyptien": [
+  {
+   "city": "Khartoum",
+   "at": [32.53, 15.5]
+  }
+ ],
+ "Empire safavide": [
+  {
+   "city": "Tabriz",
+   "at": [46.29, 38.08],
+   "to": 1554
+  },
+  {
+   "city": "Qazvin",
+   "at": [50, 36.27],
+   "from": 1555,
+   "to": 1597
+  },
+  {
+   "city": "Ispahan",
+   "at": [51.68, 32.65],
+   "from": 1598
+  }
+ ],
+ "Australie-Occidentale (Royaume-Uni)": [
+  {
+   "city": "Perth",
+   "at": [115.86, -31.95]
+  }
+ ],
+ "Empire gupta": [
+  {
+   "city": "Pataliputra",
+   "at": [85.14, 25.61]
+  }
+ ],
+ "Algérie": [
+  {
+   "city": "Alger",
+   "at": [3.06, 36.75]
+  }
+ ],
+ "Confédération marathe": [
+  {
+   "city": "Pune",
+   "at": [73.86, 18.52]
+  }
+ ],
+ "Almoravides": [
+  {
+   "city": "Marrakech",
+   "at": [-8.01, 31.63]
+  }
+ ],
+ "Provinces-Unies du Río de la Plata": [
+  {
+   "city": "Buenos Aires",
+   "at": [-58.38, -34.6]
+  }
+ ],
+ "Congo belge": [
+  {
+   "city": "Boma",
+   "at": [13.05, -5.85],
+   "to": 1922
+  },
+  {
+   "city": "Léopoldville",
+   "at": [15.31, -4.32],
+   "from": 1923
+  }
+ ],
+ "Tibet": [
+  {
+   "city": "Lhassa",
+   "at": [91.12, 29.65]
+  }
+ ],
+ "Perse": [
+  {
+   "city": "Ctésiphon",
+   "at": [44.58, 33.09],
+   "to": 650
+  },
+  {
+   "city": "Ispahan",
+   "at": [51.68, 32.65],
+   "from": 1051,
+   "to": 1722
+  },
+  {
+   "city": "Téhéran",
+   "at": [51.39, 35.69],
+   "from": 1796
+  }
+ ],
+ "Khazars": [
+  {
+   "city": "Itil",
+   "at": [47.9, 46.35]
+  }
+ ],
+ "Khanat kazakh": [
+  {
+   "city": "Turkestan",
+   "at": [68.25, 43.3]
+  }
+ ],
+ "Émirats timourides": [
+  {
+   "city": "Hérat",
+   "at": [62.2, 34.34]
+  }
+ ],
+ "Émirats bouyides": [
+  {
+   "city": "Chiraz",
+   "at": [52.53, 29.59]
+  }
+ ],
+ "Empire seldjoukide": [
+  {
+   "city": "Ispahan",
+   "at": [51.68, 32.65],
+   "to": 1117
+  },
+  {
+   "city": "Merv",
+   "at": [62.19, 37.66],
+   "from": 1118
+  }
+ ],
+ "Égypte": [
+  {
+   "city": "Le Caire",
+   "at": [31.24, 30.04]
+  }
+ ],
+ "Empire parthe": [
+  {
+   "city": "Ctésiphon",
+   "at": [44.58, 33.09]
+  }
+ ],
+ "Mexique": [
+  {
+   "city": "Mexico",
+   "at": [-99.13, 19.43]
+  }
+ ],
+ "Califat fatimide": [
+  {
+   "city": "Le Caire",
+   "at": [31.24, 30.04]
+  }
+ ],
+ "Aq Qoyunlu": [
+  {
+   "city": "Diyarbakir",
+   "at": [40.22, 37.91],
+   "to": 1467
+  },
+  {
+   "city": "Tabriz",
+   "at": [46.29, 38.08],
+   "from": 1468
+  }
+ ],
+ "Horde des Nogaïs": [
+  {
+   "city": "Saraïchik",
+   "at": [51.85, 47.47]
+  }
+ ],
+ "Nejd": [
+  {
+   "city": "Dariya",
+   "at": [46.58, 24.73],
+   "to": 1818
+  },
+  {
+   "city": "Riyad",
+   "at": [46.72, 24.63],
+   "from": 1819
+  }
+ ],
+ "Empire du Mali": [
+  {
+   "city": "Niani",
+   "at": [-8.7, 11.4]
+  }
+ ],
+ "Karakhanides": [
+  {
+   "city": "Balasagun",
+   "at": [75.2, 42.75]
+  }
+ ],
+ "Bactriane": [
+  {
+   "city": "Bactres",
+   "at": [66.9, 36.76]
+  }
+ ],
+ "Saffarides": [
+  {
+   "city": "Zaranj",
+   "at": [61.86, 30.96]
+  }
+ ],
+ "Indes néerlandaises": [
+  {
+   "city": "Batavia",
+   "at": [106.85, -6.21]
+  }
+ ],
+ "Queensland (Royaume-Uni)": [
+  {
+   "city": "Brisbane",
+   "at": [153.03, -27.47]
+  }
+ ],
+ "Khaganat turc occidental": [
+  {
+   "city": "Suyab",
+   "at": [75.15, 42.8]
+  }
+ ],
+ "Rus’ de Kiev": [
+  {
+   "city": "Kiev",
+   "at": [30.52, 50.45]
+  }
+ ],
+ "Xinjiang": [
+  {
+   "city": "Ürümqi",
+   "at": [87.62, 43.83]
+  }
+ ],
+ "Empire samanide": [
+  {
+   "city": "Boukhara",
+   "at": [64.43, 39.77]
+  }
+ ],
+ "Mongolie": [
+  {
+   "city": "Ourga",
+   "at": [106.92, 47.92]
+  }
+ ],
+ "Empire inca": [
+  {
+   "city": "Cuzco",
+   "at": [-71.97, -13.52]
+  }
+ ],
+ "Bolivie": [
+  {
+   "city": "Sucre",
+   "at": [-65.26, -19.04],
+   "to": 1898
+  },
+  {
+   "city": "La Paz",
+   "at": [-68.15, -16.5],
+   "from": 1899
+  }
+ ],
+ "Sultanat mamelouk": [
+  {
+   "city": "Le Caire",
+   "at": [31.24, 30.04]
+  }
+ ],
+ "Colombie": [
+  {
+   "city": "Bogota",
+   "at": [-74.07, 4.71]
+  }
+ ],
+ "Libye": [
+  {
+   "city": "Tripoli",
+   "at": [13.19, 32.89]
+  }
+ ],
+ "Maroc": [
+  {
+   "city": "Fès",
+   "at": [-4.99, 34.03],
+   "to": 1911
+  },
+  {
+   "city": "Rabat",
+   "at": [-6.84, 34.02],
+   "from": 1912
+  }
+ ],
+ "Afghanistan": [
+  {
+   "city": "Kandahar",
+   "at": [65.71, 31.62],
+   "to": 1775
+  },
+  {
+   "city": "Kaboul",
+   "at": [69.17, 34.53],
+   "from": 1776
+  }
+ ],
+ "Riazan": [
+  {
+   "city": "Riazan",
+   "at": [39.74, 54.63]
+  }
+ ],
+ "Pérou": [
+  {
+   "city": "Lima",
+   "at": [-77.04, -12.05]
+  }
+ ],
+ "Magadha": [
+  {
+   "city": "Pataliputra",
+   "at": [85.14, 25.61]
+  }
+ ],
+ "Angola": [
+  {
+   "city": "Luanda",
+   "at": [13.23, -8.84]
+  }
+ ],
+ "Territoire du Nord (Royaume-Uni)": [
+  {
+   "city": "Palmerston",
+   "at": [130.84, -12.46]
+  }
+ ],
+ "Afrique du Sud": [
+  {
+   "city": "Pretoria",
+   "at": [28.19, -25.75]
+  }
+ ],
+ "Pologne-Lituanie": [
+  {
+   "city": "Cracovie",
+   "at": [19.94, 50.06]
+  }
+ ],
+ "Venezuela": [
+  {
+   "city": "Caracas",
+   "at": [-66.9, 10.49]
+  }
+ ],
+ "Ghaznévides": [
+  {
+   "city": "Ghazni",
+   "at": [68.43, 33.55],
+   "to": 1160
+  },
+  {
+   "city": "Lahore",
+   "at": [74.34, 31.55],
+   "from": 1161
+  }
+ ],
+ "Rhodésie": [
+  {
+   "city": "Salisbury",
+   "at": [31.05, -17.83]
+  }
+ ],
+ "Abyssinie": [
+  {
+   "city": "Addis-Abeba",
+   "at": [38.75, 9.03]
+  }
+ ],
+ "Australie-Méridionale (Royaume-Uni)": [
+  {
+   "city": "Adélaïde",
+   "at": [138.6, -34.93]
+  }
+ ],
+ "Royaume indo-parthe": [
+  {
+   "city": "Taxila",
+   "at": [72.83, 33.75]
+  }
+ ],
+ "Royaume d’Aksoum": [
+  {
+   "city": "Aksoum",
+   "at": [38.72, 14.12]
+  }
+ ],
+ "Compagnie des Indes britannique": [
+  {
+   "city": "Calcutta",
+   "at": [88.36, 22.57]
+  }
+ ],
+ "Califat de Sokoto": [
+  {
+   "city": "Sokoto",
+   "at": [5.24, 13.06]
+  }
+ ],
+ "Afrique orientale allemande": [
+  {
+   "city": "Dar es Salam",
+   "at": [39.28, -6.82]
+  }
+ ],
+ "Khanat de Khiva": [
+  {
+   "city": "Khiva",
+   "at": [60.36, 41.38]
+  }
+ ],
+ "Québec": [
+  {
+   "city": "Québec",
+   "at": [-71.21, 46.81]
+  }
+ ],
+ "Empire peul": [
+  {
+   "city": "Sokoto",
+   "at": [5.24, 13.06]
+  }
+ ],
+ "Suède": [
+  {
+   "city": "Uppsala",
+   "at": [17.64, 59.86],
+   "to": 1522
+  },
+  {
+   "city": "Stockholm",
+   "at": [18.07, 59.33],
+   "from": 1523
+  }
+ ],
+ "Novgorod": [
+  {
+   "city": "Novgorod",
+   "at": [31.27, 58.52]
+  }
+ ],
+ "Empire khmer": [
+  {
+   "city": "Angkor",
+   "at": [103.87, 13.41],
+   "to": 1431
+  },
+  {
+   "city": "Phnom Penh",
+   "at": [104.92, 11.56],
+   "from": 1432
+  }
+ ],
+ "Ayutthaya": [
+  {
+   "city": "Ayutthaya",
+   "at": [100.56, 14.35]
+  }
+ ],
+ "Nigéria": [
+  {
+   "city": "Lagos",
+   "at": [3.38, 6.52]
+  }
+ ],
+ "Empire byzantin": [
+  {
+   "city": "Nicée",
+   "at": [29.72, 40.43],
+   "to": 1260
+  },
+  {
+   "city": "Constantinople",
+   "at": [28.98, 41.01],
+   "from": 1261
+  }
+ ],
+ "République des Deux Nations": [
+  {
+   "city": "Varsovie",
+   "at": [21.01, 52.23]
+  }
+ ],
+ "Royaume de Rattanakosin": [
+  {
+   "city": "Ayutthaya",
+   "at": [100.56, 14.35],
+   "to": 1766
+  },
+  {
+   "city": "Thonburi",
+   "at": [100.49, 13.72],
+   "from": 1767,
+   "to": 1781
+  },
+  {
+   "city": "Bangkok",
+   "at": [100.5, 13.75],
+   "from": 1782
+  }
+ ],
+ "Cameroun allemand": [
+  {
+   "city": "Douala",
+   "at": [9.7, 4.05]
+  }
+ ],
+ "Nouvelle-Galles du Sud (Royaume-Uni)": [
+  {
+   "city": "Sydney",
+   "at": [151.21, -33.87]
+  }
+ ],
+ "Sud-Ouest africain allemand": [
+  {
+   "city": "Windhoek",
+   "at": [17.08, -22.56]
+  }
+ ],
+ "Mozambique": [
+  {
+   "city": "Maputo",
+   "at": [32.57, -25.97]
+  }
+ ],
+ "Royaume de Sukhothaï": [
+  {
+   "city": "Sukhothaï",
+   "at": [99.7, 17.02]
+  }
+ ],
+ "Indochine française": [
+  {
+   "city": "Saïgon",
+   "at": [106.7, 10.78],
+   "to": 1901
+  },
+  {
+   "city": "Hanoï",
+   "at": [105.85, 21.03],
+   "from": 1902
+  }
+ ],
+ "Xia occidentaux": [
+  {
+   "city": "Xingqing",
+   "at": [106.23, 38.49]
+  }
+ ],
+ "Brésil portugais": [
+  {
+   "city": "Salvador",
+   "at": [-38.51, -12.97]
+  }
+ ],
+ "Pagan": [
+  {
+   "city": "Pagan",
+   "at": [94.87, 21.17],
+   "to": 1297
+  },
+  {
+   "city": "Ava",
+   "at": [95.98, 21.87],
+   "from": 1365
+  }
+ ],
+ "Empire songhaï": [
+  {
+   "city": "Gao",
+   "at": [0.04, 16.27]
+  }
+ ],
+ "Empire srivijaya": [
+  {
+   "city": "Palembang",
+   "at": [104.76, -2.98]
+  }
+ ],
+ "Empire carthaginois": [
+  {
+   "city": "Carthage",
+   "at": [10.32, 36.85]
+  }
+ ],
+ "Hafsides": [
+  {
+   "city": "Tunis",
+   "at": [10.18, 36.8]
+  }
+ ],
+ "Khanat de Sibir": [
+  {
+   "city": "Qashliq",
+   "at": [68.27, 58.2]
+  }
+ ],
+ "Califat almohade": [
+  {
+   "city": "Marrakech",
+   "at": [-8.01, 31.63]
+  }
+ ],
+ "Empire du Japon": [
+  {
+   "city": "Tokyo",
+   "at": [139.69, 35.69]
+  }
+ ],
+ "Chili": [
+  {
+   "city": "Santiago",
+   "at": [-70.65, -33.45]
+  }
+ ],
+ "États marathes": [
+  {
+   "city": "Pune",
+   "at": [73.86, 18.52]
+  }
+ ],
+ "Afrique orientale britannique": [
+  {
+   "city": "Nairobi",
+   "at": [36.82, -1.29]
+  }
+ ],
+ "Makurie": [
+  {
+   "city": "Dongola",
+   "at": [30.74, 18.22]
+  }
+ ],
+ "Chalukyas occidentaux": [
+  {
+   "city": "Kalyani",
+   "at": [76.95, 17.87]
+  }
+ ],
+ "Empire austro-hongrois": [
+  {
+   "city": "Vienne",
+   "at": [16.37, 48.21]
+  }
+ ],
+ "Birmanie": [
+  {
+   "city": "Ava",
+   "at": [95.98, 21.87]
+  }
+ ],
+ "Satavahanas": [
+  {
+   "city": "Pratishthana",
+   "at": [75.38, 19.48]
+  }
+ ],
+ "Espagne": [
+  {
+   "city": "Madrid",
+   "at": [-3.7, 40.42]
+  }
+ ],
+ "Éthiopie": [
+  {
+   "city": "Lalibela",
+   "at": [39.05, 12.03],
+   "from": 1246,
+   "to": 1269
+  },
+  {
+   "city": "Gondar",
+   "at": [37.47, 12.6],
+   "from": 1636,
+   "to": 1854
+  },
+  {
+   "city": "Addis-Abeba",
+   "at": [38.75, 9.03],
+   "from": 1886
+  }
+ ],
+ "Bulgares de la Volga": [
+  {
+   "city": "Bolghar",
+   "at": [49.05, 54.97]
+  }
+ ],
+ "Rashtrakutas": [
+  {
+   "city": "Manyakheta",
+   "at": [77.15, 17.2]
+  }
+ ],
+ "Empire d’Autriche": [
+  {
+   "city": "Vienne",
+   "at": [16.37, 48.21]
+  }
+ ],
+ "Royaume franc": [
+  {
+   "city": "Paris",
+   "at": [2.35, 48.86]
+  }
+ ],
+ "Royaume lagide": [
+  {
+   "city": "Alexandrie",
+   "at": [29.92, 31.2]
+  }
+ ],
+ "Autriche-Hongrie": [
+  {
+   "city": "Vienne",
+   "at": [16.37, 48.21]
+  }
+ ],
+ "Royaume de Méroé": [
+  {
+   "city": "Méroé",
+   "at": [33.75, 16.94]
+  }
+ ],
+ "Botswana": [
+  {
+   "city": "Gaborone",
+   "at": [25.91, -24.65]
+  }
+ ],
+ "Wisigoths": [
+  {
+   "city": "Toulouse",
+   "at": [1.44, 43.6]
+  }
+ ],
+ "Chalukyas": [
+  {
+   "city": "Badami",
+   "at": [75.68, 15.92]
+  }
+ ],
+ "Madagascar (France)": [
+  {
+   "city": "Tananarive",
+   "at": [47.52, -18.91]
+  }
+ ],
+ "Empire chalukya": [
+  {
+   "city": "Manyakheta",
+   "at": [77.15, 17.2],
+   "to": 972
+  },
+  {
+   "city": "Kalyani",
+   "at": [76.95, 17.87],
+   "from": 973
+  }
+ ],
+ "Colonie du Cap": [
+  {
+   "city": "Le Cap",
+   "at": [18.42, -33.92]
+  }
+ ],
+ "Ostrogoths": [
+  {
+   "city": "Ravenne",
+   "at": [12.2, 44.42]
+  }
+ ],
+ "Pologne": [
+  {
+   "city": "Cracovie",
+   "at": [19.94, 50.06],
+   "to": 1595
+  },
+  {
+   "city": "Varsovie",
+   "at": [21.01, 52.23],
+   "from": 1596
+  }
+ ],
+ "Khanat de Boukhara": [
+  {
+   "city": "Boukhara",
+   "at": [64.43, 39.77]
+  }
+ ],
+ "Gurjara-Pratiharas": [
+  {
+   "city": "Kannauj",
+   "at": [79.92, 27.06]
+  }
+ ],
+ "France": [
+  {
+   "city": "Paris",
+   "at": [2.35, 48.86]
+  }
+ ],
+ "Empire sikh": [
+  {
+   "city": "Lahore",
+   "at": [74.34, 31.55]
+  }
+ ],
+ "Empire allemand": [
+  {
+   "city": "Berlin",
+   "at": [13.4, 52.52]
+  }
+ ],
+ "Rome": [
+  {
+   "city": "Rome",
+   "at": [12.5, 41.9]
+  }
+ ],
+ "Kannauj": [
+  {
+   "city": "Kannauj",
+   "at": [79.92, 27.06]
+  }
+ ],
+ "Kaarta": [
+  {
+   "city": "Nioro du Sahel",
+   "at": [-9.35, 15.23]
+  }
+ ],
+ "Allemagne": [
+  {
+   "city": "Berlin",
+   "at": [13.4, 52.52]
+  }
+ ],
+ "Kanem-Bornou": [
+  {
+   "city": "Kukawa",
+   "at": [13.08, 12.92],
+   "from": 1814
+  }
+ ],
+ "Norvège": [
+  {
+   "city": "Oslo",
+   "at": [10.75, 59.91]
+  }
+ ],
+ "Sukhothaï": [
+  {
+   "city": "Sukhothaï",
+   "at": [99.7, 17.02]
+  }
+ ],
+ "Royaume wisigoth": [
+  {
+   "city": "Tolède",
+   "at": [-4.02, 39.86]
+  }
+ ],
+ "Somaliland britannique": [
+  {
+   "city": "Berbera",
+   "at": [45.01, 10.44]
+  }
+ ],
+ "Parthie": [
+  {
+   "city": "Nisa",
+   "at": [58.2, 37.97],
+   "to": -130
+  },
+  {
+   "city": "Ctésiphon",
+   "at": [44.58, 33.09],
+   "from": -129
+  }
+ ],
+ "Équateur": [
+  {
+   "city": "Quito",
+   "at": [-78.47, -0.18]
+  }
+ ],
+ "Royaume himyarite": [
+  {
+   "city": "Zafar",
+   "at": [44.4, 14.2]
+  }
+ ],
+ "Bengale": [
+  {
+   "city": "Gaur",
+   "at": [88.13, 24.87],
+   "to": 1564
+  },
+  {
+   "city": "Dhaka",
+   "at": [90.41, 23.81],
+   "from": 1608,
+   "to": 1716
+  },
+  {
+   "city": "Mourchidabad",
+   "at": [88.27, 24.18],
+   "from": 1717
+  }
+ ],
+ "Régence d’Alger": [
+  {
+   "city": "Alger",
+   "at": [3.06, 36.75]
+  }
+ ],
+ "Lahore": [
+  {
+   "city": "Lahore",
+   "at": [74.34, 31.55]
+  }
+ ],
+ "Imerina": [
+  {
+   "city": "Antananarivo",
+   "at": [47.52, -18.91]
+  }
+ ],
+ "Afrique-Équatoriale française": [
+  {
+   "city": "Brazzaville",
+   "at": [15.28, -4.27]
+  }
+ ],
+ "Empire de Vijayanagara": [
+  {
+   "city": "Hampi",
+   "at": [76.46, 15.34],
+   "to": 1564
+  },
+  {
+   "city": "Penukonda",
+   "at": [77.6, 14.08],
+   "from": 1565,
+   "to": 1591
+  },
+  {
+   "city": "Chandragiri",
+   "at": [79.32, 13.58],
+   "from": 1592
+  }
+ ],
+ "Aïr": [
+  {
+   "city": "Agadez",
+   "at": [7.99, 16.97]
+  }
+ ],
+ "Élam": [
+  {
+   "city": "Suse",
+   "at": [48.26, 32.19]
+  }
+ ],
+ "Nanzhao": [
+  {
+   "city": "Dali",
+   "at": [100.17, 25.69]
+  }
+ ],
+ "Paraguay": [
+  {
+   "city": "Asunción",
+   "at": [-57.58, -25.27]
+  }
+ ],
+ "Hongrie": [
+  {
+   "city": "Székesfehérvár",
+   "at": [18.41, 47.19],
+   "to": 1360
+  },
+  {
+   "city": "Buda",
+   "at": [19.04, 47.5],
+   "from": 1361
+  }
+ ],
+ "Royaume de Hongrie": [
+  {
+   "city": "Buda",
+   "at": [19.04, 47.5]
+  }
+ ],
+ "Khorezm": [
+  {
+   "city": "Gurgandj",
+   "at": [59.15, 42.32]
+  }
+ ],
+ "Japon impérial": [
+  {
+   "city": "Kyoto",
+   "at": [135.77, 35.01],
+   "to": 1867
+  },
+  {
+   "city": "Tokyo",
+   "at": [139.69, 35.69],
+   "from": 1868
+  }
+ ],
+ "Japon (Tokugawa)": [
+  {
+   "city": "Edo",
+   "at": [139.77, 35.69]
+  }
+ ],
+ "Haripunjaya": [
+  {
+   "city": "Lamphun",
+   "at": [99.01, 18.58]
+  }
+ ],
+ "Maroc wattasside": [
+  {
+   "city": "Fès",
+   "at": [-4.99, 34.03]
+  }
+ ],
+ "Fou-nan": [
+  {
+   "city": "Vyadhapura",
+   "at": [104.97, 10.98]
+  }
+ ],
+ "Japon": [
+  {
+   "city": "Kyoto",
+   "at": [135.77, 35.01]
+  }
+ ],
+ "Empire toucouleur": [
+  {
+   "city": "Ségou",
+   "at": [-6.26, 13.43]
+  }
+ ],
+ "Darfour": [
+  {
+   "city": "El Fasher",
+   "at": [25.35, 13.63],
+   "from": 1791
+  }
+ ],
+ "Vandales": [
+  {
+   "city": "Carthage",
+   "at": [10.32, 36.85]
+  }
+ ],
+ "Sultanat de Sennar": [
+  {
+   "city": "Sennar",
+   "at": [33.62, 13.55]
+  }
+ ],
+ "Castille": [
+  {
+   "city": "Burgos",
+   "at": [-3.7, 42.34],
+   "to": 1085
+  },
+  {
+   "city": "Tolède",
+   "at": [-4.02, 39.86],
+   "from": 1086
+  }
+ ],
+ "Empire aztèque": [
+  {
+   "city": "Tenochtitlan",
+   "at": [-99.13, 19.43]
+  }
+ ],
+ "Seldjoukides": [
+  {
+   "city": "Konya",
+   "at": [32.48, 37.87]
+  }
+ ],
+ "Numidie": [
+  {
+   "city": "Cirta",
+   "at": [6.61, 36.37]
+  }
+ ],
+ "Adal": [
+  {
+   "city": "Harar",
+   "at": [42.12, 9.31],
+   "from": 1520
+  }
+ ],
+ "Empire du Ghana": [
+  {
+   "city": "Koumbi Saleh",
+   "at": [-7.98, 15.77]
+  }
+ ],
+ "Finlande": [
+  {
+   "city": "Helsinki",
+   "at": [24.94, 60.17]
+  }
+ ],
+ "Khanat de Crimée": [
+  {
+   "city": "Bakhtchissaraï",
+   "at": [33.93, 44.75]
+  }
+ ],
+ "Prusse": [
+  {
+   "city": "Königsberg",
+   "at": [20.51, 54.71],
+   "to": 1700
+  },
+  {
+   "city": "Berlin",
+   "at": [13.4, 52.52],
+   "from": 1701
+  }
+ ],
+ "Royaume maitraka": [
+  {
+   "city": "Valabhi",
+   "at": [71.88, 21.89]
+  }
+ ],
+ "Zianides": [
+  {
+   "city": "Tlemcen",
+   "at": [-1.31, 34.88]
+  }
+ ],
+ "Royaume-Uni": [
+  {
+   "city": "Londres",
+   "at": [-0.13, 51.51]
+  }
+ ],
+ "Afrique orientale portugaise": [
+  {
+   "city": "Île de Mozambique",
+   "at": [40.73, -15.03]
+  }
+ ],
+ "Principauté de Vladimir-Souzdal": [
+  {
+   "city": "Vladimir",
+   "at": [40.41, 56.13]
+  }
+ ],
+ "Empire chola": [
+  {
+   "city": "Thanjavur",
+   "at": [79.14, 10.79],
+   "to": 1024
+  },
+  {
+   "city": "Gangaikondacholapuram",
+   "at": [79.45, 11.2],
+   "from": 1025,
+   "to": 1279
+  }
+ ],
+ "Cholas": [
+  {
+   "city": "Ouraiyour",
+   "at": [78.7, 10.83],
+   "to": 849
+  },
+  {
+   "city": "Thanjavur",
+   "at": [79.14, 10.79],
+   "from": 850,
+   "to": 1024
+  },
+  {
+   "city": "Gangaikondacholapuram",
+   "at": [79.45, 11.2],
+   "from": 1025
+  }
+ ],
+ "Transvaal": [
+  {
+   "city": "Pretoria",
+   "at": [28.19, -25.75]
+  }
+ ],
+ "Khanat bulgare": [
+  {
+   "city": "Tarnovo",
+   "at": [25.65, 43.08]
+  }
+ ],
+ "Italie": [
+  {
+   "city": "Rome",
+   "at": [12.5, 41.9]
+  }
+ ],
+ "Sultanat de Zanzibar": [
+  {
+   "city": "Zanzibar",
+   "at": [39.19, -6.16]
+  }
+ ],
+ "Annam": [
+  {
+   "city": "Hoa Lu",
+   "at": [105.9, 20.28],
+   "to": 1009
+  },
+  {
+   "city": "Thang Long",
+   "at": [105.85, 21.03],
+   "from": 1010,
+   "to": 1801
+  },
+  {
+   "city": "Hué",
+   "at": [107.58, 16.46],
+   "from": 1802
+  }
+ ],
+ "Đại Việt": [
+  {
+   "city": "Thang Long",
+   "at": [105.85, 21.03]
+  }
+ ],
+ "Royaume d’Italie": [
+  {
+   "city": "Rome",
+   "at": [12.5, 41.9]
+  }
+ ],
+ "Goguryeo": [
+  {
+   "city": "Gungnae",
+   "at": [126.17, 41.14],
+   "to": 426
+  },
+  {
+   "city": "Pyongyang",
+   "at": [125.75, 39.02],
+   "from": 427
+  }
+ ],
+ "Ouganda": [
+  {
+   "city": "Entebbe",
+   "at": [32.46, 0.06]
+  }
+ ],
+ "Arménie": [
+  {
+   "city": "Armavir",
+   "at": [43.95, 40.15],
+   "from": -338,
+   "to": -190
+  },
+  {
+   "city": "Artachat",
+   "at": [44.55, 39.88],
+   "from": -189,
+   "to": 335
+  },
+  {
+   "city": "Dvin",
+   "at": [44.58, 40],
+   "from": 336,
+   "to": 960
+  },
+  {
+   "city": "Ani",
+   "at": [43.57, 40.51],
+   "from": 961,
+   "to": 1045
+  },
+  {
+   "city": "Erevan",
+   "at": [44.51, 40.18],
+   "from": 1918
+  }
+ ],
+ "Pratiharas": [
+  {
+   "city": "Kannauj",
+   "at": [79.92, 27.06]
+  }
+ ],
+ "Cachemire et Ladakh": [
+  {
+   "city": "Srinagar",
+   "at": [74.8, 34.08]
+  }
+ ],
+ "Empire Plantagenêt": [
+  {
+   "city": "Londres",
+   "at": [-0.13, 51.51]
+  }
+ ],
+ "Solankis": [
+  {
+   "city": "Anhilwara",
+   "at": [72.12, 23.85]
+  }
+ ],
+ "Daces": [
+  {
+   "city": "Sarmizegetusa",
+   "at": [23.31, 45.62]
+  }
+ ],
+ "Aragon": [
+  {
+   "city": "Saragosse",
+   "at": [-0.88, 41.65]
+  }
+ ],
+ "Khanat d’Astrakhan": [
+  {
+   "city": "Astrakhan",
+   "at": [48.04, 46.35]
+  }
+ ],
+ "Pallavas": [
+  {
+   "city": "Kanchipuram",
+   "at": [79.7, 12.83]
+  }
+ ],
+ "Victoria (Royaume-Uni)": [
+  {
+   "city": "Melbourne",
+   "at": [144.96, -37.81]
+  }
+ ],
+ "Ahmednagar": [
+  {
+   "city": "Ahmednagar",
+   "at": [74.74, 19.09]
+  }
+ ],
+ "Philippines": [
+  {
+   "city": "Manille",
+   "at": [120.98, 14.6],
+   "from": 1571
+  }
+ ],
+ "Corée": [
+  {
+   "city": "Gaegyeong",
+   "at": [126.56, 37.97],
+   "to": 1391
+  },
+  {
+   "city": "Séoul",
+   "at": [126.98, 37.57],
+   "from": 1392
+  }
+ ],
+ "Angleterre et Irlande": [
+  {
+   "city": "Londres",
+   "at": [-0.13, 51.51]
+  }
+ ],
+ "Angleterre": [
+  {
+   "city": "Londres",
+   "at": [-0.13, 51.51]
+  }
+ ],
+ "Assam": [
+  {
+   "city": "Rangpur",
+   "at": [94.63, 26.98]
+  }
+ ],
+ "Yémen": [
+  {
+   "city": "Sanaa",
+   "at": [44.21, 15.35]
+  }
+ ],
+ "Népal": [
+  {
+   "city": "Katmandou",
+   "at": [85.32, 27.71]
+  }
+ ],
+ "Guyana": [
+  {
+   "city": "Georgetown",
+   "at": [-58.16, 6.8]
+  }
+ ],
+ "Golconde": [
+  {
+   "city": "Golconde",
+   "at": [78.4, 17.38]
+  }
+ ],
+ "Guyane britannique": [
+  {
+   "city": "Georgetown",
+   "at": [-58.16, 6.8]
+  }
+ ],
+ "Cappadoce": [
+  {
+   "city": "Mazaca",
+   "at": [35.48, 38.72]
+  }
+ ],
+ "Ghana": [
+  {
+   "city": "Koumbi Saleh",
+   "at": [-7.98, 15.77]
+  }
+ ],
+ "Alodie": [
+  {
+   "city": "Soba",
+   "at": [32.62, 15.47]
+  }
+ ],
+ "Royaume de Pagan": [
+  {
+   "city": "Pagan",
+   "at": [94.87, 21.17]
+  }
+ ],
+ "Japon (Sengoku)": [
+  {
+   "city": "Kyoto",
+   "at": [135.77, 35.01]
+  }
+ ],
+ "Japon (Fujiwara)": [
+  {
+   "city": "Kyoto",
+   "at": [135.77, 35.01]
+  }
+ ],
+ "Japon (Kamakura)": [
+  {
+   "city": "Kamakura",
+   "at": [139.55, 35.32],
+   "to": 1332
+  },
+  {
+   "city": "Kyoto",
+   "at": [135.77, 35.01],
+   "from": 1333
+  }
+ ],
+ "Japon (Yamato)": [
+  {
+   "city": "Asuka",
+   "at": [135.82, 34.47],
+   "to": 709
+  },
+  {
+   "city": "Nara",
+   "at": [135.84, 34.69],
+   "from": 710,
+   "to": 793
+  },
+  {
+   "city": "Kyoto",
+   "at": [135.77, 35.01],
+   "from": 794
+  }
+ ],
+ "Suède-Norvège": [
+  {
+   "city": "Stockholm",
+   "at": [18.07, 59.33]
+  }
+ ]
+}

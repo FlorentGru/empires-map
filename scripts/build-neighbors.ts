@@ -1,5 +1,7 @@
 // Voisins de l'époque de chaque étape : public/data/empires/<id>/neighbors/<stepId>.geojson
 //   - Point { kind: 'label', name (FR), area (km²) } au pôle d'inaccessibilité ;
+//   - Point { kind: 'capital', name (ville), of (voisin) } : capitale de l'époque (data/capitals.json), si elle est
+//     dans le voisin (tolérance CAPITAL_TOLERANCE_KM) et dans le cadre ;
 //   - (Multi)LineString { kind: 'border' } : contour simplifié, découpé aux bounds de l'empire.
 // Usage : tsx scripts/build-neighbors.ts [--empire <id>]
 import fs from 'node:fs';
@@ -10,10 +12,25 @@ import polylabel from 'polylabel';
 import type { Feature, FeatureCollection, MultiPolygon, Polygon, Position } from 'geojson';
 import { ROOT, selectedEmpires, paths } from './empires/index.ts';
 import { NEIGHBOR_NAMES } from './neighbor-names.ts';
+import CAPITALS from '../data/capitals.json' with { type: 'json' };
+
+type Capital = { city: string; at: [number, number]; from?: number; to?: number };
+// Capitales souvent sur une frontière (Constantinople, Ctésiphon…) et contours simplifiés : marge de 200 km.
+const CAPITAL_TOLERANCE_KM = 200;
+
+/** Capitale du voisin valable à l'année donnée (intervalles from/to inclusifs). */
+function capitalAt(name: string, year: number): Capital | undefined {
+  return ((CAPITALS as unknown as Record<string, Capital[]>)[name] ?? []).find((c) => (c.from ?? -Infinity) <= year && year <= (c.to ?? Infinity));
+}
 
 type Poly = Feature<Polygon | MultiPolygon>;
 const HB_DIR = path.join(ROOT, '.cache/historical-basemaps');
 const DEFAULT_BOUNDS: [Position, Position] = [[-30, 5], [75, 66]];
+/** Cadre des voisins par empire (les timelines n'ont plus de `bounds` depuis la carte du monde entier). */
+const NEIGHBOR_BOUNDS: Record<string, [Position, Position]> = {
+  china: [[55, 5], [150, 58]],
+  mongols: [[2, 8], [146, 62]],
+};
 const MIN_AREA_KM2 = 30000;
 const MAX_BYTES = 60 * 1024;
 
@@ -65,15 +82,15 @@ interface Timeline {
 }
 
 const missing = new Set<string>();
-const stats: Record<string, { files: number; neighbors: number; maxBytes: number }> = {};
+const stats: Record<string, { files: number; neighbors: number; capitals: number; maxBytes: number; farCapitals: Set<string> }> = {};
 
 for (const cfg of selectedEmpires()) {
   const tl = JSON.parse(fs.readFileSync(paths(cfg.id).timeline, 'utf8')) as Timeline;
-  const bounds = tl.bounds ?? DEFAULT_BOUNDS;
+  const bounds = tl.bounds ?? NEIGHBOR_BOUNDS[cfg.id] ?? DEFAULT_BOUNDS;
   const bbox: [number, number, number, number] = [bounds[0][0], bounds[0][1], bounds[1][0], bounds[1][1]];
   const outDir = path.join(ROOT, 'public/data/empires', cfg.id, 'neighbors');
   fs.mkdirSync(outDir, { recursive: true });
-  const st = (stats[cfg.id] = { files: 0, neighbors: 0, maxBytes: 0 });
+  const st = (stats[cfg.id] = { files: 0, neighbors: 0, capitals: 0, maxBytes: 0, farCapitals: new Set<string>() });
 
   for (const step of tl.steps) {
     const cs = cfg.steps.find((s) => s.id === step.id);
@@ -149,6 +166,15 @@ for (const cfg of selectedEmpires()) {
         const biggest = pool.reduce((a, b) => (turf.area(b) > turf.area(a) ? b : a));
         const pt = polylabel(biggest.geometry.coordinates as number[][][], 0.05);
         feats.push(turf.point([r3(pt[0]), r3(pt[1])], { kind: 'label', name: k.fr, area: Math.round(k.area) }));
+        const cap = capitalAt(k.fr, step.year);
+        if (cap && turf.booleanPointInPolygon(cap.at, turf.bboxPolygon(bbox))) {
+          const near = polys(k.geom).some((p) => turf.booleanPointInPolygon(cap.at, p) || turf.pointToPolygonDistance(cap.at, p, { units: 'kilometers' }) <= CAPITAL_TOLERANCE_KM);
+          if (near) {
+            feats.push(turf.point(cap.at, { kind: 'capital', name: cap.city, of: k.fr }));
+            if (attempt === 0) st.capitals++;
+          }
+          else if (attempt === 0) st.farCapitals.add(`${k.fr} → ${cap.city} (${Math.round(Math.min(...polys(k.geom).map((p) => turf.pointToPolygonDistance(cap.at, p, { units: 'kilometers' }))))} km)`);
+        }
 
         const lines = turf.polygonToLine(k.geom) as Feature<any>;
         const flat: any[] = (lines as any).type === 'FeatureCollection' ? (lines as any).features : [lines];
@@ -193,6 +219,8 @@ if (missing.size) {
   console.error([...missing].sort().map((n) => `  ${JSON.stringify(n)}: '',`).join('\n'));
   process.exit(1);
 }
-console.log('empire    | fichiers | voisins moy. | taille max');
+console.log('empire    | fichiers | voisins moy. | capitales | taille max');
 for (const [id, s] of Object.entries(stats))
-  console.log(`${id.padEnd(9)} | ${String(s.files).padStart(8)} | ${(s.neighbors / Math.max(1, s.files)).toFixed(1).padStart(12)} | ${(s.maxBytes / 1024).toFixed(1)} Ko`);
+  console.log(`${id.padEnd(9)} | ${String(s.files).padStart(8)} | ${(s.neighbors / Math.max(1, s.files)).toFixed(1).padStart(12)} | ${String(s.capitals).padStart(9)} | ${(s.maxBytes / 1024).toFixed(1)} Ko`);
+for (const [id, s] of Object.entries(stats))
+  if (s.farCapitals.size) console.log(`  ${id} : capitales hors du voisin (ignorées) : ${[...s.farCapitals].join(', ')}`);
