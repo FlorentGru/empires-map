@@ -85,7 +85,7 @@ export class InventionLayers {
 
   private onClick = (e: MapMouseEvent & { features?: Feature[] }) => {
     const inv = this.find((e.features?.[0]?.properties as Props | undefined)?.id ?? '');
-    if (inv) this.openCard(inv, e.originalEvent.clientX, e.originalEvent.clientY);
+    if (inv) this.openCard(inv, e.originalEvent.clientX, e.originalEvent.clientY, inv.id === this.previewId ? this.previewNote(inv) : undefined);
   };
 
   private openCard(inv: Invention, x: number, y: number, note?: string) {
@@ -110,7 +110,8 @@ export class InventionLayers {
       a.textContent = `${s.label} ↗`;
       parts.push(a);
     }
-    openMapCard(this.map, x, y, inv.name, parts, undefined, inv.id === this.previewId ? this.endPreview : undefined);
+    // Comme pour les catastrophes : l'aperçu reste jusqu'au changement d'étape, même si la fiche se ferme.
+    openMapCard(this.map, x, y, inv.name, parts);
   }
 
   /** Clic sur la frise / le panneau / la galerie : cadrer l'invention et ouvrir sa fiche. */
@@ -118,23 +119,20 @@ export class InventionLayers {
     const inv = this.find((e as CustomEvent<string>).detail);
     if (!inv) return;
     const early = inv.year > this.year;
-    if (early) {
-      this.previewId = inv.id;
-      this.apply();
-    }
+    // Un nouvel aperçu remplace le précédent.
+    this.previewId = early ? inv.id : null;
+    this.apply();
     this.map.flyTo({ center: inv.at, zoom: Math.max(this.map.getZoom(), 5), duration: prefersReducedMotion() ? 0 : 1400, essential: false });
     this.map.once('moveend', () => {
       const pt = this.map.project(inv.at);
       const r = this.map.getContainer().getBoundingClientRect();
-      this.openCard(inv, r.left + pt.x, r.top + pt.y - 16, early ? `Aperçu : cette invention apparaît en ${formatYear(inv.year)}, après la date de l'étape.` : undefined);
+      this.openCard(inv, r.left + pt.x, r.top + pt.y - 16, early ? this.previewNote(inv) : undefined);
     });
   };
 
-  private endPreview = () => {
-    if (!this.previewId) return;
-    this.previewId = null;
-    this.apply();
-  };
+  private previewNote(inv: Invention): string {
+    return `Aperçu : cette invention apparaît en ${formatYear(inv.year)}, après la date de l'étape.`;
+  }
 
   private apply() {
     const src = this.map.getSource(SRC) as GeoJSONSource | undefined;
@@ -170,6 +168,7 @@ export class InventionLayers {
 
   setEnabled(on: boolean) {
     this.enabled = on;
+    if (!on) this.previewId = null;
     void this.ready.then(() => {
       for (const id of IDS) if (this.map.getLayer(id)) this.map.setLayoutProperty(id, 'visibility', on ? 'visible' : 'none');
       this.apply();

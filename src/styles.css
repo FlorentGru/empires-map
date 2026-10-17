@@ -745,10 +745,11 @@ button.empire-card:hover,
 .timeline__invention {
   position: absolute;
   z-index: 2;
-  top: 13px;
-  width: 9px;
-  height: 9px;
-  margin-left: -4.5px;
+  /* Ligne à part, sous les bandes de période : loin des points d'étape et des années. */
+  top: 68px;
+  width: 8px;
+  height: 8px;
+  margin-left: -4px;
   padding: 0;
   background: #2f7a84;
   border: 1.5px solid #f4ead3;

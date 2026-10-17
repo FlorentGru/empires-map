@@ -143,24 +143,22 @@ export class DisasterLayers {
     this.map.once('moveend', then);
   }
 
+  private previewNote(id: string): string | undefined {
+    return id === this.previewId ? `Aperçu hors de la date de l'étape (${formatYear(this.year)}).` : undefined;
+  }
+
   /** Aperçu d'un événement hors de la date de l'étape : affiché en entier, cadré, fiche ouverte. */
   preview(id: string) {
     const d = ALL.find((x) => x.id === id);
     if (!d) return;
     this.previewId = id;
     this.apply();
-    this.frame(d, () => this.openAtMarker(id, `Aperçu hors de la date de l'étape (${formatYear(this.year)}).`));
+    this.frame(d, () => this.openAtMarker(id, this.previewNote(id)));
   }
-
-  private endPreview = () => {
-    if (!this.previewId) return;
-    this.previewId = null;
-    this.apply();
-  };
 
   private onLayerClick = (e: MapMouseEvent & { features?: Feature[] }) => {
     const d = ALL.find((x) => x.id === e.features?.[0]?.properties?.id);
-    if (d) this.openCard(d, e.originalEvent.clientX, e.originalEvent.clientY);
+    if (d) this.openCard(d, e.originalEvent.clientX, e.originalEvent.clientY, this.previewNote(d.id));
   };
 
   private openCard(d: Disaster, x: number, y: number, note?: string) {
@@ -189,7 +187,8 @@ export class DisasterLayers {
       a.textContent = `${s.label} ↗`;
       parts.push(a);
     }
-    openMapCard(this.map, x, y, d.name, parts, undefined, d.id === this.previewId ? this.endPreview : undefined);
+    // L'aperçu ne dépend pas de la fiche : il reste affiché jusqu'au changement d'étape (déplacer la carte ne ferme que la fiche).
+    openMapCard(this.map, x, y, d.name, parts);
   }
 
   private apply() {
@@ -223,7 +222,7 @@ export class DisasterLayers {
       el.innerHTML = `<span class="disaster-marker__ring" aria-hidden="true"></span><span class="disaster-marker__icon" aria-hidden="true">${DISASTER_LABELS[d.kind].icon}</span><span class="disaster-marker__label">${d.name.replace(/</g, '&lt;')} · ${formatDeaths(d.deaths)}</span>`;
       el.addEventListener('click', (ev) => {
         ev.stopPropagation();
-        this.openCard(d, ev.clientX, ev.clientY);
+        this.openCard(d, ev.clientX, ev.clientY, this.previewNote(d.id));
       });
       this.markers.push(new Marker({ element: el }).setLngLat(at).addTo(this.map));
       this.markerOf.set(d.id, el);
@@ -249,6 +248,7 @@ export class DisasterLayers {
 
   setEnabled(on: boolean) {
     this.enabled = on;
+    if (!on) this.previewId = null;
     for (const id of IDS) if (this.map.getLayer(id)) this.map.setLayoutProperty(id, 'visibility', on ? 'visible' : 'none');
     this.apply();
   }

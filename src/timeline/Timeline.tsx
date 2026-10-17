@@ -1,3 +1,4 @@
+import { createPortal } from 'react-dom';
 import { memo, useEffect, useMemo, useRef, useState, type CSSProperties, type RefObject } from 'react';
 import { apogeeStepId, formatArea, normalizedAreas } from '../lib/apogee';
 import disastersData from '../../data/disasters.json';
@@ -16,6 +17,7 @@ import { StoryButton } from '../story/StoryMenu';
 import type { StoryControls } from '../story/useStory';
 import type { Empire } from '../types';
 import { makeTicks, makeYearScale } from './scale';
+import { spreadOffsets } from '../lib/stacks';
 
 interface Props {
   empire: Empire;
@@ -96,21 +98,26 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
     });
   const showInventionTip = (inv: Invention, el: HTMLElement) =>
     setTip({ kind: 'invention', title: `💡 ${inv.name}`, lines: [`${CATEGORY_LABELS[inv.category]} · ${inv.approx ? 'vers ' : ''}${formatYear(inv.year)}`, inv.place], ...place(el) });
-  const inventions = INVENTIONS[empire.id] ?? [];
+  const inventions = useMemo(() => (INVENTIONS[empire.id] ?? []).filter((inv) => inv.year >= empire.start && inv.year <= empire.end), [empire]);
+  // Losanges trop proches (même année ou presque) : écartés de 10 px de part et d'autre.
+  const inventionShift = useMemo(() => spreadOffsets(inventions.map((inv) => yearToX(inv.year)), 0.009), [inventions, yearToX]);
 
   const pct = (x: number) => `${(x * 100).toFixed(3)}%`;
 
   return (
     <footer className="timeline" aria-label="Frise chronologique">
-      {tip && (
-        <div className="timeline__tip" role="tooltip" style={{ left: tip.x, top: tip.y }} data-kind={tip.kind}>
-          <strong>{tip.title}</strong>
-          {tip.lines.map((l) => (
-            <span key={l}>{l}</span>
-          ))}
-          <em>Cliquer pour la voir sur la carte</em>
-        </div>
-      )}
+      {/* Dans <body> : la frise forme un contexte d'empilement (z-index 2) qui ferait passer la bulle sous le quiz et le sage. */}
+      {tip &&
+        createPortal(
+          <div className="timeline__tip" role="tooltip" style={{ left: tip.x, top: tip.y }} data-kind={tip.kind}>
+            <strong>{tip.title}</strong>
+            {tip.lines.map((l) => (
+              <span key={l}>{l}</span>
+            ))}
+            <em>Cliquer pour la voir sur la carte</em>
+          </div>,
+          document.body,
+        )}
       <div className="timeline__controls">
         <button type="button" className="icon-btn" onClick={player.prev} aria-label="Étape précédente" title="Étape précédente (←)">
           ⏮
@@ -195,6 +202,8 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
                 onFocus={(e) => showTip(d, e.currentTarget)}
                 onBlur={() => setTip(null)}
                 onClick={() => {
+                  // La lecture s'arrête : sinon l'étape suivante effacerait aussitôt l'aperçu.
+                  player.pause();
                   // En attente si la carte n'est pas encore prête (consommée par DisasterLayers.setYear).
                   requestDisasterPreview(d.id);
                   window.dispatchEvent(new CustomEvent(OPEN_DISASTER_EVENT, { detail: d.id }));
@@ -204,20 +213,21 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
               </button>
             );
           })}
-          {inventions
-            .filter((inv) => inv.year >= empire.start && inv.year <= empire.end)
-            .map((inv) => (
+          {inventions.map((inv, ii) => (
               <button
                 key={inv.id}
                 type="button"
                 className="timeline__invention"
-                style={{ left: pct(yearToX(inv.year)) }}
+                style={{ left: `calc(${pct(yearToX(inv.year))} + ${inventionShift[ii]! * 10}px)` }}
                 aria-label={`Invention : ${inv.name}, ${formatYear(inv.year)}`}
                 onPointerEnter={(e) => showInventionTip(inv, e.currentTarget)}
                 onPointerLeave={() => setTip(null)}
                 onFocus={(e) => showInventionTip(inv, e.currentTarget)}
                 onBlur={() => setTip(null)}
-                onClick={() => window.dispatchEvent(new CustomEvent(OPEN_INVENTION_EVENT, { detail: inv.id }))}
+                onClick={() => {
+                  player.pause();
+                  window.dispatchEvent(new CustomEvent(OPEN_INVENTION_EVENT, { detail: inv.id }));
+                }}
               />
             ))}
           <div className="timeline__axis" />

@@ -54,3 +54,26 @@ export function fanPositions(n: number, radius = 34): [number, number][] {
   }
   return out;
 }
+
+/**
+ * Sur un axe (valeurs entre 0 et 1, ex. position sur la frise) : décalage, en nombre de pas, de chaque valeur
+ * pour que les voisines plus proches que `gap` s'écartent symétriquement autour de leur groupe.
+ * Ex. [0.1, 0.1, 0.5] → [-0.5, 0.5, 0].
+ */
+export function spreadOffsets(values: number[], gap: number): number[] {
+  const order = values.map((v, i) => [v, i] as const).sort((a, b) => a[0] - b[0]);
+  const out = new Array<number>(values.length).fill(0);
+  let group: number[] = [];
+  const flush = () => {
+    group.forEach((idx, k) => (out[idx] = k - (group.length - 1) / 2));
+    group = [];
+  };
+  let last = -Infinity;
+  for (const [v, i] of order) {
+    if (v - last >= gap) flush();
+    group.push(i);
+    last = v;
+  }
+  flush();
+  return out;
+}

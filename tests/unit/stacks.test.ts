@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { fanPositions, stacks } from '../../src/lib/stacks';
+import { fanPositions, spreadOffsets, stacks } from '../../src/lib/stacks';
 
 describe("piles d'icônes", () => {
   it('regroupe de proche en proche et isole les points éloignés', () => {
@@ -31,5 +31,12 @@ describe('éventail', () => {
       expect(p).toHaveLength(n);
       for (let i = 0; i < n; i++) for (let j = i + 1; j < n; j++) expect(dist(p[i]!, p[j]!)).toBeGreaterThan(20);
     }
+  });
+});
+
+describe('spreadOffsets', () => {
+  it('écarte symétriquement les valeurs trop proches et laisse les isolées en place', () => {
+    expect(spreadOffsets([0.1, 0.1, 0.5], 0.01)).toEqual([-0.5, 0.5, 0]);
+    expect(spreadOffsets([0.3, 0.2, 0.205, 0.21], 0.01)).toEqual([0, -1, 0, 1]);
   });
 });
