@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { GOTO_EVENT, type GotoDetail } from '../map/contemporaryLayers';
+import { formatYear } from '../lib/years';
 import { allStepYears, clampYear, empiresAt, MAX_YEAR, nextStepYear } from '../lib/worldYear';
 import { WorldPanel } from './WorldPanel';
 import { SPEEDS, WorldTimeline } from './WorldTimeline';
@@ -102,6 +103,14 @@ export function WorldYearView({ initialYear, backName, onBack }: Props) {
     <div className="app world-view">
       <h1 className="visually-hidden">Atlas des Empires — Le monde en l'an {year}</h1>
       <WorldYearMap year={year} />
+      {/* L'année affichée, en grand au centre en haut : c'est le repère principal de cette vue. */}
+      <div className="world-year" aria-live="polite">
+        <span className="world-year__label">Le monde en</span>
+        <span key={year} className="world-year__value">{formatYear(year)}</span>
+        <span className="world-year__count">
+          {present.length} empire{present.length > 1 ? 's' : ''} de l'Atlas
+        </span>
+      </div>
       <div className="top-bar">
         <button type="button" className="btn world-back" onClick={onBack}>
           ← Retour à l'empire<span className="world-back__name"> · {backName}</span>

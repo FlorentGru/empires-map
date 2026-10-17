@@ -69,7 +69,7 @@ test('monuments empilés : le survol les écarte en éventail', async ({ page })
 test('catastrophes et routes : la peste noire à Kaffa en 1346, fiche au clic', async ({ page }) => {
   test.setTimeout(90_000);
   await page.goto('/?empire=mongols&step=kaffa-1346&e2e');
-  const plague = page.getByRole('button', { name: /Épidémie : Peste noire/ });
+  const plague = page.locator('.disaster-marker').getByText(/Peste noire/).locator('..');
   await expect(plague).toBeVisible({ timeout: 30_000 });
   await plague.click();
   await expect(page.getByRole('dialog', { name: /Peste noire/ })).toContainText('morts');

@@ -1,9 +1,19 @@
 /* Panneau du guide (chatbot). Styles isolés ici, préfixe .chat- */
-.chat-fab {
+/* Boutons flottants (Quiz, puis le sage) côte à côte, au-dessus de la frise. */
+.chat-fabs {
   position: absolute;
   z-index: 5;
   right: calc(380px + var(--gap) * 2);
   bottom: calc(var(--timeline-h) + var(--gap));
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+.chat-fab {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
   padding: 8px 14px;
   font: inherit;
   color: var(--ink);
@@ -14,14 +24,8 @@
   cursor: pointer;
 }
 .chat-fab:hover { background: var(--parchment-strong); }
-/* Le bouton Quiz se place à gauche de « Demander au sage ». */
-.chat-fab--quiz { right: calc(380px + var(--gap) * 2 + 205px); padding-left: 14px; }
-.chat-fab {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding-left: 50px;
-}
+/* Place réservée au sage, qui dépasse à gauche de sa pastille. */
+.chat-fab--sage { padding-left: 50px; }
 /* Le sage dépasse de la pastille, au-dessus de son bord gauche. */
 .chat-fab__sage {
   position: absolute;
@@ -61,7 +65,7 @@
   box-shadow: 0 4px 16px rgb(0 0 0 / 30%);
 }
 @media (max-width: 900px) {
-  .chat-fab, .chat-panel { right: var(--gap); }
+  .chat-fabs, .chat-panel { right: var(--gap); }
 }
 
 .chat-panel__head {

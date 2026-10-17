@@ -9,18 +9,23 @@ function onKey(e: KeyboardEvent) {
   if (e.key === 'Escape') closeMapCard();
 }
 
+/** Seuls les mouvements faits par l'utilisateur ferment la bulle (pas les vols de caméra automatiques). */
+function onMoveStart(e: { originalEvent?: Event }) {
+  if (e.originalEvent) closeMapCard();
+}
+
 export function closeMapCard(): void {
   if (!current) return;
   const { el, map } = current;
   current = null;
   el.remove();
   document.removeEventListener('keydown', onKey);
-  map.off('movestart', closeMapCard);
+  map.off('movestart', onMoveStart);
 }
 
 /**
  * Ouvre la bulle près de (clientX, clientY), toujours entièrement à l'écran.
- * Se ferme avec ✕, Échap, ou dès que la carte bouge. Le focus va sur `focus` s'il est fourni.
+ * Se ferme avec ✕, Échap, ou dès que l'utilisateur déplace la carte. Le focus va sur `focus` s'il est fourni.
  */
 export function openMapCard(map: MapLibreMap, clientX: number, clientY: number, label: string, content: Node[], focus?: HTMLElement): HTMLDivElement {
   closeMapCard();
@@ -43,6 +48,6 @@ export function openMapCard(map: MapLibreMap, clientX: number, clientY: number, 
   current = { el: card, map };
   (focus ?? close).focus({ preventScroll: true });
   document.addEventListener('keydown', onKey);
-  map.once('movestart', closeMapCard);
+  map.on('movestart', onMoveStart);
   return card;
 }

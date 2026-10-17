@@ -56,3 +56,26 @@ describe('enveloppe convexe', () => {
     expect(h).not.toContainEqual([2, 2]);
   });
 });
+
+import { nearestStepIndex } from '../../src/lib/worldEvents';
+describe('étape la plus proche', () => {
+  it('choisit l’étape la plus proche de l’année', () => {
+    const steps = [{ year: 1206 }, { year: 1241 }, { year: 1346 }];
+    expect(nearestStepIndex(steps, 1347)).toBe(2);
+    expect(nearestStepIndex(steps, 1220)).toBe(0);
+    expect(nearestStepIndex([], 1)).toBe(-1);
+  });
+});
+
+import { lanes } from '../../src/lib/worldEvents';
+describe('lignes de la frise', () => {
+  it('sépare les intervalles qui se chevauchent', () => {
+    const a = { start: 1206, end: 1368 };
+    const b = { start: 1337, end: 1453 };
+    const c = { start: 1400, end: 1410 };
+    const l = lanes([a, b, c]);
+    expect(l.get(a)).toBe(0);
+    expect(l.get(b)).toBe(1);
+    expect(l.get(c)).toBe(0);
+  });
+});

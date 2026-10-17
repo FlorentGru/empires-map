@@ -31,3 +31,19 @@ export function geometryBounds(g: GeoJSON.Polygon | GeoJSON.MultiPolygon): [numb
     }
   return [w, s, e, n];
 }
+
+/**
+ * Point à cadrer à la prochaine étape affichée (ex. « Voir sur la carte » d'un monument dans la galerie) :
+ * la navigation remonte la carte, qui consomme ce point une fois sa caméra posée.
+ */
+let pendingPoint: { at: [number, number]; zoom: number } | null = null;
+
+export function requestFocusPoint(at: [number, number], zoom = 6.5): void {
+  pendingPoint = { at, zoom };
+}
+
+export function takeFocusPoint(): { at: [number, number]; zoom: number } | null {
+  const p = pendingPoint;
+  pendingPoint = null;
+  return p;
+}

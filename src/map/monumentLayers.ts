@@ -38,7 +38,8 @@ export class MonumentLayers {
   private enabled = true;
   /** Piles visibles (≥ 2 monuments), recalculées à chaque fin de mouvement. */
   private piles: ScreenPoint[][] = [];
-  private badges: HTMLDivElement[] = [];
+  /** Badges de nombre et coordonnée de leur pile (repositionnés à chaque mouvement de la carte). */
+  private badges: { el: HTMLDivElement; at: [number, number] }[] = [];
   /** Éventail ouvert : ses pastilles, et les ids masqués dans le calque. */
   private fan: { el: HTMLDivElement; ids: string[] } | null = null;
   private closeTimer = 0;
@@ -82,7 +83,10 @@ export class MonumentLayers {
       map.on('mouseenter', LAYER, this.onEnter);
       map.on('mouseleave', LAYER, this.onLeave);
       map.on('moveend', this.refreshPiles);
+      map.on('move', this.placeBadges);
       map.on('movestart', this.closeFan);
+      map.on('dragstart', this.closeFan);
+      map.on('zoomstart', this.closeFan);
       map.once('idle', this.refreshPiles);
     });
   }
@@ -99,7 +103,7 @@ export class MonumentLayers {
 
   /** Piles visibles à l'écran (monuments d'une même ville) et leur badge de nombre. */
   private refreshPiles = () => {
-    for (const b of this.badges) b.remove();
+    for (const b of this.badges) b.el.remove();
     this.badges = [];
     this.piles = [];
     if (!this.enabled || !this.map.getLayer(LAYER)) return;
@@ -119,11 +123,18 @@ export class MonumentLayers {
       const b = document.createElement('div');
       b.className = 'monument-badge';
       b.textContent = String(g.length);
-      b.style.left = `${g[0]!.x + 9}px`;
-      b.style.top = `${g[0]!.y - 15}px`;
       b.setAttribute('aria-hidden', 'true');
       box.append(b);
-      this.badges.push(b);
+      this.badges.push({ el: b, at: ALL.find((x) => x.id === g[0]!.id)!.location });
+    }
+    this.placeBadges();
+  };
+
+  /** Suit la carte pendant un glissement ou un zoom : le badge reste collé à sa pile. */
+  private placeBadges = () => {
+    for (const b of this.badges) {
+      const p = this.map.project(b.at);
+      b.el.style.transform = `translate(${(p.x + 9).toFixed(1)}px, ${(p.y - 15).toFixed(1)}px)`;
     }
   };
 
@@ -177,7 +188,7 @@ export class MonumentLayers {
     });
     this.map.getContainer().append(el);
     this.fan = { el, ids: pile.map((p) => p.id) };
-    for (const b of this.badges) b.hidden = true;
+    for (const b of this.badges) b.el.hidden = true;
     this.applyFilter();
     // Déploiement : du centre vers chaque place (transition CSS), sauf mouvement réduit.
     if (reduced) el.classList.add('monument-fan--open');
@@ -189,7 +200,7 @@ export class MonumentLayers {
     if (!this.fan) return;
     this.fan.el.remove();
     this.fan = null;
-    for (const b of this.badges) b.hidden = false;
+    for (const b of this.badges) b.el.hidden = false;
     this.applyFilter();
   };
 
@@ -261,9 +272,12 @@ export class MonumentLayers {
     m.off('mouseenter', LAYER, this.onEnter);
     m.off('mouseleave', LAYER, this.onLeave);
     m.off('moveend', this.refreshPiles);
+    m.off('move', this.placeBadges);
     m.off('movestart', this.closeFan);
+    m.off('dragstart', this.closeFan);
+    m.off('zoomstart', this.closeFan);
     this.closeFan();
-    for (const b of this.badges) b.remove();
+    for (const b of this.badges) b.el.remove();
     if (!m.getStyle()) return;
     if (m.getLayer(LAYER)) m.removeLayer(LAYER);
     if (m.getSource(SRC)) m.removeSource(SRC);

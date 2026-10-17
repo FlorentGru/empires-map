@@ -11,10 +11,14 @@ import { addSvgImages } from './svgImages';
 const ALL = routes as TradeRoute[];
 const SRC = 'trade-routes';
 const SRC_MOVERS = 'trade-routes-movers';
-const IDS = ['trade-routes-casing', 'trade-routes-line', 'trade-routes-sea', 'trade-routes-label', 'trade-routes-movers'];
-const CLICKABLE = ['trade-routes-line', 'trade-routes-sea', 'trade-routes-casing'];
+const IDS = ['trade-routes-hit', 'trade-routes-casing', 'trade-routes-line', 'trade-routes-sea', 'trade-routes-label', 'trade-routes-movers'];
+/** Zone de clic invisible et large (14 px) : une ligne de 2 px est trop fine pour la souris. */
+const CLICKABLE = ['trade-routes-hit'];
 const LAND = '#8a5a2b';
 const SEA = '#3f6f8f';
+/** Teintes plus foncées pour les noms (contraste sur le parchemin et la mer). */
+const LAND_TEXT = '#5c3a1c';
+const SEA_TEXT = '#22465e';
 /** Durée d'un trajet complet d'un voyageur (ms), et nombre de voyageurs par route. */
 const TRIP_MS = 45_000;
 const MOVERS_PER_ROUTE = 3;
@@ -49,10 +53,12 @@ export class RouteLayers {
       const before = map.getLayer('city-dot') ? 'city-dot' : undefined;
       map.addSource(SRC, { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
       map.addSource(SRC_MOVERS, { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
-      const color = ['match', ['get', 'kind'], 'mer', SEA, LAND] as never;
-      map.addLayer({ id: 'trade-routes-casing', type: 'line', source: SRC, layout: { 'line-cap': 'round', 'line-join': 'round' }, paint: { 'line-color': '#f4ead3', 'line-width': 5, 'line-opacity': 0.55 } }, before);
+      map.addLayer({ id: 'trade-routes-hit', type: 'line', source: SRC, layout: { 'line-cap': 'round', 'line-join': 'round' }, paint: { 'line-color': '#000', 'line-width': 14, 'line-opacity': 0 } }, before);
+      map.addLayer({ id: 'trade-routes-casing', type: 'line', source: SRC, layout: { 'line-cap': 'round', 'line-join': 'round' }, paint: { 'line-color': '#f4ead3', 'line-width': ['case', ['boolean', ['feature-state', 'hover'], false], 8, 5] as never, 'line-opacity': ['case', ['boolean', ['feature-state', 'hover'], false], 0.9, 0.55] as never } }, before);
       // Terre : trait plein brun ; mer : pointillé bleu (line-dasharray ne dépend pas des données → deux calques).
-      const width = ['interpolate', ['linear'], ['zoom'], 2, 1.6, 6, 3] as never;
+      // Survol : la route s'épaissit (feature-state « hover », id = index de la feature).
+      const hover = (base: number, wide: number) => ['case', ['boolean', ['feature-state', 'hover'], false], wide, base];
+      const width = ['interpolate', ['linear'], ['zoom'], 2, hover(1.6, 3.2), 6, hover(3, 5)] as never;
       map.addLayer(
         { id: 'trade-routes-line', type: 'line', source: SRC, filter: ['==', ['get', 'kind'], 'terre'], layout: { 'line-cap': 'round', 'line-join': 'round' }, paint: { 'line-color': LAND, 'line-width': width, 'line-opacity': 0.8 } },
         before,
@@ -66,9 +72,17 @@ export class RouteLayers {
           id: 'trade-routes-label',
           type: 'symbol',
           source: SRC,
-          minzoom: 3.2,
-          layout: { 'symbol-placement': 'line', 'text-field': ['get', 'name'], 'text-font': ['Noto Sans Regular'], 'text-size': 10.5, 'symbol-spacing': 420, 'text-max-angle': 30 },
-          paint: { 'text-color': color, 'text-halo-color': '#f4ead3', 'text-halo-width': 1.6 },
+          minzoom: 2.8,
+          layout: {
+            'symbol-placement': 'line',
+            'text-field': ['get', 'name'],
+            'text-font': ['Open Sans Semibold'],
+            'text-size': ['interpolate', ['linear'], ['zoom'], 3, 12, 7, 14.5] as never,
+            'text-letter-spacing': 0.02,
+            'symbol-spacing': 520,
+            'text-max-angle': 28,
+          },
+          paint: { 'text-color': ['match', ['get', 'kind'], 'mer', SEA_TEXT, LAND_TEXT] as never, 'text-halo-color': '#f7efd9', 'text-halo-width': 2.2, 'text-halo-blur': 0.4 },
         },
         before,
       );
@@ -90,6 +104,7 @@ export class RouteLayers {
       for (const id of CLICKABLE) {
         map.on('click', id, this.onClick);
         map.on('mouseenter', id, this.onEnter);
+        map.on('mousemove', id, this.onMove);
         map.on('mouseleave', id, this.onLeave);
       }
       this.apply();
@@ -97,11 +112,24 @@ export class RouteLayers {
     document.addEventListener('visibilitychange', this.onVisibility);
   }
 
+  private hovered: number | null = null;
+
+  private setHover(id: number | null) {
+    if (this.hovered !== null) this.map.setFeatureState({ source: SRC, id: this.hovered }, { hover: false });
+    this.hovered = id;
+    if (id !== null) this.map.setFeatureState({ source: SRC, id }, { hover: true });
+  }
+
   private onEnter = () => {
     this.map.getCanvas().style.cursor = 'pointer';
   };
+  private onMove = (e: MapMouseEvent & { features?: Feature[] }) => {
+    const id = e.features?.[0]?.id;
+    this.setHover(typeof id === 'number' ? id : null);
+  };
   private onLeave = () => {
     this.map.getCanvas().style.cursor = '';
+    this.setHover(null);
   };
 
   private onClick = (e: MapMouseEvent & { features?: Feature[] }) => {
@@ -136,8 +164,9 @@ export class RouteLayers {
     this.active = list.map((route) => ({ route, cum: cumulative(route.path) }));
     const fc: FeatureCollection<LineString, RouteProps> = {
       type: 'FeatureCollection',
-      features: list.map((r) => ({ type: 'Feature', properties: { id: r.id, name: r.name, kind: r.kind }, geometry: { type: 'LineString', coordinates: r.path } })),
+      features: list.map((r, i) => ({ type: 'Feature', id: i, properties: { id: r.id, name: r.name, kind: r.kind }, geometry: { type: 'LineString', coordinates: r.path } })),
     };
+    this.setHover(null);
     src.setData(fc);
     this.drawMovers(performance.now());
     cancelAnimationFrame(this.raf);
@@ -195,6 +224,7 @@ export class RouteLayers {
     for (const id of CLICKABLE) {
       m.off('click', id, this.onClick);
       m.off('mouseenter', id, this.onEnter);
+      m.off('mousemove', id, this.onMove);
       m.off('mouseleave', id, this.onLeave);
     }
     if (!m.getStyle()) return;

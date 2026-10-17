@@ -73,3 +73,33 @@ export function convexHull(points: [number, number][]): [number, number][] {
   const hull = [...lower.slice(0, -1), ...upper.slice(0, -1)];
   return [...hull, hull[0]!];
 }
+
+/** Index de l'étape la plus proche d'une année (la plus ancienne en cas d'égalité), ou -1 sans étape. */
+export function nearestStepIndex(steps: { year: number }[], year: number): number {
+  let best = -1;
+  let gap = Infinity;
+  steps.forEach((s, i) => {
+    const d = Math.abs(s.year - year);
+    if (d < gap) {
+      gap = d;
+      best = i;
+    }
+  });
+  return best;
+}
+
+/** Demande d'ouverture de la fiche d'une catastrophe (clic sur sa barre dans la frise). */
+export const OPEN_DISASTER_EVENT = 'atlas:open-disaster';
+
+/** Répartit des intervalles en lignes sans chevauchement (premier rang libre), pour la frise. */
+export function lanes<T extends { start: number; end: number }>(items: T[], maxLanes = 3): Map<T, number> {
+  const ends: number[] = [];
+  const out = new Map<T, number>();
+  for (const it of [...items].sort((a, b) => a.start - b.start)) {
+    let lane = ends.findIndex((e) => e < it.start);
+    if (lane < 0) lane = ends.length < maxLanes ? ends.length : ends.indexOf(Math.min(...ends));
+    ends[lane] = Math.max(ends[lane] ?? -Infinity, it.end);
+    out.set(it, lane);
+  }
+  return out;
+}

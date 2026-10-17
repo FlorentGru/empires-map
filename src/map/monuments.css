@@ -1,6 +1,9 @@
 /* Monuments : badge de pile et éventail au survol (src/map/monumentLayers.ts). */
 .monument-badge {
   position: absolute;
+  left: 0;
+  top: 0;
+  will-change: transform;
   z-index: 2;
   min-width: 15px;
   height: 15px;

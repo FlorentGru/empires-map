@@ -161,3 +161,33 @@
 }
 
 .empire-card--world { font-weight: 600; width: 100%; }
+
+/* Grande année en haut au centre. */
+.world-year {
+  position: absolute;
+  z-index: 4;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 26px 8px;
+  color: var(--ink);
+  background: rgba(244, 234, 211, 0.94);
+  border: 1px solid var(--parchment-edge);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  pointer-events: none;
+}
+.world-year__label { font: italic 0.85rem/1 var(--font-serif); color: var(--ink-soft); }
+.world-year__value { font: 700 2.6rem/1.05 var(--font-serif); color: var(--accent); white-space: nowrap; animation: world-year-in 0.25s ease-out; }
+.world-year__count { font-size: 0.78rem; color: var(--ink-soft); }
+@keyframes world-year-in { from { opacity: 0.35; transform: translateY(-2px); } }
+@media (max-width: 760px) {
+  .world-year { top: 60px; padding: 4px 16px 6px; }
+  .world-year__value { font-size: 1.8rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .world-year__value { animation: none; }
+}

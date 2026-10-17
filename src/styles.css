@@ -682,22 +682,64 @@ button.empire-card:hover,
   transform: scale(1.6);
 }
 
-/* ---------- Catastrophes et guerres sur la frise (infobulle au survol) ---------- */
+/* ---------- Catastrophes et guerres sur la frise : barre fine, zone de survol haute, infobulle ---------- */
 .timeline__disaster {
   position: absolute;
-  top: 1px;
+  z-index: 2;
+  top: -4px;
+  height: 6px;
+  padding: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  --c: #7a1f1a;
+}
+.timeline__disaster-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 1.5px;
   height: 3px;
   border-radius: 2px;
-  background: #7a1f1a;
-  opacity: 0.55;
+  background: var(--c);
+  opacity: 0.6;
+  transition: height 0.12s, top 0.12s, opacity 0.12s;
 }
-.timeline__disaster:hover { opacity: 1; height: 5px; }
-.timeline__disaster--epidemie { background: #6d2a7a; }
+.timeline__disaster:hover .timeline__disaster-bar,
+.timeline__disaster:focus-visible .timeline__disaster-bar { top: 0; height: 6px; opacity: 1; }
+.timeline__disaster:hover { z-index: 3; }
+.timeline__disaster--epidemie { --c: #6d2a7a; }
 .timeline__disaster--eruption,
 .timeline__disaster--seisme,
-.timeline__disaster--tsunami { background: #a4471c; }
+.timeline__disaster--tsunami { --c: #a4471c; }
 .timeline__disaster--famine,
-.timeline__disaster--inondation { background: #6b5a2a; }
+.timeline__disaster--inondation { --c: #6b5a2a; }
+.timeline__tip {
+  position: fixed;
+  z-index: 50;
+  transform: translate(-50%, calc(-100% - 8px));
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  width: max-content;
+  max-width: 240px;
+  padding: 6px 9px;
+  font: 0.78rem/1.3 var(--font-sans);
+  text-align: left;
+  color: var(--ink);
+  background: var(--parchment);
+  border: 1px solid var(--parchment-edge);
+  border-left: 3px solid #7a1f1a;
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+  pointer-events: none;
+  white-space: normal;
+}
+.timeline__tip[data-kind='epidemie'] { border-left-color: #6d2a7a; }
+.timeline__tip[data-kind='eruption'], .timeline__tip[data-kind='seisme'], .timeline__tip[data-kind='tsunami'] { border-left-color: #a4471c; }
+.timeline__tip[data-kind='famine'], .timeline__tip[data-kind='inondation'] { border-left-color: #6b5a2a; }
+.timeline__tip strong { font-size: 0.85rem; }
+.timeline__tip em { color: var(--ink-soft); font-size: 0.72rem; }
 
 /* ---------- Apogée : courbe de puissance, couronne, badge ---------- */
 .timeline__power {
@@ -1570,6 +1612,12 @@ kbd {
 .feedback__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 .feedback__soon { margin: 0 auto 0 0; font-style: italic; color: var(--ink-soft); }
 
+/* ---------- Galerie : monuments ---------- */
+.monuments__era { margin: 14px 0 8px; font: 600 1.15rem var(--font-serif); }
+.monuments__era small { font-size: 0.8rem; color: var(--ink-soft); }
+.monuments__card svg { width: 56px; height: 56px; }
+.monuments__big { display: grid; place-items: center; min-height: 220px; }
+
 /* ---------- Galerie : personnages illustres ---------- */
 .people__empires { margin: 0 0 12px; }
 .people__card { gap: 2px; }
@@ -1590,8 +1638,9 @@ kbd {
   z-index: 2;
   left: var(--gap);
   bottom: calc(var(--timeline-h) + var(--gap));
-  width: 270px;
-  max-height: calc(100% - var(--timeline-h) - 100px);
+  width: 290px;
+  /* Sous le sélecteur d'empire (en haut à gauche), jamais par-dessus. */
+  max-height: calc(100% - var(--timeline-h) - 150px);
   display: flex;
   flex-direction: column;
   background: var(--parchment);
@@ -1642,9 +1691,28 @@ kbd {
 }
 
 .legend__body h3 {
-  font-size: 1.05rem;
-  margin: 6px 0 4px;
+  margin: 0 0 6px;
+  font: 600 0.78rem/1.2 var(--font-sans);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
 }
+
+/* Rubriques : icône dans une colonne de 24 px, libellé, précision en petit dessous. */
+.legend__group { padding: 8px 0 10px; border-bottom: 1px solid rgba(201, 180, 138, 0.6); }
+.legend__group:last-child { border-bottom: 0; }
+.legend__rows { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; }
+.legend__rows > li { display: flex; align-items: center; gap: 9px; font-size: 0.9rem; line-height: 1.25; }
+.legend__icon { flex: none; display: grid; place-items: center; width: 24px; min-height: 18px; }
+.legend__label { display: flex; flex-direction: column; min-width: 0; }
+.legend__label small { font-size: 0.74rem; color: var(--ink-soft); }
+.legend__rows .legend__entity { display: flex; align-items: center; gap: 9px; width: 100%; text-align: left; }
+.legend__cols { display: grid !important; grid-template-columns: 1fr 1fr; gap: 5px 10px !important; }
+.legend__mini { display: flex; align-items: center; gap: 5px; font-size: 0.84rem; }
+.legend__scroll { display: block !important; max-height: 168px; overflow-y: auto; padding-right: 2px; }
+.legend__more { font-size: 0.8rem; color: var(--ink-soft); }
+.legend__bar { display: block; width: 22px; height: 4px; border-radius: 2px; background: linear-gradient(90deg, #7a1f1a 0 40%, #6d2a7a 40% 70%, #a4471c 70%); }
+.legend__glyphs { font-size: 0.8rem; letter-spacing: -2px; }
 
 .legend__list {
   list-style: none;

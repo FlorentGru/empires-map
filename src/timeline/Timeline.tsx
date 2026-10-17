@@ -2,7 +2,8 @@ import { memo, useEffect, useMemo, useRef, useState, type CSSProperties, type Re
 import { apogeeStepId, formatArea, normalizedAreas } from '../lib/apogee';
 import disastersData from '../../data/disasters.json';
 import type { Disaster } from '../types-disaster';
-import { disastersBetween, formatDeaths } from '../lib/worldEvents';
+import { disastersBetween, formatDeaths, lanes, nearestStepIndex, OPEN_DISASTER_EVENT } from '../lib/worldEvents';
+import { DISASTER_LABELS } from '../map/disasterLayers';
 import { eventMeta } from '../lib/eventTypes';
 import { prefersReducedMotion } from '../lib/motion';
 import { firstStepOfPeriods, periodIndexAt } from '../lib/periods';
@@ -74,11 +75,32 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
   const isApogee = !!active && active.id === apogeeId;
   // Catastrophes et guerres meurtrières pendant la vie de l'empire : fines barres en haut de la piste.
   const disasters = useMemo(() => disastersBetween(disastersData as Disaster[], empire.start, empire.end), [empire.start, empire.end]);
+  // Lignes distinctes pour les événements qui se chevauchent (ex. conquêtes mongoles et guerre de Cent Ans).
+  const disasterLane = useMemo(() => lanes(disasters), [disasters]);
+  // Infobulle des catastrophes : position fixe (la piste défile et couperait une bulle interne).
+  const [tip, setTip] = useState<{ d: Disaster; x: number; y: number } | null>(null);
+  const showTip = (d: Disaster, el: HTMLElement) => {
+    const r = el.getBoundingClientRect();
+    setTip({ d, x: Math.min(window.innerWidth - 130, Math.max(130, r.left + r.width / 2)), y: r.top });
+  };
 
   const pct = (x: number) => `${(x * 100).toFixed(3)}%`;
 
   return (
     <footer className="timeline" aria-label="Frise chronologique">
+      {tip && (
+        <div className="timeline__tip" role="tooltip" style={{ left: tip.x, top: tip.y }} data-kind={tip.d.kind}>
+          <strong>
+            {DISASTER_LABELS[tip.d.kind].icon} {tip.d.name}
+          </strong>
+          <span>
+            {DISASTER_LABELS[tip.d.kind].label} · {formatYear(tip.d.start)}
+            {tip.d.end !== tip.d.start ? ` – ${formatYear(tip.d.end)}` : ''}
+          </span>
+          <span>{formatDeaths(tip.d.deaths)}</span>
+          <em>Cliquer pour voir sur la carte</em>
+        </div>
+      )}
       <div className="timeline__controls">
         <button type="button" className="icon-btn" onClick={player.prev} aria-label="Étape précédente" title="Étape précédente (←)">
           ⏮
@@ -148,13 +170,29 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
           {disasters.map((d) => {
             const a = yearToX(Math.max(d.start, empire.start));
             const b = yearToX(Math.min(d.end, empire.end));
+            const k = DISASTER_LABELS[d.kind];
+            const years = `${formatYear(d.start)}${d.end !== d.start ? ` – ${formatYear(d.end)}` : ''}`;
             return (
-              <span
+              // Barre fine, mais zone de survol haute ; infobulle au survol et au focus ; clic → étape la plus proche + fiche.
+              <button
                 key={d.id}
+                type="button"
                 className={`timeline__disaster timeline__disaster--${d.kind}`}
-                style={{ left: pct(a), width: `max(3px, ${pct(b - a)})` }}
-                title={`${d.name} (${formatYear(d.start)}${d.end !== d.start ? ` – ${formatYear(d.end)}` : ''}) · ${formatDeaths(d.deaths)}`}
-              />
+                style={{ left: pct(a), width: `max(6px, ${pct(b - a)})`, top: `${(disasterLane.get(d) ?? 0) * 6}px` }}
+                aria-label={`${k.label} : ${d.name}, ${years}, ${formatDeaths(d.deaths)}`}
+                onPointerEnter={(e) => showTip(d, e.currentTarget)}
+                onPointerLeave={() => setTip(null)}
+                onFocus={(e) => showTip(d, e.currentTarget)}
+                onBlur={() => setTip(null)}
+                onClick={() => {
+                  const i = nearestStepIndex(steps, d.start);
+                  if (i < 0) return;
+                  player.goTo(i);
+                  window.setTimeout(() => window.dispatchEvent(new CustomEvent(OPEN_DISASTER_EVENT, { detail: d.id })), 1200);
+                }}
+              >
+                <span className="timeline__disaster-bar" aria-hidden="true" />
+              </button>
             );
           })}
           <div className="timeline__axis" />

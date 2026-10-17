@@ -88,17 +88,17 @@ export function ChatPanel({ context, goToStep, onOpenQuiz }: Props) {
 
   if (!open) {
     return (
-      <>
+      <div className="chat-fabs">
         {onOpenQuiz && (
-          <button type="button" className="chat-fab chat-fab--quiz" onClick={onOpenQuiz} aria-haspopup="dialog">
+          <button type="button" className="chat-fab" onClick={onOpenQuiz} aria-haspopup="dialog">
             🎓 Quiz
           </button>
         )}
-        <button ref={fabRef} type="button" className="chat-fab" onClick={() => setOpen(true)} aria-haspopup="dialog">
+        <button ref={fabRef} type="button" className="chat-fab chat-fab--sage" onClick={() => setOpen(true)} aria-haspopup="dialog">
           <span className="chat-fab__sage" aria-hidden="true"><Character archetype="sage" width={38} height={51} /></span>
           Demander au sage
         </button>
-      </>
+      </div>
     );
   }
   return (

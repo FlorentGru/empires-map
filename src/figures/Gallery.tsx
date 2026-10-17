@@ -7,6 +7,7 @@ import { characterSvg, FACTION_COLORS, soldierSvg } from './registry';
 import { ARCHETYPE_INFO, FACTION_INFO, type FigureInfo } from './descriptions';
 import { norm, scaled, Svg } from './svgUtils';
 import { PeopleView, type PersonRef } from './People';
+import { MonumentsView } from './Monuments';
 
 interface Props {
   onClose: () => void;
@@ -17,7 +18,7 @@ interface Props {
 }
 
 type Kind = 'faction' | 'archetype';
-type Filter = 'all' | 'soldiers' | 'characters' | 'people';
+type Filter = 'all' | 'soldiers' | 'characters' | 'people' | 'monuments';
 
 interface Item {
   uid: string;
@@ -249,7 +250,7 @@ export function Gallery({ onClose, onNavigate, initialPerson = null }: Props) {
       }}
     >
       <header className="gallery__head">
-        <h1 id="gallery-title">Galerie des figurines</h1>
+        <h1 id="gallery-title">Galerie</h1>
         <div className="gallery__tools">
           <div className="gallery__filters" role="group" aria-label="Filtrer par type">
             {(
@@ -258,6 +259,7 @@ export function Gallery({ onClose, onNavigate, initialPerson = null }: Props) {
                 ['soldiers', 'Soldats'],
                 ['characters', 'Personnages'],
                 ['people', 'Personnages illustres'],
+                ['monuments', 'Monuments'],
               ] as const
             ).map(([id, label]) => (
               <button key={id} type="button" className="btn btn--ghost" aria-pressed={filter === id} onClick={() => setFilter(id)}>
@@ -282,6 +284,8 @@ export function Gallery({ onClose, onNavigate, initialPerson = null }: Props) {
       <div className="gallery__body" ref={bodyRef} onKeyDown={onGridKey}>
         {filter === 'people' ? (
           <PeopleView query={query} initial={initialPerson} onNavigate={onNavigate} />
+        ) : filter === 'monuments' ? (
+          <MonumentsView query={query} onNavigate={onNavigate} />
         ) : selected ? (
           <Detail item={selected} onBack={back} onNavigate={onNavigate} />
         ) : (

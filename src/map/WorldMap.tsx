@@ -6,7 +6,7 @@ import { loadContemporaries, loadDiff, loadMorph, loadNeighbors, loadTerritory, 
 import { prefersReducedMotion } from '../lib/motion';
 import type { City, Empire, TimelineStep } from '../types';
 import { addLand, baseStyle, DEM_SOURCE, MAX_BOUNDS, TERRAIN_EXAGGERATION } from './basemapStyle';
-import { FOCUS_ENTITY_EVENT, geometryBounds, type FocusEntityDetail } from './focusEntity';
+import { takeFocusPoint, FOCUS_ENTITY_EVENT, geometryBounds, type FocusEntityDetail } from './focusEntity';
 import { ArmyLayer, continuedArmies } from './armyLayer';
 import { LONG_MARCH_KM, longestMarchKm, marchMs } from '../lib/march';
 import { CityLayer } from './cityLayer';
@@ -378,6 +378,13 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
       const camera = { center: empire.view.center, zoom: empire.view.zoom, pitch: tiltedRef.current ? TILT_PITCH : 0, padding: viewPadding(panelOpenRef.current) };
       if (prefersReducedMotion()) map.jumpTo(camera);
       else map.flyTo({ ...camera, duration: flyMs(speedRef.current), curve: 1.3, essential: false });
+    }
+
+    // « Voir sur la carte » depuis la galerie : on cadre le point demandé plutôt que l'étape.
+    const focusPoint = takeFocusPoint();
+    if (focusPoint) {
+      cameraKeyRef.current = '';
+      map.flyTo({ center: focusPoint.at, zoom: focusPoint.zoom, pitch: tiltedRef.current ? TILT_PITCH : 0, padding: viewPadding(panelOpenRef.current), duration: prefersReducedMotion() ? 0 : 1800, essential: false });
     }
 
     const key = `${empire.id}/${step.territory}`;

@@ -1,7 +1,7 @@
 import { focusEntity } from '../map/focusEntity';
 import { GOTO_EVENT, type GotoDetail } from '../map/contemporaryLayers';
 import { monumentIconSvg } from '../map/monumentIcons';
-import { memo, useEffect, useId, useState, type CSSProperties } from 'react';
+import { memo, useEffect, useId, useState, type CSSProperties, type ReactNode } from 'react';
 import { loadContemporaries, loadTerritory } from '../data/loadEmpire';
 import { EVENT_TYPES } from '../lib/eventTypes';
 import { DIFF_COLORS } from '../map/diff';
@@ -88,6 +88,29 @@ function useContemporaryEmpires(empireId: string, stepId: string | undefined, on
   return list;
 }
 
+/** Rubrique titrée de la légende. */
+function Group({ title, children }: { title: string; children: ReactNode }) {
+  return (
+    <div className="legend__group">
+      <h3>{title}</h3>
+      <ul className="legend__rows">{children}</ul>
+    </div>
+  );
+}
+
+/** Ligne : icône dans une colonne alignée, libellé et précision en petit. */
+function Row({ icon, label, hint }: { icon: ReactNode; label: string; hint?: string }) {
+  return (
+    <li>
+      <span className="legend__icon">{icon}</span>
+      <span className="legend__label">
+        {label}
+        {hint && <small>{hint}</small>}
+      </span>
+    </li>
+  );
+}
+
 export const Legend = memo(function Legend({ empire, step, countries2026 = false, neighbors = true, contemporaries = true, monuments = true, routes = true, disasters = true }: Props) {
   const others = useContemporaryEmpires(empire.id, step?.id, contemporaries);
   const [open, setOpen] = useState(() => !isMobile());
@@ -112,143 +135,92 @@ export const Legend = memo(function Legend({ empire, step, countries2026 = false
       </button>
 
       <div id={bodyId} className="legend__body" hidden={!open}>
-        <h3>Événements (frise)</h3>
-        <ul className="legend__list legend__list--cols">
-          {TYPES.map((t) => {
-            const m = EVENT_TYPES[t];
-            return (
-              <li key={t}>
-                <span className="legend__dot" style={{ '--c': m.color } as CSSProperties} aria-hidden="true" />
-                <span aria-hidden="true">{m.icon}</span> {m.label}
-              </li>
-            );
-          })}
-        </ul>
+        <Group title="Frise">
+          <li className="legend__cols">
+            {TYPES.map((t) => {
+              const m = EVENT_TYPES[t];
+              return (
+                <span key={t} className="legend__mini">
+                  <span className="legend__dot" style={{ '--c': m.color } as CSSProperties} aria-hidden="true" />
+                  {m.icon} {m.label}
+                </span>
+              );
+            })}
+          </li>
+          {disasters && <Row icon={<span className="legend__bar" aria-hidden="true" />} label="Catastrophes et guerres" hint="barres fines au-dessus de la frise" />}
+        </Group>
 
-        <h3>Carte</h3>
-        <ul className="legend__list legend__list--entities">
-          {entities.slice(0, MAX_ENTITIES).map((e) => (
-            <li key={`${e.index}-${e.name}`}>
-              <button
-                type="button"
-                className="legend__entity"
-                onClick={() => step && focusEntity(step.territory, e.index)}
-                title={`Zoomer sur ${e.name}`}
-              >
-              <span
-                className="legend__swatch"
-                style={{
-                  background: e.status === 'allied' ? 'transparent' : e.status === 'vassal' ? variantVassal(empire.color, e.index) : variantFill(empire.color, e.index),
-                  borderColor: variantLine(empire.color, e.index),
-                  borderStyle: e.status === 'core' ? undefined : 'dashed',
-                }}
-                aria-hidden="true"
-              />
-              Territoire : {e.name}{STATUS_LABEL[e.status]}
-              </button>
-            </li>
-          ))}
-          {entities.length > MAX_ENTITIES && <li>… et {entities.length - MAX_ENTITIES} autres entités</li>}
-        </ul>
-        {others.length > 0 && (
-          <>
-            <h3>Empires contemporains</h3>
-            <ul className="legend__list legend__list--entities">
-              {others.map((o) => (
-                <li key={o.id}>
-                  <button
-                    type="button"
-                    className="legend__entity"
-                    title={`Aller à « ${o.name} » à cette époque`}
-                    onClick={() => window.dispatchEvent(new CustomEvent<GotoDetail>(GOTO_EVENT, { detail: { empire: o.id, step: o.stepId } }))}
-                  >
-                    <span className="legend__swatch legend__swatch--contemporary" style={{ background: `${o.color}38`, borderColor: o.color }} aria-hidden="true" />
-                    {o.name} →
+        <Group title="Territoires">
+          <li className="legend__scroll">
+            <ul className="legend__rows">
+              {entities.slice(0, MAX_ENTITIES).map((e) => (
+                <li key={`${e.index}-${e.name}`}>
+                  <button type="button" className="legend__entity" onClick={() => step && focusEntity(step.territory, e.index)} title={`Zoomer sur ${e.name}`}>
+                    <span className="legend__icon">
+                      <span
+                        className="legend__swatch"
+                        style={{
+                          background: e.status === 'allied' ? 'transparent' : e.status === 'vassal' ? variantVassal(empire.color, e.index) : variantFill(empire.color, e.index),
+                          borderColor: variantLine(empire.color, e.index),
+                          borderStyle: e.status === 'core' ? undefined : 'dashed',
+                        }}
+                        aria-hidden="true"
+                      />
+                    </span>
+                    <span className="legend__label">
+                      {e.name}
+                      {STATUS_LABEL[e.status] && <small>{STATUS_LABEL[e.status].replace(/[()]/g, '').trim()}</small>}
+                    </span>
                   </button>
                 </li>
               ))}
+              {entities.length > MAX_ENTITIES && <li className="legend__more">… et {entities.length - MAX_ENTITIES} autres entités</li>}
             </ul>
-          </>
+          </li>
+          <Row icon={<span className="legend__swatch legend__swatch--diff" style={{ '--c': DIFF_COLORS.gained } as CSSProperties} aria-hidden="true">+</span>} label="Territoire gagné" hint="front qui avance" />
+          <Row icon={<span className="legend__swatch legend__swatch--diff" style={{ '--c': DIFF_COLORS.lost } as CSSProperties} aria-hidden="true">−</span>} label="Territoire perdu" hint="front qui recule" />
+          {others.map((o) => (
+            <li key={o.id}>
+              <button
+                type="button"
+                className="legend__entity"
+                title={`Aller à « ${o.name} » à cette époque`}
+                onClick={() => window.dispatchEvent(new CustomEvent<GotoDetail>(GOTO_EVENT, { detail: { empire: o.id, step: o.stepId } }))}
+              >
+                <span className="legend__icon">
+                  <span className="legend__swatch legend__swatch--contemporary" style={{ background: `${o.color}38`, borderColor: o.color }} aria-hidden="true" />
+                </span>
+                <span className="legend__label">
+                  {o.name} →<small>empire contemporain</small>
+                </span>
+              </button>
+            </li>
+          ))}
+        </Group>
+
+        <Group title="Armées et personnages">
+          <Row icon={<span className="legend__marker" aria-hidden="true">⚔</span>} label="Lieu de la bataille" hint="ou de l'événement" />
+          <Row icon={<span className="legend__soldier" aria-hidden="true" dangerouslySetInnerHTML={{ __html: soldierSvg(sprites.faction, 0) }} />} label="Armée en marche" hint="camp, peuple et lieu de départ" />
+          <Row icon={<span className="legend__figure" aria-hidden="true" dangerouslySetInnerHTML={{ __html: characterSvg(sprites.archetype) }} />} label="Personnage" hint="citation en bulle, « Sa fiche »" />
+        </Group>
+
+        {(monuments || routes || disasters) && (
+          <Group title="Le monde de l'époque">
+            {monuments && <Row icon={<span className="legend__monument" aria-hidden="true" dangerouslySetInnerHTML={{ __html: monumentIconSvg('temple') }} />} label="Monument" hint="cliquer ; les piles s'écartent au survol" />}
+            {routes && <Row icon={<span className="legend__route" aria-hidden="true" />} label="Route terrestre" hint="🐫 caravanes" />}
+            {routes && <Row icon={<span className="legend__route legend__route--sea" aria-hidden="true" />} label="Route maritime" hint="⛵ navires" />}
+            {disasters && <Row icon={<span className="legend__plague" aria-hidden="true" />} label="Épidémie" hint="diffusion, vague récente en vif" />}
+            {disasters && <Row icon={<span className="legend__war" aria-hidden="true" />} label="Guerre meurtrière" hint="zone des combats et bilan" />}
+            {disasters && <Row icon={<span className="legend__glyphs" aria-hidden="true">☣🌋</span>} label="Catastrophe" hint="épidémie, éruption, séisme, famine…" />}
+          </Group>
         )}
-        <ul className="legend__list">
-          <li>
-            <span className="legend__swatch legend__swatch--diff" style={{ '--c': DIFF_COLORS.gained } as CSSProperties} aria-hidden="true">
-              +
-            </span>
-            Front qui avance : territoire gagné (vert)
-          </li>
-          <li>
-            <span className="legend__swatch legend__swatch--diff" style={{ '--c': DIFF_COLORS.lost } as CSSProperties} aria-hidden="true">
-              −
-            </span>
-            Front qui recule : territoire perdu (rouge)
-          </li>
-          <li>
-            <span className="legend__marker" aria-hidden="true">
-              ⚔
-            </span>
-            Lieu de la bataille ou de l'événement
-          </li>
-          <li>
-            <span className="legend__dashes" aria-hidden="true" />{' '}
-            <span className="legend__soldier" aria-hidden="true" dangerouslySetInnerHTML={{ __html: soldierSvg(sprites.faction, 0) }} />
-            {' '}Armées en marche (étiquette : camp et peuple)
-          </li>
-          <li>
-            <span className="legend__figure" aria-hidden="true" dangerouslySetInnerHTML={{ __html: characterSvg(sprites.archetype) }} />
-            {' '}Personnage (nom et citation en bulle)
-          </li>
-          {countries2026 && (
-            <li>
-              <span className="legend__dashes legend__dashes--border" aria-hidden="true" />
-              Frontières actuelles (2026)
-            </li>
-          )}
-          {neighbors && (
-            <li>
-              <span className="legend__dashes legend__dashes--neighbor" aria-hidden="true" />
-              Voisins de l'époque
-            </li>
-          )}
-          {monuments && (
-            <li>
-              <span className="legend__monument" aria-hidden="true" dangerouslySetInnerHTML={{ __html: monumentIconSvg('temple') }} />
-              Monuments de l'époque (cliquables)
-            </li>
-          )}
-          {routes && (
-            <>
-              <li>
-                <span className="legend__route" aria-hidden="true" />
-                Route commerciale terrestre (🐫 caravanes)
-              </li>
-              <li>
-                <span className="legend__route legend__route--sea" aria-hidden="true" />
-                Route maritime (⛵ navires)
-              </li>
-            </>
-          )}
-          {disasters && (
-            <>
-              <li>
-                <span className="legend__plague" aria-hidden="true" />
-                Épidémie : diffusion (vague récente en vif)
-              </li>
-              <li>
-                <span className="legend__war" aria-hidden="true" />
-                Guerre meurtrière (zone des combats) · ☣ 🌋 ≋ catastrophes
-              </li>
-            </>
-          )}
-          <li>
-            <span className="legend__city" aria-hidden="true" />
-            Ville
-          </li>
-          <li>
-            <span className="legend__city legend__city--capital" aria-hidden="true" />
-            Capitale (en gras)
-          </li>
-        </ul>
+
+        <Group title="Repères">
+          <Row icon={<span className="legend__city" aria-hidden="true" />} label="Ville" />
+          <Row icon={<span className="legend__city legend__city--capital" aria-hidden="true" />} label="Capitale" hint="nom en gras" />
+          {neighbors && <Row icon={<span className="legend__dashes legend__dashes--neighbor" aria-hidden="true" />} label="Voisins de l'époque" />}
+          {countries2026 && <Row icon={<span className="legend__dashes legend__dashes--border" aria-hidden="true" />} label="Frontières de 2026" />}
+        </Group>
       </div>
     </section>
   );

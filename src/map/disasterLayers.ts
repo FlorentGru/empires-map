@@ -2,7 +2,7 @@ import { Marker, type GeoJSONSource, type Map as MapLibreMap, type MapMouseEvent
 import type { Feature, FeatureCollection, Point, Polygon } from 'geojson';
 import disasters from '../../data/disasters.json';
 import type { Disaster, DisasterKind } from '../types-disaster';
-import { activeDisasters, convexHull, formatDeaths, spreadUpTo } from '../lib/worldEvents';
+import { activeDisasters, convexHull, formatDeaths, OPEN_DISASTER_EVENT, spreadUpTo } from '../lib/worldEvents';
 import { formatYear } from '../lib/years';
 import { openMapCard } from './mapCard';
 import './disasters.css';
@@ -62,6 +62,7 @@ export class DisasterLayers {
   private year = 0;
   private enabled = true;
   private markers: Marker[] = [];
+  private markerOf = new Map<string, HTMLElement>();
 
   constructor(private map: MapLibreMap) {
     if (!map.hasImage('war-hatch')) map.addImage('war-hatch', hatchImage());
@@ -88,6 +89,7 @@ export class DisasterLayers {
       },
       before,
     );
+    window.addEventListener(OPEN_DISASTER_EVENT, this.onOpenRequest);
     for (const id of ['disasters-war-fill', 'disasters-spread']) {
       map.on('click', id, this.onLayerClick);
       map.on('mouseenter', id, this.onEnter);
@@ -100,6 +102,16 @@ export class DisasterLayers {
   };
   private onLeave = () => {
     this.map.getCanvas().style.cursor = '';
+  };
+
+  /** Clic sur la barre de la frise : fiche ouverte près de la pastille, si l'événement est visible. */
+  private onOpenRequest = (e: Event) => {
+    const id = (e as CustomEvent<string>).detail;
+    const d = ALL.find((x) => x.id === id);
+    const el = this.markerOf.get(id);
+    if (!d || !el) return;
+    const r = el.getBoundingClientRect();
+    this.openCard(d, r.left + r.width / 2, r.top);
   };
 
   private onLayerClick = (e: MapMouseEvent & { features?: Feature[] }) => {
@@ -138,6 +150,7 @@ export class DisasterLayers {
   private apply() {
     for (const m of this.markers) m.remove();
     this.markers = [];
+    this.markerOf.clear();
     const list = this.enabled ? activeDisasters(ALL, this.year) : [];
     const war: FeatureCollection<Polygon, { id: string }> = {
       type: 'FeatureCollection',
@@ -166,6 +179,7 @@ export class DisasterLayers {
         this.openCard(d, ev.clientX, ev.clientY);
       });
       this.markers.push(new Marker({ element: el }).setLngLat(at).addTo(this.map));
+      this.markerOf.set(d.id, el);
     }
   }
 
@@ -181,6 +195,7 @@ export class DisasterLayers {
   }
 
   destroy() {
+    window.removeEventListener(OPEN_DISASTER_EVENT, this.onOpenRequest);
     for (const m of this.markers) m.remove();
     const map = this.map;
     for (const id of ['disasters-war-fill', 'disasters-spread']) {
