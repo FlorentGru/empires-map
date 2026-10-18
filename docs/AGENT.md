@@ -223,6 +223,25 @@ SequentialAgent(name="quiz_atlas", sub_agents=[chercheur, redacteur])
 
 **Transposition aux fiches de paie.** Même architecture : un agent *collecteur* lit les données par des outils minimaux (contrat, heures, primes) et écrit `donnees_paie` dans l'état ; un agent *rédacteur* sans outil produit un `Bulletin` (schéma pydantic) ; le code, jamais le modèle, calcule les montants et `valider_bulletin` rejette les incohérences (totaux, taux, champs obligatoires) avant toute écriture. En cas d'échec : repli sur un brouillon déterministe ou renvoi à un humain, jamais une valeur inventée.
 
+## 10 bis. Vérifier les données : un LLM « juge » ancré sur Wikipédia
+
+`agent/atlas_agent/verify.py` (`npm run verify -- --kind inventions --empire rome`) relit les données de l'Atlas écrites par des agents (années, lieux, dates de vie, bilans, capitales) et produit un rapport à relire dans `docs/verification/`.
+
+| Étape | Fonction | Idée clé |
+|---|---|---|
+| 1. Extraire | `affirmations()` | Une entrée de données devient des **affirmations courtes et vérifiables** (« Le papier apparaît en 105 »). On ne demande pas au LLM « est-ce juste ? » sur un bloc entier. |
+| 2. Récupérer | `Wikipedia.texte()` puis `passages()` | Le **texte de référence** est fourni au modèle (API Wikipédia, mise en cache). On n'envoie que l'introduction et les paragraphes contenant des mots-clés : moins de tokens, moins de bruit. |
+| 3. Juger | `juger()` | **Sortie structurée** : le schéma Pydantic `Verdicts` est passé à Gemini (`response_schema`), qui ne peut répondre qu'avec `ok / douteux / faux / introuvable`, une citation et une valeur proposée. La consigne interdit d'utiliser ses propres connaissances. |
+| 4. Rapporter | `ecrire_rapport()` | Tableau trié par gravité + JSON. **Un humain décide** : le LLM signale, il ne corrige pas les données. |
+
+**Pourquoi « ancré » (grounded) ?** Un LLM interrogé de mémoire peut confirmer une erreur avec aplomb. En l'obligeant à citer un texte fourni, on transforme la question « est-ce vrai ? » en « ce texte le dit-il ? », bien plus fiable et vérifiable (la citation se contrôle).
+
+**Lien avec le RAG.** Ici, on *sait* quel article lire (l'URL est dans les sources) et on choisit les passages par mots-clés. Un RAG (*Retrieval-Augmented Generation*) fait la même chose quand on ne sait pas où chercher : les fiches sont découpées en morceaux, transformées en vecteurs (*embeddings*), et la question sert à retrouver les morceaux les plus proches **par le sens**. C'est la prochaine étape, à construire ensemble pour le sage.
+
+**Tests sans réseau ni clé** (`agent/tests/test_verify.py`) : faux Wikipédia (réponses enregistrées) et faux LLM (fonction qui renvoie un JSON) ; on teste l'extraction, le cache, la sélection des passages, le refus d'un verdict hors schéma, le repli sans texte et le tri du rapport.
+
+**Quota gratuit.** `--rpm 8` espace les appels (environ 8 par minute) ; `--limit 5` pour un premier essai. Le modèle est `VERIFY_MODEL`, sinon `ATLAS_MODEL` s'il s'agit de Gemini, sinon `gemini-flash-latest`.
+
 ---
 
 ## 11. Lancer et expérimenter
@@ -233,6 +252,7 @@ npm run agent                          # serveur de l'agent (port 8000)
 npm start                              # l'Atlas (autre terminal)
 npm run agent:web                      # interface de débogage ADK
 npm run agent:test                     # tests des outils
+npm run verify -- --kind inventions --empire rome --limit 5   # vérifier des données (rapport dans docs/verification/)
 ```
 
 ### Exercices pour progresser
