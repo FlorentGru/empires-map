@@ -1,6 +1,6 @@
 import { LngLatBounds, Marker, type GeoJSONSource, type Map as MapLibreMap, type MapMouseEvent } from 'maplibre-gl';
 import type { Feature, FeatureCollection, Point, Polygon } from 'geojson';
-import disasters from '../../data/disasters.json';
+import { loadWorld, WORLD } from '../data/loadWorld';
 import type { Disaster, DisasterKind } from '../types-disaster';
 import { activeDisasters, convexHull, formatDeaths, OPEN_DISASTER_EVENT, spreadUpTo } from '../lib/worldEvents';
 import { formatYear } from '../lib/years';
@@ -8,7 +8,7 @@ import { closeMapCard, openMapCard } from './mapCard';
 import { prefersReducedMotion } from '../lib/motion';
 import './disasters.css';
 
-const ALL = disasters as Disaster[];
+const all = (): Disaster[] => WORLD.disasters;
 const SRC_SPREAD = 'disasters-spread';
 const SRC_WAR = 'disasters-war';
 const IDS = ['disasters-war-fill', 'disasters-war-line', 'disasters-spread'];
@@ -120,6 +120,8 @@ export class DisasterLayers {
       map.on('mouseenter', id, this.onEnter);
       map.on('mouseleave', id, this.onLeave);
     }
+    // Données chargées à la demande : premier affichage dès leur arrivée.
+    void loadWorld().then(() => this.apply());
   }
 
   private onEnter = () => {
@@ -133,17 +135,17 @@ export class DisasterLayers {
   private onOpenRequest = (e: Event) => {
     const id = (e as CustomEvent<string>).detail;
     pendingPreview = null; // traitée ici : inutile de la rejouer au prochain setYear
-    if (this.markerOf.has(id) && this.previewId !== id && activeDisasters(ALL, this.year).some((d) => d.id === id)) {
+    if (this.markerOf.has(id) && this.previewId !== id && activeDisasters(all(), this.year).some((d) => d.id === id)) {
       // Déjà visible à cette date : cadrer et ouvrir sa fiche.
       this.frame(
-        ALL.find((d) => d.id === id)!,
+        all().find((d) => d.id === id)!,
         () => this.openAtMarker(id),
       );
     } else this.preview(id);
   };
 
   private openAtMarker(id: string, note?: string) {
-    const d = ALL.find((x) => x.id === id);
+    const d = all().find((x) => x.id === id);
     const el = this.markerOf.get(id);
     if (!d || !el) return;
     const r = el.getBoundingClientRect();
@@ -168,7 +170,7 @@ export class DisasterLayers {
 
   /** Aperçu d'un événement hors de la date de l'étape : affiché en entier, cadré, fiche ouverte. */
   preview(id: string) {
-    const d = ALL.find((x) => x.id === id);
+    const d = all().find((x) => x.id === id);
     if (!d) return;
     this.previewId = id;
     this.apply();
@@ -176,7 +178,7 @@ export class DisasterLayers {
   }
 
   private onLayerClick = (e: MapMouseEvent & { features?: Feature[] }) => {
-    const d = ALL.find((x) => x.id === e.features?.[0]?.properties?.id);
+    const d = all().find((x) => x.id === e.features?.[0]?.properties?.id);
     if (d) this.openCard(d, e.originalEvent.clientX, e.originalEvent.clientY, this.previewNote(d.id));
   };
 
@@ -217,8 +219,8 @@ export class DisasterLayers {
     for (const m of this.markers) m.remove();
     this.markers = [];
     this.markerOf.clear();
-    const list = this.enabled ? activeDisasters(ALL, this.year) : [];
-    const shown = this.previewId ? ALL.find((x) => x.id === this.previewId) : undefined;
+    const list = this.enabled ? activeDisasters(all(), this.year) : [];
+    const shown = this.previewId ? all().find((x) => x.id === this.previewId) : undefined;
     if (shown && !list.includes(shown)) list.push(shown);
     const war: FeatureCollection<Polygon, { id: string }> = {
       type: 'FeatureCollection',

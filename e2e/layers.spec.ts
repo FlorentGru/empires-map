@@ -9,7 +9,8 @@ test('monuments et inventions : un seul éventail par lieu, fiche au clic, régl
   await mapReady(page, 'inventions-icons');
   await mapReady(page, 'monuments-icons');
   await page.evaluate(() => (window as any).__map.jumpTo({ center: [2.35, 48.86], zoom: 5, pitch: 0 }));
-  await expect(page.locator('.monument-badge').first()).toBeVisible({ timeout: 30_000 });
+  // Pile de Paris complète (monuments + inventions, calques chargés à la demande) : le plus gros badge dépasse 3.
+  await expect.poll(async () => Math.max(0, ...(await page.locator('.monument-badge').allTextContents()).map(Number)), { timeout: 30_000 }).toBeGreaterThan(3);
   const [x, y] = await page.evaluate(() => {
     const m = (window as any).__map;
     const r = m.getContainer().getBoundingClientRect();

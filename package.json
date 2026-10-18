@@ -31,7 +31,8 @@
     "build:stats": "tsx scripts/build-stats.ts",
     "lint": "oxlint",
     "format": "prettier --write \"src/**/*.{ts,tsx,css}\" \"scripts/**/*.ts\" \"tests/**/*.ts\" \"e2e/**/*.ts\" \"*.ts\" \"*.html\" \".github/**/*.yml\"",
-    "format:check": "prettier --check \"src/**/*.{ts,tsx,css}\" \"scripts/**/*.ts\" \"tests/**/*.ts\" \"e2e/**/*.ts\" \"*.ts\" \"*.html\" \".github/**/*.yml\""
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,css}\" \"scripts/**/*.ts\" \"tests/**/*.ts\" \"e2e/**/*.ts\" \"*.ts\" \"*.html\" \".github/**/*.yml\"",
+    "check:bundle": "tsx scripts/check-bundle.ts"
   },
   "dependencies": {
     "maplibre-gl": "^6.14.0",

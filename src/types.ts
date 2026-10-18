@@ -41,6 +41,16 @@ export interface TimelineStep {
   figures?: Figure[];
 }
 
+/** Métadonnées légères d'un empire, connues dès le démarrage (virtual:empire-index) ; la timeline se charge à la demande. */
+export interface EmpireMeta {
+  id: string;
+  name: string;
+  color: string;
+  start: number;
+  end: number;
+  description: string;
+}
+
 export interface Empire {
   id: string;
   name: string;

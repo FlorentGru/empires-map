@@ -1,4 +1,8 @@
-import { describe, expect, it } from 'vitest';
+import { beforeAll, describe, expect, it } from 'vitest';
+import { loadAllEmpires } from '../../src/data/loadEmpire';
+
+// Les timelines se chargent à la demande : toutes avant les tests.
+beforeAll(() => loadAllEmpires());
 import { offlineQuiz, rng } from '../../src/quiz/offline';
 import type { City } from '../../src/types';
 

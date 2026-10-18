@@ -1,6 +1,8 @@
 import type { FeatureCollection, Geometry, MultiPolygon, Polygon } from 'geojson';
-import type { ContemporaryProperties, DiffKind, MorphProperties, Empire, EmpireStats, NeighborProperties, TerritoryProperties, TimelineStep } from '../types';
+import INDEX from 'virtual:empire-index';
+import type { ContemporaryProperties, DiffKind, MorphProperties, Empire, EmpireMeta, EmpireStats, NeighborProperties, TerritoryProperties, TimelineStep } from '../types';
 import { labelPointsOf } from './labelPoints';
+import { loadInventions } from './loadInventions';
 
 export type TerritoryCollection = FeatureCollection<Polygon | MultiPolygon, TerritoryProperties>;
 
@@ -8,38 +10,71 @@ export type TerritoryCollection = FeatureCollection<Polygon | MultiPolygon, Terr
  * Ajouter un empire = ajouter un dossier data/empires/<id>/timeline.json.
  * Les dossiers préfixés « _ » (fixtures de développement) ne sont utilisés
  * que si aucun vrai empire n'est disponible.
+ *
+ * Chargement à la demande : au démarrage, seul l'index léger (virtual:empire-index, généré au build)
+ * et la timeline de l'empire affiché sont chargés. EMPIRES se remplit au fur et à mesure ; les vues qui
+ * parcourent tous les empires (galerie, comparaison, monde, quiz) attendent loadAllEmpires().
  */
-const modules = import.meta.glob<Empire>('../../data/empires/*/timeline.json', {
-  eager: true,
-  import: 'default',
-});
+const loaders = import.meta.glob<Empire>('../../data/empires/*/timeline.json', { import: 'default' });
 
-// Surfaces par étape (scripts/build-stats.ts), rattachées à chaque empire.
-const statsModules = import.meta.glob<EmpireStats>('../../data/empires/*/stats.json', {
-  eager: true,
-  import: 'default',
-});
+// Surfaces par étape (scripts/build-stats.ts), rattachées à chaque empire (petits fichiers, chargés avec la timeline).
+const statsLoaders = import.meta.glob<EmpireStats>('../../data/empires/*/stats.json', { import: 'default' });
 
-function statsOf(id: string): EmpireStats | undefined {
-  return statsModules[`../../data/empires/${id}/stats.json`];
-}
-
-function byStartYear(a: Empire, b: Empire) {
+function byStartYear(a: { start: number }, b: { start: number }) {
   return a.start - b.start;
 }
 
-function sanitize(empire: Empire): Empire {
-  const steps = [...(empire.steps ?? [])].sort((a, b) => a.year - b.year);
-  return { ...empire, steps, stats: empire.stats ?? statsOf(empire.id) };
+const realIndex = INDEX.filter((e) => !e.id.startsWith('_'));
+/** Empires disponibles (métadonnées), triés par date de début : connus dès le démarrage. */
+export const EMPIRE_INDEX: EmpireMeta[] = (realIndex.length > 0 ? realIndex : INDEX).sort(byStartYear);
+
+/** Empires dont la timeline est chargée, triés par date de début (tableau partagé, rempli par loadEmpire). */
+export const EMPIRES: Empire[] = [];
+
+const pending = new Map<string, Promise<Empire>>();
+
+/** Identifiant valide : celui demandé s'il existe, sinon Rome, sinon le premier empire. */
+export function resolveEmpireId(id: string | null | undefined): string {
+  return (EMPIRE_INDEX.find((e) => e.id === id) ?? EMPIRE_INDEX.find((e) => e.id === 'rome') ?? EMPIRE_INDEX[0])!.id;
 }
 
-const all = Object.values(modules).filter((e): e is Empire => !!e && typeof e.id === 'string').map(sanitize);
-const real = all.filter((e) => !e.id.startsWith('_') && e.steps.length > 0);
+/** Charge (une seule fois) la timeline d'un empire et l'ajoute à EMPIRES. */
+export function loadEmpire(id: string): Promise<Empire> {
+  const key = resolveEmpireId(id);
+  let p = pending.get(key);
+  if (!p) {
+    p = (async () => {
+      const [empire, stats] = await Promise.all([
+        loaders[`../../data/empires/${key}/timeline.json`]!(),
+        statsLoaders[`../../data/empires/${key}/stats.json`]?.() ?? Promise.resolve(undefined),
+        loadInventions(key),
+      ]);
+      const steps = [...(empire.steps ?? [])].sort((a, b) => a.year - b.year);
+      const full: Empire = { ...empire, steps, stats: empire.stats ?? stats };
+      if (!EMPIRES.some((e) => e.id === full.id)) {
+        EMPIRES.push(full);
+        EMPIRES.sort(byStartYear);
+      }
+      return full;
+    })();
+    pending.set(key, p);
+  }
+  return p;
+}
 
-export const EMPIRES: Empire[] = (real.length > 0 ? real : all.filter((e) => e.steps.length > 0)).sort(byStartYear);
+/** Toutes les timelines (vues qui parcourent tous les empires). */
+export function loadAllEmpires(): Promise<Empire[]> {
+  return Promise.all(EMPIRE_INDEX.map((e) => loadEmpire(e.id))).then(() => EMPIRES);
+}
 
+/** Empire déjà chargé (sinon Rome ou le premier chargé). */
 export function getEmpire(id: string | null | undefined): Empire | undefined {
   return EMPIRES.find((e) => e.id === id) ?? EMPIRES.find((e) => e.id === 'rome') ?? EMPIRES[0];
+}
+
+/** Charge un module de vue et, avant de l'afficher, toutes les timelines (à passer à React.lazy). */
+export function withAllEmpires<T>(load: () => Promise<T>): () => Promise<T> {
+  return () => Promise.all([load(), loadAllEmpires()]).then(([m]) => m);
 }
 
 /* ---------- Territoires (fetch + cache) ---------- */

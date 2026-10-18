@@ -1,4 +1,4 @@
-import { OPEN_PERSON_EVENT, type OpenPersonDetail } from '../data/loadPeople';
+import { OPEN_PERSON_EVENT, type OpenPersonDetail } from '../data/personEvent';
 import type { Map as MapLibreMap } from 'maplibre-gl';
 import type { Figure, TimelineStep } from '../types';
 import { FACTION_COLORS, characterSvg } from './sprites';

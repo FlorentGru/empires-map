@@ -1,4 +1,8 @@
-import { describe, expect, it } from 'vitest';
+import { beforeAll, describe, expect, it } from 'vitest';
+import { loadAllEmpires } from '../../src/data/loadEmpire';
+
+// Les timelines se chargent à la demande : toutes avant les tests.
+beforeAll(() => loadAllEmpires());
 import { allStepYears, clampYear, empiresAt, MAX_YEAR, MIN_YEAR, nextStepYear, posToYear, yearToPos } from '../../src/lib/worldYear';
 
 const ids = (y: number) => empiresAt(y).map((p) => p.empire.id);

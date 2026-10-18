@@ -11,9 +11,4 @@ export function findPerson(empireId: string, id: string): Person | undefined {
   return PEOPLE[empireId]?.find((p) => p.id === id);
 }
 
-/** Événement : ouvrir la galerie sur la fiche d'un personnage (lien « Sa fiche » des cartes de personnage). */
-export const OPEN_PERSON_EVENT = 'atlas:open-person';
-export interface OpenPersonDetail {
-  empire: string;
-  id: string;
-}
+export { OPEN_PERSON_EVENT, type OpenPersonDetail } from './personEvent';

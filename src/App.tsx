@@ -1,9 +1,8 @@
 import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react';
-import { EMPIRES, getEmpire } from './data/loadEmpire';
+import { EMPIRE_INDEX, getEmpire, loadEmpire, resolveEmpireId, withAllEmpires } from './data/loadEmpire';
 import { WorldMap } from './map/WorldMap';
 import { AboutModal } from './panels/AboutModal';
-import { FeedbackDialog } from './feedback/FeedbackDialog';
-import { OPEN_PERSON_EVENT, type OpenPersonDetail } from './data/loadPeople';
+import { OPEN_PERSON_EVENT, type OpenPersonDetail } from './data/personEvent';
 import { inventionsBetween } from './data/loadInventions';
 import { EmpirePicker } from './panels/EmpirePicker';
 import { Legend } from './panels/Legend';
@@ -17,15 +16,13 @@ import { chapterAt } from './lib/periods';
 import { useStory } from './story/useStory';
 import { Timeline } from './timeline/Timeline';
 import { ChatPanel } from './chat/ChatPanel';
-import { QuizDialog } from './quiz/QuizDialog';
 import type { ChatContext } from './chat/ChatPanel';
-import { clearWorldUrl, DEFAULT_WORLD_YEAR, readWorldYear, WorldYearView } from './world/WorldYearView';
-import { CompareView } from './compare/CompareView';
+import { clearWorldUrl, DEFAULT_WORLD_YEAR, readWorldYear } from './world/worldUrl';
 
 /** ?compare=rome,china → les deux empires comparés (connus et distincts), sinon null. */
 function readCompare(): { a: string; b: string } | null {
   const [a, b] = (new URLSearchParams(window.location.search).get('compare') ?? '').split(',');
-  if (!a || !b || a === b || !EMPIRES.some((e) => e.id === a) || !EMPIRES.some((e) => e.id === b)) return null;
+  if (!a || !b || a === b || !EMPIRE_INDEX.some((e) => e.id === a) || !EMPIRE_INDEX.some((e) => e.id === b)) return null;
   return { a, b };
 }
 
@@ -39,7 +36,12 @@ function writeCompare(c: { a: string; b: string } | null) {
 import type { Empire } from './types';
 
 // Galerie des figurines : chargée à la demande.
-const Gallery = lazy(() => import('./figures/Gallery').then((m) => ({ default: m.Gallery })));
+// Vues chargées à la demande (hors du JS initial) ; celles qui parcourent tous les empires attendent leurs timelines.
+const Gallery = lazy(withAllEmpires(() => import('./figures/Gallery').then((m) => ({ default: m.Gallery }))));
+const CompareView = lazy(withAllEmpires(() => import('./compare/CompareView').then((m) => ({ default: m.CompareView }))));
+const WorldYearView = lazy(withAllEmpires(() => import('./world/WorldYearView').then((m) => ({ default: m.WorldYearView }))));
+const QuizDialog = lazy(withAllEmpires(() => import('./quiz/QuizDialog').then((m) => ({ default: m.QuizDialog }))));
+const FeedbackDialog = lazy(() => import('./feedback/FeedbackDialog').then((m) => ({ default: m.FeedbackDialog })));
 
 function clearFiguresParam() {
   const url = new URL(window.location.href);
@@ -50,7 +52,9 @@ function clearFiguresParam() {
 }
 
 export function App() {
-  const [empireId, setEmpireId] = useState(() => getEmpire(readUrlState().empire)?.id);
+  const [empireId, setLoadedEmpireId] = useState(() => resolveEmpireId(readUrlState().empire));
+  // Changer d'empire : sa timeline est chargée d'abord (à la demande), puis affichée.
+  const setEmpireId = useCallback((id: string) => void loadEmpire(id).then((e) => setLoadedEmpireId(e.id)), []);
   const empire = getEmpire(empireId);
   const [navKey, setNavKey] = useState(0);
   // Comparaison de deux empires (?compare=a,b) à la place de l'Atlas.
@@ -79,13 +83,16 @@ export function App() {
   }, []);
   /** Depuis la galerie : va à l'étape d'un empire (URL puis remontage du lecteur, qui relit l'URL). */
   const goToStep = useCallback((id: string, stepId: string) => {
-    clearFiguresParam();
-    clearWorldUrl();
-    setWorld(null);
-    writeUrlState(id, stepId);
-    setEmpireId(id);
-    setNavKey((k) => k + 1);
-    setGalleryOpen(false);
+    // Timeline chargée d'abord (à la demande), puis tout bascule d'un coup.
+    void loadEmpire(id).then((e) => {
+      clearFiguresParam();
+      clearWorldUrl();
+      setWorld(null);
+      writeUrlState(e.id, stepId);
+      setLoadedEmpireId(e.id);
+      setNavKey((k) => k + 1);
+      setGalleryOpen(false);
+    });
   }, []);
 
   // « Sa fiche » sur une carte de personnage : galerie ouverte sur sa biographie.
@@ -103,7 +110,7 @@ export function App() {
   useEffect(() => {
     const onGoto = (e: Event) => {
       const d = (e as CustomEvent<{ empire: string; step: string }>).detail;
-      if (d && getEmpire(d.empire)) goToStep(d.empire, d.step);
+      if (d && EMPIRE_INDEX.some((e) => e.id === d.empire)) goToStep(d.empire, d.step);
     };
     window.addEventListener('atlas:goto', onGoto);
     return () => window.removeEventListener('atlas:goto', onGoto);
@@ -119,24 +126,32 @@ export function App() {
   }
   if (compare) {
     return (
-      <CompareView
-        key={`${compare.a}|${compare.b}`}
-        a={compare.a}
-        b={compare.b}
-        onChange={(a, b) => setCompare({ a, b })}
-        onExit={() => {
-          setEmpireId(compare.a);
-          setCompare(null);
-        }}
-      />
+      <Suspense fallback={<p className="loading-view">Chargement…</p>}>
+        <CompareView
+          key={`${compare.a}|${compare.b}`}
+          a={compare.a}
+          b={compare.b}
+          onChange={(a, b) => setCompare({ a, b })}
+          onExit={() => {
+            setEmpireId(compare.a);
+            setCompare(null);
+          }}
+        />
+      </Suspense>
     );
   }
   if (world) {
     return (
       <>
-        <WorldYearView initialYear={world.year} backName={empire.name} onBack={leaveWorld} />
+        <Suspense fallback={<p className="loading-view">Chargement…</p>}>
+          <WorldYearView initialYear={world.year} backName={empire.name} onBack={leaveWorld} />
+        </Suspense>
         <ChatPanel context={chatContext} goToStep={goToStep} onOpenQuiz={openQuiz} />
-        <QuizDialog open={quizOpen} onClose={() => setQuizOpen(false)} empire={empire.id} />
+        {quizOpen && (
+          <Suspense fallback={null}>
+            <QuizDialog open onClose={() => setQuizOpen(false)} empire={empire.id} />
+          </Suspense>
+        )}
         {galleryOpen && (
           <Suspense fallback={null}>
             <Gallery onClose={closeGallery} onNavigate={goToStep} initialPerson={personRef} />
@@ -153,12 +168,16 @@ export function App() {
         empire={empire}
         onSelectEmpire={setEmpireId}
         onOpenWorld={(year) => setWorld({ year })}
-        onOpenCompare={() => setCompare({ a: empire.id, b: EMPIRES.find((e) => e.id !== empire.id)!.id })}
+        onOpenCompare={() => setCompare({ a: empire.id, b: EMPIRE_INDEX.find((e) => e.id !== empire.id)!.id })}
         onOpenGallery={() => setGalleryOpen(true)}
         onContext={setChatContext}
       />
       <ChatPanel context={chatContext} goToStep={goToStep} onOpenQuiz={openQuiz} />
-      <QuizDialog open={quizOpen} onClose={() => setQuizOpen(false)} empire={empire.id} />
+      {quizOpen && (
+        <Suspense fallback={null}>
+          <QuizDialog open onClose={() => setQuizOpen(false)} empire={empire.id} />
+        </Suspense>
+      )}
       {galleryOpen && (
         <Suspense fallback={null}>
           <Gallery onClose={closeGallery} onNavigate={goToStep} initialPerson={personRef} />
@@ -346,7 +365,7 @@ function Atlas({
       />
 
       <div className="top-bar">
-        <EmpirePicker empires={EMPIRES} current={empire} onSelect={onSelectEmpire} onOpenWorld={() => onOpenWorld(step?.year ?? DEFAULT_WORLD_YEAR)} />
+        <EmpirePicker empires={EMPIRE_INDEX} current={empire} onSelect={onSelectEmpire} onOpenWorld={() => onOpenWorld(step?.year ?? DEFAULT_WORLD_YEAR)} />
         <div className="top-bar__right">
           <ViewControls
             tilted={tilted}
@@ -412,7 +431,11 @@ function Atlas({
       />
       <Timeline empire={empire} player={player} compare2026={countries2026} story={story.controls} />
       <AboutModal open={aboutOpen} onClose={() => setAboutOpen(false)} />
-      <FeedbackDialog open={feedbackOpen} onClose={() => setFeedbackOpen(false)} empire={empire.id} step={step?.id} />
+      {feedbackOpen && (
+        <Suspense fallback={null}>
+          <FeedbackDialog open onClose={() => setFeedbackOpen(false)} empire={empire.id} step={step?.id} />
+        </Suspense>
+      )}
     </div>
   );
 }

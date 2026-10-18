@@ -2688,3 +2688,15 @@ kbd {
   border-left: 3px solid #2f7a84;
   border-radius: 4px;
 }
+
+/* Vue chargée à la demande (comparaison, monde en l'an X) : message bref le temps du téléchargement. */
+.loading-view {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  font-family: var(--font-serif);
+  color: var(--ink-soft);
+  background: var(--parchment);
+}

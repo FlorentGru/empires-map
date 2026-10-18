@@ -1,6 +1,6 @@
 import type { GeoJSONSource, Map as MapLibreMap, MapMouseEvent } from 'maplibre-gl';
 import type { Feature, FeatureCollection, LineString, Point } from 'geojson';
-import routes from '../../data/routes.json';
+import { loadWorld, WORLD } from '../data/loadWorld';
 import { ROUTE_CARRIERS, type TradeRoute } from '../types-route';
 import { activeRoutes, cumulative, pointAlong } from '../lib/worldEvents';
 import { formatYear } from '../lib/years';
@@ -9,7 +9,7 @@ import { openMapCard } from './mapCard';
 import { addSvgImages } from './svgImages';
 import { carrierSvg, CARRIER_LABELS } from './routeIcons';
 
-const ALL = routes as TradeRoute[];
+const all = (): TradeRoute[] => WORLD.routes;
 const SRC = 'trade-routes';
 const SRC_MOVERS = 'trade-routes-movers';
 const SRC_STOPS = 'trade-routes-stops';
@@ -54,7 +54,7 @@ export class RouteLayers {
       [`carrier-${c}-e`, carrierSvg(c), 32, 24] as [string, string, number, number],
       [`carrier-${c}-w`, carrierSvg(c, true), 32, 24] as [string, string, number, number],
     ]);
-    this.ready = addSvgImages(map, images).then(() => {
+    this.ready = Promise.all([addSvgImages(map, images), loadWorld()]).then(() => {
       if (!map.getStyle() || map.getSource(SRC)) return;
       const before = map.getLayer('city-dot') ? 'city-dot' : undefined;
       map.addSource(SRC, { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
@@ -219,7 +219,7 @@ export class RouteLayers {
     const stopHit = this.map.queryRenderedFeatures(e.point, { layers: ['trade-routes-stops'] })[0];
     if (stopHit) {
       const sp = stopHit.properties as { route: string; name: string; note?: string };
-      const route = ALL.find((x) => x.id === sp.route);
+      const route = all().find((x) => x.id === sp.route);
       const t = document.createElement('p');
       t.className = 'map-card__title';
       t.textContent = sp.name;
@@ -237,7 +237,7 @@ export class RouteLayers {
       return;
     }
     const id = (e.features?.[0]?.properties as RouteProps | undefined)?.id;
-    const r = ALL.find((x) => x.id === id);
+    const r = all().find((x) => x.id === id);
     if (!r) return;
     const title = document.createElement('p');
     title.className = 'map-card__title';
@@ -270,7 +270,7 @@ export class RouteLayers {
   private apply() {
     const src = this.map.getSource(SRC) as GeoJSONSource | undefined;
     if (!src) return;
-    const list = this.enabled ? activeRoutes(ALL, this.year) : [];
+    const list = this.enabled ? activeRoutes(all(), this.year) : [];
     this.active = list.map((route) => ({ route, cum: cumulative(route.path) }));
     const fc: FeatureCollection<LineString, RouteProps> = {
       type: 'FeatureCollection',

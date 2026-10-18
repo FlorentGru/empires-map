@@ -1,6 +1,6 @@
 import type { Map as MapLibreMap, MapMouseEvent } from 'maplibre-gl';
 import type { Feature, FeatureCollection, Point } from 'geojson';
-import monuments from '../../data/monuments.json';
+import { loadWorld, WORLD } from '../data/loadWorld';
 import { MONUMENT_KINDS, type Monument } from '../types-monument';
 import { formatYear } from '../lib/years';
 import { addMonumentIcons } from './monumentIcons';
@@ -12,7 +12,7 @@ import './monuments.css';
 const SRC = 'monuments';
 const LAYER = 'monuments-icons';
 const HALO = '#f4ead3';
-const ALL = monuments as Monument[];
+const all = (): Monument[] => WORLD.monuments;
 
 /** Monuments debout à l'année donnée : achevés (built ≤ year) et pas encore détruits (year < until). */
 export function standingAt(list: Monument[], year: number): Monument[] {
@@ -42,30 +42,31 @@ export class MonumentLayers {
     this.fan = pileFanFor(map);
     this.pile = {
       layer: LAYER,
-      locate: (id) => ALL.find((x) => x.id === id)?.location as [number, number] | undefined,
+      locate: (id) => all().find((x) => x.id === id)?.location as [number, number] | undefined,
       item: (id) => {
-        const m = ALL.find((x) => x.id === id);
+        const m = all().find((x) => x.id === id);
         return m && { name: m.name, iconSvg: monumentIconSvg(m.kind) };
       },
       onPick: (id, x, y) =>
         this.openCard(
-          ALL.find((m) => m.id === id)!,
+          all().find((m) => m.id === id)!,
           x,
           y,
         ),
       onHidden: () => this.applyFilter(),
     };
     this.fan.register(this.pile);
-    const data: FeatureCollection<Point, { id: string; kind: string; name: string; built: number; until: number }> = {
-      type: 'FeatureCollection',
-      features: ALL.map((m) => ({
-        type: 'Feature',
-        properties: { id: m.id, kind: m.kind, name: m.name, built: m.built, until: m.until ?? 99999 },
-        geometry: { type: 'Point', coordinates: m.location },
-      })),
-    };
-    this.ready = addMonumentIcons(map, MONUMENT_KINDS).then(() => {
+    // Icônes et données (chargées à la demande) prêtes : le calque est ajouté.
+    this.ready = Promise.all([addMonumentIcons(map, MONUMENT_KINDS), loadWorld()]).then(() => {
       if (!map.getStyle() || map.getSource(SRC)) return;
+      const data: FeatureCollection<Point, { id: string; kind: string; name: string; built: number; until: number }> = {
+        type: 'FeatureCollection',
+        features: all().map((m) => ({
+          type: 'Feature',
+          properties: { id: m.id, kind: m.kind, name: m.name, built: m.built, until: m.until ?? 99999 },
+          geometry: { type: 'Point', coordinates: m.location },
+        })),
+      };
       map.addSource(SRC, { type: 'geojson', data });
       map.addLayer(
         {
@@ -117,7 +118,7 @@ export class MonumentLayers {
 
   private onClick = (e: MapMouseEvent & { features?: Feature[] }) => {
     const id = e.features?.[0]?.properties?.id as string | undefined;
-    const m = ALL.find((x) => x.id === id);
+    const m = all().find((x) => x.id === id);
     if (!m) return;
     // Pile (tactile, sans survol) : le premier toucher ouvre l'éventail.
     if (this.fan.click(this.pile, m.id)) return;

@@ -52,6 +52,8 @@ jobs:
       - run: npm run test:e2e
         env:
           CI: 'true'
+      # Budget du JS initial (le build vient d'être fait par le serveur de Playwright).
+      - run: npm run check:bundle
       - name: Rapport Playwright (traces, captures)
         if: failure()
         uses: actions/upload-artifact@v4

@@ -1,11 +1,11 @@
 import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import { formatYear } from '../lib/years';
 import catalogJson from '../../data/empires-catalog.json';
-import type { Empire, EmpireCatalogEntry } from '../types';
+import type { EmpireCatalogEntry, EmpireMeta } from '../types';
 
 interface Props {
-  empires: Empire[];
-  current: Empire;
+  empires: EmpireMeta[];
+  current: EmpireMeta;
   onSelect: (id: string) => void;
   /** Ouvre la vue « Le monde en l'an… ». */
   onOpenWorld?: () => void;
@@ -14,9 +14,9 @@ interface Props {
 const CATALOG = catalogJson as EmpireCatalogEntry[];
 
 /** Groupes par continent (ordre du fichier) ; disponibles d'abord, puis à venir. */
-function groupCatalog(empires: Empire[]) {
+function groupCatalog(empires: EmpireMeta[]) {
   const byId = new Map(empires.map((e) => [e.id, e]));
-  const groups = new Map<string, { available: Empire[]; soon: EmpireCatalogEntry[] }>();
+  const groups = new Map<string, { available: EmpireMeta[]; soon: EmpireCatalogEntry[] }>();
   for (const c of CATALOG) {
     const g = groups.get(c.region) ?? { available: [], soon: [] };
     groups.set(c.region, g);

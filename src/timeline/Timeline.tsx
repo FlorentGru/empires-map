@@ -1,7 +1,7 @@
 import { createPortal } from 'react-dom';
 import { memo, useEffect, useMemo, useRef, useState, type CSSProperties, type RefObject } from 'react';
 import { apogeeStepId, formatArea, normalizedAreas } from '../lib/apogee';
-import disastersData from '../../data/disasters.json';
+import { useWorld } from '../data/loadWorld';
 import type { Disaster } from '../types-disaster';
 import { disastersBetween, formatDeaths, lanes, OPEN_DISASTER_EVENT } from '../lib/worldEvents';
 import { DISASTER_LABELS, requestDisasterPreview } from '../map/disasterLayers';
@@ -88,7 +88,8 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
   }, [areas, steps, yearToX]);
   const isApogee = !!active && active.id === apogeeId;
   // Catastrophes et guerres meurtrières pendant la vie de l'empire : fines barres en haut de la piste.
-  const disasters = useMemo(() => disastersBetween(disastersData as Disaster[], empire.start, empire.end), [empire.start, empire.end]);
+  const world = useWorld();
+  const disasters = useMemo(() => disastersBetween(world.disasters, empire.start, empire.end), [world.disasters, empire.start, empire.end]);
   // Lignes distinctes pour les événements qui se chevauchent (ex. conquêtes mongoles et guerre de Cent Ans).
   const disasterLane = useMemo(() => lanes(disasters), [disasters]);
   // Infobulle des catastrophes : position fixe (la piste défile et couperait une bulle interne).

@@ -1,11 +1,16 @@
 import type { Invention } from '../types-invention';
 
-/** Inventions révolutionnaires par empire : data/empires/<id>/inventions.json (facultatif). */
-const modules = import.meta.glob<Invention[]>('../../data/empires/*/inventions.json', { eager: true, import: 'default' });
+/** Inventions révolutionnaires par empire : data/empires/<id>/inventions.json (facultatif), chargées avec la timeline. */
+const loaders = import.meta.glob<Invention[]>('../../data/empires/*/inventions.json', { import: 'default' });
 
-export const INVENTIONS: Record<string, Invention[]> = Object.fromEntries(
-  Object.entries(modules).map(([file, list]) => [file.split('/').at(-2)!, Array.isArray(list) ? [...list].sort((a, b) => a.year - b.year) : []]),
-);
+/** Inventions des empires déjà chargés (rempli par loadInventions, appelé par loadEmpire). */
+export const INVENTIONS: Record<string, Invention[]> = {};
+
+export async function loadInventions(empireId: string): Promise<void> {
+  const load = loaders[`../../data/empires/${empireId}/inventions.json`];
+  const list = load ? await load() : [];
+  INVENTIONS[empireId] = Array.isArray(list) ? [...list].sort((a, b) => a.year - b.year) : [];
+}
 
 /** Inventions d'un empire déjà apparues à l'année donnée. */
 export function inventionsAt(empireId: string, year: number): Invention[] {
