@@ -28,10 +28,14 @@ jobs:
       - run: npm test
       - run: npm run test:data
 
-  # Tests dans le navigateur, en parallèle des contrôles (le serveur de Playwright fait le build).
+  # Tests dans le navigateur, en parallèle des contrôles, répartis sur 2 machines (le serveur de Playwright fait le build).
   e2e:
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2]
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
@@ -49,16 +53,17 @@ jobs:
         run: npx playwright install --with-deps chromium
       - if: steps.pw-cache.outputs.cache-hit == 'true'
         run: npx playwright install-deps chromium
-      - run: npm run test:e2e
+      - run: npx playwright test --shard=${{ matrix.shard }}/2
         env:
           CI: 'true'
       # Budget du JS initial (le build vient d'être fait par le serveur de Playwright).
-      - run: npm run check:bundle
+      - if: matrix.shard == 1
+        run: npm run check:bundle
       - name: Rapport Playwright (traces, captures)
         if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: playwright-report
+          name: playwright-report-${{ matrix.shard }}
           path: |
             playwright-report/
             test-results/

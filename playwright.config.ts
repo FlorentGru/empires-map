@@ -2,7 +2,8 @@ import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
   testDir: 'e2e',
-  timeout: 60_000,
+  // Le CI rend le WebGL en logiciel sur 2 cœurs : 3 à 5 fois plus lent qu'en local.
+  timeout: process.env.CI ? 150_000 : 60_000,
   expect: { timeout: 15_000 },
   fullyParallel: false,
   workers: 1,
