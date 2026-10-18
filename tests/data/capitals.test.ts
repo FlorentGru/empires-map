@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { readdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { DATA, PUBLIC_EMPIRES, empireIds, exists, readJson } from './helpers';
+import { DATA, PUBLIC_EMPIRES, empireIds, exists, readJson, itAll } from './helpers';
 
 interface Capital {
   city: string;
@@ -60,11 +60,11 @@ describe('capitals.json', () => {
     expect(entries.length).toBeGreaterThan(150);
   });
 
-  it.each(entries.map(([name]) => name))('« %s » est un voisin affiché sur la carte', (name) => {
+  itAll('« %s » est un voisin affiché sur la carte', entries.map(([name]) => name), (name) => {
     expect(labelNames.has(name), name).toBe(true);
   });
 
-  it.each(entries)('« %s » : capitales valides, triées, sans chevauchement', (name, list) => {
+  itAll('« %s » : capitales valides, triées, sans chevauchement', entries, (name, list) => {
     expect(list.length, name).toBeGreaterThan(0);
     for (const c of list) {
       expect(c.city.trim().length, name).toBeGreaterThan(0);

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { join } from 'node:path';
-import { DATA, empireIds, readJson, validLonLat } from './helpers';
+import { DATA, empireIds, readJson, validLonLat, itAll } from './helpers';
 
 const ids = empireIds();
 
@@ -34,7 +34,7 @@ describe('data/empires-catalog.json', () => {
       expect(c.start, `catalogue ${c.id}`).toBeLessThan(c.end);
     }
   });
-  it.each(ids)('l’empire disponible « %s » figure au catalogue', (id) => {
+  itAll('l’empire disponible « %s » figure au catalogue', ids, (id) => {
     expect(catalog.map((c) => c.id), `${id} absent de data/empires-catalog.json`).toContain(id);
   });
 });

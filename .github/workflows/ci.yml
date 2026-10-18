@@ -11,9 +11,10 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  test:
+  # Contrôles rapides (≈ 1 min) : types, style, tests unitaires et de données.
+  checks:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
@@ -26,8 +27,28 @@ jobs:
       - run: npm run format:check
       - run: npm test
       - run: npm run test:data
-      - run: npm run build
-      - run: npx playwright install --with-deps chromium
+
+  # Tests dans le navigateur, en parallèle des contrôles (le serveur de Playwright fait le build).
+  e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Cache des navigateurs Playwright
+        id: pw-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+      - if: steps.pw-cache.outputs.cache-hit != 'true'
+        run: npx playwright install --with-deps chromium
+      - if: steps.pw-cache.outputs.cache-hit == 'true'
+        run: npx playwright install-deps chromium
       - run: npm run test:e2e
         env:
           CI: 'true'

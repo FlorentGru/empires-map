@@ -17,10 +17,12 @@ Empires disponibles : **Rome** (509 av. J.-C. → 1453), **la Chine** (-1600 →
 
 ## Tests
 
-- `npm test` : tests unitaires (Vitest) : années, nombres en lettres, périodes, armées, échelle, palette.
-- `npm run test:data` : validation de toutes les données (timelines, territoires, diffs, SDF, voisins, villes, catalogue).
-- `npm run test:e2e` : parcours dans Chromium (Playwright) sur le site construit ; première fois : `npx playwright install chromium`.
-- Le CI GitHub Actions enchaîne typecheck, tests, build et e2e à chaque push et pull request.
+Un test par grosse fonctionnalité, pas un test par détail :
+- `npm test` : logique centrale (Vitest) : années, périodes, armées et marches, comparaison, événements du monde, piles, quiz hors ligne.
+- `npm run test:data` : validation de toutes les données, un contrôle groupé par fichier qui liste toutes les erreurs d'un coup.
+- `npm run test:e2e` : 15 parcours dans Chromium (Playwright), un par fonctionnalité (carte, armées, galerie, comparaison, monde en l'an X, quiz, sage, calques de l'époque…) ; première fois : `npx playwright install chromium`.
+- `npm run lint` (oxlint) et `npm run format` / `format:check` (Prettier) : style du code.
+- Le CI GitHub Actions lance en parallèle les contrôles rapides (types, style, tests unitaires et de données) et les tests dans le navigateur.
 
 ## Lancer le projet
 

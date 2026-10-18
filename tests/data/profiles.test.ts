@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { join } from 'node:path';
 import type { Estimate, EmpireProfile, ProfilePeriod } from '../../src/types-profile';
-import { DATA, empireIds, exists, readJson } from './helpers';
+import { DATA, empireIds, exists, readJson, itAll } from './helpers';
 
 const MAX_WORDS = 40;
 const words = (s: string) => s.trim().split(/\s+/).length;
@@ -69,7 +69,7 @@ describe('profils d\'empire', () => {
       }
     });
 
-    it.each(profile.periods.map((p) => [p.id, p] as const))('période %s : chiffres cohérents', (_pid, p) => {
+    itAll('période %s : chiffres cohérents', profile.periods.map((p) => [p.id, p] as const), (_pid, p) => {
       expect(p.population.total).toBeDefined();
       expect(p.population.cities.length).toBeGreaterThanOrEqual(2);
       expect(p.population.cities.length).toBeLessThanOrEqual(5);
@@ -83,7 +83,7 @@ describe('profils d\'empire', () => {
       }
     });
 
-    it.each(profile.periods.map((p) => [p.id, p] as const))('période %s : textes et listes remplis', (_pid, p) => {
+    itAll('période %s : textes et listes remplis', profile.periods.map((p) => [p.id, p] as const), (_pid, p) => {
       for (const t of texts(p)) {
         expect(t.trim().length, t).toBeGreaterThan(0);
         expect(words(t), t).toBeLessThanOrEqual(MAX_WORDS);

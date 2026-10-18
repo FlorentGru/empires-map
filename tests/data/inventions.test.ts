@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { join } from 'node:path';
 import { INVENTION_CATEGORIES, type Invention } from '../../src/types-invention';
-import { DATA, empireIds, exists, readJson } from './helpers';
+import { DATA, empireIds, exists, readJson, itAll } from './helpers';
 
 const words = (s: string) => s.trim().split(/\s+/).length;
 
@@ -24,7 +24,7 @@ describe('inventions.json', () => {
       for (const id of ids) expect(id, id).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/);
     });
 
-    it.each(inventions.map((i) => [i.id, i] as const))('%s est valide', (_id, i) => {
+    itAll('%s est valide', inventions.map((i) => [i.id, i] as const), (_id, i) => {
       expect(i.name.trim().length).toBeGreaterThan(0);
       expect(i.place.trim().length).toBeGreaterThan(0);
       expect(INVENTION_CATEGORIES).toContain(i.category);

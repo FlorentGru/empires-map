@@ -21,12 +21,3 @@ test('le guide répond et déplace la carte', async ({ page }) => {
   await expect(page).toHaveURL(/step=austerlitz-1805/);
   await expect(page.locator('.chat-msg--note')).toContainText('Carte déplacée');
 });
-
-test('guide indisponible : message clair', async ({ page }) => {
-  await page.route('**/api/chat', (route) => route.fulfill({ status: 503, json: { detail: 'clé absente' } }));
-  await page.goto('/?empire=rome&step=zama-202');
-  await page.getByRole('button', { name: /Demander au sage/ }).click();
-  await page.getByLabel('Ta question au guide').fill('Bonjour');
-  await page.keyboard.press('Enter');
-  await expect(page.locator('.chat-msg--error')).toContainText('npm run agent');
-});

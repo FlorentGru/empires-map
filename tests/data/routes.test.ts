@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { join } from 'node:path';
 import { ROUTE_CARRIERS, type TradeRoute } from '../../src/types-route';
-import { DATA, readJson } from './helpers';
+import { DATA, readJson, itAll } from './helpers';
 
 /** Distance (km) d'un point à un segment, approximation équirectangulaire. */
 function segmentKm(p: number[], a: number[], b: number[]): number {
@@ -29,7 +29,7 @@ describe('data/routes.json', () => {
     for (const id of ids) expect(id, id).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/);
   });
 
-  it.each(routes.map((r) => [r.id, r] as const))('%s est valide', (_id, r) => {
+  itAll('%s est valide', routes.map((r) => [r.id, r] as const), (_id, r) => {
     expect(r.name.trim().length).toBeGreaterThan(0);
     expect(['terre', 'mer']).toContain(r.kind);
     expect(Number.isInteger(r.from)).toBe(true);

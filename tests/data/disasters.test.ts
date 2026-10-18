@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { join } from 'node:path';
 import { DISASTER_KINDS, type Disaster } from '../../src/types-disaster';
-import { DATA, readJson } from './helpers';
+import { DATA, readJson, itAll } from './helpers';
 
 const disasters = readJson<Disaster[]>(join(DATA, 'disasters.json'));
 
@@ -20,7 +20,7 @@ describe('data/disasters.json', () => {
     for (const id of ids) expect(id, id).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/);
   });
 
-  it.each(disasters.map((d) => [d.id, d] as const))('%s est valide', (_id, d) => {
+  itAll('%s est valide', disasters.map((d) => [d.id, d] as const), (_id, d) => {
     expect(d.name.trim().length).toBeGreaterThan(0);
     expect(DISASTER_KINDS).toContain(d.kind);
     expect(Number.isInteger(d.start)).toBe(true);
@@ -41,8 +41,8 @@ describe('data/disasters.json', () => {
     }
   });
 
-  it.each(disasters.filter((d) => d.kind === 'epidemie').map((d) => [d.id, d] as const))(
-    '%s (épidémie) a une diffusion cohérente',
+  itAll(
+    '%s (épidémie) a une diffusion cohérente', disasters.filter((d) => d.kind === 'epidemie').map((d) => [d.id, d] as const),
     (_id, d) => {
       const spread = d.spread ?? [];
       expect(spread.length).toBeGreaterThanOrEqual(4);
@@ -59,8 +59,8 @@ describe('data/disasters.json', () => {
     },
   );
 
-  it.each(disasters.filter((d) => d.kind === 'guerre').map((d) => [d.id, d] as const))(
-    '%s (guerre) a une zone et des belligérants',
+  itAll(
+    '%s (guerre) a une zone et des belligérants', disasters.filter((d) => d.kind === 'guerre').map((d) => [d.id, d] as const),
     (_id, d) => {
       const area = d.area ?? [];
       expect(area.length).toBeGreaterThanOrEqual(3);

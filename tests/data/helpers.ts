@@ -1,3 +1,4 @@
+import { expect, it } from 'vitest';
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 
@@ -39,3 +40,23 @@ export function coordsOf(g: any): [number, number][] {
 
 export const validLonLat = ([x, y]: [number, number]) =>
   Number.isFinite(x) && Number.isFinite(y) && x >= -180 && x <= 180 && y >= -90 && y <= 90;
+
+/**
+ * Un seul test pour toute une liste (au lieu d'un test par élément) : chaque élément est vérifié,
+ * toutes les erreurs sont gardées, et le test échoue une fois avec la liste complète.
+ * `name` peut contenir %s, remplacé par le premier argument de chaque ligne dans les messages.
+ */
+export function itAll<R>(name: string, rows: readonly R[], fn: (...args: R extends readonly unknown[] ? R : [R]) => void) {
+  it(`${name.replace(/\s*«?\s*%s\s*»?\s*:?\s*/, ' ').trim()} (${rows.length})`, () => {
+    const errors: string[] = [];
+    for (const row of rows) {
+      const args = (Array.isArray(row) ? row : [row]) as R extends readonly unknown[] ? R : [R];
+      try {
+        fn(...args);
+      } catch (e) {
+        errors.push(`${String(args[0])} : ${(e as Error).message.split('\n')[0]}`);
+      }
+    }
+    expect(errors).toEqual([]);
+  });
+}

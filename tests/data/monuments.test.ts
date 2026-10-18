@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { join } from 'node:path';
 import { MONUMENT_KINDS, type Monument } from '../../src/types-monument';
-import { DATA, readJson } from './helpers';
+import { DATA, readJson, itAll } from './helpers';
 
 const monuments = readJson<Monument[]>(join(DATA, 'monuments.json'));
 
@@ -17,7 +17,7 @@ describe('data/monuments.json', () => {
     for (const id of ids) expect(id, id).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/);
   });
 
-  it.each(monuments.map((m) => [m.id, m] as const))('%s est valide', (_id, m) => {
+  itAll('%s est valide', monuments.map((m) => [m.id, m] as const), (_id, m) => {
     expect(m.name.trim().length).toBeGreaterThan(0);
     expect(m.civilization.trim().length).toBeGreaterThan(0);
     expect(m.location).toHaveLength(2);

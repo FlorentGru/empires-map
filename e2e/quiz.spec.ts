@@ -44,32 +44,6 @@ test('quiz : bonne puis mauvaise réponse, score final', async ({ page }) => {
   await expect(dialog.getByRole('button', { name: 'Rejouer' })).toBeVisible();
 });
 
-test('quiz : « Voir sur la carte » déplace la carte', async ({ page }) => {
-  await page.route('**/api/quiz', (route) =>
-    route.fulfill({ json: { ...quiz, quiz: { ...quiz.quiz, questions: [{ ...quiz.quiz.questions[0], empire: 'napoleon', etape_id: 'austerlitz-1805' }] } } }),
-  );
-  await page.goto('/?empire=rome&step=zama-202');
-  await page.getByRole('button', { name: /Quiz/ }).click();
-  const dialog = page.getByRole('dialog', { name: /Quiz du sage/ });
-  await dialog.getByRole('button', { name: 'Commencer' }).click();
-  await dialog.getByRole('button', { name: '216 av. J.-C.' }).click();
-  await dialog.getByRole('button', { name: 'Voir sur la carte' }).click();
-  await expect(page).toHaveURL(/empire=napoleon/);
-  await expect(page).toHaveURL(/step=austerlitz-1805/);
-});
-
-test('serveur absent : message clair puis quiz hors ligne', async ({ page }) => {
-  await page.route('**/api/quiz', (route) => route.abort());
-  await page.route('**/api/quiz/hors-ligne**', (route) => route.fulfill({ json: { ...quiz, source: 'hors_ligne' } }));
-  await page.goto('/?empire=rome&step=zama-202');
-  await page.getByRole('button', { name: /Quiz/ }).click();
-  const dialog = page.getByRole('dialog', { name: /Quiz du sage/ });
-  await dialog.getByRole('button', { name: 'Commencer' }).click();
-  await expect(dialog.getByRole('alert')).toContainText('npm run agent');
-  await dialog.getByRole('button', { name: 'Quiz hors ligne' }).click();
-  await expect(dialog.locator('.quiz__badge')).toHaveText('hors ligne');
-});
-
 test('sans aucun serveur, le quiz hors ligne est généré dans le navigateur', async ({ page }) => {
   await page.route('**/api/quiz', (route) => route.abort());
   await page.route('**/api/quiz/hors-ligne**', (route) => route.abort());

@@ -1,7 +1,7 @@
 import { readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { DATA, empireIds, exists, publicFile, readJson, validLonLat, coordsOf } from './helpers';
+import { DATA, empireIds, exists, publicFile, readJson, validLonLat, coordsOf, itAll } from './helpers';
 
 const ids = empireIds();
 const empires = new Map(ids.map((id) => [id, readJson(join(DATA, 'empires', id, 'timeline.json'))]));
@@ -15,7 +15,7 @@ describe.each(ids)('contemporains de « %s »', (eid) => {
     expect(exists(dir), `${eid}/contemporaries`).toBe(true);
   });
 
-  it.each(files)('%s : propriétés valides et empire F existant à la date', (file) => {
+  itAll('%s : propriétés valides et empire F existant à la date', files, (file) => {
     const step = E.steps.find((s: any) => `${s.id}.geojson` === file);
     expect(step, `étape ${file} existe dans ${eid}`).toBeTruthy();
     const fc = readJson(join(dir, file));
