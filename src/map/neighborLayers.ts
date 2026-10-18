@@ -14,7 +14,10 @@ const size = ['interpolate', ['linear'], area, 50_000, 9, 3_000_000, 12] as neve
  * Les noms ne sont placés que si l'aire dépasse un seuil dépendant du zoom (taille 0 = non placé).
  */
 export class NeighborLayers {
-  constructor(private map: MapLibreMap, beforeId?: string) {
+  constructor(
+    private map: MapLibreMap,
+    beforeId?: string,
+  ) {
     map.addSource(SRC, { type: 'geojson', data: EMPTY });
     map.addLayer(
       {
@@ -37,15 +40,7 @@ export class NeighborLayers {
           'symbol-sort-key': ['*', -1, area] as never,
           'text-field': ['get', 'name'],
           'text-font': ['Noto Sans Regular'],
-          'text-size': [
-            'step',
-            ['zoom'],
-            ['case', ['>=', area, 100_000], size, 0],
-            4,
-            ['case', ['>=', area, 30_000], size, 0],
-            5,
-            size,
-          ] as never,
+          'text-size': ['step', ['zoom'], ['case', ['>=', area, 100_000], size, 0], 4, ['case', ['>=', area, 30_000], size, 0], 5, size] as never,
           'text-transform': 'uppercase',
           'text-letter-spacing': 0.15,
           'text-max-width': 8,

@@ -16,7 +16,7 @@ export function continentOf([lon, lat]: [number, number]): string {
   if (lon < -25) return 'Amériques';
   if (lon > 110 && lat < -10) return 'Océanie';
   if (lat < 37 && lon < 33 && lon > -20) return 'Afrique';
-  if (lat < 32 && lon >= 33 && lon < 52 && lat < 12) return 'Afrique';
+  if (lat < 12 && lon >= 33 && lon < 52) return 'Afrique'; // Corne de l'Afrique
   if (lon < 40 && lat >= 36) return 'Europe';
   if (lon < 60 && lat >= 45) return 'Europe';
   return 'Asie';

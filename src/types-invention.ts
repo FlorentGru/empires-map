@@ -1,16 +1,6 @@
 /** Catégories d'inventions et d'innovations (filtre / pastille de l'interface). */
 export type InventionCategory =
-  | 'technique'
-  | 'science'
-  | 'militaire'
-  | 'agriculture'
-  | 'ecriture'
-  | 'administration'
-  | 'medecine'
-  | 'navigation'
-  | 'monnaie'
-  | 'droit'
-  | 'architecture';
+  'technique' | 'science' | 'militaire' | 'agriculture' | 'ecriture' | 'administration' | 'medecine' | 'navigation' | 'monnaie' | 'droit' | 'architecture';
 
 export const INVENTION_CATEGORIES: InventionCategory[] = [
   'technique',

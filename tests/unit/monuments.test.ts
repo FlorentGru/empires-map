@@ -2,7 +2,8 @@ import { describe, expect, it } from 'vitest';
 import { monumentSpan, standingAt } from '../../src/map/monumentLayers';
 import type { Monument } from '../../src/types-monument';
 
-const m = (id: string, built: number, until?: number) => ({ id, name: id, location: [0, 0], built, until, kind: 'temple', civilization: '', description: '', wikipedia: '' }) as Monument;
+const m = (id: string, built: number, until?: number) =>
+  ({ id, name: id, location: [0, 0], built, until, kind: 'temple', civilization: '', description: '', wikipedia: '' }) as Monument;
 const list = [m('pyramides', -2560), m('phare', -280, 1323), m('notre-dame', 1345)];
 
 describe('monuments', () => {

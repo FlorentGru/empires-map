@@ -13,7 +13,10 @@ export class CountriesLayer {
   private loadState: 'idle' | 'loading' | 'done' = 'idle';
   private shown = false;
 
-  constructor(private map: MapLibreMap, beforeId?: string) {
+  constructor(
+    private map: MapLibreMap,
+    beforeId?: string,
+  ) {
     map.addSource(SRC, { type: 'geojson', data: EMPTY as never });
     map.addLayer(
       {

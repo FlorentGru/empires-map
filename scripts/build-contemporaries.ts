@@ -67,9 +67,7 @@ function subtract(g: Poly, mask: Poly | null): Poly | null {
 
 /** Parties ≥ 5000 km², simplifiées et arrondies ; null s'il n'en reste aucune. */
 function clean(g: Poly, minKm2: number): Polygon | MultiPolygon | null {
-  const parts = (g.geometry.type === 'Polygon' ? [g.geometry.coordinates] : g.geometry.coordinates).filter(
-    (c) => turf.area(turf.polygon(c)) / 1e6 >= minKm2,
-  );
+  const parts = (g.geometry.type === 'Polygon' ? [g.geometry.coordinates] : g.geometry.coordinates).filter((c) => turf.area(turf.polygon(c)) / 1e6 >= minKm2);
   if (!parts.length) return null;
   let out: Poly = turf.feature({ type: 'MultiPolygon', coordinates: parts });
   try {
@@ -81,7 +79,7 @@ function clean(g: Poly, minKm2: number): Polygon | MultiPolygon | null {
   const coords = roundCoords(geom.coordinates) as never;
   return parts.length === 1 && geom.type === 'MultiPolygon' && geom.coordinates.length === 1
     ? { type: 'Polygon', coordinates: (coords as number[][][][])[0] }
-    : { type: geom.type, coordinates: coords } as Polygon | MultiPolygon;
+    : ({ type: geom.type, coordinates: coords } as Polygon | MultiPolygon);
 }
 
 for (const [eid, E] of empires) {
@@ -116,7 +114,15 @@ for (const [eid, E] of empires) {
         seen.add(F.name);
         feats.push({
           type: 'Feature',
-          properties: { empire: fid, empireName: F.name.split(",")[0]!.trim(), name: f.properties.name, color: F.color, stepId: fs_.id, year: fs_.year, status },
+          properties: {
+            empire: fid,
+            empireName: F.name.split(',')[0]!.trim(),
+            name: f.properties.name,
+            color: F.color,
+            stepId: fs_.id,
+            year: fs_.year,
+            status,
+          },
           geometry: geom,
         });
       }

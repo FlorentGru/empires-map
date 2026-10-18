@@ -13,7 +13,16 @@ const ALL = routes as TradeRoute[];
 const SRC = 'trade-routes';
 const SRC_MOVERS = 'trade-routes-movers';
 const SRC_STOPS = 'trade-routes-stops';
-const IDS = ['trade-routes-hit', 'trade-routes-casing', 'trade-routes-line', 'trade-routes-sea', 'trade-routes-label', 'trade-routes-stops', 'trade-routes-stops-label', 'trade-routes-movers'];
+const IDS = [
+  'trade-routes-hit',
+  'trade-routes-casing',
+  'trade-routes-line',
+  'trade-routes-sea',
+  'trade-routes-label',
+  'trade-routes-stops',
+  'trade-routes-stops-label',
+  'trade-routes-movers',
+];
 /** Zone de clic invisible et large (14 px) : une ligne de 2 px est trop fine pour la souris. */
 const CLICKABLE = ['trade-routes-hit', 'trade-routes-stops'];
 const LAND = '#8a5a2b';
@@ -24,7 +33,6 @@ const SEA_TEXT = '#22465e';
 /** Durée d'un trajet complet d'un voyageur (ms), et nombre de voyageurs par route. */
 const TRIP_MS = 45_000;
 const MOVERS_PER_ROUTE = 3;
-const INK = '#3b2a1a';
 
 type RouteProps = { id: string; name: string; kind: string };
 
@@ -52,18 +60,54 @@ export class RouteLayers {
       map.addSource(SRC, { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
       map.addSource(SRC_MOVERS, { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
       map.addSource(SRC_STOPS, { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
-      map.addLayer({ id: 'trade-routes-hit', type: 'line', source: SRC, layout: { 'line-cap': 'round', 'line-join': 'round' }, paint: { 'line-color': '#000', 'line-width': 14, 'line-opacity': 0 } }, before);
-      map.addLayer({ id: 'trade-routes-casing', type: 'line', source: SRC, layout: { 'line-cap': 'round', 'line-join': 'round' }, paint: { 'line-color': '#f4ead3', 'line-width': ['case', ['boolean', ['feature-state', 'hover'], false], 8, 5] as never, 'line-opacity': ['case', ['boolean', ['feature-state', 'hover'], false], 0.9, 0.55] as never } }, before);
+      map.addLayer(
+        {
+          id: 'trade-routes-hit',
+          type: 'line',
+          source: SRC,
+          layout: { 'line-cap': 'round', 'line-join': 'round' },
+          paint: { 'line-color': '#000', 'line-width': 14, 'line-opacity': 0 },
+        },
+        before,
+      );
+      map.addLayer(
+        {
+          id: 'trade-routes-casing',
+          type: 'line',
+          source: SRC,
+          layout: { 'line-cap': 'round', 'line-join': 'round' },
+          paint: {
+            'line-color': '#f4ead3',
+            'line-width': ['case', ['boolean', ['feature-state', 'hover'], false], 8, 5] as never,
+            'line-opacity': ['case', ['boolean', ['feature-state', 'hover'], false], 0.9, 0.55] as never,
+          },
+        },
+        before,
+      );
       // Terre : trait plein brun ; mer : pointillé bleu (line-dasharray ne dépend pas des données → deux calques).
       // Survol : la route s'épaissit (feature-state « hover », id = index de la feature).
       const hover = (base: number, wide: number) => ['case', ['boolean', ['feature-state', 'hover'], false], wide, base];
       const width = ['interpolate', ['linear'], ['zoom'], 2, hover(1.6, 3.2), 6, hover(3, 5)] as never;
       map.addLayer(
-        { id: 'trade-routes-line', type: 'line', source: SRC, filter: ['==', ['get', 'kind'], 'terre'], layout: { 'line-cap': 'round', 'line-join': 'round' }, paint: { 'line-color': LAND, 'line-width': width, 'line-opacity': 0.8 } },
+        {
+          id: 'trade-routes-line',
+          type: 'line',
+          source: SRC,
+          filter: ['==', ['get', 'kind'], 'terre'],
+          layout: { 'line-cap': 'round', 'line-join': 'round' },
+          paint: { 'line-color': LAND, 'line-width': width, 'line-opacity': 0.8 },
+        },
         before,
       );
       map.addLayer(
-        { id: 'trade-routes-sea', type: 'line', source: SRC, filter: ['==', ['get', 'kind'], 'mer'], layout: { 'line-cap': 'butt', 'line-join': 'round' }, paint: { 'line-color': SEA, 'line-width': width, 'line-opacity': 0.85, 'line-dasharray': [2.2, 1.6] } },
+        {
+          id: 'trade-routes-sea',
+          type: 'line',
+          source: SRC,
+          filter: ['==', ['get', 'kind'], 'mer'],
+          layout: { 'line-cap': 'butt', 'line-join': 'round' },
+          paint: { 'line-color': SEA, 'line-width': width, 'line-opacity': 0.85, 'line-dasharray': [2.2, 1.6] },
+        },
         before,
       );
       map.addLayer(
@@ -81,7 +125,12 @@ export class RouteLayers {
             'symbol-spacing': 520,
             'text-max-angle': 28,
           },
-          paint: { 'text-color': ['match', ['get', 'kind'], 'mer', SEA_TEXT, LAND_TEXT] as never, 'text-halo-color': '#f7efd9', 'text-halo-width': 2.2, 'text-halo-blur': 0.4 },
+          paint: {
+            'text-color': ['match', ['get', 'kind'], 'mer', SEA_TEXT, LAND_TEXT] as never,
+            'text-halo-color': '#f7efd9',
+            'text-halo-width': 2.2,
+            'text-halo-blur': 0.4,
+          },
         },
         before,
       );
@@ -106,7 +155,15 @@ export class RouteLayers {
           type: 'symbol',
           source: SRC_STOPS,
           minzoom: 3.5,
-          layout: { 'text-field': ['get', 'name'], 'text-font': ['Noto Sans Regular'], 'text-size': 11, 'text-offset': [0, 0.9], 'text-anchor': 'top', 'text-optional': true, 'text-max-width': 8 },
+          layout: {
+            'text-field': ['get', 'name'],
+            'text-font': ['Noto Sans Regular'],
+            'text-size': 11,
+            'text-offset': [0, 0.9],
+            'text-anchor': 'top',
+            'text-optional': true,
+            'text-max-width': 8,
+          },
           paint: { 'text-color': ['match', ['get', 'kind'], 'mer', SEA_TEXT, LAND_TEXT] as never, 'text-halo-color': '#f7efd9', 'text-halo-width': 1.8 },
         },
         before,
@@ -217,14 +274,23 @@ export class RouteLayers {
     this.active = list.map((route) => ({ route, cum: cumulative(route.path) }));
     const fc: FeatureCollection<LineString, RouteProps> = {
       type: 'FeatureCollection',
-      features: list.map((r, i) => ({ type: 'Feature', id: i, properties: { id: r.id, name: r.name, kind: r.kind }, geometry: { type: 'LineString', coordinates: r.path } })),
+      features: list.map((r, i) => ({
+        type: 'Feature',
+        id: i,
+        properties: { id: r.id, name: r.name, kind: r.kind },
+        geometry: { type: 'LineString', coordinates: r.path },
+      })),
     };
     this.setHover(null);
     src.setData(fc);
     (this.map.getSource(SRC_STOPS) as GeoJSONSource | undefined)?.setData({
       type: 'FeatureCollection',
       features: list.flatMap((r) =>
-        r.stops.map((st) => ({ type: 'Feature' as const, properties: { route: r.id, name: st.name, note: st.note ?? '', kind: r.kind }, geometry: { type: 'Point' as const, coordinates: st.at } })),
+        r.stops.map((st) => ({
+          type: 'Feature' as const,
+          properties: { route: r.id, name: st.name, note: st.note ?? '', kind: r.kind },
+          geometry: { type: 'Point' as const, coordinates: st.at },
+        })),
       ),
     });
     this.drawMovers(performance.now());

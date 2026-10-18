@@ -39,9 +39,20 @@ function choices(r: () => number, good: string, pool: string[]): { choix: string
 
 function qYear(r: () => number, e: Empire, s: TimelineStep): QuizQuestion | null {
   const offsets = shuffle(r, [-30, -20, -12, -8, -5, -3, -2, -1, 1, 2, 3, 5, 8, 12, 20, 30]).filter((d) => s.year + d !== 0);
-  const c = choices(r, formatYear(s.year), offsets.slice(0, 6).map((d) => formatYear(s.year + d)));
+  const c = choices(
+    r,
+    formatYear(s.year),
+    offsets.slice(0, 6).map((d) => formatYear(s.year + d)),
+  );
   if (!c) return null;
-  return { question: `En quelle année a lieu : « ${s.title} » (${e.name}) ?`, choix: c.choix, bonne_reponse: c.i, empire: e.id, etape_id: s.id, explication: `${s.title} se situe en ${formatYear(s.year)}. ${s.summary}` };
+  return {
+    question: `En quelle année a lieu : « ${s.title} » (${e.name}) ?`,
+    choix: c.choix,
+    bonne_reponse: c.i,
+    empire: e.id,
+    etape_id: s.id,
+    explication: `${s.title} se situe en ${formatYear(s.year)}. ${s.summary}`,
+  };
 }
 
 function qBattle(r: () => number, e: Empire, s: TimelineStep, others: string[]): QuizQuestion | null {
@@ -58,27 +69,66 @@ function qBattle(r: () => number, e: Empire, s: TimelineStep, others: string[]):
   const same = [...new Set(e.steps.flatMap((x) => x.battle?.belligerents ?? []))].filter((x) => !b.belligerents.includes(x));
   const c = choices(r, good, [...b.belligerents.filter((x) => x !== good), ...shuffle(r, same).slice(0, 4), ...shuffle(r, others).slice(0, 3)]);
   if (!c) return null;
-  return { question: `Qui remporte l'épisode « ${s.title} » ?`, choix: c.choix, bonne_reponse: c.i, empire: e.id, etape_id: s.id, explication: `${good} l'emporte. Issue : ${b.outcome}. (${formatYear(s.year)}, ${s.title})` };
+  return {
+    question: `Qui remporte l'épisode « ${s.title} » ?`,
+    choix: c.choix,
+    bonne_reponse: c.i,
+    empire: e.id,
+    etape_id: s.id,
+    explication: `${good} l'emporte. Issue : ${b.outcome}. (${formatYear(s.year)}, ${s.title})`,
+  };
 }
 
 function qCapital(r: () => number, e: Empire, s: TimelineStep, cities: City[]): QuizQuestion | null {
   const isCap = (c: City) => (c.capitalOf ?? []).some((k) => k.empire === e.id && k.from <= s.year && s.year <= k.to);
   const good = cities.find(isCap);
   if (!good) return null;
-  const c = choices(r, good.modern, shuffle(r, cities.filter((x) => !isCap(x) && x.rank <= 2).map((x) => x.modern)).slice(0, 6));
+  const c = choices(
+    r,
+    good.modern,
+    shuffle(
+      r,
+      cities.filter((x) => !isCap(x) && x.rank <= 2).map((x) => x.modern),
+    ).slice(0, 6),
+  );
   if (!c) return null;
-  return { question: `Quelle était la capitale de ${e.name} en ${formatYear(s.year)} ?`, choix: c.choix, bonne_reponse: c.i, empire: e.id, etape_id: s.id, explication: `En ${formatYear(s.year)}, la capitale est ${good.modern} (étape : ${s.title}).` };
+  return {
+    question: `Quelle était la capitale de ${e.name} en ${formatYear(s.year)} ?`,
+    choix: c.choix,
+    bonne_reponse: c.i,
+    empire: e.id,
+    etape_id: s.id,
+    explication: `En ${formatYear(s.year)}, la capitale est ${good.modern} (étape : ${s.title}).`,
+  };
 }
 
 function qPerson(r: () => number, e: Empire, p: Person, all: (Person & { empire: string })[]): QuizQuestion | null {
   const s = e.steps.find((x) => x.figures?.some((f) => f.person === p.id));
   if (!s || !p.title) return null;
-  if (plain(p.name).split(/\s+/).some((w) => w.length > 3 && plain(p.title).includes(w))) return null; // l'énoncé donnerait la réponse
-  const same = shuffle(r, all.filter((x) => x.empire === e.id && x.id !== p.id).map((x) => x.name)).slice(0, 3);
-  const others = shuffle(r, all.filter((x) => x.empire !== e.id).map((x) => x.name)).slice(0, 3);
+  if (
+    plain(p.name)
+      .split(/\s+/)
+      .some((w) => w.length > 3 && plain(p.title).includes(w))
+  )
+    return null; // l'énoncé donnerait la réponse
+  const same = shuffle(
+    r,
+    all.filter((x) => x.empire === e.id && x.id !== p.id).map((x) => x.name),
+  ).slice(0, 3);
+  const others = shuffle(
+    r,
+    all.filter((x) => x.empire !== e.id).map((x) => x.name),
+  ).slice(0, 3);
   const c = choices(r, p.name, [...same, ...others]);
   if (!c) return null;
-  return { question: `Quel personnage est décrit ainsi : « ${p.title} » ?`, choix: c.choix, bonne_reponse: c.i, empire: e.id, etape_id: s.id, explication: `Il s'agit de ${p.name}, présent à l'étape « ${s.title} » (${formatYear(s.year)}).` };
+  return {
+    question: `Quel personnage est décrit ainsi : « ${p.title} » ?`,
+    choix: c.choix,
+    bonne_reponse: c.i,
+    empire: e.id,
+    etape_id: s.id,
+    explication: `Il s'agit de ${p.name}, présent à l'étape « ${s.title} » (${formatYear(s.year)}).`,
+  };
 }
 
 /** Quiz de n questions, en alternant les types (année, bataille, capitale, personnage) sans répéter d'étape si possible. */

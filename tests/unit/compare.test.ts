@@ -6,7 +6,10 @@ import type { EmpireProfile, Estimate } from '../../src/types-profile';
 const src = { label: 'x', url: 'https://x' };
 const est = (value: number, low?: number, high?: number): Estimate => ({ value, low, high, year: 100, source: src });
 const period = (id: string, start: number, end: number) => ({ id, name: id, start, end }) as EmpireProfile['periods'][number];
-const profile = { empire: 'rome', periods: [period('republique', -509, -27), period('haut-empire', -27, 284), period('bas-empire', 284, 476)] } as EmpireProfile;
+const profile = {
+  empire: 'rome',
+  periods: [period('republique', -509, -27), period('haut-empire', -27, 284), period('bas-empire', 284, 476)],
+} as EmpireProfile;
 const step = (id: string, year: number, type = 'politique') => ({ id, year, type }) as TimelineStep;
 const empire = {
   id: 'rome',

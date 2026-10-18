@@ -35,10 +35,14 @@ test('empire contemporain : la légende mène à cet empire', async ({ page }) =
 test('empire contemporain : clic sur la carte puis « Voir cet empire »', async ({ page }) => {
   test.setTimeout(90_000); // rendu WebGL logiciel lent quand les tests tournent en parallèle
   await page.goto('/?empire=china&step=yamen-1279&e2e');
-  await page.waitForFunction(() => {
-    const m = (window as any).__map;
-    return m && m.getLayer('contemporaries-fill-core') && m.queryRenderedFeatures({ layers: ['contemporaries-fill-core'] }).length > 0;
-  }, null, { timeout: 60_000 });
+  await page.waitForFunction(
+    () => {
+      const m = (window as any).__map;
+      return m && m.getLayer('contemporaries-fill-core') && m.queryRenderedFeatures({ layers: ['contemporaries-fill-core'] }).length > 0;
+    },
+    null,
+    { timeout: 60_000 },
+  );
   await page.waitForTimeout(2500); // fin du vol de caméra
   // Vue large sur l'Asie centrale, où s'étendent les khanats mongols.
   await page.evaluate(() => (window as any).__map.jumpTo({ center: [75, 45], zoom: 3 }));
@@ -46,11 +50,12 @@ test('empire contemporain : clic sur la carte puis « Voir cet empire »', async
   const pt = await page.evaluate(() => {
     const m = (window as any).__map;
     // Un point du khanat visible à l'écran, non couvert par un panneau.
-    for (let y = 10; y < innerHeight; y += 12) for (let x = 10; x < innerWidth; x += 12) {
-      if (!document.elementFromPoint(x, y)?.classList.contains('maplibregl-canvas')) continue;
-      const h = m.queryRenderedFeatures([x, y]);
-      if (h[0]?.layer.id.startsWith('contemporaries-fill') && h[0].properties.empire === 'mongols') return [x, y];
-    }
+    for (let y = 10; y < innerHeight; y += 12)
+      for (let x = 10; x < innerWidth; x += 12) {
+        if (!document.elementFromPoint(x, y)?.classList.contains('maplibregl-canvas')) continue;
+        const h = m.queryRenderedFeatures([x, y]);
+        if (h[0]?.layer.id.startsWith('contemporaries-fill') && h[0].properties.empire === 'mongols') return [x, y];
+      }
     return null;
   });
   expect(pt).not.toBeNull();

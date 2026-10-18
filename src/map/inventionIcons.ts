@@ -39,6 +39,15 @@ export function inventionIconSvg(category: InventionCategory): string {
 }
 
 export const CATEGORY_LABELS: Record<InventionCategory, string> = {
-  technique: 'Technique', science: 'Science', militaire: 'Militaire', agriculture: 'Agriculture', ecriture: 'Écriture et savoir',
-  administration: 'Administration', medecine: 'Médecine', navigation: 'Navigation', monnaie: 'Monnaie et finance', droit: 'Droit', architecture: 'Architecture',
+  technique: 'Technique',
+  science: 'Science',
+  militaire: 'Militaire',
+  agriculture: 'Agriculture',
+  ecriture: 'Écriture et savoir',
+  administration: 'Administration',
+  medecine: 'Médecine',
+  navigation: 'Navigation',
+  monnaie: 'Monnaie et finance',
+  droit: 'Droit',
+  architecture: 'Architecture',
 };

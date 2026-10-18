@@ -32,7 +32,10 @@ test('Empire espagnol : disponible dans le sélecteur, étape affichée sans err
   const toggle = group.locator('.empire-group__toggle');
   if ((await toggle.getAttribute('aria-expanded')) !== 'true') await toggle.click();
   await expect(toggle).toHaveAttribute('aria-expanded', 'true');
-  await group.locator('.empire-card', { hasText: /Empire espagnol/ }).first().click();
+  await group
+    .locator('.empire-card', { hasText: /Empire espagnol/ })
+    .first()
+    .click();
   await expect(page).toHaveURL(/empire=espagne/);
   await expect(page.locator('.timeline__title')).toHaveText(/Grenade/);
   expect(errors).toEqual([]);

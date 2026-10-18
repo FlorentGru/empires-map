@@ -70,7 +70,9 @@ export function MonumentsView({ query, onNavigate }: { query: string; onNavigate
   const [selected, setSelected] = useState<string | null>(null);
   const continents = useMemo(() => [...new Set(ALL.map((m) => continentOf(m.location)))].sort(), []);
   const q = norm(query.trim());
-  const list = ALL.filter((m) => (continent === 'all' || continentOf(m.location) === continent) && (!q || norm(`${m.name} ${m.civilization}`).includes(q))).sort((a, b) => a.built - b.built);
+  const list = ALL.filter(
+    (m) => (continent === 'all' || continentOf(m.location) === continent) && (!q || norm(`${m.name} ${m.civilization}`).includes(q)),
+  ).sort((a, b) => a.built - b.built);
   const m = selected ? ALL.find((x) => x.id === selected) : undefined;
   if (m) return <MonumentDetail m={m} onBack={() => setSelected(null)} onNavigate={onNavigate} />;
   return (
@@ -95,7 +97,14 @@ export function MonumentsView({ query, onNavigate }: { query: string; onNavigate
             </h3>
             <div className="gallery__grid">
               {items.map((x) => (
-                <button key={x.id} type="button" className="gallery__card people__card monuments__card" data-card data-uid={`m:${x.id}`} onClick={() => setSelected(x.id)}>
+                <button
+                  key={x.id}
+                  type="button"
+                  className="gallery__card people__card monuments__card"
+                  data-card
+                  data-uid={`m:${x.id}`}
+                  onClick={() => setSelected(x.id)}
+                >
                   <Svg html={monumentIconSvg(x.kind)} />
                   <span className="gallery__name">{x.name}</span>
                   <span className="people__span">{monumentSpan(x)}</span>

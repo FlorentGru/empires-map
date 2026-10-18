@@ -81,7 +81,11 @@ export function WorldYearView({ initialYear, backName, onBack }: Props) {
     const onKey = (e: KeyboardEvent) => {
       if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
       const t = e.target as HTMLElement | null;
-      if (t && (t.tagName === 'TEXTAREA' || t.tagName === 'SELECT' || (t.tagName === 'INPUT' && (t as HTMLInputElement).type !== 'range') || t.isContentEditable)) return;
+      if (
+        t &&
+        (t.tagName === 'TEXTAREA' || t.tagName === 'SELECT' || (t.tagName === 'INPUT' && (t as HTMLInputElement).type !== 'range') || t.isContentEditable)
+      )
+        return;
       if (e.altKey || e.ctrlKey || e.metaKey) return;
       e.preventDefault();
       step(e.key === 'ArrowRight' ? 1 : -1);
@@ -106,7 +110,9 @@ export function WorldYearView({ initialYear, backName, onBack }: Props) {
       {/* L'année affichée, en grand au centre en haut : c'est le repère principal de cette vue. */}
       <div className="world-year" aria-live="polite">
         <span className="world-year__label">Le monde en</span>
-        <span key={year} className="world-year__value">{formatYear(year)}</span>
+        <span key={year} className="world-year__value">
+          {formatYear(year)}
+        </span>
         <span className="world-year__count">
           {present.length} empire{present.length > 1 ? 's' : ''} de l'Atlas
         </span>

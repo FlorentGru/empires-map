@@ -32,7 +32,25 @@ interface Item {
 }
 
 const NAPO: Faction[] = ['francais', 'britanniques', 'autrichiens', 'prussiens', 'russes', 'espagnols', 'portugais', 'polonais'];
-const ASIA: Faction[] = ['chinois', 'xiongnu', 'mongols', 'jurchens', 'mandchous', 'japonais', 'coreens', 'tibetains', 'vietnamiens', 'turcs-gokturks', 'khitans', 'ouighours', 'tangoutes', 'khwarezmiens', 'rus', 'chevaliers-europeens', 'mamelouks'];
+const ASIA: Faction[] = [
+  'chinois',
+  'xiongnu',
+  'mongols',
+  'jurchens',
+  'mandchous',
+  'japonais',
+  'coreens',
+  'tibetains',
+  'vietnamiens',
+  'turcs-gokturks',
+  'khitans',
+  'ouighours',
+  'tangoutes',
+  'khwarezmiens',
+  'rus',
+  'chevaliers-europeens',
+  'mamelouks',
+];
 
 const factionItem = (f: Faction): Item => ({ uid: `f:${f}`, kind: 'faction', faction: f, info: FACTION_INFO[f], color: FACTION_COLORS[f] });
 const archetypeItem = (a: Archetype): Item => ({ uid: `a:${a}`, kind: 'archetype', archetype: a, info: ARCHETYPE_INFO[a], color: '#8a7350' });
@@ -225,9 +243,7 @@ export function Gallery({ onClose, onNavigate, initialPerson = null }: Props) {
     else if (e.key === 'End') target = cards[cards.length - 1];
     else {
       const down = e.key === 'ArrowDown';
-      const rows = cards
-        .map((c) => ({ c, r: c.getBoundingClientRect() }))
-        .filter(({ r }) => (down ? r.top > cur.top + 8 : r.top < cur.top - 8));
+      const rows = cards.map((c) => ({ c, r: c.getBoundingClientRect() })).filter(({ r }) => (down ? r.top > cur.top + 8 : r.top < cur.top - 8));
       if (rows.length) {
         const rowTop = down ? Math.min(...rows.map(({ r }) => r.top)) : Math.max(...rows.map(({ r }) => r.top));
         target = rows.filter(({ r }) => Math.abs(r.top - rowTop) < 8).sort((a, b) => Math.abs(a.r.left - cur.left) - Math.abs(b.r.left - cur.left))[0]?.c;

@@ -112,13 +112,7 @@ export function EmpirePicker({ empires, current, onSelect, onOpenWorld }: Props)
             const panelId = `${baseId}-region-${gi}`;
             return (
               <li key={region} className={`empire-group${isOpen ? ' empire-group--open' : ''}`}>
-                <button
-                  type="button"
-                  className="empire-group__toggle"
-                  aria-expanded={isOpen}
-                  aria-controls={panelId}
-                  onClick={() => toggleRegion(region)}
-                >
+                <button type="button" className="empire-group__toggle" aria-expanded={isOpen} aria-controls={panelId} onClick={() => toggleRegion(region)}>
                   <span className="empire-group__title">
                     {region} · {total} empire{total > 1 ? 's' : ''} ({g.available.length} disponible{g.available.length > 1 ? 's' : ''})
                   </span>

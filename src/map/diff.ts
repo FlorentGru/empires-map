@@ -17,7 +17,10 @@ const LO = 0.12;
 export class DiffHighlight {
   private timers: number[] = [];
 
-  constructor(private map: MapLibreMap, beforeId?: string) {
+  constructor(
+    private map: MapLibreMap,
+    beforeId?: string,
+  ) {
     map.addSource('diff', { type: 'geojson', data: EMPTY });
     const color = ['match', ['get', 'kind'], 'gained', DIFF_COLORS.gained, DIFF_COLORS.lost] as never;
     const transition = { duration: prefersReducedMotion() ? 0 : PULSE_MS };

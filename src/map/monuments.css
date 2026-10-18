@@ -74,15 +74,28 @@
   cursor: pointer;
   transform: translate(0, 0) scale(0.4);
   opacity: 0;
-  transition: transform 0.2s ease-out, opacity 0.2s;
+  transition:
+    transform 0.2s ease-out,
+    opacity 0.2s;
 }
-.monument-fan--open .monument-fan__lines { opacity: 1; }
+.monument-fan--open .monument-fan__lines {
+  opacity: 1;
+}
 .monument-fan--open .monument-fan__item {
   transform: translate(var(--x), var(--y)) scale(1);
   opacity: 1;
 }
-.monument-fan__icon { width: 28px; height: 28px; line-height: 0; transition: transform 0.12s; filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3)); }
-.monument-fan__icon svg { width: 28px; height: 28px; }
+.monument-fan__icon {
+  width: 28px;
+  height: 28px;
+  line-height: 0;
+  transition: transform 0.12s;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+}
+.monument-fan__icon svg {
+  width: 28px;
+  height: 28px;
+}
 .monument-fan__name {
   margin-top: 1px;
   padding: 0 4px;
@@ -93,9 +106,16 @@
   border-radius: 4px;
 }
 .monument-fan__item:hover .monument-fan__icon,
-.monument-fan__item:focus-visible .monument-fan__icon { transform: scale(1.18); }
+.monument-fan__item:focus-visible .monument-fan__icon {
+  transform: scale(1.18);
+}
 .monument-fan__item:hover .monument-fan__name,
-.monument-fan__item:focus-visible .monument-fan__name { font-weight: 700; }
+.monument-fan__item:focus-visible .monument-fan__name {
+  font-weight: 700;
+}
 @media (prefers-reduced-motion: reduce) {
-  .monument-fan__item, .monument-fan__lines { transition: none; }
+  .monument-fan__item,
+  .monument-fan__lines {
+    transition: none;
+  }
 }

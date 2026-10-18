@@ -22,9 +22,7 @@ interface Props {
 
 const markdownComponents = {
   // `node` (AST) est retiré pour ne pas finir en attribut DOM.
-  a: ({ node: _node, ...props }: ComponentProps<'a'> & { node?: unknown }) => (
-    <a {...props} target="_blank" rel="noopener noreferrer" />
-  ),
+  a: ({ node: _node, ...props }: ComponentProps<'a'> & { node?: unknown }) => <a {...props} target="_blank" rel="noopener noreferrer" />,
 };
 
 export const EventPanel = memo(function EventPanel({ step, open, onToggle, story, chapter, inventions = [] }: Props) {
@@ -75,7 +73,9 @@ export const EventPanel = memo(function EventPanel({ step, open, onToggle, story
       </button>
 
       {story && (
-        <p className="visually-hidden" aria-live="polite">{segText}</p>
+        <p className="visually-hidden" aria-live="polite">
+          {segText}
+        </p>
       )}
       {step && meta && (
         <div id="event-panel-body" className="event-panel__body" hidden={!open} ref={bodyRef}>
@@ -84,42 +84,56 @@ export const EventPanel = memo(function EventPanel({ step, open, onToggle, story
               <div className="chapter-note">
                 <span className="chapter-note__label">Chapitre</span>
                 {chapterSegs.map(({ s, i }) => (
-                  <span key={i} data-seg={i} className={`story-sentence${reading(i)}`}>{s.text} </span>
+                  <span key={i} data-seg={i} className={`story-sentence${reading(i)}`}>
+                    {s.text}{' '}
+                  </span>
                 ))}
               </div>
             )}
             {!story && chapter && (
               <div className="chapter-note">
-                <span className="chapter-note__label">Chapitre {chapter.n} : {chapter.name}</span>
+                <span className="chapter-note__label">
+                  Chapitre {chapter.n} : {chapter.name}
+                </span>
                 {chapter.summary}
               </div>
             )}
             <header>
               <div className="event-panel__meta">
-                <time className={`event-panel__date${reading(dateIdx)}`} data-seg={dateIdx}>{formatYear(step.year)}</time>
+                <time className={`event-panel__date${reading(dateIdx)}`} data-seg={dateIdx}>
+                  {formatYear(step.year)}
+                </time>
                 <span className="badge" style={{ '--badge-color': meta.color } as CSSProperties}>
                   <span aria-hidden="true">{meta.icon}</span> {meta.label}
                 </span>
               </div>
-              <h2 className={`event-panel__title${reading(titleIdx)}`} data-seg={titleIdx}>{step.title}</h2>
+              <h2 className={`event-panel__title${reading(titleIdx)}`} data-seg={titleIdx}>
+                {step.title}
+              </h2>
               <p className="event-panel__summary">
                 {story
                   ? ofKind('summary').map(({ s, i }) => (
-                      <span key={i} data-seg={i} className={`story-sentence${reading(i)}`}>{s.text} </span>
+                      <span key={i} data-seg={i} className={`story-sentence${reading(i)}`}>
+                        {s.text}{' '}
+                      </span>
                     ))
                   : step.summary}
               </p>
             </header>
 
             {story && story.silent && (
-              <p className="story-note" role="status">Voix française indisponible : lecture silencieuse</p>
+              <p className="story-note" role="status">
+                Voix française indisponible : lecture silencieuse
+              </p>
             )}
             {story ? (
               <div className="prose story-text">
                 {[...detailParas.entries()].map(([k, items]) => (
                   <p key={k}>
                     {items.map(({ s, i }) => (
-                      <span key={i} data-seg={i} className={`story-sentence${reading(i)}`}>{s.text} </span>
+                      <span key={i} data-seg={i} className={`story-sentence${reading(i)}`}>
+                        {s.text}{' '}
+                      </span>
                     ))}
                   </p>
                 ))}
@@ -133,7 +147,9 @@ export const EventPanel = memo(function EventPanel({ step, open, onToggle, story
               <section className="story-quotes">
                 <h3>Paroles</h3>
                 {ofKind('quote').map(({ s, i }) => (
-                  <p key={i} data-seg={i} className={`story-sentence story-sentence--quote${reading(i)}`}>{s.text}</p>
+                  <p key={i} data-seg={i} className={`story-sentence story-sentence--quote${reading(i)}`}>
+                    {s.text}
+                  </p>
                 ))}
               </section>
             )}
@@ -164,7 +180,9 @@ export const EventPanel = memo(function EventPanel({ step, open, onToggle, story
                 <h3>Conséquences</h3>
                 <ul>
                   {step.consequences.map((c, ci) => (
-                    <li key={c} data-seg={ci === 0 ? consIdx : undefined} className={ci === 0 ? `story-sentence${reading(consIdx)}` : undefined}>{c}</li>
+                    <li key={c} data-seg={ci === 0 ? consIdx : undefined} className={ci === 0 ? `story-sentence${reading(consIdx)}` : undefined}>
+                      {c}
+                    </li>
                   ))}
                 </ul>
               </section>

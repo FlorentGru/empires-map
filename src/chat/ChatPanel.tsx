@@ -98,7 +98,9 @@ export function ChatPanel({ context, goToStep, onOpenQuiz }: Props) {
           </button>
         )}
         <button ref={fabRef} type="button" className="chat-fab chat-fab--sage" onClick={() => setOpen(true)} aria-haspopup="dialog">
-          <span className="chat-fab__sage" aria-hidden="true"><Character archetype="sage" width={38} height={51} /></span>
+          <span className="chat-fab__sage" aria-hidden="true">
+            <Character archetype="sage" width={38} height={51} />
+          </span>
           Demander au sage
         </button>
       </div>
@@ -111,13 +113,18 @@ export function ChatPanel({ context, goToStep, onOpenQuiz }: Props) {
           <Character archetype="sage" width={24} height={32} />
           Le sage de l'Atlas
         </span>
-        <button type="button" className="chat-panel__close" onClick={close} aria-label="Fermer le guide">✕</button>
+        <button type="button" className="chat-panel__close" onClick={close} aria-label="Fermer le guide">
+          ✕
+        </button>
       </div>
       <div className="chat-log" ref={logRef} aria-live="polite">
         {msgs.length === 0 && <p className="chat-msg chat-msg--note">Pose une question sur l'histoire, ou demande « montre-moi Cannes ».</p>}
         {msgs.map((m, i) => {
           const msg = (
-            <div key={i} className={`chat-msg chat-msg--${m.role === 'user' ? 'user' : m.role === 'bot' ? 'bot' : m.role === 'error' ? 'bot chat-msg--error' : 'note'}`}>
+            <div
+              key={i}
+              className={`chat-msg chat-msg--${m.role === 'user' ? 'user' : m.role === 'bot' ? 'bot' : m.role === 'error' ? 'bot chat-msg--error' : 'note'}`}
+            >
               {m.role === 'bot' || m.role === 'error' ? <Markdown>{m.text}</Markdown> : m.text}
               {m.tools && m.tools.length > 0 && <div className="chat-tools">Outils : {m.tools.join(', ')}</div>}
             </div>
@@ -125,21 +132,36 @@ export function ChatPanel({ context, goToStep, onOpenQuiz }: Props) {
           // Les réponses du guide sont précédées du portrait du sage.
           return m.role === 'bot' ? (
             <div key={i} className="chat-row">
-              <span className="chat-avatar" aria-hidden="true"><Character archetype="sage" width={22} height={29} /></span>
+              <span className="chat-avatar" aria-hidden="true">
+                <Character archetype="sage" width={22} height={29} />
+              </span>
               {msg}
             </div>
-          ) : msg;
+          ) : (
+            msg
+          );
         })}
         {busy && (
           <div className="chat-thinking" role="status">
-            <span className="chat-avatar chat-avatar--thinking" aria-hidden="true"><Character archetype="sage" width={22} height={29} /></span>
+            <span className="chat-avatar chat-avatar--thinking" aria-hidden="true">
+              <Character archetype="sage" width={22} height={29} />
+            </span>
             le sage réfléchit…
           </div>
         )}
       </div>
       <form className="chat-form" onSubmit={send}>
-        <input ref={inputRef} value={input} onChange={(e) => setInput(e.target.value)} placeholder="Ta question…" aria-label="Ta question au guide" disabled={busy} />
-        <button type="submit" disabled={busy || !input.trim()}>Envoyer</button>
+        <input
+          ref={inputRef}
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          placeholder="Ta question…"
+          aria-label="Ta question au guide"
+          disabled={busy}
+        />
+        <button type="submit" disabled={busy || !input.trim()}>
+          Envoyer
+        </button>
       </form>
     </section>
   );

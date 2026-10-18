@@ -97,7 +97,10 @@ export class PileFan {
     }
     // stacks() regroupe par proximité ; on garde la référence de chaque point (calque + id).
     const byRef = new Map(pts.map((p) => [p.ref, p]));
-    this.piles = stacks(pts.map((p) => ({ id: p.ref, x: p.x, y: p.y })), STACK_PX)
+    this.piles = stacks(
+      pts.map((p) => ({ id: p.ref, x: p.x, y: p.y })),
+      STACK_PX,
+    )
       .filter((g) => g.length > 1)
       .map((g) => g.map((p) => byRef.get(p.id)!));
     const box = this.map.getContainer();

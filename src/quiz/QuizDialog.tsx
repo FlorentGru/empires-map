@@ -125,7 +125,9 @@ export function QuizDialog({ open, onClose, empire }: Props) {
               Empire
               <select value={choice} onChange={(e) => setChoice(e.target.value)}>
                 {EMPIRES.map((e) => (
-                  <option key={e.id} value={e.id}>{e.name}</option>
+                  <option key={e.id} value={e.id}>
+                    {e.name}
+                  </option>
                 ))}
                 <option value="tous">Tous les empires</option>
               </select>
@@ -141,18 +143,30 @@ export function QuizDialog({ open, onClose, empire }: Props) {
             <label className="quiz__field">
               Nombre de questions
               <select value={n} onChange={(e) => setN(Number(e.target.value))}>
-                {[3, 5, 8, 10].map((k) => <option key={k} value={k}>{k}</option>)}
+                {[3, 5, 8, 10].map((k) => (
+                  <option key={k} value={k}>
+                    {k}
+                  </option>
+                ))}
               </select>
             </label>
             {best !== null && <p className="quiz__hint">Meilleur score : {best}</p>}
             <div className="quiz__actions">
-              <button type="submit" className="btn">Commencer</button>
-              <button type="button" className="btn btn--ghost" onClick={onClose}>Fermer</button>
+              <button type="submit" className="btn">
+                Commencer
+              </button>
+              <button type="button" className="btn btn--ghost" onClick={onClose}>
+                Fermer
+              </button>
             </div>
           </form>
         )}
 
-        {phase === 'loading' && <p role="status" className="quiz__status">Le sage prépare ses questions…</p>}
+        {phase === 'loading' && (
+          <p role="status" className="quiz__status">
+            Le sage prépare ses questions…
+          </p>
+        )}
 
         {(phase === 'down' || phase === 'failed') && (
           <div role="alert" className="quiz__error">
@@ -162,12 +176,22 @@ export function QuizDialog({ open, onClose, empire }: Props) {
                 <p className="quiz__hint">Vous pouvez aussi jouer sans le sage, avec des questions fabriquées depuis les données.</p>
               </>
             ) : (
-              <p>Impossible de générer un quiz, même hors ligne : le serveur de l'agent ne répond pas. Lancez <code>npm run agent</code> puis réessayez.</p>
+              <p>
+                Impossible de générer un quiz, même hors ligne : le serveur de l'agent ne répond pas. Lancez <code>npm run agent</code> puis réessayez.
+              </p>
             )}
             <div className="quiz__actions">
-              {phase === 'down' && <button type="button" className="btn" onClick={() => void launch(true)}>Quiz hors ligne</button>}
-              <button type="button" className="btn btn--ghost" onClick={() => setPhase('setup')}>Retour</button>
-              <button type="button" className="btn btn--ghost" onClick={onClose}>Fermer</button>
+              {phase === 'down' && (
+                <button type="button" className="btn" onClick={() => void launch(true)}>
+                  Quiz hors ligne
+                </button>
+              )}
+              <button type="button" className="btn btn--ghost" onClick={() => setPhase('setup')}>
+                Retour
+              </button>
+              <button type="button" className="btn btn--ghost" onClick={onClose}>
+                Fermer
+              </button>
             </div>
           </div>
         )}
@@ -175,15 +199,26 @@ export function QuizDialog({ open, onClose, empire }: Props) {
         {phase === 'play' && quiz && q && (
           <div className="quiz__play">
             <p className="quiz__meta">
-              <span>Question {index + 1} / {quiz.questions.length} · score {score}</span>
+              <span>
+                Question {index + 1} / {quiz.questions.length} · score {score}
+              </span>
               <span className={`quiz__badge quiz__badge--${source}`}>{badge}</span>
             </p>
-            <h3 className="quiz__question" tabIndex={-1} ref={(el) => el?.focus({ preventScroll: true })} key={index}>{q.question}</h3>
+            <h3 className="quiz__question" tabIndex={-1} ref={(el) => el?.focus({ preventScroll: true })} key={index}>
+              {q.question}
+            </h3>
             <div className="quiz__choices">
               {q.choix.map((c, i) => {
                 const state = picked === null ? '' : i === q.bonne_reponse ? ' quiz__choice--right' : i === picked ? ' quiz__choice--wrong' : '';
                 return (
-                  <button key={i} type="button" className={`quiz__choice${state}`} disabled={picked !== null} aria-disabled={picked !== null} onClick={() => answer(i)}>
+                  <button
+                    key={i}
+                    type="button"
+                    className={`quiz__choice${state}`}
+                    disabled={picked !== null}
+                    aria-disabled={picked !== null}
+                    onClick={() => answer(i)}
+                  >
                     {c}
                   </button>
                 );
@@ -197,7 +232,9 @@ export function QuizDialog({ open, onClose, empire }: Props) {
                   </p>
                   <p>{q.explication}</p>
                   <div className="quiz__actions">
-                    <button type="button" className="btn btn--ghost" onClick={() => goTo(q.empire, q.etape_id)}>Voir sur la carte</button>
+                    <button type="button" className="btn btn--ghost" onClick={() => goTo(q.empire, q.etape_id)}>
+                      Voir sur la carte
+                    </button>
                     <button type="button" className="btn" autoFocus onClick={next}>
                       {index + 1 < quiz.questions.length ? 'Question suivante' : 'Voir mon score'}
                     </button>
@@ -210,12 +247,20 @@ export function QuizDialog({ open, onClose, empire }: Props) {
 
         {phase === 'end' && quiz && (
           <div className="quiz__end">
-            <p className="quiz__score" role="status">Score : {score} / {quiz.questions.length}</p>
+            <p className="quiz__score" role="status">
+              Score : {score} / {quiz.questions.length}
+            </p>
             {best !== null && <p className="quiz__hint">Meilleur score : {best}</p>}
-            <p className="quiz__meta"><span className={`quiz__badge quiz__badge--${source}`}>{badge}</span></p>
+            <p className="quiz__meta">
+              <span className={`quiz__badge quiz__badge--${source}`}>{badge}</span>
+            </p>
             <div className="quiz__actions">
-              <button type="button" className="btn" onClick={() => setPhase('setup')}>Rejouer</button>
-              <button type="button" className="btn btn--ghost" onClick={onClose}>Fermer</button>
+              <button type="button" className="btn" onClick={() => setPhase('setup')}>
+                Rejouer
+              </button>
+              <button type="button" className="btn btn--ghost" onClick={onClose}>
+                Fermer
+              </button>
             </div>
           </div>
         )}

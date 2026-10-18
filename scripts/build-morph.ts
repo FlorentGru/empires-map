@@ -60,8 +60,7 @@ const intersect = (a: Poly | null, b: Poly | null): Poly | null =>
   a && b ? robust((x, y) => (turf.intersect(turf.featureCollection([x, y])) as Poly | null) ?? null, a, b) : null;
 const difference = (a: Poly | null, b: Poly | null): Poly | null =>
   a ? (b ? robust((x, y) => (turf.difference(turf.featureCollection([x, y])) as Poly | null) ?? null, a, b) : a) : null;
-const unionAll = (l: Poly[]): Poly | null =>
-  l.length === 0 ? null : l.length === 1 ? l[0] : ((turf.union(turf.featureCollection(l)) as Poly | null) ?? null);
+const unionAll = (l: Poly[]): Poly | null => (l.length === 0 ? null : l.length === 1 ? l[0] : ((turf.union(turf.featureCollection(l)) as Poly | null) ?? null));
 const areaKm2 = (f: Poly | null): number => (f ? turf.area(f) / 1e6 : 0);
 
 function parts(f: Poly | null): Polygon[] {
@@ -87,8 +86,7 @@ type Source = { kind: 'poly'; geom: Poly; segs: number[][] } | { kind: 'point'; 
 function segmentsOf(f: Poly): number[][] {
   const segs: number[][] = [];
   for (const p of parts(f))
-    for (const ring of p.coordinates)
-      for (let i = 0; i + 1 < ring.length; i++) segs.push([ring[i][0], ring[i][1], ring[i + 1][0], ring[i + 1][1]]);
+    for (const ring of p.coordinates) for (let i = 0; i + 1 < ring.length; i++) segs.push([ring[i][0], ring[i][1], ring[i + 1][0], ring[i + 1][1]]);
   return segs;
 }
 
@@ -98,11 +96,16 @@ function distToSegs(x: number, y: number, segs: number[][]): number {
   const ky = 110.57;
   let best = Infinity;
   for (const [x1, y1, x2, y2] of segs) {
-    const ax = (x1 - x) * kx, ay = (y1 - y) * ky, bx = (x2 - x) * kx, by = (y2 - y) * ky;
-    const dx = bx - ax, dy = by - ay;
+    const ax = (x1 - x) * kx,
+      ay = (y1 - y) * ky,
+      bx = (x2 - x) * kx,
+      by = (y2 - y) * ky;
+    const dx = bx - ax,
+      dy = by - ay;
     const l2 = dx * dx + dy * dy;
     const t = l2 === 0 ? 0 : Math.max(0, Math.min(1, -(ax * dx + ay * dy) / l2));
-    const px = ax + t * dx, py = ay + t * dy;
+    const px = ax + t * dx,
+      py = ay + t * dy;
     const d = px * px + py * py;
     if (d < best) best = d;
   }
@@ -131,9 +134,7 @@ function bufferOf(src: Source, km: number): Poly {
 
 function fromParts(ps: Polygon[]): Poly | null {
   if (ps.length === 0) return null;
-  return turf.feature(
-    ps.length === 1 ? ps[0] : { type: 'MultiPolygon', coordinates: ps.map((p) => p.coordinates) },
-  ) as Poly;
+  return turf.feature(ps.length === 1 ? ps[0] : { type: 'MultiPolygon', coordinates: ps.map((p) => p.coordinates) }) as Poly;
 }
 
 // ---------- découpage en bandes ----------
@@ -192,7 +193,13 @@ function finalize(f: Poly, tol: number): Polygon | MultiPolygon | null {
   for (const p of parts(s)) {
     const outer = roundRing(p.coordinates[0]);
     if (outer.length < 4) continue;
-    const rings = [outer, ...p.coordinates.slice(1).map(roundRing).filter((r) => r.length >= 4)];
+    const rings = [
+      outer,
+      ...p.coordinates
+        .slice(1)
+        .map(roundRing)
+        .filter((r) => r.length >= 4),
+    ];
     if (turf.area(turf.polygon(rings)) / 1e6 < MIN_FRAG_KM2) continue;
     polys.push(rings);
   }

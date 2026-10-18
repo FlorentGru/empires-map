@@ -25,11 +25,20 @@ function capitalAt(name: string, year: number): Capital | undefined {
 
 type Poly = Feature<Polygon | MultiPolygon>;
 const HB_DIR = path.join(ROOT, '.cache/historical-basemaps');
-const DEFAULT_BOUNDS: [Position, Position] = [[-30, 5], [75, 66]];
+const DEFAULT_BOUNDS: [Position, Position] = [
+  [-30, 5],
+  [75, 66],
+];
 /** Cadre des voisins par empire (les timelines n'ont plus de `bounds` depuis la carte du monde entier). */
 const NEIGHBOR_BOUNDS: Record<string, [Position, Position]> = {
-  china: [[55, 5], [150, 58]],
-  mongols: [[2, 8], [146, 62]],
+  china: [
+    [55, 5],
+    [150, 58],
+  ],
+  mongols: [
+    [2, 8],
+    [146, 62],
+  ],
 };
 const MIN_AREA_KM2 = 30000;
 const MAX_BYTES = 60 * 1024;
@@ -95,9 +104,9 @@ for (const cfg of selectedEmpires()) {
   for (const step of tl.steps) {
     const cs = cfg.steps.find((s) => s.id === step.id);
     const snapName = cs?.snapshot ?? pickSnapshot(step.year);
-    const terr = JSON.parse(
-      fs.readFileSync(path.join(paths(cfg.id).territories, `${step.territory}.geojson`), 'utf8'),
-    ) as FeatureCollection<Polygon | MultiPolygon>;
+    const terr = JSON.parse(fs.readFileSync(path.join(paths(cfg.id).territories, `${step.territory}.geojson`), 'utf8')) as FeatureCollection<
+      Polygon | MultiPolygon
+    >;
     const terrNames = new Set(terr.features.map((f) => String(f.properties?.name).toLowerCase()));
     const terrUnion: Poly | null = terr.features.length
       ? terr.features.length === 1
@@ -121,9 +130,7 @@ for (const cfg of selectedEmpires()) {
     const kept: { fr: string; area: number; geom: Poly }[] = [];
     for (const [name, list] of byName) {
       const geom: Poly =
-        list.length === 1
-          ? list[0]
-          : turf.feature({ type: 'MultiPolygon', coordinates: list.flatMap((f) => polys(f).map((p) => p.geometry.coordinates)) });
+        list.length === 1 ? list[0] : turf.feature({ type: 'MultiPolygon', coordinates: list.flatMap((f) => polys(f).map((p) => p.geometry.coordinates)) });
       const area = turf.area(geom) / 1e6;
       if (area < MIN_AREA_KM2) continue;
       const fr = NEIGHBOR_NAMES[name];
@@ -168,12 +175,16 @@ for (const cfg of selectedEmpires()) {
         feats.push(turf.point([r3(pt[0]), r3(pt[1])], { kind: 'label', name: k.fr, area: Math.round(k.area) }));
         const cap = capitalAt(k.fr, step.year);
         if (cap && turf.booleanPointInPolygon(cap.at, turf.bboxPolygon(bbox))) {
-          const near = polys(k.geom).some((p) => turf.booleanPointInPolygon(cap.at, p) || turf.pointToPolygonDistance(cap.at, p, { units: 'kilometers' }) <= CAPITAL_TOLERANCE_KM);
+          const near = polys(k.geom).some(
+            (p) => turf.booleanPointInPolygon(cap.at, p) || turf.pointToPolygonDistance(cap.at, p, { units: 'kilometers' }) <= CAPITAL_TOLERANCE_KM,
+          );
           if (near) {
             feats.push(turf.point(cap.at, { kind: 'capital', name: cap.city, of: k.fr }));
             if (attempt === 0) st.capitals++;
-          }
-          else if (attempt === 0) st.farCapitals.add(`${k.fr} → ${cap.city} (${Math.round(Math.min(...polys(k.geom).map((p) => turf.pointToPolygonDistance(cap.at, p, { units: 'kilometers' }))))} km)`);
+          } else if (attempt === 0)
+            st.farCapitals.add(
+              `${k.fr} → ${cap.city} (${Math.round(Math.min(...polys(k.geom).map((p) => turf.pointToPolygonDistance(cap.at, p, { units: 'kilometers' }))))} km)`,
+            );
         }
 
         const lines = turf.polygonToLine(k.geom) as Feature<any>;
@@ -216,11 +227,18 @@ for (const cfg of selectedEmpires()) {
 
 if (missing.size) {
   console.error(`✗ ${missing.size} noms sans traduction dans scripts/neighbor-names.ts :`);
-  console.error([...missing].sort().map((n) => `  ${JSON.stringify(n)}: '',`).join('\n'));
+  console.error(
+    [...missing]
+      .sort()
+      .map((n) => `  ${JSON.stringify(n)}: '',`)
+      .join('\n'),
+  );
   process.exit(1);
 }
 console.log('empire    | fichiers | voisins moy. | capitales | taille max');
 for (const [id, s] of Object.entries(stats))
-  console.log(`${id.padEnd(9)} | ${String(s.files).padStart(8)} | ${(s.neighbors / Math.max(1, s.files)).toFixed(1).padStart(12)} | ${String(s.capitals).padStart(9)} | ${(s.maxBytes / 1024).toFixed(1)} Ko`);
+  console.log(
+    `${id.padEnd(9)} | ${String(s.files).padStart(8)} | ${(s.neighbors / Math.max(1, s.files)).toFixed(1).padStart(12)} | ${String(s.capitals).padStart(9)} | ${(s.maxBytes / 1024).toFixed(1)} Ko`,
+  );
 for (const [id, s] of Object.entries(stats))
   if (s.farCapitals.size) console.log(`  ${id} : capitales hors du voisin (ignorées) : ${[...s.farCapitals].join(', ')}`);

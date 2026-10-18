@@ -18,8 +18,7 @@ type F = Feature<Polygon | MultiPolygon>;
 
 function printTable(rows: string[][], rightFrom: number, rightTo: number): void {
   const widths = rows[0].map((_, i) => Math.max(...rows.map((r) => r[i].length)));
-  const line = (r: string[]) =>
-    '| ' + r.map((c, i) => (i >= rightFrom && i <= rightTo ? c.padStart(widths[i]) : c.padEnd(widths[i]))).join(' | ') + ' |';
+  const line = (r: string[]) => '| ' + r.map((c, i) => (i >= rightFrom && i <= rightTo ? c.padStart(widths[i]) : c.padEnd(widths[i]))).join(' | ') + ' |';
   console.log('\n' + line(rows[0]));
   console.log('|' + widths.map((w) => '-'.repeat(w + 2)).join('|') + '|');
   for (const r of rows.slice(1)) console.log(line(r));
@@ -74,8 +73,7 @@ export function checkTerritories(cfg: EmpireConfig): boolean {
     rows.push(row);
     if (hasStatus)
       entityLines.push(
-        `  ${step.id}: ` +
-          fc.features.map((f) => `${f.properties?.name} (${f.properties?.status ?? '-'}, ${km2(turf.area(f) / 1e6)})`).join(' ; '),
+        `  ${step.id}: ` + fc.features.map((f) => `${f.properties?.name} (${f.properties?.status ?? '-'}, ${km2(turf.area(f) / 1e6)})`).join(' ; '),
       );
     prev = refArea;
   }
@@ -112,12 +110,7 @@ function checkPoints(cfg: EmpireConfig, loaded: Map<string, FeatureCollection>):
       row.push(sym);
       if (i < a || i > b) return;
       n++;
-      const okHere =
-        cp.where === 'any'
-          ? sts.length > 0
-          : cp.where === 'not-core'
-            ? !sts.includes('core')
-            : sts.includes(cp.where);
+      const okHere = cp.where === 'any' ? sts.length > 0 : cp.where === 'not-core' ? !sts.includes('core') : sts.includes(cp.where);
       if (!okHere) bad.push(`${cp.name} @ ${step.id} : attendu ${cp.where}, obtenu ${sts.length ? sts.join('/') : 'hors territoire'}`);
     });
     grid.push(row);

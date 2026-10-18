@@ -54,8 +54,14 @@ test('capitales : voisins de l’époque et empires contemporains', async ({ pag
   await page.goto('/?empire=rome&step=dacie-271&e2e');
   await mapReady(page, 'neighbors-capital');
   // Capitale d'un voisin dans les données de l'étape (ex. Ctésiphon pour les Perses sassanides).
-  await page.waitForFunction(async () => ((await (window as any).__map.getSource('neighbors').getData()).features as any[]).some((f) => f.properties.kind === 'capital'), null, { timeout: 30_000 });
+  await page.waitForFunction(
+    async () => ((await (window as any).__map.getSource('neighbors').getData()).features as any[]).some((f) => f.properties.kind === 'capital'),
+    null,
+    { timeout: 30_000 },
+  );
   // Capitale d'un empire contemporain (Chine) marquée dans le calque des villes.
-  const foreign = await page.evaluate(async () => ((await (window as any).__map.getSource('cities').getData()).features as any[]).filter((f) => f.properties.foreign).map((f) => f.properties.label));
+  const foreign = await page.evaluate(async () =>
+    ((await (window as any).__map.getSource('cities').getData()).features as any[]).filter((f) => f.properties.foreign).map((f) => f.properties.label),
+  );
   expect(foreign.length).toBeGreaterThan(0);
 });

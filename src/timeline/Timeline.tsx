@@ -39,7 +39,13 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
 
   const yearToX = useMemo(
     // Beaucoup d'étapes : on donne plus de poids au rang (étapes uniformément espacées) qu'aux années.
-    () => makeYearScale(steps.map((s) => s.year), empire.start, empire.end, steps.length > 40 ? 0.3 : 0.45),
+    () =>
+      makeYearScale(
+        steps.map((s) => s.year),
+        empire.start,
+        empire.end,
+        steps.length > 40 ? 0.3 : 0.45,
+      ),
     [steps, empire.start, empire.end],
   );
   const periods = empire.periods;
@@ -71,7 +77,10 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
   const areas = empire.stats?.areas;
   const curve = useMemo(() => {
     if (!areas) return null;
-    const values = normalizedAreas(steps.map((s) => s.id), areas);
+    const values = normalizedAreas(
+      steps.map((s) => s.id),
+      areas,
+    );
     const pts = steps.map((s, i) => `${(yearToX(s.year) * 1000).toFixed(1)},${(CURVE_H * (1 - values[i])).toFixed(2)}`);
     const first = (yearToX(steps[0].year) * 1000).toFixed(1);
     const last = (yearToX(steps[steps.length - 1].year) * 1000).toFixed(1);
@@ -97,10 +106,22 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
       ...place(el),
     });
   const showInventionTip = (inv: Invention, el: HTMLElement) =>
-    setTip({ kind: 'invention', title: `💡 ${inv.name}`, lines: [`${CATEGORY_LABELS[inv.category]} · ${inv.approx ? 'vers ' : ''}${formatYear(inv.year)}`, inv.place], ...place(el) });
+    setTip({
+      kind: 'invention',
+      title: `💡 ${inv.name}`,
+      lines: [`${CATEGORY_LABELS[inv.category]} · ${inv.approx ? 'vers ' : ''}${formatYear(inv.year)}`, inv.place],
+      ...place(el),
+    });
   const inventions = useMemo(() => (INVENTIONS[empire.id] ?? []).filter((inv) => inv.year >= empire.start && inv.year <= empire.end), [empire]);
   // Losanges trop proches (même année ou presque) : écartés de 10 px de part et d'autre.
-  const inventionShift = useMemo(() => spreadOffsets(inventions.map((inv) => yearToX(inv.year)), 0.009), [inventions, yearToX]);
+  const inventionShift = useMemo(
+    () =>
+      spreadOffsets(
+        inventions.map((inv) => yearToX(inv.year)),
+        0.009,
+      ),
+    [inventions, yearToX],
+  );
 
   const pct = (x: number) => `${(x * 100).toFixed(3)}%`;
 
@@ -136,7 +157,12 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
         </button>
         <label className="timeline__speed">
           <span className="visually-hidden">Vitesse de lecture</span>
-          <select value={player.speed} disabled={story.enabled} title={story.enabled ? 'Mode Histoire : le rythme suit la narration' : undefined} onChange={(e) => player.setSpeed(Number(e.target.value) as Speed)}>
+          <select
+            value={player.speed}
+            disabled={story.enabled}
+            title={story.enabled ? 'Mode Histoire : le rythme suit la narration' : undefined}
+            onChange={(e) => player.setSpeed(Number(e.target.value) as Speed)}
+          >
             {SPEEDS.map((s) => (
               <option key={s} value={s}>
                 {String(s).replace('.', ',')}×
@@ -156,7 +182,8 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
         </button>
         <StoryButton story={story} />
         <div className="timeline__current" aria-live="polite">
-          <span className="timeline__year">{active ? formatYear(active.year) : ''}
+          <span className="timeline__year">
+            {active ? formatYear(active.year) : ''}
             {compare2026 && <span className="timeline__compare"> · comparé à 2026</span>}
           </span>
           {periods && activePeriod >= 0 && (
@@ -214,22 +241,22 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
             );
           })}
           {inventions.map((inv, ii) => (
-              <button
-                key={inv.id}
-                type="button"
-                className="timeline__invention"
-                style={{ left: `calc(${pct(yearToX(inv.year))} + ${inventionShift[ii]! * 10}px)` }}
-                aria-label={`Invention : ${inv.name}, ${formatYear(inv.year)}`}
-                onPointerEnter={(e) => showInventionTip(inv, e.currentTarget)}
-                onPointerLeave={() => setTip(null)}
-                onFocus={(e) => showInventionTip(inv, e.currentTarget)}
-                onBlur={() => setTip(null)}
-                onClick={() => {
-                  player.pause();
-                  window.dispatchEvent(new CustomEvent(OPEN_INVENTION_EVENT, { detail: inv.id }));
-                }}
-              />
-            ))}
+            <button
+              key={inv.id}
+              type="button"
+              className="timeline__invention"
+              style={{ left: `calc(${pct(yearToX(inv.year))} + ${inventionShift[ii]! * 10}px)` }}
+              aria-label={`Invention : ${inv.name}, ${formatYear(inv.year)}`}
+              onPointerEnter={(e) => showInventionTip(inv, e.currentTarget)}
+              onPointerLeave={() => setTip(null)}
+              onFocus={(e) => showInventionTip(inv, e.currentTarget)}
+              onBlur={() => setTip(null)}
+              onClick={() => {
+                player.pause();
+                window.dispatchEvent(new CustomEvent(OPEN_INVENTION_EVENT, { detail: inv.id }));
+              }}
+            />
+          ))}
           <div className="timeline__axis" />
           {ticks.map((y, i) => (
             <span
@@ -270,13 +297,17 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
               const area = areas?.[s.id] ? ` · ${formatArea(areas[s.id])}` : '';
               return (
                 <li key={s.id} className={apogee ? 'timeline__apogee' : undefined} style={{ left: pct(yearToX(s.year)) }}>
-                  {apogee && <span className="timeline__apogee-crown" aria-hidden="true">♛ Apogée</span>}
+                  {apogee && (
+                    <span className="timeline__apogee-crown" aria-hidden="true">
+                      ♛ Apogée
+                    </span>
+                  )}
                   <button
                     type="button"
                     className={`timeline__point${isActive ? ' timeline__point--active' : ''}${apogee ? ' timeline__point--apogee' : ''}`}
                     style={{ '--point-color': meta.color } as CSSProperties}
                     onClick={() => player.goTo(i)}
-                    aria-label={`${formatYear(s.year)} — ${s.title} (${meta.label})${apogee ? ' — apogée de l\'empire' : ''}`}
+                    aria-label={`${formatYear(s.year)} — ${s.title} (${meta.label})${apogee ? " — apogée de l'empire" : ''}`}
                     aria-current={isActive ? 'step' : undefined}
                     title={`${formatYear(s.year)} — ${s.title}${apogee ? ' — ♛ apogée' : ''}${area}`}
                   />

@@ -28,7 +28,15 @@ export function closeMapCard(): void {
  * Ouvre la bulle près de (clientX, clientY), toujours entièrement à l'écran.
  * Se ferme avec ✕, Échap, ou dès que l'utilisateur déplace la carte. Le focus va sur `focus` s'il est fourni.
  */
-export function openMapCard(map: MapLibreMap, clientX: number, clientY: number, label: string, content: Node[], focus?: HTMLElement, onClose?: () => void): HTMLDivElement {
+export function openMapCard(
+  map: MapLibreMap,
+  clientX: number,
+  clientY: number,
+  label: string,
+  content: Node[],
+  focus?: HTMLElement,
+  onClose?: () => void,
+): HTMLDivElement {
   closeMapCard();
   const card = document.createElement('div');
   card.className = 'map-card';

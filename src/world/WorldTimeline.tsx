@@ -39,7 +39,13 @@ export function WorldTimeline({ year, onYear, onStep, playing, onTogglePlay, spe
         <button type="button" className="world-tl__btn" onClick={() => onStep(-1)} aria-label="Étape précédente (tous empires)" title="Étape précédente (←)">
           ⏮
         </button>
-        <button type="button" className="world-tl__btn world-tl__btn--play" onClick={onTogglePlay} aria-label={playing ? 'Pause' : 'Lecture'} aria-pressed={playing}>
+        <button
+          type="button"
+          className="world-tl__btn world-tl__btn--play"
+          onClick={onTogglePlay}
+          aria-label={playing ? 'Pause' : 'Lecture'}
+          aria-pressed={playing}
+        >
           {playing ? '⏸' : '▶'}
         </button>
         <button type="button" className="world-tl__btn" onClick={() => onStep(1)} aria-label="Étape suivante (tous empires)" title="Étape suivante (→)">
@@ -90,7 +96,11 @@ export function WorldTimeline({ year, onYear, onStep, playing, onTogglePlay, spe
           </div>
           {EMPIRES.map((e, i) => (
             <div key={e.id} className="world-tl__row" aria-hidden="true">
-              <div className="world-tl__band" style={{ left: pct(e.start), width: `${((yearToPos(e.end) - yearToPos(e.start)) * 100).toFixed(3)}%`, background: e.color }} title={e.name} />
+              <div
+                className="world-tl__band"
+                style={{ left: pct(e.start), width: `${((yearToPos(e.end) - yearToPos(e.start)) * 100).toFixed(3)}%`, background: e.color }}
+                title={e.name}
+              />
               {ticks[i]!.map((y, k) => (
                 <span key={k} className="world-tl__tick" style={{ left: pct(y) }} />
               ))}

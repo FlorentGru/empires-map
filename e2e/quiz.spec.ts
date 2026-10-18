@@ -5,8 +5,22 @@ const quiz = {
   quiz: {
     titre: 'Quiz : Rome',
     questions: [
-      { question: 'En quelle année a lieu Zama ?', choix: ['202 av. J.-C.', '216 av. J.-C.', '146 av. J.-C.', '218 av. J.-C.'], bonne_reponse: 0, explication: 'Zama : 202 av. J.-C.', empire: 'rome', etape_id: 'zama-202' },
-      { question: 'Qui commande à Cannes côté carthaginois ?', choix: ['Hannon', 'Hannibal', 'Hasdrubal', 'Magon'], bonne_reponse: 1, explication: 'Hannibal à Cannes (216).', empire: 'rome', etape_id: 'cannes-216' },
+      {
+        question: 'En quelle année a lieu Zama ?',
+        choix: ['202 av. J.-C.', '216 av. J.-C.', '146 av. J.-C.', '218 av. J.-C.'],
+        bonne_reponse: 0,
+        explication: 'Zama : 202 av. J.-C.',
+        empire: 'rome',
+        etape_id: 'zama-202',
+      },
+      {
+        question: 'Qui commande à Cannes côté carthaginois ?',
+        choix: ['Hannon', 'Hannibal', 'Hasdrubal', 'Magon'],
+        bonne_reponse: 1,
+        explication: 'Hannibal à Cannes (216).',
+        empire: 'rome',
+        etape_id: 'cannes-216',
+      },
     ],
   },
 };
@@ -31,7 +45,9 @@ test('quiz : bonne puis mauvaise réponse, score final', async ({ page }) => {
 });
 
 test('quiz : « Voir sur la carte » déplace la carte', async ({ page }) => {
-  await page.route('**/api/quiz', (route) => route.fulfill({ json: { ...quiz, quiz: { ...quiz.quiz, questions: [{ ...quiz.quiz.questions[0], empire: 'napoleon', etape_id: 'austerlitz-1805' }] } } }));
+  await page.route('**/api/quiz', (route) =>
+    route.fulfill({ json: { ...quiz, quiz: { ...quiz.quiz, questions: [{ ...quiz.quiz.questions[0], empire: 'napoleon', etape_id: 'austerlitz-1805' }] } } }),
+  );
   await page.goto('/?empire=rome&step=zama-202');
   await page.getByRole('button', { name: /Quiz/ }).click();
   const dialog = page.getByRole('dialog', { name: /Quiz du sage/ });
@@ -63,5 +79,10 @@ test('sans aucun serveur, le quiz hors ligne est généré dans le navigateur', 
   await dialog.getByRole('button', { name: 'Commencer' }).click();
   await dialog.getByRole('button', { name: 'Quiz hors ligne' }).click();
   await expect(dialog).toContainText('hors ligne');
-  await expect(dialog.getByRole('button').filter({ hasNotText: /Fermer|Commencer|Rejouer|Quiz hors ligne/ }).first()).toBeVisible();
+  await expect(
+    dialog
+      .getByRole('button')
+      .filter({ hasNotText: /Fermer|Commencer|Rejouer|Quiz hors ligne/ })
+      .first(),
+  ).toBeVisible();
 });

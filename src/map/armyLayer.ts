@@ -78,7 +78,12 @@ const PEOPLE: Record<Faction, string> = {
   independantistes: 'Indépendantistes',
 };
 const esc = (v: string) => v.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-const plain = (v: string) => v.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+const plain = (v: string) =>
+  v
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim();
 
 /** Étiquette d'armée : camp en gras, peuple en petit (une seule fois s'ils sont identiques). */
 function labelHtml(a: ArmyMove, origin?: string | null): string {
@@ -90,7 +95,6 @@ function labelHtml(a: ArmyMove, origin?: string | null): string {
 
 const easeInOut = (x: number) => (x < 0.5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2);
 const clamp01 = (x: number) => (x < 0 ? 0 : x > 1 ? 1 : x);
-
 
 function geom(a: ArmyMove) {
   const cum = [0];
@@ -478,7 +482,27 @@ export class ArmyLayer {
     const marker = new Marker({ element: el, anchor: 'bottom' }).setLngLat(a.path[0]!).addTo(this.map);
     // Toujours toute la marche : depuis la base de départ ou le champ de bataille précédent.
     const startDist = 0;
-    const run: ArmyRun = { id: a.id, path: a.path, cum, total, startDist, loser, retreat, marker, el, regiment, halfW, segIdx: -1, flipped: false, lastDir, settled: false, winner: a.winner === true, label, trail: [], side: -lastDir };
+    const run: ArmyRun = {
+      id: a.id,
+      path: a.path,
+      cum,
+      total,
+      startDist,
+      loser,
+      retreat,
+      marker,
+      el,
+      regiment,
+      halfW,
+      segIdx: -1,
+      flipped: false,
+      lastDir,
+      settled: false,
+      winner: a.winner === true,
+      label,
+      trail: [],
+      side: -lastDir,
+    };
     this.setFront(run, false);
     return run;
   }
@@ -486,8 +510,25 @@ export class ArmyLayer {
   /** Réutilise le régiment d'une armée de l'étape précédente : état « marche » depuis sa position. */
   private rebuild(r: ArmyRun, a: ArmyMove, loser: boolean, origin: string | null = null): ArmyRun {
     const { cum, total, lastDir, retreat } = geom(a);
-    Object.assign(r, { id: a.id, path: a.path, cum, total, startDist: 0, loser, retreat, segIdx: -1, flipped: false, lastDir, settled: false, winner: a.winner === true, trail: [], side: -lastDir });
+    Object.assign(r, {
+      id: a.id,
+      path: a.path,
+      cum,
+      total,
+      startDist: 0,
+      loser,
+      retreat,
+      segIdx: -1,
+      flipped: false,
+      lastDir,
+      settled: false,
+      winner: a.winner === true,
+      trail: [],
+      side: -lastDir,
+    });
     // Ne retirer que les états d'animation : les classes maplibregl-marker positionnent le marqueur.
+    // Copie voulue : on retire des classes pendant le parcours (classList est une liste vivante).
+    // oxlint-disable-next-line unicorn/no-useless-spread
     for (const c of [...r.el.classList]) if (c.startsWith('army-marker--')) r.el.classList.remove(c);
     r.el.style.setProperty('--c', FACTION_COLORS[a.faction]);
     if (r.label) {

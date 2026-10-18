@@ -24,7 +24,10 @@ export class TerritoryLabels {
   private enabled = true;
   private suspended = false;
 
-  constructor(private map: MapLibreMap, beforeId?: string) {
+  constructor(
+    private map: MapLibreMap,
+    beforeId?: string,
+  ) {
     map.addSource(SRC, { type: 'geojson', data: EMPTY });
     map.addLayer(
       {

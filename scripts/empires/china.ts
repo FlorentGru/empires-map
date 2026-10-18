@@ -129,7 +129,7 @@ function compose(step: EmpireStep, ctx: GeoCtx): ComposedEntity[] {
     B = makeBlocks(ctx);
     cache.set(ctx, B);
   }
-  const { u, c, P, F, hk, tw, mn, nk, sk, vnN, lelang, nkSud, amur, cp, cpSansYunnan, hexi, north, south, shu, cnSansTibet, tibet, CN } = B;
+  const { u, c, P, hk, tw, mn, nk, sk, vnN, lelang, nkSud, amur, cp, cpSansYunnan, hexi, north, south, shu, cnSansTibet, tibet, CN } = B;
   const d = c.diff;
   const out: ComposedEntity[] = [];
   const add = (name: string, status: Status, geom: Poly | null) => out.push({ name, status, geom });
@@ -183,9 +183,7 @@ function compose(step: EmpireStep, ctx: GeoCtx): ComposedEntity[] {
     case 'shang-yang-356':
     case 'changping-260': {
       const i260 = step.id === 'changping-260';
-      const qin = i260
-        ? u(P('GUANZHONG'), P('SICHUAN'), P('SHANXI_S'), c.inter(CN(), R('LUOYANG')), c.inter(CN(), c.region('JINGZHOU')))
-        : P('GUANZHONG');
+      const qin = i260 ? u(P('GUANZHONG'), P('SICHUAN'), P('SHANXI_S'), c.inter(CN(), R('LUOYANG')), c.inter(CN(), c.region('JINGZHOU'))) : P('GUANZHONG');
       if (!i260) core('Zhou (roi symbolique)', P('LUOYANG'));
       core('Qin', qin);
       core('Han', P('HAN_ST'));
@@ -508,7 +506,7 @@ const CHECKS: Checkpoint[] = [
   P('Pyongyang (Lelang)', [125.75, 39.02], 'core', 'mobei-119', 'wang-mang-9'),
   P('Séoul (Silla vassal)', [126.98, 37.57], 'vassal', 'xuanzang-645', 'xuanzang-645'),
   P('Hanoï (Han)', [105.85, 21.03], 'core', 'mobei-119', 'turbans-jaunes-184'),
-  P("Hanoï (Annan 751)", [105.85, 21.03], 'vassal', 'talas-751', 'talas-751'),
+  P('Hanoï (Annan 751)', [105.85, 21.03], 'vassal', 'talas-751', 'talas-751'),
   P('Taipei (Qing)', [121.56, 25.04], 'core', 'taiwan-1683', 'cixi-1861'),
   P('Taipei (hors Qing 1895+)', [121.56, 25.04], 'not-core', 'sino-japonaise-1895'),
   P('Hong Kong (avant 1842)', [114.17, 22.35], 'core', 'opium-1839', 'opium-1839'),

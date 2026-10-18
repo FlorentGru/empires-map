@@ -1,22 +1,7 @@
 /** Nature d'une catastrophe ou d'une guerre meurtrière affichée sur la carte. */
-export type DisasterKind =
-  | 'epidemie'
-  | 'eruption'
-  | 'seisme'
-  | 'tsunami'
-  | 'famine'
-  | 'inondation'
-  | 'guerre';
+export type DisasterKind = 'epidemie' | 'eruption' | 'seisme' | 'tsunami' | 'famine' | 'inondation' | 'guerre';
 
-export const DISASTER_KINDS: DisasterKind[] = [
-  'epidemie',
-  'eruption',
-  'seisme',
-  'tsunami',
-  'famine',
-  'inondation',
-  'guerre',
-];
+export const DISASTER_KINDS: DisasterKind[] = ['epidemie', 'eruption', 'seisme', 'tsunami', 'famine', 'inondation', 'guerre'];
 
 /** Étape de diffusion d'une épidémie : villes touchées à une année donnée. */
 export interface DisasterSpread {

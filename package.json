@@ -28,7 +28,10 @@
     "agent:web": "cd agent && .venv/bin/adk web",
     "agent:test": "agent/.venv/bin/pytest agent/tests -q",
     "build:contemporaries": "tsx scripts/build-contemporaries.ts",
-    "build:stats": "tsx scripts/build-stats.ts"
+    "build:stats": "tsx scripts/build-stats.ts",
+    "lint": "oxlint",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css}\" \"scripts/**/*.ts\" \"tests/**/*.ts\" \"e2e/**/*.ts\" \"*.ts\" \"*.html\" \".github/**/*.yml\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,css}\" \"scripts/**/*.ts\" \"tests/**/*.ts\" \"e2e/**/*.ts\" \"*.ts\" \"*.html\" \".github/**/*.yml\""
   },
   "dependencies": {
     "maplibre-gl": "^6.14.0",
@@ -45,8 +48,10 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
+    "oxlint": "^1.88.0",
     "pngjs": "^7.0.0",
     "polylabel": "^2.1.0",
+    "prettier": "^3.9.10",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vite": "^8.3.4",

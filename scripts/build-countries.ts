@@ -94,8 +94,7 @@ function main() {
     const ls: Feature<LineString> = { type: 'Feature', properties: {}, geometry: { type: 'LineString', coordinates: coords } };
     const simp = turf.simplify(ls, { tolerance: TOLERANCE, highQuality: true });
     const clipped = turf.bboxClip(simp, BBOX) as Feature<LineString | MultiLineString>;
-    const parts: Position[][] =
-      clipped.geometry.type === 'LineString' ? [clipped.geometry.coordinates] : clipped.geometry.coordinates;
+    const parts: Position[][] = clipped.geometry.type === 'LineString' ? [clipped.geometry.coordinates] : clipped.geometry.coordinates;
     const good = parts.map((p) => p.map((c) => [r3(c[0]), r3(c[1])])).filter((p) => p.length >= 2);
     if (!good.length) continue;
     kept++;

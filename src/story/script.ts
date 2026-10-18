@@ -36,7 +36,10 @@ const ABBREVIATIONS = /(?:\b(?:av|apr|M|Mme|Mlle|Dr|St|Ste|env|vol|ex|cf|etc|p|n
 
 /** Découpe en phrases sans couper après les abréviations (« av. J.-C. »). */
 export function splitSentences(text: string): string[] {
-  const parts = text.replace(/\s+/g, ' ').trim().split(/(?<=[.!?…»])\s+(?=[A-ZÀ-ÖØ-Þ«"“(\d])/);
+  const parts = text
+    .replace(/\s+/g, ' ')
+    .trim()
+    .split(/(?<=[.!?…»])\s+(?=[A-ZÀ-ÖØ-Þ«"“(\d])/);
   const out: string[] = [];
   for (const p of parts) {
     const prev = out[out.length - 1];
@@ -47,7 +50,30 @@ export function splitSentences(text: string): string[] {
 }
 
 /** Texte lu : abréviations développées. */
-const ORDINALS = ['', 'premier', 'deuxième', 'troisième', 'quatrième', 'cinquième', 'sixième', 'septième', 'huitième', 'neuvième', 'dixième', 'onzième', 'douzième', 'treizième', 'quatorzième', 'quinzième', 'seizième', 'dix-septième', 'dix-huitième', 'dix-neuvième', 'vingtième', 'vingt et unième'];
+const ORDINALS = [
+  '',
+  'premier',
+  'deuxième',
+  'troisième',
+  'quatrième',
+  'cinquième',
+  'sixième',
+  'septième',
+  'huitième',
+  'neuvième',
+  'dixième',
+  'onzième',
+  'douzième',
+  'treizième',
+  'quatorzième',
+  'quinzième',
+  'seizième',
+  'dix-septième',
+  'dix-huitième',
+  'dix-neuvième',
+  'vingtième',
+  'vingt et unième',
+];
 
 function romanToInt(r: string): number {
   const v: Record<string, number> = { I: 1, V: 5, X: 10, L: 50 };

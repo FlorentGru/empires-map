@@ -215,10 +215,7 @@ function loadSnapshot(name: string): FeatureCollection {
 
 function snapshotGeom(name: string, matcher: (n: string) => boolean): Poly | null {
   const feats = loadSnapshot(name).features.filter(
-    (f) =>
-      f.geometry &&
-      (f.geometry.type === 'Polygon' || f.geometry.type === 'MultiPolygon') &&
-      matcher(String(f.properties?.NAME ?? '')),
+    (f) => f.geometry && (f.geometry.type === 'Polygon' || f.geometry.type === 'MultiPolygon') && matcher(String(f.properties?.NAME ?? '')),
   ) as Poly[];
   // Nettoyage léger : certaines entités ont des anneaux dégénérés.
   const cleaned = feats.map((f) => turf.cleanCoords(f) as Poly).filter((f) => areaKm2(f) > 1);
@@ -364,7 +361,13 @@ function finalize(f: Poly, tolerance: number): Polygon | MultiPolygon | null {
   for (const p of parts(s)) {
     const outer = roundRing(p.coordinates[0]);
     if (outer.length < 4) continue; // anneau extérieur dégénéré : on abandonne la partie
-    const rings = [outer, ...p.coordinates.slice(1).map(roundRing).filter((r) => r.length >= 4)];
+    const rings = [
+      outer,
+      ...p.coordinates
+        .slice(1)
+        .map(roundRing)
+        .filter((r) => r.length >= 4),
+    ];
     if (turf.area(turf.polygon(rings)) / 1e6 < 1) continue;
     polys.push(rings);
   }
@@ -388,8 +391,7 @@ function validate(cfg: EmpireConfig, id: string, fc: FeatureCollection<Polygon |
         const b = ring[ring.length - 1];
         if (a[0] !== b[0] || a[1] !== b[1]) fail(`${id} : anneau non fermé (${p.name})`);
         for (const c of ring)
-          if (!Number.isFinite(c[0]) || !Number.isFinite(c[1]) || Math.abs(c[0]) > 180 || Math.abs(c[1]) > 90)
-            fail(`${id} : coordonnée invalide (${p.name})`);
+          if (!Number.isFinite(c[0]) || !Number.isFinite(c[1]) || Math.abs(c[0]) > 180 || Math.abs(c[1]) > 90) fail(`${id} : coordonnée invalide (${p.name})`);
       }
     if (turf.area(f) <= 0) fail(`${id} : surface nulle (${p.name})`);
     if (!turf.booleanValid(f)) console.warn(`  ⚠ ${id} / ${p.name} : géométrie non strictement valide (auto-intersection mineure ?)`);
@@ -404,7 +406,9 @@ function writeStep(cfg: EmpireConfig, step: EmpireStep, entities: Entity[]): voi
       if (!e.geom) continue;
       const g = finalize(e.geom, tolerance);
       if (!g) continue;
-      features.push({ type: 'Feature', properties: { empire: cfg.id, name: e.name, sourceYear: e.sourceYear, ...(e.status ? { status: e.status } : {}) },
+      features.push({
+        type: 'Feature',
+        properties: { empire: cfg.id, name: e.name, sourceYear: e.sourceYear, ...(e.status ? { status: e.status } : {}) },
         geometry: g,
       });
     }
@@ -425,8 +429,7 @@ function writeLand(): void {
   const features: Feature[] = [];
   for (const lp of LAND) {
     if (!bboxOverlap(lp.bbox, LAND_BBOX)) continue;
-    const inside =
-      lp.bbox[0] >= LAND_BBOX[0] && lp.bbox[1] >= LAND_BBOX[1] && lp.bbox[2] <= LAND_BBOX[2] && lp.bbox[3] <= LAND_BBOX[3];
+    const inside = lp.bbox[0] >= LAND_BBOX[0] && lp.bbox[1] >= LAND_BBOX[1] && lp.bbox[2] <= LAND_BBOX[2] && lp.bbox[3] <= LAND_BBOX[3];
     const clipped = inside ? lp.feature : (turf.bboxClip(lp.feature, LAND_BBOX) as Poly);
     if (!clipped.geometry.coordinates.length) continue;
     const g = finalize(clipped, LAND_TOLERANCE);
@@ -475,7 +478,9 @@ function writeDiffs(cfg: EmpireConfig): void {
     if (size > biggest.size) biggest = { id: step.id, size };
     prev = cur;
   }
-  console.log(`✓ ${cfg.id}/diffs/ (${cfg.steps.length - 1} fichiers, ${(total / 1024).toFixed(0)} Ko, max ${biggest.id} ${(biggest.size / 1024).toFixed(1)} Ko)`);
+  console.log(
+    `✓ ${cfg.id}/diffs/ (${cfg.steps.length - 1} fichiers, ${(total / 1024).toFixed(0)} Ko, max ${biggest.id} ${(biggest.size / 1024).toFixed(1)} Ko)`,
+  );
 }
 
 // ---------- contexte géométrique des configs `compose` ----------
@@ -611,7 +616,7 @@ function buildEmpire(cfg: EmpireConfig, only: string | undefined): void {
 function main() {
   const argv = process.argv.slice(2);
   const empIdx = argv.indexOf('--empire');
-  const rest = argv.filter((_, i) => i !== empIdx && i !== empIdx + 1 || empIdx < 0);
+  const rest = argv.filter((_, i) => (i !== empIdx && i !== empIdx + 1) || empIdx < 0);
   const only = rest.find((a) => !a.startsWith('--'));
   const list = selectedEmpires(argv);
   if (only && list.length !== 1) fail('une étape précise exige --empire <id>');

@@ -80,7 +80,9 @@ function useContemporaryEmpires(empireId: string, stepId: string | undefined, on
     void loadContemporaries(empireId, stepId).then((fc) => {
       if (stale) return;
       const seen = new Map<string, { id: string; name: string; color: string; stepId: string }>();
-      for (const f of fc.features) if (!seen.has(f.properties.empire)) seen.set(f.properties.empire, { id: f.properties.empire, name: f.properties.empireName, color: f.properties.color, stepId: f.properties.stepId });
+      for (const f of fc.features)
+        if (!seen.has(f.properties.empire))
+          seen.set(f.properties.empire, { id: f.properties.empire, name: f.properties.empireName, color: f.properties.color, stepId: f.properties.stepId });
       setList([...seen.values()]);
     });
     return () => {
@@ -113,7 +115,17 @@ function Row({ icon, label, hint }: { icon: ReactNode; label: string; hint?: str
   );
 }
 
-export const Legend = memo(function Legend({ empire, step, countries2026 = false, neighbors = true, contemporaries = true, monuments = true, routes = true, disasters = true, inventions = true }: Props) {
+export const Legend = memo(function Legend({
+  empire,
+  step,
+  countries2026 = false,
+  neighbors = true,
+  contemporaries = true,
+  monuments = true,
+  routes = true,
+  disasters = true,
+  inventions = true,
+}: Props) {
   const others = useContemporaryEmpires(empire.id, step?.id, contemporaries);
   const [open, setOpen] = useState(() => !isMobile());
   const titleId = useId();
@@ -149,7 +161,9 @@ export const Legend = memo(function Legend({ empire, step, countries2026 = false
               );
             })}
           </li>
-          {disasters && <Row icon={<span className="legend__bar" aria-hidden="true" />} label="Catastrophes et guerres" hint="barres fines au-dessus de la frise" />}
+          {disasters && (
+            <Row icon={<span className="legend__bar" aria-hidden="true" />} label="Catastrophes et guerres" hint="barres fines au-dessus de la frise" />
+          )}
         </Group>
 
         <Group title="Territoires">
@@ -162,7 +176,12 @@ export const Legend = memo(function Legend({ empire, step, countries2026 = false
                       <span
                         className="legend__swatch"
                         style={{
-                          background: e.status === 'allied' ? 'transparent' : e.status === 'vassal' ? variantVassal(empire.color, e.index) : variantFill(empire.color, e.index),
+                          background:
+                            e.status === 'allied'
+                              ? 'transparent'
+                              : e.status === 'vassal'
+                                ? variantVassal(empire.color, e.index)
+                                : variantFill(empire.color, e.index),
                           borderColor: variantLine(empire.color, e.index),
                           borderStyle: e.status === 'core' ? undefined : 'dashed',
                         }}
@@ -179,8 +198,24 @@ export const Legend = memo(function Legend({ empire, step, countries2026 = false
               {entities.length > MAX_ENTITIES && <li className="legend__more">… et {entities.length - MAX_ENTITIES} autres entités</li>}
             </ul>
           </li>
-          <Row icon={<span className="legend__swatch legend__swatch--diff" style={{ '--c': DIFF_COLORS.gained } as CSSProperties} aria-hidden="true">+</span>} label="Territoire gagné" hint="front qui avance" />
-          <Row icon={<span className="legend__swatch legend__swatch--diff" style={{ '--c': DIFF_COLORS.lost } as CSSProperties} aria-hidden="true">−</span>} label="Territoire perdu" hint="front qui recule" />
+          <Row
+            icon={
+              <span className="legend__swatch legend__swatch--diff" style={{ '--c': DIFF_COLORS.gained } as CSSProperties} aria-hidden="true">
+                +
+              </span>
+            }
+            label="Territoire gagné"
+            hint="front qui avance"
+          />
+          <Row
+            icon={
+              <span className="legend__swatch legend__swatch--diff" style={{ '--c': DIFF_COLORS.lost } as CSSProperties} aria-hidden="true">
+                −
+              </span>
+            }
+            label="Territoire perdu"
+            hint="front qui recule"
+          />
           {others.map((o) => (
             <li key={o.id}>
               <button
@@ -190,7 +225,11 @@ export const Legend = memo(function Legend({ empire, step, countries2026 = false
                 onClick={() => window.dispatchEvent(new CustomEvent<GotoDetail>(GOTO_EVENT, { detail: { empire: o.id, step: o.stepId } }))}
               >
                 <span className="legend__icon">
-                  <span className="legend__swatch legend__swatch--contemporary" style={{ background: `${o.color}38`, borderColor: o.color }} aria-hidden="true" />
+                  <span
+                    className="legend__swatch legend__swatch--contemporary"
+                    style={{ background: `${o.color}38`, borderColor: o.color }}
+                    aria-hidden="true"
+                  />
                 </span>
                 <span className="legend__label">
                   {o.name} →<small>empire contemporain</small>
@@ -201,27 +240,79 @@ export const Legend = memo(function Legend({ empire, step, countries2026 = false
         </Group>
 
         <Group title="Armées et personnages">
-          <Row icon={<span className="legend__marker" aria-hidden="true">⚔</span>} label="Lieu de la bataille" hint="ou de l'événement" />
-          <Row icon={<span className="legend__soldier" aria-hidden="true" dangerouslySetInnerHTML={{ __html: soldierSvg(sprites.faction, 0) }} />} label="Armée en marche" hint="camp, peuple et lieu de départ" />
-          <Row icon={<span className="legend__figure" aria-hidden="true" dangerouslySetInnerHTML={{ __html: characterSvg(sprites.archetype) }} />} label="Personnage" hint="citation en bulle, « Sa fiche »" />
+          <Row
+            icon={
+              <span className="legend__marker" aria-hidden="true">
+                ⚔
+              </span>
+            }
+            label="Lieu de la bataille"
+            hint="ou de l'événement"
+          />
+          <Row
+            icon={<span className="legend__soldier" aria-hidden="true" dangerouslySetInnerHTML={{ __html: soldierSvg(sprites.faction, 0) }} />}
+            label="Armée en marche"
+            hint="camp, peuple et lieu de départ"
+          />
+          <Row
+            icon={<span className="legend__figure" aria-hidden="true" dangerouslySetInnerHTML={{ __html: characterSvg(sprites.archetype) }} />}
+            label="Personnage"
+            hint="citation en bulle, « Sa fiche »"
+          />
         </Group>
 
         {(monuments || routes || disasters || inventions) && (
           <Group title="Le monde de l'époque">
-            {monuments && <Row icon={<span className="legend__monument" aria-hidden="true" dangerouslySetInnerHTML={{ __html: monumentIconSvg('temple') }} />} label="Monument" hint="cliquer ; les piles s'écartent au survol" />}
-            {routes && <Row icon={<span className="legend__route" aria-hidden="true" />} label="Route terrestre" hint="dromadaires, mules, lamas… selon la région" />}
-            {routes && <Row icon={<span className="legend__route legend__route--sea" aria-hidden="true" />} label="Route maritime" hint="galères, jonques, galions… ; ronds : escales" />}
+            {monuments && (
+              <Row
+                icon={<span className="legend__monument" aria-hidden="true" dangerouslySetInnerHTML={{ __html: monumentIconSvg('temple') }} />}
+                label="Monument"
+                hint="cliquer ; les piles s'écartent au survol"
+              />
+            )}
+            {routes && (
+              <Row icon={<span className="legend__route" aria-hidden="true" />} label="Route terrestre" hint="dromadaires, mules, lamas… selon la région" />
+            )}
+            {routes && (
+              <Row
+                icon={<span className="legend__route legend__route--sea" aria-hidden="true" />}
+                label="Route maritime"
+                hint="galères, jonques, galions… ; ronds : escales"
+              />
+            )}
             {disasters && <Row icon={<span className="legend__plague" aria-hidden="true" />} label="Épidémie" hint="diffusion, vague récente en vif" />}
             {disasters && <Row icon={<span className="legend__war" aria-hidden="true" />} label="Guerre meurtrière" hint="zone des combats et bilan" />}
-            {disasters && <Row icon={<span className="legend__glyphs" aria-hidden="true">☣🌋</span>} label="Catastrophe" hint="épidémie, éruption, séisme, famine…" />}
-            {inventions && <Row icon={<span className="legend__monument" aria-hidden="true" dangerouslySetInnerHTML={{ __html: inventionIconSvg('technique') }} />} label="Invention" hint="halo doré : apparue à cette étape" />}
+            {disasters && (
+              <Row
+                icon={
+                  <span className="legend__glyphs" aria-hidden="true">
+                    ☣🌋
+                  </span>
+                }
+                label="Catastrophe"
+                hint="épidémie, éruption, séisme, famine…"
+              />
+            )}
+            {inventions && (
+              <Row
+                icon={<span className="legend__monument" aria-hidden="true" dangerouslySetInnerHTML={{ __html: inventionIconSvg('technique') }} />}
+                label="Invention"
+                hint="halo doré : apparue à cette étape"
+              />
+            )}
           </Group>
         )}
 
         <Group title="Repères">
           <Row icon={<span className="legend__city" aria-hidden="true" />} label="Ville" />
           <Row icon={<span className="legend__city legend__city--capital" aria-hidden="true" />} label="Capitale de l'empire" hint="nom en gras" />
-          {(neighbors || contemporaries) && <Row icon={<span className="legend__city legend__city--foreign" aria-hidden="true" />} label="Capitale d'un voisin ou d'un autre empire" hint="point cerclé" />}
+          {(neighbors || contemporaries) && (
+            <Row
+              icon={<span className="legend__city legend__city--foreign" aria-hidden="true" />}
+              label="Capitale d'un voisin ou d'un autre empire"
+              hint="point cerclé"
+            />
+          )}
           {neighbors && <Row icon={<span className="legend__dashes legend__dashes--neighbor" aria-hidden="true" />} label="Voisins de l'époque" />}
           {countries2026 && <Row icon={<span className="legend__dashes legend__dashes--border" aria-hidden="true" />} label="Frontières de 2026" />}
         </Group>

@@ -38,7 +38,10 @@ export interface QuizParams {
 function parse(data: unknown): QuizResponse {
   const r = data as QuizResponse;
   const ok =
-    r && (r.source === 'sage' || r.source === 'hors_ligne') && Array.isArray(r.quiz?.questions) && r.quiz.questions.length > 0 &&
+    r &&
+    (r.source === 'sage' || r.source === 'hors_ligne') &&
+    Array.isArray(r.quiz?.questions) &&
+    r.quiz.questions.length > 0 &&
     r.quiz.questions.every((q) => Array.isArray(q.choix) && q.choix.length === 4 && q.bonne_reponse >= 0 && q.bonne_reponse < 4);
   if (!ok) throw new Error('réponse de quiz invalide');
   return r;

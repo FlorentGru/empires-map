@@ -26,7 +26,11 @@ test('changer d’année met à jour l’URL', async ({ page }) => {
 test('« Voir dans cet empire » mène à l’empire', async ({ page }) => {
   test.setTimeout(90_000);
   await page.goto('/?world=1&year=1279&e2e');
-  await page.getByRole('complementary', { name: /En l'an 1279/ }).getByRole('button', { name: /Voir dans cet empire/ }).first().click();
+  await page
+    .getByRole('complementary', { name: /En l'an 1279/ })
+    .getByRole('button', { name: /Voir dans cet empire/ })
+    .first()
+    .click();
   await expect(page).toHaveURL(/empire=/);
   await expect(page).not.toHaveURL(/world=1/);
 });
@@ -44,8 +48,12 @@ test('depuis le sélecteur d’empire : « Le monde en l’an… »', async ({ p
 test('la carte affiche les territoires des empires présents', async ({ page }) => {
   test.setTimeout(90_000);
   await page.goto('/?world=1&year=1279&e2e');
-  await page.waitForFunction(() => {
-    const m = (window as any).__map;
-    return m && m.getLayer('world-china-fill') && m.querySourceFeatures('world-china').length > 0 && m.querySourceFeatures('world-mongols').length > 0;
-  }, undefined, { timeout: 40_000 });
+  await page.waitForFunction(
+    () => {
+      const m = (window as any).__map;
+      return m && m.getLayer('world-china-fill') && m.querySourceFeatures('world-china').length > 0 && m.querySourceFeatures('world-mongols').length > 0;
+    },
+    undefined,
+    { timeout: 40_000 },
+  );
 });

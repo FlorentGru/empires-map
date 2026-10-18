@@ -39,10 +39,22 @@ export class WorldEmpireLayers {
       const lbl = `world-${e.id}-lbl`;
       map.addSource(src, { type: 'geojson', data: EMPTY as never });
       map.addSource(lbl, { type: 'geojson', data: EMPTY as never });
-      map.addLayer({ id: fillLayerId(e.id), type: 'fill', source: src, paint: { 'fill-color': e.color, 'fill-opacity': 0, 'fill-opacity-transition': transition } });
+      map.addLayer({
+        id: fillLayerId(e.id),
+        type: 'fill',
+        source: src,
+        paint: { 'fill-color': e.color, 'fill-opacity': 0, 'fill-opacity-transition': transition },
+      });
       const line = { 'line-color': variantLine(e.color, 0), 'line-width': 1.3, 'line-opacity': 0, 'line-opacity-transition': transition };
       map.addLayer({ id: `world-${e.id}-line`, type: 'line', source: src, filter: SOLID, layout: { 'line-join': 'round' }, paint: line });
-      map.addLayer({ id: `world-${e.id}-dash`, type: 'line', source: src, filter: DASHED, layout: { 'line-join': 'round' }, paint: { ...line, 'line-dasharray': [3, 2], 'line-width': 1.1 } });
+      map.addLayer({
+        id: `world-${e.id}-dash`,
+        type: 'line',
+        source: src,
+        filter: DASHED,
+        layout: { 'line-join': 'round' },
+        paint: { ...line, 'line-dasharray': [3, 2], 'line-width': 1.1 },
+      });
       map.addLayer({
         id: `world-${e.id}-label`,
         type: 'symbol',
@@ -57,7 +69,13 @@ export class WorldEmpireLayers {
           'symbol-sort-key': ['*', -1, ['get', 'area']] as never,
           'text-optional': true,
         },
-        paint: { 'text-color': variantLine(e.color, 0), 'text-halo-color': HALO, 'text-halo-width': 1.4, 'text-opacity': 0, 'text-opacity-transition': transition },
+        paint: {
+          'text-color': variantLine(e.color, 0),
+          'text-halo-color': HALO,
+          'text-halo-width': 1.4,
+          'text-opacity': 0,
+          'text-opacity-transition': transition,
+        },
       });
     }
   }

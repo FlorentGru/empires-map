@@ -80,7 +80,15 @@ export class DisasterLayers {
     map.addSource(SRC_WAR, { type: 'geojson', data: empty });
     map.addSource(SRC_SPREAD, { type: 'geojson', data: empty });
     map.addLayer({ id: 'disasters-war-fill', type: 'fill', source: SRC_WAR, paint: { 'fill-pattern': 'war-hatch', 'fill-opacity': 0.32 } }, before);
-    map.addLayer({ id: 'disasters-war-line', type: 'line', source: SRC_WAR, paint: { 'line-color': WAR, 'line-width': 1.2, 'line-opacity': 0.5, 'line-dasharray': [3, 2] } }, before);
+    map.addLayer(
+      {
+        id: 'disasters-war-line',
+        type: 'line',
+        source: SRC_WAR,
+        paint: { 'line-color': WAR, 'line-width': 1.2, 'line-opacity': 0.5, 'line-dasharray': [3, 2] },
+      },
+      before,
+    );
     map.addLayer(
       {
         id: 'disasters-spread',
@@ -88,7 +96,15 @@ export class DisasterLayers {
         source: SRC_SPREAD,
         paint: {
           // Vague la plus récente : plus grande et plus vive ; les anciennes s'estompent.
-          'circle-radius': ['interpolate', ['linear'], ['zoom'], 2, ['case', ['==', ['get', 'age'], 0], 7, 4.5], 6, ['case', ['==', ['get', 'age'], 0], 14, 9]] as never,
+          'circle-radius': [
+            'interpolate',
+            ['linear'],
+            ['zoom'],
+            2,
+            ['case', ['==', ['get', 'age'], 0], 7, 4.5],
+            6,
+            ['case', ['==', ['get', 'age'], 0], 14, 9],
+          ] as never,
           'circle-color': PLAGUE,
           'circle-opacity': ['max', 0.15, ['-', 0.55, ['*', ['get', 'age'], 0.12]]] as never,
           'circle-stroke-color': PLAGUE,
@@ -119,7 +135,10 @@ export class DisasterLayers {
     pendingPreview = null; // traitée ici : inutile de la rejouer au prochain setYear
     if (this.markerOf.has(id) && this.previewId !== id && activeDisasters(ALL, this.year).some((d) => d.id === id)) {
       // Déjà visible à cette date : cadrer et ouvrir sa fiche.
-      this.frame(ALL.find((d) => d.id === id)!, () => this.openAtMarker(id));
+      this.frame(
+        ALL.find((d) => d.id === id)!,
+        () => this.openAtMarker(id),
+      );
     } else this.preview(id);
   };
 
@@ -173,7 +192,10 @@ export class DisasterLayers {
       p('map-card__title', `${k.icon} ${d.name}`),
       p('map-card__meta', `${k.label} · ${span(d)}`),
       ...(note ? [p('map-card__preview', note)] : []),
-      p('map-card__deaths', `${formatDeaths(d.deaths)} (estimations : ${formatDeaths(d.deathsLow).replace('≈ ', '')} à ${formatDeaths(d.deathsHigh).replace('≈ ', '')})`),
+      p(
+        'map-card__deaths',
+        `${formatDeaths(d.deaths)} (estimations : ${formatDeaths(d.deathsLow).replace('≈ ', '')} à ${formatDeaths(d.deathsHigh).replace('≈ ', '')})`,
+      ),
       p('map-card__note', d.uncertainty),
     ];
     if (d.belligerents?.length) parts.push(p('map-card__text', `Belligérants : ${d.belligerents.join(', ')}.`));
@@ -207,7 +229,13 @@ export class DisasterLayers {
     const spread: FeatureCollection<Point, { id: string; age: number }> = {
       type: 'FeatureCollection',
       features: list.flatMap((d) =>
-        d.kind === 'epidemie' ? spreadUpTo(d, d.id === this.previewId ? d.end : this.year).map((s) => ({ type: 'Feature' as const, properties: { id: d.id, age: s.age }, geometry: { type: 'Point' as const, coordinates: s.point } })) : [],
+        d.kind === 'epidemie'
+          ? spreadUpTo(d, d.id === this.previewId ? d.end : this.year).map((s) => ({
+              type: 'Feature' as const,
+              properties: { id: d.id, age: s.age },
+              geometry: { type: 'Point' as const, coordinates: s.point },
+            }))
+          : [],
       ),
     };
     (this.map.getSource(SRC_WAR) as GeoJSONSource | undefined)?.setData(war);

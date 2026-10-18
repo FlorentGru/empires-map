@@ -2,7 +2,19 @@ import { LngLatBounds, Map as MapLibreMap, type PaddingOptions } from 'maplibre-
 import './maplibreWorker';
 import { useEffect, useRef, useState } from 'react';
 import { loadCities } from '../data/loadCities';
-import { loadContemporaries, loadDiff, loadMorph, loadNeighbors, loadTerritory, preloadAround, type ContemporaryCollection, type DiffCollection, type MorphCollection, type NeighborCollection, type TerritoryCollection } from '../data/loadEmpire';
+import {
+  loadContemporaries,
+  loadDiff,
+  loadMorph,
+  loadNeighbors,
+  loadTerritory,
+  preloadAround,
+  type ContemporaryCollection,
+  type DiffCollection,
+  type MorphCollection,
+  type NeighborCollection,
+  type TerritoryCollection,
+} from '../data/loadEmpire';
 import { prefersReducedMotion } from '../lib/motion';
 import type { City, Empire, TimelineStep } from '../types';
 import { addLand, baseStyle, DEM_SOURCE, MAX_BOUNDS, TERRAIN_EXAGGERATION } from './basemapStyle';
@@ -121,7 +133,24 @@ function cameraGate(map: MapLibreMap, stepStart: number, speed: number, chained:
   });
 }
 
-export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, figures: figuresOn = true, countries2026 = false, stateNames = true, neighbors: neighborsOn = true, contemporaries: contemporariesOn = true, monuments: monumentsOn = true, routes: routesOn = true, disasters: disastersOn = true, inventions: inventionsOn = true, compact = false }: Props) {
+export function WorldMap({
+  empire,
+  index,
+  panelOpen,
+  tilted,
+  relief,
+  speed = 1,
+  figures: figuresOn = true,
+  countries2026 = false,
+  stateNames = true,
+  neighbors: neighborsOn = true,
+  contemporaries: contemporariesOn = true,
+  monuments: monumentsOn = true,
+  routes: routesOn = true,
+  disasters: disastersOn = true,
+  inventions: inventionsOn = true,
+  compact = false,
+}: Props) {
   // Les cartes compactes ne cohabitent pas avec la vue normale : un compteur global suffit.
   useEffect(() => {
     if (!compact) return;
@@ -381,10 +410,13 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
         if (prefersReducedMotion()) map.jumpTo(camera);
         else map.flyTo({ ...camera, duration: flyMs(speedRef.current), curve: 1.3, essential: false });
       }
-    }
-
-    else if (empire.view) {
-      const camera = { center: empire.view.center, zoom: empire.view.zoom, pitch: tiltedRef.current ? TILT_PITCH : 0, padding: viewPadding(panelOpenRef.current) };
+    } else if (empire.view) {
+      const camera = {
+        center: empire.view.center,
+        zoom: empire.view.zoom,
+        pitch: tiltedRef.current ? TILT_PITCH : 0,
+        padding: viewPadding(panelOpenRef.current),
+      };
       if (prefersReducedMotion()) map.jumpTo(camera);
       else map.flyTo({ ...camera, duration: flyMs(speedRef.current), curve: 1.3, essential: false });
     }
@@ -393,7 +425,14 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
     const focusPoint = takeFocusPoint();
     if (focusPoint) {
       cameraKeyRef.current = '';
-      map.flyTo({ center: focusPoint.at, zoom: focusPoint.zoom, pitch: tiltedRef.current ? TILT_PITCH : 0, padding: viewPadding(panelOpenRef.current), duration: prefersReducedMotion() ? 0 : 1800, essential: false });
+      map.flyTo({
+        center: focusPoint.at,
+        zoom: focusPoint.zoom,
+        pitch: tiltedRef.current ? TILT_PITCH : 0,
+        padding: viewPadding(panelOpenRef.current),
+        duration: prefersReducedMotion() ? 0 : 1800,
+        essential: false,
+      });
     }
 
     const key = `${empire.id}/${step.territory}`;
@@ -404,14 +443,13 @@ export function WorldMap({ empire, index, panelOpen, tilted, relief, speed = 1, 
     const backward = prevIndex === index + 1 && index + 1 < empire.steps.length;
     const reduced = prefersReducedMotion();
     const morphStep = forward ? step : backward ? empire.steps[index + 1] : undefined;
-    const morphPromise: Promise<MorphCollection | null> =
-      morphStep && !reduced ? loadMorph(empire.id, morphStep.id) : Promise.resolve(null);
+    const morphPromise: Promise<MorphCollection | null> = morphStep && !reduced ? loadMorph(empire.id, morphStep.id) : Promise.resolve(null);
     const diffPromise: Promise<DiffCollection | null> = forward ? loadDiff(empire.id, step.id) : Promise.resolve(null);
     const stepStart = performance.now();
     const contemporariesPromise: Promise<ContemporaryCollection> = loadContemporaries(empire.id, step.id);
     // Voisins sans les noms recouverts par un empire contemporain (évite les doubles étiquettes).
-    const neighborsPromise: Promise<NeighborCollection> = Promise.all([loadNeighbors(empire.id, step.id), contemporariesPromise]).then(
-      ([n, c]) => (contemporariesRef.current ? { ...n, features: dropCoveredLabels(n.features, c.features) } : n),
+    const neighborsPromise: Promise<NeighborCollection> = Promise.all([loadNeighbors(empire.id, step.id), contemporariesPromise]).then(([n, c]) =>
+      contemporariesRef.current ? { ...n, features: dropCoveredLabels(n.features, c.features) } : n,
     );
     /** Territoire final affiché : noms des États et voisins, une seule mise à jour par étape. */
     const reveal = (fc: TerritoryCollection) => {

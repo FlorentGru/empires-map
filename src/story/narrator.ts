@@ -85,9 +85,7 @@ export class Narrator {
   private timerRemaining = 0;
   private keepAlive: number | null = null;
   private readonly synth: SpeechSynthesis | null =
-    typeof window !== 'undefined' && 'speechSynthesis' in window && typeof SpeechSynthesisUtterance !== 'undefined'
-      ? window.speechSynthesis
-      : null;
+    typeof window !== 'undefined' && 'speechSynthesis' in window && typeof SpeechSynthesisUtterance !== 'undefined' ? window.speechSynthesis : null;
   private ready: Promise<void>;
   private disposed = false;
 

@@ -62,7 +62,7 @@ export function fanPositions(n: number, radius = 34): [number, number][] {
  */
 export function spreadOffsets(values: number[], gap: number): number[] {
   const order = values.map((v, i) => [v, i] as const).sort((a, b) => a[0] - b[0]);
-  const out = new Array<number>(values.length).fill(0);
+  const out = Array.from({ length: values.length }, () => 0);
   let group: number[] = [];
   const flush = () => {
     group.forEach((idx, k) => (out[idx] = k - (group.length - 1) / 2));

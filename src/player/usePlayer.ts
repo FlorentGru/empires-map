@@ -38,9 +38,7 @@ function makeReducer(count: number) {
       case 'pause':
         return { ...state, playing: false };
       case 'toggle':
-        return state.playing
-          ? { ...state, playing: false }
-          : { ...state, playing: true, index: state.index >= last && !state.loop ? 0 : state.index };
+        return state.playing ? { ...state, playing: false } : { ...state, playing: true, index: state.index >= last && !state.loop ? 0 : state.index };
       case 'next':
         if (state.index < last) return { ...state, index: state.index + 1 };
         if (state.loop) return { ...state, index: 0 };

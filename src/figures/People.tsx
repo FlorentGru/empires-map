@@ -37,7 +37,17 @@ function appearances(empireId: string, person: Person) {
     .map((s) => ({ stepId: s.id, title: s.title, year: s.year }));
 }
 
-function PersonDetail({ empireId, person, onBack, onNavigate }: { empireId: string; person: Person; onBack: () => void; onNavigate: (empireId: string, stepId: string) => void }) {
+function PersonDetail({
+  empireId,
+  person,
+  onBack,
+  onNavigate,
+}: {
+  empireId: string;
+  person: Person;
+  onBack: () => void;
+  onNavigate: (empireId: string, stepId: string) => void;
+}) {
   const backRef = useRef<HTMLButtonElement>(null);
   useEffect(() => backRef.current?.focus(), []);
   const list = useMemo(() => appearances(empireId, person), [empireId, person]);
@@ -105,11 +115,19 @@ function PersonDetail({ empireId, person, onBack, onNavigate }: { empireId: stri
  * Personnages illustres : fiches biographiques par empire (data/empires/<id>/people.json),
  * avec la liste des étapes où ils apparaissent.
  */
-export function PeopleView({ query, initial, onNavigate }: { query: string; initial?: PersonRef | null; onNavigate: (empireId: string, stepId: string) => void }) {
+export function PeopleView({
+  query,
+  initial,
+  onNavigate,
+}: {
+  query: string;
+  initial?: PersonRef | null;
+  onNavigate: (empireId: string, stepId: string) => void;
+}) {
   const empires = EMPIRES.filter((e) => (PEOPLE[e.id]?.length ?? 0) > 0);
   // Par défaut : l'empire affiché sur la carte (paramètre d'URL), sinon le premier qui a des fiches.
   const current = new URLSearchParams(window.location.search).get('empire');
-  const [empireId, setEmpireId] = useState(initial?.empire ?? (empires.some((e) => e.id === current) ? current! : empires[0]?.id ?? ''));
+  const [empireId, setEmpireId] = useState(initial?.empire ?? (empires.some((e) => e.id === current) ? current! : (empires[0]?.id ?? '')));
   const [selected, setSelected] = useState<string | null>(initial?.id ?? null);
   const q = norm(query.trim());
   const people = (PEOPLE[empireId] ?? []).filter((p) => !q || norm(`${p.name} ${p.title}`).includes(q));
@@ -130,7 +148,15 @@ export function PeopleView({ query, initial, onNavigate }: { query: string; init
       </div>
       <div className="gallery__grid">
         {people.map((p) => (
-          <button key={p.id} type="button" className="gallery__card people__card" data-card data-uid={`p:${p.id}`} style={{ borderBottomColor: FACTION_COLORS[p.faction] }} onClick={() => setSelected(p.id)}>
+          <button
+            key={p.id}
+            type="button"
+            className="gallery__card people__card"
+            data-card
+            data-uid={`p:${p.id}`}
+            style={{ borderBottomColor: FACTION_COLORS[p.faction] }}
+            onClick={() => setSelected(p.id)}
+          >
             <Svg html={scaled(characterSvg(p.archetype), 2.2)} />
             <span className="gallery__name">{p.name}</span>
             <span className="people__span">{lifeSpan(p)}</span>

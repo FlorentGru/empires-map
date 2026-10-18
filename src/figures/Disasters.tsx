@@ -31,7 +31,10 @@ function DisasterDetail({ d, onBack, onNavigate }: { d: Disaster; onBack: () => 
             {k.label} · {span(d)}
           </p>
           <p className="disasters__deaths">
-            {formatDeaths(d.deaths)} <small>(estimations : {formatDeaths(d.deathsLow).replace('≈ ', '')} à {formatDeaths(d.deathsHigh).replace('≈ ', '')})</small>
+            {formatDeaths(d.deaths)}{' '}
+            <small>
+              (estimations : {formatDeaths(d.deathsLow).replace('≈ ', '')} à {formatDeaths(d.deathsHigh).replace('≈ ', '')})
+            </small>
           </p>
           <p className="disasters__note">{d.uncertainty}</p>
           {d.belligerents?.length ? <p>Belligérants : {d.belligerents.join(', ')}.</p> : null}
@@ -79,7 +82,9 @@ export function DisastersView({ query, onNavigate }: { query: string; onNavigate
   const [selected, setSelected] = useState<string | null>(null);
   const kinds = useMemo(() => [...new Set(ALL.map((d) => d.kind))], []);
   const q = norm(query.trim());
-  const list = ALL.filter((d) => (kind === 'all' || d.kind === kind) && (!q || norm(`${d.name} ${d.description}`).includes(q))).sort((a, b) => a.start - b.start);
+  const list = ALL.filter((d) => (kind === 'all' || d.kind === kind) && (!q || norm(`${d.name} ${d.description}`).includes(q))).sort(
+    (a, b) => a.start - b.start,
+  );
   const d = selected ? ALL.find((x) => x.id === selected) : undefined;
   if (d) return <DisasterDetail d={d} onBack={() => setSelected(null)} onNavigate={onNavigate} />;
   return (
@@ -96,7 +101,14 @@ export function DisastersView({ query, onNavigate }: { query: string; onNavigate
       </div>
       <div className="gallery__grid">
         {list.map((x) => (
-          <button key={x.id} type="button" className={`gallery__card people__card disasters__card disasters__card--${x.kind}`} data-card data-uid={`d:${x.id}`} onClick={() => setSelected(x.id)}>
+          <button
+            key={x.id}
+            type="button"
+            className={`gallery__card people__card disasters__card disasters__card--${x.kind}`}
+            data-card
+            data-uid={`d:${x.id}`}
+            onClick={() => setSelected(x.id)}
+          >
             <span className="disasters__icon" aria-hidden="true">
               {DISASTER_LABELS[x.kind].icon}
             </span>

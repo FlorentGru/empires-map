@@ -61,12 +61,10 @@ export const FACTION_COLORS = {
 } satisfies Record<Faction, string>;
 
 /** Composant React (démo) du soldat d'une faction. */
-export const soldierFor = (faction: Faction) => (props: { frame: SoldierFrame; state?: SoldierState }) =>
-  Soldier({ faction, ...props });
+export const soldierFor = (faction: Faction) => (props: { frame: SoldierFrame; state?: SoldierState }) => Soldier({ faction, ...props });
 
 /** Composant React (démo) du personnage d'un archétype. */
-export const characterFor = (archetype: Archetype) => (props: { tint?: string }) =>
-  Character({ archetype, ...props });
+export const characterFor = (archetype: Archetype) => (props: { tint?: string }) => Character({ archetype, ...props });
 
 /** Transforme une chaîne SVG en HTMLElement (conteneur <span>) pour un marqueur impératif. */
 export function renderToElement(svg: string, opts: { className?: string; height?: number } = {}): HTMLElement {

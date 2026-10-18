@@ -1,4 +1,10 @@
-import { MercatorCoordinate, type CustomLayerInterface, type CustomRenderMethodInput, type CustomTerrainRenderInput, type Map as MapLibreMap } from 'maplibre-gl';
+import {
+  MercatorCoordinate,
+  type CustomLayerInterface,
+  type CustomRenderMethodInput,
+  type CustomTerrainRenderInput,
+  type Map as MapLibreMap,
+} from 'maplibre-gl';
 import { loadSdf } from '../data/loadEmpire';
 import { DIFF_COLORS } from './diff';
 import { variantFill, variantLine } from './color';
@@ -143,7 +149,10 @@ export class GlideLayer {
   private lastOverlay = 0;
   private readonly debug = new URLSearchParams(window.location.search).get('debug') === '1';
 
-  constructor(private map: MapLibreMap, beforeId?: string) {
+  constructor(
+    private map: MapLibreMap,
+    beforeId?: string,
+  ) {
     this.layer = {
       id: LAYER,
       type: 'custom',
@@ -307,17 +316,25 @@ export class GlideLayer {
     this.frames = [];
     this.worstFrame = 0;
     this.slowFrames = 0;
-    this.animate(durationMs, (k) => {
-      this.p = from + (to - from) * easeInOutSine(k);
-    }, onDone);
+    this.animate(
+      durationMs,
+      (k) => {
+        this.p = from + (to - from) * easeInOutSine(k);
+      },
+      onDone,
+    );
   }
 
   /** Estompe le glissement (opacité dans le shader) puis le masque ; la progression finale reste affichée pendant le fondu. */
   fadeOut(ms: number) {
     if (!this.visible) return;
-    this.animate(ms, (k) => {
-      this.opacity = 1 - k;
-    }, () => this.hide());
+    this.animate(
+      ms,
+      (k) => {
+        this.opacity = 1 - k;
+      },
+      () => this.hide(),
+    );
   }
 
   /** Boucle d'animation unique : t0 = première image, k ∈ [0, 1]. */

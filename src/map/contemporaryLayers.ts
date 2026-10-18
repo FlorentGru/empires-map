@@ -32,7 +32,10 @@ export class ContemporaryLayers {
   private timer: ReturnType<typeof setTimeout> | undefined;
   private hasData = false;
 
-  constructor(private map: MapLibreMap, beforeId?: string) {
+  constructor(
+    private map: MapLibreMap,
+    beforeId?: string,
+  ) {
     const ms = prefersReducedMotion() ? 0 : FADE_MS;
     const transition = { duration: ms };
     map.addSource(SRC, { type: 'geojson', data: EMPTY });

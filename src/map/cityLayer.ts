@@ -29,7 +29,12 @@ export function nameAt(city: City, year: number): string {
   return (before ?? city.names[0])?.name ?? city.modern;
 }
 
-const norm = (v: string) => v.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+const norm = (v: string) =>
+  v
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim();
 
 export function isVisible(city: City, year: number): boolean {
   return city.founded <= year && (city.destroyed == null || year <= city.destroyed);
@@ -61,11 +66,7 @@ export class CityLayer {
     const shown = ['any', capital, ['get', 'foreign']] as never;
     // rang 1 : toujours ; rang 2 : zoom ≥ 4 ; rang 3 : zoom ≥ 5,5 (taille 0 = non placé).
     const size = (px: number) =>
-      byRank(
-        ['case', ['any', shown, ['==', ['get', 'rank'], 1]], px, 0],
-        ['case', ['any', shown, ['<=', ['get', 'rank'], 2]], px, 0],
-        px,
-      );
+      byRank(['case', ['any', shown, ['==', ['get', 'rank'], 1]], px, 0], ['case', ['any', shown, ['<=', ['get', 'rank'], 2]], px, 0], px);
     // Symbole de capitale étrangère : anneau autour du point (comme sur les cartes d'atlas).
     map.addLayer({
       id: 'city-capital-ring',

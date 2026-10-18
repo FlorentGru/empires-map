@@ -13,15 +13,41 @@
 import type { Checkpoint, ComposedEntity, EmpireConfig, EmpireStep, GeoCtx, Poly, Status } from './types.ts';
 
 const STEP_LIST: [string, number][] = [
-  ['kurultai-1206', 1206], ['xixia-1209', 1209], ['yehuling-1211', 1211], ['zhongdu-1215', 1215],
-  ['karakitai-1218', 1218], ['otrar-1219', 1219], ['samarcande-1220', 1220], ['indus-1221', 1221],
-  ['kalka-1223', 1223], ['gengis-1227', 1227], ['ogodei-1229', 1229], ['kaifeng-1234', 1234],
-  ['riazan-1237', 1237], ['kiev-1240', 1240], ['legnica-mohi-1241', 1241], ['retrait-1242', 1242],
-  ['kosedag-1243', 1243], ['guyuk-1246', 1246], ['mongke-1251', 1251], ['alamut-1256', 1256],
-  ['bagdad-1258', 1258], ['diaoyu-1259', 1259], ['aindjalout-1260', 1260], ['eclatement-1262', 1262],
-  ['yuan-1271', 1271], ['xiangyang-1273', 1273], ['yamen-1279', 1279], ['japon-1281', 1281],
-  ['bachdang-1288', 1288], ['ghazan-1295', 1295], ['paix-1304', 1304], ['ilkhanat-1335', 1335],
-  ['kaffa-1346', 1346], ['turbans-rouges-1351', 1351], ['dadu-1368', 1368],
+  ['kurultai-1206', 1206],
+  ['xixia-1209', 1209],
+  ['yehuling-1211', 1211],
+  ['zhongdu-1215', 1215],
+  ['karakitai-1218', 1218],
+  ['otrar-1219', 1219],
+  ['samarcande-1220', 1220],
+  ['indus-1221', 1221],
+  ['kalka-1223', 1223],
+  ['gengis-1227', 1227],
+  ['ogodei-1229', 1229],
+  ['kaifeng-1234', 1234],
+  ['riazan-1237', 1237],
+  ['kiev-1240', 1240],
+  ['legnica-mohi-1241', 1241],
+  ['retrait-1242', 1242],
+  ['kosedag-1243', 1243],
+  ['guyuk-1246', 1246],
+  ['mongke-1251', 1251],
+  ['alamut-1256', 1256],
+  ['bagdad-1258', 1258],
+  ['diaoyu-1259', 1259],
+  ['aindjalout-1260', 1260],
+  ['eclatement-1262', 1262],
+  ['yuan-1271', 1271],
+  ['xiangyang-1273', 1273],
+  ['yamen-1279', 1279],
+  ['japon-1281', 1281],
+  ['bachdang-1288', 1288],
+  ['ghazan-1295', 1295],
+  ['paix-1304', 1304],
+  ['ilkhanat-1335', 1335],
+  ['kaffa-1346', 1346],
+  ['turbans-rouges-1351', 1351],
+  ['dadu-1368', 1368],
 ];
 const STEPS: EmpireStep[] = STEP_LIST.map(([id, year]) => ({ id, year, compose: true }));
 
@@ -51,9 +77,7 @@ function makeBlocks(c: GeoCtx) {
   const ukKiev = () => K('^Ukraine$', 'UA_KIEV');
   const ukGal = () => K('^Ukraine$', 'UA_GALICIA');
   const hordeBase = () =>
-    once('hordeBase', () =>
-      u(c.diff(ukr(), ukKiev(), ukGal()), K('^Russia$', 'RU_STEPPE'), K('^Russia$', 'RU_BULGAR'), K('^Russia$', 'RU_CRIMEA'), kzW()),
-    );
+    once('hordeBase', () => u(c.diff(ukr(), ukKiev(), ukGal()), K('^Russia$', 'RU_STEPPE'), K('^Russia$', 'RU_BULGAR'), K('^Russia$', 'RU_CRIMEA'), kzW()));
   const afN = () => K('^Afghanistan$', 'AFG_N');
   const afW = () => K('^Afghanistan$', 'AFG_W');
   const afE = () => K('^Afghanistan$', 'AFG_E');
@@ -69,7 +93,7 @@ function compose(step: EmpireStep, c: GeoCtx): ComposedEntity[] {
     B = makeBlocks(c);
     cache.set(c, B);
   }
-  const { u, P, K, CN, cp, hexi, northCn, imAll, kz, kzW, kzSE, kzNE, rusVlad, rusRiaz, ukKiev, ukGal, hordeBase, afN, afW, afE, trRoum } = B;
+  const { u, P, K, CN, cp, hexi, northCn, imAll, kz, kzSE, kzNE, rusVlad, rusRiaz, ukKiev, ukGal, hordeBase, afN, afW, afE, trRoum } = B;
   const d = c.diff;
   const y = step.year;
   const out: ComposedEntity[] = [];

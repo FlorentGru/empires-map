@@ -3,10 +3,32 @@ import { activeDisasters, activeRoutes, cumulative, disastersBetween, formatDeat
 import type { TradeRoute } from '../../src/types-route';
 import type { Disaster } from '../../src/types-disaster';
 
-const route = (id: string, from: number, to: number) => ({ id, from, to, path: [[0, 0], [10, 0]] }) as TradeRoute;
+const route = (id: string, from: number, to: number) =>
+  ({
+    id,
+    from,
+    to,
+    path: [
+      [0, 0],
+      [10, 0],
+    ],
+  }) as TradeRoute;
 const peste = {
-  id: 'peste-noire', kind: 'epidemie', start: 1346, end: 1353,
-  spread: [{ year: 1346, points: [[35.4, 45.0]] }, { year: 1347, points: [[28.9, 41.0], [15.5, 38.2]] }, { year: 1348, points: [[2.35, 48.85]] }],
+  id: 'peste-noire',
+  kind: 'epidemie',
+  start: 1346,
+  end: 1353,
+  spread: [
+    { year: 1346, points: [[35.4, 45.0]] },
+    {
+      year: 1347,
+      points: [
+        [28.9, 41.0],
+        [15.5, 38.2],
+      ],
+    },
+    { year: 1348, points: [[2.35, 48.85]] },
+  ],
 } as Disaster;
 
 describe('routes et catastrophes actives', () => {
@@ -28,7 +50,11 @@ describe('routes et catastrophes actives', () => {
 });
 
 describe('déplacement le long d’un tracé', () => {
-  const path: [number, number][] = [[0, 0], [10, 0], [10, 10]];
+  const path: [number, number][] = [
+    [0, 0],
+    [10, 0],
+    [10, 10],
+  ];
   const cum = cumulative(path);
   it('mesure et interpole', () => {
     expect(cum[1]).toBeCloseTo(1112, -1);
@@ -50,7 +76,14 @@ describe('format des morts', () => {
 import { convexHull } from '../../src/lib/worldEvents';
 describe('enveloppe convexe', () => {
   it('ignore les points intérieurs et ferme l’anneau', () => {
-    const h = convexHull([[0, 0], [4, 0], [4, 4], [0, 4], [2, 2], [1, 3]]);
+    const h = convexHull([
+      [0, 0],
+      [4, 0],
+      [4, 4],
+      [0, 4],
+      [2, 2],
+      [1, 3],
+    ]);
     expect(h).toHaveLength(5);
     expect(h[0]).toEqual(h[4]);
     expect(h).not.toContainEqual([2, 2]);

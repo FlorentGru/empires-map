@@ -46,7 +46,10 @@ export class InventionLayers {
       onHidden: (ids) => this.hide(ids),
     };
     this.fan.register(this.pile);
-    this.ready = addSvgImages(map, INVENTION_CATEGORIES.map((c) => [`invention-${c}`, inventionIconSvg(c), 28] as [string, string, number])).then(() => {
+    this.ready = addSvgImages(
+      map,
+      INVENTION_CATEGORIES.map((c) => [`invention-${c}`, inventionIconSvg(c), 28] as [string, string, number]),
+    ).then(() => {
       if (!map.getStyle() || map.getSource(SRC)) return;
       const before = map.getLayer('city-dot') ? 'city-dot' : undefined;
       map.addSource(SRC, { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
@@ -56,7 +59,12 @@ export class InventionLayers {
           type: 'circle',
           source: SRC,
           filter: ['==', ['get', 'fresh'], true],
-          paint: { 'circle-radius': ['interpolate', ['linear'], ['zoom'], 2, 14, 6, 22] as never, 'circle-color': '#f2c14e', 'circle-opacity': 0.45, 'circle-blur': 0.6 },
+          paint: {
+            'circle-radius': ['interpolate', ['linear'], ['zoom'], 2, 14, 6, 22] as never,
+            'circle-color': '#f2c14e',
+            'circle-opacity': 0.45,
+            'circle-blur': 0.6,
+          },
         },
         before,
       );
@@ -71,7 +79,13 @@ export class InventionLayers {
             'icon-allow-overlap': true,
             // Nom affiché pour les nouvelles inventions, sinon à partir du zoom 4,5.
             // (le zoom doit être au premier niveau de l'expression : « step » englobe le « case »)
-            'text-field': ['step', ['zoom'], ['case', ['get', 'fresh'], ['concat', '💡 ', ['get', 'name']], ''], 4.5, ['case', ['get', 'fresh'], ['concat', '💡 ', ['get', 'name']], ['get', 'name']]] as never,
+            'text-field': [
+              'step',
+              ['zoom'],
+              ['case', ['get', 'fresh'], ['concat', '💡 ', ['get', 'name']], ''],
+              4.5,
+              ['case', ['get', 'fresh'], ['concat', '💡 ', ['get', 'name']], ['get', 'name']],
+            ] as never,
             'text-font': ['Open Sans Semibold'],
             'text-size': ['case', ['get', 'fresh'], 12, 10.5] as never,
             'text-offset': [0, 1.4],
@@ -126,7 +140,10 @@ export class InventionLayers {
     };
     const parts: Node[] = [
       p('map-card__title', `💡 ${inv.name}`),
-      p('map-card__meta', `${CATEGORY_LABELS[inv.category]} · ${inv.approx ? 'vers ' : ''}${formatYear(inv.year)} · ${inv.place}${inv.inventor ? ` · ${inv.inventor}` : ''}`),
+      p(
+        'map-card__meta',
+        `${CATEGORY_LABELS[inv.category]} · ${inv.approx ? 'vers ' : ''}${formatYear(inv.year)} · ${inv.place}${inv.inventor ? ` · ${inv.inventor}` : ''}`,
+      ),
     ];
     if (note) parts.push(p('map-card__preview', note));
     parts.push(p('map-card__text', inv.description), p('map-card__impact', `Pourquoi c'est révolutionnaire : ${inv.impact}`));

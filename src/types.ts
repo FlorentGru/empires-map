@@ -151,55 +151,186 @@ export interface MorphProperties {
 
 /** Peuples représentés par une figurine dédiée (src/figures/registry.ts). */
 export type Faction =
-  | 'romains' | 'latins' | 'samnites' | 'carthaginois' | 'gaulois' | 'grecs-macedoniens'
-  | 'germains' | 'parthes-perses' | 'egyptiens' | 'daces' | 'goths-vandales' | 'arabes'
-  | 'turcs-seldjoukides' | 'croises-latins' | 'ottomans' | 'byzantins'
+  | 'romains'
+  | 'latins'
+  | 'samnites'
+  | 'carthaginois'
+  | 'gaulois'
+  | 'grecs-macedoniens'
+  | 'germains'
+  | 'parthes-perses'
+  | 'egyptiens'
+  | 'daces'
+  | 'goths-vandales'
+  | 'arabes'
+  | 'turcs-seldjoukides'
+  | 'croises-latins'
+  | 'ottomans'
+  | 'byzantins'
   // Époque napoléonienne
-  | 'francais' | 'britanniques' | 'autrichiens' | 'prussiens' | 'russes' | 'espagnols'
-  | 'portugais' | 'polonais'
+  | 'francais'
+  | 'britanniques'
+  | 'autrichiens'
+  | 'prussiens'
+  | 'russes'
+  | 'espagnols'
+  | 'portugais'
+  | 'polonais'
   // Asie orientale et steppes
-  | 'chinois' | 'xiongnu' | 'mongols' | 'jurchens' | 'mandchous' | 'japonais' | 'coreens'
-  | 'tibetains' | 'vietnamiens' | 'turcs-gokturks' | 'khitans' | 'ouighours'
+  | 'chinois'
+  | 'xiongnu'
+  | 'mongols'
+  | 'jurchens'
+  | 'mandchous'
+  | 'japonais'
+  | 'coreens'
+  | 'tibetains'
+  | 'vietnamiens'
+  | 'turcs-gokturks'
+  | 'khitans'
+  | 'ouighours'
   // Empire mongol
-  | 'tangoutes' | 'khwarezmiens' | 'rus' | 'chevaliers-europeens' | 'mamelouks'
+  | 'tangoutes'
+  | 'khwarezmiens'
+  | 'rus'
+  | 'chevaliers-europeens'
+  | 'mamelouks'
   // Empire espagnol
-  | 'tercios' | 'azteques' | 'incas' | 'francais-ancien-regime' | 'neerlandais' | 'anglais-elisabethains'
-  | 'espagnols-xxe' | 'rifains' | 'americains' | 'independantistes';
+  | 'tercios'
+  | 'azteques'
+  | 'incas'
+  | 'francais-ancien-regime'
+  | 'neerlandais'
+  | 'anglais-elisabethains'
+  | 'espagnols-xxe'
+  | 'rifains'
+  | 'americains'
+  | 'independantistes';
 
 export const FACTIONS: Faction[] = [
-  'romains', 'latins', 'samnites', 'carthaginois', 'gaulois', 'grecs-macedoniens',
-  'germains', 'parthes-perses', 'egyptiens', 'daces', 'goths-vandales', 'arabes',
-  'turcs-seldjoukides', 'croises-latins', 'ottomans', 'byzantins',
-  'francais', 'britanniques', 'autrichiens', 'prussiens', 'russes', 'espagnols',
-  'portugais', 'polonais',
-  'chinois', 'xiongnu', 'mongols', 'jurchens', 'mandchous', 'japonais', 'coreens',
-  'tibetains', 'vietnamiens', 'turcs-gokturks', 'khitans', 'ouighours',
-  'tangoutes', 'khwarezmiens', 'rus', 'chevaliers-europeens', 'mamelouks',
-  'tercios', 'azteques', 'incas', 'francais-ancien-regime', 'neerlandais', 'anglais-elisabethains',
-  'espagnols-xxe', 'rifains', 'americains', 'independantistes',
+  'romains',
+  'latins',
+  'samnites',
+  'carthaginois',
+  'gaulois',
+  'grecs-macedoniens',
+  'germains',
+  'parthes-perses',
+  'egyptiens',
+  'daces',
+  'goths-vandales',
+  'arabes',
+  'turcs-seldjoukides',
+  'croises-latins',
+  'ottomans',
+  'byzantins',
+  'francais',
+  'britanniques',
+  'autrichiens',
+  'prussiens',
+  'russes',
+  'espagnols',
+  'portugais',
+  'polonais',
+  'chinois',
+  'xiongnu',
+  'mongols',
+  'jurchens',
+  'mandchous',
+  'japonais',
+  'coreens',
+  'tibetains',
+  'vietnamiens',
+  'turcs-gokturks',
+  'khitans',
+  'ouighours',
+  'tangoutes',
+  'khwarezmiens',
+  'rus',
+  'chevaliers-europeens',
+  'mamelouks',
+  'tercios',
+  'azteques',
+  'incas',
+  'francais-ancien-regime',
+  'neerlandais',
+  'anglais-elisabethains',
+  'espagnols-xxe',
+  'rifains',
+  'americains',
+  'independantistes',
 ];
 
 export type Archetype =
-  | 'senateur' | 'consul' | 'empereur' | 'empereur-byzantin' | 'roi' | 'pape'
-  | 'chef-barbare' | 'calife' | 'sultan' | 'doge'
+  | 'senateur'
+  | 'consul'
+  | 'empereur'
+  | 'empereur-byzantin'
+  | 'roi'
+  | 'pape'
+  | 'chef-barbare'
+  | 'calife'
+  | 'sultan'
+  | 'doge'
   // Époque napoléonienne
-  | 'empereur-napoleon' | 'general' | 'roi-moderne' | 'tsar' | 'diplomate' | 'amiral'
+  | 'empereur-napoleon'
+  | 'general'
+  | 'roi-moderne'
+  | 'tsar'
+  | 'diplomate'
+  | 'amiral'
   // Asie orientale
-  | 'empereur-chinois' | 'lettre-mandarin' | 'general-chinois' | 'khan' | 'shogun' | 'moine-bouddhiste' | 'imperatrice'
+  | 'empereur-chinois'
+  | 'lettre-mandarin'
+  | 'general-chinois'
+  | 'khan'
+  | 'shogun'
+  | 'moine-bouddhiste'
+  | 'imperatrice'
   // Empire mongol
-  | 'general-mongol' | 'khatoun'
+  | 'general-mongol'
+  | 'khatoun'
   // Empire espagnol
-  | 'conquistador' | 'vice-roi' | 'roi-habsbourg' | 'souverain-precolombien' | 'militaire-xxe'
+  | 'conquistador'
+  | 'vice-roi'
+  | 'roi-habsbourg'
+  | 'souverain-precolombien'
+  | 'militaire-xxe'
   // Tous empires : savant, philosophe (et figure du guide de l'Atlas)
   | 'sage';
 
 export const ARCHETYPES: Archetype[] = [
-  'senateur', 'consul', 'empereur', 'empereur-byzantin', 'roi', 'pape',
-  'chef-barbare', 'calife', 'sultan', 'doge',
-  'empereur-napoleon', 'general', 'roi-moderne', 'tsar', 'diplomate', 'amiral',
-  'empereur-chinois', 'lettre-mandarin', 'general-chinois', 'khan', 'shogun', 'moine-bouddhiste', 'imperatrice', 'sage',
-  'conquistador', 'vice-roi', 'roi-habsbourg', 'souverain-precolombien', 'militaire-xxe',
-  'general-mongol', 'khatoun',
+  'senateur',
+  'consul',
+  'empereur',
+  'empereur-byzantin',
+  'roi',
+  'pape',
+  'chef-barbare',
+  'calife',
+  'sultan',
+  'doge',
+  'empereur-napoleon',
+  'general',
+  'roi-moderne',
+  'tsar',
+  'diplomate',
+  'amiral',
+  'empereur-chinois',
+  'lettre-mandarin',
+  'general-chinois',
+  'khan',
+  'shogun',
+  'moine-bouddhiste',
+  'imperatrice',
+  'sage',
+  'conquistador',
+  'vice-roi',
+  'roi-habsbourg',
+  'souverain-precolombien',
+  'militaire-xxe',
+  'general-mongol',
+  'khatoun',
 ];
 
 export interface ArmyMove {

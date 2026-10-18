@@ -96,7 +96,10 @@ export class FigureLayer {
   private onMoveEnd = () => this.schedule(true);
 
   /** insets : zones de l'écran à ne pas recouvrir (panneau latéral, barre du haut, frise). */
-  constructor(private map: MapLibreMap, private insets: () => Insets) {}
+  constructor(
+    private map: MapLibreMap,
+    private insets: () => Insets,
+  ) {}
 
   clear() {
     cancelAnimationFrame(this.raf);

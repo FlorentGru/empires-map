@@ -12,7 +12,7 @@ describe('periodIndexAt', () => {
     expect(periodIndexAt(periods, 50)).toBe(1);
     expect(periodIndexAt(periods, 300)).toBe(2);
   });
-  it("les bornes qui se touchent appartiennent à la période suivante", () => {
+  it('les bornes qui se touchent appartiennent à la période suivante', () => {
     expect(periodIndexAt(periods, -200)).toBe(1);
     expect(periodIndexAt(periods, 100)).toBe(2);
     expect(periodIndexAt(periods, -500)).toBe(0);

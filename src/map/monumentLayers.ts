@@ -35,7 +35,10 @@ export class MonumentLayers {
   private fan: PileFan;
   private pile: PileSource;
 
-  constructor(private map: MapLibreMap, beforeId?: string) {
+  constructor(
+    private map: MapLibreMap,
+    beforeId?: string,
+  ) {
     this.fan = pileFanFor(map);
     this.pile = {
       layer: LAYER,
@@ -44,7 +47,12 @@ export class MonumentLayers {
         const m = ALL.find((x) => x.id === id);
         return m && { name: m.name, iconSvg: monumentIconSvg(m.kind) };
       },
-      onPick: (id, x, y) => this.openCard(ALL.find((m) => m.id === id)!, x, y),
+      onPick: (id, x, y) =>
+        this.openCard(
+          ALL.find((m) => m.id === id)!,
+          x,
+          y,
+        ),
       onHidden: () => this.applyFilter(),
     };
     this.fan.register(this.pile);

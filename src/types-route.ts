@@ -3,12 +3,23 @@ export type RouteKind = 'terre' | 'mer';
 
 /** Animal ou navire qui porte les marchandises, affiché sur la carte. */
 export type RouteCarrier =
-  | 'chameau' | 'cheval' | 'mule' | 'lama' | 'boeuf' | 'yak' | 'porteur'
-  | 'galere' | 'cogue' | 'jonque' | 'boutre' | 'galion' | 'barge' | 'drakkar';
+  'chameau' | 'cheval' | 'mule' | 'lama' | 'boeuf' | 'yak' | 'porteur' | 'galere' | 'cogue' | 'jonque' | 'boutre' | 'galion' | 'barge' | 'drakkar';
 
 export const ROUTE_CARRIERS: RouteCarrier[] = [
-  'chameau', 'cheval', 'mule', 'lama', 'boeuf', 'yak', 'porteur',
-  'galere', 'cogue', 'jonque', 'boutre', 'galion', 'barge', 'drakkar',
+  'chameau',
+  'cheval',
+  'mule',
+  'lama',
+  'boeuf',
+  'yak',
+  'porteur',
+  'galere',
+  'cogue',
+  'jonque',
+  'boutre',
+  'galion',
+  'barge',
+  'drakkar',
 ];
 
 /** Escale d'une route commerciale. */

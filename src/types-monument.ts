@@ -1,17 +1,6 @@
 /** Catégories de monuments affichées sur la carte. */
 export type MonumentKind =
-  | 'temple'
-  | 'palais'
-  | 'tombeau'
-  | 'forteresse'
-  | 'muraille'
-  | 'eglise'
-  | 'mosquee'
-  | 'amphitheatre'
-  | 'cite'
-  | 'phare'
-  | 'statue'
-  | 'pont';
+  'temple' | 'palais' | 'tombeau' | 'forteresse' | 'muraille' | 'eglise' | 'mosquee' | 'amphitheatre' | 'cite' | 'phare' | 'statue' | 'pont';
 
 export const MONUMENT_KINDS: MonumentKind[] = [
   'temple',

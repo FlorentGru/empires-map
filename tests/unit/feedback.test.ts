@@ -1,7 +1,12 @@
 import { describe, expect, it } from 'vitest';
 import { feedbackBody, feedbackMailto, feedbackSubject } from '../../src/feedback/feedback';
 
-const f = { kind: 'idee' as const, message: 'Ajouter les Incas avec la conquête espagnole du Pérou', replyTo: 'a@b.fr', context: { empire: 'rome', step: 'cannes-216', url: 'http://x/?empire=rome' } };
+const f = {
+  kind: 'idee' as const,
+  message: 'Ajouter les Incas avec la conquête espagnole du Pérou',
+  replyTo: 'a@b.fr',
+  context: { empire: 'rome', step: 'cannes-216', url: 'http://x/?empire=rome' },
+};
 
 describe('courriel de feedback', () => {
   it("préfixe l'objet et le tronque après 8 mots", () => {

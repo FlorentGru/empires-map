@@ -1,0 +1,12 @@
+# Données et fichiers générés : jamais reformatés (diffs énormes, sans intérêt).
+data/
+public/
+overrides/
+dist/
+agent/
+.cache/
+playwright-report/
+test-results/
+*.json
+*.geojson
+*.md

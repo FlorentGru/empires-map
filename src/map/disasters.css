@@ -13,14 +13,26 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
-.disaster-marker--epidemie { --c: #6d2a7a; }
-.disaster-marker--guerre { --c: #7a1f1a; }
+.disaster-marker--epidemie {
+  --c: #6d2a7a;
+}
+.disaster-marker--guerre {
+  --c: #7a1f1a;
+}
 .disaster-marker--eruption,
 .disaster-marker--seisme,
-.disaster-marker--tsunami { --c: #a4471c; }
+.disaster-marker--tsunami {
+  --c: #a4471c;
+}
 .disaster-marker--famine,
-.disaster-marker--inondation { --c: #6b5a2a; }
-.disaster-marker__icon { font-size: 14px; line-height: 1; color: var(--c); }
+.disaster-marker--inondation {
+  --c: #6b5a2a;
+}
+.disaster-marker__icon {
+  font-size: 14px;
+  line-height: 1;
+  color: var(--c);
+}
 .disaster-marker__ring {
   position: absolute;
   inset: -2px;
@@ -44,14 +56,44 @@
   pointer-events: none;
 }
 .disaster-marker:hover,
-.disaster-marker:focus-visible { transform: scale(1.12); }
+.disaster-marker:focus-visible {
+  transform: scale(1.12);
+}
 @keyframes disaster-ring {
-  from { opacity: 0.8; transform: scale(1); }
-  to { opacity: 0; transform: scale(2.4); }
+  from {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(2.4);
+  }
 }
 @media (prefers-reduced-motion: reduce) {
-  .disaster-marker__ring { animation: none; }
+  .disaster-marker__ring {
+    animation: none;
+  }
 }
-.map-card__deaths { margin: 0 0 4px; font-family: var(--font-sans); font-size: 13px; font-weight: 700; color: #7a1f1a; }
-.map-card__note { margin: 0 0 8px; font-family: var(--font-sans); font-size: 12px; font-style: italic; color: var(--ink-soft); }
-.map-card__preview { margin: -2px 0 6px; padding: 2px 6px; font-family: var(--font-sans); font-size: 11.5px; color: #6b4a00; background: #f6e3a8; border-radius: 4px; }
+.map-card__deaths {
+  margin: 0 0 4px;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 700;
+  color: #7a1f1a;
+}
+.map-card__note {
+  margin: 0 0 8px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+.map-card__preview {
+  margin: -2px 0 6px;
+  padding: 2px 6px;
+  font-family: var(--font-sans);
+  font-size: 11.5px;
+  color: #6b4a00;
+  background: #f6e3a8;
+  border-radius: 4px;
+}

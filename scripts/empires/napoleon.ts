@@ -70,21 +70,10 @@ function makeBlocks(c: GeoCtx) {
   const france1790 = () => once('f1790', () => c.diff(france(), c.region('SAVOIE'), c.region('NICE')));
   /** France de mai 1814 : 1792 + Chambéry/Annecy, Sarrelouis et Landau ; sans Nice, Savoie orientale. */
   const france1814 = () =>
-    once('f1814', () =>
-      u(
-        c.diff(france(), c.region('NICE'), savoieEst()),
-        inReg('^Germany$', 'SARRELOUIS'),
-        inReg('^Germany$', 'LANDAU'),
-      ),
-    );
+    once('f1814', () => u(c.diff(france(), c.region('NICE'), savoieEst()), inReg('^Germany$', 'SARRELOUIS'), inReg('^Germany$', 'LANDAU')));
   const belgique = () =>
     once('belgique', () =>
-      u(
-        country('^Belgium$'),
-        country('^Luxembourg$'),
-        inReg('^Netherlands$', 'ZEEUWS_VLAANDEREN'),
-        inReg('^Netherlands$', 'LIMBOURG_SUD'),
-      ),
+      u(country('^Belgium$'), country('^Luxembourg$'), inReg('^Netherlands$', 'ZEEUWS_VLAANDEREN'), inReg('^Netherlands$', 'LIMBOURG_SUD')),
     );
   const rhin = () => once('rhin', () => inReg('^Germany$', 'RIVE_GAUCHE_RHIN'));
   const geneve = () => once('geneve', () => u(inReg('^Switzerland$', 'GENEVE'), inReg('^Switzerland$', 'MONT_TERRIBLE')));
@@ -106,9 +95,7 @@ function makeBlocks(c: GeoCtx) {
   /** Union de tous les États italiens des instantanés : zone « déjà couverte » pour le rattrapage de côte. */
   const italieSnap = () =>
     once('italieSnap', () =>
-      u(
-        c.snap(S1800, '^(Kingdom of the Two Sicilies|Papal States|Tuscany|Lucca|Parma|Modena|Massa|Lombardy|Venetia|Pontremoli|Fivizzano)$'),
-      ),
+      u(c.snap(S1800, '^(Kingdom of the Two Sicilies|Papal States|Tuscany|Lucca|Parma|Modena|Massa|Lombardy|Venetia|Pontremoli|Fivizzano)$')),
     );
   /** Les côtes des instantanés sont généralisées (Naples, Ancône, Trieste manquent) : on rattrape ≤ 10 km de terre italienne. */
   const coastFill = (g: Poly | null): Poly | null => {
@@ -145,7 +132,18 @@ function makeBlocks(c: GeoCtx) {
       const lubeck: Poly = {
         type: 'Feature',
         properties: {},
-        geometry: { type: 'Polygon', coordinates: [[[10.55, 53.78], [10.95, 53.78], [10.95, 54.0], [10.55, 54.0], [10.55, 53.78]]] },
+        geometry: {
+          type: 'Polygon',
+          coordinates: [
+            [
+              [10.55, 53.78],
+              [10.95, 53.78],
+              [10.95, 54.0],
+              [10.55, 54.0],
+              [10.55, 53.78],
+            ],
+          ],
+        },
       };
       return u(base, c.snap(S1815, '^(Hamburg|Lübeck|Bremen|Cuxhaven)$'), c.inter(lubeck, c.country('^Germany$')));
     });
@@ -156,31 +154,62 @@ function makeBlocks(c: GeoCtx) {
       return avecHanovre ? u(ring, c.diff(c.inter(germany(), c.region('HANOVRE')), petitsEtats())) : ring;
     });
   const cdrSud = () =>
-    once('cdrSud', () =>
-      u(
-        c.snap(S1815, '^(Bavaria|Württemberg|Baden|Hohenzollern|Grand Duchy of Hesse|Nassau|Wetzlar)$'),
-        inReg('^Germany$', 'BERG'),
-      ),
-    );
+    once('cdrSud', () => u(c.snap(S1815, '^(Bavaria|Württemberg|Baden|Hohenzollern|Grand Duchy of Hesse|Nassau|Wetzlar)$'), inReg('^Germany$', 'BERG')));
   const cdrEst = () => once('cdrEst', () => u(inReg('^Germany$', 'CDR_EST'), petitsEtats()));
-  const bavePlus = () =>
-    once('bavePlus', () => u(c.snap(S1815, '^Bavaria$'), tyrolN(), trentin()));
+  const bavePlus = () => once('bavePlus', () => u(c.snap(S1815, '^Bavaria$'), tyrolN(), trentin()));
   const duche1807 = () =>
-    once('duche1807', () =>
-      u(
-        c.inter(c.snap(S1783, '^Poland$'), c.region('DUCHE_1807')),
-        c.inter(c.snap(S1783, '^Prussia$'), c.region('NETZE')),
-      ),
-    );
+    once('duche1807', () => u(c.inter(c.snap(S1783, '^Poland$'), c.region('DUCHE_1807')), c.inter(c.snap(S1783, '^Prussia$'), c.region('NETZE'))));
   const duche1809 = () => once('duche1809', () => u(duche1807(), c.inter(c.snap(S1783, '^Poland$'), c.region('GALICIE_OUEST'))));
   const dantzig = () => once('dantzig', () => inReg('^Poland$', 'DANTZIG'));
   const catalogne = () => once('catalogne', () => c.inter(spain(), c.region('CATALOGNE')));
 
   return {
-    u, c, coastFill, country, france, france1790, france1814, belgique, rhin, geneve, valais, savoie, nice, piemont, ligurie, elbe, parme,
-    toscane, papal, marches, romagne, lazioOmbrie, lombardie, modene, venetie, naples, lucques, dalmatie, trentin, tyrolN,
-    salzbourg, illyrie, nord, westphalie, cdrSud, cdrEst, bavePlus, duche1807, duche1809, dantzig, catalogne, netherlands,
-    germany, italy, switzerland, spain,
+    u,
+    c,
+    coastFill,
+    country,
+    france,
+    france1790,
+    france1814,
+    belgique,
+    rhin,
+    geneve,
+    valais,
+    savoie,
+    nice,
+    piemont,
+    ligurie,
+    elbe,
+    parme,
+    toscane,
+    papal,
+    marches,
+    romagne,
+    lazioOmbrie,
+    lombardie,
+    modene,
+    venetie,
+    naples,
+    lucques,
+    dalmatie,
+    trentin,
+    tyrolN,
+    salzbourg,
+    illyrie,
+    nord,
+    westphalie,
+    cdrSud,
+    cdrEst,
+    bavePlus,
+    duche1807,
+    duche1809,
+    dantzig,
+    catalogne,
+    netherlands,
+    germany,
+    italy,
+    switzerland,
+    spain,
   };
 }
 
@@ -316,7 +345,11 @@ function compose(step: EmpireStep, ctx: GeoCtx): ComposedEntity[] {
     add('Bade', 'allied', c.snap(S1815, '^Baden$'));
   }
   if (step.id === 'tilsit-1807') {
-    add('Russie', 'allied', u(c.inter(c.snap(S1800, '^Russian Empire$'), c.region('RUSSIE_EUROPE')), c.inter(c.snap(S1783, '^Prussia$'), c.region('BIALYSTOK'))));
+    add(
+      'Russie',
+      'allied',
+      u(c.inter(c.snap(S1800, '^Russian Empire$'), c.region('RUSSIE_EUROPE')), c.inter(c.snap(S1783, '^Prussia$'), c.region('BIALYSTOK'))),
+    );
   }
   if (step.id === 'apogee-1811' || step.id === 'moscou-1812') {
     const danemark = u(

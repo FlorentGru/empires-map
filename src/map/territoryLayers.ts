@@ -34,7 +34,10 @@ function decorate(fc: TerritoryCollection, color: string): TerritoryCollection {
 export class TerritoryLayers {
   private active: Slot | null = null;
 
-  constructor(private map: MapLibreMap, beforeId?: string) {
+  constructor(
+    private map: MapLibreMap,
+    beforeId?: string,
+  ) {
     const transition = { duration: prefersReducedMotion() ? 0 : CROSSFADE_MS };
     for (const slot of SLOTS) {
       map.addSource(`territory-${slot}`, { type: 'geojson', data: EMPTY });

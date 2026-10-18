@@ -11,7 +11,10 @@ export function largestStep(stepIds: string[], areas: AreaByStep): string | null
   let max = 0;
   for (const id of stepIds) {
     const a = areas[id] ?? 0;
-    if (a > max) { max = a; best = id; }
+    if (a > max) {
+      max = a;
+      best = id;
+    }
   }
   return best;
 }

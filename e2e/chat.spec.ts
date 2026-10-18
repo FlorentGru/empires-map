@@ -13,7 +13,7 @@ test('le guide répond et déplace la carte', async ({ page }) => {
   );
   await page.goto('/?empire=rome&step=zama-202');
   await page.getByRole('button', { name: /Demander au sage/ }).click();
-  await page.getByLabel('Ta question au guide').fill("Montre-moi Austerlitz");
+  await page.getByLabel('Ta question au guide').fill('Montre-moi Austerlitz');
   await page.keyboard.press('Enter');
   await expect(page.locator('.chat-msg--bot')).toContainText('victoire de Napoléon');
   await expect(page.locator('.chat-tools')).toContainText('naviguer_vers_etape');

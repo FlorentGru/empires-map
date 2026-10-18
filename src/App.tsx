@@ -11,7 +11,6 @@ import { ViewControls } from './panels/ViewControls';
 import { readBool, writeBool } from './lib/settings';
 import { EventPanel } from './panels/EventPanel';
 import { readUrlState, writeUrlState } from './player/urlState';
-import { continuedArmies } from './map/armyLayer';
 import { BASE_STEP_MS, usePlayer } from './player/usePlayer';
 import { battleStepMs } from './lib/march';
 import { chapterAt } from './lib/periods';
@@ -62,7 +61,9 @@ export function App() {
   }, []);
 
   // Vue « Le monde en l'an X » (?world=1&year=…) à la place de l'Atlas d'un empire.
-  const [world, setWorld] = useState<{ year: number } | null>(() => (new URLSearchParams(window.location.search).get('world') === '1' ? { year: readWorldYear() } : null));
+  const [world, setWorld] = useState<{ year: number } | null>(() =>
+    new URLSearchParams(window.location.search).get('world') === '1' ? { year: readWorldYear() } : null,
+  );
   const leaveWorld = useCallback(() => {
     clearWorldUrl();
     setWorld(null);
@@ -135,7 +136,7 @@ export function App() {
       <>
         <WorldYearView initialYear={world.year} backName={empire.name} onBack={leaveWorld} />
         <ChatPanel context={chatContext} goToStep={goToStep} onOpenQuiz={openQuiz} />
-      <QuizDialog open={quizOpen} onClose={() => setQuizOpen(false)} empire={empire.id} />
+        <QuizDialog open={quizOpen} onClose={() => setQuizOpen(false)} empire={empire.id} />
         {galleryOpen && (
           <Suspense fallback={null}>
             <Gallery onClose={closeGallery} onNavigate={goToStep} initialPerson={personRef} />
@@ -147,7 +148,15 @@ export function App() {
   // `key` : changer d'empire réinitialise le lecteur et la carte.
   return (
     <>
-      <Atlas key={`${empire.id}:${navKey}`} empire={empire} onSelectEmpire={setEmpireId} onOpenWorld={(year) => setWorld({ year })} onOpenCompare={() => setCompare({ a: empire.id, b: EMPIRES.find((e) => e.id !== empire.id)!.id })} onOpenGallery={() => setGalleryOpen(true)} onContext={setChatContext} />
+      <Atlas
+        key={`${empire.id}:${navKey}`}
+        empire={empire}
+        onSelectEmpire={setEmpireId}
+        onOpenWorld={(year) => setWorld({ year })}
+        onOpenCompare={() => setCompare({ a: empire.id, b: EMPIRES.find((e) => e.id !== empire.id)!.id })}
+        onOpenGallery={() => setGalleryOpen(true)}
+        onContext={setChatContext}
+      />
       <ChatPanel context={chatContext} goToStep={goToStep} onOpenQuiz={openQuiz} />
       <QuizDialog open={quizOpen} onClose={() => setQuizOpen(false)} empire={empire.id} />
       {galleryOpen && (
@@ -166,10 +175,22 @@ function initialIndex(empire: Empire): number {
   return i >= 0 ? i : 0;
 }
 
-function Atlas({ empire, onSelectEmpire, onOpenWorld, onOpenCompare, onOpenGallery, onContext }: { empire: Empire; onSelectEmpire: (id: string) => void; onOpenWorld: (year: number) => void; onOpenCompare: () => void; onOpenGallery: () => void; onContext: (c: ChatContext) => void }) {
-  const player = usePlayer(empire.steps.length, initialIndex(empire), (i) =>
-    battleStepMs(empire.steps[i]) ?? BASE_STEP_MS,
-  );
+function Atlas({
+  empire,
+  onSelectEmpire,
+  onOpenWorld,
+  onOpenCompare,
+  onOpenGallery,
+  onContext,
+}: {
+  empire: Empire;
+  onSelectEmpire: (id: string) => void;
+  onOpenWorld: (year: number) => void;
+  onOpenCompare: () => void;
+  onOpenGallery: () => void;
+  onContext: (c: ChatContext) => void;
+}) {
+  const player = usePlayer(empire.steps.length, initialIndex(empire), (i) => battleStepMs(empire.steps[i]) ?? BASE_STEP_MS);
   const step = empire.steps[player.index];
   // Inventions apparues depuis l'étape précédente (panneau de l'étape).
   const stepInventions = useMemo(
@@ -203,20 +224,97 @@ function Atlas({ empire, onSelectEmpire, onOpenWorld, onOpenCompare, onOpenGalle
     return c?.first ? c : null;
   }, [empire, player.index]);
   const togglePanel = useCallback(() => setPanelOpen((o) => !o), []);
-  const toggleTilt = useCallback(() => setTilted((v) => { writeBool('atlas.tilted', !v); return !v; }), []);
-  const toggleRelief = useCallback(() => setRelief((v) => { writeBool('atlas.relief', !v); return !v; }), []);
+  const toggleTilt = useCallback(
+    () =>
+      setTilted((v) => {
+        writeBool('atlas.tilted', !v);
+        return !v;
+      }),
+    [],
+  );
+  const toggleRelief = useCallback(
+    () =>
+      setRelief((v) => {
+        writeBool('atlas.relief', !v);
+        return !v;
+      }),
+    [],
+  );
 
-  const toggleFigures = useCallback(() => setFigures((v) => { writeBool('atlas.figures', !v); return !v; }), []);
+  const toggleFigures = useCallback(
+    () =>
+      setFigures((v) => {
+        writeBool('atlas.figures', !v);
+        return !v;
+      }),
+    [],
+  );
 
-  const toggleCountries2026 = useCallback(() => setCountries2026((v) => { writeBool('atlas.countries2026', !v); return !v; }), []);
+  const toggleCountries2026 = useCallback(
+    () =>
+      setCountries2026((v) => {
+        writeBool('atlas.countries2026', !v);
+        return !v;
+      }),
+    [],
+  );
 
-  const toggleStateNames = useCallback(() => setStateNames((v) => { writeBool('atlas.stateNames', !v); return !v; }), []);
-  const toggleNeighbors = useCallback(() => setNeighbors((v) => { writeBool('atlas.neighbors', !v); return !v; }), []);
-  const toggleContemporaries = useCallback(() => setContemporaries((v) => { writeBool('atlas.contemporaries', !v); return !v; }), []);
-  const toggleMonuments = useCallback(() => setMonuments((v) => { writeBool('atlas.monuments', !v); return !v; }), []);
-  const toggleRoutes = useCallback(() => setRoutes((v) => { writeBool('atlas.routes', !v); return !v; }), []);
-  const toggleDisasters = useCallback(() => setDisasters((v) => { writeBool('atlas.disasters', !v); return !v; }), []);
-  const toggleInventions = useCallback(() => setInventions((v) => { writeBool('atlas.inventions', !v); return !v; }), []);
+  const toggleStateNames = useCallback(
+    () =>
+      setStateNames((v) => {
+        writeBool('atlas.stateNames', !v);
+        return !v;
+      }),
+    [],
+  );
+  const toggleNeighbors = useCallback(
+    () =>
+      setNeighbors((v) => {
+        writeBool('atlas.neighbors', !v);
+        return !v;
+      }),
+    [],
+  );
+  const toggleContemporaries = useCallback(
+    () =>
+      setContemporaries((v) => {
+        writeBool('atlas.contemporaries', !v);
+        return !v;
+      }),
+    [],
+  );
+  const toggleMonuments = useCallback(
+    () =>
+      setMonuments((v) => {
+        writeBool('atlas.monuments', !v);
+        return !v;
+      }),
+    [],
+  );
+  const toggleRoutes = useCallback(
+    () =>
+      setRoutes((v) => {
+        writeBool('atlas.routes', !v);
+        return !v;
+      }),
+    [],
+  );
+  const toggleDisasters = useCallback(
+    () =>
+      setDisasters((v) => {
+        writeBool('atlas.disasters', !v);
+        return !v;
+      }),
+    [],
+  );
+  const toggleInventions = useCallback(
+    () =>
+      setInventions((v) => {
+        writeBool('atlas.inventions', !v);
+        return !v;
+      }),
+    [],
+  );
 
   useEffect(() => {
     writeUrlState(empire.id, step?.id);
@@ -229,19 +327,69 @@ function Atlas({ empire, onSelectEmpire, onOpenWorld, onOpenCompare, onOpenGalle
   return (
     <div className="app">
       <h1 className="visually-hidden">Atlas des Empires — {empire.name}</h1>
-      <WorldMap empire={empire} index={player.index} panelOpen={panelOpen} tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} stateNames={stateNames} neighbors={neighbors} contemporaries={contemporaries} monuments={monuments} routes={routes} disasters={disasters} inventions={inventions} speed={player.speed} />
+      <WorldMap
+        empire={empire}
+        index={player.index}
+        panelOpen={panelOpen}
+        tilted={tilted}
+        relief={relief}
+        figures={figures}
+        countries2026={countries2026}
+        stateNames={stateNames}
+        neighbors={neighbors}
+        contemporaries={contemporaries}
+        monuments={monuments}
+        routes={routes}
+        disasters={disasters}
+        inventions={inventions}
+        speed={player.speed}
+      />
 
       <div className="top-bar">
         <EmpirePicker empires={EMPIRES} current={empire} onSelect={onSelectEmpire} onOpenWorld={() => onOpenWorld(step?.year ?? DEFAULT_WORLD_YEAR)} />
         <div className="top-bar__right">
-          <ViewControls tilted={tilted} relief={relief} figures={figures} countries2026={countries2026} stateNames={stateNames} neighbors={neighbors} contemporaries={contemporaries} monuments={monuments} routes={routes} disasters={disasters} inventions={inventions} onToggleTilt={toggleTilt} onToggleRelief={toggleRelief} onToggleFigures={toggleFigures} onToggleCountries2026={toggleCountries2026} onToggleStateNames={toggleStateNames} onToggleNeighbors={toggleNeighbors} onToggleContemporaries={toggleContemporaries} onToggleMonuments={toggleMonuments} onToggleRoutes={toggleRoutes} onToggleDisasters={toggleDisasters} onToggleInventions={toggleInventions} />
+          <ViewControls
+            tilted={tilted}
+            relief={relief}
+            figures={figures}
+            countries2026={countries2026}
+            stateNames={stateNames}
+            neighbors={neighbors}
+            contemporaries={contemporaries}
+            monuments={monuments}
+            routes={routes}
+            disasters={disasters}
+            inventions={inventions}
+            onToggleTilt={toggleTilt}
+            onToggleRelief={toggleRelief}
+            onToggleFigures={toggleFigures}
+            onToggleCountries2026={toggleCountries2026}
+            onToggleStateNames={toggleStateNames}
+            onToggleNeighbors={toggleNeighbors}
+            onToggleContemporaries={toggleContemporaries}
+            onToggleMonuments={toggleMonuments}
+            onToggleRoutes={toggleRoutes}
+            onToggleDisasters={toggleDisasters}
+            onToggleInventions={toggleInventions}
+          />
           <button type="button" className="btn btn--ghost" onClick={onOpenGallery} aria-haspopup="dialog">
             Galerie
           </button>
-          <button type="button" className="btn btn--ghost" onClick={onOpenCompare} title="Comparer cet empire à un autre : cartes, population, économie, armée, politique…">
+          <button
+            type="button"
+            className="btn btn--ghost"
+            onClick={onOpenCompare}
+            title="Comparer cet empire à un autre : cartes, population, économie, armée, politique…"
+          >
             ⇄ Comparer
           </button>
-          <button type="button" className="btn btn--ghost" onClick={() => setFeedbackOpen(true)} aria-haspopup="dialog" title="Proposer une idée ou signaler une erreur">
+          <button
+            type="button"
+            className="btn btn--ghost"
+            onClick={() => setFeedbackOpen(true)}
+            aria-haspopup="dialog"
+            title="Proposer une idée ou signaler une erreur"
+          >
             Votre avis
           </button>
           <button type="button" className="btn btn--ghost about-btn" onClick={() => setAboutOpen(true)} aria-haspopup="dialog">
@@ -250,15 +398,18 @@ function Atlas({ empire, onSelectEmpire, onOpenWorld, onOpenCompare, onOpenGalle
         </div>
       </div>
 
-      <EventPanel
-        chapter={panelChapter}
+      <EventPanel chapter={panelChapter} step={step} open={panelOpen} onToggle={togglePanel} story={panelStory} inventions={stepInventions} />
+      <Legend
+        empire={empire}
         step={step}
-        open={panelOpen}
-        onToggle={togglePanel}
-        story={panelStory}
-        inventions={stepInventions}
+        countries2026={countries2026}
+        neighbors={neighbors}
+        contemporaries={contemporaries}
+        monuments={monuments}
+        routes={routes}
+        disasters={disasters}
+        inventions={inventions}
       />
-      <Legend empire={empire} step={step} countries2026={countries2026} neighbors={neighbors} contemporaries={contemporaries} monuments={monuments} routes={routes} disasters={disasters} inventions={inventions} />
       <Timeline empire={empire} player={player} compare2026={countries2026} story={story.controls} />
       <AboutModal open={aboutOpen} onClose={() => setAboutOpen(false)} />
       <FeedbackDialog open={feedbackOpen} onClose={() => setFeedbackOpen(false)} empire={empire.id} step={step?.id} />

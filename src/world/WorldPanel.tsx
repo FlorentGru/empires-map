@@ -80,7 +80,11 @@ export function WorldPanel({ year, present, open, onToggle, onGoto }: Props) {
             <h3>
               Routes actives <span className="world-panel__count">{liveRoutes.length}</span>
             </h3>
-            {liveRoutes.length > 0 ? <p className="world-panel__text">{liveRoutes.map((r) => r.name).join(', ')}.</p> : <p className="world-panel__none">Aucune route recensée.</p>}
+            {liveRoutes.length > 0 ? (
+              <p className="world-panel__text">{liveRoutes.map((r) => r.name).join(', ')}.</p>
+            ) : (
+              <p className="world-panel__none">Aucune route recensée.</p>
+            )}
           </section>
 
           <section aria-label="Catastrophes en cours">
@@ -91,7 +95,12 @@ export function WorldPanel({ year, present, open, onToggle, onGoto }: Props) {
               <ul className="world-panel__plain">
                 {live.map((d) => (
                   <li key={d.id}>
-                    <button type="button" className="world-panel__link" onClick={() => window.dispatchEvent(new CustomEvent(OPEN_DISASTER_EVENT, { detail: d.id }))} title="Voir sur la carte">
+                    <button
+                      type="button"
+                      className="world-panel__link"
+                      onClick={() => window.dispatchEvent(new CustomEvent(OPEN_DISASTER_EVENT, { detail: d.id }))}
+                      title="Voir sur la carte"
+                    >
                       {d.name}
                     </button>{' '}
                     <span className="world-panel__step">{formatDeaths(d.deaths)}</span>

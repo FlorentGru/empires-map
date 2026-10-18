@@ -29,7 +29,11 @@ function InventionList({ id }: { id: string }) {
     <ul className="compare-inventions">
       {list.map((i) => (
         <li key={i.id} title={i.impact}>
-          <strong>{i.name}</strong> <small>({i.approx ? 'vers ' : ''}{formatYear(i.year)})</small>
+          <strong>{i.name}</strong>{' '}
+          <small>
+            ({i.approx ? 'vers ' : ''}
+            {formatYear(i.year)})
+          </small>
         </li>
       ))}
     </ul>
@@ -37,7 +41,19 @@ function InventionList({ id }: { id: string }) {
 }
 
 /** Une carte et sa frise compacte (curseur d'étapes). */
-function Pane({ empire, index, onIndex, onEmpire, other }: { empire: Empire; index: number; onIndex: (i: number) => void; onEmpire: (id: string) => void; other: string }) {
+function Pane({
+  empire,
+  index,
+  onIndex,
+  onEmpire,
+  other,
+}: {
+  empire: Empire;
+  index: number;
+  onIndex: (i: number) => void;
+  onEmpire: (id: string) => void;
+  other: string;
+}) {
   const step = empire.steps[index];
   return (
     <section className="compare-pane" aria-label={`Carte : ${empire.name}`} style={{ '--c': empire.color } as React.CSSProperties}>
@@ -51,7 +67,21 @@ function Pane({ empire, index, onIndex, onEmpire, other }: { empire: Empire; ind
         </select>
       </header>
       <div className="compare-pane__map">
-        <WorldMap key={empire.id} empire={empire} index={index} panelOpen={false} tilted={false} relief={false} figures={false} neighbors={false} contemporaries={false} monuments={false} routes={false} disasters={false} compact />
+        <WorldMap
+          key={empire.id}
+          empire={empire}
+          index={index}
+          panelOpen={false}
+          tilted={false}
+          relief={false}
+          figures={false}
+          neighbors={false}
+          contemporaries={false}
+          monuments={false}
+          routes={false}
+          disasters={false}
+          compact
+        />
       </div>
       <div className="compare-pane__timeline">
         <input
@@ -132,7 +162,11 @@ function Section({ title, children, open = false }: { title: string; children: R
 export function CompareView({ a, b, onChange, onExit }: Props) {
   const A = getEmpire(a)!;
   const B = getEmpire(b)!;
-  const startIndex = (e: Empire) => Math.max(0, e.steps.findIndex((s) => s.id === apogeeStepId(e)));
+  const startIndex = (e: Empire) =>
+    Math.max(
+      0,
+      e.steps.findIndex((s) => s.id === apogeeStepId(e)),
+    );
   const [ia, setIa] = useState(() => startIndex(A));
   const [ib, setIb] = useState(() => startIndex(B));
   const [align, setAlign] = useState(false);
@@ -189,10 +223,12 @@ export function CompareView({ a, b, onChange, onExit }: Props) {
           <thead>
             <tr>
               <th scope="col">Période comparée</th>
-              {([
-                [A, pa, periodA, setPeriodA],
-                [B, pb, periodB, setPeriodB],
-              ] as const).map(([e, p, val, set]) => (
+              {(
+                [
+                  [A, pa, periodA, setPeriodA],
+                  [B, pb, periodB, setPeriodB],
+                ] as const
+              ).map(([e, p, val, set]) => (
                 <th key={e.id} scope="col" style={{ '--c': e.color } as React.CSSProperties}>
                   <span className="compare-swatch" aria-hidden="true" /> {short(e)}
                   {p ? (
@@ -213,13 +249,29 @@ export function CompareView({ a, b, onChange, onExit }: Props) {
         </table>
 
         <Section title="En bref" open>
-          <TextRow label="Durée" a={`${dur(A)} (${formatYear(A.start)} – ${formatYear(A.end)})`} b={`${dur(B)} (${formatYear(B.start)} – ${formatYear(B.end)})`} />
+          <TextRow
+            label="Durée"
+            a={`${dur(A)} (${formatYear(A.start)} – ${formatYear(A.end)})`}
+            b={`${dur(B)} (${formatYear(B.start)} – ${formatYear(B.end)})`}
+          />
           <NumRow label="Plus grande surface (période)" a={areaA} b={areaB} fmt={formatArea} />
           <TextRow label="Batailles racontées" a={battleCount(A)} b={battleCount(B)} />
         </Section>
         <Section title="Population" open>
-          <NumRow label="Habitants" a={PA?.population.total.value} b={PB?.population.total.value} ea={PA?.population.total} eb={PB?.population.total} fmt={formatNumber} />
-          <NumRow label="Densité (hab./km²)" a={density(PA?.population.total, areaA)} b={density(PB?.population.total, areaB)} fmt={(n) => n.toLocaleString('fr-FR', { maximumFractionDigits: 1 })} />
+          <NumRow
+            label="Habitants"
+            a={PA?.population.total.value}
+            b={PB?.population.total.value}
+            ea={PA?.population.total}
+            eb={PB?.population.total}
+            fmt={formatNumber}
+          />
+          <NumRow
+            label="Densité (hab./km²)"
+            a={density(PA?.population.total, areaA)}
+            b={density(PB?.population.total, areaB)}
+            fmt={(n) => n.toLocaleString('fr-FR', { maximumFractionDigits: 1 })}
+          />
           <TextRow
             label="Grandes villes"
             a={PA?.population.cities.map((c) => `${c.name} (${formatNumber(c.population.value)})`).join(', ')}
@@ -227,7 +279,14 @@ export function CompareView({ a, b, onChange, onExit }: Props) {
           />
         </Section>
         <Section title="Économie">
-          <NumRow label="Part de l'économie mondiale (%)" a={PA?.economy.worldGdpShare?.value} b={PB?.economy.worldGdpShare?.value} ea={PA?.economy.worldGdpShare} eb={PB?.economy.worldGdpShare} fmt={(n) => `${n} %`} />
+          <NumRow
+            label="Part de l'économie mondiale (%)"
+            a={PA?.economy.worldGdpShare?.value}
+            b={PB?.economy.worldGdpShare?.value}
+            ea={PA?.economy.worldGdpShare}
+            eb={PB?.economy.worldGdpShare}
+            fmt={(n) => `${n} %`}
+          />
           <TextRow label="Ressources" a={list(PA?.economy.resources)} b={list(PB?.economy.resources)} />
           <TextRow label="Monnaie" a={PA?.economy.currency} b={PB?.economy.currency} />
           <TextRow label="Fiscalité" a={PA?.economy.taxation} b={PB?.economy.taxation} />
@@ -235,7 +294,12 @@ export function CompareView({ a, b, onChange, onExit }: Props) {
         </Section>
         <Section title="Armée">
           <NumRow label="Effectifs" a={PA?.army.size?.value} b={PB?.army.size?.value} ea={PA?.army.size} eb={PB?.army.size} fmt={formatNumber} />
-          <NumRow label="Sous les armes (% de la population)" a={mobilisation(PA?.army.size, PA?.population.total)} b={mobilisation(PB?.army.size, PB?.population.total)} fmt={(n) => `${n.toLocaleString('fr-FR', { maximumFractionDigits: 2 })} %`} />
+          <NumRow
+            label="Sous les armes (% de la population)"
+            a={mobilisation(PA?.army.size, PA?.population.total)}
+            b={mobilisation(PB?.army.size, PB?.population.total)}
+            fmt={(n) => `${n.toLocaleString('fr-FR', { maximumFractionDigits: 2 })} %`}
+          />
           <TextRow label="Composition" a={PA?.army.composition} b={PB?.army.composition} />
           <TextRow label="Recrutement" a={PA?.army.recruitment} b={PB?.army.recruitment} />
           <TextRow label="Unités célèbres" a={list(PA?.army.famousUnits)} b={list(PB?.army.famousUnits)} />
@@ -247,7 +311,14 @@ export function CompareView({ a, b, onChange, onExit }: Props) {
           <TextRow label="Succession" a={PA?.politics.succession} b={PB?.politics.succession} />
           <TextRow label="Institutions" a={PA?.politics.institutions} b={PB?.politics.institutions} />
           <TextRow label="Administration" a={PA?.politics.administration} b={PB?.politics.administration} />
-          <NumRow label="Provinces" a={PA?.politics.provinces?.value} b={PB?.politics.provinces?.value} ea={PA?.politics.provinces} eb={PB?.politics.provinces} fmt={formatNumber} />
+          <NumRow
+            label="Provinces"
+            a={PA?.politics.provinces?.value}
+            b={PB?.politics.provinces?.value}
+            ea={PA?.politics.provinces}
+            eb={PB?.politics.provinces}
+            fmt={formatNumber}
+          />
           <TextRow label="Droit" a={PA?.politics.law} b={PB?.politics.law} />
         </Section>
         <Section title="Société">
@@ -269,7 +340,14 @@ export function CompareView({ a, b, onChange, onExit }: Props) {
           />
         </Section>
         <Section title="Infrastructures">
-          <NumRow label="Routes (km)" a={PA?.infrastructure.roads?.value} b={PB?.infrastructure.roads?.value} ea={PA?.infrastructure.roads} eb={PB?.infrastructure.roads} fmt={formatNumber} />
+          <NumRow
+            label="Routes (km)"
+            a={PA?.infrastructure.roads?.value}
+            b={PB?.infrastructure.roads?.value}
+            ea={PA?.infrastructure.roads}
+            eb={PB?.infrastructure.roads}
+            fmt={formatNumber}
+          />
           <TextRow label="En résumé" a={PA?.infrastructure.summary} b={PB?.infrastructure.summary} />
         </Section>
         <Section title="Héritage">

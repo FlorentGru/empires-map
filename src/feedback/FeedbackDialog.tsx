@@ -73,14 +73,22 @@ export function FeedbackDialog({ open, onClose, empire, step }: Props) {
 
         <label className="feedback__field">
           Message
-          <textarea value={message} onChange={(e) => setMessage(e.target.value)} rows={6} required minLength={5} placeholder="Votre suggestion ou ce que vous avez remarqué…" />
+          <textarea
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            rows={6}
+            required
+            minLength={5}
+            placeholder="Votre suggestion ou ce que vous avez remarqué…"
+          />
         </label>
         <label className="feedback__field">
           Votre e-mail <span className="feedback__hint">(facultatif, pour vous répondre)</span>
           <input type="email" value={replyTo} onChange={(e) => setReplyTo(e.target.value)} autoComplete="email" />
         </label>
         <p className="feedback__hint">
-          L'empire et l'étape affichés ({empire}{step ? ` · ${step}` : ''}) sont joints au message.
+          L'empire et l'étape affichés ({empire}
+          {step ? ` · ${step}` : ''}) sont joints au message.
         </p>
 
         {FEEDBACK_EMAIL ? (
@@ -97,7 +105,9 @@ export function FeedbackDialog({ open, onClose, empire, step }: Props) {
           </div>
         ) : (
           <div className="feedback__actions">
-            <p className="feedback__soon" role="status">Adresse de contact bientôt disponible.</p>
+            <p className="feedback__soon" role="status">
+              Adresse de contact bientôt disponible.
+            </p>
             <button type="button" className="btn btn--ghost" onClick={onClose}>
               Fermer
             </button>

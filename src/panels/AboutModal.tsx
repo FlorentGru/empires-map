@@ -28,10 +28,7 @@ export function AboutModal({ open, onClose }: Props) {
     >
       <div className="about__inner">
         <h2 id="about-title">À propos de l'Atlas des Empires</h2>
-        <p>
-          Une carte animée de l'évolution territoriale des grands empires, étape par étape, avec le récit des
-          événements qui l'ont façonnée.
-        </p>
+        <p>Une carte animée de l'évolution territoriale des grands empires, étape par étape, avec le récit des événements qui l'ont façonnée.</p>
         <h3>Crédits des données</h3>
         <ul>
           <li>
@@ -55,9 +52,7 @@ export function AboutModal({ open, onClose }: Props) {
             </a>
             .
           </li>
-          <li>
-            Polices des noms de villes : Open Sans et Noto Sans (licence SIL OFL / Apache 2.0).
-          </li>
+          <li>Polices des noms de villes : Open Sans et Noto Sans (licence SIL OFL / Apache 2.0).</li>
           <li>
             Rendu cartographique :{' '}
             <a href="https://maplibre.org/" target="_blank" rel="noopener noreferrer">
@@ -67,8 +62,8 @@ export function AboutModal({ open, onClose }: Props) {
           </li>
         </ul>
         <p className="about__note">
-          Les frontières anciennes sont des approximations : elles simplifient des réalités souvent floues
-          (zones d'influence, royaumes clients, frontières mouvantes).
+          Les frontières anciennes sont des approximations : elles simplifient des réalités souvent floues (zones d'influence, royaumes clients, frontières
+          mouvantes).
         </p>
         <h3>Raccourcis clavier</h3>
         <ul>

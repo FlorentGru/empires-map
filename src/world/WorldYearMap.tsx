@@ -76,7 +76,10 @@ export function WorldYearMap({ year }: { year: number }) {
     // Clic : le territoire le plus haut sous le pointeur (sauf si un monument, une route ou une catastrophe est visé).
     const onClick = (e: MapMouseEvent) => {
       if (!created) return;
-      const own = map.getStyle().layers.map((l) => l.id).filter((id) => /^(monuments|route|disaster)/.test(id));
+      const own = map
+        .getStyle()
+        .layers.map((l) => l.id)
+        .filter((id) => /^(monuments|route|disaster)/.test(id));
       if (own.length && map.queryRenderedFeatures(e.point, { layers: own }).length) return;
       const hit = map.queryRenderedFeatures(e.point, { layers: created.empires.layerIds() })[0];
       if (!hit) {

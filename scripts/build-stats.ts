@@ -29,10 +29,18 @@ for (const id of ids) {
     const core = fc.features.filter((f: Feature<Polygon | MultiPolygon, TerritoryProperties>) => (f.properties.status ?? 'core') === 'core');
     areas[step.id] = Math.round(core.reduce((sum, f) => sum + turf.area(f), 0) / 1e6);
   }
-  const apogee = largestStep(empire.steps.map((s) => s.id), areas);
-  if (!apogee) { console.warn(`${id} : aucun territoire mesuré, stats ignorées`); continue; }
+  const apogee = largestStep(
+    empire.steps.map((s) => s.id),
+    areas,
+  );
+  if (!apogee) {
+    console.warn(`${id} : aucun territoire mesuré, stats ignorées`);
+    continue;
+  }
   const stats: EmpireStats = { areas, apogee };
   fs.writeFileSync(path.join(EMPIRES_DATA, id, 'stats.json'), JSON.stringify(stats, null, 1) + '\n');
   const step = empire.steps.find((s) => s.id === apogee)!;
-  console.log(`${id} : apogée ${step.year} « ${step.title} » — ${areas[apogee].toLocaleString('fr-FR')} km²${empire.apogee ? ` (surcharge timeline : ${empire.apogee.stepId})` : ''}`);
+  console.log(
+    `${id} : apogée ${step.year} « ${step.title} » — ${areas[apogee].toLocaleString('fr-FR')} km²${empire.apogee ? ` (surcharge timeline : ${empire.apogee.stepId})` : ''}`,
+  );
 }

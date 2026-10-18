@@ -14,7 +14,17 @@ export function stepForInvention(empireId: string, year: number) {
   return s ? { stepId: s.id, title: s.title, year: s.year } : null;
 }
 
-function InventionDetail({ empireId, inv, onBack, onNavigate }: { empireId: string; inv: Invention; onBack: () => void; onNavigate: (empireId: string, stepId: string) => void }) {
+function InventionDetail({
+  empireId,
+  inv,
+  onBack,
+  onNavigate,
+}: {
+  empireId: string;
+  inv: Invention;
+  onBack: () => void;
+  onNavigate: (empireId: string, stepId: string) => void;
+}) {
   const backRef = useRef<HTMLButtonElement>(null);
   useEffect(() => backRef.current?.focus(), []);
   const s = useMemo(() => stepForInvention(empireId, inv.year), [empireId, inv.year]);
@@ -98,7 +108,14 @@ export function InventionsView({ query, onNavigate }: { query: string; onNavigat
       </div>
       <div className="gallery__grid">
         {list.map((x) => (
-          <button key={x.id} type="button" className="gallery__card people__card monuments__card" data-card data-uid={`i:${x.id}`} onClick={() => setSelected(x.id)}>
+          <button
+            key={x.id}
+            type="button"
+            className="gallery__card people__card monuments__card"
+            data-card
+            data-uid={`i:${x.id}`}
+            onClick={() => setSelected(x.id)}
+          >
             <Svg html={inventionIconSvg(x.category)} />
             <span className="gallery__name">{x.name}</span>
             <span className="people__span">

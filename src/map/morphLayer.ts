@@ -43,7 +43,10 @@ export class MorphLayer {
   private lastOverlay = 0;
   private readonly debug = new URLSearchParams(window.location.search).get('debug') === '1';
 
-  constructor(private map: MapLibreMap, beforeId?: string) {
+  constructor(
+    private map: MapLibreMap,
+    beforeId?: string,
+  ) {
     map.addSource('morph', { type: 'geojson', data: EMPTY });
     const kindColor = ['match', ['get', 'kind'], 'gained', DIFF_COLORS.gained, DIFF_COLORS.lost] as never;
     map.addLayer(

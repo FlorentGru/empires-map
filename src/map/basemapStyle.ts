@@ -102,10 +102,7 @@ export async function addLand(map: MapLibreMap): Promise<void> {
     if (!map.getStyle() || map.getSource('land')) return;
     map.addSource('land', { type: 'geojson', data });
     map.addLayer({ id: 'land', type: 'fill', source: 'land', paint: { 'fill-color': MAP_COLORS.land } }, 'graticule');
-    map.addLayer(
-      { id: 'coast', type: 'line', source: 'land', paint: { 'line-color': MAP_COLORS.coast, 'line-width': 0.7, 'line-opacity': 0.8 } },
-      'graticule',
-    );
+    map.addLayer({ id: 'coast', type: 'line', source: 'land', paint: { 'line-color': MAP_COLORS.coast, 'line-width': 0.7, 'line-opacity': 0.8 } }, 'graticule');
   } catch (err) {
     console.warn('[fond de carte] land.geojson indisponible, affichage océan seul :', err);
   }
