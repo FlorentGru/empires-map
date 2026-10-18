@@ -27,8 +27,12 @@ test('Empire espagnol : disponible dans le sélecteur, étape affichée sans err
   page.on('pageerror', (e) => errors.push(e.message));
   await page.goto('/?empire=rome&step=zama-202');
   await page.locator('.empire-picker__current').click();
-  await page.locator('.empire-group__toggle', { hasText: 'Europe' }).click();
-  await page.locator('.empire-card', { hasText: /Empire espagnol/ }).first().click();
+  // Groupe qui contient réellement la carte (indépendant du nom de la région), déplié avant le clic.
+  const group = page.locator('.empire-group', { has: page.locator('.empire-card', { hasText: /Empire espagnol/ }) }).first();
+  const toggle = group.locator('.empire-group__toggle');
+  if ((await toggle.getAttribute('aria-expanded')) !== 'true') await toggle.click();
+  await expect(toggle).toHaveAttribute('aria-expanded', 'true');
+  await group.locator('.empire-card', { hasText: /Empire espagnol/ }).first().click();
   await expect(page).toHaveURL(/empire=espagne/);
   await expect(page.locator('.timeline__title')).toHaveText(/Grenade/);
   expect(errors).toEqual([]);
