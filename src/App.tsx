@@ -15,6 +15,7 @@ import { battleStepMs } from './lib/march';
 import { chapterAt } from './lib/periods';
 import { useStory } from './story/useStory';
 import { Timeline } from './timeline/Timeline';
+import { GuessCard } from './guess/GuessCard';
 import { ChatPanel } from './chat/ChatPanel';
 import type { ChatContext } from './chat/ChatPanel';
 import { clearWorldUrl, DEFAULT_WORLD_YEAR, readWorldYear } from './world/worldUrl';
@@ -430,6 +431,7 @@ function Atlas({
         inventions={inventions}
       />
       <Timeline empire={empire} player={player} compare2026={countries2026} story={story.controls} />
+      <GuessCard empire={empire} player={player} />
       <AboutModal open={aboutOpen} onClose={() => setAboutOpen(false)} />
       {feedbackOpen && (
         <Suspense fallback={null}>

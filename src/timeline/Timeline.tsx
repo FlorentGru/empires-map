@@ -14,6 +14,7 @@ import { firstStepOfPeriods, periodIndexAt } from '../lib/periods';
 import { formatYear } from '../lib/years';
 import { SPEEDS, type Player, type Speed } from '../player/usePlayer';
 import { StoryButton } from '../story/StoryMenu';
+import { GuessButton } from '../guess/GuessCard';
 import type { StoryControls } from '../story/useStory';
 import type { Empire } from '../types';
 import { makeTicks, makeYearScale } from './scale';
@@ -182,6 +183,7 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
           🔁
         </button>
         <StoryButton story={story} />
+        <GuessButton player={player} disabled={story.enabled} />
         <div className="timeline__current" aria-live="polite">
           <span className="timeline__year">
             {active ? formatYear(active.year) : ''}

@@ -14,6 +14,10 @@ interface PlayerState {
   loop: boolean;
   /** Mode Histoire : l'enchaînement est piloté par la narration, pas par le minuteur. */
   story: boolean;
+  /** Mode « Devine la suite » : avant d'avancer, une question sur l'étape suivante. */
+  guess: boolean;
+  /** Étape visée par la question en cours (null : pas de question). */
+  asking: number | null;
 }
 
 type PlayerAction =
@@ -25,7 +29,9 @@ type PlayerAction =
   | { type: 'goTo'; index: number }
   | { type: 'setSpeed'; speed: Speed }
   | { type: 'setLoop'; loop: boolean }
-  | { type: 'setStory'; story: boolean };
+  | { type: 'setStory'; story: boolean }
+  | { type: 'setGuess'; guess: boolean }
+  | { type: 'answered' };
 
 function makeReducer(count: number) {
   const clamp = (i: number) => Math.max(0, Math.min(count - 1, i));
@@ -40,6 +46,9 @@ function makeReducer(count: number) {
       case 'toggle':
         return state.playing ? { ...state, playing: false } : { ...state, playing: true, index: state.index >= last && !state.loop ? 0 : state.index };
       case 'next':
+        if (state.asking !== null) return state;
+        // Mode « Devine la suite » : la question d'abord, l'étape après la réponse.
+        if (state.guess && state.index < last) return { ...state, asking: state.index + 1 };
         if (state.index < last) return { ...state, index: state.index + 1 };
         if (state.loop) return { ...state, index: 0 };
         return action.auto ? { ...state, playing: false } : state;
@@ -47,13 +56,17 @@ function makeReducer(count: number) {
         if (state.index > 0) return { ...state, index: state.index - 1 };
         return state.loop ? { ...state, index: last } : state;
       case 'goTo':
-        return { ...state, index: clamp(action.index) };
+        return { ...state, index: clamp(action.index), asking: null };
       case 'setSpeed':
         return { ...state, speed: action.speed };
       case 'setLoop':
         return { ...state, loop: action.loop };
       case 'setStory':
-        return { ...state, story: action.story };
+        return { ...state, story: action.story, guess: action.story ? false : state.guess };
+      case 'setGuess':
+        return { ...state, guess: action.guess, story: action.guess ? false : state.story, asking: null };
+      case 'answered':
+        return state.asking === null ? state : { ...state, index: state.asking, asking: null };
     }
   };
 }
@@ -74,14 +87,16 @@ export function usePlayer(stepCount: number, initialIndex = 0, stepMs?: (index: 
     speed: 1,
     loop: false,
     story: false,
+    guess: new URLSearchParams(window.location.search).get('guess') === '1',
+    asking: null,
   });
 
   // Avance automatique.
   useEffect(() => {
-    if (!state.playing || state.story) return;
+    if (!state.playing || state.story || state.asking !== null) return;
     const id = window.setTimeout(() => dispatch({ type: 'next', auto: true }), (stepMsRef.current?.(state.index) ?? BASE_STEP_MS) / state.speed);
     return () => window.clearTimeout(id);
-  }, [state.playing, state.story, state.index, state.speed]);
+  }, [state.playing, state.story, state.asking, state.index, state.speed]);
 
   // Raccourcis clavier : Espace, ←, →.
   useEffect(() => {
@@ -119,6 +134,16 @@ export function usePlayer(stepCount: number, initialIndex = 0, stepMs?: (index: 
       setSpeed: (speed: Speed) => dispatch({ type: 'setSpeed', speed }),
       setLoop: (loop: boolean) => dispatch({ type: 'setLoop', loop }),
       setStory: (story: boolean) => dispatch({ type: 'setStory', story }),
+      setGuess: (guess: boolean) => {
+        // Mémorisé dans l'URL (&guess=1), comme l'étape.
+        const url = new URL(window.location.href);
+        if (guess) url.searchParams.set('guess', '1');
+        else url.searchParams.delete('guess');
+        window.history.replaceState(null, '', url);
+        dispatch({ type: 'setGuess', guess });
+      },
+      /** Réponse donnée : l'étape visée par la question s'affiche. */
+      answered: () => dispatch({ type: 'answered' }),
     }),
     [],
   );

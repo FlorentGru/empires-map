@@ -1,0 +1,108 @@
+/* Mode « Devine la suite » (src/guess/GuessCard.tsx) : carte de question au-dessus de la frise. */
+.guess-card {
+  position: absolute;
+  z-index: 6;
+  left: 50%;
+  /* Au-dessus des boutons Quiz et Sage (≈ 56 px), qui sont posés sur la frise. */
+  bottom: calc(var(--timeline-h) + var(--gap) + 64px);
+  transform: translateX(-50%);
+  width: min(560px, calc(100vw - 32px));
+  padding: 14px 16px;
+  color: var(--ink);
+  background: var(--parchment);
+  border: 1px solid var(--parchment-edge);
+  border-top: 4px solid var(--gold);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  animation: guess-in 0.2s ease-out;
+}
+.guess-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.guess-card__badge {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+.guess-card__score {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+.guess-card__question {
+  margin: 0 0 10px;
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+.guess-card__choices {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 6px;
+}
+.guess-card__choice {
+  padding: 8px 10px;
+  font: inherit;
+  font-size: 0.88rem;
+  text-align: left;
+  color: var(--ink);
+  background: var(--parchment-strong);
+  border: 1px solid var(--parchment-edge);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.guess-card__choice:hover:not(:disabled),
+.guess-card__choice:focus-visible {
+  border-color: var(--gold);
+}
+.guess-card__choice:disabled {
+  cursor: default;
+}
+.guess-card__choice--right {
+  background: #dcebd2;
+  border-color: #3d7a3a;
+}
+.guess-card__choice--wrong {
+  background: #f1d6cf;
+  border-color: var(--accent);
+}
+.guess-card__verdict {
+  margin: 10px 0 8px;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+.guess-card__go {
+  float: right;
+}
+.guess-score {
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  bottom: calc(var(--timeline-h) + var(--gap));
+  transform: translateX(-50%);
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--gold);
+  background: var(--parchment);
+  border: 1px solid var(--parchment-edge);
+  border-radius: 999px;
+}
+.guess-btn[aria-pressed='true'] {
+  background: var(--gold);
+  border-color: var(--gold);
+}
+@keyframes guess-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 8px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .guess-card {
+    animation: none;
+  }
+}
