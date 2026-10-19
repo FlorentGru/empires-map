@@ -1,0 +1,597 @@
+[
+  {
+    "name": "Domaine royal des Shang",
+    "summary": "Le cœur de la dynastie Shang, première dynastie attestée par des textes, gravés sur os et carapaces de tortue. Le roi, à la fois chef de guerre et grand prêtre, gouverne depuis Anyang, sa capitale, dans la plaine du fleuve Jaune. Les Zhou, venus de l'ouest, renversent cette dynastie vers 1046 av. J.-C.",
+    "years": [-1250, -1250]
+  },
+  {
+    "name": "Zhou (vassaux puis rivaux)",
+    "summary": "Peuple et seigneurie de la vallée de la Wei, à l'ouest du domaine Shang. D'abord vassaux des rois Shang, les Zhou grandissent peu à peu en puissance et deviennent leurs rivaux. Ils finissent par les vaincre à Muye, vers 1046 av. J.-C., et fondent la dynastie Zhou.",
+    "years": [-1250, -1250]
+  },
+  {
+    "name": "Seigneurs vassaux des Shang",
+    "summary": "Chefs locaux et alliés qui reconnaissent l'autorité du roi Shang, dans la plaine centrale et sur ses marges. Ils fournissent des guerriers et des tributs en échange de la protection du souverain. Leur loyauté s'effrite à la fin de la dynastie, et beaucoup passent aux Zhou lors de la conquête.",
+    "years": [-1250, -1250]
+  },
+  {
+    "name": "Domaine royal des Zhou",
+    "summary": "Le domaine directement tenu par le roi des Zhou après sa victoire sur les Shang. La dynastie règne d'abord depuis la région de Hao, dans la vallée de la Wei, puis ajoute Luoyang à l'est pour surveiller la plaine centrale. Le roi distribue le reste du pays en fiefs à ses parents et alliés.",
+    "years": [-1046, -1046]
+  },
+  {
+    "name": "Fief de Jin",
+    "summary": "Fief confié à un parent du roi Zhou, sur le cours du fleuve Fen, au nord-ouest de la plaine centrale. Il fait partie des États que la dynastie installe pour tenir les territoires conquis. Jin deviendra l'un des plus puissants États du nord, avant de se démembrer.",
+    "years": [-1046, -1046]
+  },
+  {
+    "name": "Fiefs de Qi et de Lu",
+    "summary": "Fiefs établis par les Zhou dans l'est, près de la mer, pour contrôler les anciens territoires Shang. Qi est confié à Jiang Ziya, conseiller du fondateur, et Lu à la famille du duc de Zhou. Ils deviennent deux grands États de la péninsule du Shandong.",
+    "years": [-1046, -1046]
+  },
+  {
+    "name": "Fief de Yan",
+    "summary": "Fief installé par les Zhou dans le nord-est, autour de la région de l'actuelle Pékin. C'est l'un des États les plus éloignés du centre, au contact des peuples de la steppe. Il subsiste pendant toute l'époque des royaumes et sera finalement conquis par les Qin.",
+    "years": [-1046, -1046]
+  },
+  {
+    "name": "Fiefs de Wei et de Song",
+    "summary": "Fiefs placés par les Zhou dans la plaine centrale, sur d'anciennes terres Shang. Wei est confié à un frère du roi, tandis que Song, plus au sud-est, est donné à des descendants de la famille royale Shang pour que ceux-ci puissent honorer leurs ancêtres. Ces États resteront de second rang.",
+    "years": [-1046, -1046]
+  },
+  {
+    "name": "Domaine royal des Zhou (Luoyang)",
+    "summary": "Le domaine royal des Zhou après le transfert de la capitale vers l'est, à Luoyang, en 770 av. J.-C. Réduit à un petit territoire autour de la ville, le roi n'a plus qu'une autorité symbolique, car les grands fiefs agissent en États indépendants. La dynastie se maintient ainsi pendant des siècles.",
+    "years": [-770, -551]
+  },
+  {
+    "name": "Qin",
+    "summary": "État de la vallée de la Wei, établi à l'ouest, qui reprend les terres abandonnées par les Zhou. Au contact des peuples de l'Ouest, il se renforce par la guerre. Il devient plus tard le plus redoutable des États combattants, et c'est lui qui unifiera la Chine en 221 av. J.-C.",
+    "years": [-770, -260]
+  },
+  {
+    "name": "Jin",
+    "summary": "Nom porté par deux États très éloignés dans le temps. Dans l'Antiquité, Jin est un grand fief du nord, autour du bassin de la Fen, partagé en 403 av. J.-C. entre Han, Wei et Zhao. À partir de 1115, Jin est aussi la dynastie des Jürchen, qui enlève le nord de la Chine aux Song en 1127 et tombe sous les coups des Mongols en 1234.",
+    "years": [-770, 1215]
+  },
+  {
+    "name": "Qi",
+    "summary": "Puissant État de la péninsule du Shandong, au bord de la mer, dont la capitale est Linzi. Il tire sa richesse du sel et du fer, et son duc Huan fut le premier à diriger la coalition des fiefs au VIIe siècle av. J.-C. La famille Tian y prend le pouvoir au IVe siècle ; l'État est annexé par les Qin en 221 av. J.-C.",
+    "years": [-770, -260]
+  },
+  {
+    "name": "Lu et Song",
+    "summary": "Deux petits États de l'est : Lu, patrie de Confucius, dans le Shandong, et Song, plus au sud-ouest, tenu par des descendants des Shang. Ils gardent une grande réputation de culture rituelle, mais sont trop faibles pour résister à leurs puissants voisins.",
+    "years": [-770, -770]
+  },
+  {
+    "name": "Zheng et Wei",
+    "summary": "Deux petits États de la plaine centrale, proches de Luoyang. Zheng, voisin du domaine royal, joue un rôle important au début de la période, tandis que Wei, plus au nord-est, reste un État de second rang. Leur faiblesse les expose aux grands voisins, qui les absorbent ou les affaiblissent progressivement.",
+    "years": [-770, -770]
+  },
+  {
+    "name": "Yan",
+    "summary": "État du nord-est, centré sur la région de l'actuelle Pékin, où il garde la frontière contre les peuples de la steppe. Peu mêlé aux conflits du centre durant des siècles, il connaît un bref sursaut au IIIe siècle av. J.-C. Il est finalement vaincu par les Qin en 222 av. J.-C.",
+    "years": [-770, -260]
+  },
+  {
+    "name": "Chu",
+    "summary": "Grand État du moyen Yangzi, dont les souverains se proclament rois, au même titre que celui des Zhou. Il règne sur de vastes terres au sud et se tient en partie à l'écart de la culture des plaines. Il reste l'un des principaux rivaux des Qin, qui le vainquent au IIIe siècle av. J.-C.",
+    "years": [-770, -260]
+  },
+  {
+    "name": "Wu et Yue",
+    "summary": "Deux États du sud-est, au bord de l'embouchure du Yangzi, que la tradition chinoise perçoit comme à demi étrangers au monde Zhou. Wu et Yue se livrent une longue rivalité, célèbre dans les récits. Ils sont plus tard absorbés, Wu par Yue, puis Yue par Chu.",
+    "years": [-770, -770]
+  },
+  {
+    "name": "Lu",
+    "summary": "État de culture confucéenne, situé dans la péninsule du Shandong, dont Confucius est originaire. Petit et de plus en plus faible, il garde le prestige des rites hérités des Zhou. Sa capitale, Qufu, reste un lieu de mémoire du maître et de ses disciples.",
+    "years": [-551, -551]
+  },
+  {
+    "name": "Song, Zheng et Wei",
+    "summary": "Trois petits États de la plaine centrale, entourés de grands voisins comme Jin et Chu. Song, descendante des Shang, garde ses rites, tandis que Zheng et Wei tentent de jouer entre les puissances. Ils ont du mal à rester indépendants, et ils subissent souvent les guerres de leurs voisins.",
+    "years": [-551, -551]
+  },
+  {
+    "name": "Wu",
+    "summary": "Deux États portent ce nom. Dans l'Antiquité, Wu est un royaume du sud-est, près de l'actuelle Suzhou, qui menace Chu vers 500 av. J.-C. avant d'être conquis par Yue en 473 av. J.-C. Au IIIe siècle, Sun Quan reprend ce nom pour l'un des Trois Royaumes, maître du bas Yangzi depuis Jianye, jusqu'à sa conquête par les Jin en 280.",
+    "years": [-551, 220]
+  },
+  {
+    "name": "Yue",
+    "summary": "État du sud-est, autour de l'actuel Zhejiang, longtemps rival de Wu. Son roi Goujian, après une défaite célèbre, se prépare patiemment à la vengeance et conquiert Wu en 473 av. J.-C. Yue est lui-même vaincu par Chu un peu plus tard, vers 333 av. J.-C.",
+    "years": [-551, -551]
+  },
+  {
+    "name": "Zhou (roi symbolique)",
+    "summary": "Le roi des Zhou, qui n'a plus qu'un pouvoir symbolique, continue d'être reconnu comme souverain du monde chinois. Il vit sur un tout petit domaine autour de Luoyang et dépend des grands États. En 403 av. J.-C., il reconnaît officiellement les trois États nés du partage de Jin.",
+    "years": [-403, -356]
+  },
+  {
+    "name": "Han",
+    "summary": "L'un des trois États issus du partage de Jin en 403 av. J.-C., dans la région du fleuve Jaune moyen. Petit et vulnérable, il tente de se renforcer par des réformes, mais reste coincé entre ses voisins. Il est conquis par les Qin en 230 av. J.-C., premier des États vaincus.",
+    "years": [-403, -260]
+  },
+  {
+    "name": "Wei",
+    "summary": "Deux États portent ce nom. Le premier naît du partage de Jin en 403 av. J.-C., autour de la boucle du fleuve Jaune, et tombe devant les Qin en 225 av. J.-C. Le second est fondé en 220 par Cao Pi, fils de Cao Cao : c'est le plus puissant des Trois Royaumes, maître du nord depuis Luoyang, jusqu'à ce que la famille Sima le renverse en 266.",
+    "years": [-403, 220]
+  },
+  {
+    "name": "Zhao",
+    "summary": "Le troisième État issu de Jin, dans le nord, au contact de la steppe. Il y adopte la cavalerie montée, sous le roi Wuling, et devient une puissance militaire de premier plan. Sa défaite face aux Qin à Changping, en 260 av. J.-C., ouvre la voie à sa conquête.",
+    "years": [-403, -260]
+  },
+  {
+    "name": "Empire Qin",
+    "summary": "Empire unifié par Qin Shi Huang en 221 av. J.-C., après la conquête des six autres États combattants. Il impose une administration en commanderies, une écriture et des poids et mesures communs. Sa capitale est Xianyang. Sous le fils du fondateur, la dynastie s'effondre en quelques années à peine.",
+    "years": [-221, -214]
+  },
+  {
+    "name": "Empire Han (commanderies)",
+    "summary": "Les commanderies directement administrées par la cour au début de la dynastie Han, fondée par Liu Bang après sa victoire sur son rival Xiang Yu. Le pouvoir impérial s'appuie sur ce noyau, à l'ouest, autour de la capitale Chang'an. Le reste du pays est confié à des rois alliés.",
+    "years": [-202, -202]
+  },
+  {
+    "name": "Royaumes vassaux des Han",
+    "summary": "Principautés accordées par Liu Bang à ses généraux et à ses parents pour récompenser leur appui après la victoire. Elles couvrent une grande partie de l'est et du sud du pays. La cour, méfiante, élimine peu à peu les rois qui ne sont pas de la famille impériale et réduit ensuite les autres.",
+    "years": [-202, -202]
+  },
+  {
+    "name": "Empire Han",
+    "summary": "La dynastie Han à l'époque de l'empereur Wu, qui étend son autorité au nord, à l'ouest et au sud. Les commanderies remplacent presque partout les grandes principautés. La capitale est Chang'an. Les armées repoussent les Xiongnu et la diplomatie ouvre la route vers l'Asie centrale.",
+    "years": [-138, -119]
+  },
+  {
+    "name": "Nanyue (vassal)",
+    "summary": "Royaume du sud, autour de Guangzhou, fondé à la fin des Qin par un ancien général chinois, Zhao Tuo. Il garde une large autonomie et reconnaît de façon intermittente la souveraineté des Han. L'empereur Wu l'annexe en 111 av. J.-C., ce qui étend l'empire jusqu'au nord du Vietnam.",
+    "years": [-138, -138]
+  },
+  {
+    "name": "Empire Xin (Wang Mang)",
+    "summary": "Brève dynastie fondée en 9 par Wang Mang, un ministre des Han, qui prend le trône. Il tente des réformes ambitieuses, comme la redistribution des terres et la création d'une nouvelle monnaie, mais elles échouent. Les révoltes et les inondations du fleuve Jaune provoquent sa chute en 23, et les Han sont rétablis.",
+    "years": [9, 9]
+  },
+  {
+    "name": "Han orientaux",
+    "summary": "Les Han rétablis en 25 par Liu Xiu, qui installe sa capitale à Luoyang. L'empire reprend le contrôle de l'ouest et des frontières, avec l'action de généraux comme Ban Chao. Il est ensuite affaibli par les intrigues de cour entre eunuques et familles d'impératrices, puis par des révoltes.",
+    "years": [97, 184]
+  },
+  {
+    "name": "Xiongnu du Sud (vassaux)",
+    "summary": "Branche des Xiongnu installée au sud du désert de Gobi après la scission de ce peuple en 48. Ces nomades se placent sous la protection des Han, auxquels ils fournissent des cavaliers contre leurs frères du nord. Ils restent établis près de la frontière, et leur présence marque l'histoire du nord.",
+    "years": [97, 97]
+  },
+  {
+    "name": "Protectorat des Régions d'Occident",
+    "summary": "Zone de contrôle chinois sur les oasis du bassin du Tarim, sous la direction d'un protecteur général. Ban Chao, en rétablissant l'autorité des Han en Asie centrale, assure la sécurité de la route de la soie. Le protectorat décline ensuite, quand l'empire perd de sa force.",
+    "years": [97, 97]
+  },
+  {
+    "name": "Turbans jaunes (Hebei, en révolte)",
+    "summary": "Région du nord-est, dans la plaine du Hebei, touchée par le soulèvement des Turbans jaunes en 184. Cette révolte populaire, d'inspiration taoïste, est menée par Zhang Jue et mobilise des centaines de milliers de paysans. Elle est écrasée en quelques mois, mais elle ruine l'autorité des Han et donne le pouvoir aux chefs de guerre.",
+    "years": [184, 184]
+  },
+  {
+    "name": "Cao Cao (futur Wei)",
+    "summary": "Territoire tenu par le chef de guerre Cao Cao dans la plaine du nord, qui contrôle l'empereur Han et sa cour. Cao Cao prend le dessus sur ses rivaux dans le nord, mais il est arrêté à la Falaise rouge. Son fils fondera en 220 le royaume de Wei.",
+    "years": [208, 208]
+  },
+  {
+    "name": "Liu Bei (futur Shu)",
+    "summary": "Territoire de Liu Bei, parent éloigné de la famille impériale Han. Après la Falaise rouge, il s'installe dans la région du moyen Yangzi, puis prend le Sichuan en 214, qui devient la base de son pouvoir. Il fonde en 221 le royaume de Shu-Han, avec sa capitale à Chengdu.",
+    "years": [208, 208]
+  },
+  {
+    "name": "Sun Quan (futur Wu)",
+    "summary": "Territoire de Sun Quan, héritier d'un chef de guerre du sud-est, qui contrôle le cours inférieur du Yangzi. Allié de Liu Bei contre Cao Cao à la Falaise rouge, il consolide ensuite son pouvoir. Il fonde en 229 le royaume de Wu, avec sa capitale à Jianye.",
+    "years": [208, 208]
+  },
+  {
+    "name": "Shu-Han",
+    "summary": "L'un des Trois Royaumes, fondé par Liu Bei dans le Sichuan, qui se présente comme le continuateur de la dynastie Han. Sa capitale est Chengdu. Son premier ministre Zhuge Liang mène plusieurs expéditions contre le Wei. Le royaume est conquis par les Wei en 263.",
+    "years": [220, 220]
+  },
+  {
+    "name": "Jin occidentaux",
+    "summary": "Dynastie fondée en 266 par Sima Yan, un général du Wei, qui renverse la maison de Cao. Elle conquiert le royaume de Wu en 280 et réunifie le pays, avec une capitale à Luoyang. L'unité reste fragile : les querelles entre princes de la famille impériale font éclater de graves troubles.",
+    "years": [280, 280]
+  },
+  {
+    "name": "Han-Zhao (Xiongnu)",
+    "summary": "L'un des premiers États fondés par un peuple non chinois dans le nord, créé par Liu Yuan, un chef des Xiongnu qui prend le titre de roi. Ses armées s'emparent de Luoyang en 311, puis de Chang'an en 316, ce qui détruit les Jin occidentaux. L'État est ensuite détruit en 329 par Shi Le.",
+    "years": [311, 311]
+  },
+  {
+    "name": "Zhao postérieur",
+    "summary": "État fondé dans le nord par Shi Le, un chef d'origine jie, qui renverse le Han-Zhao vers 329. Il domine alors la plaine du fleuve Jaune pendant une vingtaine d'années. Après la mort de ses fondateurs, les luttes pour le pouvoir le ruinent et il disparaît en 351.",
+    "years": [311, 311]
+  },
+  {
+    "name": "Dai (Tuoba)",
+    "summary": "Royaume des Tuoba, peuple d'origine xianbei établi dans le nord du Shanxi actuel. Il se place d'abord sous la protection des Jin. Après la chute du Qin antérieur en 383, les Tuoba rétablissent leur puissance et fondent en 386 le royaume de Wei du Nord.",
+    "years": [311, 383]
+  },
+  {
+    "name": "Yan (Murong)",
+    "summary": "Royaume fondé par la famille Murong, de la même origine xianbei, dans le nord-est. Plusieurs États successifs portent ce nom : on parle de Yan antérieur, postérieur, occidental et méridional. Ils jouent un rôle important au IVe siècle, mais disparaissent à tour de rôle, vaincus par leurs voisins.",
+    "years": [311, 311]
+  },
+  {
+    "name": "Liang antérieur",
+    "summary": "État du Gansu, dans le corridor du Hexi, tenu par des gouverneurs chinois. Il garde la route de la soie entre le cœur de la Chine et l'Asie centrale. Plusieurs États portent le nom de Liang durant cette période. Celui-ci est absorbé par le Qin antérieur en 376.",
+    "years": [311, 311]
+  },
+  {
+    "name": "Cheng-Han",
+    "summary": "État fondé au Sichuan par des Di, un peuple de l'ouest, qui prend le pouvoir dans la région. Il se maintient de 304 à 347. Il est ensuite conquis par les Jin orientaux, qui rattachent le Sichuan à leur territoire.",
+    "years": [311, 311]
+  },
+  {
+    "name": "Jin orientaux",
+    "summary": "Dynastie des Jin, relevée au sud après la chute de Luoyang et de Chang'an. Sa capitale est Jiankang, près de l'actuelle Nankin. Elle règne sur le sud du Yangzi, soutenue par les grandes familles de l'élite venues du nord. Elle repousse l'offensive du Qin antérieur en 383, puis tombe en 420.",
+    "years": [311, 383]
+  },
+  {
+    "name": "Qin antérieur",
+    "summary": "État du nord fondé par un chef di de la famille Fu, qui réunifie le nord du pays au IVe siècle sous le règne de Fu Jian. Sa capitale est Chang'an. Fu Jian tente ensuite de conquérir le sud, mais sa défaite à la rivière Fei, en 383, provoque l'effondrement de son État.",
+    "years": [383, 383]
+  },
+  {
+    "name": "Bassin du Tarim (Qin antérieur)",
+    "summary": "Oasis du Tarim passées sous la suzeraineté du Qin antérieur, quand ce dernier étend son influence vers l'ouest. Elles dépendent de la dynastie nomade du nord, par l'intermédiaire d'expéditions militaires. Ce contrôle disparaît très vite avec l'effondrement du Qin antérieur.",
+    "years": [383, 383]
+  },
+  {
+    "name": "Wei du Nord",
+    "summary": "Dynastie fondée par les Tuoba, peuple xianbei, qui réunifie le nord du pays en 439. Elle règne d'abord depuis Pingcheng, puis déplace sa capitale à Luoyang vers 494. Les souverains encouragent la sinisation de la cour, avec l'empereur Xiaowen, et développent le bouddhisme, qui laisse de grands sanctuaires.",
+    "years": [439, 494]
+  },
+  {
+    "name": "Liu Song (Song du Sud)",
+    "summary": "Première dynastie du sud après la chute des Jin orientaux, fondée en 420 par Liu Yu. Sa capitale est Jiankang. Elle règne sur le sud du Yangzi, face aux Wei du Nord qui dominent le nord depuis 439. Affaiblie par les querelles internes, elle s'efface en 479, remplacée par les Qi du Sud.",
+    "years": [439, 439]
+  },
+  {
+    "name": "Qi du Sud",
+    "summary": "Deuxième dynastie du sud, qui succède aux Song en 479 et dure jusqu'en 502. Sa capitale est Jiankang. Le pouvoir y est instable, avec de nombreux coups d'État entre membres de la famille régnante. Elle est remplacée par les Liang, qui prolongent la tradition des dynasties du Sud.",
+    "years": [494, 494]
+  },
+  {
+    "name": "Empire Sui",
+    "summary": "Dynastie qui réunifie le pays en 589 en annexant les Chen du sud, après trois siècles et demi de division. Elle construit le Grand Canal pour relier le nord au sud, et déploie de lourdes expéditions contre le Goguryeo. Épuisée, elle s'effondre en 618, après la mort de l'empereur Yang.",
+    "years": [589, 612]
+  },
+  {
+    "name": "Turcs orientaux (tributaires)",
+    "summary": "Confédération nomade de la steppe au nord de la Chine, issue de la scission du premier empire turc en 583. Les Sui exploitent leurs divisions et concluent avec eux des mariages diplomatiques, ce qui les place dans une relation de dépendance. Ils retrouvent leur force à la fin des Sui, quand l'empire s'effondre.",
+    "years": [605, 612]
+  },
+  {
+    "name": "Tang",
+    "summary": "Dynastie fondée en 618 par Li Yuan, un gouverneur du nord qui s'empare de Chang'an. Elle vainc ses rivaux, puis étend son autorité jusqu'en Asie centrale. Sous Taizong, la cour établit une administration efficace. La dynastie atteint son apogée au VIIIe siècle, avant la révolte d'An Lushan en 755.",
+    "years": [618, 755]
+  },
+  {
+    "name": "Zheng (Wang Shichong)",
+    "summary": "Régime fondé à Luoyang par Wang Shichong, un général des Sui, qui se proclame empereur en 619, après avoir écarté un successeur de l'empereur Yang. Il rivalise avec les Tang pour le contrôle de la plaine du nord. Vaincu par Li Shimin en 621, il est assassiné peu après.",
+    "years": [618, 618]
+  },
+  {
+    "name": "Xia (Dou Jiande)",
+    "summary": "Régime fondé par Dou Jiande, un chef rebelle du Hebei, qui se proclame roi de Xia en 618. Il domine une partie de la plaine du nord et vient au secours de Wang Shichong. Capturé en 621 par Li Shimin à Hulao, il est exécuté par les Tang.",
+    "years": [618, 618]
+  },
+  {
+    "name": "Liang (Liang Shidu)",
+    "summary": "Régime tenu par Liang Shidu, un chef rebelle de la région d'Ordos, dans le nord-ouest, qui se proclame empereur en 617. Il s'appuie sur les Turcs orientaux, et leur soutien lui permet de survivre un temps. Il est vaincu par les Tang en 628.",
+    "years": [618, 618]
+  },
+  {
+    "name": "Qin occidental",
+    "summary": "Régime fondé par Xue Ju, un chef rebelle du Gansu, qui prend le titre d'empereur en 617. Il meurt en 618 et son fils Xue Rengao lui succède, mais celui-ci est vaincu par Li Shimin la même année. Les Tang prennent alors tout l'ouest.",
+    "years": [618, 618]
+  },
+  {
+    "name": "Chu (Yangzi)",
+    "summary": "Régime de Lin Shihong, chef rebelle qui se proclame empereur de Chu en 616, dans la région du lac Poyang, et domine une partie du sud du Yangzi pendant l'effondrement des Sui. Affaibli par ses rivaux, il disparaît vers 622, et les Tang rattachent le sud à leur empire.",
+    "years": [618, 618]
+  },
+  {
+    "name": "Turcs orientaux (protectorat d'Anyang)",
+    "summary": "Zone des steppes du nord tenue par les Turcs orientaux, dont le khagan Jieli est vaincu et capturé par les armées tang en 630. L'empereur Taizong y établit un contrôle militaire et reçoit le titre de Khagan céleste. De nombreux Turcs sont installés le long de la frontière au service des Tang.",
+    "years": [630, 630]
+  },
+  {
+    "name": "Tuyuhun (vassal)",
+    "summary": "Royaume d'origine xianbei établi autour du Qinghai, qui domine des populations tibétaines et qiang. Vaincu par les Tang en 635, son souverain devient un vassal de la cour de Chang'an, qui lui accorde un titre royal. Le royaume reste sous influence chinoise jusqu'à sa chute devant les Tibétains, vers 663.",
+    "years": [630, 645]
+  },
+  {
+    "name": "Protectorat d'Annan",
+    "summary": "Poste de gouvernement militaire créé par les Tang pour tenir le nord du Vietnam actuel, l'ancien Jiaozhi, avec Songping pour centre. Les gouverneurs chinois y administrent des populations vietnamiennes. Il reste intégré à l'empire tang jusqu'à la fin de la dynastie, puis le Vietnam devient indépendant au Xe siècle.",
+    "years": [630, 751]
+  },
+  {
+    "name": "Turcs orientaux (soumis)",
+    "summary": "Zone des Turcs orientaux soumise aux Tang après 630 et maintenue dans leur orbite. Les chefs turcs servent comme alliés et généraux dans les campagnes de l'empereur Taizong, notamment sur les frontières du nord et de l'ouest. Cette dépendance dure jusqu'à la révolte turque de la fin du VIIe siècle, qui refonde un khaganat.",
+    "years": [645, 645]
+  },
+  {
+    "name": "Protectorat d'Anxi",
+    "summary": "Gouvernement militaire créé par les Tang en 640 après la conquête de Gaochang, puis transféré à Kucha, à l'ouest du Xinjiang actuel. Il contrôle des royaumes d'oasis tributaires sur la route de la soie. Frontière disputée, notamment par les Tibétains, il est abandonné dans la seconde moitié du VIIIe siècle.",
+    "years": [645, 751]
+  },
+  {
+    "name": "Silla (vassal des Tang)",
+    "summary": "Royaume de la péninsule coréenne qui s'allie aux Tang et accepte leur suzeraineté nominale. Avec leur aide, il écrase Baekje en 660 et Goguryeo en 668, puis chasse les troupes chinoises et unifie la péninsule. Silla reste ensuite un État tributaire de la Chine jusqu'à son effondrement au Xe siècle.",
+    "years": [645, 645]
+  },
+  {
+    "name": "Zhou (Wu Zetian)",
+    "summary": "Nom du régime fondé en 690 par Wu Zetian, qui prend le titre d'empereur et remplace la dynastie Tang par sa propre dynastie Zhou. Sa capitale est Luoyang, et c'est la seule fois où une femme règne en titre d'empereur. En 705, les Tang sont restaurés et Wu Zetian abdique.",
+    "years": [690, 690]
+  },
+  {
+    "name": "Protectorat de Beiting",
+    "summary": "Gouvernement militaire tang qui contrôle la région au nord des monts Tian, autour de Beiting près de l'actuelle Jimsar, dans le Xinjiang. Il surveille les Turcs de l'ouest et les routes de la soie du nord. Il est affaibli après les défaites de 751 et la guerre civile, puis passe aux Tibétains.",
+    "years": [751, 751]
+  },
+  {
+    "name": "Nanzhao (vassal)",
+    "summary": "Royaume de l'actuel Yunnan, dirigé par le clan Meng, que les Tang soutiennent d'abord comme vassal contre les Tibétains. Il se retourne contre eux et bat leurs armées en 751 et 754, ce qui en fait un rival du sud-ouest. Il disparaît en 902, et le royaume de Dali lui succède en 937.",
+    "years": [751, 751]
+  },
+  {
+    "name": "Silla (vassal)",
+    "summary": "Royaume coréen unifié, vassal des Tang et allié de longue date de la Chine. Son souverain envoie régulièrement des tributs et des étudiants à la cour de Chang'an. Au VIIIe siècle, Silla est à son apogée culturelle, avec une capitale à Gyeongju, avant de s'affaiblir à la fin du IXe siècle.",
+    "years": [751, 751]
+  },
+  {
+    "name": "Yan (An Lushan)",
+    "summary": "Régime proclamé en 755 par An Lushan, général tang d'origine sogdienne et turque, qui prend le titre d'empereur de Yan à Luoyang. Sa rébellion ébranle les Tang et ravage le nord. An Lushan est assassiné en 757, et la révolte s'achève en 763 avec l'aide des Ouïgours.",
+    "years": [755, 755]
+  },
+  {
+    "name": "Liang postérieurs",
+    "summary": "Dynastie fondée en 907 par Zhu Wen, ancien rebelle devenu général tang, qui dépose le dernier empereur et s'installe à Kaifeng. Première des Cinq Dynasties du nord, elle ne contrôle que le bassin du Fleuve Jaune. Elle est renversée en 923 par les Tang postérieurs de Li Cunxu.",
+    "years": [907, 907]
+  },
+  {
+    "name": "Jin (Li Keyong)",
+    "summary": "Territoire de Li Keyong, chef turc shatuo du Shanxi, qui reste fidèle aux Tang et combat Zhu Wen. Sa capitale est Taiyuan. Son fils Li Cunxu fonde en 923 les Tang postérieurs et renverse les Liang postérieurs, héritant de la rivalité entre les deux maisons.",
+    "years": [907, 907]
+  },
+  {
+    "name": "Qi (Fengxiang)",
+    "summary": "Principauté militaire de Li Maozhen, gouverneur de Fengxiang dans l'actuel Shaanxi, qui se maintient face aux Liang. Elle reste un État satellite autour de la vallée de la Wei. Li Maozhen se soumet aux Tang postérieurs en 924 et meurt la même année ; son territoire est alors absorbé.",
+    "years": [907, 907]
+  },
+  {
+    "name": "Shu antérieur",
+    "summary": "Royaume du Sichuan fondé en 907 par Wang Jian, ancien général tang qui se proclame empereur à Chengdu. Il profite de l'isolement du bassin pour prospérer et abriter de nombreux lettrés. Son fils est vaincu par les Tang postérieurs en 925, mais le Sichuan reste un centre de pouvoir.",
+    "years": [907, 907]
+  },
+  {
+    "name": "Jingnan",
+    "summary": "Petit royaume du moyen Yangzi, autour de Jingzhou, dirigé par la famille Gao. Il reste un État vassal, entre ses puissants voisins, en changeant d'allégeance selon les dynasties du nord. Il est absorbé par les Song en 963, lors de leur conquête du sud, ce qui met fin à son indépendance.",
+    "years": [907, 960]
+  },
+  {
+    "name": "Chu (Ma)",
+    "summary": "Royaume du Hunan fondé par Ma Yin, qui domine la région de Changsha. Il est d'abord vassal des dynasties du nord, puis connaît des luttes de succession dans la famille Ma. Il est annexé par les Tang du Sud en 951, avant de passer à d'autres mains.",
+    "years": [907, 936]
+  },
+  {
+    "name": "Wuyue",
+    "summary": "Royaume du Zhejiang fondé par Qian Liu, avec Hangzhou comme capitale. Il reste fidèle aux dynasties du nord et évite presque toute guerre, ce qui lui assure prospérité et paix. Le dernier roi, Qian Chu, se soumet de lui-même aux Song en 978.",
+    "years": [907, 960]
+  },
+  {
+    "name": "Wu (Yangzhou)",
+    "summary": "Royaume du bas Yangzi, autour de Yangzhou, dirigé par Yang Xingmi puis sa famille. Il est actif contre les Liang et domine le Jiangsu et l'Anhui. Il est remplacé en 937 par les Tang du Sud, quand le général Xu Zhigao prend le pouvoir.",
+    "years": [907, 907]
+  },
+  {
+    "name": "Min",
+    "summary": "Royaume du Fujian fondé par Wang Shenzhi, qui contrôle la côte et le commerce maritime depuis Fuzhou. Le pouvoir de la famille Wang se déchire par luttes internes dans les années 940. Le royaume est détruit en 945 par les Tang du Sud ; la région, partagée entre ses voisins, ne revient aux Song qu'en 978.",
+    "years": [907, 936]
+  },
+  {
+    "name": "Nanhan (Canton)",
+    "summary": "Territoire du Guangdong tenu par la famille Liu, d'abord gouverneurs tang, avec Canton pour centre. Liu Yan y proclame en 917 un royaume, bientôt appelé Han, et profite du commerce maritime du sud. Il devient le Han du Sud, conquis par les Song en 971.",
+    "years": [907, 907]
+  },
+  {
+    "name": "Tanguts",
+    "summary": "Peuple d'origine tibétaine installé au nord-ouest, dans la région de l'Ordos et du Ningxia actuels. Sous la direction de la famille Li, ils se rendent maîtres de leur territoire entre les Tang et les Song. Ils s'allient puis s'opposent aux Khitans et à la Chine, et fonderont plus tard les Xia occidentaux.",
+    "years": [936, 960]
+  },
+  {
+    "name": "Jin postérieurs",
+    "summary": "Dynastie fondée en 936 par Shi Jingtang, avec l'aide des Khitans, à qui il cède les seize préfectures du nord. Elle règne depuis Kaifeng et se soumet à la Liao comme à un suzerain. Son successeur se rebelle contre les Khitans, qui détruisent le régime en 947.",
+    "years": [936, 936]
+  },
+  {
+    "name": "Liao (Khitans)",
+    "summary": "Empire des Khitans, peuple nomade du nord-est qui adopte un système mixte, et qui reçoit en 936 les seize préfectures cédées par les Jin postérieurs. Rival des Song, avec lesquels il signe le traité de Shanyuan en 1005, il fait de Pékin sa capitale du sud. Les Jurchens détruisent la Liao vers 1125.",
+    "years": [936, 1069]
+  },
+  {
+    "name": "Tang du Sud",
+    "summary": "Royaume fondé à Nankin en 937 par Xu Zhigao (Li Bian), successeur du Wu. Il est l'un des États les plus riches et cultivés du sud, célèbre pour sa poésie et ses arts. Il est affaibli par les Zhou postérieurs, puis soumis aux Song en 975.",
+    "years": [936, 960]
+  },
+  {
+    "name": "Shu postérieur",
+    "summary": "Royaume du Sichuan fondé en 934 par Meng Zhixiang, ancien général des Tang postérieurs, avec Chengdu pour capitale. Il continue le rôle culturel du Shu antérieur, avec des lettrés et des poètes. Il est conquis en 965 par les Song, qui s'emparent de ses trésors.",
+    "years": [936, 960]
+  },
+  {
+    "name": "Han du Sud (Canton)",
+    "summary": "Royaume du Guangdong et du Guangxi, avec Canton pour capitale, qui prospère grâce au commerce maritime et à l'ouverture sur l'océan Indien. Il est dirigé par la famille Liu. Il tombe en 971 devant les Song, à la suite d'une campagne méthodique.",
+    "years": [936, 960]
+  },
+  {
+    "name": "Song",
+    "summary": "Dynastie fondée en 960 par Zhao Kuangyin, général des Zhou postérieurs, proclamé empereur à Kaifeng après un coup d'État militaire. Il devient l'empereur Taizu. Les Song réunifient peu à peu la Chine, mais sans reprendre les seize préfectures aux Khitans.",
+    "years": [960, 960]
+  },
+  {
+    "name": "Han du Nord",
+    "summary": "Royaume fondé en 951 par Liu Min dans le Shanxi, à Taiyuan, après la chute des Han postérieurs. Soutenu par les Khitans, il résiste longtemps aux Song. C'est le dernier État des Dix Royaumes ; il est conquis en 979 par l'empereur Taizong.",
+    "years": [960, 960]
+  },
+  {
+    "name": "Chu (Zhou Xing)",
+    "summary": "Principauté militaire du Hunan, dirigée par des chefs de la famille Zhou, apparue après la chute du royaume de Chu des Ma. Elle apparaît dans le chaos des Cinq Dynasties, quand le centre-sud change vite de maître. Les Song l'annexent en 963.",
+    "years": [960, 960]
+  },
+  {
+    "name": "Song du Nord",
+    "summary": "Nom des Song dans leur première période, avec Kaifeng pour capitale, avant la perte du nord. Les Song du Nord se distinguent par l'essor économique, l'imprimerie et la poudre. Ils paient un tribut annuel aux Liao puis aux Xia, et tombent devant les Jurchens en 1127.",
+    "years": [1005, 1069]
+  },
+  {
+    "name": "Tanguts (futurs Xia occidentaux)",
+    "summary": "Peuple tangut du nord-ouest, dirigé par Li Jiqian puis par ses héritiers, qui se constitue en puissance autonome face aux Song. Il combat pour le contrôle de l'Ordos. Il prépare l'État fondé en 1038 par Li Yuanhao.",
+    "years": [1005, 1005]
+  },
+  {
+    "name": "Xia occidentaux (Tanguts)",
+    "summary": "Empire fondé en 1038 par Li Yuanhao, qui prend le titre d'empereur dans la région du Gansu et de l'Ordos, avec Xingqing comme capitale. Après des guerres avec les Song, il obtient en 1044 des présents annuels de leur part, tout en restant en tension avec les Liao. Il adopte une écriture propre et sera détruit par les Mongols en 1227.",
+    "years": [1038, 1142]
+  },
+  {
+    "name": "Jin (Jurchens)",
+    "summary": "Dynastie des Jurchens, peuple de Mandchourie, qui renverse les Liao en 1125 puis prend Kaifeng en 1127, capturant l'empereur Song. Elle domine le nord de la Chine. Après le traité de Shaoxing de 1142, la Jin devient suzeraine des Song du Sud.",
+    "years": [1127, 1142]
+  },
+  {
+    "name": "Song du Sud",
+    "summary": "Régime des Song qui se reforme au sud du Yangzi après 1127, sous Gaozong, avec Hangzhou comme capitale. Ils perdent le nord mais conservent les régions les plus riches, et développent le commerce maritime et la marine. Ils sont conquis par les Mongols, qui achèvent leur chute en 1279.",
+    "years": [1127, 1275]
+  },
+  {
+    "name": "Xia occidentaux (vassaux des Mongols)",
+    "summary": "Royaume tangut qui se soumet aux Mongols après les campagnes de Gengis Khan à partir de 1209, et fournit un tribut et des troupes. Il garde un temps un statut de vassal. Il est finalement détruit en 1227, et Gengis Khan meurt pendant cette campagne.",
+    "years": [1215, 1215]
+  },
+  {
+    "name": "Empire mongol",
+    "summary": "Empire de Gengis Khan, qui conquiert le nord de la Chine contre les Jin. La prise de Zhongdu, l'actuel Pékin, en 1215 marque un tournant, et la cour jin se replie à Kaifeng. Le nord est ensuite achevé par Ögödei en 1234, et l'empire se divise.",
+    "years": [1215, 1215]
+  },
+  {
+    "name": "Empire mongol (Yuan)",
+    "summary": "Territoire de l'empire mongol dirigé par Kubilai, qui s'est proclamé khagan en 1260 et transfère la capitale à Dadu (Pékin). Il lutte contre les Song du Sud, dont le siège de Xiangyang est la clé. Il fonde la dynastie Yuan en 1271.",
+    "years": [1268, 1275]
+  },
+  {
+    "name": "Tibet (vassal)",
+    "summary": "Région tibétaine qui se soumet aux Mongols au XIIIe siècle et reste liée à la Chine impériale. Sous les Yuan, elle est gouvernée par des lamas de l'école Sakya, avec un statut de dépendance. Sous les Qing, à partir de 1720, les Mandchous y installent des résidents impériaux, d'où une tutelle plus étroite.",
+    "years": [1268, 1759]
+  },
+  {
+    "name": "Corée (Goryeo, vassale)",
+    "summary": "Royaume de Corée dirigé par la dynastie Wang, soumis aux Mongols après de longues guerres et alliance par mariage avec la famille de Kubilai. Il fournit des navires et des troupes pour les invasions du Japon de 1274 et 1281. Il garde son trône, mais sous forte influence mongole.",
+    "years": [1268, 1281]
+  },
+  {
+    "name": "Empire Yuan",
+    "summary": "Dynastie mongole de Chine, proclamée par Kubilai en 1271, qui achève la conquête des Song du Sud à Yamen en 1279. Sa capitale est Dadu. Les Yuan lancent des expéditions contre le Japon, qui échouent en 1274 et 1281. Ils sont chassés par les Ming en 1368.",
+    "years": [1279, 1281]
+  },
+  {
+    "name": "Empire Ming",
+    "summary": "Dynastie fondée par Zhu Yuanzhang en 1368, après l'expulsion des Mongols. Elle gouverne d'abord depuis Nankin, puis depuis Pékin à partir de 1421. Ses expéditions maritimes, la Grande Muraille et la Cité interdite sont ses marques. Elle s'effondre en 1644, quand les rebelles de Li Zicheng prennent Pékin, aussitôt suivis par les Mandchous.",
+    "years": [1368, 1619]
+  },
+  {
+    "name": "Tibet (nominalement vassal)",
+    "summary": "Région tibétaine que les Ming considèrent comme nominalement soumise, dans la continuité des Yuan. Leur autorité y reste en pratique faible et symbolique. Ils accordent surtout des titres honorifiques aux chefs religieux et aux lignages locaux.",
+    "years": [1368, 1368]
+  },
+  {
+    "name": "Jurchens de Mandchourie (protectorat)",
+    "summary": "Peuple de Mandchourie, où les Ming établissent des postes de contrôle pour surveiller les chefs jurchens. Ces chefs reçoivent des titres et des cadeaux en échange d'une allégeance officielle. Vers 1600, Nurhaci les unifie, et ils deviennent les Mandchous, rivaux des Ming.",
+    "years": [1421, 1421]
+  },
+  {
+    "name": "Tibet (influence ming)",
+    "summary": "Région tibétaine où les Ming exercent une influence limitée en accordant des titres aux lamas, ce qui entretient des relations de tribut. Ils ne l'administrent pas directement. Le pouvoir réel appartient aux grands monastères et aux lignages locaux.",
+    "years": [1421, 1421]
+  },
+  {
+    "name": "Jin postérieurs (Nurhaci)",
+    "summary": "Régime fondé en 1616 par Nurhaci, chef jurchen qui unifie les clans de Mandchourie, d'où son nom de Jin postérieurs. Sa capitale est d'abord Hetu Ala, puis Liaoyang et Shenyang. Sa victoire de Sarhu sur les Ming en 1619 ouvre la voie aux conquêtes. Son fils Hong Taiji le renomme Qing en 1636.",
+    "years": [1619, 1619]
+  },
+  {
+    "name": "Qing (Mandchous)",
+    "summary": "Dynastie mandchoue (nommée Qing en 1636) qui, appelée par Wu Sangui, franchit la Grande Muraille à Shanhaiguan en 1644 et s'empare de Pékin. Elle succède aux Ming. Le premier empereur à Pékin est Shunzhi. Il faut ensuite quarante ans pour pacifier tout le sud.",
+    "years": [1644, 1644]
+  },
+  {
+    "name": "Shun (Li Zicheng)",
+    "summary": "Régime éphémère de Li Zicheng, chef rebelle qui prend Pékin en avril 1644, causant le suicide du dernier empereur ming. Il se proclame empereur de la dynastie Shun. Vaincu à Shanhaiguan par Wu Sangui et les Mandchous, il perd la capitale et disparaît en 1645.",
+    "years": [1644, 1644]
+  },
+  {
+    "name": "Xi (Zhang Xianzhong)",
+    "summary": "Régime fondé par Zhang Xianzhong, chef rebelle qui se proclame roi, puis empereur, à Chengdu, dans le Sichuan, en 1644. Le pays subit de lourdes pertes sous son règne. Il est tué par les Qing en 1647.",
+    "years": [1644, 1644]
+  },
+  {
+    "name": "Ming du Sud",
+    "summary": "Cours ming de survivance qui se forme au sud après la chute de Pékin. Plusieurs princes, dont celui de Fu à Nankin, puis ceux de Tang et de Gui, y prétendent au trône. Divisés, ils reculent vers le sud-ouest. Le dernier, Yongli, est capturé en 1662, et la famille de Zheng Chenggong tient Taïwan jusqu'en 1683.",
+    "years": [1644, 1644]
+  },
+  {
+    "name": "Mongols du Sud (soumis ou alliés)",
+    "summary": "Princes mongols du sud et de l'est qui se rangent aux côtés des Mandchous, dès avant 1644, par des alliances matrimoniales et militaires. Ils fournissent des cavaliers aux Qing. Leur pays devient ensuite la Mongolie intérieure, gouvernée par un système de bannières.",
+    "years": [1644, 1644]
+  },
+  {
+    "name": "Joseon (Corée, vassal des Qing)",
+    "summary": "Royaume de Corée qui subit l'invasion mandchoue de 1636 et devient tributaire des Qing après avoir été longtemps fidèle aux Ming. Sa dynastie Yi reste en place et conserve son autonomie. Il continue ses relations de tribut avec Pékin jusqu'à la fin du XIXe siècle.",
+    "years": [1644, 1644]
+  },
+  {
+    "name": "Empire Qing",
+    "summary": "Empire de la dynastie mandchoue, dont le territoire s'étend sous Kangxi, Yongzheng et Qianlong, avec Taïwan, le Tibet, la Mongolie et le Xinjiang. Au XIXe siècle, les guerres de l'opium, la révolte des Taiping et les traités inégaux l'affaiblissent gravement. La défaite de 1895 et la crise des Boxers de 1900 prolongent le déclin.",
+    "years": [1683, 1900]
+  },
+  {
+    "name": "Joseon (Corée, vassal)",
+    "summary": "Royaume de Corée, vassal des Qing, qui envoie régulièrement des ambassades à Pékin et reçoit en retour l'investiture de ses rois. Il garde son administration et sa dynastie Yi. Il reste fermé aux étrangers jusqu'aux années 1870, et la Chine perd son rôle en 1895.",
+    "years": [1759, 1759]
+  },
+  {
+    "name": "Tibet (protégé)",
+    "summary": "Région tibétaine placée sous protection des Qing, qui y maintiennent des résidents impériaux (ambans) et une garnison. Le dalaï-lama gère les affaires courantes. Cette protection s'affaiblit au XIXe siècle, avec les pressions britanniques, et le Tibet connaît une autonomie croissante.",
+    "years": [1793, 1895]
+  },
+  {
+    "name": "Royaume céleste des Taiping",
+    "summary": "État rebelle fondé par Hong Xiuquan, qui se croit le frère cadet de Jésus et proclame le Royaume céleste de la Grande Paix. Il prend Nankin en 1853 et en fait sa capitale. La guerre fait des millions de morts. Les Qing, aidés par des armées régionales, reprennent Nankin en 1864.",
+    "years": [1853, 1861]
+  },
+  {
+    "name": "Mongolie (nominalement qing)",
+    "summary": "Territoire de Mongolie extérieure et intérieure, sous domination mandchoue depuis le XVIIe siècle, mais où l'autorité des Qing s'affaiblit. Les princes gardent une large autonomie. La Mongolie extérieure proclame son indépendance en 1911.",
+    "years": [1900, 1900]
+  },
+  {
+    "name": "Tibet (nominalement qing)",
+    "summary": "Région tibétaine dont la soumission aux Qing n'est plus guère que nominale à la fin du XIXe siècle. Le dalaï-lama agit avec une autonomie croissante, tandis que les Britanniques et les Russes s'y intéressent. Le Tibet proclame son indépendance de fait en 1913, après la chute de l'empire.",
+    "years": [1900, 1900]
+  },
+  {
+    "name": "République de Chine",
+    "summary": "Régime fondé le 1er janvier 1912 à Nankin par Sun Yat-sen après la révolution Xinhai, qui met fin à la monarchie. L'empereur Puyi abdique en février, et le pouvoir passe à Yuan Shikai, à Pékin. La jeune république est vite menacée par les seigneurs de la guerre.",
+    "years": [1912, 1912]
+  }
+]

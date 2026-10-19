@@ -9,8 +9,8 @@ const words = (s: string) => s.trim().split(/\s+/).length;
 const withRegions = empireIds().filter((id) => exists(join(DATA, 'empires', id, 'regions.json')));
 
 describe('regions.json', () => {
-  it('existe pour au moins un empire', () => {
-    expect(withRegions.length).toBeGreaterThan(0);
+  it('existe pour chaque empire', () => {
+    expect(withRegions).toEqual(empireIds());
   });
 
   describe.each(withRegions)('%s', (empire) => {
