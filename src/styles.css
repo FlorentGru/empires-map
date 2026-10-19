@@ -2700,3 +2700,64 @@ kbd {
   color: var(--ink-soft);
   background: var(--parchment);
 }
+
+/* ---------- Grande année de l'étape, en haut au centre de la carte (src/panels/StepDate.tsx) ---------- */
+.step-date {
+  position: absolute;
+  z-index: 2;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px 22px 6px;
+  color: var(--ink);
+  background: rgba(244, 234, 211, 0.94);
+  border: 1px solid var(--parchment-edge);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  pointer-events: none;
+  transition:
+    top 0.2s ease,
+    left 0.2s ease;
+}
+.step-date__label {
+  max-width: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font: italic 0.82rem/1.1 var(--font-serif);
+  color: var(--ink-soft);
+}
+.step-date__value {
+  font: 700 2.3rem/1.05 var(--font-serif);
+  color: var(--accent);
+  white-space: nowrap;
+  animation: step-date-in 0.25s ease-out;
+}
+@keyframes step-date-in {
+  from {
+    opacity: 0.35;
+    transform: translateY(-2px);
+  }
+}
+.step-date__apogee {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+@media (max-width: 767px) {
+  .step-date {
+    padding: 2px 14px 4px;
+  }
+  .step-date__value {
+    font-size: 1.5rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .step-date {
+    transition: none;
+  }
+  .step-date__value {
+    animation: none;
+  }
+}

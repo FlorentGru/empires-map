@@ -12,7 +12,9 @@ import { EventPanel } from './panels/EventPanel';
 import { readUrlState, writeUrlState } from './player/urlState';
 import { BASE_STEP_MS, usePlayer } from './player/usePlayer';
 import { battleStepMs } from './lib/march';
-import { chapterAt } from './lib/periods';
+import { chapterAt, periodIndexAt } from './lib/periods';
+import { apogeeStepId } from './lib/apogee';
+import { StepDate } from './panels/StepDate';
 import { useStory } from './story/useStory';
 import { Timeline } from './timeline/Timeline';
 import { GuessCard } from './guess/GuessCard';
@@ -408,6 +410,13 @@ function Atlas({
         speed={player.speed}
       />
 
+      {step && (
+        <StepDate
+          year={step.year}
+          label={empire.periods?.[periodIndexAt(empire.periods, step.year)]?.name ?? empire.name}
+          apogee={step.id === apogeeStepId(empire)}
+        />
+      )}
       <div className="top-bar">
         <EmpirePicker
           empires={EMPIRE_INDEX}
