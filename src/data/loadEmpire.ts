@@ -3,6 +3,7 @@ import INDEX from 'virtual:empire-index';
 import type { ContemporaryProperties, DiffKind, MorphProperties, Empire, EmpireMeta, EmpireStats, NeighborProperties, TerritoryProperties, TimelineStep } from '../types';
 import { labelPointsOf } from './labelPoints';
 import { loadInventions } from './loadInventions';
+import { loadRegions } from './loadRegions';
 
 export type TerritoryCollection = FeatureCollection<Polygon | MultiPolygon, TerritoryProperties>;
 
@@ -48,6 +49,7 @@ export function loadEmpire(id: string): Promise<Empire> {
         loaders[`../../data/empires/${key}/timeline.json`]!(),
         statsLoaders[`../../data/empires/${key}/stats.json`]?.() ?? Promise.resolve(undefined),
         loadInventions(key),
+        loadRegions(key),
       ]);
       const steps = [...(empire.steps ?? [])].sort((a, b) => a.year - b.year);
       const full: Empire = { ...empire, steps, stats: empire.stats ?? stats };

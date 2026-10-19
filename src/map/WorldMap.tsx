@@ -38,6 +38,7 @@ import { originName } from '../lib/origin';
 import { dropCoveredLabels } from '../lib/contemporaries';
 import { TerritoryLabels } from './territoryLabels';
 import { TerritoryLayers } from './territoryLayers';
+import { closeRegionCard, openRegionCard } from './regionCard';
 
 interface Props {
   empire: Empire;
@@ -69,6 +70,8 @@ interface Props {
   inventions?: boolean;
   /** Carte d'un panneau de comparaison : marges réduites, sans panneaux par-dessus. */
   compact?: boolean;
+  /** Régions survolables et cliquables (carte à l'arrêt : ni lecture ni question en cours). */
+  regionsInteractive?: boolean;
 }
 
 interface MapLayers {
@@ -150,6 +153,7 @@ export function WorldMap({
   disasters: disastersOn = true,
   inventions: inventionsOn = true,
   compact = false,
+  regionsInteractive = false,
 }: Props) {
   // Les cartes compactes ne cohabitent pas avec la vue normale : un compteur global suffit.
   useEffect(() => {
@@ -196,6 +200,12 @@ export function WorldMap({
   disastersRef.current = disastersOn;
   const inventionsRef = useRef(inventionsOn);
   inventionsRef.current = inventionsOn;
+  const regionsRef = useRef(regionsInteractive && !compact);
+  regionsRef.current = regionsInteractive && !compact;
+  const empireRef = useRef(empire);
+  empireRef.current = empire;
+  const yearRef = useRef(empire.steps[index]?.year ?? 0);
+  yearRef.current = empire.steps[index]?.year ?? 0;
 
   // Création de la carte (une seule fois).
   useEffect(() => {
@@ -258,6 +268,8 @@ export function WorldMap({
       created.disasters.setEnabled(disastersRef.current);
       created.inventions.setEnabled(inventionsRef.current);
       created.countries.setVisible(countriesRef.current);
+      created.territories.onPick = (f, x, y) => openRegionCard(map, f, x, y, empireRef.current.id, yearRef.current, citiesRef.current);
+      created.territories.setInteractive(regionsRef.current);
       if (import.meta.env.DEV) (window as unknown as { __glide: GlideLayer }).__glide = created.glide;
       setLayers(created);
       void addLand(map);
@@ -284,6 +296,12 @@ export function WorldMap({
       mapRef.current = null;
     };
   }, []);
+
+  // Régions survolables seulement à l'arrêt (et jamais pendant un glissement de frontières).
+  useEffect(() => {
+    layers?.territories.setInteractive(regionsInteractive && !compact && !morphingRef.current);
+    if (!regionsInteractive) closeRegionCard();
+  }, [layers, regionsInteractive, compact]);
 
   // Limites de navigation propres à l'empire (sinon globales).
   useEffect(() => {
@@ -437,6 +455,8 @@ export function WorldMap({
 
     const key = `${empire.id}/${step.territory}`;
     // Diff / morph : seulement en arrivant de l'étape précédente (avance) ou suivante (retour).
+    // Fiche de région de l'étape précédente : périmée (le territoire change).
+    closeRegionCard();
     const prevIndex = lastIndexRef.current;
     lastIndexRef.current = index;
     const forward = prevIndex === index - 1;
@@ -454,6 +474,7 @@ export function WorldMap({
     /** Territoire final affiché : noms des États et voisins, une seule mise à jour par étape. */
     const reveal = (fc: TerritoryCollection) => {
       layers.labels.update(fc, empire.color);
+      layers.territories.setInteractive(regionsRef.current && !morphingRef.current);
       void contemporariesPromise.then((c) => {
         if (!stale) layers.contemporaries.update(c);
       });
@@ -483,6 +504,7 @@ export function WorldMap({
         layers.diff.stop();
         layers.territories.prepare(fc, empire.color);
         morphingRef.current = true;
+        layers.territories.setInteractive(false);
         const sdfOk = await layers.glide.prepare(empire.id, morphStep.id, empire.color, from);
         if (stale) return;
         if (sdfOk) {
@@ -506,6 +528,7 @@ export function WorldMap({
         layers.diff.stop();
         layers.territories.prepare(fc, empire.color);
         morphingRef.current = true;
+        layers.territories.setInteractive(false);
         layers.labels.hide();
         layers.glide.setMode('bandes');
         await layers.morph.prepare(morph, empire.color, from);

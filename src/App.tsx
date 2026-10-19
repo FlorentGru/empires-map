@@ -408,6 +408,7 @@ function Atlas({
         disasters={disasters}
         inventions={inventions}
         speed={player.speed}
+        regionsInteractive={!player.playing && player.asking === null}
       />
 
       {step && (

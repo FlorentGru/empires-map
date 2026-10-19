@@ -42,6 +42,8 @@ Chaque empire est un dossier `data/empires/<id>/timeline.json` qui contient :
   - `figures` : les personnages, avec leur citation ;
   - `territoryNote` : une phrase précise qui dit ce que l'empire contrôle à cette date. C'est la **spécification** que suit le cartographe.
 
+`data/empires/<id>/regions.json` explique chaque **région** (entité nommée d'un territoire : royaume vassal, part de la Tétrarchie, dynastie rivale…) en 2-3 phrases ; `scripts/list-regions.ts <id>` en donne la liste et recopie les années (`--sync`).
+
 `data/cities.json` liste les villes avec leurs **noms successifs** (Byzance, puis Constantinople), leurs dates de fondation et de destruction, et leur rang. Ce rang décide du niveau de zoom à partir duquel une ville s'affiche.
 
 Ajouter un empire = ajouter un dossier. Le code le détecte automatiquement (`import.meta.glob`).
@@ -135,6 +137,12 @@ Quelques subtilités :
 - **Ordre des couches** : océan → terres → relief ombré → glissement SDF → territoires → zones gagnées et perdues → pays 2026 → trajets d'armées → villes → marqueurs.
 - **Polices** : les libellés WebGL demandent des « glyphes » PBF. Ils sont **téléchargés dans `public/fonts/`** pour fonctionner hors ligne.
 
+### Régions survolables
+Survol d'une région = voile clair et contour épais ; clic = fiche (`regionCard.ts` : statut, années, texte de `regions.json`, villes de l'époque contenues dans la région). Actif seulement à l'arrêt (ni lecture, ni glissement, ni question « Devine la suite »).
+- Le fondu entre les deux emplacements de territoire repose sur des transitions d'opacité **constantes** : on ne peut pas y mettre une expression `feature-state` (MapLibre n'anime pas les propriétés data-driven). La surbrillance est donc une **petite source à part** (`territory-hover`), qui ne reçoit qu'un `setData` quand la souris change de région, jamais à chaque image.
+- Les sources de territoire ont `generateId: true` : l'id rendu = rang de l'entité, ce qui permet de retrouver la **géométrie complète** (celle de `queryRenderedFeatures` est découpée par les tuiles).
+- Un clic sur une icône posée au-dessus (monument, invention, route, épidémie) garde la priorité.
+
 ### Règles de performance appliquées
 1. **Jamais de `setData` ni d'expression data-driven modifiée à chaque image** : cela déclenche un recalcul dans un worker. On utilise à la place le `feature-state`, les transitions natives (`*-transition`) ou un uniform de shader.
 2. **Pas d'état React mis à jour à chaque image** : les animations sont pilotées en code impératif (`requestAnimationFrame`) et en CSS (`transform`, `opacity`).
@@ -211,8 +219,9 @@ Le coût d'un agent vient surtout de ce qu'il **relit et redécouvre**, beaucoup
    - créer `scripts/empires/<id>.ts` (étapes, entités à filtrer ou régions à composer) ;
    - placer les corrections dans `overrides/<id>/` ;
    - lancer `npm run build:data -- --empire <id>`.
-4. **Figurines** : ajouter les nouveaux peuples et types de personnages dans `src/types.ts`. TypeScript signale alors les dessins manquants dans `src/figures/`.
-5. **Vérification** :
+4. **Régions** : `npx tsx scripts/list-regions.ts <id>`, rédiger `data/empires/<id>/regions.json`, puis `--sync` pour les années.
+5. **Figurines** : ajouter les nouveaux peuples et types de personnages dans `src/types.ts`. TypeScript signale alors les dessins manquants dans `src/figures/`.
+6. **Vérification** :
    - contrôle par points des villes témoins ;
    - `npm run typecheck && npm run build` ;
    - test dans un vrai navigateur avec `?debug=1`.

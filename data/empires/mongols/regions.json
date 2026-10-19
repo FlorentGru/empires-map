@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Empire mongol",
+    "summary": "Le cœur de l'empire fondé par Temüdjin, proclamé Gengis Khan au kurultaï de 1206. Depuis la steppe de Mongolie, puis Karakorum sous Ögödei, il conquiert la Chine du Nord, l'Asie centrale et la Perse. Après Möngke, il se fragmente en quatre grands khanats.",
+    "years": [1206, 1259]
+  },
+  {
+    "name": "Xia occidentaux (Tangoutes)",
+    "summary": "Royaume tangoute du nord-ouest de la Chine, autour de la région du Ningxia et du Gansu. Il se soumet à Gengis Khan en 1209 et devient tributaire, mais se révolte ensuite. Gengis Khan l'attaque en 1226 et meurt pendant la campagne ; le royaume est détruit en 1227.",
+    "years": [1209, 1223]
+  },
+  {
+    "name": "Ouïghours de Qocho",
+    "summary": "Royaume ouïghour du bassin du Tarim et de Tourfan, dirigé par un idiqut. Il fait volontairement allégeance à Gengis Khan en 1209 et fournit aux Mongols des scribes et des administrateurs lettrés. Il reste un vassal privilégié, puis passe sous l'autorité des Yuan et du Djaghataï.",
+    "years": [1209, 1229]
+  },
+  {
+    "name": "Karlouks d’Almaliq",
+    "summary": "Principauté turque karlouke autour d'Almaliq, dans la vallée de l'Ili, en Asie centrale. Son chef Arslan Khan se rallie aux Mongols vers 1211, quand le Qara Khitaï s'effondre. Il est un vassal fidèle de Gengis Khan, puis la région passe dans le domaine du khanat de Djaghataï.",
+    "years": [1211, 1220]
+  },
+  {
+    "name": "Xia orientaux (Puxian Wannu)",
+    "summary": "État fondé par Puxian Wannu, ancien général jin qui se proclame souverain en Mandchourie vers 1215 et accepte d'abord la tutelle mongole. Après une révolte, il est écrasé par les troupes de Gengis Khan, et la région est intégrée directement à l'empire mongol.",
+    "years": [1215, 1229]
+  },
+  {
+    "name": "Goryeo (Corée)",
+    "summary": "Royaume de Corée, gouverné depuis Kaesong. Attaqué dès 1231, il résiste plusieurs décennies en se retranchant sur l'île de Ganghwa, puis se soumet vers 1259. Il reste ensuite un royaume vassal et allié par mariages des Yuan, jusqu'à ce que son roi se libère de leur tutelle vers 1351.",
+    "years": [1219, 1351]
+  },
+  {
+    "name": "Principautés russes (Riazan)",
+    "summary": "Ensemble de principautés russes dont Riazan est la première victime de l'invasion mongole. Batu Khan l'assiège en décembre 1237 et la détruit, après avoir exigé sa soumission. La ville est prise et pillée, ce qui ouvre aux Mongols la route vers Vladimir et Souzdal.",
+    "years": [1237, 1237]
+  },
+  {
+    "name": "Horde d’or",
+    "summary": "Appelé aussi khanat de Kiptchak, ce domaine issu de l'héritage de Djötchi est fondé par Batu Khan après la conquête de la Russie. Sa capitale est Saraï, sur la Volga. Il domine la steppe pontique et les princes russes, avant de s'affaiblir à la fin du XIVe siècle.",
+    "years": [1237, 1368]
+  },
+  {
+    "name": "Principautés russes (tributaires)",
+    "summary": "Principautés slaves de la Russie du Nord et du Centre, comme Vladimir, Souzdal ou Kiev, soumises après l'invasion de 1237-1240. Leurs princes doivent se rendre à Saraï pour obtenir un yarlyk et verser un tribut à la Horde d'or. Moscou y gagne peu à peu en puissance.",
+    "years": [1240, 1368]
+  },
+  {
+    "name": "Géorgie",
+    "summary": "Royaume chrétien du Caucase, soumis par les Mongols après les campagnes des années 1230 et 1240. Il paie un tribut et fournit des troupes aux Ilkhans, tout en gardant sa dynastie et son Église. Il retrouve une certaine autonomie au début du XIVe siècle.",
+    "years": [1240, 1304]
+  },
+  {
+    "name": "Empire de Trébizonde",
+    "summary": "Empire grec de la côte sud de la mer Noire, fondé en 1204 par les Comnènes. Après la défaite des Seldjoukides à Köse Dağ en 1243, il reconnaît la suzeraineté mongole et paie un tribut. Il survit ensuite comme petit État commerçant, jusqu'à la conquête ottomane de 1461.",
+    "years": [1243, 1271]
+  },
+  {
+    "name": "Seldjoukides de Roum",
+    "summary": "Sultanat turc d'Anatolie, dont la capitale est Konya. Vaincu à Köse Dağ en 1243, il devient tributaire des Mongols, qui contrôlent ses sultans par un protectorat de plus en plus étroit. Il s'affaiblit, puis disparaît à la fin du XIIIe siècle devant les émirats turcs.",
+    "years": [1243, 1288]
+  },
+  {
+    "name": "Mossoul",
+    "summary": "Ville de haute Mésopotamie, dirigée par la dynastie des atabegs zenguides sous le règne de Badr al-Din Lu'lu'. Ce prince se soumet aux Mongols dès les années 1240 et soutient Hülegü en 1258. Après sa mort, ses fils se révoltent : Mossoul est prise en 1262 et passe sous l'administration directe des Ilkhans.",
+    "years": [1243, 1259]
+  },
+  {
+    "name": "Petite-Arménie (Cilicie)",
+    "summary": "Royaume arménien de Cilicie, sur la côte sud-est de l'Anatolie, dirigé par le roi Héthoum Ier. Il se rallie aux Mongols dès 1246, espérant une protection contre les Mamelouks et les Seldjoukides. Son alliance avec les Ilkhans dure jusqu'à la conquête mamelouke de 1375.",
+    "years": [1246, 1304]
+  },
+  {
+    "name": "Tibet",
+    "summary": "Haut plateau tibétain, divisé en monastères puissants. Les Mongols l'atteignent dans les années 1240, et le lama Sakya Pandita accepte leur suzeraineté. Le lien entre prêtre et protecteur devient central sous Kubilaï, qui confie au Sakya Phagpa l'autorité religieuse, jusqu'au recul des Yuan.",
+    "years": [1251, 1351]
+  },
+  {
+    "name": "Dai Viet (tributaire)",
+    "summary": "Royaume du Nord du Vietnam, dirigé par les Trân. Il subit des invasions mongoles en 1258, 1285 et 1287, mais les repousse, notamment à Bach Dang, en 1288. Il accepte pourtant de payer un tribut symbolique aux Yuan, ce qui lui permet de rester autonome.",
+    "years": [1258, 1281]
+  },
+  {
+    "name": "Mongolie d’Ariq Böke",
+    "summary": "Territoire du frère cadet de Kubilaï, Ariq Böke, qui contrôle la Mongolie et Karakorum à la mort de Möngke. Il se fait élire grand khan contre son frère en 1260, déclenchant une guerre de succession. Défait par Kubilaï, il se rend en 1264.",
+    "years": [1260, 1262]
+  },
+  {
+    "name": "Empire Yuan",
+    "summary": "Dynastie chinoise fondée par Kubilaï Khan en 1271, avec Dadu (Pékin) pour capitale. Elle conquiert les Song du Sud en 1279 et gouverne toute la Chine. Minée par les révoltes, notamment celle des Turbans rouges, elle est chassée de Chine en 1368 par les Ming.",
+    "years": [1260, 1351]
+  },
+  {
+    "name": "Ilkhanat",
+    "summary": "État mongol de Perse, fondé par Hülegü, frère de Kubilaï, après la prise de Bagdad en 1258. Sa capitale est Tabriz. Ghazan se convertit à l'islam en 1295. L'Ilkhanat se disloque après la mort d'Abu Saïd en 1335, laissant la place à des dynasties locales.",
+    "years": [1260, 1335]
+  },
+  {
+    "name": "Khanat de Djaghataï",
+    "summary": "Khanat d'Asie centrale hérité de Djaghataï, deuxième fils de Gengis Khan, entre Amou-Daria, Ili et Tarim. Il est tiraillé entre nomades et sédentaires et rivalise avec Qaïdu puis les Yuan. Il se scinde en deux au milieu du XIVe siècle.",
+    "years": [1260, 1335]
+  },
+  {
+    "name": "Khanat de Qaïdu (Ögödeïdes)",
+    "summary": "Domaine de Qaïdu, petit-fils d'Ögödei, qui contrôle l'Asie centrale du Nord-Est et s'oppose à Kubilaï et aux Yuan pendant plusieurs décennies. Il s'allie parfois au Djaghataï. Après sa mort en 1301, ses fils sont écartés et le territoire passe aux Djaghataïdes.",
+    "years": [1260, 1295]
+  },
+  {
+    "name": "Novgorod (tributaire)",
+    "summary": "Grande cité marchande de Russie du Nord, qui ne fut pas conquise par les Mongols mais devint tributaire de la Horde d'or. Elle paie un tribut collecté par les agents mongols, tout en préservant ses institutions. Elle reste riche grâce à son commerce avec la Hanse.",
+    "years": [1262, 1346]
+  },
+  {
+    "name": "Haute-Birmanie (tributaire)",
+    "summary": "Région du moyen Irrawaddy, cœur du royaume birman de Pagan. Les Mongols l'attaquent à partir de 1277 puis y prennent Pagan en 1287. Les Yuan y installent un protectorat tributaire éphémère. Il s'effondre rapidement, et la région se fragmente en royaumes shan.",
+    "years": [1288, 1288]
+  },
+  {
+    "name": "Anatolie (Roum et émirats turcs)",
+    "summary": "Anatolie turque, partagée entre le sultanat de Roum affaibli et des émirats turcs. Les Ilkhans y exercent une tutelle directe, avec des gouverneurs mongols. À mesure que l'Ilkhanat décline, les émirats gagnent leur indépendance, ce qui prépare la montée des Ottomans.",
+    "years": [1295, 1304]
+  },
+  {
+    "name": "Khanat de Djaghataï (Transoxiane)",
+    "summary": "Partie occidentale du Djaghataï, autour de la Transoxiane, de Samarcande et de Boukhara. Elle se détache de l'est vers 1346 sous des émirs turcs. Ceux-ci sont dominés par Timur, qui y prend le pouvoir à partir de 1370 en maintenant des khans fantoches.",
+    "years": [1346, 1368]
+  },
+  {
+    "name": "Mogholistan",
+    "summary": "Partie orientale du Djaghataï, région de l'Ili, du Tarim et du Tian Shan. Les khans descendants de Djaghataï y règnent vers 1347 sous Tughluq Timur, qui se convertit à l'islam. Ils guerroient contre Timur, puis le pays se fragmente en plusieurs khanats.",
+    "years": [1346, 1368]
+  },
+  {
+    "name": "Yuan du Nord",
+    "summary": "État résiduel des Yuan après leur chute en 1368. Le dernier empereur, Togon Temür, se réfugie en Mongolie, où ses successeurs conservent le titre impérial. Ils sont connus sous le nom de Yuan du Nord, mais s'opposent aux Ming pendant des générations.",
+    "years": [1368, 1368]
+  }
+]

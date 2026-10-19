@@ -1,0 +1,62 @@
+[
+  {
+    "name": "République romaine",
+    "summary": "L'État romain gouverné par ses magistrats élus et le Sénat, après l'expulsion du dernier roi. Parti d'une cité du Latium, il soumet l'Italie puis l'ensemble du bassin méditerranéen, avant que les guerres civiles ne livrent le pouvoir à Auguste.",
+    "years": [-509, -27]
+  },
+  {
+    "name": "Empire romain",
+    "summary": "Le monde romain unifié sous l'autorité d'un empereur, d'Auguste à Constantin. De l'Écosse à l'Euphrate, il partage une même armée, un même droit et des villes reliées par les voies romaines ; sous Trajan, il atteint sa plus grande étendue.",
+    "years": [9, 330]
+  },
+  {
+    "name": "Empire romain — part de Dioclétien",
+    "summary": "L'Orient confié à Dioclétien lui-même, Auguste principal de la Tétrarchie, gouverné depuis Nicomédie. Il couvre l'Asie Mineure, la Syrie et l'Égypte, les provinces les plus riches et les plus exposées à la Perse sassanide.",
+    "years": [285, 285]
+  },
+  {
+    "name": "Empire romain — part de Galère",
+    "summary": "Les Balkans, attribués au César Galère, gendre de Dioclétien, avec Sirmium et Thessalonique pour résidences. Il y garde la frontière du Danube et mène aussi, en 298, une victoire décisive sur les Perses.",
+    "years": [285, 285]
+  },
+  {
+    "name": "Empire romain — part de Maximien",
+    "summary": "L'Italie, l'Afrique et l'Hispanie, gouvernées par Maximien, second Auguste, depuis Milan plutôt que Rome. Ce découpage montre que l'Empire est devenu trop vaste pour un seul homme : chaque front a désormais son empereur.",
+    "years": [285, 285]
+  },
+  {
+    "name": "Empire romain — part de Constance Chlore",
+    "summary": "La Gaule et la Bretagne, confiées au César Constance Chlore, installé à Trèves face aux Germains du Rhin. Il reprend la Bretagne à l'usurpateur Allectus ; son fils Constantin y sera proclamé empereur en 306.",
+    "years": [285, 285]
+  },
+  {
+    "name": "Empire romain d'Occident",
+    "summary": "La moitié latine de l'Empire après la mort de Théodose en 395, gouvernée depuis Milan puis Ravenne. Envahie par les peuples germaniques, elle perd la Gaule, l'Hispanie et l'Afrique, jusqu'à la déposition de Romulus Augustule en 476.",
+    "years": [395, 410]
+  },
+  {
+    "name": "Empire romain d'Orient",
+    "summary": "La moitié grecque de l'Empire, centrée sur Constantinople, plus riche et mieux défendue que l'Occident. Elle survit aux invasions du Ve siècle et prolonge l'Empire romain pendant mille ans encore, sous le nom que les historiens lui donneront plus tard : Byzance.",
+    "years": [395, 476]
+  },
+  {
+    "name": "Empire byzantin",
+    "summary": "L'Empire romain d'Orient, de langue grecque et de foi chrétienne orthodoxe, gouverné depuis Constantinople. Ses frontières respirent au fil des siècles : reconquêtes de Justinien, pertes face aux Arabes puis aux Turcs, jusqu'à la chute de la ville en 1453.",
+    "years": [554, 1453]
+  },
+  {
+    "name": "Empire de Nicée",
+    "summary": "L'État grec fondé en Asie Mineure par Théodore Lascaris après la prise de Constantinople par les croisés en 1204. Le plus solide des héritiers de Byzance, il reprend la capitale en 1261 et y restaure l'Empire.",
+    "years": [1204, 1204]
+  },
+  {
+    "name": "Despotat d'Épire",
+    "summary": "Principauté grecque née en 1204 dans l'ouest des Balkans, autour d'Arta, sous la dynastie des Comnènes Doukas. Rivale de Nicée pour l'héritage byzantin, elle échoue à reprendre Constantinople et finit absorbée par les Serbes et les Ottomans.",
+    "years": [1204, 1204]
+  },
+  {
+    "name": "Empire de Trébizonde",
+    "summary": "Petit empire grec fondé en 1204 sur la côte sud de la mer Noire par les Grands Comnènes. Enrichi par le commerce de la soie et des épices, il survit à Constantinople et ne tombe aux mains des Ottomans qu'en 1461.",
+    "years": [1204, 1204]
+  }
+]

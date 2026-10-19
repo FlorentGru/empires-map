@@ -1,0 +1,162 @@
+[
+  {
+    "name": "République française",
+    "summary": "La France issue de la Révolution, que Bonaparte gouverne après le coup d'État de Brumaire en 1799 comme Premier consul. Agrandie par les victoires de la Révolution, elle reçoit la rive gauche du Rhin et la Belgique. Le Consulat à vie, en 1802, prépare le passage à l'Empire.",
+    "years": [1799, 1802]
+  },
+  {
+    "name": "République ligurienne",
+    "summary": "État sœur de la France, formé autour de Gênes en 1797 sous protection française. Sa constitution est calquée sur celle de la France et ses dirigeants dépendent de Paris. Elle est annexée à l'Empire en 1805, et Gênes devient alors un chef-lieu de département français.",
+    "years": [1799, 1804]
+  },
+  {
+    "name": "République batave",
+    "summary": "Les anciennes Provinces-Unies, devenues un État sœur de la France après l'invasion de 1795. Elles gardent leur gouvernement propre mais suivent la politique française, notamment contre l'Angleterre. En 1806, Napoléon la transforme en royaume de Hollande, confié à son frère Louis.",
+    "years": [1799, 1805]
+  },
+  {
+    "name": "République helvétique",
+    "summary": "État centralisé imposé à la Suisse par la France en 1798, sur le modèle révolutionnaire. Elle reste instable et dépend de la présence des troupes françaises. En 1803, Bonaparte la remplace par l'Acte de médiation, qui rétablit les cantons dans une Confédération sous son patronage.",
+    "years": [1799, 1802]
+  },
+  {
+    "name": "Piémont (administration française)",
+    "summary": "Le Piémont, enlevé au royaume de Sardaigne, est placé sous administration militaire française après la reconquête de l'Italie à Marengo en 1800. Le roi est exilé en Sardaigne. La région est ensuite annexée à la France et divisée en départements.",
+    "years": [1800, 1801]
+  },
+  {
+    "name": "République cisalpine",
+    "summary": "État sœur de la France fondé en 1797 en Italie du Nord, avec Milan pour capitale. Détruite par les Austro-Russes en 1799, elle est rétablie par Bonaparte après Marengo. Elle devient en 1802 la République italienne, dont Bonaparte est le président.",
+    "years": [1800, 1801]
+  },
+  {
+    "name": "Royaume d'Étrurie",
+    "summary": "Royaume créé en 1801 en Toscane, confié à un prince de la maison de Bourbon-Parme, allié de la France. Il reste sous étroite dépendance de Paris. Napoléon le supprime en 1807 et rattache la Toscane à l'Empire, puis la donne à sa sœur Élisa.",
+    "years": [1801, 1807]
+  },
+  {
+    "name": "République italienne",
+    "summary": "Succédant à la République cisalpine en 1802, elle a pour capitale Milan et pour président Bonaparte, assisté d'un vice-président. Elle couvre l'Italie du Nord. Après le sacre de Napoléon, elle devient en 1805 le royaume d'Italie, dont l'Empereur se fait couronner roi.",
+    "years": [1802, 1804]
+  },
+  {
+    "name": "République du Valais",
+    "summary": "Le Valais, détaché de la Suisse en 1802, devient une république indépendante sous protection française. Napoléon tient à contrôler le passage du Simplon, route stratégique vers l'Italie. Il l'annexe en 1810 sous le nom de département du Simplon.",
+    "years": [1802, 1809]
+  },
+  {
+    "name": "Empire français",
+    "summary": "La France proclamée empire en 1804, gouvernée par Napoléon Ier depuis Paris et étendue par les annexions : Belgique, rive gauche du Rhin, Piémont, Hollande, et plus tard Rome et les côtes allemandes. Le territoire se réduit en 1813-1814 avec les défaites, jusqu'à l'abdication de l'Empereur.",
+    "years": [1804, 1813]
+  },
+  {
+    "name": "Confédération suisse",
+    "summary": "La Suisse réorganisée par l'Acte de médiation de 1803, une confédération de dix-neuf cantons dont Napoléon se proclame médiateur. Elle reste neutre mais fournit des soldats à la France et subit son influence. L'effondrement de l'Empire en 1813 lui rend son indépendance.",
+    "years": [1804, 1813]
+  },
+  {
+    "name": "Espagne",
+    "summary": "Le royaume d'Espagne des Bourbons, gouverné par Charles IV et son ministre Godoy, est l'allié de la France contre l'Angleterre. Sa flotte combat à Trafalgar en 1805. En 1808, Napoléon l'envahit, force l'abdication des Bourbons et place son frère Joseph sur le trône.",
+    "years": [1804, 1807]
+  },
+  {
+    "name": "Royaume d'Italie",
+    "summary": "Royaume fondé en 1805 en Italie du Nord, avec Milan pour capitale. Napoléon en est le roi et son beau-fils Eugène de Beauharnais le vice-roi. Il s'agrandit de Venise et d'autres territoires. Il disparaît en 1814, quand les Autrichiens reprennent la Lombardie.",
+    "years": [1805, 1813]
+  },
+  {
+    "name": "Principauté de Lucques et Piombino",
+    "summary": "Petit État d'Italie centrale, confié en 1805 à Élisa Bonaparte, sœur de Napoléon, et à son mari Félix Baciocchi. Élisa en gouverne ensuite aussi la Toscane. La principauté suit l'Empire dans sa chute et disparaît en 1814.",
+    "years": [1805, 1813]
+  },
+  {
+    "name": "Bavière",
+    "summary": "Royaume d'Allemagne du Sud, allié de Napoléon en 1805 contre l'Autriche. Son prince-électeur reçoit le titre de roi après Austerlitz et le traité de Presbourg, avec des agrandissements. Il rejoint ensuite la Confédération du Rhin, avant de changer de camp en 1813.",
+    "years": [1805, 1805]
+  },
+  {
+    "name": "Wurtemberg",
+    "summary": "État d'Allemagne du Sud, allié de la France en 1805 contre l'Autriche. Son souverain devient roi à la suite de la victoire d'Austerlitz et reçoit des territoires. Il entre ensuite dans la Confédération du Rhin, et quitte l'alliance française à l'automne 1813.",
+    "years": [1805, 1805]
+  },
+  {
+    "name": "Bade",
+    "summary": "État d'Allemagne du Sud-Ouest, allié de la France en 1805. Après Austerlitz, son souverain voit son territoire s'agrandir et reçoit le titre de grand-duc. Il entre ensuite dans la Confédération du Rhin, et quitte l'alliance française en 1813.",
+    "years": [1805, 1805]
+  },
+  {
+    "name": "Royaume de Naples",
+    "summary": "Royaume conquis en 1806 sur les Bourbons, confié d'abord à Joseph Bonaparte puis, à partir de 1808, à Joachim Murat, beau-frère de Napoléon. Il sert de relais français dans le sud de l'Italie. Murat l'abandonne en 1815, et les Bourbons y reviennent.",
+    "years": [1806, 1813]
+  },
+  {
+    "name": "Royaume de Hollande",
+    "summary": "Royaume créé en 1806 à la place de la République batave, confié à Louis Bonaparte, frère de Napoléon. Louis prend à cœur les intérêts néerlandais et résiste au blocus contre l'Angleterre. Napoléon l'annexe à l'Empire en 1810, et Louis abdique.",
+    "years": [1806, 1809]
+  },
+  {
+    "name": "Confédération du Rhin",
+    "summary": "Ligue de princes allemands formée en 1806 sous le protectorat de Napoléon, qui met fin au Saint-Empire romain germanique. Elle fournit des contingents à l'armée française. Après la défaite de Leipzig en 1813, la plupart de ses membres changent de camp et elle se dissout.",
+    "years": [1806, 1813]
+  },
+  {
+    "name": "Royaume de Westphalie",
+    "summary": "Royaume créé en 1807 après le traité de Tilsit, à partir de territoires pris à la Prusse et à d'autres États allemands. Cassel en est la capitale, et Jérôme Bonaparte, frère de Napoléon, le souverain. Il s'effondre en 1813, après la défaite de Leipzig.",
+    "years": [1807, 1813]
+  },
+  {
+    "name": "Duché de Varsovie",
+    "summary": "État polonais créé en 1807 à Tilsit à partir des territoires polonais pris à la Prusse, et agrandi en 1809 aux dépens de l'Autriche. Il est confié au roi de Saxe, et son armée combat aux côtés de Napoléon. Il est occupé par la Russie en 1813.",
+    "years": [1807, 1813]
+  },
+  {
+    "name": "Ville libre de Dantzig",
+    "summary": "Le grand port de la Baltique, érigé en ville libre sous protection française à la suite de Tilsit en 1807. Elle sert de base de ravitaillement pour les campagnes de Pologne et de Russie. Assiégée en 1813-1814, elle est rendue à la Prusse après la chute de l'Empire.",
+    "years": [1807, 1813]
+  },
+  {
+    "name": "Russie",
+    "summary": "L'empire du tsar Alexandre Ier, vaincu à Friedland, devient l'allié de la France à la paix de Tilsit en 1807. Cette alliance se dégrade avec le blocus continental. La rupture mène à la campagne de Russie de 1812, où la Grande Armée est détruite.",
+    "years": [1807, 1807]
+  },
+  {
+    "name": "Espagne (Joseph)",
+    "summary": "L'Espagne dont Napoléon fait roi son frère Joseph en 1808, après avoir chassé les Bourbons. Le pays se soulève, et une guerre longue et très dure oppose les Français aux insurgés, soutenus par les Anglais. Joseph quitte l'Espagne en 1813, après la bataille de Vitoria.",
+    "years": [1808, 1813]
+  },
+  {
+    "name": "Danemark-Norvège",
+    "summary": "Royaume uni du Danemark et de la Norvège, allié de Napoléon à partir de 1807, après le bombardement de Copenhague par les Anglais. Il reste fidèle à la France jusqu'à la fin. Au traité de Kiel de 1814, il perd la Norvège, cédée à la Suède.",
+    "years": [1811, 1812]
+  },
+  {
+    "name": "Autriche",
+    "summary": "L'empire des Habsbourg, vaincu en 1809, devient l'allié contraint de Napoléon par le mariage de l'Empereur avec Marie-Louise, fille de François Ier. Il fournit un contingent à la campagne de Russie de 1812. En 1813, il se retourne contre la France.",
+    "years": [1811, 1812]
+  },
+  {
+    "name": "Prusse",
+    "summary": "Le royaume de Prusse, écrasé à Iéna en 1806 et amputé à Tilsit, est contraint à une alliance avec Napoléon en 1812. Il fournit des troupes pour la campagne de Russie. À la fin de 1812, il change de camp et mène, avec la Russie, la guerre de libération contre la France.",
+    "years": [1811, 1812]
+  },
+  {
+    "name": "France (frontières de 1792)",
+    "summary": "La France réduite à ses limites d'avant les conquêtes de la Révolution, selon le traité de Paris de 1814. Napoléon, après son abdication à Fontainebleau, perd l'Empire. Louis XVIII, frère de Louis XVI, est rétabli sur le trône, et le pays est occupé par les armées alliées.",
+    "years": [1814, 1814]
+  },
+  {
+    "name": "Île d'Elbe (principauté de Napoléon)",
+    "summary": "Petite île de la mer Tyrrhénienne, laissée en toute souveraineté à Napoléon par le traité de Fontainebleau en 1814. Il y règne avec une petite garde et réorganise l'île. Il la quitte en février 1815 pour revenir en France et reprendre le pouvoir.",
+    "years": [1814, 1814]
+  },
+  {
+    "name": "France (frontières de 1814)",
+    "summary": "La France telle qu'elle est reconnue par le premier traité de Paris de 1814, avec quelques territoires de plus qu'en 1792. Napoléon, de retour de l'île d'Elbe, la gouverne pendant les Cent-Jours. Sa défaite à Waterloo en juin 1815 met fin à ce régime.",
+    "years": [1815, 1815]
+  },
+  {
+    "name": "France (frontières de 1790)",
+    "summary": "La France ramenée à ses limites d'avant la Révolution par le second traité de Paris de novembre 1815, plus dur que le premier, après Waterloo. Elle doit payer une lourde indemnité et subir une occupation. Le congrès de Vienne redessine l'Europe pour de longues années.",
+    "years": [1815, 1815]
+  }
+]

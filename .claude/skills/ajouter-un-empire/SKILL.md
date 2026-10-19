@@ -42,6 +42,8 @@ git status --short public/data/empires   # seuls les fichiers du nouvel empire d
 ```
 Corrige les petits écarts (une ville mal classée, un statut) directement dans `scripts/empires/<id>.ts`, relance `npm run build:data:<id>`, puis commit + push.
 
+**Régions** (une fois les territoires générés) : `npx tsx scripts/list-regions.ts <id>` liste chaque entité nommée (statut, années, étapes). Fais rédiger `data/empires/<id>/regions.json` (`src/types-region.ts` : 2-3 phrases de 25 à 80 mots par région, même ton que `data/empires/rome/regions.json`), puis `npx tsx scripts/list-regions.ts <id> --sync` pour les années. `npm run test:data` exige une entrée par nom de territoire.
+
 ### 4. Vérifications finales (toi)
 - Attends la CI : `gh run watch $(gh run list --limit 1 --json databaseId -q '.[0].databaseId') --exit-status`.
 - Mets à jour `README.md` (empires disponibles) et `docs/ARCHITECTURE.md` si une technique nouvelle a été introduite.
