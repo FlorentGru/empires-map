@@ -1,5 +1,8 @@
 import { expect, test } from '@playwright/test';
 
+// Réglages par défaut (relief et vue inclinée), pas ceux allégés de playwright.config.ts.
+test.use({ storageState: { cookies: [], origins: [] } });
+
 test('interface : réglages repliables et mémorisés, formulaire « Votre avis »', async ({ page }) => {
   await page.goto('/?empire=rome&step=zama-202');
   const toggle = page.getByRole('button', { name: /Affichage/ });

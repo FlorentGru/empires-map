@@ -25,6 +25,12 @@ test('caméra libre : aucun empire n’enferme la carte (on peut aller voir ses 
   await page.goto('/?empire=saint-empire&e2e');
   await page.waitForFunction(() => (window as any).__map?.loaded(), null, { timeout: 60_000 });
   expect(await page.evaluate(() => (window as any).__map.getMaxBounds())).toBeNull();
-  await page.evaluate(() => (window as any).__map.jumpTo({ center: [116.4, 39.9], zoom: 4 }));
-  expect(await page.evaluate(() => (window as any).__map.getCenter().lng)).toBeGreaterThan(110);
+  // Après le vol de caméra vers l'étape : on part vers Pékin, loin du Saint-Empire, et la carte y reste.
+  await page.waitForFunction(() => !(window as any).__map.isMoving(), null, { timeout: 30_000 });
+  const lng = await page.evaluate(() => {
+    const m = (window as any).__map;
+    m.jumpTo({ center: [116.4, 39.9], zoom: 4 });
+    return m.getCenter().lng;
+  });
+  expect(lng).toBeGreaterThan(110);
 });
