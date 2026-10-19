@@ -215,7 +215,15 @@ export type Faction =
   | 'espagnols-xxe'
   | 'rifains'
   | 'americains'
-  | 'independantistes';
+  | 'independantistes'
+  // Saint-Empire romain germanique
+  | 'imperiaux'
+  | 'communes-lombardes'
+  | 'suisses'
+  | 'hussites'
+  | 'lansquenets'
+  | 'magyars'
+  | 'suedois';
 
 export const FACTIONS: Faction[] = [
   'romains',
@@ -269,6 +277,13 @@ export const FACTIONS: Faction[] = [
   'rifains',
   'americains',
   'independantistes',
+  'imperiaux',
+  'communes-lombardes',
+  'suisses',
+  'hussites',
+  'lansquenets',
+  'magyars',
+  'suedois',
 ];
 
 export type Archetype =
@@ -306,6 +321,11 @@ export type Archetype =
   | 'roi-habsbourg'
   | 'souverain-precolombien'
   | 'militaire-xxe'
+  // Saint-Empire romain germanique
+  | 'empereur-germanique'
+  | 'prince-electeur'
+  | 'reformateur'
+  | 'capitaine'
   // Tous empires : savant, philosophe (et figure du guide de l'Atlas)
   | 'sage';
 
@@ -339,6 +359,10 @@ export const ARCHETYPES: Archetype[] = [
   'roi-habsbourg',
   'souverain-precolombien',
   'militaire-xxe',
+  'empereur-germanique',
+  'prince-electeur',
+  'reformateur',
+  'capitaine',
   'general-mongol',
   'khatoun',
 ];

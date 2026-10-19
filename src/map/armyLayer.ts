@@ -76,6 +76,13 @@ const PEOPLE: Record<Faction, string> = {
   rifains: 'Rifains',
   americains: 'Américains',
   independantistes: 'Indépendantistes',
+  imperiaux: 'Impériaux',
+  'communes-lombardes': 'Lombards',
+  suisses: 'Suisses',
+  hussites: 'Hussites',
+  lansquenets: 'Lansquenets',
+  magyars: 'Hongrois',
+  suedois: 'Suédois',
 };
 const esc = (v: string) => v.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const plain = (v: string) =>
