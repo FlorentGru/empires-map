@@ -218,7 +218,8 @@ export function WorldMap({
       maxPitch: tiltedRef.current ? MAX_PITCH : 0,
       minZoom: 2.5,
       maxZoom: 9,
-      maxBounds: empire.bounds ?? undefined,
+      // Caméra libre pour tous les empires : on doit pouvoir aller voir les empires contemporains.
+      maxBounds: MAX_BOUNDS ?? undefined,
       attributionControl: false,
       renderWorldCopies: false,
       fadeDuration: 0,
@@ -302,11 +303,6 @@ export function WorldMap({
     layers?.territories.setInteractive(regionsInteractive && !compact && !morphingRef.current);
     if (!regionsInteractive) closeRegionCard();
   }, [layers, regionsInteractive, compact]);
-
-  // Limites de navigation propres à l'empire (sinon globales).
-  useEffect(() => {
-    mapRef.current?.setMaxBounds(empire.bounds ?? MAX_BOUNDS);
-  }, [empire.id, empire.bounds]);
 
   // Villes : fichier optionnel, chargé à la demande (tableau vide s'il n'existe pas).
   useEffect(() => {

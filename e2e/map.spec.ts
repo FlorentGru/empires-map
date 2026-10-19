@@ -19,3 +19,12 @@ test('carte : chargement sans erreur, étape suivante, glissement des frontière
   await expect(page.locator('.timeline__apogee-badge')).toContainText(/M km²/);
   expect(errors).toEqual([]);
 });
+
+test('caméra libre : aucun empire n’enferme la carte (on peut aller voir ses contemporains)', async ({ page }) => {
+  test.setTimeout(90_000);
+  await page.goto('/?empire=saint-empire&e2e');
+  await page.waitForFunction(() => (window as any).__map?.loaded(), null, { timeout: 60_000 });
+  expect(await page.evaluate(() => (window as any).__map.getMaxBounds())).toBeNull();
+  await page.evaluate(() => (window as any).__map.jumpTo({ center: [116.4, 39.9], zoom: 4 }));
+  expect(await page.evaluate(() => (window as any).__map.getCenter().lng)).toBeGreaterThan(110);
+});

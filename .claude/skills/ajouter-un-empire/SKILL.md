@@ -12,6 +12,7 @@ Méthode éprouvée sur Rome, l'Empire napoléonien et la Chine. Le but est un r
 - Avant d'écrire un prompt, **diagnostique toi-même** et donne aux agents les fichiers exacts, le contrat et les interdits — c'est le plus gros levier d'économie de tokens.
 - Interdits à écrire dans chaque prompt : pas de navigateur intégré (bridé à ~1 image/s), ne jamais lire en entier les gros JSON/GeoJSON (utiliser `node -e`), ne relancer que `npm run build:data:<id>`, rapport final court, pas de commit (c'est l'orchestrateur qui commite).
 - **Ne pousser sur `main` que des commits verts** : entre le contrat (étape 1) et les figurines (étape 3), le typecheck échoue ; commite en local et ne pousse qu'une fois `npm run typecheck && npm test && npm run test:data` passés (sinon GitHub envoie un e-mail d'échec à Florent à chaque push).
+- **Caméra libre** : chaque empire doit pouvoir se balader sur toute la carte pour voir les autres empires de la même période (contemporains, voisins, routes). Ne jamais borner la navigation (`maxBounds`, `setMaxBounds`) ; `bounds` dans `timeline.json` sert seulement à cadrer les voisins au build (`scripts/build-neighbors.ts`).
 - Réponses à Florent en français, en expliquant simplement ce qui a été fait et ce qui reste à vérifier dans son navigateur.
 
 ## Étapes
@@ -56,5 +57,6 @@ Corrige les petits écarts (une ville mal classée, un statut) directement dans 
 - Les entités `status: 'allied'` sont un simple contour : elles sont exclues des diffs, morph et SDF.
 - Les armées qui reviennent d'une bataille à l'autre ont un `id` stable et `path[0]` = dernier point de leur trajet précédent.
 - Après génération de nouvelles données, **redémarrer le serveur de dev** (le sien et celui de Florent) : un serveur Vite lancé avant la création d'un dossier de `public/` peut servir ses fichiers comme une page HTML (glissement absent, retour au fondu). Les scripts vident désormais les dossiers au lieu de les supprimer (`scripts/fs-utils.ts`), ce qui évite le cas le plus courant.
+- Le Saint-Empire avait la caméra enfermée dans son `bounds` (Europe centrale) : on ne pouvait plus aller voir les empires contemporains. `bounds` ne limite plus la caméra ; ne pas réintroduire de borne.
 - Ne jamais regénérer les autres empires : `git status` doit rester vide pour eux.
 - Sous Windows, `npm run fetch:data` peut lancer le `bash` de WSL au lieu de Git Bash : lancer directement `bash scripts/fetch-basemaps.sh` depuis Git Bash.

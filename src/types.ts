@@ -61,7 +61,10 @@ export interface Empire {
   description: string;
   /** Vue initiale (défaut : Méditerranée). */
   view?: { center: [number, number]; zoom: number };
-  /** Limites de navigation de la carte [[ouest, sud], [est, nord]] (défaut : le monde entier). */
+  /**
+   * Cadre des voisins dessinés [[ouest, sud], [est, nord]], utilisé au build par scripts/build-neighbors.ts.
+   * Ne limite JAMAIS la caméra : chaque empire peut se promener sur toute la carte pour voir ses contemporains.
+   */
   bounds?: [[number, number], [number, number]];
   /** Grandes périodes (« chapitres ») affichées en bandes sur la frise et annoncées en mode Histoire. */
   periods?: EmpirePeriod[];

@@ -12,7 +12,7 @@ RÈGLES D'ÉCONOMIE (impératives) : ne lis jamais en entier les gros JSON/GeoJS
 `npm run typecheck` échoue tant que les nouvelles `Faction` / `Archetype` de src/types.ts ne sont pas dessinées. Même style et même API que l'existant (contour #3b2a1a, aplats, viewBox 32×40 soldats / 36×48 personnages, 2 frames de marche + état vaincu). Soldats : <liste avec signes distinctifs>. Personnages : <liste>. Ajoute leurs FACTION_COLORS (distinctes, lisibles sur parchemin) et leurs fiches FACTION_INFO / ARCHETYPE_INFO (3-5 lignes, sobres et justes). Valide les SVG (xmllint si présent).
 
 ## B. Front
-Vérifie seulement ce qui est spécifique à cet empire : vue initiale (`empire.view`), bornes (`empire.bounds`), bandes de périodes lisibles sur la frise, légende avec ses entités, figurines de la légende. N'ajoute du code que si nécessaire.
+Vérifie seulement ce qui est spécifique à cet empire : vue initiale (`empire.view`), cadre des voisins (`empire.bounds`, qui ne doit jamais borner la caméra : on doit pouvoir aller voir les autres empires de la même période), bandes de périodes lisibles sur la frise, légende avec ses entités, figurines de la légende. N'ajoute du code que si nécessaire.
 
 ## C. Pipeline (scripts/, overrides/<id>/, public/data/empires/<id>/)
 1. Si les bornes de l'empire sortent du fond de carte actuel (`LAND_BBOX` de scripts/build-territories.ts, `BBOX` de scripts/build-countries.ts), élargis-les et garde land.geojson < ~350 Ko.

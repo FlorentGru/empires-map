@@ -11,7 +11,7 @@ RÈGLES D'ÉCONOMIE (impératives) : ne lis JAMAIS en entier les gros JSON (data
 PUBLIC : un Français curieux qui connaît mal le sujet. Texte clair et vivant, noms et peuples expliqués à leur première apparition.
 
 À ÉCRIRE — `data/empires/<id>/timeline.json` (objet Empire) :
-- id "<id>", name « <nom> », color "<hex>", start <début>, end <fin>, description (3-4 phrases), view { center: [<lon>, <lat>], zoom: <3–4> }, bounds [[<ouest>, <sud>], [<est>, <nord>]].
+- id "<id>", name « <nom> », color "<hex>", start <début>, end <fin>, description (3-4 phrases), view { center: [<lon>, <lat>], zoom: <3–4> }, bounds [[<ouest>, <sud>], [<est>, <nord>]] (cadre des voisins dessinés, assez large pour les empires contemporains ; il ne limite jamais la caméra).
 - periods (si l'empire est long) : <liste id / nom / début / fin>, chacune avec une couleur hex douce et distincte et un `summary` de 2-3 phrases lu en mode Histoire. Une étape appartient à la dernière période dont start ≤ year : les bornes doivent se toucher sans se chevaucher.
 - steps : ~<N> étapes triées par année (jamais 0 ; av. J.-C. = négatif), ids `kebab-année` (ex. `cannes-216`). Incontournables : <liste>.
 - Chaque étape : title, type, location [lon,lat], zoom (3 à 5,5), summary, details (markdown 150-300 mots), consequences (3-5, territoriales d'abord), sources (2-3, dont Wikipédia FR avec url testée par `curl -s -o /dev/null -w '%{http_code}' -L`), `territory` = id, et `territoryNote` PRÉCISE : ce que contrôle l'empire (provinces, régions), les États vassaux/tributaires et, en période de division, CHAQUE État rival avec son nom français. C'est la spécification du cartographe.
