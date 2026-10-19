@@ -9,6 +9,8 @@ interface Props {
   onSelect: (id: string) => void;
   /** Ouvre la vue « Le monde en l'an… ». */
   onOpenWorld?: () => void;
+  /** Ouvre la page « Tous les empires ». */
+  onOpenAllEmpires?: () => void;
 }
 
 const CATALOG = catalogJson as EmpireCatalogEntry[];
@@ -31,7 +33,7 @@ function groupCatalog(empires: EmpireMeta[]) {
   return [...groups.entries()];
 }
 
-export function EmpirePicker({ empires, current, onSelect, onOpenWorld }: Props) {
+export function EmpirePicker({ empires, current, onSelect, onOpenWorld, onOpenAllEmpires }: Props) {
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
   const groups = useMemo(() => groupCatalog(empires), [empires]);
@@ -103,6 +105,21 @@ export function EmpirePicker({ empires, current, onSelect, onOpenWorld }: Props)
               >
                 <span aria-hidden="true">🌍</span>
                 <span className="empire-card__name">Le monde en l'an…</span>
+              </button>
+            </li>
+          )}
+          {onOpenAllEmpires && (
+            <li>
+              <button
+                type="button"
+                className="empire-card empire-card--world"
+                onClick={() => {
+                  setOpen(false);
+                  onOpenAllEmpires();
+                }}
+              >
+                <span aria-hidden="true">📜</span>
+                <span className="empire-card__name">Tous les empires (frise et résumés)</span>
               </button>
             </li>
           )}

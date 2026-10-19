@@ -40,6 +40,7 @@ import type { Empire } from './types';
 // Vues chargées à la demande (hors du JS initial) ; celles qui parcourent tous les empires attendent leurs timelines.
 const Gallery = lazy(withAllEmpires(() => import('./figures/Gallery').then((m) => ({ default: m.Gallery }))));
 const CompareView = lazy(withAllEmpires(() => import('./compare/CompareView').then((m) => ({ default: m.CompareView }))));
+const EmpiresView = lazy(withAllEmpires(() => import('./empires/EmpiresView').then((m) => ({ default: m.EmpiresView }))));
 const WorldYearView = lazy(withAllEmpires(() => import('./world/WorldYearView').then((m) => ({ default: m.WorldYearView }))));
 const QuizDialog = lazy(withAllEmpires(() => import('./quiz/QuizDialog').then((m) => ({ default: m.QuizDialog }))));
 const FeedbackDialog = lazy(() => import('./feedback/FeedbackDialog').then((m) => ({ default: m.FeedbackDialog })));
@@ -73,6 +74,18 @@ export function App() {
     clearWorldUrl();
     setWorld(null);
   }, []);
+  // Page « Tous les empires » (?empires=1&e=<id>) : frise de tous les empires et résumé au clic.
+  const [allEmpires, setAllEmpires] = useState(() => new URLSearchParams(window.location.search).get('empires') === '1');
+  const leaveAllEmpires = useCallback(() => {
+    clearEmpiresUrl();
+    setAllEmpires(false);
+  }, []);
+  const openAllEmpires = useCallback(() => {
+    const url = new URL(window.location.href);
+    url.searchParams.set('empires', '1');
+    window.history.replaceState(null, '', url);
+    setAllEmpires(true);
+  }, []);
   const [galleryOpen, setGalleryOpen] = useState(() => new URLSearchParams(window.location.search).get('figures') === 'gallery');
   const [chatContext, setChatContext] = useState<ChatContext | null>(null);
   const [quizOpen, setQuizOpen] = useState(false);
@@ -89,6 +102,8 @@ export function App() {
       clearFiguresParam();
       clearWorldUrl();
       setWorld(null);
+      clearEmpiresUrl();
+      setAllEmpires(false);
       writeUrlState(e.id, stepId);
       setLoadedEmpireId(e.id);
       setNavKey((k) => k + 1);
@@ -141,6 +156,24 @@ export function App() {
       </Suspense>
     );
   }
+  if (allEmpires) {
+    return (
+      <>
+        <Suspense fallback={<p className="loading-view">Chargement…</p>}>
+          <EmpiresView
+            initial={new URLSearchParams(window.location.search).get('e') ?? empire.id}
+            backName={empire.name}
+            onBack={leaveAllEmpires}
+            onExplore={goToStep}
+            onCompare={(id) => {
+              leaveAllEmpires();
+              setCompare({ a: id, b: EMPIRE_INDEX.find((e) => e.id !== id)!.id });
+            }}
+          />
+        </Suspense>
+      </>
+    );
+  }
   if (world) {
     return (
       <>
@@ -169,6 +202,7 @@ export function App() {
         empire={empire}
         onSelectEmpire={setEmpireId}
         onOpenWorld={(year) => setWorld({ year })}
+        onOpenAllEmpires={openAllEmpires}
         onOpenCompare={() => setCompare({ a: empire.id, b: EMPIRE_INDEX.find((e) => e.id !== empire.id)!.id })}
         onOpenGallery={() => setGalleryOpen(true)}
         onContext={setChatContext}
@@ -188,6 +222,13 @@ export function App() {
   );
 }
 
+function clearEmpiresUrl(): void {
+  const url = new URL(window.location.href);
+  url.searchParams.delete('empires');
+  url.searchParams.delete('e');
+  if (url.href !== window.location.href) window.history.replaceState(null, '', url);
+}
+
 function initialIndex(empire: Empire): number {
   const { empire: urlEmpire, step } = readUrlState();
   if (urlEmpire && urlEmpire !== empire.id) return 0;
@@ -199,6 +240,7 @@ function Atlas({
   empire,
   onSelectEmpire,
   onOpenWorld,
+  onOpenAllEmpires,
   onOpenCompare,
   onOpenGallery,
   onContext,
@@ -206,6 +248,7 @@ function Atlas({
   empire: Empire;
   onSelectEmpire: (id: string) => void;
   onOpenWorld: (year: number) => void;
+  onOpenAllEmpires: () => void;
   onOpenCompare: () => void;
   onOpenGallery: () => void;
   onContext: (c: ChatContext) => void;
@@ -366,7 +409,13 @@ function Atlas({
       />
 
       <div className="top-bar">
-        <EmpirePicker empires={EMPIRE_INDEX} current={empire} onSelect={onSelectEmpire} onOpenWorld={() => onOpenWorld(step?.year ?? DEFAULT_WORLD_YEAR)} />
+        <EmpirePicker
+          empires={EMPIRE_INDEX}
+          current={empire}
+          onSelect={onSelectEmpire}
+          onOpenWorld={() => onOpenWorld(step?.year ?? DEFAULT_WORLD_YEAR)}
+          onOpenAllEmpires={onOpenAllEmpires}
+        />
         <div className="top-bar__right">
           <ViewControls
             tilted={tilted}
@@ -392,6 +441,9 @@ function Atlas({
             onToggleDisasters={toggleDisasters}
             onToggleInventions={toggleInventions}
           />
+          <button type="button" className="btn btn--ghost" onClick={onOpenAllEmpires} title="Tous les empires sur une frise, avec le résumé de chacun">
+            Empires
+          </button>
           <button type="button" className="btn btn--ghost" onClick={onOpenGallery} aria-haspopup="dialog">
             Galerie
           </button>

@@ -12,6 +12,7 @@ Empires disponibles : **Rome** (509 av. J.-C. → 1453), **la Chine** (-1600 →
 - Fondu entre les frontières, avec surbrillance des zones gagnées (vert) et perdues (rouge)
 - Frise chronologique cliquable, lecture automatique, vitesse ×0,5 à ×2, raccourcis clavier (Espace, ←, →)
 - Panneau d'explication : récit, conséquences, fiche bataille, sources
+- Page « Tous les empires » (`?empires=1`) : frise de tous les empires du catalogue (disponibles en couleur, à venir grisés), filtre par continent, résumé au clic (apogée, périodes, moments clés, personnages, inventions, héritage) et résumé rédigé par le sage
 - Mode « 🎯 Devine la suite » : avant chaque étape, une question à choix sur ce qui arrive (vainqueur, événement, année, territoire), avec score (`&guess=1`)
 - 55 villes avec leur nom d'époque et leur nom actuel, capitales selon la date
 - Légende, liens partageables (`?empire=rome&step=zama-202`), interface adaptée au mobile

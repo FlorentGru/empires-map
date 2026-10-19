@@ -1,0 +1,257 @@
+/* Page « Tous les empires » (src/empires/EmpiresView.tsx) : frise de tous les empires et résumé. */
+.empires-view {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  color: var(--ink);
+  background: var(--parchment);
+  overflow: hidden;
+}
+.empires-view__head {
+  padding: 14px 20px 10px;
+  border-bottom: 1px solid var(--parchment-edge);
+}
+.empires-view__head h1 {
+  margin: 8px 0 2px;
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+}
+.empires-view__intro {
+  margin: 0 0 10px;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+.empires-view__filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+.empires-view .btn[aria-pressed='true'] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--parchment);
+}
+.empires-view__only {
+  margin-left: 8px;
+  font-size: 0.85rem;
+}
+.empires-view__body {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
+/* Frise : une ligne par empire, barre de sa durée, nom dans la barre (ou à droite si elle est courte). */
+.empires-chart {
+  flex: 1;
+  min-width: 0;
+  overflow: auto;
+  padding: 0 20px 24px 52px; /* place pour le premier libellé de l'axe, centré sur le bord */
+}
+.empires-chart__axis {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 28px;
+  margin-right: 200px;
+  background: var(--parchment);
+  border-bottom: 1px solid var(--parchment-edge);
+}
+.empires-chart__axis span {
+  position: absolute;
+  bottom: 4px;
+  transform: translateX(-50%);
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+.empires-chart__rows {
+  position: relative;
+  list-style: none;
+  margin: 6px 200px 0 0;
+  padding: 0;
+}
+.empires-chart__rows li {
+  position: relative;
+  height: 30px;
+}
+.empires-chart__bar {
+  position: absolute;
+  top: 4px;
+  height: 22px;
+  padding: 0;
+  overflow: visible;
+  font: inherit;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--c) 55%, var(--parchment));
+  border: 1.5px solid var(--c);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.empires-chart__bar--soon {
+  background: repeating-linear-gradient(-45deg, rgba(120, 104, 80, 0.12) 0 4px, transparent 4px 8px);
+  border-style: dashed;
+  border-color: #a99a7c;
+  color: var(--ink-soft);
+}
+.empires-chart__bar:hover,
+.empires-chart__bar:focus-visible {
+  filter: brightness(1.05);
+  box-shadow: 0 0 0 2px var(--gold);
+}
+.empires-chart__bar[aria-pressed='true'] {
+  box-shadow: 0 0 0 3px var(--accent);
+}
+.empires-chart__name {
+  position: absolute;
+  left: calc(100% + 6px);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.82rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Résumé : panneau à droite (plein écran sur téléphone). */
+.empire-summary {
+  position: relative;
+  width: min(440px, 42vw);
+  flex: none;
+  overflow-y: auto;
+  padding: 18px 20px 24px;
+  background: var(--parchment-strong);
+  border-left: 4px solid var(--c);
+  box-shadow: var(--shadow);
+}
+.empire-summary__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 0;
+  background: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: var(--ink-soft);
+}
+.empire-summary__region {
+  margin: 0;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+}
+.empire-summary h2 {
+  margin: 2px 0 2px;
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+}
+.empire-summary h3 {
+  margin: 16px 0 6px;
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+}
+.empire-summary__span {
+  margin: 0 0 10px;
+  font-weight: 600;
+  color: var(--accent);
+}
+.empire-summary__desc,
+.empire-summary p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.empire-summary__soon {
+  font-style: italic;
+  color: var(--ink-soft);
+}
+.empire-summary__facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 8px;
+  margin: 12px 0 0;
+}
+.empire-summary__facts div {
+  padding: 8px 10px;
+  background: var(--parchment);
+  border-radius: 8px;
+}
+.empire-summary__facts dt {
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+}
+.empire-summary__facts dd {
+  margin: 2px 0 0;
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+.empire-summary__periods,
+.empire-summary__moments {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+}
+.empire-summary__periods li {
+  padding-left: 8px;
+  border-left: 4px solid var(--pc);
+  font-size: 0.86rem;
+}
+.empire-summary__periods span {
+  color: var(--ink-soft);
+}
+.empire-summary__moments button {
+  width: 100%;
+  padding: 6px 8px;
+  font: inherit;
+  font-size: 0.86rem;
+  text-align: left;
+  color: var(--ink);
+  background: var(--parchment);
+  border: 1px solid var(--parchment-edge);
+  border-radius: 6px;
+  cursor: pointer;
+}
+.empire-summary__moments button:hover {
+  border-color: var(--gold);
+}
+.empire-summary__why {
+  display: inline-block;
+  min-width: 108px;
+  font-weight: 700;
+  color: var(--gold);
+}
+.empire-summary__list {
+  margin: 0;
+}
+.empire-summary__sage {
+  margin-top: 16px;
+}
+.empire-summary__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 18px;
+}
+.empire-summary .btn--primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff8ec;
+}
+
+@media (max-width: 767px) {
+  .empires-chart__axis,
+  .empires-chart__rows {
+    margin-right: 120px;
+  }
+  .empire-summary {
+    position: fixed;
+    inset: 0;
+    width: auto;
+    z-index: 5;
+    border-left: 0;
+    border-top: 4px solid var(--c);
+  }
+}
