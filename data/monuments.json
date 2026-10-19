@@ -23,7 +23,8 @@
     "kind": "tombeau",
     "civilization": "Égypte ancienne",
     "description": "Sur le plateau de Gizeh, près du Caire, les pharaons Khéops, Khéphren et Mykérinos firent bâtir trois pyramides. Celle de Khéops, haute de près de 147 mètres, resta la plus haute construction humaine pendant environ quatre mille ans. Seule des sept merveilles du monde antique à subsister.",
-    "wikipedia": "https://fr.wikipedia.org/wiki/Pyramides_de_Gizeh"
+    "wikipedia": "https://fr.wikipedia.org/wiki/Pyramides_de_Gizeh",
+    "wonder": true
   },
   {
     "id": "pyramide-de-djoser",
@@ -188,6 +189,21 @@
     "wikipedia": "https://fr.wikipedia.org/wiki/Parth%C3%A9non"
   },
   {
+    "id": "statue-de-zeus-a-olympie",
+    "name": "Statue de Zeus à Olympie",
+    "location": [
+      21.6301,
+      37.6379
+    ],
+    "built": -435,
+    "until": 475,
+    "kind": "statue",
+    "civilization": "Grèce classique",
+    "description": "Sculptée par Phidias vers 435 av. J.-C. pour le temple de Zeus à Olympie, cette statue d'or et d'ivoire montrait le dieu assis sur son trône, haut d'environ douze mètres. Merveille du monde antique, elle aurait été transportée à Constantinople, où un incendie l'aurait détruite vers 475.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Statue_chrys%C3%A9l%C3%A9phantine_de_Zeus_%C3%A0_Olympie",
+    "wonder": true
+  },
+  {
     "id": "temple-d-artemis",
     "name": "Temple d'Artémis à Éphèse",
     "location": [
@@ -199,7 +215,8 @@
     "kind": "temple",
     "civilization": "Grèce antique",
     "description": "Au sud-est d'Éphèse, en Asie Mineure, ce vaste temple de marbre dédié à Artémis comptait parmi les sept merveilles du monde. Reconstruit après l'incendie d'Érostrate en 356 av. J.-C., il fut pillé par les Goths en 262 puis abandonné à l'époque chrétienne.",
-    "wikipedia": "https://fr.wikipedia.org/wiki/Temple_d'Art%C3%A9mis_%C3%A0_%C3%89ph%C3%A8se"
+    "wikipedia": "https://fr.wikipedia.org/wiki/Temple_d'Art%C3%A9mis_%C3%A0_%C3%89ph%C3%A8se",
+    "wonder": true
   },
   {
     "id": "mausolee-d-halicarnasse",
@@ -213,7 +230,8 @@
     "kind": "tombeau",
     "civilization": "Carie hellénisée",
     "description": "Tombeau monumental du satrape Mausole, élevé à Halicarnasse, aujourd'hui Bodrum, ce mausolée aux frises sculptées par de grands artistes grecs a donné son nom à tous les mausolées. Détruit par des séismes, ses pierres servirent aux chevaliers de Saint-Jean pour bâtir le château de Bodrum.",
-    "wikipedia": "https://fr.wikipedia.org/wiki/Mausol%C3%A9e_d'Halicarnasse"
+    "wikipedia": "https://fr.wikipedia.org/wiki/Mausol%C3%A9e_d'Halicarnasse",
+    "wonder": true
   },
   {
     "id": "colosse-de-rhodes",
@@ -227,7 +245,8 @@
     "kind": "statue",
     "civilization": "Grèce hellénistique",
     "description": "Statue en bronze du dieu Hélios, haute d'une trentaine de mètres, érigée à l'entrée du port de Rhodes pour célébrer la défaite d'un siège. Elle s'effondra lors d'un séisme vers 226 av. J.-C. Ses ruines gisaient encore des siècles plus tard, admirées des voyageurs.",
-    "wikipedia": "https://fr.wikipedia.org/wiki/Colosse_de_Rhodes"
+    "wikipedia": "https://fr.wikipedia.org/wiki/Colosse_de_Rhodes",
+    "wonder": true
   },
   {
     "id": "phare-d-alexandrie",
@@ -241,7 +260,8 @@
     "kind": "phare",
     "civilization": "Égypte ptolémaïque",
     "description": "Élevé sur l'île de Pharos sous les premiers Ptolémées, ce phare haut d'environ cent mètres guidait les navires vers le grand port d'Alexandrie. Merveille du monde antique, il fut endommagé par plusieurs séismes et définitivement ruiné en 1323. Ses blocs servirent à construire le fort Qaitbay.",
-    "wikipedia": "https://fr.wikipedia.org/wiki/Phare_d'Alexandrie"
+    "wikipedia": "https://fr.wikipedia.org/wiki/Phare_d'Alexandrie",
+    "wonder": true
   },
   {
     "id": "armee-de-terre-cuite",
@@ -268,6 +288,21 @@
     "civilization": "Empire néo-babylonien",
     "description": "Capitale de Nabuchodonosor II, Babylone était traversée par l'Euphrate et ceinte de remparts. On y accédait par la porte d'Ishtar, ornée de briques bleues émaillées, et la tour de Babel est associée à sa ziggourat Etemenanki. Ses ruines se trouvent en Irak, au sud de Bagdad.",
     "wikipedia": "https://fr.wikipedia.org/wiki/Babylone"
+  },
+  {
+    "id": "jardins-suspendus-de-babylone",
+    "name": "Jardins suspendus de Babylone",
+    "location": [
+      44.4275,
+      32.5475
+    ],
+    "built": -600,
+    "until": -30,
+    "kind": "jardin",
+    "civilization": "Empire néo-babylonien",
+    "description": "Selon les auteurs grecs, Nabuchodonosor II aurait fait aménager à Babylone des jardins en terrasses, irrigués depuis l'Euphrate, pour son épouse venue des montagnes de Médie. Aucune trace sûre n'en a été retrouvée : leur existence, ou leur emplacement réel, reste débattue. Les textes n'en parlent plus après le Ier siècle av. J.-C.",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Jardins_suspendus_de_Babylone",
+    "wonder": true
   },
   {
     "id": "petra",

@@ -11,6 +11,16 @@ test('galerie : figurines, personnages, monuments, catastrophes, inventions et �
   await dialog.locator('.gallery__card').first().click();
   await expect(dialog.locator('.gallery__detail')).toBeVisible();
 
+  // Monuments : bandeau des sept merveilles, badge sur leur fiche.
+  await page.getByRole('button', { name: 'Monuments', exact: true }).click();
+  await expect(dialog.locator('.monuments__wonders .gallery__card')).toHaveCount(7);
+  await dialog
+    .locator('.monuments__wonders')
+    .getByRole('button', { name: /^Colosse de Rhodes/ })
+    .click();
+  await expect(dialog.locator('.gallery__detail .wonder-badge')).toBeVisible();
+  await page.getByRole('button', { name: /Retour aux monuments/ }).click();
+
   // Chaque onglet de contenu : une fiche s'ouvre.
   const tabs: [string, RegExp, string][] = [
     ['Personnages illustres', /Jules César/, 'Jules César'],

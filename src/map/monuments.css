@@ -119,3 +119,16 @@
     transition: none;
   }
 }
+
+/* Sept merveilles du monde antique : badge de la bulle (src/map/monumentLayers.ts) et de la galerie. */
+.map-card__badge,
+.wonder-badge {
+  display: inline-block;
+  margin: -4px 0 8px;
+  padding: 1px 8px;
+  font: 600 11.5px/1.5 var(--font-sans, system-ui, sans-serif);
+  color: #4a3510;
+  background: linear-gradient(#f3dc8f, #d9b04a);
+  border: 1px solid #a8801f;
+  border-radius: 10px;
+}

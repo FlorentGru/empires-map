@@ -75,3 +75,19 @@ test('frise : infobulle au-dessus de tout, aperçu d’une catastrophe hors date
   await expect(card).toHaveCount(0);
   await expect(page.locator('.disaster-marker', { hasText: "Peste d'Athènes" })).toHaveCount(1);
 });
+
+test('sept merveilles : icône dorée hors des piles et nom affiché dès le zoom monde', async ({ page }) => {
+  test.setTimeout(90_000);
+  await page.goto('/?empire=rome&step=tarente-272&e2e');
+  await mapReady(page, 'monuments-icons');
+  await page.evaluate(() => (window as any).__map.jumpTo({ center: [28.2, 36.4], zoom: 3, pitch: 0 }));
+  const rendered = () =>
+    page.evaluate(() =>
+      (window as any).__map
+        .queryRenderedFeatures({ layers: ['monuments-icons'] })
+        .filter((f: any) => f.properties.wonder)
+        .map((f: any) => f.properties.id),
+    );
+  await expect.poll(rendered, { timeout: 30_000 }).toContain('colosse-de-rhodes');
+  expect(await page.evaluate(() => (window as any).__map.hasImage('monument-statue-wonder'))).toBe(true);
+});

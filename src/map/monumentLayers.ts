@@ -24,6 +24,14 @@ export function monumentSpan(m: Pick<Monument, 'built' | 'until'>): string {
   return m.until === undefined ? `depuis ${formatYear(m.built)}` : `${formatYear(m.built)} – ${formatYear(m.until)}`;
 }
 
+/** Badge « L'une des sept merveilles du monde » (bulle de la carte). */
+function wonderBadge(): HTMLParagraphElement {
+  const b = document.createElement('p');
+  b.className = 'map-card__badge';
+  b.textContent = '✦ L’une des sept merveilles du monde';
+  return b;
+}
+
 /**
  * Grands monuments de l'époque (data/monuments.json) : icône par type, nom à partir du zoom 4,
  * clic → bulle avec dates, civilisation, description et lien Wikipédia. Filtrés par année à chaque étape.
@@ -54,16 +62,17 @@ export class MonumentLayers {
           y,
         ),
       onHidden: () => this.applyFilter(),
+      solo: (id) => !!all().find((x) => x.id === id)?.wonder,
     };
     this.fan.register(this.pile);
     // Icônes et données (chargées à la demande) prêtes : le calque est ajouté.
     this.ready = Promise.all([addMonumentIcons(map, MONUMENT_KINDS), loadWorld()]).then(() => {
       if (!map.getStyle() || map.getSource(SRC)) return;
-      const data: FeatureCollection<Point, { id: string; kind: string; name: string; built: number; until: number }> = {
+      const data: FeatureCollection<Point, { id: string; kind: string; name: string; built: number; until: number; wonder: boolean }> = {
         type: 'FeatureCollection',
         features: all().map((m) => ({
           type: 'Feature',
-          properties: { id: m.id, kind: m.kind, name: m.name, built: m.built, until: m.until ?? 99999 },
+          properties: { id: m.id, kind: m.kind, name: m.name, built: m.built, until: m.until ?? 99999, wonder: !!m.wonder },
           geometry: { type: 'Point', coordinates: m.location },
         })),
       };
@@ -75,10 +84,23 @@ export class MonumentLayers {
           source: SRC,
           filter: this.filterFor(this.year),
           layout: {
-            'icon-image': ['concat', 'monument-', ['get', 'kind']] as never,
-            'icon-size': ['interpolate', ['linear'], ['zoom'], 2, 0.6, 5, 0.85, 8, 1.1] as never,
+            // Sept merveilles : icône dorée plus grande, nom dès le zoom monde et prioritaire.
+            'icon-image': ['concat', 'monument-', ['get', 'kind'], ['case', ['get', 'wonder'], '-wonder', '']] as never,
+            'icon-size': [
+              'interpolate',
+              ['linear'],
+              ['zoom'],
+              2,
+              ['case', ['get', 'wonder'], 0.75, 0.6],
+              5,
+              ['case', ['get', 'wonder'], 1.06, 0.85],
+              8,
+              ['case', ['get', 'wonder'], 1.375, 1.1],
+            ] as never,
             'icon-allow-overlap': true,
-            'text-field': ['step', ['zoom'], '', 4, ['get', 'name']] as never,
+            // Clé basse = placée en premier : le nom d'une merveille l'emporte sur celui d'un monument voisin.
+            'symbol-sort-key': ['case', ['get', 'wonder'], 0, 1] as never,
+            'text-field': ['step', ['zoom'], ['case', ['get', 'wonder'], ['get', 'name'], ''], 4, ['get', 'name']] as never,
             'text-font': ['Noto Sans Regular'],
             'text-size': 10.5,
             'text-offset': [0, 1.35],
@@ -135,13 +157,15 @@ export class MonumentLayers {
     const text = document.createElement('p');
     text.className = 'map-card__text';
     text.textContent = m.description;
+    const parts: Node[] = [title];
+    if (m.wonder) parts.push(wonderBadge());
     const link = document.createElement('a');
     link.className = 'map-card__link';
     link.href = m.wikipedia;
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
     link.textContent = 'En savoir plus sur Wikipédia ↗';
-    openMapCard(this.map, clientX, clientY, m.name, [title, meta, text, link]);
+    openMapCard(this.map, clientX, clientY, m.name, [...parts, meta, text, link]);
   }
 
   /** Année de l'étape affichée. */

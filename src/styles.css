@@ -1860,6 +1860,18 @@ kbd {
   width: 56px;
   height: 56px;
 }
+.monuments__wonders {
+  margin: 4px 0 6px;
+  padding: 4px 12px 14px;
+  background: linear-gradient(180deg, rgba(217, 176, 74, 0.18), rgba(217, 176, 74, 0.04));
+  border: 1px solid #d9b04a;
+  border-radius: 10px;
+}
+.monuments__card--wonder {
+  border-color: #c99a2e;
+  border-bottom-color: #c99a2e;
+  background: linear-gradient(180deg, #fbf1d2, var(--parchment-strong));
+}
 .monuments__big {
   display: grid;
   place-items: center;

@@ -18,6 +18,8 @@ export interface PileSource {
   onPick: (id: string, clientX: number, clientY: number) => void;
   /** Éléments de ce calque à masquer (ceux déployés dans l'éventail ; [] à la fermeture). */
   onHidden: (ids: string[]) => void;
+  /** Éléments jamais rangés dans une pile (toujours visibles, ex. les sept merveilles). */
+  solo?: (id: string) => boolean;
 }
 
 /** Point d'une pile : `key` = « calque|id ». */
@@ -89,7 +91,7 @@ export class PileFan {
       for (const f of this.map.queryRenderedFeatures({ layers: [src.layer] })) {
         const id = f.properties?.id as string;
         const at = src.locate(id);
-        if (!at || seen.has(id)) continue;
+        if (!at || seen.has(id) || src.solo?.(id)) continue;
         seen.add(id);
         const p = this.map.project(at);
         pts.push({ id, x: p.x, y: p.y, src, ref: `${src.layer}|${id}` });

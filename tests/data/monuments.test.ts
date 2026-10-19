@@ -17,6 +17,26 @@ describe('data/monuments.json', () => {
     for (const id of ids) expect(id, id).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/);
   });
 
+  it('marque exactement les sept merveilles du monde antique', () => {
+    expect(
+      monuments
+        .filter((m) => m.wonder)
+        .map((m) => m.id)
+        .sort(),
+    ).toEqual(
+      [
+        'colosse-de-rhodes',
+        'jardins-suspendus-de-babylone',
+        'mausolee-d-halicarnasse',
+        'phare-d-alexandrie',
+        'pyramides-de-gizeh',
+        'statue-de-zeus-a-olympie',
+        'temple-d-artemis',
+      ].sort(),
+    );
+    for (const m of monuments) if (m.wonder !== undefined) expect(m.wonder, m.id).toBe(true);
+  });
+
   itAll('%s est valide', monuments.map((m) => [m.id, m] as const), (_id, m) => {
     expect(m.name.trim().length).toBeGreaterThan(0);
     expect(m.civilization.trim().length).toBeGreaterThan(0);

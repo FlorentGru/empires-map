@@ -1,6 +1,6 @@
 /** Catégories de monuments affichées sur la carte. */
 export type MonumentKind =
-  'temple' | 'palais' | 'tombeau' | 'forteresse' | 'muraille' | 'eglise' | 'mosquee' | 'amphitheatre' | 'cite' | 'phare' | 'statue' | 'pont';
+  'temple' | 'palais' | 'tombeau' | 'forteresse' | 'muraille' | 'eglise' | 'mosquee' | 'amphitheatre' | 'cite' | 'phare' | 'statue' | 'pont' | 'jardin';
 
 export const MONUMENT_KINDS: MonumentKind[] = [
   'temple',
@@ -15,6 +15,7 @@ export const MONUMENT_KINDS: MonumentKind[] = [
   'phare',
   'statue',
   'pont',
+  'jardin',
 ];
 
 /** Un grand monument du monde (data/monuments.json). */
@@ -36,4 +37,6 @@ export interface Monument {
   description: string;
   /** URL de l'article Wikipédia (français). */
   wikipedia: string;
+  /** L'une des sept merveilles du monde antique : icône dorée, nom toujours affiché, bandeau de la galerie. */
+  wonder?: true;
 }

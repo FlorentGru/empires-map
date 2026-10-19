@@ -27,6 +27,7 @@ function MonumentDetail({ m, onBack, onNavigate }: { m: Monument; onBack: () => 
         </div>
         <div className="gallery__detail-text">
           <h2 id="monument-title">{m.name}</h2>
+          {m.wonder && <p className="wonder-badge">✦ L’une des sept merveilles du monde</p>}
           <p className="gallery__era">
             {m.civilization} · {monumentSpan(m)} · {continentOf(m.location)}
           </p>
@@ -64,6 +65,25 @@ function MonumentDetail({ m, onBack, onNavigate }: { m: Monument; onBack: () => 
   );
 }
 
+/** Les sept merveilles du monde antique, dans l'ordre chronologique. */
+const WONDERS = ALL.filter((m) => m.wonder).sort((a, b) => a.built - b.built);
+
+function MonumentCard({ m, onOpen }: { m: Monument; onOpen: (id: string) => void }) {
+  return (
+    <button
+      type="button"
+      className={`gallery__card people__card monuments__card${m.wonder ? ' monuments__card--wonder' : ''}`}
+      data-card
+      data-uid={`m:${m.id}`}
+      onClick={() => onOpen(m.id)}
+    >
+      <Svg html={monumentIconSvg(m.kind, { wonder: m.wonder })} />
+      <span className="gallery__name">{m.name}</span>
+      <span className="people__span">{monumentSpan(m)}</span>
+    </button>
+  );
+}
+
 /** Galerie des monuments (data/monuments.json) : par époque, filtrables par continent, fiche et étapes où les voir. */
 export function MonumentsView({ query, onNavigate }: { query: string; onNavigate: (empireId: string, stepId: string) => void }) {
   const [continent, setContinent] = useState('all');
@@ -71,7 +91,9 @@ export function MonumentsView({ query, onNavigate }: { query: string; onNavigate
   const continents = useMemo(() => [...new Set(ALL.map((m) => continentOf(m.location)))].sort(), []);
   const q = norm(query.trim());
   const list = ALL.filter(
-    (m) => (continent === 'all' || continentOf(m.location) === continent) && (!q || norm(`${m.name} ${m.civilization}`).includes(q)),
+    (m) =>
+      (continent === 'all' || (continent === 'wonders' ? !!m.wonder : continentOf(m.location) === continent)) &&
+      (!q || norm(`${m.name} ${m.civilization}`).includes(q)),
   ).sort((a, b) => a.built - b.built);
   const m = selected ? ALL.find((x) => x.id === selected) : undefined;
   if (m) return <MonumentDetail m={m} onBack={() => setSelected(null)} onNavigate={onNavigate} />;
@@ -81,12 +103,24 @@ export function MonumentsView({ query, onNavigate }: { query: string; onNavigate
         Monuments
       </h2>
       <div className="gallery__filters people__empires" role="group" aria-label="Filtrer par continent">
-        {['all', ...continents].map((c) => (
+        {['all', 'wonders', ...continents].map((c) => (
           <button key={c} type="button" className="btn btn--ghost" aria-pressed={continent === c} onClick={() => setContinent(c)}>
-            {c === 'all' ? 'Tous' : c}
+            {c === 'all' ? 'Tous' : c === 'wonders' ? '✦ Sept merveilles' : c}
           </button>
         ))}
       </div>
+      {continent === 'all' && !q && (
+        <div className="monuments__wonders" aria-labelledby="wonders-title">
+          <h3 id="wonders-title" className="monuments__era">
+            ✦ Les sept merveilles du monde <small>(Antiquité)</small>
+          </h3>
+          <div className="gallery__grid">
+            {WONDERS.map((x) => (
+              <MonumentCard key={x.id} m={x} onOpen={setSelected} />
+            ))}
+          </div>
+        </div>
+      )}
       {ERAS.map((era) => {
         const items = list.filter((x) => eraOf(x) === era);
         if (!items.length) return null;
@@ -97,18 +131,7 @@ export function MonumentsView({ query, onNavigate }: { query: string; onNavigate
             </h3>
             <div className="gallery__grid">
               {items.map((x) => (
-                <button
-                  key={x.id}
-                  type="button"
-                  className="gallery__card people__card monuments__card"
-                  data-card
-                  data-uid={`m:${x.id}`}
-                  onClick={() => setSelected(x.id)}
-                >
-                  <Svg html={monumentIconSvg(x.kind)} />
-                  <span className="gallery__name">{x.name}</span>
-                  <span className="people__span">{monumentSpan(x)}</span>
-                </button>
+                <MonumentCard key={x.id} m={x} onOpen={setSelected} />
               ))}
             </div>
           </div>
