@@ -1,0 +1,322 @@
+[
+  {
+    "id": "otton-ier",
+    "name": "Otton Ier",
+    "archetype": "empereur-germanique",
+    "faction": "imperiaux",
+    "born": 912,
+    "died": 973,
+    "title": "Fondateur du Saint-Empire romain germanique",
+    "bio": "Roi de Germanie en 936, Otton succède à son père Henri l'Oiseleur et s'impose face aux grands ducs qui contestent son autorité. Il s'appuie sur l'Église en confiant évêques et abbés des charges de gouvernement, ce qu'on appellera le système de l'Église impériale. En 955, il écrase les Hongrois au Lechfeld, près d'Augsbourg, victoire qui lui donne un prestige immense dans toute la chrétienté latine. Il intervient en Italie, épouse la reine Adélaïde de Bourgogne et se fait couronner empereur à Rome par le pape Jean XII le 2 février 962. L'année suivante, il fait déposer ce pape jugé indigne, preuve qu'il entend dominer la papauté. Il obtient aussi la reconnaissance de son titre par Byzance en faisant épouser à son fils Otton II la princesse Théophano. Il meurt à Memleben en 973. Son règne fixe pour huit siècles les traits du Saint-Empire : une couronne germanique liée à Rome et à l'Italie.",
+    "keyFacts": [
+      "936 : roi de Germanie",
+      "955 : victoire du Lechfeld sur les Hongrois",
+      "962 : couronné empereur à Rome",
+      "972 : mariage de son fils Otton II avec Théophano",
+      "973 : mort à Memleben"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Otton_Ier_(empereur_du_Saint-Empire)"
+      }
+    ]
+  },
+  {
+    "id": "henri-iv",
+    "name": "Henri IV",
+    "archetype": "empereur-germanique",
+    "faction": "imperiaux",
+    "born": 1050,
+    "died": 1106,
+    "title": "Empereur au cœur de la querelle des Investitures",
+    "bio": "Roi à six ans, Henri IV grandit sous la tutelle des grands et récupère peu à peu son autorité, notamment en Saxe, où il affronte une révolte durable. À partir de 1075, il entre en conflit avec le pape Grégoire VII sur le droit de nommer les évêques, c'est la querelle des Investitures. En 1076, il fait proclamer la déchéance du pape, qui l'excommunie en retour et délie ses sujets de leur serment. Abandonné par une partie des princes, il traverse les Alpes en plein hiver et vient implorer le pardon du pape à Canossa, en janvier 1077. L'absolution obtenue, il reprend l'avantage, fait élire un antipape et prend Rome en 1084, où il est couronné empereur par Clément III. Ses dernières années sont assombries par la révolte de ses fils : son fils Henri V le contraint à abdiquer en 1105. Il meurt à Liège en 1106, d'abord privé de sépulture chrétienne.",
+    "keyFacts": [
+      "1056 : devient roi à l'âge de six ans",
+      "1076 : déposition proclamée contre Grégoire VII, puis excommunication",
+      "1077 : pénitence de Canossa",
+      "1084 : couronné empereur à Rome par l'antipape Clément III",
+      "1106 : mort à Liège"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Henri_IV_(empereur_du_Saint-Empire)"
+      }
+    ]
+  },
+  {
+    "id": "frederic-barberousse",
+    "name": "Frédéric Ier Barberousse",
+    "archetype": "empereur-germanique",
+    "faction": "imperiaux",
+    "born": 1122,
+    "died": 1190,
+    "title": "Empereur Hohenstaufen, rival des villes lombardes",
+    "bio": "Élu roi en 1152, Frédéric de Hohenstaufen veut restaurer l'honneur de l'Empire et fait appel aux juristes de Bologne pour fonder ses droits sur le droit romain. Il est couronné empereur à Rome en 1155. Il mène six expéditions en Italie contre les villes lombardes, dont Milan, qu'il fait détruire en 1162. Il se heurte aussi au pape Alexandre III. La ligue lombarde le bat à Legnano en 1176 et il doit reconnaître l'autonomie des communes à la paix de Constance en 1183. En Allemagne, il évince son cousin Henri le Lion en 1180 et réorganise les grands fiefs. Devenu légendaire, il prend la croix en 1189 pour la troisième croisade et se noie dans le fleuve Saleph, en Cilicie, en juin 1190. Une légende populaire dira plus tard qu'il dort sous le Kyffhäuser et reviendra restaurer l'Empire.",
+    "keyFacts": [
+      "1152 : élu roi des Romains",
+      "1155 : couronné empereur à Rome",
+      "1162 : destruction de Milan",
+      "1176 : défaite de Legnano face à la ligue lombarde",
+      "1190 : mort en Cilicie pendant la troisième croisade"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Ier_Barberousse"
+      }
+    ]
+  },
+  {
+    "id": "frederic-ii-hohenstaufen",
+    "name": "Frédéric II",
+    "archetype": "empereur-germanique",
+    "faction": "imperiaux",
+    "born": 1194,
+    "died": 1250,
+    "title": "Empereur Hohenstaufen, « stupor mundi »",
+    "bio": "Né à Jésî, en Italie, Frédéric est roi de Sicile dès l'enfance, avant d'être élu roi des Romains puis couronné empereur à Rome en 1220. Il vit surtout dans le royaume de Sicile, où il bâtit un État centralisé, doté en 1231 d'un code, les Constitutions de Melfi, et fonde l'université de Naples en 1224. Excommunié par Grégoire IX pour avoir tardé à partir en croisade, il obtient pourtant Jérusalem par traité en 1229 avec le sultan d'Égypte, puis se couronne roi de Jérusalem. Curieux de sciences, de philosophie et de fauconnerie, il est entouré de savants chrétiens, juifs et musulmans. Il laisse aux princes allemands de larges privilèges pour garder les mains libres en Italie, ce qui accélère l'émiettement de l'Empire. Son conflit avec la papauté et les villes lombardes dure jusqu'à sa mort, à Castel Fiorentino, en décembre 1250. Les contemporains le surnommaient la « stupeur du monde ».",
+    "keyFacts": [
+      "1220 : couronné empereur à Rome",
+      "1224 : fondation de l'université de Naples",
+      "1229 : récupère Jérusalem par traité",
+      "1231 : Constitutions de Melfi",
+      "1250 : mort en Apulie"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_II_(empereur_du_Saint-Empire)"
+      }
+    ]
+  },
+  {
+    "id": "rodolphe-de-habsbourg",
+    "name": "Rodolphe de Habsbourg",
+    "archetype": "roi",
+    "faction": "imperiaux",
+    "born": 1218,
+    "died": 1291,
+    "title": "Premier roi des Romains de la maison de Habsbourg",
+    "bio": "Comte de Habsbourg, Rodolphe possède des terres en Alsace, en Argovie et au sud de l'Allemagne lorsque les princes électeurs l'élisent roi des Romains en 1273, après le Grand Interrègne. Son profil modeste rassure les grands, qui souhaitent un souverain peu puissant. Il fait pourtant valoir les droits de la couronne et soumet Ottokar II de Bohême, qui refusait de le reconnaître. Celui-ci est vaincu et tué à la bataille de Marchfeld en 1278. Rodolphe confie alors l'Autriche et la Styrie à ses fils en 1282, ce qui installe durablement sa famille dans le sud-est de l'Empire. Il renonce à se faire couronner empereur à Rome et laisse l'Italie à elle-même, pour consolider l'autorité royale en Allemagne par la paix publique, la reprise de domaines et la chasse aux châteaux-forts illégaux. Il meurt à Spire en 1291, sans avoir pu faire élire son fils Albert.",
+    "keyFacts": [
+      "1273 : élu roi des Romains",
+      "1278 : victoire du Marchfeld sur Ottokar II",
+      "1282 : l'Autriche et la Styrie confiées à ses fils",
+      "1291 : mort à Spire"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Rodolphe_Ier_de_Habsbourg"
+      }
+    ]
+  },
+  {
+    "id": "charles-iv",
+    "name": "Charles IV",
+    "archetype": "empereur-germanique",
+    "faction": "imperiaux",
+    "born": 1316,
+    "died": 1378,
+    "title": "Empereur et roi de Bohême, auteur de la Bulle d'or",
+    "bio": "Fils de Jean de Luxembourg, roi de Bohême, Charles est élevé à la cour de France. Élu roi des Romains en 1346, couronné empereur à Rome en 1355, il gouverne surtout depuis Prague, qu'il élève au rang de capitale impériale. Il y fait bâtir la cathédrale Saint-Guy, le pont Charles et fonde l'université en 1348, la première d'Europe centrale. En 1356, la Bulle d'or fixe les règles de l'élection impériale : sept princes électeurs, laïques et ecclésiastiques, élisent le roi à la majorité, sans l'accord du pape. Ce texte restera la base de la constitution de l'Empire jusqu'en 1806. Charles pratique une politique de dynastie habile, par achats et mariages, qui étend les domaines de la maison de Luxembourg, notamment au Brandebourg. Il meurt à Prague en 1378, laissant l'Empire à son fils Wenceslas.",
+    "keyFacts": [
+      "1346 : élu roi des Romains",
+      "1348 : fondation de l'université de Prague",
+      "1355 : couronné empereur à Rome",
+      "1356 : Bulle d'or",
+      "1378 : mort à Prague"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Charles_IV_(empereur_du_Saint-Empire)"
+      }
+    ]
+  },
+  {
+    "id": "maximilien-ier",
+    "name": "Maximilien Ier",
+    "archetype": "empereur-germanique",
+    "faction": "imperiaux",
+    "born": 1459,
+    "died": 1519,
+    "title": "Empereur Habsbourg, bâtisseur de la dynastie",
+    "bio": "Fils de Frédéric III, Maximilien épouse en 1477 Marie de Bourgogne, héritière de territoires riches des Pays-Bas, ce qui lance la rivalité entre Habsbourg et France. À la mort de sa femme, il défend l'héritage de ses enfants. Roi des Romains en 1486, il devient empereur élu en 1508 sans passer par Rome. Face aux princes, il accepte à la diète de Worms en 1495 une paix perpétuelle et la création d'une cour de justice, le Tribunal de la Chambre impériale. Son expérience militaire se manifeste par l'usage de lansquenets. Sa politique de mariages prépare l'avenir : son fils Philippe épouse l'héritière d'Espagne, et ses petits-enfants s'unissent à la Hongrie et à la Bohême. Un vers célèbre lui est attribué : « Que d'autres fassent la guerre, toi, heureuse Autriche, marie-toi ». Il meurt à Wels en 1519, laissant à son petit-fils Charles un héritage immense.",
+    "keyFacts": [
+      "1477 : épouse Marie de Bourgogne",
+      "1495 : diète de Worms, paix perpétuelle",
+      "1508 : prend le titre d'empereur élu",
+      "1515 : doubles mariages avec la Hongrie et la Bohême",
+      "1519 : mort à Wels"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Maximilien_Ier_(empereur_du_Saint-Empire)"
+      }
+    ]
+  },
+  {
+    "id": "charles-quint",
+    "name": "Charles Quint",
+    "archetype": "empereur-germanique",
+    "faction": "imperiaux",
+    "born": 1500,
+    "died": 1558,
+    "title": "Empereur et roi d'Espagne",
+    "bio": "Petit-fils de Maximilien et des Rois catholiques, Charles hérite en quelques années des Pays-Bas, de l'Espagne et de ses possessions américaines, de Naples et des terres des Habsbourg. Élu empereur en 1519 contre François Ier, grâce aux banquiers Fugger, il règne sur un ensemble disparate qu'il gouverne surtout par ses déplacements. Il affronte la France lors des guerres d'Italie, prend Rome en 1527 et bat François Ier à Pavie en 1525. Il repousse les Ottomans devant Vienne en 1529 par l'action de son frère Ferdinand. Face à Luther, il le met au ban de l'Empire à la diète de Worms en 1521, mais ne parvient pas à rétablir l'unité religieuse : vainqueur à Mühlberg en 1547, il doit accepter la paix d'Augsbourg en 1555. Épuisé, il abdique en 1556, partageant ses domaines entre son fils Philippe II et son frère Ferdinand, et se retire au monastère de Yuste, où il meurt en 1558.",
+    "keyFacts": [
+      "1519 : élu empereur",
+      "1521 : diète de Worms, Luther mis au ban",
+      "1525 : victoire de Pavie",
+      "1547 : victoire de Mühlberg sur la ligue de Smalkalde",
+      "1556 : abdication et partage de l'héritage"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Charles_Quint"
+      }
+    ]
+  },
+  {
+    "id": "martin-luther",
+    "name": "Martin Luther",
+    "archetype": "reformateur",
+    "faction": "imperiaux",
+    "born": 1483,
+    "died": 1546,
+    "title": "Moine augustin, initiateur de la Réforme",
+    "bio": "Fils d'un mineur de Saxe, Martin Luther devient moine augustin puis professeur de théologie à Wittenberg. Troublé par la question du salut, il conclut que l'homme est justifié par la seule foi et non par ses œuvres. En 1517, il rend publiques ses quatre-vingt-quinze thèses contre le commerce des indulgences, qui se diffusent rapidement grâce à l'imprimerie. Condamné par Rome en 1520 et excommunié en 1521, il refuse de se rétracter devant Charles Quint à la diète de Worms, puis est mis au ban de l'Empire. Protégé par l'électeur Frédéric le Sage, il se cache à la Wartburg où il traduit le Nouveau Testament en allemand, texte fondateur de la langue écrite moderne. Il rejette aussi la révolte des paysans de 1525. Son mouvement donne naissance au luthéranisme, soutenu par de nombreux princes. Il meurt à Eisleben en 1546.",
+    "keyFacts": [
+      "1517 : quatre-vingt-quinze thèses sur les indulgences",
+      "1521 : diète de Worms, mis au ban de l'Empire",
+      "1522 : traduction du Nouveau Testament en allemand",
+      "1525 : condamne la révolte des paysans",
+      "1546 : mort à Eisleben"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Martin_Luther"
+      }
+    ]
+  },
+  {
+    "id": "wallenstein",
+    "name": "Albrecht de Wallenstein",
+    "archetype": "capitaine",
+    "faction": "lansquenets",
+    "born": 1583,
+    "died": 1634,
+    "title": "Généralissime des armées impériales",
+    "bio": "Noble protestant de Bohême converti au catholicisme, Wallenstein s'enrichit par un mariage, puis en rachetant des biens confisqués après la défaite des Bohémiens en 1620. En 1625, l'empereur Ferdinand II l'autorise à lever une armée à ses frais, qui compte plusieurs dizaines de milliers d'hommes et vit sur les territoires occupés. Il remporte des victoires sur les Danois et domine le nord de l'Allemagne. Les princes, inquiets de sa puissance, obtiennent son renvoi en 1630. Face à l'avance de Gustave-Adolphe, l'empereur le rappelle en 1632. Il affronte le roi de Suède à Lützen, bataille indécise où celui-ci trouve la mort. Soupçonné de négocier avec l'ennemi, il est déclaré rebelle et assassiné à Eger, en Bohême, en février 1634, par des officiers de son entourage. Son personnage a inspiré à Schiller une célèbre trilogie dramatique.",
+    "keyFacts": [
+      "1625 : levée de l'armée impériale",
+      "1627 : duc de Friedland",
+      "1630 : renvoi par l'empereur",
+      "1632 : bataille de Lützen",
+      "1634 : assassinat à Eger"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Albrecht_von_Wallenstein"
+      }
+    ]
+  },
+  {
+    "id": "gustave-adolphe",
+    "name": "Gustave II Adolphe",
+    "archetype": "roi",
+    "faction": "suedois",
+    "born": 1594,
+    "died": 1632,
+    "title": "Roi de Suède, vainqueur de Breitenfeld",
+    "bio": "Roi de Suède à seize ans, Gustave-Adolphe réforme l'État avec le chancelier Oxenstierna et l'armée avec des troupes nationales, une artillerie légère mobile et une tactique souple de mousquetaires et de piquiers. Après des guerres victorieuses contre la Russie et la Pologne, il intervient dans la guerre de Trente Ans en 1630, par solidarité protestante autant que par intérêt stratégique, car il veut sécuriser la Baltique. Soutenu financièrement par la France de Richelieu, il bat le général Tilly à Breitenfeld en 1631, puis traverse l'Allemagne jusqu'au Rhin et en Bavière. Le 16 novembre 1632, il affronte Wallenstein à Lützen. Il est tué en pleine bataille, mais ses troupes remportent la victoire. Sa mort laisse la Suède, dirigée par un régent pour sa fille Christine, engagée durablement en Allemagne. Il est resté pour les protestants le « Lion du Nord ».",
+    "keyFacts": [
+      "1611 : devient roi de Suède",
+      "1630 : débarque en Poméranie",
+      "1631 : victoire de Breitenfeld",
+      "1632 : tué à la bataille de Lützen"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Gustave_II_Adolphe"
+      }
+    ]
+  },
+  {
+    "id": "marie-therese",
+    "name": "Marie-Thérèse",
+    "archetype": "roi-moderne",
+    "faction": "autrichiens",
+    "born": 1717,
+    "died": 1780,
+    "title": "Archiduchesse d'Autriche, reine de Hongrie et de Bohême",
+    "bio": "Fille de Charles VI, Marie-Thérèse hérite en 1740 des domaines des Habsbourg grâce à la Pragmatique Sanction, que plusieurs puissances s'empressent de contester. Frédéric II de Prusse envahit aussitôt la Silésie. Elle résiste à la guerre de Succession d'Autriche, trouve l'appui de la noblesse hongroise et perd la Silésie à la paix d'Aix-la-Chapelle en 1748. Son mari François de Lorraine, élu empereur en 1745, lui laisse la direction réelle des États. Elle mène alors des réformes de fond avec ses ministres : armée permanente, impôts mieux répartis, administration centralisée, écoles primaires obligatoires en 1774. Elle opère le renversement des alliances de 1756, qui rapproche l'Autriche de la France, sans pouvoir reprendre la Silésie durant la guerre de Sept Ans. Après 1765, elle associe son fils Joseph II au gouvernement. Elle meurt à Vienne en 1780.",
+    "keyFacts": [
+      "1740 : accède au trône, invasion de la Silésie",
+      "1745 : son mari élu empereur",
+      "1756 : renversement des alliances",
+      "1774 : réforme de l'instruction primaire",
+      "1780 : mort à Vienne"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Marie-Th%C3%A9r%C3%A8se_d%27Autriche"
+      }
+    ]
+  },
+  {
+    "id": "frederic-ii-de-prusse",
+    "name": "Frédéric II de Prusse",
+    "archetype": "roi-moderne",
+    "faction": "prussiens",
+    "born": 1712,
+    "died": 1786,
+    "title": "Roi de Prusse, « Frédéric le Grand »",
+    "bio": "Élevé durement par son père, Frédéric Guillaume Ier, Frédéric II aime la flûte, la philosophie et la correspondance avec Voltaire. Devenu roi en 1740, il envahit la Silésie autrichienne dès décembre, au mépris de la Pragmatique Sanction qu'il avait reconnue. Il conserve la province à l'issue de deux guerres de Silésie, puis de la guerre de Sept Ans (1756-1763), où, entouré d'ennemis, il évite de peu l'effondrement avant la mort de la tsarine Élisabeth. Il fait de la Prusse une grande puissance, avec une armée disciplinée, une administration efficace et une justice réformée. Souverain dit éclairé, il proclame la tolérance religieuse et abolit la torture, sans toucher au servage. Il participe au premier partage de la Pologne en 1772. Il fonde en 1785 la Ligue des princes allemands contre les projets de Joseph II. Il meurt à Potsdam en 1786.",
+    "keyFacts": [
+      "1740 : devient roi, invasion de la Silésie",
+      "1756-1763 : guerre de Sept Ans",
+      "1772 : premier partage de la Pologne",
+      "1785 : Ligue des princes",
+      "1786 : mort à Potsdam"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_II_(roi_de_Prusse)"
+      }
+    ]
+  },
+  {
+    "id": "francois-ii",
+    "name": "François II",
+    "archetype": "empereur-germanique",
+    "faction": "imperiaux",
+    "born": 1768,
+    "died": 1835,
+    "title": "Dernier empereur du Saint-Empire",
+    "bio": "Neveu de Marie-Antoinette et fils de Léopold II, François devient empereur en 1792 en pleine guerre contre la France révolutionnaire. Ses armées subissent une longue série de défaites : traités de Campo-Formio en 1797, de Lunéville en 1801, puis Austerlitz en 1805, suivi de la paix de Presbourg. Les princes allemands, séduits par Napoléon, se détachent de l'Empire en formant la Confédération du Rhin en juillet 1806. Le 6 août 1806, François renonce à la couronne impériale et déclare l'Empire dissous, ce qui met fin à un édifice institutionnel vieux de plus de huit siècles. Il avait déjà pris en 1804 le titre d'empereur héréditaire d'Autriche, sous le nom de François Ier, pour ne pas rester en dessous de Napoléon. Il règne ensuite avec Metternich, négocie le mariage de sa fille Marie-Louise avec Napoléon en 1810 et préside le congrès de Vienne. Il meurt en 1835.",
+    "keyFacts": [
+      "1792 : devient empereur",
+      "1804 : prend le titre d'empereur d'Autriche",
+      "1805 : défaite d'Austerlitz",
+      "1806 : abdication, dissolution du Saint-Empire",
+      "1835 : mort à Vienne"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Fran%C3%A7ois_II_(empereur_des_Romains)"
+      }
+    ]
+  }
+]

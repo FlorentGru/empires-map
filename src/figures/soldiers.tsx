@@ -814,6 +814,133 @@ export const ESP_SOLDIER_SPECS = {
   },
 } satisfies Partial<Record<Faction, Spec>>;
 
+/* ---------- Saint-Empire romain germanique ---------- */
+
+const BLACK = '#1f1a14';
+const YELLOW = '#e6b422';
+/** Aigle noir héraldique simplifié, centré en (cx, cy), échelle k. */
+const eagle = (cx: number, cy: number, k = 1) =>
+  `<g transform="translate(${cx} ${cy}) scale(${k})">` +
+  path('M0 -4L1.2 -2.6L5 -4.4L3.6 0.2L1.4 1.4L2.2 4.4L0 3.4L-2.2 4.4L-1.4 1.4L-3.6 0.2L-5 -4.4L-1.2 -2.6Z', BLACK, 'stroke="none"') +
+  `</g>`;
+/** Lance de cavalier avec fanion. */
+const lanceWithPennon = (c: string) => spear(36) + path('M26.8 3.4L32.4 4.6L26.8 6.6Z', c);
+/** Pique longue (4 à 5 mètres). */
+const pike = () => rect(25.4, 1, 1.2, 37, WOOD) + path('M26 -4L27.5 1.4L24.5 1.4Z', STEEL);
+/** Écu long (kite) tenu au bras gauche. */
+const kite = (c: string, d = '') => path('M3.4 15.5L13.6 15.5L13.6 24Q13.6 29.4 8.5 32.4Q3.4 29.4 3.4 24Z', c) + d;
+
+export const SAINT_SOLDIER_SPECS = {
+  imperiaux: {
+    tunic: '#a9adb0',
+    legs: 'pants',
+    legColor: '#8e949a',
+    boots: '#3a2a1a',
+    deco: path('M10.6 14.4Q16 12.8 21.4 14.4L22.2 25L9.8 25Z', YELLOW) + eagle(16, 19.6, 1) + rect(10.2, 24, 11.6, 1.6, BLACK, 0, 'stroke="none"'),
+    head: dome('#a9adb0') + path('M11.4 9L11.2 13.5L13 12.5ZM20.6 9L20.8 13.5L19 12.5Z', '#8e949a') + rect(15.6, 5, 0.9, 5.4, '#8e949a', 0, 'stroke="none"'),
+    shield: kite(YELLOW, eagle(8.5, 22, 0.9)),
+    weapon: lanceWithPennon(YELLOW),
+  },
+  'communes-lombardes': {
+    tunic: '#d9d0b8',
+    legs: 'pants',
+    legColor: '#7a5a3a',
+    boots: '#3a2a1a',
+    deco:
+      path('M10.6 14.4Q16 12.8 21.4 14.4L22 25L10 25Z', '#bdb59a') +
+      stroke('M11 17H21M11 19.6H21M11 22.2H21', '#9a927a', 0.7) +
+      rect(10.2, 24, 11.6, 1.6, '#3a2a1a', 0, 'stroke="none"'),
+    head: path('M11.8 9Q12 3.2 16 1.6Q20 3.2 20.2 9L19.6 9L19.6 7.2L12.4 7.2L12.4 9Z', STEEL) + rect(15.6, 4.4, 0.9, 5.2, '#8e949a', 0, 'stroke="none"'),
+    shield: kite(WHITE, stroke('M8.5 16.4V30.4M4.4 21.2H12.6', '#c0282a', 2.6, 'stroke-linecap="butt"')),
+    weapon: spear(36) + rect(26.8, 3.6, 5, 4, WHITE, 0, 'stroke-width="0.9"') + stroke('M29.3 4.2V7M27.6 5.6H31', '#c0282a', 0.9),
+  },
+  suisses: {
+    tunic: '#b5262a',
+    legs: 'pants',
+    legColor: '#d8d2c0',
+    legColor2: '#b5262a',
+    boots: '#3a2a1a',
+    deco: stroke('M16 14.6V24.6M11.4 19.6H20.6', WHITE, 2.6, 'stroke-linecap="butt"') + rect(10.2, 24, 11.6, 1.6, '#3a2a1a', 0, 'stroke="none"'),
+    head: dome('#8e949a') + ell(16, 7.2, 5.6, 1.1, '#8e949a') + path('M16 3.6Q19 0.6 22 1.6Q20.4 2 18.6 4.4Z', WHITE),
+    weapon:
+      rect(25.4, 3, 1.2, 35, WOOD) +
+      path('M26 -2.4L27.3 3.4L24.7 3.4Z', STEEL) +
+      path('M26.6 5.4L31.8 3.8L31.8 10L26.6 9Z', STEEL) +
+      path('M25.4 6L22.6 7.4L25.4 8.6Z', STEEL),
+  },
+  hussites: {
+    tunic: '#7a3a24',
+    legs: 'pants',
+    legColor: '#5e4a34',
+    boots: '#3a2a1a',
+    deco:
+      path('M10.6 14.4Q16 12.8 21.4 14.4L22 25L10 25Z', '#6a3220') +
+      ell(16, 19, 4.2, 4.6, '#e8dcc0', 'stroke="none"') +
+      path('M13.3 16.2H18.7Q18.7 19.6 16 20.2Q13.3 19.6 13.3 16.2Z', '#c0282a', 'stroke="none"') +
+      rect(15.6, 20, 0.8, 2, '#c0282a', 0, 'stroke="none"') +
+      rect(14.3, 21.8, 3.4, 0.9, '#c0282a', 0, 'stroke="none"') +
+      rect(10.2, 24, 11.6, 1.6, '#3a2a1a', 0, 'stroke="none"'),
+    head: dome('#6e747a') + ell(16, 7.2, 5.4, 1, '#6e747a') + stubble('#4a3220'),
+    weapon:
+      rect(25.4, 10, 1.4, 28, WOOD) +
+      stroke('M26 10Q30.4 8 29.4 4', '#6e747a', 1) +
+      circ(29.4, 3.4, 2, '#4a4e54') +
+      path('M29.4 0.6V1.6M31.8 3.4H30.8M29.4 6.2V5.2M27 3.4H28', '#4a4e54', 'stroke="#4a4e54" stroke-width="1"'),
+  },
+  lansquenets: {
+    tunic: '#b02a22',
+    legs: 'pants',
+    legColor: '#d9b02a',
+    legColor2: '#2f5f9b',
+    boots: '#7a5a34',
+    deco:
+      path('M16 13.6Q19 13 21 14L22 27L16 27Z', '#d9b02a', 'stroke="none"') +
+      stroke('M12 17.4L14.4 19M12 21L14.4 22.6M18 17L20.4 18.6M18 20.8L20.4 22.4', '#2b2219', 0.9) +
+      stroke('M10.6 14L21.4 14L22.6 26', '#2f5f9b', 1.4) +
+      rect(10.2, 24, 11.6, 1.6, '#3a2a1a', 0, 'stroke="none"'),
+    head:
+      path('M10.2 7.4Q10.4 2.4 16 2.8Q21.6 2.4 21.8 7.4Q16 5.4 10.2 7.4Z', '#2f5f9b') +
+      path('M19.4 3.2Q25 -1.4 28.6 3Q24.4 1.8 21 5Z', WHITE) +
+      path('M18 2.8Q22 -2.8 27 -1.2Q22.6 -0.8 20 4Z', '#c0282a') +
+      moustache('#4a3220'),
+    weapon: pike(),
+  },
+  magyars: {
+    tunic: '#a8281e',
+    legs: 'pants',
+    legColor: '#2f6f3a',
+    boots: '#7a2a1e',
+    deco:
+      stroke('M12.4 16.4H19.6M12.4 19.2H19.6M12.4 22H19.6', GOLD, 1) +
+      stroke('M16 14.6V25', '#7a1a14', 0.8) +
+      rect(10.2, 24, 11.6, 1.6, '#2f6f3a', 0, 'stroke="none"'),
+    head:
+      path('M11.8 8.4Q10.8 2.6 16 2.2Q21.2 2.6 20.2 8.4L19.4 6.8L12.6 6.8Z', '#5a3a22') +
+      path('M13.2 3.2Q16 0 18.8 3.2Z', '#a8281e') +
+      stroke('M16 2.4Q15.4 -1.6 17.8 -3', WHITE, 1.2) +
+      moustache('#2d2018'),
+    shield: roundShield('#7a4a2a', '#d6a81c'),
+    weapon: saber(),
+  },
+  suedois: {
+    tunic: '#c9a05a',
+    legs: 'pants',
+    legColor: '#2f5f9f',
+    boots: '#3a2a1a',
+    deco:
+      path('M10.6 14.4Q16 12.8 21.4 14.4L22 25L10 25Z', '#b88a44') +
+      stroke('M10.6 14.4L21.8 25', '#1f5fb0', 2.6) +
+      stroke('M10.6 14.4L21.8 25', '#f2c200', 1) +
+      rect(10.2, 24, 11.6, 1.6, '#3a2a1a', 0, 'stroke="none"'),
+    head:
+      ell(16, 6.6, 8.4, 1.8, '#4a5a7a') +
+      path('M11.8 6.6Q12 1.8 16 1.6Q20 1.8 20.2 6.6Z', '#4a5a7a') +
+      path('M19 2.4Q24.4 -1 26.6 3Q22.6 1.6 20 4.4Z', '#f2c200') +
+      stubble('#4a3220'),
+    weapon: musket(),
+  },
+} satisfies Partial<Record<Faction, Spec>>;
+
 export const SOLDIER_SPECS = {
   romains: {
     tunic: '#b23a2b',
@@ -1015,6 +1142,7 @@ export const SOLDIER_SPECS = {
   ...ASIA_SOLDIER_SPECS,
   ...MONGOL_ADV_SOLDIER_SPECS,
   ...ESP_SOLDIER_SPECS,
+  ...SAINT_SOLDIER_SPECS,
 } satisfies Record<Faction, Spec>;
 
 /** Fabrique la chaîne SVG complète d'un soldat. */

@@ -4,7 +4,7 @@
 
 Un planisphère interactif pour voir l'évolution des grands empires de l'histoire. Choisis un empire, appuie sur **Play** et regarde ses frontières évoluer d'une date clé à la suivante : batailles, traités, réformes, chutes. Chaque étape est accompagnée d'une explication détaillée.
 
-Empires disponibles : **Rome** (509 av. J.-C. → 1453), **la Chine** (-1600 → 1912), **l'Empire mongol** (1206 → 1368), **l'Empire espagnol** (1492 → 1976) et **l'Empire napoléonien** (1799 → 1815). Site en ligne : https://florentgru.github.io/empires-map/ Le sélecteur liste, par continent, les plus vastes et les plus célèbres empires de l’histoire, à remplir au fil du projet.
+Empires disponibles : **Rome** (509 av. J.-C. → 1453), **la Chine** (-1600 → 1912), **l'Empire mongol** (1206 → 1368), **l'Empire espagnol** (1492 → 1976), **le Saint-Empire romain germanique** (962 → 1806) et **l'Empire napoléonien** (1799 → 1815). Site en ligne : https://florentgru.github.io/empires-map/ Le sélecteur liste, par continent, les plus vastes et les plus célèbres empires de l’histoire, à remplir au fil du projet.
 
 ## Fonctionnalités
 

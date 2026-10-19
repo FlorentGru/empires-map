@@ -110,7 +110,7 @@
             ],
             [
               11.5,
-              47.0
+              47
             ],
             [
               10.99,
@@ -128,7 +128,9 @@
               12.5,
               41.9
             ]
-          ]
+          ],
+          "from": "Augsbourg",
+          "id": "otton"
         }
       ],
       "figures": [
@@ -141,7 +143,8 @@
           "position": [
             12.46,
             41.9
-          ]
+          ],
+          "person": "otton-ier"
         },
         {
           "name": "Jean XII",
@@ -210,7 +213,9 @@
               6.94,
               46.82
             ]
-          ]
+          ],
+          "from": "Strasbourg",
+          "id": "conrad-ii"
         }
       ],
       "figures": [
@@ -289,7 +294,9 @@
               10.45,
               44.58
             ]
-          ]
+          ],
+          "from": "Spire",
+          "id": "henri-iv"
         }
       ],
       "figures": [
@@ -302,7 +309,8 @@
           "position": [
             10.4,
             44.6
-          ]
+          ],
+          "person": "henri-iv"
         },
         {
           "name": "Grégoire VII",
@@ -416,7 +424,8 @@
           "position": [
             12.45,
             41.9
-          ]
+          ],
+          "person": "frederic-barberousse"
         },
         {
           "name": "Adrien IV",
@@ -439,7 +448,7 @@
         8.9333,
         45.5958
       ],
-      "zoom": 5.0,
+      "zoom": 5,
       "summary": "Le 29 mai 1176, l'infanterie des villes de la Ligue lombarde brise la charge de la cavalerie de Frédéric Barberousse : l'empereur renonce à plier l'Italie du Nord.",
       "details": "Depuis 1158, Frédéric Barberousse veut que les grandes villes de Lombardie, comme Milan, Crémone ou Brescia, lui versent impôts et droits de justice. En 1162, il rase Milan. Mais les cités, rapprochées par la haine de l'impôt impérial, forment en 1167 la **Ligue lombarde**, soutenue par le pape **Alexandre III** : la ville nouvelle d'*Alessandria* est même fondée en son honneur. Un long siège de cette place échoue en 1175.\n\nEn 1176, Barberousse attend à Côme des renforts d'Allemagne, qui lui arrivent par les cols des Alpes. Son cousin **Henri le Lion** a refusé de venir, malgré une humiliante supplication de l'empereur à Chiavenna. Le 29 mai, la colonne impériale marche vers Pavie, alliée de l'empereur. Près de **Legnano**, elle tombe sur les milices milanaises, groupées autour du **Carroccio**, grand chariot sacré portant l'étendard de la ville. La cavalerie lourde des chevaliers enfonce d'abord les lignes ; puis les fantassins serrés autour du chariot tiennent, pendant que des renforts de la Ligue prennent l'ennemi de flanc. Barberousse, désarçonné, passe pour mort et reparaît trois jours plus tard à Pavie.\n\nDéfait, il négocie. La trêve de Venise (1177) le réconcilie avec le pape, puis la **paix de Constance** (1183) reconnaît aux villes leurs libertés et leurs magistrats, contre un serment de fidélité.",
       "consequences": [
@@ -495,7 +504,8 @@
               8.93,
               45.6
             ]
-          ]
+          ],
+          "from": "Côme"
         },
         {
           "id": "ligue-lombarde",
@@ -516,7 +526,8 @@
               8.93,
               45.6
             ]
-          ]
+          ],
+          "from": "Milan"
         }
       ],
       "figures": [
@@ -541,7 +552,7 @@
         3.2,
         50.5833
       ],
-      "zoom": 5.0,
+      "zoom": 5,
       "summary": "Le 27 juillet 1214, Philippe Auguste bat à Bouvines l'empereur Otton IV, le comte de Flandre et le roi d'Angleterre : la France s'impose, et Frédéric II gagne l'Empire.",
       "details": "Depuis 1198, deux rois se disputent la couronne allemande : **Otton IV** de la famille Welf, soutenu par l'Angleterre dont il est le neveu, et **Philippe de Souabe**, puis son neveu **Frédéric II**, un Hohenstaufen appuyé par le roi de France **Philippe Auguste**. Otton, couronné empereur en 1209, s'attaque au pape et à la Sicile : il est excommunié en 1210. Frédéric II, jeune roi de Sicile, passe en Allemagne et se fait reconnaître.\n\nEn 1214, **Jean sans Terre** attaque la France par l'ouest, tandis qu'Otton, le comte de Flandre **Ferrand** et le comte de Boulogne **Renaud de Dammartin** l'attaquent par le nord. Le fils de Philippe, **Louis**, bat Jean à La Roche-aux-Moines le 2 juillet. Le dimanche 27, à **Bouvines**, près de Lille, l'armée coalisée rattrape l'arrière-garde française qui franchissait un pont. Philippe Auguste fait demi-tour et accepte le combat avec ses chevaliers et les milices des communes. La mêlée est longue et confuse : le roi, jeté à terre, est sauvé par ses chevaliers. Ferrand et Renaud sont capturés ; Otton, qui a failli être pris, s'enfuit.\n\nCette victoire consolide la monarchie capétienne et ruine les ambitions anglaises : Jean, affaibli, devra signer la Grande Charte en 1215. Pour l'Empire, elle élimine Otton IV, qui meurt en 1218. Frédéric II reste seul empereur, mais il doit tout au roi de France et à l'Église.",
       "consequences": [
@@ -604,7 +615,9 @@
               3.2,
               50.58
             ]
-          ]
+          ],
+          "from": "Péronne",
+          "id": "philippe-auguste"
         },
         {
           "side": "Coalition d'Otton IV",
@@ -623,7 +636,9 @@
               3.2,
               50.58
             ]
-          ]
+          ],
+          "from": "Valenciennes",
+          "id": "otton-iv"
         }
       ],
       "figures": [
@@ -658,7 +673,7 @@
         14.2,
         41.1
       ],
-      "zoom": 4.0,
+      "zoom": 4,
       "summary": "Couronné empereur à Rome le 22 novembre 1220, Frédéric II concède des droits aux princes allemands pour gouverner en paix sa Sicile natale.",
       "details": "Frédéric II est un Hohenstaufen élevé à Palerme, parlant latin, grec, arabe et italien, sensible à la science et au droit. Par sa mère Constance, héritière des rois normands, il est roi de **Sicile** (qui comprend l'Italie du Sud) depuis l'enfance. Par son père, l'empereur Henri VI, il descend des empereurs. Dès 1212, il est venu chercher en Allemagne la couronne ; Bouvines lui a ôté son rival.\n\nSon problème est de tenir l'Allemagne et la Sicile ensemble, malgré la crainte du pape, qui craint d'être pris en tenaille entre ces deux royaumes réunis dans les mêmes mains. En 1220, il fait élire son fils **Henri (VII)** roi des Romains en Allemagne, puis, pour obtenir l'accord des princes, il signe la *Confœderatio cum principibus ecclesiasticis*, qui reconnaît aux princes-évêques de larges droits (monnaie, péages, justice). C'est le début d'une longue histoire : l'empereur échange des pouvoirs locaux contre la fidélité des princes, qui deviennent presque des souverains.\n\nLe 22 novembre 1220, **Honorius III** le couronne empereur à Rome. Frédéric promet de partir à la croisade, mais retourne d'abord en Sicile, où il réorganise le royaume par les *Constitutions de Capoue* : fonctionnaires, justice royale, impôts. Surnommé *Stupor mundi* (l'étonnement du monde), il fera de la Sicile un État moderne, tandis que l'Allemagne lui échappe peu à peu.",
       "consequences": [
@@ -691,7 +706,8 @@
           "position": [
             14.2,
             41.1
-          ]
+          ],
+          "person": "frederic-ii-hohenstaufen"
         },
         {
           "name": "Honorius III",
@@ -780,7 +796,9 @@
               13.25,
               42.07
             ]
-          ]
+          ],
+          "from": "Vérone",
+          "id": "conradin"
         },
         {
           "side": "Charles d'Anjou",
@@ -800,7 +818,9 @@
               13.25,
               42.07
             ]
-          ]
+          ],
+          "from": "Lucera",
+          "id": "charles-danjou"
         }
       ],
       "figures": [
@@ -869,7 +889,8 @@
           "position": [
             6.08,
             50.78
-          ]
+          ],
+          "person": "rodolphe-de-habsbourg"
         },
         {
           "name": "Grégoire X",
@@ -951,7 +972,9 @@
               8.66,
               47.09
             ]
-          ]
+          ],
+          "from": "Zurich",
+          "id": "leopold-autriche"
         },
         {
           "side": "Confédérés suisses",
@@ -967,7 +990,9 @@
               8.66,
               47.09
             ]
-          ]
+          ],
+          "from": "Schwytz",
+          "id": "confederes-suisses"
         }
       ],
       "figures": [
@@ -1025,7 +1050,8 @@
           "position": [
             6.18,
             49.12
-          ]
+          ],
+          "person": "charles-iv"
         },
         {
           "name": "Gerlach de Nassau",
@@ -1048,7 +1074,7 @@
         14.4569,
         50.0923
       ],
-      "zoom": 5.0,
+      "zoom": 5,
       "summary": "La mort de Jan Hus sur le bûcher (1415) soulève la Bohême : de 1419 à 1434, les hussites repoussent cinq croisades lancées par l'empereur Sigismond.",
       "details": "**Jan Hus**, prédicateur et professeur de l'université de Prague, critique la richesse de l'Église et réclame la communion sous les deux espèces (pain et vin) pour tous les fidèles. Convoqué au concile de Constance avec un sauf-conduit de l'empereur **Sigismond**, il est arrêté, condamné pour hérésie et brûlé vif le 6 juillet 1415. La Bohême, outrée, forme un mouvement national et religieux : les **hussites**.\n\nLe 30 juillet 1419, des Pragois emmenés par le prêtre **Jean Želivský** jettent par les fenêtres de l'hôtel de ville les conseillers du roi : c'est la première « défenestration de Prague ». Le roi **Venceslas IV** meurt quelques jours plus tard ; son frère Sigismond, héritier de la couronne de Bohême, est détesté. Entre 1420 et 1431, cinq croisades contre les hussites échouent. Le chef de guerre **Jan Žižka**, borgne puis aveugle, invente avec ses paysans de Tábor la tactique du *Wagenburg* : des chariots de guerre enchaînés en cercle, d'où partent canons et arquebuses. Dès le 14 juillet 1420, sur la colline de Vítkov, il bat l'armée de Sigismond devant Prague.\n\nLes hussites se divisent ensuite entre modérés (utraquistes) et radicaux (taborites). Ces derniers sont écrasés à Lipany en 1434. Les *Compactata* (1433-1436) acceptent la communion sous les deux espèces en Bohême : c'est une première tolérance officielle d'une Église dissidente.",
       "consequences": [
@@ -1105,7 +1131,9 @@
               14.46,
               50.09
             ]
-          ]
+          ],
+          "from": "Tábor",
+          "id": "hussites"
         },
         {
           "side": "Croisés de Sigismond",
@@ -1128,7 +1156,9 @@
               14.46,
               50.09
             ]
-          ]
+          ],
+          "from": "Breslau",
+          "id": "croises-sigismond"
         }
       ],
       "figures": [
@@ -1149,7 +1179,7 @@
           "archetype": "empereur-germanique",
           "position": [
             14.7,
-            50.0
+            50
           ]
         }
       ]
@@ -1163,7 +1193,7 @@
         8.6821,
         50.1109
       ],
-      "zoom": 4.0,
+      "zoom": 4,
       "summary": "Le 18 mars 1438, les électeurs élisent Albert II de Habsbourg, déjà roi de Hongrie et de Bohême : jusqu'en 1806, presque tous les empereurs viendront de sa famille.",
       "details": "En 1437, l'empereur **Sigismond de Luxembourg** meurt sans fils. Son gendre **Albert V** de Habsbourg, duc d'Autriche, lui succède comme roi de Hongrie (1437) puis de Bohême (1438). Le 18 mars 1438, les sept électeurs, réunis à Francfort, l'élisent roi des Romains sous le nom d'**Albert II**. Pour la première fois, un seul homme réunit sur sa tête la couronne d'Allemagne, celle de Bohême et celle de Hongrie.\n\nAlbert n'aura pas le temps de régner : il meurt dès octobre 1439, en menant campagne contre les Ottomans, de plus en plus menaçants dans les Balkans. Il n'a jamais été couronné empereur. Mais son cousin **Frédéric III**, élu en 1440, tiendra la couronne pendant cinquante-trois ans, jusqu'en 1493, et la transmettra à son fils Maximilien. À partir de cette date, à l'exception d'un bref intermède (le Bavarois Charles VII, de 1742 à 1745), la dignité impériale restera dans la famille Habsbourg, devenue \"maison d'Autriche\", jusqu'à la fin de l'Empire en 1806.\n\nLe pouvoir de l'empereur reste limité : il règne sur ses terres héréditaires (Autriche, Styrie, Tyrol…), mais dépend des princes pour lever des armées et des impôts dans le reste de l'Empire. La devise de Frédéric III, **AEIOU**, mystérieuse, sera interprétée plus tard par « Austriae est imperare orbi universo » (« il appartient à l'Autriche de gouverner l'univers »).",
       "consequences": [
@@ -1264,7 +1294,7 @@
           "faction": "chevaliers-europeens",
           "archetype": "roi",
           "position": [
-            3.0,
+            3,
             50.4
           ]
         }
@@ -1313,7 +1343,8 @@
           "position": [
             8.36,
             49.63
-          ]
+          ],
+          "person": "maximilien-ier"
         },
         {
           "name": "Berthold de Henneberg",
@@ -1370,7 +1401,8 @@
           "position": [
             8.68,
             50.11
-          ]
+          ],
+          "person": "charles-quint"
         },
         {
           "name": "François Ier",
@@ -1428,7 +1460,8 @@
           "position": [
             8.36,
             49.63
-          ]
+          ],
+          "person": "martin-luther"
         },
         {
           "name": "Charles Quint",
@@ -1438,7 +1471,8 @@
           "position": [
             8.38,
             49.64
-          ]
+          ],
+          "person": "charles-quint"
         },
         {
           "name": "Frédéric le Sage",
@@ -1525,7 +1559,8 @@
               18.68,
               45.99
             ]
-          ]
+          ],
+          "from": "Belgrade"
         },
         {
           "side": "Hongrie",
@@ -1548,7 +1583,9 @@
               18.68,
               45.99
             ]
-          ]
+          ],
+          "from": "Buda",
+          "id": "hongrie-1526"
         }
       ],
       "figures": [
@@ -1583,7 +1620,7 @@
         13.2167,
         51.4333
       ],
-      "zoom": 5.0,
+      "zoom": 5,
       "summary": "Le 24 avril 1547, l'empereur surprend les princes protestants au passage de l'Elbe : leur chef, l'électeur de Saxe, est capturé.",
       "details": "Depuis 1531, les princes luthériens se sont alliés dans la **ligue de Smalkalde**, dirigée par l'électeur **Jean-Frédéric de Saxe** et le landgrave **Philippe de Hesse**. Ils refusent l'autorité du concile de Trente et du ban de Charles Quint. En 1546, l'empereur, libéré de la guerre contre la France et les Ottomans par des trêves, décide de les réduire par la force. Il s'appuie sur des troupes espagnoles et italiennes, ainsi que sur des fantassins allemands, les **lansquenets**, et sur le duc protestant **Maurice de Saxe**, cousin et rival de Jean-Frédéric, qui espère obtenir son électorat.\n\nLa campagne se joue sur l'Elbe. Au printemps 1547, l'armée impériale remonte d'Ingolstadt et de Nuremberg, par Eger, vers la Saxe. Jean-Frédéric, qui s'était retranché à Wittenberg, recule le long du fleuve. Le matin du 24 avril, dans le brouillard, des paysans montrent un gué aux Espagnols, qui traversent à la nage l'épée entre les dents, tandis que les ponts de bateaux sont installés. La cavalerie impériale rattrape les Saxons, qui sont écrasés. Jean-Frédéric, blessé au visage, est pris.\n\nPar la capitulation de Wittenberg, il perd son électorat au profit de Maurice. Le landgrave de Hesse se soumet. Charles Quint est au sommet de sa puissance : le peintre Titien le représente à cheval, vainqueur. Mais ce triomphe est éphémère : en 1552, Maurice se retourne contre l'empereur.",
       "consequences": [
@@ -1651,7 +1688,8 @@
               13.21,
               51.44
             ]
-          ]
+          ],
+          "from": "Nuremberg"
         },
         {
           "side": "Ligue de Smalkalde",
@@ -1670,7 +1708,9 @@
               13.21,
               51.44
             ]
-          ]
+          ],
+          "from": "Dresde",
+          "id": "smalkalde"
         }
       ],
       "figures": [
@@ -1682,7 +1722,8 @@
           "position": [
             13.1,
             51.4
-          ]
+          ],
+          "person": "charles-quint"
         },
         {
           "name": "Jean-Frédéric de Saxe",
@@ -1819,7 +1860,7 @@
         14.3597,
         50.0786
       ],
-      "zoom": 5.0,
+      "zoom": 5,
       "summary": "Le 8 novembre 1620, aux portes de Prague, l'armée catholique écrase les troupes de Frédéric V en une heure : la Bohême redevient habsbourgeoise et catholique.",
       "details": "Le roi élu **Frédéric V**, calviniste et gendre du roi d'Angleterre, ne reçoit presque aucune aide. Les États de Bohême n'ont ni argent ni armée aguerrie, tandis que l'empereur **Ferdinand II** (élu en août 1619) obtient les secours de l'Espagne, de la Saxe et surtout de la Ligue catholique, conduite par le duc **Maximilien Ier de Bavière** et son chef de guerre, le comte de **Tilly**. À l'automne 1620, une armée de près de 25 000 hommes, entrée en Bohême par le sud, marche sur Prague.\n\nLe 8 novembre, sur la colline de la **Montagne Blanche** (*Bílá hora*), à l'ouest de la ville, les troupes bohémiennes de **Christian d'Anhalt** tiennent une position retranchée. Mais les soldats, mal payés, sont surpris par l'assaut de la cavalerie ligueuse et de l'infanterie impériale. En moins d'une heure, la ligne est enfoncée et l'armée s'enfuit. Frédéric, qui dînait en ville, s'échappe : on l'appellera « le Roi d'hiver ».\n\nLa répression est impitoyable : 27 chefs protestants sont exécutés sur la place de la Vieille-Ville le 21 juin 1621, des centaines de familles nobles sont dépossédées ou exilées, la noblesse est refaite sur des bases catholiques et germanophones. La *Constitution renouvelée* de 1627 fait du trône de Bohême un bien héréditaire des Habsbourg. Maximilien de Bavière reçoit l'électorat de Frédéric (1623), puis le Haut-Palatinat.",
       "consequences": [
@@ -1886,7 +1927,9 @@
               14.36,
               50.08
             ]
-          ]
+          ],
+          "from": "Passau",
+          "id": "ligue-catholique"
         },
         {
           "side": "États de Bohême",
@@ -1898,14 +1941,16 @@
               50.1
             ],
             [
-              14.0,
+              14,
               50.1
             ],
             [
               14.36,
               50.08
             ]
-          ]
+          ],
+          "from": "Prague",
+          "id": "boheme-1620"
         }
       ],
       "figures": [
@@ -1916,7 +1961,7 @@
           "archetype": "prince-electeur",
           "position": [
             14.2,
-            50.0
+            50
           ]
         },
         {
@@ -1940,7 +1985,7 @@
         12.1411,
         51.2606
       ],
-      "zoom": 5.0,
+      "zoom": 5,
       "summary": "Le 16 novembre 1632, les Suédois battent Wallenstein à Lützen, mais leur roi Gustave-Adolphe est tué : la guerre de Trente Ans se poursuit sans lui.",
       "details": "Après la Montagne Blanche, les Habsbourg et la Ligue catholique triomphent. Le Danemark, qui est intervenu en 1625, est battu. En 1630, le roi de Suède **Gustave-Adolphe**, luthérien et grand réformateur militaire, débarque en Poméranie. Il s'inquiète du pouvoir impérial sur la Baltique, mais prétend aussi défendre la religion protestante, et la France de Richelieu finance son armée. En septembre 1631 il remporte à **Breitenfeld** une grande victoire sur le comte de Tilly, puis parcourt l'Allemagne du Sud.\n\nL'empereur **Ferdinand II** rappelle alors son généralissime **Albrecht de Wallenstein**, un riche noble bohémien. Le 16 novembre 1632, près de **Lützen**, en Saxe, les deux armées se rencontrent dans un épais brouillard. L'infanterie suédoise, organisée en lignes minces et soutenue par une artillerie légère, mène l'assaut contre les positions impériales. À la tête de sa cavalerie, Gustave-Adolphe se perd dans la brume et tombe sous les balles. Le maréchal impérial **Pappenheim** est tué lui aussi. Les Suédois, désormais conduits par **Bernard de Saxe-Weimar**, emportent la décision.\n\nLa victoire est cependant amère. Sans son roi, la Suède perd son moteur ; la fille de Gustave, **Christine**, n'a que six ans. Wallenstein sera assassiné en 1634. La guerre se prolonge et s'élargit : en 1635, la France intervient directement contre les Habsbourg.",
       "consequences": [
@@ -1999,7 +2044,9 @@
               12.14,
               51.26
             ]
-          ]
+          ],
+          "from": "Naumbourg",
+          "id": "suede-1632"
         },
         {
           "side": "Armée impériale",
@@ -2018,7 +2065,9 @@
               12.14,
               51.26
             ]
-          ]
+          ],
+          "from": "Leipzig",
+          "id": "imperiaux-1632"
         }
       ],
       "figures": [
@@ -2030,7 +2079,8 @@
           "position": [
             12.1,
             51.25
-          ]
+          ],
+          "person": "gustave-adolphe"
         },
         {
           "name": "Albrecht de Wallenstein",
@@ -2040,7 +2090,8 @@
           "position": [
             12.2,
             51.3
-          ]
+          ],
+          "person": "wallenstein"
         }
       ]
     },
@@ -2109,7 +2160,7 @@
         16.3337,
         48.2761
       ],
-      "zoom": 5.0,
+      "zoom": 5,
       "summary": "Le 12 septembre 1683, une armée de secours menée par le roi de Pologne Jean Sobieski et le duc de Lorraine brise le siège de Vienne par les Ottomans.",
       "details": "En 1681, Louis XIV s'était emparé de Strasbourg sans que l'Empire puisse réagir. L'empereur **Léopold Ier**, occupé à l'ouest, négocie mal avec les Hongrois révoltés et avec les Ottomans. Le grand vizir **Kara Mustafa Pacha** voit alors l'occasion de s'emparer de « la Pomme d'or », Vienne. Au printemps 1683, une immense armée, les chiffres ottomans allant de 100 000 à 200 000 hommes, marche vers la ville. Léopold quitte Vienne pour Linz puis Passau.\n\nLe comte **Ernst Rüdiger von Starhemberg** défend Vienne avec environ 11 000 hommes. Le siège commence le 14 juillet ; mines, assauts et famine épuisent la garnison. Un appel à l'aide est lancé. Le pape **Innocent XI** réunit une alliance, et le roi de Pologne **Jean III Sobieski** accourt avec des hussards ailés, la cavalerie lourde de sa noblesse. Il rejoint à Tulln les contingents impériaux de **Charles de Lorraine**, ceux de Bavière, de Saxe et de Franconie, soit 65 000 hommes environ.\n\nLe 12 septembre, depuis le **Kahlenberg**, collines au nord-ouest de la ville, l'armée de secours descend sur le camp ottoman. En fin d'après-midi, Sobieski lance quelque 18 000 cavaliers. Les Ottomans s'enfuient en désordre. Sobieski écrit au pape : « *Venimus, vidimus, et Deus vicit* » (« nous sommes venus, nous avons vu, et Dieu a vaincu »). Kara Mustafa sera étranglé à Belgrade sur ordre du sultan en décembre.",
       "consequences": [
@@ -2172,7 +2223,8 @@
               16.33,
               48.27
             ]
-          ]
+          ],
+          "from": "Belgrade"
         },
         {
           "side": "Impériaux (Charles de Lorraine)",
@@ -2196,7 +2248,9 @@
               16.33,
               48.27
             ]
-          ]
+          ],
+          "from": "Linz",
+          "id": "charles-de-lorraine"
         },
         {
           "side": "Pologne (Sobieski)",
@@ -2224,7 +2278,9 @@
               16.33,
               48.27
             ]
-          ]
+          ],
+          "from": "Cracovie",
+          "id": "sobieski"
         }
       ],
       "figures": [
@@ -2365,7 +2421,8 @@
               17.03,
               51.11
             ]
-          ]
+          ],
+          "from": "Berlin"
         }
       ],
       "figures": [
@@ -2375,9 +2432,10 @@
           "faction": "prussiens",
           "archetype": "roi-moderne",
           "position": [
-            17.0,
+            17,
             51.1
-          ]
+          ],
+          "person": "frederic-ii-de-prusse"
         },
         {
           "name": "Marie-Thérèse",
@@ -2388,7 +2446,8 @@
           "position": [
             16.37,
             48.21
-          ]
+          ],
+          "person": "marie-therese"
         }
       ]
     },
@@ -2515,7 +2574,7 @@
         16.7667,
         49.1286
       ],
-      "zoom": 5.0,
+      "zoom": 5,
       "summary": "Le 2 décembre 1805, Napoléon écrase les armées russe et autrichienne sur le plateau de Pratzen : l'Autriche doit signer la paix de Presbourg.",
       "details": "Depuis 1804, l'empereur d'Autriche **François** (deuxième du nom comme empereur romain germanique, premier comme empereur d'Autriche) est aussi empereur du Saint-Empire. En 1805, il rejoint la troisième coalition avec le Royaume-Uni, la Russie et la Suède. Napoléon, qui préparait l'invasion de l'Angleterre, lance la Grande Armée vers le Danube : en octobre, il capture l'armée autrichienne de Mack à Ulm, puis il entre à Vienne le 13 novembre.\n\nPrès de Brünn (Brno), il rejoint l'armée des deux empereurs allemands, François et le tsar **Alexandre Ier**, commandée par le Russe **Koutouzov**. Napoléon feint la faiblesse et abandonne le plateau de **Pratzen**. Les alliés, trop confiants, s'y précipitent pour déborder sa droite. Le 2 décembre, au matin brumeux, il frappe le centre allié dégarni avec les corps de Soult et de Bernadotte. Les Russes, coupés en deux, sont acculés aux étangs gelés de Satschan. Les pertes alliées sont de l'ordre de 27 000 hommes contre environ 9 000 Français.\n\nLe traité de **Presbourg** (26 décembre) oblige l'Autriche à céder la Vénétie, l'Istrie, la Dalmatie, le Tyrol et le Vorarlberg. Napoléon fait de la Bavière et du Wurtemberg des royaumes. Le Saint-Empire, ainsi ébranlé, a quelques mois à vivre.",
       "consequences": [
@@ -2580,7 +2639,8 @@
               16.77,
               49.13
             ]
-          ]
+          ],
+          "from": "Vienne"
         },
         {
           "id": "russes-1805",
@@ -2593,14 +2653,15 @@
               49.59
             ],
             [
-              17.0,
+              17,
               49.28
             ],
             [
               16.77,
               49.13
             ]
-          ]
+          ],
+          "from": "Olmütz"
         },
         {
           "id": "autrichiens-1805",
@@ -2620,7 +2681,8 @@
               16.77,
               49.13
             ]
-          ]
+          ],
+          "from": "Olmütz"
         }
       ],
       "figures": [
@@ -2643,7 +2705,8 @@
           "position": [
             16.95,
             49.2
-          ]
+          ],
+          "person": "francois-ii"
         },
         {
           "name": "Alexandre Ier",
@@ -2700,7 +2763,8 @@
           "position": [
             16.37,
             48.21
-          ]
+          ],
+          "person": "francois-ii"
         },
         {
           "name": "Napoléon Ier",

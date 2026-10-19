@@ -58,6 +58,13 @@ export const FACTION_COLORS = {
   rifains: '#6a4a2a',
   americains: '#1f3f7a',
   independantistes: '#2a8f5a',
+  imperiaux: '#d9c000',
+  'communes-lombardes': '#d65a9a',
+  suisses: '#cf3a3a',
+  hussites: '#7a2e1e',
+  lansquenets: '#4b4fc0',
+  magyars: '#6aa84f',
+  suedois: '#2a7fd6',
 } satisfies Record<Faction, string>;
 
 /** Composant React (démo) du soldat d'une faction. */

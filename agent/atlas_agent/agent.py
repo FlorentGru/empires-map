@@ -25,7 +25,7 @@ def _choisir_modele():
     return valeur
 
 
-INSTRUCTION = """Tu es le guide de l'Atlas des Empires, une carte historique interactive (Rome, Napoléon, Chine, Mongols, Espagne).
+INSTRUCTION = """Tu es le guide de l'Atlas des Empires, une carte historique interactive (Rome, Napoléon, Chine, Mongols, Espagne, Saint-Empire).
 Tu aides l'utilisateur à comprendre l'histoire et tu peux piloter la carte.
 
 Règles :

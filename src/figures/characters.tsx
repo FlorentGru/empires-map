@@ -20,6 +20,7 @@ const WHITE = '#f4efe0';
 const WOOD = '#8a5a2b';
 const SKIN = '#e0b48a';
 const STEEL_C = '#a9adb0';
+const BLACK_C = '#1f1a14';
 
 interface CharSpec {
   skin?: string;
@@ -574,6 +575,111 @@ export const CHARACTER_SPECS = {
       circ(18, 4.8, 1, GOLD, NS) +
       moust('#2d2018'),
     front: rect(11, 36, 14, 2, '#4a2f1a', 0, NS),
+  },
+  'empereur-germanique': {
+    robe: '#7a2a7a',
+    body: WIDE,
+    back: path('M9 18Q18 15 27 18L31 46L5 46Z', '#5a1f5a'),
+    deco:
+      path('M10.6 16.6Q18 22.4 25.4 16.6L26.2 21Q18 27.6 9.8 21Z', WHITE) +
+      dots([
+        [13, 19.4],
+        [16, 21],
+        [20, 21],
+        [23, 19.4],
+        [11.6, 21.2],
+        [24.4, 21.2],
+      ]) +
+      path('M14.6 27H21.4L22 33Q18 35 14 33Z', GOLD) +
+      path('M18 28L19.4 30L18 32.4L16.6 30Z', BLACK_C) +
+      rect(8.5, 43.2, 19, 2.8, GOLD, 0, NS) +
+      line('M8.5 40H27.5', WHITE, 1.4),
+    head:
+      hairCap('#8a6a3a') +
+      beard('#8a6a3a') +
+      path('M12.8 7.6H23.2L23.6 3.6L21 5.2L18 2L15 5.2L12.4 3.6Z', GOLD) +
+      line('M13 4.6Q18 -1.6 23 4.6', GOLD, 1.3) +
+      rect(17.4, -3.2, 1.2, 3.6, GOLD, 0, NS) +
+      rect(16.2, -2, 3.6, 1.1, GOLD, 0, NS) +
+      circ(18, 5.2, 0.8, '#c0392b', NS),
+    front:
+      rect(27.2, 18, 1.2, 28, GOLD) +
+      circ(27.8, 16.6, 2, GOLD) +
+      circ(8.6, 33, 3.2, GOLD) +
+      line('M5.6 33H11.6M8.6 30V36', '#a8281e', 0.9) +
+      rect(8, 28.4, 1.2, 1.6, GOLD, 0, NS),
+  },
+  'prince-electeur': {
+    robe: '#a8281e',
+    body: WIDE,
+    back: path('M9 18Q18 15 27 18L30 46L6 46Z', '#7a1a14'),
+    deco:
+      path('M10.6 16.6Q18 22.4 25.4 16.6L26.2 21Q18 27.6 9.8 21Z', WHITE) +
+      dots([
+        [13, 19.4],
+        [16, 21],
+        [20, 21],
+        [23, 19.4],
+      ]) +
+      line('M12 21.4Q18 33 24 21.4', GOLD, 1.5) +
+      circ(18, 29.6, 1.4, GOLD) +
+      rect(8.5, 43.2, 19, 2.8, WHITE, 0, NS) +
+      dots([
+        [11, 44.6],
+        [15, 44.6],
+        [19, 44.6],
+        [23, 44.6],
+      ]),
+    head:
+      hairCap('#6a4a2a') +
+      moust('#6a4a2a') +
+      path('M12.8 7.4Q12.4 0.6 18 0.2Q23.6 0.6 23.2 7.4Z', '#a8281e') +
+      rect(12.2, 5.8, 11.6, 2.8, WHITE, 1) +
+      dots([
+        [14, 7.2],
+        [17, 7.2],
+        [20, 7.2],
+        [23, 7.2],
+      ]) +
+      circ(18, 0.2, 1, GOLD, NS),
+    front: rect(26.8, 14, 1.2, 33, WOOD) + circ(27.4, 13, 1.9, GOLD),
+  },
+  reformateur: {
+    skin: '#e0b48a',
+    robe: '#1f1a14',
+    body: WIDE,
+    deco: path('M12 17.2Q18 21.6 24 17.2L24.6 20.4Q18 24 11.4 20.4Z', WHITE) + line('M18 22.4V43', '#3a3028', 0.8) + rect(8.5, 43.2, 19, 2.8, '#3a3028', 0, NS),
+    head:
+      path('M12.6 10.4Q12.2 5.4 18 5.4Q23.8 5.4 23.4 10.4Q22.6 7.8 18 7.8Q13.4 7.8 12.6 10.4Z', '#5c3a1c') +
+      ell(18, 5, 7.6, 1.6, '#1f1a14') +
+      path('M12.6 4.8Q13 1.6 18 1.4Q23 1.6 23.4 4.8Z', '#1f1a14') +
+      path('M14.4 14.2Q18 16.4 21.6 14.2Q18 15 14.4 14.2Z', '#c9a07a', NS),
+    front:
+      path('M9.4 30.4L18 32.6L26.6 30.4L26.6 40L18 42.2L9.4 40Z', '#7a4a1e') +
+      path('M10.6 31.4L18 33.4L25.4 31.4L25.4 38.8L18 40.8L10.6 38.8Z', '#f5ecd2', 'stroke-width="0.7"') +
+      line('M18 33.4V40.8M12 34.4L16.4 35.4M12 36.2L16.4 37.2M19.6 35.4L24 34.4M19.6 37.2L24 36.2', '#8a8470', 0.5) +
+      circ(9.4, 32.4, 1.9, SKIN) +
+      circ(26.6, 32.4, 1.9, SKIN),
+  },
+  capitaine: {
+    robe: '#8e949a',
+    body: BODY,
+    back: path('M10 18Q18 15 26 18L29 40L7 40Z', '#2f5f9b'),
+    deco:
+      path('M11.4 18.4Q18 16 24.6 18.4L25.2 31Q18 33 10.8 31Z', STEEL_C) +
+      line('M18 18.6V31.6M13 24H23', '#6e747a', 0.8) +
+      path('M11 16.8Q18 21 25 16.8L24.6 19.8Q18 23.6 11.4 19.8Z', WHITE) +
+      line('M11 18L26 34', RED, 2.6) +
+      rect(10.6, 33, 14.8, 2.2, '#4a2f1a', 0, NS) +
+      line('M9 38H27', '#4a2f1a', 1),
+    head:
+      ell(18, 6.4, 9.4, 1.8, '#4a2f1a') +
+      path('M12.4 6.4Q12.6 1.6 18 1.4Q23.4 1.6 23.6 6.4Z', '#4a2f1a') +
+      path('M21 2.4Q28 -2.6 31 3Q27 1.6 22.6 5.6Z', WHITE) +
+      path('M20 2Q25.4 -4 29 -1.6Q25 -1.4 21.6 3.4Z', RED) +
+      moust('#3a2a1a') +
+      path('M16.8 14.4Q18 17.8 19.2 14.4Z', '#3a2a1a', NS),
+    front: rect(26.4, 28, 1.2, 12, WOOD) + circ(27, 27.4, 1.5, GOLD) + rect(26.6, 38.6, 0.8, 1, GOLD, 0, NS) + line('M9 36L5 45', STEEL_C, 1.2),
   },
   sage: {
     robe: '#2b3a6b',

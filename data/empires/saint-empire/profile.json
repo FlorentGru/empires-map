@@ -1,0 +1,930 @@
+{
+  "empire": "saint-empire",
+  "periods": [
+    {
+      "id": "ottoniens-saliens",
+      "name": "Ottoniens et Saliens",
+      "start": 962,
+      "end": 1138,
+      "population": {
+        "total": {
+          "value": 8000000,
+          "low": 6000000,
+          "high": 10000000,
+          "year": 1000,
+          "note": "Estimation reconstruite : Allemagne et Italie du Nord, Bohême et Bourgogne comprises.",
+          "source": {
+            "label": "Wikipédia : Saint-Empire romain germanique",
+            "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique"
+          }
+        },
+        "cities": [
+          {
+            "name": "Cologne",
+            "population": {
+              "value": 20000,
+              "low": 15000,
+              "high": 30000,
+              "year": 1100,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Cologne",
+                "url": "https://fr.wikipedia.org/wiki/Cologne"
+              }
+            }
+          },
+          {
+            "name": "Mayence",
+            "population": {
+              "value": 10000,
+              "low": 6000,
+              "high": 15000,
+              "year": 1100,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Mayence",
+                "url": "https://fr.wikipedia.org/wiki/Mayence"
+              }
+            }
+          },
+          {
+            "name": "Milan",
+            "population": {
+              "value": 30000,
+              "low": 20000,
+              "high": 40000,
+              "year": 1100,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Milan",
+                "url": "https://fr.wikipedia.org/wiki/Milan"
+              }
+            }
+          },
+          {
+            "name": "Ratisbonne",
+            "population": {
+              "value": 10000,
+              "low": 6000,
+              "high": 15000,
+              "year": 1100,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Ratisbonne",
+                "url": "https://fr.wikipedia.org/wiki/Ratisbonne"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 2,
+          "low": 1,
+          "high": 3,
+          "year": 1000,
+          "note": "Reconstruction très incertaine.",
+          "source": {
+            "label": "Wikipédia : Saint-Empire romain germanique",
+            "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique"
+          }
+        },
+        "resources": [
+          "Céréales",
+          "Argent des mines du Harz",
+          "Sel",
+          "Bois"
+        ],
+        "currency": "Denier d'argent frappé par les évêques et les ducs.",
+        "taxation": "Revenus des domaines royaux, péages et services dus par les évêchés ; pas d'impôt général.",
+        "trade": "Routes du Rhin et du Danube, foires, échanges avec Venise et Byzance."
+      },
+      "army": {
+        "size": {
+          "value": 15000,
+          "low": 8000,
+          "high": 30000,
+          "year": 1000,
+          "note": "Ordre de grandeur pour une grande campagne.",
+          "source": {
+            "label": "Wikipédia : Saint-Empire romain germanique",
+            "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique"
+          }
+        },
+        "composition": "Cavaliers lourds fournis par les vassaux, avec quelques fantassins levés pour la campagne.",
+        "recruitment": "Levée féodale et contingents des évêques et abbés.",
+        "famousUnits": [
+          "Chevaliers saxons",
+          "Contingents épiscopaux"
+        ],
+        "innovations": [
+          "Cavalerie lourde en masse",
+          "Châteaux de pierre"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie élective, souvent héréditaire en fait.",
+        "head": "Roi de Germanie puis empereur couronné à Rome.",
+        "succession": "Élection par les grands, qui choisissent presque toujours un fils ou parent du défunt.",
+        "institutions": "Cour itinérante, diètes des grands, chapelle royale.",
+        "administration": "Duchés, comtés et évêchés ; l'Église impériale fournit des gouverneurs lettrés.",
+        "provinces": {
+          "value": 5,
+          "low": 4,
+          "high": 6,
+          "year": 1000,
+          "note": "Grands duchés (Saxe, Bavière, Souabe, Franconie, Lorraine) : ordre de grandeur.",
+          "source": {
+            "label": "Wikipédia : Saint-Empire romain germanique",
+            "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique"
+          }
+        },
+        "law": "Coutumes germaniques, droit canon ; paix de Dieu."
+      },
+      "society": {
+        "religions": [
+          "Christianisme latin",
+          "Survivances païennes slaves"
+        ],
+        "languages": [
+          "Latin",
+          "Vieil allemand",
+          "Langues slaves"
+        ],
+        "structure": "Société féodale : paysans dépendants, chevaliers, évêques et grands seigneurs.",
+        "women": "Rôle de régentes, comme Théophano ou Agnès de Poitou ; abbesses puissantes."
+      },
+      "culture": {
+        "inventions": [
+          "Collier d'épaule pour le cheval",
+          "Assolement triennal"
+        ],
+        "works": [
+          "Évangéliaire d'Otton III",
+          "Cathédrale de Spire"
+        ],
+        "scholars": [
+          "Hrotsvita de Gandersheim",
+          "Gerbert d'Aurillac"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Voies romaines héritées et chemins médiévaux ; palais et cathédrales romanes.",
+        "roads": {
+          "value": 20000,
+          "low": 10000,
+          "high": 40000,
+          "year": 1000,
+          "note": "Ordre de grandeur.",
+          "source": {
+            "label": "Wikipédia : Saint-Empire romain germanique",
+            "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique"
+          }
+        }
+      },
+      "legacy": "Fonde l'idée d'un empire chrétien germanique lié à Rome et à l'Italie."
+    },
+    {
+      "id": "hohenstaufen",
+      "name": "Les Hohenstaufen",
+      "start": 1138,
+      "end": 1273,
+      "population": {
+        "total": {
+          "value": 12000000,
+          "low": 9000000,
+          "high": 15000000,
+          "year": 1200,
+          "note": "Estimation reconstruite : croissance des défrichements et des villes.",
+          "source": {
+            "label": "Wikipédia : Saint-Empire romain germanique",
+            "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique"
+          }
+        },
+        "cities": [
+          {
+            "name": "Cologne",
+            "population": {
+              "value": 40000,
+              "low": 30000,
+              "high": 50000,
+              "year": 1250,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Cologne",
+                "url": "https://fr.wikipedia.org/wiki/Cologne"
+              }
+            }
+          },
+          {
+            "name": "Milan",
+            "population": {
+              "value": 100000,
+              "low": 70000,
+              "high": 120000,
+              "year": 1250,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Milan",
+                "url": "https://fr.wikipedia.org/wiki/Milan"
+              }
+            }
+          },
+          {
+            "name": "Lübeck",
+            "population": {
+              "value": 20000,
+              "low": 12000,
+              "high": 25000,
+              "year": 1250,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Lübeck",
+                "url": "https://fr.wikipedia.org/wiki/L%C3%BCbeck"
+              }
+            }
+          },
+          {
+            "name": "Palerme",
+            "population": {
+              "value": 50000,
+              "low": 35000,
+              "high": 70000,
+              "year": 1250,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Palerme",
+                "url": "https://fr.wikipedia.org/wiki/Palerme"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 3,
+          "low": 2,
+          "high": 4,
+          "year": 1200,
+          "note": "Reconstruction très incertaine.",
+          "source": {
+            "label": "Wikipédia : Saint-Empire romain germanique",
+            "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique"
+          }
+        },
+        "resources": [
+          "Céréales",
+          "Argent",
+          "Draps",
+          "Sel"
+        ],
+        "currency": "Deniers d'argent régionaux, augustales d'or de Frédéric II en Sicile.",
+        "taxation": "Revenus des domaines, villes impériales, péages ; fiscalité plus forte en Sicile.",
+        "trade": "Foires, ligue hanséatique naissante, grandes cités marchandes d'Italie du Nord."
+      },
+      "army": {
+        "size": {
+          "value": 20000,
+          "low": 10000,
+          "high": 40000,
+          "year": 1200,
+          "note": "Ordre de grandeur pour une armée impériale.",
+          "source": {
+            "label": "Wikipédia : Saint-Empire romain germanique",
+            "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique"
+          }
+        },
+        "composition": "Chevaliers, ministériaux, archers sarrasins de Sicile et milices urbaines.",
+        "recruitment": "Levée féodale, ministériaux de l'empereur, mercenaires payés.",
+        "famousUnits": [
+          "Ministériaux impériaux",
+          "Archers sarrasins de Lucera"
+        ],
+        "innovations": [
+          "Mercenaires soldés",
+          "Châteaux hohenstaufen"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie élective, forte tendance héréditaire.",
+        "head": "Empereur, roi des Romains, roi de Sicile.",
+        "succession": "Élection par les princes, de plus en plus restreints en nombre.",
+        "institutions": "Diètes impériales, cour de justice impériale, chancellerie.",
+        "administration": "Ministériaux, villes impériales, principautés territoriales ; administration centralisée en Sicile.",
+        "provinces": {
+          "value": 10,
+          "low": 6,
+          "high": 15,
+          "year": 1200,
+          "note": "Grandes principautés : ordre de grandeur.",
+          "source": {
+            "label": "Wikipédia : Saint-Empire romain germanique",
+            "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique"
+          }
+        },
+        "law": "Droit romain redécouvert ; Constitutions de Melfi en Sicile (1231), Landfrieden."
+      },
+      "society": {
+        "religions": [
+          "Christianisme latin",
+          "Juifs",
+          "Musulmans de Sicile"
+        ],
+        "languages": [
+          "Latin",
+          "Moyen haut-allemand",
+          "Italien",
+          "Langues slaves"
+        ],
+        "structure": "Féodalité, paysans libres de colonisation à l'est, bourgeoisie urbaine en essor.",
+        "women": "Rôle limité ; mystiques et abbesses comme Hildegarde de Bingen."
+      },
+      "culture": {
+        "inventions": [
+          "Universités (Bologne, Naples)",
+          "Moulin à vent"
+        ],
+        "works": [
+          "Nibelungenlied",
+          "Cathédrales gothiques naissantes"
+        ],
+        "scholars": [
+          "Hildegarde de Bingen",
+          "Albert le Grand"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Colonisation de l'Est, villes neuves, châteaux, routes alpines du Brenner et du Saint-Gothard.",
+        "roads": {
+          "value": 30000,
+          "low": 15000,
+          "high": 50000,
+          "year": 1200,
+          "note": "Ordre de grandeur.",
+          "source": {
+            "label": "Wikipédia : Saint-Empire romain germanique",
+            "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique"
+          }
+        }
+      },
+      "legacy": "Apogée de l'idée impériale, puis effacement du pouvoir central au profit des princes."
+    },
+    {
+      "id": "princes-electeurs",
+      "name": "Le temps des princes électeurs",
+      "start": 1273,
+      "end": 1438,
+      "population": {
+        "total": {
+          "value": 11000000,
+          "low": 8000000,
+          "high": 14000000,
+          "year": 1400,
+          "note": "Estimation reconstruite : recul après la peste noire de 1348.",
+          "source": {
+            "label": "Wikipédia : Saint-Empire romain germanique",
+            "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique"
+          }
+        },
+        "cities": [
+          {
+            "name": "Cologne",
+            "population": {
+              "value": 40000,
+              "low": 30000,
+              "high": 50000,
+              "year": 1400,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Cologne",
+                "url": "https://fr.wikipedia.org/wiki/Cologne"
+              }
+            }
+          },
+          {
+            "name": "Prague",
+            "population": {
+              "value": 40000,
+              "low": 30000,
+              "high": 50000,
+              "year": 1400,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Prague",
+                "url": "https://fr.wikipedia.org/wiki/Prague"
+              }
+            }
+          },
+          {
+            "name": "Nuremberg",
+            "population": {
+              "value": 25000,
+              "low": 20000,
+              "high": 30000,
+              "year": 1400,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Nuremberg",
+                "url": "https://fr.wikipedia.org/wiki/Nuremberg"
+              }
+            }
+          },
+          {
+            "name": "Lübeck",
+            "population": {
+              "value": 25000,
+              "low": 20000,
+              "high": 30000,
+              "year": 1400,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Lübeck",
+                "url": "https://fr.wikipedia.org/wiki/L%C3%BCbeck"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 3,
+          "low": 2,
+          "high": 4,
+          "year": 1400,
+          "note": "Reconstruction très incertaine.",
+          "source": {
+            "label": "Wikipédia : Saint-Empire romain germanique",
+            "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique"
+          }
+        },
+        "resources": [
+          "Argent de Kutná Hora",
+          "Sel de Lunebourg",
+          "Draps",
+          "Bois"
+        ],
+        "currency": "Florin du Rhin, gros de Prague, pièces des villes.",
+        "taxation": "Droits des princes sur leurs terres ; l'empereur vit de ses domaines héréditaires.",
+        "trade": "Hanse, foires de Francfort, grandes compagnies marchandes du sud de l'Allemagne."
+      },
+      "army": {
+        "size": {
+          "value": 15000,
+          "low": 8000,
+          "high": 25000,
+          "year": 1400,
+          "note": "Ordre de grandeur.",
+          "source": {
+            "label": "Wikipédia : Saint-Empire romain germanique",
+            "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique"
+          }
+        },
+        "composition": "Cavalerie féodale, milices de villes, mercenaires et arbalétriers.",
+        "recruitment": "Levées des princes et des villes, troupes soldées.",
+        "famousUnits": [
+          "Fantassins suisses",
+          "Wagenburg hussite"
+        ],
+        "innovations": [
+          "Piquiers en phalange",
+          "Chariots de guerre hussites"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie élective fondée sur la Bulle d'or de 1356.",
+        "head": "Roi des Romains puis empereur, élu par sept princes électeurs.",
+        "succession": "Élection à la majorité par les sept princes ; l'empereur peut chercher à placer sa dynastie.",
+        "institutions": "Collège des électeurs, diète (Reichstag), villes libres.",
+        "administration": "Principautés territoriales ; l'empereur gouverne surtout par ses États héréditaires.",
+        "provinces": {
+          "value": 7,
+          "low": 7,
+          "high": 7,
+          "year": 1356,
+          "note": "Sept électorats fixés par la Bulle d'or.",
+          "source": {
+            "label": "Wikipédia : Saint-Empire romain germanique",
+            "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique"
+          }
+        },
+        "law": "Bulle d'or (1356), Landfrieden, droit des villes."
+      },
+      "society": {
+        "religions": [
+          "Christianisme latin",
+          "Hussites",
+          "Juifs persécutés"
+        ],
+        "languages": [
+          "Allemand",
+          "Tchèque",
+          "Latin",
+          "Italien"
+        ],
+        "structure": "Noblesse, patriciats urbains et corporations, paysannerie dépendante.",
+        "women": "Peu de droits publics ; beguinages et couvents comme espaces d'autonomie."
+      },
+      "culture": {
+        "inventions": [
+          "Poudre à canon en usage",
+          "Horloges mécaniques"
+        ],
+        "works": [
+          "Cathédrale Saint-Guy",
+          "Pont Charles"
+        ],
+        "scholars": [
+          "Jan Hus",
+          "Maître Eckhart"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Pont Charles, villes fortifiées, routes commerciales de la Hanse.",
+        "roads": {
+          "value": 30000,
+          "low": 15000,
+          "high": 50000,
+          "year": 1400,
+          "note": "Ordre de grandeur.",
+          "source": {
+            "label": "Wikipédia : Saint-Empire romain germanique",
+            "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique"
+          }
+        }
+      },
+      "legacy": "La Bulle d'or fixe pour quatre siècles la constitution électorale de l'Empire."
+    },
+    {
+      "id": "habsbourg-reforme",
+      "name": "Les Habsbourg et la Réforme",
+      "start": 1438,
+      "end": 1648,
+      "population": {
+        "total": {
+          "value": 16000000,
+          "low": 13000000,
+          "high": 20000000,
+          "year": 1600,
+          "note": "Estimation reconstruite : Empire hors possessions espagnoles.",
+          "source": {
+            "label": "Wikipédia : Saint-Empire romain germanique",
+            "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique"
+          }
+        },
+        "cities": [
+          {
+            "name": "Augsbourg",
+            "population": {
+              "value": 45000,
+              "low": 35000,
+              "high": 55000,
+              "year": 1600,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Augsbourg",
+                "url": "https://fr.wikipedia.org/wiki/Augsbourg"
+              }
+            }
+          },
+          {
+            "name": "Cologne",
+            "population": {
+              "value": 40000,
+              "low": 35000,
+              "high": 50000,
+              "year": 1600,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Cologne",
+                "url": "https://fr.wikipedia.org/wiki/Cologne"
+              }
+            }
+          },
+          {
+            "name": "Vienne",
+            "population": {
+              "value": 50000,
+              "low": 40000,
+              "high": 60000,
+              "year": 1600,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Vienne",
+                "url": "https://fr.wikipedia.org/wiki/Vienne_(Autriche)"
+              }
+            }
+          },
+          {
+            "name": "Prague",
+            "population": {
+              "value": 60000,
+              "low": 45000,
+              "high": 80000,
+              "year": 1600,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Prague",
+                "url": "https://fr.wikipedia.org/wiki/Prague"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 4,
+          "low": 3,
+          "high": 5,
+          "year": 1600,
+          "note": "Reconstruction très incertaine.",
+          "source": {
+            "label": "Wikipédia : Saint-Empire romain germanique",
+            "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique"
+          }
+        },
+        "resources": [
+          "Argent et cuivre des mines",
+          "Sel",
+          "Draps",
+          "Cuivre de Slovaquie"
+        ],
+        "currency": "Thaler d'argent, florin ; crises monétaires de la Kipper- und Wipperzeit (vers 1620).",
+        "taxation": "Aides votées par la diète, impôt de l'Empire (« pfennig commun »), fiscalité des États héréditaires.",
+        "trade": "Banques de Fugger et Welser, imprimerie, Hanse en déclin."
+      },
+      "army": {
+        "size": {
+          "value": 40000,
+          "low": 20000,
+          "high": 100000,
+          "year": 1632,
+          "note": "Armées de la guerre de Trente Ans, selon les camps.",
+          "source": {
+            "label": "Wikipédia : Saint-Empire romain germanique",
+            "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique"
+          }
+        },
+        "composition": "Piquiers, mousquetaires, cavalerie et artillerie ; mercenaires dominants.",
+        "recruitment": "Entrepreneurs militaires comme Wallenstein ; contingents des cercles.",
+        "famousUnits": [
+          "Lansquenets",
+          "Armée de Wallenstein",
+          "Tercios espagnols"
+        ],
+        "innovations": [
+          "Lansquenets",
+          "Armées permanentes de Gustave-Adolphe"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie élective fortement limitée par les États.",
+        "head": "Empereur de la maison de Habsbourg, presque continuellement élu.",
+        "succession": "Élection par les électeurs, qui choisissent toujours un Habsbourg.",
+        "institutions": "Diète, Chambre impériale (1495), Conseil aulique, cercles d'Empire.",
+        "administration": "Dix cercles d'Empire, principautés territoriales, villes libres.",
+        "provinces": {
+          "value": 10,
+          "low": 10,
+          "high": 10,
+          "year": 1500,
+          "note": "Dix cercles d'Empire.",
+          "source": {
+            "label": "Wikipédia : Saint-Empire romain germanique",
+            "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique"
+          }
+        },
+        "law": "Paix perpétuelle (1495), paix d'Augsbourg (1555) : cujus regio, ejus religio."
+      },
+      "society": {
+        "religions": [
+          "Catholicisme",
+          "Luthéranisme",
+          "Calvinisme"
+        ],
+        "languages": [
+          "Allemand",
+          "Tchèque",
+          "Latin",
+          "Italien"
+        ],
+        "structure": "Noblesse, bourgeoisie marchande, paysannerie ; guerre des Paysans de 1525.",
+        "women": "Chasses aux sorcières, mais écoles de filles et rôle des imprimeuses."
+      },
+      "culture": {
+        "inventions": [
+          "Imprimerie à caractères mobiles",
+          "Montre de poche"
+        ],
+        "works": [
+          "Bible de Luther",
+          "Retables de Dürer"
+        ],
+        "scholars": [
+          "Johannes Kepler",
+          "Paracelse"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Postes impériales des Taxis, villes fortifiées, imprimeries.",
+        "roads": {
+          "value": 35000,
+          "low": 20000,
+          "high": 60000,
+          "year": 1600,
+          "note": "Ordre de grandeur.",
+          "source": {
+            "label": "Wikipédia : Saint-Empire romain germanique",
+            "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique"
+          }
+        }
+      },
+      "legacy": "La Réforme et la guerre de Trente Ans ruinent l'unité religieuse de l'Empire."
+    },
+    {
+      "id": "apres-westphalie",
+      "name": "Après Westphalie",
+      "start": 1648,
+      "end": 1806,
+      "population": {
+        "total": {
+          "value": 22000000,
+          "low": 18000000,
+          "high": 26000000,
+          "year": 1750,
+          "note": "Estimation reconstruite : Empire sans les possessions hongroises.",
+          "source": {
+            "label": "Wikipédia : Saint-Empire romain germanique",
+            "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique"
+          }
+        },
+        "cities": [
+          {
+            "name": "Vienne",
+            "population": {
+              "value": 175000,
+              "low": 150000,
+              "high": 200000,
+              "year": 1750,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Vienne",
+                "url": "https://fr.wikipedia.org/wiki/Vienne_(Autriche)"
+              }
+            }
+          },
+          {
+            "name": "Berlin",
+            "population": {
+              "value": 90000,
+              "low": 80000,
+              "high": 110000,
+              "year": 1750,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Berlin",
+                "url": "https://fr.wikipedia.org/wiki/Berlin"
+              }
+            }
+          },
+          {
+            "name": "Hambourg",
+            "population": {
+              "value": 90000,
+              "low": 75000,
+              "high": 105000,
+              "year": 1750,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Hambourg",
+                "url": "https://fr.wikipedia.org/wiki/Hambourg"
+              }
+            }
+          },
+          {
+            "name": "Prague",
+            "population": {
+              "value": 70000,
+              "low": 55000,
+              "high": 90000,
+              "year": 1750,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Prague",
+                "url": "https://fr.wikipedia.org/wiki/Prague"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 4,
+          "low": 3,
+          "high": 5,
+          "year": 1750,
+          "note": "Reconstruction très incertaine.",
+          "source": {
+            "label": "Wikipédia : Saint-Empire romain germanique",
+            "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique"
+          }
+        },
+        "resources": [
+          "Céréales",
+          "Fer et charbon",
+          "Lin et textile",
+          "Argent de Saxe"
+        ],
+        "currency": "Thaler de convention, florin ; monnaies de nombreux États.",
+        "taxation": "Fiscalité propre à chaque État ; l'Empire ne lève presque pas d'impôt.",
+        "trade": "Foires de Leipzig, ports de Hambourg et Brême, manufactures d'État."
+      },
+      "army": {
+        "size": {
+          "value": 150000,
+          "low": 100000,
+          "high": 200000,
+          "year": 1750,
+          "note": "Armées de l'Autriche et de la Prusse surtout ; armée d'Empire modeste.",
+          "source": {
+            "label": "Wikipédia : Saint-Empire romain germanique",
+            "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique"
+          }
+        },
+        "composition": "Infanterie en lignes, cavalerie et artillerie des grands États.",
+        "recruitment": "Armées permanentes d'État ; contingents des cercles pour l'Empire.",
+        "famousUnits": [
+          "Infanterie prussienne",
+          "Pandours et hussards autrichiens"
+        ],
+        "innovations": [
+          "Ordre oblique de Frédéric II",
+          "Armée permanente"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie élective et fédérale, de fait un ensemble d'États indépendants.",
+        "head": "Empereur Habsbourg, puis Habsbourg-Lorraine.",
+        "succession": "Élection par les électeurs, qui choisissent un Habsbourg.",
+        "institutions": "Diète perpétuelle de Ratisbonne, tribunaux d'Empire, cercles.",
+        "administration": "Environ 300 territoires souverains : États, villes libres, abbayes.",
+        "provinces": {
+          "value": 300,
+          "low": 200,
+          "high": 350,
+          "year": 1750,
+          "note": "Territoires souverains : ordre de grandeur.",
+          "source": {
+            "label": "Wikipédia : Saint-Empire romain germanique",
+            "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique"
+          }
+        },
+        "law": "Traités de Westphalie (1648), droit d'Empire, codes d'États."
+      },
+      "society": {
+        "religions": [
+          "Catholicisme",
+          "Luthéranisme",
+          "Calvinisme",
+          "Juifs"
+        ],
+        "languages": [
+          "Allemand",
+          "Tchèque",
+          "Hongrois",
+          "Italien"
+        ],
+        "structure": "Ordres, absolutisme éclairé, paysannerie progressivement affranchie.",
+        "women": "Accès croissant à l'éducation ; souveraines comme Marie-Thérèse."
+      },
+      "culture": {
+        "inventions": [
+          "Porcelaine de Meissen",
+          "Paratonnerre (usage)"
+        ],
+        "works": [
+          "Œuvres de Bach",
+          "Symphonies de Haydn et Mozart"
+        ],
+        "scholars": [
+          "Leibniz",
+          "Kant"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Palais baroques, canaux, routes d'État ; Vienne et Berlin se modernisent.",
+        "roads": {
+          "value": 50000,
+          "low": 30000,
+          "high": 80000,
+          "year": 1750,
+          "note": "Ordre de grandeur.",
+          "source": {
+            "label": "Wikipédia : Saint-Empire romain germanique",
+            "url": "https://fr.wikipedia.org/wiki/Saint-Empire_romain_germanique"
+          }
+        }
+      },
+      "legacy": "Dissous en 1806 sous la pression de Napoléon, il laisse l'Autriche, la Prusse et la future Allemagne."
+    }
+  ]
+}

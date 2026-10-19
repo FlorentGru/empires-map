@@ -1,0 +1,269 @@
+[
+  {
+    "id": "droit-de-lubeck-hanse",
+    "name": "Hanse et droit de Lübeck",
+    "year": 1241,
+    "approx": true,
+    "place": "Lübeck",
+    "at": [
+      10.69,
+      53.87
+    ],
+    "category": "administration",
+    "description": "Vers 1241, Lübeck et Hambourg s'allient pour protéger leurs marchands, première étape de la Hanse. Les villes marchandes de la Baltique et de la mer du Nord adoptent le droit de Lübeck, une charte commune, et se fédèrent sans prince unique. Il s'agit moins d'une invention que d'une organisation originale du commerce, qui compte jusqu'à deux cents villes aux XIVe et XVe siècles.",
+    "impact": "Elle montre qu'un réseau de villes marchandes peut s'organiser, commercer et même faire la guerre sans État. La Hanse structure l'économie du nord de l'Europe pendant trois siècles.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Hanse"
+      },
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Droit_de_Lübeck"
+      }
+    ]
+  },
+  {
+    "id": "bulle-d-or",
+    "name": "Bulle d'or de 1356",
+    "year": 1356,
+    "place": "Nuremberg et Metz",
+    "at": [
+      11.08,
+      49.45
+    ],
+    "inventor": "Charles IV",
+    "category": "droit",
+    "description": "Promulguée par l'empereur Charles IV lors des diètes de Nuremberg et de Metz, la Bulle d'or fixe la procédure d'élection du roi des Romains. Sept princes électeurs, trois archevêques et quatre laïcs, élisent à la majorité, sans l'accord du pape. Elle reste la loi fondamentale de l'Empire jusqu'en 1806 et consacre le pouvoir des princes.",
+    "impact": "Elle remplace les querelles de succession par une règle écrite et majoritaire, et soustrait l'élection au pape. Elle fonde pour quatre siècles un régime où l'empereur est élu par les princes.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Bulle_d'or_(1356)"
+      }
+    ]
+  },
+  {
+    "id": "imprimerie-gutenberg",
+    "name": "Imprimerie à caractères mobiles",
+    "year": 1450,
+    "approx": true,
+    "place": "Mayence",
+    "at": [
+      8.27,
+      50
+    ],
+    "inventor": "Johannes Gutenberg",
+    "category": "technique",
+    "description": "Vers 1450, l'orfèvre Johannes Gutenberg met au point à Mayence l'imprimerie à caractères mobiles métalliques, avec un alliage fondu dans un moule, une encre grasse et une presse inspirée des pressoirs. Les caractères mobiles existaient déjà en Asie ; l'originalité est le procédé complet, adapté à l'alphabet latin. La Bible dite à quarante-deux lignes sort vers 1455.",
+    "impact": "Elle réduit massivement le coût du livre et accélère la circulation des idées. Humanisme, Réforme et science moderne s'appuient sur elle ; son effet est comparable à celui d'internet.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Johannes_Gutenberg"
+      },
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Imprimerie"
+      }
+    ]
+  },
+  {
+    "id": "poste-thurn-und-taxis",
+    "name": "Poste impériale de Thurn und Taxis",
+    "year": 1490,
+    "place": "Innsbruck",
+    "at": [
+      11.39,
+      47.27
+    ],
+    "inventor": "Janetto de Tassis",
+    "category": "administration",
+    "description": "En 1490, Janetto de Tassis organise pour Maximilien Ier un service de courriers à relais entre Innsbruck et les Pays-Bas. Ce réseau, aux étapes régulières, devient la poste impériale, puis un service ouvert aux particuliers contre paiement. La famille Thurn und Taxis en garde le monopole dans l'Empire jusqu'au XIXe siècle. Ce n'est pas la première poste, mais la première à l'échelle d'un continent.",
+    "impact": "Elle crée un réseau postal régulier et payant à l'échelle de l'Europe centrale. Elle accélère l'information et le commerce, et reste en service près de quatre siècles.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Maison_de_Thurn_und_Taxis"
+      }
+    ]
+  },
+  {
+    "id": "globe-de-behaim",
+    "name": "Globe terrestre de Behaim",
+    "year": 1492,
+    "place": "Nuremberg",
+    "at": [
+      11.08,
+      49.45
+    ],
+    "inventor": "Martin Behaim",
+    "category": "navigation",
+    "description": "En 1492, le marchand et cosmographe Martin Behaim fait réaliser à Nuremberg l'Erdapfel, le plus ancien globe terrestre conservé. Il le dessine d'après Ptolémée et les récits de voyageurs, sans l'Amérique, que Christophe Colomb n'a pas encore atteinte. Le globe n'est pas le premier de l'histoire, des textes antiques en évoquent, mais il est le premier encore existant.",
+    "impact": "Il donne une image de la Terre en volume, au moment même des grandes découvertes. Il montre l'état des connaissances européennes juste avant la découverte de l'Amérique.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Martin_Behaim"
+      }
+    ]
+  },
+  {
+    "id": "montre-de-henlein",
+    "name": "Montre de poche de Henlein",
+    "year": 1510,
+    "approx": true,
+    "place": "Nuremberg",
+    "at": [
+      11.08,
+      49.45
+    ],
+    "inventor": "Peter Henlein",
+    "category": "technique",
+    "description": "Vers 1510, le serrurier Peter Henlein fabrique à Nuremberg de petites horloges à ressort moteur, portables, appelées parfois « œufs de Nuremberg ». Le ressort remplace les poids des horloges de tour et permet de miniaturiser le mécanisme. La date et l'attribution restent débattues, car peu de pièces sont certaines. Il s'agit d'un perfectionnement décisif de l'horloge mécanique plutôt que d'une invention isolée.",
+    "impact": "Le ressort moteur rend l'heure portative et prépare la montre moderne. Il ouvre la voie à l'horlogerie de précision, puis à la mesure de la longitude en mer.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Peter_Henlein"
+      }
+    ]
+  },
+  {
+    "id": "thaler",
+    "name": "Thaler de Joachimsthal",
+    "year": 1518,
+    "place": "Joachimsthal (Jáchymov)",
+    "at": [
+      12.92,
+      50.37
+    ],
+    "inventor": "Comtes Schlick",
+    "category": "monnaie",
+    "description": "En 1518, les comtes Schlick frappent à Joachimsthal, en Bohême, de grosses pièces d'argent tirées de leurs mines, les Joachimsthaler, bientôt abrégées en thalers. Le format, le poids et le titre en argent sont stables et acceptés largement. Le thaler devient la grande monnaie d'argent de l'Empire. Son nom a donné « dollar » en anglais, par l'intermédiaire du néerlandais.",
+    "impact": "Il impose une monnaie d'argent fiable dans toute l'Europe centrale. Son nom survit dans le mot « dollar », qui désigne aujourd'hui la monnaie la plus échangée au monde.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Thaler"
+      }
+    ]
+  },
+  {
+    "id": "lois-de-kepler",
+    "name": "Lois de Kepler",
+    "year": 1609,
+    "place": "Prague",
+    "at": [
+      14.42,
+      50.09
+    ],
+    "inventor": "Johannes Kepler",
+    "category": "science",
+    "description": "En 1609, dans son Astronomia nova publiée à Prague, où il est mathématicien de l'empereur Rodolphe II, Kepler énonce les deux premières lois du mouvement des planètes : les orbites sont des ellipses, et le rayon qui joint le Soleil à une planète balaie des aires égales en des temps égaux. La troisième loi suit en 1619. Elles reposent sur les observations de Tycho Brahe.",
+    "impact": "Elles remplacent les cercles parfaits par des ellipses et fondent l'astronomie moderne. Newton s'en servira pour établir la gravitation universelle.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Lois_de_Kepler"
+      },
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Johannes_Kepler"
+      }
+    ]
+  },
+  {
+    "id": "machine-de-schickard",
+    "name": "Horloge à calculer de Schickard",
+    "year": 1623,
+    "place": "Tübingen",
+    "at": [
+      9.06,
+      48.52
+    ],
+    "inventor": "Wilhelm Schickard",
+    "category": "technique",
+    "description": "En 1623, le professeur Wilhelm Schickard décrit à Kepler, dans des lettres, une « horloge à calculer » capable d'additionner et de soustraire des nombres à six chiffres avec report automatique des retenues, et d'aider à multiplier. L'exemplaire est détruit dans un incendie et connu seulement par ces lettres. Pascal construira sa Pascaline vingt ans plus tard, sans connaître cette machine.",
+    "impact": "C'est la plus ancienne machine à calculer mécanique connue. Elle ouvre la voie aux calculatrices, puis aux ordinateurs.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Wilhelm_Schickard"
+      }
+    ]
+  },
+  {
+    "id": "pompe-a-vide-guericke",
+    "name": "Pompe à vide et hémisphères de Magdebourg",
+    "year": 1654,
+    "place": "Magdebourg",
+    "at": [
+      11.63,
+      52.13
+    ],
+    "inventor": "Otto von Guericke",
+    "category": "science",
+    "description": "Bourgmestre de Magdebourg, Otto von Guericke construit vers 1650 une pompe à faire le vide. En 1654, devant la Diète de Ratisbonne, il démontre la pression de l'air : deux hémisphères de cuivre accolés, vidés de leur air, ne peuvent être séparés par deux attelages de huit chevaux chacun. Il conteste ainsi l'idée que « la nature a horreur du vide ».",
+    "impact": "Il prouve l'existence du vide et de la pression atmosphérique par une expérience publique. Il fonde la physique expérimentale du vide, base des machines à vapeur.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Otto_von_Guericke"
+      },
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Hémisphères_de_Magdebourg"
+      }
+    ]
+  },
+  {
+    "id": "calcul-infinitesimal-leibniz",
+    "name": "Calcul infinitésimal de Leibniz",
+    "year": 1684,
+    "place": "Leipzig",
+    "at": [
+      12.37,
+      51.34
+    ],
+    "inventor": "Gottfried Wilhelm Leibniz",
+    "category": "science",
+    "description": "En 1684, Leibniz publie dans les Acta Eruditorum de Leipzig sa méthode de calcul différentiel, puis le calcul intégral en 1686. Il invente aussi les notations dy/dx et le signe intégrale, toujours employés. Newton avait élaboré une méthode équivalente indépendamment, mais sans la publier avant 1704 ; une querelle de priorité opposera longtemps les deux savants.",
+    "impact": "Il donne aux mathématiques un langage pour étudier le changement et le mouvement. Ses notations restent celles des sciences et de l'ingénierie.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz"
+      },
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Calcul_infinitésimal"
+      }
+    ]
+  },
+  {
+    "id": "porcelaine-de-meissen",
+    "name": "Porcelaine dure européenne de Meissen",
+    "year": 1708,
+    "approx": true,
+    "place": "Meissen",
+    "at": [
+      13.47,
+      51.16
+    ],
+    "inventor": "Johann Friedrich Böttger et Ehrenfried Walther von Tschirnhaus",
+    "category": "technique",
+    "description": "Vers 1708, l'alchimiste Johann Friedrich Böttger, aidé du physicien Ehrenfried Walther von Tschirnhaus, obtient à Dresde la première porcelaine dure européenne, avec du kaolin et un feldspath cuits à haute température. La manufacture de Meissen ouvre en 1710 sous Auguste le Fort, électeur de Saxe. La porcelaine existait en Chine depuis des siècles : l'Europe en découvre le secret.",
+    "impact": "L'Europe perce le secret d'un produit de luxe qu'elle importait d'Asie à prix d'or. Meissen devient le modèle de toutes les manufactures européennes.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Manufacture_de_Meissen"
+      },
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Porcelaine"
+      }
+    ]
+  }
+]

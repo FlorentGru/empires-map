@@ -264,6 +264,41 @@ export const FACTION_INFO: Record<Faction, FigureInfo> = {
     era: '1810 – 1825',
     text: "Les armées indépendantistes sont composées de créoles, de métis, d'indigènes, d'esclaves affranchis et de volontaires britanniques. Elles combattent dans des conditions extrêmes, comme la traversée des Andes en 1817 par San Martín. Leur victoire à Ayacucho (1824) met fin à la domination espagnole en Amérique du Sud.",
   },
+  imperiaux: {
+    label: 'Impériaux (chevaliers allemands)',
+    era: '962 – 1806',
+    text: "Les troupes de l'empereur sont d'abord des cavaliers lourds levés par les ducs et les évêques, puis des contingents mixtes. L'aigle noir sur fond jaune orne leurs bannières, et devient bicéphale à partir de Sigismond (XVe siècle). Ces soldats combattent en Italie, en Bohême et en Hongrie. L'armée dépend des princes, sans corps permanent avant le XVIIe siècle.",
+  },
+  'communes-lombardes': {
+    label: 'Milices des communes lombardes',
+    era: 'XIIe s.',
+    text: "Les villes d'Italie du Nord (Milan, Brescia, Crémone, Vérone) lèvent leurs propres milices de bourgeois et de petits chevaliers. Au centre, le Carroccio, un chariot portant l'étendard et un autel, sert de point de ralliement. Unies dans la Ligue lombarde (1167), elles battent Barberousse à Legnano en 1176.",
+  },
+  suisses: {
+    label: 'Confédérés suisses',
+    era: '1291 – 1515',
+    text: "Paysans et artisans des cantons alpins, ils combattent à pied, en carrés serrés armés de hallebardes puis de piques. Morgarten (1315), Sempach (1386) et Morat (1476) montrent qu'une infanterie disciplinée peut vaincre des chevaliers. Leurs mercenaires seront recherchés dans toute l'Europe.",
+  },
+  hussites: {
+    label: 'Hussites',
+    era: '1419 – 1434',
+    text: "Partisans de Jan Hus, brûlé à Constance en 1415, ils sont issus de la petite noblesse, des bourgeois de Prague et des paysans de Tábor. Jan Žižka les organise autour du Wagenburg, un fort de chariots enchaînés d'où partent canons, arquebuses et arbalètes. Ils repoussent cinq croisades avant de se diviser en 1434.",
+  },
+  lansquenets: {
+    label: 'Lansquenets',
+    era: '1486 – 1650',
+    text: 'Créés par Maximilien Ier vers 1486, les « valets du pays » (Landsknechte) sont des mercenaires allemands qui combattent en carrés de piquiers, appuyés par des arquebusiers. Ils servent Charles Quint à Pavie et à Mühlberg, puis les armées de la guerre de Trente Ans. Ils sont payés par contrat, et le pillage fait partie de leur salaire.',
+  },
+  magyars: {
+    label: 'Magyars (Hongrois)',
+    era: '896 – 1526',
+    text: "Les Magyars, cavaliers de la steppe installés dans la plaine du Danube vers 896, fondent le royaume de Hongrie en l'an 1000. Au XVIe siècle, la cavalerie légère et les nobles en armure forment le gros de l'armée. À Mohács, en 1526, ils sont détruits par les Ottomans, et le royaume se partage en trois.",
+  },
+  suedois: {
+    label: 'Suédois (armée de Gustave-Adolphe)',
+    era: '1630 – 1648',
+    text: "Armée nationale levée par conscription et réorganisée par Gustave-Adolphe : bataillons de mousquetaires et de piquiers peu profonds, artillerie légère, cavalerie qui charge à l'épée. Elle bat les impériaux à Breitenfeld (1631) et à Lützen (1632). Le roi y trouve la mort, mais la Suède restera une grande puissance jusqu'en 1721.",
+  },
 };
 
 export const ARCHETYPE_INFO: Record<Archetype, FigureInfo> = {
@@ -421,5 +456,25 @@ export const ARCHETYPE_INFO: Record<Archetype, FigureInfo> = {
     label: 'Militaire du XXe siècle',
     era: '1898 – 1975',
     text: "Officiers, ministres et dirigeants de l'Espagne contemporaine. L'armée joue un rôle politique majeur, de la guerre de Cuba aux coups d'État de 1923 et de 1936.",
+  },
+  'empereur-germanique': {
+    label: 'Empereur germanique',
+    era: '962 – 1806',
+    text: "Chef élu du Saint-Empire, couronné par le pape jusqu'en 1530. Il porte la couronne d'Otton Ier, conservée à Vienne, et prétend succéder à Charlemagne et aux empereurs romains. Son pouvoir réel dépend de ses terres propres et du soutien des princes. Les Habsbourg tiennent la dignité presque sans interruption de 1438 à 1806.",
+  },
+  'prince-electeur': {
+    label: "Prince d'Empire (prince-électeur)",
+    era: '1356 – 1806',
+    text: "Les princes d'Empire sont des ducs, margraves, comtes, archevêques ou évêques qui gouvernent leurs terres presque comme des souverains. Sept d'entre eux, les électeurs, élisent le roi des Romains depuis la Bulle d'or de 1356 ; ils seront huit puis neuf. Ils forment le premier ordre de la diète.",
+  },
+  reformateur: {
+    label: 'Réformateur (Luther)',
+    era: '1517 – 1555',
+    text: "Martin Luther (1483-1546), moine augustin et professeur à Wittenberg, affirme que le salut vient de la foi et de l'Écriture seule. Il traduit la Bible en allemand, compose des cantiques et renouvelle l'enseignement. Sa rupture avec Rome ouvre la Réforme, qui divisera durablement l'Empire.",
+  },
+  capitaine: {
+    label: "Capitaine d'Empire",
+    era: 'XVe – XVIIe s.',
+    text: "Les chefs d'armée du Saint-Empire sont souvent des nobles bohémiens, bavarois ou wallons, parfois des entrepreneurs de guerre qui lèvent des régiments à leurs frais. Jan Žižka, Tilly, Wallenstein ou Pappenheim relèvent de ce type. Ils s'appuient sur des mercenaires payés par contrat.",
   },
 };
