@@ -11,7 +11,7 @@ Méthode éprouvée sur Rome, l'Empire napoléonien et la Chine. Le but est un r
 - Orchestrateur sur Opus ; **chaque agent en `model: "sonnet"`**. Peu d'agents ; en série s'ils dépendent l'un de l'autre, en parallèle seulement si leurs fichiers sont disjoints.
 - Avant d'écrire un prompt, **diagnostique toi-même** et donne aux agents les fichiers exacts, le contrat et les interdits — c'est le plus gros levier d'économie de tokens.
 - Interdits à écrire dans chaque prompt : pas de navigateur intégré (bridé à ~1 image/s), ne jamais lire en entier les gros JSON/GeoJSON (utiliser `node -e`), ne relancer que `npm run build:data:<id>`, rapport final court, pas de commit (c'est l'orchestrateur qui commite).
-- **Un commit + `git push` après chaque livraison** ; la CI GitHub doit rester verte.
+- **Ne pousser sur `main` que des commits verts** : entre le contrat (étape 1) et les figurines (étape 3), le typecheck échoue ; commite en local et ne pousse qu'une fois `npm run typecheck && npm test && npm run test:data` passés (sinon GitHub envoie un e-mail d'échec à Florent à chaque push).
 - Réponses à Florent en français, en expliquant simplement ce qui a été fait et ce qui reste à vérifier dans son navigateur.
 
 ## Étapes
@@ -25,12 +25,12 @@ Dans `src/types.ts` :
 - nouvelles valeurs de `Faction` et `FACTIONS` (peuples et adversaires de l'empire), de `Archetype` et `ARCHETYPES` (personnages typiques) ;
 - ajoute les libellés français dans `PEOPLE` de `src/map/armyLayer.ts`.
 `npm run typecheck` échouera ensuite uniquement dans `src/figures/` : c'est attendu (l'agent 2 dessine les figurines).
-Commit + push.
+Commit local, **sans push** (la CI serait rouge).
 
 ### 2. Agent 1 — Historien (contenu)
 Prompt : [references/prompt-historien.md](references/prompt-historien.md) (remplir les champs entre chevrons).
 Produit `data/empires/<id>/timeline.json` et complète `data/cities.json`.
-À la livraison : relis le rapport, corrige toi-même les petites incohérences (périodes qui se chevauchent, années, ids), valide le JSON, commit + push.
+À la livraison : relis le rapport, corrige toi-même les petites incohérences (périodes qui se chevauchent, années, ids), valide le JSON, commit local (sans push tant que les figurines manquent).
 
 ### 3. Agent 2 — Carte + front + figurines
 Prompt : [references/prompt-cartographe-front.md](references/prompt-cartographe-front.md).
