@@ -9,6 +9,7 @@ import { STATIC_SITE } from '../quiz/api';
 import { formatYear } from '../lib/years';
 import type { EmpireCatalogEntry } from '../types';
 import { duration, summarize } from './summary';
+import { EMBLEMS } from './emblems';
 import './empires.css';
 
 const CATALOG = catalogJson as EmpireCatalogEntry[];
@@ -125,7 +126,10 @@ export function EmpiresView({ initial, backName, onBack, onExplore, onCompare }:
                   aria-label={`${r.name}, ${formatYear(r.start)} – ${formatYear(r.end)}${r.available ? '' : ', bientôt disponible'}`}
                   onClick={() => select(r.id)}
                 >
-                  <span className="empires-chart__name">{r.name}</span>
+                  <span className="empires-chart__name">
+                    {EMBLEMS[r.id] && <span className="empires-chart__emblem" aria-hidden="true" dangerouslySetInnerHTML={{ __html: EMBLEMS[r.id]!.svg }} />}
+                    {r.name}
+                  </span>
                 </button>
               </li>
             ))}
@@ -174,8 +178,21 @@ function Summary({ row, onClose, onExplore, onCompare }: { row: Row; onClose: ()
       <button type="button" className="empire-summary__close" aria-label="Fermer le résumé" onClick={onClose}>
         ✕
       </button>
-      <p className="empire-summary__region">{row.region}</p>
-      <h2>{row.name}</h2>
+      <div className="empire-summary__head">
+        {/* SVG dessinés dans le projet (src/empires/emblems.ts) : contenu sûr, pas de donnée externe. */}
+        {EMBLEMS[row.id] && (
+          <span className="empire-summary__emblem" role="img" aria-label={EMBLEMS[row.id]!.label} dangerouslySetInnerHTML={{ __html: EMBLEMS[row.id]!.svg }} />
+        )}
+        <div>
+          <p className="empire-summary__region">{row.region}</p>
+          <h2>{row.name}</h2>
+        </div>
+      </div>
+      {EMBLEMS[row.id] && (
+        <p className="empire-summary__emblem-note">
+          <strong>{EMBLEMS[row.id]!.label}.</strong> {EMBLEMS[row.id]!.note}
+        </p>
+      )}
       {!empire || !s ? (
         <>
           <p className="empire-summary__span">

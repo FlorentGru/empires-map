@@ -255,3 +255,39 @@
     border-top: 4px solid var(--c);
   }
 }
+
+/* Emblèmes (src/empires/emblems.ts) : en grand dans le résumé, en petit devant le nom sur la frise. */
+.empire-summary__head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-right: 24px;
+}
+.empire-summary__emblem {
+  flex: none;
+  width: 88px;
+  height: 88px;
+  filter: drop-shadow(0 2px 3px rgba(43, 34, 25, 0.25));
+}
+.empire-summary__emblem svg,
+.empires-chart__emblem svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.empire-summary__emblem-note {
+  margin: 8px 0 4px;
+  font-size: 0.8rem !important;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+.empires-chart__name {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.empires-chart__emblem {
+  width: 22px;
+  height: 22px;
+  flex: none;
+}
