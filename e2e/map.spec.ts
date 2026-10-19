@@ -23,7 +23,7 @@ test('carte : chargement sans erreur, étape suivante, glissement des frontière
 test('caméra libre : aucun empire n’enferme la carte (on peut aller voir ses contemporains)', async ({ page }) => {
   test.setTimeout(90_000);
   await page.goto('/?empire=saint-empire&e2e');
-  await page.waitForFunction(() => (window as any).__map?.loaded(), null, { timeout: 60_000 });
+  await page.waitForFunction(() => (window as any).__map?.getSource('territory-hover'), null, { timeout: 60_000 });
   expect(await page.evaluate(() => (window as any).__map.getMaxBounds())).toBeNull();
   // Après le vol de caméra vers l'étape : on part vers Pékin, loin du Saint-Empire, et la carte y reste.
   await page.waitForFunction(() => !(window as any).__map.isMoving(), null, { timeout: 30_000 });

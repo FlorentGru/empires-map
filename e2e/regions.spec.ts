@@ -7,21 +7,24 @@ const screenOf = (lonLat: [number, number]) =>
   `(() => { const m = window.__map; const p = m.project(${JSON.stringify(lonLat)}); const r = m.getCanvas().getBoundingClientRect(); return [r.left + p.x, r.top + p.y]; })()`;
 
 test('régions : à l’arrêt, survol = surbrillance, clic = fiche d’explication', async ({ page }) => {
-  test.setTimeout(90_000);
+  test.setTimeout(150_000);
   const errors = collectErrors(page);
   await page.goto('/?empire=rome&step=tetrarchie-285&e2e');
   await page.waitForFunction(() => (window as any).__map?.getSource('territory-hover'), null, { timeout: 60_000 });
-  // Territoire affiché et caméra arrêtée.
-  await page.waitForFunction(() => (window as any).__map.loaded() && !(window as any).__map.isMoving(), null, { timeout: 30_000 });
-
-  // Trèves : part de Constance Chlore (Gaule et Bretagne).
-  const [x, y] = (await page.evaluate(screenOf([6.64, 49.75]))) as [number, number];
+  // Pas de map.loaded() : sur le CI, des tuiles chargent encore longtemps. On attend la fin du vol de caméra,
+  // puis on survole Trèves (part de Constance Chlore) en recalculant sa position à chaque essai.
+  await page.waitForFunction(() => !(window as any).__map.isMoving(), null, { timeout: 60_000 });
+  let [x, y] = [0, 0];
   await expect
-    .poll(async () => {
-      await page.mouse.move(x - 2, y);
-      await page.mouse.move(x, y);
-      return page.evaluate(hovered);
-    })
+    .poll(
+      async () => {
+        [x, y] = (await page.evaluate(screenOf([6.64, 49.75]))) as [number, number];
+        await page.mouse.move(x - 2, y);
+        await page.mouse.move(x, y);
+        return page.evaluate(hovered);
+      },
+      { timeout: 60_000 },
+    )
     .toBe(1);
   await page.mouse.click(x, y);
   const card = page.locator('.map-card');
