@@ -1,0 +1,197 @@
+[
+  {
+    "name": "Couronnes de Castille et d'Aragon",
+    "summary": "Les deux couronnes unies par le mariage d'Isabelle et de Ferdinand en 1469, noyau de la monarchie espagnole. La Castille porte l'élan atlantique et américain, l'Aragon sa tradition méditerranéenne. Réunies sous Charles Quint puis les Habsbourg, elles gardent leurs institutions propres jusqu'aux décrets de Nueva Planta de Philippe V.",
+    "years": [1492, 1700]
+  },
+  {
+    "name": "Royaume de Sicile",
+    "summary": "Île passée à la couronne d'Aragon après les Vêpres siciliennes de 1282, puis héritée par Ferdinand le Catholique. Gouvernée par un vice-roi installé à Palerme, elle fournit du blé à la monarchie et sert de base à la flotte contre les Ottomans. Elle quitte la domination espagnole avec les traités d'Utrecht, en 1713.",
+    "years": [1492, 1700]
+  },
+  {
+    "name": "Royaume de Sardaigne",
+    "summary": "Île conquise par la couronne d'Aragon au XIVe siècle sur les Pisans et les Génois, puis gouvernée par un vice-roi résidant à Cagliari. Elle reste une position maritime secondaire de la monarchie espagnole en Méditerranée occidentale. Les traités d'Utrecht la donnent à l'Autriche, avant son passage à la maison de Savoie.",
+    "years": [1492, 1700]
+  },
+  {
+    "name": "Hispaniola (La Isabela)",
+    "summary": "Premier établissement espagnol des Amériques, fondé par Christophe Colomb en 1493 sur la côte nord de l'île d'Hispaniola, au cours de son deuxième voyage. Le site, insalubre et mal ravitaillé, est vite délaissé au profit de Saint-Domingue, fondée sur la côte sud à la fin de la décennie.",
+    "years": [1494, 1494]
+  },
+  {
+    "name": "Royaume de Naples",
+    "summary": "Royaume du sud de l'Italie conquis en 1503-1504 par Gonzalve de Cordoue, le Gran Capitán, contre les Français. Gouverné par un vice-roi depuis Naples, il fournit hommes et impôts aux guerres des Habsbourg. Cédé à l'Autriche par les traités d'Utrecht en 1713, il revient à une branche des Bourbons d'Espagne en 1734.",
+    "years": [1504, 1700]
+  },
+  {
+    "name": "Antilles espagnoles",
+    "summary": "Hispaniola, Cuba, Porto Rico et les îles voisines, premiers territoires colonisés par les Espagnols après 1492. Elles servent de base aux expéditions vers le continent, puis d'escales aux convois de la flotte des Indes, surtout autour de La Havane. Leur population indigène s'effondre ; les Antilles se vident au profit des conquêtes continentales.",
+    "years": [1504, 1713]
+  },
+  {
+    "name": "Pays-Bas bourguignons",
+    "summary": "Ensemble de provinces, dont la Flandre et le Brabant, rassemblées par les ducs de Bourgogne et reçues par Charles Quint, né à Gand, en héritage de sa grand-mère Marie de Bourgogne. Riches villes drapières et ports, elles financent ses guerres. Sous Philippe II, la révolte qui s'y allume déchire l'ensemble.",
+    "years": [1516, 1571]
+  },
+  {
+    "name": "Franche-Comté",
+    "summary": "Comté de Bourgogne, terre d'Empire rattachée à la maison de Habsbourg par héritage bourguignon, puis possédée par les rois d'Espagne. Elle sert d'étape sur le chemin entre l'Italie et les Pays-Bas. Louis XIV la conquiert en 1674 et le traité de Nimègue la confirme à la France en 1678.",
+    "years": [1516, 1659]
+  },
+  {
+    "name": "Oran",
+    "summary": "Port d'Afrique du Nord pris en 1509 par une expédition dirigée par le cardinal Cisneros. Présidio espagnol, c'est-à-dire place forte garnie, face aux corsaires et aux régences ottomanes d'Alger. Perdue en 1708, reprise en 1732, la ville est finalement abandonnée par l'Espagne en 1792, après le tremblement de terre de 1790.",
+    "years": [1516, 1790]
+  },
+  {
+    "name": "Panama (Darién)",
+    "summary": "Isthme appelé Castille d'Or, où Balboa aperçoit l'océan Pacifique en 1513. Pedrarias Dávila y fonde la ville de Panama en 1519. L'isthme devient le passage obligé entre les deux océans et la base de départ des expéditions vers le Pérou, avant de passer sous l'autorité des vice-royautés américaines.",
+    "years": [1516, 1525]
+  },
+  {
+    "name": "Nouvelle-Espagne (Mexique central)",
+    "summary": "Cœur de l'ancien empire aztèque, conquis par Hernán Cortés avec des alliés indigènes après la chute de Tenochtitlan en 1521. Mexico est reconstruite sur les ruines de la capitale aztèque. Premier grand foyer de la domination espagnole sur le continent, la zone devient peu après le centre de la vice-royauté de Nouvelle-Espagne.",
+    "years": [1521, 1525]
+  },
+  {
+    "name": "Duché de Milan (occupé par les impériaux)",
+    "summary": "Milan est tenu par les troupes de Charles Quint après leur victoire sur les Français, confirmée à Pavie en 1525. Le duc Francesco II Sforza, soutenu par l'empereur, n'y règne que sous étroite surveillance. Le duché reste l'enjeu des guerres d'Italie entre les Habsbourg et la France.",
+    "years": [1525, 1525]
+  },
+  {
+    "name": "Nouvelle-Espagne",
+    "summary": "Vice-royauté créée en 1535, dont le premier titulaire est Antonio de Mendoza, avec Mexico pour capitale. Elle s'étend du Mexique à l'Amérique centrale et administre aussi les Philippines. Ses mines d'argent, comme celles de Zacatecas et de Guanajuato, nourrissent le trésor royal. Elle devient indépendante en 1821.",
+    "years": [1532, 1808]
+  },
+  {
+    "name": "Duché de Milan (fief impérial)",
+    "summary": "Milan est un fief du Saint-Empire, que Charles Quint contrôle en tant qu'empereur. À la mort du dernier Sforza en 1535, il revient à l'empereur, qui le confie à son fils Philippe en 1540. Il devient ainsi une possession espagnole en Lombardie, point d'appui de la monarchie en Italie du Nord.",
+    "years": [1532, 1532]
+  },
+  {
+    "name": "Duché de Milan",
+    "summary": "Possession des Habsbourg d'Espagne en Lombardie depuis que Philippe II en hérite en 1556. Gouverné par un gouverneur, il sert de verrou de l'Italie du Nord et de point de départ du chemin espagnol, la route militaire vers les Flandres. Il passe à l'Autriche au début du XVIIIe siècle.",
+    "years": [1556, 1700]
+  },
+  {
+    "name": "Vice-royauté du Pérou",
+    "summary": "Vice-royauté créée en 1542 après la conquête des Incas par Pizarro, avec Lima, fondée en 1535, pour capitale. Les mines d'argent de Potosí, exploitées par le travail forcé de la mita, en font la source principale des richesses de la monarchie. Ses territoires sont ensuite divisés par la création de deux autres vice-royautés.",
+    "years": [1556, 1808]
+  },
+  {
+    "name": "Floride",
+    "summary": "Territoire d'Amérique du Nord où Pedro Menéndez de Avilés fonde Saint Augustine en 1565 et chasse les colons français du fort Caroline. Colonie de garnisons et de missions, elle protège la route des convois de retour vers l'Espagne. Cédée à la Grande-Bretagne en 1763, récupérée en 1783, elle passe aux États-Unis en 1821.",
+    "years": [1571, 1808]
+  },
+  {
+    "name": "Philippines",
+    "summary": "Archipel exploré par Magellan en 1521 et conquis à partir de 1565 par Legazpi, avec Manille fondée en 1571. Gouverné depuis Mexico, il relie l'Asie à l'Amérique par le galion de Manille, qui échange soie et épices contre l'argent américain. Les Philippines restent espagnoles jusqu'en 1898.",
+    "years": [1571, 1824]
+  },
+  {
+    "name": "Pays-Bas espagnols (provinces du Sud)",
+    "summary": "Provinces du sud des Pays-Bas restées fidèles à Philippe II, après la division de 1579 et la reconquête menée par Alexandre Farnèse, qui reprend Anvers en 1585. Bruxelles en est le centre du pouvoir. Catholiques et gouvernées par la monarchie, elles s'opposent aux provinces du Nord qui poursuivent la révolte.",
+    "years": [1580, 1588]
+  },
+  {
+    "name": "Royaume de Portugal",
+    "summary": "Royaume dont la couronne passe à Philippe II en 1580, après la mort sans héritier direct du roi Henri, puis la bataille d'Alcácer-Quibir de 1578. Reconnu par les Cortes de Tomar en 1581, il conserve ses lois, sa monnaie et son administration. Cette union dure jusqu'à la révolte de 1640, qui place Jean IV sur le trône.",
+    "years": [1580, 1588]
+  },
+  {
+    "name": "Brésil portugais",
+    "summary": "Colonie portugaise d'Amérique du Sud, riche de ses plantations de sucre et dirigée depuis Salvador. Elle passe sous l'autorité de Philippe II avec la couronne portugaise en 1580. Cette union l'expose aux attaques des Provinces-Unies, ennemies de l'Espagne, qui s'emparent de Salvador en 1624 puis d'une partie du Nord-Est.",
+    "years": [1580, 1588]
+  },
+  {
+    "name": "Empire portugais d'Afrique et d'Asie",
+    "summary": "Réseau de comptoirs fortifiés portugais, de l'Angola et du Mozambique à Goa, Malacca et Macao. Il passe sous l'autorité de Philippe II avec la couronne du Portugal en 1580, tout en gardant son administration propre. Pendant l'union, les Provinces-Unies attaquent ces positions et s'emparent d'une partie du commerce des épices.",
+    "years": [1580, 1588]
+  },
+  {
+    "name": "Pays-Bas espagnols",
+    "summary": "Provinces du Sud restées sous les Habsbourg d'Espagne après la scission des Provinces-Unies, avec Bruxelles pour capitale. Théâtre principal des guerres contre la France, elles reconnaissent l'indépendance du Nord au traité de Münster en 1648 puis perdent des places face à Louis XIV. Elles passent à l'Autriche en 1714.",
+    "years": [1643, 1700]
+  },
+  {
+    "name": "Mariannes",
+    "summary": "Archipel du Pacifique, où Magellan aborde en 1521 et dont l'évangélisation commence en 1668 avec le jésuite Diego Luis de Sanvitores. Guam sert d'escale au galion de Manille, qui traverse l'océan entre les Philippines et le Mexique. Les Mariannes restent espagnoles jusqu'à la défaite de 1898.",
+    "years": [1700, 1824]
+  },
+  {
+    "name": "Royaume d'Espagne",
+    "summary": "Monarchie dirigée depuis 1700 par les Bourbons, qui perd ses possessions d'Europe par les traités d'Utrecht en 1713 mais garde son empire d'outre-mer. Centralisée par les décrets de Nueva Planta, elle subit l'invasion napoléonienne, perd l'Amérique continentale, puis ses dernières colonies en 1898. Elle devient une dictature avec Franco, puis une monarchie parlementaire.",
+    "years": [1713, 1976]
+  },
+  {
+    "name": "Cuba, Porto Rico et Santo Domingo",
+    "summary": "Îles des Grandes Antilles restées espagnoles, que les réformes des Bourbons tournent vers l'économie de plantation. Après l'occupation britannique de La Havane en 1762, restituée l'année suivante, la ville reçoit de grandes fortifications. Cuba devient un grand producteur de sucre, au prix de l'esclavage.",
+    "years": [1763, 1790]
+  },
+  {
+    "name": "Nouvelle-Grenade",
+    "summary": "Vice-royauté créée en 1717, supprimée puis rétablie définitivement en 1739, avec Bogotá pour capitale. Elle couvre l'espace de la Colombie, du Panama, de l'Équateur et du Venezuela actuels. Détachée du Pérou, elle donne au pouvoir espagnol une meilleure défense des Caraïbes. Les guerres d'indépendance la détruisent entre 1810 et 1819.",
+    "years": [1763, 1808]
+  },
+  {
+    "name": "Río de la Plata",
+    "summary": "Vice-royauté créée en 1776 avec Buenos Aires pour capitale, détachée du Pérou pour protéger l'Atlantique sud contre les Portugais et les Britanniques. Elle couvre l'Argentine, l'Uruguay, le Paraguay et le Haut-Pérou actuels. Les invasions anglaises de 1806-1807, puis la révolution de mai 1810 à Buenos Aires, ruinent l'autorité du roi.",
+    "years": [1763, 1808]
+  },
+  {
+    "name": "Paraguay",
+    "summary": "Province intérieure fondée autour d'Asunción en 1537, peuplée de Guaranis. Les jésuites y organisent des missions, les réductions, jusqu'à leur expulsion des domaines espagnols en 1767. Elle dépend de la vice-royauté du Río de la Plata puis déclare son indépendance en 1811.",
+    "years": [1763, 1808]
+  },
+  {
+    "name": "Louisiane espagnole",
+    "summary": "Vaste territoire cédé par la France à l'Espagne en 1762, que Madrid ne prend en main qu'en 1769, avec La Nouvelle-Orléans pour centre. Il sert de glacis contre les colonies britanniques puis les États-Unis. L'Espagne le rend secrètement à la France en 1800, et Napoléon le vend aux Américains en 1803.",
+    "years": [1763, 1790]
+  },
+  {
+    "name": "Cuba et Porto Rico",
+    "summary": "Îles qui restent espagnoles quand les colonies du continent deviennent indépendantes dans les années 1810 et 1820. Cuba, en pleine croissance du sucre, fournit de gros revenus. Leur fidélité leur vaut le surnom d'îles toujours fidèles, mais des mouvements d'indépendance s'y développent, jusqu'à la guerre de 1898.",
+    "years": [1805, 1824]
+  },
+  {
+    "name": "Pérou royaliste (Pérou, Haut-Pérou, Équateur)",
+    "summary": "Dernier grand bastion espagnol en Amérique du Sud. En 1821, San Martín entre à Lima et le vice-roi se replie vers Cuzco avec ses troupes, tandis que le Haut-Pérou et la région de Quito restent encore tenus par les royalistes. La défaite d'Ayacucho en 1824 clôt cette résistance.",
+    "years": [1821, 1821]
+  },
+  {
+    "name": "Mariannes du Nord",
+    "summary": "Îles de l'archipel des Mariannes, au nord de Guam, restées espagnoles jusqu'à la guerre de 1898 contre les États-Unis. Guam passe alors aux Américains par le traité de Paris. L'Espagne, qui n'a plus les moyens de garder le reste, vend les îles du Nord à l'Allemagne en 1899.",
+    "years": [1898, 1898]
+  },
+  {
+    "name": "Carolines et Palau",
+    "summary": "Archipels du Pacifique occidental dont l'Espagne revendique la souveraineté. En 1885, un différend avec l'Allemagne est arbitré par le pape Léon XIII en faveur de l'Espagne. Après la défaite de 1898, elle les vend à l'Allemagne en 1899, avec les Mariannes du Nord.",
+    "years": [1898, 1898]
+  },
+  {
+    "name": "Guinée espagnole",
+    "summary": "Colonie d'Afrique centrale formée des îles de Fernando Poo et d'Annobón, cédées par le Portugal en 1778, et du Río Muni, continental. Les plantations de cacao et de café y dominent. Après un régime d'autonomie, elle accède à l'indépendance en 1968 sous le nom de Guinée équatoriale.",
+    "years": [1898, 1956]
+  },
+  {
+    "name": "Sahara espagnol",
+    "summary": "Territoire désertique de la côte atlantique du Sahara occidental, comprenant le Río de Oro et la Saguia el-Hamra, occupé par l'Espagne à partir de 1884. Sa mine de phosphates de Bou Craa, ouverte au XXe siècle, en fait l'intérêt. L'Espagne se retire en 1975-1976, au moment de la Marche verte marocaine.",
+    "years": [1898, 1969]
+  },
+  {
+    "name": "Ifni",
+    "summary": "Enclave côtière du sud marocain cédée à l'Espagne par le traité de Tétouan de 1860, mais seulement occupée en 1934. Petit territoire de pêcheurs administré depuis Sidi Ifni, il est attaqué par l'armée de libération marocaine en 1957-1958. L'Espagne le rend au Maroc en 1969.",
+    "years": [1912, 1968]
+  },
+  {
+    "name": "Protectorat espagnol du Maroc (zone nord)",
+    "summary": "Zone du nord du Maroc confiée à l'Espagne par le traité de protectorat de 1912, avec Tétouan pour capitale, tandis que la France administre le reste du pays. Elle connaît la guerre du Rif, marquée par le désastre espagnol d'Anoual en 1921. C'est de là que part en 1936 le soulèvement de l'armée d'Afrique.",
+    "years": [1912, 1936]
+  },
+  {
+    "name": "Protectorat espagnol du Maroc (zone sud, Tarfaya)",
+    "summary": "Bande désertique du sud du Maroc, avec Cap Juby, comprise dans la zone espagnole de 1912. Peu peuplée, elle reste un territoire de surveillance militaire. À l'indépendance du Maroc en 1956, une partie du protectorat est restituée, puis l'Espagne rend aussi Tarfaya en 1958.",
+    "years": [1912, 1956]
+  }
+]
