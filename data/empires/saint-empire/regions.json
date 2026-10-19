@@ -1,0 +1,252 @@
+[
+  {
+    "name": "Royaume de Bourgogne-Arles (sous protection)",
+    "summary": "Le royaume de Bourgogne, ou d'Arles, dont le roi Conrad le Pacifique est lié à Otton Ier et se tient sous sa protection. Il reste en 962 un royaume distinct, au sud de la Lotharingie. Il ne passera sous l'autorité de l'empereur qu'en 1033, à la mort de Rodolphe III.",
+    "years": [962, 962]
+  },
+  {
+    "name": "Duché de Bohême (tributaire)",
+    "summary": "Le duché de Bohême, dirigé par les Přemyslides, est au milieu du Xe siècle tributaire du roi de Germanie. Son duc reconnaît l'autorité d'Otton Ier et paie un tribut. Le duché garde ses dynasties et son organisation propres, et devient plus tard un royaume intégré à l'Empire.",
+    "years": [962, 962]
+  },
+  {
+    "name": "Peuples slaves tributaires (Obodrites, Wilzes)",
+    "summary": "Les Obodrites et les Wilzes sont des peuples slaves installés entre l'Elbe et la Baltique. Soumis par les Saxons au Xe siècle, ils paient un tribut aux Ottoniens et sont en partie christianisés. Leur sujétion reste fragile : leurs révoltes, notamment celle de 983, repoussent la frontière de l'Empire.",
+    "years": [962, 962]
+  },
+  {
+    "name": "Royaume de Germanie",
+    "summary": "Le royaume de Germanie est le cœur de l'Empire, formé des anciens duchés de Saxe, de Franconie, de Bavière, de Souabe et de Lorraine. Son roi, élu par les grands, devient empereur après son couronnement à Rome. Il constitue la base du Saint-Empire romain germanique, dont il épouse l'histoire.",
+    "years": [962, 1176]
+  },
+  {
+    "name": "Suisse alémanique",
+    "summary": "La Suisse alémanique désigne les terres de langue allemande entre le Rhin et les Alpes, rattachées au duché de Souabe, au sein du royaume de Germanie. Elles dépendent de l'empereur et des seigneurs locaux. Leur autonomie grandira plus tard, jusqu'à l'indépendance de fait de la Confédération suisse.",
+    "years": [962, 962]
+  },
+  {
+    "name": "Lotharingie (Pays-Bas, Belgique, Lorraine, Alsace)",
+    "summary": "La Lotharingie est l'ancien royaume de Lothaire, entre la France et la Germanie, qui comprend les Pays-Bas, la Belgique, la Lorraine et l'Alsace. Rattachée à la Germanie au Xe siècle, elle se fragmente ensuite en duchés, comtés et évêchés. Elle forme une zone d'affrontements entre l'Empire et la France.",
+    "years": [962, 1268]
+  },
+  {
+    "name": "Royaume d'Italie et Rome",
+    "summary": "Le royaume d'Italie couvre le nord et le centre de la péninsule, avec Rome. Le roi de Germanie le prend avec la couronne lombarde, puis la couronne impériale à Rome. L'autorité impériale y est souvent contestée par les villes et la papauté, notamment lors de la querelle des Investitures.",
+    "years": [962, 1077]
+  },
+  {
+    "name": "Littoral autrichien (Trieste, Gorizia)",
+    "summary": "Le littoral autrichien, avec Trieste et Gorizia, est une région de l'Adriatique tenue par des comtes, des évêques et plus tard les Habsbourg. Trieste passe sous leur protection en 1382. La région fait partie de l'Empire jusqu'en 1806, et reste dans la monarchie autrichienne après sa disparition.",
+    "years": [1033, 1806]
+  },
+  {
+    "name": "Duché de Bohême",
+    "summary": "Le duché de Bohême est, au XIe et XIIe siècle, un État slave vassal du roi de Germanie, dirigé par les Přemyslides. Ses ducs doivent un service à l'empereur et participent à ses campagnes. En échange de ce lien, ils obtiennent progressivement un titre royal, qui fera de la Bohême un royaume.",
+    "years": [1033, 1155]
+  },
+  {
+    "name": "Royaume de Bourgogne-Arles",
+    "summary": "Le royaume de Bourgogne-Arles passe sous la couronne impériale en 1033, quand Conrad II hérite de Rodolphe III. Ce vaste ensemble comprend la Provence, le Dauphiné et la Franche-Comté. L'autorité de l'empereur y reste surtout théorique, et la région se détache peu à peu vers la France.",
+    "years": [1033, 1176]
+  },
+  {
+    "name": "Suisse",
+    "summary": "La Suisse actuelle fait alors partie du royaume de Bourgogne, passé à l'empereur en 1033, avec la Suisse romande et ses vallées alpines. Seigneurs, évêques et abbayes y exercent le pouvoir réel. Cette région pose les bases d'une autonomie qui mènera à la Confédération des cantons.",
+    "years": [1033, 1176]
+  },
+  {
+    "name": "Royaume d'Italie",
+    "summary": "Le royaume d'Italie désigne ici les terres du nord de la péninsule rattachées à la couronne impériale. Les villes lombardes, riches et organisées en communes, résistent à Frédéric Barberousse, qu'elles battent à Legnano en 1176, puis à Frédéric II. L'autorité de l'empereur y reste durablement disputée.",
+    "years": [1122, 1220]
+  },
+  {
+    "name": "Royaume de Bohême",
+    "summary": "Le royaume de Bohême, élevé au rang de royaume héréditaire en 1198 puis 1212, est un membre important de l'Empire. Son roi devient l'un des princes électeurs de l'empereur. Il atteint son apogée sous Charles IV, empereur et roi de Bohême, avant les troubles religieux hussites du XVe siècle.",
+    "years": [1176, 1495]
+  },
+  {
+    "name": "Duché de Poméranie",
+    "summary": "Le duché de Poméranie est une principauté slave de la Baltique, qui reconnaît la suzeraineté de l'Empire au XIIe siècle. Ses ducs, de la dynastie des Griffons, conservent une large autonomie. Le duché se germanise et se christianise peu à peu, et reste lié aux grands voisins de la région.",
+    "years": [1214, 1268]
+  },
+  {
+    "name": "Allemagne impériale, Autriche et Slovénie",
+    "summary": "Cette vaste zone regroupe l'Allemagne impériale, l'Autriche et la Slovénie, cœur de l'Empire sous les Habsbourg. Elle est morcelée en principautés, duchés, villes libres et évêchés. Les Habsbourg, installés à Vienne, y renforcent leurs territoires héréditaires et conservent presque sans interruption la couronne impériale.",
+    "years": [1214, 1740]
+  },
+  {
+    "name": "Haute-Bourgogne (Franche-Comté, Savoie) et Suisse",
+    "summary": "La Haute-Bourgogne, ce sont la Franche-Comté et la Savoie, avec les terres suisses voisines. Ces régions de l'ancien royaume d'Arles sont rattachées à l'Empire, avec une autorité souvent lointaine. Elles passent peu à peu aux mains de comtes puissants, puis des ducs de Bourgogne et des Habsbourg.",
+    "years": [1214, 1495]
+  },
+  {
+    "name": "Royaume de Sicile (union personnelle)",
+    "summary": "Le royaume de Sicile est tenu par Frédéric II, héritier des rois normands par sa mère Constance. L'union avec l'Empire est personnelle : la Sicile reste juridiquement séparée. Cette union inquiète la papauté, qui se trouve encerclée, et nourrit un long conflit avec l'empereur.",
+    "years": [1220, 1220]
+  },
+  {
+    "name": "Royaume d'Italie (autorité impériale nominale)",
+    "summary": "Après la mort de Conradin en 1268, l'Italie reste une possession théorique de l'Empire. L'autorité de l'empereur n'y est plus que nominale, face à des villes devenues puissantes et à la papauté. Aucun empereur n'y règne réellement avant le XIVe siècle.",
+    "years": [1268, 1268]
+  },
+  {
+    "name": "Pays-Bas et Lorraine",
+    "summary": "Les Pays-Bas et la Lorraine forment un ensemble de comtés et de duchés de l'Empire, dont la Flandre, le Brabant, la Hollande et la Lorraine. Ils passent au XVe siècle aux ducs de Bourgogne, puis aux Habsbourg par le mariage de Maximilien. Charles Quint les réunit en 1548.",
+    "years": [1273, 1547]
+  },
+  {
+    "name": "Italie impériale (autorité nominale)",
+    "summary": "L'Italie impériale, c'est le nord de la péninsule qui relève toujours de l'Empire en droit, mais où l'autorité de l'empereur n'est plus que nominale. Les villes et seigneuries, comme Milan, Florence ou Venise, agissent en États quasi indépendants. Les empereurs n'y interviennent qu'à l'occasion de campagnes.",
+    "years": [1273, 1495]
+  },
+  {
+    "name": "Silésie (couronne de Bohême)",
+    "summary": "La Silésie fait partie de la couronne de Bohême au XIVe siècle, quand ses ducs piasts reconnaissent la suzeraineté du roi de Bohême. Charles IV renforce ce lien. La région, très disputée entre la Pologne et la Bohême, reste ainsi dans le cadre de l'Empire.",
+    "years": [1356, 1495]
+  },
+  {
+    "name": "Royaume de Bohême (insurgé hussite)",
+    "summary": "Le royaume de Bohême se soulève en 1419 lors des guerres hussites, mouvement religieux issu de la mort de Jan Hus. Les hussites refusent d'accepter Sigismond comme roi. Ils repoussent plusieurs croisades et obtiennent finalement la reconnaissance de certaines de leurs demandes religieuses.",
+    "years": [1419, 1419]
+  },
+  {
+    "name": "Royaume de Hongrie (union personnelle d'Albert)",
+    "summary": "Le royaume de Hongrie revient en 1438 à Albert II de Habsbourg, déjà duc d'Autriche et roi de Bohême. Il hérite de Sigismond par son mariage. Cette union reste personnelle, car la Hongrie n'appartient pas à l'Empire. Albert meurt dès 1439, et l'union se défait.",
+    "years": [1438, 1438]
+  },
+  {
+    "name": "Bohême et Silésie",
+    "summary": "La Bohême et la Silésie sont des terres de la couronne de Bohême, passées aux Habsbourg après la bataille de Mohács en 1526. Elles gardent leurs diètes et leurs privilèges, mais le pouvoir se concentre à Vienne, surtout après la défaite des États de Bohême en 1620. La Silésie sera en grande partie perdue en 1742.",
+    "years": [1519, 1683]
+  },
+  {
+    "name": "Royaume d'Espagne (Charles Quint)",
+    "summary": "L'Espagne est un héritage de Charles Quint, par sa mère Jeanne de Castille. Elle forme avec ses possessions d'outre-mer une monarchie distincte de l'Empire, mais unie à lui par la personne de l'empereur. À son abdication, elle passe à son fils Philippe II, et la branche espagnole des Habsbourg se sépare.",
+    "years": [1519, 1547]
+  },
+  {
+    "name": "Naples, Sicile et Sardaigne (Charles Quint)",
+    "summary": "Naples, la Sicile et la Sardaigne sont des royaumes hérités par Charles Quint des rois d'Aragon. Ils ne font pas partie de l'Empire, mais de la couronne espagnole qu'il détient. Ils passent à Philippe II à son abdication, et servent de base à la domination des Habsbourg en Méditerranée.",
+    "years": [1519, 1547]
+  },
+  {
+    "name": "Haute-Bourgogne et Suisse",
+    "summary": "La Haute-Bourgogne et la Suisse désignent ici la Franche-Comté et les confins alpins, aux mains de Charles Quint par l'héritage bourguignon. La Franche-Comté reste liée à l'Empire dans le Cercle de Bourgogne. Les cantons suisses, eux, s'en détachent de fait, sans rupture juridique avant 1648.",
+    "years": [1519, 1632]
+  },
+  {
+    "name": "Italie impériale",
+    "summary": "L'Italie impériale désigne la Lombardie et d'autres fiefs d'Italie du Nord relevant de l'Empire. Charles Quint s'y impose après la bataille de Pavie en 1525. Le Milanais passe à l'Espagne en 1540. Ces territoires deviennent un enjeu majeur de la rivalité entre Habsbourg et rois de France.",
+    "years": [1519, 1683]
+  },
+  {
+    "name": "Hongrie royale (Habsbourg)",
+    "summary": "La Hongrie royale est la partie de la Hongrie tenue par les Habsbourg après la défaite de Mohács en 1526 face aux Ottomans. Elle est réduite à une étroite bande à l'ouest et au nord. Elle ne fait pas partie de l'Empire, mais de la monarchie des Habsbourg, qui la défendent pendant un siècle et demi.",
+    "years": [1526, 1683]
+  },
+  {
+    "name": "Bohême",
+    "summary": "La Bohême est un royaume de la couronne de Bohême, tenu par les Habsbourg depuis 1526 et membre de l'Empire. Son roi est l'un des princes électeurs. Sa noblesse, en partie protestante, entre en conflit avec Vienne, ce qui mènera à la révolte de 1618 puis à la défaite de la Montagne Blanche en 1620.",
+    "years": [1555, 1632]
+  },
+  {
+    "name": "Silésie",
+    "summary": "La Silésie, rattachée à la couronne de Bohême, appartient aux Habsbourg depuis 1526. Région riche et en partie protestante, elle subit les ravages de la guerre de Trente Ans. Elle est conservée jusqu'à la conquête de Frédéric II de Prusse en 1740, qui lui arrache la majeure partie.",
+    "years": [1555, 1714]
+  },
+  {
+    "name": "Pays-Bas (Dix-Sept Provinces) et Alsace-Lorraine",
+    "summary": "Les Pays-Bas des Dix-Sept Provinces, hérités des ducs de Bourgogne et réunis par Charles Quint dans le Cercle de Bourgogne, forment avec l'Alsace et la Lorraine les marges occidentales de l'Empire. La révolte des provinces du Nord contre l'Espagne, à partir de 1568, aboutit à l'indépendance des Provinces-Unies.",
+    "years": [1555, 1632]
+  },
+  {
+    "name": "Bohême (insurgée)",
+    "summary": "La Bohême se révolte contre les Habsbourg en 1618, après la défenestration de Prague. Les États protestants refusent l'autorité de Ferdinand II et élisent Frédéric V du Palatinat comme roi. La révolte est écrasée à la Montagne Blanche en 1620, et déclenche la guerre de Trente Ans.",
+    "years": [1618, 1618]
+  },
+  {
+    "name": "Franche-Comté et Savoie",
+    "summary": "La Franche-Comté et la Savoie sont des régions frontalières de l'ancien royaume d'Arles. La Franche-Comté appartient au roi d'Espagne, tandis que la Savoie est un duché de l'Empire gouverné par sa propre maison. Les traités de Westphalie de 1648 ne changent pas leur sort. Louis XIV conquiert la Franche-Comté, que la paix de Nimègue lui donne en 1678.",
+    "years": [1648, 1648]
+  },
+  {
+    "name": "Pays-Bas espagnols, Luxembourg, Lorraine, Strasbourg",
+    "summary": "Les Pays-Bas espagnols, le Luxembourg, la Lorraine et Strasbourg sont des territoires frontaliers de l'Empire et de la France. En 1648, les traités de Westphalie donnent à la France des droits sur l'Alsace, mais Strasbourg reste impériale jusqu'à 1681. Les Pays-Bas espagnols demeurent sous l'autorité de Madrid.",
+    "years": [1648, 1648]
+  },
+  {
+    "name": "Savoie",
+    "summary": "La Savoie est un duché de l'Empire, gouverné par la maison de Savoie, qui s'étend aussi au Piémont. Les ducs mènent une politique d'équilibre entre la France et l'Autriche. En 1713, le duc reçoit le titre de roi de Sicile, puis de Sardaigne, et jouera plus tard un rôle central dans l'unité italienne.",
+    "years": [1683, 1740]
+  },
+  {
+    "name": "Pays-Bas espagnols, Luxembourg et Lorraine",
+    "summary": "Les Pays-Bas espagnols et le Luxembourg relèvent du roi d'Espagne et appartiennent au Cercle de Bourgogne de l'Empire. La Lorraine, duché de l'Empire, est alors occupée par la France. Louis XIV convoite toute cette frontière et y arrache plusieurs places ; la guerre de Succession d'Espagne en changera le sort.",
+    "years": [1683, 1683]
+  },
+  {
+    "name": "Bohême et Moravie",
+    "summary": "La Bohême et la Moravie sont deux pays de la couronne de Bohême, tenus par les Habsbourg depuis 1526. Après 1740, elles forment le cœur industriel et agricole de la monarchie. Elles restent dans l'Empire jusqu'à sa dissolution en 1806, et conservent leur identité tchèque.",
+    "years": [1714, 1806]
+  },
+  {
+    "name": "Royaume de Hongrie, Croatie et Transylvanie (Habsbourg)",
+    "summary": "Le royaume de Hongrie, avec la Croatie et la Transylvanie, est repris aux Ottomans par les Habsbourg à la fin du XVIIe siècle, puis confirmé par la paix de Karlowitz en 1699. Il ne fait pas partie de l'Empire, mais reste intégré à la monarchie des Habsbourg, qui y gouverne par un roi héréditaire.",
+    "years": [1714, 1714]
+  },
+  {
+    "name": "Naples et Sardaigne (Habsbourg, hors Empire)",
+    "summary": "Naples et la Sardaigne passent aux Habsbourg d'Autriche en 1714, après la guerre de Succession d'Espagne. Ces territoires d'Italie, hors de l'Empire, ne durent pas : Naples est reprise par les Bourbons en 1735, et la Sardaigne est cédée à la Savoie dès 1720.",
+    "years": [1714, 1714]
+  },
+  {
+    "name": "Pays-Bas autrichiens, Luxembourg et Lorraine",
+    "summary": "Les Pays-Bas autrichiens et le Luxembourg sont les anciens Pays-Bas espagnols, passés à l'Autriche en 1714 et gouvernés depuis Bruxelles jusqu'à l'invasion française de 1794. La Lorraine, duché de l'Empire, a pour duc François, futur époux de Marie-Thérèse ; il la cède en 1737, et elle revient à la France en 1766.",
+    "years": [1714, 1740]
+  },
+  {
+    "name": "Italie impériale (Milan, Toscane, Parme, Modène…)",
+    "summary": "L'Italie impériale réunit Milan, la Toscane, Parme et Modène, territoires d'Italie du Nord relevant de l'Empire. Après 1714, le Milanais passe aux Habsbourg d'Autriche, qui y exercent une autorité directe. La Toscane suit à partir de 1737. L'Italie devient une zone d'influence majeure de Vienne.",
+    "years": [1714, 1740]
+  },
+  {
+    "name": "Royaume de Hongrie, Croatie, Transylvanie et Banat (Habsbourg)",
+    "summary": "Le royaume de Hongrie, avec la Croatie, la Transylvanie et le Banat, est un ensemble tenu par les Habsbourg, mais hors de l'Empire. Après la reconquête sur les Ottomans, Marie-Thérèse et ses successeurs le gouvernent en union personnelle. Il garde ses institutions propres, dont sa diète, jusqu'en 1806 et au-delà.",
+    "years": [1740, 1806]
+  },
+  {
+    "name": "Galicie et Bucovine (Habsbourg)",
+    "summary": "La Galicie et la Bucovine sont des territoires annexés par l'Autriche lors des partages de la Pologne, en 1772, et de l'Empire ottoman, en 1775. Ils appartiennent à la monarchie des Habsbourg, mais pas à l'Empire. Ils resteront autrichiens jusqu'en 1918.",
+    "years": [1801, 1806]
+  },
+  {
+    "name": "Vénétie autrichienne (hors Empire)",
+    "summary": "La Vénétie est cédée à l'Autriche en 1797 par le traité de Campo-Formio, à la chute de la République de Venise. Hors de l'Empire, elle appartient à la monarchie des Habsbourg. Elle est perdue en 1805, après Austerlitz, lorsque le traité de Presbourg la donne au royaume d'Italie de Napoléon.",
+    "years": [1801, 1805]
+  },
+  {
+    "name": "Allemagne impériale (rive droite du Rhin), Autriche et Slovénie",
+    "summary": "L'Allemagne impériale située à droite du Rhin, avec l'Autriche et la Slovénie, constitue après 1801 ce qui reste de l'Empire. La rive gauche a été cédée à la France par le traité de Lunéville. Le Recès de 1803 réorganise le reste, en supprimant la plupart des États ecclésiastiques et des villes libres.",
+    "years": [1801, 1805]
+  },
+  {
+    "name": "Poméranie et Neumark (Brandebourg, Suède)",
+    "summary": "La Poméranie et le Neumark forment un ensemble de la Baltique partagé entre le Brandebourg-Prusse et la Suède. La Poméranie suédoise appartient à l'Empire depuis 1648, et la Prusse y tient la partie orientale. Elles disparaissent du cadre de l'Empire avec sa dissolution en 1806.",
+    "years": [1801, 1806]
+  },
+  {
+    "name": "Littoral autrichien et Tyrol méridional",
+    "summary": "Le littoral autrichien et le Tyrol méridional regroupent Trieste, Gorizia et la région de Trente et Bolzano, terres des Habsbourg dans l'Empire. Après Austerlitz, en 1805, le Tyrol passe à la Bavière ; Trieste et Gorizia sont cédées à la France en 1809 et rejoignent les Provinces illyriennes. L'Autriche récupère l'ensemble en 1814.",
+    "years": [1801, 1805]
+  },
+  {
+    "name": "États de la Confédération du Rhin (sortis de l'Empire)",
+    "summary": "La Confédération du Rhin est formée en juillet 1806 par seize princes allemands, dont les rois de Bavière et de Wurtemberg, placés sous la protection de Napoléon. Ils quittent l'Empire et reconnaissent le protecteur français. Leur départ conduit François II à abdiquer et à dissoudre le Saint-Empire.",
+    "years": [1806, 1806]
+  },
+  {
+    "name": "Derniers territoires de l'Empire (Autriche, Prusse, Saxe, Hanovre, Nord)",
+    "summary": "Ce sont les derniers territoires de l'Empire en 1806 : l'Autriche, la Prusse, la Saxe, le Hanovre et le nord de l'Allemagne. Après le départ des États du Rhin, l'empereur François II renonce à sa couronne le 6 août. Le Saint-Empire cesse d'exister après presque mille ans.",
+    "years": [1806, 1806]
+  }
+]
