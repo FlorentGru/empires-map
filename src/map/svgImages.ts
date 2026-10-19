@@ -6,10 +6,11 @@ export async function addSvgImages(map: MapLibreMap, images: [id: string, svg: s
     images.map(
       ([id, svg, size, height = size]) =>
         new Promise<void>((resolve) => {
-          if (map.hasImage(id)) return resolve();
+          // Carte détruite entre-temps (changement d'empire) : plus rien à ajouter.
+          if (!map.style || map.hasImage(id)) return resolve();
           const img = new Image(size * 2, height * 2);
           img.onload = () => {
-            if (!map.hasImage(id)) map.addImage(id, img, { pixelRatio: 2 });
+            if (map.style && !map.hasImage(id)) map.addImage(id, img, { pixelRatio: 2 });
             resolve();
           };
           img.onerror = () => resolve();

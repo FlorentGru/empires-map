@@ -121,7 +121,9 @@ export class DisasterLayers {
       map.on('mouseleave', id, this.onLeave);
     }
     // Données chargées à la demande : premier affichage dès leur arrivée.
-    void loadWorld().then(() => this.apply());
+    void loadWorld().then(() => {
+      if (this.map.style) this.apply(); // carte encore là (pas détruite par un changement d'empire)
+    });
   }
 
   private onEnter = () => {

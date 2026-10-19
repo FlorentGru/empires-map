@@ -36,10 +36,11 @@ export async function addMonumentIcons(map: import('maplibre-gl').Map, kinds: Mo
       (kind) =>
         new Promise<void>((resolve) => {
           const id = `monument-${kind}`;
-          if (map.hasImage(id)) return resolve();
+          // Carte détruite entre-temps (changement d'empire) : plus rien à ajouter.
+          if (!map.style || map.hasImage(id)) return resolve();
           const img = new Image(56, 56);
           img.onload = () => {
-            if (!map.hasImage(id)) map.addImage(id, img, { pixelRatio: 2 });
+            if (map.style && !map.hasImage(id)) map.addImage(id, img, { pixelRatio: 2 });
             resolve();
           };
           img.onerror = () => resolve();
