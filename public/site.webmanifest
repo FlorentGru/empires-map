@@ -1,0 +1,16 @@
+{
+  "name": "Atlas des Empires",
+  "short_name": "Atlas Empires",
+  "description": "Cartes interactives de l’histoire des grands empires, étape par étape.",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4ead3",
+  "theme_color": "#2b2219",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

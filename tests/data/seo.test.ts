@@ -2,9 +2,23 @@ import { describe, expect, it } from 'vitest';
 import { join } from 'node:path';
 import { DESCRIPTION_MAX, pageDescription, pageTitle, parsePath, pathOf } from '../../src/lib/seo';
 import type { Empire } from '../../src/types';
-import { DATA, empireIds, readJson, itAll } from './helpers';
+import { DATA, empireIds, exists, pngHeader, readJson, ROOT, itAll } from './helpers';
 
 const empires = empireIds().map((id) => readJson<Empire>(join(DATA, 'empires', id, 'timeline.json')));
+
+describe('images de partage et icônes (npm run build:og)', () => {
+  it('une image 1200×630 par empire, plus celle de l’accueil', () => {
+    for (const id of [...empireIds(), 'atlas']) {
+      const head = pngHeader(join(ROOT, 'public', 'og', `${id}.png`));
+      expect(head, id).toMatchObject({ width: 1200, height: 630 });
+    }
+  });
+
+  it('favicon, icônes et manifest', () => {
+    for (const f of ['favicon.svg', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'site.webmanifest']) expect(exists(join(ROOT, 'public', f)), f).toBe(true);
+    expect(pngHeader(join(ROOT, 'public', 'icon-512.png'))).toMatchObject({ width: 512, height: 512 });
+  });
+});
 
 describe('pages des empires et des étapes (src/lib/seo.ts)', () => {
   it('chaque empire a une adresse distincte, qui le retrouve', () => {
