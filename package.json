@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && tsx scripts/prerender.ts",
+    "prerender": "tsx scripts/prerender.ts",
     "preview": "vite preview",
     "serve": "vite build && vite preview --host --port 4173 --strictPort",
     "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.scripts.json --noEmit",

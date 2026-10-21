@@ -1,5 +1,5 @@
 # Mise en ligne gratuite sur GitHub Pages à chaque push sur main.
-# À activer une fois dans le dépôt : Settings → Pages → Build and deployment → Source : « GitHub Actions ».
+# Activé dans le dépôt (Settings → Pages → Source : « GitHub Actions ») : https://florentgru.github.io/empires-map/
 # Version statique : le sage et le quiz rédigé par l'IA (serveur Python + clé) n'y sont pas ; le quiz hors ligne oui.
 name: Pages
 
@@ -27,12 +27,17 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      # Le site est servi sous https://<compte>.github.io/<dépôt>/ : les chemins partent de ce préfixe.
-      - run: npx vite build --base=/${{ github.event.repository.name }}/
+      # Adresse publique du site (https://<compte>.github.io/<dépôt>/, ou le nom de domaine s'il y en a un).
+      - id: pages
+        uses: actions/configure-pages@v5
+      # Les chemins partent du préfixe du site (« /empires-map/ », ou « / » avec un nom de domaine).
+      - run: npx vite build --base=${{ steps.pages.outputs.base_path }}/
         env:
           VITE_STATIC: '1'
-      # Une page 404 qui renvoie vers l'app (liens directs ?empire=…&step=… compris).
-      - run: cp dist/index.html dist/404.html
+      # Pages statiques (une par empire, étape et synthèse), sitemap.xml, robots.txt, llms.txt et 404.html.
+      - run: npx tsx scripts/prerender.ts
+        env:
+          SITE_URL: ${{ steps.pages.outputs.base_url }}/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
