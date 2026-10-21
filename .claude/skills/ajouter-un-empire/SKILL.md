@@ -48,7 +48,8 @@ Corrige les petits écarts (une ville mal classée, un statut) directement dans 
 ### 4. Vérifications finales (toi)
 - Attends la CI : `gh run watch $(gh run list --limit 1 --json databaseId -q '.[0].databaseId') --exit-status`.
 - Mets à jour `README.md` (empires disponibles) et `docs/ARCHITECTURE.md` si une technique nouvelle a été introduite.
-- Donne à Florent 3-4 liens de test `http://localhost:5173/?empire=<id>&step=<stepId>` sur les étapes marquantes, et rappelle `npm start` si le serveur ne tourne pas.
+- **SEO** : si l'id n'est pas un mot français, ajoute son slug dans `SLUGS` (`src/lib/seo.ts`, ex. `china` → `chine`) ; lance `npm run build:og` et commite `public/og/<id>.png` (image de partage) ; `npm run build` doit annoncer les nouvelles pages (`prerender : N pages`).
+- Donne à Florent 3-4 liens de test `http://localhost:5173/<slug>/<stepId>/` sur les étapes marquantes, et rappelle `npm start` si le serveur ne tourne pas.
 - Signale honnêtement les limites (frontières approximatives, citations « attribuées », figurines empruntées à un autre peuple).
 
 ## Pièges déjà rencontrés

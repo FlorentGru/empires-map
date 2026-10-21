@@ -250,7 +250,17 @@ Le coût d'un agent vient surtout de son **démarrage à froid** : il relit le c
 - **enchaîner** les tâches qui dépendent l'une de l'autre (le cartographe a besoin des notes territoriales de l'historien) ;
 - **paralléliser** les tâches indépendantes qui touchent des fichiers différents, par exemple le contenu d'un empire pendant que la carte d'un autre est dessinée : c'est aussi cher, mais deux fois plus rapide.
 
-## 12. Tests
+## 12. Référencement (SEO)
+
+L'Atlas est une application d'une seule page, rendue en JavaScript : sans précaution, un moteur de recherche n'y verrait qu'un `<div>` vide. Trois mesures rendent visible chaque contenu :
+
+- **Une adresse par contenu** : `/rome/`, `/rome/cannes-216/`, `/chine/`, `/monuments/`… `src/lib/seo.ts` (module pur, partagé par l'application et les scripts) fabrique les chemins, titres (≈ 60-70 caractères) et descriptions (≤ 155). `src/player/urlState.ts` lit le chemin (ou l'ancien `?empire=&step=`) et réécrit l'adresse, le titre, la description et le canonical à chaque étape.
+- **Pré-rendu au build** (`scripts/prerender.ts`, après `vite build`) : 223 copies de `index.html` (accueil, 6 empires, 212 étapes, 4 synthèses), chacune avec sa tête (canonical absolu, Open Graph, Twitter Card, JSON-LD `Article`/`BreadcrumbList`/`CollectionPage`/`WebApplication`) et, dans `<div id="root">`, l'article complet (récit, conséquences, sources, liens vers les étapes voisines). React remplace cet article par la carte au démarrage : c'est le même contenu, pas du texte caché. Le script écrit aussi `sitemap.xml`, `robots.txt`, `llms.txt` (résumé pour les assistants IA) et `404.html` (`noindex`). L'adresse publique vient de `actions/configure-pages` (`SITE_URL`) : passer à un nom de domaine ne demande aucun changement de code.
+- **Aperçus et performances** : une image de partage par empire (`npm run build:og` : silhouette de l'apogée, emblème, dates, rendue par Chromium), favicon et manifest ; polices hébergées avec le site (`@fontsource`, `font-display: swap`, sous-ensembles par `unicode-range`) au lieu de Google Fonts, qui bloquait le rendu.
+
+Sur GitHub Pages (sous-adresse `/empires-map/`), `robots.txt` n'est pas lu par les moteurs : le sitemap se déclare dans Google Search Console.
+
+## 13. Tests
 
 - **Unitaires** (`tests/unit`, `npm test`, Vitest, environnement node) : fonctions pures de `src/` (formatage des années sans année 0, nombres en lettres pour la narration, périodes et bornes qui se touchent, chaînage des armées, échelle de la frise monotone, palette des entités, emprises géométriques).
 - **Données** (`tests/data`, `npm run test:data`) : pour chaque `data/empires/*/timeline.json`, vérifie le contrat de `src/types.ts` (ids uniques, étapes triées dans [start, end], factions et archétypes connus, citations ≤ 120 caractères, chaînage des armées, périodes couvrantes) et la présence des fichiers générés dans `public/data/` (territoires valides, diffs, SDF PNG RGB 8 bits + JSON, voisins) pour chaque transition. Vérifie aussi `cities.json` et le catalogue. Un nouvel empire est testé automatiquement dès que son dossier existe ; les messages d'erreur citent empire, étape et fichier.
