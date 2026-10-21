@@ -92,7 +92,7 @@ interface Page {
 }
 
 /** Style minimal de l'article (affiché le temps du chargement de la carte, et sans JavaScript). */
-const STYLE = `<style>.seo-page{box-sizing:border-box;height:100%;overflow:auto;padding:24px 16px 48px;background:#f4ead3;color:#2b2219;font:16px/1.6 Georgia,'Times New Roman',serif}.seo-page>*{max-width:760px;margin-left:auto;margin-right:auto}.seo-page h1{font-size:2rem;line-height:1.2;margin:.4em auto}.seo-page h2{font-size:1.35rem;margin:1.4em auto .4em}.seo-page h3{font-size:1.1rem;margin:1em auto .2em}.seo-page a{color:#7a2e1c}.seo-crumbs{font-size:.9rem}.seo-lead{font-size:1.1rem;font-style:italic}.seo-cta{display:inline-block;margin:.6em 0;padding:.4em 1em;background:#6d4c2a;color:#f4ead3!important;border-radius:6px;text-decoration:none}.seo-meta{color:#5c4a38;font-size:.95rem}</style>`;
+const STYLE = `<style>.seo-page{box-sizing:border-box;height:100%;overflow:auto;padding:24px 16px 48px;background:#f4ead3;color:#2b2219;font:16px/1.6 Georgia,'Times New Roman',serif}.seo-page>*{max-width:760px;margin-left:auto;margin-right:auto}.seo-page h1,.seo-page h2,.seo-page h3{font-family:'Cormorant Garamond',Georgia,serif}.seo-page h1{font-size:2.2rem;line-height:1.2;margin:.4em auto}.seo-page h2{font-size:1.35rem;margin:1.4em auto .4em}.seo-page h3{font-size:1.1rem;margin:1em auto .2em}.seo-page a{color:#7a2e1c}.seo-crumbs{font-size:.9rem}.seo-lead{font-size:1.1rem;font-style:italic}.seo-cta{display:inline-block;margin:.6em 0;padding:.4em 1em;background:#6d4c2a;color:#f4ead3!important;border-radius:6px;text-decoration:none}.seo-meta{color:#5c4a38;font-size:.95rem}</style>`;
 
 function render(page: Page): string {
   const canonical = abs(page.route);
