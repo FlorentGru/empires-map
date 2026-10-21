@@ -13,7 +13,7 @@ test('sélecteur d’empire : passage à l’Empire espagnol, sans erreur', asyn
     .locator('.empire-card', { hasText: /Empire espagnol/ })
     .first()
     .click();
-  await expect(page).toHaveURL(/empire=espagne/);
+  await expect(page).toHaveURL(/\/espagne\//);
   await expect(page.locator('.timeline__title')).toHaveText(/Grenade/);
   expect(errors).toEqual([]);
 });

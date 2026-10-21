@@ -35,6 +35,6 @@ test('galerie : figurines, personnages, monuments, catastrophes, inventions et �
   }
   // « Voir sur la carte » depuis une fiche.
   await page.locator('.gallery__appears button').first().click();
-  await expect(page).toHaveURL(/empire=rome&step=/);
+  await expect(page).toHaveURL(/\/rome\/[a-z0-9-]+\//);
   expect(errors).toEqual([]);
 });

@@ -12,5 +12,5 @@ test('époque : capitales des voisins et des empires contemporains, la légende 
 
   const go = page.locator('.legend').getByRole('button', { name: /Empire mongol/ });
   await go.click();
-  await expect(page).toHaveURL(/empire=mongols/);
+  await expect(page).toHaveURL(/\/mongols\//);
 });

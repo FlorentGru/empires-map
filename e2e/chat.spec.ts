@@ -17,7 +17,7 @@ test('le guide répond et déplace la carte', async ({ page }) => {
   await page.keyboard.press('Enter');
   await expect(page.locator('.chat-msg--bot')).toContainText('victoire de Napoléon');
   await expect(page.locator('.chat-tools')).toContainText('naviguer_vers_etape');
-  await expect(page).toHaveURL(/empire=napoleon/);
-  await expect(page).toHaveURL(/step=austerlitz-1805/);
+  await expect(page).toHaveURL(/\/napoleon\//);
+  await expect(page).toHaveURL(/\/austerlitz-1805\//);
   await expect(page.locator('.chat-msg--note')).toContainText('Carte déplacée');
 });

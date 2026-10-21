@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { readUrlState } from '../player/urlState';
 import { EMPIRES } from '../data/loadEmpire';
 import { PEOPLE } from '../data/loadPeople';
 import { formatYear } from '../lib/years';
@@ -125,8 +126,8 @@ export function PeopleView({
   onNavigate: (empireId: string, stepId: string) => void;
 }) {
   const empires = EMPIRES.filter((e) => (PEOPLE[e.id]?.length ?? 0) > 0);
-  // Par défaut : l'empire affiché sur la carte (paramètre d'URL), sinon le premier qui a des fiches.
-  const current = new URLSearchParams(window.location.search).get('empire');
+  // Par défaut : l'empire affiché sur la carte (adresse de la page), sinon le premier qui a des fiches.
+  const current = readUrlState().empire;
   const [empireId, setEmpireId] = useState(initial?.empire ?? (empires.some((e) => e.id === current) ? current! : (empires[0]?.id ?? '')));
   const [selected, setSelected] = useState<string | null>(initial?.id ?? null);
   const q = norm(query.trim());

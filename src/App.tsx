@@ -9,7 +9,8 @@ import { Legend } from './panels/Legend';
 import { ViewControls } from './panels/ViewControls';
 import { readBool, writeBool } from './lib/settings';
 import { EventPanel } from './panels/EventPanel';
-import { readUrlState, writeUrlState } from './player/urlState';
+import { currentHub, enterHub, leaveHub, readUrlState, writeUrlState } from './player/urlState';
+import type { Hub } from './lib/seo';
 import { BASE_STEP_MS, usePlayer } from './player/usePlayer';
 import { battleStepMs } from './lib/march';
 import { chapterAt, periodIndexAt } from './lib/periods';
@@ -40,6 +41,10 @@ import type { Empire } from './types';
 
 // Galerie des figurines : chargée à la demande.
 // Vues chargées à la demande (hors du JS initial) ; celles qui parcourent tous les empires attendent leurs timelines.
+/** Onglet de la galerie de chaque page de synthèse, et inversement. */
+const HUB_FILTER: Partial<Record<Hub, 'monuments' | 'people' | 'inventions'>> = { monuments: 'monuments', personnages: 'people', inventions: 'inventions' };
+const FILTER_HUB: Record<string, Hub> = { monuments: 'monuments', people: 'personnages', inventions: 'inventions' };
+
 const Gallery = lazy(withAllEmpires(() => import('./figures/Gallery').then((m) => ({ default: m.Gallery }))));
 const CompareView = lazy(withAllEmpires(() => import('./compare/CompareView').then((m) => ({ default: m.CompareView }))));
 const EmpiresView = lazy(withAllEmpires(() => import('./empires/EmpiresView').then((m) => ({ default: m.EmpiresView }))));
@@ -77,23 +82,36 @@ export function App() {
     setWorld(null);
   }, []);
   // Page « Tous les empires » (?empires=1&e=<id>) : frise de tous les empires et résumé au clic.
-  const [allEmpires, setAllEmpires] = useState(() => new URLSearchParams(window.location.search).get('empires') === '1');
+  // Page « Tous les empires » (/empires/, ou l'ancien ?empires=1 ; &e=<id>) : frise de tous les empires et résumé au clic.
+  const [allEmpires, setAllEmpires] = useState(() => currentHub() === 'empires' || new URLSearchParams(window.location.search).get('empires') === '1');
   const leaveAllEmpires = useCallback(() => {
     clearEmpiresUrl();
+    leaveHub();
     setAllEmpires(false);
   }, []);
   const openAllEmpires = useCallback(() => {
-    const url = new URL(window.location.href);
-    url.searchParams.set('empires', '1');
-    window.history.replaceState(null, '', url);
+    enterHub('empires');
     setAllEmpires(true);
   }, []);
-  const [galleryOpen, setGalleryOpen] = useState(() => new URLSearchParams(window.location.search).get('figures') === 'gallery');
+  // Galerie : ?figures=gallery, ou page de synthèse /monuments/, /personnages/, /inventions/ (onglet correspondant).
+  const [galleryFilter] = useState(() => {
+    const h = currentHub();
+    return h ? HUB_FILTER[h] : undefined;
+  });
+  const [galleryOpen, setGalleryOpen] = useState(() => new URLSearchParams(window.location.search).get('figures') === 'gallery' || galleryFilter !== undefined);
+  const onGalleryFilter = useCallback((f: string) => {
+    const h = currentHub();
+    if (h && h !== 'empires') {
+      if (FILTER_HUB[f]) enterHub(FILTER_HUB[f]);
+      else leaveHub();
+    }
+  }, []);
   const [chatContext, setChatContext] = useState<ChatContext | null>(null);
   const [quizOpen, setQuizOpen] = useState(false);
   const openQuiz = useCallback(() => setQuizOpen(true), []);
   const closeGallery = useCallback(() => {
     clearFiguresParam();
+    leaveHub();
     setPersonRef(null);
     setGalleryOpen(false);
   }, []);
@@ -106,7 +124,11 @@ export function App() {
       setWorld(null);
       clearEmpiresUrl();
       setAllEmpires(false);
-      writeUrlState(e.id, stepId);
+      leaveHub();
+      writeUrlState(
+        e,
+        e.steps.find((s) => s.id === stepId),
+      );
       setLoadedEmpireId(e.id);
       setNavKey((k) => k + 1);
       setGalleryOpen(false);
@@ -190,7 +212,7 @@ export function App() {
         )}
         {galleryOpen && (
           <Suspense fallback={null}>
-            <Gallery onClose={closeGallery} onNavigate={goToStep} initialPerson={personRef} />
+            <Gallery onClose={closeGallery} onNavigate={goToStep} initialPerson={personRef} initialFilter={galleryFilter} onFilterChange={onGalleryFilter} />
           </Suspense>
         )}
       </>
@@ -217,7 +239,7 @@ export function App() {
       )}
       {galleryOpen && (
         <Suspense fallback={null}>
-          <Gallery onClose={closeGallery} onNavigate={goToStep} initialPerson={personRef} />
+          <Gallery onClose={closeGallery} onNavigate={goToStep} initialPerson={personRef} initialFilter={galleryFilter} onFilterChange={onGalleryFilter} />
         </Suspense>
       )}
     </>
@@ -382,7 +404,8 @@ function Atlas({
   );
 
   useEffect(() => {
-    writeUrlState(empire.id, step?.id);
+    writeUrlState(empire, step);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- l'adresse ne dépend que de l'empire et de l'étape
   }, [empire.id, step?.id]);
 
   useEffect(() => {

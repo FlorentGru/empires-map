@@ -17,10 +17,14 @@ interface Props {
   onNavigate: (empireId: string, stepId: string) => void;
   /** Ouvre directement la fiche d'un personnage illustre. */
   initialPerson?: PersonRef | null;
+  /** Onglet ouvert au départ (page de synthèse /monuments/, /personnages/, /inventions/). */
+  initialFilter?: Filter;
+  /** Changement d'onglet (l'adresse suit quand la galerie est ouverte en page de synthèse). */
+  onFilterChange?: (f: Filter) => void;
 }
 
 type Kind = 'faction' | 'archetype';
-type Filter = 'all' | 'soldiers' | 'characters' | 'people' | 'monuments' | 'disasters' | 'inventions';
+export type Filter = 'all' | 'soldiers' | 'characters' | 'people' | 'monuments' | 'disasters' | 'inventions';
 
 interface Item {
   uid: string;
@@ -188,10 +192,10 @@ function Card({ item, onOpen }: { item: Item; onOpen: () => void }) {
   );
 }
 
-export function Gallery({ onClose, onNavigate, initialPerson = null }: Props) {
+export function Gallery({ onClose, onNavigate, initialPerson = null, initialFilter, onFilterChange }: Props) {
   const ref = useRef<HTMLDialogElement>(null);
   const bodyRef = useRef<HTMLDivElement>(null);
-  const [filter, setFilter] = useState<Filter>(initialPerson ? 'people' : 'all');
+  const [filter, setFilter] = useState<Filter>(initialPerson ? 'people' : (initialFilter ?? 'all'));
   const [query, setQuery] = useState('');
   const [selected, setSelected] = useState<Item | null>(null);
   const selectedRef = useRef<Item | null>(null);
@@ -282,7 +286,16 @@ export function Gallery({ onClose, onNavigate, initialPerson = null }: Props) {
                 ['inventions', 'Inventions'],
               ] as const
             ).map(([id, label]) => (
-              <button key={id} type="button" className="btn btn--ghost" aria-pressed={filter === id} onClick={() => setFilter(id)}>
+              <button
+                key={id}
+                type="button"
+                className="btn btn--ghost"
+                aria-pressed={filter === id}
+                onClick={() => {
+                  setFilter(id);
+                  onFilterChange?.(id);
+                }}
+              >
                 {label}
               </button>
             ))}

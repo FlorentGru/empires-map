@@ -34,10 +34,9 @@ interface Row {
   available: boolean;
 }
 
-/** Adresse de la page : ?empires=1&e=<id>. */
+/** Adresse de la page : /empires/?e=<id> (le chemin est posé à l'ouverture, voir enterHub). */
 function writeUrl(id: string | null) {
   const url = new URL(window.location.href);
-  url.searchParams.set('empires', '1');
   if (id) url.searchParams.set('e', id);
   else url.searchParams.delete('e');
   if (url.href !== window.location.href) window.history.replaceState(null, '', url);

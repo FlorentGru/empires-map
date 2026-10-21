@@ -8,11 +8,11 @@ test('Devine la suite : une question avant l’étape suivante, verdict, puis la
   // La question d'abord : l'étape ne change pas encore.
   const card = page.getByRole('dialog', { name: 'Devine la suite' });
   await expect(card).toBeVisible();
-  await expect(page).toHaveURL(/step=zama-202/);
+  await expect(page).toHaveURL(/\/zama-202\//);
   await card.locator('.guess-card__choice').first().click();
   await expect(card.locator('.guess-card__verdict')).toBeVisible();
   await expect(card).toContainText('Score : ');
   await card.getByRole('button', { name: /Voir la suite/ }).click();
-  await expect(page).toHaveURL(/step=pydna-168/);
+  await expect(page).toHaveURL(/\/pydna-168\//);
   await expect(card).toBeHidden();
 });

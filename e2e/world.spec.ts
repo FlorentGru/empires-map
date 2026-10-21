@@ -21,6 +21,6 @@ test('le monde en l’an X : panneau, territoires, changement d’année et reto
     .getByRole('button', { name: /Voir dans cet empire/ })
     .first()
     .click();
-  await expect(page).toHaveURL(/empire=/);
+  await expect(page).toHaveURL(/\/[a-z-]+\/[a-z0-9-]+\/(\?|$)/);
   await expect(page).not.toHaveURL(/world=1/);
 });

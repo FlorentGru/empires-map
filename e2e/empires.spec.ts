@@ -6,7 +6,8 @@ test('tous les empires : frise, résumé au clic, empire à venir, puis explorat
   await page.goto('/?empire=rome&step=zama-202');
   await page.getByRole('button', { name: 'Empires', exact: true }).click();
   await expect(page.getByRole('heading', { name: 'Tous les empires' })).toBeVisible();
-  await expect(page).toHaveURL(/empires=1/);
+  await expect(page).toHaveURL(/\/empires\//);
+  await expect(page).toHaveTitle(/Tous les empires/);
   // Résumé d'un empire disponible.
   await page.getByRole('button', { name: /^Saint-Empire romain germanique, / }).click();
   const summary = page.getByRole('complementary', { name: /Résumé : Saint-Empire/ });
@@ -21,7 +22,7 @@ test('tous les empires : frise, résumé au clic, empire à venir, puis explorat
   // Retour au Saint-Empire, puis « Explorer sur la carte ».
   await page.getByRole('button', { name: /^Saint-Empire romain germanique, / }).click();
   await page.getByRole('button', { name: /Explorer sur la carte/ }).click();
-  await expect(page).toHaveURL(/empire=saint-empire&step=otton-962/);
-  await expect(page).not.toHaveURL(/empires=1/);
+  await expect(page).toHaveURL(/\/saint-empire\/otton-962\//);
+  await expect(page).not.toHaveURL(/\/empires\//);
   expect(errors).toEqual([]);
 });

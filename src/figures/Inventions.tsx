@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { readUrlState } from '../player/urlState';
 import { EMPIRES } from '../data/loadEmpire';
 import { INVENTIONS, requestInventionOpen } from '../data/loadInventions';
 import { formatYear } from '../lib/years';
@@ -87,7 +88,7 @@ function InventionDetail({
 /** Galerie des inventions révolutionnaires, par empire (data/empires/<id>/inventions.json). */
 export function InventionsView({ query, onNavigate }: { query: string; onNavigate: (empireId: string, stepId: string) => void }) {
   const empires = EMPIRES.filter((e) => (INVENTIONS[e.id]?.length ?? 0) > 0);
-  const current = new URLSearchParams(window.location.search).get('empire');
+  const current = readUrlState().empire;
   const [empireId, setEmpireId] = useState(empires.some((e) => e.id === current) ? current! : (empires[0]?.id ?? ''));
   const [selected, setSelected] = useState<string | null>(null);
   const q = norm(query.trim());
