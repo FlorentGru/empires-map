@@ -284,7 +284,8 @@
       66,
       28
      ],
-     "state": "combat"
+     "state": "combat",
+     "action": "feu"
     },
     "garde": {
      "to": [

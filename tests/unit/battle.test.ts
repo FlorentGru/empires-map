@@ -1,7 +1,22 @@
 import { describe, expect, it } from 'vitest';
 import { join } from 'node:path';
 import { readdirSync } from 'node:fs';
-import { durationOf, figuresOf, genericScenario, MAX_FIGURES, scaleFor, stateAt, TERRAIN_H, TERRAIN_W, totalTroops } from '../../src/battle/engine';
+import {
+  durationOf,
+  figuresOf,
+  genericScenario,
+  MAX_EFFECTS,
+  MAX_FIGURES,
+  scaleFor,
+  stateAt,
+  TERRAIN_H,
+  TERRAIN_W,
+  totalTroops,
+} from '../../src/battle/engine';
+import { firearmOf, isRanged } from '../../src/battle/weapons';
+import { weaponClass } from '../../src/battle/poses';
+import { SOLDIER_SPECS } from '../../src/figures/soldiers';
+import type { Faction } from '../../src/types';
 import type { BattleScenario, BattleTroopsFile } from '../../src/types-battle';
 import type { ArmyMove } from '../../src/types';
 import { DATA, itAll, readJson } from '../data/helpers';
@@ -118,6 +133,138 @@ describe('moteur de bataille', () => {
     const end = new Map(stateAt(sc, scale, 16).figures.map((g) => [g.id, g]));
     expect(mid.length).toBeGreaterThan(0);
     for (const g of mid) expect(end.get(g.id)).toMatchObject({ x: g.x, y: g.y, state: 'mort' });
+  });
+});
+
+/** Deux unités face à face : l'une tire (à l'arrêt) pendant 20 s, l'autre est une cible. */
+const duel = (
+  kind: 'infanterie' | 'archers' | 'artillerie',
+  move: Partial<BattleScenario['phases'][0]['moves'][string]> = {},
+  to: [number, number] = [30, 30],
+): BattleScenario => ({
+  terrain: 'plaine',
+  units: [
+    { id: 'tireur', army: 0, kind, troops: 2000, at: [30, 30], formation: 'ligne' },
+    { id: 'cible', army: 1, kind: 'infanterie', troops: 2000, at: [60, 30], formation: 'ligne' },
+  ],
+  phases: [{ label: 'x', duration: 40, moves: { tireur: { state: 'combat', to, ...move }, cible: { state: 'combat' } } }],
+});
+const FUSILIERS: (Faction | undefined)[] = ['francais', 'romains']; // la cible (armée 1) ne tire pas
+
+describe('armes et tirs', () => {
+  it('firearmOf / isRanged', () => {
+    expect(firearmOf('francais')).toBe('fusil');
+    expect(firearmOf('tercios')).toBe('arquebuse');
+    expect(firearmOf('romains')).toBeNull();
+    expect(isRanged({ kind: 'archers' }, 'romains')).toBe(true);
+    expect(isRanged({ kind: 'infanterie' }, 'romains')).toBe(false);
+    expect(isRanged({ kind: 'infanterie' }, 'britanniques')).toBe(true);
+  });
+
+  it('la liste des factions à fusil / arquebuse correspond aux dessins', () => {
+    for (const [f, spec] of Object.entries(SOLDIER_SPECS)) {
+      const cls = weaponClass(spec.weapon);
+      const expected = cls === 'fusil' ? 'fusil' : cls === 'arquebuse' ? 'arquebuse' : null;
+      expect(firearmOf(f as Faction), f).toBe(expected);
+    }
+  });
+
+  it('une unité à fusil au combat passe par vise, tir, recharge et produit de la fumée', () => {
+    const sc = duel('infanterie');
+    const scale = scaleFor(totalTroops(sc));
+    const poses = new Set<string>();
+    const kinds = new Set<string>();
+    for (let t = 0; t < 30; t += 0.05) {
+      const f = stateAt(sc, scale, t, FUSILIERS);
+      for (const g of f.figures.filter((g) => g.unit === 'tireur')) poses.add(g.pose);
+      for (const e of f.effects) kinds.add(e.kind);
+    }
+    expect([...poses].sort()).toEqual(['recharge', 'tir', 'vise']);
+    expect(kinds.has('fumee')).toBe(true);
+    expect(kinds.has('eclair')).toBe(true);
+  });
+
+  it('les figurines ne sont pas synchrones (décalage par figurine et par rang)', () => {
+    const sc = duel('infanterie');
+    const scale = scaleFor(totalTroops(sc));
+    const f = stateAt(sc, scale, 12.3, FUSILIERS).figures.filter((g) => g.unit === 'tireur');
+    expect(new Set(f.map((g) => g.pose)).size).toBeGreaterThan(1);
+  });
+
+  it('déterministe : poses et effets identiques pour un même t, même après un saut', () => {
+    const sc = duel('artillerie');
+    const scale = scaleFor(totalTroops(sc));
+    const a = stateAt(sc, scale, 17.7, FUSILIERS);
+    stateAt(sc, scale, 3, FUSILIERS);
+    stateAt(sc, scale, 25, FUSILIERS);
+    expect(stateAt(sc, scale, 17.7, FUSILIERS)).toEqual(a);
+  });
+
+  it('en mouvement, pas de tir : pose marche et aucun effet', () => {
+    const sc = duel('infanterie', {}, [55, 30]);
+    const scale = scaleFor(totalTroops(sc));
+    const f = stateAt(sc, scale, 20, FUSILIERS); // mi-course, en pleine vitesse
+    for (const g of f.figures.filter((g) => g.unit === 'tireur')) expect(g.pose).toBe('marche');
+    expect(f.effects).toHaveLength(0);
+  });
+
+  it('action baionnette : pose baionnette, pas de tir ; unité sans arme à feu au combat : idem', () => {
+    const bay = duel('infanterie', { action: 'baionnette' });
+    let f = stateAt(bay, scaleFor(totalTroops(bay)), 10, FUSILIERS);
+    for (const g of f.figures.filter((g) => g.unit === 'tireur')) expect(g.pose).toBe('baionnette');
+    expect(f.effects).toHaveLength(0);
+    const romains = duel('infanterie');
+    f = stateAt(romains, scaleFor(totalTroops(romains)), 10, ['romains', 'romains']);
+    for (const g of f.figures) expect(g.pose).toBe('baionnette');
+    expect(f.effects).toHaveLength(0);
+  });
+
+  it('l’artillerie tire des boulets, avec recul de la pièce ; les archers des flèches', () => {
+    const sc = duel('artillerie');
+    const scale = scaleFor(totalTroops(sc));
+    let boulet = 0;
+    let recul = 0;
+    for (let t = 0; t < 30; t += 0.05) {
+      const f = stateAt(sc, scale, t, FUSILIERS);
+      boulet += f.effects.filter((e) => e.kind === 'boulet').length;
+      recul = Math.max(recul, ...f.figures.map((g) => g.recoil));
+    }
+    expect(boulet).toBeGreaterThan(0);
+    expect(recul).toBeGreaterThan(0.5);
+    const arc = duel('archers');
+    let fleches = 0;
+    for (let t = 0; t < 30; t += 0.05) fleches += stateAt(arc, scaleFor(totalTroops(arc)), t).effects.filter((e) => e.kind === 'fleche' && e.tail).length;
+    expect(fleches).toBeGreaterThan(0);
+  });
+
+  it('au plus MAX_EFFECTS effets, même avec une grosse armée', () => {
+    const sc = duel('infanterie');
+    sc.units[0]!.troops = 40000;
+    sc.units[1]!.troops = 40000;
+    const scale = scaleFor(totalTroops(sc));
+    for (let t = 0; t < 30; t += 0.7) expect(stateAt(sc, scale, t, FUSILIERS).effects.length).toBeLessThanOrEqual(MAX_EFFECTS);
+  });
+
+  it('scénario générique ≥ 1500 avec arme à feu : batterie d’artillerie qui tire', () => {
+    const step = {
+      year: 1805,
+      armies: [
+        { ...army('France', true), faction: 'francais' as Faction },
+        { ...army('Autriche', false), faction: 'autrichiens' as Faction },
+      ],
+    };
+    const sc = genericScenario(step, [60000, 50000]);
+    const guns = sc.units.filter((u) => u.kind === 'artillerie');
+    expect(guns).toHaveLength(2);
+    const scale = scaleFor(totalTroops(sc));
+    let boulets = 0;
+    for (let t = 0; t <= durationOf(sc); t += 0.1)
+      boulets += stateAt(sc, scale, t, ['francais', 'autrichiens']).effects.filter((e) => e.kind === 'boulet').length;
+    expect(boulets).toBeGreaterThan(0);
+    checkRun(sc, scale);
+    // avant 1500 ou sans arme à feu : pas d'artillerie
+    expect(genericScenario({ ...step, year: 1400 }, [60000, 50000]).units.some((u) => u.kind === 'artillerie')).toBe(false);
+    expect(genericScenario(two, [60000, 50000]).units.some((u) => u.kind === 'artillerie')).toBe(false);
   });
 });
 

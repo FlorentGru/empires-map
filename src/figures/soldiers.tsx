@@ -90,7 +90,10 @@ function legsSvg(s: Spec, frame: SoldierFrame): string {
   return out;
 }
 
-function build(s: Spec, frame: SoldierFrame, state: SoldierState): string {
+/** Pose alternative (src/battle/poses.ts) : remplace le bras droit et l'arme ; `null` = dessin habituel. */
+export type SoldierPoseFn = (s: { weapon: string; tunic: string; skin: string }) => { arm: string; weapon: string } | null;
+
+function build(s: Spec, frame: SoldierFrame, state: SoldierState, pose?: SoldierPoseFn): string {
   const skin = s.skin ?? SKIN;
   const down = state === 'vaincu';
   let g = '';
@@ -105,11 +108,11 @@ function build(s: Spec, frame: SoldierFrame, state: SoldierState): string {
   g += circ(16, 9, 4, skin);
   g += circ(14.7, 9.3, 0.6, OUT, 'stroke="none"') + circ(17.3, 9.3, 0.6, OUT, 'stroke="none"');
   g += s.head;
+  const o = pose?.({ weapon: s.weapon, tunic: s.tunic, skin });
   // bras droit + main
-  g += path('M20.5 14.5L25 20L22.8 22.2L19.5 18Z', s.tunic);
-  g += circ(24.4, 21.4, 1.8, skin);
+  g += o?.arm ?? path('M20.5 14.5L25 20L22.8 22.2L19.5 18Z', s.tunic) + circ(24.4, 21.4, 1.8, skin);
   // arme
-  g += down ? `<g transform="rotate(160 26 18)">${s.weapon}</g>` : s.weapon;
+  g += o ? o.weapon : down ? `<g transform="rotate(160 26 18)">${s.weapon}</g>` : s.weapon;
   // bouclier
   if (s.shield) {
     g += down ? `<g transform="translate(-1 12) rotate(-75 8.5 23)">${s.shield}</g>` : s.shield;
@@ -1275,13 +1278,13 @@ export const SOLDIER_SPECS = {
 } satisfies Record<Faction, Spec>;
 
 /** Fabrique la chaîne SVG complète d'un soldat. */
-export function soldierSvg(faction: Faction, frame: SoldierFrame = 0, state: SoldierState = 'marche'): string {
+export function soldierSvg(faction: Faction, frame: SoldierFrame = 0, state: SoldierState = 'marche', pose?: SoldierPoseFn): string {
   const spec: Spec = SOLDIER_SPECS[faction];
   return (
     `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 40" width="32" height="40" role="img" ` +
     `aria-label="${faction}" focusable="false" style="overflow:visible">` +
     `<g stroke="${OUT}" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round">` +
-    build(spec, frame, state) +
+    build(spec, frame, state, pose) +
     `</g></svg>`
   );
 }

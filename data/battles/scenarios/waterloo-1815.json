@@ -236,6 +236,42 @@
    ],
    "formation": "colonne",
    "label": "Ier corps prussien de Zieten"
+  },
+  {
+   "id": "grande-batterie",
+   "army": 0,
+   "kind": "artillerie",
+   "troops": 2400,
+   "at": [
+    50,
+    40
+   ],
+   "formation": "ligne",
+   "label": "Grande batterie de 80 pièces devant le centre français"
+  },
+  {
+   "id": "art-crete",
+   "army": 1,
+   "kind": "artillerie",
+   "troops": 1500,
+   "at": [
+    52,
+    20
+   ],
+   "formation": "ligne",
+   "label": "Artillerie britannique sur la crête"
+  },
+  {
+   "id": "art-prussienne",
+   "army": 2,
+   "kind": "artillerie",
+   "troops": 1000,
+   "at": [
+    96,
+    46
+   ],
+   "formation": "ligne",
+   "label": "Artillerie prussienne de Bülow, vers Plancenoit"
   }
  ],
  "phases": [
@@ -249,7 +285,8 @@
       34
      ],
      "state": "combat",
-     "losses": 0.1
+     "losses": 0.1,
+     "action": "feu"
     },
     "wellington-d": {
      "to": [
@@ -257,7 +294,12 @@
       26
      ],
      "state": "combat",
-     "losses": 0.05
+     "losses": 0.05,
+     "action": "feu"
+    },
+    "grande-batterie": {
+     "state": "combat",
+     "action": "feu"
     }
    }
   },
@@ -271,7 +313,8 @@
       32
      ],
      "state": "combat",
-     "losses": 0.2
+     "losses": 0.2,
+     "action": "baionnette"
     },
     "uxbridge": {
      "to": [
@@ -287,7 +330,20 @@
       25
      ],
      "state": "combat",
-     "losses": 0.05
+     "losses": 0.05,
+     "action": "feu"
+    },
+    "grande-batterie": {
+     "to": [
+      52,
+      38
+     ],
+     "state": "combat",
+     "action": "feu"
+    },
+    "art-crete": {
+     "state": "combat",
+     "action": "feu"
     }
    }
   },
@@ -309,7 +365,11 @@
       26
      ],
      "state": "combat",
-     "losses": 0.2
+     "losses": 0.2,
+     "action": "feu"
+    },
+    "art-crete": {
+     "action": "feu"
     }
    }
   },
@@ -322,7 +382,8 @@
       84,
       48
      ],
-     "state": "combat"
+     "state": "combat",
+     "action": "feu"
     },
     "lobau": {
      "to": [
@@ -330,7 +391,8 @@
       44
      ],
      "state": "combat",
-     "losses": 0.3
+     "losses": 0.3,
+     "action": "feu"
     },
     "zieten": {
      "to": [
@@ -338,6 +400,14 @@
       24
      ],
      "state": "marche"
+    },
+    "art-prussienne": {
+     "to": [
+      86,
+      46
+     ],
+     "state": "combat",
+     "action": "feu"
     }
    }
   },
@@ -351,7 +421,8 @@
       32
      ],
      "state": "combat",
-     "losses": 0.4
+     "losses": 0.4,
+     "action": "baionnette"
     },
     "wellington-c": {
      "to": [
@@ -359,14 +430,16 @@
       26
      ],
      "state": "combat",
-     "losses": 0.5
+     "losses": 0.5,
+     "action": "feu"
     },
     "zieten": {
      "to": [
       78,
       24
      ],
-     "state": "combat"
+     "state": "combat",
+     "action": "feu"
     },
     "cav-fr": {
      "to": [
@@ -375,6 +448,15 @@
      ],
      "state": "combat",
      "losses": 0.45
+    },
+    "grande-batterie": {
+     "action": "feu"
+    },
+    "art-crete": {
+     "action": "feu"
+    },
+    "art-prussienne": {
+     "action": "feu"
     }
    }
   },
@@ -388,7 +470,8 @@
       26
      ],
      "state": "combat",
-     "losses": 0.5
+     "losses": 0.5,
+     "action": "baionnette"
     },
     "wellington-c": {
      "to": [
@@ -396,7 +479,8 @@
       25
      ],
      "state": "combat",
-     "losses": 0.5
+     "losses": 0.5,
+     "action": "feu"
     },
     "bulow": {
      "to": [
@@ -404,7 +488,8 @@
       44
      ],
      "state": "combat",
-     "losses": 0.05
+     "losses": 0.05,
+     "action": "baionnette"
     },
     "lobau": {
      "to": [
@@ -413,6 +498,15 @@
      ],
      "state": "fuite",
      "losses": 0.6
+    },
+    "grande-batterie": {
+     "action": "feu"
+    },
+    "art-crete": {
+     "action": "feu"
+    },
+    "art-prussienne": {
+     "action": "feu"
     }
    }
   },
@@ -457,8 +551,9 @@
       52,
       36
      ],
-     "state": "marche",
-     "losses": 0.5
+     "state": "combat",
+     "losses": 0.5,
+     "action": "baionnette"
     },
     "zieten": {
      "to": [
@@ -471,6 +566,28 @@
      "to": [
       70,
       48
+     ],
+     "state": "marche"
+    },
+    "grande-batterie": {
+     "to": [
+      48,
+      58
+     ],
+     "state": "fuite",
+     "losses": 0.5
+    },
+    "art-crete": {
+     "to": [
+      52,
+      32
+     ],
+     "state": "marche"
+    },
+    "art-prussienne": {
+     "to": [
+      76,
+      46
      ],
      "state": "marche"
     }

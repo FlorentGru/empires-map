@@ -202,6 +202,42 @@
    ],
    "formation": "ligne",
    "label": "Avant-garde autrichienne de Kienmayer"
+  },
+  {
+   "id": "batt-santon",
+   "army": 0,
+   "kind": "artillerie",
+   "troops": 800,
+   "at": [
+    30,
+    14
+   ],
+   "formation": "ligne",
+   "label": "Batteries françaises du Santon (Lannes)"
+  },
+  {
+   "id": "batt-pratzen",
+   "army": 0,
+   "kind": "artillerie",
+   "troops": 700,
+   "at": [
+    24,
+    30
+   ],
+   "formation": "ligne",
+   "label": "Artillerie de Soult et de la réserve, montée sur le Pratzen"
+  },
+  {
+   "id": "art-russe",
+   "army": 1,
+   "kind": "artillerie",
+   "troops": 900,
+   "at": [
+    60,
+    24
+   ],
+   "formation": "ligne",
+   "label": "Artillerie russe du Pratzen"
   }
  ],
  "phases": [
@@ -242,7 +278,8 @@
       48
      ],
      "state": "combat",
-     "losses": 0.1
+     "losses": 0.1,
+     "action": "baionnette"
     },
     "kienmayer": {
      "to": [
@@ -250,7 +287,8 @@
       52
      ],
      "state": "combat",
-     "losses": 0.1
+     "losses": 0.1,
+     "action": "feu"
     },
     "legrand-davout": {
      "to": [
@@ -258,7 +296,8 @@
       48
      ],
      "state": "combat",
-     "losses": 0.1
+     "losses": 0.1,
+     "action": "feu"
     },
     "bagration": {
      "to": [
@@ -266,7 +305,8 @@
       10
      ],
      "state": "combat",
-     "losses": 0.1
+     "losses": 0.1,
+     "action": "feu"
     },
     "lannes-murat": {
      "to": [
@@ -274,7 +314,16 @@
       12
      ],
      "state": "combat",
-     "losses": 0.05
+     "losses": 0.05,
+     "action": "feu"
+    },
+    "batt-santon": {
+     "to": [
+      32,
+      14
+     ],
+     "state": "combat",
+     "action": "feu"
     }
    }
   },
@@ -287,7 +336,8 @@
       50,
       28
      ],
-     "state": "combat"
+     "state": "combat",
+     "action": "baionnette"
     },
     "reserve-fr": {
      "to": [
@@ -302,7 +352,8 @@
       26
      ],
      "state": "combat",
-     "losses": 0.1
+     "losses": 0.1,
+     "action": "feu"
     },
     "autr-centre": {
      "to": [
@@ -310,7 +361,19 @@
       22
      ],
      "state": "combat",
-     "losses": 0.1
+     "losses": 0.1,
+     "action": "feu"
+    },
+    "batt-pratzen": {
+     "to": [
+      40,
+      28
+     ],
+     "state": "marche"
+    },
+    "art-russe": {
+     "state": "combat",
+     "action": "feu"
     }
    }
   },
@@ -324,7 +387,8 @@
       28
      ],
      "state": "combat",
-     "losses": 0.05
+     "losses": 0.05,
+     "action": "baionnette"
     },
     "russes-centre": {
      "to": [
@@ -347,7 +411,27 @@
       48,
       26
      ],
-     "state": "combat"
+     "state": "combat",
+     "action": "feu"
+    },
+    "batt-pratzen": {
+     "to": [
+      52,
+      28
+     ],
+     "state": "combat",
+     "action": "feu"
+    },
+    "batt-santon": {
+     "action": "feu"
+    },
+    "art-russe": {
+     "to": [
+      64,
+      22
+     ],
+     "state": "fuite",
+     "losses": 0.5
     }
    }
   },
@@ -361,7 +445,8 @@
       44
      ],
      "state": "combat",
-     "losses": 0.08
+     "losses": 0.08,
+     "action": "baionnette"
     },
     "legrand-davout": {
      "to": [
@@ -369,7 +454,8 @@
       48
      ],
      "state": "combat",
-     "losses": 0.12
+     "losses": 0.12,
+     "action": "baionnette"
     },
     "colonnes-gauche": {
      "to": [
@@ -377,7 +463,8 @@
       48
      ],
      "state": "combat",
-     "losses": 0.5
+     "losses": 0.5,
+     "action": "feu"
     },
     "kienmayer": {
      "to": [
@@ -385,7 +472,8 @@
       52
      ],
      "state": "combat",
-     "losses": 0.4
+     "losses": 0.4,
+     "action": "feu"
     },
     "bagration": {
      "to": [
@@ -393,7 +481,19 @@
       10
      ],
      "state": "combat",
-     "losses": 0.2
+     "losses": 0.2,
+     "action": "feu"
+    },
+    "batt-pratzen": {
+     "to": [
+      48,
+      40
+     ],
+     "state": "combat",
+     "action": "feu"
+    },
+    "batt-santon": {
+     "action": "feu"
     }
    }
   },
@@ -440,6 +540,22 @@
      ],
      "state": "fuite",
      "losses": 0.3
+    },
+    "batt-pratzen": {
+     "to": [
+      60,
+      46
+     ],
+     "state": "combat",
+     "action": "feu"
+    },
+    "batt-santon": {
+     "to": [
+      44,
+      16
+     ],
+     "state": "combat",
+     "action": "feu"
     }
    }
   }

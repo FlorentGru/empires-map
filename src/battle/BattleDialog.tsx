@@ -94,6 +94,7 @@ export function BattleDialog({ empireId, step, opener, onClose }: Props) {
 
   const scale = useMemo(() => (loaded ? scaleFor(totalTroops(loaded.scenario)) : 100), [loaded]);
   const duration = useMemo(() => (loaded ? durationOf(loaded.scenario) : 0), [loaded]);
+  const factions = useMemo(() => (step.armies ?? []).map((a) => a.faction), [step]);
 
   // Boucle d'animation : arrêtée à la fermeture (démontage) et pendant que l'onglet est caché.
   useEffect(() => {
@@ -106,7 +107,7 @@ export function BattleDialog({ empireId, step, opener, onClose }: Props) {
     const paint = () => {
       const fit = fitCanvas(canvas);
       if (!fit) return;
-      const frame = stateAt(loaded.scenario, scale, timeRef.current);
+      const frame = stateAt(loaded.scenario, scale, timeRef.current, factions);
       drawBattle(fit.ctx, fit.w, fit.h, loaded.scenario, frame, loaded.sprites);
       if (frame.phase !== lastPhase) {
         lastPhase = frame.phase;
@@ -139,7 +140,7 @@ export function BattleDialog({ empireId, step, opener, onClose }: Props) {
       document.removeEventListener('visibilitychange', onVisibility);
       window.removeEventListener('resize', paint);
     };
-  }, [loaded, scale, duration]);
+  }, [loaded, scale, duration, factions]);
 
   const seek = (t: number) => {
     timeRef.current = Math.max(0, Math.min(duration, t));

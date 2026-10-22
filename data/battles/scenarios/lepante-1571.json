@@ -209,7 +209,8 @@
       30
      ],
      "state": "combat",
-     "losses": 0.1
+     "losses": 0.1,
+     "action": "feu"
     },
     "ali-pacha": {
      "to": [
@@ -224,7 +225,8 @@
       56,
       14
      ],
-     "state": "combat"
+     "state": "combat",
+     "action": "feu"
     },
     "siroco": {
      "to": [

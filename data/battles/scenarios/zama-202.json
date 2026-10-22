@@ -205,7 +205,8 @@
       30
      ],
      "state": "combat",
-     "losses": 0.1
+     "losses": 0.1,
+     "action": "baionnette"
     },
     "mercenaires": {
      "to": [
@@ -256,7 +257,8 @@
       56,
       30
      ],
-     "state": "combat"
+     "state": "combat",
+     "action": "baionnette"
     },
     "hastats": {
      "to": [
@@ -264,7 +266,8 @@
       30
      ],
      "state": "combat",
-     "losses": 0.2
+     "losses": 0.2,
+     "action": "baionnette"
     }
    }
   },
@@ -294,7 +297,8 @@
       30
      ],
      "state": "combat",
-     "losses": 0.2
+     "losses": 0.2,
+     "action": "baionnette"
     },
     "princes-triaires": {
      "to": [
@@ -302,7 +306,8 @@
       18
      ],
      "state": "combat",
-     "losses": 0.15
+     "losses": 0.15,
+     "action": "baionnette"
     }
    }
   },

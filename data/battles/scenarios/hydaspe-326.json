@@ -110,7 +110,7 @@
   {
    "id": "legers",
    "army": 0,
-   "kind": "infanterie",
+   "kind": "archers",
    "troops": 4000,
    "at": [
     84,
@@ -289,7 +289,8 @@
       72,
       16
      ],
-     "state": "combat"
+     "state": "combat",
+     "action": "feu"
     },
     "cav-d": {
      "to": [
@@ -319,7 +320,8 @@
       22
      ],
      "state": "combat",
-     "losses": 0.05
+     "losses": 0.05,
+     "action": "baionnette"
     },
     "inf-indienne": {
      "to": [
@@ -336,6 +338,14 @@
      ],
      "state": "combat",
      "losses": 0.3
+    },
+    "legers": {
+     "to": [
+      80,
+      26
+     ],
+     "state": "combat",
+     "action": "feu"
     }
    }
   },
@@ -401,7 +411,8 @@
       16
      ],
      "state": "combat",
-     "losses": 0.03
+     "losses": 0.03,
+     "action": "baionnette"
     },
     "compagnons": {
      "to": [

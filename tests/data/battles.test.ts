@@ -57,6 +57,23 @@ describe('data/battles', () => {
       }
     });
 
+    it('actions de combat cohérentes (feu / baïonnette)', () => {
+      const kind = new Map(scenario.units.map((u) => [u.id, u.kind]));
+      const state = new Map<string, string>();
+      for (const [i, ph] of scenario.phases.entries()) {
+        for (const [id, m] of Object.entries(ph.moves)) {
+          if (m.state) state.set(id, m.state);
+          if (!m.action) continue;
+          expect(state.get(id), `${id} phase ${i} : action hors combat`).toBe('combat');
+          if (kind.get(id) === 'artillerie') expect(m.action, `${id} : artillerie en baïonnette`).not.toBe('baionnette');
+        }
+      }
+    });
+
+    it.runIf(['austerlitz-1805', 'waterloo-1815', 'rocroi-1643'].includes(stepId))('a de l\'artillerie', () => {
+      expect(scenario.units.some((u) => u.kind === 'artillerie')).toBe(true);
+    });
+
     it.each(entries)('%s : armées et effectifs', (key, entry) => {
       const [empire] = key.split('/');
       const s = step(empire!, stepId);

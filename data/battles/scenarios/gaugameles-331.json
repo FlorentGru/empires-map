@@ -265,6 +265,10 @@
      ],
      "state": "combat",
      "losses": 0.1
+    },
+    "legers": {
+     "state": "combat",
+     "action": "feu"
     }
    }
   },
@@ -284,7 +288,8 @@
       60,
       30
      ],
-     "state": "combat"
+     "state": "combat",
+     "action": "baionnette"
     },
     "cav-bessos": {
      "to": [
@@ -308,7 +313,8 @@
       34
      ],
      "state": "combat",
-     "losses": 0.02
+     "losses": 0.02,
+     "action": "baionnette"
     }
    }
   },

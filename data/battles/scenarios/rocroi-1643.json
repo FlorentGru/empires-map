@@ -154,6 +154,30 @@
    ],
    "formation": "ligne",
    "label": "Réserve de Fontaine"
+  },
+  {
+   "id": "art-fr",
+   "army": 0,
+   "kind": "artillerie",
+   "troops": 500,
+   "at": [
+    50,
+    50
+   ],
+   "formation": "ligne",
+   "label": "Artillerie française"
+  },
+  {
+   "id": "art-esp",
+   "army": 1,
+   "kind": "artillerie",
+   "troops": 700,
+   "at": [
+    44,
+    26
+   ],
+   "formation": "ligne",
+   "label": "Artillerie espagnole devant les tercios"
   }
  ],
  "phases": [
@@ -181,6 +205,13 @@
       38
      ],
      "state": "marche"
+    },
+    "art-fr": {
+     "to": [
+      50,
+      38
+     ],
+     "state": "marche"
     }
    }
   },
@@ -203,6 +234,14 @@
      ],
      "state": "combat",
      "losses": 0.1
+    },
+    "art-fr": {
+     "state": "combat",
+     "action": "feu"
+    },
+    "art-esp": {
+     "state": "combat",
+     "action": "feu"
     }
    }
   },
@@ -232,6 +271,12 @@
      ],
      "state": "combat",
      "losses": 0.5
+    },
+    "art-fr": {
+     "action": "feu"
+    },
+    "art-esp": {
+     "action": "feu"
     }
    }
   },
@@ -267,7 +312,8 @@
       50,
       32
      ],
-     "state": "combat"
+     "state": "combat",
+     "action": "feu"
     },
     "wallons": {
      "to": [
@@ -275,7 +321,15 @@
       24
      ],
      "state": "combat",
-     "losses": 0.1
+     "losses": 0.1,
+     "action": "feu"
+    },
+    "art-fr": {
+     "action": "feu"
+    },
+    "art-esp": {
+     "action": "feu",
+     "losses": 0.3
     }
    }
   },
@@ -305,11 +359,19 @@
      ],
      "state": "fuite",
      "losses": 0.6
+    },
+    "art-esp": {
+     "to": [
+      46,
+      20
+     ],
+     "state": "fuite",
+     "losses": 0.6
     }
    }
   },
   {
-   "label": "Isolés, les vieux tercios espagnols se forment en carré et repoussent plusieurs charges. Sous le canon, ils finissent par obtenir une capitulation honorable.",
+   "label": "Isolés, les vieux tercios espagnols se forment en carré et repoussent plusieurs charges. Sous le canon, car Condé retourne contre eux les pièces espagnoles prises, ils finissent par obtenir une capitulation honorable.",
    "duration": 6,
    "moves": {
     "tercios": {
@@ -318,7 +380,8 @@
       14
      ],
      "state": "combat",
-     "losses": 0.85
+     "losses": 0.85,
+     "action": "feu"
     },
     "enghien": {
      "to": [
@@ -334,7 +397,8 @@
       20
      ],
      "state": "combat",
-     "losses": 0.1
+     "losses": 0.1,
+     "action": "baionnette"
     },
     "reserve-esp": {
      "to": [
@@ -343,6 +407,14 @@
      ],
      "state": "fuite",
      "losses": 0.8
+    },
+    "art-fr": {
+     "to": [
+      48,
+      26
+     ],
+     "state": "combat",
+     "action": "feu"
     }
    }
   }
