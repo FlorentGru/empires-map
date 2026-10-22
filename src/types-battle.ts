@@ -47,15 +47,33 @@ export interface BattleDecor {
  * `artillerie` : canons (une figurine = une pièce avec son servant). Une `infanterie` dont la faction porte
  * une arme à feu (fusil, arquebuse : voir src/battle/weapons.ts) tire au combat, les `archers` lancent des volées.
  */
-export type BattleUnitKind = 'infanterie' | 'cavalerie' | 'archers' | 'elephants' | 'navires' | 'artillerie';
-export type BattleFormation = 'ligne' | 'colonne' | 'carre' | 'coin';
+/**
+ * Montures et engins (dessinés dans src/battle/) : `cavalerie` = cavaliers sur chevaux ; `archers-montes` = cavaliers
+ * des steppes qui tirent en mouvement ; `elephants` = éléphants de guerre avec cornac ; `chars` = chars (à faux) attelés ;
+ * `navires` = galères (avant 1600) ou vaisseaux ; `brulots` = navires incendiaires lancés contre la flotte ennemie.
+ */
+export type BattleUnitKind = 'infanterie' | 'cavalerie' | 'archers' | 'archers-montes' | 'elephants' | 'chars' | 'navires' | 'brulots' | 'artillerie';
+/**
+ * Disposition des figurines d'un bloc (et poses propres à la formation) :
+ * - `ligne` : large et peu profonde ; `mince` : ligne sur 2 rangs (ligne britannique) ; `colonne` : étroite et profonde (colonne d'assaut) ;
+ * - `carre` : carré creux, figurines tournées vers l'extérieur (infanterie contre cavalerie) ; `coin` : triangle pointe en avant (cavalerie) ;
+ * - `phalange` : bloc profond et serré, sarisses baissées sur les 5 premiers rangs, levées derrière ;
+ * - `tortue` : bloc serré, boucliers en toit au-dessus des têtes ;
+ * - `quinconce` : manipules en damier sur trois lignes (hastats, princes, triaires) ;
+ * - `tercio` : piques au centre, manches d'arquebusiers aux quatre coins ;
+ * - `croissant` : ligne bombée vers l'ennemi (centre de Cannes) ; `tirailleurs` : ordre dispersé, figurines espacées.
+ */
+export type BattleFormation = 'ligne' | 'mince' | 'colonne' | 'carre' | 'coin' | 'phalange' | 'tortue' | 'quinconce' | 'tercio' | 'croissant' | 'tirailleurs';
 export type BattleUnitState = 'marche' | 'combat' | 'fuite';
 /**
  * Manière de combattre pendant une phase `combat` :
  * - `feu` (défaut des unités à distance : armes à feu, archers, artillerie) : sur place, cycle viser → tirer → recharger ;
- * - `baionnette` : charge, arme pointée en avant, sans tirer (assaut, mêlée) ; pour l'infanterie sans arme à feu, c'est la mêlée.
+ *   les `archers-montes` tirent aussi en mouvement ;
+ * - `baionnette` : charge, arme pointée en avant, sans tirer (assaut, mêlée) ; pour l'infanterie sans arme à feu, c'est la mêlée ;
+ * - `feinte` (cavalerie, archers montés) : fuite simulée — l'unité tourne le dos et recule comme en `fuite`, sans pertes
+ *   supplémentaires, puis fait demi-tour à la phase suivante.
  */
-export type BattleAction = 'feu' | 'baionnette';
+export type BattleAction = 'feu' | 'baionnette' | 'feinte';
 
 /** Un bloc de troupes : ses figurines se répartissent autour de sa position selon sa formation. */
 export interface BattleUnit {
