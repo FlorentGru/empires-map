@@ -27,6 +27,8 @@ interface Props {
   /** Calque « Pays 2026 » actif : la date affichée est comparée aux frontières actuelles. */
   compare2026?: boolean;
   story: StoryControls;
+  /** Téléphone : ⏮ ▶ ⏭ et une frise réduite à un curseur ; le reste des commandes est dans le menu ☰. */
+  compact?: boolean;
 }
 
 /** Largeur minimale par étape (px) : au-delà, la frise défile horizontalement. */
@@ -34,7 +36,7 @@ const MIN_PX_PER_STEP = 22;
 /** Hauteur (px) de la courbe de puissance, posée sur l'axe. */
 const CURVE_H = 20;
 
-export const Timeline = memo(function Timeline({ empire, player, compare2026 = false, story }: Props) {
+export const Timeline = memo(function Timeline({ empire, player, compare2026 = false, story, compact = false }: Props) {
   const { steps } = empire;
   const active = steps[player.index];
   const trackRef = useRef<HTMLDivElement>(null);
@@ -128,6 +130,98 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
 
   const pct = (x: number) => `${(x * 100).toFixed(3)}%`;
 
+  const transport = (
+    <>
+      <button type="button" className="icon-btn" onClick={player.prev} aria-label="Étape précédente" title="Étape précédente (←)">
+        ⏮
+      </button>
+      <button
+        type="button"
+        className="icon-btn icon-btn--primary"
+        onClick={player.toggle}
+        aria-label={player.playing ? 'Pause' : 'Lecture'}
+        title={player.playing ? 'Pause (Espace)' : 'Lecture (Espace)'}
+      >
+        {player.playing ? '⏸' : '▶'}
+      </button>
+      <button type="button" className="icon-btn" onClick={player.next} aria-label="Étape suivante" title="Étape suivante (→)">
+        ⏭
+      </button>
+    </>
+  );
+
+  // Frise compacte : le doigt choisit l'étape dessinée la plus proche (positions en années, pas en rang).
+  const pickAt = (clientX: number) => {
+    const r = innerRef.current?.getBoundingClientRect();
+    if (!r || r.width === 0) return;
+    const x = (clientX - r.left) / r.width;
+    let best = 0;
+    steps.forEach((s, i) => {
+      if (Math.abs(yearToX(s.year) - x) < Math.abs(yearToX(steps[best]!.year) - x)) best = i;
+    });
+    if (best !== player.index) player.goTo(best);
+  };
+
+  if (compact) {
+    // Un seul curseur (input range) au lieu d'un bouton par étape : la frise tient dans l'écran
+    // et se parcourt au doigt ; périodes, courbe de puissance et étapes restent dessinées dessous.
+    return (
+      <footer className="timeline timeline--compact" aria-label="Frise chronologique">
+        <div className="timeline__controls">{transport}</div>
+        <div
+          className="timeline__mini"
+          ref={innerRef}
+          onPointerDown={(e) => {
+            e.currentTarget.setPointerCapture(e.pointerId);
+            pickAt(e.clientX);
+          }}
+          onPointerMove={(e) => e.buttons > 0 && pickAt(e.clientX)}
+        >
+          {periods?.map((p) => {
+            const a = yearToX(Math.max(p.start, empire.start));
+            const b = yearToX(Math.min(p.end, empire.end));
+            return (
+              <span
+                key={p.id}
+                className="timeline__mini-period"
+                style={{ left: pct(a), width: pct(Math.max(0, b - a)), '--period-color': p.color } as CSSProperties}
+                aria-hidden="true"
+              />
+            );
+          })}
+          {curve && (
+            <svg className="timeline__power" viewBox={`0 0 1000 ${CURVE_H}`} preserveAspectRatio="none" aria-hidden="true">
+              <polygon points={curve.area} />
+              <polyline points={curve.line} vectorEffect="non-scaling-stroke" />
+            </svg>
+          )}
+          <div className="timeline__axis" />
+          {steps.map((s, i) => (
+            <span
+              key={s.id}
+              className={`timeline__mini-step${i === player.index ? ' timeline__mini-step--active' : ''}${s.id === apogeeId ? ' timeline__mini-step--apogee' : ''}`}
+              style={{ left: pct(yearToX(s.year)), '--point-color': eventMeta(s.type).color } as CSSProperties}
+              aria-hidden="true"
+            />
+          ))}
+          {active && <div className="timeline__cursor" style={{ left: pct(yearToX(active.year)) }} aria-hidden="true" />}
+          {/* Clavier et lecteurs d'écran (← →) ; le doigt passe par le conteneur, aligné sur les dates. */}
+          <input
+            type="range"
+            className="timeline__range"
+            min={0}
+            max={steps.length - 1}
+            step={1}
+            value={player.index}
+            onChange={(e) => player.goTo(Number(e.target.value))}
+            aria-label="Étape de la frise"
+            aria-valuetext={active ? `${formatYear(active.year)} — ${active.title} (${player.index + 1} sur ${steps.length})` : undefined}
+          />
+        </div>
+      </footer>
+    );
+  }
+
   return (
     <footer className="timeline" aria-label="Frise chronologique">
       {/* Dans <body> : la frise forme un contexte d'empilement (z-index 2) qui ferait passer la bulle sous le quiz et le sage. */}
@@ -143,46 +237,8 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
           document.body,
         )}
       <div className="timeline__controls">
-        <button type="button" className="icon-btn" onClick={player.prev} aria-label="Étape précédente" title="Étape précédente (←)">
-          ⏮
-        </button>
-        <button
-          type="button"
-          className="icon-btn icon-btn--primary"
-          onClick={player.toggle}
-          aria-label={player.playing ? 'Pause' : 'Lecture'}
-          title={player.playing ? 'Pause (Espace)' : 'Lecture (Espace)'}
-        >
-          {player.playing ? '⏸' : '▶'}
-        </button>
-        <button type="button" className="icon-btn" onClick={player.next} aria-label="Étape suivante" title="Étape suivante (→)">
-          ⏭
-        </button>
-        <label className="timeline__speed">
-          <span className="visually-hidden">Vitesse de lecture</span>
-          <select
-            value={player.speed}
-            disabled={story.enabled}
-            title={story.enabled ? 'Mode Histoire : le rythme suit la narration' : undefined}
-            onChange={(e) => player.setSpeed(Number(e.target.value) as Speed)}
-          >
-            {SPEEDS.map((s) => (
-              <option key={s} value={s}>
-                {String(s).replace('.', ',')}×
-              </option>
-            ))}
-          </select>
-        </label>
-        <button
-          type="button"
-          className="icon-btn"
-          aria-pressed={player.loop}
-          onClick={() => player.setLoop(!player.loop)}
-          aria-label="Lecture en boucle"
-          title="Lecture en boucle"
-        >
-          🔁
-        </button>
+        {transport}
+        <SpeedLoop player={player} story={story} />
         <StoryButton story={story} />
         <GuessButton player={player} disabled={story.enabled} />
         <div className="timeline__current" aria-live="polite">
@@ -330,6 +386,39 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
     </footer>
   );
 });
+
+/** Vitesse et boucle de lecture (frise sur bureau, menu ☰ sur téléphone). */
+export function SpeedLoop({ player, story }: { player: Player; story: StoryControls }) {
+  return (
+    <>
+      <label className="timeline__speed">
+        <span className="visually-hidden">Vitesse de lecture</span>
+        <select
+          value={player.speed}
+          disabled={story.enabled}
+          title={story.enabled ? 'Mode Histoire : le rythme suit la narration' : undefined}
+          onChange={(e) => player.setSpeed(Number(e.target.value) as Speed)}
+        >
+          {SPEEDS.map((s) => (
+            <option key={s} value={s}>
+              {String(s).replace('.', ',')}×
+            </option>
+          ))}
+        </select>
+      </label>
+      <button
+        type="button"
+        className="icon-btn"
+        aria-pressed={player.loop}
+        onClick={() => player.setLoop(!player.loop)}
+        aria-label="Lecture en boucle"
+        title="Lecture en boucle"
+      >
+        🔁
+      </button>
+    </>
+  );
+}
 
 function useElementWidth(ref: RefObject<HTMLElement | null>): number {
   const [width, setWidth] = useState(0);

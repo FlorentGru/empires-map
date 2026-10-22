@@ -199,3 +199,17 @@
   opacity: 0.5;
   cursor: default;
 }
+
+/* Téléphone : Quiz et sage passent dans le menu ☰ (les pastilles flottantes cacheraient le tiroir). */
+@media (max-width: 767px) {
+  .chat-fabs {
+    display: none;
+  }
+  .chat-panel {
+    left: 8px;
+    right: 8px;
+    bottom: calc(var(--timeline-h) + 8px);
+    z-index: 7;
+    width: auto;
+  }
+}

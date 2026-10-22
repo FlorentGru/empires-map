@@ -24,6 +24,8 @@ interface Props {
   onToggleRoutes: () => void;
   onToggleDisasters: () => void;
   onToggleInventions: () => void;
+  /** Dans le menu ☰ du téléphone : réglages toujours visibles, sans bouton « Affichage ». */
+  inline?: boolean;
 }
 
 export function ViewControls({
@@ -49,6 +51,7 @@ export function ViewControls({
   onToggleRoutes,
   onToggleDisasters,
   onToggleInventions,
+  inline = false,
 }: Props) {
   // Réglages repliables (mémorisés) : repliés par défaut sur petit écran.
   const [open, setOpen] = useState(() => readBool('atlas.controlsOpen', typeof window === 'undefined' || window.innerWidth >= 900));
@@ -58,19 +61,22 @@ export function ViewControls({
       writeBool('atlas.controlsOpen', !v);
       return !v;
     });
+  const shown = inline || open;
   return (
     <>
-      <button
-        type="button"
-        className="btn btn--ghost view-controls__toggle"
-        aria-expanded={open}
-        aria-controls={id}
-        onClick={toggle}
-        title={open ? "Masquer les réglages d'affichage" : "Afficher les réglages d'affichage"}
-      >
-        ⚙ Affichage {open ? '▴' : '▾'}
-      </button>
-      <div className="view-controls" id={id} role="group" aria-label="Affichage de la carte" hidden={!open}>
+      {!inline && (
+        <button
+          type="button"
+          className="btn btn--ghost view-controls__toggle"
+          aria-expanded={open}
+          aria-controls={id}
+          onClick={toggle}
+          title={open ? "Masquer les réglages d'affichage" : "Afficher les réglages d'affichage"}
+        >
+          ⚙ Affichage {open ? '▴' : '▾'}
+        </button>
+      )}
+      <div className={`view-controls${inline ? ' view-controls--inline' : ''}`} id={id} role="group" aria-label="Affichage de la carte" hidden={!shown}>
         <button type="button" className="btn btn--ghost" onClick={onToggleTilt} title="Basculer entre vue à plat et vue inclinée">
           {tilted ? 'Vue 2D' : 'Vue inclinée'}
         </button>

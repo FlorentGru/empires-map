@@ -264,6 +264,17 @@ Sur GitHub Pages (sous-adresse `/empires-map/`), `robots.txt` n'est pas lu par l
 
 Le bouton « ▶ Voir la bataille » de la fiche bataille ouvre une fenêtre chargée à la demande (aucun poids au démarrage). Le **moteur** (`engine.ts`) est une fonction pure du temps : `stateAt(scénario, échelle, t)` interpole la position de chaque bloc de troupes entre les phases, le répartit en figurines selon sa formation et fait tomber une part des figurines selon les pertes cumulées. Pur et déterministe, il se teste sans navigateur et permet de sauter à n'importe quelle phase. Le **rendu** (`render.ts`) dessine sur un canvas 2D les figurines de la carte, rasterisées une fois par peuple (`sprites.ts`). L'**échelle** (`scaleFor`) choisit 1 figurine = N hommes pour rester sous 200 figurines. Les **données** sont séparées du code : `data/battles/troops.json` dit quelles batailles sont jouables et leurs effectifs ; `data/battles/scenarios/<stepId>.json` décrit, quand les sources le permettent, les unités, le terrain et les phases d'une bataille célèbre ; sinon `genericScenario` en déduit un déroulement schématique (approche, choc, rupture du perdant, poursuite).
 
+## 12 ter. Téléphone : carte plein écran + tiroir
+
+Sous 768 px (`useIsMobile`, `src/lib/useIsMobile.ts`, `matchMedia` via `useSyncExternalStore`), l'Atlas change de mise en page, sur le modèle de Google Maps :
+
+- **Une seule barre en haut** : sélecteur d'empire compact (nom court et dates sur une ligne), bouton « ? » de la légende, bouton ☰. Le menu ☰ (`src/panels/MobileMenu.tsx`, `<dialog>` modal plein écran) regroupe les pages (Empires, Galerie, Comparer, Quiz, Sage, Votre avis, À propos), la lecture (Mode Histoire, Devine la suite, vitesse, boucle) et les réglages d'affichage (`ViewControls` en mode `inline`). Le sage s'ouvre par l'événement `OPEN_SAGE_EVENT` (`src/chat/event.ts`) : ses pastilles flottantes sont masquées.
+- **Tiroir** (`src/panels/BottomSheet.tsx`) autour d'`EventPanel`, trois crans : replié (date, titre, « Voir la bataille »), mi-hauteur (résumé), plein (récit qui défile à l'intérieur). Poignée glissable (pointer events + `setPointerCapture`, relâché → cran le plus proche) ; clic, Entrée/Espace et ↑ ↓ changent de cran. Le cran ouvert sert de `panelOpen` au cadrage de la caméra.
+- **Frise compacte** (`Timeline` `compact`) : ⏮ ▶ ⏭ et une piste dessinée (périodes, courbe de puissance, étapes) sans un bouton par étape ; le doigt choisit l'étape dessinée la plus proche, un `input type="range"` invisible sert au clavier et aux lecteurs d'écran.
+- Pas de bandeau de date (le tiroir l'affiche) ; fenêtre « Voir la bataille » en plein écran (bloc mobile de `battle.css`).
+
+Test : `e2e/mobile.spec.ts` (iPhone 13 rendu par Chromium) : moins de 15 boutons visibles, pas de défilement horizontal, menu, crans du tiroir, bataille dans l'écran.
+
 ## 13. Tests
 
 - **Unitaires** (`tests/unit`, `npm test`, Vitest, environnement node) : fonctions pures de `src/` (formatage des années sans année 0, nombres en lettres pour la narration, périodes et bornes qui se touchent, chaînage des armées, échelle de la frise monotone, palette des entités, emprises géométriques).

@@ -255,3 +255,29 @@
     margin-left: 0;
   }
 }
+
+/* Téléphone : la fenêtre de bataille occupe tout l'écran (pas de marge perdue autour du cadre). */
+@media (max-width: 767px) {
+  .battle-dialog {
+    width: 100vw;
+    height: 100dvh;
+    max-height: 100dvh;
+    margin: 0;
+  }
+  .battle-dialog__frame {
+    height: 100%;
+    max-height: 100dvh;
+    padding: 12px 10px calc(12px + env(safe-area-inset-bottom));
+    border-width: 0;
+    border-radius: 0;
+    overscroll-behavior: contain;
+  }
+  .battle-dialog__head h2 {
+    margin: 4px 40px 0 44px;
+    font-size: 1.2rem;
+  }
+  .battle-dialog__stage canvas {
+    width: 100%;
+    min-width: 0;
+  }
+}
