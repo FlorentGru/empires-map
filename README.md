@@ -14,15 +14,25 @@ Empires disponibles : **Rome** (509 av. J.-C. → 1453), **la Chine** (-1600 →
 - Panneau d'explication : récit, conséquences, fiche bataille, sources
 - Page « Tous les empires » (`?empires=1`) : frise de tous les empires du catalogue (disponibles en couleur, à venir grisés), filtre par continent, résumé au clic (apogée, périodes, moments clés, personnages, inventions, héritage) et résumé rédigé par le sage
 - Mode « 🎯 Devine la suite » : avant chaque étape, une question à choix sur ce qui arrive (vainqueur, événement, année, territoire), avec score (`&guess=1`)
-- 55 villes avec leur nom d'époque et leur nom actuel, capitales selon la date
-- Légende, liens partageables (`?empire=rome&step=zama-202`), interface adaptée au mobile
+- Armées animées qui marchent depuis leur ville de départ, fiches de bataille, personnages avec leur citation
+- Mode Histoire : l'empire raconté étape par étape par un narrateur
+- Régions survolables et cliquables (royaumes vassaux, provinces, dynasties rivales), avec une courte explication
+- Calques de l'époque : 87 monuments (dont les 7 merveilles du monde antique), inventions, 24 routes commerciales, 48 catastrophes et guerres, empires contemporains et capitales des voisins
+- Galerie des personnages illustres, des monuments et des inventions
+- Vue « Le monde en l'an X » (`?world=1&year=…`) : tous les empires à une même date
+- Comparaison de deux empires côte à côte (`?compare=rome,china`)
+- Quiz du sage (rédigé par l'IA) ou quiz hors ligne
+- 222 villes avec leur nom d'époque et leur nom actuel, capitales selon la date
+- Légende, liens partageables et lisibles (`/rome/zama-202/`, `/monuments/` ; les anciens liens `?empire=&step=` marchent encore), formulaire « Votre avis », interface adaptée au mobile
 
 ## Tests
 
 Un test par grosse fonctionnalité, pas un test par détail :
 - `npm test` : logique centrale (Vitest) : années, périodes, armées et marches, comparaison, événements du monde, piles, quiz hors ligne.
 - `npm run test:data` : validation de toutes les données, un contrôle groupé par fichier qui liste toutes les erreurs d'un coup.
-- `npm run test:e2e` : 15 parcours dans Chromium (Playwright), un par fonctionnalité (carte, armées, galerie, comparaison, monde en l'an X, quiz, sage, calques de l'époque…) ; première fois : `npx playwright install chromium`.
+- `npm run test:e2e` : 16 parcours dans Chromium (Playwright), un par fonctionnalité (carte, armées, galerie, comparaison, monde en l'an X, quiz, sage, calques de l'époque…) ; première fois : `npx playwright install chromium`. Ils construisent le site puis le servent sur le port 4173.
+- Un seul test : `npx vitest run tests/unit/march.test.ts -t "<nom>"` ou `npx playwright test e2e/map.spec.ts -g "<nom>"`.
+- `npm run check:bundle` : vérifie que le JavaScript chargé au démarrage reste sous 460 Ko (gzip).
 - `npm run lint` (oxlint) et `npm run format` / `format:check` (Prettier) : style du code.
 - Le CI GitHub Actions lance en parallèle les contrôles rapides (types, style, tests unitaires et de données) et les tests dans le navigateur.
 
@@ -52,10 +62,14 @@ Si la page ne s'affiche pas, c'est presque toujours que le serveur n'est pas lan
 ```bash
 npm run fetch:data   # télécharge historical-basemaps et Natural Earth dans .cache/
 npm run build:data   # tous les empires : territoires, diffs, animations (SDF), fond de carte
-npm run build:data:napoleon   # un seul empire (rome, napoleon, china, mongols, espagne)
+npm run build:data:napoleon   # un seul empire (rome, napoleon, china, mongols, espagne, saint-empire)
 ```
 
-Les corrections historiques des frontières se trouvent dans `overrides/rome/*.geojson`.
+Les corrections historiques des frontières se trouvent dans `overrides/<empire>/` : des polygones par étape et, pour les cartes composées région par région, `_carto.json`. Relancer le serveur Vite après une régénération.
+
+### Référencement (SEO)
+
+`npm run build` pré-rend 223 pages HTML (accueil, empires, étapes, pages de synthèse `/empires/`, `/monuments/`, `/personnages/`, `/inventions/`) avec leurs balises, Open Graph et JSON-LD, ainsi que `sitemap.xml`, `robots.txt`, `llms.txt` et une page 404. Les images de partage et les icônes se régénèrent avec `npm run build:og` (PNG commités dans `public/og/`).
 
 ## Lancer l'Atlas gratuitement
 
@@ -83,18 +97,21 @@ Le workflow [.github/workflows/pages.yml](.github/workflows/pages.yml) construit
 |---|---|
 | `src/` | Application React + MapLibre GL (carte, frise, lecteur, panneaux) |
 | `src/types.ts` | Contrat de données (empire, étape, ville, diff) |
-| `data/empires/<id>/timeline.json` | Étapes historiques d'un empire (un dossier par empire) |
-| `data/cities.json` | Villes, noms successifs, capitales |
-| `scripts/` | Pipeline géographique (extraction, overrides, diffs, contrôles) |
+| `data/empires/<id>/` | Un dossier par empire : étapes (`timeline.json`), personnages, profil, inventions, régions |
+| `data/*.json` | Villes, monuments, routes, catastrophes, capitales des voisins |
+| `scripts/` | Pipeline géographique (extraction, overrides, diffs, champs de distance, contrôles), pré-rendu SEO |
 | `overrides/` | Corrections manuelles des frontières, étape par étape |
 | `public/data/` | Données générées, servies au navigateur |
+| `build/` | Plugin Vite qui fabrique l'index des empires, chargés ensuite à la demande |
+| `agent/` | Le sage : agent Google ADK en Python |
+| `tests/`, `e2e/` | Tests unitaires et de données (Vitest), parcours dans le navigateur (Playwright) |
 
-Pour ajouter un empire, il suffit d'ajouter un dossier dans `data/empires/` et ses territoires : le code n'a pas besoin de changer.
+Pour ajouter un empire, il suffit d'ajouter un dossier dans `data/empires/` (avec `timeline.json`, `people.json`, `profile.json`, `inventions.json` et `regions.json`) et ses territoires : le code n'a pas besoin de changer. Avec Claude Code, le skill `ajouter-un-empire` guide tout le processus.
 
 ## Feuille de route
 
-- Nouveaux empires : mongol, perse achéménide, napoléonien, britannique…
-- Gamification : quiz, « devine la frontière », succès
+- Nouveaux empires : Carolingiens (brouillon dans `data/drafts/`), Perse achéménide, Empire britannique…
+- Gamification : « devine la frontière », succès
 - Rejouer les grandes batailles
 
 ## Guide conversationnel (agent IA)
