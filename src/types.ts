@@ -233,7 +233,10 @@ export type Faction =
   | 'saxons'
   | 'avars'
   | 'vikings'
-  | 'basques';
+  | 'basques'
+  // Empire d'Alexandre
+  | 'indiens'
+  | 'scythes';
 
 export const FACTIONS: Faction[] = [
   'romains',
@@ -300,6 +303,8 @@ export const FACTIONS: Faction[] = [
   'avars',
   'vikings',
   'basques',
+  'indiens',
+  'scythes',
 ];
 
 export type Archetype =
