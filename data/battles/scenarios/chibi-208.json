@@ -29,7 +29,29 @@
      15
     ]
    ],
-   "label": "Rive nord, camp de Cao Cao à Wulin"
+   "label": "Rive nord du Yangzi"
+  },
+  {
+   "kind": "village",
+   "points": [
+    [
+     14,
+     3
+    ],
+    [
+     36,
+     3
+    ],
+    [
+     36,
+     8
+    ],
+    [
+     14,
+     8
+    ]
+   ],
+   "label": "Camp de Cao Cao"
   },
   {
    "kind": "cote",
@@ -59,7 +81,29 @@
      60
     ]
    ],
-   "label": "Rive sud, Chibi"
+   "label": "Rive sud"
+  },
+  {
+   "kind": "rochers",
+   "points": [
+    [
+     38,
+     52
+    ],
+    [
+     54,
+     50
+    ],
+    [
+     56,
+     55
+    ],
+    [
+     40,
+     57
+    ]
+   ],
+   "label": "Falaises rouges"
   }
  ],
  "units": [

@@ -44,6 +44,72 @@
     ]
    ],
    "label": "Marécages"
+  },
+  {
+   "kind": "colline",
+   "points": [
+    [
+     30,
+     31
+    ],
+    [
+     70,
+     31
+    ],
+    [
+     66,
+     35
+    ],
+    [
+     34,
+     35
+    ]
+   ],
+   "label": "Plateau de Rocroi"
+  },
+  {
+   "kind": "foret",
+   "points": [
+    [
+     91,
+     34
+    ],
+    [
+     100,
+     34
+    ],
+    [
+     100,
+     50
+    ],
+    [
+     91,
+     50
+    ]
+   ],
+   "label": "Bois de l'Est"
+  },
+  {
+   "kind": "ville",
+   "points": [
+    [
+     78,
+     54
+    ],
+    [
+     92,
+     54
+    ],
+    [
+     92,
+     60
+    ],
+    [
+     78,
+     60
+    ]
+   ],
+   "label": "Rocroi"
   }
  ],
  "units": [

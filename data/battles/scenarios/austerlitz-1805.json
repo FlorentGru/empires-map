@@ -53,23 +53,45 @@
    "kind": "village",
    "points": [
     [
-     24,
-     44
+     28,
+     35
     ],
     [
-     34,
-     44
+     36,
+     35
     ],
     [
-     34,
-     52
+     36,
+     41
     ],
     [
-     24,
-     52
+     28,
+     41
     ]
    ],
-   "label": "Telnitz et Sokolnitz"
+   "label": "Sokolnitz"
+  },
+  {
+   "kind": "village",
+   "points": [
+    [
+     28,
+     51
+    ],
+    [
+     36,
+     51
+    ],
+    [
+     36,
+     57
+    ],
+    [
+     28,
+     57
+    ]
+   ],
+   "label": "Telnitz"
   },
   {
    "kind": "marais",
@@ -91,7 +113,47 @@
      58
     ]
    ],
-   "label": "Étangs de Satschan et de Menitz"
+   "label": "Étangs de Satschan"
+  },
+  {
+   "kind": "colline",
+   "points": [
+    [
+     22,
+     8
+    ],
+    [
+     34,
+     8
+    ],
+    [
+     34,
+     18
+    ],
+    [
+     22,
+     18
+    ]
+   ],
+   "label": "Santon"
+  },
+  {
+   "kind": "route",
+   "points": [
+    [
+     0,
+     4
+    ],
+    [
+     50,
+     6
+    ],
+    [
+     100,
+     4
+    ]
+   ],
+   "label": "Route Brünn-Olmütz"
   }
  ],
  "units": [

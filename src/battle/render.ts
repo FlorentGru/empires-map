@@ -1,28 +1,10 @@
 /** Dessin de la bataille sur un canvas 2D : fond, décor, figurines triées par profondeur, poussière. */
-import type { BattleDecor, BattleScenario, BattleTerrain } from '../types-battle';
+import type { BattleBiome, BattleScenario } from '../types-battle';
 import { FW_T, hash01, TERRAIN_H, TERRAIN_W, type BattleEffect, type BattleFrame } from './engine';
 import { drawCannon } from './cannon';
 import { PAD, SPRITE_W } from './poses';
+import { buildScenery, drawTree, type Scenery } from './scenery';
 import type { FactionSprites } from './sprites';
-
-const GROUND: Record<BattleTerrain, string> = {
-  plaine: '#ecdcb4',
-  colline: '#e6d3a4',
-  foret: '#e2d6ab',
-  riviere: '#ebdcb6',
-  mer: '#a9c2cb',
-  ville: '#e3d2ae',
-};
-
-const DECOR_FILL: Record<BattleDecor['kind'], string> = {
-  riviere: '#8fb2c0',
-  route: '#cdb98c',
-  colline: 'rgba(176, 140, 84, 0.35)',
-  foret: 'rgba(70, 112, 62, 0.35)',
-  cote: 'rgba(140, 170, 180, 0.55)',
-  marais: 'rgba(110, 138, 104, 0.35)',
-  village: 'rgba(120, 82, 56, 0.3)',
-};
 
 /** Ajuste la taille interne du canvas à sa taille affichée (devicePixelRatio) ; renvoie le contexte en pixels CSS. */
 export function fitCanvas(canvas: HTMLCanvasElement): { ctx: CanvasRenderingContext2D; w: number; h: number } | null {
@@ -42,11 +24,33 @@ export function fitCanvas(canvas: HTMLCanvasElement): { ctx: CanvasRenderingCont
 
 const SIZE_BY_KIND = { infanterie: 1, archers: 1, cavalerie: 1.18, elephants: 1.6, navires: 1, artillerie: 1 } as const;
 
-export function drawBattle(ctx: CanvasRenderingContext2D, w: number, h: number, scenario: BattleScenario, frame: BattleFrame, sprites: FactionSprites[]) {
+let sceneryCache: { scenario: BattleScenario; biome: BattleBiome; scenery: Scenery } | null = null;
+
+/** Paysage de la bataille, reconstruit seulement au changement de bataille, de biome ou de taille. */
+function sceneryFor(scenario: BattleScenario, biome: BattleBiome, w: number, h: number, dpr: number): Scenery {
+  const c = sceneryCache;
+  if (c && c.scenario === scenario && c.biome === biome && c.scenery.w === w && c.scenery.h === h && c.scenery.dpr === dpr) return c.scenery;
+  const scenery = buildScenery(scenario, biome, w, h, dpr);
+  sceneryCache = { scenario, biome, scenery };
+  return scenery;
+}
+
+export function drawBattle(
+  ctx: CanvasRenderingContext2D,
+  w: number,
+  h: number,
+  scenario: BattleScenario,
+  frame: BattleFrame,
+  sprites: FactionSprites[],
+  biome: BattleBiome = 'prairie',
+) {
   const sx = w / TERRAIN_W;
   const sy = h / TERRAIN_H;
-  drawGround(ctx, w, h, scenario.terrain);
-  for (const d of scenario.decor ?? []) drawDecor(ctx, d, sx, sy, w);
+  const scenery = sceneryFor(scenario, biome, w, h, ctx.getTransform().a);
+  // Sol et éléments bas : un seul drawImage par image.
+  ctx.drawImage(scenery.ground, 0, 0, w, h);
+  const trees = scenery.layout.trees;
+  let nextTree = 0;
 
   const sorted = [...frame.figures].sort((a, b) => a.y - b.y);
   const unitById = new Map(scenario.units.map((u) => [u.id, u]));
@@ -68,6 +72,8 @@ export function drawBattle(ctx: CanvasRenderingContext2D, w: number, h: number, 
 
   const fw = FW_T * sx;
   for (const f of sorted) {
+    // Un arbre plus au fond que la figurine est dessiné avant elle : le soldat passe devant ou derrière.
+    while (nextTree < trees.length && trees[nextTree]!.y <= f.y) drawTree(ctx, trees[nextTree++]!, sx, sy);
     const sp = sprites[f.army];
     if (!sp) continue;
     const dw = fw * (SIZE_BY_KIND[f.kind] ?? 1);
@@ -111,6 +117,7 @@ export function drawBattle(ctx: CanvasRenderingContext2D, w: number, h: number, 
     ctx.restore();
     ctx.globalAlpha = 1;
   }
+  while (nextTree < trees.length) drawTree(ctx, trees[nextTree++]!, sx, sy);
   drawEffects(ctx, frame.effects, sx, sy, fw);
 }
 
@@ -191,56 +198,6 @@ function drawEffects(ctx: CanvasRenderingContext2D, effects: BattleEffect[], sx:
       ctx.closePath();
       ctx.fill();
     }
-  }
-}
-
-function drawGround(ctx: CanvasRenderingContext2D, w: number, h: number, terrain: BattleTerrain) {
-  ctx.fillStyle = GROUND[terrain];
-  ctx.fillRect(0, 0, w, h);
-  // Taches de papier déterministes, à bord fondu (un disque net ferait des cercles visibles).
-  for (let i = 0; i < 24; i++) {
-    const x = hash01(`tx${i}`) * w;
-    const y = hash01(`ty${i}`) * h;
-    const r = (0.02 + hash01(`tr${i}`) * 0.05) * w;
-    const spot = ctx.createRadialGradient(x, y, 0, x, y, r);
-    spot.addColorStop(0, `rgba(120, 90, 50, ${0.03 + hash01(`t${i}`) * 0.03})`);
-    spot.addColorStop(1, 'rgba(120, 90, 50, 0)');
-    ctx.fillStyle = spot;
-    ctx.fillRect(x - r, y - r, r * 2, r * 2);
-  }
-  const g = ctx.createRadialGradient(w / 2, h / 2, Math.min(w, h) * 0.45, w / 2, h / 2, Math.max(w, h) * 0.75);
-  g.addColorStop(0, 'rgba(60, 40, 20, 0)');
-  g.addColorStop(1, 'rgba(60, 40, 20, 0.28)');
-  ctx.fillStyle = g;
-  ctx.fillRect(0, 0, w, h);
-}
-
-function drawDecor(ctx: CanvasRenderingContext2D, d: BattleDecor, sx: number, sy: number, w: number) {
-  if (d.points.length === 0) return;
-  const line = d.kind === 'riviere' || d.kind === 'route';
-  ctx.beginPath();
-  d.points.forEach(([x, y], i) => (i === 0 ? ctx.moveTo(x * sx, y * sy) : ctx.lineTo(x * sx, y * sy)));
-  if (line) {
-    ctx.strokeStyle = DECOR_FILL[d.kind];
-    ctx.lineWidth = d.kind === 'riviere' ? w * 0.018 : w * 0.01;
-    ctx.lineJoin = 'round';
-    ctx.lineCap = 'round';
-    ctx.stroke();
-  } else {
-    ctx.closePath();
-    ctx.fillStyle = DECOR_FILL[d.kind];
-    ctx.fill();
-    ctx.strokeStyle = 'rgba(90, 64, 36, 0.35)';
-    ctx.lineWidth = 1;
-    ctx.stroke();
-  }
-  if (d.label) {
-    const cx = d.points.reduce((s, p) => s + p[0], 0) / d.points.length;
-    const cy = d.points.reduce((s, p) => s + p[1], 0) / d.points.length;
-    ctx.font = `italic ${Math.max(10, w * 0.016)}px "Cormorant Garamond", Georgia, serif`;
-    ctx.fillStyle = 'rgba(70, 50, 30, 0.8)';
-    ctx.textAlign = 'center';
-    ctx.fillText(d.label, cx * sx, cy * sy);
   }
 }
 

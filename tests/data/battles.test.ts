@@ -14,6 +14,10 @@ const scenarioIds = readdirSync(join(BATTLES, 'scenarios'))
 const step = (empire: string, stepId: string) =>
   readJson(join(DATA, 'empires', empire, 'timeline.json')).steps.find((s: { id: string }) => s.id === stepId);
 
+const BIOMES = ['desert', 'steppe', 'prairie', 'foret', 'montagne', 'mediterranee', 'mer'];
+const DECOR_KINDS = ['riviere', 'colline', 'foret', 'cote', 'marais', 'village', 'ville', 'route', 'champ', 'rochers', 'pont'];
+const DECOR_LINES = ['riviere', 'route', 'pont'];
+
 const inField = ([x, y]: BattlePoint) => x >= 0 && x <= 100 && y >= 0 && y <= 60;
 
 describe('data/battles', () => {
@@ -27,11 +31,27 @@ describe('data/battles', () => {
     for (const n of entry.troops) expect(Number.isInteger(n) && n > 0, `effectif invalide ${n}`).toBe(true);
   });
 
+  itAll('troops.json « %s » : biome valide', Object.entries(troopsFile), (_key, entry) => {
+    expect(BIOMES).toContain(entry.biome);
+  });
+
   describe.each(scenarioIds)('scénario %s', (stepId) => {
     const scenario = readJson<BattleScenario>(join(BATTLES, 'scenarios', `${stepId}.json`));
     const entries = Object.entries(troopsFile).filter(([k]) => k.split('/')[1] === stepId);
 
     it('a une entrée dans troops.json', () => expect(entries.length).toBeGreaterThan(0));
+
+    it('décor valide (genres, points, étiquettes uniques)', () => {
+      const decor = scenario.decor ?? [];
+      for (const d of decor) {
+        expect(DECOR_KINDS, `genre ${d.kind}`).toContain(d.kind);
+        for (const p of d.points) expect(inField(p), `décor ${d.label ?? d.kind}`).toBe(true);
+        const min = DECOR_LINES.includes(d.kind) ? 2 : 3;
+        expect(d.points.length, `points de ${d.label ?? d.kind}`).toBeGreaterThanOrEqual(min);
+      }
+      const labels = decor.flatMap((d) => (d.label ? [d.label] : []));
+      expect(new Set(labels).size).toBe(labels.length);
+    });
 
     it('est cohérent (unités, mouvements, bornes)', () => {
       const ids = scenario.units.map((u) => u.id);

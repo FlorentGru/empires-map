@@ -13,11 +13,12 @@ import {
   TERRAIN_W,
   totalTroops,
 } from '../../src/battle/engine';
+import { AVOID_START, sceneryLayout } from '../../src/battle/layout';
 import { firearmOf, isRanged } from '../../src/battle/weapons';
 import { weaponClass } from '../../src/battle/poses';
 import { SOLDIER_SPECS } from '../../src/figures/soldiers';
 import type { Faction } from '../../src/types';
-import type { BattleScenario, BattleTroopsFile } from '../../src/types-battle';
+import type { BattleBiome, BattleScenario, BattleTroopsFile } from '../../src/types-battle';
 import type { ArmyMove } from '../../src/types';
 import { DATA, itAll, readJson } from '../data/helpers';
 
@@ -291,5 +292,77 @@ describe('données de bataille', () => {
   it('chaque scénario correspond à une bataille jouable', () => {
     const playable = new Set(Object.keys(troops).map(stepIds));
     for (const id of scenarioIds) expect(playable.has(id)).toBe(true);
+  });
+});
+
+describe('paysage (layout.ts)', () => {
+  const BIOMES: BattleBiome[] = ['prairie', 'steppe', 'desert', 'foret', 'montagne', 'mediterranee', 'mer'];
+  const generic = () => genericScenario({ armies: [army('A', true), army('B')], year: 1800 }, [20000, 15000]);
+  const withDecor = (): BattleScenario => ({
+    ...generic(),
+    decor: [
+      {
+        kind: 'riviere',
+        points: [
+          [10, 5],
+          [40, 30],
+          [90, 40],
+        ],
+      },
+      {
+        kind: 'foret',
+        points: [
+          [60, 5],
+          [90, 5],
+          [90, 20],
+          [60, 20],
+        ],
+      },
+      {
+        kind: 'village',
+        points: [
+          [20, 40],
+          [35, 40],
+          [35, 52],
+          [20, 52],
+        ],
+        label: 'Hameau',
+      },
+    ],
+  });
+  const inBounds = (x: number, y: number) => x >= 0 && x <= TERRAIN_W && y >= 0 && y <= TERRAIN_H;
+
+  it('est déterministe', () => {
+    for (const b of BIOMES) expect(sceneryLayout(withDecor(), b)).toEqual(sceneryLayout(withDecor(), b));
+  });
+
+  it('garde tous les éléments dans le terrain et borne le décor généré', () => {
+    for (const b of BIOMES) {
+      for (const sc of [generic(), withDecor()]) {
+        const l = sceneryLayout(sc, b);
+        for (const e of [...l.trees, ...l.houses, ...l.rocks]) expect(inBounds(e.x, e.y)).toBe(true);
+        for (const s of l.shapes) for (const [x, y] of s.points) expect(inBounds(x, y)).toBe(true);
+        expect(l.generated).toBeLessThanOrEqual(60);
+      }
+    }
+  });
+
+  it('ne génère rien près des positions de départ des unités', () => {
+    for (const b of BIOMES) {
+      const sc = generic();
+      const l = sceneryLayout(sc, b);
+      const gen: [number, number][] = [...l.trees.filter((t) => t.gen), ...l.rocks.filter((r) => r.gen)].map((e) => [e.x, e.y]);
+      for (const s of l.shapes.filter((s) => s.gen)) for (const p of s.points) gen.push(p);
+      for (const [x, y] of gen) for (const u of sc.units) expect(Math.hypot(x - u.at[0], y - u.at[1])).toBeGreaterThanOrEqual(AVOID_START);
+    }
+  });
+
+  it('chaque biome produit une mise en page, et le décor du scénario devient arbres et maisons', () => {
+    for (const b of BIOMES) expect(sceneryLayout(generic(), b)).toBeTruthy();
+    const l = sceneryLayout(withDecor(), 'prairie');
+    expect(l.trees.length).toBeGreaterThan(5);
+    expect(l.houses.length).toBeGreaterThanOrEqual(4);
+    expect(sceneryLayout(generic(), 'prairie').generated).toBeGreaterThan(0);
+    expect(sceneryLayout(generic(), 'mer').generated).toBe(0);
   });
 });

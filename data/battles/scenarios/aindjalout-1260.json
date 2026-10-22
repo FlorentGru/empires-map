@@ -25,7 +25,7 @@
      18
     ]
    ],
-   "label": "Collines de Aïn Djalout (nord)"
+   "label": "Collines de Galilée (nord)"
   },
   {
    "kind": "colline",
@@ -51,7 +51,7 @@
      60
     ]
    ],
-   "label": "Collines de Aïn Djalout (sud)"
+   "label": "Monts de Gilboa (sud)"
   },
   {
    "kind": "riviere",
@@ -69,7 +69,49 @@
      36
     ]
    ],
-   "label": "Source d'Aïn Djalout (la « source de Goliath »)"
+   "label": "Aïn Djalout"
+  },
+  {
+   "kind": "rochers",
+   "points": [
+    [
+     78,
+     20
+    ],
+    [
+     86,
+     20
+    ],
+    [
+     86,
+     25
+    ],
+    [
+     78,
+     25
+    ]
+   ]
+  },
+  {
+   "kind": "rochers",
+   "points": [
+    [
+     2,
+     48
+    ],
+    [
+     10,
+     48
+    ],
+    [
+     10,
+     54
+    ],
+    [
+     2,
+     54
+    ]
+   ]
   }
  ],
  "units": [

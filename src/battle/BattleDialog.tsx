@@ -35,6 +35,7 @@ export function BattleDialog({ empireId, step, opener, onClose }: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const barRef = useRef<HTMLSpanElement>(null);
   const troops = battleTroops(empireId, step.id);
+  const biome = troops?.biome;
   const [loaded, setLoaded] = useState<Loaded | null>(null);
   const [failed, setFailed] = useState(false);
   const [playing, setPlaying] = useState(() => !prefersReducedMotion());
@@ -108,7 +109,7 @@ export function BattleDialog({ empireId, step, opener, onClose }: Props) {
       const fit = fitCanvas(canvas);
       if (!fit) return;
       const frame = stateAt(loaded.scenario, scale, timeRef.current, factions);
-      drawBattle(fit.ctx, fit.w, fit.h, loaded.scenario, frame, loaded.sprites);
+      drawBattle(fit.ctx, fit.w, fit.h, loaded.scenario, frame, loaded.sprites, biome);
       if (frame.phase !== lastPhase) {
         lastPhase = frame.phase;
         setPhase(frame.phase);
@@ -140,7 +141,7 @@ export function BattleDialog({ empireId, step, opener, onClose }: Props) {
       document.removeEventListener('visibilitychange', onVisibility);
       window.removeEventListener('resize', paint);
     };
-  }, [loaded, scale, duration, factions]);
+  }, [loaded, scale, duration, factions, biome]);
 
   const seek = (t: number) => {
     timeRef.current = Math.max(0, Math.min(duration, t));
