@@ -123,6 +123,8 @@ export const EventPanel = memo(function EventPanel({ step, open, onToggle, story
                     ))
                   : step.summary}
               </p>
+              {/* En haut du panneau : sous le récit, le bouton restait invisible sans défiler. */}
+              {step.battle && empireId && battleTroops(empireId, step.id) && <WatchBattleButton />}
             </header>
 
             {story && story.silent && (
@@ -158,7 +160,7 @@ export const EventPanel = memo(function EventPanel({ step, open, onToggle, story
               </section>
             )}
 
-            {step.battle && <BattleBlock battle={step.battle} playable={!!empireId && !!battleTroops(empireId, step.id)} />}
+            {step.battle && <BattleBlock battle={step.battle} />}
 
             {inventions.length > 0 && (
               <section className="event-panel__inventions">
@@ -222,7 +224,22 @@ const Details = memo(function Details({ text }: { text: string }) {
   return <Markdown components={markdownComponents}>{text}</Markdown>;
 });
 
-function BattleBlock({ battle, playable }: { battle: BattleInfo; playable: boolean }) {
+/** Ouvre la fenêtre « Voir la bataille » (montée par App) ; le focus revient au bouton à la fermeture. */
+function WatchBattleButton() {
+  return (
+    <button
+      type="button"
+      className="btn battle__watch"
+      data-testid="battle-open"
+      aria-haspopup="dialog"
+      onClick={(e) => window.dispatchEvent(new CustomEvent(OPEN_BATTLE_EVENT, { detail: { opener: e.currentTarget } }))}
+    >
+      ▶ Voir la bataille
+    </button>
+  );
+}
+
+function BattleBlock({ battle }: { battle: BattleInfo }) {
   const rows: [string, string | undefined][] = [
     ['Belligérants', battle.belligerents.join(battle.belligerents.length === 2 ? ' contre ' : ', ')],
     ['Commandants', battle.commanders.join(', ')],
@@ -245,17 +262,6 @@ function BattleBlock({ battle, playable }: { battle: BattleInfo; playable: boole
             </div>
           ))}
       </dl>
-      {playable && (
-        <button
-          type="button"
-          className="btn battle__watch"
-          data-testid="battle-open"
-          aria-haspopup="dialog"
-          onClick={(e) => window.dispatchEvent(new CustomEvent(OPEN_BATTLE_EVENT, { detail: { opener: e.currentTarget } }))}
-        >
-          ▶ Voir la bataille
-        </button>
-      )}
     </section>
   );
 }

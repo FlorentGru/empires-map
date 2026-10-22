@@ -1,6 +1,7 @@
 import { createPortal } from 'react-dom';
 import { memo, useEffect, useMemo, useRef, useState, type CSSProperties, type RefObject } from 'react';
 import { apogeeStepId, formatArea, normalizedAreas } from '../lib/apogee';
+import { battleTroops } from '../data/loadBattles';
 import { useWorld } from '../data/loadWorld';
 import type { Disaster } from '../types-disaster';
 import { disastersBetween, formatDeaths, lanes, OPEN_DISASTER_EVENT } from '../lib/worldEvents';
@@ -298,6 +299,7 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
               const isActive = i === player.index;
               const apogee = s.id === apogeeId;
               const area = areas?.[s.id] ? ` · ${formatArea(areas[s.id])}` : '';
+              const playable = !!s.battle && !!battleTroops(empire.id, s.id);
               return (
                 <li key={s.id} className={apogee ? 'timeline__apogee' : undefined} style={{ left: pct(yearToX(s.year)) }}>
                   {apogee && (
@@ -305,14 +307,19 @@ export const Timeline = memo(function Timeline({ empire, player, compare2026 = f
                       ♛ Apogée
                     </span>
                   )}
+                  {playable && !apogee && (
+                    <span className="timeline__battle-mark" aria-hidden="true">
+                      ⚔
+                    </span>
+                  )}
                   <button
                     type="button"
                     className={`timeline__point${isActive ? ' timeline__point--active' : ''}${apogee ? ' timeline__point--apogee' : ''}`}
                     style={{ '--point-color': meta.color } as CSSProperties}
                     onClick={() => player.goTo(i)}
-                    aria-label={`${formatYear(s.year)} — ${s.title} (${meta.label})${apogee ? " — apogée de l'empire" : ''}`}
+                    aria-label={`${formatYear(s.year)} — ${s.title} (${meta.label})${apogee ? " — apogée de l'empire" : ''}${playable ? ' — bataille jouable' : ''}`}
                     aria-current={isActive ? 'step' : undefined}
-                    title={`${formatYear(s.year)} — ${s.title}${apogee ? ' — ♛ apogée' : ''}${area}`}
+                    title={`${formatYear(s.year)} — ${s.title}${apogee ? ' — ♛ apogée' : ''}${playable ? ' — ⚔ bataille jouable' : ''}${area}`}
                   />
                 </li>
               );
