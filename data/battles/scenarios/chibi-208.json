@@ -1,0 +1,340 @@
+{
+ "terrain": "mer",
+ "decor": [
+  {
+   "kind": "cote",
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     100,
+     0
+    ],
+    [
+     100,
+     8
+    ],
+    [
+     70,
+     13
+    ],
+    [
+     40,
+     9
+    ],
+    [
+     0,
+     15
+    ]
+   ],
+   "label": "Rive nord, camp de Cao Cao à Wulin"
+  },
+  {
+   "kind": "cote",
+   "points": [
+    [
+     0,
+     50
+    ],
+    [
+     30,
+     54
+    ],
+    [
+     60,
+     48
+    ],
+    [
+     100,
+     52
+    ],
+    [
+     100,
+     60
+    ],
+    [
+     0,
+     60
+    ]
+   ],
+   "label": "Rive sud, Chibi"
+  }
+ ],
+ "units": [
+  {
+   "id": "flotte-1",
+   "army": 0,
+   "kind": "navires",
+   "troops": 55000,
+   "at": [
+    30,
+    26
+   ],
+   "formation": "ligne",
+   "label": "Flotte de Cao Cao, navires enchaînés"
+  },
+  {
+   "id": "flotte-2",
+   "army": 0,
+   "kind": "navires",
+   "troops": 45000,
+   "at": [
+    20,
+    30
+   ],
+   "formation": "ligne",
+   "label": "Seconde ligne de navires enchaînés"
+  },
+  {
+   "id": "camp-nord",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 60000,
+   "at": [
+    26,
+    8
+   ],
+   "formation": "ligne",
+   "label": "Armée de terre de Cao Cao (rive nord)"
+  },
+  {
+   "id": "cav-cao",
+   "army": 0,
+   "kind": "cavalerie",
+   "troops": 20000,
+   "at": [
+    56,
+    8
+   ],
+   "formation": "ligne",
+   "label": "Cavalerie du Nord, mal adaptée au fleuve"
+  },
+  {
+   "id": "flotte-zhou",
+   "army": 1,
+   "kind": "navires",
+   "troops": 22000,
+   "at": [
+    82,
+    34
+   ],
+   "formation": "ligne",
+   "label": "Flotte de Zhou Yu"
+  },
+  {
+   "id": "brulots",
+   "army": 1,
+   "kind": "navires",
+   "troops": 2000,
+   "at": [
+    90,
+    38
+   ],
+   "formation": "coin",
+   "label": "Brûlots de Huang Gai"
+  },
+  {
+   "id": "inf-sud",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 20000,
+   "at": [
+    72,
+    52
+   ],
+   "formation": "ligne",
+   "label": "Infanterie de Sun Quan et de Liu Bei (rive sud)"
+  }
+ ],
+ "phases": [
+  {
+   "label": "Cao Cao, dont les soldats du Nord supportent mal le roulis, fait enchaîner ses navires les uns aux autres. L'immense flotte devient une plate-forme stable, mais vulnérable.",
+   "duration": 4,
+   "moves": {
+    "flotte-1": {
+     "to": [
+      32,
+      26
+     ],
+     "state": "marche"
+    },
+    "flotte-2": {
+     "to": [
+      24,
+      30
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Huang Gai envoie à Cao Cao une fausse lettre de reddition. Ses navires, chargés de paille, d'huile et de roseaux, s'approchent sous pavillon d'allégeance.",
+   "duration": 4,
+   "moves": {
+    "brulots": {
+     "to": [
+      60,
+      32
+     ],
+     "state": "marche"
+    },
+    "flotte-zhou": {
+     "to": [
+      76,
+      34
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Le vent d'est se lève, Huang Gai met le feu à ses brûlots et les lance sur la flotte ennemie. Les navires enchaînés ne peuvent s'écarter.",
+   "duration": 5,
+   "moves": {
+    "brulots": {
+     "to": [
+      38,
+      28
+     ],
+     "state": "combat",
+     "losses": 0.9
+    },
+    "flotte-1": {
+     "to": [
+      32,
+      26
+     ],
+     "state": "combat",
+     "losses": 0.3
+    },
+    "flotte-2": {
+     "to": [
+      24,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.2
+    }
+   }
+  },
+  {
+   "label": "L'incendie court de navire en navire et gagne le camp de la rive. Dans la fumée, la panique s'empare des soldats de Cao Cao.",
+   "duration": 5,
+   "moves": {
+    "flotte-1": {
+     "to": [
+      32,
+      26
+     ],
+     "state": "combat",
+     "losses": 0.7
+    },
+    "flotte-2": {
+     "to": [
+      24,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.6
+    },
+    "camp-nord": {
+     "to": [
+      26,
+      8
+     ],
+     "state": "combat",
+     "losses": 0.1
+    }
+   }
+  },
+  {
+   "label": "Zhou Yu lance alors sa flotte et ses fantassins à l'assaut des survivants, sans leur laisser de répit.",
+   "duration": 4,
+   "moves": {
+    "flotte-zhou": {
+     "to": [
+      44,
+      26
+     ],
+     "state": "combat"
+    },
+    "inf-sud": {
+     "to": [
+      50,
+      46
+     ],
+     "state": "marche"
+    },
+    "camp-nord": {
+     "to": [
+      26,
+      8
+     ],
+     "state": "combat",
+     "losses": 0.2
+    },
+    "flotte-1": {
+     "to": [
+      30,
+      26
+     ],
+     "state": "fuite",
+     "losses": 0.85
+    }
+   }
+  },
+  {
+   "label": "Cao Cao abandonne le fleuve et s'enfuit vers le nord par des chemins boueux, harcelé. Sa flotte et son projet de conquérir le Sud sont détruits.",
+   "duration": 5,
+   "moves": {
+    "flotte-1": {
+     "to": [
+      6,
+      22
+     ],
+     "state": "fuite",
+     "losses": 0.95
+    },
+    "flotte-2": {
+     "to": [
+      6,
+      34
+     ],
+     "state": "fuite",
+     "losses": 0.9
+    },
+    "camp-nord": {
+     "to": [
+      6,
+      4
+     ],
+     "state": "fuite",
+     "losses": 0.3
+    },
+    "cav-cao": {
+     "to": [
+      30,
+      2
+     ],
+     "state": "fuite",
+     "losses": 0.1
+    },
+    "flotte-zhou": {
+     "to": [
+      40,
+      26
+     ],
+     "state": "combat",
+     "losses": 0.05
+    }
+   }
+  }
+ ],
+ "sources": [
+  "Chen Shou, Sanguozhi (Chronique des Trois Royaumes), biographies de Zhou Yu et de Cao Cao",
+  "Sima Guang, Zizhi tongjian, année 208",
+  "Wikipédia FR, « Bataille de Chibi »"
+ ]
+}

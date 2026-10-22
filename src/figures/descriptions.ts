@@ -329,6 +329,16 @@ export const FACTION_INFO: Record<Faction, FigureInfo> = {
     era: 'VIIIe – IXe s.',
     text: "Peuple ancien des Pyrénées occidentales, appelé Vascons dans les textes latins. Leur langue n'est pas indo-européenne. Ils résistent aux Wisigoths, aux Francs et aux Arabes. En 778, ils tendent une embuscade à l'arrière-garde de Charlemagne à Roncevaux. Leur royaume de Pampelune (la future Navarre) se forme en 824.",
   },
+  indiens: {
+    label: 'Indiens (armée de Pôros)',
+    era: 'IVe s. av. J.-C.',
+    text: "Fantassins et archers des royaumes du Pendjab, vêtus du dhoti et du turban. Leur grand arc, tiré en appuyant l'extrémité au sol, perce les boucliers, et leurs chars et éléphants de guerre impressionnent les Macédoniens. En 326 av. J.-C., Pôros affronte Alexandre sur l'Hydaspe : vaincu après un combat acharné, il est confirmé roi par le vainqueur.",
+  },
+  scythes: {
+    label: 'Scythes',
+    era: 'VIIIe s. – IIIe s. av. J.-C.',
+    text: "Cavaliers-archers nomades des steppes, coiffés du bonnet de feutre pointu et armés d'un arc composite court et d'un carquois, le gorytos. Insaisissables, ils harcèlent l'ennemi sans jamais se laisser fixer. Au-delà du Syr-Daria, Alexandre les affronte en 329 av. J.-C. et ne les soumet pas vraiment ; ils restent les maîtres de la steppe.",
+  },
 };
 
 export const ARCHETYPE_INFO: Record<Archetype, FigureInfo> = {

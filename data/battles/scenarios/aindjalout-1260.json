@@ -1,0 +1,380 @@
+{
+ "terrain": "colline",
+ "decor": [
+  {
+   "kind": "colline",
+   "points": [
+    [
+     18,
+     0
+    ],
+    [
+     92,
+     0
+    ],
+    [
+     92,
+     18
+    ],
+    [
+     62,
+     22
+    ],
+    [
+     34,
+     18
+    ]
+   ],
+   "label": "Collines de Aïn Djalout (nord)"
+  },
+  {
+   "kind": "colline",
+   "points": [
+    [
+     34,
+     42
+    ],
+    [
+     62,
+     38
+    ],
+    [
+     92,
+     42
+    ],
+    [
+     92,
+     60
+    ],
+    [
+     34,
+     60
+    ]
+   ],
+   "label": "Collines de Aïn Djalout (sud)"
+  },
+  {
+   "kind": "riviere",
+   "points": [
+    [
+     4,
+     34
+    ],
+    [
+     24,
+     32
+    ],
+    [
+     44,
+     36
+    ]
+   ],
+   "label": "Source d'Aïn Djalout (la « source de Goliath »)"
+  }
+ ],
+ "units": [
+  {
+   "id": "mongols-centre",
+   "army": 0,
+   "kind": "cavalerie",
+   "troops": 6000,
+   "at": [
+    12,
+    30
+   ],
+   "formation": "ligne",
+   "label": "Cavaliers mongols de Kitbuqa (centre)"
+  },
+  {
+   "id": "mongols-g",
+   "army": 0,
+   "kind": "cavalerie",
+   "troops": 3000,
+   "at": [
+    14,
+    40
+   ],
+   "formation": "ligne",
+   "label": "Mongols, aile gauche"
+  },
+  {
+   "id": "allies-g",
+   "army": 0,
+   "kind": "cavalerie",
+   "troops": 2000,
+   "at": [
+    14,
+    20
+   ],
+   "formation": "ligne",
+   "label": "Auxiliaires géorgiens et arméniens"
+  },
+  {
+   "id": "baybars",
+   "army": 1,
+   "kind": "cavalerie",
+   "troops": 1500,
+   "at": [
+    52,
+    30
+   ],
+   "formation": "ligne",
+   "label": "Avant-garde mamelouke de Baybars"
+  },
+  {
+   "id": "qutuz-nord",
+   "army": 1,
+   "kind": "cavalerie",
+   "troops": 5000,
+   "at": [
+    72,
+    10
+   ],
+   "formation": "ligne",
+   "label": "Mamelouks de Qutuz embusqués dans les collines nord"
+  },
+  {
+   "id": "qutuz-sud",
+   "army": 1,
+   "kind": "cavalerie",
+   "troops": 4500,
+   "at": [
+    72,
+    52
+   ],
+   "formation": "ligne",
+   "label": "Mamelouks embusqués dans les collines sud"
+  },
+  {
+   "id": "archers",
+   "army": 1,
+   "kind": "archers",
+   "troops": 1500,
+   "at": [
+    66,
+    24
+   ],
+   "formation": "ligne",
+   "label": "Archers mamelouks"
+  },
+  {
+   "id": "garde",
+   "army": 1,
+   "kind": "cavalerie",
+   "troops": 2000,
+   "at": [
+    84,
+    30
+   ],
+   "formation": "ligne",
+   "label": "Garde du sultan Qutuz (réserve)"
+  }
+ ],
+ "phases": [
+  {
+   "label": "L'avant-garde de Baybars rencontre l'armée de Kitbuqa dans la plaine. Un premier accrochage éclate près de la source.",
+   "duration": 4,
+   "moves": {
+    "baybars": {
+     "to": [
+      42,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.05
+    },
+    "mongols-centre": {
+     "to": [
+      30,
+      30
+     ],
+     "state": "combat"
+    }
+   }
+  },
+  {
+   "label": "Baybars feint la fuite, comme le font eux-mêmes les Mongols. Les cavaliers de Kitbuqa, confiants, se lancent à sa poursuite.",
+   "duration": 5,
+   "moves": {
+    "baybars": {
+     "to": [
+      66,
+      30
+     ],
+     "state": "marche",
+     "losses": 0.1
+    },
+    "mongols-centre": {
+     "to": [
+      52,
+      30
+     ],
+     "state": "marche"
+    },
+    "mongols-g": {
+     "to": [
+      44,
+      38
+     ],
+     "state": "marche"
+    },
+    "allies-g": {
+     "to": [
+      44,
+      22
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "La poursuite entraîne les Mongols au fond d'une vallée étroite, entre deux collines. Les flancs sont dégarnis.",
+   "duration": 4,
+   "moves": {
+    "baybars": {
+     "to": [
+      72,
+      30
+     ],
+     "state": "marche"
+    },
+    "mongols-centre": {
+     "to": [
+      62,
+      30
+     ],
+     "state": "marche"
+    },
+    "mongols-g": {
+     "to": [
+      54,
+      36
+     ],
+     "state": "marche"
+    },
+    "allies-g": {
+     "to": [
+      54,
+      24
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Au signal, Qutuz fait surgir son armée cachée sur les deux versants. Les Mongols sont pris dans une nasse.",
+   "duration": 5,
+   "moves": {
+    "qutuz-nord": {
+     "to": [
+      58,
+      24
+     ],
+     "state": "combat"
+    },
+    "qutuz-sud": {
+     "to": [
+      58,
+      38
+     ],
+     "state": "combat"
+    },
+    "archers": {
+     "to": [
+      66,
+      28
+     ],
+     "state": "combat",
+     "action": "feu"
+    },
+    "garde": {
+     "to": [
+      78,
+      30
+     ],
+     "state": "combat"
+    },
+    "baybars": {
+     "to": [
+      68,
+      30
+     ],
+     "state": "combat"
+    },
+    "mongols-centre": {
+     "to": [
+      62,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.3
+    }
+   }
+  },
+  {
+   "label": "Kitbuqa est tué en combattant. Les Mongols, encerclés, se battent jusqu'à la fin, tandis que leurs auxiliaires tentent de s'échapper.",
+   "duration": 5,
+   "moves": {
+    "mongols-centre": {
+     "to": [
+      60,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.8
+    },
+    "mongols-g": {
+     "to": [
+      54,
+      36
+     ],
+     "state": "combat",
+     "losses": 0.6
+    },
+    "allies-g": {
+     "to": [
+      6,
+      8
+     ],
+     "state": "fuite",
+     "losses": 0.5
+    }
+   }
+  },
+  {
+   "label": "Le détachement mongol est anéanti. La Syrie est évacuée : c'est la première défaite majeure des Mongols face à une armée régulière.",
+   "duration": 4,
+   "moves": {
+    "mongols-centre": {
+     "to": [
+      60,
+      30
+     ],
+     "state": "fuite",
+     "losses": 0.95
+    },
+    "mongols-g": {
+     "to": [
+      8,
+      52
+     ],
+     "state": "fuite",
+     "losses": 0.9
+    },
+    "allies-g": {
+     "to": [
+      4,
+      4
+     ],
+     "state": "fuite",
+     "losses": 0.7
+    }
+   }
+  }
+ ],
+ "sources": [
+  "Al-Maqrizi, Kitab al-Suluk (histoire des sultans mamelouks)",
+  "Peter Jackson, The Mongols and the West, 2005",
+  "Wikipédia FR, « Bataille d'Aïn Djalout »"
+ ]
+}

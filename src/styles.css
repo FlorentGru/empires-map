@@ -846,6 +846,21 @@ button.empire-card:hover,
     0 0 3px var(--parchment);
   pointer-events: none;
 }
+/* Bataille jouable (« Voir la bataille ») : petit sabre au-dessus du point. */
+.timeline__battle-mark {
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #a63a2b;
+  text-shadow:
+    0 0 3px var(--parchment),
+    0 0 3px var(--parchment);
+  pointer-events: none;
+}
 
 .timeline__point--apogee {
   width: 16px;
@@ -2772,4 +2787,14 @@ kbd {
   .step-date__value {
     animation: none;
   }
+}
+
+.battle__watch {
+  margin-top: 10px;
+  background: #a63a2b;
+  border-color: #a63a2b;
+  color: #fff8ea;
+}
+.battle__watch:hover {
+  background: #8a2f23;
 }

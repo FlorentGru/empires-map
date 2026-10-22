@@ -1,0 +1,568 @@
+{
+ "terrain": "colline",
+ "decor": [
+  {
+   "kind": "colline",
+   "points": [
+    [
+     44,
+     18
+    ],
+    [
+     66,
+     16
+    ],
+    [
+     70,
+     34
+    ],
+    [
+     46,
+     36
+    ]
+   ],
+   "label": "Plateau de Pratzen"
+  },
+  {
+   "kind": "riviere",
+   "points": [
+    [
+     34,
+     0
+    ],
+    [
+     34,
+     16
+    ],
+    [
+     32,
+     32
+    ],
+    [
+     34,
+     46
+    ],
+    [
+     32,
+     60
+    ]
+   ],
+   "label": "Goldbach"
+  },
+  {
+   "kind": "village",
+   "points": [
+    [
+     24,
+     44
+    ],
+    [
+     34,
+     44
+    ],
+    [
+     34,
+     52
+    ],
+    [
+     24,
+     52
+    ]
+   ],
+   "label": "Telnitz et Sokolnitz"
+  },
+  {
+   "kind": "marais",
+   "points": [
+    [
+     62,
+     44
+    ],
+    [
+     84,
+     42
+    ],
+    [
+     90,
+     56
+    ],
+    [
+     64,
+     58
+    ]
+   ],
+   "label": "Étangs de Satschan et de Menitz"
+  }
+ ],
+ "units": [
+  {
+   "id": "lannes-murat",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 21000,
+   "at": [
+    24,
+    10
+   ],
+   "formation": "ligne",
+   "label": "Aile gauche française : Lannes et Murat"
+  },
+  {
+   "id": "soult",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 24000,
+   "at": [
+    30,
+    28
+   ],
+   "formation": "ligne",
+   "label": "Corps de Soult, centre (Saint-Hilaire, Vandamme)"
+  },
+  {
+   "id": "legrand-davout",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 10000,
+   "at": [
+    28,
+    46
+   ],
+   "formation": "ligne",
+   "label": "Aile droite française : Legrand, puis Davout"
+  },
+  {
+   "id": "reserve-fr",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 18000,
+   "at": [
+    18,
+    26
+   ],
+   "formation": "ligne",
+   "label": "Réserve : Garde, Oudinot et Bernadotte"
+  },
+  {
+   "id": "colonnes-gauche",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 28000,
+   "at": [
+    58,
+    38
+   ],
+   "formation": "colonne",
+   "label": "Colonnes de Buxhowden, Langeron et Dokhtourov (aile gauche alliée)"
+  },
+  {
+   "id": "russes-centre",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 17000,
+   "at": [
+    56,
+    26
+   ],
+   "formation": "ligne",
+   "label": "Centre russe (Miloradovitch) et garde"
+  },
+  {
+   "id": "bagration",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 15000,
+   "at": [
+    72,
+    10
+   ],
+   "formation": "ligne",
+   "label": "Corps de Bagration (aile droite alliée)"
+  },
+  {
+   "id": "autr-centre",
+   "army": 2,
+   "kind": "infanterie",
+   "troops": 12000,
+   "at": [
+    54,
+    20
+   ],
+   "formation": "ligne",
+   "label": "Autrichiens de Kollowrat et cavalerie de Liechtenstein"
+  },
+  {
+   "id": "kienmayer",
+   "army": 2,
+   "kind": "infanterie",
+   "troops": 3000,
+   "at": [
+    64,
+    48
+   ],
+   "formation": "ligne",
+   "label": "Avant-garde autrichienne de Kienmayer"
+  },
+  {
+   "id": "batt-santon",
+   "army": 0,
+   "kind": "artillerie",
+   "troops": 800,
+   "at": [
+    30,
+    14
+   ],
+   "formation": "ligne",
+   "label": "Batteries françaises du Santon (Lannes)"
+  },
+  {
+   "id": "batt-pratzen",
+   "army": 0,
+   "kind": "artillerie",
+   "troops": 700,
+   "at": [
+    24,
+    30
+   ],
+   "formation": "ligne",
+   "label": "Artillerie de Soult et de la réserve, montée sur le Pratzen"
+  },
+  {
+   "id": "art-russe",
+   "army": 1,
+   "kind": "artillerie",
+   "troops": 900,
+   "at": [
+    60,
+    24
+   ],
+   "formation": "ligne",
+   "label": "Artillerie russe du Pratzen"
+  }
+ ],
+ "phases": [
+  {
+   "label": "Napoléon laisse volontairement paraître sa droite faible. Les Alliés, persuadés que Napoléon veut battre en retraite, quittent le plateau de Pratzen pour la contourner.",
+   "duration": 5,
+   "moves": {
+    "colonnes-gauche": {
+     "to": [
+      46,
+      46
+     ],
+     "state": "marche"
+    },
+    "kienmayer": {
+     "to": [
+      44,
+      50
+     ],
+     "state": "marche"
+    },
+    "legrand-davout": {
+     "to": [
+      28,
+      46
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Au sud, les colonnes alliées attaquent Telnitz et Sokolnitz. Les hommes de Legrand résistent jusqu'à l'arrivée de Davout. Au nord, Bagration et Lannes s'affrontent.",
+   "duration": 5,
+   "moves": {
+    "colonnes-gauche": {
+     "to": [
+      36,
+      48
+     ],
+     "state": "combat",
+     "losses": 0.1,
+     "action": "baionnette"
+    },
+    "kienmayer": {
+     "to": [
+      36,
+      52
+     ],
+     "state": "combat",
+     "losses": 0.1,
+     "action": "feu"
+    },
+    "legrand-davout": {
+     "to": [
+      28,
+      48
+     ],
+     "state": "combat",
+     "losses": 0.1,
+     "action": "feu"
+    },
+    "bagration": {
+     "to": [
+      56,
+      10
+     ],
+     "state": "combat",
+     "losses": 0.1,
+     "action": "feu"
+    },
+    "lannes-murat": {
+     "to": [
+      34,
+      12
+     ],
+     "state": "combat",
+     "losses": 0.05,
+     "action": "feu"
+    },
+    "batt-santon": {
+     "to": [
+      32,
+      14
+     ],
+     "state": "combat",
+     "action": "feu"
+    }
+   }
+  },
+  {
+   "label": "Dans le brouillard, Soult s'élance sur le plateau de Pratzen que les Alliés ont dégarni. Les troupes de Kutuzov qui y restaient sont surprises.",
+   "duration": 5,
+   "moves": {
+    "soult": {
+     "to": [
+      50,
+      28
+     ],
+     "state": "combat",
+     "action": "baionnette"
+    },
+    "reserve-fr": {
+     "to": [
+      36,
+      26
+     ],
+     "state": "marche"
+    },
+    "russes-centre": {
+     "to": [
+      54,
+      26
+     ],
+     "state": "combat",
+     "losses": 0.1,
+     "action": "feu"
+    },
+    "autr-centre": {
+     "to": [
+      52,
+      22
+     ],
+     "state": "combat",
+     "losses": 0.1,
+     "action": "feu"
+    },
+    "batt-pratzen": {
+     "to": [
+      40,
+      28
+     ],
+     "state": "marche"
+    },
+    "art-russe": {
+     "state": "combat",
+     "action": "feu"
+    }
+   }
+  },
+  {
+   "label": "Soult prend le Pratzen et coupe l'armée alliée en deux : l'aile gauche, au sud, est séparée du reste.",
+   "duration": 5,
+   "moves": {
+    "soult": {
+     "to": [
+      56,
+      28
+     ],
+     "state": "combat",
+     "losses": 0.05,
+     "action": "baionnette"
+    },
+    "russes-centre": {
+     "to": [
+      62,
+      24
+     ],
+     "state": "fuite",
+     "losses": 0.4
+    },
+    "autr-centre": {
+     "to": [
+      64,
+      20
+     ],
+     "state": "fuite",
+     "losses": 0.4
+    },
+    "reserve-fr": {
+     "to": [
+      48,
+      26
+     ],
+     "state": "combat",
+     "action": "feu"
+    },
+    "batt-pratzen": {
+     "to": [
+      52,
+      28
+     ],
+     "state": "combat",
+     "action": "feu"
+    },
+    "batt-santon": {
+     "action": "feu"
+    },
+    "art-russe": {
+     "to": [
+      64,
+      22
+     ],
+     "state": "fuite",
+     "losses": 0.5
+    }
+   }
+  },
+  {
+   "label": "Soult se retourne vers le sud et prend les colonnes alliées de Sokolnitz à revers, tandis que Davout contre-attaque.",
+   "duration": 5,
+   "moves": {
+    "soult": {
+     "to": [
+      50,
+      44
+     ],
+     "state": "combat",
+     "losses": 0.08,
+     "action": "baionnette"
+    },
+    "legrand-davout": {
+     "to": [
+      32,
+      48
+     ],
+     "state": "combat",
+     "losses": 0.12,
+     "action": "baionnette"
+    },
+    "colonnes-gauche": {
+     "to": [
+      40,
+      48
+     ],
+     "state": "combat",
+     "losses": 0.5,
+     "action": "feu"
+    },
+    "kienmayer": {
+     "to": [
+      38,
+      52
+     ],
+     "state": "combat",
+     "losses": 0.4,
+     "action": "feu"
+    },
+    "bagration": {
+     "to": [
+      72,
+      10
+     ],
+     "state": "combat",
+     "losses": 0.2,
+     "action": "feu"
+    },
+    "batt-pratzen": {
+     "to": [
+      48,
+      40
+     ],
+     "state": "combat",
+     "action": "feu"
+    },
+    "batt-santon": {
+     "action": "feu"
+    }
+   }
+  },
+  {
+   "label": "Encerclés, de nombreux Alliés fuient vers les étangs gelés. Les boulets brisent la glace : des centaines d'hommes s'y noient. Bagration se retire en bon ordre.",
+   "duration": 5,
+   "moves": {
+    "colonnes-gauche": {
+     "to": [
+      76,
+      50
+     ],
+     "state": "fuite",
+     "losses": 0.7
+    },
+    "kienmayer": {
+     "to": [
+      70,
+      54
+     ],
+     "state": "fuite",
+     "losses": 0.5
+    },
+    "russes-centre": {
+     "to": [
+      84,
+      34
+     ],
+     "state": "fuite",
+     "losses": 0.5
+    },
+    "autr-centre": {
+     "to": [
+      90,
+      26
+     ],
+     "state": "fuite",
+     "losses": 0.5
+    },
+    "bagration": {
+     "to": [
+      92,
+      6
+     ],
+     "state": "fuite",
+     "losses": 0.3
+    },
+    "batt-pratzen": {
+     "to": [
+      60,
+      46
+     ],
+     "state": "combat",
+     "action": "feu"
+    },
+    "batt-santon": {
+     "to": [
+      44,
+      16
+     ],
+     "state": "combat",
+     "action": "feu"
+    }
+   }
+  }
+ ],
+ "sources": [
+  "David G. Chandler, The Campaigns of Napoleon, 1966",
+  "Jean Tulard, Napoléon ou le mythe du sauveur, 1977",
+  "Wikipédia FR, « Bataille d'Austerlitz »"
+ ]
+}

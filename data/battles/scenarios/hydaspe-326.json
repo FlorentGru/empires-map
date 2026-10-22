@@ -1,0 +1,433 @@
+{
+ "terrain": "riviere",
+ "decor": [
+  {
+   "kind": "riviere",
+   "points": [
+    [
+     0,
+     32
+    ],
+    [
+     30,
+     30
+    ],
+    [
+     60,
+     31
+    ],
+    [
+     100,
+     28
+    ]
+   ],
+   "label": "Hydaspe (Jhelum)"
+  },
+  {
+   "kind": "foret",
+   "points": [
+    [
+     78,
+     30
+    ],
+    [
+     88,
+     30
+    ],
+    [
+     88,
+     36
+    ],
+    [
+     78,
+     36
+    ]
+   ],
+   "label": "Île boisée"
+  }
+ ],
+ "units": [
+  {
+   "id": "cratere",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 14000,
+   "at": [
+    24,
+    46
+   ],
+   "formation": "ligne",
+   "label": "Corps de Cratère (resté face au camp de Pôros)"
+  },
+  {
+   "id": "compagnons",
+   "army": 0,
+   "kind": "cavalerie",
+   "troops": 4000,
+   "at": [
+    66,
+    50
+   ],
+   "formation": "ligne",
+   "label": "Cavalerie des Compagnons d'Alexandre"
+  },
+  {
+   "id": "hippotoxotes",
+   "army": 0,
+   "kind": "archers",
+   "troops": 1000,
+   "at": [
+    72,
+    52
+   ],
+   "formation": "ligne",
+   "label": "Archers à cheval dahes"
+  },
+  {
+   "id": "coenos",
+   "army": 0,
+   "kind": "cavalerie",
+   "troops": 3000,
+   "at": [
+    90,
+    50
+   ],
+   "formation": "ligne",
+   "label": "Cavalerie de Coenos"
+  },
+  {
+   "id": "phalange",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 9000,
+   "at": [
+    78,
+    50
+   ],
+   "formation": "ligne",
+   "label": "Phalange et hypaspistes de Seleucos"
+  },
+  {
+   "id": "legers",
+   "army": 0,
+   "kind": "archers",
+   "troops": 4000,
+   "at": [
+    84,
+    48
+   ],
+   "formation": "ligne",
+   "label": "Peltastes et archers"
+  },
+  {
+   "id": "elephants",
+   "army": 1,
+   "kind": "elephants",
+   "troops": 200,
+   "at": [
+    48,
+    22
+   ],
+   "formation": "ligne",
+   "label": "200 éléphants de guerre"
+  },
+  {
+   "id": "inf-indienne",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 27000,
+   "at": [
+    48,
+    14
+   ],
+   "formation": "ligne",
+   "label": "Infanterie indienne de Pôros"
+  },
+  {
+   "id": "cav-g",
+   "army": 1,
+   "kind": "cavalerie",
+   "troops": 2000,
+   "at": [
+    26,
+    16
+   ],
+   "formation": "ligne",
+   "label": "Cavalerie indienne et chars (aile gauche)"
+  },
+  {
+   "id": "cav-d",
+   "army": 1,
+   "kind": "cavalerie",
+   "troops": 2000,
+   "at": [
+    72,
+    16
+   ],
+   "formation": "ligne",
+   "label": "Cavalerie indienne et chars (aile droite, fils de Pôros)"
+  }
+ ],
+ "phases": [
+  {
+   "label": "Face à Pôros, Alexandre multiplie les feintes : Cratère montre ses troupes au bord du fleuve pendant que la masse de l'armée remonte discrètement en amont.",
+   "duration": 4,
+   "moves": {
+    "cratere": {
+     "to": [
+      30,
+      40
+     ],
+     "state": "marche"
+    },
+    "compagnons": {
+     "to": [
+      80,
+      44
+     ],
+     "state": "marche"
+    },
+    "hippotoxotes": {
+     "to": [
+      84,
+      46
+     ],
+     "state": "marche"
+    },
+    "phalange": {
+     "to": [
+      84,
+      44
+     ],
+     "state": "marche"
+    },
+    "legers": {
+     "to": [
+      88,
+      42
+     ],
+     "state": "marche"
+    },
+    "coenos": {
+     "to": [
+      92,
+      46
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Une nuit d'orage, Alexandre franchit l'Hydaspe au-delà d'une île boisée. Le fils de Pôros, envoyé en reconnaissance, est repoussé.",
+   "duration": 4,
+   "moves": {
+    "compagnons": {
+     "to": [
+      84,
+      26
+     ],
+     "state": "marche"
+    },
+    "hippotoxotes": {
+     "to": [
+      86,
+      28
+     ],
+     "state": "marche"
+    },
+    "phalange": {
+     "to": [
+      82,
+      30
+     ],
+     "state": "marche"
+    },
+    "cav-d": {
+     "to": [
+      82,
+      22
+     ],
+     "state": "combat",
+     "losses": 0.5
+    }
+   }
+  },
+  {
+   "label": "Pôros fait pivoter son armée face à l'est. Alexandre attaque la cavalerie indienne de gauche avec ses archers à cheval et ses Compagnons.",
+   "duration": 5,
+   "moves": {
+    "inf-indienne": {
+     "to": [
+      60,
+      16
+     ],
+     "state": "marche"
+    },
+    "elephants": {
+     "to": [
+      62,
+      22
+     ],
+     "state": "marche"
+    },
+    "cav-g": {
+     "to": [
+      56,
+      14
+     ],
+     "state": "marche"
+    },
+    "compagnons": {
+     "to": [
+      70,
+      18
+     ],
+     "state": "combat"
+    },
+    "hippotoxotes": {
+     "to": [
+      72,
+      16
+     ],
+     "state": "combat",
+     "action": "feu"
+    },
+    "cav-d": {
+     "to": [
+      84,
+      24
+     ],
+     "state": "fuite",
+     "losses": 0.7
+    }
+   }
+  },
+  {
+   "label": "Les éléphants chargent la phalange : celle-ci tient et ses javelots blessent les montures. Les Indiens se serrent devant leurs bêtes affolées.",
+   "duration": 5,
+   "moves": {
+    "elephants": {
+     "to": [
+      76,
+      22
+     ],
+     "state": "combat",
+     "losses": 0.4
+    },
+    "phalange": {
+     "to": [
+      78,
+      22
+     ],
+     "state": "combat",
+     "losses": 0.05,
+     "action": "baionnette"
+    },
+    "inf-indienne": {
+     "to": [
+      66,
+      16
+     ],
+     "state": "combat",
+     "losses": 0.2
+    },
+    "cav-g": {
+     "to": [
+      56,
+      14
+     ],
+     "state": "combat",
+     "losses": 0.3
+    },
+    "legers": {
+     "to": [
+      80,
+      26
+     ],
+     "state": "combat",
+     "action": "feu"
+    }
+   }
+  },
+  {
+   "label": "Coenos contourne l'armée de Pôros par la gauche indienne et charge à revers. Cratère, enfin passé, rejoint le combat avec des troupes fraîches.",
+   "duration": 5,
+   "moves": {
+    "coenos": {
+     "to": [
+      44,
+      8
+     ],
+     "state": "combat"
+    },
+    "cratere": {
+     "to": [
+      40,
+      26
+     ],
+     "state": "marche"
+    },
+    "cav-g": {
+     "to": [
+      40,
+      10
+     ],
+     "state": "fuite",
+     "losses": 0.6
+    },
+    "inf-indienne": {
+     "to": [
+      62,
+      16
+     ],
+     "state": "combat",
+     "losses": 0.4
+    }
+   }
+  },
+  {
+   "label": "Pris de toutes parts, les Indiens sont refoulés vers leurs éléphants, qui piétinent leurs propres rangs. Pôros se rend, blessé.",
+   "duration": 5,
+   "moves": {
+    "elephants": {
+     "to": [
+      34,
+      6
+     ],
+     "state": "fuite",
+     "losses": 0.6
+    },
+    "inf-indienne": {
+     "to": [
+      22,
+      4
+     ],
+     "state": "fuite",
+     "losses": 0.7
+    },
+    "cratere": {
+     "to": [
+      44,
+      16
+     ],
+     "state": "combat",
+     "losses": 0.03,
+     "action": "baionnette"
+    },
+    "compagnons": {
+     "to": [
+      66,
+      14
+     ],
+     "state": "combat",
+     "losses": 0.05
+    }
+   }
+  }
+ ],
+ "sources": [
+  "Arrien, Anabase, V, 9-19",
+  "Quinte-Curce, Histoire d'Alexandre, VIII, 13-14",
+  "Wikipédia FR, « Bataille de l'Hydaspe »"
+ ]
+}

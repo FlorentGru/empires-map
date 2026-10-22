@@ -1,4 +1,4 @@
-import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react';
+import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { EMPIRE_INDEX, getEmpire, loadEmpire, resolveEmpireId, withAllEmpires } from './data/loadEmpire';
 import { WorldMap } from './map/WorldMap';
 import { AboutModal } from './panels/AboutModal';
@@ -8,6 +8,7 @@ import { EmpirePicker } from './panels/EmpirePicker';
 import { Legend } from './panels/Legend';
 import { ViewControls } from './panels/ViewControls';
 import { readBool, writeBool } from './lib/settings';
+import { OPEN_BATTLE_EVENT } from './battle/event';
 import { EventPanel } from './panels/EventPanel';
 import { currentHub, enterHub, leaveHub, readUrlState, writeUrlState } from './player/urlState';
 import type { Hub } from './lib/seo';
@@ -37,7 +38,7 @@ function writeCompare(c: { a: string; b: string } | null) {
   // Virgule lisible dans l'URL partagée (?compare=rome,china plutôt que rome%2Cchina).
   window.history.replaceState(null, '', url.toString().replace(/compare=([a-z_-]+)%2C/, 'compare=$1,'));
 }
-import type { Empire } from './types';
+import type { Empire, TimelineStep } from './types';
 
 // Galerie des figurines : chargée à la demande.
 // Vues chargées à la demande (hors du JS initial) ; celles qui parcourent tous les empires attendent leurs timelines.
@@ -50,6 +51,7 @@ const CompareView = lazy(withAllEmpires(() => import('./compare/CompareView').th
 const EmpiresView = lazy(withAllEmpires(() => import('./empires/EmpiresView').then((m) => ({ default: m.EmpiresView }))));
 const WorldYearView = lazy(withAllEmpires(() => import('./world/WorldYearView').then((m) => ({ default: m.WorldYearView }))));
 const QuizDialog = lazy(withAllEmpires(() => import('./quiz/QuizDialog').then((m) => ({ default: m.QuizDialog }))));
+const BattleDialog = lazy(() => import('./battle/BattleDialog').then((m) => ({ default: m.BattleDialog })));
 const FeedbackDialog = lazy(() => import('./feedback/FeedbackDialog').then((m) => ({ default: m.FeedbackDialog })));
 
 function clearFiguresParam() {
@@ -287,6 +289,22 @@ function Atlas({
   const [panelOpen, setPanelOpen] = useState(true);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [feedbackOpen, setFeedbackOpen] = useState(false);
+  // Fenêtre « Voir la bataille » : ouverte par le bouton de la fiche (événement), le focus y revient à la fermeture.
+  // L'empire et l'étape sont figés au clic et la lecture est mise en pause : sinon la frise avançait
+  // pendant la bataille, qui se rechargeait sur une autre étape (armées disparues).
+  const [battle, setBattle] = useState<{ opener: HTMLElement | null; empireId: string; step: TimelineStep } | null>(null);
+  const current = useRef({ empireId: empire.id, step, pause: player.pause });
+  current.current = { empireId: empire.id, step, pause: player.pause };
+  useEffect(() => {
+    const open = (e: Event) => {
+      const { empireId, step: s, pause } = current.current;
+      if (!s) return;
+      pause();
+      setBattle({ opener: (e as CustomEvent<{ opener?: HTMLElement }>).detail?.opener ?? null, empireId, step: s });
+    };
+    window.addEventListener(OPEN_BATTLE_EVENT, open);
+    return () => window.removeEventListener(OPEN_BATTLE_EVENT, open);
+  }, []);
   const [tilted, setTilted] = useState(() => readBool('atlas.tilted', true));
   const [relief, setRelief] = useState(() => readBool('atlas.relief', true));
   const [figures, setFigures] = useState(() => readBool('atlas.figures', true));
@@ -503,7 +521,15 @@ function Atlas({
         </div>
       </div>
 
-      <EventPanel chapter={panelChapter} step={step} open={panelOpen} onToggle={togglePanel} story={panelStory} inventions={stepInventions} />
+      <EventPanel
+        chapter={panelChapter}
+        step={step}
+        open={panelOpen}
+        onToggle={togglePanel}
+        story={panelStory}
+        inventions={stepInventions}
+        empireId={empire.id}
+      />
       <Legend
         empire={empire}
         step={step}
@@ -518,6 +544,11 @@ function Atlas({
       <Timeline empire={empire} player={player} compare2026={countries2026} story={story.controls} />
       <GuessCard empire={empire} player={player} />
       <AboutModal open={aboutOpen} onClose={() => setAboutOpen(false)} />
+      {battle && (
+        <Suspense fallback={null}>
+          <BattleDialog empireId={battle.empireId} step={battle.step} opener={battle.opener} onClose={() => setBattle(null)} />
+        </Suspense>
+      )}
       {feedbackOpen && (
         <Suspense fallback={null}>
           <FeedbackDialog open onClose={() => setFeedbackOpen(false)} empire={empire.id} step={step?.id} />

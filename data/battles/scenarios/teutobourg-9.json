@@ -1,0 +1,415 @@
+{
+ "terrain": "foret",
+ "decor": [
+  {
+   "kind": "foret",
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     100,
+     0
+    ],
+    [
+     100,
+     22
+    ],
+    [
+     70,
+     25
+    ],
+    [
+     40,
+     23
+    ],
+    [
+     0,
+     26
+    ]
+   ],
+   "label": "Forêt et talus de Kalkriese"
+  },
+  {
+   "kind": "marais",
+   "points": [
+    [
+     0,
+     46
+    ],
+    [
+     40,
+     48
+    ],
+    [
+     70,
+     44
+    ],
+    [
+     100,
+     46
+    ],
+    [
+     100,
+     60
+    ],
+    [
+     0,
+     60
+    ]
+   ],
+   "label": "Marais"
+  },
+  {
+   "kind": "route",
+   "points": [
+    [
+     0,
+     36
+    ],
+    [
+     40,
+     34
+    ],
+    [
+     70,
+     32
+    ],
+    [
+     100,
+     30
+    ]
+   ],
+   "label": "Route suivie par Varus"
+  }
+ ],
+ "units": [
+  {
+   "id": "xix",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 5000,
+   "at": [
+    12,
+    36
+   ],
+   "formation": "colonne",
+   "label": "XIXe légion (arrière-garde)"
+  },
+  {
+   "id": "xviii",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 5000,
+   "at": [
+    30,
+    35
+   ],
+   "formation": "colonne",
+   "label": "XVIIIe légion"
+  },
+  {
+   "id": "xvii",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 5000,
+   "at": [
+    48,
+    34
+   ],
+   "formation": "colonne",
+   "label": "XVIIe légion"
+  },
+  {
+   "id": "cav-rom",
+   "army": 0,
+   "kind": "cavalerie",
+   "troops": 1500,
+   "at": [
+    64,
+    33
+   ],
+   "formation": "colonne",
+   "label": "Ailes de cavalerie de tête"
+  },
+  {
+   "id": "aux",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 1500,
+   "at": [
+    80,
+    32
+   ],
+   "formation": "colonne",
+   "label": "Auxiliaires et escorte du convoi"
+  },
+  {
+   "id": "g-nord-1",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 5000,
+   "at": [
+    22,
+    12
+   ],
+   "formation": "ligne",
+   "label": "Chérusques embusqués dans la forêt (ouest)"
+  },
+  {
+   "id": "g-nord-2",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 5000,
+   "at": [
+    55,
+    10
+   ],
+   "formation": "ligne",
+   "label": "Marses et Chattes dans la forêt (centre)"
+  },
+  {
+   "id": "g-talus",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 4000,
+   "at": [
+    84,
+    14
+   ],
+   "formation": "ligne",
+   "label": "Bructères derrière le talus (est)"
+  },
+  {
+   "id": "g-marais",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 6000,
+   "at": [
+    40,
+    54
+   ],
+   "formation": "ligne",
+   "label": "Guerriers du sud (côté marais)"
+  }
+ ],
+ "phases": [
+  {
+   "label": "La colonne romaine s'étire sur plusieurs kilomètres dans la forêt, sous la pluie et dans la boue. Elle croit traverser un pays soumis.",
+   "duration": 4,
+   "moves": {
+    "xix": {
+     "to": [
+      18,
+      36
+     ],
+     "state": "marche"
+    },
+    "xviii": {
+     "to": [
+      36,
+      35
+     ],
+     "state": "marche"
+    },
+    "xvii": {
+     "to": [
+      54,
+      34
+     ],
+     "state": "marche"
+    },
+    "cav-rom": {
+     "to": [
+      70,
+      33
+     ],
+     "state": "marche"
+    },
+    "aux": {
+     "to": [
+      86,
+      32
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Arminius a disparu avec ses guides : de la forêt jaillissent les javelots germaniques. Les Romains, en file et dispersés, ne peuvent former leur ligne de bataille.",
+   "duration": 5,
+   "moves": {
+    "g-nord-1": {
+     "to": [
+      26,
+      28
+     ],
+     "state": "combat"
+    },
+    "g-nord-2": {
+     "to": [
+      55,
+      26
+     ],
+     "state": "combat"
+    },
+    "xviii": {
+     "to": [
+      36,
+      35
+     ],
+     "state": "combat",
+     "losses": 0.15
+    },
+    "xvii": {
+     "to": [
+      54,
+      34
+     ],
+     "state": "combat",
+     "losses": 0.15
+    }
+   }
+  },
+  {
+   "label": "Varus fait établir un camp pour la nuit, puis brûle les chariots. Les Germains encerclent maintenant la colonne, y compris depuis le marais au sud.",
+   "duration": 5,
+   "moves": {
+    "g-marais": {
+     "to": [
+      40,
+      40
+     ],
+     "state": "combat"
+    },
+    "xix": {
+     "to": [
+      18,
+      36
+     ],
+     "state": "combat",
+     "losses": 0.3
+    },
+    "xviii": {
+     "to": [
+      34,
+      35
+     ],
+     "state": "combat",
+     "losses": 0.4
+    },
+    "xvii": {
+     "to": [
+      52,
+      34
+     ],
+     "state": "combat",
+     "losses": 0.4
+    }
+   }
+  },
+  {
+   "label": "Au second jour, les Romains tentent de forcer le passage vers l'est, entre la colline de Kalkriese et le marais. Un talus de terre, gardé par des guerriers, leur barre la route.",
+   "duration": 5,
+   "moves": {
+    "g-talus": {
+     "to": [
+      84,
+      28
+     ],
+     "state": "combat"
+    },
+    "cav-rom": {
+     "to": [
+      90,
+      56
+     ],
+     "state": "fuite",
+     "losses": 0.6
+    },
+    "xvii": {
+     "to": [
+      62,
+      33
+     ],
+     "state": "combat",
+     "losses": 0.6
+    },
+    "xviii": {
+     "to": [
+      46,
+      34
+     ],
+     "state": "combat",
+     "losses": 0.6
+    },
+    "xix": {
+     "to": [
+      26,
+      36
+     ],
+     "state": "combat",
+     "losses": 0.5
+    }
+   }
+  },
+  {
+   "label": "Prises dans le goulet, les légions sont massacrées. Varus se jette sur son épée ; quelques auxiliaires seulement tentent de fuir.",
+   "duration": 5,
+   "moves": {
+    "xix": {
+     "to": [
+      26,
+      36
+     ],
+     "state": "combat",
+     "losses": 0.9
+    },
+    "xviii": {
+     "to": [
+      46,
+      34
+     ],
+     "state": "combat",
+     "losses": 0.95
+    },
+    "xvii": {
+     "to": [
+      62,
+      33
+     ],
+     "state": "combat",
+     "losses": 0.95
+    },
+    "aux": {
+     "to": [
+      96,
+      50
+     ],
+     "state": "fuite",
+     "losses": 0.85
+    },
+    "g-nord-1": {
+     "to": [
+      30,
+      32
+     ],
+     "state": "combat"
+    },
+    "g-nord-2": {
+     "to": [
+      58,
+      30
+     ],
+     "state": "combat"
+    }
+   }
+  }
+ ],
+ "sources": [
+  "Tacite, Annales, I, 60-62",
+  "Dion Cassius, Histoire romaine, LVI, 18-22",
+  "Wikipédia FR, « Bataille de la forêt de Teutobourg »"
+ ]
+}

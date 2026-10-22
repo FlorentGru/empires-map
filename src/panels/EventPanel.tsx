@@ -1,3 +1,5 @@
+import { OPEN_BATTLE_EVENT } from '../battle/event';
+import { battleTroops } from '../data/loadBattles';
 import { OPEN_INVENTION_EVENT } from '../data/loadInventions';
 import type { Invention } from '../types-invention';
 import Markdown from 'react-markdown';
@@ -18,6 +20,8 @@ interface Props {
   story?: { segments: StorySegment[]; current: number; silent: boolean } | null;
   /** Inventions apparues depuis l'étape précédente (cliquables : fiche sur la carte). */
   inventions?: Invention[];
+  /** Empire affiché (pour savoir si la bataille de l'étape est jouable). */
+  empireId?: string;
 }
 
 const markdownComponents = {
@@ -25,7 +29,7 @@ const markdownComponents = {
   a: ({ node: _node, ...props }: ComponentProps<'a'> & { node?: unknown }) => <a {...props} target="_blank" rel="noopener noreferrer" />,
 };
 
-export const EventPanel = memo(function EventPanel({ step, open, onToggle, story, chapter, inventions = [] }: Props) {
+export const EventPanel = memo(function EventPanel({ step, open, onToggle, story, chapter, inventions = [], empireId }: Props) {
   const meta = step ? eventMeta(step.type) : null;
   const bodyRef = useRef<HTMLDivElement>(null);
   const segs = story?.segments ?? [];
@@ -119,6 +123,8 @@ export const EventPanel = memo(function EventPanel({ step, open, onToggle, story
                     ))
                   : step.summary}
               </p>
+              {/* En haut du panneau : sous le récit, le bouton restait invisible sans défiler. */}
+              {step.battle && empireId && battleTroops(empireId, step.id) && <WatchBattleButton />}
             </header>
 
             {story && story.silent && (
@@ -217,6 +223,21 @@ export const EventPanel = memo(function EventPanel({ step, open, onToggle, story
 const Details = memo(function Details({ text }: { text: string }) {
   return <Markdown components={markdownComponents}>{text}</Markdown>;
 });
+
+/** Ouvre la fenêtre « Voir la bataille » (montée par App) ; le focus revient au bouton à la fermeture. */
+function WatchBattleButton() {
+  return (
+    <button
+      type="button"
+      className="btn battle__watch"
+      data-testid="battle-open"
+      aria-haspopup="dialog"
+      onClick={(e) => window.dispatchEvent(new CustomEvent(OPEN_BATTLE_EVENT, { detail: { opener: e.currentTarget } }))}
+    >
+      ▶ Voir la bataille
+    </button>
+  );
+}
 
 function BattleBlock({ battle }: { battle: BattleInfo }) {
   const rows: [string, string | undefined][] = [

@@ -1,0 +1,224 @@
+[
+  {
+    "id": "alexandre-iii",
+    "name": "Alexandre III de Macédoine",
+    "archetype": "roi",
+    "faction": "grecs-macedoniens",
+    "born": -356,
+    "died": -323,
+    "title": "Roi de Macédoine, conquérant de l’Empire perse",
+    "bio": "Né à Pella en -356, fils de Philippe II et d’Olympias, Alexandre est éduqué par Aristote, qui lui donne le goût d’Homère, de la science et de l’exploration. À seize ans, il gouverne la Macédoine en l’absence de son père ; à dix-huit, il commande l’aile gauche à Chéronée. Roi à vingt ans après l’assassinat de Philippe, il écrase les révoltes grecques, puis franchit l’Hellespont en -334. En onze ans, il bat les armées perses au Granique, à Issos et à Gaugamèles, prend l’Égypte, Babylone et Persépolis, soumet la Bactriane et la Sogdiane et atteint l’Inde. Chef militaire d’un génie tactique rare, toujours en première ligne, il est aussi capable de colères meurtrières, comme le meurtre de Cleitos. Il tente de fusionner Grecs et Perses, au prix de tensions avec ses Macédoniens. Il meurt à Babylone en -323, à trente-deux ans, sans successeur désigné. Son empire se disloque, mais l’hellénisme gagne l’Orient pour des siècles.",
+    "keyFacts": [
+      "-356 : naissance à Pella",
+      "-334 : traversée de l’Hellespont, victoire du Granique",
+      "-331 : fondation d’Alexandrie, victoire de Gaugamèles",
+      "-326 : victoire sur Pôros à l’Hydaspe",
+      "-323 : mort à Babylone à trente-deux ans"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Alexandre le Grand",
+        "url": "https://fr.wikipedia.org/wiki/Alexandre_le_Grand"
+      }
+    ]
+  },
+  {
+    "id": "philippe-ii",
+    "name": "Philippe II de Macédoine",
+    "archetype": "roi",
+    "faction": "grecs-macedoniens",
+    "born": -382,
+    "died": -336,
+    "title": "Roi bâtisseur de la puissance macédonienne",
+    "bio": "Troisième fils du roi Amyntas III, Philippe passe sa jeunesse comme otage à Thèbes, où il observe l’armée du général Épaminondas. Régent puis roi en -359, il transforme un petit royaume menacé de toutes parts en la première puissance de Grèce. Il réorganise l’armée : une phalange armée de la sarisse, une cavalerie d’élite, des troupes de métier payées avec l’or de ses nouvelles mines du Pangée. Par la diplomatie, les mariages et les sièges, il prend Amphipolis, Olynthe et la Thessalie. Sa victoire à Chéronée en -338, contre Thèbes et Athènes, lui donne la Grèce : il fonde la Ligue de Corinthe et prépare la guerre contre la Perse. Il est assassiné en -336 à Aigai par Pausanias, un garde du corps. Les raisons de ce geste restent discutées. Son fils reprend le projet et profite de l’outil que Philippe a forgé.",
+    "keyFacts": [
+      "-359 : devient roi de Macédoine",
+      "-338 : victoire de Chéronée contre Thèbes et Athènes",
+      "-337 : fondation de la Ligue de Corinthe",
+      "-336 : assassiné à Aigai lors des noces de sa fille"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Philippe II de Macédoine",
+        "url": "https://fr.wikipedia.org/wiki/Philippe_II_de_Macédoine"
+      }
+    ]
+  },
+  {
+    "id": "olympias",
+    "name": "Olympias",
+    "archetype": "imperatrice",
+    "faction": "grecs-macedoniens",
+    "born": -375,
+    "died": -316,
+    "title": "Reine d’Épire, mère d’Alexandre",
+    "bio": "Princesse du royaume des Molosses, en Épire, Olympias épouse Philippe II en -357 et donne naissance à Alexandre un an plus tard. Prêtresse de cultes à mystères, elle nourrit autour d’elle une réputation de sorcellerie, et la légende lui prête des serpents familiers. Quand Philippe épouse Cléopâtre, une Macédonienne, en -337, elle quitte la cour avec son fils, puis se réfugie en Épire. Après l’assassinat de Philippe, elle revient et fait éliminer la jeune reine et son enfant, selon les sources antiques. Elle entretient avec Alexandre une correspondance régulière, et il lui envoie des cadeaux de l’Orient ; mais elle est écartée du pouvoir par Antipatros, le régent de Macédoine. À la mort d’Alexandre, elle soutient les droits de son petit-fils, Alexandre IV. Elle s’empare de la Macédoine en -317, fait exécuter Philippe Arrhidée, puis est assiégée à Pydna par Cassandre, qui la fait condamner à mort en -316.",
+    "keyFacts": [
+      "-357 : mariage avec Philippe II",
+      "-356 : naissance d’Alexandre",
+      "-337 : rupture avec Philippe et départ en Épire",
+      "-317 : prend le pouvoir en Macédoine",
+      "-316 : exécutée par Cassandre après le siège de Pydna"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Olympias",
+        "url": "https://fr.wikipedia.org/wiki/Olympias"
+      }
+    ]
+  },
+  {
+    "id": "aristote",
+    "name": "Aristote",
+    "archetype": "sage",
+    "faction": "grecs-macedoniens",
+    "born": -384,
+    "died": -322,
+    "title": "Philosophe, précepteur d’Alexandre",
+    "bio": "Né à Stagire, en Chalcidique, fils du médecin du roi de Macédoine, Aristote étudie vingt ans à l’Académie de Platon, à Athènes. En -343, Philippe II l’appelle à Mièza pour éduquer son fils Alexandre, alors âgé de treize ans. Pendant trois ans, il lui enseigne la rhétorique, la politique, l’éthique et les sciences naturelles, et prépare pour lui une édition commentée de l’Iliade. Retourné à Athènes en -335, il fonde le Lycée, école où l’on marche en discutant et où l’on réunit des collections de plantes et d’animaux. Les rapports entre le maître et l’élève se détériorent : Alexandre fait exécuter le neveu d’Aristote, Callisthène, accusé de complot. À la mort d’Alexandre, Aristote doit quitter Athènes, visé par un procès d’impiété, et se retire à Chalcis, où il meurt en -322. Ses ouvrages sur la logique, la biologie et la politique domineront pendant des siècles la pensée occidentale et arabe.",
+    "keyFacts": [
+      "-384 : naissance à Stagire",
+      "-343 : précepteur d’Alexandre à Mièza",
+      "-335 : fonde le Lycée à Athènes",
+      "-322 : mort à Chalcis, en Eubée"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Aristote",
+        "url": "https://fr.wikipedia.org/wiki/Aristote"
+      }
+    ]
+  },
+  {
+    "id": "darius-iii",
+    "name": "Darius III",
+    "archetype": "roi",
+    "faction": "parthes-perses",
+    "born": -380,
+    "died": -330,
+    "title": "Dernier Grand Roi achéménide",
+    "bio": "Satrape d’Arménie puis courrier royal, Codomane est porté sur le trône en -336 par l’eunuque Bagoas, après deux ans d’intrigues de cour. Il restaure l’autorité du Grand Roi en Égypte et en Médie, mais il hérite d’un empire immense, mal défendu contre un adversaire résolu. Après la défaite de ses satrapes au Granique, il rassemble une armée en Mésopotamie et affronte Alexandre à Issos en -333, où il fuit en abandonnant sa famille. Il propose la paix et une grande partie de l’empire : le refus d’Alexandre le contraint à une dernière bataille à Gaugamèles en -331, où il est encore vaincu. Il se replie vers l’est, mais le satrape de Bactriane, Bessos, le saisit et le tue en -330, peu avant l’arrivée des Macédoniens. Alexandre lui fait rendre des funérailles royales. Les sources grecques lui prêtent des qualités de courage personnel, mais un jugement stratégique faible.",
+    "keyFacts": [
+      "-336 : accède au trône achéménide",
+      "-333 : défaite d’Issos, sa famille est capturée",
+      "-331 : défaite de Gaugamèles",
+      "-330 : tué par Bessos près d’Hécatompylos"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Darius III",
+        "url": "https://fr.wikipedia.org/wiki/Darius_III"
+      }
+    ]
+  },
+  {
+    "id": "parmenion",
+    "name": "Parménion",
+    "archetype": "general",
+    "faction": "grecs-macedoniens",
+    "born": -400,
+    "died": -330,
+    "title": "Général de Philippe II et d’Alexandre",
+    "bio": "Compagnon de Philippe II, Parménion est le plus ancien des généraux macédoniens. Philippe lui doit des campagnes en Illyrie et en Thrace, et il dirige l’avant-garde en Asie dès -336. Sous Alexandre, il commande l’aile gauche de l’armée dans les grandes batailles : au Granique, à Issos et à Gaugamèles. Il s’empare du trésor perse de Damas après Issos, et conseille prudence au roi à plusieurs reprises, ce qui irrite parfois celui-ci. Ses fils occupent des postes élevés : Philotas commande la cavalerie des Compagnons, Nicanor les hypaspistes. En -330, Philotas est accusé de complot à Phrada, torturé et exécuté. Alexandre craint la réaction du père, qui garde le trésor d’Ecbatane : il envoie des officiers de confiance l’assassiner. La mort du vieux général, aux alentours de soixante-dix ans, reste l’un des épisodes les plus noirs du règne et marque la rupture avec la vieille garde.",
+    "keyFacts": [
+      "-336 : mène l’avant-garde macédonienne en Asie",
+      "-333 : prend le trésor de Damas après Issos",
+      "-331 : commande l’aile gauche à Gaugamèles",
+      "-330 : assassiné sur ordre du roi à Ecbatane"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Parménion",
+        "url": "https://fr.wikipedia.org/wiki/Parménion"
+      }
+    ]
+  },
+  {
+    "id": "hephaistion",
+    "name": "Héphaistion",
+    "archetype": "general",
+    "faction": "grecs-macedoniens",
+    "born": -356,
+    "died": -324,
+    "title": "Ami d’enfance et second d’Alexandre",
+    "bio": "Fils d’un noble macédonien, Héphaistion grandit à la cour de Pella et suit comme Alexandre l’enseignement d’Aristote. Les sources antiques le présentent comme l’ami le plus proche du roi, et comparent leur lien à celui d’Achille et de Patrocle. Pendant l’expédition, il remplit des missions de confiance : fonder une ville, préparer des ponts sur l’Indus, commander une colonne vers l’Inde par la passe de Khyber. À Suse, en -324, il épouse Drypétis, sœur de l’épouse d’Alexandre. Il reçoit le titre de chiliarque, c’est-à-dire de vizir, sur le modèle perse. Il meurt à Ecbatane pendant l’automne -324 d’une fièvre, après un banquet. Alexandre est effondré : il fait pendre le médecin, exige un deuil immense et fait construire à Babylone un bûcher monumental. L’année suivante, il le fait honorer comme héros. Cette douleur, selon Arrien, précède de peu sa propre fin.",
+    "keyFacts": [
+      "-356 : naissance en Macédoine",
+      "-326 : prépare le passage de l’Indus",
+      "-324 : épouse Drypétis à Suse",
+      "-324 : meurt à Ecbatane, deuil d’Alexandre"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Héphaistion",
+        "url": "https://fr.wikipedia.org/wiki/Héphaistion"
+      }
+    ]
+  },
+  {
+    "id": "poros",
+    "name": "Pôros",
+    "archetype": "roi",
+    "faction": "indiens",
+    "born": -370,
+    "died": -317,
+    "title": "Roi du Pendjab, vaincu à l’Hydaspe",
+    "bio": "Roi d’un royaume du Pendjab, entre l’Hydaspe et l’Acésines, Pôros est un homme de grande taille d’après les auteurs grecs, qui lui prêtent plus de deux mètres. Il refuse de se soumettre à Alexandre, contrairement à son voisin Taxile, et l’attend en -326 sur l’Hydaspe avec ses éléphants, ses chars et son infanterie. Vaincu après la traversée nocturne du fleuve par les Macédoniens, il combat jusqu’à ce qu’il soit blessé. Admiratif, Alexandre l’interroge sur le traitement qu’il attend et lui laisse son royaume, élargi de plusieurs provinces. Pôros devient un allié fidèle et lui fournit des troupes pour la suite de la campagne dans le Pendjab. Après la mort d’Alexandre, il garde son pouvoir quelque temps avant d’être assassiné par Eudème vers -317. L’épisode, très célèbre, a nourri l’image du roi vaincu qui garde sa dignité. Les sources indiennes ne le mentionnent pas, et son nom (Paurava) a été reconstitué.",
+    "keyFacts": [
+      "-326 : affronte Alexandre à l’Hydaspe avec environ 200 éléphants",
+      "-326 : confirmé roi et vassal après sa défaite",
+      "-325 : fournit des troupes à Alexandre dans le Pendjab",
+      "-317 : assassiné par le Grec Eudème"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Pôros",
+        "url": "https://fr.wikipedia.org/wiki/Pôros"
+      }
+    ]
+  },
+  {
+    "id": "roxane",
+    "name": "Roxane",
+    "archetype": "imperatrice",
+    "faction": "parthes-perses",
+    "born": -340,
+    "died": -310,
+    "title": "Princesse bactrienne, épouse d’Alexandre",
+    "bio": "Fille du seigneur bactrien Oxyartès, Roxane est capturée avec sa famille lors de la prise du Rocher de Sogdiane en -327. Alexandre l’épouse peu après, dans une cérémonie où, selon Arrien, ils partagent un pain coupé à l’épée. Le mariage est surtout politique : il scelle l’accord avec la noblesse locale et facilite la fin de la guérilla. Roxane accompagne le roi jusqu’en Inde, mais pas à Suse, où il prend deux autres épouses, dont Stateira, fille de Darius. À la mort d’Alexandre en -323, elle est enceinte. Elle fait assassiner Stateira et sa sœur, selon les sources. Son fils, Alexandre IV, naît à Babylone quelques semaines plus tard et partage le trône avec Philippe Arrhidée. Réfugiés en Macédoine, mère et fils sont pris par Cassandre en -316, retenus à Amphipolis puis exécutés vers -310, laissant sans héritier direct la dynastie des Argéades.",
+    "keyFacts": [
+      "-327 : capturée au Rocher de Sogdiane, épouse Alexandre",
+      "-323 : enceinte à la mort du roi, fait assassiner Stateira",
+      "-323 : naissance d’Alexandre IV",
+      "-310 : exécutée avec son fils à Amphipolis, sur ordre de Cassandre"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Roxane",
+        "url": "https://fr.wikipedia.org/wiki/Roxane"
+      }
+    ]
+  },
+  {
+    "id": "spitamenes",
+    "name": "Spitaménès",
+    "archetype": "chef-barbare",
+    "faction": "scythes",
+    "born": -370,
+    "died": -328,
+    "title": "Noble sogdien, chef de la révolte contre Alexandre",
+    "bio": "Noble de Sogdiane, Spitaménès est d’abord proche de Bessos, le satrape de Bactriane qui prend le titre royal après la mort de Darius. En -329, lorsqu’Alexandre approche, il participe à l’arrestation de Bessos et le livre aux Macédoniens. Mais il se retourne bientôt contre l’envahisseur. À la tête d’une cavalerie sogdienne et massagète, il attaque Marakanda, détruit un détachement envoyé par Alexandre sur le Polytimétos et se dérobe dans le désert dès qu’on le poursuit. Cette guérilla de deux ans est l’un des revers les plus durs de la campagne. Ses alliés scythes, après des défaites répétées et des raids de représailles sur leurs terres, s’inquiètent. À la fin -328, ils l’abandonnent, et selon Arrien sa propre épouse, ou les Massagètes, lui coupe la tête, envoyée à Alexandre en gage de paix. Sa fille Apama, épousée par Séleucos, sera l’ancêtre d’une dynastie qui régnera sur le Proche-Orient.",
+    "keyFacts": [
+      "-329 : livre Bessos à Alexandre, puis se soulève",
+      "-329 : anéantit un détachement macédonien sur le Polytimétos",
+      "-328 : guérilla en Sogdiane contre les colonnes d’Alexandre",
+      "-328 : tué par ses alliés, sa tête est envoyée à Alexandre"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Spitaménès",
+        "url": "https://fr.wikipedia.org/wiki/Spitaménès"
+      }
+    ]
+  }
+]

@@ -1,0 +1,602 @@
+{
+ "terrain": "plaine",
+ "decor": [
+  {
+   "kind": "colline",
+   "points": [
+    [
+     8,
+     17
+    ],
+    [
+     92,
+     15
+    ],
+    [
+     92,
+     23
+    ],
+    [
+     8,
+     26
+    ]
+   ],
+   "label": "Crête du Mont-Saint-Jean"
+  },
+  {
+   "kind": "village",
+   "points": [
+    [
+     22,
+     28
+    ],
+    [
+     30,
+     28
+    ],
+    [
+     30,
+     34
+    ],
+    [
+     22,
+     34
+    ]
+   ],
+   "label": "Château d'Hougoumont"
+  },
+  {
+   "kind": "village",
+   "points": [
+    [
+     47,
+     27
+    ],
+    [
+     53,
+     27
+    ],
+    [
+     53,
+     32
+    ],
+    [
+     47,
+     32
+    ]
+   ],
+   "label": "Ferme de la Haie Sainte"
+  },
+  {
+   "kind": "village",
+   "points": [
+    [
+     74,
+     40
+    ],
+    [
+     84,
+     40
+    ],
+    [
+     84,
+     47
+    ],
+    [
+     74,
+     47
+    ]
+   ],
+   "label": "Plancenoit"
+  },
+  {
+   "kind": "route",
+   "points": [
+    [
+     50,
+     0
+    ],
+    [
+     50,
+     60
+    ]
+   ],
+   "label": "Route de Bruxelles à Charleroi"
+  }
+ ],
+ "units": [
+  {
+   "id": "reille",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 17000,
+   "at": [
+    22,
+    44
+   ],
+   "formation": "ligne",
+   "label": "Corps de Reille (aile gauche, vers Hougoumont)"
+  },
+  {
+   "id": "erlon",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 17000,
+   "at": [
+    64,
+    44
+   ],
+   "formation": "ligne",
+   "label": "Corps de d'Erlon (aile droite, vers la Haie Sainte)"
+  },
+  {
+   "id": "cav-fr",
+   "army": 0,
+   "kind": "cavalerie",
+   "troops": 10000,
+   "at": [
+    46,
+    50
+   ],
+   "formation": "ligne",
+   "label": "Cuirassiers et cavalerie de Ney"
+  },
+  {
+   "id": "garde",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 12000,
+   "at": [
+    50,
+    56
+   ],
+   "formation": "ligne",
+   "label": "Garde impériale (réserve)"
+  },
+  {
+   "id": "lobau",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 10000,
+   "at": [
+    80,
+    50
+   ],
+   "formation": "ligne",
+   "label": "Corps de Lobau et Jeune Garde (face aux Prussiens)"
+  },
+  {
+   "id": "wellington-d",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 10000,
+   "at": [
+    26,
+    24
+   ],
+   "formation": "carre",
+   "label": "Gardes britanniques (aile droite, Hougoumont)"
+  },
+  {
+   "id": "wellington-c",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 25000,
+   "at": [
+    52,
+    23
+   ],
+   "formation": "carre",
+   "label": "Centre britannique et allemand en carrés"
+  },
+  {
+   "id": "wellington-g",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 14000,
+   "at": [
+    74,
+    22
+   ],
+   "formation": "ligne",
+   "label": "Aile gauche anglo-hollandaise"
+  },
+  {
+   "id": "uxbridge",
+   "army": 1,
+   "kind": "cavalerie",
+   "troops": 8000,
+   "at": [
+    50,
+    12
+   ],
+   "formation": "ligne",
+   "label": "Cavalerie britannique (Uxbridge)"
+  },
+  {
+   "id": "bulow",
+   "army": 2,
+   "kind": "infanterie",
+   "troops": 30000,
+   "at": [
+    97,
+    50
+   ],
+   "formation": "colonne",
+   "label": "IVe corps prussien de Bülow"
+  },
+  {
+   "id": "zieten",
+   "army": 2,
+   "kind": "infanterie",
+   "troops": 20000,
+   "at": [
+    98,
+    22
+   ],
+   "formation": "colonne",
+   "label": "Ier corps prussien de Zieten"
+  },
+  {
+   "id": "grande-batterie",
+   "army": 0,
+   "kind": "artillerie",
+   "troops": 2400,
+   "at": [
+    50,
+    40
+   ],
+   "formation": "ligne",
+   "label": "Grande batterie de 80 pièces devant le centre français"
+  },
+  {
+   "id": "art-crete",
+   "army": 1,
+   "kind": "artillerie",
+   "troops": 1500,
+   "at": [
+    52,
+    20
+   ],
+   "formation": "ligne",
+   "label": "Artillerie britannique sur la crête"
+  },
+  {
+   "id": "art-prussienne",
+   "army": 2,
+   "kind": "artillerie",
+   "troops": 1000,
+   "at": [
+    96,
+    46
+   ],
+   "formation": "ligne",
+   "label": "Artillerie prussienne de Bülow, vers Plancenoit"
+  }
+ ],
+ "phases": [
+  {
+   "label": "Vers midi, l'armée de Napoléon attaque Hougoumont pour attirer les réserves de Wellington. Le château, que les Gardes britanniques tiendront toute la journée, absorbe des milliers d'hommes.",
+   "duration": 5,
+   "moves": {
+    "reille": {
+     "to": [
+      26,
+      34
+     ],
+     "state": "combat",
+     "losses": 0.1,
+     "action": "feu"
+    },
+    "wellington-d": {
+     "to": [
+      26,
+      26
+     ],
+     "state": "combat",
+     "losses": 0.05,
+     "action": "feu"
+    },
+    "grande-batterie": {
+     "state": "combat",
+     "action": "feu"
+    }
+   }
+  },
+  {
+   "label": "L'infanterie de d'Erlon attaque le centre allié. La cavalerie britannique la contre-charge et la disperse, mais s'égare ensuite sous le feu français.",
+   "duration": 5,
+   "moves": {
+    "erlon": {
+     "to": [
+      58,
+      32
+     ],
+     "state": "combat",
+     "losses": 0.2,
+     "action": "baionnette"
+    },
+    "uxbridge": {
+     "to": [
+      62,
+      32
+     ],
+     "state": "combat",
+     "losses": 0.2
+    },
+    "wellington-c": {
+     "to": [
+      52,
+      25
+     ],
+     "state": "combat",
+     "losses": 0.05,
+     "action": "feu"
+    },
+    "grande-batterie": {
+     "to": [
+      52,
+      38
+     ],
+     "state": "combat",
+     "action": "feu"
+    },
+    "art-crete": {
+     "state": "combat",
+     "action": "feu"
+    }
+   }
+  },
+  {
+   "label": "Ney lance les cuirassiers contre les carrés britanniques. Les carrés tiennent et les charges se succèdent, sans artillerie pour les briser.",
+   "duration": 5,
+   "moves": {
+    "cav-fr": {
+     "to": [
+      50,
+      26
+     ],
+     "state": "combat",
+     "losses": 0.3
+    },
+    "wellington-c": {
+     "to": [
+      52,
+      26
+     ],
+     "state": "combat",
+     "losses": 0.2,
+     "action": "feu"
+    },
+    "art-crete": {
+     "action": "feu"
+    }
+   }
+  },
+  {
+   "label": "À l'est, les Prussiens de Bülow arrivent à Plancenoit et menacent le flanc droit français. Napoléon doit y envoyer Lobau et la Jeune Garde.",
+   "duration": 5,
+   "moves": {
+    "bulow": {
+     "to": [
+      84,
+      48
+     ],
+     "state": "combat",
+     "action": "feu"
+    },
+    "lobau": {
+     "to": [
+      80,
+      44
+     ],
+     "state": "combat",
+     "losses": 0.3,
+     "action": "feu"
+    },
+    "zieten": {
+     "to": [
+      92,
+      24
+     ],
+     "state": "marche"
+    },
+    "art-prussienne": {
+     "to": [
+      86,
+      46
+     ],
+     "state": "combat",
+     "action": "feu"
+    }
+   }
+  },
+  {
+   "label": "La Haie Sainte tombe enfin. Le centre britannique, exsangue, vacille. Zieten rejoint l'aile gauche de Wellington.",
+   "duration": 5,
+   "moves": {
+    "erlon": {
+     "to": [
+      52,
+      32
+     ],
+     "state": "combat",
+     "losses": 0.4,
+     "action": "baionnette"
+    },
+    "wellington-c": {
+     "to": [
+      52,
+      26
+     ],
+     "state": "combat",
+     "losses": 0.5,
+     "action": "feu"
+    },
+    "zieten": {
+     "to": [
+      78,
+      24
+     ],
+     "state": "combat",
+     "action": "feu"
+    },
+    "cav-fr": {
+     "to": [
+      50,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.45
+    },
+    "grande-batterie": {
+     "action": "feu"
+    },
+    "art-crete": {
+     "action": "feu"
+    },
+    "art-prussienne": {
+     "action": "feu"
+    }
+   }
+  },
+  {
+   "label": "Napoléon engage sa dernière réserve : la Garde impériale monte à l'assaut de la crête. Accueillie par des tirs à bout portant, elle recule.",
+   "duration": 5,
+   "moves": {
+    "garde": {
+     "to": [
+      54,
+      26
+     ],
+     "state": "combat",
+     "losses": 0.5,
+     "action": "baionnette"
+    },
+    "wellington-c": {
+     "to": [
+      52,
+      25
+     ],
+     "state": "combat",
+     "losses": 0.5,
+     "action": "feu"
+    },
+    "bulow": {
+     "to": [
+      78,
+      44
+     ],
+     "state": "combat",
+     "losses": 0.05,
+     "action": "baionnette"
+    },
+    "lobau": {
+     "to": [
+      82,
+      52
+     ],
+     "state": "fuite",
+     "losses": 0.6
+    },
+    "grande-batterie": {
+     "action": "feu"
+    },
+    "art-crete": {
+     "action": "feu"
+    },
+    "art-prussienne": {
+     "action": "feu"
+    }
+   }
+  },
+  {
+   "label": "La Garde repoussée, c'est la débandade. Wellington lance l'avance générale, les Prussiens poursuivent. L'Empire est vaincu.",
+   "duration": 5,
+   "moves": {
+    "reille": {
+     "to": [
+      24,
+      59
+     ],
+     "state": "fuite",
+     "losses": 0.4
+    },
+    "erlon": {
+     "to": [
+      50,
+      59
+     ],
+     "state": "fuite",
+     "losses": 0.6
+    },
+    "cav-fr": {
+     "to": [
+      44,
+      59
+     ],
+     "state": "fuite",
+     "losses": 0.6
+    },
+    "garde": {
+     "to": [
+      54,
+      58
+     ],
+     "state": "fuite",
+     "losses": 0.6
+    },
+    "wellington-c": {
+     "to": [
+      52,
+      36
+     ],
+     "state": "combat",
+     "losses": 0.5,
+     "action": "baionnette"
+    },
+    "zieten": {
+     "to": [
+      66,
+      34
+     ],
+     "state": "marche"
+    },
+    "bulow": {
+     "to": [
+      70,
+      48
+     ],
+     "state": "marche"
+    },
+    "grande-batterie": {
+     "to": [
+      48,
+      58
+     ],
+     "state": "fuite",
+     "losses": 0.5
+    },
+    "art-crete": {
+     "to": [
+      52,
+      32
+     ],
+     "state": "marche"
+    },
+    "art-prussienne": {
+     "to": [
+      76,
+      46
+     ],
+     "state": "marche"
+    }
+   }
+  }
+ ],
+ "sources": [
+  "Jacques Logie, Waterloo : la campagne de 1815",
+  "Wikipédia FR, « Bataille de Waterloo »",
+  "Wellington, Dépêches de Waterloo (rapport du 19 juin 1815)"
+ ]
+}

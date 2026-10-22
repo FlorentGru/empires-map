@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Royaume de Macédoine",
+    "summary": "Le royaume du nord de la Grèce, autour de Pella et d'Aigai, dont Philippe II a fait la première puissance militaire du monde grec grâce à la phalange. Alexandre en hérite à vingt ans en 336 av. J.-C. et y laisse le régent Antipatros pendant toute son expédition en Asie.",
+    "years": [-336, -323]
+  },
+  {
+    "name": "Ligue de Corinthe",
+    "summary": "L'alliance des cités grecques imposée par Philippe II après sa victoire de Chéronée (338 av. J.-C.), avec le roi de Macédoine pour chef. Elle fournit des troupes et des navires à la guerre contre la Perse. Sparte refuse d'y entrer, et Thèbes, révoltée, est rasée en 335.",
+    "years": [-336, -323]
+  },
+  {
+    "name": "Thessalie et Épire",
+    "summary": "Deux régions voisines de la Macédoine, liées à elle par des alliances plus que par une conquête. La Thessalie fournit à Alexandre sa meilleure cavalerie après celle des Compagnons ; l'Épire est le pays de sa mère Olympias.",
+    "years": [-336, -323]
+  },
+  {
+    "name": "Thrace du Nord et Illyrie du Sud",
+    "summary": "Les pays des Thraces et des Illyriens, au nord et à l'ouest de la Macédoine. Au printemps 335 av. J.-C., Alexandre y mène une campagne éclair jusqu'au Danube pour sécuriser ses arrières avant de partir pour l'Asie.",
+    "years": [-335, -323]
+  },
+  {
+    "name": "Empire d'Alexandre",
+    "summary": "L'ensemble des terres conquises sur l'Empire perse des Achéménides, de l'Asie Mineure à l'Indus. Alexandre garde l'organisation perse en satrapies (provinces), y nomme des Macédoniens et des Perses, et fonde des dizaines de villes nommées Alexandrie. À sa mort, ses généraux, les Diadoques, se le partagent.",
+    "years": [-334, -323]
+  },
+  {
+    "name": "Cyrénaïque",
+    "summary": "Les cités grecques de la côte libyenne, autour de Cyrène. Elles envoient une ambassade à Alexandre pendant son séjour en Égypte en 331 av. J.-C. et se placent sous sa protection sans être conquises. Elles passent ensuite sous le contrôle de l'Égypte des Ptolémées.",
+    "years": [-331, -325]
+  },
+  {
+    "name": "Royaume de Taxile",
+    "summary": "Un royaume indien du Gandhara, autour de la ville de Taxila, près de l'actuelle Islamabad. Son roi, ennemi de Pôros, se rallie à Alexandre dès 326 av. J.-C., le reçoit avec faste et lui fournit des troupes et des éléphants.",
+    "years": [-326, -323]
+  },
+  {
+    "name": "Royaume de Pôros",
+    "summary": "Le royaume du Pendjab entre l'Hydaspe et l'Acésinès (Jhelum et Chenab). Vaincu à l'Hydaspe en 326 av. J.-C., son roi Pôros impressionne Alexandre par sa fierté : selon Arrien, il demande à être traité « en roi ». Alexandre lui rend son royaume, agrandi, comme allié.",
+    "years": [-326, -323]
+  }
+]

@@ -4,7 +4,7 @@
 
 Un planisphère interactif pour voir l'évolution des grands empires de l'histoire. Choisis un empire, appuie sur **Play** et regarde ses frontières évoluer d'une date clé à la suivante : batailles, traités, réformes, chutes. Chaque étape est accompagnée d'une explication détaillée.
 
-Empires disponibles : **Rome** (509 av. J.-C. → 1453), **la Chine** (-1600 → 1912), **l'Empire mongol** (1206 → 1368), **l'Empire espagnol** (1492 → 1976), **l'Empire carolingien** (751 → 888), **le Saint-Empire romain germanique** (962 → 1806) et **l'Empire napoléonien** (1799 → 1815). Site en ligne : https://florentgru.github.io/empires-map/ Le sélecteur liste, par continent, les plus vastes et les plus célèbres empires de l’histoire, à remplir au fil du projet.
+Empires disponibles : **l'Empire d'Alexandre le Grand** (336 → 323 av. J.-C.), **Rome** (509 av. J.-C. → 1453), **la Chine** (-1600 → 1912), **l'Empire mongol** (1206 → 1368), **l'Empire espagnol** (1492 → 1976), **l'Empire carolingien** (751 → 888), **le Saint-Empire romain germanique** (962 → 1806) et **l'Empire napoléonien** (1799 → 1815). Site en ligne : https://florentgru.github.io/empires-map/ Le sélecteur liste, par continent, les plus vastes et les plus célèbres empires de l’histoire, à remplir au fil du projet.
 
 ## Fonctionnalités
 
@@ -13,6 +13,7 @@ Empires disponibles : **Rome** (509 av. J.-C. → 1453), **la Chine** (-1600 →
 - Frise chronologique cliquable, lecture automatique, vitesse ×0,5 à ×2, raccourcis clavier (Espace, ←, →)
 - Panneau d'explication : récit, conséquences, fiche bataille, sources
 - Page « Tous les empires » (`?empires=1`) : frise de tous les empires du catalogue (disponibles en couleur, à venir grisés), filtre par continent, résumé au clic (apogée, périodes, moments clés, personnages, inventions, héritage) et résumé rédigé par le sage
+- « ▶ Voir la bataille » : une fenêtre animée simule la bataille avec les figurines et couleurs de chaque peuple, à l'échelle (1 figurine ≈ N hommes) ; scénario historique (formations, manœuvres, terrain) pour 12 grandes batailles (Cannes, Gaugamèles, Austerlitz, Waterloo…), simulation schématique pour quelques autres
 - Mode « 🎯 Devine la suite » : avant chaque étape, une question à choix sur ce qui arrive (vainqueur, événement, année, territoire), avec score (`&guess=1`)
 - Armées animées qui marchent depuis leur ville de départ, fiches de bataille, personnages avec leur citation
 - Mode Histoire : l'empire raconté étape par étape par un narrateur
@@ -30,7 +31,7 @@ Empires disponibles : **Rome** (509 av. J.-C. → 1453), **la Chine** (-1600 →
 Un test par grosse fonctionnalité, pas un test par détail :
 - `npm test` : logique centrale (Vitest) : années, périodes, armées et marches, comparaison, événements du monde, piles, quiz hors ligne.
 - `npm run test:data` : validation de toutes les données, un contrôle groupé par fichier qui liste toutes les erreurs d'un coup.
-- `npm run test:e2e` : 16 parcours dans Chromium (Playwright), un par fonctionnalité (carte, armées, galerie, comparaison, monde en l'an X, quiz, sage, calques de l'époque…) ; première fois : `npx playwright install chromium`. Ils construisent le site puis le servent sur le port 4173.
+- `npm run test:e2e` : 17 parcours dans Chromium (Playwright), un par fonctionnalité (carte, armées, galerie, comparaison, monde en l'an X, quiz, sage, calques de l'époque…) ; première fois : `npx playwright install chromium`. Ils construisent le site puis le servent sur le port 4173.
 - Un seul test : `npx vitest run tests/unit/march.test.ts -t "<nom>"` ou `npx playwright test e2e/map.spec.ts -g "<nom>"`.
 - `npm run check:bundle` : vérifie que le JavaScript chargé au démarrage reste sous 460 Ko (gzip ; les SVG des figurines sont chargés à la demande, `src/map/sprites.ts`).
 - `npm run lint` (oxlint) et `npm run format` / `format:check` (Prettier) : style du code.
@@ -62,14 +63,14 @@ Si la page ne s'affiche pas, c'est presque toujours que le serveur n'est pas lan
 ```bash
 npm run fetch:data   # télécharge historical-basemaps et Natural Earth dans .cache/
 npm run build:data   # tous les empires : territoires, diffs, animations (SDF), fond de carte
-npm run build:data:napoleon   # un seul empire (rome, napoleon, china, mongols, espagne, saint-empire, carolingiens)
+npm run build:data:napoleon   # un seul empire (rome, napoleon, china, mongols, espagne, saint-empire, carolingiens, alexandre)
 ```
 
 Les corrections historiques des frontières se trouvent dans `overrides/<empire>/` : des polygones par étape et, pour les cartes composées région par région, `_carto.json`. Relancer le serveur Vite après une régénération.
 
 ### Référencement (SEO)
 
-`npm run build` pré-rend 245 pages HTML (accueil, empires, étapes, pages de synthèse `/empires/`, `/monuments/`, `/personnages/`, `/inventions/`) avec leurs balises, Open Graph et JSON-LD, ainsi que `sitemap.xml`, `robots.txt`, `llms.txt` et une page 404. Les images de partage et les icônes se régénèrent avec `npm run build:og` (PNG commités dans `public/og/`).
+`npm run build` pré-rend 262 pages HTML (accueil, empires, étapes, pages de synthèse `/empires/`, `/monuments/`, `/personnages/`, `/inventions/`) avec leurs balises, Open Graph et JSON-LD, ainsi que `sitemap.xml`, `robots.txt`, `llms.txt` et une page 404. Les images de partage et les icônes se régénèrent avec `npm run build:og` (PNG commités dans `public/og/`).
 
 ## Lancer l'Atlas gratuitement
 

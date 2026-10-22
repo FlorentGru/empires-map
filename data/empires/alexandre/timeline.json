@@ -1,0 +1,1602 @@
+{
+  "id": "alexandre",
+  "name": "Empire d’Alexandre le Grand",
+  "color": "#8a2a6b",
+  "start": -336,
+  "end": -323,
+  "description": "En treize ans, Alexandre de Macédoine, roi à vingt ans, renverse l’Empire perse achéménide et porte son pouvoir de la Grèce à l’Indus. Il bat Darius III au Granique, à Issos et à Gaugamèles, fonde Alexandrie, soumet la Bactriane et bat Pôros en Inde. Sa mort à Babylone, à trente-deux ans, fait éclater l’empire entre ses généraux, mais l’hellénisme se répand en Orient pour des siècles.",
+  "view": {
+    "center": [
+      44,
+      33
+    ],
+    "zoom": 3.2
+  },
+  "bounds": [
+    [
+      12,
+      20
+    ],
+    [
+      80,
+      47
+    ]
+  ],
+  "steps": [
+    {
+      "id": "avenement-336",
+      "year": -336,
+      "title": "Alexandre, roi à vingt ans",
+      "type": "politique",
+      "location": [
+        22.32,
+        40.48
+      ],
+      "zoom": 5,
+      "summary": "Philippe II est assassiné à Aigai ; son fils de vingt ans prend le trône, écarte ses rivaux et se fait confirmer chef de la Ligue de Corinthe.",
+      "details": "Au mois de juillet -336, **Philippe II** est poignardé par son garde du corps **Pausanias** lors des noces de sa fille à **Aigai**, l’ancienne capitale macédonienne. Il s’apprêtait à passer en Asie à la tête d’une armée déjà envoyée en avant-garde. Les sources antiques, et surtout **Plutarque**, soupçonnent Olympias, voire Alexandre, mais rien n’est prouvé ; certains évoquent même un complot perse.\n\nAlexandre a vingt ans. Élevé par **Aristote** à Mimèza, il a déjà commandé la cavalerie de l’aile gauche à **Chéronée** (-338) et gouverné la Macédoine pendant une absence de son père. Soutenu par les généraux **Antipatros** et **Parménion**, il est acclamé par l’armée. Il élimine les prétendants possibles, dont son cousin Amyntas, et fait exécuter les meurtriers présumés.\n\nLes Grecs, eux, profitent de la vacance. Alexandre descend aussitôt en Thessalie, puis à Corinthe, où les cités de la **Ligue de Corinthe** le reconnaissent comme hégémon pour la guerre contre la Perse. Sparte seule refuse d’y entrer. Il hérite de l’outil de son père : une armée de métier, une phalange à longues piques et une cavalerie d’élite, les Compagnons.",
+      "consequences": [
+        "Alexandre est reconnu roi de Macédoine et chef de la Ligue de Corinthe (hégémon).",
+        "Les rivaux dynastiques sont éliminés ; Antipatros reste régent de la Macédoine.",
+        "Le projet de Philippe, la guerre de revanche contre la Perse, devient celui d’Alexandre.",
+        "Les Grecs, d’abord hésitants, se soumettent sans combat."
+      ],
+      "territory": "avenement-336",
+      "territoryNote": "Royaume de Macédoine (Haute-Macédoine, Péonie, côte égéenne), Thrace méridionale sous contrôle, Thessalie et Épire alliées. Ligue de Corinthe sous hégémonie macédonienne : Grèce centrale, Béotie, Attique, Péloponnèse (sauf Sparte). Hors empire : Sparte, Illyrie, Thrace du nord, Empire perse.",
+      "sources": [
+        {
+          "label": "Plutarque, Vie d’Alexandre"
+        },
+        {
+          "label": "Wikipédia — Alexandre le Grand",
+          "url": "https://fr.wikipedia.org/wiki/Alexandre_le_Grand"
+        },
+        {
+          "label": "Wikipédia — Philippe II de Macédoine",
+          "url": "https://fr.wikipedia.org/wiki/Philippe_II_de_Macédoine"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Alexandre III",
+          "person": "alexandre-iii",
+          "role": "Roi de Macédoine à vingt ans",
+          "faction": "grecs-macedoniens",
+          "archetype": "roi",
+          "quote": "Mon père ne me laissera rien à conquérir ! (selon Plutarque)",
+          "position": [
+            22.52,
+            40.76
+          ]
+        },
+        {
+          "name": "Philippe II",
+          "person": "philippe-ii",
+          "role": "Roi assassiné à Aigai",
+          "faction": "grecs-macedoniens",
+          "archetype": "roi",
+          "position": [
+            22.32,
+            40.48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thebes-335",
+      "year": -335,
+      "title": "Thèbes rasée",
+      "type": "bataille",
+      "location": [
+        23.32,
+        38.32
+      ],
+      "zoom": 5,
+      "summary": "Après une campagne éclair jusqu’au Danube, Alexandre écrase la révolte de Thèbes et détruit la cité, sauf la maison de Pindare ; la Grèce se tient tranquille.",
+      "details": "Au printemps -335, Alexandre mène son armée en Thrace, franchit les Balkans, bat les **Triballes** et atteint le **Danube**, puis écrase les Illyriens de **Clitos** et de **Glaucias**. Pendant ce temps, le bruit de sa mort court en Grèce. **Thèbes** se soulève et assiège la garnison macédonienne de la Cadmée, encouragée par l’or perse et les harangues de Démosthène à Athènes.\n\nEn treize jours, Alexandre revient de l’Illyrie jusqu’en Béotie. Il offre aux Thébains de négocier, qui refusent. L’assaut est donné ; les défenseurs sont pris à revers lorsque la garnison de la Cadmée sort. La ville est mise à sac. Selon Arrien, environ 6 000 Thébains sont tués et 30 000 vendus comme esclaves.\n\nAlexandre confie le sort de la cité à ses alliés grecs, ennemis de longue date de Thèbes, qui votent la destruction. Seuls les temples et la maison du poète **Pindare** sont épargnés. Athènes, qui avait soutenu la révolte, obtient son pardon au prix de la remise de ses chefs, que le roi renonce finalement à exiger.",
+      "consequences": [
+        "Thèbes est rasée ; ses habitants sont dispersés ou vendus.",
+        "La Ligue de Corinthe n’ose plus bouger : la Grèce reste calme pendant l’expédition d’Asie.",
+        "La frontière nord (Danube, Illyrie) est sécurisée.",
+        "Antipatros reste en Macédoine avec 12 000 fantassins pour surveiller les Grecs."
+      ],
+      "territory": "thebes-335",
+      "territoryNote": "Macédoine, Thrace jusqu’au Danube (Triballes battus), Péonie, Illyrie méridionale soumise. Ligue de Corinthe : Grèce centrale, Béotie (Thèbes détruite), Attique, Péloponnèse sauf Sparte. Thessalie et Épire alliées. Hors empire : Sparte, Empire perse, Thrace du nord-est.",
+      "sources": [
+        {
+          "label": "Arrien, Anabase d’Alexandre"
+        },
+        {
+          "label": "Wikipédia — Thèbes (Grèce)",
+          "url": "https://fr.wikipedia.org/wiki/Thèbes_(Grèce)"
+        },
+        {
+          "label": "Wikipédia — Alexandre le Grand",
+          "url": "https://fr.wikipedia.org/wiki/Alexandre_le_Grand"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Macédoniens et alliés de la Ligue de Corinthe",
+          "Thèbes"
+        ],
+        "commanders": [
+          "Alexandre III",
+          "Perdiccas",
+          "chefs thébains"
+        ],
+        "outcome": "Victoire macédonienne : Thèbes est prise et détruite",
+        "forces": "Environ 30 000 Macédoniens et alliés (estimation) ; effectifs thébains inconnus",
+        "losses": "Environ 6 000 Thébains tués et 30 000 vendus comme esclaves (Arrien)"
+      },
+      "armies": [
+        {
+          "id": "alexandre",
+          "side": "Armée d’Alexandre",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              22.52,
+              40.76
+            ],
+            [
+              22.42,
+              39.64
+            ],
+            [
+              22.55,
+              38.8
+            ],
+            [
+              23.32,
+              38.32
+            ]
+          ],
+          "from": "Pella",
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Thèbes",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              23.7,
+              38.45
+            ],
+            [
+              23.5,
+              38.36
+            ],
+            [
+              23.32,
+              38.32
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Alexandre III",
+          "person": "alexandre-iii",
+          "role": "Roi de Macédoine, vainqueur de Thèbes",
+          "faction": "grecs-macedoniens",
+          "archetype": "roi",
+          "position": [
+            23.45,
+            38.28
+          ]
+        }
+      ]
+    },
+    {
+      "id": "granique-334",
+      "year": -334,
+      "title": "Le Granique : la première victoire en Asie",
+      "type": "bataille",
+      "location": [
+        27.25,
+        40.22
+      ],
+      "zoom": 5.5,
+      "summary": "Alexandre franchit l’Hellespont et bat les satrapes perses sur le Granique ; l’Asie Mineure occidentale s’ouvre à lui.",
+      "details": "Au printemps -334, Alexandre traverse l’**Hellespont** avec environ 40 000 hommes et laisse 12 000 soldats en Macédoine. À Troie, il fait des offrandes au tombeau d’Achille. Les satrapes de Darius, réunis autour du Grec **Memnon de Rhodes**, proposent de tout brûler et de se replier ; le satrape de Phrygie, **Arsitès**, refuse et offre le combat sur le Granique.\n\nL’armée perse se tient sur la rive orientale, haute et boueuse. Alexandre charge sans attendre, à la tête de la cavalerie de droite, pendant que Parménion tient la gauche. Selon Arrien, il manque d’être tué par **Rhoisakès** et sauvé par **Cleitos le Noir**. La cavalerie perse cède, et les mercenaires grecs de Darius, abandonnés, sont massacrés.\n\nAlexandre envoie trois cents armures perses à Athènes, avec l’inscription « Alexandre fils de Philippe et les Grecs, sauf les Spartiates ». Il confie la **Phrygie hellespontique** à Calas et se dirige vers le sud, vers les cités grecques d’Ionie.",
+      "consequences": [
+        "La Phrygie hellespontique passe sous contrôle macédonien.",
+        "Les cités grecques d’Ionie et d’Éolie ouvrent leurs portes, dont Sardes et Éphèse.",
+        "Les Perses perdent leur armée de satrapes, mais Memnon reste dangereux avec la flotte.",
+        "La légitimité du roi comme chef des Grecs contre la Perse est renforcée."
+      ],
+      "territory": "granique-334",
+      "territoryNote": "Macédoine et Thrace méridionale, Ligue de Corinthe (Grèce sauf Sparte), tête de pont en Asie Mineure nord-ouest : Troade et Phrygie hellespontique jusqu’au Granique. Thessalie et Épire alliées. Hors empire : reste de l’Asie Mineure, Syrie, Égypte et l’Empire perse.",
+      "sources": [
+        {
+          "label": "Arrien, Anabase d’Alexandre"
+        },
+        {
+          "label": "Wikipédia — Bataille du Granique",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_du_Granique"
+        },
+        {
+          "label": "Plutarque, Vie d’Alexandre"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Armée macédonienne et alliée",
+          "Satrapes perses et mercenaires grecs"
+        ],
+        "commanders": [
+          "Alexandre III",
+          "Parménion",
+          "Arsitès",
+          "Memnon de Rhodes"
+        ],
+        "outcome": "Victoire macédonienne ; mercenaires grecs de Darius massacrés",
+        "forces": "Environ 40 000 Macédoniens et alliés contre environ 40 000 Perses et mercenaires (estimations)",
+        "losses": "Une centaine de morts côté macédonien selon Arrien ; plusieurs milliers côté perse"
+      },
+      "armies": [
+        {
+          "id": "alexandre",
+          "side": "Armée d’Alexandre",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              23.32,
+              38.32
+            ],
+            [
+              22.95,
+              40.64
+            ],
+            [
+              23.84,
+              40.8
+            ],
+            [
+              26.36,
+              40.35
+            ],
+            [
+              26.45,
+              40.2
+            ],
+            [
+              27.25,
+              40.22
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Satrapes perses",
+          "faction": "parthes-perses",
+          "path": [
+            [
+              28.2,
+              40.3
+            ],
+            [
+              27.7,
+              40.25
+            ],
+            [
+              27.25,
+              40.22
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Alexandre III",
+          "person": "alexandre-iii",
+          "role": "Chef de la cavalerie macédonienne",
+          "faction": "grecs-macedoniens",
+          "archetype": "roi",
+          "quote": "Qu’attendons-nous pour passer le fleuve ? (selon Arrien)",
+          "position": [
+            27.1,
+            40.19
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gordion-333",
+      "year": -333,
+      "title": "Gordion : le nœud tranché",
+      "type": "politique",
+      "location": [
+        31.99,
+        39.65
+      ],
+      "zoom": 5,
+      "summary": "Après l’hiver passé à soumettre l’Asie Mineure, Alexandre tranche à Gordion, selon la légende, le nœud qui promettait l’Asie à son défaiseur.",
+      "details": "Alexandre a passé l’été et l’automne -334 à libérer les cités grecques de la côte : **Sardes** se rend sans combat, **Éphèse** renverse ses oligarques, **Milet** et **Halicarnasse** sont prises de force après des sièges difficiles, face à Memnon. L’hiver, une partie de l’armée rentre en Macédoine avec les jeunes mariés, tandis que lui marche en Lycie et en Pamphylie, puis vers l’intérieur.\n\nAu printemps -333, il rejoint à **Gordion**, ancienne capitale de la Phrygie, Parménion et les renforts. Dans la citadelle, un chariot est attaché par un nœud complexe : celui qui le défera, dit l’oracle, régnera sur l’Asie. Selon la version la plus connue, Alexandre tranche le nœud d’un coup d’épée ; selon Arrien, il l’a peut-être défait en retirant la cheville du joug. Les Anciens eux-mêmes ne s’accordent pas.\n\nL’épisode compte surtout par ce qu’il dit du jeune roi : il se met en scène comme prédestiné. Pendant ce temps Memnon meurt devant Mytilène, ce qui prive Darius de son meilleur stratège et le pousse à marcher en personne.",
+      "consequences": [
+        "L’Asie Mineure occidentale et centrale est contrôlée jusqu’à la Phrygie.",
+        "La légende du nœud sert la propagande du roi comme futur maître de l’Asie.",
+        "La mort de Memnon prive Darius de sa meilleure stratégie navale.",
+        "Alexandre repart vers la Cilicie en passant par Ancyre."
+      ],
+      "territory": "gordion-333",
+      "territoryNote": "Macédoine, Thrace méridionale et Ligue de Corinthe (Grèce sauf Sparte) ; en Asie Mineure : côte égéenne grecque (Éolie, Ionie, Carie), Lydie, Lycie, Pamphylie, Phrygie et Cappadoce occidentale jusqu’à Gordion. Thessalie et Épire alliées. Hors empire : Cilicie, Cappadoce orientale, reste de l’Empire perse.",
+      "sources": [
+        {
+          "label": "Arrien, Anabase d’Alexandre"
+        },
+        {
+          "label": "Wikipédia — Gordion",
+          "url": "https://fr.wikipedia.org/wiki/Gordion"
+        },
+        {
+          "label": "Wikipédia — Nœud gordien",
+          "url": "https://fr.wikipedia.org/wiki/Nœud_gordien"
+        }
+      ],
+      "armies": [
+        {
+          "id": "alexandre",
+          "side": "Armée d’Alexandre",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              27.25,
+              40.22
+            ],
+            [
+              28.04,
+              38.49
+            ],
+            [
+              27.34,
+              37.94
+            ],
+            [
+              27.42,
+              37.04
+            ],
+            [
+              30.55,
+              36.52
+            ],
+            [
+              30.85,
+              36.96
+            ],
+            [
+              31.99,
+              39.65
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Alexandre III",
+          "person": "alexandre-iii",
+          "role": "Roi devant le nœud de Gordion",
+          "faction": "grecs-macedoniens",
+          "archetype": "roi",
+          "quote": "Peu importe comment on le défait (formule libre, d’après la légende)",
+          "position": [
+            31.99,
+            39.65
+          ]
+        }
+      ]
+    },
+    {
+      "id": "issos-333",
+      "year": -333,
+      "title": "Issos : Darius en fuite",
+      "type": "bataille",
+      "location": [
+        36.25,
+        36.78
+      ],
+      "zoom": 5.5,
+      "summary": "Darius III, venu en personne, est battu dans l’étroite plaine d’Issos ; il fuit en abandonnant sa famille.",
+      "details": "Darius, qui a réuni une très grande armée en Mésopotamie, prend Alexandre à revers en passant par les portes d’Amanus. En novembre -333, il se retrouve face à lui dans la plaine côtière d’**Issos**, entre la mer et les montagnes, ce qui annule son avantage numérique. Alexandre revient en hâte vers le nord et déploie sa phalange face à la masse perse.\n\nÀ la tête des cavaliers de droite, le roi charge droit sur le centre, où se tient Darius sur son char. La phalange, gênée au passage du ruisseau **Pinaros**, se disloque un temps, mais les mercenaires grecs de Darius ne parviennent pas à exploiter la brèche. Darius quitte le champ de bataille ; la déroute commence.\n\nLe camp perse est pris avec la mère, l’épouse et les filles de Darius, que le roi traite avec égard. Alexandre refuse ensuite l’offre de paix de Darius, qui lui propose une partie de l’empire et une rançon ; il répond qu’il est désormais « le roi d’Asie ».",
+      "consequences": [
+        "Darius abandonne son camp, sa famille et ses trésors ; Parménion s’empare du trésor perse de Damas.",
+        "La Cilicie et la Syrie du nord s’ouvrent à l’armée macédonienne.",
+        "Le roi rejette les offres de paix de Darius : la guerre vise désormais tout l’empire.",
+        "Darius se replie en Babylonie pour lever une nouvelle armée."
+      ],
+      "territory": "issos-333",
+      "territoryNote": "Macédoine, Thrace méridionale et Ligue de Corinthe ; Asie Mineure presque entière (côte, Lydie, Phrygie, Cappadoce, Cilicie) jusqu’au golfe d’Issos. Thessalie et Épire alliées. Hors empire : Syrie, Phénicie, Égypte, Mésopotamie et Perse sous Darius III ; Chypre, Rhodes et la flotte perse.",
+      "sources": [
+        {
+          "label": "Arrien, Anabase d’Alexandre"
+        },
+        {
+          "label": "Wikipédia — Bataille d’Issos",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_d'Issos"
+        },
+        {
+          "label": "Wikipédia — Darius III",
+          "url": "https://fr.wikipedia.org/wiki/Darius_III"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Armée macédonienne et alliée",
+          "Armée du Grand Roi Darius III"
+        ],
+        "commanders": [
+          "Alexandre III",
+          "Parménion",
+          "Darius III"
+        ],
+        "outcome": "Victoire macédonienne ; fuite de Darius, famille royale capturée",
+        "forces": "Environ 40 000 Macédoniens ; 100 000 Perses ou plus, selon des sources antiques exagérées",
+        "losses": "Pertes perses très élevées, bien supérieures aux pertes macédoniennes (chiffres antiques peu fiables)"
+      },
+      "armies": [
+        {
+          "id": "alexandre",
+          "side": "Armée d’Alexandre",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              31.99,
+              39.65
+            ],
+            [
+              32.85,
+              39.93
+            ],
+            [
+              34.78,
+              37.25
+            ],
+            [
+              34.89,
+              36.92
+            ],
+            [
+              36.25,
+              36.78
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée perse",
+          "faction": "parthes-perses",
+          "path": [
+            [
+              37.2,
+              37.1
+            ],
+            [
+              36.5,
+              36.95
+            ],
+            [
+              36.25,
+              36.78
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Darius III",
+          "person": "darius-iii",
+          "role": "Grand Roi de Perse, en fuite",
+          "faction": "parthes-perses",
+          "archetype": "roi",
+          "position": [
+            36.4,
+            36.85
+          ]
+        },
+        {
+          "name": "Alexandre III",
+          "person": "alexandre-iii",
+          "role": "Roi, à la tête de la cavalerie",
+          "faction": "grecs-macedoniens",
+          "archetype": "roi",
+          "position": [
+            36.1,
+            36.72
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tyr-332",
+      "year": -332,
+      "title": "Tyr : sept mois de siège",
+      "type": "bataille",
+      "location": [
+        35.2,
+        33.27
+      ],
+      "zoom": 5.5,
+      "summary": "Alexandre prend Tyr, la cité insulaire, en construisant une digue vers l’île et en rassemblant une flotte ; le siège dure sept mois.",
+      "details": "Après Issos, Alexandre ne poursuit pas Darius : il veut d’abord priver la flotte perse de ses bases, les ports de **Phénicie**. **Arados**, **Byblos** et **Sidon** lui ouvrent leurs portes. **Tyr** accepte seulement qu’il vienne sacrifier à Héraclès dans un sanctuaire du continent : il refuse, et le siège commence en janvier -332.\n\nLa ville est bâtie sur une île à 800 mètres de la côte, entourée de murs de 45 mètres de haut. Les Macédoniens construisent une **digue** à partir de la terre ferme avec les gravats de l’ancienne Tyr ; les Tyriens brûlent les tours de siège avec un brûlot. Alexandre réunit alors une flotte avec les navires de **Sidon**, de **Chypre** et de Rhodes, fait équiper des bateaux de machines et attaque par la mer. En juillet, la brèche est ouverte et l’assaut réussit.\n\nSelon Arrien, 8 000 Tyriens sont tués et 30 000 vendus comme esclaves. Alexandre marche ensuite vers **Gaza**, qui résiste deux mois, puis vers l’Égypte. À Jérusalem, d’après Flavius Josèphe, il rencontre le grand prêtre, mais le récit est discuté.",
+      "consequences": [
+        "La flotte perse perd ses bases : la maîtrise de la Méditerranée orientale change de camp.",
+        "La Phénicie, Chypre et la Judée passent sous contrôle macédonien.",
+        "Gaza est prise après deux mois de siège, ouvrant la route de l’Égypte.",
+        "Alexandre prouve sa maîtrise de la poliorcétique : digue, tours, machines navales."
+      ],
+      "territory": "tyr-332",
+      "territoryNote": "Macédoine, Thrace méridionale, Ligue de Corinthe ; Asie Mineure entière ; Syrie, Phénicie (Arados, Byblos, Sidon, Tyr), Palestine et côte jusqu’à Gaza. Thessalie et Épire alliées. Hors empire : Égypte, Mésopotamie et Perse sous Darius III.",
+      "sources": [
+        {
+          "label": "Arrien, Anabase d’Alexandre"
+        },
+        {
+          "label": "Wikipédia — Siège de Tyr (332 av. J.-C.)",
+          "url": "https://fr.wikipedia.org/wiki/Siège_de_Tyr_(332_av._J.-C.)"
+        },
+        {
+          "label": "Wikipédia — Siège de Gaza",
+          "url": "https://fr.wikipedia.org/wiki/Siège_de_Gaza"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Armée et flotte macédoniennes",
+          "Tyr et ses alliés"
+        ],
+        "commanders": [
+          "Alexandre III",
+          "Cratère",
+          "Azemilcos (roi de Tyr)"
+        ],
+        "outcome": "Victoire macédonienne : Tyr est prise après sept mois",
+        "forces": "Effectifs inconnus ; plus de 200 navires alliés rassemblés par Alexandre",
+        "losses": "Environ 8 000 Tyriens tués et 30 000 vendus, selon Arrien"
+      },
+      "armies": [
+        {
+          "id": "alexandre",
+          "side": "Armée d’Alexandre",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              36.25,
+              36.78
+            ],
+            [
+              35.85,
+              34.85
+            ],
+            [
+              35.65,
+              34.12
+            ],
+            [
+              35.37,
+              33.56
+            ],
+            [
+              35.2,
+              33.27
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Tyr",
+          "faction": "parthes-perses",
+          "path": [
+            [
+              35.4,
+              33.45
+            ],
+            [
+              35.3,
+              33.35
+            ],
+            [
+              35.2,
+              33.27
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Alexandre III",
+          "person": "alexandre-iii",
+          "role": "Roi, maître des sièges",
+          "faction": "grecs-macedoniens",
+          "archetype": "roi",
+          "position": [
+            35.12,
+            33.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alexandrie-331",
+      "year": -331,
+      "title": "L’Égypte et la fondation d’Alexandrie",
+      "type": "fondation",
+      "location": [
+        29.92,
+        31.2
+      ],
+      "zoom": 5.5,
+      "summary": "Accueilli en libérateur par les Égyptiens, Alexandre fonde Alexandrie, visite l’oasis de Siwa et se fait reconnaître fils d’Ammon.",
+      "details": "Fin -332, Alexandre entre en Égypte par **Péluse**. Le satrape perse **Mazakès** lui livre **Memphis** et le trésor sans combat, car l’occupation perse était peu aimée. Le roi sacrifie au dieu Apis, ce qui le fait accepter par le clergé. Les inscriptions locales le qualifient de pharaon.\n\nAu début de -331, il choisit pour une cité nouvelle un site sur la côte méditerranéenne, entre la mer et le lac Maréotis, face à l’île de **Pharos**. L’architecte **Dinocrate de Rhodes** en trace le plan. **Alexandrie** sera la plus célèbre des villes fondées sous son nom, et le futur centre intellectuel du monde hellénistique, avec sa bibliothèque et son phare.\n\nPuis Alexandre gagne l’oasis de **Siwa**, dans le désert libyque, pour consulter l’oracle d’Ammon. Il en revient convaincu de sa filiation divine, ce qui nourrit sa légende. Il laisse l’Égypte divisée en circonscriptions confiées à des Grecs et à des Égyptiens, puis repart vers l’est pour affronter Darius, qui réunit une nouvelle armée.",
+      "consequences": [
+        "L’Égypte passe aux Macédoniens sans combat et sans pillage.",
+        "Alexandrie est fondée sur la côte, face à Pharos.",
+        "Le séjour à Siwa nourrit l’idée d’une filiation divine du roi.",
+        "La satrapie d’Égypte sera dirigée plus tard par Ptolémée, fondateur de la dynastie lagide."
+      ],
+      "territory": "alexandrie-331",
+      "territoryNote": "Macédoine, Thrace méridionale, Ligue de Corinthe ; Asie Mineure entière ; Syrie, Phénicie, Palestine ; Égypte entière jusqu’à Siwa, Cyrénaïque ralliée. Thessalie et Épire alliées. Hors empire : Mésopotamie, Perse et Orient sous Darius III.",
+      "sources": [
+        {
+          "label": "Arrien, Anabase d’Alexandre"
+        },
+        {
+          "label": "Wikipédia — Alexandrie",
+          "url": "https://fr.wikipedia.org/wiki/Alexandrie"
+        },
+        {
+          "label": "Wikipédia — Dinocrate de Rhodes",
+          "url": "https://fr.wikipedia.org/wiki/Dinocrate_de_Rhodes"
+        }
+      ],
+      "armies": [
+        {
+          "id": "alexandre",
+          "side": "Armée d’Alexandre",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              35.2,
+              33.27
+            ],
+            [
+              34.46,
+              31.5
+            ],
+            [
+              32.55,
+              31.04
+            ],
+            [
+              31.25,
+              29.85
+            ],
+            [
+              29.92,
+              31.2
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Alexandre III",
+          "person": "alexandre-iii",
+          "role": "Pharaon et fondateur d’Alexandrie",
+          "faction": "grecs-macedoniens",
+          "archetype": "roi",
+          "position": [
+            29.92,
+            31.2
+          ]
+        },
+        {
+          "name": "Ptolémée",
+          "role": "Compagnon du roi, futur roi d’Égypte",
+          "faction": "grecs-macedoniens",
+          "archetype": "general",
+          "position": [
+            31.25,
+            29.85
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gaugameles-331",
+      "year": -331,
+      "title": "Gaugamèles : la bataille décisive",
+      "type": "bataille",
+      "location": [
+        43.4,
+        36.4
+      ],
+      "zoom": 5.5,
+      "summary": "Dans la plaine de Mésopotamie, Alexandre bat Darius et son immense armée par une manœuvre en oblique ; la route de Babylone est ouverte.",
+      "details": "Darius a choisi le terrain : une plaine plate près de **Gaugamèles**, aplanie pour ses chars à faux et sa cavalerie. Il aligne des dizaines de milliers d’hommes (les chiffres antiques, jusqu’à un million, sont exagérés). Le 1er octobre -331, Alexandre, avec 47 000 hommes environ, avance en oblique vers la droite pour attirer la cavalerie perse sur son flanc, tout en gardant une seconde ligne face à l’encerclement.\n\nLes chars sont accueillis par les javelots des troupes légères et par un couloir ouvert dans les rangs. Un vide se crée dans la ligne perse : Alexandre y lance la cavalerie des Compagnons, droit vers Darius. Le Grand Roi s’enfuit pour la deuxième fois. À l’aile gauche, **Parménion** est en difficulté et demande de l’aide ; la bataille tourne tout de même en faveur des Macédoniens.\n\nL’empire achéménide ne se relèvera pas de cette défaite. Alexandre poursuit Darius jusqu’à Arbèles, où il prend le trésor, puis descend sur **Babylone**. À Gaugamèles, il est proclamé « roi d’Asie ».",
+      "consequences": [
+        "L’armée royale perse est détruite ; Darius s’enfuit vers les hautes satrapies.",
+        "Babylone, Suse et Persépolis tombent sans combat ou presque.",
+        "Alexandre est proclamé roi d’Asie par ses troupes.",
+        "Le pouvoir achéménide cesse en pratique de contrôler les grandes villes."
+      ],
+      "territory": "gaugameles-331",
+      "territoryNote": "Macédoine, Thrace méridionale, Ligue de Corinthe ; Asie Mineure, Syrie-Phénicie, Palestine, Égypte, Cyrénaïque ; Mésopotamie du nord jusqu’au Tigre (Gaugamèles, Arbèles). Thessalie et Épire alliées. Hors empire : Babylonie, Suse, Perse, Médie, Bactriane (encore sous Darius ou Bessos).",
+      "sources": [
+        {
+          "label": "Arrien, Anabase d’Alexandre"
+        },
+        {
+          "label": "Wikipédia — Bataille de Gaugamèles",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Gaugamèles"
+        },
+        {
+          "label": "Wikipédia — Darius III",
+          "url": "https://fr.wikipedia.org/wiki/Darius_III"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Armée macédonienne et alliée",
+          "Armée du Grand Roi Darius III"
+        ],
+        "commanders": [
+          "Alexandre III",
+          "Parménion",
+          "Darius III",
+          "Bessos"
+        ],
+        "outcome": "Victoire décisive d’Alexandre ; fuite de Darius",
+        "forces": "Environ 47 000 Macédoniens ; 100 000 Perses ou plus (estimations modernes, contre 250 000 à 1 million selon les Anciens)",
+        "losses": "Environ 1 000 Macédoniens ; plusieurs dizaines de milliers de Perses (chiffres antiques, peu fiables)"
+      },
+      "armies": [
+        {
+          "id": "alexandre",
+          "side": "Armée d’Alexandre",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              29.92,
+              31.2
+            ],
+            [
+              32.55,
+              31.04
+            ],
+            [
+              35.2,
+              33.27
+            ],
+            [
+              38.1,
+              35.95
+            ],
+            [
+              43.4,
+              36.4
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée perse",
+          "faction": "parthes-perses",
+          "path": [
+            [
+              44.6,
+              36.3
+            ],
+            [
+              44,
+              36.4
+            ],
+            [
+              43.4,
+              36.4
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Darius III",
+          "person": "darius-iii",
+          "role": "Grand Roi, vaincu une seconde fois",
+          "faction": "parthes-perses",
+          "archetype": "roi",
+          "position": [
+            43.9,
+            36.35
+          ]
+        },
+        {
+          "name": "Parménion",
+          "person": "parmenion",
+          "role": "Commandant de l’aile gauche",
+          "faction": "grecs-macedoniens",
+          "archetype": "general",
+          "position": [
+            43.15,
+            36.35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "persepolis-330",
+      "year": -330,
+      "title": "Babylone, Suse, Persépolis",
+      "type": "chute",
+      "location": [
+        52.89,
+        29.93
+      ],
+      "zoom": 5,
+      "summary": "Les capitales achéménides ouvrent leurs portes ; Alexandre s’empare des trésors et laisse brûler le palais de Persépolis.",
+      "details": "Après Gaugamèles, **Babylone** ouvre ses portes : le gouverneur Mazaios s’y rend et conserve un poste. Alexandre y rétablit le culte de Mardouk et distribue des récompenses. À **Suse**, il trouve des milliers de talents d’argent et d’or, qui lui donnent les moyens de payer l’armée et de frapper monnaie à grande échelle.\n\nIl force ensuite les **Portes persiques**, défendues par le satrape Ariobarzane, et entre à **Persépolis** au début de -330. La capitale cérémonielle des rois achéménides est livrée au pillage. L’immense trésor est emporté avec des milliers de mulets et de chameaux. Après un banquet bien arrosé, sur l’initiative de la courtisane Thaïs d’après certains récits, le palais est incendié. Les motifs de l’incendie sont discutés : revanche pour l’Acropole d’Athènes brûlée par Xerxès, ou geste politique pour signifier la fin de la guerre panhellénique.\n\nAlexandre laisse une garnison puis marche vers le nord, à la poursuite de Darius.",
+      "consequences": [
+        "Les trésors de Babylone, de Suse et de Persépolis financent la suite de la conquête.",
+        "La monnaie d’argent d’Alexandre est frappée en grandes quantités.",
+        "L’incendie du palais de Persépolis marque symboliquement la fin de la guerre de revanche.",
+        "Les satrapes perses ralliés sont maintenus aux côtés de gouverneurs macédoniens."
+      ],
+      "territory": "persepolis-330",
+      "territoryNote": "Macédoine, Thrace méridionale, Ligue de Corinthe ; Asie Mineure, Syrie-Phénicie, Égypte ; Mésopotamie et Babylonie (Babylone), Susiane (Suse) et Perse (Persépolis, Pasargades) jusqu’aux Portes persiques. Thessalie et Épire alliées. Hors empire : Médie, Parthie, Hyrcanie, Bactriane (en fuite avec Darius).",
+      "sources": [
+        {
+          "label": "Arrien, Anabase d’Alexandre"
+        },
+        {
+          "label": "Wikipédia — Persépolis",
+          "url": "https://fr.wikipedia.org/wiki/Persépolis"
+        },
+        {
+          "label": "Wikipédia — Babylone",
+          "url": "https://fr.wikipedia.org/wiki/Babylone"
+        }
+      ],
+      "armies": [
+        {
+          "id": "alexandre",
+          "side": "Armée d’Alexandre",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              43.4,
+              36.4
+            ],
+            [
+              44.42,
+              32.54
+            ],
+            [
+              48.24,
+              32.19
+            ],
+            [
+              50.9,
+              30.3
+            ],
+            [
+              52.89,
+              29.93
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Alexandre III",
+          "person": "alexandre-iii",
+          "role": "Roi d’Asie à Persépolis",
+          "faction": "grecs-macedoniens",
+          "archetype": "roi",
+          "position": [
+            52.89,
+            29.93
+          ]
+        },
+        {
+          "name": "Parménion",
+          "person": "parmenion",
+          "role": "Garde le trésor d’Ecbatane",
+          "faction": "grecs-macedoniens",
+          "archetype": "general",
+          "position": [
+            48.51,
+            34.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "darius-330",
+      "year": -330,
+      "title": "La mort de Darius III",
+      "type": "chute",
+      "location": [
+        55,
+        36.1
+      ],
+      "zoom": 5,
+      "summary": "Poursuivi par Alexandre, Darius est capturé puis tué par le satrape Bessos ; la dynastie achéménide s’éteint.",
+      "details": "Darius s’était replié sur **Ecbatane**, la capitale de Médie, avec le reste de ses troupes. À l’approche d’Alexandre au printemps -330, il continue vers l’est. L’armée de Darius se désagrège. Le satrape de Bactriane, **Bessos**, et d’autres nobles le saisissent, l’enchaînent et le traînent avec eux.\n\nAlexandre force les étapes, par les Portes caspiennes, avec ses troupes les plus rapides. Peu avant **Hécatompylos**, en juillet -330, ses éclaireurs retrouvent le char du roi. Darius gît, blessé à mort. Bessos et ses partisans se sont enfuis. Le Grand Roi a cinquante ans environ et règne depuis six ans.\n\nAlexandre fait rendre à Darius des funérailles royales à Persépolis et se présente comme son successeur légitime. Il garde les satrapes persans qui se rallient et adopte une partie du protocole de la cour. Bessos, de son côté, prend le nom d’**Artaxerxès V** en Bactriane. Une partie des soldats macédoniens ressent comme une trahison cette orientalisation de leur chef.",
+      "consequences": [
+        "La dynastie des Achéménides s’éteint avec Darius III.",
+        "Alexandre se pose en successeur légitime des rois de Perse et organise des funérailles royales.",
+        "Les Macédoniens commencent à reprocher au roi son adoption du protocole de cour persan.",
+        "Bessos se proclame roi en Bactriane et force Alexandre à poursuivre la conquête vers l’est."
+      ],
+      "territory": "darius-330",
+      "territoryNote": "Macédoine, Thrace méridionale, Ligue de Corinthe ; Asie Mineure, Syrie-Phénicie, Égypte, Mésopotamie, Susiane, Perse, Médie (Ecbatane) et Parthie occidentale jusqu’à Hécatompylos. Thessalie et Épire alliées. Hors empire : Hyrcanie, Arie, Bactriane et Sogdiane sous Bessos.",
+      "sources": [
+        {
+          "label": "Arrien, Anabase d’Alexandre"
+        },
+        {
+          "label": "Wikipédia — Darius III",
+          "url": "https://fr.wikipedia.org/wiki/Darius_III"
+        },
+        {
+          "label": "Wikipédia — Bessos",
+          "url": "https://fr.wikipedia.org/wiki/Bessos"
+        }
+      ],
+      "armies": [
+        {
+          "id": "alexandre",
+          "side": "Armée d’Alexandre",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              52.89,
+              29.93
+            ],
+            [
+              48.51,
+              34.8
+            ],
+            [
+              51.4,
+              35.6
+            ],
+            [
+              54.35,
+              36.17
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Darius III",
+          "person": "darius-iii",
+          "role": "Dernier Grand Roi achéménide",
+          "faction": "parthes-perses",
+          "archetype": "roi",
+          "position": [
+            55.4,
+            36.15
+          ]
+        },
+        {
+          "name": "Alexandre III",
+          "person": "alexandre-iii",
+          "role": "Roi, qui couvre le défunt de son manteau",
+          "faction": "grecs-macedoniens",
+          "archetype": "roi",
+          "quote": "Il couvrit le corps de son manteau (selon Plutarque)",
+          "position": [
+            54.2,
+            36.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iaxarte-329",
+      "year": -329,
+      "title": "Sogdiane : l’Iaxarte et les Scythes",
+      "type": "bataille",
+      "location": [
+        69.6,
+        40.28
+      ],
+      "zoom": 5.5,
+      "summary": "Traversée de l’Hindou Kouch, poursuite de Bessos, fondation d’Alexandrie Eschatè sur l’Iaxarte et victoire sur les Scythes.",
+      "details": "Au printemps -329, Alexandre franchit l’**Hindou Kouch** en plein hiver finissant, perdant beaucoup d’hommes de froid et de faim. Il passe en **Bactriane**, qui se rallie à lui, et traverse l’**Oxus** (Amou-Daria). **Bessos**, trahi par les siens, est livré, puis mutilé et exécuté selon la coutume perse. Alexandre atteint **Marakanda** (Samarcande).\n\nSur le fleuve **Iaxarte** (Syr-Daria), limite extrême du monde perse, il fonde **Alexandrie Eschatè**, « la dernière », près de l’actuelle Khodjent. Les Sogdiens se soulèvent, derrière **Spitaménès**, et massacrent des garnisons. Alexandre, blessé à la jambe lors d’un combat, écrase en quelques jours les cités révoltées, puis affronte des **Scythes** nomades sur la rive nord du fleuve. Leurs archers à cheval sont dispersés par une manœuvre combinant machines et cavalerie.\n\nLa guerre en Sogdiane dure deux ans et prend la forme d’une guérilla qui oblige à de nombreuses colonnes mobiles. En -328, Alexandre tue Cleitos le Noir lors d’un banquet à Marakanda, un acte qui reste l’un des plus sombres de son règne.",
+      "consequences": [
+        "Bessos est capturé et exécuté ; la Bactriane se soumet.",
+        "Alexandrie Eschatè (Khodjent) est fondée à l’extrémité nord-est de l’empire.",
+        "La Sogdiane se soulève autour de Spitaménès : une guérilla de deux ans commence.",
+        "Les Scythes d’au-delà de l’Iaxarte sont repoussés."
+      ],
+      "territory": "iaxarte-329",
+      "territoryNote": "Macédoine, Ligue de Corinthe, Asie Mineure, Syrie-Phénicie, Égypte, Mésopotamie, Perse, Médie, Parthie, Hyrcanie, Arie (Hérat), Drangiane, Arachosie ; Bactriane et Sogdiane méridionale jusqu’à l’Iaxarte. Vassaux : tribus locales ralliées. Hors empire : steppes scythes au nord de l’Iaxarte, Inde.",
+      "sources": [
+        {
+          "label": "Arrien, Anabase d’Alexandre"
+        },
+        {
+          "label": "Wikipédia — Syr Daria",
+          "url": "https://fr.wikipedia.org/wiki/Syr_Daria"
+        },
+        {
+          "label": "Wikipédia — Scythes",
+          "url": "https://fr.wikipedia.org/wiki/Scythes"
+        },
+        {
+          "label": "Wikipédia — Bessos",
+          "url": "https://fr.wikipedia.org/wiki/Bessos"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Armée macédonienne",
+          "Scythes nomades et Sogdiens révoltés"
+        ],
+        "commanders": [
+          "Alexandre III",
+          "Cratère",
+          "Spitaménès"
+        ],
+        "outcome": "Victoire macédonienne sur la rive nord de l’Iaxarte",
+        "forces": "Effectifs inconnus",
+        "losses": "Pertes scythes importantes ; pertes macédoniennes faibles (selon Arrien)"
+      },
+      "armies": [
+        {
+          "id": "alexandre",
+          "side": "Armée d’Alexandre",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              54.35,
+              36.17
+            ],
+            [
+              62.2,
+              34.35
+            ],
+            [
+              69.3,
+              35
+            ],
+            [
+              66.9,
+              36.76
+            ],
+            [
+              66.96,
+              39.65
+            ],
+            [
+              69.6,
+              40.28
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Scythes",
+          "faction": "scythes",
+          "path": [
+            [
+              70.2,
+              41.2
+            ],
+            [
+              69.8,
+              40.8
+            ],
+            [
+              69.6,
+              40.28
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Spitaménès",
+          "person": "spitamenes",
+          "role": "Chef de la révolte sogdienne",
+          "faction": "scythes",
+          "archetype": "chef-barbare",
+          "position": [
+            66.96,
+            39.65
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roxane-327",
+      "year": -327,
+      "title": "Roxane et le Rocher de Sogdiane",
+      "type": "politique",
+      "location": [
+        67.2,
+        38.3
+      ],
+      "zoom": 5,
+      "summary": "Spitaménès est tué par les siens en -328 ; Alexandre prend le Rocher de Sogdiane et épouse Roxane, fille d’un noble bactrien.",
+      "details": "Spitaménès a tenu la Sogdiane pendant deux ans, avec une armée de cavaliers sogdiens et massagètes. Fin -328, abandonné par ses alliés scythes qui veulent la paix, il est assassiné, et sa tête est envoyée à Alexandre. Reste à soumettre les forteresses des seigneurs locaux, perchées sur des rochers.\n\nAu printemps -327, Alexandre assiège le **Rocher de Sogdiane**, tenu par Oxyartès. Selon Arrien, il demande aux soldats les plus agiles de gravir la paroi à la corde, ce qui terrifie la garnison. Elle se rend. Parmi les prisonniers se trouve **Roxane**, fille d’Oxyartès, dont la beauté est vantée par les sources. Alexandre l’épouse ; le mariage scelle l’accord avec la noblesse locale.\n\nLe lieu exact du Rocher est discuté. Le roi tente d’imposer à ses compagnons la **proskynèse**, prosternation devant le roi à la mode persane, ce qui provoque des protestations, surtout de l’historien Callisthène, neveu d’Aristote, qui sera arrêté peu après. C’est aussi le moment de la conspiration des pages. L’armée se prépare à passer en Inde.",
+      "consequences": [
+        "La Sogdiane et la Bactriane sont pacifiées par un mariage avec la noblesse locale.",
+        "Roxane devient la première épouse du roi ; son fils posthume, Alexandre IV, sera fait roi nominal.",
+        "La proskynèse, imposée à la cour, crée une rupture avec une partie des Macédoniens.",
+        "L’armée se tourne vers l’Inde à l’été -327."
+      ],
+      "territory": "roxane-327",
+      "territoryNote": "Macédoine, Ligue de Corinthe, Asie Mineure, Syrie-Phénicie, Égypte, Mésopotamie, Perse, Médie, Parthie, Arie, Arachosie, Bactriane et Sogdiane (Marakanda, Rocher de Sogdiane), Alexandrie Eschatè sur l’Iaxarte. Vassaux : seigneurs bactriens ralliés. Hors empire : Inde, steppes scythes.",
+      "sources": [
+        {
+          "label": "Arrien, Anabase d’Alexandre"
+        },
+        {
+          "label": "Wikipédia — Roxane",
+          "url": "https://fr.wikipedia.org/wiki/Roxane"
+        },
+        {
+          "label": "Wikipédia — Spitaménès",
+          "url": "https://fr.wikipedia.org/wiki/Spitaménès"
+        }
+      ],
+      "armies": [
+        {
+          "id": "alexandre",
+          "side": "Armée d’Alexandre",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              69.6,
+              40.28
+            ],
+            [
+              66.96,
+              39.65
+            ],
+            [
+              67.2,
+              38.3
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Roxane",
+          "person": "roxane",
+          "role": "Épouse bactrienne d’Alexandre",
+          "faction": "parthes-perses",
+          "archetype": "imperatrice",
+          "position": [
+            67.2,
+            38.3
+          ]
+        },
+        {
+          "name": "Alexandre III",
+          "person": "alexandre-iii",
+          "role": "Roi épousant la fille d’un seigneur local",
+          "faction": "grecs-macedoniens",
+          "archetype": "roi",
+          "position": [
+            67.35,
+            38.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hydaspe-326",
+      "year": -326,
+      "title": "L’Hydaspe contre Pôros",
+      "type": "bataille",
+      "location": [
+        73.65,
+        32.93
+      ],
+      "zoom": 5.5,
+      "summary": "Alexandre traverse l’Hydaspe sous l’orage et bat le roi Pôros et ses éléphants ; il le laisse régner en vassal.",
+      "details": "À l’été -327, Alexandre franchit l’Hindou Kouch, descend la vallée de Kaboul et atteint l’**Indus**, qu’il traverse à Attock avec l’aide de **Taxile**, roi de Taxila, allié opposé à Pôros. Début -326, les Macédoniens arrivent sur l’**Hydaspe** (la Jhelum), où le roi **Pôros** les attend sur l’autre rive avec 30 000 fantassins, 4 000 cavaliers, des chars et environ 200 éléphants.\n\nAlexandre feint de chercher un gué, puis traverse de nuit, sous un orage de mousson, à une vingtaine de kilomètres en amont, avec la moitié de ses troupes. La cavalerie indienne est battue ; les éléphants, affolés par les archers et les javelots, piétinent leur propre infanterie. Pôros, blessé, combat jusqu’au bout. Quand Alexandre lui demande comment il veut être traité, il aurait répondu : « en roi ».\n\nAlexandre lui rend son royaume, élargi, et fonde deux villes : **Nicée** et **Bouképhala**, en souvenir de son cheval Bucéphale, mort après la bataille. C’est la dernière grande bataille rangée du règne.",
+      "consequences": [
+        "Pôros est confirmé roi, devenu vassal avec un territoire agrandi.",
+        "Le Pendjab passe sous contrôle macédonien ; Nicée et Bouképhala sont fondées.",
+        "L’armée découvre le combat contre les éléphants et en récupère plusieurs.",
+        "Les pertes et la mousson fatiguent l’armée et préparent la mutinerie de l’Hyphase."
+      ],
+      "territory": "hydaspe-326",
+      "territoryNote": "Macédoine, Ligue de Corinthe, Asie Mineure, Syrie-Phénicie, Égypte, Mésopotamie, Perse, Médie, Bactriane-Sogdiane ; Gandhara et vallée de l’Indus jusqu’à l’Hydaspe. Vassaux : Taxila (Taxile) et royaume de Pôros (Pendjab), conservés après la victoire. Hors empire : Inde du Gange (Nandas), Mallois.",
+      "sources": [
+        {
+          "label": "Arrien, Anabase d’Alexandre"
+        },
+        {
+          "label": "Wikipédia — Bataille de l’Hydaspe",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_l'Hydaspe"
+        },
+        {
+          "label": "Wikipédia — Pôros",
+          "url": "https://fr.wikipedia.org/wiki/Pôros"
+        },
+        {
+          "label": "Wikipédia — Taxila",
+          "url": "https://fr.wikipedia.org/wiki/Taxila"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Armée macédonienne et alliés indiens",
+          "Royaume de Pôros"
+        ],
+        "commanders": [
+          "Alexandre III",
+          "Cratère",
+          "Taxile",
+          "Pôros"
+        ],
+        "outcome": "Victoire macédonienne ; Pôros, vaincu, est maintenu comme roi vassal",
+        "forces": "Environ 40 000 Macédoniens et alliés ; environ 30 000 fantassins, 4 000 cavaliers, 200 éléphants indiens (estimations)",
+        "losses": "Environ 1 000 Macédoniens ; plus de 10 000 Indiens, selon Arrien"
+      },
+      "armies": [
+        {
+          "id": "alexandre",
+          "side": "Armée d’Alexandre",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              67.2,
+              38.3
+            ],
+            [
+              66.9,
+              36.76
+            ],
+            [
+              69.3,
+              35
+            ],
+            [
+              71.1,
+              34.1
+            ],
+            [
+              72.25,
+              33.9
+            ],
+            [
+              72.82,
+              33.74
+            ],
+            [
+              73.65,
+              32.93
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Pôros",
+          "faction": "indiens",
+          "path": [
+            [
+              74.2,
+              32.5
+            ],
+            [
+              73.9,
+              32.75
+            ],
+            [
+              73.65,
+              32.93
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Pôros",
+          "person": "poros",
+          "role": "Roi du Pendjab, vaincu mais respecté",
+          "faction": "indiens",
+          "archetype": "roi",
+          "quote": "Traite-moi en roi (selon Arrien et Plutarque)",
+          "position": [
+            73.85,
+            32.8
+          ]
+        },
+        {
+          "name": "Alexandre III",
+          "person": "alexandre-iii",
+          "role": "Vainqueur de l’Hydaspe",
+          "faction": "grecs-macedoniens",
+          "archetype": "roi",
+          "position": [
+            73.4,
+            32.98
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hyphase-325",
+      "year": -325,
+      "title": "L’Hyphase : la mutinerie et la Gédrosie",
+      "type": "politique",
+      "location": [
+        75,
+        31.45
+      ],
+      "zoom": 4.5,
+      "summary": "L’armée refuse d’aller plus loin que l’Hyphase ; Alexandre rentre par l’Indus et fait traverser à ses troupes le désert de Gédrosie.",
+      "details": "Après l’Hydaspe, Alexandre continue vers l’est, soumet le Pendjab et atteint l’**Hyphase** (Beas), au seuil de l’empire des Nandas, dont on dit qu’il aligne de nombreux éléphants. Les soldats, épuisés par huit années de campagne et par la mousson, refusent d’aller plus loin. Le général **Cénos** parle en leur nom. Alexandre se retire sous sa tente, puis cède. Il fait élever douze autels et fait demi-tour.\n\nIl redescend l’Indus, combat les **Malliens**, où il est grièvement blessé à la poitrine à Multan, et atteint le delta. Une flotte commandée par **Néarque** repart par la mer. Le gros de l’armée suit la côte à l’automne -325 par le désert de **Gédrosie**, route que la tradition présente comme un défi : réussir là où Sémiramis et Cyrus auraient échoué. La marche est une catastrophe : chaleur, soif, crues soudaines. Une grande partie des suiveurs et du matériel est perdue ; les estimations de morts vont de 10 000 à plus de 40 000 selon les sources.\n\nLe roi rejoint la **Carmanie** et retrouve les colonnes et la flotte, avant de se préparer à régler les comptes avec les satrapes infidèles.",
+      "consequences": [
+        "La conquête s’arrête à l’Hyphase : la limite orientale de l’empire est fixée.",
+        "Le Sind est soumis et des garnisons sont laissées sur l’Indus.",
+        "La traversée de la Gédrosie coûte très cher à l’armée et aux civils.",
+        "Au retour, Alexandre punit les satrapes et gouverneurs qui avaient abusé de leur absence."
+      ],
+      "territory": "hyphase-325",
+      "territoryNote": "Macédoine, Ligue de Corinthe, Asie Mineure, Syrie-Phénicie, Égypte, Mésopotamie, Perse, Médie, Bactriane-Sogdiane, Gandhara, vallée de l’Indus et Pendjab jusqu’à l’Hyphase, Sind (Patala). Vassaux : royaumes de Pôros et de Taxila. Hors empire : Mallois et peuples de l’Inde du Gange (Nandas) ; désert de Gédrosie traversé.",
+      "sources": [
+        {
+          "label": "Arrien, Anabase d’Alexandre"
+        },
+        {
+          "label": "Plutarque, Vie d’Alexandre"
+        },
+        {
+          "label": "Wikipédia — Gédrosie",
+          "url": "https://fr.wikipedia.org/wiki/Gédrosie"
+        },
+        {
+          "label": "Wikipédia — Hyphase",
+          "url": "https://fr.wikipedia.org/wiki/Hyphase"
+        }
+      ],
+      "armies": [
+        {
+          "id": "alexandre",
+          "side": "Armée d’Alexandre",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              73.65,
+              32.93
+            ],
+            [
+              75,
+              31.45
+            ],
+            [
+              71.47,
+              30.2
+            ],
+            [
+              67.9,
+              24.75
+            ],
+            [
+              64.5,
+              25.4
+            ],
+            [
+              60.4,
+              27.2
+            ],
+            [
+              57.07,
+              30.28
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Alexandre III",
+          "person": "alexandre-iii",
+          "role": "Roi, forcé de renoncer à l’est",
+          "faction": "grecs-macedoniens",
+          "archetype": "roi",
+          "position": [
+            75,
+            31.45
+          ]
+        }
+      ]
+    },
+    {
+      "id": "suse-324",
+      "year": -324,
+      "title": "Les noces de Suse",
+      "type": "politique",
+      "location": [
+        48.24,
+        32.19
+      ],
+      "zoom": 5,
+      "summary": "Alexandre marie quatre-vingts de ses officiers à des Perses, épouse deux princesses achéménides et rêve d’un empire mixte.",
+      "details": "De retour en Perse en -324, Alexandre découvre que plusieurs satrapes et gouverneurs se sont comportés en tyrans ; il en fait exécuter certains. À **Pasargades**, il fait restaurer le tombeau de Cyrus, profané. À **Suse**, au printemps, il organise des noces collectives en style perse : environ quatre-vingts officiers macédoniens épousent des filles de la noblesse iranienne. Lui-même prend pour épouses **Stateira**, fille de Darius, et Parysatis, fille d’Artaxerxès III. **Héphaistion** épouse une autre fille de Darius.\n\nLe geste vise à fusionner les élites. Il fait aussi intégrer 30 000 jeunes Perses, les **Épigones**, formés à la macédonienne. À **Opis**, sur le Tigre, la vieille armée macédonienne se mutine, jalouse du rôle accordé aux Perses. Alexandre renvoie 10 000 vétérans comblés de cadeaux, sous la conduite de Cratère. Les soldats se réconcilient au cours d’un banquet de réconciliation où, dit-on, Alexandre prie pour une concorde entre Macédoniens et Perses.\n\nEn même temps, il ordonne aux cités grecques d’accueillir leurs exilés, décision que beaucoup jugent contraire à la Ligue de Corinthe.",
+      "consequences": [
+        "Mariages collectifs : une élite macédono-perse est censée naître.",
+        "Trente mille Épigones perses sont intégrés à l’armée.",
+        "La mutinerie d’Opis révèle le malaise des vétérans macédoniens.",
+        "Le décret sur le retour des exilés irrite les cités grecques."
+      ],
+      "territory": "suse-324",
+      "territoryNote": "Macédoine (régence d’Antipatros), Ligue de Corinthe, Asie Mineure, Syrie-Phénicie, Égypte, Cyrénaïque, Mésopotamie, Susiane, Perse, Médie, Parthie, Arie, Arachosie, Bactriane-Sogdiane, Gandhara et Indus jusqu’à l’Hyphase ; Sind et Gédrosie côtière. Vassaux : Pôros et Taxile. Hors empire : Arabie, steppes scythes.",
+      "sources": [
+        {
+          "label": "Arrien, Anabase d’Alexandre"
+        },
+        {
+          "label": "Plutarque, Vie d’Alexandre"
+        },
+        {
+          "label": "Wikipédia — Noces de Suse",
+          "url": "https://fr.wikipedia.org/wiki/Noces_de_Suse"
+        }
+      ],
+      "armies": [
+        {
+          "id": "alexandre",
+          "side": "Armée d’Alexandre",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              57.07,
+              30.28
+            ],
+            [
+              53.17,
+              30.19
+            ],
+            [
+              52.89,
+              29.93
+            ],
+            [
+              48.24,
+              32.19
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Héphaistion",
+          "person": "hephaistion",
+          "role": "Ami et second du roi, marié à Drypétis",
+          "faction": "grecs-macedoniens",
+          "archetype": "general",
+          "position": [
+            48.35,
+            32.1
+          ]
+        },
+        {
+          "name": "Alexandre III",
+          "person": "alexandre-iii",
+          "role": "Roi, époux de Stateira",
+          "faction": "grecs-macedoniens",
+          "archetype": "roi",
+          "position": [
+            48.24,
+            32.19
+          ]
+        }
+      ]
+    },
+    {
+      "id": "babylone-323",
+      "year": -323,
+      "title": "Mort à Babylone",
+      "type": "chute",
+      "location": [
+        44.42,
+        32.54
+      ],
+      "zoom": 5,
+      "summary": "Alexandre meurt à Babylone à trente-deux ans, sans héritier désigné ; ses généraux se partageront l’empire.",
+      "details": "À l’automne -324, **Héphaistion** meurt à Ecbatane et Alexandre, accablé, lui fait construire un bûcher monumental à Babylone. Au printemps -323, le roi prépare une expédition en **Arabie** et une exploration de la mer Caspienne. Le 29 mai environ, après un banquet, il tombe malade avec une forte fièvre. Il meurt le 10 ou le 11 juin, à trente-deux ans, dans le palais de **Nabuchodonosor**.\n\nLes causes de la mort restent discutées : paludisme, typhoïde, pancréatite, alcoolisme ou empoisonnement, thèse popularisée par les rumeurs de l’époque. Alexandre n’a pas désigné de successeur. À la question de savoir à qui il laissait l’empire, il aurait répondu « au plus fort ». Son anneau est remis à **Perdiccas**.\n\nLes généraux, appelés **Diadoques**, se déchirent. Roxane, enceinte, donne naissance à **Alexandre IV**, associé au trône avec Philippe Arrhidée. La régence est confiée à Perdiccas, puis l’empire éclate : Ptolémée garde l’Égypte, Séleucos prend la Babylonie, Antigone l’Asie Mineure.",
+      "consequences": [
+        "L’empire reste sans héritier adulte ; les guerres des Diadoques commencent dès -322.",
+        "Ptolémée prend l’Égypte, qu’il transforme en royaume lagide.",
+        "Le partage de Babylone (-323) répartit les satrapies entre les généraux.",
+        "L’hellénisme se répand de l’Égypte à l’Indus pour trois siècles."
+      ],
+      "territory": "babylone-323",
+      "territoryNote": "Apogée : Macédoine et Thrace, Ligue de Corinthe, Asie Mineure, Syrie-Phénicie, Égypte, Cyrénaïque, Mésopotamie (capitale Babylone), Susiane, Perse, Médie, Parthie, Hyrcanie, Arie, Arachosie, Bactriane-Sogdiane, Gandhara et Indus jusqu’à l’Hyphase, Gédrosie. Vassaux : Pôros, Taxile. Hors empire : Arabie, Carthage, Inde du Gange.",
+      "sources": [
+        {
+          "label": "Arrien, Anabase d’Alexandre"
+        },
+        {
+          "label": "Plutarque, Vie d’Alexandre"
+        },
+        {
+          "label": "Wikipédia — Alexandre le Grand",
+          "url": "https://fr.wikipedia.org/wiki/Alexandre_le_Grand"
+        },
+        {
+          "label": "Wikipédia — Ptolémée Ier",
+          "url": "https://fr.wikipedia.org/wiki/Ptolémée_Ier"
+        }
+      ],
+      "armies": [
+        {
+          "id": "alexandre",
+          "side": "Armée d’Alexandre",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              48.24,
+              32.19
+            ],
+            [
+              48.51,
+              34.8
+            ],
+            [
+              44.42,
+              32.54
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Alexandre III",
+          "person": "alexandre-iii",
+          "role": "Roi mourant à Babylone",
+          "faction": "grecs-macedoniens",
+          "archetype": "roi",
+          "quote": "« Au plus fort » (réponse prêtée par Arrien et Plutarque)",
+          "position": [
+            44.42,
+            32.54
+          ]
+        },
+        {
+          "name": "Roxane",
+          "person": "roxane",
+          "role": "Épouse enceinte du roi",
+          "faction": "parthes-perses",
+          "archetype": "imperatrice",
+          "position": [
+            44.3,
+            32.5
+          ]
+        }
+      ]
+    }
+  ]
+}
