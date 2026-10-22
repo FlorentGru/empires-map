@@ -4,115 +4,132 @@
    50000,
    80000
   ],
-  "uncertain": true
+  "uncertain": true,
+  "biome": "mediterranee"
  },
  "rome/zama-202": {
   "troops": [
    35000,
    40000
   ],
-  "uncertain": true
+  "uncertain": true,
+  "biome": "desert"
  },
  "rome/teutobourg-9": {
   "troops": [
    18000,
    20000
   ],
-  "uncertain": true
+  "uncertain": true,
+  "biome": "foret"
  },
  "alexandre/gaugameles-331": {
   "troops": [
    47000,
    100000
   ],
-  "uncertain": true
+  "uncertain": true,
+  "biome": "desert"
  },
  "alexandre/hydaspe-326": {
   "troops": [
    40000,
    33000
   ],
-  "uncertain": true
+  "uncertain": true,
+  "biome": "prairie"
  },
  "carolingiens/roncevaux-778": {
   "troops": [
    4000,
    6000
   ],
-  "uncertain": true
+  "uncertain": true,
+  "biome": "montagne"
  },
  "china/chibi-208": {
   "troops": [
    200000,
    50000
   ],
-  "uncertain": true
+  "uncertain": true,
+  "biome": "mer"
  },
  "mongols/aindjalout-1260": {
   "troops": [
    12000,
    15000
   ],
-  "uncertain": true
+  "uncertain": true,
+  "biome": "desert"
  },
  "espagne/lepante-1571": {
   "troops": [
    80000,
    85000
   ],
-  "uncertain": true
+  "uncertain": true,
+  "biome": "mer"
  },
  "espagne/rocroi-1643": {
   "troops": [
    23000,
    27000
-  ]
+  ],
+  "biome": "prairie"
  },
  "napoleon/austerlitz-1805": {
   "troops": [
    73000,
    68000,
    17000
-  ]
+  ],
+  "biome": "prairie"
  },
  "saint-empire/austerlitz-1805": {
   "troops": [
    73000,
    68000,
    17000
-  ]
+  ],
+  "biome": "prairie"
  },
  "napoleon/waterloo-1815": {
   "troops": [
    72000,
    68000,
    50000
-  ]
+  ],
+  "biome": "prairie"
  },
  "alexandre/issos-333": {
   "troops": [
    40000,
    80000
   ],
-  "uncertain": true
+  "uncertain": true,
+  "biome": "mediterranee"
  },
  "espagne/pavie-1525": {
   "troops": [
    23000,
    28000
-  ]
+  ],
+  "biome": "prairie"
  },
  "saint-empire/mohacs-1526": {
   "troops": [
    55000,
    25000
-  ]
+  ],
+  "biome": "steppe"
  },
  "napoleon/wagram-1809": {
   "troops": [
    170000,
    150000
-  ]
+  ],
+  "biome": "prairie"
  },
  "china/talas-751": {
   "troops": [
@@ -120,13 +137,15 @@
    30000,
    10000
   ],
-  "uncertain": true
+  "uncertain": true,
+  "biome": "steppe"
  },
  "carolingiens/fontenoy-841": {
   "troops": [
    35000,
    40000
   ],
-  "uncertain": true
+  "uncertain": true,
+  "biome": "prairie"
  }
 }

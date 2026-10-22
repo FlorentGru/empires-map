@@ -9,7 +9,15 @@ export interface BattleTroops {
   troops: number[];
   /** Chiffres très incertains (sources antiques, estimations divergentes). */
   uncertain?: boolean;
+  /** Paysage du lieu : sol, végétation et décor généré autour des éléments du scénario. */
+  biome: BattleBiome;
 }
+
+/**
+ * Paysage d'une bataille, d'après son lieu : désert (Mésopotamie, Levant), steppe, prairie (Europe tempérée),
+ * forêt (Germanie), montagne (cols), méditerranée (garrigue, oliviers), mer (batailles navales).
+ */
+export type BattleBiome = 'desert' | 'steppe' | 'prairie' | 'foret' | 'montagne' | 'mediterranee' | 'mer';
 
 /** data/battles/troops.json : clé « <empireId>/<stepId> ». */
 export type BattleTroopsFile = Record<string, BattleTroops>;
@@ -22,10 +30,14 @@ export type BattlePoint = [number, number];
 
 export type BattleTerrain = 'plaine' | 'colline' | 'foret' | 'riviere' | 'mer' | 'ville';
 
-/** Décor dessiné sous les armées : une forme simple (polygone ou ligne épaisse). */
+/**
+ * Élément de décor dessiné (arbres, maisons, sillons… : src/battle/scenery.ts).
+ * Lignes : `riviere`, `route`, `pont` (2 points : les deux culées). Polygones : tous les autres
+ * (`village` = quelques maisons, `ville` = maisons serrées et clocher, `champ` = sillons, `rochers` = blocs épars).
+ */
 export interface BattleDecor {
-  kind: 'riviere' | 'colline' | 'foret' | 'cote' | 'marais' | 'village' | 'route';
-  /** Polygone (colline, forêt, côte, marais, village) ou ligne (rivière, route). */
+  kind: 'riviere' | 'colline' | 'foret' | 'cote' | 'marais' | 'village' | 'ville' | 'route' | 'champ' | 'rochers' | 'pont';
+  /** Polygone ou ligne, selon `kind`. */
   points: BattlePoint[];
   /** Nom affiché (« Aufide », « plateau de Pratzen »). */
   label?: string;
