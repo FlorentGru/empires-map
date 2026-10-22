@@ -2798,3 +2798,343 @@ kbd {
 .battle__watch:hover {
   background: #8a2f23;
 }
+
+/* ---------- Téléphone : carte plein écran, barre unique, tiroir, frise compacte ---------- */
+/* Hors média : ces éléments n'existent que sur téléphone (rendus si useIsMobile). */
+.bottom-sheet {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  bottom: var(--timeline-h);
+  display: flex;
+  flex-direction: column;
+  background: var(--parchment);
+  border-top: 1px solid var(--parchment-edge);
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 -6px 24px rgba(43, 34, 25, 0.28);
+  /* Zone disponible : entre la barre du haut (≈ 64 px) et la frise. */
+  --sheet-avail: calc(100% - var(--timeline-h) - 64px);
+  max-height: var(--sheet-avail);
+  transition: height 0.25s ease;
+}
+.bottom-sheet--peek {
+  height: auto;
+}
+.bottom-sheet--half {
+  height: calc(var(--sheet-avail) * 0.5);
+}
+.bottom-sheet--full {
+  height: var(--sheet-avail);
+}
+.bottom-sheet--dragging {
+  transition: none;
+}
+.bottom-sheet__handle {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 22px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  cursor: grab;
+  /* Le glissé vertical pilote le tiroir, pas le défilement de la page. */
+  touch-action: none;
+}
+.bottom-sheet__grip {
+  width: 44px;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--parchment-edge);
+}
+.bottom-sheet__content {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+/* Le panneau d'étape se fond dans le tiroir : plus de cadre, d'en-tête repliable ni de position propre. */
+.bottom-sheet .event-panel {
+  position: static;
+  flex: 1;
+  min-height: 0;
+  width: auto;
+  max-height: none;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.bottom-sheet .event-panel__toggle {
+  display: none;
+}
+.bottom-sheet .event-panel__content {
+  padding: 0 16px 16px;
+  animation: none;
+}
+.bottom-sheet .event-panel__title {
+  font-size: 1.3rem;
+}
+/* Replié : date, titre (une ligne) et bouton « Voir la bataille », rien d'autre. */
+.bottom-sheet--peek .event-panel__body {
+  overflow: hidden;
+}
+.bottom-sheet--peek .event-panel__content > :not(header),
+.bottom-sheet--peek .event-panel__summary {
+  display: none;
+}
+.bottom-sheet--peek .event-panel__title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.bottom-sheet--peek .battle__watch {
+  margin-top: 6px;
+}
+
+.mobile-menu__open {
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  box-shadow: var(--shadow);
+}
+.mobile-menu {
+  width: 100vw;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: var(--ink);
+  background: var(--parchment);
+  overscroll-behavior: contain;
+}
+.mobile-menu::backdrop {
+  background: rgba(43, 34, 25, 0.5);
+}
+.mobile-menu__head {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px 10px 16px;
+  background: var(--parchment-strong);
+  border-bottom: 1px solid var(--parchment-edge);
+}
+.mobile-menu__title {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.mobile-menu__body {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 14px 16px 32px;
+}
+.mobile-menu__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.mobile-menu__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 8px 12px;
+  font: inherit;
+  font-weight: 600;
+  text-align: left;
+  color: var(--ink);
+  background: var(--parchment);
+  border: 1px solid var(--parchment-edge);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+.mobile-menu__section h2 {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+.mobile-menu__playback {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.view-controls--inline {
+  justify-content: flex-start;
+}
+.view-controls--inline .btn {
+  box-shadow: none;
+}
+/* Dans le menu, la place ne manque pas : libellés « Mode Histoire » et « Devine la suite » visibles. */
+.mobile-menu .story-btn__label {
+  display: inline;
+}
+/* Le petit panneau de réglages de la narration s'ouvre vers le bas dans le menu (rien au-dessus). */
+.mobile-menu .story-popover {
+  top: calc(100% + 8px);
+  bottom: auto;
+}
+
+.timeline--compact {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px 0 8px;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.timeline--compact .timeline__controls {
+  padding: 0;
+  gap: 4px;
+  flex: none;
+}
+.timeline__mini {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  height: 44px;
+  margin: 0 6px;
+  cursor: pointer;
+  touch-action: none;
+}
+.timeline__mini:has(.timeline__range:focus-visible) {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+.timeline__mini .timeline__power {
+  top: 6px;
+}
+.timeline__mini .timeline__axis {
+  top: 26px;
+}
+.timeline__mini .timeline__cursor {
+  top: 4px;
+  height: 36px;
+}
+.timeline__mini-period {
+  position: absolute;
+  top: 34px;
+  height: 6px;
+  background: var(--period-color, var(--parchment-edge));
+  opacity: 0.55;
+  border-radius: 3px;
+}
+.timeline__mini-step {
+  position: absolute;
+  top: 23px;
+  width: 8px;
+  height: 8px;
+  margin-left: -4px;
+  border-radius: 50%;
+  background: var(--point-color, var(--ink-soft));
+  border: 1px solid var(--parchment);
+}
+.timeline__mini-step--apogee {
+  background: var(--gold);
+}
+.timeline__mini-step--active {
+  top: 19px;
+  width: 16px;
+  height: 16px;
+  margin-left: -8px;
+  border: 2px solid var(--parchment);
+  box-shadow: 0 0 0 2px var(--accent);
+}
+/* Accessible au clavier et aux lecteurs d'écran, invisible : le doigt passe par le conteneur. */
+.timeline__range {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  margin: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --timeline-h: calc(60px + env(safe-area-inset-bottom));
+  }
+
+  /* Barre unique : sélecteur compact à gauche, légende (?) et menu (☰) à droite. */
+  .top-bar {
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    align-items: center;
+    gap: 8px;
+  }
+  .empire-picker--compact {
+    min-width: 0;
+    /* Place pour le bouton de légende (?) et le menu (☰). */
+    flex: 0 1 calc(100% - 100px);
+  }
+  .empire-picker--compact .empire-picker__current {
+    width: 100%;
+    min-width: 0;
+    gap: 8px;
+    padding: 8px 10px;
+  }
+  .empire-picker--compact .empire-picker__text {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    min-width: 0;
+    flex: 1;
+  }
+  .empire-picker--compact .empire-picker__name {
+    font-size: 1.1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .empire-picker--compact .empire-picker__dates {
+    flex: none;
+    font-size: 0.72rem;
+    white-space: nowrap;
+  }
+  .empire-picker--compact .empire-picker__list {
+    width: calc(100vw - 16px);
+  }
+
+  /* Légende : un bouton « ? » rond dans la barre, le contenu s'ouvre dessous, par-dessus la carte. */
+  .legend {
+    top: 8px;
+    right: 56px;
+    left: auto;
+    bottom: auto;
+    z-index: 4;
+    width: auto;
+    max-height: calc(100% - var(--timeline-h) - 24px);
+    align-items: flex-end;
+  }
+  .legend__toggle {
+    flex: none;
+    align-self: flex-end;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    justify-content: center;
+    background: var(--parchment);
+  }
+  .legend__title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+  .legend--open {
+    left: 8px;
+  }
+  .legend--open .legend__body {
+    align-self: stretch;
+  }
+}

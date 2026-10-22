@@ -106,3 +106,10 @@
     animation: none;
   }
 }
+
+/* Téléphone : plus de pastilles Quiz et sage au-dessus de la frise ; la carte passe devant le tiroir. */
+@media (max-width: 767px) {
+  .guess-card {
+    bottom: calc(var(--timeline-h) + 8px);
+  }
+}

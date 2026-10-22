@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import type { FormEvent } from 'react';
 import Markdown from 'react-markdown';
 import { Sage } from './Sage';
+import { OPEN_SAGE_EVENT } from './event';
 import './chat.css';
 
 /** Ce que l'utilisateur regarde, envoyé au guide avec chaque question. */
@@ -49,6 +50,11 @@ export function ChatPanel({ context, goToStep, onOpenQuiz }: Props) {
   useEffect(() => {
     if (open) inputRef.current?.focus();
   }, [open]);
+  useEffect(() => {
+    const onOpen = () => setOpen(true);
+    window.addEventListener(OPEN_SAGE_EVENT, onOpen);
+    return () => window.removeEventListener(OPEN_SAGE_EVENT, onOpen);
+  }, []);
   useEffect(() => {
     logRef.current?.scrollTo({ top: logRef.current.scrollHeight });
   }, [msgs, busy]);

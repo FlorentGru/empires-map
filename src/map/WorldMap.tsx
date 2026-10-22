@@ -105,7 +105,8 @@ let compactMaps = 0;
 function viewPadding(panelOpen: boolean, compact = compactMaps > 0): PaddingOptions {
   if (compact) return { top: 16, left: 16, right: 16, bottom: 16 };
   const mobile = window.innerWidth < 768;
-  if (mobile) return { top: 70, left: 10, right: 10, bottom: panelOpen ? window.innerHeight * 0.45 : 150 };
+  // Téléphone : sous la barre du haut, au-dessus du tiroir (replié ≈ 200 px avec la frise, sinon à mi-hauteur).
+  if (mobile) return { top: 70, left: 10, right: 10, bottom: panelOpen ? window.innerHeight * 0.55 : 200 };
   // La légende ouverte (en bas à gauche) masque une bande de carte : on l'exclut du cadrage.
   const legend = document.querySelector<HTMLElement>('.legend');
   const legendOpen = legend?.querySelector('[aria-expanded="true"]');

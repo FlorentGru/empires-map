@@ -34,7 +34,8 @@ export const EventPanel = memo(function EventPanel({ step, open, onToggle, story
   const bodyRef = useRef<HTMLDivElement>(null);
   const segs = story?.segments ?? [];
   const current = story?.current ?? -1;
-  const reading = (i: number) => (i === current ? ' is-reading' : '');
+  // i = -1 : segment absent (hors mode Histoire), jamais surligné.
+  const reading = (i: number) => (i >= 0 && i === current ? ' is-reading' : '');
   const segText = current >= 0 ? segs[current]?.text : '';
 
   // Défilement doux vers la phrase lue (instantané si mouvement réduit).

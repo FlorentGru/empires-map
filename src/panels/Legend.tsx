@@ -5,6 +5,7 @@ import { inventionIconSvg } from '../map/inventionIcons';
 import { memo, useEffect, useId, useState, type CSSProperties, type ReactNode } from 'react';
 import { loadContemporaries, loadTerritory } from '../data/loadEmpire';
 import { EVENT_TYPES } from '../lib/eventTypes';
+import { isMobileNow } from '../lib/useIsMobile';
 import { DIFF_COLORS } from '../map/diff';
 import { variantFill, variantLine, variantVassal } from '../map/color';
 import { characterSvg, soldierSvg, useSprites } from '../map/sprites';
@@ -62,10 +63,6 @@ function useEntities(empire: Empire, territory: string | undefined): Entity[] {
     };
   }, [empire.id, territory]);
   return names;
-}
-
-function isMobile(): boolean {
-  return typeof window !== 'undefined' && window.innerWidth < 768;
 }
 
 /** Empires contemporains présents à l'étape (couleur + nom), dans l'ordre d'apparition. */
@@ -127,7 +124,7 @@ export const Legend = memo(function Legend({
   inventions = true,
 }: Props) {
   const others = useContemporaryEmpires(empire.id, step?.id, contemporaries);
-  const [open, setOpen] = useState(() => !isMobile());
+  const [open, setOpen] = useState(() => !isMobileNow());
   useSprites();
   const titleId = useId();
   const bodyId = useId();

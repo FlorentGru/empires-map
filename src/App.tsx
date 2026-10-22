@@ -18,8 +18,13 @@ import { chapterAt, periodIndexAt } from './lib/periods';
 import { apogeeStepId } from './lib/apogee';
 import { StepDate } from './panels/StepDate';
 import { useStory } from './story/useStory';
-import { Timeline } from './timeline/Timeline';
-import { GuessCard } from './guess/GuessCard';
+import { SpeedLoop, Timeline } from './timeline/Timeline';
+import { BottomSheet, type SheetSnap } from './panels/BottomSheet';
+import { MobileMenu } from './panels/MobileMenu';
+import { useIsMobile } from './lib/useIsMobile';
+import { StoryButton } from './story/StoryMenu';
+import { OPEN_SAGE_EVENT } from './chat/event';
+import { GuessButton, GuessCard } from './guess/GuessCard';
 import { ChatPanel } from './chat/ChatPanel';
 import type { ChatContext } from './chat/ChatPanel';
 import { clearWorldUrl, DEFAULT_WORLD_YEAR, readWorldYear } from './world/worldUrl';
@@ -231,6 +236,7 @@ export function App() {
         onOpenAllEmpires={openAllEmpires}
         onOpenCompare={() => setCompare({ a: empire.id, b: EMPIRE_INDEX.find((e) => e.id !== empire.id)!.id })}
         onOpenGallery={() => setGalleryOpen(true)}
+        onOpenQuiz={openQuiz}
         onContext={setChatContext}
       />
       <ChatPanel context={chatContext} goToStep={goToStep} onOpenQuiz={openQuiz} />
@@ -269,6 +275,7 @@ function Atlas({
   onOpenAllEmpires,
   onOpenCompare,
   onOpenGallery,
+  onOpenQuiz,
   onContext,
 }: {
   empire: Empire;
@@ -277,8 +284,13 @@ function Atlas({
   onOpenAllEmpires: () => void;
   onOpenCompare: () => void;
   onOpenGallery: () => void;
+  onOpenQuiz: () => void;
   onContext: (c: ChatContext) => void;
 }) {
+  // Téléphone : carte plein écran, une seule barre en haut (menu ☰), tiroir pour l'étape et frise compacte.
+  const mobile = useIsMobile();
+  const [sheet, setSheet] = useState<SheetSnap>('peek');
+  const [menuOpen, setMenuOpen] = useState(false);
   const player = usePlayer(empire.steps.length, initialIndex(empire), (i) => battleStepMs(empire.steps[i]) ?? BASE_STEP_MS);
   const step = empire.steps[player.index];
   // Inventions apparues depuis l'étape précédente (panneau de l'étape).
@@ -316,7 +328,10 @@ function Atlas({
   const [routes, setRoutes] = useState(() => readBool('atlas.routes', true));
   const [disasters, setDisasters] = useState(() => readBool('atlas.disasters', true));
   const [inventions, setInventions] = useState(() => readBool('atlas.inventions', true));
-  const openPanel = useCallback(() => setPanelOpen(true), []);
+  const openPanel = useCallback(() => {
+    setPanelOpen(true);
+    setSheet((s) => (s === 'peek' ? 'half' : s));
+  }, []);
   const story = useStory(player, step, openPanel, empire);
   const storyEnabled = story.controls.enabled;
   const storySilent = story.controls.silent;
@@ -436,7 +451,7 @@ function Atlas({
       <WorldMap
         empire={empire}
         index={player.index}
-        panelOpen={panelOpen}
+        panelOpen={mobile ? sheet !== 'peek' : panelOpen}
         tilted={tilted}
         relief={relief}
         figures={figures}
@@ -452,7 +467,7 @@ function Atlas({
         regionsInteractive={!player.playing && player.asking === null}
       />
 
-      {step && (
+      {step && !mobile && (
         <StepDate
           year={step.year}
           label={empire.periods?.[periodIndexAt(empire.periods, step.year)]?.name ?? empire.name}
@@ -466,70 +481,130 @@ function Atlas({
           onSelect={onSelectEmpire}
           onOpenWorld={() => onOpenWorld(step?.year ?? DEFAULT_WORLD_YEAR)}
           onOpenAllEmpires={onOpenAllEmpires}
+          compact={mobile}
         />
-        <div className="top-bar__right">
-          <ViewControls
-            tilted={tilted}
-            relief={relief}
-            figures={figures}
-            countries2026={countries2026}
-            stateNames={stateNames}
-            neighbors={neighbors}
-            contemporaries={contemporaries}
-            monuments={monuments}
-            routes={routes}
-            disasters={disasters}
-            inventions={inventions}
-            onToggleTilt={toggleTilt}
-            onToggleRelief={toggleRelief}
-            onToggleFigures={toggleFigures}
-            onToggleCountries2026={toggleCountries2026}
-            onToggleStateNames={toggleStateNames}
-            onToggleNeighbors={toggleNeighbors}
-            onToggleContemporaries={toggleContemporaries}
-            onToggleMonuments={toggleMonuments}
-            onToggleRoutes={toggleRoutes}
-            onToggleDisasters={toggleDisasters}
-            onToggleInventions={toggleInventions}
-          />
-          <button type="button" className="btn btn--ghost" onClick={onOpenAllEmpires} title="Tous les empires sur une frise, avec le résumé de chacun">
-            Empires
-          </button>
-          <button type="button" className="btn btn--ghost" onClick={onOpenGallery} aria-haspopup="dialog">
-            Galerie
-          </button>
-          <button
-            type="button"
-            className="btn btn--ghost"
-            onClick={onOpenCompare}
-            title="Comparer cet empire à un autre : cartes, population, économie, armée, politique…"
-          >
-            ⇄ Comparer
-          </button>
-          <button
-            type="button"
-            className="btn btn--ghost"
-            onClick={() => setFeedbackOpen(true)}
-            aria-haspopup="dialog"
-            title="Proposer une idée ou signaler une erreur"
-          >
-            Votre avis
-          </button>
-          <button type="button" className="btn btn--ghost about-btn" onClick={() => setAboutOpen(true)} aria-haspopup="dialog">
-            À propos
-          </button>
-        </div>
+        {mobile ? (
+          <div className="top-bar__right">
+            <MobileMenu
+              open={menuOpen}
+              onOpen={() => setMenuOpen(true)}
+              onClose={() => setMenuOpen(false)}
+              items={[
+                { icon: '📜', label: 'Tous les empires', onClick: onOpenAllEmpires },
+                { icon: '🖼', label: 'Galerie', onClick: onOpenGallery, dialog: true },
+                { icon: '⇄', label: 'Comparer', onClick: onOpenCompare },
+                { icon: '🎓', label: 'Quiz', onClick: onOpenQuiz, dialog: true },
+                { icon: '🧙', label: 'Demander au sage', onClick: () => window.dispatchEvent(new Event(OPEN_SAGE_EVENT)), dialog: true },
+                { icon: '✉', label: 'Votre avis', onClick: () => setFeedbackOpen(true), dialog: true },
+                { icon: 'ℹ', label: 'À propos', onClick: () => setAboutOpen(true), dialog: true },
+              ]}
+              playback={
+                <div className="mobile-menu__playback">
+                  <StoryButton story={story.controls} />
+                  <GuessButton player={player} disabled={storyEnabled} />
+                  <SpeedLoop player={player} story={story.controls} />
+                </div>
+              }
+              view={
+                <ViewControls
+                  inline
+                  tilted={tilted}
+                  relief={relief}
+                  figures={figures}
+                  countries2026={countries2026}
+                  stateNames={stateNames}
+                  neighbors={neighbors}
+                  contemporaries={contemporaries}
+                  monuments={monuments}
+                  routes={routes}
+                  disasters={disasters}
+                  inventions={inventions}
+                  onToggleTilt={toggleTilt}
+                  onToggleRelief={toggleRelief}
+                  onToggleFigures={toggleFigures}
+                  onToggleCountries2026={toggleCountries2026}
+                  onToggleStateNames={toggleStateNames}
+                  onToggleNeighbors={toggleNeighbors}
+                  onToggleContemporaries={toggleContemporaries}
+                  onToggleMonuments={toggleMonuments}
+                  onToggleRoutes={toggleRoutes}
+                  onToggleDisasters={toggleDisasters}
+                  onToggleInventions={toggleInventions}
+                />
+              }
+            />
+          </div>
+        ) : (
+          <div className="top-bar__right">
+            <ViewControls
+              tilted={tilted}
+              relief={relief}
+              figures={figures}
+              countries2026={countries2026}
+              stateNames={stateNames}
+              neighbors={neighbors}
+              contemporaries={contemporaries}
+              monuments={monuments}
+              routes={routes}
+              disasters={disasters}
+              inventions={inventions}
+              onToggleTilt={toggleTilt}
+              onToggleRelief={toggleRelief}
+              onToggleFigures={toggleFigures}
+              onToggleCountries2026={toggleCountries2026}
+              onToggleStateNames={toggleStateNames}
+              onToggleNeighbors={toggleNeighbors}
+              onToggleContemporaries={toggleContemporaries}
+              onToggleMonuments={toggleMonuments}
+              onToggleRoutes={toggleRoutes}
+              onToggleDisasters={toggleDisasters}
+              onToggleInventions={toggleInventions}
+            />
+            <button type="button" className="btn btn--ghost" onClick={onOpenAllEmpires} title="Tous les empires sur une frise, avec le résumé de chacun">
+              Empires
+            </button>
+            <button type="button" className="btn btn--ghost" onClick={onOpenGallery} aria-haspopup="dialog">
+              Galerie
+            </button>
+            <button
+              type="button"
+              className="btn btn--ghost"
+              onClick={onOpenCompare}
+              title="Comparer cet empire à un autre : cartes, population, économie, armée, politique…"
+            >
+              ⇄ Comparer
+            </button>
+            <button
+              type="button"
+              className="btn btn--ghost"
+              onClick={() => setFeedbackOpen(true)}
+              aria-haspopup="dialog"
+              title="Proposer une idée ou signaler une erreur"
+            >
+              Votre avis
+            </button>
+            <button type="button" className="btn btn--ghost about-btn" onClick={() => setAboutOpen(true)} aria-haspopup="dialog">
+              À propos
+            </button>
+          </div>
+        )}
       </div>
 
-      <EventPanel
-        chapter={panelChapter}
-        step={step}
-        open={panelOpen}
-        onToggle={togglePanel}
-        story={panelStory}
-        inventions={stepInventions}
-        empireId={empire.id}
-      />
+      {mobile ? (
+        <BottomSheet snap={sheet} onSnap={setSheet} title={step?.title}>
+          <EventPanel chapter={panelChapter} step={step} open onToggle={togglePanel} story={panelStory} inventions={stepInventions} empireId={empire.id} />
+        </BottomSheet>
+      ) : (
+        <EventPanel
+          chapter={panelChapter}
+          step={step}
+          open={panelOpen}
+          onToggle={togglePanel}
+          story={panelStory}
+          inventions={stepInventions}
+          empireId={empire.id}
+        />
+      )}
       <Legend
         empire={empire}
         step={step}
@@ -541,7 +616,7 @@ function Atlas({
         disasters={disasters}
         inventions={inventions}
       />
-      <Timeline empire={empire} player={player} compare2026={countries2026} story={story.controls} />
+      <Timeline empire={empire} player={player} compare2026={countries2026} story={story.controls} compact={mobile} />
       <GuessCard empire={empire} player={player} />
       <AboutModal open={aboutOpen} onClose={() => setAboutOpen(false)} />
       {battle && (

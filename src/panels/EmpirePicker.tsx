@@ -11,9 +11,19 @@ interface Props {
   onOpenWorld?: () => void;
   /** Ouvre la page « Tous les empires ». */
   onOpenAllEmpires?: () => void;
+  /** Téléphone : nom court et dates sur une seule ligne. */
+  compact?: boolean;
 }
 
 const CATALOG = catalogJson as EmpireCatalogEntry[];
+
+/** Nom court pour le téléphone : « Rome, de la République à Byzance » → « Rome », « L'Empire napoléonien » → « Empire napoléonien ». */
+export function shortEmpireName(name: string): string {
+  return name
+    .split(',')[0]!
+    .replace(/^L['’]/, '')
+    .trim();
+}
 
 /** Groupes par continent (ordre du fichier) ; disponibles d'abord, puis à venir. */
 function groupCatalog(empires: EmpireMeta[]) {
@@ -33,7 +43,7 @@ function groupCatalog(empires: EmpireMeta[]) {
   return [...groups.entries()];
 }
 
-export function EmpirePicker({ empires, current, onSelect, onOpenWorld, onOpenAllEmpires }: Props) {
+export function EmpirePicker({ empires, current, onSelect, onOpenWorld, onOpenAllEmpires, compact = false }: Props) {
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
   const groups = useMemo(() => groupCatalog(empires), [empires]);
@@ -70,7 +80,7 @@ export function EmpirePicker({ empires, current, onSelect, onOpenWorld, onOpenAl
   }, [open]);
 
   return (
-    <div className="empire-picker" ref={rootRef}>
+    <div className={`empire-picker${compact ? ' empire-picker--compact' : ''}`} ref={rootRef}>
       <button
         type="button"
         className="empire-picker__current"
@@ -80,8 +90,8 @@ export function EmpirePicker({ empires, current, onSelect, onOpenWorld, onOpenAl
         onClick={toggleOpen}
       >
         <span className="empire-picker__swatch" style={{ background: current.color }} aria-hidden="true" />
-        <span>
-          <span className="empire-picker__name">{current.name}</span>
+        <span className="empire-picker__text">
+          <span className="empire-picker__name">{compact ? shortEmpireName(current.name) : current.name}</span>
           <span className="empire-picker__dates">
             {formatYear(current.start)} – {formatYear(current.end)}
           </span>
