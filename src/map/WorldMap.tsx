@@ -26,6 +26,7 @@ import { CountriesLayer } from './countriesLayer';
 import { DiffHighlight } from './diff';
 import { EventMarker } from './eventMarker';
 import { FigureLayer } from './figureLayer';
+import { loadSprites } from './sprites';
 import { GLIDE_HANDOFF_MS, GLIDE_MS, GlideLayer } from './glideLayer';
 import { MORPH_MS, MorphLayer } from './morphLayer';
 import { NeighborLayers } from './neighborLayers';
@@ -230,7 +231,10 @@ export function WorldMap({
     // Crochet de test : en dev, ou avec ?e2e dans l'URL (tests Playwright sur le build de production).
     if (import.meta.env.DEV || new URLSearchParams(window.location.search).has('e2e')) (window as unknown as { __map: MapLibreMap }).__map = map;
     let created: MapLayers | null = null;
-    map.on('load', () => {
+    map.on('load', async () => {
+      // Les dessins des figurines sont chargés à part : les calques d'armées et de personnages en ont besoin d'emblée.
+      await loadSprites();
+      if (mapRef.current !== map) return;
       created = {
         // Voisins : tout en bas des calques d'empire (sous territoires et glissement).
         neighbors: new NeighborLayers(map),

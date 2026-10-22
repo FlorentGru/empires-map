@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import type { FormEvent } from 'react';
 import Markdown from 'react-markdown';
-import { Character } from '../figures/characters';
+import { Sage } from './Sage';
 import './chat.css';
 
 /** Ce que l'utilisateur regarde, envoyé au guide avec chaque question. */
@@ -99,7 +99,7 @@ export function ChatPanel({ context, goToStep, onOpenQuiz }: Props) {
         )}
         <button ref={fabRef} type="button" className="chat-fab chat-fab--sage" onClick={() => setOpen(true)} aria-haspopup="dialog">
           <span className="chat-fab__sage" aria-hidden="true">
-            <Character archetype="sage" width={38} height={51} />
+            <Sage width={38} height={51} />
           </span>
           Demander au sage
         </button>
@@ -110,7 +110,7 @@ export function ChatPanel({ context, goToStep, onOpenQuiz }: Props) {
     <section className="chat-panel" role="dialog" aria-label="Guide de l'Atlas" onKeyDown={(e) => e.key === 'Escape' && close()}>
       <div className="chat-panel__head">
         <span className="chat-panel__title">
-          <Character archetype="sage" width={24} height={32} />
+          <Sage width={24} height={32} />
           Le sage de l'Atlas
         </span>
         <button type="button" className="chat-panel__close" onClick={close} aria-label="Fermer le guide">
@@ -133,7 +133,7 @@ export function ChatPanel({ context, goToStep, onOpenQuiz }: Props) {
           return m.role === 'bot' ? (
             <div key={i} className="chat-row">
               <span className="chat-avatar" aria-hidden="true">
-                <Character archetype="sage" width={22} height={29} />
+                <Sage width={22} height={29} />
               </span>
               {msg}
             </div>
@@ -144,7 +144,7 @@ export function ChatPanel({ context, goToStep, onOpenQuiz }: Props) {
         {busy && (
           <div className="chat-thinking" role="status">
             <span className="chat-avatar chat-avatar--thinking" aria-hidden="true">
-              <Character archetype="sage" width={22} height={29} />
+              <Sage width={22} height={29} />
             </span>
             le sage réfléchit…
           </div>
