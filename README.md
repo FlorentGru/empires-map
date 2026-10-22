@@ -33,7 +33,7 @@ Un test par grosse fonctionnalité, pas un test par détail :
 - `npm run test:data` : validation de toutes les données, un contrôle groupé par fichier qui liste toutes les erreurs d'un coup.
 - `npm run test:e2e` : 17 parcours dans Chromium (Playwright), un par fonctionnalité (carte, armées, galerie, comparaison, monde en l'an X, quiz, sage, calques de l'époque…) ; première fois : `npx playwright install chromium`. Ils construisent le site puis le servent sur le port 4173.
 - Un seul test : `npx vitest run tests/unit/march.test.ts -t "<nom>"` ou `npx playwright test e2e/map.spec.ts -g "<nom>"`.
-- `npm run check:bundle` : vérifie que le JavaScript chargé au démarrage reste sous 465 Ko (gzip).
+- `npm run check:bundle` : vérifie que le JavaScript chargé au démarrage reste sous 460 Ko (gzip ; les SVG des figurines sont chargés à la demande, `src/map/sprites.ts`).
 - `npm run lint` (oxlint) et `npm run format` / `format:check` (Prettier) : style du code.
 - Le CI GitHub Actions lance en parallèle les contrôles rapides (types, style, tests unitaires et de données) et les tests dans le navigateur.
 

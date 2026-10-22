@@ -7,7 +7,7 @@ import { loadContemporaries, loadTerritory } from '../data/loadEmpire';
 import { EVENT_TYPES } from '../lib/eventTypes';
 import { DIFF_COLORS } from '../map/diff';
 import { variantFill, variantLine, variantVassal } from '../map/color';
-import { characterSvg, soldierSvg } from '../map/sprites';
+import { characterSvg, soldierSvg, useSprites } from '../map/sprites';
 import type { Archetype, Empire, EventType, Faction, TerritoryProperties, TimelineStep } from '../types';
 
 interface Props {
@@ -128,6 +128,7 @@ export const Legend = memo(function Legend({
 }: Props) {
   const others = useContemporaryEmpires(empire.id, step?.id, contemporaries);
   const [open, setOpen] = useState(() => !isMobile());
+  useSprites();
   const titleId = useId();
   const bodyId = useId();
   const found = useEntities(empire, step?.territory);
