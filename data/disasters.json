@@ -1760,6 +1760,9 @@
    "Royaume de Qin",
    "Royaumes de Zhao, Wei, Han",
    "Royaumes de Chu, Qi, Yan"
+  ],
+  "belligerentEmpires": [
+   "china"
   ]
  },
  {
@@ -1824,6 +1827,10 @@
   "belligerents": [
    "République romaine",
    "Carthage et ses alliés (Hannibal)"
+  ],
+  "belligerentEmpires": [
+   "rome",
+   "carthage"
   ]
  },
  {
@@ -1893,6 +1900,9 @@
    "République romaine (César)",
    "Peuples gaulois (Vercingétorix)",
    "Peuples germaniques"
+  ],
+  "belligerentEmpires": [
+   "rome"
   ]
  },
  {
@@ -1962,6 +1972,9 @@
    "Royaume de Wei (Cao Cao)",
    "Royaume de Shu Han (Liu Bei)",
    "Royaume de Wu (Sun Quan)"
+  ],
+  "belligerentEmpires": [
+   "china"
   ]
  },
  {
@@ -2023,6 +2036,9 @@
    "Dynastie Tang",
    "Rebelles d'An Lushan (Yan)",
    "Ouïghours (alliés des Tang)"
+  ],
+  "belligerentEmpires": [
+   "china"
   ]
  },
  {
@@ -2101,6 +2117,10 @@
    "Jin et Song (Chine)",
    "Khwarezm et califat abbasside",
    "Principautés russes"
+  ],
+  "belligerentEmpires": [
+   "mongols",
+   "china"
   ]
  },
  {
@@ -2176,6 +2196,9 @@
    "Empire ottoman (Bayezid)",
    "Mamelouks d'Égypte",
    "Horde d'Or"
+  ],
+  "belligerentEmpires": [
+   "ottomans"
   ]
  },
  {
@@ -2302,6 +2325,9 @@
    "Dynastie Ming et Ming du Sud",
    "Mandchous (Qing)",
    "Rebelles de Li Zicheng et Zhang Xianzhong"
+  ],
+  "belligerentEmpires": [
+   "china"
   ]
  },
  {
@@ -2361,6 +2387,9 @@
    "Suède",
    "France",
    "Danemark"
+  ],
+  "belligerentEmpires": [
+   "saint-empire"
   ]
  },
  {
@@ -2421,6 +2450,10 @@
   "belligerents": [
    "Prusse, Grande-Bretagne et Hanovre",
    "France, Autriche et Russie"
+  ],
+  "belligerentEmpires": [
+   "britannique",
+   "russie"
   ]
  },
  {
@@ -2500,6 +2533,13 @@
    "Russie",
    "Autriche et Prusse",
    "Espagne"
+  ],
+  "belligerentEmpires": [
+   "napoleon",
+   "britannique",
+   "russie",
+   "espagne",
+   "saint-empire"
   ]
  },
  {
@@ -2561,6 +2601,9 @@
    "Royaume céleste des Taiping",
    "Dynastie Qing",
    "Armée toujours victorieuse (Ward, Gordon)"
+  ],
+  "belligerentEmpires": [
+   "china"
   ]
  },
  {
@@ -2756,6 +2799,9 @@
    "Dynastie Qing",
    "Musulmans hui (Dounganes)",
    "Émirat de Yakub Beg"
+  ],
+  "belligerentEmpires": [
+   "china"
   ]
  }
 ]

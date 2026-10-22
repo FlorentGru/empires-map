@@ -54,6 +54,44 @@ test('catastrophes et routes : la peste noire à Kaffa en 1346, routes tracées'
     .toBeGreaterThan(0);
 });
 
+test('zones de guerre : masquées pour l’empire belligérant, sinon sur les terres et sous les territoires', async ({ page }) => {
+  test.setTimeout(90_000);
+  const warFeatures = (id: string) =>
+    page.evaluate((war) => {
+      const m = (window as any).__map;
+      return m.getLayer('disasters-war-fill')
+        ? m.queryRenderedFeatures({ layers: ['disasters-war-fill'] }).filter((f: any) => f.properties.id === war).length
+        : 0;
+    }, id);
+
+  // Napoléon mène les guerres napoléoniennes : pas de zone (elle doublerait son territoire), mais la pastille reste.
+  await page.goto('/napoleon/wagram-1809/?e2e');
+  await mapReady(page, 'disasters-war-fill');
+  await expect(page.locator('.disaster-marker', { hasText: 'Guerres napoléoniennes' })).toHaveCount(1, { timeout: 30_000 });
+  await page.evaluate(() => (window as any).__map.jumpTo({ center: [12, 49], zoom: 3.5, pitch: 0 }));
+  await page.waitForTimeout(500);
+  expect(await warFeatures('guerres-napoleoniennes')).toBe(0);
+
+  // Les Mongols en 1346 ne font pas la guerre de Cent Ans : zone rendue, calque sous les territoires et les voisins.
+  await page.goto('/?empire=mongols&step=kaffa-1346&e2e');
+  await mapReady(page, 'disasters-war-fill');
+  await expect(page.locator('.disaster-marker', { hasText: 'Guerre de Cent Ans' })).toHaveCount(1, { timeout: 30_000 });
+  await expect
+    .poll(
+      async () => {
+        await page.evaluate(() => (window as any).__map.jumpTo({ center: [1, 47], zoom: 4.5, pitch: 0 }));
+        return warFeatures('guerre-cent-ans');
+      },
+      { timeout: 30_000 },
+    )
+    .toBeGreaterThan(0);
+  const order: string[] = await page.evaluate(() => (window as any).__map.getStyle().layers.map((l: any) => l.id));
+  const at = (id: string) => order.indexOf(id);
+  expect(at('disasters-war-fill')).toBeGreaterThan(at('hillshade'));
+  expect(at('disasters-war-fill')).toBeLessThan(at('neighbors-border'));
+  expect(at('disasters-war-line')).toBeLessThan(at('territory-a-fill'));
+});
+
 test('frise : infobulle au-dessus de tout, aperçu d’une catastrophe hors date qui reste après un glissement', async ({ page }) => {
   test.setTimeout(90_000);
   await page.goto('/?empire=rome&step=republique-509&e2e');

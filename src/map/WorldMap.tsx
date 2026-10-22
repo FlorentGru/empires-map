@@ -603,6 +603,9 @@ export function WorldMap({
     layers?.disasters.setEnabled(disastersOn);
   }, [layers, disastersOn]);
   useEffect(() => {
+    layers?.disasters.setEmpire(empire.id);
+  }, [layers, empire.id]);
+  useEffect(() => {
     layers?.inventions.setEnabled(inventionsOn);
   }, [layers, inventionsOn]);
   useEffect(() => {

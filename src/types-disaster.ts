@@ -40,4 +40,9 @@ export interface Disaster {
   area?: [number, number][];
   /** Guerres : camps ou belligérants principaux. */
   belligerents?: string[];
+  /**
+   * Guerres : ids des empires du catalogue (data/empires-catalog.json) qui forment un camp.
+   * Sur la carte d'un de ces empires, la zone de guerre est masquée (elle doublerait son territoire).
+   */
+  belligerentEmpires?: string[];
 }
