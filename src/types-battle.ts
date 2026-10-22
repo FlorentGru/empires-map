@@ -31,9 +31,19 @@ export interface BattleDecor {
   label?: string;
 }
 
-export type BattleUnitKind = 'infanterie' | 'cavalerie' | 'archers' | 'elephants' | 'navires';
+/**
+ * `artillerie` : canons (une figurine = une pièce avec son servant). Une `infanterie` dont la faction porte
+ * une arme à feu (fusil, arquebuse : voir src/battle/weapons.ts) tire au combat, les `archers` lancent des volées.
+ */
+export type BattleUnitKind = 'infanterie' | 'cavalerie' | 'archers' | 'elephants' | 'navires' | 'artillerie';
 export type BattleFormation = 'ligne' | 'colonne' | 'carre' | 'coin';
 export type BattleUnitState = 'marche' | 'combat' | 'fuite';
+/**
+ * Manière de combattre pendant une phase `combat` :
+ * - `feu` (défaut des unités à distance : armes à feu, archers, artillerie) : sur place, cycle viser → tirer → recharger ;
+ * - `baionnette` : charge, arme pointée en avant, sans tirer (assaut, mêlée) ; pour l'infanterie sans arme à feu, c'est la mêlée.
+ */
+export type BattleAction = 'feu' | 'baionnette';
 
 /** Un bloc de troupes : ses figurines se répartissent autour de sa position selon sa formation. */
 export interface BattleUnit {
@@ -55,6 +65,8 @@ export interface BattleMove {
   state?: BattleUnitState;
   /** Part des effectifs de départ perdue à la fin de la phase (cumulée, de 0 à 1). */
   losses?: number;
+  /** Manière de combattre si `state` vaut `combat` (défaut : `feu` pour les unités à distance, sinon mêlée). */
+  action?: BattleAction;
 }
 
 export interface BattlePhase {
