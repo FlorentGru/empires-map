@@ -1,0 +1,382 @@
+{
+  "empire": "carolingiens",
+  "periods": [
+    {
+      "id": "pepin-charlemagne",
+      "name": "Pépin et Charlemagne",
+      "start": 751,
+      "end": 814,
+      "population": {
+        "total": {
+          "value": 15000000,
+          "low": 10000000,
+          "high": 20000000,
+          "year": 800,
+          "note": "Estimation reconstruite : aucun recensement ; l'empire couvre environ 1,1 million de km².",
+          "source": {
+            "label": "Wikipédia : Empire carolingien",
+            "url": "https://fr.wikipedia.org/wiki/Empire_carolingien"
+          }
+        },
+        "cities": [
+          {
+            "name": "Aix-la-Chapelle",
+            "population": {
+              "value": 3000,
+              "low": 2000,
+              "high": 8000,
+              "year": 800,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Aix-la-Chapelle",
+                "url": "https://fr.wikipedia.org/wiki/Aix-la-Chapelle"
+              }
+            }
+          },
+          {
+            "name": "Rome",
+            "population": {
+              "value": 30000,
+              "low": 20000,
+              "high": 50000,
+              "year": 800,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Rome",
+                "url": "https://fr.wikipedia.org/wiki/Rome"
+              }
+            }
+          },
+          {
+            "name": "Pavie",
+            "population": {
+              "value": 10000,
+              "low": 5000,
+              "high": 15000,
+              "year": 800,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Pavie",
+                "url": "https://fr.wikipedia.org/wiki/Pavie"
+              }
+            }
+          },
+          {
+            "name": "Mayence",
+            "population": {
+              "value": 6000,
+              "low": 3000,
+              "high": 10000,
+              "year": 800,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Mayence",
+                "url": "https://fr.wikipedia.org/wiki/Mayence"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 2,
+          "low": 1,
+          "high": 4,
+          "year": 800,
+          "note": "Reconstruction très incertaine ; économie surtout rurale.",
+          "source": {
+            "label": "Wikipédia : Empire carolingien",
+            "url": "https://fr.wikipedia.org/wiki/Empire_carolingien"
+          }
+        },
+        "resources": [
+          "Céréales",
+          "Vin",
+          "Argent des mines de Melle",
+          "Sel",
+          "Fer"
+        ],
+        "currency": "Denier d'argent depuis la réforme de 793-794 ; l'or ne circule presque plus.",
+        "taxation": "Revenus des domaines royaux, tributs de guerre, tonlieux et services dus au roi ; pas d'impôt régulier.",
+        "trade": "Commerce de produits de luxe et d'esclaves ; ports de Quentovic et Dorestad, vers la Scandinavie et l'Angleterre."
+      },
+      "army": {
+        "size": {
+          "value": 30000,
+          "low": 10000,
+          "high": 35000,
+          "year": 800,
+          "note": "Ordre de grandeur pour une grande campagne ; les chiffres médiévaux restent très discutés.",
+          "source": {
+            "label": "Wikipédia : Armée carolingienne",
+            "url": "https://fr.wikipedia.org/wiki/Empire_carolingien"
+          }
+        },
+        "composition": "Cavaliers armés de lances et d'épées, soutenus par une infanterie levée pour la saison.",
+        "recruitment": "Levée annuelle des hommes libres en mai, puis service des vassaux ; chaque comte lève ses hommes.",
+        "famousUnits": [
+          "Scara, garde royale",
+          "Les vassi dominici"
+        ],
+        "innovations": [
+          "Cotte de mailles généralisée",
+          "Étrier et cavalerie lourde"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie héréditaire, puis empire sacré par le pape en 800.",
+        "head": "Roi des Francs, empereur depuis le 25 décembre 800.",
+        "succession": "Partage entre les fils du roi, selon la coutume franque ; Charlemagne prévoit un partage en 806.",
+        "institutions": "Assemblée annuelle des grands, palais itinérant puis fixe à Aix, chapelle et chancellerie royales.",
+        "administration": "Comtes à la tête des comtés, ducs ou marquis aux frontières, missi dominici qui inspectent.",
+        "provinces": {
+          "value": 300,
+          "low": 200,
+          "high": 400,
+          "year": 800,
+          "unit": "comtés",
+          "note": "Nombre de comtés : ordre de grandeur.",
+          "source": {
+            "label": "Wikipédia : Empire carolingien",
+            "url": "https://fr.wikipedia.org/wiki/Empire_carolingien"
+          }
+        },
+        "law": "Droit personnel (loi salique, lois lombarde et bavaroise), capitulaires royaux."
+      },
+      "society": {
+        "religions": [
+          "Christianisme latin",
+          "Paganisme saxon en recul",
+          "Judaïsme minoritaire"
+        ],
+        "languages": [
+          "Latin",
+          "Langues romanes naissantes",
+          "Vieux haut-allemand"
+        ],
+        "structure": "Société rurale : paysans libres ou dépendants sur des domaines, guerriers vassaux, grands aristocrates et clergé.",
+        "women": "Reines et abbesses influentes ; les femmes héritent mais n'exercent pas le pouvoir public, hors régence."
+      },
+      "culture": {
+        "inventions": [
+          "Minuscule caroline",
+          "Denier d'argent unifié",
+          "Missi dominici"
+        ],
+        "works": [
+          "Chapelle palatine d'Aix",
+          "Évangéliaire de Godescalc",
+          "Bible d'Alcuin"
+        ],
+        "scholars": [
+          "Alcuin",
+          "Éginhard",
+          "Paul Diacre"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Voies romaines entretenues par endroits, ponts, palais royaux (Aix, Ingelheim), abbayes en pierre.",
+        "roads": {
+          "value": 15000,
+          "low": 5000,
+          "high": 30000,
+          "year": 800,
+          "note": "Ordre de grandeur très incertain ; surtout anciennes voies romaines.",
+          "source": {
+            "label": "Wikipédia : Empire carolingien",
+            "url": "https://fr.wikipedia.org/wiki/Empire_carolingien"
+          }
+        }
+      },
+      "legacy": "Charlemagne laisse l'idée d'un empire chrétien d'Occident et une renaissance culturelle qui sauve les textes antiques."
+    },
+    {
+      "id": "partages",
+      "name": "Louis le Pieux et les partages",
+      "start": 814,
+      "end": 888,
+      "population": {
+        "total": {
+          "value": 14000000,
+          "low": 9000000,
+          "high": 19000000,
+          "year": 850,
+          "note": "Estimation reconstruite ; baisse possible avec les raids vikings et les guerres civiles.",
+          "source": {
+            "label": "Wikipédia : Empire carolingien",
+            "url": "https://fr.wikipedia.org/wiki/Empire_carolingien"
+          }
+        },
+        "cities": [
+          {
+            "name": "Aix-la-Chapelle",
+            "population": {
+              "value": 3000,
+              "low": 2000,
+              "high": 8000,
+              "year": 850,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Aix-la-Chapelle",
+                "url": "https://fr.wikipedia.org/wiki/Aix-la-Chapelle"
+              }
+            }
+          },
+          {
+            "name": "Rome",
+            "population": {
+              "value": 25000,
+              "low": 15000,
+              "high": 40000,
+              "year": 850,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Rome",
+                "url": "https://fr.wikipedia.org/wiki/Rome"
+              }
+            }
+          },
+          {
+            "name": "Paris",
+            "population": {
+              "value": 10000,
+              "low": 5000,
+              "high": 20000,
+              "year": 850,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Paris",
+                "url": "https://fr.wikipedia.org/wiki/Paris"
+              }
+            }
+          },
+          {
+            "name": "Mayence",
+            "population": {
+              "value": 6000,
+              "low": 3000,
+              "high": 10000,
+              "year": 850,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Mayence",
+                "url": "https://fr.wikipedia.org/wiki/Mayence"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 2,
+          "low": 1,
+          "high": 4,
+          "year": 850,
+          "note": "Reconstruction très incertaine.",
+          "source": {
+            "label": "Wikipédia : Empire carolingien",
+            "url": "https://fr.wikipedia.org/wiki/Empire_carolingien"
+          }
+        },
+        "resources": [
+          "Céréales",
+          "Vin",
+          "Sel",
+          "Argent",
+          "Fer"
+        ],
+        "currency": "Denier d'argent, de plus en plus souvent émis par des évêques et des seigneurs ; édit de Pîtres (864) pour le contrôler.",
+        "taxation": "Revenus des domaines, tonlieux, paiements de tributs aux Vikings (le « danegeld ») ; ressources du roi en baisse.",
+        "trade": "Ports de Dorestad et de Quentovic touchés par les raids ; commerce de la Baltique et de la Méditerranée plus ou moins maintenu."
+      },
+      "army": {
+        "size": {
+          "value": 20000,
+          "low": 8000,
+          "high": 30000,
+          "year": 850,
+          "note": "Ordre de grandeur pour une armée royale ; chiffres très discutés.",
+          "source": {
+            "label": "Wikipédia : Empire carolingien",
+            "url": "https://fr.wikipedia.org/wiki/Empire_carolingien"
+          }
+        },
+        "composition": "Cavalerie de vassaux et fantassins ; peu d'armée permanente, surtout des garnisons de forts.",
+        "recruitment": "Levée des hommes libres de plus en plus réduite aux vassaux et à leurs hommes.",
+        "famousUnits": [
+          "Cavaliers des marches",
+          "Défenseurs de Paris en 885"
+        ],
+        "innovations": [
+          "Ponts fortifiés (édit de Pîtres, 864)",
+          "Premiers châteaux de bois"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie partagée entre plusieurs rois, un seul portant le titre impérial.",
+        "head": "Un empereur (Lothaire Ier, Louis II, Charles le Chauve, Charles le Gros) et des rois de Francie orientale et occidentale.",
+        "succession": "Partages entre fils : Ordinatio imperii (817), Verdun (843), Prüm (855), Meerssen (870).",
+        "institutions": "Assemblées de grands, évêques conseillers (Hincmar de Reims), cours des différents rois.",
+        "administration": "Comtes de plus en plus indépendants, charges transmises à leurs fils ; missi qui disparaissent.",
+        "provinces": {
+          "value": 300,
+          "low": 200,
+          "high": 400,
+          "year": 850,
+          "unit": "comtés",
+          "note": "Nombre de comtés : ordre de grandeur.",
+          "source": {
+            "label": "Wikipédia : Empire carolingien",
+            "url": "https://fr.wikipedia.org/wiki/Empire_carolingien"
+          }
+        },
+        "law": "Capitulaires, droits personnels, Église qui rend la justice sur ses terres."
+      },
+      "society": {
+        "religions": [
+          "Christianisme latin",
+          "Paganisme scandinave chez les envahisseurs"
+        ],
+        "languages": [
+          "Latin",
+          "Vieux français naissant",
+          "Vieux haut-allemand"
+        ],
+        "structure": "Société où les seigneurs locaux se renforcent face aux rois : vassaux, paysans dépendants, clergé.",
+        "women": "Reines influentes comme Judith de Bavière ; abbesses puissantes."
+      },
+      "culture": {
+        "inventions": [
+          "Notation neumatique",
+          "Plan de Saint-Gall",
+          "Vassalité et bénéfice"
+        ],
+        "works": [
+          "Serments de Strasbourg",
+          "Bible de Charles le Chauve",
+          "Psautier d'Utrecht"
+        ],
+        "scholars": [
+          "Raban Maur",
+          "Jean Scot Érigène",
+          "Hincmar de Reims"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Ponts fortifiés, forts sur les fleuves, abbayes et palais ; routes moins entretenues.",
+        "roads": {
+          "value": 15000,
+          "low": 5000,
+          "high": 30000,
+          "year": 850,
+          "note": "Ordre de grandeur très incertain.",
+          "source": {
+            "label": "Wikipédia : Empire carolingien",
+            "url": "https://fr.wikipedia.org/wiki/Empire_carolingien"
+          }
+        }
+      },
+      "legacy": "En 888, l'unité ne revient plus : la Francie occidentale et la Francie orientale deviennent peu à peu la France et l'Allemagne."
+    }
+  ]
+}

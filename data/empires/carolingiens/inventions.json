@@ -1,0 +1,225 @@
+[
+  {
+    "id": "minuscule-caroline",
+    "name": "Minuscule caroline",
+    "year": 780,
+    "approx": true,
+    "place": "Corbie",
+    "at": [
+      2.5,
+      49.91
+    ],
+    "category": "ecriture",
+    "description": "Vers 780, les moines de Corbie, en Picardie, mettent au point une écriture claire, aux lettres rondes, séparées et dotées de majuscules et de minuscules. Elle remplace les écritures régionales difficiles à lire. Charlemagne et Alcuin la favorisent dans les ateliers de copie, surtout à Tours. Elle ne vient pas d'une seule main : c'est une mise au point progressive, d'abord dans des scriptoria.",
+    "impact": "Les imprimeurs de la Renaissance la reprennent, et nos lettres minuscules actuelles en descendent directement. Elle a aussi permis de sauver une grande partie des textes latins antiques.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Minuscule_caroline"
+      }
+    ]
+  },
+  {
+    "id": "ecoles-admonitio-generalis",
+    "name": "Écoles et Admonitio generalis",
+    "year": 789,
+    "place": "Aix-la-Chapelle",
+    "at": [
+      6.08,
+      50.78
+    ],
+    "category": "science",
+    "description": "En 789, l'Admonitio generalis, texte de loi inspiré par Alcuin, demande que chaque évêché et chaque monastère ouvre une école pour enseigner la lecture, le chant et le calcul. À la cour d'Aix-la-Chapelle, l'école du palais réunit des savants venus d'Angleterre, d'Italie et d'Espagne. On parle de « renaissance carolingienne », même si l'instruction reste limitée au clergé et à quelques nobles.",
+    "impact": "Les monastères deviennent des centres de copie : la plupart des textes antiques que nous connaissons nous sont parvenus par des manuscrits carolingiens.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Renaissance_carolingienne"
+      },
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Admonitio_generalis"
+      }
+    ]
+  },
+  {
+    "id": "denier-reforme-monetaire",
+    "name": "Denier d'argent et réforme monétaire",
+    "year": 794,
+    "place": "Francfort",
+    "at": [
+      8.68,
+      50.11
+    ],
+    "category": "monnaie",
+    "description": "Vers 793-794, Charlemagne impose un nouveau denier d'argent plus lourd et unifié, frappé dans tout le royaume. Le capitulaire de Francfort, en 794, fixe les prix et interdit de refuser ces pièces. On compte alors en livres, sous et deniers : douze deniers font un sou, vingt sous une livre. La livre et le sou n'existent que comme monnaies de compte, seul le denier est une vraie pièce.",
+    "impact": "Ce système de compte (livre, sou, denier) a duré en France jusqu'à la Révolution et en Grande-Bretagne jusqu'en 1971, avec les initiales £, s et d.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Denier"
+      }
+    ]
+  },
+  {
+    "id": "missi-dominici-capitulaires",
+    "name": "Capitulaires et missi dominici",
+    "year": 802,
+    "place": "Aix-la-Chapelle",
+    "at": [
+      6.08,
+      50.78
+    ],
+    "category": "administration",
+    "description": "Charlemagne gouverne par des capitulaires, des textes de loi divisés en chapitres (capitula) et diffusés après l'assemblée annuelle des grands. Pour contrôler les comtes, il envoie des missi dominici, des « envoyés du maître », souvent un évêque et un comte, qui parcourent une circonscription. En 802, il en organise le système : ils rendent la justice, écoutent les plaintes et rappellent les devoirs des fonctionnaires.",
+    "impact": "Ce contrôle par des envoyés fonctionne tant que l'empereur est fort. Il préfigure les inspecteurs des royaumes ultérieurs, mais décline après 840.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Capitulaire"
+      },
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Missus_dominicus"
+      }
+    ]
+  },
+  {
+    "id": "polyptyque-irminon",
+    "name": "Polyptyques et système domanial",
+    "year": 820,
+    "approx": true,
+    "place": "Saint-Germain-des-Prés",
+    "at": [
+      2.335,
+      48.854
+    ],
+    "category": "administration",
+    "description": "Au début du IXe siècle, les grandes abbayes dressent des polyptyques, c'est-à-dire des registres qui décrivent leurs terres, leurs paysans et ce que chacun doit. Celui d'Irminon, abbé de Saint-Germain-des-Prés, fait l'inventaire de milliers de familles. Le domaine est divisé en une réserve, cultivée par des corvées, et en tenures confiées à des paysans. Ce système ne naît pas à cette époque, mais il est alors décrit et mis par écrit.",
+    "impact": "Ces registres sont une source unique pour connaître la vie des paysans du haut Moyen Âge, et ils montrent le modèle de la seigneurie qui structure l'Europe jusqu'au XIIIe siècle.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Polyptyque_d'Irminon"
+      },
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Manse"
+      }
+    ]
+  },
+  {
+    "id": "assolement-triennal",
+    "name": "Assolement triennal",
+    "year": 800,
+    "approx": true,
+    "place": "Nord de la Gaule",
+    "at": [
+      4.03,
+      49.26
+    ],
+    "category": "agriculture",
+    "description": "Au lieu de laisser la moitié des champs en jachère chaque année, certains domaines du nord de la Gaule en cultivent deux tiers : des céréales d'hiver, puis de printemps comme l'avoine, avant un repos d'un an. Les textes carolingiens y font des allusions, mais le système reste rare et sa généralisation, au XIe siècle, est débattue. Il faut donc parler d'une diffusion lente, pas d'une invention de Charlemagne.",
+    "impact": "Cette méthode augmente les récoltes et fournit de l'avoine pour les chevaux, ce qui a aidé la croissance de la population médiévale.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Assolement"
+      },
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Rotation_des_cultures"
+      }
+    ]
+  },
+  {
+    "id": "orgue-compiegne",
+    "name": "Orgue de Compiègne",
+    "year": 757,
+    "place": "Compiègne",
+    "at": [
+      2.83,
+      49.42
+    ],
+    "category": "technique",
+    "description": "En 757, l'empereur byzantin Constantin V envoie à Pépin le Bref un orgue, qui est joué à Compiègne. C'est le premier orgue connu dans l'Occident latin. Il ne s'agit pas d'une invention franque : l'instrument vient de l'Orient. Mais il impressionne les Francs, et plusieurs orgues seront construits ensuite, par exemple pour Aix-la-Chapelle sous Louis le Pieux, avec l'aide d'artisans venus de Venise.",
+    "impact": "L'orgue entre dans les églises d'Occident à partir du IXe siècle, et deviendra l'instrument liturgique par excellence.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Orgue"
+      },
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Pépin_le_Bref"
+      }
+    ]
+  },
+  {
+    "id": "plan-saint-gall",
+    "name": "Plan de Saint-Gall",
+    "year": 820,
+    "approx": true,
+    "place": "Reichenau",
+    "at": [
+      9.06,
+      47.7
+    ],
+    "category": "architecture",
+    "description": "Vers 820, un moine de l'abbaye de Reichenau dessine sur cinq feuilles de parchemin le plan idéal d'un monastère : église, cloître, dortoir, infirmerie, écoles, ateliers, brasserie, jardins et étables. Il est conservé à Saint-Gall, en Suisse. Ce n'est pas le plan d'un bâtiment réellement construit, mais un projet modèle, qui reflète les réformes monastiques de Louis le Pieux et de Benoît d'Aniane.",
+    "impact": "C'est le seul dessin d'architecture conservé du haut Moyen Âge. Il montre comment un monastère carolingien vit presque en autarcie.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Plan_de_Saint-Gall"
+      }
+    ]
+  },
+  {
+    "id": "neumes-chant-gregorien",
+    "name": "Notation neumatique du chant",
+    "year": 850,
+    "approx": true,
+    "place": "Metz",
+    "at": [
+      6.18,
+      49.12
+    ],
+    "category": "ecriture",
+    "description": "Les Carolingiens ont voulu unifier la liturgie sur le modèle romain, et donc le chant, qu'on appelle plus tard grégorien. Pour aider la mémoire des chantres, on place au-dessus du texte de petits signes, les neumes, qui indiquent le mouvement de la voix. Les premiers manuscrits notés datent du IXe siècle, surtout dans la région de Metz. La notation ne précise pas encore la hauteur exacte des notes.",
+    "impact": "Ces signes sont l'origine de la portée et de la notation musicale occidentale, qu'on précise au XIe siècle.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Neume"
+      },
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Chant_grégorien"
+      }
+    ]
+  },
+  {
+    "id": "vassalite-benefice",
+    "name": "Vassalité et bénéfice",
+    "year": 847,
+    "place": "Meerssen",
+    "at": [
+      5.75,
+      50.88
+    ],
+    "category": "droit",
+    "description": "Depuis Charles Martel, les rois donnent des terres, les bénéfices, à des fidèles qui se « recommandent » à eux et deviennent leurs vassaux. Le capitulaire de Meerssen, en 847, demande que chaque homme libre choisisse un seigneur. Les vassaux jurent fidélité et servent à cheval ; en échange, ils tiennent une terre. La vassalité ne naît pas en 847 : elle se diffuse, et sera plus tard appelée féodalité.",
+    "impact": "Ce lien personnel remplace peu à peu l'État pour tenir le territoire. C'est la base de la société féodale des siècles suivants.",
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Vassalité"
+      },
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Bénéfice_(Moyen_Âge)"
+      }
+    ]
+  }
+]

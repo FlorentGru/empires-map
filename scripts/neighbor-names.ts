@@ -1311,6 +1311,9 @@ export const NEIGHBOR_NAMES: Record<string, string> = {
   Warsenis: 'Ouarsenis',
   'Wassoulou Empire': 'Empire du Wassoulou',
   'West Francia': 'Francie occidentale',
+  Ests: 'Estes (Baltes)',
+  Northmen: 'Scandinaves (Normands)',
+  'Slavonic tribes': 'Tribus slaves',
   'West Getaes': 'Gètes occidentaux',
   'state societies and Aramaean kingdoms': 'Royaumes araméens',
 };

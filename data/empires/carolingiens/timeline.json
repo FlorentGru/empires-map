@@ -22,6 +22,10 @@
       58
     ]
   ],
+  "apogee": {
+    "stepId": "mort-charlemagne-814",
+    "note": "À la mort de Charlemagne, l’empire est uni et à son plus grand. En 843, la surface mesurée grandit un peu car les trois royaumes du partage de Verdun sont comptés ensemble, mais l’unité est perdue."
+  },
   "periods": [
     {
       "id": "pepin-charlemagne",
@@ -76,6 +80,7 @@
       "figures": [
         {
           "name": "Pépin le Bref",
+          "person": "pepin-le-bref",
           "role": "Maire du palais, élu roi des Francs",
           "faction": "francs",
           "archetype": "roi-franc",
@@ -202,6 +207,7 @@
         },
         {
           "name": "Pépin le Bref",
+          "person": "pepin-le-bref",
           "role": "Roi des Francs, protecteur de Rome",
           "faction": "francs",
           "archetype": "roi-franc",
@@ -247,6 +253,7 @@
       "figures": [
         {
           "name": "Charlemagne",
+          "person": "charlemagne",
           "role": "Roi des Francs, futur empereur",
           "faction": "francs",
           "archetype": "roi-franc",
@@ -258,6 +265,7 @@
         },
         {
           "name": "Carloman Ier",
+          "person": "carloman-ier",
           "role": "Frère de Charles, roi de l'est du royaume",
           "faction": "francs",
           "archetype": "roi-franc",
@@ -377,6 +385,7 @@
       "figures": [
         {
           "name": "Charlemagne",
+          "person": "charlemagne",
           "role": "Roi des Francs, devenu roi des Lombards",
           "faction": "francs",
           "archetype": "roi-franc",
@@ -387,6 +396,7 @@
         },
         {
           "name": "Didier",
+          "person": "didier-roi-des-lombards",
           "role": "Dernier roi des Lombards",
           "faction": "lombards",
           "archetype": "chef-barbare",
@@ -417,7 +427,7 @@
         -1.3197,
         43.0199
       ],
-      "zoom": 5.0,
+      "zoom": 5,
       "summary": "Au retour d'une expédition en Espagne, l'arrière-garde de Charlemagne est massacrée par les Basques dans les Pyrénées ; la Chanson de Roland en fera une épopée.",
       "details": "En 777, un gouverneur musulman de Barcelone et de Gérone, **Sulayman al-Arabi**, vient à Paderborn demander l'aide de Charlemagne contre l'émir de **Cordoue**. Le roi y voit l'occasion d'ouvrir un front au sud des Pyrénées. Au printemps 778, il entre en Espagne avec deux armées. Mais **Saragosse** lui ferme ses portes, car son gouverneur, loin d'être un allié sûr, a changé de camp. Après un siège sans résultat, Charlemagne doit repartir. Il rase les murailles de **Pampelune**, ville des Basques, pour se garantir.\n\nLe 15 août 778, l'armée franque repasse les Pyrénées par le col de **Roncevaux**. Les chroniques racontent que les **Basques**, ou Vascons, humiliés par la destruction de leur ville, attendent dans les forêts, tombent sur la colonne étirée dans le défilé et tuent l'arrière-garde, avant de se disperser avec le butin. Parmi les morts figurent **Eggihard**, intendant du palais, et **Roland**, comte des marches de Bretagne.\n\nLe fait est minime pour l'époque, mais il inspire, trois siècles plus tard, la **Chanson de Roland** : le poète fait de Roland un preux trahi, de l'embuscade basque une bataille contre les Sarrasins, et de Charlemagne un champion de la chrétienté. Cette transformation en fait un mythe fondateur de la littérature française.",
       "consequences": [
@@ -499,6 +509,7 @@
       "figures": [
         {
           "name": "Roland",
+          "person": "roland",
           "role": "Comte des marches de Bretagne, mort à Roncevaux",
           "faction": "francs",
           "archetype": "seigneur-franc",
@@ -510,6 +521,7 @@
         },
         {
           "name": "Charlemagne",
+          "person": "charlemagne",
           "role": "Roi des Francs, de retour d'Espagne",
           "faction": "francs",
           "archetype": "roi-franc",
@@ -575,7 +587,7 @@
               50.78
             ],
             [
-              8.0,
+              8,
               51.7
             ],
             [
@@ -613,6 +625,7 @@
       "figures": [
         {
           "name": "Widukind",
+          "person": "widukind",
           "role": "Chef saxon, principal adversaire de Charlemagne",
           "faction": "saxons",
           "archetype": "chef-barbare",
@@ -624,6 +637,7 @@
         },
         {
           "name": "Charlemagne",
+          "person": "charlemagne",
           "role": "Roi des Francs, qui impose le baptême",
           "faction": "francs",
           "archetype": "roi-franc",
@@ -680,6 +694,7 @@
         },
         {
           "name": "Charlemagne",
+          "person": "charlemagne",
           "role": "Roi des Francs et des Lombards",
           "faction": "francs",
           "archetype": "roi-franc",
@@ -696,7 +711,7 @@
       "title": "Le Ring des Avars est pris",
       "type": "bataille",
       "location": [
-        19.0,
+        19,
         47.3
       ],
       "zoom": 4.25,
@@ -754,7 +769,7 @@
               46.9
             ],
             [
-              19.0,
+              19,
               47.3
             ]
           ],
@@ -766,15 +781,15 @@
           "faction": "avars",
           "path": [
             [
-              21.0,
+              21,
               47.4
             ],
             [
-              20.0,
+              20,
               47.3
             ],
             [
-              19.0,
+              19,
               47.3
             ]
           ],
@@ -839,6 +854,7 @@
       "figures": [
         {
           "name": "Charlemagne",
+          "person": "charlemagne",
           "role": "Roi des Francs, couronné empereur",
           "faction": "francs",
           "archetype": "empereur-carolingien",
@@ -850,6 +866,7 @@
         },
         {
           "name": "Léon III",
+          "person": "leon-iii",
           "role": "Pape, qui couronne l'empereur",
           "faction": "romains",
           "archetype": "pape",
@@ -916,7 +933,7 @@
               43.6
             ],
             [
-              3.0,
+              3,
               43.18
             ],
             [
@@ -992,7 +1009,7 @@
         6.0839,
         50.7753
       ],
-      "zoom": 5.0,
+      "zoom": 5,
       "summary": "Charlemagne meurt le 28 janvier 814 à Aix-la-Chapelle. Il laisse un empire immense, mais un seul fils, Louis, pour le gouverner.",
       "details": "Au soir de sa vie, Charlemagne a plus de soixante-cinq ans. Il règne depuis plus de quarante ans sur un empire qui s'étend de l'Elbe à l'Èbre, du Danemark à Rome. Son palais d'**Aix-la-Chapelle** (Aachen), qu'il a fait construire à partir de 794, avec sa chapelle octogonale, ses bains d'eaux chaudes et sa bibliothèque, est la vraie capitale de l'Europe occidentale. Autour de lui, des savants comme **Alcuin** (mort en 804), **Paul Diacre** ou **Théodulf** ont créé un renouveau des lettres, de l'écriture (la minuscule caroline) et des écoles, qu'on appelle la **renaissance carolingienne**.\n\nSes fils aînés, **Pépin d'Italie** (810) et **Charles le Jeune** (811), sont morts avant lui. Il ne lui reste que **Louis**, roi d'Aquitaine. En septembre 813, à Aix, Charlemagne le fait couronner co-empereur en lui faisant prendre lui-même la couronne sur l'autel, sans l'intervention du pape.\n\nEn janvier 814, il attrape une fièvre suivie d'une pleurésie et meurt le 28 janvier. Il est enterré le jour même dans la chapelle d'Aix, dans un sarcophage antique. Son empire est à son apogée territorial, mais il n'a pas de structure administrative assez solide : il repose sur la personne de l'empereur, sur des comtes fidèles et sur la guerre victorieuse qui apporte le butin. À sa mort, le dernier élément fait défaut.",
       "consequences": [
@@ -1018,6 +1035,7 @@
       "figures": [
         {
           "name": "Charlemagne",
+          "person": "charlemagne",
           "role": "Empereur d'Occident, mourant",
           "faction": "francs",
           "archetype": "empereur-carolingien",
@@ -1029,6 +1047,7 @@
         },
         {
           "name": "Louis le Pieux",
+          "person": "louis-le-pieux",
           "role": "Seul fils survivant, héritier de l'empire",
           "faction": "francs",
           "archetype": "empereur-carolingien",
@@ -1039,6 +1058,7 @@
         },
         {
           "name": "Éginhard",
+          "person": "eginhard",
           "role": "Lettré de la cour, biographe de Charlemagne",
           "faction": "francs",
           "archetype": "seigneur-franc",
@@ -1058,7 +1078,7 @@
         6.0839,
         50.7753
       ],
-      "zoom": 4.0,
+      "zoom": 4,
       "summary": "En 817, Louis le Pieux règle sa succession à Aix : l'empire restera un, sous Lothaire, tandis que ses frères Pépin et Louis auront des royaumes subordonnés.",
       "details": "**Louis le Pieux**, fils de Charlemagne, hérite en 814 de tout l'empire, mais il a trois fils, ce qui pose le vieux problème franc du partage. Selon la coutume, chacun devrait recevoir une part égale. Mais l'Église, qui voit dans l'empire l'image d'une seule chrétienté, souhaite l'unité. En 817, en pleine assemblée à **Aix-la-Chapelle**, Louis publie un grand texte, l'**Ordinatio imperii** (l'« organisation de l'empire »), après avoir manqué de peu de mourir quand une galerie de bois s'effondre sous lui.\n\nLe principe est clair : l'aîné, **Lothaire**, devient co-empereur et héritier de la dignité impériale. Il aura l'essentiel du pouvoir. Ses deux frères cadets reçoivent des royaumes aux marges, soumis à son autorité : **Pépin** reçoit l'Aquitaine, la Gascogne et la Marche de Toulouse ; **Louis**, plus tard dit « le Germanique », reçoit la Bavière, la Carinthie et les marches orientales. Aucun roi ne pourra faire la guerre ni se marier sans l'accord de l'empereur.\n\nL'ordre est heurté dès l'année suivante par la révolte de **Bernard**, roi d'Italie et neveu de Louis, qui se voit rétrogradé au profit de Lothaire. Vaincu, aveuglé en 818, il meurt des suites de ce supplice. Louis fait pénitence publique pour ce crime en 822. Quand un quatrième fils, **Charles**, naît en 823 d'un second mariage, le système est à refaire, ce qui provoquera vingt ans de guerres civiles.",
       "consequences": [
@@ -1084,6 +1104,7 @@
       "figures": [
         {
           "name": "Louis le Pieux",
+          "person": "louis-le-pieux",
           "role": "Empereur, auteur du partage",
           "faction": "francs",
           "archetype": "empereur-carolingien",
@@ -1095,6 +1116,7 @@
         },
         {
           "name": "Lothaire Ier",
+          "person": "lothaire-ier",
           "role": "Fils aîné, co-empereur",
           "faction": "francs",
           "archetype": "empereur-carolingien",
@@ -1173,7 +1195,7 @@
               48.85
             ],
             [
-              3.0,
+              3,
               48.3
             ],
             [
@@ -1223,12 +1245,13 @@
           "faction": "francs",
           "archetype": "seigneur-franc",
           "position": [
-            3.0,
+            3,
             48.3
           ]
         },
         {
           "name": "Lothaire Ier",
+          "person": "lothaire-ier",
           "role": "Empereur vaincu à Fontenoy",
           "faction": "francs",
           "archetype": "empereur-carolingien",
@@ -1274,6 +1297,7 @@
       "figures": [
         {
           "name": "Charles le Chauve",
+          "person": "charles-le-chauve",
           "role": "Roi de la partie occidentale",
           "faction": "francs",
           "archetype": "roi-franc",
@@ -1285,6 +1309,7 @@
         },
         {
           "name": "Louis le Germanique",
+          "person": "louis-le-germanique",
           "role": "Roi de Bavière",
           "faction": "francs",
           "archetype": "roi-franc",
@@ -1330,6 +1355,7 @@
       "figures": [
         {
           "name": "Charles le Chauve",
+          "person": "charles-le-chauve",
           "role": "Roi de la Francie occidentale",
           "faction": "francs",
           "archetype": "roi-franc",
@@ -1340,6 +1366,7 @@
         },
         {
           "name": "Louis le Germanique",
+          "person": "louis-le-germanique",
           "role": "Roi de la Francie orientale",
           "faction": "francs",
           "archetype": "roi-franc",
@@ -1350,6 +1377,7 @@
         },
         {
           "name": "Lothaire Ier",
+          "person": "lothaire-ier",
           "role": "Empereur, roi de la Francie médiane",
           "faction": "francs",
           "archetype": "empereur-carolingien",
@@ -1460,6 +1488,7 @@
         },
         {
           "name": "Charles le Chauve",
+          "person": "charles-le-chauve",
           "role": "Roi de Francie occidentale, qui paie le tribut",
           "faction": "francs",
           "archetype": "roi-franc",
@@ -1480,7 +1509,7 @@
         6.4167,
         50.2078
       ],
-      "zoom": 4.0,
+      "zoom": 4,
       "summary": "À la mort de Lothaire Ier en 855, le royaume du milieu est lui-même divisé en trois entre ses fils : l'Italie, la Lotharingie et la Provence.",
       "details": "Lothaire Ier, épuisé, abdique en septembre 855 et entre dans l'abbaye de **Prüm**, dans l'Eifel, où il meurt quelques jours plus tard, le 29 septembre. Peu avant, il a réglé sa succession, une nouvelle fois par un partage. Ses trois fils reçoivent chacun une part de la Francie médiane.\n\n**Louis II**, l'aîné, déjà roi d'Italie depuis 844, garde l'Italie et le titre d'**empereur**. Il passera sa vie à combattre les Sarrasins dans le sud de la péninsule. **Lothaire II** reçoit la partie septentrionale, de la Frise au Jura, qu'on appellera désormais **Lotharingie** (« royaume de Lothaire », d'où le nom de la Lorraine). **Charles**, le benjamin, reçoit la **Provence**, la Bourgogne méridionale et le Lyonnais. Il est faible et épileptique, il mourra jeune en 863.\n\nChaque part est trop petite pour compter parmi les grandes puissances d'Europe, ce qui attire les convoitises de leurs oncles, Charles le Chauve et Louis le Germanique. Chaque mort sans héritier ouvrira une succession disputée. La Francie médiane, déjà étirée et dépourvue d'unité linguistique, commence à s'effilocher. Elle est le premier territoire de l'empire à disparaître.",
       "consequences": [
@@ -1506,6 +1535,7 @@
       "figures": [
         {
           "name": "Lothaire Ier",
+          "person": "lothaire-ier",
           "role": "Empereur retiré à Prüm, qui partage son royaume",
           "faction": "francs",
           "archetype": "empereur-carolingien",
@@ -1572,6 +1602,7 @@
       "figures": [
         {
           "name": "Charles le Chauve",
+          "person": "charles-le-chauve",
           "role": "Roi de Francie occidentale, nouveau roi de la moitié ouest de la Lotharingie",
           "faction": "francs",
           "archetype": "roi-franc",
@@ -1582,6 +1613,7 @@
         },
         {
           "name": "Louis le Germanique",
+          "person": "louis-le-germanique",
           "role": "Roi de Francie orientale, âgé et malade",
           "faction": "francs",
           "archetype": "roi-franc",
@@ -1637,6 +1669,7 @@
       "figures": [
         {
           "name": "Charles le Gros",
+          "person": "charles-le-gros",
           "role": "Empereur, roi de tout l'ancien empire carolingien",
           "faction": "francs",
           "archetype": "empereur-carolingien",
@@ -1667,7 +1700,7 @@
         2.3484,
         48.8553
       ],
-      "zoom": 5.0,
+      "zoom": 5,
       "summary": "De novembre 885 à l'automne 886, Paris, défendue sur l'île de la Cité par l'évêque Gozlin et le comte Eudes, résiste à une immense armée viking.",
       "details": "En novembre 885, un énorme convoi viking remonte la Seine. Le poète **Abbon**, moine de Saint-Germain-des-Prés, qui assiste au siège, parle de 700 navires et de 30 000 hommes, chiffres exagérés mais révélateurs. Le chef **Sigfred** réclame passage vers la Bourgogne. Il se heurte au refus de l'évêque **Gozlin** et du comte **Eudes**, fils de Robert le Fort. Paris n'est alors qu'une petite ville sur l'**île de la Cité**, entourée de murs, gardée par deux tours aux têtes de ponts.\n\nLes Vikings donnent l'assaut dès novembre, par des machines et des brûlots, sans succès. Ils entreprennent un long siège, ravagent la campagne, mais se heurtent à une résistance inattendue. Gozlin meurt en avril 886, de maladie. Eudes sort de la ville pour presser l'empereur d'intervenir, puis y rentre en forçant le blocus.\n\nCharles le Gros arrive enfin à l'automne 886 avec une armée, mais refuse la bataille. Il négocie, verse 700 livres d'argent et autorise les Vikings à aller piller la Bourgogne, qui ne lui appartient pas encore pleinement. Les Parisiens, qui ont tenu un an, en conçoivent mépris pour un empereur lâche. Eudes, héros du siège, sera élu roi en 888.",
       "consequences": [
@@ -1719,7 +1752,7 @@
             ],
             [
               2.1,
-              49.0
+              49
             ],
             [
               2.35,
@@ -1748,6 +1781,7 @@
       "figures": [
         {
           "name": "Eudes",
+          "person": "eudes",
           "role": "Comte de Paris, héros du siège",
           "faction": "francs",
           "archetype": "seigneur-franc",
@@ -1824,6 +1858,7 @@
         },
         {
           "name": "Charles le Gros",
+          "person": "charles-le-gros",
           "role": "Empereur déposé, mort en 888",
           "faction": "francs",
           "archetype": "empereur-carolingien",
@@ -1835,6 +1870,7 @@
         },
         {
           "name": "Eudes",
+          "person": "eudes",
           "role": "Comte de Paris, roi de Francie occidentale en 888",
           "faction": "francs",
           "archetype": "seigneur-franc",

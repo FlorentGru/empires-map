@@ -4,7 +4,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "États pontificaux"
+        "region": "États pontificaux"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -107,7 +107,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Royaume d'Italie"
+        "region": "Royaume d'Italie"
       },
       "geometry": {
         "type": "Polygon",
@@ -236,7 +236,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Septimanie"
+        "region": "Septimanie"
       },
       "geometry": {
         "type": "Polygon",
@@ -289,7 +289,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Saxe"
+        "region": "Saxe"
       },
       "geometry": {
         "type": "Polygon",
@@ -362,7 +362,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Bavière orientale et Salzbourg"
+        "region": "Bavière orientale et Salzbourg"
       },
       "geometry": {
         "type": "Polygon",
@@ -403,7 +403,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Pampelune et Vasconie sud-pyrénéenne"
+        "region": "Pampelune et Vasconie sud-pyrénéenne"
       },
       "geometry": {
         "type": "Polygon",
@@ -440,7 +440,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Slaves à l'est de l'Elbe et de la Saale"
+        "region": "Slaves à l'est de l'Elbe et de la Saale"
       },
       "geometry": {
         "type": "Polygon",
@@ -501,7 +501,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Lagune de Venise"
+        "region": "Lagune de Venise"
       },
       "geometry": {
         "type": "Polygon",
@@ -534,7 +534,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Catalogne septentrionale"
+        "region": "Catalogne septentrionale"
       },
       "geometry": {
         "type": "Polygon",
@@ -571,7 +571,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Barcelone et Catalogne méridionale"
+        "region": "Barcelone et Catalogne méridionale"
       },
       "geometry": {
         "type": "Polygon",
@@ -604,7 +604,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Pannonie occidentale"
+        "region": "Pannonie occidentale"
       },
       "geometry": {
         "type": "Polygon",
@@ -649,7 +649,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Lotharingie"
+        "region": "Lotharingie"
       },
       "geometry": {
         "type": "Polygon",
@@ -754,7 +754,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Lotharingie occidentale (Meerssen)"
+        "region": "Lotharingie occidentale (Meerssen)"
       },
       "geometry": {
         "type": "Polygon",
@@ -823,7 +823,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Provence et Bourgogne"
+        "region": "Provence et Bourgogne"
       },
       "geometry": {
         "type": "Polygon",
@@ -880,7 +880,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Lyonnais et Vienne"
+        "region": "Lyonnais et Vienne"
       },
       "geometry": {
         "type": "Polygon",

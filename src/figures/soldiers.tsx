@@ -941,6 +941,109 @@ export const SAINT_SOLDIER_SPECS = {
   },
 } satisfies Partial<Record<Faction, Spec>>;
 
+/* ---------- époque carolingienne ---------- */
+
+/** Bouclier rond à umbo (bois peint, bord cerclé). */
+const roundUmbo = (fill: string, rim: string, extra = '') =>
+  circ(8.5, 23, 6.3, fill) + circ(8.5, 23, 4.6, 'none', `stroke="${rim}" stroke-width="0.8"`) + circ(8.5, 23, 1.7, STEEL) + extra;
+/** Casque conique à nasal. */
+const conicNasal = (c: string) =>
+  path('M11.8 9Q12 3.2 16 1.2Q20 3.2 20.2 9L19.6 9L19.6 7.2L12.4 7.2L12.4 9Z', c) + rect(15.6, 4.6, 0.9, 5.6, '#8e949a', 0, 'stroke="none"');
+const mailTorso = (c: string, hi: string) =>
+  path('M10.6 14.4Q16 12.8 21.4 14.4L22 26L10 26Z', c) + stroke('M11.6 17H20.4M11.2 19.6H20.8M11 22.2H21M10.8 24.6H21.2', hi, 0.6);
+const longHair = (c: string) => path('M11.6 9Q11 3.6 16 3.4Q21 3.6 20.4 9L21.4 15.6L19.4 14L19.8 9.4L12.2 9.4L12.6 14L10.6 15.6Z', c);
+
+export const CAROLINGIAN_SOLDIER_SPECS = {
+  francs: {
+    tunic: '#2f5f9b',
+    legs: 'pants',
+    legColor: '#7a5a3a',
+    legColor2: '#d8d2c0',
+    boots: '#3a2a1a',
+    deco: mailTorso('#aeb3b8', '#7e848a') + rect(10.2, 24, 11.6, 1.6, '#3a2a1a', 0, 'stroke="none"') + path('M10.6 14.6L7.2 24.6L11 22.4Z', RED),
+    head: conicNasal(STEEL),
+    shield: roundUmbo('#b23a2b', '#e8dcc0', stroke('M8.5 17.4V28.6M3 23H14', '#e8dcc0', 0.7)),
+    weapon: spear(36),
+  },
+  lombards: {
+    tunic: '#7a8f3a',
+    legs: 'pants',
+    legColor: '#6a4a2a',
+    legColor2: '#c9b27a',
+    boots: '#3a2a1a',
+    deco:
+      path('M10.6 14.4Q16 12.8 21.4 14.4L22 25L10 25Z', '#7a8f3a') +
+      rect(10.2, 23.4, 11.6, 2, '#5a3a1a', 0, 'stroke="none"') +
+      circ(16, 24.4, 1, GOLD, 'stroke="none"'),
+    back: longHair('#9a6a2a'),
+    head:
+      path('M11.8 8.6Q12 3.6 16 2.4Q20 3.6 20.2 8.6L19.6 8.6L19.6 7L12.4 7L12.4 8.6Z', STEEL) +
+      path('M14.8 2.6Q16 0 17.2 2.6Z', RED) +
+      path('M12.4 10.6Q16 18.6 19.6 10.6Q16 13 12.4 10.6Z', '#9a6a2a', 'stroke="none"'),
+    shield: roundUmbo('#d8c27a', '#6a4a2a'),
+    weapon: spear(36) + path('M22.4 26.6L24.6 25.4L24.6 30L22.4 31Z', STEEL),
+  },
+  saxons: {
+    tunic: '#c9b88a',
+    legs: 'pants',
+    legColor: '#8a6a3a',
+    legColor2: '#5a4a2a',
+    boots: '#5a3a1a',
+    deco:
+      rect(10.2, 23.4, 11.6, 2.2, '#5a3a1a', 0, 'stroke="none"') +
+      path('M8.4 24.4L10.8 23.2L11.4 28.6L9.4 29.2Z', STEEL) +
+      stroke('M12 16.6L20 22', '#a89a6a', 0.8),
+    back: longHair('#c9a24a'),
+    head:
+      path('M12.2 8.2Q16 5.4 19.8 8.2Q19 5.4 16 4.8Q13 5.4 12.2 8.2Z', '#b8a47a') +
+      path('M13.2 10.8Q16 15.2 18.8 10.8Q16 12.2 13.2 10.8Z', '#c9a24a', 'stroke="none"'),
+    shield: circ(8.5, 23, 6.3, '#a8793a') + stroke('M4.4 20.6H12.6M4 23H13M4.4 25.4H12.6', '#6a4a22', 0.7) + circ(8.5, 23, 1.7, STEEL),
+    weapon: spear(36),
+  },
+  avars: {
+    skin: '#d2a070',
+    tunic: '#7a3a24',
+    legs: 'pants',
+    legColor: '#4a3a2a',
+    legColor2: '#c9a02a',
+    boots: '#2f241a',
+    deco:
+      path('M10.6 14.4Q16 12.8 21.4 14.4L22 25L10 25Z', '#8e6a3a') +
+      stroke('M11.4 17H20.6M11.2 19.6H20.8M11 22.2H21', '#5a3a1a', 0.6) +
+      rect(10.2, 24, 11.6, 1.6, '#c9a02a', 0, 'stroke="none"') +
+      quiver('#5a3a1a'),
+    back: path('M12 9L9.8 18L11.6 17.4L13 10Z', '#1f1a14') + path('M20 9L22.2 18L20.4 17.4L19 10Z', '#1f1a14'),
+    head: path('M11.8 9Q12 4 16 0.8Q20 4 20.2 9L19.6 9L19.6 7.2L12.4 7.2L12.4 9Z', STEEL) + path('M14.8 1.6L16 0L17.2 1.6Z', '#c0282a') + moustache('#1f1a14'),
+    weapon: bow('#7a4a22'),
+  },
+  vikings: {
+    tunic: '#8a5a2b',
+    legs: 'pants',
+    legColor: '#5a5a4a',
+    legColor2: '#a8281e',
+    boots: '#3a2a1a',
+    deco: mailTorso('#9aa0a5', '#6e747a') + rect(10.2, 24, 11.6, 1.6, '#3a2a1a', 0, 'stroke="none"'),
+    back: path('M12.2 10L11 18L13 16.4L13.4 10.6Z', '#c98a3a'),
+    head:
+      path('M11.6 9Q11.6 3.6 16 3.4Q20.4 3.6 20.4 9L19.6 9L19.6 7.4L12.4 7.4L12.4 9Z', '#8e949a') +
+      rect(15.6, 6, 0.9, 5, '#6e747a', 0, 'stroke="none"') +
+      path('M12.6 10.6Q16 20 19.4 10.6Q16 13 12.6 10.6Z', '#c98a3a', 'stroke="none"'),
+    shield: circ(8.5, 23, 6.3, '#a8281e') + path('M8.5 16.7A6.3 6.3 0 0 1 8.5 29.3Z', '#e8dcc0', 'stroke="none"') + circ(8.5, 23, 1.7, STEEL),
+    weapon: rect(25.4, 6, 1.4, 31, WOOD) + path('M26.1 6.2Q31 8 30.6 14.6Q27.8 12.6 26.1 13.4Z', STEEL),
+  },
+  basques: {
+    tunic: '#7a6a4a',
+    legs: 'pants',
+    legColor: '#8a7a5a',
+    legColor2: '#3a2a1a',
+    boots: '#5a3a1a',
+    deco: rect(10.2, 23.4, 11.6, 2.2, '#3a2a1a', 0, 'stroke="none"') + stroke('M11.6 15.8L20.4 22', '#5a4a2a', 0.8),
+    head: path('M11.4 8.4Q11.8 4.2 16 4Q21.6 3.6 21.2 8Q16 6.4 11.4 8.4Z', '#b23a2b') + circ(16, 3.6, 0.9, '#b23a2b') + moustache('#3a2a1a'),
+    shield: circ(8.5, 24, 4.2, '#6a4a2a') + circ(8.5, 24, 1.3, STEEL),
+    weapon: spear(34) + `<g transform="translate(-3.4 4)">` + rect(25.2, 12, 1.2, 22, WOOD) + path('M25.8 9.4L27 12.4L24.6 12.4Z', STEEL) + `</g>`,
+  },
+} satisfies Partial<Record<Faction, Spec>>;
+
 export const SOLDIER_SPECS = {
   romains: {
     tunic: '#b23a2b',
@@ -1143,6 +1246,7 @@ export const SOLDIER_SPECS = {
   ...MONGOL_ADV_SOLDIER_SPECS,
   ...ESP_SOLDIER_SPECS,
   ...SAINT_SOLDIER_SPECS,
+  ...CAROLINGIAN_SOLDIER_SPECS,
 } satisfies Record<Faction, Spec>;
 
 /** Fabrique la chaîne SVG complète d'un soldat. */

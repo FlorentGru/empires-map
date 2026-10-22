@@ -7,12 +7,11 @@ Ce dossier n'est lu par aucun code : un empire n'y devient pas « disponible ».
 | Empire | Où | Fait | Reste |
 |---|---|---|---|
 | Mongols (1206-1368) | `data/empires/mongols/` + factions dans `src/types.ts` | histoire (35 étapes), villes | figurines (`src/figures/`), `scripts/empires/mongols.ts`, données `public/`, README. **La CI échoue tant que ce n'est pas fait** (typecheck + test:data). |
-| Carolingiens (751-888) | `data/drafts/carolingiens/` | histoire (21 étapes), carto préparée | tout le reste |
+| Carolingiens (751-888) | `data/empires/carolingiens/` | **fait** (octobre 2026) : disponible ; `carto.json` déplacé dans `overrides/carolingiens/_carto.json`, `contract.json` reste ici comme référence | — |
 | Saint-Empire (962-1806) | `data/empires/saint-empire/` | **fait** (octobre 2026) ; `carto.json` copié dans `overrides/saint-empire/_carto.json`, `contract.json` reste ici comme référence | — |
 | Espagne (1492-1976) | `data/empires/espagne/` | **fait** (octobre 2026) : disponible ; `carto.json` reste ici comme référence (copie dans `overrides/espagne/_carto.json`) | — |
 | Britannique, Russie | — | rien | volontairement non lancés |
 
-Note pour les Carolingiens : `magdeburg`, `verdun` et `tribur` sont déjà dans `data/cities.json` (rattachées au Saint-Empire) ; il suffira d'y ajouter `carolingiens` dans `empires` au lieu de les recréer.
 
 ## Contenu d'un brouillon
 - `timeline.json` : objet Empire complet (format `src/types.ts`).

@@ -299,6 +299,36 @@ export const FACTION_INFO: Record<Faction, FigureInfo> = {
     era: '1630 – 1648',
     text: "Armée nationale levée par conscription et réorganisée par Gustave-Adolphe : bataillons de mousquetaires et de piquiers peu profonds, artillerie légère, cavalerie qui charge à l'épée. Elle bat les impériaux à Breitenfeld (1631) et à Lützen (1632). Le roi y trouve la mort, mais la Suède restera une grande puissance jusqu'en 1721.",
   },
+  francs: {
+    label: 'Francs',
+    era: 'Ve – IXe s.',
+    text: "Peuple germanique devenu maître de la Gaule avec Clovis. Sous Pépin et Charlemagne, ses cavaliers cuirassés et ses fantassins levés par les comtes conquièrent l'Italie, la Saxe et la Bavière. L'armée est convoquée chaque printemps au Champ de mai. L'équipement coûte cher, d'où une aristocratie guerrière montée. Les Carolingiens règnent sur les Francs de 751 à 987.",
+  },
+  lombards: {
+    label: 'Lombards',
+    era: '568 – 774',
+    text: 'Peuple germanique installé en Italie du Nord en 568. Son royaume, avec Pavie pour capitale, domine la plaine du Pô et deux grands duchés au sud, Spolète et Bénévent. Les rois Aistolf puis Didier menacent Rome et se heurtent aux Francs. Charlemagne y met fin en 774 mais garde la couronne de fer lombarde.',
+  },
+  saxons: {
+    label: 'Saxons',
+    era: 'VIIIe – IXe s.',
+    text: "Peuple germanique païen établi entre le Rhin et l'Elbe, sans roi mais organisé en tribus et en assemblées. Ses sanctuaires, comme l'Irminsul, sont détruits par Charlemagne. Le chef Widukind dirige la résistance. La guerre dure de 772 à 804 ; la Saxe est alors convertie et annexée à l'empire.",
+  },
+  avars: {
+    label: 'Avars',
+    era: 'VIe – IXe s.',
+    text: "Cavaliers nomades venus d'Asie centrale au VIe siècle, installés en Pannonie (Hongrie). Leur chef est le khagan. Ils pillent Byzance et la Germanie et amassent un trésor dans leur camp fortifié, le Ring. Les Francs le prennent en 796, et les Avars disparaissent en quelques décennies.",
+  },
+  vikings: {
+    label: 'Vikings',
+    era: 'VIIIe – XIe s.',
+    text: "Marins et guerriers du Danemark, de la Norvège et de la Suède. Dès la fin du VIIIe siècle, leurs drakkars frappent les côtes et remontent les fleuves de l'Occident. Ils pillent Paris en 845 et l'assiègent en 885-886. Les rois affaiblis achètent leur départ par un tribut, le Danegeld, avant de leur céder la Normandie (911).",
+  },
+  basques: {
+    label: 'Basques',
+    era: 'VIIIe – IXe s.',
+    text: "Peuple ancien des Pyrénées occidentales, appelé Vascons dans les textes latins. Leur langue n'est pas indo-européenne. Ils résistent aux Wisigoths, aux Francs et aux Arabes. En 778, ils tendent une embuscade à l'arrière-garde de Charlemagne à Roncevaux. Leur royaume de Pampelune (la future Navarre) se forme en 824.",
+  },
 };
 
 export const ARCHETYPE_INFO: Record<Archetype, FigureInfo> = {
@@ -476,5 +506,25 @@ export const ARCHETYPE_INFO: Record<Archetype, FigureInfo> = {
     label: "Capitaine d'Empire",
     era: 'XVe – XVIIe s.',
     text: "Les chefs d'armée du Saint-Empire sont souvent des nobles bohémiens, bavarois ou wallons, parfois des entrepreneurs de guerre qui lèvent des régiments à leurs frais. Jan Žižka, Tilly, Wallenstein ou Pappenheim relèvent de ce type. Ils s'appuient sur des mercenaires payés par contrat.",
+  },
+  'roi-franc': {
+    label: 'Roi franc',
+    era: 'VIIIe – IXe s.',
+    text: "Chef de guerre élu à l'origine par les grands, le roi des Francs devient avec l'onction un souverain sacré. Il rend la justice, convoque l'armée au Champ de mai et partage ses terres entre ses fils.",
+  },
+  'empereur-carolingien': {
+    label: 'Empereur carolingien',
+    era: '800 – 888',
+    text: "Titre rétabli pour Charlemagne en 800 par le pape Léon III. L'empereur se veut chef de la chrétienté d'Occident, protecteur de l'Église et héritier de Rome. Le titre passe ensuite aux descendants de Charlemagne, de plus en plus faibles.",
+  },
+  'seigneur-franc': {
+    label: 'Comte ou seigneur franc',
+    era: 'VIIIe – IXe s.',
+    text: "Comte, marquis ou grand propriétaire qui gouverne une région au nom du roi et lève des hommes pour l'armée. Au IXe siècle ces charges deviennent héréditaires, origine de la féodalité.",
+  },
+  prelat: {
+    label: 'Évêque ou abbé',
+    era: 'VIIIe – IXe s.',
+    text: 'Évêques et abbés conseillent le roi, rédigent les actes, tiennent les écoles et possèdent de vastes domaines. Ils dirigent souvent des contingents de guerriers et jouent un rôle politique de premier plan.',
   },
 };

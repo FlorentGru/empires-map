@@ -1,0 +1,26 @@
+{
+ "areas": {
+  "pepin-sacre-751": 710493,
+  "donation-pepin-756": 710493,
+  "charlemagne-roi-768": 720142,
+  "pavie-774": 916856,
+  "roncevaux-778": 916856,
+  "verden-782": 916856,
+  "baviere-788": 1024002,
+  "avars-796": 1024002,
+  "empereur-800": 1119745,
+  "barcelone-801": 1122783,
+  "mort-charlemagne-814": 1122783,
+  "ordinatio-817": 1122783,
+  "fontenoy-841": 1122783,
+  "strasbourg-842": 1122783,
+  "verdun-843": 1163940,
+  "paris-845": 1163940,
+  "prum-855": 1106154,
+  "meerssen-870": 1109226,
+  "charles-gros-884": 1122783,
+  "siege-paris-885": 1122783,
+  "deposition-887": 1130123
+ },
+ "apogee": "verdun-843"
+}

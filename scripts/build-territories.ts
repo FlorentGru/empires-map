@@ -87,7 +87,13 @@ function unionAll(list: Poly[]): Poly | null {
 
 function difference(a: Poly | null, b: Poly): Poly | null {
   if (!a) return null;
-  return (turf.difference(turf.featureCollection([a, b])) as Poly | null) ?? null;
+  try {
+    return (turf.difference(turf.featureCollection([a, b])) as Poly | null) ?? null;
+  } catch {
+    // Anneau non refermable (auto-intersection d'une géométrie simplifiée) : on réessaie après nettoyage buffer(0).
+    const fix = (f: Poly) => turf.buffer(f, 0) as Poly;
+    return (turf.difference(turf.featureCollection([fix(a), fix(b)])) as Poly | null) ?? null;
+  }
 }
 
 function intersect(a: Poly | null, b: Poly): Poly | null {

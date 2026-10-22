@@ -1,0 +1,332 @@
+[
+  {
+    "id": "pepin-le-bref",
+    "name": "Pépin le Bref",
+    "archetype": "roi-franc",
+    "faction": "francs",
+    "born": 714,
+    "died": 768,
+    "title": "Premier roi carolingien des Francs",
+    "bio": "Fils de Charles Martel, Pépin hérite avec son frère Carloman de la charge de maire du palais, c'est-à-dire du vrai pouvoir sous les derniers rois mérovingiens. Quand Carloman se retire au monastère, Pépin est seul maître. Il fait approuver par le pape Zacharie l'idée qu'il vaut mieux appeler roi celui qui gouverne, puis se fait élire à Soissons en 751, probablement avec une onction par les évêques. En 754, le pape Étienne II vient en personne le sacrer à Saint-Denis et lui demande protection contre les Lombards. Pépin franchit les Alpes, bat le roi Aistulf et remet au pape des territoires autour de Rome : c'est l'origine des États pontificaux. Il achève aussi la conquête de la Septimanie en prenant Narbonne en 759, puis lutte pendant huit ans contre le duc d'Aquitaine Waïfre. Il meurt à Saint-Denis en 768 et partage le royaume entre ses fils Charles et Carloman.",
+    "keyFacts": [
+      "751 : élu roi des Francs à Soissons",
+      "754 : sacré à Saint-Denis par le pape Étienne II",
+      "756 : donation qui fonde les États pontificaux",
+      "759 : prise de Narbonne, fin de la présence arabe en Septimanie",
+      "768 : mort et partage entre ses deux fils"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Pépin_le_Bref"
+      }
+    ]
+  },
+  {
+    "id": "charlemagne",
+    "name": "Charlemagne",
+    "archetype": "empereur-carolingien",
+    "faction": "francs",
+    "born": 748,
+    "died": 814,
+    "title": "Roi des Francs et premier empereur d'Occident depuis l'Antiquité",
+    "bio": "Né vers 748, fils de Pépin le Bref, Charles devient roi en 768 avec son frère Carloman, dont la mort en 771 lui laisse tout le royaume. Pendant plus de quarante ans, il guerroie presque chaque été : il conquiert le royaume lombard en 774, mène contre les Saxons une guerre de trente ans, annexe la Bavière en 788 et détruit le pouvoir des Avars dans les années 790. Il installe aussi une marche face à l'Espagne musulmane. Le jour de Noël 800, le pape Léon III le couronne empereur à Rome. Charlemagne gouverne par des assemblées annuelles, des capitulaires (textes de loi) et des envoyés qui contrôlent les comtes. Il attire des savants à sa cour d'Aix-la-Chapelle et favorise les écoles et la copie des livres. Il meurt à Aix le 28 janvier 814. Son règne a laissé une image si forte que les historiens parlent d'une « renaissance carolingienne ».",
+    "keyFacts": [
+      "768 : devient roi des Francs avec son frère Carloman",
+      "774 : prise de Pavie, il se proclame roi des Lombards",
+      "788 : déposition du duc de Bavière Tassilon III",
+      "800 : couronné empereur à Rome le jour de Noël",
+      "814 : mort à Aix-la-Chapelle"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Charlemagne"
+      }
+    ]
+  },
+  {
+    "id": "carloman-ier",
+    "name": "Carloman Ier",
+    "archetype": "roi-franc",
+    "faction": "francs",
+    "born": 751,
+    "died": 771,
+    "title": "Frère de Charlemagne, roi des Francs de 768 à 771",
+    "bio": "Fils cadet de Pépin le Bref, Carloman reçoit à la mort de son père, en 768, la partie du royaume qui forme une sorte de croissant au sud et à l'est : le Midi, la Bourgogne, l'Alsace et une partie de la Neustrie. Charles garde l'ouest et le nord, ainsi qu'une Aquitaine disputée. Les deux frères ne s'aiment guère : Carloman refuse de l'aider en 769 lors d'une révolte aquitaine, et leur mère Bertrade doit jouer les conciliatrices. Charles épouse une fille du roi lombard Didier, alors que Carloman se rapproche d'une autre politique italienne. Carloman meurt brusquement en décembre 771, probablement de maladie, à l'âge d'environ vingt ans. Ses fils étant tout jeunes, les grands du royaume reconnaissent Charles seul roi. Sa veuve Gerberge s'enfuit avec ses enfants chez Didier, ce qui sert de prétexte à l'intervention de Charles en Italie. On ne sait plus rien du sort des enfants de Carloman.",
+    "keyFacts": [
+      "751 : naissance, l'année du sacre de son père",
+      "768 : reçoit la moitié du royaume à la mort de Pépin",
+      "769 : refuse de soutenir Charles contre l'Aquitaine",
+      "771 : mort en décembre, Charles réunit le royaume",
+      "771 : sa veuve et ses fils se réfugient chez Didier"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Carloman_Ier"
+      }
+    ]
+  },
+  {
+    "id": "didier-roi-des-lombards",
+    "name": "Didier",
+    "archetype": "chef-barbare",
+    "faction": "lombards",
+    "title": "Dernier roi des Lombards",
+    "bio": "Duc de Toscane devenu roi des Lombards en 756, Didier doit sa couronne à un compromis : il accepte de rendre au pape certains territoires que son prédécesseur avait pris. Il règne dix-huit ans, restaure l'autorité du roi et rêve d'unifier la péninsule italienne sous son pouvoir. Pour s'allier aux Francs, il marie sa fille Désirée (appelée parfois Ermengarde) à Charles en 770, mais Charles la répudie un an plus tard. Didier se rapproche alors de la veuve de Carloman et réclame au pape Hadrien Ier de sacrer les fils de celui-ci. Ses attaques contre les territoires pontificaux décident le pape à appeler Charlemagne. En 773, l'armée franque franchit les Alpes et assiège Pavie pendant plusieurs mois. La ville tombe en juin 774 : Didier est envoyé en exil en Francie, sans doute à Corbie, et le royaume lombard devient une possession de Charles. Son fils Adalgis se réfugie à Byzance.",
+    "keyFacts": [
+      "756 : devient roi des Lombards",
+      "770 : marie sa fille à Charles, qui la répudie en 771",
+      "773 : Charlemagne passe les Alpes à l'appel du pape",
+      "774 : capitule à Pavie et part en exil, fin du royaume lombard"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Didier_de_Lombardie"
+      }
+    ]
+  },
+  {
+    "id": "widukind",
+    "name": "Widukind",
+    "archetype": "chef-barbare",
+    "faction": "saxons",
+    "title": "Chef saxon opposé à Charlemagne",
+    "bio": "Noble de Westphalie, Widukind apparaît dans les sources franques en 777 comme le principal chef des Saxons qui refusent la conquête et la conversion forcée. Lorsque Charlemagne est loin, il lance des raids ; il se réfugie chez les Danois quand les Francs reviennent. En 782, il bat une armée franque au mont Süntel. Charlemagne répond par la répression de Verden, où les Annales royales disent que 4 500 Saxons sont exécutés, chiffre débattu par les historiens. La guerre continue plusieurs années, avec des révoltes et des lois très dures contre les païens. En 785, Widukind négocie, vient trouver Charlemagne à Attigny et reçoit le baptême, avec pour parrain le roi lui-même. Ensuite, nous ne savons presque rien de lui. Les légendes ultérieures en font un héros saxon, puis, à l'époque moderne, un symbole national allemand. Les Saxons ne seront définitivement soumis qu'en 804.",
+    "keyFacts": [
+      "777 : premier chef saxon cité comme opposant à Charlemagne",
+      "782 : victoire saxonne au mont Süntel",
+      "782 : massacre de Verden en représailles",
+      "785 : baptême à Attigny, fin de sa résistance"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Widukind"
+      }
+    ]
+  },
+  {
+    "id": "leon-iii",
+    "name": "Léon III",
+    "archetype": "pape",
+    "faction": "romains",
+    "died": 816,
+    "title": "Pape qui couronne Charlemagne empereur",
+    "bio": "Élu pape en 795, Léon III envoie dès son élection les clés du tombeau de saint Pierre et l'étendard de Rome à Charlemagne, signe de son désir d'appui. En avril 799, des proches de son prédécesseur l'attaquent en pleine procession, l'accusent de plusieurs fautes et tentent de lui crever les yeux ; il s'enfuit, blessé, et se réfugie auprès du roi à Paderborn. Charlemagne le fait reconduire à Rome. À son arrivée en novembre 800, le roi organise une assemblée où le pape jure son innocence. Le jour de Noël 800, à la basilique Saint-Pierre, Léon III pose une couronne sur la tête de Charlemagne et la foule l'acclame empereur. Les sources divergent sur ce qui était prévu. Selon Éginhard, Charlemagne aurait été surpris et mécontent. Quoi qu'il en soit, le geste affirme le rôle du pape dans le choix de l'empereur. Léon III meurt en 816 et sera canonisé.",
+    "keyFacts": [
+      "795 : élu pape",
+      "799 : agressé à Rome et réfugié auprès de Charlemagne",
+      "800 : serment de purgation puis couronnement de Charlemagne",
+      "816 : mort à Rome"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Léon_III_(pape)"
+      }
+    ]
+  },
+  {
+    "id": "roland",
+    "name": "Roland",
+    "archetype": "seigneur-franc",
+    "faction": "francs",
+    "died": 778,
+    "title": "Chef de la marche de Bretagne, héros de la Chanson",
+    "bio": "On sait peu de choses sûres sur Roland. Un seul texte contemporain le mentionne : la Vie de Charlemagne d'Éginhard, qui dit que « Hruodland, préfet de la marche de Bretagne » est mort dans l'embuscade de Roncevaux, le 15 août 778, avec d'autres grands. Cette année-là, Charlemagne revient d'une expédition en Espagne et son armée traverse les Pyrénées. L'arrière-garde est surprise dans la vallée par des Vascons, ce qui est la version des sources franques, et massacrée ; les Vascons s'emparent du butin et disparaissent. Il ne s'agit donc pas de Sarrasins, contrairement à la légende. À partir du XIe siècle, la Chanson de Roland, poème épique composé vers 1100, transforme l'épisode : Roland devient neveu de l'empereur, traité par un félon, il souffle dans son olifant et brise son épée Durandal avant de mourir. Le personnage incarne depuis l'idéal du chevalier chrétien.",
+    "keyFacts": [
+      "778 : mort à Roncevaux selon Éginhard",
+      "778 : l'embuscade est tendue par des Vascons",
+      "vers 1100 : la Chanson de Roland en fait un héros chrétien"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Bataille_de_Roncevaux_(778)"
+      }
+    ]
+  },
+  {
+    "id": "eginhard",
+    "name": "Éginhard",
+    "archetype": "seigneur-franc",
+    "faction": "francs",
+    "born": 775,
+    "died": 840,
+    "title": "Biographe de Charlemagne",
+    "bio": "Né vers 775 dans une famille de petite noblesse de la vallée du Main, Éginhard est confié à l'abbaye de Fulda, puis arrive à la cour d'Aix-la-Chapelle. De petite taille, mais très bon lettré et habile artisan, il devient l'un des proches conseillers de Charlemagne, qui le charge de la direction de ses chantiers. Il est aussi l'ami de Louis le Pieux, dont il reste conseiller. Vers 830, il rédige la Vie de Charlemagne, le premier portrait de roi du Moyen Âge, qu'il construit sur le modèle de Suétone, historien romain. Il y décrit un homme grand, sobre, aimant la natation, le cheval et la chasse, mais aussi attentif à l'instruction. Le texte est parfois flatteur, mais il reste la meilleure source sur le souverain. Éginhard se retire ensuite avec son épouse Imma sur les terres que lui a données Louis le Pieux, à Seligenstadt, où il fonde une abbaye. Il y meurt en 840.",
+    "keyFacts": [
+      "vers 775 : naissance dans la vallée du Main",
+      "vers 830 : écrit la Vie de Charlemagne",
+      "vers 830 : se retire à Seligenstadt, où il fonde une abbaye",
+      "840 : mort à Seligenstadt"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Éginhard"
+      }
+    ]
+  },
+  {
+    "id": "alcuin",
+    "name": "Alcuin",
+    "archetype": "sage",
+    "faction": "francs",
+    "born": 735,
+    "died": 804,
+    "title": "Maître de l'école palatine de Charlemagne",
+    "bio": "Né vers 735 dans le royaume de Northumbrie, Alcuin étudie puis enseigne à l'école cathédrale d'York, l'une des plus savantes d'Europe. En 781, à Parme, il rencontre Charlemagne, qui l'invite à sa cour. Il en devient le principal conseiller en matière d'éducation, et dirige l'école du palais à Aix-la-Chapelle. Il y enseigne la grammaire, la rhétorique, la dialectique et l'astronomie, et il inspire l'Admonitio generalis de 789, qui demande l'ouverture d'écoles près des évêchés et des monastères. Il corrige les textes religieux, participe à la réforme de la liturgie et écrit de nombreuses lettres où il conseille le roi, y compris contre le baptême forcé des Saxons. Vers 796, Charlemagne lui confie l'abbaye de Saint-Martin de Tours, où l'atelier de copie fait appel à une écriture claire, la minuscule caroline, qui va se répandre. Alcuin y meurt le 19 mai 804.",
+    "keyFacts": [
+      "781 : rencontre Charlemagne à Parme",
+      "789 : inspire l'Admonitio generalis sur les écoles",
+      "796 : devient abbé de Saint-Martin de Tours",
+      "804 : mort à Tours"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Alcuin"
+      }
+    ]
+  },
+  {
+    "id": "louis-le-pieux",
+    "name": "Louis le Pieux",
+    "archetype": "empereur-carolingien",
+    "faction": "francs",
+    "born": 778,
+    "died": 840,
+    "title": "Fils de Charlemagne, empereur de 814 à 840",
+    "bio": "Troisième fils de Charlemagne, Louis est roi d'Aquitaine dès l'âge de trois ans, puis seul héritier après la mort de ses frères. Associé à l'empire en 813, il succède à son père en 814 et gouverne avec de nombreux conseillers d'Église, ce qui lui vaut son surnom de « Pieux ». En 817, l'Ordinatio imperii prévoit que l'empire reste unique, sous Lothaire, tandis que ses autres fils reçoivent des royaumes dépendants. Mais la naissance de Charles, fils d'une seconde épouse, Judith de Bavière, oblige à modifier le plan. Ses fils se révoltent. En 833, au « Champ du Mensonge », ses troupes l'abandonnent et on le dépose. Rétabli en 834, il règne encore six ans, entre nouveaux partages et nouvelles guerres. Il meurt en juin 840, sur une île du Rhin près d'Ingelheim, et la guerre entre ses fils éclate aussitôt.",
+    "keyFacts": [
+      "781 : roi d'Aquitaine à trois ans",
+      "814 : succède à Charlemagne",
+      "817 : Ordinatio imperii, premier plan de succession",
+      "833 : déposé par ses fils, rétabli en 834",
+      "840 : mort près d'Ingelheim"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Louis_Ier_le_Pieux"
+      }
+    ]
+  },
+  {
+    "id": "lothaire-ier",
+    "name": "Lothaire Ier",
+    "archetype": "empereur-carolingien",
+    "faction": "francs",
+    "born": 795,
+    "died": 855,
+    "title": "Empereur, aîné de Louis le Pieux",
+    "bio": "Fils aîné de Louis le Pieux, Lothaire est associé à l'empire dès 817 et couronné empereur à Rome en 823. Il s'oppose à son père lorsque celui-ci veut donner une part à son demi-frère Charles, et dirige la révolte de 833. À la mort de Louis en 840, il veut conserver l'autorité sur tout l'empire, mais ses frères Louis et Charles s'allient contre lui. Battu à Fontenoy en juin 841, il doit négocier. Le traité de Verdun, en 843, lui laisse le titre d'empereur, l'Italie et une bande de terres entre Rhin et Escaut, qu'on appelle la Francie médiane, avec Aix-la-Chapelle et Rome. Cette bande ne correspond à aucune région naturelle et sera longtemps disputée. En 855, malade, il partage ces terres entre ses trois fils à Prüm, entre dans l'abbaye de ce nom comme moine, et y meurt quelques jours plus tard.",
+    "keyFacts": [
+      "817 : associé à l'empire par son père",
+      "841 : défaite à Fontenoy-en-Puisaye",
+      "843 : reçoit l'Italie et la Francie médiane à Verdun",
+      "855 : partage à Prüm et mort comme moine"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Lothaire_Ier"
+      }
+    ]
+  },
+  {
+    "id": "louis-le-germanique",
+    "name": "Louis le Germanique",
+    "archetype": "roi-franc",
+    "faction": "francs",
+    "born": 806,
+    "died": 876,
+    "title": "Roi de Francie orientale",
+    "bio": "Deuxième fils de Louis le Pieux, Louis reçoit en 817 le royaume de Bavière, à l'est de l'empire. Il se révolte plusieurs fois contre son père, en espérant un plus grand domaine. À la mort de Louis le Pieux, il s'allie avec son demi-frère Charles le Chauve contre Lothaire. Le 14 février 842, à Strasbourg, les deux frères échangent des serments devant leurs armées, chacun dans la langue de l'autre : le texte, en vieux français et en vieux haut-allemand, est l'un des plus anciens documents écrits dans ces langues. Le traité de Verdun lui donne en 843 la Francie orientale, entre le Rhin et l'Elbe. Il y gouverne avec les évêques, mène des guerres contre les Slaves et lutte contre les Moraves. En 870, à Meerssen, il obtient la moitié de la Lotharingie. Il meurt à Francfort en 876, et ses États sont partagés entre ses trois fils.",
+    "keyFacts": [
+      "817 : reçoit le royaume de Bavière",
+      "842 : serments de Strasbourg avec Charles le Chauve",
+      "843 : obtient la Francie orientale à Verdun",
+      "870 : reçoit la moitié orientale de la Lotharingie à Meerssen",
+      "876 : mort à Francfort"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Louis_le_Germanique"
+      }
+    ]
+  },
+  {
+    "id": "charles-le-chauve",
+    "name": "Charles le Chauve",
+    "archetype": "roi-franc",
+    "faction": "francs",
+    "born": 823,
+    "died": 877,
+    "title": "Roi de Francie occidentale puis empereur",
+    "bio": "Né en 823 à Francfort, fils de Louis le Pieux et de sa seconde épouse Judith de Bavière, Charles est le dernier-né, pour qui l'on a dû refaire les partages. À la mort de son père, il s'allie avec Louis le Germanique et bat Lothaire à Fontenoy. À Verdun en 843, il obtient la Francie occidentale, soit à peu près la France future. Il règne trente-quatre ans dans un royaume harcelé par les Vikings, qui remontent la Seine et la Loire, et par les révoltes. En 864, par l'édit de Pîtres, il ordonne de construire des ponts fortifiés et de lever des chevaux contre les pillards. Il protège les savants, comme Jean Scot Érigène, et fait copier des manuscrits somptueux. En 875, il se fait couronner empereur à Rome après la mort de Louis II, puis meurt en octobre 877, en revenant d'Italie, dans un village de Savoie.",
+    "keyFacts": [
+      "843 : obtient la Francie occidentale à Verdun",
+      "864 : édit de Pîtres, ponts fortifiés contre les Vikings",
+      "870 : partage la Lotharingie avec Louis le Germanique",
+      "875 : couronné empereur à Rome",
+      "877 : mort en Savoie, au retour d'Italie"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Charles_le_Chauve"
+      }
+    ]
+  },
+  {
+    "id": "charles-le-gros",
+    "name": "Charles le Gros",
+    "archetype": "empereur-carolingien",
+    "faction": "francs",
+    "born": 839,
+    "died": 888,
+    "title": "Dernier empereur à réunir l'empire carolingien",
+    "bio": "Troisième fils de Louis le Germanique, Charles reçoit à la mort de son père, en 876, l'Alémanie, puis hérite de l'Italie en 879. Le pape le couronne empereur en 881. Grâce à une série de morts dans la famille, il se retrouve en 884 roi de Francie occidentale et réunit presque tout l'empire de Charlemagne. Mais il est malade, probablement d'épilepsie, et peu apprécié des grands. En 885-886, les Vikings assiègent Paris, défendue par le comte Eudes et l'évêque Gozlin. Charles arrive avec une armée, ne livre pas bataille et achète le départ des Vikings, qui reçoivent le droit d'aller piller la Bourgogne. Cette conduite choque les contemporains. En novembre 887, une assemblée de grands, réunie à Tribur, le dépose et élit son neveu Arnulf. Charles meurt quelques semaines plus tard, le 13 janvier 888. L'empire ne sera plus jamais réuni.",
+    "keyFacts": [
+      "876 : hérite de l'Alémanie",
+      "881 : couronné empereur à Rome",
+      "884 : réunit l'empire, y compris la Francie occidentale",
+      "886 : paie les Vikings devant Paris",
+      "887 : déposé à Tribur, mort en janvier 888"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Charles_le_Gros"
+      }
+    ]
+  },
+  {
+    "id": "eudes",
+    "name": "Eudes",
+    "archetype": "seigneur-franc",
+    "faction": "francs",
+    "born": 860,
+    "died": 898,
+    "title": "Comte de Paris défenseur de la ville, puis roi",
+    "bio": "Fils de Robert le Fort, un grand seigneur de la Loire, Eudes devient comte de Paris et abbé laïc de Saint-Martin de Tours. Quand les Vikings assiègent Paris, en novembre 885, il organise la défense avec l'évêque Gozlin, sur l'île de la Cité, avec un pont fortifié. Les assaillants, nombreux, mènent des attaques répétées et construisent des machines de siège, mais ne parviennent pas à prendre la ville. Pendant que l'empereur Charles le Gros tarde à intervenir, Eudes sort pour aller le chercher et revient dans la ville. Cette résistance lui donne un grand prestige. En 888, après la mort de Charles, les grands du royaume élisent Eudes roi de Francie occidentale à Compiègne : il est le premier roi non carolingien depuis 751. Il doit se battre contre le parti du jeune Charles le Simple et contre les Vikings. Eudes meurt en 898, et ses descendants, les Robertiens, deviendront rois de France avec Hugues Capet.",
+    "keyFacts": [
+      "885-886 : défend Paris contre les Vikings",
+      "888 : élu roi de Francie occidentale à Compiègne",
+      "888 : premier roi non carolingien depuis 751",
+      "898 : mort, laissant la couronne à Charles le Simple"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Eudes_(roi_des_Francs)"
+      }
+    ]
+  }
+]

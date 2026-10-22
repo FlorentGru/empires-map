@@ -1,0 +1,132 @@
+[
+  {
+    "name": "Royaume des Francs",
+    "summary": "Le cœur de la puissance carolingienne : l'ancienne Gaule franque, de la Neustrie (autour de Paris) à l'Austrasie (entre Meuse et Rhin), berceau de la famille de Pépin. C'est de là que partent, chaque printemps, les armées qui conquièrent l'Italie, la Saxe et la Bavière.",
+    "years": [751, 796]
+  },
+  {
+    "name": "Gascogne (Vasconie)",
+    "summary": "Le pays des Vascons, entre la Garonne et les Pyrénées. Ces montagnards reconnaissent l'autorité franque du bout des lèvres et se révoltent souvent ; ce sont des Basques qui massacrent l'arrière-garde de Charlemagne à Roncevaux en 778.",
+    "years": [751, 796]
+  },
+  {
+    "name": "Frise",
+    "summary": "La côte basse de la mer du Nord, de l'embouchure du Rhin à la Weser, peuplée de marins et de marchands païens. Soumise par étapes au VIIIe siècle et évangélisée par des missionnaires anglo-saxons comme saint Boniface, elle est ensuite intégrée au royaume franc.",
+    "years": [751, 768]
+  },
+  {
+    "name": "États pontificaux",
+    "summary": "Les terres d'Italie centrale autour de Rome et de Ravenne, données au pape par Pépin le Bref en 756 après ses victoires sur les Lombards. Le pape y règne en souverain, sous la protection des rois francs : c'est la naissance d'un État qui durera jusqu'en 1870.",
+    "years": [756, 885]
+  },
+  {
+    "name": "Septimanie",
+    "summary": "La bande côtière du Languedoc actuel, de Narbonne aux Pyrénées, ancienne province wisigothique occupée un temps par les Arabes. Pépin le Bref la reprend en 759 après le siège de Narbonne ; elle sert ensuite de base pour les expéditions au-delà des Pyrénées.",
+    "years": [768, 796]
+  },
+  {
+    "name": "Royaume lombard (Charlemagne)",
+    "summary": "L'Italie du Nord et du Centre, conquise par Charlemagne en 774 après la prise de Pavie. Il ne l'annexe pas : il se proclame lui-même « roi des Lombards » et garde la couronne de fer, puis confie ce royaume d'Italie à son fils Pépin.",
+    "years": [774, 796]
+  },
+  {
+    "name": "Saxe (en cours de soumission)",
+    "summary": "Les terres des Saxons païens entre le Rhin et l'Elbe, pendant la longue guerre de Charlemagne (772-804). En 782, après une révolte menée par Widukind, le roi fait exécuter des centaines de prisonniers à Verden : la Saxe est occupée mais pas encore soumise.",
+    "years": [782, 782]
+  },
+  {
+    "name": "Bavière orientale et Salzbourg",
+    "summary": "Les marges orientales du duché de Bavière, autour de l'évêché de Salzbourg et le long du Danube. Annexées en 788 avec la déposition du duc Tassilon III, elles deviennent la base de départ des campagnes contre les Avars.",
+    "years": [788, 796]
+  },
+  {
+    "name": "Marche d'Espagne (Gérone)",
+    "summary": "Une zone frontière au sud des Pyrénées, dans l'actuelle Catalogne, conquise sur l'émirat de Cordoue : Gérone se donne aux Francs en 785, puis Barcelone tombe en 801. Gouvernée par des comtes, elle est à l'origine des comtés catalans.",
+    "years": [788, 796]
+  },
+  {
+    "name": "Saxe",
+    "summary": "Le pays saxon une fois intégré à l'empire : converti de force, découpé en comtés et en évêchés (Paderborn, Brême, Münster). Après trente ans de guerre, cette région autrefois rebelle devient au Xe siècle le cœur de la dynastie qui fondera le Saint-Empire.",
+    "years": [788, 796]
+  },
+  {
+    "name": "Duché de Bénévent",
+    "summary": "Le grand duché lombard du sud de l'Italie, qui échappe à la conquête de 774. Ses princes reconnaissent par moments la suzeraineté franque et paient tribut, mais restent en pratique indépendants, entre l'empire carolingien et Byzance.",
+    "years": [788, 817]
+  },
+  {
+    "name": "Marche d'Avarie",
+    "summary": "La plaine du Danube moyen (Autriche orientale et Hongrie occidentale), arrachée aux Avars après la prise de leur camp fortifié, le Ring, en 796. Les Francs y installent des marches, des colons bavarois et des missions, jusqu'à l'arrivée des Hongrois à la fin du IXe siècle.",
+    "years": [796, 842]
+  },
+  {
+    "name": "Empire carolingien",
+    "summary": "L'ensemble des terres de Charlemagne après son couronnement à Rome le jour de Noël 800 : de l'Èbre à l'Elbe et de la mer du Nord à Rome, environ un million de kilomètres carrés. Son fils Louis le Pieux en hérite seul en 814, avant les guerres entre ses fils.",
+    "years": [800, 842]
+  },
+  {
+    "name": "Bretagne",
+    "summary": "La péninsule armoricaine, peuplée de Bretons venus de Grande-Bretagne. Les Carolingiens n'y imposent qu'une suzeraineté lâche, souvent contestée. Le chef breton Nominoë s'émancipe, et son fils Erispoë arrache en 851 le titre de roi à Charles le Chauve.",
+    "years": [800, 885]
+  },
+  {
+    "name": "Francie occidentale (Charles le Chauve)",
+    "summary": "Le royaume attribué à Charles le Chauve par le traité de Verdun (843) : la Gaule à l'ouest de l'Escaut, de la Meuse, de la Saône et du Rhône. Ravagé par les Vikings, il est l'ancêtre direct du royaume de France.",
+    "years": [843, 870]
+  },
+  {
+    "name": "Francie orientale (Louis le Germanique)",
+    "summary": "Le royaume de Louis le Germanique, à l'est du Rhin : Saxe, Franconie, Souabe, Bavière. Ses habitants parlent des langues germaniques. Il donne naissance au royaume de Germanie, puis au Saint-Empire romain germanique en 962.",
+    "years": [843, 870]
+  },
+  {
+    "name": "Francie médiane (Lothaire Ier)",
+    "summary": "La bande centrale de l'empire attribuée à Lothaire Ier, l'aîné, en 843 : des Pays-Bas à l'Italie en passant par Aix-la-Chapelle, l'Alsace, la Bourgogne et la Provence. Ce royaume en longueur, sans unité, est partagé dès la mort de Lothaire en 855.",
+    "years": [843, 845]
+  },
+  {
+    "name": "Lotharingie (Lothaire II)",
+    "summary": "La partie nord de la Francie médiane, laissée en 855 à Lothaire II, de la Frise aux Vosges. Elle a donné son nom à la Lorraine. Sans héritier légitime, Lothaire II meurt en 869 et ses oncles se partagent ses terres à Meerssen en 870.",
+    "years": [855, 855]
+  },
+  {
+    "name": "Provence et Bourgogne (Charles de Provence)",
+    "summary": "La vallée du Rhône et la Provence, part du plus jeune fils de Lothaire Ier en 855. Charles, épileptique, meurt sans enfant en 863, et ses frères se partagent son petit royaume.",
+    "years": [855, 855]
+  },
+  {
+    "name": "Royaume d'Italie (Louis II, empereur)",
+    "summary": "L'Italie du Nord et du Centre, laissée en 855 à Louis II, fils aîné de Lothaire Ier, qui porte aussi le titre d'empereur. Il passe son règne à combattre les Sarrasins dans le sud de la péninsule, notamment à Bari.",
+    "years": [855, 855]
+  },
+  {
+    "name": "Royaume d'Italie et Provence (Louis II, empereur)",
+    "summary": "Les terres de l'empereur Louis II après 863 : l'Italie, augmentée d'une part de la Provence de son frère défunt. Avec Lothaire II mort, il est en 870 le dernier héritier de la Francie médiane, mais ne peut empêcher ses oncles de se partager la Lotharingie.",
+    "years": [870, 870]
+  },
+  {
+    "name": "Empire carolingien réunifié (Charles le Gros)",
+    "summary": "Une brève réunification : par une série de morts et d'héritages, Charles le Gros, fils de Louis le Germanique, se retrouve en 884 roi de toutes les Francies et de l'Italie. Incapable de chasser les Vikings du siège de Paris, il est déposé en 887.",
+    "years": [884, 885]
+  },
+  {
+    "name": "Francie occidentale (Eudes)",
+    "summary": "Le royaume de l'Ouest après la déposition de Charles le Gros. Les grands y élisent en 888 le comte Eudes, héros du siège de Paris contre les Vikings : pour la première fois, un roi qui n'est pas carolingien. Sa famille, les Robertiens, donnera les Capétiens.",
+    "years": [887, 887]
+  },
+  {
+    "name": "Francie orientale (Arnulf de Carinthie)",
+    "summary": "Le royaume de l'Est, pris en 887 par Arnulf de Carinthie, fils illégitime d'un petit-fils de Louis le Pieux, qui renverse Charles le Gros. Arnulf est le dernier Carolingien à être couronné empereur, en 896.",
+    "years": [887, 887]
+  },
+  {
+    "name": "Haute-Bourgogne et Provence (Rodolphe, Louis l'Aveugle)",
+    "summary": "Les pays du Jura, des Alpes et de la vallée du Rhône, où deux princes se font proclamer rois : Rodolphe en Haute-Bourgogne en 888, Louis, futur « l'Aveugle », en Provence. Ces deux royaumes bourguignons seront réunis au Xe siècle.",
+    "years": [887, 887]
+  },
+  {
+    "name": "Royaume d'Italie (Bérenger de Frioul)",
+    "summary": "L'Italie du Nord après 887, revendiquée par Bérenger, marquis de Frioul et petit-fils de Louis le Pieux par sa mère. Il lutte pendant trente ans contre des rivaux pour la couronne d'Italie et devient empereur en 915, dernier à porter ce titre avant les Ottoniens.",
+    "years": [887, 887]
+  }
+]

@@ -65,6 +65,12 @@ export const FACTION_COLORS = {
   lansquenets: '#4b4fc0',
   magyars: '#6aa84f',
   suedois: '#2a7fd6',
+  francs: '#2c4a9e',
+  lombards: '#8a9a2a',
+  saxons: '#b08a4a',
+  avars: '#b5481f',
+  vikings: '#1f8a8a',
+  basques: '#c0307a',
 } satisfies Record<Faction, string>;
 
 /** Composant React (démo) du soldat d'une faction. */
