@@ -69,4 +69,23 @@ describe('data/disasters.json', () => {
       expect((d.belligerents ?? []).length).toBeGreaterThanOrEqual(2);
     },
   );
+
+  it("les empires belligérants existent dans le catalogue et ne concernent que des guerres", () => {
+    const catalog = new Set(readJson<{ id: string }[]>(join(DATA, 'empires-catalog.json')).map((c) => c.id));
+    const tagged = disasters.filter((d) => d.belligerentEmpires);
+    expect(tagged.map((d) => d.id)).toEqual(expect.arrayContaining(['conquetes-mongoles', 'guerres-napoleoniennes', 'seconde-guerre-punique']));
+    for (const d of tagged) {
+      expect(d.kind, d.id).toBe('guerre');
+      expect(d.belligerentEmpires!.length, d.id).toBeGreaterThan(0);
+      for (const id of d.belligerentEmpires!) expect(catalog.has(id), `${d.id} : ${id}`).toBe(true);
+    }
+  });
+
+  it('chaque guerre a sa zone découpée sur les terres (public/data/disaster-areas.geojson)', () => {
+    const areas = readJson<{ features: { properties: { id: string }; geometry: { type: string } }[] }>(join(DATA, '..', 'public/data/disaster-areas.geojson'));
+    const ids = areas.features.map((f) => f.properties.id);
+    const wars = disasters.filter((d) => d.kind === 'guerre').map((d) => d.id);
+    expect([...ids].sort()).toEqual([...wars].sort());
+    for (const f of areas.features) expect(['Polygon', 'MultiPolygon']).toContain(f.geometry.type);
+  });
 });

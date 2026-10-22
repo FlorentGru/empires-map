@@ -1,5 +1,5 @@
 import { LngLatBounds, Marker, type GeoJSONSource, type Map as MapLibreMap, type MapMouseEvent } from 'maplibre-gl';
-import type { Feature, FeatureCollection, Point, Polygon } from 'geojson';
+import type { Feature, FeatureCollection, MultiPolygon, Point, Polygon } from 'geojson';
 import { loadWorld, WORLD } from '../data/loadWorld';
 import type { Disaster, DisasterKind } from '../types-disaster';
 import { activeDisasters, convexHull, formatDeaths, OPEN_DISASTER_EVENT, spreadUpTo } from '../lib/worldEvents';
@@ -14,6 +14,20 @@ const SRC_WAR = 'disasters-war';
 const IDS = ['disasters-war-fill', 'disasters-war-line', 'disasters-spread'];
 const PLAGUE = '#6d2a7a';
 const WAR = '#7a1f1a';
+
+type WarArea = Feature<Polygon | MultiPolygon, { id: string }>;
+let areasPromise: Promise<Map<string, WarArea>> | null = null;
+/**
+ * Zones de guerre découpées sur les terres au build (scripts/build-disasters.ts), chargées à la demande.
+ * Fichier absent ou illisible : carte vide, et chaque zone retombe sur l'enveloppe convexe brute de `area`.
+ */
+function loadWarAreas(): Promise<Map<string, WarArea>> {
+  areasPromise ??= fetch(`${import.meta.env.BASE_URL}data/disaster-areas.geojson`)
+    .then(async (r): Promise<WarArea[]> => (r.ok ? ((await r.json()) as FeatureCollection<Polygon | MultiPolygon, { id: string }>).features : []))
+    .then((features) => new Map(features.map((f) => [f.properties.id, f])))
+    .catch(() => new Map<string, WarArea>());
+  return areasPromise;
+}
 
 /** Aperçu demandé depuis la galerie : montré dès que la carte de l'étape choisie est prête. */
 let pendingPreview: string | null = null;
@@ -47,7 +61,7 @@ function hatchImage(): ImageData {
   const c = document.createElement('canvas');
   c.width = c.height = size;
   const g = c.getContext('2d')!;
-  g.strokeStyle = 'rgba(122, 31, 26, 0.55)';
+  g.strokeStyle = 'rgb(122, 31, 26)';
   g.lineWidth = 2;
   g.beginPath();
   g.moveTo(0, size);
@@ -62,11 +76,14 @@ function hatchImage(): ImageData {
 
 /**
  * Catastrophes, épidémies et guerres meurtrières en cours à la date (data/disasters.json) :
- * diffusion des épidémies (cercles violets, vague récente pulsante), zones de guerre hachurées,
- * pastille par événement avec le bilan humain. Clic → fiche (bilan, fourchette, incertitude, sources).
+ * diffusion des épidémies (cercles violets, vague récente pulsante), zones de guerre discrètes (terres seulement,
+ * sous les territoires, hachurage léger et contour pointillé ; masquées sur la carte d'un empire belligérant), pastille par événement avec le bilan humain. Clic → fiche (bilan, fourchette, incertitude, sources).
  */
 export class DisasterLayers {
   private year = 0;
+  /** Empire affiché : ses propres guerres n'ont pas de zone (elle doublerait son territoire). */
+  private empireId: string | null = null;
+  private areas = new Map<string, WarArea>();
   private enabled = true;
   private markers: Marker[] = [];
   private markerOf = new Map<string, HTMLElement>();
@@ -77,17 +94,21 @@ export class DisasterLayers {
     if (!map.hasImage('war-hatch')) map.addImage('war-hatch', hatchImage());
     const before = map.getLayer('city-dot') ? 'city-dot' : undefined;
     const empty = { type: 'FeatureCollection' as const, features: [] };
+    // Zones de guerre tout en bas des calques d'empire, juste au-dessus du fond (terres, graticule, relief) :
+    // voisins, contemporains et territoires passent par-dessus. Les terres, ajoutées plus tard sous la graticule, restent dessous.
+    const style = map.getStyle().layers;
+    const warBefore = style[style.findIndex((l) => l.id === 'hillshade') + 1]?.id;
     map.addSource(SRC_WAR, { type: 'geojson', data: empty });
     map.addSource(SRC_SPREAD, { type: 'geojson', data: empty });
-    map.addLayer({ id: 'disasters-war-fill', type: 'fill', source: SRC_WAR, paint: { 'fill-pattern': 'war-hatch', 'fill-opacity': 0.32 } }, before);
+    map.addLayer({ id: 'disasters-war-fill', type: 'fill', source: SRC_WAR, paint: { 'fill-pattern': 'war-hatch', 'fill-opacity': 0.12 } }, warBefore);
     map.addLayer(
       {
         id: 'disasters-war-line',
         type: 'line',
         source: SRC_WAR,
-        paint: { 'line-color': WAR, 'line-width': 1.2, 'line-opacity': 0.5, 'line-dasharray': [3, 2] },
+        paint: { 'line-color': WAR, 'line-width': 1, 'line-opacity': 0.45, 'line-dasharray': [2, 3] },
       },
-      before,
+      warBefore,
     );
     map.addLayer(
       {
@@ -121,7 +142,8 @@ export class DisasterLayers {
       map.on('mouseleave', id, this.onLeave);
     }
     // Données chargées à la demande : premier affichage dès leur arrivée.
-    void loadWorld().then(() => {
+    void Promise.all([loadWorld(), loadWarAreas()]).then(([, areas]) => {
+      this.areas = areas;
       if (this.map.style) this.apply(); // carte encore là (pas détruite par un changement d'empire)
     });
   }
@@ -224,11 +246,14 @@ export class DisasterLayers {
     const list = this.enabled ? activeDisasters(all(), this.year) : [];
     const shown = this.previewId ? all().find((x) => x.id === this.previewId) : undefined;
     if (shown && !list.includes(shown)) list.push(shown);
-    const war: FeatureCollection<Polygon, { id: string }> = {
+    const war: FeatureCollection<Polygon | MultiPolygon, { id: string }> = {
       type: 'FeatureCollection',
       features: list
-        .filter((d) => d.kind === 'guerre' && (d.area?.length ?? 0) >= 3)
-        .map((d) => ({ type: 'Feature', properties: { id: d.id }, geometry: { type: 'Polygon', coordinates: [convexHull(d.area!)] } })),
+        .filter((d) => d.kind === 'guerre' && (d.area?.length ?? 0) >= 3 && !(this.empireId && d.belligerentEmpires?.includes(this.empireId)))
+        .map(
+          (d): WarArea =>
+            this.areas.get(d.id) ?? { type: 'Feature', properties: { id: d.id }, geometry: { type: 'Polygon', coordinates: [convexHull(d.area!)] } },
+        ),
     };
     const spread: FeatureCollection<Point, { id: string; age: number }> = {
       type: 'FeatureCollection',
@@ -276,6 +301,13 @@ export class DisasterLayers {
       // Après le vol de caméra vers l'étape, qui serait sinon prioritaire.
       window.setTimeout(() => this.preview(id), 400);
     }
+  }
+
+  /** Empire affiché : la zone de ses guerres est masquée (pastille et barre de la frise restent). */
+  setEmpire(id: string) {
+    if (id === this.empireId) return;
+    this.empireId = id;
+    this.apply();
   }
 
   setEnabled(on: boolean) {

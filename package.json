@@ -12,7 +12,7 @@
     "serve": "vite build && vite preview --host --port 4173 --strictPort",
     "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.scripts.json --noEmit",
     "fetch:data": "bash scripts/fetch-basemaps.sh",
-    "build:data": "tsx scripts/build-territories.ts && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts && tsx scripts/build-neighbors.ts && tsx scripts/build-stats.ts && tsx scripts/build-contemporaries.ts",
+    "build:data": "tsx scripts/build-territories.ts && tsx scripts/build-disasters.ts && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts && tsx scripts/build-neighbors.ts && tsx scripts/build-stats.ts && tsx scripts/build-contemporaries.ts",
     "build:neighbors": "tsx scripts/build-neighbors.ts",
     "build:sdf": "tsx scripts/build-sdf.ts",
     "build:countries": "tsx scripts/build-countries.ts",
