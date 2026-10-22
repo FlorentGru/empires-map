@@ -304,15 +304,21 @@ function Atlas({
   // Fenêtre « Voir la bataille » : ouverte par le bouton de la fiche (événement), le focus y revient à la fermeture.
   // L'empire et l'étape sont figés au clic et la lecture est mise en pause : sinon la frise avançait
   // pendant la bataille, qui se rechargeait sur une autre étape (armées disparues).
-  const [battle, setBattle] = useState<{ opener: HTMLElement | null; empireId: string; step: TimelineStep } | null>(null);
-  const current = useRef({ empireId: empire.id, step, pause: player.pause });
-  current.current = { empireId: empire.id, step, pause: player.pause };
+  const [battle, setBattle] = useState<{
+    opener: HTMLElement | null;
+    empireId: string;
+    step: TimelineStep;
+    /** La frise était en lecture : elle reprend seule à la fermeture. */
+    wasPlaying: boolean;
+  } | null>(null);
+  const current = useRef({ empireId: empire.id, step, pause: player.pause, playing: player.playing });
+  current.current = { empireId: empire.id, step, pause: player.pause, playing: player.playing };
   useEffect(() => {
     const open = (e: Event) => {
-      const { empireId, step: s, pause } = current.current;
+      const { empireId, step: s, pause, playing } = current.current;
       if (!s) return;
       pause();
-      setBattle({ opener: (e as CustomEvent<{ opener?: HTMLElement }>).detail?.opener ?? null, empireId, step: s });
+      setBattle({ opener: (e as CustomEvent<{ opener?: HTMLElement }>).detail?.opener ?? null, empireId, step: s, wasPlaying: playing });
     };
     window.addEventListener(OPEN_BATTLE_EVENT, open);
     return () => window.removeEventListener(OPEN_BATTLE_EVENT, open);
@@ -621,7 +627,15 @@ function Atlas({
       <AboutModal open={aboutOpen} onClose={() => setAboutOpen(false)} />
       {battle && (
         <Suspense fallback={null}>
-          <BattleDialog empireId={battle.empireId} step={battle.step} opener={battle.opener} onClose={() => setBattle(null)} />
+          <BattleDialog
+            empireId={battle.empireId}
+            step={battle.step}
+            opener={battle.opener}
+            onClose={() => {
+              if (battle.wasPlaying) player.play();
+              setBattle(null);
+            }}
+          />
         </Suspense>
       )}
       {feedbackOpen && (

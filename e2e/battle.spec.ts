@@ -53,5 +53,14 @@ test('la lecture de la frise se met en pause pendant la bataille', async ({ page
   await expect(page.locator('#battle-title')).toHaveText('Cannes, le désastre');
   expect(page.url()).toContain('/rome/cannes-216/');
   await page.keyboard.press('Escape');
+  // La frise était en lecture avant la bataille : elle reprend seule.
+  await expect(page.getByRole('button', { name: 'Pause', exact: true })).toBeVisible();
+});
+
+test('sans lecture en cours, la frise reste arrêtée à la fermeture', async ({ page }) => {
+  await page.goto('/rome/cannes-216/');
+  await page.getByRole('button', { name: /Voir la bataille/ }).click();
+  await expect(page.getByTestId('battle-dialog')).toBeVisible();
+  await page.keyboard.press('Escape');
   await expect(page.getByRole('button', { name: 'Lecture', exact: true })).toBeVisible();
 });
