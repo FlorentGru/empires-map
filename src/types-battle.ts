@@ -33,10 +33,11 @@ export type BattleTerrain = 'plaine' | 'colline' | 'foret' | 'riviere' | 'mer' |
 /**
  * Élément de décor dessiné (arbres, maisons, sillons… : src/battle/scenery.ts).
  * Lignes : `riviere`, `route`, `pont` (2 points : les deux culées). Polygones : tous les autres
- * (`village` = quelques maisons, `ville` = maisons serrées et clocher, `champ` = sillons, `rochers` = blocs épars).
+ * (`village` = quelques maisons, `ville` = maisons serrées et clocher, `champ` = sillons, `rochers` = blocs épars,
+ * `pieux` = pieux plantés dans le lit d'un fleuve : cachés à marée haute, visibles et dangereux à marée basse).
  */
 export interface BattleDecor {
-  kind: 'riviere' | 'colline' | 'foret' | 'cote' | 'marais' | 'village' | 'ville' | 'route' | 'champ' | 'rochers' | 'pont';
+  kind: 'riviere' | 'colline' | 'foret' | 'cote' | 'marais' | 'village' | 'ville' | 'route' | 'champ' | 'rochers' | 'pont' | 'pieux';
   /** Polygone ou ligne, selon `kind`. */
   points: BattlePoint[];
   /** Nom affiché (« Aufide », « plateau de Pratzen »). */
@@ -85,6 +86,12 @@ export interface BattleUnit {
   /** Position de départ (centre du bloc). */
   at: BattlePoint;
   formation: BattleFormation;
+  /**
+   * Navires (`navires`, `brulots`) : type de bâtiment ; défaut selon l'année (galère avant 1600, vaisseau ensuite).
+   * `galion` = grand voilier de la fin du XVIe siècle (Armada) ; `jonque` = navire chinois, coréen ou japonais ;
+   * `barque` = embarcation légère à rames (flottilles vietnamiennes, brûlots).
+   */
+  ship?: 'galere' | 'galion' | 'vaisseau' | 'jonque' | 'barque';
   /** Nom affiché au survol ou en légende (« Cavalerie de Maharbal »). */
   label?: string;
 }
@@ -106,11 +113,15 @@ export interface BattlePhase {
   duration: number;
   /** Mouvements par id d'unité ; une unité absente reste en place, dans son état précédent. */
   moves: Record<string, BattleMove>;
+  /** Batailles fluviales ou côtières : niveau de l'eau pendant la phase (la marée qui baisse découvre les `pieux`). */
+  tide?: 'haute' | 'basse';
 }
 
 /** data/battles/scenarios/<stepId>.json : déroulement historique d'une bataille célèbre. */
 export interface BattleScenario {
   terrain: BattleTerrain;
+  /** Temps qu'il fait : `vent` (mer agitée, fumées et voiles couchées), `tempete` (pluie, creux, navires qui sombrent : typhon de 1281). */
+  weather?: 'calme' | 'vent' | 'tempete';
   decor?: BattleDecor[];
   units: BattleUnit[];
   phases: BattlePhase[];

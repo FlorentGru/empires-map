@@ -9,8 +9,12 @@ export function battleTroops(empireId: string, stepId: string): BattleTroops | u
   return (TROOPS as BattleTroopsFile)[`${empireId}/${stepId}`];
 }
 
-/** Scénario historique de l'étape, s'il a été écrit. */
-export async function loadBattleScenario(stepId: string): Promise<BattleScenario | undefined> {
-  const load = loaders[`../../data/battles/scenarios/${stepId}.json`];
+/**
+ * Scénario historique de l'étape, s'il a été écrit : `<empireId>.<stepId>.json` d'abord (quand deux empires partagent
+ * une bataille avec des armées différentes, ex. Trafalgar), sinon `<stepId>.json`, partagé par les empires.
+ */
+export async function loadBattleScenario(stepId: string, empireId?: string): Promise<BattleScenario | undefined> {
+  const own = empireId ? loaders[`../../data/battles/scenarios/${empireId}.${stepId}.json`] : undefined;
+  const load = own ?? loaders[`../../data/battles/scenarios/${stepId}.json`];
   return load ? await load() : undefined;
 }
