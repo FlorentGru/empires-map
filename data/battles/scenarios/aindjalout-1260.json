@@ -118,7 +118,7 @@
   {
    "id": "mongols-centre",
    "army": 0,
-   "kind": "cavalerie",
+   "kind": "archers-montes",
    "troops": 6000,
    "at": [
     12,
@@ -130,7 +130,7 @@
   {
    "id": "mongols-g",
    "army": 0,
-   "kind": "cavalerie",
+   "kind": "archers-montes",
    "troops": 3000,
    "at": [
     14,
@@ -154,14 +154,14 @@
   {
    "id": "baybars",
    "army": 1,
-   "kind": "cavalerie",
+   "kind": "archers-montes",
    "troops": 1500,
    "at": [
     52,
     30
    ],
    "formation": "ligne",
-   "label": "Avant-garde mamelouke de Baybars"
+   "label": "Avant-garde mamelouke de Baybars (fausse fuite)"
   },
   {
    "id": "qutuz-nord",
@@ -243,8 +243,9 @@
       66,
       30
      ],
-     "state": "marche",
-     "losses": 0.1
+     "state": "combat",
+     "losses": 0.1,
+     "action": "feinte"
     },
     "mongols-centre": {
      "to": [
@@ -278,7 +279,8 @@
       72,
       30
      ],
-     "state": "marche"
+     "state": "combat",
+     "action": "feinte"
     },
     "mongols-centre": {
      "to": [
@@ -338,10 +340,11 @@
     },
     "baybars": {
      "to": [
-      68,
+      66,
       30
      ],
-     "state": "combat"
+     "state": "combat",
+     "action": "feu"
     },
     "mongols-centre": {
      "to": [

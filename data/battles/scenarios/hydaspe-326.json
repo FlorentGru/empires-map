@@ -153,13 +153,13 @@
     66,
     50
    ],
-   "formation": "ligne",
+   "formation": "coin",
    "label": "Cavalerie des Compagnons d'Alexandre"
   },
   {
    "id": "hippotoxotes",
    "army": 0,
-   "kind": "archers",
+   "kind": "archers-montes",
    "troops": 1000,
    "at": [
     72,
@@ -177,7 +177,7 @@
     90,
     50
    ],
-   "formation": "ligne",
+   "formation": "coin",
    "label": "Cavalerie de Coenos"
   },
   {
@@ -189,7 +189,7 @@
     78,
     50
    ],
-   "formation": "ligne",
+   "formation": "phalange",
    "label": "Phalange et hypaspistes de Seleucos"
   },
   {
@@ -208,13 +208,13 @@
    "id": "elephants",
    "army": 1,
    "kind": "elephants",
-   "troops": 200,
+   "troops": 85,
    "at": [
     48,
     22
    ],
    "formation": "ligne",
-   "label": "200 éléphants de guerre"
+   "label": "85 éléphants de guerre de Pôros (Arrien)"
   },
   {
    "id": "inf-indienne",
@@ -232,25 +232,49 @@
    "id": "cav-g",
    "army": 1,
    "kind": "cavalerie",
-   "troops": 2000,
+   "troops": 1400,
    "at": [
     26,
     16
    ],
    "formation": "ligne",
-   "label": "Cavalerie indienne et chars (aile gauche)"
+   "label": "Cavalerie indienne (aile gauche)"
+  },
+  {
+   "id": "chars-g",
+   "army": 1,
+   "kind": "chars",
+   "troops": 600,
+   "at": [
+    26,
+    19
+   ],
+   "formation": "ligne",
+   "label": "Chars indiens (aile gauche)"
   },
   {
    "id": "cav-d",
    "army": 1,
    "kind": "cavalerie",
-   "troops": 2000,
+   "troops": 1400,
    "at": [
     72,
     16
    ],
    "formation": "ligne",
-   "label": "Cavalerie indienne et chars (aile droite, fils de Pôros)"
+   "label": "Cavalerie indienne (aile droite, fils de Pôros)"
+  },
+  {
+   "id": "chars-d",
+   "army": 1,
+   "kind": "chars",
+   "troops": 600,
+   "at": [
+    72,
+    19
+   ],
+   "formation": "ligne",
+   "label": "Chars indiens (aile droite)"
   }
  ],
  "phases": [
@@ -334,6 +358,14 @@
      ],
      "state": "combat",
      "losses": 0.5
+    },
+    "chars-d": {
+     "to": [
+      82,
+      25
+     ],
+     "state": "combat",
+     "losses": 0.5
     }
    }
   },
@@ -384,6 +416,21 @@
      ],
      "state": "fuite",
      "losses": 0.7
+    },
+    "chars-g": {
+     "to": [
+      56,
+      17
+     ],
+     "state": "marche"
+    },
+    "chars-d": {
+     "to": [
+      84,
+      27
+     ],
+     "state": "fuite",
+     "losses": 0.7
     }
    }
   },
@@ -431,6 +478,14 @@
      ],
      "state": "combat",
      "action": "feu"
+    },
+    "chars-g": {
+     "to": [
+      56,
+      17
+     ],
+     "state": "combat",
+     "losses": 0.3
     }
    }
   },
@@ -467,6 +522,14 @@
      ],
      "state": "combat",
      "losses": 0.4
+    },
+    "chars-g": {
+     "to": [
+      40,
+      13
+     ],
+     "state": "fuite",
+     "losses": 0.6
     }
    }
   },

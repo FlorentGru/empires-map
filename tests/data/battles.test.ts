@@ -18,6 +18,9 @@ const BIOMES = ['desert', 'steppe', 'prairie', 'foret', 'montagne', 'mediterrane
 const DECOR_KINDS = ['riviere', 'colline', 'foret', 'cote', 'marais', 'village', 'ville', 'route', 'champ', 'rochers', 'pont'];
 const DECOR_LINES = ['riviere', 'route', 'pont'];
 
+const UNIT_KINDS = ['infanterie', 'cavalerie', 'archers', 'archers-montes', 'elephants', 'chars', 'navires', 'brulots', 'artillerie'];
+const FORMATIONS = ['ligne', 'mince', 'colonne', 'carre', 'coin', 'phalange', 'tortue', 'quinconce', 'tercio', 'croissant', 'tirailleurs'];
+
 const inField = ([x, y]: BattlePoint) => x >= 0 && x <= 100 && y >= 0 && y <= 60;
 
 describe('data/battles', () => {
@@ -88,6 +91,18 @@ describe('data/battles', () => {
           if (kind.get(id) === 'artillerie') expect(m.action, `${id} : artillerie en baïonnette`).not.toBe('baionnette');
         }
       }
+    });
+
+    it('kinds et formations du contrat ; feinte, navires et brûlots à leur place', () => {
+      const kind = new Map(scenario.units.map((u) => [u.id, u.kind]));
+      for (const u of scenario.units) {
+        expect(UNIT_KINDS, `kind ${u.id}`).toContain(u.kind);
+        expect(FORMATIONS, `formation ${u.id}`).toContain(u.formation);
+        if (u.kind === 'navires' || u.kind === 'brulots') expect(scenario.terrain, `${u.id} hors mer`).toBe('mer');
+      }
+      for (const ph of scenario.phases)
+        for (const [id, m] of Object.entries(ph.moves))
+          if (m.action === 'feinte') expect(['cavalerie', 'archers-montes'], `${id} : feinte`).toContain(kind.get(id));
     });
 
     it.runIf(['austerlitz-1805', 'waterloo-1815', 'rocroi-1643'].includes(stepId))('a de l\'artillerie', () => {

@@ -191,7 +191,7 @@
     64,
     44
    ],
-   "formation": "ligne",
+   "formation": "colonne",
    "label": "Corps de d'Erlon (aile droite, vers la Haie Sainte)"
   },
   {
@@ -215,7 +215,7 @@
     50,
     56
    ],
-   "formation": "ligne",
+   "formation": "colonne",
    "label": "Garde impériale (réserve)"
   },
   {
@@ -239,20 +239,44 @@
     26,
     24
    ],
-   "formation": "carre",
+   "formation": "mince",
    "label": "Gardes britanniques (aile droite, Hougoumont)"
   },
   {
    "id": "wellington-c",
    "army": 1,
    "kind": "infanterie",
-   "troops": 25000,
+   "troops": 17000,
    "at": [
     52,
     23
    ],
+   "formation": "mince",
+   "label": "Centre britannique et allemand en ligne sur 2 rangs"
+  },
+  {
+   "id": "carres-d",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 4000,
+   "at": [
+    62,
+    16
+   ],
    "formation": "carre",
-   "label": "Centre britannique et allemand en carrés"
+   "label": "Carrés britanniques (droite)"
+  },
+  {
+   "id": "carres-g",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 4000,
+   "at": [
+    42,
+    16
+   ],
+   "formation": "carre",
+   "label": "Carrés britanniques (gauche)"
   },
   {
    "id": "wellington-g",
@@ -263,7 +287,7 @@
     74,
     22
    ],
-   "formation": "ligne",
+   "formation": "mince",
    "label": "Aile gauche anglo-hollandaise"
   },
   {
@@ -409,6 +433,20 @@
     "art-crete": {
      "state": "combat",
      "action": "feu"
+    },
+    "carres-g": {
+     "to": [
+      44,
+      24
+     ],
+     "state": "marche"
+    },
+    "carres-d": {
+     "to": [
+      60,
+      24
+     ],
+     "state": "marche"
     }
    }
   },
@@ -435,6 +473,24 @@
     },
     "art-crete": {
      "action": "feu"
+    },
+    "carres-g": {
+     "to": [
+      44,
+      25
+     ],
+     "state": "combat",
+     "action": "feu",
+     "losses": 0.1
+    },
+    "carres-d": {
+     "to": [
+      60,
+      25
+     ],
+     "state": "combat",
+     "action": "feu",
+     "losses": 0.1
     }
    }
   },
@@ -522,6 +578,16 @@
     },
     "art-prussienne": {
      "action": "feu"
+    },
+    "carres-g": {
+     "state": "combat",
+     "action": "feu",
+     "losses": 0.3
+    },
+    "carres-d": {
+     "state": "combat",
+     "action": "feu",
+     "losses": 0.3
     }
    }
   },
@@ -572,6 +638,14 @@
     },
     "art-prussienne": {
      "action": "feu"
+    },
+    "carres-g": {
+     "action": "feu",
+     "losses": 0.4
+    },
+    "carres-d": {
+     "action": "feu",
+     "losses": 0.4
     }
    }
   },
@@ -655,6 +729,22 @@
       46
      ],
      "state": "marche"
+    },
+    "carres-g": {
+     "to": [
+      44,
+      34
+     ],
+     "action": "baionnette",
+     "losses": 0.45
+    },
+    "carres-d": {
+     "to": [
+      60,
+      34
+     ],
+     "action": "baionnette",
+     "losses": 0.45
     }
    }
   }

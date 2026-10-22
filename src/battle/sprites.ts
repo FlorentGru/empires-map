@@ -10,6 +10,8 @@ export interface FactionSprites {
   vaincu: [HTMLImageElement, HTMLImageElement];
   /** Pose de combat, rasterisée à la demande : `null` tant que l'image n'est pas prête (utiliser alors `marche`). */
   pose(pose: SoldierPose, frame: 0 | 1): HTMLImageElement | null;
+  /** Peuple de la figurine (indiens : tour sur l'éléphant ; parthes-perses : faux sur les chars). */
+  faction: Faction;
   /** Couleur principale du camp. */
   color: string;
   /** Data URL de la figurine de marche, au format d'origine (légende). */
@@ -51,7 +53,7 @@ export function loadSprites(faction: Faction): Promise<FactionSprites> {
         return null;
       };
       const url = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(soldierSvg(faction, 0, 'marche'))}`;
-      return { marche: [m0, m1], vaincu: [v0, v1], pose, color, url } satisfies FactionSprites;
+      return { marche: [m0, m1], vaincu: [v0, v1], pose, faction, color, url } satisfies FactionSprites;
     })();
     cache.set(faction, p);
     p.catch(() => cache.delete(faction));

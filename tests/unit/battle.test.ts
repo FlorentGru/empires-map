@@ -13,12 +13,13 @@ import {
   TERRAIN_W,
   totalTroops,
 } from '../../src/battle/engine';
+import { layoutOf } from '../../src/battle/formations';
 import { AVOID_START, sceneryLayout } from '../../src/battle/layout';
 import { firearmOf, isRanged } from '../../src/battle/weapons';
 import { weaponClass } from '../../src/battle/poses';
 import { SOLDIER_SPECS } from '../../src/figures/soldiers';
 import type { Faction } from '../../src/types';
-import type { BattleBiome, BattleScenario, BattleTroopsFile } from '../../src/types-battle';
+import type { BattleBiome, BattleFormation, BattleMove, BattleScenario, BattleTroopsFile, BattleUnitKind } from '../../src/types-battle';
 import type { ArmyMove } from '../../src/types';
 import { DATA, itAll, readJson } from '../data/helpers';
 
@@ -266,6 +267,233 @@ describe('armes et tirs', () => {
     // avant 1500 ou sans arme à feu : pas d'artillerie
     expect(genericScenario({ ...step, year: 1400 }, [60000, 50000]).units.some((u) => u.kind === 'artillerie')).toBe(false);
     expect(genericScenario(two, [60000, 50000]).units.some((u) => u.kind === 'artillerie')).toBe(false);
+  });
+});
+
+/** Un bloc à gauche (kind, formation) face à une cible d'infanterie à droite, une phase par entrée de `moves`. */
+const solo = (kind: BattleUnitKind, formation: BattleFormation, moves: BattleMove[], troops = 3000): BattleScenario => ({
+  terrain: 'plaine',
+  units: [
+    { id: 'bloc', army: 0, kind, troops, at: [25, 30], formation },
+    { id: 'cible', army: 1, kind: 'infanterie', troops: 2000, at: [75, 30], formation: 'ligne' },
+  ],
+  phases: moves.map((m, i) => ({ label: `p${i}`, duration: 10, moves: { bloc: m, cible: { state: 'combat' } } })),
+});
+const figsOf = (sc: BattleScenario, t: number, factions?: (Faction | undefined)[]) => {
+  const f = stateAt(sc, scaleFor(totalTroops(sc)), t, factions);
+  return f.figures.filter((g) => g.unit === 'bloc');
+};
+const ALL_FORMATIONS: BattleFormation[] = [
+  'ligne',
+  'mince',
+  'colonne',
+  'carre',
+  'coin',
+  'phalange',
+  'tortue',
+  'quinconce',
+  'tercio',
+  'croissant',
+  'tirailleurs',
+];
+
+describe('formations historiques', () => {
+  it('dispositions déterministes, et le nombre de figurines ne dépend pas de la formation', () => {
+    for (const f of ALL_FORMATIONS) {
+      for (const n of [1, 3, 7, 24, 61, 120]) {
+        expect(layoutOf(f, n, 1, 'infanterie'), `${f} ${n}`).toHaveLength(n);
+        expect(layoutOf(f, n, -1, 'cavalerie')).toEqual(layoutOf(f, n, -1, 'cavalerie'));
+        for (const sl of layoutOf(f, n, 1, 'infanterie')) expect([sl.dx, sl.dy].every(Number.isFinite)).toBe(true);
+      }
+      const sc = solo('infanterie', f, [{ state: 'marche', to: [40, 30] }]);
+      expect(figsOf(sc, 5)).toHaveLength(figuresOf(sc, scaleFor(totalTroops(sc)))[0]!);
+      expect(figsOf(sc, 5)).toEqual(figsOf(sc, 5));
+    }
+  });
+
+  it('carré : chaque face regarde vers l’extérieur (avant, arrière, côtés en miroir)', () => {
+    for (const facing of [1, -1] as const) {
+      const slots = layoutOf('carre', 40, facing);
+      const ext = Math.max(...slots.map((s) => Math.abs(s.dx)));
+      const extY = Math.max(...slots.map((s) => Math.abs(s.dy)));
+      const front = slots.filter((s) => s.dx * facing >= ext - 1e-6);
+      const back = slots.filter((s) => s.dx * facing <= -ext + 1e-6);
+      const top = slots.filter((s) => s.dy <= -extY + 1e-6 && Math.abs(s.dx) < ext - 1e-6);
+      const bottom = slots.filter((s) => s.dy >= extY - 1e-6 && Math.abs(s.dx) < ext - 1e-6);
+      expect(front.length).toBeGreaterThan(2);
+      expect(back.length).toBeGreaterThan(2);
+      for (const s of front) expect(s.dir).toBe(facing);
+      for (const s of back) expect(s.dir).toBe(-facing);
+      expect(new Set(top.map((s) => s.dir)).size).toBe(1);
+      expect(new Set(bottom.map((s) => s.dir)).size).toBe(1);
+      expect(top[0]!.dir).toBe(-bottom[0]!.dir);
+      // creux : rien au centre
+      expect(slots.every((s) => Math.abs(s.dx) > 0.5 || Math.abs(s.dy) > 3)).toBe(true);
+    }
+    // en jeu : le camp de droite (facing -1) a bien des figurines retournées
+    const sc = solo('infanterie', 'carre', [{ state: 'marche' }]);
+    sc.units[0]!.at = [80, 30];
+    sc.units[1]!.at = [20, 30];
+    expect(new Set(figsOf(sc, 1).map((g) => g.facing))).toEqual(new Set([1, -1]));
+  });
+
+  it('phalange : sarisses baissées sur les 5 premiers rangs, levées derrière, en marche comme au combat', () => {
+    const sc = solo('infanterie', 'phalange', [{ state: 'marche', to: [40, 30] }, { state: 'combat' }], 4000);
+    for (const t of [3, 15]) {
+      const figs = figsOf(sc, t, ['grecs-macedoniens', 'romains']);
+      expect(Math.max(...figs.map((g) => g.rank))).toBeGreaterThan(8);
+      for (const g of figs) {
+        expect(g.pike).toBe(true);
+        expect(g.pose, `rang ${g.rank} à t=${t}`).toBe(g.rank < 5 ? 'baionnette' : 'marche');
+      }
+    }
+  });
+
+  it('tortue : toit de boucliers sur les rangs intérieurs seulement', () => {
+    const figs = figsOf(solo('infanterie', 'tortue', [{ state: 'marche' }], 4000), 1);
+    expect(figs.some((g) => g.roof)).toBe(true);
+    for (const g of figs.filter((g) => g.rank === 0)) expect(g.roof).toBe(false);
+  });
+
+  it('tercio : seules les figurines des manches (aux coins) tirent, les piquiers baissent la pique au combat', () => {
+    const slots = layoutOf('tercio', 60, 1);
+    const pikes = slots.filter((s) => s.role === 'pique');
+    const shots = slots.filter((s) => s.role === 'tir');
+    expect(pikes.length + shots.length).toBe(60);
+    expect(shots.length).toBeGreaterThanOrEqual(4);
+    const px = Math.max(...pikes.map((s) => Math.abs(s.dx)));
+    const py = Math.max(...pikes.map((s) => Math.abs(s.dy)));
+    for (const s of shots) {
+      expect(Math.abs(s.dx)).toBeGreaterThan(px);
+      expect(Math.abs(s.dy)).toBeGreaterThan(py);
+    }
+    const sc = solo(
+      'infanterie',
+      'tercio',
+      [
+        { state: 'marche', to: [30, 30] },
+        { state: 'combat', action: 'feu' },
+      ],
+      4000,
+    );
+    const f = ['tercios', 'romains'] as (Faction | undefined)[];
+    expect(figsOf(sc, 5, f).every((g) => g.pose === 'marche')).toBe(true); // en marche : piques levées
+    const seen = new Map<string, Set<string>>();
+    for (let t = 10.5; t < 20; t += 0.1) for (const g of figsOf(sc, t, f)) seen.set(g.role!, (seen.get(g.role!) ?? new Set()).add(g.pose));
+    expect([...seen.get('pique')!]).toEqual(['baionnette']);
+    expect(seen.get('tir')!.has('tir')).toBe(true);
+  });
+
+  it('croissant : le centre est avancé, et l’arc s’aplatit quand l’unité recule', () => {
+    const sc = solo('infanterie', 'croissant', [{ state: 'combat' }, { state: 'marche', to: [10, 30] }], 4000);
+    const bow = (t: number) => {
+      const figs = figsOf(sc, t);
+      const mid = figs.filter((g) => Math.abs(g.y - 30) < 2);
+      const wing = figs.filter((g) => Math.abs(g.y - 30) > 8);
+      return mid.reduce((a, g) => a + g.x, 0) / mid.length - wing.reduce((a, g) => a + g.x, 0) / wing.length;
+    };
+    expect(bow(5)).toBeGreaterThan(1.5);
+    expect(bow(19)).toBeLessThan(bow(5) * 0.4);
+  });
+
+  it('tirailleurs : beaucoup plus espacés que la ligne', () => {
+    const gap = (f: BattleFormation) => {
+      const figs = figsOf(solo('infanterie', f, [{ state: 'marche' }], 4000), 0);
+      return figs.reduce((a, g) => a + Math.min(...figs.filter((h) => h !== g).map((h) => Math.hypot(h.x - g.x, h.y - g.y))), 0) / figs.length;
+    };
+    expect(gap('tirailleurs')).toBeGreaterThan(gap('ligne') * 1.5);
+  });
+
+  it('navires : équipages répartis par coque', () => {
+    const figs = figsOf(solo('navires', 'ligne', [{ state: 'marche' }], 4000), 0);
+    expect(new Set(figs.map((g) => g.ship)).size).toBe(Math.ceil(figs.length / 4));
+  });
+});
+
+describe('montures', () => {
+  const charge: BattleMove[] = [{ state: 'combat', to: [60, 30], action: 'feu' }];
+  const flights = (kind: BattleUnitKind) => {
+    const sc = solo(kind, 'ligne', charge, 2000);
+    let n = 0;
+    let moving = 0;
+    for (let t = 0; t < 10; t += 0.05) {
+      const f = stateAt(sc, scaleFor(totalTroops(sc)), t, ['mongols', 'romains']);
+      n += f.effects.filter((e) => e.kind === 'fleche').length;
+      if (f.figures.some((g) => g.unit === 'bloc' && g.pose === 'vise') && t > 2 && t < 8) moving++;
+    }
+    return { n, moving };
+  };
+
+  it('les archers montés tirent en mouvement, pas la cavalerie', () => {
+    const a = flights('archers-montes');
+    expect(a.n).toBeGreaterThan(0);
+    expect(a.moving).toBeGreaterThan(0); // des poses de visée en pleine course (t entre 2 et 8)
+    expect(flights('cavalerie').n).toBe(0);
+  });
+
+  it('feinte : dos tourné, aucune perte ajoutée, tir parthe vers l’arrière, puis demi-tour', () => {
+    const sc = solo('archers-montes', 'ligne', [
+      { state: 'combat', action: 'feinte', to: [10, 30] },
+      { state: 'combat', action: 'feu' },
+    ]);
+    const camp = 1; // le bloc est à gauche : il regarde vers la droite
+    let parthe = false;
+    for (let t = 0.5; t < 10; t += 0.25) {
+      const figs = figsOf(sc, t, ['mongols', 'romains']);
+      for (const g of figs) {
+        expect(g.facing).toBe(-camp);
+        expect(g.state).toBe('marche'); // ni « fuite », ni « mort »
+      }
+      if (figs.some((g) => g.aim === camp)) parthe = true;
+    }
+    expect(parthe).toBe(true);
+    for (const g of figsOf(sc, 15)) expect(g.facing).toBe(camp);
+    // les flèches de la feinte partent vers l'ennemi (la droite), pas vers l'arrière
+    const f = stateAt(sc, scaleFor(totalTroops(sc)), 7, ['mongols', 'romains']);
+    expect(f.effects.filter((e) => e.kind === 'fleche').every((e) => e.dir === camp)).toBe(true);
+  });
+
+  it('les éléphants, chars et brûlots tournent sans NaN et tiennent dans le terrain', () => {
+    for (const kind of ['elephants', 'chars', 'brulots', 'navires', 'cavalerie'] as const) {
+      const sc = solo(kind, 'ligne', [
+        { state: 'marche', to: [50, 30] },
+        { state: 'combat', losses: 0.5 },
+      ]);
+      for (let t = 0; t <= 20; t += 1) for (const g of figsOf(sc, t, ['indiens', 'romains'])) expect([g.x, g.y].every(Number.isFinite)).toBe(true);
+    }
+  });
+});
+
+describe('scénario générique : formations par défaut', () => {
+  const gen = (faction: Faction, year?: number, other: Faction = 'romains') =>
+    genericScenario(
+      {
+        armies: [
+          { ...army('A', true), faction },
+          { ...army('B', false), faction: other },
+        ],
+        year,
+      },
+      [30000, 20000],
+    );
+
+  it('Macédoniens : phalange (infanterie) et coin (cavalerie)', () => {
+    const sc = gen('grecs-macedoniens', -331);
+    expect(sc.units.find((u) => u.id === 'a0-centre')!.formation).toBe('phalange');
+    expect(sc.units.find((u) => u.id === 'a0-aile-haute')).toMatchObject({ kind: 'cavalerie', formation: 'coin' });
+  });
+
+  it('Mongols : archers montés ; Romains : quinconce avant -100 puis ligne ; tercios ; britanniques', () => {
+    const m = gen('mongols', 1260);
+    expect(m.units.filter((u) => u.army === 0 && u.id !== 'a0-centre').every((u) => u.kind === 'archers-montes')).toBe(true);
+    expect(gen('romains', -216).units.find((u) => u.id === 'a0-centre')!.formation).toBe('quinconce');
+    expect(gen('romains', 100).units.find((u) => u.id === 'a0-centre')!.formation).toBe('ligne');
+    expect(gen('tercios', 1643).units.find((u) => u.id === 'a0-centre')!.formation).toBe('tercio');
+    expect(gen('espagnols', 1700).units.find((u) => u.id === 'a0-centre')!.formation).toBe('ligne');
+    expect(gen('britanniques', 1815).units.find((u) => u.id === 'a0-centre')!.formation).toBe('mince');
+    // pas d'éléphants inventés
+    for (const f of ['indiens', 'carthaginois'] as const) expect(gen(f, -300).units.some((u) => u.kind === 'elephants')).toBe(false);
+    for (const sc of [m, gen('grecs-macedoniens', -331), gen('tercios', 1643)]) checkRun(sc, scaleFor(totalTroops(sc)));
   });
 });
 

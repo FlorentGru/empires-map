@@ -170,14 +170,14 @@
   {
    "id": "brulots",
    "army": 1,
-   "kind": "navires",
+   "kind": "brulots",
    "troops": 2000,
    "at": [
     90,
     38
    ],
-   "formation": "coin",
-   "label": "Brûlots de Huang Gai"
+   "formation": "ligne",
+   "label": "Brûlots de Huang Gai, poussés par le vent"
   },
   {
    "id": "inf-sud",

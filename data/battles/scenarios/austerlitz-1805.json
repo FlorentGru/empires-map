@@ -161,13 +161,25 @@
    "id": "lannes-murat",
    "army": 0,
    "kind": "infanterie",
-   "troops": 21000,
+   "troops": 15000,
    "at": [
     24,
     10
    ],
    "formation": "ligne",
    "label": "Aile gauche française : Lannes et Murat"
+  },
+  {
+   "id": "cav-murat",
+   "army": 0,
+   "kind": "cavalerie",
+   "troops": 6000,
+   "at": [
+    20,
+    13
+   ],
+   "formation": "ligne",
+   "label": "Cavalerie de Murat"
   },
   {
    "id": "soult",
@@ -178,7 +190,7 @@
     30,
     28
    ],
-   "formation": "ligne",
+   "formation": "colonne",
    "label": "Corps de Soult, centre (Saint-Hilaire, Vandamme)"
   },
   {
@@ -226,7 +238,7 @@
     56,
     26
    ],
-   "formation": "ligne",
+   "formation": "colonne",
    "label": "Centre russe (Miloradovitch) et garde"
   },
   {
@@ -245,13 +257,25 @@
    "id": "autr-centre",
    "army": 2,
    "kind": "infanterie",
-   "troops": 12000,
+   "troops": 9000,
    "at": [
     54,
     20
    ],
-   "formation": "ligne",
-   "label": "Autrichiens de Kollowrat et cavalerie de Liechtenstein"
+   "formation": "colonne",
+   "label": "Autrichiens de Kollowrat"
+  },
+  {
+   "id": "cav-liechtenstein",
+   "army": 2,
+   "kind": "cavalerie",
+   "troops": 3000,
+   "at": [
+    50,
+    23
+   ],
+   "formation": "colonne",
+   "label": "Cavalerie de Liechtenstein"
   },
   {
    "id": "kienmayer",
@@ -386,6 +410,15 @@
      ],
      "state": "combat",
      "action": "feu"
+    },
+    "cav-murat": {
+     "to": [
+      30,
+      15
+     ],
+     "state": "combat",
+     "losses": 0.05,
+     "action": "feu"
     }
    }
   },
@@ -435,6 +468,15 @@
     },
     "art-russe": {
      "state": "combat",
+     "action": "feu"
+    },
+    "cav-liechtenstein": {
+     "to": [
+      48,
+      25
+     ],
+     "state": "combat",
+     "losses": 0.1,
      "action": "feu"
     }
    }
@@ -494,6 +536,14 @@
      ],
      "state": "fuite",
      "losses": 0.5
+    },
+    "cav-liechtenstein": {
+     "to": [
+      60,
+      23
+     ],
+     "state": "fuite",
+     "losses": 0.4
     }
    }
   },
@@ -618,6 +668,14 @@
      ],
      "state": "combat",
      "action": "feu"
+    },
+    "cav-liechtenstein": {
+     "to": [
+      86,
+      29
+     ],
+     "state": "fuite",
+     "losses": 0.5
     }
    }
   }

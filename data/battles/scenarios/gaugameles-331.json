@@ -131,7 +131,7 @@
     70,
     44
    ],
-   "formation": "ligne",
+   "formation": "tirailleurs",
    "label": "Archers, Agrianes et peltastes (flanc droit)"
   },
   {
@@ -155,7 +155,7 @@
     50,
     44
    ],
-   "formation": "ligne",
+   "formation": "phalange",
    "label": "Phalange macédonienne"
   },
   {
@@ -231,16 +231,28 @@
    "label": "Infanterie levée en Asie (centre)"
   },
   {
+   "id": "elephants-perses",
+   "army": 1,
+   "kind": "elephants",
+   "troops": 15,
+   "at": [
+    44,
+    18
+   ],
+   "formation": "ligne",
+   "label": "Quinze éléphants de Darius (Arrien)"
+  },
+  {
    "id": "chars",
    "army": 1,
-   "kind": "cavalerie",
-   "troops": 200,
+   "kind": "chars",
+   "troops": 600,
    "at": [
     50,
     28
    ],
    "formation": "ligne",
-   "label": "Chars à faux"
+   "label": "Chars à faux (200 chars)"
   },
   {
    "id": "cav-bessos",
@@ -514,6 +526,14 @@
      ],
      "state": "fuite",
      "losses": 1
+    },
+    "elephants-perses": {
+     "to": [
+      40,
+      2
+     ],
+     "state": "fuite",
+     "losses": 0.2
     }
    }
   }

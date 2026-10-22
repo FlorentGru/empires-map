@@ -35,10 +35,15 @@ export function firearmOf(faction: Faction | undefined): Firearm | null {
 /** Arme de tir d'une unité, ou null si elle ne tire pas (mêlée). */
 export function weaponOf(kind: BattleUnitKind, faction: Faction | undefined): Weapon | null {
   if (kind === 'artillerie') return 'canon';
-  if (kind === 'archers') return 'arc';
+  if (kind === 'archers' || kind === 'archers-montes') return 'arc';
   if (kind === 'infanterie') return firearmOf(faction);
   if (kind === 'navires') return firearmOf(faction) ? 'bordee' : null;
   return null;
+}
+
+/** Unités montées sur une bête ou un engin (galop, selle) : elles tirent d'un peu plus haut. */
+export function isMounted(kind: BattleUnitKind): boolean {
+  return kind === 'cavalerie' || kind === 'archers-montes' || kind === 'elephants' || kind === 'chars';
 }
 
 export function isRanged(unit: { kind: BattleUnitKind }, faction: Faction | undefined): boolean {

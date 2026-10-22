@@ -5,7 +5,11 @@
  */
 import type { SoldierPoseFn } from '../figures/soldiers';
 
-export type SoldierPose = 'marche' | 'vise' | 'recharge' | 'baionnette';
+/**
+ * `pique` : pique dressée ; `sarisse` : arme longue baissée en avant (phalange, tercio) ; `arc` : arc bandé quel que soit
+ * l'arme du soldat (archer monté). Ces trois poses remplacent l'arme du dessin.
+ */
+export type SoldierPose = 'marche' | 'vise' | 'recharge' | 'baionnette' | 'pique' | 'sarisse' | 'arc';
 export type WeaponClass = 'fusil' | 'arquebuse' | 'arc' | 'autre';
 
 /** Reconnaît l'arme d'après son dessin (fusil gris #6e7378, arquebuse #5e646a, arc courbé en Q31.5). */
@@ -60,13 +64,45 @@ function muzzleOf(top: number): [number, number] {
 }
 
 /** Inclinaison du corps (degrés, autour des pieds) selon la pose. */
-export const LEAN: Record<SoldierPose, number> = { marche: 0, vise: 0, recharge: 0, baionnette: 8 };
+export const LEAN: Record<SoldierPose, number> = { marche: 0, vise: 0, recharge: 0, baionnette: 8, pique: 0, sarisse: 6, arc: 0 };
+
+/** Arc de repli pour un archer monté dont le soldat du peuple porte une autre arme (même dessin que src/figures/soldiers.tsx). */
+const DEFAULT_BOW =
+  `<path d="M25 7Q31.5 22 25 37" fill="none" stroke="#3b2a1a" stroke-width="3.2" stroke-linecap="round"/>` +
+  `<path d="M25 7Q31.5 22 25 37" fill="none" stroke="#6b4a24" stroke-width="1.6" stroke-linecap="round"/>`;
+
+/** Arc tenu à bout de bras, corde tirée jusqu'à la joue, flèche encochée. */
+function drawnBow(tunic: string, skin: string, weapon: string): { arm: string; weapon: string } {
+  const bow = weapon.replace(/<path d="M25 7L25 37"[^>]*\/>/, '');
+  const bx = 26.75;
+  const string = `<path d="M${bx} 4L20.5 15L${bx} 28" fill="none" stroke="#efe6cc" stroke-width="0.6"/>`;
+  const shaft = `<path d="M20.5 15L35 15" fill="none" stroke="#6b4a24" stroke-width="0.9"/><path d="M35 15L33.6 14L33.6 16Z" fill="#d6dadc" stroke="none"/>`;
+  return {
+    arm: arm(tunic, skin, 30, 16),
+    weapon: place(bow, 30.5, 16, 0, 0.8, 28.25, 22) + string + shaft + `<circle cx="20.5" cy="15" r="1.4" fill="${skin}"/>`,
+  };
+}
+
+/** Hampe longue de bois avec fer de lance : de (x0, y0) à (x1, y1), le fer au bout. */
+function longPole(x0: number, y0: number, x1: number, y1: number): string {
+  const a = Math.atan2(y1 - y0, x1 - x0);
+  const [c, s] = [Math.cos(a), Math.sin(a)];
+  const head = `M${x1 + c * 1.6} ${y1 + s * 1.6}L${x1 - c * 2.4 - s * 1.5} ${y1 - s * 2.4 + c * 1.5}L${x1 - c * 2.4 + s * 1.5} ${y1 - s * 2.4 - c * 1.5}Z`;
+  return (
+    `<path d="M${x0} ${y0}L${x1} ${y1}" fill="none" stroke="#3b2a1a" stroke-width="2.9" stroke-linecap="butt"/>` +
+    `<path d="M${x0} ${y0}L${x1} ${y1}" fill="none" stroke="#8a5a2b" stroke-width="1.5" stroke-linecap="butt"/>` +
+    `<path d="${head}" fill="#a9adb0"/>`
+  );
+}
 
 /** Fonction à passer à `soldierSvg` ; `undefined` pour la marche habituelle. */
 export function poseFn(pose: SoldierPose): SoldierPoseFn | undefined {
   if (pose === 'marche') return undefined;
   return ({ weapon, tunic, skin }) => {
     const cls = weaponClass(weapon);
+    if (pose === 'pique') return { arm: arm(tunic, skin, 25, 21), weapon: longPole(26, 37, 26, 3.5) };
+    if (pose === 'sarisse') return { arm: arm(tunic, skin, 24.5, 21.5), weapon: longPole(7, 22.6, 37, 20.4) };
+    if (pose === 'arc') return drawnBow(tunic, skin, cls === 'arc' ? weapon : DEFAULT_BOW);
     if (cls === 'fusil' || cls === 'arquebuse') {
       if (pose === 'vise') return { arm: arm(tunic, skin, AIM.tx - 0.5, AIM.ty + 0.6), weapon: place(weapon, AIM.tx, AIM.ty, AIM.deg, AIM.sy) };
       if (pose === 'baionnette') return { arm: arm(tunic, skin, 24.5, 22.5), weapon: place(weapon, 24.5, 22.5, 75, 0.62) };
@@ -80,15 +116,7 @@ export function poseFn(pose: SoldierPose): SoldierPoseFn | undefined {
     }
     if (cls === 'arc') {
       if (pose !== 'vise') return null;
-      // arc tenu à bout de bras, corde tirée jusqu'à la joue, flèche encochée
-      const bow = weapon.replace(/<path d="M25 7L25 37"[^>]*\/>/, '');
-      const bx = 26.75;
-      const string = `<path d="M${bx} 4L20.5 15L${bx} 28" fill="none" stroke="#efe6cc" stroke-width="0.6"/>`;
-      const shaft = `<path d="M20.5 15L35 15" fill="none" stroke="#6b4a24" stroke-width="0.9"/><path d="M35 15L33.6 14L33.6 16Z" fill="#d6dadc" stroke="none"/>`;
-      return {
-        arm: arm(tunic, skin, 30, 16),
-        weapon: place(bow, 30.5, 16, 0, 0.8, 28.25, 22) + string + shaft + `<circle cx="20.5" cy="15" r="1.4" fill="${skin}"/>`,
-      };
+      return drawnBow(tunic, skin, weapon);
     }
     // lance, épée, hallebarde… : brandie (vise) ou pointée en avant (baionnette)
     if (pose === 'vise') return { arm: arm(tunic, skin, 24, 15.5), weapon: place(weapon, 24, 15.5, 64, 0.7) };

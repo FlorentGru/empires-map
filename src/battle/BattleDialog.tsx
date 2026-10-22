@@ -97,6 +97,7 @@ export function BattleDialog({ empireId, step, opener, onClose }: Props) {
   const duration = useMemo(() => (loaded ? durationOf(loaded.scenario) : 0), [loaded]);
   const factions = useMemo(() => (step.armies ?? []).map((a) => a.faction), [step]);
 
+  const year = step.year;
   // Boucle d'animation : arrêtée à la fermeture (démontage) et pendant que l'onglet est caché.
   useEffect(() => {
     if (!loaded) return;
@@ -109,7 +110,7 @@ export function BattleDialog({ empireId, step, opener, onClose }: Props) {
       const fit = fitCanvas(canvas);
       if (!fit) return;
       const frame = stateAt(loaded.scenario, scale, timeRef.current, factions);
-      drawBattle(fit.ctx, fit.w, fit.h, loaded.scenario, frame, loaded.sprites, biome);
+      drawBattle(fit.ctx, fit.w, fit.h, loaded.scenario, frame, loaded.sprites, biome, year);
       if (frame.phase !== lastPhase) {
         lastPhase = frame.phase;
         setPhase(frame.phase);
@@ -141,7 +142,7 @@ export function BattleDialog({ empireId, step, opener, onClose }: Props) {
       document.removeEventListener('visibilitychange', onVisibility);
       window.removeEventListener('resize', paint);
     };
-  }, [loaded, scale, duration, factions, biome]);
+  }, [loaded, scale, duration, factions, biome, year]);
 
   const seek = (t: number) => {
     timeRef.current = Math.max(0, Math.min(duration, t));

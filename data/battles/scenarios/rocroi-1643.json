@@ -146,7 +146,7 @@
     76,
     44
    ],
-   "formation": "ligne",
+   "formation": "coin",
    "label": "Cavalerie du duc d'Enghien (aile droite)"
   },
   {
@@ -182,8 +182,8 @@
     50,
     12
    ],
-   "formation": "carre",
-   "label": "Vieux tercios espagnols en carré"
+   "formation": "tercio",
+   "label": "Vieux tercios espagnols (piques et manches d'arquebusiers)"
   },
   {
    "id": "wallons",

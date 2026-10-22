@@ -139,7 +139,7 @@
     26,
     30
    ],
-   "formation": "ligne",
+   "formation": "quinconce",
    "label": "Hastats romains (première ligne)"
   },
   {
@@ -151,7 +151,7 @@
     16,
     30
    ],
-   "formation": "ligne",
+   "formation": "quinconce",
    "label": "Princes et triaires (deuxième et troisième lignes)"
   },
   {
@@ -236,7 +236,7 @@
     8
    ],
    "formation": "ligne",
-   "label": "Cavalerie numide carthaginoise"
+   "label": "Cavalerie numide de Carthage (aile gauche)"
   },
   {
    "id": "cav-d",

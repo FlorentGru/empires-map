@@ -1,10 +1,26 @@
 /** Dessin de la bataille sur un canvas 2D : fond, décor, figurines triées par profondeur, poussière. */
-import type { BattleBiome, BattleScenario } from '../types-battle';
-import { FW_T, hash01, TERRAIN_H, TERRAIN_W, type BattleEffect, type BattleFrame } from './engine';
+import type { BattleBiome, BattleScenario, BattleUnitKind } from '../types-battle';
+import { FW_T, hash01, TERRAIN_H, TERRAIN_W, type BattleEffect, type BattleFigure, type BattleFrame } from './engine';
 import { drawCannon } from './cannon';
 import { PAD, SPRITE_W } from './poses';
 import { buildScenery, drawTree, type Scenery } from './scenery';
 import type { FactionSprites } from './sprites';
+import type { SoldierPose } from './poses';
+import {
+  CHARIOT_DRIVER,
+  coatOf,
+  drawBrulot,
+  drawBust,
+  drawChariot,
+  drawElephant,
+  drawFallenChariot,
+  drawFallenElephant,
+  drawFallenHorse,
+  drawHorse,
+  ELEPHANT_NECK,
+  HORSE_BACK,
+} from './mounts';
+import { drawGalley, drawSailer } from './ships';
 
 /** Ajuste la taille interne du canvas à sa taille affichée (devicePixelRatio) ; renvoie le contexte en pixels CSS. */
 export function fitCanvas(canvas: HTMLCanvasElement): { ctx: CanvasRenderingContext2D; w: number; h: number } | null {
@@ -22,7 +38,33 @@ export function fitCanvas(canvas: HTMLCanvasElement): { ctx: CanvasRenderingCont
   return { ctx, w, h };
 }
 
-const SIZE_BY_KIND = { infanterie: 1, archers: 1, cavalerie: 1.18, elephants: 1.6, navires: 1, artillerie: 1 } as const;
+/** Taille de dessin (en largeurs de fantassin) et demi-largeur de l'ombre au sol, selon la nature de l'unité. */
+const SIZE_BY_KIND: Record<BattleUnitKind, number> = {
+  infanterie: 1,
+  archers: 1,
+  cavalerie: 1,
+  'archers-montes': 1,
+  elephants: 1.7,
+  chars: 1,
+  navires: 1,
+  brulots: 1,
+  artillerie: 1,
+};
+const SHADOW_BY_KIND: Record<BattleUnitKind, number> = {
+  infanterie: 0.42,
+  archers: 0.42,
+  cavalerie: 0.8,
+  'archers-montes': 0.8,
+  elephants: 1.1,
+  chars: 1.35,
+  navires: 0.42,
+  brulots: 0.8,
+  artillerie: 0.42,
+};
+/** Longueur d'une coque en unités de terrain. */
+const SHIP_LEN_T = 8.8;
+/** Seuil d'année : galères à rames avant, vaisseaux à voiles carrées ensuite. */
+const SAIL_YEAR = 1600;
 
 let sceneryCache: { scenario: BattleScenario; biome: BattleBiome; scenery: Scenery } | null = null;
 
@@ -35,6 +77,15 @@ function sceneryFor(scenario: BattleScenario, biome: BattleBiome, w: number, h: 
   return scenery;
 }
 
+/** Image du soldat selon sa pose ; les armes longues (sarisse, pique) et l'arc de l'archer monté ont leurs propres poses. */
+function imageFor(sp: FactionSprites, f: BattleFigure, dead: boolean): HTMLImageElement {
+  if (dead) return sp.vaincu[f.frame];
+  let pose: SoldierPose = f.pose === 'tir' ? 'vise' : f.pose; // la pose « tir » garde l'arme épaulée (comme « vise »)
+  if (f.pike) pose = pose === 'baionnette' ? 'sarisse' : 'pique';
+  else if (f.kind === 'archers-montes' && pose === 'vise') pose = 'arc';
+  return sp.pose(pose, f.frame) ?? sp.marche[f.frame];
+}
+
 export function drawBattle(
   ctx: CanvasRenderingContext2D,
   w: number,
@@ -43,6 +94,7 @@ export function drawBattle(
   frame: BattleFrame,
   sprites: FactionSprites[],
   biome: BattleBiome = 'prairie',
+  year?: number,
 ) {
   const sx = w / TERRAIN_W;
   const sy = h / TERRAIN_H;
@@ -56,17 +108,29 @@ export function drawBattle(
   const unitById = new Map(scenario.units.map((u) => [u.id, u]));
   const sea = scenario.terrain === 'mer';
 
-  // Coques sous les groupes (navires, ou toute unité en mer).
+  // Coques : un navire par groupe d'équipage (unités `navires`) ; toute autre unité en mer garde une coque commune.
+  const ships = new Map<string, { x: number; y: number; n: number; facing: 1 | -1; alive: number; moving: boolean }>();
   const groups = new Map<string, { xs: number[]; ys: number[] }>();
   for (const f of frame.figures) {
+    if (f.ship) {
+      const s = ships.get(f.ship) ?? { x: 0, y: 0, n: 0, facing: f.facing, alive: 0, moving: false };
+      s.x += f.x;
+      s.y += f.y;
+      s.n++;
+      if (f.state !== 'mort') s.alive++;
+      if (!f.idle) s.moving = true;
+      ships.set(f.ship, s);
+      continue;
+    }
     const u = unitById.get(f.unit);
-    if (!u || !(u.kind === 'navires' || sea)) continue;
+    if (!u || u.kind === 'navires' || u.kind === 'brulots' || !sea) continue;
     const g = groups.get(f.unit) ?? { xs: [], ys: [] };
     g.xs.push(f.x);
     g.ys.push(f.y);
     groups.set(f.unit, g);
   }
   for (const [id, g] of groups) drawHull(ctx, g, sx, sy, w, frame.t, id);
+  const drawnShips = new Set<string>();
 
   drawDust(ctx, frame, sx, sy, w);
 
@@ -76,18 +140,28 @@ export function drawBattle(
     while (nextTree < trees.length && trees[nextTree]!.y <= f.y) drawTree(ctx, trees[nextTree++]!, sx, sy);
     const sp = sprites[f.army];
     if (!sp) continue;
+    if (f.ship && !drawnShips.has(f.ship)) {
+      drawnShips.add(f.ship);
+      const s = ships.get(f.ship)!;
+      ctx.save();
+      ctx.translate((s.x / s.n) * sx, (s.y / s.n) * sy);
+      if (s.facing === -1) ctx.scale(-1, 1);
+      const opts = { color: sp.color, t: frame.t, rowing: s.moving, seed: hash01(f.ship) * 6.28, wreck: s.alive === 0 };
+      if ((year ?? 0) < SAIL_YEAR) drawGalley(ctx, SHIP_LEN_T * sx, opts);
+      else drawSailer(ctx, SHIP_LEN_T * sx, opts);
+      ctx.restore();
+    }
     const dw = fw * (SIZE_BY_KIND[f.kind] ?? 1);
     const dh = dw * 1.25;
     let px = f.x * sx;
     const py = f.y * sy;
     let alpha = 1;
     const dead = f.state === 'mort';
-    // Pose de combat si son image est prête ; la pose « tir » garde l'arme épaulée (comme « vise »).
-    const pose = f.pose === 'tir' ? 'vise' : f.pose;
-    const img = dead ? sp.vaincu[f.frame] : (sp.pose(pose, f.frame) ?? sp.marche[f.frame]);
-    if (f.state === 'combat' && f.pose === 'marche') px += Math.sin(frame.t * 14 + hash01(f.id) * 6.28) * dw * 0.12;
-    // Mêlée : petit va-et-vient d'estoc dans le sens du camp.
-    if (f.pose === 'baionnette' && f.state === 'combat') px += f.facing * Math.max(0, Math.sin(frame.t * 7 + hash01(f.id) * 6.28)) * dw * 0.14;
+    const img = imageFor(sp, f, dead);
+    const mount = f.kind === 'cavalerie' || f.kind === 'archers-montes' || f.kind === 'elephants' || f.kind === 'chars' || f.kind === 'brulots';
+    if (f.state === 'combat' && f.pose === 'marche' && !mount && !f.pike) px += Math.sin(frame.t * 14 + hash01(f.id) * 6.28) * dw * 0.12;
+    // Mêlée : petit va-et-vient d'estoc dans le sens de la figurine.
+    if (f.pose === 'baionnette' && f.state === 'combat' && !mount) px += f.facing * Math.max(0, Math.sin(frame.t * 7 + hash01(f.id) * 6.28)) * dw * 0.14;
     if (f.state === 'fuite') {
       px -= f.facing * dw * 0.25; // avance vers son bord
       alpha = 0.75;
@@ -96,12 +170,18 @@ export function drawBattle(
     ctx.globalAlpha = dead ? 0.25 : 0.4;
     ctx.fillStyle = sp.color;
     ctx.beginPath();
-    ctx.ellipse(px, py, dw * 0.42, dw * 0.14, 0, 0, Math.PI * 2);
+    ctx.ellipse(px, py, dw * (SHADOW_BY_KIND[f.kind] ?? 0.42), dw * 0.14, 0, 0, Math.PI * 2);
     ctx.fill();
     ctx.globalAlpha = alpha;
     ctx.save();
     ctx.translate(px, py);
     if (f.facing === -1) ctx.scale(-1, 1);
+    if (mount) {
+      drawMount(ctx, f, sp, img, dw, dead, frame.t);
+      ctx.restore();
+      ctx.globalAlpha = 1;
+      continue;
+    }
     if (f.kind === 'artillerie') {
       // Une figurine = une pièce et son servant (debout derrière l'affût).
       ctx.save();
@@ -114,11 +194,101 @@ export function drawBattle(
     // Le dessin est large (marges PAD) : on le recale sur l'ancre habituelle (milieu des 32 unités).
     const k = dw / 32;
     ctx.drawImage(img, -(16 + PAD) * k, -dh * 0.92, SPRITE_W * k, dh);
+    if (f.roof) drawRoof(ctx, k, sp.color, f.id);
     ctx.restore();
     ctx.globalAlpha = 1;
   }
   while (nextTree < trees.length) drawTree(ctx, trees[nextTree++]!, sx, sy);
   drawEffects(ctx, frame.effects, sx, sy, fw);
+}
+
+/** Bouclier du toit de la tortue, au-dessus de la tête : aplat aux couleurs du camp, bande claire et umbo doré. */
+function drawRoof(ctx: CanvasRenderingContext2D, k: number, color: string, id: string) {
+  const wdt = 34 * k;
+  const hgt = 7 * k;
+  const tilt = (hash01(id) - 0.5) * 0.12;
+  ctx.save();
+  ctx.translate(0, -35.5 * k);
+  ctx.rotate(tilt);
+  ctx.fillStyle = color;
+  ctx.strokeStyle = '#3b2a1a';
+  ctx.lineWidth = Math.max(1, k * 1.2);
+  ctx.beginPath();
+  ctx.roundRect(-wdt / 2, -hgt / 2, wdt, hgt, hgt * 0.4);
+  ctx.fill();
+  ctx.stroke();
+  ctx.fillStyle = 'rgba(244, 239, 224, 0.75)';
+  ctx.fillRect(-wdt / 2 + hgt * 0.4, -hgt * 0.12, wdt - hgt * 0.8, hgt * 0.24);
+  ctx.fillStyle = '#e0b43a';
+  ctx.beginPath();
+  ctx.arc(0, 0, hgt * 0.2, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.restore();
+}
+
+/** Cheval et cavalier, éléphant et cornac, char et conducteur, ou brûlot. L'origine est au sol, la figurine regarde à droite. */
+function drawMount(ctx: CanvasRenderingContext2D, f: BattleFigure, sp: FactionSprites, img: HTMLImageElement, dw: number, dead: boolean, t: number) {
+  const kr = (dw / 32) * 0.92; // taille du cavalier
+  const mirrorRider = f.aim !== f.facing; // tir parthe : le cavalier se retourne sur sa selle
+  const rider = (image: HTMLImageElement, k: number, cropU: number, x: number, y: number, mirror = false) => {
+    ctx.save();
+    if (mirror) ctx.scale(-1, 1);
+    drawBust(ctx, image, k, cropU, mirror ? -x : x, y);
+    ctx.restore();
+  };
+  if (f.kind === 'brulots') {
+    drawBrulot(ctx, dw, t, f.id, dead);
+    return;
+  }
+  if (f.kind === 'cavalerie' || f.kind === 'archers-montes') {
+    const coat = coatOf(f.id);
+    if (dead) {
+      ctx.globalAlpha *= 0.65;
+      drawFallenHorse(ctx, dw, coat);
+      // Le cavalier tombé gît près de sa monture.
+      ctx.drawImage(img, -(16 + PAD) * kr - dw * 0.7, -dw * 0.62, SPRITE_W * kr, dw * 0.78);
+      return;
+    }
+    drawHorse(ctx, dw, { coat, frame: f.frame, idle: f.idle, blanket: sp.color, t });
+    const bounce = !f.idle && f.frame === 0 ? -0.04 : 0;
+    rider(img, kr, 27.5, -dw * 0.06, -dw * (HORSE_BACK * 0.97 - bounce), mirrorRider);
+    return;
+  }
+  if (f.kind === 'elephants') {
+    if (dead) {
+      ctx.globalAlpha *= 0.65;
+      drawFallenElephant(ctx, dw);
+      return;
+    }
+    const howdah = sp.faction === 'indiens';
+    drawElephant(ctx, dw, { frame: f.frame, idle: f.idle, blanket: sp.color, t, howdah, seed: hash01(f.id) });
+    const kc = (dw / 32) * 0.5;
+    rider(img, kc, 27.5, dw * ELEPHANT_NECK.x, -dw * (ELEPHANT_NECK.y - 0.02));
+    if (howdah) {
+      // L'archer de la tour : même peuple, arc bandé.
+      const bow = sp.pose('arc', f.frame) ?? img;
+      rider(bow, kc * 1.15, 27.5, -dw * 0.12, -dw * 1.5, mirrorRider);
+    }
+    return;
+  }
+  // chars
+  const coat = coatOf(f.id);
+  if (dead) {
+    ctx.globalAlpha *= 0.65;
+    drawFallenChariot(ctx, dw, coat, sp.color);
+    return;
+  }
+  drawChariot(ctx, dw, {
+    coat,
+    frame: f.frame,
+    idle: f.idle,
+    blanket: sp.color,
+    t,
+    scythes: sp.faction === 'parthes-perses',
+    roll: f.idle ? 0.3 : t * 9 + hash01(f.id) * 6,
+    id: f.id,
+  });
+  rider(img, kr, 31, dw * CHARIOT_DRIVER.x, -dw * CHARIOT_DRIVER.y);
 }
 
 let puffSprite: HTMLCanvasElement | null = null;
@@ -225,7 +395,7 @@ function drawHull(ctx: CanvasRenderingContext2D, g: { xs: number[]; ys: number[]
 function drawDust(ctx: CanvasRenderingContext2D, frame: BattleFrame, sx: number, sy: number, w: number) {
   const units = new Map<string, { x: number; y: number; n: number }>();
   for (const f of frame.figures) {
-    if (f.state !== 'combat') continue;
+    if (f.state !== 'combat' || f.kind === 'navires' || f.kind === 'brulots') continue;
     const u = units.get(f.unit) ?? { x: 0, y: 0, n: 0 };
     u.x += f.x;
     u.y += f.y;

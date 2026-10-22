@@ -220,7 +220,7 @@
     26,
     10
    ],
-   "formation": "ligne",
+   "formation": "tirailleurs",
    "label": "Basques embusqués au nord-ouest"
   },
   {
@@ -232,7 +232,7 @@
     50,
     52
    ],
-   "formation": "ligne",
+   "formation": "tirailleurs",
    "label": "Basques embusqués au sud"
   },
   {
@@ -244,7 +244,7 @@
     76,
     10
    ],
-   "formation": "ligne",
+   "formation": "tirailleurs",
    "label": "Basques embusqués au nord-est"
   }
  ],

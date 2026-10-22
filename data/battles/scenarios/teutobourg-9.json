@@ -229,7 +229,7 @@
     22,
     12
    ],
-   "formation": "ligne",
+   "formation": "tirailleurs",
    "label": "Chérusques embusqués dans la forêt (ouest)"
   },
   {
@@ -241,7 +241,7 @@
     55,
     10
    ],
-   "formation": "ligne",
+   "formation": "tirailleurs",
    "label": "Marses et Chattes dans la forêt (centre)"
   },
   {
@@ -253,7 +253,7 @@
     84,
     14
    ],
-   "formation": "ligne",
+   "formation": "tirailleurs",
    "label": "Bructères derrière le talus (est)"
   },
   {
@@ -265,7 +265,7 @@
     40,
     54
    ],
-   "formation": "ligne",
+   "formation": "tirailleurs",
    "label": "Guerriers du sud (côté marais)"
   }
  ],
@@ -356,7 +356,8 @@
       40,
       40
      ],
-     "state": "combat"
+     "state": "combat",
+     "action": "baionnette"
     },
     "xix": {
      "to": [
@@ -393,7 +394,8 @@
       84,
       28
      ],
-     "state": "combat"
+     "state": "combat",
+     "action": "baionnette"
     },
     "cav-rom": {
      "to": [
@@ -470,14 +472,16 @@
       30,
       32
      ],
-     "state": "combat"
+     "state": "combat",
+     "action": "baionnette"
     },
     "g-nord-2": {
      "to": [
       58,
       30
      ],
-     "state": "combat"
+     "state": "combat",
+     "action": "baionnette"
     }
    }
   }

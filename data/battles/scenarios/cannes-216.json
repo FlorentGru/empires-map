@@ -145,7 +145,7 @@
     50,
     33
    ],
-   "formation": "ligne",
+   "formation": "croissant",
    "label": "Infanterie gauloise et ibère du centre"
   },
   {
@@ -157,7 +157,7 @@
     32,
     38
    ],
-   "formation": "colonne",
+   "formation": "ligne",
    "label": "Fantassins africains (aile gauche)"
   },
   {
@@ -169,7 +169,7 @@
     68,
     38
    ],
-   "formation": "colonne",
+   "formation": "ligne",
    "label": "Fantassins africains (aile droite)"
   },
   {
@@ -181,7 +181,7 @@
     22,
     42
    ],
-   "formation": "ligne",
+   "formation": "coin",
    "label": "Cavalerie lourde gauloise et ibère d'Hasdrubal"
   },
   {
