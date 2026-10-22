@@ -7,6 +7,9 @@ import type { Person } from '../types';
 import { characterSvg, FACTION_COLORS } from './registry';
 import { norm, scaled, Svg } from './svgUtils';
 
+/** Valeur du sélecteur d'empire pour « Tous ». */
+const ALL = 'all';
+
 export interface PersonRef {
   empire: string;
   id: string;
@@ -126,45 +129,55 @@ export function PeopleView({
   onNavigate: (empireId: string, stepId: string) => void;
 }) {
   const empires = EMPIRES.filter((e) => (PEOPLE[e.id]?.length ?? 0) > 0);
-  // Par défaut : l'empire affiché sur la carte (adresse de la page), sinon le premier qui a des fiches.
+  // Par défaut : l'empire affiché sur la carte (adresse de la page), sinon tous les empires.
   const current = readUrlState().empire;
-  const [empireId, setEmpireId] = useState(initial?.empire ?? (empires.some((e) => e.id === current) ? current! : (empires[0]?.id ?? '')));
-  const [selected, setSelected] = useState<string | null>(initial?.id ?? null);
+  const [empireId, setEmpireId] = useState<string>(initial?.empire ?? (empires.some((e) => e.id === current) ? current! : ALL));
+  const [selected, setSelected] = useState<{ empireId: string; id: string } | null>(initial ? { empireId: initial.empire, id: initial.id } : null);
   const q = norm(query.trim());
-  const people = (PEOPLE[empireId] ?? []).filter((p) => !q || norm(`${p.name} ${p.title}`).includes(q));
-  const person = selected ? PEOPLE[empireId]?.find((p) => p.id === selected) : undefined;
+  const groups = (empireId === ALL ? empires : empires.filter((e) => e.id === empireId))
+    .map((e) => ({ empire: e, list: (PEOPLE[e.id] ?? []).filter((p) => !q || norm(`${p.name} ${p.title}`).includes(q)) }))
+    .filter((g) => g.list.length > 0);
+  const person = selected ? PEOPLE[selected.empireId]?.find((p) => p.id === selected.id) : undefined;
 
-  if (person) return <PersonDetail empireId={empireId} person={person} onBack={() => setSelected(null)} onNavigate={onNavigate} />;
+  if (selected && person) return <PersonDetail empireId={selected.empireId} person={person} onBack={() => setSelected(null)} onNavigate={onNavigate} />;
   return (
     <section aria-labelledby="people-title">
       <h2 id="people-title" className="gallery__section">
         Personnages illustres
       </h2>
       <div className="gallery__filters people__empires" role="group" aria-label="Choisir l'empire">
+        <button type="button" className="btn btn--ghost" aria-pressed={empireId === ALL} onClick={() => setEmpireId(ALL)}>
+          Tous
+        </button>
         {empires.map((e) => (
           <button key={e.id} type="button" className="btn btn--ghost" aria-pressed={e.id === empireId} onClick={() => setEmpireId(e.id)}>
             {e.name.split(',')[0]}
           </button>
         ))}
       </div>
-      <div className="gallery__grid">
-        {people.map((p) => (
-          <button
-            key={p.id}
-            type="button"
-            className="gallery__card people__card"
-            data-card
-            data-uid={`p:${p.id}`}
-            style={{ borderBottomColor: FACTION_COLORS[p.faction] }}
-            onClick={() => setSelected(p.id)}
-          >
-            <Svg html={scaled(characterSvg(p.archetype), 2.2)} />
-            <span className="gallery__name">{p.name}</span>
-            <span className="people__span">{lifeSpan(p)}</span>
-          </button>
-        ))}
-      </div>
-      {people.length === 0 && <p className="gallery__none">Aucun personnage ne correspond.</p>}
+      {groups.map(({ empire, list }) => (
+        <section key={empire.id} aria-label={empireId === ALL ? undefined : empire.name}>
+          {empireId === ALL && <h3 className="gallery__group">{empire.name.split(',')[0]}</h3>}
+          <div className="gallery__grid">
+            {list.map((p) => (
+              <button
+                key={p.id}
+                type="button"
+                className="gallery__card people__card"
+                data-card
+                data-uid={`p:${p.id}`}
+                style={{ borderBottomColor: FACTION_COLORS[p.faction] }}
+                onClick={() => setSelected({ empireId: empire.id, id: p.id })}
+              >
+                <Svg html={scaled(characterSvg(p.archetype), 2.2)} />
+                <span className="gallery__name">{p.name}</span>
+                <span className="people__span">{lifeSpan(p)}</span>
+              </button>
+            ))}
+          </div>
+        </section>
+      ))}
+      {groups.length === 0 && <p className="gallery__none">Aucun personnage ne correspond.</p>}
     </section>
   );
 }

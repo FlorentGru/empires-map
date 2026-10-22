@@ -1893,6 +1893,38 @@ kbd {
   min-height: 220px;
 }
 
+/* ---------- Galerie : titre de groupe par empire (bouton « Tous ») ---------- */
+.gallery__group {
+  margin: 20px 0 8px;
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--ink-soft);
+}
+
+/* ---------- Galerie : unités de bataille ---------- */
+.units__grid {
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+}
+.gallery__card.units__card {
+  justify-content: flex-start;
+}
+.units__scene {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 3;
+  border-radius: 5px;
+  background: #d9c9a0;
+}
+.units__big {
+  display: block;
+  flex: 0 1 380px;
+  min-width: 260px;
+  padding: 10px;
+  border-color: var(--parchment-edge);
+  border-bottom-color: var(--parchment-edge);
+}
+
 /* ---------- Galerie : personnages illustres ---------- */
 .people__empires {
   margin: 0 0 12px;

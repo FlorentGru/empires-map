@@ -66,14 +66,23 @@ const SHIP_LEN_T = 8.8;
 /** Seuil d'année : galères à rames avant, vaisseaux à voiles carrées ensuite. */
 const SAIL_YEAR = 1600;
 
-let sceneryCache: { scenario: BattleScenario; biome: BattleBiome; scenery: Scenery } | null = null;
+/** Paysages gardés par bataille (la fenêtre n'en utilise qu'un ; la galerie des unités en anime plusieurs à la fois). */
+const sceneryCache = new Map<BattleScenario, { biome: BattleBiome; scenery: Scenery }>();
+const SCENERY_CACHE_MAX = 24;
+
+/** Libère les paysages en mémoire (à la fermeture de la galerie des unités). */
+export function clearSceneryCache() {
+  sceneryCache.clear();
+}
 
 /** Paysage de la bataille, reconstruit seulement au changement de bataille, de biome ou de taille. */
 function sceneryFor(scenario: BattleScenario, biome: BattleBiome, w: number, h: number, dpr: number): Scenery {
-  const c = sceneryCache;
-  if (c && c.scenario === scenario && c.biome === biome && c.scenery.w === w && c.scenery.h === h && c.scenery.dpr === dpr) return c.scenery;
+  const c = sceneryCache.get(scenario);
+  if (c && c.biome === biome && c.scenery.w === w && c.scenery.h === h && c.scenery.dpr === dpr) return c.scenery;
   const scenery = buildScenery(scenario, biome, w, h, dpr);
-  sceneryCache = { scenario, biome, scenery };
+  sceneryCache.delete(scenario);
+  sceneryCache.set(scenario, { biome, scenery });
+  if (sceneryCache.size > SCENERY_CACHE_MAX) sceneryCache.delete(sceneryCache.keys().next().value!);
   return scenery;
 }
 

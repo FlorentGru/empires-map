@@ -10,6 +10,8 @@ import { PeopleView, type PersonRef } from './People';
 import { MonumentsView } from './Monuments';
 import { DisastersView } from './Disasters';
 import { InventionsView } from './Inventions';
+import { BattleUnitsView } from './BattleUnits';
+import { unitsMatching } from '../battle/unitInfo';
 
 interface Props {
   onClose: () => void;
@@ -24,7 +26,7 @@ interface Props {
 }
 
 type Kind = 'faction' | 'archetype';
-export type Filter = 'all' | 'soldiers' | 'characters' | 'people' | 'monuments' | 'disasters' | 'inventions';
+export type Filter = 'all' | 'soldiers' | 'characters' | 'units' | 'people' | 'monuments' | 'disasters' | 'inventions';
 
 interface Item {
   uid: string;
@@ -201,6 +203,9 @@ export function Gallery({ onClose, onNavigate, initialPerson = null, initialFilt
   const selectedRef = useRef<Item | null>(null);
   selectedRef.current = selected;
   const lastUid = useRef<string | null>(null);
+  const [unitId, setUnitId] = useState<string | null>(null);
+  const unitRef = useRef<string | null>(null);
+  unitRef.current = unitId;
 
   useEffect(() => {
     const d = ref.current;
@@ -218,12 +223,14 @@ export function Gallery({ onClose, onNavigate, initialPerson = null, initialFilt
         items: s.items.filter((it) => {
           if (filter === 'soldiers' && it.kind !== 'faction') return false;
           if (filter === 'characters' && it.kind !== 'archetype') return false;
+          if (filter === 'units') return false;
           return !q || norm(`${it.info.label} ${it.info.era}`).includes(q);
         }),
       })).filter((s) => s.items.length > 0),
     [filter, q],
   );
-  const count = sections.reduce((n, s) => n + s.items.length, 0);
+  const unitCount = filter === 'all' ? unitsMatching(query).length : 0;
+  const count = sections.reduce((n, s) => n + s.items.length, 0) + unitCount;
 
   const back = () => {
     setSelected(null);
@@ -267,7 +274,8 @@ export function Gallery({ onClose, onNavigate, initialPerson = null, initialFilt
         // Échap : d'abord le détail, ensuite la galerie. On ferme nous-mêmes (onClose explicite)
         // plutôt que de compter sur l'événement `close` du dialogue, non relayé de façon fiable.
         e.preventDefault();
-        if (selectedRef.current) back();
+        if (unitRef.current) setUnitId(null);
+        else if (selectedRef.current) back();
         else onClose();
       }}
     >
@@ -280,6 +288,7 @@ export function Gallery({ onClose, onNavigate, initialPerson = null, initialFilt
                 ['all', 'Tous'],
                 ['soldiers', 'Soldats'],
                 ['characters', 'Personnages'],
+                ['units', 'Unités de bataille'],
                 ['people', 'Personnages illustres'],
                 ['monuments', 'Monuments'],
                 ['disasters', 'Catastrophes et guerres'],
@@ -293,6 +302,7 @@ export function Gallery({ onClose, onNavigate, initialPerson = null, initialFilt
                 aria-pressed={filter === id}
                 onClick={() => {
                   setFilter(id);
+                  setUnitId(null);
                   onFilterChange?.(id);
                 }}
               >
@@ -323,6 +333,8 @@ export function Gallery({ onClose, onNavigate, initialPerson = null, initialFilt
           <DisastersView query={query} onNavigate={onNavigate} />
         ) : filter === 'inventions' ? (
           <InventionsView query={query} onNavigate={onNavigate} />
+        ) : filter === 'units' || (filter === 'all' && unitId && !selected) ? (
+          <BattleUnitsView query={query} selected={unitId} onSelect={setUnitId} onNavigate={onNavigate} />
         ) : selected ? (
           <Detail item={selected} onBack={back} onNavigate={onNavigate} />
         ) : (
@@ -349,6 +361,7 @@ export function Gallery({ onClose, onNavigate, initialPerson = null, initialFilt
                 </div>
               </section>
             ))}
+            {unitCount > 0 && <BattleUnitsView query={query} selected={null} onSelect={setUnitId} onNavigate={onNavigate} />}
             {count === 0 && <p className="gallery__none">Aucune figurine ne correspond à « {query} ».</p>}
           </>
         )}

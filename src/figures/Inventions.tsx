@@ -15,6 +15,9 @@ export function stepForInvention(empireId: string, year: number) {
   return s ? { stepId: s.id, title: s.title, year: s.year } : null;
 }
 
+/** Valeur du sélecteur d'empire pour « Tous ». */
+const ALL = 'all';
+
 function InventionDetail({
   empireId,
   inv,
@@ -89,44 +92,55 @@ function InventionDetail({
 export function InventionsView({ query, onNavigate }: { query: string; onNavigate: (empireId: string, stepId: string) => void }) {
   const empires = EMPIRES.filter((e) => (INVENTIONS[e.id]?.length ?? 0) > 0);
   const current = readUrlState().empire;
-  const [empireId, setEmpireId] = useState(empires.some((e) => e.id === current) ? current! : (empires[0]?.id ?? ''));
-  const [selected, setSelected] = useState<string | null>(null);
+  // Par défaut : l'empire affiché sur la carte, sinon tous les empires.
+  const [empireId, setEmpireId] = useState<string>(empires.some((e) => e.id === current) ? current! : ALL);
+  const [selected, setSelected] = useState<{ empireId: string; id: string } | null>(null);
   const q = norm(query.trim());
-  const list = (INVENTIONS[empireId] ?? []).filter((i) => !q || norm(`${i.name} ${i.place} ${i.inventor ?? ''}`).includes(q));
-  const inv = selected ? INVENTIONS[empireId]?.find((i) => i.id === selected) : undefined;
-  if (inv) return <InventionDetail empireId={empireId} inv={inv} onBack={() => setSelected(null)} onNavigate={onNavigate} />;
+  const groups = (empireId === ALL ? empires : empires.filter((e) => e.id === empireId))
+    .map((e) => ({ empire: e, list: (INVENTIONS[e.id] ?? []).filter((i) => !q || norm(`${i.name} ${i.place} ${i.inventor ?? ''}`).includes(q)) }))
+    .filter((g) => g.list.length > 0);
+  const inv = selected ? INVENTIONS[selected.empireId]?.find((i) => i.id === selected.id) : undefined;
+  if (selected && inv) return <InventionDetail empireId={selected.empireId} inv={inv} onBack={() => setSelected(null)} onNavigate={onNavigate} />;
   return (
     <section aria-labelledby="inventions-title">
       <h2 id="inventions-title" className="gallery__section">
         Inventions révolutionnaires
       </h2>
       <div className="gallery__filters people__empires" role="group" aria-label="Choisir l'empire">
+        <button type="button" className="btn btn--ghost" aria-pressed={empireId === ALL} onClick={() => setEmpireId(ALL)}>
+          Tous
+        </button>
         {empires.map((e) => (
           <button key={e.id} type="button" className="btn btn--ghost" aria-pressed={e.id === empireId} onClick={() => setEmpireId(e.id)}>
             {e.name.split(',')[0]}
           </button>
         ))}
       </div>
-      <div className="gallery__grid">
-        {list.map((x) => (
-          <button
-            key={x.id}
-            type="button"
-            className="gallery__card people__card monuments__card"
-            data-card
-            data-uid={`i:${x.id}`}
-            onClick={() => setSelected(x.id)}
-          >
-            <Svg html={inventionIconSvg(x.category)} />
-            <span className="gallery__name">{x.name}</span>
-            <span className="people__span">
-              {x.approx ? 'vers ' : ''}
-              {formatYear(x.year)} · {CATEGORY_LABELS[x.category]}
-            </span>
-          </button>
-        ))}
-      </div>
-      {list.length === 0 && <p className="gallery__none">Aucune invention ne correspond.</p>}
+      {groups.map(({ empire, list }) => (
+        <section key={empire.id} aria-label={empireId === ALL ? undefined : empire.name}>
+          {empireId === ALL && <h3 className="gallery__group">{empire.name.split(',')[0]}</h3>}
+          <div className="gallery__grid">
+            {list.map((x) => (
+              <button
+                key={x.id}
+                type="button"
+                className="gallery__card people__card monuments__card"
+                data-card
+                data-uid={`i:${x.id}`}
+                onClick={() => setSelected({ empireId: empire.id, id: x.id })}
+              >
+                <Svg html={inventionIconSvg(x.category)} />
+                <span className="gallery__name">{x.name}</span>
+                <span className="people__span">
+                  {x.approx ? 'vers ' : ''}
+                  {formatYear(x.year)} · {CATEGORY_LABELS[x.category]}
+                </span>
+              </button>
+            ))}
+          </div>
+        </section>
+      ))}
+      {groups.length === 0 && <p className="gallery__none">Aucune invention ne correspond.</p>}
     </section>
   );
 }
