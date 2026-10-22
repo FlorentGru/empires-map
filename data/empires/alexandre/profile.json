@@ -1,0 +1,179 @@
+{
+  "empire": "alexandre",
+  "periods": [
+    {
+      "id": "alexandre-336-323",
+      "name": "Les conquêtes d’Alexandre",
+      "start": -336,
+      "end": -323,
+      "population": {
+        "total": {
+          "value": 25000000,
+          "low": 20000000,
+          "high": 30000000,
+          "year": -323,
+          "note": "Ordre de grandeur très incertain : aucun recensement ; empire d’environ 5 millions de km² à son maximum.",
+          "source": {
+            "label": "Wikipédia : Empire d’Alexandre le Grand",
+            "url": "https://fr.wikipedia.org/wiki/Empire_d'Alexandre_le_Grand"
+          }
+        },
+        "cities": [
+          {
+            "name": "Babylone",
+            "population": {
+              "value": 100000,
+              "low": 50000,
+              "high": 200000,
+              "year": -323,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Babylone",
+                "url": "https://fr.wikipedia.org/wiki/Babylone"
+              }
+            }
+          },
+          {
+            "name": "Suse",
+            "population": {
+              "value": 40000,
+              "low": 20000,
+              "high": 80000,
+              "year": -330,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Suse",
+                "url": "https://fr.wikipedia.org/wiki/Suse"
+              }
+            }
+          },
+          {
+            "name": "Memphis",
+            "population": {
+              "value": 50000,
+              "low": 20000,
+              "high": 100000,
+              "year": -331,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Memphis (Égypte)",
+                "url": "https://fr.wikipedia.org/wiki/Memphis_(Égypte)"
+              }
+            }
+          },
+          {
+            "name": "Éphèse",
+            "population": {
+              "value": 30000,
+              "low": 15000,
+              "high": 60000,
+              "year": -334,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Éphèse",
+                "url": "https://fr.wikipedia.org/wiki/Éphèse"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Argent et or des trésors achéménides",
+          "Blé d’Égypte et de Babylonie",
+          "Chevaux de Médie et de Bactriane",
+          "Épices et bois précieux"
+        ],
+        "currency": "Tétradrachmes d’argent à l’étalon attique, frappés en masse à partir de -330 ; dariques d’or perses encore en circulation.",
+        "taxation": "Tributs des satrapies maintenus sur le modèle perse ; butin des trésors royaux de Suse, Persépolis et Ecbatane (environ 180 000 talents selon les sources antiques).",
+        "trade": "Routes entre la Méditerranée, la Mésopotamie, la Perse et l’Indus ; les villes fondées par Alexandre servent de relais et de places de marché."
+      },
+      "army": {
+        "size": {
+          "value": 47000,
+          "low": 35000,
+          "high": 50000,
+          "year": -331,
+          "note": "Effectif de l’armée à Gaugamèles ; les chiffres antiques varient.",
+          "source": {
+            "label": "Wikipédia : Bataille de Gaugamèles",
+            "url": "https://fr.wikipedia.org/wiki/Bataille_de_Gaugamèles"
+          }
+        },
+        "composition": "Phalange de fantassins armés de la sarisse, hypaspistes, cavaliers Compagnons, troupes légères et alliés grecs ; puis contingents perses et bactriens.",
+        "recruitment": "Levées de Macédoine et de la Ligue de Corinthe, mercenaires, puis recrues orientales ; 30 000 Épigones perses formés dès -324.",
+        "famousUnits": [
+          "Hétaires (cavalerie des Compagnons)",
+          "Hypaspistes",
+          "Phalange des pézétaires",
+          "Agèma, garde du roi"
+        ],
+        "innovations": [
+          "Phalange à sarisse",
+          "Armes combinées",
+          "Digues et tours de siège",
+          "Artillerie à tension"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie macédonienne de guerre, avec hégémonie sur la Ligue de Corinthe et héritage de la royauté perse.",
+        "head": "Alexandre III, roi de Macédoine, hégémon des Grecs, pharaon d’Égypte, Grand Roi d’Asie.",
+        "succession": "Aucun successeur désigné : à sa mort en -323, Arrhidée et le fils posthume Alexandre IV sont associés au trône sous la régence de Perdiccas.",
+        "institutions": "Conseil des Compagnons, assemblée de l’armée, trésor royal confié à Harpale ; la Ligue de Corinthe fournit un cadre politique aux Grecs.",
+        "administration": "Satrapies perses conservées, avec des gouverneurs perses ou macédoniens, des trésoriers et des chefs militaires séparés ; Antipatros gouverne la Macédoine.",
+        "provinces": {
+          "value": 25,
+          "low": 20,
+          "high": 30,
+          "year": -323,
+          "note": "Nombre de satrapies : ordre de grandeur.",
+          "source": {
+            "label": "Wikipédia : Satrapie",
+            "url": "https://fr.wikipedia.org/wiki/Satrapie"
+          }
+        },
+        "law": "Lois locales maintenues, droit royal en dernier ressort, respect des cultes (Mardouk, Apis)."
+      },
+      "society": {
+        "religions": [
+          "Polythéisme grec",
+          "Mazdéisme",
+          "Religion égyptienne",
+          "Cultes mésopotamiens",
+          "Hindouisme et bouddhisme naissant"
+        ],
+        "languages": [
+          "Grec (koinè)",
+          "Araméen d’empire",
+          "Vieux perse",
+          "Égyptien",
+          "Langues indiennes"
+        ],
+        "structure": "Aristocratie macédonienne et grecque au sommet ; noblesse perse ralliée ; peuples soumis aux institutions locales ; colons militaires dans les cités fondées.",
+        "women": "Reines et princesses influentes (Olympias, Roxane, Stateira) ; les femmes grecques restent exclues de la vie publique, les Perses aristocrates gardent plus de poids."
+      },
+      "culture": {
+        "inventions": [
+          "Fondation d’Alexandries",
+          "Monnaie unifiée à l’étalon attique",
+          "Bématistes et arpentage des routes"
+        ],
+        "works": [
+          "Phare et Bibliothèque d’Alexandrie (projets)",
+          "Portraits de Lysippe",
+          "Récits d’Aristobule et de Ptolémée"
+        ],
+        "scholars": [
+          "Aristote",
+          "Théophraste",
+          "Callisthène",
+          "Lysippe"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Réseau de routes royales achéménides repris ; villes nouvelles, ports et garnisons le long des axes vers la Bactriane et l’Indus."
+      },
+      "legacy": "Le monde hellénistique naît de son empire : des royaumes grecs de l’Égypte à l’Indus, une culture commune et une langue internationale."
+    }
+  ]
+}

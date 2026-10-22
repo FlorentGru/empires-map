@@ -1,0 +1,224 @@
+[
+  {
+    "id": "alexandries",
+    "name": "Fondation d’Alexandries et plan en damier",
+    "year": -331,
+    "approx": true,
+    "place": "Alexandrie (Égypte)",
+    "at": [
+      29.92,
+      31.2
+    ],
+    "inventor": "Alexandre, avec l’architecte Dinocrate de Rhodes",
+    "category": "architecture",
+    "description": "Alexandre fonde de nombreuses villes qui portent son nom, dont Alexandrie d’Égypte en -331, Alexandrie du Caucase et Alexandrie Eschatè. Le plan en damier, avec rues se coupant à angle droit, n’est pas son invention : il vient d’Hippodamos de Milet et de cités plus anciennes. Il s’agit d’une diffusion à grande échelle, avec installation de colons grecs et de vétérans autour de garnisons.",
+    "impact": "Ces villes deviennent des relais de la culture grecque jusqu’en Asie centrale. Alexandrie d’Égypte devient une métropole intellectuelle, avec phare et bibliothèque.",
+    "sources": [
+      {
+        "label": "Wikipédia — Alexandrie",
+        "url": "https://fr.wikipedia.org/wiki/Alexandrie"
+      },
+      {
+        "label": "Wikipédia — Dinocrate de Rhodes",
+        "url": "https://fr.wikipedia.org/wiki/Dinocrate_de_Rhodes"
+      }
+    ]
+  },
+  {
+    "id": "monnaie-attique",
+    "name": "Monnaie d’argent unifiée à l’étalon attique",
+    "year": -330,
+    "approx": true,
+    "place": "Babylone",
+    "at": [
+      44.42,
+      32.54
+    ],
+    "category": "monnaie",
+    "description": "Avec le trésor de Suse et de Persépolis, Alexandre fait frapper en masse des tétradrachmes et des drachmes d’argent, selon le poids de la monnaie athénienne, dans des ateliers de Macédoine, de Cilicie, de Tyr et de Babylone. Il ne crée pas l’étalon attique, déjà répandu en Grèce, mais il l’impose sur un espace immense et produit un volume jamais vu de pièces au type uniforme (Héraclès et Zeus).",
+    "impact": "Une même monnaie circule de l’Égypte à l’Indus. Les soldes sont payées en espèces, ce qui stimule les échanges et la monétisation de l’Orient.",
+    "sources": [
+      {
+        "label": "Wikipédia — Tétradrachme",
+        "url": "https://fr.wikipedia.org/wiki/Tétradrachme"
+      },
+      {
+        "label": "Wikipédia — Drachme",
+        "url": "https://fr.wikipedia.org/wiki/Drachme"
+      }
+    ]
+  },
+  {
+    "id": "sarisse-phalange",
+    "name": "Phalange à sarisse",
+    "year": -336,
+    "approx": true,
+    "place": "Pella",
+    "at": [
+      22.52,
+      40.76
+    ],
+    "inventor": "Philippe II de Macédoine",
+    "category": "militaire",
+    "description": "Philippe II équipe son infanterie de la sarisse, une pique de cinq à six mètres, tenue à deux mains, et réorganise la phalange avec un entraînement permanent. Le principe de la phalange est plus ancien, mais la longueur de l’arme, le drill et l’emploi de troupes de métier sont des innovations macédoniennes. Alexandre hérite de cet outil et l’emploie contre les Perses.",
+    "impact": "La phalange macédonienne fixe l’adversaire pendant que la cavalerie le frappe de flanc. Elle bat les armées perses et domine les champs de bataille jusqu’à l’arrivée des légions romaines.",
+    "sources": [
+      {
+        "label": "Wikipédia — Sarisse",
+        "url": "https://fr.wikipedia.org/wiki/Sarisse"
+      },
+      {
+        "label": "Wikipédia — Phalange macédonienne",
+        "url": "https://fr.wikipedia.org/wiki/Phalange_macédonienne"
+      }
+    ]
+  },
+  {
+    "id": "armes-combinees",
+    "name": "Tactique des armes combinées",
+    "year": -331,
+    "approx": true,
+    "place": "Gaugamèles",
+    "at": [
+      43.4,
+      36.4
+    ],
+    "inventor": "Philippe II puis Alexandre",
+    "category": "militaire",
+    "description": "Les armées d’Alexandre associent phalange, hypaspistes (infanterie légère d’élite), cavaliers Compagnons, archers, frondeurs et lanciers, chacun avec un rôle précis. À Gaugamèles, un mouvement en oblique, une seconde ligne de sécurité et une charge menée sur la brèche de l’ennemi illustrent cette coordination. Le procédé s’appuie sur les réformes de Philippe II, qu’Alexandre perfectionne.",
+    "impact": "Les manœuvres d’Alexandre sont étudiées pendant des siècles. Elles montrent comment une armée plus petite peut vaincre un adversaire bien plus nombreux sur un terrain choisi par lui.",
+    "sources": [
+      {
+        "label": "Wikipédia — Bataille de Gaugamèles",
+        "url": "https://fr.wikipedia.org/wiki/Bataille_de_Gaugamèles"
+      },
+      {
+        "label": "Wikipédia — Hypaspistes",
+        "url": "https://fr.wikipedia.org/wiki/Hypaspistes"
+      }
+    ]
+  },
+  {
+    "id": "poliorcetique-tyr",
+    "name": "Digue et tours de siège de Tyr",
+    "year": -332,
+    "place": "Tyr",
+    "at": [
+      35.2,
+      33.27
+    ],
+    "inventor": "Ingénieurs macédoniens (Diadès et Charias)",
+    "category": "technique",
+    "description": "Pour prendre Tyr, cité-île aux murs de quarante-cinq mètres, Alexandre fait bâtir une digue de 800 mètres avec les gravats de la vieille ville. Ses ingénieurs montent des tours de siège mobiles puis des machines sur des navires accouplés, qui attaquent les murs par la mer. Ces procédés ne sont pas nouveaux, mais appliqués à cette échelle et à une ville insulaire, ils sont exceptionnels.",
+    "impact": "La prise de Tyr démontre que même une place réputée imprenable peut tomber face à une logistique et une ingénierie maîtrisées. Elle ouvre l’ère de la poliorcétique hellénistique.",
+    "sources": [
+      {
+        "label": "Wikipédia — Siège de Tyr (332 av. J.-C.)",
+        "url": "https://fr.wikipedia.org/wiki/Siège_de_Tyr_(332_av._J.-C.)"
+      },
+      {
+        "label": "Wikipédia — Poliorcétique",
+        "url": "https://fr.wikipedia.org/wiki/Poliorcétique"
+      }
+    ]
+  },
+  {
+    "id": "artillerie-catapultes",
+    "name": "Catapultes en campagne et en siège",
+    "year": -332,
+    "approx": true,
+    "place": "Tyr",
+    "at": [
+      35.25,
+      33.3
+    ],
+    "inventor": "Ingénieurs de Denys de Syracuse puis de Philippe II",
+    "category": "militaire",
+    "description": "Les catapultes, apparues en Sicile vers -399, sont perfectionnées sous Philippe II par ses ingénieurs. Alexandre en emploie à Tyr, contre les murs, mais aussi sur le terrain, comme à l’Iaxarte contre les Scythes sur l’autre rive. Le passage à des machines à torsion est plus tardif et discuté : les premières catapultes sont à tension. Il s’agit surtout d’une diffusion à grande échelle.",
+    "impact": "L’artillerie devient un élément normal des armées hellénistiques. Elle permet de tirer au-delà d’un fleuve et d’affaiblir les remparts sans assaut immédiat.",
+    "sources": [
+      {
+        "label": "Wikipédia — Catapulte",
+        "url": "https://fr.wikipedia.org/wiki/Catapulte"
+      },
+      {
+        "label": "Wikipédia — Siège de Tyr (332 av. J.-C.)",
+        "url": "https://fr.wikipedia.org/wiki/Siège_de_Tyr_(332_av._J.-C.)"
+      }
+    ]
+  },
+  {
+    "id": "bematistes",
+    "name": "Bématistes et arpentage des routes",
+    "year": -329,
+    "approx": true,
+    "place": "Bactres",
+    "at": [
+      66.9,
+      36.76
+    ],
+    "inventor": "Bêton et Diognète",
+    "category": "science",
+    "description": "Alexandre emploie des « bématistes », hommes entraînés à compter leurs pas de façon régulière pour mesurer les distances parcourues. Ils notent les étapes, la nature des terrains et les points d’eau. Ces itinéraires, recopiés dans des récits perdus, alimentent la géographie grecque (Ératosthène en tire des mesures pour sa carte). Le procédé n’est pas né avec Alexandre, mais il y prend une ampleur inédite.",
+    "impact": "Les mesures des bématistes servent à dresser les premières cartes fondées sur des distances réelles entre la Méditerranée et l’Inde.",
+    "sources": [
+      {
+        "label": "Wikipédia — Bématiste",
+        "url": "https://fr.wikipedia.org/wiki/Bématiste"
+      },
+      {
+        "label": "Wikipédia — Alexandre le Grand",
+        "url": "https://fr.wikipedia.org/wiki/Alexandre_le_Grand"
+      }
+    ]
+  },
+  {
+    "id": "botanique-inde",
+    "name": "Plantes et animaux rapportés d’Orient",
+    "year": -326,
+    "approx": true,
+    "place": "Taxila",
+    "at": [
+      72.82,
+      33.74
+    ],
+    "inventor": "Naturalistes de l’expédition, étudiés par Théophraste",
+    "category": "science",
+    "description": "Pendant la campagne, des observateurs envoient à Aristote, puis à son successeur Théophraste, des notes sur des plantes et des animaux inconnus des Grecs : cotonnier, canne, bananier, riz, banian et éléphant. Théophraste en tire des pages de son Histoire des plantes. Il ne s’agit pas d’une expédition scientifique organisée au sens moderne, mais d’un apport d’observations sans précédent.",
+    "impact": "La botanique grecque s’ouvre à la flore tropicale et asiatique. Les plantes décrites enrichissent la médecine, l’agriculture et le commerce hellénistiques.",
+    "sources": [
+      {
+        "label": "Wikipédia — Théophraste",
+        "url": "https://fr.wikipedia.org/wiki/Théophraste"
+      },
+      {
+        "label": "Wikipédia — Taxila",
+        "url": "https://fr.wikipedia.org/wiki/Taxila"
+      }
+    ]
+  },
+  {
+    "id": "koine-grecque",
+    "name": "Koinè, langue grecque commune",
+    "year": -331,
+    "approx": true,
+    "place": "Alexandrie (Égypte)",
+    "at": [
+      29.92,
+      31.2
+    ],
+    "category": "ecriture",
+    "description": "Le grec parlé dans l’armée et les nouvelles cités, mélange de dialectes avec une base attique, devient la koinè, la « langue commune ». Il ne s’agit pas d’une invention d’Alexandre : le processus commence avant lui. Mais la fondation de villes grecques d’Égypte à l’Indus la répand comme langue d’administration, de commerce et de culture dans tout l’Orient.",
+    "impact": "La koinè devient la langue internationale du monde hellénistique. Elle servira à écrire la Septante et le Nouveau Testament.",
+    "sources": [
+      {
+        "label": "Wikipédia — Koinè",
+        "url": "https://fr.wikipedia.org/wiki/Koinè"
+      },
+      {
+        "label": "Wikipédia — Hellénisation",
+        "url": "https://fr.wikipedia.org/wiki/Hellénisation"
+      }
+    ]
+  }
+]
