@@ -1,0 +1,355 @@
+{
+ "terrain": "plaine",
+ "decor": [
+  {
+   "kind": "foret",
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     100,
+     0
+    ],
+    [
+     100,
+     5
+    ],
+    [
+     0,
+     6
+    ]
+   ],
+   "label": "Forêt de Rocroi"
+  },
+  {
+   "kind": "marais",
+   "points": [
+    [
+     0,
+     28
+    ],
+    [
+     8,
+     30
+    ],
+    [
+     8,
+     46
+    ],
+    [
+     0,
+     48
+    ]
+   ],
+   "label": "Marécages"
+  }
+ ],
+ "units": [
+  {
+   "id": "hopital",
+   "army": 0,
+   "kind": "cavalerie",
+   "troops": 4000,
+   "at": [
+    24,
+    44
+   ],
+   "formation": "ligne",
+   "label": "Aile gauche française (L'Hôpital)"
+  },
+  {
+   "id": "infanterie-fr",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 12000,
+   "at": [
+    50,
+    46
+   ],
+   "formation": "ligne",
+   "label": "Infanterie française du centre"
+  },
+  {
+   "id": "enghien",
+   "army": 0,
+   "kind": "cavalerie",
+   "troops": 5000,
+   "at": [
+    76,
+    44
+   ],
+   "formation": "ligne",
+   "label": "Cavalerie du duc d'Enghien (aile droite)"
+  },
+  {
+   "id": "reserve-fr",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 2500,
+   "at": [
+    50,
+    55
+   ],
+   "formation": "ligne",
+   "label": "Réserve (Sirot)"
+  },
+  {
+   "id": "isembourg",
+   "army": 1,
+   "kind": "cavalerie",
+   "troops": 4000,
+   "at": [
+    24,
+    16
+   ],
+   "formation": "ligne",
+   "label": "Cavalerie allemande et wallonne (Isembourg)"
+  },
+  {
+   "id": "tercios",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 8000,
+   "at": [
+    50,
+    12
+   ],
+   "formation": "carre",
+   "label": "Vieux tercios espagnols en carré"
+  },
+  {
+   "id": "wallons",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 7000,
+   "at": [
+    50,
+    20
+   ],
+   "formation": "ligne",
+   "label": "Infanterie wallonne, allemande et italienne"
+  },
+  {
+   "id": "albuquerque",
+   "army": 1,
+   "kind": "cavalerie",
+   "troops": 4000,
+   "at": [
+    76,
+    16
+   ],
+   "formation": "ligne",
+   "label": "Cavalerie du duc d'Albuquerque"
+  },
+  {
+   "id": "reserve-esp",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 3000,
+   "at": [
+    50,
+    8
+   ],
+   "formation": "ligne",
+   "label": "Réserve de Fontaine"
+  }
+ ],
+ "phases": [
+  {
+   "label": "À l'aube, l'armée française, face à une armée plus nombreuse, se déploie en deux lignes devant la forêt de Rocroi.",
+   "duration": 4,
+   "moves": {
+    "hopital": {
+     "to": [
+      24,
+      38
+     ],
+     "state": "marche"
+    },
+    "infanterie-fr": {
+     "to": [
+      50,
+      40
+     ],
+     "state": "marche"
+    },
+    "enghien": {
+     "to": [
+      76,
+      38
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "L'aile gauche française, menée par L'Hôpital, charge trop tôt et est repoussée par la cavalerie d'Isembourg. Elle se débande.",
+   "duration": 4,
+   "moves": {
+    "hopital": {
+     "to": [
+      22,
+      28
+     ],
+     "state": "combat",
+     "losses": 0.3
+    },
+    "isembourg": {
+     "to": [
+      22,
+      26
+     ],
+     "state": "combat",
+     "losses": 0.1
+    }
+   }
+  },
+  {
+   "label": "À droite, le duc d'Enghien (le futur Grand Condé) enfonce la cavalerie d'Albuquerque.",
+   "duration": 4,
+   "moves": {
+    "hopital": {
+     "to": [
+      8,
+      56
+     ],
+     "state": "fuite",
+     "losses": 0.4
+    },
+    "enghien": {
+     "to": [
+      76,
+      24
+     ],
+     "state": "combat"
+    },
+    "albuquerque": {
+     "to": [
+      76,
+      22
+     ],
+     "state": "combat",
+     "losses": 0.5
+    }
+   }
+  },
+  {
+   "label": "Au lieu de poursuivre, Enghien passe derrière les lignes espagnoles et dégage les arrières, détruisant la réserve de Fontaine.",
+   "duration": 5,
+   "moves": {
+    "albuquerque": {
+     "to": [
+      92,
+      6
+     ],
+     "state": "fuite",
+     "losses": 0.6
+    },
+    "enghien": {
+     "to": [
+      60,
+      6
+     ],
+     "state": "combat"
+    },
+    "reserve-esp": {
+     "to": [
+      54,
+      8
+     ],
+     "state": "combat",
+     "losses": 0.5
+    },
+    "infanterie-fr": {
+     "to": [
+      50,
+      32
+     ],
+     "state": "combat"
+    },
+    "wallons": {
+     "to": [
+      50,
+      24
+     ],
+     "state": "combat",
+     "losses": 0.1
+    }
+   }
+  },
+  {
+   "label": "Prise à revers, la cavalerie d'Isembourg est à son tour mise en fuite. La cavalerie française se rassemble derrière les tercios.",
+   "duration": 5,
+   "moves": {
+    "enghien": {
+     "to": [
+      30,
+      10
+     ],
+     "state": "combat"
+    },
+    "isembourg": {
+     "to": [
+      6,
+      6
+     ],
+     "state": "fuite",
+     "losses": 0.5
+    },
+    "wallons": {
+     "to": [
+      50,
+      24
+     ],
+     "state": "fuite",
+     "losses": 0.6
+    }
+   }
+  },
+  {
+   "label": "Isolés, les vieux tercios espagnols se forment en carré et repoussent plusieurs charges. Sous le canon, ils finissent par obtenir une capitulation honorable.",
+   "duration": 6,
+   "moves": {
+    "tercios": {
+     "to": [
+      50,
+      14
+     ],
+     "state": "combat",
+     "losses": 0.85
+    },
+    "enghien": {
+     "to": [
+      40,
+      12
+     ],
+     "state": "combat",
+     "losses": 0.05
+    },
+    "infanterie-fr": {
+     "to": [
+      50,
+      20
+     ],
+     "state": "combat",
+     "losses": 0.1
+    },
+    "reserve-esp": {
+     "to": [
+      54,
+      8
+     ],
+     "state": "fuite",
+     "losses": 0.8
+    }
+   }
+  }
+ ],
+ "sources": [
+  "Guy Le Hardy de Beaulieu, Rocroi, 1643",
+  "Henri d'Orléans, duc d'Aumale, Histoire des princes de Condé",
+  "Wikipédia FR, « Bataille de Rocroi »"
+ ]
+}

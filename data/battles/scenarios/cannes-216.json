@@ -1,0 +1,418 @@
+{
+ "terrain": "plaine",
+ "decor": [
+  {
+   "kind": "riviere",
+   "points": [
+    [
+     6,
+     0
+    ],
+    [
+     10,
+     20
+    ],
+    [
+     5,
+     40
+    ],
+    [
+     9,
+     60
+    ]
+   ],
+   "label": "Aufide"
+  },
+  {
+   "kind": "village",
+   "points": [
+    [
+     86,
+     4
+    ],
+    [
+     94,
+     4
+    ],
+    [
+     94,
+     10
+    ],
+    [
+     86,
+     10
+    ]
+   ],
+   "label": "Cannes"
+  }
+ ],
+ "units": [
+  {
+   "id": "gau-ibere",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 20000,
+   "at": [
+    50,
+    33
+   ],
+   "formation": "ligne",
+   "label": "Infanterie gauloise et ibère du centre"
+  },
+  {
+   "id": "afr-g",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 10000,
+   "at": [
+    32,
+    38
+   ],
+   "formation": "colonne",
+   "label": "Fantassins africains (aile gauche)"
+  },
+  {
+   "id": "afr-d",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 10000,
+   "at": [
+    68,
+    38
+   ],
+   "formation": "colonne",
+   "label": "Fantassins africains (aile droite)"
+  },
+  {
+   "id": "cav-hasdrubal",
+   "army": 0,
+   "kind": "cavalerie",
+   "troops": 6500,
+   "at": [
+    22,
+    42
+   ],
+   "formation": "ligne",
+   "label": "Cavalerie lourde gauloise et ibère d'Hasdrubal"
+  },
+  {
+   "id": "cav-numide",
+   "army": 0,
+   "kind": "cavalerie",
+   "troops": 3500,
+   "at": [
+    80,
+    42
+   ],
+   "formation": "ligne",
+   "label": "Cavalerie numide de Maharbal"
+  },
+  {
+   "id": "rom-droite",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 22000,
+   "at": [
+    36,
+    17
+   ],
+   "formation": "ligne",
+   "label": "Légions romaines (aile droite)"
+  },
+  {
+   "id": "rom-centre",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 28000,
+   "at": [
+    50,
+    17
+   ],
+   "formation": "colonne",
+   "label": "Infanterie lourde romaine, centre profond"
+  },
+  {
+   "id": "rom-gauche",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 22000,
+   "at": [
+    64,
+    17
+   ],
+   "formation": "ligne",
+   "label": "Infanterie alliée italienne (aile gauche)"
+  },
+  {
+   "id": "cav-rom",
+   "army": 1,
+   "kind": "cavalerie",
+   "troops": 2400,
+   "at": [
+    20,
+    22
+   ],
+   "formation": "ligne",
+   "label": "Cavalerie romaine (citoyens) au bord du fleuve"
+  },
+  {
+   "id": "cav-all",
+   "army": 1,
+   "kind": "cavalerie",
+   "troops": 4000,
+   "at": [
+    82,
+    22
+   ],
+   "formation": "ligne",
+   "label": "Cavalerie alliée italienne"
+  }
+ ],
+ "phases": [
+  {
+   "label": "Les deux armées se font face près de l'Aufide. Hannibal avance son centre en croissant, tandis que Varron lance ses légions en masse compacte.",
+   "duration": 4,
+   "moves": {
+    "gau-ibere": {
+     "to": [
+      50,
+      29
+     ],
+     "state": "marche"
+    },
+    "rom-centre": {
+     "to": [
+      50,
+      22
+     ],
+     "state": "marche"
+    },
+    "rom-droite": {
+     "to": [
+      36,
+      22
+     ],
+     "state": "marche"
+    },
+    "rom-gauche": {
+     "to": [
+      64,
+      22
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Sur les ailes, la cavalerie lourde d'Hasdrubal charge la cavalerie romaine, pendant que les Numides retiennent la cavalerie alliée.",
+   "duration": 4,
+   "moves": {
+    "cav-hasdrubal": {
+     "to": [
+      22,
+      28
+     ],
+     "state": "combat"
+    },
+    "cav-rom": {
+     "to": [
+      22,
+      26
+     ],
+     "state": "combat",
+     "losses": 0.3
+    },
+    "cav-numide": {
+     "to": [
+      80,
+      28
+     ],
+     "state": "combat"
+    },
+    "cav-all": {
+     "to": [
+      80,
+      26
+     ],
+     "state": "combat",
+     "losses": 0.1
+    }
+   }
+  },
+  {
+   "label": "Au centre, les Gaulois et les Ibères reculent pas à pas : le croissant se retourne et attire les légions dans la poche.",
+   "duration": 5,
+   "moves": {
+    "gau-ibere": {
+     "to": [
+      50,
+      38
+     ],
+     "state": "combat",
+     "losses": 0.3
+    },
+    "rom-centre": {
+     "to": [
+      50,
+      31
+     ],
+     "state": "combat",
+     "losses": 0.1
+    },
+    "rom-droite": {
+     "to": [
+      40,
+      28
+     ],
+     "state": "combat"
+    },
+    "rom-gauche": {
+     "to": [
+      60,
+      28
+     ],
+     "state": "combat"
+    }
+   }
+  },
+  {
+   "label": "Les Africains, restés en retrait sur les ailes, se rabattent des deux côtés : les Romains sont pris en tenaille.",
+   "duration": 4,
+   "moves": {
+    "afr-g": {
+     "to": [
+      40,
+      30
+     ],
+     "state": "combat"
+    },
+    "afr-d": {
+     "to": [
+      60,
+      30
+     ],
+     "state": "combat"
+    },
+    "rom-droite": {
+     "to": [
+      42,
+      28
+     ],
+     "state": "combat",
+     "losses": 0.2
+    },
+    "rom-gauche": {
+     "to": [
+      58,
+      28
+     ],
+     "state": "combat",
+     "losses": 0.2
+    },
+    "rom-centre": {
+     "to": [
+      50,
+      31
+     ],
+     "state": "combat",
+     "losses": 0.3
+    },
+    "cav-rom": {
+     "to": [
+      6,
+      8
+     ],
+     "state": "fuite",
+     "losses": 0.7
+    }
+   }
+  },
+  {
+   "label": "Hasdrubal, vainqueur sur l'aile gauche, traverse le champ derrière les légions et tombe sur la cavalerie alliée, qui s'enfuit.",
+   "duration": 5,
+   "moves": {
+    "cav-hasdrubal": {
+     "to": [
+      70,
+      14
+     ],
+     "state": "combat",
+     "losses": 0.05
+    },
+    "cav-numide": {
+     "to": [
+      90,
+      18
+     ],
+     "state": "combat"
+    },
+    "cav-all": {
+     "to": [
+      96,
+      4
+     ],
+     "state": "fuite",
+     "losses": 0.6
+    },
+    "gau-ibere": {
+     "to": [
+      50,
+      38
+     ],
+     "state": "combat",
+     "losses": 0.35
+    }
+   }
+  },
+  {
+   "label": "Pris à revers par la cavalerie, les Romains s'entassent, sans espace pour combattre. C'est le massacre : Polybe parle de 70 000 morts.",
+   "duration": 5,
+   "moves": {
+    "cav-hasdrubal": {
+     "to": [
+      50,
+      16
+     ],
+     "state": "combat"
+    },
+    "rom-centre": {
+     "to": [
+      50,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.9
+    },
+    "rom-droite": {
+     "to": [
+      44,
+      28
+     ],
+     "state": "combat",
+     "losses": 0.9
+    },
+    "rom-gauche": {
+     "to": [
+      56,
+      28
+     ],
+     "state": "fuite",
+     "losses": 0.9
+    },
+    "cav-all": {
+     "to": [
+      98,
+      10
+     ],
+     "state": "fuite",
+     "losses": 0.8
+    }
+   }
+  }
+ ],
+ "sources": [
+  "Polybe, Histoires, III, 113-117",
+  "Tite-Live, Histoire romaine, XXII, 44-49",
+  "Wikipédia FR, « Bataille de Cannes »"
+ ]
+}

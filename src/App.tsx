@@ -8,6 +8,7 @@ import { EmpirePicker } from './panels/EmpirePicker';
 import { Legend } from './panels/Legend';
 import { ViewControls } from './panels/ViewControls';
 import { readBool, writeBool } from './lib/settings';
+import { OPEN_BATTLE_EVENT } from './battle/event';
 import { EventPanel } from './panels/EventPanel';
 import { currentHub, enterHub, leaveHub, readUrlState, writeUrlState } from './player/urlState';
 import type { Hub } from './lib/seo';
@@ -50,6 +51,7 @@ const CompareView = lazy(withAllEmpires(() => import('./compare/CompareView').th
 const EmpiresView = lazy(withAllEmpires(() => import('./empires/EmpiresView').then((m) => ({ default: m.EmpiresView }))));
 const WorldYearView = lazy(withAllEmpires(() => import('./world/WorldYearView').then((m) => ({ default: m.WorldYearView }))));
 const QuizDialog = lazy(withAllEmpires(() => import('./quiz/QuizDialog').then((m) => ({ default: m.QuizDialog }))));
+const BattleDialog = lazy(() => import('./battle/BattleDialog').then((m) => ({ default: m.BattleDialog })));
 const FeedbackDialog = lazy(() => import('./feedback/FeedbackDialog').then((m) => ({ default: m.FeedbackDialog })));
 
 function clearFiguresParam() {
@@ -287,6 +289,13 @@ function Atlas({
   const [panelOpen, setPanelOpen] = useState(true);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [feedbackOpen, setFeedbackOpen] = useState(false);
+  // Fenêtre « Voir la bataille » : ouverte par le bouton de la fiche (événement), le focus y revient à la fermeture.
+  const [battle, setBattle] = useState<{ opener: HTMLElement | null } | null>(null);
+  useEffect(() => {
+    const open = (e: Event) => setBattle({ opener: (e as CustomEvent<{ opener?: HTMLElement }>).detail?.opener ?? null });
+    window.addEventListener(OPEN_BATTLE_EVENT, open);
+    return () => window.removeEventListener(OPEN_BATTLE_EVENT, open);
+  }, []);
   const [tilted, setTilted] = useState(() => readBool('atlas.tilted', true));
   const [relief, setRelief] = useState(() => readBool('atlas.relief', true));
   const [figures, setFigures] = useState(() => readBool('atlas.figures', true));
@@ -503,7 +512,15 @@ function Atlas({
         </div>
       </div>
 
-      <EventPanel chapter={panelChapter} step={step} open={panelOpen} onToggle={togglePanel} story={panelStory} inventions={stepInventions} />
+      <EventPanel
+        chapter={panelChapter}
+        step={step}
+        open={panelOpen}
+        onToggle={togglePanel}
+        story={panelStory}
+        inventions={stepInventions}
+        empireId={empire.id}
+      />
       <Legend
         empire={empire}
         step={step}
@@ -518,6 +535,11 @@ function Atlas({
       <Timeline empire={empire} player={player} compare2026={countries2026} story={story.controls} />
       <GuessCard empire={empire} player={player} />
       <AboutModal open={aboutOpen} onClose={() => setAboutOpen(false)} />
+      {battle && step && (
+        <Suspense fallback={null}>
+          <BattleDialog empireId={empire.id} step={step} opener={battle.opener} onClose={() => setBattle(null)} />
+        </Suspense>
+      )}
       {feedbackOpen && (
         <Suspense fallback={null}>
           <FeedbackDialog open onClose={() => setFeedbackOpen(false)} empire={empire.id} step={step?.id} />

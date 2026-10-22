@@ -1,0 +1,330 @@
+{
+ "terrain": "colline",
+ "decor": [
+  {
+   "kind": "foret",
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     100,
+     0
+    ],
+    [
+     100,
+     20
+    ],
+    [
+     70,
+     23
+    ],
+    [
+     40,
+     21
+    ],
+    [
+     0,
+     24
+    ]
+   ],
+   "label": "Pentes boisées (nord)"
+  },
+  {
+   "kind": "foret",
+   "points": [
+    [
+     0,
+     40
+    ],
+    [
+     40,
+     42
+    ],
+    [
+     70,
+     40
+    ],
+    [
+     100,
+     43
+    ],
+    [
+     100,
+     60
+    ],
+    [
+     0,
+     60
+    ]
+   ],
+   "label": "Pentes boisées (sud)"
+  },
+  {
+   "kind": "route",
+   "points": [
+    [
+     0,
+     32
+    ],
+    [
+     40,
+     30
+    ],
+    [
+     70,
+     30
+    ],
+    [
+     100,
+     32
+    ]
+   ],
+   "label": "Chemin du col de Roncevaux"
+  }
+ ],
+ "units": [
+  {
+   "id": "roland",
+   "army": 0,
+   "kind": "cavalerie",
+   "troops": 1000,
+   "at": [
+    16,
+    32
+   ],
+   "formation": "colonne",
+   "label": "Chevaliers de Roland (fermant la marche)"
+  },
+  {
+   "id": "arriere-garde",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 1500,
+   "at": [
+    34,
+    31
+   ],
+   "formation": "colonne",
+   "label": "Infanterie franque de l'arrière-garde"
+  },
+  {
+   "id": "convoi",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 1500,
+   "at": [
+    56,
+    30
+   ],
+   "formation": "colonne",
+   "label": "Convoi de bagages et escorte"
+  },
+  {
+   "id": "basques-a",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 2000,
+   "at": [
+    26,
+    10
+   ],
+   "formation": "ligne",
+   "label": "Basques embusqués au nord-ouest"
+  },
+  {
+   "id": "basques-b",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 2000,
+   "at": [
+    50,
+    52
+   ],
+   "formation": "ligne",
+   "label": "Basques embusqués au sud"
+  },
+  {
+   "id": "basques-c",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 2000,
+   "at": [
+    76,
+    10
+   ],
+   "formation": "ligne",
+   "label": "Basques embusqués au nord-est"
+  }
+ ],
+ "phases": [
+  {
+   "label": "Au retour de Saragosse, l'armée de Charlemagne franchit les Pyrénées. L'arrière-garde et les bagages s'engagent dans un col étroit, étirés en une longue file.",
+   "duration": 4,
+   "moves": {
+    "roland": {
+     "to": [
+      22,
+      32
+     ],
+     "state": "marche"
+    },
+    "arriere-garde": {
+     "to": [
+      40,
+      31
+     ],
+     "state": "marche"
+    },
+    "convoi": {
+     "to": [
+      62,
+      30
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Du haut des pentes boisées, les Basques, légèrement armés et connaissant chaque sentier, dévalent sur la colonne.",
+   "duration": 4,
+   "moves": {
+    "basques-a": {
+     "to": [
+      30,
+      24
+     ],
+     "state": "combat"
+    },
+    "basques-b": {
+     "to": [
+      50,
+      38
+     ],
+     "state": "combat"
+    },
+    "basques-c": {
+     "to": [
+      74,
+      22
+     ],
+     "state": "combat"
+    }
+   }
+  },
+  {
+   "label": "Les Francs, lourdement équipés, ne peuvent ni manœuvrer ni se déployer. Le convoi, coupé de l'armée principale, est le premier submergé.",
+   "duration": 5,
+   "moves": {
+    "convoi": {
+     "to": [
+      62,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.5
+    },
+    "basques-c": {
+     "to": [
+      66,
+      26
+     ],
+     "state": "combat"
+    },
+    "arriere-garde": {
+     "to": [
+      40,
+      31
+     ],
+     "state": "combat",
+     "losses": 0.3
+    },
+    "basques-b": {
+     "to": [
+      48,
+      36
+     ],
+     "state": "combat"
+    }
+   }
+  },
+  {
+   "label": "Roland et ses chevaliers tiennent l'arrière aussi longtemps qu'ils peuvent. Les attaques se poursuivent jusqu'au soir.",
+   "duration": 5,
+   "moves": {
+    "roland": {
+     "to": [
+      22,
+      32
+     ],
+     "state": "combat",
+     "losses": 0.6
+    },
+    "arriere-garde": {
+     "to": [
+      38,
+      31
+     ],
+     "state": "combat",
+     "losses": 0.7
+    },
+    "basques-a": {
+     "to": [
+      28,
+      28
+     ],
+     "state": "combat"
+    }
+   }
+  },
+  {
+   "label": "À la nuit, l'arrière-garde est anéantie. Les Basques s'emparent du butin et se dispersent dans la montagne.",
+   "duration": 4,
+   "moves": {
+    "roland": {
+     "to": [
+      22,
+      32
+     ],
+     "state": "combat",
+     "losses": 0.95
+    },
+    "convoi": {
+     "to": [
+      92,
+      50
+     ],
+     "state": "fuite",
+     "losses": 0.9
+    },
+    "basques-a": {
+     "to": [
+      26,
+      10
+     ],
+     "state": "marche"
+    },
+    "basques-b": {
+     "to": [
+      50,
+      52
+     ],
+     "state": "marche"
+    },
+    "basques-c": {
+     "to": [
+      76,
+      10
+     ],
+     "state": "marche"
+    }
+   }
+  }
+ ],
+ "sources": [
+  "Éginhard, Vita Karoli, chap. 9",
+  "Annales royales franques, année 778",
+  "Wikipédia FR, « Bataille de Roncevaux (778) »"
+ ]
+}

@@ -1,0 +1,435 @@
+{
+ "terrain": "plaine",
+ "decor": [
+  {
+   "kind": "village",
+   "points": [
+    [
+     88,
+     50
+    ],
+    [
+     96,
+     50
+    ],
+    [
+     96,
+     56
+    ],
+    [
+     88,
+     56
+    ]
+   ],
+   "label": "Gaugamèles"
+  }
+ ],
+ "units": [
+  {
+   "id": "compagnons",
+   "army": 0,
+   "kind": "cavalerie",
+   "troops": 2000,
+   "at": [
+    60,
+    42
+   ],
+   "formation": "coin",
+   "label": "Cavalerie des Compagnons d'Alexandre"
+  },
+  {
+   "id": "legers",
+   "army": 0,
+   "kind": "archers",
+   "troops": 3000,
+   "at": [
+    70,
+    44
+   ],
+   "formation": "ligne",
+   "label": "Archers, Agrianes et peltastes (flanc droit)"
+  },
+  {
+   "id": "cav-allies",
+   "army": 0,
+   "kind": "cavalerie",
+   "troops": 3000,
+   "at": [
+    80,
+    42
+   ],
+   "formation": "ligne",
+   "label": "Cavalerie légère des alliés"
+  },
+  {
+   "id": "phalange",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 12000,
+   "at": [
+    50,
+    44
+   ],
+   "formation": "ligne",
+   "label": "Phalange macédonienne"
+  },
+  {
+   "id": "hypaspistes",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 3000,
+   "at": [
+    56,
+    44
+   ],
+   "formation": "ligne",
+   "label": "Hypaspistes"
+  },
+  {
+   "id": "allies-g",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 10000,
+   "at": [
+    38,
+    44
+   ],
+   "formation": "ligne",
+   "label": "Infanterie alliée de Parménion (aile gauche)"
+  },
+  {
+   "id": "thessaliens",
+   "army": 0,
+   "kind": "cavalerie",
+   "troops": 3000,
+   "at": [
+    28,
+    44
+   ],
+   "formation": "ligne",
+   "label": "Cavalerie thessalienne de Parménion"
+  },
+  {
+   "id": "merc",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 7000,
+   "at": [
+    50,
+    54
+   ],
+   "formation": "ligne",
+   "label": "Mercenaires grecs (deuxième ligne, face aux débordements)"
+  },
+  {
+   "id": "garde-darius",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 15000,
+   "at": [
+    50,
+    12
+   ],
+   "formation": "ligne",
+   "label": "Garde du roi, Immortels et mercenaires grecs de Darius"
+  },
+  {
+   "id": "inf-centre",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 35000,
+   "at": [
+    50,
+    18
+   ],
+   "formation": "ligne",
+   "label": "Infanterie levée en Asie (centre)"
+  },
+  {
+   "id": "chars",
+   "army": 1,
+   "kind": "cavalerie",
+   "troops": 200,
+   "at": [
+    50,
+    28
+   ],
+   "formation": "ligne",
+   "label": "Chars à faux"
+  },
+  {
+   "id": "cav-bessos",
+   "army": 1,
+   "kind": "cavalerie",
+   "troops": 20000,
+   "at": [
+    80,
+    14
+   ],
+   "formation": "ligne",
+   "label": "Cavalerie bactrienne et scythe de Bessos (aile gauche perse)"
+  },
+  {
+   "id": "cav-mazaios",
+   "army": 1,
+   "kind": "cavalerie",
+   "troops": 20000,
+   "at": [
+    18,
+    14
+   ],
+   "formation": "ligne",
+   "label": "Cavalerie de Mazaios (aile droite perse)"
+  }
+ ],
+ "phases": [
+  {
+   "label": "Les Perses débordent la ligne macédonienne des deux côtés. Alexandre glisse en oblique vers la droite, pour allonger sa ligne et user la cavalerie perse.",
+   "duration": 4,
+   "moves": {
+    "compagnons": {
+     "to": [
+      74,
+      38
+     ],
+     "state": "marche"
+    },
+    "legers": {
+     "to": [
+      80,
+      40
+     ],
+     "state": "marche"
+    },
+    "cav-allies": {
+     "to": [
+      90,
+      40
+     ],
+     "state": "marche"
+    },
+    "cav-bessos": {
+     "to": [
+      88,
+      22
+     ],
+     "state": "marche"
+    },
+    "chars": {
+     "to": [
+      50,
+      34
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Darius lance ses chars à faux. Les phalangistes ouvrent leurs rangs, les archers abattent les conducteurs : l'attaque échoue.",
+   "duration": 4,
+   "moves": {
+    "chars": {
+     "to": [
+      50,
+      42
+     ],
+     "state": "combat",
+     "losses": 0.9
+    },
+    "cav-bessos": {
+     "to": [
+      88,
+      34
+     ],
+     "state": "combat"
+    },
+    "cav-allies": {
+     "to": [
+      90,
+      38
+     ],
+     "state": "combat",
+     "losses": 0.1
+    },
+    "cav-mazaios": {
+     "to": [
+      30,
+      36
+     ],
+     "state": "combat"
+    },
+    "thessaliens": {
+     "to": [
+      28,
+      42
+     ],
+     "state": "combat",
+     "losses": 0.1
+    }
+   }
+  },
+  {
+   "label": "La cavalerie perse de gauche s'étire pour déborder, ouvrant une brèche dans la ligne de Darius. Alexandre y lance ses Compagnons en coin.",
+   "duration": 4,
+   "moves": {
+    "compagnons": {
+     "to": [
+      62,
+      24
+     ],
+     "state": "combat"
+    },
+    "hypaspistes": {
+     "to": [
+      60,
+      30
+     ],
+     "state": "combat"
+    },
+    "cav-bessos": {
+     "to": [
+      88,
+      36
+     ],
+     "state": "combat",
+     "losses": 0.2
+    },
+    "inf-centre": {
+     "to": [
+      52,
+      22
+     ],
+     "state": "combat",
+     "losses": 0.1
+    },
+    "phalange": {
+     "to": [
+      50,
+      34
+     ],
+     "state": "combat",
+     "losses": 0.02
+    }
+   }
+  },
+  {
+   "label": "Les Compagnons foncent droit sur Darius. Le roi, voyant la brèche s'élargir, tourne son char et s'enfuit : la garde et le centre perse se disloquent.",
+   "duration": 4,
+   "moves": {
+    "compagnons": {
+     "to": [
+      50,
+      14
+     ],
+     "state": "combat",
+     "losses": 0.04
+    },
+    "garde-darius": {
+     "to": [
+      50,
+      4
+     ],
+     "state": "fuite",
+     "losses": 0.4
+    },
+    "inf-centre": {
+     "to": [
+      54,
+      12
+     ],
+     "state": "fuite",
+     "losses": 0.3
+    }
+   }
+  },
+  {
+   "label": "Pendant ce temps, Parménion est submergé sur la gauche. Alexandre rebrousse chemin pour le dégager, tandis que les Thessaliens tiennent bon.",
+   "duration": 5,
+   "moves": {
+    "cav-mazaios": {
+     "to": [
+      32,
+      38
+     ],
+     "state": "combat",
+     "losses": 0.2
+    },
+    "thessaliens": {
+     "to": [
+      28,
+      42
+     ],
+     "state": "combat",
+     "losses": 0.2
+    },
+    "allies-g": {
+     "to": [
+      36,
+      42
+     ],
+     "state": "combat",
+     "losses": 0.1
+    },
+    "compagnons": {
+     "to": [
+      40,
+      28
+     ],
+     "state": "combat",
+     "losses": 0.06
+    }
+   }
+  },
+  {
+   "label": "La cavalerie perse de droite, apprenant la fuite du roi, lâche pied. Toute l'armée perse se débande et Alexandre la poursuit.",
+   "duration": 5,
+   "moves": {
+    "cav-mazaios": {
+     "to": [
+      6,
+      6
+     ],
+     "state": "fuite",
+     "losses": 0.5
+    },
+    "cav-bessos": {
+     "to": [
+      96,
+      6
+     ],
+     "state": "fuite",
+     "losses": 0.5
+    },
+    "garde-darius": {
+     "to": [
+      50,
+      2
+     ],
+     "state": "fuite",
+     "losses": 0.6
+    },
+    "inf-centre": {
+     "to": [
+      50,
+      2
+     ],
+     "state": "fuite",
+     "losses": 0.6
+    },
+    "chars": {
+     "to": [
+      50,
+      42
+     ],
+     "state": "fuite",
+     "losses": 1
+    }
+   }
+  }
+ ],
+ "sources": [
+  "Arrien, Anabase, III, 8-15",
+  "Quinte-Curce, Histoire d'Alexandre, IV, 12-16",
+  "Wikipédia FR, « Bataille de Gaugamèles »"
+ ]
+}

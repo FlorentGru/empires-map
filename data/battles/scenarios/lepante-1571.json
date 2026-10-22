@@ -1,0 +1,379 @@
+{
+ "terrain": "mer",
+ "decor": [
+  {
+   "kind": "cote",
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     100,
+     0
+    ],
+    [
+     100,
+     9
+    ],
+    [
+     60,
+     6
+    ],
+    [
+     20,
+     11
+    ],
+    [
+     0,
+     8
+    ]
+   ],
+   "label": "Côte nord (golfe de Patras)"
+  },
+  {
+   "kind": "cote",
+   "points": [
+    [
+     62,
+     54
+    ],
+    [
+     100,
+     50
+    ],
+    [
+     100,
+     60
+    ],
+    [
+     70,
+     60
+    ]
+   ],
+   "label": "Îles Échinades"
+  }
+ ],
+ "units": [
+  {
+   "id": "barbarigo",
+   "army": 0,
+   "kind": "navires",
+   "troops": 16000,
+   "at": [
+    30,
+    16
+   ],
+   "formation": "ligne",
+   "label": "Aile gauche vénitienne (Barbarigo)"
+  },
+  {
+   "id": "don-juan",
+   "army": 0,
+   "kind": "navires",
+   "troops": 28000,
+   "at": [
+    30,
+    30
+   ],
+   "formation": "ligne",
+   "label": "Centre de don Juan d'Autriche"
+  },
+  {
+   "id": "doria",
+   "army": 0,
+   "kind": "navires",
+   "troops": 18000,
+   "at": [
+    30,
+    46
+   ],
+   "formation": "ligne",
+   "label": "Aile droite génoise (Gian Andrea Doria)"
+  },
+  {
+   "id": "reserve",
+   "army": 0,
+   "kind": "navires",
+   "troops": 8000,
+   "at": [
+    14,
+    30
+   ],
+   "formation": "ligne",
+   "label": "Réserve de Santa Cruz"
+  },
+  {
+   "id": "galeasses",
+   "army": 0,
+   "kind": "navires",
+   "troops": 3600,
+   "at": [
+    44,
+    30
+   ],
+   "formation": "ligne",
+   "label": "Six galéasses vénitiennes en avant des lignes"
+  },
+  {
+   "id": "siroco",
+   "army": 1,
+   "kind": "navires",
+   "troops": 18000,
+   "at": [
+    78,
+    14
+   ],
+   "formation": "ligne",
+   "label": "Aile droite ottomane (Mehmed Siroco)"
+  },
+  {
+   "id": "ali-pacha",
+   "army": 1,
+   "kind": "navires",
+   "troops": 30000,
+   "at": [
+    78,
+    30
+   ],
+   "formation": "ligne",
+   "label": "Centre d'Ali Pacha"
+  },
+  {
+   "id": "uluc-ali",
+   "army": 1,
+   "kind": "navires",
+   "troops": 22000,
+   "at": [
+    78,
+    48
+   ],
+   "formation": "ligne",
+   "label": "Aile gauche d'Uluç Ali"
+  },
+  {
+   "id": "reserve-ott",
+   "army": 1,
+   "kind": "navires",
+   "troops": 8000,
+   "at": [
+    92,
+    30
+   ],
+   "formation": "ligne",
+   "label": "Réserve ottomane"
+  }
+ ],
+ "phases": [
+  {
+   "label": "Les deux flottes se rangent face à face, galères côte à côte. Les galéasses vénitiennes, énormes, se placent devant la ligne chrétienne.",
+   "duration": 4,
+   "moves": {
+    "galeasses": {
+     "to": [
+      52,
+      30
+     ],
+     "state": "marche"
+    },
+    "ali-pacha": {
+     "to": [
+      68,
+      30
+     ],
+     "state": "marche"
+    },
+    "siroco": {
+     "to": [
+      68,
+      14
+     ],
+     "state": "marche"
+    },
+    "uluc-ali": {
+     "to": [
+      68,
+      48
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Les galéasses ouvrent le feu à bout portant et désorganisent la ligne ottomane. Barbarigo, près de la côte, est le premier engagé.",
+   "duration": 4,
+   "moves": {
+    "galeasses": {
+     "to": [
+      56,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.1
+    },
+    "ali-pacha": {
+     "to": [
+      64,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.15
+    },
+    "barbarigo": {
+     "to": [
+      56,
+      14
+     ],
+     "state": "combat"
+    },
+    "siroco": {
+     "to": [
+      64,
+      14
+     ],
+     "state": "combat",
+     "losses": 0.1
+    }
+   }
+  },
+  {
+   "label": "Au centre, la galère de don Juan aborde celle d'Ali Pacha. Les soldats espagnols, armés d'arquebuses, balaient les ponts. La réserve de Santa Cruz s'avance.",
+   "duration": 5,
+   "moves": {
+    "don-juan": {
+     "to": [
+      54,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.1
+    },
+    "ali-pacha": {
+     "to": [
+      60,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.4
+    },
+    "reserve": {
+     "to": [
+      44,
+      30
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Au sud, Uluç Ali déborde la ligne de Doria en profitant d'un vide. Doria s'étire et se retrouve en difficulté.",
+   "duration": 5,
+   "moves": {
+    "uluc-ali": {
+     "to": [
+      50,
+      52
+     ],
+     "state": "combat"
+    },
+    "doria": {
+     "to": [
+      44,
+      48
+     ],
+     "state": "combat",
+     "losses": 0.3
+    },
+    "siroco": {
+     "to": [
+      64,
+      14
+     ],
+     "state": "fuite",
+     "losses": 0.5
+    },
+    "barbarigo": {
+     "to": [
+      58,
+      12
+     ],
+     "state": "combat",
+     "losses": 0.1
+    }
+   }
+  },
+  {
+   "label": "Ali Pacha est tué et sa tête brandie : le centre ottoman s'effondre. Santa Cruz vole au secours de l'aile droite chrétienne.",
+   "duration": 5,
+   "moves": {
+    "ali-pacha": {
+     "to": [
+      60,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.7
+    },
+    "reserve": {
+     "to": [
+      48,
+      44
+     ],
+     "state": "combat",
+     "losses": 0.05
+    },
+    "uluc-ali": {
+     "to": [
+      50,
+      52
+     ],
+     "state": "combat",
+     "losses": 0.2
+    }
+   }
+  },
+  {
+   "label": "La flotte ottomane est détruite. Seul Uluç Ali parvient à s'échapper avec quelques galères.",
+   "duration": 4,
+   "moves": {
+    "ali-pacha": {
+     "to": [
+      60,
+      30
+     ],
+     "state": "fuite",
+     "losses": 0.9
+    },
+    "reserve-ott": {
+     "to": [
+      96,
+      30
+     ],
+     "state": "fuite",
+     "losses": 0.4
+    },
+    "siroco": {
+     "to": [
+      96,
+      6
+     ],
+     "state": "fuite",
+     "losses": 0.8
+    },
+    "uluc-ali": {
+     "to": [
+      96,
+      56
+     ],
+     "state": "fuite",
+     "losses": 0.3
+    }
+   }
+  }
+ ],
+ "sources": [
+  "Fernand Braudel, La Méditerranée et le monde méditerranéen à l'époque de Philippe II",
+  "Alessandro Barbero, Lepanto, 2010",
+  "Wikipédia FR, « Bataille de Lépante »"
+ ]
+}

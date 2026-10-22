@@ -1,3 +1,5 @@
+import { OPEN_BATTLE_EVENT } from '../battle/event';
+import { battleTroops } from '../data/loadBattles';
 import { OPEN_INVENTION_EVENT } from '../data/loadInventions';
 import type { Invention } from '../types-invention';
 import Markdown from 'react-markdown';
@@ -18,6 +20,8 @@ interface Props {
   story?: { segments: StorySegment[]; current: number; silent: boolean } | null;
   /** Inventions apparues depuis l'étape précédente (cliquables : fiche sur la carte). */
   inventions?: Invention[];
+  /** Empire affiché (pour savoir si la bataille de l'étape est jouable). */
+  empireId?: string;
 }
 
 const markdownComponents = {
@@ -25,7 +29,7 @@ const markdownComponents = {
   a: ({ node: _node, ...props }: ComponentProps<'a'> & { node?: unknown }) => <a {...props} target="_blank" rel="noopener noreferrer" />,
 };
 
-export const EventPanel = memo(function EventPanel({ step, open, onToggle, story, chapter, inventions = [] }: Props) {
+export const EventPanel = memo(function EventPanel({ step, open, onToggle, story, chapter, inventions = [], empireId }: Props) {
   const meta = step ? eventMeta(step.type) : null;
   const bodyRef = useRef<HTMLDivElement>(null);
   const segs = story?.segments ?? [];
@@ -154,7 +158,7 @@ export const EventPanel = memo(function EventPanel({ step, open, onToggle, story
               </section>
             )}
 
-            {step.battle && <BattleBlock battle={step.battle} />}
+            {step.battle && <BattleBlock battle={step.battle} playable={!!empireId && !!battleTroops(empireId, step.id)} />}
 
             {inventions.length > 0 && (
               <section className="event-panel__inventions">
@@ -218,7 +222,7 @@ const Details = memo(function Details({ text }: { text: string }) {
   return <Markdown components={markdownComponents}>{text}</Markdown>;
 });
 
-function BattleBlock({ battle }: { battle: BattleInfo }) {
+function BattleBlock({ battle, playable }: { battle: BattleInfo; playable: boolean }) {
   const rows: [string, string | undefined][] = [
     ['Belligérants', battle.belligerents.join(battle.belligerents.length === 2 ? ' contre ' : ', ')],
     ['Commandants', battle.commanders.join(', ')],
@@ -241,6 +245,17 @@ function BattleBlock({ battle }: { battle: BattleInfo }) {
             </div>
           ))}
       </dl>
+      {playable && (
+        <button
+          type="button"
+          className="btn battle__watch"
+          data-testid="battle-open"
+          aria-haspopup="dialog"
+          onClick={(e) => window.dispatchEvent(new CustomEvent(OPEN_BATTLE_EVENT, { detail: { opener: e.currentTarget } }))}
+        >
+          ▶ Voir la bataille
+        </button>
+      )}
     </section>
   );
 }

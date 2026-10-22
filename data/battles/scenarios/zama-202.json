@@ -1,0 +1,351 @@
+{
+ "terrain": "plaine",
+ "units": [
+  {
+   "id": "hastats",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 14000,
+   "at": [
+    26,
+    30
+   ],
+   "formation": "ligne",
+   "label": "Hastats romains (première ligne)"
+  },
+  {
+   "id": "princes-triaires",
+   "army": 0,
+   "kind": "infanterie",
+   "troops": 15000,
+   "at": [
+    16,
+    30
+   ],
+   "formation": "ligne",
+   "label": "Princes et triaires (deuxième et troisième lignes)"
+  },
+  {
+   "id": "laelius",
+   "army": 0,
+   "kind": "cavalerie",
+   "troops": 3000,
+   "at": [
+    28,
+    8
+   ],
+   "formation": "ligne",
+   "label": "Cavalerie italienne de Laelius"
+  },
+  {
+   "id": "massinissa",
+   "army": 0,
+   "kind": "cavalerie",
+   "troops": 3000,
+   "at": [
+    28,
+    52
+   ],
+   "formation": "ligne",
+   "label": "Cavalerie numide de Massinissa"
+  },
+  {
+   "id": "elephants",
+   "army": 1,
+   "kind": "elephants",
+   "troops": 80,
+   "at": [
+    60,
+    30
+   ],
+   "formation": "ligne",
+   "label": "80 éléphants de guerre"
+  },
+  {
+   "id": "mercenaires",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 12000,
+   "at": [
+    68,
+    30
+   ],
+   "formation": "ligne",
+   "label": "Mercenaires ligures, gaulois et baléares"
+  },
+  {
+   "id": "libyens",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 12000,
+   "at": [
+    76,
+    30
+   ],
+   "formation": "ligne",
+   "label": "Recrues carthaginoises et libyennes"
+  },
+  {
+   "id": "veterans",
+   "army": 1,
+   "kind": "infanterie",
+   "troops": 10000,
+   "at": [
+    86,
+    30
+   ],
+   "formation": "ligne",
+   "label": "Vétérans d'Hannibal (réserve)"
+  },
+  {
+   "id": "cav-g",
+   "army": 1,
+   "kind": "cavalerie",
+   "troops": 2000,
+   "at": [
+    68,
+    8
+   ],
+   "formation": "ligne",
+   "label": "Cavalerie numide carthaginoise"
+  },
+  {
+   "id": "cav-d",
+   "army": 1,
+   "kind": "cavalerie",
+   "troops": 2000,
+   "at": [
+    68,
+    52
+   ],
+   "formation": "ligne",
+   "label": "Cavalerie carthaginoise"
+  }
+ ],
+ "phases": [
+  {
+   "label": "Hannibal lance ses 80 éléphants en avant. Scipion a ouvert des couloirs entre ses manipules, et les vélites harcèlent les bêtes.",
+   "duration": 4,
+   "moves": {
+    "elephants": {
+     "to": [
+      40,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.2
+    },
+    "hastats": {
+     "to": [
+      30,
+      30
+     ],
+     "state": "marche"
+    },
+    "princes-triaires": {
+     "to": [
+      22,
+      30
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Effrayés par les trompettes, les éléphants filent dans les couloirs ou refluent sur leur propre cavalerie. Laelius et Massinissa en profitent pour charger.",
+   "duration": 4,
+   "moves": {
+    "elephants": {
+     "to": [
+      12,
+      30
+     ],
+     "state": "fuite",
+     "losses": 0.8
+    },
+    "laelius": {
+     "to": [
+      60,
+      12
+     ],
+     "state": "combat"
+    },
+    "massinissa": {
+     "to": [
+      60,
+      48
+     ],
+     "state": "combat"
+    },
+    "cav-g": {
+     "to": [
+      88,
+      6
+     ],
+     "state": "fuite",
+     "losses": 0.3
+    },
+    "cav-d": {
+     "to": [
+      88,
+      54
+     ],
+     "state": "fuite",
+     "losses": 0.3
+    }
+   }
+  },
+  {
+   "label": "La cavalerie carthaginoise chassée, les fantassins romains s'avancent et brisent les mercenaires d'Hannibal dans un corps à corps acharné.",
+   "duration": 5,
+   "moves": {
+    "hastats": {
+     "to": [
+      58,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.1
+    },
+    "mercenaires": {
+     "to": [
+      64,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.5
+    },
+    "laelius": {
+     "to": [
+      94,
+      6
+     ],
+     "state": "combat"
+    },
+    "massinissa": {
+     "to": [
+      94,
+      54
+     ],
+     "state": "combat"
+    }
+   }
+  },
+  {
+   "label": "Les mercenaires, repoussés, sont refoulés par les Libyens et les Carthaginois qui refusent de s'ouvrir. Scipion fait élargir sa ligne : princes et triaires se déploient sur les ailes.",
+   "duration": 5,
+   "moves": {
+    "mercenaires": {
+     "to": [
+      70,
+      30
+     ],
+     "state": "fuite",
+     "losses": 0.8
+    },
+    "libyens": {
+     "to": [
+      72,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.3
+    },
+    "princes-triaires": {
+     "to": [
+      56,
+      30
+     ],
+     "state": "combat"
+    },
+    "hastats": {
+     "to": [
+      60,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.2
+    }
+   }
+  },
+  {
+   "label": "Le front romain est maintenant aussi long que celui des vétérans d'Hannibal. Les deux lignes s'affrontent sans qu'aucune cède.",
+   "duration": 5,
+   "moves": {
+    "libyens": {
+     "to": [
+      74,
+      30
+     ],
+     "state": "fuite",
+     "losses": 0.6
+    },
+    "veterans": {
+     "to": [
+      82,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.3
+    },
+    "hastats": {
+     "to": [
+      74,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.2
+    },
+    "princes-triaires": {
+     "to": [
+      74,
+      18
+     ],
+     "state": "combat",
+     "losses": 0.15
+    }
+   }
+  },
+  {
+   "label": "La cavalerie de Laelius et de Massinissa revient et attaque les vétérans dans le dos. Encerclée, l'armée carthaginoise est anéantie.",
+   "duration": 5,
+   "moves": {
+    "laelius": {
+     "to": [
+      90,
+      26
+     ],
+     "state": "combat"
+    },
+    "massinissa": {
+     "to": [
+      90,
+      34
+     ],
+     "state": "combat"
+    },
+    "veterans": {
+     "to": [
+      82,
+      30
+     ],
+     "state": "fuite",
+     "losses": 0.85
+    },
+    "libyens": {
+     "to": [
+      74,
+      30
+     ],
+     "state": "fuite",
+     "losses": 0.9
+    }
+   }
+  }
+ ],
+ "sources": [
+  "Polybe, Histoires, XV, 9-14",
+  "Tite-Live, Histoire romaine, XXX, 32-35",
+  "Wikipédia FR, « Bataille de Zama »"
+ ]
+}

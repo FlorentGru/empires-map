@@ -260,6 +260,10 @@ L'Atlas est une application d'une seule page, rendue en JavaScript : sans préca
 
 Sur GitHub Pages (sous-adresse `/empires-map/`), `robots.txt` n'est pas lu par les moteurs : le sitemap se déclare dans Google Search Console.
 
+## 12 bis. Simulation de bataille (`src/battle/`)
+
+Le bouton « ▶ Voir la bataille » de la fiche bataille ouvre une fenêtre chargée à la demande (aucun poids au démarrage). Le **moteur** (`engine.ts`) est une fonction pure du temps : `stateAt(scénario, échelle, t)` interpole la position de chaque bloc de troupes entre les phases, le répartit en figurines selon sa formation et fait tomber une part des figurines selon les pertes cumulées. Pur et déterministe, il se teste sans navigateur et permet de sauter à n'importe quelle phase. Le **rendu** (`render.ts`) dessine sur un canvas 2D les figurines de la carte, rasterisées une fois par peuple (`sprites.ts`). L'**échelle** (`scaleFor`) choisit 1 figurine = N hommes pour rester sous 200 figurines. Les **données** sont séparées du code : `data/battles/troops.json` dit quelles batailles sont jouables et leurs effectifs ; `data/battles/scenarios/<stepId>.json` décrit, quand les sources le permettent, les unités, le terrain et les phases d'une bataille célèbre ; sinon `genericScenario` en déduit un déroulement schématique (approche, choc, rupture du perdant, poursuite).
+
 ## 13. Tests
 
 - **Unitaires** (`tests/unit`, `npm test`, Vitest, environnement node) : fonctions pures de `src/` (formatage des années sans année 0, nombres en lettres pour la narration, périodes et bornes qui se touchent, chaînage des armées, échelle de la frise monotone, palette des entités, emprises géométriques).

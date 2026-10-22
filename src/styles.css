@@ -2773,3 +2773,13 @@ kbd {
     animation: none;
   }
 }
+
+.battle__watch {
+  margin-top: 10px;
+  background: #a63a2b;
+  border-color: #a63a2b;
+  color: #fff8ea;
+}
+.battle__watch:hover {
+  background: #8a2f23;
+}

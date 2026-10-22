@@ -13,6 +13,7 @@ Empires disponibles : **l'Empire d'Alexandre le Grand** (336 → 323 av. J.-C.),
 - Frise chronologique cliquable, lecture automatique, vitesse ×0,5 à ×2, raccourcis clavier (Espace, ←, →)
 - Panneau d'explication : récit, conséquences, fiche bataille, sources
 - Page « Tous les empires » (`?empires=1`) : frise de tous les empires du catalogue (disponibles en couleur, à venir grisés), filtre par continent, résumé au clic (apogée, périodes, moments clés, personnages, inventions, héritage) et résumé rédigé par le sage
+- « ▶ Voir la bataille » : une fenêtre animée simule la bataille avec les figurines et couleurs de chaque peuple, à l'échelle (1 figurine ≈ N hommes) ; scénario historique (formations, manœuvres, terrain) pour 12 grandes batailles (Cannes, Gaugamèles, Austerlitz, Waterloo…), simulation schématique pour quelques autres
 - Mode « 🎯 Devine la suite » : avant chaque étape, une question à choix sur ce qui arrive (vainqueur, événement, année, territoire), avec score (`&guess=1`)
 - Armées animées qui marchent depuis leur ville de départ, fiches de bataille, personnages avec leur citation
 - Mode Histoire : l'empire raconté étape par étape par un narrateur
@@ -30,7 +31,7 @@ Empires disponibles : **l'Empire d'Alexandre le Grand** (336 → 323 av. J.-C.),
 Un test par grosse fonctionnalité, pas un test par détail :
 - `npm test` : logique centrale (Vitest) : années, périodes, armées et marches, comparaison, événements du monde, piles, quiz hors ligne.
 - `npm run test:data` : validation de toutes les données, un contrôle groupé par fichier qui liste toutes les erreurs d'un coup.
-- `npm run test:e2e` : 16 parcours dans Chromium (Playwright), un par fonctionnalité (carte, armées, galerie, comparaison, monde en l'an X, quiz, sage, calques de l'époque…) ; première fois : `npx playwright install chromium`. Ils construisent le site puis le servent sur le port 4173.
+- `npm run test:e2e` : 17 parcours dans Chromium (Playwright), un par fonctionnalité (carte, armées, galerie, comparaison, monde en l'an X, quiz, sage, calques de l'époque…) ; première fois : `npx playwright install chromium`. Ils construisent le site puis le servent sur le port 4173.
 - Un seul test : `npx vitest run tests/unit/march.test.ts -t "<nom>"` ou `npx playwright test e2e/map.spec.ts -g "<nom>"`.
 - `npm run check:bundle` : vérifie que le JavaScript chargé au démarrage reste sous 465 Ko (gzip).
 - `npm run lint` (oxlint) et `npm run format` / `format:check` (Prettier) : style du code.
