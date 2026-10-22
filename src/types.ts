@@ -226,7 +226,14 @@ export type Faction =
   | 'hussites'
   | 'lansquenets'
   | 'magyars'
-  | 'suedois';
+  | 'suedois'
+  // Empire carolingien
+  | 'francs'
+  | 'lombards'
+  | 'saxons'
+  | 'avars'
+  | 'vikings'
+  | 'basques';
 
 export const FACTIONS: Faction[] = [
   'romains',
@@ -287,6 +294,12 @@ export const FACTIONS: Faction[] = [
   'lansquenets',
   'magyars',
   'suedois',
+  'francs',
+  'lombards',
+  'saxons',
+  'avars',
+  'vikings',
+  'basques',
 ];
 
 export type Archetype =
@@ -329,6 +342,11 @@ export type Archetype =
   | 'prince-electeur'
   | 'reformateur'
   | 'capitaine'
+  // Empire carolingien
+  | 'roi-franc'
+  | 'empereur-carolingien'
+  | 'seigneur-franc'
+  | 'prelat'
   // Tous empires : savant, philosophe (et figure du guide de l'Atlas)
   | 'sage';
 
@@ -368,6 +386,10 @@ export const ARCHETYPES: Archetype[] = [
   'capitaine',
   'general-mongol',
   'khatoun',
+  'roi-franc',
+  'empereur-carolingien',
+  'seigneur-franc',
+  'prelat',
 ];
 
 export interface ArmyMove {
