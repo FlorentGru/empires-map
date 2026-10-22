@@ -71,6 +71,8 @@ export const FACTION_COLORS = {
   avars: '#b5481f',
   vikings: '#1f8a8a',
   basques: '#c0307a',
+  indiens: '#d8861f',
+  scythes: '#3f7a5a',
 } satisfies Record<Faction, string>;
 
 /** Composant React (démo) du soldat d'une faction. */

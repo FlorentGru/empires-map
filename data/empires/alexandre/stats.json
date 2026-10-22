@@ -1,0 +1,21 @@
+{
+ "areas": {
+  "avenement-336": 121547,
+  "thebes-335": 183656,
+  "granique-334": 194766,
+  "gordion-333": 378377,
+  "issos-333": 517381,
+  "tyr-332": 663382,
+  "alexandrie-331": 1154949,
+  "gaugameles-331": 1392937,
+  "persepolis-330": 1958474,
+  "darius-330": 2404200,
+  "iaxarte-329": 3657648,
+  "roxane-327": 3687606,
+  "hydaspe-326": 3794964,
+  "hyphase-325": 3863821,
+  "suse-324": 4032835,
+  "babylone-323": 4292445
+ },
+ "apogee": "babylone-323"
+}

@@ -1,0 +1,2353 @@
+{
+ "empire": "alexandre",
+ "basemapNote": "Étendue nécessaire ≈ [18, 22, 76, 45] : tout est dans le fond de carte [-25,-40,150,72]. Instantané world_bc323 (Empire of Alexander, étendue finale) découpé par des régions nommées (overrides/alexandre/_regions.geojson), en union croissante. Frontières approximatives.",
+ "steps": [
+  {
+   "id": "avenement-336",
+   "year": -336,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Royaume de Macédoine",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Macédoine"
+         },
+         {
+          "region": "Thrace méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Ligue de Corinthe",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "diff": [
+         {
+          "region": "Grèce (Ligue de Corinthe)"
+         },
+         {
+          "region": "Laconie (Sparte)"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thessalie et Épire",
+     "status": "allied",
+     "source": {
+      "region": "Thessalie et Épire"
+     }
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "thebes-335",
+   "year": -335,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Royaume de Macédoine",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Macédoine"
+         },
+         {
+          "region": "Thrace méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thrace du Nord et Illyrie du Sud",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Thrace du nord"
+         },
+         {
+          "region": "Illyrie méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Ligue de Corinthe",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "diff": [
+         {
+          "region": "Grèce (Ligue de Corinthe)"
+         },
+         {
+          "region": "Laconie (Sparte)"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thessalie et Épire",
+     "status": "allied",
+     "source": {
+      "region": "Thessalie et Épire"
+     }
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "granique-334",
+   "year": -334,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Royaume de Macédoine",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Macédoine"
+         },
+         {
+          "region": "Thrace méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thrace du Nord et Illyrie du Sud",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Thrace du nord"
+         },
+         {
+          "region": "Illyrie méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Ligue de Corinthe",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "diff": [
+         {
+          "region": "Grèce (Ligue de Corinthe)"
+         },
+         {
+          "region": "Laconie (Sparte)"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire d'Alexandre",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "region": "Troade et Phrygie hellespontique"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thessalie et Épire",
+     "status": "allied",
+     "source": {
+      "region": "Thessalie et Épire"
+     }
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "gordion-333",
+   "year": -333,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Royaume de Macédoine",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Macédoine"
+         },
+         {
+          "region": "Thrace méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thrace du Nord et Illyrie du Sud",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Thrace du nord"
+         },
+         {
+          "region": "Illyrie méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Ligue de Corinthe",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "diff": [
+         {
+          "region": "Grèce (Ligue de Corinthe)"
+         },
+         {
+          "region": "Laconie (Sparte)"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire d'Alexandre",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Troade et Phrygie hellespontique"
+         },
+         {
+          "region": "Asie Mineure occidentale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thessalie et Épire",
+     "status": "allied",
+     "source": {
+      "region": "Thessalie et Épire"
+     }
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "issos-333",
+   "year": -333,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Royaume de Macédoine",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Macédoine"
+         },
+         {
+          "region": "Thrace méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thrace du Nord et Illyrie du Sud",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Thrace du nord"
+         },
+         {
+          "region": "Illyrie méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Ligue de Corinthe",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "diff": [
+         {
+          "region": "Grèce (Ligue de Corinthe)"
+         },
+         {
+          "region": "Laconie (Sparte)"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire d'Alexandre",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Troade et Phrygie hellespontique"
+         },
+         {
+          "region": "Asie Mineure occidentale"
+         },
+         {
+          "region": "Asie Mineure orientale et Cilicie"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thessalie et Épire",
+     "status": "allied",
+     "source": {
+      "region": "Thessalie et Épire"
+     }
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "tyr-332",
+   "year": -332,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Royaume de Macédoine",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Macédoine"
+         },
+         {
+          "region": "Thrace méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thrace du Nord et Illyrie du Sud",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Thrace du nord"
+         },
+         {
+          "region": "Illyrie méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Ligue de Corinthe",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "diff": [
+         {
+          "region": "Grèce (Ligue de Corinthe)"
+         },
+         {
+          "region": "Laconie (Sparte)"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire d'Alexandre",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Troade et Phrygie hellespontique"
+         },
+         {
+          "region": "Asie Mineure occidentale"
+         },
+         {
+          "region": "Asie Mineure orientale et Cilicie"
+         },
+         {
+          "region": "Syrie-Phénicie-Palestine"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thessalie et Épire",
+     "status": "allied",
+     "source": {
+      "region": "Thessalie et Épire"
+     }
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "alexandrie-331",
+   "year": -331,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Royaume de Macédoine",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Macédoine"
+         },
+         {
+          "region": "Thrace méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thrace du Nord et Illyrie du Sud",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Thrace du nord"
+         },
+         {
+          "region": "Illyrie méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Ligue de Corinthe",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "diff": [
+         {
+          "region": "Grèce (Ligue de Corinthe)"
+         },
+         {
+          "region": "Laconie (Sparte)"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire d'Alexandre",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Troade et Phrygie hellespontique"
+         },
+         {
+          "region": "Asie Mineure occidentale"
+         },
+         {
+          "region": "Asie Mineure orientale et Cilicie"
+         },
+         {
+          "region": "Syrie-Phénicie-Palestine"
+         },
+         {
+          "region": "Égypte"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cyrénaïque",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "region": "Cyrénaïque"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thessalie et Épire",
+     "status": "allied",
+     "source": {
+      "region": "Thessalie et Épire"
+     }
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "gaugameles-331",
+   "year": -331,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Royaume de Macédoine",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Macédoine"
+         },
+         {
+          "region": "Thrace méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thrace du Nord et Illyrie du Sud",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Thrace du nord"
+         },
+         {
+          "region": "Illyrie méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Ligue de Corinthe",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "diff": [
+         {
+          "region": "Grèce (Ligue de Corinthe)"
+         },
+         {
+          "region": "Laconie (Sparte)"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire d'Alexandre",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Troade et Phrygie hellespontique"
+         },
+         {
+          "region": "Asie Mineure occidentale"
+         },
+         {
+          "region": "Asie Mineure orientale et Cilicie"
+         },
+         {
+          "region": "Syrie-Phénicie-Palestine"
+         },
+         {
+          "region": "Égypte"
+         },
+         {
+          "region": "Mésopotamie du Nord"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cyrénaïque",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "region": "Cyrénaïque"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thessalie et Épire",
+     "status": "allied",
+     "source": {
+      "region": "Thessalie et Épire"
+     }
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "persepolis-330",
+   "year": -330,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Royaume de Macédoine",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Macédoine"
+         },
+         {
+          "region": "Thrace méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thrace du Nord et Illyrie du Sud",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Thrace du nord"
+         },
+         {
+          "region": "Illyrie méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Ligue de Corinthe",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "diff": [
+         {
+          "region": "Grèce (Ligue de Corinthe)"
+         },
+         {
+          "region": "Laconie (Sparte)"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire d'Alexandre",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Troade et Phrygie hellespontique"
+         },
+         {
+          "region": "Asie Mineure occidentale"
+         },
+         {
+          "region": "Asie Mineure orientale et Cilicie"
+         },
+         {
+          "region": "Syrie-Phénicie-Palestine"
+         },
+         {
+          "region": "Égypte"
+         },
+         {
+          "region": "Mésopotamie du Nord"
+         },
+         {
+          "region": "Babylonie-Susiane-Perse"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cyrénaïque",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "region": "Cyrénaïque"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thessalie et Épire",
+     "status": "allied",
+     "source": {
+      "region": "Thessalie et Épire"
+     }
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "darius-330",
+   "year": -330,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Royaume de Macédoine",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Macédoine"
+         },
+         {
+          "region": "Thrace méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thrace du Nord et Illyrie du Sud",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Thrace du nord"
+         },
+         {
+          "region": "Illyrie méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Ligue de Corinthe",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "diff": [
+         {
+          "region": "Grèce (Ligue de Corinthe)"
+         },
+         {
+          "region": "Laconie (Sparte)"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire d'Alexandre",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Troade et Phrygie hellespontique"
+         },
+         {
+          "region": "Asie Mineure occidentale"
+         },
+         {
+          "region": "Asie Mineure orientale et Cilicie"
+         },
+         {
+          "region": "Syrie-Phénicie-Palestine"
+         },
+         {
+          "region": "Égypte"
+         },
+         {
+          "region": "Mésopotamie du Nord"
+         },
+         {
+          "region": "Babylonie-Susiane-Perse"
+         },
+         {
+          "region": "Médie-Parthie occidentale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cyrénaïque",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "region": "Cyrénaïque"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thessalie et Épire",
+     "status": "allied",
+     "source": {
+      "region": "Thessalie et Épire"
+     }
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "iaxarte-329",
+   "year": -329,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Royaume de Macédoine",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Macédoine"
+         },
+         {
+          "region": "Thrace méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thrace du Nord et Illyrie du Sud",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Thrace du nord"
+         },
+         {
+          "region": "Illyrie méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Ligue de Corinthe",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "diff": [
+         {
+          "region": "Grèce (Ligue de Corinthe)"
+         },
+         {
+          "region": "Laconie (Sparte)"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire d'Alexandre",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Troade et Phrygie hellespontique"
+         },
+         {
+          "region": "Asie Mineure occidentale"
+         },
+         {
+          "region": "Asie Mineure orientale et Cilicie"
+         },
+         {
+          "region": "Syrie-Phénicie-Palestine"
+         },
+         {
+          "region": "Égypte"
+         },
+         {
+          "region": "Mésopotamie du Nord"
+         },
+         {
+          "region": "Babylonie-Susiane-Perse"
+         },
+         {
+          "region": "Médie-Parthie occidentale"
+         },
+         {
+          "region": "Hyrcanie"
+         },
+         {
+          "region": "Arie-Parthie orientale-Arachosie"
+         },
+         {
+          "region": "Bactriane"
+         },
+         {
+          "region": "Sogdiane méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cyrénaïque",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "region": "Cyrénaïque"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thessalie et Épire",
+     "status": "allied",
+     "source": {
+      "region": "Thessalie et Épire"
+     }
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "roxane-327",
+   "year": -327,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Royaume de Macédoine",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Macédoine"
+         },
+         {
+          "region": "Thrace méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thrace du Nord et Illyrie du Sud",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Thrace du nord"
+         },
+         {
+          "region": "Illyrie méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Ligue de Corinthe",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "diff": [
+         {
+          "region": "Grèce (Ligue de Corinthe)"
+         },
+         {
+          "region": "Laconie (Sparte)"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire d'Alexandre",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Troade et Phrygie hellespontique"
+         },
+         {
+          "region": "Asie Mineure occidentale"
+         },
+         {
+          "region": "Asie Mineure orientale et Cilicie"
+         },
+         {
+          "region": "Syrie-Phénicie-Palestine"
+         },
+         {
+          "region": "Égypte"
+         },
+         {
+          "region": "Mésopotamie du Nord"
+         },
+         {
+          "region": "Babylonie-Susiane-Perse"
+         },
+         {
+          "region": "Médie-Parthie occidentale"
+         },
+         {
+          "region": "Hyrcanie"
+         },
+         {
+          "region": "Arie-Parthie orientale-Arachosie"
+         },
+         {
+          "region": "Bactriane"
+         },
+         {
+          "region": "Sogdiane méridionale"
+         },
+         {
+          "region": "Sogdiane"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cyrénaïque",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "region": "Cyrénaïque"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thessalie et Épire",
+     "status": "allied",
+     "source": {
+      "region": "Thessalie et Épire"
+     }
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "hydaspe-326",
+   "year": -326,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Royaume de Taxile",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "region": "Royaume de Taxile"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Royaume de Pôros",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "region": "Royaume de Pôros"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Royaume de Macédoine",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Macédoine"
+         },
+         {
+          "region": "Thrace méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thrace du Nord et Illyrie du Sud",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Thrace du nord"
+         },
+         {
+          "region": "Illyrie méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Ligue de Corinthe",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "diff": [
+         {
+          "region": "Grèce (Ligue de Corinthe)"
+         },
+         {
+          "region": "Laconie (Sparte)"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire d'Alexandre",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Troade et Phrygie hellespontique"
+         },
+         {
+          "region": "Asie Mineure occidentale"
+         },
+         {
+          "region": "Asie Mineure orientale et Cilicie"
+         },
+         {
+          "region": "Syrie-Phénicie-Palestine"
+         },
+         {
+          "region": "Égypte"
+         },
+         {
+          "region": "Mésopotamie du Nord"
+         },
+         {
+          "region": "Babylonie-Susiane-Perse"
+         },
+         {
+          "region": "Médie-Parthie occidentale"
+         },
+         {
+          "region": "Hyrcanie"
+         },
+         {
+          "region": "Arie-Parthie orientale-Arachosie"
+         },
+         {
+          "region": "Bactriane"
+         },
+         {
+          "region": "Sogdiane méridionale"
+         },
+         {
+          "region": "Sogdiane"
+         },
+         {
+          "region": "Gandhara et Indus"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cyrénaïque",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "region": "Cyrénaïque"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thessalie et Épire",
+     "status": "allied",
+     "source": {
+      "region": "Thessalie et Épire"
+     }
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "hyphase-325",
+   "year": -325,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Royaume de Taxile",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "region": "Royaume de Taxile"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Royaume de Pôros",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "region": "Royaume de Pôros"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Royaume de Macédoine",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Macédoine"
+         },
+         {
+          "region": "Thrace méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thrace du Nord et Illyrie du Sud",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Thrace du nord"
+         },
+         {
+          "region": "Illyrie méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Ligue de Corinthe",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "diff": [
+         {
+          "region": "Grèce (Ligue de Corinthe)"
+         },
+         {
+          "region": "Laconie (Sparte)"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire d'Alexandre",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Troade et Phrygie hellespontique"
+         },
+         {
+          "region": "Asie Mineure occidentale"
+         },
+         {
+          "region": "Asie Mineure orientale et Cilicie"
+         },
+         {
+          "region": "Syrie-Phénicie-Palestine"
+         },
+         {
+          "region": "Égypte"
+         },
+         {
+          "region": "Mésopotamie du Nord"
+         },
+         {
+          "region": "Babylonie-Susiane-Perse"
+         },
+         {
+          "region": "Médie-Parthie occidentale"
+         },
+         {
+          "region": "Hyrcanie"
+         },
+         {
+          "region": "Arie-Parthie orientale-Arachosie"
+         },
+         {
+          "region": "Bactriane"
+         },
+         {
+          "region": "Sogdiane méridionale"
+         },
+         {
+          "region": "Sogdiane"
+         },
+         {
+          "region": "Gandhara et Indus"
+         },
+         {
+          "region": "Pendjab jusqu'à l'Hyphase"
+         },
+         {
+          "region": "Sind"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cyrénaïque",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "region": "Cyrénaïque"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thessalie et Épire",
+     "status": "allied",
+     "source": {
+      "region": "Thessalie et Épire"
+     }
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "suse-324",
+   "year": -324,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Royaume de Taxile",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "region": "Royaume de Taxile"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Royaume de Pôros",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "region": "Royaume de Pôros"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Royaume de Macédoine",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Macédoine"
+         },
+         {
+          "region": "Thrace méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thrace du Nord et Illyrie du Sud",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Thrace du nord"
+         },
+         {
+          "region": "Illyrie méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Ligue de Corinthe",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "diff": [
+         {
+          "region": "Grèce (Ligue de Corinthe)"
+         },
+         {
+          "region": "Laconie (Sparte)"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire d'Alexandre",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Troade et Phrygie hellespontique"
+         },
+         {
+          "region": "Asie Mineure occidentale"
+         },
+         {
+          "region": "Asie Mineure orientale et Cilicie"
+         },
+         {
+          "region": "Syrie-Phénicie-Palestine"
+         },
+         {
+          "region": "Égypte"
+         },
+         {
+          "region": "Mésopotamie du Nord"
+         },
+         {
+          "region": "Babylonie-Susiane-Perse"
+         },
+         {
+          "region": "Médie-Parthie occidentale"
+         },
+         {
+          "region": "Hyrcanie"
+         },
+         {
+          "region": "Arie-Parthie orientale-Arachosie"
+         },
+         {
+          "region": "Bactriane"
+         },
+         {
+          "region": "Sogdiane méridionale"
+         },
+         {
+          "region": "Sogdiane"
+         },
+         {
+          "region": "Gandhara et Indus"
+         },
+         {
+          "region": "Pendjab jusqu'à l'Hyphase"
+         },
+         {
+          "region": "Sind"
+         },
+         {
+          "region": "Gédrosie côtière"
+         },
+         {
+          "region": "Cyrénaïque"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thessalie et Épire",
+     "status": "allied",
+     "source": {
+      "region": "Thessalie et Épire"
+     }
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "babylone-323",
+   "year": -323,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Royaume de Taxile",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "region": "Royaume de Taxile"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Royaume de Pôros",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "region": "Royaume de Pôros"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Royaume de Macédoine",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Macédoine"
+         },
+         {
+          "region": "Thrace méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thrace du Nord et Illyrie du Sud",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Thrace du nord"
+         },
+         {
+          "region": "Illyrie méridionale"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Ligue de Corinthe",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "diff": [
+         {
+          "region": "Grèce (Ligue de Corinthe)"
+         },
+         {
+          "region": "Laconie (Sparte)"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire d'Alexandre",
+     "status": "core",
+     "source": {
+      "inter": [
+       {
+        "snapshot": "world_bc323",
+        "match": "^Empire of Alexander$"
+       },
+       {
+        "union": [
+         {
+          "region": "Troade et Phrygie hellespontique"
+         },
+         {
+          "region": "Asie Mineure occidentale"
+         },
+         {
+          "region": "Asie Mineure orientale et Cilicie"
+         },
+         {
+          "region": "Syrie-Phénicie-Palestine"
+         },
+         {
+          "region": "Égypte"
+         },
+         {
+          "region": "Mésopotamie du Nord"
+         },
+         {
+          "region": "Babylonie-Susiane-Perse"
+         },
+         {
+          "region": "Médie-Parthie occidentale"
+         },
+         {
+          "region": "Hyrcanie"
+         },
+         {
+          "region": "Arie-Parthie orientale-Arachosie"
+         },
+         {
+          "region": "Bactriane"
+         },
+         {
+          "region": "Sogdiane méridionale"
+         },
+         {
+          "region": "Sogdiane"
+         },
+         {
+          "region": "Gandhara et Indus"
+         },
+         {
+          "region": "Pendjab jusqu'à l'Hyphase"
+         },
+         {
+          "region": "Sind"
+         },
+         {
+          "region": "Gédrosie côtière"
+         },
+         {
+          "region": "Cyrénaïque"
+         },
+         {
+          "region": "Gédrosie"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "name": "Thessalie et Épire",
+     "status": "allied",
+     "source": {
+      "region": "Thessalie et Épire"
+     }
+    }
+   ],
+   "notes": ""
+  }
+ ],
+ "checkpoints": [
+  {
+   "name": "Pella",
+   "pt": [
+    22.52,
+    40.76
+   ],
+   "where": "core"
+  },
+  {
+   "name": "Athènes",
+   "pt": [
+    23.73,
+    37.98
+   ],
+   "where": "vassal"
+  },
+  {
+   "name": "Sardes",
+   "pt": [
+    28.04,
+    38.49
+   ],
+   "where": "core",
+   "from": "gordion-333"
+  },
+  {
+   "name": "Sardes (perse)",
+   "pt": [
+    28.04,
+    38.49
+   ],
+   "where": "not-core",
+   "from": "avenement-336",
+   "to": "granique-334"
+  },
+  {
+   "name": "Tarse (Cilicie)",
+   "pt": [
+    34.9,
+    36.9
+   ],
+   "where": "core",
+   "from": "issos-333"
+  },
+  {
+   "name": "Tyr",
+   "pt": [
+    35.3,
+    33.3
+   ],
+   "where": "core",
+   "from": "tyr-332"
+  },
+  {
+   "name": "Tyr (perse)",
+   "pt": [
+    35.3,
+    33.3
+   ],
+   "where": "not-core",
+   "from": "avenement-336",
+   "to": "issos-333"
+  },
+  {
+   "name": "Memphis",
+   "pt": [
+    31.25,
+    29.85
+   ],
+   "where": "core",
+   "from": "alexandrie-331"
+  },
+  {
+   "name": "Alexandrie",
+   "pt": [
+    29.95,
+    31.05
+   ],
+   "where": "core",
+   "from": "alexandrie-331"
+  },
+  {
+   "name": "Alexandrie (avant)",
+   "pt": [
+    29.95,
+    31.05
+   ],
+   "where": "not-core",
+   "from": "avenement-336",
+   "to": "tyr-332"
+  },
+  {
+   "name": "Arbèles",
+   "pt": [
+    43.99,
+    36.19
+   ],
+   "where": "core",
+   "from": "gaugameles-331"
+  },
+  {
+   "name": "Babylone",
+   "pt": [
+    44.42,
+    32.54
+   ],
+   "where": "core",
+   "from": "persepolis-330"
+  },
+  {
+   "name": "Babylone (avant)",
+   "pt": [
+    44.42,
+    32.54
+   ],
+   "where": "not-core",
+   "from": "avenement-336",
+   "to": "gaugameles-331"
+  },
+  {
+   "name": "Persépolis",
+   "pt": [
+    52.89,
+    29.93
+   ],
+   "where": "core",
+   "from": "persepolis-330"
+  },
+  {
+   "name": "Ecbatane",
+   "pt": [
+    48.5,
+    34.8
+   ],
+   "where": "core",
+   "from": "darius-330"
+  },
+  {
+   "name": "Ecbatane (avant)",
+   "pt": [
+    48.5,
+    34.8
+   ],
+   "where": "not-core",
+   "from": "avenement-336",
+   "to": "persepolis-330"
+  },
+  {
+   "name": "Bactres",
+   "pt": [
+    66.9,
+    36.76
+   ],
+   "where": "core",
+   "from": "iaxarte-329"
+  },
+  {
+   "name": "Bactres (avant)",
+   "pt": [
+    66.9,
+    36.76
+   ],
+   "where": "not-core",
+   "from": "avenement-336",
+   "to": "darius-330"
+  },
+  {
+   "name": "Samarcande",
+   "pt": [
+    66.97,
+    39.65
+   ],
+   "where": "core",
+   "from": "iaxarte-329"
+  },
+  {
+   "name": "Taxila",
+   "pt": [
+    72.8,
+    33.75
+   ],
+   "where": "vassal",
+   "from": "hydaspe-326"
+  },
+  {
+   "name": "Hydaspe",
+   "pt": [
+    73.9,
+    32.7
+   ],
+   "where": "vassal",
+   "from": "hydaspe-326"
+  },
+  {
+   "name": "Taxila (avant)",
+   "pt": [
+    72.8,
+    33.75
+   ],
+   "where": "not-core",
+   "from": "avenement-336",
+   "to": "roxane-327"
+  },
+  {
+   "name": "Rome",
+   "pt": [
+    12.5,
+    41.9
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Carthage",
+   "pt": [
+    10.3,
+    36.85
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Sparte",
+   "pt": [
+    22.43,
+    37.07
+   ],
+   "where": "not-core"
+  }
+ ]
+}

@@ -4,7 +4,7 @@
 //   { country, region? }    pays Natural Earth 1:50m (regex), éventuellement découpé par une région nommée
 //   { region }              polygone de overrides/<id>/_regions.geojson
 //   { snapshot, match }     entités d'un instantané historical-basemaps dont NAME correspond à la regex
-//   { union: [...] } / { diff: [a, b, ...] }   opérations booléennes
+//   { union: [...] } / { diff: [a, b, ...] } / { inter: [a, b, ...] }   opérations booléennes
 // Utilisé par l'Empire espagnol et le Saint-Empire.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -17,6 +17,7 @@ interface Src {
   match?: string;
   union?: Src[];
   diff?: Src[];
+  inter?: Src[];
 }
 interface CartoStep {
   id: string;
@@ -38,6 +39,10 @@ function evalSrc(id: string, s: Src, c: GeoCtx): Poly | null {
   if (s.diff) {
     const [a, ...rest] = s.diff.map((x) => evalSrc(id, x, c));
     return c.diff(a, ...rest);
+  }
+  if (s.inter) {
+    const [a, ...rest] = s.inter.map((x) => evalSrc(id, x, c));
+    return rest.reduce((r, x) => c.inter(r, x), a);
   }
   if (s.country) return c.country(s.country, s.region);
   if (s.snapshot) return c.snap(s.snapshot, s.match ?? '.');

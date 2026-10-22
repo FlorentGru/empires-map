@@ -1042,6 +1042,31 @@ export const CAROLINGIAN_SOLDIER_SPECS = {
     shield: circ(8.5, 24, 4.2, '#6a4a2a') + circ(8.5, 24, 1.3, STEEL),
     weapon: spear(34) + `<g transform="translate(-3.4 4)">` + rect(25.2, 12, 1.2, 22, WOOD) + path('M25.8 9.4L27 12.4L24.6 12.4Z', STEEL) + `</g>`,
   },
+  indiens: {
+    skin: '#b9825a',
+    tunic: '#e8e2d0',
+    legs: 'bare',
+    deco:
+      path('M10.6 14.4Q16 12.8 21.4 14.4L22 25L10 25Z', '#e8e2d0') +
+      stroke('M11 15.6L20.6 24', '#c0392b', 1.2) +
+      rect(10.2, 24, 11.6, 1.8, '#c98a2a', 0, 'stroke="none"'),
+    head: path('M11.6 9Q11.4 3.4 16 3Q20.6 3.4 20.4 9Q16 6.6 11.6 9Z', '#e8e2d0') + circ(16, 3.2, 1, '#c0392b') + moustache('#1f1a14'),
+    shield: path('M5.2 15.5L11.4 15.5L11.4 31.5L8.3 33.6L5.2 31.5Z', '#8a5a2a') + stroke('M8.3 16V33', '#5a3a1a', 0.7),
+    weapon: bow('#9a7a2a'),
+  },
+  scythes: {
+    skin: '#d2a070',
+    tunic: '#a8481f',
+    legs: 'pants',
+    legColor: '#5a6a3a',
+    boots: '#3a2a1a',
+    deco: path('M10.6 14.4Q16 12.8 21.4 14.4L22 25L10 25Z', '#a8481f') + rect(10.2, 24, 11.6, 1.6, '#c9a02a', 0, 'stroke="none"') + quiver('#5a3a1a'),
+    head:
+      path('M11.8 9Q12 5 15.2 1.4Q16 -0.2 17.2 0.6Q16.6 3 20.2 9L19.6 9L19.6 7.4L12.4 7.4L12.4 9Z', '#c9b27a') +
+      stroke('M12.4 7.4H19.6', '#a8481f', 1) +
+      moustache('#4a2f1a'),
+    weapon: bow('#7a4a22'),
+  },
 } satisfies Partial<Record<Faction, Spec>>;
 
 export const SOLDIER_SPECS = {
