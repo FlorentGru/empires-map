@@ -42,3 +42,16 @@ test('Issos : simulation schématique', async ({ page }) => {
   await expect(page.getByTestId('battle-dialog')).toBeHidden();
   expect(errors).toEqual([]);
 });
+
+test('la lecture de la frise se met en pause pendant la bataille', async ({ page }) => {
+  await page.goto('/rome/cannes-216/');
+  await page.getByRole('button', { name: 'Lecture', exact: true }).click();
+  await page.getByRole('button', { name: /Voir la bataille/ }).click();
+  await expect(page.getByTestId('battle-dialog')).toBeVisible();
+  // Plus longtemps qu'une étape en lecture automatique : ni l'étape ni la bataille ne doivent changer.
+  await page.waitForTimeout(9000);
+  await expect(page.locator('#battle-title')).toHaveText('Cannes, le désastre');
+  expect(page.url()).toContain('/rome/cannes-216/');
+  await page.keyboard.press('Escape');
+  await expect(page.getByRole('button', { name: 'Lecture', exact: true })).toBeVisible();
+});

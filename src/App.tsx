@@ -1,4 +1,4 @@
-import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react';
+import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { EMPIRE_INDEX, getEmpire, loadEmpire, resolveEmpireId, withAllEmpires } from './data/loadEmpire';
 import { WorldMap } from './map/WorldMap';
 import { AboutModal } from './panels/AboutModal';
@@ -38,7 +38,7 @@ function writeCompare(c: { a: string; b: string } | null) {
   // Virgule lisible dans l'URL partagée (?compare=rome,china plutôt que rome%2Cchina).
   window.history.replaceState(null, '', url.toString().replace(/compare=([a-z_-]+)%2C/, 'compare=$1,'));
 }
-import type { Empire } from './types';
+import type { Empire, TimelineStep } from './types';
 
 // Galerie des figurines : chargée à la demande.
 // Vues chargées à la demande (hors du JS initial) ; celles qui parcourent tous les empires attendent leurs timelines.
@@ -290,9 +290,18 @@ function Atlas({
   const [aboutOpen, setAboutOpen] = useState(false);
   const [feedbackOpen, setFeedbackOpen] = useState(false);
   // Fenêtre « Voir la bataille » : ouverte par le bouton de la fiche (événement), le focus y revient à la fermeture.
-  const [battle, setBattle] = useState<{ opener: HTMLElement | null } | null>(null);
+  // L'empire et l'étape sont figés au clic et la lecture est mise en pause : sinon la frise avançait
+  // pendant la bataille, qui se rechargeait sur une autre étape (armées disparues).
+  const [battle, setBattle] = useState<{ opener: HTMLElement | null; empireId: string; step: TimelineStep } | null>(null);
+  const current = useRef({ empireId: empire.id, step, pause: player.pause });
+  current.current = { empireId: empire.id, step, pause: player.pause };
   useEffect(() => {
-    const open = (e: Event) => setBattle({ opener: (e as CustomEvent<{ opener?: HTMLElement }>).detail?.opener ?? null });
+    const open = (e: Event) => {
+      const { empireId, step: s, pause } = current.current;
+      if (!s) return;
+      pause();
+      setBattle({ opener: (e as CustomEvent<{ opener?: HTMLElement }>).detail?.opener ?? null, empireId, step: s });
+    };
     window.addEventListener(OPEN_BATTLE_EVENT, open);
     return () => window.removeEventListener(OPEN_BATTLE_EVENT, open);
   }, []);
@@ -535,9 +544,9 @@ function Atlas({
       <Timeline empire={empire} player={player} compare2026={countries2026} story={story.controls} />
       <GuessCard empire={empire} player={player} />
       <AboutModal open={aboutOpen} onClose={() => setAboutOpen(false)} />
-      {battle && step && (
+      {battle && (
         <Suspense fallback={null}>
-          <BattleDialog empireId={empire.id} step={step} opener={battle.opener} onClose={() => setBattle(null)} />
+          <BattleDialog empireId={battle.empireId} step={battle.step} opener={battle.opener} onClose={() => setBattle(null)} />
         </Suspense>
       )}
       {feedbackOpen && (
