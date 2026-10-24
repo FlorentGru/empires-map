@@ -1,0 +1,269 @@
+[
+  {
+    "id": "canons-orban",
+    "name": "Les grands canons d’Orban",
+    "year": 1453,
+    "place": "Andrinople et Constantinople",
+    "at": [
+      28.93,
+      41.01
+    ],
+    "inventor": "Orban, fondeur hongrois",
+    "category": "militaire",
+    "description": "Le fondeur Orban, passé du service byzantin à celui de Mehmed II, coule à Andrinople de très grosses bombardes qui tirent des boulets de pierre de plusieurs centaines de kilos. Elles sont traînées jusqu’à Constantinople en 1453. L’artillerie lourde n’est pas une invention ottomane : les Européens et les Byzantins en possédaient. Les chiffres anciens sont exagérés, et la pièce était lente et difficile à recharger, mais l’effet sur les murailles fut réel.",
+    "impact": "Les murs de Théodose, tenus pendant mille ans, sont ouverts en six semaines. L’artillerie devient un pilier du pouvoir ottoman.",
+    "sources": [
+      {
+        "label": "Orban (fondeur)",
+        "url": "https://fr.wikipedia.org/wiki/Siège_de_Constantinople_(1453)"
+      },
+      {
+        "label": "Siège de Constantinople (1453)",
+        "url": "https://fr.wikipedia.org/wiki/Siège_de_Constantinople_(1453)"
+      }
+    ]
+  },
+  {
+    "id": "devsirme-janissaires",
+    "name": "Le devşirme et le corps des janissaires",
+    "year": 1380,
+    "approx": true,
+    "place": "Andrinople",
+    "at": [
+      26.56,
+      41.68
+    ],
+    "inventor": "Sultans Murad Ier et ses successeurs",
+    "category": "administration",
+    "description": "Le devşirme est un prélèvement d’enfants chrétiens des Balkans, convertis et formés pour servir l’État, comme soldats d’élite, les janissaires, ou comme administrateurs. Ses débuts, entre 1360 et 1400, sont mal connus. Les soldats-esclaves existaient déjà chez les Abbassides et les mamelouks : l’idée n’est pas ottomane, mais le système a été porté à une grande échelle. Il a laissé des souvenirs douloureux, et certains garçons ont fait de grandes carrières.",
+    "impact": "Une élite dévouée au sultan, sans attaches locales, renforce l’autorité du trône jusqu’au XVIIe siècle. Le corps est supprimé en 1826.",
+    "sources": [
+      {
+        "label": "Devchirmé",
+        "url": "https://fr.wikipedia.org/wiki/Devchirmé"
+      },
+      {
+        "label": "Janissaires",
+        "url": "https://fr.wikipedia.org/wiki/Janissaires"
+      }
+    ]
+  },
+  {
+    "id": "millets",
+    "name": "Les communautés confessionnelles (millets)",
+    "year": 1454,
+    "approx": true,
+    "place": "Constantinople",
+    "at": [
+      28.97,
+      41.02
+    ],
+    "inventor": "Mehmed II, selon la tradition",
+    "category": "administration",
+    "description": "Les Ottomans reconnaissent à chaque communauté non musulmane, orthodoxe, arménienne ou juive, un chef religieux, des tribunaux et des écoles. Après 1453, Mehmed II nomme le patriarche Gennadios. Ce n’est pas une invention ottomane : le statut de protégé (dhimma) vient du droit musulman ancien. Le mot « millet », et un système aussi formel, sont surtout attestés au XIXe siècle : les historiens parlent d’un arrangement progressif, souvent inégal, plutôt que d’une loi unique.",
+    "impact": "Des communautés très différentes cohabitent dans l’Empire. Mais l’inégalité demeure, et ce cadre pèse ensuite sur les identités nationales.",
+    "sources": [
+      {
+        "label": "Millet",
+        "url": "https://fr.wikipedia.org/wiki/Millet"
+      },
+      {
+        "label": "Dhimmi",
+        "url": "https://fr.wikipedia.org/wiki/Dhimmi"
+      }
+    ]
+  },
+  {
+    "id": "carte-piri-reis",
+    "name": "La carte de Piri Reis",
+    "year": 1513,
+    "place": "Gallipoli (Gelibolu)",
+    "at": [
+      26.67,
+      40.41
+    ],
+    "inventor": "Piri Reis, amiral et cartographe",
+    "category": "navigation",
+    "description": "En 1513, le marin Piri Reis dessine à Gallipoli une carte du monde sur parchemin, dont ne subsiste qu’un fragment, redécouvert en 1929 au palais de Topkapı. Il cite parmi ses sources des cartes portugaises et une carte de Christophe Colomb. Il n’invente pas la cartographie des Amériques, mais conserve une vision précoce de l’Atlantique. Les théories sur une Antarctique ancienne sont sans fondement. Son Kitab-ı Bahriye (1521) décrit les ports de la Méditerranée.",
+    "impact": "Le document montre que les Ottomans suivaient de près les découvertes européennes et la navigation en haute mer.",
+    "sources": [
+      {
+        "label": "Carte de Piri Reis",
+        "url": "https://fr.wikipedia.org/wiki/Carte_de_Piri_Reis"
+      },
+      {
+        "label": "Piri Reis",
+        "url": "https://fr.wikipedia.org/wiki/Piri_Reis"
+      }
+    ]
+  },
+  {
+    "id": "sinan-suleymaniye",
+    "name": "La Süleymaniye et le style de Sinan",
+    "year": 1557,
+    "place": "Istanbul",
+    "at": [
+      28.964,
+      41.016
+    ],
+    "inventor": "Mimar Sinan",
+    "category": "architecture",
+    "description": "Achevée en 1557 pour Soliman, la mosquée Süleymaniye est la grande réalisation de Sinan. Une coupole centrale, flanquée de demi-coupoles, y répond à Sainte-Sophie, que Sinan connaissait bien et qu’il cherchait à égaler. Le style n’est pas né de rien : il continue des essais plus anciens. Sinan en fait une architecture classique, avec des minarets effilés, de l’espace intérieur dégagé et de la lumière naturelle, entourée d’écoles, d’un hôpital et de bains.",
+    "impact": "Ce modèle de mosquée à coupole centrale marque l’architecture ottomane jusqu’au XIXe siècle, de Budapest à Alger.",
+    "sources": [
+      {
+        "label": "Mosquée Süleymaniye",
+        "url": "https://fr.wikipedia.org/wiki/Mosquée_Süleymaniye"
+      },
+      {
+        "label": "Mimar Sinan",
+        "url": "https://fr.wikipedia.org/wiki/Mimar_Sinan"
+      }
+    ]
+  },
+  {
+    "id": "cafe-istanbul",
+    "name": "Le café et les cafés d’Istanbul",
+    "year": 1555,
+    "approx": true,
+    "place": "Istanbul",
+    "at": [
+      28.97,
+      41.02
+    ],
+    "inventor": "Origine yéménite, diffusé par les Ottomans",
+    "category": "technique",
+    "description": "Le café est consommé depuis le XVe siècle au Yémen, dans des cercles soufis. Il n’est pas une invention ottomane, mais Istanbul accueille ses premiers cafés vers 1555, selon l’historien Peçevi. Ces lieux sont des espaces de conversation, de jeux, de poésie et de rumeurs, et inquiètent parfois les autorités : Murad IV les interdit un temps vers 1633. Des marchands vénitiens et français importent ensuite le café et l’idée de ses salons en Europe.",
+    "impact": "Une nouvelle sociabilité urbaine apparaît, puis passe en Europe aux XVIIe et XVIIIe siècles.",
+    "sources": [
+      {
+        "label": "Café (boisson)",
+        "url": "https://fr.wikipedia.org/wiki/Café"
+      },
+      {
+        "label": "Café (lieu)",
+        "url": "https://fr.wikipedia.org/wiki/Café"
+      }
+    ]
+  },
+  {
+    "id": "observatoire-taqi-al-din",
+    "name": "L’observatoire de Taqi al-Din",
+    "year": 1577,
+    "place": "Istanbul",
+    "at": [
+      28.99,
+      41.04
+    ],
+    "inventor": "Taqi al-Din",
+    "category": "science",
+    "description": "Construit en 1577 sur ordre du sultan Murad III pour l’astronome Taqi al-Din, cet observatoire de Galata disposait d’instruments précis et d’horloges mécaniques. Il n’était pas le premier du monde islamique : Maragha, au XIIIe siècle, et Samarcande au XVe lui servaient de modèles. Il est détruit en 1580, après la peste et la polémique autour d’une comète. Les raisons exactes sont discutées entre influence religieuse, rivalités de cour et coût.",
+    "impact": "Un moment de grande science, mais court. Les astronomes ottomans suivront ensuite l’astronomie européenne.",
+    "sources": [
+      {
+        "label": "Taqi al-Din",
+        "url": "https://fr.wikipedia.org/wiki/Taqi_al-Din"
+      },
+      {
+        "label": "Observatoire de Taqi al-Din",
+        "url": "https://fr.wikipedia.org/wiki/Observatoire_de_Constantinople"
+      }
+    ]
+  },
+  {
+    "id": "variolisation",
+    "name": "La variolisation observée à Istanbul",
+    "year": 1717,
+    "place": "Istanbul",
+    "at": [
+      28.98,
+      41.03
+    ],
+    "inventor": "Pratique populaire, rapportée par Lady Montagu",
+    "category": "medecine",
+    "description": "En 1717, l’épouse de l’ambassadeur britannique, Lady Mary Wortley Montagu, décrit dans une lettre la variolisation : une petite quantité de pus de variole est introduite sous la peau pour provoquer une forme bénigne. Ce n’est pas une invention ottomane : la pratique est ancienne en Asie, en Afrique et dans les campagnes. Elle la fait connaître en Angleterre, où elle fait inoculer ses enfants. Cette méthode risquée prépare le vaccin de Jenner, en 1796.",
+    "impact": "Un savoir populaire de l’Orient entre dans la médecine européenne, bien avant la vaccination moderne.",
+    "sources": [
+      {
+        "label": "Variolisation",
+        "url": "https://fr.wikipedia.org/wiki/Variolisation"
+      },
+      {
+        "label": "Mary Wortley Montagu",
+        "url": "https://fr.wikipedia.org/wiki/Mary_Wortley_Montagu"
+      }
+    ]
+  },
+  {
+    "id": "imprimerie-muteferrika",
+    "name": "L’imprimerie d’Ibrahim Müteferrika",
+    "year": 1727,
+    "place": "Istanbul",
+    "at": [
+      28.97,
+      41.01
+    ],
+    "inventor": "Ibrahim Müteferrika",
+    "category": "ecriture",
+    "description": "En 1727, Ibrahim Müteferrika, un converti d’origine hongroise, obtient du sultan Ahmed III et d’un avis religieux l’autorisation d’imprimer en caractères arabes, hors textes sacrés. Il publie dès 1729 un dictionnaire, puis des ouvrages d’histoire et de géographie, une dizaine de titres en tout. L’impression existait déjà à Istanbul : des juifs, des Grecs et des Arméniens y imprimaient dans leurs langues depuis des siècles. L’idée d’un « retard » des Ottomans est donc à nuancer.",
+    "impact": "Ses tirages restent modestes, mais l’imprimerie turque s’installe durablement au XIXe siècle.",
+    "sources": [
+      {
+        "label": "Ibrahim Müteferrika",
+        "url": "https://fr.wikipedia.org/wiki/Ibrahim_Müteferrika"
+      },
+      {
+        "label": "Imprimerie",
+        "url": "https://fr.wikipedia.org/wiki/Imprimerie"
+      }
+    ]
+  },
+  {
+    "id": "mecelle",
+    "name": "Le Mecelle, premier code civil",
+    "year": 1876,
+    "place": "Istanbul",
+    "at": [
+      28.99,
+      41.01
+    ],
+    "inventor": "Commission dirigée par Ahmed Cevdet Pacha",
+    "category": "droit",
+    "description": "Rédigé entre 1869 et 1876, le Mecelle rassemble en 1851 articles le droit civil de l’école hanafite : contrats, ventes, biens, procédures. Sa nouveauté est la forme, celle d’un code moderne rédigé en langage clair, proche des codes européens. Le fond reste islamique et n’est pas un emprunt direct au droit français. Il fut appliqué dans l’Empire, puis dans plusieurs États successeurs, et abrogé en Turquie en 1926.",
+    "impact": "Une première tentative de codifier en code moderne un droit religieux, avec des effets jusqu’au XXe siècle.",
+    "sources": [
+      {
+        "label": "Mecelle",
+        "url": "https://fr.wikipedia.org/wiki/Mecelle"
+      },
+      {
+        "label": "Ahmed Cevdet Pacha",
+        "url": "https://fr.wikipedia.org/wiki/Ahmed_Cevdet_Pacha"
+      }
+    ]
+  },
+  {
+    "id": "chemin-de-fer-du-hedjaz",
+    "name": "Le chemin de fer du Hedjaz",
+    "year": 1908,
+    "place": "Damas",
+    "at": [
+      36.29,
+      33.51
+    ],
+    "inventor": "Abdülhamid II, ingénieurs allemands et turcs",
+    "category": "technique",
+    "description": "Ouvert en 1908, le chemin de fer du Hedjaz relie Damas à Médine sur environ 1 300 kilomètres. Commencé en 1900, il est financé en grande partie par des souscriptions de musulmans de tous pays, ce qui sert la politique panislamique d’Abdülhamid II, et construit avec l’aide d’ingénieurs allemands. Il raccourcit le pèlerinage de quarante jours à quatre ou cinq. La ligne est sabotée pendant la révolte arabe de 1916-1918 et n’a jamais atteint La Mecque.",
+    "impact": "Il montre l’effort de modernisation de l’Empire. Sa destruction est devenue un symbole de la guerre.",
+    "sources": [
+      {
+        "label": "Chemin de fer du Hedjaz",
+        "url": "https://fr.wikipedia.org/wiki/Chemin_de_fer_du_Hedjaz"
+      },
+      {
+        "label": "Abdülhamid II",
+        "url": "https://fr.wikipedia.org/wiki/Abdülhamid_II"
+      }
+    ]
+  }
+]

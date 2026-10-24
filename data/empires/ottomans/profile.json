@@ -1,0 +1,733 @@
+{
+  "empire": "ottomans",
+  "periods": [
+    {
+      "id": "essor",
+      "name": "Des beys d’Anatolie à Constantinople",
+      "start": 1299,
+      "end": 1453,
+      "population": {
+        "total": {
+          "value": 5000000,
+          "low": 3500000,
+          "high": 6500000,
+          "year": 1450,
+          "note": "Ordre de grandeur : aucun recensement fiable avant la fin du XVe siècle.",
+          "source": {
+            "label": "Wikipédia : Empire ottoman",
+            "url": "https://fr.wikipedia.org/wiki/Empire_ottoman"
+          }
+        },
+        "cities": [
+          {
+            "name": "Andrinople (Edirne)",
+            "population": {
+              "value": 40000,
+              "low": 25000,
+              "high": 60000,
+              "year": 1450,
+              "note": "Capitale de 1365 à 1453 ; estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Edirne",
+                "url": "https://fr.wikipedia.org/wiki/Edirne"
+              }
+            }
+          },
+          {
+            "name": "Brousse (Bursa)",
+            "population": {
+              "value": 35000,
+              "low": 20000,
+              "high": 50000,
+              "year": 1450,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Bursa",
+                "url": "https://fr.wikipedia.org/wiki/Bursa"
+              }
+            }
+          },
+          {
+            "name": "Constantinople",
+            "population": {
+              "value": 45000,
+              "low": 30000,
+              "high": 70000,
+              "year": 1453,
+              "note": "Ville byzantine très réduite avant la conquête.",
+              "source": {
+                "label": "Wikipédia : Siège de Constantinople (1453)",
+                "url": "https://fr.wikipedia.org/wiki/Siège_de_Constantinople_(1453)"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Soie de Brousse",
+          "Blé de Thrace et d’Anatolie",
+          "Moutons et chevaux",
+          "Mines d’argent des Balkans"
+        ],
+        "currency": "Akçe d’argent, frappé dès le règne d’Orhan ; monnaies d’or vénitiennes et génoises dans le commerce.",
+        "taxation": "Dîme sur les récoltes, impôts en nature, capitation (cizye) pour les non-musulmans, butin des campagnes.",
+        "trade": "Brousse, terminus de la soie persane ; les marchands génois et vénitiens commercent par les ports."
+      },
+      "army": {
+        "size": {
+          "value": 80000,
+          "low": 50000,
+          "high": 160000,
+          "year": 1453,
+          "note": "Armée du siège de Constantinople ; les chiffres des chroniques varient beaucoup.",
+          "source": {
+            "label": "Wikipédia : Siège de Constantinople (1453)",
+            "url": "https://fr.wikipedia.org/wiki/Siège_de_Constantinople_(1453)"
+          }
+        },
+        "composition": "Cavaliers de timar, fantassins, janissaires, troupes irrégulières (akıncı) et artillerie lourde en 1453.",
+        "recruitment": "Cavaliers payés par des terres (timar), puis levées d’enfants chrétiens (devşirme) à partir de la fin du XIVe siècle.",
+        "famousUnits": [
+          "Janissaires",
+          "Akıncı (cavaliers raiders)",
+          "Sipahis (cavalerie à timar)"
+        ],
+        "innovations": [
+          "Corps d’infanterie permanents",
+          "Grands canons de siège",
+          "Pontons et pose de ponts sur les détroits"
+        ]
+      },
+      "politics": {
+        "regime": "Principauté puis sultanat guerrier, dont la légitimité vient de la guerre sainte et de la dynastie d’Osman.",
+        "head": "Sultan (Osman, Orhan, Murad Ier, Bayezid Ier, Mehmed Ier, Murad II).",
+        "succession": "Au sein de la famille d’Osman ; luttes entre frères (interrègne de 1402-1413), fratricide pratiqué.",
+        "institutions": "Divan des vizirs, juges (kadis), cavaliers de timar, premiers janissaires.",
+        "administration": "Beys des marches, beylerbeys de Roumélie et d’Anatolie, kadis dans les villes.",
+        "law": "Loi islamique (charia) et édits du sultan (kanun)."
+      },
+      "society": {
+        "religions": [
+          "Islam sunnite",
+          "Christianisme orthodoxe",
+          "Judaïsme",
+          "Soufisme (ordres derviches)"
+        ],
+        "languages": [
+          "Turc ottoman",
+          "Grec",
+          "Slaves du Sud",
+          "Arménien"
+        ],
+        "structure": "Guerriers (ghazis), tribus turcomanes, paysans, artisans ; chrétiens payant la capitation.",
+        "women": "Épouses et concubines à la cour, avec des rôles politiques discrets ; femmes de la société rurale actives dans les travaux agricoles."
+      },
+      "culture": {
+        "inventions": [
+          "Architecture à coupole des premières mosquées",
+          "Grands canons d’Orban (1453)",
+          "Frappe de l’akçe"
+        ],
+        "works": [
+          "Mosquée Verte de Brousse (1419)",
+          "Üç Şerefeli d’Andrinople (1447)",
+          "Poésie ottomane naissante"
+        ],
+        "scholars": [
+          "Şeyhoğlu",
+          "Ahmedi (poète)",
+          "Molla Fenari"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Chemins de caravane, ponts, caravansérails et fondations pieuses (vakıf) autour de Brousse et d’Andrinople."
+      },
+      "legacy": "En un siècle et demi, une principauté de frontière devient un État européen et asiatique ; la prise de Constantinople en 1453 marque son entrée dans le rang des grandes puissances."
+    },
+    {
+      "id": "apogee",
+      "name": "L’âge d’or, de Mehmed II à Soliman",
+      "start": 1453,
+      "end": 1566,
+      "population": {
+        "total": {
+          "value": 22000000,
+          "low": 16000000,
+          "high": 28000000,
+          "year": 1566,
+          "note": "Estimations reconstruites d’après les recensements fiscaux (defters), incomplets.",
+          "source": {
+            "label": "Wikipédia : Empire ottoman",
+            "url": "https://fr.wikipedia.org/wiki/Empire_ottoman"
+          }
+        },
+        "cities": [
+          {
+            "name": "Istanbul",
+            "population": {
+              "value": 500000,
+              "low": 400000,
+              "high": 700000,
+              "year": 1550,
+              "note": "Avec Üsküdar et Galata ; l’une des plus grandes villes du monde.",
+              "source": {
+                "label": "Wikipédia : Istanbul",
+                "url": "https://fr.wikipedia.org/wiki/Istanbul"
+              }
+            }
+          },
+          {
+            "name": "Le Caire",
+            "population": {
+              "value": 250000,
+              "low": 150000,
+              "high": 300000,
+              "year": 1550,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Le Caire",
+                "url": "https://fr.wikipedia.org/wiki/Le_Caire"
+              }
+            }
+          },
+          {
+            "name": "Andrinople (Edirne)",
+            "population": {
+              "value": 50000,
+              "low": 30000,
+              "high": 80000,
+              "year": 1550,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Edirne",
+                "url": "https://fr.wikipedia.org/wiki/Edirne"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Blé d’Égypte",
+          "Soie et coton",
+          "Café du Yémen (à partir du XVIe siècle)",
+          "Mines des Balkans"
+        ],
+        "currency": "Akçe d’argent, sultani d’or ; dévaluation à la fin du XVIe siècle.",
+        "taxation": "Dîme, impôts fonciers, cizye, douanes ; recensements fiscaux réguliers.",
+        "trade": "Contrôle des routes entre l’Orient et la Méditerranée ; capitulations accordées à Venise et à la France."
+      },
+      "army": {
+        "size": {
+          "value": 70000,
+          "low": 50000,
+          "high": 100000,
+          "year": 1526,
+          "note": "Armée de campagne à Mohács ; l’effectif au siège de Vienne (1529) est discuté.",
+          "source": {
+            "label": "Wikipédia : Bataille de Mohács (1526)",
+            "url": "https://fr.wikipedia.org/wiki/Bataille_de_Mohács_(1526)"
+          }
+        },
+        "composition": "Janissaires, cavalerie des sipahis, artillerie, flotte de galères ; auxiliaires tatars et vassaux.",
+        "recruitment": "Devşirme, levées de timars, soldes pour le corps permanent ; marins recrutés parmi les corsaires et les Grecs.",
+        "famousUnits": [
+          "Janissaires",
+          "Sipahis",
+          "Capitan-pacha et flotte de Barberousse",
+          "Artillerie impériale"
+        ],
+        "innovations": [
+          "Artillerie de campagne et mousquets",
+          "Galères armées de canons",
+          "Logistique de campagne à longue distance"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie absolue de droit divin musulman, avec le sultan à la tête d’un appareil d’État centralisé.",
+        "head": "Mehmed II, Bayezid II, Selim Ier, Soliman le Magnifique.",
+        "succession": "Dans la dynastie d’Osman ; le fratricide est justifié par la loi de Mehmed II.",
+        "institutions": "Divan impérial, grand vizir, chef du corps des oulémas (şeyhülislam), palais de Topkapı.",
+        "administration": "Provinces (eyalets) dirigées par des beylerbeys, sandjaks, cadis ; Égypte et Arabie intégrées en 1517.",
+        "law": "Charia et lois impériales (kanun) de Mehmed II et de Soliman, le « Législateur »."
+      },
+      "society": {
+        "religions": [
+          "Islam sunnite",
+          "Christianisme orthodoxe",
+          "Judaïsme (réfugiés d’Espagne dès 1492)",
+          "Chiisme minoritaire"
+        ],
+        "languages": [
+          "Turc ottoman",
+          "Arabe",
+          "Grec",
+          "Persan littéraire",
+          "Slaves du Sud"
+        ],
+        "structure": "Classe dirigeante (askeri), sujets imposables (reaya) ; communautés religieuses avec leurs chefs.",
+        "women": "Femmes de la dynastie influentes (Hürrem, mère du sultan) ; dans les tribunaux, les femmes pouvaient posséder et plaider."
+      },
+      "culture": {
+        "inventions": [
+          "Style classique de Sinan",
+          "Miniature ottomane",
+          "Cartographie de Piri Reis (1513)"
+        ],
+        "works": [
+          "Palais de Topkapı",
+          "Mosquée Süleymaniye (1557)",
+          "Divan de Bâkî"
+        ],
+        "scholars": [
+          "Mimar Sinan",
+          "Piri Reis",
+          "Bâkî",
+          "Ebussuud Efendi"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Routes impériales, caravansérails, ponts monumentaux, aqueducs et fondations pieuses, notamment sous Sinan."
+      },
+      "legacy": "Du Danube au Yémen, un empire de trois continents se dote d’institutions durables et d’une grande architecture ; Soliman reste le symbole de cet âge."
+    },
+    {
+      "id": "puissance",
+      "name": "Une puissance contestée",
+      "start": 1566,
+      "end": 1699,
+      "population": {
+        "total": {
+          "value": 30000000,
+          "low": 22000000,
+          "high": 35000000,
+          "year": 1600,
+          "note": "Estimation reconstruite ; croissance forte au XVIe siècle, puis crises et révoltes.",
+          "source": {
+            "label": "Wikipédia : Empire ottoman",
+            "url": "https://fr.wikipedia.org/wiki/Empire_ottoman"
+          }
+        },
+        "cities": [
+          {
+            "name": "Istanbul",
+            "population": {
+              "value": 600000,
+              "low": 400000,
+              "high": 800000,
+              "year": 1600,
+              "note": "Chiffres très disputés ; la ville reste l’une des plus peuplées d’Europe.",
+              "source": {
+                "label": "Wikipédia : Istanbul",
+                "url": "https://fr.wikipedia.org/wiki/Istanbul"
+              }
+            }
+          },
+          {
+            "name": "Le Caire",
+            "population": {
+              "value": 200000,
+              "low": 150000,
+              "high": 300000,
+              "year": 1650,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Le Caire",
+                "url": "https://fr.wikipedia.org/wiki/Le_Caire"
+              }
+            }
+          },
+          {
+            "name": "Alep",
+            "population": {
+              "value": 100000,
+              "low": 60000,
+              "high": 120000,
+              "year": 1600,
+              "note": "Grand centre du commerce de la soie.",
+              "source": {
+                "label": "Wikipédia : Alep",
+                "url": "https://fr.wikipedia.org/wiki/Alep"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Blé",
+          "Coton et soie",
+          "Café du Yémen",
+          "Cuivre des Balkans"
+        ],
+        "currency": "Akçe dévalué, puis kuruş d’argent ; afflux d’argent américain et inflation depuis la fin du XVIe siècle.",
+        "taxation": "Les impôts en argent remplacent les timars ; fermage des impôts (iltizam, puis malikâne en 1695).",
+        "trade": "Concurrence européenne sur les routes atlantiques ; Smyrne et Alep restent de grands marchés du Levant."
+      },
+      "army": {
+        "size": {
+          "value": 120000,
+          "low": 90000,
+          "high": 170000,
+          "year": 1683,
+          "note": "Armée envoyée devant Vienne, avec auxiliaires ; les chiffres varient selon les sources.",
+          "source": {
+            "label": "Wikipédia : Bataille de Vienne (1683)",
+            "url": "https://fr.wikipedia.org/wiki/Bataille_de_Vienne"
+          }
+        },
+        "composition": "Janissaires toujours plus nombreux, cavalerie en déclin, mercenaires (sekban) payés en argent, artillerie.",
+        "recruitment": "Le devşirme s’éteint au XVIIe siècle ; les janissaires deviennent héréditaires, les soldats irréguliers se multiplient.",
+        "famousUnits": [
+          "Janissaires",
+          "Sekban (mercenaires)",
+          "Artillerie de campagne",
+          "Flotte de galères"
+        ],
+        "innovations": [
+          "Armes à feu individuelles généralisées",
+          "Fortifications à la bastionnée",
+          "Armées permanentes payées en argent"
+        ]
+      },
+      "politics": {
+        "regime": "Sultanat dont le pouvoir réel passe souvent aux grands vizirs et aux factions de cour.",
+        "head": "Sultans de Murad III à Mustafa II, dont Mehmed IV (1648-1687).",
+        "succession": "Passage progressif du fratricide à la réclusion des princes (le « kafes ») ; succession à l’aîné de la famille.",
+        "institutions": "Grand vizir, harem influent, oulémas, janissaires ; les Köprülü dirigent l’État de 1656 à 1703.",
+        "administration": "Provinces confiées à des gouverneurs et fermiers d’impôts ; notables locaux (ayan) de plus en plus forts.",
+        "law": "Charia et kanun ; rôle croissant du şeyhülislam."
+      },
+      "society": {
+        "religions": [
+          "Islam sunnite",
+          "Christianisme orthodoxe",
+          "Judaïsme",
+          "Chiisme alévi"
+        ],
+        "languages": [
+          "Turc ottoman",
+          "Arabe",
+          "Grec",
+          "Persan",
+          "Arménien"
+        ],
+        "structure": "Montée des notables provinciaux et des janissaires installés dans les villes ; révoltes paysannes (celali).",
+        "women": "Les mères de sultans dirigent parfois l’État (Kösem) ; les citadines pouvaient recourir aux tribunaux."
+      },
+      "culture": {
+        "inventions": [
+          "Cafés d’Istanbul",
+          "Observatoire de Taqi al-Din (1577)",
+          "Miniature ottomane tardive"
+        ],
+        "works": [
+          "Mosquée Bleue (1616)",
+          "Selimiye d’Andrinople (1575)",
+          "Récits de voyage d’Evliya Çelebi"
+        ],
+        "scholars": [
+          "Evliya Çelebi",
+          "Katip Çelebi",
+          "Taqi al-Din"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Entretien des routes impériales et des ponts ; l’effort de construction ralentit après Sinan, mais Istanbul reçoit de nouvelles grandes mosquées."
+      },
+      "legacy": "Le pouvoir central se transforme plus qu’il ne s’écroule : des crises, mais aussi une adaptation durable. La défaite de Vienne en 1683 ouvre pourtant le reflux en Hongrie."
+    },
+    {
+      "id": "recul",
+      "name": "Le long recul",
+      "start": 1699,
+      "end": 1839,
+      "population": {
+        "total": {
+          "value": 25000000,
+          "low": 20000000,
+          "high": 32000000,
+          "year": 1800,
+          "note": "Estimation reconstruite ; pertes territoriales et épidémies compensent la croissance.",
+          "source": {
+            "label": "Wikipédia : Empire ottoman",
+            "url": "https://fr.wikipedia.org/wiki/Empire_ottoman"
+          }
+        },
+        "cities": [
+          {
+            "name": "Istanbul",
+            "population": {
+              "value": 500000,
+              "low": 400000,
+              "high": 700000,
+              "year": 1800,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Istanbul",
+                "url": "https://fr.wikipedia.org/wiki/Istanbul"
+              }
+            }
+          },
+          {
+            "name": "Le Caire",
+            "population": {
+              "value": 250000,
+              "low": 200000,
+              "high": 300000,
+              "year": 1800,
+              "note": "Avant l’expédition française de 1798 ; estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Le Caire",
+                "url": "https://fr.wikipedia.org/wiki/Le_Caire"
+              }
+            }
+          },
+          {
+            "name": "Smyrne",
+            "population": {
+              "value": 100000,
+              "low": 80000,
+              "high": 130000,
+              "year": 1800,
+              "note": "Grand port de commerce avec l’Europe.",
+              "source": {
+                "label": "Wikipédia : Izmir",
+                "url": "https://fr.wikipedia.org/wiki/Izmir"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Coton",
+          "Soie",
+          "Blé de la mer Noire",
+          "Tabac et raisins secs"
+        ],
+        "currency": "Kuruş d’argent, souvent altéré ; dévaluations répétées.",
+        "taxation": "Fermage des impôts à vie (malikâne) ; à partir de 1826, réforme et centralisation fiscale.",
+        "trade": "Traités de libre-échange (Balta Limanı, 1838) ; ouverture aux produits européens, déficit commercial."
+      },
+      "army": {
+        "size": {
+          "value": 40000,
+          "low": 20000,
+          "high": 100000,
+          "year": 1826,
+          "note": "Effectif réel des janissaires ; les listes de solde (100 000 ou plus) comptent beaucoup de soldats fictifs.",
+          "source": {
+            "label": "Wikipédia : Janissaires",
+            "url": "https://fr.wikipedia.org/wiki/Janissaires"
+          }
+        },
+        "composition": "Janissaires affaiblis, puis armée nouvelle (Nizam-ı Cedid, 1793 ; Asakir-i Mansure, 1826) formée à l’européenne.",
+        "recruitment": "Janissaires héréditaires ; à partir de 1826, conscription et instructeurs étrangers.",
+        "famousUnits": [
+          "Nizam-ı Cedid",
+          "Asakir-i Mansure-i Muhammediye",
+          "Corps des canonniers"
+        ],
+        "innovations": [
+          "Écoles militaires d’ingénieurs",
+          "Instruction à l’européenne",
+          "Flotte à voiles de ligne"
+        ]
+      },
+      "politics": {
+        "regime": "Sultanat affaibli par les notables provinciaux (ayan) et les guerres, puis recentré par Mahmud II.",
+        "head": "Sultans comme Ahmed III, Selim III, Mahmud II.",
+        "succession": "À l’aîné de la dynastie ; plusieurs sultans déposés (Ahmed III, Selim III).",
+        "institutions": "Grand vizir, Sublime Porte, nouveaux ministères créés par Mahmud II à partir de 1836.",
+        "administration": "Gouverneurs locaux quasi autonomes (Égypte de Méhémet Ali, Balkans) ; recentralisation après 1826.",
+        "law": "Charia et kanun ; édits impériaux."
+      },
+      "society": {
+        "religions": [
+          "Islam sunnite",
+          "Christianisme orthodoxe",
+          "Arménien apostolique",
+          "Judaïsme"
+        ],
+        "languages": [
+          "Turc ottoman",
+          "Arabe",
+          "Grec",
+          "Serbe, bulgare",
+          "Arménien"
+        ],
+        "structure": "Montée des marchands non musulmans et des notables ; naissance des mouvements nationaux serbe et grec.",
+        "women": "La vie des femmes dépend de leur milieu ; la loi leur reconnaît des droits de propriété et de recours aux tribunaux."
+      },
+      "culture": {
+        "inventions": [
+          "Imprimerie arabe d’Ibrahim Müteferrika (1727)",
+          "Variolisation, observée par Lady Montagu (1717)",
+          "Ère des tulipes"
+        ],
+        "works": [
+          "Palais de Topkapı rénové",
+          "Fontaine d’Ahmed III",
+          "Mosquée Nuruosmaniye (1755)"
+        ],
+        "scholars": [
+          "Ibrahim Müteferrika",
+          "Nedim",
+          "Şânizâde Ataullah"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Peu de grands chantiers ; le réseau routier est ancien. Mahmud II introduit les quarantaines, la poste et le premier journal officiel."
+      },
+      "legacy": "L’Empire perd ses places fortes en Europe, tandis que des dirigeants tentent des réformes d’abord militaires. Le sultan Mahmud II prépare les Tanzimat."
+    },
+    {
+      "id": "reformes-chute",
+      "name": "Réformes et chute",
+      "start": 1839,
+      "end": 1922,
+      "population": {
+        "total": {
+          "value": 23000000,
+          "low": 18000000,
+          "high": 26000000,
+          "year": 1914,
+          "note": "Estimation très disputée selon les territoires pris en compte et les recensements, surtout pour les minorités.",
+          "source": {
+            "label": "Wikipédia : Empire ottoman",
+            "url": "https://fr.wikipedia.org/wiki/Empire_ottoman"
+          }
+        },
+        "cities": [
+          {
+            "name": "Istanbul",
+            "population": {
+              "value": 900000,
+              "low": 800000,
+              "high": 1100000,
+              "year": 1900,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Istanbul",
+                "url": "https://fr.wikipedia.org/wiki/Istanbul"
+              }
+            }
+          },
+          {
+            "name": "Smyrne",
+            "population": {
+              "value": 200000,
+              "low": 150000,
+              "high": 250000,
+              "year": 1914,
+              "note": "Grand port, ville cosmopolite.",
+              "source": {
+                "label": "Wikipédia : Izmir",
+                "url": "https://fr.wikipedia.org/wiki/Izmir"
+              }
+            }
+          },
+          {
+            "name": "Bagdad",
+            "population": {
+              "value": 150000,
+              "low": 100000,
+              "high": 200000,
+              "year": 1914,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Bagdad",
+                "url": "https://fr.wikipedia.org/wiki/Bagdad"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Coton",
+          "Tabac",
+          "Soie",
+          "Chrome et mines de Turquie",
+          "Pétrole de Mossoul (enjeu avant 1918)"
+        ],
+        "currency": "Livre ottomane d’or (lira), papier-monnaie depuis 1840 ; banque ottomane créée en 1856.",
+        "taxation": "Impôts modernisés, mais dette extérieure dès 1854 ; faillite de 1875 et Administration de la dette publique (1881).",
+        "trade": "Chemins de fer financés par l’Europe (Anatolie, Bagdad, Hedjaz) ; capitulations et dépendance économique."
+      },
+      "army": {
+        "size": {
+          "value": 800000,
+          "low": 600000,
+          "high": 900000,
+          "year": 1915,
+          "note": "Effectif mobilisé au plus haut de la guerre ; beaucoup de pertes dues à la maladie et à la désertion.",
+          "source": {
+            "label": "Wikipédia : Empire ottoman pendant la Première Guerre mondiale",
+            "url": "https://fr.wikipedia.org/wiki/Bataille_des_Dardanelles"
+          }
+        },
+        "composition": "Armée régulière conscrite, mission allemande à partir de 1882, cavalerie kurde (hamidiye), flotte de cuirassés.",
+        "recruitment": "Conscription (1869, 1909), exemptions possibles ; les non-musulmans y sont admis depuis 1909.",
+        "famousUnits": [
+          "Armée du Caucase",
+          "Défenseurs de Gallipoli (1915)",
+          "Cavalerie hamidiye"
+        ],
+        "innovations": [
+          "Chemin de fer militaire du Hedjaz",
+          "Télégraphe",
+          "Instruction de style allemand"
+        ]
+      },
+      "politics": {
+        "regime": "Réformes des Tanzimat (1839-1876), monarchie constitutionnelle brève (1876-1878), autocratie hamidienne, puis régime jeune-turc après 1908.",
+        "head": "Sultans d’Abdülmecid à Mehmed VI ; dès 1913, les Jeunes-Turcs dominent le gouvernement.",
+        "succession": "Transmission au plus âgé de la dynastie ; Abdülhamid II déposé en 1909.",
+        "institutions": "Conseil d’État, ministères, Parlement (1876, 1908), partis, presse.",
+        "administration": "Provinces (vilayets) en 1864 ; centralisation et réformes municipales.",
+        "law": "Code pénal et commercial d’inspiration française ; Mecelle (1876), tribunaux séculiers à côté des tribunaux religieux."
+      },
+      "society": {
+        "religions": [
+          "Islam sunnite",
+          "Christianismes orthodoxe et arménien",
+          "Judaïsme",
+          "Chiisme, alévisme, druzes"
+        ],
+        "languages": [
+          "Turc ottoman",
+          "Arabe",
+          "Grec",
+          "Arménien",
+          "Kurde"
+        ],
+        "structure": "Égalité juridique proclamée en 1839 et 1856 ; montée des nationalismes et déportations massives (1915).",
+        "women": "Premières écoles pour filles, associations féminines dès 1908 ; débats sur le voile et le droit de la famille."
+      },
+      "culture": {
+        "inventions": [
+          "Mecelle (code civil, 1876)",
+          "Télégraphe et chemin de fer du Hedjaz (1908)",
+          "Presse moderne"
+        ],
+        "works": [
+          "Palais de Dolmabahçe (1856)",
+          "Musée archéologique d’Istanbul",
+          "Roman ottoman et théâtre"
+        ],
+        "scholars": [
+          "Namık Kemal",
+          "Osman Hamdi Bey",
+          "Ahmed Cevdet Pacha"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Chemins de fer vers Bagdad et le Hedjaz, ports, télégraphe ; réseau très inégal selon les provinces."
+      },
+      "legacy": "Vaincu en 1918, l’Empire disparaît le 1er novembre 1922, lorsque l’Assemblée d’Ankara abolit le sultanat. La République de Turquie naît en 1923, avec une nouvelle nation."
+    }
+  ]
+}

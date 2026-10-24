@@ -1,0 +1,361 @@
+[
+  {
+    "id": "osman-ier",
+    "name": "Osman Ier",
+    "archetype": "sultan",
+    "faction": "ottomans",
+    "born": 1258,
+    "died": 1326,
+    "title": "Fondateur éponyme de la dynastie ottomane",
+    "bio": "Osman est un chef turcoman de la marche de Bithynie, à la frontière de l’Empire byzantin, fils d’Ertuğrul selon la tradition. Vers 1299, date conventionnelle de la fondation de l’État, il dirige une petite principauté de guerriers (les ghazis) et de pasteurs, qui profite de l’affaiblissement des Seldjoukides de Rum et des Mongols d’Anatolie. Sa victoire sur les Byzantins à Bapheus en 1301 attire de nombreux émigrants vers ses terres. Il encercle Nicée et Brousse sans pouvoir les prendre. Nous le connaissons mal : les chroniques ottomanes, comme la légende de son rêve de l’arbre universel, ont été écrites plus d’un siècle après sa mort et servent à légitimer la dynastie. Les dates de sa naissance et de sa mort sont approximatives. Brousse tombe en 1326, peu avant ou peu après sa mort, et son fils Orhan en fait la première capitale. Le nom « ottoman » vient de son nom, Osman.",
+    "keyFacts": [
+      "Vers 1299 : date conventionnelle de la fondation de la principauté",
+      "1301 : victoire sur les Byzantins à Bapheus",
+      "Vers 1326 : mort, l’année de la prise de Brousse par son fils Orhan",
+      "Les récits de ses exploits sont écrits au XVe siècle"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Osman Ier",
+        "url": "https://fr.wikipedia.org/wiki/Osman_Ier"
+      }
+    ]
+  },
+  {
+    "id": "orhan",
+    "name": "Orhan",
+    "archetype": "sultan",
+    "faction": "ottomans",
+    "born": 1281,
+    "died": 1362,
+    "title": "Bâtisseur de l’État et passage en Europe",
+    "bio": "Fils d’Osman, Orhan règne de 1326 à 1362 et transforme une bande de guerriers en un véritable État. Il installe sa capitale à Brousse, frappe les premières pièces d’argent (akçe) au nom de la dynastie et organise une administration avec des juges, des écoles religieuses et des fondations pieuses. Il prend Nicée en 1331 et Nicomédie en 1337, puis s’allie à l’empereur Jean VI Cantacuzène, dont il épouse la fille Théodora en 1346. Ses troupes interviennent dans les guerres civiles byzantines, puis s’installent en Europe : après le tremblement de terre de 1354, son fils Süleyman occupe Gallipoli, première base durable ottomane dans les Balkans. Les historiens discutent de l’origine des premières troupes régulières, que la tradition rattache à son règne, sans preuve certaine. Orhan meurt en 1362 ; son fils Murad Ier poursuit la conquête de la Thrace et prend Andrinople.",
+    "keyFacts": [
+      "1326 : prise de Brousse, devenue capitale",
+      "1331 : prise de Nicée",
+      "1346 : épouse Théodora, fille de Jean VI Cantacuzène",
+      "1354 : les Ottomans s’installent à Gallipoli, première base en Europe"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Orhan Ier",
+        "url": "https://fr.wikipedia.org/wiki/Orhan"
+      }
+    ]
+  },
+  {
+    "id": "bayezid-ier",
+    "name": "Bayezid Ier",
+    "archetype": "sultan",
+    "faction": "ottomans",
+    "born": 1360,
+    "died": 1403,
+    "title": "Sultan « Foudre », vaincu par Tamerlan",
+    "bio": "Surnommé Yıldırım, « la Foudre », Bayezid devient sultan en 1389, lors de la bataille de Kosovo où son père Murad Ier est tué. Il fait étrangler son frère Yakub pour s’assurer le trône, un usage qui deviendra une règle dynastique. Il achève la conquête de l’Anatolie, bat une grande croisade menée par le roi Sigismond de Hongrie à Nicopolis en 1396 et bloque Constantinople pendant des années. Mais son avancée en Anatolie orientale le met face à Tamerlan, qui rétablit les princes turcs qu’il avait chassés. À la bataille d’Ankara, le 28 juillet 1402, Bayezid est vaincu et capturé, abandonné par ses vassaux serbes et par des contingents turcs passés à l’ennemi. Il meurt en captivité en mars 1403. Ses fils se disputent l’héritage pendant onze ans, jusqu’à la victoire de Mehmed Ier. La légende de la cage de fer est douteuse.",
+    "keyFacts": [
+      "1389 : devient sultan à Kosovo après la mort de Murad Ier",
+      "1396 : écrase la croisade à Nicopolis",
+      "1402 : vaincu et capturé à Ankara par Tamerlan",
+      "1403 : mort en captivité"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Bayezid Ier",
+        "url": "https://fr.wikipedia.org/wiki/Bayezid_Ier"
+      }
+    ]
+  },
+  {
+    "id": "mehmed-ii",
+    "name": "Mehmed II",
+    "archetype": "sultan",
+    "faction": "ottomans",
+    "born": 1432,
+    "died": 1481,
+    "title": "Le Conquérant de Constantinople",
+    "bio": "Mehmed II monte une première fois sur le trône à douze ans, abdique, puis règne de 1451 à 1481. Il prépare le siège de Constantinople avec des canons géants fondus par l’ingénieur hongrois Orban, et prend la ville le 29 mai 1453 après cinquante-trois jours. Il en fait sa capitale, la repeuple, y fait élever le palais de Topkapı et rétablit un patriarche orthodoxe. Il conquiert la Serbie, la Morée, Trébizonde (1461), la Bosnie et une partie de l’Albanie, et met la main sur les côtes de la mer Noire. Il fait rédiger un recueil de lois (kanunname), dont l’article autorisant les fratricides pour préserver l’État est resté célèbre. Lettré curieux, il fait venir à sa cour le peintre vénitien Gentile Bellini. Son armée prend brièvement Otrante en 1480. Il meurt en 1481, peut-être empoisonné, en pleine campagne, ce qui n’est pas prouvé.",
+    "keyFacts": [
+      "1453 : prise de Constantinople",
+      "1461 : conquête de l’empire de Trébizonde",
+      "1463 : conquête de la Bosnie",
+      "1480 : débarquement ottoman à Otrante",
+      "1481 : mort pendant une campagne"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Mehmed II",
+        "url": "https://fr.wikipedia.org/wiki/Mehmed_II"
+      }
+    ]
+  },
+  {
+    "id": "selim-ier",
+    "name": "Selim Ier",
+    "archetype": "sultan",
+    "faction": "ottomans",
+    "born": 1470,
+    "died": 1520,
+    "title": "Conquérant de la Syrie et de l’Égypte",
+    "bio": "Selim Ier prend le pouvoir en 1512 en écartant son père Bayezid II avec l’appui des janissaires, puis élimine ses frères et ses neveux. Son règne, de huit ans seulement, double presque l’étendue de l’Empire. Il vainc le chah safavide Ismaïl Ier à Tchaldiran en 1514, grâce à ses canons et à ses fusils, et prend Tabriz et l’Anatolie orientale. Puis il se tourne contre les mamelouks, bat leur sultan à Marj Dabiq en 1516 et à Ridaniya en 1517, entre au Caire, et reçoit la protection des villes saintes de La Mecque et de Médine. L’histoire selon laquelle le dernier calife abbasside lui aurait alors transmis le califat est tardive et très douteuse. Il meurt en 1520, d’une maladie, laissant à son fils Soliman un empire arabe, des finances saines et une flotte à reconstruire. Les Ottomans le surnomment Yavuz, « le Terrible » ou « l’Inflexible ».",
+    "keyFacts": [
+      "1512 : devient sultan, écarte son père Bayezid II",
+      "1514 : victoire de Tchaldiran sur les Safavides",
+      "1516 : victoire de Marj Dabiq en Syrie",
+      "1517 : conquête du Caire, fin du sultanat mamelouk",
+      "1520 : mort, succession de Soliman"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Selim Ier",
+        "url": "https://fr.wikipedia.org/wiki/Selim_Ier"
+      }
+    ]
+  },
+  {
+    "id": "soliman-le-magnifique",
+    "name": "Soliman le Magnifique",
+    "archetype": "sultan",
+    "faction": "ottomans",
+    "born": 1494,
+    "died": 1566,
+    "title": "Sultan législateur au sommet de l’Empire",
+    "bio": "Soliman devient sultan en 1520 et règne quarante-six ans. Il prend Belgrade en 1521 et Rhodes en 1522, écrase les Hongrois à Mohács en 1526, assiège Vienne en 1529 sans pouvoir la prendre, conquiert l’Irak et Bagdad en 1534, puis étend l’Empire en Afrique du Nord par l’alliance avec Barberousse. Les Ottomans l’appellent Kanuni, « le Législateur » : il fait réviser les lois impériales et fonde une administration cohérente. Sous son règne, l’architecte Sinan construit mosquées, ponts et écoles. Il s’allie avec François Ier contre les Habsbourg, ce que reflètent les capitulations. Sa vie privée est marquée par l’influence de Hürrem Sultan et par l’exécution de son fils aîné Mustafa en 1553, puis de Bayezid en 1561. Il meurt en 1566 pendant le siège de Szigetvár ; sa mort est tenue secrète quelques semaines. Beaucoup d’historiens voient dans la fin de son règne le début d’un lent déclin, thèse aujourd’hui nuancée.",
+    "keyFacts": [
+      "1521 : prise de Belgrade",
+      "1526 : victoire de Mohács",
+      "1529 : premier siège de Vienne",
+      "1538 : victoire navale de Prévéza",
+      "1566 : mort devant Szigetvár"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Soliman le Magnifique",
+        "url": "https://fr.wikipedia.org/wiki/Soliman_le_Magnifique"
+      }
+    ]
+  },
+  {
+    "id": "hurrem-sultan",
+    "name": "Hürrem Sultan",
+    "archetype": "sultane",
+    "faction": "ottomans",
+    "born": 1502,
+    "died": 1558,
+    "title": "Épouse de Soliman, influente à la cour",
+    "bio": "Née vers 1502 dans l’actuelle Ukraine occidentale, d’origine ruthène selon la tradition, elle est capturée par des raids tatars et vendue à Istanbul. Elle entre au harem de Soliman, qui lui donne le nom de Hürrem, « la joyeuse ». Elle lui donne cinq fils et une fille, Mihrimah. Vers 1533 ou 1534, le sultan l’épouse, ce qui est inouï : un souverain ottoman n’épousait plus d’esclave depuis longtemps. Elle reste à Istanbul, entretient une correspondance avec le sultan en campagne et reçoit des ambassadeurs. Elle finance de grandes œuvres de bienfaisance, dont une mosquée, une école et un hôpital, construits par Sinan. Son rôle dans la chute du grand vizir Ibrahim Pacha et dans l’exécution du prince Mustafa en 1553 est discuté : les sources viennent surtout d’ambassadeurs vénitiens, hostiles ou mal informés. Elle meurt en 1558 et repose près de Soliman. Elle ouvre l’époque où les mères et les épouses pèsent sur le pouvoir.",
+    "keyFacts": [
+      "Vers 1502 : naissance en Ruthénie, selon la tradition",
+      "Vers 1533 : mariage avec Soliman",
+      "1553 : exécution du prince Mustafa, rôle débattu",
+      "1558 : mort à Istanbul"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Hürrem Sultan",
+        "url": "https://fr.wikipedia.org/wiki/Hürrem_Sultan"
+      }
+    ]
+  },
+  {
+    "id": "ibrahim-pacha",
+    "name": "Ibrahim Pacha",
+    "archetype": "grand-vizir",
+    "faction": "ottomans",
+    "born": 1493,
+    "died": 1536,
+    "title": "Grand vizir et favori de Soliman",
+    "bio": "Né vers 1493 près de Parga dans une famille chrétienne, Ibrahim est enlevé enfant, élevé au palais et devient le compagnon de Soliman. Dès l’accession du sultan, il monte vite : grand fauconnier, puis grand vizir en 1523. Il épouse la sœur du sultan, Hatice, en 1524, à grand renfort de fêtes. Il règle l’administration de l’Égypte en 1525, négocie avec Venise et la France, dirige l’armée à Mohács et pendant la campagne de Bagdad. Il reçoit une autorité immense, mais aussi des titres ambitieux, comme celui de séraskier. Il fait venir à Istanbul des œuvres d’art de Hongrie. Il est étranglé dans le palais de Topkapı le 15 mars 1536, sur ordre de Soliman. Les raisons exactes de sa disgrâce restent débattues : jalousie de cour, soupçons de favoritisme, rivalité avec Hürrem. Sa carrière montre comment des hommes d’origine esclave pouvaient diriger l’Empire.",
+    "keyFacts": [
+      "Vers 1493 : naissance près de Parga",
+      "1523 : nommé grand vizir",
+      "1524 : mariage avec Hatice, sœur du sultan",
+      "1536 : exécuté sur ordre de Soliman"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Ibrahim Pacha",
+        "url": "https://fr.wikipedia.org/wiki/Ibrahim_Pacha"
+      }
+    ]
+  },
+  {
+    "id": "barberousse",
+    "name": "Hayreddin Barberousse",
+    "archetype": "amiral",
+    "faction": "ottomans",
+    "born": 1475,
+    "died": 1546,
+    "title": "Corsaire devenu grand amiral",
+    "bio": "Né à Lesbos vers 1475, Hızır, dit Hayreddin, est le cadet de quatre frères corsaires, dont Oruç, surnommé Barberousse par les Européens. Ils s’emparent d’Alger en 1516. Après la mort d’Oruç, Hayreddin place Alger sous la suzeraineté de Selim Ier en 1519 et reçoit en retour des janissaires et de l’artillerie. Soliman l’appelle à Istanbul et le nomme capitan-pacha, chef de la flotte, en 1533. Il réorganise l’arsenal, prend Tunis en 1534 mais la perd en 1535 devant Charles Quint, puis bat la flotte de la Sainte-Ligue à Prévéza en 1538, ce qui assure aux Ottomans la maîtrise de la Méditerranée orientale pour plus de trente ans. En 1543, allié à François Ier, il attaque Nice et hiverne à Toulon, où la cathédrale est transformée en mosquée. Il meurt en 1546 à Istanbul. Son tombeau se dresse à Beşiktaş, face au Bosphore.",
+    "keyFacts": [
+      "1516 : prise d’Alger avec son frère Oruç",
+      "1519 : place Alger sous suzeraineté ottomane",
+      "1533 : nommé capitan-pacha",
+      "1538 : victoire de Prévéza",
+      "1543 : hiverne à Toulon avec la flotte française"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Khayr ad-Din Barberousse",
+        "url": "https://fr.wikipedia.org/wiki/Khayr_ad-Din_Barberousse"
+      }
+    ]
+  },
+  {
+    "id": "mimar-sinan",
+    "name": "Mimar Sinan",
+    "archetype": "sage",
+    "faction": "ottomans",
+    "born": 1489,
+    "died": 1588,
+    "title": "Architecte en chef de l’Empire",
+    "bio": "Né vers 1489 dans une famille chrétienne d’Anatolie, Sinan est recruté par le devşirme vers 1512 et entre dans le corps des janissaires, où il se forme comme ingénieur militaire. Il construit des ponts et des machines de siège lors des campagnes de Soliman, puis devient architecte en chef de l’Empire en 1539, poste qu’il occupe près de cinquante ans. Il dirige une grande administration de chantiers et de dessinateurs. Ses œuvres majeures sont la mosquée Şehzade (1548), la Süleymaniye à Istanbul (1557) et la Selimiye à Andrinople (1575), qu’il considérait comme son chef-d’œuvre. Il perfectionne la coupole centrale soutenue par des demi-coupoles, inspirée de Sainte-Sophie, et la lumière naturelle qui entre par des rangées de fenêtres. Ses biographes lui attribuent plus de trois cents bâtiments : mosquées, écoles, bains, caravansérails, ponts, aqueducs. Il meurt vers 1588, âgé d’environ cent ans. Son style a marqué l’architecture ottomane pendant des siècles.",
+    "keyFacts": [
+      "Vers 1512 : recruté par le devşirme",
+      "1539 : architecte en chef de l’Empire",
+      "1557 : achèvement de la Süleymaniye",
+      "1575 : achèvement de la Selimiye à Andrinople"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Mimar Sinan",
+        "url": "https://fr.wikipedia.org/wiki/Mimar_Sinan"
+      }
+    ]
+  },
+  {
+    "id": "kosem-sultan",
+    "name": "Kösem Sultan",
+    "archetype": "sultane",
+    "faction": "ottomans",
+    "born": 1589,
+    "died": 1651,
+    "title": "Mère de sultans et régente",
+    "bio": "Née vers 1589, probablement d’une famille grecque de l’île de Tinos, Kösem est vendue au palais et devient la favorite du sultan Ahmed Ier. Elle est la mère de deux sultans, Murad IV et Ibrahim. À la mort d’Ahmed en 1617, elle est reléguée au Vieux Palais. Elle exerce la régence à partir de 1623, pendant la minorité de Murad IV, et pèse sur la nomination des grands vizirs. Plus tard, elle revient au pouvoir comme grand-mère régente de Mehmed IV, après la déposition et la mort d’Ibrahim en 1648. Les historiens parlent pour cette période du « sultanat des femmes », expression discutée : les sultanes agissent surtout par des réseaux de cour, d’officiers et de religieux. Opposée à Turhan Sultan, mère de Mehmed IV, elle est étranglée dans le palais en septembre 1651. Elle a laissé de nombreuses fondations pieuses à Istanbul et à Üsküdar.",
+    "keyFacts": [
+      "Vers 1589 : naissance, probablement à Tinos",
+      "1623 : régente pour son fils Murad IV",
+      "1648 : déposition d’Ibrahim, elle revient au pouvoir",
+      "1651 : étranglée au palais de Topkapı"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Kösem Sultan",
+        "url": "https://fr.wikipedia.org/wiki/Kösem"
+      }
+    ]
+  },
+  {
+    "id": "kara-mustafa-pacha",
+    "name": "Kara Mustafa Pacha",
+    "archetype": "grand-vizir",
+    "faction": "ottomans",
+    "born": 1634,
+    "died": 1683,
+    "title": "Grand vizir du siège de Vienne",
+    "bio": "Élevé dans la maison du grand vizir Köprülü Mehmed Pacha, dont il épouse la fille, Kara Mustafa gravit les échelons de l’État. Il devient grand vizir en 1676, après son beau-frère Fazıl Ahmed. Il mène les guerres contre la Pologne et la Russie, prend Podolie en 1672 avec Fazıl Ahmed, puis tente de conquérir la Hongrie des Habsbourg. En 1683, il rassemble une immense armée et assiège Vienne à partir de juillet. Le 12 septembre, une armée de secours menée par le roi de Pologne Jean III Sobieski et par Charles de Lorraine écrase les Ottomans au Kahlenberg. Le grand vizir bat en retraite jusqu’à Belgrade, où le sultan Mehmed IV le fait exécuter par strangulation le 25 décembre 1683. L’échec de Vienne marque le début de la longue reconquête de la Hongrie, achevée à Karlowitz en 1699. Historiens et chroniqueurs débattent encore de ses choix, notamment de n’avoir pas pris la ville plus vite.",
+    "keyFacts": [
+      "1676 : devient grand vizir",
+      "1683 : siège de Vienne à partir de juillet",
+      "1683 : défaite du Kahlenberg le 12 septembre",
+      "1683 : exécuté à Belgrade le 25 décembre"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Kara Mustafa Pacha",
+        "url": "https://fr.wikipedia.org/wiki/Kara_Mustafa"
+      }
+    ]
+  },
+  {
+    "id": "mahmud-ii",
+    "name": "Mahmud II",
+    "archetype": "sultan",
+    "faction": "ottomans-modernes",
+    "born": 1785,
+    "died": 1839,
+    "title": "Sultan réformateur, destructeur des janissaires",
+    "bio": "Mahmud II devient sultan en 1808, dans une crise où le pouvoir central est faible face aux notables provinciaux. Il signe cette année-là avec eux un pacte (Sened-i İttifak), puis le dépasse en construisant une armée nouvelle. Le 15 juin 1826, après une révolte des janissaires, il les fait écraser par l’artillerie dans leurs casernes : c’est l’« incident favorable ». Il crée une armée de type européen, ouvre des écoles de médecine et d’ingénieurs, un journal officiel, impose le fez et la redingote aux fonctionnaires, supprime les confiscations arbitraires et réorganise les ministères. Mais son règne est aussi celui de défaites : indépendance grecque après Navarin (1827), guerre contre la Russie en 1828-1829 et révolte de Méhémet Ali, dont les troupes battent les siennes à Konya en 1832. Il meurt en juillet 1839, juste avant de connaître la défaite de Nizip. Son fils Abdülmecid proclame les Tanzimat en novembre.",
+    "keyFacts": [
+      "1808 : accession au trône, Sened-i İttifak",
+      "1826 : suppression des janissaires",
+      "1827 : défaite navale de Navarin",
+      "1829 : adoption du fez par l’administration",
+      "1839 : mort, quelques mois avant les Tanzimat"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Mahmoud II",
+        "url": "https://fr.wikipedia.org/wiki/Mahmoud_II"
+      }
+    ]
+  },
+  {
+    "id": "mehmet-ali",
+    "name": "Méhémet Ali",
+    "archetype": "pacha",
+    "faction": "ottomans-modernes",
+    "born": 1769,
+    "died": 1849,
+    "title": "Pacha d’Égypte, rival du sultan",
+    "bio": "Né à Kavala en Macédoine, dans une famille d’origine albanaise, Méhémet Ali arrive en Égypte en 1801 avec les troupes ottomanes qui combattent les Français. Il profite du désordre pour se faire reconnaître pacha en 1805. En 1811, il fait massacrer l’élite des mamelouks au Caire. Il bâtit un État puissant : monopoles d’État sur la production agricole, culture du coton à fibres longues, arsenaux, manufactures, écoles et envoi d’étudiants en France. Son armée, dont les soldats sont des paysans recrutés de force, soumet le Soudan, le Hedjaz, la Syrie sous le commandement de son fils Ibrahim, et bat les troupes du sultan à Konya (1832). Les puissances européennes interviennent en 1840 et le contraignent à rendre la Syrie. En échange, un firman de 1841 reconnaît à sa famille le gouvernement héréditaire de l’Égypte. Sa dynastie dure jusqu’en 1953. Son bilan est contrasté : modernisation de l’État, mais coût humain très lourd.",
+    "keyFacts": [
+      "1805 : reconnu pacha d’Égypte",
+      "1811 : massacre des mamelouks au Caire",
+      "1832 : victoire de Konya sur les troupes du sultan",
+      "1841 : gouvernement héréditaire de l’Égypte reconnu"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Méhémet Ali",
+        "url": "https://fr.wikipedia.org/wiki/Méhémet_Ali"
+      }
+    ]
+  },
+  {
+    "id": "abdulhamid-ii",
+    "name": "Abdülhamid II",
+    "archetype": "sultan",
+    "faction": "ottomans-modernes",
+    "born": 1842,
+    "died": 1918,
+    "title": "Dernier sultan au pouvoir effectif",
+    "bio": "Abdülhamid II monte sur le trône en 1876, dans une crise financière et politique. Il proclame une constitution en décembre, puis la suspend en février 1878, après la défaite face à la Russie et le congrès de Berlin, qui lui fait perdre des provinces des Balkans. Pendant plus de trente ans, il gouverne depuis le palais de Yıldız, avec une police secrète et une censure étendue. Il fait ouvrir de nombreuses écoles, développer le télégraphe et les chemins de fer, dont la ligne du Hedjaz, et se présente comme calife de tous les musulmans. Son règne comprend aussi les massacres d’Arméniens de 1894-1896, qui font entre 100 000 et 300 000 victimes selon les estimations. La révolution jeune-turque de 1908 l’oblige à rétablir la constitution. Il est déposé en avril 1909 après une tentative de contre-révolution, et meurt en 1918, quelques mois avant la défaite finale de l’Empire.",
+    "keyFacts": [
+      "1876 : devient sultan, promulgue la constitution",
+      "1878 : suspend la constitution, congrès de Berlin",
+      "1894-1896 : massacres d’Arméniens",
+      "1908 : révolution jeune-turque",
+      "1909 : déposé"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Abdülhamid II",
+        "url": "https://fr.wikipedia.org/wiki/Abdülhamid_II"
+      }
+    ]
+  },
+  {
+    "id": "mustafa-kemal",
+    "name": "Mustafa Kemal",
+    "archetype": "militaire-xxe",
+    "faction": "ottomans-modernes",
+    "born": 1881,
+    "died": 1938,
+    "title": "Héros de Gallipoli, fondateur de la Turquie",
+    "bio": "Né à Salonique en 1881, Mustafa Kemal fait une carrière d’officier. En 1915, colonel, il commande une division à Gallipoli, où il arrête les débarquements alliés sur les hauteurs de Conkbayırı et d’Anafartalar, ce qui fait de lui un héros national. Après l’armistice de 1918, il organise à partir de 1919 un mouvement de résistance en Anatolie contre l’occupation et le traité de Sèvres. Il remporte la bataille de la Sakarya en 1921, puis de Dumlupınar en août 1922, qui chasse l’armée grecque. Le 1er novembre 1922, l’Assemblée d’Ankara abolit le sultanat, mettant fin à l’Empire ottoman. Il proclame la République en 1923 et devient président. Il supprime le califat en 1924 et engage des réformes brutales : laïcité, alphabet latin, droit civil inspiré de la Suisse. Il reçoit le nom d’Atatürk en 1934 et meurt en 1938. Son bilan est célébré en Turquie, mais critiqué pour son autoritarisme et sa politique envers les Kurdes.",
+    "keyFacts": [
+      "1915 : défense de Gallipoli",
+      "1921 : victoire de la Sakarya",
+      "1922 : victoire de Dumlupınar, abolition du sultanat",
+      "1923 : proclamation de la République",
+      "1938 : mort à Istanbul"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Mustafa Kemal Atatürk",
+        "url": "https://fr.wikipedia.org/wiki/Mustafa_Kemal_Atatürk"
+      }
+    ]
+  }
+]
