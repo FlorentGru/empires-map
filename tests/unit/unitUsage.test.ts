@@ -65,4 +65,38 @@ describe('unités de bataille (galerie)', () => {
       expect(frame.figures.length, u.id).toBeGreaterThan(0);
     }
   });
+
+  it('tient compte du type de navire et des fichiers par empire', () => {
+    const ship = (ship?: 'galion' | 'jonque' | 'barque'): BattleScenario => ({
+      terrain: 'mer',
+      units: [{ id: 'n', army: 0, kind: 'navires', troops: 800, at: [20, 30], formation: 'ligne', ship }],
+      phases: [{ label: 'x', duration: 3, moves: {} }],
+    });
+    const src = (stepId: string, year: number, faction: 'chinois' | 'espagnols', scenario: BattleScenario, empireId = 'x'): BattleSource => ({
+      empireId,
+      stepId,
+      title: stepId,
+      year,
+      troops: [],
+      scenario,
+      armies: [
+        {
+          side: 'A',
+          faction,
+          path: [
+            [0, 0],
+            [1, 1],
+          ],
+        },
+      ],
+    });
+    const list = [src('armada', 1588, 'espagnols', ship('galion')), src('japon', 1281, 'chinois', ship()), src('lepante', 1571, 'espagnols', ship())];
+    expect(ids('galions', list)).toEqual(['armada']);
+    expect(ids('jonques', list)).toEqual(['japon']);
+    expect(ids('galeres', list)).toEqual(['lepante']);
+    // Deux empires partageant une étape : chacun a son scénario (cf. loadBattleScenario(stepId, empireId)).
+    const both = [src('t', 1805, 'espagnols', ship('galion'), 'a'), src('t', 1805, 'espagnols', ship(), 'b')];
+    expect(battlesUsing(UNIT_BY_ID.get('galions')!, both).map((b) => b.empireId)).toEqual(['a']);
+    expect(battlesUsing(UNIT_BY_ID.get('vaisseaux')!, both).map((b) => b.empireId)).toEqual(['b']);
+  });
 });

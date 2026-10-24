@@ -105,7 +105,7 @@ function loadSources(): Promise<BattleSource[]> {
       const [empireId, stepId] = key.split('/') as [string, string];
       const step = EMPIRES.find((e) => e.id === empireId)?.steps.find((s) => s.id === stepId);
       if (!step) return null;
-      const scenario = await loadBattleScenario(stepId);
+      const scenario = await loadBattleScenario(stepId, empireId);
       return { empireId, stepId, title: step.title, year: step.year, armies: step.armies, troops: t.troops, scenario };
     }),
   ).then((all) => all.filter((s): s is BattleSource => s !== null));

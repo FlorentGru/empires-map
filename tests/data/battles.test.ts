@@ -15,7 +15,7 @@ const step = (empire: string, stepId: string) =>
   readJson(join(DATA, 'empires', empire, 'timeline.json')).steps.find((s: { id: string }) => s.id === stepId);
 
 const BIOMES = ['desert', 'steppe', 'prairie', 'foret', 'montagne', 'mediterranee', 'mer'];
-const DECOR_KINDS = ['riviere', 'colline', 'foret', 'cote', 'marais', 'village', 'ville', 'route', 'champ', 'rochers', 'pont'];
+const DECOR_KINDS = ['riviere', 'colline', 'foret', 'cote', 'marais', 'village', 'ville', 'route', 'champ', 'rochers', 'pont', 'pieux'];
 const DECOR_LINES = ['riviere', 'route', 'pont'];
 
 const UNIT_KINDS = ['infanterie', 'cavalerie', 'archers', 'archers-montes', 'elephants', 'chars', 'navires', 'brulots', 'artillerie'];
@@ -38,11 +38,30 @@ describe('data/battles', () => {
     expect(BIOMES).toContain(entry.biome);
   });
 
-  describe.each(scenarioIds)('scénario %s', (stepId) => {
-    const scenario = readJson<BattleScenario>(join(BATTLES, 'scenarios', `${stepId}.json`));
-    const entries = Object.entries(troopsFile).filter(([k]) => k.split('/')[1] === stepId);
+  // « <empireId>.<stepId> » : scénario propre à un empire ; « <stepId> » : partagé (sauf s'il existe un fichier propre à l'empire).
+  describe.each(scenarioIds)('scénario %s', (fileId) => {
+    const scenario = readJson<BattleScenario>(join(BATTLES, 'scenarios', `${fileId}.json`));
+    const dot = fileId.indexOf('.');
+    const ownEmpire = dot >= 0 ? fileId.slice(0, dot) : undefined;
+    const stepId = dot >= 0 ? fileId.slice(dot + 1) : fileId;
+    const entries = Object.entries(troopsFile).filter(([k]) => {
+      const [e, s] = k.split('/');
+      if (s !== stepId) return false;
+      return ownEmpire ? e === ownEmpire : !scenarioIds.includes(`${e}.${stepId}`);
+    });
 
     it('a une entrée dans troops.json', () => expect(entries.length).toBeGreaterThan(0));
+
+    it('météo, marée et navires valides ; pieux en mer seulement', () => {
+      if (scenario.weather) expect(['calme', 'vent', 'tempete']).toContain(scenario.weather);
+      for (const ph of scenario.phases) if (ph.tide) expect(['haute', 'basse']).toContain(ph.tide);
+      for (const u of scenario.units) {
+        if (u.ship === undefined) continue;
+        expect(['navires', 'brulots'], `${u.id} : ship hors navires/brulots`).toContain(u.kind);
+        expect(['galere', 'galion', 'vaisseau', 'jonque', 'barque'], `ship ${u.id}`).toContain(u.ship);
+      }
+      for (const d of scenario.decor ?? []) if (d.kind === 'pieux') expect(scenario.terrain, 'pieux hors mer').toBe('mer');
+    });
 
     it('décor valide (genres, points, étiquettes uniques)', () => {
       const decor = scenario.decor ?? [];

@@ -80,7 +80,7 @@ export function BattleDialog({ empireId, step, opener, onClose }: Props) {
     let cancelled = false;
     (async () => {
       try {
-        const hist = await loadBattleScenario(step.id);
+        const hist = await loadBattleScenario(step.id, empireId);
         const scenario = hist ?? genericScenario(step, troops?.troops ?? []);
         const sprites = await Promise.all((step.armies ?? []).map((a) => loadSprites(a.faction)));
         if (!cancelled) setLoaded({ scenario, historic: !!hist, sprites });
@@ -91,7 +91,7 @@ export function BattleDialog({ empireId, step, opener, onClose }: Props) {
     return () => {
       cancelled = true;
     };
-  }, [step, troops]);
+  }, [step, troops, empireId]);
 
   const scale = useMemo(() => (loaded ? scaleFor(totalTroops(loaded.scenario)) : 100), [loaded]);
   const duration = useMemo(() => (loaded ? durationOf(loaded.scenario) : 0), [loaded]);

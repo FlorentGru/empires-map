@@ -1,0 +1,499 @@
+{
+ "terrain": "mer",
+ "weather": "vent",
+ "decor": [
+  {
+   "kind": "cote",
+   "points": [
+    [
+     88,
+     0
+    ],
+    [
+     100,
+     0
+    ],
+    [
+     100,
+     60
+    ],
+    [
+     90,
+     60
+    ],
+    [
+     84,
+     40
+    ],
+    [
+     90,
+     20
+    ]
+   ],
+   "label": "Côte occidentale de la Sicile"
+  },
+  {
+   "kind": "rochers",
+   "points": [
+    [
+     48,
+     10
+    ],
+    [
+     56,
+     9
+    ],
+    [
+     58,
+     15
+    ],
+    [
+     50,
+     16
+    ]
+   ],
+   "label": "Île de Hiéra (Maretimo)"
+  },
+  {
+   "kind": "rochers",
+   "points": [
+    [
+     60,
+     34
+    ],
+    [
+     68,
+     33
+    ],
+    [
+     70,
+     40
+    ],
+    [
+     62,
+     41
+    ]
+   ],
+   "label": "Îles Égates (Phorbantia)"
+  },
+  {
+   "kind": "rochers",
+   "points": [
+    [
+     74,
+     48
+    ],
+    [
+     82,
+     47
+    ],
+    [
+     83,
+     53
+    ],
+    [
+     75,
+     54
+    ]
+   ],
+   "label": "Lilybée"
+  }
+ ],
+ "units": [
+  {
+   "id": "rom-avant",
+   "army": 0,
+   "kind": "navires",
+   "troops": 18000,
+   "at": [
+    66,
+    24
+   ],
+   "formation": "ligne",
+   "ship": "galere",
+   "label": "Avant-garde romaine de Catulus (quinquérèmes allégées)"
+  },
+  {
+   "id": "rom-centre",
+   "army": 0,
+   "kind": "navires",
+   "troops": 18000,
+   "at": [
+    70,
+    30
+   ],
+   "formation": "ligne",
+   "ship": "galere",
+   "label": "Centre romain, vaisseau amiral de Catulus"
+  },
+  {
+   "id": "rom-sud",
+   "army": 0,
+   "kind": "navires",
+   "troops": 15000,
+   "at": [
+    66,
+    42
+   ],
+   "formation": "ligne",
+   "ship": "galere",
+   "label": "Escadre de Valerius Falto"
+  },
+  {
+   "id": "rom-reserve",
+   "army": 0,
+   "kind": "navires",
+   "troops": 9000,
+   "at": [
+    80,
+    30
+   ],
+   "formation": "ligne",
+   "ship": "galere",
+   "label": "Réserve romaine, côté Sicile"
+  },
+  {
+   "id": "car-nord",
+   "army": 1,
+   "kind": "navires",
+   "troops": 15000,
+   "at": [
+    8,
+    16
+   ],
+   "formation": "ligne",
+   "ship": "galere",
+   "label": "Escadre carthaginoise du nord"
+  },
+  {
+   "id": "car-centre",
+   "army": 1,
+   "kind": "navires",
+   "troops": 15000,
+   "at": [
+    6,
+    30
+   ],
+   "formation": "ligne",
+   "ship": "galere",
+   "label": "Navires d'Hannon, chargés de ravitaillement"
+  },
+  {
+   "id": "car-sud",
+   "army": 1,
+   "kind": "navires",
+   "troops": 12500,
+   "at": [
+    8,
+    44
+   ],
+   "formation": "ligne",
+   "ship": "galere",
+   "label": "Escadre carthaginoise du sud"
+  },
+  {
+   "id": "car-convoi",
+   "army": 1,
+   "kind": "navires",
+   "troops": 7500,
+   "at": [
+    2,
+    36
+   ],
+   "formation": "ligne",
+   "ship": "galere",
+   "label": "Transports lourds de blé et de vivres"
+  }
+ ],
+ "phases": [
+  {
+   "label": "Au matin du 10 mars -241, la flotte de Catulus, délestée de ses corbeaux et de ses soldats de siège, attend devant Lilybée. Les équipages sont entraînés à la manœuvre.",
+   "duration": 4,
+   "moves": {
+    "car-centre": {
+     "to": [
+      24,
+      30
+     ],
+     "state": "marche"
+    },
+    "car-nord": {
+     "to": [
+      26,
+      16
+     ],
+     "state": "marche"
+    },
+    "car-sud": {
+     "to": [
+      26,
+      44
+     ],
+     "state": "marche"
+    },
+    "car-convoi": {
+     "to": [
+      18,
+      36
+     ],
+     "state": "marche"
+    },
+    "rom-avant": {
+     "to": [
+      60,
+      24
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Le vent d'ouest pousse les Carthaginois vers la Sicile, mais la mer est grosse. Catulus, blessé, décide d'attaquer malgré tout avant que les navires d'Hannon ne déchargent leur cargaison.",
+   "duration": 4,
+   "moves": {
+    "car-centre": {
+     "to": [
+      40,
+      30
+     ],
+     "state": "marche"
+    },
+    "car-nord": {
+     "to": [
+      42,
+      16
+     ],
+     "state": "marche"
+    },
+    "car-sud": {
+     "to": [
+      42,
+      44
+     ],
+     "state": "marche"
+    },
+    "rom-avant": {
+     "to": [
+      56,
+      24
+     ],
+     "state": "marche"
+    },
+    "rom-centre": {
+     "to": [
+      58,
+      30
+     ],
+     "state": "marche"
+    },
+    "rom-sud": {
+     "to": [
+      56,
+      42
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Les galères romaines, plus légères et mieux rameuses, se jettent sur la ligne carthaginoise. Les navires chargés d'Hannon, lourds et lents, ne peuvent ni virer ni éperonner.",
+   "duration": 5,
+   "moves": {
+    "rom-avant": {
+     "to": [
+      46,
+      24
+     ],
+     "state": "combat",
+     "losses": 0.05,
+     "action": "baionnette"
+    },
+    "rom-centre": {
+     "to": [
+      48,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.05,
+     "action": "baionnette"
+    },
+    "rom-sud": {
+     "to": [
+      46,
+      42
+     ],
+     "state": "combat",
+     "losses": 0.05,
+     "action": "baionnette"
+    },
+    "car-centre": {
+     "to": [
+      44,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.2,
+     "action": "baionnette"
+    },
+    "car-nord": {
+     "to": [
+      44,
+      16
+     ],
+     "state": "combat",
+     "losses": 0.15,
+     "action": "baionnette"
+    },
+    "car-sud": {
+     "to": [
+      44,
+      44
+     ],
+     "state": "combat",
+     "losses": 0.15,
+     "action": "baionnette"
+    }
+   }
+  },
+  {
+   "label": "Les éperons romains défoncent les coques ; les Carthaginois, équipages inexpérimentés, sont abordés. La réserve de Falto prend l'aile sud à revers.",
+   "duration": 5,
+   "moves": {
+    "rom-reserve": {
+     "to": [
+      56,
+      30
+     ],
+     "state": "marche"
+    },
+    "rom-sud": {
+     "to": [
+      44,
+      40
+     ],
+     "state": "combat",
+     "losses": 0.1,
+     "action": "baionnette"
+    },
+    "car-centre": {
+     "to": [
+      42,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.4,
+     "action": "baionnette"
+    },
+    "car-sud": {
+     "to": [
+      42,
+      42
+     ],
+     "state": "combat",
+     "losses": 0.4,
+     "action": "baionnette"
+    },
+    "car-nord": {
+     "to": [
+      42,
+      18
+     ],
+     "state": "combat",
+     "losses": 0.35,
+     "action": "baionnette"
+    },
+    "car-convoi": {
+     "to": [
+      24,
+      36
+     ],
+     "state": "marche",
+     "losses": 0.1
+    }
+   }
+  },
+  {
+   "label": "L'aile gauche carthaginoise cède la première ; une cinquantaine de navires sont coulés à l'éperon.",
+   "duration": 4,
+   "moves": {
+    "car-nord": {
+     "to": [
+      28,
+      10
+     ],
+     "state": "fuite",
+     "losses": 0.5
+    },
+    "car-sud": {
+     "to": [
+      28,
+      50
+     ],
+     "state": "fuite",
+     "losses": 0.5
+    },
+    "car-centre": {
+     "to": [
+      40,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.6,
+     "action": "baionnette"
+    },
+    "rom-centre": {
+     "to": [
+      46,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.1,
+     "action": "baionnette"
+    }
+   }
+  },
+  {
+   "label": "Un vent contraire se lève soudain pour les fuyards : une soixantaine de bâtiments carthaginois sont capturés, dix mille hommes prisonniers. Hannon se replie vers Carthage avec les survivants.",
+   "duration": 5,
+   "moves": {
+    "car-centre": {
+     "to": [
+      6,
+      30
+     ],
+     "state": "fuite",
+     "losses": 0.75
+    },
+    "car-convoi": {
+     "to": [
+      2,
+      38
+     ],
+     "state": "fuite",
+     "losses": 0.6
+    },
+    "car-nord": {
+     "to": [
+      8,
+      8
+     ],
+     "state": "fuite",
+     "losses": 0.65
+    },
+    "car-sud": {
+     "to": [
+      8,
+      54
+     ],
+     "state": "fuite",
+     "losses": 0.65
+    }
+   }
+  }
+ ],
+ "sources": [
+  "Polybe, Histoires, I, 59-61",
+  "Diodore de Sicile, Bibliothèque historique, XXIV",
+  "Wikipédia FR, « Bataille des îles Égates »"
+ ]
+}

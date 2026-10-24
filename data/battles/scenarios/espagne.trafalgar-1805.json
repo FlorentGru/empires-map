@@ -1,0 +1,435 @@
+{
+ "terrain": "mer",
+ "weather": "vent",
+ "decor": [
+  {
+   "kind": "cote",
+   "points": [
+    [
+     90,
+     0
+    ],
+    [
+     100,
+     0
+    ],
+    [
+     100,
+     60
+    ],
+    [
+     92,
+     60
+    ],
+    [
+     88,
+     44
+    ],
+    [
+     94,
+     30
+    ],
+    [
+     90,
+     14
+    ]
+   ],
+   "label": "Côte d'Andalousie"
+  },
+  {
+   "kind": "rochers",
+   "points": [
+    [
+     84,
+     36
+    ],
+    [
+     92,
+     35
+    ],
+    [
+     93,
+     42
+    ],
+    [
+     86,
+     43
+    ]
+   ],
+   "label": "Cap Trafalgar"
+  },
+  {
+   "kind": "ville",
+   "points": [
+    [
+     90,
+     4
+    ],
+    [
+     98,
+     4
+    ],
+    [
+     98,
+     10
+    ],
+    [
+     90,
+     10
+    ]
+   ],
+   "label": "Cadix"
+  }
+ ],
+ "units": [
+  {
+   "id": "fs-nord",
+   "army": 0,
+   "kind": "navires",
+   "troops": 6720,
+   "at": [
+    62,
+    10
+   ],
+   "formation": "ligne",
+   "ship": "vaisseau",
+   "label": "Avant-garde franco-espagnole (Dumanoir)"
+  },
+  {
+   "id": "fs-centre",
+   "army": 0,
+   "kind": "navires",
+   "troops": 8160,
+   "at": [
+    60,
+    30
+   ],
+   "formation": "ligne",
+   "ship": "vaisseau",
+   "label": "Centre : Bucentaure et Santísima Trinidad"
+  },
+  {
+   "id": "fs-sud",
+   "army": 0,
+   "kind": "navires",
+   "troops": 6000,
+   "at": [
+    62,
+    50
+   ],
+   "formation": "ligne",
+   "ship": "vaisseau",
+   "label": "Arrière-garde (Álava, Santa Ana)"
+  },
+  {
+   "id": "fs-gravina",
+   "army": 0,
+   "kind": "navires",
+   "troops": 3120,
+   "at": [
+    72,
+    30
+   ],
+   "formation": "ligne",
+   "ship": "vaisseau",
+   "label": "Escadre d'observation de Gravina (Principe de Asturias)"
+  },
+  {
+   "id": "nelson",
+   "army": 1,
+   "kind": "navires",
+   "troops": 8500,
+   "at": [
+    8,
+    18
+   ],
+   "formation": "colonne",
+   "ship": "vaisseau",
+   "label": "Colonne du nord de Nelson (Victory, Téméraire)"
+  },
+  {
+   "id": "collingwood",
+   "army": 1,
+   "kind": "navires",
+   "troops": 8500,
+   "at": [
+    8,
+    44
+   ],
+   "formation": "colonne",
+   "ship": "vaisseau",
+   "label": "Colonne du sud de Collingwood (Royal Sovereign)"
+  }
+ ],
+ "phases": [
+  {
+   "label": "Le 21 octobre 1805 au matin, la flotte franco-espagnole de Villeneuve, mal alignée, s'étire sur plus de cinq milles du nord au sud, sous un vent faible. La houle est forte.",
+   "duration": 4,
+   "moves": {
+    "fs-nord": {
+     "to": [
+      62,
+      12
+     ],
+     "state": "marche"
+    },
+    "fs-centre": {
+     "to": [
+      60,
+      30
+     ],
+     "state": "marche"
+    },
+    "fs-sud": {
+     "to": [
+      62,
+      48
+     ],
+     "state": "marche"
+    },
+    "fs-gravina": {
+     "to": [
+      72,
+      30
+     ],
+     "state": "marche"
+    },
+    "nelson": {
+     "to": [
+      22,
+      18
+     ],
+     "state": "marche"
+    },
+    "collingwood": {
+     "to": [
+      22,
+      44
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Nelson et Collingwood s'avancent en deux colonnes serrées, sans se ranger en ligne, perpendiculairement à l'ennemi. Le signal « L'Angleterre attend que chacun fasse son devoir » est hissé.",
+   "duration": 5,
+   "moves": {
+    "nelson": {
+     "to": [
+      44,
+      20
+     ],
+     "state": "marche"
+    },
+    "collingwood": {
+     "to": [
+      42,
+      44
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Collingwood coupe la ligne alliée derrière le centre. Sa Royal Sovereign tire sa bordée à bout portant sur la Santa Ana, avant même les autres navires.",
+   "duration": 5,
+   "moves": {
+    "collingwood": {
+     "to": [
+      54,
+      42
+     ],
+     "state": "combat",
+     "losses": 0.03,
+     "action": "feu"
+    },
+    "fs-sud": {
+     "to": [
+      60,
+      46
+     ],
+     "state": "combat",
+     "losses": 0.1,
+     "action": "feu"
+    },
+    "fs-centre": {
+     "to": [
+      58,
+      32
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "La colonne de Nelson tranche la ligne entre le Bucentaure et la Santísima Trinidad. Le Victory enfile l'arrière du Bucentaure, puis l'aborde.",
+   "duration": 5,
+   "moves": {
+    "nelson": {
+     "to": [
+      56,
+      26
+     ],
+     "state": "combat",
+     "losses": 0.05,
+     "action": "feu"
+    },
+    "fs-centre": {
+     "to": [
+      58,
+      28
+     ],
+     "state": "combat",
+     "losses": 0.25,
+     "action": "feu"
+    },
+    "fs-nord": {
+     "to": [
+      62,
+      12
+     ],
+     "state": "marche"
+    },
+    "fs-gravina": {
+     "to": [
+      70,
+      26
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Mêlée générale : les vaisseaux s'abordent, les ponts sont balayés à la mitraille. Nelson est mortellement blessé par un tireur d'élite du Redoutable. Le navire de Villeneuve se rend.",
+   "duration": 6,
+   "moves": {
+    "nelson": {
+     "to": [
+      56,
+      26
+     ],
+     "state": "combat",
+     "losses": 0.1,
+     "action": "baionnette"
+    },
+    "collingwood": {
+     "to": [
+      54,
+      42
+     ],
+     "state": "combat",
+     "losses": 0.06,
+     "action": "baionnette"
+    },
+    "fs-centre": {
+     "to": [
+      56,
+      28
+     ],
+     "state": "combat",
+     "losses": 0.55,
+     "action": "baionnette"
+    },
+    "fs-sud": {
+     "to": [
+      58,
+      44
+     ],
+     "state": "combat",
+     "losses": 0.5,
+     "action": "baionnette"
+    },
+    "fs-gravina": {
+     "to": [
+      64,
+      32
+     ],
+     "state": "combat",
+     "losses": 0.2,
+     "action": "feu"
+    }
+   }
+  },
+  {
+   "label": "L'avant-garde de Dumanoir vire trop tard et se retire sans avoir combattu. À la nuit, dix-huit vaisseaux alliés sont pris ou détruits ; la flotte de Gravina rentre à Cadix.",
+   "duration": 5,
+   "moves": {
+    "fs-nord": {
+     "to": [
+      74,
+      6
+     ],
+     "state": "fuite",
+     "losses": 0.15
+    },
+    "fs-centre": {
+     "to": [
+      76,
+      32
+     ],
+     "state": "fuite",
+     "losses": 0.8
+    },
+    "fs-sud": {
+     "to": [
+      80,
+      46
+     ],
+     "state": "fuite",
+     "losses": 0.75
+    },
+    "fs-gravina": {
+     "to": [
+      88,
+      12
+     ],
+     "state": "fuite",
+     "losses": 0.4
+    }
+   }
+  },
+  {
+   "label": "Une tempête de sud-ouest se lève après la bataille ; sur les vingt prises, les Britanniques en perdent presque toutes, et c'est l'épave de la flotte combinée qui gagne la côte. Aucun vaisseau britannique n'est perdu au combat.",
+   "duration": 5,
+   "moves": {
+    "fs-centre": {
+     "to": [
+      90,
+      32
+     ],
+     "state": "fuite",
+     "losses": 0.9
+    },
+    "fs-sud": {
+     "to": [
+      88,
+      50
+     ],
+     "state": "fuite",
+     "losses": 0.85
+    },
+    "nelson": {
+     "to": [
+      48,
+      26
+     ],
+     "state": "marche",
+     "losses": 0.12
+    },
+    "collingwood": {
+     "to": [
+      48,
+      44
+     ],
+     "state": "marche",
+     "losses": 0.1
+    }
+   }
+  }
+ ],
+ "sources": [
+  "William James, The Naval History of Great Britain, 1837",
+  "Julian Corbett, The Campaign of Trafalgar, 1910",
+  "Wikipédia FR, « Bataille de Trafalgar »"
+ ]
+}

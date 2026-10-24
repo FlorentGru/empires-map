@@ -147,5 +147,89 @@
   ],
   "uncertain": true,
   "biome": "prairie"
+ },
+ "rome/sicile-241": {
+  "troops": [
+   60000,
+   50000
+  ],
+  "uncertain": true,
+  "biome": "mer"
+ },
+ "rome/actium-31": {
+  "troops": [
+   45000,
+   40000,
+   12000
+  ],
+  "uncertain": true,
+  "biome": "mer"
+ },
+ "espagne/armada-1588": {
+  "troops": [
+   27000,
+   16000
+  ],
+  "uncertain": true,
+  "biome": "mer"
+ },
+ "espagne/trafalgar-1805": {
+  "troops": [
+   24000,
+   17000
+  ],
+  "uncertain": true,
+  "biome": "mer"
+ },
+ "napoleon/trafalgar-1805": {
+  "troops": [
+   13500,
+   10500,
+   17000
+  ],
+  "uncertain": true,
+  "biome": "mer"
+ },
+ "mongols/yamen-1279": {
+  "troops": [
+   20000,
+   100000
+  ],
+  "uncertain": true,
+  "biome": "mer"
+ },
+ "china/yamen-1279": {
+  "troops": [
+   20000,
+   100000
+  ],
+  "uncertain": true,
+  "biome": "mer"
+ },
+ "mongols/japon-1281": {
+  "troops": [
+   40000,
+   100000,
+   40000
+  ],
+  "uncertain": true,
+  "biome": "mer"
+ },
+ "china/mongols-japon-1281": {
+  "troops": [
+   40000,
+   100000,
+   40000
+  ],
+  "uncertain": true,
+  "biome": "mer"
+ },
+ "mongols/bachdang-1288": {
+  "troops": [
+   20000,
+   30000
+  ],
+  "uncertain": true,
+  "biome": "mer"
  }
 }

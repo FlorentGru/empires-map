@@ -4,7 +4,7 @@
  */
 import type { BattleAction, BattleFormation, BattlePhase, BattlePoint, BattleScenario, BattleUnit, BattleUnitKind, BattleUnitState } from '../types-battle';
 import type { Faction, TimelineStep } from '../types';
-import { firearmOf, isMounted, muzzleOf, WEAPON_FX, weaponOf, type Weapon } from './weapons';
+import { factionShip, firearmOf, isMounted, muzzleOf, WEAPON_FX, weaponOf, type Weapon } from './weapons';
 import { hash01 } from './hash';
 import { layoutOf } from './formations';
 
@@ -45,6 +45,8 @@ export interface BattleFigure {
   pike: boolean;
   /** Boucliers en toit au-dessus de la tête (tortue). */
   roof: boolean;
+  /** Instant (secondes) où la figurine est tombée, si elle est morte : la coque coulée sait depuis quand elle sombre. */
+  diedAt?: number;
   /** Navire qui porte la figurine (unités `navires`). */
   ship?: string;
   /** Monture ou engin à l'arrêt (pas de galop). */
@@ -383,6 +385,8 @@ const clamp = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v
 const frac = (v: number) => v - Math.floor(v);
 /** Dérive de la fumée sous le vent (unités de terrain par seconde, vers la droite). */
 const WIND = 0.35;
+/** Le vent et la tempête font filer la fumée. */
+const windFactor = (weather: BattleScenario['weather']) => (weather === 'tempete' ? 4.5 : weather === 'vent' ? 3 : 1);
 /** Portée maximale d'un boulet / d'une volée de flèches (unités de terrain) et durées de vol (secondes). */
 const RANGE = { canon: 45, arc: 32 };
 const FLIGHT = { boulet: 0.6, rebond: 0.3, fleche: 1 };
@@ -494,7 +498,7 @@ function shotEffects(
     const v = frac(h * 7.31 + j * 0.37 + k * 0.13);
     out.fumee.push({
       kind: 'fumee',
-      x: m.x + dir * (0.25 * j + 0.8 * Math.sqrt(q) * w.smokeSize * 2) + WIND * pa,
+      x: m.x + dir * (0.25 * j + 0.8 * Math.sqrt(q) * w.smokeSize * 2) + WIND * windFactor(sc.weather) * pa,
       y: m.y + (v - 0.5) * 0.5,
       z: m.z + 0.3 * pa * (0.8 + v * 0.4) + j * 0.05,
       age: pa,
@@ -556,7 +560,7 @@ export function stateAt(scenario: BattleScenario, scale: number, t: number, fact
     const ka = keyAt(keys, time);
     phase = ka.index;
     progress = ka.p;
-    const weapon = weaponOf(u.kind, factions?.[u.army]);
+    const weapon = weaponOf(u.kind, factions?.[u.army], u.kind === 'navires' ? (u.ship ?? factionShip(factions?.[u.army])) : undefined);
     const wf = weapon ? WEAPON_FX[weapon] : null;
     const reload = wf ? wf.reload[0] + hash01(`${u.id}r`) * wf.reload[1] : 0;
     const everFires = !!weapon && keys.some((k) => k.state === 'combat' || k.action === 'feinte');
@@ -574,6 +578,7 @@ export function stateAt(scenario: BattleScenario, scale: number, t: number, fact
       const dy = slot.dy;
       const fid = `${u.id}#${i}`;
       let center: { x: number; y: number } = cur;
+      let diedAt: number | undefined;
       let state: FigureState = back ? 'marche' : cur.state;
       if (thr[i]! < cur.losses) {
         // Tombé : reste au sol là où l'unité se trouvait au moment où ses pertes ont franchi son seuil.
@@ -586,6 +591,7 @@ export function stateAt(scenario: BattleScenario, scale: number, t: number, fact
         }
         center = unitAt(keys, hi);
         state = 'mort';
+        diedAt = hi;
       }
       const alive = state !== 'mort';
       const { dir, aim } = orient(cur.action, cur.state, slot.dir, mountedArcher);
@@ -631,6 +637,7 @@ export function stateAt(scenario: BattleScenario, scale: number, t: number, fact
         x: clamp(center.x + dx + jx, 0, TERRAIN_W),
         y: clamp(center.y + dy + jy, 0, TERRAIN_H),
         state,
+        diedAt,
         frame,
         facing: dir,
         aim,

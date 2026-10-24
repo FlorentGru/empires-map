@@ -5,6 +5,7 @@
 import type { Faction } from '../types';
 import type { BattleAction, BattleBiome, BattleFormation, BattlePoint, BattleScenario, BattleUnitKind } from '../types-battle';
 import { norm } from '../figures/svgUtils';
+import type { ShipType } from './weapons';
 
 /** Ce qui rattache une unité de la galerie aux unités des scénarios. */
 export interface UnitMatch {
@@ -12,7 +13,9 @@ export interface UnitMatch {
   formation?: BattleFormation;
   /** Manœuvre : une phase où une unité fait cette action. */
   action?: BattleAction;
-  /** Bornes d'année de l'étape (galères avant 1600, vaisseaux ensuite). */
+  /** Type de navire (celui du scénario, sinon celui du peuple ou de l'époque : `shipOf`). */
+  ship?: ShipType;
+  /** Bornes d'année de l'étape. */
   yearMin?: number;
   yearMax?: number;
 }
@@ -25,8 +28,10 @@ export interface SceneSpec {
   /** Nombre de figurines (1 figurine = 100 hommes). */
   figures: number;
   biome: BattleBiome;
-  /** Année, qui décide galères ou vaisseaux. */
+  /** Année, qui décide galères ou vaisseaux quand `ship` n'est pas donné. */
   year: number;
+  /** Navire dessiné (unités `navires`). */
+  ship?: ShipType;
   plan?: 'avance' | 'feinte';
   /** Action du combat (défaut du moteur : tir pour les unités à distance, sinon mêlée). */
   action?: BattleAction;
@@ -51,7 +56,7 @@ const MID: BattlePoint = [48, 30];
 /** Scénario d'une mini-scène : une seule unité de l'armée 0 (qui regarde vers la droite). */
 export function sceneScenario(s: SceneSpec): BattleScenario {
   const sea = s.kind === 'navires' || s.kind === 'brulots';
-  const unit = { id: UNIT_ID, army: 0, kind: s.kind, troops: s.figures * SCENE_SCALE, at: START, formation: s.formation };
+  const unit = { id: UNIT_ID, army: 0, kind: s.kind, troops: s.figures * SCENE_SCALE, at: START, formation: s.formation, ship: s.ship };
   const phases =
     s.plan === 'feinte'
       ? [
@@ -135,16 +140,40 @@ export const BATTLE_UNITS: UnitInfo[] = [
     'Galères',
     'Antiquité – XVIe siècle',
     "Navires longs et bas, mus par des rames, armés d'un éperon à la proue puis de canons dans l'axe. Elles manœuvrent sans vent, mais tiennent mal la haute mer. Le combat se joue à l'éperonnage et à l'abordage : des fantassins embarqués y donnent l'assaut sur le pont voisin. À Lépante (1571), des centaines de galères s'affrontent encore, avec les puissantes galéasses vénitiennes.",
-    { kind: 'navires', yearMax: 1599 },
-    { faction: 'espagnols', kind: 'navires', formation: 'ligne', figures: 8, biome: 'mer', year: 1571 },
+    { kind: 'navires', ship: 'galere' },
+    { faction: 'espagnols', kind: 'navires', formation: 'ligne', figures: 8, biome: 'mer', year: 1571, ship: 'galere' },
   ),
   mount(
     'vaisseaux',
     'Vaisseaux',
     'XVIIe – XIXe siècle',
     "Grands navires à voiles carrées, portant leurs canons sur plusieurs ponts. Ils combattent en ligne de file, bordée contre bordée, et tout dépend du vent, de la manœuvre et de la cadence de tir. Le vaisseau de ligne est l'arme maîtresse des marines européennes jusqu'à l'apparition de la vapeur, comme à Trafalgar (1805).",
-    { kind: 'navires', yearMin: 1600 },
-    { faction: 'britanniques', kind: 'navires', formation: 'ligne', figures: 8, biome: 'mer', year: 1805 },
+    { kind: 'navires', ship: 'vaisseau' },
+    { faction: 'britanniques', kind: 'navires', formation: 'ligne', figures: 8, biome: 'mer', year: 1805, ship: 'vaisseau' },
+  ),
+  mount(
+    'galions',
+    'Galions',
+    'XVIe – XVIIe siècle',
+    "Grands voiliers à trois mâts, hauts sur l'eau, avec un château arrière élevé et deux rangs de sabords pour les canons. Ils transportent à la fois canons, soldats et cargaison, et dominent l'Atlantique après la découverte du Nouveau Monde. Leur coque haute les rend peu maniables au près et très sensibles au vent. L'Invincible Armada de Philippe II, en 1588, aligne des dizaines de galions, mais les navires anglais, plus rapides et plus maniables, tirent de loin et la tempête achève de la disperser.",
+    { kind: 'navires', ship: 'galion' },
+    { faction: 'espagnols', kind: 'navires', formation: 'ligne', figures: 8, biome: 'mer', year: 1588, ship: 'galion' },
+  ),
+  mount(
+    'jonques',
+    'Jonques',
+    'Antiquité – XVe siècle',
+    "Navires d'Asie orientale à fond plat, dont la coque est divisée en compartiments étanches et dont les voiles sont renforcées de lattes de bambou, qui se manœuvrent facilement et permettent de remonter au vent. Les flottes chinoises, coréennes et japonaises les arment d'archers, de lanceurs de projectiles incendiaires et de combattants à l'abordage. Les expéditions mongoles contre le Japon, en 1274 et en 1281, reposent sur des flottes de jonques construites par des chantiers chinois et coréens.",
+    { kind: 'navires', ship: 'jonque' },
+    { faction: 'chinois', kind: 'navires', formation: 'ligne', figures: 8, biome: 'mer', year: 1281, ship: 'jonque' },
+  ),
+  mount(
+    'barques',
+    'Barques',
+    'Antiquité – XIXe siècle',
+    'Petites embarcations à rames, légères et rapides, qui embarquent une poignée de combattants. Faciles à construire, elles se glissent dans les fleuves, les marais et les estuaires où les grands navires ne passent pas. Les flottilles vietnamiennes les utilisent à Bach Dang, en 938 et en 1288, pour attirer la flotte ennemie au-dessus de pieux plantés dans le lit du fleuve, que la marée descendante découvre.',
+    { kind: 'navires', ship: 'barque' },
+    { faction: 'vietnamiens', kind: 'navires', formation: 'ligne', figures: 8, biome: 'mer', year: 1288, ship: 'barque' },
   ),
   mount(
     'brulots',

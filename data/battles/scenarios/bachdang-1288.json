@@ -1,0 +1,442 @@
+{
+ "terrain": "mer",
+ "weather": "calme",
+ "decor": [
+  {
+   "kind": "cote",
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     100,
+     0
+    ],
+    [
+     100,
+     12
+    ],
+    [
+     60,
+     14
+    ],
+    [
+     0,
+     10
+    ]
+   ],
+   "label": "Rive nord du Bạch Đằng"
+  },
+  {
+   "kind": "cote",
+   "points": [
+    [
+     0,
+     50
+    ],
+    [
+     60,
+     48
+    ],
+    [
+     100,
+     50
+    ],
+    [
+     100,
+     60
+    ],
+    [
+     0,
+     60
+    ]
+   ],
+   "label": "Rive sud"
+  },
+  {
+   "kind": "foret",
+   "points": [
+    [
+     30,
+     2
+    ],
+    [
+     48,
+     2
+    ],
+    [
+     48,
+     8
+    ],
+    [
+     30,
+     8
+    ]
+   ],
+   "label": "Forêt de la rive"
+  },
+  {
+   "kind": "pieux",
+   "points": [
+    [
+     36,
+     24
+    ],
+    [
+     56,
+     24
+    ],
+    [
+     56,
+     38
+    ],
+    [
+     36,
+     38
+    ]
+   ],
+   "label": "Pieux de Trần Hưng Đạo"
+  }
+ ],
+ "units": [
+  {
+   "id": "vn-leurre",
+   "army": 0,
+   "kind": "navires",
+   "troops": 4000,
+   "at": [
+    50,
+    30
+   ],
+   "formation": "ligne",
+   "ship": "barque",
+   "label": "Barques légères du leurre"
+  },
+  {
+   "id": "vn-flotte",
+   "army": 0,
+   "kind": "navires",
+   "troops": 7000,
+   "at": [
+    22,
+    16
+   ],
+   "formation": "ligne",
+   "ship": "barque",
+   "label": "Flottille vietnamienne cachée dans l'affluent"
+  },
+  {
+   "id": "vn-brulots",
+   "army": 0,
+   "kind": "brulots",
+   "troops": 2000,
+   "at": [
+    24,
+    22
+   ],
+   "formation": "ligne",
+   "ship": "barque",
+   "label": "Brûlots chargés de bambou et d'huile"
+  },
+  {
+   "id": "vn-archers",
+   "army": 0,
+   "kind": "archers",
+   "troops": 7000,
+   "at": [
+    38,
+    6
+   ],
+   "formation": "ligne",
+   "label": "Archers vietnamiens dans les bois de la rive"
+  },
+  {
+   "id": "yuan-avant",
+   "army": 1,
+   "kind": "navires",
+   "troops": 10500,
+   "at": [
+    86,
+    28
+   ],
+   "formation": "ligne",
+   "ship": "jonque",
+   "label": "Avant-garde des jonques yuan (Toghan)"
+  },
+  {
+   "id": "yuan-centre",
+   "army": 1,
+   "kind": "navires",
+   "troops": 12000,
+   "at": [
+    92,
+    32
+   ],
+   "formation": "ligne",
+   "ship": "jonque",
+   "label": "Gros de la flotte de Toghan"
+  },
+  {
+   "id": "yuan-omar",
+   "army": 1,
+   "kind": "navires",
+   "troops": 7500,
+   "at": [
+    96,
+    26
+   ],
+   "formation": "ligne",
+   "ship": "jonque",
+   "label": "Convoi d'Omar, vers l'aval"
+  }
+ ],
+ "phases": [
+  {
+   "label": "Au printemps de 1288, Trần Hưng Đạo fait planter dans le lit du Bạch Đằng des pieux de bois dur, pointés de fer. À marée haute, ils sont invisibles sous l'eau. Toghan, en retraite, descend le fleuve avec sa flotte.",
+   "duration": 5,
+   "moves": {
+    "yuan-avant": {
+     "to": [
+      78,
+      28
+     ],
+     "state": "marche"
+    },
+    "yuan-centre": {
+     "to": [
+      84,
+      32
+     ],
+     "state": "marche"
+    },
+    "yuan-omar": {
+     "to": [
+      88,
+      26
+     ],
+     "state": "marche"
+    }
+   },
+   "tide": "haute"
+  },
+  {
+   "label": "Les barques vietnamiennes se montrent à la flotte yuan, tendent quelques flèches, puis se replient lentement en amont, au-delà des pieux. Les Yuan, se croyant vainqueurs, les poursuivent.",
+   "duration": 5,
+   "moves": {
+    "vn-leurre": {
+     "to": [
+      44,
+      30
+     ],
+     "state": "marche"
+    },
+    "yuan-avant": {
+     "to": [
+      62,
+      28
+     ],
+     "state": "marche"
+    },
+    "yuan-centre": {
+     "to": [
+      70,
+      32
+     ],
+     "state": "marche"
+    },
+    "yuan-omar": {
+     "to": [
+      76,
+      26
+     ],
+     "state": "marche"
+    }
+   },
+   "tide": "haute"
+  },
+  {
+   "label": "Les jonques lourdes franchissent la ligne des pieux sans les voir, à pleine marée. Le gros de la flotte entre dans le fleuve, étiré sur plusieurs milles.",
+   "duration": 5,
+   "moves": {
+    "vn-leurre": {
+     "to": [
+      26,
+      28
+     ],
+     "state": "marche"
+    },
+    "yuan-avant": {
+     "to": [
+      48,
+      30
+     ],
+     "state": "marche"
+    },
+    "yuan-centre": {
+     "to": [
+      56,
+      32
+     ],
+     "state": "marche"
+    },
+    "yuan-omar": {
+     "to": [
+      64,
+      26
+     ],
+     "state": "marche"
+    }
+   },
+   "tide": "haute"
+  },
+  {
+   "label": "La marée commence à descendre. Les barques de Trần Hưng Đạo font demi-tour et attaquent ; les jonques yuan veulent reculer vers la mer, mais les pieux affleurent et s'enfoncent dans leurs coques.",
+   "duration": 5,
+   "moves": {
+    "vn-leurre": {
+     "to": [
+      36,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.05,
+     "action": "baionnette"
+    },
+    "vn-flotte": {
+     "to": [
+      34,
+      18
+     ],
+     "state": "combat",
+     "losses": 0.03,
+     "action": "baionnette"
+    },
+    "yuan-avant": {
+     "to": [
+      44,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.25,
+     "action": "baionnette"
+    },
+    "yuan-centre": {
+     "to": [
+      50,
+      32
+     ],
+     "state": "combat",
+     "losses": 0.2,
+     "action": "baionnette"
+    },
+    "yuan-omar": {
+     "to": [
+      58,
+      26
+     ],
+     "state": "marche",
+     "losses": 0.05
+    }
+   },
+   "tide": "basse"
+  },
+  {
+   "label": "Les brûlots, lancés dans le courant, embrasent les jonques empalées sur les pieux. Les archers de la rive criblent les ponts. Le feu court d'une coque à l'autre.",
+   "duration": 5,
+   "moves": {
+    "vn-brulots": {
+     "to": [
+      44,
+      32
+     ],
+     "state": "combat",
+     "losses": 0.9,
+     "action": "feu"
+    },
+    "vn-archers": {
+     "to": [
+      40,
+      8
+     ],
+     "state": "combat",
+     "losses": 0.02,
+     "action": "feu"
+    },
+    "vn-flotte": {
+     "to": [
+      44,
+      26
+     ],
+     "state": "combat",
+     "losses": 0.05,
+     "action": "baionnette"
+    },
+    "yuan-avant": {
+     "to": [
+      44,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.6,
+     "action": "baionnette"
+    },
+    "yuan-centre": {
+     "to": [
+      50,
+      32
+     ],
+     "state": "combat",
+     "losses": 0.55,
+     "action": "baionnette"
+    }
+   },
+   "tide": "basse"
+  },
+  {
+   "label": "Plus de quatre cents navires yuan sont détruits ou capturés ; Omar est pris. Toghan s'enfuit par terre, l'armée de terre yuan sera taillée en pièces dans les montagnes.",
+   "duration": 6,
+   "moves": {
+    "yuan-avant": {
+     "to": [
+      44,
+      30
+     ],
+     "state": "fuite",
+     "losses": 0.9
+    },
+    "yuan-centre": {
+     "to": [
+      62,
+      32
+     ],
+     "state": "fuite",
+     "losses": 0.8
+    },
+    "yuan-omar": {
+     "to": [
+      80,
+      28
+     ],
+     "state": "fuite",
+     "losses": 0.7
+    },
+    "vn-flotte": {
+     "to": [
+      48,
+      28
+     ],
+     "state": "combat",
+     "losses": 0.06,
+     "action": "baionnette"
+    }
+   },
+   "tide": "basse"
+  }
+ ],
+ "sources": [
+  "Đại Việt sử ký toàn thư (chroniques vietnamiennes)",
+  "Histoire des Yuan (Yuanshi)",
+  "Wikipédia FR, « Bataille de Bạch Đằng (1288) »"
+ ]
+}

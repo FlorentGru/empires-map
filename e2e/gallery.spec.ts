@@ -45,7 +45,7 @@ test('galerie : unités de bataille (mini-scènes du moteur, fiche, « Où la vo
   await page.getByRole('button', { name: 'Galerie', exact: true }).click();
   const dialog = page.locator('dialog.gallery');
   await page.getByRole('button', { name: 'Unités de bataille', exact: true }).click();
-  await expect(dialog.getByRole('region', { name: 'Montures et engins' }).locator('.gallery__card')).toHaveCount(8);
+  await expect(dialog.getByRole('region', { name: 'Montures et engins' }).locator('.gallery__card')).toHaveCount(11);
   await expect(dialog.getByRole('region', { name: 'Formations' }).locator('.gallery__card')).toHaveCount(12);
 
   // Une mini-scène est rendue par le moteur : le canvas n'est pas uniforme.

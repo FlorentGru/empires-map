@@ -1,0 +1,428 @@
+{
+ "terrain": "mer",
+ "weather": "calme",
+ "decor": [
+  {
+   "kind": "cote",
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     100,
+     0
+    ],
+    [
+     100,
+     9
+    ],
+    [
+     70,
+     12
+    ],
+    [
+     40,
+     7
+    ],
+    [
+     0,
+     10
+    ]
+   ],
+   "label": "Côte nord de la baie de Yamen"
+  },
+  {
+   "kind": "cote",
+   "points": [
+    [
+     0,
+     52
+    ],
+    [
+     40,
+     54
+    ],
+    [
+     70,
+     50
+    ],
+    [
+     100,
+     53
+    ],
+    [
+     100,
+     60
+    ],
+    [
+     0,
+     60
+    ]
+   ],
+   "label": "Rive sud, île de Yaishan"
+  },
+  {
+   "kind": "rochers",
+   "points": [
+    [
+     50,
+     12
+    ],
+    [
+     58,
+     11
+    ],
+    [
+     60,
+     17
+    ],
+    [
+     52,
+     18
+    ]
+   ],
+   "label": "Mont Yai"
+  }
+ ],
+ "units": [
+  {
+   "id": "yuan-nord",
+   "army": 0,
+   "kind": "navires",
+   "troops": 6000,
+   "at": [
+    28,
+    16
+   ],
+   "formation": "ligne",
+   "ship": "jonque",
+   "label": "Escadre de Li Heng (nord)"
+  },
+  {
+   "id": "yuan-sud",
+   "army": 0,
+   "kind": "navires",
+   "troops": 8000,
+   "at": [
+    22,
+    44
+   ],
+   "formation": "ligne",
+   "ship": "jonque",
+   "label": "Flotte de Zhang Hongfan (sud), portée par la marée"
+  },
+  {
+   "id": "yuan-avant",
+   "army": 0,
+   "kind": "navires",
+   "troops": 6000,
+   "at": [
+    34,
+    30
+   ],
+   "formation": "ligne",
+   "ship": "jonque",
+   "label": "Navires à tours de la flotte yuan, archers et arbalétriers"
+  },
+  {
+   "id": "song-ouest",
+   "army": 1,
+   "kind": "navires",
+   "troops": 25000,
+   "at": [
+    66,
+    30
+   ],
+   "formation": "ligne",
+   "ship": "jonque",
+   "label": "Navires song enchaînés (face à l'ouest)"
+  },
+  {
+   "id": "song-centre",
+   "army": 1,
+   "kind": "navires",
+   "troops": 40000,
+   "at": [
+    76,
+    30
+   ],
+   "formation": "ligne",
+   "ship": "jonque",
+   "label": "Bloc central de mille navires, l'empereur Zhao Bing au milieu"
+  },
+  {
+   "id": "song-est",
+   "army": 1,
+   "kind": "navires",
+   "troops": 20000,
+   "at": [
+    84,
+    26
+   ],
+   "formation": "ligne",
+   "ship": "jonque",
+   "label": "Aile est et civils embarqués"
+  },
+  {
+   "id": "song-reserve",
+   "army": 1,
+   "kind": "navires",
+   "troops": 15000,
+   "at": [
+    82,
+    38
+   ],
+   "formation": "ligne",
+   "ship": "jonque",
+   "label": "Dernières jonques de Zhang Shijie"
+  }
+ ],
+ "phases": [
+  {
+   "label": "En 1279, la flotte song, mille navires attachés bord à bord, est acculée dans la baie de Yamen. Zhang Shijie refuse d'abandonner l'empereur de huit ans. Les Yuan coupent l'accès à l'eau douce ; les hommes boivent l'eau de mer et tombent malades.",
+   "duration": 5,
+   "moves": {
+    "yuan-nord": {
+     "to": [
+      34,
+      16
+     ],
+     "state": "marche"
+    },
+    "yuan-sud": {
+     "to": [
+      30,
+      44
+     ],
+     "state": "marche"
+    },
+    "yuan-avant": {
+     "to": [
+      40,
+      30
+     ],
+     "state": "marche"
+    }
+   },
+   "tide": "haute"
+  },
+  {
+   "label": "Li Heng attaque par le nord à la marée montante, mais les arbalétriers song, protégés par les enchaînements, repoussent l'assaut avec peu de pertes.",
+   "duration": 5,
+   "moves": {
+    "yuan-nord": {
+     "to": [
+      44,
+      18
+     ],
+     "state": "combat",
+     "losses": 0.1,
+     "action": "feu"
+    },
+    "song-ouest": {
+     "to": [
+      62,
+      28
+     ],
+     "state": "combat",
+     "losses": 0.05,
+     "action": "feu"
+    },
+    "song-centre": {
+     "to": [
+      76,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.02,
+     "action": "feu"
+    }
+   },
+   "tide": "haute"
+  },
+  {
+   "label": "Le 19 mars, Zhang Hongfan attend le reflux. Il rejoint la bouche de la baie avec la marée descendante qui l'emporte contre l'ennemi, tandis qu'il fait battre les tambours comme pour un banquet.",
+   "duration": 5,
+   "moves": {
+    "yuan-sud": {
+     "to": [
+      50,
+      42
+     ],
+     "state": "marche"
+    },
+    "yuan-nord": {
+     "to": [
+      46,
+      18
+     ],
+     "state": "marche"
+    },
+    "yuan-avant": {
+     "to": [
+      52,
+      30
+     ],
+     "state": "marche"
+    }
+   },
+   "tide": "basse"
+  },
+  {
+   "label": "Les Song, croyant à une fête, relâchent la garde. Les Yuan lancent l'assaut des deux côtés à la fois : le nord par Li Heng, le sud par Zhang. Les chaînes empêchent les Song de manœuvrer.",
+   "duration": 5,
+   "moves": {
+    "yuan-sud": {
+     "to": [
+      62,
+      40
+     ],
+     "state": "combat",
+     "losses": 0.05,
+     "action": "baionnette"
+    },
+    "yuan-nord": {
+     "to": [
+      62,
+      18
+     ],
+     "state": "combat",
+     "losses": 0.12,
+     "action": "baionnette"
+    },
+    "yuan-avant": {
+     "to": [
+      64,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.1,
+     "action": "baionnette"
+    },
+    "song-ouest": {
+     "to": [
+      64,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.3,
+     "action": "baionnette"
+    },
+    "song-centre": {
+     "to": [
+      76,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.1,
+     "action": "baionnette"
+    }
+   },
+   "tide": "basse"
+  },
+  {
+   "label": "Les navires de l'aile ouest sont emportés l'un après l'autre. Les chaînes se brisent ; la flotte song, serrée, se désagrège en désordre sous les flèches et le feu.",
+   "duration": 5,
+   "moves": {
+    "yuan-sud": {
+     "to": [
+      68,
+      38
+     ],
+     "state": "combat",
+     "losses": 0.08,
+     "action": "baionnette"
+    },
+    "yuan-nord": {
+     "to": [
+      70,
+      22
+     ],
+     "state": "combat",
+     "losses": 0.15,
+     "action": "baionnette"
+    },
+    "song-ouest": {
+     "to": [
+      66,
+      30
+     ],
+     "state": "fuite",
+     "losses": 0.7
+    },
+    "song-centre": {
+     "to": [
+      76,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.45,
+     "action": "baionnette"
+    },
+    "song-est": {
+     "to": [
+      84,
+      26
+     ],
+     "state": "combat",
+     "losses": 0.3,
+     "action": "baionnette"
+    }
+   },
+   "tide": "basse"
+  },
+  {
+   "label": "Lu Xiufu, voyant la défaite, prend l'empereur-enfant sur son dos et se jette à la mer. Des centaines de milliers de Song se noient avec eux. La dynastie des Song s'éteint.",
+   "duration": 6,
+   "moves": {
+    "song-centre": {
+     "to": [
+      78,
+      30
+     ],
+     "state": "fuite",
+     "losses": 0.9
+    },
+    "song-est": {
+     "to": [
+      90,
+      24
+     ],
+     "state": "fuite",
+     "losses": 0.85
+    },
+    "song-reserve": {
+     "to": [
+      94,
+      38
+     ],
+     "state": "fuite",
+     "losses": 0.6
+    },
+    "song-ouest": {
+     "to": [
+      66,
+      30
+     ],
+     "state": "fuite",
+     "losses": 0.85
+    },
+    "yuan-avant": {
+     "to": [
+      72,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.15
+    }
+   },
+   "tide": "basse"
+  }
+ ],
+ "sources": [
+  "Histoire des Yuan (Yuanshi), chap. sur Zhang Hongfan",
+  "Histoire des Song (Songshi), annales de Bing",
+  "Wikipédia FR, « Bataille de Yamen »"
+ ]
+}

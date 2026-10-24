@@ -1,6 +1,6 @@
 /** Armes de la fenêtre de bataille : qui tire, avec quoi, à quel rythme. Pur, sans DOM. */
 import type { Faction } from '../types';
-import type { BattleUnitKind } from '../types-battle';
+import type { BattleUnit, BattleUnitKind } from '../types-battle';
 import { MUZZLE } from './poses';
 
 export type Firearm = 'fusil' | 'arquebuse';
@@ -32,12 +32,34 @@ export function firearmOf(faction: Faction | undefined): Firearm | null {
   return null;
 }
 
-/** Arme de tir d'une unité, ou null si elle ne tire pas (mêlée). */
-export function weaponOf(kind: BattleUnitKind, faction: Faction | undefined): Weapon | null {
+export type ShipType = NonNullable<BattleUnit['ship']>;
+/** Seuil d'année : galères à rames avant, vaisseaux à voiles carrées ensuite. */
+export const SAIL_YEAR = 1600;
+
+/** Navire propre à un peuple, quand il en a un (jonques d'Asie orientale, barques vietnamiennes). */
+export function factionShip(faction: Faction | undefined): ShipType | undefined {
+  if (faction === 'vietnamiens') return 'barque';
+  if (faction === 'chinois' || faction === 'mongols' || faction === 'coreens' || faction === 'japonais') return 'jonque';
+  return undefined;
+}
+
+/** Navire d'une unité : le `ship` du scénario prime, puis le navire du peuple, puis galère (avant 1600) ou vaisseau. */
+export function shipOf(unit: { ship?: ShipType }, faction: Faction | undefined, year: number | undefined): ShipType {
+  return unit.ship ?? factionShip(faction) ?? ((year ?? 0) < SAIL_YEAR ? 'galere' : 'vaisseau');
+}
+
+/**
+ * Arme de tir d'une unité, ou null si elle ne tire pas (mêlée). Les galions et vaisseaux tirent des bordées ;
+ * les jonques et barques, sans arme à feu, lancent des volées de flèches.
+ */
+export function weaponOf(kind: BattleUnitKind, faction: Faction | undefined, ship?: ShipType): Weapon | null {
   if (kind === 'artillerie') return 'canon';
   if (kind === 'archers' || kind === 'archers-montes') return 'arc';
   if (kind === 'infanterie') return firearmOf(faction);
-  if (kind === 'navires') return firearmOf(faction) ? 'bordee' : null;
+  if (kind === 'navires') {
+    if (ship === 'galion' || ship === 'vaisseau' || firearmOf(faction)) return 'bordee';
+    return ship === 'jonque' || ship === 'barque' ? 'arc' : null;
+  }
   return null;
 }
 

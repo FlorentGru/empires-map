@@ -5,6 +5,7 @@ import {
   durationOf,
   figuresOf,
   genericScenario,
+  hash01,
   MAX_EFFECTS,
   MAX_FIGURES,
   scaleFor,
@@ -15,7 +16,8 @@ import {
 } from '../../src/battle/engine';
 import { layoutOf } from '../../src/battle/formations';
 import { AVOID_START, sceneryLayout } from '../../src/battle/layout';
-import { firearmOf, isRanged } from '../../src/battle/weapons';
+import { firearmOf, isRanged, shipOf, weaponOf } from '../../src/battle/weapons';
+import { onStakes, stakePoints, stakeTilt, stakeVisibility, tideAt, wreckState, wreckStyle } from '../../src/battle/sea';
 import { weaponClass } from '../../src/battle/poses';
 import { SOLDIER_SPECS } from '../../src/figures/soldiers';
 import type { Faction } from '../../src/types';
@@ -518,8 +520,10 @@ describe('données de bataille', () => {
   });
 
   it('chaque scénario correspond à une bataille jouable', () => {
-    const playable = new Set(Object.keys(troops).map(stepIds));
-    for (const id of scenarioIds) expect(playable.has(id)).toBe(true);
+    // `<empireId>.<stepId>` : scénario propre à un empire (deux empires partageant une bataille) ; sinon `<stepId>`.
+    const steps = new Set(Object.keys(troops).map(stepIds));
+    const keys = new Set(Object.keys(troops));
+    for (const id of scenarioIds) expect(id.includes('.') ? keys.has(id.replace('.', '/')) : steps.has(id), id).toBe(true);
   });
 });
 
@@ -592,5 +596,80 @@ describe('paysage (layout.ts)', () => {
     expect(l.houses.length).toBeGreaterThanOrEqual(4);
     expect(sceneryLayout(generic(), 'prairie').generated).toBeGreaterThan(0);
     expect(sceneryLayout(generic(), 'mer').generated).toBe(0);
+  });
+});
+
+describe('navires, tempête et marée', () => {
+  const sea = (extra: Partial<BattleScenario> = {}, losses?: number, tides: ('haute' | 'basse' | undefined)[] = []): BattleScenario => ({
+    terrain: 'mer',
+    ...extra,
+    units: [{ id: 'u', army: 0, kind: 'navires', troops: 1600, at: [30, 30], formation: 'ligne' }],
+    phases: [
+      { label: 'a', duration: 4, moves: {}, tide: tides[0] },
+      { label: 'b', duration: 6, moves: { u: { state: 'combat', losses } }, tide: tides[1] },
+      { label: 'c', duration: 6, moves: {}, tide: tides[2] },
+    ],
+  });
+
+  it("ship : le scénario prime, puis le peuple, puis l'année", () => {
+    expect(shipOf({}, 'espagnols', 1571)).toBe('galere');
+    expect(shipOf({}, 'britanniques', 1805)).toBe('vaisseau');
+    expect(shipOf({ ship: 'galion' }, 'espagnols', 1588)).toBe('galion');
+    for (const f of ['chinois', 'mongols', 'coreens', 'japonais'] as const) expect(shipOf({}, f, 1281)).toBe('jonque');
+    expect(shipOf({}, 'vietnamiens', 1288)).toBe('barque');
+    expect(shipOf({ ship: 'vaisseau' }, 'chinois', 1800)).toBe('vaisseau');
+  });
+
+  it('jonques : volées de flèches ; galions : bordées', () => {
+    expect(weaponOf('navires', 'chinois', 'jonque')).toBe('arc');
+    expect(weaponOf('navires', 'espagnols', 'galion')).toBe('bordee');
+  });
+
+  it('tempête : les coques qui perdent des hommes chavirent, hors tempête elles coulent à plat', () => {
+    const storm = sea({ weather: 'tempete' }, 1);
+    expect(wreckStyle(storm)).toBe('chavire');
+    expect(wreckStyle(sea({ weather: 'vent' }, 1))).toBe('coule');
+    const end = stateAt(storm, 100, durationOf(storm), ['japonais']);
+    const dead = end.figures.filter((f) => f.state === 'mort');
+    expect(dead.length).toBe(end.figures.length);
+    expect(dead.every((f) => f.diedAt !== undefined && f.diedAt <= durationOf(storm))).toBe(true);
+    const at = dead[0]!.diedAt!;
+    expect(wreckState(storm, at, at, 1)).toMatchObject({ roll: 0, masts: true });
+    const later = wreckState(storm, at, at + 5, 1);
+    expect(Math.abs(later.roll)).toBeGreaterThan(2);
+    expect(later.masts).toBe(false);
+    expect(wreckState(sea({}, 1), at, at, 1)).toMatchObject({ roll: 0, sink: 1, masts: false });
+  });
+
+  it('marée basse : les pieux apparaissent, doucement', () => {
+    const sc = sea(
+      {
+        decor: [
+          {
+            kind: 'pieux',
+            points: [
+              [40, 20],
+              [60, 20],
+              [60, 40],
+              [40, 40],
+            ],
+          },
+        ],
+      },
+      undefined,
+      ['haute', 'basse', 'basse'],
+    );
+    expect(tideAt(sc, 1)).toBe(1);
+    expect(stakeVisibility(tideAt(sc, 1))).toBeLessThan(0.15);
+    expect(tideAt(sc, 4 + 1)).toBeLessThan(1);
+    expect(tideAt(sc, 4 + 1)).toBeGreaterThan(0);
+    expect(tideAt(sc, 12)).toBe(0);
+    expect(stakeVisibility(tideAt(sc, 12))).toBeGreaterThan(0.95);
+    expect(tideAt(sea(), 7)).toBe(1);
+    expect(stakePoints(sc.decor![0]!.points, hash01, 's').length).toBeGreaterThan(10);
+    expect(onStakes(sc, [50, 30])).toBe(true);
+    expect(onStakes(sc, [10, 30])).toBe(false);
+    expect(stakeTilt(0, true, 0.2)).not.toBe(0);
+    expect(Math.abs(stakeTilt(1, true, 0.2))).toBe(0);
   });
 });

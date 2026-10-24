@@ -20,7 +20,10 @@ import {
   ELEPHANT_NECK,
   HORSE_BACK,
 } from './mounts';
-import { drawGalley, drawSailer } from './ships';
+import { drawShip } from './ships';
+import { drawCoastTide, drawRiverTide } from './scenery';
+import { hasTide, onStakes, stakeTilt, stakeVisibility, stakePoints, swayFactor, tideAt, windFactorOf, wreckState, wreckStyle } from './sea';
+import { shipOf } from './weapons';
 
 /** Ajuste la taille interne du canvas à sa taille affichée (devicePixelRatio) ; renvoie le contexte en pixels CSS. */
 export function fitCanvas(canvas: HTMLCanvasElement): { ctx: CanvasRenderingContext2D; w: number; h: number } | null {
@@ -63,8 +66,20 @@ const SHADOW_BY_KIND: Record<BattleUnitKind, number> = {
 };
 /** Longueur d'une coque en unités de terrain. */
 const SHIP_LEN_T = 8.8;
-/** Seuil d'année : galères à rames avant, vaisseaux à voiles carrées ensuite. */
-const SAIL_YEAR = 1600;
+
+/** Pieux plantés (polygones `pieux` du scénario), triés par y, mis en cache par scénario. */
+const stakeCache = new WeakMap<BattleScenario, { x: number; y: number; h: number }[]>();
+function stakesOf(sc: BattleScenario) {
+  let r = stakeCache.get(sc);
+  if (!r) {
+    r = (sc.decor ?? []).flatMap((d, i) => (d.kind === 'pieux' ? stakePoints(d.points, hash01, `pieux${i}`) : [])).sort((a, b) => a.y - b.y);
+    stakeCache.set(sc, r);
+  }
+  return r;
+}
+
+/** Nombres pseudo-aléatoires fixes pour la pluie et les vagues. */
+const NOISE = Array.from({ length: 160 }, (_, i) => [hash01(`n${i}a`), hash01(`n${i}b`), hash01(`n${i}c`)] as const);
 
 /** Paysages gardés par bataille (la fenêtre n'en utilise qu'un ; la galerie des unités en anime plusieurs à la fois). */
 const sceneryCache = new Map<BattleScenario, { biome: BattleBiome; scenery: Scenery }>();
@@ -118,15 +133,16 @@ export function drawBattle(
   const sea = scenario.terrain === 'mer';
 
   // Coques : un navire par groupe d'équipage (unités `navires`) ; toute autre unité en mer garde une coque commune.
-  const ships = new Map<string, { x: number; y: number; n: number; facing: 1 | -1; alive: number; moving: boolean }>();
+  const ships = new Map<string, { x: number; y: number; n: number; facing: 1 | -1; alive: number; moving: boolean; deaths: number[]; unit: string }>();
   const groups = new Map<string, { xs: number[]; ys: number[] }>();
   for (const f of frame.figures) {
     if (f.ship) {
-      const s = ships.get(f.ship) ?? { x: 0, y: 0, n: 0, facing: f.facing, alive: 0, moving: false };
+      const s = ships.get(f.ship) ?? { x: 0, y: 0, n: 0, facing: f.facing, alive: 0, moving: false, deaths: [], unit: f.unit };
       s.x += f.x;
       s.y += f.y;
       s.n++;
       if (f.state !== 'mort') s.alive++;
+      else if (f.diedAt !== undefined) s.deaths.push(f.diedAt);
       if (!f.idle) s.moving = true;
       ships.set(f.ship, s);
       continue;
@@ -140,6 +156,24 @@ export function drawBattle(
   }
   for (const [id, g] of groups) drawHull(ctx, g, sx, sy, w, frame.t, id);
   const drawnShips = new Set<string>();
+  const storm = wreckStyle(scenario) === 'chavire';
+  // Coque perdue : équipage entièrement tombé ; dans la tempête, dès que la moitié de l'équipage est tombée, elle chavire.
+  const lostAt = new Map<string, number>();
+  for (const [id, s] of ships) {
+    const need = storm ? Math.ceil(s.n / 2) : s.n;
+    if (s.deaths.length >= need) lostAt.set(id, [...s.deaths].sort((a, b) => a - b)[need - 1]!);
+  }
+  const level = tideAt(scenario, frame.t);
+  if (hasTide(scenario) && level < 0.999) {
+    for (const d of scenery.layout.shapes) {
+      if (d.kind === 'riviere' && d.points.length >= 2) drawRiverTide(ctx, d, sx, sy, w, 1 - level);
+      else if (d.kind === 'cote' && d.points.length >= 3) drawCoastTide(ctx, d, sx, sy, w, 1 - level);
+    }
+  }
+  if (sea) drawSwell(ctx, w, h, frame.t, scenario.weather);
+  const stakes = stakesOf(scenario);
+  const vis = stakeVisibility(level);
+  let nextStake = 0;
 
   drawDust(ctx, frame, sx, sy, w);
 
@@ -147,19 +181,52 @@ export function drawBattle(
   for (const f of sorted) {
     // Un arbre plus au fond que la figurine est dessiné avant elle : le soldat passe devant ou derrière.
     while (nextTree < trees.length && trees[nextTree]!.y <= f.y) drawTree(ctx, trees[nextTree++]!, sx, sy);
+    while (nextStake < stakes.length && stakes[nextStake]!.y <= f.y) drawStake(ctx, stakes[nextStake++]!, sx, sy, fw, vis, frame.t);
     const sp = sprites[f.army];
     if (!sp) continue;
+    const lost = f.ship ? lostAt.get(f.ship) : undefined;
     if (f.ship && !drawnShips.has(f.ship)) {
       drawnShips.add(f.ship);
       const s = ships.get(f.ship)!;
+      const cx = (s.x / s.n) * sx;
+      const cy = (s.y / s.n) * sy;
+      const seed = hash01(f.ship) * 6.28;
+      const type = shipOf(unitById.get(s.unit) ?? {}, sp.faction, year);
+      const L = SHIP_LEN_T * sx;
+      const sway = swayFactor(scenario.weather);
       ctx.save();
-      ctx.translate((s.x / s.n) * sx, (s.y / s.n) * sy);
+      ctx.translate(cx, cy);
       if (s.facing === -1) ctx.scale(-1, 1);
-      const opts = { color: sp.color, t: frame.t, rowing: s.moving, seed: hash01(f.ship) * 6.28, wreck: s.alive === 0 };
-      if ((year ?? 0) < SAIL_YEAR) drawGalley(ctx, SHIP_LEN_T * sx, opts);
-      else drawSailer(ctx, SHIP_LEN_T * sx, opts);
+      // Tangage : houle, plus forte au vent et dans la tempête.
+      ctx.translate(0, Math.sin(frame.t * 1.9 + seed) * L * 0.012 * (sway - 1));
+      ctx.translate(0, L * 0.06);
+      let angle = Math.sin(frame.t * 1.1 + seed) * 0.012 * sway;
+      // Navire pris sur les pieux à marée basse : il penche.
+      if (hasTide(scenario) && onStakes(scenario, [s.x / s.n, s.y / s.n])) angle += stakeTilt(level, true, hash01(f.ship));
+      let wreck = s.alive === 0;
+      if (lost !== undefined) {
+        const w2 = wreckState(scenario, lost, frame.t, hash01(f.ship) < 0.5 ? -1 : 1);
+        angle += w2.roll;
+        ctx.translate(0, w2.sink * L * 0.1);
+        ctx.globalAlpha = w2.fade;
+        wreck = !w2.masts;
+      }
+      ctx.rotate(angle);
+      ctx.translate(0, -L * 0.06);
+      const opts = {
+        color: sp.color,
+        t: frame.t,
+        rowing: s.moving,
+        seed,
+        wreck,
+        wind: windFactorOf(scenario.weather),
+        cross: sp.faction === 'espagnols',
+      };
+      drawShip(ctx, type, L, opts);
       ctx.restore();
     }
+    // Équipage d'une coque chavirée : emporté avec elle.
+    if (lost !== undefined && frame.t > lost + 0.2) continue;
     const dw = fw * (SIZE_BY_KIND[f.kind] ?? 1);
     const dh = dw * 1.25;
     let px = f.x * sx;
@@ -208,7 +275,100 @@ export function drawBattle(
     ctx.globalAlpha = 1;
   }
   while (nextTree < trees.length) drawTree(ctx, trees[nextTree++]!, sx, sy);
+  while (nextStake < stakes.length) drawStake(ctx, stakes[nextStake++]!, sx, sy, fw, vis, frame.t);
   drawEffects(ctx, frame.effects, sx, sy, fw);
+  if (scenario.weather === 'tempete') drawStorm(ctx, w, h, frame.t);
+}
+
+/** Pieu pointu planté dans l'eau : à marée haute (vis faible) sa pointe affleure à peine, à marée basse il se dresse hors de la vase. */
+function drawStake(ctx: CanvasRenderingContext2D, st: { x: number; y: number; h: number }, sx: number, sy: number, fw: number, vis: number, t: number) {
+  const x = st.x * sx;
+  const y = st.y * sy;
+  if (vis < 0.2) {
+    // Pointe sous la surface : un anneau d'eau et une ombre brune, à peine visibles.
+    ctx.globalAlpha = 0.5;
+    ctx.strokeStyle = 'rgba(255, 255, 255, 0.8)';
+    ctx.lineWidth = Math.max(0.8, fw * 0.03);
+    ctx.beginPath();
+    ctx.ellipse(x, y, fw * 0.1 + Math.sin(t * 2 + x) * fw * 0.01, fw * 0.035, 0, 0, Math.PI * 2);
+    ctx.stroke();
+    ctx.globalAlpha = 0.3;
+    ctx.fillStyle = '#5b4326';
+    ctx.beginPath();
+    ctx.arc(x, y - fw * 0.02, fw * 0.035, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.globalAlpha = 1;
+    return;
+  }
+  const hgt = fw * 0.95 * st.h * vis;
+  const half = fw * 0.055;
+  ctx.globalAlpha = Math.min(1, vis * 1.2);
+  ctx.fillStyle = 'rgba(120, 100, 66, 0.55)';
+  ctx.beginPath();
+  ctx.ellipse(x, y, fw * 0.16, fw * 0.05, 0, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.fillStyle = '#6a4d2b';
+  ctx.strokeStyle = '#3b2a1a';
+  ctx.lineWidth = Math.max(0.8, fw * 0.025);
+  ctx.beginPath();
+  ctx.moveTo(x - half, y);
+  ctx.lineTo(x - half * 0.9, y - hgt * 0.78);
+  ctx.lineTo(x, y - hgt);
+  ctx.lineTo(x + half * 0.9, y - hgt * 0.78);
+  ctx.lineTo(x + half, y);
+  ctx.closePath();
+  ctx.fill();
+  ctx.stroke();
+  ctx.globalAlpha = 1;
+}
+
+/** Houle visible : crêtes blanches qui défilent ; plus nombreuses et plus grosses au vent, énormes dans la tempête. */
+function drawSwell(ctx: CanvasRenderingContext2D, w: number, h: number, t: number, weather: BattleScenario['weather']) {
+  if (weather !== 'vent' && weather !== 'tempete') return;
+  const storm = weather === 'tempete';
+  const n = storm ? 90 : 42;
+  const len = w * (storm ? 0.07 : 0.04);
+  ctx.save();
+  ctx.lineCap = 'round';
+  for (let i = 0; i < n; i++) {
+    const [a, b, c] = NOISE[i]!;
+    const speed = (storm ? 0.09 : 0.05) * (0.7 + c * 0.6);
+    const x = (((a + t * speed) % 1) + 1) % 1;
+    const y = b * h;
+    const pulse = 0.5 + 0.5 * Math.sin(t * (storm ? 2.6 : 1.8) + c * 9);
+    ctx.globalAlpha = (storm ? 0.85 : 0.6) * pulse;
+    ctx.strokeStyle = '#ffffff';
+    ctx.lineWidth = storm ? 2.4 : 1.4;
+    const px = x * (w + len) - len;
+    ctx.beginPath();
+    ctx.moveTo(px, y);
+    ctx.quadraticCurveTo(px + len / 2, y - len * (storm ? 0.28 : 0.14) * (0.6 + pulse * 0.4), px + len, y);
+    ctx.stroke();
+  }
+  ctx.restore();
+}
+
+/** Tempête : ciel assombri (voile gris-bleu) et pluie en traits obliques qui tombent. */
+function drawStorm(ctx: CanvasRenderingContext2D, w: number, h: number, t: number) {
+  ctx.save();
+  ctx.fillStyle = 'rgba(38, 50, 70, 0.34)';
+  ctx.fillRect(0, 0, w, h);
+  ctx.strokeStyle = 'rgba(225, 235, 245, 0.55)';
+  ctx.lineWidth = Math.max(1, w * 0.0014);
+  ctx.lineCap = 'round';
+  ctx.beginPath();
+  const len = h * 0.05;
+  for (let i = 0; i < NOISE.length; i++) {
+    const [a, b, c] = NOISE[i]!;
+    const y = (((b + t * (1.3 + c * 0.5)) % 1) + 1) % 1;
+    const x = (((a - y * 0.25 + t * 0.02) % 1) + 1) % 1;
+    const px = x * w * 1.1;
+    const py = y * (h + len) - len;
+    ctx.moveTo(px, py);
+    ctx.lineTo(px - len * 0.35, py + len);
+  }
+  ctx.stroke();
+  ctx.restore();
 }
 
 /** Bouclier du toit de la tortue, au-dessus de la tête : aplat aux couleurs du camp, bande claire et umbo doré. */

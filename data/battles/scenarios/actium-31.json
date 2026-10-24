@@ -1,0 +1,452 @@
+{
+ "terrain": "mer",
+ "weather": "vent",
+ "decor": [
+  {
+   "kind": "cote",
+   "points": [
+    [
+     88,
+     0
+    ],
+    [
+     100,
+     0
+    ],
+    [
+     100,
+     60
+    ],
+    [
+     84,
+     60
+    ],
+    [
+     90,
+     50
+    ],
+    [
+     80,
+     40
+    ],
+    [
+     88,
+     30
+    ],
+    [
+     92,
+     10
+    ]
+   ],
+   "label": "Golfe d'Ambracie"
+  },
+  {
+   "kind": "cote",
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     40,
+     0
+    ],
+    [
+     34,
+     5
+    ],
+    [
+     10,
+     7
+    ],
+    [
+     0,
+     5
+    ]
+   ],
+   "label": "Île de Leucade"
+  },
+  {
+   "kind": "rochers",
+   "points": [
+    [
+     74,
+     46
+    ],
+    [
+     82,
+     44
+    ],
+    [
+     84,
+     52
+    ],
+    [
+     76,
+     56
+    ]
+   ],
+   "label": "Cap d'Actium"
+  }
+ ],
+ "units": [
+  {
+   "id": "ag-gauche",
+   "army": 0,
+   "kind": "navires",
+   "troops": 15750,
+   "at": [
+    26,
+    12
+   ],
+   "formation": "ligne",
+   "ship": "galere",
+   "label": "Aile gauche d'Agrippa (liburnes légères)"
+  },
+  {
+   "id": "oct-centre",
+   "army": 0,
+   "kind": "navires",
+   "troops": 15750,
+   "at": [
+    22,
+    30
+   ],
+   "formation": "ligne",
+   "ship": "galere",
+   "label": "Centre d'Octavien"
+  },
+  {
+   "id": "oct-droite",
+   "army": 0,
+   "kind": "navires",
+   "troops": 13500,
+   "at": [
+    26,
+    48
+   ],
+   "formation": "ligne",
+   "ship": "galere",
+   "label": "Aile droite d'Arruntius"
+  },
+  {
+   "id": "ant-gauche",
+   "army": 1,
+   "kind": "navires",
+   "troops": 12000,
+   "at": [
+    66,
+    14
+   ],
+   "formation": "ligne",
+   "ship": "galere",
+   "label": "Aile gauche d'Antoine (Sosius)"
+  },
+  {
+   "id": "ant-centre",
+   "army": 1,
+   "kind": "navires",
+   "troops": 16000,
+   "at": [
+    68,
+    30
+   ],
+   "formation": "ligne",
+   "ship": "galere",
+   "label": "Grosses galères d'Antoine, tours de bois et catapultes"
+  },
+  {
+   "id": "ant-droite",
+   "army": 1,
+   "kind": "navires",
+   "troops": 12000,
+   "at": [
+    66,
+    48
+   ],
+   "formation": "ligne",
+   "ship": "galere",
+   "label": "Aile droite d'Antoine (Publicola)"
+  },
+  {
+   "id": "cleo",
+   "army": 2,
+   "kind": "navires",
+   "troops": 9600,
+   "at": [
+    82,
+    30
+   ],
+   "formation": "ligne",
+   "ship": "galere",
+   "label": "Escadre égyptienne de Cléopâtre, avec le trésor"
+  },
+  {
+   "id": "cleo-reserve",
+   "army": 2,
+   "kind": "navires",
+   "troops": 2400,
+   "at": [
+    86,
+    36
+   ],
+   "formation": "ligne",
+   "ship": "galere",
+   "label": "Navires de charge égyptiens"
+  }
+ ],
+ "phases": [
+  {
+   "label": "Au matin du 2 septembre -31, la flotte d'Antoine, bloquée dans le golfe, sort en trois escadres devant celle d'Octavien. Antoine, affamé et miné par les désertions, cherche à percer le blocus.",
+   "duration": 5,
+   "moves": {
+    "ant-gauche": {
+     "to": [
+      58,
+      14
+     ],
+     "state": "marche"
+    },
+    "ant-centre": {
+     "to": [
+      60,
+      30
+     ],
+     "state": "marche"
+    },
+    "ant-droite": {
+     "to": [
+      58,
+      48
+     ],
+     "state": "marche"
+    },
+    "ag-gauche": {
+     "to": [
+      34,
+      12
+     ],
+     "state": "marche"
+    },
+    "oct-centre": {
+     "to": [
+      32,
+      30
+     ],
+     "state": "marche"
+    },
+    "oct-droite": {
+     "to": [
+      34,
+      48
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Antoine refuse le combat rapproché tant que le vent est faible. Les légères liburnes d'Agrippa s'étirent vers le nord pour déborder l'aile gauche ennemie, étirant la ligne antonienne.",
+   "duration": 5,
+   "moves": {
+    "ag-gauche": {
+     "to": [
+      44,
+      6
+     ],
+     "state": "marche"
+    },
+    "ant-gauche": {
+     "to": [
+      54,
+      8
+     ],
+     "state": "marche"
+    },
+    "ant-centre": {
+     "to": [
+      56,
+      26
+     ],
+     "state": "marche"
+    },
+    "cleo": {
+     "to": [
+      76,
+      28
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Le vent d'ouest se lève à midi. Les galères d'Agrippa tournent autour des grosses unités d'Antoine, accablées de flèches, de traits enflammés et d'éperonnages. Un trou se creuse entre les ailes.",
+   "duration": 6,
+   "moves": {
+    "ag-gauche": {
+     "to": [
+      50,
+      12
+     ],
+     "state": "combat",
+     "losses": 0.1,
+     "action": "feu"
+    },
+    "ant-gauche": {
+     "to": [
+      52,
+      10
+     ],
+     "state": "combat",
+     "losses": 0.25,
+     "action": "feu"
+    },
+    "ant-centre": {
+     "to": [
+      54,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.2,
+     "action": "feu"
+    },
+    "oct-centre": {
+     "to": [
+      42,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.1,
+     "action": "feu"
+    },
+    "oct-droite": {
+     "to": [
+      46,
+      44
+     ],
+     "state": "combat",
+     "losses": 0.1,
+     "action": "feu"
+    },
+    "ant-droite": {
+     "to": [
+      54,
+      46
+     ],
+     "state": "combat",
+     "losses": 0.2,
+     "action": "baionnette"
+    }
+   }
+  },
+  {
+   "label": "L'escadre de Cléopâtre, voiles hissées, perce le centre dans le trou ouvert par le vent et s'enfuit vers le sud-ouest avec le trésor.",
+   "duration": 5,
+   "moves": {
+    "cleo": {
+     "to": [
+      50,
+      36
+     ],
+     "state": "marche"
+    },
+    "cleo-reserve": {
+     "to": [
+      60,
+      44
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Antoine passe sur une galère légère et suit Cléopâtre avec quelques navires. Le reste de sa flotte, abandonné par ses chefs, se bat encore par fidélité.",
+   "duration": 5,
+   "moves": {
+    "cleo": {
+     "to": [
+      34,
+      56
+     ],
+     "state": "fuite",
+     "losses": 0.05
+    },
+    "cleo-reserve": {
+     "to": [
+      44,
+      56
+     ],
+     "state": "fuite",
+     "losses": 0.05
+    },
+    "ant-centre": {
+     "to": [
+      56,
+      32
+     ],
+     "state": "combat",
+     "losses": 0.5,
+     "action": "baionnette"
+    },
+    "ant-droite": {
+     "to": [
+      50,
+      52
+     ],
+     "state": "fuite",
+     "losses": 0.4
+    }
+   }
+  },
+  {
+   "label": "L'armée d'Antoine sur terre se rend quelques jours plus tard. Une partie de la flotte brûle, le reste est capturé : Octavien reste maître de la Méditerranée.",
+   "duration": 5,
+   "moves": {
+    "cleo": {
+     "to": [
+      10,
+      58
+     ],
+     "state": "fuite",
+     "losses": 0.1
+    },
+    "cleo-reserve": {
+     "to": [
+      24,
+      58
+     ],
+     "state": "fuite",
+     "losses": 0.1
+    },
+    "ant-centre": {
+     "to": [
+      70,
+      40
+     ],
+     "state": "fuite",
+     "losses": 0.8
+    },
+    "ant-gauche": {
+     "to": [
+      72,
+      10
+     ],
+     "state": "fuite",
+     "losses": 0.7
+    },
+    "ant-droite": {
+     "to": [
+      60,
+      52
+     ],
+     "state": "fuite",
+     "losses": 0.7
+    }
+   }
+  }
+ ],
+ "sources": [
+  "Plutarque, Vie d'Antoine, 62-68",
+  "Dion Cassius, Histoire romaine, L, 29-35",
+  "Wikipédia FR, « Bataille d'Actium »"
+ ]
+}

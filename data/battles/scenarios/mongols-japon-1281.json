@@ -1,0 +1,486 @@
+{
+ "terrain": "mer",
+ "weather": "tempete",
+ "decor": [
+  {
+   "kind": "cote",
+   "points": [
+    [
+     92,
+     0
+    ],
+    [
+     100,
+     0
+    ],
+    [
+     100,
+     60
+    ],
+    [
+     92,
+     60
+    ],
+    [
+     90,
+     36
+    ],
+    [
+     94,
+     24
+    ]
+   ],
+   "label": "Baie de Hakata"
+  },
+  {
+   "kind": "rochers",
+   "points": [
+    [
+     86,
+     8
+    ],
+    [
+     89,
+     8
+    ],
+    [
+     89,
+     52
+    ],
+    [
+     86,
+     52
+    ]
+   ],
+   "label": "Mur de Hakata"
+  },
+  {
+   "kind": "ville",
+   "points": [
+    [
+     94,
+     26
+    ],
+    [
+     99,
+     26
+    ],
+    [
+     99,
+     34
+    ],
+    [
+     94,
+     34
+    ]
+   ],
+   "label": "Hakata"
+  },
+  {
+   "kind": "rochers",
+   "points": [
+    [
+     58,
+     8
+    ],
+    [
+     68,
+     7
+    ],
+    [
+     70,
+     14
+    ],
+    [
+     60,
+     15
+    ]
+   ],
+   "label": "Île de Shikano"
+  },
+  {
+   "kind": "rochers",
+   "points": [
+    [
+     40,
+     48
+    ],
+    [
+     50,
+     47
+    ],
+    [
+     52,
+     54
+    ],
+    [
+     42,
+     55
+    ]
+   ],
+   "label": "Îles de Takashima"
+  }
+ ],
+ "units": [
+  {
+   "id": "coree-1",
+   "army": 0,
+   "kind": "navires",
+   "troops": 22000,
+   "at": [
+    40,
+    14
+   ],
+   "formation": "ligne",
+   "ship": "jonque",
+   "label": "Flotte de l'Est (Yuan) : jonques coréennes de transport"
+  },
+  {
+   "id": "coree-2",
+   "army": 0,
+   "kind": "navires",
+   "troops": 18000,
+   "at": [
+    36,
+    24
+   ],
+   "formation": "ligne",
+   "ship": "jonque",
+   "label": "Flotte de l'Est (Yuan) : seconde escadre, Hong Dagu"
+  },
+  {
+   "id": "sud-1",
+   "army": 1,
+   "kind": "navires",
+   "troops": 50000,
+   "at": [
+    18,
+    44
+   ],
+   "formation": "ligne",
+   "ship": "jonque",
+   "label": "Flotte du Sud (Chinois) : arrivée tardive de Fan Wenhu"
+  },
+  {
+   "id": "sud-2",
+   "army": 1,
+   "kind": "navires",
+   "troops": 50000,
+   "at": [
+    16,
+    52
+   ],
+   "formation": "ligne",
+   "ship": "jonque",
+   "label": "Flotte du Sud (Chinois) : navires de transport de la Chine du Sud"
+  },
+  {
+   "id": "mur",
+   "army": 2,
+   "kind": "infanterie",
+   "troops": 16000,
+   "at": [
+    87,
+    26
+   ],
+   "formation": "ligne",
+   "label": "Samouraïs derrière le mur de pierre (Kikuchi)"
+  },
+  {
+   "id": "mur-archers",
+   "army": 2,
+   "kind": "archers",
+   "troops": 12000,
+   "at": [
+    87,
+    40
+   ],
+   "formation": "ligne",
+   "label": "Archers japonais sur le mur"
+  },
+  {
+   "id": "barques",
+   "army": 2,
+   "kind": "navires",
+   "troops": 12000,
+   "at": [
+    70,
+    10
+   ],
+   "formation": "ligne",
+   "ship": "barque",
+   "label": "Barques de samouraïs lançant des raids nocturnes"
+  }
+ ],
+ "phases": [
+  {
+   "label": "En juin 1281, la flotte de l'Est de 40 000 hommes débarque dans la baie de Hakata, mais le mur de pierre de trois mètres bâti depuis 1274 tient la plage sur vingt kilomètres.",
+   "duration": 5,
+   "moves": {
+    "coree-1": {
+     "to": [
+      62,
+      22
+     ],
+     "state": "marche"
+    },
+    "coree-2": {
+     "to": [
+      56,
+      32
+     ],
+     "state": "marche"
+    },
+    "mur": {
+     "to": [
+      88,
+      26
+     ],
+     "state": "marche"
+    },
+    "mur-archers": {
+     "to": [
+      88,
+      40
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Les Yuan attaquent le mur : les flèches japonaises, la cavalerie et des lancers de pierres rejettent les assauts. Les Mongols se rembarquent, ne tenant qu'une étroite bande de terre.",
+   "duration": 5,
+   "moves": {
+    "coree-1": {
+     "to": [
+      70,
+      22
+     ],
+     "state": "combat",
+     "losses": 0.03,
+     "action": "feu"
+    },
+    "mur": {
+     "to": [
+      87,
+      24
+     ],
+     "state": "combat",
+     "losses": 0.03,
+     "action": "baionnette"
+    },
+    "mur-archers": {
+     "to": [
+      87,
+      36
+     ],
+     "state": "combat",
+     "losses": 0.02,
+     "action": "feu"
+    },
+    "coree-2": {
+     "to": [
+      64,
+      32
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Chaque nuit, des barques légères de samouraïs, comme celles de Takezaki Suenaga, abordent les navires yuan et incendient leurs ponts. Les Mongols se retirent vers l'île de Shikano.",
+   "duration": 5,
+   "moves": {
+    "barques": {
+     "to": [
+      58,
+      18
+     ],
+     "state": "combat",
+     "losses": 0.03,
+     "action": "baionnette"
+    },
+    "coree-1": {
+     "to": [
+      60,
+      16
+     ],
+     "state": "combat",
+     "losses": 0.08,
+     "action": "baionnette"
+    },
+    "coree-2": {
+     "to": [
+      58,
+      28
+     ],
+     "state": "combat",
+     "losses": 0.06,
+     "action": "baionnette"
+    }
+   }
+  },
+  {
+   "label": "La flotte du Sud, avec 100 000 hommes, rejoint les Coréens près de Takashima. Pour plus de sécurité, les navires sont attachés les uns aux autres en rade fermée, serrés en un bloc.",
+   "duration": 5,
+   "moves": {
+    "sud-1": {
+     "to": [
+      44,
+      40
+     ],
+     "state": "marche"
+    },
+    "sud-2": {
+     "to": [
+      44,
+      50
+     ],
+     "state": "marche"
+    },
+    "coree-1": {
+     "to": [
+      48,
+      30
+     ],
+     "state": "marche"
+    },
+    "coree-2": {
+     "to": [
+      46,
+      38
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Le 15 août 1281, un typhon, le « vent divin » (kamikaze), frappe la rade. Les navires enchaînés se heurtent et se brisent ; des milliers d'hommes se noient.",
+   "duration": 6,
+   "moves": {
+    "sud-1": {
+     "to": [
+      42,
+      40
+     ],
+     "state": "combat",
+     "losses": 0.35
+    },
+    "sud-2": {
+     "to": [
+      42,
+      50
+     ],
+     "state": "combat",
+     "losses": 0.35
+    },
+    "coree-1": {
+     "to": [
+      46,
+      30
+     ],
+     "state": "combat",
+     "losses": 0.3
+    },
+    "coree-2": {
+     "to": [
+      44,
+      38
+     ],
+     "state": "combat",
+     "losses": 0.3
+    }
+   }
+  },
+  {
+   "label": "La tempête emporte la majorité de la flotte yuan : des dizaines de milliers de morts. Les survivants abandonnés sont massacrés par les Japonais sur le rivage.",
+   "duration": 5,
+   "moves": {
+    "sud-1": {
+     "to": [
+      42,
+      40
+     ],
+     "state": "fuite",
+     "losses": 0.7
+    },
+    "sud-2": {
+     "to": [
+      42,
+      50
+     ],
+     "state": "fuite",
+     "losses": 0.75
+    },
+    "coree-1": {
+     "to": [
+      46,
+      30
+     ],
+     "state": "fuite",
+     "losses": 0.6
+    },
+    "coree-2": {
+     "to": [
+      44,
+      38
+     ],
+     "state": "fuite",
+     "losses": 0.6
+    },
+    "barques": {
+     "to": [
+      52,
+      34
+     ],
+     "state": "combat",
+     "losses": 0.03,
+     "action": "baionnette"
+    }
+   }
+  },
+  {
+   "label": "Les rescapés regagnent la Corée et la Chine ; les Japonais gardent le mur et leurs rivages. Les Mongols ne reviendront plus.",
+   "duration": 4,
+   "moves": {
+    "coree-1": {
+     "to": [
+      8,
+      18
+     ],
+     "state": "fuite",
+     "losses": 0.65
+    },
+    "coree-2": {
+     "to": [
+      6,
+      28
+     ],
+     "state": "fuite",
+     "losses": 0.65
+    },
+    "sud-1": {
+     "to": [
+      6,
+      46
+     ],
+     "state": "fuite",
+     "losses": 0.78
+    },
+    "sud-2": {
+     "to": [
+      4,
+      54
+     ],
+     "state": "fuite",
+     "losses": 0.8
+    }
+   }
+  }
+ ],
+ "sources": [
+  "Thomas Conlan, In Little Need of Divine Intervention (2001)",
+  "Stephen Turnbull, The Mongol Invasions of Japan 1274 and 1281",
+  "Wikipédia FR, « Invasions mongoles du Japon »"
+ ]
+}

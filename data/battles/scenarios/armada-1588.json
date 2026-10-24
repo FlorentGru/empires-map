@@ -1,0 +1,582 @@
+{
+ "terrain": "mer",
+ "weather": "vent",
+ "decor": [
+  {
+   "kind": "cote",
+   "points": [
+    [
+     0,
+     0
+    ],
+    [
+     62,
+     0
+    ],
+    [
+     48,
+     6
+    ],
+    [
+     20,
+     10
+    ],
+    [
+     0,
+     14
+    ]
+   ],
+   "label": "Côte d'Angleterre"
+  },
+  {
+   "kind": "cote",
+   "points": [
+    [
+     0,
+     54
+    ],
+    [
+     40,
+     52
+    ],
+    [
+     70,
+     56
+    ],
+    [
+     100,
+     52
+    ],
+    [
+     100,
+     60
+    ],
+    [
+     0,
+     60
+    ]
+   ],
+   "label": "Côte de France"
+  },
+  {
+   "kind": "ville",
+   "points": [
+    [
+     64,
+     46
+    ],
+    [
+     72,
+     46
+    ],
+    [
+     72,
+     52
+    ],
+    [
+     64,
+     52
+    ]
+   ],
+   "label": "Calais"
+  },
+  {
+   "kind": "ville",
+   "points": [
+    [
+     82,
+     46
+    ],
+    [
+     90,
+     46
+    ],
+    [
+     90,
+     52
+    ],
+    [
+     82,
+     52
+    ]
+   ],
+   "label": "Gravelines"
+  },
+  {
+   "kind": "rochers",
+   "points": [
+    [
+     88,
+     38
+    ],
+    [
+     98,
+     37
+    ],
+    [
+     98,
+     44
+    ],
+    [
+     90,
+     44
+    ]
+   ],
+   "label": "Bancs de Flandre"
+  }
+ ],
+ "units": [
+  {
+   "id": "arm-avant",
+   "army": 0,
+   "kind": "navires",
+   "troops": 6750,
+   "at": [
+    16,
+    24
+   ],
+   "formation": "croissant",
+   "ship": "galion",
+   "label": "Aile droite de l'Armada (Leyva)"
+  },
+  {
+   "id": "arm-centre",
+   "army": 0,
+   "kind": "navires",
+   "troops": 8100,
+   "at": [
+    14,
+    32
+   ],
+   "formation": "croissant",
+   "ship": "galion",
+   "label": "Centre de Medina Sidonia, galions de guerre"
+  },
+  {
+   "id": "arm-arriere",
+   "army": 0,
+   "kind": "navires",
+   "troops": 6750,
+   "at": [
+    16,
+    40
+   ],
+   "formation": "croissant",
+   "ship": "galion",
+   "label": "Arrière-garde de Recalde, galions de Castille"
+  },
+  {
+   "id": "arm-galeasses",
+   "army": 0,
+   "kind": "navires",
+   "troops": 2700,
+   "at": [
+    22,
+    32
+   ],
+   "formation": "ligne",
+   "ship": "galere",
+   "label": "Galéasses de Naples"
+  },
+  {
+   "id": "arm-transports",
+   "army": 0,
+   "kind": "navires",
+   "troops": 2700,
+   "at": [
+    8,
+    32
+   ],
+   "formation": "ligne",
+   "ship": "galion",
+   "label": "Transports et hourques, soldats du duc de Parme à embarquer"
+  },
+  {
+   "id": "eng-howard",
+   "army": 1,
+   "kind": "navires",
+   "troops": 4800,
+   "at": [
+    10,
+    14
+   ],
+   "formation": "ligne",
+   "ship": "galion",
+   "label": "Escadre de Howard, amiral d'Angleterre"
+  },
+  {
+   "id": "eng-drake",
+   "army": 1,
+   "kind": "navires",
+   "troops": 4800,
+   "at": [
+    8,
+    44
+   ],
+   "formation": "ligne",
+   "ship": "galion",
+   "label": "Escadre de Drake, galions rapides"
+  },
+  {
+   "id": "eng-seymour",
+   "army": 1,
+   "kind": "navires",
+   "troops": 4000,
+   "at": [
+    60,
+    20
+   ],
+   "formation": "ligne",
+   "ship": "galion",
+   "label": "Escadre de Seymour, détroit du Pas-de-Calais"
+  },
+  {
+   "id": "eng-brulots",
+   "army": 1,
+   "kind": "brulots",
+   "troops": 2400,
+   "at": [
+    40,
+    14
+   ],
+   "formation": "ligne",
+   "ship": "galion",
+   "label": "Huit brûlots anglais, vieux navires chargés de poix"
+  }
+ ],
+ "phases": [
+  {
+   "label": "Du 31 juillet au 2 août 1588, l'Armada remonte la Manche en croissant serré. Les galions anglais, plus manœuvrants et à canons plus longs, restent au vent et tirent de loin sur les ailes.",
+   "duration": 5,
+   "moves": {
+    "arm-avant": {
+     "to": [
+      30,
+      22
+     ],
+     "state": "marche"
+    },
+    "arm-centre": {
+     "to": [
+      28,
+      30
+     ],
+     "state": "marche"
+    },
+    "arm-arriere": {
+     "to": [
+      30,
+      38
+     ],
+     "state": "marche"
+    },
+    "arm-galeasses": {
+     "to": [
+      34,
+      30
+     ],
+     "state": "marche"
+    },
+    "arm-transports": {
+     "to": [
+      24,
+      30
+     ],
+     "state": "marche"
+    },
+    "eng-howard": {
+     "to": [
+      22,
+      14
+     ],
+     "state": "marche"
+    },
+    "eng-drake": {
+     "to": [
+      22,
+      44
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Combats de Plymouth à l'île de Wight : les Anglais harcèlent sans aborder, car le croissant ne se rompt pas. Les Espagnols, leurs boulets trop courts, perdent peu de navires mais épuisent leurs munitions.",
+   "duration": 5,
+   "moves": {
+    "eng-howard": {
+     "to": [
+      38,
+      12
+     ],
+     "state": "combat",
+     "losses": 0.02,
+     "action": "feu"
+    },
+    "eng-drake": {
+     "to": [
+      40,
+      46
+     ],
+     "state": "combat",
+     "losses": 0.02,
+     "action": "feu"
+    },
+    "arm-avant": {
+     "to": [
+      44,
+      22
+     ],
+     "state": "combat",
+     "losses": 0.03,
+     "action": "feu"
+    },
+    "arm-arriere": {
+     "to": [
+      44,
+      40
+     ],
+     "state": "combat",
+     "losses": 0.05,
+     "action": "feu"
+    },
+    "arm-centre": {
+     "to": [
+      42,
+      30
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Le 6 août, l'Armada jette l'ancre devant Calais, en attendant le duc de Parme et ses barges d'invasion, jamais prêtes. Les Anglais, renforcés par l'escadre de Seymour, se rangent à la portée de tir.",
+   "duration": 4,
+   "moves": {
+    "arm-centre": {
+     "to": [
+      66,
+      40
+     ],
+     "state": "marche"
+    },
+    "arm-avant": {
+     "to": [
+      66,
+      34
+     ],
+     "state": "marche"
+    },
+    "arm-arriere": {
+     "to": [
+      66,
+      46
+     ],
+     "state": "marche"
+    },
+    "arm-galeasses": {
+     "to": [
+      70,
+      40
+     ],
+     "state": "marche"
+    },
+    "arm-transports": {
+     "to": [
+      62,
+      40
+     ],
+     "state": "marche"
+    },
+    "eng-seymour": {
+     "to": [
+      56,
+      24
+     ],
+     "state": "marche"
+    },
+    "eng-howard": {
+     "to": [
+      50,
+      18
+     ],
+     "state": "marche"
+    },
+    "eng-drake": {
+     "to": [
+      52,
+      36
+     ],
+     "state": "marche"
+    }
+   }
+  },
+  {
+   "label": "Dans la nuit, huit brûlots sont lancés vers l'Armada dans le courant. Les capitaines espagnols, effrayés par le souvenir des « machines infernales » d'Anvers, coupent leurs câbles : la formation éclate.",
+   "duration": 5,
+   "moves": {
+    "eng-brulots": {
+     "to": [
+      62,
+      38
+     ],
+     "state": "combat",
+     "losses": 0.9,
+     "action": "feu"
+    },
+    "arm-centre": {
+     "to": [
+      72,
+      34
+     ],
+     "state": "marche",
+     "losses": 0.02
+    },
+    "arm-avant": {
+     "to": [
+      74,
+      28
+     ],
+     "state": "marche",
+     "losses": 0.04
+    },
+    "arm-arriere": {
+     "to": [
+      76,
+      44
+     ],
+     "state": "marche",
+     "losses": 0.06
+    },
+    "arm-transports": {
+     "to": [
+      70,
+      46
+     ],
+     "state": "marche",
+     "losses": 0.05
+    }
+   }
+  },
+  {
+   "label": "Le 8 août à Gravelines, les Anglais, rapprochés, tirent à bout portant jusqu'à épuisement de leurs munitions. Plusieurs galions espagnols sont coulés ou drossés vers les bancs de Flandre.",
+   "duration": 6,
+   "moves": {
+    "eng-howard": {
+     "to": [
+      78,
+      34
+     ],
+     "state": "combat",
+     "losses": 0.03,
+     "action": "feu"
+    },
+    "eng-drake": {
+     "to": [
+      78,
+      42
+     ],
+     "state": "combat",
+     "losses": 0.03,
+     "action": "feu"
+    },
+    "eng-seymour": {
+     "to": [
+      74,
+      26
+     ],
+     "state": "combat",
+     "losses": 0.03,
+     "action": "feu"
+    },
+    "arm-centre": {
+     "to": [
+      84,
+      34
+     ],
+     "state": "combat",
+     "losses": 0.3,
+     "action": "feu"
+    },
+    "arm-avant": {
+     "to": [
+      86,
+      28
+     ],
+     "state": "combat",
+     "losses": 0.3,
+     "action": "feu"
+    },
+    "arm-arriere": {
+     "to": [
+      86,
+      44
+     ],
+     "state": "combat",
+     "losses": 0.35,
+     "action": "feu"
+    },
+    "arm-transports": {
+     "to": [
+      82,
+      48
+     ],
+     "state": "combat",
+     "losses": 0.4,
+     "action": "feu"
+    }
+   }
+  },
+  {
+   "label": "Le vent de sud-ouest pousse l'Armada dans la mer du Nord. Les Espagnols contournent l'Écosse et l'Irlande ; tempêtes et récifs achèveront la dispersion, perdant près de la moitié des navires et des hommes.",
+   "duration": 5,
+   "moves": {
+    "arm-centre": {
+     "to": [
+      96,
+      8
+     ],
+     "state": "fuite",
+     "losses": 0.45
+    },
+    "arm-avant": {
+     "to": [
+      98,
+      14
+     ],
+     "state": "fuite",
+     "losses": 0.45
+    },
+    "arm-arriere": {
+     "to": [
+      92,
+      22
+     ],
+     "state": "fuite",
+     "losses": 0.5
+    },
+    "arm-galeasses": {
+     "to": [
+      92,
+      16
+     ],
+     "state": "fuite",
+     "losses": 0.6
+    },
+    "arm-transports": {
+     "to": [
+      86,
+      52
+     ],
+     "state": "fuite",
+     "losses": 0.65
+    }
+   }
+  }
+ ],
+ "sources": [
+  "Garrett Mattingly, The Armada, 1959",
+  "Geoffrey Parker, The Grand Strategy of Philip II",
+  "Wikipédia FR, « Invincible Armada »"
+ ]
+}

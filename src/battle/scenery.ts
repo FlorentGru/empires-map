@@ -426,6 +426,56 @@ function drawRiver(ctx: Ctx, d: SceneShape, sx: number, sy: number, w: number) {
   ctx.setLineDash([]);
 }
 
+/**
+ * Marée descendante : par-dessus la rivière précalculée, bandes de vase sur les berges (large à marée basse) et eau plus étroite.
+ * `ebb` va de 0 (marée haute : rien à dessiner) à 1 (marée basse).
+ */
+export function drawRiverTide(ctx: Ctx, d: SceneShape, sx: number, sy: number, w: number, ebb: number) {
+  const width = Math.max(7, w * 0.02);
+  ctx.save();
+  ctx.globalAlpha = Math.min(1, ebb * 8); // apparition douce au début du reflux
+  ctx.lineJoin = 'round';
+  ctx.lineCap = 'round';
+  const mud = width + 3 + w * 0.03 * ebb;
+  smoothPath(ctx, d, sx, sy);
+  ctx.strokeStyle = 'rgba(59, 42, 26, 0.55)';
+  ctx.lineWidth = mud + 2;
+  ctx.stroke();
+  smoothPath(ctx, d, sx, sy);
+  ctx.strokeStyle = '#b8a477';
+  ctx.lineWidth = mud;
+  ctx.stroke();
+  smoothPath(ctx, d, sx, sy);
+  ctx.strokeStyle = '#8f7c55'; // vase humide, plus sombre près de l'eau
+  ctx.lineWidth = width + 1 + w * 0.012 * ebb;
+  ctx.stroke();
+  smoothPath(ctx, d, sx, sy);
+  ctx.strokeStyle = '#6f95a5';
+  ctx.lineWidth = Math.max(2, (width + 1) * (1 - 0.55 * ebb));
+  ctx.stroke();
+  smoothPath(ctx, d, sx, sy);
+  ctx.strokeStyle = '#a3cad6';
+  ctx.lineWidth = Math.max(1, (width - 2) * (1 - 0.55 * ebb));
+  ctx.stroke();
+  ctx.restore();
+}
+
+/** Marée descendante sur une rive (polygone `cote`) : une bande de vase s'étale le long du bord, de plus en plus large. */
+export function drawCoastTide(ctx: Ctx, d: SceneShape, sx: number, sy: number, w: number, ebb: number) {
+  ctx.save();
+  ctx.globalAlpha = Math.min(1, ebb * 8);
+  ctx.lineJoin = 'round';
+  polyPath(ctx, d, sx, sy);
+  ctx.strokeStyle = 'rgba(143, 124, 85, 0.85)';
+  ctx.lineWidth = w * 0.05 * ebb;
+  ctx.stroke();
+  polyPath(ctx, d, sx, sy);
+  ctx.strokeStyle = '#b8a477';
+  ctx.lineWidth = w * 0.028 * ebb;
+  ctx.stroke();
+  ctx.restore();
+}
+
 function drawRoad(ctx: Ctx, d: SceneShape, sx: number, sy: number, w: number) {
   const width = Math.max(5, w * 0.011);
   smoothPath(ctx, d, sx, sy);
