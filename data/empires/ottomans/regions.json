@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Empire ottoman",
+    "summary": "L'État fondé par Osman, petit chef turc de Bithynie, et gouverné par ses descendants pendant six siècles. Depuis Constantinople, devenue Istanbul, le sultan règne sur l'Anatolie, les Balkans et le monde arabe, avec une administration de pachas et de cadis et une armée dont les janissaires forment le cœur.",
+    "years": [1299, 1922]
+  },
+  {
+    "name": "Empire byzantin",
+    "summary": "Ce qui reste de l'Empire romain d'Orient : Constantinople et quelques lambeaux de Thrace et de Grèce. Encerclé par les Ottomans, l'empereur doit leur verser tribut et fournir des troupes, avant la chute de la ville en 1453.",
+    "years": [1389, 1389]
+  },
+  {
+    "name": "Tsarat de Tarnovo",
+    "summary": "Le royaume bulgare de Tarnovo, sur le Danube, réduit à la vassalité après les victoires ottomanes en Thrace. Le tsar Ivan Chichman paie tribut, puis Bayezid Ier prend sa capitale en 1393 et met fin au second Empire bulgare.",
+    "years": [1389, 1389]
+  },
+  {
+    "name": "Despotat de Serbie",
+    "summary": "La Serbie des successeurs du prince Lazare, tué à Kosovo en 1389. Ses despotes, vassaux du sultan, lui envoient des troupes tout en cherchant l'appui de la Hongrie, jusqu'à la prise de Smederevo en 1459 qui en fait une province ottomane.",
+    "years": [1396, 1453]
+  },
+  {
+    "name": "Valachie",
+    "summary": "Principauté roumaine entre les Carpates et le Danube, gouvernée par ses propres voïvodes mais tributaire de la Porte. Vlad l'Empaleur s'y révolte au XVe siècle ; plus tard, le sultan y nomme des princes grecs du Phanar, avant l'autonomie sous protection russe puis l'union avec la Moldavie.",
+    "years": [1396, 1839]
+  },
+  {
+    "name": "Despotat de Morée",
+    "summary": "Le Péloponnèse byzantin, gouverné depuis Mistra par des frères de l'empereur. Tributaire des Ottomans après 1446, il survit quelques années à la chute de Constantinople avant d'être conquis par Mehmed II en 1460.",
+    "years": [1444, 1453]
+  },
+  {
+    "name": "Beylik de Karaman",
+    "summary": "Principauté turque d'Anatolie centrale, autour de Konya, longtemps la grande rivale des Ottomans pour l'héritage seldjoukide. Contrainte à reconnaître la suzeraineté du sultan, elle est annexée par Mehmed II dans les années 1470.",
+    "years": [1444, 1444]
+  },
+  {
+    "name": "Khanat de Crimée",
+    "summary": "État tatar issu de la Horde d'or, gouverné par la dynastie des Giray depuis Bakhtchyssaraï. Vassal du sultan à partir de 1475, il fournit une redoutable cavalerie et mène des raids en Pologne et en Russie, jusqu'à son indépendance imposée par la Russie en 1774 puis son annexion en 1783.",
+    "years": [1514, 1699]
+  },
+  {
+    "name": "Moldavie",
+    "summary": "Principauté roumaine entre les Carpates et le Dniestr. Après la résistance d'Étienne le Grand, elle accepte de payer tribut au sultan tout en gardant ses princes, ses boyards et son Église orthodoxe ; au XIXe siècle, elle passe sous protection russe puis s'unit à la Valachie.",
+    "years": [1514, 1839]
+  },
+  {
+    "name": "Hongrie de Zápolya",
+    "summary": "Le royaume de Jean Zápolya, élu roi de Hongrie après Mohács contre Ferdinand de Habsbourg. Pour tenir face à son rival, il se place sous la protection de Soliman, qui fait de lui son vassal, avant d'annexer Buda en 1541.",
+    "years": [1529, 1538]
+  },
+  {
+    "name": "Régence d'Alger",
+    "summary": "Province ottomane fondée par les frères Barberousse, corsaires qui offrent Alger au sultan en 1519. Gouvernée par des pachas, puis des deys élus par la milice des janissaires, elle vit largement de la course en Méditerranée jusqu'à la conquête française de 1830.",
+    "years": [1538, 1827]
+  },
+  {
+    "name": "Transylvanie",
+    "summary": "Principauté née du partage de la Hongrie après 1541, gouvernée par des princes hongrois élus mais tributaires du sultan. Terre de tolérance religieuse entre catholiques, protestants et orthodoxes, elle passe aux Habsbourg après l'échec ottoman devant Vienne en 1683.",
+    "years": [1566, 1683]
+  },
+  {
+    "name": "Régence de Tripoli",
+    "summary": "La Libye ottomane, prise aux chevaliers de Malte en 1551. Elle devient au XVIIIe siècle presque indépendante sous la dynastie des Karamanli, qui vit de la course, avant que le sultan n'y rétablisse son autorité directe en 1835.",
+    "years": [1571, 1827]
+  },
+  {
+    "name": "Régence de Tunis",
+    "summary": "La Tunisie, disputée entre Espagnols et Ottomans jusqu'à la conquête de 1574. Ses beys, de la dynastie husseinite à partir de 1705, gouvernent en princes quasi indépendants tout en reconnaissant le sultan, jusqu'au protectorat français de 1881.",
+    "years": [1669, 1878]
+  },
+  {
+    "name": "Égypte de Méhémet Ali",
+    "summary": "L'Égypte du pacha Méhémet Ali, officier albanais devenu gouverneur en 1805. Il modernise l'armée et l'économie, conquiert le Soudan et défie même le sultan ; ses descendants restent vassaux nominaux de la Porte jusqu'à l'occupation britannique de 1882.",
+    "years": [1827, 1878]
+  },
+  {
+    "name": "Principauté de Serbie",
+    "summary": "La Serbie libérée par les insurrections de 1804 et 1815, devenue principauté autonome sous suzeraineté ottomane. Ses princes Obrenović obtiennent le départ des garnisons turques en 1867, puis l'indépendance complète au congrès de Berlin en 1878.",
+    "years": [1827, 1839]
+  },
+  {
+    "name": "Principauté de Bulgarie",
+    "summary": "État bulgare créé par le congrès de Berlin en 1878, autonome mais tributaire du sultan. Bien plus petit que la « Grande Bulgarie » voulue par la Russie, il annexe la Roumélie orientale en 1885 et proclame son indépendance en 1908.",
+    "years": [1878, 1878]
+  },
+  {
+    "name": "Roumélie orientale",
+    "summary": "Province autonome du sud de la Bulgarie actuelle, autour de Plovdiv, laissée au sultan par le congrès de Berlin avec un gouverneur chrétien. Ses habitants, en majorité bulgares, s'unissent à la principauté de Bulgarie dès 1885.",
+    "years": [1878, 1878]
+  }
+]

@@ -61,3 +61,5 @@ Corrige les petits écarts (une ville mal classée, un statut) directement dans 
 - Le Saint-Empire avait la caméra enfermée dans son `bounds` (Europe centrale) : on ne pouvait plus aller voir les empires contemporains. `bounds` ne limite plus la caméra ; ne pas réintroduire de borne.
 - Ne jamais regénérer les autres empires : `git status` doit rester vide pour eux.
 - Sous Windows, `npm run fetch:data` peut lancer le `bash` de WSL au lieu de Git Bash : lancer directement `bash scripts/fetch-basemaps.sh` depuis Git Bash.
+- Après création de `data/empires/<id>/`, des tests vitest peuvent échouer en `loaders[key] is not a function` : la liste de `import.meta.glob` est en cache dans `node_modules/.vitest-cache` (clé = contenu du fichier source). `rm -rf node_modules/.vitest-cache` ; la CI n'est pas touchée.
+- Les URL Wikipédia : `curl` en boucle déclenche des 429 ; vérifier les titres en un seul appel à l'API (`action=query&titles=A|B|…&redirects=1`, pages `missing`), et écarter les pages d'homonymie (`prop=pageprops`).
