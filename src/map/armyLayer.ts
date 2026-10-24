@@ -91,6 +91,14 @@ const PEOPLE: Record<Faction, string> = {
   basques: 'Basques',
   indiens: 'Indiens',
   scythes: 'Scythes',
+  janissaires: 'Janissaires',
+  serbes: 'Serbes',
+  hongrois: 'Hongrois',
+  timourides: 'Timourides',
+  venitiens: 'Vénitiens',
+  safavides: 'Safavides',
+  'ottomans-modernes': 'Ottomans',
+  'grecs-modernes': 'Grecs',
 };
 const esc = (v: string) => v.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const plain = (v: string) =>

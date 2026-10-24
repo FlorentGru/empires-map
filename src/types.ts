@@ -236,7 +236,16 @@ export type Faction =
   | 'basques'
   // Empire d'Alexandre
   | 'indiens'
-  | 'scythes';
+  | 'scythes'
+  // Empire ottoman
+  | 'janissaires'
+  | 'serbes'
+  | 'hongrois'
+  | 'timourides'
+  | 'venitiens'
+  | 'safavides'
+  | 'ottomans-modernes'
+  | 'grecs-modernes';
 
 export const FACTIONS: Faction[] = [
   'romains',
@@ -305,6 +314,14 @@ export const FACTIONS: Faction[] = [
   'basques',
   'indiens',
   'scythes',
+  'janissaires',
+  'serbes',
+  'hongrois',
+  'timourides',
+  'venitiens',
+  'safavides',
+  'ottomans-modernes',
+  'grecs-modernes',
 ];
 
 export type Archetype =
@@ -352,6 +369,11 @@ export type Archetype =
   | 'empereur-carolingien'
   | 'seigneur-franc'
   | 'prelat'
+  // Empire ottoman
+  | 'grand-vizir'
+  | 'sultane'
+  | 'shah'
+  | 'pacha'
   // Tous empires : savant, philosophe (et figure du guide de l'Atlas)
   | 'sage';
 
@@ -395,6 +417,10 @@ export const ARCHETYPES: Archetype[] = [
   'empereur-carolingien',
   'seigneur-franc',
   'prelat',
+  'grand-vizir',
+  'sultane',
+  'shah',
+  'pacha',
 ];
 
 export interface ArmyMove {
