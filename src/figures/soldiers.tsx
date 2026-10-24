@@ -1072,6 +1072,185 @@ export const CAROLINGIAN_SOLDIER_SPECS = {
   },
 } satisfies Partial<Record<Faction, Spec>>;
 
+/* ---------- Empire ottoman : janissaires, Balkans, Hongrie, Timourides, Venise, Safavides, XIXe-XXe siècles ---------- */
+
+/** Fusil long à canon fin (evzone, klephte). */
+const longRifle = () =>
+  rect(24.5, 27, 2.6, 11, WOOD) +
+  rect(25.4, 5, 1, 22.5, '#6e7378') +
+  rect(24.9, 14, 2, 1, BRONZE, 0, 'stroke="none"') +
+  rect(24.9, 20, 2, 1, BRONZE, 0, 'stroke="none"');
+/** Cimeterre courbe. */
+const scimitar = (hilt = GOLD) =>
+  `<g transform="rotate(14 26 20)">` +
+  path('M25 4Q29.8 10 27.6 23L25.4 23Z', '#d6dadc') +
+  rect(23.8, 22.6, 5, 1.4, hilt) +
+  rect(25.2, 24, 1.6, 4.6, WOOD) +
+  `</g>`;
+/** Bonnet à plume et visage moustachu. */
+const plume = (c: string) => path('M18 4.4Q22 -1 24.4 1.2Q21.6 2 20 6Z', c);
+
+export const OTTOMAN_SOLDIER_SPECS = {
+  janissaires: {
+    skin: '#d2a070',
+    tunic: '#2a4f9b',
+    legs: 'pants',
+    legColor: '#a8362a',
+    boots: '#2b2219',
+    deco:
+      path('M10.6 14.4Q16 12.8 21.4 14.4L22 25L10 25Z', '#2a4f9b', 'stroke="none"') +
+      stroke('M16 14.5V24', GOLD, 0.8) +
+      rect(10.2, 23.4, 11.6, 2.2, '#c0392b', 0, 'stroke="none"') +
+      path('M9.6 24.4L12.6 24.2L12.2 28.8L9.8 28.8Z', '#d6dadc') +
+      path('M8.4 28.6L13.6 28.6L13.2 30.4L8.8 30.4Z', GOLD),
+    head:
+      path('M11.7 8.2Q11.2 3 13.4 1.4Q16 0.6 18.6 1.4Q20.4 3 20.3 8.2Q16 6.6 11.7 8.2Z', WHITE) +
+      path('M11.4 7.6Q8.4 8.4 7.6 14.4Q9.4 12.8 11.8 12Z', WHITE) +
+      stroke('M11.7 6.8Q16 5.4 20.3 6.8', GOLD, 1.1) +
+      circ(16, 3.6, 0.9, GOLD, 'stroke="none"') +
+      moustache('#2d2018'),
+    weapon: arquebus(),
+  },
+  serbes: {
+    tunic: '#8a8f96',
+    legs: 'pants',
+    legColor: '#5a4a3a',
+    boots: '#2b2219',
+    deco:
+      mailTorso('#aeb3b8', '#7e848a') +
+      path('M10.6 17L21.4 17L21.8 25L10.2 25Z', RED, 'stroke="none" opacity="0.9"') +
+      rect(10.2, 24, 11.6, 1.5, '#3a2a1a', 0, 'stroke="none"'),
+    head:
+      path('M11.6 8.6Q11.6 3.4 16 3.2Q20.4 3.4 20.4 8.6L19.6 8.6L19.6 7L12.4 7L12.4 8.6Z', STEEL) +
+      path('M15.6 3.2L16.4 3.2L16.4 8.4L15.6 8.4Z', '#7e848a', 'stroke="none"') +
+      path('M11.4 8.4Q11.2 12.4 13 13.6L12.6 9Z', '#7e848a') +
+      stroke('M13.4 14.2Q16 15.4 18.6 14.2', '#7e848a', 1),
+    shield: kite(RED, stroke('M8.5 16.6V30.6M4.6 21.4H12.4', WHITE, 1.6)),
+    weapon: spear(37),
+  },
+  hongrois: {
+    skin: '#d8a878',
+    tunic: '#2f7a4a',
+    legs: 'pants',
+    legColor: '#e8dcc0',
+    boots: '#7a2a20',
+    deco:
+      path('M10.6 14.4Q16 12.8 21.4 14.4L22 25L10 25Z', '#2f7a4a', 'stroke="none"') +
+      stroke('M12.4 15.6H19.6M12.4 18.6H19.6M12.4 21.6H19.6', GOLD, 0.8) +
+      circ(12.4, 15.6, 0.7, GOLD, 'stroke="none"') +
+      circ(12.4, 18.6, 0.7, GOLD, 'stroke="none"') +
+      circ(12.4, 21.6, 0.7, GOLD, 'stroke="none"') +
+      rect(10.2, 23.8, 11.6, 1.8, RED, 0, 'stroke="none"'),
+    back: path('M10 14L6.4 28L10.6 25.6Z', '#b0302a'),
+    head:
+      path('M11.5 8Q11.4 3.6 14 2.4Q16 1.8 18.4 2.4Q20.6 3.6 20.5 8Q16 6.6 11.5 8Z', '#7a2a20') +
+      rect(11.2, 6.2, 9.6, 1.8, '#d9c27a', 0.6) +
+      plume(WHITE) +
+      moustache('#2d2018'),
+    shield: path('M3.4 15Q9.6 14 13.6 17Q13 25 8.8 31Q4.6 25 3.4 15Z', '#a8281e') + stroke('M4.6 16.4Q8.6 17 12.4 18.6', GOLD, 0.8),
+    weapon: saber(),
+  },
+  timourides: {
+    skin: '#c89a6a',
+    tunic: '#1f7fa0',
+    legs: 'pants',
+    legColor: '#4a3a2a',
+    boots: '#2b2219',
+    deco:
+      path('M10.6 14.4Q16 12.8 21.4 14.4L22 25L10 25Z', '#1f7fa0', 'stroke="none"') +
+      stroke('M10.8 17.4H21.2M10.6 20.2H21.4M10.4 23H21.6', '#c9d0d4', 0.9) +
+      stroke('M13 14.4V25M16 13.8V25M19 14.4V25', '#7e848a', 0.5) +
+      rect(10.2, 24.2, 11.6, 1.6, '#e0b43a', 0, 'stroke="none"'),
+    back: quiver('#8a5a2b'),
+    head:
+      path('M11.6 8.8Q11.4 6 16 5.8Q20.6 6 20.4 8.8L21.4 13Q16 14.6 10.6 13Z', '#9aa0a6') +
+      path('M12 6.6Q12.4 3.4 16 2.6Q19.6 3.4 20 6.6Z', STEEL) +
+      path('M15.3 2.8L16 -2L16.7 2.8Z', STEEL) +
+      stroke('M12.6 10.4H19.4', '#7e848a', 0.6),
+    weapon:
+      bow('#5a3a1a') +
+      rect(27.6, 0.4, 0.9, 12, WOOD, 0, 'stroke="none"') +
+      path('M27.2 0.8Q31.8 1.6 31.4 6.4Q30.4 4.4 28.6 5Q30.2 3.6 27.2 2.6Z', '#e8e0cc') +
+      path('M28 6.6Q31.4 9 30 13.6Q29.4 10.4 28 9.4Z', '#e8e0cc'),
+  },
+  venitiens: {
+    tunic: '#b02a22',
+    legs: 'pants',
+    legColor: '#e8dcc0',
+    legColor2: '#b02a22',
+    boots: '#4a2f1a',
+    deco:
+      path('M10.6 14.4Q16 12.8 21.4 14.4L22 25L10 25Z', '#b02a22', 'stroke="none"') +
+      path('M10.4 14.6Q16 12.6 21.6 14.6L21.8 17.4Q16 16 10.2 17.4Z', '#e8dcc0', 'stroke="none"') +
+      rect(10.2, 23.6, 11.6, 1.8, '#3a2a1a', 0, 'stroke="none"'),
+    head: morion('#8f979d') + moustache('#4a3a2a'),
+    shield:
+      path('M3.4 15.5L13.6 15.5L13.6 24Q13.6 29.4 8.5 32.4Q3.4 29.4 3.4 24Z', '#2f4f9b') +
+      path('M6 24.8Q6.2 19.6 9.6 18.6Q11.6 18.4 11.6 20.4Q9.6 20.4 9.4 23.2L11.2 25Q9.6 27.8 7.2 27Q6 26.4 6 24.8Z', GOLD, 'stroke="none"') +
+      path('M5.2 21.2Q7.6 20.4 8.4 17.6Q7.8 21.6 5.2 21.2Z', GOLD, 'stroke="none"'),
+    weapon: pike(),
+  },
+  safavides: {
+    skin: '#d2a070',
+    tunic: '#8a1f2a',
+    legs: 'pants',
+    legColor: '#2f6f5a',
+    boots: '#4a2f1a',
+    deco:
+      mailTorso('#aeb3b8', '#7e848a') +
+      path('M10.6 15.4Q16 13.8 21.4 15.4L21.8 18Q16 16.6 10.2 18Z', '#8a1f2a', 'stroke="none"') +
+      rect(10.2, 23.8, 11.6, 1.8, '#e0b43a', 0, 'stroke="none"'),
+    back: quiver('#8a1f2a'),
+    head:
+      path('M11.5 8.2Q11.3 4.4 16 4Q20.7 4.4 20.5 8.2Q16 6.4 11.5 8.2Z', '#c0262a') +
+      stroke('M12.6 5.8L12.2 8M14.2 5.2L13.8 7.6M15.8 5L15.8 7.4M17.4 5.2L17.8 7.6M19 5.8L19.4 8', '#8a1f2a', 0.6) +
+      path('M15.3 4.2L16 -1.6L16.7 4.2Z', '#c0262a') +
+      moustache('#2d2018'),
+    weapon: scimitar('#c9a02a') + stroke('M24 9Q29 18 24 29', '#5a3a1a', 1.1),
+  },
+  'ottomans-modernes': {
+    skin: '#d2a070',
+    tunic: '#243a66',
+    legs: 'pants',
+    legColor: '#243a66',
+    boots: '#2b2219',
+    deco:
+      path('M10.6 14.4Q16 12.8 21.4 14.4L22 25L10 25Z', '#243a66', 'stroke="none"') +
+      stroke('M16 14.8V24', '#c9a02a', 0.8) +
+      circ(16, 17, 0.6, '#c9a02a', 'stroke="none"') +
+      circ(16, 20, 0.6, '#c9a02a', 'stroke="none"') +
+      rect(10.2, 23.6, 11.6, 1.8, '#5a3a1a', 0, 'stroke="none"') +
+      belts('#c9b27a'),
+    head:
+      path('M12.4 6.8Q12.6 2.8 16 2.6Q19.4 2.8 19.6 6.8Q16 5.8 12.4 6.8Z', '#c0262a') +
+      stroke('M16 2.8L19.4 6.2', '#1f1a14', 0.7) +
+      stroke('M16.2 2.8Q17 4.6 18.6 5.2', '#1f1a14', 0.7) +
+      moustache('#2d2018'),
+    weapon: musket(),
+  },
+  'grecs-modernes': {
+    skin: '#d8a878',
+    tunic: '#f1ead8',
+    legs: 'pants',
+    legColor: '#f4efe0',
+    legColor2: '#b02a22',
+    boots: '#b02a22',
+    skirt: WHITE,
+    deco:
+      path('M10.8 14.4Q16 12.8 21.2 14.4L21.6 22L10.4 22Z', '#2f4f9b', 'stroke="none"') +
+      stroke('M12.6 15.6H19.4M12.2 18.2H19.8M12 20.6H20', GOLD, 0.8) +
+      stroke('M12.4 25.6V32M14.2 25.6V32M16 25.6V32M17.8 25.6V32M19.6 25.6V32', '#cfc8b4', 0.6) +
+      rect(10.2, 23, 11.6, 1.6, '#b02a22', 0, 'stroke="none"'),
+    head:
+      path('M11.8 8Q11.6 4.2 16 4Q20.4 4.2 20.2 8Q16 6.4 11.8 8Z', '#b02a22') +
+      path('M11.6 5.6Q8.4 8 9.4 13L11.6 9Z', '#b02a22') +
+      stroke('M9.8 12.4L9 15', '#1f1a14', 1) +
+      circ(9, 15.4, 0.9, '#1f1a14', 'stroke="none"') +
+      moustache('#2d2018'),
+    weapon: longRifle(),
+  },
+} satisfies Partial<Record<Faction, Spec>>;
+
 export const SOLDIER_SPECS = {
   romains: {
     tunic: '#b23a2b',
@@ -1275,6 +1454,7 @@ export const SOLDIER_SPECS = {
   ...ESP_SOLDIER_SPECS,
   ...SAINT_SOLDIER_SPECS,
   ...CAROLINGIAN_SOLDIER_SPECS,
+  ...OTTOMAN_SOLDIER_SPECS,
 } satisfies Record<Faction, Spec>;
 
 /** Fabrique la chaîne SVG complète d'un soldat. */

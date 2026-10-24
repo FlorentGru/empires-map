@@ -1,0 +1,30 @@
+{
+ "areas": {
+  "osman-1299": 8866,
+  "bursa-1326": 21830,
+  "gallipoli-1354": 70970,
+  "kosovo-1389": 267159,
+  "nicopolis-1396": 514802,
+  "ankara-1402": 239260,
+  "varna-1444": 553497,
+  "constantinople-1453": 557325,
+  "chaldiran-1514": 1009270,
+  "le-caire-1517": 2818606,
+  "mohacs-1526": 2823444,
+  "vienne-1529": 2823444,
+  "preveza-1538": 3399470,
+  "szigetvar-1566": 3825184,
+  "lepante-1571": 3499991,
+  "candie-1669": 3447207,
+  "vienne-1683": 3477336,
+  "karlowitz-1699": 3339828,
+  "kucuk-kaynarca-1774": 3345151,
+  "navarin-1827": 2205201,
+  "tanzimat-1839": 2539501,
+  "berlin-1878": 3391324,
+  "balkaniques-1912": 2080420,
+  "gallipoli-1915": 2080420,
+  "sultanat-1922": 779434
+ },
+ "apogee": "szigetvar-1566"
+}

@@ -38,7 +38,8 @@
     "verify": "cd agent && .venv/bin/python -m atlas_agent.verify",
     "build:data:saint-empire": "tsx scripts/build-territories.ts --empire saint-empire && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire saint-empire && tsx scripts/build-neighbors.ts --empire saint-empire && tsx scripts/build-stats.ts --empire saint-empire && tsx scripts/build-contemporaries.ts",
     "build:data:carolingiens": "tsx scripts/build-territories.ts --empire carolingiens && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire carolingiens && tsx scripts/build-neighbors.ts --empire carolingiens && tsx scripts/build-stats.ts --empire carolingiens && tsx scripts/build-contemporaries.ts",
-    "build:data:alexandre": "tsx scripts/build-territories.ts --empire alexandre && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire alexandre && tsx scripts/build-neighbors.ts --empire alexandre && tsx scripts/build-stats.ts --empire alexandre && tsx scripts/build-contemporaries.ts"
+    "build:data:alexandre": "tsx scripts/build-territories.ts --empire alexandre && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire alexandre && tsx scripts/build-neighbors.ts --empire alexandre && tsx scripts/build-stats.ts --empire alexandre && tsx scripts/build-contemporaries.ts",
+    "build:data:ottomans": "tsx scripts/build-territories.ts --empire ottomans && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire ottomans && tsx scripts/build-neighbors.ts --empire ottomans && tsx scripts/build-stats.ts --empire ottomans && tsx scripts/build-contemporaries.ts"
   },
   "dependencies": {
     "@fontsource/cormorant-garamond": "^5.3.0",

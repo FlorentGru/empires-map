@@ -69,4 +69,12 @@ export const FACTION_COLORS = {
   basques: '#c0307a',
   indiens: '#d8861f',
   scythes: '#3f7a5a',
+  janissaires: '#1e3f8f',
+  serbes: '#b5302f',
+  hongrois: '#2f8a3a',
+  timourides: '#2a9ab0',
+  venitiens: '#9a1f3a',
+  safavides: '#c01f4a',
+  'ottomans-modernes': '#5a6a3a',
+  'grecs-modernes': '#4a7fd0',
 } satisfies Record<Faction, string>;

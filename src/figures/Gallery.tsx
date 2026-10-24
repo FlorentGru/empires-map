@@ -58,13 +58,20 @@ const ASIA: Faction[] = [
   'mamelouks',
 ];
 
+const OTTO: Faction[] = ['janissaires', 'serbes', 'hongrois', 'timourides', 'venitiens', 'safavides', 'ottomans-modernes', 'grecs-modernes'];
+
 const factionItem = (f: Faction): Item => ({ uid: `f:${f}`, kind: 'faction', faction: f, info: FACTION_INFO[f], color: FACTION_COLORS[f] });
 const archetypeItem = (a: Archetype): Item => ({ uid: `a:${a}`, kind: 'archetype', archetype: a, info: ARCHETYPE_INFO[a], color: '#8a7350' });
 
 const SECTIONS: { id: string; title: string; items: Item[] }[] = [
-  { id: 'antique', title: 'Antiquité et Moyen Âge', items: FACTIONS.filter((f) => !NAPO.includes(f) && !ASIA.includes(f)).map(factionItem) },
+  {
+    id: 'antique',
+    title: 'Antiquité et Moyen Âge',
+    items: FACTIONS.filter((f) => !NAPO.includes(f) && !ASIA.includes(f) && !OTTO.includes(f)).map(factionItem),
+  },
   { id: 'napoleon', title: 'Époque napoléonienne', items: NAPO.map(factionItem) },
   { id: 'asie', title: 'Asie orientale', items: ASIA.map(factionItem) },
+  { id: 'ottoman', title: 'Empire ottoman et voisins', items: OTTO.map(factionItem) },
   { id: 'persos', title: 'Personnages', items: ARCHETYPES.map(archetypeItem) },
 ];
 

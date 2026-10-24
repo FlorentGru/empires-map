@@ -1,0 +1,4427 @@
+{
+ "empire": "ottomans",
+ "basemapNote": "Empire composé (fromCarto) : pays Natural Earth 1:50m (Turquie, Balkans, Levant, Égypte, Irak, Libye…) découpés par des régions nommées (_regions.geojson) pour les débuts (1299-1402) et pour chaque recul territorial (Hongrie, Banat, Morée, Crète, Grèce 1830, Kars, Bosnie…). Les instantanés historical-basemaps ne sont pas utilisés : leur « Ottoman Empire » de 1492-1600 englobe à tort Tabriz, Tunis ou Bucarest.",
+ "steps": [
+  {
+   "id": "osman-1299",
+   "year": 1299,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire ottoman",
+     "status": "core",
+     "source": {
+      "region": "Beylik de Söğüt 1299"
+     }
+    }
+   ],
+   "notes": "Beylik d'Osman autour de Söğüt et d'Eskişehir, sans accès à la mer (région composée)."
+  },
+  {
+   "id": "bursa-1326",
+   "year": 1326,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire ottoman",
+     "status": "core",
+     "source": {
+      "region": "Bithynie 1326"
+     }
+    }
+   ],
+   "notes": "Bithynie intérieure et Brousse, façade sur Marmara à Mudanya (région composée)."
+  },
+  {
+   "id": "gallipoli-1354",
+   "year": 1354,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire ottoman",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "region": "Mysie et Bithynie 1354"
+       },
+       {
+        "region": "Gallipoli 1354"
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Mysie (Karasi), Bithynie et tête de pont de Gallipoli (régions composées)."
+  },
+  {
+   "id": "kosovo-1389",
+   "year": 1389,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire byzantin",
+     "status": "vassal",
+     "source": {
+      "region": "Constantinople 1389"
+     }
+    },
+    {
+     "name": "Tsarat de Tarnovo",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Bulgaria)$"
+       },
+       {
+        "region": "Bulgarie du nord 1389"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire ottoman",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "region": "Anatolie du nord-ouest 1389"
+       },
+       {
+        "region": "Roumélie 1389"
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Anatolie du nord-ouest jusqu'à Ankara + Roumélie (Thrace, Macédoine orientale, Salonique, Bulgarie du sud) ; Byzance réduite à Constantinople, tsar de Tarnovo vassaux."
+  },
+  {
+   "id": "nicopolis-1396",
+   "year": 1396,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Despotat de Serbie",
+     "status": "vassal",
+     "source": {
+      "union": [
+       {
+        "country": "^(Serbia)$"
+       },
+       {
+        "country": "^(Kosovo)$"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Valachie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Romania)$"
+       },
+       {
+        "region": "Valachie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire ottoman",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "region": "Anatolie centrale-ouest 1396"
+       },
+       {
+        "region": "Roumélie 1389"
+       },
+       {
+        "country": "^(Bulgaria)$"
+       },
+       {
+        "country": "^(North Macedonia)$"
+       },
+       {
+        "inter": [
+         {
+          "diff": [
+           {
+            "country": "^(Greece)$"
+           },
+           {
+            "region": "Îles Ioniennes"
+           },
+           {
+            "region": "Crète"
+           }
+          ]
+         },
+         {
+          "region": "Thessalie et Épire"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Apogée médiéval de Bayezid : Anatolie sauf Karaman, Roumélie, Bulgarie, Thessalie ; Serbie et Valachie vassales."
+  },
+  {
+   "id": "ankara-1402",
+   "year": 1402,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire ottoman",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "diff": [
+         {
+          "region": "Roumélie 1389"
+         },
+         {
+          "region": "Salonique"
+         }
+        ]
+       },
+       {
+        "region": "Mysie et Bithynie 1354"
+       },
+       {
+        "region": "Amasya et Tokat 1402"
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Empire éclaté : Roumélie de Süleyman, noyau de Brousse et Amasya-Tokat ; Serbie et Valachie indépendantes."
+  },
+  {
+   "id": "varna-1444",
+   "year": 1444,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Despotat de Serbie",
+     "status": "vassal",
+     "source": {
+      "union": [
+       {
+        "country": "^(Serbia)$"
+       },
+       {
+        "country": "^(Kosovo)$"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Valachie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Romania)$"
+       },
+       {
+        "region": "Valachie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Despotat de Morée",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Greece)$"
+       },
+       {
+        "region": "Péloponnèse"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Beylik de Karaman",
+     "status": "vassal",
+     "source": {
+      "region": "Beylik de Karaman"
+     }
+    },
+    {
+     "name": "Empire ottoman",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "region": "Anatolie centrale-ouest 1396"
+       },
+       {
+        "region": "Roumélie 1389"
+       },
+       {
+        "country": "^(Bulgaria)$"
+       },
+       {
+        "country": "^(North Macedonia)$"
+       },
+       {
+        "country": "^(Kosovo)$"
+       },
+       {
+        "diff": [
+         {
+          "country": "^(Serbia)$"
+         },
+         {
+          "region": "Serbie du sud"
+         }
+        ]
+       },
+       {
+        "inter": [
+         {
+          "diff": [
+           {
+            "country": "^(Greece)$"
+           },
+           {
+            "region": "Îles Ioniennes"
+           },
+           {
+            "region": "Crète"
+           }
+          ]
+         },
+         {
+          "region": "Grèce continentale"
+         }
+        ]
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Romania)$"
+         },
+         {
+          "region": "Dobroudja"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Murad II : Anatolie sauf Karaman (vassal), Roumélie, Bulgarie, Thessalie ; Serbie, Valachie et Morée vassales."
+  },
+  {
+   "id": "constantinople-1453",
+   "year": 1453,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Despotat de Serbie",
+     "status": "vassal",
+     "source": {
+      "union": [
+       {
+        "country": "^(Serbia)$"
+       },
+       {
+        "country": "^(Kosovo)$"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Valachie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Romania)$"
+       },
+       {
+        "region": "Valachie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Despotat de Morée",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Greece)$"
+       },
+       {
+        "region": "Péloponnèse"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire ottoman",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "region": "Anatolie centrale-ouest 1396"
+       },
+       {
+        "region": "Roumélie 1389"
+       },
+       {
+        "region": "Thrace orientale 1453"
+       },
+       {
+        "country": "^(Bulgaria)$"
+       },
+       {
+        "country": "^(North Macedonia)$"
+       },
+       {
+        "country": "^(Kosovo)$"
+       },
+       {
+        "inter": [
+         {
+          "diff": [
+           {
+            "country": "^(Greece)$"
+           },
+           {
+            "region": "Îles Ioniennes"
+           },
+           {
+            "region": "Crète"
+           }
+          ]
+         },
+         {
+          "region": "Grèce continentale"
+         }
+        ]
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Romania)$"
+         },
+         {
+          "region": "Dobroudja"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Constantinople incluse ; Karaman indépendant (non dessiné)."
+  },
+  {
+   "id": "chaldiran-1514",
+   "year": 1514,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Khanat de Crimée",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Ukraine|Russia)$"
+       },
+       {
+        "region": "Khanat de Crimée"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Valachie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Romania)$"
+       },
+       {
+        "region": "Valachie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Moldavie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Moldova|Romania|Ukraine)$"
+       },
+       {
+        "region": "Moldavie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire ottoman",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "diff": [
+         {
+          "country": "^(Turkey)$"
+         },
+         {
+          "region": "Anatolie orientale 1514"
+         }
+        ]
+       },
+       {
+        "union": [
+         {
+          "region": "Roumélie 1389"
+         },
+         {
+          "region": "Thrace orientale 1453"
+         },
+         {
+          "country": "^(Bulgaria)$"
+         },
+         {
+          "country": "^(North Macedonia)$"
+         },
+         {
+          "country": "^(Kosovo)$"
+         },
+         {
+          "country": "^(Albania)$"
+         },
+         {
+          "country": "^(Bosnia and Herzegovina)$"
+         },
+         {
+          "country": "^(Montenegro)$"
+         },
+         {
+          "diff": [
+           {
+            "country": "^(Serbia)$"
+           },
+           {
+            "region": "Voïvodine"
+           }
+          ]
+         },
+         {
+          "diff": [
+           {
+            "diff": [
+             {
+              "country": "^(Greece)$"
+             },
+             {
+              "region": "Îles Ioniennes"
+             },
+             {
+              "region": "Crète"
+             }
+            ]
+           },
+           {
+            "region": "Dodécanèse"
+           }
+          ]
+         },
+         {
+          "inter": [
+           {
+            "country": "^(Romania)$"
+           },
+           {
+            "region": "Dobroudja"
+           }
+          ]
+         },
+         {
+          "inter": [
+           {
+            "country": "^(Moldova|Ukraine)$"
+           },
+           {
+            "region": "Budjak"
+           }
+          ]
+         },
+         {
+          "region": "Côte sud de Crimée"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Anatolie entière sauf l'est (Karaman annexé), Balkans jusqu'à la Bosnie, Albanie et Morée, Bessarabie du sud, Caffa."
+  },
+  {
+   "id": "le-caire-1517",
+   "year": 1517,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Khanat de Crimée",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Ukraine|Russia)$"
+       },
+       {
+        "region": "Khanat de Crimée"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Valachie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Romania)$"
+       },
+       {
+        "region": "Valachie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Moldavie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Moldova|Romania|Ukraine)$"
+       },
+       {
+        "region": "Moldavie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire ottoman",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "diff": [
+         {
+          "country": "^(Turkey)$"
+         },
+         {
+          "region": "Van et Kars"
+         }
+        ]
+       },
+       {
+        "union": [
+         {
+          "region": "Roumélie 1389"
+         },
+         {
+          "region": "Thrace orientale 1453"
+         },
+         {
+          "country": "^(Bulgaria)$"
+         },
+         {
+          "country": "^(North Macedonia)$"
+         },
+         {
+          "country": "^(Kosovo)$"
+         },
+         {
+          "country": "^(Albania)$"
+         },
+         {
+          "country": "^(Bosnia and Herzegovina)$"
+         },
+         {
+          "country": "^(Montenegro)$"
+         },
+         {
+          "diff": [
+           {
+            "country": "^(Serbia)$"
+           },
+           {
+            "region": "Voïvodine"
+           }
+          ]
+         },
+         {
+          "diff": [
+           {
+            "diff": [
+             {
+              "country": "^(Greece)$"
+             },
+             {
+              "region": "Îles Ioniennes"
+             },
+             {
+              "region": "Crète"
+             }
+            ]
+           },
+           {
+            "region": "Dodécanèse"
+           }
+          ]
+         },
+         {
+          "inter": [
+           {
+            "country": "^(Romania)$"
+           },
+           {
+            "region": "Dobroudja"
+           }
+          ]
+         },
+         {
+          "inter": [
+           {
+            "country": "^(Moldova|Ukraine)$"
+           },
+           {
+            "region": "Budjak"
+           }
+          ]
+         },
+         {
+          "region": "Côte sud de Crimée"
+         }
+        ]
+       },
+       {
+        "union": [
+         {
+          "union": [
+           {
+            "country": "^(Syria)$"
+           },
+           {
+            "country": "^(Lebanon)$"
+           },
+           {
+            "country": "^(Israel)$"
+           },
+           {
+            "country": "^(Palestine)$"
+           },
+           {
+            "country": "^(Jordan)$"
+           }
+          ]
+         },
+         {
+          "country": "^(Egypt)$"
+         },
+         {
+          "inter": [
+           {
+            "country": "^(Saudi Arabia)$"
+           },
+           {
+            "region": "Hedjaz"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Ajout de la Syrie, de la Palestine, de l'Égypte et du Hedjaz ; Diyarbakır incluse, Van et Kars encore perses."
+  },
+  {
+   "id": "mohacs-1526",
+   "year": 1526,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Khanat de Crimée",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Ukraine|Russia)$"
+       },
+       {
+        "region": "Khanat de Crimée"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Valachie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Romania)$"
+       },
+       {
+        "region": "Valachie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Moldavie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Moldova|Romania|Ukraine)$"
+       },
+       {
+        "region": "Moldavie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire ottoman",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "diff": [
+         {
+          "country": "^(Turkey)$"
+         },
+         {
+          "region": "Van et Kars"
+         }
+        ]
+       },
+       {
+        "union": [
+         {
+          "union": [
+           {
+            "region": "Roumélie 1389"
+           },
+           {
+            "region": "Thrace orientale 1453"
+           },
+           {
+            "country": "^(Bulgaria)$"
+           },
+           {
+            "country": "^(North Macedonia)$"
+           },
+           {
+            "country": "^(Kosovo)$"
+           },
+           {
+            "country": "^(Albania)$"
+           },
+           {
+            "country": "^(Bosnia and Herzegovina)$"
+           },
+           {
+            "country": "^(Montenegro)$"
+           },
+           {
+            "diff": [
+             {
+              "country": "^(Serbia)$"
+             },
+             {
+              "region": "Voïvodine"
+             }
+            ]
+           },
+           {
+            "diff": [
+             {
+              "diff": [
+               {
+                "country": "^(Greece)$"
+               },
+               {
+                "region": "Îles Ioniennes"
+               },
+               {
+                "region": "Crète"
+               }
+              ]
+             },
+             {
+              "region": "Dodécanèse"
+             }
+            ]
+           },
+           {
+            "inter": [
+             {
+              "country": "^(Romania)$"
+             },
+             {
+              "region": "Dobroudja"
+             }
+            ]
+           },
+           {
+            "inter": [
+             {
+              "country": "^(Moldova|Ukraine)$"
+             },
+             {
+              "region": "Budjak"
+             }
+            ]
+           },
+           {
+            "region": "Côte sud de Crimée"
+           }
+          ]
+         },
+         {
+          "diff": [
+           {
+            "country": "^(Greece)$"
+           },
+           {
+            "region": "Îles Ioniennes"
+           },
+           {
+            "region": "Crète"
+           }
+          ]
+         },
+         {
+          "region": "Syrmie"
+         }
+        ]
+       },
+       {
+        "union": [
+         {
+          "union": [
+           {
+            "country": "^(Syria)$"
+           },
+           {
+            "country": "^(Lebanon)$"
+           },
+           {
+            "country": "^(Israel)$"
+           },
+           {
+            "country": "^(Palestine)$"
+           },
+           {
+            "country": "^(Jordan)$"
+           }
+          ]
+         },
+         {
+          "country": "^(Egypt)$"
+         },
+         {
+          "inter": [
+           {
+            "country": "^(Saudi Arabia)$"
+           },
+           {
+            "region": "Hedjaz"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Rhodes (1522), Belgrade (1521) et la Syrmie."
+  },
+  {
+   "id": "vienne-1529",
+   "year": 1529,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Hongrie de Zápolya",
+     "status": "vassal",
+     "source": {
+      "region": "Hongrie de Zápolya"
+     }
+    },
+    {
+     "name": "Khanat de Crimée",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Ukraine|Russia)$"
+       },
+       {
+        "region": "Khanat de Crimée"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Valachie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Romania)$"
+       },
+       {
+        "region": "Valachie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Moldavie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Moldova|Romania|Ukraine)$"
+       },
+       {
+        "region": "Moldavie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire ottoman",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "diff": [
+         {
+          "country": "^(Turkey)$"
+         },
+         {
+          "region": "Van et Kars"
+         }
+        ]
+       },
+       {
+        "union": [
+         {
+          "union": [
+           {
+            "region": "Roumélie 1389"
+           },
+           {
+            "region": "Thrace orientale 1453"
+           },
+           {
+            "country": "^(Bulgaria)$"
+           },
+           {
+            "country": "^(North Macedonia)$"
+           },
+           {
+            "country": "^(Kosovo)$"
+           },
+           {
+            "country": "^(Albania)$"
+           },
+           {
+            "country": "^(Bosnia and Herzegovina)$"
+           },
+           {
+            "country": "^(Montenegro)$"
+           },
+           {
+            "diff": [
+             {
+              "country": "^(Serbia)$"
+             },
+             {
+              "region": "Voïvodine"
+             }
+            ]
+           },
+           {
+            "diff": [
+             {
+              "diff": [
+               {
+                "country": "^(Greece)$"
+               },
+               {
+                "region": "Îles Ioniennes"
+               },
+               {
+                "region": "Crète"
+               }
+              ]
+             },
+             {
+              "region": "Dodécanèse"
+             }
+            ]
+           },
+           {
+            "inter": [
+             {
+              "country": "^(Romania)$"
+             },
+             {
+              "region": "Dobroudja"
+             }
+            ]
+           },
+           {
+            "inter": [
+             {
+              "country": "^(Moldova|Ukraine)$"
+             },
+             {
+              "region": "Budjak"
+             }
+            ]
+           },
+           {
+            "region": "Côte sud de Crimée"
+           }
+          ]
+         },
+         {
+          "diff": [
+           {
+            "country": "^(Greece)$"
+           },
+           {
+            "region": "Îles Ioniennes"
+           },
+           {
+            "region": "Crète"
+           }
+          ]
+         },
+         {
+          "region": "Syrmie"
+         }
+        ]
+       },
+       {
+        "union": [
+         {
+          "union": [
+           {
+            "country": "^(Syria)$"
+           },
+           {
+            "country": "^(Lebanon)$"
+           },
+           {
+            "country": "^(Israel)$"
+           },
+           {
+            "country": "^(Palestine)$"
+           },
+           {
+            "country": "^(Jordan)$"
+           }
+          ]
+         },
+         {
+          "country": "^(Egypt)$"
+         },
+         {
+          "inter": [
+           {
+            "country": "^(Saudi Arabia)$"
+           },
+           {
+            "region": "Hedjaz"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Comme 1526 + royaume de Hongrie vassal (Zápolya)."
+  },
+  {
+   "id": "preveza-1538",
+   "year": 1538,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Hongrie de Zápolya",
+     "status": "vassal",
+     "source": {
+      "region": "Hongrie de Zápolya"
+     }
+    },
+    {
+     "name": "Khanat de Crimée",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Ukraine|Russia)$"
+       },
+       {
+        "region": "Khanat de Crimée"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Valachie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Romania)$"
+       },
+       {
+        "region": "Valachie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Moldavie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Moldova|Romania|Ukraine)$"
+       },
+       {
+        "region": "Moldavie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Régence d'Alger",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Algeria)$"
+       },
+       {
+        "region": "Algérie du nord"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire ottoman",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Turkey)$"
+       },
+       {
+        "union": [
+         {
+          "union": [
+           {
+            "region": "Roumélie 1389"
+           },
+           {
+            "region": "Thrace orientale 1453"
+           },
+           {
+            "country": "^(Bulgaria)$"
+           },
+           {
+            "country": "^(North Macedonia)$"
+           },
+           {
+            "country": "^(Kosovo)$"
+           },
+           {
+            "country": "^(Albania)$"
+           },
+           {
+            "country": "^(Bosnia and Herzegovina)$"
+           },
+           {
+            "country": "^(Montenegro)$"
+           },
+           {
+            "diff": [
+             {
+              "country": "^(Serbia)$"
+             },
+             {
+              "region": "Voïvodine"
+             }
+            ]
+           },
+           {
+            "diff": [
+             {
+              "diff": [
+               {
+                "country": "^(Greece)$"
+               },
+               {
+                "region": "Îles Ioniennes"
+               },
+               {
+                "region": "Crète"
+               }
+              ]
+             },
+             {
+              "region": "Dodécanèse"
+             }
+            ]
+           },
+           {
+            "inter": [
+             {
+              "country": "^(Romania)$"
+             },
+             {
+              "region": "Dobroudja"
+             }
+            ]
+           },
+           {
+            "inter": [
+             {
+              "country": "^(Moldova|Ukraine)$"
+             },
+             {
+              "region": "Budjak"
+             }
+            ]
+           },
+           {
+            "region": "Côte sud de Crimée"
+           }
+          ]
+         },
+         {
+          "diff": [
+           {
+            "country": "^(Greece)$"
+           },
+           {
+            "region": "Îles Ioniennes"
+           },
+           {
+            "region": "Crète"
+           }
+          ]
+         },
+         {
+          "region": "Syrmie"
+         }
+        ]
+       },
+       {
+        "union": [
+         {
+          "union": [
+           {
+            "country": "^(Syria)$"
+           },
+           {
+            "country": "^(Lebanon)$"
+           },
+           {
+            "country": "^(Israel)$"
+           },
+           {
+            "country": "^(Palestine)$"
+           },
+           {
+            "country": "^(Jordan)$"
+           }
+          ]
+         },
+         {
+          "country": "^(Egypt)$"
+         },
+         {
+          "inter": [
+           {
+            "country": "^(Saudi Arabia)$"
+           },
+           {
+            "region": "Hedjaz"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "country": "^(Iraq)$"
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Yemen)$"
+         },
+         {
+          "region": "Yémen côtier"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Irak (Bagdad 1534), Yémen côtier (Aden 1538), Turquie entière ; Alger vassale."
+  },
+  {
+   "id": "szigetvar-1566",
+   "year": 1566,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Transylvanie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Romania)$"
+       },
+       {
+        "region": "Transylvanie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Khanat de Crimée",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Ukraine|Russia)$"
+       },
+       {
+        "region": "Khanat de Crimée"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Valachie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Romania)$"
+       },
+       {
+        "region": "Valachie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Moldavie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Moldova|Romania|Ukraine)$"
+       },
+       {
+        "region": "Moldavie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Régence d'Alger",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Algeria)$"
+       },
+       {
+        "region": "Algérie du nord"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire ottoman",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Turkey)$"
+       },
+       {
+        "union": [
+         {
+          "union": [
+           {
+            "region": "Roumélie 1389"
+           },
+           {
+            "region": "Thrace orientale 1453"
+           },
+           {
+            "country": "^(Bulgaria)$"
+           },
+           {
+            "country": "^(North Macedonia)$"
+           },
+           {
+            "country": "^(Kosovo)$"
+           },
+           {
+            "country": "^(Albania)$"
+           },
+           {
+            "country": "^(Bosnia and Herzegovina)$"
+           },
+           {
+            "country": "^(Montenegro)$"
+           },
+           {
+            "diff": [
+             {
+              "country": "^(Serbia)$"
+             },
+             {
+              "region": "Voïvodine"
+             }
+            ]
+           },
+           {
+            "diff": [
+             {
+              "diff": [
+               {
+                "country": "^(Greece)$"
+               },
+               {
+                "region": "Îles Ioniennes"
+               },
+               {
+                "region": "Crète"
+               }
+              ]
+             },
+             {
+              "region": "Dodécanèse"
+             }
+            ]
+           },
+           {
+            "inter": [
+             {
+              "country": "^(Romania)$"
+             },
+             {
+              "region": "Dobroudja"
+             }
+            ]
+           },
+           {
+            "inter": [
+             {
+              "country": "^(Moldova|Ukraine)$"
+             },
+             {
+              "region": "Budjak"
+             }
+            ]
+           },
+           {
+            "region": "Côte sud de Crimée"
+           }
+          ]
+         },
+         {
+          "diff": [
+           {
+            "country": "^(Greece)$"
+           },
+           {
+            "region": "Îles Ioniennes"
+           },
+           {
+            "region": "Crète"
+           }
+          ]
+         },
+         {
+          "region": "Syrmie"
+         }
+        ]
+       },
+       {
+        "union": [
+         {
+          "union": [
+           {
+            "country": "^(Syria)$"
+           },
+           {
+            "country": "^(Lebanon)$"
+           },
+           {
+            "country": "^(Israel)$"
+           },
+           {
+            "country": "^(Palestine)$"
+           },
+           {
+            "country": "^(Jordan)$"
+           }
+          ]
+         },
+         {
+          "country": "^(Egypt)$"
+         },
+         {
+          "inter": [
+           {
+            "country": "^(Saudi Arabia)$"
+           },
+           {
+            "region": "Hedjaz"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "country": "^(Iraq)$"
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Yemen)$"
+         },
+         {
+          "region": "Yémen côtier"
+         }
+        ]
+       },
+       {
+        "region": "Hongrie ottomane 1566"
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Libya)$"
+         },
+         {
+          "region": "Tripolitaine"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Apogée : Hongrie centrale et méridionale (pachalik de Buda), Tripolitaine, Irak, Yémen côtier."
+  },
+  {
+   "id": "lepante-1571",
+   "year": 1571,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Régence de Tripoli",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Libya)$"
+       },
+       {
+        "region": "Tripolitaine"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Transylvanie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Romania)$"
+       },
+       {
+        "region": "Transylvanie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Khanat de Crimée",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Ukraine|Russia)$"
+       },
+       {
+        "region": "Khanat de Crimée"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Valachie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Romania)$"
+       },
+       {
+        "region": "Valachie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Moldavie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Moldova|Romania|Ukraine)$"
+       },
+       {
+        "region": "Moldavie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Régence d'Alger",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Algeria)$"
+       },
+       {
+        "region": "Algérie du nord"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire ottoman",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Turkey)$"
+       },
+       {
+        "union": [
+         {
+          "union": [
+           {
+            "region": "Roumélie 1389"
+           },
+           {
+            "region": "Thrace orientale 1453"
+           },
+           {
+            "country": "^(Bulgaria)$"
+           },
+           {
+            "country": "^(North Macedonia)$"
+           },
+           {
+            "country": "^(Kosovo)$"
+           },
+           {
+            "country": "^(Albania)$"
+           },
+           {
+            "country": "^(Bosnia and Herzegovina)$"
+           },
+           {
+            "country": "^(Montenegro)$"
+           },
+           {
+            "diff": [
+             {
+              "country": "^(Serbia)$"
+             },
+             {
+              "region": "Voïvodine"
+             }
+            ]
+           },
+           {
+            "diff": [
+             {
+              "diff": [
+               {
+                "country": "^(Greece)$"
+               },
+               {
+                "region": "Îles Ioniennes"
+               },
+               {
+                "region": "Crète"
+               }
+              ]
+             },
+             {
+              "region": "Dodécanèse"
+             }
+            ]
+           },
+           {
+            "inter": [
+             {
+              "country": "^(Romania)$"
+             },
+             {
+              "region": "Dobroudja"
+             }
+            ]
+           },
+           {
+            "inter": [
+             {
+              "country": "^(Moldova|Ukraine)$"
+             },
+             {
+              "region": "Budjak"
+             }
+            ]
+           },
+           {
+            "region": "Côte sud de Crimée"
+           }
+          ]
+         },
+         {
+          "diff": [
+           {
+            "country": "^(Greece)$"
+           },
+           {
+            "region": "Îles Ioniennes"
+           },
+           {
+            "region": "Crète"
+           }
+          ]
+         },
+         {
+          "region": "Syrmie"
+         }
+        ]
+       },
+       {
+        "union": [
+         {
+          "union": [
+           {
+            "country": "^(Syria)$"
+           },
+           {
+            "country": "^(Lebanon)$"
+           },
+           {
+            "country": "^(Israel)$"
+           },
+           {
+            "country": "^(Palestine)$"
+           },
+           {
+            "country": "^(Jordan)$"
+           }
+          ]
+         },
+         {
+          "country": "^(Egypt)$"
+         },
+         {
+          "inter": [
+           {
+            "country": "^(Saudi Arabia)$"
+           },
+           {
+            "region": "Hedjaz"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "country": "^(Iraq)$"
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Yemen)$"
+         },
+         {
+          "region": "Yémen côtier"
+         }
+        ]
+       },
+       {
+        "region": "Hongrie ottomane 1566"
+       },
+       {
+        "region": "Chypre"
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Chypre conquise ; Tripoli et Alger régences."
+  },
+  {
+   "id": "candie-1669",
+   "year": 1669,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Transylvanie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Romania)$"
+       },
+       {
+        "region": "Transylvanie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Khanat de Crimée",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Ukraine|Russia)$"
+       },
+       {
+        "region": "Khanat de Crimée"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Valachie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Romania)$"
+       },
+       {
+        "region": "Valachie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Moldavie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Moldova|Romania|Ukraine)$"
+       },
+       {
+        "region": "Moldavie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Régence d'Alger",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Algeria)$"
+       },
+       {
+        "region": "Algérie du nord"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Régence de Tunis",
+     "status": "vassal",
+     "source": {
+      "country": "^(Tunisia)$"
+     }
+    },
+    {
+     "name": "Régence de Tripoli",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Libya)$"
+       },
+       {
+        "region": "Tripolitaine"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire ottoman",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Turkey)$"
+       },
+       {
+        "union": [
+         {
+          "union": [
+           {
+            "region": "Roumélie 1389"
+           },
+           {
+            "region": "Thrace orientale 1453"
+           },
+           {
+            "country": "^(Bulgaria)$"
+           },
+           {
+            "country": "^(North Macedonia)$"
+           },
+           {
+            "country": "^(Kosovo)$"
+           },
+           {
+            "country": "^(Albania)$"
+           },
+           {
+            "country": "^(Bosnia and Herzegovina)$"
+           },
+           {
+            "country": "^(Montenegro)$"
+           },
+           {
+            "diff": [
+             {
+              "country": "^(Serbia)$"
+             },
+             {
+              "region": "Voïvodine"
+             }
+            ]
+           },
+           {
+            "diff": [
+             {
+              "diff": [
+               {
+                "country": "^(Greece)$"
+               },
+               {
+                "region": "Îles Ioniennes"
+               },
+               {
+                "region": "Crète"
+               }
+              ]
+             },
+             {
+              "region": "Dodécanèse"
+             }
+            ]
+           },
+           {
+            "inter": [
+             {
+              "country": "^(Romania)$"
+             },
+             {
+              "region": "Dobroudja"
+             }
+            ]
+           },
+           {
+            "inter": [
+             {
+              "country": "^(Moldova|Ukraine)$"
+             },
+             {
+              "region": "Budjak"
+             }
+            ]
+           },
+           {
+            "region": "Côte sud de Crimée"
+           }
+          ]
+         },
+         {
+          "diff": [
+           {
+            "country": "^(Greece)$"
+           },
+           {
+            "region": "Îles Ioniennes"
+           },
+           {
+            "region": "Crète"
+           }
+          ]
+         },
+         {
+          "region": "Syrmie"
+         }
+        ]
+       },
+       {
+        "union": [
+         {
+          "union": [
+           {
+            "country": "^(Syria)$"
+           },
+           {
+            "country": "^(Lebanon)$"
+           },
+           {
+            "country": "^(Israel)$"
+           },
+           {
+            "country": "^(Palestine)$"
+           },
+           {
+            "country": "^(Jordan)$"
+           }
+          ]
+         },
+         {
+          "country": "^(Egypt)$"
+         },
+         {
+          "inter": [
+           {
+            "country": "^(Saudi Arabia)$"
+           },
+           {
+            "region": "Hedjaz"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "country": "^(Iraq)$"
+       },
+       {
+        "region": "Chypre"
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Greece)$"
+         },
+         {
+          "region": "Crète"
+         }
+        ]
+       },
+       {
+        "region": "Hongrie ottomane 1669"
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Crète entière, Nagyvárad et Érsekújvár ; Yémen non dessiné (évacué en 1635, écart avec la note)."
+  },
+  {
+   "id": "vienne-1683",
+   "year": 1683,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Transylvanie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Romania)$"
+       },
+       {
+        "region": "Transylvanie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Khanat de Crimée",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Ukraine|Russia)$"
+       },
+       {
+        "region": "Khanat de Crimée"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Valachie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Romania)$"
+       },
+       {
+        "region": "Valachie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Moldavie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Moldova|Romania|Ukraine)$"
+       },
+       {
+        "region": "Moldavie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Régence d'Alger",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Algeria)$"
+       },
+       {
+        "region": "Algérie du nord"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Régence de Tunis",
+     "status": "vassal",
+     "source": {
+      "country": "^(Tunisia)$"
+     }
+    },
+    {
+     "name": "Régence de Tripoli",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Libya)$"
+       },
+       {
+        "region": "Tripolitaine"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire ottoman",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "union": [
+         {
+          "country": "^(Turkey)$"
+         },
+         {
+          "union": [
+           {
+            "union": [
+             {
+              "region": "Roumélie 1389"
+             },
+             {
+              "region": "Thrace orientale 1453"
+             },
+             {
+              "country": "^(Bulgaria)$"
+             },
+             {
+              "country": "^(North Macedonia)$"
+             },
+             {
+              "country": "^(Kosovo)$"
+             },
+             {
+              "country": "^(Albania)$"
+             },
+             {
+              "country": "^(Bosnia and Herzegovina)$"
+             },
+             {
+              "country": "^(Montenegro)$"
+             },
+             {
+              "diff": [
+               {
+                "country": "^(Serbia)$"
+               },
+               {
+                "region": "Voïvodine"
+               }
+              ]
+             },
+             {
+              "diff": [
+               {
+                "diff": [
+                 {
+                  "country": "^(Greece)$"
+                 },
+                 {
+                  "region": "Îles Ioniennes"
+                 },
+                 {
+                  "region": "Crète"
+                 }
+                ]
+               },
+               {
+                "region": "Dodécanèse"
+               }
+              ]
+             },
+             {
+              "inter": [
+               {
+                "country": "^(Romania)$"
+               },
+               {
+                "region": "Dobroudja"
+               }
+              ]
+             },
+             {
+              "inter": [
+               {
+                "country": "^(Moldova|Ukraine)$"
+               },
+               {
+                "region": "Budjak"
+               }
+              ]
+             },
+             {
+              "region": "Côte sud de Crimée"
+             }
+            ]
+           },
+           {
+            "diff": [
+             {
+              "country": "^(Greece)$"
+             },
+             {
+              "region": "Îles Ioniennes"
+             },
+             {
+              "region": "Crète"
+             }
+            ]
+           },
+           {
+            "region": "Syrmie"
+           }
+          ]
+         },
+         {
+          "union": [
+           {
+            "union": [
+             {
+              "country": "^(Syria)$"
+             },
+             {
+              "country": "^(Lebanon)$"
+             },
+             {
+              "country": "^(Israel)$"
+             },
+             {
+              "country": "^(Palestine)$"
+             },
+             {
+              "country": "^(Jordan)$"
+             }
+            ]
+           },
+           {
+            "country": "^(Egypt)$"
+           },
+           {
+            "inter": [
+             {
+              "country": "^(Saudi Arabia)$"
+             },
+             {
+              "region": "Hedjaz"
+             }
+            ]
+           }
+          ]
+         },
+         {
+          "country": "^(Iraq)$"
+         },
+         {
+          "region": "Chypre"
+         },
+         {
+          "inter": [
+           {
+            "country": "^(Greece)$"
+           },
+           {
+            "region": "Crète"
+           }
+          ]
+         },
+         {
+          "region": "Hongrie ottomane 1669"
+         }
+        ]
+       },
+       {
+        "region": "Podolie"
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Extension européenne maximale : Podolie de Kamianets."
+  },
+  {
+   "id": "karlowitz-1699",
+   "year": 1699,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Khanat de Crimée",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Ukraine|Russia)$"
+       },
+       {
+        "region": "Khanat de Crimée"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Valachie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Romania)$"
+       },
+       {
+        "region": "Valachie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Moldavie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Moldova|Romania|Ukraine)$"
+       },
+       {
+        "region": "Moldavie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Régence d'Alger",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Algeria)$"
+       },
+       {
+        "region": "Algérie du nord"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Régence de Tunis",
+     "status": "vassal",
+     "source": {
+      "country": "^(Tunisia)$"
+     }
+    },
+    {
+     "name": "Régence de Tripoli",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Libya)$"
+       },
+       {
+        "region": "Tripolitaine"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire ottoman",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Turkey)$"
+       },
+       {
+        "diff": [
+         {
+          "union": [
+           {
+            "union": [
+             {
+              "region": "Roumélie 1389"
+             },
+             {
+              "region": "Thrace orientale 1453"
+             },
+             {
+              "country": "^(Bulgaria)$"
+             },
+             {
+              "country": "^(North Macedonia)$"
+             },
+             {
+              "country": "^(Kosovo)$"
+             },
+             {
+              "country": "^(Albania)$"
+             },
+             {
+              "country": "^(Bosnia and Herzegovina)$"
+             },
+             {
+              "country": "^(Montenegro)$"
+             },
+             {
+              "diff": [
+               {
+                "country": "^(Serbia)$"
+               },
+               {
+                "region": "Voïvodine"
+               }
+              ]
+             },
+             {
+              "diff": [
+               {
+                "diff": [
+                 {
+                  "country": "^(Greece)$"
+                 },
+                 {
+                  "region": "Îles Ioniennes"
+                 },
+                 {
+                  "region": "Crète"
+                 }
+                ]
+               },
+               {
+                "region": "Dodécanèse"
+               }
+              ]
+             },
+             {
+              "inter": [
+               {
+                "country": "^(Romania)$"
+               },
+               {
+                "region": "Dobroudja"
+               }
+              ]
+             },
+             {
+              "inter": [
+               {
+                "country": "^(Moldova|Ukraine)$"
+               },
+               {
+                "region": "Budjak"
+               }
+              ]
+             },
+             {
+              "region": "Côte sud de Crimée"
+             }
+            ]
+           },
+           {
+            "diff": [
+             {
+              "country": "^(Greece)$"
+             },
+             {
+              "region": "Îles Ioniennes"
+             },
+             {
+              "region": "Crète"
+             }
+            ]
+           },
+           {
+            "region": "Syrmie"
+           }
+          ]
+         },
+         {
+          "region": "Péloponnèse"
+         },
+         {
+          "region": "Syrmie"
+         }
+        ]
+       },
+       {
+        "union": [
+         {
+          "union": [
+           {
+            "country": "^(Syria)$"
+           },
+           {
+            "country": "^(Lebanon)$"
+           },
+           {
+            "country": "^(Israel)$"
+           },
+           {
+            "country": "^(Palestine)$"
+           },
+           {
+            "country": "^(Jordan)$"
+           }
+          ]
+         },
+         {
+          "country": "^(Egypt)$"
+         },
+         {
+          "inter": [
+           {
+            "country": "^(Saudi Arabia)$"
+           },
+           {
+            "region": "Hedjaz"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "country": "^(Iraq)$"
+       },
+       {
+        "region": "Chypre"
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Greece)$"
+         },
+         {
+          "region": "Crète"
+         }
+        ]
+       },
+       {
+        "inter": [
+         {
+          "union": [
+           {
+            "country": "^(Serbia)$"
+           },
+           {
+            "country": "^(Romania)$"
+           },
+           {
+            "country": "^(Hungary)$"
+           }
+          ]
+         },
+         {
+          "region": "Banat de Temesvár"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Hongrie, Transylvanie, Slavonie, Podolie perdues ; Banat de Temesvár et Belgrade conservés ; Morée vénitienne retirée."
+  },
+  {
+   "id": "kucuk-kaynarca-1774",
+   "year": 1774,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Valachie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Romania)$"
+       },
+       {
+        "region": "Valachie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Moldavie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Moldova|Romania|Ukraine)$"
+       },
+       {
+        "region": "Moldavie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Régence d'Alger",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Algeria)$"
+       },
+       {
+        "region": "Algérie du nord"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Régence de Tunis",
+     "status": "vassal",
+     "source": {
+      "country": "^(Tunisia)$"
+     }
+    },
+    {
+     "name": "Régence de Tripoli",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Libya)$"
+       },
+       {
+        "region": "Tripolitaine"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire ottoman",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Turkey)$"
+       },
+       {
+        "union": [
+         {
+          "union": [
+           {
+            "region": "Roumélie 1389"
+           },
+           {
+            "region": "Thrace orientale 1453"
+           },
+           {
+            "country": "^(Bulgaria)$"
+           },
+           {
+            "country": "^(North Macedonia)$"
+           },
+           {
+            "country": "^(Kosovo)$"
+           },
+           {
+            "country": "^(Albania)$"
+           },
+           {
+            "country": "^(Bosnia and Herzegovina)$"
+           },
+           {
+            "country": "^(Montenegro)$"
+           },
+           {
+            "diff": [
+             {
+              "country": "^(Serbia)$"
+             },
+             {
+              "region": "Voïvodine"
+             }
+            ]
+           },
+           {
+            "diff": [
+             {
+              "diff": [
+               {
+                "country": "^(Greece)$"
+               },
+               {
+                "region": "Îles Ioniennes"
+               },
+               {
+                "region": "Crète"
+               }
+              ]
+             },
+             {
+              "region": "Dodécanèse"
+             }
+            ]
+           },
+           {
+            "inter": [
+             {
+              "country": "^(Romania)$"
+             },
+             {
+              "region": "Dobroudja"
+             }
+            ]
+           },
+           {
+            "inter": [
+             {
+              "country": "^(Moldova|Ukraine)$"
+             },
+             {
+              "region": "Budjak"
+             }
+            ]
+           },
+           {
+            "region": "Côte sud de Crimée"
+           }
+          ]
+         },
+         {
+          "diff": [
+           {
+            "country": "^(Greece)$"
+           },
+           {
+            "region": "Îles Ioniennes"
+           },
+           {
+            "region": "Crète"
+           }
+          ]
+         },
+         {
+          "region": "Syrmie"
+         }
+        ]
+       },
+       {
+        "union": [
+         {
+          "union": [
+           {
+            "country": "^(Syria)$"
+           },
+           {
+            "country": "^(Lebanon)$"
+           },
+           {
+            "country": "^(Israel)$"
+           },
+           {
+            "country": "^(Palestine)$"
+           },
+           {
+            "country": "^(Jordan)$"
+           }
+          ]
+         },
+         {
+          "country": "^(Egypt)$"
+         },
+         {
+          "inter": [
+           {
+            "country": "^(Saudi Arabia)$"
+           },
+           {
+            "region": "Hedjaz"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "country": "^(Iraq)$"
+       },
+       {
+        "region": "Chypre"
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Greece)$"
+         },
+         {
+          "region": "Crète"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Morée reprise, Banat perdu, Crimée indépendante."
+  },
+  {
+   "id": "navarin-1827",
+   "year": 1827,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Égypte de Méhémet Ali",
+     "status": "vassal",
+     "source": {
+      "union": [
+       {
+        "country": "^(Egypt)$"
+       },
+       {
+        "country": "^(Sudan)$"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Principauté de Serbie",
+     "status": "vassal",
+     "source": {
+      "diff": [
+       {
+        "country": "^(Serbia)$"
+       },
+       {
+        "region": "Voïvodine"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Valachie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Romania)$"
+       },
+       {
+        "region": "Valachie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Moldavie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Romania)$"
+       },
+       {
+        "region": "Moldavie 1827"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Régence d'Alger",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Algeria)$"
+       },
+       {
+        "region": "Algérie du nord"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Régence de Tunis",
+     "status": "vassal",
+     "source": {
+      "country": "^(Tunisia)$"
+     }
+    },
+    {
+     "name": "Régence de Tripoli",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Libya)$"
+       },
+       {
+        "region": "Tripolitaine"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Empire ottoman",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Turkey)$"
+       },
+       {
+        "union": [
+         {
+          "region": "Roumélie 1389"
+         },
+         {
+          "region": "Thrace orientale 1453"
+         },
+         {
+          "country": "^(Bulgaria)$"
+         },
+         {
+          "country": "^(North Macedonia)$"
+         },
+         {
+          "country": "^(Kosovo)$"
+         },
+         {
+          "country": "^(Albania)$"
+         },
+         {
+          "country": "^(Bosnia and Herzegovina)$"
+         },
+         {
+          "diff": [
+           {
+            "diff": [
+             {
+              "country": "^(Greece)$"
+             },
+             {
+              "region": "Îles Ioniennes"
+             },
+             {
+              "region": "Crète"
+             }
+            ]
+           },
+           {
+            "region": "Grèce 1830"
+           }
+          ]
+         },
+         {
+          "inter": [
+           {
+            "country": "^(Romania)$"
+           },
+           {
+            "region": "Dobroudja"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "union": [
+         {
+          "country": "^(Syria)$"
+         },
+         {
+          "country": "^(Lebanon)$"
+         },
+         {
+          "country": "^(Israel)$"
+         },
+         {
+          "country": "^(Palestine)$"
+         },
+         {
+          "country": "^(Jordan)$"
+         }
+        ]
+       },
+       {
+        "country": "^(Iraq)$"
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Saudi Arabia)$"
+         },
+         {
+          "region": "Hedjaz"
+         }
+        ]
+       },
+       {
+        "region": "Chypre"
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Greece)$"
+         },
+         {
+          "region": "Crète"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Grèce insurgée de fait hors de l'Empire ; Égypte, Serbie, principautés danubiennes autonomes."
+  },
+  {
+   "id": "tanzimat-1839",
+   "year": 1839,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Égypte de Méhémet Ali",
+     "status": "vassal",
+     "source": {
+      "union": [
+       {
+        "country": "^(Egypt)$"
+       },
+       {
+        "country": "^(Sudan)$"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Principauté de Serbie",
+     "status": "vassal",
+     "source": {
+      "diff": [
+       {
+        "country": "^(Serbia)$"
+       },
+       {
+        "region": "Voïvodine"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Valachie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Romania)$"
+       },
+       {
+        "region": "Valachie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Moldavie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Romania)$"
+       },
+       {
+        "region": "Moldavie 1827"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Régence de Tunis",
+     "status": "vassal",
+     "source": {
+      "country": "^(Tunisia)$"
+     }
+    },
+    {
+     "name": "Empire ottoman",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Turkey)$"
+       },
+       {
+        "union": [
+         {
+          "region": "Roumélie 1389"
+         },
+         {
+          "region": "Thrace orientale 1453"
+         },
+         {
+          "country": "^(Bulgaria)$"
+         },
+         {
+          "country": "^(North Macedonia)$"
+         },
+         {
+          "country": "^(Kosovo)$"
+         },
+         {
+          "country": "^(Albania)$"
+         },
+         {
+          "country": "^(Bosnia and Herzegovina)$"
+         },
+         {
+          "diff": [
+           {
+            "diff": [
+             {
+              "country": "^(Greece)$"
+             },
+             {
+              "region": "Îles Ioniennes"
+             },
+             {
+              "region": "Crète"
+             }
+            ]
+           },
+           {
+            "region": "Grèce 1830"
+           }
+          ]
+         },
+         {
+          "inter": [
+           {
+            "country": "^(Romania)$"
+           },
+           {
+            "region": "Dobroudja"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "union": [
+         {
+          "country": "^(Syria)$"
+         },
+         {
+          "country": "^(Lebanon)$"
+         },
+         {
+          "country": "^(Israel)$"
+         },
+         {
+          "country": "^(Palestine)$"
+         },
+         {
+          "country": "^(Jordan)$"
+         }
+        ]
+       },
+       {
+        "country": "^(Iraq)$"
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Saudi Arabia)$"
+         },
+         {
+          "region": "Hedjaz"
+         }
+        ]
+       },
+       {
+        "region": "Chypre"
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Greece)$"
+         },
+         {
+          "region": "Crète"
+         }
+        ]
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Libya)$"
+         },
+         {
+          "region": "Tripolitaine"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Grèce indépendante (1830), Algérie française ; Tripolitaine reprise en main."
+  },
+  {
+   "id": "berlin-1878",
+   "year": 1878,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Principauté de Bulgarie",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Bulgaria)$"
+       },
+       {
+        "region": "Principauté de Bulgarie 1878"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Roumélie orientale",
+     "status": "vassal",
+     "source": {
+      "inter": [
+       {
+        "country": "^(Bulgaria)$"
+       },
+       {
+        "region": "Roumélie orientale 1878"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Égypte de Méhémet Ali",
+     "status": "vassal",
+     "source": {
+      "union": [
+       {
+        "country": "^(Egypt)$"
+       },
+       {
+        "country": "^(Sudan)$"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Régence de Tunis",
+     "status": "vassal",
+     "source": {
+      "country": "^(Tunisia)$"
+     }
+    },
+    {
+     "name": "Empire ottoman",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "diff": [
+         {
+          "country": "^(Turkey)$"
+         },
+         {
+          "region": "Kars Ardahan Batoum"
+         }
+        ]
+       },
+       {
+        "region": "Roumélie 1389"
+       },
+       {
+        "region": "Thrace orientale 1453"
+       },
+       {
+        "diff": [
+         {
+          "country": "^(Bulgaria)$"
+         },
+         {
+          "region": "Principauté de Bulgarie 1878"
+         },
+         {
+          "region": "Roumélie orientale 1878"
+         }
+        ]
+       },
+       {
+        "country": "^(North Macedonia)$"
+       },
+       {
+        "country": "^(Kosovo)$"
+       },
+       {
+        "country": "^(Albania)$"
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Serbia)$"
+         },
+         {
+          "region": "Sandjak de Novi Pazar"
+         }
+        ]
+       },
+       {
+        "diff": [
+         {
+          "diff": [
+           {
+            "country": "^(Greece)$"
+           },
+           {
+            "region": "Îles Ioniennes"
+           },
+           {
+            "region": "Crète"
+           }
+          ]
+         },
+         {
+          "region": "Grèce 1830"
+         }
+        ]
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Greece)$"
+         },
+         {
+          "region": "Crète"
+         }
+        ]
+       },
+       {
+        "union": [
+         {
+          "country": "^(Syria)$"
+         },
+         {
+          "country": "^(Lebanon)$"
+         },
+         {
+          "country": "^(Israel)$"
+         },
+         {
+          "country": "^(Palestine)$"
+         },
+         {
+          "country": "^(Jordan)$"
+         }
+        ]
+       },
+       {
+        "country": "^(Iraq)$"
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Saudi Arabia)$"
+         },
+         {
+          "region": "Hedjaz"
+         }
+        ]
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Saudi Arabia)$"
+         },
+         {
+          "region": "Asir"
+         }
+        ]
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Yemen)$"
+         },
+         {
+          "region": "Yémen ottoman"
+         }
+        ]
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Libya)$"
+         },
+         {
+          "region": "Libye du nord"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Après Berlin : perte de la Serbie, du Monténégro, de la Roumanie, de la Bosnie, de Chypre et de Kars ; Bulgarie vassale."
+  },
+  {
+   "id": "balkaniques-1912",
+   "year": 1912,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire ottoman",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "diff": [
+         {
+          "country": "^(Turkey)$"
+         },
+         {
+          "region": "Kars Ardahan Batoum"
+         }
+        ]
+       },
+       {
+        "union": [
+         {
+          "country": "^(Syria)$"
+         },
+         {
+          "country": "^(Lebanon)$"
+         },
+         {
+          "country": "^(Israel)$"
+         },
+         {
+          "country": "^(Palestine)$"
+         },
+         {
+          "country": "^(Jordan)$"
+         }
+        ]
+       },
+       {
+        "country": "^(Iraq)$"
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Saudi Arabia)$"
+         },
+         {
+          "region": "Hedjaz"
+         }
+        ]
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Saudi Arabia)$"
+         },
+         {
+          "region": "Asir"
+         }
+        ]
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Yemen)$"
+         },
+         {
+          "region": "Yémen ottoman"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Anatolie, Thrace orientale, provinces arabes ; Balkans, Crète et Libye perdus."
+  },
+  {
+   "id": "gallipoli-1915",
+   "year": 1915,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire ottoman",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "diff": [
+         {
+          "country": "^(Turkey)$"
+         },
+         {
+          "region": "Kars Ardahan Batoum"
+         }
+        ]
+       },
+       {
+        "union": [
+         {
+          "country": "^(Syria)$"
+         },
+         {
+          "country": "^(Lebanon)$"
+         },
+         {
+          "country": "^(Israel)$"
+         },
+         {
+          "country": "^(Palestine)$"
+         },
+         {
+          "country": "^(Jordan)$"
+         }
+        ]
+       },
+       {
+        "country": "^(Iraq)$"
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Saudi Arabia)$"
+         },
+         {
+          "region": "Hedjaz"
+         }
+        ]
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Saudi Arabia)$"
+         },
+         {
+          "region": "Asir"
+         }
+        ]
+       },
+       {
+        "inter": [
+         {
+          "country": "^(Yemen)$"
+         },
+         {
+          "region": "Yémen ottoman"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Comme 1912 : Empire en guerre."
+  },
+  {
+   "id": "sultanat-1922",
+   "year": 1922,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire ottoman",
+     "status": "core",
+     "source": {
+      "country": "^(Turkey)$"
+     }
+    }
+   ],
+   "notes": "Anatolie et Thrace orientale (Turquie actuelle)."
+  }
+ ],
+ "checkpoints": [
+  {
+   "name": "Bursa",
+   "pt": [
+    29.06,
+    40.19
+   ],
+   "where": "not-core",
+   "from": "osman-1299",
+   "to": "osman-1299"
+  },
+  {
+   "name": "Bursa",
+   "pt": [
+    29.06,
+    40.19
+   ],
+   "where": "core",
+   "from": "bursa-1326"
+  },
+  {
+   "name": "Edirne",
+   "pt": [
+    26.56,
+    41.68
+   ],
+   "where": "core",
+   "from": "kosovo-1389",
+   "to": "nicopolis-1396"
+  },
+  {
+   "name": "Edirne",
+   "pt": [
+    26.56,
+    41.68
+   ],
+   "where": "any",
+   "from": "ankara-1402",
+   "to": "ankara-1402"
+  },
+  {
+   "name": "Edirne",
+   "pt": [
+    26.56,
+    41.68
+   ],
+   "where": "core",
+   "from": "varna-1444",
+   "to": "sultanat-1922"
+  },
+  {
+   "name": "Istanbul",
+   "pt": [
+    28.9,
+    41.05
+   ],
+   "where": "not-core",
+   "from": "osman-1299",
+   "to": "varna-1444"
+  },
+  {
+   "name": "Istanbul",
+   "pt": [
+    28.9,
+    41.05
+   ],
+   "where": "core",
+   "from": "constantinople-1453",
+   "to": "sultanat-1922"
+  },
+  {
+   "name": "Ankara",
+   "pt": [
+    32.86,
+    39.93
+   ],
+   "where": "core",
+   "from": "nicopolis-1396",
+   "to": "nicopolis-1396"
+  },
+  {
+   "name": "Ankara",
+   "pt": [
+    32.86,
+    39.93
+   ],
+   "where": "core",
+   "from": "varna-1444",
+   "to": "sultanat-1922"
+  },
+  {
+   "name": "Sofia",
+   "pt": [
+    23.32,
+    42.7
+   ],
+   "where": "core",
+   "from": "nicopolis-1396",
+   "to": "nicopolis-1396"
+  },
+  {
+   "name": "Sofia",
+   "pt": [
+    23.32,
+    42.7
+   ],
+   "where": "any",
+   "from": "ankara-1402",
+   "to": "ankara-1402"
+  },
+  {
+   "name": "Sofia",
+   "pt": [
+    23.32,
+    42.7
+   ],
+   "where": "core",
+   "from": "varna-1444",
+   "to": "tanzimat-1839"
+  },
+  {
+   "name": "Sofia",
+   "pt": [
+    23.32,
+    42.7
+   ],
+   "where": "any",
+   "from": "berlin-1878",
+   "to": "berlin-1878"
+  },
+  {
+   "name": "Sofia",
+   "pt": [
+    23.32,
+    42.7
+   ],
+   "where": "not-core",
+   "from": "balkaniques-1912",
+   "to": "sultanat-1922"
+  },
+  {
+   "name": "Salonique",
+   "pt": [
+    22.94,
+    40.64
+   ],
+   "where": "core",
+   "from": "varna-1444",
+   "to": "berlin-1878"
+  },
+  {
+   "name": "Salonique",
+   "pt": [
+    22.94,
+    40.64
+   ],
+   "where": "not-core",
+   "from": "balkaniques-1912",
+   "to": "sultanat-1922"
+  },
+  {
+   "name": "Belgrade",
+   "pt": [
+    20.46,
+    44.82
+   ],
+   "where": "core",
+   "from": "mohacs-1526",
+   "to": "kucuk-kaynarca-1774"
+  },
+  {
+   "name": "Belgrade",
+   "pt": [
+    20.46,
+    44.82
+   ],
+   "where": "any",
+   "from": "navarin-1827",
+   "to": "tanzimat-1839"
+  },
+  {
+   "name": "Belgrade",
+   "pt": [
+    20.46,
+    44.82
+   ],
+   "where": "not-core",
+   "from": "berlin-1878",
+   "to": "sultanat-1922"
+  },
+  {
+   "name": "Buda",
+   "pt": [
+    19.04,
+    47.5
+   ],
+   "where": "not-core",
+   "from": "osman-1299",
+   "to": "mohacs-1526"
+  },
+  {
+   "name": "Buda",
+   "pt": [
+    19.04,
+    47.5
+   ],
+   "where": "vassal",
+   "from": "vienne-1529",
+   "to": "vienne-1529"
+  },
+  {
+   "name": "Buda",
+   "pt": [
+    19.04,
+    47.5
+   ],
+   "where": "any",
+   "from": "preveza-1538",
+   "to": "preveza-1538"
+  },
+  {
+   "name": "Buda",
+   "pt": [
+    19.04,
+    47.5
+   ],
+   "where": "core",
+   "from": "szigetvar-1566",
+   "to": "vienne-1683"
+  },
+  {
+   "name": "Buda",
+   "pt": [
+    19.04,
+    47.5
+   ],
+   "where": "not-core",
+   "from": "karlowitz-1699",
+   "to": "sultanat-1922"
+  },
+  {
+   "name": "Le Caire",
+   "pt": [
+    31.24,
+    30.04
+   ],
+   "where": "not-core",
+   "from": "osman-1299",
+   "to": "chaldiran-1514"
+  },
+  {
+   "name": "Le Caire",
+   "pt": [
+    31.24,
+    30.04
+   ],
+   "where": "core",
+   "from": "le-caire-1517",
+   "to": "kucuk-kaynarca-1774"
+  },
+  {
+   "name": "Le Caire",
+   "pt": [
+    31.24,
+    30.04
+   ],
+   "where": "vassal",
+   "from": "navarin-1827",
+   "to": "berlin-1878"
+  },
+  {
+   "name": "Le Caire",
+   "pt": [
+    31.24,
+    30.04
+   ],
+   "where": "not-core",
+   "from": "gallipoli-1915",
+   "to": "sultanat-1922"
+  },
+  {
+   "name": "Damas",
+   "pt": [
+    36.29,
+    33.51
+   ],
+   "where": "core",
+   "from": "le-caire-1517",
+   "to": "navarin-1827"
+  },
+  {
+   "name": "Damas",
+   "pt": [
+    36.29,
+    33.51
+   ],
+   "where": "any",
+   "from": "tanzimat-1839",
+   "to": "tanzimat-1839"
+  },
+  {
+   "name": "Damas",
+   "pt": [
+    36.29,
+    33.51
+   ],
+   "where": "core",
+   "from": "berlin-1878",
+   "to": "gallipoli-1915"
+  },
+  {
+   "name": "Damas",
+   "pt": [
+    36.29,
+    33.51
+   ],
+   "where": "not-core",
+   "from": "sultanat-1922",
+   "to": "sultanat-1922"
+  },
+  {
+   "name": "Bagdad",
+   "pt": [
+    44.37,
+    33.31
+   ],
+   "where": "not-core",
+   "from": "osman-1299",
+   "to": "vienne-1529"
+  },
+  {
+   "name": "Bagdad",
+   "pt": [
+    44.37,
+    33.31
+   ],
+   "where": "core",
+   "from": "preveza-1538",
+   "to": "gallipoli-1915"
+  },
+  {
+   "name": "Bagdad",
+   "pt": [
+    44.37,
+    33.31
+   ],
+   "where": "not-core",
+   "from": "sultanat-1922",
+   "to": "sultanat-1922"
+  },
+  {
+   "name": "Alger",
+   "pt": [
+    3.06,
+    36.75
+   ],
+   "where": "not-core",
+   "from": "osman-1299",
+   "to": "vienne-1529"
+  },
+  {
+   "name": "Alger",
+   "pt": [
+    3.06,
+    36.75
+   ],
+   "where": "vassal",
+   "from": "preveza-1538",
+   "to": "navarin-1827"
+  },
+  {
+   "name": "Alger",
+   "pt": [
+    3.06,
+    36.75
+   ],
+   "where": "not-core",
+   "from": "tanzimat-1839",
+   "to": "sultanat-1922"
+  },
+  {
+   "name": "Bakhtchyssaraï",
+   "pt": [
+    33.86,
+    44.75
+   ],
+   "where": "not-core",
+   "from": "osman-1299",
+   "to": "constantinople-1453"
+  },
+  {
+   "name": "Bakhtchyssaraï",
+   "pt": [
+    33.86,
+    44.75
+   ],
+   "where": "vassal",
+   "from": "chaldiran-1514",
+   "to": "vienne-1683"
+  },
+  {
+   "name": "Bakhtchyssaraï",
+   "pt": [
+    33.86,
+    44.75
+   ],
+   "where": "any",
+   "from": "karlowitz-1699",
+   "to": "karlowitz-1699"
+  },
+  {
+   "name": "Bakhtchyssaraï",
+   "pt": [
+    33.86,
+    44.75
+   ],
+   "where": "not-core",
+   "from": "kucuk-kaynarca-1774",
+   "to": "sultanat-1922"
+  },
+  {
+   "name": "Bucarest",
+   "pt": [
+    26.1,
+    44.43
+   ],
+   "where": "any",
+   "from": "nicopolis-1396",
+   "to": "nicopolis-1396"
+  },
+  {
+   "name": "Bucarest",
+   "pt": [
+    26.1,
+    44.43
+   ],
+   "where": "vassal",
+   "from": "varna-1444",
+   "to": "tanzimat-1839"
+  },
+  {
+   "name": "Bucarest",
+   "pt": [
+    26.1,
+    44.43
+   ],
+   "where": "not-core",
+   "from": "berlin-1878",
+   "to": "sultanat-1922"
+  },
+  {
+   "name": "Candie",
+   "pt": [
+    25.13,
+    35.34
+   ],
+   "where": "not-core",
+   "from": "osman-1299",
+   "to": "lepante-1571"
+  },
+  {
+   "name": "Candie",
+   "pt": [
+    25.13,
+    35.34
+   ],
+   "where": "core",
+   "from": "candie-1669",
+   "to": "berlin-1878"
+  },
+  {
+   "name": "Candie",
+   "pt": [
+    25.13,
+    35.34
+   ],
+   "where": "not-core",
+   "from": "balkaniques-1912",
+   "to": "sultanat-1922"
+  },
+  {
+   "name": "Nicosie",
+   "pt": [
+    33.36,
+    35.17
+   ],
+   "where": "not-core",
+   "from": "osman-1299",
+   "to": "szigetvar-1566"
+  },
+  {
+   "name": "Nicosie",
+   "pt": [
+    33.36,
+    35.17
+   ],
+   "where": "core",
+   "from": "lepante-1571",
+   "to": "tanzimat-1839"
+  },
+  {
+   "name": "Nicosie",
+   "pt": [
+    33.36,
+    35.17
+   ],
+   "where": "not-core",
+   "from": "berlin-1878",
+   "to": "sultanat-1922"
+  },
+  {
+   "name": "Athènes",
+   "pt": [
+    23.73,
+    37.98
+   ],
+   "where": "core",
+   "from": "constantinople-1453",
+   "to": "kucuk-kaynarca-1774"
+  },
+  {
+   "name": "Athènes",
+   "pt": [
+    23.73,
+    37.98
+   ],
+   "where": "not-core",
+   "from": "tanzimat-1839",
+   "to": "sultanat-1922"
+  },
+  {
+   "name": "Tabriz",
+   "pt": [
+    46.29,
+    38.08
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Vienne",
+   "pt": [
+    16.37,
+    48.21
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Konya",
+   "pt": [
+    32.48,
+    37.87
+   ],
+   "where": "not-core",
+   "from": "osman-1299",
+   "to": "constantinople-1453"
+  },
+  {
+   "name": "Konya",
+   "pt": [
+    32.48,
+    37.87
+   ],
+   "where": "core",
+   "from": "chaldiran-1514",
+   "to": "sultanat-1922"
+  },
+  {
+   "name": "Smyrne",
+   "pt": [
+    27.14,
+    38.42
+   ],
+   "where": "core",
+   "from": "chaldiran-1514",
+   "to": "sultanat-1922"
+  },
+  {
+   "name": "Sarajevo",
+   "pt": [
+    18.41,
+    43.86
+   ],
+   "where": "core",
+   "from": "chaldiran-1514",
+   "to": "tanzimat-1839"
+  },
+  {
+   "name": "Sarajevo",
+   "pt": [
+    18.41,
+    43.86
+   ],
+   "where": "not-core",
+   "from": "berlin-1878",
+   "to": "sultanat-1922"
+  },
+  {
+   "name": "Erzurum",
+   "pt": [
+    41.27,
+    39.9
+   ],
+   "where": "not-core",
+   "from": "osman-1299",
+   "to": "constantinople-1453"
+  },
+  {
+   "name": "Erzurum",
+   "pt": [
+    41.27,
+    39.9
+   ],
+   "where": "core",
+   "from": "preveza-1538",
+   "to": "sultanat-1922"
+  },
+  {
+   "name": "Kars",
+   "pt": [
+    43.09,
+    40.6
+   ],
+   "where": "not-core",
+   "from": "berlin-1878",
+   "to": "gallipoli-1915"
+  },
+  {
+   "name": "Kars",
+   "pt": [
+    43.09,
+    40.6
+   ],
+   "where": "core",
+   "from": "sultanat-1922",
+   "to": "sultanat-1922"
+  },
+  {
+   "name": "Tunis",
+   "pt": [
+    10.18,
+    36.8
+   ],
+   "where": "vassal",
+   "from": "candie-1669",
+   "to": "berlin-1878"
+  },
+  {
+   "name": "Jérusalem",
+   "pt": [
+    35.22,
+    31.78
+   ],
+   "where": "core",
+   "from": "le-caire-1517",
+   "to": "gallipoli-1915"
+  },
+  {
+   "name": "Médine",
+   "pt": [
+    39.6,
+    24.47
+   ],
+   "where": "core",
+   "from": "le-caire-1517",
+   "to": "gallipoli-1915"
+  }
+ ]
+}

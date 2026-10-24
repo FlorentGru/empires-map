@@ -334,6 +334,46 @@ export const FACTION_INFO: Record<Faction, FigureInfo> = {
     era: 'IVe s. av. J.-C.',
     text: "Fantassins et archers des royaumes du Pendjab, vêtus du dhoti et du turban. Leur grand arc, tiré en appuyant l'extrémité au sol, perce les boucliers, et leurs chars et éléphants de guerre impressionnent les Macédoniens. En 326 av. J.-C., Pôros affronte Alexandre sur l'Hydaspe : vaincu après un combat acharné, il est confirmé roi par le vainqueur.",
   },
+  janissaires: {
+    label: 'Janissaires',
+    era: 'XIVe – XIXe s.',
+    text: "Infanterie d'élite du sultan, recrutée d'abord parmi les jeunes chrétiens des Balkans par la devchirmé, puis élevée à l'islam et à la discipline militaire. Reconnaissables à leur haut bonnet blanc, le börk, dont un pan retombe dans le dos, ils sont l'une des premières troupes permanentes d'Europe à manier l'arquebuse, puis le mousquet. Ils forment le cœur des armées à Mohács et devant Vienne. Devenus un corps puissant et indocile, ils sont dissous par Mahmud II en 1826.",
+  },
+  serbes: {
+    label: 'Serbes médiévaux',
+    era: 'XIVe – XVe s.',
+    text: "Chevaliers et fantassins des États serbes des Balkans, en cotte de mailles, avec casque, lance et grand bouclier à la croix. Sous Dušan, la Serbie domine une grande partie de la péninsule. Le prince Lazar affronte l'armée du sultan Mourad Ier à Kosovo Polje en 1389. Le combat reste dans la mémoire serbe comme un symbole de résistance, même si la Serbie devient ensuite vassale des Ottomans.",
+  },
+  hongrois: {
+    label: 'Hongrois',
+    era: 'XVe – XVIe s.',
+    text: "Cavaliers légers et lanciers du royaume de Hongrie, qui fut l'un des principaux remparts de la chrétienté face aux Ottomans. Vêtus de dolmans brodés et armés du sabre, ils se protègent d'un bouclier en forme d'aile ; c'est la silhouette dont naîtra le hussard. Jean Hunyadi les mène à la victoire à Belgrade en 1456, mais l'armée royale est écrasée à Mohács en 1526.",
+  },
+  timourides: {
+    label: 'Timourides',
+    era: 'XIVe – XVe s.',
+    text: "Cavaliers de l'empire de Tamerlan (Timur), venus d'Asie centrale. Ils portent un casque conique à camail, une armure de lamelles ou un manteau de cuir renforcé, et tirent à l'arc composite en pleine course. Leur étendard est orné de queues de cheval. En 1402, à Ankara, ils battent l'armée de Bayezid Ier et capturent le sultan, ce qui plonge l'Empire ottoman dans plus de dix ans de guerre civile.",
+  },
+  venitiens: {
+    label: 'Vénitiens',
+    era: 'XVe – XVIIe s.',
+    text: 'Soldats et marins de la République de Venise, qui possède un empire maritime de comptoirs en Grèce, dans les îles et à Chypre. Ils portent le morion, une tunique rouge et un bouclier au lion de saint Marc. Ils disputent la Méditerranée orientale aux Ottomans lors de longues guerres. Ils sont vainqueurs à Lépante en 1571 avec la Sainte Ligue, mais perdent Chypre, puis la Crète en 1669.',
+  },
+  safavides: {
+    label: 'Safavides (Qizilbash)',
+    era: 'XVIe – XVIIIe s.',
+    text: "Cavaliers turcomans fidèles à la dynastie chiite des Safavides de Perse. On les nomme qizilbash, « têtes rouges », à cause du turban rouge à douze plis qu'ils portent autour d'un bâton central. Armés du sabre et de l'arc, souvent en cotte de mailles, ils font du chah Ismaïl le maître de l'Iran. À Chaldiran en 1514, ils sont vaincus par les canons et les mousquets du sultan Sélim Ier.",
+  },
+  'ottomans-modernes': {
+    label: 'Armée ottomane moderne',
+    era: 'XIXe – XXe s.',
+    text: "Après la dissolution des janissaires en 1826, le sultan Mahmud II crée une armée réformée (Nizam-ı Cedid puis Asakir-i Mansure) à l'européenne : uniforme boutonné, fez rouge ou kalpak de fourrure, fusil à baïonnette. L'uniforme bleu foncé cède la place au kaki au tournant du XXe siècle. Cette armée combat en Crimée, dans les Balkans, puis pendant la Première Guerre mondiale, notamment aux Dardanelles en 1915.",
+  },
+  'grecs-modernes': {
+    label: 'Grecs modernes (evzones)',
+    era: 'XIXe s.',
+    text: "Combattants de l'indépendance grecque (1821) et de l'armée du royaume de Grèce. Le klephte, brigand des montagnes devenu insurgé, et plus tard l'evzone, fantassin de montagne, portent la fustanelle blanche plissée, un gilet brodé et le bonnet rouge à gland. Armés de longs fusils, ils tiennent la guerre de harcèlement contre les Ottomans. La bataille de Navarin en 1827 décide du sort de la Grèce.",
+  },
   scythes: {
     label: 'Scythes',
     era: 'VIIIe s. – IIIe s. av. J.-C.',
@@ -531,6 +571,26 @@ export const ARCHETYPE_INFO: Record<Archetype, FigureInfo> = {
     label: 'Comte ou seigneur franc',
     era: 'VIIIe – IXe s.',
     text: "Comte, marquis ou grand propriétaire qui gouverne une région au nom du roi et lève des hommes pour l'armée. Au IXe siècle ces charges deviennent héréditaires, origine de la féodalité.",
+  },
+  'grand-vizir': {
+    label: 'Grand vizir',
+    era: 'XIVe – XXe s.',
+    text: "Premier ministre du sultan, qui lui confie le sceau impérial. Coiffé d'un grand turban blanc et vêtu d'un caftan à fourrure, il préside le Divan, dirige l'administration et conduit souvent l'armée en campagne. Des familles comme les Köprülü gouvernent presque seules l'Empire au XVIIe siècle. À partir de 1654, le palais du grand vizir, la Sublime Porte, désigne le gouvernement ottoman.",
+  },
+  sultane: {
+    label: 'Sultane',
+    era: 'XVIe – XVIIe s.',
+    text: "Femme de la famille impériale ottomane : épouse, mère ou sœur du sultan. Voilée, parée d'un diadème et d'un caftan de brocart, elle vit au harem du palais de Topkapı. Hürrem, épouse de Soliman, et la sultane-mère (valide sultan) exercent une grande influence politique. Au XVIe et XVIIe siècle, on parle d'un « sultanat des femmes ».",
+  },
+  shah: {
+    label: 'Chah de Perse',
+    era: 'XVIe – XVIIIe s.',
+    text: "Souverain de Perse. Les chahs de la dynastie safavide, Ismaïl Ier, puis Abbas Ier, portent un turban rouge à aigrette et un manteau de brocart. Ils imposent le chiisme duodécimain dans l'Iran, ce qui les oppose aux sultans sunnites ottomans. Les deux empires se disputent l'Irak, le Caucase et l'Azerbaïdjan pendant plus de deux siècles.",
+  },
+  pacha: {
+    label: 'Pacha',
+    era: 'XVe – XIXe s.',
+    text: 'Haut dignitaire ottoman, gouverneur de province ou commandant militaire. Son rang se mesure au nombre de queues de cheval (tuğ) portées devant lui : une, deux ou trois. Turban ou fez, caftan, barbe soignée. Certains pachas, comme Méhémet Ali en Égypte, deviennent presque indépendants du sultan.',
   },
   prelat: {
     label: 'Évêque ou abbé',

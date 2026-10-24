@@ -786,6 +786,80 @@ export const CHARACTER_SPECS = {
       rect(22, 30, 7, 5, '#7a1f5a', 1) +
       line('M23.4 30V35', GOLD, 0.7),
   },
+  'grand-vizir': {
+    skin: '#d2a070',
+    robe: '#2f6f4a',
+    body: WIDE,
+    deco:
+      path('M10 18.4Q18 15 26 18.4L25 23.4Q18 20.6 11 23.4Z', '#8a7a62') +
+      line('M17.2 22V46', GOLD, 1.2) +
+      rect(10, 34, 16, 2.2, GOLD, 0, NS) +
+      line('M14.6 26.4H21.4M14.6 30H21.4', GOLD, 0.8),
+    head:
+      ell(18, 5.8, 8.6, 5.2, WHITE) +
+      line('M10.2 6.6Q18 10.4 25.8 6.6M11.6 3.8Q18 6.6 24.4 3.8', '#c9bfa4', 0.8) +
+      rect(10.2, 8.4, 15.6, 1.6, '#c9bfa4', 0.6, NS) +
+      moust('#6b6b6b') +
+      beard('#6b6b6b'),
+    front: rect(24.2, 30, 3, 10, '#e8dcc0', 1.4) + line('M24.4 32.4H27M24.4 37.6H27', '#c0392b', 0.9) + circ(25.7, 40.4, 1.2, '#c0392b'),
+  },
+  sultane: {
+    skin: '#d8a878',
+    robe: '#a8281e',
+    body: WIDE,
+    deco:
+      path('M12.5 18.4Q18 16.4 23.5 18.4L22.6 24Q18 22.4 13.4 24Z', GOLD) +
+      line('M18 24V46', GOLD, 1.4) +
+      line('M13.6 30Q18 33 22.4 30M12.8 37Q18 40.4 23.2 37', GOLD, 0.9) +
+      circ(18, 29, 1, '#2f6fa8', NS) +
+      rect(8.5, 43.2, 19, 2.8, GOLD, 0, NS),
+    back: path('M11.6 9Q9.6 22 11 34L14 26L13 10Z', '#f1ead8') + path('M24.4 9Q26.4 22 25 34L22 26L23 10Z', '#f1ead8'),
+    head:
+      path('M12.4 11Q12 4.6 18 4.4Q24 4.6 23.6 11Q22.6 6.6 18 6.6Q13.4 6.6 12.4 11Z', '#3b2a1a') +
+      path('M12.6 5.6L14.6 3.4L16.4 5.4L18 2.2L19.6 5.4L21.4 3.4L23.4 5.6Z', GOLD) +
+      circ(18, 3.4, 0.9, '#c0392b', NS),
+  },
+  shah: {
+    skin: '#d2a070',
+    robe: '#7a1f3a',
+    body: WIDE,
+    deco:
+      path('M10 18.4Q18 15 26 18.4L25.4 24Q18 21 10.6 24Z', GOLD) +
+      line('M18 22V46', GOLD, 1.2) +
+      circ(14, 31, 1, '#2f8a6a', NS) +
+      circ(22, 31, 1, '#2f8a6a', NS) +
+      circ(14, 38, 1, '#e0b43a', NS) +
+      circ(22, 38, 1, '#e0b43a', NS) +
+      rect(10, 34.6, 16, 2.2, GOLD, 0, NS),
+    head:
+      path('M12.4 8.6Q11.6 4 18 3.6Q24.4 4 23.6 8.6Q18 6.6 12.4 8.6Z', '#c0262a') +
+      path('M16.6 3.8L18 -2.4L19.4 3.8Z', '#c0262a') +
+      path('M18 -2.2Q22.6 -3.6 22.4 1.4Q20.6 -0.4 18.6 0.6Z', WHITE) +
+      line('M12.8 5.8Q18 4.4 23.2 5.8', GOLD, 0.8) +
+      moust('#1f1a14') +
+      beard('#1f1a14'),
+  },
+  pacha: {
+    skin: '#d2a070',
+    robe: '#2a4f8a',
+    body: WIDE,
+    deco:
+      path('M10 18.4Q18 15 26 18.4L25 22.6Q18 20 11 22.6Z', '#6b4a2e') +
+      rect(10, 34, 16, 2.4, '#c0392b', 0, NS) +
+      line('M17.4 22V34', GOLD, 1) +
+      line('M14.6 25.4H21.4M14.6 29.4H21.4', GOLD, 0.8),
+    head:
+      ell(18, 6, 7.4, 4.2, '#c0392b') +
+      path('M13 6.6Q13.4 3 18 2.6Q22.6 3 23 6.6Q18 5 13 6.6Z', WHITE) +
+      line('M11.4 7.6Q18 9.6 24.6 7.6', '#e8dcc0', 1.4) +
+      moust('#2d2018') +
+      beard('#2d2018'),
+    front:
+      rect(30, 5, 1.2, 40, WOOD) +
+      circ(30.6, 5.4, 1.6, GOLD) +
+      path('M29 7.4Q26.6 12 29 20L30.4 20L30.4 7.4Z', '#f4efe0') +
+      path('M32.2 7.4Q34.6 12 32.2 20L31 20L31 7.4Z', '#f4efe0'),
+  },
 } satisfies Record<Archetype, CharSpec>;
 
 export function characterSvg(archetype: Archetype, tint?: string): string {
