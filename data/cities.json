@@ -50,6 +50,11 @@
         "empire": "rome",
         "from": 1261,
         "to": 1453
+      },
+      {
+        "empire": "ottomans",
+        "from": 1453,
+        "to": 1922
       }
     ]
   },
@@ -3044,7 +3049,8 @@
     "founded": -600,
     "rank": 3,
     "empires": [
-      "mongols"
+      "mongols",
+      "ottomans"
     ]
   },
   {
@@ -3143,7 +3149,8 @@
     "founded": 762,
     "rank": 1,
     "empires": [
-      "mongols"
+      "mongols",
+      "ottomans"
     ]
   },
   {
@@ -3193,7 +3200,8 @@
       }
     ],
     "empires": [
-      "mongols"
+      "mongols",
+      "ottomans"
     ]
   },
   {
@@ -3651,7 +3659,8 @@
     "founded": 1000,
     "rank": 3,
     "empires": [
-      "espagne"
+      "espagne",
+      "ottomans"
     ]
   },
   {
@@ -4357,7 +4366,8 @@
     "founded": 1000,
     "rank": 3,
     "empires": [
-      "saint-empire"
+      "saint-empire",
+      "ottomans"
     ]
   },
   {
@@ -5092,6 +5102,603 @@
     "rank": 3,
     "empires": [
       "alexandre"
+    ]
+  },
+  {
+    "id": "sogut",
+    "modern": "Söğüt, Turquie",
+    "names": [
+      {
+        "name": "Söğüt"
+      }
+    ],
+    "coords": [
+      30.18,
+      40.02
+    ],
+    "founded": 1230,
+    "rank": 3,
+    "capitalOf": [
+      {
+        "empire": "ottomans",
+        "from": 1299,
+        "to": 1325
+      }
+    ],
+    "empires": [
+      "ottomans"
+    ]
+  },
+  {
+    "id": "bursa",
+    "modern": "Bursa, Turquie",
+    "names": [
+      {
+        "name": "Pruse",
+        "to": 1325
+      },
+      {
+        "name": "Brousse (Bursa)",
+        "from": 1326
+      }
+    ],
+    "coords": [
+      29.06,
+      40.19
+    ],
+    "founded": -202,
+    "rank": 2,
+    "capitalOf": [
+      {
+        "empire": "ottomans",
+        "from": 1326,
+        "to": 1364
+      }
+    ]
+  },
+  {
+    "id": "edirne",
+    "modern": "Edirne, Turquie",
+    "names": [
+      {
+        "name": "Hadrianopolis",
+        "to": 1360
+      },
+      {
+        "name": "Andrinople (Edirne)",
+        "from": 1361
+      }
+    ],
+    "coords": [
+      26.56,
+      41.68
+    ],
+    "founded": 125,
+    "rank": 2,
+    "capitalOf": [
+      {
+        "empire": "ottomans",
+        "from": 1365,
+        "to": 1452
+      }
+    ]
+  },
+  {
+    "id": "belgrade",
+    "modern": "Belgrade, Serbie",
+    "names": [
+      {
+        "name": "Singidunum",
+        "to": 500
+      },
+      {
+        "name": "Belgrade",
+        "from": 501
+      }
+    ],
+    "coords": [
+      20.46,
+      44.82
+    ],
+    "founded": -279,
+    "rank": 2
+  },
+  {
+    "id": "sarajevo",
+    "modern": "Sarajevo, Bosnie-Herzégovine",
+    "names": [
+      {
+        "name": "Sarajevo"
+      }
+    ],
+    "coords": [
+      18.41,
+      43.86
+    ],
+    "founded": 1461,
+    "rank": 2
+  },
+  {
+    "id": "sofia",
+    "modern": "Sofia, Bulgarie",
+    "names": [
+      {
+        "name": "Serdica",
+        "to": 800
+      },
+      {
+        "name": "Sofia",
+        "from": 801
+      }
+    ],
+    "coords": [
+      23.32,
+      42.7
+    ],
+    "founded": -500,
+    "rank": 2
+  },
+  {
+    "id": "smyrna",
+    "modern": "Izmir, Turquie",
+    "names": [
+      {
+        "name": "Smyrne",
+        "to": 1922
+      },
+      {
+        "name": "Izmir",
+        "from": 1923
+      }
+    ],
+    "coords": [
+      27.14,
+      38.42
+    ],
+    "founded": -1000,
+    "rank": 2
+  },
+  {
+    "id": "aleppo",
+    "modern": "Alep, Syrie",
+    "names": [
+      {
+        "name": "Alep"
+      }
+    ],
+    "coords": [
+      37.16,
+      36.2
+    ],
+    "founded": -2000,
+    "rank": 2
+  },
+  {
+    "id": "cairo",
+    "modern": "Le Caire, Égypte",
+    "names": [
+      {
+        "name": "Fustat",
+        "to": 968
+      },
+      {
+        "name": "Le Caire",
+        "from": 969
+      }
+    ],
+    "coords": [
+      31.24,
+      30.04
+    ],
+    "founded": 641,
+    "rank": 1
+  },
+  {
+    "id": "algiers",
+    "modern": "Alger, Algérie",
+    "names": [
+      {
+        "name": "Icosium",
+        "to": 900
+      },
+      {
+        "name": "Alger",
+        "from": 901
+      }
+    ],
+    "coords": [
+      3.06,
+      36.75
+    ],
+    "founded": -300,
+    "rank": 2
+  },
+  {
+    "id": "tunis",
+    "modern": "Tunis, Tunisie",
+    "names": [
+      {
+        "name": "Tunis"
+      }
+    ],
+    "coords": [
+      10.18,
+      36.8
+    ],
+    "founded": -800,
+    "rank": 2
+  },
+  {
+    "id": "tripoli",
+    "modern": "Tripoli, Libye",
+    "names": [
+      {
+        "name": "Oea",
+        "to": 600
+      },
+      {
+        "name": "Tripoli",
+        "from": 601
+      }
+    ],
+    "coords": [
+      13.19,
+      32.89
+    ],
+    "founded": -600,
+    "rank": 2
+  },
+  {
+    "id": "mecca",
+    "modern": "La Mecque, Arabie saoudite",
+    "names": [
+      {
+        "name": "La Mecque"
+      }
+    ],
+    "coords": [
+      39.83,
+      21.42
+    ],
+    "founded": 400,
+    "rank": 2
+  },
+  {
+    "id": "medina",
+    "modern": "Médine, Arabie saoudite",
+    "names": [
+      {
+        "name": "Yathrib",
+        "to": 621
+      },
+      {
+        "name": "Médine",
+        "from": 622
+      }
+    ],
+    "coords": [
+      39.61,
+      24.47
+    ],
+    "founded": -300,
+    "rank": 2
+  },
+  {
+    "id": "basra",
+    "modern": "Bassora, Irak",
+    "names": [
+      {
+        "name": "Bassora"
+      }
+    ],
+    "coords": [
+      47.78,
+      30.5
+    ],
+    "founded": 636,
+    "rank": 2
+  },
+  {
+    "id": "candia",
+    "modern": "Héraklion, Grèce",
+    "names": [
+      {
+        "name": "Chandax",
+        "to": 1210
+      },
+      {
+        "name": "Candie",
+        "from": 1211,
+        "to": 1912
+      },
+      {
+        "name": "Héraklion",
+        "from": 1913
+      }
+    ],
+    "coords": [
+      25.13,
+      35.34
+    ],
+    "founded": 824,
+    "rank": 3,
+    "empires": [
+      "ottomans"
+    ]
+  },
+  {
+    "id": "bakhchysarai",
+    "modern": "Bakhtchyssaraï, Crimée",
+    "names": [
+      {
+        "name": "Bakhtchyssaraï"
+      }
+    ],
+    "coords": [
+      33.88,
+      44.74
+    ],
+    "founded": 1532,
+    "rank": 3,
+    "empires": [
+      "ottomans"
+    ]
+  },
+  {
+    "id": "szigetvar",
+    "modern": "Szigetvár, Hongrie",
+    "names": [
+      {
+        "name": "Szigetvár"
+      }
+    ],
+    "coords": [
+      17.8,
+      46.06
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "ottomans"
+    ]
+  },
+  {
+    "id": "plevna",
+    "modern": "Pleven, Bulgarie",
+    "names": [
+      {
+        "name": "Plevna"
+      }
+    ],
+    "coords": [
+      24.62,
+      43.41
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "ottomans"
+    ]
+  },
+  {
+    "id": "sevastopol",
+    "modern": "Sébastopol, Crimée",
+    "names": [
+      {
+        "name": "Sébastopol"
+      }
+    ],
+    "coords": [
+      33.52,
+      44.62
+    ],
+    "founded": 1783,
+    "rank": 3,
+    "empires": [
+      "ottomans"
+    ]
+  },
+  {
+    "id": "kosovo-polje",
+    "modern": "Kosovo Polje, Kosovo",
+    "names": [
+      {
+        "name": "Kosovo Polje (champ des Merles)"
+      }
+    ],
+    "coords": [
+      21.1,
+      42.66
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "ottomans"
+    ]
+  },
+  {
+    "id": "nicopolis-danube",
+    "modern": "Nikopol, Bulgarie",
+    "names": [
+      {
+        "name": "Nicopolis"
+      }
+    ],
+    "coords": [
+      24.9,
+      43.7
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "ottomans"
+    ]
+  },
+  {
+    "id": "varna",
+    "modern": "Varna, Bulgarie",
+    "names": [
+      {
+        "name": "Varna"
+      }
+    ],
+    "coords": [
+      27.92,
+      43.2
+    ],
+    "founded": -600,
+    "rank": 3,
+    "empires": [
+      "ottomans"
+    ]
+  },
+  {
+    "id": "chaldiran",
+    "modern": "Tchaldiran (Çaldıran), Turquie",
+    "names": [
+      {
+        "name": "Tchaldiran"
+      }
+    ],
+    "coords": [
+      44.05,
+      39.1
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "ottomans"
+    ]
+  },
+  {
+    "id": "preveza",
+    "modern": "Préveza, Grèce",
+    "names": [
+      {
+        "name": "Préveza"
+      }
+    ],
+    "coords": [
+      20.75,
+      38.95
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "ottomans"
+    ]
+  },
+  {
+    "id": "kumanovo",
+    "modern": "Kumanovo, Macédoine du Nord",
+    "names": [
+      {
+        "name": "Kumanovo"
+      }
+    ],
+    "coords": [
+      21.71,
+      42.13
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "ottomans"
+    ]
+  },
+  {
+    "id": "gelibolu",
+    "modern": "Gelibolu, Turquie",
+    "names": [
+      {
+        "name": "Callipolis",
+        "to": 1353
+      },
+      {
+        "name": "Gallipoli (Gelibolu)",
+        "from": 1354
+      }
+    ],
+    "coords": [
+      26.67,
+      40.41
+    ],
+    "founded": -500,
+    "rank": 3,
+    "empires": [
+      "ottomans"
+    ]
+  },
+  {
+    "id": "navarin",
+    "modern": "Pylos (Navarin), Grèce",
+    "names": [
+      {
+        "name": "Navarin"
+      }
+    ],
+    "coords": [
+      21.7,
+      36.93
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "ottomans"
+    ]
+  },
+  {
+    "id": "karlowitz",
+    "modern": "Sremski Karlovci, Serbie",
+    "names": [
+      {
+        "name": "Karlowitz"
+      }
+    ],
+    "coords": [
+      19.93,
+      45.2
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "ottomans"
+    ]
+  },
+  {
+    "id": "kaynardzha",
+    "modern": "Kaynardzha, Bulgarie",
+    "names": [
+      {
+        "name": "Küçük Kaynarca"
+      }
+    ],
+    "coords": [
+      27.3,
+      44.05
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "ottomans"
+    ]
+  },
+  {
+    "id": "marj-dabiq",
+    "modern": "Dabiq, Syrie",
+    "names": [
+      {
+        "name": "Marj Dabiq"
+      }
+    ],
+    "coords": [
+      37.2,
+      36.55
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "ottomans"
     ]
   }
 ]

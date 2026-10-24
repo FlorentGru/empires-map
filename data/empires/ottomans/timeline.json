@@ -1,0 +1,3026 @@
+{
+  "id": "ottomans",
+  "name": "Empire ottoman",
+  "color": "#b5302a",
+  "start": 1299,
+  "end": 1922,
+  "description": "L'Empire ottoman naît vers 1299 d'une petite principauté turque d'Anatolie et devient, après la prise de Constantinople en 1453, l'une des grandes puissances du monde : sous Soliman le Magnifique, il s'étend de la Hongrie à l'Irak et de la Crimée à l'Algérie. Dirigé par des sultans, il tient trois continents pendant des siècles grâce à son armée de janissaires, sa flotte et une administration originale. À partir de la fin du XVIIᵉ siècle, il recule face aux Habsbourg et aux Russes, puis cherche à se réformer. Vaincu en 1918, il est aboli en 1922 et laisse la place à la République de Turquie.",
+  "view": {
+    "center": [
+      32,
+      39
+    ],
+    "zoom": 3.6
+  },
+  "bounds": [
+    [
+      -12,
+      10
+    ],
+    [
+      62,
+      55
+    ]
+  ],
+  "apogee": {
+    "stepId": "szigetvar-1566",
+    "note": "Soliman meurt en 1566 au sommet de sa puissance, mais l'extension maximale se discute : vers 1590 (conquêtes en Perse et au Caucase) ou 1683 (Hongrie, Podolie et Crète tenues)."
+  },
+  "periods": [
+    {
+      "id": "essor",
+      "name": "Des beys d'Anatolie à Constantinople",
+      "start": 1299,
+      "end": 1453,
+      "color": "#d9b36b",
+      "summary": "Un petit chef turc de la frontière byzantine, Osman, fonde une principauté qui s'étend en Anatolie puis passe en Europe. Malgré la défaite d'Ankara contre Tamerlan en 1402, les Ottomans se relèvent et prennent Constantinople en 1453."
+    },
+    {
+      "id": "apogee",
+      "name": "L'âge d'or, de Mehmed II à Soliman",
+      "start": 1453,
+      "end": 1566,
+      "color": "#c9614a",
+      "summary": "De Constantinople à la Hongrie, de l'Égypte à l'Irak, les sultans conquièrent un empire immense. Soliman le Magnifique en est la figure majeure, avant sa mort devant Szigetvár en 1566."
+    },
+    {
+      "id": "puissance",
+      "name": "Une puissance contestée",
+      "start": 1566,
+      "end": 1699,
+      "color": "#7f9fb3",
+      "summary": "Après Soliman, l'Empire reste immense mais l'Europe et la Perse lui résistent. Il conquiert encore la Crète et assiège Vienne en 1683, avant de perdre la Hongrie à la fin du siècle."
+    },
+    {
+      "id": "recul",
+      "name": "Le long recul",
+      "start": 1699,
+      "end": 1839,
+      "color": "#9a8cae",
+      "summary": "De Karlowitz à Navarin, l'Empire perd des territoires face aux Habsbourg, aux Russes et aux mouvements nationaux. Les sultans tentent de moderniser l'armée, qui devient un enjeu central."
+    },
+    {
+      "id": "reformes-chute",
+      "name": "Réformes et chute",
+      "start": 1839,
+      "end": 1922,
+      "color": "#8fb08a",
+      "summary": "Les Tanzimat modernisent l'État mais n'empêchent pas la perte des Balkans, puis des provinces arabes. Vaincu en 1918, l'Empire est remplacé par la République turque de Mustafa Kemal."
+    }
+  ],
+  "steps": [
+    {
+      "id": "osman-1299",
+      "year": 1299,
+      "title": "Osman fonde la principauté ottomane",
+      "type": "fondation",
+      "location": [
+        30.18,
+        40.02
+      ],
+      "zoom": 5.2,
+      "summary": "Vers 1299, le chef turc Osman installe à Söğüt, sur la frontière de l'Empire byzantin, une petite principauté qui deviendra l'Empire ottoman.",
+      "details": "À la fin du XIIIᵉ siècle, l'Anatolie (la péninsule qui forme l'essentiel de la Turquie actuelle) est en pleine confusion. Le sultanat des **Seldjoukides de Roum**, un État turc musulman qui la dominait, s'effondre sous les coups des Mongols. À sa place naissent des **beyliks**, de petites principautés dirigées chacune par un **bey**, un seigneur de guerre turc.\n\nL'un d'eux est installé à **Söğüt**, tout près de la frontière de l'**Empire byzantin**, c'est-à-dire l'Empire romain d'Orient, dont la capitale est Constantinople. Son chef, **Osman**, fils du chef nomade Ertuğrul, est un *ghazi* : un guerrier qui fait la guerre sainte contre les chrétiens, mais aussi un habile meneur d'hommes qui attire des cavaliers turkmènes, des derviches (moines musulmans errants) et des paysans en quête de terres. La dynastie prend son nom : les *Osmanlı*, « les gens d'Osman », que nous appelons Ottomans.\n\nLes Byzantins, occupés par leurs querelles en Europe, ont dégarni leur frontière asiatique. En 1302, Osman bat une armée byzantine à Bapheus, près de Nicomédie, et le mouvement s'accélère. Les sources de l'époque sont rares et l'histoire des origines est mêlée de légendes, comme le fameux rêve d'Osman où un arbre immense couvre trois continents.\n\nLe beylik n'a alors rien d'un empire : quelques vallées, quelques centaines de cavaliers. Mais il a une position idéale, face aux richesses byzantines.",
+      "consequences": [
+        "Un petit beylik turc s'établit autour de Söğüt et d'Eskişehir, aux portes de la Bithynie byzantine.",
+        "La victoire de Bapheus (1302) ouvre à Osman les campagnes de Bithynie et pousse les paysans byzantins à fuir vers les villes.",
+        "Les Byzantins ne tiennent plus que les villes fortifiées d'Anatolie, privées de leur campagne.",
+        "La dynastie osmanlie est fondée : elle régnera jusqu'en 1922, soit plus de six siècles."
+      ],
+      "territory": "osman-1299",
+      "sources": [
+        {
+          "label": "Wikipédia — Osman Ier",
+          "url": "https://fr.wikipedia.org/wiki/Osman_Ier"
+        },
+        {
+          "label": "Robert Mantran (dir.), Histoire de l'Empire ottoman (Fayard)"
+        },
+        {
+          "label": "Halil İnalcık, The Ottoman Empire: The Classical Age 1300-1600"
+        }
+      ],
+      "territoryNote": "Un minuscule beylik (principauté) d'Osman autour de Söğüt et d'Eskişehir, dans le nord-ouest de l'Anatolie, sur la frontière de la Bithynie byzantine, sans accès à la mer. Voisins : l'Empire byzantin (Nicée, Brousse, Nicomédie, Constantinople, Thrace) ; à l'ouest et au sud, les autres beyliks turcs (Karasi sur la côte de Mysie, Germiyan autour de Kütahya, Aydin à Éphèse, Saruhan, Menteşe, Hamid, Karaman à Konya) ; le beylik de Candar au nord ; l'Ilkhanat mongol de Perse dominant l'Anatolie centrale et orientale ; en Europe, la Bulgarie et la Serbie.",
+      "figures": [
+        {
+          "name": "Osman Ier",
+          "role": "Bey fondateur de la dynastie",
+          "faction": "ottomans",
+          "archetype": "sultan",
+          "quote": "Que la justice soit ton premier devoir, mon fils (formule libre)",
+          "position": [
+            30.18,
+            40.02
+          ]
+        },
+        {
+          "name": "Andronic II Paléologue",
+          "role": "Empereur byzantin",
+          "faction": "byzantins",
+          "archetype": "empereur-byzantin",
+          "quote": "(formule libre) Je ne puis garder à la fois la Thrace et la Bithynie",
+          "position": [
+            28.98,
+            41.01
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bursa-1326",
+      "year": 1326,
+      "title": "La prise de Brousse (Bursa)",
+      "type": "politique",
+      "location": [
+        29.06,
+        40.19
+      ],
+      "zoom": 5.2,
+      "summary": "Après un long siège, Brousse capitule en 1326 : Orhan, fils d'Osman, y installe sa capitale, première grande ville de l'État ottoman.",
+      "details": "Vers 1326, **Osman**, très malade, apprend que **Brousse** (aujourd'hui **Bursa**) vient de se rendre à son fils **Orhan**. La ville, riche étape de la route de la soie au pied du mont Olympe d'Asie (l'Uludağ), a été affamée pendant des années par un blocus de forts. Quand le gouverneur byzantin comprend qu'aucun secours ne viendra de Constantinople, il capitule contre la vie sauve. Osman meurt peu après, dit-on, enterré à Söğüt avant d'être transporté à Brousse.\n\nOrhan fait de Brousse sa **capitale**. Il y bâtit mosquées, écoles religieuses (*medrese*), bains et une monnaie à son nom : on passe des campements de guerriers à un État. Il prend Nicée (Iznik) en 1331, puis Nicomédie (Izmit) en 1337, et annexe vers 1345 le beylik voisin de Karasi, ce qui lui donne la côte face à la Thrace. Les Byzantins, divisés par la guerre civile de 1341-1347, font même appel à lui : en 1346, Orhan épouse Théodora, la fille de l'empereur Jean Cantacuzène.\n\nLa nouvelle armée tire sa force d'une infanterie à pied payée, les *yaya*, et de cavaliers qui reçoivent des terres en échange du service. Brousse devient un modèle : les sultans y seront enterrés jusqu'à la prise de Constantinople.",
+      "consequences": [
+        "La Bithynie intérieure passe aux Ottomans ; Nicée (1331) et Nicomédie (1337) tombent dans les années suivantes.",
+        "Brousse devient capitale, centre commercial de la soie et premier foyer d'architecture ottomane.",
+        "L'annexion de Karasi (vers 1345) donne à Orhan la rive asiatique des Dardanelles.",
+        "Les Byzantins, affaiblis par leurs guerres civiles, n'ont plus de campagne en Asie Mineure."
+      ],
+      "territory": "bursa-1326",
+      "sources": [
+        {
+          "label": "Wikipédia — Bursa",
+          "url": "https://fr.wikipedia.org/wiki/Bursa"
+        },
+        {
+          "label": "Wikipédia — Orhan Ier",
+          "url": "https://fr.wikipedia.org/wiki/Orhan"
+        },
+        {
+          "label": "Halil İnalcık, The Ottoman Empire: The Classical Age 1300-1600"
+        }
+      ],
+      "territoryNote": "Beylik d'Orhan : Bithynie intérieure (Söğüt, Eskişehir, Bilecik, Yenişehir) et Brousse (Bursa) fraîchement conquise, avec une façade sur la mer de Marmara autour de Mudanya ; Nicée (Iznik) et Nicomédie (Izmit) encore byzantines. Voisins : Empire byzantin (Nicée, Nicomédie, Constantinople et sa Thrace) ; beylik de Karasi à l'ouest (Balıkesir, côte de Mysie) ; Germiyan au sud (Kütahya) ; Candar au nord-est ; Ilkhanat mongol de Perse en Anatolie centrale ; en Europe, les royaumes de Bulgarie et de Serbie.",
+      "figures": [
+        {
+          "name": "Orhan",
+          "role": "Bey, fils d'Osman",
+          "faction": "ottomans",
+          "archetype": "sultan",
+          "quote": "(formule libre) Brousse sera ma capitale",
+          "position": [
+            29.06,
+            40.19
+          ]
+        },
+        {
+          "name": "Jean VI Cantacuzène",
+          "role": "Empereur byzantin, allié puis beau-père d'Orhan",
+          "faction": "byzantins",
+          "archetype": "empereur-byzantin",
+          "position": [
+            28.98,
+            41.01
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gallipoli-1354",
+      "year": 1354,
+      "title": "Gallipoli : les Ottomans passent en Europe",
+      "type": "politique",
+      "location": [
+        26.67,
+        40.41
+      ],
+      "zoom": 5.4,
+      "summary": "En 1354, un tremblement de terre ruine les murs de Gallipoli et les Ottomans s'y installent : c'est leur première base durable en Europe.",
+      "details": "Depuis 1345 Orhan tient la côte asiatique des Dardanelles. Les Ottomans y avaient déjà débarqué en Europe, d'abord comme **mercenaires** de l'empereur byzantin Jean Cantacuzène pendant ses guerres civiles. En mars 1354, un violent **tremblement de terre** détruit les remparts de **Gallipoli** (Gelibolu), la clé européenne des Dardanelles. Les habitants s'enfuient. **Süleyman Pacha**, fils d'Orhan, traverse le détroit sur des radeaux et occupe la ville vide. Les Byzantins proposent de la racheter, mais en vain : Orhan refuse de partir, déclarant, selon la tradition, que c'est la volonté de Dieu.\n\nPeu à peu, des colons turcs, des cavaliers et des derviches franchissent le détroit. Süleyman prend ensuite Tekirdağ (Rodosto) et la région de Thrace. L'Europe n'est plus fermée aux Ottomans. En 1361-1362, son frère Murad Iᵉʳ conquiert **Andrinople** (Edirne), qui devient la capitale vers 1365 : un sultan peut désormais gouverner les Balkans depuis une ville sur la route de Constantinople.\n\nMurad prend le titre de **sultan**, souverain de l'islam dans l'usage turc, et organise la conquête sous des chefs de frontière (*uç beyleri*) qui avancent par raids. L'État ottoman, né en Asie, devient une puissance européenne en un demi-siècle.",
+      "consequences": [
+        "Gallipoli et la Chersonèse de Thrace sont occupées : première base ottomane durable en Europe.",
+        "Andrinople (Edirne), prise en 1361-1362, devient capitale vers 1365 et le centre des conquêtes dans les Balkans.",
+        "Les Byzantins sont enclavés autour de Constantinople, désormais coupée de son arrière-pays thrace.",
+        "Des colons turcs s'installent en Thrace, transformant lentement le peuplement de la région."
+      ],
+      "territory": "gallipoli-1354",
+      "sources": [
+        {
+          "label": "Wikipédia — Gallipoli (Turquie)",
+          "url": "https://fr.wikipedia.org/wiki/Gelibolu"
+        },
+        {
+          "label": "Wikipédia — Murad Ier",
+          "url": "https://fr.wikipedia.org/wiki/Murad_Ier"
+        },
+        {
+          "label": "Robert Mantran (dir.), Histoire de l'Empire ottoman (Fayard)"
+        }
+      ],
+      "territoryNote": "Beylik d'Orhan : Bithynie, Mysie (Karasi annexé vers 1345), Nicée, Nicomédie, Brousse capitale ; tête de pont en Europe à Gallipoli (Gelibolu) et dans la Chersonèse de Thrace (rive nord des Dardanelles), qui s'étendra bientôt à Rodosto (Tekirdağ). Voisins : Empire byzantin réduit à Constantinople, au littoral de Thrace orientale, à Salonique et à la Morée ; Empire serbe de Stefan Dušan (Macédoine, Épire, Thessalie) ; Bulgarie de Tarnovo ; en Asie, beyliks de Germiyan (Kütahya), Aydin (Éphèse), Saruhan (Magnésie), Hamid, Karaman (Konya) et Candar (Kastamonu).",
+      "figures": [
+        {
+          "name": "Orhan",
+          "role": "Bey ottoman",
+          "faction": "ottomans",
+          "archetype": "sultan",
+          "position": [
+            29.06,
+            40.19
+          ]
+        },
+        {
+          "name": "Süleyman Pacha",
+          "role": "Fils d'Orhan, conquérant de Gallipoli",
+          "faction": "ottomans",
+          "archetype": "pacha",
+          "quote": "(formule libre) Dieu nous a ouvert la porte de l'Europe",
+          "position": [
+            26.67,
+            40.41
+          ]
+        },
+        {
+          "name": "Jean V Paléologue",
+          "role": "Empereur byzantin",
+          "faction": "byzantins",
+          "archetype": "empereur-byzantin",
+          "position": [
+            28.98,
+            41.01
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kosovo-1389",
+      "year": 1389,
+      "title": "Kosovo : la bataille de la plaine des Merles",
+      "type": "bataille",
+      "location": [
+        21.1,
+        42.66
+      ],
+      "zoom": 5.2,
+      "summary": "Le 15 juin 1389, l'armée du sultan Murad Iᵉʳ affronte les princes serbes du prince Lazar à Kosovo Polje ; les deux chefs meurent, mais la Serbie devient tributaire des Ottomans.",
+      "details": "Dans les années 1380, les Ottomans avancent dans les Balkans : Sofia tombe en 1385, Salonique en 1387. Face à eux, le prince **Lazar Hrebeljanović**, maître de la Serbie du Nord, forme une coalition de princes serbes, bosniaques et albanais. Le **15 juin 1389**, sur la plaine du **Kosovo Polje** (« le champ des Merles »), l'armée du sultan **Murad Iᵉʳ**, avec ses cavaliers et ses fantassins *azaps*, rencontre la coalition. Les chiffres sont discutés : sans doute quelques dizaines de milliers d'hommes de chaque côté.\n\nLa bataille est confuse. Un chevalier serbe, Miloš Obilić, se serait glissé dans la tente de Murad et l'aurait tué ; le sultan est effectivement mort pendant ou juste après le combat. Son fils **Bayezid** prend aussitôt le commandement, fait étrangler son frère Yakub pour assurer le trône, puis lance la contre-attaque. Lazar, capturé, est exécuté.\n\nLe résultat militaire est mitigé, mais le résultat politique est net : la Serbie de Lazar devient un **État vassal** (qui paie tribut et fournit des soldats). Le Kosovo reste dans la mémoire serbe comme un mythe fondateur, chanté par des poèmes épiques, et alimentera des revendications jusqu'à nos jours.",
+      "consequences": [
+        "La Serbie du prince Lazar devient vassale des Ottomans ; les princes serbes doivent tribut et soldats.",
+        "La route du Danube s'ouvre : la Bosnie, la Valachie et la Hongrie sont désormais voisines des Ottomans.",
+        "Bayezid Iᵉʳ monte sur le trône, sa première mesure étant de supprimer son frère ; la pratique du fratricide s'installe.",
+        "Le Kosovo devient un lieu de mémoire majeur pour les Serbes, source de mythes et de tensions durables."
+      ],
+      "territory": "kosovo-1389",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Kosovo Polje",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Kosovo_Polje"
+        },
+        {
+          "label": "Nicolas Vatin et Gilles Veinstein, Le Sérail ébranlé (Fayard)"
+        },
+        {
+          "label": "Robert Mantran (dir.), Histoire de l'Empire ottoman (Fayard)"
+        }
+      ],
+      "territoryNote": "Sultanat de Murad Ier : Anatolie du nord-ouest jusqu'à Ankara (acquise en 1354 par Orhan), Thrace avec Andrinople (Edirne) pour capitale, Macédoine orientale, Salonique (prise en 1387), sud de la Bulgarie (Philippopoli/Plovdiv, Sofia). Vassaux : Bulgarie de Tarnovo (tsar Chichman), Byzance (réduite à Constantinople), princes serbes du sud (Dragaš, Mrnjavčević). Voisins : Serbie de Lazar (vallée de la Morava), Bosnie de Tvrtko Ier, Hongrie de Sigismond, Valachie de Mircea l'Ancien, Albanie des Balšić, beyliks de Karaman à Konya, Germiyan, Aydin et Saruhan.",
+      "battle": {
+        "belligerents": [
+          "Empire ottoman",
+          "Coalition serbe du prince Lazar (avec Bosniaques et Albanais)"
+        ],
+        "commanders": [
+          "Murad Iᵉʳ",
+          "Bayezid",
+          "Lazar Hrebeljanović",
+          "Vuk Branković"
+        ],
+        "outcome": "Victoire stratégique des Ottomans ; mort de Murad Iᵉʳ et du prince Lazar",
+        "forces": "Ottomans : environ 30 000 hommes ; coalition : 15 000 à 25 000 (estimations très incertaines)",
+        "losses": "Très lourdes des deux côtés ; la haute noblesse serbe est décimée"
+      },
+      "armies": [
+        {
+          "id": "armee-ottomane",
+          "side": "Ottomans de Murad Iᵉʳ",
+          "from": "Andrinople",
+          "faction": "ottomans",
+          "path": [
+            [
+              26.56,
+              41.68
+            ],
+            [
+              24.75,
+              42.15
+            ],
+            [
+              23.32,
+              42.7
+            ],
+            [
+              21.9,
+              43.32
+            ],
+            [
+              21.1,
+              42.66
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Coalition serbe de Lazar",
+          "from": "Kruševac",
+          "faction": "serbes",
+          "path": [
+            [
+              21.33,
+              43.58
+            ],
+            [
+              21.2,
+              43.1
+            ],
+            [
+              21.1,
+              42.66
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Murad Ier",
+          "role": "Sultan ottoman, tué à Kosovo",
+          "faction": "ottomans",
+          "archetype": "sultan",
+          "position": [
+            21.12,
+            42.66
+          ]
+        },
+        {
+          "name": "Lazar Hrebeljanović",
+          "role": "Prince de Serbie",
+          "faction": "serbes",
+          "archetype": "roi",
+          "quote": "(formule libre) Mieux vaut mourir au combat que vivre en esclavage",
+          "position": [
+            21.08,
+            42.66
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nicopolis-1396",
+      "year": 1396,
+      "title": "Nicopolis : la dernière grande croisade",
+      "type": "bataille",
+      "location": [
+        24.9,
+        43.7
+      ],
+      "zoom": 5.2,
+      "summary": "Le 25 septembre 1396, Bayezid Iᵉʳ écrase à Nicopolis, sur le Danube, une armée de croisés menée par le roi de Hongrie Sigismond.",
+      "details": "En quelques années, **Bayezid Iᵉʳ**, surnommé *Yıldırım* (« la Foudre »), a annexé la Bulgarie de Tarnovo et soumis presque toute l'Anatolie. Il bloque Constantinople. Le roi de Hongrie **Sigismond**, dont les terres sont désormais menacées sur le Danube, appelle à la **croisade**, c'est-à-dire à une expédition militaire chrétienne soutenue par le pape. Répondent des chevaliers venus de France, de Bourgogne (le comte de Nevers, futur Jean sans Peur), d'Allemagne et d'Angleterre, ainsi que les Hongrois et des Valaques.\n\nLes croisés assiègent **Nicopolis** (Nikopol, sur le Danube). Pleins de confiance, ils négligent les conseils de Sigismond, qui veut laisser aux fantassins l'attaque initiale. Les chevaliers français chargent en premier, enfoncent les troupes légères ottomanes, mais butent sur des pieux plantés devant les archers et sont pris à revers par la cavalerie lourde (les *sipahis*) avec le renfort des Serbes de Stefan Lazarević, vassal de Bayezid. Sigismond s'enfuit par le fleuve. Les prisonniers sont massacrés, hormis les plus riches, rachetés contre de fortes rançons.\n\nLe désastre est le dernier grand effort occidental de croisade avant Varna, et il laisse Constantinople sans espoir de secours.",
+      "consequences": [
+        "Les Ottomans consolident leur emprise sur la Bulgarie et les Balkans du sud-est ; Vidin est annexée.",
+        "La Hongrie perd le contrôle du bas Danube et la Valachie doit composer avec le sultan.",
+        "Constantinople reste isolée, et l'empereur byzantin Manuel II part chercher de l'aide en Occident.",
+        "En France et en Bourgogne, la défaite marque durablement l'idée de croisade."
+      ],
+      "territory": "nicopolis-1396",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Nicopolis",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Nicopolis"
+        },
+        {
+          "label": "Halil İnalcık, The Ottoman Empire: The Classical Age 1300-1600"
+        },
+        {
+          "label": "Robert Mantran (dir.), Histoire de l'Empire ottoman (Fayard)"
+        }
+      ],
+      "territoryNote": "Sultanat de Bayezid Ier à son apogée médiéval : Anatolie presque entière (Germiyan, Aydin, Saruhan, Menteşe, Hamid annexés en 1390 ; Karaman encore indépendant à Konya), Thrace, Macédoine, Thessalie, Bulgarie (Tarnovo annexée en 1393, Vidin soumise), Salonique ; Constantinople bloquée. Vassaux : Serbie du despote Stefan Lazarević, Valachie de Mircea l'Ancien (allié incertain), princes grecs de Morée. Voisins : Hongrie de Sigismond (Danube, Belgrade hongroise), Bosnie, Albanie vénitienne, Royaume de Pologne, Karaman à l'est et les Mamelouks en Syrie.",
+      "battle": {
+        "belligerents": [
+          "Empire ottoman (avec la Serbie vassale)",
+          "Croisés (Hongrois, Français, Bourguignons, Valaques, Allemands)"
+        ],
+        "commanders": [
+          "Bayezid Iᵉʳ",
+          "Stefan Lazarević",
+          "Sigismond de Hongrie",
+          "Jean de Nevers"
+        ],
+        "outcome": "Victoire écrasante des Ottomans",
+        "forces": "Ottomans : environ 15 000 à 20 000 ; croisés : 10 000 à 20 000 (estimations discutées)",
+        "losses": "Plusieurs milliers de croisés tués ou exécutés ; plusieurs centaines de nobles rançonnés"
+      },
+      "armies": [
+        {
+          "id": "armee-ottomane",
+          "side": "Ottomans de Bayezid",
+          "faction": "ottomans",
+          "path": [
+            [
+              21.1,
+              42.66
+            ],
+            [
+              22.5,
+              43.3
+            ],
+            [
+              24,
+              43.6
+            ],
+            [
+              24.9,
+              43.7
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Hongrois de Sigismond",
+          "from": "Buda",
+          "faction": "hongrois",
+          "path": [
+            [
+              19.04,
+              47.5
+            ],
+            [
+              21.23,
+              45.75
+            ],
+            [
+              22.87,
+              43.99
+            ],
+            [
+              24.9,
+              43.7
+            ]
+          ],
+          "strength": 2
+        },
+        {
+          "side": "Croisés français et bourguignons",
+          "from": "Dijon",
+          "faction": "chevaliers-europeens",
+          "path": [
+            [
+              5.04,
+              47.32
+            ],
+            [
+              11.4,
+              48.1
+            ],
+            [
+              16.37,
+              48.2
+            ],
+            [
+              19.04,
+              47.5
+            ],
+            [
+              22.87,
+              43.99
+            ],
+            [
+              24.9,
+              43.7
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Bayezid Ier « la Foudre »",
+          "role": "Sultan ottoman",
+          "faction": "ottomans",
+          "archetype": "sultan",
+          "quote": "(formule libre) Je dînerai à Rome et ferai manger mon cheval sur l'autel de Saint-Pierre",
+          "position": [
+            24.95,
+            43.68
+          ]
+        },
+        {
+          "name": "Sigismond de Luxembourg",
+          "role": "Roi de Hongrie",
+          "faction": "hongrois",
+          "archetype": "roi",
+          "position": [
+            24.85,
+            43.72
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ankara-1402",
+      "year": 1402,
+      "title": "Ankara : Tamerlan capture Bayezid",
+      "type": "bataille",
+      "location": [
+        32.85,
+        39.93
+      ],
+      "zoom": 4.8,
+      "summary": "Le 28 juillet 1402, le conquérant turco-mongol Tamerlan écrase l'armée de Bayezid près d'Ankara et capture le sultan : l'État ottoman éclate.",
+      "details": "Au tournant de 1400, deux conquérants se heurtent en Anatolie. **Bayezid Iᵉʳ**, qui a annexé les beyliks voisins, héberge les princes dépossédés ; **Tamerlan** (Timur, souverain d'Asie centrale surnommé le « boiteux »), maître de l'Iran et de l'Irak, se pose en protecteur de ces mêmes princes. Après avoir ravagé Sivas et la Syrie, Tamerlan marche sur Ankara.\n\nLe **28 juillet 1402**, les deux armées se rencontrent dans la plaine de Çubuk. Bayezid, qui dispose de ses **janissaires** (infanterie d'élite du sultan, formée d'esclaves-soldats), de cavaliers *sipahis* et de contingents serbes, est trahi par ses contingents turcs d'Anatolie, qui rejoignent leurs anciens seigneurs dans le camp adverse, et privé de ses points d'eau, détournés par Tamerlan. Après une journée de combat, Bayezid est capturé et meurt en captivité l'année suivante.\n\nL'État s'effondre. Tamerlan rend leurs terres aux princes d'Anatolie, tandis que les fils de Bayezid se disputent l'héritage pendant onze ans, le **Fetret** (l'interrègne). En Europe, **Süleyman Çelebi** garde Andrinople, tandis que Mehmed et Musa tiennent d'autres parties. L'empire ne survit que parce que Tamerlan retourne en Asie centrale et meurt en 1405.",
+      "consequences": [
+        "L'Anatolie est rendue aux beyliks de Germiyan, Aydin, Saruhan, Menteşe et Karaman ; seul le noyau de Bursa résiste.",
+        "Byzance obtient un répit : Salonique, une partie de la Thrace et des côtes lui sont restituées en 1403.",
+        "Le Fetret (1402-1413) oppose les fils de Bayezid ; Mehmed Iᵉʳ réunifie l'État en 1413.",
+        "La Serbie et la Valachie échappent à la tutelle ottomane pour quelques décennies."
+      ],
+      "territory": "ankara-1402",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille d'Ankara",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_d'Ankara"
+        },
+        {
+          "label": "Wikipédia — Tamerlan",
+          "url": "https://fr.wikipedia.org/wiki/Tamerlan"
+        },
+        {
+          "label": "Nicolas Vatin et Gilles Veinstein, Le Sérail ébranlé (Fayard)"
+        }
+      ],
+      "territoryNote": "État ottoman éclaté après la défaite : en Europe (Roumélie), Süleyman Çelebi tient Andrinople, la Thrace et la Macédoine ; en Asie, le noyau de Brousse (Bursa) et de la Bithynie est disputé entre Isa et Mehmed (Amasya, Tokat). Les beyliks restitués par Tamerlan : Germiyan, Aydin, Saruhan, Menteşe, Karaman, Candar. Vassaux/tributaires du moment : la Serbie de Stefan Lazarević redevient indépendante, la Valachie de Mircea l'Ancien aussi. Voisins : Empire timouride de Tamerlan (Iran, Irak, Syrie du nord brièvement), Byzance (Constantinople, Salonique rendue), Hongrie, Venise.",
+      "battle": {
+        "belligerents": [
+          "Empire ottoman",
+          "Empire timouride (Tamerlan)"
+        ],
+        "commanders": [
+          "Bayezid Iᵉʳ",
+          "Stefan Lazarević",
+          "Tamerlan"
+        ],
+        "outcome": "Victoire écrasante de Tamerlan ; Bayezid est capturé",
+        "forces": "Ottomans : environ 85 000 ; Timourides : environ 140 000 (chiffres de chroniqueurs, très incertains)",
+        "losses": "Pertes énormes chez les Ottomans, dont la moitié de l'armée et les janissaires"
+      },
+      "armies": [
+        {
+          "id": "armee-ottomane",
+          "side": "Ottomans de Bayezid",
+          "faction": "janissaires",
+          "path": [
+            [
+              24.9,
+              43.7
+            ],
+            [
+              26.56,
+              41.68
+            ],
+            [
+              28.98,
+              41.02
+            ],
+            [
+              31,
+              40.2
+            ],
+            [
+              32.85,
+              39.93
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Timourides de Tamerlan",
+          "from": "Samarcande",
+          "faction": "timourides",
+          "path": [
+            [
+              66.97,
+              39.65
+            ],
+            [
+              59.6,
+              36.3
+            ],
+            [
+              51.4,
+              35.7
+            ],
+            [
+              46.3,
+              38.08
+            ],
+            [
+              37,
+              39.75
+            ],
+            [
+              32.85,
+              39.93
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Tamerlan (Timur)",
+          "role": "Conquérant turco-mongol",
+          "faction": "timourides",
+          "archetype": "khan",
+          "quote": "(formule libre) Le monde n'est pas assez grand pour deux rois",
+          "position": [
+            33,
+            40
+          ]
+        },
+        {
+          "name": "Bayezid Ier « la Foudre »",
+          "role": "Sultan ottoman capturé",
+          "faction": "janissaires",
+          "archetype": "sultan",
+          "position": [
+            32.7,
+            39.9
+          ]
+        }
+      ]
+    },
+    {
+      "id": "varna-1444",
+      "year": 1444,
+      "title": "Varna : la croisade brisée",
+      "type": "bataille",
+      "location": [
+        27.92,
+        43.2
+      ],
+      "zoom": 5.2,
+      "summary": "Le 10 novembre 1444, Murad II bat à Varna, sur la mer Noire, le roi de Pologne et de Hongrie Ladislas III, qui meurt au combat.",
+      "details": "Après la tourmente de l'interrègne, les Ottomans se reconstruisent. **Mehmed Iᵉʳ** réunifie l'État en 1413, puis **Murad II** (1421-1451) reprend Salonique aux Vénitiens (1430) et soumet la Serbie, la Valachie et l'Albanie du sud. En 1444, le jeune sultan, dégoûté du pouvoir, abdique en faveur de son fils Mehmed, 12 ans. Les Hongrois en profitent pour rompre la trêve de Szeged signée quelques mois plus tôt, sous la pression du pape et du cardinal Cesarini.\n\nUn roi de vingt ans, **Ladislas III** de Pologne et de Hongrie, et son meilleur général, **Jean Hunyadi**, voïvode de Transylvanie (province du royaume de Hongrie), mènent une armée jusqu'à la mer Noire, espérant rejoindre une flotte occidentale qui ne viendra pas : les galères vénitiennes et pontificales laissent passer les Ottomans à travers le Bosphore. Murad II sort de sa retraite et reprend le commandement.\n\nLe 10 novembre 1444, près de **Varna** (Bulgarie actuelle), le jeune roi, emporté par son impétuosité, charge directement vers le sultan avec sa garde. Il est tué et sa tête est plantée sur une lance. Les croisés se débandent. Hunyadi s'échappe, mais la grande offensive est terminée.",
+      "consequences": [
+        "Les Ottomans consolident leur domination sur la Bulgarie et la Thrace ; la Serbie redevient tributaire.",
+        "La Hongrie perd son roi et ne tentera plus d'offensive chrétienne d'envergure avant longtemps.",
+        "Constantinople, privée de tout espoir de secours, voit son sort scellé.",
+        "Murad II reprend le pouvoir ; son fils Mehmed ne le retrouvera qu'en 1451."
+      ],
+      "territory": "varna-1444",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Varna",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Varna"
+        },
+        {
+          "label": "Wikipédia — Murad II",
+          "url": "https://fr.wikipedia.org/wiki/Murad_II"
+        },
+        {
+          "label": "Robert Mantran (dir.), Histoire de l'Empire ottoman (Fayard)"
+        }
+      ],
+      "territoryNote": "Sultanat de Murad II : Anatolie occidentale et centrale jusqu'à Ankara (Karaman vassal à Konya), Thrace, Macédoine, Thessalie, Bulgarie entière, Salonique (reprise en 1430), Serbie du sud (Niš, Skopje). Vassaux/tributaires : Serbie du despote Đurađ Branković (autonomie rétablie en 1444), Valachie, despotat byzantin de Morée. Voisins : Empire byzantin réduit à Constantinople et à sa banlieue, Hongrie de Ladislas III et de Hunyadi (Belgrade hongroise), Bosnie, Albanie de Skanderbeg (en révolte depuis 1443), Venise (ports de Morée, Négrepont, Albanie côtière), Trébizonde, émirats turkmènes d'Akkoyunlu et Karakoyunlu à l'est.",
+      "battle": {
+        "belligerents": [
+          "Empire ottoman",
+          "Croisés (Hongrie, Pologne, Valachie, légats pontificaux)"
+        ],
+        "commanders": [
+          "Murad II",
+          "Ladislas III",
+          "Jean Hunyadi",
+          "cardinal Cesarini"
+        ],
+        "outcome": "Victoire ottomane ; mort du roi Ladislas III",
+        "forces": "Ottomans : environ 60 000 ; croisés : environ 20 000 (estimations)",
+        "losses": "Environ 10 000 croisés tués, dont le roi et le légat pontifical"
+      },
+      "armies": [
+        {
+          "id": "armee-ottomane",
+          "side": "Ottomans de Murad II",
+          "faction": "janissaires",
+          "path": [
+            [
+              32.85,
+              39.93
+            ],
+            [
+              29,
+              41.05
+            ],
+            [
+              27.4,
+              42.5
+            ],
+            [
+              27.92,
+              43.2
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Hongrois de Hunyadi",
+          "from": "Buda",
+          "faction": "hongrois",
+          "path": [
+            [
+              19.04,
+              47.5
+            ],
+            [
+              21.23,
+              45.75
+            ],
+            [
+              22.87,
+              43.99
+            ],
+            [
+              25.95,
+              43.85
+            ],
+            [
+              27.92,
+              43.2
+            ]
+          ],
+          "strength": 2
+        },
+        {
+          "side": "Polonais de Ladislas III",
+          "from": "Cracovie",
+          "faction": "polonais",
+          "path": [
+            [
+              19.94,
+              50.06
+            ],
+            [
+              19.04,
+              47.5
+            ],
+            [
+              22.87,
+              43.99
+            ],
+            [
+              25.95,
+              43.85
+            ],
+            [
+              27.92,
+              43.2
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Murad II",
+          "role": "Sultan ottoman",
+          "faction": "ottomans",
+          "archetype": "sultan",
+          "position": [
+            27.95,
+            43.15
+          ]
+        },
+        {
+          "name": "Jean Hunyadi",
+          "role": "Voïvode de Transylvanie, régent de Hongrie",
+          "faction": "hongrois",
+          "archetype": "general",
+          "quote": "(formule libre) Il faut défendre la chrétienté sur le Danube",
+          "position": [
+            27.85,
+            43.25
+          ]
+        },
+        {
+          "name": "Ladislas III",
+          "role": "Roi de Pologne et de Hongrie",
+          "faction": "polonais",
+          "archetype": "roi",
+          "position": [
+            27.88,
+            43.22
+          ]
+        }
+      ]
+    },
+    {
+      "id": "constantinople-1453",
+      "year": 1453,
+      "title": "La chute de Constantinople",
+      "type": "bataille",
+      "location": [
+        28.94,
+        41.02
+      ],
+      "zoom": 5.2,
+      "summary": "Le 29 mai 1453, le sultan Mehmed II, 21 ans, prend Constantinople après 53 jours de siège : l'Empire byzantin disparaît et la ville devient la capitale ottomane.",
+      "details": "Depuis des siècles, **Constantinople** (aujourd'hui Istanbul) est la capitale de l'Empire byzantin, héritier de Rome. En 1453, il n'en reste que la ville et quelques lambeaux. Le jeune sultan **Mehmed II** (21 ans) prépare l'assaut avec soin : il fait construire la forteresse de Rumeli Hisarı sur le Bosphore pour couper le ravitaillement, réunit une grande armée (environ 80 000 hommes) et commande à un fondeur hongrois, **Urbain**, des canons gigantesques capables de briser les murailles de Théodose.\n\nFace à lui, l'empereur **Constantin XI** dispose de 7 000 défenseurs à peine, dont quelques centaines d'Italiens menés par le Génois **Giovanni Giustiniani**. Une chaîne tendue en travers de la Corne d'Or protège le port ; Mehmed la contourne en faisant haler ses navires par voie de terre, sur des rondins graissés. Après 53 jours de siège, l'assaut final a lieu dans la nuit du 28 au 29 mai : Giustiniani, blessé, quitte son poste, les janissaires s'engouffrent. Constantin XI meurt en combattant.\n\nMehmed entre dans **Sainte-Sophie**, la cathédrale transformée en mosquée. Il prend le titre de *Fatih* (« le Conquérant »), fait de la ville sa capitale sous le nom d'Istanbul, et se pose en héritier de l'Empire romain.",
+      "consequences": [
+        "L'Empire byzantin disparaît ; la ville devient la capitale de l'État ottoman, qui a désormais un centre stable.",
+        "Les Ottomans contrôlent les détroits (Bosphore, Dardanelles) et la route entre Europe et Asie.",
+        "L'Europe occidentale perd une porte vers l'Orient ; les routes commerciales se réorganisent et poussent à chercher d'autres voies.",
+        "L'événement est souvent pris comme la fin du Moyen Âge, et des savants byzantins gagnent l'Italie."
+      ],
+      "territory": "constantinople-1453",
+      "sources": [
+        {
+          "label": "Wikipédia — Chute de Constantinople",
+          "url": "https://fr.wikipedia.org/wiki/Chute_de_Constantinople"
+        },
+        {
+          "label": "Wikipédia — Mehmed II",
+          "url": "https://fr.wikipedia.org/wiki/Mehmed_II"
+        },
+        {
+          "label": "Nicolas Vatin et Gilles Veinstein, Le Sérail ébranlé (Fayard)"
+        }
+      ],
+      "territoryNote": "Empire de Mehmed II : Anatolie occidentale et centrale jusqu'à Amasya (Karaman encore indépendant à Konya), Roumélie entière (Thrace, Macédoine, Thessalie, Bulgarie, Serbie du sud), et désormais Constantinople, capitale. Vassaux/tributaires : Serbie de Đurađ Branković, Valachie, despotats byzantins de Morée. Voisins : Hongrie de Hunyadi (Belgrade), Bosnie, Albanie de Skanderbeg, Venise (Négrepont, Crète, ports de Morée, Albanie), Gênes (Galata, Chios, Caffa), empire de Trébizonde sur la mer Noire, Karaman à Konya, Akkoyunlu et Karakoyunlu, Mamelouks d'Égypte et de Syrie.",
+      "battle": {
+        "belligerents": [
+          "Empire ottoman",
+          "Empire byzantin (avec Génois et Vénitiens)"
+        ],
+        "commanders": [
+          "Mehmed II",
+          "Constantin XI Paléologue",
+          "Giovanni Giustiniani"
+        ],
+        "outcome": "Victoire ottomane ; prise de Constantinople, fin de l'Empire byzantin",
+        "forces": "Ottomans : environ 80 000 ; défenseurs : environ 7 000 à 10 000",
+        "losses": "Constantin XI tué ; environ 30 000 habitants réduits en esclavage"
+      },
+      "armies": [
+        {
+          "id": "armee-ottomane",
+          "side": "Armée de Mehmed II",
+          "faction": "janissaires",
+          "path": [
+            [
+              27.92,
+              43.2
+            ],
+            [
+              26.56,
+              41.68
+            ],
+            [
+              27.8,
+              41.3
+            ],
+            [
+              28.93,
+              41.02
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "id": "flotte-ottomane",
+          "side": "Flotte ottomane",
+          "from": "Gallipoli",
+          "faction": "ottomans",
+          "path": [
+            [
+              26.67,
+              40.41
+            ],
+            [
+              27.5,
+              40.6
+            ],
+            [
+              28.6,
+              40.85
+            ],
+            [
+              28.97,
+              41
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Défenseurs de Constantinople",
+          "from": "Constantinople",
+          "faction": "byzantins",
+          "path": [
+            [
+              28.98,
+              41.008
+            ],
+            [
+              28.935,
+              41.02
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Mehmed II le Conquérant",
+          "role": "Sultan ottoman, 21 ans",
+          "faction": "janissaires",
+          "archetype": "sultan",
+          "quote": "Ou je prends la ville, ou elle me prend (attribué, formule libre)",
+          "position": [
+            28.9,
+            41.03
+          ]
+        },
+        {
+          "name": "Constantin XI Paléologue",
+          "role": "Dernier empereur byzantin",
+          "faction": "byzantins",
+          "archetype": "empereur-byzantin",
+          "quote": "La ville est tombée et je vis encore (attribué par la tradition, formule libre)",
+          "position": [
+            28.95,
+            41.01
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chaldiran-1514",
+      "year": 1514,
+      "title": "Tchaldiran : les canons contre les Safavides",
+      "type": "bataille",
+      "location": [
+        44.05,
+        39.1
+      ],
+      "zoom": 4.8,
+      "summary": "Le 23 août 1514, le sultan Selim Iᵉʳ bat à Tchaldiran le chah de Perse Ismaïl Iᵉʳ grâce aux janissaires armés d'arquebuses et à l'artillerie.",
+      "details": "Au début du XVIᵉ siècle, un nouveau rival surgit à l'est : **Ismaïl Iᵉʳ**, chef de l'ordre religieux safavide, fonde en Iran un royaume dont la religion d'État est le **chiisme** (l'une des deux grandes branches de l'islam, opposée au sunnisme que pratiquent les Ottomans). Il rallie les tribus turkmènes d'Anatolie orientale, les *Kızılbaş* (« têtes rouges »), qui se soulèvent contre le sultan.\n\nArrivé au pouvoir en 1512 en renversant son père Bayezid II, **Selim Iᵉʳ**, dit « le Terrible » ou « le Cruel », décide d'en finir. Il fait massacrer des milliers de partisans des Safavides en Anatolie, puis marche vers l'Azerbaïdjan avec une armée disciplinée, des **janissaires** équipés d'arquebuses (premières armes à feu portatives) et de nombreux canons. Les cavaliers safavides, excellents archers mais sans artillerie, chargent à plusieurs reprises, brisés par des tirs groupés.\n\nLe **23 août 1514**, à **Tchaldiran** (Çaldıran), près du lac d'Ourmia, l'armée ottomane l'emporte. Ismaïl, blessé, s'enfuit ; Selim entre brièvement à Tabriz, la capitale safavide, mais ses troupes, épuisées, refusent de poursuivre. Ismaïl, humilié, ne mènera plus de campagnes en personne. La frontière entre les deux empires restera, malgré des guerres, proche de celle d'aujourd'hui entre la Turquie et l'Iran.",
+      "consequences": [
+        "L'Anatolie orientale et le haut Kurdistan passent sous contrôle ottoman (Diyarbakır en 1515).",
+        "Les Safavides reculent : la frontière turco-iranienne se fixe pour des siècles, avec le chiisme à l'est et le sunnisme à l'ouest.",
+        "Les armes à feu s'imposent comme argument décisif sur les champs de bataille orientaux.",
+        "Selim, libéré à l'est, se tourne vers les Mamelouks d'Égypte et de Syrie."
+      ],
+      "territory": "chaldiran-1514",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Tchaldiran",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Chaldiran"
+        },
+        {
+          "label": "Wikipédia — Selim Ier",
+          "url": "https://fr.wikipedia.org/wiki/Selim_Ier"
+        },
+        {
+          "label": "Halil İnalcık, The Ottoman Empire: The Classical Age 1300-1600"
+        }
+      ],
+      "territoryNote": "Empire de Selim Ier avant la campagne d'Orient : Anatolie entière (Karaman annexé), Roumélie (Thrace, Macédoine, Thessalie, Bulgarie), Serbie (annexée 1459), Bosnie (1463), Herzégovine (1482), Albanie, Grèce continentale et Morée, nombreuses îles de l'Égée, Trébizonde (1461), côtes de la mer Noire et Bessarabie du sud (Kilia, Akkerman, 1484). Vassaux/tributaires : khanat de Crimée (depuis 1475), Valachie, Moldavie, Raguse. Voisins : Hongrie, Venise (Crète, Chypre, Corfou, Dalmatie), Safavides de Perse (Iran, Azerbaïdjan, Irak), Mamelouks (Égypte, Syrie, Hedjaz), émirats kurdes, Géorgie, Moscovie et Pologne-Lituanie.",
+      "battle": {
+        "belligerents": [
+          "Empire ottoman",
+          "Empire safavide (Perse)"
+        ],
+        "commanders": [
+          "Selim Iᵉʳ",
+          "Ismaïl Iᵉʳ"
+        ],
+        "outcome": "Victoire ottomane ; prise temporaire de Tabriz",
+        "forces": "Ottomans : environ 60 000 ; Safavides : environ 40 000 (estimations)",
+        "losses": "Lourdes pertes safavides, dont plusieurs chefs ; le harem d'Ismaïl capturé"
+      },
+      "armies": [
+        {
+          "id": "armee-ottomane",
+          "side": "Ottomans de Selim Ier",
+          "faction": "janissaires",
+          "path": [
+            [
+              28.93,
+              41.02
+            ],
+            [
+              32.85,
+              39.93
+            ],
+            [
+              37.02,
+              39.75
+            ],
+            [
+              41.27,
+              39.9
+            ],
+            [
+              44.05,
+              39.1
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Safavides d'Ismaïl Ier",
+          "from": "Tabriz",
+          "faction": "safavides",
+          "path": [
+            [
+              46.29,
+              38.08
+            ],
+            [
+              44.95,
+              38.55
+            ],
+            [
+              44.05,
+              39.1
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Selim Ier le Terrible",
+          "role": "Sultan ottoman",
+          "faction": "janissaires",
+          "archetype": "sultan",
+          "quote": "(formule libre) Deux sabres ne tiennent pas dans un même fourreau",
+          "position": [
+            44.1,
+            39.15
+          ]
+        },
+        {
+          "name": "Ismaïl Ier",
+          "role": "Chah de Perse, fondateur des Safavides",
+          "faction": "safavides",
+          "archetype": "shah",
+          "quote": "(formule libre) Je suis le serviteur des Douze imams",
+          "position": [
+            44,
+            39.05
+          ]
+        }
+      ]
+    },
+    {
+      "id": "le-caire-1517",
+      "year": 1517,
+      "title": "Les Mamelouks vaincus : l'Égypte et la Syrie",
+      "type": "bataille",
+      "location": [
+        31.3,
+        30.08
+      ],
+      "zoom": 4.4,
+      "summary": "En 1516-1517, Selim Ier bat les Mamelouks à Marj Dabiq puis devant Le Caire : la Syrie, l'Égypte et les lieux saints de l'islam passent sous domination ottomane.",
+      "details": "Les **Mamelouks**, des esclaves-soldats d'origine turque ou caucasienne devenus maîtres de l'Égypte et de la Syrie, protègent les lieux saints de l'islam (La Mecque et Médine) depuis plus de deux siècles. Alliés possibles des Safavides, ils irritent Selim Iᵉʳ. Le 24 août 1516, à **Marj Dabiq** (près d'Alep), son armée, forte de ses janissaires et de ses canons, écrase la cavalerie mamelouke, qui dédaigne les armes à feu comme indignes de chevaliers. Le sultan mamelouk **Qansuh al-Ghawri** meurt dans la bataille. Alep, Damas et Jérusalem tombent sans combat.\n\nIl reste l'Égypte. Le nouveau sultan **Tuman Bay** fortifie la ville du Caire, mais Selim contourne ses défenses : le 22 janvier 1517, à **Ridaniya**, juste au nord de la ville, ses canons détruisent la cavalerie mamelouke. Après d'âpres combats dans les rues du Caire, Tuman Bay, capturé, est pendu à la porte Bab Zuweila. Le chérif de La Mecque lui remet les clés des **villes saintes**.\n\nSelim prend désormais le titre de « Serviteur des deux sanctuaires ». Selon une tradition tardive, le dernier calife abbasside du Caire lui aurait transmis le califat ; les historiens modernes doutent de ce transfert, mais le sultan s'impose de fait comme chef du monde sunnite. L'Égypte, grenier à blé, devient une province dont le tribut finance Istanbul.",
+      "consequences": [
+        "La Syrie, la Palestine, l'Égypte et le Hedjaz (avec La Mecque et Médine) rejoignent l'Empire, qui devient d'abord un empire arabe.",
+        "Les revenus de l'Égypte, grenier à blé et carrefour du commerce de la mer Rouge, enrichissent le trésor.",
+        "Le sultan ottoman devient le protecteur des lieux saints et un chef du monde sunnite ; l'usage du titre de calife s'ancre peu à peu.",
+        "Les Mamelouks ne disparaissent pas : ils restent une élite locale, d'où surgiront plus tard des gouverneurs quasi indépendants."
+      ],
+      "territory": "le-caire-1517",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Marj Dabiq",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Marj_Dabiq"
+        },
+        {
+          "label": "Wikipédia — Bataille de Ridaniya",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Ridaniya"
+        },
+        {
+          "label": "Robert Mantran (dir.), Histoire de l'Empire ottoman (Fayard)"
+        }
+      ],
+      "territoryNote": "Empire de Selim Ier : à l'Anatolie (entière) et à la Roumélie, il ajoute le Kurdistan occidental (Diyarbakır, 1515), le Dulkadir (1515), la Syrie (Alep, Damas, Liban), la Palestine (Jérusalem), l'Égypte (Le Caire, delta, vallée du Nil) et le Hedjaz (La Mecque, Médine ; chérif vassal). Vassaux/tributaires : khanat de Crimée, Valachie, Moldavie, Raguse, chérifat de La Mecque. Voisins : Safavides (Iran, Azerbaïdjan, Bagdad), Hongrie, Venise (Crète, Chypre), le Yémen des Tahirides, l'Éthiopie, la Nubie, les Portugais dans l'océan Indien.",
+      "battle": {
+        "belligerents": [
+          "Empire ottoman",
+          "Sultanat mamelouk d'Égypte et de Syrie"
+        ],
+        "commanders": [
+          "Selim Iᵉʳ",
+          "Hadım Sinan Pacha",
+          "Qansuh al-Ghawri",
+          "Tuman Bay"
+        ],
+        "outcome": "Victoire ottomane ; fin du sultanat mamelouk",
+        "forces": "Ottomans : environ 60 000 ; Mamelouks : environ 40 000 à 60 000 (estimations)",
+        "losses": "Plusieurs dizaines de milliers de morts mamelouks, dont Qansuh al-Ghawri et Tuman Bay"
+      },
+      "armies": [
+        {
+          "id": "armee-ottomane",
+          "side": "Ottomans de Selim Ier",
+          "faction": "janissaires",
+          "path": [
+            [
+              44.05,
+              39.1
+            ],
+            [
+              37.15,
+              36.2
+            ],
+            [
+              36.29,
+              33.51
+            ],
+            [
+              34.5,
+              31.5
+            ],
+            [
+              33.8,
+              31.13
+            ],
+            [
+              32.6,
+              30.7
+            ],
+            [
+              31.3,
+              30.1
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Mamelouks de Tuman Bay",
+          "from": "Le Caire",
+          "faction": "mamelouks",
+          "path": [
+            [
+              31.26,
+              30.03
+            ],
+            [
+              31.3,
+              30.1
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Selim Ier",
+          "role": "Sultan ottoman",
+          "faction": "janissaires",
+          "archetype": "sultan",
+          "quote": "(formule libre) L'Égypte est le joyau de l'Orient",
+          "position": [
+            31.35,
+            30.1
+          ]
+        },
+        {
+          "name": "Tuman Bay",
+          "role": "Dernier sultan mamelouk",
+          "faction": "mamelouks",
+          "archetype": "sultan",
+          "position": [
+            31.22,
+            30.04
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mohacs-1526",
+      "year": 1526,
+      "title": "Mohács : la Hongrie s'effondre",
+      "type": "bataille",
+      "location": [
+        18.68,
+        45.99
+      ],
+      "zoom": 5,
+      "summary": "Le 29 août 1526, Soliman le Magnifique écrase en moins de deux heures l'armée du roi de Hongrie Louis II, qui meurt ; le royaume de Hongrie s'effondre.",
+      "details": "**Soliman Iᵉʳ** (1520-1566), que les Européens appellent « le Magnifique » et les Turcs *Kanuni*, « le Législateur », succède à son père Selim. Dès 1521, il prend **Belgrade**, verrou de la Hongrie ; en 1522, il chasse les chevaliers de Saint-Jean de **Rhodes**. En 1526, il remonte le Danube avec environ 60 000 hommes et 300 canons.\n\nLe jeune roi de Hongrie et de Bohême **Louis II**, 20 ans, n'a pu rassembler qu'une petite armée, privée des renforts de Jean Zápolya, voïvode de Transylvanie, qui hésite. Le **29 août 1526**, près de **Mohács**, les cavaliers lourds hongrois chargent, enfoncent un temps la première ligne ottomane, mais s'écrasent sur les rangs des janissaires, soutenus par l'artillerie. Le roi se noie dans un ruisseau en fuyant. En moins de deux heures, l'élite du royaume est décimée.\n\nSoliman entre à Buda, puis se retire sans l'occuper. Le trône hongrois est disputé entre **Ferdinand de Habsbourg**, frère de Charles Quint, et **Jean Zápolya**. Le royaume de Hongrie se divise bientôt en trois : une Hongrie royale au nord-ouest, tenue par les Habsbourg ; une partie centrale que les Ottomans occupent à partir de 1541 ; et la Transylvanie, principauté vassale.",
+      "consequences": [
+        "Le royaume de Hongrie s'effondre : sans roi, il est livré à la rivalité entre Habsbourg et Zápolya.",
+        "La Syrmie et le sud de la Hongrie passent aux Ottomans ; Buda sera occupée définitivement en 1541.",
+        "La monarchie des Habsbourg d'Autriche devient la principale puissance chrétienne face à l'Empire ottoman.",
+        "Pour un siècle et demi, les frontières entre l'Europe centrale et le monde ottoman se déplacent le long du Danube."
+      ],
+      "territory": "mohacs-1526",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Mohács (1526)",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Moh%C3%A1cs_(1526)"
+        },
+        {
+          "label": "Wikipédia — Soliman le Magnifique",
+          "url": "https://fr.wikipedia.org/wiki/Soliman_le_Magnifique"
+        },
+        {
+          "label": "Gilles Veinstein (dir.), Soliman le Magnifique et son temps (La Documentation française)"
+        }
+      ],
+      "territoryNote": "Empire de Soliman : Anatolie jusqu'à Erzurum et Diyarbakır, Roumélie (Thrace, Macédoine, Grèce et Morée, Bosnie, Serbie avec Belgrade depuis 1521), Syrie, Palestine, Égypte, Hedjaz, Rhodes (1522), îles de l'Égée, Syrmie et sud de la Hongrie jusqu'à la ligne Danube-Save. Vassaux/tributaires : khanat de Crimée, Valachie, Moldavie, Raguse, chérifat de La Mecque. Voisins : Hongrie en crise (roi mort, Zápolya et Ferdinand de Habsbourg), Autriche et Bohême des Habsbourg, Pologne-Lituanie, Venise (Crète, Chypre, Corfou, Dalmatie), Safavides de Perse (Tahmasp).",
+      "battle": {
+        "belligerents": [
+          "Empire ottoman",
+          "Royaume de Hongrie"
+        ],
+        "commanders": [
+          "Soliman Iᵉʳ",
+          "Ibrahim Pacha",
+          "Louis II de Hongrie",
+          "Pál Tomori"
+        ],
+        "outcome": "Victoire écrasante des Ottomans ; mort du roi Louis II",
+        "forces": "Ottomans : environ 60 000 ; Hongrois : environ 25 000 (estimations)",
+        "losses": "Environ 14 000 morts hongrois, dont le roi et une grande partie de la noblesse"
+      },
+      "armies": [
+        {
+          "id": "armee-soliman",
+          "side": "Ottomans de Soliman",
+          "from": "Constantinople",
+          "faction": "janissaires",
+          "path": [
+            [
+              28.97,
+              41.01
+            ],
+            [
+              26.56,
+              41.68
+            ],
+            [
+              23.32,
+              42.7
+            ],
+            [
+              21.9,
+              43.32
+            ],
+            [
+              20.46,
+              44.82
+            ],
+            [
+              19.85,
+              45.25
+            ],
+            [
+              18.68,
+              45.99
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Hongrois de Louis II",
+          "from": "Buda",
+          "faction": "hongrois",
+          "path": [
+            [
+              19.04,
+              47.5
+            ],
+            [
+              18.78,
+              46.45
+            ],
+            [
+              18.68,
+              45.99
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Soliman le Magnifique",
+          "role": "Sultan ottoman",
+          "faction": "janissaires",
+          "archetype": "sultan",
+          "quote": "(formule libre) Je suis l'esclave de Dieu et le sultan de ce monde",
+          "position": [
+            18.72,
+            45.97
+          ]
+        },
+        {
+          "name": "Louis II Jagellon",
+          "role": "Roi de Hongrie et de Bohême, 20 ans",
+          "faction": "hongrois",
+          "archetype": "roi",
+          "position": [
+            18.62,
+            46.02
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vienne-1529",
+      "year": 1529,
+      "title": "Le premier siège de Vienne",
+      "type": "bataille",
+      "location": [
+        16.37,
+        48.2
+      ],
+      "zoom": 5.2,
+      "summary": "À l'automne 1529, Soliman assiège Vienne, capitale des Habsbourg, mais la pluie, les maladies et la résistance de la garnison l'obligent à lever le siège après trois semaines.",
+      "details": "Trois ans après Mohács, **Soliman** soutient **Jean Zápolya** contre **Ferdinand de Habsbourg**, frère de l'empereur Charles Quint. En 1529, il reprend Buda, la place sur le trône de son protégé hongrois, puis marche sur **Vienne**, ville forte des Habsbourg, avec 120 000 hommes selon les chroniqueurs.\n\nLa saison est exécrable. Il a plu tout l'été, les routes sont des bourbiers, les gros canons n'ont pas pu suivre. Soliman arrive devant Vienne le 27 septembre, face à une garnison d'environ 17 000 hommes, dirigée par le vieux comte **Nicolas de Salm**, avec des lansquenets allemands (soldats mercenaires à pied) et des Espagnols. Les mines creusées sous les remparts sont détectées ; les assauts se brisent. Le 14 octobre, après un dernier assaut raté et alors que l'hiver menace, il lève le siège.\n\nL'échec est relatif : Soliman a prouvé qu'il pouvait atteindre Vienne et fait de la Hongrie occidentale un champ de bataille. Mais l'événement frappe l'Europe et nourrit la peur du « Turc », dont les pamphlets, les chants et les cloches du « Türkenglocke » garderont la trace des siècles durant. Une nouvelle tentative suivra, en 1532, vite stoppée à Güns.",
+      "consequences": [
+        "Le front se stabilise : l'Autriche des Habsbourg devient le bastion de l'Europe contre l'avancée ottomane.",
+        "Jean Zápolya règne à Buda comme vassal du sultan ; la Hongrie reste partagée.",
+        "La peur du Turc favorise des alliances nouvelles, dont celle, inattendue, entre François Ier et Soliman (1536).",
+        "Charles Quint ne peut plus ignorer la menace sur le Danube, ce qui détourne ses forces de la Réforme et de la France."
+      ],
+      "territory": "vienne-1529",
+      "sources": [
+        {
+          "label": "Wikipédia — Siège de Vienne (1529)",
+          "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_Vienne_(1529)"
+        },
+        {
+          "label": "Wikipédia — Ferdinand Ier",
+          "url": "https://fr.wikipedia.org/wiki/Ferdinand_Ier_(empereur_du_Saint-Empire)"
+        },
+        {
+          "label": "Gilles Veinstein (dir.), Soliman le Magnifique et son temps (La Documentation française)"
+        }
+      ],
+      "territoryNote": "Empire de Soliman : comme en 1526, avec en plus un royaume de Hongrie vassal (Buda et la Hongrie centrale et orientale confiées à Jean Zápolya) ; Syrmie et sud de la Hongrie ottomans (Belgrade, Šabac). Anatolie, Roumélie, Égypte, Syrie, Hedjaz. Vassaux/tributaires : Hongrie de Zápolya, Valachie, Moldavie, khanat de Crimée, Raguse. Voisins : Habsbourg (Autriche, Bohême, Hongrie royale du nord-ouest sous Ferdinand, Croatie), Saint-Empire de Charles Quint, Pologne-Lituanie, Venise (Crète, Chypre, Dalmatie), Safavides.",
+      "battle": {
+        "belligerents": [
+          "Empire ottoman",
+          "Habsbourg d'Autriche (garnison impériale)"
+        ],
+        "commanders": [
+          "Soliman Iᵉʳ",
+          "Ibrahim Pacha",
+          "Nicolas de Salm",
+          "Wilhelm von Roggendorf"
+        ],
+        "outcome": "Échec ottoman ; levée du siège",
+        "forces": "Ottomans : 100 000 à 120 000 (chiffre de chroniqueurs) ; défenseurs : environ 17 000",
+        "losses": "Plusieurs milliers de morts de part et d'autre ; la pluie et la maladie ont décimé les assaillants"
+      },
+      "armies": [
+        {
+          "id": "armee-soliman",
+          "side": "Ottomans de Soliman",
+          "faction": "janissaires",
+          "path": [
+            [
+              18.68,
+              45.99
+            ],
+            [
+              19.04,
+              47.5
+            ],
+            [
+              17.65,
+              47.69
+            ],
+            [
+              16.37,
+              48.2
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Garnison de Vienne",
+          "from": "Linz",
+          "faction": "imperiaux",
+          "path": [
+            [
+              14.29,
+              48.31
+            ],
+            [
+              16.37,
+              48.2
+            ]
+          ],
+          "strength": 1,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Ferdinand de Habsbourg",
+          "role": "Archiduc d'Autriche, roi de Bohême",
+          "faction": "imperiaux",
+          "archetype": "roi-habsbourg",
+          "position": [
+            16.37,
+            48.2
+          ]
+        },
+        {
+          "name": "Pargalı Ibrahim Pacha",
+          "role": "Grand vizir de Soliman",
+          "faction": "janissaires",
+          "archetype": "grand-vizir",
+          "quote": "(formule libre) Vienne sera à nous avant l'hiver",
+          "position": [
+            16.45,
+            48.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "preveza-1538",
+      "year": 1538,
+      "title": "Préveza : Barberousse maître de la mer",
+      "type": "bataille",
+      "location": [
+        20.55,
+        38.9
+      ],
+      "zoom": 5.2,
+      "summary": "Le 28 septembre 1538, la flotte de Khayr ad-Din Barberousse bat à Préveza la flotte de la Sainte Ligue d'Andrea Doria et fait de la Méditerranée un lac ottoman pour plus de trente ans.",
+      "details": "Dans la première moitié du XVIᵉ siècle, la Méditerranée est un enjeu : Charles Quint et Venise, alliés au pape, veulent y contenir les Ottomans. Soliman confie sa flotte à un corsaire d'origine grecque de Lesbos, **Khayr ad-Din**, que les Européens appellent **Barberousse** (« Barbe-Rousse »). Maître d'Alger depuis 1519, qu'il a placé sous la suzeraineté du sultan, il est nommé *kapudan pacha* (grand amiral) en 1533.\n\nPour arrêter l'avance ottomane, le pape Paul III organise en 1538 une **Sainte Ligue** (États pontificaux, Venise, Espagne, Gênes, Malte), dont la flotte, forte d'environ 200 galères, est confiée au Génois **Andrea Doria**. Le **28 septembre 1538**, près de **Préveza**, à l'entrée du golfe d'Arta, les deux flottes se rencontrent. Doria, prudent, craint de perdre sa flotte ; il refuse une bataille rangée, manœuvre d'abord pour éviter les coups, puis se retire de nuit. Barberousse, avec moins de navires mais plus audacieux, capture ou coule plusieurs vaisseaux et reste maître du champ.\n\nCe n'est pas un massacre mais une victoire de domination. Pour 33 ans, aucune flotte chrétienne ne rivalisera avec celle des Ottomans, qui étendent leur influence jusqu'à Tripoli, Tunis et Alger. Ils s'allient même avec la France, qui accueille la flotte de Barberousse à Toulon en 1543.",
+      "consequences": [
+        "La Méditerranée orientale et centrale passe sous domination navale ottomane ; Venise doit signer une paix coûteuse en 1540.",
+        "Les régences d'Alger, de Tripoli et bientôt de Tunis deviennent des bases ottomanes face à l'Espagne.",
+        "Les Ottomans affirment leur puissance maritime, soutenue par l'arsenal d'Istanbul.",
+        "L'alliance franco-ottomane (1536, puis 1543) bouleverse l'équilibre des puissances européennes."
+      ],
+      "territory": "preveza-1538",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Préveza",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Pr%C3%A9veza"
+        },
+        {
+          "label": "Wikipédia — Khayr ad-Din Barberousse",
+          "url": "https://fr.wikipedia.org/wiki/Khayr_ad-Din_Barberousse"
+        },
+        {
+          "label": "Gilles Veinstein (dir.), Soliman le Magnifique et son temps (La Documentation française)"
+        }
+      ],
+      "territoryNote": "Empire de Soliman : Anatolie, Roumélie (Grèce, Morée, Bosnie, Serbie), Syrie, Égypte, Hedjaz, Mésopotamie (Bagdad conquise en 1534-1535), Yémen côtier (Aden prise en 1538), régence d'Alger (sous suzeraineté depuis 1519), Syrmie et sud de la Hongrie, Hongrie de Zápolya vassale. Vassaux/tributaires : Hongrie de Zápolya, Valachie, Moldavie, khanat de Crimée, Raguse, régence d'Alger. Voisins : Habsbourg (Autriche, Hongrie royale), Espagne de Charles Quint (Tunis, Naples, Sicile, Sardaigne ; Malte aux chevaliers), Venise (Crète, Chypre, Corfou, Dalmatie), États pontificaux, Gênes, Safavides, Portugais dans l'océan Indien.",
+      "battle": {
+        "belligerents": [
+          "Empire ottoman",
+          "Sainte Ligue (Papauté, Venise, Espagne, Gênes, Malte)"
+        ],
+        "commanders": [
+          "Khayr ad-Din Barberousse",
+          "Andrea Doria",
+          "Vincenzo Capello",
+          "Marco Grimani"
+        ],
+        "outcome": "Victoire ottomane",
+        "forces": "Ottomans : environ 120 galères ; Sainte Ligue : environ 160 à 200 navires (estimations)",
+        "losses": "Les Ottomans capturent ou coulent plusieurs dizaines de navires de la Ligue ; faibles pertes ottomanes"
+      },
+      "armies": [
+        {
+          "id": "flotte-ottomane",
+          "side": "Flotte ottomane de Barberousse",
+          "faction": "ottomans",
+          "path": [
+            [
+              28.97,
+              41
+            ],
+            [
+              26.2,
+              40.1
+            ],
+            [
+              25,
+              38.4
+            ],
+            [
+              23.2,
+              36.4
+            ],
+            [
+              20.3,
+              37.6
+            ],
+            [
+              20.55,
+              38.9
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Flotte vénitienne",
+          "from": "Corfou",
+          "faction": "venitiens",
+          "path": [
+            [
+              19.92,
+              39.62
+            ],
+            [
+              20,
+              39.2
+            ],
+            [
+              20.55,
+              38.9
+            ]
+          ],
+          "strength": 2
+        },
+        {
+          "side": "Flotte de Charles Quint (Doria)",
+          "from": "Messine",
+          "faction": "espagnols",
+          "path": [
+            [
+              15.55,
+              38.19
+            ],
+            [
+              17.5,
+              38
+            ],
+            [
+              19.5,
+              38.7
+            ],
+            [
+              20.55,
+              38.9
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Khayr ad-Din Barberousse",
+          "role": "Grand amiral ottoman, maître d'Alger",
+          "faction": "ottomans",
+          "archetype": "amiral",
+          "quote": "(formule libre) Qui tient la mer tient l'Empire",
+          "position": [
+            20.6,
+            38.88
+          ]
+        },
+        {
+          "name": "Andrea Doria",
+          "role": "Amiral génois de Charles Quint",
+          "faction": "espagnols",
+          "archetype": "amiral",
+          "position": [
+            20.4,
+            38.85
+          ]
+        }
+      ]
+    },
+    {
+      "id": "szigetvar-1566",
+      "year": 1566,
+      "title": "Szigetvár : la mort de Soliman",
+      "type": "bataille",
+      "location": [
+        17.8,
+        46.05
+      ],
+      "zoom": 5.2,
+      "summary": "En septembre 1566, Soliman le Magnifique, 71 ans, meurt dans sa tente pendant le siège de Szigetvár ; son grand vizir cache la nouvelle jusqu'à la chute de la forteresse.",
+      "details": "En 1566, après quarante-six ans de règne, **Soliman le Magnifique** part pour sa treizième campagne de Hongrie. Âgé de 71 ans, malade de la goutte, il se fait porter en litière. L'année précédente, ses troupes ont échoué à prendre **Malte** aux chevaliers de Saint-Jean, preuve que l'âge des conquêtes faciles s'achève. Il vise la place de **Szigetvár**, une forteresse entourée de marais qui barre la route de Vienne.\n\nElle est défendue par environ 2 300 soldats, croates et hongrois, commandés par le ban de Croatie, **Nikola Šubić Zrinski** (Miklós Zrínyi en hongrois). Pendant un mois, les Ottomans noient la ville, la bombardent, donnent plusieurs assauts. Dans la nuit du 6 au 7 septembre, Soliman meurt, probablement d'une crise cardiaque. Le grand vizir **Sokollu Mehmed Pacha** garde le secret : il fait croire à la maladie du sultan pour que l'armée ne se débande pas.\n\nLe 7 septembre, Zrinski et ses derniers hommes tentent une sortie et sont massacrés. La place tombe. Sokollu fait ensuite prévenir le prince héritier Selim II. Soliman, le plus puissant des sultans, laisse un empire à son apogée territoriale classique, mais aussi une cour déchirée par les rivalités des princes et des femmes du palais, dont **Hürrem Sultan** (Roxelane), son épouse, morte en 1558.",
+      "consequences": [
+        "Szigetvár est prise, mais la place ne rouvre pas la route de Vienne : les Habsbourg gardent la frontière.",
+        "Le grand vizir Sokollu Mehmed Pacha gouverne de fait l'Empire pendant quinze ans sous Selim II et Murad III.",
+        "Soliman laisse le plus vaste territoire que les Ottomans aient atteint jusque-là, de la Hongrie à l'Irak et à l'Algérie.",
+        "Le « sultanat des femmes » et l'influence du harem grandissent dans la politique de la cour."
+      ],
+      "territory": "szigetvar-1566",
+      "sources": [
+        {
+          "label": "Wikipédia — Siège de Szigetvár",
+          "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_Szigetv%C3%A1r"
+        },
+        {
+          "label": "Wikipédia — Soliman le Magnifique",
+          "url": "https://fr.wikipedia.org/wiki/Soliman_le_Magnifique"
+        },
+        {
+          "label": "Gilles Veinstein (dir.), Soliman le Magnifique et son temps (La Documentation française)"
+        }
+      ],
+      "territoryNote": "Apogée de Soliman : Anatolie entière, Roumélie complète (Thrace, Macédoine, Grèce et Morée, Bosnie, Serbie, Bulgarie), Hongrie centrale et méridionale (pachalik de Buda depuis 1541, Temesvár 1552), Crimée (côte sud), Syrie, Palestine, Liban, Égypte, Hedjaz, Yémen côtier, Irak (Bagdad, Bassora 1546), Kurdistan, Arménie occidentale, côtes d'Algérie (régence d'Alger) et de Tripolitaine (Tripoli, 1551). Vassaux/tributaires : Transylvanie de Jean Sigismond Zápolya, Valachie, Moldavie, khanat de Crimée, Raguse, chérif de La Mecque. Voisins : Habsbourg (Autriche, Hongrie royale, Croatie), Pologne-Lituanie, Moscovie d'Ivan IV, Venise (Crète, Chypre, Dalmatie), Safavides (Tahmasp), Espagne (Oran, Tunis, Naples, Sicile, Malte aux Hospitaliers), Maroc saadien.",
+      "battle": {
+        "belligerents": [
+          "Empire ottoman",
+          "Royaume de Hongrie (sous les Habsbourg) et Croatie"
+        ],
+        "commanders": [
+          "Soliman Iᵉʳ (mort pendant le siège)",
+          "Sokollu Mehmed Pacha",
+          "Nikola Šubić Zrinski"
+        ],
+        "outcome": "Prise de la forteresse par les Ottomans ; mort du sultan Soliman",
+        "forces": "Ottomans : environ 100 000 (chiffre de chroniqueurs) ; défenseurs : environ 2 300",
+        "losses": "Pertes ottomanes très lourdes (plusieurs dizaines de milliers de morts selon les sources) ; défenseurs presque tous tués"
+      },
+      "armies": [
+        {
+          "id": "armee-soliman",
+          "side": "Ottomans de Soliman",
+          "faction": "janissaires",
+          "path": [
+            [
+              16.37,
+              48.2
+            ],
+            [
+              17.2,
+              47.2
+            ],
+            [
+              17.8,
+              46.06
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Garnison de Zrinski",
+          "from": "Čakovec",
+          "faction": "hongrois",
+          "path": [
+            [
+              16.43,
+              46.39
+            ],
+            [
+              17.8,
+              46.06
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Soliman le Magnifique",
+          "role": "Sultan, mort pendant le siège",
+          "faction": "janissaires",
+          "archetype": "sultan",
+          "quote": "(formule libre) Dans ce monde, rien ne dure sauf la justice",
+          "position": [
+            17.85,
+            46.05
+          ]
+        },
+        {
+          "name": "Sokollu Mehmed Pacha",
+          "role": "Grand vizir, gardien du secret",
+          "faction": "janissaires",
+          "archetype": "grand-vizir",
+          "position": [
+            17.78,
+            46.08
+          ]
+        },
+        {
+          "name": "Nikola Šubić Zrinski",
+          "role": "Ban de Croatie, défenseur de la place",
+          "faction": "hongrois",
+          "archetype": "capitaine",
+          "quote": "(formule libre) Nous mourrons avec honneur plutôt que de nous rendre",
+          "position": [
+            17.8,
+            46.04
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lepante-1571",
+      "year": 1571,
+      "title": "Lépante : la plus grande bataille de galères",
+      "type": "bataille",
+      "location": [
+        21,
+        38.3
+      ],
+      "zoom": 5.2,
+      "summary": "Le 7 octobre 1571, la Sainte Ligue de Don Juan d'Autriche détruit la flotte ottomane dans le golfe de Patras ; les Ottomans reconstruisent pourtant leur flotte en un an.",
+      "details": "En 1570, le sultan **Selim II** envoie ses troupes conquérir **Chypre**, possession de Venise : Nicosie tombe en septembre 1570, Famagouste, après un siège héroïque, en août 1571. Le pape Pie V rassemble une nouvelle **Sainte Ligue**, avec Venise, l'Espagne de Philippe II et Gênes. Sa flotte, environ 210 galères et 6 galéasses (de gros navires armés de canons), est commandée par **Don Juan d'Autriche**, demi-frère de Philippe II, âgé de 24 ans.\n\nLe **7 octobre 1571**, dans le golfe de Patras, devant Lépante (aujourd'hui Naupacte), elle surprend la flotte ottomane de **Ali Pacha**, qui compte environ 230 galères. Les galéasses vénitiennes, placées en tête, désorganisent l'adversaire. Les soldats espagnols, mieux armés d'arquebuses, l'emportent à l'abordage dans des combats acharnés. Ali Pacha est tué, sa tête brandie ; environ 30 000 Ottomans meurent ou sont capturés, et 12 000 captifs chrétiens ramant sur les galères sont libérés. Le romancier espagnol Cervantès, blessé, y perd l'usage de la main gauche.\n\nLa victoire est éclatante mais sans suite stratégique : la Ligue se divise et Venise négocie la paix en 1573, cédant Chypre. L'arsenal d'Istanbul reconstruit 150 navires dès 1572, et le grand vizir Sokollu aurait dit à l'ambassadeur de Venise que la perte de la flotte est une barbe rasée, qui repousse, alors que Chypre est un bras coupé, qui ne repousse pas. En 1574, les Ottomans reprennent Tunis.",
+      "consequences": [
+        "Chypre reste ottomane (conquise en 1570-1571) ; Venise l'abandonne officiellement par la paix de 1573.",
+        "Tunis, brièvement espagnole, est reprise par les Ottomans en 1574 : le Maghreb central reste leur zone d'influence.",
+        "L'Europe chrétienne y gagne un mythe de victoire, mais ne reprend pas l'initiative en Méditerranée orientale.",
+        "La flotte ottomane, reconstruite en un an, rappelle la puissance du système fiscal et de l'arsenal d'Istanbul."
+      ],
+      "territory": "lepante-1571",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Lépante (1571)",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_L%C3%A9pante_(1571)"
+        },
+        {
+          "label": "Wikipédia — Selim II",
+          "url": "https://fr.wikipedia.org/wiki/Selim_II"
+        },
+        {
+          "label": "Gilles Veinstein (dir.), Soliman le Magnifique et son temps (La Documentation française)"
+        }
+      ],
+      "territoryNote": "Empire de Selim II : mêmes provinces qu'à la mort de Soliman (Anatolie, Roumélie, Hongrie centrale et méridionale, Syrie, Égypte, Hedjaz, Yémen, Irak) avec en plus Chypre (conquise 1570-1571), les régences d'Alger et de Tripoli, et Tunis encore tenue par les Espagnols. Vassaux/tributaires : Transylvanie, Valachie, Moldavie, khanat de Crimée, Raguse, Chios (annexée 1566), duché de Naxos. Voisins : Habsbourg (Autriche, Hongrie royale), Pologne-Lituanie, Moscovie, Venise (Crète, Corfou, Dalmatie), Espagne (Tunis, Oran, Naples, Sicile), États pontificaux, Gênes, Safavides (Tahmasp, puis Ismail II), Maroc saadien.",
+      "battle": {
+        "belligerents": [
+          "Empire ottoman",
+          "Sainte Ligue (Espagne, Venise, Papauté, Gênes, Malte)"
+        ],
+        "commanders": [
+          "Ali Pacha (Müezzinzade)",
+          "Uluç Ali",
+          "Don Juan d'Autriche",
+          "Sébastien Venier",
+          "Marcantonio Colonna"
+        ],
+        "outcome": "Victoire écrasante de la Sainte Ligue",
+        "forces": "Ottomans : environ 230 galères et 80 000 hommes ; Ligue : environ 210 galères et 6 galéasses (estimations)",
+        "losses": "Environ 30 000 Ottomans tués ou capturés, 200 navires perdus ; environ 8 000 morts de la Ligue"
+      },
+      "armies": [
+        {
+          "id": "flotte-ottomane",
+          "side": "Flotte ottomane d'Ali Pacha",
+          "faction": "ottomans",
+          "path": [
+            [
+              20.55,
+              38.9
+            ],
+            [
+              20.6,
+              38.5
+            ],
+            [
+              21,
+              38.3
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Vénitiens de Venier",
+          "from": "Corfou",
+          "faction": "venitiens",
+          "path": [
+            [
+              19.92,
+              39.62
+            ],
+            [
+              20,
+              38.9
+            ],
+            [
+              21,
+              38.3
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Espagnols de Don Juan",
+          "from": "Messine",
+          "faction": "tercios",
+          "path": [
+            [
+              15.55,
+              38.19
+            ],
+            [
+              17.5,
+              38
+            ],
+            [
+              19.5,
+              38.5
+            ],
+            [
+              21,
+              38.3
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Don Juan d'Autriche",
+          "role": "Commandant de la Sainte Ligue",
+          "faction": "tercios",
+          "archetype": "amiral",
+          "position": [
+            20.95,
+            38.3
+          ]
+        },
+        {
+          "name": "Ali Pacha (Müezzinzade)",
+          "role": "Grand amiral ottoman",
+          "faction": "ottomans",
+          "archetype": "amiral",
+          "position": [
+            21.05,
+            38.3
+          ]
+        },
+        {
+          "name": "Pie V",
+          "role": "Pape, instigateur de la Ligue",
+          "faction": "tercios",
+          "archetype": "pape",
+          "quote": "(formule libre) Il y eut un homme envoyé de Dieu, son nom était Jean",
+          "position": [
+            12.5,
+            41.9
+          ]
+        }
+      ]
+    },
+    {
+      "id": "candie-1669",
+      "year": 1669,
+      "title": "La conquête de la Crète (Candie)",
+      "type": "bataille",
+      "location": [
+        25.14,
+        35.34
+      ],
+      "zoom": 5.2,
+      "summary": "Après 21 ans de siège, le dernier bastion vénitien de Crète, Candie (Héraklion), capitule en septembre 1669 ; l'Empire ottoman atteint son extension maximale en Méditerranée.",
+      "details": "Au milieu du XVIIᵉ siècle, l'Empire ottoman traverse une crise : sultans enfants, révoltes, guerre en Mer Égée. Il est sauvé par une dynastie de grands vizirs, les **Köprülü**, d'origine albanaise, qui rétablissent l'ordre par une répression sévère. En 1645, les Ottomans débarquent en **Crète**, la grande île de Venise en Méditerranée orientale, et prennent La Canée. Mais **Candie** (aujourd'hui **Héraklion**), capitale de l'île, résiste.\n\nC'est l'un des plus longs sièges de l'histoire : de 1648 à 1669. Venise envoie des renforts, des galères, des mercenaires et des volontaires de toute l'Europe, dont un corps français en 1669. Le grand vizir **Fazıl Ahmed Köprülü** prend le commandement en 1666 et renforce le siège par des tranchées et de lourds bombardements. Les assauts coûtent des dizaines de milliers de morts. Le commandant vénitien, **Francesco Morosini**, finit par négocier : les défenseurs quittent la ville le 27 septembre 1669 avec armes et honneurs. Venise garde trois îlots fortifiés près de l'île.\n\nÀ peine plus tôt, les Ottomans avaient aussi gagné en Hongrie, où la forteresse de Nové Zámky (Érsekújvár) tombe en 1663. L'Empire atteint alors une taille record : après la Crète et, bientôt, la Podolie polonaise (1672), il s'étend sur trois continents, de la Hongrie à l'Irak.",
+      "consequences": [
+        "La Crète entière devient ottomane ; Venise perd son plus gros domaine d'outre-mer et son déclin s'accentue.",
+        "Les Köprülü renforcent leur emprise sur l'État, avec une génération de grands vizirs remarquables.",
+        "Les Ottomans obtiennent la Podolie polonaise (Kamianets, 1672) puis menacent la Pologne et l'Ukraine.",
+        "L'Empire atteint l'un de ses maxima territoriaux, mais ses structures militaires et fiscales commencent à vieillir."
+      ],
+      "territory": "candie-1669",
+      "sources": [
+        {
+          "label": "Wikipédia — Siège de Candie",
+          "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_Candie"
+        },
+        {
+          "label": "Wikipédia — Fazıl Ahmed Köprülü",
+          "url": "https://fr.wikipedia.org/wiki/Ahmed_K%C3%B6pr%C3%BCl%C3%BC"
+        },
+        {
+          "label": "Robert Mantran (dir.), Histoire de l'Empire ottoman (Fayard)"
+        }
+      ],
+      "territoryNote": "Empire de Mehmed IV : Anatolie, Roumélie (Grèce, Morée, Bosnie, Serbie, Bulgarie), Hongrie centrale et méridionale avec Temesvár et, depuis 1663, Érsekújvár (Nové Zámky) et Nagyvárad (Oradea, 1660), Crimée sud, Syrie, Égypte, Hedjaz, Irak, Crète (désormais entière), Chypre, Yémen partiellement. Vassaux/tributaires : principauté de Transylvanie, Valachie, Moldavie, khanat de Crimée, Raguse, régences d'Alger, de Tunis et de Tripoli (autonomes de fait), chérifat de La Mecque. Voisins : Habsbourg (Autriche, Hongrie royale, Croatie), Pologne-Lituanie, Russie d'Alexis Ier, Venise (îles Ioniennes, Dalmatie, trois îlots près de la Crète), Perse safavide (Abbas II), Maroc alaouite.",
+      "battle": {
+        "belligerents": [
+          "Empire ottoman",
+          "République de Venise (avec volontaires français et chevaliers de Malte)"
+        ],
+        "commanders": [
+          "Fazıl Ahmed Köprülü",
+          "Francesco Morosini"
+        ],
+        "outcome": "Capitulation de Candie ; conquête ottomane de la Crète",
+        "forces": "Ottomans : environ 50 000 à 70 000 ; défenseurs : 8 000 à 10 000 (estimations)",
+        "losses": "Environ 120 000 Ottomans et 30 000 défenseurs tués en vingt ans de siège (estimation courante)"
+      },
+      "armies": [
+        {
+          "id": "flotte-ottomane",
+          "side": "Flotte ottomane",
+          "faction": "ottomans",
+          "path": [
+            [
+              21,
+              38.3
+            ],
+            [
+              21.3,
+              37
+            ],
+            [
+              23.3,
+              35.7
+            ],
+            [
+              25.14,
+              35.4
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Armée de siège de Fazıl Ahmed",
+          "from": "La Canée",
+          "faction": "janissaires",
+          "path": [
+            [
+              24.02,
+              35.51
+            ],
+            [
+              24.48,
+              35.37
+            ],
+            [
+              25.13,
+              35.34
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Flotte de secours vénitienne",
+          "from": "Venise",
+          "faction": "venitiens",
+          "path": [
+            [
+              12.4,
+              45.3
+            ],
+            [
+              15.5,
+              42.8
+            ],
+            [
+              19,
+              39.7
+            ],
+            [
+              20,
+              37.4
+            ],
+            [
+              23.5,
+              35.6
+            ],
+            [
+              25.13,
+              35.4
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Fazıl Ahmed Köprülü",
+          "role": "Grand vizir, vainqueur de Candie",
+          "faction": "janissaires",
+          "archetype": "grand-vizir",
+          "quote": "(formule libre) Le siège ne finira qu'avec la ville",
+          "position": [
+            25.2,
+            35.32
+          ]
+        },
+        {
+          "name": "Francesco Morosini",
+          "role": "Capitaine général de Venise",
+          "faction": "venitiens",
+          "archetype": "amiral",
+          "position": [
+            25.12,
+            35.33
+          ]
+        },
+        {
+          "name": "Mehmed IV",
+          "role": "Sultan, le « Chasseur »",
+          "faction": "ottomans",
+          "archetype": "sultan",
+          "position": [
+            26.56,
+            41.68
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vienne-1683",
+      "year": 1683,
+      "title": "Le second siège de Vienne",
+      "type": "bataille",
+      "location": [
+        16.37,
+        48.2
+      ],
+      "zoom": 5.2,
+      "summary": "Le 12 septembre 1683, l'armée de Kara Mustafa, qui assiège Vienne depuis deux mois, est mise en déroute par les troupes du roi de Pologne Jean III Sobieski et de Charles de Lorraine.",
+      "details": "En 1683, l'Empire ottoman est à son extension européenne maximale. Une révolte des nobles hongrois contre les Habsbourg lui donne un prétexte. Le grand vizir **Kara Mustafa Pacha** réunit environ 140 000 hommes et marche sur **Vienne**. L'empereur **Léopold Iᵉʳ** s'enfuit ; le comte Starhemberg tient la ville avec environ 11 000 soldats. Le siège commence le 14 juillet. Les Ottomans creusent des mines sous les remparts, la ville est près de tomber, la dysenterie ravage les assiégés.\n\nUne armée de secours se rassemble : Impériaux de **Charles V de Lorraine**, Bavarois, Saxons, et 27 000 Polonais menés par leur roi **Jean III Sobieski**, qui a signé un traité avec Léopold. Le **12 septembre 1683**, ils descendent de la colline du **Kahlenberg**. Après une journée d'artillerie, la plus grande charge de cavalerie de l'histoire européenne (environ 18 000 cavaliers, dont les célèbres hussards ailés polonais) enfonce le camp ottoman. Kara Mustafa, que le sultan fera étrangler à Belgrade, s'enfuit.\n\nC'est le tournant de la longue guerre : une Sainte Ligue se forme en 1684 (Autriche, Pologne, Venise, puis Russie), qui repousse les Ottomans. Budapest est reprise en 1686, après 145 ans de domination turque, puis les Habsbourg avancent jusqu'à Belgrade.",
+      "consequences": [
+        "Les Ottomans perdent l'initiative en Europe centrale ; l'Autriche des Habsbourg devient la grande puissance du Danube.",
+        "La Sainte Ligue (1684) lance la reconquête de la Hongrie : Buda est reprise en 1686, Mohács vengée en 1687.",
+        "Kara Mustafa est exécuté ; Mehmed IV, déposé en 1687, meurt en prison.",
+        "La grande guerre de 1683-1699 coûte aux Ottomans la Hongrie, la Transylvanie, la Podolie et la Morée."
+      ],
+      "territory": "vienne-1683",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Vienne (1683)",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Vienne"
+        },
+        {
+          "label": "Wikipédia — Jean III Sobieski",
+          "url": "https://fr.wikipedia.org/wiki/Jean_III_Sobieski"
+        },
+        {
+          "label": "Robert Mantran (dir.), Histoire de l'Empire ottoman (Fayard)"
+        }
+      ],
+      "territoryNote": "Empire à son extension européenne maximale : Anatolie, Roumélie, Hongrie centrale et méridionale (pachalik de Buda, Temesvár, Érsekújvár, Eger), Podolie polonaise (Kamianets, depuis 1672), Crète, Chypre, Syrie, Égypte, Hedjaz, Irak, Yémen partiel, côtes d'Algérie, de Tunisie et de Libye. Vassaux/tributaires : Transylvanie (Michel Ier Apafi), Valachie, Moldavie, khanat de Crimée, Raguse, régences d'Alger, Tunis et Tripoli (quasi autonomes), chérif de La Mecque. Voisins : Habsbourg (Autriche, Hongrie royale du nord-ouest, Croatie), Pologne-Lituanie de Sobieski, Russie de Sophie, Venise (Dalmatie, îles Ioniennes, Morée côtière), Safavides, Maroc.",
+      "battle": {
+        "belligerents": [
+          "Empire ottoman (avec Tatars de Crimée et vassaux)",
+          "Sainte Ligue (Habsbourg, Pologne, Saint-Empire)"
+        ],
+        "commanders": [
+          "Kara Mustafa Pacha",
+          "Jean III Sobieski",
+          "Charles V de Lorraine",
+          "Ernst Rüdiger von Starhemberg"
+        ],
+        "outcome": "Victoire décisive des chrétiens ; levée du siège",
+        "forces": "Ottomans : environ 140 000 (chiffre de chroniqueurs) ; relève : environ 70 000 ; garnison : 11 000",
+        "losses": "Environ 15 000 morts ottomans le dernier jour ; environ 4 500 morts chez les alliés"
+      },
+      "armies": [
+        {
+          "id": "armee-kara-mustafa",
+          "side": "Ottomans de Kara Mustafa",
+          "from": "Andrinople",
+          "faction": "janissaires",
+          "path": [
+            [
+              26.56,
+              41.68
+            ],
+            [
+              23.32,
+              42.7
+            ],
+            [
+              20.46,
+              44.82
+            ],
+            [
+              18.69,
+              45.55
+            ],
+            [
+              19.04,
+              47.5
+            ],
+            [
+              16.37,
+              48.2
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Polonais de Sobieski",
+          "from": "Cracovie",
+          "faction": "polonais",
+          "path": [
+            [
+              19.94,
+              50.06
+            ],
+            [
+              18.28,
+              49.83
+            ],
+            [
+              16.6,
+              49.2
+            ],
+            [
+              16.37,
+              48.2
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Impériaux de Charles de Lorraine",
+          "from": "Linz",
+          "faction": "imperiaux",
+          "path": [
+            [
+              14.29,
+              48.31
+            ],
+            [
+              16.05,
+              48.33
+            ],
+            [
+              16.37,
+              48.2
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Kara Mustafa Pacha",
+          "role": "Grand vizir, chef de l'armée",
+          "faction": "janissaires",
+          "archetype": "grand-vizir",
+          "position": [
+            16.45,
+            48.22
+          ]
+        },
+        {
+          "name": "Jean III Sobieski",
+          "role": "Roi de Pologne",
+          "faction": "polonais",
+          "archetype": "roi",
+          "quote": "Venimus, vidimus, Deus vicit : nous sommes venus, nous avons vu, Dieu a vaincu (lettre au pape)",
+          "position": [
+            16.3,
+            48.25
+          ]
+        },
+        {
+          "name": "Léopold Ier",
+          "role": "Empereur du Saint-Empire",
+          "faction": "imperiaux",
+          "archetype": "empereur-germanique",
+          "position": [
+            14.29,
+            48.31
+          ]
+        }
+      ]
+    },
+    {
+      "id": "karlowitz-1699",
+      "year": 1699,
+      "title": "Le traité de Karlowitz",
+      "type": "traité",
+      "location": [
+        19.93,
+        45.2
+      ],
+      "zoom": 5,
+      "summary": "Le 26 janvier 1699, après la perte de la Hongrie, les Ottomans signent à Karlowitz leur premier grand traité de recul : c'est la première fois qu'ils cèdent de vastes territoires.",
+      "details": "Après l'échec devant Vienne en 1683, la **Sainte Ligue** (Habsbourg, Pologne, Venise, puis Russie) a mené seize ans de guerre. Buda est tombée en 1686, la Morée est conquise par Venise en 1687, et le prince **Eugène de Savoie**, jeune général au service de l'empereur, remporte en 1697 une victoire éclatante à **Zenta**, sur la Tisza. Les Ottomans, épuisés, acceptent de négocier. Les négociations ont lieu à **Karlowitz** (aujourd'hui Sremski Karlovci, en Serbie), sous la médiation de l'Angleterre et des Provinces-Unies (les Pays-Bas).\n\nLe traité est signé le **26 janvier 1699**. Les Habsbourg obtiennent la quasi-totalité de la Hongrie, la Transylvanie et la Slavonie, à l'exception du Banat de Temesvár. La Pologne récupère la Podolie et Kamianets. Venise garde la Morée (Péloponnèse) et une partie de la Dalmatie. La Russie, qui a pris Azov en 1696, fait une trêve séparée en 1700. Les Ottomans, qui avaient l'habitude de dicter leurs conditions, négocient pour la première fois d'égal à égal, avec des diplomates comme **Alexandre Mavrocordato** et le *reis ul-küttab*, chef de la chancellerie, Rami Mehmed Efendi.\n\nPour la première fois, la fixation de **frontières précises** est tracée sur le terrain par des commissions mixtes, une notion nouvelle pour l'Empire. C'est le début de ce qu'on appellera plus tard la « question d'Orient » : que faire de la puissance déclinante du « malade » de l'Europe ?",
+      "consequences": [
+        "L'Empire perd la Hongrie (hors Banat), la Transylvanie, la Slavonie, la Podolie, la Morée et une partie de la Dalmatie.",
+        "La Russie s'impose sur la mer d'Azov (traité de Constantinople, 1700), première étape de sa descente vers la mer Noire.",
+        "Les Habsbourg deviennent la grande puissance d'Europe centrale ; la Hongrie devient habsbourgeoise.",
+        "Les Ottomans adoptent une diplomatie plus active : ambassades permanentes, négociations d'égal à égal."
+      ],
+      "territory": "karlowitz-1699",
+      "sources": [
+        {
+          "label": "Wikipédia — Traité de Karlowitz",
+          "url": "https://fr.wikipedia.org/wiki/Trait%C3%A9_de_Karlowitz"
+        },
+        {
+          "label": "Wikipédia — Eugène de Savoie",
+          "url": "https://fr.wikipedia.org/wiki/Eug%C3%A8ne_de_Savoie-Carignan"
+        },
+        {
+          "label": "Robert Mantran (dir.), Histoire de l'Empire ottoman (Fayard)"
+        }
+      ],
+      "territoryNote": "Empire après Karlowitz : Anatolie, Roumélie (Thrace, Macédoine, Grèce du nord, Bosnie, Serbie avec Belgrade, Bulgarie), Banat de Temesvár (conservé), Crète, Chypre, Syrie, Égypte, Hedjaz, Irak, Yémen, côtes d'Algérie, de Tunisie et de Libye. Perdus : Hongrie, Transylvanie, Slavonie (Habsbourg) ; Podolie (Pologne) ; Morée et Dalmatie du sud (Venise). Vassaux/tributaires : Valachie, Moldavie, khanat de Crimée, Raguse, régences d'Alger, de Tunis et de Tripoli (autonomes de fait). Voisins : Habsbourg (Hongrie, Transylvanie, Croatie), Pologne-Lituanie, Russie de Pierre le Grand (Azov), Venise (Morée, Dalmatie), Perse safavide.",
+      "figures": [
+        {
+          "name": "Alexandre Mavrocordato",
+          "role": "Interprète et négociateur ottoman, issu d'une famille grecque de Constantinople",
+          "faction": "ottomans",
+          "archetype": "diplomate",
+          "quote": "(formule libre) Il faut savoir perdre à temps pour ne pas tout perdre",
+          "position": [
+            19.93,
+            45.2
+          ]
+        },
+        {
+          "name": "Wolfgang d'Oettingen",
+          "role": "Négociateur impérial pour les Habsbourg",
+          "faction": "imperiaux",
+          "archetype": "diplomate",
+          "position": [
+            19.9,
+            45.22
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kucuk-kaynarca-1774",
+      "year": 1774,
+      "title": "Küçük Kaynarca : la Russie au bord de la mer Noire",
+      "type": "traité",
+      "location": [
+        27.3,
+        44.05
+      ],
+      "zoom": 5,
+      "summary": "Le 21 juillet 1774, le traité de Küçük Kaynarca fait du khanat de Crimée un État indépendant, ouvre la mer Noire aux Russes et leur donne un droit de regard sur les chrétiens orthodoxes de l'Empire.",
+      "details": "Depuis les années 1730, la **Russie** pousse vers le sud. Sous **Catherine II**, impératrice depuis 1762, ses généraux, **Roumiantsev** et **Souvorov**, battent les Ottomans en 1770 à Larga et à Kagoul, tandis qu'une flotte russe partie de la Baltique détruit la flotte ottomane à Tchesmé, dans la mer Égée. Epuisés, les Ottomans demandent la paix, signée à **Küçük Kaynarca** (aujourd'hui Kaynardzha, en Bulgarie).\n\nLe traité, signé le 21 juillet 1774, est un tournant. Le **khanat de Crimée**, vassal des Ottomans depuis 1475, devient indépendant (la Russie l'annexera en 1783). La Russie obtient Azov, Kertch, Kinburn et un accès direct à la mer Noire. Ses navires marchands peuvent désormais passer par les détroits. Ses ambassadeurs reçoivent le droit de **protéger les chrétiens orthodoxes**, que le sultan s'engage à bien traiter, une clause que Saint-Pétersbourg interprétera ensuite très largement. Les Ottomans paient aussi une lourde indemnité de guerre.\n\nPour les Ottomans, c'est le début d'un long recul face à la Russie. Le traité marque aussi un changement d'attitude : le sultan **Abdülhamid Iᵉʳ** et ses vizirs prennent conscience d'un retard militaire et lancent les premières réformes à l'européenne, avec des instructeurs français comme le baron de Tott pour l'artillerie.",
+      "consequences": [
+        "Le khanat de Crimée devient indépendant, avant d'être annexé par la Russie en 1783.",
+        "La Russie s'installe sur le nord de la mer Noire (Azov, Kertch, Kinburn) et obtient la liberté de navigation dans les détroits.",
+        "Elle obtient un droit de regard sur les orthodoxes de l'Empire, ouvrant la voie à une ingérence politique durable.",
+        "Les Ottomans lancent leurs premières réformes militaires, avec l'aide de conseillers européens."
+      ],
+      "territory": "kucuk-kaynarca-1774",
+      "sources": [
+        {
+          "label": "Wikipédia — Traité de Koutchouk-Kaïnardji",
+          "url": "https://fr.wikipedia.org/wiki/Trait%C3%A9_de_Koutchouk-Ka%C3%AFnardji"
+        },
+        {
+          "label": "Wikipédia — Catherine II",
+          "url": "https://fr.wikipedia.org/wiki/Catherine_II_de_Russie"
+        },
+        {
+          "label": "Robert Mantran (dir.), Histoire de l'Empire ottoman (Fayard)"
+        }
+      ],
+      "territoryNote": "Empire après le traité : Anatolie, Roumélie (Thrace, Macédoine, Grèce, Bosnie, Serbie avec Belgrade, Bulgarie, Dobroudja), Syrie, Liban, Égypte (Ali Bey al-Kabir et les Mamelouks quasi indépendants), Hedjaz, Irak (Bagdad aux mamelouks), côtes d'Algérie, de Tunisie et de Libye (régences autonomes). Perdus : Crimée (devenue indépendante, sous influence russe), Azov, Kertch, Kinburn, steppe entre Boug et Dniepr (Russie) ; Banat de Temesvár (aux Habsbourg depuis 1718). Vassaux/tributaires : Valachie et Moldavie (princes phanariotes, protectorat russe), régences d'Alger, de Tunis et de Tripoli. Voisins : Russie de Catherine II, Habsbourg (Banat, Transylvanie, Croatie), Pologne (premier partage 1772), Venise (îles Ioniennes), Perse des Zand.",
+      "figures": [
+        {
+          "name": "Catherine II",
+          "role": "Impératrice de Russie",
+          "faction": "russes",
+          "archetype": "imperatrice",
+          "quote": "(formule libre) La mer Noire doit être une porte ouverte pour la Russie",
+          "position": [
+            30.3,
+            59.93
+          ]
+        },
+        {
+          "name": "Abdülhamid Ier",
+          "role": "Sultan ottoman",
+          "faction": "ottomans",
+          "archetype": "sultan",
+          "position": [
+            28.98,
+            41.01
+          ]
+        }
+      ]
+    },
+    {
+      "id": "navarin-1827",
+      "year": 1827,
+      "title": "Navarin : l'indépendance grecque",
+      "type": "bataille",
+      "location": [
+        21.69,
+        36.93
+      ],
+      "zoom": 5.4,
+      "summary": "Le 20 octobre 1827, une flotte britannique, française et russe détruit à Navarin la flotte ottomano-égyptienne : la Grèce, en révolte depuis 1821, devient indépendante.",
+      "details": "En 1821, les Grecs, sujets orthodoxes du sultan, se soulèvent dans le Péloponnèse. La guerre d'indépendance est féroce ; les Européens s'émeuvent, entraînés par le philhellénisme, un engouement pour la Grèce antique et ses descendants, dont Lord Byron, mort à Missolonghi en 1824, est le symbole. Le sultan **Mahmud II**, qui n'a pas pu écraser la révolte, appelle à l'aide son puissant vassal d'Égypte, **Méhémet Ali**, dont le fils **Ibrahim Pacha** débarque en Morée en 1825 avec une armée de type européen.\n\nEn 1826, Mahmud II a détruit les janissaires, devenus un obstacle à tout changement, dans l'« **Incident bénéfique** » : leurs casernes sont canonnées, des milliers sont tués. Il crée alors une armée à l'européenne, instruite par des officiers étrangers. Mais il est encore trop tôt. Par le traité de Londres (juillet 1827), la Grande-Bretagne, la France et la Russie imposent un armistice aux belligérants.\n\nLe **20 octobre 1827**, la flotte alliée de l'amiral britannique **Edward Codrington** entre dans la baie de **Navarin** (Pylos), où mouille la flotte ottomano-égyptienne. Un coup de feu mal compris déclenche une bataille de quatre heures : les navires ottomans, plus nombreux mais moins bien tenus, sont presque tous détruits. L'indépendance grecque est dès lors acquise : reconnue en 1830, elle donne naissance à un royaume.",
+      "consequences": [
+        "La Grèce devient un État indépendant (protocole de Londres, 1830), premier territoire européen à quitter l'Empire par la révolte.",
+        "La flotte ottomane est détruite ; la guerre russo-turque de 1828-1829 consacre l'autonomie de la Serbie, de la Moldavie et de la Valachie.",
+        "Les grandes puissances s'installent comme arbitres de la « question d'Orient » ; Mahmud II poursuit ses réformes.",
+        "L'Égypte de Méhémet Ali sort de la guerre épuisée mais fière, et prépare son propre défi contre le sultan."
+      ],
+      "territory": "navarin-1827",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Navarin",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Navarin"
+        },
+        {
+          "label": "Wikipédia — Guerre d'indépendance grecque",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_d%27ind%C3%A9pendance_grecque"
+        },
+        {
+          "label": "Robert Mantran (dir.), Histoire de l'Empire ottoman (Fayard)"
+        }
+      ],
+      "territoryNote": "Empire de Mahmud II : Anatolie, Thrace, Macédoine, Thessalie, Épire, Bosnie, Albanie, Bulgarie, Serbie du sud (Belgrade, avec une principauté de Serbie autonome sous Miloš Obrenović), Syrie, Liban, Palestine, Irak, Hedjaz. La Grèce révoltée (Péloponnèse, Attique, îles) échappe de fait au pouvoir du sultan. Vassaux/tributaires : Égypte de Méhémet Ali (Soudan, Crète, Hedjaz), Valachie et Moldavie (autonomes, protectorat russe), principauté de Serbie, régences d'Alger (jusqu'en 1830), de Tunis et de Tripoli (autonomes). Perdus avant : Crimée (1783), Bessarabie (1812). Voisins : Russie (Caucase, Bessarabie), Autriche, Perse des Qadjars, îles Ioniennes britanniques.",
+      "battle": {
+        "belligerents": [
+          "Empire ottoman et Égypte de Méhémet Ali",
+          "Alliés : Royaume-Uni, France, Russie"
+        ],
+        "commanders": [
+          "Tahir Pacha",
+          "Ibrahim Pacha",
+          "Edward Codrington",
+          "Henri de Rigny",
+          "Login Heyden"
+        ],
+        "outcome": "Victoire écrasante des Alliés",
+        "forces": "Alliés : 27 navires ; ottomano-égyptiens : environ 78 navires",
+        "losses": "Environ 60 navires ottomans détruits et 6 000 morts ; moins de 200 morts chez les Alliés"
+      },
+      "armies": [
+        {
+          "id": "flotte-ottomane",
+          "side": "Flotte ottomano-égyptienne",
+          "faction": "ottomans-modernes",
+          "path": [
+            [
+              25.14,
+              35.4
+            ],
+            [
+              23,
+              35.6
+            ],
+            [
+              21.5,
+              36.7
+            ],
+            [
+              21.66,
+              36.9
+            ],
+            [
+              21.69,
+              36.93
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Flotte britannique de Codrington",
+          "from": "Malte",
+          "faction": "britanniques",
+          "path": [
+            [
+              14.51,
+              35.9
+            ],
+            [
+              18.5,
+              35.8
+            ],
+            [
+              21.3,
+              36.6
+            ],
+            [
+              21.69,
+              36.93
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Escadre française de Rigny",
+          "from": "Milo",
+          "faction": "francais",
+          "path": [
+            [
+              24.4,
+              36.7
+            ],
+            [
+              23,
+              36.3
+            ],
+            [
+              21.5,
+              36.6
+            ],
+            [
+              21.69,
+              36.93
+            ]
+          ],
+          "strength": 1,
+          "winner": true
+        },
+        {
+          "side": "Escadre russe de Heyden",
+          "from": "Malte",
+          "faction": "russes",
+          "path": [
+            [
+              14.51,
+              35.9
+            ],
+            [
+              18.5,
+              35.8
+            ],
+            [
+              21.3,
+              36.6
+            ],
+            [
+              21.69,
+              36.93
+            ]
+          ],
+          "strength": 1,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Edward Codrington",
+          "role": "Amiral britannique",
+          "faction": "britanniques",
+          "archetype": "amiral",
+          "position": [
+            21.65,
+            36.92
+          ]
+        },
+        {
+          "name": "Ibrahim Pacha",
+          "role": "Fils de Méhémet Ali, commandant en Morée",
+          "faction": "ottomans-modernes",
+          "archetype": "pacha",
+          "position": [
+            21.7,
+            36.95
+          ]
+        },
+        {
+          "name": "Mahmud II",
+          "role": "Sultan réformateur",
+          "faction": "ottomans-modernes",
+          "archetype": "sultan",
+          "quote": "(formule libre) Je ne veux plus de musulmans en turban : un sultan, un peuple, une armée",
+          "position": [
+            28.98,
+            41.01
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tanzimat-1839",
+      "year": 1839,
+      "title": "L'édit de Gülhane : les Tanzimat",
+      "type": "réforme",
+      "location": [
+        28.98,
+        41.01
+      ],
+      "zoom": 5,
+      "summary": "Le 3 novembre 1839, le jeune sultan Abdülmecid Iᵉʳ proclame l'édit de Gülhane : sécurité des personnes et des biens, impôts réguliers, égalité devant la loi ; c'est le début des Tanzimat, les « réorganisations ».",
+      "details": "Le sultan **Mahmud II** meurt le 1ᵉʳ juillet 1839, alors que son armée vient d'être battue à Nizip par **Méhémet Ali**, son puissant gouverneur d'Égypte, qui s'est emparé de la Syrie. Le trône passe à **Abdülmecid Iᵉʳ**, 16 ans. La flotte ottomane, passée à l'ennemi, est aux mains de l'Égypte. L'Empire, qui ne tient que grâce à l'appui des grandes puissances, est près de la dislocation.\n\nLe ministre des Affaires étrangères **Mustafa Reşid Pacha**, ancien ambassadeur à Paris et à Londres, convainc le jeune sultan de lancer un programme de réformes. Le **3 novembre 1839**, dans le pavillon de **Gülhane** (le jardin des Roses, au palais de Topkapı), il fait lire en présence des ambassadeurs européens un édit qui garantit à tous les sujets, musulmans ou non, la **sécurité de la vie, de l'honneur et des biens**, un impôt régulier et équitable, et une conscription mieux organisée. C'est le début des **Tanzimat** (« réorganisations »), qui durent jusqu'en 1876.\n\nOn crée des ministères, des tribunaux modernes, des écoles, un code pénal, une banque, des routes et un télégraphe. Un second texte, le *Hatt-ı Hümayun* de 1856, proclame l'égalité des chrétiens et des musulmans. Mais le programme se heurte à la résistance des notables, à la méfiance des chrétiens, qui préfèrent parfois la protection de puissances étrangères, et à des finances toujours exsangues.",
+      "consequences": [
+        "Les Ottomans, appuyés par les puissances (traité de Londres, 1840), reprennent la Syrie à Méhémet Ali, qui garde l'Égypte à titre héréditaire.",
+        "L'État s'oriente vers une administration moderne : ministères, tribunaux, armée de conscrits, écoles.",
+        "Le principe d'égalité de tous les sujets fait naître l'idée d'une citoyenneté « ottomane » commune.",
+        "Les réformes creusent l'endettement et favorisent l'ingérence étrangère ; la faillite de 1875 ne tardera pas."
+      ],
+      "territory": "tanzimat-1839",
+      "sources": [
+        {
+          "label": "Wikipédia — Tanzimat",
+          "url": "https://fr.wikipedia.org/wiki/Tanzimat"
+        },
+        {
+          "label": "Wikipédia — Abdülmecid Ier",
+          "url": "https://fr.wikipedia.org/wiki/Abd%C3%BClmecid_Ier"
+        },
+        {
+          "label": "Robert Mantran (dir.), Histoire de l'Empire ottoman (Fayard)"
+        }
+      ],
+      "territoryNote": "Empire d'Abdülmecid Ier : Anatolie, Thrace, Macédoine, Thessalie, Épire, Albanie, Bulgarie, Bosnie ; principauté de Serbie autonome (suzeraineté ottomane) ; Valachie et Moldavie autonomes ; Syrie, Liban et Palestine occupés par Ibrahim Pacha (restitués en 1840-1841) ; Irak, Kurdistan, Hedjaz ; Tripolitaine (reprise en main en 1835) ; Crète. Vassaux : Égypte de Méhémet Ali (Soudan), Tunis des beys husseinites (autonomes), Serbie, Valachie, Moldavie. Perdus : Grèce (indépendante depuis 1830), Algérie (française depuis 1830), Bessarabie (Russie). Voisins : Russie (Caucase, Bessarabie), Autriche, Perse des Qadjars, Grèce d'Othon Ier, Britanniques dans le golfe Persique et à Aden (1839).",
+      "figures": [
+        {
+          "name": "Abdülmecid Ier",
+          "role": "Sultan réformateur, 16 ans",
+          "faction": "ottomans-modernes",
+          "archetype": "sultan",
+          "quote": "Tous les sujets jouiront de la sécurité de leur vie, de leur honneur et de leurs biens (édit de Gülhane, formule libre)",
+          "position": [
+            28.98,
+            41.01
+          ]
+        },
+        {
+          "name": "Mustafa Reşid Pacha",
+          "role": "Ministre, architecte des Tanzimat",
+          "faction": "ottomans-modernes",
+          "archetype": "grand-vizir",
+          "position": [
+            28.97,
+            41.02
+          ]
+        },
+        {
+          "name": "Méhémet Ali",
+          "role": "Pacha d'Égypte, rival du sultan",
+          "faction": "ottomans-modernes",
+          "archetype": "pacha",
+          "quote": "(formule libre) Je suis né dans un pays où le Nil seul fait la loi",
+          "position": [
+            31.24,
+            30.04
+          ]
+        }
+      ]
+    },
+    {
+      "id": "berlin-1878",
+      "year": 1878,
+      "title": "Plevna et le congrès de Berlin",
+      "type": "traité",
+      "location": [
+        24.62,
+        43.41
+      ],
+      "zoom": 4.8,
+      "summary": "Après la résistance héroïque de Plevna (1877), les Ottomans perdent la guerre contre la Russie ; le congrès de Berlin (1878) redessine les Balkans et leur fait perdre la majeure partie de l'Europe.",
+      "details": "Au milieu des années 1870, des révoltes éclatent dans les Balkans (Bosnie, Bulgarie). La répression ottomane, les « atrocités bulgares » de 1876, provoque un scandale en Europe. Le sultan **Abdülhamid II** (1876-1909) promulgue une Constitution en 1876 pour éviter l'ingérence étrangère, puis la suspend en 1878. La Russie, qui se pose en protectrice des Slaves orthodoxes, déclare la guerre en avril 1877.\n\nLes Russes franchissent le Danube, mais se heurtent à **Plevna** (Pleven, en Bulgarie), tenue par un excellent général, **Osman Nuri Pacha**. Pendant cinq mois (juillet-décembre 1877), trois assauts russes y échouent ; Osman, à bout de vivres, capitule le 10 décembre. Les Russes avancent jusqu'à San Stefano, aux portes d'Istanbul, et imposent en mars 1878 une grande Bulgarie. Les autres puissances, inquiètes, l'obligent à revenir sur ce traité.\n\nAu **congrès de Berlin** (13 juin-13 juillet 1878), présidé par **Bismarck**, la Serbie, le Monténégro et la Roumanie deviennent indépendants ; la Bulgarie est réduite à une principauté autonome, au nord des Balkans ; l'Autriche-Hongrie occupe la Bosnie-Herzégovine ; la Grande-Bretagne reçoit Chypre ; la Russie garde Kars et Batoum. L'Empire garde Istanbul et la Macédoine, mais l'essentiel de l'Europe lui échappe.",
+      "consequences": [
+        "La Serbie, le Monténégro et la Roumanie deviennent indépendants ; la Bulgarie devient principauté autonome.",
+        "L'Autriche-Hongrie administre la Bosnie-Herzégovine ; la Grande-Bretagne occupe Chypre ; la Russie annexe Kars, Ardahan et Batoum.",
+        "Des centaines de milliers de musulmans des Balkans et du Caucase se réfugient en Anatolie, dont la population change.",
+        "La Tunisie passe sous protectorat français (1881) et l'Égypte sous occupation britannique (1882)."
+      ],
+      "territory": "berlin-1878",
+      "sources": [
+        {
+          "label": "Wikipédia — Congrès de Berlin (1878)",
+          "url": "https://fr.wikipedia.org/wiki/Congr%C3%A8s_de_Berlin"
+        },
+        {
+          "label": "Wikipédia — Siège de Plevna",
+          "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_Plevna"
+        },
+        {
+          "label": "Robert Mantran (dir.), Histoire de l'Empire ottoman (Fayard)"
+        }
+      ],
+      "territoryNote": "Empire après Berlin : Anatolie sans Kars, Ardahan et Batoum (russes), Arménie occidentale, Thrace orientale, Macédoine, Albanie, Thessalie (cédée à la Grèce en 1881), Épire, sandjak de Novi Pazar (garnisons autrichiennes), Roumélie orientale (province autonome), Crète, Syrie, Palestine, Liban, Irak, Hedjaz, Yémen, Tripolitaine et Cyrénaïque. Vassaux : Bulgarie (principauté autonome au nord des Balkans), Égypte du khédive (autonome), Tunis du bey (protectorat français en 1881). Perdus : Serbie, Monténégro, Roumanie (indépendants) ; Bosnie-Herzégovine (Autriche-Hongrie) ; Chypre (Royaume-Uni). Voisins : Russie, Autriche-Hongrie, Grèce, Perse, Royaume-Uni (Chypre, Égypte bientôt).",
+      "battle": {
+        "belligerents": [
+          "Empire ottoman",
+          "Russie et Roumanie"
+        ],
+        "commanders": [
+          "Osman Nuri Pacha",
+          "Alexandre II",
+          "Mikhail Skobelev",
+          "Edouard Totleben"
+        ],
+        "outcome": "Capitulation de Plevna après un siège de cinq mois ; victoire russe",
+        "forces": "Ottomans : environ 40 000 à Plevna ; Russes et Roumains : environ 100 000",
+        "losses": "Environ 30 000 Russes et Roumains tués ou blessés ; 10 000 Ottomans tués et 25 000 prisonniers"
+      },
+      "armies": [
+        {
+          "id": "armee-ottomane-moderne",
+          "side": "Ottomans d'Osman Nuri Pacha",
+          "from": "Vidin",
+          "faction": "ottomans-modernes",
+          "path": [
+            [
+              22.87,
+              43.99
+            ],
+            [
+              23.6,
+              43.7
+            ],
+            [
+              24.62,
+              43.41
+            ]
+          ],
+          "strength": 2
+        },
+        {
+          "side": "Russes et Roumains",
+          "from": "Bucarest",
+          "faction": "russes",
+          "path": [
+            [
+              26.1,
+              44.43
+            ],
+            [
+              25.34,
+              43.62
+            ],
+            [
+              24.62,
+              43.41
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Osman Nuri Pacha",
+          "role": "Général, défenseur de Plevna",
+          "faction": "ottomans-modernes",
+          "archetype": "general",
+          "position": [
+            24.6,
+            43.42
+          ]
+        },
+        {
+          "name": "Abdülhamid II",
+          "role": "Sultan, le « Sultan rouge »",
+          "faction": "ottomans-modernes",
+          "archetype": "sultan",
+          "position": [
+            29,
+            41.05
+          ]
+        },
+        {
+          "name": "Otto von Bismarck",
+          "role": "Chancelier allemand, président du congrès",
+          "faction": "prussiens",
+          "archetype": "diplomate",
+          "quote": "Les Balkans ne valent pas les os d'un grenadier poméranien (attribué)",
+          "position": [
+            13.4,
+            52.52
+          ]
+        }
+      ]
+    },
+    {
+      "id": "balkaniques-1912",
+      "year": 1912,
+      "title": "Les guerres balkaniques",
+      "type": "bataille",
+      "location": [
+        21.71,
+        42.13
+      ],
+      "zoom": 5,
+      "summary": "En octobre 1912, la Ligue balkanique (Serbie, Bulgarie, Grèce, Monténégro) attaque l'Empire ottoman, déjà en guerre contre l'Italie ; en quelques semaines, il perd presque tout ce qui lui restait en Europe.",
+      "details": "Au début du XXᵉ siècle, l'Empire est en pleine turbulence. En 1908, la **révolution des Jeunes-Turcs** (le mouvement *Union et Progrès*) a rétabli la Constitution, mais la Bulgarie proclame aussitôt son indépendance et l'Autriche annexe la Bosnie. En 1911-1912, l'Italie, sans rencontrer de grande résistance, s'empare de la **Libye** (Tripolitaine et Cyrénaïque) et des îles du Dodécanèse.\n\nLes États balkaniques, jusque-là rivaux, se liguent. En octobre 1912, la **Ligue balkanique** (Serbie, Bulgarie, Grèce et Monténégro) attaque. À **Kumanovo** (23-24 octobre), les Serbes battent les Ottomans et ouvrent la route de Skopje et de la Macédoine ; les Bulgares vainquent à Lulé Burgas, en Thrace ; la Grèce prend Salonique le 8 novembre, un jour avant les Bulgares. L'armée ottomane, désorganisée, est repoussée jusqu'aux lignes de Çatalca, tout près d'Istanbul.\n\nL'armistice de décembre 1912, puis le traité de Londres (mai 1913), confirment la perte de la presque totalité de la Roumélie. Les vainqueurs se disputent ensuite le butin (seconde guerre balkanique, 1913), ce qui permet aux Ottomans de reprendre Andrinople en juillet 1913. Mais la perte de l'Albanie, de la Macédoine et de la Thrace occidentale est définitive.",
+      "consequences": [
+        "L'Empire perd presque toutes ses terres d'Europe : Macédoine, Albanie (indépendante), Thrace occidentale, Crète, îles de l'Égée.",
+        "La Libye et le Dodécanèse passent à l'Italie (traité d'Ouchy, 1912).",
+        "Des centaines de milliers de réfugiés musulmans affluent vers l'Anatolie et Istanbul.",
+        "Les Jeunes-Turcs, humiliés, durcissent leur pouvoir (coup d'État de janvier 1913) et se tournent vers l'Allemagne."
+      ],
+      "territory": "balkaniques-1912",
+      "sources": [
+        {
+          "label": "Wikipédia — Première guerre balkanique",
+          "url": "https://fr.wikipedia.org/wiki/Premi%C3%A8re_Guerre_balkanique"
+        },
+        {
+          "label": "Wikipédia — Révolution des Jeunes-Turcs",
+          "url": "https://fr.wikipedia.org/wiki/R%C3%A9volution_des_Jeunes-Turcs"
+        },
+        {
+          "label": "Robert Mantran (dir.), Histoire de l'Empire ottoman (Fayard)"
+        }
+      ],
+      "territoryNote": "Empire fin 1912 : Anatolie entière, Thrace orientale jusqu'à la ligne de Çatalca (Andrinople assiégée, reprise en 1913), Syrie, Liban, Palestine, Irak, Hedjaz, Asir, Yémen. Perdus : Macédoine, Albanie, Thrace occidentale (Serbie, Grèce, Bulgarie, Monténégro) ; Crète (Grèce) ; Libye et Dodécanèse (Italie) ; Bosnie (Autriche-Hongrie, annexée 1908) ; Bulgarie indépendante (1908). Hors de l'Empire : Égypte (occupation britannique depuis 1882), Tunisie (protectorat français), Chypre (britannique), Koweït (protectorat britannique). Voisins : Grèce, Serbie, Bulgarie, Roumanie, Russie (Caucase), Perse des Qadjars, Autriche-Hongrie.",
+      "battle": {
+        "belligerents": [
+          "Empire ottoman",
+          "Royaume de Serbie (Ligue balkanique)"
+        ],
+        "commanders": [
+          "Zeki Pacha",
+          "Radomir Putnik",
+          "prince Alexandre de Serbie"
+        ],
+        "outcome": "Victoire serbe à Kumanovo",
+        "forces": "Serbes : environ 58 000 ; Ottomans : environ 60 000",
+        "losses": "Environ 4 000 Serbes et 6 000 Ottomans tués ou blessés (estimations)"
+      },
+      "armies": [
+        {
+          "id": "armee-ottomane-moderne",
+          "side": "Armée ottomane du Vardar",
+          "faction": "ottomans-modernes",
+          "path": [
+            [
+              24.62,
+              43.41
+            ],
+            [
+              22.94,
+              40.64
+            ],
+            [
+              21.43,
+              42
+            ],
+            [
+              21.71,
+              42.13
+            ]
+          ],
+          "strength": 2
+        },
+        {
+          "side": "Serbes de Putnik",
+          "from": "Belgrade",
+          "faction": "serbes",
+          "path": [
+            [
+              20.46,
+              44.82
+            ],
+            [
+              21.9,
+              43.32
+            ],
+            [
+              21.9,
+              42.55
+            ],
+            [
+              21.71,
+              42.13
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Éleftherios Venizélos",
+          "role": "Premier ministre grec, architecte de la Ligue",
+          "faction": "grecs-modernes",
+          "archetype": "diplomate",
+          "position": [
+            22.94,
+            40.64
+          ]
+        },
+        {
+          "name": "Mehmed V Reşad",
+          "role": "Sultan sans pouvoir réel",
+          "faction": "ottomans-modernes",
+          "archetype": "sultan",
+          "position": [
+            28.98,
+            41.01
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gallipoli-1915",
+      "year": 1915,
+      "title": "Gallipoli : la victoire des Dardanelles",
+      "type": "bataille",
+      "location": [
+        26.3,
+        40.25
+      ],
+      "zoom": 5.2,
+      "summary": "De février 1915 à janvier 1916, les Alliés tentent en vain de forcer les détroits des Dardanelles pour prendre Istanbul ; la défense ottomane, menée par Mustafa Kemal, les repousse.",
+      "details": "En 1914, l'Empire entre dans la Première Guerre mondiale aux côtés de l'Allemagne et de l'Autriche-Hongrie, dirigé par les Jeunes-Turcs (**Enver Pacha**, **Talaat**). Les Alliés (Britanniques, Français, Russes) cherchent à frapper l'Empire au cœur : s'emparer des **détroits** (Dardanelles et Bosphore), ouvrir la voie vers la Russie et prendre Istanbul. Winston Churchill, alors Premier lord de l'Amirauté, y croit.\n\nAprès l'échec d'une attaque navale le 18 mars 1915 (trois cuirassés coulés par des mines), les Alliés débarquent le **25 avril 1915** sur la **péninsule de Gallipoli**, avec des troupes britanniques, françaises, australiennes et néo-zélandaises (l'ANZAC). Les Ottomans, aidés par un conseiller allemand, **Liman von Sanders**, tiennent les crêtes. Un jeune colonel, **Mustafa Kemal**, à la tête d'une division, ordonne à ses hommes de tenir sur la colline de Conkbayırı (« Je ne vous ordonne pas d'attaquer : je vous ordonne de mourir »). Les combats de tranchées s'enlisent sous la chaleur et la maladie.\n\nLes Alliés évacuent à l'hiver 1915-1916. Le bilan est lourd : environ 250 000 morts ou blessés de chaque côté. Cette victoire est la dernière grande victoire ottomane. Elle fait de Mustafa Kemal un héros, mais pendant ce temps, dans l'est, le gouvernement ordonne la déportation et le massacre des Arméniens : un génocide qui fait plus d'un million de morts.",
+      "consequences": [
+        "Les détroits restent ottomans ; les Alliés échouent à joindre la Russie par la mer Noire, ce qui pèse sur le front de l'Est.",
+        "Mustafa Kemal devient un héros national, et son prestige lui servira lors de la guerre d'indépendance.",
+        "En 1915-1916, le gouvernement jeune-turc organise la déportation et l'extermination des Arméniens (génocide).",
+        "L'échec marque la carrière de Churchill, qui démissionne de l'Amirauté, et provoque une profonde réflexion en Australie et en Nouvelle-Zélande."
+      ],
+      "territory": "gallipoli-1915",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille des Dardanelles",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_des_Dardanelles"
+        },
+        {
+          "label": "Wikipédia — Mustafa Kemal Atatürk",
+          "url": "https://fr.wikipedia.org/wiki/Mustafa_Kemal_Atat%C3%BCrk"
+        },
+        {
+          "label": "Robert Mantran (dir.), Histoire de l'Empire ottoman (Fayard)"
+        }
+      ],
+      "territoryNote": "Empire en guerre aux côtés des Empires centraux : Anatolie entière, Thrace orientale (avec Gallipoli et Andrinople, reprise en 1913), Syrie, Liban, Palestine, Irak (Bagdad, Bassora), Hedjaz, Asir, Yémen. Les deux détroits (Dardanelles, Bosphore) tenus. Hors de l'Empire : Égypte (protectorat britannique depuis décembre 1914, canal de Suez), Libye et Dodécanèse (Italie), Chypre (annexée par le Royaume-Uni en 1914), Koweït, Bahreïn. Voisins : Russie (Caucase, mer Noire), Grèce (neutre), Bulgarie (alliée des Empires centraux à l'automne 1915), Perse neutre, Royaume-Uni (Égypte, golfe Persique).",
+      "battle": {
+        "belligerents": [
+          "Empire ottoman (avec conseillers allemands)",
+          "Alliés : Royaume-Uni, France, Australie, Nouvelle-Zélande"
+        ],
+        "commanders": [
+          "Liman von Sanders",
+          "Mustafa Kemal",
+          "Ian Hamilton",
+          "William Birdwood"
+        ],
+        "outcome": "Victoire ottomane ; évacuation alliée",
+        "forces": "Ottomans : environ 315 000 hommes au total ; Alliés : environ 480 000",
+        "losses": "Environ 250 000 pertes de chaque côté ; des dizaines de milliers de morts"
+      },
+      "armies": [
+        {
+          "id": "armee-ottomane-moderne",
+          "side": "Armée ottomane des Dardanelles",
+          "faction": "ottomans-modernes",
+          "path": [
+            [
+              21.71,
+              42.13
+            ],
+            [
+              28.97,
+              41.01
+            ],
+            [
+              27.5,
+              40.97
+            ],
+            [
+              26.75,
+              40.5
+            ],
+            [
+              26.3,
+              40.25
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Britanniques et ANZAC",
+          "from": "Moudros",
+          "faction": "britanniques",
+          "path": [
+            [
+              25.27,
+              39.88
+            ],
+            [
+              26.28,
+              40.25
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Corps expéditionnaire français",
+          "from": "Moudros",
+          "faction": "francais",
+          "path": [
+            [
+              25.27,
+              39.88
+            ],
+            [
+              26.1,
+              40.1
+            ],
+            [
+              26.3,
+              40.25
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Mustafa Kemal",
+          "role": "Colonel, chef de division",
+          "faction": "ottomans-modernes",
+          "archetype": "militaire-xxe",
+          "quote": "Je ne vous ordonne pas d'attaquer, je vous ordonne de mourir (attribué)",
+          "position": [
+            26.28,
+            40.25
+          ]
+        },
+        {
+          "name": "Ian Hamilton",
+          "role": "Général britannique, commandant du corps expéditionnaire",
+          "faction": "britanniques",
+          "archetype": "general",
+          "position": [
+            26.2,
+            40.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sultanat-1922",
+      "year": 1922,
+      "title": "L'abolition du sultanat",
+      "type": "chute",
+      "location": [
+        32.85,
+        39.93
+      ],
+      "zoom": 4.6,
+      "summary": "Le 1er novembre 1922, l'Assemblée nationale d'Ankara abolit le sultanat ; le dernier sultan, Mehmed VI, quitte Istanbul le 17 novembre : après 623 ans, l'Empire ottoman disparaît.",
+      "details": "Vaincu en 1918, l'Empire signe l'armistice de Moudros. Istanbul est occupée par les Alliés, et le traité de **Sèvres** (1920) prévoit le partage de l'Anatolie entre Grecs, Arméniens, Kurdes, Français, Italiens et Britanniques. Le sultan **Mehmed VI**, entouré de ministres soumis, l'accepte. Mais en Anatolie, un mouvement national se forme autour du général **Mustafa Kemal**, héros de Gallipoli. En 1920, une Grande Assemblée nationale se réunit à **Ankara**, qui devient un gouvernement rival du sultan.\n\nLes armées kémalistes repoussent les Arméniens à l'est, les Français en Cilicie, et surtout les Grecs, qui avaient débarqué à Smyrne en 1919 : après la victoire de la Sakarya (1921), l'offensive finale de **août 1922** reprend Smyrne (Izmir) le 9 septembre et provoque la fuite de centaines de milliers de Grecs d'Anatolie. L'armistice de Mudanya (octobre) rend aux Turcs la Thrace orientale.\n\nMustafa Kemal fait alors dissocier le sultanat du califat. Le **1ᵉʳ novembre 1922**, l'Assemblée d'Ankara vote l'abolition du **sultanat**, ouvrant la voie à la République, proclamée le 29 octobre 1923. Mehmed VI, menacé, s'embarque sur un navire britannique le 17 novembre. Son cousin Abdülmecid II lui succède comme calife, sans pouvoir, jusqu'à la suppression du califat en 1924. Le traité de **Lausanne** (juillet 1923) fixe les frontières de la Turquie moderne.",
+      "consequences": [
+        "L'Empire ottoman disparaît après 623 ans ; la République de Turquie est proclamée le 29 octobre 1923.",
+        "La Syrie et le Liban (mandat français), l'Irak, la Palestine et la Transjordanie (mandat britannique) sont détachés ; l'Arabie devient indépendante.",
+        "Le traité de Lausanne (1923) fixe les frontières de la Turquie et prévoit l'échange de populations entre Turquie et Grèce.",
+        "Le califat est aboli en 1924 ; Atatürk mène une politique de laïcité et d'occidentalisation."
+      ],
+      "territory": "sultanat-1922",
+      "sources": [
+        {
+          "label": "Wikipédia — Abolition du sultanat ottoman",
+          "url": "https://fr.wikipedia.org/wiki/Abolition_du_sultanat_ottoman"
+        },
+        {
+          "label": "Wikipédia — Guerre d'indépendance turque",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_d%27ind%C3%A9pendance_turque"
+        },
+        {
+          "label": "Robert Mantran (dir.), Histoire de l'Empire ottoman (Fayard)"
+        }
+      ],
+      "territoryNote": "Ce qui reste de l'Empire : l'Anatolie entière (contrôlée par le gouvernement d'Ankara) et la Thrace orientale avec Istanbul (rendue à la Turquie par l'armistice de Mudanya, octobre 1922), Smyrne reprise en septembre 1922, Kars et Ardahan reprises en 1921. Perdus : Syrie et Liban (mandat français), Irak, Palestine, Transjordanie (mandats britanniques), Hedjaz (royaume hachémite), Asir et Yémen (imamat indépendant), Égypte (indépendante en 1922), Thrace occidentale (Grèce), Dodécanèse (Italie), Chypre (Royaume-Uni). Voisins : Grèce, Bulgarie, Arménie soviétique et Géorgie (URSS), Perse, mandats français (Syrie) et britannique (Irak).",
+      "figures": [
+        {
+          "name": "Mustafa Kemal",
+          "role": "Chef de l'Assemblée nationale d'Ankara",
+          "faction": "ottomans-modernes",
+          "archetype": "militaire-xxe",
+          "quote": "La souveraineté appartient sans condition à la nation (1920)",
+          "position": [
+            32.85,
+            39.93
+          ]
+        },
+        {
+          "name": "Mehmed VI Vahideddin",
+          "role": "Dernier sultan",
+          "faction": "ottomans-modernes",
+          "archetype": "sultan",
+          "position": [
+            28.98,
+            41.01
+          ]
+        }
+      ]
+    }
+  ]
+}
