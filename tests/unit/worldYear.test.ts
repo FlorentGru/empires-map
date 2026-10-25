@@ -1,5 +1,5 @@
 import { beforeAll, describe, expect, it } from 'vitest';
-import { loadAllEmpires } from '../../src/data/loadEmpire';
+import { EMPIRE_INDEX, loadAllEmpires } from '../../src/data/loadEmpire';
 
 // Les timelines se chargent à la demande : toutes avant les tests.
 beforeAll(() => loadAllEmpires());
@@ -19,6 +19,16 @@ describe('empiresAt', () => {
   });
   it('aucun empire en -2999', () => {
     expect(ids(-2999)).not.toContain('rome');
+  });
+});
+
+describe('bornes de la frise du monde', () => {
+  it('chaque empire de l’Atlas tient entre MIN_YEAR et MAX_YEAR (toutes ses étapes sont atteignables)', () => {
+    for (const e of EMPIRE_INDEX) {
+      expect(e.start, e.id).toBeGreaterThanOrEqual(MIN_YEAR);
+      expect(e.end, e.id).toBeLessThanOrEqual(MAX_YEAR);
+    }
+    expect(MAX_YEAR).toBeGreaterThanOrEqual(1922);
   });
 });
 

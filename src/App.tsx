@@ -617,6 +617,7 @@ function Atlas({
         countries2026={countries2026}
         neighbors={neighbors}
         contemporaries={contemporaries}
+        onToggleContemporaries={toggleContemporaries}
         monuments={monuments}
         routes={routes}
         disasters={disasters}

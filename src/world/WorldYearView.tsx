@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { GOTO_EVENT, type GotoDetail } from '../map/contemporaryLayers';
 import { formatYear } from '../lib/years';
-import { allStepYears, clampYear, empiresAt, MAX_YEAR, nextStepYear } from '../lib/worldYear';
+import { allStepYears, clampYear, empiresAt, MAX_YEAR, MIN_YEAR, nextStepYear } from '../lib/worldYear';
 import { writeWorldUrl } from './worldUrl';
 import { WorldPanel } from './WorldPanel';
 import { SPEEDS, WorldTimeline } from './WorldTimeline';
@@ -37,7 +37,7 @@ export function WorldYearView({ initialYear, backName, onBack }: Props) {
     [steps],
   );
 
-  // Lecture continue : speed ans par seconde, pause automatique en 1900.
+  // Lecture continue : speed ans par seconde, pause automatique en MAX_YEAR (fin du dernier empire).
   useEffect(() => {
     if (!playing) return;
     const id = setInterval(() => {
@@ -50,7 +50,7 @@ export function WorldYearView({ initialYear, backName, onBack }: Props) {
   }, [playing, speed]);
 
   const togglePlay = useCallback(() => {
-    if (yearRef.current >= MAX_YEAR) setYear(clampYear(-3000));
+    if (yearRef.current >= MAX_YEAR) setYear(MIN_YEAR);
     setPlaying((p) => !p);
   }, []);
 

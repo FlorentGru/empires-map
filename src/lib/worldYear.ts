@@ -1,10 +1,11 @@
 // Vue « Le monde en l'an X » : logique pure (empires présents, étapes, échelle de la frise).
-import { EMPIRES } from '../data/loadEmpire';
+import { EMPIRE_INDEX, EMPIRES } from '../data/loadEmpire';
 import { existsAt, lastStepAtOrBefore } from './contemporaries';
 import type { Empire, TimelineStep } from '../types';
 
-export const MIN_YEAR = -3000;
-export const MAX_YEAR = 1900;
+// Bornes de la frise : au moins -3000 → 1900, élargies automatiquement pour couvrir tout empire de l'Atlas.
+export const MIN_YEAR = Math.min(-3000, ...EMPIRE_INDEX.map((e) => e.start));
+export const MAX_YEAR = Math.max(1900, ...EMPIRE_INDEX.map((e) => e.end));
 
 /** Année valide : entier dans [MIN_YEAR, MAX_YEAR], sans année 0 (-1 est suivi de 1). */
 export function clampYear(year: number): number {
@@ -54,7 +55,7 @@ export function nextStepYear(year: number, dir: 1 | -1, steps: readonly StepYear
 /**
  * Échelle de la frise : linéaire par morceaux, plus d'espace pour les périodes riches.
  * Points (année, position 0..1) : l'Antiquité lointaine est comprimée (20 % pour 2 500 ans avant -500),
- * puis -500..0 gagne 25 %, 0..1000 30 %, 1000..1900 25 %.
+ * puis -500..0 gagne 25 %, 0..1000 30 %, 1000..MAX_YEAR 25 %.
  */
 export const SCALE_POINTS: readonly (readonly [number, number])[] = [
   [MIN_YEAR, 0],

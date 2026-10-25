@@ -2672,6 +2672,11 @@ kbd {
   outline: 2px solid var(--accent, #9b2d20);
   outline-offset: 1px;
 }
+/* Indice : empires contemporains masqués par le réglage d'affichage. */
+.legend__hidden-hint {
+  font-style: italic;
+  opacity: 0.8;
+}
 
 /* Frise : premier et dernier libellés collés au bord (sinon coupés à moitié). */
 .timeline__tick--first {

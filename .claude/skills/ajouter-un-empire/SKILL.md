@@ -48,6 +48,7 @@ Corrige les petits écarts (une ville mal classée, un statut) directement dans 
 ### 4. Vérifications finales (toi)
 - Attends la CI : `gh run watch $(gh run list --limit 1 --json databaseId -q '.[0].databaseId') --exit-status`.
 - Mets à jour `README.md` (empires disponibles) et `docs/ARCHITECTURE.md` si une technique nouvelle a été introduite.
+- **Le monde en l'an X** (obligatoire) : l'empire doit y apparaître. Les territoires viennent automatiquement de `EMPIRES` et les bornes de la frise (`MIN_YEAR`/`MAX_YEAR` de `src/lib/worldYear.ts`) s'élargissent seules depuis `start`/`end` ; vérifie quand même `npx vitest run tests/unit/worldYear.test.ts` (chaque empire tient dans les bornes) et une capture headless de `/?world=1&year=<année de l'apogée>` puis de `<année de fin>` : l'empire est listé dans le panneau et dessiné. Ajoute aussi sa figurine de légende dans `EMPIRE_SPRITES` (`src/panels/Legend.tsx`), sinon c'est un soldat romain.
 - **SEO** : si l'id n'est pas un mot français, ajoute son slug dans `SLUGS` (`src/lib/seo.ts`, ex. `china` → `chine`) ; lance `npm run build:og` et commite `public/og/<id>.png` (image de partage) ; `npm run build` doit annoncer les nouvelles pages (`prerender : N pages`).
 - Donne à Florent 3-4 liens de test `http://localhost:5173/<slug>/<stepId>/` sur les étapes marquantes, et rappelle `npm start` si le serveur ne tourne pas.
 - Signale honnêtement les limites (frontières approximatives, citations « attribuées », figurines empruntées à un autre peuple).

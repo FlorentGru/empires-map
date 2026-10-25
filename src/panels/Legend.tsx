@@ -17,6 +17,8 @@ interface Props {
   countries2026?: boolean;
   neighbors?: boolean;
   contemporaries?: boolean;
+  /** Réaffiche les empires contemporains (bouton d'indice quand ils sont masqués). */
+  onToggleContemporaries?: () => void;
   monuments?: boolean;
   routes?: boolean;
   disasters?: boolean;
@@ -28,6 +30,7 @@ const EMPIRE_SPRITES: Record<string, { faction: Faction; archetype: Archetype }>
   napoleon: { faction: 'francais', archetype: 'empereur-napoleon' },
   china: { faction: 'chinois', archetype: 'empereur-chinois' },
   mongols: { faction: 'mongols', archetype: 'khan' },
+  ottomans: { faction: 'janissaires', archetype: 'sultan' },
 };
 
 /** Au-delà, la légende des entités est tronquée (périodes de division). */
@@ -118,6 +121,7 @@ export const Legend = memo(function Legend({
   countries2026 = false,
   neighbors = true,
   contemporaries = true,
+  onToggleContemporaries,
   monuments = true,
   routes = true,
   disasters = true,
@@ -235,6 +239,15 @@ export const Legend = memo(function Legend({
               </button>
             </li>
           ))}
+          {!contemporaries && onToggleContemporaries && (
+            <li>
+              <button type="button" className="legend__entity legend__hidden-hint" onClick={onToggleContemporaries}>
+                <span className="legend__label">
+                  Empires contemporains masqués<small>Afficher (réglage Affichage › Contemporains)</small>
+                </span>
+              </button>
+            </li>
+          )}
         </Group>
 
         <Group title="Armées et personnages">

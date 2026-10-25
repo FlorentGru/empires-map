@@ -6,7 +6,7 @@ import './world.css';
 
 export const SPEEDS = [10, 25, 50] as const;
 // Graduations espacées : avant -500 la piste est comprimée, les libellés « av. J.-C. » sont longs.
-const RULER = [-3000, -1500, -500, 1, 500, 1000, 1500, 1900];
+const RULER = [MIN_YEAR, -1500, -500, 1, 500, 1000, 1500, MAX_YEAR];
 const PERMILLE = 1000;
 const pct = (year: number) => `${(yearToPos(year) * 100).toFixed(3)}%`;
 

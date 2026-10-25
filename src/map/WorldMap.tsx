@@ -397,7 +397,22 @@ export function WorldMap({
     const chained = seqPrev ? continuedArmies(empire.steps, index) : [];
     const camTimers: number[] = [];
     const longMarch = longestMarchKm(step.armies) > LONG_MARCH_KM;
-    if (step.location && (chained.length > 0 || longMarch) && !prefersReducedMotion()) {
+    if (compact) {
+      // Vue de comparaison : on cadre tout le territoire de l'étape (core + vassaux), pas le lieu de l'événement.
+      cameraKeyRef.current = '';
+      void loadTerritory(empire.id, step.territory).then((fc) => {
+        if (stale) return;
+        const b = new LngLatBounds();
+        for (const f of fc.features) {
+          const g = f.geometry;
+          if (f.properties?.status === 'allied' || !g || (g.type !== 'Polygon' && g.type !== 'MultiPolygon')) continue;
+          const [w, s, e, n] = geometryBounds(g);
+          if (Number.isFinite(w)) b.extend([w, s]).extend([e, n]);
+        }
+        if (b.isEmpty()) return;
+        map.fitBounds(b, { padding: viewPadding(false), pitch: 0, maxZoom: 5, duration: prefersReducedMotion() ? 0 : 900, essential: false });
+      });
+    } else if (step.location && (chained.length > 0 || longMarch) && !prefersReducedMotion()) {
       // Campagne : on cadre d'abord toute la marche, puis on rejoint le champ de bataille au choc.
       const bounds = new LngLatBounds();
       for (const a of step.armies ?? []) if (a.path.length >= 2) for (const pt of a.path) bounds.extend(pt);
