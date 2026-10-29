@@ -46,7 +46,6 @@ test('quiz : bonne puis mauvaise réponse, score final', async ({ page }) => {
 
 test('sans aucun serveur, le quiz hors ligne est généré dans le navigateur', async ({ page }) => {
   await page.route('**/api/quiz', (route) => route.abort());
-  await page.route('**/api/quiz/hors-ligne**', (route) => route.abort());
   await page.goto('/?empire=rome&step=zama-202');
   await page.getByRole('button', { name: /Quiz/ }).click();
   const dialog = page.getByRole('dialog', { name: /Quiz du sage/ });
@@ -59,4 +58,13 @@ test('sans aucun serveur, le quiz hors ligne est généré dans le navigateur', 
       .filter({ hasNotText: /Fermer|Commencer|Rejouer|Quiz hors ligne/ })
       .first(),
   ).toBeVisible();
+});
+
+test('le sage échoue (503) : le navigateur bascule seul sur le quiz hors ligne', async ({ page }) => {
+  await page.route('**/api/quiz', (route) => route.fulfill({ status: 503, json: { detail: 'sage indisponible' } }));
+  await page.goto('/?empire=rome&step=zama-202');
+  await page.getByRole('button', { name: /Quiz/ }).click();
+  const dialog = page.getByRole('dialog', { name: /Quiz du sage/ });
+  await dialog.getByRole('button', { name: 'Commencer' }).click();
+  await expect(dialog.locator('.quiz__badge')).toHaveText('hors ligne');
 });

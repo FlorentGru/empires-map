@@ -54,21 +54,13 @@ export async function fetchQuiz(p: QuizParams): Promise<QuizResponse> {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ empire: p.empire ?? null, difficulte: p.difficulte, n: p.n }),
   });
+  // 503 : le serveur répond mais le sage n'a pas pu rédiger (clé, quota, réponse invalide) → quiz hors ligne.
+  if (res.status === 503) return fetchQuizHorsLigne(p);
   if (!res.ok) throw new Error(String(res.status));
   return parse(await res.json());
 }
 
-/** Quiz hors ligne : celui du serveur s'il répond, sinon généré dans le navigateur (src/quiz/offline.ts). */
+/** Quiz hors ligne, généré dans le navigateur (src/quiz/offline.ts). */
 export async function fetchQuizHorsLigne(p: QuizParams): Promise<QuizResponse> {
-  if (!STATIC_SITE) {
-    try {
-      const qs = new URLSearchParams({ n: String(p.n) });
-      if (p.empire) qs.set('empire', p.empire);
-      const res = await fetch(`/api/quiz/hors-ligne?${qs}`);
-      if (res.ok) return parse(await res.json());
-    } catch {
-      /* serveur absent : génération locale */
-    }
-  }
   return parse({ source: 'hors_ligne', quiz: offlineQuiz(p.empire, p.n, await loadCities()) });
 }

@@ -58,7 +58,10 @@ export function loadEmpire(id: string): Promise<Empire> {
         EMPIRES.sort(byStartYear);
       }
       return full;
-    })();
+    })().catch((err: unknown) => {
+      pending.delete(key); // échec réseau : le prochain appel retente au lieu de renvoyer le même échec
+      throw err;
+    });
     pending.set(key, p);
   }
   return p;

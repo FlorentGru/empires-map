@@ -1,5 +1,5 @@
-// Quiz hors ligne côté navigateur : même logique que quiz_hors_ligne (agent/atlas_agent/quiz.py),
-// pour la version en ligne sans serveur Python (GitHub Pages). Déterministe pour une graine donnée.
+// Quiz hors ligne, généré dans le navigateur à partir des données : sur GitHub Pages (sans serveur Python)
+// et en local quand le sage ne répond pas. Déterministe pour une graine donnée.
 import { EMPIRES } from '../data/loadEmpire';
 import { PEOPLE } from '../data/loadPeople';
 import { formatYear } from '../lib/years';

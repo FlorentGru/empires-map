@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 
 load_dotenv(Path(__file__).parent / ".env")  # avant l'import de l'agent (lit ATLAS_MODEL)
 
-from fastapi import FastAPI, HTTPException, Query  # noqa: E402
+from fastapi import FastAPI, HTTPException  # noqa: E402
 from fastapi.middleware.cors import CORSMiddleware  # noqa: E402
 from google.adk.runners import Runner  # noqa: E402
 from google.adk.sessions import InMemorySessionService  # noqa: E402
@@ -21,7 +21,7 @@ from pydantic import BaseModel, Field  # noqa: E402
 
 from agent.atlas_agent import tools  # noqa: E402
 from agent.atlas_agent.agent import root_agent  # noqa: E402
-from agent.atlas_agent.quiz import generer_quiz, quiz_hors_ligne  # noqa: E402
+from agent.atlas_agent.quiz import generer_quiz  # noqa: E402
 
 APP_NAME = "atlas"
 USER_ID = "visiteur"
@@ -46,7 +46,7 @@ class Contexte(BaseModel):
 
 
 class ChatRequest(BaseModel):
-    message: str
+    message: str = Field(max_length=2000)  # borne le coût d'un appel (serveur ouvert au réseau par npm run serve)
     session_id: str | None = None
     contexte: Contexte | None = None
 
@@ -110,10 +110,7 @@ def _verifier_empire(empire: str | None) -> str | None:
 @app.post("/api/quiz")
 async def quiz(req: QuizRequest):
     empire = _verifier_empire(req.empire)
-    resultat, source = await generer_quiz(empire, req.theme, req.difficulte, req.n)
-    return {"source": source, "quiz": resultat.model_dump()}
-
-
-@app.get("/api/quiz/hors-ligne")
-async def quiz_hors_ligne_endpoint(empire: str | None = None, n: int = Query(default=5, ge=3, le=10)):
-    return {"source": "hors_ligne", "quiz": quiz_hors_ligne(_verifier_empire(empire), n).model_dump()}
+    resultat = await generer_quiz(empire, req.theme, req.difficulte, req.n)
+    if resultat is None:  # le navigateur se replie sur son quiz hors ligne (src/quiz/api.ts)
+        raise HTTPException(status_code=503, detail="Le sage n'a pas pu rédiger le quiz.")
+    return {"source": "sage", "quiz": resultat.model_dump()}

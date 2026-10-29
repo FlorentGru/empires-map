@@ -1,17 +1,16 @@
-"""Quiz mené par le sage : deux agents ADK enchaînés, sortie structurée validée, repli sans modèle.
+"""Quiz mené par le sage : deux agents ADK enchaînés, sortie structurée validée.
 
 Pipeline :  chercheur_quiz (outils, écrit « matiere » dans l'état)
          →  redacteur_quiz (sans outil, lit {matiere}, sort un `Quiz` validé par schéma)
 
-Si l'agent échoue (pas de clé, réseau, JSON invalide…), `quiz_hors_ligne` fabrique un quiz
-déterministe à partir des données : le visiteur a toujours un quiz.
+Si l'agent échoue (pas de clé, réseau, JSON invalide…), le serveur répond 503 et le navigateur
+fabrique un quiz hors ligne depuis les données (src/quiz/offline.ts) : le visiteur a toujours un quiz.
 """
 
 from __future__ import annotations
 
 import json
 import logging
-import random
 import uuid
 from typing import Literal
 
@@ -123,169 +122,6 @@ quiz_agent = construire_agent()
 APP_NAME = "atlas_quiz"
 USER_ID = "visiteur"
 
-# ---------------------------------------------------------------- quiz hors ligne (déterministe)
-
-
-def _etiquette_annee(annee: int) -> str:
-    return tools._annee(annee)
-
-
-def _choix(rng: random.Random, bonne: str, distracteurs: list[str]) -> tuple[list[str], int] | None:
-    """Mélange la bonne réponse avec 3 distracteurs distincts ; None s'il n'y en a pas assez."""
-    vus = {bonne.strip().lower()}
-    uniques: list[str] = []
-    for d in distracteurs:
-        if d.strip() and d.strip().lower() not in vus:
-            vus.add(d.strip().lower())
-            uniques.append(d)
-    if len(uniques) < 3:
-        return None
-    choix = [bonne, *uniques[:3]]
-    rng.shuffle(choix)
-    return choix, choix.index(bonne)
-
-
-def _q_annee(rng: random.Random, cle: str, emp: dict, etape: dict) -> QuizQuestion | None:
-    an = etape["year"]
-    decalages = [d for d in (-30, -20, -12, -8, -5, -3, -2, -1, 1, 2, 3, 5, 8, 12, 20, 30) if an + d != an]
-    rng.shuffle(decalages)
-    res = _choix(rng, _etiquette_annee(an), [_etiquette_annee(an + d) for d in decalages[:6]])
-    if not res:
-        return None
-    choix, i = res
-    return QuizQuestion(
-        question=f"En quelle année a lieu : « {etape['title']} » ({emp['name']}) ?",
-        choix=choix, bonne_reponse=i, empire=cle, etape_id=etape["id"],
-        explication=f"{etape['title']} se situe en {_etiquette_annee(an)}. {etape['summary']}",
-    )
-
-
-def _correspond(cote: str, belligerant: str) -> bool:
-    c = tools._normaliser(cote).split()
-    b = tools._normaliser(belligerant)
-    return bool(c) and c[0] in b
-
-
-def _q_bataille(rng: random.Random, cle: str, emp: dict, etape: dict, autres: list[str]) -> QuizQuestion | None:
-    bataille = etape.get("battle")
-    if not bataille or len(bataille.get("belligerents", [])) < 2:
-        return None
-    gagnants = {a["side"] for a in etape.get("armies", []) if a.get("winner") and a.get("side")}
-    candidats = [b for b in bataille["belligerents"] if any(_correspond(g, b) for g in gagnants)]
-    if len(gagnants) != 1 or len(candidats) != 1:
-        return None
-    bonne = candidats[0]
-    memes = sorted({b for e in emp["steps"] for b in (e.get("battle") or {}).get("belligerents", [])} - set(bataille["belligerents"]))
-    pool = [b for b in bataille["belligerents"] if b != bonne] + rng.sample(memes, min(len(memes), 4)) + rng.sample(autres, min(len(autres), 3))
-    res = _choix(rng, bonne, pool)
-    if not res:
-        return None
-    choix, i = res
-    return QuizQuestion(
-        question=f"Qui remporte l'épisode « {etape['title']} » ?",
-        choix=choix, bonne_reponse=i, empire=cle, etape_id=etape["id"],
-        explication=f"{bonne} l'emporte. Issue : {bataille.get('outcome', 'victoire')}. ({_etiquette_annee(etape['year'])}, {etape['title']})",
-    )
-
-
-def _q_capitale(rng: random.Random, cle: str, emp: dict, etape: dict, villes: list[dict]) -> QuizQuestion | None:
-    an = etape["year"]
-    def capitale(v: dict, a: int) -> bool:
-        return any(c["empire"] == cle and c["from"] <= a <= c["to"] for c in v.get("capitalOf", []))
-    bonnes = [v for v in villes if capitale(v, an)]
-    if not bonnes:
-        return None
-    bonne = bonnes[0]
-    fausses = [v["modern"] for v in villes if not capitale(v, an) and v.get("rank", 9) <= 2]
-    rng.shuffle(fausses)
-    res = _choix(rng, bonne["modern"], fausses[:6])
-    if not res:
-        return None
-    choix, i = res
-    return QuizQuestion(
-        question=f"Quelle était la capitale de {emp['name']} en {_etiquette_annee(an)} ?",
-        choix=choix, bonne_reponse=i, empire=cle, etape_id=etape["id"],
-        explication=f"En {_etiquette_annee(an)}, la capitale est {bonne['modern']} (étape : {etape['title']}).",
-    )
-
-
-def _q_personnage(rng: random.Random, cle: str, emp: dict, perso: dict, tous: list[dict]) -> QuizQuestion | None:
-    etape = next((e for e in emp["steps"] if any(f.get("person") == perso["id"] for f in e.get("figures", []))), None)
-    if etape is None or not perso.get("title"):
-        return None
-    if any(m in tools._normaliser(perso["title"]) for m in tools._normaliser(perso["name"]).split() if len(m) > 3):
-        return None  # l'énoncé donnerait la réponse
-    memes = [p["name"] for p in tous if p["empire"] == cle and p["id"] != perso["id"]]
-    autres = [p["name"] for p in tous if p["empire"] != cle]
-    rng.shuffle(memes)
-    rng.shuffle(autres)
-    res = _choix(rng, perso["name"], memes[:3] + autres[:3])
-    if not res:
-        return None
-    choix, i = res
-    return QuizQuestion(
-        question=f"Quel personnage est décrit ainsi : « {perso['title']} » ?",
-        choix=choix, bonne_reponse=i, empire=cle, etape_id=etape["id"],
-        explication=f"Il s'agit de {perso['name']}, présent à l'étape « {etape['title']} » ({_etiquette_annee(etape['year'])}).",
-    )
-
-
-def quiz_hors_ligne(empire: str | None, n: int, graine: int | None = None) -> Quiz:
-    """Quiz fabriqué sans modèle depuis les données ; déterministe pour une graine donnée."""
-    empires = tools._empires()
-    if empire is not None and empire not in empires:
-        raise ValueError(f"Empire inconnu : {empire}")
-    rng = random.Random(graine if graine is not None else random.SystemRandom().randrange(2**31))
-    cles = [empire] if empire else sorted(empires)
-    villes = tools._villes()
-    tous = tools._personnages()
-    belligerants = {c: [b for e in empires[c]["steps"] for b in (e.get("battle") or {}).get("belligerents", [])] for c in empires}
-
-    piles: dict[str, list[QuizQuestion]] = {"annee": [], "bataille": [], "capitale": [], "personnage": []}
-    for cle in cles:
-        emp = empires[cle]
-        autres = sorted({b for c, bs in belligerants.items() if c != cle for b in bs})
-        etapes = list(emp["steps"])
-        rng.shuffle(etapes)
-        for etape in etapes:
-            for nom, q in (
-                ("annee", _q_annee(rng, cle, emp, etape)),
-                ("bataille", _q_bataille(rng, cle, emp, etape, autres)),
-                ("capitale", _q_capitale(rng, cle, emp, etape, villes)),
-            ):
-                if q:
-                    piles[nom].append(q)
-        persos = [p for p in tous if p["empire"] == cle]
-        rng.shuffle(persos)
-        for p in persos:
-            q = _q_personnage(rng, cle, emp, p, tous)
-            if q:
-                piles["personnage"].append(q)
-    for pile in piles.values():
-        rng.shuffle(pile)
-
-    # Tourniquet entre types, sans doublon d'étape tant que c'est possible.
-    ordre = list(piles)
-    questions: list[QuizQuestion] = []
-    etapes_vues: set[tuple[str, str]] = set()
-    for tolere_doublon in (False, True):
-        progres = True
-        while len(questions) < n and progres:
-            progres = False
-            for nom in ordre:
-                if len(questions) >= n:
-                    break
-                for k, q in enumerate(piles[nom]):
-                    cle_etape = (q.empire, q.etape_id)
-                    if tolere_doublon or cle_etape not in etapes_vues:
-                        etapes_vues.add(cle_etape)
-                        questions.append(piles[nom].pop(k))
-                        progres = True
-                        break
-    nom_quiz = empires[empire]["name"] if empire else "tous les empires"
-    return Quiz(titre=f"Quiz : {nom_quiz}", questions=questions)
-
-
 # ---------------------------------------------------------------- génération par le sage
 
 
@@ -316,17 +152,18 @@ async def _lancer_agent(texte: str) -> Quiz:
     return Quiz.model_validate(brut)
 
 
-async def generer_quiz(empire: str | None, theme: str | None, difficulte: str, n: int) -> tuple[Quiz, Literal["sage", "hors_ligne"]]:
-    """Le sage rédige le quiz ; au moindre échec (2 essais), repli sur le quiz hors ligne."""
+async def generer_quiz(empire: str | None, theme: str | None, difficulte: str, n: int) -> Quiz | None:
+    """Le sage rédige le quiz (2 essais) ; None s'il échoue : le navigateur fait alors le quiz hors ligne (src/quiz/offline.ts)."""
     erreurs: list[str] = []
     for _ in range(2):
         try:
             quiz = await _lancer_agent(_demande(empire, theme, difficulte, n, erreurs))
             erreurs = valider_quiz(quiz)
-            if not erreurs and len(quiz.questions) >= min(n, 3):
-                return quiz, "sage"
-            erreurs = erreurs or [f"Il faut {n} questions."]
-        except Exception as exc:  # clé absente, quota, réseau, JSON invalide… : on ne bloque jamais le visiteur
-            log.warning("Quiz par le sage impossible (%s) : repli hors ligne.", type(exc).__name__)
+            if not erreurs and len(quiz.questions) >= n:
+                quiz.questions = quiz.questions[:n]
+                return quiz
+            erreurs = erreurs or [f"Il faut {n} questions, pas {len(quiz.questions)}."]
+        except Exception as exc:  # clé absente, quota, réseau, JSON invalide…
+            log.warning("Quiz par le sage impossible (%s).", type(exc).__name__)
             break
-    return quiz_hors_ligne(empire, n), "hors_ligne"
+    return None
