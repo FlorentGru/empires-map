@@ -148,6 +148,35 @@ return valeur                        # Gemini, géré nativement par ADK (clé G
 - **Les autres fournisseurs** (Claude, GPT, modèles locaux…) passent par **LiteLLM**, un adaptateur qui traduit l'interface d'ADK vers leur API.
 - **Ce qui ne change pas** : l'instruction, les outils, le Runner, les sessions. Tout ton code métier est indépendant du fournisseur. C'est un argument fort en entreprise : on peut comparer les modèles ou en changer sans rien réécrire.
 
+**Ollama local** : `ATLAS_MODEL=ollama_chat/qwen3:8b` (adresse `OLLAMA_API_BASE`, défaut `http://localhost:11434`). Piège rencontré : un petit modèle envoie parfois les nombres en texte (`"1453"`). Les outils convertissent eux-mêmes (`_entier` dans `tools.py`) : **ne jamais faire confiance au type des arguments qu'envoie un modèle**.
+
+## 5 bis. Donner un personnage au sage : prompt système, persona et contexte
+
+**Vocabulaire.**
+- Le **prompt système** (dans ADK : `instruction`) est le texte que le modèle reçoit avant chaque conversation. Il fixe qui il est et ce qu'il a le droit de faire. L'utilisateur ne le voit jamais.
+- Une **persona** est la partie de ce prompt qui décrit un personnage : identité, façon de parler, vocabulaire interdit.
+- Le **harness** (« harnais ») est tout le code qui entoure le modèle : le serveur, les outils, la construction du prompt, la mémoire de session. Le modèle ne fait que prédire du texte, le harness décide de ce qu'il voit et de ce qu'on fait de ses réponses.
+- L'**injection de contexte** consiste à mettre dans le prompt des informations que le modèle n'a pas à chercher lui-même, ici ce que montre la carte.
+
+**Comment c'est construit** (`agent/atlas_agent/agent.py`) :
+1. **Deux couches dans `INSTRUCTION`** : d'abord le personnage (le Sage, qui tutoie, raconte en conteur et parle de « mes chroniques » et de « ma carte », jamais d'outils ni d'identifiants), puis les règles de travail (utiliser les outils, ne rien inventer, naviguer). Le personnage change la *forme*, les règles protègent le *fond*.
+2. **Un rappel à la fin** (« Rappel, même pour une réponse factuelle : tu es le Sage… ») : les modèles, surtout les petits, donnent plus de poids à la fin du prompt.
+3. **Une instruction dynamique** : `instruction` est une fonction appelée à chaque tour, qui ajoute « Ce que montre la carte en ce moment : … » lu dans l'état de la session (`ctx.state["carte"]`).
+4. **Le serveur pose cet état** (`agent/server.py`, `_decrire_carte`) : il passe `state_delta={"carte": …}` au Runner, avec le titre **et le résumé** de l'étape affichée.
+
+**Les erreurs corrigées, et pourquoi** :
+- *« L'utilisateur regarde actuellement… »* recopié dans les réponses. Le contexte était collé **dans le message de l'utilisateur**, alors le modèle le traitait comme une phrase de la conversation. Corrigé en le déplaçant **dans le prompt système**.
+- *« Que s'est-il passé ici ? »* sans réponse. Le modèle connaissait l'identifiant de l'étape mais ne pensait pas à la lire. Corrigé par le harness : le résumé est déjà dans le contexte. **Règle : ce que le code peut faire de façon sûre, ne le demande pas au modèle.**
+- *« Montre-moi Constantinople »* ne déplaçait plus la carte. Deux consignes se contredisaient (« propose de montrer » contre « montre »). Corrigé en marquant l'action PRIORITAIRE, placée avant la règle de proposition.
+
+**Méthode pour reproduire** (sur n'importe quel agent) :
+1. Écrire la persona en consignes concrètes et vérifiables (« tutoie », « pas d'émoji », « jamais d'identifiant »), pas en adjectifs vagues (« sois sympathique »).
+2. Tester toujours les mêmes questions avant et après chaque changement : salutation, question sur « ici », demande de navigation, question globale. Rejouer chaque question 2 ou 3 fois, car un LLM n'est pas déterministe.
+3. En cas d'échec, **regarder ce que le modèle reçoit vraiment** (espionner la fonction `instruction`) avant de modifier la consigne.
+4. Garder un test unitaire sur le prompt lui-même (`test_consigne_du_sage_avec_la_carte`).
+
+Limite connue avec `qwen3:8b` : ton parfois scolaire et quelques inventions (Lépante reliée à la guerre de Trente Ans). Un modèle plus gros suit mieux la persona et invente moins.
+
 ---
 
 ## 6. Sécurité

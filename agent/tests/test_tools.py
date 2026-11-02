@@ -110,3 +110,14 @@ def test_consigne_liste_tous_les_empires():
 
     for e in tools._empires().values():
         assert e["name"] in INSTRUCTION
+
+
+def test_consigne_du_sage_avec_la_carte():
+    from types import SimpleNamespace
+
+    from atlas_agent.agent import instruction
+
+    assert "en ce moment :" not in instruction(SimpleNamespace(state={}))
+    texte = instruction(SimpleNamespace(state={"carte": "Empire ottoman, 1566"}))
+    assert texte.endswith("Ce que montre la carte en ce moment : Empire ottoman, 1566")
+    assert "tutoies" in texte

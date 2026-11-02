@@ -63,17 +63,16 @@ async def chat(req: ChatRequest):
     if session is None:
         session = await session_service.create_session(app_name=APP_NAME, user_id=USER_ID, session_id=session_id)
 
-    texte = req.message
+    # Ce que la carte montre va dans le prompt système (state « carte »), pas dans le message : le modèle ne le récite plus.
     c = req.contexte
-    if c and (c.empire or c.titre):
-        texte = f"[L'utilisateur regarde actuellement : empire « {c.empire} », étape « {c.step} » ({c.titre}).]\n{texte}"
+    carte = _decrire_carte(c.empire, c.step) if c else ""
 
-    message = types.Content(role="user", parts=[types.Part(text=texte)])
+    message = types.Content(role="user", parts=[types.Part(text=req.message)])
     reponse, outils = "", []
     try:
-        # state_delta : remet à zéro les actions de ce tour avant l'exécution.
+        # state_delta : remet à zéro les actions de ce tour et met à jour ce que montre la carte.
         async for event in runner.run_async(
-            user_id=USER_ID, session_id=session_id, new_message=message, state_delta={"actions": []}
+            user_id=USER_ID, session_id=session_id, new_message=message, state_delta={"actions": [], "carte": carte}
         ):
             for appel in event.get_function_calls():
                 outils.append(appel.name)
@@ -88,6 +87,14 @@ async def chat(req: ChatRequest):
     session = await session_service.get_session(app_name=APP_NAME, user_id=USER_ID, session_id=session_id)
     actions = session.state.get("actions", []) if session else []
     return {"reponse": reponse, "actions": actions, "session_id": session_id, "outils_appeles": outils}
+
+
+def _decrire_carte(empire: str | None, step: str | None) -> str:
+    """Ce que montre la carte, avec le résumé de l'étape : le modèle n'a pas à appeler un outil pour comprendre « ici »."""
+    emp, etape = tools._trouver_etape(empire or "", step or "")
+    if not etape:
+        return f"empire « {empire} »" if emp else ""
+    return f"{emp['name']}, {tools._annee(etape['year'])} : « {etape['title']} » (empire {empire}, identifiant {step}). {etape.get('summary', '')}"
 
 
 # ---------------------------------------------------------------- quiz
