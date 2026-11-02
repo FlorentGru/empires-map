@@ -51,7 +51,7 @@ ADK (*Agent Development Kit*) est le framework open source de Google pour constr
 ```python
 root_agent = Agent(
     name="guide_atlas",
-    model=_choisir_modele(),          # « gemini-flash-latest » ou LiteLlm("anthropic/…")
+    model=_choisir_modele(),          # « gemini-flash-latest » ou LiteLlm("anthropic/…" / "ollama_chat/…")
     description="Guide de l'Atlas des Empires…",
     instruction=INSTRUCTION,          # le rôle et les règles, en français
     tools=OUTILS,                     # la liste des fonctions Python
@@ -140,7 +140,7 @@ Pour **voir ce trajet en direct**, lance `npm run agent:web`. C'est l'interface 
 
 ```python
 valeur = os.getenv("ATLAS_MODEL", "gemini-flash-latest")
-if valeur.startswith("anthropic/"):
+if "/" in valeur:  # anthropic/…, ollama_chat/… : LiteLLM
     return LiteLlm(model=valeur)    # Claude via LiteLLM (clé ANTHROPIC_API_KEY)
 return valeur                        # Gemini, géré nativement par ADK (clé GOOGLE_API_KEY)
 ```

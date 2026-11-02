@@ -76,3 +76,14 @@ def test_generer_quiz_exige_le_nombre_demande(monkeypatch):
     monkeypatch.setattr(qz, "_lancer_agent", agent)
     quiz = asyncio.run(qz.generer_quiz("rome", None, "moyen", 10))
     assert quiz is not None and len(quiz.questions) == 10  # 3 refusé, 12 coupé à 10
+
+
+def test_modele_avec_prefixe_passe_par_litellm(monkeypatch):
+    from google.adk.models.lite_llm import LiteLlm
+
+    from atlas_agent.agent import _choisir_modele
+
+    monkeypatch.setenv("ATLAS_MODEL", "ollama_chat/qwen3")
+    assert isinstance(_choisir_modele(), LiteLlm)
+    monkeypatch.setenv("ATLAS_MODEL", "gemini-flash-latest")
+    assert _choisir_modele() == "gemini-flash-latest"

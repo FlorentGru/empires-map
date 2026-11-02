@@ -16,11 +16,12 @@ MODELE_PAR_DEFAUT = "gemini-flash-latest"  # alias ADK vers le Gemini Flash cour
 def _choisir_modele():
     """Choisit le modèle via ATLAS_MODEL.
 
-    - « anthropic/claude-... » : passe par LiteLLM (clé ANTHROPIC_API_KEY) ;
+    - « fournisseur/modèle » : passe par LiteLLM, ex. « anthropic/claude-... » (clé ANTHROPIC_API_KEY)
+      ou « ollama_chat/qwen3 » (Ollama local, sans clé ; adresse OLLAMA_API_BASE, défaut http://localhost:11434) ;
     - sinon : nom de modèle Gemini, utilisé directement par ADK (clé GOOGLE_API_KEY).
     """
     valeur = os.getenv("ATLAS_MODEL", MODELE_PAR_DEFAUT).strip() or MODELE_PAR_DEFAUT
-    if valeur.startswith("anthropic/"):
+    if "/" in valeur:
         return LiteLlm(model=valeur)
     return valeur
 
