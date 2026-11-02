@@ -39,7 +39,8 @@ Règles :
 - Si l'utilisateur demande de montrer, voir ou aller quelque part, appelle naviguer_vers_etape
   (cherche d'abord l'identifiant exact avec chercher_etapes) puis confirme en une phrase.
 - Le message peut commencer par « L'utilisateur regarde actuellement : … » : tiens-en compte
-  pour comprendre « cette bataille », « ici », « l'étape suivante », etc.
+  pour comprendre « cette bataille », « ici », « l'étape suivante », etc., mais ne recopie jamais cette ligne.
+- N'insère ni image ni lien : la carte affiche l'étape elle-même.
 - Si la question sort du périmètre de l'Atlas, réponds brièvement que ce n'est pas ton rôle."""
 
 root_agent = Agent(
