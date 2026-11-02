@@ -89,3 +89,10 @@ def test_chercher_invention_papier_en_chine():
     assert r["inventions"], "le papier est une invention chinoise de l'Atlas"
     assert all(i["empire"] == "china" for i in r["inventions"])
     assert "erreur" in tools.chercher_invention("téléportation")
+
+
+def test_annee_en_texte_acceptee():
+    # Ollama (qwen3) envoie parfois l'année en texte : même résultat qu'avec un entier.
+    assert tools.chercher_evenement_mondial("", "1453") == tools.chercher_evenement_mondial("", 1453)
+    assert tools.profil_empire("ottomans", "1566") == tools.profil_empire("ottomans", 1566)
+    assert tools.chercher_evenement_mondial("peste", "") == tools.chercher_evenement_mondial("peste")

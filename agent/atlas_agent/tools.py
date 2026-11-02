@@ -49,6 +49,14 @@ def _normaliser(texte: str) -> str:
     return "".join(c for c in decompose if unicodedata.category(c) != "Mn")
 
 
+def _entier(valeur: int | str | None) -> int | None:
+    """Année reçue d'un modèle : certains (Ollama via LiteLLM) l'envoient en texte (« 1453 »). None si illisible."""
+    try:
+        return None if valeur is None or valeur == "" else int(valeur)
+    except (TypeError, ValueError):
+        return None
+
+
 def _annee(annee: int) -> str:
     return f"{-annee} av. J.-C." if annee < 0 else f"{annee}"
 
@@ -287,6 +295,7 @@ def chercher_evenement_mondial(requete: str = "", annee: int | None = None) -> d
         Les événements trouvés (au plus 5) : nom, type, années, bilan humain estimé avec fourchette et
         incertitude, description, sources ; plus, si `annee` est fournie, les routes et monuments de l'époque.
     """
+    annee = _entier(annee)
     cible = _normaliser(requete).strip()
     evenements = []
     for d in _donnees_monde("disasters"):
@@ -368,6 +377,7 @@ def profil_empire(empire: str, annee: int | None = None) -> dict:
         La période contenant l'année (ou la plus proche), avec ses estimations chiffrées (valeur, fourchette,
         année de référence, source) et ses descriptions ; sans année, la liste des périodes avec population.
     """
+    annee = _entier(annee)
     fichier = DOSSIER_EMPIRES / empire / "profile.json"
     if not fichier.exists():
         return {"erreur": f"Pas de profil pour l'empire « {empire} »."}

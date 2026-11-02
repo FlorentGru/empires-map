@@ -15,7 +15,7 @@ uv venv --python 3.12 agent/.venv && uv pip install --python agent/.venv/bin/pyt
 cp agent/.env.example agent/.env   # puis renseigner une clé
 ```
 
-Clés : Gemini sur <https://aistudio.google.com/apikey> (`GOOGLE_API_KEY`), Claude sur <https://console.anthropic.com/> (`ANTHROPIC_API_KEY`, avec `ATLAS_MODEL=anthropic/<modèle>`). Ollama local, sans clé : `ATLAS_MODEL=ollama_chat/<modèle>` (un modèle qui gère les outils : qwen3, llama3.1, mistral-small… ; `OLLAMA_API_BASE` si le serveur n'est pas sur `localhost:11434`).
+Clés : Gemini sur <https://aistudio.google.com/apikey> (`GOOGLE_API_KEY`), Claude sur <https://console.anthropic.com/> (`ANTHROPIC_API_KEY`, avec `ATLAS_MODEL=anthropic/<modèle>`). Ollama local, sans clé : `ATLAS_MODEL=ollama_chat/<modèle>` (testé avec `qwen3:8b` du conteneur Docker `ollama`, publié sur `127.0.0.1:11434` ; un modèle qui gère les outils : qwen3, llama3.1, mistral-small… ; `OLLAMA_API_BASE` si le serveur n'est pas sur `localhost:11434`).
 
 ## Utilisation
 
