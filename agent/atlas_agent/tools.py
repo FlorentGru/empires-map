@@ -122,6 +122,33 @@ def lister_empires() -> dict:
     }
 
 
+def resume_empire(empire: str) -> dict:
+    """Vue d'ensemble d'un empire : pour les questions globales (histoire, essor, apogée, déclin, causes, résumé).
+
+    Args:
+        empire: identifiant de l'empire (ex. « ottomans », « rome », « mongols ») ; voir lister_empires.
+
+    Returns:
+        Nom, dates, description, apogée, grandes périodes (nom, années, résumé) et liste des étapes
+        (id, année, titre, résumé court), à approfondir ensuite avec lire_etape.
+    """
+    e = _empires().get(empire)
+    if e is None:
+        return {"erreur": f"Empire « {empire} » inconnu.", "empires": list(_empires())}
+    return {
+        "nom": e["name"],
+        "debut": _annee(e["start"]),
+        "fin": _annee(e["end"]),
+        "description": e["description"],
+        "apogee": (e.get("apogee") or {}).get("note"),
+        "periodes": [
+            {"nom": p["name"], "debut": _annee(p["start"]), "fin": _annee(p["end"]), "resume": p.get("summary", "")}
+            for p in e.get("periods", [])
+        ],
+        "etapes": [{"id": s["id"], "annee": _annee(s["year"]), "titre": s["title"], "resume": s.get("summary", "")} for s in e["steps"]],
+    }
+
+
 def chercher_etapes(requete: str, empire: str = "") -> dict:
     """Cherche dans les étapes de la frise historique (titre, résumé, récit, bataille, personnages, armées).
 
@@ -417,4 +444,4 @@ def naviguer_vers_etape(empire: str, etape_id: str, tool_context: ToolContext) -
     return {"statut": "ok", "message": f"La carte va s'ouvrir sur « {etape['title']} » ({_annee(etape['year'])})."}
 
 
-OUTILS = [lister_empires, chercher_etapes, lire_etape, chercher_ville, chercher_personnage, chercher_evenement_mondial, profil_empire, chercher_invention, naviguer_vers_etape]
+OUTILS = [lister_empires, resume_empire, chercher_etapes, lire_etape, chercher_ville, chercher_personnage, chercher_evenement_mondial, profil_empire, chercher_invention, naviguer_vers_etape]

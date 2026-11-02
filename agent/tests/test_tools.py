@@ -51,7 +51,7 @@ def test_agent_se_construit():
     from atlas_agent.agent import root_agent
 
     assert root_agent.name == "guide_atlas"
-    assert len(root_agent.tools) == 9
+    assert len(root_agent.tools) == 10
 
 
 def test_chercher_personnage_trouve_cesar_et_ses_etapes():
@@ -96,3 +96,17 @@ def test_annee_en_texte_acceptee():
     assert tools.chercher_evenement_mondial("", "1453") == tools.chercher_evenement_mondial("", 1453)
     assert tools.profil_empire("ottomans", "1566") == tools.profil_empire("ottomans", 1566)
     assert tools.chercher_evenement_mondial("peste", "") == tools.chercher_evenement_mondial("peste")
+
+
+def test_resume_empire():
+    r = tools.resume_empire("ottomans")
+    assert r["nom"] == "Empire ottoman" and len(r["periodes"]) == 5 and len(r["etapes"]) == 25
+    assert all(p["resume"] for p in r["periodes"])
+    assert "erreur" in tools.resume_empire("atlantide")
+
+
+def test_consigne_liste_tous_les_empires():
+    from atlas_agent.agent import INSTRUCTION
+
+    for e in tools._empires().values():
+        assert e["name"] in INSTRUCTION
