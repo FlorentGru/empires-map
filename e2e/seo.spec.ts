@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 import { collectErrors } from './helpers';
 
-test('SEO : pages statiques lisibles sans JavaScript, puis la carte au même endroit', async ({ page, request }) => {
+test('SEO : pages statiques lisibles sans JavaScript, puis la carte au même endroit', async ({ browser, page, request }) => {
   test.setTimeout(150_000);
   // Ce que lit un robot : le HTML brut, sans exécuter de JavaScript.
   const res = await request.get('/rome/cannes-216/');
@@ -18,6 +18,23 @@ test('SEO : pages statiques lisibles sans JavaScript, puis la carte au même end
   const sitemap = await (await request.get('/sitemap.xml')).text();
   expect((sitemap.match(/<url>/g) ?? []).length).toBeGreaterThan(200);
   for (const file of ['/robots.txt', '/llms.txt', '/chine/', '/personnages/']) expect((await request.get(file)).ok(), file).toBe(true);
+
+  // Sans JavaScript : l'article est visible, l'écran de chargement reste masqué.
+  const noJs = await browser.newContext({ javaScriptEnabled: false });
+  const flat = await noJs.newPage();
+  await flat.goto('/rome/cannes-216/');
+  await expect(flat.getByRole('heading', { level: 1, name: 'Cannes, le désastre' })).toBeVisible();
+  await expect(flat.locator('.seo-splash')).toBeHidden();
+  await noJs.close();
+
+  // JavaScript actif mais l'application pas encore chargée (bundle bloqué) : écran de chargement, article masqué.
+  const loading = await browser.newPage();
+  await loading.route('**/assets/**/*.js', (r) => r.abort());
+  await loading.goto('/rome/cannes-216/');
+  await expect(loading.locator('.seo-splash')).toBeVisible();
+  await expect(loading.locator('.seo-page h1')).toHaveText('Cannes, le désastre'); // toujours dans le HTML
+  expect(await loading.locator('.seo-page').boundingBox()).toMatchObject({ width: 1, height: 1 }); // masqué visuellement
+  await loading.close();
 
   // Ce que voit un visiteur : la carte s'ouvre sur l'étape, et l'adresse et le titre suivent la navigation.
   const errors = collectErrors(page);

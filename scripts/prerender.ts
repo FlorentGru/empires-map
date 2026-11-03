@@ -91,8 +91,16 @@ interface Page {
   ld: object[];
 }
 
-/** Style minimal de l'article (affiché le temps du chargement de la carte, et sans JavaScript). */
-const STYLE = `<style>.seo-page{box-sizing:border-box;height:100%;overflow:auto;padding:24px 16px 48px;background:#f4ead3;color:#2b2219;font:16px/1.6 Georgia,'Times New Roman',serif}.seo-page>*{max-width:760px;margin-left:auto;margin-right:auto}.seo-page h1,.seo-page h2,.seo-page h3{font-family:'Cormorant Garamond',Georgia,serif}.seo-page h1{font-size:2.2rem;line-height:1.2;margin:.4em auto}.seo-page h2{font-size:1.35rem;margin:1.4em auto .4em}.seo-page h3{font-size:1.1rem;margin:1em auto .2em}.seo-page a{color:#7a2e1c}.seo-crumbs{font-size:.9rem}.seo-lead{font-size:1.1rem;font-style:italic}.seo-cta{display:inline-block;margin:.6em 0;padding:.4em 1em;background:#6d4c2a;color:#f4ead3!important;border-radius:6px;text-decoration:none}.seo-meta{color:#5c4a38;font-size:.95rem}</style>`;
+/**
+ * Style minimal de l'article, lisible sans JavaScript. Avec JavaScript (classe `js` posée par JS_FLAG avant le
+ * premier affichage), l'article est masqué visuellement mais reste dans le HTML (robots, aperçus de partage,
+ * lecteurs d'écran) et un écran de chargement le remplace jusqu'au premier rendu de React, qui vide #root.
+ */
+// Garde-fou : si l'application ne s'est pas affichée au bout de 12 s (script bloqué, réseau coupé), l'article revient.
+const JS_FLAG = `<script>document.documentElement.classList.add('js');setTimeout(function(){if(document.querySelector('.seo-splash'))document.documentElement.classList.remove('js')},12000)</script>`;
+const STYLE = `<style>.seo-splash{display:none}.js .seo-splash{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6em;background:#f4ead3;color:#2b2219;font:16px/1.4 Georgia,'Times New Roman',serif}.seo-splash__title{font-family:'Cormorant Garamond',Georgia,serif;font-size:2.4rem}.seo-splash__text{color:#5c4a38;font-style:italic}.seo-splash__bar{width:160px;height:3px;border-radius:3px;background:linear-gradient(90deg,transparent,#7a2e1c,transparent) 0 0/50% 100% no-repeat #e3d3b0;animation:seo-load 1.2s ease-in-out infinite}@keyframes seo-load{from{background-position:-80px 0}to{background-position:160px 0}}@media (prefers-reduced-motion:reduce){.seo-splash__bar{animation:none}}.js .seo-page{position:absolute;width:1px;height:1px;padding:0;margin:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.seo-page{box-sizing:border-box;height:100%;overflow:auto;padding:24px 16px 48px;background:#f4ead3;color:#2b2219;font:16px/1.6 Georgia,'Times New Roman',serif}.seo-page>*{max-width:760px;margin-left:auto;margin-right:auto}.seo-page h1,.seo-page h2,.seo-page h3{font-family:'Cormorant Garamond',Georgia,serif}.seo-page h1{font-size:2.2rem;line-height:1.2;margin:.4em auto}.seo-page h2{font-size:1.35rem;margin:1.4em auto .4em}.seo-page h3{font-size:1.1rem;margin:1em auto .2em}.seo-page a{color:#7a2e1c}.seo-crumbs{font-size:.9rem}.seo-lead{font-size:1.1rem;font-style:italic}.seo-cta{display:inline-block;margin:.6em 0;padding:.4em 1em;background:#6d4c2a;color:#f4ead3!important;border-radius:6px;text-decoration:none}.seo-meta{color:#5c4a38;font-size:.95rem}</style>`;
+
+const SPLASH = `<div class="seo-splash" aria-hidden="true"><span class="seo-splash__title">${SITE_NAME}</span><span class="seo-splash__text">Chargement de la carte…</span><span class="seo-splash__bar"></span></div>`;
 
 function render(page: Page): string {
   const canonical = abs(page.route);
@@ -112,13 +120,14 @@ function render(page: Page): string {
     `<meta name="twitter:description" content="${esc(page.description)}" />`,
     `<meta name="twitter:image" content="${page.image}" />`,
     `<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@graph': page.ld }).replace(/</g, '\\u003c')}</script>`,
+    JS_FLAG,
     STYLE,
   ].join('\n    ');
   return template
     .replace(/<title>[^<]*<\/title>/, `<title>${esc(page.title)}</title>`)
     .replace(/<meta name="description" content="[^"]*" \/>/, `<meta name="description" content="${esc(page.description)}" />`)
     .replace('</head>', `    ${head}\n  </head>`)
-    .replace('<div id="root"></div>', `<div id="root"><main class="seo-page">${page.body}</main></div>`);
+    .replace('<div id="root"></div>', `<div id="root">${SPLASH}<main class="seo-page">${page.body}</main></div>`);
 }
 
 function write(page: Page) {
