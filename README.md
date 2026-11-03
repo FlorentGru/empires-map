@@ -1,140 +1,197 @@
+<div align="center">
+
 # Atlas des Empires
 
+**An interactive atlas that brings history's great empires to life: borders that glide year by year, marching armies, playable battles and an AI historian you can talk to.**
+
+[![Live demo](https://img.shields.io/badge/live%20demo-florentgru.github.io%2Fempires--map-8b2e2e?style=flat-square)](https://florentgru.github.io/empires-map/)
 [![CI](https://github.com/FlorentGru/empires-map/actions/workflows/ci.yml/badge.svg)](https://github.com/FlorentGru/empires-map/actions/workflows/ci.yml)
+[![Deploy](https://github.com/FlorentGru/empires-map/actions/workflows/pages.yml/badge.svg)](https://github.com/FlorentGru/empires-map/actions/workflows/pages.yml)
+[![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue?style=flat-square)](LICENSE)
 
-Un planisphère interactif pour voir l'évolution des grands empires de l'histoire. Choisis un empire, appuie sur **Play** et regarde ses frontières évoluer d'une date clé à la suivante : batailles, traités, réformes, chutes. Chaque étape est accompagnée d'une explication détaillée.
+![React](https://img.shields.io/badge/React_19-20232a?style=flat-square&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?style=flat-square&logo=typescript&logoColor=white)
+![MapLibre](https://img.shields.io/badge/MapLibre_GL-WebGL-396cb2?style=flat-square)
+![Google ADK](https://img.shields.io/badge/Google_ADK-AI_agent-4285f4?style=flat-square&logo=google&logoColor=white)
+![Playwright](https://img.shields.io/badge/tested_with-Playwright-2ead33?style=flat-square&logo=playwright&logoColor=white)
 
-Empires disponibles : **l'Empire d'Alexandre le Grand** (336 → 323 av. J.-C.), **Rome** (509 av. J.-C. → 1453), **la Chine** (-1600 → 1912), **l'Empire mongol** (1206 → 1368), **l'Empire espagnol** (1492 → 1976), **l'Empire carolingien** (751 → 888), **le Saint-Empire romain germanique** (962 → 1806), **l'Empire ottoman** (1299 → 1922) et **l'Empire napoléonien** (1799 → 1815). Site en ligne : https://florentgru.github.io/empires-map/ Le sélecteur liste, par continent, les plus vastes et les plus célèbres empires de l’histoire, à remplir au fil du projet.
+**[▶ Open the live atlas](https://florentgru.github.io/empires-map/)**
 
-## Fonctionnalités
+![Napoleon's empire in 1805: the Grande Armée marches on Austerlitz across a 3D relief map, with the story panel and the timeline](docs/images/hero.png)
 
-- Carte 2D inclinée avec relief 3D (désactivable) et vue à plat
-- Fondu entre les frontières, avec surbrillance des zones gagnées (vert) et perdues (rouge)
-- Frise chronologique cliquable, lecture automatique, vitesse ×0,5 à ×2, raccourcis clavier (Espace, ←, →)
-- Panneau d'explication : récit, conséquences, fiche bataille, sources
-- Page « Tous les empires » (`?empires=1`) : frise de tous les empires du catalogue (disponibles en couleur, à venir grisés), filtre par continent, résumé au clic (apogée, périodes, moments clés, personnages, inventions, héritage) et résumé rédigé par le sage
-- « ▶ Voir la bataille » : une fenêtre animée simule la bataille avec les figurines et couleurs de chaque peuple, à l'échelle (1 figurine ≈ N hommes) ; scénario historique (formations, manœuvres, terrain) pour 12 grandes batailles (Cannes, Gaugamèles, Austerlitz, Waterloo…), simulation schématique pour quelques autres
-- Mode « 🎯 Devine la suite » : avant chaque étape, une question à choix sur ce qui arrive (vainqueur, événement, année, territoire), avec score (`&guess=1`)
-- Armées animées qui marchent depuis leur ville de départ, fiches de bataille, personnages avec leur citation
-- Mode Histoire : l'empire raconté étape par étape par un narrateur
-- Régions survolables et cliquables (royaumes vassaux, provinces, dynasties rivales), avec une courte explication
-- Calques de l'époque : 87 monuments (dont les 7 merveilles du monde antique), inventions, 24 routes commerciales, 48 catastrophes et guerres, empires contemporains et capitales des voisins
-- Galerie des personnages illustres, des monuments et des inventions
-- Vue « Le monde en l'an X » (`?world=1&year=…`) : tous les empires à une même date
-- Comparaison de deux empires côte à côte (`?compare=rome,china`)
-- Quiz du sage (rédigé par l'IA) ou quiz hors ligne
-- 222 villes avec leur nom d'époque et leur nom actuel, capitales selon la date
-- Légende, liens partageables et lisibles (`/rome/zama-202/`, `/monuments/` ; les anciens liens `?empire=&step=` marchent encore), formulaire « Votre avis », interface adaptée au mobile
+</div>
 
-## Tests
+> The interface and the historical content are in **French**.
 
-Un test par grosse fonctionnalité, pas un test par détail :
-- `npm test` : logique centrale (Vitest) : années, périodes, armées et marches, comparaison, événements du monde, piles, quiz hors ligne.
-- `npm run test:data` : validation de toutes les données, un contrôle groupé par fichier qui liste toutes les erreurs d'un coup.
-- `npm run test:e2e` : 17 parcours dans Chromium (Playwright), un par fonctionnalité (carte, armées, galerie, comparaison, monde en l'an X, quiz, sage, calques de l'époque…) ; première fois : `npx playwright install chromium`. Ils construisent le site puis le servent sur le port 4173.
-- Un seul test : `npx vitest run tests/unit/march.test.ts -t "<nom>"` ou `npx playwright test e2e/map.spec.ts -g "<nom>"`.
-- `npm run check:bundle` : vérifie que le JavaScript chargé au démarrage reste sous 460 Ko (gzip ; les SVG des figurines sont chargés à la demande, `src/map/sprites.ts`).
-- `npm run lint` (oxlint) et `npm run format` / `format:check` (Prettier) : style du code.
-- Le CI GitHub Actions lance en parallèle les contrôles rapides (types, style, tests unitaires et de données) et les tests dans le navigateur.
+## At a glance
 
-## Lancer le projet
+| 9 empires | 274 key moments | 29 playable battles | 128 historical figures | 283 cities |
+|:-:|:-:|:-:|:-:|:-:|
+| from Alexander the Great to the Ottomans | battles, treaties, reforms, falls | 21 with a historical battle plan | biographies and quotes | with their period and modern names |
 
-Première installation (une seule fois) :
+**Empires:** Alexander the Great · Rome (509 BC – 1453) · China (1600 BC – 1912) · the Mongol Empire · the Carolingians · the Holy Roman Empire · the Spanish Empire · the Ottoman Empire · Napoleon's Empire.
 
-```bash
-cd ~/projects/empires-map
-npm install
-```
+## Features
 
-Ensuite, au choix :
+**A living map**
+- Borders **glide continuously** from one date to the next, with gained land in green and lost land in red, on a tilted 3D relief map (or a flat 2D view).
+- Armies march from their home city to the battlefield; historical figures appear with their famous quotes.
+- Hoverable regions (vassal kingdoms, provinces, rival dynasties), neighbors of the period, contemporary empires and their capitals.
+- Period layers: 87 monuments (including the Seven Wonders of the Ancient World), 92 inventions, 24 trade routes, 48 epidemics, disasters and wars.
 
-| Méthode | Commande | Quand l'utiliser |
-|---|---|---|
-| **Dans un terminal** (le plus fiable) | `npm start` | Démarre le serveur et ouvre le navigateur sur http://localhost:5173. Il tourne tant que le terminal reste ouvert. |
-| **Depuis Claude** | dire « lance le serveur » | Claude démarre la configuration `dev` de `.claude/launch.json`, ou réutilise le serveur s'il tourne déjà, et ouvre le panneau navigateur. Le serveur s'arrête avec la session. |
-| **Version de production** | `npm run build && npm run preview` | Tester le site optimisé sur http://localhost:4173. |
+**Storytelling**
+- A clickable timeline with autoplay (×0.5 to ×2) and keyboard shortcuts.
+- Each moment comes with a narrative, its consequences, a battle card and sources.
+- **Story mode**: a narrator tells the empire's history step by step.
+- **Guess what happens next**: a multiple-choice question before each step, with a score.
 
-> Le panneau navigateur intégré à Claude ralentit l'affichage (environ 1 image/s) quand il n'a pas le focus : pour juger la fluidité, ouvrir http://localhost:5173 dans son propre navigateur. Ajouter `?debug=1` à l'URL affiche le compteur d'images par seconde (et, pendant un glissement de frontière, la pire image et le nombre d'images lentes).
+**Battles**
+- **"Watch the battle"**: an animated canvas replays the battle with each army's colors and troops, at scale (1 figure ≈ N men).
+- Historical formations (phalanx, testudo, tercio, square…), cavalry, elephants, artillery and musket fire, terrain and weather. Naval battles too (Actium, the Armada, Trafalgar…).
 
-Si la page ne s'affiche pas, c'est presque toujours que le serveur n'est pas lancé : relancer `npm start`. Si le port 5173 est déjà pris, un ancien serveur tourne encore : le fermer, ou utiliser l'adresse qu'il affiche.
+**Explore and compare**
+- **The world in year X**: every empire of the atlas at the same date.
+- **Compare two empires** side by side: maps, population, economy, army, culture.
+- Galleries of historical figures, monuments, inventions and battle units.
+- Readable, shareable URLs (`/rome/zama-202/`), mobile layout with a bottom sheet.
 
-### Régénérer les données de frontières
+**An AI historian: the Sage**
+- Ask questions in natural language: the Sage answers **only from the project's data**, and can move the map ("Show me Austerlitz").
+- AI-written quizzes, with an offline fallback generated in the browser.
 
-```bash
-npm run fetch:data   # télécharge historical-basemaps et Natural Earth dans .cache/
-npm run build:data   # tous les empires : territoires, diffs, animations (SDF), fond de carte
-npm run build:data:napoleon   # un seul empire (rome, napoleon, china, mongols, espagne, saint-empire, carolingiens, alexandre)
-```
+## Gallery
 
-Les corrections historiques des frontières se trouvent dans `overrides/<empire>/` : des polygones par étape et, pour les cartes composées région par région, `_carto.json`. Relancer le serveur Vite après une régénération.
+| | |
+|:-:|:-:|
+| ![The world in 1279: the Mongol Empire, Song China, Byzantium and the Holy Roman Empire, with trade routes and monuments](docs/images/world.png) | ![Battle of Cannae, 216 BC: Hannibal's crescent formation in the animated battle replay](docs/images/battle.png) |
+| **The world in year X**: 1279, every empire at once | **Watch the battle**: Cannae, 216 BC |
+| ![Rome under Trajan compared with Qing China at their peak](docs/images/compare.png) | ![The Sage answers a question about Austerlitz and moves the map there](docs/images/sage.png) |
+| **Compare two empires**: Rome and China at their peak | **The Sage**: an AI agent that answers and drives the map |
 
-### Référencement (SEO)
+## Tech stack
 
-`npm run build` pré-rend 262 pages HTML (accueil, empires, étapes, pages de synthèse `/empires/`, `/monuments/`, `/personnages/`, `/inventions/`) avec leurs balises, Open Graph et JSON-LD, ainsi que `sitemap.xml`, `robots.txt`, `llms.txt` et une page 404. Les images de partage et les icônes se régénèrent avec `npm run build:og` (PNG commités dans `public/og/`).
-
-## Lancer l'Atlas gratuitement
-
-Aucun serveur payant n'est nécessaire : l'Atlas est un site statique (HTML, JS, données), et le sage tourne sur ton propre PC.
-
-### Sur ton PC (Linux, macOS ou Windows)
-1. Installer **Node.js LTS** (gratuit, [nodejs.org](https://nodejs.org)) et **Git**.
-2. Récupérer le projet : `git clone https://github.com/FlorentGru/empires-map.git`, puis `cd empires-map` (ou `git pull` s'il est déjà là).
-3. Installer les dépendances (une fois, puis après chaque mise à jour) : `npm ci`.
-4. Lancer : `npm run serve`, puis ouvrir **http://localhost:4173**.
-   - Le serveur écoute aussi sur le réseau local : depuis un téléphone ou une tablette sur le même Wi-Fi, ouvrir `http://<adresse-IP-du-PC>:4173` (Windows : `ipconfig` ; Linux : `ip addr`). Le pare-feu peut demander l'autorisation la première fois.
-   - Pour développer (rechargement à chaud) : `npm run dev`, puis http://localhost:5173.
-5. Facultatif, le **sage** (chatbot et quiz rédigé par l'IA) : dans un second terminal, `npm run agent` (Python 3.12 et une clé d'API dans `agent/.env`, voir [agent/README.md](agent/README.md)).
-
-Arrêter le serveur : `Ctrl+C` dans le terminal.
-
-### En ligne, gratuitement, avec GitHub Pages
-Le workflow [.github/workflows/pages.yml](.github/workflows/pages.yml) construit et publie l'Atlas à chaque push sur `main`, à l'adresse `https://<compte>.github.io/empires-map/`.
-- **Activation (une seule fois)** : sur GitHub, dépôt → **Settings** → **Pages** → *Build and deployment* → **Source : GitHub Actions**. Le prochain push (ou *Actions → Pages → Run workflow*) publie le site.
-- **Limites de la version en ligne** : le sage et le quiz rédigé par l'IA n'y sont pas (ils ont besoin du serveur Python et d'une clé, qu'on ne publie jamais). Le **quiz hors ligne**, la carte et tout le reste fonctionnent.
-
-## Structure
-
-| Dossier | Contenu |
+| Layer | Technologies |
 |---|---|
-| `src/` | Application React + MapLibre GL (carte, frise, lecteur, panneaux) |
-| `src/types.ts` | Contrat de données (empire, étape, ville, diff) |
-| `data/empires/<id>/` | Un dossier par empire : étapes (`timeline.json`), personnages, profil, inventions, régions |
-| `data/*.json` | Villes, monuments, routes, catastrophes, capitales des voisins |
-| `scripts/` | Pipeline géographique (extraction, overrides, diffs, champs de distance, contrôles), pré-rendu SEO |
-| `overrides/` | Corrections manuelles des frontières, étape par étape |
-| `public/data/` | Données générées, servies au navigateur |
-| `build/` | Plugin Vite qui fabrique l'index des empires, chargés ensuite à la demande |
-| `agent/` | Le sage : agent Google ADK en Python |
-| `tests/`, `e2e/` | Tests unitaires et de données (Vitest), parcours dans le navigateur (Playwright) |
+| Front end | React 19, TypeScript (strict), Vite 8 |
+| Map rendering | MapLibre GL JS 6 (WebGL), 3D terrain, custom WebGL layer and GLSL shader |
+| Geo pipeline | Node + TypeScript scripts, Turf.js, signed distance fields baked into PNGs |
+| AI agent | Python, Google ADK, FastAPI; Gemini, Claude (via LiteLLM) or a local Ollama model |
+| Quality | Vitest, Playwright, oxlint, Prettier, pytest, GitHub Actions |
+| Hosting | GitHub Pages (static build, deployed on every push to `main`), 288 prerendered pages |
 
-Pour ajouter un empire, il suffit d'ajouter un dossier dans `data/empires/` (avec `timeline.json`, `people.json`, `profile.json`, `inventions.json` et `regions.json`) et ses territoires : le code n'a pas besoin de changer. Avec Claude Code, le skill `ajouter-un-empire` guide tout le processus.
+## How it works
 
-## Feuille de route
-
-- Nouveaux empires : Perse achéménide, Empire britannique…
-- Gamification : « devine la frontière », succès
-- Rejouer les grandes batailles
-
-## Guide conversationnel (agent IA)
-
-Un chatbot construit avec **Google ADK** (Python) répond aux questions sur l'histoire des empires à partir des données du projet et peut déplacer la carte (« Montre-moi Austerlitz »). Il fonctionne avec Gemini ou Claude.
-
-```bash
-cp agent/.env.example agent/.env   # y mettre une clé Google AI Studio ou Anthropic
-npm run agent                      # serveur de l'agent (port 8000), à côté de npm start
+```mermaid
+flowchart LR
+  A[historical-basemaps<br/>Natural Earth] --> B[Build scripts<br/>clip · simplify · diff · SDF]
+  O[Manual border fixes<br/>overrides/] --> B
+  D[Historical data<br/>data/empires/*] --> B
+  B --> P[public/data<br/>GeoJSON + distance fields]
+  P --> W[React + MapLibre app]
+  D --> W
+  W <-->|/api/chat · /api/quiz| S[The Sage<br/>Python · Google ADK]
+  S --> D
+  S <--> L[LLM<br/>Gemini · Claude · Ollama]
 ```
 
-Explications complètes, pour apprendre à construire un agent : [docs/AGENT.md](docs/AGENT.md).
+Some engineering choices worth a look:
 
-## Documentation
+- **Gliding borders with distance fields.** For each transition, a build script rasterizes the old and new borders into a signed distance field (SDF) and computes when each pixel is reached. In the browser, a fragment shader only receives one number per frame, the progress `p`, so the front advances pixel by pixel at 60 fps. The shader runs as a **MapLibre custom layer** draped onto the 3D terrain.
+- **Heavy geometry at build time, never in the browser.** Clipping, simplification, diffs and SDFs are precomputed. Empires are discovered from their data folder: adding one needs no code change.
+- **Performance budget.** Empires, sprites and the battle engine are loaded on demand; the initial JavaScript is checked in CI to stay under **460 KB gzipped**. Animations never touch React state or rebuild map data per frame.
+- **Static first, SEO included.** The build prerenders 288 HTML pages (empires, steps, galleries) with Open Graph, JSON-LD, a sitemap and `llms.txt`, so the atlas is readable without JavaScript.
 
-Le fonctionnement détaillé (pipeline géographique, animation des frontières par champs de distance, performances, organisation en agents) est expliqué dans [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+Full write-up (in French): [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
-## Crédits et licence
+## The Sage: an AI agent built with Google ADK
 
-- Frontières historiques : [historical-basemaps](https://github.com/aourednik/historical-basemaps) © A. Ourednik, sous licence GPL-3.0
-- Terres : [Natural Earth](https://www.naturalearthdata.com/), domaine public
-- Relief : Mapzen / AWS Terrain Tiles
-- Carte : [MapLibre GL JS](https://maplibre.org/)
+The Sage is a conversational agent written in Python with [Google ADK](https://google.github.io/adk-docs/). It is designed so that the model **never answers from memory**:
 
-Les données de frontières dérivent de historical-basemaps, c'est pourquoi le projet est distribué sous **GPL-3.0** (voir `LICENSE`).
+- **10 tools** read the project's data: search steps, read a step, summarize an empire, find a city, a person, an invention, a world event or an empire profile. Data never goes into the prompt; tools return only what is needed.
+- **The agent proposes, the UI executes.** `naviguer_vers_etape` only records a validated action in the session state; the browser performs the map move.
+- **A persona and a dynamic system prompt.** The Sage is an old chronicler; what the map currently shows is injected into the system prompt on every turn.
+- **Multi-agent quiz.** A researcher agent with tools gathers facts, then a writer agent produces a quiz as **structured output** (Pydantic schema), validated against the data, retried once, with an offline fallback.
+- **An LLM judge.** A verification pipeline checks the atlas's dates and places against Wikipedia, grounded on retrieved passages, and writes a report for human review.
+- **Model-agnostic.** Gemini natively, Claude or a local Ollama model through LiteLLM, selected with one environment variable.
+
+The online version is static, so the Sage only runs locally (it needs a server and an API key). How it is built, step by step (in French): [docs/AGENT.md](docs/AGENT.md).
+
+## Quality
+
+| Check | Command | What it covers |
+|---|---|---|
+| Types and style | `npm run typecheck`, `npm run lint`, `npm run format:check` | strict TypeScript, oxlint, Prettier |
+| Unit tests | `npm test` | years, periods, army marches, comparisons, world events, offline quiz… |
+| Data validation | `npm run test:data` | every timeline, territory, diff, SDF, city and catalog entry |
+| End-to-end | `npm run test:e2e` | 18 user journeys in Chromium (Playwright) |
+| Bundle budget | `npm run check:bundle` | initial JavaScript under 460 KB gzipped |
+| Agent | `npm run agent:test` | 38 pytest tests, no model or API key needed |
+
+GitHub Actions runs all of these on every push to `main` and on pull requests, then deploys the static site to GitHub Pages.
+
+## Getting started
+
+Requirements: **Node.js LTS** and Git. Python 3.12 only for the optional Sage.
+
+```bash
+git clone https://github.com/FlorentGru/empires-map.git
+cd empires-map
+npm ci
+npm run dev        # development server with hot reload: http://localhost:5173
+npm run serve      # production build: http://localhost:4173 (also reachable from your local network)
+```
+
+Add `?debug=1` to the URL to display a frame-rate counter.
+
+**Optional: the Sage** (see [agent/README.md](agent/README.md)):
+
+```bash
+python3.12 -m venv agent/.venv && agent/.venv/bin/pip install -r agent/requirements.txt
+cp agent/.env.example agent/.env   # then add your own Gemini or Anthropic key, or pick a local Ollama model
+npm run agent                      # agent server on port 8000, next to npm run dev
+```
+
+**Rebuilding the border data:**
+
+```bash
+npm run fetch:data            # downloads historical-basemaps and Natural Earth into .cache/
+npm run build:data            # every empire: territories, diffs, distance fields, neighbors
+npm run build:data:ottomans   # a single empire: rome, napoleon, china, mongols, espagne,
+                              # saint-empire, carolingiens, alexandre, ottomans
+```
+
+Restart the dev server after regenerating `public/data`.
+
+## Project structure
+
+| Path | Contents |
+|---|---|
+| `src/` | React + MapLibre app: map layers, timeline, player, panels, battles, quiz, Sage chat |
+| `src/types.ts` | Data contract (empire, step, city, army, figure…) |
+| `data/empires/<id>/` | One folder per empire: `timeline.json`, `people.json`, `profile.json`, `inventions.json`, `regions.json` |
+| `data/` | Cities, monuments, trade routes, disasters, battles, neighbor capitals |
+| `scripts/` | Geo pipeline (extraction, overrides, diffs, distance fields), prerendering, checks |
+| `overrides/` | Hand-made border corrections, step by step |
+| `public/data/` | Generated data served to the browser |
+| `agent/` | The Sage: Python, Google ADK, FastAPI |
+| `tests/`, `e2e/` | Vitest unit and data tests, Playwright journeys |
+| `docs/` | Architecture and agent documentation (French), screenshots |
+
+**Adding an empire** only takes a new folder in `data/empires/` and its borders; the app picks it up automatically. With Claude Code, the `ajouter-un-empire` skill guides the whole process (historian research, maps, figures, tests).
+
+## Roadmap
+
+- More empires: Achaemenid Persia, the British Empire…
+- More game modes: "guess the border", achievements.
+- More historical battle plans.
+
+## Credits and license
+
+- Historical borders: [historical-basemaps](https://github.com/aourednik/historical-basemaps) © A. Ourednik, GPL-3.0
+- Land: [Natural Earth](https://www.naturalearthdata.com/), public domain
+- Terrain: Mapzen / AWS Terrain Tiles
+- Map engine: [MapLibre GL JS](https://maplibre.org/)
+
+Because the border data derives from historical-basemaps, this project is distributed under the **GPL-3.0** license (see [LICENSE](LICENSE)).
+
+Built by [Florent Gru](https://github.com/FlorentGru).

@@ -8,7 +8,7 @@ Chargé automatiquement au début de chaque session Claude Code, sur toutes les 
 
 ## Le projet
 Carte interactive (React + Vite + TS strict + MapLibre GL, relief 3D) qui montre étape par étape l'évolution d'empires : frontières qui glissent (SDF + shader en custom layer), batailles, armées, personnages, mode Histoire narré, chatbot ADK.
-- Architecture : `docs/ARCHITECTURE.md`. Agent ADK (Python, `agent/`) : `docs/AGENT.md`. Lancement et tests : `README.md`.
+- Architecture : `docs/ARCHITECTURE.md`. Agent ADK (Python, `agent/`) : `docs/AGENT.md`. Lancement et tests : `README.md` (vitrine publique, **en anglais**, captures dans `docs/images/` ; garder ses chiffres à jour).
 - Contrat de données : `src/types.ts`. Données : `data/empires/<id>/timeline.json`, `data/cities.json`, pipeline géo `scripts/` → `public/data/empires/<id>/`.
 - Ajouter un empire : skill `.claude/skills/ajouter-un-empire/` (historien, puis carte + front + figurines). Un nouvel empire doit aussi avoir `people.json`, `profile.json`, `inventions.json` et `regions.json`.
 - Principe : tout calcul géométrique coûteux (découpe, simplification, diffs, SDF) se fait au build dans `scripts/`, jamais dans le navigateur. Un empire est détecté automatiquement depuis son dossier `data/empires/<id>/` (pas de code à changer).
