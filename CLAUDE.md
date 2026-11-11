@@ -28,6 +28,7 @@ Carte interactive (React + Vite + TS strict + MapLibre GL, relief 3D) qui montre
 
 ## Règles de travail
 - Répondre en français. L'utilisateur se forme au métier d'ingénieur IA : expliquer les choix.
+- Suivi GitHub : chaque évolution a une issue (labels `carte`, `données`, `empire`, `agent`, `bataille`, `site`, `mobile`, `tests-ci`, `bug`, `documentation`) dans le project https://github.com/users/FlorentGru/projects/2 (colonnes À faire / En cours / En attente / Fait, champ Date = jour de réalisation). Au début : créer ou reprendre l'issue et passer sa carte « En cours » ; commits qui citent `#N`, le dernier avec `Closes #N` ; à la fin : carte « Fait » et Date. Historique avant le 2026-11-11 reconstitué dans les issues #4 à #51.
 - Commit + push après chaque changement, mais **jamais un commit qui casse la CI** (Florent reçoit un e-mail à chaque échec) : vérifier typecheck + tests en local avant de pousser. CI GitHub seulement sur `main` et les PR.
 - Toute nouvelle vue ou page indexable passe par `src/lib/seo.ts` (adresse, titre, description) et `scripts/prerender.ts` (page statique + sitemap).
 - Ne jamais créer, lire ni manipuler de clé API (l'utilisateur la met lui-même dans `agent/.env`).
