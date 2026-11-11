@@ -21,7 +21,7 @@ Méthode éprouvée sur Rome, l'Empire napoléonien et la Chine. Le but est un r
 Si ce n'est pas déjà décidé, demande avec `AskUserQuestion` : période couverte (bornes), découpage en grandes périodes si l'empire dépasse ~300 ans, une frise unique ou plusieurs. Propose une recommandation.
 Récupère l'`id` dans `data/empires-catalog.json` (l'empire devient « disponible » dès que `data/empires/<id>/timeline.json` existe).
 
-Suivi : crée l'issue « Empire <nom> » (label `empire`) ou reprends-la depuis « Prochains empires du catalogue », ajoute-la au project n° 2 et passe-la « En cours » (`gh project item-add 2 --owner @me --url <issue>` puis `gh project item-edit`). Les commits citent `#N` (« Ottomans 1/3 (#N): … »), le dernier `Closes #N` ; à la fin, carte « Fait » avec la Date.
+Suivi : chaque empire du catalogue a déjà son issue (label `empire`, sous-issue de #57 « Prochains empires du catalogue », liste de livrables à cocher) : reprends-la (`gh issue list --label empire`) et passe sa carte du project n° 2 « En cours » (`gh project item-edit`). Pour un empire hors catalogue, crée-la sur le même modèle. Les commits citent `#N` (« Ottomans 1/3 (#N): … »), le dernier `Closes #N` ; à la fin, carte « Fait » avec la Date.
 
 ### 1. Contrat (toi)
 Dans `src/types.ts` :
