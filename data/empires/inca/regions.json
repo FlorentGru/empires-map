@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Empire inca",
+    "summary": "Le Tawantinsuyu, « les quatre parties réunies » en quechua : parti du petit bassin de Cuzco vers 1438, il s'étend en moins d'un siècle de l'actuelle Colombie au centre du Chili. Le Sapa Inca y règne depuis Cuzco grâce à un réseau de routes, de relais et d'entrepôts, et en déplaçant des populations entières.",
+    "years": [1438, 1533]
+  },
+  {
+    "name": "Royaume de Chincha",
+    "summary": "Riche seigneurie de la côte sud-centrale du Pérou, célèbre pour ses marchands qui commercent par mer et par caravanes. Elle se rallie aux Incas sans combattre et garde une large autonomie : son seigneur est le seul, dit-on, à être porté en litière comme l'Inca. Elle est ensuite intégrée à l'empire.",
+    "years": [1470, 1500]
+  },
+  {
+    "name": "Côte de Tumbes",
+    "summary": "Port de la côte nord, face au golfe de Guayaquil, où abordent les embarcations de balsa venues de l'Équateur. Soumis par Topa Inca, il verse tribut avant d'être intégré à l'empire. C'est là que Pizarro débarque en 1532 pour commencer la conquête.",
+    "years": [1480, 1493]
+  }
+]

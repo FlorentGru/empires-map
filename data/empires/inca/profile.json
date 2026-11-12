@@ -1,0 +1,522 @@
+{
+  "empire": "inca",
+  "periods": [
+    {
+      "id": "pachacutec",
+      "name": "Pachacutec, le réformateur du monde",
+      "start": 1438,
+      "end": 1471,
+      "population": {
+        "total": {
+          "value": 2000000,
+          "low": 1000000,
+          "high": 4000000,
+          "year": 1470,
+          "note": "Ordre de grandeur reconstruit ; aucun recensement, seulement des quipus perdus.",
+          "source": {
+            "label": "Wikipédia : Empire inca",
+            "url": "https://fr.wikipedia.org/wiki/Empire_inca"
+          }
+        },
+        "cities": [
+          {
+            "name": "Cuzco",
+            "population": {
+              "value": 40000,
+              "low": 20000,
+              "high": 60000,
+              "year": 1470,
+              "note": "Estimation très approximative ; population de la capitale et de ses environs immédiats.",
+              "source": {
+                "label": "Wikipédia : Cuzco",
+                "url": "https://fr.wikipedia.org/wiki/Cuzco"
+              }
+            }
+          },
+          {
+            "name": "Chan Chan",
+            "population": {
+              "value": 30000,
+              "low": 20000,
+              "high": 40000,
+              "year": 1470,
+              "note": "Capitale chimú au moment de la conquête ; estimation archéologique.",
+              "source": {
+                "label": "Wikipédia : Chan Chan",
+                "url": "https://fr.wikipedia.org/wiki/Chan_Chan"
+              }
+            }
+          },
+          {
+            "name": "Hatun Colla",
+            "population": {
+              "value": 10000,
+              "low": 5000,
+              "high": 20000,
+              "year": 1450,
+              "note": "Centre de la région du Titicaca ; ordre de grandeur.",
+              "source": {
+                "label": "Wikipédia : Empire inca",
+                "url": "https://fr.wikipedia.org/wiki/Empire_inca"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Maïs et pommes de terre",
+          "Lamas et alpagas",
+          "Coton de la côte",
+          "Argent et cuivre du Collao"
+        ],
+        "currency": "Pas de monnaie : l'économie repose sur la réciprocité et la redistribution ; objets de prestige en tissu, or et argent.",
+        "taxation": "Tribut en travail (mita) dû à l'Inca ; les terres sont partagées entre le Soleil, l'Inca et les communautés.",
+        "trade": "Troc local ; l'État redistribue grâce à ses greniers (collcas) et ses routes."
+      },
+      "army": {
+        "size": {
+          "value": 40000,
+          "low": 20000,
+          "high": 80000,
+          "year": 1450,
+          "note": "Ordre de grandeur : les chroniques parlent de plusieurs dizaines de milliers d'hommes, sans fiabilité.",
+          "source": {
+            "label": "Wikipédia : Empire inca",
+            "url": "https://fr.wikipedia.org/wiki/Empire_inca"
+          }
+        },
+        "composition": "Fantassins levés par la mita, armés de frondes, de massues à étoile, de lances et de boucliers ; peu de cavalerie (il n'y a pas de chevaux).",
+        "recruitment": "Levée par province et par communauté ; contingents locaux commandés par leurs chefs sous l'autorité de la noblesse de Cuzco.",
+        "famousUnits": [
+          "Guerriers de Cuzco (noblesse à grandes boucles d'oreille)",
+          "Corps de frondeurs",
+          "Garnisons de mitmaqkuna"
+        ],
+        "innovations": [
+          "Logistique par greniers et relais",
+          "Réseau de routes et de ponts",
+          "Colons militaires (mitmaqkuna) installés dans les régions conquises"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie divine : le Sapa Inca est fils du Soleil et chef d'un État centralisé en train de se former.",
+        "head": "Sapa Inca (Pachacutec) ; la coya est l'épouse principale.",
+        "succession": "L'Inca désigne un fils parmi les héritiers de la famille royale ; les successions sont souvent disputées.",
+        "institutions": "Conseil des quatre apus (gouverneurs des quatre quartiers), nobles de Cuzco, panacas (lignages royaux).",
+        "administration": "Provinces dirigées par des gouverneurs, décimation hiérarchique (unités de 10 à 10 000 familles), quipucamayocs comme comptables.",
+        "provinces": {
+          "value": 40,
+          "low": 30,
+          "high": 60,
+          "year": 1470,
+          "unit": "provinces",
+          "note": "Nombre approximatif de provinces, très incertain.",
+          "source": {
+            "label": "Wikipédia : Empire inca",
+            "url": "https://fr.wikipedia.org/wiki/Empire_inca"
+          }
+        },
+        "law": "Pas de code écrit ; la loi inca est transmise oralement, avec des peines sévères."
+      },
+      "society": {
+        "religions": [
+          "Culte du Soleil (Inti)",
+          "Viracocha, dieu créateur",
+          "Huacas locales",
+          "Culte des ancêtres momifiés"
+        ],
+        "languages": [
+          "Quechua (langue des Incas)",
+          "Aymara",
+          "Puquina"
+        ],
+        "structure": "Noblesse de Cuzco, chefs locaux, paysans en ayllus (communautés), artisans et yanaconas (serviteurs).",
+        "women": "Femmes nobles (coya), prêtresses et « vierges du Soleil » (acllas) ; les paysannes travaillent aux champs et au tissage."
+      },
+      "culture": {
+        "inventions": [
+          "Quipu",
+          "Terrasses agricoles (andenes)",
+          "Maçonnerie polygonale sans mortier"
+        ],
+        "works": [
+          "Coricancha de Cuzco",
+          "Machu Picchu (vers 1450)",
+          "Ollantaytambo"
+        ],
+        "scholars": [
+          "Amautas (sages de la cour)",
+          "Quipucamayocs (gardiens des nœuds)"
+        ]
+      },
+      "infrastructure": {
+        "roads": {
+          "value": 15000,
+          "low": 8000,
+          "high": 25000,
+          "year": 1470,
+          "unit": "km",
+          "note": "Réseau du qhapaq ñan en construction ; longueur reconstruite.",
+          "source": {
+            "label": "Wikipédia : Qhapaq Ñan",
+            "url": "https://fr.wikipedia.org/wiki/Qhapaq_Ñan"
+          }
+        },
+        "summary": "Premières routes royales, ponts de corde et relais (tambos) autour de Cuzco, du Titicaca et de la côte."
+      },
+      "legacy": "En une génération, un petit royaume de la vallée de Cuzco devient une puissance régionale, avec un pouvoir central et une capitale monumentale."
+    },
+    {
+      "id": "topa-inca",
+      "name": "Topa Inca, la grande expansion",
+      "start": 1471,
+      "end": 1493,
+      "population": {
+        "total": {
+          "value": 6000000,
+          "low": 4000000,
+          "high": 10000000,
+          "year": 1490,
+          "note": "Ordre de grandeur reconstruit.",
+          "source": {
+            "label": "Wikipédia : Empire inca",
+            "url": "https://fr.wikipedia.org/wiki/Empire_inca"
+          }
+        },
+        "cities": [
+          {
+            "name": "Cuzco",
+            "population": {
+              "value": 60000,
+              "low": 30000,
+              "high": 100000,
+              "year": 1490,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Cuzco",
+                "url": "https://fr.wikipedia.org/wiki/Cuzco"
+              }
+            }
+          },
+          {
+            "name": "Tomebamba",
+            "population": {
+              "value": 20000,
+              "low": 10000,
+              "high": 30000,
+              "year": 1490,
+              "note": "Estimation très approximative ; seconde capitale du nord (Cuenca).",
+              "source": {
+                "label": "Wikipédia : Cuenca (Équateur)",
+                "url": "https://fr.wikipedia.org/wiki/Cuenca_(Équateur)"
+              }
+            }
+          },
+          {
+            "name": "Chan Chan",
+            "population": {
+              "value": 30000,
+              "low": 20000,
+              "high": 40000,
+              "year": 1480,
+              "note": "Sous domination inca ; estimation archéologique.",
+              "source": {
+                "label": "Wikipédia : Chan Chan",
+                "url": "https://fr.wikipedia.org/wiki/Chan_Chan"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Maïs, pommes de terre, quinoa",
+          "Lamas et alpagas",
+          "Coton et tissus fins (cumbi)",
+          "Or, argent et cuivre"
+        ],
+        "currency": "Pas de monnaie ; tissus, coca et métaux précieux servent de cadeaux et de prestige.",
+        "taxation": "Mita (travail obligatoire) sur terres d'État et chantiers ; tribut en tissus et en produits.",
+        "trade": "Échanges locaux par troc ; réseaux de caravanes de lamas ; échange à longue distance de coquillages (spondyle), de coca et de plumes."
+      },
+      "army": {
+        "size": {
+          "value": 100000,
+          "low": 50000,
+          "high": 200000,
+          "year": 1490,
+          "note": "Ordre de grandeur ; les chroniqueurs avancent des chiffres élevés, peu fiables.",
+          "source": {
+            "label": "Wikipédia : Empire inca",
+            "url": "https://fr.wikipedia.org/wiki/Empire_inca"
+          }
+        },
+        "composition": "Fantassins de plusieurs régions (Cañaris, Collas, Chimú), troupes spécialisées dans les montagnes et la côte ; pas de chevaux.",
+        "recruitment": "Levée de mita par province, contingents commandés par leurs chefs ; élite de Cuzco aux postes de commandement.",
+        "famousUnits": [
+          "Cañaris (guerriers d'élite)",
+          "Frondeurs des Collas",
+          "Garnisons de mitmaqkuna"
+        ],
+        "innovations": [
+          "Forteresses de frontière (pucaras)",
+          "Chaîne de relais pour l'approvisionnement",
+          "Intégration de contingents locaux et de leurs chefs"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie divine d'un empire en expansion rapide, de plus en plus centralisé.",
+        "head": "Sapa Inca (Topa Inca).",
+        "succession": "Choix de l'Inca parmi ses fils ; la mort de Topa Inca (vers 1493) ouvre une transition tendue.",
+        "institutions": "Quatre apus, tocricoc (gouverneurs de province), panacas des Incas précédents.",
+        "administration": "Provinces avec gouverneur et centre administratif (Hatun Colla, Vilcas Huamán, Huánuco Pampa, Tomebamba), recensements au moyen de quipus.",
+        "provinces": {
+          "value": 60,
+          "low": 40,
+          "high": 80,
+          "year": 1490,
+          "unit": "provinces",
+          "note": "Nombre approximatif de provinces, très incertain.",
+          "source": {
+            "label": "Wikipédia : Empire inca",
+            "url": "https://fr.wikipedia.org/wiki/Empire_inca"
+          }
+        },
+        "law": "Loi orale ; peines sévères (mort pour vol grave) ; devoirs de réciprocité."
+      },
+      "society": {
+        "religions": [
+          "Culte du Soleil (Inti)",
+          "Culte de la Lune (Mama Quilla)",
+          "Viracocha",
+          "Huacas des peuples conquis"
+        ],
+        "languages": [
+          "Quechua",
+          "Aymara",
+          "Puquina",
+          "Langues de la côte nord"
+        ],
+        "structure": "Noblesse de Cuzco, chefs locaux (kurakas), paysans en ayllus, mitmaqkuna déplacés, yanaconas.",
+        "women": "Coya, acllas (femmes choisies pour le culte et le tissage), paysannes ; des femmes peuvent hériter de biens dans certaines régions."
+      },
+      "culture": {
+        "inventions": [
+          "Chuño (conservation des pommes de terre)",
+          "Réseau de chasquis",
+          "Ponts de corde"
+        ],
+        "works": [
+          "Tomebamba et Pumapungo",
+          "Sacsayhuamán",
+          "Chan Chan sous domination inca"
+        ],
+        "scholars": [
+          "Amautas",
+          "Quipucamayocs",
+          "Orfèvres chimú déportés à Cuzco"
+        ]
+      },
+      "infrastructure": {
+        "roads": {
+          "value": 25000,
+          "low": 15000,
+          "high": 35000,
+          "year": 1490,
+          "unit": "km",
+          "note": "Qhapaq ñan en extension ; longueur reconstruite.",
+          "source": {
+            "label": "Wikipédia : Qhapaq Ñan",
+            "url": "https://fr.wikipedia.org/wiki/Qhapaq_Ñan"
+          }
+        },
+        "summary": "Deux grands axes (de la montagne et de la côte) s'allongent jusqu'au Chili et à l'Équateur, avec ponts de corde, tambos tous les 20 à 30 km."
+      },
+      "legacy": "Le Tawantinsuyu atteint presque sa taille maximale et se dote d'un grand réseau de routes, de greniers et de provinces."
+    },
+    {
+      "id": "huayna-capac",
+      "name": "Huayna Capac, l'apogée et la chute",
+      "start": 1493,
+      "end": 1533,
+      "population": {
+        "total": {
+          "value": 10000000,
+          "low": 6000000,
+          "high": 14000000,
+          "year": 1525,
+          "note": "Estimation reconstruite ; beaucoup de débats, avant l'épidémie de variole.",
+          "source": {
+            "label": "Wikipédia : Empire inca",
+            "url": "https://fr.wikipedia.org/wiki/Empire_inca"
+          }
+        },
+        "cities": [
+          {
+            "name": "Cuzco",
+            "population": {
+              "value": 100000,
+              "low": 40000,
+              "high": 150000,
+              "year": 1525,
+              "note": "Estimation de la capitale avant la conquête ; chiffres très discutés.",
+              "source": {
+                "label": "Wikipédia : Cuzco",
+                "url": "https://fr.wikipedia.org/wiki/Cuzco"
+              }
+            }
+          },
+          {
+            "name": "Quito",
+            "population": {
+              "value": 30000,
+              "low": 15000,
+              "high": 50000,
+              "year": 1525,
+              "note": "Base militaire du nord ; estimation très approximative.",
+              "source": {
+                "label": "Wikipédia : Quito",
+                "url": "https://fr.wikipedia.org/wiki/Quito"
+              }
+            }
+          },
+          {
+            "name": "Tomebamba",
+            "population": {
+              "value": 30000,
+              "low": 15000,
+              "high": 50000,
+              "year": 1525,
+              "note": "Estimation très approximative (Cuenca).",
+              "source": {
+                "label": "Wikipédia : Cuenca (Équateur)",
+                "url": "https://fr.wikipedia.org/wiki/Cuenca_(Équateur)"
+              }
+            }
+          },
+          {
+            "name": "Cajamarca",
+            "population": {
+              "value": 15000,
+              "low": 8000,
+              "high": 25000,
+              "year": 1532,
+              "note": "Ordre de grandeur avant l'arrivée des Espagnols.",
+              "source": {
+                "label": "Wikipédia : Cajamarca",
+                "url": "https://fr.wikipedia.org/wiki/Cajamarca"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Maïs, pommes de terre, quinoa",
+          "Coton, laine de lama et d'alpaga",
+          "Or, argent, cuivre, étain",
+          "Coca"
+        ],
+        "currency": "Pas de monnaie ; les métaux précieux servent aux offrandes et aux objets de prestige.",
+        "taxation": "Mita sur les terres de l'État, du Soleil et de l'Inca ; tribut en tissus, en produits de la terre et en main-d'œuvre.",
+        "trade": "Redistribution d'État par greniers et routes ; échanges maritimes par radeaux sur la côte nord, avec Tumbes."
+      },
+      "army": {
+        "size": {
+          "value": 200000,
+          "low": 100000,
+          "high": 300000,
+          "year": 1525,
+          "note": "Ordre de grandeur ; très incertain.",
+          "source": {
+            "label": "Wikipédia : Empire inca",
+            "url": "https://fr.wikipedia.org/wiki/Empire_inca"
+          }
+        },
+        "composition": "Fantassins provinciaux (Cañaris, Chachapoyas, Collas…) et troupes de Cuzco ; frondes, massues, haches, lances, boucliers ; pas de chevaux ni de fer.",
+        "recruitment": "Mita militaire par province ; chefs locaux et généraux d'origine provinciale promus par Huayna Capac.",
+        "famousUnits": [
+          "Armée de Quito (Quizquiz, Chalcuchímac)",
+          "Cañaris",
+          "Gardes de l'Inca"
+        ],
+        "innovations": [
+          "Grandes garnisons de frontière (nord et Chili)",
+          "Déplacements massifs de populations (mitmaqkuna)",
+          "Route royale reliant Quito à Santiago"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie divine d'un empire arrivé à son maximum, sans règle de succession claire.",
+        "head": "Sapa Inca (Huayna Capac, puis Huáscar et Atahualpa en guerre civile).",
+        "succession": "Choix de l'Inca parmi ses fils ; la mort de Huayna Capac sans héritier désigné déclenche la guerre civile.",
+        "institutions": "Conseil des quatre apus, panacas, gouverneurs provinciaux, Cuzco et Quito comme deux pôles.",
+        "administration": "Provinces et sous-provinces, recensements par quipus, centres administratifs (Huánuco Pampa, Tomebamba, Quito).",
+        "provinces": {
+          "value": 80,
+          "low": 60,
+          "high": 100,
+          "year": 1525,
+          "unit": "provinces",
+          "note": "Nombre approximatif de provinces, très incertain.",
+          "source": {
+            "label": "Wikipédia : Empire inca",
+            "url": "https://fr.wikipedia.org/wiki/Empire_inca"
+          }
+        },
+        "law": "Loi orale et coutumière ; peines sévères ; arbitrage par les gouverneurs."
+      },
+      "society": {
+        "religions": [
+          "Culte du Soleil (Inti)",
+          "Viracocha",
+          "Culte de la Lune",
+          "Huacas et ancêtres momifiés",
+          "Christianisme imposé après 1532"
+        ],
+        "languages": [
+          "Quechua (langue d'État)",
+          "Aymara",
+          "Puquina",
+          "Langues provinciales"
+        ],
+        "structure": "Noblesse de Cuzco, kurakas locaux, paysans, artisans, mitmaqkuna, yanaconas ; empire d'environ 80 peuples.",
+        "women": "Coyas, acllas, tisserandes ; les femmes nobles jouent un rôle politique par les panacas."
+      },
+      "culture": {
+        "inventions": [
+          "Quipu",
+          "Qhapaq ñan et ponts de corde",
+          "Trépanation du crâne"
+        ],
+        "works": [
+          "Machu Picchu",
+          "Sacsayhuamán",
+          "Palais de Quito et de Tomebamba"
+        ],
+        "scholars": [
+          "Amautas",
+          "Quipucamayocs",
+          "Chirurgiens (trépanation)"
+        ]
+      },
+      "infrastructure": {
+        "roads": {
+          "value": 30000,
+          "low": 25000,
+          "high": 40000,
+          "year": 1525,
+          "unit": "km",
+          "note": "Le qhapaq ñan atteint sa longueur maximale ; chiffres reconstruits.",
+          "source": {
+            "label": "Wikipédia : Qhapaq Ñan",
+            "url": "https://fr.wikipedia.org/wiki/Qhapaq_Ñan"
+          }
+        },
+        "summary": "Réseau de 30 000 km environ, ponts de corde, relais (tambos) et greniers (collcas) répartis dans tout l'Empire ; messagers chasquis."
+      },
+      "legacy": "Le Tawantinsuyu est le plus grand empire précolombien. Variole, guerre civile et conquête espagnole le détruisent en une décennie, mais le quechua, les routes et les terrasses subsistent."
+    }
+  ]
+}

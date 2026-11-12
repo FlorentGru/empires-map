@@ -77,4 +77,6 @@ export const FACTION_COLORS = {
   safavides: '#c01f4a',
   'ottomans-modernes': '#5a6a3a',
   'grecs-modernes': '#4a7fd0',
+  chancas: '#8a5a2e',
+  mapuches: '#4a5a7a',
 } satisfies Record<Faction, string>;

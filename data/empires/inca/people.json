@@ -1,0 +1,275 @@
+[
+  {
+    "id": "pachacutec",
+    "name": "Pachacutec",
+    "archetype": "souverain-precolombien",
+    "faction": "incas",
+    "born": 1418,
+    "died": 1471,
+    "title": "Fondateur du Tawantinsuyu, « celui qui retourne le monde »",
+    "bio": "Pachacutec, né Cusi Yupanqui, est le neuvième Sapa Inca selon la liste traditionnelle. Quand les Chancas attaquent Cuzco, vers 1438, ses chroniqueurs racontent qu'il défend la ville seul avec quelques fidèles pendant que son père Viracocha s'enfuit. Il bat les Chancas et prend le nom de Pachacutec, « celui qui bouleverse (ou retourne) le monde ». Selon Betanzos, il reconstruit Cuzco, institue les quatre quartiers du Tawantinsuyu et réorganise le calendrier et le culte du Soleil. On lui attribue aussi les domaines royaux de la vallée de l'Urubamba, dont Machu Picchu. Il conduit lui-même les premières conquêtes, puis laisse l'armée à son fils Topa Inca. Il faut rester prudent : tout ce que nous savons vient de chroniqueurs qui écrivent après la conquête espagnole, à partir de récits oraux de la noblesse de Cuzco, qui avait intérêt à magnifier ses ancêtres. Certains historiens se demandent même si Pachacutec n'est pas un personnage composite. Ses dates de naissance et de mort sont des reconstitutions.",
+    "keyFacts": [
+      "Vers 1438 : repousse les Chancas devant Cuzco et devient Sapa Inca",
+      "Vers 1440 : reconstruit Cuzco et organise les quatre suyu du Tawantinsuyu",
+      "Vers 1450 : domaine royal de Machu Picchu, selon les datations modernes",
+      "Les conquêtes du Collao lui sont attribuées par Cieza, à son fils par Sarmiento",
+      "Vers 1471 : meurt à Cuzco ; son fils Topa Inca lui succède"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Pachacutec",
+        "url": "https://fr.wikipedia.org/wiki/Pachacutec"
+      }
+    ]
+  },
+  {
+    "id": "topa-inca",
+    "name": "Topa Inca Yupanqui",
+    "archetype": "souverain-precolombien",
+    "faction": "incas",
+    "born": 1448,
+    "died": 1493,
+    "title": "Grand conquérant du Chimú, de l'Équateur et du Chili",
+    "bio": "Topa Inca est le fils de Pachacutec et de sa coya, Mama Anahuarque. Chargé très jeune des armées, il dirige d'après les chroniqueurs la conquête de la côte nord (le royaume chimú, vers 1470) puis celle des hautes terres de l'Équateur, où il fonde Tomebamba. Il pousse aussi vers le sud : Collao, Charcas, désert d'Atacama et Chili central jusqu'au fleuve Maule, où les Mapuches l'arrêtent. Selon Sarmiento de Gamboa, il aurait même voyagé sur mer à la recherche d'îles lointaines, un récit que les historiens jugent très incertain. Il devient Sapa Inca vers 1471 et gouverne vingt ans environ. Son épouse et sœur, Mama Ocllo, lui donne Huayna Capac. À sa mort, l'Empire atteint presque sa taille maximale. Les dates de son règne reposent sur la chronologie de Cabello de Valboa : d'autres historiens, plus prudents, estiment qu'elle étire trop la durée des règnes pour faire tenir toutes les conquêtes.",
+    "keyFacts": [
+      "Vers 1470 : soumet le royaume chimú et prend Chan Chan",
+      "Vers 1471 : devient Sapa Inca à la mort de son père",
+      "Vers 1480 : conquiert les Cañaris et fonde Tomebamba",
+      "Vers 1485 : pousse jusqu'au Maule, au Chili, face aux Mapuches",
+      "Vers 1493 : meurt ; son fils Huayna Capac lui succède"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Topa Inca Yupanqui",
+        "url": "https://fr.wikipedia.org/wiki/Topa_Inca_Yupanqui"
+      }
+    ]
+  },
+  {
+    "id": "huayna-capac",
+    "name": "Huayna Capac",
+    "archetype": "souverain-precolombien",
+    "faction": "incas",
+    "born": 1468,
+    "died": 1527,
+    "title": "Sapa Inca de l'apogée, mort de la variole",
+    "bio": "Huayna Capac (« jeune homme puissant ») est le fils de Topa Inca et de Mama Ocllo. Monté sur le trône vers 1493, il passe l'essentiel de son règne en campagne : il pacifie les Chachapoyas, soumet les peuples de Quito et fixe la frontière nord sur le río Ancasmayo. Il s'installe à Tomebamba et à Quito, où il fait construire palais et greniers, et s'appuie sur des généraux d'origine provinciale comme Quizquiz et Chalcuchímac. Vers 1526, il apprend l'existence des premiers navires espagnols sur la côte. Il meurt vers 1527, de la variole ou d'une maladie voisine, avec son héritier désigné Ninan Cuyochi. Sa mort laisse l'Empire sans successeur évident : Huáscar, soutenu par Cuzco, et Atahualpa, soutenu par l'armée du nord, s'affrontent. Les chroniqueurs divergent sur sa date de naissance, sur celle de sa mort (1524 à 1528) et sur le lieu où il est mort. Sa momie, conservée à Cuzco, restera longtemps objet de culte.",
+    "keyFacts": [
+      "Vers 1493 : accède au trône à la mort de Topa Inca",
+      "Vers 1500 : conquiert la région de Quito, lac Yahuarcocha",
+      "Vers 1525 : l'Empire va de l'Ancasmayo au Maule",
+      "Vers 1526 : premier contact de loin avec les Espagnols",
+      "Vers 1527 : meurt de maladie ; guerre civile entre ses fils"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Huayna Capac",
+        "url": "https://fr.wikipedia.org/wiki/Huayna_Capac"
+      }
+    ]
+  },
+  {
+    "id": "huascar",
+    "name": "Huáscar",
+    "archetype": "souverain-precolombien",
+    "faction": "incas",
+    "born": 1503,
+    "died": 1532,
+    "title": "Sapa Inca de Cuzco, vaincu par son demi-frère",
+    "bio": "Huáscar, fils de Huayna Capac et d'une coya, est reconnu à Cuzco comme Sapa Inca après la mort de son père, vers 1527. Il a le soutien de la noblesse de la capitale et des Cañaris. Selon Cieza de León, il exige que son demi-frère Atahualpa, qui commande l'armée du nord, lui prête serment ; la tension monte et la guerre éclate vers 1529. Ses armées, dirigées par des généraux comme Atoc, sont battues en Équateur, puis près de Cuzco, à Quipaipan, par Quizquiz et Chalcuchímac. Capturé, il est emmené à Cajamarca. Selon la majorité des chroniqueurs, il est assassiné sur ordre d'Atahualpa pendant que les Espagnols retiennent celui-ci, mais le détail reste débattu. Ses partisans, soutenus plus tard par les Espagnols, ont écrit beaucoup de récits sur cette période, ce qui peut en gauchir les portraits. Huáscar reste le symbole d'une dynastie « légitime » aux yeux de la noblesse de Cuzco.",
+    "keyFacts": [
+      "Vers 1527 : reconnu Sapa Inca à Cuzco",
+      "Vers 1529 : début de la guerre contre Atahualpa",
+      "Vers 1532 : battu et capturé à Quipaipan, près de Cuzco",
+      "Emmené prisonnier à Cajamarca",
+      "Vers 1532-1533 : mort, sans doute sur ordre d'Atahualpa"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Huáscar",
+        "url": "https://fr.wikipedia.org/wiki/Huáscar"
+      }
+    ]
+  },
+  {
+    "id": "atahualpa",
+    "name": "Atahualpa",
+    "archetype": "souverain-precolombien",
+    "faction": "incas",
+    "born": 1502,
+    "died": 1533,
+    "title": "Dernier Sapa Inca indépendant, capturé à Cajamarca",
+    "bio": "Atahualpa, fils de Huayna Capac et d'une femme de Quito, grandit dans le nord de l'Empire, auprès de l'armée. À la mort de son père, il tient Quito, tandis que son demi-frère Huáscar règne à Cuzco. Après la guerre civile, vers 1532, ses généraux Quizquiz et Chalcuchímac l'emportent. Il est à Cajamarca quand Pizarro arrive. Le 16 novembre 1532, il est capturé sur la place. Il promet une rançon : une pièce remplie d'or et deux d'argent. Les Espagnols recueillent plusieurs tonnes de métal précieux. Soupçonné de préparer une attaque et accusé de meurtre et d'idolâtrie, il est condamné. Baptisé sous le nom de Francisco, il est étranglé au garrot le 26 juillet 1533. Les chroniques espagnoles, qui justifient la conquête, le présentent souvent comme un tyran ; les récits andins le montrent plutôt comme une victime. Ses dates de naissance, vers 1502, sont incertaines.",
+    "keyFacts": [
+      "Vers 1527 : tient Quito à la mort de Huayna Capac",
+      "Vers 1529-1532 : gagne la guerre contre Huáscar par ses généraux",
+      "16 novembre 1532 : capturé à Cajamarca",
+      "Promet une rançon d'une pièce d'or et de deux d'argent",
+      "26 juillet 1533 : exécuté au garrot à Cajamarca"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Atahualpa",
+        "url": "https://fr.wikipedia.org/wiki/Atahualpa"
+      }
+    ]
+  },
+  {
+    "id": "mama-ocllo",
+    "name": "Mama Ocllo",
+    "archetype": "imperatrice",
+    "faction": "incas",
+    "born": 1450,
+    "died": 1500,
+    "title": "Coya, épouse de Topa Inca et mère de Huayna Capac",
+    "bio": "Mama Ocllo est la coya, l'épouse principale et la sœur de l'Inca Topa Inca Yupanqui, selon la tradition incaïque qui veut que le souverain épouse sa propre sœur pour garder la pureté du sang du Soleil. Elle est la mère de Huayna Capac. Dans la société inca, la coya a un vrai pouvoir : elle gère des domaines et des serviteurs, participe aux cultes (notamment celui de la Lune) et, selon plusieurs chroniqueurs, peut agir comme régente quand l'Inca est en campagne. Après la mort de Topa Inca, vers 1493, elle aurait soutenu son fils contre les ambitions d'un oncle. Ce que l'on sait d'elle est mince et vient de récits tardifs, souvent contradictoires : des chroniqueurs la confondent avec la mythique Mama Ocllo, épouse de Manco Capac, premier Inca légendaire. Il faut donc distinguer le personnage historique, probable, de la figure légendaire, dont elle porte le nom. Ses dates précises de naissance et de mort sont inconnues, et les chiffres ci-dessus sont de simples ordres de grandeur.",
+    "keyFacts": [
+      "Épouse et sœur de Topa Inca, selon les chroniqueurs",
+      "Mère de Huayna Capac, né vers 1468",
+      "Les coyas gèrent des domaines et participent au culte de la Lune",
+      "Vers 1493 : aurait soutenu l'avènement de son fils",
+      "Ne pas confondre avec la Mama Ocllo légendaire, épouse du premier Inca"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Empire inca",
+        "url": "https://fr.wikipedia.org/wiki/Empire_inca"
+      }
+    ]
+  },
+  {
+    "id": "quizquiz",
+    "name": "Quizquiz",
+    "archetype": "general",
+    "faction": "incas",
+    "died": 1534,
+    "title": "Général d'Atahualpa, vainqueur de Huáscar",
+    "bio": "Quizquiz (aussi écrit Quisquis) est l'un des grands généraux de Huayna Capac et, après sa mort, d'Atahualpa. D'origine provinciale, il incarne la promotion de chefs de guerre du nord sous les derniers règnes. Avec Chalcuchímac, il commande l'armée d'Atahualpa dans la guerre civile : victoire à Ambato, puis marche sur Cuzco, où il bat Huáscar à Quipaipan vers 1532. Quand Atahualpa est capturé, il se trouve loin de Cajamarca. Après l'exécution de l'Inca, il tente de résister aux Espagnols : il combat à Jauja, puis près de Cuzco en 1533, mais est battu. Retiré vers Quito, il est tué en 1534, selon la plupart des sources par ses propres officiers, las de la guerre, alors que d'autres le disent mort au combat contre Benalcázar. Les récits de ses campagnes viennent de chroniqueurs espagnols, qui ont souvent mêlé noms et dates ; l'année de sa mort et son lieu d'origine sont discutés. Son rôle dans la guerre civile est reconnu comme décisif.",
+    "keyFacts": [
+      "Général de Huayna Capac, puis d'Atahualpa",
+      "Vers 1529 : bat les armées de Huáscar à Ambato",
+      "Vers 1532 : vainqueur de Huáscar à Quipaipan, près de Cuzco",
+      "1533 : résiste aux Espagnols près de Cuzco, puis se replie vers le nord",
+      "1534 : meurt, tué par ses officiers ou au combat selon les sources"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Quizquiz",
+        "url": "https://fr.wikipedia.org/wiki/Quizquiz"
+      }
+    ]
+  },
+  {
+    "id": "chalcuchimac",
+    "name": "Chalcuchímac",
+    "archetype": "general",
+    "faction": "incas",
+    "died": 1533,
+    "title": "Général d'Atahualpa, prisonnier de Pizarro",
+    "bio": "Chalcuchímac est l'un des principaux généraux de Huayna Capac, puis d'Atahualpa, qu'il a aidé à gagner la guerre civile. Avec Quizquiz, il commande l'armée d'Atahualpa à Ambato, puis dans la marche sur Cuzco et à Quipaipan, vers 1532. Au moment de la capture d'Atahualpa à Cajamarca, il tient Jauja, plus au sud. Atahualpa lui demande de venir, et il obéit : il est aussitôt arrêté par les Espagnols. Pizarro l'emmène avec lui vers Cuzco. Accusé d'avoir organisé la résistance, il est jugé et brûlé vif à Jauja, en novembre 1533, après avoir refusé de se convertir, selon les chroniqueurs. Ses sources, comme pour tous les personnages de cette période, sont espagnoles : elles l'accusent sans doute pour justifier l'exécution. Les dates de sa naissance sont inconnues. Chalcuchímac reste l'un des symboles de la fidélité de l'armée inca à son souverain, un cas où l'obéissance entraîne la perte du général.",
+    "keyFacts": [
+      "Général de Huayna Capac puis d'Atahualpa",
+      "Vers 1529-1532 : vainqueur de Huáscar avec Quizquiz",
+      "1532 : tient Jauja quand Atahualpa est capturé",
+      "Capturé par les Espagnols en répondant à l'appel de son souverain",
+      "Novembre 1533 : brûlé vif à Jauja selon les chroniqueurs"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Calcuchimac",
+        "url": "https://fr.wikipedia.org/wiki/Calcuchimac"
+      }
+    ]
+  },
+  {
+    "id": "manco-inca",
+    "name": "Manco Inca",
+    "archetype": "souverain-precolombien",
+    "faction": "incas",
+    "born": 1516,
+    "died": 1544,
+    "title": "Inca installé par Pizarro, puis chef de la résistance",
+    "bio": "Manco Inca (Manco Capac II) est un fils de Huayna Capac. En novembre 1533, Pizarro, qui entre à Cuzco, le couronne Sapa Inca pour gouverner par lui. Mais Manco, traité comme un pion, subit des humiliations des conquistadors, dont Gonzalo et Juan Pizarro. En 1536, il quitte Cuzco, rassemble une grande armée et assiège Cuzco pendant presque un an, avec l'espoir de chasser les Espagnols. Le siège échoue : les chevaux et les armes à feu l'emportent, et ses troupes doivent regagner leurs terres pour les semailles. Il se replie dans la forêt, à Vilcabamba, où il fonde un État de résistance, appelé par les historiens l'Etat néo-inca. Il y meurt vers 1544, tué par des Espagnols à qui il avait accordé l'asile. Ses fils continueront la lutte jusqu'en 1572. Les dates de sa naissance sont approximatives. Les Espagnols le décrivent parfois comme un traître, les Andins comme un héros de la résistance.",
+    "keyFacts": [
+      "Novembre 1533 : couronné Sapa Inca par Pizarro à Cuzco",
+      "1536 : se révolte et assiège Cuzco pendant près d'un an",
+      "Se replie à Vilcabamba et fonde l'État néo-inca",
+      "Vers 1544 : tué par des Espagnols réfugiés chez lui",
+      "Ses fils résistent jusqu'en 1572"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Manco Inca Yupanqui",
+        "url": "https://fr.wikipedia.org/wiki/Manco_Inca_Yupanqui"
+      }
+    ]
+  },
+  {
+    "id": "francisco-pizarro",
+    "name": "Francisco Pizarro",
+    "archetype": "conquistador",
+    "faction": "tercios",
+    "born": 1478,
+    "died": 1541,
+    "title": "Conquistador du Pérou, fondateur de Lima",
+    "bio": "Francisco Pizarro est un soldat espagnol né à Trujillo, en Estrémadure, d'une famille modeste. Il vient aux Amériques en 1502, participe à l'exploration du Panamá, puis organise trois expéditions vers le sud, à partir de 1524, avec Diego de Almagro. Au retour de la deuxième, en 1527, il passe à Tumbes, où il voit pour la première fois des signes d'un grand empire. En 1531, avec environ 168 hommes, il repart et arrive à Cajamarca en novembre 1532, où il capture Atahualpa par surprise. Il fait exécuter l'Inca en 1533 et entre à Cuzco, où il installe Manco Inca. Il fonde Lima en 1535. Il se brouille avec Almagro, qui est exécuté en 1538 ; il est lui-même assassiné à Lima par des partisans d'Almagro en 1541. Les chroniqueurs, souvent ses proches, ont donné de lui des portraits très contrastés, du héros au pillard. Sa date de naissance (entre 1471 et 1478) est incertaine.",
+    "keyFacts": [
+      "1524-1528 : expéditions de reconnaissance vers le sud depuis Panamá",
+      "16 novembre 1532 : capture Atahualpa à Cajamarca avec environ 168 hommes",
+      "Juillet 1533 : fait exécuter Atahualpa",
+      "Novembre 1533 : entre à Cuzco",
+      "1535 : fonde Lima ; 1541 : assassiné par des partisans d'Almagro"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Francisco Pizarro",
+        "url": "https://fr.wikipedia.org/wiki/Francisco_Pizarro"
+      }
+    ]
+  },
+  {
+    "id": "ruminahui",
+    "name": "Rumiñahui",
+    "archetype": "general",
+    "faction": "incas",
+    "died": 1535,
+    "title": "Général d'Atahualpa, résistant à Quito",
+    "bio": "Rumiñahui (« œil de pierre » en quechua) est un général d'Atahualpa, d'origine probablement noble, qui commande des troupes à Quito pendant la guerre civile. Quand Atahualpa est exécuté à Cajamarca en 1533, il refuse de reconnaître les Espagnols et prend la tête de la résistance dans le nord de l'Empire. Selon plusieurs chroniqueurs, il fait détruire Quito pour empêcher que les conquistadors s'y installent, et fait cacher l'or de l'Inca, ce qui alimente la légende du trésor de Rumiñahui, jamais retrouvé. Il se bat contre les troupes de Sebastián de Benalcázar en 1534, mais finit capturé et exécuté en 1535. Ce que l'on sait de lui vient des chroniques espagnoles et des traditions équatoriennes, qui en font un héros national. La part de légende est grande : le détail de la destruction de Quito, la date de sa mort et l'ampleur du trésor sont discutés par les historiens.",
+    "keyFacts": [
+      "Général d'Atahualpa, commandant à Quito",
+      "1533 : refuse de se soumettre à Pizarro après la mort de l'Inca",
+      "1534 : combat Benalcázar ; Quito est incendiée, selon la tradition",
+      "Légende du trésor de Rumiñahui, jamais retrouvé",
+      "1535 : capturé puis exécuté par les Espagnols"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Rumiñahui",
+        "url": "https://fr.wikipedia.org/wiki/Rumiñahui"
+      }
+    ]
+  },
+  {
+    "id": "garcilaso-de-la-vega",
+    "name": "Inca Garcilaso de la Vega",
+    "archetype": "sage",
+    "faction": "incas",
+    "born": 1539,
+    "died": 1616,
+    "title": "Chroniqueur métis de Cuzco, auteur des Comentarios reales",
+    "bio": "Gómez Suárez de Figueroa, dit l'Inca Garcilaso de la Vega, naît à Cuzco en 1539 d'un conquistador espagnol et d'une princesse inca, petite-fille de Huayna Capac. Il grandit entre deux mondes, entendant les récits de ses oncles incas. Il part en Espagne en 1560 et ne reviendra jamais. À Montilla, il traduit Léon l'Hébreu, puis écrit les Comentarios reales de los Incas, publiés en 1609 : un tableau idéalisé de l'Empire inca, de sa langue, de ses lois et de ses conquêtes. C'est l'une des sources les plus citées, mais aussi la plus discutée : Garcilaso écrit soixante-dix ans après les faits, de mémoire et pour défendre la noblesse inca. Il met en avant la douceur de l'administration inca, ce qui lui est parfois reproché. Il mérite de rester une source majeure, à lire avec prudence et en la confrontant avec Cieza de León, Betanzos et Sarmiento de Gamboa. Il meurt à Cordoue en 1616.",
+    "keyFacts": [
+      "1539 : naît à Cuzco d'un conquistador et d'une princesse inca",
+      "1560 : s'installe en Espagne et n'en revient plus",
+      "1609 : publie les Comentarios reales de los Incas",
+      "Source majeure et idéalisée sur l'Empire inca",
+      "1616 : meurt à Cordoue"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Inca Garcilaso de la Vega",
+        "url": "https://fr.wikipedia.org/wiki/Inca_Garcilaso_de_la_Vega"
+      }
+    ]
+  }
+]

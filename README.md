@@ -25,11 +25,11 @@
 
 ## At a glance
 
-| 9 empires | 274 key moments | 29 playable battles | 128 historical figures | 283 cities |
+| 10 empires | 288 key moments | 29 playable battles | 140 historical figures | 305 cities |
 |:-:|:-:|:-:|:-:|:-:|
-| from Alexander the Great to the Ottomans | battles, treaties, reforms, falls | 21 with a historical battle plan | biographies and quotes | with their period and modern names |
+| from Alexander the Great to the Incas | battles, treaties, reforms, falls | 21 with a historical battle plan | biographies and quotes | with their period and modern names |
 
-**Empires:** Alexander the Great · Rome (509 BC – 1453) · China (1600 BC – 1912) · the Mongol Empire · the Carolingians · the Holy Roman Empire · the Spanish Empire · the Ottoman Empire · Napoleon's Empire.
+**Empires:** Alexander the Great · Rome (509 BC – 1453) · China (1600 BC – 1912) · the Mongol Empire · the Carolingians · the Holy Roman Empire · the Spanish Empire · the Ottoman Empire · the Inca Empire (1438 – 1533) · Napoleon's Empire.
 
 ## Features
 
@@ -77,7 +77,7 @@
 | Geo pipeline | Node + TypeScript scripts, Turf.js, signed distance fields baked into PNGs |
 | AI agent | Python, Google ADK, FastAPI; Gemini, Claude (via LiteLLM) or a local Ollama model |
 | Quality | Vitest, Playwright, oxlint, Prettier, pytest, GitHub Actions |
-| Hosting | GitHub Pages (static build, deployed on every push to `main`), 288 prerendered pages |
+| Hosting | GitHub Pages (static build, deployed on every push to `main`), 303 prerendered pages |
 
 ## How it works
 
@@ -99,7 +99,7 @@ Some engineering choices worth a look:
 - **Gliding borders with distance fields.** For each transition, a build script rasterizes the old and new borders into a signed distance field (SDF) and computes when each pixel is reached. In the browser, a fragment shader only receives one number per frame, the progress `p`, so the front advances pixel by pixel at 60 fps. The shader runs as a **MapLibre custom layer** draped onto the 3D terrain.
 - **Heavy geometry at build time, never in the browser.** Clipping, simplification, diffs and SDFs are precomputed. Empires are discovered from their data folder: adding one needs no code change.
 - **Performance budget.** Empires, sprites and the battle engine are loaded on demand; the initial JavaScript is checked in CI to stay under **460 KB gzipped**. Animations never touch React state or rebuild map data per frame.
-- **Static first, SEO included.** The build prerenders 288 HTML pages (empires, steps, galleries) with Open Graph, JSON-LD, a sitemap and `llms.txt`, so the atlas is readable without JavaScript.
+- **Static first, SEO included.** The build prerenders 303 HTML pages (empires, steps, galleries) with Open Graph, JSON-LD, a sitemap and `llms.txt`, so the atlas is readable without JavaScript.
 
 Full write-up (in French): [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
@@ -157,7 +157,7 @@ npm run agent                      # agent server on port 8000, next to npm run 
 npm run fetch:data            # downloads historical-basemaps and Natural Earth into .cache/
 npm run build:data            # every empire: territories, diffs, distance fields, neighbors
 npm run build:data:ottomans   # a single empire: rome, napoleon, china, mongols, espagne,
-                              # saint-empire, carolingiens, alexandre, ottomans
+                              # saint-empire, carolingiens, alexandre, ottomans, inca
 ```
 
 Restart the dev server after regenerating `public/data`.

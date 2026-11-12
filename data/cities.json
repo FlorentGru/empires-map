@@ -3388,7 +3388,14 @@
       -13.532
     ],
     "founded": 1200,
-    "rank": 2
+    "rank": 2,
+    "capitalOf": [
+      {
+        "empire": "inca",
+        "from": 1438,
+        "to": 1533
+      }
+    ]
   },
   {
     "id": "potosi",
@@ -3605,7 +3612,8 @@
     "founded": 1200,
     "rank": 3,
     "empires": [
-      "espagne"
+      "espagne",
+      "inca"
     ]
   },
   {
@@ -5699,6 +5707,402 @@
     "rank": 3,
     "empires": [
       "ottomans"
+    ]
+  },
+  {
+    "id": "quito",
+    "modern": "Quito, Équateur",
+    "names": [
+      {
+        "name": "Quito"
+      }
+    ],
+    "coords": [
+      -78.5,
+      -0.2
+    ],
+    "founded": 1200,
+    "rank": 2,
+    "empires": [
+      "inca"
+    ]
+  },
+  {
+    "id": "tomebamba",
+    "modern": "Cuenca, Équateur",
+    "names": [
+      {
+        "name": "Tomebamba"
+      }
+    ],
+    "coords": [
+      -79,
+      -2.9
+    ],
+    "founded": 1470,
+    "rank": 3,
+    "empires": [
+      "inca"
+    ]
+  },
+  {
+    "id": "chan-chan",
+    "modern": "Chan Chan, Pérou",
+    "names": [
+      {
+        "name": "Chan Chan"
+      }
+    ],
+    "coords": [
+      -79.07,
+      -8.11
+    ],
+    "founded": 850,
+    "rank": 3,
+    "empires": [
+      "inca"
+    ]
+  },
+  {
+    "id": "tumbes",
+    "modern": "Tumbes, Pérou",
+    "names": [
+      {
+        "name": "Tumbes"
+      }
+    ],
+    "coords": [
+      -80.45,
+      -3.57
+    ],
+    "founded": 1200,
+    "rank": 3,
+    "empires": [
+      "inca"
+    ]
+  },
+  {
+    "id": "pachacamac",
+    "modern": "Pachacámac, Pérou",
+    "names": [
+      {
+        "name": "Pachacámac"
+      }
+    ],
+    "coords": [
+      -76.9,
+      -12.25
+    ],
+    "founded": 200,
+    "rank": 3,
+    "empires": [
+      "inca"
+    ]
+  },
+  {
+    "id": "vilcas-huaman",
+    "modern": "Vilcas Huamán, Pérou",
+    "names": [
+      {
+        "name": "Vilcas Huamán"
+      }
+    ],
+    "coords": [
+      -73.95,
+      -13.65
+    ],
+    "founded": 1450,
+    "rank": 3,
+    "empires": [
+      "inca"
+    ]
+  },
+  {
+    "id": "hatun-colla",
+    "modern": "Hatuncolla, Pérou",
+    "names": [
+      {
+        "name": "Hatun Colla"
+      }
+    ],
+    "coords": [
+      -70.33,
+      -15.7
+    ],
+    "founded": 1200,
+    "rank": 3,
+    "empires": [
+      "inca"
+    ]
+  },
+  {
+    "id": "titicaca",
+    "modern": "Lac Titicaca, Pérou-Bolivie",
+    "names": [
+      {
+        "name": "Titicaca"
+      }
+    ],
+    "coords": [
+      -69.4,
+      -15.9
+    ],
+    "founded": -1000,
+    "rank": 3,
+    "empires": [
+      "inca"
+    ]
+  },
+  {
+    "id": "tiwanaku",
+    "modern": "Tiwanaku, Bolivie",
+    "names": [
+      {
+        "name": "Tiwanaku"
+      }
+    ],
+    "coords": [
+      -68.67,
+      -16.55
+    ],
+    "founded": -200,
+    "rank": 3,
+    "empires": [
+      "inca"
+    ]
+  },
+  {
+    "id": "huanuco-pampa",
+    "modern": "Huánuco Pampa, Pérou",
+    "names": [
+      {
+        "name": "Huánuco Pampa"
+      }
+    ],
+    "coords": [
+      -76.07,
+      -9.87
+    ],
+    "founded": 1460,
+    "rank": 3,
+    "empires": [
+      "inca"
+    ]
+  },
+  {
+    "id": "jauja",
+    "modern": "Jauja, Pérou",
+    "names": [
+      {
+        "name": "Jauja"
+      }
+    ],
+    "coords": [
+      -75.5,
+      -11.78
+    ],
+    "founded": 1200,
+    "rank": 3,
+    "empires": [
+      "inca"
+    ]
+  },
+  {
+    "id": "machu-picchu",
+    "modern": "Machu Picchu, Pérou",
+    "names": [
+      {
+        "name": "Machu Picchu"
+      }
+    ],
+    "coords": [
+      -72.545,
+      -13.163
+    ],
+    "founded": 1450,
+    "rank": 3,
+    "empires": [
+      "inca"
+    ]
+  },
+  {
+    "id": "ollantaytambo",
+    "modern": "Ollantaytambo, Pérou",
+    "names": [
+      {
+        "name": "Ollantaytambo"
+      }
+    ],
+    "coords": [
+      -72.26,
+      -13.26
+    ],
+    "founded": 1440,
+    "rank": 3,
+    "empires": [
+      "inca"
+    ]
+  },
+  {
+    "id": "vilcabamba",
+    "modern": "Vilcabamba, Pérou",
+    "names": [
+      {
+        "name": "Vilcabamba"
+      }
+    ],
+    "coords": [
+      -72.9,
+      -12.9
+    ],
+    "founded": 1536,
+    "rank": 3,
+    "empires": [
+      "inca"
+    ]
+  },
+  {
+    "id": "mapocho",
+    "modern": "Santiago, Chili (vallée du Mapocho)",
+    "names": [
+      {
+        "name": "Vallée du Mapocho"
+      }
+    ],
+    "coords": [
+      -70.65,
+      -33.45
+    ],
+    "founded": 1200,
+    "rank": 3,
+    "empires": [
+      "inca"
+    ]
+  },
+  {
+    "id": "quipaipan",
+    "modern": "Quipaipan, près de Cuzco, Pérou",
+    "names": [
+      {
+        "name": "Quipaipan"
+      }
+    ],
+    "coords": [
+      -72.05,
+      -13.55
+    ],
+    "founded": 1200,
+    "rank": 3,
+    "empires": [
+      "inca"
+    ]
+  },
+  {
+    "id": "maule",
+    "modern": "Fleuve Maule, Chili",
+    "names": [
+      {
+        "name": "Frontière du Maule"
+      }
+    ],
+    "coords": [
+      -71.5,
+      -35.4
+    ],
+    "founded": 1200,
+    "rank": 3,
+    "empires": [
+      "inca"
+    ]
+  },
+  {
+    "id": "yahuarcocha",
+    "modern": "Lac Yahuarcocha, Équateur",
+    "names": [
+      {
+        "name": "Yahuarcocha"
+      }
+    ],
+    "coords": [
+      -78.1,
+      0.37
+    ],
+    "founded": 1200,
+    "rank": 3,
+    "empires": [
+      "inca"
+    ]
+  },
+  {
+    "id": "ambato",
+    "modern": "Ambato, Équateur",
+    "names": [
+      {
+        "name": "Ambato"
+      }
+    ],
+    "coords": [
+      -78.62,
+      -1.24
+    ],
+    "founded": 1200,
+    "rank": 3,
+    "empires": [
+      "inca"
+    ]
+  },
+  {
+    "id": "chucuito",
+    "modern": "Chucuito, Pérou",
+    "names": [
+      {
+        "name": "Chucuito"
+      }
+    ],
+    "coords": [
+      -69.89,
+      -16.21
+    ],
+    "founded": 1200,
+    "rank": 3,
+    "empires": [
+      "inca"
+    ]
+  },
+  {
+    "id": "andahuaylas",
+    "modern": "Andahuaylas, Pérou",
+    "names": [
+      {
+        "name": "Andahuaylas"
+      }
+    ],
+    "coords": [
+      -73.37,
+      -13.66
+    ],
+    "founded": 1200,
+    "rank": 3,
+    "empires": [
+      "inca"
+    ]
+  },
+  {
+    "id": "ancasmayo",
+    "modern": "Río Ancasmayo, Équateur-Colombie",
+    "names": [
+      {
+        "name": "Río Ancasmayo"
+      }
+    ],
+    "coords": [
+      -77.7,
+      0.8
+    ],
+    "founded": 1200,
+    "rank": 3,
+    "empires": [
+      "inca"
     ]
   }
 ]

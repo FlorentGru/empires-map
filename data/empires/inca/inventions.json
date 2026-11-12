@@ -1,0 +1,162 @@
+[
+  {
+    "id": "quipu",
+    "name": "Le quipu, écriture de nœuds",
+    "year": 1450,
+    "approx": true,
+    "place": "Cuzco",
+    "at": [
+      -71.97,
+      -13.52
+    ],
+    "category": "administration",
+    "description": "Le quipu est un assemblage de cordelettes de coton ou de laine sur lesquelles des nœuds, selon leur forme, leur position et leur couleur, notent des nombres décimaux et sans doute d'autres informations. Les quipucamayocs, spécialistes formés à Cuzco, comptent ainsi les récoltes, les greniers et la population. Le quipu n'est pas une invention inca : il existe dans les Andes bien avant, mais l'Empire l'adopte et le généralise à grande échelle.",
+    "impact": "Sans écriture au sens strict, l'État inca tient la comptabilité de millions de sujets. Les quipus sont l'outil central d'un empire d'une grande précision administrative.",
+    "sources": [
+      {
+        "label": "Quipu",
+        "url": "https://fr.wikipedia.org/wiki/Quipu"
+      }
+    ]
+  },
+  {
+    "id": "qhapaq-nan",
+    "name": "Le qhapaq ñan et les ponts de corde",
+    "year": 1470,
+    "approx": true,
+    "place": "Cuzco et Andes",
+    "at": [
+      -72,
+      -13.5
+    ],
+    "category": "technique",
+    "description": "Le qhapaq ñan est le « chemin royal » : un réseau d'environ 30 000 km de routes, d'escaliers taillés et de chaussées, qui traverse les Andes et la côte. Pour franchir les gorges, les Incas tendent des ponts suspendus en fibres d'herbe tressées, renouvelés chaque année par les communautés voisines. Le réseau s'appuie sur des routes plus anciennes (Wari, Chimú) que l'Empire a regroupées et prolongées, sans roue ni cheval.",
+    "impact": "Il relie du nord au sud un empire de 4 000 km de long et permet de déplacer soldats, messagers et marchandises. Il est classé au patrimoine mondial de l'UNESCO.",
+    "sources": [
+      {
+        "label": "Qhapaq Ñan",
+        "url": "https://fr.wikipedia.org/wiki/Qhapaq_Ñan"
+      }
+    ]
+  },
+  {
+    "id": "andenes",
+    "name": "Les terrasses agricoles (andenes)",
+    "year": 1450,
+    "approx": true,
+    "place": "Vallée sacrée, Pisac et Moray",
+    "at": [
+      -72.2,
+      -13.3
+    ],
+    "category": "agriculture",
+    "description": "Dans les montagnes, les Incas taillent les pentes en terrasses de pierre appelées andenes. Elles retiennent la terre, évitent l'érosion et utilisent la chaleur de la pierre pour limiter le gel. Un système de canaux et de drains les arrose. À Moray, de grandes terrasses circulaires permettent de tester des cultures à différentes altitudes. L'idée existait avant l'Empire, mais l'État la déploie à grande échelle.",
+    "impact": "Les terrasses transforment des versants abrupts en champs de maïs et de pommes de terre. Elles nourrissent l'Empire et sont encore utilisées aujourd'hui.",
+    "sources": [
+      {
+        "label": "Empire inca",
+        "url": "https://fr.wikipedia.org/wiki/Empire_inca"
+      }
+    ]
+  },
+  {
+    "id": "chuno",
+    "name": "Le chuño : pommes de terre lyophilisées",
+    "year": 1450,
+    "approx": true,
+    "place": "Altiplano du Collao",
+    "at": [
+      -70.3,
+      -15.7
+    ],
+    "category": "agriculture",
+    "description": "Sur l'altiplano, les nuits glacées et les jours secs servent à fabriquer le chuño. Les pommes de terre sont étalées pour geler la nuit, puis piétinées pour en extraire l'eau et séchées au soleil. Le produit obtenu, léger, se garde plusieurs années. Cette technique de lyophilisation naturelle est plus ancienne que l'Empire, mais celui-ci l'utilise pour remplir ses greniers (collcas) et nourrir ses armées.",
+    "impact": "Le chuño permet de stocker la nourriture pendant des années et de ravitailler soldats et travailleurs, ce qui rend possibles de grandes campagnes éloignées de Cuzco.",
+    "sources": [
+      {
+        "label": "Chuño",
+        "url": "https://fr.wikipedia.org/wiki/Chuño"
+      }
+    ]
+  },
+  {
+    "id": "chasquis",
+    "name": "Les chasquis et les tambos",
+    "year": 1470,
+    "approx": true,
+    "place": "Cuzco et qhapaq ñan",
+    "at": [
+      -72,
+      -13.52
+    ],
+    "category": "administration",
+    "description": "Le long du qhapaq ñan, des relais appelés tambos sont placés tous les quelques kilomètres. Des coureurs, les chasquis, s'y relaient en portant des messages, parfois accompagnés d'un quipu, et s'annoncent en soufflant dans une conque. Selon les chroniqueurs, une information peut parcourir plusieurs centaines de kilomètres par jour. Les tambos servent aussi d'étapes pour l'armée, avec vivres et logement.",
+    "impact": "Un État sans cheval ni écriture reçoit les nouvelles de ses provinces en quelques jours. La poste inca rend le contrôle de l'Empire possible.",
+    "sources": [
+      {
+        "label": "Chasqui",
+        "url": "https://fr.wikipedia.org/wiki/Chasqui"
+      }
+    ]
+  },
+  {
+    "id": "maconnerie-polygonale",
+    "name": "La maçonnerie polygonale sans mortier",
+    "year": 1450,
+    "approx": true,
+    "place": "Cuzco et Sacsayhuamán",
+    "at": [
+      -71.98,
+      -13.51
+    ],
+    "category": "architecture",
+    "description": "Les murs incas, à Cuzco, à Sacsayhuamán ou à Machu Picchu, sont faits de blocs de pierre taillés à la perfection pour s'emboîter sans mortier. Certains blocs pèsent plusieurs tonnes. Les maçons, avec des outils de pierre et de bronze, ajustent les pierres à la forme voisine. Les murs sont légèrement inclinés, avec des niches trapézoïdales, ce qui les aide à résister aux tremblements de terre fréquents dans les Andes.",
+    "impact": "Ces murs ont résisté à des séismes qui ont détruit les bâtiments espagnols. Ils sont devenus l'image de l'architecture inca.",
+    "sources": [
+      {
+        "label": "Cuzco",
+        "url": "https://fr.wikipedia.org/wiki/Cuzco"
+      }
+    ]
+  },
+  {
+    "id": "collcas",
+    "name": "Les collcas : greniers d’État",
+    "year": 1460,
+    "approx": true,
+    "place": "Huánuco Pampa",
+    "at": [
+      -76.07,
+      -9.87
+    ],
+    "category": "administration",
+    "description": "Les collcas sont des entrepôts de pierre alignés sur les pentes, à proximité des centres administratifs comme Huánuco Pampa ou Hatun Colla. Ils stockent maïs, chuño, tissus et armes. Leur emplacement sur les versants ventés favorise la ventilation et la conservation. Les récoltes viennent des terres de l'Inca et du Soleil ; l'État redistribue ces stocks aux armées, aux travailleurs de la mita et, parfois, aux communautés frappées par la disette.",
+    "impact": "Ces greniers servent d'assurance contre la famine et de réserve pour les armées. Ils sont la base d'une économie sans marché ni monnaie.",
+    "sources": [
+      {
+        "label": "Empire inca",
+        "url": "https://fr.wikipedia.org/wiki/Empire_inca"
+      }
+    ]
+  },
+  {
+    "id": "trepanation",
+    "name": "La trépanation du crâne",
+    "year": 1490,
+    "approx": true,
+    "place": "Cuzco et Andes centrales",
+    "at": [
+      -72,
+      -13.5
+    ],
+    "category": "medecine",
+    "description": "Les chirurgiens andins pratiquent la trépanation, qui consiste à ouvrir le crâne avec un couteau de pierre ou de métal (le tumi). Ils soignent ainsi des fractures dues aux combats, aux frondes et aux massues. Des crânes retrouvés montrent des os cicatrisés, preuve que beaucoup de patients survivent. La technique est plus ancienne que l'Empire, mais il l'a beaucoup pratiquée dans ses armées, comme le montrent les nécropoles de Cuzco.",
+    "impact": "Les taux de survie, plus élevés que dans l'Europe de la même époque, montrent une médecine de guerre avancée, longtemps méconnue.",
+    "sources": [
+      {
+        "label": "Trépanation",
+        "url": "https://fr.wikipedia.org/wiki/Trépanation"
+      }
+    ]
+  }
+]
