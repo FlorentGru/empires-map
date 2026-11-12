@@ -31,6 +31,7 @@ const EMPIRE_SPRITES: Record<string, { faction: Faction; archetype: Archetype }>
   china: { faction: 'chinois', archetype: 'empereur-chinois' },
   mongols: { faction: 'mongols', archetype: 'khan' },
   ottomans: { faction: 'janissaires', archetype: 'sultan' },
+  inca: { faction: 'incas', archetype: 'souverain-precolombien' },
 };
 
 /** Au-delà, la légende des entités est tronquée (périodes de division). */
