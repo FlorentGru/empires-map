@@ -1,0 +1,311 @@
+[
+  {
+    "id": "soundiata-keita",
+    "name": "Soundiata Keïta",
+    "archetype": "mansa",
+    "faction": "mandingues",
+    "born": 1190,
+    "died": 1255,
+    "title": "Fondateur de l'Empire du Mali",
+    "bio": "Soundiata (ou Sundjata, Mari Diata) Keïta est le héros de l'épopée mandingue, que les griots transmettent depuis des siècles. Fils du roi du Manden Naré Maghan et de Sogolon, une femme difforme venue de Do, il est, selon le récit, infirme jusqu'à l'âge de sept ans : un jour il se lève en arrachant un arbre. Son demi-frère Dankaran Touman, devenu roi, l'exile avec sa mère. Pendant ce temps, Soumaoro Kanté, roi sosso, soumet le Manden. Soundiata rassemble des alliés, revient, et bat Soumaoro à Kirina vers 1235. Il se fait proclamer mansa, organise l'empire et, selon la tradition, réunit l'assemblée de Kangaba où est proclamée la charte du Manden. Ses lieutenants conquièrent le Bambouk, la Gambie et le Sahel. Il meurt vers 1255, noyé ou frappé accidentellement, selon les versions. Attention : l'essentiel de ce que l'on sait vient de la tradition orale et d'Ibn Khaldoun (vers 1380), qui l'appelle Mari Diata. Les dates de naissance et de mort sont reconstituées ; son existence historique est certaine, mais les détails de sa vie sont en grande partie légendaires.",
+    "keyFacts": [
+      "Vers 1235 : bat Soumaoro Kanté à Kirina et fonde le Mali",
+      "Vers 1236 : charte du Manden, selon la tradition",
+      "Vers 1240-1255 : ses lieutenants atteignent le Bambouk, la Gambie et Oualata",
+      "Vers 1255 : meurt dans des circonstances discutées",
+      "Épopée toujours chantée par les griots du Mali, de Guinée et du Sénégal"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Soundiata Keïta",
+        "url": "https://fr.wikipedia.org/wiki/Soundiata_Ke%C3%AFta"
+      }
+    ]
+  },
+  {
+    "id": "soumaoro-kante",
+    "name": "Soumaoro Kanté",
+    "archetype": "roi",
+    "faction": "sosso",
+    "died": 1235,
+    "title": "Roi forgeron du Sosso, rival de Soundiata",
+    "bio": "Soumaoro Kanté est le roi du Sosso, un royaume du haut Niger qui domine le début du XIIIᵉ siècle. Dans l'épopée de Soundiata, c'est un forgeron redouté, maître des esprits : il est entouré de fétiches, vêtu de peaux et protégé par des interdits magiques. La tradition lui attribue la conquête du Ghana (Koumbi Saleh, vers 1203) et du Manden, dont il massacre les princes, sauf Soundiata, tenu pour trop faible. Selon l'épopée, il possède aussi un balafon sacré (instrument à lames de bois), que le griot Balla Fasséké découvrira dans sa demeure. Il est défait à Kirina, vers 1235, par Soundiata, dont une flèche à ergot de coq blanc l'aurait blessé, avant qu'il disparaisse dans les montagnes. Les sources arabes ne mentionnent pas son nom : tout ce qu'on sait vient de traditions orales, qui transforment un chef historique en figure de sorcier. Les historiens estiment qu'il a existé, mais pas qu'il ait dominé tout le Ghana. Il est resté, dans la mémoire mandingue, l'ennemi légendaire de Soundiata.",
+    "keyFacts": [
+      "Vers 1203 : attaque Koumbi Saleh, capitale du Ghana, selon la tradition",
+      "Soumet le Manden et ses princes avant Soundiata",
+      "Vers 1235 : battu à Kirina par Soundiata",
+      "Disparaît dans les montagnes (Koulikoro) selon l'épopée",
+      "Instrument sacré : le balafon, attribué à son atelier de forgeron"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Soumaoro Kanté",
+        "url": "https://fr.wikipedia.org/wiki/Soumaoro_Kant%C3%A9"
+      }
+    ]
+  },
+  {
+    "id": "sogolon",
+    "name": "Sogolon Kondé",
+    "archetype": "sage",
+    "faction": "mandingues",
+    "title": "Mère de Soundiata, « femme-buffle »",
+    "bio": "Sogolon Kondé est la mère de Soundiata. Dans l'épopée mandingue, elle est une femme difforme, parfois appelée la « femme-buffle » (Sogolon Djata), venue de Do : un chasseur l'a promise au roi Naré Maghan, qui doit épouser la femme-buffle pour donner naissance à un grand roi. Elle élève son fils infirme, qui ne marche pas avant l'âge de sept ans, et le soutient face aux moqueries de la première épouse du roi, Sassouma Bérété. Son rôle est central dans le récit : elle accompagne Soundiata dans son exil, protège ses frères et sœurs, et lui prête sa force morale pour se relever. Après la mort du roi, le trône est donné à Dankaran Touman, le demi-frère de Soundiata, et Sogolon est insultée par Sassouma ; la tradition raconte qu'elle quitte le Manden avec ses enfants. Elle meurt en exil, à Mema selon certaines versions. Aucune source arabe ne la mentionne, et son histoire est transmise par l'épopée, ce qui la rend impossible à dater. Elle reste, dans la culture mandingue, un symbole de la force des mères.",
+    "keyFacts": [
+      "Épouse du roi Naré Maghan, mère de Soundiata, selon l'épopée",
+      "Élève son fils infirme jusqu'à l'âge de sept ans",
+      "Part en exil avec ses enfants après les intrigues de Sassouma",
+      "Meurt en exil, à Mema selon certaines versions"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Soundiata Keïta",
+        "url": "https://fr.wikipedia.org/wiki/Soundiata_Ke%C3%AFta"
+      }
+    ]
+  },
+  {
+    "id": "aboubakri-ii",
+    "name": "Aboubakri II",
+    "archetype": "mansa",
+    "faction": "mandingues",
+    "title": "Mansa de l'expédition atlantique",
+    "bio": "Aboubakri II (Abu Bakr) est un mansa du Mali connu surtout par un récit de l'historien arabe al-Umari, composé vers 1340. Selon ce texte, Mansa Moussa explique à un émir du Caire, Ibn Amir Hajib, comment il est devenu roi : son prédécesseur avait cherché à atteindre l'extrémité de l'océan Atlantique. Il fit équiper 200 bateaux, qui ne revinrent pas, sauf un dont le capitaine parla d'un courant mortel. Le roi fit alors armer 2 000 navires, dont mille pour lui-même, et partit en laissant le pouvoir à son lieutenant, Moussa. Il ne revint jamais. L'histoire est célèbre depuis le XXᵉ siècle, certains y voyant une traversée de l'Atlantique jusqu'au Brésil ou aux Antilles, mais aucune preuve archéologique ne le montre. D'autres historiens estiment que le récit est exagéré ou symbolique. L'identité du roi est elle-même discutée : les listes de rois mandingues ne connaissent pas toujours un Aboubakri II, et l'on a même proposé d'y voir un autre nom pour le prédécesseur direct de Moussa. La date de 1311 est donc une estimation autour de laquelle les historiens discutent.",
+    "keyFacts": [
+      "Vers 1311 : envoie une flotte explorer l'Atlantique, selon al-Umari",
+      "Part lui-même avec 2 000 bateaux et ne revient jamais",
+      "Laisse le pouvoir à Moussa, qui devient mansa vers 1312",
+      "Récit rapporté par Moussa lui-même, au Caire en 1324"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Aboubakari II",
+        "url": "https://fr.wikipedia.org/wiki/Aboubakari_II"
+      }
+    ]
+  },
+  {
+    "id": "mansa-moussa",
+    "name": "Mansa Moussa",
+    "archetype": "mansa",
+    "faction": "mandingues",
+    "born": 1280,
+    "died": 1337,
+    "title": "Le mansa de l'or, bâtisseur de Tombouctou",
+    "bio": "Moussa Ier (Kankou Moussa) devient mansa du Mali vers 1312. Il agrandit l'empire, qui atteint sa plus grande étendue, et fait de la mosquée et de la cour des lieux de savoir. Son pèlerinage à La Mecque, en 1324, est resté célèbre : il traverse le Sahara avec une immense suite, les chroniqueurs parlent de dizaines de milliers de personnes et de tonnes d'or. Au Caire, il dépense tant que le cours de l'or chute pendant plusieurs années, selon al-Umari. À son retour, il ramène des juristes, des livres et l'architecte Abou Ishaq es-Sahéli, qui construit la mosquée Djingareyber de Tombouctou. Il soumet Gao et Tombouctou, et son empire apparaît sur l'Atlas catalan de 1375 : un roi noir assis, avec une pépite d'or. Il meurt vers 1337, laissant le trône à son fils Maghan, puis à son frère Souleymane. Les chiffres du pèlerinage viennent de témoins arabes de seconde main, et les historiens les jugent très gonflés. Sa naissance (vers 1280) est une estimation. Sa fortune, parfois comparée à celle des plus riches hommes de l'histoire, ne peut pas être calculée de manière sérieuse.",
+    "keyFacts": [
+      "Vers 1312 : devient mansa après Aboubakri II",
+      "1324 : pèlerinage à La Mecque, séjour au Caire",
+      "Vers 1325 : soumet Gao et Tombouctou, fait bâtir Djingareyber",
+      "1375 : figure sur l'Atlas catalan comme maître de l'or",
+      "Vers 1337 : meurt ; son frère Souleymane règne en 1341"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Mansa Moussa",
+        "url": "https://fr.wikipedia.org/wiki/Mansa_Moussa"
+      }
+    ]
+  },
+  {
+    "id": "mansa-souleymane",
+    "name": "Mansa Souleymane",
+    "archetype": "mansa",
+    "faction": "mandingues",
+    "born": 1300,
+    "died": 1360,
+    "title": "Mansa du Mali visité par Ibn Battûta",
+    "bio": "Souleymane Keïta, frère de Moussa Ier, règne de 1341 à 1360. Il succède à Maghan Ier, fils de Moussa, dont le règne est court (1337-1341). Les sources arabes, surtout Ibn Battûta, qui le rencontre en 1352-1353, le décrivent comme plus économe que son frère, au point que ses cadeaux paraissent maigres. Il tient son empire avec fermeté : l'empire reste étendu, sûr, et la justice y est réputée. Mais son règne est marqué par une conspiration : sa femme principale, Kassa, est accusée d'avoir soutenu Dougha, un chef de la cour qui s'est révolté. Elle est emprisonnée, puis libérée. Il reçoit aussi Ibn Battûta, qui assiste à des cérémonies à la cour, où les poètes se déguisent en oiseaux et les griots chantent la gloire des rois. Il meurt vers 1360, et ses successeurs (Kamba puis Mari Diata II) sont moins stables. Beaucoup de détails sur son règne viennent de la seule Rihla d'Ibn Battûta, dictée trois ans après son passage, et il vaut mieux les prendre comme un portrait, non comme un procès-verbal.",
+    "keyFacts": [
+      "1341 : devient mansa à la mort de Maghan Ier",
+      "1352-1353 : reçoit Ibn Battûta pendant huit mois",
+      "Affaire Kassa et Dougha : une conspiration de palais",
+      "Vers 1360 : meurt ; troubles de succession"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Empire du Mali",
+        "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+      }
+    ]
+  },
+  {
+    "id": "kassa",
+    "name": "Kassa (Qasa)",
+    "archetype": "sultane",
+    "faction": "mandingues",
+    "title": "Épouse principale de Mansa Souleymane",
+    "bio": "Kassa (Qasa) est la « qasa », la première épouse du mansa Souleymane, et sans doute une femme de grand pouvoir. Chez les Mandingues, la qasa (ou kassa) désigne à la fois le titre de reine et le nom propre de cette femme : elle siège aux côtés du roi, ses ordres sont écoutés et elle apparaît dans les cérémonies. Ibn Battûta, qui visite le Mali en 1352-1353, raconte qu'elle a été accusée de comploter contre son mari. Elle aurait soutenu Dougha, un chef qui s'est révolté contre Souleymane. Le mansa la fait emprisonner ; la suite de l'affaire est mal connue. Ibn Battûta décrit un pays où les femmes sont libres et visibles, ce qui le surprend, lui, Marocain, mais où le pouvoir des reines reste précaire. L'histoire de Kassa est un des rares portraits de femmes politiques du Mali médiéval ; le texte est bref, et il faut le lire avec prudence : le voyageur rapporte surtout ce qu'on lui a raconté à la cour, et peut déformer les noms ou les faits.",
+    "keyFacts": [
+      "Épouse principale de Souleymane, reine (qasa) reconnue",
+      "1352-1353 : affaire Dougha, accusation de complot",
+      "Emprisonnée par le mansa ; la suite est mal connue",
+      "Un des rares portraits de femmes du pouvoir malien, par Ibn Battûta"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Empire du Mali",
+        "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+      }
+    ]
+  },
+  {
+    "id": "ibn-battuta",
+    "name": "Ibn Battûta",
+    "archetype": "diplomate",
+    "faction": "arabes",
+    "born": 1304,
+    "died": 1369,
+    "title": "Voyageur marocain, témoin du Mali",
+    "bio": "Ibn Battûta, né à Tanger en 1304, est un juriste et voyageur qui parcourt pendant près de trente ans l'Afrique, l'Asie et l'Europe. En 1352, il rejoint le Mali après avoir traversé le Sahara par Teghaza et Oualata. Il reste huit mois à la cour de Mansa Souleymane et y observe la justice, la piété et la sécurité du pays. Il apprécie la rareté des vols et des injustices, mais dénonce les coutumes jugées peu conformes à l'islam : femmes dévêtues, absence de séparation des sexes, petits cadeaux jugés mesquins. Il décrit les cérémonies de la cour, les poètes en habits d'oiseaux et les griots. De retour à Fès, il dicte sa Rihla en 1356 à un secrétaire, Ibn Juzayy, ce qui explique des inexactitudes et des passages recopiés. Sa visite au Mali est notre principal témoignage de première main sur l'empire à son apogée. Les historiens discutent de la réalité de certains de ses voyages (Chine, Constantinople), mais le séjour au Mali est généralement jugé crédible, même si la localisation de la capitale, qu'il ne nomme pas clairement, reste discutée.",
+    "keyFacts": [
+      "1304 : naît à Tanger",
+      "1325 : quitte le Maroc pour le pèlerinage et ne rentre qu'en 1349",
+      "1352-1353 : voyage au Mali, séjour de huit mois",
+      "1356 : dicte la Rihla à Fès",
+      "Vers 1369 : meurt au Maroc"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Ibn Battûta",
+        "url": "https://fr.wikipedia.org/wiki/Ibn_Batt%C3%BBta"
+      }
+    ]
+  },
+  {
+    "id": "al-umari",
+    "name": "Ibn Fadl Allah al-Umari",
+    "archetype": "sage",
+    "faction": "arabes",
+    "born": 1301,
+    "died": 1349,
+    "title": "Encyclopédiste de Damas, historien du Mali",
+    "bio": "Ibn Fadl Allah al-Umari est un haut fonctionnaire et encyclopédiste de Damas, sous le sultanat mamelouk. Vers 1340, il compose une immense encyclopédie, Masalik al-absar, où il consacre un chapitre au Mali. Il passe au Caire douze ans après le séjour de Moussa et interroge ceux qui l'ont connu, dont l'émir Ibn Amir Hajib, qui avait servi d'intermédiaire. Il y rapporte l'effet du pèlerinage de 1324 sur le cours de l'or, la richesse du Mali, la puissance de son souverain et l'histoire de l'expédition d'Aboubakri II dans l'Atlantique. Al-Umari n'est jamais allé en Afrique de l'Ouest : il se fonde sur des récits de seconde main, ce qui oblige à lire ses chiffres avec précaution. C'est cependant la source la plus proche des faits pour le règne de Moussa, plus proche que la Rihla d'Ibn Battûta (1352) ou qu'Ibn Khaldoun (vers 1380). Son œuvre est aussi précieuse pour la géographie de l'Afrique : il décrit les royaumes du Soudan, les routes caravanières et l'économie de l'or, tels que les voyageurs du Caire les racontaient.",
+    "keyFacts": [
+      "1301 : naît à Damas",
+      "Vers 1340 : rédige les Masalik al-absar, avec un chapitre sur le Mali",
+      "Recueille au Caire les récits sur le pèlerinage de Moussa (1324)",
+      "Rapporte l'expédition atlantique d'Aboubakri II",
+      "1349 : meurt à Damas"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Ibn Fadl Allah al-Umari",
+        "url": "https://fr.wikipedia.org/wiki/Ibn_Fadl_Allah_al-Umari"
+      }
+    ]
+  },
+  {
+    "id": "ibn-khaldoun",
+    "name": "Ibn Khaldoun",
+    "archetype": "sage",
+    "faction": "arabes",
+    "born": 1332,
+    "died": 1406,
+    "title": "Historien maghrébin, chroniqueur de la dynastie Keïta",
+    "bio": "Ibn Khaldoun, né à Tunis en 1332, est un historien, juriste et philosophe, auteur de la célèbre Muqaddima, une réflexion sur la naissance et la chute des États. Dans son Livre des exemples (Kitab al-Ibar), vers 1380, il consacre quelques pages à l'histoire du Mali. Il en donne la liste des rois depuis Mari Diata (Soundiata), cite Sakoura, Moussa et Souleymane, décrit les conquêtes et raconte la fin tourmentée de Mari Diata II, qui aurait dilapidé les trésors de la dynastie. Il n'est jamais allé au Mali et ne connaît le pays que par des marchands, des pèlerins, des maghrébins revenus d'Afrique noire, et, dit-il, par des Égyptiens qui ont rencontré Moussa. Son récit est une des deux sources arabes de base de l'histoire du Mali, avec al-Umari et Ibn Battûta. Il écrit près de 150 ans après la fondation de l'empire, ce qui explique que les dates soient floues ; on lui reproche aussi de mêler des noms réels et des noms déformés. Il meurt au Caire en 1406.",
+    "keyFacts": [
+      "1332 : naît à Tunis",
+      "Vers 1380 : écrit le Kitab al-Ibar avec le passage sur les rois du Mali",
+      "Donne la liste des mansas de Mari Diata à Mari Diata II",
+      "Théorise le cycle des dynasties dans la Muqaddima",
+      "1406 : meurt au Caire"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Ibn Khaldoun",
+        "url": "https://fr.wikipedia.org/wiki/Ibn_Khaldoun"
+      }
+    ]
+  },
+  {
+    "id": "abou-ishaq-es-saheli",
+    "name": "Abou Ishaq es-Sahéli",
+    "archetype": "sage",
+    "faction": "arabes",
+    "born": 1290,
+    "died": 1346,
+    "title": "Architecte et poète andalou de Mansa Moussa",
+    "bio": "Abou Ishaq Ibrahim es-Sahéli, né à Grenade vers 1290, est un poète et juriste d'Andalousie, parfois nommé « al-Tuwayjin ». Selon la tradition, Mansa Moussa le rencontre à La Mecque ou au Caire en 1324 et lui demande de le suivre au Mali. Il y construit, selon le Tarikh es-Soudan, des édifices en briques cuites et en plâtre : le palais royal de Gao, la mosquée Djingareyber de Tombouctou et la Madougou, un palais pour Moussa. On lui attribue ainsi la naissance de l'architecture soudano-sahélienne, où la brique de terre crue (banco) est renforcée par des poutres en bois dépassant des façades et par des tours. Il meurt à Tombouctou en 1346, selon la tradition, et sa tombe y est conservée. Mais les historiens estiment que son rôle est partiellement légendaire : le Tarikh es-Soudan, qui rapporte cette histoire, est écrit vers 1655, plus de trois siècles plus tard, et l'on a noté que des bâtiments de terre existaient déjà dans la région avant lui. Son nom reste cependant lié à la mosquée de Tombouctou et à l'idée d'un échange entre Afrique du Nord, Andalousie et Mali.",
+    "keyFacts": [
+      "Vers 1290 : naît à Grenade, en Andalousie",
+      "1324 : rencontre Mansa Moussa en pèlerinage",
+      "Vers 1325-1327 : construit à Gao et Tombouctou, dont Djingareyber",
+      "Vers 1346 : meurt à Tombouctou",
+      "Son rôle exact est discuté par les historiens"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Abou Ishaq es-Sahéli",
+        "url": "https://fr.wikipedia.org/wiki/Abou_Ishaq_es-Sah%C3%A9li"
+      }
+    ]
+  },
+  {
+    "id": "balla-fasseke",
+    "name": "Balla Fasséké",
+    "archetype": "sage",
+    "faction": "mandingues",
+    "born": 1190,
+    "died": 1250,
+    "title": "Griot et conseiller de Soundiata",
+    "bio": "Balla Fasséké (ou Bala Faséké Kouyaté) est, dans l'épopée de Soundiata, le griot du jeune prince : il lui a été donné par son père, le roi Naré Maghan, pour l'accompagner et lui rappeler l'histoire. C'est lui, dit la tradition, qui conseille Soundiata, l'accompagne en exil et chante la geste du Manden. Ses descendants, la famille Kouyaté, sont encore aujourd'hui les gardiens de cette mémoire : la tradition orale affirme qu'ils se transmettent le récit de génération en génération, en le chantant avec le balafon ou la kora. Balla Fasséké est aussi associé, par certains récits, au balafon de Soumaoro, un instrument sacré dont Soundiata s'empare après la victoire de Kirina, et qu'il donne à son griot. Le personnage est donc à la fois historique pour les Mandingues et légendaire pour les chercheurs : la tradition orale est précieuse pour comprendre la mémoire de l'empire, mais ses détails ne peuvent être datés. Les dates de naissance et de mort données ici sont des estimations conventionnelles. Aujourd'hui encore, les griots sont les gardiens de la généalogie des clans.",
+    "keyFacts": [
+      "Griot de Soundiata, donné par le roi Naré Maghan",
+      "Accompagne le prince en exil et dans ses campagnes",
+      "Chante la victoire de Kirina (vers 1235)",
+      "Ancêtre des griots Kouyaté, gardiens de la mémoire du Manden"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Griot",
+        "url": "https://fr.wikipedia.org/wiki/Griot"
+      }
+    ]
+  },
+  {
+    "id": "sonni-ali",
+    "name": "Sonni Ali",
+    "archetype": "roi",
+    "faction": "songhais",
+    "born": 1430,
+    "died": 1492,
+    "title": "Roi songhaï, vainqueur de Tombouctou et de Djenné",
+    "bio": "Sonni Ali (Sonni Ali Ber, « le Grand ») règne sur Gao de 1464 à 1492. Fils d'une dynastie de souverains songhaï, il est un guerrier sans pareil, qui n'a pas perdu un combat, selon la tradition. Il bat les Mossis, les Peuls, les Dogons et les Touaregs, prend Tombouctou en 1468 et Djenné en 1473 après un long siège, et réunit autour de Gao un État qui sera l'empire songhaï. Pour y parvenir, il s'appuie sur une flotte de pirogues sur le Niger et sur une cavalerie puissante. Il est vu par les chroniqueurs musulmans de Tombouctou comme un tyran, car il s'en prend aux clercs de Sankoré et pratique des cultes locaux, mais les traditions orales songhaï le montrent comme un grand magicien. Le Mali, déjà affaibli, perd les derniers vestiges de sa domination sur le moyen Niger. Il meurt en 1492, noyé en revenant d'une campagne, avant de laisser la place à l'askia Mohammed. La date de naissance donnée est une estimation, et les sources sont très partiales, la plupart écrites par des lettrés qui lui étaient hostiles.",
+    "keyFacts": [
+      "1464 : devient roi de Gao",
+      "1468 : prend Tombouctou aux Touaregs",
+      "1473 : prend Djenné après un siège de sept ans, selon le Tarikh",
+      "1492 : meurt, probablement noyé ; l'askia Mohammed prend le pouvoir"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Sonni Ali Ber",
+        "url": "https://fr.wikipedia.org/wiki/Sonni_Ali_Ber"
+      }
+    ]
+  },
+  {
+    "id": "leon-l-africain",
+    "name": "Léon l'Africain",
+    "archetype": "sage",
+    "faction": "arabes",
+    "born": 1488,
+    "died": 1554,
+    "title": "Géographe qui décrit Tombouctou vers 1510",
+    "bio": "Al-Hassan al-Wazzan, né à Grenade vers 1488 et élevé à Fès, est capturé par des corsaires en 1518, puis baptisé à Rome en 1520 par le pape Léon X sous le nom de Jean-Léon de Médicis : l'Europe le connaît comme Léon l'Africain. Diplomate au service du sultan du Maroc, il voyage au Sahara et jusqu'à Tombouctou, vers 1510 et 1513, puis écrit à Rome, en italien, sa Description de l'Afrique, publiée en 1550. Il y décrit Tombouctou : ses marchés, ses lettrés, le prix des livres manuscrits, un roi riche et la cherté du sel. Il évoque aussi le Mali comme un grand royaume en déclin, dont la capitale a l'air d'une ville de grande taille. Son récit est précieux, mais il est aussi parfois fantaisiste : écrit de mémoire, plus de dix ans après les faits, il contient des erreurs et des fantaisies, et l'on discute de la réalité de ses voyages. Il est cependant resté pendant deux siècles la source principale de l'Europe sur l'Afrique de l'Ouest. On ignore la date et le lieu de sa mort : sans doute à Tunis, vers 1554.",
+    "keyFacts": [
+      "Vers 1488 : naît à Grenade ; grandit à Fès",
+      "Vers 1510-1513 : visite Tombouctou et le Soudan",
+      "1518-1520 : capturé par des corsaires, baptisé à Rome par Léon X",
+      "1550 : sa Description de l'Afrique est imprimée à Venise",
+      "Vers 1554 : meurt, probablement à Tunis"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Léon l'Africain",
+        "url": "https://fr.wikipedia.org/wiki/L%C3%A9on_l'Africain"
+      }
+    ]
+  }
+]
