@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Empire du Mali",
+    "summary": "Né de l'union des clans mandingues du haut Niger autour de Soundiata Keïta, vers 1235, le Mali domine bientôt tout le Sahel, de l'Atlantique à Gao. Le mansa y règne depuis Niani sur des provinces et des royaumes soumis, enrichi par l'or du Bambouk et du Bouré et par les caravanes du Sahara.",
+    "years": [1235, 1670]
+  },
+  {
+    "name": "Mema",
+    "summary": "Royaume sahélien au nord-ouest du delta intérieur du Niger, héritier de l'ancien Ghana. Selon l'épopée, son roi accueille Soundiata en exil et lui prête des cavaliers pour affronter Soumaoro Kanté. Allié du premier Mali, il est ensuite absorbé dans l'empire.",
+    "years": [1235, 1236]
+  },
+  {
+    "name": "Tekrour",
+    "summary": "Royaume de la moyenne vallée du fleuve Sénégal, l'un des premiers d'Afrique de l'Ouest à adopter l'islam, au XIe siècle. Soumis par le Mali vers la fin du XIIIe siècle, il lui verse tribut, puis s'en détache quand l'empire s'affaiblit ; des chefs peuls le dominent ensuite.",
+    "years": [1290, 1375]
+  },
+  {
+    "name": "Takedda",
+    "summary": "Ville caravanière au sud-ouest de l'Aïr, connue pour son cuivre, que les Touaregs y extraient et qu'ils échangent contre l'or. Ibn Battûta y séjourne en 1353 sur son chemin de retour. Tributaire du Mali à son apogée, elle passe ensuite sous le contrôle des Touaregs.",
+    "years": [1290, 1352]
+  },
+  {
+    "name": "Jolof",
+    "summary": "Royaume wolof du nord-ouest de l'actuel Sénégal, en formation au XIVe siècle. Tributaire du Mali au temps de Mansa Moussa, il s'en affranchit dans la seconde moitié du siècle et fédère à son tour les royaumes côtiers du Cayor, du Baol, du Sine et du Saloum.",
+    "years": [1324, 1352]
+  }
+]

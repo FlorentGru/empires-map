@@ -1,0 +1,1252 @@
+{
+ "empire": "mali",
+ "basemapNote": "Empire composé (fromCarto) : pays Natural Earth 1:50m (Mali, Guinée, Sénégal, Gambie, Mauritanie, Niger, Guinée-Bissau) découpés par des régions nommées (_regions.geojson) suivant le haut Niger, le delta intérieur, la boucle du Niger et les fleuves Sénégal et Gambie. Extensions puis reculs successifs ; Tekrour, Jolof et Takedda tributaires, Mema allié (1235-1236). Teghaza (sel) n'est qu'un point de contrôle, hors territoire. Frontières approximatives.",
+ "steps": [
+  {
+   "id": "kirina-1235",
+   "year": 1235,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire du Mali",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Manden"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Pays sosso"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Mema",
+     "status": "allied",
+     "source": {
+      "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+      "region": "Mema"
+     }
+    }
+   ],
+   "notes": "Le Mali de 1235 est petit : le Manden (Kangaba, vallées du haut Niger, du Sankarani et du Niandan, de Siguiri jusqu'à Bamako) et les terres sosso conquises (Kan"
+  },
+  {
+   "id": "kouroukan-fouga-1236",
+   "year": 1236,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire du Mali",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Manden"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Pays sosso"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Mema",
+     "status": "allied",
+     "source": {
+      "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+      "region": "Mema"
+     }
+    }
+   ],
+   "notes": "Même cadre que 1235 : le Manden (Kangaba, vallées du haut Niger, du Sankarani et du Niandan, de Siguiri à Bamako) et le Sosso conquis (Kaniaga, Bélédougou, Koul"
+  },
+  {
+   "id": "conquetes-1255",
+   "year": 1255,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire du Mali",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Manden"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Pays sosso"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bouré"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bambouk"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Falémé et haute Gambie"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Gambie et Kaabu"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Kayes et Khasso"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Oualata et Aoukar"
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Le Mali de 1255 couvre le Manden (Kangaba, haut Niger de Siguiri à Bamako), le Bouré (Siguiri, Kouroussa), le Bambouk (entre Sénégal et Falémé, Kéniéba), le Kaa"
+  },
+  {
+   "id": "sakoura-1290",
+   "year": 1290,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire du Mali",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Manden"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Pays sosso"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bouré"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bambouk"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Falémé et haute Gambie"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Gambie et Kaabu"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Kayes et Khasso"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Oualata et Aoukar"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Ségou"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Delta intérieur et Djenné"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Gao"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Tekrour",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+      "region": "Tekrour"
+     }
+    },
+    {
+     "name": "Takedda",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+      "region": "Takedda et Aïr occidental"
+     }
+    }
+   ],
+   "notes": "Le Mali vers 1290 s'étend du Kaabu et de la Gambie (ouest) jusqu'à Gao (est), et de Kangaba, Ségou et Djenné (delta intérieur du Niger, sphère d'influence) au S"
+  },
+  {
+   "id": "aboubakri-1311",
+   "year": 1311,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire du Mali",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Manden"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Pays sosso"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bouré"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bambouk"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Falémé et haute Gambie"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Gambie et Kaabu"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Kayes et Khasso"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Oualata et Aoukar"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Ségou"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Delta intérieur et Djenné"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Gao"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Saloum"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Tekrour",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+      "region": "Tekrour"
+     }
+    },
+    {
+     "name": "Takedda",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+      "region": "Takedda et Aïr occidental"
+     }
+    }
+   ],
+   "notes": "Le Mali de 1311 va de la côte atlantique (Gambie, Casamance, estuaire du Saloum et du Sénégal) à Gao à l'est, et du Bambouk, du Bouré et du Manden au sud jusqu'"
+  },
+  {
+   "id": "moussa-1324",
+   "year": 1324,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire du Mali",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Manden"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Pays sosso"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bouré"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bambouk"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Falémé et haute Gambie"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Gambie et Kaabu"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Kayes et Khasso"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Oualata et Aoukar"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Ségou"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Delta intérieur et Djenné"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Gao"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Saloum"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Tekrour",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+      "region": "Tekrour"
+     }
+    },
+    {
+     "name": "Jolof",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+      "region": "Jolof"
+     }
+    },
+    {
+     "name": "Takedda",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+      "region": "Takedda et Aïr occidental"
+     }
+    }
+   ],
+   "notes": "Le Mali de 1324 s'étend de la côte atlantique (Gambie, Casamance, Sénégal) à Gao à l'est, du Bambouk, du Bouré et du Manden au sud jusqu'à Oualata, Teghaza (sel"
+  },
+  {
+   "id": "tombouctou-1325",
+   "year": 1325,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire du Mali",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Manden"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Pays sosso"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bouré"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bambouk"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Falémé et haute Gambie"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Gambie et Kaabu"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Kayes et Khasso"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Oualata et Aoukar"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Ségou"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Delta intérieur et Djenné"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Tombouctou et la boucle"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Gao"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Saloum"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Tekrour",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+      "region": "Tekrour"
+     }
+    },
+    {
+     "name": "Jolof",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+      "region": "Jolof"
+     }
+    },
+    {
+     "name": "Takedda",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+      "region": "Takedda et Aïr occidental"
+     }
+    }
+   ],
+   "notes": "Apogée du Mali vers 1325 : de la côte atlantique (Gambie, Casamance, Saloum) à Gao à l'est, du Bambouk, du Bouré et du Manden au sud jusqu'à Oualata, Tombouctou"
+  },
+  {
+   "id": "souleymane-1352",
+   "year": 1352,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire du Mali",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Manden"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Pays sosso"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bouré"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bambouk"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Falémé et haute Gambie"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Gambie et Kaabu"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Kayes et Khasso"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Oualata et Aoukar"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Ségou"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Delta intérieur et Djenné"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Tombouctou et la boucle"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Gao"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Saloum"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Tekrour",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+      "region": "Tekrour"
+     }
+    },
+    {
+     "name": "Jolof",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+      "region": "Jolof"
+     }
+    },
+    {
+     "name": "Takedda",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+      "region": "Takedda et Aïr occidental"
+     }
+    }
+   ],
+   "notes": "Même extension qu'en 1325 : de la côte atlantique (Gambie, Casamance) à Gao à l'est, du Bambouk, du Bouré et du Manden au sud (Niani, Kangaba) jusqu'à Oualata, "
+  },
+  {
+   "id": "successions-1375",
+   "year": 1375,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire du Mali",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Manden"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Pays sosso"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bouré"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bambouk"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Falémé et haute Gambie"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Gambie et Kaabu"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Kayes et Khasso"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Oualata et Aoukar"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Ségou"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Delta intérieur et Djenné"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Tombouctou et la boucle"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Tekrour",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+      "region": "Tekrour"
+     }
+    }
+   ],
+   "notes": "Le Mali de 1375 conserve le haut Niger, le Manden (Niani, Kangaba), le Bambouk, le Bouré, la Gambie et le Kaabu, Ségou et le delta intérieur (Djenné), Tomboucto"
+  },
+  {
+   "id": "mossis-1400",
+   "year": 1400,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire du Mali",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Manden"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Pays sosso"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bouré"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bambouk"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Falémé et haute Gambie"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Gambie et Kaabu"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Kayes et Khasso"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Oualata et Aoukar"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Ségou"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Delta intérieur et Djenné"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Tombouctou et la boucle"
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Le Mali de 1400 garde le haut Niger et le Manden (Niani, Kangaba, Bamako), le Bambouk, le Bouré, la Gambie et le Kaabu, Ségou, le delta intérieur autour de Djen"
+  },
+  {
+   "id": "tombouctou-1433",
+   "year": 1433,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire du Mali",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Manden"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Pays sosso"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bouré"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bambouk"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Falémé et haute Gambie"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Gambie et Kaabu"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Kayes et Khasso"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Ségou"
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Le Mali de 1433 est ramené au haut Niger et au Manden (Niani, Kangaba, Bamako, Siguiri), au Bambouk, au Bouré, à la Gambie et au Kaabu, avec Ségou ; la boucle d"
+  },
+  {
+   "id": "portugais-1455",
+   "year": 1455,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire du Mali",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Manden"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bouré"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bambouk"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Falémé et haute Gambie"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Gambie et Kaabu"
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Le Mali de 1455 tient le haut Niger et le Manden (Niani, Kangaba, Bamako, Siguiri), le Bambouk, le Bouré, la Gambie et le Kaabu (vassal ou autonome) ; Ségou est"
+  },
+  {
+   "id": "sonni-ali-1468",
+   "year": 1468,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire du Mali",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Manden"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bouré"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bambouk"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Falémé et haute Gambie"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Gambie et Kaabu"
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Le Mali de 1468 se limite au haut Niger et au Manden (Niani, Kangaba, Bamako, Siguiri), au Bambouk, au Bouré, à la Gambie et au Kaabu (autonome) ; Ségou est sou"
+  },
+  {
+   "id": "djenne-1473",
+   "year": 1473,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire du Mali",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Manden"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bouré"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bambouk"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Gambie et Kaabu"
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Le Mali de 1473 ne contrôle plus que le haut Niger et le Manden (Niani, Kangaba, Bamako, Siguiri), le Bouré, le Bambouk (en partie), la Gambie et le Kaabu (vass"
+  },
+  {
+   "id": "ambassade-1534",
+   "year": 1534,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire du Mali",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Manden"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bouré"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bambouk"
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Le Mali de 1534 se réduit au Manden et au haut Niger (Niani, Kangaba, Bamako, Siguiri), au Bouré et à une partie du Bambouk ; la Gambie est autonome et le Kaabu"
+  },
+  {
+   "id": "djenne-1599",
+   "year": 1599,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire du Mali",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Manden"
+       },
+       {
+        "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+        "region": "Bouré"
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Le Mali de 1599 ne tient plus que le Manden (Kangaba, haut Niger de Siguiri à Bamako) et le Bouré ; Niani est en recul, et le Bambouk, la Gambie et le Kaabu son"
+  },
+  {
+   "id": "segou-1670",
+   "year": 1670,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire du Mali",
+     "status": "core",
+     "source": {
+      "country": "^(Mali|Guinea|Senegal|Gambia|Mauritania|Niger|Guinea-Bissau)$",
+      "region": "Manden"
+     }
+    }
+   ],
+   "notes": "Le Mali de 1670 ne subsiste que comme petit État du Manden autour de Kangaba (rive du Niger, de Siguiri à Bamako) ; Niani est ravagée. Voisins : royaume bambara"
+  }
+ ],
+ "checkpoints": [
+  {
+   "name": "Niani",
+   "pt": [
+    -8.4,
+    11.4
+   ],
+   "where": "core"
+  },
+  {
+   "name": "Kangaba",
+   "pt": [
+    -8.4,
+    11.93
+   ],
+   "where": "core"
+  },
+  {
+   "name": "Bamako",
+   "pt": [
+    -8,
+    12.65
+   ],
+   "where": "core"
+  },
+  {
+   "name": "Siguiri",
+   "pt": [
+    -9.17,
+    11.42
+   ],
+   "where": "core"
+  },
+  {
+   "name": "Tombouctou",
+   "pt": [
+    -3,
+    16.77
+   ],
+   "where": "not-core",
+   "from": "kirina-1235",
+   "to": "moussa-1324"
+  },
+  {
+   "name": "Tombouctou",
+   "pt": [
+    -3,
+    16.77
+   ],
+   "where": "core",
+   "from": "tombouctou-1325",
+   "to": "mossis-1400"
+  },
+  {
+   "name": "Tombouctou",
+   "pt": [
+    -3,
+    16.77
+   ],
+   "where": "not-core",
+   "from": "tombouctou-1433"
+  },
+  {
+   "name": "Gao",
+   "pt": [
+    -0.04,
+    16.27
+   ],
+   "where": "not-core",
+   "from": "kirina-1235",
+   "to": "conquetes-1255"
+  },
+  {
+   "name": "Gao",
+   "pt": [
+    -0.04,
+    16.27
+   ],
+   "where": "core",
+   "from": "sakoura-1290",
+   "to": "souleymane-1352"
+  },
+  {
+   "name": "Gao",
+   "pt": [
+    -0.04,
+    16.27
+   ],
+   "where": "not-core",
+   "from": "successions-1375"
+  },
+  {
+   "name": "Djenné",
+   "pt": [
+    -4.55,
+    13.9
+   ],
+   "where": "not-core",
+   "from": "kirina-1235",
+   "to": "conquetes-1255"
+  },
+  {
+   "name": "Djenné",
+   "pt": [
+    -4.55,
+    13.9
+   ],
+   "where": "core",
+   "from": "sakoura-1290",
+   "to": "mossis-1400"
+  },
+  {
+   "name": "Djenné",
+   "pt": [
+    -4.55,
+    13.9
+   ],
+   "where": "not-core",
+   "from": "tombouctou-1433"
+  },
+  {
+   "name": "Oualata",
+   "pt": [
+    -7.03,
+    17.3
+   ],
+   "where": "not-core",
+   "from": "kirina-1235",
+   "to": "kouroukan-fouga-1236"
+  },
+  {
+   "name": "Oualata",
+   "pt": [
+    -7.03,
+    17.3
+   ],
+   "where": "core",
+   "from": "conquetes-1255",
+   "to": "mossis-1400"
+  },
+  {
+   "name": "Oualata",
+   "pt": [
+    -7.03,
+    17.3
+   ],
+   "where": "not-core",
+   "from": "tombouctou-1433"
+  },
+  {
+   "name": "Banjul",
+   "pt": [
+    -16.3,
+    13.4
+   ],
+   "where": "not-core",
+   "from": "kirina-1235",
+   "to": "kouroukan-fouga-1236"
+  },
+  {
+   "name": "Banjul",
+   "pt": [
+    -16.3,
+    13.4
+   ],
+   "where": "core",
+   "from": "conquetes-1255",
+   "to": "djenne-1473"
+  },
+  {
+   "name": "Banjul",
+   "pt": [
+    -16.3,
+    13.4
+   ],
+   "where": "not-core",
+   "from": "ambassade-1534"
+  },
+  {
+   "name": "Dakar",
+   "pt": [
+    -17.3,
+    14.75
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Agadez",
+   "pt": [
+    7.99,
+    16.97
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Ouagadougou",
+   "pt": [
+    -1.52,
+    12.37
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Conakry",
+   "pt": [
+    -13.7,
+    9.6
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Abidjan",
+   "pt": [
+    -4.02,
+    5.35
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Kumasi",
+   "pt": [
+    -1.62,
+    6.69
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Nouakchott",
+   "pt": [
+    -15.98,
+    18.08
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Teghaza",
+   "pt": [
+    -4.95,
+    23.6
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Ségou",
+   "pt": [
+    -6.27,
+    13.44
+   ],
+   "where": "not-core",
+   "from": "kirina-1235",
+   "to": "conquetes-1255"
+  },
+  {
+   "name": "Ségou",
+   "pt": [
+    -6.27,
+    13.44
+   ],
+   "where": "core",
+   "from": "sakoura-1290",
+   "to": "tombouctou-1433"
+  },
+  {
+   "name": "Ségou",
+   "pt": [
+    -6.27,
+    13.44
+   ],
+   "where": "not-core",
+   "from": "portugais-1455"
+  },
+  {
+   "name": "Kita",
+   "pt": [
+    -9.45,
+    13.07
+   ],
+   "where": "core",
+   "from": "kirina-1235",
+   "to": "tombouctou-1433"
+  },
+  {
+   "name": "Kita",
+   "pt": [
+    -9.45,
+    13.07
+   ],
+   "where": "not-core",
+   "from": "portugais-1455"
+  },
+  {
+   "name": "Kayes",
+   "pt": [
+    -11.44,
+    14.45
+   ],
+   "where": "core",
+   "from": "conquetes-1255",
+   "to": "tombouctou-1433"
+  },
+  {
+   "name": "Takedda",
+   "pt": [
+    7,
+    17.2
+   ],
+   "where": "vassal",
+   "from": "sakoura-1290",
+   "to": "souleymane-1352"
+  },
+  {
+   "name": "Takedda",
+   "pt": [
+    7,
+    17.2
+   ],
+   "where": "not-core",
+   "from": "successions-1375"
+  },
+  {
+   "name": "Podor",
+   "pt": [
+    -14.96,
+    16.65
+   ],
+   "where": "vassal",
+   "from": "sakoura-1290",
+   "to": "successions-1375"
+  },
+  {
+   "name": "Podor",
+   "pt": [
+    -14.96,
+    16.65
+   ],
+   "where": "not-core",
+   "from": "mossis-1400"
+  },
+  {
+   "name": "Jolof",
+   "pt": [
+    -15,
+    15
+   ],
+   "where": "vassal",
+   "from": "moussa-1324",
+   "to": "souleymane-1352"
+  },
+  {
+   "name": "Jolof",
+   "pt": [
+    -15,
+    15
+   ],
+   "where": "not-core",
+   "from": "successions-1375"
+  }
+ ]
+}
