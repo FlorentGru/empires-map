@@ -1,0 +1,1405 @@
+{
+  "id": "inca",
+  "name": "Empire inca",
+  "color": "#c4501f",
+  "start": 1438,
+  "end": 1533,
+  "description": "L'Empire inca, ou Tawantinsuyu (« les quatre parties réunies »), naît vers 1438 autour de Cuzco, dans les Andes du Pérou, quand Pachacutec repousse les Chancas. En moins d'un siècle, sans écriture, sans monnaie ni roue pour le transport, il s'étend de la Colombie au Chili grâce à ses routes, ses greniers et ses messagers à pied. Il rassemble des millions de sujets et des dizaines de peuples. Frappé par la variole, déchiré par la guerre civile entre Huáscar et Atahualpa, il tombe en 1532-1533 devant une poignée de conquistadors menés par Pizarro.",
+  "view": {
+    "center": [
+      -72,
+      -13
+    ],
+    "zoom": 3.6
+  },
+  "bounds": [
+    [
+      -95,
+      -45
+    ],
+    [
+      -40,
+      12
+    ]
+  ],
+  "apogee": {
+    "stepId": "huayna-capac-1525",
+    "note": "Vers 1525, sous Huayna Capac, l'Empire va de l'Ancasmayo au Maule. L'extension maximale se discute : le nord de l'Équateur et le Chili étaient peu contrôlés, et les dates d'expansion reposent sur des chroniques tardives (Cieza, Betanzos, Sarmiento) qui divergent."
+  },
+  "periods": [
+    {
+      "id": "pachacutec",
+      "name": "Pachacutec, le réformateur du monde",
+      "start": 1438,
+      "end": 1471,
+      "color": "#e0b97d",
+      "summary": "Un petit royaume menacé devient un empire. Après avoir sauvé Cuzco des Chancas, Pachacutec reconstruit la capitale, organise le Tawantinsuyu en quatre quartiers et lance les conquêtes vers le lac Titicaca et la côte nord. Les dates viennent de chroniqueurs tardifs et restent incertaines."
+    },
+    {
+      "id": "topa-inca",
+      "name": "Topa Inca, la grande expansion",
+      "start": 1471,
+      "end": 1493,
+      "color": "#d98a5b",
+      "summary": "Son fils Topa Inca pousse l'Empire vers le nord, jusqu'aux Cañaris de Tomebamba, et vers le sud, jusqu'au Chili. Au fleuve Maule, les Mapuches arrêtent l'avance inca. L'Empire atteint la plus grande taille de son histoire."
+    },
+    {
+      "id": "huayna-capac",
+      "name": "Huayna Capac, l'apogée et la chute",
+      "start": 1493,
+      "end": 1533,
+      "color": "#a8503a",
+      "summary": "Huayna Capac porte la frontière nord à l'Ancasmayo, puis meurt de la variole vers 1527. La guerre entre ses fils Huáscar et Atahualpa épuise l'Empire, et Pizarro capture Atahualpa à Cajamarca en 1532."
+    }
+  ],
+  "steps": [
+    {
+      "id": "chancas-1438",
+      "year": 1438,
+      "title": "Cuzco sauvé : la victoire sur les Chancas",
+      "type": "bataille",
+      "location": [
+        -72.05,
+        -13.54
+      ],
+      "zoom": 5.2,
+      "summary": "Vers 1438, la petite cité de Cuzco, au bord de l'abandon, repousse les Chancas, un peuple voisin venu d'Andahuaylas. Le vainqueur, le prince Cusi Yupanqui, devient l'Inca Pachacutec.",
+      "details": "Au début du XVᵉ siècle, les **Incas** ne sont encore qu'un petit peuple de la vallée de **Cuzco**, dans les Andes du sud du Pérou. Leurs voisins, les **Chancas** (un peuple de l'actuelle région d'Apurímac, autour d'Andahuaylas et de Vilcas Huamán), sont plus puissants et marchent sur la ville. Selon les chroniqueurs Cieza de León, Betanzos et Sarmiento de Gamboa, le vieil Inca Viracocha et son fils aîné s'enfuient. Un autre fils, **Cusi Yupanqui**, reste pour défendre Cuzco.\n\nLa bataille se joue devant la ville. Le récit inca, très marqué par la légende, raconte que les pierres des champs se transforment en guerriers (les *pururaucas*) pour aider les défenseurs. Les Chancas, dirigés par **Anco Huallo** (ou Uscovilca selon les versions), sont mis en déroute, et leurs chefs sont exécutés. Cusi Yupanqui prend alors le nom de **Pachacutec** (« celui qui retourne le monde »), et le pouvoir de son père s'efface.\n\nLes chroniqueurs ne s'accordent ni sur la date exacte, ni sur le rôle réel de Viracocha. Les spécialistes retiennent le plus souvent **vers 1438** pour l'avènement de Pachacutec, mais certains historiens contestent cette chronologie et placent les débuts de l'expansion plus tard. Ce qui est sûr : un petit royaume de montagne devient en quelques années l'État le plus dynamique des Andes.",
+      "consequences": [
+        "Cuzco domine désormais la vallée de l'Apurímac : les terres des Chancas, d'Andahuaylas jusqu'à Vilcas Huamán, sont ouvertes à la conquête.",
+        "Pachacutec devient Sapa Inca (« Inca unique ») et prend le pouvoir à la place de son père Viracocha.",
+        "Le mythe des pierres qui se lèvent pour défendre Cuzco devient un récit fondateur de la dynastie.",
+        "Les Chancas vaincus fournissent soldats et colons à l'armée inca."
+      ],
+      "territory": "chancas-1438",
+      "territoryNote": "Royaume de Cuzco encore minuscule : le bassin de Cuzco et les vallées voisines de l'Urubamba (Calca, Urubamba, Ollantaytambo) et du Vilcanota jusqu'à Urcos, soit un territoire d'environ 50 km autour de la ville ; aucune conquête hors du Cuzco. Voisins indépendants : les Chancas (Andahuaylas, Vilcas Huamán, vallée de l'Apurímac), les Quechuas d'Abancay, les Soras et Lucanas à l'ouest, les Collas autour du lac Titicaca (Hatun Colla), les Lupacas à Chucuito, les Huancas de Jauja, le royaume chimú sur la côte nord (Chan Chan), le royaume de Chincha sur la côte centre-sud, les Chachapoyas, les Cañaris et les Quitus plus au nord.",
+      "battle": {
+        "belligerents": [
+          "Royaume de Cuzco (Incas)",
+          "Confédération des Chancas"
+        ],
+        "commanders": [
+          "Cusi Yupanqui (futur Pachacutec)",
+          "Anco Huallo"
+        ],
+        "outcome": "Victoire de Cuzco ; Cusi Yupanqui devient l'Inca Pachacutec",
+        "forces": "Inconnues ; les chroniqueurs parlent de dizaines de milliers de Chancas, chiffre très douteux",
+        "losses": "Lourdes pour les Chancas ; leurs chefs sont exécutés"
+      },
+      "armies": [
+        {
+          "side": "Incas de Cusi Yupanqui",
+          "from": "Cuzco",
+          "faction": "incas",
+          "path": [
+            [
+              -71.9,
+              -13.53
+            ],
+            [
+              -72.05,
+              -13.54
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Chancas",
+          "from": "Andahuaylas",
+          "faction": "chancas",
+          "path": [
+            [
+              -73.37,
+              -13.66
+            ],
+            [
+              -73,
+              -13.6
+            ],
+            [
+              -72.55,
+              -13.6
+            ],
+            [
+              -72.2,
+              -13.55
+            ],
+            [
+              -72.05,
+              -13.54
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Pachacutec",
+          "role": "Sapa Inca (alors Cusi Yupanqui)",
+          "faction": "incas",
+          "archetype": "souverain-precolombien",
+          "quote": "Je ne suis pas un roi mais un fils du Soleil (formule libre)",
+          "position": [
+            -71.98,
+            -13.52
+          ],
+          "person": "pachacutec"
+        },
+        {
+          "name": "Anco Huallo",
+          "role": "Chef des Chancas",
+          "faction": "chancas",
+          "archetype": "general",
+          "position": [
+            -73.37,
+            -13.66
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Empire inca",
+          "url": "https://fr.wikipedia.org/wiki/Empire_inca"
+        },
+        {
+          "label": "Wikipédia — Pachacutec",
+          "url": "https://fr.wikipedia.org/wiki/Pachacutec"
+        },
+        {
+          "label": "Sarmiento de Gamboa, Historia de los Incas (1572)"
+        }
+      ]
+    },
+    {
+      "id": "cuzco-1440",
+      "year": 1440,
+      "title": "Pachacutec refonde Cuzco et invente le Tawantinsuyu",
+      "type": "réforme",
+      "location": [
+        -71.97,
+        -13.52
+      ],
+      "zoom": 5.2,
+      "summary": "Après sa victoire, Pachacutec reconstruit Cuzco en capitale de pierre et organise un État en quatre « quartiers », le Tawantinsuyu. Il annexe les terres chancas et les vallées voisines.",
+      "details": "Vers 1440, Pachacutec (selon les chroniqueurs) entreprend de refaire Cuzco. La ville est tracée en forme, dit-on, de **puma**, avec le temple du Soleil, le **Coricancha** (« l'enceinte d'or »), et deux grandes places. Les maisons de paille sont remplacées par des murs de pierres taillées, et on déplace des habitants pour faire place à des palais. Les rivières Tullumayo et Saphi sont canalisées. C'est aussi l'époque où l'on bâtit, dans la vallée de l'Urubamba, des domaines royaux : **Ollantaytambo** et, plus tard, **Machu Picchu** (vers 1450, selon les datations modernes).\n\nL'État prend aussi une forme nouvelle : le **Tawantinsuyu** (en quechua, la langue des Incas : « les quatre parties réunies »), divisé en quatre « quartiers » (*suyu*) qui se rejoignent à Cuzco : **Chinchaysuyu** au nord-ouest, **Antisuyu** à l'est, **Collasuyu** au sud-est et **Contisuyu** au sud-ouest. Les terres conquises sont découpées en trois parts : pour le Soleil, pour l'Inca et pour les communautés.\n\nPachacutec envoie ensuite ses armées vers l'ouest : Soras, Lucanas, Vilcas Huamán. Beaucoup de détails de ces réformes viennent de chroniques écrites après la conquête espagnole, parfois cent ans plus tard, et reflètent peut-être l'idée que les Incas voulaient donner de leur histoire. Les archéologues, eux, confirment la rapidité de l'urbanisation de Cuzco.",
+      "consequences": [
+        "Le territoire inca s'étend au bassin de l'Apurímac, aux terres chancas et au plateau de Vilcas Huamán.",
+        "Cuzco devient une capitale monumentale ; le Coricancha en est le cœur religieux.",
+        "Le Tawantinsuyu est organisé en quatre quartiers (suyu) reliés à Cuzco.",
+        "Les domaines royaux de l'Urubamba (Ollantaytambo, Machu Picchu) assurent les revenus de la famille de l'Inca."
+      ],
+      "territory": "cuzco-1440",
+      "territoryNote": "Cuzco et la vallée de l'Urubamba jusqu'à Ollantaytambo et Machu Picchu, le Vilcanota jusqu'à Urcos, puis à l'ouest les terres des anciens Chancas : Abancay, Andahuaylas, la vallée de l'Apurímac et le plateau de Vilcas Huamán, jusqu'au río Pampas ; au sud, jusqu'aux bords nord du bassin de Sicuani. Voisins indépendants : les Soras et Lucanas (Ayacucho, en cours de conquête), les Huancas de Jauja, les Collas (Hatun Colla) et Lupacas (Chucuito) autour du lac Titicaca, les Quechuas de Cotabambas, les Chimú de la côte nord, le royaume de Chincha, les Chachapoyas, Cañaris et Quitus au nord ; à l'est, les peuples de la forêt (Antis).",
+      "figures": [
+        {
+          "name": "Pachacutec",
+          "role": "Sapa Inca, bâtisseur de Cuzco",
+          "faction": "incas",
+          "archetype": "souverain-precolombien",
+          "quote": "(formule libre) Que Cuzco soit la tête du monde",
+          "position": [
+            -71.97,
+            -13.52
+          ],
+          "person": "pachacutec"
+        },
+        {
+          "name": "Un quipucamayoc",
+          "role": "« Gardien des nœuds » : comptable de l'État",
+          "faction": "incas",
+          "archetype": "sage",
+          "quote": "(formule libre) Chaque nœud est un chiffre, chaque corde une province",
+          "position": [
+            -72.1,
+            -13.6
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Cuzco",
+          "url": "https://fr.wikipedia.org/wiki/Cuzco"
+        },
+        {
+          "label": "Wikipédia — Machu Picchu",
+          "url": "https://fr.wikipedia.org/wiki/Machu_Picchu"
+        },
+        {
+          "label": "Betanzos, Suma y narración de los Incas (1551)"
+        }
+      ]
+    },
+    {
+      "id": "collao-1450",
+      "year": 1450,
+      "title": "Le Collao : la conquête du lac Titicaca",
+      "type": "bataille",
+      "location": [
+        -70.3,
+        -15.7
+      ],
+      "zoom": 4.8,
+      "summary": "Vers 1450, Pachacutec (ou son fils Topa Inca) soumet les royaumes aymaras du Collao, au nord du lac Titicaca, et s'ouvre le haut plateau de l'altiplano.",
+      "details": "Au sud de Cuzco s'étend le **Collao**, le haut plateau (l'altiplano) autour du lac **Titicaca**, à près de 4 000 mètres d'altitude. Il est dominé par des royaumes puissants, de langue **aymara** : les **Collas**, avec leur capitale à **Hatun Colla** (« la grande Colla »), et les **Lupacas**, à Chucuito. Ces peuples élèvent d'immenses troupeaux de lamas et d'alpagas et contrôlent les routes du cuivre, du sel et de la laine.\n\nLes chroniqueurs racontent que les chefs Collas, **Cari** (Colla) et **Zapana** (Lupaca) se font la guerre, puis que l'un d'eux appelle l'Inca à l'aide. Les Incas profitent de cette division : Pachacutec marche vers le Titicaca et remporte une bataille près de **Paucarcolla**. Cieza de León attribue la victoire à Pachacutec ; Sarmiento de Gamboa parle de son fils **Topa Inca**, qui continue ensuite vers le sud. Les dates varient : vers 1450 pour la conquête du Collao, mais nous ne pouvons pas la fixer précisément.\n\nLes Incas laissent aux élites locales une partie de leur autorité, mais installent des garnisons, des greniers (*collcas*) et des colons (*mitmaqkuna*) pour tenir cette région stratégique. L'altiplano devient le grand réservoir de laine, de lamas et de chuño de l'Empire.",
+      "consequences": [
+        "Le Collao (Hatun Colla, Chucuito) entre dans l'Empire, qui atteint le lac Titicaca et ouvre la route du sud.",
+        "Les Incas obtiennent d'immenses troupeaux de lamas et d'alpagas, ainsi que des mines du plateau.",
+        "Les Collas et les Lupacas fournissent des soldats et des travailleurs (mita) à l'armée inca.",
+        "Pachacutec peut lancer ensuite des campagnes vers Jauja et le centre du Pérou."
+      ],
+      "territory": "collao-1450",
+      "territoryNote": "Cuzco, l'Apurímac et Vilcas Huamán, puis au sud-est la haute vallée du Vilcanota et tout le Collao : Hatun Colla et le lac Umayo, la rive occidentale du Titicaca jusqu'à Chucuito (Lupacas), jusqu'au Desaguadero (rivière sortant du Titicaca) ; à l'ouest, les provinces d'Ayacucho (Soras, Lucanas) et, vers le nord, la région de Jauja en cours de soumission (Huancas). Voisins indépendants : les Pacajes et Charcas (Bolivie, sud du Titicaca), les Carangas, le royaume de Chincha et les vallées côtières d'Ica et de Nazca, le royaume chimú sur la côte nord, les Chachapoyas, Cañaris et Quitus au nord ; à l'est, les Antis de la forêt.",
+      "battle": {
+        "belligerents": [
+          "Incas",
+          "Royaumes aymaras du Collao (Collas et Lupacas)"
+        ],
+        "commanders": [
+          "Pachacutec (ou Topa Inca selon Sarmiento)",
+          "Cari (Colla)",
+          "Zapana (Lupaca)"
+        ],
+        "outcome": "Victoire des Incas ; le Collao est incorporé",
+        "forces": "Inconnues ; les chroniques n'avancent aucun chiffre fiable",
+        "losses": "Inconnues"
+      },
+      "armies": [
+        {
+          "side": "Incas",
+          "from": "Cuzco",
+          "faction": "incas",
+          "path": [
+            [
+              -71.97,
+              -13.52
+            ],
+            [
+              -71.4,
+              -14.3
+            ],
+            [
+              -70.9,
+              -14.9
+            ],
+            [
+              -70.4,
+              -15.5
+            ],
+            [
+              -70.3,
+              -15.7
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Collas et Lupacas",
+          "from": "Hatun Colla",
+          "faction": "chancas",
+          "path": [
+            [
+              -70,
+              -16.2
+            ],
+            [
+              -70.15,
+              -15.95
+            ],
+            [
+              -70.3,
+              -15.7
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Cari",
+          "role": "Seigneur des Collas",
+          "faction": "chancas",
+          "archetype": "roi",
+          "position": [
+            -70.3,
+            -15.7
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Empire inca",
+          "url": "https://fr.wikipedia.org/wiki/Empire_inca"
+        },
+        {
+          "label": "Wikipédia — Lac Titicaca",
+          "url": "https://fr.wikipedia.org/wiki/Lac_Titicaca"
+        },
+        {
+          "label": "Cieza de León, Crónica del Perú (1553)"
+        }
+      ]
+    },
+    {
+      "id": "chimu-1470",
+      "year": 1470,
+      "title": "Chan Chan tombe : la fin du royaume chimú",
+      "type": "bataille",
+      "location": [
+        -79.07,
+        -8.11
+      ],
+      "zoom": 4.8,
+      "summary": "Vers 1470, Topa Inca, fils de Pachacutec, bat le roi chimú Minchançaman et prend Chan Chan, capitale du plus grand royaume de la côte du Pérou.",
+      "details": "Sur la côte pacifique, au nord du Pérou, le royaume **chimú** règne depuis plusieurs siècles sur les vallées désertiques irriguées. Sa capitale, **Chan Chan**, près de l'actuelle Trujillo, est la plus grande ville de terre crue (adobe) d'Amérique du Sud, avec ses grands enclos décorés de frises. Ses canaux d'irrigation et ses ateliers d'orfèvres sont célèbres.\n\nPachacutec laisse maintenant le commandement militaire à son fils **Topa Inca Yupanqui**. Selon les récits de Cieza de León et de Sarmiento, Topa descend des montagnes de Cajamarca vers la côte, puis coupe les canaux qui alimentent Chan Chan. Privé d'eau, le roi chimú **Minchançaman** (parfois écrit Minchancaman) doit se rendre. Il est emmené à Cuzco, avec ses orfèvres et ses artisans, qui travailleront pour l'Inca.\n\nLa date de **1470** est une approximation proposée par l'archéologue John Rowe ; les chroniqueurs ne s'accordent pas, et d'autres historiens avancent des dates un peu plus tardives. Chan Chan n'est pas détruite : les Incas y laissent un gouverneur et prélèvent un tribut, ce qui explique que la ville soit encore bien conservée aujourd'hui. Les Chimú gardent aussi une part de leur autonomie locale.",
+      "consequences": [
+        "La côte nord du Pérou, de la vallée de Jequetepeque à celle de Casma, passe sous le contrôle de Cuzco.",
+        "Les orfèvres chimú sont déportés à Cuzco, ce qui enrichit l'orfèvrerie impériale.",
+        "Les Incas disposent désormais d'une grande façade maritime et de vallées irriguées très productives.",
+        "Topa Inca, vainqueur, s'impose comme le successeur naturel de son père."
+      ],
+      "territory": "chimu-1470",
+      "territoryNote": "Le Titicaca (Hatun Colla, Chucuito), Cuzco, l'Apurímac, Vilcas Huamán, Jauja (Huancas) et les hautes terres jusqu'à Cajamarca au nord, puis la côte nord tout entière : les vallées de Chicama, Moche (Chan Chan), Virú, Santa et Casma, jusqu'à la vallée de Lambayeque. Voisins indépendants : le royaume de Chincha (côte sud-centre, allié), les Chachapoyas (Amazonas), les Cañaris (Azuay), les Palta (Loja), les Quitus et Puruhá d'Équateur, les Tallanes et gens de Tumbes sur la côte nord-ouest ; au sud, les Pacajes, les Charcas et les Carangas de l'altiplano bolivien.",
+      "battle": {
+        "belligerents": [
+          "Incas",
+          "Royaume chimú"
+        ],
+        "commanders": [
+          "Topa Inca Yupanqui",
+          "Minchançaman"
+        ],
+        "outcome": "Victoire des Incas ; la capitale Chan Chan est soumise",
+        "forces": "Inconnues ; les chroniques ne donnent pas de chiffres fiables",
+        "losses": "Inconnues ; la défaite est surtout politique, après la coupure des canaux"
+      },
+      "armies": [
+        {
+          "side": "Incas de Topa Inca",
+          "from": "Cajamarca",
+          "faction": "incas",
+          "path": [
+            [
+              -78.51,
+              -7.16
+            ],
+            [
+              -78.75,
+              -7.45
+            ],
+            [
+              -78.95,
+              -7.8
+            ],
+            [
+              -79.07,
+              -8.11
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Chimú",
+          "from": "Chan Chan",
+          "faction": "chancas",
+          "path": [
+            [
+              -79.2,
+              -7.9
+            ],
+            [
+              -79.1,
+              -8
+            ],
+            [
+              -79.07,
+              -8.11
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Minchançaman",
+          "role": "Roi des Chimú",
+          "faction": "chancas",
+          "archetype": "roi",
+          "position": [
+            -79.07,
+            -8.11
+          ]
+        },
+        {
+          "name": "Topa Inca Yupanqui",
+          "role": "Général puis Sapa Inca",
+          "faction": "incas",
+          "archetype": "souverain-precolombien",
+          "quote": "(formule libre) Qui tient l'eau tient la ville",
+          "position": [
+            -78.8,
+            -7.6
+          ],
+          "person": "topa-inca"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Chan Chan",
+          "url": "https://fr.wikipedia.org/wiki/Chan_Chan"
+        },
+        {
+          "label": "Wikipédia — Topa Inca Yupanqui",
+          "url": "https://fr.wikipedia.org/wiki/Topa_Inca_Yupanqui"
+        },
+        {
+          "label": "Cieza de León, Crónica del Perú (1553)"
+        }
+      ]
+    },
+    {
+      "id": "tomebamba-1480",
+      "year": 1480,
+      "title": "Tomebamba : le nord-Équateur entre dans l'Empire",
+      "type": "fondation",
+      "location": [
+        -79,
+        -2.9
+      ],
+      "zoom": 4.8,
+      "summary": "Vers 1480, Topa Inca soumet les Cañaris du sud de l'Équateur et fait de Tomebamba (l'actuelle Cuenca) une seconde capitale. Il rattache aussi l'altiplano bolivien au sud.",
+      "details": "Devenu Sapa Inca à la mort de son père Pachacutec (vers 1471), **Topa Inca Yupanqui** poursuit les conquêtes. Au nord, il avance dans les hautes terres de l'actuel Équateur, où vivent les **Cañaris** (un peuple de montagne, au sud de Quito), les Paltas (région de Loja) et les Puruhás (autour de Riobamba). Les Cañaris résistent longtemps, mais finissent par se soumettre et fournissent à l'Inca de redoutables guerriers.\n\nLes Incas construisent sur place **Tomebamba**, aujourd'hui sous la ville de Cuenca, avec un temple du Soleil et un palais en pierre taillée. Selon les chroniqueurs, la ville imite Cuzco : certains en font la ville natale du futur Huayna Capac. Aujourd'hui, il reste les ruines de **Pumapungo**, où l'on voit encore des murs de grande qualité.\n\nDans le même temps, Topa envoie ses armées vers le sud, jusqu'aux hautes terres de la Bolivie (les Charcas et les Chichas) : les chroniqueurs rapportent ses campagnes mais les dates précises manquent. Pour la chronologie de ces années, nous suivons la chronologie la plus courante, établie par Rowe à partir de Cabello de Valboa, qui place le règne de Topa de 1471 à 1493 ; d'autres historiens la jugent trop longue.",
+      "consequences": [
+        "Les hautes terres de l'actuel Équateur méridional (Cañaris, Paltas, Tomebamba) passent sous la domination de Cuzco.",
+        "L'altiplano bolivien (Charcas, Chichas) est rattaché au Collasuyu.",
+        "Tomebamba devient la capitale du Chinchaysuyu et le point d'appui du futur Quito.",
+        "Les Cañaris, soldats d'élite, deviennent des gardes de l'Inca (et plus tard de ses rivaux)."
+      ],
+      "territory": "tomebamba-1480",
+      "territoryNote": "Au nord, les hautes terres jusqu'à Tomebamba (Cuenca), le pays des Cañaris (Azuay et Cañar) et des Paltas (Loja) ; la côte nord jusqu'à Tumbes seulement tributaire. Au sud, tout l'altiplano jusqu'aux Charcas et aux Chichas (Potosí, Tupiza, jusqu'au río Pilcomayo), le Collao, Cuzco, l'Apurímac et la côte jusqu'à Nazca. Voisins indépendants : les Puruhás de Riobamba (en cours de soumission), les Quitus de Quito, les Caranquis et Cayambes au nord, les Chachapoyas (Amazonas), le royaume de Chincha (côte, allié), les Huancavilcas du golfe de Guayaquil, les Carangas ; au sud-est et à l'est, les Chiriguanos et les peuples de la forêt.",
+      "armies": [
+        {
+          "side": "Incas de Topa Inca",
+          "from": "Cajamarca",
+          "faction": "incas",
+          "path": [
+            [
+              -78.51,
+              -7.16
+            ],
+            [
+              -79.2,
+              -5.3
+            ],
+            [
+              -79.2,
+              -4
+            ],
+            [
+              -79,
+              -2.9
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Topa Inca Yupanqui",
+          "role": "Sapa Inca, grand conquérant",
+          "faction": "incas",
+          "archetype": "souverain-precolombien",
+          "quote": "(formule libre) Étendre la terre que le Soleil réchauffe",
+          "position": [
+            -79,
+            -2.9
+          ],
+          "person": "topa-inca"
+        },
+        {
+          "name": "Mama Ocllo",
+          "role": "Coya (épouse et sœur de l'Inca)",
+          "faction": "incas",
+          "archetype": "imperatrice",
+          "quote": "(formule libre) La famille de l'Inca est la famille du monde",
+          "position": [
+            -71.97,
+            -13.52
+          ],
+          "person": "mama-ocllo"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Topa Inca Yupanqui",
+          "url": "https://fr.wikipedia.org/wiki/Topa_Inca_Yupanqui"
+        },
+        {
+          "label": "Wikipédia — Empire inca",
+          "url": "https://fr.wikipedia.org/wiki/Empire_inca"
+        },
+        {
+          "label": "Cabello de Valboa, Miscelánea antártica (1586)"
+        }
+      ]
+    },
+    {
+      "id": "maule-1485",
+      "year": 1485,
+      "title": "Le Maule : les Incas arrêtés par les Mapuches",
+      "type": "bataille",
+      "location": [
+        -71.5,
+        -35.4
+      ],
+      "zoom": 4.5,
+      "summary": "Vers 1485, Topa Inca (ou son fils) pousse la conquête du Chili jusqu'au fleuve Maule, où les Mapuches l'arrêtent après plusieurs jours de combat. C'est la frontière sud de l'Empire.",
+      "details": "Au sud du désert d'Atacama, les armées incas descendent par les vallées chiliennes : Copiapó, Coquimbo, Aconcagua, puis le **Mapocho** (où se dresse aujourd'hui Santiago). Selon Sarmiento de Gamboa et Garcilaso de la Vega, le Sapa Inca **Topa Inca**, ou plus tard son fils **Huayna Capac**, dirige l'expédition. Les chroniques se contredisent sur le chef, et la date de **vers 1485** est une estimation.\n\nPlus au sud, le fleuve **Maule** marque la limite des terres agricoles gouvernées de manière centralisée. Au-delà vivent les **Mapuches** (« gens de la terre »), qui n'obéissent à aucun roi : ils s'organisent en groupes de familles qui se réunissent pour la guerre. Les Incas rencontrent d'abord les **Promaucaes** (les Picunches du nord), avant le gros de la résistance. Les chroniqueurs rapportent plusieurs jours de combat très durs, sans vainqueur net. Les Incas, loin de leurs bases et face à des guerriers qui s'enfuient dans les forêts, renoncent à aller plus loin.\n\nIls fortifient la frontière : forts (*pucaras*), garnisons et colons venus d'ailleurs (mitmaqkuna). Deux siècles plus tard, les Mapuches feront aussi échouer les Espagnols : cette réputation de peuple invincible commence ici.",
+      "consequences": [
+        "Le Chili central, de l'Atacama au Maule, entre dans le Collasuyu.",
+        "La frontière du Maule devient la limite sud du Tawantinsuyu.",
+        "Les Mapuches conservent leur indépendance et gardent leur mode de vie.",
+        "Les Incas bâtissent des forts de frontière et des relais (tambos) le long de la route du sud."
+      ],
+      "territory": "maule-1485",
+      "territoryNote": "Le Collasuyu s'étend désormais sur l'altiplano bolivien, le nord-ouest de l'Argentine (Calchaquí, jusqu'à Tucumán, avec les Diaguitas) et tout le Chili central : désert d'Atacama, vallées de Copiapó, Coquimbo, Aconcagua et Mapocho, jusqu'au fleuve Maule, qui forme la frontière sud. Au nord, jusqu'à Tomebamba et les Cañaris. Voisins indépendants : les Mapuches au sud du Maule, les Huarpes de Cuyo (partiellement soumis), les Puruhás, Quitus et Caranquis en Équateur, les Chachapoyas, le royaume de Chincha (allié), les Huancavilcas, les Chiriguanos à l'est, les Antis de la forêt.",
+      "battle": {
+        "belligerents": [
+          "Incas",
+          "Mapuches (Promaucaes)"
+        ],
+        "commanders": [
+          "Topa Inca Yupanqui (ou Huayna Capac, selon les sources)",
+          "Chefs mapuches (inconnus)"
+        ],
+        "outcome": "Combat sans vainqueur net ; les Incas s'arrêtent au Maule",
+        "forces": "Inconnues ; Garcilaso parle d'une armée inca de 20 000 hommes, chiffre très incertain",
+        "losses": "Lourdes des deux côtés selon Garcilaso, sans chiffres fiables"
+      },
+      "armies": [
+        {
+          "side": "Incas du Collasuyu",
+          "from": "Santiago (Mapocho)",
+          "faction": "incas",
+          "path": [
+            [
+              -70.65,
+              -33.45
+            ],
+            [
+              -71,
+              -34.2
+            ],
+            [
+              -71.3,
+              -35
+            ],
+            [
+              -71.5,
+              -35.4
+            ]
+          ],
+          "strength": 2
+        },
+        {
+          "side": "Mapuches",
+          "from": "Itata",
+          "faction": "mapuches",
+          "path": [
+            [
+              -72.3,
+              -36.6
+            ],
+            [
+              -71.9,
+              -36
+            ],
+            [
+              -71.5,
+              -35.4
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Topa Inca Yupanqui",
+          "role": "Sapa Inca (selon Sarmiento)",
+          "faction": "incas",
+          "archetype": "souverain-precolombien",
+          "quote": "(formule libre) Ici s'arrêtent les terres du Soleil",
+          "position": [
+            -70.65,
+            -33.45
+          ],
+          "person": "topa-inca"
+        },
+        {
+          "name": "Un chef mapuche",
+          "role": "Chef de guerre d'un groupe de familles",
+          "faction": "mapuches",
+          "archetype": "chef-barbare",
+          "position": [
+            -72.3,
+            -36.6
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Mapuches",
+          "url": "https://fr.wikipedia.org/wiki/Mapuches"
+        },
+        {
+          "label": "Wikipédia — Empire inca",
+          "url": "https://fr.wikipedia.org/wiki/Empire_inca"
+        },
+        {
+          "label": "Garcilaso de la Vega, Comentarios reales (1609)"
+        }
+      ]
+    },
+    {
+      "id": "huayna-capac-1493",
+      "year": 1493,
+      "title": "Huayna Capac succède à Topa Inca",
+      "type": "politique",
+      "location": [
+        -71.97,
+        -13.52
+      ],
+      "zoom": 4.2,
+      "summary": "Vers 1493, le jeune Huayna Capac monte sur le trône à Cuzco après la mort de Topa Inca. Il doit d'abord faire reconnaître son autorité et réprimer des révoltes dans les provinces du nord.",
+      "details": "À la mort de **Topa Inca**, son fils **Huayna Capac** (« jeune homme puissant ») devient Sapa Inca, probablement vers 1493. Il est encore adolescent, et un régent gouverne en son nom. Les chroniqueurs rapportent qu'un oncle tente de lui prendre le pouvoir, ce qui n'est pas rare : à Cuzco, chaque succession est dangereuse, car l'Inca désigne son héritier parmi ses fils, sans règle fixe.\n\nLe jeune souverain visite d'abord son empire, d'une durée de plusieurs années, en suivant le **qhapaq ñan**, le grand chemin royal. Il inspecte les greniers, les mines et les ponts, et reçoit l'hommage des chefs. Il doit réprimer les **Chachapoyas** (un peuple de la forêt de nuages du nord du Pérou), qui s'étaient révoltés, et des rebelles chez les Cañaris.\n\nHuayna Capac s'entoure de ses nobles de Cuzco, mais promeut aussi des généraux de province, comme **Chalcuchímac** et **Quizquiz**, issus des élites locales. Il s'installe progressivement dans le nord, à Tomebamba, puis à Quito, et laisse Cuzco à des régents. Cette absence prolongée de la capitale aura des conséquences lourdes pour la suite de la dynastie.",
+      "consequences": [
+        "Les conquêtes de Topa Inca sont confirmées : Chachapoyas et Cañaris sont ramenés à l'obéissance.",
+        "Huayna Capac visite les provinces du Tawantinsuyu et s'appuie sur des généraux d'origine provinciale.",
+        "L'Inca passe de plus en plus de temps dans le nord, loin de Cuzco et de ses grandes familles.",
+        "La règle de succession, sans héritier désigné par la loi, reste un risque pour l'avenir."
+      ],
+      "territory": "huayna-capac-1493",
+      "territoryNote": "Même étendue qu'à la fin du règne de Topa Inca : au sud, le Chili jusqu'au Maule, le nord-ouest de l'Argentine, l'altiplano bolivien et le Collao ; au centre, Cuzco, Jauja, la côte du Pérou de Nazca à Chan Chan ; au nord, les Chachapoyas, Cajamarca et le pays des Cañaris jusqu'à Tomebamba et Riobamba (Puruhás). Voisins indépendants : les Quitus de Quito, les Caranquis et Cayambes, les Huancavilcas et l'île de Puná (golfe de Guayaquil), les peuples de Tumbes (tributaires), le royaume de Chincha (allié), les Mapuches au sud du Maule, les Chiriguanos, les Antis de la forêt.",
+      "figures": [
+        {
+          "name": "Huayna Capac",
+          "role": "Nouveau Sapa Inca",
+          "faction": "incas",
+          "archetype": "souverain-precolombien",
+          "quote": "(formule libre) Je veux voir de mes yeux la terre que je gouverne",
+          "position": [
+            -71.97,
+            -13.52
+          ],
+          "person": "huayna-capac"
+        },
+        {
+          "name": "Quizquiz",
+          "role": "Général de Huayna Capac",
+          "faction": "incas",
+          "archetype": "general",
+          "position": [
+            -71.9,
+            -13.5
+          ],
+          "person": "quizquiz"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Huayna Capac",
+          "url": "https://fr.wikipedia.org/wiki/Huayna_Capac"
+        },
+        {
+          "label": "Wikipédia — Empire inca",
+          "url": "https://fr.wikipedia.org/wiki/Empire_inca"
+        },
+        {
+          "label": "Rostworowski, Historia del Tahuantinsuyu (1988)"
+        }
+      ]
+    },
+    {
+      "id": "quito-1500",
+      "year": 1500,
+      "title": "Quito et Yahuarcocha : la conquête du nord",
+      "type": "bataille",
+      "location": [
+        -78.1,
+        0.37
+      ],
+      "zoom": 4.8,
+      "summary": "Vers 1500, Huayna Capac soumet les peuples de la région de Quito. Au lac Yahuarcocha, le « lac de sang », il écrase les Caranquis, selon la tradition.",
+      "details": "Dans le nord de l'actuel Équateur, les peuples de la région de **Quito** (les **Quitus**, **Caranquis** et **Cayambes**) s'opposent depuis des années à l'avancée des Incas. **Huayna Capac** installe son armée à Tomebamba, puis monte vers le nord, en suivant les hautes vallées volcaniques. Il fait de **Quito** une base avancée avec un palais, des greniers, et des garnisons de soldats venus de loin.\n\nLa guerre la plus dure l'oppose aux **Caranquis** (autour d'Otavalo et Ibarra). Les chroniqueurs racontent qu'après un long siège il remporte une grande victoire près d'un lac : ses soldats tuent tant d'ennemis que le lac prend le nom de **Yahuarcocha**, « le lac de sang ». Les Cayambes, défaits à leur tour, voient leurs terres incorporées.\n\nLa date de cette conquête varie beaucoup selon les chroniqueurs : on la place généralement **vers 1500**, mais ils ne sont pas d'accord entre eux sur l'ordre des campagnes et sur la violence de la répression (le récit de massacre a pu être exagéré). Huayna Capac fixe la frontière nord sur le **río Ancasmayo**, à la limite de l'actuelle Colombie, au-delà de laquelle il rencontre les Pastos.",
+      "consequences": [
+        "Le nord de l'Équateur, de Quito à l'Ancasmayo, entre dans le Chinchaysuyu.",
+        "Quito devient une grande base militaire et, plus tard, la ville où réside Atahualpa.",
+        "Des populations entières sont déplacées (mitmaqkuna) pour tenir la région.",
+        "La frontière nord est fixée sur le río Ancasmayo, face aux Pastos de la Colombie actuelle."
+      ],
+      "territory": "quito-1500",
+      "territoryNote": "Au nord, jusqu'au río Ancasmayo (frontière actuelle Équateur-Colombie) : Quito, Cayambe, Otavalo, lac Yahuarcocha ; au sud, Tomebamba et le pays des Cañaris. Le reste est inchangé : Chili jusqu'au Maule, nord-ouest argentin, altiplano bolivien, Collao, Cuzco et toute la côte du Pérou. Voisins indépendants : les Pastos et Quillacingas au nord de l'Ancasmayo, les Huancavilcas et l'île de Puná (golfe de Guayaquil), les peuples de la côte de Manabí, le royaume de Chincha (allié), les Mapuches au sud du Maule, les Chiriguanos, les Antis ; les Chachapoyas sont soumis.",
+      "battle": {
+        "belligerents": [
+          "Incas",
+          "Caranquis et Cayambes (confédération du nord de l'Équateur)"
+        ],
+        "commanders": [
+          "Huayna Capac",
+          "Chefs caranquis (inconnus)"
+        ],
+        "outcome": "Victoire des Incas ; massacre du lac Yahuarcocha selon la tradition",
+        "forces": "Inconnues ; les chroniques ne donnent pas de chiffres fiables",
+        "losses": "Très lourdes pour les Caranquis selon la tradition (récit probablement amplifié)"
+      },
+      "armies": [
+        {
+          "side": "Incas de Huayna Capac",
+          "from": "Tomebamba",
+          "faction": "incas",
+          "path": [
+            [
+              -79,
+              -2.9
+            ],
+            [
+              -78.65,
+              -1.67
+            ],
+            [
+              -78.5,
+              -0.2
+            ],
+            [
+              -78.15,
+              0.1
+            ],
+            [
+              -78.1,
+              0.37
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Caranquis",
+          "from": "Cochasquí",
+          "faction": "chancas",
+          "path": [
+            [
+              -77.95,
+              0.65
+            ],
+            [
+              -78.1,
+              0.37
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Huayna Capac",
+          "role": "Sapa Inca en campagne",
+          "faction": "incas",
+          "archetype": "souverain-precolombien",
+          "quote": "(formule libre) Que ce lac garde la mémoire des vaincus",
+          "position": [
+            -78.5,
+            -0.2
+          ],
+          "person": "huayna-capac"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Huayna Capac",
+          "url": "https://fr.wikipedia.org/wiki/Huayna_Capac"
+        },
+        {
+          "label": "Wikipédia — Quito",
+          "url": "https://fr.wikipedia.org/wiki/Quito"
+        },
+        {
+          "label": "Cieza de León, Crónica del Perú (1553)"
+        }
+      ]
+    },
+    {
+      "id": "huayna-capac-1525",
+      "year": 1525,
+      "title": "Le Tawantinsuyu à son apogée",
+      "type": "politique",
+      "location": [
+        -72,
+        -13.5
+      ],
+      "zoom": 3.4,
+      "summary": "Vers 1525, l'Empire va de l'Ancasmayo, à la frontière de la Colombie, jusqu'au Maule, au Chili, soit près de 4 000 km de long. Les premiers navires espagnols apparaissent au large de Tumbes.",
+      "details": "À la fin du règne de **Huayna Capac**, le **Tawantinsuyu** est le plus grand empire de l'Amérique précolombienne, avec **près de 4 000 km** de longueur entre l'Ancasmayo et le Maule et, selon les estimations, entre 6 et 12 millions de sujets. Il rassemble plus de quatre-vingts peuples, parlant surtout le **quechua** (langue officielle) et l'**aymara**. Il n'a pas de monnaie ni de grands marchés : il repose sur le **tribut en travail** (la *mita*), sur de grands greniers (*collcas*) et sur le **qhapaq ñan**, un réseau de routes de plus de 30 000 km parcourues par des messagers à pied, les **chasquis**.\n\nSon extension maximale est d'ailleurs discutable : certaines provinces du nord (Équateur) et du Chili étaient peu contrôlées, et plusieurs peuples y gardaient des chefs locaux. Les chroniqueurs fondent les dates de ces conquêtes sur des listes de souvenirs transmises à l'oral.\n\nPendant ce temps, un événement lointain se prépare : vers 1526, le pilote **Bartolomé Ruiz** croise au large de l'Équateur un grand radeau de commerce inca chargé de tissus et d'objets précieux, premier contact avec des Européens. Huayna Capac, informé, ne semble pas y voir une menace. Un fléau bien plus dangereux le précède : une épidémie venue d'Amérique centrale.",
+      "consequences": [
+        "Le Tawantinsuyu atteint sa plus grande extension, de l'Ancasmayo (Colombie) au Maule (Chili).",
+        "Un empire d'environ 10 millions de sujets repose sur la mita, les greniers et le qhapaq ñan.",
+        "Les premiers contacts avec des Espagnols ont lieu sur la côte de l'Équateur (vers 1526).",
+        "L'Inca et l'armée vivent au nord, loin de Cuzco, ce qui fragilise l'équilibre de l'État."
+      ],
+      "territory": "huayna-capac-1525",
+      "territoryNote": "Extension maximale : de l'Ancasmayo (frontière Équateur-Colombie) au nord jusqu'au fleuve Maule au Chili ; la côte pacifique de Tumbes à Santiago et l'ensemble des Andes de Quito à Mendoza ; à l'est, les piémonts andins (Chachapoyas, vallées de Cuzco, Collasuyu jusqu'à Tucumán) mais pas l'Amazonie ni le Chaco. Le Chili et l'Équateur n'étaient que partiellement contrôlés. Voisins indépendants : les Pastos et Quillacingas au nord (Colombie), les Mapuches au sud du Maule, les Chiriguanos à l'est (Chaco), les Antis et peuples de l'Amazonie, les Huarpes de Cuyo (tributaires ou autonomes) et les Huancavilcas du golfe de Guayaquil (tributaires).",
+      "figures": [
+        {
+          "name": "Huayna Capac",
+          "role": "Sapa Inca au sommet de la puissance",
+          "faction": "incas",
+          "archetype": "souverain-precolombien",
+          "quote": "(formule libre) Mon empire va d'une mer de neige à l'autre",
+          "position": [
+            -78.5,
+            -0.2
+          ],
+          "person": "huayna-capac"
+        },
+        {
+          "name": "Un quipucamayoc",
+          "role": "Comptable de l'Empire",
+          "faction": "incas",
+          "archetype": "sage",
+          "quote": "(formule libre) Mes cordes comptent chaque grenier de l'Empire",
+          "position": [
+            -72,
+            -13.5
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Empire inca",
+          "url": "https://fr.wikipedia.org/wiki/Empire_inca"
+        },
+        {
+          "label": "Wikipédia — Qhapaq Ñan",
+          "url": "https://fr.wikipedia.org/wiki/Qhapaq_Ñan"
+        },
+        {
+          "label": "Rostworowski, Historia del Tahuantinsuyu (1988)"
+        }
+      ]
+    },
+    {
+      "id": "variole-1527",
+      "year": 1527,
+      "title": "La variole frappe : mort de Huayna Capac",
+      "type": "politique",
+      "location": [
+        -78.5,
+        -0.2
+      ],
+      "zoom": 4.2,
+      "summary": "Vers 1527, une épidémie, probablement de variole, venue du nord tue Huayna Capac et son héritier désigné Ninan Cuyochi. Le trône reste sans successeur évident.",
+      "details": "Une maladie nouvelle, sans doute la **variole** apportée d'Amérique centrale par les Espagnols, dévaste le Tawantinsuyu avant même l'arrivée des conquistadors : les Andins n'ont aucune immunité contre elle. Les chroniqueurs ne s'accordent ni sur la date (entre 1524 et 1528, le plus souvent **vers 1527**), ni sur l'identité exacte de la maladie, qui pourrait aussi être la rougeole ou le typhus. Betanzos et Cieza décrivent des morts par milliers dans les provinces du nord, et l'on estime aujourd'hui que le fléau a pu emporter une grande partie de la population dans certaines régions.\n\nL'épidémie atteint **Quito** où se trouve **Huayna Capac**, qui tombe malade et meurt. Son héritier désigné, **Ninan Cuyochi**, est lui aussi emporté. Les prêtres et devins consultés ne s'accordent pas sur l'avenir : selon une tradition, l'Inca aurait désigné un nouveau successeur, mais sans témoin sûr, et les récits divergent selon les familles qui les transmettent.\n\nCe n'est pas seulement un deuil : à Cuzco, les nobles réunis autour du corps momifié de l'Inca nomment **Huáscar**, fils d'une coya, comme nouveau Sapa Inca. Mais l'armée de Quito reste fidèle à un autre fils, **Atahualpa**, né d'une mère de Quito. L'Empire se coupe en deux camps.",
+      "consequences": [
+        "Une épidémie ravage les Andes avant l'arrivée des Espagnols, avec un nombre de victimes que l'on ne connaît pas.",
+        "Huayna Capac et son héritier meurent sans successeur indiscuté.",
+        "Huáscar est reconnu à Cuzco, tandis que l'armée du nord soutient Atahualpa.",
+        "L'État inca, jusque-là uni, entre dans une guerre civile."
+      ],
+      "territory": "variole-1527",
+      "territoryNote": "Extension maximale : de l'Ancasmayo (frontière Équateur-Colombie) au Maule (Chili) ; côte pacifique de Tumbes à Santiago et Andes de Quito à Mendoza, Tucumán et l'altiplano bolivien compris ; même étendue qu'en 1525, mais la région de Quito et de Tomebamba (Cañaris) penche vers Atahualpa et celle de Cuzco vers Huáscar. Voisins indépendants : les Pastos et Quillacingas au nord de l'Ancasmayo, les Mapuches au sud du Maule, les Chiriguanos, les Antis, les Huancavilcas (tributaires). Présence espagnole : Pizarro touche Tumbes en 1527 (premier contact).",
+      "figures": [
+        {
+          "name": "Huayna Capac",
+          "role": "Sapa Inca mourant",
+          "faction": "incas",
+          "archetype": "souverain-precolombien",
+          "quote": "(formule libre) Après moi, que l'Empire reste uni",
+          "position": [
+            -78.5,
+            -0.2
+          ],
+          "person": "huayna-capac"
+        },
+        {
+          "name": "Ninan Cuyochi",
+          "role": "Héritier désigné, mort de la même épidémie",
+          "faction": "incas",
+          "archetype": "souverain-precolombien",
+          "position": [
+            -78.6,
+            -0.15
+          ]
+        },
+        {
+          "name": "Un amauta",
+          "role": "Sage et devin de la cour",
+          "faction": "incas",
+          "archetype": "sage",
+          "quote": "(formule libre) Les oracles se taisent quand l'Inca meurt",
+          "position": [
+            -71.97,
+            -13.52
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Huayna Capac",
+          "url": "https://fr.wikipedia.org/wiki/Huayna_Capac"
+        },
+        {
+          "label": "Wikipédia — Empire inca",
+          "url": "https://fr.wikipedia.org/wiki/Empire_inca"
+        },
+        {
+          "label": "Betanzos, Suma y narración de los Incas (1551)"
+        }
+      ]
+    },
+    {
+      "id": "guerre-civile-1529",
+      "year": 1529,
+      "title": "Huáscar contre Atahualpa : la guerre des frères",
+      "type": "bataille",
+      "location": [
+        -78.62,
+        -1.24
+      ],
+      "zoom": 4.8,
+      "summary": "Vers 1529, la guerre éclate entre Huáscar, soutenu par Cuzco, et son demi-frère Atahualpa, appuyé par l'armée de Quito. Les généraux d'Atahualpa remportent les premières batailles en Équateur.",
+      "details": "Les deux fils de Huayna Capac, **Huáscar** (à Cuzco) et **Atahualpa** (à Quito), se partagent d'abord l'empire. Selon Cieza de León, Huáscar exige que son frère lui prête serment ; Atahualpa tarde, puis refuse. La guerre éclate vers **1529**. Les chroniques ne s'accordent pas sur la date, ni sur l'origine du conflit : certains y voient une querelle de famille, d'autres le heurt entre l'ancienne noblesse de Cuzco et les chefs de guerre du nord.\n\nLes premiers combats ont lieu en Équateur. Les **Cañaris**, restés fidèles à Huáscar, tiennent **Tomebamba** ; Atahualpa y envoie ses généraux, **Quizquiz** et **Chalcuchímac**. Les forces de Huáscar, sous le commandement d'Atoc, sont battues près d'**Ambato** (au sud de Quito), puis à nouveau près de Riobamba. Tomebamba est prise et, d'après les récits, durement punie : les Cañaris sont massacrés ou déportés.\n\nLes chroniques écrites ensuite par les Espagnols, favorables à Huáscar ou à Atahualpa selon leur source, exagèrent les violences de chacun. Ce qui est sûr, c'est que les deux camps s'épuisent au moment même où Pizarro prépare sa deuxième expédition. Les deux hommes sont tous deux incas, mais l'Empire est divisé.",
+      "consequences": [
+        "Les provinces du nord (Quito, Tomebamba) passent aux mains d'Atahualpa après une campagne meurtrière.",
+        "Les Cañaris, fidèles à Huáscar, sont durement punis : Tomebamba est détruite en partie.",
+        "Quizquiz et Chalcuchímac, généraux victorieux, deviennent les hommes forts du nord.",
+        "L'Empire, divisé en deux camps, affaiblit ses défenses au moment où les Espagnols approchent."
+      ],
+      "territory": "guerre-civile-1529",
+      "territoryNote": "Extension maximale : de l'Ancasmayo (frontière Équateur-Colombie) au Maule (Chili) ; côte pacifique de Tumbes à Santiago et Andes de Quito à Mendoza, Tucumán et l'altiplano bolivien compris ; même étendue qu'en 1525, mais divisée en deux camps incas : au nord de Tomebamba (Quito, Ambato, Riobamba), le camp d'Atahualpa ; au sud (Cuzco, Collao, Chili), celui de Huáscar. Voisins indépendants : les Pastos et Quillacingas, les Mapuches au sud du Maule, les Chiriguanos, les Antis, les Huancavilcas (tributaires) ; Espagnols de Panamá au large.",
+      "battle": {
+        "belligerents": [
+          "Partisans de Atahualpa (armée de Quito)",
+          "Partisans de Huáscar (Cuzco et Cañaris)"
+        ],
+        "commanders": [
+          "Quizquiz",
+          "Chalcuchímac",
+          "Atoc"
+        ],
+        "outcome": "Victoire d'Atahualpa en Équateur ; Tomebamba est prise",
+        "forces": "Inconnues ; Cieza avance des chiffres de plusieurs dizaines de milliers, à prendre avec prudence",
+        "losses": "Très lourdes, surtout chez les Cañaris ; chiffres incertains"
+      },
+      "armies": [
+        {
+          "id": "armee-quizquiz",
+          "side": "Armée d'Atahualpa",
+          "from": "Quito",
+          "faction": "incas",
+          "path": [
+            [
+              -78.5,
+              -0.2
+            ],
+            [
+              -78.6,
+              -0.93
+            ],
+            [
+              -78.62,
+              -1.24
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée de Huáscar",
+          "from": "Tomebamba",
+          "faction": "incas",
+          "path": [
+            [
+              -79,
+              -2.9
+            ],
+            [
+              -78.65,
+              -1.67
+            ],
+            [
+              -78.62,
+              -1.24
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Atahualpa",
+          "role": "Prince de Quito",
+          "faction": "incas",
+          "archetype": "souverain-precolombien",
+          "quote": "(formule libre) Mon père m'a laissé le nord et je le garderai",
+          "position": [
+            -78.5,
+            -0.2
+          ],
+          "person": "atahualpa"
+        },
+        {
+          "name": "Huáscar",
+          "role": "Sapa Inca à Cuzco",
+          "faction": "incas",
+          "archetype": "souverain-precolombien",
+          "quote": "(formule libre) Un seul Inca pour un seul empire",
+          "position": [
+            -71.97,
+            -13.52
+          ],
+          "person": "huascar"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Atahualpa",
+          "url": "https://fr.wikipedia.org/wiki/Atahualpa"
+        },
+        {
+          "label": "Wikipédia — Huáscar",
+          "url": "https://fr.wikipedia.org/wiki/Huáscar"
+        },
+        {
+          "label": "Cieza de León, Crónica del Perú (1553)"
+        }
+      ]
+    },
+    {
+      "id": "quipaipan-1532",
+      "year": 1532,
+      "title": "Quipaipan : Huáscar capturé près de Cuzco",
+      "type": "bataille",
+      "location": [
+        -72.05,
+        -13.55
+      ],
+      "zoom": 5,
+      "summary": "Vers 1532, Quizquiz et Chalcuchímac battent l'armée de Huáscar à Quipaipan, près de Cuzco, et capturent le Sapa Inca. Atahualpa devient le maître de l'Empire.",
+      "details": "Après Ambato, les généraux d'Atahualpa, **Quizquiz** et **Chalcuchímac**, descendent le **qhapaq ñan**, la grande route royale, en passant par Tomebamba, Cajamarca, Jauja et Vilcas Huamán. Les troupes de Huáscar leur disputent plusieurs fois le passage, notamment à **Cotabamba**. Les chroniqueurs rapportent que les provinces hésitent : les Cañaris et certaines familles de Cuzco restent loyales à Huáscar.\n\nLa bataille décisive se déroule à **Quipaipan**, à quelques kilomètres de Cuzco, en **1532**. Les deux armées sont nombreuses ; les récits parlent de dizaines de milliers de combattants, sans que l'on sache combien. Huáscar, qui dirige lui-même ses troupes, est vaincu et capturé : il est emmené prisonnier vers Cajamarca.\n\nQuizquiz et Chalcuchímac entrent dans Cuzco, où ils exécutent des nobles proches de Huáscar. Les dates de ces événements sont discutées : Pizarro est déjà dans le pays et la capture de Huáscar a lieu, selon les sources, juste avant ou juste après Cajamarca. Le résultat est clair : l'armée du nord a gagné, mais l'Empire sort affaibli par quatre ans de guerre et d'épidémie. Atahualpa se trouve à Cajamarca, à plusieurs jours de marche du front, quand les Espagnols arrivent.",
+      "consequences": [
+        "Huáscar, capturé, est emmené vers Cajamarca, où Atahualpa le garde prisonnier.",
+        "Cuzco passe sous le contrôle de Quizquiz et de Chalcuchímac, qui punissent la noblesse partisane de Huáscar.",
+        "Atahualpa devient le seul maître de l'Empire, mais celui-ci est épuisé par la guerre et la variole.",
+        "Les armées incas sont dispersées, loin de Cajamarca, au moment où Pizarro y arrive."
+      ],
+      "territory": "quipaipan-1532",
+      "territoryNote": "Extension maximale : de l'Ancasmayo (frontière Équateur-Colombie) au Maule (Chili) ; côte pacifique de Tumbes à Santiago et Andes de Quito à Mendoza, Tucumán et l'altiplano bolivien compris. Après la victoire d'Atahualpa, tout l'Empire est de nouveau uni sous un seul Inca. Voisins indépendants : les Pastos et Quillacingas au nord de l'Ancasmayo, les Mapuches au sud du Maule, les Chiriguanos, les Antis, les Huancavilcas (tributaires) ; les Espagnols de Pizarro en cours de débarquement à Tumbes (côte nord), sans contrôle du territoire.",
+      "battle": {
+        "belligerents": [
+          "Partisans d'Atahualpa",
+          "Partisans de Huáscar"
+        ],
+        "commanders": [
+          "Quizquiz",
+          "Chalcuchímac",
+          "Huáscar"
+        ],
+        "outcome": "Victoire des généraux d'Atahualpa ; Huáscar capturé",
+        "forces": "Inconnues ; les chroniques parlent de dizaines de milliers d'hommes, très incertain",
+        "losses": "Lourdes ; chiffres incertains"
+      },
+      "armies": [
+        {
+          "id": "armee-quizquiz",
+          "side": "Armée d'Atahualpa",
+          "from": "Ambato",
+          "faction": "incas",
+          "path": [
+            [
+              -78.62,
+              -1.24
+            ],
+            [
+              -79,
+              -2.9
+            ],
+            [
+              -78.51,
+              -7.16
+            ],
+            [
+              -75.5,
+              -11.78
+            ],
+            [
+              -73.95,
+              -13.65
+            ],
+            [
+              -72.4,
+              -13.6
+            ],
+            [
+              -72.05,
+              -13.55
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée de Huáscar",
+          "from": "Cuzco",
+          "faction": "incas",
+          "path": [
+            [
+              -71.97,
+              -13.52
+            ],
+            [
+              -72.05,
+              -13.55
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Chalcuchímac",
+          "role": "Général d'Atahualpa",
+          "faction": "incas",
+          "archetype": "general",
+          "position": [
+            -72.2,
+            -13.55
+          ],
+          "person": "chalcuchimac"
+        },
+        {
+          "name": "Huáscar",
+          "role": "Sapa Inca vaincu",
+          "faction": "incas",
+          "archetype": "souverain-precolombien",
+          "position": [
+            -71.97,
+            -13.52
+          ],
+          "person": "huascar"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Huáscar",
+          "url": "https://fr.wikipedia.org/wiki/Huáscar"
+        },
+        {
+          "label": "Wikipédia — Empire inca",
+          "url": "https://fr.wikipedia.org/wiki/Empire_inca"
+        },
+        {
+          "label": "Hemming, The Conquest of the Incas (1970)"
+        }
+      ]
+    },
+    {
+      "id": "cajamarca-1532",
+      "year": 1532,
+      "title": "Cajamarca : Pizarro capture Atahualpa",
+      "type": "bataille",
+      "location": [
+        -78.51,
+        -7.16
+      ],
+      "zoom": 5.4,
+      "summary": "Le 16 novembre 1532, une petite troupe espagnole, avec ses chevaux et ses armes à feu, capture l'Inca Atahualpa sur la place de Cajamarca et massacre sa suite désarmée.",
+      "details": "En 1532, **Francisco Pizarro** débarque à Tumbes avec environ **168 Espagnols**, dont une soixantaine de cavaliers. Il traverse les Andes et arrive à **Cajamarca**, où **Atahualpa**, qui vient de gagner la guerre contre Huáscar, campe avec une grande armée. Le 16 novembre, l'Inca, porté en litière, entre sur la grande place avec plusieurs milliers d'hommes presque désarmés, par politesse et par sûreté.\n\nLe dominicain **Vicente de Valverde** lui présente la Bible et exige qu'il se soumette au roi d'Espagne. Selon les chroniqueurs espagnols, Atahualpa jette le livre ; Pizarro donne le signal. Cavaliers, canons et arquebuses chargent la foule. Les chroniques disent que plusieurs milliers d'Incas sont tués, sans un seul Espagnol, et que l'Inca est capturé : le chiffre exact des morts est très incertain.\n\nPourquoi une troupe aussi faible l'emporte-t-elle ? L'effet de surprise, les chevaux, l'acier, la variole, la guerre civile et le choix d'un seul homme comme tête de l'État ont tous joué. Les historiens ne sont pas d'accord sur le poids de chaque facteur, ni sur la façon dont les Incas ont perçu les étrangers. Le récit vient presque entièrement du côté espagnol.",
+      "consequences": [
+        "Atahualpa, prisonnier, devient l'otage de Pizarro, qui gouverne en son nom.",
+        "L'armée inca, privée de son chef, se disperse et ne parvient pas à réagir.",
+        "La Couronne espagnole peut s'appuyer sur la crainte de l'Inca pour avancer vers Cuzco.",
+        "La conquête de l'Empire inca commence, avec la prise de contrôle des routes et des villes."
+      ],
+      "territory": "cajamarca-1532",
+      "territoryNote": "Extension maximale : de l'Ancasmayo (frontière Équateur-Colombie) au Maule (Chili) ; côte pacifique de Tumbes à Santiago et Andes de Quito à Mendoza, Tucumán et l'altiplano bolivien compris. L'Empire reste tel qu'à Quipaipan, mais Cajamarca est tenue par les Espagnols de Pizarro, qui ont fondé San Miguel (Piura) sur la côte. Voisins indépendants : les Pastos et Quillacingas, les Mapuches au sud du Maule, les Chiriguanos, les Antis ; le royaume de Chincha se rallie aux Espagnols.",
+      "battle": {
+        "belligerents": [
+          "Conquistadors de Pizarro",
+          "Armée et suite d'Atahualpa"
+        ],
+        "commanders": [
+          "Francisco Pizarro",
+          "Hernando de Soto",
+          "Atahualpa"
+        ],
+        "outcome": "Victoire espagnole ; capture d'Atahualpa",
+        "forces": "Espagnols : environ 168 hommes (une soixantaine de cavaliers) ; Incas : plusieurs milliers sur la place, une armée bien plus nombreuse aux alentours",
+        "losses": "Aucun mort espagnol selon les récits ; plusieurs milliers d'Incas tués (chiffres incertains)"
+      },
+      "armies": [
+        {
+          "side": "Conquistadors de Pizarro",
+          "from": "Tumbes",
+          "faction": "tercios",
+          "path": [
+            [
+              -80.45,
+              -3.57
+            ],
+            [
+              -80.95,
+              -4.9
+            ],
+            [
+              -79.45,
+              -5.24
+            ],
+            [
+              -78.51,
+              -7.16
+            ]
+          ],
+          "strength": 1,
+          "winner": true
+        },
+        {
+          "side": "Suite et armée d'Atahualpa",
+          "from": "Cajamarca",
+          "faction": "incas",
+          "path": [
+            [
+              -78.2,
+              -7.2
+            ],
+            [
+              -78.51,
+              -7.16
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Francisco Pizarro",
+          "role": "Conquistador",
+          "faction": "tercios",
+          "archetype": "conquistador",
+          "quote": "(formule libre) Pas un pas en arrière, la place est à nous",
+          "position": [
+            -78.52,
+            -7.16
+          ],
+          "person": "francisco-pizarro"
+        },
+        {
+          "name": "Atahualpa",
+          "role": "Sapa Inca capturé",
+          "faction": "incas",
+          "archetype": "souverain-precolombien",
+          "quote": "(formule libre) Qui sont ces hommes barbus ?",
+          "position": [
+            -78.5,
+            -7.17
+          ],
+          "person": "atahualpa"
+        },
+        {
+          "name": "Vicente de Valverde",
+          "role": "Dominicain, aumônier de Pizarro",
+          "faction": "tercios",
+          "archetype": "prelat",
+          "position": [
+            -78.51,
+            -7.15
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Cajamarca",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Cajamarca"
+        },
+        {
+          "label": "Wikipédia — Francisco Pizarro",
+          "url": "https://fr.wikipedia.org/wiki/Francisco_Pizarro"
+        },
+        {
+          "label": "Hemming, The Conquest of the Incas (1970)"
+        }
+      ]
+    },
+    {
+      "id": "atahualpa-1533",
+      "year": 1533,
+      "title": "Mort d'Atahualpa : la rançon et le garrot",
+      "type": "chute",
+      "location": [
+        -78.51,
+        -7.16
+      ],
+      "zoom": 4.8,
+      "summary": "Le 26 juillet 1533, Atahualpa est exécuté à Cajamarca malgré une énorme rançon en or et en argent. Pizarro entre à Cuzco en novembre et installe Manco Inca comme souverain fantoche.",
+      "details": "Prisonnier, **Atahualpa** propose à Pizarro de remplir une pièce d'or, puis deux d'argent, en échange de sa liberté. L'or arrive de tout l'Empire, sous forme de vases, de statues et de plaques arrachées aux temples. Pizarro fait fondre les objets : environ **6 tonnes d'or** et **11 tonnes d'argent** selon certaines estimations (chiffres discutés). Pendant ce temps, Atahualpa, qui craint un retour de son frère, fait assassiner **Huáscar** (le sort de Huáscar reste incertain : plusieurs chroniqueurs rapportent que ce fut sur ordre d'Atahualpa).\n\nUne fois la rançon payée, les Espagnols, inquiets des rumeurs d'une armée qui les encerclerait, jugent Atahualpa en procès rapide. Il est condamné pour trahison, idolâtrie et meurtre. Converti au dernier moment, baptisé sous le nom de **Francisco**, il est étranglé au **garrot** le **26 juillet 1533**, au lieu d'être brûlé vif. Les chroniqueurs ne s'accordent pas sur ses derniers mots.\n\nEn novembre, **Pizarro** entre dans **Cuzco**, que Quizquiz ne parvient pas à défendre. Il y couronne **Manco Inca**, un autre fils de Huayna Capac, qui lui sert de souverain fantoche. Manco se révoltera en 1536 : un État inca résistera encore à Vilcabamba jusqu'en 1572, mais l'Empire est terminé.",
+      "consequences": [
+        "Atahualpa est exécuté et l'Empire se retrouve sans chef reconnu.",
+        "Pizarro entre à Cuzco en novembre 1533 et y installe Manco Inca comme Inca fantoche.",
+        "L'or et l'argent des temples sont fondus et envoyés en Espagne, ce qui détruit une grande partie de l'orfèvrerie inca.",
+        "Manco Inca se révoltera en 1536, puis fondera un État de résistance à Vilcabamba (jusqu'en 1572)."
+      ],
+      "territory": "atahualpa-1533",
+      "territoryNote": "Au moment de la mort d'Atahualpa (juillet 1533), l'Empire a encore sa pleine étendue : de l'Ancasmayo au Maule, Quito et Tomebamba, la côte du Pérou, Cuzco, le Collao et l'altiplano bolivien. Pizarro tient seulement le couloir Tumbes-Piura-Cajamarca ; après novembre 1533 il tient Cuzco. Voisins indépendants : les Pastos et Quillacingas au nord, les Mapuches au sud du Maule, les Chiriguanos, les Antis et la forêt amazonienne ; Chincha allié aux Espagnols.",
+      "figures": [
+        {
+          "name": "Atahualpa",
+          "role": "Dernier Sapa Inca souverain",
+          "faction": "incas",
+          "archetype": "souverain-precolombien",
+          "quote": "(formule libre) Je remplirai cette pièce d'or jusqu'à ma main levée",
+          "position": [
+            -78.51,
+            -7.16
+          ],
+          "person": "atahualpa"
+        },
+        {
+          "name": "Francisco Pizarro",
+          "role": "Conquistador, gouverneur du Pérou",
+          "faction": "tercios",
+          "archetype": "conquistador",
+          "position": [
+            -78.52,
+            -7.16
+          ],
+          "person": "francisco-pizarro"
+        },
+        {
+          "name": "Manco Inca",
+          "role": "Inca installé par Pizarro à Cuzco",
+          "faction": "incas",
+          "archetype": "souverain-precolombien",
+          "position": [
+            -71.97,
+            -13.52
+          ],
+          "person": "manco-inca"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Atahualpa",
+          "url": "https://fr.wikipedia.org/wiki/Atahualpa"
+        },
+        {
+          "label": "Wikipédia — Francisco Pizarro",
+          "url": "https://fr.wikipedia.org/wiki/Francisco_Pizarro"
+        },
+        {
+          "label": "Hemming, The Conquest of the Incas (1970)"
+        }
+      ]
+    }
+  ]
+}
