@@ -686,6 +686,54 @@ export const ESP_SOLDIER_SPECS = {
     weapon:
       rect(25.6, 12, 1.4, 26, WOOD) + circ(26.3, 9.6, 3, '#9aa0a6') + stroke('M26.3 6.2V13M22.9 9.6H29.7M24 7.3L28.6 11.9M28.6 7.3L24 11.9', '#6e747a', 0.8),
   },
+  chancas: {
+    skin: '#b97a50',
+    tunic: '#8a5a2e',
+    legs: 'bare',
+    boots: '#a9783f',
+    deco:
+      path('M10.6 14.4Q16 13 21.4 14.4L21.4 25L10.6 25Z', '#8a5a2e') +
+      path(
+        'M11.4 16h1.6v1.6h-1.6zM14.6 16h1.6v1.6h-1.6zM17.8 16h1.6v1.6h-1.6zM13 17.6h1.6v1.6h-1.6zM16.2 17.6h1.6v1.6h-1.6zM19.4 17.6h1.6v1.6h-1.6z',
+        '#1f1a14',
+        'stroke="none"',
+      ) +
+      path(
+        'M13 16h1.6v1.6h-1.6zM16.2 16h1.6v1.6h-1.6zM19.4 16h1.6v1.6h-1.6zM11.4 17.6h1.6v1.6h-1.6zM14.6 17.6h1.6v1.6h-1.6zM17.8 17.6h1.6v1.6h-1.6z',
+        '#efe6cc',
+        'stroke="none"',
+      ) +
+      rect(10.2, 24, 11.6, 1.6, '#3a2a1a', 0, 'stroke="none"'),
+    head:
+      path('M11.6 8.6Q11.6 3.4 16 3.2Q20.4 3.4 20.4 8.6L19.6 8.6L19.6 6.8L12.4 6.8L12.4 8.6Z', '#a9783f') +
+      stroke('M12 5.4H20', '#efe6cc', 1.2) +
+      path('M16.6 3.2Q20.6 -0.6 19.6 2.6Q18.4 2.8 17.2 3.4Z', '#1f1a14'),
+    shield:
+      circ(8.6, 22.9, 6.4, '#c9a878') +
+      circ(8.6, 22.9, 4, 'none', 'stroke="#8a5a2b" stroke-width="0.8"') +
+      stroke('M4.4 20.6H12.8M4.2 23H13M4.4 25.4H12.8', '#8a5a2b', 0.6) +
+      circ(8.6, 22.9, 1.4, '#8a5a2e'),
+    weapon:
+      rect(25.6, 12, 1.4, 26, WOOD) +
+      path('M26.3 5.6L27.4 8.3L30.2 8.6L28 10.4L28.8 13.2L26.3 11.6L23.8 13.2L24.6 10.4L22.4 8.6L25.2 8.3Z', '#b07a3a', 'stroke="#6e4a1e" stroke-width="0.6"'),
+  },
+  mapuches: {
+    skin: '#b97a50',
+    tunic: '#4a5a7a',
+    legs: 'bare',
+    deco:
+      path('M10.2 14.2Q16 12.6 21.8 14.2L22.4 25.4Q16 26.6 9.6 25.4Z', '#4a5a7a') +
+      stroke('M10 17H22', '#efe6cc', 1.2) +
+      stroke('M10 20.4H22', '#c0282a', 1.2) +
+      stroke('M10 23.4H22', '#efe6cc', 1.2),
+    head:
+      path('M11.2 8.6Q10.6 14 11.4 18L13 18L12.4 7Z', '#1f1a14') +
+      path('M20.8 8.6Q21.4 14 20.6 18L19 18L19.6 7Z', '#1f1a14') +
+      path('M11.6 8.6Q11.6 3.4 16 3.2Q20.4 3.4 20.4 8.6L19.6 8.6L19.6 6.8L12.4 6.8L12.4 8.6Z', '#1f1a14') +
+      stroke('M11.8 6.2H20.2', '#c0282a', 1.4),
+    shield: '',
+    weapon: rect(25.6, 6, 1.1, 32, WOOD) + path('M26.15 0.2L27.6 6.2L24.7 6.2Z', '#7d838a'),
+  },
   'francais-ancien-regime': {
     tunic: '#efe6cc',
     legs: 'pants',

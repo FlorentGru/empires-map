@@ -229,6 +229,16 @@ export const FACTION_INFO: Record<Faction, FigureInfo> = {
     era: '1438 – 1533',
     text: "L'empire inca, le Tawantinsuyu, s'étend vers 1530 du sud de la Colombie au centre du Chili, avec Cuzco pour capitale. Un réseau de routes de plus de 20 000 km, des relais et des entrepôts permet de le gouverner sans écriture, grâce aux cordelettes à nœuds (quipus). En 1532, une guerre civile entre deux frères l'a affaibli.",
   },
+  chancas: {
+    label: 'Peuples andins rivaux',
+    era: 'XVe siècle',
+    text: 'Les Chancas menacent Cuzco vers 1438, avant que les Incas ne repoussent leur attaque. Plus au sud, les Collas et les Lupacas se disputent les rives du lac Titicaca. Sur la côte nord, le royaume chimú de Chan Chan, conquis vers 1470, reste riche de ses cultures irriguées. Leurs guerriers combattent avec des frondes, des massues étoilées et des lances.',
+  },
+  mapuches: {
+    label: 'Mapuches',
+    era: 'XVe – XIXe siècle',
+    text: "Peuple du centre-sud du Chili, les Mapuches arrêtent vers 1485 l'expansion inca sur le río Maule. Ils résisteront ensuite trois siècles aux Espagnols, dans la guerre d'Arauco. Leurs combattants, vêtus de ponchos et coiffés du trarilonco, manient la lance et la massue.",
+  },
   'francais-ancien-regime': {
     label: "Français d'Ancien Régime",
     era: 'XVIe – XVIIIe s.',
