@@ -32,6 +32,7 @@ const EMPIRE_SPRITES: Record<string, { faction: Faction; archetype: Archetype }>
   mongols: { faction: 'mongols', archetype: 'khan' },
   ottomans: { faction: 'janissaires', archetype: 'sultan' },
   inca: { faction: 'incas', archetype: 'souverain-precolombien' },
+  mali: { faction: 'mandingues', archetype: 'mansa' },
 };
 
 /** Au-delà, la légende des entités est tronquée (périodes de division). */

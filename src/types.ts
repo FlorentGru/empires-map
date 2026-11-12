@@ -248,7 +248,13 @@ export type Faction =
   | 'grecs-modernes'
   // Empire inca
   | 'chancas'
-  | 'mapuches';
+  | 'mapuches'
+  // Empire du Mali
+  | 'mandingues'
+  | 'sosso'
+  | 'touaregs'
+  | 'songhais'
+  | 'mossis';
 
 export const FACTIONS: Faction[] = [
   'romains',
@@ -327,6 +333,11 @@ export const FACTIONS: Faction[] = [
   'grecs-modernes',
   'chancas',
   'mapuches',
+  'mandingues',
+  'sosso',
+  'touaregs',
+  'songhais',
+  'mossis',
 ];
 
 export type Archetype =
@@ -379,6 +390,8 @@ export type Archetype =
   | 'sultane'
   | 'shah'
   | 'pacha'
+  // Empire du Mali
+  | 'mansa'
   // Tous empires : savant, philosophe (et figure du guide de l'Atlas)
   | 'sage';
 
@@ -426,6 +439,7 @@ export const ARCHETYPES: Archetype[] = [
   'sultane',
   'shah',
   'pacha',
+  'mansa',
 ];
 
 export interface ArmyMove {
