@@ -155,7 +155,8 @@ function iconSvg(round: boolean): string {
 /* ---------- Rendu ---------- */
 
 fs.mkdirSync(OUT, { recursive: true });
-const browser = await chromium.launch();
+// CHROMIUM_PATH : navigateur à utiliser si celui de Playwright manque (sessions cloud).
+const browser = await chromium.launch(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {});
 const page = await browser.newPage({ viewport: { width: 1200, height: 630 } });
 async function shot(html: string, file: string, size?: number) {
   if (size) await page.setViewportSize({ width: size, height: size });

@@ -30,6 +30,8 @@ export default defineConfig({
       ],
     },
     launchOptions: {
+      // CHROMIUM_PATH : navigateur à utiliser si celui de Playwright manque (sessions cloud).
+      ...(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {}),
       // WebGL logiciel : pas de GPU sur le CI ni en headless.
       args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'],
     },

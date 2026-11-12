@@ -13,10 +13,11 @@ import { saintEmpire } from './saint-empire.ts';
 import { carolingiens } from './carolingiens.ts';
 import { alexandre } from './alexandre.ts';
 import { ottomans } from './ottomans.ts';
+import { inca } from './inca.ts';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 
-export const EMPIRES: EmpireConfig[] = [rome, napoleon, china, mongols, espagne, saintEmpire, carolingiens, alexandre, ottomans];
+export const EMPIRES: EmpireConfig[] = [rome, napoleon, china, mongols, espagne, saintEmpire, carolingiens, alexandre, ottomans, inca];
 
 export function getEmpire(id: string): EmpireConfig {
   const e = EMPIRES.find((x) => x.id === id);
