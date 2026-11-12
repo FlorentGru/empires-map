@@ -245,7 +245,10 @@ export type Faction =
   | 'venitiens'
   | 'safavides'
   | 'ottomans-modernes'
-  | 'grecs-modernes';
+  | 'grecs-modernes'
+  // Empire inca
+  | 'chancas'
+  | 'mapuches';
 
 export const FACTIONS: Faction[] = [
   'romains',
@@ -322,6 +325,8 @@ export const FACTIONS: Faction[] = [
   'safavides',
   'ottomans-modernes',
   'grecs-modernes',
+  'chancas',
+  'mapuches',
 ];
 
 export type Archetype =
