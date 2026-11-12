@@ -734,6 +734,77 @@ export const ESP_SOLDIER_SPECS = {
     shield: '',
     weapon: rect(25.6, 6, 1.1, 32, WOOD) + path('M26.15 0.2L27.6 6.2L24.7 6.2Z', '#7d838a'),
   },
+  mandingues: {
+    skin: '#7a4a2a',
+    tunic: '#efe6cc',
+    legs: 'pants',
+    legColor: '#efe6cc',
+    boots: '#4a2f1a',
+    deco:
+      path('M10.2 14.2Q16 12.6 21.8 14.2L23 25.4Q16 26.4 9 25.4Z', '#efe6cc') +
+      stroke('M12.4 17L14.4 19.4L12.4 21.8L14.4 24.2', '#5a3a1e', 0.8) +
+      stroke('M18.6 16.8L20.6 19.2L18.6 21.6L20.6 24', '#5a3a1e', 0.8) +
+      stroke('M15.6 20.4L17.2 22.2L15.6 24', '#5a3a1e', 0.7),
+    back: quiver('#5a3a1e'),
+    head: path('M11.8 8.4Q11.6 4.4 16 1.6Q20.4 4.4 20.2 8.4Q16 6.8 11.8 8.4Z', '#efe6cc') + stroke('M12.2 6.6Q16 5.2 19.8 6.6', '#a9783f', 0.8),
+    shield: circ(8.6, 22.9, 6.4, '#a9783f') + circ(8.6, 22.9, 6.4, 'none', 'stroke="#e0b43a" stroke-width="1"') + circ(8.6, 22.9, 1.4, GOLD),
+    weapon: spear(36),
+  },
+  sosso: {
+    skin: '#7a4a2a',
+    tunic: '#2f3f6a',
+    legs: 'pants',
+    legColor: '#2f3f6a',
+    boots: '#3a2a1a',
+    deco:
+      path('M10.4 14.2Q16 12.8 21.6 14.2L21.6 25.2Q16 26 10.4 25.2Z', '#2f3f6a') +
+      circ(12.4, 18.2, 0.9, '#c9a878', 'stroke="none"') +
+      circ(16, 19.6, 0.9, '#c9a878', 'stroke="none"') +
+      circ(19.6, 18.2, 0.9, '#c9a878', 'stroke="none"'),
+    head:
+      path('M11.4 8.6Q11 4.4 14 3.6L13 1.2L15.4 2.8Q16 2.6 16.6 2.8L18.6 1.2L17.6 3.6Q21 4.4 20.6 8.6Q16 6.6 11.4 8.6Z', '#6a4a2a') +
+      stroke('M11.8 6.8Q16 5.4 20.2 6.8', '#1f1a14', 0.8),
+    shield: '',
+    weapon: rect(25.6, 8, 1.4, 28, WOOD) + path('M26.3 8L30.6 9.6L30.6 14.4L26.3 13.2Z', '#8a9096'),
+  },
+  touaregs: {
+    skin: '#a8724a',
+    tunic: '#5a7ab0',
+    legs: 'pants',
+    legColor: '#5a7ab0',
+    boots: '#3a2a1a',
+    deco: path('M10.4 14.2Q16 12.8 21.6 14.2L22.2 25.4Q16 26.2 9.8 25.4Z', '#5a7ab0') + rect(10, 23.6, 12, 1.4, '#2a3a7a', 0, 'stroke="none"'),
+    head: path('M11.2 8.4Q10.8 2.8 16 2.2Q21.2 2.8 20.8 8.4L21 15.6Q16 18.4 11 15.6Z', '#2a3a7a') + rect(12.6, 7.6, 6.8, 1.5, '#a8724a', 0, 'stroke="none"'),
+    shield: rect(3.4, 16.4, 10.4, 13.6, '#efe6cc', 0.8) + stroke('M8.6 16.4V30M3.4 23.2H13.8', '#8a5a2b', 1.2),
+    weapon:
+      path('M25.9 3.4L26.9 3.4L27.2 26L26.2 26Z', '#a9adb0') +
+      rect(24.4, 26, 4, 1.4, '#4a2f1a', 0, 'stroke="none"') +
+      rect(25.4, 27.4, 2, 3.6, '#4a2f1a', 0, 'stroke="none"'),
+  },
+  songhais: {
+    skin: '#7a4a2a',
+    tunic: '#a8402a',
+    legs: 'pants',
+    legColor: '#a8402a',
+    boots: '#4a2f1a',
+    deco: path('M10.4 14.2Q16 12.8 21.6 14.2L21.8 25.4Q16 26.2 10.2 25.4Z', '#a8402a') + rect(10.2, 21.4, 11.6, 1.8, '#c28a3a', 0, 'stroke="none"'),
+    head: path('M11.2 8.8Q10.6 3.6 16 2.8Q21.4 3.6 20.8 8.8Q16 6.8 11.2 8.8Z', '#f4efe0') + stroke('M11.6 6.4Q16 4.8 20.4 6.4', '#d6cfb8', 0.9),
+    shield:
+      circ(8.6, 22.9, 5.2, '#a8402a') + circ(8.6, 22.9, 2.8, 'none', 'stroke="#c28a3a" stroke-width="1.2"') + circ(8.6, 22.9, 1, '#c28a3a', 'stroke="none"'),
+    weapon: spear(35),
+  },
+  mossis: {
+    skin: '#7a4a2a',
+    tunic: '#c9a03a',
+    legs: 'pants',
+    legColor: '#3a6a3a',
+    boots: '#4a2f1a',
+    deco: path('M10.4 14.2Q16 12.8 21.6 14.2L21.8 25.4Q16 26.2 10.2 25.4Z', '#c9a03a') + stroke('M10.4 17.4H21.6M10.4 21.6H21.6', '#3a6a3a', 1.4),
+    head: path('M11.6 8.6Q11.6 4.2 14.8 3.2Q16.4 -0.8 19.6 -1.6Q18.6 2.2 20.4 8.6Q16 6.8 11.6 8.6Z', '#b03a2a'),
+    shield:
+      circ(8.6, 22.9, 6.4, '#c9a878') + circ(8.6, 22.9, 4, 'none', 'stroke="#8a5a2b" stroke-width="0.8"') + stroke('M5 19L12 26M5 26L12 19', '#8a5a2b', 0.5),
+    weapon: spear(30),
+  },
   'francais-ancien-regime': {
     tunic: '#efe6cc',
     legs: 'pants',

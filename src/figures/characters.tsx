@@ -860,6 +860,23 @@ export const CHARACTER_SPECS = {
       path('M29 7.4Q26.6 12 29 20L30.4 20L30.4 7.4Z', '#f4efe0') +
       path('M32.2 7.4Q34.6 12 32.2 20L31 20L31 7.4Z', '#f4efe0'),
   },
+  mansa: {
+    skin: '#7a4a2a',
+    robe: '#f4efe0',
+    body: WIDE,
+    deco:
+      path('M13 17.4Q18 22 23 17.4L23 19.2Q18 24 13 19.2Z', GOLD) +
+      line('M11.6 22L13.4 25.6L11.6 29M24.4 22L22.6 25.6L24.4 29', GOLD, 0.9) +
+      circ(13, 32, 0.9, GOLD, NS) +
+      circ(18, 32, 0.9, GOLD, NS) +
+      circ(23, 32, 0.9, GOLD, NS) +
+      line('M8.5 40.5H27.5', GOLD, 1),
+    head:
+      path('M11.8 8.4Q11.4 2.6 18 2.2Q24.6 2.6 24.2 8.4Q18 6.4 11.8 8.4Z', GOLD) +
+      line('M12.4 6.8Q18 4.8 23.6 6.8', '#b8862a', 1) +
+      circ(18, 3.4, 1.1, '#c9473a', NS),
+    front: rect(30, 5, 1.2, 40, WOOD) + circ(30.6, 5.4, 1.8, GOLD),
+  },
 } satisfies Record<Archetype, CharSpec>;
 
 export function characterSvg(archetype: Archetype, tint?: string): string {
