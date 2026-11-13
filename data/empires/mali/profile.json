@@ -1,0 +1,651 @@
+{
+  "empire": "mali",
+  "periods": [
+    {
+      "id": "soundiata",
+      "name": "Soundiata et la fondation",
+      "start": 1235,
+      "end": 1312,
+      "population": {
+        "total": {
+          "value": 2000000,
+          "low": 1000000,
+          "high": 4000000,
+          "year": 1300,
+          "note": "Ordre de grandeur reconstruit ; aucun recensement n'existe.",
+          "source": {
+            "label": "Wikipédia : Empire du Mali",
+            "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+          }
+        },
+        "cities": [
+          {
+            "name": "Niani",
+            "population": {
+              "value": 10000,
+              "low": 5000,
+              "high": 20000,
+              "year": 1300,
+              "note": "Capitale supposée ; estimation très approximative, localisation discutée.",
+              "source": {
+                "label": "Wikipédia : Niani",
+                "url": "https://fr.wikipedia.org/wiki/Niani"
+              }
+            }
+          },
+          {
+            "name": "Kangaba",
+            "population": {
+              "value": 5000,
+              "low": 2000,
+              "high": 10000,
+              "year": 1300,
+              "note": "Berceau des Keïta ; ordre de grandeur.",
+              "source": {
+                "label": "Wikipédia : Empire du Mali",
+                "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+              }
+            }
+          },
+          {
+            "name": "Oualata",
+            "population": {
+              "value": 8000,
+              "low": 4000,
+              "high": 15000,
+              "year": 1300,
+              "note": "Marché sahélien ; estimation archéologique approximative.",
+              "source": {
+                "label": "Wikipédia : Oualata",
+                "url": "https://fr.wikipedia.org/wiki/Oualata"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Or du Bambouk et du Bouré",
+          "Mil, sorgho et riz",
+          "Coton",
+          "Bétail"
+        ],
+        "currency": "Poudre d'or pesée, cauris, barres de cuivre et de sel ; pas de monnaie frappée.",
+        "taxation": "Tribut des peuples soumis et droits sur les caravanes ; le mansa reçoit une part de l'or extrait.",
+        "trade": "Commerce de l'or contre le sel du Sahara, le cuivre, les chevaux et les étoffes, par Oualata et Teghaza."
+      },
+      "army": {
+        "size": {
+          "value": 60000,
+          "low": 30000,
+          "high": 100000,
+          "year": 1300,
+          "note": "Chiffres des sources arabes tardives, probablement exagérés.",
+          "source": {
+            "label": "Wikipédia : Empire du Mali",
+            "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+          }
+        },
+        "composition": "Fantassins archers et lanciers malinkés, cavalerie d'élite, contingents des peuples alliés.",
+        "recruitment": "Levée par les clans guerriers (Keïta, Traoré, Camara) et les chefs vassaux.",
+        "famousUnits": [
+          "Guerriers du Manden",
+          "Archers de Kirina",
+          "Cavaliers de Mema"
+        ],
+        "innovations": [
+          "Alliance de lignages guerriers",
+          "Camps retranchés sur le fleuve"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie fondée sur des clans : le mansa règne avec l'accord des grands lignages.",
+        "head": "Mansa (« roi des rois »), de la dynastie Keïta.",
+        "succession": "Passe de frère à frère ou de père en fils ; querelles fréquentes entre branches.",
+        "institutions": "Assemblée des chefs de clan, griots conseillers, gouverneurs de provinces (farba).",
+        "administration": "Provinces confiées aux compagnons de Soundiata ; chefs locaux gardés sous tribut.",
+        "provinces": {
+          "value": 12,
+          "low": 8,
+          "high": 20,
+          "year": 1300,
+          "unit": "provinces",
+          "note": "Nombre approximatif de provinces ; très incertain.",
+          "source": {
+            "label": "Wikipédia : Empire du Mali",
+            "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+          }
+        },
+        "law": "Charte du Manden, tradition orale : respect de la vie, entraide, statut des clans."
+      },
+      "society": {
+        "religions": [
+          "Religions traditionnelles malinkés",
+          "Islam, surtout chez les marchands",
+          "Culte des ancêtres et des forgerons"
+        ],
+        "languages": [
+          "Malinké (mandingue)",
+          "Soninké",
+          "Arabe (commerce et religion)"
+        ],
+        "structure": "Clans nobles, forgerons, griots (castes), paysans, captifs.",
+        "women": "Femmes influentes à la cour, comme la mère du roi ; le matrilignage compte dans la transmission du pouvoir."
+      },
+      "culture": {
+        "inventions": [
+          "Balafon",
+          "Charte orale du Manden",
+          "Épopée des griots"
+        ],
+        "works": [
+          "Épopée de Soundiata",
+          "Charte du Manden",
+          "Palais de Niani"
+        ],
+        "scholars": [
+          "Balla Fasséké (griot)",
+          "Griots Kouyaté"
+        ]
+      },
+      "infrastructure": {
+        "roads": {
+          "value": 5000,
+          "low": 2000,
+          "high": 10000,
+          "year": 1300,
+          "unit": "km",
+          "note": "Pistes et routes fluviales ; estimation approximative.",
+          "source": {
+            "label": "Wikipédia : Empire du Mali",
+            "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+          }
+        },
+        "summary": "Pistes des caravanes, villes sur le Niger, greniers royaux, pirogues sur le fleuve."
+      },
+      "legacy": "Soundiata crée un État durable de lignages, enrichi par l'or. La mémoire de ces siècles est chantée par les griots jusqu'à aujourd'hui."
+    },
+    {
+      "id": "moussa",
+      "name": "L'âge d'or de Mansa Moussa",
+      "start": 1312,
+      "end": 1360,
+      "population": {
+        "total": {
+          "value": 10000000,
+          "low": 5000000,
+          "high": 20000000,
+          "year": 1325,
+          "note": "Ordre de grandeur reconstruit pour un empire immense ; aucun recensement.",
+          "source": {
+            "label": "Wikipédia : Empire du Mali",
+            "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+          }
+        },
+        "cities": [
+          {
+            "name": "Niani",
+            "population": {
+              "value": 30000,
+              "low": 10000,
+              "high": 100000,
+              "year": 1352,
+              "note": "Ibn Battûta ne donne pas de chiffre ; estimation très large.",
+              "source": {
+                "label": "Wikipédia : Niani",
+                "url": "https://fr.wikipedia.org/wiki/Niani"
+              }
+            }
+          },
+          {
+            "name": "Tombouctou",
+            "population": {
+              "value": 10000,
+              "low": 5000,
+              "high": 20000,
+              "year": 1325,
+              "note": "Ville en essor ; population dans les premières décennies.",
+              "source": {
+                "label": "Wikipédia : Tombouctou",
+                "url": "https://fr.wikipedia.org/wiki/Tombouctou"
+              }
+            }
+          },
+          {
+            "name": "Gao",
+            "population": {
+              "value": 10000,
+              "low": 5000,
+              "high": 20000,
+              "year": 1325,
+              "note": "Grande ville songhaï ; ordre de grandeur.",
+              "source": {
+                "label": "Wikipédia : Gao",
+                "url": "https://fr.wikipedia.org/wiki/Gao"
+              }
+            }
+          },
+          {
+            "name": "Djenné",
+            "population": {
+              "value": 15000,
+              "low": 8000,
+              "high": 30000,
+              "year": 1325,
+              "note": "Marché du delta ; ordre de grandeur.",
+              "source": {
+                "label": "Wikipédia : Djenné",
+                "url": "https://fr.wikipedia.org/wiki/Djenn%C3%A9"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Or",
+          "Sel de Teghaza",
+          "Cuivre de Takedda",
+          "Mil et riz du delta"
+        ],
+        "currency": "Poudre d'or, cauris, cuivre, sel ; pas de monnaie frappée.",
+        "taxation": "Tribut des provinces, droits sur les caravanes, part de l'or ; or et esclaves en cadeau aux souverains étrangers.",
+        "trade": "Plus grand fournisseur d'or du monde méditerranéen ; liens avec Le Caire, Fès et Tunis."
+      },
+      "army": {
+        "size": {
+          "value": 100000,
+          "low": 50000,
+          "high": 200000,
+          "year": 1325,
+          "note": "Chiffres arabes (al-Umari parle de 100 000 hommes) probablement exagérés.",
+          "source": {
+            "label": "Wikipédia : Ibn Fadl Allah al-Umari",
+            "url": "https://fr.wikipedia.org/wiki/Ibn_Fadl_Allah_al-Umari"
+          }
+        },
+        "composition": "Fantassins, cavaliers et archers, plus des contingents de pirogues sur le Niger.",
+        "recruitment": "Levée dans les provinces ; garnisons dans les villes conquises (Gao, Tombouctou).",
+        "famousUnits": [
+          "Cavalerie royale",
+          "Archers du Manden",
+          "Flottille du Niger"
+        ],
+        "innovations": [
+          "Garnisons dans les villes du Niger",
+          "Flotte fluviale"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie islamisée, d'une grande richesse ; le mansa est protecteur de l'islam et des savants.",
+        "head": "Mansa Moussa (1312-1337), puis Maghan et Souleymane (1341-1360).",
+        "succession": "Passe de frère à frère ou de père en fils ; complots (affaire Kassa, révolte de Dougha).",
+        "institutions": "Cour avec griots, interprètes, cadis ; la qasa, épouse principale, a un rôle politique.",
+        "administration": "Gouverneurs (farba) dans les provinces ; ambassades à l'étranger.",
+        "provinces": {
+          "value": 14,
+          "low": 10,
+          "high": 20,
+          "year": 1325,
+          "unit": "provinces",
+          "note": "Nombre approximatif de provinces et de royaumes tributaires.",
+          "source": {
+            "label": "Wikipédia : Empire du Mali",
+            "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+          }
+        },
+        "law": "Droit musulman dans les villes, coutumes malinkés ailleurs ; la justice est réputée."
+      },
+      "society": {
+        "religions": [
+          "Islam sunnite (malékite)",
+          "Religions traditionnelles",
+          "Culte des ancêtres"
+        ],
+        "languages": [
+          "Malinké",
+          "Songhaï",
+          "Soninké",
+          "Arabe"
+        ],
+        "structure": "Famille royale, clans nobles, lettrés musulmans, marchands diulas, artisans (forgerons), captifs.",
+        "women": "Femmes visibles et libres, au point de surprendre Ibn Battûta ; la qasa a un rôle politique."
+      },
+      "culture": {
+        "inventions": [
+          "Architecture soudano-sahélienne",
+          "Manuscrits de Tombouctou",
+          "Cauris monnaie"
+        ],
+        "works": [
+          "Djingareyber",
+          "Sankoré",
+          "Rihla d'Ibn Battûta"
+        ],
+        "scholars": [
+          "Abou Ishaq es-Sahéli",
+          "Cadis de Tombouctou",
+          "Ibn Battûta (visiteur)"
+        ]
+      },
+      "infrastructure": {
+        "roads": {
+          "value": 20000,
+          "low": 10000,
+          "high": 30000,
+          "year": 1352,
+          "unit": "km",
+          "note": "Pistes caravanières et routes fluviales ; reconstruction très approximative.",
+          "source": {
+            "label": "Wikipédia : Empire du Mali",
+            "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+          }
+        },
+        "summary": "Routes de caravanes sûres selon Ibn Battûta, marchés, mosquées, palais en banco, flotte sur le Niger."
+      },
+      "legacy": "Le Mali devient le pays de l'or le plus célèbre du monde médiéval, lié à l'Égypte et au Maroc, et Tombouctou reste un grand foyer de savoir."
+    },
+    {
+      "id": "reculs",
+      "name": "Les reculs : Touaregs et Songhaï",
+      "start": 1360,
+      "end": 1468,
+      "population": {
+        "total": {
+          "value": 6000000,
+          "low": 3000000,
+          "high": 12000000,
+          "year": 1400,
+          "note": "Ordre de grandeur reconstruit ; aucun recensement.",
+          "source": {
+            "label": "Wikipédia : Empire du Mali",
+            "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+          }
+        },
+        "cities": [
+          {
+            "name": "Niani",
+            "population": {
+              "value": 20000,
+              "low": 8000,
+              "high": 50000,
+              "year": 1400,
+              "note": "Capitale en déclin ; très incertain.",
+              "source": {
+                "label": "Wikipédia : Niani",
+                "url": "https://fr.wikipedia.org/wiki/Niani"
+              }
+            }
+          },
+          {
+            "name": "Tombouctou",
+            "population": {
+              "value": 15000,
+              "low": 8000,
+              "high": 30000,
+              "year": 1450,
+              "note": "Sous tutelle touarègue ; ordre de grandeur.",
+              "source": {
+                "label": "Wikipédia : Tombouctou",
+                "url": "https://fr.wikipedia.org/wiki/Tombouctou"
+              }
+            }
+          },
+          {
+            "name": "Djenné",
+            "population": {
+              "value": 20000,
+              "low": 10000,
+              "high": 40000,
+              "year": 1450,
+              "note": "Cité autonome ; ordre de grandeur.",
+              "source": {
+                "label": "Wikipédia : Djenné",
+                "url": "https://fr.wikipedia.org/wiki/Djenn%C3%A9"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Or du Bambouk et du Bouré",
+          "Sel",
+          "Mil et riz",
+          "Cauris"
+        ],
+        "currency": "Poudre d'or, cauris, barres de sel et de cuivre.",
+        "taxation": "Tribut des vassaux de plus en plus rare ; droits sur les caravanes qui ne passent plus que dans l'ouest.",
+        "trade": "L'or descend par la côte atlantique vers les Portugais dès 1455, ce qui concurrence le Sahara."
+      },
+      "army": {
+        "size": {
+          "value": 40000,
+          "low": 20000,
+          "high": 80000,
+          "year": 1400,
+          "note": "Ordre de grandeur reconstruit ; sources arabes et portugaises rares.",
+          "source": {
+            "label": "Wikipédia : Empire du Mali",
+            "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+          }
+        },
+        "composition": "Fantassins et archers mandingues, peu de cavalerie ; peu de défense des marges.",
+        "recruitment": "Levée dans le Manden et les provinces de l'ouest ; chefs locaux de plus en plus autonomes.",
+        "famousUnits": [
+          "Garnisons du Macina",
+          "Archers du Manden"
+        ],
+        "innovations": [
+          "Aucune innovation notable documentée",
+          "Dépendance à la fidélité des vassaux"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie fragilisée par les querelles dynastiques et les révoltes provinciales.",
+        "head": "Mansas Keïta : Mari Diata II, Moussa II, Magha II, Mahmoud, etc.",
+        "succession": "Querelles entre branches Keïta ; usurpations (Sandaki).",
+        "institutions": "Cour et conseillers ; les provinces éloignées s'émancipent.",
+        "administration": "Gouverneurs peu contrôlés ; Gao, Tombouctou puis Oualata se détachent.",
+        "provinces": {
+          "value": 8,
+          "low": 5,
+          "high": 12,
+          "year": 1400,
+          "unit": "provinces",
+          "note": "Provinces encore contrôlées ; estimation très approximative.",
+          "source": {
+            "label": "Wikipédia : Empire du Mali",
+            "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+          }
+        },
+        "law": "Coutumes malinkés et droit musulman ; peu de sources."
+      },
+      "society": {
+        "religions": [
+          "Islam sunnite",
+          "Religions traditionnelles",
+          "Culte des ancêtres"
+        ],
+        "languages": [
+          "Malinké",
+          "Songhaï",
+          "Soninké",
+          "Arabe",
+          "Tamasheq (Touaregs)"
+        ],
+        "structure": "Mansa, clans nobles, lettrés, marchands, artisans, captifs.",
+        "women": "Femmes influentes dans les lignages ; rôle politique difficile à documenter."
+      },
+      "culture": {
+        "inventions": [
+          "Écoles de Tombouctou",
+          "Copie de manuscrits",
+          "Marchés du Niger"
+        ],
+        "works": [
+          "Djingareyber",
+          "Sankoré",
+          "Manuscrits de Tombouctou"
+        ],
+        "scholars": [
+          "Ibn Khaldoun (observateur)",
+          "Cadis de Tombouctou"
+        ]
+      },
+      "infrastructure": {
+        "roads": {
+          "value": 15000,
+          "low": 8000,
+          "high": 25000,
+          "year": 1400,
+          "unit": "km",
+          "note": "Reconstruction approximative : pistes moins sûres.",
+          "source": {
+            "label": "Wikipédia : Empire du Mali",
+            "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+          }
+        },
+        "summary": "Pistes et routes fluviales, moins sûres ; villes du Niger tenues par d'autres pouvoirs."
+      },
+      "legacy": "Le Mali perd ses grands marchés du Niger mais garde le Manden et l'ouest ; Songhaï et Touaregs récupèrent ses villes."
+    },
+    {
+      "id": "manden",
+      "name": "Le Manden replié",
+      "start": 1468,
+      "end": 1670,
+      "population": {
+        "total": {
+          "value": 3000000,
+          "low": 1500000,
+          "high": 6000000,
+          "year": 1550,
+          "note": "Ordre de grandeur reconstruit pour le Manden réduit ; aucun recensement.",
+          "source": {
+            "label": "Wikipédia : Empire du Mali",
+            "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+          }
+        },
+        "cities": [
+          {
+            "name": "Niani",
+            "population": {
+              "value": 10000,
+              "low": 4000,
+              "high": 30000,
+              "year": 1500,
+              "note": "Capitale en déclin ; localisation discutée.",
+              "source": {
+                "label": "Wikipédia : Niani",
+                "url": "https://fr.wikipedia.org/wiki/Niani"
+              }
+            }
+          },
+          {
+            "name": "Kangaba",
+            "population": {
+              "value": 5000,
+              "low": 2000,
+              "high": 10000,
+              "year": 1600,
+              "note": "Dernier centre du mansa ; ordre de grandeur.",
+              "source": {
+                "label": "Wikipédia : Empire du Mali",
+                "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Or du Bouré",
+          "Mil et riz",
+          "Coton",
+          "Bétail"
+        ],
+        "currency": "Poudre d'or et cauris ; troc local.",
+        "taxation": "Tribut local et droits sur le commerce du haut Niger ; revenus en baisse.",
+        "trade": "Commerce de l'or par des intermédiaires diulas ; la côte atlantique et le Songhaï captent l'essentiel."
+      },
+      "army": {
+        "size": {
+          "value": 20000,
+          "low": 8000,
+          "high": 40000,
+          "year": 1599,
+          "note": "Ordre de grandeur ; chroniques de Tombouctou, favorables aux Marocains.",
+          "source": {
+            "label": "Wikipédia : Empire du Mali",
+            "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+          }
+        },
+        "composition": "Fantassins, archers, quelques cavaliers ; aucune arme à feu en nombre.",
+        "recruitment": "Levée par clans autour de Kangaba ; peu de grands contingents vassaux.",
+        "famousUnits": [
+          "Garde du mansa",
+          "Guerriers de Kangaba"
+        ],
+        "innovations": [
+          "Mobilisation par clans autour de Kangaba",
+          "Retraite vers le berceau du Manden"
+        ]
+      },
+      "politics": {
+        "regime": "Petit royaume mandingue, héritier de l'empire.",
+        "head": "Mansa Keïta, comme Mahmoud IV (vers 1599).",
+        "succession": "Dans la famille Keïta ; querelles de lignages.",
+        "institutions": "Conseil de clans, griots, chefs de village ; pouvoir symbolique.",
+        "administration": "Chefferies locales du Manden ; peu d'administration centrale.",
+        "law": "Coutumes malinkés, droit musulman local."
+      },
+      "society": {
+        "religions": [
+          "Islam sunnite",
+          "Religions traditionnelles",
+          "Culte des ancêtres"
+        ],
+        "languages": [
+          "Malinké",
+          "Bambara",
+          "Soninké",
+          "Arabe"
+        ],
+        "structure": "Famille Keïta, clans nobles, griots, forgerons, paysans, captifs.",
+        "women": "Femmes importantes dans les lignages ; peu de documents."
+      },
+      "culture": {
+        "inventions": [
+          "Kora et balafon des griots",
+          "Récit de Soundiata",
+          "Textiles bogolan"
+        ],
+        "works": [
+          "Épopée de Soundiata",
+          "Tarikh es-Soudan (source extérieure)"
+        ],
+        "scholars": [
+          "Léon l'Africain (visiteur)",
+          "Griots Kouyaté"
+        ]
+      },
+      "infrastructure": {
+        "roads": {
+          "value": 5000,
+          "low": 2000,
+          "high": 10000,
+          "year": 1550,
+          "unit": "km",
+          "note": "Reconstruction approximative.",
+          "source": {
+            "label": "Wikipédia : Empire du Mali",
+            "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+          }
+        },
+        "summary": "Pistes et villes du haut Niger ; Niani incendiée vers 1670 selon la tradition."
+      },
+      "legacy": "Le Mali disparaît comme empire, mais la dynastie Keïta survit à Kangaba et la mémoire de Soundiata reste vivante chez les griots."
+    }
+  ]
+}

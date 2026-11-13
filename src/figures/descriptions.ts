@@ -239,6 +239,31 @@ export const FACTION_INFO: Record<Faction, FigureInfo> = {
     era: 'XVe – XIXe siècle',
     text: "Peuple du centre-sud du Chili, les Mapuches arrêtent vers 1485 l'expansion inca sur le río Maule. Ils résisteront ensuite trois siècles aux Espagnols, dans la guerre d'Arauco. Leurs combattants, vêtus de ponchos et coiffés du trarilonco, manient la lance et la massue.",
   },
+  mandingues: {
+    label: 'Mandingues (armée du Mali)',
+    era: 'XIIIe – XVIIe siècle',
+    text: "Les clans du Manden, unis par Soundiata Keïta, forment l'armée du Mali. Une cavalerie de nobles monte des chevaux achetés au Maghreb, tandis que des archers et des lanciers sont levés dans les provinces. Selon al-Umari, l'armée compterait 100 000 hommes, chiffre sans doute exagéré.",
+  },
+  sosso: {
+    label: 'Sosso',
+    era: 'XIIIe siècle',
+    text: "Le royaume de Soumaoro Kanté, roi forgeron, domine le Manden avant sa défaite à Kirina (vers 1235). Les forgerons y ont un grand prestige, et des pouvoirs magiques selon l'épopée de Soundiata.",
+  },
+  touaregs: {
+    label: 'Touaregs',
+    era: 'depuis le Moyen Âge',
+    text: "Nomades berbères du Sahara, maîtres des pistes caravanières et des chameaux. Les hommes portent le voile indigo (tagelmust) et l'épée droite (takouba). Ils prennent Tombouctou au Mali en 1433.",
+  },
+  songhais: {
+    label: 'Songhaï',
+    era: 'XIVe – XVIe siècle',
+    text: "Le peuple de Gao, sur la boucle du Niger, d'abord tributaire du Mali. Sous Sonni Ali (1464-1492), il bâtit un empire qui supplante le Mali, avec une flotte de pirogues et une cavalerie.",
+  },
+  mossis: {
+    label: 'Mossis',
+    era: "XVe siècle – aujourd'hui",
+    text: "Les royaumes de cavaliers du bassin de la Volta (l'actuel Burkina Faso), dont la capitale est Ouagadougou. Ils lancent des raids jusqu'à Tombouctou et Oualata au XVe siècle et résistent à l'islamisation.",
+  },
   'francais-ancien-regime': {
     label: "Français d'Ancien Régime",
     era: 'XVIe – XVIIIe s.',
@@ -601,6 +626,11 @@ export const ARCHETYPE_INFO: Record<Archetype, FigureInfo> = {
     label: 'Pacha',
     era: 'XVe – XIXe s.',
     text: 'Haut dignitaire ottoman, gouverneur de province ou commandant militaire. Son rang se mesure au nombre de queues de cheval (tuğ) portées devant lui : une, deux ou trois. Turban ou fez, caftan, barbe soignée. Certains pachas, comme Méhémet Ali en Égypte, deviennent presque indépendants du sultan.',
+  },
+  mansa: {
+    label: 'Mansa',
+    era: 'Empire du Mali',
+    text: "« Mansa » signifie « roi des rois » en mandingue. Le mansa est un souverain sacré : on s'adresse à lui par l'intermédiaire d'un griot, en se couvrant de poussière. Le plus célèbre, Mansa Moussa, éblouit Le Caire avec son or en 1324.",
   },
   prelat: {
     label: 'Évêque ou abbé',

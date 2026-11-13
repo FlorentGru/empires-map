@@ -101,6 +101,11 @@ const PEOPLE: Record<Faction, string> = {
   'grecs-modernes': 'Grecs',
   chancas: 'Peuples andins',
   mapuches: 'Mapuches',
+  mandingues: 'Mandingues',
+  sosso: 'Sosso',
+  touaregs: 'Touaregs',
+  songhais: 'Songhaï',
+  mossis: 'Mossis',
 };
 const esc = (v: string) => v.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const plain = (v: string) =>

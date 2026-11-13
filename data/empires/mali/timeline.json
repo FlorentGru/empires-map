@@ -1,0 +1,1540 @@
+{
+  "id": "mali",
+  "name": "Empire du Mali",
+  "color": "#d8a03a",
+  "start": 1235,
+  "end": 1670,
+  "description": "L'Empire du Mali naît vers 1235 dans le Manden, au sud de l'actuelle Bamako, quand le prince Soundiata Keïta bat le roi sosso Soumaoro Kanté à Kirina. Grâce à l'or du Bambouk et du Bouré et au commerce du sel à travers le Sahara, il s'étend de l'Atlantique à Gao et fait de Tombouctou un foyer de savoir. Il atteint son apogée sous Mansa Moussa, dont le pèlerinage de 1324 fait connaître son or jusqu'au Caire. Rongé par les querelles de succession, puis écrasé par les Songhaï, il disparaît comme empire vers 1670, mais les griots continuent de chanter son histoire.",
+  "view": {
+    "center": [
+      -6,
+      14
+    ],
+    "zoom": 4
+  },
+  "bounds": [
+    [
+      -25,
+      0
+    ],
+    [
+      20,
+      30
+    ]
+  ],
+  "apogee": {
+    "stepId": "tombouctou-1325",
+    "note": "Vers 1325-1340, sous Mansa Moussa puis Souleymane, le Mali s'étend de l'Atlantique à Gao, avec Tombouctou, Oualata et Takedda. Les frontières sont mal connues : les sources arabes (al-Umari, Ibn Battûta) donnent des distances en journées de marche, et les traditions orales ne donnent pas de limites."
+  },
+  "periods": [
+    {
+      "id": "soundiata",
+      "name": "Soundiata et la fondation",
+      "start": 1235,
+      "end": 1312,
+      "color": "#e8c88a",
+      "summary": "Un petit pays de chefferies malinkés devient un empire. Soundiata bat les Sosso à Kirina, ses lieutenants atteignent la Gambie et Oualata, puis Sakoura et Aboubakri II poussent jusqu'à Gao et à l'Atlantique. Les dates viennent de traditions orales et de textes arabes tardifs, donc incertaines."
+    },
+    {
+      "id": "moussa",
+      "name": "L'âge d'or de Mansa Moussa",
+      "start": 1312,
+      "end": 1360,
+      "color": "#f0b24a",
+      "summary": "Mansa Moussa fait du Mali le plus riche pays d'Afrique de l'Ouest. Son pèlerinage de 1324 étonne le Caire, ses conquêtes ajoutent Gao et Tombouctou, et la mosquée Djingareyber s'élève. Sous Souleymane, Ibn Battûta visite un pays sûr et pieux."
+    },
+    {
+      "id": "reculs",
+      "name": "Les reculs : Touaregs et Songhaï",
+      "start": 1360,
+      "end": 1468,
+      "color": "#c9a07a",
+      "summary": "Les querelles de succession, les raids mossis, les Touaregs et les Songhaï rongent l'empire : Gao se détache, Tombouctou tombe en 1433. Les Portugais, sur la côte, détournent l'or. Le Mali se replie sur l'ouest."
+    },
+    {
+      "id": "manden",
+      "name": "Le Manden replié",
+      "start": 1468,
+      "end": 1670,
+      "color": "#b58a6a",
+      "summary": "Sonni Ali prend Tombouctou puis Djenné, les Marocains écrasent les Songhaï en 1591, mais le Mali échoue devant Djenné en 1599. Réduit au Manden, il disparaît comme empire quand les Bambaras de Ségou brûlent Niani vers 1670."
+    }
+  ],
+  "steps": [
+    {
+      "id": "kirina-1235",
+      "year": 1235,
+      "title": "Kirina : Soundiata renverse Soumaoro",
+      "type": "bataille",
+      "location": [
+        -8.2,
+        12.1
+      ],
+      "zoom": 5.2,
+      "summary": "Vers 1235, le prince Soundiata Keïta bat le roi sosso Soumaoro Kanté à Kirina, dans le haut Niger. Le Manden, jusque-là petit pays de chefferies malinkés, devient le cœur d'un empire.",
+      "details": "Au début du XIIIᵉ siècle, le **Sosso** (ou Kaniaga), un royaume du haut Niger dirigé par le roi forgeron **Soumaoro Kanté**, domine ses voisins et s'est emparé, dit la tradition, de l'ancien empire du Ghana. Le **Manden** (ou Mandé), pays des **Malinkés** (ou Mandingues), au sud de l'actuel Bamako, lui obéit. Tout ce que nous savons de la suite vient surtout de l'**épopée de Soundiata**, transmise oralement par les **griots** (poètes-historiens héréditaires) : l'enfant infirme **Soundiata**, fils de **Sogolon**, grandit en exil, se relève, revient avec des alliés et se bat contre Soumaoro.\n\nLa bataille décisive se tient à **Kirina**, vers 1235. Selon l'épopée, Soundiata blesse Soumaoro d'une flèche dont la pointe est un ergot de coq blanc, son interdit magique ; le roi sosso disparaît dans les montagnes. Les sources arabes, écrites bien plus tard (Ibn Khaldoun, vers 1380), confirment l'essentiel : un souverain malinké nommé Mari Diata a vaincu les Sosso. Mais la date (1235 est une convention), le lieu exact de Kirina et le détail du combat restent discutés, car la tradition orale mêle histoire et merveilleux.\n\nSoundiata se fait alors proclamer **mansa** (« roi des rois » en malinké). Le Sosso et ses voisins du haut Niger passent sous son autorité, et le Mali commence.",
+      "consequences": [
+        "Le Manden et le Sosso (Kaniaga, bassin du haut Niger) sont réunis sous l'autorité de Soundiata, premier mansa du Mali.",
+        "Le pouvoir des Sosso, qui dominaient le haut Niger et l'ancien Ghana, s'effondre.",
+        "Les chefs malinkés alliés (Mema, Sibi, Tabou…) deviennent les grands lignages du nouvel État.",
+        "La victoire devient le récit fondateur du Mali, chanté par les griots jusqu'à nos jours."
+      ],
+      "territory": "kirina-1235",
+      "territoryNote": "Le Mali de 1235 est petit : le Manden (Kangaba, vallées du haut Niger, du Sankarani et du Niandan, de Siguiri jusqu'à Bamako) et les terres sosso conquises (Kaniaga, Bélédougou, région de Koulikoro et de Kita), avec Mema (Nampala, Dia) comme allié au nord. Voisins : l'ancien Ghana (Soninkés de Koumbi Saleh, Oualata, Aoukar), très affaibli ; le Tekrour (vallée du fleuve Sénégal), indépendant ; les Songhaï de Gao, indépendants ; les Touaregs de l'Adrar des Ifoghas, de Tadmekka et de l'Aïr, indépendants ; les premiers États mossis (Ouagadougou, Tenkodogo, Yatenga) et les chefferies du Bambouk et du Bouré, hors du Mali ; au nord, les Berbères sanhadja de Teghaza et d'Oualata.",
+      "battle": {
+        "belligerents": [
+          "Mandingues (Manden et alliés de Soundiata)",
+          "Royaume sosso (Kaniaga)"
+        ],
+        "commanders": [
+          "Soundiata Keïta",
+          "Soumaoro Kanté"
+        ],
+        "outcome": "Victoire de Soundiata ; fin du pouvoir sosso, naissance de l'Empire du Mali",
+        "forces": "Inconnues ; l'épopée parle de grandes armées sans chiffres fiables",
+        "losses": "Non connues ; Soumaoro disparaît dans les montagnes selon la tradition"
+      },
+      "armies": [
+        {
+          "id": "soundiata",
+          "side": "Mandingues de Soundiata",
+          "from": "Mema",
+          "faction": "mandingues",
+          "path": [
+            [
+              -5.9,
+              15.1
+            ],
+            [
+              -7,
+              13.6
+            ],
+            [
+              -8,
+              12.5
+            ],
+            [
+              -8.2,
+              12.1
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Sosso de Soumaoro",
+          "from": "Sosso-Bala",
+          "faction": "sosso",
+          "path": [
+            [
+              -7.6,
+              12.7
+            ],
+            [
+              -8.2,
+              12.1
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Soundiata Keïta",
+          "role": "Premier mansa du Mali",
+          "faction": "mandingues",
+          "archetype": "mansa",
+          "quote": "(formule libre) Le lion se relève : le Manden sera libre",
+          "position": [
+            -8.25,
+            12.12
+          ],
+          "person": "soundiata-keita"
+        },
+        {
+          "name": "Soumaoro Kanté",
+          "role": "Roi forgeron du Sosso",
+          "faction": "sosso",
+          "archetype": "roi",
+          "quote": "(formule libre) Nul ne règne sur le Manden sans me plier le genou",
+          "position": [
+            -7.8,
+            12.4
+          ],
+          "person": "soumaoro-kante"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Kirina",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Kirina"
+        },
+        {
+          "label": "Wikipédia — Soundiata Keïta",
+          "url": "https://fr.wikipedia.org/wiki/Soundiata_Ke%C3%AFta"
+        },
+        {
+          "label": "Wikipédia — Empire du Mali",
+          "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+        }
+      ]
+    },
+    {
+      "id": "kouroukan-fouga-1236",
+      "year": 1236,
+      "title": "La charte du Manden (Kouroukan Fouga)",
+      "type": "réforme",
+      "location": [
+        -8.42,
+        11.94
+      ],
+      "zoom": 5.4,
+      "summary": "Selon la tradition, une grande assemblée à Kangaba proclame vers 1236 la charte du Manden : un partage des fonctions entre clans et des règles de vie commune. Le texte, transmis oralement, est inscrit par l'UNESCO au patrimoine immatériel.",
+      "details": "Après Kirina, Soundiata réunit à **Kangaba** (ou Kouroukan Fouga, « la plaine de la répartition ») les chefs malinkés et leurs alliés. La tradition orale, que des griots de Kankan et de Kangaba ont longtemps récitée, rapporte que cette assemblée a distribué les rôles : les **forgerons**, les **griots** (*djéli*) et les clans de guerriers ou de marabouts reçoivent des fonctions précises. Les clans nobles (Keïta, Traoré, Konaté, Camara…) servent de colonne vertébrale à l'État.\n\nLe texte contient aussi des règles très concrètes : on interdit de maltraiter les étrangers, on protège la vie humaine (« toute vie est une vie »), on règle le mariage, l'élevage, la chasse et le partage des fruits des champs. Il évoque l'**abolition de la razzia** contre les voisins, l'entraide et la « plaisanterie à parenté » (*sinankuya*), qui permet à certains clans de se moquer sans offense.\n\nAttention : cette charte n'a pas été écrite à l'époque. Elle a été mise par écrit en 1998 à Kankan (Guinée), à partir de récits de griots, et inscrite par l'UNESCO en 2009. Sa date (1236) et le détail de ses articles sont donc une reconstruction, mais elle exprime bien l'idée du Mali : un État de lignages qui se partagent le pouvoir.",
+      "consequences": [
+        "Le territoire du Mali reste celui du haut Niger, mais il est désormais organisé par clans et par provinces confiées aux compagnons de Soundiata.",
+        "Les forgerons, griots et clans nobles reçoivent un statut stable, base de la société malinké.",
+        "La charte fait du Manden une alliance de lignages plutôt qu'une domination d'un seul peuple.",
+        "Kangaba reste un lieu de mémoire de la dynastie Keïta, même quand la capitale est ailleurs."
+      ],
+      "territory": "kouroukan-fouga-1236",
+      "territoryNote": "Même cadre que 1235 : le Manden (Kangaba, vallées du haut Niger, du Sankarani et du Niandan, de Siguiri à Bamako) et le Sosso conquis (Kaniaga, Bélédougou, Koulikoro, Kita), avec Mema au nord. Voisins : le Ghana déclinant (Soninkés de Koumbi Saleh, Oualata), le Tekrour (fleuve Sénégal), les Songhaï de Gao, les Touaregs (Adrar des Ifoghas, Tadmekka, Aïr), les premiers États mossis et les chefferies du Bambouk et du Bouré, tous indépendants ; les Berbères de Teghaza au nord.",
+      "figures": [
+        {
+          "name": "Soundiata Keïta",
+          "role": "Mansa, président de l'assemblée de Kangaba",
+          "faction": "mandingues",
+          "archetype": "mansa",
+          "quote": "(formule libre) Chaque clan aura sa place, et chaque vie sera respectée",
+          "position": [
+            -8.42,
+            11.94
+          ],
+          "person": "soundiata-keita"
+        },
+        {
+          "name": "Balla Fasséké",
+          "role": "Griot et conseiller de Soundiata",
+          "faction": "mandingues",
+          "archetype": "sage",
+          "quote": "(formule libre) Le griot garde la parole que les rois oublient",
+          "position": [
+            -8.5,
+            11.9
+          ],
+          "person": "balla-fasseke"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Charte du Manden",
+          "url": "https://fr.wikipedia.org/wiki/Charte_du_Manden"
+        },
+        {
+          "label": "Wikipédia — Empire du Mali",
+          "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+        },
+        {
+          "label": "Wikipédia — Griot",
+          "url": "https://fr.wikipedia.org/wiki/Griot"
+        }
+      ]
+    },
+    {
+      "id": "conquetes-1255",
+      "year": 1255,
+      "title": "Vers l'Atlantique et vers Oualata",
+      "type": "politique",
+      "location": [
+        -12.5,
+        12.5
+      ],
+      "zoom": 4.2,
+      "summary": "Vers 1255, à la mort de Soundiata, les lieutenants du Mali ont étendu l'empire vers l'ouest (Bambouk, Gambie, Kaabu) et vers le Sahel d'Oualata. L'or du Bambouk et du Bouré fait la richesse de l'État.",
+      "details": "Soundiata meurt vers **1255** (noyé dans le Sankarani ou frappé accidentellement, disent deux traditions). Il laisse un empire bien plus grand que le Manden : ses compagnons ont poussé les frontières dans toutes les directions.\n\nÀ l'ouest, la tradition attribue à **Tiramakhan Traoré** la conquête du **Kaabu** (Casamance et Guinée-Bissau actuelles) et de la Gambie, où s'installent des familles mandingues. Le général **Fakoli Koroma** et le chef **Faran Kamara** sont associés au **Bambouk** (entre Sénégal et Falémé) et à ses gisements d'or, tandis que le **Bouré** (haut Niger, vers Siguiri) fournit aussi de l'or. Ces deux régions donnent au Mali son contrôle de l'or soudanais.\n\nAu nord, la route des caravanes vers **Oualata**, grand marché berbère du Sahel, passe peu à peu sous contrôle malien, ce qui permet de commercer avec le Maroc et l'Égypte. Le **Tekrour**, sur le fleuve Sénégal, n'est pas encore soumis : il le sera plus tard.\n\nCes conquêtes sont connues par des récits tardifs, et leurs dates sont imprécises : le XIIIᵉ siècle malien est un siècle de traditions orales et non de chroniques. Ibn Khaldoun ne mentionne que quelques noms de rois (Mari Diata, Ouali, Ouati, Khalifa).",
+      "consequences": [
+        "Le Mali s'étend vers l'ouest : Bambouk, haut Sénégal-Falémé, Gambie et Kaabu passent dans sa sphère.",
+        "L'or du Bambouk et du Bouré alimente un grand commerce transsaharien.",
+        "La route d'Oualata ouvre le Mali au monde arabe et berbère.",
+        "Le Tekrour reste indépendant, à la lisière occidentale de l'empire."
+      ],
+      "territory": "conquetes-1255",
+      "territoryNote": "Le Mali de 1255 couvre le Manden (Kangaba, haut Niger de Siguiri à Bamako), le Bouré (Siguiri, Kouroussa), le Bambouk (entre Sénégal et Falémé, Kéniéba), le Kaabu et la Gambie (Casamance, Guinée-Bissau, haute Gambie), la région de Kita et de Kayes, et le Sahel jusqu'à Oualata et l'Aoukar (tributaire ou sous contrôle partiel). Voisins : le Tekrour (Podor, vallée du Sénégal), indépendant ; les Wolofs (pas encore réunis dans le Jolof, qui n'existera que vers 1350) ; les Songhaï de Gao, indépendants ; les Touaregs (Adrar, Aïr, Tadmekka), indépendants ; les premiers États mossis ; le Sosso éteint ; au nord, les Berbères sanhadja de Teghaza.",
+      "armies": [
+        {
+          "id": "tiramakhan",
+          "side": "Mandingues de Tiramakhan",
+          "from": "Kangaba",
+          "faction": "mandingues",
+          "path": [
+            [
+              -8.42,
+              11.94
+            ],
+            [
+              -10,
+              12.1
+            ],
+            [
+              -12,
+              12.5
+            ],
+            [
+              -14,
+              12.3
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Tiramakhan Traoré",
+          "role": "Général, conquérant du Kaabu (selon la tradition)",
+          "faction": "mandingues",
+          "archetype": "general",
+          "quote": "(formule libre) Où va le Mali, le fleuve et l'or le suivent",
+          "position": [
+            -13.5,
+            12.3
+          ]
+        },
+        {
+          "name": "Soundiata Keïta",
+          "role": "Mansa, mort vers 1255",
+          "faction": "mandingues",
+          "archetype": "mansa",
+          "quote": "(formule libre) Un roi n'est grand que par les hommes qui le servent",
+          "position": [
+            -8.4,
+            11.9
+          ],
+          "person": "soundiata-keita"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Empire du Mali",
+          "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+        },
+        {
+          "label": "Wikipédia — Soundiata Keïta",
+          "url": "https://fr.wikipedia.org/wiki/Soundiata_Ke%C3%AFta"
+        },
+        {
+          "label": "Wikipédia — Royaume du Kaabu",
+          "url": "https://fr.wikipedia.org/wiki/Kaabu"
+        }
+      ]
+    },
+    {
+      "id": "sakoura-1290",
+      "year": 1290,
+      "title": "Sakoura, le mansa ancien esclave",
+      "type": "politique",
+      "location": [
+        -1,
+        16.3
+      ],
+      "zoom": 4.3,
+      "summary": "Vers 1285-1300, le mansa Sakoura, un ancien esclave devenu général, relève le Mali après des querelles de succession. Il soumet Gao, Takedda et le Tekrour.",
+      "details": "Après Soundiata, le Mali connaît des successions troublées. Selon **Ibn Khaldoun**, qui écrit vers 1380 à partir des informations de voyageurs, les fils de Soundiata (Ouali, Ouati, Khalifa) règnent mal ; Khalifa est assassiné pour sa cruauté. Le pouvoir passe alors à **Abou Bakr** (petit-fils d'un frère de Soundiata), puis à un affranchi, **Sakoura** (ou Sabkara), ancien esclave devenu chef militaire, qui règne vers **1285-1300**.\n\nSakoura est le premier grand conquérant après Soundiata. D'après Ibn Khaldoun, il étend l'empire jusqu'à **Gao** (ville songhaï sur le Niger) et jusqu'à **Takedda** (centre cuprifère touareg du Sahara, dans le nord du Niger actuel), puis vers le **Tekrour**, sur le fleuve Sénégal. Il garantit la sécurité des routes et attire les marchands. Un voyage à La Mecque lui est attribué ; il serait mort au retour, vers la mer Rouge, tué par des Danakil (peuple de la Corne de l'Afrique), vers 1300.\n\nLes dates sont ici très incertaines : le tout début de l'histoire malienne repose sur des généalogies recomposées. Le nom de Sakoura est cependant solide, car il figure à la fois dans les sources arabes et dans les traditions mandingues.",
+      "consequences": [
+        "Gao, sur la boucle du Niger, et Takedda, dans l'Aïr, entrent dans la sphère malienne.",
+        "Le Tekrour, à l'ouest, est soumis ou rendu tributaire.",
+        "Le Mali devient une puissance reconnue, qui envoie pèlerins et marchands jusqu'à l'Égypte.",
+        "Les successions troublées montrent la fragilité de l'État : tout dépend du mansa du moment."
+      ],
+      "territory": "sakoura-1290",
+      "territoryNote": "Le Mali vers 1290 s'étend du Kaabu et de la Gambie (ouest) jusqu'à Gao (est), et de Kangaba, Ségou et Djenné (delta intérieur du Niger, sphère d'influence) au Sahel d'Oualata ; il inclut le Bambouk, le Bouré, le Tekrour (vassal, fleuve Sénégal) et Takedda (Aïr, tributaire). Voisins : les Wolofs (pas encore de Jolof), les Songhaï de Gao (soumis), les Touaregs de l'Adrar des Ifoghas et de l'Aïr (indépendants), les États mossis (indépendants), les Berbères de Teghaza, et les Haoussas à l'est, hors de portée.",
+      "armies": [
+        {
+          "id": "sakoura",
+          "side": "Armée du mansa Sakoura",
+          "from": "Niani",
+          "faction": "mandingues",
+          "path": [
+            [
+              -8.87,
+              11.43
+            ],
+            [
+              -6.3,
+              13.4
+            ],
+            [
+              -4.55,
+              13.9
+            ],
+            [
+              -2.2,
+              15.7
+            ],
+            [
+              0.05,
+              16.27
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Sakoura",
+          "role": "Mansa, ancien esclave conquérant",
+          "faction": "mandingues",
+          "archetype": "mansa",
+          "quote": "(formule libre) Qui tient le fleuve tient la route de l'or",
+          "position": [
+            -4.5,
+            13.9
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Empire du Mali",
+          "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+        },
+        {
+          "label": "Wikipédia — Ibn Khaldoun",
+          "url": "https://fr.wikipedia.org/wiki/Ibn_Khaldoun"
+        },
+        {
+          "label": "Wikipédia — Gao",
+          "url": "https://fr.wikipedia.org/wiki/Gao"
+        }
+      ]
+    },
+    {
+      "id": "aboubakri-1311",
+      "year": 1311,
+      "title": "Aboubakri II et l'expédition de l'Atlantique",
+      "type": "politique",
+      "location": [
+        -16.6,
+        13.4
+      ],
+      "zoom": 4.4,
+      "summary": "Vers 1311, selon al-Umari, le mansa Aboubakri II aurait envoyé des centaines de bateaux explorer l'océan, puis serait parti lui-même. Aucun n'est revenu. L'épisode, très débattu, passe par la bouche de son successeur.",
+      "details": "L'histoire est rapportée par **al-Umari**, un savant de Damas (vers 1340), qui la tient d'un émir du Caire, **Ibn Amir Hajib**. Celui-ci l'a lui-même entendue de **Mansa Moussa** pendant son séjour au Caire, en 1324. Le roi, dit Moussa, avait un prédécesseur (Aboubakri II, parfois appelé Abu Bakr) qui refusait de croire qu'on ne pouvait pas atteindre l'extrémité de l'océan. Il équipa 200 bateaux d'hommes et de vivres, et leur ordonna de ne pas revenir sans avoir atteint le bout de la mer.\n\nUn seul bateau revint après longtemps. Son capitaine raconta que la flotte avait été aspirée par un courant dans la mer : « un fleuve à fort courant ». Le roi fit alors équiper **2 000 bateaux**, dont 1 000 pour lui, et partit lui-même, laissant le royaume à Moussa. Il ne revint jamais. C'est, dit la légende, ainsi que Moussa devint roi.\n\nOn ne sait pas si cette traversée a eu lieu : le Mali avait accès à l'Atlantique par la Gambie et le Sénégal, mais l'ampleur des chiffres est suspecte. Certains historiens y voient un récit héroïque, ou un souvenir de pirogues de pêche ; d'autres un voyage vers l'Amérique, sans preuve archéologique. Les griots, eux, racontent un autre récit de succession.",
+      "consequences": [
+        "Le Mali atteint l'Atlantique par la Gambie et la Casamance, et dispose d'un accès à l'océan.",
+        "Aboubakri II disparaît, ce qui ouvre le trône à Moussa (c'est la version d'al-Umari ; d'autres généalogies divergent).",
+        "L'épisode alimente, depuis le XXᵉ siècle, des débats sur d'éventuelles traversées précolombiennes, sans preuves solides.",
+        "Il montre que le Mali voit grand : son souverain pense pouvoir « dominer l'océan »."
+      ],
+      "territory": "aboubakri-1311",
+      "territoryNote": "Le Mali de 1311 va de la côte atlantique (Gambie, Casamance, estuaire du Saloum et du Sénégal) à Gao à l'est, et du Bambouk, du Bouré et du Manden au sud jusqu'au Sahel d'Oualata et à Takedda au nord ; le delta intérieur du Niger (Djenné) est dans sa sphère. Le Tekrour (vallée du Sénégal) est vassal, le Kaabu semi-autonome. Voisins : les Wolofs (Cayor, Baol, Walo, pas encore unifiés en Jolof), les Songhaï de Gao (soumis), les Touaregs (Adrar, Aïr), indépendants, les États mossis indépendants, les Berbères de Teghaza.",
+      "figures": [
+        {
+          "name": "Aboubakri II",
+          "role": "Mansa parti explorer l'océan",
+          "faction": "mandingues",
+          "archetype": "mansa",
+          "quote": "(selon al-Umari, rapportant Moussa) Mon prédécesseur voulait atteindre l'extrémité de l'océan",
+          "position": [
+            -16.6,
+            13.4
+          ],
+          "person": "aboubakri-ii"
+        },
+        {
+          "name": "Un capitaine de la flotte",
+          "role": "Seul revenu, selon al-Umari",
+          "faction": "mandingues",
+          "archetype": "capitaine",
+          "quote": "(formule libre) Les autres bateaux ont été emportés par un fleuve au milieu de la mer",
+          "position": [
+            -16.8,
+            13.6
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Aboubakari II",
+          "url": "https://fr.wikipedia.org/wiki/Aboubakari_II"
+        },
+        {
+          "label": "Wikipédia — Empire du Mali",
+          "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+        },
+        {
+          "label": "Wikipédia — Ibn Fadl Allah al-Umari",
+          "url": "https://fr.wikipedia.org/wiki/Ibn_Fadl_Allah_al-Umari"
+        }
+      ]
+    },
+    {
+      "id": "moussa-1324",
+      "year": 1324,
+      "title": "Mansa Moussa au Caire : l'or du Mali",
+      "type": "politique",
+      "location": [
+        31.24,
+        30.04
+      ],
+      "zoom": 4,
+      "summary": "En 1324, Mansa Moussa traverse le Sahara et l'Égypte pour son pèlerinage à La Mecque avec une suite immense et des charges d'or. Sa générosité fait chuter le cours de l'or au Caire pour des années.",
+      "details": "**Mansa Moussa** (Kankou Moussa), petit-neveu de Soundiata selon la tradition, règne depuis environ **1312**. En **1324**, il part en **pèlerinage** (*hadj*) à La Mecque, ce qui était un devoir religieux pour un souverain musulman, mais aussi une immense opération diplomatique. Les chroniqueurs arabes parlent de dizaines de milliers de personnes (60 000 selon certains), d'esclaves portant des bâtons d'or et de chameaux chargés de poudre d'or. Il traverse le Sahara par Oualata et Teghaza (mine de sel), puis arrive au **Caire**, capitale du sultan mamelouk **an-Nasir Muhammad**.\n\nPendant trois mois, Moussa dépense et offre tant d'or que son cours s'effondre : **al-Umari**, qui passe au Caire douze ans plus tard, raconte que le dinar d'or y reste déprécié pendant des années. Moussa emprunte même de l'argent à son retour. Plus important : il rencontre des savants et ramène des juristes, des livres et des architectes, dont Abou Ishaq es-Sahéli, venu d'Andalousie.\n\nLes chiffres (nombre de pèlerins, quantité d'or) viennent de témoins tardifs, qui exagèrent probablement ; on retient surtout que, dans toute la Méditerranée, le Mali devient synonyme d'or. Il apparaît sur les cartes, dont l'**Atlas catalan** (1375).",
+      "consequences": [
+        "Le Mali, jusque-là mal connu, devient célèbre dans le monde arabe et en Europe pour son or ; son empire apparaît sur l'Atlas catalan.",
+        "Les liens avec l'Égypte mamelouke et le Maroc se renforcent ; des juristes et savants s'installent au Mali.",
+        "La dépréciation de l'or au Caire montre le poids du commerce malien dans l'économie méditerranéenne.",
+        "Le retour de Moussa avec des architectes lance une nouvelle architecture à Tombouctou et Gao."
+      ],
+      "territory": "moussa-1324",
+      "territoryNote": "Le Mali de 1324 s'étend de la côte atlantique (Gambie, Casamance, Sénégal) à Gao à l'est, du Bambouk, du Bouré et du Manden au sud jusqu'à Oualata, Teghaza (sel, tributaire ou sous protection) et Takedda au nord ; il comprend le haut Niger, Ségou et le delta intérieur autour de Djenné. Le Tekrour (fleuve Sénégal) est vassal, le Kaabu semi-autonome. Voisins : les Wolofs (Jolof en formation, tributaire), les Songhaï de Gao (soumis), les Touaregs de l'Adrar et de l'Aïr (indépendants), les États mossis (Yatenga, Ouagadougou), indépendants, les Haoussas à l'est, indépendants, les Berbères de Teghaza.",
+      "figures": [
+        {
+          "name": "Mansa Moussa",
+          "role": "Mansa du Mali, en pèlerinage",
+          "faction": "mandingues",
+          "archetype": "mansa",
+          "quote": "(formule libre) Je vais à La Mecque avec l'or du Mali, pour Dieu",
+          "position": [
+            31.2,
+            30
+          ],
+          "person": "mansa-moussa"
+        },
+        {
+          "name": "an-Nasir Muhammad",
+          "role": "Sultan mamelouk d'Égypte",
+          "faction": "mamelouks",
+          "archetype": "sultan",
+          "quote": "(formule libre) Le roi du Mali est le plus riche des hôtes que le Caire ait reçus",
+          "position": [
+            31.26,
+            30.05
+          ]
+        },
+        {
+          "name": "Ibn Amir Hajib",
+          "role": "Émir du Caire, informateur d'al-Umari",
+          "faction": "mamelouks",
+          "archetype": "sage",
+          "quote": "(formule libre) J'ai vu les caravanes du roi : l'or coulait comme du sable",
+          "position": [
+            31.22,
+            30.03
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Mansa Moussa",
+          "url": "https://fr.wikipedia.org/wiki/Mansa_Moussa"
+        },
+        {
+          "label": "Wikipédia — Empire du Mali",
+          "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+        },
+        {
+          "label": "Wikipédia — Atlas catalan",
+          "url": "https://fr.wikipedia.org/wiki/Atlas_catalan"
+        }
+      ]
+    },
+    {
+      "id": "tombouctou-1325",
+      "year": 1325,
+      "title": "Tombouctou et Gao soumises : l'apogée du Mali",
+      "type": "fondation",
+      "location": [
+        -3,
+        16.77
+      ],
+      "zoom": 4.6,
+      "summary": "Vers 1325-1327, Mansa Moussa soumet Gao et Tombouctou, grands marchés du Niger, et fait bâtir à Tombouctou une mosquée à l'architecture nouvelle. Le Mali atteint sa plus grande extension.",
+      "details": "Au retour de son pèlerinage (1325), Mansa Moussa ajoute à l'empire deux villes du Niger : **Gao**, capitale des Songhaï, soumise par son général **Saghmanja** (ou Sagmandia) selon les sources, et **Tombouctou**, petit campement touareg devenu grand marché du sel, de l'or et des livres. Le Mali domine alors le haut et le moyen Niger, de l'Atlantique à la frontière de l'Aïr.\n\nÀ Tombouctou, le mansa fait construire la **mosquée Djingareyber** (« la grande mosquée ») et un palais, la Madougou. L'architecte est **Abou Ishaq es-Sahéli**, poète et juriste d'Andalousie, que Moussa a rencontré en pèlerinage. Il introduit la brique cuite et le plâtre, mais l'édifice reste en **banco** (terre crue mêlée de paille, que l'on remet en état chaque année) : le style soudano-sahélien est né. Moussa installe aussi des savants autour de la mosquée de **Sankoré**, noyau de l'université de Tombouctou.\n\nIbn Battûta (1352) comme le *Tarikh es-Soudan* (chronique de Tombouctou, XVIIᵉ siècle) mentionnent ces constructions. Mais les détails (date exacte de la prise de Gao et rôle de Saghmanja) sont discutés : certains historiens situent Gao dans le Mali dès Sakoura, avant Moussa.",
+      "consequences": [
+        "Le Mali atteint sa plus grande étendue : de l'Atlantique à la boucle du Niger et au Sahara, avec Gao et Tombouctou.",
+        "Tombouctou devient un carrefour du commerce de l'or, du sel et des livres, et un centre de savoir.",
+        "L'architecture soudano-sahélienne en banco s'impose, avec Djingareyber pour modèle.",
+        "Les routes caravanières vers le Maroc et l'Égypte dépendent du pouvoir du mansa."
+      ],
+      "territory": "tombouctou-1325",
+      "territoryNote": "Apogée du Mali vers 1325 : de la côte atlantique (Gambie, Casamance, Saloum) à Gao à l'est, du Bambouk, du Bouré et du Manden au sud jusqu'à Oualata, Tombouctou (boucle du Niger) et Teghaza, Takedda (Aïr) au nord ; haut Niger, Ségou, delta intérieur (Djenné, Mopti) et Tombouctou sous autorité malienne. Tekrour (fleuve Sénégal) et Jolof (en formation) : vassaux ou tributaires ; Kaabu semi-autonome. Voisins indépendants : les Touaregs (Adrar, Aïr), les États mossis (Yatenga, Ouagadougou, Mamprusi), les Haoussas, les Berbères de Teghaza, les États côtiers du golfe de Guinée (forêt akan, hors de portée).",
+      "battle": {
+        "belligerents": [
+          "Mali",
+          "Songhaï de Gao et Touaregs de Tombouctou (soumis ou ralliés)"
+        ],
+        "commanders": [
+          "Mansa Moussa",
+          "Saghmanja"
+        ],
+        "outcome": "Gao et Tombouctou passent sous l'autorité du Mali",
+        "forces": "Inconnues ; plus une soumission qu'une bataille selon les chroniques",
+        "losses": "Non connues"
+      },
+      "armies": [
+        {
+          "id": "armee-du-mali",
+          "side": "Armée du Mali",
+          "from": "Niani",
+          "faction": "mandingues",
+          "path": [
+            [
+              -8.87,
+              11.43
+            ],
+            [
+              -8,
+              12.65
+            ],
+            [
+              -6.3,
+              13.4
+            ],
+            [
+              -4.55,
+              13.9
+            ],
+            [
+              -3,
+              16.77
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Mansa Moussa",
+          "role": "Bâtisseur et protecteur des savants",
+          "faction": "mandingues",
+          "archetype": "mansa",
+          "quote": "(formule libre) Que Tombouctou prie et lise comme Le Caire",
+          "position": [
+            -3,
+            16.77
+          ],
+          "person": "mansa-moussa"
+        },
+        {
+          "name": "Abou Ishaq es-Sahéli",
+          "role": "Architecte-poète d'Andalousie",
+          "faction": "arabes",
+          "archetype": "sage",
+          "quote": "(formule libre) La terre crue, bien lissée, vaut la pierre",
+          "position": [
+            -3.02,
+            16.76
+          ],
+          "person": "abou-ishaq-es-saheli"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Mosquée Djingareyber",
+          "url": "https://fr.wikipedia.org/wiki/Mosqu%C3%A9e_Djingareyber"
+        },
+        {
+          "label": "Wikipédia — Tombouctou",
+          "url": "https://fr.wikipedia.org/wiki/Tombouctou"
+        },
+        {
+          "label": "Wikipédia — Mansa Moussa",
+          "url": "https://fr.wikipedia.org/wiki/Mansa_Moussa"
+        }
+      ]
+    },
+    {
+      "id": "souleymane-1352",
+      "year": 1352,
+      "title": "Mansa Souleymane et la visite d'Ibn Battûta",
+      "type": "politique",
+      "location": [
+        -8.87,
+        11.43
+      ],
+      "zoom": 4.8,
+      "summary": "En 1352-1353, le voyageur marocain Ibn Battûta visite le Mali et décrit sa cour, sa justice et la sécurité de ses routes. Le mansa Souleymane, frère de Moussa, règne sur un empire encore étendu, mais travaillé par les intrigues.",
+      "details": "Après la mort de Moussa (vers 1337) et le court règne de son fils **Maghan I**, le trône passe à **Mansa Souleymane** (1341-1360), son frère. Il est plus économe, mais énergique : il doit pourtant affronter un complot : son épouse principale, **Kassa**, est accusée d'avoir soutenu un chef, **Dougha**, qui se révolte ; elle est emprisonnée (la suite est mal connue).\n\nC'est dans ce contexte qu'**Ibn Battûta**, voyageur marocain de Tanger, arrive au Mali en **1352**, après avoir traversé le Sahara par Teghaza et Oualata. Il reste environ huit mois. Il admire la justice, l'absence d'injustice et la sécurité des routes ; il note la piété des habitants et la discipline de la prière, mais critique les coutumes jugées peu islamiques : femmes à demi vêtues, absence de réserve entre sexes, musiciens qui jouent devant le mansa. Il décrit la cour, où les poètes se déguisent en oiseaux et les griots font l'éloge du souverain.\n\nReçu à la cour, il juge le premier cadeau du mansa mesquin (trois pains, un morceau de bœuf frit et une calebasse de lait caillé) et ne s'en cache pas. Son récit, la *Rihla*, est notre meilleure source directe : le texte est dicté à Fès en 1356, ce qui explique les inexactitudes, dont la localisation de la capitale (discutée : Niani ou une autre ville du Manden).",
+      "consequences": [
+        "Le Mali reste étendu de l'Atlantique à Gao : la souveraineté de Souleymane est reconnue sur le haut et moyen Niger.",
+        "Le récit d'Ibn Battûta devient la source principale sur la vie à la cour et sur la sécurité du pays.",
+        "Les complots autour de Kassa et de Dougha révèlent les rivalités familiales qui affaibliront l'empire.",
+        "Le Mali est connu au Maghreb et en Orient comme un grand pays musulman d'Afrique noire."
+      ],
+      "territory": "souleymane-1352",
+      "territoryNote": "Même extension qu'en 1325 : de la côte atlantique (Gambie, Casamance) à Gao à l'est, du Bambouk, du Bouré et du Manden au sud (Niani, Kangaba) jusqu'à Oualata, Tombouctou et Teghaza (sel) au nord, et Takedda (Aïr) au nord-est ; haut Niger, Ségou, delta intérieur du Niger (Djenné, Mopti). Tekrour (fleuve Sénégal) tributaire, Jolof (Wolofs, nouvellement formé) tributaire, Kaabu semi-autonome. Voisins indépendants : les Touaregs de l'Adrar et de l'Aïr, les États mossis, les Haoussas, les Berbères du Sahara, les États côtiers akan.",
+      "figures": [
+        {
+          "name": "Ibn Battûta",
+          "role": "Voyageur marocain, auteur de la Rihla",
+          "faction": "arabes",
+          "archetype": "diplomate",
+          "quote": "(selon Ibn Battûta) Ni voyageur ni habitant n'ont à craindre voleurs ni brigands",
+          "position": [
+            -8.85,
+            11.45
+          ],
+          "person": "ibn-battuta"
+        },
+        {
+          "name": "Mansa Souleymane",
+          "role": "Mansa du Mali (1341-1360)",
+          "faction": "mandingues",
+          "archetype": "mansa",
+          "quote": "(formule libre) Qui garde l'or sans garder la paix perd les deux",
+          "position": [
+            -8.9,
+            11.4
+          ],
+          "person": "mansa-souleymane"
+        },
+        {
+          "name": "Kassa",
+          "role": "Épouse principale (qasa) du mansa",
+          "faction": "mandingues",
+          "archetype": "sultane",
+          "quote": "(formule libre) La qasa a le droit de parler au roi, même quand il se tait",
+          "position": [
+            -8.88,
+            11.42
+          ],
+          "person": "kassa"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Ibn Battûta",
+          "url": "https://fr.wikipedia.org/wiki/Ibn_Batt%C3%BBta"
+        },
+        {
+          "label": "Wikipédia — Empire du Mali",
+          "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+        },
+        {
+          "label": "Wikipédia — Rihla (Ibn Battûta)",
+          "url": "https://fr.wikipedia.org/wiki/Rihla"
+        }
+      ]
+    },
+    {
+      "id": "successions-1375",
+      "year": 1375,
+      "title": "Luttes de succession et premiers reculs",
+      "type": "politique",
+      "location": [
+        -8.87,
+        11.43
+      ],
+      "zoom": 4.4,
+      "summary": "Après Souleymane, les successions sont troublées : Mari Diata II dilapide le trésor, des usurpateurs se disputent le trône. Gao retrouve son indépendance vers 1375.",
+      "details": "À la mort de Souleymane (1360), le trône passe à son fils **Kamba**, déposé en quelques mois, puis à **Mari Diata II** (Mansa Mari Djata, 1360-1374). Pour **Ibn Khaldoun**, qui écrit à partir de témoins venus du Mali, c'est un tyran : il aurait vendu les trésors de la dynastie, dont une énorme pépite d'or, et serait mort de la maladie du sommeil. Son frère **Moussa II** règne de 1374 à 1387, puis **Magha II** est vite renversé par un ministre, **Sandaki**. Un Keïta, **Mahmoud**, rétablit ensuite la dynastie.\n\nCes querelles ont un effet immédiat : les provinces éloignées s'émancipent. Vers **1375**, **Gao**, ville songhaï du Niger, revient à l'indépendance sous la dynastie des Sonni. À l'ouest, les États wolofs du Sénégal se regroupent dans le **Jolof**, qui ne paie plus de tribut au Mali. Des groupes touaregs de l'Adrar et de l'Aïr se font plus audacieux autour de Takedda et de Tombouctou.\n\nIbn Khaldoun, qui écrit vers 1390, décrit un Mali encore riche, mais dont la cour est instable. L'ordre exact des règnes diffère selon les sources arabes et les traditions mandingues ; la liste des mansas reste donc approximative pour toute cette période.",
+      "consequences": [
+        "Gao, au bord du Niger, se détache du Mali vers 1375 et redevient songhaï.",
+        "Le Jolof se constitue à l'ouest et n'est plus tributaire du Mali.",
+        "Le trésor royal est affaibli par la mauvaise gestion de Mari Diata II.",
+        "Les luttes entre branches de la dynastie Keïta durent jusqu'au début du XVᵉ siècle."
+      ],
+      "territory": "successions-1375",
+      "territoryNote": "Le Mali de 1375 conserve le haut Niger, le Manden (Niani, Kangaba), le Bambouk, le Bouré, la Gambie et le Kaabu, Ségou et le delta intérieur (Djenné), Tombouctou et Oualata ; il perd Gao (Songhaï de la dynastie Sonni, indépendants), et le Takedda passe aux Touaregs de l'Aïr. Tekrour (fleuve Sénégal) : affaibli, tributaire distant ; Jolof (Wolofs) : indépendant ; Touaregs de l'Adrar, de l'Aïr et de Tadmekka : indépendants ; États mossis (Yatenga, Ouagadougou) : indépendants, de plus en plus menaçants ; Berbères de Teghaza et d'Oualata au nord.",
+      "figures": [
+        {
+          "name": "Mari Diata II",
+          "role": "Mansa (1360-1374), jugé tyrannique",
+          "faction": "mandingues",
+          "archetype": "mansa",
+          "quote": "(selon Ibn Khaldoun, en substance) Il dilapida les trésors de ses aïeux",
+          "position": [
+            -8.87,
+            11.43
+          ]
+        },
+        {
+          "name": "Ibn Khaldoun",
+          "role": "Historien maghrébin, source principale sur le Mali",
+          "faction": "arabes",
+          "archetype": "sage",
+          "quote": "(formule libre) J'ai recueilli le récit des voyageurs revenus du Mali",
+          "position": [
+            31.24,
+            30.04
+          ],
+          "person": "ibn-khaldoun"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Empire du Mali",
+          "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+        },
+        {
+          "label": "Wikipédia — Ibn Khaldoun",
+          "url": "https://fr.wikipedia.org/wiki/Ibn_Khaldoun"
+        },
+        {
+          "label": "Wikipédia — Empire songhaï",
+          "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+        }
+      ]
+    },
+    {
+      "id": "mossis-1400",
+      "year": 1400,
+      "title": "Les raids mossis dans la boucle du Niger",
+      "type": "bataille",
+      "location": [
+        -4,
+        14.5
+      ],
+      "zoom": 4.6,
+      "summary": "Au début du XVᵉ siècle, des cavaliers mossis venus du sud, de la région de Ouagadougou et du Yatenga, pillent le Macina et la boucle du Niger. Le Mali affaibli ne peut plus protéger ses provinces centrales.",
+      "details": "Les **Mossis** sont un peuple de cavaliers et d'agriculteurs du centre de l'actuel Burkina Faso, organisés en royaumes (Ouagadougou, Yatenga, Tenkodogo) qui échappent à l'autorité du Mali. Leurs raids sont connus par le **Tarikh es-Soudan** (la chronique de Tombouctou, écrite vers 1655 par Abderrahman es-Saadi) et par des traditions locales ; les dates sont donc incertaines. Ils attaquent le **Macina** et menacent Tombouctou dès le XIVᵉ siècle ; plusieurs raids sont signalés autour de **1400**, puis un autre atteint Oualata vers 1480.\n\nLeur force est la mobilité : sur de petits chevaux, ils arrivent par surprise, brûlent les villages, enlèvent des captifs, et repartent avant qu'une armée régulière puisse les rattraper. Face à eux, le Mali, déjà affaibli par ses querelles de succession, a du mal à tenir un front aussi long. Ses provinces du delta intérieur et de la boucle du Niger, éloignées de Niani, se défendent seules ou cherchent d'autres protecteurs.\n\nCes raids ne détruisent pas le Mali, mais ils montrent que la défense de ses marges ne tient plus. Ils préparent les prises de Tombouctou par les Touaregs et les conquêtes songhaï : chaque voisin éprouve la faiblesse du mansa. Précision : il s'agit d'une série de raids, non d'une bataille unique ; la représentation sur la carte est schématique.",
+      "consequences": [
+        "Le Macina et la boucle du Niger sont ravagés et se détachent peu à peu du contrôle du Mali.",
+        "La défense du delta intérieur du Niger passe aux populations et aux chefs locaux.",
+        "Le Mali, concentré sur le haut Niger et l'ouest, perd son rôle de protecteur du Niger moyen.",
+        "Les Mossis restent un danger pour les Songhaï et les villes du Niger jusqu'au XVIᵉ siècle."
+      ],
+      "territory": "mossis-1400",
+      "territoryNote": "Le Mali de 1400 garde le haut Niger et le Manden (Niani, Kangaba, Bamako), le Bambouk, le Bouré, la Gambie et le Kaabu, Ségou, le delta intérieur autour de Djenné (sous contrôle de plus en plus lâche) et Tombouctou (sous gouverneur malien), Oualata ; Gao est indépendante (Songhaï, dynastie Sonni), Takedda touarègue. Voisins : Jolof (Wolofs, indépendant), Tekrour (affaibli), les Songhaï de Gao (indépendants), les Touaregs de l'Aïr et de l'Adrar des Ifoghas (indépendants), les États mossis du Yatenga et de Ouagadougou (indépendants, en raids vers le nord), les Haoussas et les Berbères du Sahara.",
+      "battle": {
+        "belligerents": [
+          "Mossis (Yatenga, Ouagadougou)",
+          "Mali (garnisons du Macina et de la boucle du Niger)"
+        ],
+        "commanders": [
+          "Chefs mossis (noms non conservés)",
+          "Gouverneurs maliens locaux"
+        ],
+        "outcome": "Raids mossis fructueux ; recul de l'influence du Mali dans la boucle du Niger",
+        "forces": "Inconnues ; cavaliers mossis surtout",
+        "losses": "Non connues"
+      },
+      "armies": [
+        {
+          "id": "mossis",
+          "side": "Cavaliers mossis",
+          "from": "Yatenga",
+          "faction": "mossis",
+          "path": [
+            [
+              -2.3,
+              13.6
+            ],
+            [
+              -3,
+              14
+            ],
+            [
+              -3.7,
+              14.3
+            ],
+            [
+              -4,
+              14.5
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Garnisons maliennes du Macina",
+          "from": "Ségou",
+          "faction": "mandingues",
+          "path": [
+            [
+              -6.3,
+              13.4
+            ],
+            [
+              -5,
+              14
+            ],
+            [
+              -4,
+              14.5
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Un chef mossi",
+          "role": "Cavalier-roi du Yatenga",
+          "faction": "mossis",
+          "archetype": "general",
+          "quote": "(formule libre) Le cheval va plus vite que le tribut",
+          "position": [
+            -2.4,
+            13.7
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Mossis",
+          "url": "https://fr.wikipedia.org/wiki/Mossis"
+        },
+        {
+          "label": "Wikipédia — Empire du Mali",
+          "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+        },
+        {
+          "label": "Wikipédia — Tarikh es-Soudan",
+          "url": "https://fr.wikipedia.org/wiki/Tarikh_es-Soudan"
+        }
+      ]
+    },
+    {
+      "id": "tombouctou-1433",
+      "year": 1433,
+      "title": "Tombouctou aux Touaregs",
+      "type": "chute",
+      "location": [
+        -3,
+        16.77
+      ],
+      "zoom": 4.8,
+      "summary": "En 1433, le chef touareg Akil ag Malwal s'empare de Tombouctou, jusque-là gouvernée au nom du Mali. La ville cesse d'appartenir au mansa.",
+      "details": "Au XVᵉ siècle, les **Touaregs**, nomades berbères du Sahara (de la région de l'Adrar des Ifoghas, de l'Aïr et de Tadmekka), profitent de l'affaiblissement du Mali pour descendre vers le Niger. Leur chef **Akil ag Malwal**, de la tribu des **Maghcharen**, prend **Tombouctou** en **1433**. Le **Tarikh es-Soudan** raconte que le gouverneur malien, qui n'a pas de troupes suffisantes, s'enfuit ; la ville passe sous la protection d'Akil. D'autres sources évoquent aussi la prise d'Oualata vers la même époque, ce qui reste discuté.\n\nTombouctou ne subit pas une destruction, mais une mise sous tutelle : Akil ag Malwal installe son autorité, exige un tribut des marchands et laisse les cadis (juges musulmans) et les familles de savants garder leurs fonctions. La ville continue de vivre du commerce du sel de Teghaza, de l'or et des manuscrits, mais elle ne verse plus l'impôt au Mali.\n\nPour le Mali, la perte est capitale : il perd son principal marché du nord. Il garde le haut Niger, les mines d'or et l'ouest. L'épisode montre aussi la nouvelle géographie du pouvoir : les États qui comptent maintenant sont ceux de la boucle du Niger, où les Songhaï vont prendre le relais.",
+      "consequences": [
+        "Tombouctou et sans doute Oualata sortent de l'empire : le Mali perd ses grands marchés sahariens.",
+        "Les Touaregs deviennent maîtres de la route du sel et des caravanes du nord.",
+        "La ville garde cadis et savants, qui continuent leur travail sous la tutelle touarègue.",
+        "Le Mali se replie sur le haut Niger, le Bambouk, le Bouré et la Gambie."
+      ],
+      "territory": "tombouctou-1433",
+      "territoryNote": "Le Mali de 1433 est ramené au haut Niger et au Manden (Niani, Kangaba, Bamako, Siguiri), au Bambouk, au Bouré, à la Gambie et au Kaabu, avec Ségou ; la boucle du Niger (Tombouctou, Gao) et le Sahel d'Oualata lui échappent. Voisins : Touaregs de l'Adrar des Ifoghas, de l'Aïr et de Tadmekka (Tombouctou, indépendants), Songhaï de Gao (dynastie Sonni, indépendants et en expansion), cité-État de Djenné (autonome), États mossis du Yatenga et de Ouagadougou (indépendants), Jolof (Wolofs), Tekrour (affaibli, bientôt sous des chefs peuls).",
+      "battle": {
+        "belligerents": [
+          "Touaregs maghcharen",
+          "Gouverneur du Mali à Tombouctou"
+        ],
+        "commanders": [
+          "Akil ag Malwal",
+          "Gouverneur malien (nom non conservé)"
+        ],
+        "outcome": "Tombouctou passe aux Touaregs sans véritable défense",
+        "forces": "Inconnues",
+        "losses": "Non connues"
+      },
+      "armies": [
+        {
+          "id": "touaregs",
+          "side": "Touaregs d'Akil ag Malwal",
+          "from": "Tadmekka",
+          "faction": "touaregs",
+          "path": [
+            [
+              1,
+              18.4
+            ],
+            [
+              -0.8,
+              17.6
+            ],
+            [
+              -2,
+              17
+            ],
+            [
+              -3,
+              16.77
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Garnison malienne",
+          "from": "Djenné",
+          "faction": "mandingues",
+          "path": [
+            [
+              -3.3,
+              16.2
+            ],
+            [
+              -3,
+              16.77
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Akil ag Malwal",
+          "role": "Chef touareg maghcharen",
+          "faction": "touaregs",
+          "archetype": "general",
+          "quote": "(formule libre) Le désert prend la ville que le fleuve ne défend plus",
+          "position": [
+            -2.9,
+            16.8
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Tombouctou",
+          "url": "https://fr.wikipedia.org/wiki/Tombouctou"
+        },
+        {
+          "label": "Wikipédia — Touaregs",
+          "url": "https://fr.wikipedia.org/wiki/Touaregs"
+        },
+        {
+          "label": "Wikipédia — Empire du Mali",
+          "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+        }
+      ]
+    },
+    {
+      "id": "portugais-1455",
+      "year": 1455,
+      "title": "Cadamosto en Gambie : les Portugais découvrent le Mali",
+      "type": "politique",
+      "location": [
+        -16.6,
+        13.4
+      ],
+      "zoom": 4.4,
+      "summary": "En 1455-1456, le navigateur vénitien Alvise Cadamosto, au service du Portugal, remonte la Gambie et recueille des informations sur le « Mandimansa », le grand roi du Mali. Les Européens y trouvent le débouché atlantique de l'or.",
+      "details": "Au milieu du XVᵉ siècle, les **Portugais** explorent la côte d'Afrique pour atteindre directement l'or soudanais, sans passer par les caravanes du Sahara. En **1455** et 1456, **Alvise Cadamosto** (Ca' da Mosto), navigateur vénitien employé par le prince Henri, remonte la **Gambie**. Il rencontre les chefs de la côte, dont des vassaux du Mali, et entend parler d'un grand roi, le « **Mandimansa** », qui commanderait à une vaste région et à de nombreux cavaliers.\n\nLes Portugais constatent que l'or arrive à la côte par des marchands **diulas** (marchands mandingues itinérants) et que les chefs qu'ils rencontrent se réclament encore de l'empire. Mais ils découvrent aussi un Mali éloigné et affaibli : les États côtiers sont à demi indépendants et le véritable pouvoir est dans le haut Niger. Leur arrivée change cependant la donne : l'or commence à descendre par la mer au profit de Lisbonne, au lieu de monter par le Sahara vers l'Afrique du Nord.\n\nLes sources portugaises (Cadamosto, **Diogo Gomes**, plus tard **João de Barros**) donnent des noms, des distances et des anecdotes souvent déformés. On y trouve cependant le plus ancien récit européen direct sur le Mali. L'autorité réelle du mansa à cette date est difficile à mesurer.",
+      "consequences": [
+        "Le Mali entre dans l'horizon des Européens, qui le désignent par le titre de son roi, « Mandimansa ».",
+        "L'or du Bambouk et du Bouré peut descendre vers les comptoirs de la côte, ce qui fait concurrence aux caravanes sahariennes.",
+        "Les États de la Gambie et du Kaabu gagnent en autonomie, à mesure que le commerce atlantique s'installe.",
+        "Le Mali perd une partie de ses revenus de transit sans pouvoir contrôler la côte."
+      ],
+      "territory": "portugais-1455",
+      "territoryNote": "Le Mali de 1455 tient le haut Niger et le Manden (Niani, Kangaba, Bamako, Siguiri), le Bambouk, le Bouré, la Gambie et le Kaabu (vassal ou autonome) ; Ségou est contesté ; Tombouctou, Oualata et Gao ne lui appartiennent plus. Voisins : Jolof (Wolofs), indépendant et puissant ; Tekrour (vallée du Sénégal), en voie de passer sous les Peuls ; Songhaï de Gao (dynastie Sonni, indépendants) ; Touaregs de Tombouctou et de l'Aïr (indépendants) ; Djenné autonome ; États mossis, indépendants ; Portugais sur la côte (Arguin, Cap-Vert), commerçants.",
+      "figures": [
+        {
+          "name": "Alvise Cadamosto",
+          "role": "Navigateur vénitien, au service du Portugal",
+          "faction": "portugais",
+          "archetype": "diplomate",
+          "quote": "(formule libre) Le grand roi des Mandingues règne loin dans les terres",
+          "position": [
+            -16.6,
+            13.4
+          ]
+        },
+        {
+          "name": "Le Mandimansa",
+          "role": "Mansa du Mali, connu de nom",
+          "faction": "mandingues",
+          "archetype": "mansa",
+          "quote": "(formule libre) L'or du Manden passe d'abord par mes marchands",
+          "position": [
+            -9,
+            11.4
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Alvise Cadamosto",
+          "url": "https://fr.wikipedia.org/wiki/Alvise_Cadamosto"
+        },
+        {
+          "label": "Wikipédia — Empire du Mali",
+          "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+        },
+        {
+          "label": "Wikipédia — Empire colonial portugais",
+          "url": "https://fr.wikipedia.org/wiki/Empire_colonial_portugais"
+        }
+      ]
+    },
+    {
+      "id": "sonni-ali-1468",
+      "year": 1468,
+      "title": "Sonni Ali prend Tombouctou",
+      "type": "bataille",
+      "location": [
+        -3,
+        16.77
+      ],
+      "zoom": 4.8,
+      "summary": "En 1468, Sonni Ali, roi songhaï de Gao, s'empare de Tombouctou, jusque-là aux mains des Touaregs. Le Songhaï devient la grande puissance du Niger, au détriment du Mali.",
+      "details": "Au XVᵉ siècle, le **Songhaï** est un royaume de Gao, sur le Niger, jusque-là vassal puis rival du Mali. En 1464, **Sonni Ali** (aussi appelé Sonni Ali Ber, « le Grand »), souverain de Gao, lance une série de campagnes. Guerrier infatigable, il dispose d'une cavalerie et d'une flotte de pirogues sur le Niger, ce qui lui donne un avantage dans le pays des fleuves.\n\nEn **1468**, il marche sur **Tombouctou**, tenue depuis 1433 par les **Touaregs**. Les Touaregs, dont le chef **Akil** (ou son successeur) s'enfuit vers le nord, ne résistent pas. Sonni Ali entre dans la ville et s'en prend durement aux savants de **Sankoré**, qu'il juge trop proches des Touaregs : le **Tarikh es-Soudan** le décrit comme un tyran, mais d'autres traditions orales lui accordent la réputation d'un magicien, protégé des esprits et respectueux des cultes anciens. Les chroniqueurs sont ici partisans : ce sont des lettrés musulmans de Tombouctou qui n'ont pas aimé sa politique.\n\nPour le Mali, déjà affaibli, c'est une défaite géopolitique : Tombouctou était depuis 1433 hors de son pouvoir, mais le Songhaï devient maintenant une puissance rivale directe. Le Mali, replié sur le haut Niger, la Gambie et l'ouest, doit se défendre des deux côtés.",
+      "consequences": [
+        "Tombouctou passe sous le Songhaï, qui devient la première puissance du moyen Niger.",
+        "Le Mali est coupé de la boucle du Niger et des routes sahariennes.",
+        "Les Touaregs sont repoussés vers le désert et perdent leur rôle sur le Niger.",
+        "Les savants de Tombouctou, un temps persécutés, retrouveront la faveur du pouvoir sous les Askia."
+      ],
+      "territory": "sonni-ali-1468",
+      "territoryNote": "Le Mali de 1468 se limite au haut Niger et au Manden (Niani, Kangaba, Bamako, Siguiri), au Bambouk, au Bouré, à la Gambie et au Kaabu (autonome) ; Ségou est sous influence contestée. Tombouctou passe au Songhaï de Sonni Ali (Gao, empire en expansion, indépendant). Voisins : Songhaï de Gao, Touaregs de l'Adrar, de l'Aïr et de Tadmekka (indépendants, repoussés vers le désert), cité-État de Djenné (autonome, encore libre), États mossis du Yatenga et de Ouagadougou (indépendants), Jolof (Wolofs, indépendant), Tekrour (vallée du Sénégal, sous des chefs peuls), Berbères du Sahara.",
+      "battle": {
+        "belligerents": [
+          "Songhaï de Gao",
+          "Touaregs de Tombouctou"
+        ],
+        "commanders": [
+          "Sonni Ali",
+          "Akil ag Malwal ou son successeur (discuté)"
+        ],
+        "outcome": "Tombouctou prise par Sonni Ali",
+        "forces": "Inconnues ; cavalerie et flotte de pirogues songhaï",
+        "losses": "Non connues ; les savants de Sankoré sont malmenés"
+      },
+      "armies": [
+        {
+          "id": "sonni-ali",
+          "side": "Songhaï de Sonni Ali",
+          "from": "Gao",
+          "faction": "songhais",
+          "path": [
+            [
+              0.05,
+              16.27
+            ],
+            [
+              -1.5,
+              16.7
+            ],
+            [
+              -3,
+              16.77
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Touaregs de Tombouctou",
+          "from": "Tadmekka",
+          "faction": "touaregs",
+          "path": [
+            [
+              -2,
+              17.3
+            ],
+            [
+              -3,
+              16.77
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Sonni Ali",
+          "role": "Roi songhaï de Gao",
+          "faction": "songhais",
+          "archetype": "roi",
+          "quote": "(formule libre) Le fleuve est ma route, la cavalerie ma colère",
+          "position": [
+            -3,
+            16.77
+          ],
+          "person": "sonni-ali"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Sonni Ali Ber",
+          "url": "https://fr.wikipedia.org/wiki/Sonni_Ali_Ber"
+        },
+        {
+          "label": "Wikipédia — Tombouctou",
+          "url": "https://fr.wikipedia.org/wiki/Tombouctou"
+        },
+        {
+          "label": "Wikipédia — Empire songhaï",
+          "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+        }
+      ]
+    },
+    {
+      "id": "djenne-1473",
+      "year": 1473,
+      "title": "Djenné tombe après sept ans de siège",
+      "type": "bataille",
+      "location": [
+        -4.55,
+        13.91
+      ],
+      "zoom": 4.8,
+      "summary": "En 1473, après un long siège, Sonni Ali obtient la reddition de Djenné, ville marchande du delta intérieur du Niger. Le Songhaï contrôle désormais le grand carrefour de l'or et du sel.",
+      "details": "**Djenné** (Jenné) est une ville du delta intérieur du Niger, bâtie sur une île de limon, marché d'or venu du sud et du sel venu du Sahara. Sa position, très protégée par les eaux, fait d'elle une cité presque imprenable. Selon le **Tarikh es-Soudan**, **Sonni Ali** l'assiège pendant **sept ans, sept mois et sept jours** (le chiffre est symbolique), en entourant la ville de ses pirogues.\n\nLa ville capitule en **1473** : le *Tarikh* ajoute que Sonni Ali épouse la veuve de l'ancien chef de Djenné et épargne la ville. Plusieurs détails (la durée du siège, ce mariage) sont proches de la légende ; ce qui est sûr, c'est que la ville passe sous le Songhaï et que le commerce de l'or et du sel se fait désormais sous contrôle de Gao.\n\nLa conquête de Djenné coupe le Mali de ce commerce du delta, déjà perdu en pratique : la ville est autonome depuis le XVᵉ siècle. Le Mali ne participe pas à cette campagne ; il reste au sud-ouest, de plus en plus isolé, tandis que les Songhaï forment un grand État, que l'on appellera plus tard « empire songhaï ».\n\nPour le Mali, la situation est claire : le Niger moyen est perdu, et les routes de l'or du Bouré et du Bambouk passent désormais par des intermédiaires songhaï.",
+      "consequences": [
+        "Djenné entre dans l'Empire songhaï : le delta intérieur du Niger est sous son contrôle.",
+        "Le Mali perd tout accès à ce grand marché et se replie sur le haut Niger.",
+        "Le commerce de l'or et du sel passe sous la domination de Gao.",
+        "Sonni Ali devient le maître incontesté du moyen Niger."
+      ],
+      "territory": "djenne-1473",
+      "territoryNote": "Le Mali de 1473 ne contrôle plus que le haut Niger et le Manden (Niani, Kangaba, Bamako, Siguiri), le Bouré, le Bambouk (en partie), la Gambie et le Kaabu (vassal ou autonome). Djenné et le delta intérieur (Mopti, Macina), Tombouctou et la boucle du Niger sont au Songhaï de Sonni Ali (indépendant, en expansion). Voisins : Touaregs de l'Aïr et de l'Adrar (indépendants), États mossis (Yatenga, Ouagadougou), Jolof (Wolofs, indépendant), Tekrour (Peuls), Ségou (chefferies bambara, naissantes), Berbères du Sahara, Haoussas.",
+      "battle": {
+        "belligerents": [
+          "Songhaï de Sonni Ali",
+          "Djenné"
+        ],
+        "commanders": [
+          "Sonni Ali",
+          "Roi de Djenné (nom non conservé)"
+        ],
+        "outcome": "Djenné se rend au Songhaï",
+        "forces": "Inconnues ; flotte de pirogues songhaï",
+        "losses": "Non connues"
+      },
+      "armies": [
+        {
+          "id": "sonni-ali",
+          "side": "Songhaï de Sonni Ali",
+          "from": "Tombouctou",
+          "faction": "songhais",
+          "path": [
+            [
+              -3,
+              16.77
+            ],
+            [
+              -3.6,
+              15.9
+            ],
+            [
+              -4.2,
+              14.6
+            ],
+            [
+              -4.55,
+              13.91
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Sonni Ali",
+          "role": "Roi songhaï, vainqueur de Djenné",
+          "faction": "songhais",
+          "archetype": "roi",
+          "quote": "(formule libre) Sept ans pour la ville, une vie pour le fleuve",
+          "position": [
+            -4.5,
+            13.95
+          ],
+          "person": "sonni-ali"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Djenné",
+          "url": "https://fr.wikipedia.org/wiki/Djenn%C3%A9"
+        },
+        {
+          "label": "Wikipédia — Sonni Ali Ber",
+          "url": "https://fr.wikipedia.org/wiki/Sonni_Ali_Ber"
+        },
+        {
+          "label": "Wikipédia — Empire songhaï",
+          "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+        }
+      ]
+    },
+    {
+      "id": "ambassade-1534",
+      "year": 1534,
+      "title": "L'ambassade du mansa aux Portugais",
+      "type": "traité",
+      "location": [
+        -1.35,
+        5.08
+      ],
+      "zoom": 4,
+      "summary": "Vers 1534, un mansa du Mali envoie des ambassadeurs à la forteresse portugaise de São Jorge da Mina, sur la côte de l'actuel Ghana, pour demander de l'aide. Le Portugal refuse de s'engager.",
+      "details": "Dans la première moitié du XVIᵉ siècle, le Mali est un royaume réduit au **Manden** et au **haut Niger**, sous la menace des **Songhaï** de l'**empire des Askia**. Au même moment, les **Portugais** tiennent des comptoirs sur la côte d'Afrique : le fort de **São Jorge da Mina** (Elmina, dans l'actuel Ghana), construit en 1482, achète de l'or.\n\nLe chroniqueur portugais **João de Barros** (milieu du XVIᵉ siècle) raconte que vers **1534**, le « roi du Mali » envoie des ambassadeurs, venus de très loin, à Elmina. Ils demandent des armes et de l'aide contre les **Peuls** (Fulbe), des pasteurs et guerriers peuls qui s'installent alors dans la vallée du fleuve Sénégal, et pour affronter les Songhaï. Le roi du Portugal ne donne rien : les Portugais préfèrent commercer sans se mêler des guerres de l'intérieur. L'identité du mansa (Mahmoud, III selon certaines listes) reste douteuse.\n\nUn autre témoin, **Léon l'Africain** (al-Hassan al-Wazzan), diplomate maghrébin qui passe par Tombouctou vers 1510 et écrit à Rome en 1526, décrit un Mali réduit mais encore peuplé de villes, de marchés et de lettrés. Il note à Tombouctou le prix des livres manuscrits. Selon le *Tarikh es-Soudan*, des Songhaï attaquent même Niani vers 1545, sans pouvoir la garder.\n\nÀ cette époque, le Kaabu, à l'ouest, devient indépendant (vers 1537 selon la tradition).",
+      "consequences": [
+        "Le Mali, ramené au Manden, cherche des alliés européens contre ses voisins.",
+        "Le Portugal refuse d'intervenir : le Mali n'a plus de grands atouts économiques à offrir.",
+        "Le Kaabu devient indépendant et forme un royaume mandingue rival.",
+        "Les Songhaï peuvent piller Niani sans que le mansa puisse y répondre."
+      ],
+      "territory": "ambassade-1534",
+      "territoryNote": "Le Mali de 1534 se réduit au Manden et au haut Niger (Niani, Kangaba, Bamako, Siguiri), au Bouré et à une partie du Bambouk ; la Gambie est autonome et le Kaabu devient indépendant (vers 1537). Le Songhaï des Askia (Tombouctou, Gao, Djenné, boucle du Niger, indépendant) domine le Niger moyen. Voisins : Jolof (Wolofs, indépendant), Tekrour (Peuls de Koli Tenguella, indépendant), Touaregs de l'Aïr (indépendants), États mossis (indépendants), Ségou (chefferies bambara, naissantes), Portugais à Elmina et Arguin (commerçants), Haoussas et Berbères du Sahara.",
+      "figures": [
+        {
+          "name": "Les ambassadeurs du mansa",
+          "role": "Envoyés du Mali à Elmina",
+          "faction": "mandingues",
+          "archetype": "diplomate",
+          "quote": "(formule libre) Notre roi demande vos armes contre ses ennemis",
+          "position": [
+            -1.35,
+            5.08
+          ]
+        },
+        {
+          "name": "Léon l'Africain",
+          "role": "Voyageur et géographe, décrit Tombouctou vers 1510",
+          "faction": "arabes",
+          "archetype": "sage",
+          "quote": "(selon Léon l'Africain) On y vend beaucoup de livres manuscrits, plus rentables que toute autre marchandise",
+          "position": [
+            -3,
+            16.77
+          ],
+          "person": "leon-l-africain"
+        },
+        {
+          "name": "Le capitaine d'Elmina",
+          "role": "Gouverneur portugais de São Jorge da Mina",
+          "faction": "portugais",
+          "archetype": "capitaine",
+          "quote": "(formule libre) Le roi du Portugal commerce, il ne se bat pas pour l'intérieur",
+          "position": [
+            -1.36,
+            5.09
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Léon l'Africain",
+          "url": "https://fr.wikipedia.org/wiki/L%C3%A9on_l'Africain"
+        },
+        {
+          "label": "Wikipédia — Château d'Elmina",
+          "url": "https://fr.wikipedia.org/wiki/Ch%C3%A2teau_d'Elmina"
+        },
+        {
+          "label": "Wikipédia — Empire du Mali",
+          "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+        }
+      ]
+    },
+    {
+      "id": "djenne-1599",
+      "year": 1599,
+      "title": "Le Mali battu devant Djenné par les Marocains",
+      "type": "bataille",
+      "location": [
+        -4.55,
+        13.91
+      ],
+      "zoom": 4.8,
+      "summary": "En 1599, le mansa Mahmoud IV tente de reprendre Djenné aux Marocains, maîtres du Niger depuis 1591. Ses guerriers sont écrasés par les arquebuses. C'est le dernier grand effort militaire du Mali.",
+      "details": "En **1591**, le sultan du Maroc **Ahmad al-Mansur** envoie à travers le Sahara une armée d'arquebusiers menée par le pacha **Djouder**. À **Tondibi**, elle écrase l'empire songhaï, qui s'effondre. Les Marocains occupent Tombouctou, Gao et Djenné, mais ils sont peu nombreux et loin de chez eux.\n\nLe **mansa Mahmoud IV** voit alors une chance : l'empire rival est brisé, et le Mali pourrait reprendre ses anciennes places du Niger. Il rassemble une grande armée, en **1599** selon le *Tarikh es-Soudan*, et marche sur **Djenné**. La chronique raconte que ses guerriers, armés de lances, d'arcs et de sabres, ne tiennent pas devant les **arquebusiers** et les canons de la garnison marocaine. L'armée malienne est mise en déroute et le mansa renonce.\n\nCette défaite ferme définitivement la route du Niger au Mali. Les Marocains, de leur côté, ne contrôlent le pays que quelques décennies ; la région se morcelle ensuite en petits États. Sur la carte, les Marocains sont représentés avec la faction des Ottomans (arquebusiers), faute de figurine marocaine.\n\nLe récit vient d'un chroniqueur tombouctien, favorable aux Marocains ; les chiffres sont probablement exagérés.",
+      "consequences": [
+        "Le Mali ne reprendra jamais le Niger moyen : Djenné reste aux Marocains.",
+        "Le mansa perd prestige et hommes ; l'autorité sur les chefferies mandingues s'affaiblit.",
+        "Les armes à feu s'imposent comme nouveau critère de puissance en Afrique de l'Ouest.",
+        "Le Mali se réduit au Manden, autour de Kangaba."
+      ],
+      "territory": "djenne-1599",
+      "territoryNote": "Le Mali de 1599 ne tient plus que le Manden (Kangaba, haut Niger de Siguiri à Bamako) et le Bouré ; Niani est en recul, et le Bambouk, la Gambie et le Kaabu sont indépendants ou sous d'autres chefs. Les Marocains (pachalik de Tombouctou, Djenné, Gao) tiennent la boucle du Niger. Voisins : Kaabu (royaume mandingue indépendant), Jolof (Wolofs, en déclin), Tekrour et Futa Toro (Peuls, indépendants), Ségou (chefferies bambara), États mossis, Touaregs de l'Aïr (indépendants), Haoussas, Berbères du Sahara.",
+      "battle": {
+        "belligerents": [
+          "Mali (mansa Mahmoud IV)",
+          "Pachalik marocain de Tombouctou et garnison de Djenné"
+        ],
+        "commanders": [
+          "Mahmoud IV",
+          "Pacha marocain (nom discuté)"
+        ],
+        "outcome": "Défaite du Mali devant Djenné",
+        "forces": "Chiffres inconnus ; arquebusiers marocains contre guerriers mandingues",
+        "losses": "Lourdes pour le Mali selon le Tarikh es-Soudan"
+      },
+      "armies": [
+        {
+          "id": "mali-1599",
+          "side": "Armée du mansa Mahmoud IV",
+          "from": "Kangaba",
+          "faction": "mandingues",
+          "path": [
+            [
+              -8.4,
+              11.9
+            ],
+            [
+              -7.4,
+              12.5
+            ],
+            [
+              -6.3,
+              13.4
+            ],
+            [
+              -5.3,
+              13.7
+            ],
+            [
+              -4.55,
+              13.91
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Marocains (arquebusiers)",
+          "from": "Tombouctou",
+          "faction": "ottomans",
+          "path": [
+            [
+              -3,
+              16.77
+            ],
+            [
+              -3.6,
+              15.5
+            ],
+            [
+              -4.2,
+              14.4
+            ],
+            [
+              -4.55,
+              13.91
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Mahmoud IV",
+          "role": "Mansa du Mali, battu à Djenné",
+          "faction": "mandingues",
+          "archetype": "mansa",
+          "quote": "(formule libre) Le Niger fut à nous : nous le reprendrons",
+          "position": [
+            -5.3,
+            13.7
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Tondibi",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Tondibi"
+        },
+        {
+          "label": "Wikipédia — Conquête marocaine de l'empire songhaï",
+          "url": "https://fr.wikipedia.org/wiki/Conqu%C3%AAte_marocaine_de_l'empire_songha%C3%AF"
+        },
+        {
+          "label": "Wikipédia — Empire du Mali",
+          "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+        }
+      ]
+    },
+    {
+      "id": "segou-1670",
+      "year": 1670,
+      "title": "Les Bambaras brûlent Niani : la fin du Mali",
+      "type": "chute",
+      "location": [
+        -8.87,
+        11.43
+      ],
+      "zoom": 4.8,
+      "summary": "Vers 1670, selon la tradition, les Bambaras de Ségou ravagent Niani. Le mansa se retire à Kangaba : l'empire est fini, mais les Keïta y gardent un titre.",
+      "details": "Au XVIIᵉ siècle, plus à l'est, les **Bambaras** (ou Bamanan) fondent autour de **Ségou**, sur le Niger, des chefferies guerrières qui deviendront un royaume. Ce sont des **Mandingues** comme les gens du Mali, de même langue et de même origine ; sur la carte, ils sont donc représentés avec la faction des Mandingues. Ils étaient restés païens, ce qui n'empêchait pas leurs liens avec les Malinkés.\n\nSelon la tradition rapportée par plusieurs auteurs, c'est vers **1670** que les Bambaras attaquent et incendient **Niani**, la capitale traditionnelle du Mali (dont l'emplacement même est discuté : Niani en Guinée actuelle, ou un autre site). Le **mansa** s'enfuit dans la ville plus modeste de **Kangaba**, au bord du Niger : c'est une retraite vers le berceau historique du Mali, le Manden de Soundiata.\n\nLa date de 1670 est conventionnelle : les sources ne donnent pas d'année précise, et l'on voit bien un lent effacement du pouvoir central plutôt qu'un jour de chute. À partir de là, le Mali n'est plus un empire. La dynastie des Keïta survit pourtant dans le Manden jusqu'à l'ère coloniale, et les griots continuent à chanter Soundiata.\n\nLes terres de l'ancien Mali sont alors partagées entre le royaume bambara de Ségou, les royaumes peuls, le Kaabu et d'autres États.",
+      "consequences": [
+        "Niani, dernière capitale connue du Mali, est détruite ou abandonnée.",
+        "Le mansa survit à Kangaba comme chef d'un petit territoire du Manden, sans plus d'empire.",
+        "Le royaume bambara de Ségou devient la puissance dominante du haut Niger.",
+        "La mémoire de Soundiata, transmise par les griots, devient l'héritage principal du Mali."
+      ],
+      "territory": "segou-1670",
+      "territoryNote": "Le Mali de 1670 ne subsiste que comme petit État du Manden autour de Kangaba (rive du Niger, de Siguiri à Bamako) ; Niani est ravagée. Voisins : royaume bambara de Ségou (puissance montante, indépendant), Kaabu (royaume mandingue indépendant), Futa Toro et Tekrour (Peuls, indépendants), Jolof (Wolofs), États mossis, pachalik marocain de Tombouctou (Djenné, Gao, Tombouctou, de plus en plus autonome), Touaregs de l'Aïr (indépendants), Berbères du Sahara.",
+      "battle": {
+        "belligerents": [
+          "Bambaras de Ségou",
+          "Mali (mansa de Niani)"
+        ],
+        "commanders": [
+          "Chef bambara de Ségou (nom discuté)",
+          "Mansa de Niani (nom non conservé)"
+        ],
+        "outcome": "Niani saccagée ; le mansa se replie à Kangaba",
+        "forces": "Inconnues",
+        "losses": "Non connues"
+      },
+      "armies": [
+        {
+          "id": "bambaras",
+          "side": "Bambaras de Ségou",
+          "from": "Ségou",
+          "faction": "mandingues",
+          "path": [
+            [
+              -6.27,
+              13.43
+            ],
+            [
+              -7.2,
+              12.7
+            ],
+            [
+              -8,
+              12.1
+            ],
+            [
+              -8.87,
+              11.43
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Garde du mansa",
+          "from": "Niani",
+          "faction": "mandingues",
+          "path": [
+            [
+              -8.6,
+              11.6
+            ],
+            [
+              -8.87,
+              11.43
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Un griot de Kangaba",
+          "role": "Gardien de la mémoire du Mali",
+          "faction": "mandingues",
+          "archetype": "sage",
+          "quote": "(formule libre) L'empire est tombé, mais la parole de Soundiata reste",
+          "position": [
+            -8.42,
+            11.94
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Empire du Mali",
+          "url": "https://fr.wikipedia.org/wiki/Empire_du_Mali"
+        },
+        {
+          "label": "Wikipédia — Royaume bambara de Ségou",
+          "url": "https://fr.wikipedia.org/wiki/Royaume_bambara_de_S%C3%A9gou"
+        },
+        {
+          "label": "Wikipédia — Niani",
+          "url": "https://fr.wikipedia.org/wiki/Niani"
+        }
+      ]
+    }
+  ]
+}

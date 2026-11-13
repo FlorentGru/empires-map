@@ -1,0 +1,186 @@
+[
+  {
+    "id": "charte-manden",
+    "name": "La charte du Manden (Kouroukan Fouga)",
+    "year": 1236,
+    "approx": true,
+    "place": "Kangaba",
+    "at": [
+      -8.42,
+      11.94
+    ],
+    "inventor": "Soundiata Keïta (selon la tradition)",
+    "category": "droit",
+    "description": "La charte du Manden est un ensemble de règles proclamées, selon la tradition, à Kangaba après la victoire de Kirina. Elle partage les rôles entre clans, interdit de maltraiter les étrangers, protège la vie humaine et organise l'entraide. Transmise oralement par les griots, elle a été mise par écrit en 1998 et inscrite par l'UNESCO en 2009.",
+    "impact": "Une constitution orale, vieille de huit siècles selon la tradition, organise la société autour du respect de la vie, de l'entraide et de la répartition des rôles entre clans.",
+    "sources": [
+      {
+        "label": "Charte du Manden",
+        "url": "https://fr.wikipedia.org/wiki/Charte_du_Manden"
+      }
+    ]
+  },
+  {
+    "id": "forgerons-metallurgie",
+    "name": "Les forgerons et la métallurgie du fer",
+    "year": 1235,
+    "approx": true,
+    "place": "Manden",
+    "at": [
+      -8.5,
+      11.9
+    ],
+    "category": "technique",
+    "description": "Les forgerons (numu) du Manden fabriquent depuis des siècles les houes, les lances, les flèches et les pointes de fer de l'armée. Ils forment une caste à part, redoutée et respectée : on leur attribue des pouvoirs spirituels. L'épopée fait du roi sosso Soumaoro un forgeron-sorcier. Ce savoir-faire, ancien, est largement diffusé sous le Mali plutôt qu'inventé.",
+    "impact": "Le fer des forgerons arme les guerriers et défriche les champs : le Mali doit en partie sa puissance militaire et agricole à cette caste respectée et crainte.",
+    "sources": [
+      {
+        "label": "Forgeron",
+        "url": "https://fr.wikipedia.org/wiki/Forgeron"
+      }
+    ]
+  },
+  {
+    "id": "balafon-soumaoro",
+    "name": "Le balafon, instrument des griots",
+    "year": 1235,
+    "approx": true,
+    "place": "Sosso-Bala",
+    "at": [
+      -7.6,
+      12.7
+    ],
+    "inventor": "Soumaoro Kanté (selon l'épopée)",
+    "category": "technique",
+    "description": "Le balafon est un instrument à clavier de lames de bois posées sur des calebasses résonantes. D'après l'épopée, Soumaoro Kanté en possédait un, sacré, que le griot Balla Fasséké aurait découvert dans sa demeure. Les griots l'ont conservé et joué depuis. Il existe sans doute avant le Mali ; l'origine exacte est inconnue.",
+    "impact": "Le balafon accompagne les chants des griots et fait vivre la mémoire de l'empire : un instrument devenu symbole de la culture mandingue.",
+    "sources": [
+      {
+        "label": "Balafon",
+        "url": "https://fr.wikipedia.org/wiki/Balafon"
+      }
+    ]
+  },
+  {
+    "id": "or-et-sel",
+    "name": "Le commerce de l'or et du sel",
+    "year": 1250,
+    "approx": true,
+    "place": "Oualata",
+    "at": [
+      -7,
+      17.3
+    ],
+    "category": "monnaie",
+    "description": "Le Mali tient les mines d'or du Bambouk et du Bouré et reçoit le sel du Sahara, extrait à Teghaza. Les caravanes de chameaux échangent l'or contre le sel, le cuivre, les chevaux et les tissus, par Oualata et Tombouctou. Ce commerce n'est pas une invention du Mali, mais l'empire le contrôle, le taxe et le protège sur d'immenses distances.",
+    "impact": "L'or du Mali alimente le monde méditerranéen : après le pèlerinage de Moussa en 1324, l'Europe et l'Égypte connaissent le nom du Mali.",
+    "sources": [
+      {
+        "label": "Commerce transsaharien",
+        "url": "https://fr.wikipedia.org/wiki/Commerce_transsaharien"
+      }
+    ]
+  },
+  {
+    "id": "cauris",
+    "name": "Les cauris, monnaie de coquillages",
+    "year": 1300,
+    "approx": true,
+    "place": "Gao",
+    "at": [
+      0.05,
+      16.27
+    ],
+    "category": "monnaie",
+    "description": "Les cauris sont de petits coquillages de l'océan Indien, apportés par les caravanes et les bateaux. Au Mali, on les compte par milliers pour les petits achats, tandis que l'or sert aux grandes sommes. Ils existent bien avant l'empire, mais celui-ci en généralise l'usage dans les marchés de la boucle du Niger. Ibn Battûta les décrit comme monnaie courante au Mali.",
+    "impact": "Une monnaie de petite valeur, légère et sûre, permet à des millions de gens de commercer partout dans l'empire, sans frapper de pièces.",
+    "sources": [
+      {
+        "label": "Cauri",
+        "url": "https://fr.wikipedia.org/wiki/Cauri"
+      }
+    ]
+  },
+  {
+    "id": "manuscrits-tombouctou",
+    "name": "Les écoles et manuscrits de Tombouctou",
+    "year": 1325,
+    "approx": true,
+    "place": "Tombouctou",
+    "at": [
+      -3,
+      16.77
+    ],
+    "inventor": "Mansa Moussa (protecteur)",
+    "category": "ecriture",
+    "description": "Après 1325, Tombouctou accueille la mosquée de Sankoré, ses savants et ses copistes. On y recopie des livres de droit, de grammaire, d'astronomie et de poésie, en arabe, importés d'Afrique du Nord ou composés sur place. Des dizaines de milliers de manuscrits ont survécu. L'essor de la ville, surtout sous les Songhaï, a des racines dans le Mali de Moussa.",
+    "impact": "Tombouctou devient un centre de lecture et de copie : ses manuscrits montrent une longue tradition de savoir africain écrit.",
+    "sources": [
+      {
+        "label": "Manuscrits de Tombouctou",
+        "url": "https://fr.wikipedia.org/wiki/Manuscrits_de_Tombouctou"
+      }
+    ]
+  },
+  {
+    "id": "architecture-banco",
+    "name": "L'architecture en banco et Djingareyber",
+    "year": 1327,
+    "approx": true,
+    "place": "Tombouctou",
+    "at": [
+      -3,
+      16.77
+    ],
+    "inventor": "Abou Ishaq es-Sahéli (selon la tradition)",
+    "category": "architecture",
+    "description": "Le banco est une terre crue mêlée de paille, moulée en briques et enduite. Les bâtisseurs soudanais l'utilisent depuis longtemps ; à Tombouctou, la mosquée Djingareyber (vers 1327) en est un grand exemple. Les poutres de bois qui dépassent des murs servent d'échafaudage et à l'entretien annuel. L'architecte andalou Abou Ishaq es-Sahéli y a parfois été associé, mais son rôle est discuté.",
+    "impact": "Des mosquées de terre, réparées chaque année par toute la ville, forment un style qui s'étend de Tombouctou à Djenné.",
+    "sources": [
+      {
+        "label": "Mosquée Djingareyber",
+        "url": "https://fr.wikipedia.org/wiki/Mosqu%C3%A9e_Djingareyber"
+      }
+    ]
+  },
+  {
+    "id": "bogolan",
+    "name": "Le bogolan, étoffe teinte à la boue",
+    "year": 1300,
+    "approx": true,
+    "place": "Ségou",
+    "at": [
+      -6.27,
+      13.43
+    ],
+    "category": "technique",
+    "description": "Le bogolan (« fait avec de la terre ») est un tissu de coton tissé en bandes étroites, teint avec des plantes puis peint de motifs à la boue fermentée. Les chasseurs et les femmes du Manden le portent depuis des siècles. L'origine exacte est inconnue et sa date est conventionnelle, car il n'existe pas de texte ancien qui le décrive.",
+    "impact": "Une technique de teinture, entièrement fondée sur des matériaux locaux, a créé un art textile qui a survécu à l'empire et reste vivant aujourd'hui.",
+    "sources": [
+      {
+        "label": "Bogolan",
+        "url": "https://fr.wikipedia.org/wiki/Bogolan"
+      }
+    ]
+  },
+  {
+    "id": "riz-delta",
+    "name": "Le riz africain et les greniers du delta",
+    "year": 1325,
+    "approx": true,
+    "place": "Djenné",
+    "at": [
+      -4.55,
+      13.91
+    ],
+    "category": "agriculture",
+    "description": "Dans le delta intérieur du Niger, on cultive depuis des siècles le riz africain, une espèce domestiquée localement, avec le mil et le sorgho. Les crues du fleuve fertilisent les rizières. Sous le Mali, des greniers stockent les récoltes et nourrissent les villes et les caravanes. Il s'agit surtout de la diffusion d'un savoir ancien, que l'empire organise et taxe.",
+    "impact": "Les récoltes du delta nourrissent villes, armées et caravanes : sans ces greniers, le Mali n'aurait pas pu entretenir ses grandes cités marchandes.",
+    "sources": [
+      {
+        "label": "Riz africain",
+        "url": "https://fr.wikipedia.org/wiki/Riz_africain"
+      }
+    ]
+  }
+]

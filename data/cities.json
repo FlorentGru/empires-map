@@ -6104,5 +6104,365 @@
     "empires": [
       "inca"
     ]
+  },
+  {
+    "id": "niani",
+    "modern": "Niani, Guinée (localisation discutée)",
+    "names": [
+      {
+        "name": "Niani"
+      }
+    ],
+    "coords": [
+      -8.87,
+      11.43
+    ],
+    "founded": 1235,
+    "rank": 2,
+    "capitalOf": [
+      {
+        "empire": "mali",
+        "from": 1235,
+        "to": 1670
+      }
+    ],
+    "empires": [
+      "mali"
+    ]
+  },
+  {
+    "id": "kangaba",
+    "modern": "Kangaba, Mali",
+    "names": [
+      {
+        "name": "Kangaba"
+      }
+    ],
+    "coords": [
+      -8.41,
+      11.94
+    ],
+    "founded": 1200,
+    "rank": 3,
+    "empires": [
+      "mali"
+    ]
+  },
+  {
+    "id": "kirina",
+    "modern": "Kirina, Mali (site discuté)",
+    "names": [
+      {
+        "name": "Kirina"
+      }
+    ],
+    "coords": [
+      -8.2,
+      12.1
+    ],
+    "founded": 1200,
+    "rank": 3,
+    "empires": [
+      "mali"
+    ]
+  },
+  {
+    "id": "sosso-bala",
+    "modern": "Sosso-Bala, Mali (site discuté)",
+    "names": [
+      {
+        "name": "Sosso-Bala"
+      }
+    ],
+    "coords": [
+      -7.6,
+      12.7
+    ],
+    "founded": 1100,
+    "destroyed": 1235,
+    "rank": 3,
+    "empires": [
+      "mali"
+    ]
+  },
+  {
+    "id": "tombouctou",
+    "modern": "Tombouctou, Mali",
+    "names": [
+      {
+        "name": "Tombouctou"
+      }
+    ],
+    "coords": [
+      -3,
+      16.77
+    ],
+    "founded": 1100,
+    "rank": 2
+  },
+  {
+    "id": "gao",
+    "modern": "Gao, Mali",
+    "names": [
+      {
+        "name": "Gao"
+      }
+    ],
+    "coords": [
+      0.05,
+      16.27
+    ],
+    "founded": 800,
+    "rank": 2
+  },
+  {
+    "id": "djenne",
+    "modern": "Djenné, Mali",
+    "names": [
+      {
+        "name": "Djenné"
+      }
+    ],
+    "coords": [
+      -4.55,
+      13.91
+    ],
+    "founded": 800,
+    "rank": 2
+  },
+  {
+    "id": "oualata",
+    "modern": "Oualata, Mauritanie",
+    "names": [
+      {
+        "name": "Oualata"
+      }
+    ],
+    "coords": [
+      -7,
+      17.3
+    ],
+    "founded": 1100,
+    "rank": 3,
+    "empires": [
+      "mali"
+    ]
+  },
+  {
+    "id": "koumbi-saleh",
+    "modern": "Koumbi Saleh, Mauritanie",
+    "names": [
+      {
+        "name": "Koumbi Saleh"
+      }
+    ],
+    "coords": [
+      -7.98,
+      15.77
+    ],
+    "founded": 700,
+    "rank": 3,
+    "empires": [
+      "mali"
+    ]
+  },
+  {
+    "id": "tadmekka",
+    "modern": "Tadmekka (Essouk), Mali",
+    "names": [
+      {
+        "name": "Tadmekka"
+      }
+    ],
+    "coords": [
+      1,
+      18.4
+    ],
+    "founded": 900,
+    "rank": 3,
+    "empires": [
+      "mali"
+    ]
+  },
+  {
+    "id": "takedda",
+    "modern": "Takedda (Azelik), Niger",
+    "names": [
+      {
+        "name": "Takedda"
+      }
+    ],
+    "coords": [
+      7.95,
+      16.85
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "mali"
+    ]
+  },
+  {
+    "id": "teghaza",
+    "modern": "Teghaza, Mali (mine de sel)",
+    "names": [
+      {
+        "name": "Teghaza"
+      }
+    ],
+    "coords": [
+      -4,
+      23.6
+    ],
+    "founded": 1000,
+    "destroyed": 1585,
+    "rank": 3,
+    "empires": [
+      "mali"
+    ]
+  },
+  {
+    "id": "bamako",
+    "modern": "Bamako, Mali",
+    "names": [
+      {
+        "name": "Bamako"
+      }
+    ],
+    "coords": [
+      -8,
+      12.65
+    ],
+    "founded": 1100,
+    "rank": 3,
+    "empires": [
+      "mali"
+    ]
+  },
+  {
+    "id": "segou",
+    "modern": "Ségou, Mali",
+    "names": [
+      {
+        "name": "Ségou"
+      }
+    ],
+    "coords": [
+      -6.27,
+      13.43
+    ],
+    "founded": 1600,
+    "rank": 3,
+    "empires": [
+      "mali"
+    ]
+  },
+  {
+    "id": "mopti",
+    "modern": "Mopti, Mali",
+    "names": [
+      {
+        "name": "Mopti"
+      }
+    ],
+    "coords": [
+      -4.2,
+      14.5
+    ],
+    "founded": 1400,
+    "rank": 3,
+    "empires": [
+      "mali"
+    ]
+  },
+  {
+    "id": "kaabu",
+    "modern": "Kansala (Kaabu), Guinée-Bissau",
+    "names": [
+      {
+        "name": "Kaabu (Kansala)"
+      }
+    ],
+    "coords": [
+      -14,
+      12.2
+    ],
+    "founded": 1250,
+    "rank": 3,
+    "empires": [
+      "mali"
+    ]
+  },
+  {
+    "id": "bambouk",
+    "modern": "Bambouk (Kéniéba), Mali",
+    "names": [
+      {
+        "name": "Bambouk"
+      }
+    ],
+    "coords": [
+      -11.4,
+      12.85
+    ],
+    "founded": 1200,
+    "rank": 3,
+    "empires": [
+      "mali"
+    ]
+  },
+  {
+    "id": "boure",
+    "modern": "Bouré (Siguiri), Guinée",
+    "names": [
+      {
+        "name": "Bouré"
+      }
+    ],
+    "coords": [
+      -9.7,
+      11.1
+    ],
+    "founded": 1200,
+    "rank": 3,
+    "empires": [
+      "mali"
+    ]
+  },
+  {
+    "id": "diara",
+    "modern": "Diara, Mali",
+    "names": [
+      {
+        "name": "Diara"
+      }
+    ],
+    "coords": [
+      -9.2,
+      14.1
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "mali"
+    ]
+  },
+  {
+    "id": "elmina",
+    "modern": "Elmina, Ghana",
+    "names": [
+      {
+        "name": "São Jorge da Mina"
+      }
+    ],
+    "coords": [
+      -1.35,
+      5.08
+    ],
+    "founded": 1482,
+    "rank": 3,
+    "empires": [
+      "mali"
+    ]
   }
 ]
