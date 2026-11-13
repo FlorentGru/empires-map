@@ -805,6 +805,23 @@ export const ESP_SOLDIER_SPECS = {
       circ(8.6, 22.9, 6.4, '#c9a878') + circ(8.6, 22.9, 4, 'none', 'stroke="#8a5a2b" stroke-width="0.8"') + stroke('M5 19L12 26M5 26L12 19', '#8a5a2b', 0.5),
     weapon: spear(30),
   },
+  marocains: {
+    skin: '#c08a5a',
+    tunic: '#efe6cc',
+    legs: 'pants',
+    legColor: '#efe6cc',
+    boots: '#d8b040',
+    deco:
+      path('M10.2 14.2L14.6 13.6L13.6 25.4L9.6 25.2Z', '#a8282a', 'stroke="none"') +
+      path('M21.8 14.2L17.4 13.6L18.4 25.4L22.4 25.2Z', '#a8282a', 'stroke="none"') +
+      stroke('M10.4 25.2H21.6', '#c9b98a', 0.6),
+    head:
+      path('M11.6 8.6Q11.2 2.6 16 1.8Q20.8 2.6 20.4 8.6Q16 6.8 11.6 8.6Z', WHITE) +
+      path('M12.6 11.6Q13.4 15.8 16 15.6Q18.6 15.8 19.4 11.6Q16 13.4 12.6 11.6Z', '#1f1a14', 'stroke="none"') +
+      moustache('#1f1a14'),
+    weapon: arquebus(),
+    shield: '',
+  },
   'francais-ancien-regime': {
     tunic: '#efe6cc',
     legs: 'pants',

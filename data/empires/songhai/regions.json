@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Empire songhaï",
+    "summary": "Parti de Gao, sur la boucle du Niger, l'État des Songhaï s'affranchit du Mali puis le supplante : Sonni Ali conquiert Tombouctou et Djenné, et les Askia en font le plus vaste empire du Sahel. Le souverain gouverne depuis Gao avec des ministres, des gouverneurs de province et une armée permanente, jusqu'à la défaite de Tondibi en 1591.",
+    "years": [1430, 1591]
+  },
+  {
+    "name": "Aïr et Agadez",
+    "summary": "Massif montagneux du Sahara, au nord de l'actuel Niger, tenu par des Touaregs, avec pour ville principale Agadez, étape des caravanes vers l'Égypte et le Maghreb. L'Askia Mohammed y lance une expédition au début du XVIe siècle et en tire un tribut, mais son contrôle reste lâche et l'Aïr garde ses propres sultans.",
+    "years": [1501, 1585]
+  },
+  {
+    "name": "Diara",
+    "summary": "Royaume sahélien de l'ouest, autour de l'actuelle Nara, à la frontière du Mali et de la Mauritanie. Ancienne province du Mali, il passe sous la suzeraineté des Askia, qui y lèvent un tribut et des contingents, sans jamais l'administrer directement.",
+    "years": [1513, 1585]
+  },
+  {
+    "name": "Galam",
+    "summary": "Pays du haut fleuve Sénégal, autour de Bakel, peuplé de Soninkés et réputé pour son or. Les chroniques le disent tributaire des Askia au XVIe siècle : c'est la limite occidentale de leur influence, très loin de Gao.",
+    "years": [1513, 1585]
+  },
+  {
+    "name": "Katsina et Kano",
+    "summary": "Deux grandes cités haoussas du nord de l'actuel Nigeria, prospères grâce à l'artisanat et au commerce. L'Askia Mohammed y mène campagne vers 1513 et leur impose sans doute un tribut, mais leur soumission est brève et discutée : la révolte du Kebbi les en libère dès 1516.",
+    "years": [1513, 1513]
+  }
+]

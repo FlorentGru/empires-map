@@ -1,0 +1,1322 @@
+{
+  "id": "songhai",
+  "name": "Empire songhaï",
+  "color": "#a8402a",
+  "start": 1430,
+  "end": 1591,
+  "description": "L'Empire songhaï naît à Gao, sur la boucle du Niger, quand la dynastie des Sonni s'affranchit du Mali vers 1430. Sonni Ali Ber, chef de guerre à la flotte de pirogues et à la cavalerie, prend Tombouctou en 1468 et Djenné en 1473 ; puis l'Askia Mohammed, devenu calife du Takrur après son pèlerinage de 1496-1497, organise l'État et l'étend de l'Aïr au Galam. Sous Askia Daoud, Tombouctou est l'un des grands foyers de savoir du monde musulman. L'empire s'effondre en 1591 à Tondibi, sous les arquebuses marocaines.",
+  "view": {
+    "center": [
+      0,
+      16
+    ],
+    "zoom": 4
+  },
+  "bounds": [
+    [
+      -20,
+      2
+    ],
+    [
+      20,
+      30
+    ]
+  ],
+  "apogee": {
+    "stepId": "deposition-1528",
+    "note": "Vers 1528, à la fin du règne de l'Askia Mohammed, l'empire va du pays Dendi et de l'Aïr au Macina, à Teghaza et aux marges du Galam. Ses limites exactes sont mal connues : les chroniques de Tombouctou (Tarikh es-Soudan, Tarikh el-Fettach), écrites au XVIIe siècle, ne donnent pas de frontières, et le statut des régions tributaires (Agadez, Diara, Galam) reste discuté."
+  },
+  "periods": [
+    {
+      "id": "gao-affranchi",
+      "name": "Gao s'affranchit du Mali",
+      "start": 1430,
+      "end": 1464,
+      "color": "#e6b9a0",
+      "summary": "Le royaume de Gao, gouverné par la dynastie des Sonni, se détache du Mali pendant que celui-ci s'épuise. Il tient la rive du Niger et le pays Dendi. Les dates, et même les noms des rois, viennent de chroniques écrites deux siècles plus tard et restent incertains."
+    },
+    {
+      "id": "sonni-ali",
+      "name": "Sonni Ali, le conquérant",
+      "start": 1464,
+      "end": 1493,
+      "color": "#d9855f",
+      "summary": "Sonni Ali Ber fait du Niger une route de guerre : Tombouctou tombe en 1468, Djenné en 1473, les Mossis sont repoussés. Les chroniques de lettrés le décrivent en tyran, un portrait sans doute chargé. Il meurt en 1492."
+    },
+    {
+      "id": "askia",
+      "name": "Les Askia",
+      "start": 1493,
+      "end": 1591,
+      "color": "#b5563a",
+      "summary": "Mohammed Touré, devenu Askia, organise l'État, fait le pèlerinage et étend l'empire de l'Aïr au Galam. Sous Daoud, Tombouctou brille. En 1591, l'arquebuse marocaine gagne à Tondibi et met fin à l'empire."
+    }
+  ],
+  "steps": [
+    {
+      "id": "gao-1430",
+      "year": 1430,
+      "title": "Gao et les Sonni se libèrent du Mali",
+      "type": "politique",
+      "location": [
+        0.05,
+        16.27
+      ],
+      "zoom": 5,
+      "summary": "Vers 1430, la dynastie des Sonni, installée à Gao, achève de s'affranchir du Mali. Les dates sont incertaines : tout vient de chroniques écrites deux siècles plus tard.",
+      "details": "Sur la boucle du Niger, le peuple **songhaï** (agriculteurs, pêcheurs et bateliers qui parlent le songhaï) possède depuis le XIᵉ siècle un royaume autour de **Gao**, cité marchande au débouché des pistes du Sahara. Au XIVᵉ siècle, le Mali de Mansa Moussa l'a placée sous son autorité. Mais l'empire des mansas s'épuise : querelles de succession, raids des **Mossis** (peuple du sud), poussée des **Touaregs** (nomades berbères du désert), qui prennent Tombouctou en 1433.\n\nGao profite de cet affaiblissement. Selon le **Tarikh es-Soudan** (la « chronique du Soudan », écrite vers 1655 par Abderrahmane es-Saadi), les rois de la dynastie des **Sonni** reprennent peu à peu leur indépendance ; l'un d'eux, **Sonni Soliman Dama** (ou Mar, selon les manuscrits), pousse ses raids jusqu'au Mema, une province malienne. On ne sait ni la date exacte de la rupture (entre les années 1430 et 1440, dit-on) ni les noms de tous les rois : ces textes sont tardifs, et ceux du XVᵉ siècle sont connus au mieux à dix ou vingt ans près.\n\nLe royaume reste modeste : Gao, la rive du fleuve et le pays **Dendi**, plus au sud. Il dispose pourtant de deux atouts, qui font la suite : des pirogues de guerre sur le Niger, et une cavalerie capable de frapper loin.",
+      "consequences": [
+        "Gao et la rive du Niger entre Bourem et Ansongo, ainsi que le pays Dendi, redeviennent indépendants du Mali.",
+        "Le Mali perd la boucle orientale du Niger et se replie vers l'ouest et le Manden.",
+        "Tombouctou, aux mains des Touaregs depuis 1433, reste en dehors du royaume de Gao.",
+        "Les Sonni créent la flotte et la cavalerie sur lesquelles Sonni Ali bâtira son empire."
+      ],
+      "territory": "gao-1430",
+      "territoryNote": "Le royaume songhaï de 1430 est étroit : Gao et la rive du Niger entre Bourem et Ansongo (Mali actuel), avec le pays Dendi plus au sud (Niger actuel, vallée du fleuve entre Ayorou et Gaya, où se trouvait l'ancienne capitale Kukiya), soit une bande fluviale d'environ 600 km. Voisins : le Mali réduit à l'ouest (Mema, haut Niger, Manden), qui lâche la boucle ; les Touaregs (Tombouctou dès 1433, Adrar des Ifoghas, Tadmekka, Aïr), indépendants ; Djenné et le delta intérieur du Niger, cité-État indépendante ; les États mossis (Yatenga, Ouagadougou), indépendants ; les cités haoussas (Kano, Katsina), le Bornou et, plus au nord, les Berbères du Sahara, indépendants.",
+      "figures": [
+        {
+          "name": "Sonni Soliman Dama",
+          "role": "Roi sonni de Gao (selon le Tarikh es-Soudan)",
+          "faction": "songhais",
+          "archetype": "roi",
+          "quote": "(formule libre) Gao ne portera plus le tribut du Mali",
+          "position": [
+            0.05,
+            16.27
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Empire songhaï",
+          "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+        },
+        {
+          "label": "Wikipédia — Gao",
+          "url": "https://fr.wikipedia.org/wiki/Gao"
+        },
+        {
+          "label": "Wikipédia — Tarikh es-Soudan",
+          "url": "https://fr.wikipedia.org/wiki/Tarikh_es-Soudan"
+        }
+      ]
+    },
+    {
+      "id": "sonni-ali-1464",
+      "year": 1464,
+      "title": "Sonni Ali devient roi de Gao",
+      "type": "politique",
+      "location": [
+        0.05,
+        16.27
+      ],
+      "zoom": 5,
+      "summary": "En 1464, Sonni Ali Ber monte sur le trône de Gao. Ce chef de guerre bâtit en trente ans le plus vaste État que l'Afrique de l'Ouest ait connu.",
+      "details": "À la mort de son père, **Sonni Ali**, surnommé **Ber** (« le Grand » en songhaï), devient roi de Gao en 1464 (la date vient d'es-Saadi, dont les chiffres sont à prendre avec prudence). Il appartient à la dynastie des **Sonni**, qui règne à Gao depuis le XIVᵉ siècle. Les chroniques musulmanes de Tombouctou, écrites au XVIIᵉ siècle, le dépeignent en tyran sanguinaire et en demi-païen : elles s'appuient surtout sur ses démêlés avec les lettrés. Pourtant ses sujets le tiennent aussi pour un sorcier invincible, et la tradition orale le célèbre aujourd'hui comme un héros.\n\nCe qui est sûr, c'est son génie militaire. Sonni Ali ne s'attache à aucune capitale : il campe, il conduit lui-même ses troupes, et il comprend que le **Niger** est une route de guerre. Il forme une flotte de pirogues, et une cavalerie qui court sur les berges. Il commence par se retourner contre les peuples du voisinage : les **Peuls** (éleveurs de bovins) du Gourma, les **Dogons** de la falaise de Bandiagara, les Touaregs.\n\nSes premières années échappent presque entièrement à l'histoire. On voit seulement un roi qui, au lieu de défendre Gao, passe à l'offensive sur le fleuve, avec la certitude qu'un royaume sans conquêtes finit par tomber.",
+      "consequences": [
+        "Gao, le pays Dendi et les rives voisines du Niger, de Bourem à Ansongo, forment la base d'un royaume en guerre permanente.",
+        "La flotte de pirogues et la cavalerie deviennent les deux armes de l'État.",
+        "Les Peuls du Gourma, les Dogons et les Touaregs sont désormais exposés aux raids songhaïs.",
+        "Les lettrés musulmans, favorables aux Touaregs, se méfient d'un roi attaché aux cultes traditionnels."
+      ],
+      "territory": "sonni-ali-1464",
+      "territoryNote": "Le royaume de Sonni Ali en 1464 reste celui de Gao : la rive du Niger entre Bourem et Ansongo, avec le pays Dendi (vallée du fleuve en aval de Ayorou, Niger actuel) et ses premiers raids dans le Gourma (rive droite, pays peul). Voisins : le Mali, replié à l'ouest (Mema, haut Niger, Manden), indépendant ; Tombouctou, sous les Touaregs, indépendante du Songhaï ; les Touaregs (Adrar des Ifoghas, Aïr, Tadmekka), indépendants ; Djenné et le delta intérieur, cité-État indépendante ; les États mossis (Yatenga, Ouagadougou) et les Dogons de Bandiagara, indépendants ; les cités haoussas (Kano, Katsina) et le Bornou, indépendants.",
+      "figures": [
+        {
+          "name": "Sonni Ali Ber",
+          "role": "Roi de Gao (rendu ici avec la figurine « roi »)",
+          "faction": "songhais",
+          "archetype": "roi",
+          "quote": "(formule libre) Le fleuve est mon chemin ; qui tient le Niger tient le Soudan",
+          "position": [
+            0.05,
+            16.27
+          ],
+          "person": "sonni-ali-ber"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Sonni Ali Ber",
+          "url": "https://fr.wikipedia.org/wiki/Sonni_Ali_Ber"
+        },
+        {
+          "label": "Wikipédia — Empire songhaï",
+          "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+        },
+        {
+          "label": "Wikipédia — Tarikh es-Soudan",
+          "url": "https://fr.wikipedia.org/wiki/Tarikh_es-Soudan"
+        }
+      ]
+    },
+    {
+      "id": "tombouctou-1468",
+      "year": 1468,
+      "title": "Sonni Ali chasse les Touaregs de Tombouctou",
+      "type": "bataille",
+      "location": [
+        -3,
+        16.77
+      ],
+      "zoom": 5.2,
+      "summary": "En 1468 (ou début 1469), Sonni Ali s'empare de Tombouctou, tenue par les Touaregs depuis 1433. Les chroniques le dépeignent ensuite en bourreau des lettrés, un tableau sans doute forcé.",
+      "details": "Depuis 1433, les **Touaregs** (nomades du Sahara) dominent **Tombouctou**, grande ville de commerce et de savoir. Leur chef, **Akil ag Malwal**, tire des tributs des marchands, mais protège mal les lettrés, qui cherchent l'appui d'un roi. Certains appellent Sonni Ali à l'aide ; d'autres se méfient de lui, et la ville est divisée.\n\nEn 1468 (ou en janvier 1469, selon les manuscrits), Sonni Ali remonte le fleuve avec sa flotte et sa cavalerie. À son approche, Akil s'enfuit vers le désert sans livrer bataille. Sonni Ali entre dans une ville qui, selon es-Saadi, est pillée et brûlée ; la plupart des lettrés de **Sankoré** (le quartier des écoles) sont tués, humiliés ou chassés. Beaucoup fuient vers **Oualata**, à l'ouest, ou vers le Maroc.\n\nIl faut lire ce récit avec prudence. Es-Saadi, lui-même lettré de Tombouctou, écrit près de deux siècles après l'événement, et la dynastie suivante des Askia avait intérêt à noircir Sonni Ali. Des historiens modernes pensent que la ville souffrit surtout de la défaite des Touaregs, et que Sonni Ali favorisa ensuite certains clercs. Dans tous les cas, Tombouctou devient songhaï pour un siècle et vit un grand essor.",
+      "consequences": [
+        "Tombouctou et la boucle du Niger jusqu'à Kabara, son port, passent des Touaregs au Songhaï.",
+        "Les Touaregs sont repoussés vers l'Adrar des Ifoghas et le Sahara, hors de la vallée du fleuve.",
+        "Une partie des lettrés quitte Tombouctou pour Oualata ou le Maroc ; la tradition en garde un souvenir amer.",
+        "Le Mali perd le dernier espoir de reprendre la ville, qui se détournait déjà de lui depuis 1433."
+      ],
+      "territory": "tombouctou-1468",
+      "territoryNote": "Après 1468, le Songhaï tient la boucle du Niger de Gao à Tombouctou (Kabara, Bamba, Bourem, Rharous, Goundam) et le pays Dendi au sud-est, soit environ 900 km de fleuve. Voisins : le Mali, replié à l'ouest (Mema, haut Niger, Manden), indépendant ; les Touaregs (Adrar des Ifoghas, Tadmekka, Aïr), repoussés au désert et indépendants ; Oualata et les Berbères du Sahara, indépendants ; Djenné et le delta intérieur, cité-État encore libre ; les États mossis (Yatenga, Ouagadougou), indépendants ; les cités haoussas (Kano, Katsina) et le Bornou, indépendants.",
+      "battle": {
+        "belligerents": [
+          "Songhaï de Sonni Ali",
+          "Touaregs de Tombouctou"
+        ],
+        "commanders": [
+          "Sonni Ali Ber",
+          "Akil ag Malwal"
+        ],
+        "outcome": "Fuite des Touaregs ; Sonni Ali prend Tombouctou, qui devient songhaï",
+        "forces": "Inconnues ; flotte de pirogues et cavalerie du côté songhaï, selon es-Saadi",
+        "losses": "Inconnues ; massacres et pillages dont l'ampleur est débattue"
+      },
+      "armies": [
+        {
+          "side": "Songhaï de Sonni Ali",
+          "from": "Gao",
+          "faction": "songhais",
+          "path": [
+            [
+              0.05,
+              16.27
+            ],
+            [
+              -0.35,
+              16.97
+            ],
+            [
+              -1.4,
+              16.95
+            ],
+            [
+              -2.7,
+              16.7
+            ],
+            [
+              -3,
+              16.77
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Touaregs d’Akil",
+          "from": "Sahara",
+          "faction": "touaregs",
+          "path": [
+            [
+              -2.2,
+              18.8
+            ],
+            [
+              -2.8,
+              17.6
+            ],
+            [
+              -3,
+              16.77
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Sonni Ali Ber",
+          "role": "Roi de Gao, conquérant de Tombouctou",
+          "faction": "songhais",
+          "archetype": "roi",
+          "quote": "(formule libre) Tombouctou paiera désormais son tribut au Songhaï",
+          "position": [
+            -2.8,
+            16.72
+          ],
+          "person": "sonni-ali-ber"
+        },
+        {
+          "name": "Un lettré de Sankoré",
+          "role": "Savant de Tombouctou (figure type)",
+          "faction": "songhais",
+          "archetype": "sage",
+          "quote": "(formule libre) Nos livres valent plus que nos maisons",
+          "position": [
+            -3.05,
+            16.8
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Tombouctou",
+          "url": "https://fr.wikipedia.org/wiki/Tombouctou"
+        },
+        {
+          "label": "Wikipédia — Sonni Ali Ber",
+          "url": "https://fr.wikipedia.org/wiki/Sonni_Ali_Ber"
+        },
+        {
+          "label": "Wikipédia — Tarikh es-Soudan",
+          "url": "https://fr.wikipedia.org/wiki/Tarikh_es-Soudan"
+        }
+      ]
+    },
+    {
+      "id": "djenne-1473",
+      "year": 1473,
+      "title": "Le long siège de Djenné",
+      "type": "bataille",
+      "location": [
+        -4.55,
+        13.91
+      ],
+      "zoom": 5,
+      "summary": "En 1473, après un siège de sept ans, sept mois et sept jours selon le Tarikh, Sonni Ali obtient la reddition de Djenné, cité marchande du delta du Niger.",
+      "details": "**Djenné**, sur une île du Bani au cœur du delta intérieur du Niger, est le grand marché où l'or du sud rencontre le sel du Sahara. Les caravanes de Tombouctou en dépendent, et ses remparts passent pour inexpugnables : pendant la crue, la ville est entourée d'eau. Pour Sonni Ali, la tenir revient à contrôler tout le commerce du fleuve.\n\nSelon le **Tarikh es-Soudan**, il l'encercle avec sa flotte et sa cavalerie et la prive de vivres. Le siège dure, dit la chronique, « sept ans, sept mois et sept jours », une formule en sept qui est symbolique : il a pu durer moins, mais il fut long, et les chiffres exacts nous échappent. Pendant ce temps, Sonni Ali conduit d'autres campagnes et laisse ses troupes tenir le blocus. Les habitants finissent par capituler, vers 1473.\n\nEs-Saadi insiste sur un fait étonnant : Sonni Ali ne détruit pas la ville et traite bien ses habitants, loin de la cruauté qu'on lui prête à Tombouctou. Il y installe un gouverneur et un corps de garnison. Djenné ne sera plus jamais indépendante, et son commerce passe sous le contrôle des Songhaï, qui tiennent désormais le fleuve de Gao jusqu'au delta, avec le Macina au sud-ouest.",
+      "consequences": [
+        "Djenné, le delta intérieur du Niger et le Macina passent sous l'autorité de Sonni Ali.",
+        "Le Songhaï contrôle le grand carrefour de l'or et du sel, de Gao jusqu'au delta.",
+        "Le Mali, qui avait encore des liens avec Djenné, perd toute influence sur le fleuve.",
+        "La ville garde ses privilèges marchands sous la garde d'une garnison songhaïe."
+      ],
+      "territory": "djenne-1473",
+      "territoryNote": "En 1473, le Songhaï tient tout le Niger moyen : Gao, Tombouctou, la boucle du fleuve, le lac Débo, Djenné, le delta intérieur et le Macina, de Bourem à Ségou-Mopti environ, avec le pays Dendi au sud-est. Voisins : le Mali, replié à l'ouest (haut Niger, Manden, Bambouk, Bouré), indépendant ; les États mossis (Yatenga, Ouagadougou), indépendants ; les Dogons (falaise de Bandiagara), indépendants ; les Touaregs (Adrar des Ifoghas, Aïr), indépendants ; les cités haoussas (Kano, Katsina) et le Bornou, indépendants ; les Berbères du Sahara (Oualata, Teghaza), indépendants.",
+      "battle": {
+        "belligerents": [
+          "Songhaï de Sonni Ali",
+          "Habitants et garnison de Djenné"
+        ],
+        "commanders": [
+          "Sonni Ali Ber",
+          "Le chef de Djenné (nom inconnu)"
+        ],
+        "outcome": "Reddition de Djenné après un siège très long ; la ville passe au Songhaï",
+        "forces": "Inconnues",
+        "losses": "Inconnues ; la ville est épargnée selon es-Saadi"
+      },
+      "armies": [
+        {
+          "side": "Songhaï de Sonni Ali",
+          "from": "Tombouctou",
+          "faction": "songhais",
+          "path": [
+            [
+              -3,
+              16.77
+            ],
+            [
+              -3.7,
+              15.9
+            ],
+            [
+              -4.15,
+              15.3
+            ],
+            [
+              -4.2,
+              14.5
+            ],
+            [
+              -4.55,
+              13.91
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Défenseurs de Djenné (figurines mandingues, faute de mieux)",
+          "from": "Djenné",
+          "faction": "mandingues",
+          "path": [
+            [
+              -4.8,
+              13.7
+            ],
+            [
+              -4.55,
+              13.91
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Sonni Ali Ber",
+          "role": "Assiégeant de Djenné",
+          "faction": "songhais",
+          "archetype": "roi",
+          "quote": "(formule libre) Qui a faim finit par ouvrir ses portes",
+          "position": [
+            -4.4,
+            14.1
+          ],
+          "person": "sonni-ali-ber"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Djenné",
+          "url": "https://fr.wikipedia.org/wiki/Djenn%C3%A9"
+        },
+        {
+          "label": "Wikipédia — Sonni Ali Ber",
+          "url": "https://fr.wikipedia.org/wiki/Sonni_Ali_Ber"
+        },
+        {
+          "label": "Wikipédia — Tarikh es-Soudan",
+          "url": "https://fr.wikipedia.org/wiki/Tarikh_es-Soudan"
+        }
+      ]
+    },
+    {
+      "id": "kobi-1483",
+      "year": 1483,
+      "title": "Kobi : Sonni Ali contre les Mossis",
+      "type": "bataille",
+      "location": [
+        -3,
+        13.2
+      ],
+      "zoom": 5,
+      "summary": "Vers 1483, Sonni Ali affronte les cavaliers mossis à Kobi, après leur raid sur Oualata. Il gagne la bataille, mais le Yatenga reste libre.",
+      "details": "Au sud du Niger, les **Mossis** (peuple de cavaliers du pays voltaïque, aujourd'hui au Burkina Faso) sont depuis longtemps la terreur des villes du fleuve. Vers 1480, leurs bandes poussent jusqu'à **Oualata**, grande ville du désert, qu'elles pillent. Pour Sonni Ali, c'est un défi : il se veut protecteur des routes du commerce.\n\nSelon le **Tarikh es-Soudan**, il ramène son armée vers le sud et rencontre les Mossis à **Kobi**, vers 1483 : l'emplacement exact est incertain, quelque part entre le Macina et le Yatenga. La bataille est rude, mais Sonni Ali l'emporte. Il ne parvient pourtant pas à soumettre les Mossis, retranchés dans leurs terres boisées ; il se contente de les repousser. Leur royaume du **Yatenga** reste libre jusqu'à l'arrivée des Français, quatre siècles plus tard.\n\nCe n'est pas la seule guerre de Sonni Ali au sud : il combat aussi les Dogons de Bandiagara, qui résistent depuis leur falaise, et les Peuls du Gourma. Le récit hostile des lettrés insiste sur ses massacres de populations civiles ; les ressorts exacts de ces campagnes restent mal connus. Ce qui est sûr, c'est que l'empire de Sonni Ali, solide sur le fleuve, ne s'élargit guère dans la savane.",
+      "consequences": [
+        "Le Songhaï, déjà maître du Niger de Gao à Djenné, repousse les Mossis vers le sud.",
+        "Le Yatenga et le royaume mossi de Ouagadougou restent indépendants.",
+        "Les raids mossis sur Oualata et les villes du fleuve s'arrêtent pour un temps.",
+        "L'empire de Sonni Ali se renforce le long du fleuve plus qu'en profondeur dans la savane."
+      ],
+      "territory": "kobi-1483",
+      "territoryNote": "En 1483, l'empire de Sonni Ali s'étire le long du Niger, de l'aval du pays Dendi (Niger actuel) à Gao, Tombouctou, le lac Débo, Djenné et le Macina, avec des postes dans le Gourma et aux marges du pays dogon (plateau de Bandiagara, disputé). Voisins : le Mali, replié à l'ouest (haut Niger, Manden), indépendant ; les États mossis (Yatenga, Ouagadougou), indépendants ; les Dogons, indépendants ; les Touaregs (Adrar des Ifoghas, Aïr), indépendants ; Oualata et les Berbères du Sahara, indépendants ; les cités haoussas (Kano, Katsina) et le Bornou, indépendants.",
+      "battle": {
+        "belligerents": [
+          "Songhaï de Sonni Ali",
+          "Cavaliers mossis du Yatenga"
+        ],
+        "commanders": [
+          "Sonni Ali Ber",
+          "Le naba du Yatenga (nom non retenu)"
+        ],
+        "outcome": "Victoire songhaï ; les Mossis sont repoussés, mais le Yatenga n'est pas conquis",
+        "forces": "Inconnues ; forte cavalerie mossie selon le Tarikh",
+        "losses": "Inconnues"
+      },
+      "armies": [
+        {
+          "side": "Songhaï de Sonni Ali",
+          "from": "Djenné",
+          "faction": "songhais",
+          "path": [
+            [
+              -4.55,
+              13.91
+            ],
+            [
+              -3.9,
+              13.7
+            ],
+            [
+              -3.4,
+              13.4
+            ],
+            [
+              -3,
+              13.2
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Mossis du Yatenga",
+          "from": "Ouahigouya",
+          "faction": "mossis",
+          "path": [
+            [
+              -2.47,
+              13.58
+            ],
+            [
+              -2.7,
+              13.4
+            ],
+            [
+              -3,
+              13.2
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Sonni Ali Ber",
+          "role": "Chef de guerre",
+          "faction": "songhais",
+          "archetype": "roi",
+          "quote": "(formule libre) Les Mossis ont pillé ; ils paieront en sang et en fuite",
+          "position": [
+            -3.3,
+            13.4
+          ],
+          "person": "sonni-ali-ber"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Mossis",
+          "url": "https://fr.wikipedia.org/wiki/Mossis"
+        },
+        {
+          "label": "Wikipédia — Sonni Ali Ber",
+          "url": "https://fr.wikipedia.org/wiki/Sonni_Ali_Ber"
+        },
+        {
+          "label": "Wikipédia — Empire songhaï",
+          "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+        }
+      ]
+    },
+    {
+      "id": "sonni-ali-1492",
+      "year": 1492,
+      "title": "Mort de Sonni Ali Ber",
+      "type": "chute",
+      "location": [
+        0.5,
+        14
+      ],
+      "zoom": 4.6,
+      "summary": "En novembre 1492, Sonni Ali meurt sur le chemin du retour d'une campagne contre les Peuls du Gourma. Son fils Sonni Baro hérite d'un empire immense mais contesté.",
+      "details": "À la fin de son règne, Sonni Ali tient un empire qui va du pays Dendi au Macina, avec Gao, Tombouctou et Djenné. Il est toujours en campagne : en 1492, il revient d'une expédition contre les **Peuls** du Gourma. D'après le **Tarikh es-Soudan**, il meurt en route, le 6 novembre 1492, peut-être en traversant une rivière ou à cause d'une maladie : les récits divergent. Il aurait été enterré à la hâte, dans le Gourma, ou transporté jusqu'à Gao.\n\nLe lettré es-Saadi, qui l'abhorrait, note qu'à sa mort « Dieu a délivré les hommes d'un tyran ». Cette phrase, souvent citée, dit surtout la rancœur du milieu savant de Tombouctou. Les Songhaï de la tradition orale parlent au contraire d'un roi invincible, devenu quasi légendaire.\n\nSon fils **Sonni Baro** (ou Abou Bakr Dao) lui succède. Mais il ne maîtrise ni l'armée ni les clercs. Les généraux de son père, dont **Mohammed Touré**, le grand chef militaire, en sont mécontents ; les lettrés de Tombouctou, rappelés d'exil, attendent l'occasion de se venger. En quelques mois, un coup d'État se prépare. L'empire que Sonni Ali a forgé en trente ans par la force ne lui survivra pas sous sa dynastie.",
+      "consequences": [
+        "Sonni Baro hérite d'un empire qui va du pays Dendi au Macina, de Gao à Djenné.",
+        "La dynastie sonni, privée de son chef de guerre, devient fragile.",
+        "Les généraux de Sonni Ali, dont Mohammed Touré, et les lettrés de Tombouctou s'opposent au nouveau roi.",
+        "Les Peuls du Gourma, que Sonni Ali combattait, gardent leur indépendance."
+      ],
+      "territory": "sonni-ali-1492",
+      "territoryNote": "À la mort de Sonni Ali en 1492, l'empire est celui de 1483 : le Niger du pays Dendi (Niger actuel, en aval d'Ayorou) à Gao, Tombouctou, le lac Débo, Djenné et le Macina, avec le Gourma sur la rive droite. Voisins : le Mali, replié à l'ouest (haut Niger, Manden, Bambouk), indépendant ; les États mossis (Yatenga, Ouagadougou), indépendants ; les Dogons (Bandiagara), indépendants ; les Peuls du Gourma, insoumis ; les Touaregs (Adrar des Ifoghas, Aïr), indépendants ; Oualata et les Berbères du Sahara, indépendants ; les cités haoussas (Kano, Katsina) et le Bornou, indépendants.",
+      "figures": [
+        {
+          "name": "Sonni Ali Ber",
+          "role": "Roi défunt, conquérant du Niger",
+          "faction": "songhais",
+          "archetype": "roi",
+          "quote": "Selon es-Saadi (paraphrase) : Dieu a délivré les hommes d'un tyran",
+          "position": [
+            0.5,
+            14
+          ],
+          "person": "sonni-ali-ber"
+        },
+        {
+          "name": "Sonni Baro",
+          "role": "Fils et successeur",
+          "faction": "songhais",
+          "archetype": "roi",
+          "quote": "(formule libre) Je tiens le trône de mon père, qui me le prendra ?",
+          "position": [
+            0.05,
+            16.27
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Sonni Ali Ber",
+          "url": "https://fr.wikipedia.org/wiki/Sonni_Ali_Ber"
+        },
+        {
+          "label": "Wikipédia — Empire songhaï",
+          "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+        },
+        {
+          "label": "Wikipédia — Tarikh es-Soudan",
+          "url": "https://fr.wikipedia.org/wiki/Tarikh_es-Soudan"
+        }
+      ]
+    },
+    {
+      "id": "anfao-1493",
+      "year": 1493,
+      "title": "Anfao : naissance de la dynastie des Askia",
+      "type": "bataille",
+      "location": [
+        0.5,
+        15.5
+      ],
+      "zoom": 5,
+      "summary": "Le 12 avril 1493, Mohammed Touré bat Sonni Baro à Anfao et prend le titre d'Askia. La dynastie des Sonni s'achève ; celle des Askia règne sur le Songhaï jusqu'en 1591.",
+      "details": "Sonni Baro, fils de Sonni Ali, n'a pas l'appui de l'armée. **Mohammed Touré**, l'un des plus grands généraux de Sonni Ali, d'origine soninké (un peuple du Sahel), se rapproche des lettrés de Tombouctou, humiliés sous l'ancien roi. Il rassemble les mécontents. Les Songhaï conservent le souvenir d'un mot de sa sœur, qui aurait crié à Baro « **A si kia** » (« il ne l'est pas ») : d'où le titre d'**Askia**, que Mohammed adoptera. L'étymologie est populaire, et sans doute inventée après coup.\n\nLes deux armées se rencontrent à **Anfao**, sur le Niger, au sud de Gao (le site exact est discuté), le 12 avril 1493, selon le Tarikh es-Soudan. Mohammed gagne et Baro doit fuir vers l'est, vers le pays Dendi, où il tente en vain de reconstituer des troupes. Mohammed entre à Gao et se fait proclamer **Askia**, roi du Songhaï.\n\nLes lettrés applaudissent. Dès son avènement, Mohammed mène les affaires avec eux : il se réclame de l'islam, qu'il veut mettre au cœur du pouvoir. Il écarte aussi la famille des Sonni, qui reste influente. Une nouvelle dynastie commence, qui va régner un siècle.",
+      "consequences": [
+        "La dynastie des Sonni disparaît ; Mohammed Touré règne à Gao sous le titre d'Askia.",
+        "Gao reste la capitale d'un empire qui tient toujours le Niger du Dendi au Macina.",
+        "Sonni Baro se réfugie dans l'est ; ses partisans sont chassés ou soumis.",
+        "Les lettrés de Tombouctou deviennent les alliés du nouveau pouvoir."
+      ],
+      "territory": "anfao-1493",
+      "territoryNote": "En 1493, l'empire de Mohammed Touré est celui hérité de Sonni Ali : le Niger du pays Dendi (Niger actuel) à Gao, Tombouctou, le lac Débo, Djenné et le Macina, avec le Gourma. Voisins : le Mali, replié à l'ouest (haut Niger, Manden), indépendant ; les États mossis (Yatenga, Ouagadougou), indépendants ; les Dogons (Bandiagara), indépendants ; les Touaregs (Adrar des Ifoghas, Aïr), indépendants ; Oualata et les Berbères du Sahara, indépendants ; les cités haoussas (Kano, Katsina) et le Bornou, indépendants.",
+      "battle": {
+        "belligerents": [
+          "Partisans de Mohammed Touré",
+          "Armée de Sonni Baro"
+        ],
+        "commanders": [
+          "Mohammed Touré (futur Askia Mohammed)",
+          "Sonni Baro"
+        ],
+        "outcome": "Victoire de Mohammed Touré ; fin de la dynastie des Sonni, naissance des Askia",
+        "forces": "Inconnues",
+        "losses": "Inconnues"
+      },
+      "armies": [
+        {
+          "side": "Mohammed Touré",
+          "from": "Dendi",
+          "faction": "songhais",
+          "path": [
+            [
+              1,
+              14.8
+            ],
+            [
+              0.7,
+              15.2
+            ],
+            [
+              0.5,
+              15.5
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Sonni Baro",
+          "from": "Gao",
+          "faction": "songhais",
+          "path": [
+            [
+              0.05,
+              16.27
+            ],
+            [
+              0.3,
+              15.9
+            ],
+            [
+              0.5,
+              15.5
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Mohammed Touré",
+          "role": "Premier Askia, vainqueur d'Anfao",
+          "faction": "songhais",
+          "archetype": "askia",
+          "quote": "(formule libre) Je ne règnerai pas par la peur, mais avec les savants",
+          "position": [
+            0.6,
+            15.4
+          ],
+          "person": "askia-mohammed"
+        },
+        {
+          "name": "Sonni Baro",
+          "role": "Dernier roi sonni, vaincu",
+          "faction": "songhais",
+          "archetype": "roi",
+          "quote": "(formule libre) L'armée de mon père m'a trahi",
+          "position": [
+            0.35,
+            15.8
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Askia Mohammed Ier",
+          "url": "https://fr.wikipedia.org/wiki/Askia_Mohammed_Ier"
+        },
+        {
+          "label": "Wikipédia — Empire songhaï",
+          "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+        },
+        {
+          "label": "Wikipédia — Tarikh es-Soudan",
+          "url": "https://fr.wikipedia.org/wiki/Tarikh_es-Soudan"
+        }
+      ]
+    },
+    {
+      "id": "mecque-1496",
+      "year": 1496,
+      "title": "Le pèlerinage de l'Askia Mohammed",
+      "type": "politique",
+      "location": [
+        0.05,
+        16.27
+      ],
+      "zoom": 4.2,
+      "summary": "En 1496-1497, l'Askia Mohammed part en pèlerinage à La Mecque et en revient avec le titre de « calife du Takrur ». Le Songhaï devient un État musulman reconnu au Proche-Orient.",
+      "details": "Quatre ans après son arrivée au pouvoir, l'**Askia Mohammed** veut asseoir sa légitimité. Il part pour le **hadj**, le pèlerinage à La Mecque, avec une escorte de cavaliers et de fantassins et une somme énorme en or ; la chronique parle de plusieurs centaines de milliers de pièces, un chiffre sans doute gonflé. Il traverse le Sahara, passe par Le Caire, puis arrive en Arabie en 1496-1497. L'or distribué en aumônes marque les esprits, et il fonde, dit-on, une auberge pour les pèlerins du Soudan.\n\nÀ La Mecque, le **chérif** (un descendant du Prophète) l'investit comme **calife du Takrur**, c'est-à-dire des « pays des Noirs » : pas un titre d'empire universel, mais une reconnaissance prestigieuse qui lui donne autorité sur les croyants de la région. Mohammed revient à Gao en 1497, auréolé de ce prestige, avec des conseils d'organisation.\n\nVers 1498, il reçoit à Gao le juriste **al-Maghili**, venu du désert du Touat, qui lui répond sur la manière de gouverner en bon musulman. Il rédige des « questions » sur le commerce, les impôts, la justice, les cultes traditionnels. Ses réponses, copiées, servent de guide. Mohammed lance aussitôt un « jihad » contre les Mossis, que l'on nomme païens : la religion devient un instrument de conquête, et la dynastie des Askia, une dynastie musulmane.",
+      "consequences": [
+        "L'empire garde ses frontières du Niger (Dendi, Gao, Tombouctou, Djenné, Macina) mais gagne en prestige religieux.",
+        "Le titre de calife du Takrur donne à l'Askia une légitimité face aux lettrés et aux princes voisins.",
+        "Les conseils d'al-Maghili guident l'organisation de la justice et de l'impôt.",
+        "Des campagnes contre les Mossis sont lancées au nom du jihad, avec des résultats limités."
+      ],
+      "territory": "mecque-1496",
+      "territoryNote": "En 1496, l'empire des Askia est celui de 1493 : le Niger du pays Dendi (Niger actuel) à Gao, Tombouctou, le lac Débo, Djenné et le Macina, avec le Gourma sur la rive droite. Voisins : le Mali, replié à l'ouest (haut Niger, Manden), indépendant ; les États mossis (Yatenga, Ouagadougou), indépendants et visés par le jihad ; les Dogons (Bandiagara), indépendants ; les Touaregs (Adrar des Ifoghas, Aïr), indépendants ; Oualata et les Berbères du Sahara, indépendants ; les cités haoussas (Kano, Katsina) et le Bornou, indépendants.",
+      "figures": [
+        {
+          "name": "Askia Mohammed",
+          "role": "Pèlerin, calife du Takrur",
+          "faction": "songhais",
+          "archetype": "askia",
+          "quote": "(formule libre) Je vais à La Mecque pour revenir roi aux yeux des croyants",
+          "position": [
+            0.05,
+            16.27
+          ],
+          "person": "askia-mohammed"
+        },
+        {
+          "name": "al-Maghili",
+          "role": "Juriste conseiller de l’Askia (vers 1498)",
+          "faction": "arabes",
+          "archetype": "sage",
+          "quote": "(formule libre) Un prince juste vaut mieux qu'une armée nombreuse",
+          "position": [
+            0.15,
+            16.2
+          ],
+          "person": "al-maghili"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Askia Mohammed Ier",
+          "url": "https://fr.wikipedia.org/wiki/Askia_Mohammed_Ier"
+        },
+        {
+          "label": "Wikipédia — Empire songhaï",
+          "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+        },
+        {
+          "label": "Wikipédia — Tarikh es-Soudan",
+          "url": "https://fr.wikipedia.org/wiki/Tarikh_es-Soudan"
+        }
+      ]
+    },
+    {
+      "id": "agadez-1501",
+      "year": 1501,
+      "title": "Agadez et l'Aïr passent sous la tutelle songhaïe",
+      "type": "bataille",
+      "location": [
+        7.99,
+        16.97
+      ],
+      "zoom": 4.6,
+      "summary": "Vers 1500-1515, l'Askia Mohammed soumet l'Aïr et sa capitale Agadez, ville touareg du désert, et prend aussi le contrôle des salines de Teghaza. Dates et détails incertains.",
+      "details": "À l'est du Niger, au pied des montagnes de l'**Aïr** (dans le Niger actuel), les **Touaregs** (nomades berbères du Sahara) font d'**Agadez** un grand carrefour de caravanes qui relie le Soudan à la Libye et à l'Égypte. Leur chef y porte le titre de sultan. La ville est aussi un bon débouché pour les produits du Niger. Pour l'Askia, le prendre revient à contrôler la piste de l'est, qui rapporte du cuivre, du sel et des étoffes.\n\nVers 1500-1501, selon le **Tarikh es-Soudan**, l'Askia Mohammed envoie une expédition qui traverse le désert depuis Gao. Les Touaregs de l'Aïr, divisés, plient. Agadez devient une ville tributaire, où des familles songhaïes s'installent, dit-on. Le chiffre du tribut et la durée de la tutelle sont incertains : certaines sources la maintiennent jusque vers 1515, d'autres l'estiment plus lâche ou plus brève.\n\nDans les mêmes années, l'Askia étend son contrôle au nord-ouest, vers les salines de **Teghaza**, dont le sel nourrit tout le Soudan. Mais l'Aïr n'est qu'une marche : les Touaregs gardent leurs chefs, leur langue et leurs coutumes, et reprennent dès que le Songhaï faiblit. Le désert reste un territoire de passage plus que de conquête.",
+      "consequences": [
+        "L'Aïr et Agadez deviennent tributaires de l'Askia, ainsi que les pistes caravanières vers Tadmekka.",
+        "Les salines de Teghaza, dans le Sahara, passent sous le contrôle du Songhaï.",
+        "Le commerce du cuivre et du sel vers le Niger s'oriente plus nettement vers Gao.",
+        "Les Touaregs de l'Aïr gardent leurs chefs : la tutelle reste lâche et dure peu."
+      ],
+      "territory": "agadez-1501",
+      "territoryNote": "Vers 1501, l'empire s'étend de l'aval du pays Dendi à Gao, Tombouctou, le lac Débo, Djenné et le Macina, auquel s'ajoutent à l'est l'Aïr et Agadez (Niger actuel, piste de Tadmekka à Agadez, tributaires) et au nord-ouest les salines de Teghaza (Mali actuel). Voisins : le Mali, replié à l'ouest (haut Niger, Manden), indépendant ; les États mossis (Yatenga, Ouagadougou), indépendants ; les Dogons (Bandiagara), indépendants ; Oualata et les Berbères du Sahara, indépendants ; les cités haoussas (Kano, Katsina), le Bornou, indépendants.",
+      "battle": {
+        "belligerents": [
+          "Songhaï de l’Askia Mohammed",
+          "Touaregs de l’Aïr (Agadez)"
+        ],
+        "commanders": [
+          "Askia Mohammed",
+          "Le sultan d’Agadez (nom incertain)"
+        ],
+        "outcome": "Soumission d'Agadez et de l'Aïr ; tutelle songhaïe, durée et nature discutées",
+        "forces": "Inconnues",
+        "losses": "Inconnues"
+      },
+      "armies": [
+        {
+          "side": "Songhaï de l’Askia",
+          "from": "Gao",
+          "faction": "songhais",
+          "path": [
+            [
+              0.05,
+              16.27
+            ],
+            [
+              1,
+              18.4
+            ],
+            [
+              4,
+              18.2
+            ],
+            [
+              6.5,
+              17.6
+            ],
+            [
+              7.99,
+              16.97
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Touaregs de l’Aïr",
+          "from": "Aïr",
+          "faction": "touaregs",
+          "path": [
+            [
+              8.8,
+              18
+            ],
+            [
+              7.99,
+              16.97
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Askia Mohammed",
+          "role": "Commandant de la campagne",
+          "faction": "songhais",
+          "archetype": "askia",
+          "quote": "(formule libre) Le désert aussi doit connaître la loi de l'Askia",
+          "position": [
+            6.5,
+            17.5
+          ],
+          "person": "askia-mohammed"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Empire songhaï",
+          "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+        },
+        {
+          "label": "Wikipédia — Agadez",
+          "url": "https://fr.wikipedia.org/wiki/Agadez"
+        },
+        {
+          "label": "Wikipédia — Touaregs",
+          "url": "https://fr.wikipedia.org/wiki/Touaregs"
+        }
+      ]
+    },
+    {
+      "id": "haoussas-1513",
+      "year": 1513,
+      "title": "Diara, Galam et les cités haoussas",
+      "type": "politique",
+      "location": [
+        7.6,
+        13
+      ],
+      "zoom": 3.8,
+      "summary": "Entre 1505 et 1515 environ, l'Askia Mohammed pousse ses armées vers l'ouest (Diara, Galam) et vers l'est (Katsina, Kano). Les historiens débattent : conquêtes durables, tributs ou simples raids ?",
+      "details": "Au sommet de sa puissance, l'**Askia Mohammed** conduit ou envoie des armées dans toutes les directions. À l'ouest, ses troupes atteignent **Diara** (la région de Nara et du Sahel malien) et le **Galam** (haut Sénégal) ; ces pays versent un tribut ou subissent des raids. À l'est, il se tourne vers les villes des **Haoussas** (peuple du nord du Nigeria actuel), en particulier **Katsina** et **Kano**, riches marchés sur la route des pistes vers l'Égypte.\n\nIci les sources divergent. Le **Tarikh es-Soudan** parle de villes attaquées, pillées, forcées de payer ; la **Chronique de Kano**, rédigée plus tard par des Haoussas, garde au contraire un souvenir de relations d'égal à égal, ou de simples tributs. Les historiens modernes hésitent entre une vraie domination, une suzeraineté passagère et une série de grandes razzias. On sait seulement que l'influence songhaïe, forte vers 1513, ne dure pas, et que les Haoussas reprennent leur autonomie.\n\nÀ la même époque, **Léon l'Africain** (un voyageur né à Grenade et élevé à Fès) visite les cités du Soudan. Dans sa « Description de l'Afrique » (1550), il décrit Tombouctou, Gao, Agadez, Kano et Katsina comme de riches villes marchandes, où l'or circule et où l'on vend des livres. Ses pages sont notre témoignage extérieur le plus précieux.",
+      "consequences": [
+        "Diara et le Galam, à l'ouest, versent un tribut ou subissent des raids songhaïs.",
+        "Katsina et Kano, cités haoussas, sont attaquées et tributaires pour un temps (statut discuté).",
+        "L'empire étire ses lignes sur plus de 2 000 km, du Galam aux marges du Bornou.",
+        "Léon l'Africain en rapporte une description européenne du Soudan."
+      ],
+      "territory": "haoussas-1513",
+      "territoryNote": "Vers 1513, l'empire est à son maximum de portée : le Niger de Dendi à Djenné et le Macina, l'Aïr et Agadez, Teghaza, auxquels s'ajoutent à l'ouest Diara (Nara, Sahel malien) et le Galam (haut Sénégal, tributaires), et à l'est Katsina et Kano (Nigeria, vassaux pour un temps, statut discuté : à dessiner en vassal). Voisins : le Mali, replié à l'ouest (haut Niger, Manden), indépendant ; les États mossis (Yatenga, Ouagadougou), indépendants ; les Dogons, indépendants ; le Kebbi et les autres cités haoussas (Zaria, Gobir), indépendants ; le Bornou (Kanem-Bornou), indépendant ; Oualata et les Berbères du Sahara, indépendants ; le Maroc, alors en pleine crise (Wattassides), très éloigné.",
+      "figures": [
+        {
+          "name": "Askia Mohammed",
+          "role": "Maître du Niger et du Sahel",
+          "faction": "songhais",
+          "archetype": "askia",
+          "quote": "(formule libre) Qu'on me paie le tribut ou qu'on voie mes cavaliers",
+          "position": [
+            2,
+            14.5
+          ],
+          "person": "askia-mohammed"
+        },
+        {
+          "name": "Léon l’Africain",
+          "role": "Voyageur, auteur de la Description de l’Afrique",
+          "faction": "arabes",
+          "archetype": "diplomate",
+          "quote": "Selon Léon l'Africain (paraphrase) : à Tombouctou, on vend plus de livres que de tout autre produit",
+          "position": [
+            -3,
+            16.77
+          ],
+          "person": "leon-l-africain"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Empire songhaï",
+          "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+        },
+        {
+          "label": "Wikipédia — Léon l’Africain",
+          "url": "https://fr.wikipedia.org/wiki/L%C3%A9on_l%E2%80%99Africain"
+        },
+        {
+          "label": "Wikipédia — Kano",
+          "url": "https://fr.wikipedia.org/wiki/Kano"
+        }
+      ]
+    },
+    {
+      "id": "kebbi-1516",
+      "year": 1516,
+      "title": "La révolte du Kebbi de Kanta",
+      "type": "bataille",
+      "location": [
+        4.5,
+        12.9
+      ],
+      "zoom": 4.6,
+      "summary": "Vers 1516, Kanta Kotal, chef du Kebbi, se révolte contre l'Askia et repousse son armée. Le Songhaï perd ses tributs haoussas et son avancée vers l'est s'arrête.",
+      "details": "Le **Kebbi**, un pays du Nigeria actuel, à la frontière des Haoussas, est confié à un chef nommé **Kanta Kotal** (dont les origines sont discutées : il serait d'abord un auxiliaire de l'Askia, selon certains récits). À partir de 1516 environ, Kanta se révolte : il refuse le tribut, bâtit sa capitale à **Surame** et se fait roi de plein droit.\n\nL'Askia Mohammed lance une expédition, vers 1516-1517, contre lui. D'après le **Tarikh es-Soudan**, l'armée songhaïe, épuisée par la longue marche le long du Niger, est battue ou doit renoncer ; Kanta s'impose. Les détails du combat sont mal connus, et les dates varient selon les auteurs. Plus tard, Kanta fera du Kebbi un puissant royaume, qui attaque le Bornou, Katsina et Agadez.\n\nPour l'Askia, la défaite est lourde : il perd les tributs de l'est, et les Haoussas retrouvent leur indépendance. Elle prouve aussi que la longue route du Niger, avec plus de 1 000 km de pistes, limite les conquêtes. À partir de là, l'Askia ne cherche plus à étendre l'empire dans cette direction. Les cavaliers du Kebbi portent ici les figurines songhaï : Kanta aurait d'abord servi l'Askia.",
+      "consequences": [
+        "Le Kebbi devient indépendant, et avec lui les routes et tributs haoussas de l'est.",
+        "Katsina et Kano échappent à toute tutelle songhaïe.",
+        "L'influence sur Agadez et l'Aïr devient plus lâche.",
+        "L'empire se stabilise autour du Niger, de Dendi au Macina, sans grande conquête nouvelle."
+      ],
+      "territory": "kebbi-1516",
+      "territoryNote": "Après 1516, l'empire se réduit à son noyau : le Niger du pays Dendi (Niger actuel) à Gao, Tombouctou, le lac Débo, Djenné et le Macina, avec Teghaza au nord, l'Aïr et Agadez (nominalement tributaires, statut incertain), et Diara et le Galam à l'ouest (tributaires lointains). Voisins : le Kebbi de Kanta (Birnin Kebbi, Surame, Nigeria), indépendant ; les cités haoussas (Kano, Katsina), indépendantes ; le Bornou, indépendant ; le Mali, replié à l'ouest, indépendant ; les États mossis (Yatenga, Ouagadougou), indépendants ; les Dogons, indépendants ; Oualata et les Berbères du Sahara, indépendants.",
+      "battle": {
+        "belligerents": [
+          "Songhaï de l’Askia Mohammed",
+          "Kebbi de Kanta Kotal (révolté contre l'Askia)"
+        ],
+        "commanders": [
+          "Askia Mohammed (ou son fils, selon les récits)",
+          "Kanta Kotal"
+        ],
+        "outcome": "Échec de l'Askia ; le Kebbi devient indépendant et les Haoussas retrouvent leur autonomie",
+        "forces": "Inconnues",
+        "losses": "Lourdes pour l'armée songhaïe, selon le Tarikh"
+      },
+      "armies": [
+        {
+          "side": "Songhaï de l’Askia",
+          "from": "Gao",
+          "faction": "songhais",
+          "path": [
+            [
+              0.05,
+              16.27
+            ],
+            [
+              0.9,
+              15
+            ],
+            [
+              2.1,
+              13.5
+            ],
+            [
+              3.5,
+              13
+            ],
+            [
+              4.5,
+              12.9
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Kebbi de Kanta (cavaliers haoussas)",
+          "from": "Surame",
+          "faction": "songhais",
+          "path": [
+            [
+              5.3,
+              13.2
+            ],
+            [
+              4.5,
+              12.9
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Kanta Kotal",
+          "role": "Chef du Kebbi, rebelle",
+          "faction": "mossis",
+          "archetype": "roi",
+          "quote": "(formule libre) Le Kebbi n'a plus de maître que moi",
+          "position": [
+            4.6,
+            12.95
+          ],
+          "person": "kanta-kotal"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Empire songhaï",
+          "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+        },
+        {
+          "label": "Wikipédia — Kano",
+          "url": "https://fr.wikipedia.org/wiki/Kano"
+        },
+        {
+          "label": "Wikipédia — Askia Mohammed Ier",
+          "url": "https://fr.wikipedia.org/wiki/Askia_Mohammed_Ier"
+        }
+      ]
+    },
+    {
+      "id": "deposition-1528",
+      "year": 1528,
+      "title": "L'Askia Mohammed déposé par son fils",
+      "type": "politique",
+      "location": [
+        0.05,
+        16.27
+      ],
+      "zoom": 4.5,
+      "summary": "En 1528, l'Askia Mohammed, vieux et aveugle, est déposé par son fils Moussa. L'empire est alors à son apogée, mais les querelles de famille commencent.",
+      "details": "Après trente-cinq ans de règne, l'**Askia Mohammed** est très âgé, probablement plus de quatre-vingts ans, et aveugle. Il a fait de son empire le plus vaste de l'histoire ouest-africaine : du pays Dendi au Macina, de Tombouctou à Teghaza, avec Agadez et d'autres régions vassales. Mais ses fils, impatients, se disputent la succession.\n\nLe **Tarikh es-Soudan** raconte la scène, mais les détails varient : en 1528, son fils **Moussa**, aidé de ses frères, le renverse. L'ancien Askia est envoyé sur une île du Niger, pour y vivre en reclus, avec des égards. Moussa règne à son tour, mais il se montre dur. Il est assassiné en 1531 dans un complot de ses frères. Un autre fils, **Mohammed Benkan**, prend sa place. Pendant une vingtaine d'années, les Askia se succèdent dans la violence.\n\nMohammed mourra en 1538, à près de cent ans selon la chronique, et sera enterré à Gao dans le tombeau qui porte son nom, devenu un site de l'UNESCO. Son règne reste le modèle de l'État songhaï : une administration par provinces, une armée de métier, une religion organisée autour des lettrés. Mais la guerre entre frères affaiblit l'empire, qui ne se relèvera vraiment qu'avec l'Askia Daoud en 1549.",
+      "consequences": [
+        "L'empire garde sa taille maximale : du Dendi à Djenné et au Macina, avec Teghaza, l'Aïr et des régions vassales.",
+        "L'ancien Askia vit reclus jusqu'à sa mort en 1538.",
+        "Les fils se succèdent dans la violence : Moussa tué en 1531, puis Benkan et d'autres.",
+        "La guerre de famille ralentit l'administration et les conquêtes, sans les arrêter."
+      ],
+      "territory": "deposition-1528",
+      "territoryNote": "En 1528, l'empire est à son maximum durable : le Niger du pays Dendi (Niger actuel) à Gao, Tombouctou, le lac Débo, Djenné et le Macina, avec le Gourma, Teghaza (Mali actuel), et à l'est l'Aïr et Agadez (nominalement tributaires, statut incertain), Diara et le Galam à l'ouest (tributaires lointains). Voisins : le Kebbi de Kanta (Nigeria), indépendant ; les cités haoussas (Kano, Katsina), indépendantes ; le Bornou, indépendant ; le Mali, replié à l'ouest (haut Niger, Manden), indépendant ; les États mossis (Yatenga, Ouagadougou), indépendants ; les Dogons, indépendants ; Oualata et les Berbères du Sahara, indépendants ; le Maroc saadien (Marrakech), indépendant et lointain.",
+      "figures": [
+        {
+          "name": "Askia Mohammed",
+          "role": "Vieux roi aveugle, déposé",
+          "faction": "songhais",
+          "archetype": "askia",
+          "quote": "(formule libre) J'ai bâti un empire, mes fils le diviseront",
+          "position": [
+            0.05,
+            16.27
+          ],
+          "person": "askia-mohammed"
+        },
+        {
+          "name": "Askia Moussa",
+          "role": "Fils et successeur, règne 1528-1531",
+          "faction": "songhais",
+          "archetype": "askia",
+          "quote": "(formule libre) Le trône est à qui peut le garder",
+          "position": [
+            0.15,
+            16.3
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Askia Mohammed Ier",
+          "url": "https://fr.wikipedia.org/wiki/Askia_Mohammed_Ier"
+        },
+        {
+          "label": "Wikipédia — Empire songhaï",
+          "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+        },
+        {
+          "label": "Wikipédia — Tarikh es-Soudan",
+          "url": "https://fr.wikipedia.org/wiki/Tarikh_es-Soudan"
+        }
+      ]
+    },
+    {
+      "id": "daoud-1549",
+      "year": 1549,
+      "title": "Askia Daoud et l'âge d'or de Tombouctou",
+      "type": "politique",
+      "location": [
+        -3,
+        16.77
+      ],
+      "zoom": 5,
+      "summary": "En 1549, Daoud devient Askia pour trente-trois ans. Son règne paisible est l'âge d'or de Tombouctou : écoles, manuscrits, marchands et savants.",
+      "details": "Après vingt ans de guerres familiales, **Daoud**, fils de l'Askia Mohammed, accède au trône en 1549. Il règnera trente-trois ans, jusqu'en 1582, le plus long et le plus calme des règnes askias. Selon le **Tarikh es-Soudan**, c'est un homme pieux et généreux, qui protège les lettrés et passe pour aimer les livres.\n\nSous son autorité, **Tombouctou**, ville du fleuve et du sable, devient la capitale intellectuelle du Soudan. Dans les écoles de la mosquée de **Sankoré** et dans les maisons des familles de savants, on enseigne la grammaire, le droit, la théologie, les mathématiques et l'astronomie. Des copistes recopient les livres venus d'Afrique du Nord, d'Égypte et d'Arabie. Léon l'Africain, qui visite la ville quelques décennies plus tôt, note déjà que les livres s'y vendent mieux que toute autre marchandise.\n\nLa ville vit aussi de son marché : l'or du sud, le sel du nord, les étoffes d'Afrique du Nord, les captifs, le sel de Teghaza. Le **cadi** (juge musulman) de Tombouctou, issu de grandes familles de lettrés, rend justice. **Mahmoud Kâti**, un grand lettré, commence à rassembler les souvenirs qui deviendront le Tarikh el-Fettach. Les chiffres que l'on donne parfois (vingt-cinq mille étudiants, des centaines d'écoles) sont des estimations très larges.",
+      "consequences": [
+        "L'empire garde ses frontières : Niger de Dendi à Djenné et au Macina, Teghaza, Aïr et Agadez nominalement.",
+        "Tombouctou devient un centre de savoir de réputation internationale.",
+        "L'administration se stabilise autour de Gao, avec le cadi de Tombouctou comme figure de référence.",
+        "Les manuscrits copiés ou rédigés à Tombouctou forment la base des bibliothèques actuelles de la ville."
+      ],
+      "territory": "daoud-1549",
+      "territoryNote": "En 1549, l'empire est celui de 1528 : le Niger du pays Dendi (Niger actuel) à Gao, Tombouctou, le lac Débo, Djenné et le Macina, avec le Gourma, Teghaza (Mali actuel), l'Aïr et Agadez (nominalement tributaires), Diara et le Galam à l'ouest (tributaires lointains). Voisins : le Kebbi (Nigeria), indépendant ; les cités haoussas (Kano, Katsina), indépendantes ; le Bornou, indépendant ; le Mali, replié à l'ouest (haut Niger, Manden), indépendant ; les États mossis (Yatenga, Ouagadougou), indépendants ; les Dogons, indépendants ; Oualata et les Berbères du Sahara, indépendants ; le Maroc saadien (Marrakech, Fès), indépendant.",
+      "figures": [
+        {
+          "name": "Askia Daoud",
+          "role": "Askia de 1549 à 1582",
+          "faction": "songhais",
+          "archetype": "askia",
+          "quote": "(formule libre) Un royaume qui lit vaut mieux qu'un royaume qui combat",
+          "position": [
+            0.05,
+            16.27
+          ],
+          "person": "askia-daoud"
+        },
+        {
+          "name": "Mahmoud Kâti",
+          "role": "Lettré de Tombouctou, auteur du Tarikh el-Fettach",
+          "faction": "songhais",
+          "archetype": "sage",
+          "quote": "(formule libre) J'écris pour que nos petits-fils sachent d'où vient leur ville",
+          "position": [
+            -3.05,
+            16.8
+          ],
+          "person": "mahmoud-kati"
+        },
+        {
+          "name": "Un cadi de Tombouctou",
+          "role": "Juge musulman de la ville (figure type)",
+          "faction": "songhais",
+          "archetype": "prelat",
+          "quote": "(formule libre) La loi du fleuve est la même pour le marchand et pour le prince",
+          "position": [
+            -2.95,
+            16.75
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Tombouctou",
+          "url": "https://fr.wikipedia.org/wiki/Tombouctou"
+        },
+        {
+          "label": "Wikipédia — Manuscrits de Tombouctou",
+          "url": "https://fr.wikipedia.org/wiki/Manuscrits_de_Tombouctou"
+        },
+        {
+          "label": "Wikipédia — Empire songhaï",
+          "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+        }
+      ]
+    },
+    {
+      "id": "teghaza-1585",
+      "year": 1585,
+      "title": "Teghaza : le sel convoité par le Maroc",
+      "type": "politique",
+      "location": [
+        -4,
+        23.6
+      ],
+      "zoom": 4,
+      "summary": "Dès 1557, puis surtout vers 1585, le sultan saadien du Maroc veut les salines de Teghaza. L'or, le sel et la route du Sahara deviennent l'enjeu d'une rivalité qui conduit à Tondibi.",
+      "details": "**Teghaza**, en plein Sahara, est une ville de sel : des captifs y taillent de grandes dalles de sel gemme, que les caravanes emportent vers le Niger, où le sel vaut son poids d'or. Au XVIᵉ siècle, c'est l'une des richesses de l'Askia. Le **Maroc**, dominé au XVIᵉ siècle par la dynastie des **Saadiens**, veut la contrôler, pour le sel et pour accéder à l'or du Soudan.\n\nUne première tentative date de 1556-1557, au temps de l'Askia Daoud et du sultan Mohammed ech-Cheikh : des soldats marocains auraient occupé un temps Teghaza avant que la région ne revienne aux Songhaï, dans des conditions mal connues. Après la mort de Daoud en 1582, l'empire est affaibli par les querelles entre ses fils. **Ahmed al-Mansour**, sultan saadien depuis 1578, saisit l'occasion : il conquiert le Touat en 1583, puis revendique Teghaza.\n\nVers 1585, ses troupes occupent la ville, selon les sources marocaines, dont les dates sont discutées. Les exploitants se déplacent alors vers **Taoudeni**, plus au sud, qui reste songhaï jusqu'en 1591. Al-Mansour comprend que seule la conquête du Niger lui donnera l'or qu'il cherche ; il prépare discrètement l'armée de Djouder Pacha.",
+      "consequences": [
+        "Teghaza échappe au Songhaï ; l'exploitation du sel se déplace vers Taoudeni, plus au sud.",
+        "Le Maroc saadien contrôle désormais le nord du Sahara, de Marrakech à Teghaza et au Touat.",
+        "L'empire songhaï, privé d'une partie de son sel, perd des ressources et du prestige.",
+        "Ahmed al-Mansour prépare la conquête du Niger."
+      ],
+      "territory": "teghaza-1585",
+      "territoryNote": "En 1585, l'empire est celui de 1549 moins Teghaza : le Niger du pays Dendi (Niger actuel) à Gao, Tombouctou, le lac Débo, Djenné et le Macina, avec le Gourma, Taoudeni (Mali actuel, salines de remplacement) et, nominalement, l'Aïr et Agadez, Diara et le Galam. Teghaza (Mali actuel) est occupée par le Maroc saadien. Voisins : le Maroc saadien (Marrakech, Touat), indépendant et menaçant ; le Kebbi (Nigeria), indépendant ; les cités haoussas (Kano, Katsina) et le Bornou, indépendants ; le Mali, replié à l'ouest (haut Niger, Manden), indépendant ; les États mossis (Yatenga, Ouagadougou), indépendants ; les Dogons, indépendants ; Oualata et les Berbères du Sahara, indépendants.",
+      "figures": [
+        {
+          "name": "Ahmed al-Mansour",
+          "role": "Sultan saadien du Maroc (1578-1603)",
+          "faction": "marocains",
+          "archetype": "sultan",
+          "quote": "(formule libre) Le sel est au sud, l'or est au sud : le sud sera à moi",
+          "position": [
+            -8,
+            31.6
+          ],
+          "person": "ahmed-al-mansour"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Ahmed al-Mansour",
+          "url": "https://fr.wikipedia.org/wiki/Ahmed_al-Mansour"
+        },
+        {
+          "label": "Wikipédia — Empire songhaï",
+          "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+        },
+        {
+          "label": "Wikipédia — Bataille de Tondibi",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Tondibi"
+        }
+      ]
+    },
+    {
+      "id": "tondibi-1591",
+      "year": 1591,
+      "title": "Tondibi : l'arquebuse contre la cavalerie",
+      "type": "bataille",
+      "location": [
+        0,
+        16.75
+      ],
+      "zoom": 5.2,
+      "summary": "Le 13 mars 1591, à Tondibi, quelques milliers de Marocains armés d'arquebuses écrasent l'armée de l'Askia Ishaq II. Gao et Tombouctou tombent, et l'empire songhaï s'effondre.",
+      "details": "Depuis 1590, le sultan saadien **Ahmed al-Mansour** veut l'or du Soudan. Il envoie à travers le Sahara une armée d'environ quatre mille hommes, dont une grande part d'**arquebusiers**, avec des canons et des milliers de chameaux. Elle est menée par **Djouder Pacha**, un eunuque d'origine espagnole converti à l'islam. La traversée dure des mois, et beaucoup de soldats et de bêtes y périssent.\n\nÀ **Tondibi**, au nord de Gao, l'**Askia Ishaq II** l'attend avec une armée bien plus nombreuse, dont une forte cavalerie. Les chroniques donnent des chiffres variables, entre vingt mille et plus de quarante mille hommes. Selon certains récits, il fait précéder ses lignes d'un troupeau de bœufs pour rompre les rangs ennemis. Mais les détonations des arquebuses affolent les bêtes, qui se retournent contre les Songhaï. Les cavaliers, qui n'ont jamais affronté d'armes à feu, sont balayés.\n\nGao tombe, puis **Tombouctou**, en avril. Les Songhaï ne sont pas anéantis, mais leur empire se brise. Ishaq II meurt peu après, en fuite. Un nouvel Askia, **Nouh**, se replie au sud, dans le pays Dendi, et continue la guerre pendant des décennies. Les Marocains installent à Tombouctou un pachalik, c'est-à-dire un gouvernement militaire, qui perdra vite son lien avec Marrakech.",
+      "consequences": [
+        "Gao, Tombouctou et Djenné passent sous l'autorité des Marocains, qui tiennent la boucle du Niger.",
+        "Les Songhaï se replient dans le pays Dendi (Niger actuel), sous l'Askia Nouh, qui poursuit la guerre.",
+        "L'or du Soudan quitte progressivement les routes du Sahara pour la côte atlantique.",
+        "Tombouctou perd son rôle de capitale du savoir ; ses lettrés, dont Ahmed Baba, sont déportés au Maroc."
+      ],
+      "territory": "tondibi-1591",
+      "territoryNote": "Après Tondibi (mars-avril 1591), l'empire songhaï n'existe plus que dans l'est : le pays Dendi (Niger actuel, vallée du fleuve entre Ayorou, Say et Gaya, avec Kukiya) et le Gourma, base du nouvel Askia Nouh. Gao, Tombouctou, Djenné, le lac Débo et le Macina passent au Maroc saadien (pachalik de Tombouctou) ; ce territoire n'est pas songhaï. Voisins : le Maroc saadien (boucle du Niger, Teghaza, Touat), occupant ; le Kebbi (Nigeria), indépendant ; les cités haoussas (Kano, Katsina) et le Bornou, indépendants ; le Mali, replié à l'ouest (Manden), indépendant ; les États mossis (Yatenga, Ouagadougou), indépendants ; les Touaregs (Adrar, Aïr), indépendants ; les Dogons, indépendants.",
+      "battle": {
+        "belligerents": [
+          "Armée marocaine de Djouder Pacha",
+          "Armée songhaïe de l’Askia Ishaq II"
+        ],
+        "commanders": [
+          "Djouder Pacha",
+          "Askia Ishaq II"
+        ],
+        "outcome": "Victoire marocaine ; prise de Gao et de Tombouctou, fin de l'empire songhaï",
+        "forces": "Environ 4 000 Marocains (dont beaucoup d'arquebusiers) ; plusieurs dizaines de milliers de Songhaï selon les chroniques",
+        "losses": "Lourdes pour les Songhaï ; faibles pour les Marocains, selon les sources"
+      },
+      "armies": [
+        {
+          "side": "Marocains de Djouder Pacha",
+          "from": "Marrakech",
+          "faction": "marocains",
+          "path": [
+            [
+              -8,
+              31.6
+            ],
+            [
+              -5.7,
+              29.8
+            ],
+            [
+              -4,
+              23.6
+            ],
+            [
+              -3.9,
+              22.7
+            ],
+            [
+              -2.5,
+              19.5
+            ],
+            [
+              -1.4,
+              17
+            ],
+            [
+              0,
+              16.75
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Songhaï de l’Askia Ishaq II",
+          "from": "Gao",
+          "faction": "songhais",
+          "path": [
+            [
+              0.05,
+              16.27
+            ],
+            [
+              0,
+              16.75
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Djouder Pacha",
+          "role": "Chef de l’expédition marocaine",
+          "faction": "marocains",
+          "archetype": "pacha",
+          "quote": "(formule libre) Nos arquebuses feront ce que mille cavaliers ne peuvent",
+          "position": [
+            -0.2,
+            16.7
+          ],
+          "person": "djouder-pacha"
+        },
+        {
+          "name": "Askia Ishaq II",
+          "role": "Dernier grand Askia",
+          "faction": "songhais",
+          "archetype": "askia",
+          "quote": "(formule libre) Qu'ils viennent : le Niger a vu passer d'autres armées",
+          "position": [
+            0.15,
+            16.5
+          ],
+          "person": "askia-ishaq-ii"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Tondibi",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Tondibi"
+        },
+        {
+          "label": "Wikipédia — Empire songhaï",
+          "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+        },
+        {
+          "label": "Wikipédia — Ahmed al-Mansour",
+          "url": "https://fr.wikipedia.org/wiki/Ahmed_al-Mansour"
+        }
+      ]
+    }
+  ]
+}

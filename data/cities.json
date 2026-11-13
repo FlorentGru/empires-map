@@ -6213,7 +6213,14 @@
       16.27
     ],
     "founded": 800,
-    "rank": 2
+    "rank": 2,
+    "capitalOf": [
+      {
+        "empire": "songhai",
+        "from": 1430,
+        "to": 1591
+      }
+    ]
   },
   {
     "id": "djenne",
@@ -6245,7 +6252,8 @@
     "founded": 1100,
     "rank": 3,
     "empires": [
-      "mali"
+      "mali",
+      "songhai"
     ]
   },
   {
@@ -6281,7 +6289,8 @@
     "founded": 900,
     "rank": 3,
     "empires": [
-      "mali"
+      "mali",
+      "songhai"
     ]
   },
   {
@@ -6318,7 +6327,8 @@
     "destroyed": 1585,
     "rank": 3,
     "empires": [
-      "mali"
+      "mali",
+      "songhai"
     ]
   },
   {
@@ -6464,5 +6474,164 @@
     "empires": [
       "mali"
     ]
+  },
+  {
+    "id": "kobi",
+    "modern": "Kobi (localisation incertaine), Mali",
+    "names": [
+      {
+        "name": "Kobi"
+      }
+    ],
+    "coords": [
+      -3,
+      13.2
+    ],
+    "founded": 1400,
+    "rank": 3,
+    "empires": [
+      "songhai"
+    ]
+  },
+  {
+    "id": "anfao",
+    "modern": "Anfao (site discuté), Mali",
+    "names": [
+      {
+        "name": "Anfao"
+      }
+    ],
+    "coords": [
+      0.5,
+      15.5
+    ],
+    "founded": 1400,
+    "rank": 3,
+    "empires": [
+      "songhai"
+    ]
+  },
+  {
+    "id": "tondibi",
+    "modern": "Tondibi, Mali",
+    "names": [
+      {
+        "name": "Tondibi"
+      }
+    ],
+    "coords": [
+      0,
+      16.75
+    ],
+    "founded": 1400,
+    "rank": 3,
+    "empires": [
+      "songhai"
+    ]
+  },
+  {
+    "id": "agadez",
+    "modern": "Agadez, Niger",
+    "names": [
+      {
+        "name": "Agadez"
+      }
+    ],
+    "coords": [
+      7.99,
+      16.97
+    ],
+    "founded": 1100,
+    "rank": 3,
+    "empires": [
+      "songhai"
+    ]
+  },
+  {
+    "id": "kano",
+    "modern": "Kano, Nigeria",
+    "names": [
+      {
+        "name": "Kano"
+      }
+    ],
+    "coords": [
+      8.52,
+      12
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "songhai"
+    ]
+  },
+  {
+    "id": "katsina",
+    "modern": "Katsina, Nigeria",
+    "names": [
+      {
+        "name": "Katsina"
+      }
+    ],
+    "coords": [
+      7.6,
+      12.99
+    ],
+    "founded": 1100,
+    "rank": 3,
+    "empires": [
+      "songhai"
+    ]
+  },
+  {
+    "id": "taoudeni",
+    "modern": "Taoudeni, Mali (mines de sel)",
+    "names": [
+      {
+        "name": "Taoudeni"
+      }
+    ],
+    "coords": [
+      -3.98,
+      22.68
+    ],
+    "founded": 1585,
+    "rank": 3,
+    "empires": [
+      "songhai"
+    ]
+  },
+  {
+    "id": "surame",
+    "modern": "Surame, Nigeria",
+    "names": [
+      {
+        "name": "Surame"
+      }
+    ],
+    "coords": [
+      4.5,
+      12.9
+    ],
+    "founded": 1516,
+    "rank": 3,
+    "empires": [
+      "songhai"
+    ]
+  },
+  {
+    "id": "marrakech",
+    "modern": "Marrakech, Maroc",
+    "names": [
+      {
+        "name": "Marrakech"
+      }
+    ],
+    "coords": [
+      -8,
+      31.63
+    ],
+    "founded": 1070,
+    "rank": 2
   }
 ]

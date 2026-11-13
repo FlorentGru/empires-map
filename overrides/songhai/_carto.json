@@ -1,0 +1,847 @@
+{
+ "empire": "songhai",
+ "basemapNote": "Empire composé (fromCarto) : pays Natural Earth 1:50m (Mali, Niger, Burkina Faso, Nigeria, Mauritanie, Algérie, Sénégal) découpés par des régions nommées (_regions.geojson) suivant le Niger moyen, de Djenné au Dendi. Aïr et Agadez, Diara, Galam et Katsina-Kano (1513) tributaires. Teghaza et Taoudeni (sel) ne sont que des points de contrôle, hors territoire. Frontières approximatives.",
+ "steps": [
+  {
+   "id": "gao-1430",
+   "year": 1430,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire songhaï",
+     "status": "core",
+     "source": {
+      "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+      "region": "Gao et Dendi 1430"
+     }
+    }
+   ],
+   "notes": "Le royaume songhaï de 1430 est étroit : Gao et la rive du Niger entre Bourem et Ansongo (Mali actuel), avec le pays Dendi plus au sud (Niger actuel, vallée du fleuve entre Ayorou et Gaya, où se trouva"
+  },
+  {
+   "id": "sonni-ali-1464",
+   "year": 1464,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire songhaï",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gao et Dendi 1430"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gourma"
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Le royaume de Sonni Ali en 1464 reste celui de Gao : la rive du Niger entre Bourem et Ansongo, avec le pays Dendi (vallée du fleuve en aval de Ayorou, Niger actuel) et ses premiers raids dans le Gourm"
+  },
+  {
+   "id": "tombouctou-1468",
+   "year": 1468,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire songhaï",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gao et Dendi 1430"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gourma"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Tombouctou et la boucle"
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Après 1468, le Songhaï tient la boucle du Niger de Gao à Tombouctou (Kabara, Bamba, Bourem, Rharous, Goundam) et le pays Dendi au sud-est, soit environ 900 km de fleuve. Voisins : le Mali, replié à l'"
+  },
+  {
+   "id": "djenne-1473",
+   "year": 1473,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire songhaï",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gao et Dendi 1430"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gourma"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Tombouctou et la boucle"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Delta intérieur, Djenné et Macina"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Tilemsi et Azawagh"
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "En 1473, le Songhaï tient tout le Niger moyen : Gao, Tombouctou, la boucle du fleuve, le lac Débo, Djenné, le delta intérieur et le Macina, de Bourem à Ségou-Mopti environ, avec le pays Dendi au sud-e"
+  },
+  {
+   "id": "kobi-1483",
+   "year": 1483,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire songhaï",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gao et Dendi 1430"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gourma"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Tombouctou et la boucle"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Delta intérieur, Djenné et Macina"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Tilemsi et Azawagh"
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "En 1483, l'empire de Sonni Ali s'étire le long du Niger, de l'aval du pays Dendi (Niger actuel) à Gao, Tombouctou, le lac Débo, Djenné et le Macina, avec des postes dans le Gourma et aux marges du pay"
+  },
+  {
+   "id": "sonni-ali-1492",
+   "year": 1492,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire songhaï",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gao et Dendi 1430"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gourma"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Tombouctou et la boucle"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Delta intérieur, Djenné et Macina"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Tilemsi et Azawagh"
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "À la mort de Sonni Ali en 1492, l'empire est celui de 1483 : le Niger du pays Dendi (Niger actuel, en aval d'Ayorou) à Gao, Tombouctou, le lac Débo, Djenné et le Macina, avec le Gourma sur la rive dro"
+  },
+  {
+   "id": "anfao-1493",
+   "year": 1493,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire songhaï",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gao et Dendi 1430"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gourma"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Tombouctou et la boucle"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Delta intérieur, Djenné et Macina"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Tilemsi et Azawagh"
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "En 1493, l'empire de Mohammed Touré est celui hérité de Sonni Ali : le Niger du pays Dendi (Niger actuel) à Gao, Tombouctou, le lac Débo, Djenné et le Macina, avec le Gourma. Voisins : le Mali, replié"
+  },
+  {
+   "id": "mecque-1496",
+   "year": 1496,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire songhaï",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gao et Dendi 1430"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gourma"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Tombouctou et la boucle"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Delta intérieur, Djenné et Macina"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Tilemsi et Azawagh"
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "En 1496, l'empire des Askia est celui de 1493 : le Niger du pays Dendi (Niger actuel) à Gao, Tombouctou, le lac Débo, Djenné et le Macina, avec le Gourma sur la rive droite. Voisins : le Mali, replié "
+  },
+  {
+   "id": "agadez-1501",
+   "year": 1501,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire songhaï",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gao et Dendi 1430"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gourma"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Tombouctou et la boucle"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Delta intérieur, Djenné et Macina"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Tilemsi et Azawagh"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Aïr et Agadez",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+      "region": "Aïr et Agadez"
+     }
+    }
+   ],
+   "notes": "Vers 1501, l'empire s'étend de l'aval du pays Dendi à Gao, Tombouctou, le lac Débo, Djenné et le Macina, auquel s'ajoutent à l'est l'Aïr et Agadez (Niger actuel, piste de Tadmekka à Agadez, tributaire"
+  },
+  {
+   "id": "haoussas-1513",
+   "year": 1513,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire songhaï",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gao et Dendi 1430"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gourma"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Tombouctou et la boucle"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Delta intérieur, Djenné et Macina"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Tilemsi et Azawagh"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Aïr et Agadez",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+      "region": "Aïr et Agadez"
+     }
+    },
+    {
+     "name": "Diara",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+      "region": "Diara"
+     }
+    },
+    {
+     "name": "Galam",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+      "region": "Galam"
+     }
+    },
+    {
+     "name": "Katsina et Kano",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+      "region": "Katsina et Kano"
+     }
+    }
+   ],
+   "notes": "Vers 1513, l'empire est à son maximum de portée : le Niger de Dendi à Djenné et le Macina, l'Aïr et Agadez, Teghaza, auxquels s'ajoutent à l'ouest Diara (Nara, Sahel malien) et le Galam (haut Sénégal,"
+  },
+  {
+   "id": "kebbi-1516",
+   "year": 1516,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire songhaï",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gao et Dendi 1430"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gourma"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Tombouctou et la boucle"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Delta intérieur, Djenné et Macina"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Tilemsi et Azawagh"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Aïr et Agadez",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+      "region": "Aïr et Agadez"
+     }
+    },
+    {
+     "name": "Diara",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+      "region": "Diara"
+     }
+    },
+    {
+     "name": "Galam",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+      "region": "Galam"
+     }
+    }
+   ],
+   "notes": "Après 1516, l'empire se réduit à son noyau : le Niger du pays Dendi (Niger actuel) à Gao, Tombouctou, le lac Débo, Djenné et le Macina, avec Teghaza au nord, l'Aïr et Agadez (nominalement tributaires,"
+  },
+  {
+   "id": "deposition-1528",
+   "year": 1528,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire songhaï",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gao et Dendi 1430"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gourma"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Tombouctou et la boucle"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Delta intérieur, Djenné et Macina"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Tilemsi et Azawagh"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Aïr et Agadez",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+      "region": "Aïr et Agadez"
+     }
+    },
+    {
+     "name": "Diara",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+      "region": "Diara"
+     }
+    },
+    {
+     "name": "Galam",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+      "region": "Galam"
+     }
+    }
+   ],
+   "notes": "En 1528, l'empire est à son maximum durable : le Niger du pays Dendi (Niger actuel) à Gao, Tombouctou, le lac Débo, Djenné et le Macina, avec le Gourma, Teghaza (Mali actuel), et à l'est l'Aïr et Agad"
+  },
+  {
+   "id": "daoud-1549",
+   "year": 1549,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire songhaï",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gao et Dendi 1430"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gourma"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Tombouctou et la boucle"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Delta intérieur, Djenné et Macina"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Tilemsi et Azawagh"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Aïr et Agadez",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+      "region": "Aïr et Agadez"
+     }
+    },
+    {
+     "name": "Diara",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+      "region": "Diara"
+     }
+    },
+    {
+     "name": "Galam",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+      "region": "Galam"
+     }
+    }
+   ],
+   "notes": "En 1549, l'empire est celui de 1528 : le Niger du pays Dendi (Niger actuel) à Gao, Tombouctou, le lac Débo, Djenné et le Macina, avec le Gourma, Teghaza (Mali actuel), l'Aïr et Agadez (nominalement tr"
+  },
+  {
+   "id": "teghaza-1585",
+   "year": 1585,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire songhaï",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gao et Dendi 1430"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gourma"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Tombouctou et la boucle"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Delta intérieur, Djenné et Macina"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Tilemsi et Azawagh"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Aïr et Agadez",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+      "region": "Aïr et Agadez"
+     }
+    },
+    {
+     "name": "Diara",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+      "region": "Diara"
+     }
+    },
+    {
+     "name": "Galam",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+      "region": "Galam"
+     }
+    }
+   ],
+   "notes": "En 1585, l'empire est celui de 1549 moins Teghaza : le Niger du pays Dendi (Niger actuel) à Gao, Tombouctou, le lac Débo, Djenné et le Macina, avec le Gourma, Taoudeni (Mali actuel, salines de remplac"
+  },
+  {
+   "id": "tondibi-1591",
+   "year": 1591,
+   "mode": "compose",
+   "entities": [
+    {
+     "name": "Empire songhaï",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Dendi 1591"
+       },
+       {
+        "country": "^(Mali|Niger|Burkina Faso|Nigeria|Mauritania|Algeria|Senegal)$",
+        "region": "Gourma"
+       }
+      ]
+     }
+    }
+   ],
+   "notes": "Après Tondibi (mars-avril 1591), l'empire songhaï n'existe plus que dans l'est : le pays Dendi (Niger actuel, vallée du fleuve entre Ayorou, Say et Gaya, avec Kukiya) et le Gourma, base du nouvel Aski"
+  }
+ ],
+ "checkpoints": [
+  {
+   "name": "Gao",
+   "pt": [
+    -0.04,
+    16.27
+   ],
+   "where": "core",
+   "from": "gao-1430",
+   "to": "teghaza-1585"
+  },
+  {
+   "name": "Gao",
+   "pt": [
+    -0.04,
+    16.27
+   ],
+   "where": "not-core",
+   "from": "tondibi-1591"
+  },
+  {
+   "name": "Kukiya",
+   "pt": [
+    1,
+    14.73
+   ],
+   "where": "core"
+  },
+  {
+   "name": "Niamey",
+   "pt": [
+    2.11,
+    13.51
+   ],
+   "where": "core"
+  },
+  {
+   "name": "Tombouctou",
+   "pt": [
+    -3,
+    16.77
+   ],
+   "where": "not-core",
+   "from": "gao-1430",
+   "to": "sonni-ali-1464"
+  },
+  {
+   "name": "Tombouctou",
+   "pt": [
+    -3,
+    16.77
+   ],
+   "where": "core",
+   "from": "tombouctou-1468",
+   "to": "teghaza-1585"
+  },
+  {
+   "name": "Tombouctou",
+   "pt": [
+    -3,
+    16.77
+   ],
+   "where": "not-core",
+   "from": "tondibi-1591"
+  },
+  {
+   "name": "Djenné",
+   "pt": [
+    -4.55,
+    13.91
+   ],
+   "where": "not-core",
+   "from": "gao-1430",
+   "to": "tombouctou-1468"
+  },
+  {
+   "name": "Djenné",
+   "pt": [
+    -4.55,
+    13.91
+   ],
+   "where": "core",
+   "from": "djenne-1473",
+   "to": "teghaza-1585"
+  },
+  {
+   "name": "Djenné",
+   "pt": [
+    -4.55,
+    13.91
+   ],
+   "where": "not-core",
+   "from": "tondibi-1591"
+  },
+  {
+   "name": "Mopti",
+   "pt": [
+    -4.2,
+    14.49
+   ],
+   "where": "not-core",
+   "from": "gao-1430",
+   "to": "tombouctou-1468"
+  },
+  {
+   "name": "Mopti",
+   "pt": [
+    -4.2,
+    14.49
+   ],
+   "where": "core",
+   "from": "djenne-1473",
+   "to": "teghaza-1585"
+  },
+  {
+   "name": "Mopti",
+   "pt": [
+    -4.2,
+    14.49
+   ],
+   "where": "not-core",
+   "from": "tondibi-1591"
+  },
+  {
+   "name": "Agadez",
+   "pt": [
+    7.99,
+    16.97
+   ],
+   "where": "not-core",
+   "from": "gao-1430",
+   "to": "mecque-1496"
+  },
+  {
+   "name": "Agadez",
+   "pt": [
+    7.99,
+    16.97
+   ],
+   "where": "vassal",
+   "from": "agadez-1501",
+   "to": "teghaza-1585"
+  },
+  {
+   "name": "Agadez",
+   "pt": [
+    7.99,
+    16.97
+   ],
+   "where": "not-core",
+   "from": "tondibi-1591"
+  },
+  {
+   "name": "Niani",
+   "pt": [
+    -8.4,
+    11.4
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Ouagadougou",
+   "pt": [
+    -1.52,
+    12.37
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Kano",
+   "pt": [
+    8.52,
+    12
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Birnin Kebbi",
+   "pt": [
+    4.2,
+    12.45
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Teghaza",
+   "pt": [
+    -4.95,
+    23.6
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Bamako",
+   "pt": [
+    -8,
+    12.65
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Zinder",
+   "pt": [
+    8.99,
+    13.8
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Kumasi",
+   "pt": [
+    -1.62,
+    6.69
+   ],
+   "where": "not-core"
+  }
+ ]
+}

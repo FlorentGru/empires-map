@@ -106,6 +106,7 @@ const PEOPLE: Record<Faction, string> = {
   touaregs: 'Touaregs',
   songhais: 'Songhaï',
   mossis: 'Mossis',
+  marocains: 'Marocains',
 };
 const esc = (v: string) => v.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const plain = (v: string) =>

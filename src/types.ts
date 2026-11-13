@@ -254,7 +254,9 @@ export type Faction =
   | 'sosso'
   | 'touaregs'
   | 'songhais'
-  | 'mossis';
+  | 'mossis'
+  // Empire songhaï
+  | 'marocains';
 
 export const FACTIONS: Faction[] = [
   'romains',
@@ -338,6 +340,7 @@ export const FACTIONS: Faction[] = [
   'touaregs',
   'songhais',
   'mossis',
+  'marocains',
 ];
 
 export type Archetype =
@@ -392,6 +395,8 @@ export type Archetype =
   | 'pacha'
   // Empire du Mali
   | 'mansa'
+  // Empire songhaï
+  | 'askia'
   // Tous empires : savant, philosophe (et figure du guide de l'Atlas)
   | 'sage';
 
@@ -440,6 +445,7 @@ export const ARCHETYPES: Archetype[] = [
   'shah',
   'pacha',
   'mansa',
+  'askia',
 ];
 
 export interface ArmyMove {
