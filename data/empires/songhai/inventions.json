@@ -1,0 +1,202 @@
+[
+  {
+    "id": "bibliotheques-askia",
+    "name": "Les bibliothèques familiales de Tombouctou",
+    "year": 1550,
+    "approx": true,
+    "place": "Tombouctou",
+    "at": [
+      -3,
+      16.77
+    ],
+    "inventor": "Familles de lettrés (Aqit, Kâti…)",
+    "category": "ecriture",
+    "description": "À l'âge d'or des Askia, les savants de Tombouctou transforment le livre en bien de famille : on le copie, on le prête, on le lègue. Ces bibliothèques privées, transmises de père en fils, rassemblent des copies venues du Maghreb et des textes écrits sur place. C'est une diffusion et une organisation du savoir, non une invention du livre.",
+    "impact": "Le livre devient un patrimoine familial et une marchandise : sans ces collections transmises de génération en génération, les manuscrits de Tombouctou n'auraient pas survécu jusqu'à nous.",
+    "sources": [
+      {
+        "label": "Wikipédia — Manuscrits de Tombouctou",
+        "url": "https://fr.wikipedia.org/wiki/Manuscrits_de_Tombouctou"
+      },
+      {
+        "label": "Wikipédia — Tombouctou",
+        "url": "https://fr.wikipedia.org/wiki/Tombouctou"
+      }
+    ]
+  },
+  {
+    "id": "sankore-universite",
+    "name": "L'université de Sankoré",
+    "year": 1500,
+    "approx": true,
+    "place": "Tombouctou",
+    "at": [
+      -3.01,
+      16.78
+    ],
+    "inventor": "Cadis et maîtres de Tombouctou",
+    "category": "science",
+    "description": "Autour de la mosquée de Sankoré, des maîtres enseignent à des élèves venus de tout le Soudan : droit, grammaire, théologie, astronomie. Il n'y a pas de bâtiment unique mais un réseau d'écoles où chaque maître délivre ses diplômes (ijaza). C'est une diffusion du modèle des universités musulmanes, adaptée au Niger.",
+    "impact": "Une université sans murs, faite de maîtres et de diplômes personnels, forme des juges et des savants pour toute l'Afrique de l'Ouest pendant des siècles.",
+    "sources": [
+      {
+        "label": "Wikipédia — Tombouctou",
+        "url": "https://fr.wikipedia.org/wiki/Tombouctou"
+      },
+      {
+        "label": "Wikipédia — Empire songhaï",
+        "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+      }
+    ]
+  },
+  {
+    "id": "administration-askia",
+    "name": "L'administration provinciale et les ministres",
+    "year": 1495,
+    "approx": true,
+    "place": "Gao",
+    "at": [
+      0.05,
+      16.27
+    ],
+    "inventor": "Askia Mohammed",
+    "category": "administration",
+    "description": "Après 1493, l'Askia Mohammed remplace le roi-guerrier itinérant par un État organisé. Des gouverneurs dirigent les grandes provinces (kurmina-fari à l'ouest, dendi-fari à l'est), des ministres gèrent la flotte (hi-koy), l'armée (balama) ou la justice. Les cadis appliquent le droit musulman. Les noms viennent des chroniques, qui en donnent des listes parfois divergentes.",
+    "impact": "Un empire de plus d'un million de km² est tenu sans cour itinérante : le pouvoir passe par des fonctions, non plus par la seule personne du roi.",
+    "sources": [
+      {
+        "label": "Wikipédia — Empire songhaï",
+        "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+      },
+      {
+        "label": "Wikipédia — Askia Mohammed Ier",
+        "url": "https://fr.wikipedia.org/wiki/Askia_Mohammed_Ier"
+      }
+    ]
+  },
+  {
+    "id": "armee-permanente",
+    "name": "L'armée permanente",
+    "year": 1495,
+    "approx": true,
+    "place": "Gao",
+    "at": [
+      0.1,
+      16.3
+    ],
+    "inventor": "Askia Mohammed",
+    "category": "militaire",
+    "description": "L'Askia Mohammed remplace en partie les levées saisonnières par des soldats de métier, entretenus par l'État et logés dans les provinces. À côté d'eux subsistent les contingents levés pour la guerre. Cette réforme, rapportée par les chroniques, donne au roi une force toujours disponible, mais encore sans armes à feu en 1591.",
+    "impact": "Le souverain dispose d'une troupe disponible toute l'année, ce qui rend possibles les grandes expéditions lointaines (Aïr, Galam, Hausa).",
+    "sources": [
+      {
+        "label": "Wikipédia — Empire songhaï",
+        "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+      },
+      {
+        "label": "Wikipédia — Askia Mohammed Ier",
+        "url": "https://fr.wikipedia.org/wiki/Askia_Mohammed_Ier"
+      }
+    ]
+  },
+  {
+    "id": "flotte-niger",
+    "name": "La flotte de pirogues de guerre du Niger",
+    "year": 1470,
+    "approx": true,
+    "place": "Gao",
+    "at": [
+      0.05,
+      16.27
+    ],
+    "inventor": "Sonni Ali (organisation), puis le Hi-koy",
+    "category": "navigation",
+    "description": "Sonni Ali organise une flotte de grandes pirogues de guerre, qui transportent troupes et vivres le long du Niger. Un grand officier, le hi-koy, la commande. Elle sert à encercler Tombouctou et Djenné et à bloquer les villes. Les pirogues existaient avant lui : il en fait un corps de bataille permanent, d'après les chroniques.",
+    "impact": "Tenir le fleuve revient à tenir les villes marchandes : la flotte fait du Niger une route de conquête et de ravitaillement.",
+    "sources": [
+      {
+        "label": "Wikipédia — Sonni Ali Ber",
+        "url": "https://fr.wikipedia.org/wiki/Sonni_Ali_Ber"
+      },
+      {
+        "label": "Wikipédia — Empire songhaï",
+        "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+      }
+    ]
+  },
+  {
+    "id": "poids-mesures",
+    "name": "Les poids et mesures unifiés",
+    "year": 1498,
+    "approx": true,
+    "place": "Tombouctou",
+    "at": [
+      -3,
+      16.77
+    ],
+    "inventor": "Askia Mohammed",
+    "category": "monnaie",
+    "description": "Au retour du pèlerinage, l'Askia Mohammed fait appliquer des mesures uniformes sur les marchés de son empire et nomme des inspecteurs chargés de contrôler les poids et la qualité des produits. L'or reste pesé en poudre, mais les mesures de grain et d'étoffe sont fixées. Cette réforme est rapportée par les chroniques, sans détails techniques.",
+    "impact": "Des marchés surveillés et des mesures communes, de Gao à Djenné, facilitent le commerce et limitent les fraudes dans tout l'empire.",
+    "sources": [
+      {
+        "label": "Wikipédia — Askia Mohammed Ier",
+        "url": "https://fr.wikipedia.org/wiki/Askia_Mohammed_Ier"
+      },
+      {
+        "label": "Wikipédia — Empire songhaï",
+        "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+      }
+    ]
+  },
+  {
+    "id": "tombeau-askia",
+    "name": "Le tombeau des Askia à Gao",
+    "year": 1500,
+    "approx": true,
+    "place": "Gao",
+    "at": [
+      0.05,
+      16.28
+    ],
+    "inventor": "Architectes de Gao (commande de l’Askia Mohammed)",
+    "category": "architecture",
+    "description": "À Gao, un monument pyramidal en terre crue, haut d'environ dix-sept mètres, abrite la tombe de l'Askia Mohammed. Des poutres de bois dépassent des murs, servant d'échafaudage permanent pour l'entretien. À côté se trouvent une mosquée et un cimetière. Daté traditionnellement de la fin du XVᵉ siècle, il est inscrit à l'UNESCO depuis 2004.",
+    "impact": "Un des rares grands monuments de l'empire encore debout : il montre un style soudano-sahélien propre au Songhaï, avec sa forme en pyramide et ses poutres saillantes.",
+    "sources": [
+      {
+        "label": "Wikipédia — Tombeau des Askia",
+        "url": "https://fr.wikipedia.org/wiki/Tombeau_des_Askia"
+      },
+      {
+        "label": "Wikipédia — Gao",
+        "url": "https://fr.wikipedia.org/wiki/Gao"
+      }
+    ]
+  },
+  {
+    "id": "astronomie-maths",
+    "name": "L'astronomie et les mathématiques des manuscrits",
+    "year": 1560,
+    "approx": true,
+    "place": "Tombouctou",
+    "at": [
+      -2.99,
+      16.76
+    ],
+    "inventor": "Lettrés de Tombouctou",
+    "category": "science",
+    "description": "Dans les manuscrits de Tombouctou, des traités d'astronomie, de calendrier, d'arithmétique et d'héritage mathématique servent à fixer les heures de prière, le début du ramadan, les partages de succession. Ces textes viennent surtout du monde arabe, copiés et commentés à Tombouctou. Il s'agit d'une transmission savante, pas d'une découverte locale.",
+    "impact": "Des savants d'Afrique de l'Ouest maîtrisent le calcul des astres et des héritages : le savoir circule à travers le Sahara, du Maghreb au Niger.",
+    "sources": [
+      {
+        "label": "Wikipédia — Manuscrits de Tombouctou",
+        "url": "https://fr.wikipedia.org/wiki/Manuscrits_de_Tombouctou"
+      },
+      {
+        "label": "Wikipédia — Tombouctou",
+        "url": "https://fr.wikipedia.org/wiki/Tombouctou"
+      }
+    ]
+  }
+]

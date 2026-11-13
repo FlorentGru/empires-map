@@ -1,0 +1,425 @@
+{
+  "empire": "songhai",
+  "periods": [
+    {
+      "id": "gao-affranchi",
+      "name": "Gao s'affranchit du Mali",
+      "start": 1430,
+      "end": 1464,
+      "population": {
+        "total": {
+          "value": 500000,
+          "low": 200000,
+          "high": 1000000,
+          "year": 1450,
+          "note": "Ordre de grandeur reconstruit pour un petit royaume fluvial ; aucun recensement.",
+          "source": {
+            "label": "Wikipédia : Empire songhaï",
+            "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+          }
+        },
+        "cities": [
+          {
+            "name": "Gao",
+            "population": {
+              "value": 8000,
+              "low": 3000,
+              "high": 20000,
+              "year": 1450,
+              "note": "Estimation très large ; aucune source chiffrée.",
+              "source": {
+                "label": "Wikipédia : Gao",
+                "url": "https://fr.wikipedia.org/wiki/Gao"
+              }
+            }
+          },
+          {
+            "name": "Tombouctou (touarègue)",
+            "population": {
+              "value": 8000,
+              "low": 3000,
+              "high": 15000,
+              "year": 1450,
+              "note": "Ville hors du royaume, tenue par les Touaregs ; ordre de grandeur.",
+              "source": {
+                "label": "Wikipédia : Tombouctou",
+                "url": "https://fr.wikipedia.org/wiki/Tombouctou"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Poisson et riz du fleuve",
+          "Mil et sorgho",
+          "Bétail",
+          "Droits sur les caravanes"
+        ],
+        "currency": "Poudre d'or, cauris et barres de sel ; pas de monnaie frappée.",
+        "taxation": "Tributs des villages, droits de passage sur le fleuve et les pistes, butin des razzias.",
+        "trade": "Gao, au débouché des pistes sahariennes, échange or, sel, cuivre et étoffes ; commerce réduit par la tutelle puis le départ du Mali."
+      },
+      "army": {
+        "size": {
+          "value": 3000,
+          "low": 1000,
+          "high": 6000,
+          "year": 1450,
+          "note": "Estimation reconstruite ; sources muettes.",
+          "source": {
+            "label": "Wikipédia : Empire songhaï",
+            "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+          }
+        },
+        "composition": "Cavaliers de la maison du roi, fantassins levés dans les villages, pirogues de guerre sur le Niger.",
+        "recruitment": "Levée sur les chefs de villages et clans ; captifs de guerre.",
+        "famousUnits": [
+          "Cavalerie des Sonni",
+          "Pirogues de Gao"
+        ],
+        "innovations": [
+          "Combat sur le fleuve",
+          "Raids de cavalerie lointains"
+        ]
+      },
+      "politics": {
+        "regime": "Royaume héréditaire de la dynastie des Sonni, mêlant cultes traditionnels et islam.",
+        "head": "Les rois sonni, dont Sonni Soliman Dama (noms et dates incertains).",
+        "succession": "Dans la famille sonni ; mal connue.",
+        "institutions": "Cour de Gao, chefs de clans, prêtres du culte songhaï, quelques lettrés musulmans.",
+        "administration": "Chefs locaux sur le fleuve ; pas encore de provinces organisées.",
+        "law": "Coutume songhaï ; droit musulman dans les villes marchandes."
+      },
+      "society": {
+        "religions": [
+          "Cultes traditionnels songhaï",
+          "Islam sunnite (malékite)"
+        ],
+        "languages": [
+          "Songhaï",
+          "Tamasheq (touareg)",
+          "Arabe"
+        ],
+        "structure": "Roi et clan sonni, nobles guerriers, pêcheurs et bateliers, marchands, captifs.",
+        "women": "Mal documentées ; statut protégé par la coutume, avec des reines-mères influentes selon la tradition."
+      },
+      "culture": {
+        "inventions": [
+          "Pirogues de guerre",
+          "Cavalerie fluviale"
+        ],
+        "works": [
+          "Traditions orales de Gao",
+          "Listes des rois sonni (Tarikh, XVIIᵉ siècle)"
+        ],
+        "scholars": [
+          "Imams et marabouts de Gao",
+          "Lettrés de Tombouctou (en exil ou sous les Touaregs)"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Port fluvial de Gao, pistes vers Tadmekka et le Sahara, villages le long du Niger."
+      },
+      "legacy": "Un petit royaume fluvial, sans lettrés ni grandes villes, qui prépare l'élan de Sonni Ali en gardant ses pirogues et sa cavalerie."
+    },
+    {
+      "id": "sonni-ali",
+      "name": "Sonni Ali, le conquérant",
+      "start": 1464,
+      "end": 1493,
+      "population": {
+        "total": {
+          "value": 2000000,
+          "low": 1000000,
+          "high": 4000000,
+          "year": 1480,
+          "note": "Ordre de grandeur reconstruit ; aucun recensement.",
+          "source": {
+            "label": "Wikipédia : Empire songhaï",
+            "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+          }
+        },
+        "cities": [
+          {
+            "name": "Gao",
+            "population": {
+              "value": 12000,
+              "low": 5000,
+              "high": 30000,
+              "year": 1480,
+              "note": "Estimation très large.",
+              "source": {
+                "label": "Wikipédia : Gao",
+                "url": "https://fr.wikipedia.org/wiki/Gao"
+              }
+            }
+          },
+          {
+            "name": "Tombouctou",
+            "population": {
+              "value": 15000,
+              "low": 7000,
+              "high": 30000,
+              "year": 1480,
+              "note": "Ville meurtrie en 1468 puis relevée ; ordre de grandeur.",
+              "source": {
+                "label": "Wikipédia : Tombouctou",
+                "url": "https://fr.wikipedia.org/wiki/Tombouctou"
+              }
+            }
+          },
+          {
+            "name": "Djenné",
+            "population": {
+              "value": 10000,
+              "low": 5000,
+              "high": 20000,
+              "year": 1480,
+              "note": "Marché du delta ; ordre de grandeur.",
+              "source": {
+                "label": "Wikipédia : Djenné",
+                "url": "https://fr.wikipedia.org/wiki/Djenn%C3%A9"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Or du sud (Bouré, Akan)",
+          "Sel de Teghaza",
+          "Riz et mil du delta",
+          "Cuivre, étoffes, captifs"
+        ],
+        "currency": "Poudre d'or, cauris, barres de sel, étoffes.",
+        "taxation": "Tributs des villes conquises, butin, droits sur le commerce ; domaines royaux cultivés par des captifs.",
+        "trade": "Contrôle du Niger de Gao à Djenné : le Songhaï tient le carrefour de l'or, du sel et des céréales."
+      },
+      "army": {
+        "size": {
+          "value": 10000,
+          "low": 5000,
+          "high": 30000,
+          "year": 1480,
+          "note": "Estimation ; les chroniques parlent surtout de « grandes armées » sans chiffres.",
+          "source": {
+            "label": "Wikipédia : Sonni Ali Ber",
+            "url": "https://fr.wikipedia.org/wiki/Sonni_Ali_Ber"
+          }
+        },
+        "composition": "Cavalerie lourde et légère, fantassins, grande flotte de pirogues de guerre.",
+        "recruitment": "Levée par régions, captifs, contingents de chefs soumis ; roi toujours en campagne.",
+        "famousUnits": [
+          "Cavalerie royale de Sonni Ali",
+          "Flotte du Niger",
+          "Garnison de Djenné"
+        ],
+        "innovations": [
+          "Guerre amphibie sur le Niger",
+          "Sièges prolongés par blocus",
+          "Campagnes sans capitale fixe"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie militaire personnelle, mêlant islam et cultes traditionnels.",
+        "head": "Sonni Ali Ber (1464-1492), puis Sonni Baro.",
+        "succession": "Père-fils ; contestée par les généraux et les lettrés en 1493.",
+        "institutions": "Cour de campagne du roi, gouverneurs militaires, quelques cadis ménagés.",
+        "administration": "Gouverneurs dans les villes conquises (Tombouctou, Djenné) ; pas encore de système provincial régulier.",
+        "law": "Coutume songhaï et décisions royales ; droit musulman limité, tension avec les lettrés."
+      },
+      "society": {
+        "religions": [
+          "Cultes traditionnels (sorcellerie, ancêtres)",
+          "Islam sunnite (malékite)"
+        ],
+        "languages": [
+          "Songhaï",
+          "Tamasheq",
+          "Arabe",
+          "Peul",
+          "Mandé"
+        ],
+        "structure": "Roi, guerriers, lettrés musulmans mal vus, marchands, pêcheurs, captifs ; tensions avec les clercs.",
+        "women": "Reines-mères et épouses puissantes selon la tradition ; femmes actives sur les marchés."
+      },
+      "culture": {
+        "inventions": [
+          "Flotte de guerre du Niger",
+          "Sièges par blocus"
+        ],
+        "works": [
+          "Récits de la prise de Tombouctou",
+          "Chroniques tardives sur Sonni Ali"
+        ],
+        "scholars": [
+          "Mohammed Naddi (gouverneur de Tombouctou)",
+          "Lettrés de Sankoré"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Fleuve Niger comme route principale, ports de Kabara et de Gao, pistes entre le delta et le désert."
+      },
+      "legacy": "Sonni Ali réunit en un seul État Gao, Tombouctou et Djenné, mais laisse une mémoire contrastée : héros pour le peuple, tyran pour les lettrés."
+    },
+    {
+      "id": "askia",
+      "name": "Les Askia",
+      "start": 1493,
+      "end": 1591,
+      "population": {
+        "total": {
+          "value": 5000000,
+          "low": 2000000,
+          "high": 10000000,
+          "year": 1530,
+          "note": "Ordre de grandeur pour un empire d'environ un million de km² ; aucun recensement.",
+          "source": {
+            "label": "Wikipédia : Empire songhaï",
+            "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+          }
+        },
+        "cities": [
+          {
+            "name": "Gao",
+            "population": {
+              "value": 30000,
+              "low": 10000,
+              "high": 75000,
+              "year": 1530,
+              "note": "Capitale ; estimation large selon Léon l'Africain et les chroniques.",
+              "source": {
+                "label": "Wikipédia : Gao",
+                "url": "https://fr.wikipedia.org/wiki/Gao"
+              }
+            }
+          },
+          {
+            "name": "Tombouctou",
+            "population": {
+              "value": 30000,
+              "low": 20000,
+              "high": 80000,
+              "year": 1550,
+              "note": "Certains auteurs avancent 100 000 : chiffre peu fiable.",
+              "source": {
+                "label": "Wikipédia : Tombouctou",
+                "url": "https://fr.wikipedia.org/wiki/Tombouctou"
+              }
+            }
+          },
+          {
+            "name": "Djenné",
+            "population": {
+              "value": 20000,
+              "low": 8000,
+              "high": 40000,
+              "year": 1530,
+              "note": "Marché du delta ; ordre de grandeur.",
+              "source": {
+                "label": "Wikipédia : Djenné",
+                "url": "https://fr.wikipedia.org/wiki/Djenn%C3%A9"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Or du Bouré et de l'Akan",
+          "Sel de Teghaza puis de Taoudeni",
+          "Riz, mil, bétail",
+          "Cuivre, étoffes, livres"
+        ],
+        "currency": "Poudre d'or, cauris, barres de sel ; poids et mesures unifiés sous l'Askia Mohammed.",
+        "taxation": "Tributs des provinces et des régions soumises, droits sur les caravanes, produit de domaines royaux cultivés par des captifs.",
+        "trade": "Plaque tournante de l'or, du sel, des céréales et des livres entre Maghreb et Soudan ; liens avec Fès et Le Caire."
+      },
+      "army": {
+        "size": {
+          "value": 30000,
+          "low": 12000,
+          "high": 43000,
+          "year": 1591,
+          "note": "Chiffres des chroniques, probablement gonflés.",
+          "source": {
+            "label": "Wikipédia : Bataille de Tondibi",
+            "url": "https://fr.wikipedia.org/wiki/Bataille_de_Tondibi"
+          }
+        },
+        "composition": "Cavalerie, fantassins, flotte de pirogues ; armée de métier à côté des levées.",
+        "recruitment": "Armée permanente de professionnels, levées provinciales, captifs ; pas d'armes à feu en nombre.",
+        "famousUnits": [
+          "Cavalerie de l'Askia",
+          "Flotte du Hi-koy",
+          "Garde royale",
+          "Armée de Tondibi"
+        ],
+        "innovations": [
+          "Armée permanente",
+          "Chefs de provinces militaires",
+          "Chaîne de commandement (balama, hi-koy)"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie musulmane administrative, fondée sur l'islam et le titre de calife du Takrur.",
+        "head": "Askia Mohammed (1493-1528), puis ses fils, Askia Daoud (1549-1582), Ishaq II (1588-1591).",
+        "succession": "Dans la famille askia, souvent par la violence entre frères ; déposition de 1528.",
+        "institutions": "Conseil de ministres, cadis de Tombouctou, secrétaires, grands officiers (fari, balama, hi-koy).",
+        "administration": "Provinces dirigées par des gouverneurs (kurmina-fari, dendi-fari, Tombouctou-koy) et ministres spécialisés.",
+        "provinces": {
+          "value": 6,
+          "low": 4,
+          "high": 10,
+          "year": 1530,
+          "unit": "grandes provinces",
+          "note": "Nombre approximatif de grandes provinces ; les régions tributaires ne sont pas comptées.",
+          "source": {
+            "label": "Wikipédia : Empire songhaï",
+            "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+          }
+        },
+        "law": "Droit musulman malékite, appliqué par les cadis ; coutumes songhaï ; conseils d'al-Maghili."
+      },
+      "society": {
+        "religions": [
+          "Islam sunnite (malékite)",
+          "Cultes traditionnels (minoritaires, surtout en campagne)"
+        ],
+        "languages": [
+          "Songhaï",
+          "Arabe (lettrés)",
+          "Tamasheq",
+          "Haoussa",
+          "Mandé"
+        ],
+        "structure": "Askia et famille royale, lettrés et cadis, marchands, guerriers, artisans, captifs cultivateurs.",
+        "women": "Épouses et mères d'Askia influentes ; femmes commerçantes ; lettrées rares mais attestées."
+      },
+      "culture": {
+        "inventions": [
+          "Bibliothèques familiales de Tombouctou",
+          "Système de poids et mesures",
+          "Administration provinciale",
+          "Tombeau de Gao en terre"
+        ],
+        "works": [
+          "Tarikh es-Soudan (1655)",
+          "Tarikh el-Fettach (vers 1664)",
+          "Nayl al-ibtihaj"
+        ],
+        "scholars": [
+          "Ahmed Baba",
+          "Mahmoud Kâti",
+          "Al-Maghili (visiteur)",
+          "Cadis de Tombouctou"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Niger comme grand axe, ports fluviaux, pistes vers Teghaza et Agadez, mosquées et palais en terre, tombeau des Askia à Gao."
+      },
+      "legacy": "Un État de savoirs et de marchés, vaincu en 1591 par les arquebuses marocaines ; Tombouctou en garde les manuscrits et la réputation."
+    }
+  ]
+}

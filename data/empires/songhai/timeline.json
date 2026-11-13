@@ -910,7 +910,7 @@
       ],
       "zoom": 4.6,
       "summary": "Vers 1516, Kanta Kotal, chef du Kebbi, se révolte contre l'Askia et repousse son armée. Le Songhaï perd ses tributs haoussas et son avancée vers l'est s'arrête.",
-      "details": "Le **Kebbi**, un pays du Nigeria actuel, à la frontière des Haoussas, est confié à un chef nommé **Kanta Kotal** (dont les origines sont discutées : il serait d'abord un auxiliaire de l'Askia, selon certains récits). À partir de 1516 environ, Kanta se révolte : il refuse le tribut, bâtit sa capitale à **Surame** et se fait roi de plein droit.\n\nL'Askia Mohammed lance une expédition, vers 1516-1517, contre lui. D'après le **Tarikh es-Soudan**, l'armée songhaïe, épuisée par la longue marche le long du Niger, est battue ou doit renoncer ; Kanta s'impose. Les détails du combat sont mal connus, et les dates varient selon les auteurs. Plus tard, Kanta fera du Kebbi un puissant royaume, qui attaque le Bornou, Katsina et Agadez.\n\nPour l'Askia, la défaite est lourde : il perd les tributs de l'est, et les Haoussas retrouvent leur indépendance. Elle prouve aussi que la longue route du Niger, avec plus de 1 000 km de pistes, limite les conquêtes. À partir de là, l'Askia ne cherche plus à étendre l'empire dans cette direction. Les figurines mossis, ici, représentent les cavaliers du Kebbi, faute d'une troupe dédiée aux Haoussas.",
+      "details": "Le **Kebbi**, un pays du Nigeria actuel, à la frontière des Haoussas, est confié à un chef nommé **Kanta Kotal** (dont les origines sont discutées : il serait d'abord un auxiliaire de l'Askia, selon certains récits). À partir de 1516 environ, Kanta se révolte : il refuse le tribut, bâtit sa capitale à **Surame** et se fait roi de plein droit.\n\nL'Askia Mohammed lance une expédition, vers 1516-1517, contre lui. D'après le **Tarikh es-Soudan**, l'armée songhaïe, épuisée par la longue marche le long du Niger, est battue ou doit renoncer ; Kanta s'impose. Les détails du combat sont mal connus, et les dates varient selon les auteurs. Plus tard, Kanta fera du Kebbi un puissant royaume, qui attaque le Bornou, Katsina et Agadez.\n\nPour l'Askia, la défaite est lourde : il perd les tributs de l'est, et les Haoussas retrouvent leur indépendance. Elle prouve aussi que la longue route du Niger, avec plus de 1 000 km de pistes, limite les conquêtes. À partir de là, l'Askia ne cherche plus à étendre l'empire dans cette direction. Les cavaliers du Kebbi portent ici les figurines songhaï : Kanta était lui-même un ancien lieutenant de l'Askia.",
       "consequences": [
         "Le Kebbi devient indépendant, et avec lui les routes et tributs haoussas de l'est.",
         "Katsina et Kano échappent à toute tutelle songhaïe.",
@@ -922,7 +922,7 @@
       "battle": {
         "belligerents": [
           "Songhaï de l’Askia Mohammed",
-          "Kebbi de Kanta Kotal (figurines mossis, faute de mieux)"
+          "Kebbi de Kanta Kotal (révolté contre l'Askia)"
         ],
         "commanders": [
           "Askia Mohammed (ou son fils, selon les récits)",
@@ -964,7 +964,7 @@
         {
           "side": "Kebbi de Kanta (cavaliers haoussas)",
           "from": "Surame",
-          "faction": "mossis",
+          "faction": "songhais",
           "path": [
             [
               5.3,
