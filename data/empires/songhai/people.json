@@ -1,0 +1,304 @@
+[
+  {
+    "id": "sonni-ali-ber",
+    "name": "Sonni Ali Ber",
+    "archetype": "roi",
+    "faction": "songhais",
+    "died": 1492,
+    "title": "Roi de Gao et premier grand conquérant du Niger",
+    "bio": "Sonni Ali, surnommé Ber (« le Grand »), règne sur Gao de 1464 à 1492. Il appartient à la dynastie des Sonni et se bat presque sans arrêt : contre les Touaregs, les Peuls du Gourma, les Dogons et les Mossis. Il comprend que le Niger est une route et crée une flotte de pirogues, avec une cavalerie qui longe les berges. Il prend Tombouctou en 1468 et Djenné en 1473, au terme d'un siège qui dure, dit-on, plus de sept ans. Les chroniques de Tombouctou, écrites au XVIIᵉ siècle par des lettrés musulmans, en font un tyran impie, qui maltraite les savants. Les historiens modernes jugent ce tableau partial : Sonni Ali respecte l'islam à sa manière, mêle cultes traditionnels et religion, et passe pour un sorcier invincible dans la tradition orale. Il meurt en novembre 1492, en revenant d'une campagne dans le Gourma, noyé ou malade selon les récits. Son fils Sonni Baro perd le trône l'année suivante, face à son ancien général Mohammed Touré. Sa mémoire reste vive dans la région : il est un héros populaire au Mali et au Niger.",
+    "keyFacts": [
+      "1464 : devient roi de Gao",
+      "1468 : prend Tombouctou, tenue par les Touaregs",
+      "Vers 1473 : obtient la reddition de Djenné après un long siège",
+      "Vers 1483 : repousse les Mossis à Kobi",
+      "6 novembre 1492 : meurt sur le chemin du retour d'une campagne dans le Gourma"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Sonni Ali Ber",
+        "url": "https://fr.wikipedia.org/wiki/Sonni_Ali_Ber"
+      }
+    ]
+  },
+  {
+    "id": "askia-mohammed",
+    "name": "Askia Mohammed (Mohammed Touré)",
+    "archetype": "askia",
+    "faction": "songhais",
+    "born": 1442,
+    "died": 1538,
+    "title": "Fondateur de la dynastie des Askia, calife du Takrur",
+    "bio": "Mohammed Touré, général de Sonni Ali, est né vers 1442 dans une famille d'origine soninké (peuple du Sahel). En avril 1493, il bat à Anfao le fils de son ancien maître, Sonni Baro, et prend le titre d'Askia. Il s'appuie sur les lettrés de Tombouctou, que Sonni Ali avait maltraités, et fait de l'islam le ciment de l'État. En 1496-1497, il accomplit le pèlerinage à La Mecque, avec une escorte et beaucoup d'or, et reçoit le titre de « calife du Takrur ». Il reçoit à Gao le juriste al-Maghili, organise l'administration en provinces, crée une armée permanente, fait appliquer des mesures uniformes dans les marchés et lance des campagnes contre les Mossis, Agadez, Diara, le Galam, les villes haoussas. L'échec face au Kebbi de Kanta, vers 1516, met fin à l'expansion. Vieux et aveugle, il est déposé en 1528 par son fils Moussa et meurt en 1538. Il est enterré à Gao dans le tombeau qui porte son nom, aujourd'hui inscrit au patrimoine mondial de l'UNESCO.",
+    "keyFacts": [
+      "Vers 1442 : naissance, famille d'origine soninké",
+      "12 avril 1493 : vainqueur de Sonni Baro à Anfao, devient Askia",
+      "1496-1497 : pèlerinage à La Mecque, titre de calife du Takrur",
+      "Vers 1500 : conquête d'Agadez et de l'Aïr",
+      "1528 : déposé par son fils Moussa ; mort en 1538"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Askia Mohammed Ier",
+        "url": "https://fr.wikipedia.org/wiki/Askia_Mohammed_Ier"
+      },
+      {
+        "label": "Wikipédia — Tombeau des Askia",
+        "url": "https://fr.wikipedia.org/wiki/Tombeau_des_Askia"
+      }
+    ]
+  },
+  {
+    "id": "askia-daoud",
+    "name": "Askia Daoud",
+    "archetype": "askia",
+    "faction": "songhais",
+    "died": 1582,
+    "title": "Askia de 1549 à 1582, protecteur des lettrés de Tombouctou",
+    "bio": "Daoud est un fils de l'Askia Mohammed. Il accède au trône en 1549, après vingt ans de querelles entre ses frères et demi-frères, et règne trente-trois ans, jusqu'à sa mort en 1582. Selon le Tarikh es-Soudan, c'est un souverain pieux, généreux, qui aime les livres, protège les lettrés de Tombouctou et leur fait des cadeaux. Sous son règne, l'empire est en paix relative, tire profit du commerce de l'or, du sel de Teghaza et des captifs, et Tombouctou devient un grand centre d'enseignement. Il mène quelques campagnes, notamment vers les Mossis et vers l'ouest, mais surtout il consolide l'administration créée par son père. Face à la menace du sultan marocain Mohammed ech-Cheikh, qui convoite les salines de Teghaza, il privilégie la diplomatie et les cadeaux. Sa mort ouvre une nouvelle période de querelles entre ses fils, qui affaiblit l'empire juste avant l'invasion marocaine de 1591. Son règne est considéré comme l'âge d'or des Askia.",
+    "keyFacts": [
+      "1549 : devient Askia après son frère Ishaq Ier",
+      "1549-1582 : trente-trois ans de règne, le plus calme des Askia",
+      "Protège les lettrés et les écoles de Tombouctou",
+      "Vers 1557 : gère la tension avec le Maroc au sujet de Teghaza",
+      "1582 : mort ; ses fils se disputent la succession"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Empire songhaï",
+        "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+      },
+      {
+        "label": "Wikipédia — Tombouctou",
+        "url": "https://fr.wikipedia.org/wiki/Tombouctou"
+      }
+    ]
+  },
+  {
+    "id": "askia-ishaq-ii",
+    "name": "Askia Ishaq II",
+    "archetype": "askia",
+    "faction": "songhais",
+    "died": 1591,
+    "title": "Dernier grand Askia, vaincu à Tondibi",
+    "bio": "Ishaq II est un fils de l'Askia Daoud. Il devient Askia en 1588, après plusieurs années de guerres entre frères qui ont brisé l'unité de l'empire. Le sultan saadien du Maroc, Ahmed al-Mansour, lui réclame un impôt sur le sel de Teghaza, puis prépare l'invasion. Ishaq II reçoit les ambassadeurs marocains et répond, selon la tradition, avec fierté. En 1591, à Tondibi, au nord de Gao, il affronte l'armée de Djouder Pacha avec une armée beaucoup plus nombreuse, surtout composée de cavaliers et de fantassins armés de lances et d'arcs. Les arquebuses marocaines brisent ses lignes. Gao tombe, puis Tombouctou. Il propose, dit-on, de verser un tribut aux Marocains, qui refusent. Il fuit vers le sud et meurt peu après, peut-être tué par les siens, selon des sources divergentes. Son frère Nouh continue la lutte dans le Dendi. Ishaq II reste dans la mémoire songhaï comme le roi qui a vu tomber l'empire, victime d'une arme que son armée n'avait jamais affrontée.",
+    "keyFacts": [
+      "1588 : accède au trône après une guerre entre frères",
+      "Reçoit les exigences d'Ahmed al-Mansour sur Teghaza",
+      "13 mars 1591 : battu à Tondibi par Djouder Pacha",
+      "1591 : fuit vers le sud ; il meurt peu après, les récits divergent"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Bataille de Tondibi",
+        "url": "https://fr.wikipedia.org/wiki/Bataille_de_Tondibi"
+      },
+      {
+        "label": "Wikipédia — Empire songhaï",
+        "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+      }
+    ]
+  },
+  {
+    "id": "ahmed-baba",
+    "name": "Ahmed Baba",
+    "archetype": "sage",
+    "faction": "songhais",
+    "born": 1556,
+    "died": 1627,
+    "title": "Grand lettré de Tombouctou, déporté au Maroc",
+    "bio": "Ahmed Baba naît en 1556 près de Tombouctou, dans une famille de lettrés berbères, les Aqit. Il étudie le droit musulman (le rite malékite), la grammaire, la théologie, auprès de maîtres dont Mohammed Baghayogho. Il écrit une quarantaine d'ouvrages, dont un dictionnaire biographique des lettrés du Soudan, le Nayl al-ibtihaj, et des traités de droit, de grammaire et de théologie. Après l'invasion marocaine de 1591, il refuse de se soumettre : en 1593-1594, il est arrêté avec d'autres lettrés et envoyé à Marrakech. Sa bibliothèque est pillée ; il affirme que ses 1 600 volumes étaient « la plus petite » de celles de ses collègues. Au Maroc, il enseigne et rédige. Il y est consulté sur de nombreuses questions de droit, notamment sur l'esclavage, qu'il condamne lorsqu'il frappe des musulmans libres. Libéré en 1608, il revient à Tombouctou, où il meurt en 1627. Il reste le symbole du savoir de Tombouctou, et son nom est donné à l'institut de recherche de la ville.",
+    "keyFacts": [
+      "1556 : naissance près de Tombouctou",
+      "1591 : refuse de se soumettre aux Marocains",
+      "1593-1594 : déporté à Marrakech, sa bibliothèque pillée",
+      "1608 : libéré et de retour à Tombouctou",
+      "1627 : mort à Tombouctou"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Ahmed Baba",
+        "url": "https://fr.wikipedia.org/wiki/Ahmed_Baba"
+      },
+      {
+        "label": "Wikipédia — Manuscrits de Tombouctou",
+        "url": "https://fr.wikipedia.org/wiki/Manuscrits_de_Tombouctou"
+      }
+    ]
+  },
+  {
+    "id": "mahmoud-kati",
+    "name": "Mahmoud Kâti",
+    "archetype": "sage",
+    "faction": "songhais",
+    "title": "Lettré de Tombouctou, auteur du Tarikh el-Fettach",
+    "bio": "Mahmoud Kâti est un lettré d'origine soninké né, selon la tradition, vers 1468, dans la région de Kâti (Mali actuel). Il vit à Tombouctou, où il enseigne et sert l'Askia Mohammed, qu'il accompagne dit-on dans certaines expéditions. Il rassemble les souvenirs de l'empire, les récits des vieillards, les généalogies et les chroniques. Son petit-fils, Ibn al-Mukhtar, en tire le Tarikh el-Fettach (« la chronique du chercheur »), qu'il achève vers 1664 : l'ouvrage est une source majeure sur le Songhaï, avec le Tarikh es-Soudan d'es-Saadi. Les historiens ont longtemps débattu de son attribution, et certains pensent que des passages ont été ajoutés après coup, pour des raisons politiques. Les dates de sa naissance et de sa mort restent incertaines : il serait mort après 1552, peut-être beaucoup plus tard. Le texte raconte l'histoire du Songhaï, surtout sous l'Askia Mohammed, et les premières années de Tombouctou. Il décrit aussi la fondation des familles de lettrés. Il permet de connaître la vie de la ville au XVIᵉ siècle.",
+    "keyFacts": [
+      "Vers 1468 : naissance, selon la tradition",
+      "Lettré de Tombouctou, proche de l'Askia Mohammed",
+      "Son petit-fils achève le Tarikh el-Fettach vers 1664",
+      "Une des deux grandes chroniques du Songhaï, avec le Tarikh es-Soudan"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Mahmoud Kâti",
+        "url": "https://fr.wikipedia.org/wiki/Mahmoud_K%C3%A2ti"
+      },
+      {
+        "label": "Wikipédia — Manuscrits de Tombouctou",
+        "url": "https://fr.wikipedia.org/wiki/Manuscrits_de_Tombouctou"
+      }
+    ]
+  },
+  {
+    "id": "es-saadi",
+    "name": "Abderrahmane es-Saadi",
+    "archetype": "sage",
+    "faction": "songhais",
+    "born": 1594,
+    "died": 1655,
+    "title": "Chroniqueur de Tombouctou, auteur du Tarikh es-Soudan",
+    "bio": "Abderrahmane es-Saadi naît en 1594 à Tombouctou, juste après la conquête marocaine, dans une famille de lettrés. Il devient imam, secrétaire et notable de la ville, et travaille pour les pachas marocains puis pour leurs successeurs. Vers 1655, il rédige le Tarikh es-Soudan (« la chronique du Soudan »), le récit le plus connu de l'histoire du Songhaï, depuis ses origines jusqu'au milieu du XVIIᵉ siècle. Il s'appuie sur les traditions orales, sur des documents et sur le Tarikh el-Fettach. C'est une source précieuse, mais partiale : l'auteur écrit un siècle après les faits, son milieu a souffert de Sonni Ali, et il tend à flatter les Askia et à noircir leurs rivaux. Les historiens doivent donc lire ses récits avec prudence, notamment pour Sonni Ali et pour les dates du XVᵉ siècle. Il meurt vers 1655. Son texte, découvert au XIXᵉ siècle par les voyageurs européens, a été traduit en français par Octave Houdas en 1900.",
+    "keyFacts": [
+      "1594 : naissance à Tombouctou",
+      "Imam et secrétaire de notables de la ville",
+      "Vers 1655 : rédige le Tarikh es-Soudan",
+      "Source principale (et partiale) sur Sonni Ali et les Askia"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Tarikh es-Soudan",
+        "url": "https://fr.wikipedia.org/wiki/Tarikh_es-Soudan"
+      },
+      {
+        "label": "Wikipédia — Abderrahmane es-Saadi",
+        "url": "https://fr.wikipedia.org/wiki/Abderrahmane_es-Saadi"
+      }
+    ]
+  },
+  {
+    "id": "leon-l-africain",
+    "name": "Léon l'Africain (al-Hassan al-Wazzan)",
+    "archetype": "diplomate",
+    "faction": "arabes",
+    "born": 1488,
+    "died": 1554,
+    "title": "Voyageur, auteur de la Description de l'Afrique",
+    "bio": "Al-Hassan al-Wazzan naît vers 1488 à Grenade et grandit à Fès, au Maroc, où sa famille s'est réfugiée. Jeune, il accompagne un oncle diplomate et visite le Soudan à deux reprises, vers 1510 et 1513 : Tombouctou, Gao, Agadez, sans doute d'autres villes, du temps de l'Askia Mohammed. En 1518, il est capturé par des corsaires et offert au pape Léon X, qui le fait baptiser sous le nom de Jean-Léon de Médicis. En Italie, il écrit en italien sa « Description de l'Afrique », publiée en 1550. Il y décrit Tombouctou, ses marchands, ses lettrés, le commerce de l'or et des livres, et le roi de Gao. Il y mêle récits d'expérience et informations de seconde main, avec des erreurs. Ce texte reste la meilleure description de l'Afrique de l'Ouest de l'époque par un témoin extérieur. On perd sa trace vers 1554 : il serait revenu en Afrique du Nord, selon certains auteurs, mais cela est incertain. Ses dates restent approximatives.",
+    "keyFacts": [
+      "Vers 1488 : naissance à Grenade, enfance à Fès",
+      "Vers 1510 et 1513 : voyages au Soudan (Tombouctou, Gao)",
+      "1518 : capturé par des corsaires, baptisé à Rome",
+      "1550 : publication de la Description de l'Afrique"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Léon l’Africain",
+        "url": "https://fr.wikipedia.org/wiki/L%C3%A9on_l%E2%80%99Africain"
+      }
+    ]
+  },
+  {
+    "id": "al-maghili",
+    "name": "al-Maghili",
+    "archetype": "sage",
+    "faction": "arabes",
+    "born": 1440,
+    "died": 1504,
+    "title": "Juriste du Touat, conseiller de l'Askia Mohammed",
+    "bio": "Muhammad ibn Abd al-Karim al-Maghili naît vers 1440 à Tlemcen, dans l'Algérie actuelle, et s'installe dans l'oasis du Touat, au Sahara. C'est un juriste sévère, connu pour ses positions intransigeantes : il fait détruire une synagogue du Touat et prône l'expulsion des juifs. Vers 1498, il se rend à Gao à l'invitation de l'Askia Mohammed, qui vient de rentrer du pèlerinage. Il répond à ses questions sur le gouvernement musulman : comment juger, comment lever l'impôt, comment traiter les cultes traditionnels, quand déclarer la guerre sainte. Ses réponses, appelées « les questions de l'Askia », circulent à Tombouctou et à Gao. L'Askia s'en inspire pour justifier ses campagnes contre les Mossis et réprimer les pratiques non musulmanes, tout en protégeant les marchands. Les historiens débattent de son influence réelle, qui reste difficile à mesurer. Il meurt vers 1504, au Touat. Son nom reste associé au conseil donné aux princes d'Afrique de l'Ouest, et ses textes sont étudiés encore aujourd'hui.",
+    "keyFacts": [
+      "Vers 1440 : naissance à Tlemcen",
+      "Vers 1498 : invité à Gao par l'Askia Mohammed",
+      "Auteur des « questions de l'Askia » sur le bon gouvernement musulman",
+      "Vers 1504 : mort au Touat"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Al-Maghili",
+        "url": "https://fr.wikipedia.org/wiki/Al-Maghili"
+      },
+      {
+        "label": "Wikipédia — Empire songhaï",
+        "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+      }
+    ]
+  },
+  {
+    "id": "kanta-kotal",
+    "name": "Kanta Kotal",
+    "archetype": "roi",
+    "faction": "mossis",
+    "title": "Fondateur du Kebbi, vainqueur de l’Askia",
+    "bio": "Kanta Kotal (ou Kanta) est le chef qui, vers 1516, fonde l'État du Kebbi, dans le nord-ouest du Nigeria actuel. Il vient, selon certains récits, de l'entourage de l'Askia Mohammed : il aurait commandé des troupes pour lui, à moins qu'il n'ait été un chef local confirmé par les Songhaï. Il refuse bientôt de payer le tribut. L'Askia envoie une armée, vers 1516-1517, qui échoue contre lui. Kanta s'installe à Surame, fortifie sa capitale avec de grands murs de terre, et lance des guerres contre ses voisins : Katsina, Kano, Zaria et le Bornou, ainsi que Agadez, dont il aurait pris le contrôle. Son État devient l'un des plus puissants du pays haoussa. Les dates de sa vie sont incertaines, et les sources, très rares, mélangent histoire et légende, notamment la Chronique de Kano et le Tarikh es-Soudan. Il aurait régné plusieurs dizaines d'années. Le Kebbi garde son indépendance jusqu'au XIXᵉ siècle. Dans cette fiche, les figurines mossis tiennent lieu de cavaliers haoussas, faute d'une troupe dédiée.",
+    "keyFacts": [
+      "Vers 1516 : se révolte contre l'Askia Mohammed",
+      "Vers 1516-1517 : repousse l'armée songhaïe",
+      "Fonde sa capitale à Surame",
+      "Mène des guerres contre Katsina, Kano, Zaria, le Bornou et Agadez"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Empire songhaï",
+        "url": "https://fr.wikipedia.org/wiki/Empire_songha%C3%AF"
+      },
+      {
+        "label": "Wikipédia — Kano",
+        "url": "https://fr.wikipedia.org/wiki/Kano"
+      }
+    ]
+  },
+  {
+    "id": "ahmed-al-mansour",
+    "name": "Ahmed al-Mansour",
+    "archetype": "sultan",
+    "faction": "marocains",
+    "born": 1549,
+    "died": 1603,
+    "title": "Sultan saadien du Maroc, conquérant du Niger",
+    "bio": "Ahmed al-Mansour, surnommé « le Victorieux » puis « le Doré » (ad-Dhahabi), naît en 1549 et règne sur le Maroc de 1578 à 1603. Il monte sur le trône après la bataille des Trois Rois (ou d'Oued el-Makhazin), où le roi du Portugal et deux autres rois sont tués. Sa victoire lui apporte un riche tribut de rançons, qu'il utilise pour moderniser son armée, avec des arquebuses, des canons et des renégats européens. Il veut l'or du Soudan : en 1583, il conquiert le Touat ; vers 1585, ses troupes prennent Teghaza ; en 1590, il envoie en secret une expédition au Niger, dirigée par Djouder Pacha. La victoire de Tondibi (1591) lui donne le contrôle de Gao, Tombouctou et Djenné. L'or du Soudan finance le palais d'El Badi, à Marrakech, bâti avec du marbre d'Italie. Les Marocains n'arrivent pas à gouverner un territoire si lointain : les pachas deviennent indépendants et l'empire songhaï ne reviendra pas. Il meurt de la peste en 1603.",
+    "keyFacts": [
+      "1578 : devient sultan après la bataille des Trois Rois",
+      "1583 : conquête du Touat",
+      "Vers 1585 : prise de Teghaza",
+      "1590-1591 : envoie Djouder Pacha, victoire de Tondibi",
+      "1603 : mort de la peste"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Ahmed al-Mansour",
+        "url": "https://fr.wikipedia.org/wiki/Ahmed_al-Mansour"
+      },
+      {
+        "label": "Wikipédia — Bataille de Tondibi",
+        "url": "https://fr.wikipedia.org/wiki/Bataille_de_Tondibi"
+      }
+    ]
+  },
+  {
+    "id": "djouder-pacha",
+    "name": "Djouder Pacha",
+    "archetype": "pacha",
+    "faction": "marocains",
+    "died": 1606,
+    "title": "Général marocain vainqueur de Tondibi",
+    "bio": "Djouder Pacha (Judar Pasha) est né en Espagne, dans la région d'Almería, vers 1550 ; capturé enfant, il est converti à l'islam et castré, selon la coutume des eunuques, avant d'entrer au service du sultan saadien. Il y devient un chef militaire en vue. En 1590, Ahmed al-Mansour lui confie la conquête du Niger. Il conduit une armée d'environ quatre mille hommes à travers le Sahara. Elle compte surtout des arquebusiers, avec des canons et des milliers de chameaux. Il bat l'Askia Ishaq II à Tondibi, le 13 mars 1591. Il prend Gao, puis Tombouctou. Il pille la ville et envoie de l'or au sultan. Mais l'armée est épuisée, la résistance songhaï continue, et le sultan, déçu de ses résultats, le remplace par d'autres pachas. Il revient au Maroc et meurt, assassiné en 1606, selon les sources. Les soldats qu'il avait laissés, les Arma, finissent par former une caste dirigeante propre à Tombouctou, qui domine la région pendant près de deux siècles. Ses dates de naissance sont approximatives.",
+    "keyFacts": [
+      "Vers 1550 : naissance en Espagne, capturé jeune et converti à l'islam",
+      "1590 : chef de l'expédition marocaine vers le Niger",
+      "13 mars 1591 : vainqueur de Tondibi",
+      "1591 : prend Gao et Tombouctou, puis est remplacé",
+      "1606 : mort, assassiné selon les sources"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Bataille de Tondibi",
+        "url": "https://fr.wikipedia.org/wiki/Bataille_de_Tondibi"
+      },
+      {
+        "label": "Wikipédia — Ahmed al-Mansour",
+        "url": "https://fr.wikipedia.org/wiki/Ahmed_al-Mansour"
+      }
+    ]
+  }
+]
