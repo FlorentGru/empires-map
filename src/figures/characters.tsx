@@ -877,6 +877,27 @@ export const CHARACTER_SPECS = {
       circ(18, 3.4, 1.1, '#c9473a', NS),
     front: rect(30, 5, 1.2, 40, WOOD) + circ(30.6, 5.4, 1.8, GOLD),
   },
+  askia: {
+    skin: '#6b3f24',
+    robe: '#2f3f7a',
+    body: WIDE,
+    deco:
+      path('M11.4 18.6Q18 22.8 24.6 18.6L25.2 20.6Q18 25 10.8 20.6Z', WHITE, NS) +
+      line('M10.6 25L13.8 31M25.4 25L22.2 31', WHITE, 0.8) +
+      circ(13.8, 35, 0.8, WHITE, NS) +
+      circ(18, 37, 0.8, WHITE, NS) +
+      circ(22.2, 35, 0.8, WHITE, NS) +
+      path('M10.2 22.6H25.8V24.4H10.2Z', '#3a7a4a', NS) +
+      line('M13.2 17.6Q18 22.6 22.8 17.6', GOLD, 1) +
+      circ(18, 22.6, 1.1, GOLD, NS) +
+      line('M8.8 42H27.2', WHITE, 0.6),
+    head:
+      path('M11.2 8.4Q10.6 1.2 18 0.2Q25.4 1.2 24.8 8.4Q18 6 11.2 8.4Z', WHITE) +
+      path('M11.4 5.6Q18 3.4 24.6 5.6L24.8 8.2Q18 6.2 11.2 8.2Z', '#3a7a4a', NS) +
+      path('M23.6 3.4Q27.4 6.2 25.2 10.4L24.2 7.8Z', WHITE, NS) +
+      line('M12 9.8Q14 11 16 10.2', '#2a1a10', 0.5),
+    front: line('M10.2 21.4L9 25.6Q6.2 31.6 5 37.8', STEEL_C, 1) + circ(10.4, 21.6, 1.4, GOLD, NS),
+  },
 } satisfies Record<Archetype, CharSpec>;
 
 export function characterSvg(archetype: Archetype, tint?: string): string {
