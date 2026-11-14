@@ -1,0 +1,246 @@
+[
+  {
+    "id": "cothon",
+    "name": "Le Cothon, port circulaire de Carthage",
+    "year": -220,
+    "approx": true,
+    "place": "Carthage",
+    "at": [
+      10.33,
+      36.85
+    ],
+    "category": "architecture",
+    "description": "Le cothon est un port artificiel creusé à Carthage : un bassin circulaire de guerre avec un îlot central, relié à un port de commerce rectangulaire. Selon Appien, il pouvait abriter 220 navires, chiffre que les fouilles ne confirment pas toujours, et l'amiral logeait sur l'îlot. La date des états visibles (IIIᵉ siècle) est approximative. C'est une invention d'ingénierie militaire, non un simple abri.",
+    "impact": "Il permet d'abriter, de cacher et de réparer une grande flotte à l'abri des regards, ce qui donne à Carthage sa force navale et un contrôle exceptionnel de la mer.",
+    "sources": [
+      {
+        "label": "Wikipédia — Cothon",
+        "url": "https://fr.wikipedia.org/wiki/Cothon"
+      },
+      {
+        "label": "Wikipédia — Carthage",
+        "url": "https://fr.wikipedia.org/wiki/Carthage"
+      }
+    ]
+  },
+  {
+    "id": "navires-en-serie",
+    "name": "Les navires montés en série (épave de Marsala)",
+    "year": -241,
+    "approx": true,
+    "place": "Lilybée (Marsala), Sicile",
+    "at": [
+      12.43,
+      37.8
+    ],
+    "category": "technique",
+    "inventor": "Chantiers navals puniques",
+    "description": "L'épave d'un navire de guerre punique, trouvée au large de Marsala et coulée vers 241 av. J.-C., montre des planches marquées de lettres puniques indiquant leur place. Ces repères prouvent que les coques étaient montées à partir de pièces préfabriquées, selon une méthode proche de l'assemblage en série. La date est celle du naufrage ; la technique est sans doute plus ancienne.",
+    "impact": "Elle permet de construire et de réparer des navires très vite, avec des ouvriers peu formés : un avantage industriel avant la lettre pour une cité qui doit remplacer sans cesse ses flottes.",
+    "sources": [
+      {
+        "label": "Wikipédia — Épave de Marsala",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89pave_de_Marsala"
+      },
+      {
+        "label": "Wikipédia — Lilybée",
+        "url": "https://fr.wikipedia.org/wiki/Lilyb%C3%A9e"
+      }
+    ]
+  },
+  {
+    "id": "quinquereme",
+    "name": "La quinquérème",
+    "year": -399,
+    "approx": true,
+    "place": "Syracuse (adoptée par Carthage)",
+    "at": [
+      15.29,
+      37.07
+    ],
+    "category": "militaire",
+    "inventor": "Ingénieurs de Denys l'Ancien (attribution traditionnelle)",
+    "description": "La quinquérème est un grand navire de guerre à rameurs répartis sur trois niveaux (cinq hommes pour trois rangs de rames). Selon la tradition, elle apparaît à Syracuse vers 399, au temps de Denys l'Ancien. Carthage l'adopte et en fait son vaisseau de ligne. Il s'agit d'une diffusion plus qu'une invention carthaginoise. Rome copie un exemplaire carthaginois échoué, selon Polybe, en 261.",
+    "impact": "Elle rend les flottes plus puissantes et plus lourdes. Sa copie par Rome fait de la première guerre punique un duel naval, et prépare la naissance de la marine romaine.",
+    "sources": [
+      {
+        "label": "Wikipédia — Quinquérème",
+        "url": "https://fr.wikipedia.org/wiki/Quinqu%C3%A9r%C3%A8me"
+      },
+      {
+        "label": "Wikipédia — Première guerre punique",
+        "url": "https://fr.wikipedia.org/wiki/Premi%C3%A8re_guerre_punique"
+      }
+    ]
+  },
+  {
+    "id": "traite-agronomie",
+    "name": "Le traité d'agronomie de Magon",
+    "year": -200,
+    "approx": true,
+    "place": "Carthage",
+    "at": [
+      10.32,
+      36.85
+    ],
+    "category": "agriculture",
+    "inventor": "Magon l'agronome",
+    "description": "Magon rédige en punique un traité d'agriculture en vingt-huit livres, aujourd'hui perdu. Il y traite de la vigne, de l'olivier, des arbres fruitiers, de l'élevage et des abeilles. Après la chute de Carthage en 146, le Sénat romain le fait traduire en latin, selon Pline. Sa date exacte est inconnue : elle se situe entre le IVᵉ et le IIᵉ siècle av. J.-C.",
+    "impact": "C'est le grand manuel de l'agronomie antique : Varron et Columelle s'y réfèrent, et sa traduction transmet à Rome la science agricole punique.",
+    "sources": [
+      {
+        "label": "Wikipédia — Magon (agronome)",
+        "url": "https://fr.wikipedia.org/wiki/Magon_(agronome)"
+      },
+      {
+        "label": "Wikipédia — Agronomie",
+        "url": "https://fr.wikipedia.org/wiki/Agronomie"
+      }
+    ]
+  },
+  {
+    "id": "monnaie-punique",
+    "name": "La monnaie punique",
+    "year": -410,
+    "approx": true,
+    "place": "Sicile punique (Panorme, Motyé) puis Carthage",
+    "at": [
+      13.36,
+      38.12
+    ],
+    "category": "monnaie",
+    "description": "Carthage n'a longtemps pas frappé de monnaie : elle paie en argent pesé. Vers la fin du Vᵉ siècle, ses ateliers de Sicile frappent des pièces d'argent pour solder les mercenaires, imitant les monnaies grecques tout en gardant des symboles puniques, comme le cheval et le palmier. Carthage même frappe ensuite de l'or, de l'argent et du bronze. C'est surtout un instrument de guerre.",
+    "impact": "La monnaie permet de payer les mercenaires et de tenir de longues guerres. Elle diffuse aussi l'image de la cité (cheval, palmier, tête de Tanit) jusqu'en Espagne.",
+    "sources": [
+      {
+        "label": "Wikipédia — Monnaie carthaginoise",
+        "url": "https://fr.wikipedia.org/wiki/Monnaie_carthaginoise"
+      },
+      {
+        "label": "Wikipédia — Carthage",
+        "url": "https://fr.wikipedia.org/wiki/Carthage"
+      }
+    ]
+  },
+  {
+    "id": "pourpre-verre",
+    "name": "La pourpre et le verre",
+    "year": -500,
+    "approx": true,
+    "place": "Carthage et Meninx (Djerba)",
+    "at": [
+      10.32,
+      36.85
+    ],
+    "category": "technique",
+    "description": "La pourpre est une teinture rouge-violet extraite d'un coquillage, le murex, selon une technique venue de Tyr. Carthage en produit surtout dans les îles de Djerba et sur la côte. Elle fabrique aussi du verre moulé autour d'un noyau d'argile, pour des flacons et des perles. Il s'agit d'une diffusion de savoir-faire phéniciens vers l'Occident, non d'une invention carthaginoise.",
+    "impact": "Ces produits de luxe, vendus dans tout le monde méditerranéen, enrichissent les marchands. Le mot « phénicien » viendrait du grec « rouge pourpre ».",
+    "sources": [
+      {
+        "label": "Wikipédia — Pourpre",
+        "url": "https://fr.wikipedia.org/wiki/Pourpre"
+      },
+      {
+        "label": "Wikipédia — Verre",
+        "url": "https://fr.wikipedia.org/wiki/Verre"
+      }
+    ]
+  },
+  {
+    "id": "alphabet-punique",
+    "name": "L'alphabet punique",
+    "year": -650,
+    "approx": true,
+    "place": "Carthage",
+    "at": [
+      10.32,
+      36.85
+    ],
+    "category": "ecriture",
+    "description": "Carthage écrit la langue punique, une variante du phénicien, avec un alphabet de vingt-deux consonnes, sans voyelles. Hérité des Phéniciens, il vient du même alphabet que celui dont les Grecs tirent le leur. Il s'agit donc d'une diffusion plus que d'une invention. On le lit sur des stèles, des tarifs sacrificiels et des monnaies ; la littérature punique, elle, est presque entièrement perdue.",
+    "impact": "Facile à apprendre, il permet à des marchands de tenir des comptes et de signer des contrats, et prolonge dans l'Occident un système d'écriture devenu universel.",
+    "sources": [
+      {
+        "label": "Wikipédia — Alphabet phénicien",
+        "url": "https://fr.wikipedia.org/wiki/Alphabet_ph%C3%A9nicien"
+      },
+      {
+        "label": "Wikipédia — Langue punique",
+        "url": "https://fr.wikipedia.org/wiki/Langue_punique"
+      }
+    ]
+  },
+  {
+    "id": "periples-atlantiques",
+    "name": "Les périples atlantiques et le commerce de l'étain",
+    "year": -470,
+    "approx": true,
+    "place": "Gadès (Cadix) et côte atlantique",
+    "at": [
+      -6.29,
+      36.53
+    ],
+    "category": "navigation",
+    "inventor": "Hannon et Himilcon",
+    "description": "Vers le Vᵉ siècle (datation discutée), Hannon longe la côte africaine vers le sud et Himilcon remonte vers le nord, selon des textes tardifs. Carthage ferme le détroit de Gibraltar aux autres marins et tient secrètes les routes de l'étain, du métal et de l'or. Les récits ont été embellis, mais ils attestent une exploration atlantique réelle.",
+    "impact": "Elle ouvre aux Carthaginois les routes de l'étain, de l'or et de l'ivoire, et assure à la cité un monopole commercial maintenu par le secret.",
+    "sources": [
+      {
+        "label": "Wikipédia — Périple d'Hannon",
+        "url": "https://fr.wikipedia.org/wiki/P%C3%A9riple_d'Hannon"
+      },
+      {
+        "label": "Wikipédia — Himilcon",
+        "url": "https://fr.wikipedia.org/wiki/Himilcon"
+      }
+    ]
+  },
+  {
+    "id": "elephants-de-guerre",
+    "name": "Les éléphants de guerre carthaginois",
+    "year": -262,
+    "approx": true,
+    "place": "Agrigente, Sicile",
+    "at": [
+      13.58,
+      37.31
+    ],
+    "category": "militaire",
+    "description": "Carthage utilise des éléphants de guerre africains, plus petits que ceux d'Asie, dès le IIIᵉ siècle, à Agrigente en 262 selon Polybe. Elle les emprunte au monde hellénistique, qui les avait vus chez Pyrrhus et les successeurs d'Alexandre. Il s'agit d'une diffusion et d'une adaptation, pas d'une invention. Hannibal en emmène en Italie, où presque tous meurent de froid.",
+    "impact": "Les éléphants sèment la panique dans une armée qui ne les connaît pas, mais ils sont vite contrés : à Zama, Scipion ouvre des couloirs pour les laisser passer.",
+    "sources": [
+      {
+        "label": "Wikipédia — Éléphant de guerre",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89l%C3%A9phant_de_guerre"
+      },
+      {
+        "label": "Wikipédia — Bataille de Zama",
+        "url": "https://fr.wikipedia.org/wiki/Bataille_de_Zama"
+      }
+    ]
+  },
+  {
+    "id": "constitution-mixte",
+    "name": "La constitution mixte de Carthage",
+    "year": -340,
+    "approx": true,
+    "place": "Carthage",
+    "at": [
+      10.32,
+      36.85
+    ],
+    "category": "droit",
+    "description": "Carthage associe des suffètes élus, un Conseil des Anciens et une assemblée du peuple, avec un tribunal de Cent-Quatre juges contrôlant les généraux. Aristote, vers 340, la loue dans sa Politique : elle a évité, dit-il, tyrannies et révolutions, hormis quelques troubles. Polybe y voit plus tard un régime déjà décadent. C'est un régime politique, non une invention d'un seul auteur.",
+    "impact": "Elle mêle monarchie, aristocratie et démocratie, et inspire les réflexions grecques sur les régimes mixtes, que Polybe appliquera ensuite à Rome.",
+    "sources": [
+      {
+        "label": "Wikipédia — Constitution de Carthage",
+        "url": "https://fr.wikipedia.org/wiki/Constitution_de_Carthage"
+      },
+      {
+        "label": "Wikipédia — Carthage",
+        "url": "https://fr.wikipedia.org/wiki/Carthage"
+      }
+    ]
+  }
+]

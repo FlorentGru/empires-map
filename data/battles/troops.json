@@ -15,6 +15,31 @@
   "uncertain": true,
   "biome": "desert"
  },
+ "carthage/sicile-241": {
+  "troops": [
+   60000,
+   50000
+  ],
+  "uncertain": true,
+  "biome": "mer"
+ },
+ "carthage/cannes-216": {
+  "troops": [
+   50000,
+   80000
+  ],
+  "uncertain": true,
+  "biome": "mediterranee"
+ },
+ "carthage/zama-202": {
+  "troops": [
+   35000,
+   40000,
+   6000
+  ],
+  "uncertain": true,
+  "biome": "desert"
+ },
  "rome/teutobourg-9": {
   "troops": [
    18000,
