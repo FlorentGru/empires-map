@@ -274,6 +274,11 @@ export const FACTION_INFO: Record<Faction, FigureInfo> = {
     era: 'XVe – XVIe siècle',
     text: "Voisins et rivaux des Aztèques : Tépanèques d'Azcapotzalco, Tarasques du Michoacán, Mixtèques et Zapotèques d'Oaxaca, Huastèques. Tlaxcala, enclave jamais soumise, affronte les Aztèques dans les « guerres fleuries ». Ses milliers d'alliés rejoignent ensuite Cortés, sans lesquels la chute de Tenochtitlan n'aurait pas eu lieu. Les Tarasques, qui maîtrisent le travail du cuivre, infligent vers 1478 leur pire défaite aux Aztèques.",
   },
+  numides: {
+    label: 'Numides',
+    era: 'IIIe – Ier siècle av. J.-C.',
+    text: "Peuples berbères de l'actuelle Algérie et de l'ouest de la Tunisie, les Numides combattent à cru sur de petits chevaux, guidés sans mors, par la voix et une simple corde. Leur cavalerie légère harcèle l'ennemi à coups de javelots et feint la fuite pour l'attirer. Alliée de Carthage sous Hannibal, elle passe à Rome avec le roi Massinissa et contribue à la victoire de Zama (-202).",
+  },
   'francais-ancien-regime': {
     label: "Français d'Ancien Régime",
     era: 'XVIe – XVIIIe s.',

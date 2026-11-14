@@ -86,4 +86,5 @@ export const FACTION_COLORS = {
   mossis: '#6a8a3a',
   marocains: '#a8282a',
   mesoamericains: '#b02a22',
+  numides: '#b08a4a',
 } satisfies Record<Faction, string>;

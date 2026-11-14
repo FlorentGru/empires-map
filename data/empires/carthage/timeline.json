@@ -1,0 +1,1901 @@
+{
+  "id": "carthage",
+  "name": "Empire carthaginois",
+  "color": "#7a3a8a",
+  "start": -650,
+  "end": -146,
+  "description": "L'Empire carthaginois est l'œuvre de Carthage, cité fondée selon la légende par la princesse tyrienne Élissa (Didon) vers 814 av. J.-C., sur la côte de l'actuelle Tunisie. Héritière des Phéniciens de Tyr, elle prend la tête des comptoirs d'Occident et domine, vers 480, une mer de marchands : Afrique du Nord, Sardaigne, ouest de la Sicile, Baléares, Malte, côtes d'Espagne. Trois guerres contre Rome (264-146) l'épuisent ; Hannibal frôle la victoire à Cannes, puis tout s'effondre. En 146, Scipion Émilien rase la ville, et presque tout ce que nous savons d'elle vient de ses ennemis grecs et romains.",
+  "view": {
+    "center": [
+      9,
+      37
+    ],
+    "zoom": 4
+  },
+  "bounds": [
+    [
+      -12,
+      28
+    ],
+    [
+      22,
+      46
+    ]
+  ],
+  "apogee": {
+    "stepId": "hannibal-218",
+    "note": "Vers 218, Carthage tient le nord de la Tunisie, ses Emporia, les comptoirs d'Afrique du Nord, les Baléares et l'Espagne barcide jusqu'à l'Èbre ; elle a toutefois perdu la Sicile et la Sardaigne. Ces limites sont reconstituées à partir de sources grecques et romaines et restent approximatives ; selon la mesure retenue, l'étendue maximale se situerait plutôt avant 264."
+  },
+  "periods": [
+    {
+      "id": "cite-phenicienne",
+      "name": "La cité phénicienne",
+      "start": -650,
+      "end": -480,
+      "color": "#cdb3e0",
+      "summary": "Carthage, fondée selon la légende vers 814 par Élissa (Didon), hérite de la puissance de Tyr et fédère les comptoirs phéniciens d'Occident. Elle affronte les Grecs en mer (Alalia, 540) et signe avec Rome un premier traité en 509."
+    },
+    {
+      "id": "maitresse-mediterranee",
+      "name": "Maîtresse de la Méditerranée occidentale",
+      "start": -480,
+      "end": -264,
+      "color": "#e7c88a",
+      "summary": "Après l'échec d'Himère (480), Carthage se tourne vers l'Afrique, l'Atlantique et le commerce. Elle tient l'ouest de la Sicile, la Sardaigne et les Baléares, et repousse tour à tour Denys, Agathocle et Pyrrhus."
+    },
+    {
+      "id": "guerres-puniques",
+      "name": "Les guerres puniques",
+      "start": -264,
+      "end": -146,
+      "color": "#d99a8e",
+      "summary": "Trois guerres contre Rome (264-241, 218-201, 149-146) coûtent à Carthage la Sicile, la Sardaigne, l'Espagne puis tout. Hannibal frôle la victoire à Cannes, mais Zama et le siège de 146 mettent fin à la cité."
+    }
+  ],
+  "steps": [
+    {
+      "id": "carthage-650",
+      "year": -650,
+      "title": "La cité de Didon devient une puissance",
+      "type": "fondation",
+      "location": [
+        10.32,
+        36.85
+      ],
+      "zoom": 5,
+      "summary": "Selon la légende, la princesse Élissa (Didon) fonde Carthage vers 814 av. J.-C. ; vers 650, la cité, héritière de Tyr, prend la tête des comptoirs phéniciens d'Occident et installe une colonie à Ibiza.",
+      "details": "La tradition antique raconte que **Élissa**, que les Romains appelleront **Didon**, quitte Tyr (cité phénicienne, aujourd'hui au Liban) vers **814 av. J.-C.** après le meurtre de son mari par son frère, le roi Pygmalion. Arrivée sur la côte tunisienne, elle obtient de la terre en découpant, dit-on, une peau de bœuf en lanières : c'est la colline de **Byrsa** (« la peau »). Légende ou souvenir déformé, les fouilles confirment une ville installée dès le VIIIᵉ siècle.\n\nÀ l'origine, Carthage (en phénicien *Qart-Hadasht*, « la ville neuve ») n'est qu'un comptoir parmi d'autres. Mais au VIIᵉ siècle, Tyr est affaiblie par les Assyriens, et Carthage hérite de son rôle : elle protège les villes sœurs de Sicile, de Sardaigne, d'Afrique du Nord et d'Espagne. Vers **654**, selon Diodore, elle fonde **Ebusus** (Ibiza), étape sur la route de l'Espagne et de ses métaux.\n\nLa ville vénère **Baal Hammon**, dieu protecteur, et la déesse **Tanit**. Son **tophet**, sanctuaire en plein air où l'on déposait des urnes de cendres de très jeunes enfants et d'animaux, est au cœur d'un débat : sacrifices rituels d'enfants, comme l'affirment les auteurs grecs et romains hostiles, ou simple cimetière d'enfants morts jeunes, comme le soutiennent d'autres chercheurs. Les dates et les récits de cette période sont incertains, car l'histoire est écrite après coup, surtout par des étrangers.",
+      "consequences": [
+        "Carthage prend la tête des comptoirs phéniciens d'Occident, de la Tunisie du nord à l'Espagne du sud.",
+        "Ibiza (Ebusus) devient un relais carthaginois vers les mines d'Espagne.",
+        "Le Cap Bon et les terres fertiles autour de Carthage fournissent blé et vivres à la cité.",
+        "La puissance de Tyr décline en Orient, ce qui libère les villes d'Occident."
+      ],
+      "territory": "carthage-650",
+      "territoryNote": "Vers 650, Carthage tient sa péninsule et son arrière-pays immédiat, dans le nord-est de la Tunisie (région de Tunis, Cap Bon), ainsi que les comptoirs phéniciens qu'elle commence à fédérer : Utique, Hadrumète (Sousse), des escales sur la côte algérienne et marocaine, Motyé et Panorme (ouest de la Sicile), Tharros et Karalis (côtes de Sardaigne), Malte, Ibiza dans les Baléares, Gadès et la côte andalouse (comptoirs surtout autonomes). Voisins : les Libyens et Numides de l'intérieur (Algérie, Tunisie), indépendants ; les Grecs de Sicile (Syracuse fondée en -734, Akragas), indépendants ; les Étrusques en Italie centrale ; les Ibères et Tartessos en Espagne du sud ; Massalia pas encore fondée (-600) ; Rome simple bourgade latine.",
+      "sources": [
+        {
+          "label": "Wikipédia — Carthage",
+          "url": "https://fr.wikipedia.org/wiki/Carthage"
+        },
+        {
+          "label": "Wikipédia — Didon",
+          "url": "https://fr.wikipedia.org/wiki/Didon"
+        },
+        {
+          "label": "Wikipédia — Tophet",
+          "url": "https://fr.wikipedia.org/wiki/Tophet"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Élissa (Didon)",
+          "role": "Fondatrice légendaire de Carthage",
+          "faction": "carthaginois",
+          "archetype": "roi",
+          "quote": "(formule libre) Ici, sur cette colline, nous bâtirons la ville neuve",
+          "position": [
+            10.32,
+            36.85
+          ],
+          "person": "elissa-didon"
+        }
+      ]
+    },
+    {
+      "id": "alalia-540",
+      "year": -540,
+      "title": "Alalia : la bataille de la mer sarde",
+      "type": "bataille",
+      "location": [
+        9.51,
+        42.11
+      ],
+      "zoom": 5.5,
+      "summary": "Vers 540, la flotte des Phocéens, des Grecs installés en Corse, affronte les flottes carthaginoise et étrusque : une « victoire à la Cadméenne », qui coûte si cher aux Grecs qu'ils quittent la Corse.",
+      "details": "Vers **600**, des Grecs de **Phocée** (en Asie Mineure) fondent **Massalia** (Marseille). Vers **565**, d'autres Phocéens s'installent à **Alalia** (Aléria), en Corse, d'où ils pillent les navires carthaginois et étrusques. Les **Étrusques** (peuple d'Italie centrale, rival des Grecs en mer Tyrrhénienne) de Caeré et les Carthaginois s'allient contre eux.\n\nHérodote, notre seule source détaillée, raconte vers **540** un combat dans la « mer sarde » : **60 navires phocéens contre 120** alliés. Les Phocéens gagnent, mais perdent 40 navires et les 20 restants sont inutilisables. On parle de « victoire à la Cadméenne », c'est-à-dire de victoire ruineuse. Les survivants quittent la Corse et fondent **Élée** (Vélia) en Italie du sud. Les prisonniers sont lapidés à Caeré, selon Hérodote, ce qui aurait attiré un châtiment divin ; les chiffres sont donc à prendre avec prudence.\n\nCette date et ce récit viennent d'un auteur grec écrivant un siècle plus tard : l'événement est réel, mais les détails sont incertains. Résultat durable : un partage tacite de la Méditerranée occidentale, avec la Corse aux Étrusques, la Sardaigne et le sud aux Carthaginois, l'Ouest du détroit de Gibraltar fermé aux Grecs.",
+      "consequences": [
+        "La Sardaigne passe progressivement sous contrôle carthaginois (côtes puis intérieur), après des campagnes attribuées à Malchus puis à Magon.",
+        "La Corse reste aux Étrusques ; les Phocéens quittent Alalia.",
+        "Les Grecs sont tenus à l'écart du sud de la Sardaigne et de l'Espagne méridionale.",
+        "Carthage affirme sa supériorité navale en Méditerranée occidentale."
+      ],
+      "territory": "alalia-540",
+      "territoryNote": "Vers 540, Carthage tient le nord et l'est de la Tunisie (Carthage, Utique, Hadrumète, Cap Bon), ses comptoirs de la côte algérienne et marocaine, Malte, Ibiza et les Baléares, Gadès et la côte andalouse, l'ouest de la Sicile (Motyé, Panorme, Solonte) et les côtes de la Sardaigne (Karalis, Nora, Tharros, Sulcis), l'île entière étant en cours de conquête. Voisins : Étrusques (Caeré, Toscane et Latium), maîtres de la Corse après Alalia ; Massalia (Marseille), colonie phocéenne indépendante ; Syracuse, Akragas et les Grecs de Sicile orientale, indépendants ; Rome, petite cité latine sous ses rois ; Ibères et Tartessos en Espagne du sud ; Libyens et Numides de l'intérieur, indépendants.",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille d'Alalia",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_d'Alalia"
+        },
+        {
+          "label": "Wikipédia — Phocée",
+          "url": "https://fr.wikipedia.org/wiki/Phoc%C3%A9e"
+        },
+        {
+          "label": "Wikipédia — Aléria",
+          "url": "https://fr.wikipedia.org/wiki/Al%C3%A9ria"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Phocéens établis à Alalia",
+          "Carthage et Étrusques de Caeré"
+        ],
+        "commanders": [
+          "Chefs phocéens (noms inconnus)",
+          "Chefs carthaginois et étrusques (noms inconnus)"
+        ],
+        "outcome": "Victoire phocéenne ruineuse ; les Phocéens abandonnent la Corse",
+        "forces": "Selon Hérodote, 60 navires phocéens contre 120 navires (60 carthaginois et 60 étrusques)",
+        "losses": "Selon Hérodote, 40 navires phocéens perdus, les 20 autres hors d'état de combattre"
+      },
+      "armies": [
+        {
+          "side": "Flotte phocéenne",
+          "from": "Alalia",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              9.4,
+              42
+            ],
+            [
+              9.6,
+              42.2
+            ]
+          ],
+          "strength": 2
+        },
+        {
+          "side": "Flotte carthaginoise",
+          "from": "Carthage",
+          "faction": "carthaginois",
+          "path": [
+            [
+              10.32,
+              36.85
+            ],
+            [
+              9,
+              39
+            ],
+            [
+              8.7,
+              40.8
+            ],
+            [
+              9.3,
+              41.9
+            ],
+            [
+              9.45,
+              42.11
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Flotte étrusque de Caeré",
+          "from": "Caeré",
+          "faction": "latins",
+          "path": [
+            [
+              12.1,
+              41.99
+            ],
+            [
+              10.8,
+              42.2
+            ],
+            [
+              9.7,
+              42.15
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ]
+    },
+    {
+      "id": "traite-509",
+      "year": -509,
+      "title": "Le premier traité entre Carthage et Rome",
+      "type": "traité",
+      "location": [
+        10.32,
+        36.85
+      ],
+      "zoom": 4.5,
+      "summary": "Selon Polybe, Rome et Carthage signent en 509 un traité qui limite la navigation romaine et garantit le commerce : Carthage est déjà la maîtresse de la mer.",
+      "details": "L'historien grec **Polybe** (IIᵉ siècle av. J.-C.) dit avoir lu, dans les archives de Rome, le texte de **trois traités** entre Rome et Carthage. Le premier date, selon lui, de la première année de la République romaine, soit **509 av. J.-C.** Certains historiens modernes le datent plus tard, mais son existence est généralement admise.\n\nLe texte est précis. Les Romains et leurs alliés ne doivent pas naviguer **au-delà du Beau Promontoire** (le cap Farina, au nord de Carthage), sauf contraints par la tempête. En Sicile carthaginoise, en Afrique et en Sardaigne, ils peuvent commercer seulement en présence d'un héraut ou d'un greffier, et les prix sont garantis par l'État carthaginois. Carthage promet de ne pas attaquer les villes latines alliées de Rome, et de ne pas bâtir de forteresse dans le Latium.\n\nCôté carthaginois, ce sont les **suffètes** (*shofetim*, deux magistrats élus chaque année, que les Romains traduisent par « rois » ou « consuls ») qui engagent la cité. Le traité montre une Carthage bien plus puissante que Rome : elle ferme ses mers, sa Sardaigne et son Afrique aux navires romains, qui n'ont alors presque pas de flotte. Les deux cités, alors alliées de fait contre les Étrusques et les Grecs, ne sont pas encore rivales.",
+      "consequences": [
+        "Carthage verrouille juridiquement le commerce romain en Afrique, en Sardaigne et dans l'ouest de la Sicile.",
+        "La Sardaigne et le littoral africain sont déclarés zones fermées à la navigation libre des Romains.",
+        "Rome obtient la garantie de ses alliés du Latium contre les attaques carthaginoises.",
+        "Les deux cités gardent des relations commerciales pacifiques pendant plus de deux siècles."
+      ],
+      "territory": "traite-509",
+      "territoryNote": "En 509, Carthage tient le nord et l'est de la Tunisie (Carthage, Utique, Hadrumète, Cap Bon, Byzacène côtière), ses comptoirs de la côte algérienne et marocaine, Malte, Ibiza et les Baléares, Gadès et la côte andalouse, l'ouest de la Sicile (Motyé, Panorme, Solonte) et la Sardaigne, dont les côtes sont sous son contrôle. Voisins : Rome, cité latine à peine devenue république, partenaire du traité ; les Étrusques (Toscane, Latium nord), puissants ; Massalia (Marseille), indépendante ; Syracuse, Akragas et les Grecs de Sicile orientale, indépendants ; Libyens et Numides de l'intérieur, indépendants ; Ibères et Tartessos, indépendants.",
+      "sources": [
+        {
+          "label": "Wikipédia — Traités romano-carthaginois",
+          "url": "https://fr.wikipedia.org/wiki/Trait%C3%A9s_romano-carthaginois"
+        },
+        {
+          "label": "Wikipédia — Carthage",
+          "url": "https://fr.wikipedia.org/wiki/Carthage"
+        },
+        {
+          "label": "Wikipédia — Polybe",
+          "url": "https://fr.wikipedia.org/wiki/Polybe"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Un suffète de Carthage",
+          "role": "Magistrat annuel signataire du traité",
+          "faction": "carthaginois",
+          "archetype": "senateur",
+          "quote": "Que ni les Romains ni leurs alliés ne naviguent au-delà du Beau Promontoire (Polybe, III, 22)",
+          "position": [
+            10.32,
+            36.85
+          ]
+        },
+        {
+          "name": "Marcus Horatius Pulvillus",
+          "role": "Consul romain, selon Polybe",
+          "faction": "romains",
+          "archetype": "consul",
+          "position": [
+            12.49,
+            41.89
+          ]
+        }
+      ]
+    },
+    {
+      "id": "himere-480",
+      "year": -480,
+      "title": "Himère : Gélon écrase Hamilcar",
+      "type": "bataille",
+      "location": [
+        13.83,
+        37.97
+      ],
+      "zoom": 5.5,
+      "summary": "En 480, Hamilcar, fils de Magon, débarque en Sicile avec une grande armée, mais Gélon de Syracuse et Théron d'Agrigente la détruisent devant Himère : Carthage renonce pour longtemps à conquérir l'île.",
+      "details": "Au Vᵉ siècle, Carthage est une puissance maritime riche, gouvernée par la famille des **Magonides**, du nom de **Magon Ier**. **Hamilcar**, un Magonide, reçoit en **480** le commandement d'une expédition pour rétablir **Terillos**, tyran d'Himère chassé par Théron d'Agrigente. Selon Hérodote et Diodore, il débarque à **Panorme** (Palerme) avec une armée de **300 000 hommes** : un chiffre manifestement gonflé. Les Grecs de Sicile, menés par **Gélon**, tyran de Syracuse, et son beau-père **Théron**, tyran d'Agrigente, marchent à sa rencontre.\n\nLa tradition grecque dit la bataille livrée le jour même de **Salamine** (480), pour lier les deux victoires contre les « barbares ». Gélon aurait détruit les navires carthaginois ancrés, par une ruse de cavalerie, avant de vaincre l'armée. Hamilcar meurt : selon Hérodote, il se jette dans le bûcher des sacrifices. Pour Diodore, il est tué par un stratagème.\n\nLes sources étant grecques, elles exagèrent sans doute l'ampleur du désastre. Carthage, qui paie une lourde indemnité (2 000 talents d'argent selon Diodore), se replie ensuite pour plus de soixante-dix ans, sans lancer de nouvelle grande offensive en Sicile. Elle reste maîtresse de l'ouest de l'île et se tourne vers l'Afrique, où elle étend son territoire.",
+      "consequences": [
+        "Carthage renonce à conquérir la Sicile grecque pendant près de soixante-dix ans, mais garde Motyé, Panorme et Solonte à l'ouest.",
+        "Les Grecs de Sicile, Syracuse en tête, deviennent la grande puissance de l'île.",
+        "Carthage se tourne vers l'Afrique : elle étend ses terres cultivées au Cap Bon et vers l'intérieur.",
+        "La famille des Magonides perd du crédit ; le pouvoir se réorganise autour du Conseil et des suffètes."
+      ],
+      "territory": "himere-480",
+      "territoryNote": "Vers 480, Carthage tient le nord et l'est de la Tunisie (Carthage, Utique, Cap Bon, Byzacène côtière, Hadrumète), ses comptoirs de la côte algérienne et marocaine, Malte, Ibiza et les Baléares, Gadès et la côte andalouse, l'ouest de la Sicile (Motyé, Panorme, Solonte) et la Sardaigne, côtes puis intérieur. Himère reste grecque. Voisins : Syracuse (Gélon), Akragas (Théron) et les Grecs de Sicile orientale, indépendants et victorieux ; les Étrusques en Italie centrale ; Rome, république latine ; Massalia, indépendante ; les Libyens et Numides de l'intérieur, tributaires ou indépendants selon les tribus ; les Ibères et Tartessos en Espagne du sud.",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille d'Himère (480 av. J.-C.)",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_d'Him%C3%A8re_(480_av._J.-C.)"
+        },
+        {
+          "label": "Wikipédia — Gélon",
+          "url": "https://fr.wikipedia.org/wiki/G%C3%A9lon"
+        },
+        {
+          "label": "Wikipédia — Hamilcar fils de Magon",
+          "url": "https://fr.wikipedia.org/wiki/Hamilcar_fils_de_Magon"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Syracuse et Agrigente",
+          "Carthage"
+        ],
+        "commanders": [
+          "Gélon de Syracuse",
+          "Théron d'Agrigente",
+          "Hamilcar, fils de Magon"
+        ],
+        "outcome": "Victoire grecque décisive ; mort d'Hamilcar",
+        "forces": "Selon Hérodote et Diodore, 300 000 hommes côté carthaginois (très exagéré) ; environ 55 000 côté grec selon Diodore",
+        "losses": "Selon Diodore, 150 000 morts carthaginois, chiffre sans doute exagéré ; navires incendiés"
+      },
+      "armies": [
+        {
+          "side": "Syracuse et Agrigente",
+          "from": "Syracuse",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              15.29,
+              37.07
+            ],
+            [
+              14.4,
+              37.4
+            ],
+            [
+              13.83,
+              37.95
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Armée d'Hamilcar",
+          "from": "Carthage",
+          "faction": "carthaginois",
+          "path": [
+            [
+              10.32,
+              36.85
+            ],
+            [
+              11.8,
+              37.9
+            ],
+            [
+              13.36,
+              38.12
+            ],
+            [
+              13.83,
+              38
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Gélon",
+          "role": "Tyran de Syracuse, vainqueur d'Himère",
+          "faction": "grecs-macedoniens",
+          "archetype": "roi",
+          "position": [
+            15.29,
+            37.07
+          ]
+        },
+        {
+          "name": "Hamilcar, fils de Magon",
+          "role": "Chef carthaginois, tué à Himère",
+          "faction": "carthaginois",
+          "archetype": "general",
+          "position": [
+            13.4,
+            38.1
+          ],
+          "person": "hamilcar-himere"
+        }
+      ]
+    },
+    {
+      "id": "periples-470",
+      "year": -470,
+      "title": "Hannon et Himilcon : les périples atlantiques",
+      "type": "politique",
+      "location": [
+        -9.5,
+        33
+      ],
+      "zoom": 3.5,
+      "summary": "Vers 470-450 (la date est discutée), Hannon longe l'Afrique atlantique avec une grande flotte et Himilcon remonte les côtes d'Europe : Carthage explore l'Atlantique et sécurise la route du métal.",
+      "details": "Carthage ferme le détroit de Gibraltar aux autres marins et envoie ses explorateurs au-delà. **Hannon**, que l'on appelle le Navigateur, dirige selon un texte grec appelé *Périple d'Hannon* une flotte de **soixante navires à cinquante rameurs** et jusqu'à **30 000 colons** (le chiffre est discuté) pour fonder des comptoirs sur la côte atlantique du Maroc, dont **Lixus**. Il pousse bien plus loin vers le sud, jusqu'à une île de « gorilles », ce que les modernes situent au Sénégal, en Sierra Leone ou jusqu'au Cameroun, selon les lectures.\n\nÀ peu près à la même époque, **Himilcon** part vers le nord, depuis **Gadès** : selon **Avienus**, poète latin du IVᵉ siècle de notre ère qui s'appuie sur un récit bien plus ancien, il atteint les **Oestrymnides**, îles riches en **étain** (probablement la Cornouaille ou les îles Britanniques, mais le débat reste ouvert). Le texte décrit un voyage lent, entravé par les algues et les monstres marins. Il ne faut pas confondre cet Himilcon avec le général du même nom qui combat en Sicile.\n\nLes dates sont débattues : le Vᵉ siècle est l'hypothèse la plus courante, mais certains placent ces voyages plus tard. Ces textes sont des traductions ou des résumés tardifs, sans doute embellis. Reste que Carthage ouvre la route atlantique du métal, de l'or et de l'ivoire, tout en gardant ses voyages secrets pour protéger son monopole.",
+      "consequences": [
+        "Des comptoirs carthaginois jalonnent la côte atlantique du Maroc (Lixus, Mogador) et sécurisent la route vers l'Afrique de l'Ouest.",
+        "Gadès devient le grand port d'où l'on rejoint l'étain britannique et l'or africain.",
+        "Carthage verrouille le détroit de Gibraltar et garde ses routes secrètes pour protéger son monopole.",
+        "La connaissance de l'Atlantique reste réservée à quelques équipages carthaginois, au profit de la cité."
+      ],
+      "territory": "periples-470",
+      "territoryNote": "Vers 470, Carthage tient le nord et l'est de la Tunisie (Carthage, Utique, Cap Bon, Byzacène), ses comptoirs de la côte algérienne et marocaine, y compris les nouveaux comptoirs atlantiques du Maroc (Lixus, Mogador), Malte, Ibiza et les Baléares, Gadès et la côte andalouse, l'ouest de la Sicile (Motyé, Panorme, Solonte) et la Sardaigne. Voisins : Syracuse et les Grecs de Sicile orientale, indépendants ; les Étrusques en déclin ; Rome, république latine ; Massalia, indépendante ; les Libyens et Numides de l'intérieur ; les Ibères et Tartessos ; les peuples de l'Atlantique, hors de tout contrôle.",
+      "sources": [
+        {
+          "label": "Wikipédia — Périple d'Hannon",
+          "url": "https://fr.wikipedia.org/wiki/P%C3%A9riple_d'Hannon"
+        },
+        {
+          "label": "Wikipédia — Hannon le Navigateur",
+          "url": "https://fr.wikipedia.org/wiki/Hannon_le_Navigateur"
+        },
+        {
+          "label": "Wikipédia — Himilcon",
+          "url": "https://fr.wikipedia.org/wiki/Himilcon"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Hannon le Navigateur",
+          "role": "Explorateur de l'Atlantique africain",
+          "faction": "carthaginois",
+          "archetype": "amiral",
+          "quote": "(formule libre) Nous avons longé des côtes de feu, et des hommes velus que nos interprètes appelaient gorilles",
+          "position": [
+            -6.1,
+            35.2
+          ],
+          "person": "hannon-navigateur"
+        },
+        {
+          "name": "Himilcon",
+          "role": "Explorateur des côtes d'Europe et des îles de l'étain",
+          "faction": "carthaginois",
+          "archetype": "amiral",
+          "position": [
+            -6.3,
+            36.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "motye-397",
+      "year": -397,
+      "title": "Denys l'Ancien prend Motyé",
+      "type": "bataille",
+      "location": [
+        12.49,
+        37.86
+      ],
+      "zoom": 5.5,
+      "summary": "En 397, Denys l'Ancien, tyran de Syracuse, assiège et prend Motyé, la grande place carthaginoise de l'ouest de la Sicile ; Carthage réagit avec Himilcon, qui détruit Messine et menace Syracuse.",
+      "details": "Après la défaite d'Hamilcar à Himère, Carthage laisse la Sicile en paix un long moment. En **409**, elle revient, sur l'appel de la cité de Ségeste, et détruit Sélinonte et Himère ; en **406-405**, elle prend Akragas. **Denys l'Ancien**, tyran de **Syracuse** (en grec, un *tyran* est un chef qui prend le pouvoir hors des lois, sans que le mot soit forcément péjoratif), signe alors une paix défavorable avec Carthage.\n\nEn **398-397**, Denys se prépare : il réunit des ingénieurs, fait mettre au point, dit-on, la **catapulte** (machine à lancer des traits et des pierres) et lance une vaste armée contre l'ouest de la Sicile. Il assiège **Motyé**, îlot fortifié relié à la côte par une chaussée de 1 800 mètres, qu'il comble ; ses navires halés sur la terre ferme et ses tours de siège finissent par emporter la ville. Les habitants sont massacrés ou vendus. Les chiffres de Diodore (80 000 fantassins, 200 navires) sont sans doute exagérés.\n\nCarthage réagit : **Himilcon** reprend Motyé et détruit **Messine** en 396, avant d'être frappé par une épidémie devant Syracuse. En **396**, le site de Motyé est abandonné au profit de **Lilybée**, fondée sur la côte voisine. Carthage conserve, une fois de plus, l'ouest de la Sicile.",
+      "consequences": [
+        "Motyé est détruite ; les Carthaginois fondent Lilybée (Marsala), qui devient la place forte de l'ouest de la Sicile.",
+        "Carthage conserve l'ouest de la Sicile (Motyé puis Lilybée, Panorme, Solonte) après la paix de 392-383.",
+        "Syracuse reste la grande puissance grecque de l'île, tournée vers l'Italie du sud.",
+        "Une série de guerres presque sans fin oppose Carthage et Syracuse pendant plus d'un siècle."
+      ],
+      "territory": "motye-397",
+      "territoryNote": "En 397, Carthage tient le nord et l'est de la Tunisie (Carthage, Utique, Hadrumète, Cap Bon, Byzacène), les Emporia de Tripolitaine (Leptis Magna, Oea, Sabratha), ses comptoirs de la côte algérienne et marocaine, Malte, Ibiza et les Baléares, Gadès et la côte andalouse, la Sardaigne et l'ouest de la Sicile (Panorme, Solonte, Motyé jusqu'à sa chute, puis Lilybée). Voisins : Syracuse (Denys), maîtresse de l'est et du sud de la Sicile ; Akragas, Gela et Sélinonte, ruinées ; Ségeste et les Élymes, alliés de Carthage ; les Libyens et Numides ; les Étrusques ; Rome, cité latine ; Massalia.",
+      "sources": [
+        {
+          "label": "Wikipédia — Siège de Motyé",
+          "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_Moty%C3%A9"
+        },
+        {
+          "label": "Wikipédia — Denys l'Ancien",
+          "url": "https://fr.wikipedia.org/wiki/Denys_l'Ancien"
+        },
+        {
+          "label": "Wikipédia — Motyé",
+          "url": "https://fr.wikipedia.org/wiki/Moty%C3%A9"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Syracuse",
+          "Carthage"
+        ],
+        "commanders": [
+          "Denys l'Ancien",
+          "Himilcon"
+        ],
+        "outcome": "Prise de Motyé par Syracuse ; reprise de la région par Himilcon peu après",
+        "forces": "Selon Diodore, 80 000 fantassins, 3 000 cavaliers et 200 navires côté syracusain, chiffres sans doute gonflés",
+        "losses": "Habitants de Motyé massacrés ou vendus ; pertes précises inconnues"
+      },
+      "armies": [
+        {
+          "side": "Armée de Denys",
+          "from": "Syracuse",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              15.29,
+              37.07
+            ],
+            [
+              13.59,
+              37.31
+            ],
+            [
+              12.83,
+              37.58
+            ],
+            [
+              12.49,
+              37.86
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Garnison et flotte de Carthage",
+          "from": "Carthage",
+          "faction": "carthaginois",
+          "path": [
+            [
+              10.32,
+              36.85
+            ],
+            [
+              11.5,
+              37.5
+            ],
+            [
+              12.4,
+              37.82
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Denys l'Ancien",
+          "role": "Tyran de Syracuse",
+          "faction": "grecs-macedoniens",
+          "archetype": "roi",
+          "position": [
+            15.29,
+            37.07
+          ]
+        },
+        {
+          "name": "Himilcon, général",
+          "role": "Général carthaginois",
+          "faction": "carthaginois",
+          "archetype": "general",
+          "position": [
+            12.4,
+            37.82
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agathocle-310",
+      "year": -310,
+      "title": "Agathocle porte la guerre en Afrique",
+      "type": "bataille",
+      "location": [
+        10.5,
+        36.9
+      ],
+      "zoom": 5.5,
+      "summary": "Assiégé dans Syracuse, le tyran Agathocle débarque en 310 au Cap Bon, brûle ses navires et menace Carthage : la ville n'a jamais été aussi près d'être prise avant Scipion.",
+      "details": "À la fin du IVᵉ siècle, **Agathocle**, tyran de Syracuse, est assiégé par les Carthaginois après avoir été battu au fleuve Himère (311). Plutôt que de subir, il tente un coup audacieux : en **310**, il laisse son frère défendre la ville et traverse la mer avec **14 000 hommes** environ (chiffres de Diodore), échappant à la flotte carthaginoise.\n\nIl débarque au **Cap Bon**. Selon Justin et Diodore, il fait **brûler ses navires** pour ôter à ses soldats toute idée de retraite. Il défait l'armée carthaginoise commandée par **Hannon** et **Bomilcar** devant Tunis, ravage le Cap Bon et la fertile plaine de la Byzacène (le « grenier » de Carthage). Plus tard, Ophellas, souverain de Cyrène, viendra le rejoindre, avant d'être assassiné par lui (308).\n\nCarthage, saisie de panique, sacrifie, d'après Diodore, **200 enfants nobles** à Baal Hammon pour apaiser le dieu, l'une des accusations les plus célèbres à propos du tophet : les historiens modernes en débattent, entre sacrifices rituels et exagération grecque. Bomilcar tente un coup d'État et échoue.\n\nAgathocle ne prend pas Carthage mais lui impose un blocus. Il quitte l'Afrique en **307**, abandonnant son armée. Carthage a résisté sur ses remparts, mais a perdu des villes.",
+      "consequences": [
+        "Le Cap Bon et la Byzacène sont ravagés ; plusieurs villes et tribus libyennes se détachent de Carthage pendant la guerre.",
+        "Carthage reprend peu à peu ses territoires africains après le départ d'Agathocle en 307.",
+        "La cité se dote de remparts renforcés et d'une garde plus nombreuse.",
+        "En Sicile, Carthage conserve l'ouest de l'île à la paix de 306."
+      ],
+      "territory": "agathocle-310",
+      "territoryNote": "En 310, Carthage tient le nord et l'est de la Tunisie (Carthage, Utique, Hadrumète, Byzacène), mais le Cap Bon et plusieurs villes libyennes sont ravagés ou perdus au profit d'Agathocle pendant la guerre ; elle garde les Emporia de Tripolitaine, ses comptoirs de la côte algérienne et marocaine, Malte, Ibiza et les Baléares, Gadès et la côte andalouse, la Sardaigne et l'ouest de la Sicile (Panorme, Lilybée). Voisins : Syracuse (Agathocle), maîtresse de l'est de la Sicile ; les Numides, divisés entre Carthage et Agathocle ; les Libyens de l'intérieur, rebelles ; les Étrusques ; Rome, cité latine en plein essor ; Massalia ; les Ibères.",
+      "sources": [
+        {
+          "label": "Wikipédia — Agathocle",
+          "url": "https://fr.wikipedia.org/wiki/Agathocle"
+        },
+        {
+          "label": "Wikipédia — Expédition d'Agathocle en Afrique",
+          "url": "https://fr.wikipedia.org/wiki/Exp%C3%A9dition_d'Agathocle_en_Afrique"
+        },
+        {
+          "label": "Wikipédia — Carthage",
+          "url": "https://fr.wikipedia.org/wiki/Carthage"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Syracuse",
+          "Carthage"
+        ],
+        "commanders": [
+          "Agathocle",
+          "Hannon",
+          "Bomilcar"
+        ],
+        "outcome": "Victoires d'Agathocle en rase campagne ; échec devant Carthage ; retrait en 307",
+        "forces": "Selon Diodore, environ 14 000 hommes syracusains ; armée carthaginoise de 30 000 fantassins et des chars (chiffres incertains)",
+        "losses": "Pertes mal connues ; l'armée laissée par Agathocle est massacrée en 307"
+      },
+      "armies": [
+        {
+          "side": "Armée d'Agathocle",
+          "from": "Syracuse",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              15.29,
+              37.07
+            ],
+            [
+              13,
+              37
+            ],
+            [
+              11.6,
+              37.1
+            ],
+            [
+              11,
+              37
+            ],
+            [
+              10.5,
+              36.9
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Armée de Carthage",
+          "from": "Carthage",
+          "faction": "carthaginois",
+          "path": [
+            [
+              10.32,
+              36.85
+            ],
+            [
+              10.45,
+              36.9
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Agathocle",
+          "role": "Tyran de Syracuse, envahisseur de l'Afrique",
+          "faction": "grecs-macedoniens",
+          "archetype": "roi",
+          "position": [
+            11,
+            37
+          ]
+        },
+        {
+          "name": "Bomilcar",
+          "role": "Général carthaginois, putschiste raté",
+          "faction": "carthaginois",
+          "archetype": "general",
+          "position": [
+            10.32,
+            36.85
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pyrrhus-278",
+      "year": -278,
+      "title": "Pyrrhus en Sicile : Lilybée tient",
+      "type": "bataille",
+      "location": [
+        12.43,
+        37.8
+      ],
+      "zoom": 5.5,
+      "summary": "Appelé par les Grecs de Sicile, Pyrrhus refoule les Carthaginois jusqu'à Lilybée (278-277), mais ne peut prendre la place ; il repart en 276, laissant Rome et Carthage face à face.",
+      "details": "En 280-279, **Pyrrhus**, roi d'Épire (en Grèce du nord-ouest), vient à l'appel de **Tarente** aider les Grecs d'Italie contre Rome. Rome et Carthage signent alors, selon Polybe, un traité d'alliance : chacune promet de s'entraider contre lui, et Carthage envoie même sa flotte, sans toutefois combattre en Italie.\n\nÀ la fin de 278, les Grecs de Sicile, menacés par Carthage, appellent à leur tour Pyrrhus, gendre d'Agathocle. Il traverse le détroit, accueilli à Syracuse, et refoule les Carthaginois : **Éryx** tombe, puis **Panorme**. Il ne reste à Carthage que **Lilybée**, forteresse isolée sur la côte ouest.\n\nPyrrhus l'assiège en **277**. Les remparts, l'artillerie et la flotte de Carthage, qui ravitaille la ville, le bloquent. Il refuse la paix qu'on lui offre, exige l'évacuation de toute l'île et irrite ses alliés grecs par ses exigences. En **276**, il repart pour l'Italie, où il sera battu. Plutarque lui prête, en quittant la Sicile, une phrase célèbre.\n\nLilybée devient le symbole de la résistance carthaginoise et la plaque tournante de l'ouest de l'île. Pyrrhus parti, Carthage retrouve sa place, et la voie est ouverte à l'affrontement direct entre Rome et Carthage.",
+      "consequences": [
+        "Carthage ne garde que Lilybée en 277 mais récupère presque toute l'ouest de la Sicile après le départ de Pyrrhus.",
+        "Lilybée devient la grande forteresse carthaginoise de l'île, ravitaillée par la mer.",
+        "Rome et Carthage, alliées contre Pyrrhus, se retrouvent voisines directes autour du détroit de Messine.",
+        "La puissance syracusaine s'affaiblit, ce qui laisse Rome et Carthage face à face."
+      ],
+      "territory": "pyrrhus-278",
+      "territoryNote": "En 278, Carthage tient le nord et l'est de la Tunisie (Carthage, Utique, Hadrumète, Cap Bon, Byzacène), les Emporia de Tripolitaine (Leptis Magna, Oea, Sabratha), ses comptoirs de la côte algérienne et marocaine, Malte, Ibiza et les Baléares, Gadès et la côte andalouse, la Sardaigne et l'ouest de la Sicile (Lilybée, Drepanum, Panorme, Éryx, ces deux dernières perdues puis reprises). Voisins : Pyrrhus, maître de Syracuse et de la Sicile orientale ; Rome, alliée de Carthage contre lui, maîtresse de l'Italie centrale ; Tarente et les Grecs d'Italie ; les Numides ; les Mamertins, à Messine ; Massalia.",
+      "sources": [
+        {
+          "label": "Wikipédia — Pyrrhus Ier",
+          "url": "https://fr.wikipedia.org/wiki/Pyrrhus_Ier"
+        },
+        {
+          "label": "Wikipédia — Lilybée",
+          "url": "https://fr.wikipedia.org/wiki/Lilyb%C3%A9e"
+        },
+        {
+          "label": "Wikipédia — Guerre de Pyrrhus en Italie et en Sicile",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_de_Pyrrhus_en_Italie_et_en_Sicile"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Épire et Grecs de Sicile",
+          "Carthage"
+        ],
+        "commanders": [
+          "Pyrrhus",
+          "Chef de la garnison carthaginoise (nom inconnu)"
+        ],
+        "outcome": "Siège de Lilybée repoussé ; Pyrrhus quitte la Sicile en 276",
+        "forces": "Inconnues avec précision ; Pyrrhus dispose d'environ 30 000 fantassins et de machines de siège",
+        "losses": "Inconnues"
+      },
+      "armies": [
+        {
+          "side": "Armée de Pyrrhus",
+          "from": "Tarente",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              17.23,
+              40.47
+            ],
+            [
+              15.9,
+              38.9
+            ],
+            [
+              15.6,
+              38.2
+            ],
+            [
+              13.4,
+              38.1
+            ],
+            [
+              12.5,
+              37.8
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Garnison de Lilybée",
+          "from": "Carthage",
+          "faction": "carthaginois",
+          "path": [
+            [
+              10.32,
+              36.85
+            ],
+            [
+              11.4,
+              37.5
+            ],
+            [
+              12.4,
+              37.8
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Pyrrhus",
+          "role": "Roi d'Épire, allié des Grecs de Sicile",
+          "faction": "grecs-macedoniens",
+          "archetype": "roi",
+          "quote": "Quel beau champ de bataille nous laissons aux Romains et aux Carthaginois ! (selon Plutarque)",
+          "position": [
+            15.29,
+            37.07
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mylae-260",
+      "year": -260,
+      "title": "Mylae : le corbeau de Duilius",
+      "type": "bataille",
+      "location": [
+        15.25,
+        38.27
+      ],
+      "zoom": 5.5,
+      "summary": "En 260, Rome, qui n'a presque jamais fait la guerre sur mer, bat la flotte carthaginoise au large de Mylae grâce au « corbeau », un pont d'abordage : c'est le début de sa puissance navale.",
+      "details": "En **264**, Rome et Carthage s'affrontent à **Messine**, en Sicile : la **première guerre punique** (de *Poeni*, les Phéniciens, nom latin des Carthaginois) commence. Rome gagne à terre, notamment à **Agrigente** (262), mais ne peut rien contre la flotte carthaginoise, qui ravage ses côtes. Selon Polybe, elle bâtit alors une flotte de 100 quinquérèmes (grands navires à cinq rangs de rameurs) et 20 trirèmes, en copiant, dit-on, une quinquérème carthaginoise échouée, et en entraînant ses rameurs sur le sable.\n\nElle y ajoute un engin : le **corbeau** (*corvus*), une passerelle munie d'un grappin, qui s'abat sur le navire ennemi et permet aux légionnaires de le prendre comme sur terre. En **260**, au large de **Mylae** (Milazzo), le consul **Caius Duilius** affronte la flotte de **130 navires** commandée par **Hannibal fils de Gisco**, venue de Panorme. Les Carthaginois, sûrs de leur supériorité, foncent sans méfiance et sont accrochés : selon Polybe, ils perdent une cinquantaine de navires, dont le vaisseau amiral, une grande heptère qui avait jadis appartenu à Pyrrhus.\n\nDuilius reçoit à Rome un triomphe naval et une colonne ornée d'éperons, la **colonne rostrale**. Les sources étant romaines et grecques, la victoire est sans doute embellie, mais elle prouve que Rome peut battre Carthage sur son propre terrain.",
+      "consequences": [
+        "Rome devient une puissance navale et peut désormais menacer les côtes de Sicile et d'Afrique.",
+        "Carthage garde l'ouest de la Sicile (Lilybée, Drepanum, Panorme) mais perd sa supériorité en mer.",
+        "Rome lance des raids contre la Corse et la Sardaigne, sans parvenir à les prendre.",
+        "La guerre s'éternise : ni Rome ni Carthage ne peuvent s'imposer rapidement."
+      ],
+      "territory": "mylae-260",
+      "territoryNote": "En 260, Carthage tient le nord et l'est de la Tunisie (Carthage, Utique, Hadrumète, Cap Bon, Byzacène), les Emporia de Tripolitaine (Leptis Magna, Oea, Sabratha), ses comptoirs de la côte algérienne et marocaine, Malte, Ibiza et les Baléares, Gadès et la côte andalouse, la Sardaigne et l'ouest de la Sicile (Lilybée, Drepanum, Panorme, Éryx); Agrigente est tombée aux mains de Rome en 262 et l'est de la Sicile est tenu par Syracuse (Hiéron II), alliée de Rome depuis 263. Voisins : Rome, maîtresse de toute l'Italie centrale et du sud ; les Numides ; Massalia, alliée de Rome ; Ibères ; Étrusques, soumis à Rome.",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Mylae",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Mylae"
+        },
+        {
+          "label": "Wikipédia — Première guerre punique",
+          "url": "https://fr.wikipedia.org/wiki/Premi%C3%A8re_guerre_punique"
+        },
+        {
+          "label": "Wikipédia — Gaius Duilius",
+          "url": "https://fr.wikipedia.org/wiki/Gaius_Duilius"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "République romaine",
+          "Carthage"
+        ],
+        "commanders": [
+          "Caius Duilius",
+          "Hannibal, fils de Gisco"
+        ],
+        "outcome": "Victoire romaine ; premier grand succès naval de Rome",
+        "forces": "Selon Polybe, environ 120 navires romains et 130 navires carthaginois",
+        "losses": "Selon Polybe, une cinquantaine de navires carthaginois perdus ; pertes romaines faibles"
+      },
+      "armies": [
+        {
+          "side": "Flotte romaine",
+          "from": "Messine",
+          "faction": "romains",
+          "path": [
+            [
+              15.55,
+              38.19
+            ],
+            [
+              15.4,
+              38.3
+            ],
+            [
+              15.25,
+              38.27
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Flotte carthaginoise",
+          "from": "Panorme",
+          "faction": "carthaginois",
+          "path": [
+            [
+              13.36,
+              38.12
+            ],
+            [
+              14.4,
+              38.5
+            ],
+            [
+              15.15,
+              38.32
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Caius Duilius",
+          "role": "Consul, vainqueur de Mylae",
+          "faction": "romains",
+          "archetype": "consul",
+          "position": [
+            12.49,
+            41.89
+          ]
+        },
+        {
+          "name": "Hannibal, fils de Gisco",
+          "role": "Amiral carthaginois",
+          "faction": "carthaginois",
+          "archetype": "amiral",
+          "position": [
+            13.36,
+            38.12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sicile-241",
+      "year": -241,
+      "title": "Îles Égates : la Sicile, première province",
+      "type": "bataille",
+      "location": [
+        12.3,
+        37.98
+      ],
+      "zoom": 5.5,
+      "summary": "La victoire navale des îles Égates met fin à la première guerre punique : Carthage abandonne la Sicile, qui deviendra la première province romaine.",
+      "details": "Vingt ans de guerre épuisent les deux cités. Carthage tient encore Lilybée et Drepanum, où **Hamilcar Barca** (le père d'Hannibal, dont la famille, les **Barcides**, jouera un rôle capital) mène une guerre de harcèlement depuis le mont Éryx. Rome, ruinée, finance en **242** une nouvelle flotte grâce à des emprunts des riches citoyens.\n\nEn **241**, le consul **Caius Lutatius Catulus** bloque Drepanum. Une flotte carthaginoise de ravitaillement, commandée par **Hannon**, vient à la rescousse. Le **10 mars 241**, au large des **îles Égates** (à l'ouest de la Sicile), les Romains, mieux entraînés, coulent ou capturent une centaine de navires : selon **Polybe**, 50 coulés et 70 pris, avec près de 10 000 prisonniers. Diodore donne une flotte carthaginoise d'environ 250 navires, chiffre incertain. Hannon, privé de ravitaillement, perd tout espoir.\n\nCarthage donne alors pouvoir à Hamilcar pour négocier. Il obtient la paix : Carthage abandonne la Sicile, rend les prisonniers sans rançon et paie, selon Polybe, 3 200 talents (1 000 de suite, 2 200 en dix ans). Hamilcar, invaincu à Éryx, rentre amer : il juge la paix humiliante, ce qui prépare la suite.",
+      "consequences": [
+        "Carthage abandonne toute la Sicile (Lilybée, Drepanum, Panorme, Éryx, Motyé) ; la Sicile devient romaine, sauf le royaume de Hiéron II à Syracuse, allié de Rome.",
+        "Carthage doit payer 3 200 talents d'indemnité, dont 1 000 de suite et 2 200 en dix ans.",
+        "La Sardaigne et la Corse restent carthaginoises encore quelques années, avant d'être arrachées par Rome en 238.",
+        "Carthage, sans flotte ni argent, ne peut plus payer ses mercenaires, ce qui la plonge dans une révolte."
+      ],
+      "territory": "sicile-241",
+      "territoryNote": "En 241, Carthage tient le nord et l'est de la Tunisie (Carthage, Utique, Hadrumète, Cap Bon, Byzacène), les Emporia de Tripolitaine (Leptis Magna, Oea, Sabratha), ses comptoirs de la côte algérienne et marocaine, Malte, Ibiza et les Baléares, Gadès et la côte andalouse, et la Sardaigne ; elle vient d'évacuer toute la Sicile (Lilybée, Drepanum, Panorme, Éryx). Voisins : Rome, qui reçoit la Sicile occidentale et les îles Égates ; Syracuse (Hiéron II), alliée de Rome, maîtresse de l'est de la Sicile ; les Numides ; Massalia, alliée de Rome ; les Ibères ; les Étrusques, soumis à Rome.",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille des îles Égates",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_des_%C3%AEles_%C3%89gates"
+        },
+        {
+          "label": "Wikipédia — Première guerre punique",
+          "url": "https://fr.wikipedia.org/wiki/Premi%C3%A8re_guerre_punique"
+        },
+        {
+          "label": "Wikipédia — Hamilcar Barca",
+          "url": "https://fr.wikipedia.org/wiki/Hamilcar_Barca"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "République romaine",
+          "Carthage"
+        ],
+        "commanders": [
+          "Caius Lutatius Catulus",
+          "Quintus Valerius Falto",
+          "Hannon"
+        ],
+        "outcome": "Victoire romaine décisive",
+        "forces": "Selon Polybe, 200 quinquérèmes romaines ; flotte carthaginoise d'environ 250 navires selon Diodore, chiffre incertain",
+        "losses": "Selon Polybe, 50 navires carthaginois coulés, 70 capturés et près de 10 000 prisonniers ; pertes romaines modestes"
+      },
+      "armies": [
+        {
+          "side": "Flotte romaine",
+          "from": "Ostie",
+          "faction": "romains",
+          "path": [
+            [
+              12.25,
+              41.75
+            ],
+            [
+              12,
+              40
+            ],
+            [
+              12.2,
+              38.5
+            ],
+            [
+              12.25,
+              37.92
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Flotte carthaginoise",
+          "from": "Carthage",
+          "faction": "carthaginois",
+          "path": [
+            [
+              10.32,
+              36.85
+            ],
+            [
+              11,
+              37.1
+            ],
+            [
+              11.8,
+              37.7
+            ],
+            [
+              12.4,
+              38.02
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Hamilcar Barca",
+          "role": "Chef invaincu d'Éryx, négociateur de la paix",
+          "faction": "carthaginois",
+          "archetype": "general",
+          "position": [
+            12.58,
+            38.04
+          ],
+          "person": "hamilcar-barca"
+        },
+        {
+          "name": "Caius Lutatius Catulus",
+          "role": "Consul, vainqueur des îles Égates",
+          "faction": "romains",
+          "archetype": "consul",
+          "position": [
+            12.49,
+            41.89
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mercenaires-240",
+      "year": -240,
+      "title": "La guerre des Mercenaires",
+      "type": "politique",
+      "location": [
+        10.15,
+        36.7
+      ],
+      "zoom": 5.5,
+      "summary": "Dès 241, les mercenaires impayés se révoltent, bientôt rejoints par les Libyens accablés d'impôts : Carthage manque de disparaître, puis Hamilcar Barca écrase la révolte vers 238 ; Rome en profite pour prendre la Sardaigne.",
+      "details": "Après la paix de 241, Carthage doit rapatrier et payer des milliers de **mercenaires** (soldats étrangers : Libyens, Ibères, Gaulois, Baléares, Grecs…) revenus de Sicile. L'État, sans argent, tarde. À **Sicca**, puis à Tunis, les soldats se mutinent sous **Spendios**, un ancien esclave italien, et **Mathos**, un Libyen. Les paysans libyens, étranglés par la moitié des récoltes réquisitionnées pendant la guerre, rejoignent la révolte ; **Utique** et **Hippo Acra** (Bizerte) passent aux rebelles.\n\nLa guerre, que **Polybe** appelle la « guerre sans trêve », devient d'une cruauté inouïe : prisonniers mutilés, jetés aux fauves, ou crucifiés. **Hannon le Grand**, premier général, échoue ; on confie l'armée à **Hamilcar Barca**, qui bat Spendios au « Défilé de la Scie » (*Prion*), encercle les rebelles et les fait écraser par ses éléphants. Le prince numide **Naravas** rejoint son camp.\n\nEn **237** environ, Mathos est pris et supplicié à Carthage. Mais pendant la crise, les mercenaires de Sardaigne se sont aussi soulevés. Rome, d'abord neutre, finit par s'emparer de l'île en **238-237** et exige 1 200 talents de plus, sous la menace d'une nouvelle guerre : acte que Polybe juge sans fondement, et que nous ne connaissons que par des sources romaines et grecques.",
+      "consequences": [
+        "Utique, Hippo Acra et plusieurs cités libyennes se détachent pendant la révolte, puis sont reprises.",
+        "Rome s'empare de la Sardaigne et de la Corse en 238-237 et impose 1 200 talents d'indemnité supplémentaires.",
+        "Carthage ne tient plus que son territoire africain, les Emporia, ses comptoirs, Malte, Ibiza et les Baléares, ainsi que Gadès.",
+        "Hamilcar, vainqueur des rebelles, obtient un commandement en Espagne pour reconstruire la puissance de Carthage."
+      ],
+      "territory": "mercenaires-240",
+      "territoryNote": "En 240, Carthage ne tient plus que sa péninsule, le Cap Bon et une partie de la côte tunisienne (Hadrumète) : Tunis, Utique, Hippo Acra (Bizerte) et la plupart des cités libyennes de l'intérieur (Byzacène) sont aux mains des rebelles, tandis que les Emporia de Tripolitaine, ses comptoirs algériens et marocains, Malte, Ibiza et les Baléares et Gadès restent à elle ; la Sardaigne est en révolte, bientôt prise par Rome ; la Sicile vient d'être cédée. Voisins : Rome, maîtresse de la Sicile occidentale ; Syracuse (Hiéron II), alliée de Rome ; les Numides de Naravas, ralliés à Hamilcar ; les rebelles libyens et mercenaires ; Massalia ; les Ibères ; les Étrusques, soumis à Rome.",
+      "sources": [
+        {
+          "label": "Wikipédia — Guerre des Mercenaires",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_des_Mercenaires"
+        },
+        {
+          "label": "Wikipédia — Hamilcar Barca",
+          "url": "https://fr.wikipedia.org/wiki/Hamilcar_Barca"
+        },
+        {
+          "label": "Wikipédia — Hannon le Grand",
+          "url": "https://fr.wikipedia.org/wiki/Hannon_le_Grand"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Carthage",
+          "Mercenaires et Libyens révoltés"
+        ],
+        "commanders": [
+          "Hamilcar Barca",
+          "Naravas (Numide)",
+          "Spendios",
+          "Mathos",
+          "Autarite (Gaulois)"
+        ],
+        "outcome": "Victoire d'Hamilcar au Défilé de la Scie ; fin de la révolte vers 237",
+        "forces": "Selon Polybe, environ 40 000 rebelles pris au piège au Défilé de la Scie ; effectifs carthaginois inconnus",
+        "losses": "Rebelles massacrés ou écrasés par les éléphants selon Polybe ; pertes carthaginoises inconnues"
+      },
+      "armies": [
+        {
+          "side": "Armée d'Hamilcar",
+          "from": "Carthage",
+          "faction": "carthaginois",
+          "path": [
+            [
+              10.32,
+              36.85
+            ],
+            [
+              10.06,
+              37.06
+            ],
+            [
+              9.9,
+              36.8
+            ],
+            [
+              10.1,
+              36.65
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Cavaliers numides de Naravas",
+          "from": "Numidie",
+          "faction": "numides",
+          "path": [
+            [
+              8.9,
+              36.1
+            ],
+            [
+              9.6,
+              36.4
+            ],
+            [
+              10.1,
+              36.65
+            ]
+          ],
+          "strength": 1,
+          "winner": true
+        },
+        {
+          "side": "Mercenaires révoltés",
+          "from": "Tunis",
+          "faction": "gaulois",
+          "path": [
+            [
+              10.18,
+              36.8
+            ],
+            [
+              9.8,
+              36.7
+            ],
+            [
+              10.1,
+              36.62
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Hamilcar Barca",
+          "role": "Vainqueur des mercenaires révoltés",
+          "faction": "carthaginois",
+          "archetype": "general",
+          "position": [
+            10.06,
+            37.06
+          ],
+          "person": "hamilcar-barca"
+        },
+        {
+          "name": "Hannon le Grand",
+          "role": "Chef du parti rival des Barcides",
+          "faction": "carthaginois",
+          "archetype": "senateur",
+          "position": [
+            10.32,
+            36.85
+          ],
+          "person": "hannon-le-grand"
+        }
+      ]
+    },
+    {
+      "id": "carthagene-227",
+      "year": -227,
+      "title": "L'Espagne barcide et Carthagène",
+      "type": "fondation",
+      "location": [
+        -0.98,
+        37.6
+      ],
+      "zoom": 5,
+      "summary": "Hamilcar débarque à Gadès en 237 pour refaire de l'Espagne la banque de Carthage ; son gendre Hasdrubal fonde Carthagène vers 227 et signe avec Rome le traité de l'Èbre.",
+      "details": "Pour payer l'indemnité due à Rome, **Hamilcar Barca** quitte Carthage en **237** avec son armée, son gendre **Hasdrubal** et son fils **Hannibal**, neuf ans selon la tradition. Il débarque à **Gadès** (Cadix) et soumet en quelques années l'Andalousie, les mines d'argent de la Sierra Morena et le sud-est de la péninsule, mélange de conquêtes et d'alliances avec les chefs ibères. Il meurt vers **229**, noyé dans un fleuve en fuyant une attaque.\n\nSon gendre **Hasdrubal le Beau** le remplace, joue de la diplomatie et épouse une princesse ibère. Vers **227**, il fonde **Carthago Nova** (Carthagène, la « nouvelle Carthage »), un grand port bien abrité, proche des mines d'argent, qui sert de capitale à ce que l'on appelle l'**Espagne barcide**, un quasi-royaume personnel d'une famille et de ses soldats. Vers **226**, Hasdrubal signe avec Rome un traité : les Carthaginois ne franchiront pas l'**Èbre** (fleuve du nord-est de l'Espagne) en armes. Sagonte, au sud de l'Èbre, n'est pas mentionnée, ce qui nourrira plus tard la dispute.\n\nSelon Polybe, Hannibal aurait juré dès l'enfance d'être l'ennemi de Rome. Ce serment, rapporté après les faits par des sources hostiles, est peut-être une légende. Hasdrubal est assassiné en **221** ; l'armée proclame Hannibal, âgé d'environ 25 ans, à sa place.",
+      "consequences": [
+        "Carthage reprend pied dans le sud et le sud-est de l'Espagne, de Gadès à Carthagène, avec ses mines d'argent.",
+        "L'Èbre devient la limite fixée avec Rome, sans que le sort de Sagonte, au sud, soit réglé.",
+        "L'argent espagnol permet de payer l'indemnité de Rome et de financer une armée fidèle aux Barcides.",
+        "Le centre de gravité de Carthage se déplace vers l'Espagne, où une dynastie quasi royale se forme."
+      ],
+      "territory": "carthagene-227",
+      "territoryNote": "En 227, Carthage tient le nord et l'est de la Tunisie (Carthage, Utique, Hadrumète, Cap Bon, Byzacène), les Emporia de Tripolitaine, ses comptoirs de la côte algérienne et marocaine, Malte, Ibiza et les Baléares, ainsi que l'Espagne barcide : Gadès, l'Andalousie, la Sierra Morena et le sud-est (Murcie, Carthagène) jusqu'au sud de l'Èbre, sans Sagonte. La Sicile et la Sardaigne sont perdues. Voisins : Rome, maîtresse de la Sicile, de la Sardaigne et de la Corse ; Sagonte, cité ibère alliée de Rome ; Massalia et ses colonies (Emporion), alliées de Rome ; les Ibères et Celtibères de l'intérieur ; les Numides (Syphax à l'ouest, Gaïa à l'est) ; les Étrusques, soumis à Rome.",
+      "sources": [
+        {
+          "label": "Wikipédia — Carthagène (Espagne)",
+          "url": "https://fr.wikipedia.org/wiki/Carthag%C3%A8ne_(Espagne)"
+        },
+        {
+          "label": "Wikipédia — Hasdrubal le Beau",
+          "url": "https://fr.wikipedia.org/wiki/Hasdrubal_le_Beau"
+        },
+        {
+          "label": "Wikipédia — Hispanie",
+          "url": "https://fr.wikipedia.org/wiki/Hispanie"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Hasdrubal le Beau",
+          "role": "Fondateur de Carthagène, gendre d'Hamilcar",
+          "faction": "carthaginois",
+          "archetype": "general",
+          "position": [
+            -0.98,
+            37.6
+          ],
+          "person": "hasdrubal-le-beau"
+        },
+        {
+          "name": "Hannibal",
+          "role": "Jeune officier de l'armée barcide",
+          "faction": "carthaginois",
+          "archetype": "general",
+          "quote": "Jamais je ne serai l'ami des Romains (serment d'enfance rapporté par Polybe, III, 11)",
+          "position": [
+            -1.2,
+            37.8
+          ],
+          "person": "hannibal"
+        }
+      ]
+    },
+    {
+      "id": "hannibal-218",
+      "year": -218,
+      "title": "Hannibal franchit les Alpes : la Trébie",
+      "type": "bataille",
+      "location": [
+        9.62,
+        45.03
+      ],
+      "zoom": 5.5,
+      "summary": "Parti d'Espagne, Hannibal traverse les Alpes et écrase l'armée consulaire sur la Trébie, en Cisalpine, en décembre 218.",
+      "details": "En **219**, Hannibal prend **Sagonte**, ville ibère alliée de Rome, au sud de l'Èbre, après huit mois de siège. Rome exige qu'on lui livre le général ; Carthage refuse : c'est la **deuxième guerre punique**. Au printemps **218**, Hannibal quitte **Carthagène** avec, selon Polybe, 90 000 fantassins et 12 000 cavaliers, laisse son frère **Hasdrubal** garder l'Espagne, et marche vers l'est, franchit le Rhône malgré les Gaulois, puis les **Alpes**, en automne, avec des éléphants. La traversée coûte cher : à l'arrivée en Italie, selon Polybe, il ne reste que 20 000 fantassins et 6 000 cavaliers.\n\nAu **Tessin**, sa cavalerie bat celle de **Publius Cornelius Scipion**, le père de l'Africain, qui est blessé. En décembre, sur la **Trébie**, près de Plaisance, le consul **Tiberius Sempronius Longus** s'engage au mépris des conseils. Hannibal le leurre : il lui envoie sa cavalerie légère, l'attire dans l'eau glacée, puis lance **Magon** et ses 2 000 hommes en embuscade sur ses arrières. L'armée romaine est taillée en pièces.\n\nLes Gaulois de la plaine du Pô, hostiles à Rome, rejoignent Hannibal et grossissent son armée. Mais presque tous ses éléphants meurent de froid. Les chiffres viennent de Polybe, plus tardif et favorable à Rome.",
+      "consequences": [
+        "Hannibal s'établit en Cisalpine (plaine du Pô) avec le soutien des Gaulois, ce qui lui offre une base et des vivres.",
+        "Carthage tient désormais l'Espagne jusqu'à l'Èbre et Sagonte, que son armée a prise en 219.",
+        "Rome perd la Cisalpine du nord, qui bascule aux mains des Gaulois ralliés à Hannibal.",
+        "La guerre se déplace en Italie, où Rome doit lever des légions en masse."
+      ],
+      "territory": "hannibal-218",
+      "territoryNote": "En 218, Carthage tient le nord et l'est de la Tunisie (Carthage, Utique, Hadrumète, Cap Bon, Byzacène), les Emporia de Tripolitaine, ses comptoirs de la côte algérienne et marocaine, Ibiza et les Baléares, ainsi que l'Espagne barcide : Gadès, l'Andalousie, le sud-est (Carthagène) et le littoral jusqu'à l'Èbre, avec Sagonte conquise en 219 ; Malte est romaine depuis peu. Voisins : Rome, maîtresse de l'Italie, de la Sicile, de la Sardaigne et de la Corse ; Massalia, alliée de Rome ; les Ibères et Celtibères de l'intérieur ; les Gaulois cisalpins, ralliés à Hannibal ; les Numides (Syphax, Gaïa) ; Syracuse (Hiéron II), alliée de Rome.",
+      "sources": [
+        {
+          "label": "Wikipédia — Deuxième guerre punique",
+          "url": "https://fr.wikipedia.org/wiki/Deuxi%C3%A8me_guerre_punique"
+        },
+        {
+          "label": "Wikipédia — Bataille de la Trébie",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_la_Tr%C3%A9bie"
+        },
+        {
+          "label": "Wikipédia — Hannibal Barca",
+          "url": "https://fr.wikipedia.org/wiki/Hannibal_Barca"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "République romaine et alliés italiens",
+          "Carthage et alliés gaulois"
+        ],
+        "commanders": [
+          "Tiberius Sempronius Longus",
+          "Publius Cornelius Scipion (blessé au Tessin)",
+          "Hannibal Barca",
+          "Magon Barca"
+        ],
+        "outcome": "Victoire carthaginoise décisive",
+        "forces": "Selon Polybe, environ 36 000 fantassins et 4 000 cavaliers romains et alliés ; environ 20 000 fantassins, 10 000 cavaliers (Gaulois compris) et des éléphants côté carthaginois",
+        "losses": "Pertes romaines très lourdes (peut-être 20 000 tués ou capturés selon les estimations modernes) ; pertes carthaginoises surtout parmi les Gaulois ; presque tous les éléphants meurent ensuite du froid"
+      },
+      "armies": [
+        {
+          "side": "Hannibal",
+          "from": "Carthagène",
+          "faction": "carthaginois",
+          "path": [
+            [
+              -0.98,
+              37.62
+            ],
+            [
+              3.1,
+              42.1
+            ],
+            [
+              4.8,
+              43.9
+            ],
+            [
+              6.95,
+              45.1
+            ],
+            [
+              7.7,
+              45.07
+            ],
+            [
+              9.55,
+              45.02
+            ]
+          ],
+          "strength": 2,
+          "winner": true,
+          "id": "hannibal"
+        },
+        {
+          "side": "Rome",
+          "from": "Rome",
+          "faction": "romains",
+          "path": [
+            [
+              12.49,
+              41.89
+            ],
+            [
+              12.57,
+              44.06
+            ],
+            [
+              11.34,
+              44.49
+            ],
+            [
+              9.69,
+              45.04
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Hannibal",
+          "role": "Chef carthaginois, vainqueur de la Trébie",
+          "faction": "carthaginois",
+          "archetype": "general",
+          "quote": "(formule libre) Les Alpes ne sont qu'une montagne : l'Italie est derrière",
+          "position": [
+            7,
+            45.1
+          ],
+          "person": "hannibal"
+        },
+        {
+          "name": "Hasdrubal Barca",
+          "role": "Frère d'Hannibal, chargé de l'Espagne",
+          "faction": "carthaginois",
+          "archetype": "general",
+          "position": [
+            -0.98,
+            37.62
+          ],
+          "person": "hasdrubal-barca"
+        }
+      ]
+    },
+    {
+      "id": "cannes-216",
+      "year": -216,
+      "title": "Cannes, le désastre",
+      "type": "bataille",
+      "location": [
+        16.1325,
+        41.3064
+      ],
+      "zoom": 5.5,
+      "summary": "Le 2 août 216, Hannibal encercle et anéantit la plus grande armée jamais levée par Rome : la pire défaite de son histoire.",
+      "details": "Après le **Trasimène** (217), où il détruit une armée romaine dans le brouillard, Hannibal descend vers l'Apulie, au sud-est de l'Italie, et s'empare du dépôt de ravitaillement de **Cannes**. Rome lève alors huit légions et, selon Polybe, 86 000 hommes. Le **2 août 216**, les deux consuls, **Lucius Aemilius Paullus** et **Caius Terentius Varro**, commandent un jour sur deux ; ce jour-là c'est Varron, plus impétueux.\n\nHannibal place au centre ses Gaulois et Ibères, en croissant avancé, et sur les ailes sa cavalerie, lourde (ibère et gauloise) à gauche sous **Hasdrubal**, légère (numide) à droite, où l'on cite **Hannon** et **Maharbal** selon les sources. Au contact, le centre cède en bon ordre, les Romains s'enfoncent dans la poche, et la cavalerie, après avoir chassé celle de Rome, les prend à revers. L'encerclement est total.\n\nSelon Polybe, 70 000 Romains périssent, dont Paullus ; Tite-Live parle de 48 200 morts, d'autres chiffres vont plus bas. Après la bataille, Maharbal presse Hannibal de marcher sur Rome, mais celui-ci refuse, selon Tite-Live : « Tu sais vaincre, Hannibal, tu ne sais pas profiter de la victoire. » Les sources sont romaines et grecques : elles exagèrent sans doute le désastre, qui reste immense.",
+      "consequences": [
+        "Capoue, seconde ville d'Italie, passe à Hannibal, avec une partie des Samnites, des Lucaniens, des Bruttiens et des Apuliens.",
+        "Carthage tient désormais l'Espagne barcide, l'Afrique du nord et, par alliés, une partie de l'Italie du sud.",
+        "Syracuse, après la mort d'Hiéron II, bascule dans le camp de Carthage en 215.",
+        "Rome ne livre plus de grande bataille rangée et adopte la stratégie du temporisateur Fabius."
+      ],
+      "territory": "cannes-216",
+      "territoryNote": "En 216, Carthage tient le nord et l'est de la Tunisie (Carthage, Utique, Hadrumète, Cap Bon, Byzacène), les Emporia de Tripolitaine, ses comptoirs algériens et marocains, Ibiza et les Baléares, l'Espagne barcide (Gadès, Andalousie, sud-est, jusqu'à l'Èbre, Sagonte comprise) ; à Cannes, Hannibal tient la plaine d'Apulie et reçoit le ralliement de Capoue, des Samnites, des Lucaniens et des Bruttiens, comptés comme alliés (statut allied). Voisins : Rome, qui garde le Latium, l'Étrurie, la Sicile et la Sardaigne ; Syracuse (Hiéron II, puis Hiéronymos) ; Massalia, alliée de Rome ; les Gaulois cisalpins, alliés d'Hannibal ; les Numides ; les Ibères.",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Cannes",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Cannes"
+        },
+        {
+          "label": "Wikipédia — Deuxième guerre punique",
+          "url": "https://fr.wikipedia.org/wiki/Deuxi%C3%A8me_guerre_punique"
+        },
+        {
+          "label": "Wikipédia — Maharbal",
+          "url": "https://fr.wikipedia.org/wiki/Maharbal"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "République romaine et alliés italiens",
+          "Carthage, Ibères, Gaulois et Numides"
+        ],
+        "commanders": [
+          "Lucius Aemilius Paullus (tué)",
+          "Caius Terentius Varro",
+          "Hannibal Barca",
+          "Hasdrubal",
+          "Maharbal",
+          "Hannon"
+        ],
+        "outcome": "Victoire carthaginoise écrasante",
+        "forces": "Selon Polybe, environ 80 000 fantassins et 6 000 cavaliers romains et alliés ; 40 000 fantassins et 10 000 cavaliers carthaginois",
+        "losses": "Selon Polybe, 70 000 morts romains (chiffre sans doute exagéré) ; Tite-Live donne 48 200 tués ; environ 5 700 morts côté carthaginois selon Polybe"
+      },
+      "armies": [
+        {
+          "side": "Hannibal",
+          "faction": "carthaginois",
+          "path": [
+            [
+              9.55,
+              45.02
+            ],
+            [
+              11.2,
+              44
+            ],
+            [
+              12.1,
+              43.15
+            ],
+            [
+              13.6,
+              42.4
+            ],
+            [
+              15,
+              41.6
+            ],
+            [
+              16.19,
+              41.32
+            ]
+          ],
+          "strength": 2,
+          "winner": true,
+          "id": "hannibal"
+        },
+        {
+          "side": "Rome",
+          "from": "Rome",
+          "faction": "romains",
+          "path": [
+            [
+              12.49,
+              41.89
+            ],
+            [
+              14.25,
+              41.1
+            ],
+            [
+              15.5,
+              41.2
+            ],
+            [
+              16.07,
+              41.29
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Hannibal",
+          "role": "Vainqueur de Cannes, maître de l'encerclement",
+          "faction": "carthaginois",
+          "archetype": "general",
+          "position": [
+            16.19,
+            41.32
+          ],
+          "person": "hannibal"
+        },
+        {
+          "name": "Maharbal",
+          "role": "Commandant de cavalerie",
+          "faction": "carthaginois",
+          "archetype": "general",
+          "quote": "Tu sais vaincre, Hannibal ; tu ne sais pas user de la victoire (Maharbal, selon Tite-Live)",
+          "position": [
+            16,
+            41.4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zama-202",
+      "year": -202,
+      "title": "Zama : Scipion l'Africain bat Hannibal",
+      "type": "bataille",
+      "location": [
+        9.4,
+        36.2
+      ],
+      "zoom": 5.5,
+      "summary": "En Afrique, Scipion remporte la bataille décisive contre Hannibal ; Carthage capitule et perd son empire hors d'Afrique.",
+      "details": "Après Cannes, Rome tient bon : elle reprend Capoue (211), Syracuse (212), Tarente (209), tandis que **Scipion**, futur « l'Africain », chasse les Carthaginois d'Espagne (**Ilipa**, 206 ; Gadès tombe peu après). Hasdrubal Barca, venu rejoindre son frère, est tué au **Métaure** (207). Élu consul, Scipion débarque en **Afrique** (204) et menace Carthage ; il s'allie au Numide **Massinissa**, ennemi de Syphax. Carthage rappelle Hannibal, qui quitte l'Italie après quinze ans.\n\nEn **202**, près de **Zama**, les deux généraux se parlent, sans accord. Hannibal aligne environ 36 000 à 40 000 hommes et **80 éléphants**. Scipion ouvre des couloirs dans ses lignes pour laisser passer les bêtes, que le vacarme des trompettes affole ; la cavalerie de **Massinissa** et de **Laelius** chasse celle de Carthage, puis revient frapper l'infanterie d'Hannibal à revers. Les vétérans d'Hannibal, en troisième ligne, sont pris en tenaille.\n\nSelon Polybe, 20 000 Carthaginois meurent et autant sont capturés, contre 1 500 morts chez Scipion (chiffres à nuancer). Le traité de **201** retire à Carthage sa flotte (sauf dix navires), ses éléphants et ses possessions hors d'Afrique, impose 10 000 talents sur cinquante ans, et lui interdit toute guerre sans l'accord de Rome.",
+      "consequences": [
+        "Carthage perd l'Espagne, que Rome organise en deux provinces, ainsi que les Baléares et toutes ses possessions hors d'Afrique.",
+        "Elle ne garde que son territoire africain, réduit, et doit rendre à Massinissa les terres de ses ancêtres.",
+        "Carthage perd sa flotte (dix navires gardés) et ses éléphants, et paie 10 000 talents sur cinquante ans.",
+        "Il lui est interdit de faire la guerre sans l'accord de Rome : Carthage devient de fait un État client."
+      ],
+      "territory": "zama-202",
+      "territoryNote": "En 202, Carthage ne tient plus que son territoire africain, réduit par le traité de 201 : le nord et l'est de la Tunisie (Carthage, Utique, Cap Bon, Byzacène côtière, Hadrumète), les Emporia de Tripolitaine, quelques comptoirs de la côte algérienne ; elle perd l'Espagne (Gadès, Carthagène, Andalousie), les Baléares, Ibiza, Malte, la Sicile et la Sardaigne. Voisins : Rome, qui prend les deux Espagnes, la Sicile, la Sardaigne et la Corse ; la Numidie unifiée de Massinissa, allié de Rome (qui récupère les terres de Syphax) ; les Maures de Maurétanie ; Syracuse, passée sous contrôle romain ; Massalia, alliée de Rome ; les Ibères.",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Zama",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Zama"
+        },
+        {
+          "label": "Wikipédia — Scipion l'Africain",
+          "url": "https://fr.wikipedia.org/wiki/Scipion_l'Africain"
+        },
+        {
+          "label": "Wikipédia — Massinissa",
+          "url": "https://fr.wikipedia.org/wiki/Massinissa"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "République romaine et Numides de Massinissa",
+          "Carthage"
+        ],
+        "commanders": [
+          "Publius Cornelius Scipion (l'Africain)",
+          "Caius Laelius",
+          "Massinissa",
+          "Hannibal Barca"
+        ],
+        "outcome": "Victoire romaine décisive ; fin de la deuxième guerre punique",
+        "forces": "Estimations modernes : environ 29 000 fantassins et 6 000 cavaliers côté romain et numide ; 36 000 à 40 000 hommes et 80 éléphants côté carthaginois",
+        "losses": "Selon Polybe, 20 000 Carthaginois tués et autant de prisonniers ; environ 1 500 morts côté romain"
+      },
+      "armies": [
+        {
+          "side": "Scipion",
+          "from": "Lilybée",
+          "faction": "romains",
+          "path": [
+            [
+              12.4,
+              37.8
+            ],
+            [
+              11,
+              37.5
+            ],
+            [
+              10.06,
+              37.06
+            ],
+            [
+              9.6,
+              36.5
+            ],
+            [
+              9.35,
+              36.18
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Carthage",
+          "from": "Hadrumète",
+          "faction": "carthaginois",
+          "path": [
+            [
+              10.6,
+              35.64
+            ],
+            [
+              10,
+              35.9
+            ],
+            [
+              9.46,
+              36.22
+            ]
+          ],
+          "strength": 2
+        },
+        {
+          "side": "Cavaliers de Massinissa",
+          "from": "Cirta",
+          "faction": "numides",
+          "path": [
+            [
+              6.61,
+              36.37
+            ],
+            [
+              8,
+              36.1
+            ],
+            [
+              9.3,
+              36.15
+            ]
+          ],
+          "strength": 1,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Scipion l'Africain",
+          "role": "Consul, vainqueur de Zama",
+          "faction": "romains",
+          "archetype": "consul",
+          "position": [
+            9.35,
+            36.18
+          ],
+          "person": "scipion-l-africain"
+        },
+        {
+          "name": "Hannibal",
+          "role": "Chef carthaginois, vaincu",
+          "faction": "carthaginois",
+          "archetype": "general",
+          "position": [
+            9.46,
+            36.22
+          ],
+          "person": "hannibal"
+        },
+        {
+          "name": "Massinissa",
+          "role": "Roi numide, allié de Scipion",
+          "faction": "numides",
+          "archetype": "roi",
+          "position": [
+            9.1,
+            36.15
+          ],
+          "person": "massinissa"
+        }
+      ]
+    },
+    {
+      "id": "massinissa-150",
+      "year": -150,
+      "title": "Massinissa grignote le territoire de Carthage",
+      "type": "politique",
+      "location": [
+        9,
+        36
+      ],
+      "zoom": 5.5,
+      "summary": "Vers 150, le vieux roi Massinissa, soutenu par Rome, s'empare peu à peu des terres de Carthage ; la cité, qui riposte en 150 sans l'accord de Rome, offre à Rome le prétexte de la guerre.",
+      "details": "Depuis le traité de 201, **Massinissa**, roi de Numidie, allié de Rome, profite d'une Carthage désarmée. Chaque fois qu'il s'empare d'un morceau de territoire (les **Emporia**, ces ports riches de la côte de Tripolitaine, ou des villes de l'intérieur, comme Tusca), la cité appelle Rome à l'arbitrer : les commissions romaines tranchent presque toujours en sa faveur. Carthage a pourtant payé son indemnité d'avance, en **151**, et prospère à nouveau : le commerce et l'agriculture, dont le traité du Carthaginois **Magon** reste la référence, nourrissent les villes.\n\nEn **153**, **Caton l'Ancien**, envoyé à Carthage pour arbitrer, revient impressionné par sa richesse, et commence à terminer ses discours par la phrase fameuse : « Du reste, je pense qu'il faut détruire Carthage » (selon Plutarque et Pline).\n\nEn **150**, le parti antiromain prend le pouvoir à Carthage, exile les partisans de Massinissa et lève une armée dirigée par **Hasdrubal**. Selon Appien, elle est battue près d'**Oroscopa**, par Massinissa, alors presque nonagénaire. Les chiffres de ce récit sont peu fiables. Carthage a rompu le traité en faisant la guerre sans l'accord de Rome. Rome décide la guerre en **149** ; Massinissa meurt en **148**.",
+      "consequences": [
+        "Massinissa annexe les Emporia de Tripolitaine (Leptis Magna et la Syrte), les plaines de la haute Medjerda et plusieurs villes de l'intérieur.",
+        "Carthage, ramenée au nord-est de la Tunisie, au Cap Bon et à une partie de la Byzacène, ne dispose plus que d'un territoire étroit.",
+        "L'armée carthaginoise est battue et Carthage a rompu le traité de 201 en attaquant un allié de Rome.",
+        "Rome déclare la guerre en 149, avec le prétexte qu'elle attendait."
+      ],
+      "territory": "massinissa-150",
+      "territoryNote": "Vers 150, Carthage ne tient plus qu'une bande étroite dans le nord et l'est de la Tunisie (Carthage, Utique, Cap Bon, Hadrumète et le littoral de la Byzacène), après avoir perdu à Massinissa les Emporia de Tripolitaine (Leptis Magna, Oea, Sabratha), la haute vallée de la Medjerda et les terres de l'intérieur. Ses comptoirs de la côte algérienne et marocaine sont passés pour l'essentiel sous contrôle numide ou maure. Voisins : la Numidie de Massinissa (Cirta, capitale), maîtresse de l'ouest et du sud ; les Maures ; Rome, qui tient l'Espagne, la Sicile, la Sardaigne et la Corse ; les Libyens du sud ; Massalia ; Syracuse, passée sous contrôle romain.",
+      "sources": [
+        {
+          "label": "Wikipédia — Massinissa",
+          "url": "https://fr.wikipedia.org/wiki/Massinissa"
+        },
+        {
+          "label": "Wikipédia — Troisième guerre punique",
+          "url": "https://fr.wikipedia.org/wiki/Troisi%C3%A8me_guerre_punique"
+        },
+        {
+          "label": "Wikipédia — Caton l'Ancien",
+          "url": "https://fr.wikipedia.org/wiki/Caton_l'Ancien"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Numidie de Massinissa",
+          "Carthage"
+        ],
+        "commanders": [
+          "Massinissa",
+          "Hasdrubal"
+        ],
+        "outcome": "Victoire numide près d'Oroscopa ; Carthage a rompu le traité de 201",
+        "forces": "Effectifs peu fiables ; Appien parle de dizaines de milliers d'hommes de part et d'autre",
+        "losses": "Lourdes pertes carthaginoises selon Appien ; chiffres incertains"
+      },
+      "armies": [
+        {
+          "side": "Numides de Massinissa",
+          "from": "Cirta",
+          "faction": "numides",
+          "path": [
+            [
+              6.61,
+              36.37
+            ],
+            [
+              8,
+              36.1
+            ],
+            [
+              9,
+              36
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée de Carthage",
+          "from": "Carthage",
+          "faction": "carthaginois",
+          "path": [
+            [
+              10.32,
+              36.85
+            ],
+            [
+              9.8,
+              36.4
+            ],
+            [
+              9.1,
+              36
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Massinissa",
+          "role": "Roi de Numidie",
+          "faction": "numides",
+          "archetype": "roi",
+          "position": [
+            6.61,
+            36.37
+          ],
+          "person": "massinissa"
+        },
+        {
+          "name": "Caton l'Ancien",
+          "role": "Sénateur romain, ennemi acharné de Carthage",
+          "faction": "romains",
+          "archetype": "senateur",
+          "quote": "Du reste, je pense qu'il faut détruire Carthage (selon Plutarque et Pline)",
+          "position": [
+            12.49,
+            41.89
+          ],
+          "person": "caton-l-ancien"
+        }
+      ]
+    },
+    {
+      "id": "carthage-146",
+      "year": -146,
+      "title": "Destruction de Carthage et de Corinthe",
+      "type": "chute",
+      "location": [
+        10.3233,
+        36.8528
+      ],
+      "zoom": 5.5,
+      "summary": "Au terme d'un siège de trois ans, Scipion Émilien prend et rase Carthage ; la même année, Corinthe est détruite. Rome crée les provinces d'Afrique et de Macédoine.",
+      "details": "La **troisième guerre punique** commence en **149** : Rome exige d'abord des otages et les armes, que Carthage livre, puis ordonne à la cité de se déplacer à l'intérieur des terres, loin de la mer. Carthage refuse, et résiste. Ses habitants, hommes et femmes, forgent armes et catapultes ; les remparts, immenses selon Appien, tiennent plusieurs années.\n\nEn **147**, **Scipion Émilien**, petit-fils adoptif de l'Africain, est élu consul avant l'âge, prend le commandement, coupe l'accès à la mer par une digue et affame la ville. Au printemps **146**, il force le port, puis les Romains montent à l'assaut de la colline de **Byrsa**. Pendant six jours, on se bat de maison en maison. Le chef carthaginois, **Hasdrubal le Boétarque**, se rend ; sa femme, selon Appien, l'insulte puis se jette dans les flammes avec ses enfants.\n\nLa ville brûle plusieurs jours ; environ 50 000 survivants sont vendus comme esclaves. La légende des champs salés par les Romains est une invention bien plus tardive. Le territoire devient la province romaine d'**Afrique**. Scipion, dit-on, cite Homère en pleurant, selon Polybe, présent sur place. Les sources sont toutes romaines ou grecques.",
+      "consequences": [
+        "La ville de Carthage est détruite et son territoire devient la province romaine d'Afrique, dans le nord-est de la Tunisie.",
+        "Les cités libyphéniciennes restées fidèles à Rome (Utique, capitale de la province, Hadrumète, Leptis Minor) gardent leur autonomie.",
+        "Les fils de Massinissa gardent les terres qu'ils avaient prises à Carthage, à l'ouest.",
+        "L'empire carthaginois disparaît ; Rome règne seule sur la Méditerranée occidentale."
+      ],
+      "territory": "carthage-146",
+      "territoryNote": "En 146, l'empire carthaginois n'existe plus : la ville de Carthage, assiégée depuis 149, ne tient plus que son enceinte et la colline de Byrsa, avant d'être rasée ; son territoire (nord et est de la Tunisie, Cap Bon, Byzacène) devient la province romaine d'Afrique, avec Utique pour capitale ; les cités fidèles à Rome (Utique, Hadrumète, Leptis Minor, Thapsus) gardent un statut libre. Voisins : Rome, maîtresse de l'Espagne, de la Sicile, de la Sardaigne, de la Corse, de la Macédoine et de la province d'Afrique ; la Numidie, qui garde les terres prises à Carthage à l'ouest, sous les fils de Massinissa ; les Maures ; Massalia, alliée de Rome ; les Ibères.",
+      "sources": [
+        {
+          "label": "Wikipédia — Troisième guerre punique",
+          "url": "https://fr.wikipedia.org/wiki/Troisi%C3%A8me_guerre_punique"
+        },
+        {
+          "label": "Wikipédia — Siège de Carthage",
+          "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_Carthage"
+        },
+        {
+          "label": "Wikipédia — Scipion Émilien",
+          "url": "https://fr.wikipedia.org/wiki/Scipion_%C3%89milien"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "République romaine",
+          "Carthage"
+        ],
+        "commanders": [
+          "Publius Cornelius Scipion Émilien",
+          "Hasdrubal le Boétarque"
+        ],
+        "outcome": "Prise et destruction de Carthage",
+        "forces": "Inconnues avec précision ; plusieurs dizaines de milliers d'assiégeants",
+        "losses": "Population décimée ; environ 50 000 survivants réduits en esclavage selon Appien"
+      },
+      "armies": [
+        {
+          "side": "Rome",
+          "from": "Ostie",
+          "faction": "romains",
+          "path": [
+            [
+              12.25,
+              41.75
+            ],
+            [
+              12,
+              39.2
+            ],
+            [
+              11.2,
+              37.6
+            ],
+            [
+              10.2,
+              37
+            ],
+            [
+              10.29,
+              36.88
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Carthage",
+          "from": "Carthage",
+          "faction": "carthaginois",
+          "path": [
+            [
+              10.15,
+              36.76
+            ],
+            [
+              10.35,
+              36.83
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Scipion Émilien",
+          "role": "Destructeur de Carthage",
+          "faction": "romains",
+          "archetype": "consul",
+          "quote": "Un jour viendra où périront la sainte Troie, Priam et son peuple (vers d'Homère cité par Scipion, selon Polybe)"
+        },
+        {
+          "name": "Hasdrubal le Boétarque",
+          "role": "Dernier chef de Carthage",
+          "faction": "carthaginois",
+          "archetype": "general",
+          "position": [
+            10.32,
+            36.85
+          ]
+        }
+      ]
+    }
+  ]
+}

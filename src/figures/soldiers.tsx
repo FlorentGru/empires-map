@@ -844,6 +844,22 @@ export const ESP_SOLDIER_SPECS = {
       path('M24.6 15.4L28 15.4L28.4 6Q26.3 3.4 24.2 6Z', '#6b4a2e') +
       path('M25 6.6L25 14.8M27.6 6.6L27.6 14.8', '#1f1a14', 'stroke="#1f1a14" stroke-width="1.1"'),
   },
+  numides: {
+    skin: '#a8724a',
+    tunic: '#d8c8a0',
+    legs: 'bare',
+    boots: '#a0703f',
+    deco: rect(10.8, 15.4, 10.4, 1.8, '#6b4a2e'),
+    head:
+      path('M11.4 8.6Q10.8 3.4 16 3.2Q21.2 3.4 20.6 8.6Q18.8 5.8 16 6.2Q13.2 5.8 11.4 8.6Z', '#1c1714') +
+      circ(12.6, 5.6, 1.8, '#1c1714') +
+      circ(16, 4.4, 2, '#1c1714') +
+      circ(19.4, 5.6, 1.8, '#1c1714') +
+      path('M12.4 9.4Q16 13.6 19.6 9.4L19.6 11Q16 13.8 12.4 11Z', '#1c1714'),
+    shield: circ(8.5, 23, 6, '#a9783f', 'stroke="#6b4a2e" stroke-width="1.2"') + circ(8.5, 23, 1.6, '#6b4a2e'),
+    weapon:
+      rect(23.6, 8, 0.9, 22, WOOD) + path('M24.05 4.4L25.2 8.4L22.9 8.4Z', STEEL) + rect(25.8, 6, 0.9, 24, WOOD) + path('M26.25 2.2L27.4 6.2L25.1 6.2Z', STEEL),
+  },
   'francais-ancien-regime': {
     tunic: '#efe6cc',
     legs: 'pants',

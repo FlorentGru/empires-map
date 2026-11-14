@@ -101,7 +101,14 @@
       36.853
     ],
     "founded": -814,
-    "rank": 1
+    "rank": 1,
+    "capitalOf": [
+      {
+        "empire": "carthage",
+        "from": -650,
+        "to": -146
+      }
+    ]
   },
   {
     "id": "athenae",
@@ -946,7 +953,8 @@
     "founded": -300,
     "rank": 3,
     "empires": [
-      "rome"
+      "rome",
+      "carthage"
     ]
   },
   {
@@ -964,7 +972,8 @@
     "founded": -300,
     "rank": 3,
     "empires": [
-      "rome"
+      "rome",
+      "carthage"
     ]
   },
   {
@@ -6953,5 +6962,299 @@
     ],
     "founded": 1200,
     "rank": 3
+  },
+  {
+    "id": "utica",
+    "modern": "Utique, Tunisie",
+    "names": [
+      {
+        "name": "Utique"
+      }
+    ],
+    "coords": [
+      10.063,
+      37.056
+    ],
+    "founded": -1100,
+    "rank": 2
+  },
+  {
+    "id": "hadrumetum",
+    "modern": "Sousse, Tunisie",
+    "names": [
+      {
+        "name": "Hadrumète",
+        "to": 700
+      },
+      {
+        "name": "Sousse",
+        "from": 701
+      }
+    ],
+    "coords": [
+      10.64,
+      35.826
+    ],
+    "founded": -800,
+    "rank": 3
+  },
+  {
+    "id": "motya",
+    "modern": "Motyé (île de San Pantaleo), Sicile",
+    "names": [
+      {
+        "name": "Motyé"
+      }
+    ],
+    "coords": [
+      12.4875,
+      37.8667
+    ],
+    "founded": -750,
+    "rank": 3,
+    "destroyed": -397,
+    "empires": [
+      "carthage"
+    ]
+  },
+  {
+    "id": "lilybaeum",
+    "modern": "Marsala, Sicile",
+    "names": [
+      {
+        "name": "Lilybée",
+        "to": 800
+      },
+      {
+        "name": "Marsala",
+        "from": 801
+      }
+    ],
+    "coords": [
+      12.435,
+      37.798
+    ],
+    "founded": -396,
+    "rank": 3
+  },
+  {
+    "id": "himera",
+    "modern": "Himère, Sicile",
+    "names": [
+      {
+        "name": "Himère"
+      }
+    ],
+    "coords": [
+      13.83,
+      37.97
+    ],
+    "founded": -648,
+    "rank": 3,
+    "destroyed": -409,
+    "empires": [
+      "carthage"
+    ]
+  },
+  {
+    "id": "ebusus",
+    "modern": "Ibiza, Baléares",
+    "names": [
+      {
+        "name": "Ebusus",
+        "to": 700
+      },
+      {
+        "name": "Ibiza",
+        "from": 701
+      }
+    ],
+    "coords": [
+      1.435,
+      38.907
+    ],
+    "founded": -654,
+    "rank": 3
+  },
+  {
+    "id": "tharros",
+    "modern": "Tharros, Sardaigne",
+    "names": [
+      {
+        "name": "Tharros"
+      }
+    ],
+    "coords": [
+      8.44,
+      39.875
+    ],
+    "founded": -730,
+    "rank": 3,
+    "empires": [
+      "carthage"
+    ]
+  },
+  {
+    "id": "akragas",
+    "modern": "Agrigente, Sicile",
+    "names": [
+      {
+        "name": "Akragas",
+        "to": 700
+      },
+      {
+        "name": "Agrigente",
+        "from": 701
+      }
+    ],
+    "coords": [
+      13.585,
+      37.29
+    ],
+    "founded": -581,
+    "rank": 3
+  },
+  {
+    "id": "alalia",
+    "modern": "Aléria, Corse",
+    "names": [
+      {
+        "name": "Alalia"
+      }
+    ],
+    "coords": [
+      9.51,
+      42.11
+    ],
+    "founded": -565,
+    "rank": 3,
+    "empires": [
+      "carthage"
+    ]
+  },
+  {
+    "id": "mylae",
+    "modern": "Milazzo, Sicile",
+    "names": [
+      {
+        "name": "Mylae",
+        "to": 800
+      },
+      {
+        "name": "Milazzo",
+        "from": 801
+      }
+    ],
+    "coords": [
+      15.24,
+      38.22
+    ],
+    "founded": -700,
+    "rank": 3,
+    "empires": [
+      "carthage"
+    ]
+  },
+  {
+    "id": "drepanum",
+    "modern": "Trapani, Sicile",
+    "names": [
+      {
+        "name": "Drepanum",
+        "to": 800
+      },
+      {
+        "name": "Trapani",
+        "from": 801
+      }
+    ],
+    "coords": [
+      12.51,
+      38.018
+    ],
+    "founded": -260,
+    "rank": 3,
+    "empires": [
+      "carthage"
+    ]
+  },
+  {
+    "id": "aegates",
+    "modern": "îles Égates (Favignana), Sicile",
+    "names": [
+      {
+        "name": "Îles Égates"
+      }
+    ],
+    "coords": [
+      12.33,
+      37.93
+    ],
+    "founded": -700,
+    "rank": 3,
+    "empires": [
+      "carthage"
+    ]
+  },
+  {
+    "id": "lixus",
+    "modern": "Lixus, près de Larache, Maroc",
+    "names": [
+      {
+        "name": "Lixus"
+      }
+    ],
+    "coords": [
+      -6.1,
+      35.2
+    ],
+    "founded": -700,
+    "rank": 3,
+    "empires": [
+      "carthage"
+    ]
+  },
+  {
+    "id": "cirta",
+    "modern": "Constantine, Algérie",
+    "names": [
+      {
+        "name": "Cirta",
+        "to": 300
+      },
+      {
+        "name": "Constantine",
+        "from": 301
+      }
+    ],
+    "coords": [
+      6.614,
+      36.365
+    ],
+    "founded": -400,
+    "rank": 3
+  },
+  {
+    "id": "saguntum",
+    "modern": "Sagonte (Sagunto), Espagne",
+    "names": [
+      {
+        "name": "Sagonte",
+        "to": 700
+      },
+      {
+        "name": "Sagunto",
+        "from": 701
+      }
+    ],
+    "coords": [
+      -0.278,
+      39.68
+    ],
+    "founded": -500,
+    "rank": 3,
+    "empires": [
+      "carthage"
+    ]
   }
 ]

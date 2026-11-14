@@ -1,0 +1,1045 @@
+{
+ "empire": "carthage",
+ "basemapNote": "Empire composé (fromCarto) : pays Natural Earth 1:50m (Tunisie, Libye, Algérie, Maroc, Italie, Espagne, Malte) découpés par des régions nommées (_regions.geojson) : territoire punique d'Afrique, Emporia de Tripolitaine, bandes côtières de comptoirs, ouest de la Sicile, Sardaigne, Malte, Baléares, côte andalouse et Espagne barcide. Alliés d'Hannibal en Italie du sud en -216. Frontières approximatives.",
+ "steps": [
+  {
+   "id": "carthage-650",
+   "year": -650,
+   "entities": [
+    {
+     "name": "Empire carthaginois",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Tunisia$",
+        "region": "Carthage et Cap Bon (origines)"
+       },
+       {
+        "country": "^Algeria$",
+        "region": "Côte algérienne orientale"
+       },
+       {
+        "country": "^Malta$"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Ibiza"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Gadès"
+       },
+       {
+        "country": "^Italy$",
+        "region": "Sicile punique"
+       },
+       {
+        "country": "^Italy$",
+        "region": "Sardaigne sud et ouest"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "alalia-540",
+   "year": -540,
+   "entities": [
+    {
+     "name": "Empire carthaginois",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Tunisia$",
+        "region": "Territoire punique d'Afrique"
+       },
+       {
+        "country": "^Algeria$",
+        "region": "Comptoirs d'Afrique du Nord"
+       },
+       {
+        "country": "^Morocco$",
+        "region": "Comptoirs du Maroc"
+       },
+       {
+        "country": "^Malta$"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Ibiza et Baléares"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Gadès et côte andalouse"
+       },
+       {
+        "country": "^Italy$",
+        "region": "Sicile punique"
+       },
+       {
+        "country": "^Italy$",
+        "region": "Sardaigne sud et ouest"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "traite-509",
+   "year": -509,
+   "entities": [
+    {
+     "name": "Empire carthaginois",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Tunisia$",
+        "region": "Territoire punique d'Afrique"
+       },
+       {
+        "country": "^Algeria$",
+        "region": "Comptoirs d'Afrique du Nord"
+       },
+       {
+        "country": "^Morocco$",
+        "region": "Comptoirs du Maroc"
+       },
+       {
+        "country": "^Malta$"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Ibiza et Baléares"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Gadès et côte andalouse"
+       },
+       {
+        "country": "^Italy$",
+        "region": "Sicile punique"
+       },
+       {
+        "country": "^Italy$",
+        "region": "Sardaigne sud et ouest"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "himere-480",
+   "year": -480,
+   "entities": [
+    {
+     "name": "Empire carthaginois",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Tunisia$",
+        "region": "Territoire punique d'Afrique"
+       },
+       {
+        "country": "^Algeria$",
+        "region": "Comptoirs d'Afrique du Nord"
+       },
+       {
+        "country": "^Morocco$",
+        "region": "Comptoirs du Maroc"
+       },
+       {
+        "country": "^Malta$"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Ibiza et Baléares"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Gadès et côte andalouse"
+       },
+       {
+        "country": "^Italy$",
+        "region": "Sicile punique"
+       },
+       {
+        "country": "^Italy$",
+        "region": "Sardaigne"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "periples-470",
+   "year": -470,
+   "entities": [
+    {
+     "name": "Empire carthaginois",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Tunisia$",
+        "region": "Territoire punique d'Afrique"
+       },
+       {
+        "country": "^Algeria$",
+        "region": "Comptoirs d'Afrique du Nord"
+       },
+       {
+        "country": "^Morocco$",
+        "region": "Comptoirs du Maroc"
+       },
+       {
+        "country": "^Morocco$",
+        "region": "Mogador"
+       },
+       {
+        "country": "^Malta$"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Ibiza et Baléares"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Gadès et côte andalouse"
+       },
+       {
+        "country": "^Italy$",
+        "region": "Sicile punique"
+       },
+       {
+        "country": "^Italy$",
+        "region": "Sardaigne"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "motye-397",
+   "year": -397,
+   "entities": [
+    {
+     "name": "Empire carthaginois",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Tunisia$",
+        "region": "Territoire punique d'Afrique"
+       },
+       {
+        "country": "^Libya$",
+        "region": "Emporia de Tripolitaine"
+       },
+       {
+        "country": "^Algeria$",
+        "region": "Comptoirs d'Afrique du Nord"
+       },
+       {
+        "country": "^Morocco$",
+        "region": "Comptoirs du Maroc"
+       },
+       {
+        "country": "^Morocco$",
+        "region": "Mogador"
+       },
+       {
+        "country": "^Malta$"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Ibiza et Baléares"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Gadès et côte andalouse"
+       },
+       {
+        "country": "^Italy$",
+        "region": "Sicile punique"
+       },
+       {
+        "country": "^Italy$",
+        "region": "Sardaigne"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "agathocle-310",
+   "year": -310,
+   "entities": [
+    {
+     "name": "Empire carthaginois",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "diff": [
+         {
+          "country": "^Tunisia$",
+          "region": "Territoire punique d'Afrique"
+         },
+         {
+          "country": "^Tunisia$",
+          "region": "Cap Bon"
+         }
+        ]
+       },
+       {
+        "country": "^Libya$",
+        "region": "Emporia de Tripolitaine"
+       },
+       {
+        "country": "^Algeria$",
+        "region": "Comptoirs d'Afrique du Nord"
+       },
+       {
+        "country": "^Morocco$",
+        "region": "Comptoirs du Maroc"
+       },
+       {
+        "country": "^Morocco$",
+        "region": "Mogador"
+       },
+       {
+        "country": "^Malta$"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Ibiza et Baléares"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Gadès et côte andalouse"
+       },
+       {
+        "country": "^Italy$",
+        "region": "Sicile punique"
+       },
+       {
+        "country": "^Italy$",
+        "region": "Sardaigne"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "pyrrhus-278",
+   "year": -278,
+   "entities": [
+    {
+     "name": "Empire carthaginois",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Tunisia$",
+        "region": "Territoire punique d'Afrique"
+       },
+       {
+        "country": "^Libya$",
+        "region": "Emporia de Tripolitaine"
+       },
+       {
+        "country": "^Algeria$",
+        "region": "Comptoirs d'Afrique du Nord"
+       },
+       {
+        "country": "^Morocco$",
+        "region": "Comptoirs du Maroc"
+       },
+       {
+        "country": "^Morocco$",
+        "region": "Mogador"
+       },
+       {
+        "country": "^Malta$"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Ibiza et Baléares"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Gadès et côte andalouse"
+       },
+       {
+        "country": "^Italy$",
+        "region": "Sicile punique"
+       },
+       {
+        "country": "^Italy$",
+        "region": "Sardaigne"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "mylae-260",
+   "year": -260,
+   "entities": [
+    {
+     "name": "Empire carthaginois",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Tunisia$",
+        "region": "Territoire punique d'Afrique"
+       },
+       {
+        "country": "^Libya$",
+        "region": "Emporia de Tripolitaine"
+       },
+       {
+        "country": "^Algeria$",
+        "region": "Comptoirs d'Afrique du Nord"
+       },
+       {
+        "country": "^Morocco$",
+        "region": "Comptoirs du Maroc"
+       },
+       {
+        "country": "^Morocco$",
+        "region": "Mogador"
+       },
+       {
+        "country": "^Malta$"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Ibiza et Baléares"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Gadès et côte andalouse"
+       },
+       {
+        "country": "^Italy$",
+        "region": "Sicile punique"
+       },
+       {
+        "country": "^Italy$",
+        "region": "Sardaigne"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "sicile-241",
+   "year": -241,
+   "entities": [
+    {
+     "name": "Empire carthaginois",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Tunisia$",
+        "region": "Territoire punique d'Afrique"
+       },
+       {
+        "country": "^Libya$",
+        "region": "Emporia de Tripolitaine"
+       },
+       {
+        "country": "^Algeria$",
+        "region": "Comptoirs d'Afrique du Nord"
+       },
+       {
+        "country": "^Morocco$",
+        "region": "Comptoirs du Maroc"
+       },
+       {
+        "country": "^Morocco$",
+        "region": "Mogador"
+       },
+       {
+        "country": "^Malta$"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Ibiza et Baléares"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Gadès et côte andalouse"
+       },
+       {
+        "country": "^Italy$",
+        "region": "Sardaigne"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "mercenaires-240",
+   "year": -240,
+   "entities": [
+    {
+     "name": "Empire carthaginois",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Tunisia$",
+        "region": "Carthage, Cap Bon et Hadrumète"
+       },
+       {
+        "country": "^Libya$",
+        "region": "Emporia de Tripolitaine"
+       },
+       {
+        "country": "^Algeria$",
+        "region": "Comptoirs d'Afrique du Nord"
+       },
+       {
+        "country": "^Morocco$",
+        "region": "Comptoirs du Maroc"
+       },
+       {
+        "country": "^Morocco$",
+        "region": "Mogador"
+       },
+       {
+        "country": "^Malta$"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Ibiza et Baléares"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Gadès et côte andalouse"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "carthagene-227",
+   "year": -227,
+   "entities": [
+    {
+     "name": "Empire carthaginois",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Tunisia$",
+        "region": "Territoire punique d'Afrique"
+       },
+       {
+        "country": "^Libya$",
+        "region": "Emporia de Tripolitaine"
+       },
+       {
+        "country": "^Algeria$",
+        "region": "Comptoirs d'Afrique du Nord"
+       },
+       {
+        "country": "^Morocco$",
+        "region": "Comptoirs du Maroc"
+       },
+       {
+        "country": "^Morocco$",
+        "region": "Mogador"
+       },
+       {
+        "country": "^Malta$"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Ibiza et Baléares"
+       },
+       {
+        "diff": [
+         {
+          "country": "^Spain$",
+          "region": "Espagne barcide"
+         },
+         {
+          "country": "^Spain$",
+          "region": "Sagonte"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "hannibal-218",
+   "year": -218,
+   "entities": [
+    {
+     "name": "Empire carthaginois",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Tunisia$",
+        "region": "Territoire punique d'Afrique"
+       },
+       {
+        "country": "^Libya$",
+        "region": "Emporia de Tripolitaine"
+       },
+       {
+        "country": "^Algeria$",
+        "region": "Comptoirs d'Afrique du Nord"
+       },
+       {
+        "country": "^Morocco$",
+        "region": "Comptoirs du Maroc"
+       },
+       {
+        "country": "^Morocco$",
+        "region": "Mogador"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Ibiza et Baléares"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Espagne barcide"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "cannes-216",
+   "year": -216,
+   "entities": [
+    {
+     "name": "Empire carthaginois",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Tunisia$",
+        "region": "Territoire punique d'Afrique"
+       },
+       {
+        "country": "^Libya$",
+        "region": "Emporia de Tripolitaine"
+       },
+       {
+        "country": "^Algeria$",
+        "region": "Comptoirs d'Afrique du Nord"
+       },
+       {
+        "country": "^Morocco$",
+        "region": "Comptoirs du Maroc"
+       },
+       {
+        "country": "^Morocco$",
+        "region": "Mogador"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Ibiza et Baléares"
+       },
+       {
+        "country": "^Spain$",
+        "region": "Espagne barcide"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Alliés italiens d'Hannibal",
+     "status": "allied",
+     "source": {
+      "country": "^Italy$",
+      "region": "Apulie"
+     }
+    }
+   ]
+  },
+  {
+   "id": "zama-202",
+   "year": -202,
+   "entities": [
+    {
+     "name": "Empire carthaginois",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Tunisia$",
+        "region": "Territoire punique d'Afrique"
+       },
+       {
+        "country": "^Libya$",
+        "region": "Emporia de Tripolitaine"
+       },
+       {
+        "country": "^Algeria$",
+        "region": "Côte algérienne orientale"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "massinissa-150",
+   "year": -150,
+   "entities": [
+    {
+     "name": "Empire carthaginois",
+     "status": "core",
+     "source": {
+      "country": "^Tunisia$",
+      "region": "Bande nord-est"
+     }
+    }
+   ]
+  },
+  {
+   "id": "carthage-146",
+   "year": -146,
+   "entities": [
+    {
+     "name": "Empire carthaginois",
+     "status": "core",
+     "source": {
+      "country": "^Tunisia$",
+      "region": "Carthage et banlieue (146)"
+     }
+    }
+   ]
+  }
+ ],
+ "checkpoints": [
+  {
+   "name": "Carthage",
+   "pt": [
+    10.32,
+    36.85
+   ],
+   "where": "core"
+  },
+  {
+   "name": "Utique",
+   "pt": [
+    10.06,
+    37.06
+   ],
+   "where": "core",
+   "from": "carthage-650",
+   "to": "sicile-241"
+  },
+  {
+   "name": "Utique",
+   "pt": [
+    10.06,
+    37.06
+   ],
+   "where": "core",
+   "from": "carthagene-227",
+   "to": "massinissa-150"
+  },
+  {
+   "name": "Utique",
+   "pt": [
+    10.06,
+    37.06
+   ],
+   "where": "not-core",
+   "from": "mercenaires-240",
+   "to": "mercenaires-240"
+  },
+  {
+   "name": "Utique",
+   "pt": [
+    10.06,
+    37.06
+   ],
+   "where": "not-core",
+   "from": "carthage-146",
+   "to": "carthage-146"
+  },
+  {
+   "name": "Hadrumète",
+   "pt": [
+    10.63,
+    35.83
+   ],
+   "where": "core",
+   "from": "carthage-650",
+   "to": "massinissa-150"
+  },
+  {
+   "name": "Lilybée (Marsala)",
+   "pt": [
+    12.55,
+    37.78
+   ],
+   "where": "core",
+   "from": "carthage-650",
+   "to": "mylae-260"
+  },
+  {
+   "name": "Lilybée (Marsala)",
+   "pt": [
+    12.55,
+    37.78
+   ],
+   "where": "not-core",
+   "from": "sicile-241"
+  },
+  {
+   "name": "Palerme",
+   "pt": [
+    13.36,
+    38.12
+   ],
+   "where": "core",
+   "from": "carthage-650",
+   "to": "mylae-260"
+  },
+  {
+   "name": "Palerme",
+   "pt": [
+    13.36,
+    38.12
+   ],
+   "where": "not-core",
+   "from": "sicile-241"
+  },
+  {
+   "name": "Syracuse",
+   "pt": [
+    15.29,
+    37.07
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Cagliari",
+   "pt": [
+    9.11,
+    39.22
+   ],
+   "where": "core",
+   "from": "carthage-650",
+   "to": "sicile-241"
+  },
+  {
+   "name": "Cagliari",
+   "pt": [
+    9.11,
+    39.22
+   ],
+   "where": "not-core",
+   "from": "mercenaires-240"
+  },
+  {
+   "name": "Ibiza",
+   "pt": [
+    1.43,
+    38.91
+   ],
+   "where": "core",
+   "from": "carthage-650",
+   "to": "cannes-216"
+  },
+  {
+   "name": "Cadix",
+   "pt": [
+    -6.2,
+    36.6
+   ],
+   "where": "core",
+   "from": "carthage-650",
+   "to": "cannes-216"
+  },
+  {
+   "name": "Cadix",
+   "pt": [
+    -6.2,
+    36.6
+   ],
+   "where": "not-core",
+   "from": "zama-202"
+  },
+  {
+   "name": "Carthagène",
+   "pt": [
+    -0.98,
+    37.6
+   ],
+   "where": "not-core",
+   "from": "carthage-650",
+   "to": "traite-509"
+  },
+  {
+   "name": "Carthagène",
+   "pt": [
+    -0.98,
+    37.6
+   ],
+   "where": "core",
+   "from": "carthagene-227",
+   "to": "cannes-216"
+  },
+  {
+   "name": "Carthagène",
+   "pt": [
+    -0.98,
+    37.6
+   ],
+   "where": "not-core",
+   "from": "zama-202"
+  },
+  {
+   "name": "Sagonte",
+   "pt": [
+    -0.27,
+    39.68
+   ],
+   "where": "not-core",
+   "from": "carthage-650",
+   "to": "carthagene-227"
+  },
+  {
+   "name": "Sagonte",
+   "pt": [
+    -0.27,
+    39.68
+   ],
+   "where": "core",
+   "from": "hannibal-218",
+   "to": "cannes-216"
+  },
+  {
+   "name": "Rome",
+   "pt": [
+    12.5,
+    41.9
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Marseille",
+   "pt": [
+    5.37,
+    43.3
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Alexandrie",
+   "pt": [
+    29.92,
+    31.2
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Cirta",
+   "pt": [
+    6.61,
+    36.36
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Madrid",
+   "pt": [
+    -3.7,
+    40.42
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Leptis Magna",
+   "pt": [
+    14.3,
+    32.55
+   ],
+   "where": "not-core",
+   "from": "carthage-650",
+   "to": "periples-470"
+  },
+  {
+   "name": "Leptis Magna",
+   "pt": [
+    14.3,
+    32.55
+   ],
+   "where": "core",
+   "from": "motye-397",
+   "to": "zama-202"
+  },
+  {
+   "name": "Leptis Magna",
+   "pt": [
+    14.3,
+    32.55
+   ],
+   "where": "not-core",
+   "from": "massinissa-150"
+  },
+  {
+   "name": "Malte (La Valette)",
+   "pt": [
+    14.51,
+    35.9
+   ],
+   "where": "core",
+   "from": "carthage-650",
+   "to": "carthagene-227"
+  },
+  {
+   "name": "Malte (La Valette)",
+   "pt": [
+    14.51,
+    35.9
+   ],
+   "where": "not-core",
+   "from": "hannibal-218"
+  },
+  {
+   "name": "Capoue",
+   "pt": [
+    14.25,
+    41.1
+   ],
+   "where": "allied",
+   "from": "cannes-216",
+   "to": "cannes-216"
+  }
+ ]
+}

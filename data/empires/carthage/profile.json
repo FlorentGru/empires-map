@@ -1,0 +1,423 @@
+{
+  "empire": "carthage",
+  "periods": [
+    {
+      "id": "cite-phenicienne",
+      "name": "La cité phénicienne",
+      "start": -650,
+      "end": -480,
+      "population": {
+        "total": {
+          "value": 1000000,
+          "low": 500000,
+          "high": 2000000,
+          "year": -500,
+          "note": "Ordre de grandeur reconstruit ; aucun recensement n'existe.",
+          "source": {
+            "label": "Wikipédia : Carthage",
+            "url": "https://fr.wikipedia.org/wiki/Carthage"
+          }
+        },
+        "cities": [
+          {
+            "name": "Carthage",
+            "population": {
+              "value": 30000,
+              "low": 15000,
+              "high": 60000,
+              "year": -500,
+              "note": "Estimation très large, fondée sur la surface bâtie.",
+              "source": {
+                "label": "Wikipédia : Carthage",
+                "url": "https://fr.wikipedia.org/wiki/Carthage"
+              }
+            }
+          },
+          {
+            "name": "Utique",
+            "population": {
+              "value": 10000,
+              "low": 5000,
+              "high": 20000,
+              "year": -500,
+              "note": "Ordre de grandeur ; la plus ancienne colonie de Tyr en Afrique.",
+              "source": {
+                "label": "Wikipédia : Utique",
+                "url": "https://fr.wikipedia.org/wiki/Utique"
+              }
+            }
+          },
+          {
+            "name": "Motyé",
+            "population": {
+              "value": 5000,
+              "low": 2000,
+              "high": 10000,
+              "year": -500,
+              "note": "Îlot fortifié de Sicile ; estimation très incertaine.",
+              "source": {
+                "label": "Wikipédia : Motyé",
+                "url": "https://fr.wikipedia.org/wiki/Moty%C3%A9"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Blé et olives de la plaine tunisienne",
+          "Argent et étain par les comptoirs d'Espagne",
+          "Pourpre et verre",
+          "Poissons salés et sel"
+        ],
+        "currency": "Pas de monnaie frappée : on pèse l'argent ; les premières monnaies carthaginoises ne datent que de la fin du Vᵉ siècle.",
+        "taxation": "Tribut des cités sujettes et des tribus libyennes ; droits de port et taxes sur le commerce.",
+        "trade": "Réseau de comptoirs reliant Tyr, la Sicile, la Sardaigne et l'Espagne ; échange de métaux, de vin, d'huile et de produits de luxe."
+      },
+      "army": {
+        "size": {
+          "value": 30000,
+          "low": 15000,
+          "high": 50000,
+          "year": -480,
+          "note": "Estimation reconstruite ; les chiffres antiques (300 000 à Himère) sont exagérés.",
+          "source": {
+            "label": "Wikipédia : Bataille d'Himère (480 av. J.-C.)",
+            "url": "https://fr.wikipedia.org/wiki/Bataille_d'Him%C3%A8re_(480_av._J.-C.)"
+          }
+        },
+        "composition": "Mercenaires libyens, ibères, ligures et sardes autour d'un petit noyau de citoyens ; marine de pentécontères et trières.",
+        "recruitment": "Recrutement de mercenaires payés ; les citoyens ne forment qu'un corps d'élite, le Bataillon sacré.",
+        "famousUnits": [
+          "Bataillon sacré (citoyens d'élite)",
+          "Cavaliers numides"
+        ],
+        "innovations": [
+          "Recours massif aux mercenaires",
+          "Flotte de pentécontères"
+        ]
+      },
+      "politics": {
+        "regime": "Cité-État oligarchique : suffètes, Conseil des Anciens et assemblée du peuple.",
+        "head": "Deux suffètes élus chaque année ; les Magonides dominent le pouvoir militaire.",
+        "succession": "Magistratures annuelles ; l'influence passe par les grandes familles.",
+        "institutions": "Sénat ou Conseil des Anciens, tribunal des Cent-Quatre, assemblée du peuple.",
+        "administration": "Comptoirs autonomes sous l'hégémonie de Carthage, qui exige un tribut et la loyauté militaire.",
+        "law": "Droit punique mal connu ; le serment et les contrats religieux jouent un grand rôle."
+      },
+      "society": {
+        "religions": [
+          "Baal Hammon",
+          "Tanit",
+          "Melqart (dieu de Tyr)",
+          "Rites du tophet, débattus"
+        ],
+        "languages": [
+          "Punique (phénicien)",
+          "Libyque"
+        ],
+        "structure": "Aristocratie marchande et foncière, artisans, marins, paysans libyens soumis, esclaves.",
+        "women": "Rôle surtout domestique ; des prêtresses et des reines légendaires comme Élissa, mais très peu de sources."
+      },
+      "culture": {
+        "inventions": [
+          "Alphabet punique",
+          "Pourpre de Tyr",
+          "Verre moulé sur noyau"
+        ],
+        "works": [
+          "Périple d'Hannon (texte grec)",
+          "Nécropoles de Carthage"
+        ],
+        "scholars": [
+          "Hannon le Navigateur",
+          "Himilcon"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Ports de Carthage, remparts, route des comptoirs maritimes ; pas de grand réseau routier avant les conquêtes en Afrique."
+      },
+      "legacy": "Une petite cité marchande devient la tête d'un réseau maritime qui fait de l'Occident une zone d'influence phénicienne."
+    },
+    {
+      "id": "maitresse-mediterranee",
+      "name": "Maîtresse de la Méditerranée occidentale",
+      "start": -480,
+      "end": -264,
+      "population": {
+        "total": {
+          "value": 3000000,
+          "low": 2000000,
+          "high": 4500000,
+          "year": -300,
+          "note": "Estimation reconstruite sur l'ensemble du territoire africain et des comptoirs.",
+          "source": {
+            "label": "Wikipédia : Carthage",
+            "url": "https://fr.wikipedia.org/wiki/Carthage"
+          }
+        },
+        "cities": [
+          {
+            "name": "Carthage",
+            "population": {
+              "value": 200000,
+              "low": 100000,
+              "high": 300000,
+              "year": -300,
+              "note": "Estimation moderne ; Strabon parle de 700 000 habitants en 149, chiffre jugé trop élevé.",
+              "source": {
+                "label": "Wikipédia : Carthage",
+                "url": "https://fr.wikipedia.org/wiki/Carthage"
+              }
+            }
+          },
+          {
+            "name": "Hadrumète",
+            "population": {
+              "value": 20000,
+              "low": 10000,
+              "high": 40000,
+              "year": -300,
+              "note": "Ordre de grandeur ; grand port de la côte de Byzacène.",
+              "source": {
+                "label": "Wikipédia : Sousse",
+                "url": "https://fr.wikipedia.org/wiki/Sousse"
+              }
+            }
+          },
+          {
+            "name": "Lilybée",
+            "population": {
+              "value": 20000,
+              "low": 10000,
+              "high": 40000,
+              "year": -278,
+              "note": "Forteresse de l'ouest de la Sicile ; estimation incertaine.",
+              "source": {
+                "label": "Wikipédia : Marsala",
+                "url": "https://fr.wikipedia.org/wiki/Marsala"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Blé, vigne, olivier, figuier",
+          "Argent d'Espagne",
+          "Étain d'Atlantique",
+          "Pourpre, verre, tissus teints"
+        ],
+        "currency": "Monnaie frappée en Sicile dès la fin du Vᵉ siècle, puis à Carthage : or, argent et bronze, utilisés surtout pour payer les mercenaires.",
+        "taxation": "Tribut en nature sur les Libyens, taxes de port et de douane ; la moitié des récoltes en temps de guerre.",
+        "trade": "Monopole du commerce vers l'Atlantique et l'Espagne ; traités avec Rome et les Étrusques."
+      },
+      "army": {
+        "size": {
+          "value": 50000,
+          "low": 30000,
+          "high": 70000,
+          "year": -310,
+          "note": "Estimation reconstruite d'après les armées d'Agathocle et de Pyrrhus.",
+          "source": {
+            "label": "Wikipédia : Agathocle",
+            "url": "https://fr.wikipedia.org/wiki/Agathocle"
+          }
+        },
+        "composition": "Mercenaires libyens, ibères, gaulois, grecs, baléares et numides ; éléphants à partir du IIIᵉ siècle ; grande flotte.",
+        "recruitment": "Mercenaires payés, levée de contingents sujets et petit corps de citoyens ; commandants choisis par la cité.",
+        "famousUnits": [
+          "Bataillon sacré",
+          "Frondeurs baléares",
+          "Cavalerie numide"
+        ],
+        "innovations": [
+          "Flotte de quinquérèmes",
+          "Fortifications renforcées du port"
+        ]
+      },
+      "politics": {
+        "regime": "République oligarchique, qu'Aristote loue comme une constitution mixte.",
+        "head": "Deux suffètes annuels ; les stratèges (généraux) sont choisis séparément.",
+        "succession": "Magistratures élues et renouvelées chaque année.",
+        "institutions": "Conseil des Anciens, Cent-Quatre juges, assemblée du peuple consultée en cas de désaccord.",
+        "administration": "Cités libyphéniciennes, tribus libyennes tributaires et colonies d'outre-mer sous contrôle de gouverneurs.",
+        "law": "Droit punique ; le contrôle des comptes des généraux revient aux Cent-Quatre."
+      },
+      "society": {
+        "religions": [
+          "Baal Hammon",
+          "Tanit",
+          "Melqart",
+          "Rites du tophet, débattus"
+        ],
+        "languages": [
+          "Punique",
+          "Libyque",
+          "Grec (commerce)"
+        ],
+        "structure": "Aristocratie de marchands et de propriétaires, artisans, marins, paysans libyens, esclaves.",
+        "women": "Rôle surtout domestique ; quelques prêtresses ; peu de sources directes."
+      },
+      "culture": {
+        "inventions": [
+          "Port circulaire du Cothon",
+          "Quinquérème",
+          "Constitution mixte"
+        ],
+        "works": [
+          "Traité d'agronomie de Magon",
+          "Périple d'Hannon"
+        ],
+        "scholars": [
+          "Magon l'agronome",
+          "Hannon le Navigateur"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Grand port civil et militaire de Carthage (cothon), remparts, routes de caravanes vers l'intérieur ; fermes à la manière punique."
+      },
+      "legacy": "Une puissance maritime riche, qui tient l'Ouest de la Méditerranée, mais dépend de mercenaires et de sa flotte."
+    },
+    {
+      "id": "guerres-puniques",
+      "name": "Les guerres puniques",
+      "start": -264,
+      "end": -146,
+      "population": {
+        "total": {
+          "value": 4000000,
+          "low": 2500000,
+          "high": 6000000,
+          "year": -218,
+          "note": "Estimation reconstruite pour l'Afrique punique et l'Espagne barcide.",
+          "source": {
+            "label": "Wikipédia : Carthage",
+            "url": "https://fr.wikipedia.org/wiki/Carthage"
+          }
+        },
+        "cities": [
+          {
+            "name": "Carthage",
+            "population": {
+              "value": 250000,
+              "low": 150000,
+              "high": 400000,
+              "year": -200,
+              "note": "Estimation moderne ; Strabon avance 700 000 en 149, chiffre très discuté.",
+              "source": {
+                "label": "Wikipédia : Carthage",
+                "url": "https://fr.wikipedia.org/wiki/Carthage"
+              }
+            }
+          },
+          {
+            "name": "Carthagène",
+            "population": {
+              "value": 40000,
+              "low": 20000,
+              "high": 60000,
+              "year": -218,
+              "note": "Capitale de l'Espagne barcide ; estimation incertaine.",
+              "source": {
+                "label": "Wikipédia : Carthagène (Espagne)",
+                "url": "https://fr.wikipedia.org/wiki/Carthag%C3%A8ne_(Espagne)"
+              }
+            }
+          },
+          {
+            "name": "Hadrumète",
+            "population": {
+              "value": 30000,
+              "low": 15000,
+              "high": 50000,
+              "year": -200,
+              "note": "Ordre de grandeur.",
+              "source": {
+                "label": "Wikipédia : Sousse",
+                "url": "https://fr.wikipedia.org/wiki/Sousse"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Argent des mines d'Espagne",
+          "Blé et vignes d'Afrique",
+          "Étain et poisson salé",
+          "Pourpre et verre"
+        ],
+        "currency": "Monnaies d'or, d'argent et de bronze frappées à Carthage, en Sicile et en Espagne ; l'argent espagnol finance la guerre.",
+        "taxation": "Tribut des sujets libyens, lourd en temps de guerre ; indemnités à Rome de 3 200 puis 10 000 talents.",
+        "trade": "Après 241, le commerce se redéploie vers l'Espagne et l'Atlantique ; il reste florissant jusqu'en 149."
+      },
+      "army": {
+        "size": {
+          "value": 50000,
+          "low": 40000,
+          "high": 70000,
+          "year": -216,
+          "note": "Estimation pour l'armée d'Hannibal à Cannes ; les chiffres antiques varient.",
+          "source": {
+            "label": "Wikipédia : Bataille de Cannes",
+            "url": "https://fr.wikipedia.org/wiki/Bataille_de_Cannes"
+          }
+        },
+        "composition": "Libyens, Ibères, Gaulois, Numides, Baléares ; éléphants ; flotte de quinquérèmes jusqu'en 201.",
+        "recruitment": "Mercenaires et contingents des peuples alliés ; les Barcides recrutent surtout en Espagne.",
+        "famousUnits": [
+          "Cavalerie numide",
+          "Frondeurs baléares",
+          "Éléphants de guerre"
+        ],
+        "innovations": [
+          "Encerclement double à Cannes",
+          "Armée professionnelle fidèle aux Barcides"
+        ]
+      },
+      "politics": {
+        "regime": "République oligarchique, dominée en Espagne par la famille barcide, dans une quasi-monarchie.",
+        "head": "Suffètes ; chefs militaires barcides (Hamilcar, Hasdrubal, Hannibal).",
+        "succession": "Magistratures annuelles ; l'armée acclame ses chefs barcides.",
+        "institutions": "Conseil des Anciens, Cent-Quatre, assemblée du peuple ; rivalité entre factions barcide et aristocratique.",
+        "administration": "Sujets africains tributaires ; Espagne barcide gérée comme un domaine familial ; Rome impose ses limites.",
+        "law": "Droit punique ; après 201, aucune guerre sans l'accord de Rome."
+      },
+      "society": {
+        "religions": [
+          "Baal Hammon",
+          "Tanit",
+          "Melqart",
+          "Rites du tophet, débattus"
+        ],
+        "languages": [
+          "Punique",
+          "Libyque",
+          "Grec"
+        ],
+        "structure": "Aristocratie, marchands, artisans, paysans libyens, mercenaires, esclaves.",
+        "women": "Rôle surtout domestique ; peu de sources ; des épouses mentionnées dans les récits, comme celle d'Hasdrubal en 146."
+      },
+      "culture": {
+        "inventions": [
+          "Traité d'agronomie de Magon",
+          "Monnaie punique",
+          "Éléphants de guerre"
+        ],
+        "works": [
+          "Traité de Magon (traduit en latin)",
+          "Remparts de Carthage"
+        ],
+        "scholars": [
+          "Magon l'agronome",
+          "Hannibal"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Carthage et son cothon, remparts imposants, ports de Carthagène et de Gadès ; routes et fermes en Afrique."
+      },
+      "legacy": "Une puissance maritime qui frôle la victoire sur Rome, puis est détruite : l'image de Carthage est surtout celle que ses ennemis ont laissée."
+    }
+  ]
+}

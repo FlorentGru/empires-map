@@ -1,0 +1,331 @@
+[
+  {
+    "id": "elissa-didon",
+    "name": "Élissa (Didon)",
+    "archetype": "roi",
+    "faction": "carthaginois",
+    "title": "Princesse tyrienne, fondatrice légendaire de Carthage",
+    "bio": "Élissa, que les Latins appellent Didon, est un personnage à la frontière du mythe et de l'histoire. Selon la tradition rapportée par Timée de Tauroménion, Justin et Virgile, elle est la sœur de Pygmalion, roi de Tyr, une cité phénicienne de l'actuel Liban. Son mari, le grand prêtre Acherbas (ou Sychée), est assassiné par le roi, qui convoite ses richesses. Élissa s'enfuit par la mer avec des nobles et des trésors, fait escale à Chypre, puis débarque sur la côte de l'actuelle Tunisie, vers 814 av. J.-C. selon la chronologie antique. Elle y achète, dit-on, la terre que couvrirait une peau de bœuf, découpée en lanières : la colline de Byrsa. Elle y fonde Qart-Hadasht, la « ville neuve ». Pour échapper au roi voisin Iarbas, qui veut l'épouser, elle se serait jetée dans un bûcher. Virgile, dans l'Énéide, en fait au Iᵉʳ siècle av. J.-C. l'amante d'Énée, ce qui est une pure invention littéraire. Aucun texte punique ne la mentionne : l'existence même d'Élissa n'est pas prouvée, mais la fondation de Carthage par Tyr, elle, est confirmée par l'archéologie.",
+    "keyFacts": [
+      "Vers 814 av. J.-C. (date traditionnelle) : fuite de Tyr et fondation de Carthage",
+      "Légende de la peau de bœuf : la colline de Byrsa",
+      "Se serait donné la mort pour refuser un mariage forcé",
+      "Chez Virgile : amante d'Énée (récit littéraire, sans valeur historique)"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Didon",
+        "url": "https://fr.wikipedia.org/wiki/Didon"
+      },
+      {
+        "label": "Wikipédia — Carthage",
+        "url": "https://fr.wikipedia.org/wiki/Carthage"
+      }
+    ]
+  },
+  {
+    "id": "magon-ier",
+    "name": "Magon Ier",
+    "archetype": "general",
+    "faction": "carthaginois",
+    "title": "Fondateur de la dynastie des Magonides",
+    "bio": "Magon est, selon Justin, le fondateur de la puissance militaire de Carthage au VIᵉ siècle av. J.-C. Il appartient à la famille qui donnera à la cité plusieurs de ses grands généraux, les Magonides. Justin lui attribue la réforme de l'armée carthaginoise : c'est lui, dit-il, qui aurait structuré une armée régulière et commencé à employer systématiquement des mercenaires. Sous son autorité, ou celle de ses fils, Carthage étend sa domination en Sicile et en Sardaigne, où elle intervient à partir du milieu du VIᵉ siècle. Ses fils Asdrubal et Hamilcar commandent ensuite les campagnes de Sardaigne, puis de Sicile. La famille tient les plus hautes charges pendant plus d'un demi-siècle, jusqu'à la défaite d'Himère, en 480, qui affaiblit durablement son prestige. Les données sur Magon sont maigres et tardives : Justin écrit au IIᵉ ou IIIᵉ siècle de notre ère, en résumant l'historien Trogue Pompée, et les dates varient. Les historiens modernes discutent donc le détail de ce qu'on lui prête.",
+    "keyFacts": [
+      "Vers 550-530 av. J.-C. (dates incertaines) : chef de Carthage selon Justin",
+      "Réforme de l'armée, qui fait appel à des mercenaires",
+      "Fondateur de la lignée des Magonides",
+      "Ses fils combattent en Sardaigne puis en Sicile"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Magon (Carthage)",
+        "url": "https://fr.wikipedia.org/wiki/Magon_(Carthage)"
+      },
+      {
+        "label": "Wikipédia — Carthage",
+        "url": "https://fr.wikipedia.org/wiki/Carthage"
+      }
+    ]
+  },
+  {
+    "id": "hamilcar-himere",
+    "name": "Hamilcar, fils de Magon",
+    "archetype": "general",
+    "faction": "carthaginois",
+    "died": -480,
+    "title": "Chef de l'expédition carthaginoise battue à Himère",
+    "bio": "Hamilcar est le général carthaginois qui conduit l'expédition de Sicile en 480 av. J.-C. Issu de la famille des Magonides, il est choisi pour restaurer à Himère le tyran Terillos, chassé par Théron d'Agrigente. Selon Hérodote et Diodore, il débarque à Panorme (Palerme) avec une armée qui serait de 300 000 hommes, chiffre invraisemblable, composée de mercenaires libyens, ibères, ligures, sardes et corses. Il installe son camp devant Himère, mais ses navires, tirés sur la plage, sont incendiés par la cavalerie de Gélon, tyran de Syracuse, qui se fait passer pour des alliés venus de Sélinonte, selon Diodore. Hamilcar est tué : Hérodote raconte qu'il s'est jeté dans le feu du sacrifice, et que les Carthaginois lui ont ensuite élevé des monuments ; Diodore parle d'un stratagème. Ces récits viennent de Grecs vainqueurs et les contradictions sont nombreuses. L'échec ruine le crédit de sa famille et marque la fin, pour plus de soixante-dix ans, des grandes expéditions carthaginoises en Sicile. Ses petits-fils reviendront en 409.",
+    "keyFacts": [
+      "480 av. J.-C. : débarque à Panorme avec une grande armée",
+      "Même année : battu par Gélon et Théron devant Himère",
+      "Selon Hérodote : se jette dans le bûcher après la défaite",
+      "Honoré ensuite par des monuments à Carthage, selon Hérodote"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Hamilcar fils de Magon",
+        "url": "https://fr.wikipedia.org/wiki/Hamilcar_fils_de_Magon"
+      },
+      {
+        "label": "Wikipédia — Bataille d'Himère (480 av. J.-C.)",
+        "url": "https://fr.wikipedia.org/wiki/Bataille_d'Him%C3%A8re_(480_av._J.-C.)"
+      }
+    ]
+  },
+  {
+    "id": "hannon-navigateur",
+    "name": "Hannon le Navigateur",
+    "archetype": "amiral",
+    "faction": "carthaginois",
+    "title": "Explorateur carthaginois de la côte atlantique de l'Afrique",
+    "bio": "Hannon est l'auteur supposé d'un texte grec bref, le *Périple d'Hannon*, traduction d'une inscription que l'explorateur aurait fait graver à Carthage dans le temple de Baal Hammon. Il y raconte l'expédition qu'il conduit à la tête de soixante navires de cinquante rameurs et de 30 000 colons pour fonder des villes libyphéniciennes sur la côte atlantique du Maroc. Il longe ensuite l'Afrique vers le sud, rencontre des volcans en éruption, une île peuplée de « gorilles » (les femmes velues dont on rapporte les peaux), et revient faute de vivres. Les historiens modernes discutent presque tout : la date (Vᵉ siècle av. J.-C. est l'hypothèse courante), le point extrême atteint (du Sénégal jusqu'au Cameroun), et même l'authenticité du texte, que certains croient embelli par les Grecs. Le texte le qualifie de « roi » des Carthaginois, ce que l'on comprend en général comme suffète, c'est-à-dire l'un des deux magistrats annuels de la cité. Pline l'Ancien situe son expédition « au temps de la puissance de Carthage ». Le texte reste le plus ancien récit d'exploration de la côte atlantique de l'Afrique.",
+    "keyFacts": [
+      "Vers 470-450 av. J.-C. (datation discutée) : grande expédition atlantique",
+      "Fonde des comptoirs sur la côte du Maroc, dont Lixus",
+      "Va jusqu'à une île de « gorilles » (lieu débattu)",
+      "Son récit, le Périple d'Hannon, ne nous est parvenu qu'en grec"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Hannon le Navigateur",
+        "url": "https://fr.wikipedia.org/wiki/Hannon_le_Navigateur"
+      },
+      {
+        "label": "Wikipédia — Périple d'Hannon",
+        "url": "https://fr.wikipedia.org/wiki/P%C3%A9riple_d'Hannon"
+      }
+    ]
+  },
+  {
+    "id": "hannon-le-grand",
+    "name": "Hannon le Grand",
+    "archetype": "senateur",
+    "faction": "carthaginois",
+    "title": "Chef du parti aristocratique, rival des Barcides",
+    "bio": "Hannon, dit le Grand, est le principal homme politique de Carthage au IIIᵉ siècle av. J.-C., à la tête du parti attaché à l'Afrique et à ses grands propriétaires terriens. Il commande une armée en Afrique pendant la première guerre punique, prend Hécatompyle (Theveste) en 247 et soumet des tribus numides. Il est aussi le général malheureux de la guerre des Mercenaires, qui rate le premier siège d'Utique en 241, avant que l'armée ne soit confiée à Hamilcar Barca. Les deux hommes sont tour à tour associés et rivaux, selon Polybe, qui est hostile aux uns comme aux autres. Il s'oppose ensuite à l'Espagne barcide, jugée trop coûteuse ; après la prise de Sagonte, il aurait plaidé au Sénat de Carthage, selon Tite-Live, pour qu'on livre Hannibal aux Romains, sans succès. Les dates précises de sa vie sont inconnues. Il appartient à l'élite foncière qui préfère l'Afrique à l'Espagne et la paix avec Rome à la guerre. Les discours que lui prête Tite-Live sont sans doute recomposés par l'historien.",
+    "keyFacts": [
+      "247 av. J.-C. : prend Hécatompyle en Afrique, selon Diodore",
+      "241-240 : général de la guerre des Mercenaires, avant Hamilcar",
+      "Rival politique des Barcides à Carthage",
+      "218 : aurait demandé de livrer Hannibal à Rome, selon Tite-Live"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Hannon le Grand",
+        "url": "https://fr.wikipedia.org/wiki/Hannon_le_Grand"
+      },
+      {
+        "label": "Wikipédia — Guerre des Mercenaires",
+        "url": "https://fr.wikipedia.org/wiki/Guerre_des_Mercenaires"
+      }
+    ]
+  },
+  {
+    "id": "hamilcar-barca",
+    "name": "Hamilcar Barca",
+    "archetype": "general",
+    "faction": "carthaginois",
+    "born": -275,
+    "died": -229,
+    "title": "Père d'Hannibal, fondateur de l'Espagne barcide",
+    "bio": "Hamilcar, surnommé Barca (« la foudre » ou « l'éclair » en phénicien, selon l'explication la plus courante), est le meilleur général carthaginois de la première guerre punique. En 247, il prend le commandement en Sicile et, de sa base d'Éryx, mène pendant six ans une guerre de harcèlement sans jamais être vaincu. Quand la flotte de Carthage est coulée aux îles Égates (241), il négocie la paix, qu'il juge humiliante. Il écrase ensuite la révolte des mercenaires (240-237), puis part pour l'Espagne en 237 avec son armée, son fils Hannibal et son gendre Hasdrubal. En huit ans, il soumet l'Andalousie, les mines d'argent et le sud-est de la péninsule, et finance ainsi le remboursement de l'indemnité due à Rome. Il meurt vers 229, noyé dans un fleuve en fuyant les Oretani. Selon Polybe et Tite-Live, il aurait fait jurer à son fils Hannibal, alors âgé de neuf ans, de ne jamais être l'ami de Rome : récit rapporté par des sources hostiles, discuté par certains historiens. Ses descendants, les Barcides, dirigent ensuite l'Espagne carthaginoise.",
+    "keyFacts": [
+      "247-241 av. J.-C. : harcèlement des Romains depuis Éryx, invaincu",
+      "240-237 : écrase les mercenaires révoltés",
+      "237 : part pour l'Espagne, soumet l'Andalousie et ses mines d'argent",
+      "Vers 229 : meurt noyé dans un fleuve, selon les sources antiques"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Hamilcar Barca",
+        "url": "https://fr.wikipedia.org/wiki/Hamilcar_Barca"
+      },
+      {
+        "label": "Wikipédia — Première guerre punique",
+        "url": "https://fr.wikipedia.org/wiki/Premi%C3%A8re_guerre_punique"
+      }
+    ]
+  },
+  {
+    "id": "hasdrubal-le-beau",
+    "name": "Hasdrubal le Beau",
+    "archetype": "general",
+    "faction": "carthaginois",
+    "died": -221,
+    "title": "Gendre d'Hamilcar, fondateur de Carthagène",
+    "bio": "Hasdrubal, dit le Beau, est le gendre d'Hamilcar Barca, dont il a épousé la fille. Il suit son beau-père en Espagne en 237 et prend sa place à sa mort, vers 229. Contrairement à Hamilcar, il préfère la diplomatie à la guerre : il noue des alliances avec les chefs ibères, épouse lui-même une princesse locale et fait de l'Espagne barcide un vrai petit royaume. Vers 227, il fonde Carthago Nova (Carthagène), port abrité et capitale de la région, proche des mines d'argent. En 226, il signe avec Rome le traité de l'Èbre : les Carthaginois ne franchiront pas ce fleuve en armes. Polybe, qui rapporte ce traité, dit aussi qu'il fut assassiné en 221 par un Gaulois, dont il avait fait exécuter le maître. Les Barcides lui doivent un État solide, mais aussi la dépendance personnelle de l'armée envers leur famille. L'armée proclame alors Hannibal pour lui succéder, avec l'accord du peuple de Carthage.",
+    "keyFacts": [
+      "Vers 229 av. J.-C. : succède à Hamilcar en Espagne",
+      "Vers 227 : fonde Carthago Nova (Carthagène)",
+      "226 : traité de l'Èbre avec Rome",
+      "221 : assassiné ; Hannibal lui succède"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Hasdrubal le Beau",
+        "url": "https://fr.wikipedia.org/wiki/Hasdrubal_le_Beau"
+      },
+      {
+        "label": "Wikipédia — Carthagène (Espagne)",
+        "url": "https://fr.wikipedia.org/wiki/Carthag%C3%A8ne_(Espagne)"
+      }
+    ]
+  },
+  {
+    "id": "hannibal",
+    "name": "Hannibal Barca",
+    "archetype": "general",
+    "faction": "carthaginois",
+    "born": -247,
+    "died": -183,
+    "title": "Général carthaginois, vainqueur de Cannes",
+    "bio": "Hannibal, fils d'Hamilcar Barca, naît en 247 av. J.-C. À neuf ans, selon la tradition, il suit son père en Espagne ; il prend la tête de l'armée barcide en 221, à 25 ans environ. Après la prise de Sagonte (219), il traverse les Pyrénées, le Rhône et les Alpes avec des éléphants, et bat les Romains au Tessin, à la Trébie (218), au Trasimène (217), puis à Cannes (216), où il anéantit la plus grande armée jamais levée par Rome. Pourtant il n'assiège pas Rome : il manque de machines et de renforts, et Carthage ne le soutient guère. Pendant quinze ans, il tient l'Italie du sud, puis est rappelé en Afrique et battu à Zama en 202 par Scipion. Élu suffète, il réforme les finances et les institutions de Carthage ; ses ennemis le dénoncent aux Romains et il s'exile auprès d'Antiochos III, puis du roi de Bithynie Prusias. Cerné par les Romains, il s'empoisonne vers 183, selon Tite-Live et Plutarque. Presque tout ce que nous savons de lui vient de Polybe et de Tite-Live, donc de ses adversaires.",
+    "keyFacts": [
+      "218 av. J.-C. : franchit les Alpes avec des éléphants",
+      "216 : victoire de Cannes",
+      "202 : battu à Zama par Scipion",
+      "196 : suffète, réforme Carthage ; exil en 195",
+      "Vers 183 : s'empoisonne en Bithynie, selon Tite-Live"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Hannibal Barca",
+        "url": "https://fr.wikipedia.org/wiki/Hannibal_Barca"
+      },
+      {
+        "label": "Wikipédia — Deuxième guerre punique",
+        "url": "https://fr.wikipedia.org/wiki/Deuxi%C3%A8me_guerre_punique"
+      }
+    ]
+  },
+  {
+    "id": "hasdrubal-barca",
+    "name": "Hasdrubal Barca",
+    "archetype": "general",
+    "faction": "carthaginois",
+    "born": -245,
+    "died": -207,
+    "title": "Frère d'Hannibal, gouverneur de l'Espagne",
+    "bio": "Hasdrubal Barca est le frère cadet d'Hannibal. Quand celui-ci part pour l'Italie en 218 av. J.-C., il lui confie le commandement de l'Espagne. Il y mène une longue guerre contre les frères Scipion (Publius et Cnaeus), qui sont tués en 211 ; mais il est ensuite défait à Baecula (208) par Scipion, le futur l'Africain. Il choisit alors de rejoindre son frère en Italie, passe les Pyrénées et les Alpes, et recrute des renforts chez les Gaulois. Il descend en 207 vers le sud, mais deux consuls, Claudius Néron et Livius Salinator, interceptent ses lettres, réunissent leurs armées et le battent sur le fleuve du Métaure. Il est tué dans le combat. Selon Tite-Live, Néron envoie sa tête jetée dans le camp d'Hannibal, qui aurait dit y reconnaître le destin de Carthage. Les Romains tiennent cette bataille pour décisive : si Hasdrubal avait rejoint Hannibal, la suite aurait été différente, estiment les historiens antiques, mais ce jugement reste discuté.",
+    "keyFacts": [
+      "218 av. J.-C. : laissé à la tête de l'Espagne",
+      "208 : battu à Baecula par Scipion",
+      "207 : franchit les Alpes pour rejoindre Hannibal",
+      "207 : battu et tué au Métaure"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Hasdrubal Barca",
+        "url": "https://fr.wikipedia.org/wiki/Hasdrubal_Barca"
+      },
+      {
+        "label": "Wikipédia — Bataille du Métaure",
+        "url": "https://fr.wikipedia.org/wiki/Bataille_du_M%C3%A9taure"
+      }
+    ]
+  },
+  {
+    "id": "magon-agronome",
+    "name": "Magon l'agronome",
+    "archetype": "sage",
+    "faction": "carthaginois",
+    "title": "Auteur du grand traité carthaginois d'agronomie",
+    "bio": "Magon est l'auteur d'un traité d'agriculture en vingt-huit livres, écrit en punique, que les Anciens ont tenu pour la bible des agronomes. Nous ne savons presque rien de sa vie : il vit sans doute au IIIᵉ ou au IIᵉ siècle av. J.-C., et son œuvre est citée par Varron, Columelle et Pline l'Ancien. Selon Pline, après la chute de Carthage en 146, le Sénat romain, qui donne les bibliothèques de la ville aux rois africains, ne conserve que ce traité et ordonne à des lettrés latins de le traduire. Le livre est perdu, mais des extraits nous restent, notamment sur la vigne, l'olivier, le figuier, l'élevage et l'apiculture. On y lit des conseils précis, par exemple, selon Columelle, de ne pas laisser l'agriculteur oublier sa maison pour la ville. Le traité montre que l'élite de Carthage cultive ses terres africaines, loin de l'image d'une cité seulement marchande. Les spécialistes discutent encore la date de sa composition et la part de son texte que les traducteurs romains ont conservée.",
+    "keyFacts": [
+      "Auteur d'un traité d'agronomie en 28 livres, en punique",
+      "Cité par Varron, Columelle et Pline l'Ancien",
+      "Après 146 av. J.-C. : traduit en latin sur ordre du Sénat, selon Pline",
+      "Le texte original est perdu"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Magon (agronome)",
+        "url": "https://fr.wikipedia.org/wiki/Magon_(agronome)"
+      },
+      {
+        "label": "Wikipédia — Carthage",
+        "url": "https://fr.wikipedia.org/wiki/Carthage"
+      }
+    ]
+  },
+  {
+    "id": "massinissa",
+    "name": "Massinissa",
+    "archetype": "roi",
+    "faction": "numides",
+    "born": -238,
+    "died": -148,
+    "title": "Roi de Numidie, allié de Rome",
+    "bio": "Massinissa naît vers 238 av. J.-C., fils du chef de la tribu numide des Massyles, à l'est de la Numidie. Il combat d'abord pour Carthage en Espagne, mais, quand le royaume rival des Masaesyles de Syphax s'allie à Rome, il passe, vers 206, dans le camp de Scipion. En 203, avec Laelius, il bat et capture Syphax ; à Zama (202), sa cavalerie numide décide de la bataille. Rome le récompense en lui donnant le royaume de Syphax : Massinissa règne sur toute la Numidie, avec Cirta pour capitale, et la transforme en État sédentaire où la culture des céréales et la cité se développent. Pendant cinquante ans, il grignote le territoire de Carthage, avec l'appui de Rome, qui arbitre toujours en sa faveur. Il meurt en 148, âgé d'environ quatre-vingt-dix ans, selon Polybe, laissant plusieurs dizaines d'enfants et la fortune de son royaume à ses fils, dont Micipsa. Les sources sont presque entièrement romaines : Tite-Live le dépeint en allié loyal, Appien en ambitieux.",
+    "keyFacts": [
+      "Vers 206 av. J.-C. : passe du côté romain",
+      "202 : sa cavalerie décide la victoire de Zama",
+      "Roi de toute la Numidie, avec Cirta pour capitale",
+      "Vers 150 : arrache à Carthage les Emporia et des terres",
+      "148 : meurt vers 90 ans"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Massinissa",
+        "url": "https://fr.wikipedia.org/wiki/Massinissa"
+      },
+      {
+        "label": "Wikipédia — Numidie",
+        "url": "https://fr.wikipedia.org/wiki/Numidie"
+      }
+    ]
+  },
+  {
+    "id": "scipion-l-africain",
+    "name": "Scipion l'Africain",
+    "archetype": "consul",
+    "faction": "romains",
+    "born": -236,
+    "died": -183,
+    "title": "Vainqueur d'Hannibal à Zama",
+    "bio": "Publius Cornelius Scipion, dit l'Africain, naît vers 236 av. J.-C. Il survit à Cannes (216), puis, à 24 ans, prend le commandement de l'Espagne en 210 : il y prend Carthagène en 209, bat Hasdrubal à Baecula (208) puis à Ilipa (206), et chasse les Carthaginois de la péninsule. Élu consul en 205, il propose de porter la guerre en Afrique, projet qu'une partie du Sénat, dont Fabius, juge risqué. Il débarque en 204, brûle les camps de Syphax et d'Hasdrubal fils de Gisco, s'allie à Massinissa et bat Hannibal à Zama (202). Rome lui décerne le surnom d'Africain. Plus tard, accusé de corruption avec son frère par des rivaux, parmi lesquels on cite parfois Caton, il se retire à Literne, en Campanie, où il meurt vers 183, peu après Hannibal. Les récits de sa vie viennent de Polybe, qui connaît sa famille, et de Tite-Live, qui l'embellit parfois : on lui prête un caractère inspiré, proche des dieux, que les historiens modernes jugent en partie légendaire.",
+    "keyFacts": [
+      "209 av. J.-C. : prend Carthagène",
+      "206 : victoire d'Ilipa, fin de l'Espagne carthaginoise",
+      "204 : débarque en Afrique",
+      "202 : bat Hannibal à Zama"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Scipion l'Africain",
+        "url": "https://fr.wikipedia.org/wiki/Scipion_l'Africain"
+      },
+      {
+        "label": "Wikipédia — Bataille de Zama",
+        "url": "https://fr.wikipedia.org/wiki/Bataille_de_Zama"
+      }
+    ]
+  },
+  {
+    "id": "caton-l-ancien",
+    "name": "Caton l'Ancien",
+    "archetype": "senateur",
+    "faction": "romains",
+    "born": -234,
+    "died": -149,
+    "title": "Censeur romain obsédé par la destruction de Carthage",
+    "bio": "Marcus Porcius Cato, dit Caton l'Ancien ou le Censeur, naît en 234 av. J.-C. dans une famille de petits propriétaires du Latium. Il combat Hannibal, devient consul en 195 et censeur en 184, et se fait connaître par sa sévérité contre le luxe et par son attachement aux mœurs romaines traditionnelles. Il écrit aussi le plus ancien traité d'agriculture latin, le *De agri cultura*, et une histoire de Rome, les *Origines*. En 153, il est envoyé à Carthage pour arbitrer un différend avec Massinissa et revient frappé par sa richesse et sa vitalité : il conclut, selon Plutarque, tous ses discours au Sénat par la phrase « Du reste, je pense qu'il faut détruire Carthage », parfois citée sous la forme « Delenda Carthago est ». Cette formule, popularisée plus tard, n'est attestée que par des sources tardives et sa fréquence réelle est inconnue. Il meurt en 149, au début de la troisième guerre punique, sans voir la ville détruite.",
+    "keyFacts": [
+      "195 av. J.-C. : consul",
+      "184 : censeur",
+      "153 : ambassade à Carthage, qui le frappe par sa richesse",
+      "Termine, selon Plutarque, ses discours par « il faut détruire Carthage »",
+      "149 : meurt au début de la dernière guerre"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Caton l'Ancien",
+        "url": "https://fr.wikipedia.org/wiki/Caton_l'Ancien"
+      },
+      {
+        "label": "Wikipédia — Troisième guerre punique",
+        "url": "https://fr.wikipedia.org/wiki/Troisi%C3%A8me_guerre_punique"
+      }
+    ]
+  }
+]
