@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Empire carthaginois",
+    "summary": "Fondée par des colons de Tyr, Carthage devient la grande puissance de la Méditerranée occidentale : elle tient le nord-est de la Tunisie, les comptoirs de la côte africaine, l'ouest de la Sicile, la Sardaigne, Malte, Ibiza et Gadès, puis l'Espagne des Barcides. Gouvernée par des suffètes et un conseil de grands marchands, elle combat Grecs et Romains avant d'être rasée en -146.",
+    "years": [-650, -146]
+  },
+  {
+    "name": "Alliés italiens d'Hannibal",
+    "summary": "Après la victoire de Cannes, une partie du sud de l'Italie abandonne Rome pour Hannibal : Capoue, deuxième ville de la péninsule, des cités d'Apulie, de Lucanie et du Bruttium. Ces alliés, souvent hésitants, ne fournissent pas l'armée de siège qui aurait permis de marcher sur Rome, et Rome les reprend un à un.",
+    "years": [-216, -216]
+  }
+]
