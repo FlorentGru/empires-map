@@ -1,0 +1,1419 @@
+{
+ "empire": "azteques",
+ "basemapNote": "Empire composé (fromCarto) : pays Natural Earth 1:50m (Mexique, Guatemala) découpés par des provinces tributaires nommées (_regions.geojson), du golfe du Mexique au Pacifique. Enclaves indépendantes retirées : Tlaxcala (avec Huexotzinco et Cholula), Metztitlán, Yopitzinco, Tututepec. Isthme de Tehuantepec allié en 1500. En 1521, seule l'île de Tenochtitlan. Frontières approximatives.",
+ "steps": [
+  {
+   "id": "azcapotzalco-1428",
+   "year": 1428,
+   "entities": [
+    {
+     "name": "Empire aztèque",
+     "status": "core",
+     "source": {
+      "diff": [
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tenochtitlan et rive ouest"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tlaxcala"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Metztitlán"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Yopitzinco"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tututepec"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "triple-alliance-1430",
+   "year": 1430,
+   "entities": [
+    {
+     "name": "Empire aztèque",
+     "status": "core",
+     "source": {
+      "diff": [
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Vallée de Mexico"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Chalco"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tlaxcala"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "moctezuma-1440",
+   "year": 1440,
+   "entities": [
+    {
+     "name": "Empire aztèque",
+     "status": "core",
+     "source": {
+      "diff": [
+       {
+        "union": [
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Vallée de Mexico"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Morelos"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Guerrero du nord"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Tepeaca et Tecamachalco"
+         }
+        ]
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Chalco"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tlaxcala"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Metztitlán"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Yopitzinco"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tututepec"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "famine-1454",
+   "year": 1454,
+   "entities": [
+    {
+     "name": "Empire aztèque",
+     "status": "core",
+     "source": {
+      "diff": [
+       {
+        "union": [
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Vallée de Mexico"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Morelos"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Guerrero du nord"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Tepeaca et Tecamachalco"
+         }
+        ]
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Chalco"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tlaxcala"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Metztitlán"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Yopitzinco"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tututepec"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "golfe-1465",
+   "year": 1465,
+   "entities": [
+    {
+     "name": "Empire aztèque",
+     "status": "core",
+     "source": {
+      "diff": [
+       {
+        "union": [
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Vallée de Mexico"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Morelos"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Guerrero du nord"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Guerrero central"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Puebla du sud et Tepeaca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Mixteca Alta"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Veracruz central (Totonacapan)"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Côte totonaque et Cotaxtla"
+         }
+        ]
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tlaxcala"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Metztitlán"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Yopitzinco"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tututepec"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "tlatelolco-1473",
+   "year": 1473,
+   "entities": [
+    {
+     "name": "Empire aztèque",
+     "status": "core",
+     "source": {
+      "diff": [
+       {
+        "union": [
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Vallée de Mexico"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Morelos"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Guerrero du nord"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Guerrero central"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Puebla du sud et Tepeaca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Mixteca Alta"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Veracruz central (Totonacapan)"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Côte totonaque et Cotaxtla"
+         }
+        ]
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tlaxcala"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Metztitlán"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Yopitzinco"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tututepec"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "tarasques-1478",
+   "year": 1478,
+   "entities": [
+    {
+     "name": "Empire aztèque",
+     "status": "core",
+     "source": {
+      "diff": [
+       {
+        "union": [
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Vallée de Mexico"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Morelos"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Guerrero du nord"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Guerrero central"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Puebla du sud et Tepeaca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Mixteca Alta"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Veracruz central (Totonacapan)"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Côte totonaque et Cotaxtla"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Vallée de Toluca"
+         }
+        ]
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tlaxcala"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Metztitlán"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Yopitzinco"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tututepec"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "templo-mayor-1487",
+   "year": 1487,
+   "entities": [
+    {
+     "name": "Empire aztèque",
+     "status": "core",
+     "source": {
+      "diff": [
+       {
+        "union": [
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Vallée de Mexico"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Morelos"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Guerrero du nord"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Guerrero central"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Puebla du sud et Tepeaca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Veracruz central (Totonacapan)"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Côte totonaque et Cotaxtla"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Vallée de Toluca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Mixteca Alta"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Hidalgo du sud"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Tlapa"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Oaxaca"
+         }
+        ]
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tlaxcala"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Metztitlán"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Yopitzinco"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tututepec"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "soconusco-1500",
+   "year": 1500,
+   "entities": [
+    {
+     "name": "Empire aztèque",
+     "status": "core",
+     "source": {
+      "diff": [
+       {
+        "union": [
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Vallée de Mexico"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Morelos"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Guerrero du nord"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Guerrero central"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Puebla du sud et Tepeaca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Veracruz central (Totonacapan)"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Côte totonaque et Cotaxtla"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Vallée de Toluca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Hidalgo du sud"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Oaxaca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Mixteca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Costa Chica et Tlapa"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Huastèque (côte nord de Veracruz)"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Soconusco"
+         }
+        ]
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tlaxcala"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Metztitlán"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Yopitzinco"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tututepec"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Isthme de Tehuantepec",
+     "status": "vassal",
+     "source": {
+      "country": "^(Mexico|Guatemala)$",
+      "region": "Isthme de Tehuantepec"
+     }
+    }
+   ]
+  },
+  {
+   "id": "moctezuma-1502",
+   "year": 1502,
+   "entities": [
+    {
+     "name": "Empire aztèque",
+     "status": "core",
+     "source": {
+      "diff": [
+       {
+        "union": [
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Vallée de Mexico"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Morelos"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Guerrero du nord"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Guerrero central"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Puebla du sud et Tepeaca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Veracruz central (Totonacapan)"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Côte totonaque et Cotaxtla"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Vallée de Toluca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Hidalgo du sud"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Oaxaca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Mixteca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Costa Chica et Tlapa"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Huastèque (côte nord de Veracruz)"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Soconusco"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Isthme de Tehuantepec"
+         }
+        ]
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tlaxcala"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Metztitlán"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Yopitzinco"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tututepec"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "cortes-1519",
+   "year": 1519,
+   "entities": [
+    {
+     "name": "Empire aztèque",
+     "status": "core",
+     "source": {
+      "diff": [
+       {
+        "union": [
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Vallée de Mexico"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Morelos"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Guerrero du nord"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Guerrero central"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Puebla du sud et Tepeaca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Veracruz central (Totonacapan)"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Vallée de Toluca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Hidalgo du sud"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Oaxaca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Mixteca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Costa Chica et Tlapa"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Huastèque (côte nord de Veracruz)"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Soconusco"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Isthme de Tehuantepec"
+         }
+        ]
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tlaxcala"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Metztitlán"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Yopitzinco"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tututepec"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "tenochtitlan-1519",
+   "year": 1519,
+   "entities": [
+    {
+     "name": "Empire aztèque",
+     "status": "core",
+     "source": {
+      "diff": [
+       {
+        "union": [
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Vallée de Mexico"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Morelos"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Guerrero du nord"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Guerrero central"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Puebla du sud et Tepeaca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Veracruz central (Totonacapan)"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Vallée de Toluca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Hidalgo du sud"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Oaxaca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Mixteca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Costa Chica et Tlapa"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Huastèque (côte nord de Veracruz)"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Soconusco"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Isthme de Tehuantepec"
+         }
+        ]
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tlaxcala"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Metztitlán"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Yopitzinco"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tututepec"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "noche-triste-1520",
+   "year": 1520,
+   "entities": [
+    {
+     "name": "Empire aztèque",
+     "status": "core",
+     "source": {
+      "diff": [
+       {
+        "union": [
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Vallée de Mexico"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Morelos"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Guerrero du nord"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Guerrero central"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Puebla du sud et Tepeaca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Veracruz central (Totonacapan)"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Vallée de Toluca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Hidalgo du sud"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Oaxaca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Mixteca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Costa Chica et Tlapa"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Huastèque (côte nord de Veracruz)"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Soconusco"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Isthme de Tehuantepec"
+         }
+        ]
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tlaxcala"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Metztitlán"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Yopitzinco"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tututepec"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "otumba-1520",
+   "year": 1520,
+   "entities": [
+    {
+     "name": "Empire aztèque",
+     "status": "core",
+     "source": {
+      "diff": [
+       {
+        "union": [
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Vallée de Mexico"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Morelos"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Guerrero du nord"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Guerrero central"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Puebla du sud et Tepeaca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Veracruz central (Totonacapan)"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Vallée de Toluca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Hidalgo du sud"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Oaxaca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Mixteca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Costa Chica et Tlapa"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Huastèque (côte nord de Veracruz)"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Soconusco"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Isthme de Tehuantepec"
+         }
+        ]
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tlaxcala"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Metztitlán"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Yopitzinco"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tututepec"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "variole-1520",
+   "year": 1520,
+   "entities": [
+    {
+     "name": "Empire aztèque",
+     "status": "core",
+     "source": {
+      "diff": [
+       {
+        "union": [
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Vallée de Mexico"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Morelos"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Guerrero du nord"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Guerrero central"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Puebla du sud et Tepeaca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Veracruz central (Totonacapan)"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Vallée de Toluca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Hidalgo du sud"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Oaxaca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Mixteca"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Costa Chica et Tlapa"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Huastèque (côte nord de Veracruz)"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Soconusco"
+         },
+         {
+          "country": "^(Mexico|Guatemala)$",
+          "region": "Isthme de Tehuantepec"
+         }
+        ]
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Texcoco et pays acolhua"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tepeaca et Tecamachalco"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tlaxcala"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Metztitlán"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Yopitzinco"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tututepec"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "tenochtitlan-1521",
+   "year": 1521,
+   "entities": [
+    {
+     "name": "Empire aztèque",
+     "status": "core",
+     "source": {
+      "diff": [
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Île de Tenochtitlan"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tlaxcala"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Metztitlán"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Yopitzinco"
+       },
+       {
+        "country": "^(Mexico|Guatemala)$",
+        "region": "Tututepec"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "checkpoints": [
+  {
+   "name": "Mexico-Tenochtitlan",
+   "pt": [
+    -99.13,
+    19.43
+   ],
+   "where": "core"
+  },
+  {
+   "name": "Texcoco",
+   "pt": [
+    -98.88,
+    19.51
+   ],
+   "where": "not-core",
+   "from": "azcapotzalco-1428",
+   "to": "azcapotzalco-1428"
+  },
+  {
+   "name": "Texcoco",
+   "pt": [
+    -98.88,
+    19.51
+   ],
+   "where": "core",
+   "from": "triple-alliance-1430",
+   "to": "otumba-1520"
+  },
+  {
+   "name": "Texcoco",
+   "pt": [
+    -98.88,
+    19.51
+   ],
+   "where": "not-core",
+   "from": "variole-1520"
+  },
+  {
+   "name": "Cuernavaca",
+   "pt": [
+    -99.23,
+    18.92
+   ],
+   "where": "not-core",
+   "from": "azcapotzalco-1428",
+   "to": "triple-alliance-1430"
+  },
+  {
+   "name": "Cuernavaca",
+   "pt": [
+    -99.23,
+    18.92
+   ],
+   "where": "core",
+   "from": "moctezuma-1440",
+   "to": "variole-1520"
+  },
+  {
+   "name": "Tlaxcala",
+   "pt": [
+    -98.24,
+    19.32
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Tzintzuntzan",
+   "pt": [
+    -101.58,
+    19.63
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Oaxaca",
+   "pt": [
+    -96.72,
+    17.06
+   ],
+   "where": "not-core",
+   "from": "azcapotzalco-1428",
+   "to": "tarasques-1478"
+  },
+  {
+   "name": "Oaxaca",
+   "pt": [
+    -96.72,
+    17.06
+   ],
+   "where": "core",
+   "from": "templo-mayor-1487",
+   "to": "variole-1520"
+  },
+  {
+   "name": "Veracruz (Cotaxtla)",
+   "pt": [
+    -96.2,
+    19.15
+   ],
+   "where": "core",
+   "from": "golfe-1465",
+   "to": "moctezuma-1502"
+  },
+  {
+   "name": "Veracruz (Cotaxtla)",
+   "pt": [
+    -96.2,
+    19.15
+   ],
+   "where": "not-core",
+   "from": "cortes-1519"
+  },
+  {
+   "name": "Tapachula (Soconusco)",
+   "pt": [
+    -92.26,
+    14.9
+   ],
+   "where": "core",
+   "from": "soconusco-1500",
+   "to": "variole-1520"
+  },
+  {
+   "name": "Mérida",
+   "pt": [
+    -89.62,
+    20.97
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Guadalajara",
+   "pt": [
+    -103.35,
+    20.67
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Monterrey",
+   "pt": [
+    -100.31,
+    25.67
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Guatemala",
+   "pt": [
+    -90.51,
+    14.63
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Toluca",
+   "pt": [
+    -99.66,
+    19.29
+   ],
+   "where": "core",
+   "from": "tarasques-1478",
+   "to": "variole-1520"
+  },
+  {
+   "name": "Tuxpan",
+   "pt": [
+    -97.4,
+    20.95
+   ],
+   "where": "core",
+   "from": "soconusco-1500",
+   "to": "variole-1520"
+  },
+  {
+   "name": "Acapulco",
+   "pt": [
+    -99.88,
+    16.86
+   ],
+   "where": "core",
+   "from": "soconusco-1500",
+   "to": "variole-1520"
+  },
+  {
+   "name": "Pachuca",
+   "pt": [
+    -98.73,
+    20.1
+   ],
+   "where": "core",
+   "from": "templo-mayor-1487",
+   "to": "variole-1520"
+  },
+  {
+   "name": "Tula (Hidalgo)",
+   "pt": [
+    -99.34,
+    20.05
+   ],
+   "where": "core",
+   "from": "templo-mayor-1487",
+   "to": "variole-1520"
+  },
+  {
+   "name": "Tehuantepec",
+   "pt": [
+    -95.24,
+    16.33
+   ],
+   "where": "vassal",
+   "from": "soconusco-1500",
+   "to": "soconusco-1500"
+  },
+  {
+   "name": "Tehuantepec",
+   "pt": [
+    -95.24,
+    16.33
+   ],
+   "where": "core",
+   "from": "moctezuma-1502",
+   "to": "variole-1520"
+  },
+  {
+   "name": "Cholula",
+   "pt": [
+    -98.3,
+    19.06
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Metztitlán",
+   "pt": [
+    -98.77,
+    20.6
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Tututepec",
+   "pt": [
+    -97.63,
+    16
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Cempoala",
+   "pt": [
+    -96.4,
+    19.45
+   ],
+   "where": "not-core",
+   "from": "cortes-1519"
+  },
+  {
+   "name": "Cuernavaca",
+   "pt": [
+    -99.23,
+    18.92
+   ],
+   "where": "not-core",
+   "from": "tenochtitlan-1521"
+  },
+  {
+   "name": "Oaxaca",
+   "pt": [
+    -96.72,
+    17.06
+   ],
+   "where": "not-core",
+   "from": "tenochtitlan-1521"
+  }
+ ]
+}

@@ -3308,7 +3308,14 @@
       19.433
     ],
     "founded": 1325,
-    "rank": 1
+    "rank": 1,
+    "capitalOf": [
+      {
+        "empire": "azteques",
+        "from": 1428,
+        "to": 1521
+      }
+    ]
   },
   {
     "id": "lima",
@@ -6633,5 +6640,318 @@
     ],
     "founded": 1070,
     "rank": 2
+  },
+  {
+    "id": "texcoco",
+    "modern": "Texcoco, Mexique",
+    "names": [
+      {
+        "name": "Tetzcoco"
+      }
+    ],
+    "coords": [
+      -98.883,
+      19.512
+    ],
+    "founded": 1100,
+    "rank": 2
+  },
+  {
+    "id": "tlacopan",
+    "modern": "Tacuba (Mexico), Mexique",
+    "names": [
+      {
+        "name": "Tlacopan"
+      }
+    ],
+    "coords": [
+      -99.19,
+      19.46
+    ],
+    "founded": 1300,
+    "rank": 3
+  },
+  {
+    "id": "azcapotzalco",
+    "modern": "Azcapotzalco (Mexico), Mexique",
+    "names": [
+      {
+        "name": "Azcapotzalco"
+      }
+    ],
+    "coords": [
+      -99.185,
+      19.49
+    ],
+    "founded": 1300,
+    "rank": 3,
+    "empires": [
+      "azteques"
+    ]
+  },
+  {
+    "id": "tlatelolco",
+    "modern": "Tlatelolco (Mexico), Mexique",
+    "names": [
+      {
+        "name": "Tlatelolco"
+      }
+    ],
+    "coords": [
+      -99.138,
+      19.452
+    ],
+    "founded": 1337,
+    "rank": 3,
+    "empires": [
+      "azteques"
+    ]
+  },
+  {
+    "id": "tlaxcala",
+    "modern": "Tlaxcala, Mexique",
+    "names": [
+      {
+        "name": "Tlaxcallan",
+        "to": 1521
+      },
+      {
+        "name": "Tlaxcala",
+        "from": 1522
+      }
+    ],
+    "coords": [
+      -98.237,
+      19.318
+    ],
+    "founded": 1250,
+    "rank": 2
+  },
+  {
+    "id": "cholula",
+    "modern": "Cholula, Mexique",
+    "names": [
+      {
+        "name": "Cholollan",
+        "to": 1521
+      },
+      {
+        "name": "Cholula",
+        "from": 1522
+      }
+    ],
+    "coords": [
+      -98.3,
+      19.063
+    ],
+    "founded": -200,
+    "rank": 2
+  },
+  {
+    "id": "huexotzinco",
+    "modern": "Huejotzingo, Mexique",
+    "names": [
+      {
+        "name": "Huexotzinco",
+        "to": 1521
+      },
+      {
+        "name": "Huejotzingo",
+        "from": 1522
+      }
+    ],
+    "coords": [
+      -98.4,
+      19.16
+    ],
+    "founded": 1200,
+    "rank": 3
+  },
+  {
+    "id": "tzintzuntzan",
+    "modern": "Tzintzuntzan, Mexique",
+    "names": [
+      {
+        "name": "Tzintzuntzan"
+      }
+    ],
+    "coords": [
+      -101.58,
+      19.63
+    ],
+    "founded": 1300,
+    "rank": 2
+  },
+  {
+    "id": "cempoala",
+    "modern": "Zempoala, Mexique",
+    "names": [
+      {
+        "name": "Cempoala"
+      }
+    ],
+    "coords": [
+      -96.4,
+      19.45
+    ],
+    "founded": 900,
+    "rank": 3,
+    "empires": [
+      "azteques"
+    ]
+  },
+  {
+    "id": "veracruz",
+    "modern": "Veracruz, Mexique",
+    "names": [
+      {
+        "name": "Villa Rica de la Vera Cruz",
+        "to": 1598
+      },
+      {
+        "name": "Veracruz",
+        "from": 1599
+      }
+    ],
+    "coords": [
+      -96.13,
+      19.2
+    ],
+    "founded": 1519,
+    "rank": 2
+  },
+  {
+    "id": "otumba",
+    "modern": "Otumba, Mexique",
+    "names": [
+      {
+        "name": "Otompan"
+      }
+    ],
+    "coords": [
+      -98.75,
+      19.7
+    ],
+    "founded": 1200,
+    "rank": 3,
+    "empires": [
+      "azteques"
+    ]
+  },
+  {
+    "id": "oaxaca",
+    "modern": "Oaxaca, Mexique",
+    "names": [
+      {
+        "name": "Huaxyacac",
+        "to": 1521
+      },
+      {
+        "name": "Oaxaca",
+        "from": 1522
+      }
+    ],
+    "coords": [
+      -96.726,
+      17.06
+    ],
+    "founded": 1250,
+    "rank": 2
+  },
+  {
+    "id": "soconusco",
+    "modern": "Tapachula (Soconusco), Mexique",
+    "names": [
+      {
+        "name": "Xoconochco",
+        "to": 1521
+      },
+      {
+        "name": "Soconusco",
+        "from": 1522
+      }
+    ],
+    "coords": [
+      -92.26,
+      14.91
+    ],
+    "founded": 1300,
+    "rank": 3
+  },
+  {
+    "id": "tuxpan",
+    "modern": "Tuxpan, Mexique",
+    "names": [
+      {
+        "name": "Tochpan",
+        "to": 1521
+      },
+      {
+        "name": "Tuxpan",
+        "from": 1522
+      }
+    ],
+    "coords": [
+      -97.4,
+      20.96
+    ],
+    "founded": 1300,
+    "rank": 3
+  },
+  {
+    "id": "teotihuacan",
+    "modern": "Teotihuacan, Mexique",
+    "names": [
+      {
+        "name": "Teotihuacan"
+      }
+    ],
+    "coords": [
+      -98.843,
+      19.692
+    ],
+    "founded": -100,
+    "rank": 3,
+    "empires": [
+      "azteques"
+    ]
+  },
+  {
+    "id": "tlaximaloyan",
+    "modern": "Hidalgo (Michoacán), Mexique",
+    "names": [
+      {
+        "name": "Tlaximaloyan"
+      }
+    ],
+    "coords": [
+      -100.45,
+      19.7
+    ],
+    "founded": 1300,
+    "rank": 3,
+    "empires": [
+      "azteques"
+    ]
+  },
+  {
+    "id": "cuernavaca",
+    "modern": "Cuernavaca, Mexique",
+    "names": [
+      {
+        "name": "Cuauhnahuac",
+        "to": 1521
+      },
+      {
+        "name": "Cuernavaca",
+        "from": 1522
+      }
+    ],
+    "coords": [
+      -99.23,
+      18.92
+    ],
+    "founded": 1200,
+    "rank": 3
   }
 ]

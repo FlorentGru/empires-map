@@ -16,10 +16,11 @@ import { ottomans } from './ottomans.ts';
 import { inca } from './inca.ts';
 import { mali } from './mali.ts';
 import { songhai } from './songhai.ts';
+import { azteques } from './azteques.ts';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 
-export const EMPIRES: EmpireConfig[] = [rome, napoleon, china, mongols, espagne, saintEmpire, carolingiens, alexandre, ottomans, inca, mali, songhai];
+export const EMPIRES: EmpireConfig[] = [rome, napoleon, china, mongols, espagne, saintEmpire, carolingiens, alexandre, ottomans, inca, mali, songhai, azteques];
 
 export function getEmpire(id: string): EmpireConfig {
   const e = EMPIRES.find((x) => x.id === id);

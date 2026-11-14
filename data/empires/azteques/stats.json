@@ -1,0 +1,21 @@
+{
+ "areas": {
+  "azcapotzalco-1428": 2824,
+  "triple-alliance-1430": 8660,
+  "moctezuma-1440": 63639,
+  "famine-1454": 63639,
+  "golfe-1465": 123973,
+  "tlatelolco-1473": 123973,
+  "tarasques-1478": 134040,
+  "templo-mayor-1487": 183565,
+  "soconusco-1500": 242528,
+  "moctezuma-1502": 275503,
+  "cortes-1519": 260048,
+  "tenochtitlan-1519": 260048,
+  "noche-triste-1520": 260048,
+  "otumba-1520": 260048,
+  "variole-1520": 239547,
+  "tenochtitlan-1521": 274
+ },
+ "apogee": "moctezuma-1502"
+}

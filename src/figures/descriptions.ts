@@ -269,6 +269,11 @@ export const FACTION_INFO: Record<Faction, FigureInfo> = {
     era: 'XVIe siècle',
     text: "En 1590, le sultan saadien Ahmed al-Mansour envoie à travers le Sahara une petite armée d'environ 4 000 hommes, commandée par Djouder Pacha, un renégat d'origine espagnole. Elle est formée d'arquebusiers, souvent des renégats andalous et européens, et emporte quelques canons. À Tondibi (1591), le feu de ses arquebuses disperse la cavalerie songhaï et met fin à l'empire.",
   },
+  mesoamericains: {
+    label: 'Peuples mésoaméricains',
+    era: 'XVe – XVIe siècle',
+    text: "Voisins et rivaux des Aztèques : Tépanèques d'Azcapotzalco, Tarasques du Michoacán, Mixtèques et Zapotèques d'Oaxaca, Huastèques. Tlaxcala, enclave jamais soumise, affronte les Aztèques dans les « guerres fleuries ». Ses milliers d'alliés rejoignent ensuite Cortés, sans lesquels la chute de Tenochtitlan n'aurait pas eu lieu. Les Tarasques, qui maîtrisent le travail du cuivre, infligent vers 1478 leur pire défaite aux Aztèques.",
+  },
   'francais-ancien-regime': {
     label: "Français d'Ancien Régime",
     era: 'XVIe – XVIIIe s.',
