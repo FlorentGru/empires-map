@@ -34,6 +34,7 @@ const EMPIRE_SPRITES: Record<string, { faction: Faction; archetype: Archetype }>
   inca: { faction: 'incas', archetype: 'souverain-precolombien' },
   mali: { faction: 'mandingues', archetype: 'mansa' },
   songhai: { faction: 'songhais', archetype: 'askia' },
+  azteques: { faction: 'azteques', archetype: 'souverain-precolombien' },
 };
 
 /** Au-delà, la légende des entités est tronquée (périodes de division). */
