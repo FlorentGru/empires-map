@@ -1,0 +1,1597 @@
+{
+  "id": "azteques",
+  "name": "Empire aztèque",
+  "color": "#2f8a7a",
+  "start": 1428,
+  "end": 1521,
+  "description": "L'Empire aztèque, ou plus exactement la Triple Alliance de Tenochtitlan, Texcoco et Tlacopan, naît en 1428 quand les Mexicas et leurs alliés renversent la cité tépanèque d'Azcapotzalco. En un siècle, il étend son tribut du plateau central au golfe du Mexique, au Pacifique et au Soconusco, sans jamais soumettre Tlaxcala ni le royaume tarasque. Sa capitale, Tenochtitlan, bâtie sur un lac, compte parmi les plus grandes villes du monde. En 1521, Hernán Cortés la prend avec des alliés indigènes, lassés du tribut et affaiblis par la variole.",
+  "view": {
+    "center": [
+      -98.5,
+      18.8
+    ],
+    "zoom": 5
+  },
+  "bounds": [
+    [
+      -110,
+      10
+    ],
+    [
+      -82,
+      28
+    ]
+  ],
+  "apogee": {
+    "stepId": "moctezuma-1502",
+    "note": "Sous Moctezuma II, la Triple Alliance atteint son extension maximale : une quarantaine de provinces tributaires (38 dans le Codex Mendoza), du golfe du Mexique au Pacifique et au Soconusco, sur environ 200 000 km² selon les estimations. Ces provinces ne forment pas un territoire continu, leurs limites exactes sont mal connues, et les sources sont des codex et chroniques écrits après la conquête."
+  },
+  "periods": [
+    {
+      "id": "triple-alliance",
+      "name": "La Triple Alliance",
+      "start": 1428,
+      "end": 1469,
+      "color": "#a8d5c8",
+      "summary": "Les Mexicas de Tenochtitlan, les Acolhuas de Texcoco et les Tépanèques de Tlacopan renversent Azcapotzalco en 1428 et se partagent le tribut. Sous Moctezuma Ier, l'alliance déborde de la vallée vers le Morelos, le Guerrero et le golfe."
+    },
+    {
+      "id": "grandes-conquetes",
+      "name": "Les grandes conquêtes",
+      "start": 1469,
+      "end": 1502,
+      "color": "#e8c98a",
+      "summary": "Axayacatl soumet Tlatelolco, mais échoue contre les Tarasques. Ahuitzotl consacre le Templo Mayor et pousse les armées jusqu'à l'isthme de Tehuantepec et au Soconusco."
+    },
+    {
+      "id": "moctezuma-ii-chute",
+      "name": "Moctezuma II et la chute",
+      "start": 1502,
+      "end": 1521,
+      "color": "#d99a8e",
+      "summary": "Moctezuma II règne sur un empire à son apogée. En 1519, Cortés arrive, s'allie aux ennemis des Mexicas, puis la variole et un siège de trois mois achèvent Tenochtitlan le 13 août 1521."
+    }
+  ],
+  "steps": [
+    {
+      "id": "azcapotzalco-1428",
+      "year": 1428,
+      "title": "Azcapotzalco tombe : les Mexicas renversent les Tépanèques",
+      "type": "bataille",
+      "location": [
+        -99.18,
+        19.49
+      ],
+      "zoom": 6,
+      "summary": "En 1428 (certaines sources disent 1427 ou 1430), Itzcoatl, tlatoani des Mexicas, et le prince Nezahualcoyotl de Texcoco renversent le tyran tépanèque Maxtla. Ce coup de force fonde la puissance aztèque.",
+      "details": "Au début du XVᵉ siècle, la vallée de Mexico, semée de lacs, est dominée par **Azcapotzalco**, cité des **Tépanèques** (un peuple parlant nahuatl, installé sur la rive ouest). Leur roi **Tezozomoc** a soumis presque toute la vallée. Les **Mexicas** (le peuple de **Tenochtitlan**, que l'on appelle aujourd'hui « Aztèques »), installés sur une île du lac depuis 1325 environ, ne sont que ses tributaires, comme les gens de **Texcoco**, sur la rive est.\n\nÀ la mort de Tezozomoc (1426), son fils **Maxtla** prend le pouvoir, fait tuer le souverain mexica **Chimalpopoca** (on dit *tlatoani*, « celui qui parle », pour désigner un roi nahua) et chasse **Nezahualcoyotl**, prince de Texcoco. Les Mexicas élisent alors **Itzcoatl**. Après un siège, qui dure environ cent jours selon Durán, la ville tombe en 1428 : Maxtla est tué, Azcapotzalco est pillée, ses terres sont partagées. La petite cité de **Tlacopan** (Tacuba), restée à l'écart, rejoint les vainqueurs.\n\nPrudence sur ces récits : ils ont été écrits après la conquête espagnole par des chroniqueurs (le dominicain Diego Durán, le prince texcocan Ixtlilxochitl) qui défendent chacun leur cité. Les dates varient d'un auteur à l'autre. L'essentiel est clair : en deux ou trois ans, une île tributaire devient maîtresse de la vallée.",
+      "consequences": [
+        "Azcapotzalco et les terres tépanèques de la rive ouest du lac passent aux vainqueurs, qui se les partagent.",
+        "Tenochtitlan cesse d'être tributaire et reçoit des terres sur la rive ; Tlacopan, cité de la rive ouest, s'associe aux vainqueurs.",
+        "Nezahualcoyotl peut reprendre Texcoco et le royaume acolhua de la rive est.",
+        "Les Tépanèques, tributaires de leurs anciens sujets, perdent leur rôle de puissance dominante de la vallée."
+      ],
+      "territory": "azcapotzalco-1428",
+      "territoryNote": "En 1428, les vainqueurs tiennent l'île de Tenochtitlan (centre de l'actuelle ville de Mexico) et les terres tépanèques de la rive ouest du lac : Azcapotzalco, Tlacopan (Tacuba) et leurs environs, dans l'actuelle ville de Mexico et la partie ouest de l'État de Mexico ; Texcoco et le pays acolhua de la rive est (État de Mexico) sont en cours de reconquête. Voisins : Tlatelolco, cité jumelle sur la même île, encore sous son propre tlatoani ; Xochimilco, Coyoacan, Culhuacan et Chalco (sud de la vallée), indépendants ; Tlaxcala, Huexotzinco et Cholula (vallée de Puebla), indépendants ; les Otomis du nord (Hidalgo) et le royaume tarasque (Michoacan), indépendants.",
+      "battle": {
+        "belligerents": [
+          "Mexicas de Tenochtitlan et alliés de Texcoco et Tlacopan",
+          "Tépanèques d'Azcapotzalco"
+        ],
+        "commanders": [
+          "Itzcoatl",
+          "Nezahualcoyotl",
+          "Maxtla"
+        ],
+        "outcome": "Prise d'Azcapotzalco ; mort de Maxtla ; fin de la domination tépanèque",
+        "forces": "Inconnues ; les chroniques insistent sur le petit nombre des Mexicas face aux Tépanèques",
+        "losses": "Inconnues ; la ville est pillée et ses habitants dispersés"
+      },
+      "armies": [
+        {
+          "side": "Mexicas d'Itzcoatl",
+          "from": "Tenochtitlan",
+          "faction": "azteques",
+          "path": [
+            [
+              -99.13,
+              19.43
+            ],
+            [
+              -99.16,
+              19.45
+            ],
+            [
+              -99.18,
+              19.48
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Acolhuas de Nezahualcoyotl",
+          "from": "Texcoco",
+          "faction": "azteques",
+          "path": [
+            [
+              -98.88,
+              19.51
+            ],
+            [
+              -99.05,
+              19.55
+            ],
+            [
+              -99.17,
+              19.5
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Tépanèques de Maxtla",
+          "from": "Azcapotzalco",
+          "faction": "mesoamericains",
+          "path": [
+            [
+              -99.2,
+              19.5
+            ],
+            [
+              -99.18,
+              19.49
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Itzcoatl",
+          "role": "Tlatoani de Tenochtitlan, vainqueur d'Azcapotzalco",
+          "faction": "azteques",
+          "archetype": "souverain-precolombien",
+          "quote": "(selon Durán) Vaincus, nous serons vos serviteurs ; vainqueurs, vous serez les nôtres",
+          "position": [
+            -99.14,
+            19.44
+          ],
+          "person": "itzcoatl"
+        },
+        {
+          "name": "Nezahualcoyotl",
+          "role": "Prince de Texcoco, allié des Mexicas",
+          "faction": "azteques",
+          "archetype": "sage",
+          "quote": "Même le jade se brise, même l'or se détruit… On ne vit pas toujours sur terre (poème attribué)",
+          "position": [
+            -99.05,
+            19.52
+          ],
+          "person": "nezahualcoyotl"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Empire aztèque",
+          "url": "https://fr.wikipedia.org/wiki/Empire_azt%C3%A8que"
+        },
+        {
+          "label": "Wikipédia — Azcapotzalco",
+          "url": "https://fr.wikipedia.org/wiki/Azcapotzalco"
+        },
+        {
+          "label": "Wikipédia — Nezahualcóyotl",
+          "url": "https://fr.wikipedia.org/wiki/Nezahualc%C3%B3yotl"
+        }
+      ]
+    },
+    {
+      "id": "triple-alliance-1430",
+      "year": 1430,
+      "title": "La Triple Alliance et la réécriture de l'histoire",
+      "type": "fondation",
+      "location": [
+        -99.13,
+        19.43
+      ],
+      "zoom": 5.8,
+      "summary": "Vers 1430, Tenochtitlan, Texcoco et Tlacopan scellent la Triple Alliance qui gouvernera la région. Itzcoatl et Tlacaelel réécrivent aussi les codex, selon les sources du XVIᵉ siècle.",
+      "details": "Vainqueurs d'Azcapotzalco, les Mexicas de **Tenochtitlan**, les Acolhuas de **Texcoco** (rive est) et les Tépanèques de **Tlacopan** (rive ouest) ne se séparent pas. Ils forment la **Triple Alliance**, que l'on désigne aujourd'hui du nom d'« Empire aztèque ». Le pacte est militaire : les trois cités partent en guerre ensemble, et se partagent le tribut des vaincus, deux cinquièmes pour Tenochtitlan, deux cinquièmes pour Texcoco et un cinquième pour Tlacopan. Chacune garde son propre roi (le *tlatoani*) et ses terres. En pratique, Tenochtitlan prendra peu à peu l'avantage.\n\nSous **Itzcoatl** (1427-1440), son conseiller **Tlacaelel**, qui porte le titre de *cihuacoatl* (« femme-serpent », sorte de premier ministre), refait la mémoire mexica. D'après les codex et chroniques du XVIᵉ siècle (Codex Matritense, Durán), on brûle les anciens livres peints, où les Mexicas apparaissaient comme un peuple modeste, et on écrit une histoire plus glorieuse : le dieu de guerre **Huitzilopochtli** devient maître du ciel, et le peuple, élu pour nourrir le Soleil. Les historiens discutent l'ampleur de cette réécriture, car la source principale est elle-même un récit tardif, mais ils y voient la naissance d'une idéologie impériale.",
+      "consequences": [
+        "La vallée de Mexico passe sous la direction de la Triple Alliance : Tenochtitlan, Texcoco et Tlacopan en tiennent les rives ouest et est.",
+        "Coyoacan, Xochimilco et d'autres cités du lac, rivales ou tépanèques, sont soumises dans les années qui suivent.",
+        "Chalco, au sud-est de la vallée, résiste et reste indépendant pour trente ans.",
+        "Les Mexicas gardent le pouvoir réel au sein de l'alliance, tandis que Texcoco devient le centre de la culture savante."
+      ],
+      "territory": "triple-alliance-1430",
+      "territoryNote": "Vers 1430-1435, la Triple Alliance tient le cœur de la vallée de Mexico : Tenochtitlan, Tlacopan, Azcapotzalco, Coyoacan, Xochimilco et Cuitlahuac sur les lacs du sud (ville de Mexico), Texcoco et le pays acolhua, de Teotihuacan à Chalco-Atenco à l'est (État de Mexico). Tlatelolco, sur la même île que Tenochtitlan, garde son propre tlatoani mais est dans l'orbite mexica. Voisins : Chalco et Amecameca (sud-est de la vallée), indépendants ; Cuernavaca (Cuauhnahuac, Morelos), indépendante ; Tlaxcala, Huexotzinco, Cholula (Puebla), indépendants ; les Otomis de Xilotepec et Hidalgo, indépendants ; le royaume tarasque (Michoacan), indépendant.",
+      "figures": [
+        {
+          "name": "Tlacaelel",
+          "role": "Cihuacoatl (conseiller suprême) de plusieurs souverains",
+          "faction": "azteques",
+          "archetype": "sage",
+          "quote": "Il n'est pas bon que tout le peuple connaisse les peintures (Codex Matritense, trad. libre)",
+          "position": [
+            -99.14,
+            19.44
+          ],
+          "person": "tlacaelel"
+        },
+        {
+          "name": "Itzcoatl",
+          "role": "Quatrième tlatoani de Tenochtitlan",
+          "faction": "azteques",
+          "archetype": "souverain-precolombien",
+          "quote": "(formule libre) Trois cités, un seul tribut à partager",
+          "position": [
+            -99.12,
+            19.43
+          ],
+          "person": "itzcoatl"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Empire aztèque",
+          "url": "https://fr.wikipedia.org/wiki/Empire_azt%C3%A8que"
+        },
+        {
+          "label": "Wikipédia — Tlacaélel",
+          "url": "https://fr.wikipedia.org/wiki/Tlaca%C3%A9lel"
+        },
+        {
+          "label": "Wikipédia — Tenochtitlan",
+          "url": "https://fr.wikipedia.org/wiki/Tenochtitlan"
+        }
+      ]
+    },
+    {
+      "id": "moctezuma-1440",
+      "year": 1440,
+      "title": "Moctezuma Ier : Morelos, Guerrero et Puebla",
+      "type": "politique",
+      "location": [
+        -99.23,
+        18.92
+      ],
+      "zoom": 5.3,
+      "summary": "À partir de 1440, Moctezuma Ier lance les armées de la Triple Alliance au-delà de la vallée : vers le sud (Morelos, Guerrero), puis l'est. L'empire de tribut commence.",
+      "details": "À la mort d'**Itzcoatl** (1440), les électeurs (nobles et prêtres) choisissent son neveu **Moctezuma Ier** (Motecuhzoma Ilhuicamina, « celui qui tire vers le ciel »). Ce guerrier, aidé du vieux **Tlacaelel**, change la nature de l'alliance : on ne vise plus seulement à dominer la vallée, mais à **tirer un tribut** de provinces lointaines.\n\nLes campagnes commencent vers le sud, par-delà les montagnes : le **Morelos** (Cuauhnahuac, aujourd'hui Cuernavaca, et Huaxtepec, célèbre pour ses jardins de plantes), puis le nord du **Guerrero**, riche en coton et en cuivre. Le coton, les plumes, le cacao et les peaux arrivent à Tenochtitlan sous forme d'impôts, à dates fixes. Le *Codex Mendoza*, rédigé vers 1541 à la demande du vice-roi, en donne la liste par province.\n\nIl ne faut pas imaginer un État centralisé comme Rome. La Triple Alliance laisse les rois locaux en place ; elle exige le tribut, des troupes en cas de guerre, et le respect de ses dieux. Si une cité refuse, l'armée revient. C'est ce que les historiens appellent un empire « hégémonique ». Dans la vallée même, Moctezuma Ier fait aussi bâtir des temples et lance de grands travaux (digue, aqueducs), qui font de Tenochtitlan la capitale du pays.",
+      "consequences": [
+        "Le Morelos (Cuauhnahuac, Huaxtepec, Yautepec) devient tributaire de la Triple Alliance, avec son coton et son papier d'écorce.",
+        "Le nord du Guerrero (Tepecuacuilco, Tlalcozauhtitlan) passe sous contrôle mexica, ouvrant la route du cuivre et du sel.",
+        "Les armées s'avancent vers le pays de Puebla, jusqu'à Tepeaca, aux portes des enclaves libres.",
+        "Les provinces tributaires paient en nature à des dates fixes : coton, plumes, jade, cacao, vêtements."
+      ],
+      "territory": "moctezuma-1440",
+      "territoryNote": "Vers 1450, la Triple Alliance tient toute la vallée de Mexico sauf Chalco, plus le Morelos au sud (Cuauhnahuac/Cuernavaca, Huaxtepec, Yautepec), le nord du Guerrero (Tepecuacuilco, Tlalcozauhtitlan), et des marges de Puebla à l'est (Tepeaca en cours). Voisins : Chalco et Amecameca, indépendants ; Tlaxcala, Huexotzinco et Cholula (Puebla), indépendants ; la Mixteca (Oaxaca), indépendante ; Yopitzinco (côte du Guerrero), indépendante ; les Otomis du nord (Hidalgo), le royaume tarasque (Michoacan) et les Totonaques de la côte du golfe, indépendants.",
+      "figures": [
+        {
+          "name": "Moctezuma Ier",
+          "role": "Cinquième tlatoani de Tenochtitlan",
+          "faction": "azteques",
+          "archetype": "souverain-precolombien",
+          "quote": "(formule libre) Que les provinces paient, ou que l'armée vienne les chercher",
+          "position": [
+            -99.13,
+            19.43
+          ],
+          "person": "moctezuma-i"
+        },
+        {
+          "name": "Tlacaelel",
+          "role": "Cihuacoatl, architecte de l'empire",
+          "faction": "azteques",
+          "archetype": "sage",
+          "quote": "(formule libre) Le Soleil a faim : il faut le nourrir",
+          "position": [
+            -99.15,
+            19.42
+          ],
+          "person": "tlacaelel"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Empire aztèque",
+          "url": "https://fr.wikipedia.org/wiki/Empire_azt%C3%A8que"
+        },
+        {
+          "label": "Wikipédia — Moctezuma Ier",
+          "url": "https://fr.wikipedia.org/wiki/Moctezuma_Ier"
+        },
+        {
+          "label": "Wikipédia — Codex Mendoza",
+          "url": "https://fr.wikipedia.org/wiki/Codex_Mendoza"
+        }
+      ]
+    },
+    {
+      "id": "famine-1454",
+      "year": 1454,
+      "title": "La famine de 1454 et les guerres fleuries",
+      "type": "politique",
+      "location": [
+        -98.3,
+        19.1
+      ],
+      "zoom": 5.5,
+      "summary": "En 1454 (l'année « 1-Lapin »), une famine terrible frappe la vallée de Mexico. Selon les chroniques, c'est alors que naissent les « guerres fleuries », batailles convenues avec Tlaxcala et ses voisins.",
+      "details": "Entre 1450 et 1454, gelées, sécheresses et mauvaises récoltes ruinent le plateau central. En 1454, l'année **1-Lapin** du calendrier mexica, la faim est telle, selon Durán et Sahagún, que des familles se vendent comme esclaves pour du maïs ; **Moctezuma Ier** ouvre les greniers du roi, mais les réserves ne suffisent pas. Plusieurs années plus tôt, une inondation (vers 1449) avait déjà poussé le tlatoani, aidé de **Nezahualcoyotl**, à construire une grande digue pour protéger la ville des eaux salées du lac de Texcoco.\n\nLa tradition mexica y voit un signe de colère divine. Les prêtres demandent plus de sacrifices, donc plus de captifs. Selon les chroniques, c'est le conseil de **Tlacaelel** qui impose alors les **guerres fleuries** (*xochiyaoyotl*, guerres « de fleurs ») : des combats convenus d'avance avec des cités voisines et libres, **Tlaxcala**, **Huexotzinco** et **Cholula**, dont le but est de prendre des prisonniers pour les sacrifier, sans chercher à conquérir.\n\nLes historiens modernes nuancent. Ces batailles ont aussi un rôle politique : elles servent à entraîner les jeunes guerriers et à maintenir une pression sur les enclaves, que les Mexicas encerclent peu à peu sans parvenir à les prendre. Les pertes y étaient réelles. Ce système laissera Tlaxcala libre et farouchement hostile, ce qui pèsera lourd en 1519.",
+      "consequences": [
+        "Tlaxcala, Huexotzinco et Cholula (vallée de Puebla) restent indépendantes et deviennent les adversaires permanents de la Triple Alliance.",
+        "La famine pousse la Triple Alliance à chercher du maïs ailleurs : les provinces du sud et de l'est, plus chaudes, sont visées.",
+        "Les guerres fleuries fournissent des captifs pour les sacrifices et un terrain d'entraînement pour les jeunes guerriers.",
+        "Une digue (vers 1449) isole l'eau douce du lac des eaux salées de Texcoco et protège Tenochtitlan des crues."
+      ],
+      "territory": "famine-1454",
+      "territoryNote": "En 1454, la Triple Alliance tient la vallée de Mexico (sauf Chalco), le Morelos, le nord du Guerrero et des marges de Puebla (Tepeaca, Tecamachalco). Voisins : Tlaxcala, Huexotzinco et Cholula (centre de l'État de Puebla), indépendantes, avec lesquelles se déroulent les guerres fleuries ; Chalco et Amecameca, indépendants ; la Mixteca (nord-ouest d'Oaxaca), indépendante ; Yopitzinco (Guerrero), indépendante ; les Totonaques (nord de Veracruz) et les Otomis (Hidalgo), indépendants ; le royaume tarasque (Michoacan), indépendant.",
+      "figures": [
+        {
+          "name": "Moctezuma Ier",
+          "role": "Tlatoani pendant la grande famine",
+          "faction": "azteques",
+          "archetype": "souverain-precolombien",
+          "quote": "(formule libre) Ouvrez les greniers : le peuple a faim",
+          "position": [
+            -99.13,
+            19.43
+          ],
+          "person": "moctezuma-i"
+        },
+        {
+          "name": "Un prêtre de Huitzilopochtli",
+          "role": "Desservant du grand temple (figure type)",
+          "faction": "azteques",
+          "archetype": "sage",
+          "quote": "(formule libre) Il faut plus de captifs pour apaiser les dieux",
+          "position": [
+            -99.13,
+            19.435
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Guerre fleurie",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_fleurie"
+        },
+        {
+          "label": "Wikipédia — Empire aztèque",
+          "url": "https://fr.wikipedia.org/wiki/Empire_azt%C3%A8que"
+        },
+        {
+          "label": "Wikipédia — Tlaxcala",
+          "url": "https://fr.wikipedia.org/wiki/Tlaxcala"
+        }
+      ]
+    },
+    {
+      "id": "golfe-1465",
+      "year": 1465,
+      "title": "Moctezuma Ier : Chalco, la Mixteca et le golfe",
+      "type": "politique",
+      "location": [
+        -97,
+        18.9
+      ],
+      "zoom": 5,
+      "summary": "Entre 1458 et 1469, Moctezuma Ier soumet Chalco, la Mixteca et la côte du golfe (Cotaxtla, Orizaba). La Triple Alliance atteint la mer, mais laisse Tlaxcala enclavée.",
+      "details": "Après la famine, **Moctezuma Ier** pousse ses armées plus loin. Vers 1458, elles prennent **Coixtlahuaca**, grande cité de la **Mixteca** (peuple de l'actuel Oaxaca) et grand marché du tribut. Elles atteignent ensuite les vallées chaudes de **Cotaxtla** et d'**Orizaba**, sur la route du golfe du Mexique, d'où viennent coton, cacao, vanille, plumes de quetzal et peaux de jaguar.\n\nEn 1465 environ, **Chalco**, rivale proche du sud-est de la vallée, qui résiste depuis trente ans, est enfin soumise : ses nobles sont massacrés ou déportés, et ses terres sont gérées directement par Tenochtitlan. Les ennemis d'hier deviennent des fournisseurs de vivres pour la capitale.\n\nLes conquêtes ont un but pratique : contrôler les routes et les marchés. La Triple Alliance nomme des gouverneurs, installe des garnisons aux points sensibles et organise des *pochteca* (marchands d'État, parfois espions). Le résultat reste mouvant : le tribut ne tombe que si l'armée reste crainte, et les provinces se révoltent à chaque changement de tlatoani. À sa mort en 1469, Moctezuma Ier laisse une frontière jusqu'au golfe. Au-delà, trois zones restent fermées : les enclaves de Tlaxcala et de Huexotzinco, que les Mexicas contournent en vain, et le Yopitzinco, sur la côte du Guerrero.",
+      "consequences": [
+        "Chalco et la rive sud-est de la vallée de Mexico sont incorporés ; la vallée est désormais entièrement aux mains de la Triple Alliance.",
+        "La Mixteca Alta (Coixtlahuaca, actuel Oaxaca) et la côte du golfe (Cotaxtla, Orizaba, Veracruz) deviennent tributaires.",
+        "Le cacao, la vanille, le coton et les plumes affluent vers Tenochtitlan par les routes de la Mixteca et du golfe.",
+        "Tlaxcala, Huexotzinco et Cholula restent libres, encerclées par le territoire de la Triple Alliance."
+      ],
+      "territory": "golfe-1465",
+      "territoryNote": "Vers 1465-1469, la Triple Alliance tient toute la vallée de Mexico (Chalco comprise), le Morelos, le nord et le centre du Guerrero (Tepecuacuilco, Tlalcozauhtitlan, Chilapa), l'est et le sud de Puebla (Tepeaca, Tecamachalco, Tehuacan), la Mixteca Alta (Coixtlahuaca, nord-ouest d'Oaxaca) et la côte centrale de Veracruz (Cotaxtla, Orizaba). Voisins : Tlaxcala et Huexotzinco (Puebla), indépendantes et encerclées ; Cholula, indépendante ; Yopitzinco (côte du Guerrero), indépendante ; Tututepec et la côte mixtèque (Oaxaca), indépendantes ; les Zapotèques de la vallée d'Oaxaca, indépendants ; les Totonaques et les Huaxtèques (nord de Veracruz), indépendants ; les Otomis (Hidalgo) et le royaume tarasque (Michoacan), indépendants.",
+      "figures": [
+        {
+          "name": "Moctezuma Ier",
+          "role": "Tlatoani, maître de la route du golfe",
+          "faction": "azteques",
+          "archetype": "souverain-precolombien",
+          "quote": "(formule libre) De Chalco à la mer, tout paiera tribut",
+          "position": [
+            -97.2,
+            18.9
+          ],
+          "person": "moctezuma-i"
+        },
+        {
+          "name": "Un marchand pochteca",
+          "role": "Marchand d'État, éclaireur de l'armée (figure type)",
+          "faction": "azteques",
+          "archetype": "diplomate",
+          "quote": "(formule libre) Où passe le marchand, l'armée ne tarde pas",
+          "position": [
+            -96.8,
+            18.85
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Empire aztèque",
+          "url": "https://fr.wikipedia.org/wiki/Empire_azt%C3%A8que"
+        },
+        {
+          "label": "Wikipédia — Moctezuma Ier",
+          "url": "https://fr.wikipedia.org/wiki/Moctezuma_Ier"
+        },
+        {
+          "label": "Wikipédia — Pochteca",
+          "url": "https://fr.wikipedia.org/wiki/Pochteca"
+        }
+      ]
+    },
+    {
+      "id": "tlatelolco-1473",
+      "year": 1473,
+      "title": "Axayacatl soumet Tlatelolco, la cité jumelle",
+      "type": "bataille",
+      "location": [
+        -99.138,
+        19.455
+      ],
+      "zoom": 6.2,
+      "summary": "En 1473, Axayacatl, tlatoani de Tenochtitlan, écrase Moquihuix, roi de Tlatelolco, la ville jumelle bâtie sur la même île. Elle perd son roi et reste célèbre pour son marché.",
+      "details": "**Tlatelolco** est fondée vers 1337 sur un îlot voisin de **Tenochtitlan**, au milieu du lac. Pendant un siècle les deux cités sont rivales : Tlatelolco a son propre roi (*tlatoani*), son temple, et surtout son **marché**, le plus grand de la région. Selon Durán et Sahagún, **Moquihuix**, son roi, nourrit des griefs et prépare une révolte. Il traite mal sa femme, **Chalchiuhnenetzin**, sœur du tlatoani de Tenochtitlan, **Axayacatl** (au pouvoir depuis 1469), qui se plaint à son frère. Moquihuix cherche aussi des alliés à Chalco et à Huexotzinco.\n\nEn 1473, selon les chroniques, une querelle devient guerre ouverte. Axayacatl attaque ; les Tlatelolcas résistent dans les rues, puis sur les terrasses de leur grand temple. **Moquihuix** est précipité du haut de la pyramide (la version la plus connue). Tlatelolco devient un district de Tenochtitlan, gouverné par des officiers mexicas.\n\nCe récit vient surtout de chroniqueurs de Tenochtitlan ; les informateurs tlatelolcas du franciscain Sahagún gardent une mémoire plus fière de leur cité. Le marché, lui, continue : en 1519, il émerveillera les Espagnols, qui le comparent aux plus grandes foires d'Europe. Le coup de force évite une scission de l'île et assure aux Mexicas le contrôle des échanges de toute la vallée.",
+      "consequences": [
+        "Tlatelolco perd son roi et son indépendance : elle devient un quartier de Tenochtitlan, dirigé par des gouverneurs mexicas.",
+        "Les deux cités ne forment plus qu'une capitale sur l'île, avec un seul territoire et un seul pouvoir.",
+        "Axayacatl poursuit ses conquêtes vers l'ouest, dans la vallée de Toluca (pays matlatzinca).",
+        "Le marché de Tlatelolco, mis sous tutelle, reste le grand centre d'échanges de la vallée."
+      ],
+      "territory": "tlatelolco-1473",
+      "territoryNote": "En 1473, la Triple Alliance tient toute la vallée de Mexico, avec Tlatelolco désormais intégrée à Tenochtitlan, le Morelos, le Guerrero nord et centre, le sud-est de Puebla (Tepeaca, Tehuacan), la Mixteca Alta (Oaxaca) et la côte centrale de Veracruz. La vallée de Toluca (pays matlatzinca, État de Mexico) est en cours de conquête. Voisins : Tlaxcala, Huexotzinco et Cholula (Puebla), indépendantes ; le royaume tarasque (Michoacan), indépendant ; Yopitzinco et Tututepec, indépendants ; les Zapotèques de la vallée d'Oaxaca, indépendants ; Metztitlán (Hidalgo), indépendant ; les Huaxtèques et Totonaques du golfe, indépendants.",
+      "battle": {
+        "belligerents": [
+          "Mexicas de Tenochtitlan (Axayacatl)",
+          "Tlatelolcas (Moquihuix)"
+        ],
+        "commanders": [
+          "Axayacatl",
+          "Moquihuix"
+        ],
+        "outcome": "Victoire d'Axayacatl ; mort de Moquihuix ; Tlatelolco passe sous la tutelle de Tenochtitlan",
+        "forces": "Inconnues ; deux armées de la même île",
+        "losses": "Inconnues ; la chronique de Sahagún évoque de lourdes pertes parmi les Tlatelolcas"
+      },
+      "armies": [
+        {
+          "side": "Mexicas d'Axayacatl",
+          "from": "Tenochtitlan",
+          "faction": "azteques",
+          "path": [
+            [
+              -99.13,
+              19.43
+            ],
+            [
+              -99.135,
+              19.445
+            ],
+            [
+              -99.14,
+              19.453
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Tlatelolcas de Moquihuix",
+          "from": "Tlatelolco",
+          "faction": "mesoamericains",
+          "path": [
+            [
+              -99.15,
+              19.47
+            ],
+            [
+              -99.14,
+              19.453
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Axayacatl",
+          "role": "Sixième tlatoani de Tenochtitlan",
+          "faction": "azteques",
+          "archetype": "souverain-precolombien",
+          "quote": "(formule libre) Une île, un seul roi",
+          "position": [
+            -99.135,
+            19.44
+          ],
+          "person": "axayacatl"
+        },
+        {
+          "name": "Moquihuix",
+          "role": "Dernier roi de Tlatelolco",
+          "faction": "mesoamericains",
+          "archetype": "souverain-precolombien",
+          "quote": "(formule libre) Tlatelolco n'est le vassal de personne",
+          "position": [
+            -99.142,
+            19.456
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Tlatelolco",
+          "url": "https://fr.wikipedia.org/wiki/Tlatelolco"
+        },
+        {
+          "label": "Wikipédia — Axayacatl",
+          "url": "https://fr.wikipedia.org/wiki/Axayacatl"
+        },
+        {
+          "label": "Wikipédia — Empire aztèque",
+          "url": "https://fr.wikipedia.org/wiki/Empire_azt%C3%A8que"
+        }
+      ]
+    },
+    {
+      "id": "tarasques-1478",
+      "year": 1478,
+      "title": "Axayacatl défait par les Tarasques",
+      "type": "bataille",
+      "location": [
+        -100.45,
+        19.7
+      ],
+      "zoom": 5.6,
+      "summary": "Vers 1478-1479, Axayacatl attaque le royaume tarasque (Michoacan) et subit une lourde défaite à Tlaximaloyan. La Triple Alliance ne passera jamais cette frontière.",
+      "details": "À l'ouest de la vallée de Toluca s'étend le **royaume tarasque** (ou purépecha), de capitale **Tzintzuntzan**, au bord du lac de Pátzcuaro. Son peuple, qui parle une langue sans parenté connue, a forgé une puissante monarchie, qui maîtrise mieux que ses voisins la métallurgie du cuivre et du bronze. Après sa victoire sur Tlatelolco et sa conquête de la vallée de Toluca, **Axayacatl** veut aller plus loin.\n\nVers 1478-1479 (dates discutées), une grande armée de Mexicas, de Texcocans et de Tépanèques marche vers l'ouest et se heurte aux Tarasques à **Tlaximaloyan** (près de l'actuelle Hidalgo, au Michoacan). Selon Durán, 32 000 hommes se mettent en route, et 24 000 d'entre eux, tués ou pris, ne reviennent pas ; le roi tarasque en aligne, dit-on, 40 000. Ces chiffres, exagérés sans doute, traduisent surtout le choc : Axayacatl rentre humilié.\n\nOn ignore les détails de la bataille, connue par des récits tardifs. Les Mexicas ne tenteront plus de franchir la frontière : le Michoacan restera libre jusqu'à l'arrivée des Espagnols en 1522. Axayacatl meurt en 1481, laissant à ses successeurs une frontière occidentale tenue par des garnisons.",
+      "consequences": [
+        "La vallée de Toluca (Matlatzinca, ouest de l'État de Mexico) reste mexica, mais la frontière occidentale se fige face au Michoacan.",
+        "Le royaume tarasque reste indépendant et la Triple Alliance ne l'attaquera plus.",
+        "Des garnisons mexicas sont installées dans la vallée de Toluca, face aux Tarasques.",
+        "L'armée mexica est durablement affaiblie, ce qui encourage des révoltes dans les provinces."
+      ],
+      "territory": "tarasques-1478",
+      "territoryNote": "Vers 1478, la Triple Alliance tient la vallée de Mexico, la vallée de Toluca (pays matlatzinca, ouest de l'État de Mexico) jusqu'à la frontière du Michoacan, le Morelos, le Guerrero nord et centre, l'est et le sud de Puebla, la Mixteca Alta (Oaxaca) et la côte centrale de Veracruz. Voisins : le royaume tarasque (Michoacan, capitale Tzintzuntzan), indépendant et victorieux ; Tlaxcala, Huexotzinco et Cholula (Puebla), indépendantes ; Metztitlán (Hidalgo), indépendant ; Yopitzinco (Guerrero) et Tututepec (côte d'Oaxaca), indépendants ; les Zapotèques de la vallée d'Oaxaca, indépendants.",
+      "battle": {
+        "belligerents": [
+          "Triple Alliance (Mexicas, Texcocans, Tépanèques)",
+          "Royaume tarasque (Michoacan)"
+        ],
+        "commanders": [
+          "Axayacatl",
+          "Le cazonci (roi tarasque)"
+        ],
+        "outcome": "Défaite lourde des Mexicas ; la frontière occidentale se fige",
+        "forces": "Selon Durán, environ 32 000 Mexicas contre 40 000 Tarasques (chiffres probablement exagérés)",
+        "losses": "Selon Durán, environ 24 000 morts ou prisonniers du côté mexica (chiffre très douteux)"
+      },
+      "armies": [
+        {
+          "side": "Triple Alliance d'Axayacatl",
+          "from": "Tenochtitlan",
+          "faction": "azteques",
+          "path": [
+            [
+              -99.13,
+              19.43
+            ],
+            [
+              -99.65,
+              19.29
+            ],
+            [
+              -100.1,
+              19.4
+            ],
+            [
+              -100.45,
+              19.7
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Tarasques de Tzintzuntzan",
+          "from": "Tzintzuntzan",
+          "faction": "mesoamericains",
+          "path": [
+            [
+              -101.58,
+              19.63
+            ],
+            [
+              -101,
+              19.65
+            ],
+            [
+              -100.45,
+              19.7
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Axayacatl",
+          "role": "Tlatoani vaincu à Tlaximaloyan",
+          "faction": "azteques",
+          "archetype": "souverain-precolombien",
+          "quote": "(formule libre) Le Michoacan n'est pas de ceux qu'on soumet",
+          "position": [
+            -100.4,
+            19.68
+          ],
+          "person": "axayacatl"
+        },
+        {
+          "name": "Un général tarasque",
+          "role": "Chef de guerre de Tzintzuntzan (figure type)",
+          "faction": "mesoamericains",
+          "archetype": "general",
+          "quote": "(formule libre) Du cuivre contre la pierre : tenez la ligne",
+          "position": [
+            -100.5,
+            19.72
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Empire aztèque",
+          "url": "https://fr.wikipedia.org/wiki/Empire_azt%C3%A8que"
+        },
+        {
+          "label": "Wikipédia — Axayacatl",
+          "url": "https://fr.wikipedia.org/wiki/Axayacatl"
+        },
+        {
+          "label": "Wikipédia — Tzintzuntzan",
+          "url": "https://fr.wikipedia.org/wiki/Tzintzuntzan"
+        }
+      ]
+    },
+    {
+      "id": "templo-mayor-1487",
+      "year": 1487,
+      "title": "Ahuitzotl inaugure le Templo Mayor",
+      "type": "fondation",
+      "location": [
+        -99.1316,
+        19.4347
+      ],
+      "zoom": 6.3,
+      "summary": "En 1487, Ahuitzotl fait consacrer le Grand Temple de Tenochtitlan, agrandi. Les chroniques parlent de milliers de captifs sacrifiés : leur nombre exact reste très discuté.",
+      "details": "Après **Axayacatl** et son frère **Tizoc** (1481-1486), **Ahuitzotl** devient tlatoani en 1486. Ce chef de guerre ambitieux achève l'agrandissement du **Templo Mayor**, le « Grand Temple » : une pyramide à deux sanctuaires, l'un consacré à **Huitzilopochtli** (dieu de la guerre et du Soleil), l'autre à **Tlaloc** (dieu de la pluie). Il se dresse au centre de la ville, sur une grande esplanade, et symbolise la montagne sacrée de Coatepec.\n\nLa fête d'inauguration a lieu en 1487 (**8-Roseau**). Les rois de la Triple Alliance et les seigneurs vassaux, même ennemis, sont invités à contempler le spectacle. Selon Durán, plus de 80 000 captifs auraient été sacrifiés en quatre jours. La plupart des historiens trouvent ce chiffre impossible : il faudrait tuer plus de 800 personnes par heure, jour et nuit. Ils pensent plutôt à quelques milliers au plus, et rappellent que ces récits sont tardifs. Les sacrifices humains, eux, sont attestés par les fouilles : on a retrouvé des crânes, des couteaux de silex et des offrandes dans le temple.\n\nLe rituel a aussi un rôle politique : prouver la puissance mexica aux rois conviés et décourager les révoltes. Le Templo Mayor sera détruit par les Espagnols en 1521 ; ses ruines, retrouvées en 1978, sont aujourd'hui un musée au cœur de Mexico.",
+      "consequences": [
+        "Tenochtitlan reçoit un temple central agrandi, qui fait d'elle le centre religieux de l'empire.",
+        "Les seigneurs vassaux invités voient la puissance de la capitale, ce qui renforce la peur et la soumission.",
+        "Ahuitzotl lance de nouvelles conquêtes vers la vallée d'Oaxaca, le Guerrero et la côte du Pacifique.",
+        "Le temple est détruit en 1521 ; ses ruines sont retrouvées en 1978 sous le centre de Mexico."
+      ],
+      "territory": "templo-mayor-1487",
+      "territoryNote": "Vers 1487, la Triple Alliance tient la vallée de Mexico, la vallée de Toluca, le Morelos, le Guerrero (nord, centre, Tlapa), l'est et le sud de Puebla, la Mixteca Alta et le haut de la vallée d'Oaxaca (garnison de Huaxyacac, 1486), le sud de l'Hidalgo et la côte centrale de Veracruz. Voisins : le royaume tarasque (Michoacan), indépendant ; Tlaxcala, Huexotzinco et Cholula (Puebla), indépendantes ; Metztitlán (Hidalgo), indépendant ; Yopitzinco (Guerrero) et Tututepec (côte d'Oaxaca), indépendants ; les Zapotèques de Tehuantepec, indépendants ; les Huaxtèques (nord de Veracruz) et les Mayas du Yucatán, indépendants.",
+      "figures": [
+        {
+          "name": "Ahuitzotl",
+          "role": "Huitième tlatoani de Tenochtitlan",
+          "faction": "azteques",
+          "archetype": "souverain-precolombien",
+          "quote": "(formule libre) Que tous voient la grandeur de Tenochtitlan",
+          "position": [
+            -99.1316,
+            19.4347
+          ],
+          "person": "ahuitzotl"
+        },
+        {
+          "name": "Un prêtre du Templo Mayor",
+          "role": "Officiant de Huitzilopochtli (figure type)",
+          "faction": "azteques",
+          "archetype": "sage",
+          "quote": "(formule libre) Le Soleil doit être nourri pour continuer sa course",
+          "position": [
+            -99.1325,
+            19.4352
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Templo Mayor",
+          "url": "https://fr.wikipedia.org/wiki/Templo_Mayor"
+        },
+        {
+          "label": "Wikipédia — Ahuitzotl",
+          "url": "https://fr.wikipedia.org/wiki/Ahuitzotl"
+        },
+        {
+          "label": "Wikipédia — Tenochtitlan",
+          "url": "https://fr.wikipedia.org/wiki/Tenochtitlan"
+        }
+      ]
+    },
+    {
+      "id": "soconusco-1500",
+      "year": 1500,
+      "title": "Ahuitzotl atteint le Soconusco",
+      "type": "politique",
+      "location": [
+        -93.5,
+        15.5
+      ],
+      "zoom": 4.4,
+      "summary": "Vers 1497-1500, Ahuitzotl pousse les armées de la Triple Alliance vers l'isthme de Tehuantepec et jusqu'au Soconusco, riche en cacao, aux portes du Guatemala. Les dates sont incertaines.",
+      "details": "Sous **Ahuitzotl** (1486-1502), l'empire s'étend de façon spectaculaire. Le *Codex Mendoza* (vers 1541) liste ses conquêtes : le Guerrero et la côte du Pacifique, la vallée d'**Oaxaca** (où une garnison est installée à **Huaxyacac**, d'où vient le nom Oaxaca), puis l'isthme de **Tehuantepec**. Le siège de Tehuantepec (vers 1497) tourne mal : les Zapotèques, retranchés sur la colline de **Guiengola**, résistent. Selon la tradition zapotèque, la paix se conclut par une alliance, et non par une conquête.\n\nL'autre objectif est le **Soconusco** (*Xoconochco*), la bande côtière du Chiapas actuel, jusqu'aux marges du Guatemala. Elle est riche en **cacao**, très recherché, car ses fèves servent de monnaie et de boisson de luxe ; on y trouve aussi plumes de quetzal et ambre. Les marchands **pochteca** y ont ouvert la voie, et une armée suit. Les dates varient selon les sources : on retient ici la fin des années 1490.\n\nAhuitzotl pose ainsi la frontière sud de l'empire, à près de 900 km de la capitale à vol d'oiseau. Le Soconusco est une province tributaire, éloignée, tenue par des garnisons ; elle ne fait pas partie d'un territoire continu. À la capitale, en 1499-1500, une source détournée vers la ville provoque une inondation ; selon Durán, Ahuitzotl se blesse à la tête en la fuyant et meurt en 1502.",
+      "consequences": [
+        "Le Guerrero (côte du Pacifique, Costa Chica) et la vallée d'Oaxaca (Huaxyacac) deviennent tributaires ou occupés.",
+        "L'isthme de Tehuantepec reste en pratique aux Zapotèques, liés à la Triple Alliance par un pacte plutôt que conquis.",
+        "Le Soconusco, sur la côte du Chiapas, envoie du cacao et des plumes de quetzal jusqu'à Tenochtitlan.",
+        "L'empire atteint sa plus grande extension du sud, à près de 900 km de la capitale, avec des garnisons en poste."
+      ],
+      "territory": "soconusco-1500",
+      "territoryNote": "Vers 1500, les provinces tributaires couvrent la vallée de Mexico, la vallée de Toluca, le Morelos, le Guerrero (nord, centre, côte du Pacifique), l'est et le sud de Puebla, l'Hidalgo méridional, la Mixteca et la vallée d'Oaxaca, la côte centrale et nord de Veracruz (Totonaques, Huaxtèques en partie), l'isthme de Tehuantepec (alliance) et, séparée du reste, la côte du Soconusco (Chiapas). Voisins : le royaume tarasque (Michoacan), indépendant ; Tlaxcala, Huexotzinco et Cholula (Puebla), indépendantes ; Metztitlán (Hidalgo), indépendant ; Yopitzinco (Guerrero) et Tututepec (côte d'Oaxaca), indépendants ; les Mayas du Yucatán, du Petén et des hautes terres du Guatemala, indépendants ; les Chichimèques du nord, indépendants.",
+      "armies": [
+        {
+          "side": "Armée d'Ahuitzotl",
+          "from": "Tenochtitlan",
+          "faction": "azteques",
+          "path": [
+            [
+              -99.13,
+              19.43
+            ],
+            [
+              -97.9,
+              18.95
+            ],
+            [
+              -96.73,
+              17.06
+            ],
+            [
+              -95.24,
+              16.33
+            ],
+            [
+              -92.26,
+              14.91
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Ahuitzotl",
+          "role": "Tlatoani conquérant du Soconusco",
+          "faction": "azteques",
+          "archetype": "souverain-precolombien",
+          "quote": "(formule libre) Que le cacao du sud remplisse nos greniers",
+          "position": [
+            -96.73,
+            17.06
+          ],
+          "person": "ahuitzotl"
+        },
+        {
+          "name": "Un marchand pochteca",
+          "role": "Marchand d'État du Soconusco (figure type)",
+          "faction": "azteques",
+          "archetype": "diplomate",
+          "quote": "(formule libre) Le cacao vaut plus que l'or sur nos marchés",
+          "position": [
+            -92.5,
+            14.95
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Empire aztèque",
+          "url": "https://fr.wikipedia.org/wiki/Empire_azt%C3%A8que"
+        },
+        {
+          "label": "Wikipédia — Ahuitzotl",
+          "url": "https://fr.wikipedia.org/wiki/Ahuitzotl"
+        },
+        {
+          "label": "Wikipédia — Soconusco",
+          "url": "https://fr.wikipedia.org/wiki/Soconusco"
+        }
+      ]
+    },
+    {
+      "id": "moctezuma-1502",
+      "year": 1502,
+      "title": "Moctezuma II, souverain d'un empire à son apogée",
+      "type": "politique",
+      "location": [
+        -99.13,
+        19.43
+      ],
+      "zoom": 5,
+      "summary": "En 1502, Moctezuma II, prêtre et chef de guerre, succède à Ahuitzotl. Il règne sur un empire de plus de trente provinces tributaires, mais Tlaxcala et d'autres voisins restent libres.",
+      "details": "Quand **Ahuitzotl** meurt en 1502, les électeurs (nobles, prêtres et chefs de guerre) choisissent son neveu **Moctezuma II** (*Motecuhzoma Xocoyotzin*, « le Jeune »). Prêtre et guerrier, il passe pour un homme austère, que Durán montre en train de balayer le temple quand on vient lui annoncer son élection. Il durcit la cour : le roi est entouré d'un cérémonial strict, personne ne le regarde en face, et, selon Durán, il écarte des charges les officiers de naissance modeste au profit des nobles.\n\nSous son règne, la Triple Alliance atteint son extension maximale. Le *Codex Mendoza* (vers 1541) recense 38 provinces tributaires, du golfe du Mexique au Pacifique et jusqu'au Soconusco, soit environ 200 000 km² et plusieurs millions d'habitants (chiffres très incertains). Tenochtitlan, bâtie sur son île avec chaussées, aqueducs et jardins flottants, abrite sans doute 150 000 à 250 000 personnes ; certains historiens avancent plus, d'autres moins.\n\nPourtant, la puissance est fragile. L'empire est un réseau de villes tributaires, qui se révoltent à chaque occasion. Des enclaves résistent : **Tlaxcala**, qui lutte contre les guerres fleuries, le **Yopitzinco**, **Metztitlán**, **Tututepec**, et le royaume tarasque. En 1507 est célébrée à Tenochtitlan la cérémonie du **Feu nouveau**, qui conclut un cycle de 52 ans. Bien des signes funestes, racontés après la conquête, accompagnent la fin du règne ; les historiens y voient des récits d'après coup.",
+      "consequences": [
+        "La Triple Alliance atteint son extension maximale, du golfe du Mexique au Pacifique et au Soconusco, sur environ 200 000 km² (estimation).",
+        "Les provinces tributaires paient en vêtements, plumes, cacao, jade, or et captifs, selon le Codex Mendoza.",
+        "Tlaxcala, Huexotzinco, le Yopitzinco, Metztitlán, Tututepec et le royaume tarasque restent indépendants.",
+        "Le pouvoir se concentre sur le tlatoani et la noblesse, au risque de décourager les provinces et les alliés."
+      ],
+      "territory": "moctezuma-1502",
+      "territoryNote": "Vers 1502-1519, les provinces tributaires couvrent la vallée de Mexico, la vallée de Toluca, l'Hidalgo méridional, le Morelos, l'est et le sud de Puebla, presque tout le Guerrero (sauf le Yopitzinco), la Mixteca et la vallée d'Oaxaca, l'isthme de Tehuantepec, la côte de Veracruz du centre au nord (Totonaques, sud de la Huasteca), et, séparée, la côte du Soconusco (Chiapas). Enclaves indépendantes : Tlaxcala et Huexotzinco (centre de Puebla, où Cholula est alliée), Metztitlán (Hidalgo), Yopitzinco (Guerrero), Tututepec (côte d'Oaxaca). Voisins : le royaume tarasque (Michoacan), indépendant ; les Mayas du Yucatán, du Petén et du Guatemala, indépendants ; les Chichimèques du nord (plateau aride), indépendants.",
+      "figures": [
+        {
+          "name": "Moctezuma II",
+          "role": "Neuvième tlatoani de Tenochtitlan",
+          "faction": "azteques",
+          "archetype": "souverain-precolombien",
+          "quote": "(formule libre) Aucun royaume n'est assez loin pour échapper à Tenochtitlan",
+          "position": [
+            -99.13,
+            19.43
+          ],
+          "person": "moctezuma-ii"
+        },
+        {
+          "name": "Un devin de Tenochtitlan",
+          "role": "Interprète des signes et du calendrier (figure type)",
+          "faction": "azteques",
+          "archetype": "sage",
+          "quote": "(formule libre) Le jour 1-Roseau décidera du destin du cycle",
+          "position": [
+            -99.12,
+            19.44
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Moctezuma II",
+          "url": "https://fr.wikipedia.org/wiki/Moctezuma_II"
+        },
+        {
+          "label": "Wikipédia — Empire aztèque",
+          "url": "https://fr.wikipedia.org/wiki/Empire_azt%C3%A8que"
+        },
+        {
+          "label": "Wikipédia — Codex Mendoza",
+          "url": "https://fr.wikipedia.org/wiki/Codex_Mendoza"
+        }
+      ]
+    },
+    {
+      "id": "cortes-1519",
+      "year": 1519,
+      "title": "Cortés débarque, s'allie à Tlaxcala et frappe Cholula",
+      "type": "bataille",
+      "location": [
+        -98.23,
+        19.32
+      ],
+      "zoom": 5.2,
+      "summary": "En 1519, Hernán Cortés débarque avec environ 500 hommes. Aidé par les Totonaques de Cempoala, puis par Tlaxcala après plusieurs combats, il massacre Cholula et marche sur Tenochtitlan.",
+      "details": "Parti de Cuba en février 1519 avec environ 500 hommes et une douzaine de chevaux (16 selon **Bernal Díaz del Castillo**), **Hernán Cortés** longe la côte du Yucatán, bat des Mayas chontals à **Potonchán**, y reçoit des esclaves, dont **Malintzin** (la Malinche), interprète nahuatl-maya capitale. Il débarque en avril près de l'actuelle Veracruz, fonde la **Villa Rica de la Vera Cruz** et se fait élire chef par ses hommes pour échapper à l'autorité du gouverneur de Cuba. À **Cempoala**, les Totonaques, accablés de tributs, s'allient à lui.\n\nDes émissaires de **Moctezuma II** lui apportent de l'or pour qu'il reparte. Cortés monte au contraire vers l'intérieur. En septembre, les **Tlaxcaltèques**, vieux ennemis des Mexicas, l'attaquent ; vaincus après plusieurs batailles, ils s'allient à lui. Cortés y trouve ses futurs principaux auxiliaires : sans eux, il n'aurait jamais pris Tenochtitlan. À **Cholula**, en octobre, les Espagnols et leurs alliés massacrent des milliers d'habitants (3 000 selon Cortés, beaucoup plus selon d'autres), au nom d'un complot que beaucoup d'historiens jugent douteux.\n\nLes chiffres de ces affrontements viennent des Espagnols, qui ont intérêt à gonfler les forces ennemies. Le fait décisif est ailleurs : les peuples soumis aux Mexicas voient dans cet étranger un moyen de se libérer. L'expédition n'est pas une conquête espagnole seule, mais une guerre civile indigène où les Espagnols jouent un rôle déterminant.",
+      "consequences": [
+        "Les Totonaques de Cempoala et de la côte du golfe (Veracruz) quittent la sphère mexica et s'allient à Cortés.",
+        "Tlaxcala et ses voisins, jamais conquis par les Mexicas, deviennent les principaux alliés de Cortés.",
+        "Cholula, ville sainte alliée de Moctezuma, est durement frappée par le massacre d'octobre 1519.",
+        "Moctezuma II hésite : il ne parvient ni à arrêter les Espagnols ni à les accueillir franchement."
+      ],
+      "territory": "cortes-1519",
+      "territoryNote": "Au printemps et à l'été 1519, les provinces tributaires sont les mêmes qu'en 1502 : vallée de Mexico et de Toluca, Morelos, Hidalgo méridional, est et sud de Puebla, Guerrero, Mixteca et vallée d'Oaxaca, isthme de Tehuantepec, côte de Veracruz, côte du Soconusco (Chiapas, séparée). Mais la côte totonaque (Cempoala, Veracruz) passe aux Espagnols, et Tlaxcala, Huexotzinco et Cholula (centre de Puebla) restent hors de l'empire (Cholula, alliée de Moctezuma, est frappée en octobre). Voisins : Tlaxcala et Huexotzinco, indépendantes ; Metztitlán, Yopitzinco et Tututepec, indépendants ; le royaume tarasque (Michoacan), indépendant ; les Mayas du Yucatán, indépendants.",
+      "battle": {
+        "belligerents": [
+          "Espagnols et Totonaques, puis Tlaxcaltèques alliés",
+          "Tlaxcaltèques, puis Cholultèques"
+        ],
+        "commanders": [
+          "Hernán Cortés",
+          "Xicotencatl le Jeune"
+        ],
+        "outcome": "Victoire des Espagnols à Tlaxcala, qui devient leur alliée ; massacre de Cholula en octobre 1519",
+        "forces": "Environ 500 Espagnols et une douzaine de chevaux, plus des alliés totonaques ; des dizaines de milliers de Tlaxcaltèques selon les Espagnols (chiffre probablement gonflé)",
+        "losses": "Faibles côté espagnol à Tlaxcala ; quelques milliers de morts à Cholula (3 000 selon Cortés, bien davantage selon d'autres)"
+      },
+      "armies": [
+        {
+          "id": "cortes",
+          "side": "Cortés et ses alliés totonaques",
+          "from": "Santiago de Cuba",
+          "faction": "tercios",
+          "path": [
+            [
+              -75.83,
+              19.97
+            ],
+            [
+              -86.9,
+              20.4
+            ],
+            [
+              -92.6,
+              18.5
+            ],
+            [
+              -96.13,
+              19.2
+            ],
+            [
+              -96.4,
+              19.45
+            ],
+            [
+              -98.2,
+              19.31
+            ],
+            [
+              -98.3,
+              19.06
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Tlaxcaltèques (futurs alliés de Cortés)",
+          "from": "Tlaxcala",
+          "faction": "mesoamericains",
+          "path": [
+            [
+              -98.05,
+              19.45
+            ],
+            [
+              -98.15,
+              19.38
+            ],
+            [
+              -98.2,
+              19.31
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Hernán Cortés",
+          "role": "Conquistador, capitaine général",
+          "faction": "tercios",
+          "archetype": "conquistador",
+          "quote": "(formule libre) Si les Tlaxcaltèques sont avec nous, Moctezuma n'est pas invincible",
+          "position": [
+            -98.25,
+            19.33
+          ],
+          "person": "hernan-cortes"
+        },
+        {
+          "name": "Malintzin (la Malinche)",
+          "role": "Interprète et conseillère de Cortés",
+          "faction": "mesoamericains",
+          "archetype": "diplomate",
+          "quote": "(formule libre) Je parle pour lui ce que je comprends de vous",
+          "position": [
+            -98.27,
+            19.3
+          ],
+          "person": "malintzin"
+        },
+        {
+          "name": "Bartolomé de Olmedo",
+          "role": "Frère mercédaire, aumônier de l'expédition",
+          "faction": "tercios",
+          "archetype": "prelat",
+          "quote": "(formule libre) On ne convertit pas à coups de pierres",
+          "position": [
+            -96.4,
+            19.45
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Hernán Cortés",
+          "url": "https://fr.wikipedia.org/wiki/Hern%C3%A1n_Cort%C3%A9s"
+        },
+        {
+          "label": "Wikipédia — Malinche",
+          "url": "https://fr.wikipedia.org/wiki/Malinche"
+        },
+        {
+          "label": "Wikipédia — Cholula",
+          "url": "https://fr.wikipedia.org/wiki/Cholula"
+        }
+      ]
+    },
+    {
+      "id": "tenochtitlan-1519",
+      "year": 1519,
+      "title": "Cortés entre à Tenochtitlan (8 novembre 1519)",
+      "type": "politique",
+      "location": [
+        -99.1333,
+        19.4326
+      ],
+      "zoom": 6.3,
+      "summary": "Le 8 novembre 1519, Cortés et ses alliés sont reçus à Tenochtitlan par Moctezuma II. Quelques jours plus tard, les Espagnols retiennent le tlatoani comme otage dans leur logis.",
+      "details": "Le **8 novembre 1519**, après la descente de la sierra et la traversée d'**Iztapalapa**, les Espagnols avancent sur la grande chaussée qui mène à **Tenochtitlan**. Ils sont environ 400 soldats, avec quelques milliers d'alliés tlaxcaltèques, dans une ville construite sur l'eau, aux temples blancs et aux canaux. **Bernal Díaz del Castillo**, qui est présent, la compare aux enchantements du roman *Amadis de Gaule* ; Cortés, dans ses lettres à Charles Quint, en vante l'ordre et le marché de Tlatelolco. La population de la capitale est discutée : 150 000 à 250 000 habitants selon beaucoup d'historiens, bien plus selon d'autres.\n\n**Moctezuma II** vient à leur rencontre, porté en litière, et les loge dans le palais de son père **Axayacatl**. Pourquoi les accueille-t-il ? On l'ignore : peur, prudence politique, curiosité, croyance en un retour du dieu Quetzalcoatl, thèse devenue célèbre mais jugée aujourd'hui tardive et douteuse. Une semaine plus tard, après des troubles sur la côte, Cortés fait de Moctezuma un otage : le souverain continue de régner, mais sous la garde des Espagnols.\n\nLes lettres de Cortés affirment que Moctezuma prête serment de vassalité à Charles Quint. Les sources nahuas ne le confirment pas, et beaucoup d'historiens y voient une mise en scène de Cortés, qui cherche à légitimer son action devant le roi.",
+      "consequences": [
+        "La capitale d'une alliance de plus de trente provinces tributaires est occupée sans combat par quelques centaines d'Espagnols.",
+        "Moctezuma II, otage dans son propre palais, perd peu à peu son autorité sur les nobles et sur le peuple.",
+        "Les provinces tributaires observent : certaines cessent de payer, d'autres attendent de voir qui l'emportera.",
+        "Cortés peut envoyer de l'or et des lettres vers l'Espagne, pour faire reconnaître son initiative par Charles Quint."
+      ],
+      "territory": "tenochtitlan-1519",
+      "territoryNote": "En novembre 1519, l'empire a encore ses limites de 1502 : vallée de Mexico et de Toluca, Morelos, Hidalgo méridional, est et sud de Puebla, Guerrero, Mixteca et vallée d'Oaxaca, isthme de Tehuantepec, Soconusco (séparé), mais sans la côte totonaque (Cempoala, Veracruz), passée aux Espagnols. Tlaxcala et Huexotzinco (Puebla) sont devenues les alliées de Cortés. Voisins : Metztitlán (Hidalgo), Yopitzinco (Guerrero) et Tututepec (Oaxaca), indépendants ; le royaume tarasque (Michoacan), indépendant ; les Mayas du Yucatán, indépendants.",
+      "armies": [
+        {
+          "id": "cortes",
+          "side": "Cortés et ses alliés tlaxcaltèques",
+          "faction": "tercios",
+          "path": [
+            [
+              -98.3,
+              19.06
+            ],
+            [
+              -98.65,
+              19.12
+            ],
+            [
+              -98.76,
+              19.12
+            ],
+            [
+              -99.06,
+              19.36
+            ],
+            [
+              -99.1333,
+              19.4326
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Cortège de Moctezuma",
+          "from": "Tenochtitlan",
+          "faction": "azteques",
+          "path": [
+            [
+              -99.1333,
+              19.4326
+            ],
+            [
+              -99.12,
+              19.4
+            ],
+            [
+              -99.09,
+              19.37
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Moctezuma II",
+          "role": "Tlatoani reçoit Cortés",
+          "faction": "azteques",
+          "archetype": "souverain-precolombien",
+          "quote": "(selon Bernal Díaz) Malinche, vous et vos compagnons êtes ici chez vous",
+          "position": [
+            -99.12,
+            19.42
+          ],
+          "person": "moctezuma-ii"
+        },
+        {
+          "name": "Hernán Cortés",
+          "role": "Chef de l'expédition espagnole",
+          "faction": "tercios",
+          "archetype": "conquistador",
+          "quote": "(formule libre) Voilà une cité qui vaut un royaume",
+          "position": [
+            -99.08,
+            19.38
+          ],
+          "person": "hernan-cortes"
+        },
+        {
+          "name": "Malintzin (la Malinche)",
+          "role": "Interprète nahuatl-espagnol",
+          "faction": "mesoamericains",
+          "archetype": "diplomate",
+          "quote": "(formule libre) Écoutez : ce sont ses mots, pas les miens",
+          "position": [
+            -99.07,
+            19.37
+          ],
+          "person": "malintzin"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Tenochtitlan",
+          "url": "https://fr.wikipedia.org/wiki/Tenochtitlan"
+        },
+        {
+          "label": "Wikipédia — Moctezuma II",
+          "url": "https://fr.wikipedia.org/wiki/Moctezuma_II"
+        },
+        {
+          "label": "Wikipédia — Hernán Cortés",
+          "url": "https://fr.wikipedia.org/wiki/Hern%C3%A1n_Cort%C3%A9s"
+        }
+      ]
+    },
+    {
+      "id": "noche-triste-1520",
+      "year": 1520,
+      "title": "La Noche Triste : les Espagnols chassés de Tenochtitlan",
+      "type": "bataille",
+      "location": [
+        -99.19,
+        19.45
+      ],
+      "zoom": 6.3,
+      "summary": "Dans la nuit du 30 juin au 1er juillet 1520, les Espagnols et leurs alliés tentent de fuir Tenochtitlan par la chaussée de Tlacopan. Les Mexicas les attaquent dans les canaux.",
+      "details": "En mai 1520, **Cortés** quitte Tenochtitlan pour battre **Pánfilo de Narváez**, envoyé de Cuba pour l'arrêter. Il le défait à Cempoala (28 mai) et enrôle ses hommes. Mais, le 22 mai, **Pedro de Alvarado**, resté en ville, a attaqué des nobles mexicas désarmés pendant la fête de **Toxcatl** et fait un massacre. La ville se soulève ; quand Cortés revient, les Espagnols sont assiégés dans le palais d'Axayacatl.\n\nMoctezuma II meurt vers le 29 juin. Les Espagnols disent que ses sujets l'ont lapidé ; les sources nahuas accusent les Espagnols de l'avoir tué. Dans la nuit du 30 juin au 1er juillet, Cortés tente de s'échapper par la **chaussée de Tlacopan**, coupée de canaux dont on a retiré les ponts. Alertés, les guerriers de **Cuitláhuac** (frère de Moctezuma) attaquent depuis des canoës. Beaucoup d'Espagnols, alourdis par l'or qu'ils portent, se noient.\n\nLes chiffres varient : Cortés avoue environ 150 Espagnols morts (et 2 000 alliés), Bernal Díaz parle de 860 en comptant les hommes de Narváez ; des historiens modernes estiment plus de 600 Espagnols tués et de nombreux alliés. La légende veut que Cortés ait pleuré sous un arbre à Popotla, et qu'Alvarado ait franchi un canal d'un saut. Pour les Mexicas, c'est une grande victoire, mais ils n'achèvent pas les fuyards.",
+      "consequences": [
+        "Les Espagnols et leurs alliés sont chassés de Tenochtitlan et perdent une grande partie de l'or, de l'artillerie et de leurs hommes.",
+        "Tenochtitlan est libérée du joug espagnol ; Cuitláhuac prend la tête de la résistance.",
+        "Les alliés tlaxcaltèques restent fidèles à Cortés, qui se replie vers Tlaxcala.",
+        "Beaucoup de provinces, voyant les Mexicas victorieux, hésitent entre les deux camps."
+      ],
+      "territory": "noche-triste-1520",
+      "territoryNote": "En juin-juillet 1520, les provinces tributaires restent celles de 1502 moins la côte totonaque (Cempoala, Veracruz) : vallée de Mexico et de Toluca, Morelos, Hidalgo méridional, est et sud de Puebla, Guerrero, Mixteca et vallée d'Oaxaca, isthme de Tehuantepec, Soconusco (séparé). Tlaxcala et Huexotzinco (Puebla) sont du côté de Cortés. Voisins : Metztitlán (Hidalgo), Yopitzinco (Guerrero), Tututepec (Oaxaca), indépendants ; le royaume tarasque (Michoacan), indépendant ; les Mayas du Yucatán, indépendants.",
+      "battle": {
+        "belligerents": [
+          "Espagnols et alliés indigènes (Tlaxcaltèques, Totonaques)",
+          "Mexicas de Tenochtitlan"
+        ],
+        "commanders": [
+          "Hernán Cortés",
+          "Pedro de Alvarado",
+          "Cuitláhuac"
+        ],
+        "outcome": "Victoire mexica ; les Espagnols évacuent Tenochtitlan en désordre",
+        "forces": "Plus d'un millier d'Espagnols, hommes de Narváez compris, avec des milliers d'alliés ; des milliers de guerriers mexicas",
+        "losses": "Cortés compte environ 150 Espagnols morts, Bernal Díaz 860 ; plusieurs milliers d'alliés tués ; pertes mexicas inconnues"
+      },
+      "armies": [
+        {
+          "id": "cortes",
+          "side": "Cortés et ses alliés tlaxcaltèques",
+          "faction": "tercios",
+          "path": [
+            [
+              -99.1333,
+              19.4326
+            ],
+            [
+              -99.17,
+              19.44
+            ],
+            [
+              -99.2,
+              19.455
+            ],
+            [
+              -99.2125,
+              19.4561
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Mexicas de Cuitláhuac",
+          "from": "Tenochtitlan",
+          "faction": "azteques",
+          "path": [
+            [
+              -99.14,
+              19.45
+            ],
+            [
+              -99.17,
+              19.45
+            ],
+            [
+              -99.2,
+              19.46
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Cuitláhuac",
+          "role": "Seigneur d'Iztapalapa, chef de la résistance",
+          "faction": "azteques",
+          "archetype": "souverain-precolombien",
+          "quote": "(formule libre) Qu'aucun étranger ne quitte la ville avec notre or",
+          "position": [
+            -99.17,
+            19.45
+          ],
+          "person": "cuitlahuac"
+        },
+        {
+          "name": "Pedro de Alvarado",
+          "role": "Capitaine de Cortés, responsable du massacre de Toxcatl",
+          "faction": "tercios",
+          "archetype": "conquistador",
+          "quote": "(formule libre) Tenons les ponts, ou tout est perdu",
+          "position": [
+            -99.2,
+            19.455
+          ],
+          "person": "pedro-de-alvarado"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Noche Triste",
+          "url": "https://fr.wikipedia.org/wiki/Noche_Triste"
+        },
+        {
+          "label": "Wikipédia — Pedro de Alvarado",
+          "url": "https://fr.wikipedia.org/wiki/Pedro_de_Alvarado"
+        },
+        {
+          "label": "Wikipédia — Moctezuma II",
+          "url": "https://fr.wikipedia.org/wiki/Moctezuma_II"
+        }
+      ]
+    },
+    {
+      "id": "otumba-1520",
+      "year": 1520,
+      "title": "Otumba : Cortés brise la poursuite des Mexicas",
+      "type": "bataille",
+      "location": [
+        -98.75,
+        19.7
+      ],
+      "zoom": 6,
+      "summary": "Le 7 juillet 1520, les Espagnols épuisés et leurs alliés tlaxcaltèques battent à Otumba l'armée mexica qui les poursuit. La route de Tlaxcala leur reste ouverte.",
+      "details": "Après la Noche Triste, **Cortés** et quelques centaines de survivants espagnols, escortés par leurs alliés **tlaxcaltèques**, contournent les lacs par le nord pour éviter les chaussées : Tlacopan, Tepotzotlán, puis la plaine d'**Otumba**, sur le chemin de Tlaxcala. Durant une semaine, ils marchent, affamés, harcelés par des détachements mexicas.\n\nLe **7 juillet 1520**, ils se trouvent face à une armée mexica bien plus nombreuse, qui bouche la plaine. Cortés parle d'environ 20 000 combattants (Bernal Díaz avance un chiffre voisin), mais ces estimations sont d'origine espagnole et probablement gonflées. Les cavaliers survivants chargent. Selon les récits, le chef mexica porteur de l'étendard, que la tradition identifie comme le cihuacoatl **Matlatzincatzin**, est tué, ce qui provoque le désordre de l'armée.\n\nLes Mexicas ne poursuivent pas : ils rentrent à Tenochtitlan. Les Espagnols, eux, gagnent le territoire tlaxcaltèque, où ils sont accueillis. Sans cette victoire inattendue, l'aventure de Cortés se serait probablement arrêtée là. L'épisode illustre le rôle des alliés indigènes, bien plus nombreux que les Espagnols, dont les chroniqueurs espagnols ont eu tendance à minimiser la part.",
+      "consequences": [
+        "Cortés atteint Tlaxcala, qui reste son refuge et sa base de reconquête.",
+        "Les Mexicas renoncent à anéantir les fuyards ; la menace sur Tlaxcala et ses alliés reste réelle.",
+        "Cortés peut se réorganiser : il y reçoit des renforts et prépare la reprise de la vallée.",
+        "Les chefs tlaxcaltèques, qui ont maintenu leur alliance malgré la déroute, gagnent un poids décisif auprès de Cortés."
+      ],
+      "territory": "otumba-1520",
+      "territoryNote": "En juillet 1520, l'empire est celui de juin : vallée de Mexico et de Toluca, Morelos, Hidalgo méridional, est et sud de Puebla, Guerrero, Mixteca et vallée d'Oaxaca, isthme de Tehuantepec, Soconusco (séparé), sans la côte totonaque ; les terres de Texcoco (est de la vallée, vers Otumba) restent mexicas sur le papier mais incertaines. Tlaxcala et Huexotzinco (Puebla), indépendantes, sont les alliées de Cortés. Voisins : Metztitlán (Hidalgo), Yopitzinco (Guerrero) et Tututepec (Oaxaca), indépendants ; le royaume tarasque (Michoacan), indépendant ; les Mayas du Yucatán, indépendants.",
+      "battle": {
+        "belligerents": [
+          "Espagnols et alliés tlaxcaltèques",
+          "Armée mexica"
+        ],
+        "commanders": [
+          "Hernán Cortés",
+          "Matlatzincatzin, cihuacoatl (selon la tradition)"
+        ],
+        "outcome": "Victoire des Espagnols et de leurs alliés ; l'armée mexica se retire",
+        "forces": "Quelques centaines d'Espagnols épuisés et des alliés tlaxcaltèques contre, selon Cortés, environ 20 000 Mexicas (chiffre espagnol, probablement exagéré)",
+        "losses": "Inconnues ; lourdes pertes mexicas selon les récits espagnols"
+      },
+      "armies": [
+        {
+          "id": "cortes",
+          "side": "Cortés et ses alliés tlaxcaltèques",
+          "faction": "tercios",
+          "path": [
+            [
+              -99.2125,
+              19.4561
+            ],
+            [
+              -99.22,
+              19.72
+            ],
+            [
+              -98.95,
+              19.78
+            ],
+            [
+              -98.75,
+              19.7
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Armée mexica",
+          "from": "Tenochtitlan",
+          "faction": "azteques",
+          "path": [
+            [
+              -99.1333,
+              19.4326
+            ],
+            [
+              -98.95,
+              19.55
+            ],
+            [
+              -98.75,
+              19.7
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Hernán Cortés",
+          "role": "Capitaine des survivants espagnols",
+          "faction": "tercios",
+          "archetype": "conquistador",
+          "quote": "(formule libre) Frappons le porte-étendard : l'armée suivra",
+          "position": [
+            -98.78,
+            19.71
+          ],
+          "person": "hernan-cortes"
+        },
+        {
+          "name": "Un guerrier de Tlaxcala",
+          "role": "Allié indigène de Cortés (figure type)",
+          "faction": "mesoamericains",
+          "archetype": "general",
+          "quote": "(formule libre) Ma cité se bat depuis cent ans contre Tenochtitlan",
+          "position": [
+            -98.74,
+            19.69
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille d'Otumba",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_d%27Otumba"
+        },
+        {
+          "label": "Wikipédia — Noche Triste",
+          "url": "https://fr.wikipedia.org/wiki/Noche_Triste"
+        },
+        {
+          "label": "Wikipédia — Hernán Cortés",
+          "url": "https://fr.wikipedia.org/wiki/Hern%C3%A1n_Cort%C3%A9s"
+        }
+      ]
+    },
+    {
+      "id": "variole-1520",
+      "year": 1520,
+      "title": "La variole frappe Tenochtitlan ; Cuitláhuac meurt",
+      "type": "politique",
+      "location": [
+        -99.1333,
+        19.4326
+      ],
+      "zoom": 5.5,
+      "summary": "À l'automne 1520, la variole, importée par l'expédition de Narváez, ravage Tenochtitlan. Cuitláhuac, élu tlatoani après la mort de Moctezuma, meurt après environ 80 jours de règne.",
+      "details": "Quand l'expédition de **Narváez** débarque, en 1520, un de ses membres porte la **variole**, maladie inconnue en Amérique. Selon Sahagún et ses informateurs nahuas, c'est un esclave africain qui la répand à Cempoala. Les habitants n'ont aucune immunité. La maladie arrive à Tenochtitlan à l'automne, après la Noche Triste : la peau se couvre de pustules, on ne peut ni marcher, ni manger, ni soigner les malades. Les Nahuas la nomment *hueyzahuatl*, « la grande éruption ».\n\nLe nouveau tlatoani, **Cuitláhuac**, élu après la mort de Moctezuma II, s'efforce de rallier les provinces et d'empêcher les alliances avec Cortés. Il exempte, dit-on, certaines d'entre elles de tribut, mais il tombe malade et meurt après environ quatre-vingts jours de règne. Selon la tradition, **Cuauhtémoc**, jeune cousin de Moctezuma, lui succède en janvier ou février 1521.\n\nL'ampleur de la mortalité est discutée : un tiers ou plus de la population dans certaines villes, selon les estimations modernes, sans chiffre sûr. Mais l'effet politique est net : des guerriers et des nobles disparaissent, le moral s'effondre, et des provinces changent de camp. Pendant ce temps, Cortés, réfugié à Tlaxcala, reconquiert Tepeaca, y fait construire des brigantins et s'allie à Texcoco.",
+      "consequences": [
+        "La variole tue une part importante de la population de Tenochtitlan et des villes de la vallée (l'ampleur exacte est inconnue).",
+        "Cuitláhuac meurt après environ 80 jours de règne ; Cuauhtémoc le remplace en 1521.",
+        "L'est de Puebla (Tepeaca, Tecamachalco, Cuauhquechollan) passe à Cortés et à ses alliés tlaxcaltèques.",
+        "Texcoco, la deuxième cité de l'alliance, se rapproche de Cortés ; les provinces du sud et de l'est se divisent."
+      ],
+      "territory": "variole-1520",
+      "territoryNote": "À la fin de 1520, les Mexicas tiennent encore la vallée de Mexico (Tenochtitlan, Tlacopan, Xochimilco, Chalco incertaine), le Morelos, le Guerrero, la Mixteca et la vallée d'Oaxaca, l'isthme de Tehuantepec et le Soconusco nominalement ; ils perdent l'est de Puebla (Tepeaca, Tecamachalco) et la côte totonaque (Veracruz), aux mains de Cortés et de Tlaxcala, et Texcoco, la deuxième cité, change de camp. Voisins : Tlaxcala et Huexotzinco (Puebla), alliées de Cortés ; Metztitlán, Yopitzinco et Tututepec, indépendants ; le royaume tarasque (Michoacan), indépendant ; les Mayas du Yucatán, indépendants.",
+      "figures": [
+        {
+          "name": "Cuitláhuac",
+          "role": "Dixième tlatoani de Tenochtitlan, vainqueur de la Noche Triste",
+          "faction": "azteques",
+          "archetype": "souverain-precolombien",
+          "quote": "(formule libre) Aucun tribut pour ceux qui combattent l'étranger",
+          "position": [
+            -99.1333,
+            19.4326
+          ],
+          "person": "cuitlahuac"
+        },
+        {
+          "name": "Un médecin nahua",
+          "role": "Guérisseur (ticitl) de Tenochtitlan (figure type)",
+          "faction": "azteques",
+          "archetype": "sage",
+          "quote": "(formule libre) Nous connaissons les plantes, pas cette maladie",
+          "position": [
+            -99.14,
+            19.44
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Cuitláhuac",
+          "url": "https://fr.wikipedia.org/wiki/Cuitl%C3%A1huac"
+        },
+        {
+          "label": "Wikipédia — Variole",
+          "url": "https://fr.wikipedia.org/wiki/Variole"
+        },
+        {
+          "label": "Wikipédia — Bernardino de Sahagún",
+          "url": "https://fr.wikipedia.org/wiki/Bernardino_de_Sahag%C3%BAn"
+        }
+      ]
+    },
+    {
+      "id": "tenochtitlan-1521",
+      "year": 1521,
+      "title": "Le siège de Tenochtitlan et la chute de Cuauhtémoc",
+      "type": "chute",
+      "location": [
+        -99.1333,
+        19.4326
+      ],
+      "zoom": 6.3,
+      "summary": "Du 26 mai au 13 août 1521, Cortés, avec des dizaines de milliers d'alliés indigènes, assiège Tenochtitlan. La ville tombe et Cuauhtémoc est capturé : c'est la fin de l'Empire aztèque.",
+      "details": "Début 1521, **Cuauhtémoc** (« l'aigle qui descend »), jeune tlatoani, prépare la défense de Tenochtitlan. **Cortés**, lui, rassemble ses forces à Texcoco : environ 900 Espagnols (dont 86 cavaliers et plus d'une centaine d'arbalétriers et d'arquebusiers), quelques canons, treize **brigantins** (petits navires à voile et rames) mis à l'eau en avril, et surtout des dizaines de milliers d'alliés indigènes (Tlaxcaltèques, Texcocans, Chalcas et d'autres). Cortés et Bernal Díaz parlent de plus de 100 000, chiffre jugé trop élevé. Ces alliés ont leurs raisons : se venger de décennies de tribut.\n\nLe siège dure du **26 mai au 13 août 1521**. Les brigantins dominent le lac ; l'aqueduc de Chapultepec, qui apporte l'eau douce, est coupé ; on avance digue par digue, on comble les canaux, on rase les maisons. La faim, la soif et la variole achèvent la ville. Les combats les plus durs ont lieu dans le quartier de **Tlatelolco**. Le 13 août, Cuauhtémoc, fuyant en canoë, est capturé.\n\nLes pertes mexicas ne sont connues que par des estimations : plusieurs dizaines de milliers de morts, combats, faim et maladie confondus, certains textes parlant de bien plus. Cortés fonde Mexico sur les ruines ; Cuauhtémoc, torturé puis emmené au Honduras, est pendu en 1525.",
+      "consequences": [
+        "Tenochtitlan est détruite ; l'Empire aztèque disparaît et ses provinces passent aux Espagnols et à leurs alliés.",
+        "Mexico, bâtie sur les ruines, devient la capitale de la Nouvelle-Espagne, vice-royauté créée en 1535.",
+        "Les alliés indigènes, surtout Tlaxcala, obtiennent des privilèges, qui s'érodent vite sous la domination espagnole.",
+        "La conquête se poursuit vers le Guerrero, le Michoacan et le sud, pendant que l'épidémie fait chuter la population."
+      ],
+      "territory": "tenochtitlan-1521",
+      "territoryNote": "En août 1521, il ne reste à l'empire que l'île de Tenochtitlan et de Tlatelolco, avec les chaussées et quelques quartiers lacustres ; les provinces du Morelos, de Puebla, du Guerrero, de la Mixteca, d'Oaxaca et du Soconusco ont changé de camp ou sont désertées, et Texcoco, Tlacopan, Chalco et Xochimilco sont alliées de Cortés. Voisins : Tlaxcala, Huexotzinco et Cholula (Puebla), alliées de Cortés ; le royaume tarasque (Michoacan), encore indépendant ; Metztitlán (Hidalgo), Yopitzinco (Guerrero) et Tututepec (Oaxaca), indépendants ; les Mayas du Yucatán, indépendants.",
+      "battle": {
+        "belligerents": [
+          "Espagnols et alliés indigènes (Tlaxcaltèques, Texcocans, Chalcas)",
+          "Empire aztèque (Tenochtitlan et Tlatelolco)"
+        ],
+        "commanders": [
+          "Hernán Cortés",
+          "Pedro de Alvarado",
+          "Cuauhtémoc"
+        ],
+        "outcome": "Victoire des Espagnols et de leurs alliés ; chute de Tenochtitlan le 13 août 1521",
+        "forces": "Environ 900 Espagnols, treize brigantins et plusieurs dizaines de milliers d'alliés indigènes (estimations très variables)",
+        "losses": "Plusieurs dizaines de milliers de morts mexicas, victimes des combats, de la faim et de la variole ; pertes espagnoles faibles, alliées plus lourdes"
+      },
+      "armies": [
+        {
+          "id": "cortes",
+          "side": "Cortés et ses alliés tlaxcaltèques",
+          "faction": "tercios",
+          "path": [
+            [
+              -98.75,
+              19.7
+            ],
+            [
+              -98.2,
+              19.31
+            ],
+            [
+              -98.88,
+              19.51
+            ],
+            [
+              -99.1333,
+              19.4326
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Alliés indigènes de Cortés (Texcocans, Chalcas, Tlaxcaltèques)",
+          "from": "Texcoco",
+          "faction": "mesoamericains",
+          "path": [
+            [
+              -98.88,
+              19.51
+            ],
+            [
+              -99,
+              19.45
+            ],
+            [
+              -99.1,
+              19.44
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Cuauhtémoc et les Mexicas",
+          "faction": "azteques",
+          "path": [
+            [
+              -99.14,
+              19.45
+            ],
+            [
+              -99.1333,
+              19.4326
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Cuauhtémoc",
+          "role": "Onzième et dernier tlatoani de Tenochtitlan",
+          "faction": "azteques",
+          "archetype": "souverain-precolombien",
+          "quote": "(selon Bernal Díaz) Prenez ce poignard et tuez-moi",
+          "position": [
+            -99.1333,
+            19.4326
+          ],
+          "person": "cuauhtemoc"
+        },
+        {
+          "name": "Hernán Cortés",
+          "role": "Conquistador de Tenochtitlan",
+          "faction": "tercios",
+          "archetype": "conquistador",
+          "quote": "(formule libre) Digue après digue, la ville tombera",
+          "position": [
+            -99.08,
+            19.4
+          ],
+          "person": "hernan-cortes"
+        },
+        {
+          "name": "Un poète nahua",
+          "role": "Témoin de la chute (figure type)",
+          "faction": "azteques",
+          "archetype": "sage",
+          "quote": "(Cantares mexicanos) Des lances brisées gisent sur les routes ; nous avons arraché nos cheveux",
+          "position": [
+            -99.14,
+            19.44
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Siège de Tenochtitlan",
+          "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_Tenochtitlan"
+        },
+        {
+          "label": "Wikipédia — Cuauhtémoc",
+          "url": "https://fr.wikipedia.org/wiki/Cuauht%C3%A9moc"
+        },
+        {
+          "label": "Wikipédia — Hernán Cortés",
+          "url": "https://fr.wikipedia.org/wiki/Hern%C3%A1n_Cort%C3%A9s"
+        }
+      ]
+    }
+  ]
+}

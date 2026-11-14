@@ -1,0 +1,226 @@
+[
+  {
+    "id": "chinampas",
+    "name": "Les chinampas, jardins gagnés sur le lac",
+    "year": 1440,
+    "approx": true,
+    "place": "Xochimilco et lac de Mexico",
+    "at": [
+      -99.1,
+      19.26
+    ],
+    "inventor": "Cultivateurs nahuas du lac",
+    "category": "agriculture",
+    "description": "Les chinampas sont des parcelles longues et étroites, bâties dans les eaux peu profondes du lac avec des branches, de la vase et des herbes aquatiques, bordées de saules. Elles existent avant les Aztèques, mais la Triple Alliance en multiplie la surface au XVᵉ siècle. Leur sol riche donne plusieurs récoltes par an : il s'agit d'une extension d'une technique plus ancienne, non d'une invention aztèque.",
+    "impact": "Elles nourrissent une capitale d'au moins plusieurs dizaines de milliers d'habitants sur un lac, sans bêtes de trait : sans elles, Tenochtitlan n'aurait pas pu grandir.",
+    "sources": [
+      {
+        "label": "Wikipédia — Chinampa",
+        "url": "https://fr.wikipedia.org/wiki/Chinampa"
+      },
+      {
+        "label": "Wikipédia — Tenochtitlan",
+        "url": "https://fr.wikipedia.org/wiki/Tenochtitlan"
+      }
+    ]
+  },
+  {
+    "id": "ecriture-codex",
+    "name": "Les codex et l'écriture pictographique",
+    "year": 1430,
+    "approx": true,
+    "place": "Tenochtitlan",
+    "at": [
+      -99.13,
+      19.43
+    ],
+    "inventor": "Tlacuilos (scribes-peintres) mexicas",
+    "category": "ecriture",
+    "description": "Les Mexicas notent leur histoire, leurs tributs et leurs calendriers dans des livres en papier d'écorce ou en peau, pliés en accordéon : les codex, peints par des scribes appelés tlacuilos. L'écriture mêle images et signes phonétiques pour les noms. Sous Itzcoatl, selon les chroniques, on réécrit l'histoire officielle. Cet art vient de traditions mésoaméricaines plus anciennes : il est diffusé et mis au service de l'État.",
+    "impact": "Les codex permettent de gérer un empire de tributs et de transmettre une mémoire. Les rares exemplaires conservés, dont certains copiés après la conquête, sont notre source principale sur ce monde.",
+    "sources": [
+      {
+        "label": "Wikipédia — Codex aztèque",
+        "url": "https://fr.wikipedia.org/wiki/Codex_azt%C3%A8que"
+      },
+      {
+        "label": "Wikipédia — Codex Mendoza",
+        "url": "https://fr.wikipedia.org/wiki/Codex_Mendoza"
+      }
+    ]
+  },
+  {
+    "id": "digue-nezahualcoyotl",
+    "name": "La digue de Nezahualcoyotl",
+    "year": 1449,
+    "approx": true,
+    "place": "Lac de Texcoco, Tenochtitlan",
+    "at": [
+      -99.05,
+      19.42
+    ],
+    "inventor": "Nezahualcoyotl et Moctezuma Ier (attribué)",
+    "category": "technique",
+    "description": "Après l'inondation de 1449, selon les chroniques, le roi de Texcoco Nezahualcoyotl conçoit une digue longue d'environ 12 à 16 kilomètres, en pieux, pierres et terre, qui sépare l'eau douce du lac de Mexico de l'eau salée du lac de Texcoco. Elle protège la ville des crues et améliore l'eau des chinampas. Les dates et le plan exact restent discutés.",
+    "impact": "Elle règle le niveau et la salinité du lac autour de Tenochtitlan : un grand ouvrage hydraulique, sans machine, qui permet de garder la capitale vivable malgré les crues.",
+    "sources": [
+      {
+        "label": "Wikipédia — Nezahualcóyotl",
+        "url": "https://fr.wikipedia.org/wiki/Nezahualc%C3%B3yotl"
+      },
+      {
+        "label": "Wikipédia — Tenochtitlan",
+        "url": "https://fr.wikipedia.org/wiki/Tenochtitlan"
+      }
+    ]
+  },
+  {
+    "id": "aqueduc-chapultepec",
+    "name": "L'aqueduc de Chapultepec",
+    "year": 1466,
+    "approx": true,
+    "place": "Chapultepec, Tenochtitlan",
+    "at": [
+      -99.18,
+      19.42
+    ],
+    "inventor": "Ingénieurs de Moctezuma Ier et de Nezahualcoyotl (attribué)",
+    "category": "architecture",
+    "description": "Pour boire, Tenochtitlan, entourée d'eau saumâtre, reçoit l'eau douce des sources de Chapultepec par un aqueduc de plusieurs kilomètres, avec deux canaux parallèles : l'un sert pendant qu'on nettoie l'autre. Les chroniques le datent de Moctezuma Ier, vers 1466, avec des travaux plus tard sous Ahuitzotl. Les Espagnols le coupent en 1521, pendant le siège.",
+    "impact": "Un aqueduc double fournit l'eau potable d'une ville lacustre de plus de cent mille habitants. Sa coupure par Cortés en 1521 fait partie des armes décisives du siège.",
+    "sources": [
+      {
+        "label": "Wikipédia — Aqueduc de Chapultepec",
+        "url": "https://fr.wikipedia.org/wiki/Aqueduc_de_Chapultepec"
+      },
+      {
+        "label": "Wikipédia — Siège de Tenochtitlan",
+        "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_Tenochtitlan"
+      }
+    ]
+  },
+  {
+    "id": "calendrier-pierre-du-soleil",
+    "name": "Le calendrier et la pierre du Soleil",
+    "year": 1479,
+    "approx": true,
+    "place": "Tenochtitlan",
+    "at": [
+      -99.13,
+      19.435
+    ],
+    "inventor": "Prêtres-astronomes mexicas (héritage mésoaméricain)",
+    "category": "science",
+    "description": "Les Mexicas utilisent deux calendriers qui s'engrènent : le xiuhpohualli, de 365 jours, pour les saisons, et le tonalpohualli, de 260 jours, pour la divination. Tous les 52 ans, ils se retrouvent au même point : on célèbre le Feu nouveau. La pierre du Soleil, vers 1479 selon une hypothèse courante (datation discutée), figure ce monde. Ce système vient de traditions mésoaméricaines plus anciennes.",
+    "impact": "Ce calendrier à deux cycles règle les récoltes, les fêtes, les décisions politiques et les noms des personnes. Il porte une idée du temps cyclique, très différente de la nôtre.",
+    "sources": [
+      {
+        "label": "Wikipédia — Calendrier aztèque",
+        "url": "https://fr.wikipedia.org/wiki/Calendrier_azt%C3%A8que"
+      },
+      {
+        "label": "Wikipédia — Pierre du Soleil",
+        "url": "https://fr.wikipedia.org/wiki/Pierre_du_Soleil"
+      }
+    ]
+  },
+  {
+    "id": "cacao-monnaie",
+    "name": "Le cacao, monnaie et boisson de prestige",
+    "year": 1500,
+    "approx": true,
+    "place": "Soconusco et marchés de Tenochtitlan",
+    "at": [
+      -92.26,
+      14.91
+    ],
+    "category": "monnaie",
+    "description": "Les fèves de cacao, produites sur la côte chaude (le Soconusco), servent à la fois de boisson de luxe, offerte aux nobles et aux guerriers, et de petite monnaie dans les marchés : on achète un lapin ou un tamal avec quelques fèves. Sahagún raconte que des fraudeurs fabriquaient de fausses fèves. L'usage vient des Mayas et des peuples antérieurs ; l'empire le généralise comme tribut.",
+    "impact": "Une monnaie qui pousse sur un arbre, stockée en sacs, permet des échanges quotidiens sans métal frappé : une solution adaptée à une civilisation sans pièces ni bêtes de somme.",
+    "sources": [
+      {
+        "label": "Wikipédia — Cacao",
+        "url": "https://fr.wikipedia.org/wiki/Cacao"
+      },
+      {
+        "label": "Wikipédia — Marché de Tlatelolco",
+        "url": "https://fr.wikipedia.org/wiki/Tlatelolco"
+      }
+    ]
+  },
+  {
+    "id": "calmecac-telpochcalli",
+    "name": "L'école pour tous : calmecac et telpochcalli",
+    "year": 1440,
+    "approx": true,
+    "place": "Tenochtitlan",
+    "at": [
+      -99.14,
+      19.44
+    ],
+    "inventor": "Attribuée à Tlacaelel et Moctezuma Ier (tradition)",
+    "category": "administration",
+    "description": "Selon les chroniques et les codex, les enfants de Tenochtitlan vont à l'école vers dix à quinze ans. Les fils de nobles entrent au calmecac, tenu par des prêtres : écriture, histoire, astronomie, chants. Les autres vont au telpochcalli, de quartier, pour s'entraîner à la guerre et aux travaux collectifs. Les filles reçoivent une éducation séparée. On ignore si l'obligation était réellement générale.",
+    "impact": "Un système où presque chaque enfant est formé par la communauté, souvent présenté comme rare à l'époque : il forme aussi bien des prêtres et des scribes que les guerriers de l'empire.",
+    "sources": [
+      {
+        "label": "Wikipédia — Calmecac",
+        "url": "https://fr.wikipedia.org/wiki/Calmecac"
+      },
+      {
+        "label": "Wikipédia — Empire aztèque",
+        "url": "https://fr.wikipedia.org/wiki/Empire_azt%C3%A8que"
+      }
+    ]
+  },
+  {
+    "id": "medecine-plantes",
+    "name": "La médecine par les plantes et le jardin de Huaxtepec",
+    "year": 1450,
+    "approx": true,
+    "place": "Huaxtepec (Morelos)",
+    "at": [
+      -98.95,
+      18.9
+    ],
+    "inventor": "Ticitl (médecins nahuas)",
+    "category": "medecine",
+    "description": "Les médecins nahuas, les ticitl, soignent avec des centaines de plantes, des bains de vapeur, des massages et des rites. Moctezuma Ier aurait fait planter à Huaxtepec un jardin de plantes médicinales. Ce savoir est écrit après la conquête : le Codex de la Cruz-Badiano, rédigé en 1552 par des Nahuas lettrés, en conserve une partie. La pratique, elle, est antérieure à 1521.",
+    "impact": "Un savoir de plantes, nommé et classé, que l'Europe découvre au XVIᵉ siècle. Il nous reste surtout par des textes écrits après la conquête, ce qui impose la prudence.",
+    "sources": [
+      {
+        "label": "Wikipédia — Codex de la Cruz-Badiano",
+        "url": "https://fr.wikipedia.org/wiki/Codex_de_la_Cruz-Badiano"
+      },
+      {
+        "label": "Wikipédia — Empire aztèque",
+        "url": "https://fr.wikipedia.org/wiki/Empire_azt%C3%A8que"
+      }
+    ]
+  },
+  {
+    "id": "marche-tlatelolco",
+    "name": "Le marché de Tlatelolco",
+    "year": 1473,
+    "approx": true,
+    "place": "Tlatelolco, Tenochtitlan",
+    "at": [
+      -99.138,
+      19.455
+    ],
+    "inventor": "Marchands de Tlatelolco (pochteca)",
+    "category": "administration",
+    "description": "Le marché de Tlatelolco, plus ancien que l'empire, passe en 1473 sous la tutelle de Tenochtitlan. Il rassemble chaque jour des milliers de vendeurs : maïs, plumes, cacao, esclaves, poterie. Des juges siègent dans un bâtiment du marché et des inspecteurs contrôlent les prix et les poids. Cortés le décrit : il parle de 60 000 personnes certains jours, chiffre sans doute exagéré.",
+    "impact": "Un marché surveillé, ouvert tous les jours, qui relie tout l'empire : les Espagnols de 1519 le comparent aux plus grandes foires d'Europe.",
+    "sources": [
+      {
+        "label": "Wikipédia — Tlatelolco",
+        "url": "https://fr.wikipedia.org/wiki/Tlatelolco"
+      },
+      {
+        "label": "Wikipédia — Tenochtitlan",
+        "url": "https://fr.wikipedia.org/wiki/Tenochtitlan"
+      }
+    ]
+  }
+]
