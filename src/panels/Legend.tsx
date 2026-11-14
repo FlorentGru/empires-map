@@ -35,6 +35,7 @@ const EMPIRE_SPRITES: Record<string, { faction: Faction; archetype: Archetype }>
   mali: { faction: 'mandingues', archetype: 'mansa' },
   songhai: { faction: 'songhais', archetype: 'askia' },
   azteques: { faction: 'azteques', archetype: 'souverain-precolombien' },
+  carthage: { faction: 'carthaginois', archetype: 'general' },
 };
 
 /** Au-delà, la légende des entités est tronquée (périodes de division). */

@@ -258,7 +258,9 @@ export type Faction =
   // Empire songhaï
   | 'marocains'
   // Empire aztèque
-  | 'mesoamericains';
+  | 'mesoamericains'
+  // Empire carthaginois
+  | 'numides';
 
 export const FACTIONS: Faction[] = [
   'romains',
@@ -344,6 +346,7 @@ export const FACTIONS: Faction[] = [
   'mossis',
   'marocains',
   'mesoamericains',
+  'numides',
 ];
 
 export type Archetype =
