@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Empire aztèque",
+    "summary": "Né en 1428 de l'alliance de trois cités de la vallée de Mexico, Tenochtitlan, Texcoco et Tlacopan, l'empire s'étend du golfe du Mexique au Pacifique. Ce n'est pas un territoire administré partout de la même façon, mais un réseau de près de quarante provinces qui versent tribut en maïs, coton, cacao, plumes et or à Tenochtitlan.",
+    "years": [1428, 1521]
+  },
+  {
+    "name": "Isthme de Tehuantepec",
+    "summary": "Étroit passage entre le golfe du Mexique et le Pacifique, dominé par les Zapotèques, que franchissent les marchands aztèques en route vers le Soconusco. Après une longue guerre, Ahuitzotl conclut avec son roi une alliance scellée par un mariage, avant que la région ne soit pleinement intégrée à l'empire.",
+    "years": [1500, 1500]
+  }
+]

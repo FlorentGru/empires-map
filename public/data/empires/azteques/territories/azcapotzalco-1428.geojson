@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"empire":"azteques","name":"Empire aztèque","sourceYear":1428,"status":"core"},"geometry":{"type":"Polygon","coordinates":[[[-99.52,19.56],[-99.45,19.32],[-99.27,19.22],[-99.09,19.32],[-99.02,19.56],[-99.09,19.8],[-99.27,19.9],[-99.45,19.8],[-99.52,19.56]]]}}]}
