@@ -822,6 +822,28 @@ export const ESP_SOLDIER_SPECS = {
     weapon: arquebus(),
     shield: '',
   },
+  mesoamericains: {
+    skin: '#b97a50',
+    tunic: '#efe6cc',
+    legs: 'bare',
+    boots: '#8a5a2b',
+    deco:
+      path('M10.6 14.4Q16 13 21.4 14.4L21.4 25L10.6 25Z', '#efe6cc') +
+      stroke('M10.8 17.6H21.2M10.8 21.6H21.2', '#b02a22', 1.4) +
+      stroke('M13.4 14.6V24.6M18.6 14.6V24.6', '#d8cdb0', 0.6),
+    head:
+      path('M11.4 8.4Q11 3 16 2.6Q21 3 20.6 8.4L19.4 8.4L19.4 6.8L12.6 6.8L12.6 8.4Z', '#efe6cc') +
+      stroke('M12.6 7.6H19.4', '#b02a22', 1) +
+      path('M14.6 3.4Q12.4 -1.8 14.2 -4.6Q16.2 -1.8 17.2 3.4Z', '#f4efe0') +
+      circ(14, 5.6, 0.7, OUT, 'stroke="none"') +
+      circ(18, 5.6, 0.7, OUT, 'stroke="none"'),
+    shield:
+      circ(8.5, 23, 6.3, '#efe6cc') + circ(8.5, 23, 4.2, '#b02a22') + circ(8.5, 23, 2.2, '#efe6cc') + stroke('M8.5 16.8V29.2M2.3 23H14.7', '#b02a22', 0.7),
+    weapon:
+      rect(25.4, 14, 1.8, 24, WOOD) +
+      path('M24.6 15.4L28 15.4L28.4 6Q26.3 3.4 24.2 6Z', '#6b4a2e') +
+      path('M25 6.6L25 14.8M27.6 6.6L27.6 14.8', '#1f1a14', 'stroke="#1f1a14" stroke-width="1.1"'),
+  },
   'francais-ancien-regime': {
     tunic: '#efe6cc',
     legs: 'pants',

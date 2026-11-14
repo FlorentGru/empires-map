@@ -80,4 +80,4 @@ Corrige les petits écarts directement dans `_carto.json`, relance `npm run buil
 - Les URL Wikipédia : `curl` en boucle déclenche des 429 ; vérifier les titres en un seul appel à l'API (`action=query&titles=A|B|…&redirects=1`, pages `missing`), et écarter les pages d'homonymie (`prop=pageprops`).
 - `require('x.geojson')` échoue et affiche tout le fichier dans l'erreur (des milliers de tokens perdus) : toujours `JSON.parse(fs.readFileSync(...))`.
 - En session cloud, `fr.wikipedia.org` peut être bloqué par le réseau (403 du proxy) : ne pas boucler, lister les titres utilisés et les faire vérifier par Florent (ou ajouter l'hôte dans les réglages réseau de l'environnement).
-- Capture headless en session cloud : le Playwright du projet peut ne pas trouver son navigateur ; passer `executablePath: '/opt/pw-browsers/chromium-*/chrome-linux/chrome'`.
+- Capture headless en session cloud : le Playwright du projet peut ne pas trouver son navigateur ; passer `executablePath: '/opt/pw-browsers/chromium-*/chrome-linux*/chrome'`.

@@ -34,6 +34,6 @@ Carte interactive (React + Vite + TS strict + MapLibre GL, relief 3D) qui montre
 - Ne jamais créer, lire ni manipuler de clé API (l'utilisateur la met lui-même dans `agent/.env`).
 - Sous-agents : Sonnet pour le jugement (histoire, carte), Haiku pour les tâches à exemple recopiable (figurines, textes courts) ; peu nombreux, séquentiels (parallèles seulement sur fichiers disjoints), prompts précis.
 - Économie de tokens : ne jamais lire en entier les gros JSON/GeoJSON (extraits via `node -e`), peu de captures.
-- Captures : en session cloud, `CHROMIUM_PATH=/opt/pw-browsers/chromium-*/chrome-linux/chrome` pour `build:og` et `npx playwright test`. Chromium du projet (`@playwright/test`) en headless ; l'utilisateur juge la fluidité dans son navigateur (Brave).
+- Captures : en session cloud, `CHROMIUM_PATH=/opt/pw-browsers/chromium-*/chrome-linux*/chrome` pour `build:og` et `npx playwright test`. Chromium du projet (`@playwright/test`) en headless ; l'utilisateur juge la fluidité dans son navigateur (Brave).
 - Le serveur Vite doit être relancé après régénération de `public/data` ; ne pas utiliser `pkill -f` avec un motif qui correspond à la commande elle-même.
 - Deux machines : Linux (ce PC, Node installé) et un PC Windows (`C:\Users\fgru\project\empires-map`, sans Node). `git pull` en début de session.
