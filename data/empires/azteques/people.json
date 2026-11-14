@@ -1,0 +1,346 @@
+[
+  {
+    "id": "itzcoatl",
+    "name": "Itzcoatl",
+    "archetype": "souverain-precolombien",
+    "faction": "azteques",
+    "died": 1440,
+    "title": "Quatrième tlatoani de Tenochtitlan, fondateur de la Triple Alliance",
+    "bio": "Itzcoatl (« serpent d'obsidienne ») est élu tlatoani de Tenochtitlan en 1427, après l'assassinat de son neveu Chimalpopoca par les Tépanèques. Les Mexicas sont alors les tributaires d'Azcapotzalco, dont le roi Maxtla les écrase. Itzcoatl, soutenu par son neveu Moctezuma et par le conseiller Tlacaelel, choisit la guerre. Avec Nezahualcoyotl de Texcoco et le petit royaume de Tlacopan, il renverse Azcapotzalco vers 1428 : c'est le point de départ de la Triple Alliance. Il soumet ensuite les cités des lacs du sud, comme Xochimilco et Coyoacan, et distribue les terres conquises à la noblesse mexica, qui forme dès lors une classe de grands propriétaires. Selon les codex et les chroniques écrites après la conquête, il fait aussi brûler d'anciens livres peints et réécrire l'histoire du peuple mexica pour exalter son rôle. Les historiens discutent l'ampleur de cet épisode, que nous ne connaissons que par des sources tardives. Il meurt en 1440 ; Moctezuma Ier lui succède. Les dates de son règne varient d'une source à l'autre, de quelques années.",
+    "keyFacts": [
+      "1427 : élu tlatoani de Tenochtitlan",
+      "Vers 1428 : renverse Maxtla et prend Azcapotzalco",
+      "Vers 1430 : scelle la Triple Alliance avec Texcoco et Tlacopan",
+      "Selon les chroniques : fait réécrire l'histoire mexica",
+      "1440 : meurt ; Moctezuma Ier lui succède"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Itzcóatl",
+        "url": "https://fr.wikipedia.org/wiki/Itzc%C3%B3atl"
+      },
+      {
+        "label": "Wikipédia — Empire aztèque",
+        "url": "https://fr.wikipedia.org/wiki/Empire_azt%C3%A8que"
+      }
+    ]
+  },
+  {
+    "id": "nezahualcoyotl",
+    "name": "Nezahualcoyotl",
+    "archetype": "sage",
+    "faction": "azteques",
+    "born": 1402,
+    "died": 1472,
+    "title": "Roi-poète de Texcoco, allié des Mexicas",
+    "bio": "Nezahualcoyotl (« coyote qui jeûne ») naît en 1402, prince acolhua de Texcoco. Son père, Ixtlilxochitl, est tué en 1418 par les Tépanèques d'Azcapotzalco. Le jeune prince fuit, vit en exil, puis s'allie aux Mexicas d'Itzcoatl. Après la chute d'Azcapotzalco vers 1428, il reprend Texcoco et devient l'un des trois piliers de la Triple Alliance. On lui attribue de grands travaux : la digue qui protège Tenochtitlan des eaux salées du lac (vers 1449), des jardins, des aqueducs et un code de lois sévère pour Texcoco. Il est aussi célèbre comme poète : des chants nahuatl lui sont attribués, dont des vers sur la brièveté de la vie (« Même le jade se brise… »). Mais l'attribution est incertaine : ces textes sont connus par des recueils du XVIᵉ siècle, copiés après la conquête, et le portrait de sage presque monothéiste, tracé par son descendant Ixtlilxochitl, est sans doute embelli. Il meurt en 1472 ; son fils Nezahualpilli lui succède à Texcoco.",
+    "keyFacts": [
+      "1402 : naît à Texcoco",
+      "1418 : son père est tué par les Tépanèques",
+      "Vers 1428 : s'allie aux Mexicas et reprend Texcoco",
+      "Vers 1449 : bâtit la digue protégeant Tenochtitlan",
+      "1472 : meurt ; son fils Nezahualpilli lui succède"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Nezahualcóyotl",
+        "url": "https://fr.wikipedia.org/wiki/Nezahualc%C3%B3yotl"
+      },
+      {
+        "label": "Wikipédia — Texcoco",
+        "url": "https://fr.wikipedia.org/wiki/Texcoco"
+      }
+    ]
+  },
+  {
+    "id": "tlacaelel",
+    "name": "Tlacaelel",
+    "archetype": "sage",
+    "faction": "azteques",
+    "born": 1398,
+    "died": 1480,
+    "title": "Cihuacoatl, conseiller suprême de plusieurs souverains",
+    "bio": "Tlacaelel est le neveu d'Itzcoatl et le frère de Moctezuma Ier. Il ne devient jamais tlatoani, mais exerce pendant près d'un demi-siècle la charge de cihuacoatl (« femme-serpent »), sorte de premier ministre qui conseille Itzcoatl, Moctezuma Ier, Axayacatl et Tizoc. Les chroniques lui attribuent un rôle central dans l'organisation de l'empire : la lutte contre Azcapotzalco, la réécriture de l'histoire mexica, la création des guerres fleuries après la famine de 1454, et un culte du Soleil et de Huitzilopochtli fondé sur l'idée que les dieux doivent être nourris par des sacrifices. Les historiens se demandent pourtant s'il a vraiment joué ce rôle : les récits viennent surtout de sources liées à sa famille, comme la Chronique mexicayotl, et exagèrent peut-être son influence. On dit qu'il meurt vers 1480, très âgé, et qu'il a refusé à plusieurs reprises le trône. Certains textes lui prêtent une longue vie, jusqu'à 1487. Les dates exactes de sa vie restent incertaines, quelques années près.",
+    "keyFacts": [
+      "Vers 1398 : naît à Tenochtitlan",
+      "Vers 1428 : conseille Itzcoatl contre Azcapotzalco",
+      "Selon les chroniques : fait réécrire l'histoire mexica",
+      "Vers 1454 : conseille les guerres fleuries après la famine",
+      "Vers 1480 : meurt, très âgé"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Tlacaélel",
+        "url": "https://fr.wikipedia.org/wiki/Tlaca%C3%A9lel"
+      },
+      {
+        "label": "Wikipédia — Guerre fleurie",
+        "url": "https://fr.wikipedia.org/wiki/Guerre_fleurie"
+      }
+    ]
+  },
+  {
+    "id": "moctezuma-i",
+    "name": "Moctezuma Ier",
+    "archetype": "souverain-precolombien",
+    "faction": "azteques",
+    "died": 1469,
+    "title": "Cinquième tlatoani de Tenochtitlan, premier grand conquérant",
+    "bio": "Moctezuma Ier (Motecuhzoma Ilhuicamina, « celui qui tire vers le ciel ») succède à son oncle Itzcoatl en 1440. Il passe pour le premier grand bâtisseur de l'empire. Aidé de son frère Tlacaelel, il lance les armées de la Triple Alliance hors de la vallée de Mexico : vers le Morelos et le nord du Guerrero, puis vers l'est (Tepeaca, la Mixteca, Coixtlahuaca) et le golfe du Mexique (Cotaxtla, Orizaba). Il écrase enfin Chalco, au sud-est de la vallée, vers 1465. En 1454, il affronte la grande famine, ouvre les greniers du roi, puis fait adopter les guerres fleuries avec Tlaxcala, Huexotzinco et Cholula. Il fait aussi construire la grande digue avec Nezahualcoyotl après l'inondation de 1449, et agrandit le Templo Mayor. Les chiffres et les dates de ses conquêtes viennent de sources tardives, comme le Codex Mendoza et les chroniques de Durán et de Tezozómoc ; ils sont donc à prendre avec prudence. Il meurt en 1469 ; son petit-fils Axayacatl lui succède.",
+    "keyFacts": [
+      "1440 : devient tlatoani de Tenochtitlan",
+      "Vers 1450 : conquiert le Morelos et le nord du Guerrero",
+      "1454 : famine ; naissance des guerres fleuries",
+      "Vers 1458 : prend Coixtlahuaca et atteint le golfe",
+      "1469 : meurt ; Axayacatl lui succède"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Moctezuma Ier",
+        "url": "https://fr.wikipedia.org/wiki/Moctezuma_Ier"
+      },
+      {
+        "label": "Wikipédia — Empire aztèque",
+        "url": "https://fr.wikipedia.org/wiki/Empire_azt%C3%A8que"
+      }
+    ]
+  },
+  {
+    "id": "axayacatl",
+    "name": "Axayacatl",
+    "archetype": "souverain-precolombien",
+    "faction": "azteques",
+    "died": 1481,
+    "title": "Sixième tlatoani, vainqueur de Tlatelolco, vaincu par les Tarasques",
+    "bio": "Axayacatl (« visage d'eau ») devient tlatoani de Tenochtitlan en 1469, très jeune, après la mort de Moctezuma Ier, qui était son grand-père. Son règne est dominé par deux événements. Le premier : en 1473, il écrase Moquihuix, roi de Tlatelolco, la cité jumelle qui préparait une révolte ; Tlatelolco devient un quartier de Tenochtitlan. Le second : il conquiert la vallée de Toluca (pays matlatzinca, ouest de la vallée), puis attaque le royaume tarasque du Michoacan. Vers 1478-1479, à Tlaximaloyan, son armée subit une lourde défaite : Durán parle de 24 000 morts sur 32 000 hommes, chiffre très exagéré sans doute, mais le désastre est certain. Les Mexicas ne tenteront plus de soumettre les Tarasques. Axayacatl meurt en 1481, encore jeune ; son frère Tizoc lui succède. Son palais abritera, en 1519, Cortés et ses hommes. On lui attribue aussi la pierre du Soleil, mais la date de cette sculpture, que certains rattachent plutôt à Moctezuma II, reste discutée.",
+    "keyFacts": [
+      "1469 : devient tlatoani",
+      "1473 : soumet Tlatelolco ; mort de Moquihuix",
+      "Vers 1474-1476 : conquiert la vallée de Toluca",
+      "Vers 1478 : défaite face aux Tarasques à Tlaximaloyan",
+      "1481 : meurt ; son frère Tizoc lui succède"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Axayacatl",
+        "url": "https://fr.wikipedia.org/wiki/Axayacatl"
+      },
+      {
+        "label": "Wikipédia — Tlatelolco",
+        "url": "https://fr.wikipedia.org/wiki/Tlatelolco"
+      }
+    ]
+  },
+  {
+    "id": "ahuitzotl",
+    "name": "Ahuitzotl",
+    "archetype": "souverain-precolombien",
+    "faction": "azteques",
+    "died": 1502,
+    "title": "Huitième tlatoani, bâtisseur du Templo Mayor et conquérant du Soconusco",
+    "bio": "Ahuitzotl (« loutre ») succède à son frère Tizoc en 1486. Chef de guerre infatigable, il double presque l'étendue de l'empire. Sous son règne, selon les listes du Codex Mendoza, la Triple Alliance atteint la côte du Guerrero, la vallée d'Oaxaca (où une garnison s'installe à Huaxyacac), l'isthme de Tehuantepec et le Soconusco, sur la côte du Chiapas, aux marges du Guatemala. Le siège de Tehuantepec (vers 1497) échoue, et la paix passe, dit la tradition zapotèque, par une alliance. En 1487, il fait consacrer le Templo Mayor agrandi. Durán raconte que plus de 80 000 captifs sont sacrifiés ; les historiens jugent ce chiffre invraisemblable et pensent à quelques milliers. Il fait aussi détourner une source vers la ville : l'inondation de 1499-1500 ravage Tenochtitlan. Selon les chroniques, il se blesse à la tête en fuyant l'eau et meurt en 1502. Son neveu Moctezuma II lui succède. Les dates de ses conquêtes restent approximatives.",
+    "keyFacts": [
+      "1486 : devient tlatoani",
+      "1487 : consacre le Templo Mayor agrandi",
+      "Vers 1497 : siège de Tehuantepec, sans victoire",
+      "Vers 1500 : atteint le Soconusco",
+      "1502 : meurt ; Moctezuma II lui succède"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Ahuitzotl",
+        "url": "https://fr.wikipedia.org/wiki/Ahuitzotl"
+      },
+      {
+        "label": "Wikipédia — Templo Mayor",
+        "url": "https://fr.wikipedia.org/wiki/Templo_Mayor"
+      }
+    ]
+  },
+  {
+    "id": "moctezuma-ii",
+    "name": "Moctezuma II",
+    "archetype": "souverain-precolombien",
+    "faction": "azteques",
+    "born": 1466,
+    "died": 1520,
+    "title": "Neuvième tlatoani, souverain à l'arrivée de Cortés",
+    "bio": "Moctezuma II (Motecuhzoma Xocoyotzin, « le Jeune ») est né vers 1466, fils d'Axayacatl. Prêtre et guerrier, il est élu tlatoani en 1502, après la mort d'Ahuitzotl. Il règne sur l'empire à son apogée, mais le dirige avec raideur : cérémonial strict, noblesse favorisée, guerres contre les enclaves libres comme Tlaxcala. En 1519, il apprend que des étrangers barbus débarquent sur la côte. Il envoie des cadeaux, tente de les repousser, puis les reçoit à Tenochtitlan le 8 novembre. Pourquoi ? On l'ignore : prudence, peur, stratégie. La thèse d'un Moctezuma qui prend Cortés pour un dieu, Quetzalcoatl, est aujourd'hui jugée tardive et douteuse. Cortés le retient comme otage. Il meurt en juin 1520, pendant la révolte de Tenochtitlan : les Espagnols disent que ses sujets l'ont lapidé, les sources nahuas accusent les Espagnols. Les deux versions restent possibles ; les historiens ne tranchent pas. Son frère Cuitláhuac lui succède.",
+    "keyFacts": [
+      "Vers 1466 : naît à Tenochtitlan",
+      "1502 : devient tlatoani",
+      "8 novembre 1519 : reçoit Cortés à Tenochtitlan",
+      "Novembre 1519 : devient l'otage des Espagnols",
+      "Fin juin 1520 : meurt pendant la révolte"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Moctezuma II",
+        "url": "https://fr.wikipedia.org/wiki/Moctezuma_II"
+      },
+      {
+        "label": "Wikipédia — Tenochtitlan",
+        "url": "https://fr.wikipedia.org/wiki/Tenochtitlan"
+      }
+    ]
+  },
+  {
+    "id": "cuitlahuac",
+    "name": "Cuitláhuac",
+    "archetype": "souverain-precolombien",
+    "faction": "azteques",
+    "died": 1520,
+    "title": "Dixième tlatoani, vainqueur de la Noche Triste, mort de la variole",
+    "bio": "Cuitláhuac, frère de Moctezuma II, est le seigneur d'Iztapalapa, cité de la rive sud du lac. Il s'oppose, dit-on, à l'accueil des Espagnols en 1519. Libéré par Cortés pour organiser le marché de la ville, il prend la tête de la révolte qui éclate en 1520 après le massacre du Toxcatl. Ses guerriers attaquent les Espagnols pendant leur fuite par la chaussée de Tlacopan, lors de la Noche Triste, le 30 juin 1520. Devenu tlatoani après la mort de Moctezuma, il tente de rallier les provinces, en exemptant certaines de tribut, et d'empêcher les alliances avec Cortés. Mais la variole, introduite par l'expédition de Narváez, ravage la ville. Cuitláhuac tombe malade et meurt à l'automne 1520, après environ quatre-vingts jours de règne selon les chroniques. Son cousin Cuauhtémoc lui succède. L'incertitude pèse sur les dates : les sources sont nahuas et espagnoles, écrites après la conquête, et ne concordent pas sur le jour de son élection ni sur celui de sa mort.",
+    "keyFacts": [
+      "1519 : seigneur d'Iztapalapa, reçoit les Espagnols",
+      "Mai-juin 1520 : dirige la révolte contre les Espagnols",
+      "30 juin 1520 : victoire de la Noche Triste",
+      "Automne 1520 : devient tlatoani",
+      "Fin 1520 : meurt de la variole, après environ 80 jours de règne"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Cuitláhuac",
+        "url": "https://fr.wikipedia.org/wiki/Cuitl%C3%A1huac"
+      },
+      {
+        "label": "Wikipédia — Noche Triste",
+        "url": "https://fr.wikipedia.org/wiki/Noche_Triste"
+      }
+    ]
+  },
+  {
+    "id": "cuauhtemoc",
+    "name": "Cuauhtémoc",
+    "archetype": "souverain-precolombien",
+    "faction": "azteques",
+    "died": 1525,
+    "title": "Onzième et dernier tlatoani de Tenochtitlan",
+    "bio": "Cuauhtémoc (« aigle qui descend »), fils d'Ahuitzotl et cousin de Moctezuma II, devient tlatoani au début de 1521, très jeune, après la mort de Cuitláhuac. Il hérite d'une ville décimée par la variole et abandonnée par la plupart de ses alliés. Il organise la défense de Tenochtitlan, refuse les propositions de reddition de Cortés et tient trois mois contre un siège mené par les Espagnols et des dizaines de milliers d'alliés indigènes. Le 13 août 1521, fuyant en canoë, il est capturé ; Bernal Díaz lui prête ces mots à Cortés : « Prenez ce poignard et tuez-moi. » Cortés l'épargne, mais le fait torturer pour qu'il révèle où est caché l'or. En 1524, il est emmené dans l'expédition du Honduras, où Cortés le fait pendre en 1525, accusé de conspiration. Les historiens doutent que ce complot ait existé. Cuauhtémoc est aujourd'hui un héros national mexicain, mais ce que nous savons de lui vient presque uniquement de textes espagnols, écrits après coup.",
+    "keyFacts": [
+      "Début 1521 : devient tlatoani",
+      "26 mai-13 août 1521 : défend Tenochtitlan pendant le siège",
+      "13 août 1521 : capturé sur le lac par les Espagnols",
+      "1524 : emmené par Cortés dans l'expédition du Honduras",
+      "1525 : pendu au Honduras"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Cuauhtémoc",
+        "url": "https://fr.wikipedia.org/wiki/Cuauht%C3%A9moc"
+      },
+      {
+        "label": "Wikipédia — Siège de Tenochtitlan",
+        "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_Tenochtitlan"
+      }
+    ]
+  },
+  {
+    "id": "malintzin",
+    "name": "Malintzin (la Malinche)",
+    "archetype": "diplomate",
+    "faction": "mesoamericains",
+    "died": 1529,
+    "title": "Interprète de Cortés",
+    "bio": "Malintzin, que les Espagnols appellent doña Marina et que l'on nomme aussi la Malinche, est une femme nahua, née vers 1500 dans la région du golfe. Vendue ou offerte comme esclave, elle parle nahuatl et le maya chontal. En 1519, elle est donnée à Cortés à Potonchán avec dix-neuf autres femmes. Avec Jerónimo de Aguilar, un Espagnol qui parle maya, elle devient son interprète : le nahuatl passe par le maya, puis l'espagnol ; très vite, elle apprend l'espagnol et traduit seule. Elle l'accompagne à Tlaxcala, à Cholula, à Tenochtitlan, et conseille Cortés sur les usages et les rivalités des peuples. Bernal Díaz lui consacre des pages précises. Elle a un fils avec Cortés, Martín, né vers 1522, puis épouse un autre Espagnol, Juan Jaramillo. Elle meurt vers 1529. Les Mexicains, pendant longtemps, lui ont reproché d'avoir trahi son peuple ; des historiens plus récents insistent sur sa position d'esclave et sur son rôle de médiatrice. Les sources sont toutes espagnoles ou issues de la conquête, ce qui limite ce que l'on sait.",
+    "keyFacts": [
+      "Vers 1500 : naît dans la région du golfe du Mexique",
+      "1519 : offerte à Cortés à Potonchán",
+      "1519-1521 : interprète à Tlaxcala, Cholula et Tenochtitlan",
+      "Vers 1522 : naissance de son fils Martín",
+      "Vers 1529 : meurt"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Malinche",
+        "url": "https://fr.wikipedia.org/wiki/Malinche"
+      },
+      {
+        "label": "Wikipédia — Hernán Cortés",
+        "url": "https://fr.wikipedia.org/wiki/Hern%C3%A1n_Cort%C3%A9s"
+      }
+    ]
+  },
+  {
+    "id": "hernan-cortes",
+    "name": "Hernán Cortés",
+    "archetype": "conquistador",
+    "faction": "tercios",
+    "born": 1485,
+    "died": 1547,
+    "title": "Conquistador de Tenochtitlan",
+    "bio": "Hernán Cortés naît en 1485 à Medellín, en Estrémadure. Il part pour les Indes vers 1504, s'installe à Cuba, puis, en 1519, prend la tête d'une expédition vers le Mexique malgré l'opposition du gouverneur de Cuba. Il part avec environ 500 hommes et une douzaine de chevaux. Il fonde la Vera Cruz, s'allie aux Totonaques, bat puis s'allie aux Tlaxcaltèques, massacre Cholula et entre à Tenochtitlan le 8 novembre 1519. Chassé le 30 juin 1520, il revient avec des brigantins et des dizaines de milliers d'alliés indigènes, et prend la ville le 13 août 1521. Sans ces alliés, ni Malintzin, ni la variole, il n'aurait pas réussi. Il devient gouverneur de la Nouvelle-Espagne, puis marquis de la vallée d'Oaxaca. Ses lettres à Charles Quint sont une source essentielle, mais elles servent aussi à justifier ses actes et à exagérer ses mérites. Entré en disgrâce, il repart en Espagne en 1540 et meurt en 1547 près de Séville.",
+    "keyFacts": [
+      "1485 : naît à Medellín",
+      "1519 : débarque au Mexique et fonde la Vera Cruz",
+      "8 novembre 1519 : entre à Tenochtitlan",
+      "30 juin 1520 : Noche Triste ; 7 juillet : Otumba",
+      "13 août 1521 : prend Tenochtitlan"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Hernán Cortés",
+        "url": "https://fr.wikipedia.org/wiki/Hern%C3%A1n_Cort%C3%A9s"
+      },
+      {
+        "label": "Wikipédia — Siège de Tenochtitlan",
+        "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_Tenochtitlan"
+      }
+    ]
+  },
+  {
+    "id": "pedro-de-alvarado",
+    "name": "Pedro de Alvarado",
+    "archetype": "conquistador",
+    "faction": "tercios",
+    "born": 1485,
+    "died": 1541,
+    "title": "Capitaine de Cortés, responsable du massacre du Toxcatl",
+    "bio": "Pedro de Alvarado naît vers 1485 en Estrémadure. Il participe aux expéditions de Cuba et du Yucatán, puis devient l'un des principaux capitaines de Cortés. Les Nahuas l'appellent Tonatiuh, « le Soleil », à cause de sa chevelure blonde. En 1520, Cortés le laisse à Tenochtitlan avec une partie des hommes. Pendant la fête de Toxcatl (22 mai), il fait attaquer des nobles mexicas qui dansent, désarmés, au cœur de la ville : le massacre déclenche la révolte qui chassera les Espagnols. Une légende veut qu'il ait franchi d'un saut un canal pendant la Noche Triste ; elle est sans doute fausse. Il commande ensuite le front de Tlacopan pendant le siège de 1521. Il conquiert ensuite le Guatemala et le Salvador, puis devient gouverneur du Guatemala. Il meurt en 1541 au Mexique, écrasé par un cheval, lors d'une expédition contre les révoltés de Nueva Galicia. Les récits de sa conduite, faits par les Espagnols comme par les Nahuas, divergent sur les causes du massacre.",
+    "keyFacts": [
+      "Vers 1485 : naît en Estrémadure",
+      "22 mai 1520 : massacre de Toxcatl à Tenochtitlan",
+      "30 juin 1520 : Noche Triste",
+      "1521 : commande l'attaque par la chaussée de Tlacopan",
+      "1541 : meurt accidentellement au Mexique"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Pedro de Alvarado",
+        "url": "https://fr.wikipedia.org/wiki/Pedro_de_Alvarado"
+      },
+      {
+        "label": "Wikipédia — Noche Triste",
+        "url": "https://fr.wikipedia.org/wiki/Noche_Triste"
+      }
+    ]
+  },
+  {
+    "id": "bernal-diaz-del-castillo",
+    "name": "Bernal Díaz del Castillo",
+    "archetype": "conquistador",
+    "faction": "tercios",
+    "born": 1495,
+    "died": 1584,
+    "title": "Soldat de Cortés et chroniqueur de la conquête",
+    "bio": "Bernal Díaz del Castillo naît vers 1495 à Medina del Campo, en Castille. Il part pour les Indes en 1514, puis participe aux trois expéditions vers le Mexique, dont celle de Cortés en 1519. Il se bat à Tlaxcala, entre à Tenochtitlan, survit à la Noche Triste, et prend part au siège de 1521. Après la conquête, il reçoit une encomienda (un groupe d'Indiens à faire travailler) puis s'installe au Guatemala. Vers 1568, déjà âgé, il commence l'Histoire véridique de la conquête de la Nouvelle-Espagne : il veut répondre au récit de Francisco López de Gómara, qui attribue tout à Cortés, et rappeler ce que doivent les simples soldats. Son texte, vivant et précis, décrit Tenochtitlan, ses marchés et ses sacrifices. Mais il l'écrit plus de quarante ans après les faits, et ses chiffres, comme les discours qu'il rapporte, sont à prendre avec prudence. Il meurt vers 1584 au Guatemala, vers 89 ans. Son livre ne paraît qu'en 1632, à Madrid.",
+    "keyFacts": [
+      "Vers 1495 : naît à Medina del Campo",
+      "1519 : suit Cortés au Mexique",
+      "13 août 1521 : participe à la prise de Tenochtitlan",
+      "Vers 1568 : commence son Histoire véridique",
+      "Vers 1584 : meurt au Guatemala"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Bernal Díaz del Castillo",
+        "url": "https://fr.wikipedia.org/wiki/Bernal_D%C3%ADaz_del_Castillo"
+      },
+      {
+        "label": "Wikipédia — Hernán Cortés",
+        "url": "https://fr.wikipedia.org/wiki/Hern%C3%A1n_Cort%C3%A9s"
+      }
+    ]
+  }
+]

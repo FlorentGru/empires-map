@@ -1,0 +1,470 @@
+{
+  "empire": "azteques",
+  "periods": [
+    {
+      "id": "triple-alliance",
+      "name": "La Triple Alliance",
+      "start": 1428,
+      "end": 1469,
+      "population": {
+        "total": {
+          "value": 1000000,
+          "low": 500000,
+          "high": 2000000,
+          "year": 1450,
+          "note": "Ordre de grandeur reconstruit ; aucun recensement n'existe.",
+          "source": {
+            "label": "Wikipédia : Empire aztèque",
+            "url": "https://fr.wikipedia.org/wiki/Empire_azt%C3%A8que"
+          }
+        },
+        "cities": [
+          {
+            "name": "Tenochtitlan",
+            "population": {
+              "value": 40000,
+              "low": 20000,
+              "high": 80000,
+              "year": 1450,
+              "note": "Estimation très large, fondée sur la surface bâtie.",
+              "source": {
+                "label": "Wikipédia : Tenochtitlan",
+                "url": "https://fr.wikipedia.org/wiki/Tenochtitlan"
+              }
+            }
+          },
+          {
+            "name": "Texcoco",
+            "population": {
+              "value": 25000,
+              "low": 10000,
+              "high": 40000,
+              "year": 1450,
+              "note": "Ordre de grandeur ; capitale du pays acolhua.",
+              "source": {
+                "label": "Wikipédia : Texcoco",
+                "url": "https://fr.wikipedia.org/wiki/Texcoco"
+              }
+            }
+          },
+          {
+            "name": "Cholula",
+            "population": {
+              "value": 20000,
+              "low": 10000,
+              "high": 40000,
+              "year": 1450,
+              "note": "Ville sainte indépendante, hors de l'alliance ; estimation incertaine.",
+              "source": {
+                "label": "Wikipédia : Cholula",
+                "url": "https://fr.wikipedia.org/wiki/Cholula"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Maïs, haricots, courges",
+          "Poissons et gibier d'eau du lac",
+          "Coton du Morelos",
+          "Obsidienne, sel"
+        ],
+        "currency": "Pas de monnaie frappée : fèves de cacao, mantas de coton et plumes servent d'étalon dans les marchés.",
+        "taxation": "Tributs en nature des vaincus, partagés 2/5 Tenochtitlan, 2/5 Texcoco, 1/5 Tlacopan ; corvées pour les chantiers.",
+        "trade": "Marchés de la vallée, dont celui de Tlatelolco ; les marchands pochteca ouvrent les routes vers le Morelos et le golfe."
+      },
+      "army": {
+        "size": {
+          "value": 20000,
+          "low": 10000,
+          "high": 40000,
+          "year": 1450,
+          "note": "Estimation reconstruite : les chroniques ne donnent pas de chiffres sûrs.",
+          "source": {
+            "label": "Wikipédia : Empire aztèque",
+            "url": "https://fr.wikipedia.org/wiki/Empire_azt%C3%A8que"
+          }
+        },
+        "composition": "Fantassins armés de lances, de frondes et de massues à lames d'obsidienne (macuahuitl), protégés par des boucliers de bois et des cottes de coton matelassé.",
+        "recruitment": "Levée des hommes libres de chaque quartier (calpulli), instruits au telpochcalli ; promotion par la capture de prisonniers.",
+        "famousUnits": [
+          "Guerriers aigles",
+          "Guerriers jaguars"
+        ],
+        "innovations": [
+          "Alliance de trois armées de cités",
+          "Guerre d'encerclement des villes du lac"
+        ]
+      },
+      "politics": {
+        "regime": "Alliance de trois cités-États dirigées chacune par un tlatoani ; Tenochtitlan en tient le haut commandement.",
+        "head": "Itzcoatl (1427-1440), puis Moctezuma Ier (1440-1469), avec Nezahualcoyotl à Texcoco.",
+        "succession": "Le tlatoani est choisi parmi les membres de la famille royale par un conseil de nobles, de prêtres et de chefs de guerre.",
+        "institutions": "Conseil des électeurs, cihuacoatl (premier ministre), tribunaux, prêtres, chefs des quartiers.",
+        "administration": "Les rois vaincus gardent leur trône mais paient le tribut ; des collecteurs surveillent les provinces.",
+        "provinces": {
+          "value": 10,
+          "low": 5,
+          "high": 15,
+          "year": 1465,
+          "note": "Provinces tributaires à la fin de la période, estimation reconstruite.",
+          "source": {
+            "label": "Wikipédia : Empire aztèque",
+            "url": "https://fr.wikipedia.org/wiki/Empire_azt%C3%A8que"
+          }
+        },
+        "law": "Droit coutumier très strict ; code de Nezahualcoyotl à Texcoco ; peines sévères pour les vols et les crimes."
+      },
+      "society": {
+        "religions": [
+          "Culte de Huitzilopochtli",
+          "Culte de Tlaloc",
+          "Sacrifices humains"
+        ],
+        "languages": [
+          "Nahuatl",
+          "Otomi"
+        ],
+        "structure": "Nobles (pipiltin), hommes libres du calpulli (macehualtin), artisans, marchands, travailleurs sans terre (mayeques), esclaves.",
+        "women": "Femmes mariées sous l'autorité de la famille ; elles tissent, tiennent le marché ou deviennent sages-femmes ou prêtresses."
+      },
+      "culture": {
+        "inventions": [
+          "Chinampas (jardins flottants)",
+          "Digue de Nezahualcoyotl",
+          "Calmecac et telpochcalli"
+        ],
+        "works": [
+          "Codex peints de Tenochtitlan",
+          "Chants de Nezahualcoyotl (attribués)"
+        ],
+        "scholars": [
+          "Nezahualcoyotl",
+          "Tlacaelel"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Chaussées vers la rive, canaux, digue de 16 km environ (vers 1449), premiers aqueducs ; sentiers pour porteurs, sans bêtes de somme ni roues."
+      },
+      "legacy": "Une alliance de trois cités qui passe d'un statut de tributaire à celui de maîtresse de la vallée, avec une idéologie du Soleil et de la guerre."
+    },
+    {
+      "id": "grandes-conquetes",
+      "name": "Les grandes conquêtes",
+      "start": 1469,
+      "end": 1502,
+      "population": {
+        "total": {
+          "value": 3000000,
+          "low": 1500000,
+          "high": 6000000,
+          "year": 1490,
+          "note": "Ordre de grandeur reconstruit ; le total change beaucoup selon les auteurs.",
+          "source": {
+            "label": "Wikipédia : Empire aztèque",
+            "url": "https://fr.wikipedia.org/wiki/Empire_azt%C3%A8que"
+          }
+        },
+        "cities": [
+          {
+            "name": "Tenochtitlan (avec Tlatelolco)",
+            "population": {
+              "value": 100000,
+              "low": 60000,
+              "high": 150000,
+              "year": 1490,
+              "note": "Estimation fondée sur la surface bâtie ; aucun recensement.",
+              "source": {
+                "label": "Wikipédia : Tenochtitlan",
+                "url": "https://fr.wikipedia.org/wiki/Tenochtitlan"
+              }
+            }
+          },
+          {
+            "name": "Texcoco",
+            "population": {
+              "value": 30000,
+              "low": 15000,
+              "high": 50000,
+              "year": 1490,
+              "note": "Ordre de grandeur ; deuxième cité de l'alliance.",
+              "source": {
+                "label": "Wikipédia : Texcoco",
+                "url": "https://fr.wikipedia.org/wiki/Texcoco"
+              }
+            }
+          },
+          {
+            "name": "Tlatelolco",
+            "population": {
+              "value": 25000,
+              "low": 10000,
+              "high": 40000,
+              "year": 1490,
+              "note": "Quartier devenu partie de la capitale après 1473 ; estimation incertaine.",
+              "source": {
+                "label": "Wikipédia : Tlatelolco",
+                "url": "https://fr.wikipedia.org/wiki/Tlatelolco"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Maïs et haricots des chinampas",
+          "Coton, cacao et vanille des terres chaudes",
+          "Plumes de quetzal",
+          "Jade, obsidienne, cuivre"
+        ],
+        "currency": "Fèves de cacao pour les petits achats, mantas de coton et plumes ; pas de pièces.",
+        "taxation": "Tribut en nature de plus de vingt provinces, réclamé à dates fixes par des collecteurs (calpixque).",
+        "trade": "Marché de Tlatelolco, très fréquenté ; pochteca qui commercent jusqu'au Soconusco pour le cacao et les plumes."
+      },
+      "army": {
+        "size": {
+          "value": 50000,
+          "low": 20000,
+          "high": 100000,
+          "year": 1490,
+          "note": "Estimation reconstruite ; les campagnes réunissent des contingents des trois cités.",
+          "source": {
+            "label": "Wikipédia : Empire aztèque",
+            "url": "https://fr.wikipedia.org/wiki/Empire_azt%C3%A8que"
+          }
+        },
+        "composition": "Fantassins, archers et frondeurs, conduits par des chefs de guerre en costume d'aigle ou de jaguar ; pas de cavalerie ni de bêtes de somme.",
+        "recruitment": "Levée générale dans les quartiers et chez les alliés ; ascension sociale par la capture de captifs.",
+        "famousUnits": [
+          "Guerriers aigles",
+          "Guerriers jaguars",
+          "Otontin (guerriers otomis)"
+        ],
+        "innovations": [
+          "Garnisons dans les provinces lointaines",
+          "Logistique de porteurs (tlamemes)"
+        ]
+      },
+      "politics": {
+        "regime": "Triple Alliance dominée par Tenochtitlan ; tlatoani de plus en plus puissant, avec une noblesse guerrière.",
+        "head": "Axayacatl (1469-1481), Tizoc (1481-1486), Ahuitzotl (1486-1502).",
+        "succession": "Choix parmi les frères et fils des rois précédents par les électeurs ; la succession est souvent entre frères.",
+        "institutions": "Conseil des électeurs, cihuacoatl, juges, prêtres, collecteurs de tribut.",
+        "administration": "Provinces tributaires, garnisons aux points sensibles, gouverneurs et mariages entre familles royales.",
+        "provinces": {
+          "value": 25,
+          "low": 20,
+          "high": 35,
+          "year": 1500,
+          "note": "Provinces tributaires, estimation reconstruite d'après le Codex Mendoza.",
+          "source": {
+            "label": "Wikipédia : Codex Mendoza",
+            "url": "https://fr.wikipedia.org/wiki/Codex_Mendoza"
+          }
+        },
+        "law": "Droit coutumier ; tribunaux dans les quartiers ; peine de mort pour le vol de grande ampleur et les atteintes au roi."
+      },
+      "society": {
+        "religions": [
+          "Culte de Huitzilopochtli et de Tlaloc",
+          "Sacrifices humains au Templo Mayor",
+          "Culte de Quetzalcoatl"
+        ],
+        "languages": [
+          "Nahuatl",
+          "Otomi",
+          "Mixtèque",
+          "Zapotèque"
+        ],
+        "structure": "Noblesse guerrière, marchands pochteca, macehualtin, artisans de luxe, esclaves ; promotion par la guerre.",
+        "women": "Statut protégé par la coutume ; rôles de tisserande, sage-femme, prêtresse ; mariages politiques entre familles royales."
+      },
+      "culture": {
+        "inventions": [
+          "Calendrier solaire et divinatoire",
+          "Pierre du Soleil",
+          "Aqueducs et chaussées de Tenochtitlan"
+        ],
+        "works": [
+          "Codex peints",
+          "Sculptures du Templo Mayor, dont la Coyolxauhqui (1978)"
+        ],
+        "scholars": [
+          "Tlacaelel",
+          "Prêtres-astronomes"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Chaussées et ponts de bois, aqueducs d'eau douce, grands marchés, sentiers de porteurs ; pas de routes empierrées comme chez les Incas."
+      },
+      "legacy": "L'empire double son étendue, mais reste un réseau de tributaires, sans administration directe ; la défaite tarasque fixe ses limites à l'ouest."
+    },
+    {
+      "id": "moctezuma-ii-chute",
+      "name": "Moctezuma II et la chute",
+      "start": 1502,
+      "end": 1521,
+      "population": {
+        "total": {
+          "value": 5000000,
+          "low": 3000000,
+          "high": 8000000,
+          "year": 1519,
+          "note": "Ordre de grandeur reconstruit ; les estimations varient beaucoup selon les auteurs.",
+          "source": {
+            "label": "Wikipédia : Empire aztèque",
+            "url": "https://fr.wikipedia.org/wiki/Empire_azt%C3%A8que"
+          }
+        },
+        "cities": [
+          {
+            "name": "Tenochtitlan (avec Tlatelolco)",
+            "population": {
+              "value": 200000,
+              "low": 100000,
+              "high": 300000,
+              "year": 1519,
+              "note": "Estimation courante ; des chiffres plus bas ou beaucoup plus hauts existent, aucun n'est sûr.",
+              "source": {
+                "label": "Wikipédia : Tenochtitlan",
+                "url": "https://fr.wikipedia.org/wiki/Tenochtitlan"
+              }
+            }
+          },
+          {
+            "name": "Texcoco",
+            "population": {
+              "value": 30000,
+              "low": 20000,
+              "high": 50000,
+              "year": 1519,
+              "note": "Ordre de grandeur ; certains textes espagnols avancent davantage.",
+              "source": {
+                "label": "Wikipédia : Texcoco",
+                "url": "https://fr.wikipedia.org/wiki/Texcoco"
+              }
+            }
+          },
+          {
+            "name": "Cholula",
+            "population": {
+              "value": 40000,
+              "low": 25000,
+              "high": 100000,
+              "year": 1519,
+              "note": "Ville sainte alliée à l'empire, saccagée en 1519 ; estimation très large.",
+              "source": {
+                "label": "Wikipédia : Cholula",
+                "url": "https://fr.wikipedia.org/wiki/Cholula"
+              }
+            }
+          },
+          {
+            "name": "Tlaxcala",
+            "population": {
+              "value": 30000,
+              "low": 15000,
+              "high": 60000,
+              "year": 1519,
+              "note": "Cité indépendante et alliée de Cortés ; estimation incertaine.",
+              "source": {
+                "label": "Wikipédia : Tlaxcala",
+                "url": "https://fr.wikipedia.org/wiki/Tlaxcala"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Maïs, haricots, piment",
+          "Cacao du Soconusco",
+          "Coton, plumes de quetzal, jade",
+          "Or et argent en petite quantité"
+        ],
+        "currency": "Fèves de cacao, mantas de coton, plumes ; poudre d'or et haches de cuivre dans certains échanges.",
+        "taxation": "Tribut de 38 provinces (Codex Mendoza), payé en vêtements, plumes, cacao, jade, parures et denrées.",
+        "trade": "Marché de Tlatelolco (60 000 personnes certains jours selon Cortés, sans doute exagéré) ; pochteca d'État et négociants de luxe."
+      },
+      "army": {
+        "size": {
+          "value": 100000,
+          "low": 30000,
+          "high": 200000,
+          "year": 1519,
+          "note": "Estimation très incertaine : les chiffres des chroniques espagnoles sont probablement gonflés.",
+          "source": {
+            "label": "Wikipédia : Empire aztèque",
+            "url": "https://fr.wikipedia.org/wiki/Empire_azt%C3%A8que"
+          }
+        },
+        "composition": "Fantassins, archers, frondeurs ; armes d'obsidienne et lances ; pas de chevaux ni d'armes à feu avant 1519.",
+        "recruitment": "Levée des quartiers (calpulli) et des provinces alliées ; hiérarchie fondée sur le nombre de captifs.",
+        "famousUnits": [
+          "Guerriers aigles",
+          "Guerriers jaguars",
+          "Cuachicqueh (ordre de guerriers d'élite)"
+        ],
+        "innovations": [
+          "Canoës de guerre sur le lac",
+          "Cottes de coton matelassées contre les flèches"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie élective de la dynastie de Tenochtitlan, au sein de la Triple Alliance, avec un cérémonial de cour strict.",
+        "head": "Moctezuma II (1502-1520), Cuitláhuac (1520), Cuauhtémoc (1521).",
+        "succession": "Choix par le conseil des électeurs au sein de la famille royale ; trois rois se succèdent en un an et demi.",
+        "institutions": "Conseil des électeurs, cihuacoatl, tribunaux, nobles et prêtres de haut rang, collecteurs de tribut.",
+        "administration": "38 provinces tributaires ; rois locaux conservés ; garnisons ; réseau de messagers.",
+        "provinces": {
+          "value": 38,
+          "low": 34,
+          "high": 45,
+          "year": 1519,
+          "note": "Provinces tributaires listées par le Codex Mendoza, rédigé vers 1541.",
+          "source": {
+            "label": "Wikipédia : Codex Mendoza",
+            "url": "https://fr.wikipedia.org/wiki/Codex_Mendoza"
+          }
+        },
+        "law": "Droit coutumier ; tribunaux de quartier ; peine de mort pour les crimes graves et les atteintes à l'ordre social."
+      },
+      "society": {
+        "religions": [
+          "Culte de Huitzilopochtli et de Tlaloc",
+          "Sacrifices humains, dont l'ampleur est débattue",
+          "Culte de Quetzalcoatl"
+        ],
+        "languages": [
+          "Nahuatl",
+          "Otomi",
+          "Mixtèque",
+          "Zapotèque",
+          "Maya"
+        ],
+        "structure": "Nobles, marchands, macehualtin, artisans, esclaves ; la guerre et le commerce permettent de monter.",
+        "women": "Tisserandes, marchandes, sages-femmes, prêtresses ; les princesses scellent les alliances entre dynasties."
+      },
+      "culture": {
+        "inventions": [
+          "Chinampas et aqueduc de Chapultepec",
+          "Calendrier à deux cycles et pierre du Soleil",
+          "Médecine par les plantes"
+        ],
+        "works": [
+          "Codex Mendoza et Florentin (écrits après la conquête)",
+          "Poèmes nahuatl (Cantares mexicanos)"
+        ],
+        "scholars": [
+          "Prêtres-astronomes",
+          "Médecins nahuas (ticitl)"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Tenochtitlan, ville lacustre aux trois chaussées, aqueduc de Chapultepec, digue et canaux ; routes à porteurs vers le golfe, le Pacifique et le Soconusco."
+      },
+      "legacy": "L'empire atteint sa plus grande extension, puis s'effondre en deux ans : Cortés, ses alliés indigènes et la variole mettent fin à Tenochtitlan en août 1521."
+    }
+  ]
+}
