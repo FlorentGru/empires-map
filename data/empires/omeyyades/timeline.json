@@ -1,0 +1,1952 @@
+{
+  "id": "omeyyades",
+  "name": "Califat omeyyade",
+  "color": "#2f7d3a",
+  "start": 661,
+  "end": 750,
+  "description": "Le califat omeyyade (661-750) est le premier grand empire héréditaire de l'islam. Fondé par Muawiya, il est gouverné depuis Damas et s'étend, à son apogée, des Pyrénées à l'Indus et à l'Asie centrale. Il arabise l'administration, frappe une monnaie propre, bâtit le Dôme du Rocher et la Grande Mosquée de Damas, mais reste miné par les guerres civiles et les tensions avec les convertis non arabes. Renversé en 750 par les Abbassides, il survit en Espagne avec le prince Abd al-Rahman Ier.",
+  "view": {
+    "center": [
+      30,
+      32
+    ],
+    "zoom": 3
+  },
+  "bounds": [
+    [
+      -12,
+      8
+    ],
+    [
+      78,
+      48
+    ]
+  ],
+  "apogee": {
+    "stepId": "poitiers-732",
+    "note": "L'extension maximale se situe entre 732 et 740, de l'Indus et de la Transoxiane aux Pyrénées et à la Septimanie. Elle se discute : la Transoxiane est disputée aux Türgesh de 731 à 738, et la révolte berbère de 740 détache le Maroc."
+  },
+  "periods": [
+    {
+      "id": "fondation",
+      "name": "Les Sufyanides",
+      "start": 661,
+      "end": 684,
+      "color": "#a9c99b",
+      "summary": "Muawiya fonde la dynastie à Damas, fait la guerre aux Byzantins et lance la conquête du Maghreb. Son fils Yazid Ier hérite du califat en 680, l'année du drame de Karbala."
+    },
+    {
+      "id": "marwanides",
+      "name": "Deuxième fitna et Abd al-Malik",
+      "start": 684,
+      "end": 705,
+      "color": "#e3c58f",
+      "summary": "La guerre civile manque d'emporter le califat. Marwan Ier le sauve, puis son fils Abd al-Malik réunifie l'empire, bâtit le Dôme du Rocher, crée la monnaie islamique et impose l'arabe dans l'administration."
+    },
+    {
+      "id": "apogee",
+      "name": "Les grandes conquêtes",
+      "start": 705,
+      "end": 743,
+      "color": "#7fb9a0",
+      "summary": "Sous al-Walid Ier et ses successeurs, le califat conquiert l'Espagne, le Sind et la Transoxiane. Les assauts contre Constantinople, Poitiers et la révolte berbère de 740 marquent les limites de l'expansion."
+    },
+    {
+      "id": "chute",
+      "name": "Troisième fitna et révolution abbasside",
+      "start": 743,
+      "end": 750,
+      "color": "#c9a6b6",
+      "summary": "Après Hisham, les califes se succèdent dans la violence. Depuis le Khorassan, les Abbassides lèvent les bannières noires et, en 750, renversent la dynastie."
+    }
+  ],
+  "steps": [
+    {
+      "id": "avenement-661",
+      "year": 661,
+      "title": "Muawiya devient calife et fait de Damas sa capitale",
+      "type": "fondation",
+      "location": [
+        36.29,
+        33.51
+      ],
+      "zoom": 4,
+      "summary": "En 661, après l'assassinat du calife Ali, le gouverneur de Syrie Muawiya est reconnu calife : c'est le début de la dynastie des Omeyyades, qui gouvernera depuis Damas.",
+      "details": "Depuis la mort du Prophète Mahomet en 632, la communauté musulmane est dirigée par des **califes** (« successeurs »). Le quatrième, **Ali**, cousin et gendre du Prophète, est contesté dès 656, après l'assassinat de son prédécesseur Uthman, membre du grand clan mecquois des **Omeyyades**. Le gouverneur de Syrie, **Muawiya ibn Abi Sufyan**, parent d'Uthman, refuse de reconnaître Ali et l'affronte à Siffin en 657 ; la bataille s'achève par un arbitrage qui divise le camp d'Ali. Une partie de ses partisans, les **kharijites** (« ceux qui sortent »), rejettent cet arbitrage, et l'un d'eux assassine Ali à Koufa en janvier 661.\n\nSon fils aîné **Hasan** renonce vite au califat, contre une pension, et Muawiya reste seul maître. Il gouvernait la Syrie depuis vingt ans, appuyé sur les tribus arabes installées là, une armée loyale et une administration héritée de Byzance. Il installe sa capitale à **Damas**, au cœur de cette Syrie riche, loin de Médine, et gouverne par le compromis : selon la tradition, il disait ne jamais rompre le cheveu qui le liait à ses sujets. En 661, son autorité couvre l'Arabie, la Syrie, l'Égypte, l'Irak et l'Iran. Mais la fracture entre les partisans d'Ali (les futurs **chiites**) et les autres ne se refermera jamais. Précaution : la plupart de nos sources ont été écrites sous les Abbassides, hostiles aux Omeyyades.",
+      "consequences": [
+        "La Syrie et Damas deviennent le centre du monde musulman ; Médine perd son rang de capitale.",
+        "Un empire qui va de la Libye à l'Iran oriental est réuni sous une seule dynastie, sans compter les territoires encore à conquérir.",
+        "Le califat devient de fait héréditaire, ce que contesteront les partisans d'Ali et d'autres.",
+        "La séparation entre sunnites et chiites commence à se creuser."
+      ],
+      "territory": "avenement-661",
+      "sources": [
+        {
+          "label": "Wikipédia — Califat omeyyade",
+          "url": "https://fr.wikipedia.org/wiki/Califat_omeyyade"
+        },
+        {
+          "label": "Wikipédia — Muawiya Ier",
+          "url": "https://fr.wikipedia.org/wiki/Muawiya_Ier"
+        },
+        {
+          "label": "Hugh Kennedy, The Prophet and the Age of the Caliphates (Routledge)"
+        }
+      ],
+      "territoryNote": "Califat de Muawiya : péninsule Arabique (Hedjaz avec Médine et La Mecque, Yémen), Syrie et Palestine avec Damas pour capitale, Jazira (Haute Mésopotamie jusqu'à Harran), Égypte jusqu'à la Cyrénaïque (Barqa), Irak (Koufa, Bassora), plateau iranien (Fars, Kerman, Médie), Khorassan jusqu'à Merv et Balkh sans franchir l'Amou-Daria. Tributaires : Nubie chrétienne de Makurie (traité du baqt), Arménie et Géorgie dont les princes locaux gardent leur autonomie. Rivaux : Empire byzantin (Anatolie derrière les monts du Taurus, Constantinople, Afrique byzantine autour de Carthage, Sicile), Khazars au nord du Caucase, Türgesh et Turcs d'Asie centrale au-delà de l'Amou-Daria, Chine des Tang, royaume de Kaboul, royaumes wisigoth d'Hispanie et mérovingien des Francs, Berbères indépendants au Maghreb.",
+      "figures": [
+        {
+          "name": "Muawiya Ier",
+          "role": "Premier calife omeyyade",
+          "faction": "arabes",
+          "archetype": "calife",
+          "person": "muawiya-ier",
+          "quote": "Je ne romps pas le cheveu qui me lie aux gens (tradition rapportée par les chroniqueurs)",
+          "position": [
+            36.29,
+            33.51
+          ]
+        },
+        {
+          "name": "Hasan ibn Ali",
+          "role": "Petit-fils du Prophète, renonce au califat",
+          "faction": "arabes",
+          "archetype": "calife",
+          "position": [
+            44.4,
+            32.03
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kairouan-670",
+      "year": 670,
+      "title": "Kairouan : les Arabes fondent leur base en Ifriqiya",
+      "type": "fondation",
+      "location": [
+        10.1,
+        35.68
+      ],
+      "zoom": 4.5,
+      "summary": "Vers 670, le général Uqba ibn Nafi fonde Kairouan, ville-camp au centre de l'Ifriqiya, point de départ de la conquête du Maghreb.",
+      "details": "À l'ouest de l'Égypte, les Arabes tiennent la Cyrénaïque depuis les années 640 et lancent des raids contre l'**Ifriqiya**, nom arabe de l'ancienne province romaine d'Afrique (la Tunisie et l'est de l'Algérie actuelles), où les Byzantins gardent Carthage et les côtes. Après chaque pillage, les raiders repartent, faute de base. Vers **670** (les sources donnent des dates qui vont de 50 à 55 de l'hégire, soit 670 à 675), le général **Uqba ibn Nafi**, neveu du conquérant de l'Égypte Amr ibn al-As, fonde **Kairouan** (*al-Qayrawan*, « le camp », « le lieu de repos de la caravane »). Elle est placée à l'intérieur des terres, loin des flottes byzantines, à portée des pâturages des chevaux et des chameaux.\n\nOn y construit une mosquée, un palais du gouverneur et des quartiers pour les familles de soldats : c'est une ville-garnison, comme Koufa et Bassora en Irak ou Fustat en Égypte. Elle deviendra un grand centre religieux et savant, aujourd'hui l'une des villes saintes de l'islam. Une légende raconte qu'Uqba en chassa serpents et bêtes sauvages par une prière. Face aux Arabes, les **Berbères** (ou Amazighs), peuples du Maghreb, résistent. Uqba, rappelé puis renvoyé, mourra en 683 dans une embuscade près de Biskra, face au chef berbère Kusayla. La conversion des Berbères à l'islam se fera surtout au VIIIᵉ siècle.",
+      "consequences": [
+        "L'Ifriqiya, centre de la Tunisie actuelle, devient une base permanente de l'islam à l'ouest de l'Égypte.",
+        "Les raids vers le Maghreb central et occidental peuvent désormais partir de Kairouan, hors d'atteinte de la flotte byzantine.",
+        "Les Berbères, d'abord adversaires, deviennent peu à peu les principaux soldats de l'islam au Maghreb.",
+        "Kairouan reste jusqu'au Xᵉ siècle la capitale de l'Ifriqiya."
+      ],
+      "territory": "kairouan-670",
+      "sources": [
+        {
+          "label": "Wikipédia — Kairouan",
+          "url": "https://fr.wikipedia.org/wiki/Kairouan"
+        },
+        {
+          "label": "Wikipédia — Uqba ibn Nafi",
+          "url": "https://fr.wikipedia.org/wiki/Oqba_Ibn_Nafi"
+        },
+        {
+          "label": "Abdallah Laroui, L'Histoire du Maghreb (La Découverte)"
+        }
+      ],
+      "territoryNote": "Califat de Muawiya, avec l'Ifriqiya en plus : Cyrénaïque (Barqa), Tripolitaine, Fezzan, intérieur de la Tunisie jusqu'à Kairouan (base arabe), avec raids vers Gabès et le Jérid. Les villes côtières (Carthage, Hadrumète, Tunis) restent byzantines ; l'Algérie centrale et le Maroc sont berbères et indépendants. Orient : Khorassan jusqu'à Merv, Balkh et Hérat (Ziyad ibn Abihi y installe en 671 des dizaines de milliers de familles arabes), Sistan, Kerman. Arménie et Géorgie tributaires, Nubie tributaire. Rivaux nommés : Empire byzantin (Constantinople, Anatolie, Afrique de Carthage, Sicile), Khazars, Türgesh, Tang, royaume wisigoth, Berbères (Awraba, Zénètes).",
+      "armies": [
+        {
+          "id": "uqba",
+          "side": "Armée d'Uqba ibn Nafi",
+          "from": "Fustat",
+          "faction": "arabes",
+          "path": [
+            [
+              31.24,
+              30.04
+            ],
+            [
+              20.83,
+              32.5
+            ],
+            [
+              16.6,
+              31.2
+            ],
+            [
+              13.19,
+              32.9
+            ],
+            [
+              10.1,
+              33.88
+            ],
+            [
+              10.1,
+              35.68
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Uqba ibn Nafi",
+          "role": "Fondateur de Kairouan",
+          "faction": "arabes",
+          "archetype": "general",
+          "position": [
+            10.1,
+            35.68
+          ]
+        }
+      ]
+    },
+    {
+      "id": "constantinople-674",
+      "year": 674,
+      "title": "Le premier siège arabe de Constantinople",
+      "type": "bataille",
+      "location": [
+        28.98,
+        41.01
+      ],
+      "zoom": 5,
+      "summary": "De 674 à 678 selon la tradition, la flotte omeyyade tente d'étouffer Constantinople ; murailles et feu grégeois sauvent la capitale byzantine.",
+      "details": "Constantinople, l'ancienne **Byzance**, capitale de l'Empire byzantin (la moitié orientale, grecque et chrétienne, de l'Empire romain), est depuis 636 la grande cible des Arabes. Après avoir pris la Syrie et l'Égypte, Muawiya veut s'emparer de la ville qui commande le détroit du Bosphore. Dès 672, la flotte arabe s'installe à Cyzique, sur la mer de Marmara, puis, selon le chroniqueur byzantin Théophane (début du IXᵉ siècle), revient chaque printemps de 674 à 678 pour couper la ville de ses vivres.\n\nLes défenseurs, dirigés par l'empereur **Constantin IV**, disposent des immenses murs de Théodose et d'une arme secrète : le **feu grégeois**, mélange incendiaire projeté par des tubes depuis les navires, que la tradition attribue à l'ingénieur **Callinicos**, venu de Syrie. En 678, la flotte arabe se retire et l'armée de terre subit de lourdes pertes en Asie Mineure. Muawiya accepte une paix de trente ans, avec tribut, d'après Théophane.\n\nLes historiens modernes discutent cette chronologie : certains y voient un blocus continu de quatre ans, d'autres une série de raids saisonniers, voire un siège plus bref. Les récits arabes sont rares et tardifs, et les chiffres de flottes ne sont pas fiables. Ce qui est sûr, c'est que Constantinople résiste et tiendra encore près de huit siècles.",
+      "consequences": [
+        "Constantinople reste byzantine ; l'avance arabe vers l'Europe par les Balkans est stoppée pour une génération.",
+        "Le califat reste cantonné derrière les monts du Taurus, sans prendre pied en Anatolie centrale.",
+        "Une trêve de trente ans, avec tribut versé aux Byzantins selon leurs chroniqueurs, est signée vers 678.",
+        "Le feu grégeois devient l'arme emblématique de la marine byzantine."
+      ],
+      "territory": "constantinople-674",
+      "sources": [
+        {
+          "label": "Wikipédia — Siège de Constantinople (674-678)",
+          "url": "https://fr.wikipedia.org/wiki/Siège_de_Constantinople_(674-678)"
+        },
+        {
+          "label": "Wikipédia — Feu grégeois",
+          "url": "https://fr.wikipedia.org/wiki/Feu_grégeois"
+        },
+        {
+          "label": "John Haldon, The Byzantine Wars (The History Press)"
+        }
+      ],
+      "territoryNote": "Califat de Muawiya : mêmes frontières qu'en 670 avec en plus les îles de Rhodes et de Cos tenues vers 672-675 comme bases navales, Cyzique éphémère comme camp d'hiver ; Ifriqiya jusqu'à Kairouan (Abu al-Muhajir Dinar gouverne et pousse jusqu'à Tlemcen vers 675-681), Khorassan jusqu'à Merv, Balkh. Arménie tributaire. Rivaux : Empire byzantin (Anatolie derrière le Taurus, Constantinople, Carthage), Khazars, Türgesh, Tang, Wisigoths, Francs, Berbères.",
+      "armies": [
+        {
+          "id": "flotte-omeyyade",
+          "side": "Flotte omeyyade",
+          "from": "Arwad",
+          "faction": "arabes",
+          "path": [
+            [
+              35.86,
+              34.86
+            ],
+            [
+              28.2,
+              36.4
+            ],
+            [
+              27.14,
+              38.42
+            ],
+            [
+              27.9,
+              40.4
+            ],
+            [
+              28.98,
+              41
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Flotte et garnison de Constantinople",
+          "from": "Constantinople",
+          "faction": "byzantins",
+          "path": [
+            [
+              28.55,
+              40.95
+            ],
+            [
+              28.98,
+              41
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Constantin IV",
+          "role": "Empereur byzantin",
+          "faction": "byzantins",
+          "archetype": "empereur-byzantin",
+          "position": [
+            28.95,
+            41.02
+          ]
+        },
+        {
+          "name": "Callinicos",
+          "role": "Ingénieur syrien, inventeur du feu grégeois selon la tradition",
+          "faction": "byzantins",
+          "archetype": "sage",
+          "position": [
+            29,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "id": "karbala-680",
+      "year": 680,
+      "title": "Karbala : la mort de Hussein",
+      "type": "bataille",
+      "location": [
+        44.03,
+        32.61
+      ],
+      "zoom": 5,
+      "summary": "En octobre 680, Hussein, petit-fils du Prophète, et ses proches sont tués par l'armée du calife Yazid Ier à Karbala, drame fondateur de la mémoire chiite.",
+      "details": "Muawiya meurt en avril 680 après avoir désigné son fils **Yazid** pour lui succéder, une première dans l'histoire du califat, qui scandalise ses opposants. À Médine, **Hussein**, fils d'Ali et petit-fils du Prophète par sa mère Fatima, refuse de prêter serment. Les habitants de **Koufa**, en Irak, qui avaient soutenu son père, lui écrivent de venir prendre la tête d'un soulèvement. Hussein quitte La Mecque avec sa famille et quelques dizaines de compagnons (les sources parlent d'environ 70 combattants, avec des femmes et des enfants).\n\nMais le gouverneur d'Irak, **Ubayd Allah ibn Ziyad**, a repris Koufa en main et les partisans promis ne viennent pas. Hussein est arrêté au bord de l'Euphrate, à **Karbala**, par une armée de plusieurs milliers d'hommes (4 000 selon al-Tabari) commandée par **Umar ibn Sa'd**. Le **10 muharram 61** (10 octobre 680), après plusieurs jours de siège et de privation d'eau, Hussein et ses compagnons sont massacrés. Sa tête est envoyée à Damas.\n\nMilitairement, l'événement est mineur ; religieusement, il est capital. Les chiites commémorent chaque année le jour d'**Achoura** : pour eux, Karbala symbolise le sacrifice du juste face à l'oppression. Les sunnites y voient aussi une tragédie, mais les récits, tous rédigés plus tard, varient selon les sensibilités.",
+      "consequences": [
+        "L'Irak reste sous contrôle omeyyade, mais l'opposition chiite et kharijite de Koufa devient durable.",
+        "La mort du petit-fils du Prophète déconsidère Yazid et ouvre la voie à la deuxième guerre civile (fitna) dès 683.",
+        "Le Hedjaz (La Mecque et Médine) se soulève contre Yazid en 683 et se range derrière un calife rival.",
+        "Le chiisme se constitue comme mémoire collective autour du deuil de Hussein."
+      ],
+      "territory": "karbala-680",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Kerbala",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Kerbala"
+        },
+        {
+          "label": "Wikipédia — Hussein ibn Ali",
+          "url": "https://fr.wikipedia.org/wiki/Hussein_ibn_Ali"
+        },
+        {
+          "label": "Hugh Kennedy, The Prophet and the Age of the Caliphates (Routledge)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Omeyyades (calife Yazid Ier)",
+          "Hussein ibn Ali et ses proches"
+        ],
+        "commanders": [
+          "Umar ibn Sa'd",
+          "Ubayd Allah ibn Ziyad",
+          "Hussein ibn Ali"
+        ],
+        "outcome": "Victoire omeyyade : Hussein et la plupart de ses compagnons sont tués",
+        "forces": "Omeyyades : environ 4 000 hommes selon al-Tabari (autres sources plus) ; Hussein : environ 70 combattants",
+        "losses": "Hussein et presque tous ses compagnons ; pertes omeyyades mal connues"
+      },
+      "armies": [
+        {
+          "id": "koufa-omeyyade",
+          "side": "Armée omeyyade d'Ubayd Allah",
+          "from": "Koufa",
+          "faction": "arabes",
+          "path": [
+            [
+              44.4,
+              32.03
+            ],
+            [
+              44.2,
+              32.3
+            ],
+            [
+              44.03,
+              32.61
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Hussein et ses proches",
+          "from": "La Mecque",
+          "faction": "arabes",
+          "path": [
+            [
+              39.83,
+              21.42
+            ],
+            [
+              42,
+              24.8
+            ],
+            [
+              43.5,
+              28.5
+            ],
+            [
+              44.03,
+              32.61
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Hussein ibn Ali",
+          "role": "Petit-fils du Prophète, tué à Karbala",
+          "faction": "arabes",
+          "archetype": "prelat",
+          "person": "hussein-ibn-ali",
+          "quote": "Non, par Dieu, je ne vous donnerai pas ma main comme un homme humilié (selon al-Tabari)",
+          "position": [
+            44,
+            32.62
+          ]
+        },
+        {
+          "name": "Yazid Ier",
+          "role": "Calife omeyyade (680-683)",
+          "faction": "arabes",
+          "archetype": "calife",
+          "person": "yazid-ier",
+          "position": [
+            36.29,
+            33.51
+          ]
+        }
+      ],
+      "territoryNote": "Califat de Yazid Ier, même étendue qu'en 674 : Arabie, Syrie, Égypte, Irak (Koufa, Bassora, Karbala), plateau iranien, Khorassan jusqu'à Merv et Balkh ; Ifriqiya jusqu'à Kairouan et raids vers Tlemcen (Abu al-Muhajir Dinar, puis Uqba qui revient gouverner en 681) ; Cyrénaïque et Tripolitaine. Arménie, Géorgie, Nubie tributaires. Rivaux : Empire byzantin de Constantin IV (Anatolie, Constantinople, Carthage et côtes de l'Ifriqiya), Khazars, Türgesh, Tang, Berbères insoumis (Awraba de Kusayla, Aurès)."
+    },
+    {
+      "id": "marj-rahit-684",
+      "year": 684,
+      "title": "Marj Rahit : les Omeyyades sauvent leur califat",
+      "type": "bataille",
+      "location": [
+        36.4,
+        33.52
+      ],
+      "zoom": 5,
+      "summary": "En 684, en pleine deuxième guerre civile, Marwan Ier bat à Marj Rahit les partisans du calife rival de La Mecque et fonde la branche marwanide, qui règnera jusqu'en 750.",
+      "details": "Yazid Ier meurt en novembre 683 et son fils **Muawiya II** disparaît après quelques semaines : la famille de Muawiya semble finie. Un rival, **Abd Allah ibn al-Zubayr**, qui s'est proclamé calife depuis La Mecque, est reconnu en Hedjaz, en Irak, en Égypte, en Iran et même par une partie des Syriens. Le califat éclate : c'est la **deuxième fitna** (guerre civile).\n\nEn Syrie, les tribus arabes sont divisées entre deux grands camps : les **Qays** (Arabes du Nord), que dirige al-Dahhak ibn Qays et qui se rangent du côté d'Ibn al-Zubayr, et les **Kalb** (Arabes du Yémen), alliés aux Omeyyades. À Jabiya, au printemps 684, les chefs choisissent **Marwan ibn al-Hakam**, cousin âgé d'Uthman. À **Marj Rahit**, la « prairie de Rahit », près de Damas, Marwan bat Dahhak, qui meurt au combat (août 684 d'après la tradition ; les chiffres des armées sont inconnus). Il reprend l'Égypte en 685 puis meurt, remplacé par son fils **Abd al-Malik**.\n\nLa victoire fait passer le califat de la branche de Muawiya (les Sufyanides) à celle de Marwan (les **Marwanides**). Elle laisse aussi un héritage durable : la haine entre Qays et Yéménites, que l'on retrouvera en Espagne et au Khorassan.",
+      "consequences": [
+        "La Syrie, avec Damas, reste omeyyade ; l'Égypte est reprise en 685, mais l'Irak, le Hedjaz et l'Iran demeurent à Ibn al-Zubayr.",
+        "La dynastie passe aux Marwanides, qui régneront jusqu'en 750.",
+        "La rivalité entre Qays et Yéménites s'installe durablement dans l'armée arabe.",
+        "L'Ifriqiya est quasiment perdue après la mort d'Uqba (683) : Kusayla tient Kairouan."
+      ],
+      "territory": "marj-rahit-684",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Marj Rahit",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Marj_Rahit"
+        },
+        {
+          "label": "Wikipédia — Deuxième fitna",
+          "url": "https://fr.wikipedia.org/wiki/Deuxième_Fitna"
+        },
+        {
+          "label": "Wikipédia — Marwan Ier",
+          "url": "https://fr.wikipedia.org/wiki/Marwan_Ier"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Omeyyades de Marwan Ier (tribus Kalb)",
+          "Qaysites partisans d'Ibn al-Zubayr"
+        ],
+        "commanders": [
+          "Marwan ibn al-Hakam",
+          "al-Dahhak ibn Qays"
+        ],
+        "outcome": "Victoire omeyyade ; mort de Dahhak",
+        "forces": "Inconnues (quelques milliers à quelques dizaines de milliers selon les récits)",
+        "losses": "Lourdes pour les Qaysites"
+      },
+      "armies": [
+        {
+          "id": "marwan",
+          "side": "Marwan Ier et les Kalb",
+          "from": "Jabiya",
+          "faction": "arabes",
+          "path": [
+            [
+              35.95,
+              32.97
+            ],
+            [
+              36.2,
+              33.3
+            ],
+            [
+              36.4,
+              33.52
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Qaysites d'al-Dahhak",
+          "from": "Damas",
+          "faction": "arabes",
+          "path": [
+            [
+              36.29,
+              33.51
+            ],
+            [
+              36.4,
+              33.52
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Marwan Ier",
+          "role": "Fondateur de la branche marwanide",
+          "faction": "arabes",
+          "archetype": "calife",
+          "position": [
+            36.38,
+            33.5
+          ]
+        },
+        {
+          "name": "Abd Allah ibn al-Zubayr",
+          "role": "Calife rival à La Mecque",
+          "faction": "arabes",
+          "archetype": "calife",
+          "person": "abd-allah-ibn-al-zubayr",
+          "position": [
+            39.83,
+            21.42
+          ]
+        }
+      ],
+      "territoryNote": "Pendant la deuxième fitna, Marwan ne tient que la Syrie (Damas, Homs, Palestine) ; l'Égypte (Fustat) est reprise en 685. Dissidents : Ibn al-Zubayr contrôle le Hedjaz (La Mecque, Médine), le Yémen, l'Irak (Koufa, Bassora), la Jazira en partie et l'Iran ; kharijites actifs dans le Fars et le Khuzestan. Ifriqiya perdue : Kusayla et les Berbères d'Awraba tiennent Kairouan (683-688), seule la Cyrénaïque reste arabe. Khorassan : gouverneurs arabes en rivalité, Merv, Balkh. Rivaux : Empire byzantin de Justinien II (Anatolie, Carthage), Khazars, Türgesh, Wisigoths ; l'empereur obtient en 685 un tribut du calife."
+    },
+    {
+      "id": "dome-691",
+      "year": 691,
+      "title": "Le Dôme du Rocher et la reconquête de l'Irak",
+      "type": "fondation",
+      "location": [
+        35.235,
+        31.778
+      ],
+      "zoom": 5,
+      "summary": "Entre 691 et 692, Abd al-Malik reprend l'Irak et l'Arabie à son rival et fait bâtir à Jérusalem le Dôme du Rocher, premier grand monument de l'islam.",
+      "details": "**Abd al-Malik** (685-705) hérite d'un empire coupé en morceaux. En 691, son armée bat à Dayr al-Jathaliq, en Irak, **Mus'ab**, frère d'Ibn al-Zubayr, et reprend Koufa et Bassora. En 692, son général **al-Hajjaj ibn Yusuf** assiège La Mecque pendant plusieurs mois, bombarde la ville avec des catapultes et tue Ibn al-Zubayr. L'unité du califat est refaite.\n\nEn même temps, vers 691-692 (l'inscription du monument donne l'an 72 de l'hégire), le calife fait construire à Jérusalem, sur l'esplanade du Temple, le **Dôme du Rocher** : un sanctuaire octogonal sous une coupole dorée, couvert de mosaïques d'inspiration byzantine et d'inscriptions coraniques parmi les plus anciennes de l'histoire de l'islam. Il entoure le rocher d'où, selon la tradition, Mahomet serait monté au ciel lors de son « voyage nocturne », rocher que les juifs associent au Temple de Salomon.\n\nLes raisons de ce chantier sont discutées. On y voit un défi à la proche église du Saint-Sépulcre, une affirmation de la place de l'islam, et, selon un récit tardif et fragile, un moyen de détourner le pèlerinage de La Mecque tenue par Ibn al-Zubayr. Les inscriptions disent aussi que Jésus est un prophète mais non le fils de Dieu : un message adressé aux chrétiens.",
+      "consequences": [
+        "L'Irak (Koufa, Bassora) est repris en 691 ; l'Arabie (La Mecque, Médine) revient au califat en 692.",
+        "L'unité territoriale du califat est refaite, sauf en Ifriqiya où il faudra rouvrir la conquête.",
+        "Jérusalem devient un haut lieu de l'islam grâce au plus ancien monument islamique encore debout.",
+        "Al-Hajjaj, nommé gouverneur du Hedjaz puis d'Irak (694), tiendra l'Orient d'une main de fer."
+      ],
+      "territory": "dome-691",
+      "sources": [
+        {
+          "label": "Wikipédia — Dôme du Rocher",
+          "url": "https://fr.wikipedia.org/wiki/Dôme_du_Rocher"
+        },
+        {
+          "label": "Wikipédia — Abd al-Malik ibn Marwan",
+          "url": "https://fr.wikipedia.org/wiki/Abd_al-Malik_ibn_Marwan"
+        },
+        {
+          "label": "Wikipédia — Abd Allah ibn al-Zubayr",
+          "url": "https://fr.wikipedia.org/wiki/Abd_Allah_ibn_al-Zubayr"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Abd al-Malik",
+          "role": "Calife omeyyade (685-705)",
+          "faction": "arabes",
+          "archetype": "calife",
+          "person": "abd-al-malik",
+          "position": [
+            35.235,
+            31.778
+          ]
+        },
+        {
+          "name": "Al-Hajjaj ibn Yusuf",
+          "role": "Général, futur gouverneur d'Irak",
+          "faction": "arabes",
+          "archetype": "general",
+          "person": "al-hajjaj-ibn-yusuf",
+          "quote": "Je vois des têtes mûres, et le moment de les cueillir est venu (selon al-Tabari)",
+          "position": [
+            44.4,
+            32.03
+          ]
+        }
+      ],
+      "territoryNote": "Califat réunifié par Abd al-Malik : Syrie, Palestine avec Jérusalem, Égypte, Irak (Koufa et Bassora reprises en 691), Hedjaz (La Mecque et Médine reprises en 692, fin du siège d'al-Hajjaj), Yémen, Jazira ; Iran occidental et Fars repris sur les kharijites (Azraqites encore actifs), Khorassan jusqu'à Merv et Balkh sans franchir l'Amou-Daria. Ifriqiya perdue au sud de la Cyrénaïque : Kusayla, Zuhayr tué à Barqa (688-689), les Arabes ne tiennent que la Cyrénaïque. Arménie tributaire. Rivaux : Empire byzantin (Anatolie, Carthage), Khazars, Türgesh, Tang, Berbères d'Awraba, royaume de Kaboul (Zunbils)."
+    },
+    {
+      "id": "reformes-697",
+      "year": 697,
+      "title": "Monnaie, arabe et administration : le califat se dote d'un État",
+      "type": "réforme",
+      "location": [
+        36.29,
+        33.51
+      ],
+      "zoom": 4.5,
+      "summary": "Entre 696 et 705, Abd al-Malik frappe un dinar d'or purement islamique et impose l'arabe dans l'administration de l'empire.",
+      "details": "Les conquérants arabes ont d'abord gardé les administrations en place : le grec en Syrie et en Égypte, le pehlevi (moyen-perse) en Iran. Pour la monnaie, ils utilisaient les pièces byzantines d'or (*solidus*) et perses d'argent (*drachmes*), parfois avec des imitations où figure le calife debout, ce qui choquait les plus pieux.\n\nVers **696-697** (79 de l'hégire), **Abd al-Malik** fait frapper le **dinar** : une pièce d'or de poids fixe, sans portrait, avec seulement des inscriptions en arabe, dont la profession de foi (« Il n'y a de dieu que Dieu »). L'argent suit avec le **dirham**. La monnaie circule de l'Atlantique à l'Indus. Byzance, de son côté, avait mis le Christ sur ses pièces en 692 : la rupture est aussi religieuse.\n\nÀ peu près au même moment, l'**arabe** devient la langue des bureaux (*diwan*) : à Damas vers 700, en Irak sous al-Hajjaj, en Égypte vers 706. Les anciens scribes chrétiens ou zoroastriens doivent apprendre l'arabe pour garder leur poste. Les dates sont celles des chroniqueurs tardifs ; les monnaies, mieux datées, confirment l'essentiel. Les convertis non arabes (les *mawali*) restent assujettis à l'impôt, ce qui nourrit des tensions durables.",
+      "consequences": [
+        "Un empire de l'Atlantique à l'Indus gagne une monnaie unique, fondée sur l'or et sur des inscriptions sans images.",
+        "L'arabe devient la langue de l'État et, peu à peu, celle de millions de sujets de Syrie, d'Égypte et d'Irak.",
+        "Le fisc se centralise ; les convertis non arabes réclament l'égalité fiscale, source de troubles.",
+        "La rupture monétaire avec Byzance prépare des conflits aux frontières."
+      ],
+      "territory": "reformes-697",
+      "sources": [
+        {
+          "label": "Wikipédia — Dinar",
+          "url": "https://fr.wikipedia.org/wiki/Dinar"
+        },
+        {
+          "label": "Wikipédia — Abd al-Malik ibn Marwan",
+          "url": "https://fr.wikipedia.org/wiki/Abd_al-Malik_ibn_Marwan"
+        },
+        {
+          "label": "Chase Robinson, Abd al-Malik (Oneworld)"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Abd al-Malik",
+          "role": "Calife réformateur",
+          "faction": "arabes",
+          "archetype": "calife",
+          "person": "abd-al-malik",
+          "position": [
+            36.29,
+            33.51
+          ]
+        },
+        {
+          "name": "Justinien II",
+          "role": "Empereur byzantin, met le Christ sur ses pièces",
+          "faction": "byzantins",
+          "archetype": "empereur-byzantin",
+          "position": [
+            28.98,
+            41.01
+          ]
+        }
+      ],
+      "territoryNote": "Califat réunifié : Syrie, Palestine, Égypte, Irak, Hedjaz et Yémen, Jazira, Iran (Fars, Kerman, Médie, Azerbaïdjan jusqu'au Caucase), Khorassan jusqu'à Merv, Balkh et Hérat ; Sistan et Makran en partie ; Cyrénaïque et Tripolitaine ; Ifriqiya limitée à Kairouan et à ses environs (Hassan ibn al-Nu'man y revient vers 695). Arménie et Géorgie tributaires ; Nubie tributaire. Rivaux : Empire byzantin (Anatolie, Carthage et côte tunisienne, Sicile), Khazars, Türgesh au-delà de l'Amou-Daria, Tang, Wisigoths, Berbères de l'Aurès et du Maghreb central."
+    },
+    {
+      "id": "carthage-698",
+      "year": 698,
+      "title": "La chute de Carthage byzantine",
+      "type": "bataille",
+      "location": [
+        10.32,
+        36.85
+      ],
+      "zoom": 5,
+      "summary": "En 698, Hassan ibn al-Nu'man prend Carthage aux Byzantins, qui perdent leur dernière grande base d'Afrique du Nord.",
+      "details": "Après la mort d'Uqba en 683, Kairouan avait été perdue puis reprise. Une fois réunifié l'empire, **Abd al-Malik** relance la conquête : **Hassan ibn al-Nu'man** part d'Égypte avec une grande armée (les chiffres des sources, comme 40 000 hommes, sont discutés). Il prend d'abord Kairouan, puis, vers **698** (les dates varient de 695 à 698), assiège **Carthage**, capitale de la province byzantine d'Afrique, ville romaine fondée sur les ruines de la grande cité phénicienne.\n\nCarthage tombe. Une flotte byzantine, venue de Constantinople avec, selon la tradition, des renforts de Sicile et peut-être d'Hispanie, la reprend brièvement, mais Hassan revient et l'emporte définitivement ; la ville est en partie détruite. Hassan installe un port militaire à **Tunis** (vers 700), avec un arsenal et, d'après la tradition, des artisans coptes venus d'Égypte.\n\nIl se tourne ensuite contre les Berbères de l'Aurès, que dirige une reine appelée la **Kahina** (la « prophétesse » ou « devineresse »), dont l'histoire est surtout connue par des récits tardifs mêlés de légende. Elle bat Hassan, qui se replie ; il reviendra vers 702 avec des renforts et la vaincra. Les Byzantins ne gardent que Ceuta et quelques îles.",
+      "consequences": [
+        "La province byzantine d'Afrique disparaît : la côte tunisienne, de Carthage à Hadrumète, passe au califat.",
+        "Tunis devient le port militaire arabe ; Kairouan reste la capitale terrestre.",
+        "L'Aurès de la Kahina résiste jusqu'en 702, puis les Berbères sont enrôlés dans les armées arabes.",
+        "La route est ouverte vers le Maroc et, au-delà du détroit, vers l'Espagne."
+      ],
+      "territory": "carthage-698",
+      "sources": [
+        {
+          "label": "Wikipédia — Carthage",
+          "url": "https://fr.wikipedia.org/wiki/Carthage"
+        },
+        {
+          "label": "Wikipédia — Kahina",
+          "url": "https://fr.wikipedia.org/wiki/Kahina"
+        },
+        {
+          "label": "Wikipédia — Hassan ibn al-Nu'man",
+          "url": "https://fr.wikipedia.org/wiki/Hassan_ibn_al-Nu%27man"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Califat omeyyade",
+          "Empire byzantin (garnison et flotte)"
+        ],
+        "commanders": [
+          "Hassan ibn al-Nu'man",
+          "gouverneur byzantin de Carthage"
+        ],
+        "outcome": "Victoire arabe : Carthage est prise et définitivement perdue pour Byzance",
+        "forces": "Inconnues ; chiffres des chroniques non fiables",
+        "losses": "Inconnues"
+      },
+      "armies": [
+        {
+          "id": "hassan",
+          "side": "Armée de Hassan ibn al-Nu'man",
+          "from": "Kairouan",
+          "faction": "arabes",
+          "path": [
+            [
+              10.1,
+              35.68
+            ],
+            [
+              10.1,
+              36.2
+            ],
+            [
+              10.32,
+              36.85
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Flotte byzantine",
+          "from": "Constantinople",
+          "faction": "byzantins",
+          "path": [
+            [
+              28.98,
+              41
+            ],
+            [
+              20,
+              37.5
+            ],
+            [
+              12.5,
+              37
+            ],
+            [
+              10.32,
+              36.85
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Hassan ibn al-Nu'man",
+          "role": "Gouverneur d'Ifriqiya",
+          "faction": "arabes",
+          "archetype": "general",
+          "position": [
+            10.2,
+            36.8
+          ]
+        },
+        {
+          "name": "La Kahina",
+          "role": "Reine berbère de l'Aurès, selon la tradition",
+          "faction": "numides",
+          "archetype": "chef-barbare",
+          "person": "la-kahina",
+          "position": [
+            6.17,
+            35.55
+          ]
+        }
+      ],
+      "territoryNote": "Califat d'Abd al-Malik : Syrie, Palestine, Égypte, Irak, Hedjaz, Yémen, Jazira, Iran, Khorassan jusqu'à Merv et Balkh ; Ifriqiya jusqu'à Carthage et Tunis (Tunisie du nord et du centre, avec Kairouan) et Tripolitaine. L'Aurès (Kahina), l'Algérie intérieure et le Maroc restent berbères et indépendants. Ceuta et la Sicile restent byzantines. Rivaux : Empire byzantin de Tibère III (Anatolie, Constantinople, Sicile, Sardaigne), Khazars, Türgesh, Tang, Wisigoths, Francs. Arménie et Géorgie tributaires."
+    },
+    {
+      "id": "guadalete-711",
+      "year": 711,
+      "title": "Guadalete : la chute du royaume wisigoth",
+      "type": "bataille",
+      "location": [
+        -5.85,
+        36.45
+      ],
+      "zoom": 5,
+      "summary": "En juillet 711, l'armée berbère et arabe de Tariq ibn Ziyad bat le roi wisigoth Rodrigue ; en quelques années, presque toute l'Hispanie passe au califat.",
+      "details": "Depuis la prise de Carthage, le Maghreb est confié au gouverneur d'Ifriqiya **Musa ibn Nusayr**, qui a soumis les Berbères jusqu'à Tanger. Son lieutenant **Tariq ibn Ziyad**, d'origine berbère selon la tradition la plus répandue (elle est discutée), tient Tanger. En face, le royaume **wisigoth** (peuple germanique installé en Espagne depuis le Vᵉ siècle) est affaibli par ses querelles de succession : **Rodrigue** a été élu vers 710, mais les fils de son prédécesseur Witiza contestent son pouvoir.\n\nUne légende tardive raconte que le comte Julien de Ceuta, offensé par Rodrigue, aurait fourni les navires aux musulmans ; aucune source du temps ne le prouve. Au printemps 711, Tariq traverse le détroit avec quelque 7 000 hommes, surtout des Berbères (le **Jabal Tariq**, « montagne de Tariq », a donné Gibraltar), renforcés ensuite à environ 12 000. Rodrigue, venu du nord, l'affronte sur le Guadalete en juillet 711 (la localisation exacte, entre le Guadalete et la lagune de la Janda, est discutée). Il disparaît dans la bataille. Les sources les plus proches sont la *Chronique mozarabe de 754* et des récits arabes tardifs.\n\nTariq prend ensuite Écija, Cordoue et Tolède sans grande résistance. Musa débarque en 712 avec une seconde armée, soumet Séville et Mérida, puis Saragosse en 714. Les deux chefs sont rappelés à Damas par le calife.",
+      "consequences": [
+        "Le royaume wisigoth s'effondre ; la Bétique (Séville, Cordoue) puis Tolède passent en quelques mois au califat.",
+        "L'Espagne, sous le nom d'al-Andalus, devient une province du califat et le restera sous l'autorité de Damas jusqu'en 750.",
+        "Musa débarque en 712, prend Séville, Mérida et la plaine de l'Èbre (Saragosse 714).",
+        "Tariq et Musa sont rappelés à Damas vers 714 par le calife al-Walid Ier, rivalité entre eux comprise."
+      ],
+      "territory": "guadalete-711",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Guadalete",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Guadalete"
+        },
+        {
+          "label": "Wikipédia — Tariq ibn Ziyad",
+          "url": "https://fr.wikipedia.org/wiki/Tariq_ibn_Ziyad"
+        },
+        {
+          "label": "Wikipédia — Musa ibn Nusayr",
+          "url": "https://fr.wikipedia.org/wiki/Musa_ibn_Nusayr"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Califat omeyyade (Berbères et Arabes de Tariq)",
+          "Royaume wisigoth de Rodrigue"
+        ],
+        "commanders": [
+          "Tariq ibn Ziyad",
+          "Rodrigue (Roderic)"
+        ],
+        "outcome": "Victoire de Tariq ; disparition du roi Rodrigue",
+        "forces": "Tariq : environ 12 000 hommes avec renforts ; Rodrigue : chiffres inconnus, parfois 40 000 (très incertain)",
+        "losses": "Inconnues ; la noblesse wisigothe est affaiblie"
+      },
+      "armies": [
+        {
+          "id": "tariq",
+          "side": "Berbères et Arabes de Tariq ibn Ziyad",
+          "from": "Ceuta",
+          "faction": "numides",
+          "path": [
+            [
+              -5.32,
+              35.89
+            ],
+            [
+              -5.35,
+              36.14
+            ],
+            [
+              -5.6,
+              36.35
+            ],
+            [
+              -5.85,
+              36.45
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Armée du roi Rodrigue",
+          "from": "Tolède",
+          "faction": "goths-vandales",
+          "path": [
+            [
+              -4.03,
+              39.86
+            ],
+            [
+              -4.78,
+              37.89
+            ],
+            [
+              -5.98,
+              37.39
+            ],
+            [
+              -5.85,
+              36.45
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Tariq ibn Ziyad",
+          "role": "Chef de la conquête de l’Espagne",
+          "faction": "numides",
+          "archetype": "general",
+          "person": "tariq-ibn-ziyad",
+          "quote": "Derrière vous la mer, devant vous l'ennemi (discours attribué à Tariq, source très tardive)",
+          "position": [
+            -5.35,
+            36.14
+          ]
+        },
+        {
+          "name": "Rodrigue",
+          "role": "Dernier roi wisigoth",
+          "faction": "goths-vandales",
+          "archetype": "roi",
+          "position": [
+            -5.8,
+            36.5
+          ]
+        }
+      ],
+      "territoryNote": "Califat d'al-Walid Ier : Syrie, Palestine, Égypte, Arabie, Irak, Iran, Sind côtier et Makran (en cours), Khorassan et Transoxiane déjà entamée (Balkh, Tokharistan, Boukhara conquise vers 709, Amou-Daria franchi) ; Ifriqiya et Maghreb jusqu'à Tanger et Ceuta (Musa ibn Nusayr, avec Berbères convertis) ; tête de pont en Hispanie autour du Rocher de Gibraltar et de la Janda au moment de la bataille. Hispanie wisigothe encore tenue au nord de la Bétique, avec Tolède et la Septimanie (sous Rodrigue puis Agila II). Rivaux : Empire byzantin (Anatolie, Sicile), Khazars, Türgesh, Tang, Francs mérovingiens, Basques, Aquitains."
+    },
+    {
+      "id": "sind-711",
+      "year": 711,
+      "title": "Muhammad ibn al-Qasim ouvre le Sind à l'islam",
+      "type": "bataille",
+      "location": [
+        67.46,
+        24.75
+      ],
+      "zoom": 5,
+      "summary": "En 711, un jeune général, Muhammad ibn al-Qasim, prend Debal puis, en 712, bat le roi Dahir : le Sind, sur l'Indus, entre dans le califat.",
+      "details": "Depuis les années 650, les Arabes lancent des raids contre le **Makran** (le littoral de l'Iran et du Pakistan actuels). Vers 711, le gouverneur d'Irak, **al-Hajjaj**, envoie vers le **Sind** (la vallée de l'Indus) son jeune parent **Muhammad ibn al-Qasim**, d'une vingtaine d'années. Le prétexte, d'après le *Chachnama* (un texte persan du XIIIᵉ siècle qui traduit un livre arabe plus ancien), est la capture par des pirates de Debal de navires portant des musulmanes venant de Ceylan ; **Dahir**, roi brahmane du Sind, aurait refusé de les rendre. Certains historiens y voient un simple prétexte.\n\nL'armée, d'environ 6 000 cavaliers syriens avec un corps de chameliers, est suivie d'un matériel de siège envoyé par mer, dont la grande catapulte appelée *al-Arus* (« la Mariée »). Muhammad prend **Debal**, un grand port, vers 711, puis remonte le fleuve, bat Dahir à Rawar en juin 712 (le roi y est tué) et occupe Aror et Brahmanabad. **Multan**, dans le Pendjab, tombe en 713 après un siège.\n\nSelon le *Chachnama*, les vaincus hindous et bouddhistes obtiennent le statut de **protégés** moyennant un impôt, modèle de tolérance fiscale, mais la source est tardive et favorable aux conquérants. La conquête s'arrête là : vers 738, des royaumes indiens (Gurjara-Pratihara, Chalukya) arrêtent les Arabes en Rajasthan et au Gujarat.",
+      "consequences": [
+        "Le Sind, du delta de l'Indus à Multan (713), entre dans le califat, qui atteint ainsi l'Asie du Sud.",
+        "Dahir est tué en 712 et la dynastie brahmane des Chach disparaît.",
+        "Hindous et bouddhistes sont traités en protégés moyennant impôt, d'après le Chachnama.",
+        "Muhammad ibn al-Qasim est rappelé après la mort d'al-Hajjaj et meurt en prison vers 715, selon la tradition."
+      ],
+      "territory": "sind-711",
+      "sources": [
+        {
+          "label": "Wikipédia — Muhammad ibn al-Qasim",
+          "url": "https://fr.wikipedia.org/wiki/Muhammad_ibn_al-Qasim"
+        },
+        {
+          "label": "Wikipédia — Sind",
+          "url": "https://fr.wikipedia.org/wiki/Sind"
+        },
+        {
+          "label": "Wikipédia — Califat omeyyade",
+          "url": "https://fr.wikipedia.org/wiki/Califat_omeyyade"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Califat omeyyade",
+          "Royaume du Sind (Dahir)"
+        ],
+        "commanders": [
+          "Muhammad ibn al-Qasim",
+          "Dahir"
+        ],
+        "outcome": "Prise de Debal (711), puis victoire arabe de Rawar (712) : mort de Dahir",
+        "forces": "Arabes : environ 6 000 cavaliers (traditionnellement) ; Indiens : plusieurs dizaines de milliers selon le Chachnama (très incertain)",
+        "losses": "Inconnues ; chiffres du Chachnama peu fiables"
+      },
+      "armies": [
+        {
+          "id": "ibn-al-qasim",
+          "side": "Armée de Muhammad ibn al-Qasim",
+          "from": "Chiraz",
+          "faction": "arabes",
+          "path": [
+            [
+              52.53,
+              29.59
+            ],
+            [
+              58,
+              27
+            ],
+            [
+              62.3,
+              25.7
+            ],
+            [
+              66.5,
+              25.4
+            ],
+            [
+              67.46,
+              24.75
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Défenseurs du Sind de Dahir",
+          "from": "Aror",
+          "faction": "indiens",
+          "path": [
+            [
+              68.9,
+              27.7
+            ],
+            [
+              68.37,
+              25.39
+            ],
+            [
+              67.46,
+              24.75
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Muhammad ibn al-Qasim",
+          "role": "Jeune conquérant du Sind",
+          "faction": "arabes",
+          "archetype": "general",
+          "person": "muhammad-ibn-al-qasim",
+          "position": [
+            67.4,
+            24.8
+          ]
+        },
+        {
+          "name": "Dahir",
+          "role": "Roi du Sind, tué en 712",
+          "faction": "indiens",
+          "archetype": "roi",
+          "position": [
+            68.9,
+            27.7
+          ]
+        }
+      ],
+      "territoryNote": "Califat d'al-Walid Ier : Syrie, Égypte, Arabie, Irak, Iran, Khorassan et Transoxiane partielle (Balkh, Tokharistan, Boukhara) ; Ifriqiya et Maghreb jusqu'à Tanger ; Sind côtier au moment de l'étape : Makran, Debal et le delta de l'Indus ; remonter la vallée de l'Indus jusqu'à Aror en 712 et Multan en 713 (selon le Chachnama). Hispanie : Bétique et Tolède en cours de conquête. Royaume indien de Dahir (Sind intérieur) toujours en place au début de l'étape. Rivaux : Empire byzantin, Khazars, Türgesh, Tang, royaumes indiens (Pratihara du Rajasthan, Chalukya du Deccan), Zunbils de Kaboul."
+    },
+    {
+      "id": "samarcande-712",
+      "year": 712,
+      "title": "Qutayba et la conquête de la Transoxiane",
+      "type": "bataille",
+      "location": [
+        66.96,
+        39.65
+      ],
+      "zoom": 5,
+      "summary": "En 712, Qutayba ibn Muslim prend Samarcande : la Transoxiane, pays des Sogdiens entre l'Amou-Daria et le Syr-Daria, entre dans le califat.",
+      "details": "La **Transoxiane** (« ce qui est au-delà de l'Oxus », l'Amou-Daria) est la région des **Sogdiens**, peuple iranien de marchands qui animent la Route de la soie. Les cités-États de Boukhara, Samarcande et du Khwarezm y sont indépendantes, avec des liens avec les Turcs et la Chine. Depuis le Khorassan, les Arabes campent à Merv, où des dizaines de milliers de familles arabes se sont installées. Le gouverneur **Qutayba ibn Muslim**, nommé en 705 par al-Hajjaj, mène année après année des campagnes : Tokharistan (705), Baykand (706), Boukhara (709), Khwarezm puis **Samarcande** (712).\n\nÀ Samarcande, le roi (*ikhshid*) **Ghurak** doit payer un lourd tribut (2 millions de dirhams d'après les chroniques), livrer des otages et accepter une garnison arabe et une mosquée ; les statues des temples sont détruites. Qutayba mène ensuite des raids dans le Ferghana et le Chach (Tachkent) ; une tradition, discutée, lui prête même une expédition jusqu'aux marches chinoises de Kachgar. En 715, il est tué par ses propres soldats, après l'avènement du calife Sulayman.\n\nLa conquête est lente et fragile : les Sogdiens se révoltent, appuyés par les **Türgesh**, un peuple turc nomade, et les Arabes reperdent du terrain jusqu'aux années 730. Plus loin vers l'est, la Chine des Tang et le califat vont se rencontrer, jusqu'à la bataille de Talas en 751.",
+      "consequences": [
+        "La Transoxiane, de Boukhara à Samarcande, ainsi que le Khwarezm entrent dans le califat ; la frontière dépasse l'Amou-Daria.",
+        "Avec le Sind, Samarcande marque l'extension orientale maximale du califat.",
+        "Les Sogdiens restent rebelles : le pays est reperdu et reconquis plusieurs fois face aux Türgesh.",
+        "Une rencontre avec la Chine des Tang se prépare, jusqu'à Talas (751)."
+      ],
+      "territory": "samarcande-712",
+      "sources": [
+        {
+          "label": "Wikipédia — Qutayba ibn Muslim",
+          "url": "https://fr.wikipedia.org/wiki/Qutayba_ibn_Muslim"
+        },
+        {
+          "label": "Wikipédia — Samarcande",
+          "url": "https://fr.wikipedia.org/wiki/Samarcande"
+        },
+        {
+          "label": "Wikipédia — Transoxiane",
+          "url": "https://fr.wikipedia.org/wiki/Transoxiane"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Califat omeyyade",
+          "Cité-État sogdienne de Samarcande (Ghurak)"
+        ],
+        "commanders": [
+          "Qutayba ibn Muslim",
+          "Ghurak"
+        ],
+        "outcome": "Samarcande se soumet : tribut, otages, garnison arabe",
+        "forces": "Inconnues ; chiffres des chroniques non fiables",
+        "losses": "Inconnues"
+      },
+      "armies": [
+        {
+          "id": "qutayba",
+          "side": "Armée de Qutayba ibn Muslim",
+          "from": "Merv",
+          "faction": "arabes",
+          "path": [
+            [
+              62.19,
+              37.66
+            ],
+            [
+              63.57,
+              39.07
+            ],
+            [
+              64.42,
+              39.77
+            ],
+            [
+              66.96,
+              39.65
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Sogdiens de Ghurak",
+          "from": "Pendjikent",
+          "faction": "parthes-perses",
+          "path": [
+            [
+              67.62,
+              39.5
+            ],
+            [
+              66.96,
+              39.65
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Qutayba ibn Muslim",
+          "role": "Gouverneur du Khorassan, conquérant de la Transoxiane",
+          "faction": "arabes",
+          "archetype": "general",
+          "person": "qutayba-ibn-muslim",
+          "position": [
+            66.9,
+            39.62
+          ]
+        },
+        {
+          "name": "Ghurak",
+          "role": "Roi (ikhshid) de Samarcande",
+          "faction": "parthes-perses",
+          "archetype": "roi",
+          "position": [
+            66.98,
+            39.68
+          ]
+        }
+      ],
+      "territoryNote": "Califat d'al-Walid Ier à l'est : Khorassan jusqu'à Merv, Tokharistan et Balkh, Transoxiane jusqu'à Samarcande (vallée du Zeravchan) et Boukhara, Khwarezm ; Amou-Daria franchi, Syr-Daria non franchi (Chach et Ferghana raidés, non tenus). Sind jusqu'à Aror et Brahmanabad (Dahir tué en 712), avant Multan (713). Ifriqiya et Maghreb jusqu'à Tanger ; Hispanie : Bétique avec Séville et Cordoue, Tolède (Tariq), Musa débarque en 712. Rivaux : Türgesh au nord-est, Tang de l'autre côté du Pamir, royaume de Kaboul, Empire byzantin, Khazars (Derbent), royaumes indiens, Wisigoths du Nord."
+    },
+    {
+      "id": "constantinople-717",
+      "year": 717,
+      "title": "Le second siège arabe de Constantinople",
+      "type": "bataille",
+      "location": [
+        28.98,
+        41.01
+      ],
+      "zoom": 5,
+      "summary": "En 717-718, une immense armée omeyyade met le siège devant Constantinople ; l'hiver, le feu grégeois et les Bulgares contraignent Maslama à lever le siège.",
+      "details": "Le calife **Sulayman** (715-717) décide de prendre Constantinople une fois pour toutes. L'armée est confiée à son frère **Maslama ibn Abd al-Malik**, soldat expérimenté. À Byzance, l'empereur **Léon III**, d'origine syrienne, vient d'arriver au pouvoir en mars 717 après des années de troubles. Il négocie avec Maslama, à qui il laisse croire qu'il peut s'entendre, tout en préparant la défense.\n\nLes Arabes traversent l'Hellespont à Abydos et campent devant les murs de Théodose à l'été 717 ; la flotte arrive en septembre. Les sources byzantines parlent de 1 800 navires et d'environ 80 000 hommes : ces chiffres sont presque certainement exagérés. Le **feu grégeois** détruit de nombreux navires. L'hiver 717-718, d'une rigueur exceptionnelle (la neige reste longtemps au sol), décime les assiégeants, qui manquent de vivres et subissent épidémies et famine. Le khan des **Bulgares**, Tervel, attaque leurs arrières, allié des Byzantins.\n\nSulayman meurt en septembre 717 ; son successeur **Omar II** ordonne la retraite à l'été 718. Une tempête aurait détruit en chemin une partie des navires. La défaite arrête pour longtemps les plans arabes de prise de Constantinople.",
+      "consequences": [
+        "Constantinople reste byzantine ; le califat ne retentera plus de prendre la ville.",
+        "L'Anatolie reste byzantine ; la frontière s'établit sur le Taurus, avec des raids annuels sans conquête.",
+        "Léon III fonde la dynastie isaurienne, qui règnera jusqu'en 802.",
+        "Les Bulgares de Tervel s'affirment comme allié, puis voisin, des Byzantins dans les Balkans."
+      ],
+      "territory": "constantinople-717",
+      "sources": [
+        {
+          "label": "Wikipédia — Siège de Constantinople (717-718)",
+          "url": "https://fr.wikipedia.org/wiki/Siège_de_Constantinople_(717-718)"
+        },
+        {
+          "label": "Wikipédia — Léon III l'Isaurien",
+          "url": "https://fr.wikipedia.org/wiki/Léon_III_l%27Isaurien"
+        },
+        {
+          "label": "John Haldon, The Byzantine Wars (The History Press)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Califat omeyyade",
+          "Empire byzantin (avec les Bulgares de Tervel)"
+        ],
+        "commanders": [
+          "Maslama ibn Abd al-Malik",
+          "Léon III"
+        ],
+        "outcome": "Échec du siège ; retraite arabe en août 718",
+        "forces": "Chiffres des sources byzantines (80 000 hommes, 1 800 navires) très exagérés",
+        "losses": "Très lourdes pour les Arabes (froid, famine, maladie, feu grégeois, tempête)"
+      },
+      "armies": [
+        {
+          "id": "maslama",
+          "side": "Armée de Maslama",
+          "from": "Damas",
+          "faction": "arabes",
+          "path": [
+            [
+              36.29,
+              33.51
+            ],
+            [
+              35,
+              36.9
+            ],
+            [
+              31.8,
+              38.7
+            ],
+            [
+              27.18,
+              39.12
+            ],
+            [
+              26.4,
+              40.15
+            ],
+            [
+              28.98,
+              41
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Défense de Constantinople",
+          "from": "Constantinople",
+          "faction": "byzantins",
+          "path": [
+            [
+              28.3,
+              40.95
+            ],
+            [
+              28.98,
+              41
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Léon III",
+          "role": "Empereur byzantin",
+          "faction": "byzantins",
+          "archetype": "empereur-byzantin",
+          "position": [
+            28.95,
+            41.02
+          ]
+        },
+        {
+          "name": "Maslama ibn Abd al-Malik",
+          "role": "Général omeyyade",
+          "faction": "arabes",
+          "archetype": "general",
+          "position": [
+            28.8,
+            41.05
+          ]
+        }
+      ],
+      "territoryNote": "Califat de Sulayman puis d'Omar II : Syrie, Égypte, Arabie, Irak, Iran, Khorassan et Transoxiane (Boukhara, Samarcande, Khwarezm), Sind jusqu'à Multan ; Ifriqiya et Maghreb jusqu'à Tanger et au Souss ; Hispanie conquise de la Bétique à la vallée de l'Èbre (Saragosse) et jusqu'à Léon en partie, Pyrénées en vue ; Septimanie pas encore. Caucase : Arménie, Albanie caucasienne, Géorgie (Karthli) tributaires, Derbent. Rivaux : Empire byzantin (Anatolie derrière le Taurus, Constantinople), Bulgares de Tervel, Khazars, Türgesh, Tang, royaumes indiens, Asturies naissantes ensuite."
+    },
+    {
+      "id": "covadonga-722",
+      "year": 722,
+      "title": "Covadonga : la résistance asturienne",
+      "type": "bataille",
+      "location": [
+        -5.05,
+        43.31
+      ],
+      "zoom": 5,
+      "summary": "Vers 722, des Asturiens menés par Pélage repoussent une expédition musulmane dans les montagnes : une petite escarmouche, devenue le mythe fondateur de la Reconquête.",
+      "details": "Vers 718-722, l'Espagne est presque entièrement sous contrôle musulman. Dans le nord, une petite région de montagnes, les **Asturies**, reste peu occupée. Selon les chroniques chrétiennes (rédigées vers 880, soit un siècle et demi plus tard), un noble nommé **Pélage** (Pelayo), peut-être ancien garde du roi Rodrigue, se révolte contre **Munuza**, gouverneur musulman de Gijón. Une troupe envoyée par le gouverneur d'al-Andalus, sous les ordres d'**Alqama**, le poursuit dans la grotte de **Covadonga**, dans la montagne, où les assaillants sont repoussés.\n\nLes chiffres des chroniques (des dizaines de milliers de musulmans contre 300 Asturiens) ne sont pas crédibles. Les sources musulmanes ne mentionnent presque rien et la date varie de 718 à 725. Pour beaucoup d'historiens, Covadonga est une escarmouche locale sans grande importance militaire. Mais elle devient un **mythe fondateur** : les chroniqueurs chrétiens y voient le début de la **Reconquista**, la reconquête de la péninsule qui ne s'achèvera qu'en 1492.\n\nCe qui est sûr, c'est qu'un petit pouvoir chrétien se maintient dans les montagnes cantabriques. Les musulmans n'essaient pas de l'écraser ; leurs garnisons berbères quittent le nord vers 740, à cause de la révolte berbère, et le petit pouvoir de Pélage devient le royaume des Asturies.",
+      "consequences": [
+        "Un petit pouvoir chrétien se maintient dans les Asturies, que les musulmans n'occupent pas durablement.",
+        "La Cantabrique, le Pays basque et la haute vallée de l'Èbre restent aux marges du contrôle de Cordoue.",
+        "Le récit de Covadonga alimente plus tard le mythe de la Reconquista.",
+        "Le royaume des Asturies s'étend ensuite, à partir de 740, avec Alphonse Ier, sur le nord-ouest de la péninsule."
+      ],
+      "territory": "covadonga-722",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Covadonga",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Covadonga"
+        },
+        {
+          "label": "Wikipédia — Pélage le Conquérant",
+          "url": "https://fr.wikipedia.org/wiki/Pélage_le_Conquérant"
+        },
+        {
+          "label": "Wikipédia — Al-Andalus",
+          "url": "https://fr.wikipedia.org/wiki/Al-Andalus"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Rebelles asturiens de Pélage",
+          "Expédition musulmane (Alqama)"
+        ],
+        "commanders": [
+          "Pélage",
+          "Alqama"
+        ],
+        "outcome": "Succès asturien selon les chroniques chrétiennes ; importance militaire très discutée",
+        "forces": "Chiffres des chroniques (centaines contre dizaines de milliers) non crédibles",
+        "losses": "Inconnues"
+      },
+      "armies": [
+        {
+          "id": "pelage",
+          "side": "Pélage et ses Asturiens",
+          "from": "Gijón",
+          "faction": "goths-vandales",
+          "path": [
+            [
+              -5.66,
+              43.54
+            ],
+            [
+              -5.3,
+              43.35
+            ],
+            [
+              -5.05,
+              43.31
+            ]
+          ],
+          "strength": 1,
+          "winner": true
+        },
+        {
+          "side": "Expédition d'Alqama",
+          "from": "Cordoue",
+          "faction": "arabes",
+          "path": [
+            [
+              -4.78,
+              37.89
+            ],
+            [
+              -6.34,
+              38.92
+            ],
+            [
+              -6.06,
+              42.46
+            ],
+            [
+              -5.57,
+              42.6
+            ],
+            [
+              -5.05,
+              43.31
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Pélage",
+          "role": "Chef asturien, selon les chroniques chrétiennes",
+          "faction": "goths-vandales",
+          "archetype": "roi",
+          "quote": "(formule libre) La montagne sera notre forteresse",
+          "position": [
+            -5.05,
+            43.31
+          ]
+        }
+      ],
+      "territoryNote": "Califat de Yazid II : Syrie, Égypte, Arabie, Irak, Iran, Khorassan et Transoxiane (Samarcande, Boukhara), Sind et Multan ; Ifriqiya et Maghreb jusqu'à Tanger ; al-Andalus conquis presque entier (Bétique, Tolède, Mérida, Saragosse, vallée de l'Èbre, Barcelone vers 720), Septimanie avec Narbonne (719), Carcassonne et Nîmes. Le Toulousain est repoussé par Eudes d'Aquitaine en 721. Marges non soumises : Asturies et Cantabrique (Pélage), Pays basque, vallées pyrénéennes. Rivaux : Asturies naissantes, Eudes d'Aquitaine, Francs de Charles Martel, Empire byzantin, Khazars, Türgesh."
+    },
+    {
+      "id": "poitiers-732",
+      "year": 732,
+      "title": "Poitiers : Charles Martel arrête les raids arabes",
+      "type": "bataille",
+      "location": [
+        0.55,
+        46.75
+      ],
+      "zoom": 5,
+      "summary": "En octobre 732, entre Tours et Poitiers, Charles Martel arrête l'armée d'Abd al-Rahman ; son importance exacte est discutée, la date aussi (732 ou 733).",
+      "details": "Depuis la prise de **Narbonne** en 719, les musulmans d'al-Andalus lancent des raids en Gaule : défaite devant Toulouse en 721 contre le duc **Eudes d'Aquitaine**, pointe vers Autun en 725. En 732, le gouverneur **Abd al-Rahman al-Ghafiqi** franchit les Pyrénées à l'ouest, écrase Eudes près de Bordeaux et pille la ville. Eudes se réfugie auprès de **Charles Martel**, maire du palais des Francs (le véritable chef du royaume mérovingien). Les Arabes progressent vers Tours et l'abbaye Saint-Martin, très riche.\n\nLes deux armées se rencontrent en octobre, entre Tours et Poitiers (le lieu exact, près de Moussais-la-Bataille, est incertain). Charles, avec une infanterie qui tient en rangs serrés, résiste plusieurs jours aux cavaliers ; Abd al-Rahman est tué et les musulmans se retirent de nuit. Les sources les plus proches sont la *Chronique mozarabe de 754* et les *Continuations de Frédégaire*. Les effectifs sont inconnus.\n\nL'importance de la bataille est très discutée. Longtemps tenue pour le sauvetage de l'Europe chrétienne, elle est vue aujourd'hui par beaucoup d'historiens comme un grand raid repoussé, d'autres épisodes, comme les campagnes de Charles en Provence et devant Narbonne (737-739), comptant autant. Les musulmans gardent la Septimanie jusqu'en 759.",
+      "consequences": [
+        "Les raids en force des musulmans au nord des Pyrénées s'arrêtent ; l'Aquitaine reste hors d'al-Andalus.",
+        "La Septimanie (Narbonne, Nîmes) reste musulmane jusqu'à sa conquête par Pépin le Bref en 759.",
+        "Charles Martel renforce son pouvoir ; ses descendants deviennent rois des Francs en 751 (Carolingiens).",
+        "Eudes d'Aquitaine, sauvé, passe sous la tutelle des Francs."
+      ],
+      "territory": "poitiers-732",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Poitiers (732)",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Poitiers_(732)"
+        },
+        {
+          "label": "Wikipédia — Charles Martel",
+          "url": "https://fr.wikipedia.org/wiki/Charles_Martel"
+        },
+        {
+          "label": "Wikipédia — Abd el-Rahman Al-Ghafiqi",
+          "url": "https://fr.wikipedia.org/wiki/Abd_el-Rahman_Al-Ghafiqi"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Armée omeyyade d'al-Andalus",
+          "Francs de Charles Martel et Aquitains d'Eudes"
+        ],
+        "commanders": [
+          "Abd al-Rahman al-Ghafiqi",
+          "Charles Martel",
+          "Eudes d'Aquitaine"
+        ],
+        "outcome": "Victoire franque ; mort d'Abd al-Rahman",
+        "forces": "Inconnues (quelques milliers à une vingtaine de milliers de chaque côté selon les historiens)",
+        "losses": "Inconnues ; chiffres des chroniques non fiables"
+      },
+      "armies": [
+        {
+          "id": "abd-al-rahman",
+          "side": "Armée d'Abd al-Rahman",
+          "from": "Pampelune",
+          "faction": "arabes",
+          "path": [
+            [
+              -1.64,
+              42.82
+            ],
+            [
+              -1.23,
+              43.16
+            ],
+            [
+              -0.58,
+              44.84
+            ],
+            [
+              0.34,
+              46.58
+            ],
+            [
+              0.55,
+              46.75
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "id": "charles-martel",
+          "side": "Francs de Charles Martel",
+          "from": "Austrasie",
+          "faction": "francs",
+          "path": [
+            [
+              5.62,
+              50.67
+            ],
+            [
+              2.35,
+              48.85
+            ],
+            [
+              1.9,
+              47.9
+            ],
+            [
+              0.69,
+              47.39
+            ],
+            [
+              0.55,
+              46.75
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Charles Martel",
+          "role": "Maire du palais des Francs",
+          "faction": "francs",
+          "archetype": "seigneur-franc",
+          "position": [
+            0.6,
+            46.8
+          ]
+        },
+        {
+          "name": "Abd al-Rahman al-Ghafiqi",
+          "role": "Gouverneur d'al-Andalus, tué au combat",
+          "faction": "arabes",
+          "archetype": "general",
+          "position": [
+            0.5,
+            46.72
+          ]
+        },
+        {
+          "name": "Eudes d'Aquitaine",
+          "role": "Duc d'Aquitaine, vaincu à Bordeaux",
+          "faction": "francs",
+          "archetype": "roi",
+          "position": [
+            -0.58,
+            44.84
+          ]
+        }
+      ],
+      "territoryNote": "Califat d'Hisham à son extension maximale (732-740) : de l'Indus (Sind avec Mansura, Multan) à l'Atlantique ; Transoxiane contestée par les Türgesh après le Défilé (731) mais tenue à Samarcande et Boukhara ; Khorassan jusqu'à Merv ; Arménie, Albanie caucasienne et Derbent (face aux Khazars) ; Ifriqiya et Maghreb jusqu'à Tanger et au Souss ; al-Andalus entier sauf les Asturies et la Cantabrique ; Septimanie avec Narbonne, Carcassonne, Nîmes (Avignon et la Provence raidées après 734) ; le Bordelais pillé, non tenu. Rivaux : Francs de Charles Martel, Aquitains d'Eudes, Asturiens, Basques, Empire byzantin de Léon III, Khazars, Türgesh, Tang, Lombards."
+    },
+    {
+      "id": "akroinon-740",
+      "year": 740,
+      "title": "Akroinon : l'offensive d'Anatolie échoue",
+      "type": "bataille",
+      "location": [
+        30.54,
+        38.74
+      ],
+      "zoom": 5,
+      "summary": "En 740, les empereurs Léon III et Constantin V battent à Akroinon une grande expédition omeyyade ; les raids arabes en Anatolie cessent d'être une menace.",
+      "details": "Sous le calife **Hisham** (724-743), la frontière avec Byzance reste active : chaque été (*sa'ifa*) et chaque hiver (*shatwa*), des expéditions pénètrent en Anatolie pour piller sans la conquérir, depuis des places fortes comme Mélitène (Malatya). En 740, une expédition particulièrement importante est lancée, divisée en trois colonnes (les sources byzantines avancent 90 000 hommes, ce qui est très exagéré). Elle est menée par des chefs comme **Malik ibn Shu'ayb** et **Abd Allah al-Battal**, grand héros des récits populaires arabes et turcs.\n\nL'empereur **Léon III**, de la dynastie isaurienne, et son fils **Constantin V** affrontent près d'**Akroinon** (aujourd'hui Afyon, en Turquie) la colonne principale. Les Byzantins l'emportent ; Malik et al-Battal sont tués. Cette victoire, rapportée par Théophane, est célébrée comme le salut de l'Anatolie. Elle intervient en pleine querelle des images (l'**iconoclasme**), politique religieuse de Léon III que le pape et beaucoup de ses sujets contestent.\n\nAprès Akroinon, les Arabes continuent leurs raids, mais n'engagent plus d'offensive de cette ampleur : la révolte berbère à l'ouest, puis la guerre civile, les accaparent. Constantin V, qui monte sur le trône en 741, prend l'offensive en Orient.",
+      "consequences": [
+        "L'Anatolie reste byzantine ; la frontière demeure sur le Taurus et l'Anti-Taurus.",
+        "Les raids saisonniers continuent, mais plus aucune expédition de cette ampleur ne pénètre en Asie Mineure avant 750.",
+        "Constantin V monte sur le trône en 741 et passe à l'offensive vers Mélitène et la Syrie du Nord.",
+        "Al-Battal devient un héros légendaire (Seyyid Battal Gazi) des traditions arabe et turque."
+      ],
+      "territory": "akroinon-740",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille d'Akroinon",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_d%27Akroinon"
+        },
+        {
+          "label": "Wikipédia — Léon III l'Isaurien",
+          "url": "https://fr.wikipedia.org/wiki/Léon_III_l%27Isaurien"
+        },
+        {
+          "label": "Wikipédia — Hicham ibn Abd al-Malik",
+          "url": "https://fr.wikipedia.org/wiki/Hicham_ibn_Abd_al-Malik"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Califat omeyyade",
+          "Empire byzantin"
+        ],
+        "commanders": [
+          "Malik ibn Shu'ayb",
+          "Abd Allah al-Battal",
+          "Léon III",
+          "Constantin V"
+        ],
+        "outcome": "Victoire byzantine ; al-Battal et Malik sont tués",
+        "forces": "Colonne arabe de plusieurs milliers à quelques dizaines de milliers (sources byzantines : 90 000 pour toute l'expédition, très exagéré)",
+        "losses": "Lourdes pour les Arabes ; chiffres inconnus"
+      },
+      "armies": [
+        {
+          "id": "raid-anatolie",
+          "side": "Raid de Malik et d'al-Battal",
+          "from": "Tarse",
+          "faction": "arabes",
+          "path": [
+            [
+              34.9,
+              36.9
+            ],
+            [
+              34.75,
+              37.3
+            ],
+            [
+              32.49,
+              37.87
+            ],
+            [
+              30.54,
+              38.74
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Léon III et Constantin V",
+          "from": "Nicée",
+          "faction": "byzantins",
+          "path": [
+            [
+              29.72,
+              40.43
+            ],
+            [
+              30.5,
+              39.77
+            ],
+            [
+              30.54,
+              38.74
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Léon III",
+          "role": "Empereur byzantin",
+          "faction": "byzantins",
+          "archetype": "empereur-byzantin",
+          "position": [
+            30.55,
+            38.78
+          ]
+        },
+        {
+          "name": "Constantin V",
+          "role": "Fils de Léon III, futur empereur",
+          "faction": "byzantins",
+          "archetype": "empereur-byzantin",
+          "position": [
+            30.5,
+            38.75
+          ]
+        },
+        {
+          "name": "Abd Allah al-Battal",
+          "role": "Chef de raid, tué à Akroinon",
+          "faction": "arabes",
+          "archetype": "general",
+          "position": [
+            30.58,
+            38.72
+          ]
+        }
+      ],
+      "territoryNote": "Califat d'Hisham à son apogée avant la révolte berbère : Sind et Multan ; Transoxiane (Samarcande, Boukhara, Khwarezm) reconquise après les victoires de 737-738 sur les Türgesh ; Khorassan, Iran, Irak, Syrie, Égypte, Arabie ; Arménie, Albanie caucasienne, Derbent ; Ifriqiya et Maghreb jusqu'à Tanger, Souss, Sijilmassa ; al-Andalus avec la Septimanie (Narbonne, Nîmes). Hispanie du Nord : Asturies et Cantabrique hors contrôle. Rivaux : Empire byzantin de Léon III (Anatolie du Taurus à Nicée, Constantinople, Sicile), Khazars, Türgesh affaiblis, Tang, Francs, Basques."
+    },
+    {
+      "id": "nobles-740",
+      "year": 740,
+      "title": "La révolte berbère : la bataille des Nobles",
+      "type": "bataille",
+      "location": [
+        -5.81,
+        35.77
+      ],
+      "zoom": 5,
+      "summary": "En 740, les Berbères kharijites de Maysara battent l'armée arabe lors de la bataille des Nobles, près de Tanger : le Maroc échappe définitivement à Damas.",
+      "details": "Les **Berbères**, convertis en masse à l'islam, servent dans les armées omeyyades, mais les gouverneurs arabes les traitent en sujets de seconde zone : impôts maintenus même après conversion, soldats affectés aux tâches les plus dures, et, selon les chroniqueurs, tribut de jeunes filles pour les harems. Le message des **kharijites** (en particulier les sufrites), qui défendent l'égalité de tous les croyants, y trouve un large écho.\n\nEn **740**, **Maysara al-Matghari**, un chef berbère de Tanger, tue le gouverneur et se proclame calife. Une armée envoyée de Kairouan, avec l'élite des cavaliers arabes d'Ifriqiya, est écrasée sur la rive d'un cours d'eau près de Tanger : la **bataille des Nobles** (*al-Ashraf*), ainsi nommée parce que beaucoup de nobles arabes y périrent. Le chef berbère Khalid ibn Humayd al-Zanati dirige alors la révolte. Hisham envoie des Syriens, dont l'armée est battue à Bagdoura (741). Les rescapés, sous **Balj ibn Bishr**, passent en Espagne.\n\nL'ouest du Maghreb ne reviendra jamais sous l'autorité de Damas : des États berbères apparaissent (Barghawata, Midrarides, puis Idrissides). Les sources (Ibn Abd al-Hakam au IXᵉ siècle, Ibn Idhari au XIIIᵉ) sont tardives, et les dates et les effectifs varient.",
+      "consequences": [
+        "Le Maroc et l'ouest de l'Algérie échappent définitivement à Damas : le califat perd le Maghreb occidental.",
+        "L'Ifriqiya est menacée par les kharijites ; Kairouan finira aux mains d'Abd al-Rahman ibn Habib, quasi autonome.",
+        "Des Syriens sous Balj passent en al-Andalus et s'y installent, ce qui reconfigure le peuplement militaire.",
+        "Des États berbères indépendants apparaissent (Barghawata, Midrarides à Sijilmassa)."
+      ],
+      "territory": "nobles-740",
+      "sources": [
+        {
+          "label": "Wikipédia — Grande révolte berbère",
+          "url": "https://fr.wikipedia.org/wiki/Grande_révolte_berbère"
+        },
+        {
+          "label": "Wikipédia — Kharidjisme",
+          "url": "https://fr.wikipedia.org/wiki/Kharidjisme"
+        },
+        {
+          "label": "Wikipédia — Berbères",
+          "url": "https://fr.wikipedia.org/wiki/Berbères"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Armée arabe d'Ifriqiya",
+          "Berbères kharijites"
+        ],
+        "commanders": [
+          "Khalid ibn Abi Habib al-Fihri",
+          "Maysara al-Matghari",
+          "Khalid ibn Humayd al-Zanati"
+        ],
+        "outcome": "Victoire berbère ; massacre de la noblesse arabe d'Ifriqiya",
+        "forces": "Inconnues ; chiffres des chroniques tardives non fiables",
+        "losses": "Lourdes du côté arabe (nobles)"
+      },
+      "armies": [
+        {
+          "id": "arabes-ifriqiya",
+          "side": "Armée arabe d'Ifriqiya",
+          "from": "Kairouan",
+          "faction": "arabes",
+          "path": [
+            [
+              10.1,
+              35.68
+            ],
+            [
+              6.6,
+              36.37
+            ],
+            [
+              -1.31,
+              34.88
+            ],
+            [
+              -5.81,
+              35.77
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "id": "berberes-maysara",
+          "side": "Berbères kharijites de Maysara",
+          "from": "Maroc",
+          "faction": "numides",
+          "path": [
+            [
+              -6.8,
+              34
+            ],
+            [
+              -6,
+              35
+            ],
+            [
+              -5.81,
+              35.77
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Maysara al-Matghari",
+          "role": "Chef de la révolte berbère de 740",
+          "faction": "numides",
+          "archetype": "chef-barbare",
+          "position": [
+            -5.82,
+            35.76
+          ]
+        },
+        {
+          "name": "Hisham",
+          "role": "Calife omeyyade (724-743)",
+          "faction": "arabes",
+          "archetype": "calife",
+          "person": "hisham",
+          "position": [
+            38.73,
+            35.63
+          ]
+        }
+      ],
+      "territoryNote": "Califat d'Hisham après la révolte berbère : Maroc (Tanger, Souss, Sijilmassa) et Algérie à l'ouest de Tlemcen échappent à Damas (rebelles kharijites, futurs Barghawata et Midrarides) ; Ifriqiya jusqu'à Constantine et Kairouan tenue ; Tripolitaine, Égypte, Syrie, Arabie, Irak, Iran, Khorassan et Transoxiane, Sind jusqu'à Multan. Al-Andalus et Septimanie encore tenus, mais troublés par l'arrivée des Syriens de Balj (741). Rivaux : Berbères indépendants, Asturies, Empire byzantin de Constantin V, Khazars, Türgesh, Tang, Francs."
+    },
+    {
+      "id": "revolte-abbasside-747",
+      "year": 747,
+      "title": "Abu Muslim lève les bannières noires au Khorassan",
+      "type": "politique",
+      "location": [
+        62.19,
+        37.66
+      ],
+      "zoom": 4.5,
+      "summary": "En 747, au Khorassan, Abu Muslim lève les bannières noires au nom de la famille du Prophète : la révolution abbasside commence.",
+      "details": "À la mort d'**Hisham** (743), le califat s'effondre en quelques années : al-Walid II est assassiné en 744, Yazid III meurt la même année, puis **Marwan II** s'impose par la force. Il doit affronter des révoltes kharijites en Mésopotamie, des querelles entre Qays et Yéménites, et des insurrections en Syrie même.\n\nEn secret, les **Abbassides**, descendants d'al-Abbas, oncle du Prophète, organisent depuis des années une propagande au Khorassan au nom d'un « membre de la famille du Prophète » non nommé, ce qui rallie les chiites, les convertis iraniens (*mawali*) et les Arabes du Khorassan, mécontents des impôts. Leur agent est **Abu Muslim**, d'origine obscure (peut-être un ancien esclave affranchi, d'ascendance iranienne selon la tradition). En juin 747, il lève les **bannières noires** près de Merv. Le gouverneur **Nasr ibn Sayyar**, paralysé par les rivalités entre Arabes, ne peut l'arrêter ; il quitte Merv, qu'Abu Muslim occupe en décembre.\n\nLes armées abbassides marchent alors vers l'ouest : Nishapur (748), Rayy, Hamadan, puis Koufa, où le premier calife abbasside, **Abu al-Abbas** (surnommé al-Saffah), est proclamé en novembre 749. Beaucoup d'Alides, partisans de la famille d'Ali, se voient ainsi privés du pouvoir pour lequel ils avaient combattu.",
+      "consequences": [
+        "Le Khorassan et la Transoxiane échappent aux Omeyyades dès 747 ; Merv devient la base des insurgés.",
+        "L'Iran central (Rayy, Hamadan) puis l'Irak (Koufa, 749) tombent aux mains des rebelles.",
+        "Une coalition de mécontents (Arabes du Khorassan, convertis iraniens, partisans de la famille du Prophète) renverse la dynastie.",
+        "Ce sont les Abbassides, et non les Alides, qui prennent le pouvoir, ce qui déçoit les chiites."
+      ],
+      "territory": "revolte-abbasside-747",
+      "sources": [
+        {
+          "label": "Wikipédia — Révolution abbasside",
+          "url": "https://fr.wikipedia.org/wiki/Révolution_abbasside"
+        },
+        {
+          "label": "Wikipédia — Abu Muslim",
+          "url": "https://fr.wikipedia.org/wiki/Abu_Muslim"
+        },
+        {
+          "label": "Wikipédia — Califat abbasside",
+          "url": "https://fr.wikipedia.org/wiki/Califat_abbasside"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Abu Muslim",
+          "role": "Chef de la révolte du Khorassan",
+          "faction": "parthes-perses",
+          "archetype": "general",
+          "person": "abu-muslim",
+          "position": [
+            62.19,
+            37.66
+          ]
+        },
+        {
+          "name": "Nasr ibn Sayyar",
+          "role": "Dernier gouverneur omeyyade du Khorassan",
+          "faction": "arabes",
+          "archetype": "general",
+          "quote": "Je vois sous la cendre l'éclat d'un feu, qui va bientôt s'enflammer (poème attribué à Nasr ibn Sayyar)",
+          "position": [
+            62.1,
+            37.6
+          ]
+        }
+      ],
+      "territoryNote": "Califat de Marwan II réduit : Syrie, Palestine, Jazira (avec Harran, capitale de Marwan II), Égypte, Hedjaz et Yémen, Irak jusqu'à Koufa et Bassora (qui basculent en 749) ; Ifriqiya à Kairouan sous Abd al-Rahman ibn Habib (autonome de fait), al-Andalus (sous Yusuf al-Fihri) en voie d'autonomie ; Sind (Mansura). Hors du pouvoir omeyyade : Khorassan jusqu'à Merv (Abu Muslim), Transoxiane, Tokharistan, Iran oriental. Kharijites du Nord de la Mésopotamie et d'Oman. Rivaux : Abbassides en Khorassan, Berbères indépendants du Maroc (Barghawata), Asturies, Empire byzantin de Constantin V, Khazars, Tang."
+    },
+    {
+      "id": "zab-750",
+      "year": 750,
+      "title": "Grand Zab : la fin du califat omeyyade",
+      "type": "chute",
+      "location": [
+        43.45,
+        36.05
+      ],
+      "zoom": 4.5,
+      "summary": "Le 25 janvier 750, l'armée abbasside bat Marwan II sur le Grand Zab ; la dynastie omeyyade perd Damas puis le califat, mais un prince survit et fuit en Espagne.",
+      "details": "Le calife **Marwan II**, surnommé « l'Âne de la Jazira » pour son endurance, rassemble une armée en Haute Mésopotamie, depuis sa base de Harran. L'armée abbasside, formée surtout de soldats du Khorassan, est commandée par **Abd Allah ibn Ali**, oncle du nouveau calife **Abu al-Abbas**, envoyée par **Abu Muslim** depuis le Khorassan. Les chroniqueurs parlent de 120 000 Omeyyades contre quelques dizaines de milliers d'Abbassides, chiffres très douteux. Le **25 janvier 750**, sur le Grand Zab, affluent du Tigre au sud de Mossoul, après plusieurs jours de combat sous la pluie, l'armée de Marwan II cède et se disperse.\n\nMarwan fuit : Mossoul, Harran, Damas, la Palestine, l'Égypte, où il est tué à Busir en août. Damas tombe en avril presque sans combat. L'attitude des Abbassides envers les Omeyyades est brutale : tombeaux profanés et, selon la tradition, un banquet à Abu Futrus où l'on aurait massacré des dizaines de princes (récit en partie légendaire).\n\nUn jeune prince, **Abd al-Rahman**, petit-fils d'Hisham, s'échappe et gagne le Maghreb puis l'Espagne, où il fonde en 756 l'émirat de Cordoue. Le califat abbasside s'installe d'abord à Koufa, puis fonde Bagdad en 762 : le centre du monde musulman se déplace vers l'Irak et l'Iran.",
+      "consequences": [
+        "Les Abbassides tiennent l'Irak, l'Iran, le Khorassan et la Transoxiane, puis la Syrie et l'Égypte ; Damas perd son rang de capitale.",
+        "L'Ifriqiya, le Maghreb et al-Andalus échappent bientôt à Bagdad : l'unité territoriale du califat se brise.",
+        "Abd al-Rahman, un prince omeyyade, fonde en 756 l'émirat de Cordoue, qui restera omeyyade jusqu'en 1031.",
+        "Le centre de gravité du monde musulman passe de la Méditerranée à l'Irak et à l'Iran (Bagdad, 762)."
+      ],
+      "territory": "zab-750",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille du Grand Zab",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_du_Grand_Zab"
+        },
+        {
+          "label": "Wikipédia — Marwan II",
+          "url": "https://fr.wikipedia.org/wiki/Marwan_II"
+        },
+        {
+          "label": "Wikipédia — Abd al-Rahman Ier",
+          "url": "https://fr.wikipedia.org/wiki/Abd_al-Rahman_Ier"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Califat omeyyade (Marwan II)",
+          "Abbassides (armée du Khorassan)"
+        ],
+        "commanders": [
+          "Marwan II",
+          "Abd Allah ibn Ali"
+        ],
+        "outcome": "Victoire abbasside ; fuite de Marwan II, fin de la dynastie omeyyade en Orient",
+        "forces": "Chiffres des chroniques (120 000 contre 20 000) peu fiables",
+        "losses": "Lourdes pour les Omeyyades ; chiffres inconnus"
+      },
+      "armies": [
+        {
+          "id": "abbassides",
+          "side": "Armée abbasside du Khorassan",
+          "from": "Merv",
+          "faction": "arabes",
+          "path": [
+            [
+              62.19,
+              37.66
+            ],
+            [
+              58.8,
+              36.2
+            ],
+            [
+              51.4,
+              35.6
+            ],
+            [
+              48.5,
+              34.8
+            ],
+            [
+              43.45,
+              36.05
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "id": "armee-marwan",
+          "side": "Armée de Marwan II",
+          "from": "Harran",
+          "faction": "arabes",
+          "path": [
+            [
+              39.03,
+              36.87
+            ],
+            [
+              41.22,
+              37.07
+            ],
+            [
+              43.13,
+              36.34
+            ],
+            [
+              43.45,
+              36.05
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Marwan II",
+          "role": "Dernier calife omeyyade de Damas",
+          "faction": "arabes",
+          "archetype": "calife",
+          "position": [
+            43.3,
+            36.1
+          ]
+        },
+        {
+          "name": "Abu al-Abbas al-Saffah",
+          "role": "Premier calife abbasside",
+          "faction": "arabes",
+          "archetype": "calife",
+          "position": [
+            44.4,
+            32.03
+          ]
+        }
+      ],
+      "territoryNote": "Au moment de la bataille (janvier 750), les Omeyyades ne tiennent plus que la Syrie, la Palestine, la Jazira jusqu'à Mossoul et le Grand Zab, l'Égypte, le Hedjaz et le Yémen ; Ifriqiya (Kairouan, Abd al-Rahman ibn Habib) et al-Andalus (Yusuf al-Fihri) sont quasi autonomes et laissés hors de la carte du pouvoir de Damas. Perdus au profit des Abbassides : Irak (Koufa, Bassora, Wasit), Iran, Khorassan, Transoxiane, Sind. Rivaux : Abbassides d'Abu al-Abbas (Irak, Iran, Orient) avec capitale à Koufa, Berbères indépendants du Maroc, Asturies, Empire byzantin de Constantin V, Khazars, Tang."
+    }
+  ]
+}

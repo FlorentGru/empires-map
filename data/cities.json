@@ -483,7 +483,14 @@
       33.511
     ],
     "founded": -1000,
-    "rank": 2
+    "rank": 2,
+    "capitalOf": [
+      {
+        "empire": "omeyyades",
+        "from": 661,
+        "to": 750
+      }
+    ]
   },
   {
     "id": "tarraco",
@@ -2397,7 +2404,8 @@
       "china",
       "mongols",
       "alexandre",
-      "perse-achemenide"
+      "perse-achemenide",
+      "omeyyades"
     ]
   },
   {
@@ -2823,7 +2831,8 @@
     "founded": -500,
     "rank": 2,
     "empires": [
-      "mongols"
+      "mongols",
+      "omeyyades"
     ]
   },
   {
@@ -5083,7 +5092,8 @@
     "rank": 3,
     "empires": [
       "alexandre",
-      "perse-achemenide"
+      "perse-achemenide",
+      "omeyyades"
     ]
   },
   {
@@ -7486,5 +7496,322 @@
     ],
     "founded": -3000,
     "rank": 2
+  },
+  {
+    "id": "kufa",
+    "modern": "Koufa, Irak",
+    "names": [
+      {
+        "name": "Koufa"
+      }
+    ],
+    "coords": [
+      44.4,
+      32.03
+    ],
+    "founded": 638,
+    "rank": 2,
+    "empires": [
+      "omeyyades"
+    ]
+  },
+  {
+    "id": "wasit",
+    "modern": "Wasit, Irak",
+    "names": [
+      {
+        "name": "Wasit"
+      }
+    ],
+    "coords": [
+      46,
+      32.2
+    ],
+    "founded": 702,
+    "rank": 3,
+    "empires": [
+      "omeyyades"
+    ]
+  },
+  {
+    "id": "kairouan",
+    "modern": "Kairouan, Tunisie",
+    "names": [
+      {
+        "name": "Kairouan"
+      }
+    ],
+    "coords": [
+      10.1,
+      35.68
+    ],
+    "founded": 670,
+    "rank": 2
+  },
+  {
+    "id": "tolede",
+    "modern": "Tolède, Espagne",
+    "names": [
+      {
+        "name": "Toletum",
+        "to": 711
+      },
+      {
+        "name": "Tolède",
+        "from": 712
+      }
+    ],
+    "coords": [
+      -4.03,
+      39.86
+    ],
+    "founded": -192,
+    "rank": 2
+  },
+  {
+    "id": "narbonne",
+    "modern": "Narbonne, France",
+    "names": [
+      {
+        "name": "Narbo Martius",
+        "to": 500
+      },
+      {
+        "name": "Narbonne",
+        "from": 501
+      }
+    ],
+    "coords": [
+      3,
+      43.18
+    ],
+    "founded": -118,
+    "rank": 2,
+    "empires": [
+      "omeyyades",
+      "carolingiens"
+    ]
+  },
+  {
+    "id": "poitiers",
+    "modern": "Poitiers, France",
+    "names": [
+      {
+        "name": "Poitiers"
+      }
+    ],
+    "coords": [
+      0.34,
+      46.58
+    ],
+    "founded": 732,
+    "rank": 3,
+    "empires": [
+      "omeyyades",
+      "carolingiens"
+    ]
+  },
+  {
+    "id": "merv",
+    "modern": "Merv (Mary), Turkménistan",
+    "names": [
+      {
+        "name": "Merv"
+      }
+    ],
+    "coords": [
+      62.19,
+      37.66
+    ],
+    "founded": -500,
+    "rank": 2,
+    "empires": [
+      "omeyyades"
+    ]
+  },
+  {
+    "id": "debal",
+    "modern": "Debal (près de Karachi), Pakistan",
+    "names": [
+      {
+        "name": "Debal"
+      }
+    ],
+    "coords": [
+      67.46,
+      24.75
+    ],
+    "founded": 711,
+    "rank": 3,
+    "empires": [
+      "omeyyades"
+    ]
+  },
+  {
+    "id": "multan",
+    "modern": "Multan, Pakistan",
+    "names": [
+      {
+        "name": "Multan"
+      }
+    ],
+    "coords": [
+      71.47,
+      30.2
+    ],
+    "founded": -500,
+    "rank": 2,
+    "empires": [
+      "omeyyades"
+    ]
+  },
+  {
+    "id": "harran",
+    "modern": "Harran, Turquie",
+    "names": [
+      {
+        "name": "Harran"
+      }
+    ],
+    "coords": [
+      39.03,
+      36.87
+    ],
+    "founded": -2000,
+    "rank": 2,
+    "empires": [
+      "omeyyades"
+    ]
+  },
+  {
+    "id": "tanger",
+    "modern": "Tanger, Maroc",
+    "names": [
+      {
+        "name": "Tingis",
+        "to": 710
+      },
+      {
+        "name": "Tanger",
+        "from": 711
+      }
+    ],
+    "coords": [
+      -5.81,
+      35.77
+    ],
+    "founded": -500,
+    "rank": 2,
+    "empires": [
+      "omeyyades"
+    ]
+  },
+  {
+    "id": "karbala",
+    "modern": "Karbala, Irak",
+    "names": [
+      {
+        "name": "Karbala"
+      }
+    ],
+    "coords": [
+      44.03,
+      32.61
+    ],
+    "founded": 680,
+    "rank": 3,
+    "empires": [
+      "omeyyades"
+    ]
+  },
+  {
+    "id": "marj-rahit",
+    "modern": "Marj Rahit (Ghouta de Damas), Syrie",
+    "names": [
+      {
+        "name": "Marj Rahit"
+      }
+    ],
+    "coords": [
+      36.4,
+      33.52
+    ],
+    "founded": 684,
+    "rank": 3,
+    "empires": [
+      "omeyyades"
+    ]
+  },
+  {
+    "id": "guadalete",
+    "modern": "Guadalete (région de Cadix), Espagne",
+    "names": [
+      {
+        "name": "Guadalete"
+      }
+    ],
+    "coords": [
+      -5.85,
+      36.45
+    ],
+    "founded": 711,
+    "rank": 3,
+    "empires": [
+      "omeyyades"
+    ]
+  },
+  {
+    "id": "covadonga",
+    "modern": "Covadonga, Espagne",
+    "names": [
+      {
+        "name": "Covadonga"
+      }
+    ],
+    "coords": [
+      -5.05,
+      43.31
+    ],
+    "founded": 722,
+    "rank": 3,
+    "empires": [
+      "omeyyades"
+    ]
+  },
+  {
+    "id": "akroinon",
+    "modern": "Afyonkarahisar, Turquie",
+    "names": [
+      {
+        "name": "Akroinon"
+      }
+    ],
+    "coords": [
+      30.54,
+      38.74
+    ],
+    "founded": 740,
+    "rank": 3,
+    "empires": [
+      "omeyyades"
+    ]
+  },
+  {
+    "id": "grand-zab",
+    "modern": "Grand Zab (près de Mossoul), Irak",
+    "names": [
+      {
+        "name": "Grand Zab"
+      }
+    ],
+    "coords": [
+      43.45,
+      36.05
+    ],
+    "founded": 750,
+    "rank": 3,
+    "empires": [
+      "omeyyades"
+    ]
   }
 ]

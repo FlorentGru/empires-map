@@ -1,0 +1,336 @@
+[
+  {
+    "id": "muawiya-ier",
+    "name": "Muawiya Ier",
+    "archetype": "calife",
+    "faction": "arabes",
+    "born": 602,
+    "died": 680,
+    "title": "Fondateur de la dynastie omeyyade",
+    "bio": "Muawiya ibn Abi Sufyan appartient au clan mecquois des Omeyyades, d'abord hostile à Mahomet avant de se rallier à l'islam. Gouverneur de Syrie à partir de 639, il y bâtit un pouvoir solide appuyé sur les tribus arabes de la région et sur l'administration héritée de Byzance. Il refuse de reconnaître le calife Ali, l'affronte à Siffin en 657, puis devient seul calife en 661, après l'assassinat d'Ali et l'abdication de son fils Hasan. Il installe sa capitale à Damas et gouverne par le compromis et la patience, que la tradition résume par l'image du cheveu qu'il ne rompt pas. Il crée une flotte, mène la guerre contre Byzance (siège de Constantinople de 674 à 678 selon la tradition) et envoie Uqba fonder Kairouan. Son choix de désigner son fils Yazid pour lui succéder, en 676 selon la plupart des sources, fait du califat une monarchie héréditaire. Les chroniques les plus détaillées sont abbassides, donc critiques à son égard : les historiens modernes le jugent plus nuancé que les récits hostiles ne le disent.",
+    "keyFacts": [
+      "Vers 639 : gouverneur de Syrie",
+      "657 : bataille de Siffin contre Ali",
+      "661 : devient calife, capitale à Damas",
+      "674-678 : siège arabe de Constantinople",
+      "Vers 676 : désigne son fils Yazid pour lui succéder"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Muawiya Ier",
+        "url": "https://fr.wikipedia.org/wiki/Muawiya_Ier"
+      }
+    ]
+  },
+  {
+    "id": "yazid-ier",
+    "name": "Yazid Ier",
+    "archetype": "calife",
+    "faction": "arabes",
+    "born": 647,
+    "died": 683,
+    "title": "Calife au moment de Karbala",
+    "bio": "Fils de Muawiya, Yazid est le premier calife à avoir été désigné de son vivant par son père, ce qui scandalise beaucoup de croyants. Il règne de 680 à 683. Il a l'expérience militaire : on lui attribue un rôle dans les campagnes contre Byzance. Dès son avènement, Hussein, petit-fils du Prophète, refuse de lui prêter serment et est tué à Karbala en octobre 680 par les troupes du gouverneur d'Irak : les chiites en tiennent Yazid pour responsable, et son image dans la mémoire musulmane est très négative. En 683, les habitants de Médine se révoltent ; son armée bat les révoltés à la Harra, pille la ville, puis assiège La Mecque, où le rival Abd Allah ibn al-Zubayr s'est proclamé calife. Yazid meurt pendant le siège, en novembre 683, et sa mort ouvre la deuxième guerre civile. Les sources sont tardives et hostiles : les poèmes et les récits sur sa vie de plaisirs sont difficiles à vérifier.",
+    "keyFacts": [
+      "680 : succède à son père Muawiya",
+      "Octobre 680 : mort de Hussein à Karbala",
+      "683 : bataille de la Harra à Médine",
+      "Novembre 683 : meurt pendant le siège de La Mecque"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Yazid Ier",
+        "url": "https://fr.wikipedia.org/wiki/Yazid_Ier"
+      }
+    ]
+  },
+  {
+    "id": "hussein-ibn-ali",
+    "name": "Hussein ibn Ali",
+    "archetype": "prelat",
+    "faction": "arabes",
+    "born": 626,
+    "died": 680,
+    "title": "Petit-fils du Prophète, martyr de Karbala",
+    "bio": "Hussein est le fils d'Ali et de Fatima, la fille de Mahomet : il est donc le petit-fils du Prophète, que celui-ci aurait beaucoup aimé selon la tradition. Après l'abdication de son frère Hasan en 661, il vit à Médine sans s'opposer ouvertement à Muawiya. À la mort de celui-ci, il refuse de reconnaître Yazid comme calife. Appelé par les habitants de Koufa, il quitte La Mecque en 680 avec sa famille et quelques dizaines de compagnons. Arrêté à Karbala, au bord de l'Euphrate, par l'armée du gouverneur d'Irak, il est tué le 10 muharram 61 (10 octobre 680) avec la plupart des siens. Pour les chiites, qui voient en lui le troisième imam, ce martyre est le grand drame fondateur, commémoré chaque année à Achoura. Pour les sunnites, c'est une tragédie et un crime politique. Les récits les plus détaillés ont été mis par écrit longtemps après, sous les Abbassides, et mêlent histoire et mémoire religieuse.",
+    "keyFacts": [
+      "626 : naissance, selon la tradition",
+      "680 : refuse de prêter serment à Yazid",
+      "10 octobre 680 : mort à Karbala",
+      "Achoura : commémoration annuelle chiite"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Hussein ibn Ali",
+        "url": "https://fr.wikipedia.org/wiki/Hussein_ibn_Ali"
+      }
+    ]
+  },
+  {
+    "id": "abd-allah-ibn-al-zubayr",
+    "name": "Abd Allah ibn al-Zubayr",
+    "archetype": "calife",
+    "faction": "arabes",
+    "born": 624,
+    "died": 692,
+    "title": "Calife rival à La Mecque",
+    "bio": "Fils d'un compagnon du Prophète et neveu d'Aïcha, Abd Allah ibn al-Zubayr est le premier enfant né à Médine après l'émigration de Mahomet, en 624 selon la tradition. Il refuse de reconnaître Yazid et se réfugie à La Mecque, où il s'oppose au pouvoir omeyyade. À la mort de Yazid, en 683, il se proclame calife et est reconnu en Hedjaz, en Irak, en Égypte, en Iran et dans une partie de la Syrie. Les Omeyyades, avec Marwan puis Abd al-Malik, reprennent peu à peu la main. En 691, son frère Mus'ab est tué en Irak ; en 692, le général al-Hajjaj assiège La Mecque pendant plusieurs mois, bombarde la Kaaba avec des catapultes et prend la ville. Ibn al-Zubayr est tué dans les combats, et son corps exposé. On lui attribue la reconstruction de la Kaaba après un incendie, modifiée ensuite par al-Hajjaj. Son califat de dix ans est l'un des épisodes les plus mal connus de l'époque, car nos sources sont écrites par ses vainqueurs.",
+    "keyFacts": [
+      "680 : refuse de prêter serment à Yazid",
+      "683 : se proclame calife à La Mecque",
+      "691 : mort de son frère Mus'ab en Irak",
+      "692 : tué lors du siège de La Mecque par al-Hajjaj"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Abd Allah ibn al-Zubayr",
+        "url": "https://fr.wikipedia.org/wiki/Abd_Allah_ibn_al-Zubayr"
+      }
+    ]
+  },
+  {
+    "id": "abd-al-malik",
+    "name": "Abd al-Malik",
+    "archetype": "calife",
+    "faction": "arabes",
+    "born": 646,
+    "died": 705,
+    "title": "Le calife qui réunifie et arabise",
+    "bio": "Fils de Marwan Ier, Abd al-Malik devient calife en 685, dans un empire déchiré par la deuxième guerre civile. Pendant six ans, il combat ses rivaux : en 691, son armée reprend l'Irak, puis son général al-Hajjaj tue Ibn al-Zubayr à La Mecque en 692. Le califat est réuni. Il engage alors une série de réformes qui font de lui un second fondateur du pouvoir omeyyade : il fait construire le Dôme du Rocher à Jérusalem vers 691-692, frappe à partir de 696-697 un dinar d'or purement islamique, sans image, et impose peu à peu l'arabe comme langue de l'administration. Il réorganise la poste et l'armée, et confie l'Irak puis l'Orient à al-Hajjaj. Il envoie Hassan ibn al-Nu'man reprendre l'Ifriqiya. Il meurt à Damas en 705, laissant le califat à son fils al-Walid. Les historiens modernes insistent sur l'ampleur de son œuvre d'État, mais la chronologie exacte de ses réformes reste discutée.",
+    "keyFacts": [
+      "685 : devient calife",
+      "691-692 : reprend l'Irak et le Hedjaz, construit le Dôme du Rocher",
+      "696-697 : frappe le dinar d'or épigraphique",
+      "Vers 700 : l'arabe devient langue de l'administration",
+      "705 : meurt à Damas"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Abd al-Malik ibn Marwan",
+        "url": "https://fr.wikipedia.org/wiki/Abd_al-Malik_ibn_Marwan"
+      }
+    ]
+  },
+  {
+    "id": "al-hajjaj-ibn-yusuf",
+    "name": "Al-Hajjaj ibn Yusuf",
+    "archetype": "general",
+    "faction": "arabes",
+    "born": 661,
+    "died": 714,
+    "title": "Gouverneur de fer d'Irak et de l'Orient",
+    "bio": "Issu de la tribu des Thaqif, à Taïf, al-Hajjaj commence comme maître d'école avant de devenir chef de la police puis général d'Abd al-Malik. En 692, il met fin au califat rival d'Ibn al-Zubayr en prenant La Mecque. Nommé gouverneur d'Irak vers 694-695, il y rétablit l'ordre avec brutalité : kharijites et rebelles sont écrasés, l'armée est disciplinée et payée. Il fonde en 702 la ville-garnison de Wasit, entre Koufa et Bassora. Il pousse ses lieutenants vers l'Orient : Qutayba ibn Muslim vers la Transoxiane, Muhammad ibn al-Qasim vers le Sind. Il mène aussi une œuvre de réforme administrative (arabisation de l'administration en Irak, recensement et impôts) et soutient la mise au point de la ponctuation du texte du Coran. Les récits arabes le dépeignent en tyran sanguinaire, mais ces témoignages viennent de milieux hostiles. Il meurt en 714, et la mort de son protecteur al-Walid Ier l'année suivante laisse ses protégés sans appui.",
+    "keyFacts": [
+      "692 : prend La Mecque, tue Ibn al-Zubayr",
+      "Vers 694 : gouverneur d'Irak",
+      "702 : fonde Wasit",
+      "705-714 : lance Qutayba et Muhammad ibn al-Qasim vers l'Orient"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Al-Hajjaj ibn Yusuf",
+        "url": "https://fr.wikipedia.org/wiki/Al-Hajjaj_ibn_Yusuf"
+      }
+    ]
+  },
+  {
+    "id": "tariq-ibn-ziyad",
+    "name": "Tariq ibn Ziyad",
+    "archetype": "general",
+    "faction": "numides",
+    "born": 670,
+    "died": 720,
+    "title": "Chef de la conquête de l'Espagne",
+    "bio": "Les origines de Tariq sont obscures : la tradition majoritaire en fait un Berbère affranchi, client de Musa ibn Nusayr, gouverneur du Maghreb ; certains historiens le disent d'origine perse ou arabe. Il est gouverneur de Tanger quand Musa l'envoie, au printemps 711, traverser le détroit avec environ 7 000 hommes, surtout des Berbères. Il débarque au pied du rocher qui prendra son nom (Jabal Tariq, d'où Gibraltar), bat le roi wisigoth Rodrigue en juillet 711 près du Guadalete, puis marche sur Écija, Cordoue et Tolède. Musa le rejoint en 712 et, selon certains récits, lui reproche de s'être avancé sans ordre. Rappelés tous deux à Damas par le calife al-Walid vers 714, ils y sont, d'après les chroniques, en conflit. On ignore la fin exacte de Tariq : il serait mort à Damas, dans l'oubli, vers 720. Le fameux discours (« la mer derrière vous, l'ennemi devant ») est très probablement une reconstruction littéraire tardive.",
+    "keyFacts": [
+      "Vers 705 : gouverneur de Tanger",
+      "Avril 711 : traverse le détroit de Gibraltar",
+      "Juillet 711 : victoire du Guadalete sur Rodrigue",
+      "712 : prise de Tolède",
+      "Vers 714 : rappelé à Damas"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Tariq ibn Ziyad",
+        "url": "https://fr.wikipedia.org/wiki/Tariq_ibn_Ziyad"
+      }
+    ]
+  },
+  {
+    "id": "musa-ibn-nusayr",
+    "name": "Musa ibn Nusayr",
+    "archetype": "general",
+    "faction": "arabes",
+    "born": 640,
+    "died": 716,
+    "title": "Gouverneur du Maghreb et conquérant de la péninsule",
+    "bio": "Musa ibn Nusayr, d'origine peut-être syrienne ou irakienne, est nommé gouverneur d'Ifriqiya à la fin du règne d'Abd al-Malik (entre 698 et 705 selon les sources). Il soumet les Berbères du Maghreb, les enrôle dans l'armée en grand nombre et pousse jusqu'à Tanger et au Souss. Il charge son affranchi Tariq ibn Ziyad de traverser le détroit en 711. Après la victoire du Guadalete, il débarque en 712 avec une seconde armée d'environ 18 000 hommes, prend Séville et Mérida, puis remonte la vallée de l'Èbre jusqu'à Saragosse (714). Les chroniques lui prêtent des projets encore plus ambitieux, comme traverser l'Europe jusqu'à Constantinople, mais c'est probablement une légende. Rappelé à Damas par le calife al-Walid, il y est disgracié sous son successeur Sulayman, accusé d'avoir gardé trop de butin, et meurt vers 716. Les récits sont peu fiables et la part du mythe est importante, notamment sur le trésor rapporté d'Espagne.",
+    "keyFacts": [
+      "698-705 : devient gouverneur d'Ifriqiya",
+      "708-709 : soumet le Maghreb jusqu'à Tanger",
+      "712 : débarque en Espagne, prend Séville et Mérida",
+      "714 : rappelé à Damas"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Musa ibn Nusayr",
+        "url": "https://fr.wikipedia.org/wiki/Musa_ibn_Nusayr"
+      }
+    ]
+  },
+  {
+    "id": "qutayba-ibn-muslim",
+    "name": "Qutayba ibn Muslim",
+    "archetype": "general",
+    "faction": "arabes",
+    "born": 669,
+    "died": 715,
+    "title": "Conquérant de la Transoxiane",
+    "bio": "Qutayba ibn Muslim al-Bahili, arabe de la tribu des Bahila, grandit dans l'armée d'Irak, protégé d'al-Hajjaj. Nommé gouverneur du Khorassan en 705, il conduit chaque été des campagnes vers le nord-est, au-delà de l'Amou-Daria : Tokharistan (705), Baykand (706), Boukhara (709), Khwarezm et Samarcande (712). Il combine la force, des alliances avec des princes locaux, l'envoi de colons arabes et la construction de mosquées. Il lance ensuite des raids dans le Ferghana et le Chach (Tachkent) ; une tradition, discutée, lui prête une expédition jusqu'aux marches chinoises de Kachgar. À la mort du calife al-Walid, en 715, son protecteur al-Hajjaj étant déjà mort, il se sent menacé par le nouveau calife Sulayman et se révolte ; ses propres soldats, divisés, le tuent dans le Ferghana. Son œuvre est durable : la Transoxiane devient un pays musulman, mais la conquête reste fragile face aux révoltes sogdiennes et aux Türgesh.",
+    "keyFacts": [
+      "705 : gouverneur du Khorassan",
+      "709 : prise de Boukhara",
+      "712 : prise de Samarcande et du Khwarezm",
+      "715 : tué par ses propres troupes dans le Ferghana"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Qutayba ibn Muslim",
+        "url": "https://fr.wikipedia.org/wiki/Qutayba_ibn_Muslim"
+      }
+    ]
+  },
+  {
+    "id": "muhammad-ibn-al-qasim",
+    "name": "Muhammad ibn al-Qasim",
+    "archetype": "general",
+    "faction": "arabes",
+    "born": 695,
+    "died": 715,
+    "title": "Jeune conquérant du Sind",
+    "bio": "Muhammad ibn al-Qasim al-Thaqafi, cousin d'al-Hajjaj, naît à Taïf vers 695 selon la tradition. Il n'a qu'une vingtaine d'années quand al-Hajjaj lui confie en 711 l'armée envoyée au Sind (le bas Indus, au Pakistan actuel) : environ 6 000 cavaliers syriens, auxquels s'ajoutent d'autres troupes et un matériel de siège acheminé par mer. Il prend le port de Debal, puis remonte la vallée de l'Indus, bat le roi Dahir à Rawar en 712 et prend Aror, Brahmanabad et Multan. Il se montre, d'après le Chachnama, un administrateur habile, qui laisse aux hindous et aux bouddhistes leurs temples contre un impôt. Ces récits viennent d'un texte persan tardif et favorable aux conquérants. Après la mort d'al-Hajjaj (714) puis celle d'al-Walid (715), il est rappelé par le nouveau calife Sulayman, qui hait la famille d'al-Hajjaj, et meurt en prison à Wasit vers 715. Les détails de sa vie sont en partie légendaires.",
+    "keyFacts": [
+      "Vers 695 : naissance à Taïf",
+      "711 : prise de Debal",
+      "712 : victoire de Rawar, mort du roi Dahir",
+      "713 : prise de Multan",
+      "Vers 715 : rappelé et mort en prison"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Muhammad ibn al-Qasim",
+        "url": "https://fr.wikipedia.org/wiki/Muhammad_ibn_al-Qasim"
+      }
+    ]
+  },
+  {
+    "id": "omar-ii",
+    "name": "Omar II",
+    "archetype": "calife",
+    "faction": "arabes",
+    "born": 682,
+    "died": 720,
+    "title": "Le calife pieux et réformateur",
+    "bio": "Omar ibn Abd al-Aziz, neveu d'Abd al-Malik, a été gouverneur de Médine (706-712), où il aurait fait reconstruire la mosquée du Prophète et introduit le mihrab. Devenu calife en 717, à la fin du siège de Constantinople, il ordonne la retraite des armées en 718. Réputé pour sa piété et sa simplicité, il tente d'alléger la fiscalité des convertis non arabes : on lui prête l'idée que l'impôt ne doit plus peser sur ceux qui ont embrassé l'islam, ce qui visait à calmer les mécontentements. Il limite aussi les exactions des gouverneurs et envoie des missions vers l'Asie centrale. La tradition lui attribue un « pacte d'Omar » sur les non-musulmans, mais ce texte est bien plus tardif. Il meurt en 720 après seulement deux ans et demi de règne, peut-être empoisonné, selon des rumeurs invérifiables. Il est resté dans la mémoire musulmane comme le plus juste des Omeyyades. Mais ses réformes n'ont guère eu le temps de s'enraciner.",
+    "keyFacts": [
+      "706-712 : gouverneur de Médine",
+      "717 : devient calife",
+      "718 : ordonne la retraite de Constantinople",
+      "Réformes fiscales en faveur des convertis",
+      "720 : meurt à Deir Siman"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Omar ibn Abd al-Aziz",
+        "url": "https://fr.wikipedia.org/wiki/Omar_ibn_Abd_al-Aziz"
+      }
+    ]
+  },
+  {
+    "id": "hisham",
+    "name": "Hisham",
+    "archetype": "calife",
+    "faction": "arabes",
+    "born": 691,
+    "died": 743,
+    "title": "Calife de l'extension maximale",
+    "bio": "Hisham ibn Abd al-Malik règne de 724 à 743, l'un des plus longs règnes omeyyades. Il passe pour économe, voire avare, et tout autant soucieux de l'ordre de l'empire. Il réside souvent à Rusafa, dans le désert syrien, et fait bâtir de nombreux châteaux. Sous son règne, l'empire atteint son extension maximale, de l'Indus aux Pyrénées. Il mène aussi la guerre sur trois fronts : contre Byzance (raids annuels, défaite d'Akroinon en 740), contre les Khazars au Caucase et contre les Türgesh en Asie centrale, où ses généraux subissent de lourds revers avant de reprendre l'avantage vers 737-738. L'Occident connaît des échecs, notamment à Poitiers (732). En 740, la révolte berbère détache le Maroc. Hisham rétablit ensuite l'ordre en Orient, mais il laisse à sa mort, en 743, un califat affaibli par les rivalités tribales (Qays contre Yéménites) et aux finances tendues. En 743-744, quatre califes se succèdent en quelques mois, ce qui ouvre la voie aux Abbassides.",
+    "keyFacts": [
+      "724 : devient calife",
+      "732 : défaite de Poitiers de son gouverneur d'al-Andalus",
+      "740 : Akroinon et début de la révolte berbère",
+      "743 : meurt à Rusafa"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Hicham ibn Abd al-Malik",
+        "url": "https://fr.wikipedia.org/wiki/Hicham_ibn_Abd_al-Malik"
+      }
+    ]
+  },
+  {
+    "id": "abu-muslim",
+    "name": "Abu Muslim",
+    "archetype": "general",
+    "faction": "parthes-perses",
+    "born": 718,
+    "died": 755,
+    "title": "Chef de la révolution abbasside",
+    "bio": "Abu Muslim al-Khurasani est l'agent des Abbassides au Khorassan. Son origine est obscure : des sources le disent esclave affranchi d'ascendance iranienne, d'autres issu d'une famille arabe ou perse ; la date de sa naissance (vers 718 ou 700) est incertaine. Envoyé à Merv vers 747 par l'imam abbasside, il organise la révolte au nom de la famille du Prophète : en juin 747, il lève les bannières noires, chasse le gouverneur Nasr ibn Sayyar et prend Merv. Ses généraux (Qahtaba, puis Abd Allah ibn Ali) conduisent les armées vers l'Irak et battent Marwan II au Grand Zab, en janvier 750. Les Abbassides l'élèvent comme gouverneur du Khorassan, puis son prestige inquiète le calife al-Mansur : il est attiré à la cour et assassiné en 755. Son souvenir inspire des révoltes populaires en Iran, qui le tiennent pour un justicier ou un messie. Les récits sont influencés par la légende, et les historiens les lisent avec prudence.",
+    "keyFacts": [
+      "Vers 747 : arrive à Merv",
+      "Juin 747 : lève les bannières noires",
+      "Janvier 750 : victoire abbasside au Grand Zab",
+      "755 : assassiné sur ordre du calife al-Mansur"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Abu Muslim",
+        "url": "https://fr.wikipedia.org/wiki/Abu_Muslim"
+      }
+    ]
+  },
+  {
+    "id": "abd-al-rahman-ier",
+    "name": "Abd al-Rahman Ier",
+    "archetype": "calife",
+    "faction": "arabes",
+    "born": 731,
+    "died": 788,
+    "title": "Le prince omeyyade qui fuit en Espagne",
+    "bio": "Abd al-Rahman, petit-fils du calife Hisham par son père, naît en 731 à Damas ou à Palmyre. Il a dix-neuf ans quand les Abbassides renversent les Omeyyades en 750. Il échappe au massacre de la famille, fuit vers l'Égypte, puis la Cyrénaïque et l'Ifriqiya, protégé par les Berbères Nafza, dont sa mère était issue selon la tradition. Pendant cinq ans, il erre au Maghreb, poursuivi par les gouverneurs abbassides. En 755, il passe en Espagne, où la population est divisée : il y gagne des alliés parmi les clients omeyyades installés depuis des générations. En 756, il bat le gouverneur Yusuf al-Fihri près de Cordoue et se proclame émir. Il règne trente-deux ans, impose son pouvoir sur al-Andalus, repousse une invasion abbasside et fait entamer la Grande Mosquée de Cordoue. Il est surnommé « le Faucon de Quraych » dans la tradition arabe. Les Omeyyades d'Espagne règneront ainsi, sans interruption, jusqu'en 1031.",
+    "keyFacts": [
+      "731 : naissance, en Syrie",
+      "750 : échappe au massacre des Omeyyades",
+      "755 : passe en Espagne",
+      "756 : se proclame émir de Cordoue",
+      "788 : meurt à Cordoue"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Abd al-Rahman Ier",
+        "url": "https://fr.wikipedia.org/wiki/Abd_al-Rahman_Ier"
+      }
+    ]
+  },
+  {
+    "id": "la-kahina",
+    "name": "La Kahina",
+    "archetype": "chef-barbare",
+    "faction": "numides",
+    "died": 703,
+    "title": "Reine berbère de l'Aurès, selon la tradition",
+    "bio": "La Kahina (de l'arabe *kahina*, « devineresse ») est connue sous plusieurs noms, dont Dihya. Les récits de son histoire viennent presque tous de chroniqueurs arabes postérieurs de plusieurs siècles, comme Ibn Khaldun, et sont mêlés de légendes : elle appartiendrait aux Djerawa, un peuple berbère de l'Aurès, dans l'est de l'Algérie, et serait de religion juive, chrétienne ou polythéiste selon les versions. Après la chute de Carthage, Hassan ibn al-Nu'man marche contre elle. Elle bat son armée vers 698-702, selon les sources, et domine un temps l'Ifriqiya. Hassan revient avec des renforts et la défait vers 702-703 près d'un puits, au lieu dit Bir al-Kahina ; elle est tuée. La tradition rapporte qu'elle aurait ordonné de ravager le pays pour décourager les envahisseurs, ce qui aurait provoqué la défection des siens. Elle est aujourd'hui célébrée par certains Berbères comme figure de la résistance, ce qui montre l'importance de sa mémoire plus que la précision de son histoire.",
+    "keyFacts": [
+      "Vers 698-702 : bat Hassan ibn al-Nu'man, selon les chroniques",
+      "Vers 702-703 : vaincue et tuée par les Arabes",
+      "Figure de la résistance berbère, souvent légendaire"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Kahina",
+        "url": "https://fr.wikipedia.org/wiki/Kahina"
+      }
+    ]
+  }
+]
