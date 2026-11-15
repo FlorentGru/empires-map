@@ -1414,7 +1414,7 @@ export const OTTOMAN_SOLDIER_SPECS = {
       rect(10.2, 23.8, 11.6, 1.8, GOLD, 0, 'stroke="none"'),
     head: path('M11.5 8.2Q11.3 4.4 16 4Q20.7 4.4 20.5 8.2Q16 6.4 11.5 8.2Z', '#f4efe2') + plume(GOLD) + moustache('#2d2018'),
     shield: roundShield('#a0602a', '#5a3a1a', GOLD),
-    weapon: musket(),
+    weapon: arquebus(),
   },
   rajputs: {
     skin: '#b77a45',

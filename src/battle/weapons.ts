@@ -23,9 +23,10 @@ const FUSIL = new Set<Faction>([
   'suedois',
   'ottomans-modernes',
   'grecs-modernes',
+  'afghans',
 ]);
 /** Peuples dont le soldat porte une arquebuse à mèche (`arquebus()`). */
-const ARQUEBUSE = new Set<Faction>(['tercios', 'neerlandais', 'janissaires', 'marocains']);
+const ARQUEBUSE = new Set<Faction>(['tercios', 'neerlandais', 'janissaires', 'marocains', 'moghols']);
 
 export function firearmOf(faction: Faction | undefined): Firearm | null {
   if (!faction) return null;
