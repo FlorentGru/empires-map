@@ -1,0 +1,272 @@
+[
+  {
+    "id": "papier-bagdad",
+    "name": "Les moulins à papier de Bagdad",
+    "year": 794,
+    "approx": true,
+    "place": "Bagdad",
+    "at": [
+      44.37,
+      33.31
+    ],
+    "category": "technique",
+    "description": "Le papier vient de Chine, où il est inventé vers le IIe siècle. Il parvient en Asie centrale, et à Samarcande, avant l'époque abbasside ; la légende des prisonniers chinois de Talas (751) est douteuse. Vers 794-795, sous Haroun al-Rachid, Bagdad ouvre sa première fabrique de papier. Il s'agit donc d'une diffusion, non d'une invention, mais elle prend ici une ampleur industrielle, avec des chiffons de lin et de chanvre.",
+    "impact": "Un support bon marché remplace le parchemin et le papyrus : livres, registres et chancelleries se multiplient, ce qui nourrit la science, l'administration et les librairies.",
+    "sources": [
+      {
+        "label": "Wikipédia — Papier",
+        "url": "https://fr.wikipedia.org/wiki/Papier"
+      },
+      {
+        "label": "Wikipédia — Bataille de Talas",
+        "url": "https://fr.wikipedia.org/wiki/Bataille_de_Talas"
+      }
+    ]
+  },
+  {
+    "id": "algebre",
+    "name": "L'algèbre d'al-Khwarizmi",
+    "year": 820,
+    "approx": true,
+    "place": "Bagdad",
+    "at": [
+      44.37,
+      33.31
+    ],
+    "inventor": "Al-Khwarizmi",
+    "category": "science",
+    "description": "Vers 820, le mathématicien al-Khwarizmi rédige à Bagdad un traité qui résout les équations du premier et du second degré par des règles générales et des démonstrations géométriques. Le mot « algèbre » vient de son titre (*al-jabr*, « la restauration »). Il s'appuie sur des acquis babyloniens, grecs et indiens, mais en fait une discipline autonome, avec son vocabulaire et ses méthodes, ce qui est une véritable nouveauté.",
+    "impact": "L'algèbre devient une science à part entière : elle sera développée en arabe puis en latin et fonde une grande partie des mathématiques modernes.",
+    "sources": [
+      {
+        "label": "Wikipédia — Al-Khwârizmî",
+        "url": "https://fr.wikipedia.org/wiki/Al-Khwârizmî"
+      },
+      {
+        "label": "Wikipédia — Algèbre",
+        "url": "https://fr.wikipedia.org/wiki/Algèbre"
+      }
+    ]
+  },
+  {
+    "id": "chiffres-indiens",
+    "name": "Les chiffres « arabes » et le zéro",
+    "year": 825,
+    "approx": true,
+    "place": "Bagdad",
+    "at": [
+      44.37,
+      33.31
+    ],
+    "inventor": "Al-Khwarizmi",
+    "category": "science",
+    "description": "Les chiffres de position en base dix, avec le zéro, sont inventés en Inde. Un traité d'al-Khwarizmi (vers 825), connu par des traductions latines, les décrit aux lecteurs arabes, d'où l'expression de chiffres « arabes ». C'est une diffusion d'un savoir indien, adapté par des savants de Bagdad, et non une invention abbasside. Les formes des chiffres, très variées, évoluent ensuite au Maghreb, puis en Europe.",
+    "impact": "Calculer devient bien plus simple qu'avec les chiffres romains : le commerce, la comptabilité et les sciences s'en emparent, d'abord en pays d'islam puis en Europe.",
+    "sources": [
+      {
+        "label": "Wikipédia — Chiffres arabes",
+        "url": "https://fr.wikipedia.org/wiki/Chiffres_arabes"
+      },
+      {
+        "label": "Wikipédia — Al-Khwârizmî",
+        "url": "https://fr.wikipedia.org/wiki/Al-Khwârizmî"
+      }
+    ]
+  },
+  {
+    "id": "maison-sagesse",
+    "name": "La Maison de la sagesse et les traductions",
+    "year": 830,
+    "approx": true,
+    "place": "Bagdad",
+    "at": [
+      44.37,
+      33.31
+    ],
+    "inventor": "Al-Ma'mun",
+    "category": "science",
+    "description": "Sous al-Ma'mun, une bibliothèque de cour, la Maison de la sagesse, accueille des savants. Le mouvement de traduction du grec, du syriaque, du persan et du sanskrit en arabe est plus large : il commence sous al-Mansur et réunit des chrétiens, des juifs, des musulmans et des zoroastriens. L'ampleur est inédite : l'essentiel d'Aristote, de Galien, d'Euclide et de Ptolémée devient accessible en arabe.",
+    "impact": "Une grande partie du savoir antique est sauvegardée, étudiée et prolongée en arabe, avant de revenir en Europe par l'Espagne et la Sicile.",
+    "sources": [
+      {
+        "label": "Wikipédia — Maison de la sagesse",
+        "url": "https://fr.wikipedia.org/wiki/Maison_de_la_sagesse"
+      },
+      {
+        "label": "Wikipédia — Mouvement de traduction arabe",
+        "url": "https://fr.wikipedia.org/wiki/Mouvement_de_traduction_arabe"
+      }
+    ]
+  },
+  {
+    "id": "observatoire-astrolabe",
+    "name": "Observatoires d'État et astrolabes perfectionnés",
+    "year": 828,
+    "approx": true,
+    "place": "Bagdad",
+    "at": [
+      44.38,
+      33.35
+    ],
+    "category": "science",
+    "description": "L'astrolabe, instrument de mesure des astres inventé par les Grecs, est perfectionné par les savants de Bagdad, qui en font un outil précis pour l'heure, la latitude et la direction de La Mecque. En 828-829, al-Ma'mun fait installer à Bagdad, au quartier de Shammasiyya, un observatoire, suivi d'un autre à Damas. Ils mesurent entre autres la longueur d'un degré de méridien et corrigent les tables de Ptolémée.",
+    "impact": "L'astronomie devient une science d'observation organisée : ses tables et ses instruments servent à la navigation, au calendrier et à la prière.",
+    "sources": [
+      {
+        "label": "Wikipédia — Astrolabe",
+        "url": "https://fr.wikipedia.org/wiki/Astrolabe"
+      },
+      {
+        "label": "Wikipédia — Observatoire astronomique",
+        "url": "https://fr.wikipedia.org/wiki/Observatoire_astronomique"
+      }
+    ]
+  },
+  {
+    "id": "bimaristan-bagdad",
+    "name": "Le bimaristan de Bagdad",
+    "year": 805,
+    "approx": true,
+    "place": "Bagdad",
+    "at": [
+      44.37,
+      33.31
+    ],
+    "inventor": "Barmakides",
+    "category": "medecine",
+    "description": "Vers 805, sous Haroun al-Rachid, un hôpital est fondé à Bagdad, souvent attribué aux Barmakides, d'après des sources tardives. Il s'inspire de l'école médicale de Gundishapur, en Perse. Ces hôpitaux (bimaristan) soignent les malades de toutes religions, emploient des médecins salariés et enseignent. Celui du calife al-Muqtadir (vers 915) et celui du Bouyide Adud al-Dawla (981) sont les plus célèbres.",
+    "impact": "L'hôpital devient une institution publique et savante, où l'on soigne, enseigne et examine les médecins, modèle repris du Caire à Damas.",
+    "sources": [
+      {
+        "label": "Wikipédia — Bimaristan",
+        "url": "https://fr.wikipedia.org/wiki/Bimaristan"
+      },
+      {
+        "label": "Wikipédia — Bagdad",
+        "url": "https://fr.wikipedia.org/wiki/Bagdad"
+      }
+    ]
+  },
+  {
+    "id": "suftaja",
+    "name": "La lettre de change (suftaja) et le chèque (sakk)",
+    "year": 900,
+    "approx": true,
+    "place": "Bagdad",
+    "at": [
+      44.37,
+      33.31
+    ],
+    "category": "monnaie",
+    "description": "Pour éviter de transporter de l'argent sur les routes dangereuses, les marchands et banquiers de Bagdad utilisent des ordres de paiement écrits : la suftaja, sorte de lettre de change, et le sakk, ancêtre du chèque (le mot « chèque » viendrait de là). Leur usage est attesté dès le Xe siècle, mais la date précise et l'origine exacte restent discutées, des pratiques proches existant déjà chez les Perses et les Byzantins.",
+    "impact": "Le crédit et le paiement à distance facilitent un commerce qui va de l'Espagne à la Chine, sans déplacement d'espèces.",
+    "sources": [
+      {
+        "label": "Wikipédia — Lettre de change",
+        "url": "https://fr.wikipedia.org/wiki/Lettre_de_change"
+      },
+      {
+        "label": "Wikipédia — Chèque",
+        "url": "https://fr.wikipedia.org/wiki/Chèque"
+      }
+    ]
+  },
+  {
+    "id": "madrasa-nizamiyya",
+    "name": "La madrasa Nizamiyya",
+    "year": 1067,
+    "place": "Bagdad",
+    "at": [
+      44.37,
+      33.31
+    ],
+    "inventor": "Nizam al-Mulk",
+    "category": "administration",
+    "description": "Le vizir seldjoukide Nizam al-Mulk fonde en 1067 à Bagdad une école de droit et de théologie sunnites, financée par une fondation pieuse (waqf) et dotée de bourses. Des établissements du même genre existaient déjà au Khorassan : Nizam al-Mulk les généralise en un réseau d'État, qui forme juges, administrateurs et savants. Al-Ghazali y enseigne de 1091 à 1095.",
+    "impact": "L'enseignement supérieur devient une institution durable et publique, modèle des madrasas du monde musulman, de l'Iran à l'Égypte.",
+    "sources": [
+      {
+        "label": "Wikipédia — Madrasa",
+        "url": "https://fr.wikipedia.org/wiki/Madrasa"
+      },
+      {
+        "label": "Wikipédia — Nizâm al-Mulk",
+        "url": "https://fr.wikipedia.org/wiki/Nizam_al-Mulk"
+      }
+    ]
+  },
+  {
+    "id": "bagdad-ronde",
+    "name": "Le plan circulaire de Bagdad",
+    "year": 762,
+    "place": "Bagdad",
+    "at": [
+      44.37,
+      33.31
+    ],
+    "inventor": "Al-Mansur",
+    "category": "architecture",
+    "description": "En 762, al-Mansur fait tracer Bagdad selon un plan circulaire d'environ 2,3 km de diamètre, avec quatre portes, deux murailles, des fossés et au centre le palais du calife et la mosquée. L'idée de cités rondes existait déjà en Iran et en Mésopotamie (Firuzabad, Hatra), d'où une forme héritée. Mais l'échelle et l'organisation d'une capitale impériale planifiée sont neuves. On ne connaît le plan que par des textes tardifs.",
+    "impact": "Une capitale pensée comme centre d'un empire : elle attire marchands, artisans et savants, et devient la ville la plus peuplée du monde hors de Chine.",
+    "sources": [
+      {
+        "label": "Wikipédia — Bagdad",
+        "url": "https://fr.wikipedia.org/wiki/Bagdad"
+      },
+      {
+        "label": "Wikipédia — Ville ronde de Bagdad",
+        "url": "https://fr.wikipedia.org/wiki/Ville_ronde_de_Bagdad"
+      }
+    ]
+  },
+  {
+    "id": "distillation-chimie",
+    "name": "Chimie et distillation (corpus de Jabir)",
+    "year": 850,
+    "approx": true,
+    "place": "Koufa",
+    "at": [
+      44.4,
+      32.03
+    ],
+    "inventor": "Jabir ibn Hayyan (attribution discutée)",
+    "category": "technique",
+    "description": "Un vaste corpus attribué à Jabir ibn Hayyan, alchimiste lié à Koufa, décrit des opérations de laboratoire : distillation à l'alambic, cristallisation, filtration. Les historiens doutent que Jabir en soit l'auteur unique : ces textes ont sans doute été écrits aux IXe-Xe siècles par plusieurs mains. L'alambic dérive d'appareils grecs, mais les chimistes arabes en font un outil de précision, utilisé pour les parfums, les médicaments et les acides.",
+    "impact": "La chimie expérimentale se structure : alambic, acides et méthodes de laboratoire passeront en Europe par les traductions latines.",
+    "sources": [
+      {
+        "label": "Wikipédia — Jâbir ibn Hayyân",
+        "url": "https://fr.wikipedia.org/wiki/Jâbir_ibn_Hayyân"
+      },
+      {
+        "label": "Wikipédia — Alambic",
+        "url": "https://fr.wikipedia.org/wiki/Alambic"
+      }
+    ]
+  },
+  {
+    "id": "cryptanalyse",
+    "name": "Le premier traité de cryptanalyse (al-Kindi)",
+    "year": 850,
+    "approx": true,
+    "place": "Bagdad",
+    "at": [
+      44.37,
+      33.31
+    ],
+    "inventor": "Al-Kindi",
+    "category": "ecriture",
+    "description": "Vers 850, le philosophe al-Kindi rédige à Bagdad un traité sur le déchiffrement des messages secrets. Il y explique l'analyse des fréquences : dans un texte arabe, certaines lettres reviennent plus souvent que d'autres, ce qui permet de casser un chiffre simple par substitution. C'est le plus ancien texte connu sur la cryptanalyse, une invention née de l'étude de la langue arabe, des mathématiques et des besoins des chancelleries.",
+    "impact": "Le principe de l'analyse de fréquences reste, pendant près d'un millénaire, la base de la cryptanalyse des chiffres par substitution.",
+    "sources": [
+      {
+        "label": "Wikipédia — Al-Kindi",
+        "url": "https://fr.wikipedia.org/wiki/Al-Kindi"
+      },
+      {
+        "label": "Wikipédia — Analyse fréquentielle",
+        "url": "https://fr.wikipedia.org/wiki/Analyse_fréquentielle"
+      }
+    ]
+  }
+]

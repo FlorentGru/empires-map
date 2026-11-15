@@ -38,6 +38,8 @@ const EMPIRE_SPRITES: Record<string, { faction: Faction; archetype: Archetype }>
   carthage: { faction: 'carthaginois', archetype: 'general' },
   'perse-achemenide': { faction: 'parthes-perses', archetype: 'grand-roi' },
   omeyyades: { faction: 'arabes', archetype: 'calife' },
+  abbassides: { faction: 'arabes', archetype: 'calife' },
+  moghols: { faction: 'moghols', archetype: 'shah' },
 };
 
 /** Au-delà, la légende des entités est tronquée (périodes de division). */

@@ -1,0 +1,407 @@
+[
+  {
+    "id": "babur",
+    "name": "Babur",
+    "archetype": "shah",
+    "faction": "moghols",
+    "born": 1483,
+    "died": 1530,
+    "title": "Fondateur de la dynastie moghole",
+    "bio": "Zahir ud-Din Muhammad, surnommé Babur (« le tigre »), naît en 1483 dans la vallée de Ferghana, en Asie centrale. Par son père il descend de Tamerlan, par sa mère de Gengis Khan, d'où le nom de « moghols » donné à sa dynastie. À douze ans il hérite d'un petit royaume et rêve de reprendre Samarcande, capitale de ses ancêtres, qu'il prend puis perd face aux Ouzbeks. Chassé, il s'installe à Kaboul en 1504 et se tourne vers l'Inde. En 1526 il bat à Panipat le sultan Ibrahim Lodi, puis en 1527 les Rajputs du Rana Sanga à Khanwa, grâce à ses canons, ses mousquets et ses chariots enchaînés. Lettré, poète en turc djaghataï, il laisse le Babur-nama, des mémoires francs et pleins de détails sur les hommes, les jardins et les fruits (il regrette les melons de Kaboul). Il meurt à Agra en 1530 ; son corps repose à Kaboul, dans un jardin qu'il avait choisi.",
+    "keyFacts": [
+      "1504 : s'empare de Kaboul",
+      "1526 : victoire de Panipat sur Ibrahim Lodi",
+      "1527 : écrase les Rajputs à Khanwa",
+      "1530 : meurt à Agra, laissant l'empire à Humayun"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Babur",
+        "url": "https://fr.wikipedia.org/wiki/Babur"
+      }
+    ]
+  },
+  {
+    "id": "humayun",
+    "name": "Humayun",
+    "archetype": "shah",
+    "faction": "moghols",
+    "born": 1508,
+    "died": 1556,
+    "title": "L’empereur qui perdit puis reprit l’Inde",
+    "bio": "Fils aîné de Babur, Humayun hérite en 1530 d'un empire encore fragile. Cultivé, passionné d'astronomie et de mathématiques, il est plus rêveur qu'organisateur. Il partage ses territoires entre ses frères Kamran, Askari et Hindal, qui lui causeront bien des soucis. En 1539 et 1540, il est battu par l'Afghan Sher Shah à Chausa et à Kannauj, et perd tout. Pendant quinze ans, il erre au Sind, où naît son fils Akbar en 1542, puis trouve refuge en Perse auprès du shah Tahmasp. Avec l'aide des Safavides il reprend Kandahar et Kaboul, puis, en 1555, bat les Sur à Sirhind et rentre à Delhi. Ses artistes persans, ramenés d'exil, fondent la miniature moghole. Il meurt en janvier 1556 d'une chute dans l'escalier de sa bibliothèque. Son tombeau à Delhi, de style persan, inspirera le Taj Mahal.",
+    "keyFacts": [
+      "1530 : devient empereur à la mort de Babur",
+      "1540 : battu à Kannauj, il s'exile",
+      "1545 : reprend Kandahar et Kaboul avec l'aide de la Perse",
+      "1555 : bat les Sur à Sirhind, rentre à Delhi",
+      "1556 : meurt après une chute dans son escalier"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Humâyûn",
+        "url": "https://fr.wikipedia.org/wiki/Humâyûn"
+      }
+    ]
+  },
+  {
+    "id": "sher-shah-suri",
+    "name": "Sher Shah Suri",
+    "archetype": "sultan",
+    "faction": "afghans",
+    "born": 1486,
+    "died": 1545,
+    "title": "Le « roi lion » qui chassa Humayun",
+    "bio": "Farid Khan naît vers 1486 dans une famille afghane du Bihar. Il se fait remarquer comme administrateur des terres de son père, puis comme officier au service des sultans du Bihar. Il reçoit le nom de Sher Khan pour avoir, dit-on, tué un tigre. Il bat Humayun à Chausa en 1539 et prend le titre de Sher Shah. Après Kannauj (1540), il règne sur l'Inde du nord et conquiert le Malwa, le Marwar et le Rajasthan. En cinq ans, il invente un État remarquable : mesure des terres et impôt fixé en fonction des récoltes, pièces d'argent standard (les « roupies »), grande route de Bengale à l'Indus, avec caravansérails, puits et arbres. Il meurt en 1545 en assiégeant Kalinjar, frappé par l'explosion d'une réserve de poudre. Son fils Islam Shah lui succède, mais la dynastie s'effondre dix ans plus tard. Les Moghols reprendront beaucoup de ses institutions.",
+    "keyFacts": [
+      "1539 : bat Humayun à Chausa",
+      "1540 : victoire de Kannauj, maître de l'Inde du nord",
+      "1540-1545 : route, roupie d'argent et impôt foncier",
+      "1545 : meurt au siège de Kalinjar"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Sher Shah Suri",
+        "url": "https://fr.wikipedia.org/wiki/Sher_Shah_Suri"
+      }
+    ]
+  },
+  {
+    "id": "akbar",
+    "name": "Akbar",
+    "archetype": "shah",
+    "faction": "moghols",
+    "born": 1542,
+    "died": 1605,
+    "title": "Akbar le Grand, empereur de la tolérance",
+    "bio": "Né en 1542 au Sind, pendant l'exil de son père Humayun, Akbar monte sur le trône à treize ans, en 1556. Il écarte son régent Bairam Khan en 1560, puis s'impose en conquérant : Rajasthan (Chittor, 1568), Gujarat (1572-1573), Bengale (1576), Cachemire (1586), Sind (1591), Kandahar (1595), une partie du Deccan. Il épouse une princesse rajpute et ouvre l'armée et l'administration aux hindous, tout en supprimant les taxes spéciales sur les non-musulmans. À Fatehpur Sikri, il réunit des savants de toutes religions et lance la sulh-i kull, la « paix universelle ». Avec ses ministres, dont Todar Mal, il organise un système de grades, les mansabs, et un impôt foncier stable. Illettré (selon la tradition), il se fait lire des livres par ses savants. Il meurt en 1605 à Agra, après avoir laissé un empire riche et bien administré.",
+    "keyFacts": [
+      "1556 : empereur à treize ans, victoire de Panipat",
+      "1562 : épouse une princesse rajpute d'Amber",
+      "1572-1573 : annexion du Gujarat",
+      "1582 : lance la « Din-i Ilahi » et tolère toutes les religions",
+      "1605 : meurt à Agra"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Akbar",
+        "url": "https://fr.wikipedia.org/wiki/Akbar"
+      }
+    ]
+  },
+  {
+    "id": "abul-fazl",
+    "name": "Abu’l-Fazl",
+    "archetype": "sage",
+    "faction": "moghols",
+    "born": 1551,
+    "died": 1602,
+    "title": "Ministre et chroniqueur d’Akbar",
+    "bio": "Abu'l-Fazl ibn Mubarak naît en 1551 à Agra, dans une famille de savants persans. Brillant lettré, il est présenté à Akbar en 1574 et devient son conseiller le plus proche. Il l'aide à formuler l'idéal de sulh-i kull, la « paix avec tous », et à répondre aux critiques des oulémas conservateurs, qui voient en lui un esprit dangereux. Il est surtout l'auteur de l'Akbarnama, chronique du règne, et de l'Ain-i-Akbari, vaste encyclopédie qui décrit l'administration, l'armée, les provinces, les arts et les religions de l'empire, avec une masse de chiffres. Son récit est précieux mais fait l'éloge de son maître, il faut le lire avec prudence. Chargé d'opérations militaires au Deccan, il est assassiné en 1602 sur la route d'Agra par des hommes que le prince Salim, futur Jahangir, avait envoyés : le prince lui reprochait son influence sur Akbar.",
+    "keyFacts": [
+      "1574 : présenté à Akbar, devient son ami",
+      "1590 : début de l'Akbarnama",
+      "1598 : l'Ain-i-Akbari, description de l'empire",
+      "1602 : assassiné sur ordre du prince Salim"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Abû al-Fazl",
+        "url": "https://fr.wikipedia.org/wiki/Abû_al-Fazl"
+      }
+    ]
+  },
+  {
+    "id": "man-singh",
+    "name": "Raja Man Singh",
+    "archetype": "general",
+    "faction": "rajputs",
+    "born": 1550,
+    "died": 1614,
+    "title": "Général rajput d’Akbar",
+    "bio": "Man Singh Ier naît en 1550 dans la famille régnante d'Amber (Rajasthan, près de l'actuelle Jaipur). Son grand-père Bharmal a été le premier roi rajput à se ranger sous Akbar en 1562 ; sa tante épouse l'empereur et mère de Jahangir. Man Singh grandit à la cour et devient l'un des généraux les plus fiables d'Akbar, avec un grade très élevé de mansabdar. Il commande l'armée moghole à Haldighati en 1576 contre le Rana Pratap, sans achever son adversaire. Gouverneur de Kaboul, du Bihar et du Bengale, il conquiert l'Orissa en 1592 et construit des temples, notamment à Vrindavan. Sous Jahangir, il perd de son influence ; il meurt en 1614 au Deccan. Sa carrière montre que l'empire d'Akbar reposait en grande partie sur le service des Rajputs, qui n'abandonnaient pas pour autant leur religion.",
+    "keyFacts": [
+      "1562 : sa famille s'allie à Akbar par mariage",
+      "1576 : commande l'armée moghole à Haldighati",
+      "1587-1606 : gouverneur du Bihar, puis du Bengale",
+      "1592 : soumet l'Orissa",
+      "1614 : meurt au Deccan"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Man Singh Ier",
+        "url": "https://fr.wikipedia.org/wiki/Man_Singh_Ier"
+      }
+    ]
+  },
+  {
+    "id": "rana-sanga",
+    "name": "Rana Sanga",
+    "archetype": "roi",
+    "faction": "rajputs",
+    "born": 1482,
+    "died": 1528,
+    "title": "Chef de la dernière grande ligue rajpute",
+    "bio": "Sangram Singh, dit Rana Sanga, naît en 1482 et règne sur le Mewar (Rajasthan) à partir de 1509. Guerrier réputé, couvert de blessures (il aurait perdu un œil, un bras et une jambe estropiée), il rassemble les clans rajputs, prend des territoires aux sultans du Malwa et du Gujarat et devient le roi hindou le plus puissant du nord de l'Inde. Il aurait d'abord envisagé de s'allier à Babur contre les Lodi, selon les mémoires de ce dernier, puis, déçu, se retourne contre lui. Il est battu à Khanwa en mars 1527, malgré ses cavaliers, face à l'artillerie moghole. Blessé, emmené à l'écart par ses chefs, il meurt en janvier 1528, empoisonné par ses propres nobles, selon une tradition qui ne repose pas sur des preuves. Sa défaite met fin à l'espoir d'un empire hindou dans le nord ; son héritier Rana Pratap fera du Mewar un symbole de résistance.",
+    "keyFacts": [
+      "1509 : devient roi du Mewar",
+      "1517-1519 : vainqueur des Lodi à Khatoli et Dholpur",
+      "1527 : vaincu par Babur à Khanwa",
+      "1528 : meurt, laissant un royaume affaibli"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Rana Sanga",
+        "url": "https://fr.wikipedia.org/wiki/Rana_Sanga"
+      }
+    ]
+  },
+  {
+    "id": "rana-pratap",
+    "name": "Rana Pratap",
+    "archetype": "roi",
+    "faction": "rajputs",
+    "born": 1540,
+    "died": 1597,
+    "title": "Roi du Mewar, résistant à Akbar",
+    "bio": "Pratap Singh naît en 1540 et devient Rana du Mewar en 1572, après que Chittor est tombée aux mains des Moghols (1568). Akbar lui envoie plusieurs ambassadeurs pour l'inviter à se soumettre ; Pratap refuse. En 1576, il affronte à Haldighati l'armée du général rajput Man Singh : le combat reste indécis, et Pratap se retire dans les collines d'Aravalli. Pendant vingt ans, il mène une guérilla, s'appuie sur les peuples Bhils et reprend la plus grande partie du Mewar, sauf Chittor. Le récit de ses privations dans la montagne et de son cheval Chetak appartient en partie à la légende. Il meurt en 1597, à Chavand. Son fils Amar Singh fera la paix avec Jahangir en 1615. Dans la mémoire de l'Inde moderne, Pratap est un héros de la résistance, mais les historiens rappellent que la lutte l'opposa moins à « l'islam » qu'à un empire dont beaucoup de Rajputs étaient eux-mêmes les serviteurs.",
+    "keyFacts": [
+      "1568 : Chittor tombe devant Akbar",
+      "1572 : devient Rana du Mewar",
+      "1576 : bataille de Haldighati, retrait dans les collines",
+      "1597 : meurt à Chavand, après avoir repris une grande partie du Mewar"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Maharana Pratap",
+        "url": "https://fr.wikipedia.org/wiki/Maharana_Pratap"
+      }
+    ]
+  },
+  {
+    "id": "jahangir",
+    "name": "Jahangir",
+    "archetype": "shah",
+    "faction": "moghols",
+    "born": 1569,
+    "died": 1627,
+    "title": "Empereur amateur d’art et de nature",
+    "bio": "Salim naît en 1569, fils d'Akbar, dont le trône n'est promis qu'après bien des intrigues. Il se révolte même contre son père en 1599-1604. Devenu empereur en 1605 sous le nom de Jahangir (« conquérant du monde »), il règne vingt-deux ans. Son goût est celui d'un esthète : peintres, naturalistes et jardiniers de la cour produisent des portraits, des études d'animaux et de fleurs d'une finesse rare ; il tient lui-même un journal, le Jahangirnama. Il fait la paix avec le Mewar en 1615, reçoit l'ambassadeur anglais Sir Thomas Roe et protège les jardins du Cachemire. Il aime le vin et l'opium. Après 1611 il laisse peu à peu le pouvoir à son épouse Nur Jahan et à sa famille. Il perd Kandahar en 1622 et doit réprimer la révolte de son fils Khurram, futur Shah Jahan. Il meurt en 1627 en revenant du Cachemire.",
+    "keyFacts": [
+      "1605 : monte sur le trône à la mort d'Akbar",
+      "1611 : épouse Nur Jahan",
+      "1615 : paix avec le Mewar ; ambassade de Sir Thomas Roe",
+      "1622 : Kandahar est perdue",
+      "1627 : meurt au retour du Cachemire"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Jahângir",
+        "url": "https://fr.wikipedia.org/wiki/Jahângir"
+      }
+    ]
+  },
+  {
+    "id": "nur-jahan",
+    "name": "Nur Jahan",
+    "archetype": "sultane",
+    "faction": "moghols",
+    "born": 1577,
+    "died": 1645,
+    "title": "Impératrice de fait",
+    "bio": "Mehr un-Nissa naît en 1577 à Kandahar, dans une famille persane. Elle épouse en 1594 un officier qui meurt en 1607, puis entre au harem impérial et épouse Jahangir en 1611, qui la nomme Nur Mahal (« Lumière du palais »), puis Nur Jahan (« Lumière du monde »). Intelligente, cultivée, bonne chasseuse, elle fait frapper des pièces à son nom et signe des décrets (farmans). Lorsque Jahangir tombe malade et néglige les affaires, elle gouverne avec son père Itimad ud-Daula, son frère Asaf Khan et un petit groupe de nobles persans. Elle fait bâtir le tombeau de son père à Agra, un chef-d'œuvre de marbre incrusté. Son opposition au prince Khurram provoque la révolte de celui-ci. À la mort de Jahangir en 1627, son frère Asaf Khan fait monter Khurram sur le trône ; elle est écartée, se retire à Lahore, et meurt en 1645.",
+    "keyFacts": [
+      "1611 : épouse Jahangir, devient Nur Jahan",
+      "1612-1627 : exerce une grande part du pouvoir",
+      "1628 : tombeau d'Itimad ud-Daula achevé à Agra",
+      "1645 : meurt à Lahore"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Nur Jahan",
+        "url": "https://fr.wikipedia.org/wiki/Nur_Jahan"
+      }
+    ]
+  },
+  {
+    "id": "shah-jahan",
+    "name": "Shah Jahan",
+    "archetype": "shah",
+    "faction": "moghols",
+    "born": 1592,
+    "died": 1666,
+    "title": "L’empereur du Taj Mahal",
+    "bio": "Khurram naît en 1592 à Lahore, fils de Jahangir et d'une princesse rajpute. Brillant général au Deccan, il se révolte contre son père en 1622 et est vaincu en 1626. Il devient empereur en 1628 sous le nom de Shah Jahan (« roi du monde ») et règne trente ans. Son règne est marqué par la richesse et le faste : le Taj Mahal (1632-1653), le Fort Rouge et la mosquée Jama Masjid de Delhi, le Trône du Paon, la fondation de Shahjahanabad (1648). Il annexe Ahmednagar (1633), soumet Bijapur et Golconde (1636) et reprend Kandahar en 1638, avant de la perdre en 1649. En septembre 1657, sa maladie déclenche la guerre de succession entre ses quatre fils. Vaincu, il est emprisonné par Aurangzeb au fort d'Agra, d'où il regarde, dit-on, le Taj Mahal. Il y meurt en 1666 et repose près de Mumtaz Mahal.",
+    "keyFacts": [
+      "1628 : devient empereur",
+      "1632-1653 : construction du Taj Mahal",
+      "1648 : inaugure Shahjahanabad (Delhi)",
+      "1658 : détrôné par Aurangzeb",
+      "1666 : meurt prisonnier à Agra"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Shâh Jahân",
+        "url": "https://fr.wikipedia.org/wiki/Shâh_Jahân"
+      }
+    ]
+  },
+  {
+    "id": "mumtaz-mahal",
+    "name": "Mumtaz Mahal",
+    "archetype": "sultane",
+    "faction": "moghols",
+    "born": 1593,
+    "died": 1631,
+    "title": "La princesse qui inspira le Taj Mahal",
+    "bio": "Arjumand Bano Begum naît en 1593 à Agra, fille d'Asaf Khan et nièce de l'impératrice Nur Jahan. Elle est fiancée en 1607 au prince Khurram, avec qui elle se marie en 1612. Cette union, d'amour autant que de politique, est exceptionnelle pour l'époque : elle suit son époux dans toutes ses campagnes et lui donne quatorze enfants, dont sept survivent, parmi lesquels Dara Shikoh, Shah Shuja, Aurangzeb et Jahanara. Quand il devient empereur en 1628, il la nomme Mumtaz Mahal, « la Lumière du palais », et lui confie son sceau. Elle soutient des œuvres charitables et des veuves, et s'intéresse à la poésie. Elle meurt en juin 1631 à Burhanpur, en donnant naissance à leur quatorzième enfant. Son corps est transporté à Agra. Shah Jahan, inconsolable, décide de lui édifier le Taj Mahal ; les récits romantiques sur son chagrin doivent beaucoup aux chroniqueurs de cour.",
+    "keyFacts": [
+      "1612 : épouse le prince Khurram",
+      "1628 : reçoit le nom de Mumtaz Mahal",
+      "1631 : meurt à Burhanpur en couches",
+      "1632 : début du chantier du Taj Mahal"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Mumtaz Mahal",
+        "url": "https://fr.wikipedia.org/wiki/Mumtaz_Mahal"
+      }
+    ]
+  },
+  {
+    "id": "dara-shikoh",
+    "name": "Dara Shikoh",
+    "archetype": "sultan",
+    "faction": "moghols",
+    "born": 1615,
+    "died": 1659,
+    "title": "Le prince lettré, héritier évincé",
+    "bio": "Fils aîné de Shah Jahan et de Mumtaz Mahal, Dara Shikoh naît en 1615 et est désigné héritier. Il est passionné de mystique soufie, étudie les textes de l'hindouisme et du soufisme, et rédige en 1655 le Majma-ul-Bahrain, « le confluent des deux océans », qui cherche des points communs entre l'islam et l'hindouisme. Il fait traduire en persan les Upanishads, ce qui contribuera à leur découverte en Europe à travers le traducteur Anquetil-Duperron. Mais il est moins bon chef de guerre que son frère Aurangzeb : il échoue à prendre Kandahar en 1653. Pendant la maladie de Shah Jahan, il est vaincu à Samugarh en mai 1658. Capturé en 1659, il est livré, jugé pour apostasie et exécuté. Les historiens discutent de ce qu'aurait été un empire de Dara : plus ouvert, mais pas forcément plus stable. Sa mort marque un tournant intellectuel et politique.",
+    "keyFacts": [
+      "1633 : nommé héritier par Shah Jahan",
+      "1655 : écrit le Majma-ul-Bahrain",
+      "1653 : échoue devant Kandahar",
+      "1658 : vaincu à Samugarh",
+      "1659 : exécuté à Delhi"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Dârâ Shikôh",
+        "url": "https://fr.wikipedia.org/wiki/Dârâ_Shikôh"
+      }
+    ]
+  },
+  {
+    "id": "aurangzeb",
+    "name": "Aurangzeb",
+    "archetype": "shah",
+    "faction": "moghols",
+    "born": 1618,
+    "died": 1707,
+    "title": "Le dernier grand empereur moghol",
+    "bio": "Troisième fils de Shah Jahan, Aurangzeb naît en 1618. Pieux et discipliné, brillant général, il gouverne le Deccan et prend le trône en 1658 après avoir vaincu ses frères, dont Dara Shikoh. Il règne près de cinquante ans, sous le nom d'Alamgir. Il étend l'empire à son maximum par la conquête de Bijapur (1686) et de Golconde (1687), et tente de soumettre les Marathes en s'installant au Deccan à partir de 1681. Il impose une application plus stricte de la loi islamique, rétablit en 1679 la djizîa (taxe sur les non-musulmans) et fait détruire certains temples, mais finance aussi des temples et emploie de nombreux hindous : les historiens divergent sur la part de la religion dans ses décisions. Il copie lui-même le Coran à la main, selon la tradition, et vit simplement. Il meurt en 1707 à 88 ans, laissant un empire épuisé.",
+    "keyFacts": [
+      "1658 : prend le trône après Samugarh",
+      "1679 : rétablit la djizîa",
+      "1681 : s'installe au Deccan pour vingt-six ans",
+      "1686-1687 : annexe Bijapur et Golconde",
+      "1707 : meurt à Ahmednagar"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Aurangzeb",
+        "url": "https://fr.wikipedia.org/wiki/Aurangzeb"
+      }
+    ]
+  },
+  {
+    "id": "shivaji",
+    "name": "Shivaji",
+    "archetype": "roi",
+    "faction": "marathes",
+    "born": 1630,
+    "died": 1680,
+    "title": "Fondateur de l’État marathe",
+    "bio": "Shivaji Bhonsle naît en 1630 (1627 selon certaines sources) dans une famille de chefs de guerre au service des sultans du Deccan. Élevé par sa mère Jijabai, il s'empare de forts de montagne à partir de 1646, bâtit des forteresses sur la côte, dont Raigad, et se dote d'une flotte. En 1659 il tue à Pratapgarh le général bijapuri Afzal Khan, venu l'écraser. En 1664 il pille Surat, riche port moghol. Vaincu par le raja Jai Singh, il signe en 1665 le traité de Purandar, va à Agra en 1666, où Aurangzeb le traite avec froideur, puis s'échappe. En 1674 il se fait couronner Chhatrapati à Raigad. Il organise un gouvernement de huit ministres et des impôts réguliers. Il meurt en 1680, à 50 ans, laissant un État fragile, mais une légende durable : pour certains, un héros de l'identité marathe, pour d'autres, un chef pragmatique dont les historiens discutent la politique religieuse.",
+    "keyFacts": [
+      "1646 : prend le fort de Torna, début de son action",
+      "1659 : tue Afzal Khan à Pratapgarh",
+      "1664 : pille Surat",
+      "1674 : couronnement à Raigad",
+      "1680 : meurt à Raigad"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Shivaji",
+        "url": "https://fr.wikipedia.org/wiki/Shivaji"
+      }
+    ]
+  },
+  {
+    "id": "nader-shah",
+    "name": "Nader Shah",
+    "archetype": "shah",
+    "faction": "safavides",
+    "born": 1688,
+    "died": 1747,
+    "title": "Le conquérant perse qui saccagea Delhi",
+    "bio": "Nader naît en 1688 dans le Khorassan, dans une famille de bergers et de guerriers turkmènes afchars. Il se fait remarquer dans l'armée du dernier shah safavide Tahmasp II, bat les Afghans qui occupaient l'Iran, repousse les Ottomans et les Russes, puis prend le pouvoir : il dépose le dernier Safavide et se fait proclamer shah en 1736, fondant la dynastie afsharide. En 1738-1739 il envahit l'Inde : il prend Kandahar, Kaboul, Lahore, bat à Karnal l'armée moghole et entre à Delhi, dont le sac (22 mars 1739) fait des milliers de morts. Il repart avec le Trône du Paon et le Koh-i-Noor. Ses guerres incessantes et ses impôts écrasants rendent son règne de plus en plus cruel ; il est assassiné en 1747 par ses propres officiers. Son empire s'effondre aussitôt, d'où naît celui de son ancien lieutenant afghan, Ahmad Shah Durrani.",
+    "keyFacts": [
+      "1736 : proclamé shah de Perse",
+      "1738 : prend Kandahar, puis Kaboul et Peshawar",
+      "1739 : victoire de Karnal, sac de Delhi",
+      "1747 : assassiné par ses officiers"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Nader Shah",
+        "url": "https://fr.wikipedia.org/wiki/Nader_Shah"
+      }
+    ]
+  },
+  {
+    "id": "clive",
+    "name": "Robert Clive",
+    "archetype": "general",
+    "faction": "britanniques",
+    "born": 1725,
+    "died": 1774,
+    "title": "Vainqueur de Plassey",
+    "bio": "Robert Clive naît en 1725 dans le Shropshire, en Angleterre. Employé médiocre de la Compagnie des Indes orientales à Madras, il se fait un nom pendant la guerre contre les Français et leurs alliés en 1751 en défendant Arcot. En 1756, il est chargé de reprendre Calcutta, prise par le nawab du Bengale. Il obtient la victoire de Plassey le 23 juin 1757 grâce au complot de Mir Jafar, et devient gouverneur du Bengale. Revenu en Angleterre avec une fortune énorme, il retourne en Inde en 1765, négocie avec l'empereur Shah Alam II l'octroi de la diwani du Bengale à la Compagnie, et réforme l'armée. Accusé de corruption devant le Parlement en 1772-1773, il est blanchi, mais se suicide en 1774, selon la version courante, d'une overdose d'opium. Les historiens le jugent à la fois génie militaire et prédateur ; sa statue fait aujourd'hui débat.",
+    "keyFacts": [
+      "1751 : défend Arcot contre les Français et leurs alliés",
+      "1757 : victoire de Plassey",
+      "1765 : obtient la diwani du Bengale",
+      "1774 : meurt à Londres, probablement suicidé"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Robert Clive",
+        "url": "https://fr.wikipedia.org/wiki/Robert_Clive"
+      }
+    ]
+  },
+  {
+    "id": "bahadur-shah-ii",
+    "name": "Bahadur Shah II",
+    "archetype": "shah",
+    "faction": "moghols",
+    "born": 1775,
+    "died": 1862,
+    "title": "Dernier empereur moghol",
+    "bio": "Bahadur Shah II, dit Zafar (« victoire »), naît en 1775 à Delhi. Il devient empereur en 1837, mais son autorité ne dépasse pas le Fort Rouge : les Britanniques protègent Delhi depuis 1803 et lui versent une pension. Il se consacre à la poésie en ourdou, à la calligraphie et à la mystique soufie, et son salon littéraire accueille de grands poètes, dont Ghalib. Le 11 mai 1857, des cipayes révoltés venus de Meerut lui demandent de prendre leur tête ; il accepte, hésitant, et est proclamé empereur de l'Hindoustan. Âgé de 82 ans, il n'a ni moyens ni autorité militaires. Quand les Britanniques reprennent Delhi en septembre, il se réfugie au tombeau de Humayun ; ses fils sont abattus. Jugé pour trahison en 1858, il est exilé à Rangoon, où il meurt en 1862. Il y a été inhumé sans cérémonie ; son tombeau, retrouvé en 1991, est aujourd'hui vénéré.",
+    "keyFacts": [
+      "1837 : devient empereur de Delhi, sans pouvoir réel",
+      "11 mai 1857 : proclamé empereur par les cipayes révoltés",
+      "20-21 septembre 1857 : capturé après la chute de Delhi",
+      "1858 : jugé, puis exilé à Rangoon",
+      "1862 : meurt à Rangoon"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Bahâdur Châh II",
+        "url": "https://fr.wikipedia.org/wiki/Bahâdur_Châh_II"
+      }
+    ]
+  }
+]

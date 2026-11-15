@@ -1,0 +1,2115 @@
+{
+  "id": "moghols",
+  "name": "Empire moghol",
+  "color": "#1f8a5a",
+  "start": 1526,
+  "end": 1857,
+  "description": "L'Empire moghol naît en 1526, quand Babur, prince venu de Kaboul et descendant de Tamerlan et de Gengis Khan, bat à Panipat le sultan de Delhi. Avec Akbar, qui ménage les Rajputs hindous et fait régner la tolérance, il devient l'un des États les plus riches du monde ; Shah Jahan lui laisse le Taj Mahal et Aurangzeb, vers 1700, l'étend de l'Afghanistan au sud du Deccan. Il s'épuise ensuite face aux Marathes, à la Perse de Nader Shah et à la Compagnie anglaise des Indes. Réduit à Delhi, il disparaît avec la révolte des cipayes de 1857.",
+  "view": {
+    "center": [
+      78,
+      24
+    ],
+    "zoom": 3.6
+  },
+  "bounds": [
+    [
+      58,
+      4
+    ],
+    [
+      100,
+      40
+    ]
+  ],
+  "apogee": {
+    "stepId": "ahmednagar-1707",
+    "note": "L'extension maximale se situe à la mort d'Aurangzeb (1707), de Kaboul au Deccan jusqu'à Jinji. Elle se discute : l'empire est alors miné par la guerre contre les Marathes et ne tient certaines provinces que sur le papier ; on pourrait aussi retenir 1687, au moment des conquêtes de Bijapur et de Golconde."
+  },
+  "periods": [
+    {
+      "id": "babur-humayun",
+      "name": "Babur et Humayun",
+      "start": 1526,
+      "end": 1556,
+      "color": "#9ccfb0",
+      "summary": "Babur, prince de Kaboul, conquiert l'Inde du nord en deux batailles (1526-1527). Son fils Humayun perd tout face à l'Afghan Sher Shah, s'exile en Perse, puis reprend Delhi en 1555, quelques mois avant sa mort."
+    },
+    {
+      "id": "akbar",
+      "name": "Akbar le Grand",
+      "start": 1556,
+      "end": 1605,
+      "color": "#e8c97a",
+      "summary": "Monté sur le trône à treize ans, Akbar agrandit l'empire de Kaboul au Bengale et au Gujarat. Il s'allie avec les Rajputs, ouvre l'administration aux hindous et fonde une cour célèbre pour sa tolérance."
+    },
+    {
+      "id": "apogee",
+      "name": "Jahangir, Shah Jahan et Aurangzeb",
+      "start": 1605,
+      "end": 1707,
+      "color": "#d98b6a",
+      "summary": "L'empire est à son sommet de richesse et de beauté (Taj Mahal), puis d'étendue sous Aurangzeb, qui conquiert le Deccan. Mais sa politique religieuse et sa longue guerre contre les Marathes épuisent l'État."
+    },
+    {
+      "id": "declin",
+      "name": "Déclin et chute",
+      "start": 1707,
+      "end": 1857,
+      "color": "#8ea3c9",
+      "summary": "Après 1707, les gouverneurs s'émancipent, les Marathes, Nader Shah puis les Afghans frappent Delhi, et la Compagnie anglaise des Indes s'empare du Bengale. L'empereur n'est plus qu'un symbole, renversé après la révolte de 1857."
+    }
+  ],
+  "steps": [
+    {
+      "id": "panipat-1526",
+      "year": 1526,
+      "title": "Panipat : Babur renverse le sultanat de Delhi",
+      "type": "bataille",
+      "location": [
+        76.97,
+        29.39
+      ],
+      "zoom": 5,
+      "summary": "Le 21 avril 1526, le prince timouride Babur, venu de Kaboul avec une armée dotée de canons et de mousquets, bat à Panipat le sultan afghan de Delhi Ibrahim Lodi et fonde la dynastie moghole.",
+      "details": "Babur est un prince d'Asie centrale descendant à la fois de Tamerlan et de Gengis Khan (d'où le mot « moghol », déformation de « mongol »). Chassé de Samarcande par les Ouzbeks, il s'est replié sur **Kaboul** en 1504 et regarde vers l'Inde, riche et divisée. Plusieurs seigneurs du Pendjab, mécontents du sultan **Ibrahim Lodi** (un Afghan qui règne à Delhi), l'appellent à l'aide. À l'hiver 1525, Babur descend vers **Lahore** avec environ 12 000 hommes.\n\nLe **21 avril 1526**, à **Panipat**, au nord de Delhi, il fait face à une armée bien plus nombreuse (les sources avancent de 40 000 à 100 000 hommes et un millier d'éléphants). Il aligne ses chariots enchaînés, derrière lesquels tirent des mousquetaires et des canons, une tactique apprise des Ottomans, et garde des cavaliers aux ailes pour envelopper l'ennemi. Les éléphants, affolés par le bruit, piétinent leurs propres rangs. En quelques heures, Ibrahim Lodi est tué avec des milliers de ses hommes.\n\nBabur entre dans Delhi et Agra, mais il n'est pas aimé : il juge l'Inde peu agréable (« peu de charmes », écrit-il dans ses mémoires, le *Babur-nama*) et ses soldats rêvent de rentrer à Kaboul. Il lui faut encore conquérir le pays, car d'autres adversaires l'attendent.",
+      "consequences": [
+        "Le sultanat de Delhi des Lodi disparaît : Delhi et Agra passent à Babur, qui ajoute le nord de l'Inde à son domaine de Kaboul.",
+        "L'armée de Babur, avec poudre, mousquets et canons, impose en Inde du nord la guerre moderne que les Ottomans pratiquent déjà.",
+        "Les Rajputs du Mewar et les Afghans de l'est (Bihar, Bengale) restent hostiles : la conquête est loin d'être achevée.",
+        "L'Inde du nord a désormais un maître dont la capitale est Agra, avec Kaboul en arrière-pays."
+      ],
+      "territory": "panipat-1526",
+      "territoryNote": "Après la bataille : domaine de Babur = Kaboul et Ghazni, Kandahar (tenue depuis 1522), Badakhchan (confié à Humayun), le Pendjab jusqu'à Sirhind (Lahore, Dipalpur), puis Delhi et Agra occupées (le Doab central reste à conquérir). Rivaux : débris du sultanat Lodi (Afghans du Bihar et de Jaunpur, dans l'est), Rana Sanga du Mewar (Rajasthan, Chittor), sultanats du Gujarat (Bahadur Shah), du Malwa, du Bengale (Nusrat Shah), du Khandesh, sultanats du Deccan (Bahmanides déjà éclatés : Bijapur, Ahmednagar, Golconde, Bidar, Berar), royaume de Vijayanagar au sud, Ouzbeks Shaybanides au nord de l'Hindu Kush, Safavides de Perse (Shah Tahmasp). Aucun vassal formel.",
+      "battle": {
+        "belligerents": [
+          "Babur (Timourides de Kaboul)",
+          "Sultanat de Delhi (Lodi)"
+        ],
+        "commanders": [
+          "Babur",
+          "Humayun",
+          "Ibrahim Lodi"
+        ],
+        "outcome": "Victoire décisive de Babur ; mort d'Ibrahim Lodi",
+        "forces": "Babur : environ 12 000 à 25 000 hommes et une vingtaine de canons ; Lodi : 40 000 à 100 000 hommes, environ 1 000 éléphants (chiffres très discutés)",
+        "losses": "Environ 15 000 à 20 000 morts du côté lodi selon les chroniques mogholes ; pertes de Babur légères"
+      },
+      "armies": [
+        {
+          "id": "babur",
+          "side": "Babur",
+          "from": "Kaboul",
+          "faction": "moghols",
+          "path": [
+            [
+              69.17,
+              34.53
+            ],
+            [
+              70.45,
+              34.43
+            ],
+            [
+              71.57,
+              34.01
+            ],
+            [
+              74.34,
+              31.55
+            ],
+            [
+              76.43,
+              30.64
+            ],
+            [
+              76.97,
+              29.39
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Ibrahim Lodi",
+          "from": "Delhi",
+          "faction": "afghans",
+          "path": [
+            [
+              77.23,
+              28.61
+            ],
+            [
+              76.97,
+              29.39
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Babur",
+          "role": "Fondateur de la dynastie moghole",
+          "faction": "moghols",
+          "archetype": "shah",
+          "quote": "« Hindustan est un pays de peu de charmes » (selon le Babur-nama)",
+          "position": [
+            76.95,
+            29.38
+          ],
+          "person": "babur"
+        },
+        {
+          "name": "Ibrahim Lodi",
+          "role": "Dernier sultan de Delhi",
+          "faction": "afghans",
+          "archetype": "sultan",
+          "position": [
+            76.99,
+            29.4
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Première bataille de Panipat",
+          "url": "https://fr.wikipedia.org/wiki/Première_bataille_de_Panipat"
+        },
+        {
+          "label": "Wikipédia — Babur",
+          "url": "https://fr.wikipedia.org/wiki/Babur"
+        },
+        {
+          "label": "Annette Beveridge (trad.), The Babur-nama in English"
+        }
+      ]
+    },
+    {
+      "id": "khanwa-1527",
+      "year": 1527,
+      "title": "Khanwa : Babur écrase la ligue rajpute",
+      "type": "bataille",
+      "location": [
+        77.07,
+        27.04
+      ],
+      "zoom": 5,
+      "summary": "Le 16 mars 1527, Babur bat à Khanwa, près d'Agra, la grande coalition rajpute du Rana Sanga du Mewar : les Rajputs perdent la première place dans le nord de l'Inde.",
+      "details": "Un an après Panipat, Babur reste mal assis. Le plus redoutable de ses rivaux est le **Rana Sanga** (Sangram Singh) du **Mewar**, un royaume rajput du Rajasthan (les Rajputs sont la caste guerrière hindoue, organisée en clans). Sanga a rallié les Rajputs de plusieurs royaumes, des Afghans dissidents comme Mahmud Lodi (frère du sultan tué) et un seigneur musulman du Mewat, Hasan Khan. Ses cavaliers menacent Agra.\n\nLes troupes de Babur, fatiguées et inquiètes, songent au retour. Babur les galvanise : il renonce publiquement au vin, fait briser ses coupes d'or et proclame la bataille **guerre sainte** (jihad). Le **16 mars 1527**, à **Khanwa** (à une soixantaine de kilomètres d'Agra), il reprend la tactique de Panipat : chariots enchaînés, canons, mousquetaires, puis cavaliers qui enveloppent l'ennemi. Les charges rajputes, héroïques, se brisent sur le feu ; Sanga, blessé, est emmené hors du champ et mourra l'année suivante.\n\nPour les historiens, Khanwa compte plus que Panipat : c'est là que se joue la maîtrise de l'Inde du nord. La confédération rajpute ne s'en relèvera pas. En 1528, Babur prend aussi Chanderi, forteresse du Malwa, avant de se tourner vers les Afghans de l'est.",
+      "consequences": [
+        "La puissance militaire des Rajputs du Mewar est brisée : plus aucun roi hindou ne menace l'Inde du nord.",
+        "Babur contrôle solidement Agra et le Rajasthan oriental (Mewat) ; Chanderi, dans le Malwa, tombe en 1528.",
+        "L'artillerie et les mousquets deviennent la marque de l'armée moghole.",
+        "Les Rajputs ne disparaissent pas : Akbar saura plus tard en faire des alliés plutôt que des ennemis."
+      ],
+      "territory": "khanwa-1527",
+      "territoryNote": "Domaine de Babur : Kaboul, Ghazni, Kandahar, Badakhchan (Humayun) ; Pendjab jusqu'au Sutlej ; Delhi, Agra, Doab ; Mewat (Alwar) et Bayana pris sur les alliés du Rana ; Chanderi (Malwa) en 1528. Rivaux : Rajputs du Mewar (Rana Sanga, mort en 1528 ; successeurs Ratan Singh puis Vikramaditya), Mahmud Lodi et les Afghans de l'est (Bihar, Jaunpur, Awadh), sultanat du Bengale (Nusrat Shah), sultanat du Gujarat (Bahadur Shah), sultanat du Malwa (Mahmud II), royaume de Vijayanagar, Deccan éclaté en sultanats (Bijapur, Ahmednagar, Golconde), Ouzbeks et Safavides à l'ouest. Pas de vassaux.",
+      "battle": {
+        "belligerents": [
+          "Babur",
+          "Confédération rajpute du Mewar (Rana Sanga) avec Afghans alliés"
+        ],
+        "commanders": [
+          "Babur",
+          "Rana Sanga",
+          "Hasan Khan Mewati",
+          "Mahmud Lodi"
+        ],
+        "outcome": "Victoire de Babur ; blessure et retraite de Rana Sanga",
+        "forces": "Babur : environ 20 000 à 40 000 hommes ; coalition : 40 000 à 100 000 selon les sources, qui divergent",
+        "losses": "Lourdes du côté rajput, notamment parmi les chefs de clan"
+      },
+      "armies": [
+        {
+          "id": "babur",
+          "side": "Babur",
+          "from": "Panipat",
+          "faction": "moghols",
+          "path": [
+            [
+              76.97,
+              29.39
+            ],
+            [
+              78.01,
+              27.18
+            ],
+            [
+              77.07,
+              27.04
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Rana Sanga et coalition rajpute",
+          "from": "Chittor",
+          "faction": "rajputs",
+          "path": [
+            [
+              74.64,
+              24.88
+            ],
+            [
+              75.9,
+              25.9
+            ],
+            [
+              77.28,
+              26.9
+            ],
+            [
+              77.07,
+              27.04
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Rana Sanga",
+          "role": "Roi du Mewar, chef de la ligue rajpute",
+          "faction": "rajputs",
+          "archetype": "roi",
+          "position": [
+            77.04,
+            27.03
+          ],
+          "person": "rana-sanga"
+        },
+        {
+          "name": "Babur",
+          "role": "Empereur moghol",
+          "faction": "moghols",
+          "archetype": "shah",
+          "position": [
+            77.1,
+            27.05
+          ],
+          "person": "babur"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Khanwa",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Khanwa"
+        },
+        {
+          "label": "Wikipédia — Rana Sanga",
+          "url": "https://fr.wikipedia.org/wiki/Rana_Sanga"
+        },
+        {
+          "label": "Wikipédia — Babur",
+          "url": "https://fr.wikipedia.org/wiki/Babur"
+        }
+      ]
+    },
+    {
+      "id": "kannauj-1540",
+      "year": 1540,
+      "title": "Kannauj : Humayun chassé par Sher Shah Suri",
+      "type": "chute",
+      "location": [
+        79.92,
+        27.05
+      ],
+      "zoom": 5,
+      "summary": "Mai 1540 : Sher Shah, un Afghan du Bihar, met en déroute le deuxième empereur moghol Humayun à Kannauj. La dynastie perd l'Inde pour quinze ans et Humayun s'enfuit en Perse.",
+      "details": "Babur meurt en 1530 et laisse l'empire à son fils **Humayun**, un homme cultivé mais indécis. Son partage du pouvoir avec ses frères (Kamran, Askari, Hindal) affaiblit l'État, et les Afghans reprennent courage. Leur chef est **Sher Khan**, un petit seigneur du Bihar devenu maître du Bengale. Il s'est fait appeler **Sher Shah** (« le roi lion »).\n\nEn 1539, à **Chausa**, sur le Gange, Sher Shah surprend l'armée de Humayun pendant la saison des pluies : l'empereur échappe de justesse à la noyade, sauvé, dit-on, par un porteur d'eau qui l'aide à traverser le fleuve. Il réunit de nouvelles forces, mais ses frères ne l'aident guère. Le **17 mai 1540**, à **Kannauj** (aussi appelée Bilgram), son armée, nombreuse mais mal commandée et déjà gagnée par la désertion, s'effondre.\n\nHumayun fuit vers Lahore, puis le Sind, errant pendant des années. En 1544, il trouve refuge à la cour de **Shah Tahmasp**, souverain safavide de Perse, qui lui donne des troupes en échange de promesses, dont celle de rendre Kandahar. Entre-temps, Sher Shah règne sur l'Inde du nord : il organise un État solide (route, monnaie, impôt) qui servira de modèle aux Moghols lorsqu'ils reviendront.",
+      "consequences": [
+        "Humayun perd Agra, Delhi et le Pendjab ; Sher Shah fonde le sultanat des Sur et règne de Bengale au Pendjab.",
+        "Les Moghols ne gardent que Kaboul et Kandahar, tenus par le frère de Humayun, Kamran Mirza ; Humayun, fugitif, gagne la Perse.",
+        "Sher Shah installe un État efficace (impôt fixé sur la terre, route de Bengale à l'Indus, roupie d'argent) que les Moghols reprendront.",
+        "La rivalité entre frères moghols affaiblit durablement la dynastie, jusqu'à la mort de Kamran en 1557."
+      ],
+      "territory": "kannauj-1540",
+      "territoryNote": "Après Kannauj, le domaine moghol se réduit aux territoires de Kamran Mirza : Kaboul, Ghazni, Kandahar, Peshawar (Humayun fugitif au Sind puis en Perse, sans territoire). Rival principal, l'empire des Sur (Afghans, Sher Shah) : Bengale, Bihar, Doab, Agra, Delhi, Pendjab jusqu'à l'Indus (forteresse de Rohtas) ; le Malwa et le Rajasthan seront pris par lui en 1542-1544. Autres : Rajputs de Marwar (Maldeo Rathore, à Jodhpur) et du Mewar, sultanat du Gujarat (Bahadur Shah, mort en 1537), sultanat du Bengale annexé par Sher Shah, Deccan en sultanats, Sind (Arghun puis Tarkhan, Humayun y est accueilli sans appui), Safavides (Tahmasp, chez qui Humayun trouve refuge en 1544), Ouzbeks.",
+      "battle": {
+        "belligerents": [
+          "Humayun (Moghols)",
+          "Sher Shah Suri (Afghans de Bihar et du Bengale)"
+        ],
+        "commanders": [
+          "Humayun",
+          "Askari Mirza",
+          "Hindal Mirza",
+          "Sher Shah Suri"
+        ],
+        "outcome": "Victoire décisive de Sher Shah ; fuite de Humayun",
+        "forces": "Humayun : environ 40 000 hommes selon les chroniques, plutôt moins ; Sher Shah : 15 000 à 50 000 (très incertain)",
+        "losses": "Défaite complète de Humayun, dont l'armée se débande ; pertes mal connues"
+      },
+      "armies": [
+        {
+          "side": "Humayun",
+          "from": "Agra",
+          "faction": "moghols",
+          "path": [
+            [
+              78.01,
+              27.18
+            ],
+            [
+              79.02,
+              26.78
+            ],
+            [
+              79.92,
+              27.05
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Sher Shah Suri",
+          "from": "Sasaram",
+          "faction": "afghans",
+          "path": [
+            [
+              84.03,
+              24.95
+            ],
+            [
+              83,
+              25.32
+            ],
+            [
+              81.85,
+              25.43
+            ],
+            [
+              80.35,
+              26.45
+            ],
+            [
+              79.92,
+              27.05
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Sher Shah Suri",
+          "role": "Fondateur du sultanat afghan des Sur",
+          "faction": "afghans",
+          "archetype": "sultan",
+          "position": [
+            79.94,
+            27.05
+          ],
+          "person": "sher-shah-suri"
+        },
+        {
+          "name": "Humayun",
+          "role": "Deuxième empereur moghol, en fuite",
+          "faction": "moghols",
+          "archetype": "shah",
+          "position": [
+            79.88,
+            27.04
+          ],
+          "person": "humayun"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Humâyûn",
+          "url": "https://fr.wikipedia.org/wiki/Humâyûn"
+        },
+        {
+          "label": "Wikipédia — Sher Shah Suri",
+          "url": "https://fr.wikipedia.org/wiki/Sher_Shah_Suri"
+        },
+        {
+          "label": "Abraham Eraly, The Mughal Throne (Phoenix)"
+        }
+      ]
+    },
+    {
+      "id": "retour-humayun-1555",
+      "year": 1555,
+      "title": "Humayun reprend Delhi",
+      "type": "politique",
+      "location": [
+        76.43,
+        30.64
+      ],
+      "zoom": 5,
+      "summary": "Après quinze ans d'exil, Humayun, aidé par la Perse, reprend Kaboul puis bat les Sur à Sirhind (juin 1555) et rentre à Delhi en juillet ; il meurt six mois plus tard.",
+      "details": "Humayun n'a jamais renoncé. Avec les soldats prêtés par le shah de Perse, il reprend **Kandahar** en 1545 (que, malgré sa promesse, il garde), puis **Kaboul**, où il affronte son frère Kamran. Celui-ci, capturé en 1553, est aveuglé : un des épisodes les plus sombres de la famille. Pendant ce temps, l'empire de **Sher Shah** s'effondre. Sher Shah meurt en 1545 en assiégeant Kalinjar, et ses successeurs, les Sur, se déchirent en guerres civiles.\n\nEn novembre 1554, Humayun franchit l'Indus avec une armée assez modeste, sous la conduite de son fidèle général **Bairam Khan**. Il prend Lahore et bat, en juin 1555, **Sikandar Sur** à **Sirhind**, au sud du Sutlej. Le **23 juillet 1555**, il rentre à **Delhi**, quinze ans après l'avoir quittée. Il charge son fils **Akbar**, alors âgé de douze ans, du gouvernement du Pendjab.\n\nMais Humayun ne profite pas longtemps de son retour : le **24 janvier 1556**, en descendant de sa bibliothèque, il glisse dans l'escalier et meurt quelques jours plus tard. Il était un homme érudit, amateur d'astronomie. Son tombeau à Delhi, achevé vers 1570 (inspiré de modèles persans), préfigure le Taj Mahal. L'empire repose désormais sur un garçon de treize ans.",
+      "consequences": [
+        "Humayun récupère le Pendjab, Delhi et Agra : l'empire moghol renaît, appuyé sur Kaboul et Kandahar.",
+        "Le sultanat des Sur éclate en prétendants rivaux (Sikandar, Ibrahim, Adil Shah), ce qui facilite la reconquête.",
+        "L'influence persane s'installe à la cour : artistes et lettrés safavides accompagnent Humayun, d'où la future miniature moghole.",
+        "La mort soudaine de Humayun (janvier 1556) laisse un enfant, Akbar, face à de nouveaux dangers."
+      ],
+      "territory": "retour-humayun-1555",
+      "territoryNote": "Domaine moghol en 1555-56 : Kaboul et Ghazni, Kandahar, Badakhchan (Mirza Sulayman, sous suzeraineté), Peshawar, Pendjab entier (Lahore, Sirhind), Delhi et Agra occupées. Rivaux Sur : Sikandar Sur (Siwaliks, au nord du Pendjab), Muhammad Adil Shah Sur et son ministre Hemu (Chunar, Gwalior, Agra-est), Ibrahim Sur (Bayana), sultanat du Bengale (Muhammad Shah Gauda). Autres : Malwa (Baz Bahadur), Rajputs du Mewar et du Marwar, Gujarat, Khandesh, Deccan en sultanats, Sind, Multan, Cachemire (Chak), Safavides (Tahmasp, qui reprendra Kandahar en 1558), Ouzbeks.",
+      "battle": {
+        "belligerents": [
+          "Humayun (Moghols)",
+          "Sikandar Sur (Afghans)"
+        ],
+        "commanders": [
+          "Humayun",
+          "Bairam Khan",
+          "Akbar",
+          "Sikandar Sur"
+        ],
+        "outcome": "Victoire moghole à Sirhind ; retour à Delhi le 23 juillet 1555",
+        "forces": "Moghols : 15 000 à 20 000 hommes selon les chroniques ; Sur : environ 30 000 à 80 000 (discuté)",
+        "losses": "Mal connues ; défaite complète de Sikandar"
+      },
+      "armies": [
+        {
+          "side": "Armée de Humayun",
+          "from": "Kaboul",
+          "faction": "moghols",
+          "path": [
+            [
+              69.17,
+              34.53
+            ],
+            [
+              71.57,
+              34.01
+            ],
+            [
+              74.34,
+              31.55
+            ],
+            [
+              76.43,
+              30.64
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Sikandar Sur",
+          "from": "Delhi",
+          "faction": "afghans",
+          "path": [
+            [
+              77.23,
+              28.61
+            ],
+            [
+              76.7,
+              30.2
+            ],
+            [
+              76.43,
+              30.64
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Humayun",
+          "role": "Empereur moghol de retour",
+          "faction": "moghols",
+          "archetype": "shah",
+          "position": [
+            76.4,
+            30.62
+          ],
+          "person": "humayun"
+        },
+        {
+          "name": "Bairam Khan",
+          "role": "Général de Humayun, futur régent d’Akbar",
+          "faction": "moghols",
+          "archetype": "general",
+          "position": [
+            76.46,
+            30.65
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Humâyûn",
+          "url": "https://fr.wikipedia.org/wiki/Humâyûn"
+        },
+        {
+          "label": "Wikipédia — Bairam Khan",
+          "url": "https://fr.wikipedia.org/wiki/Bairam_Khan"
+        },
+        {
+          "label": "Abraham Eraly, The Mughal Throne (Phoenix)"
+        }
+      ]
+    },
+    {
+      "id": "panipat-1556",
+      "year": 1556,
+      "title": "Seconde bataille de Panipat : Akbar contre Hemu",
+      "type": "bataille",
+      "location": [
+        76.97,
+        29.39
+      ],
+      "zoom": 5,
+      "summary": "Le 5 novembre 1556, l'armée moghole du jeune Akbar, dirigée par son régent Bairam Khan, bat à Panipat le chef hindou Hemu, qui venait de prendre Delhi.",
+      "details": "Humayun est mort en janvier 1556 ; son fils **Akbar**, treize ans, est couronné à Kalanaur, dans le Pendjab, sous la tutelle du général **Bairam Khan**. L'empire est très fragile. À l'est, un ministre du sultan afghan Adil Shah Sur, **Hemu** (Hem Chandra, un hindou issu d'un milieu de marchands), a battu les Moghols à **Tughlaqabad** : le 7 octobre 1556, il prend Delhi, y est proclamé roi sous le nom de **Vikramaditya** et frappe monnaie.\n\nLes conseillers d'Akbar songent à se replier sur Kaboul. Bairam Khan refuse et marche vers Delhi. Le **5 novembre 1556**, à **Panipat**, là où Babur avait vaincu trente ans plus tôt, les deux armées se rencontrent. Hemu, monté sur un éléphant, mène une armée où les éléphants sont nombreux, et la bataille tourne en sa faveur, jusqu'à ce qu'une flèche l'atteigne à l'œil. Ses soldats, le croyant mort, se débandent. Hemu est capturé : selon les chroniques de cour, il est exécuté devant le jeune Akbar, mais le rôle exact de l'enfant-roi fait débat.\n\nDelhi et Agra reviennent aux Moghols. Pendant quatre ans, Bairam Khan gouverne l'empire à la place d'Akbar ; en 1560, l'adolescent le renvoie et prend lui-même le pouvoir.",
+      "consequences": [
+        "Delhi, Agra et le Doab reviennent aux Moghols : la dynastie, hésitante, s'installe pour de bon dans l'Inde du nord.",
+        "L'espoir des Afghans Sur de restaurer leur sultanat s'éteint ; Sikandar Sur se rend en 1557.",
+        "Bairam Khan gouverne en régent jusqu'en 1560, puis Akbar prend le pouvoir à dix-huit ans.",
+        "Hemu reste, pour une partie des Indiens, un héros hindou qui a brièvement gouverné Delhi."
+      ],
+      "territory": "panipat-1556",
+      "territoryNote": "Après Panipat : domaine d'Akbar (régence de Bairam Khan) = Kaboul (gouverné au nom de Mirza Hakim), Punjab, Delhi, Agra, Doab ouest, Mewat ; Kandahar perdue au profit des Safavides en 1558. Vassal nominal : Mirza Sulayman au Badakhchan. Rivaux : Afghans Sur (Sikandar Sur dans les Siwaliks, jusqu'en 1557 ; Adil Shah Sur à Chunar, tué en 1557 par le sultan du Bengale), sultanat du Bengale (Muhammad Shah Gauda), Baz Bahadur du Malwa, Rajputs du Mewar (Udai Singh), du Marwar (Maldeo) et d'Amber (Bharmal, qui se ralliera en 1562), Gondwana (Rani Durgavati à Garha), sultanat du Gujarat, Khandesh, Cachemire (Chak), Sind, Deccan, Safavides (Tahmasp) et Ouzbeks.",
+      "battle": {
+        "belligerents": [
+          "Moghols (Akbar, régent Bairam Khan)",
+          "Hemu (armée hindoue et afghane du nord)"
+        ],
+        "commanders": [
+          "Bairam Khan",
+          "Akbar",
+          "Hemu"
+        ],
+        "outcome": "Victoire moghole ; capture et mort de Hemu",
+        "forces": "Moghols : environ 20 000 ; Hemu : 30 000 à 50 000 hommes et 1 500 éléphants selon certaines chroniques (très incertain)",
+        "losses": "Lourdes pour l'armée de Hemu, qui se disperse après sa chute"
+      },
+      "armies": [
+        {
+          "side": "Moghols de Bairam Khan",
+          "from": "Jalandhar",
+          "faction": "moghols",
+          "path": [
+            [
+              75.58,
+              31.33
+            ],
+            [
+              76.43,
+              30.64
+            ],
+            [
+              76.97,
+              29.39
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Hemu",
+          "from": "Delhi",
+          "faction": "rajputs",
+          "path": [
+            [
+              77.23,
+              28.61
+            ],
+            [
+              76.97,
+              29.39
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Bairam Khan",
+          "role": "Régent et général d’Akbar",
+          "faction": "moghols",
+          "archetype": "general",
+          "position": [
+            76.95,
+            29.36
+          ]
+        },
+        {
+          "name": "Hemu",
+          "role": "Ministre afghan, roi éphémère de Delhi",
+          "faction": "rajputs",
+          "archetype": "general",
+          "position": [
+            76.99,
+            29.4
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Deuxième bataille de Panipat",
+          "url": "https://fr.wikipedia.org/wiki/Deuxième_bataille_de_Panipat"
+        },
+        {
+          "label": "Wikipédia — Akbar",
+          "url": "https://fr.wikipedia.org/wiki/Akbar"
+        },
+        {
+          "label": "Wikipédia — Hemu",
+          "url": "https://fr.wikipedia.org/wiki/Hemu"
+        }
+      ]
+    },
+    {
+      "id": "gujarat-1573",
+      "year": 1573,
+      "title": "Le Gujarat conquis ; Fatehpur Sikri, ville neuve",
+      "type": "bataille",
+      "location": [
+        72.57,
+        23.03
+      ],
+      "zoom": 5,
+      "summary": "Après avoir fondé sa nouvelle capitale de Fatehpur Sikri (1571), Akbar réalise en 1572-1573 une marche éclair sur le Gujarat, riche royaume commerçant, et y bat les rebelles à Sarnal.",
+      "details": "Devenu adulte, Akbar bâtit son empire par la conquête mais aussi par l'alliance : dès 1562 il épouse une princesse rajpute d'Amber, nommée traditionnellement Jodha Bai ou Harkha Bai, et sa famille entre dans l'armée. Il prend les forteresses de **Chittor** (1568) et de **Ranthambore** (1569), symboles de la résistance rajpute. Près du village de **Sikri**, où vit le saint soufi Salim Chishti qui lui a prédit un fils, il fait élever une ville nouvelle, **Fatehpur Sikri**, capitale de 1571 à 1585, en grès rouge.\n\nEn 1572, le **Gujarat**, sultanat fertile ouvert sur le commerce de l'océan Indien (ports de Cambay et de Surat, route du pèlerinage de La Mecque), sombre dans l'anarchie. Les nobles locaux appellent Akbar, tandis que des cousins timourides, les **Mirzas**, le menacent. Akbar prend Ahmedabad fin 1572, puis Surat au début de 1573, et rentre. Quand les Mirzas se révoltent, il parcourt, selon la tradition, environ 800 kilomètres en neuf jours avec un petit détachement et bat les rebelles à **Sarnal**, près d'Ahmedabad (2 septembre 1573).\n\nPour fêter cette victoire, Akbar fait construire à Fatehpur Sikri la **Buland Darwaza**, « Porte de la Victoire ». Le Gujarat apporte à l'empire des revenus considérables et des ports ouverts sur l'Occident (Portugais, plus tard Anglais et Hollandais).",
+      "consequences": [
+        "Le Gujarat, avec Ahmedabad, Cambay et Surat, entre dans l'empire : l'accès à la mer et aux revenus du grand commerce.",
+        "L'empire s'étend du Pendjab à la mer d'Arabie ; Chittor, Ranthambore et le Malwa sont déjà en poche, et l'Inde centrale passe sous contrôle moghol.",
+        "Fatehpur Sikri, capitale de 1571 à 1585, abrite la cour d'Akbar et la Buland Darwaza, avant d'être abandonnée, peut-être faute d'eau.",
+        "Le contact avec les Portugais de Goa et de Daman, maîtres de la côte, commence."
+      ],
+      "territory": "gujarat-1573",
+      "territoryNote": "Domaine d'Akbar en 1573 : Kaboul (Mirza Hakim, demi-frère, vassal nominal), Pendjab, Delhi, Agra, Doab, Rajasthan oriental et central (Ranthambore, Chittor prise en 1568 ; Jaipur-Amber, Bikaner et Jaisalmer vassaux), Malwa, Gondwana (Garha), Gujarat (Ahmedabad, Cambay, Surat ; conquis en 1572-73), Bihar occidental. Rivaux et voisins : Mewar de Rana Pratap (sud-ouest du Rajasthan, Udaipur, Kumbhalgarh), Marwar (Chandrasen), Karrani du Bengale (Sulayman puis Daud, Bihar-Bengale-Orissa), Cachemire (Chaks), Sind (Tarkhan), Khandesh, Ahmednagar, Bijapur, Golconde, Portugais (Goa, Daman, Diu), Safavides (Tahmasp ; Kandahar safavide), Ouzbeks.",
+      "battle": {
+        "belligerents": [
+          "Moghols d'Akbar",
+          "Mirzas timourides rebelles et nobles du Gujarat"
+        ],
+        "commanders": [
+          "Akbar",
+          "Muhammad Husain Mirza",
+          "Ikhtiyar-ul-Mulk"
+        ],
+        "outcome": "Victoire d'Akbar à Sarnal le 2 septembre 1573 ; annexion du Gujarat",
+        "forces": "Akbar : environ 3 000 cavaliers à Sarnal, renforcés ; Mirzas : plusieurs milliers (très incertain)",
+        "losses": "Mal connues"
+      },
+      "armies": [
+        {
+          "side": "Akbar",
+          "from": "Fatehpur Sikri",
+          "faction": "moghols",
+          "path": [
+            [
+              77.66,
+              27.09
+            ],
+            [
+              74.64,
+              26.45
+            ],
+            [
+              73,
+              25.3
+            ],
+            [
+              72.57,
+              23.03
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Mirzas rebelles et nobles du Gujarat",
+          "from": "Surat",
+          "faction": "timourides",
+          "path": [
+            [
+              72.83,
+              21.17
+            ],
+            [
+              72.9,
+              22.3
+            ],
+            [
+              72.57,
+              23.03
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Akbar",
+          "role": "Empereur moghol",
+          "faction": "moghols",
+          "archetype": "shah",
+          "position": [
+            72.6,
+            23.05
+          ],
+          "person": "akbar"
+        },
+        {
+          "name": "Raja Todar Mal",
+          "role": "Ministre des finances, organise l’impôt du Gujarat",
+          "faction": "rajputs",
+          "archetype": "grand-vizir",
+          "position": [
+            72.55,
+            23
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Akbar",
+          "url": "https://fr.wikipedia.org/wiki/Akbar"
+        },
+        {
+          "label": "Wikipédia — Fatehpur Sikri",
+          "url": "https://fr.wikipedia.org/wiki/Fatehpur_Sikri"
+        },
+        {
+          "label": "Wikipédia — Gujarat",
+          "url": "https://fr.wikipedia.org/wiki/Gujarat"
+        }
+      ]
+    },
+    {
+      "id": "haldighati-1576",
+      "year": 1576,
+      "title": "Haldighati : Akbar contre Rana Pratap",
+      "type": "bataille",
+      "location": [
+        73.69,
+        24.89
+      ],
+      "zoom": 5.2,
+      "summary": "Le 18 juin 1576, dans un défilé du Mewar, une armée moghole menée par le rajput Man Singh affronte Rana Pratap, qui refuse de se soumettre : bataille indécise, mais le Rana se replie.",
+      "details": "La plupart des Rajputs ont fini par se rallier à Akbar : leurs rois deviennent généraux et gouverneurs, leurs filles épousent des princes moghols. Seul le **Mewar**, dont la fierté vient de Chittor, résiste. Son chef, **Rana Pratap**, refuse d'envoyer l'hommage demandé par Akbar. Celui-ci charge en 1576 le **raja Man Singh** d'Amber, un Rajput lui-même, d'abattre la résistance.\n\nLe **18 juin 1576**, dans le défilé de **Haldighati** (le « col de terre jaune »), les cavaliers de Pratap chargent les avant-gardes mogholes, dans un combat de quatre heures par une chaleur écrasante. Un cheval célèbre, **Chetak**, aurait sauvé son maître, mais le fait relève en grande partie de la légende. Les Moghols ont l'avantage du nombre et du feu, et Pratap se retire dans les collines.\n\nCe n'est donc pas une victoire nette : les Moghols n'achèvent pas leur adversaire, et Man Singh est critiqué pour ne l'avoir pas poursuivi. Les historiens divergent : certains y voient une victoire tactique moghole, d'autres une défaite stratégique, car Pratap, en guérilla, reprendra la plus grande partie du Mewar (sauf Chittor) avant sa mort en 1597. La tradition rajpute et l'Inde moderne le célèbrent comme un symbole de résistance.",
+      "consequences": [
+        "Les forces du Mewar sont chassées de la plaine mais gardent les montagnes : Rana Pratap mène une guérilla et reprend peu à peu le territoire, hors Chittor.",
+        "L'alliance entre Moghols et grands clans rajputs (Amber, Bikaner, Marwar) est confortée : Man Singh devient l'un des principaux généraux d'Akbar.",
+        "Le Mewar restera le seul grand royaume rajput hors de l'empire jusqu'en 1615, quand Jahangir signe la paix.",
+        "Pratap devient, dans la mémoire populaire, un héros de la résistance hindoue ; Akbar, lui, y gagne la réputation d'un souverain qui préfère souvent l'alliance à la force."
+      ],
+      "territory": "haldighati-1576",
+      "territoryNote": "Domaine d'Akbar en 1576 : Kaboul (Mirza Hakim, vassal nominal), Pendjab, Delhi, Agra, Doab, Rajasthan sauf Mewar (Amber, Bikaner, Jaisalmer, Ajmer, vassaux ou intégrés), Malwa, Gondwana, Gujarat, Bihar et Bengale occidental (conquis 1574-76 après la chute de Daud Karrani à Rajmahal). Rivaux : Mewar de Rana Pratap (montagnes d'Udaipur, Kumbhalgarh, Gogunda), Marwar de Chandrasen en lutte, Karrani d'Orissa, Cachemire (Chaks), Sind (Tarkhan), Khandesh (Miran Mubarak), Ahmednagar, Bijapur, Golconde, Portugais de Goa, Daman et Diu, Safavides (Kandahar), Ouzbeks.",
+      "battle": {
+        "belligerents": [
+          "Moghols (Man Singh d'Amber, contingents rajputs)",
+          "Mewar (Rana Pratap)"
+        ],
+        "commanders": [
+          "Man Singh",
+          "Asaf Khan",
+          "Rana Pratap",
+          "Hakim Khan Sur"
+        ],
+        "outcome": "Indécise : victoire tactique moghole, mais Pratap se replie et reprend la guérilla",
+        "forces": "Moghols : 5 000 à 10 000 ; Mewar : 3 000 à 4 000 environ, dont des archers bhils (très incertain)",
+        "losses": "Pertes importantes des deux côtés ; Pratap perd plusieurs chefs de clan"
+      },
+      "armies": [
+        {
+          "side": "Moghols de Man Singh",
+          "from": "Ajmer",
+          "faction": "moghols",
+          "path": [
+            [
+              74.64,
+              26.45
+            ],
+            [
+              74.1,
+              25.4
+            ],
+            [
+              73.69,
+              24.89
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Rana Pratap",
+          "from": "Kumbhalgarh",
+          "faction": "rajputs",
+          "path": [
+            [
+              73.58,
+              25.15
+            ],
+            [
+              73.55,
+              24.77
+            ],
+            [
+              73.69,
+              24.89
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Rana Pratap",
+          "role": "Roi du Mewar, symbole de résistance",
+          "faction": "rajputs",
+          "archetype": "roi",
+          "position": [
+            73.66,
+            24.88
+          ],
+          "person": "rana-pratap"
+        },
+        {
+          "name": "Raja Man Singh",
+          "role": "Général rajput d’Akbar",
+          "faction": "rajputs",
+          "archetype": "general",
+          "position": [
+            73.72,
+            24.9
+          ],
+          "person": "man-singh"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Haldighati",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Haldighati"
+        },
+        {
+          "label": "Wikipédia — Maharana Pratap",
+          "url": "https://fr.wikipedia.org/wiki/Maharana_Pratap"
+        },
+        {
+          "label": "Wikipédia — Man Singh Ier",
+          "url": "https://fr.wikipedia.org/wiki/Man_Singh_Ier"
+        }
+      ]
+    },
+    {
+      "id": "din-i-ilahi-1582",
+      "year": 1582,
+      "title": "Akbar, la tolérance et la « Din-i Ilahi »",
+      "type": "réforme",
+      "location": [
+        77.66,
+        27.09
+      ],
+      "zoom": 5,
+      "summary": "À Fatehpur Sikri, Akbar organise des débats entre religions, abolit la taxe sur les non-musulmans (djizîa) et lance vers 1582 un cercle spirituel, la Din-i Ilahi.",
+      "details": "Sunnite de naissance, Akbar règne sur une population majoritairement hindoue. Pour gouverner, il abandonne peu à peu la contrainte : en 1563 il supprime la taxe sur les pèlerins hindous, en **1564** la **djizîa**, impôt payé par les non-musulmans. Il nomme des hindous (le ministre des finances **Todar Mal**, le conseiller **Birbal**) à de hauts postes. L'idée directrice, formulée par son ami et chroniqueur **Abu'l-Fazl**, est la **sulh-i kull**, « paix universelle » avec tous.\n\nEn 1575, il fait bâtir à Fatehpur Sikri l'**Ibadat Khana**, « maison de l'adoration », où des théologiens musulmans, des brahmanes, des jaïns, des zoroastriens et des jésuites venus de Goa (dès 1580) débattent devant lui. En 1579, un décret le déclare arbitre en matière religieuse. Vers **1582**, il lance un cercle spirituel, la **Din-i Ilahi** (« religion divine »), fondé sur la fidélité à l'empereur, la sagesse et la vertu.\n\nLes historiens divergent : ce ne fut sans doute pas une religion nouvelle, plutôt une confrérie de quelques dizaines de disciples (dont Birbal), et le terme même serait postérieur. Les oulémas conservateurs critiquent Akbar, qu'ils jugent apostat. Mais sa politique d'ouverture, qui réconcilie hindous et musulmans, fait de son règne un modèle de stabilité pour l'empire. En 1585 la cour quitte Fatehpur Sikri pour Lahore.",
+      "consequences": [
+        "Les hindous, notamment les Rajputs et les castes lettrées, accèdent largement à l'administration et à l'armée : l'empire gagne sa stabilité.",
+        "L'abolition de la djizîa et des taxes de pèlerinage améliore la vie quotidienne des sujets non musulmans (la taxe sera rétablie par Aurangzeb en 1679).",
+        "La Din-i Ilahi reste une élite restreinte, sans lui survivre ; Jahangir ne la poursuit pas.",
+        "L'ouverture d'Akbar nourrit des tensions avec le clergé sunnite, dont certains courants (Sirhindi) réclameront un retour à l'orthodoxie."
+      ],
+      "territory": "din-i-ilahi-1582",
+      "territoryNote": "Domaine d'Akbar vers 1582 : Kaboul (Mirza Hakim, vassal nominal jusqu'à sa mort en 1585, puis intégré), Pendjab (Lahore), Delhi, Agra, Doab, Rajasthan sauf Mewar (Amber, Bikaner, Jaisalmer, Marwar annexé, Bundi, vassaux), Malwa, Gujarat, Bihar, Bengale (révoltes des officiers) ; Orissa karrani résiste jusqu'en 1592. Rivaux : Mewar de Rana Pratap, Cachemire des Chaks (pris en 1586), Sind des Tarkhan (pris en 1591), Khandesh, Ahmednagar, Bijapur, Golconde, Portugais (Goa, Daman, Diu), Safavides (Kandahar safavide ; Mohammed Khodabandeh), Ouzbeks d'Abdullah Khan à Balkh.",
+      "figures": [
+        {
+          "name": "Akbar",
+          "role": "Empereur de la tolérance",
+          "faction": "moghols",
+          "archetype": "shah",
+          "quote": "(formule libre) La paix avec tous : voilà le fondement de mon gouvernement (sulh-i kull)",
+          "position": [
+            77.66,
+            27.09
+          ],
+          "person": "akbar"
+        },
+        {
+          "name": "Abu'l-Fazl",
+          "role": "Ministre, penseur et chroniqueur de l’Akbarnama",
+          "faction": "moghols",
+          "archetype": "sage",
+          "position": [
+            77.64,
+            27.1
+          ],
+          "person": "abul-fazl"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Din-i Ilahi",
+          "url": "https://fr.wikipedia.org/wiki/Din-i_Ilahi"
+        },
+        {
+          "label": "Wikipédia — Akbar",
+          "url": "https://fr.wikipedia.org/wiki/Akbar"
+        },
+        {
+          "label": "Wikipédia — Fatehpur Sikri",
+          "url": "https://fr.wikipedia.org/wiki/Fatehpur_Sikri"
+        }
+      ]
+    },
+    {
+      "id": "kandahar-1622",
+      "year": 1622,
+      "title": "Kandahar perdue face aux Safavides",
+      "type": "chute",
+      "location": [
+        65.71,
+        31.61
+      ],
+      "zoom": 5,
+      "summary": "En 1622, après 45 jours de siège, le shah de Perse Abbas Ier prend Kandahar, que les Moghols tenaient depuis 1595 : la forteresse, clé de l'Afghanistan, devient un enjeu pour des décennies.",
+      "details": "Kandahar est la porte entre l'Iran et l'Inde. Les Moghols de Babur l'ont possédée dès 1522, les Safavides la reprennent en 1558, puis **Akbar** la récupère en 1595 sans combat, par la défection d'un gouverneur persan. Sous **Jahangir** (empereur de 1605 à 1627), la cour est brillante : elle accueille l'ambassadeur anglais Sir Thomas Roe, protège les arts et subit l'influence de l'impératrice **Nur Jahan**. Mais la défense du nord-ouest est négligée.\n\nLe shah safavide **Abbas Ier le Grand**, qui a mis fin à la menace ottomane et ouzbèke, assiège Kandahar au printemps 1622. Jahangir ordonne à son fils **Khurram** (le futur Shah Jahan) de secourir la place, mais celui-ci, inquiet de la montée de Nur Jahan et de ses propres rivaux, refuse de partir et se révolte peu après (1622-1626). Après environ 45 jours de siège, la garnison se rend, vers juin 1622 selon la plupart des récits.\n\nLes Moghols reprendront Kandahar en 1638 grâce à la défection de son gouverneur persan, puis la perdront définitivement en 1649, malgré les sièges ruineux conduits par Aurangzeb et Dara Shikoh en 1649, 1652 et 1653. Pour les Moghols, la perte de cette citadelle pèse longtemps sur le prestige et les finances.",
+      "consequences": [
+        "Kandahar repasse aux Safavides ; la frontière moghole se retire sur Kaboul, Ghazni et le Sind.",
+        "La rébellion de Khurram (1622-1626) détourne l'armée de la frontière et affaiblit l'empire.",
+        "La forteresse changera encore de mains (moghole en 1638, perse en 1649), au prix de campagnes coûteuses.",
+        "Moghols et Safavides, deux dynasties persanisées, resteront rivaux autour de l'Afghanistan."
+      ],
+      "territory": "kandahar-1622",
+      "territoryNote": "Domaine de Jahangir en 1622 : Kaboul, Ghazni, Peshawar, Pendjab, Kashmir, Sind, Multan, Delhi, Agra, Doab, Rajasthan (Mewar vassal depuis 1615), Gujarat, Malwa, Khandesh, Bihar, Bengale, Orissa ; Berar et nord d'Ahmednagar disputés avec Malik Ambar. Kandahar perdue en 1622. Vassaux ou tributaires : royaumes rajputs (Amber, Mewar, Bikaner, Bundi), Bundelas d'Orchha. Rivaux : Safavides (Abbas Ier, Kandahar), Ouzbeks (Balkh), sultanats du Deccan (Ahmednagar de Malik Ambar, Bijapur, Golconde, encore indépendants), Ahom d'Assam, Arakan, Portugais (Goa, Daman, Diu, Hughli), Compagnie anglaise (Surat depuis 1613), Hollandais.",
+      "battle": {
+        "belligerents": [
+          "Safavides de Perse (Abbas Ier)",
+          "Garnison moghole de Kandahar (Jahangir)"
+        ],
+        "commanders": [
+          "Shah Abbas Ier",
+          "Daulat Khan, gouverneur de Kandahar"
+        ],
+        "outcome": "Prise de Kandahar par les Safavides après 45 jours de siège",
+        "forces": "Safavides : plusieurs dizaines de milliers d'hommes (chiffres incertains) ; garnison moghole : quelques milliers ; renforts jamais arrivés",
+        "losses": "Mal connues"
+      },
+      "armies": [
+        {
+          "side": "Safavides d’Abbas Ier",
+          "from": "Hérat",
+          "faction": "safavides",
+          "path": [
+            [
+              62.2,
+              34.35
+            ],
+            [
+              62.1,
+              32.37
+            ],
+            [
+              63.3,
+              31.7
+            ],
+            [
+              65.71,
+              31.61
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Garnison et renforts moghols",
+          "from": "Kaboul",
+          "faction": "moghols",
+          "path": [
+            [
+              69.17,
+              34.53
+            ],
+            [
+              68.42,
+              33.55
+            ],
+            [
+              67.1,
+              32.3
+            ],
+            [
+              65.71,
+              31.61
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Abbas Ier",
+          "role": "Shah de Perse, vainqueur de Kandahar",
+          "faction": "safavides",
+          "archetype": "shah",
+          "position": [
+            65.68,
+            31.6
+          ]
+        },
+        {
+          "name": "Jahangir",
+          "role": "Empereur moghol",
+          "faction": "moghols",
+          "archetype": "shah",
+          "position": [
+            74.34,
+            31.55
+          ],
+          "person": "jahangir"
+        },
+        {
+          "name": "Nur Jahan",
+          "role": "Impératrice et conseillère de Jahangir",
+          "faction": "moghols",
+          "archetype": "sultane",
+          "position": [
+            74.35,
+            31.56
+          ],
+          "person": "nur-jahan"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Jahângir",
+          "url": "https://fr.wikipedia.org/wiki/Jahângir"
+        },
+        {
+          "label": "Wikipédia — Abbas Ier le Grand",
+          "url": "https://fr.wikipedia.org/wiki/Abbas_Ier_le_Grand"
+        },
+        {
+          "label": "Wikipédia — Kandahar",
+          "url": "https://fr.wikipedia.org/wiki/Kandahar"
+        }
+      ]
+    },
+    {
+      "id": "taj-mahal-1632",
+      "year": 1632,
+      "title": "Le Taj Mahal, tombeau d’amour",
+      "type": "fondation",
+      "location": [
+        78.04,
+        27.175
+      ],
+      "zoom": 5.5,
+      "summary": "Après la mort de son épouse Mumtaz Mahal en 1631, Shah Jahan lance à Agra, sur la Yamuna, la construction du Taj Mahal en marbre blanc : son plus beau monument, achevé vers 1653.",
+      "details": "**Shah Jahan** (règne de 1628 à 1658) porte l'empire au sommet de sa richesse. Il aime les chantiers : il bâtira le Fort Rouge et la grande mosquée de Delhi, et fonde en 1639-1648 une nouvelle capitale, **Shahjahanabad**. Mais c'est un deuil qui fait naître son chef-d'œuvre. Son épouse préférée, **Mumtaz Mahal** (« la Lumière du palais »), meurt en juin 1631 en mettant au monde leur quatorzième enfant, à Burhanpur, pendant une campagne au Deccan.\n\nEn 1632, le chantier du **Taj Mahal** commence à Agra, sur la rive de la Yamuna. Un tombeau à coupole de marbre blanc, d'environ 73 mètres de haut avec ses minarets, s'élève au fond d'un jardin à quatre parties (*charbagh*, un paysage de paradis hérité de la Perse). On y emploie, dit la tradition, environ 20 000 ouvriers ; le mausolée est achevé vers 1643, l'ensemble vers 1653. L'architecte principal, selon les sources, serait **Ustad Ahmad Lahori** ; le coût, souvent donné en dizaines de millions de roupies, reste incertain.\n\nDes légendes circulent : le prétendu projet d'un Taj « noir » en face, ou les mains coupées des artisans, n'ont aucune preuve sérieuse. Le monument, inscrit à l'Unesco en 1983, résume l'art moghol : symétrie persane, ornements de pierres dures incrustées, calligraphies du Coran.",
+      "consequences": [
+        "Le Taj Mahal devient le symbole de l'architecture moghole et l'un des monuments les plus visités du monde.",
+        "Le coût des chantiers (Taj, Fort Rouge, Shahjahanabad) pèse sur le Trésor, alors que l'empire s'agrandit au Deccan.",
+        "Shah Jahan transfère sa cour à Shahjahanabad (Delhi) en 1648 ; Agra perd son rôle de capitale.",
+        "La mort de Mumtaz Mahal est aussi un deuil politique : ses fils se disputeront bientôt le trône."
+      ],
+      "territory": "taj-mahal-1632",
+      "territoryNote": "Domaine de Shah Jahan en 1632 : Kaboul, Ghazni, Peshawar, Pendjab, Cachemire, Sind, Multan, Delhi, Agra, Doab, Rajasthan, Gujarat, Malwa, Khandesh, Berar, Bihar, Bengale (Hughli pris aux Portugais en 1632), Orissa. Kandahar perdue (persane jusqu'en 1638). Vassaux : royaumes rajputs (Amber, Marwar, Mewar, Bikaner, Bundi), Bundelas (Orchha, écrasés en 1635). Rivaux : Ahmednagar de Murtaza Nizam Shah III (annexé en 1633), sultanats de Bijapur (Muhammad Adil Shah) et de Golconde (Abdullah Qutb Shah) encore indépendants, Safavides (Shah Safi), Ouzbeks (Balkh), Ahom d'Assam, Arakan, Portugais de Goa et Daman, Compagnie anglaise et Hollandais à Surat.",
+      "figures": [
+        {
+          "name": "Shah Jahan",
+          "role": "Empereur bâtisseur du Taj Mahal",
+          "faction": "moghols",
+          "archetype": "shah",
+          "position": [
+            78.04,
+            27.18
+          ],
+          "person": "shah-jahan"
+        },
+        {
+          "name": "Mumtaz Mahal",
+          "role": "Épouse favorite, à qui le tombeau est dédié",
+          "faction": "moghols",
+          "archetype": "sultane",
+          "position": [
+            78.045,
+            27.173
+          ],
+          "person": "mumtaz-mahal"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Taj Mahal",
+          "url": "https://fr.wikipedia.org/wiki/Taj_Mahal"
+        },
+        {
+          "label": "Wikipédia — Shâh Jahân",
+          "url": "https://fr.wikipedia.org/wiki/Shâh_Jahân"
+        },
+        {
+          "label": "Wikipédia — Mumtaz Mahal",
+          "url": "https://fr.wikipedia.org/wiki/Mumtaz_Mahal"
+        }
+      ]
+    },
+    {
+      "id": "samugarh-1658",
+      "year": 1658,
+      "title": "Samugarh : Aurangzeb s’empare du trône",
+      "type": "bataille",
+      "location": [
+        78.11,
+        27.17
+      ],
+      "zoom": 5,
+      "summary": "Le 29 mai 1658, à Samugarh près d'Agra, Aurangzeb et son frère Murad battent Dara Shikoh, l'héritier désigné. Shah Jahan est enfermé et Aurangzeb règne sous le nom d'Alamgir.",
+      "details": "En septembre 1657, Shah Jahan tombe gravement malade. Ses quatre fils, tous gouverneurs de provinces, se disputent la succession. L'aîné, **Dara Shikoh**, érudit, curieux des textes hindous (il fait traduire les Upanishads), est le favori de son père. Ses frères : **Shah Shuja** au Bengale, **Murad Bakhsh** au Gujarat, et **Aurangzeb**, gouverneur du Deccan, pieux, brillant général et intrigant. Shah Shuja marche sur Agra mais est battu ; Aurangzeb et Murad s'allient, battent les troupes de Dara et du maharaja du Marwar, **Jaswant Singh**, à Dharmatpur (avril 1658).\n\nLe **29 mai 1658**, à **Samugarh**, à une douzaine de kilomètres d'Agra, ils affrontent Dara. L'armée de Dara est plus nombreuse, mais ses chefs sont désunis, et la bataille tourne quand son éléphant est touché : Dara en descend, et ses soldats, le croyant mort, s'enfuient. Le récit est célèbre, mais sa part de légende est discutée.\n\nAurangzeb entre à Agra, fait emprisonner **Shah Jahan** dans le fort, où il mourra en 1666. Il fait bientôt éliminer Murad, puis traque Dara, qui est livré et exécuté en 1659. Il est couronné à Delhi en 1658 sous le nom d'**Alamgir** (« conquérant du monde »).",
+      "consequences": [
+        "Aurangzeb devient empereur à quarante ans ; il régnera jusqu'en 1707, près d'un demi-siècle.",
+        "Dara Shikoh, Murad et Shah Shuja sont éliminés ; Shah Jahan reste prisonnier à Agra jusqu'à sa mort (1666).",
+        "L'idéal de dialogue entre religions que représentait Dara s'efface devant un pouvoir plus attaché à la loi islamique.",
+        "La guerre de succession à chaque mort d'empereur reste la grande faiblesse de la dynastie."
+      ],
+      "territory": "samugarh-1658",
+      "territoryNote": "Domaine en 1658 : Kaboul, Ghazni, Peshawar, Pendjab, Cachemire, Sind, Multan, Delhi, Agra, Doab, Rajasthan, Gujarat, Malwa, Khandesh, Berar, subah du Deccan (Aurangabad, Ahmednagar, Bidar), Bihar, Bengale, Orissa. Kandahar perdue en 1649. Vassaux ou tributaires : royaumes rajputs (Marwar de Jaswant Singh, Mewar, Amber, Bikaner, Bundi), sultanats de Bijapur et de Golconde (tributaires depuis 1636). Rivaux : Safavides (Abbas II, Kandahar), Shivaji (naissant, Pune, sous suzeraineté de Bijapur), Ahom d'Assam, Arakan, Portugais (Goa, Daman), Compagnie anglaise et Hollandais à Surat.",
+      "battle": {
+        "belligerents": [
+          "Aurangzeb et Murad Bakhsh",
+          "Dara Shikoh (armée impériale)"
+        ],
+        "commanders": [
+          "Aurangzeb",
+          "Murad Bakhsh",
+          "Dara Shikoh",
+          "Jaswant Singh"
+        ],
+        "outcome": "Victoire d'Aurangzeb ; fuite de Dara vers Lahore",
+        "forces": "Aurangzeb et Murad : 40 000 environ ; Dara : 50 000 à 100 000 selon les sources (très discuté)",
+        "losses": "Lourdes du côté de Dara ; déroute après la chute de son éléphant"
+      },
+      "armies": [
+        {
+          "side": "Aurangzeb et Murad",
+          "from": "Aurangabad",
+          "faction": "moghols",
+          "path": [
+            [
+              75.34,
+              19.88
+            ],
+            [
+              76.23,
+              21.31
+            ],
+            [
+              75.78,
+              23.18
+            ],
+            [
+              77.9,
+              26.7
+            ],
+            [
+              78.11,
+              27.17
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Dara Shikoh",
+          "from": "Agra",
+          "faction": "moghols",
+          "path": [
+            [
+              78.01,
+              27.18
+            ],
+            [
+              78.11,
+              27.17
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Aurangzeb",
+          "role": "Prince victorieux, futur Alamgir",
+          "faction": "moghols",
+          "archetype": "shah",
+          "position": [
+            78.13,
+            27.17
+          ],
+          "person": "aurangzeb"
+        },
+        {
+          "name": "Dara Shikoh",
+          "role": "Fils aîné et héritier, vaincu",
+          "faction": "moghols",
+          "archetype": "sultan",
+          "position": [
+            78.08,
+            27.17
+          ],
+          "person": "dara-shikoh"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Samugarh",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Samugarh"
+        },
+        {
+          "label": "Wikipédia — Aurangzeb",
+          "url": "https://fr.wikipedia.org/wiki/Aurangzeb"
+        },
+        {
+          "label": "Wikipédia — Dârâ Shikôh",
+          "url": "https://fr.wikipedia.org/wiki/Dârâ_Shikôh"
+        }
+      ]
+    },
+    {
+      "id": "raigad-1674",
+      "year": 1674,
+      "title": "Shivaji couronné à Raigad",
+      "type": "fondation",
+      "location": [
+        73.44,
+        18.23
+      ],
+      "zoom": 5,
+      "summary": "Le 6 juin 1674, Shivaji se fait couronner « Chhatrapati » (roi) à Raigad, dans les collines de l'ouest : l'État marathe, né en résistance aux Moghols et à Bijapur, s'affirme comme royaume.",
+      "details": "Les **Marathes** sont un peuple de langue marathi, paysans et guerriers des monts Sahyadri (Maharashtra actuel). **Shivaji Bhonsle** (né en 1630) grandit au service du sultanat de **Bijapur**. Il s'empare de forts de montagne (Torna en 1646), en 1659 attire et tue à **Pratapgarh** le général bijapuri Afzal Khan, puis tient tête aux Moghols : il pille Surat en 1664 et doit se soumettre au traité de Purandar (1665), avant de s'évader d'Agra en 1666 où Aurangzeb le gardait en résidence surveillée.\n\nLe 6 juin 1674, dans sa capitale, la forteresse de **Raigad**, il fait célébrer par un brahmane de Bénarès, **Gaga Bhatt**, un couronnement à la manière des anciens rois hindous, avec le titre de **Chhatrapati** (« maître du parasol »). Le geste est politique : il donne légitimité à un chef que ses adversaires traitaient de brigand.\n\nSon État repose sur une armée légère de cavaliers, des forts de montagne et une marine. Il ne couvre qu'une partie du Maharashtra, bien moins que l'empire d'Aurangzeb, mais il tient bon. À la mort de Shivaji (1680), les Marathes sont déjà prêts à affronter la longue guerre que lancera Aurangzeb contre eux à partir de 1681.",
+      "consequences": [
+        "Un royaume marathe indépendant existe, avec Raigad pour capitale : territoire de l'ouest du Deccan, du Konkan aux monts Sahyadri.",
+        "Les Marathes deviennent le principal adversaire des Moghols dans le sud, d'où la guerre de vingt-sept ans d'Aurangzeb (1681-1707).",
+        "Le couronnement donne à Shivaji un statut de roi hindou, rival symbolique du « padishah » moghol.",
+        "Les sultanats de Bijapur et de Golconde se trouvent coincés entre Marathes et Moghols."
+      ],
+      "territory": "raigad-1674",
+      "territoryNote": "Domaine d'Aurangzeb en 1674 : Kaboul (guerre afghane de 1672-1675 contre les Yusufzai et Afridi), Peshawar, Pendjab, Cachemire, Sind, Delhi, Agra, Doab, Rajasthan, Gujarat, Malwa, Khandesh, Berar, subah du Deccan (Aurangabad, Ahmednagar), Bihar, Bengale (Chittagong prise en 1666), Orissa ; Assam repris par les Ahoms en 1667. Vassaux ou tributaires : royaumes rajputs (Marwar, Mewar, Amber), sultanats de Bijapur (Sikandar Adil Shah) et de Golconde (Abul Hasan Tana Shah), Siddis de Janjira (alliés). Rivaux : Marathes de Shivaji (Pune, Konkan, Raigad), Portugais de Goa, Anglais de Bombay, Français de Pondichéry (1674), Hollandais, Jats de Mathura, Safavides (Kandahar).",
+      "figures": [
+        {
+          "name": "Shivaji",
+          "role": "Roi fondateur de l’État marathe",
+          "faction": "marathes",
+          "archetype": "roi",
+          "position": [
+            73.44,
+            18.23
+          ],
+          "person": "shivaji"
+        },
+        {
+          "name": "Aurangzeb",
+          "role": "Empereur moghol",
+          "faction": "moghols",
+          "archetype": "shah",
+          "position": [
+            77.23,
+            28.65
+          ],
+          "person": "aurangzeb"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Shivaji",
+          "url": "https://fr.wikipedia.org/wiki/Shivaji"
+        },
+        {
+          "label": "Wikipédia — Empire marathe",
+          "url": "https://fr.wikipedia.org/wiki/Empire_marathe"
+        },
+        {
+          "label": "Wikipédia — Fort de Raigad",
+          "url": "https://fr.wikipedia.org/wiki/Fort_de_Raigad"
+        }
+      ]
+    },
+    {
+      "id": "golconde-1687",
+      "year": 1687,
+      "title": "Bijapur et Golconde : le Deccan conquis",
+      "type": "bataille",
+      "location": [
+        78.4,
+        17.38
+      ],
+      "zoom": 5,
+      "summary": "Aurangzeb annexe Bijapur en septembre 1686, puis, après un siège de huit mois, Golconde en 1687 : les derniers grands sultanats du Deccan disparaissent et l'empire atteint le sud de l'Inde.",
+      "details": "Depuis 1681, Aurangzeb réside au Deccan, d'abord pour y écraser **Sambhaji**, fils de Shivaji, et son prince rebelle Akbar, réfugié chez les Marathes. Il juge que les sultanats chiites de **Bijapur** et de **Golconde** soutiennent les Marathes, et qu'ils doivent donc être soumis. Bijapur, déjà affaiblie, tombe le **12 septembre 1686** après un siège de dix-huit mois (le sultan Sikandar Adil Shah se rend).\n\nGolconde, sultanat célèbre pour ses diamants (le Koh-i-Noor viendrait, selon la tradition, de ses mines), est plus riche. Son chef, **Abul Hasan Tana Shah**, a un ministre, Madanna, hindou, assassiné en 1686. La forteresse, aux murs hérissés, résiste pendant **huit mois** (janvier-septembre 1687), avec des assauts, des mines et des pluies. Elle finit par tomber, selon la tradition, par la trahison d'un officier qui livre une porte à la fin de septembre. Abul Hasan est emprisonné à Daulatabad, où il mourra.\n\nL'empire atteint alors son maximum territorial dans le sud, et Aurangzeb s'enfonce plus loin encore, jusqu'à la forteresse de **Jinji**, prise en 1698. Mais le prix est élevé : trop loin de Delhi, l'empire devient très difficile à administrer, et les Marathes, divisés mais mobiles, n'ont pas disparu. Sambhaji est capturé et exécuté en 1689.",
+      "consequences": [
+        "Bijapur (1686) et Golconde (1687) sont annexées : le Deccan est entièrement moghol, de la Narmada à la Krishna et au-delà.",
+        "Les trésors de Golconde, ses mines de diamants et l'accès aux ports de la côte de Coromandel enrichissent l'empire.",
+        "La disparition des sultanats supprime un tampon entre Moghols et Marathes : les Marathes envahissent les terres désormais sans défenseurs.",
+        "L'empereur s'installe pour vingt ans au Deccan, loin de la capitale, ce qui affaiblit le contrôle du nord."
+      ],
+      "territory": "golconde-1687",
+      "territoryNote": "Domaine en 1687 : tout le nord (Kaboul, Peshawar, Pendjab, Cachemire, Sind, Delhi, Agra, Doab, Rajasthan, Gujarat, Malwa), Bengale-Bihar-Orissa (Chittagong), plus le Deccan entier : Khandesh, Berar, Aurangabad, Ahmednagar, Bidar, Bijapur annexée (Karnataka du nord) et Golconde (Telangana) annexée en 1687. Vassaux : royaumes rajputs (Amber, Bikaner, Mewar sous le traité de 1681 ; Marwar en révolte depuis 1679). Rivaux : Marathes de Sambhaji (Konkan, ouest du Maharashtra, Panhala), Marathes de Tanjore (Ekoji), Siddis de Janjira (alliés), Mysore (Chikkadevaraja), nayaks de Madurai et de Gingee, Jats et Sikhs en rébellion au nord, Safavides (Kandahar), Ahoms, Portugais de Goa, Anglais de Bombay, Français de Pondichéry.",
+      "battle": {
+        "belligerents": [
+          "Moghols d'Aurangzeb",
+          "Sultanat de Golconde (Qutb Shahi)"
+        ],
+        "commanders": [
+          "Aurangzeb",
+          "Ghazi ud-Din Khan Firuz Jang",
+          "Abul Hasan Tana Shah",
+          "Abdul Razzaq Lari"
+        ],
+        "outcome": "Prise de Golconde après un siège de huit mois ; fin de la dynastie Qutb Shahi",
+        "forces": "Moghols : environ 100 000 hommes selon certaines chroniques (très incertain) ; garnison de Golconde : quelques dizaines de milliers",
+        "losses": "Lourdes des deux côtés ; épidémies et famines dans la région"
+      },
+      "armies": [
+        {
+          "side": "Armée d’Aurangzeb",
+          "from": "Sholapur",
+          "faction": "moghols",
+          "path": [
+            [
+              75.9,
+              17.66
+            ],
+            [
+              75.71,
+              16.83
+            ],
+            [
+              77,
+              17
+            ],
+            [
+              78.4,
+              17.38
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Sultanat de Golconde",
+          "from": "Golconde",
+          "faction": "rajputs",
+          "path": [
+            [
+              78.4,
+              17.38
+            ],
+            [
+              78.45,
+              17.4
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Aurangzeb",
+          "role": "Empereur moghol, conquérant du Deccan",
+          "faction": "moghols",
+          "archetype": "shah",
+          "position": [
+            78.36,
+            17.4
+          ],
+          "person": "aurangzeb"
+        },
+        {
+          "name": "Abul Hasan Tana Shah",
+          "role": "Dernier sultan de Golconde",
+          "faction": "rajputs",
+          "archetype": "sultan",
+          "position": [
+            78.4,
+            17.385
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Siège de Golconde",
+          "url": "https://fr.wikipedia.org/wiki/Siège_de_Golconde"
+        },
+        {
+          "label": "Wikipédia — Sultanat de Golconde",
+          "url": "https://fr.wikipedia.org/wiki/Sultanat_de_Golconde"
+        },
+        {
+          "label": "Wikipédia — Aurangzeb",
+          "url": "https://fr.wikipedia.org/wiki/Aurangzeb"
+        }
+      ]
+    },
+    {
+      "id": "ahmednagar-1707",
+      "year": 1707,
+      "title": "Mort d’Aurangzeb à Ahmednagar",
+      "type": "chute",
+      "location": [
+        74.74,
+        19.09
+      ],
+      "zoom": 4.5,
+      "summary": "Le 3 mars 1707, Aurangzeb meurt à Ahmednagar, âgé de 88 ans, après vingt-six ans de guerre au Deccan. L'empire est à son extension maximale mais épuisé, et se disloque vite.",
+      "details": "À la fin de sa vie, **Aurangzeb** règne sur environ 150 millions de sujets (estimation), de **Kaboul** au sud du **Deccan**, de loin le plus vaste territoire de l'histoire moghole. Pourtant, l'empire est en train de se disloquer. Depuis 1681, la guerre contre les **Marathes** a coûté un nombre énorme de vies (famines, épidémies, pillages) et vidé le Trésor. Les Marathes, devenus rapides et mobiles sous Rajaram puis la régente **Tara Bai**, reprennent les forts aussitôt pris et rançonnent les provinces voisines. Au nord, les **Jats**, les **Sikhs**, les **Rajputs** du Marwar (en révolte depuis 1679) et d'autres se soulèvent contre un pouvoir jugé trop intransigeant : la taxe sur les non-musulmans, la **djizîa**, a été rétablie en 1679.\n\nLe vieil empereur meurt le **3 mars 1707** à **Ahmednagar** ; ses dernières lettres expriment des regrets. Il est enterré, à sa demande, dans une tombe simple à Khuldabad, près d'Aurangabad.\n\nSes fils se disputent aussitôt le trône : Bahadur Shah Ier l'emporte à Jajau (juin 1707). En mai, le chef marathe **Shahu**, retenu prisonnier depuis 1689, est libéré. Les gouverneurs commencent à agir de plus en plus librement. Les historiens discutent de la part de responsabilité d'Aurangzeb : la thèse classique d'un empire ruiné par ses guerres a été nuancée, certains insistant plutôt sur les faiblesses de l'administration et les rivalités des nobles.",
+      "consequences": [
+        "L'empire, à son extension maximale, de Kaboul au Deccan et au Coromandel (Jinji), perd presque aussitôt la maîtrise de ses provinces éloignées.",
+        "Une guerre de succession oppose les fils d'Aurangzeb ; Bahadur Shah Ier l'emporte en 1707.",
+        "La libération de Shahu relance la rivalité entre deux branches marathes ; les Marathes, via les Peshwa, domineront bientôt l'Inde centrale.",
+        "Les gouverneurs d'Awadh, du Bengale et du Deccan préparent leur émancipation."
+      ],
+      "territory": "ahmednagar-1707",
+      "territoryNote": "Extension nominale maximale à la mort d'Aurangzeb : de Kaboul et Peshawar au Bengale-Orissa (Chittagong), du Cachemire à Gingee (Jinji) au sud ; subahs : Kaboul, Lahore, Multan, Thatta (Sind), Cachemire, Delhi, Agra, Awadh, Allahabad, Bihar, Bengale, Orissa, Ajmer, Gujarat, Malwa, Khandesh, Berar, Aurangabad, Bidar, Hyderabad, Bijapur, Carnatic (Arcot). Dans les faits : le Maharashtra occidental et le Konkan sont aux Marathes, qui lèvent des tributs au Deccan ; le Marwar et le Mewar sont en semi-révolte ; Jats (Mathura-Agra), Sikhs (Pendjab, Anandpur), Bundelas, Afghans de Kaboul, Ahoms d'Assam résistent. Vassaux : Amber (Jaipur), Mewar, Bundi, Bikaner. Rivaux : Marathes (Tara Bai à Satara-Panhala, Shahu libéré), Mysore, nayaks de Madurai et de Tanjore, Safavides (Kandahar), Portugais de Goa, Anglais de Bombay et Madras, Français de Pondichéry.",
+      "figures": [
+        {
+          "name": "Aurangzeb",
+          "role": "Empereur moghol mourant, 88 ans",
+          "faction": "moghols",
+          "archetype": "shah",
+          "position": [
+            74.74,
+            19.09
+          ],
+          "person": "aurangzeb"
+        },
+        {
+          "name": "Shahu",
+          "role": "Petit-fils de Shivaji, libéré en 1707",
+          "faction": "marathes",
+          "archetype": "roi",
+          "position": [
+            74.8,
+            19.1
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Aurangzeb",
+          "url": "https://fr.wikipedia.org/wiki/Aurangzeb"
+        },
+        {
+          "label": "Wikipédia — Empire moghol",
+          "url": "https://fr.wikipedia.org/wiki/Empire_moghol"
+        },
+        {
+          "label": "Wikipédia — Guerres moghol-marathes",
+          "url": "https://fr.wikipedia.org/wiki/Guerres_moghol-marathes"
+        }
+      ]
+    },
+    {
+      "id": "karnal-1739",
+      "year": 1739,
+      "title": "Karnal : Nader Shah saccage Delhi",
+      "type": "bataille",
+      "location": [
+        76.98,
+        29.69
+      ],
+      "zoom": 5,
+      "summary": "Le 24 février 1739, le conquérant perse Nader Shah écrase l'armée moghole à Karnal, entre à Delhi, fait massacrer une partie de sa population et emporte le Trône du Paon et des trésors.",
+      "details": "Trente ans après Aurangzeb, l'empire est affaibli. Les gouverneurs d'**Awadh**, du **Bengale** et du **Deccan** (le **Nizam ul-Mulk**, devenu indépendant de fait en 1724 à Hyderabad) agissent comme des princes autonomes ; les **Marathes** lèvent tribut sur le Gujarat et le Malwa. L'empereur **Muhammad Shah** (surnommé « Rangila », le joyeux) préfère les plaisirs à la guerre.\n\n**Nader Shah**, ancien chef de guerre devenu shah de Perse (1736), vient de balayer les restes de l'Afghanistan : il prend Kandahar en 1738, puis Kaboul, Peshawar et Lahore. Le **24 février 1739**, à **Karnal**, au nord de Delhi, son armée de 55 000 à 80 000 hommes, disciplinée et bien dotée en artillerie et mousquets, bat une armée moghole bien plus nombreuse (les chiffres vont de 100 000 à 300 000 soldats avec leurs suivants) mais mal commandée.\n\nMuhammad Shah se rend. Nader entre à **Delhi** en mars. Une rumeur de sa mort provoque une émeute ; en représailles, il laisse massacrer la population le **22 mars** : les estimations vont de 10 000 à 30 000 victimes. Après deux mois de pillage, il repart avec des trésors considérables : le **Trône du Paon**, le diamant du **Koh-i-Noor**, des millions de roupies. Muhammad Shah doit lui céder tous les territoires à l'ouest de l'Indus (Kaboul, Peshawar, Sind).",
+      "consequences": [
+        "L'empire perd tout ce qui est à l'ouest de l'Indus (Kaboul, Peshawar, Thatta) au profit de la Perse de Nader Shah.",
+        "Le sac de Delhi, le Trône du Paon et le Koh-i-Noor emportés montrent la faiblesse militaire de l'empire.",
+        "Le prestige impérial s'effondre ; les gouverneurs d'Awadh, du Bengale et le Nizam agissent désormais comme souverains.",
+        "Les Marathes et, après la mort de Nader (1747), les Afghans d'Ahmad Shah Durrani profitent du vide."
+      ],
+      "territory": "karnal-1739",
+      "territoryNote": "Domaine réel de Muhammad Shah après 1739 : Delhi, Agra, Doab, Pendjab à l'est de l'Indus (Lahore, Multan), Cachemire, Rohilkhand, une partie du Rajasthan sous contrôle lâche ; tout l'ouest de l'Indus (Kaboul, Peshawar, Ghazni, Kandahar, Sind-Thatta) cédé à la Perse de Nader. États qui reconnaissent encore le shah mais agissent seuls (statut vassal) : nawab d'Awadh (Saadat Khan), nawab du Bengale (Shuja ud-Din puis Alivardi Khan), Nizam du Deccan à Hyderabad (Asaf Jah Ier), nawab d'Arcot (Carnatic), royaumes rajputs (Jaipur, Marwar, Mewar). Rivaux : Marathes du Peshwa (Gujarat, Malwa, Bundelkhand), Perse afsharide de Nader Shah, Rohillas, Jats de Bharatpur, Sikhs du Pendjab, Compagnie anglaise (Bombay, Madras, Calcutta), Compagnie française (Pondichéry, Chandernagor).",
+      "battle": {
+        "belligerents": [
+          "Perse afsharide (Nader Shah)",
+          "Empire moghol (Muhammad Shah)"
+        ],
+        "commanders": [
+          "Nader Shah",
+          "Muhammad Shah",
+          "Saadat Khan",
+          "Nizam ul-Mulk"
+        ],
+        "outcome": "Victoire de Nader Shah ; capitulation de Muhammad Shah",
+        "forces": "Nader : 55 000 à 80 000 hommes ; Moghols : 100 000 à plus de 300 000 avec les suivants (chiffres très discutés)",
+        "losses": "Environ 20 000 morts moghols selon certaines sources ; moins de 2 000 côté persan (chiffres incertains)"
+      },
+      "armies": [
+        {
+          "side": "Nader Shah",
+          "from": "Kandahar",
+          "faction": "safavides",
+          "path": [
+            [
+              65.71,
+              31.61
+            ],
+            [
+              69.17,
+              34.53
+            ],
+            [
+              71.57,
+              34.01
+            ],
+            [
+              74.34,
+              31.55
+            ],
+            [
+              76.98,
+              29.69
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée de Muhammad Shah",
+          "from": "Delhi",
+          "faction": "moghols",
+          "path": [
+            [
+              77.23,
+              28.61
+            ],
+            [
+              77.02,
+              28.99
+            ],
+            [
+              76.98,
+              29.69
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Nader Shah",
+          "role": "Shah de Perse, conquérant de Delhi",
+          "faction": "safavides",
+          "archetype": "shah",
+          "position": [
+            76.96,
+            29.7
+          ],
+          "person": "nader-shah"
+        },
+        {
+          "name": "Muhammad Shah",
+          "role": "Empereur moghol « Rangila »",
+          "faction": "moghols",
+          "archetype": "shah",
+          "position": [
+            77,
+            29.68
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Karnal",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Karnal"
+        },
+        {
+          "label": "Wikipédia — Nader Shah",
+          "url": "https://fr.wikipedia.org/wiki/Nader_Shah"
+        },
+        {
+          "label": "Wikipédia — Muhammad Shah",
+          "url": "https://fr.wikipedia.org/wiki/Muhammad_Shah"
+        }
+      ]
+    },
+    {
+      "id": "plassey-1757",
+      "year": 1757,
+      "title": "Plassey : la Compagnie des Indes prend le Bengale",
+      "type": "bataille",
+      "location": [
+        88.25,
+        23.8
+      ],
+      "zoom": 5,
+      "summary": "Le 23 juin 1757, Robert Clive, à la tête d'un petit corps de la Compagnie anglaise des Indes, bat à Plassey le nawab du Bengale Siraj ud-Daula, grâce à la trahison de son général Mir Jafar.",
+      "details": "Le **Bengale**, province la plus riche de l'empire, est gouverné de fait par ses **nawabs**, des gouverneurs héréditaires qui reconnaissent encore le shah de Delhi. Les Européens y ont des comptoirs, notamment la **Compagnie anglaise des Indes orientales** à **Calcutta** et les Français à **Chandernagor**. En 1756, le jeune nawab **Siraj ud-Daula** prend Calcutta ; l'épisode du « trou noir » (prisonniers anglais morts étouffés, dont le nombre est discuté) sert de prétexte à la riposte.\n\nEn 1757, **Robert Clive**, envoyé de Madras, reprend Calcutta, prend Chandernagor aux Français, puis marche contre Siraj ud-Daula. Il a secrètement acheté le général du nawab, **Mir Jafar**, et des banquiers comme les **Jagat Seth**. Le **23 juin 1757**, à **Plassey**, Clive aligne environ 3 000 hommes (900 Européens, 2 100 cipayes, les soldats indiens de la Compagnie) contre une armée de 50 000 hommes selon les récits. Une averse trempe la poudre du nawab ; Mir Jafar et d'autres chefs restent immobiles. Siraj ud-Daula s'enfuit et est tué peu après.\n\nMir Jafar est placé sur le trône du Bengale, en échange de sommes énormes. La Compagnie, de société de commerce, devient une puissance qui fait et défait les gouvernants. À Delhi, l'empereur **Alamgir II** est alors impuissant, assiégé de rivaux (Afghans, Marathes).",
+      "consequences": [
+        "Le Bengale passe sous contrôle de fait de la Compagnie : Mir Jafar, nawab-pantin, lui doit son trône et lui verse des fortunes.",
+        "Le Bengale, riche en soie, en coton, en salpêtre et en impôts, finance la conquête britannique du reste de l'Inde.",
+        "Les Français sont affaiblis dans l'est de l'Inde (Chandernagor perdue).",
+        "L'empereur moghol, absent de l'affaire, voit une de ses plus riches provinces lui échapper sans combat."
+      ],
+      "territory": "plassey-1757",
+      "territoryNote": "Domaine réel du padishah Alamgir II en 1757 : Delhi (Shahjahanabad) et ses alentours immédiats, sous tutelle de son vizir Imad ul-Mulk et des Afghans, puis des Marathes (qui y imposent leur influence dès 1757-1758) ; le Pendjab est perdu au profit d'Ahmad Shah Durrani depuis 1752. États qui le reconnaissent encore nominalement (vassal) : nawab du Bengale (Siraj ud-Daula, puis Mir Jafar ; Bihar et Orissa inclus), nawab d'Awadh (Shuja ud-Daula), Nizam de Hyderabad (Salabat Jang, protégé des Français), nawab du Carnatic (Muhammad Ali). Rivaux : Marathes du Peshwa (Gujarat, Malwa, Orissa en partie), Afghans durrani (Pendjab, Cachemire, Multan, Sind), Rohillas de Najib ud-Daula, Jats de Bharatpur, Sikhs, Compagnie anglaise (Calcutta, Madras, Bombay), Compagnie française (Pondichéry, Chandernagor tombée), Mysore.",
+      "battle": {
+        "belligerents": [
+          "Compagnie anglaise des Indes orientales",
+          "Nawab du Bengale (Siraj ud-Daula), avec un petit détachement français"
+        ],
+        "commanders": [
+          "Robert Clive",
+          "Siraj ud-Daula",
+          "Mir Jafar",
+          "Mir Madan"
+        ],
+        "outcome": "Victoire de la Compagnie ; chute de Siraj ud-Daula",
+        "forces": "Compagnie : environ 3 000 hommes (900 Européens, 2 100 cipayes) ; nawab : 35 000 à 50 000 (chiffres de la tradition anglaise)",
+        "losses": "Environ 22 morts du côté de la Compagnie ; plusieurs centaines chez les troupes du nawab"
+      },
+      "armies": [
+        {
+          "side": "Compagnie des Indes (Clive)",
+          "from": "Calcutta",
+          "faction": "britanniques",
+          "path": [
+            [
+              88.36,
+              22.57
+            ],
+            [
+              88.38,
+              22.87
+            ],
+            [
+              88.13,
+              23.65
+            ],
+            [
+              88.25,
+              23.8
+            ]
+          ],
+          "strength": 1,
+          "winner": true
+        },
+        {
+          "side": "Siraj ud-Daula",
+          "from": "Murshidabad",
+          "faction": "rajputs",
+          "path": [
+            [
+              88.27,
+              24.18
+            ],
+            [
+              88.25,
+              23.8
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Robert Clive",
+          "role": "Chef des forces de la Compagnie",
+          "faction": "britanniques",
+          "archetype": "general",
+          "quote": "« Je suis stupéfait de ma propre modération » (Clive devant le Parlement, 1773)",
+          "position": [
+            88.23,
+            23.79
+          ],
+          "person": "clive"
+        },
+        {
+          "name": "Siraj ud-Daula",
+          "role": "Nawab du Bengale, vaincu",
+          "faction": "rajputs",
+          "archetype": "sultan",
+          "position": [
+            88.27,
+            23.82
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Plassey",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Plassey"
+        },
+        {
+          "label": "Wikipédia — Robert Clive",
+          "url": "https://fr.wikipedia.org/wiki/Robert_Clive"
+        },
+        {
+          "label": "Wikipédia — Compagnie anglaise des Indes orientales",
+          "url": "https://fr.wikipedia.org/wiki/Compagnie_anglaise_des_Indes_orientales"
+        }
+      ]
+    },
+    {
+      "id": "panipat-1761",
+      "year": 1761,
+      "title": "Troisième bataille de Panipat",
+      "type": "bataille",
+      "location": [
+        76.97,
+        29.39
+      ],
+      "zoom": 5,
+      "summary": "Le 14 janvier 1761, l'armée afghane d'Ahmad Shah Durrani, alliée à des princes musulmans de l'Inde, écrase les Marathes à Panipat : l'une des batailles les plus sanglantes du XVIIIe siècle.",
+      "details": "À la mi-XVIIIe siècle, l'empire moghol n'est plus qu'une façade. Les **Marathes**, dirigés par les **Peshwa** (« premiers ministres » de la dynastie de Shivaji, à Pune), ont conquis le Malwa, le Gujarat, une partie de l'Odisha, et en 1758 ils prennent Lahore et marchent sur le nord-ouest. Mais l'**Afghan Ahmad Shah Durrani** (ou Abdali), fondateur de l'empire durrani (1747), lance plusieurs invasions et revendique le Pendjab. À l'appel de **Najib ud-Daula**, chef rohilla (Afghans installés en Inde du nord), et de **Shuja ud-Daula**, nawab d'Awadh, il revient en 1759 pour arrêter les Marathes.\n\nLes deux armées s'observent pendant des mois à Panipat. Les Marathes, sous **Sadashivrao Bhau** et **Vishwasrao** (fils du Peshwa), souffrent de la faim. Le **14 janvier 1761**, ils sortent en masse. Après une matinée favorable, la bataille bascule : Vishwasrao est tué ; les lignes marathes cèdent, et la déroute se change en massacre. Les estimations vont de 40 000 à plus de 70 000 morts, avec de nombreux civils du camp.\n\nLe Peshwa Balaji Baji Rao meurt peu après, de chagrin selon la tradition. L'empereur **Shah Alam II**, lui, est absent, réfugié à l'est : l'empire moghol est simple spectateur de ce combat.",
+      "consequences": [
+        "La puissance marathe est brisée dans le nord : le rêve d'un empire hindou de l'Inde entière s'éloigne.",
+        "Les Afghans de Durrani gardent le Pendjab, le Cachemire, Multan et le Sind, mais ne s'établissent pas à Delhi ; ils retournent à Kaboul.",
+        "Le vide du pouvoir dans le nord de l'Inde ouvre la voie aux Sikhs au Pendjab et aux Britanniques au Bengale (Buxar, 1764).",
+        "Les Marathes se reconstruiront en dix ans et reprendront Delhi en 1771, en se faisant les protecteurs du shah."
+      ],
+      "territory": "panipat-1761",
+      "territoryNote": "Domaine réel de l'empereur Shah Alam II (en exil, sans capitale) : à peu près rien ; Delhi est tenue par des Marathes puis par Najib ud-Daula, régent pour le shah. États qui le reconnaissent nominalement (vassal) : nawab d'Awadh (Shuja ud-Daula, Lucknow-Faizabad), nawab du Bengale (Mir Jafar, sous contrôle de la Compagnie), Nizam de Hyderabad (Nizam Ali Khan), Rohilkhand de Najib ud-Daula (Najibabad). Rivaux : empire durrani d'Ahmad Shah (Kaboul, Kandahar, Peshawar, Lahore, Cachemire, Multan, Sind), Marathes du Peshwa (Pune, Malwa, Gujarat, Bundelkhand, Gwalior, Indore), Jats de Bharatpur, Sikhs (misls du Pendjab), Compagnie anglaise des Indes (Bengale, Madras, Bombay), Mysore (Hyder Ali), Français de Pondichéry (prise en 1761).",
+      "battle": {
+        "belligerents": [
+          "Afghans (Ahmad Shah Durrani), Rohillas et Awadh",
+          "Marathes (Peshwa)"
+        ],
+        "commanders": [
+          "Ahmad Shah Durrani",
+          "Najib ud-Daula",
+          "Shuja ud-Daula",
+          "Sadashivrao Bhau",
+          "Vishwasrao"
+        ],
+        "outcome": "Victoire des Afghans ; déroute des Marathes",
+        "forces": "Alliés afghans : environ 60 000 à 100 000 hommes ; Marathes : 45 000 à 80 000 (plus de nombreux non-combattants)",
+        "losses": "Marathes : 40 000 à plus de 70 000 morts selon les sources (chiffres très discutés)"
+      },
+      "armies": [
+        {
+          "side": "Ahmad Shah Durrani et alliés",
+          "from": "Kaboul",
+          "faction": "afghans",
+          "path": [
+            [
+              69.17,
+              34.53
+            ],
+            [
+              74.34,
+              31.55
+            ],
+            [
+              78.27,
+              28.37
+            ],
+            [
+              77.22,
+              28.94
+            ],
+            [
+              76.97,
+              29.39
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Marathes de Sadashivrao Bhau",
+          "from": "Pune",
+          "faction": "marathes",
+          "path": [
+            [
+              73.86,
+              18.52
+            ],
+            [
+              75.78,
+              23.18
+            ],
+            [
+              78.18,
+              26.22
+            ],
+            [
+              77.23,
+              28.61
+            ],
+            [
+              76.97,
+              29.39
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Ahmad Shah Durrani",
+          "role": "Fondateur de l’empire durrani",
+          "faction": "afghans",
+          "archetype": "shah",
+          "position": [
+            76.99,
+            29.38
+          ]
+        },
+        {
+          "name": "Sadashivrao Bhau",
+          "role": "Chef de l’armée marathe",
+          "faction": "marathes",
+          "archetype": "general",
+          "position": [
+            76.95,
+            29.4
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Troisième bataille de Panipat",
+          "url": "https://fr.wikipedia.org/wiki/Troisième_bataille_de_Panipat"
+        },
+        {
+          "label": "Wikipédia — Ahmad Shah Durrani",
+          "url": "https://fr.wikipedia.org/wiki/Ahmad_Shah_Durrani"
+        },
+        {
+          "label": "Wikipédia — Empire marathe",
+          "url": "https://fr.wikipedia.org/wiki/Empire_marathe"
+        }
+      ]
+    },
+    {
+      "id": "buxar-1764",
+      "year": 1764,
+      "title": "Buxar : l’empereur vaincu par la Compagnie",
+      "type": "bataille",
+      "location": [
+        83.98,
+        25.57
+      ],
+      "zoom": 5,
+      "summary": "Le 23 octobre 1764, à Buxar, sur le Gange, les troupes de la Compagnie du major Munro battent l'alliance du nawab d'Awadh, de l'ex-nawab du Bengale et de l'empereur Shah Alam II ; la Compagnie reçoit le Bengale en 1765.",
+      "details": "Après Plassey, la Compagnie anglaise des Indes place ses propres nawabs au Bengale. Elle écarte **Mir Jafar**, puis son gendre **Mir Qasim**, qui tente de reprendre le contrôle des douanes et de l'armée. Mis en échec, ce dernier se réfugie en **Awadh** auprès de **Shuja ud-Daula**, et ensemble ils rallient l'empereur **Shah Alam II**, qui rêve de reprendre les provinces orientales.\n\nLe **23 octobre 1764** (certaines sources disent le 22), à **Buxar**, au Bihar, les armées alliées, estimées à 40 000 hommes ou plus, affrontent les 7 000 hommes du major **Hector Munro** (dont un millier d'Européens et des cipayes). La discipline britannique, le feu de l'artillerie et la mésentente des alliés décident de l'issue ; Shah Alam, jugeant la partie perdue, change de camp et négocie avec les Britanniques.\n\nPar le traité d'**Allahabad** (août 1765), l'empereur accorde à la Compagnie le droit de percevoir les impôts (la **diwani**) du Bengale, du Bihar et de l'Odisha, en échange d'un tribut annuel de 2,6 millions de roupies et de la possession de Kora et d'Allahabad, où il s'installe. Il reviendra à Delhi en 1771, sous la protection des Marathes.\n\nLa Compagnie gère désormais des millions de sujets. L'empereur garde son titre, mais sa souveraineté est de pure forme.",
+      "consequences": [
+        "La Compagnie obtient la diwani du Bengale, du Bihar et de l'Odisha (1765) : une vingtaine de millions de sujets selon les estimations, et de gros revenus fiscaux.",
+        "L'empereur Shah Alam II, vaincu, ne tient plus que des terres autour d'Allahabad, avant de repartir pour Delhi en 1771 sous la protection marathe.",
+        "Le nawab d'Awadh devient un allié dépendant de la Compagnie, qui obtient un tampon contre les Marathes.",
+        "La Compagnie, simple société de commerce, devient la première puissance militaire et fiscale du sous-continent."
+      ],
+      "territory": "buxar-1764",
+      "territoryNote": "Domaine réel de l'empereur Shah Alam II en 1764-65 : aucun, il campe avec Shuja ud-Daula ; après août 1765, seulement Allahabad et Kora (Doab oriental), puis Delhi (depuis 1771, sous les Marathes de Mahadji Scindia). Vassaux nominaux : nawab d'Awadh (Shuja ud-Daula, Lucknow-Faizabad, allié de la Compagnie), nawab du Bengale (Najm ud-Daula, fantoche de la Compagnie, qui lève les impôts du Bengale, du Bihar et de l'Odisha dès 1765), Nizam de Hyderabad (Nizam Ali Khan), Rohilkhand (Najib ud-Daula), Rajputs (Jaipur, Marwar, Mewar). Rivaux : Compagnie anglaise des Indes (Calcutta, Madras, Bombay), Marathes du Peshwa (Pune, Malwa, Gujarat, Gwalior), empire durrani (Pendjab, Cachemire, Multan), Sikhs, Jats de Bharatpur, Mysore de Hyder Ali.",
+      "battle": {
+        "belligerents": [
+          "Compagnie anglaise des Indes orientales",
+          "Alliance de Mir Qasim, de Shuja ud-Daula d'Awadh et de l'empereur Shah Alam II"
+        ],
+        "commanders": [
+          "Hector Munro",
+          "Shuja ud-Daula",
+          "Mir Qasim",
+          "Shah Alam II"
+        ],
+        "outcome": "Victoire de la Compagnie",
+        "forces": "Compagnie : environ 7 000 hommes ; alliés : 40 000 à 60 000 (chiffres de tradition)",
+        "losses": "Environ 850 morts ou blessés côté Compagnie ; 2 000 à 6 000 côté allié selon les sources"
+      },
+      "armies": [
+        {
+          "side": "Compagnie des Indes (Munro)",
+          "from": "Patna",
+          "faction": "britanniques",
+          "path": [
+            [
+              85.14,
+              25.6
+            ],
+            [
+              84.5,
+              25.55
+            ],
+            [
+              83.98,
+              25.57
+            ]
+          ],
+          "strength": 1,
+          "winner": true
+        },
+        {
+          "side": "Shuja ud-Daula, Mir Qasim et Shah Alam II",
+          "from": "Faizabad",
+          "faction": "rajputs",
+          "path": [
+            [
+              82.14,
+              26.77
+            ],
+            [
+              83,
+              26
+            ],
+            [
+              83.58,
+              25.58
+            ],
+            [
+              83.98,
+              25.57
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Hector Munro",
+          "role": "Major, chef des troupes de la Compagnie",
+          "faction": "britanniques",
+          "archetype": "general",
+          "position": [
+            83.95,
+            25.56
+          ]
+        },
+        {
+          "name": "Shah Alam II",
+          "role": "Empereur moghol sans empire",
+          "faction": "moghols",
+          "archetype": "shah",
+          "position": [
+            84,
+            25.58
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Buxar",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Buxar"
+        },
+        {
+          "label": "Wikipédia — Shah Alam II",
+          "url": "https://fr.wikipedia.org/wiki/Shah_Alam_II"
+        },
+        {
+          "label": "Wikipédia — Traité d’Allahabad",
+          "url": "https://fr.wikipedia.org/wiki/Traité_d’Allahabad"
+        }
+      ]
+    },
+    {
+      "id": "delhi-1857",
+      "year": 1857,
+      "title": "La révolte de 1857 et la fin de la dynastie",
+      "type": "chute",
+      "location": [
+        77.23,
+        28.656
+      ],
+      "zoom": 5.2,
+      "summary": "En mai 1857, des cipayes révoltés de Meerut proclament Bahadur Shah II empereur de l'Inde à Delhi ; la ville est reprise par les Britanniques en septembre, et le dernier empereur moghol est exilé.",
+      "details": "En 1857, la **Compagnie anglaise des Indes** domine presque toute l'Inde, directement ou par des princes protégés. Les Moghols, eux, n'ont plus que le titre : depuis 1803, l'empereur est sous protection britannique à Delhi, avec une pension et le **Fort Rouge**. **Bahadur Shah II**, 82 ans, est poète (sous le nom de **Zafar**) et reste un symbole.\n\nLe **10 mai 1857**, à **Meerut**, des cipayes (soldats indiens de l'armée de la Compagnie) se soulèvent, après des tensions causées par de nouvelles cartouches graissées que les soldats croyaient enduites de graisse de bœuf ou de porc, interdite aux hindous et aux musulmans, et par un mécontentement plus large. Le lendemain, ils arrivent à Delhi et réclament Bahadur Shah pour chef. Il hésite, puis est proclamé empereur de l'Hindustan. Les cipayes, ici classés comme moghols, se rangent sous sa bannière.\n\nDelhi tient pendant quatre mois. Des renforts britanniques, des Sikhs et des Gurkhas venus du Pendjab donnent l'assaut le **14 septembre** ; la ville est prise après six jours de combats de rue. Bahadur Shah, réfugié au tombeau de Humayun, est capturé le 20 ou 21 septembre ; ses fils sont abattus par le capitaine Hodson. Jugé en 1858, il est exilé à **Rangoon** (Birmanie), où il meurt en 1862. La Couronne britannique succède à la Compagnie et la dynastie moghole est abolie.",
+      "consequences": [
+        "Delhi est reprise (14-20 septembre 1857) ; Bahadur Shah II est capturé, ses fils abattus, et il est exilé à Rangoon en 1858.",
+        "Le titre d'empereur moghol disparaît ; Victoria sera proclamée impératrice des Indes en 1877.",
+        "La Compagnie anglaise des Indes perd ses pouvoirs en 1858 : la Couronne gouverne directement l'Inde (le « Raj »).",
+        "La révolte, dite aussi première guerre d'indépendance, devient un symbole de l'histoire nationale indienne."
+      ],
+      "territory": "delhi-1857",
+      "territoryNote": "Domaine réel du padishah Bahadur Shah II : la seule ville de Delhi (Shahjahanabad et le Fort Rouge), tenue du 11 mai au 20 septembre 1857, rien d'autre. États qui se rallient à la révolte (vassal nominal, au nom du shah) : Awadh (Lucknow, Begum Hazrat Mahal), Rohilkhand (Bareilly, Khan Bahadur Khan), Jhansi (Rani Lakshmibai), Kanpur (Nana Sahib), Gwalior (Tantia Tope, troupes), Bihar (Jagdishpur, Kunwar Singh). Rivaux : Compagnie anglaise des Indes (Bengale, Madras, Bombay, Pendjab annexé en 1849, Awadh annexé en 1856) ; leurs alliés : Sikhs, Gurkhas du Népal, Nizam d'Hyderabad, Scindia de Gwalior, maharaja du Cachemire et princes rajputs, qui restent loyaux.",
+      "battle": {
+        "belligerents": [
+          "Cipayes révoltés et partisans de Bahadur Shah II",
+          "Compagnie anglaise des Indes (avec Sikhs et Gurkhas)"
+        ],
+        "commanders": [
+          "Bahadur Shah II",
+          "Bakht Khan",
+          "John Nicholson",
+          "Archdale Wilson"
+        ],
+        "outcome": "Reprise de Delhi par les Britanniques (14-20 septembre 1857)",
+        "forces": "Britanniques et alliés : environ 9 000 hommes à l'assaut ; insurgés : 30 000 environ (chiffres approximatifs)",
+        "losses": "Environ 1 100 morts et 3 800 blessés côté britannique ; pertes très lourdes côté insurgé et civil"
+      },
+      "armies": [
+        {
+          "side": "Cipayes révoltés de Meerut",
+          "from": "Meerut",
+          "faction": "moghols",
+          "path": [
+            [
+              77.7,
+              28.98
+            ],
+            [
+              77.23,
+              28.656
+            ]
+          ],
+          "strength": 2
+        },
+        {
+          "side": "Colonne britannique (Delhi Field Force)",
+          "from": "Ambala",
+          "faction": "britanniques",
+          "path": [
+            [
+              76.78,
+              30.37
+            ],
+            [
+              76.98,
+              29.69
+            ],
+            [
+              77.14,
+              28.8
+            ],
+            [
+              77.23,
+              28.656
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Bahadur Shah II",
+          "role": "Dernier empereur moghol",
+          "faction": "moghols",
+          "archetype": "shah",
+          "quote": "Quel malheur : pas même deux aunes de terre pour ma tombe (vers attribués à Zafar)",
+          "position": [
+            77.24,
+            28.656
+          ],
+          "person": "bahadur-shah-ii"
+        },
+        {
+          "name": "John Nicholson",
+          "role": "Général britannique, mortellement blessé à l’assaut",
+          "faction": "britanniques",
+          "archetype": "general",
+          "position": [
+            77.22,
+            28.66
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wikipédia — Révolte des cipayes",
+          "url": "https://fr.wikipedia.org/wiki/Révolte_des_cipayes"
+        },
+        {
+          "label": "Wikipédia — Bahâdur Châh II",
+          "url": "https://fr.wikipedia.org/wiki/Bahâdur_Châh_II"
+        },
+        {
+          "label": "Wikipédia — Siège de Delhi",
+          "url": "https://fr.wikipedia.org/wiki/Siège_de_Delhi"
+        }
+      ]
+    }
+  ]
+}

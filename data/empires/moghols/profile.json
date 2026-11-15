@@ -1,0 +1,707 @@
+{
+  "empire": "moghols",
+  "periods": [
+    {
+      "id": "babur-humayun",
+      "name": "Babur et Humayun",
+      "start": 1526,
+      "end": 1556,
+      "population": {
+        "total": {
+          "value": 50000000,
+          "low": 30000000,
+          "high": 80000000,
+          "note": "Domaine de Babur : estimation très approximative, aucun recensement.",
+          "year": 1530,
+          "source": {
+            "label": "Wikipédia : Empire moghol",
+            "url": "https://fr.wikipedia.org/wiki/Empire_moghol"
+          }
+        },
+        "cities": [
+          {
+            "name": "Delhi",
+            "population": {
+              "value": 100000,
+              "low": 60000,
+              "high": 150000,
+              "note": "Estimation très incertaine, capitale des Lodi.",
+              "year": 1526,
+              "source": {
+                "label": "Wikipédia : Delhi",
+                "url": "https://fr.wikipedia.org/wiki/Delhi"
+              }
+            }
+          },
+          {
+            "name": "Agra",
+            "population": {
+              "value": 100000,
+              "low": 50000,
+              "high": 200000,
+              "note": "Estimation approximative avant l'essor sous Akbar.",
+              "year": 1540,
+              "source": {
+                "label": "Wikipédia : Agra",
+                "url": "https://fr.wikipedia.org/wiki/Agra"
+              }
+            }
+          },
+          {
+            "name": "Kaboul",
+            "population": {
+              "value": 30000,
+              "low": 15000,
+              "high": 50000,
+              "note": "Estimation très approximative.",
+              "year": 1526,
+              "source": {
+                "label": "Wikipédia : Kaboul",
+                "url": "https://fr.wikipedia.org/wiki/Kaboul"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 24.5,
+          "low": 20,
+          "high": 28,
+          "note": "Inde entière (estimation de type Maddison), pas seulement l'empire.",
+          "year": 1500,
+          "source": {
+            "label": "Wikipédia : Empire moghol",
+            "url": "https://fr.wikipedia.org/wiki/Empire_moghol"
+          }
+        },
+        "resources": [
+          "Blé, riz et canne à sucre de la plaine du Gange",
+          "Coton et textiles",
+          "Salpêtre du Bihar",
+          "Chevaux importés d'Asie centrale"
+        ],
+        "currency": "Pièces d'argent hétérogènes ; Sher Shah crée la « roupie » d'argent (vers 1540), dont les Moghols hériteront.",
+        "taxation": "Part de la récolte levée par des seigneurs locaux ; Sher Shah mesure les terres et fixe un impôt.",
+        "trade": "Routes caravanières de Kaboul vers l'Asie centrale, ports du Gujarat et du Bengale tournés vers l'océan Indien."
+      },
+      "army": {
+        "size": {
+          "value": 25000,
+          "low": 12000,
+          "high": 40000,
+          "note": "Armée de Babur à Panipat ; les chiffres des chroniques varient.",
+          "year": 1526,
+          "source": {
+            "label": "Wikipédia : Première bataille de Panipat",
+            "url": "https://fr.wikipedia.org/wiki/Première_bataille_de_Panipat"
+          }
+        },
+        "composition": "Cavaliers turco-mongols, archers à cheval, mousquetaires, canons de campagne, chariots de combat.",
+        "recruitment": "Compagnons de Babur venus d'Asie centrale, auxquels s'ajoutent des Afghans et des alliés indiens.",
+        "famousUnits": [
+          "Cavaliers de Babur (tulughma)",
+          "Chariots enchaînés (araba)",
+          "Mousquetaires et artilleurs ottomans"
+        ],
+        "innovations": [
+          "Mousquets et canons de campagne en Inde du nord",
+          "Tactique d'enveloppement aux ailes (tulughma)",
+          "Chariots fortifiés protégeant les tireurs"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie militaire timouride, sans administration stable.",
+        "head": "Babur (1526-1530), puis Humayun (1530-1540 et 1555-1556) ; Sher Shah Suri règne de 1540 à 1545.",
+        "succession": "Partage entre les fils : Humayun doit composer avec ses frères, ce qui l'affaiblit.",
+        "institutions": "Cour itinérante, chefs de clans, grands nobles turcs et afghans.",
+        "administration": "Provinces confiées aux fils et aux compagnons ; Sher Shah crée des districts (sarkars) et des parganas.",
+        "law": "Droit islamique et coutumes locales ; Sher Shah applique une justice rigoureuse et rapide."
+      },
+      "society": {
+        "religions": [
+          "Islam sunnite",
+          "Hindouisme (majorité de la population)",
+          "Sikhisme naissant (Guru Nanak)",
+          "Jaïnisme"
+        ],
+        "languages": [
+          "Turc djaghataï (cour de Babur)",
+          "Persan",
+          "Hindi et langues locales"
+        ],
+        "structure": "Élite militaire turco-afghane au-dessus d'une masse de paysans hindous et musulmans ; castes marchandes et artisanales.",
+        "women": "Femmes de la dynastie influentes (Gulbadan Begum écrira le Humayun-nama) ; les femmes du peuple vivent selon leur caste et leur communauté."
+      },
+      "culture": {
+        "inventions": [
+          "Jardins moghols (charbagh)",
+          "Miniature persane importée par Humayun",
+          "Route et poste de Sher Shah"
+        ],
+        "works": [
+          "Babur-nama (mémoires de Babur)",
+          "Tombeau de Humayun (commencé en 1565)",
+          "Fort de Rohtas (Sher Shah)"
+        ],
+        "scholars": [
+          "Babur",
+          "Gulbadan Begum",
+          "Khwandamir (historien)"
+        ]
+      },
+      "infrastructure": {
+        "roads": {
+          "value": 2500,
+          "low": 2400,
+          "high": 2800,
+          "unit": "km",
+          "note": "Route de Sher Shah du Bengale à l'Indus ; longueur approximative.",
+          "year": 1545,
+          "source": {
+            "label": "Wikipédia : Grand Trunk Road",
+            "url": "https://fr.wikipedia.org/wiki/Grand_Trunk_Road"
+          }
+        },
+        "summary": "Route de Sonargaon à l'Indus avec caravansérails et puits (Sher Shah), forts de pierre, jardins de Babur à Agra et Kaboul."
+      },
+      "legacy": "Babur fonde la dynastie en Inde par la guerre à poudre ; Humayun la sauve de justesse et ramène de Perse les artistes qui feront la gloire de la cour moghole."
+    },
+    {
+      "id": "akbar",
+      "name": "Akbar le Grand",
+      "start": 1556,
+      "end": 1605,
+      "population": {
+        "total": {
+          "value": 100000000,
+          "low": 90000000,
+          "high": 115000000,
+          "note": "Estimation de population de l'empire vers 1600 (Irfan Habib et autres) ; les données sont partielles.",
+          "year": 1600,
+          "source": {
+            "label": "Wikipédia : Empire moghol",
+            "url": "https://fr.wikipedia.org/wiki/Empire_moghol"
+          }
+        },
+        "cities": [
+          {
+            "name": "Agra",
+            "population": {
+              "value": 500000,
+              "low": 300000,
+              "high": 650000,
+              "note": "Estimation reconstruite d'après des voyageurs.",
+              "year": 1600,
+              "source": {
+                "label": "Wikipédia : Agra",
+                "url": "https://fr.wikipedia.org/wiki/Agra"
+              }
+            }
+          },
+          {
+            "name": "Lahore",
+            "population": {
+              "value": 350000,
+              "low": 250000,
+              "high": 400000,
+              "note": "Estimation approximative.",
+              "year": 1600,
+              "source": {
+                "label": "Wikipédia : Lahore",
+                "url": "https://fr.wikipedia.org/wiki/Lahore"
+              }
+            }
+          },
+          {
+            "name": "Ahmedabad",
+            "population": {
+              "value": 250000,
+              "low": 200000,
+              "high": 400000,
+              "note": "Estimation approximative.",
+              "year": 1600,
+              "source": {
+                "label": "Wikipédia : Ahmedabad",
+                "url": "https://fr.wikipedia.org/wiki/Ahmedabad"
+              }
+            }
+          },
+          {
+            "name": "Fatehpur Sikri",
+            "population": {
+              "value": 100000,
+              "low": 50000,
+              "high": 200000,
+              "note": "Ville neuve, rapidement abandonnée ; estimation très incertaine.",
+              "year": 1580,
+              "source": {
+                "label": "Wikipédia : Fatehpur Sikri",
+                "url": "https://fr.wikipedia.org/wiki/Fatehpur_Sikri"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 22.5,
+          "low": 19,
+          "high": 26,
+          "note": "Inde entière (estimation de type Maddison), pas seulement l'empire.",
+          "year": 1600,
+          "source": {
+            "label": "Wikipédia : Empire moghol",
+            "url": "https://fr.wikipedia.org/wiki/Empire_moghol"
+          }
+        },
+        "resources": [
+          "Blé, riz, canne à sucre, indigo",
+          "Coton et soie (Bengale, Gujarat)",
+          "Salpêtre du Bihar",
+          "Argent importé d'Amérique via le commerce"
+        ],
+        "currency": "Roupie d'argent (réformée à partir de Sher Shah), mohur d'or, dam de cuivre ; monnaie frappée de façon standard.",
+        "taxation": "Impôt foncier en argent (zabt) fixé d'après la moyenne des récoltes et les prix, organisé par Todar Mal ; environ le tiers de la récolte.",
+        "trade": "Textiles de coton exportés vers le monde entier ; ports de Surat et de Cambay ; arrivée des Portugais, puis des Anglais et des Hollandais."
+      },
+      "army": {
+        "size": {
+          "value": 300000,
+          "low": 200000,
+          "high": 350000,
+          "note": "Cavaliers des mansabdars d'après l'Ain-i-Akbari ; les chiffres d'infanterie sont très exagérés.",
+          "year": 1595,
+          "source": {
+            "label": "Wikipédia : Akbar",
+            "url": "https://fr.wikipedia.org/wiki/Akbar"
+          }
+        },
+        "composition": "Cavalerie lourde des mansabdars, fantassins, mousquetaires, artillerie et éléphants de guerre.",
+        "recruitment": "Système des mansabs : chaque noble reçoit un grade et doit fournir un nombre de cavaliers.",
+        "famousUnits": [
+          "Cavaliers des mansabdars",
+          "Éléphants de guerre",
+          "Corps d'artillerie impériale",
+          "Gardes du corps de l'empereur"
+        ],
+        "innovations": [
+          "Système des mansabs (grades chiffrés)",
+          "Marque des chevaux (dagh) contre la fraude",
+          "Artillerie de siège et mines contre les forteresses"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie absolue, administration centralisée par grades (mansabs).",
+        "head": "Akbar (1556-1605), sous la régence de Bairam Khan jusqu'en 1560.",
+        "succession": "Au choix de l'empereur parmi ses fils, sans règle fixe ; Salim (Jahangir) se révolte en 1599-1604.",
+        "institutions": "Cour impériale, ministres (diwan, bakhshi, sadr), conseil des nobles, mansabdars hindous et musulmans.",
+        "administration": "Une quinzaine de provinces (subahs) divisées en sarkars et parganas, avec gouverneur, intendant des finances et juge.",
+        "provinces": {
+          "value": 15,
+          "unit": "subahs",
+          "note": "Douze en 1580, quinze à la fin du règne.",
+          "year": 1605,
+          "source": {
+            "label": "Wikipédia : Empire moghol",
+            "url": "https://fr.wikipedia.org/wiki/Empire_moghol"
+          }
+        },
+        "law": "Droit islamique et coutume ; abolition de la djizîa (1564) ; arbitrage de l'empereur en cas de désaccord de théologiens."
+      },
+      "society": {
+        "religions": [
+          "Islam sunnite et soufisme",
+          "Hindouisme",
+          "Jaïnisme",
+          "Christianisme (jésuites à la cour)",
+          "Sikhisme"
+        ],
+        "languages": [
+          "Persan (langue administrative)",
+          "Hindi et ourdou naissant",
+          "Turc de cour",
+          "Langues régionales"
+        ],
+        "structure": "Noblesse de mansabdars, paysans soumis à l'impôt foncier, artisans en guildes, marchands hindous, jaïns et musulmans.",
+        "women": "Femmes de la cour influentes (Hamida Banu, Salima Sultan Begum) ; la coutume du sati est découragée, la vente d'enfants et le mariage précoce sont limités par des édits."
+      },
+      "culture": {
+        "inventions": [
+          "Ateliers impériaux de miniature",
+          "Nouvelle architecture indo-persane (Fatehpur Sikri)",
+          "Calendrier Ilahi",
+          "Musique hindustani à la cour"
+        ],
+        "works": [
+          "Akbarnama et Ain-i-Akbari (Abu'l-Fazl)",
+          "Fatehpur Sikri",
+          "Tombeau de Humayun (Delhi)",
+          "Hamzanama, manuscrit illustré"
+        ],
+        "scholars": [
+          "Abu'l-Fazl",
+          "Faizi",
+          "Todar Mal",
+          "Tansen (musicien)"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Forts de grès rouge (Agra, Lahore, Allahabad), Fatehpur Sikri, routes entretenues avec caravansérails, ponts et puits sur le Grand Trunk Road de Sher Shah."
+      },
+      "legacy": "Akbar crée l'État moghol : administration par grades, impôt stable, alliance avec les Rajputs et tolérance religieuse ; son modèle reste la référence de la dynastie."
+    },
+    {
+      "id": "apogee",
+      "name": "Jahangir, Shah Jahan et Aurangzeb",
+      "start": 1605,
+      "end": 1707,
+      "population": {
+        "total": {
+          "value": 150000000,
+          "low": 125000000,
+          "high": 175000000,
+          "note": "Estimation de population vers 1700 (environ le quart de l'humanité selon certaines estimations) ; données partielles.",
+          "year": 1700,
+          "source": {
+            "label": "Wikipédia : Empire moghol",
+            "url": "https://fr.wikipedia.org/wiki/Empire_moghol"
+          }
+        },
+        "cities": [
+          {
+            "name": "Delhi (Shahjahanabad)",
+            "population": {
+              "value": 400000,
+              "low": 300000,
+              "high": 500000,
+              "note": "Estimation d'après des voyageurs européens.",
+              "year": 1700,
+              "source": {
+                "label": "Wikipédia : Delhi",
+                "url": "https://fr.wikipedia.org/wiki/Delhi"
+              }
+            }
+          },
+          {
+            "name": "Agra",
+            "population": {
+              "value": 500000,
+              "low": 300000,
+              "high": 700000,
+              "note": "Estimation très discutée.",
+              "year": 1650,
+              "source": {
+                "label": "Wikipédia : Agra",
+                "url": "https://fr.wikipedia.org/wiki/Agra"
+              }
+            }
+          },
+          {
+            "name": "Dacca",
+            "population": {
+              "value": 450000,
+              "low": 200000,
+              "high": 900000,
+              "note": "Estimations très divergentes, de 200 000 à près d'un million.",
+              "year": 1700,
+              "source": {
+                "label": "Wikipédia : Dacca",
+                "url": "https://fr.wikipedia.org/wiki/Dacca"
+              }
+            }
+          },
+          {
+            "name": "Lahore",
+            "population": {
+              "value": 400000,
+              "low": 250000,
+              "high": 500000,
+              "note": "Estimation approximative.",
+              "year": 1650,
+              "source": {
+                "label": "Wikipédia : Lahore",
+                "url": "https://fr.wikipedia.org/wiki/Lahore"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 24.4,
+          "low": 20,
+          "high": 28,
+          "note": "Inde entière (estimation de type Maddison) ; environ le quart de la production mondiale.",
+          "year": 1700,
+          "source": {
+            "label": "Wikipédia : Empire moghol",
+            "url": "https://fr.wikipedia.org/wiki/Empire_moghol"
+          }
+        },
+        "resources": [
+          "Textiles de coton et soie du Bengale",
+          "Salpêtre du Bihar",
+          "Indigo",
+          "Diamants de Golconde",
+          "Riz et blé"
+        ],
+        "currency": "Roupie d'argent standard (environ 11 g d'argent), mohur d'or ; l'argent d'Amérique afflue par le commerce.",
+        "taxation": "Impôt foncier du tiers à la moitié de la récolte, perçu par les mansabdars ; djizîa sur les non-musulmans de 1679 à 1707.",
+        "trade": "Exportations de cotonnades et d'épices ; comptoirs de la Compagnie anglaise (Surat, Madras, Calcutta), hollandaise et française."
+      },
+      "army": {
+        "size": {
+          "value": 400000,
+          "low": 200000,
+          "high": 1000000,
+          "note": "Cavaliers réguliers et contingents ; chiffres très incertains, selon le recensement des mansabs.",
+          "year": 1690,
+          "source": {
+            "label": "Wikipédia : Empire moghol",
+            "url": "https://fr.wikipedia.org/wiki/Empire_moghol"
+          }
+        },
+        "composition": "Cavalerie, fantassins, mousquetaires, artillerie lourde et éléphants ; flotte fluviale limitée.",
+        "recruitment": "Mansabdars qui fournissent des contingents ; Aurangzeb recrute largement des Rajputs et des Marathes alliés.",
+        "famousUnits": [
+          "Cavaliers de l'armée impériale",
+          "Artillerie de siège de Golconde",
+          "Éléphants de guerre",
+          "Garde impériale"
+        ],
+        "innovations": [
+          "Canons de siège lourds",
+          "Fusils à mèche (matchlocks) en masse",
+          "Fusées de guerre (limitées avant le XVIIIe siècle)"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie absolue, de plus en plus centrée sur l'empereur et l'islam sunnite sous Aurangzeb.",
+        "head": "Jahangir (1605-1627), Shah Jahan (1628-1658), Aurangzeb (1658-1707).",
+        "succession": "Guerre de succession entre frères à chaque règne (1627, 1658, 1707) : le plus capable l'emporte.",
+        "institutions": "Divan, bakhshi, grands mansabdars, cour à Delhi (Shahjahanabad) ; Aurangzeb réside au Deccan de 1681 à sa mort.",
+        "administration": "Une vingtaine de provinces (subahs) ; la pénurie de terres à distribuer (crise des jagirs) ruine le système.",
+        "provinces": {
+          "value": 21,
+          "low": 20,
+          "high": 22,
+          "unit": "subahs",
+          "year": 1700,
+          "source": {
+            "label": "Wikipédia : Empire moghol",
+            "url": "https://fr.wikipedia.org/wiki/Empire_moghol"
+          }
+        },
+        "law": "Droit islamique hanéfite ; compilation du Fatawa-i-Alamgiri sous Aurangzeb."
+      },
+      "society": {
+        "religions": [
+          "Islam sunnite et chiite",
+          "Hindouisme",
+          "Sikhisme (Guru Gobind Singh)",
+          "Christianisme",
+          "Jaïnisme"
+        ],
+        "languages": [
+          "Persan",
+          "Ourdou et hindi",
+          "Langues régionales (bengali, marathi, tamoul…)"
+        ],
+        "structure": "Noblesse de mansabdars, marchands (Banians, Marwaris), paysans et artisans ; castes encore fortes.",
+        "women": "Femmes de cour influentes (Nur Jahan, Jahanara) ; seules quelques princesses ont une vraie autorité ; le sati reste pratiqué dans certaines castes."
+      },
+      "culture": {
+        "inventions": [
+          "Architecture de marbre (Taj Mahal)",
+          "Peinture de cour de Jahangir",
+          "Plan de ville de Shahjahanabad",
+          "Poésie persane et ourdoue naissante"
+        ],
+        "works": [
+          "Taj Mahal (1632-1653)",
+          "Fort Rouge et Jama Masjid de Delhi",
+          "Trône du Paon",
+          "Mosquée Badshahi de Lahore (1673)"
+        ],
+        "scholars": [
+          "Ustad Ahmad Lahori",
+          "Mulla Shah (soufi)",
+          "Dara Shikoh",
+          "Bichitr (peintre)"
+        ]
+      },
+      "infrastructure": {
+        "roads": {
+          "value": 2500,
+          "low": 2400,
+          "high": 2800,
+          "unit": "km",
+          "note": "Axe Peshawar-Dacca, entretenu ; longueur approximative.",
+          "year": 1650,
+          "source": {
+            "label": "Wikipédia : Grand Trunk Road",
+            "url": "https://fr.wikipedia.org/wiki/Grand_Trunk_Road"
+          }
+        },
+        "summary": "Grandes routes à caravansérails, forts et palais en grès rouge, nouvelle capitale Shahjahanabad, jardins et canaux (canal de Shah Jahan à Delhi)."
+      },
+      "legacy": "Dans un empire parmi les plus riches du monde, le Taj Mahal et l'art moghol atteignent leur sommet ; mais la guerre du Deccan et les révoltes préparent l'effondrement."
+    },
+    {
+      "id": "declin",
+      "name": "Déclin et chute",
+      "start": 1707,
+      "end": 1857,
+      "population": {
+        "total": {
+          "value": 120000000,
+          "low": 80000000,
+          "high": 150000000,
+          "note": "Population des provinces reconnaissant encore le shah ; le domaine réel de l'empereur n'en représente qu'une infime fraction.",
+          "year": 1740,
+          "source": {
+            "label": "Wikipédia : Empire moghol",
+            "url": "https://fr.wikipedia.org/wiki/Empire_moghol"
+          }
+        },
+        "cities": [
+          {
+            "name": "Delhi",
+            "population": {
+              "value": 130000,
+              "low": 100000,
+              "high": 200000,
+              "note": "Après les sacs de 1739 et 1761, la ville a fortement décliné.",
+              "year": 1800,
+              "source": {
+                "label": "Wikipédia : Delhi",
+                "url": "https://fr.wikipedia.org/wiki/Delhi"
+              }
+            }
+          },
+          {
+            "name": "Lucknow",
+            "population": {
+              "value": 300000,
+              "low": 200000,
+              "high": 400000,
+              "note": "Capitale des nawabs d'Awadh ; estimation approximative.",
+              "year": 1800,
+              "source": {
+                "label": "Wikipédia : Lucknow",
+                "url": "https://fr.wikipedia.org/wiki/Lucknow"
+              }
+            }
+          },
+          {
+            "name": "Hyderabad",
+            "population": {
+              "value": 200000,
+              "low": 150000,
+              "high": 300000,
+              "note": "Capitale du Nizam ; estimation approximative.",
+              "year": 1800,
+              "source": {
+                "label": "Wikipédia : Hyderabad (Inde)",
+                "url": "https://fr.wikipedia.org/wiki/Hyderabad_(Inde)"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 16,
+          "low": 14,
+          "high": 18,
+          "note": "Inde entière (estimation de type Maddison), dominée alors par les Britanniques.",
+          "year": 1820,
+          "source": {
+            "label": "Wikipédia : Empire moghol",
+            "url": "https://fr.wikipedia.org/wiki/Empire_moghol"
+          }
+        },
+        "resources": [
+          "Cotonnades du Bengale",
+          "Opium du Bihar",
+          "Indigo",
+          "Riz et blé"
+        ],
+        "currency": "Roupie d'argent frappée par de nombreux États ; la Compagnie lance sa propre roupie à partir de la fin du XVIIIe siècle.",
+        "taxation": "La Compagnie perçoit les impôts du Bengale depuis 1765 (diwani) ; l'empereur n'a plus qu'une pension britannique.",
+        "trade": "Le commerce du coton passe aux Britanniques ; l'industrie textile indienne décline face aux importations industrielles."
+      },
+      "army": {
+        "size": {
+          "value": 100000,
+          "low": 75000,
+          "high": 300000,
+          "note": "Armée moghole à Karnal ; chiffres très discutés.",
+          "year": 1739,
+          "source": {
+            "label": "Wikipédia : Bataille de Karnal",
+            "url": "https://fr.wikipedia.org/wiki/Bataille_de_Karnal"
+          }
+        },
+        "composition": "Cavaliers de nobles, artillerie, mousquetaires ; armée impériale de plus en plus dépassée par les troupes de la Compagnie.",
+        "recruitment": "Contingents de nobles ; à Delhi, quelques milliers de soldats après 1803.",
+        "famousUnits": [
+          "Armée de Muhammad Shah à Karnal",
+          "Cipayes de la Compagnie (adversaires)",
+          "Cavaliers marathes (adversaires)"
+        ],
+        "innovations": [
+          "Armées de type européen formées par Français et Britanniques chez les princes indiens",
+          "Artillerie de campagne moderne chez les Marathes de Mahadji Scindia"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie en déclin : l'empereur n'est plus qu'un symbole, puis un pensionné des Britanniques.",
+        "head": "Bahadur Shah Ier, Muhammad Shah, Alamgir II, Shah Alam II, Akbar II, Bahadur Shah II (1837-1857).",
+        "succession": "Succession dans la famille, avec ingérence des vizirs puis des Britanniques.",
+        "institutions": "Vizirs puissants, cour réduite à Delhi ; les nawabs de Bengale, d'Awadh, le Nizam, les Marathes agissent seuls.",
+        "administration": "Provinces devenues États quasi indépendants dès 1720-1740 ; le domaine de l'empereur est réduit à Delhi seule.",
+        "law": "Droit islamique ; la Compagnie introduit son propre système de tribunaux à partir de 1772."
+      },
+      "society": {
+        "religions": [
+          "Islam sunnite et chiite",
+          "Hindouisme",
+          "Sikhisme (puissance au Pendjab)",
+          "Christianisme (missions britanniques)"
+        ],
+        "languages": [
+          "Persan",
+          "Ourdou",
+          "Hindi",
+          "Anglais (administration britannique)"
+        ],
+        "structure": "Noblesse déclinante, nouveaux États régionaux, banquiers (Jagat Seth), paysans soumis aux fermiers d'impôt de la Compagnie.",
+        "women": "Femmes de cour influentes (Zeenat Mahal) ; réformes britanniques sur le sati (1829)."
+      },
+      "culture": {
+        "inventions": [
+          "Poésie ourdoue classique (Mir, Ghalib, Zafar)",
+          "Peinture de la Compagnie",
+          "École de Delhi puis de Lucknow"
+        ],
+        "works": [
+          "Poèmes de Mir Taqi Mir et de Ghalib",
+          "Dîwân de Zafar",
+          "Imambara de Lucknow (1784)"
+        ],
+        "scholars": [
+          "Mirza Ghalib",
+          "Mir Taqi Mir",
+          "Bahadur Shah Zafar",
+          "Shah Waliullah (théologien)"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Les routes et les ponts moghols se dégradent ; la Compagnie construit canaux, chemin de fer (premier en 1853) et télégraphe."
+      },
+      "legacy": "Dépouillé par ses gouverneurs, Nader Shah, les Marathes, les Afghans et la Compagnie, l'empire disparaît en 1857 ; la dynastie laisse le Taj Mahal, l'ourdou et une idée d'Inde unifiée."
+    }
+  ]
+}

@@ -1402,6 +1402,63 @@ export const OTTOMAN_SOLDIER_SPECS = {
       moustache('#2d2018'),
     weapon: scimitar('#c9a02a') + stroke('M24 9Q29 18 24 29', '#5a3a1a', 1.1),
   },
+  moghols: {
+    skin: '#c8935f',
+    tunic: '#efe6cf',
+    legs: 'pants',
+    legColor: '#9a2a2a',
+    boots: '#4a2f1a',
+    deco:
+      path('M10.6 14.4Q16 12.8 21.4 14.4L22 25L10 25Z', '#efe6cf', 'stroke="none"') +
+      stroke('M11.4 15.4L20.6 23.6', GOLD, 1.4) +
+      rect(10.2, 23.8, 11.6, 1.8, GOLD, 0, 'stroke="none"'),
+    head: path('M11.5 8.2Q11.3 4.4 16 4Q20.7 4.4 20.5 8.2Q16 6.4 11.5 8.2Z', '#f4efe2') + plume(GOLD) + moustache('#2d2018'),
+    shield: roundShield('#a0602a', '#5a3a1a', GOLD),
+    weapon: arquebus(),
+  },
+  rajputs: {
+    skin: '#b77a45',
+    tunic: '#e08a1f',
+    legs: 'pants',
+    legColor: '#f0e8d8',
+    boots: '#4a2f1a',
+    deco: path('M10.6 14.4Q16 12.8 21.4 14.4L22 25L10 25Z', '#e08a1f', 'stroke="none"') + rect(10.2, 23.8, 11.6, 1.8, '#c0262a', 0, 'stroke="none"'),
+    head:
+      path('M11.5 8.2Q11.3 4.4 16 4Q20.7 4.4 20.5 8.2Q16 6.4 11.5 8.2Z', '#c0262a') +
+      moustache('#2d2018') +
+      stroke('M12.6 10.4Q16 12.2 19.4 10.4', '#2d2018', 0.9),
+    shield: roundShield('#2a2a2a', GOLD, GOLD),
+    weapon: saber(),
+  },
+  marathes: {
+    skin: '#9a6538',
+    tunic: '#f2ecdc',
+    legs: 'pants',
+    legColor: '#c79a4a',
+    boots: '#2b2219',
+    deco:
+      path('M10.6 14.4Q16 12.8 21.4 14.4L21.8 21L10.2 21Z', '#f2ecdc', 'stroke="none"') + path('M10.2 21L21.8 21L22.4 25L9.6 25Z', '#c79a4a', 'stroke="none"'),
+    head: path('M11.5 8.2Q11.3 4.4 16 4Q20.7 4.4 20.5 8.2Q16 6.4 11.5 8.2Z', '#e8901f') + moustache('#2d2018'),
+    shield: roundShield('#5a3a1a', '#c79a4a', '#c79a4a'),
+    weapon: spear(37),
+  },
+  afghans: {
+    skin: '#c99a6a',
+    tunic: '#3f5a3a',
+    legs: 'pants',
+    legColor: '#8a8a80',
+    boots: '#2b2219',
+    deco:
+      mailTorso('#aeb3b8', '#7e848a') +
+      path('M10.2 15Q13.4 15.6 14.2 16L13.6 25.8L9.6 25.8Z', '#3f5a3a', 'stroke="none"') +
+      path('M21.8 15Q18.6 15.6 17.8 16L18.4 25.8L22.4 25.8Z', '#3f5a3a', 'stroke="none"'),
+    head:
+      path('M11.5 8.2Q11.3 4.4 16 4Q20.7 4.4 20.5 8.2Q16 6.4 11.5 8.2Z', '#2a2a2a') +
+      path('M20.5 6.6Q23.4 9 22.6 13.2L21.2 12.6Q21.8 9.6 19.8 7.6Z', '#2a2a2a') +
+      moustache('#2d2018') +
+      goatee('#2d2018'),
+    weapon: longRifle(),
+  },
   'ottomans-modernes': {
     skin: '#d2a070',
     tunic: '#243a66',

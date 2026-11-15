@@ -1,0 +1,801 @@
+{
+  "empire": "abbassides",
+  "periods": [
+    {
+      "id": "age-d-or",
+      "name": "L'âge d'or de Bagdad",
+      "start": 750,
+      "end": 861,
+      "population": {
+        "total": {
+          "value": 35000000,
+          "low": 25000000,
+          "high": 50000000,
+          "year": 800,
+          "note": "Ordre de grandeur reconstruit : aucun recensement général.",
+          "source": {
+            "label": "Wikipédia : Califat abbasside",
+            "url": "https://fr.wikipedia.org/wiki/Califat_abbasside"
+          }
+        },
+        "cities": [
+          {
+            "name": "Bagdad",
+            "population": {
+              "value": 450000,
+              "low": 300000,
+              "high": 1000000,
+              "year": 800,
+              "note": "Estimation très incertaine, fondée sur des textes tardifs.",
+              "source": {
+                "label": "Wikipédia : Bagdad",
+                "url": "https://fr.wikipedia.org/wiki/Bagdad"
+              }
+            }
+          },
+          {
+            "name": "Bassora",
+            "population": {
+              "value": 200000,
+              "low": 100000,
+              "high": 300000,
+              "year": 800,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Bassora",
+                "url": "https://fr.wikipedia.org/wiki/Bassora"
+              }
+            }
+          },
+          {
+            "name": "Fustat",
+            "population": {
+              "value": 100000,
+              "low": 50000,
+              "high": 200000,
+              "year": 800,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Fustat",
+                "url": "https://fr.wikipedia.org/wiki/Fustat"
+              }
+            }
+          },
+          {
+            "name": "Damas",
+            "population": {
+              "value": 80000,
+              "low": 50000,
+              "high": 120000,
+              "year": 800,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Damas",
+                "url": "https://fr.wikipedia.org/wiki/Damas"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Blé, orge et dattes d'Irak",
+          "Lin et blé d'Égypte",
+          "Soie d'Iran et du Khorassan",
+          "Papier, verre et textiles de Bagdad"
+        ],
+        "currency": "Dinar d'or et dirham d'argent, frappés dans tout l'empire sur un modèle unique.",
+        "taxation": "Impôt foncier (kharaj), dîme, capitation des non-musulmans (jizya), taxes de marché et monopoles d'État.",
+        "trade": "Routes de la soie vers la Chine, océan Indien par Bassora et Siraf, Méditerranée par la Syrie et l'Égypte, esclaves et fourrures du nord."
+      },
+      "army": {
+        "size": {
+          "value": 100000,
+          "low": 60000,
+          "high": 130000,
+          "year": 800,
+          "note": "Soldats inscrits au registre (diwan) : ordre de grandeur.",
+          "source": {
+            "label": "Wikipédia : Califat abbasside",
+            "url": "https://fr.wikipedia.org/wiki/Califat_abbasside"
+          }
+        },
+        "composition": "Cavalerie lourde et infanterie khorassaniennes, archers, puis garde turque de Samarra à partir de 836.",
+        "recruitment": "Soldats khorassaniens à la solde de l'État, puis esclaves turcs achetés en Asie centrale (ghilman).",
+        "famousUnits": [
+          "Abna al-dawla (Khorassaniens fidèles)",
+          "Garde turque de Samarra",
+          "Troupes de la frontière (thughur)"
+        ],
+        "innovations": [
+          "Armée de métier payée par le trésor",
+          "Esclaves-soldats turcs (ghilman)",
+          "Naphte et machines de siège"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie califale, qui se veut descendante de l'oncle du Prophète et chef de toute la communauté des croyants.",
+        "head": "Calife (Abu al-Abbas, al-Mansur, Haroun al-Rachid, al-Ma'mun, al-Mutawakkil).",
+        "succession": "Le calife désigne un héritier dans sa famille ; le partage de 802 entre deux fils mène à la guerre civile de 811-813.",
+        "institutions": "Vizir, bureaux (diwans) des finances, de la poste et de l'armée, qadis (juges), cour de Bagdad.",
+        "administration": "Gouverneurs de provinces, services de poste et de renseignement ; Tahirides et Samanides, gouverneurs héréditaires dès 820.",
+        "provinces": {
+          "value": 24,
+          "low": 20,
+          "high": 28,
+          "year": 800,
+          "note": "Grands gouvernorats ; l'organisation change selon les règnes.",
+          "source": {
+            "label": "Wikipédia : Califat abbasside",
+            "url": "https://fr.wikipedia.org/wiki/Califat_abbasside"
+          }
+        },
+        "law": "Charia en formation ; les quatre grandes écoles de droit sunnites se constituent au IXe siècle."
+      },
+      "society": {
+        "religions": [
+          "Islam sunnite (majoritaire à terme)",
+          "Chiisme",
+          "Christianisme (Églises syriaque et copte)",
+          "Judaïsme",
+          "Zoroastrisme"
+        ],
+        "languages": [
+          "Arabe",
+          "Persan",
+          "Syriaque",
+          "Copte",
+          "Araméen"
+        ],
+        "structure": "Arabes musulmans, convertis non arabes (mawali) de plus en plus nombreux, chrétiens, juifs et zoroastriens protégés (dhimmis), esclaves.",
+        "women": "Princesses influentes à la cour (Zubayda, Khayzuran) ; les femmes du commun travaillent, sans droits politiques."
+      },
+      "culture": {
+        "inventions": [
+          "Moulins à papier de Bagdad",
+          "Algèbre et chiffres indiens (al-Khwarizmi)",
+          "Astrolabe et observatoires",
+          "Plan circulaire de Bagdad"
+        ],
+        "works": [
+          "Bagdad, Ville de la Paix (762)",
+          "Grande Mosquée de Samarra (848-852)",
+          "Maison de la sagesse (traductions)"
+        ],
+        "scholars": [
+          "Al-Khwarizmi (mathématicien)",
+          "Al-Kindi (philosophe)",
+          "Hunayn ibn Ishaq (traducteur)",
+          "Al-Tabari (historien)"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Réseau de routes postales rayonnant depuis Bagdad, canaux d'irrigation de Mésopotamie, ports du golfe Persique, ville circulaire puis Samarra."
+      },
+      "legacy": "Un califat qui réunit un empire, invente une capitale et une science arabe, mais prépare sa propre crise en dépendant d'une garde turque."
+    },
+    {
+      "id": "samarra",
+      "name": "Anarchie de Samarra et émirats",
+      "start": 861,
+      "end": 945,
+      "population": {
+        "total": {
+          "value": 30000000,
+          "low": 20000000,
+          "high": 40000000,
+          "year": 900,
+          "note": "Ordre de grandeur : population des régions encore sous autorité nominale, sans recensement.",
+          "source": {
+            "label": "Wikipédia : Califat abbasside",
+            "url": "https://fr.wikipedia.org/wiki/Califat_abbasside"
+          }
+        },
+        "cities": [
+          {
+            "name": "Bagdad",
+            "population": {
+              "value": 900000,
+              "low": 500000,
+              "high": 1200000,
+              "year": 930,
+              "note": "Estimation très incertaine, sans doute au plus haut vers 930.",
+              "source": {
+                "label": "Wikipédia : Bagdad",
+                "url": "https://fr.wikipedia.org/wiki/Bagdad"
+              }
+            }
+          },
+          {
+            "name": "Bassora",
+            "population": {
+              "value": 150000,
+              "low": 80000,
+              "high": 250000,
+              "year": 900,
+              "note": "Ville éprouvée par la révolte des Zanj (871-883).",
+              "source": {
+                "label": "Wikipédia : Bassora",
+                "url": "https://fr.wikipedia.org/wiki/Bassora"
+              }
+            }
+          },
+          {
+            "name": "Samarra",
+            "population": {
+              "value": 100000,
+              "low": 50000,
+              "high": 200000,
+              "year": 860,
+              "note": "Estimation approximative ; la ville est abandonnée après 892.",
+              "source": {
+                "label": "Wikipédia : Samarra",
+                "url": "https://fr.wikipedia.org/wiki/Samarra"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Dattes et blé d'Irak",
+          "Lin d'Égypte, tulunide puis abbasside",
+          "Soie d'Iran",
+          "Argent de l'Hindu Kush (Samanides)"
+        ],
+        "currency": "Dinar d'or et dirham d'argent ; pièces frappées aussi par les dynasties autonomes, au nom du calife.",
+        "taxation": "Impôt foncier irrégulier : les provinces lointaines ne versent plus qu'un tribut, parfois symbolique ; affermage des impôts.",
+        "trade": "Golfe Persique et océan Indien par Bassora et Siraf, mais affaiblis par les Zanj ; routes du nord (fourrures, esclaves) par la Volga."
+      },
+      "army": {
+        "size": {
+          "value": 50000,
+          "low": 30000,
+          "high": 100000,
+          "year": 900,
+          "note": "Effectif très incertain, variable selon les périodes de crise.",
+          "source": {
+            "label": "Wikipédia : Califat abbasside",
+            "url": "https://fr.wikipedia.org/wiki/Califat_abbasside"
+          }
+        },
+        "composition": "Cavalerie turque de la garde, infanterie et cavaliers khorassaniens, volontaires de Bagdad.",
+        "recruitment": "Esclaves turcs achetés en Asie centrale, payés par des terres ou des soldes, souvent en retard.",
+        "famousUnits": [
+          "Garde turque de Samarra",
+          "Armée d'al-Muwaffaq",
+          "Cavaliers saffarides (adversaires)"
+        ],
+        "innovations": [
+          "Concession de terres (iqta) aux officiers",
+          "Armée de métier turque dominante"
+        ]
+      },
+      "politics": {
+        "regime": "Califat dont le pouvoir réel passe aux officiers turcs de la garde, puis aux régents et aux vizirs.",
+        "head": "Calife (al-Mu'tamid, al-Mu'tadid, al-Muqtadir), souvent sous la tutelle d'un régent.",
+        "succession": "Les chefs de la garde choisissent et destituent les califes (quatre en neuf ans, 861-870).",
+        "institutions": "Vizirat, bureaux de Bagdad, puissance de l'armée turque ; dynasties provinciales sur les marges.",
+        "administration": "L'Irak est gouverné directement ; Égypte, Iran et Transoxiane sont aux mains de dynasties autonomes qui reconnaissent le calife.",
+        "provinces": {
+          "value": 10,
+          "low": 6,
+          "high": 15,
+          "year": 900,
+          "note": "Grands gouvernorats effectivement contrôlés, hors dynasties autonomes.",
+          "source": {
+            "label": "Wikipédia : Califat abbasside",
+            "url": "https://fr.wikipedia.org/wiki/Califat_abbasside"
+          }
+        },
+        "law": "Les écoles de droit sunnites s'organisent ; les chiites duodécimains en formation."
+      },
+      "society": {
+        "religions": [
+          "Islam sunnite",
+          "Chiisme (duodécimain et ismaélien)",
+          "Christianisme",
+          "Judaïsme",
+          "Zoroastrisme"
+        ],
+        "languages": [
+          "Arabe",
+          "Persan (renaissance du néo-persan)",
+          "Syriaque",
+          "Turc (dans la garde)"
+        ],
+        "structure": "Élite militaire turque, grands propriétaires, marchands de Bagdad, convertis, dhimmis ; crise sociale sensible au sud de l'Irak.",
+        "women": "Mères et épouses de califes influentes (la mère d'al-Muqtadir, Shaghab) ; rôle réel dans la politique de cour."
+      },
+      "culture": {
+        "inventions": [
+          "Hôpital (bimaristan) de Bagdad",
+          "Lettre de change (suftaja)",
+          "Chimie et distillation",
+          "Observatoires"
+        ],
+        "works": [
+          "Histoire universelle d'al-Tabari",
+          "Mosquée Ibn Tulun (Le Caire, 876-879)",
+          "Livre des routes et des royaumes"
+        ],
+        "scholars": [
+          "Al-Tabari (historien)",
+          "Al-Razi (médecin)",
+          "Al-Battani (astronome)",
+          "Thabit ibn Qurra (mathématicien)"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Routes postales irrégulièrement entretenues, canaux d'Irak endommagés par les Zanj, Samarra abandonnée en 892."
+      },
+      "legacy": "Le califat conserve un grand prestige et une capitale riche, mais l'État se disperse en émirats autonomes qui reconnaissent le calife."
+    },
+    {
+      "id": "bouyides",
+      "name": "Sous la tutelle des Bouyides",
+      "start": 945,
+      "end": 1055,
+      "population": {
+        "total": {
+          "value": 15000000,
+          "low": 10000000,
+          "high": 25000000,
+          "year": 1000,
+          "note": "Ordre de grandeur pour l'Irak et l'Iran occidental sous les Bouyides.",
+          "source": {
+            "label": "Wikipédia : Bouyides",
+            "url": "https://fr.wikipedia.org/wiki/Bouyides"
+          }
+        },
+        "cities": [
+          {
+            "name": "Bagdad",
+            "population": {
+              "value": 400000,
+              "low": 150000,
+              "high": 700000,
+              "year": 1000,
+              "note": "Estimation très incertaine, la ville décline.",
+              "source": {
+                "label": "Wikipédia : Bagdad",
+                "url": "https://fr.wikipedia.org/wiki/Bagdad"
+              }
+            }
+          },
+          {
+            "name": "Chiraz",
+            "population": {
+              "value": 100000,
+              "low": 50000,
+              "high": 150000,
+              "year": 1000,
+              "note": "Capitale des Bouyides du Fars ; estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Chiraz",
+                "url": "https://fr.wikipedia.org/wiki/Chiraz"
+              }
+            }
+          },
+          {
+            "name": "Ispahan",
+            "population": {
+              "value": 80000,
+              "low": 50000,
+              "high": 120000,
+              "year": 1000,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Ispahan",
+                "url": "https://fr.wikipedia.org/wiki/Ispahan"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Dattes et riz d'Irak",
+          "Textiles et soie du Fars",
+          "Verrerie et céramique",
+          "Soufre et pétrole (naphte) du golfe"
+        ],
+        "currency": "Dinar et dirham, frappés au nom du calife et de l'émir bouyide.",
+        "taxation": "Impôt foncier affermé aux officiers ; attribution de terres (iqta) pour payer les soldats.",
+        "trade": "Commerce du golfe Persique (Siraf, Bassora), routes de caravanes vers l'Iran et la Syrie ; affaiblissement progressif du commerce de Bagdad."
+      },
+      "army": {
+        "size": {
+          "value": 30000,
+          "low": 15000,
+          "high": 50000,
+          "year": 980,
+          "note": "Estimation approximative.",
+          "source": {
+            "label": "Wikipédia : Bouyides",
+            "url": "https://fr.wikipedia.org/wiki/Bouyides"
+          }
+        },
+        "composition": "Infanterie daylamite, cavalerie turque, quelques éléphants et archers.",
+        "recruitment": "Montagnards du Daylam (sud de la Caspienne) et esclaves turcs, payés par des concessions de terres.",
+        "famousUnits": [
+          "Daylamites (fantassins)",
+          "Cavalerie turque",
+          "Garde de l'émir"
+        ],
+        "innovations": [
+          "Systématisation de l'iqta",
+          "Fantassins de montagne en armée régulière"
+        ]
+      },
+      "politics": {
+        "regime": "Califat sous tutelle : le calife garde le titre et l'autorité religieuse, l'émir bouyide (shahanshah) commande.",
+        "head": "Calife (al-Muti, al-Qadir, al-Qa'im) ; émirs bouyides (Mu'izz, Adud al-Dawla…).",
+        "succession": "Le calife est choisi ou destitué par l'émir ; l'émirat bouyide se partage entre membres de la famille.",
+        "institutions": "Vizirat, armée daylamite et turque, qadis nommés avec l'accord de l'émir.",
+        "administration": "L'émir contrôle les finances et l'armée ; les Bouyides gouvernent Fars, Rey, Irak.",
+        "provinces": {
+          "value": 6,
+          "low": 4,
+          "high": 8,
+          "year": 1000,
+          "note": "Émirats bouyides (Fars, Rey, Irak, Kerman…).",
+          "source": {
+            "label": "Wikipédia : Bouyides",
+            "url": "https://fr.wikipedia.org/wiki/Bouyides"
+          }
+        },
+        "law": "Droit sunnite (hanafite, shafiite) et chiite, qui coexistent ; les Bouyides, chiites, ménagent les sunnites."
+      },
+      "society": {
+        "religions": [
+          "Islam sunnite",
+          "Chiisme duodécimain",
+          "Christianisme",
+          "Judaïsme"
+        ],
+        "languages": [
+          "Arabe",
+          "Persan",
+          "Daylamite",
+          "Syriaque"
+        ],
+        "structure": "Élite militaire daylamite et turque, administration persane, marchands et savants de Bagdad.",
+        "women": "Quelques femmes de la haute société influentes ; les concubines et les mères de princes jouent un rôle de cour."
+      },
+      "culture": {
+        "inventions": [
+          "Hôpital Adudi de Bagdad (981)",
+          "Canon de médecine d'Avicenne",
+          "Livre des étoiles fixes (al-Sufi)",
+          "Papier et librairies de Bagdad"
+        ],
+        "works": [
+          "Hôpital Adudi (981)",
+          "Livre des Chansons (al-Isfahani)",
+          "Épîtres des Frères de la pureté"
+        ],
+        "scholars": [
+          "Avicenne (médecin et philosophe)",
+          "Al-Biruni (savant)",
+          "Al-Sufi (astronome)",
+          "Al-Mawardi (juriste)"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Digues et canaux de Mésopotamie entretenus par Adud al-Dawla, routes de pèlerinage, hôpital de Bagdad."
+      },
+      "legacy": "Le califat survit grâce à son rôle religieux et à la protection de l'émir, mais il ne gouverne plus : le calife devient une autorité morale."
+    },
+    {
+      "id": "seldjoukides",
+      "name": "Le temps des sultans seldjoukides",
+      "start": 1055,
+      "end": 1180,
+      "population": {
+        "total": {
+          "value": 25000000,
+          "low": 15000000,
+          "high": 35000000,
+          "year": 1100,
+          "note": "Ordre de grandeur pour l'Empire seldjoukide dont le califat est le centre religieux.",
+          "source": {
+            "label": "Wikipédia : Empire seldjoukide",
+            "url": "https://fr.wikipedia.org/wiki/Empire_seldjoukide"
+          }
+        },
+        "cities": [
+          {
+            "name": "Bagdad",
+            "population": {
+              "value": 150000,
+              "low": 80000,
+              "high": 300000,
+              "year": 1100,
+              "note": "Estimation très incertaine.",
+              "source": {
+                "label": "Wikipédia : Bagdad",
+                "url": "https://fr.wikipedia.org/wiki/Bagdad"
+              }
+            }
+          },
+          {
+            "name": "Ispahan",
+            "population": {
+              "value": 100000,
+              "low": 60000,
+              "high": 150000,
+              "year": 1100,
+              "note": "Capitale seldjoukide ; estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Ispahan",
+                "url": "https://fr.wikipedia.org/wiki/Ispahan"
+              }
+            }
+          },
+          {
+            "name": "Nichapour",
+            "population": {
+              "value": 100000,
+              "low": 60000,
+              "high": 200000,
+              "year": 1100,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Nichapour",
+                "url": "https://fr.wikipedia.org/wiki/Nichapour"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Blé et fruits d'Iran",
+          "Soie et textiles",
+          "Chevaux des steppes",
+          "Céramique et verre"
+        ],
+        "currency": "Dinar d'or, dirham d'argent ; monnaie frappée au nom du calife et du sultan.",
+        "taxation": "Impôt foncier prélevé par les détenteurs d'iqta, qui conservent les revenus pour entretenir leurs soldats.",
+        "trade": "Routes de la soie entre l'Asie centrale et la Méditerranée, golfe Persique, caravansérails."
+      },
+      "army": {
+        "size": {
+          "value": 40000,
+          "low": 20000,
+          "high": 70000,
+          "year": 1090,
+          "note": "Estimation approximative de la force mobilisable.",
+          "source": {
+            "label": "Wikipédia : Empire seldjoukide",
+            "url": "https://fr.wikipedia.org/wiki/Empire_seldjoukide"
+          }
+        },
+        "composition": "Cavaliers turcs (archers montés) et mercenaires, avec une infanterie de garnison.",
+        "recruitment": "Turcomans nomades, esclaves-soldats (ghilman) payés par l'iqta.",
+        "famousUnits": [
+          "Archers montés turcs",
+          "Ghilman du sultan",
+          "Turcomans de la frontière"
+        ],
+        "innovations": [
+          "Iqta militaire généralisé",
+          "Armée turque nomade au service de l'État"
+        ]
+      },
+      "politics": {
+        "regime": "Sultanat seldjoukide protégeant un califat honoré : le sultan gouverne, le calife légitime.",
+        "head": "Sultan (Tughril Beg, Alp Arslan, Malik-Shah) et calife (al-Qa'im, al-Muqtadi, al-Mustazhir…).",
+        "succession": "Le calife investit le sultan ; les successions seldjoukides se règlent par la force, ce qui divise l'empire après 1092.",
+        "institutions": "Vizirs persans (Nizam al-Mulk), diwans, madrasas Nizamiyya, atabeks.",
+        "administration": "Gouverneurs turcs dotés d'iqta, vizirs persans, justice des qadis.",
+        "provinces": {
+          "value": 8,
+          "low": 5,
+          "high": 12,
+          "year": 1090,
+          "note": "Grands gouvernements de l'empire seldjoukide.",
+          "source": {
+            "label": "Wikipédia : Empire seldjoukide",
+            "url": "https://fr.wikipedia.org/wiki/Empire_seldjoukide"
+          }
+        },
+        "law": "Droit sunnite enseigné dans les madrasas ; la Nizamiyya forme les juristes de l'État."
+      },
+      "society": {
+        "religions": [
+          "Islam sunnite (dominant)",
+          "Chiisme",
+          "Christianisme",
+          "Judaïsme"
+        ],
+        "languages": [
+          "Arabe (religion, droit)",
+          "Persan (administration)",
+          "Turc (armée)"
+        ],
+        "structure": "Élite militaire turque, savants et vizirs persans, clergé sunnite, marchands.",
+        "women": "Princesses seldjoukides influentes ; la femme d'un sultan joue parfois un rôle politique, comme Terken Khatun."
+      },
+      "culture": {
+        "inventions": [
+          "Madrasa Nizamiyya",
+          "Observatoire d'Ispahan",
+          "Calendrier d'Omar Khayyam",
+          "Théories du soufisme"
+        ],
+        "works": [
+          "Siyasatnama de Nizam al-Mulk",
+          "L'Incohérence des philosophes (al-Ghazali)",
+          "Les Séances (al-Hariri)"
+        ],
+        "scholars": [
+          "Al-Ghazali (théologien)",
+          "Omar Khayyam (mathématicien)",
+          "Nizam al-Mulk (vizir)",
+          "Al-Hariri (écrivain)"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Caravansérails, ponts et mosquées bâtis par les sultans ; réseau de madrasas de l'Iran à la Syrie."
+      },
+      "legacy": "Le califat gagne un protecteur sunnite et un réseau d'écoles, mais l'initiative militaire reste aux sultans, puis aux atabeks."
+    },
+    {
+      "id": "al-nasir",
+      "name": "Dernier sursaut et chute",
+      "start": 1180,
+      "end": 1258,
+      "population": {
+        "total": {
+          "value": 3000000,
+          "low": 2000000,
+          "high": 5000000,
+          "year": 1200,
+          "note": "Ordre de grandeur pour l'Irak central et méridional.",
+          "source": {
+            "label": "Wikipédia : Califat abbasside",
+            "url": "https://fr.wikipedia.org/wiki/Califat_abbasside"
+          }
+        },
+        "cities": [
+          {
+            "name": "Bagdad",
+            "population": {
+              "value": 150000,
+              "low": 80000,
+              "high": 300000,
+              "year": 1200,
+              "note": "Estimation très incertaine.",
+              "source": {
+                "label": "Wikipédia : Bagdad",
+                "url": "https://fr.wikipedia.org/wiki/Bagdad"
+              }
+            }
+          },
+          {
+            "name": "Bassora",
+            "population": {
+              "value": 50000,
+              "low": 20000,
+              "high": 100000,
+              "year": 1200,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Bassora",
+                "url": "https://fr.wikipedia.org/wiki/Bassora"
+              }
+            }
+          },
+          {
+            "name": "Hilla",
+            "population": {
+              "value": 30000,
+              "low": 15000,
+              "high": 60000,
+              "year": 1200,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Hilla",
+                "url": "https://fr.wikipedia.org/wiki/Hilla"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Blé, orge et dattes d'Irak",
+          "Textiles de Bagdad",
+          "Poissons et roseaux des marais"
+        ],
+        "currency": "Dinar d'or, dirham d'argent et monnaie de cuivre.",
+        "taxation": "Impôt foncier sur l'Irak central, taxes de marché et de douane, confiscations.",
+        "trade": "Golfe Persique, caravanes de Syrie et d'Iran ; commerce affaibli par l'insécurité."
+      },
+      "army": {
+        "size": {
+          "value": 20000,
+          "low": 10000,
+          "high": 40000,
+          "year": 1210,
+          "note": "Armée du calife al-Nasir : ordre de grandeur.",
+          "source": {
+            "label": "Wikipédia : An-Nasir li-Din Allah",
+            "url": "https://fr.wikipedia.org/wiki/An-Nâsir_li-Dîn_Allâh"
+          }
+        },
+        "composition": "Cavaliers turcs et arabes, fantassins de ville, archers.",
+        "recruitment": "Soldats payés par des concessions de terres, mamelouks du calife, volontaires de la futuwwa.",
+        "famousUnits": [
+          "Mamelouks du calife",
+          "Troupes de la futuwwa",
+          "Garde de Bagdad"
+        ],
+        "innovations": [
+          "Armée califale reconstituée sous al-Nasir",
+          "Réseau de renseignement"
+        ]
+      },
+      "politics": {
+        "regime": "Califat redevenu un petit État territorial en Irak, face à des voisins plus puissants.",
+        "head": "Calife (al-Nasir, al-Zahir, al-Mustansir, al-Musta'sim).",
+        "succession": "Le calife désigne un héritier de sa famille, sans conflit majeur jusqu'en 1258.",
+        "institutions": "Vizirat, chancellerie, futuwwa, police de Bagdad, justice des qadis.",
+        "administration": "Gouverneurs d'Irak (Bagdad, Wasit, Bassora), commis du vizir.",
+        "provinces": {
+          "value": 4,
+          "low": 3,
+          "high": 6,
+          "year": 1210,
+          "note": "Subdivisions de l'Irak sous le calife.",
+          "source": {
+            "label": "Wikipédia : Califat abbasside",
+            "url": "https://fr.wikipedia.org/wiki/Califat_abbasside"
+          }
+        },
+        "law": "Droit sunnite (quatre écoles) ; la futuwwa réglemente les corporations."
+      },
+      "society": {
+        "religions": [
+          "Islam sunnite",
+          "Chiisme",
+          "Christianisme (Église de l'Orient)",
+          "Judaïsme"
+        ],
+        "languages": [
+          "Arabe",
+          "Persan",
+          "Turc",
+          "Syriaque"
+        ],
+        "structure": "Élite de cour et de l'armée, savants, marchands et artisans de Bagdad, corporations (futuwwa).",
+        "women": "Des femmes de la cour financent des écoles et des fondations pieuses, comme la mère d'al-Mustansir."
+      },
+      "culture": {
+        "inventions": [
+          "Futuwwa réformée",
+          "Madrasa Mustansiriyya (1233)",
+          "Astrolabe perfectionné",
+          "Lettre de change"
+        ],
+        "works": [
+          "Madrasa Mustansiriyya (1233)",
+          "Dictionnaire des pays (Yaqut, 1224)",
+          "Maqamat illustrées d'al-Wasiti"
+        ],
+        "scholars": [
+          "Yaqut al-Hamawi (géographe)",
+          "Ibn al-Jawzi (prédicateur)",
+          "Al-Suhrawardi (mystique)",
+          "Ibn Jubayr (voyageur)"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Canaux de Mésopotamie, ponts de bateaux de Bagdad, palais et madrasas ; digues et murailles négligées avant l'assaut de 1258."
+      },
+      "legacy": "Le dernier califat de Bagdad s'éteint avec le siège de 1258, mais la culture née sous les Abbassides se prolonge dans le monde musulman."
+    }
+  ]
+}

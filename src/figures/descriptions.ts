@@ -419,6 +419,26 @@ export const FACTION_INFO: Record<Faction, FigureInfo> = {
     era: 'XVIe – XVIIIe s.',
     text: "Cavaliers turcomans fidèles à la dynastie chiite des Safavides de Perse. On les nomme qizilbash, « têtes rouges », à cause du turban rouge à douze plis qu'ils portent autour d'un bâton central. Armés du sabre et de l'arc, souvent en cotte de mailles, ils font du chah Ismaïl le maître de l'Iran. À Chaldiran en 1514, ils sont vaincus par les canons et les mousquets du sultan Sélim Ier.",
   },
+  moghols: {
+    label: 'Armée moghole',
+    era: 'XVIe – XIXe s.',
+    text: "Cavaliers et mousquetaires de l'empire fondé par Babur, descendant de Tamerlan et de Gengis Khan. Canons et mousquets décident de la bataille de Panipat en 1526. Sous Akbar, le système des mansabdars classe les officiers par rang. Les éléphants de guerre et l'artillerie lourde complètent des armées immenses.",
+  },
+  rajputs: {
+    label: 'Rajputs',
+    era: 'XVIe – XVIIIe s.',
+    text: "Clans guerriers hindous du Rajasthan, réputés pour leur bravoure. Babur les bat à Khanwa en 1527. Akbar en fait des alliés et des généraux de l'empire, mais Rana Pratap de Mewar lui résiste, notamment à Haldighati en 1576.",
+  },
+  marathes: {
+    label: 'Marathes',
+    era: 'XVIIe – XVIIIe s.',
+    text: "Guerriers du Deccan, cavaliers légers rapides et maîtres de la guérilla dans les collines. Shivaji fonde leur royaume, couronné en 1674. Après Aurangzeb, ils minent l'empire moghol. Ils sont vaincus par les Afghans à Panipat en 1761.",
+  },
+  afghans: {
+    label: 'Afghans',
+    era: 'XVIe – XVIIIe s.',
+    text: 'Pachtounes des sultans lodi de Delhi, battus par Babur en 1526. Sher Shah Suri chasse Humayun en 1540. Ahmad Shah Durrani écrase les Marathes à Panipat en 1761.',
+  },
   'ottomans-modernes': {
     label: 'Armée ottomane moderne',
     era: 'XIXe – XXe s.',

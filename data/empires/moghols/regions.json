@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Empire moghol",
+    "summary": "L'empire fondé par Babur, descendant de Tamerlan, après sa victoire de Panipat en 1526. Sous Akbar, Shah Jahan puis Aurangzeb, il s'étend de Kaboul au Bengale et au Deccan, avant de se réduire au XVIIIe siècle à la seule région de Delhi, jusqu'à sa disparition en 1857.",
+    "years": [1526, 1857]
+  },
+  {
+    "name": "Empire des Sur",
+    "summary": "L'État fondé par Sher Shah Suri, chef afghan du Bihar, qui chasse Humayun de l'Inde en 1540. En quelques années, il réorganise l'impôt, frappe la roupie d'argent et entretient la grande route du nord de l'Inde, autant de réformes que les Moghols reprendront après leur retour.",
+    "years": [1540, 1540]
+  },
+  {
+    "name": "Badakhchan (Mirza Sulayman)",
+    "summary": "Région montagneuse du nord-est de l'Afghanistan, sur le haut Amou-Daria. Elle est tenue par Mirza Sulayman, un prince timouride cousin de la famille impériale, qui reconnaît l'autorité moghole tout en gouvernant à sa guise.",
+    "years": [1555, 1556]
+  },
+  {
+    "name": "Kaboul (Mirza Hakim)",
+    "summary": "Le royaume de Kaboul, berceau de la puissance de Babur, confié à Mirza Hakim, demi-frère d'Akbar. Il reconnaît l'empereur mais lui dispute parfois le pouvoir ; à sa mort, Kaboul est rattachée directement à l'empire.",
+    "years": [1573, 1582]
+  },
+  {
+    "name": "Royaume du Mewar (Udaipur)",
+    "summary": "Le plus fier des royaumes rajputs, autour de Chittor puis d'Udaipur. Ses rois, comme Rana Pratap, résistent longtemps aux Moghols ; le Mewar finit par se soumettre sous Jahangir en gardant son roi, ses forts et ses coutumes.",
+    "years": [1622, 1764]
+  },
+  {
+    "name": "Sultanat de Bijapur",
+    "summary": "Sultanat musulman du Deccan occidental, gouverné par la dynastie des Adil Shahi. Tributaire de l'empire sous Shah Jahan, il est annexé par Aurangzeb en 1686 après un long siège, ce qui ouvre le Deccan aux armées mogholes.",
+    "years": [1658, 1674]
+  },
+  {
+    "name": "Sultanat de Golconde",
+    "summary": "Royaume du Deccan oriental, riche de ses mines de diamants et de sa capitale Hyderabad. Tributaire de Shah Jahan, il tombe en 1687 devant Aurangzeb ; sa conquête marque la plus grande extension de l'empire vers le sud.",
+    "years": [1658, 1674]
+  },
+  {
+    "name": "Nawabat d'Awadh",
+    "summary": "Province du Gange moyen, autour de Faizabad puis de Lucknow. Ses gouverneurs, les nawabs, deviennent héréditaires après la mort d'Aurangzeb : ils reconnaissent l'empereur de Delhi mais gouvernent en princes indépendants.",
+    "years": [1739, 1764]
+  },
+  {
+    "name": "Nawabat du Bengale",
+    "summary": "La province la plus riche de l'empire, autour de Murshidabad. Ses nawabs envoient de moins en moins d'impôts à Delhi ; en 1757, à Plassey, la Compagnie anglaise des Indes bat Siraj ud-Daula et prend peu à peu le contrôle du pays.",
+    "years": [1739, 1764]
+  },
+  {
+    "name": "Nizam d'Hyderabad",
+    "summary": "L'État fondé dans le Deccan par Asaf Jah, ancien vizir de l'empire, qui prend le titre de nizam. Il reconnaît toujours l'empereur moghol, mais forme en réalité le plus grand des royaumes successeurs, qui durera jusqu'en 1948.",
+    "years": [1739, 1764]
+  },
+  {
+    "name": "Nawabat d'Arcot (Carnatic)",
+    "summary": "La côte sud-est de l'Inde, autour d'Arcot, gouvernée par des nawabs dépendant du Nizam. Elle devient le champ de bataille des Compagnies française et anglaise des Indes, qui y soutiennent chacune leur candidat.",
+    "years": [1739, 1757]
+  },
+  {
+    "name": "Royaume de Jaipur (Amber)",
+    "summary": "Royaume rajput d'Amber, rebaptisé Jaipur au XVIIIe siècle. Ses rois, comme Man Singh, sont parmi les plus fidèles alliés et généraux des Moghols depuis Akbar ; après le déclin de Delhi, ils gouvernent seuls.",
+    "years": [1739, 1764]
+  },
+  {
+    "name": "Royaume du Marwar (Jodhpur)",
+    "summary": "Royaume rajput du désert du Thar, autour de Jodhpur. Allié des Moghols sous Akbar, annexé puis révolté sous Aurangzeb, il retrouve son autonomie au XVIIIe siècle tout en reconnaissant encore l'empereur de Delhi.",
+    "years": [1739, 1764]
+  },
+  {
+    "name": "Royaume de Bikaner et Jaisalmer",
+    "summary": "Royaumes rajputs du grand désert du Thar, vivant des caravanes qui le traversent. Alliés de l'empire depuis Akbar, ils ne reconnaissent plus Delhi que de nom quand le pouvoir moghol s'effondre.",
+    "years": [1739, 1739]
+  },
+  {
+    "name": "Rohilkhand (Najib ud-Daula)",
+    "summary": "Région au nord-est de Delhi, peuplée de chefs afghans, les Rohillas. Leur chef Najib ud-Daula, allié d'Ahmad Shah Durrani contre les Marathes à Panipat, gouverne Delhi au nom d'un empereur absent.",
+    "years": [1761, 1764]
+  },
+  {
+    "name": "Awadh (révolte)",
+    "summary": "En 1857, l'Awadh, annexé l'année précédente par la Compagnie, devient l'un des grands foyers de la révolte des cipayes. Les insurgés assiègent la résidence britannique de Lucknow et se réclament de l'empereur de Delhi.",
+    "years": [1857, 1857]
+  },
+  {
+    "name": "Rohilkhand (révolte)",
+    "summary": "En 1857, autour de Bareilly, les insurgés du Rohilkhand chassent les Britanniques et proclament un gouvernement au nom de Bahadur Shah II, le dernier empereur moghol, avant d'être vaincus l'année suivante.",
+    "years": [1857, 1857]
+  },
+  {
+    "name": "Jhansi (révolte)",
+    "summary": "Petit royaume du centre de l'Inde, annexé par la Compagnie faute d'héritier reconnu. En 1857, sa reine, la rani Lakshmi Bai, rejoint la révolte et devient une héroïne du combat contre la domination britannique.",
+    "years": [1857, 1857]
+  },
+  {
+    "name": "Kanpur (révolte)",
+    "summary": "Ville de garnison sur le Gange. En 1857, Nana Sahib, héritier du dernier peshwa marathe, y prend la tête de la révolte ; le siège et le massacre de la garnison britannique entraînent une répression très dure.",
+    "years": [1857, 1857]
+  },
+  {
+    "name": "Gwalior (révolte)",
+    "summary": "La grande forteresse de Gwalior, capitale des Scindia, princes marathes restés fidèles aux Britanniques. Leurs propres soldats se rallient pourtant à la révolte, et la rani de Jhansi y livre ses derniers combats.",
+    "years": [1857, 1857]
+  },
+  {
+    "name": "Bihar (Jagdishpur)",
+    "summary": "Domaine du Bihar occidental gouverné par Kunwar Singh, un vieux seigneur rajput. En 1857, il entraîne ses paysans et les cipayes révoltés dans une guérilla contre la Compagnie, au nom de l'empereur de Delhi.",
+    "years": [1857, 1857]
+  }
+]

@@ -1,0 +1,383 @@
+[
+  {
+    "id": "abu-al-abbas-as-saffah",
+    "name": "Abu al-Abbas as-Saffah",
+    "archetype": "calife",
+    "faction": "arabes",
+    "born": 721,
+    "died": 754,
+    "title": "Premier calife abbasside",
+    "bio": "Abu al-Abbas descend d'al-Abbas, oncle du Prophète. Son frère aîné, l'imam Ibrahim, dirige la propagande secrète contre les Omeyyades, mais il est arrêté et meurt en prison en 749. Abu al-Abbas se cache alors à Koufa ; à la fin de 749, les chefs de la révolution du Khorassan le proclament calife dans la mosquée de la ville. Les Omeyyades sont battus au Grand Zab au début de 750, et leur dernier calife, Marwan II, est tué en Égypte. Abu al-Abbas reçoit le surnom d'as-Saffah, que la tradition rapporte tantôt à sa générosité, tantôt au sang versé : les Omeyyades sont pourchassés sans pitié, ce qui nourrit sa mauvaise réputation. Il installe sa cour à Anbar, au bord de l'Euphrate, et s'appuie sur son frère al-Mansur et sur Abu Muslim pour tenir les provinces. Il meurt de la variole en 754, après quatre ans de règne, laissant à son frère un empire qui doit encore se doter d'institutions. Les chroniques qui parlent de lui ont été écrites sous sa propre dynastie.",
+    "keyFacts": [
+      "Vers 721 : naissance dans le Hedjaz",
+      "Fin 749 : proclamé calife à Koufa",
+      "750 : victoire du Grand Zab sur les Omeyyades",
+      "754 : mort de la variole à Anbar"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Abû al-`Abbâs as-Saffâh",
+        "url": "https://fr.wikipedia.org/wiki/Abu_al-Abbas_as-Saffah"
+      }
+    ]
+  },
+  {
+    "id": "abu-muslim",
+    "name": "Abu Muslim al-Khurasani",
+    "archetype": "general",
+    "faction": "parthes-perses",
+    "born": 718,
+    "died": 755,
+    "title": "Chef de la révolution abbasside du Khorassan",
+    "bio": "Les origines d'Abu Muslim sont discutées : esclave affranchi, d'origine iranienne ou arabe, selon les sources. Envoyé au Khorassan par l'imam Ibrahim, il y prépare la révolte et, en 747, lève à Merv les bannières noires des Abbassides. Il rallie Arabes mécontents, Iraniens convertis et paysans, bat les gouverneurs omeyyades et envoie ses armées conquérir l'Iran puis l'Irak. Son rôle est décisif dans la victoire de 750. Resté au Khorassan comme gouverneur, il y devient immensément populaire et puissant, au point d'inquiéter le nouveau calife al-Mansur. En 754, il l'aide à écraser un oncle rebelle ; mais en 755, convoqué à la cour, il est assassiné sur ordre du calife. Sa mort provoque des révoltes au Khorassan, menées par des partisans qui voient en lui un prophète ou un imam, comme Sunbad et al-Muqanna. L'épisode montre qu'à ses débuts, le califat abbasside doit autant à l'Iran oriental qu'à l'Arabie.",
+    "keyFacts": [
+      "Vers 718 : naissance (origine discutée)",
+      "747 : lève les bannières noires à Merv",
+      "750 : victoire sur les Omeyyades",
+      "755 : assassiné sur ordre d'al-Mansur"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Abû Muslim al-Khurâsânî",
+        "url": "https://fr.wikipedia.org/wiki/Abu_Muslim"
+      }
+    ]
+  },
+  {
+    "id": "al-mansur",
+    "name": "Al-Mansur",
+    "archetype": "calife",
+    "faction": "arabes",
+    "born": 714,
+    "died": 775,
+    "title": "Fondateur de Bagdad",
+    "bio": "Frère d'Abu al-Abbas, Abu Jafar al-Mansur règne de 754 à 775. Il hérite d'un califat victorieux mais fragile et le consolide par la force : il fait assassiner Abu Muslim en 755, écrase les révoltes alides de Muhammad al-Nafs al-Zakiyya et d'Ibrahim en 762-763 et domine ses oncles. Sous son règne, l'Ifriqiya est reprise (vers 761), mais al-Andalus lui échappe : l'Omeyyade Abd al-Rahman Ier s'y installe en 756. En 762, il fonde Bagdad, nouvelle capitale à plan circulaire, sur le Tigre, loin de Koufa et de ses partisans d'Ali. Il tient les finances avec une rigueur proverbiale : on dit qu'il laissa un trésor immense. Ses sermons le montrent soucieux de sa légitimité religieuse : il se dit « le sultan de Dieu sur sa terre ». Il commande aussi des traductions du grec, du persan et du sanskrit, premiers pas du mouvement de traduction. Il meurt en 775 en route vers La Mecque.",
+    "keyFacts": [
+      "754 : devient calife",
+      "755 : fait tuer Abu Muslim",
+      "762 : fonde Bagdad",
+      "762-763 : écrase la révolte alide de Médine et de Bassora",
+      "775 : meurt en pèlerinage"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Abû Ja`far al-Mansûr",
+        "url": "https://fr.wikipedia.org/wiki/Al-Mansur"
+      }
+    ]
+  },
+  {
+    "id": "haroun-al-rachid",
+    "name": "Haroun al-Rachid",
+    "archetype": "calife",
+    "faction": "arabes",
+    "born": 766,
+    "died": 809,
+    "title": "Calife de l'âge d'or de Bagdad",
+    "bio": "Cinquième calife abbasside, Haroun règne de 786 à 809. Fils d'al-Mahdi et de Khayzuran, il gouverne d'abord avec le vizir Yahya al-Barmaki et ses fils, puis écarte les Barmakides en 803. Son règne voit le califat à son extension maximale, mais aussi les premiers signes de désagrégation : le Maroc se détache (Idrisides, 788) et l'Ifriqiya est confiée à la dynastie aghlabide (800). Il fait la guerre aux Byzantins chaque année et s'installe à Raqqa, sur l'Euphrate, de 796 à 808. L'ambassade échangée avec Charlemagne (797-802) n'est connue que par les sources franques. Son épouse Zubayda bâtit des relais sur la route du pèlerinage. En 802, il partage sa succession entre ses deux fils : al-Amin, à Bagdad, et al-Ma'mun, au Khorassan, décision qui conduit à la guerre civile. Il meurt à Tus en 809, en campagne. Le Haroun des Mille et Une Nuits est un personnage de légende, très éloigné du souverain réel.",
+    "keyFacts": [
+      "786 : devient calife",
+      "796 : installe sa cour à Raqqa",
+      "797-802 : ambassade avec Charlemagne (sources franques)",
+      "803 : chute des Barmakides",
+      "809 : meurt à Tus"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Hâroun ar-Rachîd",
+        "url": "https://fr.wikipedia.org/wiki/Hâroun_ar-Rachîd"
+      }
+    ]
+  },
+  {
+    "id": "zubayda",
+    "name": "Zubayda bint Jafar",
+    "archetype": "imperatrice",
+    "faction": "arabes",
+    "born": 762,
+    "died": 831,
+    "title": "Épouse de Haroun al-Rachid, bienfaitrice du pèlerinage",
+    "bio": "Petite-fille du calife al-Mansur, Zubayda épouse Haroun al-Rachid vers 782. Elle est la mère d'al-Amin, qui deviendra calife, et l'une des femmes les plus influentes de la cour. On lui attribue la création d'équipements d'eau et de relais sur la route du pèlerinage entre Koufa et La Mecque, connue plus tard comme Darb Zubayda, et l'amélioration de l'approvisionnement en eau de La Mecque ; les sources divergent sur ce qu'elle a financé elle-même. Pendant la guerre civile qui oppose son fils al-Amin à al-Ma'mun, elle reste à Bagdad ; après la défaite de son fils, en 813, elle continue de vivre à la cour et conserve une partie de son influence. Elle meurt en 831. Sa mémoire est celle d'une princesse pieuse, riche et généreuse, que les récits ultérieurs ont embellie. Son rôle est un des rares exemples bien documentés de pouvoir et de mécénat féminins au sein du califat.",
+    "keyFacts": [
+      "Vers 782 : épouse Haroun al-Rachid",
+      "809 : son fils al-Amin devient calife",
+      "813 : mort d'al-Amin, assiégé dans Bagdad",
+      "831 : meurt à Bagdad"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Zubayda bint Ja`far",
+        "url": "https://fr.wikipedia.org/wiki/Zubayda_bint_Ja`far"
+      }
+    ]
+  },
+  {
+    "id": "yahya-al-barmaki",
+    "name": "Yahya ibn Khalid al-Barmaki",
+    "archetype": "grand-vizir",
+    "faction": "parthes-perses",
+    "born": 738,
+    "died": 805,
+    "title": "Vizir et chef des Barmakides",
+    "bio": "Les Barmakides sont une famille d'origine iranienne, venue de Balkh, où leurs ancêtres desservaient un grand temple bouddhiste. Yahya, précepteur du jeune Haroun, devient son vizir en 786. Il gère avec ses fils, Fadl et Jafar, l'administration du califat pendant près de vingt ans : finances, chancellerie, nominations des gouverneurs. Les Barmakides soutiennent les arts, les savants et les traductions, et bâtissent de beaux palais à Bagdad. En 803, Haroun fait exécuter Jafar et disgracie toute la famille : Yahya meurt en prison à Raqqa en 805. Les causes de cette chute sont débattues : jalousie, crainte d'un pouvoir devenu trop grand, soupçon de détournement, ou la célèbre histoire romanesque de Jafar et de la sœur du calife, que les historiens jugent légendaire. Leur règne a laissé le souvenir d'un temps où l'administration était iranienne et efficace, et où la générosité des vizirs n'avait pas de limite.",
+    "keyFacts": [
+      "Vers 738 : naissance à Balkh ou dans son entourage",
+      "786 : vizir de Haroun al-Rachid",
+      "803 : Jafar est exécuté, la famille disgraciée",
+      "805 : meurt en prison à Raqqa"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Barmakides",
+        "url": "https://fr.wikipedia.org/wiki/Barmakides"
+      }
+    ]
+  },
+  {
+    "id": "al-mamun",
+    "name": "Al-Ma'mun",
+    "archetype": "calife",
+    "faction": "arabes",
+    "born": 786,
+    "died": 833,
+    "title": "Calife savant, protecteur de la Maison de la sagesse",
+    "bio": "Fils de Haroun al-Rachid et d'une mère iranienne, al-Ma'mun gouverne le Khorassan depuis Merv quand son père meurt. Il vainc son frère al-Amin en 813 grâce à son général Tahir, mais reste à Merv jusqu'en 819 avant de rentrer à Bagdad. Il fait face à des révoltes, notamment alides, et confie le Khorassan aux Tahirides, la Transoxiane aux Samanides. Souverain très cultivé, il s'entoure de philosophes, de médecins et d'astronomes, et soutient la Maison de la sagesse, qui regroupe traducteurs et savants. Il fait mesurer la circonférence de la Terre et installer des observatoires en 828-829. En 833, il impose par une inquisition, la mihna, la doctrine mutazilite du Coran créé, qui divise les juristes et que son successeur maintiendra quelques années. Il meurt en 833, en campagne contre les Byzantins, près de Tarse. Il reste le modèle du calife protecteur des sciences.",
+    "keyFacts": [
+      "813 : victoire sur son frère al-Amin, prise de Bagdad",
+      "819 : rentre à Bagdad",
+      "828-829 : observatoires de Bagdad et de Damas",
+      "833 : mihna, puis meurt près de Tarse"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Al-Ma'mûn",
+        "url": "https://fr.wikipedia.org/wiki/Al-Ma`mûn"
+      }
+    ]
+  },
+  {
+    "id": "al-khwarizmi",
+    "name": "Al-Khwarizmi",
+    "archetype": "sage",
+    "faction": "parthes-perses",
+    "born": 780,
+    "died": 850,
+    "title": "Mathématicien, père de l'algèbre",
+    "bio": "Muhammad ibn Musa al-Khwarizmi, dont le nom signifie « originaire du Khwarezm », travaille à Bagdad sous al-Ma'mun, vers 820-830. Il est associé à la Maison de la sagesse, sans que l'on sache exactement quel fut son rôle dans cette institution. Son traité *Al-Kitab al-mukhtasar fi hisab al-jabr wal-muqabala* expose la résolution des équations du premier et du second degré par des méthodes générales : le mot « algèbre » vient de *al-jabr*. Un autre ouvrage présente le système de numération décimale de position, venu d'Inde, avec le zéro : traduit en latin au XIIe siècle, il diffuse les chiffres dits arabes en Europe, et son nom, déformé en « algorithme », désigne depuis une méthode de calcul. Il dresse aussi des tables astronomiques et un traité de géographie corrigeant Ptolémée. La date de sa mort, vers 850, est incertaine. Il doit beaucoup aux savoirs indiens et grecs, mais sa synthèse est nouvelle.",
+    "keyFacts": [
+      "Vers 780 : naissance, sans doute au Khwarezm",
+      "Vers 820 : traité d'algèbre",
+      "Vers 825 : traité sur le calcul indien",
+      "Vers 850 : mort à Bagdad"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Al-Khwârizmî",
+        "url": "https://fr.wikipedia.org/wiki/Al-Khwârizmî"
+      }
+    ]
+  },
+  {
+    "id": "al-kindi",
+    "name": "Al-Kindi",
+    "archetype": "sage",
+    "faction": "arabes",
+    "born": 801,
+    "died": 873,
+    "title": "Premier grand philosophe de langue arabe",
+    "bio": "Abu Yusuf Yaqub al-Kindi, né à Koufa dans une famille arabe de Kinda, étudie à Bassora puis à Bagdad. Sous al-Ma'mun et al-Mu'tasim, il se fait connaître comme philosophe, médecin, astronome et mathématicien, et dirige des traductions d'Aristote et de commentateurs grecs. Il cherche à concilier la pensée grecque avec la foi musulmane, et s'intéresse à l'optique, à la musique, à la cryptanalyse (son traité sur le déchiffrement par fréquences des lettres est le premier connu) et à la pharmacologie. Proche du mutazilisme, il perd la faveur de la cour sous al-Mutawakkil, qui rompt avec cette doctrine : selon la tradition, sa bibliothèque est confisquée, puis rendue. Il meurt vers 873, après avoir écrit plusieurs centaines de traités, dont beaucoup sont perdus. On l'appelle parfois « le philosophe des Arabes », parce qu'il est issu de l'une de leurs grandes tribus, ce qui est rare parmi les savants de son temps.",
+    "keyFacts": [
+      "Vers 801 : naissance à Koufa",
+      "Vers 830 : dirige des traductions à Bagdad",
+      "Vers 850 : traité sur le déchiffrement des messages",
+      "Vers 873 : mort à Bagdad"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Al-Kindi",
+        "url": "https://fr.wikipedia.org/wiki/Al-Kindi"
+      }
+    ]
+  },
+  {
+    "id": "al-mutawakkil",
+    "name": "Al-Mutawakkil",
+    "archetype": "calife",
+    "faction": "arabes",
+    "born": 822,
+    "died": 861,
+    "title": "Calife bâtisseur, assassiné par sa garde turque",
+    "bio": "Dixième calife abbasside, al-Mutawakkil règne de 847 à 861. Il met fin à la mihna et rétablit le sunnisme traditionnel, soutenu par l'imam Ahmad ibn Hanbal. Il impose aux chrétiens, aux juifs et aux chiites des mesures plus dures. Installé à Samarra, il y bâtit des palais, la Grande Mosquée avec son minaret en spirale, et fonde une nouvelle ville, la Jafariyya, qui ruine le trésor. Il tente de réduire le pouvoir des chefs turcs de sa garde, mais en vain. Dans la nuit du 10 au 11 décembre 861, il est tué par des officiers turcs avec la connivence de son fils al-Muntasir, ce qui ouvre l'anarchie de Samarra. Son règne apparaît comme le dernier moment de forte autorité califale avant les décennies de crise : après lui, les califes dépendent de la garde turque. Il est aussi un patron des savants, comme le médecin Hunayn ibn Ishaq, qui traduit des textes grecs.",
+    "keyFacts": [
+      "847 : devient calife, met fin à la mihna",
+      "848-852 : Grande Mosquée de Samarra",
+      "859 : fonde la Jafariyya",
+      "861 : assassiné à Samarra"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Al-Mutawakkil",
+        "url": "https://fr.wikipedia.org/wiki/Al-Mutawakkil"
+      }
+    ]
+  },
+  {
+    "id": "al-tabari",
+    "name": "Al-Tabari",
+    "archetype": "sage",
+    "faction": "parthes-perses",
+    "born": 839,
+    "died": 923,
+    "title": "Historien et exégète du Coran",
+    "bio": "Abu Jafar al-Tabari naît à Amol, au Tabaristan, au sud de la Caspienne, et passe sa vie à étudier et à enseigner, voyageant à Rey, Bassora, Koufa, Fustat, puis à Bagdad où il s'installe. Il est l'un des plus grands savants de son temps, auteur d'un commentaire du Coran en trente volumes et d'un monumental récit historique, le *Tarikh al-rusul wal-muluk*, qui va de la Création à l'an 915. C'est la source principale sur les premiers siècles de l'islam, y compris les califats omeyyade et abbasside. Il y rapporte souvent plusieurs versions d'un même événement, citées avec leur chaîne de transmetteurs, ce qui permet de les comparer. Sa position sur des questions de droit lui vaut des conflits avec des juristes hanbalites de Bagdad. Il meurt en 923. Son œuvre, écrite à l'époque abbasside, reflète le point de vue de la dynastie victorieuse, d'où la prudence des historiens modernes devant certains récits.",
+    "keyFacts": [
+      "839 : naissance à Amol (Tabaristan)",
+      "Vers 883-903 : commentaire du Coran",
+      "Vers 915 : histoire universelle (Tarikh)",
+      "923 : meurt à Bagdad"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Tabari",
+        "url": "https://fr.wikipedia.org/wiki/Tabari"
+      }
+    ]
+  },
+  {
+    "id": "ibn-sina",
+    "name": "Avicenne (Ibn Sina)",
+    "archetype": "sage",
+    "faction": "parthes-perses",
+    "born": 980,
+    "died": 1037,
+    "title": "Médecin et philosophe du monde iranien",
+    "bio": "Né près de Boukhara, sous les Samanides, Ibn Sina (Avicenne) est médecin à dix-sept ans. Après la chute des Samanides, il erre entre le Khwarezm, Rey, Hamadan et Ispahan, au service d'émirs bouyides et de leurs rivaux. Il vit donc dans le monde abbasside par la langue arabe, la culture et la tradition savante, mais il n'a pas servi les califes de Bagdad : son rattachement au califat est celui d'un monde plutôt que d'une cour. Son *Canon de la médecine*, achevé vers 1025, synthétise Galien, Hippocrate et la pratique de son temps ; traduit en latin au XIIe siècle, il est enseigné en Europe jusqu'au XVIIe siècle. Son *Livre de la guérison* est une vaste somme de philosophie inspirée d'Aristote et du néoplatonisme. Il meurt en 1037 à Hamadan. Son œuvre est aussi celle d'une tradition savante partagée avec les Samanides et les Bouyides, en grande partie hors de Bagdad.",
+    "keyFacts": [
+      "980 : naissance près de Boukhara",
+      "Vers 1000 : médecin à la cour samanide",
+      "Vers 1025 : Canon de la médecine",
+      "1037 : meurt à Hamadan"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Avicenne",
+        "url": "https://fr.wikipedia.org/wiki/Avicenne"
+      }
+    ]
+  },
+  {
+    "id": "tughril-beg",
+    "name": "Tughril Beg",
+    "archetype": "sultan",
+    "faction": "turcs-seldjoukides",
+    "born": 990,
+    "died": 1063,
+    "title": "Premier sultan seldjoukide",
+    "bio": "Petit-fils de Seldjouk, Tughril Beg dirige avec son frère Chaghri Beg les Turcs oghouz convertis à l'islam sunnite. En 1038, ils prennent Nichapour, puis vainquent les Ghaznévides à Dandanqan en 1040, ce qui ouvre l'Iran. Tughril chasse les Bouyides chiites de l'ouest du plateau iranien et entre à Bagdad en décembre 1055, où le calife al-Qa'im le salue comme libérateur. En 1058, le calife lui remet des habits d'honneur et le titre de roi de l'Orient et de l'Occident ; Tughril épouse en 1063 l'une de ses filles. Entre-temps, un général rebelle, al-Basasiri, prend Bagdad au nom des Fatimides en 1058, et Tughril doit la reconquérir. À sa mort en 1063, la succession revient, après une brève lutte, à son neveu Alp Arslan. Il laisse un État qui s'étend de l'Asie centrale à l'Irak, et une alliance durable entre sultan et calife : l'un commande, l'autre légitime.",
+    "keyFacts": [
+      "1038 : prend Nichapour",
+      "1040 : victoire de Dandanqan sur les Ghaznévides",
+      "1055 : entre à Bagdad",
+      "1058 : investi sultan par le calife",
+      "1063 : meurt à Rey"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Toghrul Beg",
+        "url": "https://fr.wikipedia.org/wiki/Toghril_Beg"
+      }
+    ]
+  },
+  {
+    "id": "nizam-al-mulk",
+    "name": "Nizam al-Mulk",
+    "archetype": "grand-vizir",
+    "faction": "parthes-perses",
+    "born": 1018,
+    "died": 1092,
+    "title": "Vizir des sultans seldjoukides",
+    "bio": "Hasan ibn Ali, dit Nizam al-Mulk, « l'Ordre du Royaume », naît à Tus, au Khorassan. Il sert les Ghaznévides, puis les Seldjoukides, et devient en 1063 le vizir du sultan Alp Arslan, puis de son fils Malik-Shah. Pendant trente ans, il dirige un empire de l'Asie centrale à la Syrie : il développe l'administration, répartit des terres (iqta) pour payer les cavaliers et soutient l'enseignement sunnite par un réseau de madrasas, dont la Nizamiyya de Bagdad, ouverte en 1067. Il écrit le *Siyasatnama* (« Livre de gouvernement »), traité de conseils au souverain. Il combat les Fatimides et la secte ismaélienne nizarite, dite des Assassins. En 1092, il est tué par un homme déguisé en soufi, vraisemblablement envoyé par les Assassins ; le sultan Malik-Shah meurt le mois suivant. L'empire seldjoukide se divise ensuite, ce qui montre à quel point sa stabilité reposait sur ce vizir. Il reste le modèle du grand ministre persan au service d'un souverain turc.",
+    "keyFacts": [
+      "1018 : naissance à Tus",
+      "1063 : vizir d'Alp Arslan",
+      "1067 : ouverture de la Nizamiyya de Bagdad",
+      "Vers 1090 : Siyasatnama",
+      "1092 : assassiné"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Nizâm al-Mulk",
+        "url": "https://fr.wikipedia.org/wiki/Nizam_al-Mulk"
+      }
+    ]
+  },
+  {
+    "id": "al-ghazali",
+    "name": "Al-Ghazali",
+    "archetype": "sage",
+    "faction": "parthes-perses",
+    "born": 1058,
+    "died": 1111,
+    "title": "Théologien et mystique sunnite",
+    "bio": "Né à Tus, au Khorassan, al-Ghazali étudie à Nichapour, puis suit Nizam al-Mulk, qui le nomme en 1091 professeur à la Nizamiyya de Bagdad. Il y enseigne le droit et la théologie, tout en critiquant les philosophes, notamment Avicenne, dans *L'Incohérence des philosophes*, et les ismaéliens. En 1095, il traverse une crise intérieure, quitte l'enseignement, Bagdad et sa famille, et voyage à Damas, Jérusalem et La Mecque, en menant une vie de soufi. Il revient peu à peu à l'enseignement à Nichapour et à Tus. Son grand ouvrage, *Ihya ulum al-din* (« La Revivification des sciences de la religion »), unit droit, théologie et spiritualité mystique, et devient l'un des textes les plus lus de l'islam sunnite. Il meurt à Tus en 1111. Sa pensée est un exemple de l'effort d'intégration entre le droit, la théologie et le soufisme que soutient le réseau des madrasas seldjoukides.",
+    "keyFacts": [
+      "1058 : naissance à Tus",
+      "1091 : professeur à la Nizamiyya de Bagdad",
+      "1095 : quitte Bagdad, crise spirituelle",
+      "Vers 1100 : Ihya ulum al-din",
+      "1111 : meurt à Tus"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Al-Ghazâlî",
+        "url": "https://fr.wikipedia.org/wiki/Al-Ghazali"
+      }
+    ]
+  },
+  {
+    "id": "al-nasir",
+    "name": "Al-Nasir li-Din Allah",
+    "archetype": "calife",
+    "faction": "arabes",
+    "born": 1158,
+    "died": 1225,
+    "title": "Dernier calife abbasside réellement puissant",
+    "bio": "Calife de 1180 à 1225, al-Nasir règne plus de quarante ans, l'un des plus longs du califat. Il profite du déclin des Seldjoukides d'Irak pour restaurer le pouvoir du calife : il crée une armée, un système de renseignement et une administration fidèle, étend son autorité sur l'Irak central et le Khuzestan, et se mêle de la politique de l'Iran. Il réorganise la futuwwa, ordre de jeunes hommes pieux et chevaleresques, dont il devient le chef, et y fait entrer des princes, parmi lesquels des princes ayyoubides et ghourides. Il entretient aussi des relations avec les Ayyoubides, les Ghourides et les Khwarezmiens. Contre les chahs du Khwarezm, qui menacent Bagdad, il aurait cherché des alliés lointains ; la tradition selon laquelle il aurait appelé les Mongols est incertaine. Son règne est le dernier sursaut du califat : ses successeurs, dont al-Zahir et al-Mustansir, sont peu aptes à s'opposer à la menace mongole qui approche. Il meurt en 1225, à la veille des conquêtes de Gengis Khan.",
+    "keyFacts": [
+      "1180 : devient calife",
+      "Vers 1182 : réorganise la futuwwa",
+      "1194 : chute du dernier sultan seldjoukide d'Irak",
+      "1217 : le Khwarezm marche vers Bagdad puis rebrousse chemin",
+      "1225 : meurt à Bagdad"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — An-Nâsir li-Dîn Allâh",
+        "url": "https://fr.wikipedia.org/wiki/An-Nasir_li-Din_Allah"
+      }
+    ]
+  },
+  {
+    "id": "al-mustasim",
+    "name": "Al-Musta'sim",
+    "archetype": "calife",
+    "faction": "arabes",
+    "born": 1213,
+    "died": 1258,
+    "title": "Dernier calife abbasside de Bagdad",
+    "bio": "Fils d'al-Mustansir, al-Musta'sim devient calife en 1242. Il règne sur un territoire réduit à l'Irak central, sans grande armée, et laisse gouverner son vizir Ibn al-Alqami, un chiite, et l'officier Aybak. Il est connu pour sa piété, sa faiblesse de caractère et son goût de la musique, selon les chroniqueurs, tous postérieurs. Quand les Mongols d'Houlagou avancent vers l'ouest, il refuse de se soumettre, croyant que le prestige du califat le protège, et ne mobilise que tardivement une armée. Les Mongols marchent sur Bagdad à la fin de 1257 et commencent le siège le 29 janvier 1258. Le calife se rend le 10 février. Selon une tradition, il est enroulé dans un tapis et piétiné par les chevaux, mais d'autres récits, dont celui de Marco Polo, parlent de famine et divergent. Avec lui disparaît la lignée abbasside de Bagdad. En 1261, les Mamelouks accueilleront au Caire un descendant, qui n'aura pas de pouvoir.",
+    "keyFacts": [
+      "1242 : devient calife",
+      "Fin 1257 : les Mongols marchent sur Bagdad",
+      "29 janvier 1258 : début du siège",
+      "10 février 1258 : se rend",
+      "Février 1258 : exécuté"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Al-Musta`sim",
+        "url": "https://fr.wikipedia.org/wiki/Al-Musta`sim"
+      }
+    ]
+  }
+]

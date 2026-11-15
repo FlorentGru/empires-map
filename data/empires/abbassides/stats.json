@@ -1,0 +1,27 @@
+{
+ "areas": {
+  "koufa-750": 8499080,
+  "talas-751": 8619839,
+  "bagdad-762": 9691989,
+  "haroun-786": 9778326,
+  "aghlabides-800": 8706176,
+  "charlemagne-802": 8706176,
+  "bagdad-813": 8494513,
+  "sagesse-830": 6980448,
+  "samarra-836": 6980448,
+  "amorium-838": 6980448,
+  "anarchie-861": 3374477,
+  "tulunides-868": 2002517,
+  "zanj-869": 1529010,
+  "fatimides-909": 4008976,
+  "bouyides-945": 335230,
+  "tughril-1055": 335230,
+  "nizamiyya-1067": 335230,
+  "manzikert-1071": 335230,
+  "jerusalem-1099": 335230,
+  "al-nasir-1180": 429399,
+  "hattin-1187": 429399,
+  "bagdad-1258": 92386
+ },
+ "apogee": "haroun-786"
+}
