@@ -7690,7 +7690,8 @@
     "founded": -500,
     "rank": 2,
     "empires": [
-      "omeyyades"
+      "omeyyades",
+      "moghols"
     ]
   },
   {
@@ -7992,5 +7993,480 @@
     "empires": [
       "abbassides"
     ]
+  },
+  {
+    "id": "agra",
+    "modern": "Agra, Inde",
+    "names": [
+      {
+        "name": "Agra"
+      }
+    ],
+    "coords": [
+      78.01,
+      27.18
+    ],
+    "founded": 1000,
+    "rank": 2,
+    "capitalOf": [
+      {
+        "empire": "moghols",
+        "from": 1526,
+        "to": 1571
+      },
+      {
+        "empire": "moghols",
+        "from": 1598,
+        "to": 1648
+      }
+    ]
+  },
+  {
+    "id": "fatehpur-sikri",
+    "modern": "Fatehpur Sikri, Inde",
+    "names": [
+      {
+        "name": "Fatehpur Sikri"
+      }
+    ],
+    "coords": [
+      77.66,
+      27.09
+    ],
+    "founded": 1571,
+    "rank": 2,
+    "capitalOf": [
+      {
+        "empire": "moghols",
+        "from": 1571,
+        "to": 1585
+      }
+    ]
+  },
+  {
+    "id": "lahore",
+    "modern": "Lahore, Pakistan",
+    "names": [
+      {
+        "name": "Lahore"
+      }
+    ],
+    "coords": [
+      74.34,
+      31.55
+    ],
+    "founded": 1000,
+    "rank": 2,
+    "capitalOf": [
+      {
+        "empire": "moghols",
+        "from": 1585,
+        "to": 1598
+      }
+    ]
+  },
+  {
+    "id": "delhi",
+    "modern": "Delhi, Inde",
+    "names": [
+      {
+        "name": "Delhi",
+        "to": 1647
+      },
+      {
+        "name": "Shahjahanabad",
+        "from": 1648
+      }
+    ],
+    "coords": [
+      77.23,
+      28.65
+    ],
+    "founded": -500,
+    "rank": 1,
+    "capitalOf": [
+      {
+        "empire": "moghols",
+        "from": 1648,
+        "to": 1857
+      }
+    ]
+  },
+  {
+    "id": "kaboul",
+    "modern": "Kaboul, Afghanistan",
+    "names": [
+      {
+        "name": "Kaboul"
+      }
+    ],
+    "coords": [
+      69.17,
+      34.53
+    ],
+    "founded": -500,
+    "rank": 2
+  },
+  {
+    "id": "kandahar",
+    "modern": "Kandahar, Afghanistan",
+    "names": [
+      {
+        "name": "Kandahar"
+      }
+    ],
+    "coords": [
+      65.71,
+      31.61
+    ],
+    "founded": -330,
+    "rank": 2
+  },
+  {
+    "id": "panipat",
+    "modern": "Panipat, Inde",
+    "names": [
+      {
+        "name": "Panipat"
+      }
+    ],
+    "coords": [
+      76.97,
+      29.39
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "moghols"
+    ]
+  },
+  {
+    "id": "khanwa",
+    "modern": "Khanwa (Khanua), Inde",
+    "names": [
+      {
+        "name": "Khanwa"
+      }
+    ],
+    "coords": [
+      77.07,
+      27.04
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "moghols"
+    ]
+  },
+  {
+    "id": "haldighati",
+    "modern": "Haldighati, Inde",
+    "names": [
+      {
+        "name": "Haldighati"
+      }
+    ],
+    "coords": [
+      73.69,
+      24.89
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "moghols"
+    ]
+  },
+  {
+    "id": "samugarh",
+    "modern": "Samugarh, près d’Agra, Inde",
+    "names": [
+      {
+        "name": "Samugarh"
+      }
+    ],
+    "coords": [
+      78.11,
+      27.17
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "moghols"
+    ]
+  },
+  {
+    "id": "kannauj",
+    "modern": "Kannauj, Inde",
+    "names": [
+      {
+        "name": "Kannauj"
+      }
+    ],
+    "coords": [
+      79.92,
+      27.05
+    ],
+    "founded": 600,
+    "rank": 3,
+    "empires": [
+      "moghols"
+    ]
+  },
+  {
+    "id": "bijapur",
+    "modern": "Bijapur (Vijayapura), Inde",
+    "names": [
+      {
+        "name": "Bijapur"
+      }
+    ],
+    "coords": [
+      75.71,
+      16.83
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "moghols"
+    ]
+  },
+  {
+    "id": "golconde",
+    "modern": "Golconde (Golkonda), Inde",
+    "names": [
+      {
+        "name": "Golconde"
+      }
+    ],
+    "coords": [
+      78.4,
+      17.38
+    ],
+    "founded": 1143,
+    "rank": 3,
+    "empires": [
+      "moghols"
+    ]
+  },
+  {
+    "id": "hyderabad",
+    "modern": "Hyderabad, Inde",
+    "names": [
+      {
+        "name": "Hyderabad"
+      }
+    ],
+    "coords": [
+      78.47,
+      17.39
+    ],
+    "founded": 1591,
+    "rank": 2
+  },
+  {
+    "id": "aurangabad",
+    "modern": "Aurangabad, Inde",
+    "names": [
+      {
+        "name": "Khadki",
+        "to": 1652
+      },
+      {
+        "name": "Aurangabad",
+        "from": 1653
+      }
+    ],
+    "coords": [
+      75.34,
+      19.88
+    ],
+    "founded": 1610,
+    "rank": 2
+  },
+  {
+    "id": "ahmednagar",
+    "modern": "Ahmednagar, Inde",
+    "names": [
+      {
+        "name": "Ahmednagar"
+      }
+    ],
+    "coords": [
+      74.74,
+      19.09
+    ],
+    "founded": 1494,
+    "rank": 3,
+    "empires": [
+      "moghols"
+    ]
+  },
+  {
+    "id": "raigad",
+    "modern": "Raigad, Inde",
+    "names": [
+      {
+        "name": "Raigad"
+      }
+    ],
+    "coords": [
+      73.44,
+      18.23
+    ],
+    "founded": 1600,
+    "rank": 3,
+    "empires": [
+      "moghols"
+    ]
+  },
+  {
+    "id": "karnal",
+    "modern": "Karnal, Inde",
+    "names": [
+      {
+        "name": "Karnal"
+      }
+    ],
+    "coords": [
+      76.98,
+      29.69
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "moghols"
+    ]
+  },
+  {
+    "id": "plassey",
+    "modern": "Plassey (Palashi), Inde",
+    "names": [
+      {
+        "name": "Plassey"
+      }
+    ],
+    "coords": [
+      88.25,
+      23.8
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "moghols"
+    ]
+  },
+  {
+    "id": "buxar",
+    "modern": "Buxar, Inde",
+    "names": [
+      {
+        "name": "Buxar"
+      }
+    ],
+    "coords": [
+      83.98,
+      25.57
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "moghols"
+    ]
+  },
+  {
+    "id": "calcutta",
+    "modern": "Kolkata, Inde",
+    "names": [
+      {
+        "name": "Calcutta",
+        "from": 1690
+      }
+    ],
+    "coords": [
+      88.36,
+      22.57
+    ],
+    "founded": 1690,
+    "rank": 2
+  },
+  {
+    "id": "bombay",
+    "modern": "Mumbai, Inde",
+    "names": [
+      {
+        "name": "Bombay",
+        "to": 1995
+      },
+      {
+        "name": "Mumbai",
+        "from": 1996
+      }
+    ],
+    "coords": [
+      72.88,
+      19.08
+    ],
+    "founded": 1534,
+    "rank": 2
+  },
+  {
+    "id": "ahmedabad",
+    "modern": "Ahmedabad, Inde",
+    "names": [
+      {
+        "name": "Ahmedabad"
+      }
+    ],
+    "coords": [
+      72.57,
+      23.03
+    ],
+    "founded": 1411,
+    "rank": 2
+  },
+  {
+    "id": "dacca",
+    "modern": "Dacca (Dhaka), Bangladesh",
+    "names": [
+      {
+        "name": "Dacca"
+      }
+    ],
+    "coords": [
+      90.41,
+      23.81
+    ],
+    "founded": 1000,
+    "rank": 2
+  },
+  {
+    "id": "srinagar",
+    "modern": "Srinagar, Inde",
+    "names": [
+      {
+        "name": "Srinagar"
+      }
+    ],
+    "coords": [
+      74.8,
+      34.08
+    ],
+    "founded": 600,
+    "rank": 2
+  },
+  {
+    "id": "amritsar",
+    "modern": "Amritsar, Inde",
+    "names": [
+      {
+        "name": "Amritsar"
+      }
+    ],
+    "coords": [
+      74.87,
+      31.63
+    ],
+    "founded": 1577,
+    "rank": 3
   }
 ]

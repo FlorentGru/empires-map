@@ -1,0 +1,251 @@
+[
+  {
+    "id": "taj-mahal-architecture",
+    "name": "Taj Mahal et architecture moghole",
+    "year": 1632,
+    "place": "Agra",
+    "at": [
+      78.04,
+      27.175
+    ],
+    "inventor": "Shah Jahan ; architecte attribué : Ustad Ahmad Lahori",
+    "category": "architecture",
+    "description": "Le Taj Mahal est un tombeau de marbre blanc surmonté d'une grande coupole, au fond d'un jardin à quatre parties. Il hérite des tombeaux timourides d'Asie centrale et de celui de Humayun à Delhi, mais pousse très loin la symétrie, la finesse du marbre et l'incrustation de pierres dures (pietra dura). C'est un aboutissement plus qu'une invention isolée, né d'un mélange de traditions persanes et indiennes.",
+    "impact": "Il fixe l'image mondiale de l'architecture moghole, et son modèle de mausolée dans un jardin sera repris dans toute l'Inde.",
+    "sources": [
+      {
+        "label": "Wikipédia — Taj Mahal",
+        "url": "https://fr.wikipedia.org/wiki/Taj_Mahal"
+      },
+      {
+        "label": "Wikipédia — Tombeau de Humâyûn",
+        "url": "https://fr.wikipedia.org/wiki/Tombeau_de_Humâyûn"
+      }
+    ]
+  },
+  {
+    "id": "jardins-charbagh",
+    "name": "Jardins moghols (charbagh)",
+    "year": 1528,
+    "approx": true,
+    "place": "Agra",
+    "at": [
+      78.03,
+      27.21
+    ],
+    "inventor": "Babur (qui diffuse un modèle persan)",
+    "category": "agriculture",
+    "description": "Babur, amoureux des jardins de Kaboul et de Samarcande, fait aménager à Agra des jardins en carré divisés en quatre parties par des canaux d'eau, selon le modèle persan du charbagh, qui évoque le paradis du Coran. L'idée vient de Perse et d'Asie centrale ; la nouveauté est de l'implanter en Inde, avec des plantes locales, des pavillons et un système de bassins et de puits à roue.",
+    "impact": "Le charbagh devient l'écrin des palais et des tombeaux moghols (Humayun, Taj Mahal) et des jardins du Cachemire, et marque le paysage urbain d'Inde du nord.",
+    "sources": [
+      {
+        "label": "Wikipédia — Jardin moghol",
+        "url": "https://fr.wikipedia.org/wiki/Jardin_moghol"
+      },
+      {
+        "label": "Wikipédia — Babur",
+        "url": "https://fr.wikipedia.org/wiki/Babur"
+      }
+    ]
+  },
+  {
+    "id": "miniature-moghole",
+    "name": "Miniature moghole",
+    "year": 1560,
+    "approx": true,
+    "place": "Cour d'Akbar (Delhi et Agra)",
+    "at": [
+      78.01,
+      27.18
+    ],
+    "inventor": "Mir Sayyid Ali et Abd al-Samad, peintres persans amenés par Humayun",
+    "category": "technique",
+    "description": "Humayun ramène de Perse deux grands peintres, qui forment à la cour d'Akbar un atelier impérial où travaillent des centaines d'artistes, hindous et musulmans. La miniature persane, très stylisée, s'y mêle à l'art indien (couleurs vives, mouvement) et à l'influence européenne des gravures rapportées par les jésuites. Elle illustre chroniques et épopées, puis, sous Jahangir, devient plus réaliste, avec portraits et études d'animaux et de fleurs.",
+    "impact": "Elle donne naissance à une peinture indienne nouvelle, très diffusée dans les cours rajputes et du Deccan, et offre un précieux témoignage visuel sur l'époque.",
+    "sources": [
+      {
+        "label": "Wikipédia — Miniature moghole",
+        "url": "https://fr.wikipedia.org/wiki/Miniature_moghole"
+      },
+      {
+        "label": "Wikipédia — Humâyûn",
+        "url": "https://fr.wikipedia.org/wiki/Humâyûn"
+      }
+    ]
+  },
+  {
+    "id": "mansabdari",
+    "name": "Système des mansabdars",
+    "year": 1570,
+    "approx": true,
+    "place": "Cour d'Akbar (Fatehpur Sikri)",
+    "at": [
+      77.66,
+      27.09
+    ],
+    "inventor": "Akbar",
+    "category": "administration",
+    "description": "Akbar organise ses officiers, civils comme militaires, en grades chiffrés appelés mansabs : le rang d'un noble indique le nombre de cavaliers qu'il doit entretenir. Il est payé en revenus de terres (jagirs) qui changent régulièrement de mains. Le principe de rangs chiffrés vient de l'administration mongole ; la nouveauté est de l'étendre à toute la noblesse, y compris hindoue, et de la contrôler par la marque des chevaux.",
+    "impact": "Cet outil lie noblesse, armée et impôt, et permet à Akbar de gouverner un immense empire avec des élites de religions variées, mais il s'enrayera sous Aurangzeb.",
+    "sources": [
+      {
+        "label": "Wikipédia — Mansabdar",
+        "url": "https://fr.wikipedia.org/wiki/Mansabdar"
+      },
+      {
+        "label": "Wikipédia — Akbar",
+        "url": "https://fr.wikipedia.org/wiki/Akbar"
+      }
+    ]
+  },
+  {
+    "id": "zabt-todar-mal",
+    "name": "Impôt foncier de Todar Mal (zabt)",
+    "year": 1580,
+    "approx": true,
+    "place": "Agra",
+    "at": [
+      78.01,
+      27.18
+    ],
+    "inventor": "Raja Todar Mal, avec Akbar",
+    "category": "administration",
+    "description": "Le ministre des finances d'Akbar, Todar Mal, perfectionne l'impôt foncier de Sher Shah : les terres sont mesurées, classées par fertilité, et l'impôt est calculé sur la moyenne des récoltes et des prix des dix dernières années (la dahsala, 1580), payé en argent. L'idée de mesurer et de taxer la terre vient des sultanats antérieurs ; Akbar en fait un système régulier et prévisible pour les paysans comme pour l'État.",
+    "impact": "Ce système apporte à l'empire des revenus abondants et stables et réduit l'arbitraire des percepteurs ; la Compagnie anglaise s'en inspirera au XIXe siècle.",
+    "sources": [
+      {
+        "label": "Wikipédia — Todar Mal",
+        "url": "https://fr.wikipedia.org/wiki/Todar_Mal"
+      },
+      {
+        "label": "Wikipédia — Empire moghol",
+        "url": "https://fr.wikipedia.org/wiki/Empire_moghol"
+      }
+    ]
+  },
+  {
+    "id": "roupie-argent",
+    "name": "Roupie d'argent",
+    "year": 1540,
+    "approx": true,
+    "place": "Sasaram, Bihar",
+    "at": [
+      84.03,
+      24.95
+    ],
+    "inventor": "Sher Shah Suri (reprise et diffusion par les Moghols)",
+    "category": "monnaie",
+    "description": "Sher Shah Suri remplace les pièces d'argent de poids et de qualité très variés par une pièce standard d'environ onze grammes, le rupiya (« roupie »). Les empereurs moghols la gardent en la dotant de mohurs d'or et de pièces de cuivre. L'idée d'une monnaie d'argent standard n'est pas nouvelle, mais elle est établie à grande échelle en Inde, et son nom survit : la roupie est aujourd'hui la monnaie de plusieurs pays.",
+    "impact": "Une monnaie fiable fluidifie les impôts et le commerce dans un empire de 100 à 150 millions d'habitants ; son nom survit jusqu'à aujourd'hui.",
+    "sources": [
+      {
+        "label": "Wikipédia — Roupie indienne",
+        "url": "https://fr.wikipedia.org/wiki/Roupie_indienne"
+      },
+      {
+        "label": "Wikipédia — Sher Shah Suri",
+        "url": "https://fr.wikipedia.org/wiki/Sher_Shah_Suri"
+      }
+    ]
+  },
+  {
+    "id": "grand-trunk-road",
+    "name": "Grand Trunk Road",
+    "year": 1545,
+    "approx": true,
+    "place": "Du Bengale à l'Indus",
+    "at": [
+      77.5,
+      28.6
+    ],
+    "inventor": "Sher Shah Suri ; entretenue par les Moghols",
+    "category": "technique",
+    "description": "Sher Shah relie le Bengale (Sonargaon) à l'Indus par une grande route d'environ 2 500 km, bordée d'arbres, avec des caravansérails tous les quelques kilomètres, des puits et des relais de courriers à cheval. Les Moghols la gardent et l'entretiennent. Des routes existaient déjà (l'une aurait été tracée sous les Maurya), mais Sher Shah les réorganise, et la Compagnie anglaise lui donnera son nom actuel.",
+    "impact": "La route accélère courrier, armées et commerce de l'Inde du nord. Elle sert encore aujourd'hui d'axe majeur reliant le Bangladesh, l'Inde et le Pakistan.",
+    "sources": [
+      {
+        "label": "Wikipédia — Grand Trunk Road",
+        "url": "https://fr.wikipedia.org/wiki/Grand_Trunk_Road"
+      },
+      {
+        "label": "Wikipédia — Sher Shah Suri",
+        "url": "https://fr.wikipedia.org/wiki/Sher_Shah_Suri"
+      }
+    ]
+  },
+  {
+    "id": "globe-celeste-lahore",
+    "name": "Globes célestes sans soudure de Lahore",
+    "year": 1589,
+    "approx": true,
+    "place": "Lahore",
+    "at": [
+      74.34,
+      31.55
+    ],
+    "inventor": "Ali Kashmiri ibn Luqman",
+    "category": "science",
+    "description": "À Lahore, sous Akbar, l'artisan Ali Kashmiri fabrique un globe céleste en laiton d'une seule pièce, sans soudure, selon la technique de la cire perdue : le moule en cire est enfermé dans l'argile, puis le métal fondu remplace la cire. Des historiens des sciences jugent le procédé remarquable (certains pensaient qu'une telle pièce était impossible). Il se fait ensuite d'autres globes, par son fils et d'autres artisans, jusqu'au XVIIe siècle.",
+    "impact": "Ces globes, une vingtaine conservés dans les musées, montrent le haut niveau de la métallurgie indienne et sont les seuls globes célestes connus fabriqués sans soudure.",
+    "sources": [
+      {
+        "label": "Wikipédia — Globe céleste",
+        "url": "https://fr.wikipedia.org/wiki/Globe_céleste"
+      },
+      {
+        "label": "Wikipédia — Lahore",
+        "url": "https://fr.wikipedia.org/wiki/Lahore"
+      }
+    ]
+  },
+  {
+    "id": "akbarnama-ateliers",
+    "name": "Akbarnama et ateliers impériaux",
+    "year": 1590,
+    "approx": true,
+    "place": "Fatehpur Sikri",
+    "at": [
+      77.66,
+      27.09
+    ],
+    "inventor": "Abu'l-Fazl, Akbar et les artistes de la cour",
+    "category": "ecriture",
+    "description": "Akbar crée de grands ateliers (karkhanas) de livres : copistes, relieurs, peintres, traducteurs. Il fait traduire en persan le Mahabharata et le Ramayana, et commande à Abu'l-Fazl l'Akbarnama, la chronique de son règne, suivie de l'Ain-i-Akbari, encyclopédie de l'empire. Écrire l'histoire d'une dynastie en persan n'est pas neuf, mais l'ampleur des enquêtes, des chiffres et des illustrations n'a guère d'équivalent en Asie à cette date.",
+    "impact": "Ces ouvrages donnent aux historiens une description de l'Inde de 1600 d'une richesse exceptionnelle et font du persan une langue commune aux élites hindoues et musulmanes.",
+    "sources": [
+      {
+        "label": "Wikipédia — Akbarnama",
+        "url": "https://fr.wikipedia.org/wiki/Akbarnama"
+      },
+      {
+        "label": "Wikipédia — Abû al-Fazl",
+        "url": "https://fr.wikipedia.org/wiki/Abû_al-Fazl"
+      }
+    ]
+  },
+  {
+    "id": "fatawa-alamgiri",
+    "name": "Fatawa-i-Alamgiri",
+    "year": 1675,
+    "approx": true,
+    "place": "Cour d'Aurangzeb (Delhi et Deccan)",
+    "at": [
+      77.23,
+      28.65
+    ],
+    "inventor": "Aurangzeb et un comité de juristes dirigé par Shaykh Nizam",
+    "category": "droit",
+    "description": "Aurangzeb réunit des dizaines de juristes pour rassembler, en persan et en arabe, un grand recueil de jugements (fatwas) de l'école hanéfite sur la prière, la famille, le droit des contrats, la justice pénale. Il s'agit surtout d'une compilation de règles existantes, mais l'ampleur du travail, qui sert de manuel aux cadis de l'empire, est très importante. Sa mise en pratique est discutée par les historiens.",
+    "impact": "Ce code unifie la pratique des tribunaux islamiques d'Inde et reste une référence juridique jusqu'à l'époque coloniale, où les Britanniques le traduisent.",
+    "sources": [
+      {
+        "label": "Wikipédia — Fatawa-e-Alamgiri",
+        "url": "https://fr.wikipedia.org/wiki/Fatawa-e-Alamgiri"
+      },
+      {
+        "label": "Wikipédia — Aurangzeb",
+        "url": "https://fr.wikipedia.org/wiki/Aurangzeb"
+      }
+    ]
+  }
+]
