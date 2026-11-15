@@ -110,6 +110,10 @@ const PEOPLE: Record<Faction, string> = {
   mesoamericains: 'Peuples mésoaméricains',
   numides: 'Numides',
   mesopotamiens: 'Peuples du Proche-Orient',
+  moghols: 'Moghols',
+  rajputs: 'Rajputs et Indiens',
+  marathes: 'Marathes',
+  afghans: 'Afghans',
 };
 const esc = (v: string) => v.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const plain = (v: string) =>

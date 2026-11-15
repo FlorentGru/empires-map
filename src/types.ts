@@ -262,7 +262,12 @@ export type Faction =
   // Empire carthaginois
   | 'numides'
   // Perse achéménide (et Proche-Orient ancien)
-  | 'mesopotamiens';
+  | 'mesopotamiens'
+  // Empire moghol
+  | 'moghols'
+  | 'rajputs'
+  | 'marathes'
+  | 'afghans';
 
 export const FACTIONS: Faction[] = [
   'romains',
@@ -350,6 +355,10 @@ export const FACTIONS: Faction[] = [
   'mesoamericains',
   'numides',
   'mesopotamiens',
+  'moghols',
+  'rajputs',
+  'marathes',
+  'afghans',
 ];
 
 export type Archetype =
