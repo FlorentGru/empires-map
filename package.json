@@ -47,7 +47,8 @@
     "build:data:carthage": "tsx scripts/build-territories.ts --empire carthage && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire carthage && tsx scripts/build-neighbors.ts --empire carthage && tsx scripts/build-stats.ts --empire carthage && tsx scripts/build-contemporaries.ts",
     "build:data:perse-achemenide": "tsx scripts/build-territories.ts --empire perse-achemenide && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire perse-achemenide && tsx scripts/build-neighbors.ts --empire perse-achemenide && tsx scripts/build-stats.ts --empire perse-achemenide && tsx scripts/build-contemporaries.ts",
     "build:data:omeyyades": "tsx scripts/build-territories.ts --empire omeyyades && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire omeyyades && tsx scripts/build-neighbors.ts --empire omeyyades && tsx scripts/build-stats.ts --empire omeyyades && tsx scripts/build-contemporaries.ts",
-    "build:data:abbassides": "tsx scripts/build-territories.ts --empire abbassides && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire abbassides && tsx scripts/build-neighbors.ts --empire abbassides && tsx scripts/build-stats.ts --empire abbassides && tsx scripts/build-contemporaries.ts"
+    "build:data:abbassides": "tsx scripts/build-territories.ts --empire abbassides && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire abbassides && tsx scripts/build-neighbors.ts --empire abbassides && tsx scripts/build-stats.ts --empire abbassides && tsx scripts/build-contemporaries.ts",
+    "build:data:moghols": "tsx scripts/build-territories.ts --empire moghols && tsx scripts/build-countries.ts && tsx scripts/build-sdf.ts --empire moghols && tsx scripts/build-neighbors.ts --empire moghols && tsx scripts/build-stats.ts --empire moghols && tsx scripts/build-contemporaries.ts"
   },
   "dependencies": {
     "@fontsource/cormorant-garamond": "^5.3.0",
