@@ -36,6 +36,7 @@ const EMPIRE_SPRITES: Record<string, { faction: Faction; archetype: Archetype }>
   songhai: { faction: 'songhais', archetype: 'askia' },
   azteques: { faction: 'azteques', archetype: 'souverain-precolombien' },
   carthage: { faction: 'carthaginois', archetype: 'general' },
+  'perse-achemenide': { faction: 'parthes-perses', archetype: 'grand-roi' },
 };
 
 /** Au-delà, la légende des entités est tronquée (périodes de division). */

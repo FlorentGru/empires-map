@@ -260,7 +260,9 @@ export type Faction =
   // Empire aztèque
   | 'mesoamericains'
   // Empire carthaginois
-  | 'numides';
+  | 'numides'
+  // Perse achéménide (et Proche-Orient ancien)
+  | 'mesopotamiens';
 
 export const FACTIONS: Faction[] = [
   'romains',
@@ -347,6 +349,7 @@ export const FACTIONS: Faction[] = [
   'marocains',
   'mesoamericains',
   'numides',
+  'mesopotamiens',
 ];
 
 export type Archetype =
@@ -403,6 +406,8 @@ export type Archetype =
   | 'mansa'
   // Empire songhaï
   | 'askia'
+  // Perse achéménide
+  | 'grand-roi'
   // Tous empires : savant, philosophe (et figure du guide de l'Atlas)
   | 'sage';
 
@@ -452,6 +457,7 @@ export const ARCHETYPES: Archetype[] = [
   'pacha',
   'mansa',
   'askia',
+  'grand-roi',
 ];
 
 export interface ArmyMove {
