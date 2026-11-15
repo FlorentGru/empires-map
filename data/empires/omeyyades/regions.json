@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Califat omeyyade",
+    "summary": "L'État fondé par Muawiya en 661, gouverné depuis Damas par la famille des Omeyyades. En moins d'un siècle, il s'étend de l'Indus aux Pyrénées, se dote d'une monnaie et d'une administration en arabe, avant d'être renversé par les Abbassides en 750.",
+    "years": [661, 750]
+  },
+  {
+    "name": "Nubie de Makurie",
+    "summary": "Royaume chrétien du Nil moyen, au sud de l'Égypte. Après avoir repoussé les Arabes, il signe avec eux le baqt, un traité d'échange de captifs contre des vivres : la Nubie reste indépendante mais lie son commerce au califat pendant des siècles.",
+    "years": [661, 740]
+  },
+  {
+    "name": "Arménie",
+    "summary": "Pays de montagnes chrétien entre Byzance et le califat. Les princes arméniens paient tribut à Damas tout en gardant leur Église et leur noblesse ; au début du VIIIe siècle, le califat y renforce son contrôle direct et en fait une province.",
+    "years": [661, 722]
+  },
+  {
+    "name": "Géorgie (Karthli)",
+    "summary": "Principauté chrétienne du Caucase autour de Tbilissi. Elle reconnaît l'autorité du califat et lui verse tribut, tout en restant gouvernée par ses propres princes, coincée entre les Arabes, Byzance et les Khazars du nord.",
+    "years": [661, 740]
+  },
+  {
+    "name": "Zubayrides",
+    "summary": "Le camp d'Abd Allah ibn al-Zubayr, proclamé calife à La Mecque pendant la deuxième fitna. Vers 684, il est reconnu de l'Arabie à l'Iran et même en Égypte, avant qu'Abd al-Malik ne le défasse ; La Mecque tombe en 692.",
+    "years": [684, 684]
+  },
+  {
+    "name": "Albanie caucasienne",
+    "summary": "Ancien royaume chrétien de l'actuel Azerbaïdjan, au bord de la Caspienne, sans lien avec l'Albanie des Balkans. Tributaire du califat, il garde la route de Derbent, verrou face aux Khazars, avant d'être intégré aux provinces du nord.",
+    "years": [717, 722]
+  },
+  {
+    "name": "Ifriqiya autonome",
+    "summary": "L'actuelle Tunisie et ses environs, autour de Kairouan. Pendant la crise de la fin du califat, ses gouverneurs arabes agissent presque seuls et ne reconnaissent plus vraiment Damas, signe que l'empire se défait par ses marges.",
+    "years": [747, 750]
+  },
+  {
+    "name": "al-Andalus autonome",
+    "summary": "La péninsule Ibérique musulmane, gouvernée depuis Cordoue. Déchirée entre Arabes et Berbères, elle échappe à Damas à la fin du califat ; c'est là qu'Abd al-Rahman, rescapé du massacre des Omeyyades, fondera en 756 un émirat indépendant.",
+    "years": [747, 750]
+  },
+  {
+    "name": "Abbassides",
+    "summary": "Le mouvement lancé au Khorassan par Abu Muslim au nom de la famille du Prophète, sous des bannières noires. Parti de Merv en 747, il conquiert l'Iran puis l'Irak et écrase Marwan II au Grand Zab en 750, fondant un nouveau califat.",
+    "years": [747, 750]
+  },
+  {
+    "name": "Insurgés kharijites",
+    "summary": "Les kharijites rejettent les Omeyyades : pour eux, le calife doit être le plus digne des croyants, quelle que soit sa famille. Pendant la troisième fitna, ils se soulèvent en Irak du Nord et en Arabie et affaiblissent Damas juste avant l'assaut abbasside.",
+    "years": [747, 747]
+  }
+]
