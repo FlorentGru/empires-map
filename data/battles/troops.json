@@ -181,6 +181,15 @@
   "uncertain": true,
   "biome": "steppe"
  },
+ "abbassides/talas-751": {
+  "troops": [
+   30000,
+   30000,
+   10000
+  ],
+  "uncertain": true,
+  "biome": "steppe"
+ },
  "carolingiens/fontenoy-841": {
   "troops": [
    35000,

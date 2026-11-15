@@ -1,0 +1,1844 @@
+{
+  "id": "abbassides",
+  "name": "Califat abbasside",
+  "color": "#3b3b6b",
+  "start": 750,
+  "end": 1258,
+  "description": "Le califat abbasside (750-1258) succède aux Omeyyades après une révolution partie du Khorassan. Il règne depuis Bagdad, fondée en 762, sur un empire qui va de l'Ifriqiya à l'Indus et à la Transoxiane, et connaît à ses débuts un âge d'or des sciences et des lettres. Dès le IXe siècle, les provinces lointaines s'émancipent ; après 945, le calife garde l'autorité religieuse mais perd le pouvoir réel au profit des Bouyides, puis des sultans seldjoukides. Le califat disparaît en 1258, quand les Mongols d'Houlagou prennent Bagdad.",
+  "view": {
+    "center": [
+      48,
+      30
+    ],
+    "zoom": 3
+  },
+  "bounds": [
+    [
+      -12,
+      8
+    ],
+    [
+      80,
+      48
+    ]
+  ],
+  "apogee": {
+    "stepId": "aghlabides-800",
+    "note": "L'extension maximale se situe vers 800-830, sous Haroun al-Rachid puis al-Ma'mun, de l'Ifriqiya (vassale dès 800) à la Transoxiane et au Sind. Elle se discute : dès 788 le Maroc échappe aux Abbassides, al-Andalus ne leur a jamais appartenu, et des provinces lointaines ne dépendent plus que par la prière du vendredi."
+  },
+  "periods": [
+    {
+      "id": "age-d-or",
+      "name": "L'âge d'or de Bagdad",
+      "start": 750,
+      "end": 861,
+      "color": "#9aa5d6",
+      "summary": "Après la révolution de 750, les Abbassides fondent Bagdad et règnent sur un empire immense. Haroun al-Rachid et al-Ma'mun y protègent savants et traducteurs, tandis que la garde turque de Samarra prépare déjà la crise."
+    },
+    {
+      "id": "samarra",
+      "name": "Anarchie de Samarra et émirs",
+      "start": 861,
+      "end": 945,
+      "color": "#d6b98f",
+      "summary": "Les officiers turcs font et défont les califes, les provinces deviennent des émirats héréditaires (Tulunides, Samanides, Saffarides) et les Fatimides fondent un califat rival. Le pouvoir réel du calife se réduit à l'Irak."
+    },
+    {
+      "id": "bouyides",
+      "name": "Sous la tutelle des Bouyides",
+      "start": 945,
+      "end": 1055,
+      "color": "#8fbfc9",
+      "summary": "En 945, les émirs iraniens bouyides prennent Bagdad. Le calife garde le titre et l'autorité religieuse, mais ne commande plus l'armée ni les finances."
+    },
+    {
+      "id": "seldjoukides",
+      "name": "Le temps des sultans seldjoukides",
+      "start": 1055,
+      "end": 1180,
+      "color": "#c5a0c9",
+      "summary": "Les sultans turcs sunnites remplacent les Bouyides et protègent le calife, qui retrouve un peu d'autorité morale. Manzikert, les madrasas et la première croisade marquent cette époque."
+    },
+    {
+      "id": "al-nasir",
+      "name": "Dernier sursaut et chute",
+      "start": 1180,
+      "end": 1258,
+      "color": "#b9c78f",
+      "summary": "Profitant du déclin des Seldjoukides, al-Nasir redonne au calife un État en Irak. Mais le Khwarezm puis les Mongols menacent, et Bagdad tombe en 1258."
+    }
+  ],
+  "steps": [
+    {
+      "id": "koufa-750",
+      "year": 750,
+      "title": "Abu al-Abbas est proclamé calife à Koufa",
+      "type": "fondation",
+      "location": [
+        44.4,
+        32.03
+      ],
+      "zoom": 4.5,
+      "summary": "À Koufa, Abu al-Abbas, descendant d'un oncle du Prophète, est proclamé calife : la dynastie abbasside remplace les Omeyyades, qu'elle vient de vaincre au Grand Zab.",
+      "details": "Les **Abbassides** descendent d'**al-Abbas**, oncle du Prophète Mahomet. Ils se présentent comme les vrais héritiers de sa maison face aux **Omeyyades**, accusés d'être des rois mondains et injustes. Leur propagande secrète, menée depuis Koufa mais surtout au **Khorassan** (le nord-est de l'Iran actuel), rallie des Arabes installés là, des Iraniens convertis (les *mawali*, « clients » non arabes) et des mécontents de toute sorte.\n\nEn 747, le chef de la révolte, **Abu Muslim**, y lève des bannières noires. Ses troupes chassent les gouverneurs omeyyades, traversent l'Iran et entrent à Koufa en 749. Le dernier calife omeyyade, **Marwan II**, est battu au Grand Zab au début de 750, puis poursuivi jusqu'en Égypte, où il est tué. **Abu al-Abbas** est reconnu calife dans la mosquée de Koufa, à la fin de 749 selon la plupart des sources ; son règne est daté de 750. On l'appelle *as-Saffah*, surnom que la tradition traduit tantôt par « le Verseur de sang », tantôt par « le Généreux ».\n\nLes Omeyyades sont pourchassés ; un banquet sanglant, dont les récits varient, aurait réuni leurs princes. Un seul s'échappe, **Abd al-Rahman**, qui gagnera l'Espagne. Le nouveau califat n'est pas une simple relève : il s'appuie sur l'Orient iranien plus que sur la Syrie et déplace le centre de l'islam vers l'Irak. Précaution : les chroniques principales (al-Tabari) ont été écrites plus tard, sous la dynastie victorieuse.",
+      "consequences": [
+        "Tout l'ancien califat omeyyade, de l'Égypte à l'Indus, passe sous l'autorité des Abbassides, sauf l'Espagne (al-Andalus).",
+        "Le centre de gravité du pouvoir quitte Damas et la Syrie pour l'Irak et l'Iran.",
+        "Les convertis non arabes, surtout iraniens, entrent massivement dans l'armée et l'administration.",
+        "Le prince omeyyade Abd al-Rahman s'enfuit vers l'Occident : l'unité du monde musulman est déjà entamée."
+      ],
+      "territory": "koufa-750",
+      "sources": [
+        {
+          "label": "Wikipédia — Califat abbasside",
+          "url": "https://fr.wikipedia.org/wiki/Califat_abbasside"
+        },
+        {
+          "label": "Wikipédia — Abû al-`Abbâs as-Saffâh",
+          "url": "https://fr.wikipedia.org/wiki/Abu_al-Abbas_as-Saffah"
+        },
+        {
+          "label": "Hugh Kennedy, The Early Abbasid Caliphate (Croom Helm)"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Abu al-Abbas as-Saffah",
+          "role": "Premier calife abbasside",
+          "faction": "arabes",
+          "archetype": "calife",
+          "person": "abu-al-abbas-as-saffah",
+          "position": [
+            44.4,
+            32.03
+          ]
+        },
+        {
+          "name": "Abu Muslim",
+          "role": "Chef de la révolution du Khorassan",
+          "faction": "parthes-perses",
+          "archetype": "general",
+          "person": "abu-muslim",
+          "position": [
+            62.19,
+            37.66
+          ]
+        }
+      ],
+      "territoryNote": "Califat d'Abu al-Abbas : reprend l'ancien empire omeyyade, soit Arabie (Hedjaz, Yémen), Syrie et Palestine avec Damas, Égypte, Jazira, Irak (Koufa, Bassora, Wasit), plateau iranien (Rey, Ispahan, Fars), Khorassan (Merv, Nichapour, Balkh), Transoxiane jusqu'à Samarcande et Boukhara, vallée de l'Indus (Sind), Arménie. Ifriqiya (Kairouan) encore tenue par un gouverneur local, Abd al-Rahman ibn Habib, qui reconnaît le nouveau calife du bout des lèvres ; Maghreb occidental aux mains de Berbères insoumis. Al-Andalus échappe (Abd al-Rahman, futur émir de Cordoue, s'y installe en 755). Rivaux : Empire byzantin de Constantin V (Anatolie, Constantinople), Khazars au nord du Caucase, Turcs et Tang au-delà de l'Amou-Daria et du Syr-Daria, Tibétains."
+    },
+    {
+      "id": "talas-751",
+      "year": 751,
+      "title": "Talas : les Abbassides arrêtent les Chinois en Asie centrale",
+      "type": "bataille",
+      "location": [
+        71.37,
+        42.52
+      ],
+      "zoom": 5,
+      "summary": "En 751, près de la rivière Talas, l'armée du général chinois Gao Xianzhi est battue par les Abbassides et leurs alliés karlouks : la Chine renonce à l'Asie centrale occidentale.",
+      "details": "À l'est de l'empire, deux géants se rencontrent. La **Chine des Tang** a étendu son influence jusqu'au Fergana et aux oasis de Sogdiane. Les Abbassides, tout juste installés, tiennent la Transoxiane (la région entre l'Amou-Daria et le Syr-Daria). En 750, le général coréen au service des Tang, **Gao Xianzhi**, détruit le royaume de Chach (Tachkent) ; le fils du roi appelle les Arabes à l'aide.\n\nEn juillet 751, les armées se font face près de la rivière **Talas** (aujourd'hui au Kazakhstan). Les chroniques chinoises parlent de quelque 30 000 Tang et alliés ; les effectifs arabes sont inconnus. Après plusieurs jours de combat, les **Karlouks**, des Turcs de la région qui servaient les Tang, auraient changé de camp au moment décisif, selon les sources chinoises et arabes. Gao Xianzhi se replie en désordre.\n\nL'importance de la bataille est débattue. Elle ne décide pas seule de l'Asie centrale : la Chine est affaiblie dès 755 par la révolte d'An Lushan, et la région se convertit à l'islam lentement, au fil des siècles. Une légende ajoute que des prisonniers chinois auraient enseigné l'art du papier à Samarcande ; or le papier y était sans doute déjà connu. Pour les Abbassides, c'est surtout un signal : leur frontière orientale est tenue, et personne ne viendra la contester avant les Mongols.",
+      "consequences": [
+        "La Transoxiane (Samarcande, Boukhara, Chach) reste sous autorité abbasside et se tourne peu à peu vers l'islam.",
+        "La Chine des Tang, affaiblie par la révolte d'An Lushan dès 755, se retire du Syr-Daria et des routes de l'ouest.",
+        "Les Karlouks et d'autres Turcs d'Asie centrale entrent dans l'orbite du monde musulman.",
+        "Le papier gagne l'Occident par Samarcande et Bagdad, légende des prisonniers chinois à part."
+      ],
+      "territory": "talas-751",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Talas",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Talas"
+        },
+        {
+          "label": "Wikipédia — Califat abbasside",
+          "url": "https://fr.wikipedia.org/wiki/Califat_abbasside"
+        },
+        {
+          "label": "Hugh Kennedy, The Early Abbasid Caliphate (Croom Helm)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Califat abbasside et Karlouks",
+          "Empire Tang"
+        ],
+        "commanders": [
+          "Ziyad ibn Salih",
+          "Gao Xianzhi",
+          "Duan Xiushi"
+        ],
+        "outcome": "Victoire des Abbassides et des Karlouks ; repli des Tang",
+        "forces": "Environ 30 000 Tang et alliés contre un nombre comparable d'Arabes et de Karlouks, selon les sources chinoises",
+        "losses": "Lourdes pertes tang ; quelques milliers de prisonniers"
+      },
+      "armies": [
+        {
+          "side": "Tang (Gao Xianzhi)",
+          "from": "Aksou",
+          "faction": "chinois",
+          "path": [
+            [
+              82.96,
+              41.72
+            ],
+            [
+              80.3,
+              41.2
+            ],
+            [
+              75.99,
+              39.47
+            ],
+            [
+              73.5,
+              41.4
+            ],
+            [
+              71.37,
+              42.52
+            ]
+          ],
+          "strength": 2
+        },
+        {
+          "side": "Abbassides",
+          "from": "Samarcande",
+          "faction": "arabes",
+          "path": [
+            [
+              66.96,
+              39.65
+            ],
+            [
+              68.8,
+              40.5
+            ],
+            [
+              71.37,
+              42.52
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Karlouks",
+          "from": "Semiretchié",
+          "faction": "turcs-gokturks",
+          "path": [
+            [
+              75,
+              44.5
+            ],
+            [
+              73,
+              43.3
+            ],
+            [
+              71.37,
+              42.52
+            ]
+          ],
+          "strength": 1,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Ziyad ibn Salih",
+          "role": "Général abbasside vainqueur à Talas",
+          "faction": "arabes",
+          "archetype": "general",
+          "position": [
+            71.3,
+            42.5
+          ]
+        },
+        {
+          "name": "Gao Xianzhi",
+          "role": "Général des Tang, vaincu",
+          "faction": "chinois",
+          "archetype": "general-chinois",
+          "position": [
+            71.5,
+            42.55
+          ]
+        }
+      ],
+      "territoryNote": "Califat des premières années : reprend l'empire omeyyade sauf l'Espagne : Arabie, Syrie, Égypte, Irak, plateau iranien, Khorassan (Merv, Nichapour, Balkh), Transoxiane jusqu'à Samarcande, Boukhara et Chach (Tachkent) au nord-est, vallée de l'Indus (Sind) ; Ifriqiya (Kairouan) en demi-autonomie. Frontière orientale arrêtée vers le Syr-Daria et la vallée du Talas, au-delà de laquelle commencent les Karlouks (alliés) et les Tang. Rivaux : Chine des Tang (Kachgar, Tarim, Aksou ; en repli après 755), Karlouks et Turgesh, Tibétains, Empire byzantin de Constantin V, Khazars, émirat omeyyade de Cordoue à partir de 756."
+    },
+    {
+      "id": "bagdad-762",
+      "year": 762,
+      "title": "Al-Mansur fonde Bagdad, la « Ville de la Paix »",
+      "type": "fondation",
+      "location": [
+        44.37,
+        33.31
+      ],
+      "zoom": 5,
+      "summary": "En 762, le calife al-Mansur fonde sur le Tigre une capitale circulaire, Madinat al-Salam, qui deviendra Bagdad, la plus grande ville du monde musulman.",
+      "details": "Deuxième calife abbasside, **al-Mansur** règne depuis 754. Il élimine ses rivaux : son propre oncle **Abdallah ibn Ali**, puis **Abu Muslim**, le général de la révolution, assassiné en 755. Il écrase aussi la révolte de **Muhammad al-Nafs al-Zakiyya**, un descendant d'Ali qui se soulève à Médine et à Bassora en 762-763. Mal à l'aise à Koufa, ville turbulente et favorable aux partisans d'Ali, il cherche un site neuf.\n\nIl choisit un village sur le **Tigre**, au carrefour des routes d'Iran, de Syrie et du golfe Persique, près de canaux qui relient le fleuve à l'Euphrate. Les travaux commencent en 762, avec, selon les sources arabes, plus de 100 000 ouvriers, architectes et artisans venus de Syrie, d'Irak et d'Iran. Le plan est un **cercle** d'environ 2,3 km de diamètre, bordé de murailles et de fossés, avec quatre portes (Koufa, Bassora, Khorassan, Syrie) et, au centre, le palais du calife et la grande mosquée. On l'appelle *Madinat al-Salam*, « la Ville de la Paix », d'où vient le nom de **Bagdad**, qui existait déjà en village.\n\nLe cercle fut vite débordé par des faubourgs. Il n'en reste rien aujourd'hui : on connaît son plan par des textes plus tardifs, ce qui invite à la prudence sur les chiffres. Au Xe siècle, Bagdad est sans doute la plus grande ville du monde hors de Chine.",
+      "consequences": [
+        "Bagdad devient la capitale du califat pour cinq siècles (hors parenthèse de Samarra, 836-892).",
+        "Le pouvoir se fixe en Irak, au centre de réseaux fluviaux et caravaniers qui relient l'Iran, la Syrie et l'océan Indien.",
+        "Une cour, une armée et une administration de métier, souvent iraniennes, s'organisent autour du calife.",
+        "La ville attire savants, marchands et artisans, et prépare l'âge d'or du IXe siècle."
+      ],
+      "territory": "bagdad-762",
+      "sources": [
+        {
+          "label": "Wikipédia — Bagdad",
+          "url": "https://fr.wikipedia.org/wiki/Bagdad"
+        },
+        {
+          "label": "Wikipédia — Abû Ja`far al-Mansûr",
+          "url": "https://fr.wikipedia.org/wiki/Al-Mansur"
+        },
+        {
+          "label": "Hugh Kennedy, When Baghdad Ruled the Muslim World (Da Capo)"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Al-Mansur",
+          "role": "Deuxième calife abbasside, fondateur de Bagdad",
+          "faction": "arabes",
+          "archetype": "calife",
+          "person": "al-mansur",
+          "position": [
+            44.37,
+            33.31
+          ],
+          "quote": "Je suis le sultan de Dieu sur sa terre (discours attribué à al-Mansur, selon al-Tabari)"
+        }
+      ],
+      "territoryNote": "Califat d'al-Mansur : Arabie (Hedjaz, Yémen), Syrie et Palestine, Égypte, Jazira, Irak avec Bagdad pour capitale, plateau iranien, Khorassan (Merv, Nichapour, Balkh), Transoxiane (Samarcande, Boukhara), Sind ; Ifriqiya (Kairouan) reprise vers 761 et tenue par des gouverneurs envoyés de Bagdad. Hors d'atteinte : al-Andalus, où Abd al-Rahman Ier règne à Cordoue depuis 756 ; Maghreb occidental et central, aux mains de Berbères kharijites (Sufrites de Sijilmassa, 757 ; Ibadites de Tahert). Rivaux : Empire byzantin de Constantin V (Anatolie), Khazars au Caucase, Tibétains et Turcs en Asie centrale, Tang en repli."
+    },
+    {
+      "id": "haroun-786",
+      "year": 786,
+      "title": "Haroun al-Rachid devient calife : l'apogée de Bagdad",
+      "type": "politique",
+      "location": [
+        44.37,
+        33.31
+      ],
+      "zoom": 4,
+      "summary": "En 786, Haroun al-Rachid devient calife ; avec ses vizirs les Barmakides et son épouse Zubayda, il préside à l'âge d'or de Bagdad, légendaire jusque dans les Mille et Une Nuits.",
+      "details": "**Haroun** monte sur le trône en 786, à une vingtaine d'années. Son règne (786-809) est resté dans la mémoire comme le sommet du califat. Il gouverne d'abord avec la famille des **Barmakides**, d'origine iranienne (leurs ancêtres étaient liés à un temple bouddhiste de Balkh). **Yahya ibn Khalid**, son ancien précepteur, puis ses fils dirigent l'administration pendant près de vingt ans. En 803, Haroun fait exécuter **Jafar** et disgracie la famille ; les raisons exactes, politiques, financières ou personnelles, restent discutées.\n\nSon épouse **Zubayda**, petite-fille d'al-Mansur, joue un rôle public : elle finance des puits et des relais sur la route de pèlerinage de Bagdad à La Mecque, appelée plus tard *Darb Zubayda*. Le règne est marqué par la guerre contre les **Byzantins** (campagnes annuelles, prise d'Héraclée en 806) et par un équilibre fragile entre les provinces. Les revenus sont immenses, mais loin de la capitale, le pouvoir s'effrite : le Maghreb se détache (Idrisides au Maroc en 788) et l'Ifriqiya sera confiée en 800 à une dynastie héréditaire.\n\nEn 802, Haroun organise sa succession : son fils **al-Amin** doit régner à Bagdad, **al-Ma'mun** gouverner l'Est. Ce partage, qui fut la cause de la guerre civile de 811-813, laisse déjà voir la fragilité d'un empire géant. Le Haroun des **Mille et Une Nuits** est surtout un personnage de légende, très éloigné du calife réel.",
+      "consequences": [
+        "Le califat atteint son extension maximale, de l'Ifriqiya à la Transoxiane et au Sind, mais certaines provinces lointaines ne dépendent plus que par une allégeance.",
+        "Haroun transfère à Raqqa, en Syrie, sa résidence de guerre à partir de 796 pour surveiller la frontière byzantine.",
+        "Le Maroc échappe au califat dès 788 (Idrisides), puis l'Ifriqiya devient une principauté héréditaire en 800.",
+        "Le partage de la succession entre al-Amin et al-Ma'mun prépare la guerre civile de 811-813."
+      ],
+      "territory": "haroun-786",
+      "sources": [
+        {
+          "label": "Wikipédia — Hâroun ar-Rachîd",
+          "url": "https://fr.wikipedia.org/wiki/Hâroun_ar-Rachîd"
+        },
+        {
+          "label": "Wikipédia — Barmakides",
+          "url": "https://fr.wikipedia.org/wiki/Barmakides"
+        },
+        {
+          "label": "Wikipédia — Zubayda bint Ja`far",
+          "url": "https://fr.wikipedia.org/wiki/Zubayda_bint_Ja`far"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Haroun al-Rachid",
+          "role": "Cinquième calife abbasside",
+          "faction": "arabes",
+          "archetype": "calife",
+          "person": "haroun-al-rachid",
+          "position": [
+            44.37,
+            33.31
+          ],
+          "quote": "Pleus où tu veux : ton impôt me reviendra (anecdote attribuée à Haroun, à un nuage)"
+        },
+        {
+          "name": "Yahya ibn Khalid al-Barmaki",
+          "role": "Vizir, chef des Barmakides",
+          "faction": "parthes-perses",
+          "archetype": "grand-vizir",
+          "person": "yahya-al-barmaki",
+          "position": [
+            44.4,
+            33.3
+          ]
+        },
+        {
+          "name": "Zubayda",
+          "role": "Épouse de Haroun, mécène du pèlerinage",
+          "faction": "arabes",
+          "archetype": "imperatrice",
+          "person": "zubayda",
+          "position": [
+            44.34,
+            33.33
+          ]
+        }
+      ],
+      "territoryNote": "Califat à son apogée : Arabie, Syrie, Égypte, Irak, Iran (Rey, Ispahan, Fars), Khorassan (Merv, Nichapour, Balkh), Transoxiane (Samarcande, Boukhara, Chach), vallée de l'Indus (Sind), Arménie et Azerbaïdjan ; Ifriqiya (Kairouan) encore gouvernée directement depuis Bagdad. Hors du califat : Maroc des Idrisides (Fès, depuis 788), Tahert des Rustamides (Ibadites, 776), émirat omeyyade de Cordoue (al-Hakam Ier). Rivaux : Empire byzantin (Irène puis Nicéphore Ier), Khazars, Tibétains, Francs de Charlemagne, Turcs en Asie centrale."
+    },
+    {
+      "id": "aghlabides-800",
+      "year": 800,
+      "title": "Les Aghlabides gouvernent l'Ifriqiya pour le calife",
+      "type": "politique",
+      "location": [
+        10.1,
+        35.68
+      ],
+      "zoom": 4.5,
+      "summary": "En 800, Haroun al-Rachid confie l'Ifriqiya à Ibrahim ibn al-Aghlab, dont la dynastie gouverne Kairouan de façon héréditaire en reconnaissant le calife de Bagdad.",
+      "details": "L'**Ifriqiya** (la Tunisie actuelle et ses abords) est difficile à tenir : elle est loin de l'Irak, agitée par les révoltes de soldats arabes et de Berbères kharijites (des dissidents de l'islam). Vers 800, le calife **Haroun al-Rachid** confie la province à **Ibrahim ibn al-Aghlab**, un officier d'origine arabe du Khorassan. En échange du pouvoir héréditaire, Ibrahim s'engage à verser un tribut et à faire dire la prière du vendredi au nom du calife. C'est un compromis réaliste : Bagdad garde la reconnaissance et un peu d'argent ; Kairouan, l'autonomie.\n\nLa dynastie des **Aghlabides** va bâtir un État puissant. Elle fait agrandir la Grande Mosquée de Kairouan, creuse des réservoirs, bâtit une flotte et, à partir de 827, conquiert la **Sicile** sur les Byzantins. Elle se tourne ainsi vers la Méditerranée plus que vers l'Irak. Le modèle est celui de nombreuses provinces lointaines : un gouverneur devenu prince héréditaire qui continue de reconnaître le calife, ce qui lui donne une légitimité religieuse sans lui imposer une administration commune. Le califat conserve ainsi, sur la carte, un empire en apparence immense, dont les marges ne dépendent plus que du nom du calife dans la prière.",
+      "consequences": [
+        "L'Ifriqiya sort du contrôle direct de Bagdad : elle reste dans l'obédience du calife, mais sous une dynastie héréditaire (statut de vassal sur la carte).",
+        "La flotte aghlabide conquiert la Sicile à partir de 827 et lance des raids en Italie du Sud.",
+        "Kairouan devient un grand centre religieux et intellectuel du Maghreb.",
+        "Le modèle de l'émirat héréditaire qui reconnaît le calife se généralise : Tahirides, Samanides, Tulunides, puis d'autres."
+      ],
+      "territory": "aghlabides-800",
+      "sources": [
+        {
+          "label": "Wikipédia — Aghlabides",
+          "url": "https://fr.wikipedia.org/wiki/Aghlabides"
+        },
+        {
+          "label": "Wikipédia — Kairouan",
+          "url": "https://fr.wikipedia.org/wiki/Kairouan"
+        },
+        {
+          "label": "Hugh Kennedy, The Prophet and the Age of the Caliphates (Routledge)"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Ibrahim ibn al-Aghlab",
+          "role": "Premier émir aghlabide d'Ifriqiya",
+          "faction": "arabes",
+          "archetype": "general",
+          "position": [
+            10.1,
+            35.68
+          ]
+        },
+        {
+          "name": "Haroun al-Rachid",
+          "role": "Calife abbasside",
+          "faction": "arabes",
+          "archetype": "calife",
+          "person": "haroun-al-rachid",
+          "position": [
+            39.01,
+            35.95
+          ]
+        }
+      ],
+      "territoryNote": "Califat de Haroun al-Rachid en 800 : Arabie, Syrie, Égypte, Irak, Iran, Khorassan, Transoxiane, Sind, Arménie ; l'Ifriqiya (Kairouan, Tunisie actuelle, est algérien, Tripolitaine) devient un émirat aghlabide héréditaire qui reconnaît le calife : statut vassal. Hors du califat : Maroc des Idrisides (Fès), Tahert des Rustamides, al-Andalus de l'émir omeyyade de Cordoue, Sicile byzantine. Rivaux : Empire byzantin de Nicéphore Ier, Francs de Charlemagne (empereur depuis 800), Khazars, Tibétains."
+    },
+    {
+      "id": "charlemagne-802",
+      "year": 802,
+      "title": "Une ambassade entre Charlemagne et Haroun al-Rachid",
+      "type": "politique",
+      "location": [
+        39.01,
+        35.95
+      ],
+      "zoom": 4,
+      "summary": "Entre 797 et 802, des émissaires circulent entre Charlemagne et Haroun al-Rachid ; en 802, un éléphant nommé Abul-Abbas arrive à Aix-la-Chapelle. Seules les sources franques en parlent.",
+      "details": "En 797, **Charlemagne**, roi des Francs, envoie à Haroun al-Rachid trois émissaires : **Lantfrid**, **Sigismond** et un marchand juif nommé **Isaac**. Selon les *Annales royales franques*, seul Isaac revient, en 801, avec l'éléphant **Abul-Abbas**, des soieries, des aromates, une horloge à eau et des clefs du Saint-Sépulcre offertes symboliquement par le patriarche de Jérusalem. L'éléphant arrive à Aix-la-Chapelle en juillet 802 ; il y vivra jusqu'en 810.\n\nCe que l'épisode signifie est discuté. Les sources arabes ne mentionnent pas cette ambassade : on ne la connaît que par les chroniqueurs francs, ce qui commande la prudence. L'idée d'une **alliance** contre l'émir omeyyade de Cordoue ou contre les Byzantins est une hypothèse d'historien, non un fait établi. L'échange est surtout un témoignage de prestige : le Haroun de ces années, installé à **Raqqa** sur l'Euphrate pour surveiller la frontière byzantine, reçoit des délégations de tout l'Orient, et Charlemagne, couronné empereur à Rome en 800, aime se mesurer à un souverain lointain et célèbre.\n\nLe contraste de moyens est saisissant : un empire qui frappe l'or et tient des routes de l'Atlantique à l'Indus, d'un côté, un royaume surtout rural, de l'autre. Aucune conséquence politique durable n'en est connue.",
+      "consequences": [
+        "Aucun changement territorial : le califat conserve sa frontière avec l'Empire byzantin et ses provinces lointaines.",
+        "La résidence de Haroun à Raqqa (en Syrie, depuis 796) confirme que le centre de gravité militaire est tourné vers Byzance.",
+        "Les échanges de cadeaux illustrent le prestige de Bagdad en Occident, sans traité ni alliance attestés.",
+        "Le contact entre les deux souverains est connu uniquement par des textes francs, ce qui limite ce qu'on peut en dire."
+      ],
+      "territory": "charlemagne-802",
+      "sources": [
+        {
+          "label": "Wikipédia — Charlemagne",
+          "url": "https://fr.wikipedia.org/wiki/Charlemagne"
+        },
+        {
+          "label": "Wikipédia — Abul-Abbas (éléphant)",
+          "url": "https://fr.wikipedia.org/wiki/Abul-Abbas_(éléphant)"
+        },
+        {
+          "label": "Wikipédia — Hâroun ar-Rachîd",
+          "url": "https://fr.wikipedia.org/wiki/Hâroun_ar-Rachîd"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Haroun al-Rachid",
+          "role": "Calife abbasside, à Raqqa",
+          "faction": "arabes",
+          "archetype": "calife",
+          "person": "haroun-al-rachid",
+          "position": [
+            39.01,
+            35.95
+          ]
+        },
+        {
+          "name": "Charlemagne",
+          "role": "Roi des Francs, empereur depuis 800",
+          "faction": "francs",
+          "archetype": "empereur-carolingien",
+          "position": [
+            6.08,
+            50.78
+          ]
+        }
+      ],
+      "territoryNote": "Même étendue qu'en 800 : Arabie, Syrie (Raqqa, résidence de Haroun), Égypte, Irak (Bagdad), Iran, Khorassan, Transoxiane, Sind, Arménie ; Ifriqiya en émirat aghlabide qui reconnaît le calife : statut vassal. Hors du califat : al-Andalus (émir omeyyade de Cordoue), Maroc des Idrisides, Tahert des Rustamides. Rivaux : Empire byzantin de Nicéphore Ier (Anatolie, Constantinople), Empire carolingien de Charlemagne (Francs, empereur depuis 800), Khazars, Tibétains, Turcs d'Asie centrale."
+    },
+    {
+      "id": "bagdad-813",
+      "year": 813,
+      "title": "Guerre civile : al-Ma'mun prend Bagdad à son frère al-Amin",
+      "type": "bataille",
+      "location": [
+        44.37,
+        33.31
+      ],
+      "zoom": 5,
+      "summary": "Après la mort de Haroun, ses fils al-Amin et al-Ma'mun se disputent le califat ; en 813, les troupes d'al-Ma'mun, venues du Khorassan, prennent Bagdad après un siège d'un an et tuent al-Amin.",
+      "details": "À la mort de **Haroun** en 809, le califat revient à son fils **al-Amin**, dont la mère est Zubayda, une Abbasside. Son demi-frère **al-Ma'mun**, né d'une mère iranienne, gouverne le Khorassan depuis Merv, avec la promesse d'en hériter. En 810, al-Amin veut placer son propre fils avant lui et le destituer. C'est la rupture.\n\nLe général d'al-Ma'mun, **Tahir ibn al-Husayn**, écrase l'armée d'al-Amin près de Rey en 811, puis marche sur Bagdad avec des troupes du **Khorassan**. À partir d'août 812, il assiège la capitale, en la prenant quartier par quartier. Les habitants, des volontaires pauvres surtout, résistent derrière des barricades ; les machines de siège (mangonneaux) et les incendies détruisent une grande partie des faubourgs et les palais du centre. En septembre 813, al-Amin, capturé en tentant de fuir par le Tigre, est exécuté.\n\nLes effectifs sont mal connus et les sources hostiles aux vaincus. Al-Ma'mun, vainqueur, ne rentre pourtant pas à Bagdad : il reste à Merv jusqu'en 818-819, et les révoltes (en Irak, en Égypte, en Arabie, chez les partisans d'Ali) occupent ses premières années. Il récompense Tahir, nommé gouverneur du Khorassan, dont la famille, les **Tahirides**, y régnera de fait à partir de 821.",
+      "consequences": [
+        "Al-Ma'mun reste seul calife ; le centre du pouvoir se déplace vers l'Iran oriental jusqu'à son retour à Bagdad en 819.",
+        "Les Tahirides, famille de Tahir ibn al-Husayn, tiennent le Khorassan (Nichapour, Merv, Balkh) en vassaux quasi héréditaires du calife.",
+        "Bagdad est durement endommagée, mais se reconstruit vite.",
+        "Les Samanides reçoivent la Transoxiane, autre grande province confiée à des familles locales dans les années 819-820."
+      ],
+      "territory": "bagdad-813",
+      "sources": [
+        {
+          "label": "Wikipédia — Quatrième Fitna",
+          "url": "https://fr.wikipedia.org/wiki/Quatrième_Fitna"
+        },
+        {
+          "label": "Wikipédia — Al-Ma'mûn",
+          "url": "https://fr.wikipedia.org/wiki/Al-Ma`mûn"
+        },
+        {
+          "label": "Wikipédia — Tahirides",
+          "url": "https://fr.wikipedia.org/wiki/Tahirides"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Armée d'al-Ma'mun (Khorassan)",
+          "Armée d'al-Amin (Bagdad)"
+        ],
+        "commanders": [
+          "Tahir ibn al-Husayn",
+          "al-Amin",
+          "Harthama ibn A`yan"
+        ],
+        "outcome": "Victoire d'al-Ma'mun ; prise de Bagdad et mort d'al-Amin",
+        "forces": "Inconnues ; les sources arabes parlent de dizaines de milliers d'hommes de chaque côté",
+        "losses": "Lourdes pertes parmi les défenseurs et les habitants ; quartiers entiers détruits"
+      },
+      "armies": [
+        {
+          "id": "tahir",
+          "side": "Armée du Khorassan (Tahir)",
+          "from": "Merv",
+          "faction": "parthes-perses",
+          "path": [
+            [
+              62.19,
+              37.66
+            ],
+            [
+              58.8,
+              36.3
+            ],
+            [
+              51.4,
+              35.6
+            ],
+            [
+              48.51,
+              34.8
+            ],
+            [
+              45.4,
+              34.35
+            ],
+            [
+              44.4,
+              33.3
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée d'al-Amin",
+          "from": "Bagdad",
+          "faction": "arabes",
+          "path": [
+            [
+              43.7,
+              33.4
+            ],
+            [
+              44.4,
+              33.3
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Al-Ma'mun",
+          "role": "Calife victorieux, gouverne depuis Merv",
+          "faction": "parthes-perses",
+          "archetype": "calife",
+          "person": "al-mamun",
+          "position": [
+            62.19,
+            37.66
+          ]
+        },
+        {
+          "name": "Tahir ibn al-Husayn",
+          "role": "Général d'al-Ma'mun, futur gouverneur du Khorassan",
+          "faction": "parthes-perses",
+          "archetype": "general",
+          "position": [
+            44.3,
+            33.35
+          ]
+        }
+      ],
+      "territoryNote": "Califat en guerre civile : al-Amin tient Bagdad, Irak, Syrie, Égypte et Hedjaz jusqu'à l'été 813 ; al-Ma'mun tient le Khorassan (Merv, Nichapour, Balkh), Transoxiane et le plateau iranien (Rey, Ispahan, Hamadan), et conquiert l'Irak. Ifriqiya aghlabide : vassal. Provinces qui échappent ou se soulèvent : Égypte et Syrie en révolte tribale, Azerbaïdjan avec le chef khurramite Babak (depuis 816), Arménie à demi autonome. Hors du califat : Maroc des Idrisides, Tahert des Rustamides, al-Andalus de l'émir omeyyade de Cordoue. Rivaux : Empire byzantin de Michel II (Anatolie), Khazars, Tibétains."
+    },
+    {
+      "id": "sagesse-830",
+      "year": 830,
+      "title": "La Maison de la sagesse et le mouvement des traductions",
+      "type": "réforme",
+      "location": [
+        44.37,
+        33.31
+      ],
+      "zoom": 5,
+      "summary": "Sous al-Ma'mun, Bagdad devient le grand centre où l'on traduit en arabe les savants grecs, persans et indiens : la Maison de la sagesse symbolise cet élan.",
+      "details": "Revenu à **Bagdad** en 819, **al-Ma'mun** (813-833) est un souverain lettré, curieux de philosophie, d'astronomie et de théologie. La tradition lui attribue la création de la **Maison de la sagesse** (*Bayt al-Hikma*), une bibliothèque et un cercle de traducteurs. Sa nature exacte est discutée : certains historiens y voient un grand institut de recherche, d'autres une bibliothèque de cour qui prolonge celle des rois sassanides. Ce qui est sûr, c'est que le **mouvement de traduction** est plus large et plus ancien : il a commencé sous al-Mansur, soutenu par des riches familles de Bagdad, et s'appuie sur des chrétiens de langue syriaque comme **Hunayn ibn Ishaq**, sur des Perses et sur des Indiens.\n\nEn quelques décennies, l'essentiel d'**Aristote**, de **Galien**, d'**Euclide**, de **Ptolémée** et d'Archimède est mis en arabe, avec des textes persans et indiens. Les savants ne se contentent pas de traduire : **al-Khwarizmi** écrit vers 820 le traité d'*algèbre* qui donne son nom à cette science, et son nom, déformé, donne « algorithme ». **Al-Kindi**, le premier grand philosophe de langue arabe, relie la pensée grecque à la foi musulmane. En 828, al-Ma'mun fait installer des observatoires. Le même calife impose la doctrine mutazilite (raison et justice divine) par une inquisition, la *mihna*, à partir de 833, qui divise les savants.",
+      "consequences": [
+        "Le monde arabe devient le principal dépositaire du savoir grec, persan et indien, qui reviendra plus tard en Occident.",
+        "Algèbre, trigonométrie, astronomie et médecine progressent à Bagdad grâce aux savants d'origines diverses.",
+        "L'arabe s'affirme comme langue scientifique, de l'Espagne à l'Asie centrale.",
+        "Le califat reste puissant sur le papier, mais les Tahirides au Khorassan, les Samanides en Transoxiane et les Aghlabides en Ifriqiya gouvernent de fait."
+      ],
+      "territory": "sagesse-830",
+      "sources": [
+        {
+          "label": "Wikipédia — Maison de la sagesse",
+          "url": "https://fr.wikipedia.org/wiki/Maison_de_la_sagesse"
+        },
+        {
+          "label": "Wikipédia — Al-Khwârizmî",
+          "url": "https://fr.wikipedia.org/wiki/Al-Khwârizmî"
+        },
+        {
+          "label": "Wikipédia — Al-Ma'mûn",
+          "url": "https://fr.wikipedia.org/wiki/Al-Ma`mûn"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Al-Ma'mun",
+          "role": "Calife mécène des savants",
+          "faction": "arabes",
+          "archetype": "calife",
+          "person": "al-mamun",
+          "position": [
+            44.37,
+            33.31
+          ],
+          "quote": "(formule libre) Faire passer en arabe le savoir des Anciens"
+        },
+        {
+          "name": "Al-Khwarizmi",
+          "role": "Mathématicien, auteur du traité d'algèbre",
+          "faction": "parthes-perses",
+          "archetype": "sage",
+          "person": "al-khwarizmi",
+          "position": [
+            44.35,
+            33.33
+          ]
+        },
+        {
+          "name": "Al-Kindi",
+          "role": "Philosophe, « philosophe des Arabes »",
+          "faction": "arabes",
+          "archetype": "sage",
+          "person": "al-kindi",
+          "position": [
+            44.39,
+            33.29
+          ]
+        }
+      ],
+      "territoryNote": "Califat d'al-Ma'mun : Arabie (Hedjaz, Yémen), Syrie et Palestine, Égypte (Fustat, directement mais agitée), Jazira, Irak avec Bagdad, plateau iranien (Rey, Ispahan, Fars), Azerbaïdjan et Arménie (révolte de Babak), Khorassan gouverné par les Tahirides (vassaux, Nichapour), Transoxiane et Fergana par les Samanides (vassaux, Samarcande, Boukhara), Sind ; Ifriqiya aghlabide (vassal, Kairouan). Hors du califat : al-Andalus (Abd al-Rahman II à Cordoue), Maroc des Idrisides, Tahert des Rustamides. Rivaux : Empire byzantin de Théophile (Anatolie, Constantinople), Khazars, Tibétains."
+    },
+    {
+      "id": "samarra-836",
+      "year": 836,
+      "title": "Le calife al-Mu'tasim fonde Samarra et fait des Turcs sa garde",
+      "type": "fondation",
+      "location": [
+        43.87,
+        34.2
+      ],
+      "zoom": 5,
+      "summary": "En 836, al-Mu'tasim quitte Bagdad pour une ville neuve, Samarra, au nord, où il loge sa garde de soldats turcs, achetés en Asie centrale et devenus le cœur de l'armée.",
+      "details": "**Al-Mu'tasim**, frère d'al-Ma'mun, règne de 833 à 842. Il constitue une garde de **soldats turcs**, d'abord des esclaves achetés (le mot *ghilman* désigne ces jeunes soldats d'élite) en Asie centrale et élevés pour servir le calife. Leur loyauté personnelle séduit un souverain qui se méfie des Arabes et des Iraniens. Mais ces hommes, souvent mal vus des habitants de Bagdad, y provoquent des heurts. En 836, Mu'tasim décide de les installer à l'écart.\n\nIl choisit un site sur le Tigre, à une centaine de kilomètres au nord de Bagdad : **Samarra**, nommée aussi *Surra man ra'a*, « Heureux qui la voit ». Palais, casernes, jardins et pistes de course se déploient sur plusieurs dizaines de kilomètres le long du fleuve. Le calife **al-Mutawakkil** (847-861) y construit la **Grande Mosquée**, avec son minaret en spirale, la Malwiya, l'un des plus grands édifices de brique du monde. Samarra reste capitale jusqu'en 892.\n\nLe choix a un prix. En isolant le calife au milieu d'une garde qui dépend de la solde, on crée un pouvoir militaire en position de faire et défaire les califes, ce qui explique la suite. Aujourd'hui, la ville abandonnée est un site classé par l'Unesco, qui a livré des vestiges majeurs de l'art et de l'urbanisme abbassides.",
+      "consequences": [
+        "Le calife vit désormais à l'écart de Bagdad, au milieu d'une armée turque qui lui coûte de plus en plus cher.",
+        "La garde turque devient un pouvoir politique à part entière, capable de renverser les califes dès 861.",
+        "Samarra devient capitale de 836 à 892 ; Bagdad reste la grande ville marchande et savante.",
+        "Le recrutement d'esclaves-soldats turcs s'installe comme modèle pour les États musulmans suivants, jusqu'aux Mamelouks."
+      ],
+      "territory": "samarra-836",
+      "sources": [
+        {
+          "label": "Wikipédia — Samarra",
+          "url": "https://fr.wikipedia.org/wiki/Samarra"
+        },
+        {
+          "label": "Wikipédia — Al-Mu'tasim",
+          "url": "https://fr.wikipedia.org/wiki/Al-Mu`tasim"
+        },
+        {
+          "label": "Hugh Kennedy, The Prophet and the Age of the Caliphates (Routledge)"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Al-Mu'tasim",
+          "role": "Calife fondateur de Samarra",
+          "faction": "arabes",
+          "archetype": "calife",
+          "position": [
+            43.87,
+            34.2
+          ]
+        },
+        {
+          "name": "Ashnas",
+          "role": "Général turc de la garde de Samarra",
+          "faction": "turcs-gokturks",
+          "archetype": "general",
+          "position": [
+            43.85,
+            34.18
+          ]
+        }
+      ],
+      "territoryNote": "Califat d'al-Mu'tasim, capitale à Samarra : Arabie (Hedjaz, Yémen), Syrie et Palestine, Égypte (gouvernée par des officiers turcs envoyés du calife), Jazira, Irak, plateau iranien, Azerbaïdjan et Arménie (révolte de Babak écrasée en 837), Khorassan sous les Tahirides (vassaux) et Transoxiane sous les Samanides (vassaux), Sind ; Ifriqiya aghlabide (vassal, conquête de la Sicile depuis 827). Hors du califat : al-Andalus, Maroc des Idrisides. Rivaux : Empire byzantin de Théophile (Anatolie, Cilicie en guerre), Khazars, Tibétains."
+    },
+    {
+      "id": "amorium-838",
+      "year": 838,
+      "title": "Amorium : le calife al-Mu'tasim prend la ville des empereurs byzantins",
+      "type": "bataille",
+      "location": [
+        31.28,
+        38.98
+      ],
+      "zoom": 5,
+      "summary": "En août 838, al-Mu'tasim s'empare d'Amorium, ville d'origine de la dynastie byzantine régnante, après la défaite de l'empereur Théophile à Anzen : la plus grande victoire abbasside contre Byzance.",
+      "details": "En 837, l'empereur byzantin **Théophile** attaque la frontière du califat : il ravage Zapetra (Sozopetra) et s'allie aux rebelles khurramites de **Babak**. **Al-Mu'tasim** prépare alors une expédition immense, sans doute plus de cent mille hommes, d'après les sources arabes (chiffre à prendre avec prudence), marchant sur trois colonnes vers l'Anatolie. Le calife choisit pour cible **Amorium**, ville d'origine de la dynastie régnante des « Amoriens » à Constantinople, et grande place fortifiée du plateau anatolien.\n\nÀ **Anzen**, le 22 juillet 838, Théophile est battu par une colonne arabe, puis les armées convergent. Le siège d'Amorium dure environ une semaine d'août 838. Selon les récits byzantins, un transfuge indique un point faible du rempart ; la ville est prise et pillée. Les habitants sont emmenés en captivité (la tradition chrétienne retient les **quarante-deux martyrs** d'Amorium, exécutés plus tard à Samarra). Le calife n'occupe pas la ville, qu'il fait raser, et rentre par l'Anatolie.\n\nLe poète **Abu Tammam** chante l'événement : « L'épée dit plus vrai que les livres », en réponse aux astrologues qui avaient prédit l'échec. Cette victoire reste sans lendemain : Mu'tasim doit rentrer pour réprimer un complot de généraux, et Byzance se redresse vite.",
+      "consequences": [
+        "Le califat montre qu'il peut encore frapper au cœur de l'Anatolie, mais sans l'occuper ni changer la frontière du Taurus.",
+        "La dynastie byzantine d'Amorium perd sa ville d'origine ; Théophile meurt en 842, humilié.",
+        "Ce sera la dernière grande offensive d'un calife contre Byzance : la frontière s'équilibre puis, à partir de 860, les Byzantins reprennent l'initiative.",
+        "L'armée turque de Samarra sort grandie de la campagne, ce qui renforce son rôle politique."
+      ],
+      "territory": "amorium-838",
+      "sources": [
+        {
+          "label": "Wikipédia — Siège d'Amorium",
+          "url": "https://fr.wikipedia.org/wiki/Siège_d'Amorium"
+        },
+        {
+          "label": "Wikipédia — Al-Mu'tasim",
+          "url": "https://fr.wikipedia.org/wiki/Al-Mu`tasim"
+        },
+        {
+          "label": "Wikipédia — Théophile (empereur byzantin)",
+          "url": "https://fr.wikipedia.org/wiki/Théophile_(empereur_byzantin)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Califat abbasside",
+          "Empire byzantin"
+        ],
+        "commanders": [
+          "Al-Mu'tasim",
+          "Afshin",
+          "Ashnas",
+          "Théophile"
+        ],
+        "outcome": "Victoire abbasside : Amorium est prise et rasée",
+        "forces": "Très débattues : jusqu'à 80 000 ou plus côté arabe selon les chroniques, chiffres sans doute gonflés",
+        "losses": "Nombreux morts et captifs parmi les habitants ; pertes abbassides inconnues"
+      },
+      "armies": [
+        {
+          "id": "mutasim",
+          "side": "Armée d'al-Mu'tasim",
+          "from": "Tarse",
+          "faction": "arabes",
+          "path": [
+            [
+              34.89,
+              36.92
+            ],
+            [
+              34.77,
+              37.28
+            ],
+            [
+              32.86,
+              39.93
+            ],
+            [
+              31.28,
+              38.98
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Byzantins (Théophile et garnison)",
+          "from": "Constantinople",
+          "faction": "byzantins",
+          "path": [
+            [
+              28.98,
+              41.01
+            ],
+            [
+              30.52,
+              39.78
+            ],
+            [
+              31.28,
+              38.98
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Al-Mu'tasim",
+          "role": "Calife victorieux à Amorium",
+          "faction": "arabes",
+          "archetype": "calife",
+          "position": [
+            31.3,
+            39
+          ]
+        },
+        {
+          "name": "Théophile",
+          "role": "Empereur byzantin, vaincu à Anzen",
+          "faction": "byzantins",
+          "archetype": "empereur-byzantin",
+          "position": [
+            30.5,
+            39.8
+          ]
+        },
+        {
+          "name": "Abu Tammam",
+          "role": "Poète, auteur de l'ode sur Amorium",
+          "faction": "arabes",
+          "archetype": "sage",
+          "position": [
+            33,
+            38.5
+          ],
+          "quote": "Le sabre dit plus vrai que les livres (Abu Tammam, ode sur Amorium)"
+        }
+      ],
+      "territoryNote": "Califat d'al-Mu'tasim, capitale à Samarra : Arabie, Syrie, Égypte, Jazira, Irak, plateau iranien, Azerbaïdjan et Arménie (Babak vaincu en 837), Khorassan sous les Tahirides (vassaux), Transoxiane sous les Samanides (vassaux), Sind ; Ifriqiya aghlabide (vassal). Frontière byzantine tenue par les places de Tarse, Adana, Mopsueste (Cilicie) et Malatya. Hors du califat : al-Andalus, Maroc des Idrisides. Rivaux : Empire byzantin de Théophile (Anatolie, Constantinople), Bulgares, Khazars, Tibétains."
+    },
+    {
+      "id": "anarchie-861",
+      "year": 861,
+      "title": "Le calife al-Mutawakkil est assassiné : l'anarchie de Samarra",
+      "type": "politique",
+      "location": [
+        43.87,
+        34.2
+      ],
+      "zoom": 4,
+      "summary": "En décembre 861, la garde turque tue le calife al-Mutawakkil : pendant près de dix ans, les officiers font et défont les califes, et les provinces s'éloignent.",
+      "details": "**Al-Mutawakkil** (847-861) avait mis fin à la doctrine officielle mutazilite et ramené le sunnisme traditionnel. Il bâtit à Samarra de grands édifices, au prix d'un budget énorme, et cherche à limiter le pouvoir des chefs turcs de sa garde. Dans la nuit du 10 au 11 décembre 861, des officiers turcs le tuent dans son palais, avec l'accord de son fils **al-Muntasir**, qui lui succède.\n\nCe meurtre ouvre la période dite d'**anarchie de Samarra** (861-870). En neuf ans, quatre califes se succèdent (al-Muntasir, al-Musta'in, al-Mu'tazz, al-Muhtadi), deux d'entre eux étant tués par les soldats, parfois pour une question de solde. Les chefs turcs gouvernent de fait, se disputent les revenus de l'Irak et brandissent les califes comme des marionnettes. Un frère du dernier calife, **al-Muwaffaq**, réorganise peu à peu l'armée et domine le pouvoir à partir de 870, sous le calife **al-Mu'tamid** (870-892).\n\nLes provinces profitent du désordre. En Iran, les **Saffarides** (Yaqub al-Saffar, un ancien chaudronnier du Sistan) se constituent un État à partir de 861 ; la Transoxiane et le Khorassan sont aux mains de familles locales ; l'Égypte sera confiée à un officier turc, Ibn Tulun, en 868. Le calife garde la tête de l'islam, mais son autorité effective se réduit à l'Irak et à ses abords.",
+      "consequences": [
+        "L'autorité réelle du calife se contracte autour de l'Irak, du Khuzestan et de la Jazira ; les provinces éloignées se détachent de fait.",
+        "Les Saffarides prennent le contrôle du Sistan, puis du Fars, et menacent Bagdad en 876.",
+        "Les officiers turcs choisissent et révoquent les califes, de 861 à 870.",
+        "Al-Muwaffaq, frère du calife, rétablit l'armée et domine le pouvoir jusqu'en 891."
+      ],
+      "territory": "anarchie-861",
+      "sources": [
+        {
+          "label": "Wikipédia — Anarchie de Samarra",
+          "url": "https://fr.wikipedia.org/wiki/Anarchie_de_Samarra"
+        },
+        {
+          "label": "Wikipédia — Al-Mutawakkil",
+          "url": "https://fr.wikipedia.org/wiki/Al-Mutawakkil"
+        },
+        {
+          "label": "Wikipédia — Samarra",
+          "url": "https://fr.wikipedia.org/wiki/Samarra"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Al-Mutawakkil",
+          "role": "Calife assassiné par sa garde turque",
+          "faction": "arabes",
+          "archetype": "calife",
+          "person": "al-mutawakkil",
+          "position": [
+            43.87,
+            34.2
+          ]
+        },
+        {
+          "name": "Al-Muwaffaq",
+          "role": "Frère du calife, maître de l'armée à partir de 870",
+          "faction": "arabes",
+          "archetype": "general",
+          "position": [
+            44.4,
+            33.3
+          ]
+        }
+      ],
+      "territoryNote": "Califat réduit à ce qu'il contrôle effectivement : Irak (Sawad, Bagdad, Samarra), Jazira (Mossoul), Khuzestan, Jibal (Hamadan, Rey, Ispahan, sous gouverneurs), Hedjaz ; Syrie et Égypte gérées par des officiers turcs. Vassaux ou autonomes reconnaissant le calife : Tahirides du Khorassan (Nichapour), Samanides de Transoxiane (Boukhara, Samarcande), Aghlabides d'Ifriqiya (Kairouan). En rupture : Saffarides du Sistan et de Fars (Yaqub al-Saffar), Alides du Tabaristan (Zaydites, 864). Rivaux : Empire byzantin (Michel III puis Basile Ier, qui reprend l'offensive), Khazars, Tibétains."
+    },
+    {
+      "id": "tulunides-868",
+      "year": 868,
+      "title": "Ibn Tulun gouverne l'Égypte : une province qui s'émancipe",
+      "type": "politique",
+      "location": [
+        31.25,
+        30
+      ],
+      "zoom": 4.5,
+      "summary": "En 868, un officier turc, Ahmad ibn Tulun, devient gouverneur d'Égypte ; il s'y rend quasi indépendant et fonde une dynastie qui reconnaît le calife mais ne lui verse presque plus d'argent.",
+      "details": "Au milieu de l'anarchie de Samarra, les chefs de la garde turque se partagent les provinces. En 868, l'un d'eux reçoit l'Égypte comme apanage et envoie sur place son beau-fils, **Ahmad ibn Tulun**, un Turc élevé à Samarra. L'Égypte est riche, par ses impôts agricoles et ses ports, et ses gouverneurs ne durent d'ordinaire que quelques années. Ibn Tulun reste.\n\nIl se constitue une armée de soldats turcs, noirs et grecs, une fortune et une administration fidèle. Il fonde une nouvelle ville gouvernementale, **al-Qata'i**, au nord de Fustat, et y fait bâtir la mosquée qui porte son nom (876-879), toujours debout au Caire. En 878-879, il étend son pouvoir à la **Syrie**. Il fait frapper monnaie, reconnaît le calife par la prière du vendredi, mais cesse de lui verser l'essentiel des revenus. Le frère du calife, **al-Muwaffaq**, occupé par la révolte des Zanj et les Saffarides, ne peut pas réagir.\n\nLes **Tulunides** gouvernent l'Égypte et la Syrie jusqu'à ce que les Abbassides reprennent le pays en 905. Mais leur existence montre que le califat n'est plus un État centralisé : les gouverneurs forts deviennent des dynasties, qui gardent pour légitimité le nom du calife. Le modèle sera répété par tous les successeurs.",
+      "consequences": [
+        "L'Égypte et, dès 878, la Syrie passent dans les faits sous une dynastie autonome qui reconnaît le calife (statut de vassal nominal).",
+        "Le califat perd la première source de revenus de l'Empire : les impôts d'Égypte ne remontent plus vers l'Irak.",
+        "Le Caire actuel doit à Ibn Tulun l'un de ses plus anciens monuments, la mosquée d'Ibn Tulun.",
+        "L'armée abbasside reprendra l'Égypte en 905, avant qu'elle ne soit enlevée de nouveau par les Fatimides en 969."
+      ],
+      "territory": "tulunides-868",
+      "sources": [
+        {
+          "label": "Wikipédia — Toulounides",
+          "url": "https://fr.wikipedia.org/wiki/Toulounides"
+        },
+        {
+          "label": "Wikipédia — Ahmad ibn Touloun",
+          "url": "https://fr.wikipedia.org/wiki/Ahmad_ibn_Touloun"
+        },
+        {
+          "label": "Wikipédia — Mosquée Ibn Touloun",
+          "url": "https://fr.wikipedia.org/wiki/Mosquée_Ibn_Touloun"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Ahmad ibn Tulun",
+          "role": "Gouverneur turc d'Égypte, fondateur des Tulunides",
+          "faction": "turcs-gokturks",
+          "archetype": "general",
+          "position": [
+            31.25,
+            30
+          ]
+        },
+        {
+          "name": "Al-Muwaffaq",
+          "role": "Régent du califat, occupé par les Zanj et les Saffarides",
+          "faction": "arabes",
+          "archetype": "general",
+          "position": [
+            44.4,
+            33.3
+          ]
+        }
+      ],
+      "territoryNote": "Califat réduit à l'Irak (Bagdad, Samarra, Bassora), la Jazira (Mossoul), le Khuzestan, les Jibal (Hamadan, Rey, Ispahan) et le Hedjaz. Autonomes mais reconnaissant le calife (statut vassal) : Égypte tulunide (Fustat, al-Qata'i ; Syrie ajoutée en 878-879), Aghlabides d'Ifriqiya, Tahirides du Khorassan, Samanides de Transoxiane. Hors d'atteinte : Saffarides de Sistan et de Fars (Yaqub al-Saffar), Alides du Tabaristan, Omeyyades de Cordoue, Idrisides du Maroc. Rivaux : Empire byzantin de Basile Ier, Khazars, Tibétains."
+    },
+    {
+      "id": "zanj-869",
+      "year": 869,
+      "title": "La révolte des Zanj ébranle le sud de l'Irak",
+      "type": "politique",
+      "location": [
+        47.9,
+        30.6
+      ],
+      "zoom": 5,
+      "summary": "À partir de 869, des esclaves noirs (les Zanj) et des paysans du sud de l'Irak se soulèvent sous Ali ibn Muhammad ; il faut quatorze ans pour écraser la révolte, qui menace Bassora et Wasit.",
+      "details": "Dans les marais salés du sud de l'Irak, près de **Bassora**, des milliers d'esclaves d'origine est-africaine, les **Zanj**, travaillent à dessaler et défricher des terres pour de grands propriétaires, dans des conditions très dures. En 869, un homme venu de Perse, **Ali ibn Muhammad**, qui se dit descendant d'Ali, prend leur tête. Il promet la liberté et le butin ; les Zanj, rejoints par des paysans, des Bédouins et des soldats déserteurs, battent plusieurs armées envoyées de Samarra.\n\nLe mouvement s'installe dans une capitale fortifiée, **al-Mukhtara**, dans les marais, bat monnaie, et prend **Bassora** en 871, puis tient la région jusqu'à **Wasit** et aux portes de Bagdad. La nature du mouvement est débattue : révolte sociale d'esclaves, soulèvement politique et religieux ? Les sources, hostiles, sont toutes abbassides. Pour la première fois, la menace est assez grave pour mobiliser toutes les ressources d'**al-Muwaffaq**, frère du calife.\n\nAprès un long siège d'al-Mukhtara à partir de 879, la révolte est écrasée en août 883 et Ali est tué. Le coût est énorme : des dizaines de milliers de morts selon les chroniqueurs (chiffres incertains), le sud de l'Irak dévasté, le trésor vidé. Cette guerre empêche Bagdad de réagir à l'autonomie de l'Égypte et des provinces iraniennes, et épuise l'autorité califale dans le pays qui en était le cœur.",
+      "consequences": [
+        "Bassora et le sud de l'Irak, cœur agricole et commercial du califat, sont ravagés ; la prospérité du golfe Persique en souffre.",
+        "Pendant quatorze ans, Bagdad ne peut intervenir en Égypte ni en Iran, où les dynasties locales s'affermissent.",
+        "L'armée d'al-Muwaffaq, qui gagne la guerre, assoit le pouvoir de sa famille derrière le calife al-Mu'tamid.",
+        "La victoire de 883 rétablit le contrôle de l'Irak, mais le trésor est vidé et l'autorité califale durablement amoindrie."
+      ],
+      "territory": "zanj-869",
+      "sources": [
+        {
+          "label": "Wikipédia — Révolte des Zanj",
+          "url": "https://fr.wikipedia.org/wiki/Révolte_des_Zanj"
+        },
+        {
+          "label": "Wikipédia — Bassora",
+          "url": "https://fr.wikipedia.org/wiki/Bassora"
+        },
+        {
+          "label": "Hugh Kennedy, When Baghdad Ruled the Muslim World (Da Capo)"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Ali ibn Muhammad",
+          "role": "Chef de la révolte des Zanj",
+          "faction": "arabes",
+          "archetype": "general",
+          "position": [
+            47.95,
+            30.6
+          ]
+        },
+        {
+          "name": "Al-Muwaffaq",
+          "role": "Frère du calife, vainqueur des Zanj en 883",
+          "faction": "arabes",
+          "archetype": "general",
+          "position": [
+            47.9,
+            30.9
+          ]
+        }
+      ],
+      "territoryNote": "Califat réduit à l'Irak central (Bagdad, Samarra, Wasit), la Jazira (Mossoul), le Khuzestan, les Jibal et le Hedjaz ; le sud de l'Irak (Bassora, Ahwaz) est tenu par les Zanj de 871 à 883. Autonomes reconnaissant le calife (statut vassal) : Égypte et Syrie tulunides (Ibn Tulun), Aghlabides d'Ifriqiya, Samanides de Transoxiane, Tahirides du Khorassan (jusqu'en 873 puis Saffarides). Hors d'atteinte : Saffarides de Fars et du Sistan (Yaqub al-Saffar, qui menace Bagdad en 876), Alides du Tabaristan, Omeyyades de Cordoue. Rivaux : Empire byzantin de Basile Ier (offensive en Cilicie et en Italie), Khazars."
+    },
+    {
+      "id": "fatimides-909",
+      "year": 909,
+      "title": "Les Fatimides renversent les Aghlabides : un calife rival en Ifriqiya",
+      "type": "chute",
+      "location": [
+        10.1,
+        35.68
+      ],
+      "zoom": 4,
+      "summary": "En 909, des Berbères Kutama menés par le prosélyte chiite Abu Abdallah chassent les Aghlabides de Kairouan ; en 910, Ubayd Allah se proclame calife : l'Ifriqiya échappe au califat de Bagdad.",
+      "details": "Au début du Xe siècle, les Abbassides redressent leur situation. Le califat reprend l'**Égypte** aux Tulunides en 905 et s'appuie sur la dynastie persane des **Samanides**, qui écrasent les Saffarides en 900. Sous le calife **al-Muqtadir** (908-932), les vizirs gèrent un empire encore vaste.\n\nMais à l'ouest, une menace nouvelle se prépare. Des missionnaires **ismaéliens** (une branche du chiisme) prêchent au Maghreb au nom d'un imam caché, descendant du Prophète par Fatima et Ali. L'un d'eux, **Abu Abdallah al-Shi'i**, convertit les **Kutama**, des Berbères de Petite Kabylie. En 909, après des années de combats, ses troupes prennent **Kairouan** et Raqqada, et mettent fin aux Aghlabides. Le chef de la secte, **Ubayd Allah**, libéré d'une prison de Sijilmassa, est proclamé en 910 **calife** et **mahdi**, titre que les sunnites contestent. Il fonde la dynastie des **Fatimides**, qui se présente comme la seule héritière légitime du Prophète.\n\nPour la première fois, un calife concurrent, chiite, règne sur une grande province musulmane. Avec le califat omeyyade de Cordoue (proclamé en 929), l'islam compte bientôt trois califes. Les Fatimides visent explicitement l'Égypte et Bagdad.",
+      "consequences": [
+        "L'Ifriqiya sort définitivement du monde abbasside et passe à une dynastie chiite rivale, qui revendique le califat.",
+        "L'Égypte, reprise par les Abbassides en 905, devient la cible des Fatimides, qui l'atteindront en 969.",
+        "Le calife de Bagdad n'est plus le seul « commandeur des croyants » : le monde musulman se divise en trois califats vers 930.",
+        "Au Moyen-Orient, des mouvements rivaux comme les Qarmates (Bahreïn) attaquent le Hedjaz et pillent La Mecque en 930."
+      ],
+      "territory": "fatimides-909",
+      "sources": [
+        {
+          "label": "Wikipédia — Fatimides",
+          "url": "https://fr.wikipedia.org/wiki/Fatimides"
+        },
+        {
+          "label": "Wikipédia — Aghlabides",
+          "url": "https://fr.wikipedia.org/wiki/Aghlabides"
+        },
+        {
+          "label": "Wikipédia — Abû `Abd Allâh ash-Shî`î",
+          "url": "https://fr.wikipedia.org/wiki/Abu_Abdallah_al-Shi`i"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Ubayd Allah al-Mahdi",
+          "role": "Premier calife fatimide",
+          "faction": "arabes",
+          "archetype": "calife",
+          "position": [
+            10.1,
+            35.68
+          ]
+        },
+        {
+          "name": "Al-Muqtadir",
+          "role": "Calife abbasside de Bagdad",
+          "faction": "arabes",
+          "archetype": "calife",
+          "position": [
+            44.37,
+            33.31
+          ]
+        },
+        {
+          "name": "Abu Abdallah al-Shi'i",
+          "role": "Missionnaire chiite, vainqueur des Aghlabides",
+          "faction": "arabes",
+          "archetype": "general",
+          "position": [
+            10.6,
+            35.9
+          ]
+        }
+      ],
+      "territoryNote": "Califat d'al-Muqtadir : Irak (Bagdad), Jazira (Mossoul), Syrie et Égypte reprises aux Tulunides en 905, Hedjaz, Khuzestan, Jibal et Fars (anciens territoires des Saffarides) ; Khorassan, Sistan et Transoxiane gouvernés par les Samanides (Boukhara, vassal) ; Azerbaïdjan sous les Sajides (vassal). Perdu : Ifriqiya (Kairouan), tenue par les Fatimides, califat rival chiite. Hors d'atteinte : al-Andalus omeyyade de Cordoue (Abd al-Rahman III, calife en 929), Qarmates de Bahreïn, Idrisides du Maroc. Rivaux : Empire byzantin de Léon VI (Anatolie, Cilicie), Khazars."
+    },
+    {
+      "id": "bouyides-945",
+      "year": 945,
+      "title": "Les Bouyides entrent à Bagdad : le calife perd le pouvoir réel",
+      "type": "politique",
+      "location": [
+        44.37,
+        33.31
+      ],
+      "zoom": 5,
+      "summary": "En décembre 945, Mu'izz al-Dawla, chef de la dynastie iranienne des Bouyides, entre à Bagdad ; le calife garde son titre et l'autorité religieuse, mais le pouvoir politique et militaire change de mains.",
+      "details": "Dès les années 930, les califes sont devenus prisonniers de leurs officiers. En 936, un chef militaire reçoit le titre d'**émir des émirs** (*amir al-umara*), qui lui donne le commandement de l'armée et des finances. Les califes ne sont plus que des figures sacrées. En 945, Bagdad est conquise par les **Bouyides**, trois frères originaires du **Daylam**, une région montagneuse du sud de la mer Caspienne (d'où le nom de *Daylamites* pour leurs soldats). Ses frères ont déjà pris le Fars et l'Iran de l'Ouest ; le cadet **Ahmad**, qui prend le titre de **Mu'izz al-Dawla**, entre à Bagdad en décembre 945.\n\nLe calife **al-Mustakfi** est destitué (et selon les sources, mutilé), puis remplacé par **al-Muti**. Mais les Bouyides, chiites, ne suppriment pas le califat : ils ont besoin de la légitimité religieuse qu'il apporte face à leurs sujets sunnites. Le calife continue d'être nommé dans la prière, de conférer des titres, de recevoir des honneurs. Il perd tout le reste : la solde, la politique étrangère, le choix de ses ministres.\n\nC'est le tournant essentiel de toute l'histoire du califat. Jusqu'en 1258, un calife abbasside reste le chef religieux du monde sunnite, mais il ne gouverne plus par lui-même : il dépend d'émirs bouyides, puis de sultans seldjoukides, avant de reprendre un petit pouvoir au XIIe siècle.",
+      "consequences": [
+        "Le calife conserve l'autorité religieuse mais perd le pouvoir politique et militaire pour plus d'un siècle (945-1055).",
+        "Les Bouyides contrôlent l'Irak et l'Iran occidental, mais divisent leur territoire entre plusieurs émirs de la famille (Fars, Rey, Bagdad).",
+        "Le sunnisme et le chiisme coexistent : les fêtes chiites de l'Achoura et de Ghadir sont officialisées à Bagdad dès 963.",
+        "Le califat sunnite de Bagdad cohabite avec deux autres califats, fatimide (Ifriqiya puis Égypte) et omeyyade (Cordoue)."
+      ],
+      "territory": "bouyides-945",
+      "sources": [
+        {
+          "label": "Wikipédia — Bouyides",
+          "url": "https://fr.wikipedia.org/wiki/Bouyides"
+        },
+        {
+          "label": "Wikipédia — Mu`izz ad-Dawla",
+          "url": "https://fr.wikipedia.org/wiki/Mu`izz_ad-Dawla"
+        },
+        {
+          "label": "Wikipédia — Califat abbasside",
+          "url": "https://fr.wikipedia.org/wiki/Califat_abbasside"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Mu'izz al-Dawla",
+          "role": "Émir bouyide, maître de Bagdad",
+          "faction": "parthes-perses",
+          "archetype": "shah",
+          "position": [
+            44.37,
+            33.31
+          ]
+        },
+        {
+          "name": "Al-Mustakfi",
+          "role": "Calife destitué en 946",
+          "faction": "arabes",
+          "archetype": "calife",
+          "position": [
+            44.4,
+            33.3
+          ]
+        }
+      ],
+      "territoryNote": "Ce que le califat contrôle : l'Irak (Bagdad, Bassora, Wasit) et ses alentours, sous la tutelle des Bouyides ; ceux-ci tiennent aussi le Fars (Shiraz), les Jibal (Rey, Ispahan, Hamadan), le Khuzestan et le Kerman. Reconnaissent le calife sans lui obéir : Samanides de Khorassan et de Transoxiane (Boukhara, Nichapour), Hamdanides de Mossoul et d'Alep (Sayf al-Dawla), Ikhshidides d'Égypte, de Syrie du sud et du Hedjaz (statut vassal). Rivaux : Fatimides (califat chiite, Ifriqiya, Mansuriya), Omeyyades de Cordoue (califat depuis 929), Qarmates de Bahreïn, Empire byzantin de Constantin VII (Cilicie, Arménie), Ziyarides du Tabaristan, Khazars."
+    },
+    {
+      "id": "tughril-1055",
+      "year": 1055,
+      "title": "Tughril Beg entre à Bagdad : les Seldjoukides protègent le calife",
+      "type": "politique",
+      "location": [
+        44.37,
+        33.31
+      ],
+      "zoom": 4,
+      "summary": "En décembre 1055, le chef turc seldjoukide Tughril Beg entre à Bagdad, chasse les Bouyides chiites et reçoit du calife al-Qa'im le titre de sultan : les sunnites turcs deviennent la nouvelle force du califat.",
+      "details": "Les **Seldjoukides** sont des Turcs oghouz, venus des steppes d'Asie centrale. Convertis à l'islam sunnite, ils se rendent maîtres du **Khorassan** en 1038-1040 en battant les Ghaznévides à Dandanqan, puis de l'Iran. Leur chef, **Tughril Beg**, prétend défendre l'islam sunnite contre les Bouyides chiites, affaiblis par leurs luttes familiales.\n\nEn décembre 1055, Tughril entre à Bagdad et est reçu par le calife **al-Qa'im** (1031-1075), qui le délivre de la tutelle des Bouyides. Il y est salué avec le titre de **sultan** (« celui qui a l'autorité »), que le calife consacre en 1058 en lui remettant des habits d'honneur, et le chef turc épouse en 1063 une fille du calife. En 1058-1059, un général turc rebelle, **al-Basasiri**, occupe Bagdad au nom du calife fatimide du Caire : al-Qa'im est retenu prisonnier, et Tughril doit reprendre la ville.\n\nLe pacte est clair : le sultan gouverne et commande l'armée, le calife donne la légitimité religieuse. Le calife a gagné un protecteur sunnite à la place d'un protecteur chiite, mais il reste sous tutelle. Il retrouve toutefois une certaine marge d'action : le vizir al-Mawardi écrit à cette époque une théorie du pouvoir qui définit les devoirs respectifs du calife et de son protecteur.",
+      "consequences": [
+        "Le pouvoir réel passe des Bouyides aux sultans seldjoukides : le calife reste chef religieux, le sultan chef militaire et politique.",
+        "L'Irak, l'Iran, la Jazira et bientôt la Syrie sont rassemblés sous l'autorité d'une dynastie turque sunnite.",
+        "Le chiisme perd le pouvoir à Bagdad ; l'élan sunnite se renforce avec les madrasas.",
+        "Le titre de « sultan » devient officiel : pendant deux siècles, la tutelle des sultans remplace celle des émirs."
+      ],
+      "territory": "tughril-1055",
+      "sources": [
+        {
+          "label": "Wikipédia — Toghrul Beg",
+          "url": "https://fr.wikipedia.org/wiki/Toghril_Beg"
+        },
+        {
+          "label": "Wikipédia — Empire seldjoukide",
+          "url": "https://fr.wikipedia.org/wiki/Empire_seldjoukide"
+        },
+        {
+          "label": "Wikipédia — Califat abbasside",
+          "url": "https://fr.wikipedia.org/wiki/Califat_abbasside"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Tughril Beg",
+          "role": "Premier sultan seldjoukide",
+          "faction": "turcs-seldjoukides",
+          "archetype": "sultan",
+          "person": "tughril-beg",
+          "position": [
+            44.37,
+            33.31
+          ]
+        },
+        {
+          "name": "Al-Qa'im",
+          "role": "Calife abbasside (1031-1075)",
+          "faction": "arabes",
+          "archetype": "calife",
+          "position": [
+            44.4,
+            33.3
+          ]
+        }
+      ],
+      "territoryNote": "Ce que le califat contrôle : Bagdad et l'Irak, sous la tutelle de Tughril Beg, qui y tient lui-même le pouvoir ; l'Empire seldjoukide (sultan) gouverne l'Iran (Rey, Ispahan, Hamadan), le Khorassan (Nichapour, Merv), le Khuzestan et le Fars, et reconnaît le calife comme chef religieux : statut vassal. Uqaylides de Mossoul et Mirdasides d'Alep reconnaissent le calife. Rivaux : Fatimides (Égypte, Syrie du sud, parfois le Hedjaz, qui ont fait dire la prière en leur nom à Bagdad en 1059), Ghaznévides (Afghanistan, Pendjab), Qarakhanides de Transoxiane, Empire byzantin de Constantin IX (Anatolie, Arménie annexée), Almoravides au Maghreb occidental."
+    },
+    {
+      "id": "nizamiyya-1067",
+      "year": 1067,
+      "title": "Nizam al-Mulk ouvre à Bagdad la madrasa Nizamiyya",
+      "type": "réforme",
+      "location": [
+        44.37,
+        33.31
+      ],
+      "zoom": 4.5,
+      "summary": "En 1067, le vizir seldjoukide Nizam al-Mulk fonde à Bagdad la première grande madrasa : un réseau d'écoles qui forme les juges et les administrateurs sunnites et répond à la propagande chiite.",
+      "details": "Persan du Khorassan, **Nizam al-Mulk** (« l'Ordre du Royaume ») est vizir des sultans **Alp Arslan** puis **Malik-Shah** de 1063 à 1092. Il organise l'immense domaine seldjoukide : une administration persane, des gouverneurs payés par des terres (*iqta*), et une idéologie. Face aux Fatimides du Caire, qui forment des missionnaires chiites ismaéliens à al-Azhar, il veut des fonctionnaires et des juristes sunnites, formés dans une doctrine commune.\n\nIl fonde des **madrasas**, écoles de droit et de théologie financées par des fondations pieuses (*waqf*). La plus célèbre, la **Nizamiyya de Bagdad**, ouvre en 1067 ; d'autres, à Nichapour, Ispahan, Merv et Mossoul, suivent. Les étudiants y reçoivent une bourse et un logement. Le modèle n'est pas sans précédent : des écoles de ce type existaient déjà au Khorassan, et les sources divergent sur la part d'innovation. Mais Nizam al-Mulk en fait un réseau d'État à grande échelle.\n\nLe célèbre savant **al-Ghazali** y enseigne de 1091 à 1095. Nizam al-Mulk écrit aussi un traité de gouvernement, le *Siyasatnama*. Il est assassiné en 1092, sans doute par un membre de la secte des Assassins (nizarites), qu'il avait combattue. Il laisse un califat sous tutelle des sultans turcs, mais intellectuellement reconstruit autour d'un sunnisme organisé.",
+      "consequences": [
+        "Le sunnisme se dote d'un réseau d'enseignement public qui s'étend de l'Iran à la Syrie et à l'Égypte.",
+        "Bagdad redevient une capitale intellectuelle, avec la Nizamiyya et le savant al-Ghazali.",
+        "L'administration seldjoukide s'appuie sur des vizirs persans, qui assurent la continuité de l'État au-dessus des sultans turcs.",
+        "Les Fatimides et les ismaéliens, rivaux idéologiques, sont combattus par l'enseignement autant que par les armes."
+      ],
+      "territory": "nizamiyya-1067",
+      "sources": [
+        {
+          "label": "Wikipédia — Nizâm al-Mulk",
+          "url": "https://fr.wikipedia.org/wiki/Nizam_al-Mulk"
+        },
+        {
+          "label": "Wikipédia — Madrasa",
+          "url": "https://fr.wikipedia.org/wiki/Madrasa"
+        },
+        {
+          "label": "Wikipédia — Empire seldjoukide",
+          "url": "https://fr.wikipedia.org/wiki/Empire_seldjoukide"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Nizam al-Mulk",
+          "role": "Vizir des sultans seldjoukides",
+          "faction": "parthes-perses",
+          "archetype": "grand-vizir",
+          "person": "nizam-al-mulk",
+          "position": [
+            44.37,
+            33.31
+          ]
+        },
+        {
+          "name": "Alp Arslan",
+          "role": "Sultan seldjoukide (1063-1072)",
+          "faction": "turcs-seldjoukides",
+          "archetype": "sultan",
+          "position": [
+            51.68,
+            32.65
+          ]
+        }
+      ],
+      "territoryNote": "Ce que le califat contrôle : Bagdad et l'Irak, sous la tutelle du sultan seldjoukide Alp Arslan (1063-1072) ; l'Empire seldjoukide gouverne l'Iran (Rey, Ispahan), le Khorassan (Nichapour, Merv), le Khuzestan, le Fars, la Jazira et l'Arménie orientale (Ani prise en 1064) et reconnaît le calife comme chef religieux : statut vassal. Syrie du nord et Jazira : émirs reconnaissant le calife (Mossoul, Alep). Rivaux : Fatimides d'Égypte (Syrie du sud, Hedjaz), Ghaznévides, Qarakhanides de Transoxiane, Empire byzantin de Michel VII, Almoravides au Maghreb occidental."
+    },
+    {
+      "id": "manzikert-1071",
+      "year": 1071,
+      "title": "Manzikert : les Seldjoukides, protecteurs du calife, battent l'empereur byzantin",
+      "type": "bataille",
+      "location": [
+        42.53,
+        39.14
+      ],
+      "zoom": 5,
+      "summary": "Le 26 août 1071, le sultan seldjoukide Alp Arslan bat l'armée byzantine à Manzikert et capture l'empereur Romain IV : l'Anatolie s'ouvre aux Turcs.",
+      "details": "Les **Seldjoukides** de Tughril Beg et d'**Alp Arslan** sont les protecteurs sunnites du calife de Bagdad. Alp Arslan, sultan depuis 1063, cherche à étendre son empire vers l'ouest : Arménie, Anatolie, Syrie, et surtout l'Égypte des **Fatimides**, rivaux chiites. Les **Turcomans**, nomades turcs associés à lui, mènent depuis plusieurs années des raids en Asie Mineure.\n\nL'empereur **Romain IV Diogène** monte en 1071 une grande expédition pour rétablir la frontière byzantine. Alp Arslan, qui assiège les Fatimides en Syrie, revient vite. Le 26 août 1071, près de **Manzikert**, en Arménie, la rencontre tourne court : une partie de l'armée byzantine est détachée, les mercenaires se débandent, et l'arrière-garde se retire par trahison, selon les sources byzantines. Romain est capturé, puis libéré contre rançon et traité ; Alp Arslan veut surtout ses mains libres contre l'Égypte.\n\nLa bataille n'est pas décisive en soi, mais la guerre civile qui déchire Byzance (Romain est destitué et aveuglé) ouvre l'**Anatolie** aux Turcomans. En 1077, le Seldjoukide **Suleyman** fonde le sultanat de Roum, à Nicée puis à Konya. Pour le califat, la victoire d'un protecteur sunnite sur Byzance est un triomphe de prestige, mais l'Anatolie n'entre pas sous l'autorité du calife.",
+      "consequences": [
+        "L'Anatolie centrale et orientale s'ouvre aux Turcomans, puis au sultanat seldjoukide de Roum (1077).",
+        "L'Empire byzantin entre en crise ; les Comnènes appelleront à l'aide l'Occident, ce qui mène à la première croisade.",
+        "Le monde sunnite, sous tutelle seldjoukide, étend son influence vers l'ouest, mais pas sous la direction directe du calife.",
+        "Le sultan, non le calife, apparaît comme le vainqueur et le défenseur de l'islam."
+      ],
+      "territory": "manzikert-1071",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Manzikert",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Manzikert"
+        },
+        {
+          "label": "Wikipédia — Alp Arslan",
+          "url": "https://fr.wikipedia.org/wiki/Alp_Arslan"
+        },
+        {
+          "label": "Wikipédia — Empire seldjoukide",
+          "url": "https://fr.wikipedia.org/wiki/Empire_seldjoukide"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Sultanat seldjoukide (protecteur du calife)",
+          "Empire byzantin"
+        ],
+        "commanders": [
+          "Alp Arslan",
+          "Romain IV Diogène (capturé)",
+          "Andronic Doukas",
+          "Nicéphore Bryenne"
+        ],
+        "outcome": "Victoire seldjoukide ; capture de l'empereur",
+        "forces": "Très débattues : armée byzantine estimée entre 20 000 et 40 000 hommes engagés (une partie détachée vers Khliat), seldjoukides peut-être 20 000 à 30 000",
+        "losses": "Pertes byzantines probablement limitées en nombre mais catastrophiques politiquement ; chiffres inconnus"
+      },
+      "armies": [
+        {
+          "side": "Seldjoukides",
+          "from": "Ispahan",
+          "faction": "turcs-seldjoukides",
+          "path": [
+            [
+              51.68,
+              32.65
+            ],
+            [
+              48.5,
+              34.8
+            ],
+            [
+              46.29,
+              38.08
+            ],
+            [
+              44.97,
+              38.55
+            ],
+            [
+              43.5,
+              39.3
+            ],
+            [
+              42.6,
+              39.12
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Byzantins",
+          "from": "Constantinople",
+          "faction": "byzantins",
+          "path": [
+            [
+              28.98,
+              41.01
+            ],
+            [
+              32.86,
+              39.93
+            ],
+            [
+              37.02,
+              39.75
+            ],
+            [
+              41.27,
+              39.9
+            ],
+            [
+              42.45,
+              39.16
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Alp Arslan",
+          "role": "Sultan seldjoukide, vainqueur de Manzikert",
+          "faction": "turcs-seldjoukides",
+          "archetype": "sultan",
+          "position": [
+            42.6,
+            39.12
+          ]
+        },
+        {
+          "name": "Romain IV Diogène",
+          "role": "Empereur byzantin, capturé",
+          "faction": "byzantins",
+          "archetype": "empereur-byzantin",
+          "position": [
+            42.45,
+            39.16
+          ]
+        }
+      ],
+      "territoryNote": "Ce que le califat contrôle : Bagdad et l'Irak, sous le calife al-Qa'im puis al-Muqtadi, tutelle seldjoukide ; l'Empire d'Alp Arslan (Iran, Khorassan, Jazira, Arménie orientale, Azerbaïdjan, Syrie du nord à partir de 1071-1076) gouverne et reconnaît le calife comme chef religieux : statut vassal. Rivaux : Empire byzantin de Romain IV (Anatolie, Cilicie, Constantinople), Fatimides d'Égypte (Syrie du sud, Palestine), Ghaznévides, Qarakhanides de Transoxiane, Arméniens et Géorgiens, Almoravides au Maghreb."
+    },
+    {
+      "id": "jerusalem-1099",
+      "year": 1099,
+      "title": "La première croisade prend Jérusalem sous les yeux d'un califat divisé",
+      "type": "bataille",
+      "location": [
+        35.235,
+        31.778
+      ],
+      "zoom": 5,
+      "summary": "En juillet 1099, les croisés prennent Jérusalem aux Fatimides ; le calife de Bagdad, al-Mustazhir, n'a pas les moyens d'intervenir, et les sultans seldjoukides sont divisés.",
+      "details": "À la mort de **Malik-Shah** en 1092, l'Empire seldjoukide s'effondre en guerres entre princes. Le calife de Bagdad, **al-Mustazhir** (1094-1118), est sous la tutelle du sultan **Barkyaruq** et n'a ni armée ni argent. En Syrie, des émirs turcs rivaux (Alep, Damas, Mossoul) se détestent. Les **Fatimides** du Caire, qui avaient repris Jérusalem aux Turcs en 1098, observent avec intérêt l'arrivée des croisés, qu'ils croient d'abord alliés contre les Seldjoukides.\n\nLa **première croisade**, lancée en 1095 par le pape Urbain II, avance dans cette Syrie morcelée. Elle prend Nicée (1097), bat les Turcs à Dorylée, s'empare d'Antioche (1098) puis atteint **Jérusalem** en juin 1099. Après cinq semaines de siège, la ville tombe le 15 juillet. Un massacre de la population, musulmane et juive, suit ; les chiffres cités varient beaucoup selon les sources latines et arabes. Des croisés fondent le **royaume de Jérusalem**.\n\nSelon le chroniqueur Ibn al-Athir, des réfugiés conduits par le cadi **Abu Sa'd al-Harawi** viennent protester à Bagdad et interrompent le jeûne du ramadan dans la mosquée du calife : mais aucune armée ne part. Le califat n'est ni la cible, ni l'acteur de cette guerre ; il voit cependant l'islam syrien amputé de sa ville la plus sainte après La Mecque et Médine. Le sursaut ne viendra que plus tard, avec les Zengides et Saladin.",
+      "consequences": [
+        "Les États latins d'Orient (Jérusalem, Antioche, Édesse, Tripoli) s'installent sur la côte syro-palestinienne pour presque deux siècles.",
+        "Le califat de Bagdad ne réagit pas : il n'a plus de moyens militaires et ses protecteurs seldjoukides se déchirent.",
+        "Le Caire fatimide perd Jérusalem ; la reconquête musulmane viendra de Syrie, avec Zengi puis Nur al-Din et Saladin.",
+        "L'appel au jihad contre les Francs, lancé par des savants syriens, prend peu à peu de l'ampleur au XIIe siècle."
+      ],
+      "territory": "jerusalem-1099",
+      "sources": [
+        {
+          "label": "Wikipédia — Première croisade",
+          "url": "https://fr.wikipedia.org/wiki/Première_croisade"
+        },
+        {
+          "label": "Wikipédia — Siège de Jérusalem (1099)",
+          "url": "https://fr.wikipedia.org/wiki/Siège_de_Jérusalem_(1099)"
+        },
+        {
+          "label": "Wikipédia — Califat abbasside",
+          "url": "https://fr.wikipedia.org/wiki/Califat_abbasside"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Croisés (Godefroy de Bouillon, Raymond de Saint-Gilles)",
+          "Garnison fatimide de Jérusalem"
+        ],
+        "commanders": [
+          "Godefroy de Bouillon",
+          "Raymond IV de Toulouse",
+          "Iftikhar al-Dawla"
+        ],
+        "outcome": "Victoire des croisés ; Jérusalem prise le 15 juillet 1099",
+        "forces": "Environ 12 000 croisés dont 1 200 chevaliers selon les estimations ; garnison fatimide de quelques milliers d'hommes",
+        "losses": "Massacre des habitants, dont le nombre est très discuté"
+      },
+      "armies": [
+        {
+          "id": "croisade-1099",
+          "side": "Croisés",
+          "from": "Nicée",
+          "faction": "croises-latins",
+          "path": [
+            [
+              29.72,
+              40.43
+            ],
+            [
+              30.52,
+              39.78
+            ],
+            [
+              36.16,
+              36.2
+            ],
+            [
+              35.23,
+              31.78
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Garnison fatimide",
+          "from": "Le Caire",
+          "faction": "egyptiens",
+          "path": [
+            [
+              34.87,
+              31.93
+            ],
+            [
+              35.235,
+              31.778
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Godefroy de Bouillon",
+          "role": "Chef croisé, premier souverain de Jérusalem",
+          "faction": "croises-latins",
+          "archetype": "roi",
+          "position": [
+            35.23,
+            31.78
+          ]
+        },
+        {
+          "name": "Al-Mustazhir",
+          "role": "Calife abbasside (1094-1118), impuissant",
+          "faction": "arabes",
+          "archetype": "calife",
+          "position": [
+            44.37,
+            33.31
+          ]
+        }
+      ],
+      "territoryNote": "Ce que le califat contrôle : Bagdad et l'Irak, sous le calife al-Mustazhir et la tutelle du sultan Barkyaruq (Empire seldjoukide divisé entre Barkyaruq et son frère Muhammad Tapar) ; le sultan tient l'Iran (Rey, Ispahan), le Khorassan (Sanjar, Merv), le Fars, la Jazira et reconnaît le calife : statut vassal ; Syrie du nord (Alep, Damas) divisée entre émirs turcs reconnaissant le calife. Hors du califat : Fatimides d'Égypte et de Palestine (jusqu'à la chute de Jérusalem), États croisés (Antioche, Édesse, Jérusalem), Ghaznévides, Almoravides du Maghreb et d'al-Andalus ; Empire byzantin d'Alexis Ier."
+    },
+    {
+      "id": "al-nasir-1180",
+      "year": 1180,
+      "title": "Al-Nasir, dernier calife puissant, redonne un territoire à Bagdad",
+      "type": "politique",
+      "location": [
+        44.37,
+        33.31
+      ],
+      "zoom": 4,
+      "summary": "En 1180, al-Nasir devient calife : profitant du déclin des Seldjoukides, il fait de Bagdad une vraie puissance, avec une armée, une diplomatie et un ordre de chevalerie, la futuwwa.",
+      "details": "Au XIIe siècle, les sultans seldjoukides s'affaiblissent : leur empire est partagé entre princes, et les **atabeks** (régents turcs) fondent des dynasties. Les califes en profitent : **al-Muqtafi** (1136-1160) reprend le contrôle de l'Irak, puis **al-Mustadi**. **Al-Nasir li-Din Allah** (1180-1225) pousse l'avantage. Il se donne une armée, des administrateurs fidèles, une police et un réseau de renseignement.\n\nIl exploite la rivalité entre dynasties : il tire parti de l'essor de Saladin, qui a mis fin au califat fatimide du Caire en 1171 et fait dire la prière au nom d'al-Nasir en Égypte ; guerre contre le dernier sultan seldjoukide d'Irak, **Tughril III**, tué en 1194 par le chah du Khwarezm. Il réorganise la **futuwwa**, confrérie de jeunes hommes à vocation religieuse et chevaleresque, dont il devient le chef (vers 1182). Mais les sources sont surtout abbassides, donc flatteuses. Al-Nasir gère aussi un conflit avec le Khwarezm, un empire turc qui grandit au nord-est de l'Iran : en 1217, une armée khwarezmienne marche sur Bagdad avant de rebrousser chemin.\n\nCe califat renaissant a des limites claires : il tient l'Irak central et le Khuzestan, quelques points du plateau iranien, mais pas le monde musulman. Ses voisins, Ayyoubides, Khwarezm, Zengides, le reconnaissent comme autorité religieuse plus que comme souverain.",
+      "consequences": [
+        "Pour la première fois depuis 945, le calife dirige lui-même un État territorial en Irak central.",
+        "Les sultans seldjoukides d'Irak disparaissent en 1194 ; le Khwarezm prend la place de l'ancienne tutelle, plus dangereuse encore.",
+        "La futuwwa, réformée par al-Nasir, devient un instrument de pouvoir du califat dans les villes.",
+        "L'essentiel de l'islam reste hors du contrôle du calife : Ayyoubides en Égypte et en Syrie, Almohades au Maghreb."
+      ],
+      "territory": "al-nasir-1180",
+      "sources": [
+        {
+          "label": "Wikipédia — An-Nâsir li-Dîn Allâh",
+          "url": "https://fr.wikipedia.org/wiki/An-Nasir_li-Din_Allah"
+        },
+        {
+          "label": "Wikipédia — Futuwwa",
+          "url": "https://fr.wikipedia.org/wiki/Futuwwa"
+        },
+        {
+          "label": "Wikipédia — Califat abbasside",
+          "url": "https://fr.wikipedia.org/wiki/Califat_abbasside"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Al-Nasir li-Din Allah",
+          "role": "Calife abbasside (1180-1225)",
+          "faction": "arabes",
+          "archetype": "calife",
+          "person": "al-nasir",
+          "position": [
+            44.37,
+            33.31
+          ]
+        },
+        {
+          "name": "Tughril III",
+          "role": "Dernier sultan seldjoukide d'Irak, tué en 1194",
+          "faction": "turcs-seldjoukides",
+          "archetype": "sultan",
+          "position": [
+            48.51,
+            34.8
+          ]
+        }
+      ],
+      "territoryNote": "Ce que le califat contrôle réellement : l'Irak central et méridional (Bagdad, Wasit, Bassora, Koufa), le Khuzestan et des places des Jibal (Hamadan par moments). Reconnaissent le calife sans lui obéir : Ayyoubides de Saladin (Égypte, Damas, Alep, Yémen, Hedjaz), Zengides de Mossoul, Seldjoukides de Roum à Konya, Ghourides d'Afghanistan, Almohades du Maghreb (qui revendiquent aussi le titre califal). Hors du califat : Khwarezm (chahs Tekish et Muhammad, Iran du nord et Khorassan), États croisés (Jérusalem, Antioche, Tripoli), Empire byzantin de Manuel Ier puis des Anges, Géorgie, Qara Khitai."
+    },
+    {
+      "id": "hattin-1187",
+      "year": 1187,
+      "title": "Hattin : Saladin, qui reconnaît le calife, reprend Jérusalem aux croisés",
+      "type": "bataille",
+      "location": [
+        35.45,
+        32.8
+      ],
+      "zoom": 5,
+      "summary": "Le 4 juillet 1187, Saladin écrase l'armée du royaume de Jérusalem à Hattin ; il reprend Jérusalem en octobre. Il agit comme sultan ayyoubide, mais fait prier au nom du calife abbasside.",
+      "details": "**Saladin** (Salah al-Din), un Kurde, est d'abord officier au service de l'atabek Nur al-Din. Vizir du Caire en 1169, il renverse en 1171 le califat fatimide et fait dire la prière au nom du calife abbasside, ce qui réunifie, au moins en apparence, l'Égypte et Bagdad. Devenu maître de l'Égypte et de la Syrie, il fonde la dynastie des **Ayyoubides** et prend le titre de sultan. Sa légitimité religieuse repose sur le **jihad** contre les États latins et sur la reconnaissance du calife. Mais Bagdad n'est pas son suzerain effectif : al-Nasir lui accorde des honneurs, sans lui envoyer de troupes.\n\nEn 1187, Saladin attire l'armée du royaume de **Jérusalem**, conduite par le roi **Guy de Lusignan**, loin de ses points d'eau. Le 4 juillet 1187, aux **Cornes de Hattin**, près du lac de Tibériade, les croisés, assoiffés et encerclés, sont écrasés ; leur relique la plus précieuse, la Vraie Croix, est capturée. Guy est prisonnier. Jérusalem se rend le 2 octobre 1187, avec relativement peu de violences, et Saladin y entre.\n\nLa victoire de Hattin conduit à la **troisième croisade**. Pour le califat, c'est un succès par procuration : son nom est prononcé dans toutes les mosquées de la reconquête, mais le vrai vainqueur est le sultan, pas le calife. La carte du califat ne change pas : ce que l'on peut tracer, ce sont des États qui le reconnaissent.",
+      "consequences": [
+        "Jérusalem repasse à l'islam sunnite en 1187 et y reste jusqu'en 1229, puis définitivement après 1244.",
+        "Le royaume latin est réduit à une étroite bande côtière (Tyr, Acre jusqu'en 1291, après la troisième croisade).",
+        "L'Égypte, la Syrie et la Jazira forment un ensemble ayyoubide qui reconnaît le calife sans dépendre de lui.",
+        "L'autorité du calife est surtout symbolique : la défense de l'islam face aux Francs est aux mains des sultans."
+      ],
+      "territory": "hattin-1187",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Hattin",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Hattin"
+        },
+        {
+          "label": "Wikipédia — Saladin",
+          "url": "https://fr.wikipedia.org/wiki/Saladin"
+        },
+        {
+          "label": "Wikipédia — Ayyoubides",
+          "url": "https://fr.wikipedia.org/wiki/Ayyoubides"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Ayyoubides (Saladin), qui reconnaissent le calife abbasside",
+          "Royaume de Jérusalem"
+        ],
+        "commanders": [
+          "Saladin",
+          "Guy de Lusignan (capturé)",
+          "Raymond III de Tripoli"
+        ],
+        "outcome": "Victoire de Saladin ; capture du roi Guy et de la Vraie Croix",
+        "forces": "Estimations très variables : environ 20 000 à 30 000 hommes de chaque côté selon les sources, dont une cavalerie lourde croisée d'environ 1 200 chevaliers",
+        "losses": "Armée croisée presque anéantie ou capturée ; pertes ayyoubides plus faibles"
+      },
+      "armies": [
+        {
+          "id": "saladin",
+          "side": "Ayyoubides (Saladin)",
+          "from": "Damas",
+          "faction": "mamelouks",
+          "path": [
+            [
+              36.29,
+              33.51
+            ],
+            [
+              35.53,
+              32.79
+            ],
+            [
+              35.45,
+              32.8
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Royaume de Jérusalem",
+          "from": "Acre",
+          "faction": "croises-latins",
+          "path": [
+            [
+              35.07,
+              32.93
+            ],
+            [
+              35.28,
+              32.75
+            ],
+            [
+              35.45,
+              32.8
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Saladin",
+          "role": "Sultan ayyoubide, vainqueur de Hattin",
+          "faction": "mamelouks",
+          "archetype": "sultan",
+          "position": [
+            35.45,
+            32.8
+          ]
+        },
+        {
+          "name": "Guy de Lusignan",
+          "role": "Roi de Jérusalem, capturé",
+          "faction": "croises-latins",
+          "archetype": "roi",
+          "position": [
+            35.4,
+            32.78
+          ]
+        }
+      ],
+      "territoryNote": "Ce que le califat contrôle directement : l'Irak central (Bagdad, Wasit, Bassora, Koufa) et le Khuzestan, sous al-Nasir. L'Empire ayyoubide de Saladin (Égypte, Syrie avec Damas et Alep, Jazira avec Mossoul en vassalité, Yémen, Hedjaz) fait dire la prière au nom du calife : statut vassal, sans soumission réelle ; les Zengides de Mossoul et les Seldjoukides de Roum à Konya le reconnaissent aussi. Hors du califat : États croisés (Jérusalem, Antioche, Tripoli), Almohades au Maghreb (Marrakech), Khwarezm de Tekish à l'est, Empire byzantin d'Isaac II, Géorgie, Ghourides d'Afghanistan."
+    },
+    {
+      "id": "bagdad-1258",
+      "year": 1258,
+      "title": "Les Mongols prennent Bagdad : la fin du califat abbasside",
+      "type": "chute",
+      "location": [
+        44.4,
+        33.3
+      ],
+      "zoom": 5,
+      "summary": "En février 1258, l'armée mongole d'Houlagou prend et pille Bagdad ; le calife al-Musta'sim est tué : cinq siècles de califat abbasside à Bagdad s'achèvent.",
+      "details": "Au XIIIe siècle, l'**Empire mongol** étend sa domination sur l'Asie. Le frère du Grand Khan Möngke, **Houlagou** (Hülegü), reçoit pour mission de soumettre l'Iran et l'Irak. Il détruit la secte des Assassins en 1256, puis exige du calife **al-Musta'sim** (1242-1258) qu'il se soumette et démolisse ses murailles. Le calife, mal informé et mal conseillé, refuse ; il s'appuie sur la réputation de Bagdad. Son armée, réduite, est surtout composée de troupes arabes et turques peu payées. Le vizir **Ibn al-Alqami** est accusé par les chroniques d'avoir trahi, mais la thèse reste débattue.\n\nHoulagou lance plusieurs armées sur Bagdad à la fin de 1257. Les forces du calife sont battues en rase campagne, une digue est rompue pour inonder leur camp. Le siège commence le 29 janvier 1258, des catapultes et des ingénieurs chinois bombardent les murailles. Le 10 février, le calife se rend. La ville est pillée pendant une semaine, ses bibliothèques et ses palais détruits. Le nombre de morts est très discuté : de quelques dizaines de milliers à plus d'un million selon les sources, ces derniers chiffres étant très exagérés.\n\nAl-Musta'sim est exécuté, selon une tradition enroulé dans un tapis et piétiné par des chevaux ; d'autres récits le font mourir de faim. En 1261, les Mamelouks installent au Caire un descendant abbasside, sans pouvoir réel, qui perpétuera le titre jusqu'en 1517.",
+      "consequences": [
+        "Le califat abbasside de Bagdad disparaît ; Houlagou fonde l'Ilkhanat, d'abord païen ou bouddhiste, qui gouverne l'Iran et l'Irak.",
+        "Bagdad est ravagée et perd pour toujours son rang de plus grande ville du monde musulman.",
+        "Les Mamelouks d'Égypte, vainqueurs des Mongols à Aïn Djalout en 1260, deviennent les protecteurs de l'islam sunnite et accueillent un « calife » abbasside au Caire.",
+        "Les canaux d'irrigation de la Mésopotamie, déjà fragilisés, se dégradent ; la région connaît un long déclin agricole."
+      ],
+      "territory": "bagdad-1258",
+      "sources": [
+        {
+          "label": "Wikipédia — Siège de Bagdad (1258)",
+          "url": "https://fr.wikipedia.org/wiki/Siège_de_Bagdad_(1258)"
+        },
+        {
+          "label": "Wikipédia — Houlagou",
+          "url": "https://fr.wikipedia.org/wiki/Houlagou"
+        },
+        {
+          "label": "Wikipédia — Al-Musta`sim",
+          "url": "https://fr.wikipedia.org/wiki/Al-Musta`sim"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Empire mongol (armée de Houlagou)",
+          "Califat abbasside"
+        ],
+        "commanders": [
+          "Houlagou",
+          "Kitbuqa",
+          "Baïdju",
+          "al-Musta'sim",
+          "Aybak Dawatdar"
+        ],
+        "outcome": "Bagdad prise et pillée ; fin du califat abbasside de Bagdad",
+        "forces": "Une centaine de milliers de Mongols et auxiliaires contre une armée abbasside réduite",
+        "losses": "De quelques dizaines de milliers à un million de morts selon les sources, sans doute très exagérés"
+      },
+      "armies": [
+        {
+          "side": "Mongols (Houlagou)",
+          "faction": "mongols",
+          "path": [
+            [
+              50.58,
+              36.44
+            ],
+            [
+              48.5,
+              34.8
+            ],
+            [
+              47.1,
+              34.3
+            ],
+            [
+              45.4,
+              34.35
+            ],
+            [
+              44.4,
+              33.3
+            ]
+          ],
+          "strength": 3,
+          "winner": true,
+          "id": "houlagou"
+        },
+        {
+          "side": "Califat abbasside",
+          "from": "Irak",
+          "faction": "arabes",
+          "path": [
+            [
+              43.5,
+              33.4
+            ],
+            [
+              44.4,
+              33.3
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Al-Musta'sim",
+          "role": "Dernier calife abbasside de Bagdad",
+          "faction": "arabes",
+          "archetype": "calife",
+          "person": "al-mustasim",
+          "position": [
+            44.4,
+            33.3
+          ]
+        },
+        {
+          "name": "Houlagou",
+          "role": "Prince mongol, conquérant de Bagdad",
+          "faction": "mongols",
+          "archetype": "khan",
+          "position": [
+            44.3,
+            33.4
+          ]
+        }
+      ],
+      "territoryNote": "Ce que le califat contrôle en 1258 : Bagdad et ses abords irakiens (Sawad, Hilla, Wasit) seulement ; l'autorité du calife ne dépasse plus guère l'Irak central. Reconnaissent encore le calife sans lui obéir : Ayyoubides de Syrie (Alep, Damas), Mamelouks d'Égypte (depuis 1250), Seldjoukides de Roum (vassaux des Mongols). Hors du califat : Empire mongol de Houlagou (Iran, Khorassan, Azerbaïdjan, Mossoul en cours de soumission), États croisés réduits à la côte (Acre), Khwarezm détruit (1231), Almohades puis Hafsides et Mérinides au Maghreb."
+    }
+  ]
+}

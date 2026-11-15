@@ -1034,7 +1034,8 @@
     "founded": 1000,
     "rank": 3,
     "empires": [
-      "rome"
+      "rome",
+      "abbassides"
     ]
   },
   {
@@ -2405,7 +2406,8 @@
       "mongols",
       "alexandre",
       "perse-achemenide",
-      "omeyyades"
+      "omeyyades",
+      "abbassides"
     ]
   },
   {
@@ -2718,7 +2720,8 @@
     "founded": -100,
     "rank": 3,
     "empires": [
-      "china"
+      "china",
+      "abbassides"
     ]
   },
   {
@@ -2832,7 +2835,8 @@
     "rank": 2,
     "empires": [
       "mongols",
-      "omeyyades"
+      "omeyyades",
+      "abbassides"
     ]
   },
   {
@@ -3169,7 +3173,20 @@
     "rank": 1,
     "empires": [
       "mongols",
-      "ottomans"
+      "ottomans",
+      "abbassides"
+    ],
+    "capitalOf": [
+      {
+        "empire": "abbassides",
+        "from": 762,
+        "to": 835
+      },
+      {
+        "empire": "abbassides",
+        "from": 892,
+        "to": 1258
+      }
     ]
   },
   {
@@ -5093,7 +5110,8 @@
     "empires": [
       "alexandre",
       "perse-achemenide",
-      "omeyyades"
+      "omeyyades",
+      "abbassides"
     ]
   },
   {
@@ -7512,7 +7530,15 @@
     "founded": 638,
     "rank": 2,
     "empires": [
-      "omeyyades"
+      "omeyyades",
+      "abbassides"
+    ],
+    "capitalOf": [
+      {
+        "empire": "abbassides",
+        "from": 750,
+        "to": 761
+      }
     ]
   },
   {
@@ -7530,7 +7556,8 @@
     "founded": 702,
     "rank": 3,
     "empires": [
-      "omeyyades"
+      "omeyyades",
+      "abbassides"
     ]
   },
   {
@@ -7626,7 +7653,8 @@
     "founded": -500,
     "rank": 2,
     "empires": [
-      "omeyyades"
+      "omeyyades",
+      "abbassides"
     ]
   },
   {
@@ -7812,6 +7840,157 @@
     "rank": 3,
     "empires": [
       "omeyyades"
+    ]
+  },
+  {
+    "id": "samarra",
+    "modern": "Samarra, Irak",
+    "names": [
+      {
+        "name": "Samarra"
+      }
+    ],
+    "coords": [
+      43.874,
+      34.198
+    ],
+    "founded": 836,
+    "rank": 2,
+    "capitalOf": [
+      {
+        "empire": "abbassides",
+        "from": 836,
+        "to": 891
+      }
+    ]
+  },
+  {
+    "id": "raqqa",
+    "modern": "Raqqa, Syrie",
+    "names": [
+      {
+        "name": "Raqqa"
+      }
+    ],
+    "coords": [
+      39.01,
+      35.95
+    ],
+    "founded": 772,
+    "rank": 2
+  },
+  {
+    "id": "mosul",
+    "modern": "Mossoul, Irak",
+    "names": [
+      {
+        "name": "Mossoul"
+      }
+    ],
+    "coords": [
+      43.13,
+      36.34
+    ],
+    "founded": -700,
+    "rank": 2
+  },
+  {
+    "id": "nishapur",
+    "modern": "Nichapour, Iran",
+    "names": [
+      {
+        "name": "Nichapour"
+      }
+    ],
+    "coords": [
+      58.8,
+      36.21
+    ],
+    "founded": 250,
+    "rank": 2
+  },
+  {
+    "id": "isfahan",
+    "modern": "Ispahan, Iran",
+    "names": [
+      {
+        "name": "Ispahan"
+      }
+    ],
+    "coords": [
+      51.68,
+      32.65
+    ],
+    "founded": 300,
+    "rank": 2
+  },
+  {
+    "id": "rayy",
+    "modern": "Rey (près de Téhéran), Iran",
+    "names": [
+      {
+        "name": "Rey"
+      }
+    ],
+    "coords": [
+      51.43,
+      35.59
+    ],
+    "founded": -500,
+    "rank": 2
+  },
+  {
+    "id": "tarsus",
+    "modern": "Tarse, Turquie",
+    "names": [
+      {
+        "name": "Tarse"
+      }
+    ],
+    "coords": [
+      34.89,
+      36.92
+    ],
+    "founded": -1000,
+    "rank": 3,
+    "empires": [
+      "abbassides"
+    ]
+  },
+  {
+    "id": "amorium",
+    "modern": "Amorium (Hisarköy), Turquie",
+    "names": [
+      {
+        "name": "Amorium"
+      }
+    ],
+    "coords": [
+      31.28,
+      38.98
+    ],
+    "founded": -300,
+    "rank": 3,
+    "empires": [
+      "abbassides"
+    ]
+  },
+  {
+    "id": "hattin",
+    "modern": "Cornes de Hattin, Israël",
+    "names": [
+      {
+        "name": "Hattin"
+      }
+    ],
+    "coords": [
+      35.45,
+      32.8
+    ],
+    "founded": 1000,
+    "rank": 3,
+    "empires": [
+      "abbassides"
     ]
   }
 ]
