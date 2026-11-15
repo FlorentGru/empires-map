@@ -1,0 +1,228 @@
+[
+  {
+    "id": "dinar-epigraphique",
+    "name": "Le dinar d'or épigraphique",
+    "year": 697,
+    "approx": true,
+    "place": "Damas",
+    "at": [
+      36.29,
+      33.51
+    ],
+    "inventor": "Abd al-Malik",
+    "category": "monnaie",
+    "description": "Vers 696-697, le calife Abd al-Malik fait frapper une pièce d'or sans portrait, dont le décor est uniquement fait d'inscriptions arabes, avec la profession de foi musulmane. Son poids imite celui du solidus byzantin, que le dinar remplace. C'est une innovation de style, et non l'invention de la monnaie d'or : les Arabes avaient longtemps utilisé les pièces byzantines et perses, parfois copiées avec des images.",
+    "impact": "Une monnaie unique et identifiable circule de l'Atlantique à l'Indus. Elle affirme l'identité de l'État musulman face à Byzance.",
+    "sources": [
+      {
+        "label": "Wikipédia — Dinar",
+        "url": "https://fr.wikipedia.org/wiki/Dinar"
+      },
+      {
+        "label": "Wikipédia — Abd al-Malik ibn Marwan",
+        "url": "https://fr.wikipedia.org/wiki/Abd_al-Malik_ibn_Marwan"
+      }
+    ]
+  },
+  {
+    "id": "arabisation-diwan",
+    "name": "L'arabe, langue de l'administration",
+    "year": 700,
+    "approx": true,
+    "place": "Damas, Bassora, Fustat",
+    "at": [
+      36.29,
+      33.51
+    ],
+    "inventor": "Abd al-Malik et al-Hajjaj",
+    "category": "administration",
+    "description": "Au départ, les conquérants gardent les bureaux en place : grec en Syrie et en Égypte, pehlevi (moyen-perse) en Iran. Autour de 700, sous Abd al-Malik et son gouverneur al-Hajjaj, les registres du fisc passent à l'arabe, à Damas, en Irak puis en Égypte (vers 706). Les idées de bureaux (diwan) et de scribes héritent des Sassanides et de Byzance : l'innovation est le changement de langue.",
+    "impact": "L'État devient arabe et musulman, et l'arabe devient peu à peu la langue de millions de sujets, de la Syrie à l'Égypte et à l'Irak.",
+    "sources": [
+      {
+        "label": "Wikipédia — Califat omeyyade",
+        "url": "https://fr.wikipedia.org/wiki/Califat_omeyyade"
+      },
+      {
+        "label": "Wikipédia — Abd al-Malik ibn Marwan",
+        "url": "https://fr.wikipedia.org/wiki/Abd_al-Malik_ibn_Marwan"
+      }
+    ]
+  },
+  {
+    "id": "dome-du-rocher",
+    "name": "Le Dôme du Rocher",
+    "year": 691,
+    "approx": true,
+    "place": "Jérusalem",
+    "at": [
+      35.235,
+      31.778
+    ],
+    "inventor": "Abd al-Malik",
+    "category": "architecture",
+    "description": "Construit vers 691-692 sur l'esplanade du Temple, le Dôme du Rocher est un sanctuaire octogonal sous une coupole de bois dorée, entouré de colonnades. Son plan évoque les sanctuaires chrétiens byzantins, et ses mosaïques à motifs de végétaux et de joyaux furent probablement réalisées par des artisans locaux formés à Byzance. L'originalité vient de ses longues inscriptions coraniques, parmi les plus anciennes connues.",
+    "impact": "C'est le plus ancien grand monument de l'islam encore debout : un décor sans image et un texte sacré affichés comme signature du pouvoir.",
+    "sources": [
+      {
+        "label": "Wikipédia — Dôme du Rocher",
+        "url": "https://fr.wikipedia.org/wiki/Dôme_du_Rocher"
+      }
+    ]
+  },
+  {
+    "id": "mosquee-omeyyades",
+    "name": "La Grande Mosquée de Damas",
+    "year": 706,
+    "approx": true,
+    "place": "Damas",
+    "at": [
+      36.306,
+      33.512
+    ],
+    "inventor": "al-Walid Ier",
+    "category": "architecture",
+    "description": "Commencée vers 706 par al-Walid Ier à l'emplacement d'une basilique dédiée à saint Jean-Baptiste, elle reprend l'enceinte d'un ancien temple romain et ses tours d'angle. La salle de prière a trois nefs parallèles à la façade et un transept central. Ses vastes mosaïques de paysages et de palais, sans êtres vivants, furent faites par des artisans venus du monde byzantin, selon la tradition.",
+    "impact": "Elle fixe le modèle de la grande mosquée à cour et portiques, imité de l'Espagne à l'Asie centrale.",
+    "sources": [
+      {
+        "label": "Wikipédia — Mosquée des Omeyyades",
+        "url": "https://fr.wikipedia.org/wiki/Mosquée_des_Omeyyades"
+      }
+    ]
+  },
+  {
+    "id": "chateaux-du-desert",
+    "name": "Les châteaux du désert",
+    "year": 715,
+    "approx": true,
+    "place": "Qusayr Amra (Jordanie)",
+    "at": [
+      36.58,
+      31.8
+    ],
+    "inventor": "al-Walid Ier ou al-Walid II",
+    "category": "architecture",
+    "description": "Dans la steppe de Syrie et de Jordanie, les califes et princes omeyyades bâtissent des résidences de plaisance et des fermes fortifiées : Qusayr Amra, Qasr al-Hayr, Khirbat al-Mafjar. On y trouve des bains inspirés des thermes romains, de grandes fresques (chasse, danse, nus) et des sculptures. Qusayr Amra est datée du début du VIIIᵉ siècle, par al-Walid Ier ou plus tard par al-Walid II : les historiens hésitent.",
+    "impact": "Ils montrent une cour omeyyade qui mêle héritages romain, byzantin et sassanide, et un mécénat princier en dehors des villes.",
+    "sources": [
+      {
+        "label": "Wikipédia — Qusayr Amra",
+        "url": "https://fr.wikipedia.org/wiki/Qusayr_Amra"
+      }
+    ]
+  },
+  {
+    "id": "barid-poste",
+    "name": "La poste d'État (barid)",
+    "year": 690,
+    "approx": true,
+    "place": "Damas",
+    "at": [
+      36.29,
+      33.51
+    ],
+    "inventor": "Muawiya, réorganisé par Abd al-Malik",
+    "category": "administration",
+    "description": "Le barid est un réseau de relais de poste montés, qui permet au calife de recevoir les nouvelles et d'envoyer des ordres dans les provinces. Il est inspiré du cursus publicus romain-byzantin et de la poste perse, déjà organisés avant les Arabes. Muawiya l'aurait mis en place, et Abd al-Malik l'améliore vers 690, avec des relais en bordure des routes et des agents qui surveillent aussi les gouverneurs.",
+    "impact": "Une diffusion rapide de l'information tient ensemble un empire qui s'étend sur plus de 8 000 kilomètres, et permet de surveiller ses gouverneurs.",
+    "sources": [
+      {
+        "label": "Wikipédia — Califat omeyyade",
+        "url": "https://fr.wikipedia.org/wiki/Califat_omeyyade"
+      },
+      {
+        "label": "Wikipédia — Poste",
+        "url": "https://fr.wikipedia.org/wiki/Poste"
+      }
+    ]
+  },
+  {
+    "id": "minaret",
+    "name": "Le minaret",
+    "year": 673,
+    "approx": true,
+    "place": "Fustat (Égypte)",
+    "at": [
+      31.24,
+      30.04
+    ],
+    "inventor": "Maslama ibn Mukhallad",
+    "category": "architecture",
+    "description": "À l'origine, l'appel à la prière se faisait du toit de la mosquée. Selon la tradition, le gouverneur d'Égypte Maslama ibn Mukhallad fait ajouter vers 673 quatre tours aux coins de la mosquée d'Amr, à Fustat. Les historiens discutent l'origine de cette forme : tours de temples romains (à Damas), clochers des églises syriennes ou tours de guet. Les plus anciens minarets conservés datent du VIIIᵉ siècle.",
+    "impact": "La tour d'où retentit l'appel à la prière devient le signe de toute mosquée, du Maghreb à l'Asie centrale.",
+    "sources": [
+      {
+        "label": "Wikipédia — Minaret",
+        "url": "https://fr.wikipedia.org/wiki/Minaret"
+      }
+    ]
+  },
+  {
+    "id": "points-diacritiques",
+    "name": "Les points de l'écriture arabe",
+    "year": 700,
+    "approx": true,
+    "place": "Bassora et Koufa",
+    "at": [
+      47.78,
+      30.5
+    ],
+    "inventor": "Abu al-Aswad al-Du'ali, Nasr ibn Asim",
+    "category": "ecriture",
+    "description": "L'écriture arabe ancienne confondait plusieurs lettres dont la forme ne varie que par des points, et ne notait pas les voyelles brèves. Selon la tradition, Abu al-Aswad al-Du'ali met au point vers 670 un système de points pour les voyelles ; vers 700, sous al-Hajjaj, des savants de Bassora ajoutent les points qui distinguent les consonnes. Le système sera simplifié plus tard au VIIIᵉ siècle par al-Khalil.",
+    "impact": "Le texte du Coran, et plus tard toute la littérature, peut être lu sans ambiguïté, ce qui aide à la diffusion de l'arabe.",
+    "sources": [
+      {
+        "label": "Wikipédia — Alphabet arabe",
+        "url": "https://fr.wikipedia.org/wiki/Alphabet_arabe"
+      },
+      {
+        "label": "Wikipédia — Abu al-Aswad al-Du'ali",
+        "url": "https://fr.wikipedia.org/wiki/Abu_al-Aswad_al-Du%27ali"
+      }
+    ]
+  },
+  {
+    "id": "bimaristan-damas",
+    "name": "L'hôpital de Damas",
+    "year": 707,
+    "approx": true,
+    "place": "Damas",
+    "at": [
+      36.3,
+      33.51
+    ],
+    "inventor": "al-Walid Ier",
+    "category": "medecine",
+    "description": "Selon la tradition, le calife al-Walid Ier fonde vers 706-707 à Damas un hôpital (bimaristan) pour les malades et les aveugles, avec des médecins payés et des lépreux isolés. L'idée vient de l'hôpital chrétien byzantin (xenon) et de l'école de médecine de Gundishapur, en Iran. Les détails de cette fondation sont connus par des sources tardives et leur date est incertaine.",
+    "impact": "Les hôpitaux publics gratuits deviennent une institution majeure du monde musulman, avec des médecins et des soins organisés.",
+    "sources": [
+      {
+        "label": "Wikipédia — Bimaristan",
+        "url": "https://fr.wikipedia.org/wiki/Bimaristan"
+      }
+    ]
+  },
+  {
+    "id": "mihrab",
+    "name": "Le mihrab",
+    "year": 707,
+    "approx": true,
+    "place": "Médine",
+    "at": [
+      39.61,
+      24.47
+    ],
+    "inventor": "Omar ibn Abd al-Aziz",
+    "category": "architecture",
+    "description": "Le mihrab est la niche creusée dans le mur de la mosquée pour indiquer la direction de La Mecque. Selon la tradition, le futur calife Omar II, alors gouverneur de Médine, fait aménager le premier mihrab concave dans la mosquée du Prophète lors de sa reconstruction (vers 707-709). Le motif de la niche existe déjà dans les églises et les temples antiques : il est adapté au culte musulman, avec un nouveau sens.",
+    "impact": "Cette niche devient l'élément central du décor de toute mosquée, signe discret de l'orientation de la prière.",
+    "sources": [
+      {
+        "label": "Wikipédia — Mihrab",
+        "url": "https://fr.wikipedia.org/wiki/Mihrab"
+      }
+    ]
+  }
+]

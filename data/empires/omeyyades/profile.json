@@ -1,0 +1,676 @@
+{
+  "empire": "omeyyades",
+  "periods": [
+    {
+      "id": "fondation",
+      "name": "Les Sufyanides",
+      "start": 661,
+      "end": 684,
+      "population": {
+        "total": {
+          "value": 20000000,
+          "low": 12000000,
+          "high": 30000000,
+          "year": 670,
+          "note": "Ordre de grandeur reconstruit : aucun recensement général.",
+          "source": {
+            "label": "Wikipédia : Califat omeyyade",
+            "url": "https://fr.wikipedia.org/wiki/Califat_omeyyade"
+          }
+        },
+        "cities": [
+          {
+            "name": "Damas",
+            "population": {
+              "value": 60000,
+              "low": 40000,
+              "high": 100000,
+              "year": 670,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Damas",
+                "url": "https://fr.wikipedia.org/wiki/Damas"
+              }
+            }
+          },
+          {
+            "name": "Bassora",
+            "population": {
+              "value": 100000,
+              "low": 60000,
+              "high": 200000,
+              "year": 670,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Bassora",
+                "url": "https://fr.wikipedia.org/wiki/Bassora"
+              }
+            }
+          },
+          {
+            "name": "Koufa",
+            "population": {
+              "value": 100000,
+              "low": 50000,
+              "high": 150000,
+              "year": 670,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Koufa",
+                "url": "https://fr.wikipedia.org/wiki/Koufa"
+              }
+            }
+          },
+          {
+            "name": "Fustat",
+            "population": {
+              "value": 50000,
+              "low": 30000,
+              "high": 100000,
+              "year": 670,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Fustat",
+                "url": "https://fr.wikipedia.org/wiki/Fustat"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Blé et huile de Syrie",
+          "Lin et blé d'Égypte",
+          "Dattes et riz d'Irak",
+          "Chevaux et chameaux d'Arabie"
+        ],
+        "currency": "Pièces byzantines d'or et drachmes perses d'argent ; imitations frappées à Damas et en Irak.",
+        "taxation": "Impôt foncier (kharaj), capitation des non-musulmans (jizya), cinquième du butin pour le calife.",
+        "trade": "Caravanes d'Arabie et de Syrie, ports de Syrie et d'Égypte, golfe Persique par Bassora."
+      },
+      "army": {
+        "size": {
+          "value": 60000,
+          "low": 30000,
+          "high": 100000,
+          "year": 670,
+          "note": "Soldats inscrits au registre (diwan) : ordre de grandeur.",
+          "source": {
+            "label": "Wikipédia : Califat omeyyade",
+            "url": "https://fr.wikipedia.org/wiki/Califat_omeyyade"
+          }
+        },
+        "composition": "Cavalerie et infanterie arabes, flotte de guerre naissante en Méditerranée.",
+        "recruitment": "Tribus arabes de Syrie, d'Irak et d'Égypte, payées par un registre de soldes (diwan).",
+        "famousUnits": [
+          "Armée de Syrie (ahl al-Sham)",
+          "Cavaliers de Koufa et de Bassora"
+        ],
+        "innovations": [
+          "Flotte de guerre arabe",
+          "Villes-camps de garnison (amsar)",
+          "Raids annuels vers l'Anatolie"
+        ]
+      },
+      "politics": {
+        "regime": "Califat devenu héréditaire de fait, fondé sur le clan des Quraych et le pouvoir de Muawiya.",
+        "head": "Calife (Muawiya Ier, Yazid Ier, Muawiya II).",
+        "succession": "Le calife désigne son fils (Yazid en 676-680), contre l'idée d'un choix par consultation.",
+        "institutions": "Cour de Damas, conseil des chefs de tribus, gouverneurs, registre des soldes.",
+        "administration": "Gouverneurs de Syrie, d'Égypte, d'Irak (Koufa, Bassora) et du Khorassan ; bureaux hérités de Byzance et de la Perse.",
+        "provinces": {
+          "value": 5,
+          "low": 4,
+          "high": 6,
+          "year": 670,
+          "unit": "gouvernorats",
+          "note": "Grands gouvernorats ; l'organisation évolue.",
+          "source": {
+            "label": "Wikipédia : Califat omeyyade",
+            "url": "https://fr.wikipedia.org/wiki/Califat_omeyyade"
+          }
+        },
+        "law": "Droit en formation : coutumes locales, décisions des juges (qadis) et du calife."
+      },
+      "society": {
+        "religions": [
+          "Islam",
+          "Christianisme (Églises grecque, syriaque, copte)",
+          "Judaïsme",
+          "Zoroastrisme"
+        ],
+        "languages": [
+          "Arabe",
+          "Grec",
+          "Syriaque",
+          "Copte",
+          "Pehlevi (moyen-perse)"
+        ],
+        "structure": "Arabes musulmans dominants, convertis non arabes (mawali), chrétiens, juifs et zoroastriens protégés (dhimmis).",
+        "women": "Femmes de l'élite influentes dans la famille et la politique ; les règles de la vie sociale se fixent peu à peu."
+      },
+      "culture": {
+        "inventions": [
+          "Villes-camps (Koufa, Bassora, Fustat)",
+          "Flotte arabe",
+          "Premiers minarets (Fustat, vers 673)"
+        ],
+        "works": [
+          "Mosquée de Kairouan (vers 670)",
+          "Mosquée d'Amr à Fustat",
+          "Premières mosquées de Koufa et de Bassora"
+        ],
+        "scholars": [
+          "Abu al-Aswad al-Du'ali (grammairien)",
+          "Ibn Abbas (exégète)",
+          "Hasan al-Basri (prédicateur)"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Pistes de caravanes d'Arabie et de Mésopotamie, villes-camps, ports de Syrie et d'Égypte ; premiers relais postaux."
+      },
+      "legacy": "Muawiya fonde un pouvoir stable à Damas, mais laisse un califat où la fracture entre partisans d'Ali et autres ne guérit pas."
+    },
+    {
+      "id": "marwanides",
+      "name": "Deuxième fitna et Abd al-Malik",
+      "start": 684,
+      "end": 705,
+      "population": {
+        "total": {
+          "value": 25000000,
+          "low": 15000000,
+          "high": 35000000,
+          "year": 700,
+          "note": "Ordre de grandeur reconstruit : aucun recensement général.",
+          "source": {
+            "label": "Wikipédia : Califat omeyyade",
+            "url": "https://fr.wikipedia.org/wiki/Califat_omeyyade"
+          }
+        },
+        "cities": [
+          {
+            "name": "Damas",
+            "population": {
+              "value": 100000,
+              "low": 60000,
+              "high": 150000,
+              "year": 700,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Damas",
+                "url": "https://fr.wikipedia.org/wiki/Damas"
+              }
+            }
+          },
+          {
+            "name": "Bassora",
+            "population": {
+              "value": 150000,
+              "low": 80000,
+              "high": 250000,
+              "year": 700,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Bassora",
+                "url": "https://fr.wikipedia.org/wiki/Bassora"
+              }
+            }
+          },
+          {
+            "name": "Koufa",
+            "population": {
+              "value": 100000,
+              "low": 60000,
+              "high": 150000,
+              "year": 700,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Koufa",
+                "url": "https://fr.wikipedia.org/wiki/Koufa"
+              }
+            }
+          },
+          {
+            "name": "Fustat",
+            "population": {
+              "value": 80000,
+              "low": 40000,
+              "high": 120000,
+              "year": 700,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Fustat",
+                "url": "https://fr.wikipedia.org/wiki/Fustat"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Blé de Syrie et d'Égypte",
+          "Dattes et riz d'Irak",
+          "Argent du Khorassan",
+          "Lin d'Égypte"
+        ],
+        "currency": "Dinar d'or épigraphique (696-697) et dirham d'argent, sans image.",
+        "taxation": "Kharaj et jizya ; recensement fiscal d'Irak sous al-Hajjaj ; impôt maintenu sur les convertis non arabes.",
+        "trade": "Routes caravanières d'Arabie et de Syrie, Méditerranée et golfe Persique ; Jérusalem et La Mecque, villes de pèlerinage."
+      },
+      "army": {
+        "size": {
+          "value": 100000,
+          "low": 60000,
+          "high": 150000,
+          "year": 700,
+          "note": "Ordre de grandeur : soldats inscrits aux registres.",
+          "source": {
+            "label": "Wikipédia : Califat omeyyade",
+            "url": "https://fr.wikipedia.org/wiki/Califat_omeyyade"
+          }
+        },
+        "composition": "Cavaliers arabes de Syrie et d'Irak, fantassins, premières unités berbères.",
+        "recruitment": "Tribus arabes payées par le diwan ; garnisons d'Irak et de Syrie, sous la poigne d'al-Hajjaj.",
+        "famousUnits": [
+          "Armée de Syrie (ahl al-Sham)",
+          "Cavaliers du Khorassan",
+          "Troupes d'al-Hajjaj en Irak"
+        ],
+        "innovations": [
+          "Siège avec catapultes (La Mecque, 692)",
+          "Solde régulière payée par le trésor",
+          "Flotte à Tunis (vers 700)"
+        ]
+      },
+      "politics": {
+        "regime": "Califat monarchique centralisé, réunifié après la deuxième fitna.",
+        "head": "Calife (Marwan Ier, Abd al-Malik).",
+        "succession": "De père en fils : Abd al-Malik désigne ses fils al-Walid et Sulayman.",
+        "institutions": "Cour de Damas, bureaux d'État arabisés, poste d'État (barid), gouverneurs puissants comme al-Hajjaj.",
+        "administration": "Grands gouvernorats d'Irak et d'Orient (Koufa, Bassora, Khorassan), de Syrie, d'Égypte, d'Ifriqiya.",
+        "provinces": {
+          "value": 7,
+          "low": 5,
+          "high": 8,
+          "year": 700,
+          "unit": "gouvernorats",
+          "note": "Grands gouvernorats ; l'organisation évolue.",
+          "source": {
+            "label": "Wikipédia : Califat omeyyade",
+            "url": "https://fr.wikipedia.org/wiki/Califat_omeyyade"
+          }
+        },
+        "law": "Charia en formation ; décrets du calife ; juges (qadis) nommés par les gouverneurs."
+      },
+      "society": {
+        "religions": [
+          "Islam",
+          "Christianisme",
+          "Judaïsme",
+          "Zoroastrisme"
+        ],
+        "languages": [
+          "Arabe (langue d'État)",
+          "Grec",
+          "Syriaque",
+          "Copte",
+          "Pehlevi",
+          "Berbère"
+        ],
+        "structure": "Aristocratie arabe, convertis non arabes (mawali) mécontents de l'impôt, dhimmis, Berbères en cours de conversion.",
+        "women": "Princesses et épouses influentes à la cour ; la vie des femmes ordinaires est mal connue."
+      },
+      "culture": {
+        "inventions": [
+          "Dinar d'or épigraphique",
+          "Arabisation du diwan",
+          "Poste d'État (barid)",
+          "Points de l'écriture arabe"
+        ],
+        "works": [
+          "Dôme du Rocher (691-692)",
+          "Dinar d'or (696-697)",
+          "Remise en état de la Kaaba (692-693)"
+        ],
+        "scholars": [
+          "Hasan al-Basri (prédicateur)",
+          "Ibn Shihab al-Zuhri (traditionniste)",
+          "Nasr ibn Asim (grammairien)"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Relais de poste (barid), villes-garnisons, Dôme du Rocher, routes de pèlerinage ; fondation de Wasit (702)."
+      },
+      "legacy": "Abd al-Malik réunifie l'empire et lui donne ses grands traits : monnaie, langue arabe, monuments, administration de l'État."
+    },
+    {
+      "id": "apogee",
+      "name": "Les grandes conquêtes",
+      "start": 705,
+      "end": 743,
+      "population": {
+        "total": {
+          "value": 33000000,
+          "low": 22000000,
+          "high": 45000000,
+          "year": 740,
+          "note": "Ordre de grandeur reconstruit : aucun recensement général.",
+          "source": {
+            "label": "Wikipédia : Califat omeyyade",
+            "url": "https://fr.wikipedia.org/wiki/Califat_omeyyade"
+          }
+        },
+        "cities": [
+          {
+            "name": "Damas",
+            "population": {
+              "value": 150000,
+              "low": 80000,
+              "high": 200000,
+              "year": 740,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Damas",
+                "url": "https://fr.wikipedia.org/wiki/Damas"
+              }
+            }
+          },
+          {
+            "name": "Bassora",
+            "population": {
+              "value": 200000,
+              "low": 100000,
+              "high": 300000,
+              "year": 740,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Bassora",
+                "url": "https://fr.wikipedia.org/wiki/Bassora"
+              }
+            }
+          },
+          {
+            "name": "Fustat",
+            "population": {
+              "value": 100000,
+              "low": 50000,
+              "high": 150000,
+              "year": 740,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Fustat",
+                "url": "https://fr.wikipedia.org/wiki/Fustat"
+              }
+            }
+          },
+          {
+            "name": "Kairouan",
+            "population": {
+              "value": 30000,
+              "low": 15000,
+              "high": 50000,
+              "year": 740,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Kairouan",
+                "url": "https://fr.wikipedia.org/wiki/Kairouan"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Argent du Khorassan",
+          "Blé d'Égypte et de Syrie",
+          "Chevaux d'Asie centrale",
+          "Soie et épices en transit"
+        ],
+        "currency": "Dinar d'or et dirham d'argent frappés dans de nombreux ateliers, de Damas à Kairouan et Cordoue.",
+        "taxation": "Kharaj et jizya ; Omar II allège l'impôt des convertis ; les successeurs reviennent à des recettes élevées.",
+        "trade": "Route de la soie par Samarcande, océan Indien par le Sind, Méditerranée par Alexandrie et Tunis."
+      },
+      "army": {
+        "size": {
+          "value": 150000,
+          "low": 100000,
+          "high": 250000,
+          "year": 730,
+          "note": "Ordre de grandeur ; chiffres de chroniques peu fiables.",
+          "source": {
+            "label": "Wikipédia : Califat omeyyade",
+            "url": "https://fr.wikipedia.org/wiki/Califat_omeyyade"
+          }
+        },
+        "composition": "Cavaliers arabes, Berbères du Maghreb, Iraniens du Khorassan, flotte à Tunis et en Syrie.",
+        "recruitment": "Soldes du diwan, armées régionales (jund) de Syrie, recrutement massif de Berbères et d'Iraniens convertis.",
+        "famousUnits": [
+          "Jund de Syrie",
+          "Berbères d'Ifriqiya et d'al-Andalus",
+          "Khorassanis"
+        ],
+        "innovations": [
+          "Raids saisonniers (sa'ifa, shatwa)",
+          "Flotte arabe à Tunis",
+          "Ligne de forteresses frontières (thughur)"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie califale héréditaire, appuyée sur l'armée de Syrie et sur les gouverneurs.",
+        "head": "Calife (al-Walid Ier, Sulayman, Omar II, Yazid II, Hisham).",
+        "succession": "Entre frères puis fils, souvent organisée à l'avance : Walid, Sulayman, Omar II, Yazid II, Hisham.",
+        "institutions": "Cour de Damas ou de Rusafa, bureaux de l'État, poste, gouverneurs de province.",
+        "administration": "Provinces d'Ifriqiya, d'al-Andalus, d'Égypte, de Syrie, d'Irak, du Khorassan, d'Arménie et du Sind.",
+        "provinces": {
+          "value": 8,
+          "low": 6,
+          "high": 10,
+          "year": 735,
+          "unit": "gouvernorats",
+          "note": "Grands gouvernorats ; l'organisation évolue.",
+          "source": {
+            "label": "Wikipédia : Califat omeyyade",
+            "url": "https://fr.wikipedia.org/wiki/Califat_omeyyade"
+          }
+        },
+        "law": "Charia en cours de codification ; juges (qadis) ; statut de protégés (dhimma) pour les non-musulmans."
+      },
+      "society": {
+        "religions": [
+          "Islam sunnite",
+          "Christianisme",
+          "Judaïsme",
+          "Zoroastrisme",
+          "Bouddhisme et hindouisme (Sind, Asie centrale)"
+        ],
+        "languages": [
+          "Arabe",
+          "Persan (pehlevi)",
+          "Berbère",
+          "Grec",
+          "Syriaque",
+          "Latin roman (Espagne)"
+        ],
+        "structure": "Arabes dominants, convertis non arabes (mawali), Berbères et Iraniens dans l'armée, protégés non musulmans.",
+        "women": "Femmes de l'aristocratie lettrées et mécènes ; condition ordinaire très variable selon les régions."
+      },
+      "culture": {
+        "inventions": [
+          "Hôpital de Damas",
+          "Mihrab",
+          "Châteaux du désert",
+          "Grande mosquée à cour et portiques"
+        ],
+        "works": [
+          "Grande Mosquée de Damas (706-715)",
+          "Mosquée de Kairouan (724-727)",
+          "Qusayr Amra (vers 715)"
+        ],
+        "scholars": [
+          "Ibn Shihab al-Zuhri",
+          "Wasil ibn Ata (théologien)",
+          "Hasan al-Basri"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Grandes mosquées, hôpitaux, châteaux du désert, routes de poste et de caravanes de l'Atlantique à l'Indus."
+      },
+      "legacy": "Le califat atteint son extension maximale : Espagne, Sind, Transoxiane ; il garde la trace de l'arabisation du Proche-Orient et du Maghreb."
+    },
+    {
+      "id": "chute",
+      "name": "Troisième fitna et révolution abbasside",
+      "start": 743,
+      "end": 750,
+      "population": {
+        "total": {
+          "value": 30000000,
+          "low": 20000000,
+          "high": 40000000,
+          "year": 745,
+          "note": "Ordre de grandeur reconstruit : aucun recensement général.",
+          "source": {
+            "label": "Wikipédia : Califat omeyyade",
+            "url": "https://fr.wikipedia.org/wiki/Califat_omeyyade"
+          }
+        },
+        "cities": [
+          {
+            "name": "Damas",
+            "population": {
+              "value": 100000,
+              "low": 60000,
+              "high": 150000,
+              "year": 745,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Damas",
+                "url": "https://fr.wikipedia.org/wiki/Damas"
+              }
+            }
+          },
+          {
+            "name": "Koufa",
+            "population": {
+              "value": 100000,
+              "low": 60000,
+              "high": 150000,
+              "year": 745,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Koufa",
+                "url": "https://fr.wikipedia.org/wiki/Koufa"
+              }
+            }
+          },
+          {
+            "name": "Merv",
+            "population": {
+              "value": 60000,
+              "low": 30000,
+              "high": 120000,
+              "year": 747,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Merv",
+                "url": "https://fr.wikipedia.org/wiki/Merv"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Blé de Syrie et d'Égypte",
+          "Argent du Khorassan",
+          "Dattes d'Irak",
+          "Chevaux"
+        ],
+        "currency": "Dinar d'or et dirham d'argent, avec un affaiblissement du trésor pendant la guerre civile.",
+        "taxation": "Kharaj et jizya ; les convertis non arabes se plaignent d'un impôt qui reste lourd.",
+        "trade": "Routes de la soie et de l'océan Indien interrompues par les combats au Khorassan et en Irak."
+      },
+      "army": {
+        "size": {
+          "value": 80000,
+          "low": 30000,
+          "high": 120000,
+          "year": 750,
+          "note": "Armée de Marwan II au Grand Zab : les chroniques parlent de 120 000, chiffre douteux.",
+          "source": {
+            "label": "Wikipédia : Califat omeyyade",
+            "url": "https://fr.wikipedia.org/wiki/Califat_omeyyade"
+          }
+        },
+        "composition": "Cavaliers arabes de Syrie et de Haute Mésopotamie contre armée du Khorassan de convertis iraniens et d'Arabes.",
+        "recruitment": "Armées tribales de Syrie et de Jazira ; armée abbasside levée au Khorassan.",
+        "famousUnits": [
+          "Armée de Marwan II",
+          "Armée abbasside du Khorassan"
+        ],
+        "innovations": [
+          "Propagande politique clandestine (da'wa)",
+          "Bannières noires comme signe de ralliement"
+        ]
+      },
+      "politics": {
+        "regime": "Califat omeyyade en crise, puis chute aux mains de la révolution abbasside.",
+        "head": "Calife (al-Walid II, Yazid III, Ibrahim, Marwan II) ; Abu al-Abbas pour les Abbassides (749).",
+        "succession": "Succession heurtée : assassinats et coups de force entre princes omeyyades.",
+        "institutions": "Cour de Damas puis de Harran, gouverneurs de plus en plus autonomes.",
+        "administration": "Provinces d'Ifriqiya et d'al-Andalus presque indépendantes ; Khorassan et Iran perdus ; Syrie et Jazira tenues.",
+        "provinces": {
+          "value": 7,
+          "low": 5,
+          "high": 8,
+          "year": 745,
+          "unit": "gouvernorats",
+          "note": "Grands gouvernorats ; l'organisation évolue.",
+          "source": {
+            "label": "Wikipédia : Califat omeyyade",
+            "url": "https://fr.wikipedia.org/wiki/Califat_omeyyade"
+          }
+        },
+        "law": "Charia en cours de codification ; juges (qadis) ; revendication d'un califat de la famille du Prophète."
+      },
+      "society": {
+        "religions": [
+          "Islam",
+          "Christianisme",
+          "Judaïsme",
+          "Zoroastrisme"
+        ],
+        "languages": [
+          "Arabe",
+          "Persan",
+          "Berbère",
+          "Syriaque",
+          "Grec"
+        ],
+        "structure": "Arabes divisés entre Qays et Yéménites, convertis non arabes, partisans de la famille du Prophète, kharijites.",
+        "women": "Princesses de la cour et familles de chefs, parfois acteurs des intrigues de succession."
+      },
+      "culture": {
+        "inventions": [
+          "Propagande politique clandestine (da'wa)",
+          "Bannières noires comme emblème"
+        ],
+        "works": [
+          "Mshatta (palais inachevé de Walid II)",
+          "Mosquée de Kairouan",
+          "Grande Mosquée de Damas"
+        ],
+        "scholars": [
+          "Abu Hanifa (juriste)",
+          "Wasil ibn Ata",
+          "Ibn Shihab al-Zuhri (mort en 742)"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Les infrastructures existantes (relais postaux, routes, grandes mosquées) passent aux vainqueurs abbassides."
+      },
+      "legacy": "La chute des Omeyyades déplace le pouvoir de Damas vers l'Irak, mais un prince omeyyade fonde l'émirat de Cordoue en 756."
+    }
+  ]
+}

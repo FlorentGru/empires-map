@@ -1,0 +1,23 @@
+{
+ "areas": {
+  "avenement-661": 7237626,
+  "kairouan-670": 8243532,
+  "constantinople-674": 8245294,
+  "karbala-680": 8243532,
+  "marj-rahit-684": 7342398,
+  "dome-691": 7342430,
+  "reformes-697": 8153864,
+  "carthage-698": 8267583,
+  "guadalete-711": 9218800,
+  "sind-711": 9323764,
+  "samarcande-712": 10145188,
+  "constantinople-717": 10729698,
+  "covadonga-722": 10755344,
+  "poitiers-732": 10952594,
+  "akroinon-740": 10952594,
+  "nobles-740": 10177246,
+  "revolte-abbasside-747": 9980019,
+  "zab-750": 7666373
+ },
+ "apogee": "poitiers-732"
+}
