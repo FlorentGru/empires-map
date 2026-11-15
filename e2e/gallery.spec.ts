@@ -65,7 +65,11 @@ test('galerie : unités de bataille (mini-scènes du moteur, fiche, « Où la vo
   // Fiche : la phalange est jouée à Gaugamèles.
   await dialog.locator('[data-uid="u:phalange"]').click();
   await expect(dialog.getByRole('heading', { name: 'Phalange' })).toBeVisible();
-  await dialog.locator('.gallery__appears button', { hasText: 'Gaugamèles' }).click();
+  // Gaugamèles se joue depuis plusieurs empires (Alexandre, Perse) : on choisit celle d'Alexandre.
+  await dialog
+    .locator('.gallery__appears button', { hasText: 'Gaugamèles' })
+    .filter({ has: page.locator('.gallery__appears-empire', { hasText: 'Alexandre' }) })
+    .click();
   await expect(page).toHaveURL(/\/alexandre\/gaugameles-331\//);
   expect(errors).toEqual([]);
 });

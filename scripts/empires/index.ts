@@ -18,6 +18,7 @@ import { mali } from './mali.ts';
 import { songhai } from './songhai.ts';
 import { azteques } from './azteques.ts';
 import { carthage } from './carthage.ts';
+import { perseAchemenide } from './perse-achemenide.ts';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 
@@ -36,6 +37,7 @@ export const EMPIRES: EmpireConfig[] = [
   songhai,
   azteques,
   carthage,
+  perseAchemenide,
 ];
 
 export function getEmpire(id: string): EmpireConfig {
