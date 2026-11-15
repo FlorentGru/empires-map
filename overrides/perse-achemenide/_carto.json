@@ -1,0 +1,1738 @@
+{
+ "empire": "perse-achemenide",
+ "basemapNote": "Empire composé (fromCarto) : pays Natural Earth 1:50m (Iran, Irak, Turquie, Syrie, Liban, Israël, Palestine, Jordanie, Égypte, Libye, Chypre, Afghanistan, Pakistan, Asie centrale, Arménie, Azerbaïdjan, Grèce, Bulgarie, Macédoine du Nord) découpés par des régions nommées (_regions.geojson) : satrapies de Perside, Médie, Anatolie, Babylonie, Syrie, Égypte, Bactriane, Indus, Thrace, etc. Vassaux : Cyrénaïque, Macédoine. Frontières approximatives.",
+ "steps": [
+  {
+   "id": "pasargades-550",
+   "year": -550,
+   "entities": [
+    {
+     "name": "Empire perse",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Iran$",
+        "region": "Perside et Élam"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Médie occidentale"
+       },
+       {
+        "country": "^(Turkey|Iraq|Syria)$",
+        "region": "Haute Mésopotamie"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "sardes-546",
+   "year": -546,
+   "entities": [
+    {
+     "name": "Empire perse",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Iran$",
+        "region": "Perside et Élam"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Médie occidentale"
+       },
+       {
+        "country": "^(Turkey|Armenia|Azerbaijan)$",
+        "region": "Arménie"
+       },
+       {
+        "diff": [
+         {
+          "country": "^Turkey$",
+          "region": "Lydie et Anatolie"
+         },
+         {
+          "country": "^Turkey$",
+          "region": "Cilicie"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "babylone-539",
+   "year": -539,
+   "entities": [
+    {
+     "name": "Empire perse",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Iran$",
+        "region": "Perside et Élam"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Médie"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Carmanie"
+       },
+       {
+        "country": "^(Turkey|Armenia|Azerbaijan)$",
+        "region": "Arménie"
+       },
+       {
+        "country": "^Turkey$",
+        "region": "Lydie et Anatolie"
+       },
+       {
+        "country": "^(Iraq|Kuwait)$",
+        "region": "Babylonie et Assyrie"
+       },
+       {
+        "country": "^(Syria|Lebanon|Israel|Palestine|Jordan)$",
+        "region": "Syrie, Phénicie et Palestine"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "massagetes-530",
+   "year": -530,
+   "entities": [
+    {
+     "name": "Empire perse",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Iran$",
+        "region": "Perside et Élam"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Médie"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Carmanie"
+       },
+       {
+        "country": "^(Turkey|Armenia|Azerbaijan)$",
+        "region": "Arménie"
+       },
+       {
+        "country": "^Turkey$",
+        "region": "Lydie et Anatolie"
+       },
+       {
+        "country": "^(Iraq|Kuwait)$",
+        "region": "Babylonie et Assyrie"
+       },
+       {
+        "country": "^(Syria|Lebanon|Israel|Palestine|Jordan)$",
+        "region": "Syrie, Phénicie et Palestine"
+       },
+       {
+        "country": "^(Afghanistan|Uzbekistan|Tajikistan|Turkmenistan|Kyrgyzstan)$",
+        "region": "Bactriane et Sogdiane"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "peluse-525",
+   "year": -525,
+   "entities": [
+    {
+     "name": "Empire perse",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Iran$",
+        "region": "Perside et Élam"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Médie"
+       },
+       {
+        "country": "^(Turkey|Armenia|Azerbaijan)$",
+        "region": "Arménie"
+       },
+       {
+        "country": "^Turkey$",
+        "region": "Lydie et Anatolie"
+       },
+       {
+        "country": "^(Iraq|Kuwait)$",
+        "region": "Babylonie et Assyrie"
+       },
+       {
+        "country": "^(Syria|Lebanon|Israel|Palestine|Jordan)$",
+        "region": "Syrie, Phénicie et Palestine"
+       },
+       {
+        "country": "^(Afghanistan|Uzbekistan|Tajikistan|Turkmenistan|Kyrgyzstan)$",
+        "region": "Bactriane et Sogdiane"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Carmanie"
+       },
+       {
+        "country": "^Egypt$",
+        "region": "Égypte"
+       },
+       {
+        "country": "^(N\\. )?Cyprus$",
+        "region": "Chypre"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cyrénaïque",
+     "status": "vassal",
+     "source": {
+      "country": "^Libya$",
+      "region": "Cyrénaïque"
+     }
+    }
+   ]
+  },
+  {
+   "id": "behistoun-522",
+   "year": -522,
+   "entities": [
+    {
+     "name": "Empire perse",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Iran$",
+        "region": "Perside et Élam"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Médie"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Carmanie"
+       },
+       {
+        "country": "^(Turkey|Armenia|Azerbaijan)$",
+        "region": "Arménie"
+       },
+       {
+        "country": "^Turkey$",
+        "region": "Lydie et Anatolie"
+       },
+       {
+        "country": "^(Iraq|Kuwait)$",
+        "region": "Babylonie et Assyrie"
+       },
+       {
+        "country": "^(Syria|Lebanon|Israel|Palestine|Jordan)$",
+        "region": "Syrie, Phénicie et Palestine"
+       },
+       {
+        "country": "^(Afghanistan|Uzbekistan|Tajikistan|Turkmenistan|Kyrgyzstan)$",
+        "region": "Bactriane et Sogdiane"
+       },
+       {
+        "country": "^Egypt$",
+        "region": "Égypte"
+       },
+       {
+        "country": "^(N\\. )?Cyprus$",
+        "region": "Chypre"
+       },
+       {
+        "country": "^(Iran|Turkmenistan)$",
+        "region": "Parthie et Hyrcanie"
+       },
+       {
+        "country": "^(Afghanistan|Iran)$",
+        "region": "Arie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cyrénaïque",
+     "status": "vassal",
+     "source": {
+      "country": "^Libya$",
+      "region": "Cyrénaïque"
+     }
+    }
+   ]
+  },
+  {
+   "id": "indus-518",
+   "year": -518,
+   "entities": [
+    {
+     "name": "Empire perse",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Iran$",
+        "region": "Perside et Élam"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Médie"
+       },
+       {
+        "country": "^(Turkey|Armenia|Azerbaijan)$",
+        "region": "Arménie"
+       },
+       {
+        "country": "^Turkey$",
+        "region": "Lydie et Anatolie"
+       },
+       {
+        "country": "^(Iraq|Kuwait)$",
+        "region": "Babylonie et Assyrie"
+       },
+       {
+        "country": "^(Syria|Lebanon|Israel|Palestine|Jordan)$",
+        "region": "Syrie, Phénicie et Palestine"
+       },
+       {
+        "country": "^(Afghanistan|Uzbekistan|Tajikistan|Turkmenistan|Kyrgyzstan)$",
+        "region": "Bactriane et Sogdiane"
+       },
+       {
+        "country": "^Egypt$",
+        "region": "Égypte"
+       },
+       {
+        "country": "^(N\\. )?Cyprus$",
+        "region": "Chypre"
+       },
+       {
+        "country": "^(Iran|Turkmenistan)$",
+        "region": "Parthie et Hyrcanie"
+       },
+       {
+        "country": "^(Afghanistan|Iran)$",
+        "region": "Arie"
+       },
+       {
+        "country": "^(Afghanistan|Iran|Pakistan)$",
+        "region": "Drangiane et Arachosie"
+       },
+       {
+        "country": "^Pakistan$",
+        "region": "Gandhara et Indus"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Carmanie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cyrénaïque",
+     "status": "vassal",
+     "source": {
+      "country": "^Libya$",
+      "region": "Cyrénaïque"
+     }
+    }
+   ]
+  },
+  {
+   "id": "scythes-513",
+   "year": -513,
+   "entities": [
+    {
+     "name": "Empire perse",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Iran$",
+        "region": "Perside et Élam"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Médie"
+       },
+       {
+        "country": "^(Turkey|Armenia|Azerbaijan)$",
+        "region": "Arménie"
+       },
+       {
+        "country": "^Turkey$",
+        "region": "Lydie et Anatolie"
+       },
+       {
+        "country": "^(Iraq|Kuwait)$",
+        "region": "Babylonie et Assyrie"
+       },
+       {
+        "country": "^(Syria|Lebanon|Israel|Palestine|Jordan)$",
+        "region": "Syrie, Phénicie et Palestine"
+       },
+       {
+        "country": "^(Afghanistan|Uzbekistan|Tajikistan|Turkmenistan|Kyrgyzstan)$",
+        "region": "Bactriane et Sogdiane"
+       },
+       {
+        "country": "^Egypt$",
+        "region": "Égypte"
+       },
+       {
+        "country": "^(N\\. )?Cyprus$",
+        "region": "Chypre"
+       },
+       {
+        "country": "^(Iran|Turkmenistan)$",
+        "region": "Parthie et Hyrcanie"
+       },
+       {
+        "country": "^(Afghanistan|Iran)$",
+        "region": "Arie"
+       },
+       {
+        "country": "^(Afghanistan|Iran|Pakistan)$",
+        "region": "Drangiane et Arachosie"
+       },
+       {
+        "country": "^Pakistan$",
+        "region": "Gandhara et Indus"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Carmanie"
+       },
+       {
+        "country": "^(Greece|Bulgaria|Turkey|North Macedonia)$",
+        "region": "Thrace côtière"
+       },
+       {
+        "country": "^Bulgaria$",
+        "region": "Thrace jusqu'au Danube"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cyrénaïque",
+     "status": "vassal",
+     "source": {
+      "country": "^Libya$",
+      "region": "Cyrénaïque"
+     }
+    },
+    {
+     "name": "Macédoine",
+     "status": "vassal",
+     "source": {
+      "country": "^(Greece|North Macedonia|Bulgaria)$",
+      "region": "Macédoine"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ionie-499",
+   "year": -499,
+   "entities": [
+    {
+     "name": "Empire perse",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Iran$",
+        "region": "Perside et Élam"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Médie"
+       },
+       {
+        "country": "^(Turkey|Armenia|Azerbaijan)$",
+        "region": "Arménie"
+       },
+       {
+        "country": "^Turkey$",
+        "region": "Lydie et Anatolie"
+       },
+       {
+        "country": "^(Iraq|Kuwait)$",
+        "region": "Babylonie et Assyrie"
+       },
+       {
+        "country": "^(Syria|Lebanon|Israel|Palestine|Jordan)$",
+        "region": "Syrie, Phénicie et Palestine"
+       },
+       {
+        "country": "^(Afghanistan|Uzbekistan|Tajikistan|Turkmenistan|Kyrgyzstan)$",
+        "region": "Bactriane et Sogdiane"
+       },
+       {
+        "country": "^Egypt$",
+        "region": "Égypte"
+       },
+       {
+        "country": "^(N\\. )?Cyprus$",
+        "region": "Chypre"
+       },
+       {
+        "country": "^(Iran|Turkmenistan)$",
+        "region": "Parthie et Hyrcanie"
+       },
+       {
+        "country": "^(Afghanistan|Iran)$",
+        "region": "Arie"
+       },
+       {
+        "country": "^(Afghanistan|Iran|Pakistan)$",
+        "region": "Drangiane et Arachosie"
+       },
+       {
+        "country": "^Pakistan$",
+        "region": "Gandhara et Indus"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Carmanie"
+       },
+       {
+        "country": "^(Greece|Bulgaria|Turkey|North Macedonia)$",
+        "region": "Thrace côtière"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cyrénaïque",
+     "status": "vassal",
+     "source": {
+      "country": "^Libya$",
+      "region": "Cyrénaïque"
+     }
+    },
+    {
+     "name": "Macédoine",
+     "status": "vassal",
+     "source": {
+      "country": "^(Greece|North Macedonia|Bulgaria)$",
+      "region": "Macédoine"
+     }
+    }
+   ]
+  },
+  {
+   "id": "marathon-490",
+   "year": -490,
+   "entities": [
+    {
+     "name": "Empire perse",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Iran$",
+        "region": "Perside et Élam"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Médie"
+       },
+       {
+        "country": "^(Turkey|Armenia|Azerbaijan)$",
+        "region": "Arménie"
+       },
+       {
+        "country": "^Turkey$",
+        "region": "Lydie et Anatolie"
+       },
+       {
+        "country": "^(Iraq|Kuwait)$",
+        "region": "Babylonie et Assyrie"
+       },
+       {
+        "country": "^(Syria|Lebanon|Israel|Palestine|Jordan)$",
+        "region": "Syrie, Phénicie et Palestine"
+       },
+       {
+        "country": "^(Afghanistan|Uzbekistan|Tajikistan|Turkmenistan|Kyrgyzstan)$",
+        "region": "Bactriane et Sogdiane"
+       },
+       {
+        "country": "^Egypt$",
+        "region": "Égypte"
+       },
+       {
+        "country": "^(N\\. )?Cyprus$",
+        "region": "Chypre"
+       },
+       {
+        "country": "^(Iran|Turkmenistan)$",
+        "region": "Parthie et Hyrcanie"
+       },
+       {
+        "country": "^(Afghanistan|Iran)$",
+        "region": "Arie"
+       },
+       {
+        "country": "^(Afghanistan|Iran|Pakistan)$",
+        "region": "Drangiane et Arachosie"
+       },
+       {
+        "country": "^Pakistan$",
+        "region": "Gandhara et Indus"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Carmanie"
+       },
+       {
+        "country": "^(Greece|Bulgaria|Turkey|North Macedonia)$",
+        "region": "Thrace côtière"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cyrénaïque",
+     "status": "vassal",
+     "source": {
+      "country": "^Libya$",
+      "region": "Cyrénaïque"
+     }
+    },
+    {
+     "name": "Macédoine",
+     "status": "vassal",
+     "source": {
+      "country": "^(Greece|North Macedonia|Bulgaria)$",
+      "region": "Macédoine"
+     }
+    }
+   ]
+  },
+  {
+   "id": "salamine-480",
+   "year": -480,
+   "entities": [
+    {
+     "name": "Empire perse",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Iran$",
+        "region": "Perside et Élam"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Médie"
+       },
+       {
+        "country": "^(Turkey|Armenia|Azerbaijan)$",
+        "region": "Arménie"
+       },
+       {
+        "country": "^Turkey$",
+        "region": "Lydie et Anatolie"
+       },
+       {
+        "country": "^(Iraq|Kuwait)$",
+        "region": "Babylonie et Assyrie"
+       },
+       {
+        "country": "^(Syria|Lebanon|Israel|Palestine|Jordan)$",
+        "region": "Syrie, Phénicie et Palestine"
+       },
+       {
+        "country": "^(Afghanistan|Uzbekistan|Tajikistan|Turkmenistan|Kyrgyzstan)$",
+        "region": "Bactriane et Sogdiane"
+       },
+       {
+        "country": "^Egypt$",
+        "region": "Égypte"
+       },
+       {
+        "country": "^(N\\. )?Cyprus$",
+        "region": "Chypre"
+       },
+       {
+        "country": "^(Iran|Turkmenistan)$",
+        "region": "Parthie et Hyrcanie"
+       },
+       {
+        "country": "^(Afghanistan|Iran)$",
+        "region": "Arie"
+       },
+       {
+        "country": "^(Afghanistan|Iran|Pakistan)$",
+        "region": "Drangiane et Arachosie"
+       },
+       {
+        "country": "^Pakistan$",
+        "region": "Gandhara et Indus"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Carmanie"
+       },
+       {
+        "country": "^(Greece|Bulgaria|Turkey|North Macedonia)$",
+        "region": "Thrace côtière"
+       },
+       {
+        "country": "^Greece$",
+        "region": "Thessalie et Grèce du nord"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cyrénaïque",
+     "status": "vassal",
+     "source": {
+      "country": "^Libya$",
+      "region": "Cyrénaïque"
+     }
+    },
+    {
+     "name": "Macédoine",
+     "status": "vassal",
+     "source": {
+      "country": "^(Greece|North Macedonia|Bulgaria)$",
+      "region": "Macédoine"
+     }
+    }
+   ]
+  },
+  {
+   "id": "platees-479",
+   "year": -479,
+   "entities": [
+    {
+     "name": "Empire perse",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Iran$",
+        "region": "Perside et Élam"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Médie"
+       },
+       {
+        "country": "^(Turkey|Armenia|Azerbaijan)$",
+        "region": "Arménie"
+       },
+       {
+        "diff": [
+         {
+          "country": "^Turkey$",
+          "region": "Lydie et Anatolie"
+         },
+         {
+          "country": "^Turkey$",
+          "region": "Côte ionienne"
+         }
+        ]
+       },
+       {
+        "country": "^(Iraq|Kuwait)$",
+        "region": "Babylonie et Assyrie"
+       },
+       {
+        "country": "^(Syria|Lebanon|Israel|Palestine|Jordan)$",
+        "region": "Syrie, Phénicie et Palestine"
+       },
+       {
+        "country": "^(Afghanistan|Uzbekistan|Tajikistan|Turkmenistan|Kyrgyzstan)$",
+        "region": "Bactriane et Sogdiane"
+       },
+       {
+        "country": "^Egypt$",
+        "region": "Égypte"
+       },
+       {
+        "country": "^(N\\. )?Cyprus$",
+        "region": "Chypre"
+       },
+       {
+        "country": "^(Iran|Turkmenistan)$",
+        "region": "Parthie et Hyrcanie"
+       },
+       {
+        "country": "^(Afghanistan|Iran)$",
+        "region": "Arie"
+       },
+       {
+        "country": "^(Afghanistan|Iran|Pakistan)$",
+        "region": "Drangiane et Arachosie"
+       },
+       {
+        "country": "^Pakistan$",
+        "region": "Gandhara et Indus"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Carmanie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cyrénaïque",
+     "status": "vassal",
+     "source": {
+      "country": "^Libya$",
+      "region": "Cyrénaïque"
+     }
+    }
+   ]
+  },
+  {
+   "id": "callias-449",
+   "year": -449,
+   "entities": [
+    {
+     "name": "Empire perse",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Iran$",
+        "region": "Perside et Élam"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Médie"
+       },
+       {
+        "country": "^(Turkey|Armenia|Azerbaijan)$",
+        "region": "Arménie"
+       },
+       {
+        "diff": [
+         {
+          "country": "^Turkey$",
+          "region": "Lydie et Anatolie"
+         },
+         {
+          "country": "^Turkey$",
+          "region": "Côte ionienne"
+         }
+        ]
+       },
+       {
+        "country": "^(Iraq|Kuwait)$",
+        "region": "Babylonie et Assyrie"
+       },
+       {
+        "country": "^(Syria|Lebanon|Israel|Palestine|Jordan)$",
+        "region": "Syrie, Phénicie et Palestine"
+       },
+       {
+        "country": "^(Afghanistan|Uzbekistan|Tajikistan|Turkmenistan|Kyrgyzstan)$",
+        "region": "Bactriane et Sogdiane"
+       },
+       {
+        "country": "^Egypt$",
+        "region": "Égypte"
+       },
+       {
+        "country": "^(N\\. )?Cyprus$",
+        "region": "Chypre"
+       },
+       {
+        "country": "^(Iran|Turkmenistan)$",
+        "region": "Parthie et Hyrcanie"
+       },
+       {
+        "country": "^(Afghanistan|Iran)$",
+        "region": "Arie"
+       },
+       {
+        "country": "^(Afghanistan|Iran|Pakistan)$",
+        "region": "Drangiane et Arachosie"
+       },
+       {
+        "country": "^Pakistan$",
+        "region": "Gandhara et Indus"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Carmanie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cyrénaïque",
+     "status": "vassal",
+     "source": {
+      "country": "^Libya$",
+      "region": "Cyrénaïque"
+     }
+    }
+   ]
+  },
+  {
+   "id": "cunaxa-401",
+   "year": -401,
+   "entities": [
+    {
+     "name": "Empire perse",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Iran$",
+        "region": "Perside et Élam"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Médie"
+       },
+       {
+        "country": "^(Turkey|Armenia|Azerbaijan)$",
+        "region": "Arménie"
+       },
+       {
+        "country": "^Turkey$",
+        "region": "Lydie et Anatolie"
+       },
+       {
+        "country": "^(Iraq|Kuwait)$",
+        "region": "Babylonie et Assyrie"
+       },
+       {
+        "country": "^(Syria|Lebanon|Israel|Palestine|Jordan)$",
+        "region": "Syrie, Phénicie et Palestine"
+       },
+       {
+        "country": "^(Afghanistan|Uzbekistan|Tajikistan|Turkmenistan|Kyrgyzstan)$",
+        "region": "Bactriane et Sogdiane"
+       },
+       {
+        "country": "^(N\\. )?Cyprus$",
+        "region": "Chypre"
+       },
+       {
+        "country": "^(Iran|Turkmenistan)$",
+        "region": "Parthie et Hyrcanie"
+       },
+       {
+        "country": "^(Afghanistan|Iran)$",
+        "region": "Arie"
+       },
+       {
+        "country": "^(Afghanistan|Iran|Pakistan)$",
+        "region": "Drangiane et Arachosie"
+       },
+       {
+        "country": "^Pakistan$",
+        "region": "Gandhara et Indus"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Carmanie"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "paix-du-roi-387",
+   "year": -387,
+   "entities": [
+    {
+     "name": "Empire perse",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Iran$",
+        "region": "Perside et Élam"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Médie"
+       },
+       {
+        "country": "^(Turkey|Armenia|Azerbaijan)$",
+        "region": "Arménie"
+       },
+       {
+        "country": "^Turkey$",
+        "region": "Lydie et Anatolie"
+       },
+       {
+        "country": "^(Iraq|Kuwait)$",
+        "region": "Babylonie et Assyrie"
+       },
+       {
+        "country": "^(Syria|Lebanon|Israel|Palestine|Jordan)$",
+        "region": "Syrie, Phénicie et Palestine"
+       },
+       {
+        "country": "^(Afghanistan|Uzbekistan|Tajikistan|Turkmenistan|Kyrgyzstan)$",
+        "region": "Bactriane et Sogdiane"
+       },
+       {
+        "country": "^(N\\. )?Cyprus$",
+        "region": "Chypre"
+       },
+       {
+        "country": "^(Iran|Turkmenistan)$",
+        "region": "Parthie et Hyrcanie"
+       },
+       {
+        "country": "^(Afghanistan|Iran)$",
+        "region": "Arie"
+       },
+       {
+        "country": "^(Afghanistan|Iran|Pakistan)$",
+        "region": "Drangiane et Arachosie"
+       },
+       {
+        "country": "^Pakistan$",
+        "region": "Gandhara et Indus"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Carmanie"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "egypte-343",
+   "year": -343,
+   "entities": [
+    {
+     "name": "Empire perse",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Iran$",
+        "region": "Perside et Élam"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Médie"
+       },
+       {
+        "country": "^(Turkey|Armenia|Azerbaijan)$",
+        "region": "Arménie"
+       },
+       {
+        "country": "^Turkey$",
+        "region": "Lydie et Anatolie"
+       },
+       {
+        "country": "^(Iraq|Kuwait)$",
+        "region": "Babylonie et Assyrie"
+       },
+       {
+        "country": "^(Syria|Lebanon|Israel|Palestine|Jordan)$",
+        "region": "Syrie, Phénicie et Palestine"
+       },
+       {
+        "country": "^(Afghanistan|Uzbekistan|Tajikistan|Turkmenistan|Kyrgyzstan)$",
+        "region": "Bactriane et Sogdiane"
+       },
+       {
+        "country": "^Egypt$",
+        "region": "Égypte"
+       },
+       {
+        "country": "^(N\\. )?Cyprus$",
+        "region": "Chypre"
+       },
+       {
+        "country": "^(Iran|Turkmenistan)$",
+        "region": "Parthie et Hyrcanie"
+       },
+       {
+        "country": "^(Afghanistan|Iran)$",
+        "region": "Arie"
+       },
+       {
+        "country": "^(Afghanistan|Iran|Pakistan)$",
+        "region": "Drangiane et Arachosie"
+       },
+       {
+        "country": "^Pakistan$",
+        "region": "Gandhara et Indus"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Carmanie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cyrénaïque",
+     "status": "vassal",
+     "source": {
+      "country": "^Libya$",
+      "region": "Cyrénaïque"
+     }
+    }
+   ]
+  },
+  {
+   "id": "granique-334",
+   "year": -334,
+   "entities": [
+    {
+     "name": "Empire perse",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Iran$",
+        "region": "Perside et Élam"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Médie"
+       },
+       {
+        "country": "^(Turkey|Armenia|Azerbaijan)$",
+        "region": "Arménie"
+       },
+       {
+        "country": "^Turkey$",
+        "region": "Lydie et Anatolie"
+       },
+       {
+        "country": "^(Iraq|Kuwait)$",
+        "region": "Babylonie et Assyrie"
+       },
+       {
+        "country": "^(Syria|Lebanon|Israel|Palestine|Jordan)$",
+        "region": "Syrie, Phénicie et Palestine"
+       },
+       {
+        "country": "^(Afghanistan|Uzbekistan|Tajikistan|Turkmenistan|Kyrgyzstan)$",
+        "region": "Bactriane et Sogdiane"
+       },
+       {
+        "country": "^Egypt$",
+        "region": "Égypte"
+       },
+       {
+        "country": "^(N\\. )?Cyprus$",
+        "region": "Chypre"
+       },
+       {
+        "country": "^(Iran|Turkmenistan)$",
+        "region": "Parthie et Hyrcanie"
+       },
+       {
+        "country": "^(Afghanistan|Iran)$",
+        "region": "Arie"
+       },
+       {
+        "country": "^(Afghanistan|Iran|Pakistan)$",
+        "region": "Drangiane et Arachosie"
+       },
+       {
+        "country": "^Pakistan$",
+        "region": "Gandhara et Indus"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Carmanie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cyrénaïque",
+     "status": "vassal",
+     "source": {
+      "country": "^Libya$",
+      "region": "Cyrénaïque"
+     }
+    }
+   ]
+  },
+  {
+   "id": "issos-333",
+   "year": -333,
+   "entities": [
+    {
+     "name": "Empire perse",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Iran$",
+        "region": "Perside et Élam"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Médie"
+       },
+       {
+        "country": "^(Turkey|Armenia|Azerbaijan)$",
+        "region": "Arménie"
+       },
+       {
+        "country": "^Turkey$",
+        "region": "Cilicie"
+       },
+       {
+        "country": "^(Iraq|Kuwait)$",
+        "region": "Babylonie et Assyrie"
+       },
+       {
+        "country": "^(Syria|Lebanon|Israel|Palestine|Jordan)$",
+        "region": "Syrie, Phénicie et Palestine"
+       },
+       {
+        "country": "^(Afghanistan|Uzbekistan|Tajikistan|Turkmenistan|Kyrgyzstan)$",
+        "region": "Bactriane et Sogdiane"
+       },
+       {
+        "country": "^Egypt$",
+        "region": "Égypte"
+       },
+       {
+        "country": "^(N\\. )?Cyprus$",
+        "region": "Chypre"
+       },
+       {
+        "country": "^(Iran|Turkmenistan)$",
+        "region": "Parthie et Hyrcanie"
+       },
+       {
+        "country": "^(Afghanistan|Iran)$",
+        "region": "Arie"
+       },
+       {
+        "country": "^(Afghanistan|Iran|Pakistan)$",
+        "region": "Drangiane et Arachosie"
+       },
+       {
+        "country": "^Pakistan$",
+        "region": "Gandhara et Indus"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Carmanie"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Cyrénaïque",
+     "status": "vassal",
+     "source": {
+      "country": "^Libya$",
+      "region": "Cyrénaïque"
+     }
+    }
+   ]
+  },
+  {
+   "id": "gaugameles-331",
+   "year": -331,
+   "entities": [
+    {
+     "name": "Empire perse",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^Iran$",
+        "region": "Perside et Élam"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Médie"
+       },
+       {
+        "country": "^(Turkey|Armenia|Azerbaijan)$",
+        "region": "Arménie"
+       },
+       {
+        "country": "^(Iraq|Kuwait)$",
+        "region": "Babylonie et Assyrie"
+       },
+       {
+        "country": "^(Afghanistan|Uzbekistan|Tajikistan|Turkmenistan|Kyrgyzstan)$",
+        "region": "Bactriane et Sogdiane"
+       },
+       {
+        "country": "^(Iran|Turkmenistan)$",
+        "region": "Parthie et Hyrcanie"
+       },
+       {
+        "country": "^(Afghanistan|Iran)$",
+        "region": "Arie"
+       },
+       {
+        "country": "^(Afghanistan|Iran|Pakistan)$",
+        "region": "Drangiane et Arachosie"
+       },
+       {
+        "country": "^Pakistan$",
+        "region": "Gandhara et Indus"
+       },
+       {
+        "country": "^Iran$",
+        "region": "Carmanie"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "darius-330",
+   "year": -330,
+   "entities": [
+    {
+     "name": "Empire perse",
+     "status": "core",
+     "source": {
+      "union": [
+       {
+        "country": "^(Iran|Turkmenistan)$",
+        "region": "Parthie et Hyrcanie"
+       },
+       {
+        "country": "^(Afghanistan|Iran)$",
+        "region": "Arie"
+       },
+       {
+        "country": "^(Afghanistan|Iran|Pakistan)$",
+        "region": "Drangiane et Arachosie"
+       },
+       {
+        "country": "^(Afghanistan|Uzbekistan|Tajikistan|Turkmenistan|Kyrgyzstan)$",
+        "region": "Bactriane et Sogdiane"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "checkpoints": [
+  {
+   "name": "Persépolis",
+   "pt": [
+    52.89,
+    29.93
+   ],
+   "where": "core",
+   "from": "pasargades-550",
+   "to": "gaugameles-331"
+  },
+  {
+   "name": "Persépolis",
+   "pt": [
+    52.89,
+    29.93
+   ],
+   "where": "not-core",
+   "from": "darius-330",
+   "to": "darius-330"
+  },
+  {
+   "name": "Suse",
+   "pt": [
+    48.24,
+    32.19
+   ],
+   "where": "core",
+   "from": "pasargades-550",
+   "to": "gaugameles-331"
+  },
+  {
+   "name": "Ecbatane (Hamadan)",
+   "pt": [
+    48.51,
+    34.8
+   ],
+   "where": "core",
+   "from": "pasargades-550",
+   "to": "gaugameles-331"
+  },
+  {
+   "name": "Ecbatane (Hamadan)",
+   "pt": [
+    48.51,
+    34.8
+   ],
+   "where": "not-core",
+   "from": "darius-330",
+   "to": "darius-330"
+  },
+  {
+   "name": "Sardes",
+   "pt": [
+    28.04,
+    38.49
+   ],
+   "where": "core",
+   "from": "sardes-546",
+   "to": "granique-334"
+  },
+  {
+   "name": "Sardes",
+   "pt": [
+    28.04,
+    38.49
+   ],
+   "where": "not-core",
+   "from": "issos-333"
+  },
+  {
+   "name": "Milet",
+   "pt": [
+    27.28,
+    37.53
+   ],
+   "where": "core",
+   "from": "sardes-546",
+   "to": "salamine-480"
+  },
+  {
+   "name": "Milet",
+   "pt": [
+    27.28,
+    37.53
+   ],
+   "where": "not-core",
+   "from": "platees-479",
+   "to": "callias-449"
+  },
+  {
+   "name": "Milet",
+   "pt": [
+    27.28,
+    37.53
+   ],
+   "where": "core",
+   "from": "cunaxa-401",
+   "to": "granique-334"
+  },
+  {
+   "name": "Milet",
+   "pt": [
+    27.28,
+    37.53
+   ],
+   "where": "not-core",
+   "from": "issos-333"
+  },
+  {
+   "name": "Babylone",
+   "pt": [
+    44.42,
+    32.54
+   ],
+   "where": "core",
+   "from": "babylone-539",
+   "to": "gaugameles-331"
+  },
+  {
+   "name": "Babylone",
+   "pt": [
+    44.42,
+    32.54
+   ],
+   "where": "not-core",
+   "from": "darius-330"
+  },
+  {
+   "name": "Memphis",
+   "pt": [
+    31.25,
+    29.85
+   ],
+   "where": "core",
+   "from": "peluse-525",
+   "to": "callias-449"
+  },
+  {
+   "name": "Memphis",
+   "pt": [
+    31.25,
+    29.85
+   ],
+   "where": "not-core",
+   "from": "cunaxa-401",
+   "to": "paix-du-roi-387"
+  },
+  {
+   "name": "Memphis",
+   "pt": [
+    31.25,
+    29.85
+   ],
+   "where": "core",
+   "from": "egypte-343",
+   "to": "issos-333"
+  },
+  {
+   "name": "Memphis",
+   "pt": [
+    31.25,
+    29.85
+   ],
+   "where": "not-core",
+   "from": "gaugameles-331"
+  },
+  {
+   "name": "Éléphantine",
+   "pt": [
+    32.89,
+    24.09
+   ],
+   "where": "core",
+   "from": "peluse-525",
+   "to": "callias-449"
+  },
+  {
+   "name": "Jérusalem",
+   "pt": [
+    35.22,
+    31.78
+   ],
+   "where": "core",
+   "from": "babylone-539",
+   "to": "issos-333"
+  },
+  {
+   "name": "Jérusalem",
+   "pt": [
+    35.22,
+    31.78
+   ],
+   "where": "not-core",
+   "from": "gaugameles-331"
+  },
+  {
+   "name": "Damas",
+   "pt": [
+    36.29,
+    33.51
+   ],
+   "where": "core",
+   "from": "babylone-539",
+   "to": "issos-333"
+  },
+  {
+   "name": "Damas",
+   "pt": [
+    36.29,
+    33.51
+   ],
+   "where": "not-core",
+   "from": "gaugameles-331"
+  },
+  {
+   "name": "Tyr",
+   "pt": [
+    35.3,
+    33.3
+   ],
+   "where": "core",
+   "from": "babylone-539",
+   "to": "issos-333"
+  },
+  {
+   "name": "Taxila",
+   "pt": [
+    72.83,
+    33.74
+   ],
+   "where": "core",
+   "from": "indus-518",
+   "to": "gaugameles-331"
+  },
+  {
+   "name": "Samarcande",
+   "pt": [
+    66.96,
+    39.65
+   ],
+   "where": "core",
+   "from": "massagetes-530"
+  },
+  {
+   "name": "Bactres (Balkh)",
+   "pt": [
+    66.9,
+    36.76
+   ],
+   "where": "core",
+   "from": "massagetes-530"
+  },
+  {
+   "name": "Byzance",
+   "pt": [
+    28.93,
+    41.02
+   ],
+   "where": "not-core",
+   "from": "pasargades-550",
+   "to": "indus-518"
+  },
+  {
+   "name": "Byzance",
+   "pt": [
+    28.93,
+    41.02
+   ],
+   "where": "core",
+   "from": "scythes-513",
+   "to": "salamine-480"
+  },
+  {
+   "name": "Byzance",
+   "pt": [
+    28.93,
+    41.02
+   ],
+   "where": "not-core",
+   "from": "platees-479"
+  },
+  {
+   "name": "Athènes",
+   "pt": [
+    23.73,
+    37.98
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Sparte",
+   "pt": [
+    22.43,
+    37.07
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Pella",
+   "pt": [
+    22.52,
+    40.76
+   ],
+   "where": "vassal",
+   "from": "scythes-513",
+   "to": "salamine-480"
+  },
+  {
+   "name": "Pella",
+   "pt": [
+    22.52,
+    40.76
+   ],
+   "where": "not-core",
+   "from": "platees-479"
+  },
+  {
+   "name": "Larissa",
+   "pt": [
+    22.42,
+    39.64
+   ],
+   "where": "core",
+   "from": "salamine-480",
+   "to": "salamine-480"
+  },
+  {
+   "name": "Salamine de Chypre",
+   "pt": [
+    33.9,
+    35.18
+   ],
+   "where": "core",
+   "from": "peluse-525",
+   "to": "issos-333"
+  },
+  {
+   "name": "Cyrène",
+   "pt": [
+    21.86,
+    32.82
+   ],
+   "where": "vassal",
+   "from": "peluse-525",
+   "to": "callias-449"
+  },
+  {
+   "name": "Rome",
+   "pt": [
+    12.5,
+    41.9
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Carthage",
+   "pt": [
+    10.32,
+    36.85
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Méroé",
+   "pt": [
+    33.75,
+    16.94
+   ],
+   "where": "not-core"
+  },
+  {
+   "name": "Delhi",
+   "pt": [
+    77.2,
+    28.6
+   ],
+   "where": "not-core"
+  }
+ ]
+}

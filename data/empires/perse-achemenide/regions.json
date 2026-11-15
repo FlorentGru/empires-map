@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Empire perse",
+    "summary": "Fondé par Cyrus le Grand, qui unit Perses et Mèdes vers 550 av. J.-C., l'empire des Achéménides s'étend en vingt ans de l'Égée à l'Indus. Le Grand Roi le gouverne par des satrapies reliées par la Route royale, en laissant aux peuples soumis leurs dieux et leurs coutumes, jusqu'à la conquête d'Alexandre.",
+    "years": [-550, -330]
+  },
+  {
+    "name": "Cyrénaïque",
+    "summary": "Région de l'est de l'actuelle Libye, autour de la cité grecque de Cyrène et de ses voisines. Après la conquête de l'Égypte par Cambyse, ses rois grecs se soumettent et versent tribut au Grand Roi, sans être administrés directement comme une satrapie.",
+    "years": [-525, -333]
+  },
+  {
+    "name": "Macédoine",
+    "summary": "Royaume du nord de la Grèce, encore modeste, qui reconnaît la suzeraineté perse vers 510 av. J.-C. et fournit des troupes à Xerxès en 480. Il redevient indépendant après Platées ; un siècle et demi plus tard, ses rois Philippe II et Alexandre renversent l'empire perse.",
+    "years": [-513, -480]
+  }
+]

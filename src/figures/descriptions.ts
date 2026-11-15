@@ -279,6 +279,11 @@ export const FACTION_INFO: Record<Faction, FigureInfo> = {
     era: 'IIIe – Ier siècle av. J.-C.',
     text: "Peuples berbères de l'actuelle Algérie et de l'ouest de la Tunisie, les Numides combattent à cru sur de petits chevaux, guidés sans mors, par la voix et une simple corde. Leur cavalerie légère harcèle l'ennemi à coups de javelots et feint la fuite pour l'attirer. Alliée de Carthage sous Hannibal, elle passe à Rome avec le roi Massinissa et contribue à la victoire de Zama (-202).",
   },
+  mesopotamiens: {
+    label: 'Peuples du Proche-Orient ancien',
+    era: 'IXe – IVe siècle av. J.-C.',
+    text: "Les Assyriens, les Mèdes du plateau iranien, les Babyloniens et les Lydiens d'Anatolie, dont le royaume de Crésus, forment un ensemble de peuples aux armées variées. Ces armées associent chars, cavaliers, archers et lanciers protégés par de grands boucliers d'osier. Cyrus le Grand les soumet entre 550 et 539 av. J.-C. Leurs contingents servent ensuite dans les armées du Grand Roi.",
+  },
   'francais-ancien-regime': {
     label: "Français d'Ancien Régime",
     era: 'XVIe – XVIIIe s.',
@@ -651,6 +656,11 @@ export const ARCHETYPE_INFO: Record<Archetype, FigureInfo> = {
     label: 'Askia',
     era: 'Empire songhaï (1493-1591)',
     text: "C'est le titre de la dynastie fondée en 1493 par Mohammed Touré, général de Sonni Ali, qui prend le pouvoir à Gao. L'Askia gouverne avec des ministres et des gouverneurs de province, s'appuie sur les lettrés musulmans de Tombouctou et lève une armée permanente. Le plus célèbre, l'Askia Mohammed, reçoit au Caire et à La Mecque le titre de calife du Soudan.",
+  },
+  'grand-roi': {
+    label: 'Grand Roi',
+    era: 'Perse achéménide (550-330 av. J.-C.)',
+    text: "Le souverain achéménide se dit « roi des rois ». Il règne depuis Suse, Persépolis, Ecbatane et Babylone sur des satrapies, des provinces confiées à des gouverneurs. On se prosterne devant lui (proskynèse), et ses inscriptions, comme celle de Behistoun, proclament qu'il tient son pouvoir d'Ahura Mazda.",
   },
   prelat: {
     label: 'Évêque ou abbé',

@@ -87,4 +87,5 @@ export const FACTION_COLORS = {
   marocains: '#a8282a',
   mesoamericains: '#b02a22',
   numides: '#b08a4a',
+  mesopotamiens: '#a04a2a',
 } satisfies Record<Faction, string>;

@@ -860,6 +860,26 @@ export const ESP_SOLDIER_SPECS = {
     weapon:
       rect(23.6, 8, 0.9, 22, WOOD) + path('M24.05 4.4L25.2 8.4L22.9 8.4Z', STEEL) + rect(25.8, 6, 0.9, 24, WOOD) + path('M26.25 2.2L27.4 6.2L25.1 6.2Z', STEEL),
   },
+  mesopotamiens: {
+    skin: '#b98a5e',
+    tunic: '#a04a2a',
+    legs: 'bare',
+    boots: '#4a2f1a',
+    skirt: '#a04a2a',
+    deco: stroke('M9.4 33H22.6', GOLD, 0.9) + stroke('M10.6 33V34.8M13.2 33V34.8M15.8 33V34.8M18.4 33V34.8M21 33V34.8', GOLD, 0.8),
+    head:
+      path('M11.6 8.4Q13 4 16 -0.6Q19 4 20.4 8.4Q16 6.6 11.6 8.4Z', '#8a9096') +
+      stroke('M11.9 7.2Q16 5.6 20.1 7.2', STEEL, 0.8) +
+      path('M12.4 9.4Q12 16.6 16 18.2Q20 16.6 19.6 9.4Q16 12.8 12.4 9.4Z', '#1c1714') +
+      circ(13.2, 13.2, 0.9, '#1c1714', 'stroke="none"') +
+      circ(16, 15.6, 0.9, '#1c1714', 'stroke="none"') +
+      circ(18.8, 13.2, 0.9, '#1c1714', 'stroke="none"'),
+    shield:
+      circ(8.5, 23, 6.5, '#c9a878', 'stroke="#8a6a3a" stroke-width="1"') +
+      circ(8.5, 23, 4, 'none', 'stroke="#8a6a3a" stroke-width="0.8"') +
+      circ(8.5, 23, 1.6, '#8a6a3a'),
+    weapon: rect(23.6, 4, 0.9, 28, WOOD) + path('M24.05 1.2L25.2 5.2L22.9 5.2Z', STEEL),
+  },
   'francais-ancien-regime': {
     tunic: '#efe6cc',
     legs: 'pants',

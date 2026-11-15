@@ -2396,7 +2396,8 @@
     "empires": [
       "china",
       "mongols",
-      "alexandre"
+      "alexandre",
+      "perse-achemenide"
     ]
   },
   {
@@ -4917,7 +4918,8 @@
     "founded": -334,
     "rank": 3,
     "empires": [
-      "alexandre"
+      "alexandre",
+      "perse-achemenide"
     ]
   },
   {
@@ -4953,7 +4955,8 @@
     "founded": -334,
     "rank": 3,
     "empires": [
-      "alexandre"
+      "alexandre",
+      "perse-achemenide"
     ]
   },
   {
@@ -4986,7 +4989,8 @@
     "founded": -331,
     "rank": 3,
     "empires": [
-      "alexandre"
+      "alexandre",
+      "perse-achemenide"
     ]
   },
   {
@@ -5024,7 +5028,14 @@
       32.19
     ],
     "founded": -4000,
-    "rank": 2
+    "rank": 2,
+    "capitalOf": [
+      {
+        "empire": "perse-achemenide",
+        "from": -522,
+        "to": -330
+      }
+    ]
   },
   {
     "id": "persepolis",
@@ -5071,7 +5082,8 @@
     "founded": -1500,
     "rank": 3,
     "empires": [
-      "alexandre"
+      "alexandre",
+      "perse-achemenide"
     ]
   },
   {
@@ -5107,7 +5119,8 @@
     "founded": -600,
     "rank": 3,
     "empires": [
-      "alexandre"
+      "alexandre",
+      "perse-achemenide"
     ]
   },
   {
@@ -7256,5 +7269,222 @@
     "empires": [
       "carthage"
     ]
+  },
+  {
+    "id": "pasargades",
+    "modern": "Pasargades, Iran",
+    "names": [
+      {
+        "name": "Pasargades"
+      }
+    ],
+    "coords": [
+      53.17,
+      30.2
+    ],
+    "founded": -550,
+    "rank": 2,
+    "capitalOf": [
+      {
+        "empire": "perse-achemenide",
+        "from": -550,
+        "to": -522
+      }
+    ]
+  },
+  {
+    "id": "peluse",
+    "modern": "Tell el-Farama, Égypte",
+    "names": [
+      {
+        "name": "Péluse"
+      }
+    ],
+    "coords": [
+      32.55,
+      31.04
+    ],
+    "founded": -1500,
+    "rank": 3,
+    "empires": [
+      "perse-achemenide"
+    ]
+  },
+  {
+    "id": "behistoun",
+    "modern": "Bisotoun, Iran",
+    "names": [
+      {
+        "name": "Behistoun"
+      }
+    ],
+    "coords": [
+      47.44,
+      34.39
+    ],
+    "founded": -522,
+    "rank": 3,
+    "empires": [
+      "perse-achemenide"
+    ]
+  },
+  {
+    "id": "opis",
+    "modern": "près de Bagdad, Irak",
+    "names": [
+      {
+        "name": "Opis"
+      }
+    ],
+    "coords": [
+      44.5,
+      33.4
+    ],
+    "founded": -539,
+    "rank": 3,
+    "empires": [
+      "perse-achemenide"
+    ]
+  },
+  {
+    "id": "cunaxa",
+    "modern": "près de Falloujah, Irak",
+    "names": [
+      {
+        "name": "Counaxa"
+      }
+    ],
+    "coords": [
+      44.2,
+      33.4
+    ],
+    "founded": -401,
+    "rank": 3,
+    "empires": [
+      "perse-achemenide"
+    ]
+  },
+  {
+    "id": "salamine",
+    "modern": "Salamine, Grèce",
+    "names": [
+      {
+        "name": "Salamine"
+      }
+    ],
+    "coords": [
+      23.52,
+      37.96
+    ],
+    "founded": -1200,
+    "rank": 3,
+    "empires": [
+      "perse-achemenide"
+    ]
+  },
+  {
+    "id": "platees",
+    "modern": "Plataies, Grèce",
+    "names": [
+      {
+        "name": "Platées"
+      }
+    ],
+    "coords": [
+      23.27,
+      38.22
+    ],
+    "founded": -1200,
+    "rank": 3,
+    "empires": [
+      "perse-achemenide"
+    ]
+  },
+  {
+    "id": "thermopyles",
+    "modern": "Thermopyles, Grèce",
+    "names": [
+      {
+        "name": "Thermopyles"
+      }
+    ],
+    "coords": [
+      22.54,
+      38.8
+    ],
+    "founded": -480,
+    "rank": 3,
+    "empires": [
+      "perse-achemenide"
+    ]
+  },
+  {
+    "id": "milet",
+    "modern": "Milet, Turquie",
+    "names": [
+      {
+        "name": "Milet"
+      }
+    ],
+    "coords": [
+      27.28,
+      37.53
+    ],
+    "founded": -1500,
+    "rank": 3,
+    "empires": [
+      "perse-achemenide"
+    ]
+  },
+  {
+    "id": "arbeles",
+    "modern": "Erbil, Irak",
+    "names": [
+      {
+        "name": "Arbèles"
+      }
+    ],
+    "coords": [
+      43.99,
+      36.19
+    ],
+    "founded": -2000,
+    "rank": 3,
+    "empires": [
+      "perse-achemenide"
+    ]
+  },
+  {
+    "id": "marathon",
+    "modern": "Marathon, Grèce",
+    "names": [
+      {
+        "name": "Marathon"
+      }
+    ],
+    "coords": [
+      23.96,
+      38.15
+    ],
+    "founded": -490,
+    "rank": 3,
+    "empires": [
+      "perse-achemenide"
+    ]
+  },
+  {
+    "id": "memphis",
+    "modern": "Memphis, Égypte",
+    "names": [
+      {
+        "name": "Memphis"
+      }
+    ],
+    "coords": [
+      31.25,
+      29.85
+    ],
+    "founded": -3000,
+    "rank": 2
   }
 ]

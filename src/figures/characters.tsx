@@ -898,6 +898,29 @@ export const CHARACTER_SPECS = {
       line('M12 9.8Q14 11 16 10.2', '#2a1a10', 0.5),
     front: line('M10.2 21.4L9 25.6Q6.2 31.6 5 37.8', STEEL_C, 1) + circ(10.4, 21.6, 1.4, GOLD, NS),
   },
+  'grand-roi': {
+    skin: '#c58f5c',
+    robe: '#5a2a6a',
+    body: WIDE,
+    deco:
+      path('M10 18.4Q5.2 24 4.6 34Q7.8 35 9.4 30Q10.6 25 12.4 21Z', '#5a2a6a', NS) +
+      path('M26 18.4Q30.8 24 31.4 34Q28.2 35 26.6 30Q25.4 25 23.6 21Z', '#5a2a6a', NS) +
+      rect(10.4, 24, 15.2, 2, GOLD, 0, NS) +
+      line('M10.2 19.4Q18 22 25.8 19.4', GOLD, 0.9) +
+      line('M18 22V46', GOLD, 0.8),
+    head:
+      path('M12.2 8.8V2.2H13.8V0.4H15.6V2.2H20.4V0.4H22.2V2.2H23.8V8.8Q18 10 12.2 8.8Z', GOLD) +
+      line('M12.2 6.4Q18 7.8 23.8 6.4', '#8a6a1a', 0.6) +
+      circ(18, 5, 0.8, '#c0262a', NS) +
+      path('M13.2 12.8L13.4 20.4Q18 23.2 22.6 20.4L22.8 12.8Q18 15.6 13.2 12.8Z', '#1c1714') +
+      circ(15, 16.2, 0.8, '#2a2420', NS) +
+      circ(18, 18.4, 0.8, '#2a2420', NS) +
+      circ(21, 16.2, 0.8, '#2a2420', NS) +
+      circ(15.2, 19.6, 0.8, '#2a2420', NS) +
+      circ(20.8, 19.6, 0.8, '#2a2420', NS) +
+      moust('#1c1714'),
+    front: line('M25 20L30.6 40', GOLD, 1.1) + circ(25, 20, 1.2, GOLD, NS),
+  },
 } satisfies Record<Archetype, CharSpec>;
 
 export function characterSvg(archetype: Archetype, tint?: string): string {
