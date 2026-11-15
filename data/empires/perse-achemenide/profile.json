@@ -1,0 +1,570 @@
+{
+  "empire": "perse-achemenide",
+  "periods": [
+    {
+      "id": "cyrus-et-cambyse",
+      "name": "Cyrus et Cambyse, les conquérants",
+      "start": -550,
+      "end": -522,
+      "population": {
+        "total": {
+          "value": 10000000,
+          "low": 6000000,
+          "high": 15000000,
+          "note": "Ordre de grandeur reconstruit ; aucun recensement antique.",
+          "year": -530,
+          "source": {
+            "label": "Wikipédia : Empire achéménide",
+            "url": "https://fr.wikipedia.org/wiki/Empire_ach%C3%A9m%C3%A9nide"
+          }
+        },
+        "cities": [
+          {
+            "name": "Babylone",
+            "population": {
+              "value": 100000,
+              "low": 50000,
+              "high": 200000,
+              "note": "Estimation très large, d’après la surface bâtie.",
+              "year": -539,
+              "source": {
+                "label": "Wikipédia : Babylone",
+                "url": "https://fr.wikipedia.org/wiki/Babylone"
+              }
+            }
+          },
+          {
+            "name": "Sardes",
+            "population": {
+              "value": 40000,
+              "low": 20000,
+              "high": 80000,
+              "note": "Ordre de grandeur.",
+              "year": -546,
+              "source": {
+                "label": "Wikipédia : Sardes",
+                "url": "https://fr.wikipedia.org/wiki/Sardes"
+              }
+            }
+          },
+          {
+            "name": "Memphis",
+            "population": {
+              "value": 50000,
+              "low": 25000,
+              "high": 100000,
+              "note": "Estimation incertaine.",
+              "year": -525,
+              "source": {
+                "label": "Wikipédia : Memphis (Égypte)",
+                "url": "https://fr.wikipedia.org/wiki/Memphis_(%C3%89gypte)"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 25,
+          "low": 15,
+          "high": 35,
+          "note": "Estimation reconstruite, sans valeur de mesure précise.",
+          "year": -530,
+          "source": {
+            "label": "Wikipédia : Empire achéménide",
+            "url": "https://fr.wikipedia.org/wiki/Empire_ach%C3%A9m%C3%A9nide"
+          }
+        },
+        "resources": [
+          "Blé et orge de Babylonie",
+          "Or et argent des trésors lydiens",
+          "Bétail et chevaux des plateaux iraniens",
+          "Bois et pourpre de Phénicie"
+        ],
+        "currency": "Pas de monnaie perse encore : on pèse l’argent ; les monnaies lydiennes de Crésus circulent en Ionie.",
+        "taxation": "Cadeaux et tributs en nature des peuples soumis ; les temples gardent leurs revenus.",
+        "trade": "Routes caravanières reliant l’Iran, la Mésopotamie et l’Anatolie ; ports phéniciens de Tyr et de Sidon."
+      },
+      "army": {
+        "size": {
+          "value": 100000,
+          "low": 50000,
+          "high": 200000,
+          "note": "Estimation reconstruite ; sources antiques peu fiables.",
+          "year": -546,
+          "source": {
+            "label": "Wikipédia : Armée achéménide",
+            "url": "https://fr.wikipedia.org/wiki/Arm%C3%A9e_ach%C3%A9m%C3%A9nide"
+          }
+        },
+        "composition": "Cavaliers et archers perses et mèdes ; lanciers ; contingents des peuples soumis.",
+        "recruitment": "Levée des nobles perses et mèdes, renforcée par les peuples vaincus.",
+        "famousUnits": [
+          "Cavaliers perses",
+          "Archers à pied",
+          "Immortels, garde royale de 10 000 hommes"
+        ],
+        "innovations": [
+          "Cavalerie nombreuse",
+          "Corps d’élite permanent"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie absolue, héréditaire dans la famille des Achéménides.",
+        "head": "Le Grand Roi, appelé « roi des rois », qui règne par la grâce d’Ahura Mazda.",
+        "succession": "Désignation du fils par le roi, sans règle fixe : les rivalités de cour sont fréquentes.",
+        "institutions": "Conseil des sept grandes familles nobles ; cour itinérante entre Pasargades, Ecbatane et Babylone.",
+        "administration": "Des satrapes gouvernent les provinces conquises ; Cyrus maintient les rois et les institutions locales.",
+        "provinces": {
+          "value": 10,
+          "low": 6,
+          "high": 20,
+          "unit": "provinces",
+          "note": "Nombre incertain avant la réforme de Darius.",
+          "year": -530,
+          "source": {
+            "label": "Wikipédia : Satrapie",
+            "url": "https://fr.wikipedia.org/wiki/Satrapie"
+          }
+        },
+        "law": "Droit royal et coutumes locales respectées ; la parole du roi fait loi."
+      },
+      "society": {
+        "religions": [
+          "Mazdéisme (Ahura Mazda)",
+          "Cultes locaux respectés",
+          "Judaïsme, rétabli à Jérusalem"
+        ],
+        "languages": [
+          "Vieux perse",
+          "Élamite",
+          "Akkadien",
+          "Araméen"
+        ],
+        "structure": "Noblesse perse et mède au sommet, paysans et éleveurs, artisans, esclaves.",
+        "women": "Les femmes de la haute noblesse possèdent des biens et des domaines ; le harem royal nous est surtout connu par les Grecs, qui l’ont sans doute embelli."
+      },
+      "culture": {
+        "inventions": [
+          "Paradis (jardins clos)",
+          "Cylindre de Cyrus",
+          "Premier empire multiculturel"
+        ],
+        "works": [
+          "Tombeau de Cyrus à Pasargades",
+          "Palais de Pasargades"
+        ],
+        "scholars": [
+          "Mages perses",
+          "Prêtres de Babylone"
+        ]
+      },
+      "infrastructure": {
+        "roads": {
+          "value": 2700,
+          "low": 2000,
+          "high": 3000,
+          "note": "Seule la Route royale d’Anatolie est bien connue ; sa construction date surtout de Darius.",
+          "year": -540,
+          "source": {
+            "label": "Wikipédia : Route royale",
+            "url": "https://fr.wikipedia.org/wiki/Route_royale"
+          }
+        },
+        "summary": "Anciennes routes d’Asie Mineure et de Mésopotamie réutilisées ; Pasargades, ville de jardins et de palais."
+      },
+      "legacy": "En trente ans, un petit royaume de montagne unit l’Iran, l’Anatolie, la Mésopotamie et l’Égypte : le premier empire à l’échelle de plusieurs civilisations."
+    },
+    {
+      "id": "darius-et-xerxes",
+      "name": "Darius et Xerxès, le Grand Roi",
+      "start": -522,
+      "end": -465,
+      "population": {
+        "total": {
+          "value": 35000000,
+          "low": 17000000,
+          "high": 50000000,
+          "note": "Estimation reconstruite ; ordre de grandeur de Maddison et d’historiens.",
+          "year": -500,
+          "source": {
+            "label": "Wikipédia : Empire achéménide",
+            "url": "https://fr.wikipedia.org/wiki/Empire_ach%C3%A9m%C3%A9nide"
+          }
+        },
+        "cities": [
+          {
+            "name": "Babylone",
+            "population": {
+              "value": 150000,
+              "low": 70000,
+              "high": 250000,
+              "note": "Estimation très large.",
+              "year": -500,
+              "source": {
+                "label": "Wikipédia : Babylone",
+                "url": "https://fr.wikipedia.org/wiki/Babylone"
+              }
+            }
+          },
+          {
+            "name": "Suse",
+            "population": {
+              "value": 50000,
+              "low": 20000,
+              "high": 100000,
+              "note": "Ordre de grandeur.",
+              "year": -500,
+              "source": {
+                "label": "Wikipédia : Suse",
+                "url": "https://fr.wikipedia.org/wiki/Suse"
+              }
+            }
+          },
+          {
+            "name": "Memphis",
+            "population": {
+              "value": 80000,
+              "low": 40000,
+              "high": 120000,
+              "note": "Estimation incertaine.",
+              "year": -500,
+              "source": {
+                "label": "Wikipédia : Memphis (Égypte)",
+                "url": "https://fr.wikipedia.org/wiki/Memphis_(%C3%89gypte)"
+              }
+            }
+          },
+          {
+            "name": "Persépolis",
+            "population": {
+              "value": 20000,
+              "low": 5000,
+              "high": 50000,
+              "note": "Cité cérémonielle, peu peuplée hors des fêtes.",
+              "year": -480,
+              "source": {
+                "label": "Wikipédia : Persépolis",
+                "url": "https://fr.wikipedia.org/wiki/Pers%C3%A9polis"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 30,
+          "low": 20,
+          "high": 40,
+          "note": "Estimation reconstruite et très incertaine.",
+          "year": -500,
+          "source": {
+            "label": "Wikipédia : Empire achéménide",
+            "url": "https://fr.wikipedia.org/wiki/Empire_ach%C3%A9m%C3%A9nide"
+          }
+        },
+        "resources": [
+          "Blé et orge de Babylonie et d’Égypte",
+          "Or de l’Inde et d’Asie centrale",
+          "Argent de l’Anatolie",
+          "Bois du Liban",
+          "Lapis-lazuli et turquoise"
+        ],
+        "currency": "Darique d’or et sigle d’argent, frappés pour le roi ; l’argent circule aussi au poids.",
+        "taxation": "Tribut annuel fixé par satrapie, en argent ou en nature ; environ 14 560 talents selon Hérodote.",
+        "trade": "Route royale, ports de la mer Rouge et du golfe Persique, caravanes d’Arabie et d’Asie centrale."
+      },
+      "army": {
+        "size": {
+          "value": 250000,
+          "low": 80000,
+          "high": 300000,
+          "note": "Estimation moderne ; Hérodote dit plus de 2 millions pour Xerxès.",
+          "year": -480,
+          "source": {
+            "label": "Wikipédia : Armée achéménide",
+            "url": "https://fr.wikipedia.org/wiki/Arm%C3%A9e_ach%C3%A9m%C3%A9nide"
+          }
+        },
+        "composition": "Infanterie légère d’archers et de lanciers, cavalerie, contingents des peuples, flotte phénicienne, égyptienne et grecque.",
+        "recruitment": "Levée royale chez les Perses et les Mèdes ; contingents fournis par chaque satrapie ; mercenaires grecs.",
+        "famousUnits": [
+          "Immortels (10 000 hommes)",
+          "Cavaliers mèdes",
+          "Archers perses",
+          "Flotte phénicienne"
+        ],
+        "innovations": [
+          "Ponts de bateaux sur l’Hellespont",
+          "Canal de l’Athos",
+          "Flotte multinationale"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie absolue de droit divin ; administration centralisée en satrapies.",
+        "head": "Le Grand Roi, qui règne par la grâce d’Ahura Mazda.",
+        "succession": "Le roi désigne son héritier parmi ses fils ; l’épouse royale influence souvent le choix.",
+        "institutions": "Cour royale, chancellerie en araméen, sept familles nobles, « yeux et oreilles du roi » pour contrôler les satrapes.",
+        "administration": "Une vingtaine de satrapies, chacune sous un satrape, un chef de garnison et un secrétaire royal.",
+        "provinces": {
+          "value": 20,
+          "low": 20,
+          "high": 31,
+          "unit": "satrapies",
+          "note": "Vingt selon Hérodote ; plus de vingt-cinq dans les inscriptions.",
+          "year": -500,
+          "source": {
+            "label": "Wikipédia : Satrapie",
+            "url": "https://fr.wikipedia.org/wiki/Satrapie"
+          }
+        },
+        "law": "Lois du roi, droit local respecté ; Darius fait codifier le droit égyptien."
+      },
+      "society": {
+        "religions": [
+          "Mazdéisme (Ahura Mazda)",
+          "Cultes babyloniens et égyptiens",
+          "Judaïsme",
+          "Cultes grecs d’Ionie"
+        ],
+        "languages": [
+          "Vieux perse",
+          "Araméen impérial",
+          "Élamite",
+          "Akkadien",
+          "Égyptien"
+        ],
+        "structure": "Noblesse perse, fonctionnaires, artisans spécialisés, paysans, esclaves ; ouvriers payés à Persépolis.",
+        "women": "Les tablettes de Persépolis montrent des femmes recevant des rations et dirigeant des ateliers ; les reines possèdent des domaines."
+      },
+      "culture": {
+        "inventions": [
+          "Route royale",
+          "Darique",
+          "Satrapies",
+          "Qanats (diffusion)"
+        ],
+        "works": [
+          "Apadana de Persépolis",
+          "Inscription de Behistoun",
+          "Palais de Suse"
+        ],
+        "scholars": [
+          "Scylax de Caryanda",
+          "Hécatée de Milet",
+          "Mages zoroastriens"
+        ]
+      },
+      "infrastructure": {
+        "roads": {
+          "value": 2700,
+          "low": 2500,
+          "high": 3000,
+          "note": "Route Sardes–Suse ; autres axes vers Persépolis, Ecbatane et l’Égypte.",
+          "year": -500,
+          "source": {
+            "label": "Wikipédia : Route royale",
+            "url": "https://fr.wikipedia.org/wiki/Route_royale"
+          }
+        },
+        "summary": "Route royale de Sardes à Suse (environ 110 relais), canal du Nil à la mer Rouge, ponts de bateaux, Persépolis."
+      },
+      "legacy": "Darius laisse un modèle d’administration impériale, repris par les Séleucides, les Parthes, les Sassanides et le monde islamique."
+    },
+    {
+      "id": "du-long-regne-au-dernier-darius",
+      "name": "Du long règne au dernier Darius",
+      "start": -465,
+      "end": -330,
+      "population": {
+        "total": {
+          "value": 30000000,
+          "low": 15000000,
+          "high": 45000000,
+          "note": "Estimation reconstruite ; l’Égypte est perdue entre 404 et 343.",
+          "year": -400,
+          "source": {
+            "label": "Wikipédia : Empire achéménide",
+            "url": "https://fr.wikipedia.org/wiki/Empire_ach%C3%A9m%C3%A9nide"
+          }
+        },
+        "cities": [
+          {
+            "name": "Babylone",
+            "population": {
+              "value": 100000,
+              "low": 50000,
+              "high": 200000,
+              "note": "Estimation très large.",
+              "year": -400,
+              "source": {
+                "label": "Wikipédia : Babylone",
+                "url": "https://fr.wikipedia.org/wiki/Babylone"
+              }
+            }
+          },
+          {
+            "name": "Suse",
+            "population": {
+              "value": 60000,
+              "low": 30000,
+              "high": 100000,
+              "note": "Ordre de grandeur.",
+              "year": -400,
+              "source": {
+                "label": "Wikipédia : Suse",
+                "url": "https://fr.wikipedia.org/wiki/Suse"
+              }
+            }
+          },
+          {
+            "name": "Sardes",
+            "population": {
+              "value": 50000,
+              "low": 25000,
+              "high": 80000,
+              "note": "Ordre de grandeur.",
+              "year": -400,
+              "source": {
+                "label": "Wikipédia : Sardes",
+                "url": "https://fr.wikipedia.org/wiki/Sardes"
+              }
+            }
+          },
+          {
+            "name": "Persépolis",
+            "population": {
+              "value": 20000,
+              "low": 5000,
+              "high": 50000,
+              "note": "Cité cérémonielle.",
+              "year": -400,
+              "source": {
+                "label": "Wikipédia : Persépolis",
+                "url": "https://fr.wikipedia.org/wiki/Pers%C3%A9polis"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 25,
+          "low": 15,
+          "high": 35,
+          "note": "Estimation reconstruite, très incertaine.",
+          "year": -400,
+          "source": {
+            "label": "Wikipédia : Empire achéménide",
+            "url": "https://fr.wikipedia.org/wiki/Empire_ach%C3%A9m%C3%A9nide"
+          }
+        },
+        "resources": [
+          "Blé et orge de Babylonie",
+          "Or et argent du trésor royal",
+          "Chevaux de Médie et de Bactriane",
+          "Lin et papyrus d’Égypte",
+          "Bois du Liban"
+        ],
+        "currency": "Darique d’or ; le roi finance des cités grecques avec ce métal.",
+        "taxation": "Tribut en argent et en nature fixé par satrapie ; impôts supplémentaires pour la guerre.",
+        "trade": "Route royale, golfe Persique, mer Rouge ; commerce grec en mer Égée, tolérée par le roi."
+      },
+      "army": {
+        "size": {
+          "value": 100000,
+          "low": 50000,
+          "high": 200000,
+          "note": "Ordre de grandeur à Gaugamèles ; les Anciens donnent 250 000 à un million.",
+          "year": -334,
+          "source": {
+            "label": "Wikipédia : Armée achéménide",
+            "url": "https://fr.wikipedia.org/wiki/Arm%C3%A9e_ach%C3%A9m%C3%A9nide"
+          }
+        },
+        "composition": "Cavalerie perse, mèdes, bactriens, infanterie légère, mercenaires grecs de plus en plus nombreux, chars à faux et éléphants.",
+        "recruitment": "Levées par satrapie, mercenaires grecs payés en or ; fatigue de la levée perse.",
+        "famousUnits": [
+          "Immortels",
+          "Cavaliers bactriens",
+          "Mercenaires grecs",
+          "Chars à faux"
+        ],
+        "innovations": [
+          "Mercenaires grecs en grand nombre",
+          "Chars à faux",
+          "Or utilisé comme arme diplomatique"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie absolue ; autorité royale affaiblie par les révoltes de satrapes et par les crises de succession.",
+        "head": "Le Grand Roi, de la lignée de Darius jusqu’à Darius III, qui vient d’une branche collatérale.",
+        "succession": "Crises fréquentes : meurtres de princes, assassinats de rois (Xerxès, Artaxerxès III).",
+        "institutions": "Cour royale, vizirs, satrapes, secrétaires ; l’araméen reste la langue de l’administration.",
+        "administration": "Satrapies ; des satrapes très autonomes, qui parfois se révoltent (grande révolte des satrapes, 366-360).",
+        "provinces": {
+          "value": 20,
+          "low": 20,
+          "high": 30,
+          "unit": "satrapies",
+          "note": "Variable selon les périodes ; l’Égypte est perdue de 404 à 343.",
+          "year": -400,
+          "source": {
+            "label": "Wikipédia : Satrapie",
+            "url": "https://fr.wikipedia.org/wiki/Satrapie"
+          }
+        },
+        "law": "Droit du roi et coutumes locales ; la Bible rapporte la confirmation de la Loi juive sous Artaxerxès."
+      },
+      "society": {
+        "religions": [
+          "Mazdéisme (Ahura Mazda, Anahita, Mithra)",
+          "Cultes babyloniens et égyptiens",
+          "Judaïsme",
+          "Cultes grecs"
+        ],
+        "languages": [
+          "Vieux perse",
+          "Araméen impérial",
+          "Élamite",
+          "Akkadien",
+          "Grec (mercenaires)"
+        ],
+        "structure": "Noblesse perse, grands propriétaires, artisans, paysans, esclaves ; l’aristocratie s’enrichit du pouvoir.",
+        "women": "Les reines mères comme Parysatis exercent une grande influence politique ; peu de sources sur les autres femmes."
+      },
+      "culture": {
+        "inventions": [
+          "Araméen impérial",
+          "Poids et mesures royaux",
+          "Canal du Nil à la mer Rouge"
+        ],
+        "works": [
+          "Palais de Persépolis",
+          "Tombeaux royaux de Naqsh-e Rostam",
+          "Anabase de Xénophon"
+        ],
+        "scholars": [
+          "Ctésias de Cnide",
+          "Xénophon",
+          "Mages zoroastriens"
+        ]
+      },
+      "infrastructure": {
+        "roads": {
+          "value": 2700,
+          "low": 2500,
+          "high": 3000,
+          "note": "Réseau hérité de Darius ; entretenu par les satrapes.",
+          "year": -400,
+          "source": {
+            "label": "Wikipédia : Route royale",
+            "url": "https://fr.wikipedia.org/wiki/Route_royale"
+          }
+        },
+        "summary": "Route royale entretenue, ports de Phénicie et du golfe Persique, qanats en Iran."
+      },
+      "legacy": "Un empire encore immense, mais fragilisé, qui s’effondre en quatre ans face à Alexandre ; son modèle administratif passe aux royaumes hellénistiques."
+    }
+  ]
+}

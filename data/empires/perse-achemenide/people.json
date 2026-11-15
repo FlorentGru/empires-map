@@ -1,0 +1,343 @@
+[
+  {
+    "id": "cyrus-le-grand",
+    "name": "Cyrus II, dit Cyrus le Grand",
+    "archetype": "grand-roi",
+    "faction": "parthes-perses",
+    "born": -590,
+    "died": -530,
+    "title": "Fondateur de l’Empire achéménide",
+    "bio": "Cyrus II est roi d’Anshan, un petit royaume de Perside, quand il se révolte vers 550 contre son suzerain mède Astyage. Il s’empare d’Ecbatane, puis bat Crésus de Lydie (546) et prend Babylone (539). En une vingtaine d’années, il fait de la Perse le plus vaste empire que le monde ait connu. Les Grecs, Hérodote et Xénophon en tête, l’admirent comme un souverain modèle ; Hérodote raconte même une enfance légendaire, proche de celle d’autres fondateurs. Sa propre voix nous vient du cylindre de Cyrus, un texte babylonien où il se présente comme l’élu du dieu Marduk, restitue leurs dieux aux cités et permet aux exilés de rentrer chez eux, ce que la Bible hébraïque confirme pour les Juifs. Les historiens débattent de la portée de ce texte : propagande habile ou politique de tolérance, il reste unique pour son époque. Cyrus meurt vers 530 en combattant les Massagètes, au nord-est ; son tombeau est resté à Pasargades, sa capitale.",
+    "keyFacts": [
+      "Vers 550 av. J.-C. : renverse le roi mède Astyage et unit Perses et Mèdes",
+      "546 : bat Crésus à la Thymbrée et prend Sardes",
+      "539 : entre dans Babylone ; cylindre de Cyrus",
+      "Vers 530 : meurt chez les Massagètes, selon Hérodote"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Cyrus II",
+        "url": "https://fr.wikipedia.org/wiki/Cyrus_II"
+      },
+      {
+        "label": "Wikipédia — Cylindre de Cyrus",
+        "url": "https://fr.wikipedia.org/wiki/Cylindre_de_Cyrus"
+      }
+    ]
+  },
+  {
+    "id": "cambyse-ii",
+    "name": "Cambyse II",
+    "archetype": "grand-roi",
+    "faction": "parthes-perses",
+    "born": -558,
+    "died": -522,
+    "title": "Conquérant de l’Égypte",
+    "bio": "Cambyse II est le fils aîné de Cyrus le Grand. Il règne de 530 à 522, d’abord en gouvernant Babylone pour son père, puis seul. Sa grande entreprise est la conquête de l’Égypte, qu’il mène en 525 : il bat Psammétique III à Péluse et prend Memphis. Les sources grecques, surtout Hérodote, le décrivent comme un fou : il aurait tué le bœuf Apis, profané des tombeaux, fait assassiner son frère Bardiya. Ces récits proviennent probablement de prêtres égyptiens hostiles et d’une propagande favorable à Darius, qui lui succède. Des inscriptions égyptiennes montrent un Cambyse qui prend le titre de pharaon et sacrifie aux dieux locaux. Ses campagnes en Libye et en Nubie échouent. Il meurt en 522, en rentrant d’Égypte, dans des circonstances obscures : accident, suicide ou assassinat. Sa mort ouvre la crise où Darius prend le pouvoir. Sa fiche historique est difficile à établir, tant les récits sont tardifs et partiaux.",
+    "keyFacts": [
+      "530 av. J.-C. : succède à Cyrus",
+      "525 : bat Psammétique III à Péluse et prend l’Égypte",
+      "Expéditions manquées contre Siwa, Carthage et la Nubie, selon Hérodote",
+      "522 : meurt en route vers la Perse"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Cambyse II",
+        "url": "https://fr.wikipedia.org/wiki/Cambyse_II"
+      },
+      {
+        "label": "Wikipédia — Bataille de Péluse (525 av. J.-C.)",
+        "url": "https://fr.wikipedia.org/wiki/Bataille_de_P%C3%A9luse_(525_av._J.-C.)"
+      }
+    ]
+  },
+  {
+    "id": "darius-ier",
+    "name": "Darius Ier, dit Darius le Grand",
+    "archetype": "grand-roi",
+    "faction": "parthes-perses",
+    "born": -550,
+    "died": -486,
+    "title": "Organisateur de l’empire",
+    "bio": "Darius Ier est un noble achéménide, lancier du roi Cambyse en Égypte, qui prend le pouvoir en 522 après avoir tué, avec six complices, le mage Gaumata. Il se présente comme le défenseur de la vérité, par la grâce d’Ahura Mazda, et fait graver son récit à Behistoun. En un an, il écrase neuf révoltes. Puis il organise l’empire : une vingtaine de satrapies, un tribut fixe, la darique d’or, la Route royale, le canal du Nil à la mer Rouge, le palais de Persépolis. Il pousse les frontières jusqu’à l’Indus et au Danube, mais ses campagnes contre les Scythes (513) puis contre Athènes (Marathon, 490) échouent. Les historiens modernes discutent la légitimité de son accession au trône, dont tout vient de sa propre version. Il meurt en 486, en préparant une nouvelle expédition ; il est enterré à Naqsh-e Rostam, près de Persépolis. Son fils Xerxès hérite d’un empire à son sommet.",
+    "keyFacts": [
+      "522 av. J.-C. : prend le trône, inscription de Behistoun",
+      "Vers 518 : annexe le Gandhara et la vallée de l’Indus",
+      "513 : campagne contre les Scythes",
+      "490 : son expédition échoue à Marathon",
+      "486 : meurt ; tombeau à Naqsh-e Rostam"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Darius Ier",
+        "url": "https://fr.wikipedia.org/wiki/Darius_Ier"
+      },
+      {
+        "label": "Wikipédia — Inscription de Behistun",
+        "url": "https://fr.wikipedia.org/wiki/Inscription_de_Behistun"
+      }
+    ]
+  },
+  {
+    "id": "atossa",
+    "name": "Atossa",
+    "archetype": "imperatrice",
+    "faction": "parthes-perses",
+    "born": -550,
+    "died": -475,
+    "title": "Reine mère, fille de Cyrus",
+    "bio": "Atossa est la fille de Cyrus le Grand. Elle épouse d’abord son frère Cambyse, puis le mage Gaumata, puis Darius Ier : trois mariages royaux, ce qui rattache la nouvelle famille de Darius à la lignée de Cyrus. Elle devient l’épouse la plus puissante de la cour, et la mère de Xerxès. Selon Hérodote, c’est elle qui, à la fin du règne de Darius, pousse celui-ci à désigner Xerxès, son fils aîné né depuis l’avènement de Darius, comme héritier, malgré les droits d’un fils plus âgé né d’un premier mariage. Elle aurait aussi encouragé Darius à envahir la Grèce ; ce passage est un récit grec peu sûr. Eschyle la met en scène dans sa tragédie Les Perses (472), où elle reçoit l’ombre de Darius, et la nouvelle de la défaite de Salamine. Aucune source perse ne parle d’elle directement, et son rôle exact à la cour reste difficile à mesurer ; les tablettes de Persépolis évoquent d’autres reines puissantes, dont Artystonè.",
+    "keyFacts": [
+      "Fille de Cyrus ; épouse de Cambyse, puis de Gaumata, puis de Darius Ier",
+      "Mère de Xerxès, qu’elle aurait fait désigner héritier",
+      "Personnage central des Perses d’Eschyle (472 av. J.-C.)",
+      "Selon Hérodote, soignée par le médecin grec Démocédès"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Atossa",
+        "url": "https://fr.wikipedia.org/wiki/Atossa"
+      },
+      {
+        "label": "Wikipédia — Les Perses (Eschyle)",
+        "url": "https://fr.wikipedia.org/wiki/Les_Perses_(Eschyle)"
+      }
+    ]
+  },
+  {
+    "id": "xerxes-ier",
+    "name": "Xerxès Ier",
+    "archetype": "grand-roi",
+    "faction": "parthes-perses",
+    "born": -519,
+    "died": -465,
+    "title": "Le roi des Thermopyles et de Salamine",
+    "bio": "Xerxès Ier succède à son père Darius en 486. Il écrase d’abord les révoltes d’Égypte puis de Babylone, qu’il punit durement. Il prépare ensuite l’invasion de la Grèce : ponts de bateaux sur l’Hellespont, canal à travers l’Athos, immenses dépôts de vivres. Hérodote lui prête plus de deux millions de soldats ; les modernes parlent de 80 000 à 200 000 hommes. Il force les Thermopyles, brûle Athènes, mais voit sa flotte battue à Salamine en 480, puis son armée à Platées (479). Les Grecs en font un tyran orgueilleux, fouettant la mer ; les inscriptions perses le montrent plutôt comme un bâtisseur, qui achève Persépolis et son apadana. Il meurt assassiné en 465, dans un complot de palais mené par le chef de sa garde Artaban, qui est peut-être aussi à l’origine de la mort de son fils aîné. Artaxerxès Ier lui succède. Son portrait garde l’empreinte de ses ennemis.",
+    "keyFacts": [
+      "486 av. J.-C. : monte sur le trône ; répression des révoltes d’Égypte et de Babylone",
+      "480 : franchit l’Hellespont ; Thermopyles, Athènes brûlée, Salamine",
+      "Poursuit la construction de Persépolis",
+      "465 : assassiné par Artaban"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Xerxès Ier",
+        "url": "https://fr.wikipedia.org/wiki/Xerx%C3%A8s_Ier"
+      },
+      {
+        "label": "Wikipédia — Bataille de Salamine",
+        "url": "https://fr.wikipedia.org/wiki/Bataille_de_Salamine"
+      }
+    ]
+  },
+  {
+    "id": "artaxerxes-ier",
+    "name": "Artaxerxès Ier",
+    "archetype": "grand-roi",
+    "faction": "parthes-perses",
+    "born": -500,
+    "died": -424,
+    "title": "« À la longue main », roi de la paix de Callias",
+    "bio": "Artaxerxès Ier est le troisième fils de Xerxès. Après l’assassinat de son père en 465, il élimine Artaban, le meurtrier, et son frère aîné Darius, et règne près de quarante ans. Il doit faire face à la révolte de l’Égypte menée par Inaros, soutenue par Athènes ; son général Mégabyze la réduit vers 454. Peu après, la guerre contre la ligue de Délos s’éteint dans un accord de fait, la paix de Callias (449), dont l’historicité est discutée. Son règne est calme : il confirme les privilèges des temples, accueille à sa cour l’exilé Thémistocle, et, selon la Bible, envoie en Judée Esdras puis Néhémie, son échanson, pour restaurer Jérusalem. Les Grecs l’appellent Makrocheir, « longue main », sans que l’on sache pourquoi. Il meurt en 424. Sa succession tourne au drame : son fils Xerxès II est tué en quarante-cinq jours, puis Darius II, qui reste, règne jusqu’en 404.",
+    "keyFacts": [
+      "465 av. J.-C. : monte sur le trône après l’assassinat de Xerxès",
+      "Vers 454 : Mégabyze vainc Inaros et reprend l’Égypte",
+      "Vers 449 : paix de Callias",
+      "Accueille Thémistocle ; envoie Néhémie à Jérusalem selon la Bible",
+      "424 : meurt ; querelle de succession"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Artaxerxès Ier",
+        "url": "https://fr.wikipedia.org/wiki/Artaxerx%C3%A8s_Ier"
+      },
+      {
+        "label": "Wikipédia — Paix de Callias",
+        "url": "https://fr.wikipedia.org/wiki/Paix_de_Callias"
+      }
+    ]
+  },
+  {
+    "id": "artaxerxes-ii",
+    "name": "Artaxerxès II",
+    "archetype": "grand-roi",
+    "faction": "parthes-perses",
+    "born": -453,
+    "died": -358,
+    "title": "Le roi de la paix du Roi",
+    "bio": "Artaxerxès II, dit Mnémon (« qui se souvient »), règne de 404 à 358, le plus long règne achéménide. Dès son avènement, son frère Cyrus le Jeune se révolte, mais il le bat et le tue à Cunaxa (401). L’Égypte, elle, fait sécession vers 404 et reste indépendante. Il soutient Athènes contre Sparte, qui avait attaqué les cités grecques d’Asie, puis dicte aux Grecs la paix d’Antalcidas (387), dite « paix du Roi » : les cités d’Asie lui reviennent. La fin de son règne est marquée par la révolte des satrapes d’Anatolie, puis par des intrigues de cour : plusieurs de ses fils se disputent le trône, et lui-même, selon Plutarque, fait exécuter l’un d’eux. Il est aussi un bâtisseur, à Suse et à Persépolis, et un propagateur du culte d’Anahita et de Mithra, divinités citées dans ses inscriptions. Il meurt à plus de quatre-vingts ans. Son fils Artaxerxès III lui succède après de sanglantes purges.",
+    "keyFacts": [
+      "404 av. J.-C. : monte sur le trône ; l’Égypte fait sécession",
+      "401 : bat et tue Cyrus le Jeune à Cunaxa",
+      "387 : paix d’Antalcidas, ou paix du Roi",
+      "Règne de 46 ans, le plus long de la dynastie",
+      "358 : meurt ; succession troublée"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Artaxerxès II",
+        "url": "https://fr.wikipedia.org/wiki/Artaxerx%C3%A8s_II"
+      },
+      {
+        "label": "Wikipédia — Bataille de Counaxa",
+        "url": "https://fr.wikipedia.org/wiki/Bataille_de_Counaxa"
+      }
+    ]
+  },
+  {
+    "id": "cyrus-le-jeune",
+    "name": "Cyrus le Jeune",
+    "archetype": "general",
+    "faction": "parthes-perses",
+    "born": -424,
+    "died": -401,
+    "title": "Prince rebelle, héros de l’Anabase",
+    "bio": "Cyrus le Jeune est le fils cadet de Darius II et de Parysatis. À seize ans, il devient satrape de Lydie, de Phrygie et de Cappadoce et reçoit le commandement des armées d’Asie Mineure. Il finance Sparte contre Athènes, ce qui contribue à la défaite athénienne en 404. À la mort de son père, sa mère le soutient contre son frère aîné Artaxerxès II. Il lève secrètement une armée, dont 13 000 mercenaires grecs, et marche sur Babylone en 401. Il meurt à Cunaxa en chargeant son frère. Xénophon, qui l’a connu, brosse de lui un portrait flatteur : courageux, généreux, fidèle à sa parole ; l’Athénien est partial, car il lui doit son aventure. Parysatis, après sa mort, se venge cruellement des meurtriers de son fils, selon Plutarque et Ctésias. L’échec de Cyrus a un effet inattendu : le retour des Dix Mille montre que de petites troupes grecques peuvent traverser l’empire.",
+    "keyFacts": [
+      "Vers 408 av. J.-C. : devient satrape d’Asie Mineure à 16 ans",
+      "Soutient Sparte contre Athènes",
+      "401 : marche sur Babylone avec les Dix Mille",
+      "401 : tué à Cunaxa par la garde de son frère"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Cyrus le Jeune",
+        "url": "https://fr.wikipedia.org/wiki/Cyrus_le_Jeune"
+      },
+      {
+        "label": "Wikipédia — Anabase (Xénophon)",
+        "url": "https://fr.wikipedia.org/wiki/Anabase_(X%C3%A9nophon)"
+      }
+    ]
+  },
+  {
+    "id": "artaxerxes-iii",
+    "name": "Artaxerxès III",
+    "archetype": "grand-roi",
+    "faction": "parthes-perses",
+    "born": -425,
+    "died": -338,
+    "title": "Reconquérant de l’Égypte",
+    "bio": "Artaxerxès III, appelé Ochos avant son avènement, succède à son père Artaxerxès II en 358. Selon les sources grecques, il fait massacrer une grande partie de sa famille pour s’assurer le trône. Il rétablit l’autorité royale sur les satrapes d’Asie Mineure et dissout les armées privées de ceux-ci. Après un premier échec en Égypte (351), il écrase la révolte de Sidon (345) puis envahit l’Égypte, qu’il reprend en 343 face à Nectanébo II, avec l’aide de mercenaires grecs, dont Mentor de Rhodes. Il réorganise le pays sous un satrape, Phérendatès. Il aurait aussi pillé des temples, mais ces récits proviennent surtout de sources grecques et égyptiennes tardives. Son vizir Bagoas, un eunuque d’origine égyptienne, l’assassine en 338, avec ses fils ; il place Arsès sur le trône, puis Darius III. L’empire est au sommet de sa force relative au moment où Philippe II unifie la Grèce.",
+    "keyFacts": [
+      "358 av. J.-C. : monte sur le trône",
+      "Vers 345 : prise de Sidon, après sa révolte",
+      "343 : reconquiert l’Égypte, Nectanébo II s’enfuit",
+      "338 : empoisonné par le vizir Bagoas"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Artaxerxès III",
+        "url": "https://fr.wikipedia.org/wiki/Artaxerx%C3%A8s_III"
+      },
+      {
+        "label": "Wikipédia — Nectanébo II",
+        "url": "https://fr.wikipedia.org/wiki/Nectan%C3%A9bo_II"
+      }
+    ]
+  },
+  {
+    "id": "darius-iii",
+    "name": "Darius III",
+    "archetype": "grand-roi",
+    "faction": "parthes-perses",
+    "born": -380,
+    "died": -330,
+    "title": "Dernier Grand Roi achéménide",
+    "bio": "Darius III, appelé Codoman avant son avènement, est un cousin éloigné d’Artaxerxès III. Satrape d’Arménie, il est porté sur le trône en 336 par le vizir Bagoas, qu’il fait ensuite exécuter. Il hérite d’un empire riche mais face à une menace nouvelle, Alexandre, roi de Macédoine. Ses satrapes sont battus au Granique (334), puis il l’est lui-même à Issos (333) et à Gaugamèles (331) : il perd successivement l’Anatolie, la Syrie, l’Égypte et la Mésopotamie. Les sources grecques en font un lâche ; les historiens le jugent plus nuancé : il a un bon sens stratégique, notamment à Issos, mais ses armées, rassemblées trop vite, manquent de cohésion. Il propose plusieurs fois la paix à Alexandre, qui refuse. Arrêté par Bessos, satrape de Bactriane, il est abandonné mourant en juillet 330. Alexandre lui rend les honneurs d’un roi. Sa mère Sisygambis resta fidèle à Alexandre et se serait laissée mourir de faim à la mort de ce dernier.",
+    "keyFacts": [
+      "336 av. J.-C. : devient Grand Roi, après Bagoas",
+      "333 : battu à Issos ; sa famille est capturée",
+      "331 : battu à Gaugamèles",
+      "330 : arrêté par Bessos et tué"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Darius III",
+        "url": "https://fr.wikipedia.org/wiki/Darius_III"
+      },
+      {
+        "label": "Wikipédia — Bataille d’Issos",
+        "url": "https://fr.wikipedia.org/wiki/Bataille_d'Issos"
+      }
+    ]
+  },
+  {
+    "id": "cresus",
+    "name": "Crésus",
+    "archetype": "roi",
+    "faction": "mesopotamiens",
+    "born": -595,
+    "died": -546,
+    "title": "Dernier roi de Lydie, « riche comme Crésus »",
+    "bio": "Crésus est le roi de Lydie de 560 à 546 environ, à Sardes, capitale d’un royaume du centre-ouest de l’Anatolie. Il soumet les cités grecques d’Ionie, qui lui paient tribut, et fait des dons somptueux aux sanctuaires de Delphes et d’Éphèse. Son royaume est célèbre pour ses monnaies d’or et d’argent, parmi les plus anciennes du monde : c’est de là que vient l’expression « riche comme Crésus ». Inquiet de la montée de Cyrus, il consulte l’oracle de Delphes, qui répond que s’il attaque, il détruira un grand empire : l’empire détruit sera le sien. Vaincu en 546, il est capturé. Hérodote raconte que Cyrus le fait monter sur un bûcher, mais qu’une pluie miraculeuse l’éteint, et que Crésus devient ensuite le conseiller de Cyrus et de Cambyse. D’autres sources suggèrent qu’il est mort au combat. L’anecdote illustre surtout, chez Hérodote, l’idée qu’on ne doit juger heureux personne avant sa mort, selon la leçon de Solon.",
+    "keyFacts": [
+      "Vers 560 av. J.-C. : monte sur le trône de Lydie",
+      "Soumet les cités grecques d’Ionie",
+      "Fait battre parmi les premières monnaies d’or",
+      "546 : battu par Cyrus ; Sardes tombe"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Crésus",
+        "url": "https://fr.wikipedia.org/wiki/Cr%C3%A9sus"
+      },
+      {
+        "label": "Wikipédia — Lydie",
+        "url": "https://fr.wikipedia.org/wiki/Lydie"
+      }
+    ]
+  },
+  {
+    "id": "themistocle",
+    "name": "Thémistocle",
+    "archetype": "senateur",
+    "faction": "grecs-macedoniens",
+    "born": -524,
+    "died": -459,
+    "title": "Vainqueur de Salamine, exilé chez les Perses",
+    "bio": "Thémistocle est un homme d’État athénien, archonte en 493. Il comprend avant les autres que la menace perse viendra de la mer. En 483, il fait voter l’emploi du produit des mines d’argent du Laurion pour construire deux cents trières, la flotte qui sauve la Grèce. En 480, après les Thermopyles, il persuade les alliés de combattre dans le détroit de Salamine et, selon Hérodote, trompe Xerxès par un faux message qui l’y attire. La victoire fait de lui un héros ; il fortifie ensuite Athènes et le Pirée. Mais ses rivaux obtiennent son ostracisme vers 471, puis l’accusent de trahison, à cause de ses liens avec Pausanias. Il s’enfuit chez les Perses, et Artaxerxès Ier l’accueille avec honneur et lui donne des villes d’Asie Mineure : Magnésie du Méandre. Il y meurt vers 459. Plutarque rapporte qu’il se serait empoisonné, plutôt que de combattre Athènes. Quelle part de vérité dans ces récits ? Nous les devons à des Grecs.",
+    "keyFacts": [
+      "483 av. J.-C. : fait construire la flotte athénienne",
+      "480 : stratège à Salamine",
+      "Vers 471 : banni par ostracisme",
+      "Vers 465 : se réfugie chez Artaxerxès Ier ; meurt à Magnésie"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Thémistocle",
+        "url": "https://fr.wikipedia.org/wiki/Th%C3%A9mistocle"
+      },
+      {
+        "label": "Wikipédia — Bataille de Salamine",
+        "url": "https://fr.wikipedia.org/wiki/Bataille_de_Salamine"
+      }
+    ]
+  },
+  {
+    "id": "herodote",
+    "name": "Hérodote",
+    "archetype": "sage",
+    "faction": "grecs-macedoniens",
+    "born": -484,
+    "died": -425,
+    "title": "« Père de l’histoire », notre source sur les Perses",
+    "bio": "Hérodote naît à Halicarnasse, en Carie, une cité grecque alors sous domination perse. Exilé politique, il voyage en Égypte, à Babylone (peut-être), en Scythie, en Grèce, puis s’installe à Athènes et enfin à Thourioi, en Italie du Sud. Ses Histoires, en neuf livres, racontent les guerres médiques (de la révolte d’Ionie à Platées), mais aussi l’origine des Perses, des Lydiens, des Égyptiens et des Scythes. Il interroge témoins et prêtres, rapporte ses sources, doute parfois, mais raconte aussi des histoires merveilleuses ; Plutarque le traitera de « philobarbare » ou d’ami des barbares. Il fixe l’image de l’empire pour la postérité : nombre de ses chiffres (2,6 millions d’hommes pour Xerxès) sont tenus pour exagérés. Mais sans lui, bien des événements, de la mort de Cyrus à la campagne contre les Scythes, seraient inconnus. Il est le premier auteur à donner à l’histoire la forme d’une enquête (historia, en grec).",
+    "keyFacts": [
+      "Vers 484 av. J.-C. : naît à Halicarnasse, ville sujette de la Perse",
+      "Voyage en Égypte, en Orient et en mer Noire",
+      "Vers 430 : publie ses Histoires",
+      "Vers 425 : meurt, peut-être à Thourioi"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Hérodote",
+        "url": "https://fr.wikipedia.org/wiki/H%C3%A9rodote"
+      },
+      {
+        "label": "Wikipédia — Histoires (Hérodote)",
+        "url": "https://fr.wikipedia.org/wiki/Histoires_(H%C3%A9rodote)"
+      }
+    ]
+  }
+]

@@ -56,6 +56,22 @@
   "uncertain": true,
   "biome": "desert"
  },
+ "perse-achemenide/issos-333": {
+  "troops": [
+   40000,
+   80000
+  ],
+  "uncertain": true,
+  "biome": "mediterranee"
+ },
+ "perse-achemenide/gaugameles-331": {
+  "troops": [
+   47000,
+   100000
+  ],
+  "uncertain": true,
+  "biome": "desert"
+ },
  "alexandre/hydaspe-326": {
   "troops": [
    40000,

@@ -1,0 +1,249 @@
+[
+  {
+    "id": "route-royale-poste",
+    "name": "La Route royale et la poste du Grand Roi",
+    "year": -500,
+    "approx": true,
+    "place": "Suse",
+    "at": [
+      48.24,
+      32.19
+    ],
+    "inventor": "Darius Ier",
+    "category": "administration",
+    "description": "La Route royale relie Sardes, en Anatolie, à Suse, sur environ 2 500 kilomètres, avec des relais d’étape tous les 25 kilomètres environ. Les routes existaient avant, mais Darius les organise en réseau d’État. Des cavaliers royaux se relaient et portent les messages de poste en poste. Hérodote admire leur vitesse : « ni neige, ni pluie, ni chaleur ne les arrêtent ». Ce n’est pas une invention, mais une organisation systématique.",
+    "impact": "Un message traverse l’empire en une semaine environ au lieu de trois mois à pied : le roi gouverne de loin et contrôle les satrapes.",
+    "sources": [
+      {
+        "label": "Wikipédia — Route royale",
+        "url": "https://fr.wikipedia.org/wiki/Route_royale"
+      },
+      {
+        "label": "Wikipédia — Darius Ier",
+        "url": "https://fr.wikipedia.org/wiki/Darius_Ier"
+      }
+    ]
+  },
+  {
+    "id": "qanats",
+    "name": "Les qanats, galeries drainantes",
+    "year": -500,
+    "approx": true,
+    "place": "Plateau iranien",
+    "at": [
+      54.37,
+      31.9
+    ],
+    "category": "agriculture",
+    "description": "Un qanat est une galerie souterraine très légèrement inclinée qui capte l’eau d’une nappe en piémont et la conduit sur des kilomètres jusqu’aux champs, sans pompe, ni évaporation. La technique naît peut-être en Arménie ou en Iran avant les Perses. Les Achéménides la diffusent largement, selon Polybe, en accordant aux exploitants le droit de cultiver pendant cinq générations. Les datations restent approximatives.",
+    "impact": "Les qanats font fleurir des oasis en plein désert iranien, et se répandent de l’Égypte à l’Asie centrale : plus de 2 500 ans plus tard, certains fonctionnent encore.",
+    "sources": [
+      {
+        "label": "Wikipédia — Qanat",
+        "url": "https://fr.wikipedia.org/wiki/Qanat"
+      },
+      {
+        "label": "Wikipédia — Empire achéménide",
+        "url": "https://fr.wikipedia.org/wiki/Empire_ach%C3%A9m%C3%A9nide"
+      }
+    ]
+  },
+  {
+    "id": "darique",
+    "name": "La darique, monnaie d’or de l’empire",
+    "year": -515,
+    "approx": true,
+    "place": "Sardes",
+    "at": [
+      28.04,
+      38.49
+    ],
+    "inventor": "Darius Ier",
+    "category": "monnaie",
+    "description": "Vers 515, Darius fait frapper une monnaie d’or pur, la darique, qui montre le roi archer agenouillé. Les Lydiens avaient inventé la monnaie ; Darius en fait un outil impérial, avec des pièces d’argent, les sigles, pour la vie quotidienne. L’or royal est frappé à Sardes, d’après la tradition. La darique est une réforme monétaire, non une invention de la monnaie.",
+    "impact": "Elle devient la monnaie d’or de référence de l’Orient pendant deux siècles, et sert au roi à payer ses mercenaires et à corrompre les cités grecques.",
+    "sources": [
+      {
+        "label": "Wikipédia — Darique",
+        "url": "https://fr.wikipedia.org/wiki/Darique"
+      },
+      {
+        "label": "Wikipédia — Monnaie",
+        "url": "https://fr.wikipedia.org/wiki/Monnaie"
+      }
+    ]
+  },
+  {
+    "id": "satrapies",
+    "name": "Les satrapies : un empire en provinces",
+    "year": -518,
+    "approx": true,
+    "place": "Suse",
+    "at": [
+      48.24,
+      32.19
+    ],
+    "inventor": "Darius Ier",
+    "category": "administration",
+    "description": "Darius divise l’empire en une vingtaine de provinces, les satrapies. À la tête de chacune, un satrape, gouverneur noble, perçoit un tribut fixe et lève des troupes. À ses côtés, un chef militaire et un secrétaire royal dépendent directement du roi, et des inspecteurs, les « yeux et oreilles du roi », surveillent l’ensemble. Le système n’est pas né de rien : les Assyriens avaient des gouverneurs de province.",
+    "impact": "Il permet de gouverner des peuples très divers avec peu de moyens et en les laissant garder leurs lois, un modèle copié par Alexandre et les Séleucides.",
+    "sources": [
+      {
+        "label": "Wikipédia — Satrapie",
+        "url": "https://fr.wikipedia.org/wiki/Satrapie"
+      },
+      {
+        "label": "Wikipédia — Darius Ier",
+        "url": "https://fr.wikipedia.org/wiki/Darius_Ier"
+      }
+    ]
+  },
+  {
+    "id": "canal-nil-mer-rouge",
+    "name": "Le canal du Nil à la mer Rouge",
+    "year": -500,
+    "approx": true,
+    "place": "Ouadi Toumilat, Égypte",
+    "at": [
+      32.1,
+      30.55
+    ],
+    "inventor": "Darius Ier",
+    "category": "navigation",
+    "description": "Le pharaon Néchao II avait commencé un canal entre le Nil et la mer Rouge ; Darius le fait achever, comme le dit une stèle en hiéroglyphes et en cunéiforme retrouvée près de Suez. Hérodote dit que des navires peuvent traverser. Le canal est large et assez profond pour des navires, mais s’ensable souvent. La date exacte est discutée.",
+    "impact": "Il relie la Méditerranée et l’océan Indien par l’Égypte, et annonce les liaisons maritimes ultérieures de Ptolémée et, bien plus tard, du canal de Suez.",
+    "sources": [
+      {
+        "label": "Wikipédia — Canal des Pharaons",
+        "url": "https://fr.wikipedia.org/wiki/Canal_des_Pharaons"
+      },
+      {
+        "label": "Wikipédia — Darius Ier",
+        "url": "https://fr.wikipedia.org/wiki/Darius_Ier"
+      }
+    ]
+  },
+  {
+    "id": "paradis",
+    "name": "Les paradis, jardins royaux clos",
+    "year": -546,
+    "approx": true,
+    "place": "Pasargades",
+    "at": [
+      53.17,
+      30.2
+    ],
+    "inventor": "Cyrus II",
+    "category": "agriculture",
+    "description": "Le mot « paradis » vient du vieux perse pardaiza, « enclos ». À Pasargades, Cyrus fait aménager un jardin avec bassins, canaux et pavillons, que les archéologues ont retrouvé : l’un des plus anciens jardins connus. Les satrapes ont aussi leurs paradis, où poussent arbres fruitiers et fleurs. Les Grecs, dont Xénophon, en parlent avec admiration. Le jardin existait déjà en Orient, mais le modèle perse le diffuse.",
+    "impact": "Le jardin d’agrément géométrique, avec eau courante, devient un symbole de pouvoir et de beauté ; il inspire les jardins de l’Islam et le mot « paradis ».",
+    "sources": [
+      {
+        "label": "Wikipédia — Pasargades",
+        "url": "https://fr.wikipedia.org/wiki/Pasargades"
+      },
+      {
+        "label": "Wikipédia — Paradis",
+        "url": "https://fr.wikipedia.org/wiki/Paradis"
+      }
+    ]
+  },
+  {
+    "id": "cylindre-cyrus",
+    "name": "Le cylindre de Cyrus et la tolérance religieuse",
+    "year": -539,
+    "place": "Babylone",
+    "at": [
+      44.42,
+      32.54
+    ],
+    "inventor": "Cyrus II",
+    "category": "droit",
+    "description": "Ce cylindre d’argile en akkadien, enterré à Babylone, raconte la prise de la ville par Cyrus. Le roi y affirme avoir rendu leurs dieux aux cités et ramené les peuples déportés. La Bible hébraïque rapporte aussi son édit en faveur des Juifs. Le texte est une proclamation de propagande, dans la tradition mésopotamienne ; son statut de « première charte des droits de l’homme » est contesté par les historiens.",
+    "impact": "Il illustre une politique de respect des cultes locaux qui fait la souplesse de l’empire ; sa portée réelle reste un sujet de débat entre historiens.",
+    "sources": [
+      {
+        "label": "Wikipédia — Cylindre de Cyrus",
+        "url": "https://fr.wikipedia.org/wiki/Cylindre_de_Cyrus"
+      },
+      {
+        "label": "Wikipédia — Cyrus II",
+        "url": "https://fr.wikipedia.org/wiki/Cyrus_II"
+      }
+    ]
+  },
+  {
+    "id": "arameen-imperial",
+    "name": "L’araméen impérial, langue de l’administration",
+    "year": -500,
+    "approx": true,
+    "place": "Suse",
+    "at": [
+      48.24,
+      32.19
+    ],
+    "category": "ecriture",
+    "description": "L’araméen, langue d’un peuple du Levant écrite avec un alphabet de 22 lettres, devient la langue de l’administration achéménide. Les scribes l’utilisent de l’Égypte à l’Indus : des papyrus d’Éléphantine et des tablettes de Bactriane en témoignent. Les inscriptions de prestige restent en vieux perse, élamite et akkadien. Darius ne l’invente pas : il en généralise l’usage, ce qui est une diffusion, non une invention.",
+    "impact": "Une écriture alphabétique simple relie des peuples très divers ; elle donne naissance aux écritures de l’Inde du Nord, plus tard à l’hébreu carré et à l’arabe.",
+    "sources": [
+      {
+        "label": "Wikipédia — Araméen d’empire",
+        "url": "https://fr.wikipedia.org/wiki/Aram%C3%A9en_d'empire"
+      },
+      {
+        "label": "Wikipédia — Alphabet araméen",
+        "url": "https://fr.wikipedia.org/wiki/Alphabet_aram%C3%A9en"
+      }
+    ]
+  },
+  {
+    "id": "apadana-persepolis",
+    "name": "L’apadana de Persépolis",
+    "year": -515,
+    "approx": true,
+    "place": "Persépolis",
+    "at": [
+      52.89,
+      29.93
+    ],
+    "inventor": "Darius Ier",
+    "category": "architecture",
+    "description": "Darius fonde Persépolis vers 518 sur une terrasse de pierre, et y fait élever l’apadana, salle d’audience à 72 colonnes de plus de 19 mètres de haut. Ses escaliers montrent, en bas-reliefs, des délégations des peuples de l’empire apportant leurs présents. Xerxès et ses successeurs l’achèvent. Les architectes sont perses, mais les artisans viennent de tout l’empire : Ioniens, Égyptiens, Babyloniens.",
+    "impact": "Un palais monumental qui exprime l’unité de l’empire par l’art de ses peuples ; son style a inspiré l’architecture orientale pendant des siècles.",
+    "sources": [
+      {
+        "label": "Wikipédia — Persépolis",
+        "url": "https://fr.wikipedia.org/wiki/Pers%C3%A9polis"
+      },
+      {
+        "label": "Wikipédia — Apadana",
+        "url": "https://fr.wikipedia.org/wiki/Apadana"
+      }
+    ]
+  },
+  {
+    "id": "poids-mesures",
+    "name": "Le système de poids et mesures royal",
+    "year": -510,
+    "approx": true,
+    "place": "Suse",
+    "at": [
+      48.24,
+      32.19
+    ],
+    "inventor": "Darius Ier",
+    "category": "administration",
+    "description": "Darius impose dans l’empire des étalons communs de poids (le sicle et le talent babylonien) et de mesure : l’artaba pour les grains, le cotyle pour les liquides, utilisés pour les rations. Des poids portent le nom du roi, comme les poids en forme de lion retrouvés à Suse et à Persépolis. Les tablettes de Persépolis montrent des rations calculées avec précision. Les unités sont en partie héritées de Babylone.",
+    "impact": "Un tribut en argent, en or et en grain se perçoit et se compare partout : la comptabilité d’un empire de 20 provinces devient possible.",
+    "sources": [
+      {
+        "label": "Wikipédia — Poids et mesures",
+        "url": "https://fr.wikipedia.org/wiki/Poids_et_mesures"
+      },
+      {
+        "label": "Wikipédia — Darius Ier",
+        "url": "https://fr.wikipedia.org/wiki/Darius_Ier"
+      }
+    ]
+  }
+]

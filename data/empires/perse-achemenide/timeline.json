@@ -1,0 +1,2202 @@
+{
+  "id": "perse-achemenide",
+  "name": "Perse achéménide",
+  "color": "#b8902a",
+  "start": -550,
+  "end": -330,
+  "description": "L’Empire achéménide naît vers 550 av. J.-C., quand Cyrus II, roi de la Perside (le Fars, dans le sud de l’Iran), renverse les Mèdes puis soumet la Lydie, Babylone et, avec son fils Cambyse, l’Égypte. Sous Darius Ier, il s’étend de la Thrace à l’Indus et se divise en satrapies reliées par la Route royale : c’est le premier empire mondial. Il échoue devant les Grecs (Marathon, Salamine, Platées), puis s’effondre en quatre ans devant Alexandre le Grand. Nous le connaissons surtout par ses adversaires grecs, que complètent les inscriptions royales, les tablettes de Persépolis et les textes babyloniens et bibliques.",
+  "view": {
+    "center": [
+      50,
+      32
+    ],
+    "zoom": 3.4
+  },
+  "bounds": [
+    [
+      18,
+      15
+    ],
+    [
+      80,
+      47
+    ]
+  ],
+  "apogee": {
+    "stepId": "scythes-513",
+    "note": "Vers 513, sous Darius Ier, l’empire va de la Thrace et de la Libye à l’Indus et à l’Iaxarte, de l’Égypte à l’Asie centrale. Il compte alors environ 5 millions de km² ; ses limites, surtout aux marges (Thrace, Gandhara), restent approximatives."
+  },
+  "periods": [
+    {
+      "id": "cyrus-et-cambyse",
+      "name": "Cyrus et Cambyse, les conquérants",
+      "start": -550,
+      "end": -522,
+      "color": "#ead7a0",
+      "summary": "Cyrus II renverse les Mèdes, la Lydie et Babylone, avant de périr chez les Massagètes. Son fils Cambyse II ajoute l’Égypte : en trente ans, un petit royaume de Perside est devenu la première puissance du monde connu."
+    },
+    {
+      "id": "darius-et-xerxes",
+      "name": "Darius et Xerxès, le Grand Roi",
+      "start": -522,
+      "end": -465,
+      "color": "#f0b97c",
+      "summary": "Darius Ier s’empare du trône, organise l’empire en satrapies et le porte à sa plus grande étendue. Avec Xerxès, les guerres médiques tournent mal : Marathon, Salamine et Platées ferment l’Europe aux Perses."
+    },
+    {
+      "id": "du-long-regne-au-dernier-darius",
+      "name": "Du long règne au dernier Darius",
+      "start": -465,
+      "end": -330,
+      "color": "#c3b4dc",
+      "summary": "Sous Artaxerxès Ier, II et III, l’empire arbitre les querelles grecques et reprend l’Égypte. Mais Alexandre le Grand détruit en quatre ans l’armée de Darius III, et la dynastie s’éteint en 330."
+    }
+  ],
+  "steps": [
+    {
+      "id": "pasargades-550",
+      "year": -550,
+      "title": "Cyrus renverse Astyage : naissance de l’empire perse",
+      "type": "fondation",
+      "location": [
+        53.17,
+        30.2
+      ],
+      "zoom": 5,
+      "summary": "Vers 550, Cyrus II, roi vassal de Perside, se révolte contre son suzerain mède Astyage et s’empare d’Ecbatane. Les Perses, de peuple soumis, deviennent maîtres de l’Iran : c’est la naissance de l’Empire achéménide.",
+      "details": "Au VIᵉ siècle av. J.-C., les **Perses** sont un peuple de montagnards et d’éleveurs établi dans le sud-ouest de l’Iran actuel, la **Perside** (le Fars). Leurs rois appartiennent à la famille des **Achéménides**, nom tiré d’un ancêtre éponyme, Achéménès. Ils obéissent alors aux **Mèdes**, un peuple voisin dont la capitale est **Ecbatane** (Hamadan).\n\nVers **550**, **Cyrus II**, roi d’Anshan et de Perside, se révolte contre son suzerain **Astyage**. Selon **Hérodote**, Cyrus est le petit-fils d’Astyage, sauvé enfant d’un ordre de mise à mort : une belle légende, typique des récits de fondateurs. Ce que l’on sait mieux, c’est que l’armée mède, trahie par certains de ses chefs, passe à Cyrus. Une chronique babylonienne le confirme sèchement : Astyage est battu et Ecbatane pillée.\n\nCyrus ne détruit pas le royaume mède : il le prend comme un héritage. Les Mèdes gardent des postes de commandement, ce qui frappe les Grecs, qui parleront longtemps de « Mèdes » pour désigner les Perses. Cyrus fonde bientôt une résidence royale à **Pasargades**, en Perside, au milieu des jardins et des palais de pierre.\n\nLa religion du roi est probablement le **mazdéisme**, culte du dieu suprême **Ahura Mazda**, dont les prêtres sont les **mages**. En quelques années, un petit royaume de montagne est devenu la première puissance d’Orient.",
+      "consequences": [
+        "Perside et Médie sont réunies : l’Iran occidental forme pour la première fois un seul État, de Pasargades à Ecbatane.",
+        "Cyrus hérite des anciennes terres mèdes, jusqu’aux marches de l’Arménie et de la Cappadoce, qui deviennent sa frontière avec la Lydie.",
+        "Pasargades devient la première capitale royale des Perses.",
+        "Les Mèdes entrent dans l’élite de l’empire, aux côtés des Perses."
+      ],
+      "territory": "pasargades-550",
+      "territoryNote": "Vers -550, l’empire se limite à la Perside (Fars) et à la Médie (Hamadan, nord-ouest et centre de l’Iran actuel), avec l’Élam voisin (Khouzestan) et la haute vallée du Tigre jusqu’aux montagnes d’Arménie. Voisins : le royaume de Lydie de Crésus à l’ouest (Anatolie), indépendant ; Babylone de Nabonide au sud-ouest (Irak actuel), indépendante ; les peuples nomades d’Asie centrale (Massagètes, Saces) au nord-est ; la Bactriane et la Margiane, encore indépendantes à l’est.",
+      "sources": [
+        {
+          "label": "Wikipédia — Cyrus II",
+          "url": "https://fr.wikipedia.org/wiki/Cyrus_II"
+        },
+        {
+          "label": "Wikipédia — Empire achéménide",
+          "url": "https://fr.wikipedia.org/wiki/Empire_ach%C3%A9m%C3%A9nide"
+        },
+        {
+          "label": "Wikipédia — Pasargades",
+          "url": "https://fr.wikipedia.org/wiki/Pasargades"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Cyrus II",
+          "role": "Roi d’Anshan, futur Grand Roi",
+          "faction": "parthes-perses",
+          "archetype": "grand-roi",
+          "position": [
+            53.17,
+            30.2
+          ],
+          "person": "cyrus-le-grand",
+          "quote": "Je suis Cyrus, le roi, le roi des quatre rives (cylindre de Cyrus)"
+        },
+        {
+          "name": "Astyage",
+          "role": "Dernier roi des Mèdes",
+          "faction": "mesopotamiens",
+          "archetype": "roi",
+          "position": [
+            48.51,
+            34.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sardes-546",
+      "year": -546,
+      "title": "Sardes : Cyrus et la chute de Crésus",
+      "type": "bataille",
+      "location": [
+        28.04,
+        38.49
+      ],
+      "zoom": 5.5,
+      "summary": "Après une première bataille indécise à Ptéria, Cyrus bat la cavalerie lydienne à la Thymbrée, puis prend Sardes. Crésus, roi de Lydie, est vaincu ; l’Asie Mineure passe sous domination perse.",
+      "details": "En **546**, Cyrus affronte **Crésus**, roi de **Lydie**, un royaume de l’ouest de l’Anatolie célèbre pour ses richesses : on y a inventé les premières monnaies. Crésus, inquiet de la montée de Cyrus, aurait consulté l’oracle de **Delphes**, qui lui répond que s’il franchit le fleuve Halys, « il détruira un grand empire ». Il le franchit… et c’est le sien qui tombe : l’histoire est racontée par **Hérodote**, en grec, donc de loin.\n\nUne première bataille, à **Ptéria** (Cappadoce), reste indécise. Crésus rentre à **Sardes** et licencie ses alliés pour l’hiver, mais Cyrus le suit à marche forcée. Dans la plaine de la **Thymbrée**, devant Sardes, la cavalerie lydienne est réputée imbattable. Hérodote prétend que Cyrus place des **chameaux** de bagages en première ligne : l’odeur effraie les chevaux lydiens, qui se débandent. Anecdote probablement embellie.\n\nSardes est prise après deux semaines de siège, par un passage mal gardé de l’acropole. Le sort de Crésus est incertain : Hérodote le sauve du bûcher, d’autres sources le font disparaître. Cyrus confie ensuite les cités grecques d’**Ionie** (côte de l’actuelle Turquie), dont Milet, à des **satrapes**, gouverneurs de province qui représentent le roi.",
+      "consequences": [
+        "La Lydie, avec Sardes, devient la première satrapie perse d’Asie Mineure, de la mer Égée à la Cappadoce.",
+        "Les cités grecques d’Ionie (Éphèse, Milet, Phocée…) passent sous contrôle perse, certaines après un siège.",
+        "Le trésor lydien et sa monnaie d’or passent aux Perses, qui les adopteront.",
+        "Cyrus est désormais le voisin direct du monde grec, source de conflits à venir."
+      ],
+      "territory": "sardes-546",
+      "territoryNote": "Vers -546, l’empire tient la Perside (Fars), la Médie, l’Élam, l’Arménie et la Cappadoce, et la Lydie annexée avec Sardes, plus la côte ionienne et éolienne (ouest de la Turquie actuelle). Voisins : Babylone de Nabonide (Irak actuel), indépendante ; les cités grecques insulaires (Samos, Chios, Lesbos, Rhodes), libres ; la Cilicie (Syennésis) et la Lycie, alliées ou soumises selon les sources ; les nomades d’Asie centrale au nord-est ; la Bactriane et la Margiane à l’est.",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de la Thymbrée",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_la_Thymbr%C3%A9e"
+        },
+        {
+          "label": "Wikipédia — Crésus",
+          "url": "https://fr.wikipedia.org/wiki/Cr%C3%A9sus"
+        },
+        {
+          "label": "Wikipédia — Lydie",
+          "url": "https://fr.wikipedia.org/wiki/Lydie"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Perses de Cyrus",
+          "Lydiens de Crésus"
+        ],
+        "commanders": [
+          "Cyrus II",
+          "Crésus"
+        ],
+        "outcome": "Victoire de Cyrus ; prise de Sardes et fin du royaume de Lydie",
+        "forces": "Chiffres inconnus ; les chiffres d’Hérodote (cavalerie lydienne de 20 000 hommes) sont douteux",
+        "losses": "Inconnues ; Sardes est prise après un siège d’environ deux semaines"
+      },
+      "armies": [
+        {
+          "id": "cyrus",
+          "side": "Armée de Cyrus",
+          "from": "Ecbatane",
+          "faction": "parthes-perses",
+          "path": [
+            [
+              48.51,
+              34.8
+            ],
+            [
+              40.5,
+              36.9
+            ],
+            [
+              34.6,
+              39.9
+            ],
+            [
+              31.3,
+              38.8
+            ],
+            [
+              28.04,
+              38.49
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée lydienne",
+          "from": "Sardes",
+          "faction": "mesopotamiens",
+          "path": [
+            [
+              34.6,
+              39.9
+            ],
+            [
+              31.3,
+              38.9
+            ],
+            [
+              28.04,
+              38.49
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Cyrus II",
+          "role": "Roi des Perses, vainqueur de la Lydie",
+          "faction": "parthes-perses",
+          "archetype": "grand-roi",
+          "position": [
+            28.4,
+            38.5
+          ],
+          "person": "cyrus-le-grand"
+        },
+        {
+          "name": "Crésus",
+          "role": "Roi de Lydie, vaincu",
+          "faction": "mesopotamiens",
+          "archetype": "roi",
+          "position": [
+            27.8,
+            38.5
+          ],
+          "person": "cresus",
+          "quote": "Personne n’est assez fou pour préférer la guerre à la paix (selon Hérodote)"
+        }
+      ]
+    },
+    {
+      "id": "babylone-539",
+      "year": -539,
+      "title": "Babylone : Cyrus entre dans la ville, le cylindre et le retour des Juifs",
+      "type": "bataille",
+      "location": [
+        44.42,
+        32.54
+      ],
+      "zoom": 5,
+      "summary": "À Opis, Cyrus bat l’armée babylonienne, puis entre sans combat dans Babylone. Son cylindre d’argile célèbre cette conquête et les exilés juifs sont autorisés à rentrer à Jérusalem.",
+      "details": "**Babylone**, sur l’Euphrate, est alors la plus grande ville du monde, capitale de l’empire néo-babylonien. Son roi, **Nabonide**, a mécontenté les prêtres de **Marduk**, le dieu de la ville, en favorisant le dieu-lune Sîn. À l’automne **539**, Cyrus bat l’armée babylonienne à **Opis**, sur le Tigre ; selon la chronique babylonienne, Sippar tombe sans combat, puis ses troupes entrent dans Babylone le 12 octobre, avec le gouverneur **Gobryas** à leur tête. Hérodote, lui, raconte un fleuve détourné pour passer sous les murailles : récit contesté.\n\nCyrus se présente comme l’envoyé de Marduk. Sur le **cylindre de Cyrus**, tonneau d’argile en akkadien, il dit avoir rendu leurs dieux aux cités et ramené les peuples déportés. La Bible hébraïque rapporte qu’il autorise les **Juifs** exilés depuis Nabuchodonosor à rentrer à Jérusalem et à rebâtir le Temple. Le cylindre est un texte de propagande royale, non une déclaration des droits : les historiens en débattent encore.\n\nBabylone devient l’une des capitales de l’empire, mais pas la principale. Cyrus prend le titre de « roi de Babylone, roi des pays ».",
+      "consequences": [
+        "Babylonie, Assyrie et la côte jusqu’à la Syrie, la Phénicie et la Palestine passent aux Perses, sans guerre sur la plupart des places.",
+        "L’empire s’étend désormais de l’Anatolie à l’Iran, et touche les frontières de l’Égypte.",
+        "Les exilés juifs peuvent rentrer à Jérusalem : naissance de la province de Yehud, sous contrôle perse.",
+        "Cyrus s’impose comme roi légitime en respectant les cultes locaux, modèle de gouvernement de l’empire."
+      ],
+      "territory": "babylone-539",
+      "territoryNote": "Vers -539, l’empire tient la Perside, la Médie, l’Élam, l’Arménie, l’Anatolie (Lydie, Ionie, Cappadoce), puis la Babylonie, l’Assyrie, la Syrie, la Phénicie et la Palestine (Irak, Syrie, Liban, Israël et Palestine actuels). Voisins : l’Égypte de la 26e dynastie (Amasis), indépendante ; les cités grecques insulaires, libres ; les tribus arabes du désert de Syrie, indépendantes ; les nomades d’Asie centrale (Massagètes) au nord-est ; la Bactriane et la Margiane à l’est, encore indépendantes ou en cours de soumission.",
+      "sources": [
+        {
+          "label": "Wikipédia — Cylindre de Cyrus",
+          "url": "https://fr.wikipedia.org/wiki/Cylindre_de_Cyrus"
+        },
+        {
+          "label": "Wikipédia — Nabonide",
+          "url": "https://fr.wikipedia.org/wiki/Nabonide"
+        },
+        {
+          "label": "Wikipédia — Bataille d’Opis",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_d'Opis"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Perses de Cyrus",
+          "Babyloniens de Nabonide"
+        ],
+        "commanders": [
+          "Cyrus II",
+          "Gobryas",
+          "Nabonide"
+        ],
+        "outcome": "Victoire perse à Opis ; Babylone ouvre ses portes",
+        "forces": "Inconnues ; peu de combats selon la chronique babylonienne",
+        "losses": "Inconnues ; massacre à Opis selon Xénophon, débattu"
+      },
+      "armies": [
+        {
+          "id": "cyrus",
+          "side": "Armée de Cyrus",
+          "from": "Sardes",
+          "faction": "parthes-perses",
+          "path": [
+            [
+              28.04,
+              38.49
+            ],
+            [
+              40.5,
+              36.9
+            ],
+            [
+              48.51,
+              34.8
+            ],
+            [
+              44.5,
+              33.4
+            ],
+            [
+              44.42,
+              32.54
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée babylonienne",
+          "from": "Babylone",
+          "faction": "mesopotamiens",
+          "path": [
+            [
+              44,
+              33.6
+            ],
+            [
+              44.42,
+              32.54
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Cyrus II",
+          "role": "Roi de Babylone, roi des pays",
+          "faction": "parthes-perses",
+          "archetype": "grand-roi",
+          "position": [
+            44.6,
+            32.6
+          ],
+          "person": "cyrus-le-grand",
+          "quote": "J’ai ramené dans leurs demeures les dieux (cylindre de Cyrus, traduction libre)"
+        },
+        {
+          "name": "Nabonide",
+          "role": "Dernier roi de Babylone",
+          "faction": "mesopotamiens",
+          "archetype": "roi",
+          "position": [
+            44.3,
+            32.5
+          ]
+        },
+        {
+          "name": "Prêtre de Marduk",
+          "role": "Gardien du temple de la ville",
+          "faction": "mesopotamiens",
+          "archetype": "prelat",
+          "position": [
+            44.4,
+            32.55
+          ]
+        }
+      ]
+    },
+    {
+      "id": "massagetes-530",
+      "year": -530,
+      "title": "Chez les Massagètes : la mort de Cyrus",
+      "type": "bataille",
+      "location": [
+        66.5,
+        44.2
+      ],
+      "zoom": 4.5,
+      "summary": "Cyrus part combattre les Massagètes, nomades au-delà du fleuve Iaxarte. Il y trouve la mort vers 530, tué par la reine Tomyris selon Hérodote.",
+      "details": "À la fin de son règne, Cyrus tourne ses armées vers le nord-est, vers les steppes d’Asie centrale. Il y a déjà soumis des régions comme la **Bactriane** et la **Sogdiane**, et fondé des forts sur l’**Iaxarte** (le Syr-Daria). Au-delà vivent les **Massagètes**, peuple nomade de cavaliers-archers que les Grecs rapprochent des **Scythes**.\n\nLe récit le plus célèbre vient d’**Hérodote**. Cyrus demande en mariage la reine **Tomyris**, qui refuse. Il tente alors un piège : il laisse un camp rempli de vin ; les Massagètes, qui ne connaissent pas l’ivresse, boivent et sont massacrés, dont le fils de la reine, qui se tue de honte. Tomyris, furieuse, livre une bataille « la plus acharnée de toutes celles que livrèrent des barbares » : Cyrus y périt, et la reine plonge sa tête dans une outre de sang.\n\nC’est une belle légende. D’autres auteurs (Ctésias, Xénophon) donnent d’autres fins à Cyrus, et sa tombe est restée à **Pasargades**. La date de **530** est sûre ; les circonstances, beaucoup moins. Son fils **Cambyse II** lui succède, avec l’idée d’achever l’œuvre en Égypte.",
+      "consequences": [
+        "La frontière nord-est de l’empire se fixe sur l’Iaxarte, face aux nomades ; la Sogdiane et la Bactriane restent perses.",
+        "Cyrus meurt, mais l’empire survit : Cambyse II monte sur le trône sans guerre civile.",
+        "Les steppes d’Asie centrale restent un danger permanent pour les Grands Rois.",
+        "La tombe de Cyrus à Pasargades devient un lieu de mémoire de la dynastie."
+      ],
+      "territory": "massagetes-530",
+      "territoryNote": "Vers -530, l’empire tient la Perside, la Médie, l’Élam, la Babylonie, l’Assyrie, la Syrie, la Phénicie, la Palestine, l’Arménie, toute l’Anatolie jusqu’à l’Ionie, ainsi que la Bactriane, la Sogdiane et la Margiane (Afghanistan, Ouzbékistan, Turkménistan actuels) jusqu’à l’Iaxarte. Voisins : l’Égypte d’Amasis, indépendante ; les Massagètes et les Saces, nomades indépendants au nord et à l’est ; les Arabes du désert ; les cités grecques insulaires, libres ; les royaumes de l’Indus, indépendants.",
+      "sources": [
+        {
+          "label": "Wikipédia — Massagètes",
+          "url": "https://fr.wikipedia.org/wiki/Massag%C3%A8tes"
+        },
+        {
+          "label": "Wikipédia — Tomyris",
+          "url": "https://fr.wikipedia.org/wiki/Tomyris"
+        },
+        {
+          "label": "Wikipédia — Cyrus II",
+          "url": "https://fr.wikipedia.org/wiki/Cyrus_II"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Perses de Cyrus",
+          "Massagètes de Tomyris"
+        ],
+        "commanders": [
+          "Cyrus II",
+          "Tomyris"
+        ],
+        "outcome": "Défaite perse ; mort de Cyrus selon Hérodote",
+        "forces": "Inconnues",
+        "losses": "Inconnues"
+      },
+      "armies": [
+        {
+          "id": "cyrus",
+          "side": "Armée de Cyrus",
+          "from": "Babylone",
+          "faction": "parthes-perses",
+          "path": [
+            [
+              44.42,
+              32.54
+            ],
+            [
+              48.51,
+              34.8
+            ],
+            [
+              62.19,
+              37.66
+            ],
+            [
+              66.96,
+              39.65
+            ],
+            [
+              66.5,
+              44.2
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Massagètes de Tomyris",
+          "from": "Steppes de l’Iaxarte",
+          "faction": "scythes",
+          "path": [
+            [
+              71,
+              46.5
+            ],
+            [
+              66.5,
+              44.2
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Cyrus II",
+          "role": "Grand Roi, mort au combat selon Hérodote",
+          "faction": "parthes-perses",
+          "archetype": "grand-roi",
+          "position": [
+            66.1,
+            44.1
+          ],
+          "person": "cyrus-le-grand"
+        },
+        {
+          "name": "Tomyris",
+          "role": "Reine des Massagètes",
+          "faction": "scythes",
+          "archetype": "imperatrice",
+          "position": [
+            66.9,
+            44.3
+          ],
+          "quote": "Rassasie-toi de sang, toi qui en fus insatiable (selon Hérodote, légendaire)"
+        }
+      ]
+    },
+    {
+      "id": "peluse-525",
+      "year": -525,
+      "title": "Péluse : Cambyse conquiert l’Égypte",
+      "type": "bataille",
+      "location": [
+        32.55,
+        31.04
+      ],
+      "zoom": 5.5,
+      "summary": "Cambyse II, fils de Cyrus, bat le pharaon Psammétique III à Péluse, puis prend Memphis. L’Égypte devient une satrapie perse.",
+      "details": "**Cambyse II** hérite en **530** d’un empire qui touche l’Égypte, gouvernée par la 26ᵉ dynastie. Le pharaon **Amasis** meurt peu avant l’attaque, laissant son fils **Psammétique III** face aux Perses. Selon Hérodote, un mercenaire grec d’Amasis, **Phanès d’Halicarnasse**, passe chez Cambyse et lui indique la route du désert du Sinaï, où les **Arabes** fournissent l’eau.\n\nLa bataille se livre en **525** à **Péluse**, porte orientale du delta du Nil. Hérodote raconte que les Perses placent devant leur ligne des chats et d’autres animaux sacrés pour paralyser les Égyptiens ; l’anecdote, tardive, est douteuse. Péluse tombe, puis **Memphis**, capitale du pays, après un siège ; Psammétique est capturé et sera exilé ou exécuté, selon les versions.\n\nLa suite de l’expédition est dépeinte par les Grecs comme une série de folies : sacrilège contre le bœuf Apis, armée perdue dans le désert libyen, campagne manquée chez les Koushites. Les sources égyptiennes de l’époque montrent un portrait plus nuancé : Cambyse prend un titre de pharaon et honore les dieux locaux. L’Égypte devient une satrapie, première étape d’une domination de plus d’un siècle.",
+      "consequences": [
+        "L’Égypte, de la Méditerranée à la première cataracte, devient une satrapie perse avec Memphis pour centre.",
+        "Chypre et les villes phéniciennes fournissent la flotte, ce qui assure à la Perse la maîtrise du Levant.",
+        "Cambyse pousse jusqu’à la Cyrénaïque, dont les Grecs reconnaissent sa suzeraineté, et jusqu’à la Nubie sans la conquérir.",
+        "Les Perses entrent en contact direct avec les riches cultures du Nil ; des Égyptiens servent dans l’administration royale."
+      ],
+      "territory": "peluse-525",
+      "territoryNote": "Vers -525, l’empire tient la Perside, la Médie, l’Élam, la Babylonie, l’Assyrie, la Syrie, la Phénicie, la Palestine, Chypre, l’Arménie, l’Anatolie jusqu’à l’Ionie, la Bactriane et la Sogdiane, et désormais l’Égypte (delta, Memphis, vallée du Nil jusqu’à Éléphantine), avec la Cyrénaïque (est de la Libye actuelle) comme vassale. Voisins : le royaume de Koush au sud (Soudan actuel), indépendant ; les cités grecques insulaires, libres ; les Arabes, alliés de fait ; les Libyens de l’ouest ; les Massagètes au nord-est.",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Péluse (525 av. J.-C.)",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_P%C3%A9luse_(525_av._J.-C.)"
+        },
+        {
+          "label": "Wikipédia — Cambyse II",
+          "url": "https://fr.wikipedia.org/wiki/Cambyse_II"
+        },
+        {
+          "label": "Wikipédia — Psammétique III",
+          "url": "https://fr.wikipedia.org/wiki/Psamm%C3%A9tique_III"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Perses de Cambyse II",
+          "Égyptiens de Psammétique III"
+        ],
+        "commanders": [
+          "Cambyse II",
+          "Psammétique III"
+        ],
+        "outcome": "Victoire perse ; chute de Memphis, fin de la 26ᵉ dynastie",
+        "forces": "Inconnues ; Hérodote parle de mercenaires grecs et cariens côté égyptien",
+        "losses": "Inconnues ; massacre de mercenaires selon Hérodote"
+      },
+      "armies": [
+        {
+          "id": "cambyse",
+          "side": "Armée de Cambyse",
+          "from": "Sidon",
+          "faction": "parthes-perses",
+          "path": [
+            [
+              35.37,
+              33.57
+            ],
+            [
+              34.47,
+              31.5
+            ],
+            [
+              32.55,
+              31.04
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée égyptienne",
+          "from": "Memphis",
+          "faction": "egyptiens",
+          "path": [
+            [
+              31.25,
+              29.85
+            ],
+            [
+              32,
+              30.6
+            ],
+            [
+              32.55,
+              31.04
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Cambyse II",
+          "role": "Grand Roi, pharaon d’Égypte",
+          "faction": "parthes-perses",
+          "archetype": "grand-roi",
+          "position": [
+            32.3,
+            31
+          ],
+          "person": "cambyse-ii"
+        },
+        {
+          "name": "Psammétique III",
+          "role": "Dernier pharaon de la 26ᵉ dynastie",
+          "faction": "egyptiens",
+          "archetype": "roi",
+          "position": [
+            32,
+            30.7
+          ]
+        }
+      ]
+    },
+    {
+      "id": "behistoun-522",
+      "year": -522,
+      "title": "Behistoun : Darius Ier prend le trône et organise l’empire",
+      "type": "politique",
+      "location": [
+        47.44,
+        34.39
+      ],
+      "zoom": 5,
+      "summary": "Après la mort de Cambyse, Darius écarte l’usurpateur Gaumata, écrase neuf révoltes en un an et fait graver sa victoire à Behistoun. Il divise ensuite l’empire en satrapies reliées par la Route royale.",
+      "details": "Cambyse meurt en **522**, loin de Perse. Un **mage** nommé **Gaumata** (appelé aussi Bardiya, du nom du frère de Cambyse, **Smerdis**) s’empare du trône. **Darius**, jeune noble achéménide de la lignée collatérale, le tue avec six complices et devient roi. Sa version, gravée sur le rocher de **Behistoun** (Iran), prétend que Gaumata était un imposteur : les historiens se demandent s’il n’était pas le vrai Bardiya, et Darius un usurpateur habile. L’inscription, en trois langues (vieux perse, élamite, akkadien), est une source majeure ; elle a servi à déchiffrer le cunéiforme.\n\nEn un an, Darius vainc neuf « rois menteurs », selon ses mots : révoltes de Babylone, de l’Élam, de la Médie, de l’Arménie… Il tient son pouvoir de la faveur d’**Ahura Mazda**, le dieu suprême du mazdéisme.\n\nPuis il organise l’empire : une vingtaine de **satrapies**, provinces confiées à des gouverneurs (**satrapes**) qui paient un tribut fixé, avec un contrôle royal par des secrétaires et des inspecteurs surnommés les « yeux et oreilles du roi ». Les provinces sont reliées par la **Route royale**, d’environ 2 500 km, de Sardes à Suse. Des relais permettent aux courriers royaux d’aller très vite. **Suse** devient capitale administrative.",
+      "consequences": [
+        "L’empire est reconquis et stabilisé de la Méditerranée à l’Iran ; la dynastie passe à la branche de Darius.",
+        "Vingt satrapies environ découpent le territoire, de l’Ionie à la Bactriane, avec tribut fixe et gouverneur.",
+        "La Route royale relie Sardes à Suse et fait de la correspondance royale une arme de gouvernement.",
+        "Suse, en Élam, supplante Pasargades comme capitale ; Persépolis sera fondée peu après."
+      ],
+      "territory": "behistoun-522",
+      "territoryNote": "Vers -522, l’empire tient la Perside, la Médie, l’Élam, la Babylonie, l’Assyrie, la Syrie, la Phénicie, la Palestine, Chypre, l’Égypte avec la Cyrénaïque, toute l’Anatolie jusqu’à l’Ionie, l’Arménie, la Bactriane, la Sogdiane, la Margiane, la Parthie et l’Arie (Iran oriental, Afghanistan occidental). Voisins : les cités grecques d’Europe et des îles, libres ; les Scythes de la steppe pontique et les Massagètes, indépendants ; le royaume de Koush ; les Arabes ; les Thraces ; les royaumes de l’Indus, indépendants.",
+      "sources": [
+        {
+          "label": "Wikipédia — Inscription de Behistun",
+          "url": "https://fr.wikipedia.org/wiki/Inscription_de_Behistun"
+        },
+        {
+          "label": "Wikipédia — Darius Ier",
+          "url": "https://fr.wikipedia.org/wiki/Darius_Ier"
+        },
+        {
+          "label": "Wikipédia — Satrapie",
+          "url": "https://fr.wikipedia.org/wiki/Satrapie"
+        }
+      ],
+      "armies": [
+        {
+          "id": "darius",
+          "side": "Armée de Darius",
+          "from": "Suse",
+          "faction": "parthes-perses",
+          "path": [
+            [
+              48.24,
+              32.19
+            ],
+            [
+              47,
+              33.5
+            ],
+            [
+              47.44,
+              34.39
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Darius Ier",
+          "role": "Grand Roi, vainqueur de Gaumata",
+          "faction": "parthes-perses",
+          "archetype": "grand-roi",
+          "position": [
+            47.44,
+            34.39
+          ],
+          "person": "darius-ier",
+          "quote": "Par la grâce d’Ahura Mazda, je suis roi (inscription de Behistoun, formule libre)"
+        },
+        {
+          "name": "Gaumata le mage",
+          "role": "Usurpateur ou vrai Bardiya, selon les débats",
+          "faction": "parthes-perses",
+          "archetype": "sage",
+          "position": [
+            47.9,
+            34.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "indus-518",
+      "year": -518,
+      "title": "Gandhara et Indus : les Perses aux portes de l’Inde",
+      "type": "politique",
+      "location": [
+        71.5,
+        34
+      ],
+      "zoom": 4.5,
+      "summary": "Vers 518, les armées de Darius annexent le Gandhara et la vallée de l’Indus. Ces deux satrapies paient le plus lourd tribut en or de tout l’empire.",
+      "details": "Les inscriptions de Darius, à **Persépolis** et à Behistoun, citent parmi ses peuples soumis les **Gandhariens** et les **Indiens** (*Hidu*). Ils sont donc perses vers **518**, un peu après les révoltes. On ne sait pas comment : aucune bataille n’est décrite. Hérodote raconte que Darius envoie d’abord le marin grec **Scylax de Caryanda** explorer l’Indus, de la région de Caspatyros (Kaboul ?) jusqu’à la mer, trajet qui dure trente mois, avant de faire la conquête. Le récit de Scylax est perdu.\n\nLe **Gandhara**, dans le nord de l’actuel Pakistan et l’est de l’Afghanistan, avec **Taxila** (près d’Islamabad), est un carrefour de caravanes. La province de l’**Inde**, dans la vallée de l’Indus au sud, est selon Hérodote la plus riche de l’empire : elle verse un tribut en poudre d’or, évalué à 360 talents, soit près du tiers du tribut asiatique. Les Indiens fourniront aussi des soldats, encore présents aux côtés de Darius III à Gaugamèles.\n\nL’influence est durable : l’**araméen impérial** s’y répand, et l’alphabet **kharoshthi** en dérive, utilisé plus tard dans le nord-ouest de l’Inde.\n\nLa frontière orientale de l’empire, désormais, borde les royaumes du Gange.",
+      "consequences": [
+        "Le Gandhara et la vallée de l’Indus rejoignent l’empire, qui atteint sa limite orientale (Pakistan actuel).",
+        "Ces provinces fournissent un tribut en or et des soldats, notamment fantassins et éléphants.",
+        "L’araméen se répand jusqu’à Taxila, et inspire plus tard l’écriture kharoshthi.",
+        "Les Perses touchent les royaumes indiens, sans chercher à aller plus loin vers le Gange."
+      ],
+      "territory": "indus-518",
+      "territoryNote": "Vers -518, l’empire tient la Perside, la Médie, l’Élam, la Mésopotamie, la Syrie, la Phénicie, la Palestine, Chypre, l’Égypte, la Cyrénaïque, l’Anatolie (Ionie incluse), l’Arménie, la Bactriane, la Sogdiane, l’Arie, l’Arachosie (Kandahar), la Drangiane, le Gandhara et la vallée de l’Indus (Afghanistan et Pakistan actuels). Voisins : les royaumes indiens du Gange et du Pendjab oriental, indépendants ; les nomades saces et massagètes au nord ; les Scythes pontiques ; les cités grecques ; Koush ; les Arabes.",
+      "sources": [
+        {
+          "label": "Wikipédia — Gandhara",
+          "url": "https://fr.wikipedia.org/wiki/Gandhara"
+        },
+        {
+          "label": "Wikipédia — Taxila",
+          "url": "https://fr.wikipedia.org/wiki/Taxila"
+        },
+        {
+          "label": "Wikipédia — Scylax de Caryanda",
+          "url": "https://fr.wikipedia.org/wiki/Scylax_de_Caryanda"
+        }
+      ],
+      "armies": [
+        {
+          "side": "Armée de l’Indus",
+          "from": "Bactres",
+          "faction": "parthes-perses",
+          "path": [
+            [
+              66.9,
+              36.76
+            ],
+            [
+              69.2,
+              34.5
+            ],
+            [
+              71.5,
+              34
+            ]
+          ],
+          "strength": 2
+        },
+        {
+          "side": "Princes du Gandhara",
+          "from": "Taxila",
+          "faction": "indiens",
+          "path": [
+            [
+              72.82,
+              33.74
+            ],
+            [
+              71.5,
+              34
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Darius Ier",
+          "role": "Grand Roi, maître de l’Indus",
+          "faction": "parthes-perses",
+          "archetype": "grand-roi",
+          "position": [
+            70.5,
+            34.2
+          ],
+          "person": "darius-ier"
+        },
+        {
+          "name": "Scylax de Caryanda",
+          "role": "Navigateur grec au service de Darius",
+          "faction": "grecs-macedoniens",
+          "archetype": "sage",
+          "position": [
+            72,
+            33.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scythes-513",
+      "year": -513,
+      "title": "Chez les Scythes : Darius passe en Europe",
+      "type": "politique",
+      "location": [
+        28.7,
+        45.2
+      ],
+      "zoom": 4.5,
+      "summary": "Vers 513, Darius franchit le Bosphore et le Danube pour punir les Scythes. Insaisissables, ceux-ci se dérobent ; l’armée royale rentre sans victoire, mais garde la Thrace.",
+      "details": "Vers **513**, **Darius** traverse le **Bosphore** sur un pont de bateaux construit par l’ingénieur grec **Mandroclès de Samos**, puis soumet la **Thrace** et passe le Danube sur un autre pont, gardé par des Grecs d’Ionie. Il veut punir les **Scythes**, nomades cavaliers de la steppe au nord de la mer Noire, qui avaient dévasté l’Asie un siècle plus tôt.\n\nSelon **Hérodote**, les Scythes ne livrent pas bataille : ils reculent en brûlant les pâturages et en comblant les puits. Leur roi **Idanthyrsos** envoie à Darius un oiseau, une souris, une grenouille et cinq flèches, que Darius interprète à tort comme une soumission. Épuisée, l’armée royale rebrousse chemin. Les Scythes auraient voulu détruire le pont, mais les tyrans ioniens, loyaux au roi, le laissent debout.\n\nLes sources perses ne parlent pas de cette campagne comme d’un échec. L’empire garde la **Thrace** côtière et l’appui de la **Macédoine**, dont le roi **Amyntas Iᵉʳ** reconnaît l’autorité royale vers 510. Les estimations modernes parlent d’une armée de quelques dizaines de milliers d’hommes, bien loin des 700 000 d’Hérodote.\n\nC’est ici que l’empire atteint, avec l’Europe, sa plus grande étendue.",
+      "consequences": [
+        "La Thrace côtière jusqu’au Danube devient perse, et la Macédoine reconnaît la suzeraineté du Grand Roi.",
+        "L’empire atteint sa plus grande étendue : de la Thrace à l’Indus, de l’Asie centrale à l’Égypte.",
+        "Les Scythes restent libres, rappel que les steppes échappent à toute conquête.",
+        "Les tyrans grecs d’Ionie, qui ont gardé le pont, gagnent la confiance du roi, mais leur pouvoir devient fragile."
+      ],
+      "territory": "scythes-513",
+      "territoryNote": "Vers -513, l’empire tient la Perside, la Médie, l’Élam, la Mésopotamie, la Syrie, la Phénicie, la Palestine, Chypre, l’Égypte, la Cyrénaïque, toute l’Anatolie avec l’Ionie, l’Arménie, la Bactriane, la Sogdiane, l’Arie, l’Arachosie, le Gandhara, la vallée de l’Indus, et la Thrace côtière jusqu’au Danube ; la Macédoine devient vassale vers -510. Voisins : les Scythes des steppes pontiques, indépendants ; les cités grecques de la mer Égée (Athènes, Sparte, Eubée), libres ; Koush au sud de l’Égypte ; les Arabes ; les royaumes indiens du Gange.",
+      "sources": [
+        {
+          "label": "Wikipédia — Scythes",
+          "url": "https://fr.wikipedia.org/wiki/Scythes"
+        },
+        {
+          "label": "Wikipédia — Darius Ier",
+          "url": "https://fr.wikipedia.org/wiki/Darius_Ier"
+        },
+        {
+          "label": "Wikipédia — Thrace",
+          "url": "https://fr.wikipedia.org/wiki/Thrace"
+        }
+      ],
+      "armies": [
+        {
+          "id": "darius",
+          "side": "Armée de Darius",
+          "from": "Suse",
+          "faction": "parthes-perses",
+          "path": [
+            [
+              47.44,
+              34.39
+            ],
+            [
+              35,
+              38
+            ],
+            [
+              29,
+              41.1
+            ],
+            [
+              27.5,
+              42.7
+            ],
+            [
+              28.7,
+              45.2
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Cavaliers scythes",
+          "from": "Steppe pontique",
+          "faction": "scythes",
+          "path": [
+            [
+              36,
+              48.5
+            ],
+            [
+              32,
+              47.2
+            ],
+            [
+              28.7,
+              45.2
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Darius Ier",
+          "role": "Grand Roi, aux portes des steppes",
+          "faction": "parthes-perses",
+          "archetype": "grand-roi",
+          "position": [
+            28.5,
+            45
+          ],
+          "person": "darius-ier"
+        },
+        {
+          "name": "Idanthyrsos",
+          "role": "Roi des Scythes",
+          "faction": "scythes",
+          "archetype": "roi",
+          "position": [
+            32.5,
+            47.3
+          ],
+          "quote": "Nous n’avons ni villes ni champs cultivés à défendre (d’après Hérodote)"
+        }
+      ]
+    },
+    {
+      "id": "ionie-499",
+      "year": -499,
+      "title": "La révolte de l’Ionie : Sardes brûle",
+      "type": "politique",
+      "location": [
+        27.28,
+        37.53
+      ],
+      "zoom": 5,
+      "summary": "En 499, les cités grecques d’Ionie se soulèvent contre les tyrans nommés par Darius. Athéniens et Érétriens les aident à incendier Sardes, mais la révolte est écrasée à Ladé en 494.",
+      "details": "Dès le début du Vᵉ siècle, les cités grecques d’**Ionie** sont gouvernées par des **tyrans** soutenus par les Perses. **Aristagoras**, tyran de **Milet**, a échoué à conquérir l’île de Naxos avec l’aide du satrape ; craignant la disgrâce, il choisit de **soulever** l’Ionie (**499**), chasse les tyrans et appelle à l’aide la mère-patrie.\n\n**Sparte** refuse. **Athènes** envoie vingt navires, et **Érétrie**, cinq. En **498**, les alliés remontent jusqu’à **Sardes**, capitale de la satrapie, et la brûlent : Hérodote dit que l’incendie du temple de Cybèle fut ensuite la justification de leurs représailles. À l’annonce, Darius aurait demandé : « Qui sont ces Athéniens ? », puis ordonné à un serviteur de le lui rappeler chaque jour au dîner. Anecdote de plus tard.\n\nLes Perses reprennent l’initiative. En **494**, leur flotte, appuyée par des Phéniciens, bat les Grecs à la bataille navale de **Ladé**, devant Milet, qui est saccagée. En 493, la révolte est finie. Le satrape **Artapherne** réorganise l’Ionie, en imposant un tribut calculé sur les terres, plutôt que de rétablir les tyrans.\n\nPour Darius, Athènes et Érétrie doivent être punies.",
+      "consequences": [
+        "L’Ionie, de Milet à Phocée, est reconquise ; Milet est détruite et sa population déportée.",
+        "Les Perses réorganisent la province : tribut équitable et fin des tyrannies, régime des cités plus souple.",
+        "Chypre, soulevée aussi, est reprise avant 494 ; la Carie et l’Hellespont rentrent dans l’ordre.",
+        "Darius décide une expédition punitive contre Athènes et Érétrie, qui aboutira à Marathon."
+      ],
+      "territory": "ionie-499",
+      "territoryNote": "Vers -499, l’empire tient la Perside, la Médie, l’Élam, la Mésopotamie, la Syrie, la Phénicie, la Palestine, Chypre, l’Égypte, la Cyrénaïque, l’Anatolie (dont l’Ionie, en révolte), l’Arménie, la Bactriane, la Sogdiane, l’Arachosie, le Gandhara, la vallée de l’Indus, la Thrace côtière et la Macédoine vassale. Voisins : Athènes, Sparte, Érétrie et les cités de Grèce, indépendantes ; les Scythes ; Koush ; les Arabes ; les royaumes indiens du Gange.",
+      "sources": [
+        {
+          "label": "Wikipédia — Révolte de l’Ionie",
+          "url": "https://fr.wikipedia.org/wiki/R%C3%A9volte_de_l'Ionie"
+        },
+        {
+          "label": "Wikipédia — Aristagoras de Milet",
+          "url": "https://fr.wikipedia.org/wiki/Aristagoras_de_Milet"
+        },
+        {
+          "label": "Wikipédia — Milet",
+          "url": "https://fr.wikipedia.org/wiki/Milet"
+        }
+      ],
+      "armies": [
+        {
+          "side": "Athéniens et Ioniens",
+          "from": "Athènes",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              23.73,
+              37.98
+            ],
+            [
+              25.3,
+              37.4
+            ],
+            [
+              27.34,
+              37.94
+            ],
+            [
+              28.04,
+              38.49
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Aristagoras de Milet",
+          "role": "Tyran de Milet, chef de la révolte",
+          "faction": "grecs-macedoniens",
+          "archetype": "general",
+          "position": [
+            27.28,
+            37.53
+          ]
+        },
+        {
+          "name": "Darius Ier",
+          "role": "Grand Roi, qui apprend l’incendie de Sardes",
+          "faction": "parthes-perses",
+          "archetype": "grand-roi",
+          "position": [
+            28.04,
+            38.49
+          ],
+          "person": "darius-ier",
+          "quote": "Qui sont ces Athéniens ? (selon Hérodote)"
+        }
+      ]
+    },
+    {
+      "id": "marathon-490",
+      "year": -490,
+      "title": "Marathon : la défaite de Datis",
+      "type": "bataille",
+      "location": [
+        23.96,
+        38.15
+      ],
+      "zoom": 5.5,
+      "summary": "En 490, une flotte perse commandée par Datis et Artapherne débarque à Marathon. Les hoplites athéniens de Miltiade, presque seuls, repoussent l’armée du Grand Roi.",
+      "details": "Darius veut punir **Érétrie** et **Athènes**. En **490**, une flotte conduite par le Mède **Datis** et **Artapherne**, fils du satrape de Sardes, traverse l’Égée, prend **Naxos** et **Érétrie**, qu’elle brûle, puis débarque à **Marathon**, à une quarantaine de kilomètres d’Athènes. L’exilé **Hippias**, ancien tyran d’Athènes, les guide.\n\nLes Athéniens envoient le coureur **Phidippidès** demander l’aide de Sparte, qui retarde pour cause de fête religieuse. Ils comptent sur eux-mêmes, avec environ 9 000 hoplites (soldats en armure) et mille Platéens. Le général **Miltiade** les lance à la course pour réduire les tirs d’archers. Les ailes grecques écrasent les ailes perses, puis se retournent contre le centre. Hérodote donne 6 400 morts côté perse et 192 côté athénien. Les chiffres perses sont douteux ; l’ensemble de la force était probablement de 20 000 à 25 000 hommes.\n\nLa flotte perse tente de contourner l’Attique vers Athènes, mais trouve la ville défendue et rentre en Asie. L’exploit passe à la postérité, y compris sous la forme du récit du **marathon**, légende tardive d’un coureur annonçant la nouvelle. Pour les Perses, c’est un revers local ; pour les Grecs, un mythe fondateur.",
+      "consequences": [
+        "L’expédition échoue : Athènes et la Grèce continentale restent libres, hors de l’empire.",
+        "Érétrie est détruite et ses habitants déportés en Élam, mais les Cyclades restent sous contrôle perse.",
+        "Darius prépare une grande expédition, interrompue par la révolte d’Égypte (486) puis par sa mort.",
+        "Athènes acquiert un prestige durable et se lance dans la construction d’une flotte."
+      ],
+      "territory": "marathon-490",
+      "territoryNote": "Vers -490, l’empire tient la Perside, la Médie, l’Élam, la Mésopotamie, la Syrie, la Phénicie, la Palestine, Chypre, l’Égypte, la Cyrénaïque, l’Anatolie avec l’Ionie, l’Arménie, la Bactriane, la Sogdiane, l’Arachosie, le Gandhara, la vallée de l’Indus, la Thrace côtière, la Macédoine (vassale) et les Cyclades orientales. Voisins : Athènes, Sparte, Corinthe, Thèbes et les cités grecques de la péninsule, indépendantes ; les Scythes ; Koush ; les Arabes ; les royaumes indiens.",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Marathon",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Marathon"
+        },
+        {
+          "label": "Wikipédia — Miltiade",
+          "url": "https://fr.wikipedia.org/wiki/Miltiade"
+        },
+        {
+          "label": "Wikipédia — Datis",
+          "url": "https://fr.wikipedia.org/wiki/Datis"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Athéniens et Platéens",
+          "Perses de Datis et Artapherne"
+        ],
+        "commanders": [
+          "Miltiade",
+          "Callimaque",
+          "Datis",
+          "Artapherne"
+        ],
+        "outcome": "Victoire athénienne ; retrait de la flotte perse",
+        "forces": "Environ 10 000 Grecs contre 20 000 à 25 000 Perses (estimations modernes)",
+        "losses": "192 Athéniens selon Hérodote ; 6 400 Perses selon Hérodote (chiffre peu fiable)"
+      },
+      "armies": [
+        {
+          "side": "Flotte de Datis",
+          "from": "Cilicie",
+          "faction": "parthes-perses",
+          "path": [
+            [
+              34.9,
+              36.5
+            ],
+            [
+              28,
+              36.5
+            ],
+            [
+              25.5,
+              37.1
+            ],
+            [
+              24.4,
+              37.9
+            ],
+            [
+              24.02,
+              38.15
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Athéniens et Platéens",
+          "from": "Athènes",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              23.73,
+              37.98
+            ],
+            [
+              23.85,
+              38.08
+            ],
+            [
+              23.96,
+              38.15
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Miltiade",
+          "role": "Stratège athénien, vainqueur de Marathon",
+          "faction": "grecs-macedoniens",
+          "archetype": "general",
+          "position": [
+            23.9,
+            38.1
+          ]
+        },
+        {
+          "name": "Datis",
+          "role": "Amiral mède de Darius",
+          "faction": "parthes-perses",
+          "archetype": "general",
+          "position": [
+            24.15,
+            38.15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "salamine-480",
+      "year": -480,
+      "title": "Salamine : Xerxès échoue après les Thermopyles",
+      "type": "bataille",
+      "location": [
+        23.52,
+        37.96
+      ],
+      "zoom": 5.5,
+      "summary": "En 480, Xerxès envahit la Grèce, perce aux Thermopyles contre Léonidas et brûle Athènes. Sa flotte est ensuite battue à Salamine par Thémistocle.",
+      "details": "**Xerxès Iᵉʳ**, fils de Darius, prépare une invasion monumentale. Hérodote compte plus de **2 millions** de combattants ; les historiens modernes estiment plutôt l’armée de terre entre 80 000 et 200 000 hommes, et la flotte à environ 600 navires. L’armée traverse l’Hellespont sur deux ponts de bateaux et le canal de l’**Athos** est creusé pour éviter la tempête.\n\nAux **Thermopyles**, un défilé de Grèce centrale, **Léonidas**, roi de Sparte, retient l’armée perse quelques jours avec environ 7 000 Grecs. Trahi par un Grec, **Éphialtès**, qui révèle un sentier, il renvoie la plupart des alliés et reste avec ses 300 Spartiates et quelques centaines d’autres, et meurt avec eux. Pendant ce temps, la flotte grecque combat à l’**Artémision**.\n\nAthènes, évacuée, est brûlée. **Thémistocle**, par une ruse, attire la flotte perse, plus nombreuse, dans le détroit de **Salamine**. Les Perses, gênés par l’étroitesse des lieux, perdent un grand nombre de navires. Xerxès, qui regardait depuis un trône, repart en Asie avec une partie de l’armée, laissant **Mardonios** en Grèce.\n\nLes sources, grecques, magnifient la victoire. L’archéologie confirme les destructions d’Athènes. Mais Salamine ne mit pas fin à la guerre.",
+      "consequences": [
+        "Athènes est incendiée, mais la flotte perse perd la maîtrise de l’Égée centrale et Xerxès rentre en Asie.",
+        "La flotte perse se replie sur l’Ionie ; Mardonios hiverne en Thessalie avec l’armée de terre.",
+        "Athènes devient la grande puissance maritime grecque, forte de sa flotte de trières.",
+        "Mardonios reste en Grèce avec l’armée de terre pour tenter une dernière campagne en 479."
+      ],
+      "territory": "salamine-480",
+      "territoryNote": "Vers -480, l’empire tient la Perside, la Médie, l’Élam, la Mésopotamie, la Syrie, la Phénicie, la Palestine, Chypre, l’Égypte, la Cyrénaïque, l’Anatolie avec l’Ionie, l’Arménie, la Bactriane, la Sogdiane, l’Arachosie, le Gandhara, la vallée de l’Indus, la Thrace, la Macédoine (vassale) et la Thessalie, ainsi que l’Attique occupée. Voisins : Sparte, Corinthe, Égine, Athènes et la ligue grecque, indépendantes ; les Scythes ; Koush ; les Arabes ; Carthage, alliée selon une tradition douteuse.",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Salamine",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Salamine"
+        },
+        {
+          "label": "Wikipédia — Bataille des Thermopyles (480 av. J.-C.)",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_des_Thermopyles_(480_av._J.-C.)"
+        },
+        {
+          "label": "Wikipédia — Xerxès Ier",
+          "url": "https://fr.wikipedia.org/wiki/Xerx%C3%A8s_Ier"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Ligue grecque",
+          "Flotte perse de Xerxès Iᵉʳ"
+        ],
+        "commanders": [
+          "Thémistocle",
+          "Eurybiade",
+          "Xerxès Iᵉʳ",
+          "Ariabignès"
+        ],
+        "outcome": "Victoire grecque ; Xerxès renonce à rester en Grèce",
+        "forces": "Environ 370 navires grecs contre 600 à 800 navires perses (estimations modernes)",
+        "losses": "Une quarantaine de navires grecs contre plus de 200 perses (estimation)"
+      },
+      "armies": [
+        {
+          "id": "xerxes",
+          "side": "Armée de Xerxès",
+          "from": "Sardes",
+          "faction": "parthes-perses",
+          "path": [
+            [
+              28.04,
+              38.49
+            ],
+            [
+              26.4,
+              40.4
+            ],
+            [
+              24.5,
+              40.7
+            ],
+            [
+              22.6,
+              40
+            ],
+            [
+              22.54,
+              38.8
+            ],
+            [
+              23.73,
+              37.98
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Flotte perse",
+          "from": "Phénicie",
+          "faction": "parthes-perses",
+          "path": [
+            [
+              24.8,
+              39.9
+            ],
+            [
+              24.3,
+              38.7
+            ],
+            [
+              24.1,
+              37.8
+            ],
+            [
+              23.52,
+              37.96
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Flotte grecque",
+          "from": "Athènes",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              23.35,
+              37.9
+            ],
+            [
+              23.52,
+              37.96
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Xerxès Iᵉʳ",
+          "role": "Grand Roi, spectateur de Salamine",
+          "faction": "parthes-perses",
+          "archetype": "grand-roi",
+          "position": [
+            23.62,
+            38
+          ],
+          "person": "xerxes-ier"
+        },
+        {
+          "name": "Thémistocle",
+          "role": "Stratège athénien, vainqueur de Salamine",
+          "faction": "grecs-macedoniens",
+          "archetype": "senateur",
+          "position": [
+            23.45,
+            37.95
+          ],
+          "person": "themistocle"
+        },
+        {
+          "name": "Léonidas",
+          "role": "Roi de Sparte, mort aux Thermopyles",
+          "faction": "grecs-macedoniens",
+          "archetype": "roi",
+          "position": [
+            22.54,
+            38.8
+          ],
+          "quote": "Viens les prendre ! (réponse prêtée à Léonidas par Plutarque)"
+        }
+      ]
+    },
+    {
+      "id": "platees-479",
+      "year": -479,
+      "title": "Platées : la fin de l’invasion",
+      "type": "bataille",
+      "location": [
+        23.27,
+        38.22
+      ],
+      "zoom": 5.5,
+      "summary": "En 479, l’armée de Mardonios est détruite à Platées par les Grecs de Pausanias. Le même été, la flotte perse est battue à Mycale : la Grèce est sauvée et l’Ionie bascule.",
+      "details": "Après Salamine, **Mardonios**, général de Xerxès, passe l’hiver en **Thessalie** et tente de séparer **Athènes** de **Sparte** par la diplomatie. Au printemps **479**, il réoccupe Athènes, puis recule sur la Béotie, terrain favorable à la cavalerie perse, près de **Platées**.\n\nLes Grecs, dirigés par le Spartiate **Pausanias** avec des contingents de nombreuses cités, comptent environ 40 000 hommes. Après dix jours d’escarmouches, un repli grec de nuit désorganise leur ligne. Mardonios, croyant à la fuite, attaque : les hoplites spartiates, plus lourdement protégés, tiennent. Mardonios est tué, et l’armée perse se débande. Hérodote parle de 300 000 hommes, ce qui est invraisemblable : les modernes pensent plutôt à 50 000 à 100 000 combattants.\n\nSelon la tradition, le même jour, la flotte grecque détruit le camp perse à **Mycale**, en Ionie. Les Grecs reprennent bientôt **Sestos** et **Byzance**, puis forment la **ligue de Délos** autour d’Athènes. Les Perses ne reviendront plus par la terre en Europe : leur domination s’arrête désormais à l’Hellespont.",
+      "consequences": [
+        "Les Perses quittent la Grèce, la Thessalie et la Macédoine, et ne gardent en Europe que quelques places de Thrace (Doriscos, Éion), perdues peu après.",
+        "L’Ionie et les îles de l’Égée se détachent de l’empire avec l’aide de la flotte grecque.",
+        "Athènes crée la ligue de Délos pour poursuivre la guerre contre la Perse, puis l’utilise pour bâtir son empire.",
+        "La frontière occidentale se fixe sur l’Hellespont et les côtes anatoliennes."
+      ],
+      "territory": "platees-479",
+      "territoryNote": "Vers -479, l’empire perd la Grèce, la Thessalie, la Macédoine et la Thrace européenne et conserve l’Asie : la Perside, la Médie, l’Élam, la Mésopotamie, la Syrie, la Phénicie, la Palestine, Chypre, l’Égypte, la Cyrénaïque, l’Anatolie (Ionie en cours de perte), l’Arménie, la Bactriane, la Sogdiane, l’Arachosie, le Gandhara et la vallée de l’Indus. Voisins : Athènes, Sparte et la ligue grecque, indépendantes et victorieuses ; la Macédoine d’Alexandre Ier, redevenue libre ; les Thraces ; les Scythes ; Koush ; les Arabes.",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Platées",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Plat%C3%A9es"
+        },
+        {
+          "label": "Wikipédia — Mardonios",
+          "url": "https://fr.wikipedia.org/wiki/Mardonios"
+        },
+        {
+          "label": "Wikipédia — Bataille de Mycale",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Mycale"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Ligue grecque",
+          "Armée perse de Mardonios"
+        ],
+        "commanders": [
+          "Pausanias",
+          "Aristide",
+          "Mardonios"
+        ],
+        "outcome": "Victoire grecque décisive ; mort de Mardonios",
+        "forces": "Environ 40 000 Grecs ; 50 000 à 100 000 Perses selon les modernes (300 000 selon Hérodote)",
+        "losses": "Faibles côté grec ; très lourdes côté perse (chiffres antiques peu sûrs)"
+      },
+      "armies": [
+        {
+          "id": "mardonios",
+          "side": "Armée de Mardonios",
+          "from": "Athènes",
+          "faction": "parthes-perses",
+          "path": [
+            [
+              23.73,
+              37.98
+            ],
+            [
+              23.6,
+              38.15
+            ],
+            [
+              23.27,
+              38.22
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Ligue grecque",
+          "from": "Sparte",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              22.43,
+              37.07
+            ],
+            [
+              23,
+              37.9
+            ],
+            [
+              23.27,
+              38.22
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Mardonios",
+          "role": "Général de Xerxès, tué à Platées",
+          "faction": "parthes-perses",
+          "archetype": "general",
+          "position": [
+            23.4,
+            38.25
+          ]
+        },
+        {
+          "name": "Pausanias",
+          "role": "Régent de Sparte, chef des Grecs",
+          "faction": "grecs-macedoniens",
+          "archetype": "general",
+          "position": [
+            23.15,
+            38.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "callias-449",
+      "year": -449,
+      "title": "La paix de Callias : la fin des guerres médiques",
+      "type": "traité",
+      "location": [
+        23.73,
+        37.98
+      ],
+      "zoom": 4.5,
+      "summary": "Vers 449, un accord attribué à l’Athénien Callias met fin à trente ans de conflit entre Athènes et la Perse. Son existence même est débattue.",
+      "details": "Après Platées, les Grecs de la **ligue de Délos**, menés par **Athènes**, portent la guerre en Orient. Vers **466**, **Cimon** bat une flotte perse à l’embouchure de l’**Eurymédon**, en Asie Mineure. Athènes soutient aussi la révolte de l’Égypte menée par **Inaros** (460), mais l’armée est écrasée vers **454** et les Perses de **Mégabyze** reprennent le pays. Entre-temps, **Artaxerxès Iᵉʳ** règne sur l’empire : fils de Xerxès, assassiné en 465, il lui a succédé.\n\nVers **449**, la guerre s’arrête. Plusieurs auteurs grecs du IVᵉ siècle, dont **Isocrate** et **Diodore**, mentionnent une « **paix de Callias** », conclue par un ambassadeur athénien. Elle aurait interdit aux navires perses d’entrer en mer Égée et aux Grecs de dépasser une ligne en Asie Mineure, tandis que les cités grecques d’Asie seraient autonomes. Mais **Thucydide** ne la mentionne pas, et certains historiens modernes y voient un accord de fait, non un traité signé.\n\nPour le Grand Roi, l’essentiel est ailleurs : l’Égypte est reprise, la **Phénicie** fournit la flotte, et l’Asie est stable. Les Perses ne cherchent plus à conquérir la Grèce, mais jouent désormais de ses divisions.",
+      "consequences": [
+        "La frontière occidentale se fixe : les Perses gardent l’Anatolie sauf les cités grecques de la côte, qui paient à Athènes ou deviennent autonomes.",
+        "L’Égypte reste perse après l’échec de la révolte d’Inaros (454).",
+        "Chypre reste en grande partie perse, malgré l’expédition athénienne de Cimon (450).",
+        "La Perse se détourne du front grec, et fera de l’or un outil de sa politique dans les guerres entre cités."
+      ],
+      "territory": "callias-449",
+      "territoryNote": "Vers -449, l’empire tient la Perside, la Médie, l’Élam, la Mésopotamie, la Syrie, la Phénicie, la Palestine, Chypre, l’Égypte avec la Cyrénaïque, l’Anatolie intérieure et les côtes sauf les cités grecques de l’Égée (autonomes ou athéniennes), l’Arménie, la Bactriane, la Sogdiane, l’Arachosie, le Gandhara et la vallée de l’Indus. Voisins : Athènes et la ligue de Délos, Sparte, indépendantes ; les Thraces et la Macédoine, indépendants ; les Scythes ; Koush ; les Arabes ; les royaumes indiens.",
+      "sources": [
+        {
+          "label": "Wikipédia — Paix de Callias",
+          "url": "https://fr.wikipedia.org/wiki/Paix_de_Callias"
+        },
+        {
+          "label": "Wikipédia — Artaxerxès Ier",
+          "url": "https://fr.wikipedia.org/wiki/Artaxerx%C3%A8s_Ier"
+        },
+        {
+          "label": "Wikipédia — Ligue de Délos",
+          "url": "https://fr.wikipedia.org/wiki/Ligue_de_D%C3%A9los"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Artaxerxès Iᵉʳ",
+          "role": "Grand Roi, « à la longue main »",
+          "faction": "parthes-perses",
+          "archetype": "grand-roi",
+          "position": [
+            48.24,
+            32.19
+          ],
+          "person": "artaxerxes-ier"
+        },
+        {
+          "name": "Callias",
+          "role": "Ambassadeur athénien",
+          "faction": "grecs-macedoniens",
+          "archetype": "diplomate",
+          "position": [
+            23.73,
+            37.98
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cunaxa-401",
+      "year": -401,
+      "title": "Cunaxa : Cyrus le Jeune et les Dix Mille",
+      "type": "bataille",
+      "location": [
+        44.2,
+        33.4
+      ],
+      "zoom": 5.5,
+      "summary": "Cyrus le Jeune se révolte contre son frère Artaxerxès II avec dix mille mercenaires grecs. Il est tué à Cunaxa, près de Babylone ; les Grecs reviennent à pied, racontés par Xénophon.",
+      "details": "À la mort de **Darius II** (404), son fils aîné **Artaxerxès II** monte sur le trône. Son frère cadet **Cyrus le Jeune**, satrape de Lydie, de Phrygie et de Cappadoce et soutenu par sa mère **Parysatis**, veut le renverser. Il lève une armée d’environ 13 000 mercenaires grecs, les futurs **Dix Mille**, dont l’Athénien **Xénophon**, qui raconte l’épopée dans l’**Anabase**.\n\nL’expédition part de **Sardes** au printemps **401**, traverse l’Anatolie, la Syrie, l’Euphrate. En septembre, à **Cunaxa**, à environ 90 kilomètres de Babylone, elle rencontre l’armée royale. Les Grecs mettent en fuite l’aile qui leur fait face. Mais Cyrus charge directement son frère, et il est tué. Sa cause meurt avec lui.\n\nLes Grecs, trahis et leurs chefs assassinés par le satrape **Tissapherne**, élisent de nouveaux généraux, dont Xénophon. Ils remontent le Tigre, traversent les montagnes d’Arménie sous la neige et atteignent la mer Noire à **Trébizonde** (« Thalassa ! », crie-t-on). L’aventure révèle la fragilité de l’empire : une petite troupe grecque l’a traversé en victorieuse. Elle nourrira l’idée, reprise par Alexandre, qu’on pourrait le conquérir.",
+      "consequences": [
+        "Artaxerxès II reste maître d’un empire qui garde Mésopotamie, Syrie, Anatolie et Iran, malgré la tentative de Cyrus.",
+        "L’Égypte, déjà perdue en 404 avec la révolte d’Amyrtée, reste indépendante.",
+        "Tissapherne reprend les satrapies de Cyrus et remet la main sur les cités grecques d’Asie, ce qui provoque la guerre avec Sparte.",
+        "Le retour des Dix Mille montre la faiblesse de l’armée perse face à l’infanterie grecque."
+      ],
+      "territory": "cunaxa-401",
+      "territoryNote": "Vers -401, l’empire tient la Perside, la Médie, l’Élam, la Babylonie, l’Assyrie, la Syrie, la Phénicie, la Palestine, Chypre, l’Anatolie avec les cités grecques de la côte, l’Arménie, la Bactriane, la Sogdiane, l’Arachosie, le Gandhara et la vallée de l’Indus. L’Égypte est indépendante depuis -404 (Amyrtée). Voisins : Sparte et Athènes, cités grecques indépendantes ; les Thraces ; la Macédoine ; les Scythes ; Koush ; les Arabes ; les royaumes indiens.",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Counaxa",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Counaxa"
+        },
+        {
+          "label": "Wikipédia — Artaxerxès II",
+          "url": "https://fr.wikipedia.org/wiki/Artaxerx%C3%A8s_II"
+        },
+        {
+          "label": "Wikipédia — Anabase (Xénophon)",
+          "url": "https://fr.wikipedia.org/wiki/Anabase_(X%C3%A9nophon)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Armée royale d’Artaxerxès II",
+          "Cyrus le Jeune et les Dix Mille"
+        ],
+        "commanders": [
+          "Artaxerxès II",
+          "Tissapherne",
+          "Cyrus le Jeune",
+          "Cléarque de Sparte"
+        ],
+        "outcome": "Victoire royale : Cyrus le Jeune est tué ; les Grecs s’en tirent en retraite",
+        "forces": "Selon Xénophon, 13 000 Grecs et 100 000 Asiatiques côté Cyrus contre 900 000 côté roi ; chiffres exagérés, les modernes pensent à environ 40 000 à 60 000 Perses",
+        "losses": "Pertes grecques très faibles selon Xénophon ; chiffres perses inconnus"
+      },
+      "armies": [
+        {
+          "id": "dix-mille",
+          "side": "Les Dix Mille",
+          "from": "Sardes",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              28.04,
+              38.49
+            ],
+            [
+              34.89,
+              36.92
+            ],
+            [
+              38.1,
+              35.95
+            ],
+            [
+              41,
+              34.9
+            ],
+            [
+              44.2,
+              33.4
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Armée royale d’Artaxerxès II",
+          "from": "Suse",
+          "faction": "parthes-perses",
+          "path": [
+            [
+              48.24,
+              32.19
+            ],
+            [
+              46,
+              32.6
+            ],
+            [
+              44.2,
+              33.4
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Cyrus le Jeune",
+          "role": "Prince rebelle, tué à Cunaxa",
+          "faction": "parthes-perses",
+          "archetype": "general",
+          "position": [
+            44,
+            33.35
+          ],
+          "person": "cyrus-le-jeune"
+        },
+        {
+          "name": "Xénophon",
+          "role": "Officier athénien, auteur de l’Anabase",
+          "faction": "grecs-macedoniens",
+          "archetype": "sage",
+          "position": [
+            43.8,
+            33.4
+          ],
+          "quote": "Thalassa ! Thalassa ! (la mer ! la mer !, cri des Dix Mille selon Xénophon)"
+        },
+        {
+          "name": "Artaxerxès II",
+          "role": "Grand Roi, vainqueur de son frère",
+          "faction": "parthes-perses",
+          "archetype": "grand-roi",
+          "position": [
+            44.4,
+            33.4
+          ],
+          "person": "artaxerxes-ii"
+        }
+      ]
+    },
+    {
+      "id": "paix-du-roi-387",
+      "year": -387,
+      "title": "La paix du Roi : le Grand Roi arbitre la Grèce",
+      "type": "traité",
+      "location": [
+        28.04,
+        38.49
+      ],
+      "zoom": 4.5,
+      "summary": "En 387, la paix d’Antalcidas, dictée par Artaxerxès II, rend à la Perse les cités grecques d’Asie et impose la paix en Grèce. Les Grecs l’appellent la « paix du Roi ».",
+      "details": "Après la mort de Cyrus le Jeune, **Sparte** soutient les cités grecques d’Asie contre les Perses. Le Grand Roi réagit en finançant leurs ennemis : **Athènes**, **Thèbes**, **Corinthe**, **Argos**. C’est la guerre de Corinthe (395-387). L’**or perse**, versé aux cités rivales de Sparte, change le cours du conflit, et une flotte perse commandée par l’Athénien **Conon** détruit la flotte spartiate à **Cnide** (394).\n\nÉpuisée, Sparte négocie. L’amiral spartiate **Antalcidas** va chercher à **Sardes** l’appui du satrape **Tiribaze**. En **387**, les Grecs doivent écouter le texte du Grand Roi, lu aux délégués : « Le roi Artaxerxès juge juste que les cités d’Asie lui appartiennent, ainsi que Clazomènes et Chypre, et que toutes les autres cités grecques, grandes et petites, soient indépendantes. » Xénophon rapporte ce texte.\n\nL’empire retrouve donc l’Ionie et Chypre, perdues depuis 479 ou vacillantes. Il devient le garant de la paix, arbitrant les rivalités des cités, qui se disputent désormais sa faveur. L’Égypte, elle, échappe encore : vers 404, le prince **Amyrtée** a proclamé son indépendance, et la 29ᵉ puis la 30ᵉ dynastie gardent le pays face aux expéditions perses.",
+      "consequences": [
+        "Les cités grecques d’Asie Mineure, Ionie comprise, reviennent sous la domination du Grand Roi.",
+        "Chypre est reconquise, en partie après la longue guerre contre Évagoras de Salamine (vers 391-380).",
+        "Le roi se pose en arbitre des cités grecques, qui s’affaiblissent par leurs rivalités.",
+        "L’Égypte reste indépendante : plusieurs expéditions perses échouent avant celle de 343."
+      ],
+      "territory": "paix-du-roi-387",
+      "territoryNote": "Vers -387, l’empire tient la Perside, la Médie, l’Élam, la Mésopotamie, la Syrie, la Phénicie, la Palestine, Chypre (reprise), l’Anatolie entière avec Ionie et cités grecques de la côte, l’Arménie, la Bactriane, la Sogdiane, l’Arachosie, le Gandhara et la vallée de l’Indus. L’Égypte est indépendante (29ᵉ dynastie). Voisins : Sparte, Athènes, Thèbes et les cités de Grèce, formellement autonomes sous la garantie du Roi ; les Thraces ; la Macédoine ; les Scythes ; Koush ; les Arabes ; les royaumes indiens.",
+      "sources": [
+        {
+          "label": "Wikipédia — Paix d’Antalcidas",
+          "url": "https://fr.wikipedia.org/wiki/Paix_d'Antalcidas"
+        },
+        {
+          "label": "Wikipédia — Guerre de Corinthe",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_de_Corinthe"
+        },
+        {
+          "label": "Wikipédia — Artaxerxès II",
+          "url": "https://fr.wikipedia.org/wiki/Artaxerx%C3%A8s_II"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Artaxerxès II",
+          "role": "Grand Roi, arbitre de la Grèce",
+          "faction": "parthes-perses",
+          "archetype": "grand-roi",
+          "position": [
+            48.24,
+            32.19
+          ],
+          "person": "artaxerxes-ii"
+        },
+        {
+          "name": "Antalcidas",
+          "role": "Amiral et diplomate spartiate",
+          "faction": "grecs-macedoniens",
+          "archetype": "diplomate",
+          "position": [
+            28.04,
+            38.49
+          ]
+        }
+      ]
+    },
+    {
+      "id": "egypte-343",
+      "year": -343,
+      "title": "Artaxerxès III reprend l’Égypte",
+      "type": "bataille",
+      "location": [
+        32.55,
+        31.04
+      ],
+      "zoom": 5.5,
+      "summary": "En 343, Artaxerxès III bat le pharaon Nectanébo II près de Péluse et reprend l’Égypte, perdue depuis 404. Il renforce par ailleurs l’autorité royale dans tout l’empire.",
+      "details": "**Artaxerxès III**, monté sur le trône en **358**, veut restaurer l’autorité du Grand Roi : les satrapes d’Anatolie se révoltent (années 360-350) et il les ramène à l’ordre. Il impose aussi des mercenaires grecs, souvent plus fiables que les levées locales. Il commence par une première expédition en Égypte vers **351**, qui échoue.\n\nLa révolte de **Sidon**, en Phénicie (vers 351-345), lui donne un prétexte : la ville est prise et incendiée, ses habitants massacrés. Puis, en **343**, Artaxerxès III attaque l’Égypte, alors dirigée par **Nectanébo II**, dernier pharaon de souche égyptienne. Il dispose de forces importantes, dont des mercenaires grecs de **Mentor de Rhodes** et de contingents thébains. Les armées se rencontrent à **Péluse**, déjà fatale à Psammétique III. Nectanébo, vaincu, replie ses troupes sur **Memphis** et s’enfuit vers la Nubie. L’Égypte se rend.\n\nLa domination perse est cette fois dure : Artaxerxès pille les temples et nomme un satrape, **Phérendatès**. Les Égyptiens s’en souviendront ; ils accueilleront **Alexandre** comme un libérateur, en **332**. Artaxerxès III est empoisonné en **338**, probablement par le vizir **Bagoas**.",
+      "consequences": [
+        "L’Égypte, de la Méditerranée à la Nubie, retourne à l’empire après soixante ans d’indépendance.",
+        "La Phénicie reste sous contrôle perse après la ruine de Sidon, mais ses flottes restent précieuses pour le roi.",
+        "Le satrape Phérendatès gouverne l’Égypte ; la domination perse y est mal acceptée.",
+        "L’empire retrouve sa pleine étendue, quelques années avant que Philippe II de Macédoine ne s’intéresse à l’Asie."
+      ],
+      "territory": "egypte-343",
+      "territoryNote": "Vers -343, l’empire tient la Perside, la Médie, l’Élam, la Mésopotamie, la Syrie, la Phénicie, la Palestine, Chypre, l’Anatolie entière avec Ionie, l’Arménie, la Bactriane, la Sogdiane, l’Arachosie, le Gandhara et la vallée de l’Indus, et l’Égypte avec la Cyrénaïque, reconquises. Voisins : la Macédoine de Philippe II, puissance montante, indépendante ; Athènes, Thèbes et les cités grecques ; les Thraces ; les Scythes ; Koush ; les Arabes ; les royaumes indiens.",
+      "sources": [
+        {
+          "label": "Wikipédia — Artaxerxès III",
+          "url": "https://fr.wikipedia.org/wiki/Artaxerx%C3%A8s_III"
+        },
+        {
+          "label": "Wikipédia — Nectanébo II",
+          "url": "https://fr.wikipedia.org/wiki/Nectan%C3%A9bo_II"
+        },
+        {
+          "label": "Wikipédia — Bataille de Péluse (343 av. J.-C.)",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_P%C3%A9luse_(343_av._J.-C.)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Perses d’Artaxerxès III",
+          "Égyptiens de Nectanébo II"
+        ],
+        "commanders": [
+          "Artaxerxès III",
+          "Mentor de Rhodes",
+          "Nectanébo II"
+        ],
+        "outcome": "Victoire perse ; reconquête de l’Égypte",
+        "forces": "Inconnues ; l’armée perse comprend des mercenaires grecs",
+        "losses": "Inconnues"
+      },
+      "armies": [
+        {
+          "id": "artaxerxes-iii",
+          "side": "Armée d’Artaxerxès III",
+          "from": "Sidon",
+          "faction": "parthes-perses",
+          "path": [
+            [
+              35.37,
+              33.57
+            ],
+            [
+              34.47,
+              31.5
+            ],
+            [
+              32.55,
+              31.04
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée de Nectanébo II",
+          "from": "Memphis",
+          "faction": "egyptiens",
+          "path": [
+            [
+              31.25,
+              29.85
+            ],
+            [
+              32,
+              30.6
+            ],
+            [
+              32.55,
+              31.04
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Artaxerxès III",
+          "role": "Grand Roi, reconquérant de l’Égypte",
+          "faction": "parthes-perses",
+          "archetype": "grand-roi",
+          "position": [
+            32.3,
+            31
+          ],
+          "person": "artaxerxes-iii"
+        },
+        {
+          "name": "Nectanébo II",
+          "role": "Dernier pharaon égyptien de souche",
+          "faction": "egyptiens",
+          "archetype": "roi",
+          "position": [
+            31.9,
+            30.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "granique-334",
+      "year": -334,
+      "title": "Le Granique : les satrapes battus par Alexandre",
+      "type": "bataille",
+      "location": [
+        27.25,
+        40.22
+      ],
+      "zoom": 5.5,
+      "summary": "Les satrapes d’Anatolie, sans le Grand Roi, tentent d’arrêter Alexandre sur le Granique et sont vaincus. Les mercenaires grecs de Darius y sont massacrés.",
+      "details": "En **334**, le jeune roi de Macédoine **Alexandre III** passe l’Hellespont avec environ 40 000 hommes, au nom de la vengeance des Grecs. À Suse, **Darius III**, couronné en 336 après une série de meurtres de palais, n’a pas pris la mesure du danger : il laisse les **satrapes** d’Anatolie se débrouiller.\n\nLe Rhodien **Memnon**, mercenaire grec au service du roi, conseille de brûler les récoltes et d’éviter le combat, de laisser Alexandre s’épuiser pendant que la flotte attaque la Grèce. Les satrapes, dont **Arsitès** de Phrygie hellespontique, préfèrent défendre leur terre. Ils alignent environ 40 000 hommes, cavaliers perses et mercenaires grecs, derrière la berge escarpée du **Granique**.\n\nAlexandre traverse en oblique et mène lui-même la charge. Selon **Arrien**, il manque d’être tué par un cavalier perse, sauvé par **Clitos**. Les cavaliers perses cèdent, les mercenaires grecs, abandonnés, sont massacrés ou enchaînés. Arsitès se suicide.\n\nLes sources, macédoniennes ou grecques, grossissent sans doute l’ampleur de la victoire. Mais pour l’empire, c’est un désastre : plus aucune armée de campagne ne protège les cités de la côte.",
+      "consequences": [
+        "La Phrygie hellespontique et la Lydie, avec Sardes, tombent aux mains d’Alexandre sans autre grande bataille.",
+        "Les cités grecques d’Ionie, dont Éphèse, passent du côté macédonien, sauf Milet et Halicarnasse qui résistent.",
+        "Darius III comprend qu’il doit venir en personne.",
+        "La flotte perse, maîtresse de l’Égée, devient la dernière arme du roi, sous Memnon."
+      ],
+      "territory": "granique-334",
+      "territoryNote": "Vers -334, l’empire tient encore toute l’Asie : la Perside, la Médie, l’Élam, la Mésopotamie, la Syrie, la Phénicie, la Palestine, Chypre, l’Égypte avec la Cyrénaïque, l’Anatolie (Ionie incluse, en cours de perte), l’Arménie, la Bactriane, la Sogdiane, l’Arachosie, le Gandhara et la vallée de l’Indus. La Thrace côtière et la Troade sont perdues. Voisins : la Macédoine d’Alexandre et la ligue de Corinthe (Grèce, sauf Sparte), qui ont débarqué en Asie ; les Scythes ; Koush ; les Arabes ; les royaumes indiens.",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille du Granique",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_du_Granique"
+        },
+        {
+          "label": "Wikipédia — Memnon de Rhodes",
+          "url": "https://fr.wikipedia.org/wiki/Memnon_de_Rhodes"
+        },
+        {
+          "label": "Wikipédia — Darius III",
+          "url": "https://fr.wikipedia.org/wiki/Darius_III"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Armée macédonienne et alliée",
+          "Satrapes perses et mercenaires grecs"
+        ],
+        "commanders": [
+          "Alexandre III",
+          "Parménion",
+          "Arsitès",
+          "Memnon de Rhodes"
+        ],
+        "outcome": "Victoire macédonienne ; mercenaires grecs de Darius massacrés",
+        "forces": "Environ 40 000 Macédoniens et alliés contre environ 40 000 Perses et mercenaires (estimations)",
+        "losses": "Une centaine de morts côté macédonien selon Arrien ; plusieurs milliers côté perse"
+      },
+      "armies": [
+        {
+          "id": "alexandre",
+          "side": "Armée d’Alexandre",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              23.32,
+              38.32
+            ],
+            [
+              22.95,
+              40.64
+            ],
+            [
+              23.84,
+              40.8
+            ],
+            [
+              26.36,
+              40.35
+            ],
+            [
+              26.45,
+              40.2
+            ],
+            [
+              27.25,
+              40.22
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Satrapes perses",
+          "faction": "parthes-perses",
+          "path": [
+            [
+              28.2,
+              40.3
+            ],
+            [
+              27.7,
+              40.25
+            ],
+            [
+              27.25,
+              40.22
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Memnon de Rhodes",
+          "role": "Mercenaire grec, stratège de Darius",
+          "faction": "grecs-macedoniens",
+          "archetype": "general",
+          "position": [
+            27.7,
+            40.25
+          ],
+          "quote": "Ravageons la terre devant lui, évitons la bataille (conseil de Memnon, d’après Arrien)"
+        },
+        {
+          "name": "Arsitès",
+          "role": "Satrape de Phrygie hellespontique",
+          "faction": "parthes-perses",
+          "archetype": "general",
+          "position": [
+            27.8,
+            40.3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "issos-333",
+      "year": -333,
+      "title": "Issos : Darius en personne, et en fuite",
+      "type": "bataille",
+      "location": [
+        36.25,
+        36.78
+      ],
+      "zoom": 5.5,
+      "summary": "Darius III, venu en personne, est battu dans l’étroite plaine d’Issos ; il fuit en abandonnant sa famille, que le vainqueur traite avec égards.",
+      "details": "En **333**, Darius III rassemble une armée à **Babylone**, puis marche vers l’ouest. **Alexandre** a pris l’Anatolie, mais le Grand Roi le surprend dans son dos : il se place à Sochoi, en Syrie, puis passe les monts Amanus et tombe sur ses arrières à **Issos**, près de la mer, au sud de l’actuelle Iskenderun.\n\nAlexandre fait demi-tour. Le lieu, étroit, entre mer et montagne, empêche de déployer le grand nombre. Darius commet l’erreur de s’y engager. Le centre, composé de mercenaires grecs, tient ; mais la cavalerie macédonienne, menée par Alexandre, perce l’aile gauche perse et fonce sur le char de **Darius**. Les sources grecques (**Arrien**, **Quinte-Curce**) parlent de 100 000 à 600 000 Perses : exagération, les modernes pensent à environ 50 000 à 100 000.\n\nDarius fuit sur un cheval, abandonnant son char, son manteau et son arc. Sa mère **Sisygambis**, sa femme **Statira** et ses enfants sont capturés ; Alexandre les traite avec les honneurs dus à leur rang. Darius propose alors la paix, avec un partage de l’empire à l’ouest de l’Euphrate. **Parménion** conseille d’accepter. Alexandre refuse : il réclame toute l’Asie.",
+      "consequences": [
+        "La Cilicie, la Syrie et la Phénicie sont ouvertes à Alexandre, qui en prend les ports pour priver la flotte perse de ses bases.",
+        "Darius perd sa famille et son prestige : il offre la paix, puis des territoires, sans succès.",
+        "Le plan naval de Memnon, mort avant Issos, est abandonné.",
+        "Le Grand Roi doit lever une nouvelle armée en Mésopotamie."
+      ],
+      "territory": "issos-333",
+      "territoryNote": "Vers -333, l’empire a perdu l’Anatolie occidentale et centrale, et tient encore la Cilicie, la Syrie, la Phénicie, la Palestine, Chypre, l’Égypte, la Mésopotamie (Babylonie, Assyrie), l’Arménie, la Médie, l’Élam, la Perside, la Bactriane, la Sogdiane, l’Arachosie, le Gandhara et la vallée de l’Indus. Voisins : la Macédoine d’Alexandre et ses alliés grecs, qui tiennent l’Anatolie ; les Arabes ; Koush ; les Scythes ; les royaumes indiens.",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille d’Issos",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_d'Issos"
+        },
+        {
+          "label": "Wikipédia — Darius III",
+          "url": "https://fr.wikipedia.org/wiki/Darius_III"
+        },
+        {
+          "label": "Wikipédia — Sisygambis",
+          "url": "https://fr.wikipedia.org/wiki/Sisygambis"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Armée macédonienne et alliée",
+          "Armée du Grand Roi Darius III"
+        ],
+        "commanders": [
+          "Alexandre III",
+          "Parménion",
+          "Darius III"
+        ],
+        "outcome": "Victoire macédonienne ; fuite de Darius, famille royale capturée",
+        "forces": "Environ 40 000 Macédoniens ; 100 000 Perses ou plus, selon des sources antiques exagérées",
+        "losses": "Pertes perses très élevées, bien supérieures aux pertes macédoniennes (chiffres antiques peu fiables)"
+      },
+      "armies": [
+        {
+          "side": "Armée d’Alexandre",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              31.99,
+              39.65
+            ],
+            [
+              32.85,
+              39.93
+            ],
+            [
+              34.78,
+              37.25
+            ],
+            [
+              34.89,
+              36.92
+            ],
+            [
+              36.25,
+              36.78
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée perse",
+          "faction": "parthes-perses",
+          "path": [
+            [
+              37.2,
+              37.1
+            ],
+            [
+              36.5,
+              36.95
+            ],
+            [
+              36.25,
+              36.78
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Darius III",
+          "role": "Grand Roi, qui fuit son propre char",
+          "faction": "parthes-perses",
+          "archetype": "grand-roi",
+          "position": [
+            36.4,
+            36.85
+          ],
+          "person": "darius-iii"
+        },
+        {
+          "name": "Sisygambis",
+          "role": "Mère de Darius, captive d’Alexandre",
+          "faction": "parthes-perses",
+          "archetype": "imperatrice",
+          "position": [
+            36.9,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gaugameles-331",
+      "year": -331,
+      "title": "Gaugamèles : la dernière grande bataille de Darius",
+      "type": "bataille",
+      "location": [
+        43.4,
+        36.4
+      ],
+      "zoom": 5.5,
+      "summary": "Dans la plaine de Mésopotamie, Darius dispose son immense armée sur un terrain choisi, mais Alexandre l’emporte par une manœuvre en oblique. Le Grand Roi fuit à nouveau.",
+      "details": "Après Issos, Alexandre prend **Tyr** (332) et l’**Égypte**, où il est accueilli en libérateur et fonde Alexandrie. Darius, lui, passe deux ans à préparer la revanche. Il choisit le lieu avec soin : **Gaugamèles**, près d’Arbèles (nord de l’Irak actuel), une plaine rase où ses chars à faux et sa cavalerie peuvent s’exprimer ; il a fait aplanir le terrain.\n\nL’armée perse est composée de contingents de tout l’empire : Mèdes, Bactriens, Sogdiens, Indiens, Arméniens, Cappadociens, quelques éléphants, 200 chars à faux, et des mercenaires grecs. **Arrien** parle d’un million de fantassins ; **Quinte-Curce** de 200 000 ; les estimations modernes sont plutôt de 50 000 à 100 000 hommes.\n\nAlexandre, qui compte environ 47 000 hommes, avance en ordre oblique, attire la cavalerie perse sur sa droite, ouvre une brèche dans la ligne perse, et fonce vers **Darius**. Le roi, craignant d’être pris, s’enfuit. Sur l’autre aile, **Parménion** est en difficulté, mais l’armée perse, voyant son roi parti, se désagrège.\n\nDarius se replie vers **Ecbatane**, tandis qu’Alexandre prend **Babylone**, **Suse** et **Persépolis**. Gaugamèles est le tournant : aucune armée perse ne le menacera plus.",
+      "consequences": [
+        "Babylone et la Mésopotamie ouvrent leurs portes à Alexandre sans autre combat.",
+        "La Susiane et la Perside, cœur de l’empire, sont à sa merci, avec leurs trésors.",
+        "Darius ne dispose plus que de l’Iran oriental, de la Médie et de la Bactriane.",
+        "Les satrapes d’Orient, dont Bessos, commencent à envisager de se défaire de leur roi."
+      ],
+      "territory": "gaugameles-331",
+      "territoryNote": "Vers -331, l’empire a perdu l’Anatolie, la Syrie, la Phénicie, la Palestine, l’Égypte et la Cyrénaïque, et tient encore la Babylonie et l’Assyrie, que la bataille va lui faire perdre, ainsi que l’Élam, la Perside, la Médie, l’Arménie, la Parthie, l’Arie, la Bactriane, la Sogdiane, l’Arachosie, le Gandhara et la vallée de l’Indus. Voisins : la Macédoine d’Alexandre et ses alliés grecs, maîtres du Levant et de l’Égypte ; les Scythes de la steppe ; les Arabes ; les royaumes indiens (Taxila, Pauravas) ; Koush.",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Gaugamèles",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Gaugam%C3%A8les"
+        },
+        {
+          "label": "Wikipédia — Darius III",
+          "url": "https://fr.wikipedia.org/wiki/Darius_III"
+        },
+        {
+          "label": "Wikipédia — Alexandre le Grand",
+          "url": "https://fr.wikipedia.org/wiki/Alexandre_le_Grand"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Armée macédonienne et alliée",
+          "Armée du Grand Roi Darius III"
+        ],
+        "commanders": [
+          "Alexandre III",
+          "Parménion",
+          "Darius III",
+          "Bessos"
+        ],
+        "outcome": "Victoire décisive d’Alexandre ; fuite de Darius",
+        "forces": "Environ 47 000 Macédoniens ; 100 000 Perses ou plus (estimations modernes, contre 250 000 à 1 million selon les Anciens)",
+        "losses": "Environ 1 000 Macédoniens ; plusieurs dizaines de milliers de Perses (chiffres antiques, peu fiables)"
+      },
+      "armies": [
+        {
+          "side": "Armée d’Alexandre",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              29.92,
+              31.2
+            ],
+            [
+              32.55,
+              31.04
+            ],
+            [
+              35.2,
+              33.27
+            ],
+            [
+              38.1,
+              35.95
+            ],
+            [
+              43.4,
+              36.4
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée perse",
+          "faction": "parthes-perses",
+          "path": [
+            [
+              44.6,
+              36.3
+            ],
+            [
+              44,
+              36.4
+            ],
+            [
+              43.4,
+              36.4
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Darius III",
+          "role": "Grand Roi, vaincu une seconde fois",
+          "faction": "parthes-perses",
+          "archetype": "grand-roi",
+          "position": [
+            43.9,
+            36.35
+          ],
+          "person": "darius-iii"
+        },
+        {
+          "name": "Bessos",
+          "role": "Satrape de Bactriane, chef de l’aile gauche",
+          "faction": "parthes-perses",
+          "archetype": "general",
+          "position": [
+            44.1,
+            36.3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "darius-330",
+      "year": -330,
+      "title": "La mort de Darius III, Persépolis en flammes",
+      "type": "chute",
+      "location": [
+        55,
+        36.1
+      ],
+      "zoom": 5,
+      "summary": "Persépolis est livrée au feu au printemps 330. Poursuivi par Alexandre, Darius est capturé puis tué par le satrape Bessos : la dynastie achéménide s’éteint.",
+      "details": "Après Gaugamèles, **Babylone** et **Suse** livrent leurs trésors à **Alexandre**. En janvier **330**, il force le passage des Portes persiques et entre dans **Persépolis**, la cité des cérémonies royales. Il y trouve un trésor immense, que ses troupes pillent. Au printemps, le palais de Xerxès brûle : les sources grecques (**Diodore**, **Plutarque**, **Arrien**) divergent. Pour certains, c’est une vengeance panhellénique décidée sur la suggestion de la courtisane **Thaïs** pendant un banquet ; pour d’autres, un acte politique. Les fouilles montrent un incendie réel de l’apadana et du palais.\n\nDarius, lui, s’est replié à **Ecbatane** avec des restes d’armée. Quand Alexandre approche, il fuit vers l’est, en direction de la Bactriane. Il est arrêté par son parent et satrape **Bessos**, et ses fidèles. En juillet 330, près de la **Parthie**, il est mortellement blessé et abandonné. Alexandre le retrouve mort, le couvre de son manteau et lui fait des funérailles royales à Persépolis.\n\nBessos se proclame roi sous le nom d’**Artaxerxès V**. Alexandre le traque et le fera exécuter en 329. L’empire achéménide, qui a duré plus de deux siècles, se transforme en empire d’Alexandre.",
+      "consequences": [
+        "Tout l’empire, de la Méditerranée à la Perside, passe à Alexandre ; il reste à conquérir l’Iran oriental et la Bactriane.",
+        "Persépolis, brûlée, ne retrouvera pas son rôle de cité royale ; Suse et Ecbatane gardent leur importance.",
+        "Bessos prend le titre de roi mais ne rallie pas les satrapes d’Orient.",
+        "La dynastie achéménide s’éteint avec Darius III ; l’héritage de la Perse passe aux Séleucides et aux Parthes."
+      ],
+      "territory": "darius-330",
+      "territoryNote": "Vers -330, l’empire se réduit à l’Iran oriental et à l’Asie centrale : la Parthie, l’Hyrcanie, l’Arie, la Drangiane, l’Arachosie, la Bactriane, la Sogdiane, et théoriquement le Gandhara et l’Indus ; la Médie, la Perside et la Mésopotamie sont aux mains d’Alexandre. Voisins : la Macédoine d’Alexandre, qui tient désormais tout l’Occident de l’empire ; les Scythes et les Saces de la steppe ; les royaumes indiens (Taxila, Pauravas) ; Koush ; les Arabes.",
+      "sources": [
+        {
+          "label": "Wikipédia — Darius III",
+          "url": "https://fr.wikipedia.org/wiki/Darius_III"
+        },
+        {
+          "label": "Wikipédia — Persépolis",
+          "url": "https://fr.wikipedia.org/wiki/Pers%C3%A9polis"
+        },
+        {
+          "label": "Wikipédia — Bessos",
+          "url": "https://fr.wikipedia.org/wiki/Bessos"
+        }
+      ],
+      "armies": [
+        {
+          "side": "Armée d’Alexandre",
+          "faction": "grecs-macedoniens",
+          "path": [
+            [
+              52.89,
+              29.93
+            ],
+            [
+              48.51,
+              34.8
+            ],
+            [
+              51.4,
+              35.6
+            ],
+            [
+              54.35,
+              36.17
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Darius III",
+          "role": "Dernier Grand Roi achéménide",
+          "faction": "parthes-perses",
+          "archetype": "grand-roi",
+          "position": [
+            55.4,
+            36.15
+          ],
+          "person": "darius-iii",
+          "quote": "Dis à Alexandre ma gratitude pour sa bonté envers ma famille (d’après Quinte-Curce)"
+        },
+        {
+          "name": "Bessos",
+          "role": "Satrape de Bactriane, meurtrier de Darius",
+          "faction": "parthes-perses",
+          "archetype": "general",
+          "position": [
+            56,
+            36.4
+          ]
+        }
+      ]
+    }
+  ]
+}
