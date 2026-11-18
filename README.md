@@ -77,7 +77,7 @@
 | Geo pipeline | Node + TypeScript scripts, Turf.js, signed distance fields baked into PNGs |
 | AI agent | Python, Google ADK, FastAPI; Gemini, Claude (via LiteLLM) or a local Ollama model |
 | Quality | Vitest, Playwright, oxlint, Prettier, pytest, GitHub Actions |
-| Hosting | GitHub Pages (static build, deployed on every push to `main`), 455 prerendered pages |
+| Hosting | GitHub Pages (static build, deployed on every push to `main`), 455 prerendered pages; optional copy on a VPS ([docs/DEPLOIEMENT-VPS.md](docs/DEPLOIEMENT-VPS.md)) |
 
 ## How it works
 
