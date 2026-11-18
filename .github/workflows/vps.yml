@@ -1,0 +1,59 @@
+# Copie du site statique sur le VPS de Florent à chaque push sur main (procédure : docs/DEPLOIEMENT-VPS.md).
+# Même build que GitHub Pages (pages.yml), mais servi à la racine (« / ») du port 8081 du VPS.
+# Sans les secrets VPS_HOST, VPS_USER, VPS_SSH_KEY et VPS_KNOWN_HOSTS, toutes les étapes sont sautées :
+# le workflow reste vert (pas d'e-mail d'échec) tant que le VPS n'est pas préparé.
+name: VPS
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: vps
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      VPS_HOST: ${{ secrets.VPS_HOST }}
+    steps:
+      - if: env.VPS_HOST == ''
+        run: "echo 'Secrets VPS absents, déploiement sauté (voir docs/DEPLOIEMENT-VPS.md).'"
+      - if: env.VPS_HOST != ''
+        uses: actions/checkout@v5
+      - if: env.VPS_HOST != ''
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - if: env.VPS_HOST != ''
+        run: npm ci
+      # Site servi à la racine du port 8081 : chemins depuis « / ». Sans le sage (VITE_STATIC).
+      - if: env.VPS_HOST != ''
+        run: npx vite build --base=/
+        env:
+          VITE_STATIC: '1'
+      # SITE_URL inchangé : canonical, sitemap et Open Graph pointent vers GitHub Pages (adresse principale),
+      # pour ne pas créer de contenu en double tant que le VPS n'a pas de nom de domaine.
+      - if: env.VPS_HOST != ''
+        run: npx tsx scripts/prerender.ts
+      - if: env.VPS_HOST != ''
+        name: Clé SSH et empreinte du serveur
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$VPS_SSH_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          printf '%s\n' "$VPS_KNOWN_HOSTS" > ~/.ssh/known_hosts
+        env:
+          VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
+          VPS_KNOWN_HOSTS: ${{ secrets.VPS_KNOWN_HOSTS }}
+      - if: env.VPS_HOST != ''
+        name: Envoi sur le VPS
+        run: rsync -az --delete --chmod=D755,F644 dist/ "$VPS_USER@$VPS_HOST:/var/www/atlas/"
+        env:
+          VPS_USER: ${{ secrets.VPS_USER }}
