@@ -4,6 +4,13 @@ L'Atlas est un **site statique**. `vite build` avec `VITE_STATIC=1`, puis `scrip
 
 Principe : **ne pas toucher à l'autre projet**. L'Atlas a son dossier (`/var/www/atlas`), son port (**8081**) et son propre bloc de configuration. Tant qu'il n'y a pas de nom de domaine, l'adresse est `http://<IP du VPS>:8081/`. GitHub Pages reste l'adresse principale : les balises canonical et le sitemap pointent vers elle, ce qui évite le contenu en double.
 
+**Installation en place (VPS Contabo 185.183.53.60, novembre 2026)** : http://185.183.53.60:8080/
+- Conteneur `caddy:2` dans `/srv/atlas` (`docker-compose.yml` et `Caddyfile` : copies dans `deploy/`), publié sur le port **8080**. Il sert `/srv/atlas/site` en lecture seule. Le port 80 reste au projet `/srv/gaming`.
+- Pare-feu : `ufw allow 8080/tcp`.
+- Utilisateur système `deploy` (sans mot de passe). Sa clé dans `/home/deploy/.ssh/authorized_keys` est limitée par `command="/usr/bin/rrsync /srv/atlas/site",restrict` : elle ne peut que copier des fichiers dans ce dossier, aucune commande shell.
+- Secrets GitHub : `VPS_HOST`, `VPS_USER` (= `deploy`), `VPS_SSH_KEY` (clé privée dédiée, supprimée du PC), `VPS_KNOWN_HOSTS`.
+- Les sections suivantes décrivent la procédure générale (port 8081, `/var/www/atlas`) ; elles restent valables pour une autre machine.
+
 Mises à jour : le workflow `.github/workflows/vps.yml` reconstruit le site à chaque push sur `main` et l'envoie par `rsync` sur SSH. Tant que les secrets ci-dessous n'existent pas, toutes ses étapes sont **sautées** et il reste vert.
 
 ## 1. Découvrir le VPS

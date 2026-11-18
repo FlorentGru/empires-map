@@ -1,11 +1,14 @@
-# Atlas des Empires servi par le Caddy du VPS, sur un port à part (8081) : l'autre projet n'est pas touché.
-# Installation : ajouter ce bloc à la fin de /etc/caddy/Caddyfile, puis sudo systemctl reload caddy
-:8081 {
-	root * /var/www/atlas
-	encode gzip
+# Copie de /srv/atlas/Caddyfile sur le VPS (docs/DEPLOIEMENT-VPS.md).
+# Atlas des Empires : site statique (build VITE_STATIC, copié par .github/workflows/vps.yml).
+:80 {
+	root * /srv/site
+	encode zstd gzip
+	# Fichiers versionnés par Vite (hash dans le nom) : cache long.
 	header /assets/* Cache-Control "public, max-age=31536000, immutable"
+	# Pages pré-rendues /<empire>/<étape>/index.html.
+	try_files {path} {path}/index.html
 	file_server
-	handle_errors {
+	handle_errors 404 {
 		rewrite * /404.html
 		file_server
 	}

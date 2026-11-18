@@ -1,5 +1,5 @@
 # Copie du site statique sur le VPS de Florent à chaque push sur main (procédure : docs/DEPLOIEMENT-VPS.md).
-# Même build que GitHub Pages (pages.yml), mais servi à la racine (« / ») du port 8081 du VPS.
+# Même build que GitHub Pages (pages.yml), mais servi à la racine (« / ») du port 8080 du VPS (conteneur /srv/atlas).
 # Sans les secrets VPS_HOST, VPS_USER, VPS_SSH_KEY et VPS_KNOWN_HOSTS, toutes les étapes sont sautées :
 # le workflow reste vert (pas d'e-mail d'échec) tant que le VPS n'est pas préparé.
 name: VPS
@@ -33,7 +33,7 @@ jobs:
           cache: npm
       - if: env.VPS_HOST != ''
         run: npm ci
-      # Site servi à la racine du port 8081 : chemins depuis « / ». Sans le sage (VITE_STATIC).
+      # Site servi à la racine du port 8080 : chemins depuis « / ». Sans le sage (VITE_STATIC).
       - if: env.VPS_HOST != ''
         run: npx vite build --base=/
         env:
@@ -54,6 +54,7 @@ jobs:
           VPS_KNOWN_HOSTS: ${{ secrets.VPS_KNOWN_HOSTS }}
       - if: env.VPS_HOST != ''
         name: Envoi sur le VPS
-        run: rsync -az --delete --chmod=D755,F644 dist/ "$VPS_USER@$VPS_HOST:/var/www/atlas/"
+        # La clé est enfermée par rrsync dans /srv/atlas/site : la destination est la racine de ce dossier.
+        run: rsync -az --delete --chmod=D755,F644 dist/ "$VPS_USER@$VPS_HOST:"
         env:
           VPS_USER: ${{ secrets.VPS_USER }}
