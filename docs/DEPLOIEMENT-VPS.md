@@ -63,13 +63,13 @@ sudo nginx -t && sudo systemctl reload nginx
 ```
 La configuration déclare le type de `.mjs` (le worker de MapLibre). Sans cette ligne, le nginx d'Ubuntu l'envoie en `application/octet-stream` : la page s'affiche mais la **carte reste vide**.
 
-**B. Caddy** : ajoutez le bloc de `Caddyfile.atlas` à la fin de `/etc/caddy/Caddyfile`, puis `sudo systemctl reload caddy`.
+**B. Caddy système** : `Caddyfile.atlas` est celui du conteneur (C). Ajoutez son bloc à la fin de `/etc/caddy/Caddyfile` en remplaçant `:80` par `:8081` et `/srv/site` par `/var/www/atlas`, puis `sudo systemctl reload caddy`.
 
-**C. Docker**
+**C. Docker** (installation en place : Caddy dans un conteneur, site dans `./site`, port 8080)
 ```bash
-sudo mkdir -p /opt/atlas
-sudo cp docker-compose.atlas.yml nginx-atlas.conf /opt/atlas/
-cd /opt/atlas && sudo docker compose -f docker-compose.atlas.yml up -d
+sudo mkdir -p /srv/atlas/site /srv/atlas/data
+sudo cp docker-compose.atlas.yml /srv/atlas/docker-compose.yml && sudo cp Caddyfile.atlas /srv/atlas/Caddyfile
+cd /srv/atlas && sudo docker compose up -d
 ```
 
 **Pare-feu** : `sudo ufw allow 8081/tcp`. Si l'hébergeur a un pare-feu dans son panneau, ouvrez-y aussi le port 8081.
