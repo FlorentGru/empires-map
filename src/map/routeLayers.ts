@@ -46,7 +46,7 @@ export class RouteLayers {
   private enabled = true;
   private raf = 0;
   private last = 0;
-  private active: { route: TradeRoute; cum: number[] }[] = [];
+  private active: { route: TradeRoute; cum: number[]; box: [number, number, number, number] }[] = [];
 
   constructor(private map: MapLibreMap) {
     // Un porteur par route (dromadaire, lama, jonque, galion…), dans les deux sens de marche.
@@ -271,7 +271,11 @@ export class RouteLayers {
     const src = this.map.getSource(SRC) as GeoJSONSource | undefined;
     if (!src) return;
     const list = this.enabled ? activeRoutes(all(), this.year) : [];
-    this.active = list.map((route) => ({ route, cum: cumulative(route.path) }));
+    this.active = list.map((route) => {
+      const lngs = route.path.map((p) => p[0]);
+      const lats = route.path.map((p) => p[1]);
+      return { route, cum: cumulative(route.path), box: [Math.min(...lngs), Math.min(...lats), Math.max(...lngs), Math.max(...lats)] };
+    });
     const fc: FeatureCollection<LineString, RouteProps> = {
       type: 'FeatureCollection',
       features: list.map((r, i) => ({
@@ -316,12 +320,19 @@ export class RouteLayers {
 
   private tick = (now: number) => {
     // ≈ 12 images/s : assez fluide pour des caravanes, léger pour la carte.
-    if (now - this.last > 80) {
+    // Aucune route à l'écran : pas de mise à jour, la carte peut cesser de se redessiner.
+    if (now - this.last > 80 && this.onScreen()) {
       this.last = now;
       this.drawMovers(now);
     }
     this.raf = requestAnimationFrame(this.tick);
   };
+
+  /** Une route active croise-t-elle la vue (boîtes englobantes) ? */
+  private onScreen(): boolean {
+    const b = this.map.getBounds();
+    return this.active.some(({ box: [w, s, e, n] }) => w <= b.getEast() && e >= b.getWest() && s <= b.getNorth() && n >= b.getSouth());
+  }
 
   private onVisibility = () => {
     if (document.hidden) {

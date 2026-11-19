@@ -36,9 +36,29 @@ export function dropCoveredLabels<N extends { geometry: { type: string; coordina
   contemporaries: readonly { geometry: { type: string; coordinates?: unknown } | null }[],
 ): N[] {
   if (!contemporaries.length) return [...neighbors];
+  // Boîte englobante d'abord : le test point-dans-polygone exact (jusqu'à ~25 ms par étape) n'est fait que si elle contient le point.
+  const boxes = contemporaries.map((c) => {
+    let w = Infinity;
+    let s = Infinity;
+    let e = -Infinity;
+    let n = -Infinity;
+    const polys = (c.geometry?.type === 'Polygon' ? [c.geometry.coordinates] : c.geometry?.type === 'MultiPolygon' ? c.geometry.coordinates : []) as Ring[][];
+    for (const p of polys)
+      for (const [x, y] of p[0] ?? []) {
+        if (x < w) w = x;
+        if (x > e) e = x;
+        if (y < s) s = y;
+        if (y > n) n = y;
+      }
+    return [w, s, e, n];
+  });
   return neighbors.filter((f) => {
     if (f.properties?.kind !== 'label' || f.geometry?.type !== 'Point') return true;
     const pt = f.geometry.coordinates as number[];
-    return !contemporaries.some((c) => c.geometry && pointInGeometry(pt, c.geometry));
+    const [x, y] = pt;
+    return !contemporaries.some((c, i) => {
+      const [w, s, e, n] = boxes[i]!;
+      return x >= w && x <= e && y >= s && y <= n && c.geometry && pointInGeometry(pt, c.geometry);
+    });
   });
 }

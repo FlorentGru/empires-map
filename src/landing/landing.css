@@ -8,8 +8,8 @@
   padding: 0;
   border: 0;
   color: var(--ink);
-  background: rgba(244, 234, 211, 0.8);
-  backdrop-filter: blur(4px);
+  /* Pas de backdrop-filter : recalculé à chaque image de la carte animée dessous, il coûtait cher. */
+  background: rgba(244, 234, 211, 0.88);
   overflow-y: auto;
 }
 

@@ -2,9 +2,29 @@
 # Atlas des Empires : site statique (build VITE_STATIC, copié par .github/workflows/vps.yml).
 :80 {
 	root * /srv/site
-	encode zstd gzip
+	# Liste explicite : les glyphes de la carte (.pbf, ~350 Ko) n'étaient pas compressés.
+	encode zstd gzip {
+		match {
+			header Content-Type text/*
+			header Content-Type application/json*
+			header Content-Type application/geo+json*
+			header Content-Type application/javascript*
+			header Content-Type application/manifest+json*
+			header Content-Type application/x-protobuf*
+			header Content-Type image/svg+xml*
+		}
+	}
+	@pbf path *.pbf
+	header @pbf Content-Type application/x-protobuf
 	# Fichiers versionnés par Vite (hash dans le nom) : cache long.
 	header /assets/* Cache-Control "public, max-age=31536000, immutable"
+	# Polices de la carte et du site : ne changent pas d'un déploiement à l'autre.
+	header /fonts/* Cache-Control "public, max-age=2592000"
+	# Données géographiques : réutilisées une heure, puis revalidées en arrière-plan (pas d'attente).
+	header /data/* Cache-Control "public, max-age=3600, stale-while-revalidate=86400"
+	# Pages HTML toujours revalidées : une page gardée en cache réclamerait des JS supprimés au déploiement suivant.
+	@html path / *.html */
+	header @html Cache-Control "no-cache"
 	# Pages pré-rendues /<empire>/<étape>/index.html.
 	try_files {path} {path}/index.html
 	file_server

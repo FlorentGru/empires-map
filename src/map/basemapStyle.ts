@@ -92,12 +92,25 @@ function graticule(stepDeg: number): FeatureCollection<LineString> {
  * Ajoute les terres locales (public/data/basemap/land.geojson) sous la graticule.
  * Si le fichier est absent ou invalide, la carte reste « océan seul ».
  */
+let landData: Promise<GeoJSON.GeoJSON> | null = null;
+
+/** Terres (546 Ko) téléchargées et lues une seule fois par session : changements d'empire et vue du monde les réutilisent. */
+export function fetchLand(): Promise<GeoJSON.GeoJSON> {
+  landData ??= fetch(`${import.meta.env.BASE_URL}data/basemap/land.geojson`)
+    .then((res) => {
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return res.json();
+    })
+    .catch((err) => {
+      landData = null; // nouvel essai à la prochaine carte
+      throw err;
+    });
+  return landData;
+}
+
 export async function addLand(map: MapLibreMap): Promise<void> {
-  const url = `${import.meta.env.BASE_URL}data/basemap/land.geojson`;
   try {
-    const res = await fetch(url);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const data = await res.json();
+    const data = await fetchLand();
     if (!data || (data.type !== 'FeatureCollection' && data.type !== 'Feature')) throw new Error('GeoJSON invalide');
     if (!map.getStyle() || map.getSource('land')) return;
     map.addSource('land', { type: 'geojson', data });

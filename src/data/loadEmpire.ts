@@ -217,6 +217,8 @@ export interface SdfData {
 }
 
 const sdfCache = new Map<string, Promise<SdfData | null>>();
+/** Images décodées (~1 Mo chacune) : seules les dernières étapes restent en mémoire, le reste est libéré par le navigateur. */
+const SDF_CACHE_MAX = 8;
 
 export function sdfUrl(empireId: string, stepId: string, ext: 'png' | 'json'): string {
   return `${import.meta.env.BASE_URL}data/empires/${encodeURIComponent(empireId)}/sdf/${encodeURIComponent(stepId)}.${ext}`;
@@ -226,15 +228,19 @@ export function sdfUrl(empireId: string, stepId: string, ext: 'png' | 'json'): s
 export function loadSdf(empireId: string, stepId: string): Promise<SdfData | null> {
   const key = `${empireId}/${stepId}`;
   let p = sdfCache.get(key);
-  if (!p) {
+  if (p) {
+    // Plus récemment utilisée : passe en fin de liste (la plus ancienne est en tête).
+    sdfCache.delete(key);
+    sdfCache.set(key, p);
+  } else {
     p = (async () => {
       try {
         if (typeof createImageBitmap !== 'function') return null;
-        const metaRes = await fetch(sdfUrl(empireId, stepId, 'json'));
+        // Les deux fichiers en même temps : un aller-retour réseau de moins par étape.
+        const [metaRes, imgRes] = await Promise.all([fetch(sdfUrl(empireId, stepId, 'json')), fetch(sdfUrl(empireId, stepId, 'png'))]);
         if (!metaRes.ok) return null;
         const meta = (await metaRes.json()) as SdfMeta; // le serveur de dev renvoie index.html si absent : json() échoue
         if (!Array.isArray(meta?.bounds) || meta.bounds.length !== 4 || !(meta.width > 0) || !(meta.height > 0)) return null;
-        const imgRes = await fetch(sdfUrl(empireId, stepId, 'png'));
         if (!imgRes.ok) return null;
         const blob = await imgRes.blob();
         if (!blob.type.startsWith('image/')) return null;
@@ -246,6 +252,8 @@ export function loadSdf(empireId: string, stepId: string): Promise<SdfData | nul
       }
     })();
     sdfCache.set(key, p);
+    // Pas de bitmap.close() : une étape encore affichée peut s'en servir ; sans référence, le navigateur la libère.
+    if (sdfCache.size > SDF_CACHE_MAX) sdfCache.delete(sdfCache.keys().next().value!);
   }
   return p;
 }

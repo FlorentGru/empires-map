@@ -137,6 +137,23 @@ a {
   background: radial-gradient(circle at 50% 45%, #4a3c2e 0%, var(--space) 70%);
 }
 
+/* Carte impossible à démarrer (WebGL) ; aussi le message de l'erreur générale (main.tsx). */
+.world-map__error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(520px, calc(100% - 32px));
+  margin: 0;
+  padding: 18px 22px;
+  color: var(--ink);
+  background: var(--parchment);
+  border: 1px solid var(--parchment-edge);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
 .top-bar {
   position: absolute;
   top: 12px;

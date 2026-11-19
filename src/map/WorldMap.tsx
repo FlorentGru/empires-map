@@ -17,7 +17,7 @@ import {
 } from '../data/loadEmpire';
 import { prefersReducedMotion } from '../lib/motion';
 import type { City, Empire, TimelineStep } from '../types';
-import { addLand, baseStyle, DEM_SOURCE, MAX_BOUNDS, TERRAIN_EXAGGERATION } from './basemapStyle';
+import { addLand, baseStyle, fetchLand, DEM_SOURCE, MAX_BOUNDS, TERRAIN_EXAGGERATION } from './basemapStyle';
 import { takeFocusPoint, FOCUS_ENTITY_EVENT, geometryBounds, type FocusEntityDetail } from './focusEntity';
 import { ArmyLayer, continuedArmies } from './armyLayer';
 import { LONG_MARCH_KM, longestMarchKm, marchMs } from '../lib/march';
@@ -168,6 +168,7 @@ export function WorldMap({
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const [layers, setLayers] = useState<MapLayers | null>(null);
+  const [mapError, setMapError] = useState(false);
   const [cityLayer, setCityLayer] = useState<CityLayer | null>(null);
   const shownRef = useRef<string | null>(null);
   const lastIndexRef = useRef<number | null>(null);
@@ -212,27 +213,37 @@ export function WorldMap({
   // Création de la carte (une seule fois).
   useEffect(() => {
     if (!containerRef.current) return;
-    const map = new MapLibreMap({
-      container: containerRef.current,
-      style: baseStyle(),
-      ...(lastView && lastView.empireId === empire.id ? lastView : (empire.view ?? INITIAL_VIEW)),
-      pitch: tiltedRef.current ? TILT_PITCH : 0,
-      maxPitch: tiltedRef.current ? MAX_PITCH : 0,
-      minZoom: 2.5,
-      maxZoom: 9,
-      // Caméra libre pour tous les empires : on doit pouvoir aller voir les empires contemporains.
-      maxBounds: MAX_BOUNDS ?? undefined,
-      attributionControl: false,
-      renderWorldCopies: false,
-      fadeDuration: 0,
-      pixelRatio: Math.min(window.devicePixelRatio, 2),
-      maxTileCacheSize: 200,
-    });
+    let map: MapLibreMap;
+    try {
+      map = new MapLibreMap({
+        container: containerRef.current,
+        style: baseStyle(),
+        ...(lastView && lastView.empireId === empire.id ? lastView : (empire.view ?? INITIAL_VIEW)),
+        pitch: tiltedRef.current ? TILT_PITCH : 0,
+        maxPitch: tiltedRef.current ? MAX_PITCH : 0,
+        minZoom: 2.5,
+        maxZoom: 9,
+        // Caméra libre pour tous les empires : on doit pouvoir aller voir les empires contemporains.
+        maxBounds: MAX_BOUNDS ?? undefined,
+        attributionControl: false,
+        renderWorldCopies: false,
+        fadeDuration: 0,
+        pixelRatio: Math.min(window.devicePixelRatio, 2),
+        maxTileCacheSize: 200,
+      });
+    } catch (err) {
+      // WebGL indisponible (accélération matérielle coupée, pilote bloqué) : message au lieu d'une page vide.
+      console.error('[carte] création impossible :', err);
+      setMapError(true);
+      return;
+    }
     mapRef.current = map;
     // Crochet de test : en dev, ou avec ?e2e dans l'URL (tests Playwright sur le build de production).
     if (import.meta.env.DEV || new URLSearchParams(window.location.search).has('e2e')) (window as unknown as { __map: MapLibreMap }).__map = map;
     let created: MapLayers | null = null;
-    map.on('load', async () => {
+    void fetchLand().catch(() => {}); // en parallèle du style ; l'erreur est signalée par addLand
+    // 'style.load' et non 'load' : 'load' attend toutes les tuiles de relief visibles (~4 Mo), les frontières n'ont pas à les attendre.
+    map.once('style.load', async () => {
       // Les dessins des figurines sont chargés à part : les calques d'armées et de personnages en ont besoin d'emblée.
       await loadSprites();
       if (mapRef.current !== map) return;
@@ -567,7 +578,9 @@ export function WorldMap({
       if (diff) layers.diff.flash(diff);
       else layers.diff.stop();
     });
-    preloadAround(empire, index);
+    // Étapes voisines préchargées une fois les fichiers de celle-ci arrivés : sinon elles lui disputent les connexions.
+    const preload = () => !stale && preloadAround(empire, index);
+    void Promise.all([loadTerritory(empire.id, step.territory), diffPromise, morphPromise, neighborsPromise]).then(preload, preload);
 
     return () => {
       stale = true;
@@ -665,5 +678,15 @@ export function WorldMap({
     if (cityLayer && year !== undefined) cityLayer.show(year);
   }, [cityLayer, year]);
 
-  return <div ref={containerRef} className="world-map" role="region" aria-label="Carte du territoire de l'empire" />;
+  return (
+    <div ref={containerRef} className="world-map" role="region" aria-label="Carte du territoire de l'empire">
+      {mapError && (
+        <p className="world-map__error" role="alert">
+          Votre navigateur n’a pas pu démarrer la carte (WebGL désactivé ?).
+          <br />
+          Activez l’accélération matérielle dans les réglages du navigateur (Brave, Chrome : Système), puis rechargez la page.
+        </p>
+      )}
+    </div>
+  );
 }

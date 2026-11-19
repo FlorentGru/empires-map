@@ -1,4 +1,4 @@
-import { StrictMode } from 'react';
+import { Component, StrictMode, type ReactNode } from 'react';
 import { createRoot } from 'react-dom/client';
 import 'maplibre-gl/dist/maplibre-gl.css';
 // Polices hébergées avec le site (plus de requête vers Google Fonts, rendu non bloqué : font-display swap).
@@ -24,11 +24,35 @@ import { readUrlState } from './player/urlState';
   }
 }
 
+/** Une erreur non rattrapée vidait toute la page (écran marron) : message lisible et bouton de rechargement. */
+class ErrorBoundary extends Component<{ children: ReactNode }, { failed: boolean }> {
+  state = { failed: false };
+  static getDerivedStateFromError() {
+    return { failed: true };
+  }
+  componentDidCatch(error: unknown) {
+    console.error('[atlas] erreur d’affichage :', error);
+  }
+  render() {
+    if (!this.state.failed) return this.props.children;
+    return (
+      <div className="world-map__error" role="alert">
+        <p>Une erreur a empêché l’Atlas de s’afficher.</p>
+        <button type="button" className="btn" onClick={() => window.location.reload()}>
+          Recharger
+        </button>
+      </div>
+    );
+  }
+}
+
 // Seule la timeline de l'empire affiché est chargée avant le premier rendu (les autres à la demande).
 void loadEmpire(resolveEmpireId(readUrlState().empire)).then(() =>
   createRoot(document.getElementById('root')!).render(
     <StrictMode>
-      <App />
+      <ErrorBoundary>
+        <App />
+      </ErrorBoundary>
     </StrictMode>,
   ),
 );

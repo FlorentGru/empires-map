@@ -147,7 +147,10 @@ Survol d'une région = voile clair et contour épais ; clic = fiche (`regionCard
 1. **Jamais de `setData` ni d'expression data-driven modifiée à chaque image** : cela déclenche un recalcul dans un worker. On utilise à la place le `feature-state`, les transitions natives (`*-transition`) ou un uniform de shader.
 2. **Pas d'état React mis à jour à chaque image** : les animations sont pilotées en code impératif (`requestAnimationFrame`) et en CSS (`transform`, `opacity`).
 3. **Précalcul** : les diffs, SDF et simplifications sont faits au build.
-4. **Fond de carte recadré** : 694 Ko → 105 Ko. **Résolution plafonnée** : `pixelRatio ≤ 2`. **Relief limité** à `maxzoom` 10.
+4. **Fond de carte recadré** : `land.geojson` fait 546 Ko (~160 Ko compressé). **Résolution plafonnée** : `pixelRatio ≤ 2`. **Relief limité** à `maxzoom` 10.
+6. **Rien n'attend le relief** : les calques d'empire sont créés au `style.load`, pas au `load` (qui attend toutes les tuiles de relief visibles, ~4 Mo). `land.geojson` est téléchargé une seule fois par session (`fetchLand`, en parallèle du style).
+7. **Pas de travail invisible** : les caravanes ne se mettent à jour que si une route croise la vue ; l'étape suivante n'est préchargée qu'une fois les fichiers de l'étape courante arrivés ; le cache des SDF décodés est limité à 8 étapes.
+8. **Une erreur ne vide plus la page** : limite d'erreur autour de l'App (`main.tsx`) et message si WebGL2 manque (`WorldMap.tsx`).
 
 5. **Une seule boucle par animation**, et rien à recopier par image : le glissement ne change qu'un uniform (`p`) par image ; en relief, il redemande explicitement le drapage (`terrainTileRevision`).
 

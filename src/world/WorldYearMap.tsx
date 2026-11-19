@@ -5,7 +5,7 @@ import { loadCities } from '../data/loadCities';
 import { EMPIRES, loadTerritory } from '../data/loadEmpire';
 import { empiresAt } from '../lib/worldYear';
 import { formatYear } from '../lib/years';
-import { addLand, baseStyle } from '../map/basemapStyle';
+import { addLand, baseStyle, fetchLand } from '../map/basemapStyle';
 import { CityLayer } from '../map/cityLayer';
 import { GOTO_EVENT, type GotoDetail } from '../map/contemporaryLayers';
 import { DisasterLayers } from '../map/disasterLayers';
@@ -57,7 +57,9 @@ export function WorldYearMap({ year }: { year: number }) {
     let created: Layers | null = null;
     let cityLayer: CityLayer | null = null;
     let gone = false;
-    map.on('load', () => {
+    void fetchLand().catch(() => {});
+    // Comme l'Atlas : sans attendre les tuiles de relief.
+    map.once('style.load', () => {
       created = {
         empires: new WorldEmpireLayers(map, EMPIRES),
         routes: new RouteLayers(map),
