@@ -2,6 +2,7 @@ import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } fro
 import { EMPIRE_INDEX, getEmpire, loadEmpire, resolveEmpireId, withAllEmpires } from './data/loadEmpire';
 import { WorldMap } from './map/WorldMap';
 import { AboutModal } from './panels/AboutModal';
+import { Landing } from './landing/Landing';
 import { OPEN_PERSON_EVENT, type OpenPersonDetail } from './data/personEvent';
 import { inventionsBetween } from './data/loadInventions';
 import { EmpirePicker } from './panels/EmpirePicker';
@@ -73,6 +74,12 @@ export function App() {
   const setEmpireId = useCallback((id: string) => void loadEmpire(id).then((e) => setLoadedEmpireId(e.id)), []);
   const empire = getEmpire(empireId);
   const [navKey, setNavKey] = useState(0);
+  // Accueil, sur « / » seul : lu avant que l'Atlas ne réécrive l'adresse (/rome/<étape>/) ; les liens partagés y échappent.
+  // 'choose' : Démarrer déjà cliqué, la liste des empires reste affichée au retour de la frise.
+  const [landing, setLanding] = useState<false | 'intro' | 'choose'>(() => {
+    const u = readUrlState();
+    return !u.empire && !u.hub && window.location.search === '' && 'intro';
+  });
   // Comparaison de deux empires (?compare=a,b) à la place de l'Atlas.
   const [compare, setCompareState] = useState(readCompare);
   const setCompare = useCallback((c: { a: string; b: string } | null) => {
@@ -131,6 +138,7 @@ export function App() {
       setWorld(null);
       clearEmpiresUrl();
       setAllEmpires(false);
+      setLanding(false);
       leaveHub();
       writeUrlState(
         e,
@@ -192,12 +200,14 @@ export function App() {
       <>
         <Suspense fallback={<p className="loading-view">Chargement…</p>}>
           <EmpiresView
-            initial={new URLSearchParams(window.location.search).get('e') ?? empire.id}
-            backName={empire.name}
+            // Venu de l'accueil : aucun empire présélectionné, et le retour y ramène.
+            initial={landing ? undefined : (new URLSearchParams(window.location.search).get('e') ?? empire.id)}
+            backName={landing ? 'l’accueil' : empire.name}
             onBack={leaveAllEmpires}
             onExplore={goToStep}
             onCompare={(id) => {
               leaveAllEmpires();
+              setLanding(false);
               setCompare({ a: id, b: EMPIRE_INDEX.find((e) => e.id !== id)!.id });
             }}
           />
@@ -240,6 +250,26 @@ export function App() {
         onContext={setChatContext}
       />
       <ChatPanel context={chatContext} goToStep={goToStep} onOpenQuiz={openQuiz} />
+      {landing && (
+        <Landing
+          empires={EMPIRE_INDEX}
+          choosing={landing === 'choose'}
+          onStart={() => setLanding('choose')}
+          // Fermé dans le même rendu que la bascule : pas d'aperçu de Rome avant l'empire choisi.
+          onChoose={(id) =>
+            void loadEmpire(id).then((e) => {
+              setLoadedEmpireId(e.id);
+              setLanding(false);
+            })
+          }
+          onClose={() => setLanding(false)}
+          onOpenAllEmpires={openAllEmpires}
+          onOpenWorld={() => {
+            setLanding(false);
+            setWorld({ year: DEFAULT_WORLD_YEAR });
+          }}
+        />
+      )}
       {quizOpen && (
         <Suspense fallback={null}>
           <QuizDialog open onClose={() => setQuizOpen(false)} empire={empire.id} />
