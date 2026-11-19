@@ -76,7 +76,7 @@ test('galerie : unités de bataille (mini-scènes du moteur, fiche, « Où la vo
 
 test('galerie : bouton « Tous » des inventions et des personnages illustres', async ({ page }) => {
   const errors = collectErrors(page);
-  await page.goto('/');
+  await page.goto('/rome/'); // « / » ouvre l'accueil (e2e/landing.spec.ts), posé sur la carte
   await page.getByRole('button', { name: 'Galerie', exact: true }).click();
   const dialog = page.locator('dialog.gallery');
   for (const tab of ['Inventions', 'Personnages illustres']) {
