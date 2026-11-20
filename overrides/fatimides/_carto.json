@@ -1,0 +1,529 @@
+{
+  "empire": "fatimides",
+  "basemapNote": "Empire composé (fromCarto) : pays Natural Earth 1:50m (Tunisie, Algérie, Libye, Égypte, Israël, Palestine, Jordanie, Liban, Syrie, Arabie saoudite, Italie, Malte…) découpés par des régions nommées (_regions.geojson) : Ifriqiya, Sicile, Cyrénaïque, Delta du Nil, Haute-Égypte, Palestine, Liban, Syrie du Sud, Hedjaz, Maghreb central. Vassaux : Zirides d'Ifriqiya, émirat kalbide de Sicile, tribus berbères tributaires. Les rivaux indépendants (Byzance, Abbassides, Seldjoukides, croisés, Omeyyades de Cordoue) ne sont pas figurés. Frontières approximatives.",
+  "steps": [
+    {
+      "id": "raqqada-909",
+      "year": 909,
+      "entities": [
+        {
+          "name": "Califat fatimide",
+          "status": "core",
+          "source": {
+            "union": [
+              { "country": "^Tunisia$" },
+              { "country": "^Algeria$", "region": "Ifriqiya" },
+              { "country": "^Libya$", "region": "Ifriqiya" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "egypte-919",
+      "year": 919,
+      "entities": [
+        {
+          "name": "Califat fatimide",
+          "status": "core",
+          "source": {
+            "union": [
+              { "country": "^Tunisia$" },
+              { "country": "^Algeria$", "region": "Ifriqiya" },
+              { "country": "^Libya$", "region": "Ifriqiya" }
+            ]
+          }
+        },
+        {
+          "name": "Émirat kalbide de Sicile",
+          "status": "vassal",
+          "source": {
+            "union": [
+              { "country": "^Italy$", "region": "Sicile" },
+              { "country": "^Malta$" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "mahdia-921",
+      "year": 921,
+      "entities": [
+        {
+          "name": "Califat fatimide",
+          "status": "core",
+          "source": {
+            "union": [
+              { "country": "^Tunisia$" },
+              { "country": "^Algeria$", "region": "Ifriqiya" },
+              { "country": "^Libya$", "region": "Ifriqiya" }
+            ]
+          }
+        },
+        {
+          "name": "Émirat kalbide de Sicile",
+          "status": "vassal",
+          "source": {
+            "union": [
+              { "country": "^Italy$", "region": "Sicile" },
+              { "country": "^Malta$" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "la-mecque-930",
+      "year": 930,
+      "entities": [
+        {
+          "name": "Califat fatimide",
+          "status": "core",
+          "source": {
+            "union": [
+              { "country": "^Tunisia$" },
+              { "country": "^Algeria$", "region": "Ifriqiya" },
+              { "country": "^Libya$", "region": "Ifriqiya" }
+            ]
+          }
+        },
+        {
+          "name": "Émirat kalbide de Sicile",
+          "status": "vassal",
+          "source": {
+            "union": [
+              { "country": "^Italy$", "region": "Sicile" },
+              { "country": "^Malta$" }
+            ]
+          }
+        },
+        {
+          "name": "Tribus berbères tributaires",
+          "status": "vassal",
+          "source": { "country": "^Algeria$", "region": "Maghreb central" }
+        }
+      ]
+    },
+    {
+      "id": "egypte-969",
+      "year": 969,
+      "entities": [
+        {
+          "name": "Califat fatimide",
+          "status": "core",
+          "source": {
+            "union": [
+              { "country": "^Tunisia$" },
+              { "country": "^Algeria$", "region": "Ifriqiya" },
+              { "country": "^Libya$", "region": "Ifriqiya" },
+              { "country": "^Egypt$", "region": "Delta du Nil" },
+              { "country": "^Egypt$", "region": "Haute-Égypte" },
+              { "country": "^Libya$", "region": "Cyrénaïque" }
+            ]
+          }
+        },
+        {
+          "name": "Émirat kalbide de Sicile",
+          "status": "vassal",
+          "source": {
+            "union": [
+              { "country": "^Italy$", "region": "Sicile" },
+              { "country": "^Malta$" }
+            ]
+          }
+        },
+        {
+          "name": "Tribus berbères tributaires",
+          "status": "vassal",
+          "source": { "country": "^Algeria$", "region": "Maghreb central" }
+        }
+      ]
+    },
+    {
+      "id": "antioche-971",
+      "year": 971,
+      "entities": [
+        {
+          "name": "Califat fatimide",
+          "status": "core",
+          "source": {
+            "union": [
+              { "country": "^Tunisia$" },
+              { "country": "^Algeria$", "region": "Ifriqiya" },
+              { "country": "^Libya$", "region": "Ifriqiya" },
+              { "country": "^Egypt$", "region": "Delta du Nil" },
+              { "country": "^Egypt$", "region": "Haute-Égypte" },
+              { "country": "^Libya$", "region": "Cyrénaïque" },
+              { "country": "^(Israel|Palestine|Jordan)$", "region": "Palestine" },
+              { "country": "^Lebanon$", "region": "Liban" },
+              { "country": "^Syria$", "region": "Syrie du Sud" }
+            ]
+          }
+        },
+        {
+          "name": "Émirat kalbide de Sicile",
+          "status": "vassal",
+          "source": {
+            "union": [
+              { "country": "^Italy$", "region": "Sicile" },
+              { "country": "^Malta$" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cairo-973",
+      "year": 973,
+      "entities": [
+        {
+          "name": "Califat fatimide",
+          "status": "core",
+          "source": {
+            "union": [
+              { "country": "^Egypt$", "region": "Delta du Nil" },
+              { "country": "^Egypt$", "region": "Haute-Égypte" },
+              { "country": "^(Israel|Palestine|Jordan)$", "region": "Palestine" },
+              { "country": "^Lebanon$", "region": "Liban" },
+              { "country": "^Syria$", "region": "Syrie du Sud" },
+              { "country": "^Libya$", "region": "Cyrénaïque" }
+            ]
+          }
+        },
+        {
+          "name": "Zirides d'Ifriqiya",
+          "status": "vassal",
+          "source": {
+            "union": [
+              { "country": "^Tunisia$" },
+              { "country": "^Algeria$", "region": "Ifriqiya" },
+              { "country": "^Libya$", "region": "Ifriqiya" }
+            ]
+          }
+        },
+        {
+          "name": "Émirat kalbide de Sicile",
+          "status": "vassal",
+          "source": {
+            "union": [
+              { "country": "^Italy$", "region": "Sicile" },
+              { "country": "^Malta$" }
+            ]
+          }
+        },
+        {
+          "name": "Hedjaz (chérifat hasanide)",
+          "status": "vassal",
+          "source": { "country": "^Saudi Arabia$", "region": "Hedjaz" }
+        }
+      ]
+    },
+    {
+      "id": "oronte-994",
+      "year": 994,
+      "entities": [
+        {
+          "name": "Califat fatimide",
+          "status": "core",
+          "source": {
+            "union": [
+              { "country": "^Egypt$", "region": "Delta du Nil" },
+              { "country": "^Egypt$", "region": "Haute-Égypte" },
+              { "country": "^(Israel|Palestine|Jordan)$", "region": "Palestine" },
+              { "country": "^Lebanon$", "region": "Liban" },
+              { "country": "^Syria$", "region": "Syrie du Sud" },
+              { "country": "^Libya$", "region": "Cyrénaïque" }
+            ]
+          }
+        },
+        {
+          "name": "Zirides d'Ifriqiya",
+          "status": "vassal",
+          "source": {
+            "union": [
+              { "country": "^Tunisia$" },
+              { "country": "^Algeria$", "region": "Ifriqiya" },
+              { "country": "^Libya$", "region": "Ifriqiya" }
+            ]
+          }
+        },
+        {
+          "name": "Émirat kalbide de Sicile",
+          "status": "vassal",
+          "source": {
+            "union": [
+              { "country": "^Italy$", "region": "Sicile" },
+              { "country": "^Malta$" }
+            ]
+          }
+        },
+        {
+          "name": "Hedjaz (chérifat hasanide)",
+          "status": "vassal",
+          "source": { "country": "^Saudi Arabia$", "region": "Hedjaz" }
+        }
+      ]
+    },
+    {
+      "id": "hakim-1009",
+      "year": 1009,
+      "entities": [
+        {
+          "name": "Califat fatimide",
+          "status": "core",
+          "source": {
+            "union": [
+              { "country": "^Egypt$", "region": "Delta du Nil" },
+              { "country": "^Egypt$", "region": "Haute-Égypte" },
+              { "country": "^(Israel|Palestine|Jordan)$", "region": "Palestine" },
+              { "country": "^Lebanon$", "region": "Liban" },
+              { "country": "^Syria$", "region": "Syrie du Sud" },
+              { "country": "^Saudi Arabia$", "region": "Hedjaz" },
+              { "country": "^Libya$", "region": "Cyrénaïque" }
+            ]
+          }
+        },
+        {
+          "name": "Zirides d'Ifriqiya",
+          "status": "vassal",
+          "source": {
+            "union": [
+              { "country": "^Tunisia$" },
+              { "country": "^Algeria$", "region": "Ifriqiya" },
+              { "country": "^Libya$", "region": "Ifriqiya" }
+            ]
+          }
+        },
+        {
+          "name": "Émirat kalbide de Sicile",
+          "status": "vassal",
+          "source": {
+            "union": [
+              { "country": "^Italy$", "region": "Sicile" },
+              { "country": "^Malta$" }
+            ]
+          }
+        },
+        {
+          "name": "Tribus berbères tributaires",
+          "status": "vassal",
+          "source": { "country": "^Algeria$", "region": "Maghreb central" }
+        }
+      ]
+    },
+    {
+      "id": "sicile-1040",
+      "year": 1040,
+      "entities": [
+        {
+          "name": "Califat fatimide",
+          "status": "core",
+          "source": {
+            "union": [
+              { "country": "^Egypt$", "region": "Delta du Nil" },
+              { "country": "^Egypt$", "region": "Haute-Égypte" },
+              { "country": "^(Israel|Palestine|Jordan)$", "region": "Palestine" },
+              { "country": "^Lebanon$", "region": "Liban" },
+              { "country": "^Syria$", "region": "Syrie du Sud" },
+              { "country": "^Saudi Arabia$", "region": "Hedjaz" }
+            ]
+          }
+        },
+        {
+          "name": "Zirides d'Ifriqiya",
+          "status": "vassal",
+          "source": {
+            "union": [
+              { "country": "^Tunisia$" },
+              { "country": "^Algeria$", "region": "Ifriqiya" },
+              { "country": "^Libya$", "region": "Ifriqiya" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "zirides-1048",
+      "year": 1048,
+      "entities": [
+        {
+          "name": "Califat fatimide",
+          "status": "core",
+          "source": {
+            "union": [
+              { "country": "^Egypt$", "region": "Delta du Nil" },
+              { "country": "^Egypt$", "region": "Haute-Égypte" },
+              { "country": "^(Israel|Palestine|Jordan)$", "region": "Palestine" },
+              { "country": "^Lebanon$", "region": "Liban" },
+              { "country": "^Syria$", "region": "Syrie du Sud" },
+              { "country": "^Saudi Arabia$", "region": "Hedjaz" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "banu-hilal-1052",
+      "year": 1052,
+      "entities": [
+        {
+          "name": "Califat fatimide",
+          "status": "core",
+          "source": {
+            "union": [
+              { "country": "^Egypt$", "region": "Delta du Nil" },
+              { "country": "^Egypt$", "region": "Haute-Égypte" },
+              { "country": "^(Israel|Palestine|Jordan)$", "region": "Palestine" },
+              { "country": "^Lebanon$", "region": "Liban" },
+              { "country": "^Syria$", "region": "Syrie du Sud" },
+              { "country": "^Saudi Arabia$", "region": "Hedjaz" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fitna-1067",
+      "year": 1067,
+      "entities": [
+        {
+          "name": "Califat fatimide",
+          "status": "core",
+          "source": {
+            "union": [
+              { "country": "^Egypt$", "region": "Delta du Nil" },
+              { "country": "^Egypt$", "region": "Haute-Égypte" },
+              { "country": "^(Israel|Palestine|Jordan)$", "region": "Palestine" },
+              { "country": "^Saudi Arabia$", "region": "Hedjaz" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "badr-1073",
+      "year": 1073,
+      "entities": [
+        {
+          "name": "Califat fatimide",
+          "status": "core",
+          "source": {
+            "union": [
+              { "country": "^Egypt$", "region": "Delta du Nil" },
+              { "country": "^Egypt$", "region": "Haute-Égypte" },
+              { "country": "^(Israel|Palestine|Jordan)$", "region": "Palestine" },
+              { "country": "^Saudi Arabia$", "region": "Hedjaz" },
+              { "country": "^Lebanon$", "region": "Liban" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "jerusalem-1098",
+      "year": 1098,
+      "entities": [
+        {
+          "name": "Califat fatimide",
+          "status": "core",
+          "source": {
+            "union": [
+              { "country": "^Egypt$", "region": "Delta du Nil" },
+              { "country": "^Egypt$", "region": "Haute-Égypte" },
+              { "country": "^(Israel|Palestine|Jordan)$", "region": "Palestine" },
+              { "country": "^Saudi Arabia$", "region": "Hedjaz" },
+              { "country": "^Lebanon$", "region": "Liban" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ascalon-1153",
+      "year": 1153,
+      "entities": [
+        {
+          "name": "Califat fatimide",
+          "status": "core",
+          "source": {
+            "union": [
+              { "country": "^Egypt$", "region": "Delta du Nil" },
+              { "country": "^Egypt$", "region": "Haute-Égypte" },
+              { "country": "^Saudi Arabia$", "region": "Hedjaz" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cairo-1169",
+      "year": 1169,
+      "entities": [
+        {
+          "name": "Califat fatimide",
+          "status": "core",
+          "source": {
+            "union": [
+              { "country": "^Egypt$", "region": "Delta du Nil" },
+              { "country": "^Egypt$", "region": "Haute-Égypte" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fin-1171",
+      "year": 1171,
+      "entities": [
+        {
+          "name": "Califat fatimide",
+          "status": "core",
+          "source": {
+            "union": [
+              { "country": "^Egypt$", "region": "Delta du Nil" },
+              { "country": "^Egypt$", "region": "Haute-Égypte" }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "checkpoints": [
+    { "name": "Kairouan", "pt": [10.1, 35.68], "where": "core", "from": "raqqada-909", "to": "antioche-971" },
+    { "name": "Kairouan (Zirides)", "pt": [10.1, 35.68], "where": "vassal", "from": "cairo-973", "to": "sicile-1040" },
+    { "name": "Kairouan (hors empire)", "pt": [10.1, 35.68], "where": "not-core", "from": "zirides-1048", "to": "fin-1171" },
+    { "name": "Tunis", "pt": [10.18, 36.8], "where": "core", "from": "raqqada-909", "to": "antioche-971" },
+    { "name": "Tunis (Zirides)", "pt": [10.18, 36.8], "where": "vassal", "from": "cairo-973", "to": "sicile-1040" },
+    { "name": "Mahdia", "pt": [10.95, 35.5], "where": "core", "from": "raqqada-909", "to": "antioche-971" },
+    { "name": "Tripoli de Libye", "pt": [13.3, 32.85], "where": "core", "from": "raqqada-909", "to": "antioche-971" },
+    { "name": "Tripoli de Libye (Zirides)", "pt": [13.3, 32.85], "where": "vassal", "from": "cairo-973", "to": "sicile-1040" },
+    { "name": "Syrte (frontière)", "pt": [16.7, 31.15], "where": "core", "from": "raqqada-909", "to": "antioche-971" },
+    { "name": "Palerme", "pt": [13.45, 38.05], "where": "vassal", "from": "egypte-919", "to": "hakim-1009" },
+    { "name": "Palerme (hors empire)", "pt": [13.45, 38.05], "where": "not-core", "from": "sicile-1040", "to": "fin-1171" },
+    { "name": "Syracuse", "pt": [15.2, 37.08], "where": "vassal", "from": "egypte-919", "to": "hakim-1009" },
+    { "name": "Alexandrie", "pt": [30.0, 31.15], "where": "not-core", "from": "raqqada-909", "to": "la-mecque-930" },
+    { "name": "Alexandrie (fatimide)", "pt": [30.0, 31.15], "where": "core", "from": "egypte-969", "to": "fin-1171" },
+    { "name": "Le Caire (Fustat)", "pt": [31.24, 30.05], "where": "not-core", "from": "raqqada-909", "to": "la-mecque-930" },
+    { "name": "Le Caire (Fustat)", "pt": [31.24, 30.05], "where": "core", "from": "egypte-969", "to": "fin-1171" },
+    { "name": "Tobrouk", "pt": [24.0, 32.05], "where": "core", "from": "egypte-969", "to": "hakim-1009" },
+    { "name": "Tobrouk (hors empire)", "pt": [24.0, 32.05], "where": "not-core", "from": "sicile-1040", "to": "fin-1171" },
+    { "name": "Barqa (Benghazi)", "pt": [20.15, 32.1], "where": "core", "from": "egypte-969", "to": "hakim-1009" },
+    { "name": "Damas", "pt": [36.29, 33.51], "where": "core", "from": "antioche-971", "to": "banu-hilal-1052" },
+    { "name": "Damas (hors empire)", "pt": [36.29, 33.51], "where": "not-core", "from": "fitna-1067", "to": "fin-1171" },
+    { "name": "Beyrouth", "pt": [35.55, 33.85], "where": "core", "from": "cairo-973", "to": "zirides-1048" },
+    { "name": "Jérusalem", "pt": [35.21, 31.78], "where": "core", "from": "antioche-971", "to": "jerusalem-1098" },
+    { "name": "Jérusalem (croisés)", "pt": [35.21, 31.78], "where": "not-core", "from": "ascalon-1153", "to": "fin-1171" },
+    { "name": "Acre", "pt": [35.15, 32.9], "where": "core", "from": "antioche-971", "to": "jerusalem-1098" },
+    { "name": "Ascalon", "pt": [34.6, 31.65], "where": "core", "from": "cairo-973", "to": "jerusalem-1098" },
+    { "name": "Ascalon (croisés)", "pt": [34.6, 31.65], "where": "not-core", "from": "ascalon-1153", "to": "fin-1171" },
+    { "name": "La Mecque", "pt": [39.83, 21.42], "where": "vassal", "from": "cairo-973", "to": "oronte-994" },
+    { "name": "La Mecque (fatimide)", "pt": [39.83, 21.42], "where": "core", "from": "hakim-1009", "to": "ascalon-1153" },
+    { "name": "La Mecque (hors empire)", "pt": [39.83, 21.42], "where": "not-core", "from": "cairo-1169", "to": "fin-1171" },
+    { "name": "Médine", "pt": [39.61, 24.47], "where": "core", "from": "hakim-1009", "to": "ascalon-1153" },
+    { "name": "Tlemcen (Maghreb)", "pt": [1.31, 34.88], "where": "not-core", "from": "raqqada-909", "to": "mahdia-921" },
+    { "name": "Tlemcen (Maghreb)", "pt": [1.31, 34.88], "where": "not-core", "from": "sicile-1040", "to": "fin-1171" },
+    { "name": "Fès (Maghreb extrême)", "pt": [-5.0, 34.03], "where": "not-core" },
+    { "name": "Antioche (byzantine)", "pt": [36.16, 36.2], "where": "not-core" }
+  ]
+}

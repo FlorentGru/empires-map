@@ -5386,7 +5386,14 @@
       30.04
     ],
     "founded": 641,
-    "rank": 1
+    "rank": 1,
+    "capitalOf": [
+      {
+        "empire": "fatimides",
+        "from": 973,
+        "to": 1171
+      }
+    ]
   },
   {
     "id": "algiers",
@@ -8874,6 +8881,123 @@
     "rank": 3,
     "empires": [
       "russie"
+    ]
+  },
+  {
+    "id": "mahdia",
+    "modern": "Mahdia, Tunisie",
+    "names": [
+      {
+        "name": "Mahdia",
+        "from": 921
+      }
+    ],
+    "coords": [
+      11.06,
+      35.5
+    ],
+    "founded": 916,
+    "rank": 2,
+    "capitalOf": [
+      {
+        "empire": "fatimides",
+        "from": 921,
+        "to": 947
+      }
+    ],
+    "empires": [
+      "fatimides"
+    ]
+  },
+  {
+    "id": "raqqada",
+    "modern": "Raqqada (près de Kairouan), Tunisie",
+    "names": [
+      {
+        "name": "Raqqada"
+      }
+    ],
+    "coords": [
+      10.05,
+      35.6
+    ],
+    "founded": 876,
+    "rank": 3,
+    "capitalOf": [
+      {
+        "empire": "fatimides",
+        "from": 909,
+        "to": 920
+      }
+    ],
+    "empires": [
+      "fatimides"
+    ]
+  },
+  {
+    "id": "al-mansuriya",
+    "modern": "Mansouria (près de Kairouan), Tunisie",
+    "names": [
+      {
+        "name": "al-Mansuriya",
+        "from": 947
+      }
+    ],
+    "coords": [
+      10.15,
+      35.65
+    ],
+    "founded": 947,
+    "rank": 3,
+    "capitalOf": [
+      {
+        "empire": "fatimides",
+        "from": 947,
+        "to": 973
+      }
+    ],
+    "empires": [
+      "fatimides"
+    ]
+  },
+  {
+    "id": "ascalon",
+    "modern": "Ascalon (Ashkelon), Israël",
+    "names": [
+      {
+        "name": "Ascalon"
+      }
+    ],
+    "coords": [
+      34.57,
+      31.67
+    ],
+    "founded": -1500,
+    "rank": 2,
+    "empires": [
+      "fatimides"
+    ]
+  },
+  {
+    "id": "acre",
+    "modern": "Acre (Akko), Israël",
+    "names": [
+      {
+        "name": "Acre"
+      },
+      {
+        "name": "Saint-Jean-d'Acre",
+        "from": 1191
+      }
+    ],
+    "coords": [
+      35.08,
+      32.93
+    ],
+    "founded": -1500,
+    "rank": 2,
+    "empires": [
+      "fatimides"
     ]
   }
 ]

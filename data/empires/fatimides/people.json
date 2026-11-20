@@ -1,0 +1,314 @@
+[
+  {
+    "id": "abd-allah-al-mahdi",
+    "name": "Abd Allah al-Mahdi",
+    "archetype": "calife",
+    "faction": "arabes",
+    "born": 873,
+    "died": 934,
+    "title": "Fondateur du califat fatimide",
+    "bio": "Abdullah, dit al-Mahdi, se présente comme l'imam caché de la lignée ismaélienne, descendant d'Ali et de Fatima, la fille du Prophète : c'est de là que vient le nom de « fatimide ». Longtemps traqué par les agents abbassides, il se cache à Sijilmasa, au Maroc, d'où le missionnaire Abu Abdallah al-Shi'i le fait venir en Ifriqiya. En 909, il est proclamé calife à Raqqada, près de Kairouan, après la chute des Aghlabides. Il gouverne vingt-cinq ans, fonde en 916-921 la capitale-forteresse de Mahdia, tournée vers la mer, et impose un pouvoir théocratique où le calife est aussi le guide religieux. Sévère et méfiant, il fait assassiner en 911 le missionnaire qui l'avait porté au pouvoir, puis mate la révolte du mystique Abu Yazid. Il meurt en 934. Les sources sur ses origines sont controversées : ses adversaires sunnites niaient sa généalogie, ses partisans la tenaient pour sacrée.",
+    "keyFacts": [
+      "873 : naissance, dans une lignée ismaélienne cachée",
+      "909 : proclamé calife à Raqqada après la chute des Aghlabides",
+      "916-921 : fonde Mahdia, capitale maritime",
+      "911 : fait assassiner Abu Abdallah al-Shi'i",
+      "934 : meurt, après avoir maté la révolte d'Abu Yazid"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Ubayd Allah al-Mahdi",
+        "url": "https://fr.wikipedia.org/wiki/Ubayd_Allah_al-Mahdi"
+      }
+    ]
+  },
+  {
+    "id": "abu-abdallah-al-shii",
+    "name": "Abu Abdallah al-Shi‘i",
+    "archetype": "general",
+    "faction": "arabes",
+    "died": 911,
+    "title": "Missionnaire ismaélien et conquérant de l’Ifriqiya",
+    "bio": "Envoyé du Yémen vers 893, Abu Abdallah al-Shi'i est un missionnaire (da'i) chiite ismaélien chargé de préparer la venue de l'imam. Il s'installe dans le nord de l'Ifriqiya et convertit à sa cause les Berbères kutamas de Petite Kabylie, habiles à la guerre et hostiles à la dynastie aghlabide. Pendant seize ans, il organise un réseau clandestin, lève une armée et remporte une série de victoires. En 909, ses Kutamas prennent Kairouan et Raqqada et renversent les Aghlabides. Il fait alors sortir de sa cachette le sayyid Abd Allah al-Mahdi et le proclame calife. Mais les deux hommes se brouillent : le nouveau souverain juge le missionnaire trop puissant et trop radical. En 911, Abu Abdallah est exécuté, sans doute avec son frère, sur ordre du calife qu'il avait installé. Il incarne la force de la prédication ismaélienne, capable de faire et de défaire un souverain.",
+    "keyFacts": [
+      "Vers 893 : envoyé en Ifriqiya comme da'i ismaélien",
+      "Convertit les Berbères kutamas de Petite Kabylie",
+      "909 : renverse les Aghlabides et proclame al-Mahdi calife",
+      "911 : exécuté sur ordre d'al-Mahdi"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Abu Abd Allah ach-Chi‘i",
+        "url": "https://fr.wikipedia.org/wiki/Abu_Abd_Allah_ach-Chi%27i"
+      }
+    ]
+  },
+  {
+    "id": "jawhar-al-siqilli",
+    "name": "Jawhar al-Siqilli",
+    "archetype": "general",
+    "faction": "arabes",
+    "died": 992,
+    "title": "Général fondateur du Caire",
+    "bio": "Jawhar, surnommé al-Siqilli (« le Sicilien ») car il serait né en Sicile, est un affranchi devenu le plus grand général des premiers Fatimides. Il s'illustre en soumettant les tribus berbères du Maghreb pour le compte d'al-Mu'izz, puis reçoit la mission de conquérir l'Égypte. En 969, il entre à Fustat presque sans combat et fond, au nord, la ville nouvelle d'al-Qahira, « la Victorieuse », Le Caire. Il y fait construire le palais califal et commence, en 970, la grande mosquée al-Azhar. Gouverneur d'Égypte, il pousse vers la Palestine et la Syrie et repousse une contre-attaque. Resté fidèle au calife, il se retire à la fin de sa vie. Son œuvre est capitale : c'est lui qui ancre durablement la dynastie en Égypte et dote le califat de sa capitale pour deux siècles.",
+    "keyFacts": [
+      "Affranchi d'origine sicilienne, général d'al-Mu'izz",
+      "969 : conquiert l'Égypte et fonde Le Caire",
+      "970 : commence la mosquée al-Azhar",
+      "Gouverneur d'Égypte, mène les campagnes de Palestine et Syrie"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Jawhar al-Siqilli",
+        "url": "https://fr.wikipedia.org/wiki/Jawhar_al-Siqilli"
+      }
+    ]
+  },
+  {
+    "id": "al-muizz",
+    "name": "Al-Mu’izz li-Din Allah",
+    "archetype": "calife",
+    "faction": "arabes",
+    "born": 932,
+    "died": 975,
+    "title": "Calife qui transfère le pouvoir au Caire",
+    "bio": "Quatrième calife fatimide, al-Mu'izz règne d'abord depuis Mahdia, en Ifriqiya. Administrateur habile et fin politique, il prépare longuement la conquête de l'Égypte, qu'il confie à son général Jawhar en 969. En 973, il quitte Mahdia avec sa cour et son trésor pour s'installer dans la nouvelle capitale du Caire : le centre de l'empire bascule définitivement du Maghreb vers l'Égypte. Il confie l'Ifriqiya à la dynastie berbère vassale des Zirides. Il réforme aussi la monnaie, imposant un dinar fatimide reconnaissable à ses cercles concentriques, qui circulera jusqu'en Sicile et au-delà. Polyglotte et tolérant, il s'entoure de savants et laisse à son fils al-Aziz un empire stabilisé. Sa mort, en 975, marque le passage du califat maghrébin au califat égyptien, désormais tourné vers la Méditerranée orientale.",
+    "keyFacts": [
+      "953 : devient calife, règne depuis Mahdia",
+      "969 : conquête de l'Égypte par Jawhar",
+      "973 : transfère le califat au Caire",
+      "Réforme le dinar fatimide à cercles concentriques",
+      "975 : meurt, laissant l'empire à al-Aziz"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Al-Muizz li-Din Allah",
+        "url": "https://fr.wikipedia.org/wiki/Al-Muizz_li-Din_Allah"
+      }
+    ]
+  },
+  {
+    "id": "al-aziz",
+    "name": "Al-Aziz Billah",
+    "archetype": "calife",
+    "faction": "arabes",
+    "born": 955,
+    "died": 996,
+    "title": "Calife de l’apogée égyptien",
+    "bio": "Fils d'al-Mu'izz, al-Aziz règne de 975 à 996 et porte le califat fatimide à son apogée. Maître de l'Égypte, il étend son influence sur la Palestine, le Hedjaz et une partie de la Syrie, où ses armées se heurtent aux Byzantins. Il s'appuie sur des vizirs remarquables, notamment le juif converti Yaqub ibn Killis, qui réorganise les finances. Sa cour du Caire devient un foyer de luxe et de savoir. Sa politique religieuse est relativement ouverte : il emploie des chrétiens et des juifs à de hautes charges, comme le vizir copte Isa ibn Nasturus. Il tente, sans y parvenir durablement, de faire reconnaître les Fatimides par les Qarmates et de prendre Antioche. Sa mort prématurée, en 996, laisse le trône à son fils al-Hakim, alors âgé de onze ans, ce qui ouvre une période de régences et de troubles.",
+    "keyFacts": [
+      "975 : succède à son père al-Mu'izz",
+      "Étend l'influence fatimide en Palestine, au Hedjaz et en Syrie",
+      "S'appuie sur le vizir Yaqub ibn Killis",
+      "Emploie chrétiens et juifs aux hautes charges",
+      "996 : meurt, laissant le jeune al-Hakim comme successeur"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Abu Mansur Nizar al-Aziz Billah",
+        "url": "https://fr.wikipedia.org/wiki/Abu_Mansur_Nizar_al-Aziz_Billah"
+      }
+    ]
+  },
+  {
+    "id": "al-hakim",
+    "name": "Al-Hakim bi-Amr Allah",
+    "archetype": "calife",
+    "faction": "arabes",
+    "born": 985,
+    "died": 1021,
+    "title": "Calife controversé de l’an mil",
+    "bio": "Sixième calife fatimide, al-Hakim devient souverain à onze ans, en 996, sous des régences rivales. Devenu adulte, il règne en maître absolu et prend des mesures déroutantes : interdiction du vin, port de signes distinctifs imposé aux chrétiens et aux juifs, persécutions et confiscations. En 1009, il ordonne la destruction de l'église du Saint-Sépulcre à Jérusalem, geste qui pèsera lourd dans la mémoire de la chrétienté. Mais son règne est aussi un grand moment culturel : il fonde en 1004-1005 la Dar al-Hikma, vaste bibliothèque et centre d'enseignement du Caire, et soutient l'astronome Ibn Yunus. Il s'entoure de savants comme Ibn al-Haytham. En février 1021, il disparaît au cours d'une promenade nocturne sur le mont Mokattam ; sa mort n'est pas élucidée. Certains de ses partisans refusent d'y croire et fondent la communauté des druzes, qui le tiennent pour une figure divine.",
+    "keyFacts": [
+      "996 : devient calife à onze ans",
+      "1004-1005 : fonde la Dar al-Hikma du Caire",
+      "1009 : fait détruire le Saint-Sépulcre de Jérusalem",
+      "Soutient les sciences, notamment l'astronomie d'Ibn Yunus",
+      "1021 : disparaît mystérieusement, origine de la foi druze"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Al-Hakim bi-Amr Allah",
+        "url": "https://fr.wikipedia.org/wiki/Al-Hakim_bi-Amr_Allah"
+      }
+    ]
+  },
+  {
+    "id": "isa-ibn-nasturus",
+    "name": "Isa ibn Nasturus",
+    "archetype": "sage",
+    "faction": "arabes",
+    "died": 997,
+    "title": "Vizir chrétien copte des premiers Fatimides",
+    "bio": "Isa ibn Nasturus est un haut fonctionnaire chrétien d'Égypte, sans doute d'origine non copte malgré sa confession, qui gravit les échelons de l'administration fiscale fatimide. Après la mort du grand vizir Yaqub ibn Killis en 991, il prend une place grandissante au sommet de l'État, et devient vers 994-996 le véritable chef du gouvernement, sans toutefois recevoir le titre de vizir qu'al-Aziz ne voulait plus attribuer. Son influence, et la faveur qu'il accorde à des chrétiens et à des juifs, provoquent le mécontentement des milieux musulmans. Protégé un temps par la princesse Sitt al-Mulk, il est arrêté à l'avènement du jeune al-Hakim et exécuté en 997 sur l'ordre du chef kutama Ibn Ammar. Il incarne la place des élites chrétiennes dans l'administration fatimide, avant les persécutions du règne d'al-Hakim.",
+    "keyFacts": [
+      "Haut fonctionnaire chrétien de l'administration fiscale",
+      "Vers 994-996 : chef du gouvernement d'al-Aziz",
+      "Favorise des chrétiens et des juifs aux hautes charges",
+      "997 : arrêté et exécuté à l'avènement d'al-Hakim"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Al-Hakim bi-Amr Allah",
+        "url": "https://fr.wikipedia.org/wiki/Al-Hakim_bi-Amr_Allah"
+      }
+    ]
+  },
+  {
+    "id": "al-mustansir",
+    "name": "Al-Mustansir Billah",
+    "archetype": "calife",
+    "faction": "arabes",
+    "born": 1029,
+    "died": 1094,
+    "title": "Calife du plus long règne et de la grande crise",
+    "bio": "Huitième calife fatimide, al-Mustansir monte sur le trône en 1036, à sept ans, et règne près de soixante ans, le plus long règne de la dynastie. Son époque est d'abord celle d'un empire encore vaste, dont le Caire émerveille les voyageurs comme le Perse Nasir-i Khusraw. Puis vient le désastre : la rupture des Zirides en 1048, l'invasion des Banu Hilal, la famine de 1065-1072 et la guerre des factions turques et soudanaises qui pille les palais. Le calife, réduit à l'impuissance, perd l'Ifriqiya, la Sicile et la Syrie. Il est sauvé par le vizir arménien Badr al-Jamali, appelé en 1073, qui restaure l'État mais concentre tous les pouvoirs. Dès lors, le calife n'est plus qu'un imam vénéré, dépouillé de l'essentiel de son autorité. Il meurt en 1094, laissant un califat diminué mais survivant.",
+    "keyFacts": [
+      "1036 : devient calife à sept ans",
+      "1048 : rupture des Zirides d'Ifriqiya",
+      "1065-1072 : famine et guerre des factions au Caire",
+      "1073 : appelle Badr al-Jamali, qui restaure l'État",
+      "1094 : meurt après près de soixante ans de règne"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Al-Mustansir Billah",
+        "url": "https://fr.wikipedia.org/wiki/Al-Mustansir_Billah"
+      }
+    ]
+  },
+  {
+    "id": "badr-al-jamali",
+    "name": "Badr al-Jamali",
+    "archetype": "general",
+    "faction": "arabes",
+    "died": 1094,
+    "title": "Vizir arménien restaurateur du califat",
+    "bio": "D'origine arménienne et de confession chrétienne, Badr al-Jamali s'élève au service des Fatimides et devient gouverneur d'Acre, en Syrie du Sud. En 1073, devant l'effondrement de l'État, le calife al-Mustansir le rappelle d'urgence. Il entre au Caire en janvier 1074 avec ses troupes arméniennes, mate les factions turques et soudanaises et prend les pleins pouvoirs comme vizir et « émir des armées ». Il rétablit l'ordre, les finances et l'armée, repousse les menaces et fait entourer Le Caire d'une nouvelle enceinte de pierre, avec les portes de Bab al-Futuh, Bab al-Nasr et Bab Zuwayla, dues à des architectes arméniens. Son pouvoir marque un tournant : désormais, le vrai maître de l'Égypte est le vizir militaire, tandis que le calife n'est plus qu'un chef religieux. Son fils al-Afdal lui succède. Sa statue, à cheval, ornait encore les portes du Caire.",
+    "keyFacts": [
+      "Gouverneur d'Acre avant 1073",
+      "Janvier 1074 : prend le pouvoir au Caire",
+      "Réorganise l'armée et les finances, mate les factions",
+      "Fait bâtir les murailles et les portes du Caire",
+      "1094 : meurt, son fils al-Afdal lui succède"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Badr al-Djamali",
+        "url": "https://fr.wikipedia.org/wiki/Badr_al-Djamali"
+      }
+    ]
+  },
+  {
+    "id": "ibn-al-haytham",
+    "name": "Ibn al-Haytham",
+    "archetype": "sage",
+    "faction": "arabes",
+    "born": 965,
+    "died": 1040,
+    "title": "Savant de l’optique au Caire",
+    "bio": "Né à Bassora, en Irak, al-Hasan ibn al-Haytham, connu en Europe sous le nom d'Alhazen, est l'un des plus grands savants de l'islam. Attiré au Caire par le calife al-Hakim, il se serait fait passer pour fou afin d'échapper à une tâche impossible qu'on lui avait confiée : réguler le Nil. Réputé rester en retrait, il compose sous al-Hakim, entre 1011 et 1021, son œuvre majeure, le Kitab al-Manazir (Livre d'optique). Il y démontre, par l'expérience, que la vision vient de la lumière qui entre dans l'œil depuis les objets, et non de rayons émis par l'œil, comme on le croyait depuis Euclide. Il étudie la réflexion, la réfraction, la chambre noire et la structure de l'œil. Traduit en latin au Moyen Âge, ce traité influencera Roger Bacon, Kepler et Descartes. On le surnomme « le père de l'optique moderne ».",
+    "keyFacts": [
+      "Né vers 965 à Bassora, mort vers 1040 au Caire",
+      "Vers 1011-1021 : rédige le Kitab al-Manazir",
+      "Démontre que la vision vient de la lumière entrant dans l'œil",
+      "Étudie la chambre noire et la réfraction",
+      "Surnommé « père de l'optique moderne »"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Ibn al-Haytham",
+        "url": "https://fr.wikipedia.org/wiki/Ibn_al-Haytham"
+      }
+    ]
+  },
+  {
+    "id": "nasir-i-khusraw",
+    "name": "Nasir-i Khusraw",
+    "archetype": "sage",
+    "faction": "arabes",
+    "born": 1004,
+    "died": 1088,
+    "title": "Voyageur perse témoin du Caire fatimide",
+    "bio": "Poète, philosophe et missionnaire ismaélien persan, Nasir-i Khusraw entreprend vers 1046 un long voyage qui le mène de son Khorassan natal jusqu'en Égypte. Il séjourne au Caire de 1047 à 1050 environ, sous le calife al-Mustansir, et y admire le faste de la cour, les marchés, les palais et les institutions du califat fatimide. Il raconte tout dans son récit de voyage, le Safar-nama (« Livre du voyage »), l'un des témoignages les plus précieux sur l'Égypte du XIe siècle, qu'il décrit comme plus riche et mieux administrée que son pays. Rentré en Perse, il devient le grand propagandiste de l'ismaélisme en Asie centrale et compose une œuvre poétique et philosophique importante. Son regard d'étranger curieux fait de lui un témoin idéal du Caire fatimide à son apogée.",
+    "keyFacts": [
+      "Poète et philosophe ismaélien persan",
+      "Vers 1046 : entreprend son grand voyage vers l'Égypte",
+      "1047-1050 : séjourne au Caire sous al-Mustansir",
+      "Écrit le Safar-nama, récit de voyage précieux sur l'Égypte",
+      "Meurt vers 1088, propagandiste de l'ismaélisme"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Nasir e Khosraw",
+        "url": "https://fr.wikipedia.org/wiki/Nasir_e_Khosraw"
+      }
+    ]
+  },
+  {
+    "id": "iftikhar-al-dawla",
+    "name": "Iftikhar al-Dawla",
+    "archetype": "general",
+    "faction": "arabes",
+    "died": 1099,
+    "title": "Gouverneur fatimide de Jérusalem en 1099",
+    "bio": "Iftikhar al-Dawla est un émir fatimide, gouverneur de Jérusalem pour le compte du vizir al-Afdal. En 1098, une armée égyptienne reprend la ville aux Artuqides turcs et il y prend ses fonctions. L'année suivante, les croisés de la première croisade arrivent devant Jérusalem : c'est lui qui organise la défense de la ville, renforce les murailles et prépare la résistance. Faute de troupes suffisantes et abandonné par une expédition de secours qui sera écrasée à Ascalon, il ne peut empêcher la prise de la ville le 15 juillet 1099, suivie d'un massacre de la population. Il se retire dans la citadelle et obtient, contre une rançon, de rejoindre Ascalon. Il meurt peu après. Sa figure incarne la fin de la présence fatimide en Palestine face à la première croisade.",
+    "keyFacts": [
+      "Émir fatimide, gouverneur de Jérusalem dès 1098",
+      "Organise la défense contre les croisés en 1099",
+      "Ne peut empêcher la chute de la ville le 15 juillet 1099",
+      "Se retire à Ascalon ; meurt en 1099"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Siège de Jérusalem (1099)",
+        "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_J%C3%A9rusalem_(1099)"
+      }
+    ]
+  },
+  {
+    "id": "saladin",
+    "name": "Saladin",
+    "archetype": "sultan",
+    "faction": "mamelouks",
+    "born": 1137,
+    "died": 1193,
+    "title": "Vizir d’Égypte, fondateur des Ayyoubides",
+    "bio": "Salah al-Din Yusuf, dit Saladin, est un officier kurde au service du Zengide Nur al-Din de Syrie. Envoyé en Égypte en 1169 avec son oncle Shirkuh, il y devient vizir du dernier calife fatimide, al-Adid, après la mort de Shirkuh. À la mort d'al-Adid, en 1171, il abolit le califat fatimide et fait proclamer la prière au nom du calife abbasside de Bagdad : l'Égypte repasse au sunnisme. Devenu maître du pays, il fonde la dynastie ayyoubide, conquiert le Yémen et la Syrie, et s'impose comme le champion du jihad contre les croisés. Sa victoire de Hattin, en 1187, lui permet de reprendre Jérusalem. Il meurt en 1193. Sa renommée d'homme chevaleresque, même en Europe, fait de lui une figure majeure du Moyen Âge.",
+    "keyFacts": [
+      "1137 : naît dans une famille kurde d'officiers",
+      "1169 : devient vizir fatimide d'Égypte",
+      "1171 : abolit le califat fatimide, rétablit le sunnisme",
+      "1187 : victoire de Hattin et reprise de Jérusalem",
+      "Fonde la dynastie ayyoubide ; meurt en 1193"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Saladin",
+        "url": "https://fr.wikipedia.org/wiki/Saladin"
+      }
+    ]
+  },
+  {
+    "id": "al-adid",
+    "name": "Al-Adid",
+    "archetype": "calife",
+    "faction": "arabes",
+    "born": 1151,
+    "died": 1171,
+    "title": "Dernier calife fatimide",
+    "bio": "Abu Muhammad Abdullah, dit al-Adid, est le quatorzième et dernier calife fatimide. Il monte sur le trône encore enfant, en 1160, dans un califat réduit à l'Égypte et dominé par des vizirs rivaux, dont le plus fameux est Chawar. Impuissant face aux interventions étrangères, il assiste à l'installation, en 1169, du général zengide Shirkuh puis de son neveu Saladin comme vizirs, au nom de Nur al-Din de Syrie. Jeune homme malade, privé de tout pouvoir réel, il ne peut empêcher Saladin de faire proclamer la prière au nom du calife abbasside de Bagdad. Sa mort, en septembre 1171, scelle la fin du califat fatimide et de deux siècles de pouvoir chiite ismaélien en Égypte. Il n'a régné que sur l'ombre d'un empire.",
+    "keyFacts": [
+      "1160 : devient calife, encore enfant",
+      "Règne sous la tutelle de vizirs rivaux, dont Chawar",
+      "1169 : subit l'arrivée de Shirkuh puis de Saladin comme vizirs",
+      "1171 : meurt, dernier calife fatimide"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Al-Adid",
+        "url": "https://fr.wikipedia.org/wiki/Al-Adid"
+      }
+    ]
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "id": "dinar-fatimide",
+    "name": "Le dinar fatimide à cercles concentriques",
+    "year": 955,
+    "approx": true,
+    "inventor": "Al-Mu’izz li-Din Allah",
+    "place": "Ifriqiya (Kairouan, Mahdia), puis Le Caire",
+    "at": [
+      10.1,
+      35.68
+    ],
+    "category": "monnaie",
+    "description": "Vers 953-975, le calife al-Mu'izz refond le monnayage fatimide. Le dinar d'or abandonne le champ horizontal des monnaies abbassides pour un décor de trois cercles concentriques autour d'un point central, qui devient la marque de la dynastie. C'est une innovation de style, non l'invention de la monnaie d'or : l'Égypte et l'Ifriqiya frappaient déjà des dinars. La Sicile conserve de son côté le quart de dinar, le tarì. Ces pièces circulent de l'Atlantique à l'Inde.",
+    "impact": "Une monnaie reconnaissable affirme l'identité de l'État fatimide face aux Abbassides et aux Byzantins, et facilite le grand commerce méditerranéen.",
+    "sources": [
+      {
+        "label": "Wikipédia — Dinar",
+        "url": "https://fr.wikipedia.org/wiki/Dinar"
+      },
+      {
+        "label": "Wikipédia — Dinar",
+        "url": "https://fr.wikipedia.org/wiki/Dinar"
+      }
+    ]
+  },
+  {
+    "id": "al-azhar",
+    "name": "La mosquée-université al-Azhar",
+    "year": 970,
+    "inventor": "Jawhar al-Siqilli",
+    "place": "Le Caire, Égypte",
+    "at": [
+      31.24,
+      30.04
+    ],
+    "category": "architecture",
+    "description": "En avril 970, le général Jawhar ordonne la construction de la grande mosquée de la nouvelle capitale, achevée en 972. Nommée al-Azhar, sans doute d'après az-Zahra, surnom de Fatima, elle est d'abord vouée à la prédication ismaélienne. Très vite, elle accueille des cercles d'enseignement : droit, grammaire, rhétorique, calcul des phases de la lune. C'est l'une des plus anciennes institutions d'enseignement supérieur en activité continue au monde.",
+    "impact": "Al-Azhar devint un foyer majeur du savoir, puis, après Saladin, le phare de l'islam sunnite qu'il est resté jusqu'à aujourd'hui.",
+    "sources": [
+      {
+        "label": "Wikipédia — Mosquée Al-Azhar",
+        "url": "https://fr.wikipedia.org/wiki/Mosqu%C3%A9e_Al-Azhar"
+      }
+    ]
+  },
+  {
+    "id": "dar-al-hikma",
+    "name": "La Dar al-Hikma, Maison de la sagesse",
+    "year": 1005,
+    "inventor": "Al-Hakim bi-Amr Allah",
+    "place": "Le Caire, Égypte",
+    "at": [
+      31.24,
+      30.04
+    ],
+    "category": "science",
+    "description": "En 1004-1005, le calife al-Hakim fonde au Caire la Dar al-Hikma, « Maison de la sagesse », installée d'abord comme bibliothèque puis transformée en institution d'enseignement. Elle abrite une vaste bibliothèque publique et des salles de lecture où l'on enseigne astronomie, logique, philosophie, mathématiques, histoire, langues et médecine, en plus des disciplines religieuses. C'est une innovation : un centre d'État ouvert au-delà du seul cercle palatin.",
+    "impact": "La Dar al-Hikma fait du Caire un grand foyer scientifique et intellectuel de l'islam, associant bibliothèque publique et enseignement.",
+    "sources": [
+      {
+        "label": "Wikipédia — Dar al-Hikma",
+        "url": "https://fr.wikipedia.org/wiki/Dar_al-Hikma"
+      }
+    ]
+  },
+  {
+    "id": "zij-ibn-yunus",
+    "name": "Le zīj d’Ibn Yunus (tables d’al-Hakim)",
+    "year": 1000,
+    "inventor": "Ibn Yunus",
+    "place": "Le Caire, Égypte",
+    "at": [
+      31.24,
+      30.04
+    ],
+    "category": "science",
+    "description": "L'astronome égyptien Ibn Yunus (vers 950-1009) travaille pour les califes al-Aziz et al-Hakim, observant le ciel de 977 à 1003. Il compose un grand recueil de tables astronomiques, le Zīj al-Kabīr al-Hākimī, dédié à al-Hakim. Ces tables donnent positions des astres, calendriers et moments des prières avec une précision remarquable pour l'époque. Certaines de ses observations, comme celle de l'éclipse de 977, restent utilisées par les historiens.",
+    "impact": "Ce zīj est l'un des plus précis du Moyen Âge ; ses tables de calcul du temps servirent au Caire jusqu'au XIXe siècle.",
+    "sources": [
+      {
+        "label": "Wikipédia — Ibn Yunus",
+        "url": "https://fr.wikipedia.org/wiki/Ibn_Yunus"
+      }
+    ]
+  },
+  {
+    "id": "optique-ibn-al-haytham",
+    "name": "L’optique d’Ibn al-Haytham (Kitāb al-Manāzir)",
+    "year": 1011,
+    "approx": true,
+    "inventor": "Ibn al-Haytham",
+    "place": "Le Caire, Égypte",
+    "at": [
+      31.24,
+      30.04
+    ],
+    "category": "science",
+    "description": "Entre 1011 et 1021, Ibn al-Haytham rédige au Caire son Livre d'optique (Kitāb al-Manāzir). Il y soutient, preuves expérimentales à l'appui, que la vision vient de la lumière entrant dans l'œil depuis les objets, et non de rayons émis par l'œil. Il décrit la chambre noire, étudie la réflexion et la réfraction, et décrit la structure de l'œil. Il fonde ainsi une méthode fondée sur l'expérience et la mesure.",
+    "impact": "Ce traité, traduit en latin, fonde l'optique moderne et inspire Roger Bacon, Kepler et Descartes ; Ibn al-Haytham est dit « père de l'optique ».",
+    "sources": [
+      {
+        "label": "Wikipédia — Traité d’optique",
+        "url": "https://fr.wikipedia.org/wiki/Trait%C3%A9_d%27optique"
+      },
+      {
+        "label": "Wikipédia — Ibn al-Haytham",
+        "url": "https://fr.wikipedia.org/wiki/Ibn_al-Haytham"
+      }
+    ]
+  },
+  {
+    "id": "bimaristan-fatimide",
+    "name": "Les bimaristans, hôpitaux du Caire",
+    "year": 1010,
+    "approx": true,
+    "place": "Le Caire et l’Égypte fatimide",
+    "at": [
+      31.24,
+      30.04
+    ],
+    "category": "medecine",
+    "description": "Sous les Fatimides, l'Égypte entretient des bimaristans, hôpitaux où l'on soigne gratuitement les malades, riches comme pauvres. Le califat finance médecins, pharmaciens et personnel, avec des salles séparées et des soins à domicile. Le modèle est ancien — il vient de Damas et de Bagdad — mais les sources fatimides attestent sa diffusion et son financement public en Égypte, où il prépare les grands hôpitaux ayyoubides et mamelouks.",
+    "impact": "L'hôpital gratuit financé par l'État devient une institution durable du monde musulman, modèle repris par les dynasties suivantes.",
+    "sources": [
+      {
+        "label": "Wikipédia — Bimaristan",
+        "url": "https://fr.wikipedia.org/wiki/Bimaristan"
+      }
+    ]
+  },
+  {
+    "id": "ceramique-lustre-fustat",
+    "name": "La céramique à lustre métallique de Fustat",
+    "year": 1000,
+    "approx": true,
+    "place": "Fustat (Le Caire), Égypte",
+    "at": [
+      31.24,
+      30.04
+    ],
+    "category": "technique",
+    "description": "Après 969, les ateliers de Fustat développent la céramique à reflets métalliques, dite « lustre », technique venue d'Irak. Les plus anciennes pièces égyptiennes datées remontent à l'an mil. Un potier célèbre, Muslim ibn al-Dahan, signe des bols sous al-Hakim. Les potiers égyptiens abandonnent peu à peu les lustres polychromes pour des lustres monochromes, plus faciles à réussir, et exportent leur vaisselle de luxe dans tout le monde méditerranéen.",
+    "impact": "La céramique à lustre de Fustat diffuse une technique de luxe vers l'Espagne et l'Italie, où elle influence la faïence médiévale.",
+    "sources": [
+      {
+        "label": "Wikipédia — Céramique islamique",
+        "url": "https://fr.wikipedia.org/wiki/C%C3%A9ramique_islamique"
+      }
+    ]
+  },
+  {
+    "id": "cristal-de-roche-fatimide",
+    "name": "Le verre et le cristal de roche fatimides",
+    "year": 990,
+    "approx": true,
+    "place": "Le Caire, Égypte",
+    "at": [
+      31.24,
+      30.04
+    ],
+    "category": "technique",
+    "description": "Au Xe et au XIe siècle, les ateliers du Caire taillent des vases en cristal de roche, un quartz transparent, d'une finesse extrême. On y sculpte en relief des oiseaux, des palmettes et des inscriptions coufiques dédicatoires. Une aiguière portant le nom du calife al-Aziz a même fini dans le trésor de Saint-Marc à Venise, et d'autres pièces dans les trésors d'églises d'Europe. Beaucoup furent dispersées lors du pillage du palais fatimide vers 1067.",
+    "impact": "Ce travail de luxe pousse l'art de la taille de la pierre dure ; les objets fatimides ont nourri les trésors européens et l'orfèvrerie médiévale.",
+    "sources": [
+      {
+        "label": "Wikipédia — Cristal de roche",
+        "url": "https://fr.wikipedia.org/wiki/Cristal_de_roche"
+      }
+    ]
+  },
+  {
+    "id": "enceinte-du-caire",
+    "name": "L’enceinte et les portes du Caire",
+    "year": 1087,
+    "inventor": "Badr al-Jamali",
+    "place": "Le Caire, Égypte",
+    "at": [
+      31.24,
+      30.04
+    ],
+    "category": "architecture",
+    "description": "En 1087, le vizir Badr al-Jamali fait rebâtir l'enceinte du Caire par des architectes arméniens. Trois portes monumentales de pierre, Bab al-Futuh, Bab al-Nasr et Bab Zuwayla, restent debout aujourd'hui, chefs-d'œuvre de l'architecture militaire fatimide, avec leurs voûtes, leurs tours et leurs décors sculptés. Cette muraille protège la capitale des troubles et des attaques extérieures à la fin du XIe siècle.",
+    "impact": "Ces fortifications, encore visibles, comptent parmi les grands témoins de l'architecture militaire islamique et structurent le Caire historique.",
+    "sources": [
+      {
+        "label": "Wikipédia — Bab Zuweila",
+        "url": "https://fr.wikipedia.org/wiki/Bab_Zuweila"
+      }
+    ]
+  },
+  {
+    "id": "commerce-mer-rouge",
+    "name": "Le commerce de la mer Rouge et de l’océan Indien",
+    "year": 1000,
+    "approx": true,
+    "place": "Le Caire, Fustat et la mer Rouge",
+    "at": [
+      32.5,
+      29.5
+    ],
+    "category": "navigation",
+    "description": "Avec le Caire pour centre, les Fatimides contrôlent une grande route commerciale reliant la Méditerranée à l'océan Indien. Les marchands descendent le Nil, puis traversent le désert vers les ports de la mer Rouge, d'où leurs navires gagnent l'Inde et l'Arabie. Épices, encens, ivoire, textiles et or circulent ainsi vers l'Égypte et la Méditerranée. Ce commerce enrichit les marchands juifs, chrétiens et musulmans, dont les archives de la Gueniza du Caire ont gardé la trace.",
+    "impact": "Ce réseau fait du Caire un carrefour mondial entre l'Europe, l'Afrique et l'Asie, et prépare l'essor commercial de l'Égypte médiévale.",
+    "sources": [
+      {
+        "label": "Wikipédia — Gueniza du Caire",
+        "url": "https://fr.wikipedia.org/wiki/Gueniza_du_Caire"
+      }
+    ]
+  }
+]

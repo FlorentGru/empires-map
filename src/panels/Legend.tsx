@@ -39,6 +39,7 @@ const EMPIRE_SPRITES: Record<string, { faction: Faction; archetype: Archetype }>
   'perse-achemenide': { faction: 'parthes-perses', archetype: 'grand-roi' },
   omeyyades: { faction: 'arabes', archetype: 'calife' },
   abbassides: { faction: 'arabes', archetype: 'calife' },
+  fatimides: { faction: 'arabes', archetype: 'calife' },
   moghols: { faction: 'moghols', archetype: 'shah' },
   russie: { faction: 'russes', archetype: 'tsar' },
 };

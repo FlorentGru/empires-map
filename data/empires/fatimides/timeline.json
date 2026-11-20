@@ -1,0 +1,1521 @@
+{
+  "id": "fatimides",
+  "name": "Califat fatimide",
+  "color": "#0e6f7a",
+  "start": 909,
+  "end": 1171,
+  "description": "Califat chiite ismaélien né en Ifriqiya en 909, transféré au Caire en 973. Il a un temps régné de l'Atlantique au Hedjaz et laissé au Caire un héritage scientifique et architectural majeur.",
+  "view": {
+    "center": [
+      10,
+      33
+    ],
+    "zoom": 3.5
+  },
+  "bounds": [
+    [
+      -18,
+      8
+    ],
+    [
+      60,
+      46
+    ]
+  ],
+  "apogee": {
+    "stepId": "hakim-1009",
+    "note": "L'extension maximale se situe vers 1009, sous al-Hakim : Égypte, Palestine, Liban, Syrie du Sud (Damas), Hedjaz, Ifriqiya, Cyrénaïque et Sicile. On pourrait aussi retenir egypte-969 (conquête de l'Égypte) : le choix de hakim-1009 marque l'empire le plus étendu, Syrie du Sud et Hedjaz inclus."
+  },
+  "periods": [
+    {
+      "id": "ifriqiya",
+      "name": "La fondation en Ifriqiya",
+      "start": 909,
+      "end": 969,
+      "color": "#a8d5c2",
+      "summary": "Une dynastie chiite ismaélienne, née d'une prédication clandestine, renverse les Aghlabides à Kairouan en 909 et fonde un contre-califat à Raqqada puis à Mahdia. L'empire ne cesse ensuite de viser l'Égypte."
+    },
+    {
+      "id": "conquete",
+      "name": "Le Caire et la conquête de la Syrie",
+      "start": 969,
+      "end": 1021,
+      "color": "#e8d9a8",
+      "summary": "Jawhar conquiert l'Égypte en 969 et fonde Le Caire ; al-Mu'izz y installe le califat en 973. L'empire s'étend à la Palestine, au Hedjaz et à la Syrie, mais bute sur Byzance et connaît les excès d'al-Hakim."
+    },
+    {
+      "id": "crise",
+      "name": "L'apogée puis la grande crise",
+      "start": 1021,
+      "end": 1073,
+      "color": "#d8b8c8",
+      "summary": "Après 1021, la Sicile est perdue et l'Ifriqiya échappe aux Fatimides, passée aux Zirides ralliés à Bagdad et ravagée par les Banu Hilal. Au Caire, la famine et la guerre des factions turques et soudanaises épuisent l'État."
+    },
+    {
+      "id": "restauration",
+      "name": "La restauration arménienne et la fin",
+      "start": 1073,
+      "end": 1171,
+      "color": "#a8c8e8",
+      "summary": "Le vizir arménien Badr al-Jamali restaure l'armée et le pouvoir, désormais aux mains des vizirs militaires. Mais les croisés prennent la Palestine, les Zengides s'emparent de l'Égypte et, en 1171, Saladin abolit le califat fatimide."
+    }
+  ],
+  "steps": [
+    {
+      "id": "raqqada-909",
+      "year": 909,
+      "title": "Raqqada : naissance du califat fatimide",
+      "type": "fondation",
+      "location": [
+        10.05,
+        35.6
+      ],
+      "zoom": 4.5,
+      "summary": "En 909, Abu Abdallah al-Shi'i, à la tête des Berbères kutamas, renverse la dynastie aghlabide et fait proclamer calife le sayyid Abd Allah al-Mahdi à Raqqada, près de Kairouan.",
+      "details": "Depuis 893, le missionnaire ismaélien **Abu Abdallah al-Shi'i** prêche en secret dans le nord de l'Ifriqiya, aujourd'hui l'est de l'Algérie. Il s'appuie sur les **Kutamas**, une puissante confédération berbère de Petite Kabylie, hostiles aux **Aghlabides**, la dynastie sunnite qui gouverne la Tunisie pour le compte des Abbassides de Bagdad. Les Aghlabides sont alors affaiblis et contestés.\n\nEn mars 909, l'armée kutama écrase les troupes aghlabides et entre à **Raqqada**, la résidence princière près de **Kairouan**. Abu Abdallah y installe le **sayyid** (descendant du Prophète) **Abd Allah al-Mahdi**, jusque-là caché à Sijilmasa, au Maroc, et le proclame calife sous le nom d'**al-Mahdi** : c'est le début du seul grand califat **chiite** de l'histoire, dit **ismaélien** car il reconnaît une lignée d'imams descendants d'Ali. Il prétend aussi descendre de **Fatima**, fille du Prophète, d'où le nom de *fatimide*.\n\nLe nouveau pouvoir est théocratique : le **calife-imam** est à la fois souverain et guide religieux. La rupture avec Bagdad est totale. Mais les fondateurs s'opposent vite au personnage qu'ils ont installé, jugé trop modéré : al-Mahdi fait assassiner Abu Abdallah en 911.",
+      "consequences": [
+        "Kairouan et sa région passent des Aghlabides aux Fatimides ; l'Ifriqiya devient le cœur d'un nouveau califat.",
+        "Un contre-califat chiite ismaélien se dresse face au califat abbasside sunnite de Bagdad.",
+        "Les Berbères kutamas deviennent la principale force militaire de la dynastie.",
+        "La prédication ismaélienne essaime vers l'Égypte, le Yémen et le Maghreb."
+      ],
+      "territory": "raqqada-909",
+      "sources": [
+        {
+          "label": "Wikipédia — Califat fatimide",
+          "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+        },
+        {
+          "label": "Wikipédia — Abu Abd Allah ach-Chi‘i",
+          "url": "https://fr.wikipedia.org/wiki/Abu_Abd_Allah_ach-Chi%27i"
+        },
+        {
+          "label": "Heinz Halm, The Empire of the Mahdi (Brill)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Fatimides (Abu Abdallah al-Shi‘i)",
+          "Aghlabides"
+        ],
+        "commanders": [
+          "Abu Abdallah al-Shi‘i",
+          "Ziyadat Allah III"
+        ],
+        "outcome": "Victoire kutama : chute des Aghlabides, Kairouan prise en mars 909",
+        "forces": "Kutamas : plusieurs milliers de cavaliers et fantassins ; Aghlabides : armée en déroute",
+        "losses": "Pertes surtout aghlabides ; la dynastie fuit en Égypte"
+      },
+      "armies": [
+        {
+          "id": "kutamas",
+          "side": "Kutamas d’Abu Abdallah",
+          "from": "Petite Kabylie",
+          "faction": "arabes",
+          "path": [
+            [
+              5.2,
+              36.5
+            ],
+            [
+              7,
+              36.2
+            ],
+            [
+              9,
+              35.9
+            ],
+            [
+              10.05,
+              35.6
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée aghlabide",
+          "from": "Raqqada",
+          "faction": "arabes",
+          "path": [
+            [
+              10.1,
+              35.68
+            ],
+            [
+              10.05,
+              35.6
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Abd Allah al-Mahdi",
+          "role": "Proclamé premier calife fatimide en 909",
+          "faction": "arabes",
+          "archetype": "calife",
+          "person": "abd-allah-al-mahdi",
+          "quote": "(proclamé calife-imam à Raqqada en 909)",
+          "position": [
+            10.05,
+            35.6
+          ]
+        },
+        {
+          "name": "Abu Abdallah al-Shi‘i",
+          "role": "Chef de la prédication ismaélienne et de l’armée kutama",
+          "faction": "arabes",
+          "archetype": "general",
+          "person": "abu-abdallah-al-shii",
+          "quote": "(chef de la da‘wa ismaélienne au Maghreb)",
+          "position": [
+            9,
+            36.2
+          ]
+        }
+      ],
+      "territoryNote": "À partir de 909, l'empire fatimide couvre l'Ifriqiya (Tunisie, est de l'Algérie, Tripolitaine), autour de Kairouan, Raqqada et, bientôt, Mahdia ; l'armée repose sur les tribus kutamas du nord de l'Algérie actuelle. Chevaux de Troie des ralliements berbères : chefs kutamas et sanhaja tributaires. Rivaux nommés : les derniers Aghlabides (chassés), les Abbassides de Bagdad qui revendiquent l'autorité, les Byzantins maîtres de la côte sicilienne, les Omeyyades de Cordoue au Maghreb extrême, et les Berbères zénètes insoumis."
+    },
+    {
+      "id": "egypte-919",
+      "year": 919,
+      "title": "La seconde expédition contre l’Égypte échoue",
+      "type": "bataille",
+      "location": [
+        31.24,
+        30.04
+      ],
+      "zoom": 4.5,
+      "summary": "En 919, une nouvelle expédition fatimide prend Alexandrie puis marche sur Fustat (la future ville du Caire), mais doit reculer devant les renforts abbassides : l'Égypte reste hors de portée.",
+      "details": "Dès leur victoire en Ifriqiya, les Fatimides visent l'**Égypte**, la province la plus riche du monde musulman et la porte de la Syrie. Une première expédition, en 913-914, avait déjà échoué. En **919**, al-Mahdi renouvelle l'entreprise : une armée commandée par **Habasa ibn Yusuf** débarque et s'empare d'**Alexandrie**.\n\nMais l'Égypte est tenue au nom des **Abbassides** de Bagdad. Le gouverneur **Takîn al-Hazari** reçoit des renforts, notamment une **flotte** conduite par l'amiral abbasside **Thamal al-Dulafi**. Les Fatimides sont battus sur mer ; leur chef de la propagande à Alexandrie est capturé en 920. Attaqués à terre près de Fustat — le vieux camp militaire qui deviendra Le Caire —, les envahisseurs doivent se retirer, et Alexandrie est reprise.\n\nL'épisode montre la force et les limites de la jeune dynastie : la prédication ismaélienne séduit des partisans en Égypte, mais la supériorité navale et logistique abbasside l'emporte pour l'instant. Les Fatimides reviendront, mieux préparés, un demi-siècle plus tard.",
+      "consequences": [
+        "L'Égypte reste abbasside ; les Fatimides perdent Alexandrie après l'avoir prise.",
+        "La maîtrise de la mer par les Abbassides fait la différence, malgré des partisans ismaéliens locaux.",
+        "Alexandrie est pillée et ses quartiers mis à sac par les troupes de retour.",
+        "Le califat fatimide reporte ses ambitions égyptiennes à une prochaine génération."
+      ],
+      "territory": "egypte-919",
+      "sources": [
+        {
+          "label": "Wikipédia — Califat fatimide",
+          "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+        },
+        {
+          "label": "Wikipédia — Alexandrie",
+          "url": "https://fr.wikipedia.org/wiki/Alexandrie"
+        },
+        {
+          "label": "Heinz Halm, The Empire of the Mahdi (Brill)"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Fatimides",
+          "Abbassides (gouverneur d’Égypte)"
+        ],
+        "commanders": [
+          "Habasa ibn Yusuf",
+          "Takîn al-Hazari",
+          "Thamal al-Dulafi (amiral abbasside)"
+        ],
+        "outcome": "Victoire abbasside : Alexandrie reprise, l’armée fatimide reflue vers l’Ifriqiya",
+        "forces": "Fatimides : plusieurs milliers d’hommes et une flotte ; Abbassides : garnison égyptienne renforcée et flotte de Thamal",
+        "losses": "Flotte fatimide en grande partie détruite ; pertes humaines mal connues des deux côtés"
+      },
+      "armies": [
+        {
+          "id": "expedition-fatimide-919",
+          "side": "Expédition fatimide",
+          "from": "Mahdia",
+          "faction": "arabes",
+          "path": [
+            [
+              11.06,
+              35.5
+            ],
+            [
+              20,
+              32.5
+            ],
+            [
+              29.9,
+              31.2
+            ],
+            [
+              31,
+              30.2
+            ],
+            [
+              31.24,
+              30.04
+            ]
+          ],
+          "strength": 2
+        },
+        {
+          "side": "Armée abbasside d’Égypte",
+          "from": "Bagdad / Fustat",
+          "faction": "arabes",
+          "path": [
+            [
+              44.36,
+              33.31
+            ],
+            [
+              38,
+              32.5
+            ],
+            [
+              33,
+              31.2
+            ],
+            [
+              31.24,
+              30.04
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "territoryNote": "En 919, l'empire fatimide reste centré sur l'Ifriqiya (Tunisie, est de l'Algérie, Tripolitaine) et la Sicile ; l'expédition atteint Alexandrie mais recule devant Fustat sans conquérir l'Égypte, tenue par les Abbassides. Rivaux nommés : les Abbassides de Bagdad (Égypte, Syrie, Irak), les Byzantins (flotte et Sicile), les Omeyyades de Cordoue au Maghreb extrême."
+    },
+    {
+      "id": "mahdia-921",
+      "year": 921,
+      "title": "Fondation de Mahdia, capitale tournée vers la mer",
+      "type": "fondation",
+      "location": [
+        11.06,
+        35.5
+      ],
+      "zoom": 4,
+      "summary": "En 916, al-Mahdi commence sur la côte, à Mahdia, une capitale-forteresse à la pointe d'une presqu'île, avec un grand port de guerre : le califat se dote d'une base maritime.",
+      "details": "Al-Mahdi ne se sent pas en sécurité dans l'intérieur des terres, au milieu de Kairouan sunnite, où l'opposition malékite et les souvenirs aghlabides restent vivaces. En 916, il ordonne la construction d'une ville nouvelle sur un éperon rocheux de la côte orientale : **Mahdia**, du nom de son titre de « Mahdi ». Ses travaux s'achèvent vers **921**.\n\nLa ville est d'abord un **site défensif** : presque entourée par la mer, reliée à la terre par un étroit isthme barré d'une **muraille** et d'une porte monumentale, avec une rade bien protégée. Un **port de guerre**, des arsenaux, une mosquée et un palais en font la première grande capitale maritime d'un État musulman du bassin occidental. Elle est aussi taillée pour couper court à toute attaque terrestre, après la révolte d'un mystique manichéen, « **Abu Yazid** », qui a menacé le califat.\n\nEn tournant le dos à Kairouan, le pouvoir fatimide s'adosse à la mer et au monde marchand : Mahdia contrôle les routes maritimes vers la Sicile, l'Égypte et le Levant. Elle restera la capitale de l'Ifriqiya fatimide jusqu'au transfert du califat au Caire en 973, et restera ensuite le grand port de l'Ifriqiya.",
+      "consequences": [
+        "Le centre politique de l'Ifriqiya se déplace de Kairouan, cité sunnite des terres, vers Mahdia, forteresse portuaire.",
+        "Le califat se dote d'une base navale et militaire tournée vers la Méditerranée.",
+        "Mahdia devient une plaque tournante du commerce entre l'Ifriqiya, la Sicile et l'Orient.",
+        "Le pouvoir se protège des révoltes de l'intérieur en se retranchant derrière ses murailles."
+      ],
+      "territory": "mahdia-921",
+      "sources": [
+        {
+          "label": "Wikipédia — Mahdia",
+          "url": "https://fr.wikipedia.org/wiki/Mahdia"
+        },
+        {
+          "label": "Wikipédia — Califat fatimide",
+          "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Abd Allah al-Mahdi",
+          "role": "Calife fondateur, bâtisseur de Mahdia",
+          "faction": "arabes",
+          "archetype": "calife",
+          "person": "abd-allah-al-mahdi",
+          "quote": "(nommé d’après le « Mahdi »)",
+          "position": [
+            11.06,
+            35.5
+          ]
+        }
+      ],
+      "territoryNote": "Après 921, l'empire fatimide tient l'Ifriqiya (Tunisie, est de l'Algérie, Tripolitaine) depuis la nouvelle capitale-forteresse de Mahdia, tournée vers la mer ; Kairouan et Raqqada restent les grandes villes de l'intérieur. Raids et tribut sur les tribus sanhaja et kutamas, et sur les routes sahariennes vers Sijilmasa. Rivaux : les Abbassides de Bagdad, les Omeyyades de Cordoue qui avancent au Maghreb extrême, les Byzantins toujours en Sicile."
+    },
+    {
+      "id": "la-mecque-930",
+      "year": 930,
+      "title": "Les Qarmates saccagent La Mecque",
+      "type": "religion",
+      "location": [
+        39.83,
+        21.42
+      ],
+      "zoom": 4.5,
+      "summary": "En 930, les Qarmates, un courant ismaélien devenu hostile aux Fatimides, pillent La Mecque pendant le pèlerinage et emportent la Pierre noire, plongeant le monde musulman dans la stupeur.",
+      "details": "Les **Qarmates** sont un mouvement ismaélien radical né en Irak, installé depuis 899 dans l'oasis de **Bahreïn**, sur le golfe Persique. Ils reconnaissaient à l'origine l'imam fatimide, mais s'en sont détachés : ils attendent un « Mahdi » caché et vivent dans une communauté égalitaire et guerrière. Leurs bandes ravagent l'Irak, rançonnent les caravanes et les pèlerins.\n\nEn **930**, leur chef **Abu Tahir al-Jannabi** pousse jusqu'à **La Mecque** au moment du pèlerinage. La ville sainte est mise à sac, des milliers de fidèles sont tués dans la mosquée, et les Qarmates emportent la **Pierre noire**, la pierre sacrée de la Kaaba, qu'ils traînent jusqu'à Bahreïn. Pour les contemporains, c'est un sacrilège sans précédent : le cœur du monde musulman est profané, et La Mecque devient pour un temps inaccessible.\n\nLe califat fatimide est doublement mis en cause : ses adversaires lui reprochent de partager l'idéologie des Qarmates, tandis que les partisans des Fatimides rappellent que ceux-ci n'ont jamais cautionné ces pillages. La Pierre noire ne sera rendue qu'en 951, ce qui n'efface ni le crime ni la fracture.",
+      "consequences": [
+        "La Mecque, pillée, est privée de sa Pierre noire jusqu'en 951 : un choc pour tout l'islam.",
+        "Les routes du pèlerinage et du commerce de l'Arabie sont déstabilisées pendant des années.",
+        "Le califat fatimide, soupçonné par association, doit se distancier de l'ismaélisme qarmate pour rester crédible.",
+        "La crédibilité religieuse des Fatimides, garants du pèlerinage, est durablement entamée."
+      ],
+      "territory": "la-mecque-930",
+      "sources": [
+        {
+          "label": "Wikipédia — Qarmates",
+          "url": "https://fr.wikipedia.org/wiki/Qarmates"
+        },
+        {
+          "label": "Wikipédia — La Mecque",
+          "url": "https://fr.wikipedia.org/wiki/La_Mecque"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Abu Tahir al-Jannabi",
+          "role": "Chef qarmate, meneur du sac de La Mecque (930)",
+          "faction": "arabes",
+          "archetype": "chef-barbare",
+          "quote": "(chef qarmate, selon les chroniqueurs)",
+          "position": [
+            39.83,
+            21.42
+          ]
+        }
+      ],
+      "territoryNote": "Vers 930, l'empire fatimide couvre l'Ifriqiya (Tunisie, est de l'Algérie, Tripolitaine), la Sicile et des raids vers le Maghreb central ; l'Égypte échappe encore aux Fatimides. Les Qarmates, alliés devenus rivaux, dominent Bahreïn, l'Arabie orientale et le Hedjaz après le sac de La Mecque. Rivaux nommés : les Abbassides de Bagdad, les Qarmates, les Byzantins, les Omeyyades de Cordoue."
+    },
+    {
+      "id": "egypte-969",
+      "year": 969,
+      "title": "Jawhar conquiert l’Égypte et fonde Le Caire",
+      "type": "conquete",
+      "location": [
+        31.24,
+        30.04
+      ],
+      "zoom": 4.5,
+      "summary": "En 969, l'armée fatimide de Jawhar al-Siqilli conquiert l'Égypte pour al-Mu'izz, fonde une nouvelle ville, Le Caire, et y bâtit la mosquée al-Azhar.",
+      "details": "Depuis Mahdia, le quatrième calife **al-Mu'izz** prépare méthodiquement l'Égypte. L'occasion vient quand l'**Ikhchidide** Kafur meurt en 968 et que la province sombre dans la crise. **Jawhar al-Siqilli**, « le Sicilien », un général d'origine servile, part en 968 avec une armée et une flotte.\n\nEn **969**, il entre à **Fustat** presque sans combat : les notables négocient la reddition auprès du gouverneur, et les troupes ikhchidides se dispersent. Jawhar ne repart pas : il fonde au nord-est du vieux Fustat une **ville neuve**, **al-Qahira** (« la Victorieuse »), **Le Caire**, destinée au calife, à son palais et à son armée. En **970**, il y commence la grande mosquée **al-Azhar**, nommée d'après le surnom *az-Zahra* de **Fatima**, fille du Prophète, ancêtre revendiquée de la dynastie.\n\nDès l'an 970, Jawhar pousse vers la **Palestine** et la Syrie. L'Égypte devient le grenier du califat : le Nil, le blé, le lin et les ports de la mer Rouge en font la province la plus précieuse. Le nom du calife abbasside cesse d'être prononcé dans les mosquées égyptiennes.",
+      "consequences": [
+        "L'Égypte, la Palestine et la Syrie du Sud entrent dans l'orbite fatimide.",
+        "Le Caire est fondée comme capitale-forteresse, et al-Azhar comme centre du savoir ismaélien.",
+        "Les revenus du Nil donnent au califat les moyens de ses ambitions méditerranéennes.",
+        "Fustat, l'ancienne capitale musulmane, perd son rôle politique au profit de la ville neuve."
+      ],
+      "territory": "egypte-969",
+      "sources": [
+        {
+          "label": "Wikipédia — Califat fatimide",
+          "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+        },
+        {
+          "label": "Wikipédia — Jawhar al-Siqilli",
+          "url": "https://fr.wikipedia.org/wiki/Jawhar_al-Siqilli"
+        },
+        {
+          "label": "Wikipédia — Mosquée Al-Azhar",
+          "url": "https://fr.wikipedia.org/wiki/Mosqu%C3%A9e_Al-Azhar"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Fatimides (Jawhar al-Siqilli)",
+          "Ikhchidides"
+        ],
+        "commanders": [
+          "Jawhar al-Siqilli",
+          "Abu al-Futuh (gouverneur ikhchidide)"
+        ],
+        "outcome": "Victoire fatimide : l’Égypte passe sans grande bataille aux Fatimides",
+        "forces": "Fatimides : armée et flotte de plusieurs dizaines de milliers d’hommes selon les sources ; Ikhchidides : garnison démoralisée",
+        "losses": "Pertes légères : reddition négociée de Fustat plutôt que combat d’anéantissement"
+      },
+      "armies": [
+        {
+          "id": "grande-armee-fatimide",
+          "side": "Grande armée fatimide",
+          "from": "Mahdia",
+          "faction": "arabes",
+          "path": [
+            [
+              11.06,
+              35.5
+            ],
+            [
+              16,
+              32
+            ],
+            [
+              24,
+              31
+            ],
+            [
+              29.9,
+              31.2
+            ],
+            [
+              31.24,
+              30.04
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Garnison ikhchidide",
+          "from": "Fustat",
+          "faction": "arabes",
+          "path": [
+            [
+              31.3,
+              30.2
+            ],
+            [
+              31.24,
+              30.04
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Jawhar al-Siqilli",
+          "role": "Général vainqueur de l’Égypte, fondateur du Caire",
+          "faction": "arabes",
+          "archetype": "general",
+          "person": "jawhar-al-siqilli",
+          "quote": "(bâtisseur du Caire et d’al-Azhar)",
+          "position": [
+            31.24,
+            30.04
+          ]
+        }
+      ],
+      "territoryNote": "Après 969, l'empire fatimide ajoute l'Égypte (Delta du Nil, Haute-Égypte) et fonde Le Caire ; il contrôle l'Ifriqiya (Tunisie, est de l'Algérie, Tripolitaine), la Sicile et la Cyrénaïque, et lorgne la Palestine. Tributaires : tribus kutamas et sanhaja. Rivaux nommés : les Abbassides de Bagdad, les Byzantins, les Omeyyades de Cordoue."
+    },
+    {
+      "id": "antioche-971",
+      "year": 971,
+      "title": "Antioche : l’armée fatimide recule devant Byzance",
+      "type": "bataille",
+      "location": [
+        36.16,
+        36.2
+      ],
+      "zoom": 4.5,
+      "summary": "En 971, l'armée fatimide assiège Antioche, mais l'empereur byzantin Jean Tzimiskès intervient et repousse les assaillants : la Syrie du Nord échappe aux Fatimides.",
+      "details": "Après la conquête de l'Égypte, Jawhar avance en Syrie et assiège **Damas** puis les places du nord. Mais l'**Empire byzantin** est alors en pleine reconquête : l'empereur **Jean Tzimiskès** vient de reprendre **Antioche** (969) et de pousser jusqu'en Palestine. Les deux puissances se disputent la **Syrie du Nord**.\n\nEn **971**, les troupes fatimides, engagées devant Antioche, subissent une contre-offensive. L'historien et voyageur peut observer que les Fatimides, maîtres de la mer et de l'Égypte, sont moins à l'aise dans cette guerre de forteresses. La défaite les contraint à évacuer une partie de la Syrie.\n\nL'affaire se prolonge : en **974**, sous le calife **al-Aziz**, une nouvelle offensive fatimide est arrêtée près d'Antioche. Antioche et une bande de la côte syrienne restent byzantines pour deux siècles. C'est la première grande limite occidentale du califat : sa puissance repose sur l'Égypte, mais l'Anatolie et le nord de la Syrie appartiennent à Constantinople.",
+      "consequences": [
+        "Antioche et le nord de la Syrie restent sous autorité byzantine, hors de l'empire fatimide.",
+        "Damas est disputée : les Fatimides s'y installent durablement à la fin du Xe siècle.",
+        "La frontière byzantino-fatimide se fixe pour longtemps autour de l'Oronte.",
+        "Le califat comprend qu'il ne pourra pas pousser sa conquête au-delà de la Syrie du Sud."
+      ],
+      "territory": "antioche-971",
+      "sources": [
+        {
+          "label": "Wikipédia — Califat fatimide",
+          "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+        },
+        {
+          "label": "Wikipédia — Jean Ier Tzimiskès",
+          "url": "https://fr.wikipedia.org/wiki/Jean_Ier_Tzimisk%C3%A8s"
+        },
+        {
+          "label": "Wikipédia — Antioche",
+          "url": "https://fr.wikipedia.org/wiki/Antioche"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Fatimides",
+          "Empire byzantin"
+        ],
+        "commanders": [
+          "commandants fatimides de Jawhar",
+          "Jean Ier Tzimiskès"
+        ],
+        "outcome": "Victoire byzantine : les Fatimides échouent devant Antioche et refluent",
+        "forces": "Fatimides : plusieurs milliers d’hommes ; Byzantins : armée impériale revenue de Palestine",
+        "losses": "Pertes fatimides sensibles ; Byzantins maîtres de la place"
+      },
+      "armies": [
+        {
+          "id": "grande-armee-fatimide",
+          "side": "Grande armée fatimide",
+          "from": "Le Caire",
+          "faction": "arabes",
+          "path": [
+            [
+              31.24,
+              30.04
+            ],
+            [
+              34,
+              32
+            ],
+            [
+              35.5,
+              33.5
+            ],
+            [
+              36.16,
+              36.2
+            ]
+          ],
+          "strength": 2
+        },
+        {
+          "id": "armee-byzantine",
+          "side": "Armée byzantine",
+          "from": "Constantinople",
+          "faction": "byzantins",
+          "path": [
+            [
+              28.98,
+              41
+            ],
+            [
+              30.5,
+              39.5
+            ],
+            [
+              34,
+              37.5
+            ],
+            [
+              36.16,
+              36.2
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "territoryNote": "Vers 971, l'empire fatimide s'étend de l'Ifriqiya (Tunisie, est de l'Algérie, Tripolitaine) à l'Égypte (Delta du Nil, Haute-Égypte) et à la Palestine ; il pousse vers la Syrie du Sud et le Liban côtier autour de Damas, et tente d'enlever Antioche aux Byzantins. Rivaux nommés : l'Empire byzantin de Jean Tzimiskès (nord de la Syrie, Anatolie, côtes de la Sicile byzantine), les Qarmates, les Abbassides de Bagdad."
+    },
+    {
+      "id": "cairo-973",
+      "year": 973,
+      "title": "Al-Mu’izz transfère le califat au Caire",
+      "type": "fondation",
+      "location": [
+        31.24,
+        30.04
+      ],
+      "zoom": 4.5,
+      "summary": "En 973, al-Mu'izz quitte Mahdia pour s'installer au Caire : le centre de l'empire fatimide passe définitivement de l'Ifriqiya à l'Égypte.",
+      "details": "Le Caire n'est encore qu'un chantier fortifié quand **Jawhar** y installe l'armée et le palais. En **973**, le calife **al-Mu'izz li-Din Allah** quitte **Mahdia** avec sa cour, son trésor et les dépouilles de ses ancêtres, traverse la Libye et fait son entrée solennelle dans sa nouvelle capitale. Le déménagement du pouvoir est un événement fondateur : le cœur de la dynastie bascule du Maghreb vers l'Égypte.\n\nC'est aussi la fin du califat maghrébin. **Al-Mu'izz** confie l'Ifriqiya à une dynastie berbère vassale, les **Zirides** (sanhaja), qui régneront en son nom depuis Kairouan. Le Caire, à côté de Fustat, devient une ville de palais, de mosquées et de marchés. Sous **al-Aziz** (975-996), qui épouse sur la côte un vizir d'origine juive, la cour brille et l'empire atteint sa plus grande étendue.\n\nLe plus grand édifice de cette période est la mosquée **al-Azhar**, achevée en 972 et vouée d'abord à la prédication ismaélienne. L'Égypte entre pour deux siècles dans une ère chiite qui marquera durablement son architecture et son administration.",
+      "consequences": [
+        "L'Égypte devient le centre politique du califat ; le Caire, sa capitale.",
+        "L'Ifriqiya est confiée aux Zirides, vassaux berbères, qui la gouvernent au nom des Fatimides.",
+        "Al-Azhar, achevée en 972, devient le foyer du savoir ismaélien du Caire.",
+        "Le califat tourne désormais son attention vers la Syrie, le Hedjaz et la Méditerranée orientale."
+      ],
+      "territory": "cairo-973",
+      "sources": [
+        {
+          "label": "Wikipédia — Califat fatimide",
+          "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+        },
+        {
+          "label": "Wikipédia — Al-Muizz li-Din Allah",
+          "url": "https://fr.wikipedia.org/wiki/Al-Muizz_li-Din_Allah"
+        },
+        {
+          "label": "Wikipédia — Zirides",
+          "url": "https://fr.wikipedia.org/wiki/Zirides"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Al-Mu’izz li-Din Allah",
+          "role": "Quatrième calife fatimide, installé au Caire en 973",
+          "faction": "arabes",
+          "archetype": "calife",
+          "person": "al-muizz",
+          "quote": "(quatrième calife fatimide, maître de l’Égypte)",
+          "position": [
+            31.24,
+            30.04
+          ]
+        },
+        {
+          "name": "Jawhar al-Siqilli",
+          "role": "Fondateur du Caire et de al-Azhar",
+          "faction": "arabes",
+          "archetype": "general",
+          "person": "jawhar-al-siqilli",
+          "quote": "(superviseur de la construction d’al-Azhar)",
+          "position": [
+            31.24,
+            30.04
+          ]
+        }
+      ],
+      "territoryNote": "À partir de 973, l'empire fatimide s'étend de l'Ifriqiya (Tunisie, est de l'Algérie, Tripolitaine) à l'Égypte (Delta du Nil, Haute-Égypte), à la Palestine, au Liban côtier et à la Syrie du Sud autour de Damas, avec le Hedjaz (La Mecque, Médine) sous influence ; l'Ifriqiya et la Sicile sont gouvernées par des vassaux zirides et kalbites. Rivaux nommés : les Byzantins, les Qarmates, les Abbassides de Bagdad."
+    },
+    {
+      "id": "oronte-994",
+      "year": 994,
+      "title": "L’Oronte : Basile II écrase l’armée fatimide",
+      "type": "bataille",
+      "location": [
+        36.4,
+        36.1
+      ],
+      "zoom": 4.5,
+      "summary": "En 994, près de l'Oronte, en Syrie du Nord, l'empereur byzantin Basile II met en déroute l'armée fatimide du général Manjutakin : la frontière reste byzantine.",
+      "details": "Sous le calife **al-Aziz** (975-996), les Fatimides tiennent **Damas** et harcèlent les positions byzantines de Syrie du Nord. Leur général, l'Affranchi turc **Manjutakin**, mène depuis des années une guerre d'usure ; en 993-994, il remporte des succès et menace **Antioche**.\n\nL'empereur **Basile II** réagit en personne : il accourt avec ses armées d'Anatolie. En **septembre 994**, sur les rives de l'**Oronte**, près d'Apamée et d'Antioche, il surprend et taille en pièces les troupes fatimides. Manjutakin, encerclé, se replie en désordre sur Damas. C'est une défaite lourde pour le prestige militaire du califat.\n\nLa bataille fige la frontière septentrionale : la **Syrie du Nord** et **Antioche** restent byzantines, et la puissance fatimide se limite à la Syrie du Sud autour de Damas et à la Palestine. Basile II profite de sa victoire pour renforcer ses positions et pousser plus loin en Syrie les années suivantes. En 996, al-Aziz meurt en préparant une nouvelle campagne. Les revers contre Byzance, conjugués aux difficultés intérieures, préparent le tournant du règne du jeune al-Hakim, qui hérite d'une guerre inachevée.",
+      "consequences": [
+        "Antioche et la Syrie du Nord restent byzantines ; la frontière se fixe sur l'Oronte.",
+        "Damas, disputée, reste la principale base fatimide en Syrie.",
+        "Le prestige militaire du califat sort très affaibli de la défaite.",
+        "L'échec de la politique syrienne pèse sur le règne du jeune al-Hakim, qui succède à al-Aziz en 996."
+      ],
+      "territory": "oronte-994",
+      "sources": [
+        {
+          "label": "Wikipédia — Basile II",
+          "url": "https://fr.wikipedia.org/wiki/Basile_II"
+        },
+        {
+          "label": "Wikipédia — Califat fatimide",
+          "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+        },
+        {
+          "label": "Wikipédia — Antioche",
+          "url": "https://fr.wikipedia.org/wiki/Antioche"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Fatimides (Manjutakin)",
+          "Empire byzantin (Basile II)"
+        ],
+        "commanders": [
+          "Manjutakin",
+          "Basile II"
+        ],
+        "outcome": "Victoire byzantine écrasante : l’armée fatimide de Syrie est détruite",
+        "forces": "Fatimides : plusieurs milliers d’hommes ; Byzantins : armée impériale d’Anatolie",
+        "losses": "Pertes fatimides très lourdes ; Byzantins maîtres du terrain"
+      },
+      "armies": [
+        {
+          "id": "grande-armee-fatimide",
+          "side": "Armée fatimide de Syrie",
+          "from": "Damas",
+          "faction": "arabes",
+          "path": [
+            [
+              36.16,
+              36.2
+            ],
+            [
+              36.3,
+              36.15
+            ],
+            [
+              36.4,
+              36.1
+            ]
+          ],
+          "strength": 2
+        },
+        {
+          "id": "armee-byzantine",
+          "side": "Armée byzantine",
+          "from": "Antioche",
+          "faction": "byzantins",
+          "path": [
+            [
+              36.16,
+              36.2
+            ],
+            [
+              36.4,
+              36.1
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Al-Aziz Billah",
+          "role": "Calife fatimide (975-996), maître de la Syrie du Sud",
+          "faction": "arabes",
+          "archetype": "calife",
+          "person": "al-aziz",
+          "quote": "(calife de l’apogée syrienne)",
+          "position": [
+            31.24,
+            30.04
+          ]
+        }
+      ],
+      "territoryNote": "Vers 994, l'empire fatimide couvre l'Ifriqiya (Tunisie, est de l'Algérie, Tripolitaine), l'Égypte (Delta du Nil, Haute-Égypte), la Palestine, le Liban et la Syrie du Sud autour de Damas ; il perd l'avantage face à Byzance sur l'Oronte. Tributaires : les Zirides d'Ifriqiya, les Kalbites de Sicile, le Hedjaz. Rivaux nommés : l'Empire byzantin de Basile II (Antioche, nord de la Syrie), les Abbassides de Bagdad."
+    },
+    {
+      "id": "hakim-1009",
+      "year": 1009,
+      "title": "Al-Hakim fait détruire le Saint-Sépulcre",
+      "type": "religion",
+      "location": [
+        35.23,
+        31.78
+      ],
+      "zoom": 4.5,
+      "summary": "En 1009, le calife al-Hakim ordonne la destruction de l'église du Saint-Sépulcre à Jérusalem ; cet acte, parmi d'autres mesures religieuses, frappe la chrétienté.",
+      "details": "Fils d'al-Aziz, **al-Hakim** devient calife à onze ans, en 996, et règne jusqu'à sa disparition mystérieuse en **1021**. Tour à tour réformateur, persécuteur et excentrique, il prend contre les chrétiens et les juifs une série de mesures : port de signes distinctifs, confiscations, interdiction du vin. Le point culminant survient en **1009** : il ordonne la destruction de l'église du **Saint-Sépulcre** à **Jérusalem**, sur le lieu vénéré de la mort et de la résurrection du Christ.\n\nPour la chrétienté latine, l'événement devient un grief durable. Près d'un siècle plus tard, il servira de prétexte au prêche de la **première croisade**, même si des sources notent que les chroniqueurs d'Occident exagèrent l'ampleur du sacrilège. Les mesures d'al-Hakim ne visent d'ailleurs pas seulement les chrétiens : elles touchent aussi les musulmans, les familles sunnites et les fonctionnaires.\n\nSon règne est aussi celui du savoir : il fonde en **1004-1005** la **Dar al-Hikma** (Maison de la sagesse), vaste bibliothèque et centre d'enseignement du Caire, et soutient l'astronome **Ibn Yunus**. À sa mort, en 1021, sa disparition nourrit la croyance des **druzes**, qui le tiennent pour une figure divine.",
+      "consequences": [
+        "Le Saint-Sépulcre est détruit ; la chrétienté en garde un grief durable.",
+        "La mémoire de la destruction servira de prétexte à la première croisade près d'un siècle plus tard.",
+        "Les minorités chrétiennes et juives d'Égypte subissent pressions et conversions forcées.",
+        "La Dar al-Hikma fait du Caire un grand foyer scientifique de l'islam."
+      ],
+      "territory": "hakim-1009",
+      "sources": [
+        {
+          "label": "Wikipédia — Al-Hakim bi-Amr Allah",
+          "url": "https://fr.wikipedia.org/wiki/Al-Hakim_bi-Amr_Allah"
+        },
+        {
+          "label": "Wikipédia — Église du Saint-Sépulcre (Jérusalem)",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89glise_du_Saint-S%C3%A9pulcre_(J%C3%A9rusalem)"
+        },
+        {
+          "label": "Wikipédia — Dar al-Hikma",
+          "url": "https://fr.wikipedia.org/wiki/Dar_al-Hikma"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Al-Hakim bi-Amr Allah",
+          "role": "Sixième calife fatimide (996-1021)",
+          "faction": "arabes",
+          "archetype": "calife",
+          "person": "al-hakim",
+          "quote": "(calife de la destruction du Saint-Sépulcre en 1009)",
+          "position": [
+            31.24,
+            30.04
+          ]
+        },
+        {
+          "name": "Ibn al-Haytham",
+          "role": "Savant de l’optique au Caire",
+          "faction": "arabes",
+          "archetype": "sage",
+          "person": "ibn-al-haytham",
+          "quote": "(selon la tradition, il feignit la folie pour échapper à al-Hakim)",
+          "position": [
+            31.24,
+            30.04
+          ]
+        },
+        {
+          "name": "Isa ibn Nasturus",
+          "role": "Vizir chrétien copte sous al-Aziz et au début d’al-Hakim",
+          "faction": "arabes",
+          "archetype": "sage",
+          "person": "isa-ibn-nasturus",
+          "quote": "(vizir copte, exécuté en 997 selon Ibn al-Sayrafi)",
+          "position": [
+            31.24,
+            30.04
+          ]
+        }
+      ],
+      "territoryNote": "Vers 1009, l'empire fatimide est à son étendue maximale autour de l'Égypte : Delta du Nil, Haute-Égypte, Palestine, Liban, Syrie du Sud autour de Damas, Hedjaz (La Mecque, Médine), Ifriqiya (Tunisie, est de l'Algérie, Tripolitaine), Cyrénaïque et Sicile. Vassaux : les Zirides d'Ifriqiya, les Kalbites de Sicile, tribus sanhaja. Rivaux nommés : l'Empire byzantin, les Abbassides de Bagdad, les Omeyyades de Cordoue et les Zénètes au Maghreb."
+    },
+    {
+      "id": "sicile-1040",
+      "year": 1040,
+      "title": "La Sicile perdue : Maniakès reconquiert l’île",
+      "type": "bataille",
+      "location": [
+        15.29,
+        37.06
+      ],
+      "zoom": 4.5,
+      "summary": "En 1040, le général byzantin Georges Maniakès bat les troupes fatimides et zirides de Sicile : l'île change de mains avant de passer aux Normands.",
+      "details": "La **Sicile** est musulmane depuis le IXe siècle et gouvernée par les **Kalbites**, une dynastie vassale des Fatimides. Mais elle est minée par les rivalités entre factions arabes, berbères et andalouses. L'**Empire byzantin** en profite : l'empereur Michel IV confie au général d'origine viking **Georges Maniakès** la reconquête de l'île.\n\nEn **1038-1040**, Maniakès débarque en force, remporte contre les Fatimides et les Zirides une grande bataille après des années de désordre, et reprend une partie de l'île. Mais la campagne tourne court : rappelé à Constantinople, il se révolte contre le pouvoir impérial et les Byzantins évacuent la Sicile intérieure.\n\nLe vide profite à de nouveaux venus : à partir de **1061**, les aventuriers normands de **Robert Guiscard** et **Roger** s'emparent de l'île. Quand la dernière place musulmane tombe, en 1091, la Sicile devient un État latin, qui gardera longtemps une administration et des populations arabes. Pour les Fatimides, la perte de l'île est un coup dur : ils n'ont plus de base navale au centre de la Méditerranée.",
+      "consequences": [
+        "La Sicile fatimide puis kalbite est attaquée et largement reconquise par les Byzantins en 1040-1041.",
+        "L'île revient partiellement à l'islam avant d'être conquise par les Normands à partir de 1061.",
+        "Le califat fatimide perd une grande base navale au centre de la Méditerranée.",
+        "Le commerce maritime passe désormais par des intermédiaires, souvent chrétiens."
+      ],
+      "territory": "sicile-1040",
+      "sources": [
+        {
+          "label": "Wikipédia — Georges Maniakès",
+          "url": "https://fr.wikipedia.org/wiki/Georges_Maniak%C3%A8s"
+        },
+        {
+          "label": "Wikipédia — Émirat de Sicile",
+          "url": "https://fr.wikipedia.org/wiki/%C3%89mirat_de_Sicile"
+        },
+        {
+          "label": "Wikipédia — Califat fatimide",
+          "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Fatimides et Zirides de Sicile",
+          "Empire byzantin"
+        ],
+        "commanders": [
+          "commandants kalbites",
+          "Georges Maniakès"
+        ],
+        "outcome": "Victoire byzantine : l’île est en grande partie reconquise, avant la retraite byzantine",
+        "forces": "Fatimides/Zirides : troupes kalbites de l’île ; Byzantins : corps expéditionnaire de Maniakès",
+        "losses": "Pertes musulmanes lourdes dans les villes prises ; campagnes destructrices"
+      },
+      "armies": [
+        {
+          "id": "armee-sicile-fatimide",
+          "side": "Troupes fatimides et zirides de Sicile",
+          "from": "Palerme",
+          "faction": "arabes",
+          "path": [
+            [
+              13.35,
+              38.12
+            ],
+            [
+              14.3,
+              37.8
+            ],
+            [
+              15.29,
+              37.06
+            ]
+          ],
+          "strength": 2
+        },
+        {
+          "id": "armee-byzantine-sicile",
+          "side": "Corps de Maniakès",
+          "from": "Messine",
+          "faction": "byzantins",
+          "path": [
+            [
+              15.55,
+              38.19
+            ],
+            [
+              15.4,
+              37.6
+            ],
+            [
+              15.29,
+              37.06
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "territoryNote": "Vers 1040, l'empire fatimide garde l'Égypte (Delta du Nil, Haute-Égypte), la Palestine, le Liban, la Syrie du Sud et le Hedjaz ; il perd la Sicile, reprise par les Byzantins de Maniakès puis conquise par les Normands à partir de 1061. Tributaires en théorie : les Zirides d'Ifriqiya (Tunisie, est de l'Algérie, Tripolitaine), les Kalbites. Rivaux nommés : l'Empire byzantin, les Normands d'Italie, les Abbassides de Bagdad."
+    },
+    {
+      "id": "zirides-1048",
+      "year": 1048,
+      "title": "Les Zirides rompent avec les Fatimides",
+      "type": "politique",
+      "location": [
+        10.1,
+        35.68
+      ],
+      "zoom": 4.5,
+      "summary": "En 1048, le souverain ziride al-Mu'izz ibn Badis abandonne le chiisme fatimide et reconnaît le calife abbasside sunnite de Bagdad : l'Ifriqiya se détache de l'empire.",
+      "details": "Depuis 973, l'Ifriqiya est confiée à la dynastie **ziride**, issue des Berbères sanhaja, qui gouverne à Kairouan au nom des califes fatimides du Caire. Mais les relations se dégradent : l'éloignement, les querelles de prestige et l'influence des juristes **malékites**, majoritaires en Ifriqiya, pèsent de plus en plus.\n\nEn **1048**, le souverain ziride **al-Mu'izz ibn Badis** franchit le pas : il fait lire la prière au nom du calife **abbasside** de Bagdad, **rejette le chiisme ismaélien** et prend le titre sunnite d'*amir al-Muslimin*. C'est une rupture religieuse autant que politique. La prédication fatimide est poursuivie, les missionnaires ismaéliens sont pourchassés.\n\nLa réponse d'al-Mustansir est redoutable. Le califat du Caire retient les garnisons et coupe les subsides, puis lâche sur l'Ifriqiya les tribus nomades **arabes** des **Banu Hilal** et des Banu Sulaym, détournées d'Égypte vers l'ouest. Le pays, prospère et urbain, va être ravagé. La rupture de 1048 scelle la perte de l'Afrique du Nord pour les Fatimides et précipite la ruine des Zirides eux-mêmes.",
+      "consequences": [
+        "L'Ifriqiya échappe religieusement et politiquement au califat fatimide.",
+        "La prière passe au nom du calife abbasside de Bagdad, rival des Fatimides.",
+        "Le califat du Caire lâche les tribus arabes Banu Hilal sur l'Ifriqiya en représailles.",
+        "L'unité du Maghreb central se fragmente entre Zirides, Hammadides et chefs arabes."
+      ],
+      "territory": "zirides-1048",
+      "sources": [
+        {
+          "label": "Wikipédia — Zirides",
+          "url": "https://fr.wikipedia.org/wiki/Zirides"
+        },
+        {
+          "label": "Wikipédia — Al-Muizz ben Badis",
+          "url": "https://fr.wikipedia.org/wiki/Al-Muizz_ben_Badis"
+        },
+        {
+          "label": "Wikipédia — Califat fatimide",
+          "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Al-Mu‘izz ibn Badis",
+          "role": "Souverain ziride qui rallie Bagdad en 1048",
+          "faction": "arabes",
+          "archetype": "sultan",
+          "quote": "(rallié au calife abbasside de Bagdad en 1048)",
+          "position": [
+            10.1,
+            35.68
+          ]
+        },
+        {
+          "name": "Nasir-i Khusraw",
+          "role": "Voyageur et poète perse, témoin du Caire fatimide",
+          "faction": "arabes",
+          "archetype": "sage",
+          "person": "nasir-i-khusraw",
+          "quote": "(témoin du faste du Caire vers 1047)",
+          "position": [
+            31.24,
+            30.04
+          ]
+        }
+      ],
+      "territoryNote": "Vers 1048, l'empire fatimide conserve l'Égypte (Delta du Nil, Haute-Égypte), la Palestine, le Liban, la Syrie du Sud et le Hedjaz ; l'Ifriqiya (Tunisie, est de l'Algérie, Tripolitaine) sort de son obédience : les Zirides passent au camp abbasside de Bagdad. Rivaux nommés : les Zirides d'Ifriqiya, les Abbassides de Bagdad, les Byzantins, les Normands en Sicile."
+    },
+    {
+      "id": "banu-hilal-1052",
+      "year": 1052,
+      "title": "Les Banu Hilal écrasent les Zirides",
+      "type": "bataille",
+      "location": [
+        9.8,
+        35.6
+      ],
+      "zoom": 4.5,
+      "summary": "En 1052, près de Kairouan, les tribus arabes Banu Hilal, lâchées par les Fatimides, écrasent l'armée ziride : l'Ifriqiya sombre dans le chaos et l'arabisation.",
+      "details": "Chassées d'Égypte par les Fatimides, les tribus **arabes** des **Banu Hilal** et des Banu Sulaym nomadisent vers l'ouest en quête de pâturages et de butin. Le pouvoir ziride, affaibli par la rupture de 1048, tente de les contenir. En **1052**, près de **Haydaran**, la bataille tourne au désastre.\n\nLa cavalerie arabe, mobile et nombreuse, brise l'armée ziride du sultan **al-Mu'izz ibn Badis**, qui abandonne **Kairouan** et se replie sur la côte. Les nomades se répandent dans la campagne, rançonnent les villes, coupent les routes et s'installent durablement. La riche Ifriqiya, grenier et jardin de l'Afrique du Nord, est ruinée.\n\nL'événement est lourd de conséquences. Sur le plan politique, il signe l'effacement des Zirides et divise l'Ifriqiya entre chefs arabes, Hammadides et villes côtières. Sur le plan linguistique et culturel, il marque le début de la grande **arabisation** du Maghreb : les tribus hilaliennes y apportent durablement la langue et les coutumes arabes, comme le raconte le cycle épique de la **geste hilalienne** (le *Taghribat Bani Hilal*).",
+      "consequences": [
+        "L'Ifriqiya, ravagée, se fragmente et échappe à toute autorité unifiée.",
+        "L'économie agricole et urbaine du pays s'effondre pour des générations.",
+        "Les Zirides s'effacent, refoulés sur la côte.",
+        "Commence l'arabisation linguistique et culturelle durable du Maghreb."
+      ],
+      "territory": "banu-hilal-1052",
+      "sources": [
+        {
+          "label": "Wikipédia — Banu Hilal",
+          "url": "https://fr.wikipedia.org/wiki/Banu_Hilal"
+        },
+        {
+          "label": "Wikipédia — Zirides",
+          "url": "https://fr.wikipedia.org/wiki/Zirides"
+        },
+        {
+          "label": "Wikipédia — Hilaliens",
+          "url": "https://fr.wikipedia.org/wiki/Hilaliens"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Banu Hilal",
+          "Zirides"
+        ],
+        "commanders": [
+          "chefs hilaliens",
+          "al-Mu‘izz ibn Badis (sultan ziride)"
+        ],
+        "outcome": "Victoire des Banu Hilal : Kairouan est abandonnée, l’Ifriqiya est ravagée",
+        "forces": "Banu Hilal : plusieurs dizaines de milliers de cavaliers nomades ; Zirides : armée réduite et démoralisée",
+        "losses": "Armée ziride écrasée ; populations et campagnes de l’Ifriqiya ravagées"
+      },
+      "armies": [
+        {
+          "id": "banu-hilal",
+          "side": "Banu Hilal",
+          "from": "Haute-Égypte",
+          "faction": "arabes",
+          "path": [
+            [
+              32,
+              26
+            ],
+            [
+              25,
+              29
+            ],
+            [
+              15,
+              33
+            ],
+            [
+              9.8,
+              35.6
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée ziride",
+          "from": "Kairouan",
+          "faction": "arabes",
+          "path": [
+            [
+              10.1,
+              35.68
+            ],
+            [
+              9.8,
+              35.6
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "territoryNote": "Vers 1052, l'empire fatimide se réduit à l'Égypte (Delta du Nil, Haute-Égypte), à la Palestine, au Liban, à la Syrie du Sud et au Hedjaz ; l'Ifriqiya (Tunisie, est de l'Algérie, Tripolitaine) est ravagée par les Banu Hilal arabes et se fragmente entre Zirides, Hammadides et chefs arabes. Rivaux nommés : les Zirides et Hammadides, les Abbassides de Bagdad, les Normands de Sicile."
+    },
+    {
+      "id": "fitna-1067",
+      "year": 1067,
+      "title": "La grande crise : famine et guerre des factions",
+      "type": "crise",
+      "location": [
+        31.24,
+        30.04
+      ],
+      "zoom": 4.5,
+      "summary": "Vers 1065-1069, une famine terrible et la guerre entre soldats turcs et soudanais ravagent Le Caire ; les quartiers du palais sont pillés et l'État s'effondre.",
+      "details": "Le long règne d'**al-Mustansir** (1036-1094) sombre dans le désastre. Le Nil échoue à monter : une **famine** atroce ravage l'Égypte de **1065 à 1072** ; on rapporte que des habitants du Caire se vendaient ou mouraient de faim. L'État ne paie plus ses troupes, composées de **soldats turcs** (ghulam) et de **Noirs soudanais**, dont les factions se haïssent.\n\nDe **1062 à 1067**, la lutte dégénère en guerre ouverte dans les rues du Caire. Les Turcs finissent par prendre le dessus ; les palais fatimides sont **pillés**, la bibliothèque dispersée, les trésors d'or, de cristal de roche et d'ivoire perdus — beaucoup finiront dans des églises d'Europe. Les vizirs se succèdent et tombent.\n\nLa crise est aussi territoriale. Après la perte de l'Ifriqiya et de la Sicile, la **Syrie** est ravagée par l'invasion **seldjoukide**, qui prend **Damas** en 1075 pour le compte du calife abbasside. Un instant, le calife abbasside de Bagdad ose même réclamer la soumission de l'Égypte. L'empire fatimide, naguère si vaste, menace de disparaître. Le redressement viendra d'un homme, le vizir arménien Badr al-Jamali.",
+      "consequences": [
+        "Une famine catastrophique dépeuple et ruine l'Égypte pendant près de dix ans.",
+        "Les trésors du palais fatimide sont pillés et dispersés, notamment vers l'Europe.",
+        "La Syrie passe aux mains des Seldjoukides, qui s'installent à Damas.",
+        "L'autorité du califat s'effondre, au point que Bagdad réclame son allégeance."
+      ],
+      "territory": "fitna-1067",
+      "sources": [
+        {
+          "label": "Wikipédia — Al-Mustansir Billah",
+          "url": "https://fr.wikipedia.org/wiki/Al-Mustansir_Billah"
+        },
+        {
+          "label": "Wikipédia — Califat fatimide",
+          "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+        },
+        {
+          "label": "Wikipédia — Crise fatimide",
+          "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Al-Mustansir Billah",
+          "role": "Huitième calife fatimide (1036-1094)",
+          "faction": "arabes",
+          "archetype": "calife",
+          "person": "al-mustansir",
+          "quote": "(règne de près de soixante ans, 1036-1094)",
+          "position": [
+            31.24,
+            30.04
+          ]
+        }
+      ],
+      "territoryNote": "Vers 1067, l'empire fatimide est réduit à l'Égypte (Delta du Nil, Haute-Égypte), à la Palestine et au Hedjaz ; la Syrie du Sud et le Liban sont disputés ou perdus entre Turcs seldjoukides et chefs locaux, et l'Ifriqiya (Tunisie, est de l'Algérie, Tripolitaine) a échappé aux Fatimides. Rivaux nommés : les Seldjoukides (Syrie, Bagdad), les Abbassides, les Normands de Sicile, les Zirides."
+    },
+    {
+      "id": "badr-1073",
+      "year": 1073,
+      "title": "Badr al-Jamali restaure l’État fatimide",
+      "type": "politique",
+      "location": [
+        31.24,
+        30.04
+      ],
+      "zoom": 4.5,
+      "summary": "En 1073-1074, Badr al-Jamali, gouverneur d'Acre, prend le pouvoir au Caire : ce vizir arménien restaure l'armée et le califat, désormais dominé par ses vizirs.",
+      "details": "Devant le chaos, le calife **al-Mustansir** fait appel au gouverneur d'**Acre**, **Badr al-Jamali**, un militaire **arménien** de confession chrétienne, entré au service des Fatimides. En janvier **1074**, Badr entre au Caire avec ses troupes arméniennes et prend les pleins pouvoirs, d'abord comme vizir et « émir des armées ».\n\nIl rétablit l'ordre avec brutalité : il mate les factions turques et soudanaises, sécurise le palais, rétablit les impôts et les approvisionnements, et repousse les menaces extérieures. Il reconstitue une armée composée surtout d'**Arméniens** et de **musulmans**, et fortifie le Caire par de nouvelles **murailles** avec les célèbres portes de pierre — **Bab al-Futuh**, **Bab al-Nasr**, **Bab Zuwayla** — dues à des architectes arméniens.\n\nDès lors, le vrai pouvoir appartient au **vizir**, qui commande l'armée et l'administration, tandis que le calife se réduit à un rôle d'imam vénéré. Le fils de Badr, al-Afdal, lui succédera et gouvernera longtemps. Sous cette « restauration arménienne », le califat fatimide survit près d'un siècle encore, mais il n'est plus qu'un État militaire gouverné par ses généraux-vizirs.",
+      "consequences": [
+        "L'Égypte fatimide est sauvée de l'effondrement et l'État réorganisé.",
+        "Le vizir arménien concentre tous les pouvoirs, au détriment du calife.",
+        "Le Caire est doté d'une nouvelle enceinte et de portes monumentales encore visibles.",
+        "L'armée est reformée autour d'Arméniens et de troupes loyales au vizir."
+      ],
+      "territory": "badr-1073",
+      "sources": [
+        {
+          "label": "Wikipédia — Badr al-Djamali",
+          "url": "https://fr.wikipedia.org/wiki/Badr_al-Djamali"
+        },
+        {
+          "label": "Wikipédia — Al-Mustansir Billah",
+          "url": "https://fr.wikipedia.org/wiki/Al-Mustansir_Billah"
+        },
+        {
+          "label": "Wikipédia — Califat fatimide",
+          "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Badr al-Jamali",
+          "role": "Vizir arménien tout-puissant (1074-1094)",
+          "faction": "arabes",
+          "archetype": "general",
+          "person": "badr-al-jamali",
+          "quote": "(vizir arménien tout-puissant depuis 1074)",
+          "position": [
+            31.24,
+            30.04
+          ]
+        },
+        {
+          "name": "Al-Mustansir Billah",
+          "role": "Calife sauvé par Badr al-Jamali",
+          "faction": "arabes",
+          "archetype": "calife",
+          "person": "al-mustansir",
+          "quote": "(calife, dont le règne fut le plus long de la dynastie)",
+          "position": [
+            31.24,
+            30.04
+          ]
+        }
+      ],
+      "territoryNote": "Vers 1073, sous Badr al-Jamali, l'empire fatimide est reconstruit autour de l'Égypte (Delta du Nil, Haute-Égypte) ; il tient encore la Palestine et le Hedjaz, et reprend des positions sur la côte du Liban et de Syrie du Sud face aux Seldjoukides. Rivaux nommés : les Seldjoukides (Damas, Syrie), les Abbassides de Bagdad, le royaume de Jérusalem naissant (croisés), les Normands de Sicile."
+    },
+    {
+      "id": "jerusalem-1098",
+      "year": 1098,
+      "title": "Jérusalem reprise aux Turcs, un an avant les croisés",
+      "type": "bataille",
+      "location": [
+        35.23,
+        31.78
+      ],
+      "zoom": 4.5,
+      "summary": "En 1098, une armée fatimide reprend Jérusalem aux Artuqides turcs, avant que les croisés ne s'emparent de la ville l'année suivante.",
+      "details": "La Syrie est alors disputée entre **Seldjoukides**, chefs **artuqides** et Fatimides. Profitant de la désunion turque et de l'arrivée des **croisés** au nord, le vizir **al-Afdal** envoie une armée d'Égypte qui chasse les **Artuqides** de **Jérusalem** en **1098**. Le gouverneur fatimide **Iftikhar al-Dawla**, appelé à défendre la ville, prend ses fonctions.\n\nMais la menace franque approche. Après avoir pris **Antioche** en 1098, les croisés de la **première croisade** marchent vers le sud. Les Fatimides, qui ont entre-temps traité sans succès avec eux, restent seuls. En juin **1099**, les croisés arrivent devant **Jérusalem** et l'assiègent ; le 15 juillet, la ville est prise et sa population massacrée. Iftikhar al-Dawla se replie dans la citadelle puis obtient de partir.\n\nLa défaite fatimide est sévère : après avoir cru profiter de la croisade, al-Afdal perd la Palestine. Une expédition de secours est écrasée à **Ascalon** en août 1099. Commence pour les Fatimides une longue guerre de frontière contre le **royaume latin de Jérusalem**.",
+      "consequences": [
+        "Jérusalem passe brièvement des Artuqides aux Fatimides en 1098, puis aux croisés en 1099.",
+        "La Palestine devient la frontière disputée entre Fatimides et royaume latin.",
+        "L'armée de secours fatimide est écrasée à Ascalon en 1099.",
+        "Le califat perd l'essentiel de ses positions en Palestine pour un demi-siècle."
+      ],
+      "territory": "jerusalem-1098",
+      "sources": [
+        {
+          "label": "Wikipédia — Siège de Jérusalem (1099)",
+          "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_de_J%C3%A9rusalem_(1099)"
+        },
+        {
+          "label": "Wikipédia — Première croisade",
+          "url": "https://fr.wikipedia.org/wiki/Premi%C3%A8re_croisade"
+        },
+        {
+          "label": "Wikipédia — Califat fatimide",
+          "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Fatimides",
+          "Turcs artuqides"
+        ],
+        "commanders": [
+          "Iftikhar al-Dawla (gouverneur fatimide)",
+          "chefs artuqides de Jérusalem"
+        ],
+        "outcome": "Victoire fatimide : Jérusalem reprise aux Artuqides",
+        "forces": "Fatimides : armée envoyée d’Égypte par le vizir al-Afdal ; Artuqides : garnison de Jérusalem",
+        "losses": "Pertes modérées ; la garnison artuqide est chassée"
+      },
+      "armies": [
+        {
+          "id": "armee-fatimide-palestine",
+          "side": "Armée fatimide de Palestine",
+          "from": "Le Caire",
+          "faction": "arabes",
+          "path": [
+            [
+              31.24,
+              30.04
+            ],
+            [
+              34.57,
+              31.67
+            ],
+            [
+              35.23,
+              31.78
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Garnison artuqide",
+          "from": "Damas",
+          "faction": "turcs-seldjoukides",
+          "path": [
+            [
+              36.29,
+              33.51
+            ],
+            [
+              35.5,
+              32.2
+            ],
+            [
+              35.23,
+              31.78
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Iftikhar al-Dawla",
+          "role": "Gouverneur fatimide de Jérusalem (1098-1099)",
+          "faction": "arabes",
+          "archetype": "general",
+          "person": "iftikhar-al-dawla",
+          "quote": "(gouverneur fatimide de Jérusalem, selon les chroniqueurs des croisades)",
+          "position": [
+            35.23,
+            31.78
+          ]
+        }
+      ],
+      "territoryNote": "Vers 1098, l'empire fatimide tient l'Égypte (Delta du Nil, Haute-Égypte), la Palestine jusqu'à Jérusalem, le Hedjaz et quelques ports du Liban (Tyr) ; il reprend Jérusalem aux Artuqides turcs mais ne peut garder durablement la Syrie du Sud. Rivaux nommés : les croisés du royaume de Jérusalem (Antioche, Édesse, Jérusalem latine), les Seldjoukides et Artuqides, les Abbassides de Bagdad."
+    },
+    {
+      "id": "ascalon-1153",
+      "year": 1153,
+      "title": "Ascalon, dernière place fatimide de Palestine",
+      "type": "bataille",
+      "location": [
+        34.57,
+        31.67
+      ],
+      "zoom": 5,
+      "summary": "En 1153, après un long siège, les croisés du royaume de Jérusalem prennent Ascalon, la dernière grande forteresse fatimide de Palestine.",
+      "details": "Depuis 1099, **Ascalon** est le dernier grand bastion fatimide en **Palestine**, une place forte d'où les Égyptiens lancent des raids contre le **royaume de Jérusalem**. Les croisés l'ont assiégée plusieurs fois sans succès, notamment en 1101 et 1123.\n\nEn **1153**, le roi **Baudouin III** de Jérusalem entreprend un siège méthodique. La ville est défendue par une importante garnison fatimide, ravitaillée par la mer depuis l'Égypte. Mais la flotte égyptienne est repoussée, le blocus se resserre, et une partie des murs s'effondre. Après plusieurs mois, le **22 août 1153**, Ascalon capitule ; ses habitants sont autorisés à partir, la ville vidée et repeuplée de chrétiens.\n\nLa perte est lourde pour les Fatimides. Privés de leur principale tête de pont en Palestine, ils perdent l'initiative face aux Latins et ne mènent plus que des expéditions épisodiques. Ascalon devient au contraire une place forte du royaume de Jérusalem, jusqu'à sa prise par **Saladin** en 1187, qui la démantèle pour qu'elle ne retombe pas aux mains des croisés.",
+      "consequences": [
+        "Les Fatimides perdent leur dernière grande forteresse de Palestine.",
+        "Le royaume de Jérusalem contrôle désormais toute la côte palestinienne.",
+        "L'Égypte n'a plus de base avancée pour attaquer les États latins.",
+        "Ascalon est repeuplée par des chrétiens et fortifiée contre l'Égypte."
+      ],
+      "territory": "ascalon-1153",
+      "sources": [
+        {
+          "label": "Wikipédia — Siège d’Ascalon (1153)",
+          "url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_d%27Ascalon_(1153)"
+        },
+        {
+          "label": "Wikipédia — Ascalon",
+          "url": "https://fr.wikipedia.org/wiki/Ascalon"
+        },
+        {
+          "label": "Wikipédia — Royaume de Jérusalem",
+          "url": "https://fr.wikipedia.org/wiki/Royaume_de_J%C3%A9rusalem"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Royaume de Jérusalem (croisés)",
+          "Fatimides"
+        ],
+        "commanders": [
+          "Baudouin III de Jérusalem",
+          "gouverneur fatimide d’Ascalon"
+        ],
+        "outcome": "Victoire croisée : Ascalon capitule le 22 août 1153",
+        "forces": "Croisés : armée du royaume et flotte ; Fatimides : garnison d’Ascalon, flotte de ravitaillement repoussée",
+        "losses": "Garnison évacuée ; ville vidée de ses habitants musulmans"
+      },
+      "armies": [
+        {
+          "id": "croises-jerusalem",
+          "side": "Armée du royaume de Jérusalem",
+          "from": "Jaffa",
+          "faction": "croises-latins",
+          "path": [
+            [
+              34.75,
+              32.05
+            ],
+            [
+              34.57,
+              31.67
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Garnison fatimide d’Ascalon",
+          "from": "Ascalon",
+          "faction": "arabes",
+          "path": [
+            [
+              34.5,
+              31.6
+            ],
+            [
+              34.57,
+              31.67
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "territoryNote": "Vers 1153, l'empire fatimide se réduit à l'Égypte (Delta du Nil, Haute-Égypte) et au Hedjaz ; la Palestine (Jérusalem, Ascalon) passe aux croisés, tandis que la Syrie et le Liban sont tenus par les Turcs zengides et les comtés latins. Rivaux nommés : le royaume de Jérusalem (croisés), les Zengides de Nur al-Din (Syrie), les Abbassides de Bagdad."
+    },
+    {
+      "id": "cairo-1169",
+      "year": 1169,
+      "title": "Shirkuh puis Saladin s’emparent de l’Égypte",
+      "type": "bataille",
+      "location": [
+        31.24,
+        30.04
+      ],
+      "zoom": 4.5,
+      "summary": "En 1169, le général zengide Shirkuh impose sa tutelle au Caire ; à sa mort, son neveu Saladin devient vizir : l'Égypte passe sous contrôle zengide.",
+      "details": "Dernier grand vizir fatimide, **Chawar** joue des rivalités entre le **royaume latin de Jérusalem** et les **Zengides** de **Nur al-Din**, maîtres de la Syrie. Après plusieurs interventions croisées, Chawar fait appel à Nur al-Din, mais celui-ci envoie son meilleur général, **Shirkuh**, flanqué de son neveu **Saladin** (Salah al-Din), un officier kurde.\n\nEn **1169**, Shirkuh entre au Caire, écarte puis tue Chawar et prend la place de vizir, reconnaissant l'autorité de Nur al-Din. Le calife **al-Adid**, sans pouvoir, n'a d'autre choix que de l'accepter. Shirkuh meurt quelques semaines plus tard, en mars 1169 ; ses partisans imposent alors **Saladin** comme vizir. À 31 ans, il commande l'Égypte au nom des Zengides et rétablit, discrètement, le sunnisme.\n\nEn **1171**, la mort d'al-Adid permet à Saladin d'abolir officiellement le califat fatimide et de faire prononcer la prière au nom du calife **abbasside** de Bagdad. L'Égypte rejoint le camp sunnite ; Saladin fondera la dynastie **ayyoubide**. L'événement s'inscrit dans le même mouvement que la victoire de **Hattin** en 1187, narration reprise par les Abbassides.",
+      "consequences": [
+        "L'Égypte passe sous tutelle zengide, nominalement au nom de Nur al-Din de Syrie.",
+        "Saladin devient vizir fatimide en 1169, puis maître du pays.",
+        "Le sunnisme est rétabli progressivement dans l'administration égyptienne.",
+        "L'Égypte et la Syrie sont réunies sous une même autorité, au détriment des Fatimides."
+      ],
+      "territory": "cairo-1169",
+      "sources": [
+        {
+          "label": "Wikipédia — Saladin",
+          "url": "https://fr.wikipedia.org/wiki/Saladin"
+        },
+        {
+          "label": "Wikipédia — Califat fatimide",
+          "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+        },
+        {
+          "label": "Wikipédia — Nur ad-Din",
+          "url": "https://fr.wikipedia.org/wiki/Nur_ad-Din"
+        }
+      ],
+      "battle": {
+        "belligerents": [
+          "Zengides de Nur al-Din (Saladin)",
+          "Fatimides"
+        ],
+        "commanders": [
+          "Shirkuh puis Saladin",
+          "le vizir Chawar, puis le calife al-Adid"
+        ],
+        "outcome": "Victoire zengide : Saladin devient vizir d’Égypte en 1169 ; le califat s’éteint en 1171",
+        "forces": "Zengides : armée syrienne aguerrie ; Fatimides : garnisons égyptiennes et vizirat en crise",
+        "losses": "Peu de pertes lors de l’entrée au Caire : une prise de pouvoir plus qu’une bataille rangée"
+      },
+      "armies": [
+        {
+          "id": "zengides-saladin",
+          "side": "Zengides de Shirkuh puis Saladin",
+          "from": "Damas",
+          "faction": "mamelouks",
+          "path": [
+            [
+              36.29,
+              33.51
+            ],
+            [
+              34,
+              32
+            ],
+            [
+              33,
+              31
+            ],
+            [
+              31.24,
+              30.04
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Garnisons fatimides du Caire",
+          "from": "Le Caire",
+          "faction": "arabes",
+          "path": [
+            [
+              31.1,
+              30.1
+            ],
+            [
+              31.24,
+              30.04
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "territoryNote": "Vers 1169, l'empire fatimide est réduit à l'Égypte (Delta du Nil, Haute-Égypte) sous tutelle zengide : Shirkuh puis Saladin gouvernent au nom de Nur al-Din, qui tient aussi la Syrie du Sud et le Liban. Le Hedjaz s'éloigne. Rivaux nommés : les Zengides de Nur al-Din (Syrie), les croisés du royaume de Jérusalem, les Abbassides de Bagdad."
+    },
+    {
+      "id": "fin-1171",
+      "year": 1171,
+      "title": "Saladin abolit le califat fatimide",
+      "type": "fin",
+      "location": [
+        31.24,
+        30.04
+      ],
+      "zoom": 4.5,
+      "summary": "En 1171, à la mort du dernier calife al-Adid, Saladin abolit le califat fatimide : l'Égypte repasse au sunnisme et reconnaît le calife abbasside de Bagdad.",
+      "details": "Le califat fatimide s'éteint sans bruit. Depuis 1169, **Saladin** gouverne l'Égypte au nom de Nur al-Din. Le calife **al-Adid**, malade, meurt en **septembre 1171**. Saladin, qui attendait ce moment, fait alors **proclamer la prière du vendredi au nom du calife abbasside** de Bagdad, à la mosquée al-Azhar même : la rupture est consommée. Le nom des Fatimides disparaît de la khutba, et le chiisme ismaélien perd son dernier grand État.\n\nSaladin fonde la dynastie **ayyoubide** et réunira bientôt sous son autorité l'Égypte, le Yémen, le Hedjaz et la Syrie. Sa renommée vient de la reconquête de **Jérusalem** après la victoire de **Hattin** (1187). En Égypte, il restaure l'enseignement **sunnite** à al-Azhar, qui deviendra le phare de l'islam sunnite qu'il est resté jusqu'à aujourd'hui.\n\nAinsi s'achève un long califat chiite qui, un temps maître de la Méditerranée musulmane, aura laissé en héritage l'architecture du Caire, al-Azhar, la Dar al-Hikma et une tradition scientifique brillante. Les adeptes ismaéliens se dispersent ; certains, les **nisâriens** et surtout les **tayyibites** et **bohras**, subsistent encore aujourd'hui.",
+      "consequences": [
+        "Le califat fatimide est aboli ; l'Égypte repasse au sunnisme et au nom du calife abbasside.",
+        "Saladin fonde la dynastie ayyoubide et réunit Égypte, Syrie et Hedjaz.",
+        "Al-Azhar devient un foyer de l'islam sunnite, qu'il demeurera.",
+        "Le chiisme ismaélien perd son dernier grand État ; ses communautés se dispersent."
+      ],
+      "territory": "fin-1171",
+      "sources": [
+        {
+          "label": "Wikipédia — Saladin",
+          "url": "https://fr.wikipedia.org/wiki/Saladin"
+        },
+        {
+          "label": "Wikipédia — Califat fatimide",
+          "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+        },
+        {
+          "label": "Wikipédia — Al-Azhar",
+          "url": "https://fr.wikipedia.org/wiki/Mosqu%C3%A9e_Al-Azhar"
+        }
+      ],
+      "figures": [
+        {
+          "name": "Saladin",
+          "role": "Vizir d’Égypte, qui abolit le califat fatimide (1171)",
+          "faction": "mamelouks",
+          "archetype": "sultan",
+          "person": "saladin",
+          "quote": "(abolition du califat fatimide en 1171)",
+          "position": [
+            31.24,
+            30.04
+          ]
+        },
+        {
+          "name": "Al-Adid",
+          "role": "Dernier calife fatimide (1160-1171)",
+          "faction": "arabes",
+          "archetype": "calife",
+          "person": "al-adid",
+          "quote": "(dernier calife fatimide, mort en 1171)",
+          "position": [
+            31.24,
+            30.04
+          ]
+        }
+      ],
+      "territoryNote": "En 1171, l'Égypte (Delta du Nil, Haute-Égypte) passe à Saladin, qui abolit le califat fatimide et fait prier au nom du calife abbasside de Bagdad ; plus rien ne subsiste du territoire fatimide hors d'Égypte. Voisins et rivaux nommés : les Zengides et les Ayyoubides (Syrie, Hedjaz), les croisés du royaume de Jérusalem, les Abbassides de Bagdad, les Normands de Sicile."
+    }
+  ]
+}

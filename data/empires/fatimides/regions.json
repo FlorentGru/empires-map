@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Califat fatimide",
+    "summary": "Empire chiite ismaélien fondé en 909 à Raqqada, près de Kairouan, quand les Berbères kutamas renversent les Aghlabides et proclament calife Abd Allah al-Mahdi. D'abord centré sur l'Ifriqiya et la Sicile, il conquiert l'Égypte en 969 et fonde Le Caire, où al-Mu'izz transfère le califat en 973. Il s'éteint en 1171, aboli par Saladin.",
+    "years": [909, 1171]
+  },
+  {
+    "name": "Émirat kalbide de Sicile",
+    "summary": "Émirat musulman de Sicile gouverné par la dynastie kalbide, qui exerce le pouvoir pour le compte des Fatimides. L'île, encore disputée aux Byzantins, est une pièce maîtresse de la puissance maritime fatimide en Méditerranée. Les Kalbides apparaissent comme vassaux dans les étapes de l'empire de 919 à 1009 ; l'île est perdue au milieu du XIe siècle.",
+    "years": [919, 1009]
+  },
+  {
+    "name": "Tribus berbères tributaires",
+    "summary": "Ensemble des tribus berbères — Kutamas du nord de l'Algérie, Sanhaja du Maghreb — qui fournissent aux Fatimides soldats et tributs. Leur ralliement est le socle militaire du califat : c'est avec les Kutamas qu'Abu Abdallah al-Shi'i renverse les Aghlabides en 909. Elles apparaissent comme tributaires dans les étapes de l'empire de 930 à 1009.",
+    "years": [930, 1009]
+  },
+  {
+    "name": "Zirides d'Ifriqiya",
+    "summary": "Dynastie berbère sanhaja installée à Kairouan, d'abord vicaires des Fatimides en Ifriqiya après le départ du califat vers l'Égypte en 973. Ils gouvernent la Tunisie et l'est du Maghreb pour le compte du Caire. En 1048, leur souverain al-Mu'izz ibn Badis abandonne le chiisme fatimide et reconnaît le calife abbasside de Bagdad : l'Ifriqiya se détache de l'empire.",
+    "years": [973, 1040]
+  },
+  {
+    "name": "Hedjaz (chérifat hasanide)",
+    "summary": "Le Hedjaz est la région des villes saintes de l'islam, La Mecque et Médine, sur la côte ouest de l'Arabie. Il est tenu par des chérifs hasanides, descendants du Prophète, qui reconnaissent la suzeraineté des Fatimides à partir de 973, quand le califat s'installe au Caire. Cette tutelle sur les lieux saints renforce le prestige du calife fatimide.",
+    "years": [973, 994]
+  }
+]

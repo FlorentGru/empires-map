@@ -1,0 +1,787 @@
+{
+  "empire": "fatimides",
+  "periods": [
+    {
+      "id": "ifriqiya",
+      "name": "La fondation en Ifriqiya",
+      "start": 909,
+      "end": 969,
+      "population": {
+        "total": {
+          "value": 2500000,
+          "year": 950,
+          "low": 1500000,
+          "high": 4000000,
+          "note": "Ordre de grandeur reconstruit : aucun recensement.",
+          "source": {
+            "label": "Wikipédia : Califat fatimide",
+            "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+          }
+        },
+        "cities": [
+          {
+            "name": "Kairouan",
+            "population": {
+              "value": 80000,
+              "year": 950,
+              "low": 50000,
+              "high": 150000,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Kairouan",
+                "url": "https://fr.wikipedia.org/wiki/Kairouan"
+              }
+            }
+          },
+          {
+            "name": "Mahdia",
+            "population": {
+              "value": 40000,
+              "year": 950,
+              "low": 20000,
+              "high": 70000,
+              "note": "Capitale-forteresse récente.",
+              "source": {
+                "label": "Wikipédia : Mahdia",
+                "url": "https://fr.wikipedia.org/wiki/Mahdia"
+              }
+            }
+          },
+          {
+            "name": "Palerme",
+            "population": {
+              "value": 60000,
+              "year": 950,
+              "low": 40000,
+              "high": 100000,
+              "note": "Grande ville musulmane de Sicile.",
+              "source": {
+                "label": "Wikipédia : Palerme",
+                "url": "https://fr.wikipedia.org/wiki/Palerme"
+              }
+            }
+          },
+          {
+            "name": "Tunis",
+            "population": {
+              "value": 30000,
+              "year": 950,
+              "low": 15000,
+              "high": 50000,
+              "note": "Estimation approximative.",
+              "source": {
+                "label": "Wikipédia : Tunis",
+                "url": "https://fr.wikipedia.org/wiki/Tunis"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 2.5,
+          "year": 950,
+          "low": 1.5,
+          "high": 4,
+          "unit": "% du PIB mondial",
+          "note": "Estimation de type Maddison, reconstruite.",
+          "source": {
+            "label": "Wikipédia : Califat fatimide",
+            "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+          }
+        },
+        "resources": [
+          "Blé et huile d’olive d’Ifriqiya",
+          "Or et sel du Sahara",
+          "Textiles et soie",
+          "Céréales de Sicile"
+        ],
+        "currency": "Dinar d’or fatimide, reconnaissable à ses cercles concentriques, et dirhams d’argent.",
+        "taxation": "Impôt foncier (kharaj), capitation des non-musulmans (jizya), dîme religieuse (zakat) et taxe du cinquième.",
+        "trade": "Caravanes transsahariennes vers Sijilmasa, ports de Mahdia et de Sicile, commerce avec l’Égypte et le Levant."
+      },
+      "army": {
+        "size": {
+          "value": 60000,
+          "year": 950,
+          "low": 30000,
+          "high": 100000,
+          "note": "Ordre de grandeur reconstruit.",
+          "source": {
+            "label": "Wikipédia : Califat fatimide",
+            "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+          }
+        },
+        "composition": "Infanterie et cavalerie berbères kutamas et sanhaja, archers, corps de troupes noires, flotte naissante.",
+        "recruitment": "Levée dans les tribus berbères alliées, esclaves-soldats et mercenaires ; solde versée par le diwan.",
+        "famousUnits": [
+          "Cavaliers kutamas",
+          "Infanterie sanhaja",
+          "Flotte de Mahdia",
+          "Gardes noirs du calife"
+        ],
+        "innovations": [
+          "Châteaux-forts côtiers",
+          "Cavalerie légère berbère",
+          "Logistique du désert"
+        ]
+      },
+      "politics": {
+        "regime": "Califat-imamat chiite ismaélien : le souverain est à la fois chef politique et guide religieux.",
+        "head": "Le calife-imam (al-Mahdi, al-Qaim, al-Mansur, al-Mu’izz).",
+        "succession": "Héréditaire de père en fils, sur le modèle de l’imamat ismaélien.",
+        "institutions": "Cour itinérante puis de Mahdia, da’wa (mission) ismaélienne, diwan, chefs tribaux.",
+        "administration": "Gouverneurs militaires, chefs berbères ralliés, cadres hérités des Aghlabides et de Byzance.",
+        "provinces": {
+          "value": 4,
+          "year": 950,
+          "low": 3,
+          "high": 5,
+          "unit": "grandes provinces",
+          "note": "Ifriqiya, Sicile, Maghreb central, Libye.",
+          "source": {
+            "label": "Wikipédia : Califat fatimide",
+            "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+          }
+        },
+        "law": "Droit ismaélien enseigné par les da’i, aux côtés des juristes malékites majoritaires à Kairouan."
+      },
+      "society": {
+        "religions": [
+          "Islam ismaélien (officiel)",
+          "Islam sunnite malékite",
+          "Christianisme",
+          "Judaïsme"
+        ],
+        "languages": [
+          "Arabe",
+          "Berbère (kutama, sanhaja)",
+          "Grec",
+          "Latin"
+        ],
+        "structure": "Élites arabes et berbères converties, population rurale berbère, minorités chrétiennes et juives protégées.",
+        "women": "Femmes de l’élite influentes à la cour ; la princesse Sitt al-Mulk jouera un grand rôle au tournant du XIe siècle."
+      },
+      "culture": {
+        "inventions": [
+          "Dinar fatimide à cercles concentriques",
+          "Architecture des ribats et forteresses",
+          "Céramique de luxe"
+        ],
+        "works": [
+          "Mosquée de Mahdia",
+          "Mosquée de Kairouan agrandie",
+          "Ribat de Monastir",
+          "Palais de Raqqada"
+        ],
+        "scholars": [
+          "Le da’i Abu Abdallah al-Shi’i",
+          "Juristes malékites de Kairouan",
+          "Poètes de cour arabes"
+        ]
+      },
+      "infrastructure": {
+        "roads": {
+          "value": 3000,
+          "year": 950,
+          "low": 2000,
+          "high": 5000,
+          "unit": "km",
+          "note": "Estimation reconstruite des pistes principales.",
+          "source": {
+            "label": "Wikipédia : Califat fatimide",
+            "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+          }
+        },
+        "summary": "Routes côtières et caravanières d’Ifriqiya, ports de Mahdia et Sousse, forteresses, relais d’eau et citernes."
+      },
+      "legacy": "Premier et seul grand califat chiite de l’histoire, né en Ifriqiya avant de basculer vers l’Égypte."
+    },
+    {
+      "id": "conquete",
+      "name": "Le Caire et la conquête de la Syrie",
+      "start": 969,
+      "end": 1021,
+      "population": {
+        "total": {
+          "value": 5000000,
+          "year": 1000,
+          "low": 3000000,
+          "high": 8000000,
+          "note": "Ordre de grandeur reconstruit.",
+          "source": {
+            "label": "Wikipédia : Califat fatimide",
+            "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+          }
+        },
+        "cities": [
+          {
+            "name": "Le Caire",
+            "population": {
+              "value": 150000,
+              "year": 1000,
+              "low": 100000,
+              "high": 250000,
+              "note": "Capitale nouvelle et Fustat réunies.",
+              "source": {
+                "label": "Wikipédia : Le Caire",
+                "url": "https://fr.wikipedia.org/wiki/Le_Caire"
+              }
+            }
+          },
+          {
+            "name": "Damas",
+            "population": {
+              "value": 100000,
+              "year": 1000,
+              "low": 60000,
+              "high": 150000,
+              "note": "Grande ville syrienne.",
+              "source": {
+                "label": "Wikipédia : Damas",
+                "url": "https://fr.wikipedia.org/wiki/Damas"
+              }
+            }
+          },
+          {
+            "name": "Alexandrie",
+            "population": {
+              "value": 60000,
+              "year": 1000,
+              "low": 40000,
+              "high": 100000,
+              "note": "Port majeur de la Méditerranée.",
+              "source": {
+                "label": "Wikipédia : Alexandrie",
+                "url": "https://fr.wikipedia.org/wiki/Alexandrie"
+              }
+            }
+          },
+          {
+            "name": "Palerme",
+            "population": {
+              "value": 70000,
+              "year": 1000,
+              "low": 50000,
+              "high": 120000,
+              "note": "Métropole de Sicile.",
+              "source": {
+                "label": "Wikipédia : Palerme",
+                "url": "https://fr.wikipedia.org/wiki/Palerme"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 4,
+          "year": 1000,
+          "low": 3,
+          "high": 6,
+          "unit": "% du PIB mondial",
+          "note": "Estimation de type Maddison, reconstruite.",
+          "source": {
+            "label": "Wikipédia : Califat fatimide",
+            "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+          }
+        },
+        "resources": [
+          "Blé, lin et sucre d’Égypte",
+          "Coton et verre",
+          "Or du Sahara et de Nubie",
+          "Épices et encens de la mer Rouge"
+        ],
+        "currency": "Dinar d’or fatimide, principale monnaie d’échange de la Méditerranée musulmane.",
+        "taxation": "Kharaj foncier, jizya, taxes portuaires et douanes ; finances réorganisées par le vizir Ibn Killis.",
+        "trade": "Mer Rouge et océan Indien vers l’Inde, ports d’Égypte et de Palestine, caravanes vers l’Ifriqiya et la Syrie."
+      },
+      "army": {
+        "size": {
+          "value": 100000,
+          "year": 1000,
+          "low": 50000,
+          "high": 150000,
+          "note": "Ordre de grandeur reconstruit.",
+          "source": {
+            "label": "Wikipédia : Califat fatimide",
+            "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+          }
+        },
+        "composition": "Cavalerie et infanterie berbères, corps turcs (ghulam), troupes noires, arméniens et flotte puissante.",
+        "recruitment": "Tribus berbères, esclaves-soldats turcs et noirs, mercenaires ; solde du diwan.",
+        "famousUnits": [
+          "Cavalerie kutama",
+          "Ghulams turcs",
+          "Corps noirs",
+          "Flotte du Caire"
+        ],
+        "innovations": [
+          "Grande flotte de guerre",
+          "Châteaux et portes du Caire",
+          "Ingénierie hydraulique du Nil"
+        ]
+      },
+      "politics": {
+        "regime": "Califat-imamat ismaélien installé au Caire, centre d’un empire méditerranéen.",
+        "head": "Le calife-imam (al-Mu’izz, al-Aziz, al-Hakim).",
+        "succession": "Héréditaire ; régences en cas de minorité, comme pour al-Hakim en 996.",
+        "institutions": "Palais du Caire, vizirat, diwans fiscaux, da’wa ismaélienne, al-Azhar.",
+        "administration": "Vizirs souvent d’origine diverse (juifs, chrétiens, berbères), gouverneurs de provinces, cadres égyptiens.",
+        "provinces": {
+          "value": 8,
+          "year": 1000,
+          "low": 6,
+          "high": 10,
+          "unit": "provinces",
+          "note": "Égypte, Palestine, Syrie, Hedjaz, Ifriqiya, Sicile, Libye.",
+          "source": {
+            "label": "Wikipédia : Califat fatimide",
+            "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+          }
+        },
+        "law": "Droit ismaélien dominant ; coexistence avec les écoles sunnites, chrétiennes et juives."
+      },
+      "society": {
+        "religions": [
+          "Islam ismaélien (officiel)",
+          "Islam sunnite",
+          "Christianisme copte et grec",
+          "Judaïsme"
+        ],
+        "languages": [
+          "Arabe",
+          "Copte",
+          "Grec",
+          "Berbère",
+          "Hébreu"
+        ],
+        "structure": "Élites militaires et administratives mêlées, paysannerie égyptienne, minorités protégées (dhimmis).",
+        "women": "Princesses influentes comme Sitt al-Mulk ; les femmes de cour participent aux luttes de pouvoir."
+      },
+      "culture": {
+        "inventions": [
+          "Dar al-Hikma",
+          "Zij d’Ibn Yunus",
+          "Optique d’Ibn al-Haytham",
+          "Céramique à lustre",
+          "Cristal de roche"
+        ],
+        "works": [
+          "Mosquée al-Azhar",
+          "Mosquée al-Hakim",
+          "Palais du Caire",
+          "Enceinte du Caire"
+        ],
+        "scholars": [
+          "Ibn Yunus (astronome)",
+          "Ibn al-Haytham (opticien)",
+          "Al-Hakim et sa Dar al-Hikma"
+        ]
+      },
+      "infrastructure": {
+        "roads": {
+          "value": 4000,
+          "year": 1000,
+          "low": 3000,
+          "high": 6000,
+          "unit": "km",
+          "note": "Estimation reconstruite.",
+          "source": {
+            "label": "Wikipédia : Califat fatimide",
+            "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+          }
+        },
+        "summary": "Canaux et digues du Nil, ports d’Alexandrie et du Caire, routes de Syrie, relais postaux et citernes."
+      },
+      "legacy": "Le Caire devient une capitale-monde, al-Azhar un grand foyer du savoir et la dynastie un acteur central de la Méditerranée."
+    },
+    {
+      "id": "crise",
+      "name": "L’apogée puis la grande crise",
+      "start": 1021,
+      "end": 1073,
+      "population": {
+        "total": {
+          "value": 3500000,
+          "year": 1050,
+          "low": 2000000,
+          "high": 5000000,
+          "note": "Chute due à la famine de 1065-1072.",
+          "source": {
+            "label": "Wikipédia : Califat fatimide",
+            "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+          }
+        },
+        "cities": [
+          {
+            "name": "Le Caire",
+            "population": {
+              "value": 120000,
+              "year": 1050,
+              "low": 80000,
+              "high": 200000,
+              "note": "Estimation avant la famine.",
+              "source": {
+                "label": "Wikipédia : Le Caire",
+                "url": "https://fr.wikipedia.org/wiki/Le_Caire"
+              }
+            }
+          },
+          {
+            "name": "Alexandrie",
+            "population": {
+              "value": 50000,
+              "year": 1050,
+              "low": 30000,
+              "high": 80000,
+              "note": "Port encore actif.",
+              "source": {
+                "label": "Wikipédia : Alexandrie",
+                "url": "https://fr.wikipedia.org/wiki/Alexandrie"
+              }
+            }
+          },
+          {
+            "name": "Damas",
+            "population": {
+              "value": 80000,
+              "year": 1050,
+              "low": 50000,
+              "high": 120000,
+              "note": "Passée aux Seldjoukides en 1075.",
+              "source": {
+                "label": "Wikipédia : Damas",
+                "url": "https://fr.wikipedia.org/wiki/Damas"
+              }
+            }
+          },
+          {
+            "name": "Kairouan",
+            "population": {
+              "value": 50000,
+              "year": 1050,
+              "low": 30000,
+              "high": 90000,
+              "note": "Ravagée par les Banu Hilal.",
+              "source": {
+                "label": "Wikipédia : Kairouan",
+                "url": "https://fr.wikipedia.org/wiki/Kairouan"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 2.5,
+          "year": 1050,
+          "low": 1.5,
+          "high": 4,
+          "unit": "% du PIB mondial",
+          "note": "Estimation de type Maddison, reconstruite.",
+          "source": {
+            "label": "Wikipédia : Califat fatimide",
+            "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+          }
+        },
+        "resources": [
+          "Blé et lin d’Égypte",
+          "Sucre et verre",
+          "Textiles précieux",
+          "Épices de la mer Rouge"
+        ],
+        "currency": "Dinar d’or, dont la valeur se dégrade pendant la crise ; poids et alliage moins réguliers.",
+        "taxation": "Kharaj et jizya, mais revenus désorganisés par la famine, les troubles et les détournements.",
+        "trade": "Le commerce maritime continue vers la mer Rouge, mais l’Ifriqiya et la Sicile échappent au califat."
+      },
+      "army": {
+        "size": {
+          "value": 40000,
+          "year": 1050,
+          "low": 20000,
+          "high": 70000,
+          "note": "Très divisée pendant la guerre des factions.",
+          "source": {
+            "label": "Wikipédia : Califat fatimide",
+            "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+          }
+        },
+        "composition": "Factions rivales turques (ghulam), noires et berbères, qui s’affrontent dans les rues du Caire.",
+        "recruitment": "Esclaves-soldats turcs et noirs, tribus berbères ; paiement irrégulier, source de mutineries.",
+        "famousUnits": [
+          "Ghulams turcs",
+          "Régiments noirs",
+          "Milices berbères"
+        ],
+        "innovations": [
+          "Fortifications urbaines",
+          "Vizirat militaire en germe"
+        ]
+      },
+      "politics": {
+        "regime": "Califat affaibli : les califes perdent le pouvoir réel au profit des vizirs et des factions militaires.",
+        "head": "Le calife al-Mustansir (1036-1094), de moins en moins maître des décisions.",
+        "succession": "Héréditaire en théorie, mais les querelles de palais et les régences troublent la transmission.",
+        "institutions": "Vizirat instable, diwans vidés, garde prétorienne devenue arbitre du pouvoir.",
+        "administration": "Administration fiscale désorganisée, provinces perdues, autorité réduite à l’Égypte.",
+        "provinces": {
+          "value": 4,
+          "year": 1050,
+          "low": 3,
+          "high": 6,
+          "unit": "provinces",
+          "note": "Égypte, Palestine, Hedjaz, restes de Syrie.",
+          "source": {
+            "label": "Wikipédia : Califat fatimide",
+            "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+          }
+        },
+        "law": "Droit ismaélien officiel, mais les sunnites reprennent de l’influence ; églises et synagogues à nouveau sous pression."
+      },
+      "society": {
+        "religions": [
+          "Islam ismaélien (officiel)",
+          "Islam sunnite en progression",
+          "Christianisme copte",
+          "Judaïsme"
+        ],
+        "languages": [
+          "Arabe",
+          "Copte",
+          "Grec",
+          "Hébreu"
+        ],
+        "structure": "Société égyptienne éprouvée par la famine ; élites militaires étrangères coupées de la population.",
+        "women": "La crise met fin à l’influence des princesses ; la vie de cour se referme."
+      },
+      "culture": {
+        "inventions": [
+          "Céramique à lustre de Fustat",
+          "Cristal de roche fatimide",
+          "Calligraphie coufique"
+        ],
+        "works": [
+          "Voyage du Perse Nasir-i Khusraw",
+          "Réfection d’al-Azhar",
+          "Pavillons du Caire"
+        ],
+        "scholars": [
+          "Ibn al-Haytham (fin de carrière)",
+          "Nasir-i Khusraw (voyageur)",
+          "Poètes de cour du Caire"
+        ]
+      },
+      "infrastructure": {
+        "roads": {
+          "value": 2500,
+          "year": 1050,
+          "low": 1500,
+          "high": 4000,
+          "unit": "km",
+          "note": "Estimation reconstruite.",
+          "source": {
+            "label": "Wikipédia : Califat fatimide",
+            "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+          }
+        },
+        "summary": "Canaux et digues du Nil menacés par la négligence, villes en partie abandonnées, réseau routier dégradé."
+      },
+      "legacy": "Apogée culturelle du Caire fatimide, aussitôt suivie d’un effondrement territorial et démographique dramatique."
+    },
+    {
+      "id": "restauration",
+      "name": "La restauration arménienne et la fin",
+      "start": 1073,
+      "end": 1171,
+      "population": {
+        "total": {
+          "value": 3000000,
+          "year": 1120,
+          "low": 2000000,
+          "high": 4500000,
+          "note": "Redressement partiel après la famine.",
+          "source": {
+            "label": "Wikipédia : Califat fatimide",
+            "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+          }
+        },
+        "cities": [
+          {
+            "name": "Le Caire",
+            "population": {
+              "value": 150000,
+              "year": 1120,
+              "low": 100000,
+              "high": 220000,
+              "note": "Redressée et fortifiée par Badr al-Jamali.",
+              "source": {
+                "label": "Wikipédia : Le Caire",
+                "url": "https://fr.wikipedia.org/wiki/Le_Caire"
+              }
+            }
+          },
+          {
+            "name": "Alexandrie",
+            "population": {
+              "value": 50000,
+              "year": 1120,
+              "low": 30000,
+              "high": 80000,
+              "note": "Grand port méditerranéen.",
+              "source": {
+                "label": "Wikipédia : Alexandrie",
+                "url": "https://fr.wikipedia.org/wiki/Alexandrie"
+              }
+            }
+          },
+          {
+            "name": "Ascalon",
+            "population": {
+              "value": 15000,
+              "year": 1120,
+              "low": 8000,
+              "high": 25000,
+              "note": "Dernier bastion fatimide en Palestine.",
+              "source": {
+                "label": "Wikipédia : Ascalon",
+                "url": "https://fr.wikipedia.org/wiki/Ascalon"
+              }
+            }
+          },
+          {
+            "name": "Damas",
+            "population": {
+              "value": 80000,
+              "year": 1120,
+              "low": 50000,
+              "high": 120000,
+              "note": "Aux mains des Seldjoukides puis des Zengides.",
+              "source": {
+                "label": "Wikipédia : Damas",
+                "url": "https://fr.wikipedia.org/wiki/Damas"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 2,
+          "year": 1120,
+          "low": 1,
+          "high": 3.5,
+          "unit": "% du PIB mondial",
+          "note": "Estimation de type Maddison, reconstruite.",
+          "source": {
+            "label": "Wikipédia : Califat fatimide",
+            "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+          }
+        },
+        "resources": [
+          "Blé et lin d’Égypte",
+          "Sucre, verre et textiles",
+          "Épices et café d’Arabie",
+          "Or de Nubie"
+        ],
+        "currency": "Dinar d’or d’Égypte, encore recherché, mais concurrencé par les monnaies voisines.",
+        "taxation": "Kharaj et jizya rétablis par Badr al-Jamali ; finances assainies, trésor reconstitué.",
+        "trade": "Mer Rouge et océan Indien vers l’Inde, port d’Alexandrie ouvert aux marchands italiens."
+      },
+      "army": {
+        "size": {
+          "value": 50000,
+          "year": 1120,
+          "low": 30000,
+          "high": 80000,
+          "note": "Armée reformée par Badr al-Jamali.",
+          "source": {
+            "label": "Wikipédia : Califat fatimide",
+            "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+          }
+        },
+        "composition": "Corps arméniens, troupes musulmanes loyales au vizir, cavalerie et garnisons urbaines.",
+        "recruitment": "Mercenaires arméniens et turcs, levées locales ; commandement assuré par les vizirs.",
+        "famousUnits": [
+          "Corps arméniens",
+          "Garde du vizir",
+          "Garnisons du Caire",
+          "Flotte d’Alexandrie"
+        ],
+        "innovations": [
+          "Enceinte et portes du Caire",
+          "Administration militaire du vizirat"
+        ]
+      },
+      "politics": {
+        "regime": "Califat de façade : le pouvoir réel appartient au vizir militaire, souvent arménien.",
+        "head": "Le vizir tout-puissant (Badr al-Jamali, puis son fils al-Afdal) au nom du calife.",
+        "succession": "Vizirat héréditaire de fait ; le califat demeure théoriquement électif et dynastique.",
+        "institutions": "Vizirat militaire, armée professionnelle, palais califal réduit au rôle religieux.",
+        "administration": "Centralisation autour du vizir, garnisons, fiscalité rétablie ; provinces hors d’Égypte perdues.",
+        "provinces": {
+          "value": 3,
+          "year": 1120,
+          "low": 2,
+          "high": 4,
+          "unit": "provinces",
+          "note": "Égypte, Palestine, Hedjaz.",
+          "source": {
+            "label": "Wikipédia : Califat fatimide",
+            "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+          }
+        },
+        "law": "Droit ismaélien maintenu, mais le sunnisme gagne du terrain ; Saladin rétablira l’école sunnite."
+      },
+      "society": {
+        "religions": [
+          "Islam ismaélien (officiel)",
+          "Islam sunnite (croissant)",
+          "Christianisme copte et arménien",
+          "Judaïsme"
+        ],
+        "languages": [
+          "Arabe",
+          "Copte",
+          "Arménien",
+          "Grec"
+        ],
+        "structure": "Élites arméniennes au sommet militaire, population égyptienne majoritairement sunnite, minorités protégées.",
+        "women": "Rôle politique des femmes réduit ; quelques grandes dames de la cour subsistent dans l’ombre du vizir."
+      },
+      "culture": {
+        "inventions": [
+          "Enceinte du Caire et ses portes",
+          "Travail du bois et moucharabieh",
+          "Enluminure et calligraphie"
+        ],
+        "works": [
+          "Portes de Bab al-Futuh, Bab al-Nasr et Bab Zuwayla",
+          "Mosquée al-Aqmar",
+          "Palais du Caire"
+        ],
+        "scholars": [
+          "Chroniqueurs et juristes du Caire",
+          "Astronomes et médecins de cour",
+          "Al-Afdal, mécène"
+        ]
+      },
+      "infrastructure": {
+        "roads": {
+          "value": 2500,
+          "year": 1120,
+          "low": 1500,
+          "high": 4000,
+          "unit": "km",
+          "note": "Estimation reconstruite.",
+          "source": {
+            "label": "Wikipédia : Califat fatimide",
+            "url": "https://fr.wikipedia.org/wiki/Califat_fatimide"
+          }
+        },
+        "summary": "Murailles et portes du Caire, aqueducs, canaux du Nil réparés, ports d’Alexandrie et de Tinnis."
+      },
+      "legacy": "Le vizirat arménien prolonge le califat d’un siècle, mais laisse la place à Saladin et à la dynastie ayyoubide sunnite."
+    }
+  ]
+}
