@@ -687,7 +687,7 @@ export function WorldMap({
           Chrome, Brave, Edge : activez l’accélération matérielle (réglages, Système). Firefox, Zen : dans about:config, passez <code>
             webgl.force-enabled
           </code>{' '}
-          à true. Puis rechargez la page.
+          à true. Puis redémarrez complètement le navigateur.
         </p>
       )}
     </div>
