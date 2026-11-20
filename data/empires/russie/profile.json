@@ -1,0 +1,737 @@
+{
+  "empire": "russie",
+  "periods": [
+    {
+      "id": "tsarat-moscou",
+      "name": "Le tsarat de Moscou",
+      "start": 1547,
+      "end": 1613,
+      "population": {
+        "total": {
+          "value": 10000000,
+          "low": 8000000,
+          "high": 12000000,
+          "year": 1600,
+          "note": "Ordre de grandeur : reconstructions, aucun recensement avant le XVIIᵉ siècle.",
+          "source": {
+            "label": "Wikipédia : Démographie de la Russie",
+            "url": "https://fr.wikipedia.org/wiki/Démographie_de_la_Russie"
+          }
+        },
+        "cities": [
+          {
+            "name": "Moscou",
+            "population": {
+              "value": 100000,
+              "low": 80000,
+              "high": 200000,
+              "year": 1550,
+              "note": "Estimations de voyageurs étrangers, très variables ; ville ravagée en 1571 et en 1610-1612.",
+              "source": {
+                "label": "Wikipédia : Moscou",
+                "url": "https://fr.wikipedia.org/wiki/Moscou"
+              }
+            }
+          },
+          {
+            "name": "Novgorod",
+            "population": {
+              "value": 30000,
+              "low": 20000,
+              "high": 40000,
+              "year": 1570,
+              "note": "Ville affaiblie par le pillage de 1570 ; ancienne rivale de Moscou.",
+              "source": {
+                "label": "Wikipédia : Novgorod",
+                "url": "https://fr.wikipedia.org/wiki/Novgorod"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 3.5,
+          "low": 3,
+          "high": 4,
+          "year": 1600,
+          "note": "Estimation reconstruite de Maddison pour la Russie.",
+          "source": {
+            "label": "Wikipédia : Angus Maddison",
+            "url": "https://fr.wikipedia.org/wiki/Angus_Maddison"
+          }
+        },
+        "resources": [
+          "Fourrures de Sibérie (zibeline)",
+          "Seigle et blé",
+          "Sel de Perm",
+          "Lin, chanvre, goudron",
+          "Cire, miel, bois"
+        ],
+        "currency": "Kopeck d'argent (monnaie de Moscou), pièces d'argent étrangères en circulation.",
+        "taxation": "Impôt foncier par unité de terre cultivée (la soukha), tribut en fourrures (yasak) sur les peuples soumis, corvées.",
+        "trade": "Port d'Arkhangelsk ouvert aux Anglais en 1553 ; Volga et Caspienne vers la Perse après Astrakhan ; fourrures vers l'Europe."
+      },
+      "army": {
+        "size": {
+          "value": 100000,
+          "low": 60000,
+          "high": 150000,
+          "year": 1552,
+          "note": "Armée du siège de Kazan, d'après les chroniques, probablement surestimée.",
+          "source": {
+            "label": "Wikipédia : Armée impériale russe",
+            "url": "https://fr.wikipedia.org/wiki/Armée_impériale_russe"
+          }
+        },
+        "composition": "Cavalerie noble levée par les boyards et les propriétaires, streltsy à mousquet, cosaques et auxiliaires tatars, artillerie de siège.",
+        "recruitment": "Service dû par les nobles en échange de leurs terres (pomestié) ; streltsy payés par l'État depuis 1550.",
+        "famousUnits": [
+          "Streltsy",
+          "Cavalerie des pomechtchiks",
+          "Cosaques du Don et de la Volga"
+        ],
+        "innovations": [
+          "Premiers fantassins permanents à mousquet (1550)",
+          "Forts de bois préfabriqués (Sviiajsk)",
+          "Mines sous les murailles (Kazan)"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie autocratique, en rivalité avec les boyards, appuyée sur l'Église orthodoxe.",
+        "head": "Tsar (Ivan IV, Fiodor Ier, Boris Godounov, Chouïski).",
+        "succession": "Héréditaire dans la lignée des Riourikides jusqu'en 1598 ; ensuite tsars élus, troubles dynastiques.",
+        "institutions": "Douma des boyards, assemblée de la terre (zemski sobor), prikazes (ministères), opritchnina (1565-1572).",
+        "administration": "Voïvodes nommés dans les districts, prikazes à Moscou ; peu de fonctionnaires dans un grand pays.",
+        "law": "Soudebnik de 1550 : code de lois ; limitation progressive de la liberté des paysans."
+      },
+      "society": {
+        "religions": [
+          "Orthodoxie russe",
+          "Islam sunnite (Tatars, Bachkirs)",
+          "Chamanisme et cultes locaux de Sibérie"
+        ],
+        "languages": [
+          "Russe",
+          "Tatar",
+          "Langues finno-ougriennes",
+          "Langues des peuples de Sibérie"
+        ],
+        "structure": "Boyards, petite noblesse de service, clergé, marchands (gosti), paysans de plus en plus attachés à la terre, cosaques libres.",
+        "women": "Femmes de l'élite recluses dans les appartements séparés (terem) ; femmes paysannes actives aux champs."
+      },
+      "culture": {
+        "inventions": [
+          "Imprimerie de Moscou (1553-1564)",
+          "Cathédrale Saint-Basile (1555-1561)",
+          "Hymnes et icônes de l'école de Moscou"
+        ],
+        "works": [
+          "Stoglav (concile de 1551)",
+          "Domostroï (guide de vie familiale)",
+          "Livre des degrés des généalogies royales"
+        ],
+        "scholars": [
+          "Ivan Fiodorov (imprimeur)",
+          "Macaire (métropolite)",
+          "André Kourbski (écrivain)"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Forts de bois, ligne de défense du sud (zasseka), routes et rivières comme voies principales ; chemin de la Sibérie ouvert en 1582."
+      },
+      "legacy": "Le tsarat pose les bases d'un empire multiethnique et autocratique : conquête de la Volga et de la Sibérie, tsar couronné, armée de streltsy ; le Temps des troubles montre aussi sa fragilité."
+    },
+    {
+      "id": "premiers-romanov",
+      "name": "Les premiers Romanov",
+      "start": 1613,
+      "end": 1689,
+      "population": {
+        "total": {
+          "value": 12000000,
+          "low": 10000000,
+          "high": 13500000,
+          "year": 1678,
+          "note": "Recensement fiscal des foyers (1678) converti en habitants : ordre de grandeur.",
+          "source": {
+            "label": "Wikipédia : Démographie de la Russie",
+            "url": "https://fr.wikipedia.org/wiki/Démographie_de_la_Russie"
+          }
+        },
+        "cities": [
+          {
+            "name": "Moscou",
+            "population": {
+              "value": 150000,
+              "low": 100000,
+              "high": 200000,
+              "year": 1670,
+              "note": "Plus grande ville du pays ; incendies fréquents, estimations incertaines.",
+              "source": {
+                "label": "Wikipédia : Moscou",
+                "url": "https://fr.wikipedia.org/wiki/Moscou"
+              }
+            }
+          },
+          {
+            "name": "Novgorod",
+            "population": {
+              "value": 20000,
+              "low": 10000,
+              "high": 30000,
+              "year": 1650,
+              "note": "Ville très réduite après l'occupation suédoise de 1611-1617.",
+              "source": {
+                "label": "Wikipédia : Novgorod",
+                "url": "https://fr.wikipedia.org/wiki/Novgorod"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "resources": [
+          "Fourrures de Sibérie",
+          "Céréales",
+          "Sel",
+          "Potasse, goudron, lin et chanvre",
+          "Fer de Toula"
+        ],
+        "currency": "Kopeck d'argent ; émission de monnaie de cuivre en 1654 qui provoque l'émeute du Cuivre en 1662.",
+        "taxation": "Impôt par foyer à partir de 1678, droits sur le sel, l'alcool et le commerce, yasak en fourrures.",
+        "trade": "Foire de Makariev sur la Volga ; marchands anglais, néerlandais ; caravanes vers la Chine après Nertchinsk (1689)."
+      },
+      "army": {
+        "size": {
+          "value": 150000,
+          "low": 100000,
+          "high": 200000,
+          "year": 1681,
+          "note": "Troupes de « nouvelle formation » et cavalerie noble : ordre de grandeur.",
+          "source": {
+            "label": "Wikipédia : Armée impériale russe",
+            "url": "https://fr.wikipedia.org/wiki/Armée_impériale_russe"
+          }
+        },
+        "composition": "Régiments de nouvelle formation encadrés par des officiers étrangers, streltsy, cosaques, restes de la cavalerie noble.",
+        "recruitment": "Service de la noblesse, recrutement forcé de paysans, cosaques payés par l'État.",
+        "famousUnits": [
+          "Streltsy de Moscou",
+          "Régiments de nouvelle formation",
+          "Cosaques du Don"
+        ],
+        "innovations": [
+          "Officiers étrangers à Moscou",
+          "Régiments de soldats permanents",
+          "Forts de la ligne de défense du sud"
+        ]
+      },
+      "politics": {
+        "regime": "Autocratie tsariste ; assemblée de la terre de moins en moins convoquée après 1653.",
+        "head": "Tsar (Michel Ier, Alexis Ier, Fiodor III, puis Sophie régente et Ivan V et Pierre Ier).",
+        "succession": "Héritage dans la maison Romanov, souvent contesté par des intrigues de cour (régence de Sophie, 1682-1689).",
+        "institutions": "Douma des boyards, prikazes, patriarche (Philarète, Nikon), émeutes des streltsy (1682).",
+        "administration": "Voïvodes dans les districts, prikazes centraux ; Sibérie administrée par un prikaze à part.",
+        "law": "Code de 1649 (Sobornoïe oulojénié) : servage héréditaire, justice de l'État et de l'Église."
+      },
+      "society": {
+        "religions": [
+          "Orthodoxie (schisme des Vieux-croyants après 1666)",
+          "Islam (Tatars, Bachkirs)",
+          "Catholiques, protestants du faubourg allemand",
+          "Cultes de Sibérie"
+        ],
+        "languages": [
+          "Russe",
+          "Ukrainien (Hetmanat)",
+          "Tatar",
+          "Langues sibériennes"
+        ],
+        "structure": "Boyards, noblesse de service, clergé, marchands, paysans serfs, cosaques, peuples tributaires de Sibérie.",
+        "women": "Séparation du terem pour l'élite, quelques femmes influentes à la cour ; la condition des paysannes dépend du seigneur."
+      },
+      "culture": {
+        "inventions": [
+          "Premier théâtre de cour (1672)",
+          "Peinture d'icônes de Simon Ouchakov",
+          "Académie slavo-gréco-latine (1687)"
+        ],
+        "works": [
+          "Vie de l'archiprêtre Avvakoum",
+          "Palais en bois de Kolomenskoïe (1667-1668)",
+          "Carte de la Sibérie de Godounov (1667)"
+        ],
+        "scholars": [
+          "Siméon de Polotsk",
+          "Avvakoum",
+          "Nikon (patriarche)",
+          "Simon Ouchakov"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Forts de Sibérie, canaux et routes de rivière, voie de poste vers Arkhangelsk ; quartier allemand de Moscou, premier rôle des techniciens étrangers."
+      },
+      "legacy": "Les Romanov restaurent l'État, annexent la rive gauche de l'Ukraine, atteignent le Pacifique et fixent le servage ; le Raskol et la révolte de Razine laissent des fractures durables."
+    },
+    {
+      "id": "pierre-le-grand",
+      "name": "Pierre le Grand et l'Empire",
+      "start": 1689,
+      "end": 1762,
+      "population": {
+        "total": {
+          "value": 15700000,
+          "low": 14000000,
+          "high": 17500000,
+          "year": 1719,
+          "note": "Premier recensement de la capitation (1719), hors Sibérie et peuples non taxés ; ordre de grandeur.",
+          "source": {
+            "label": "Wikipédia : Démographie de la Russie",
+            "url": "https://fr.wikipedia.org/wiki/Démographie_de_la_Russie"
+          }
+        },
+        "cities": [
+          {
+            "name": "Moscou",
+            "population": {
+              "value": 145000,
+              "low": 120000,
+              "high": 160000,
+              "year": 1725,
+              "note": "Ancienne capitale, encore la plus peuplée.",
+              "source": {
+                "label": "Wikipédia : Moscou",
+                "url": "https://fr.wikipedia.org/wiki/Moscou"
+              }
+            }
+          },
+          {
+            "name": "Saint-Pétersbourg",
+            "population": {
+              "value": 40000,
+              "low": 35000,
+              "high": 50000,
+              "year": 1725,
+              "note": "Ville nouvelle (1703), capitale depuis 1712.",
+              "source": {
+                "label": "Wikipédia : Saint-Pétersbourg",
+                "url": "https://fr.wikipedia.org/wiki/Saint-Pétersbourg"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 3.2,
+          "low": 2.8,
+          "high": 3.8,
+          "year": 1700,
+          "note": "Estimation reconstruite de Maddison pour la Russie.",
+          "source": {
+            "label": "Wikipédia : Angus Maddison",
+            "url": "https://fr.wikipedia.org/wiki/Angus_Maddison"
+          }
+        },
+        "resources": [
+          "Fer et cuivre de l'Oural",
+          "Chanvre, lin, voiles et cordages",
+          "Grain",
+          "Fourrures",
+          "Bois et goudron"
+        ],
+        "currency": "Rouble d'argent (décimal depuis 1704) ; monnaie de cuivre pour les petites sommes.",
+        "taxation": "Capitation par tête (1718-1724), qui remplace l'impôt par foyer ; monopoles du sel et du tabac.",
+        "trade": "Port de Saint-Pétersbourg et de Riga ; exportation de fer, de lin et de chanvre vers l'Angleterre."
+      },
+      "army": {
+        "size": {
+          "value": 220000,
+          "low": 180000,
+          "high": 300000,
+          "year": 1725,
+          "note": "Armée régulière et marine ; le total avec les troupes irrégulières est plus élevé.",
+          "source": {
+            "label": "Wikipédia : Armée impériale russe",
+            "url": "https://fr.wikipedia.org/wiki/Armée_impériale_russe"
+          }
+        },
+        "composition": "Infanterie et cavalerie régulières, grande artillerie, flotte de la Baltique, cosaques et troupes irrégulières.",
+        "recruitment": "Conscription par village à partir de 1705 (un homme par foyer ou groupe de foyers), service à vie.",
+        "famousUnits": [
+          "Régiments Preobrajenski et Semionovski (Garde)",
+          "Flotte de la Baltique",
+          "Cosaques de l'Ukraine"
+        ],
+        "innovations": [
+          "Conscription par villages (1705)",
+          "Règlement militaire de 1716",
+          "Marine de guerre créée de rien"
+        ]
+      },
+      "politics": {
+        "regime": "Autocratie impériale (titre d'empereur en 1721), pouvoir exercé par un souverain et son entourage.",
+        "head": "Tsar puis empereur (Pierre Ier, Catherine Ire, Pierre II, Anna, Élisabeth) ; coups d'État de palais.",
+        "succession": "Pierre impose en 1722 que le tsar désigne son héritier ; période de « règnes féminins » et de coups d'État de la garde.",
+        "institutions": "Sénat (1711), collèges (ministères, 1718-1720), Saint-Synode (1721), Table des rangs (1722).",
+        "administration": "Gouvernements et provinces dirigés par des gouverneurs ; Saint-Pétersbourg capitale en 1712.",
+        "law": "Oukazes impériaux, Règlement spirituel ; la noblesse est tenue au service jusqu'en 1762."
+      },
+      "society": {
+        "religions": [
+          "Orthodoxie d'État (Saint-Synode)",
+          "Vieux-croyants persécutés",
+          "Luthériens des provinces baltes",
+          "Islam, bouddhisme et chamanisme"
+        ],
+        "languages": [
+          "Russe",
+          "Allemand (provinces baltes)",
+          "Suédois et finnois (Ingrie)",
+          "Tatar, kalmouk, langues sibériennes"
+        ],
+        "structure": "Noblesse de service, clergé, marchands, serfs de plus en plus nombreux, paysans d'État, cosaques.",
+        "women": "Fin du terem pour l'élite : bals, assemblées mixtes à Saint-Pétersbourg ; quatre impératrices règnent entre 1725 et 1762."
+      },
+      "culture": {
+        "inventions": [
+          "Premier journal imprimé (Vedomosti, 1703)",
+          "Alphabet civil (1708)",
+          "Académie des sciences (1724)"
+        ],
+        "works": [
+          "Palais de Peterhof et Palais d'Hiver",
+          "Cathédrale Pierre-et-Paul",
+          "Odes de Lomonossov"
+        ],
+        "scholars": [
+          "Mikhaïl Lomonossov",
+          "Vassili Tatichtchev",
+          "Vitus Béring (explorateur)"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Saint-Pétersbourg, canaux (Ladoga), forts et arsenaux, usines de l'Oural ; routes de poste, mais peu de chaussées en dur."
+      },
+      "legacy": "Pierre fait de la Russie une puissance militaire et maritime ; ses réformes (armée, rangs, capitale, Académie) marquent durablement l'État, mais au prix d'un pouvoir autoritaire et du poids du servage."
+    },
+    {
+      "id": "catherine",
+      "name": "Catherine II et les grandes conquêtes",
+      "start": 1762,
+      "end": 1825,
+      "population": {
+        "total": {
+          "value": 37000000,
+          "low": 35000000,
+          "high": 40000000,
+          "year": 1795,
+          "note": "Révision fiscale de 1795, après les partages de la Pologne ; sans Sibérie et sans nomades, ordre de grandeur.",
+          "source": {
+            "label": "Wikipédia : Démographie de la Russie",
+            "url": "https://fr.wikipedia.org/wiki/Démographie_de_la_Russie"
+          }
+        },
+        "cities": [
+          {
+            "name": "Moscou",
+            "population": {
+              "value": 250000,
+              "low": 200000,
+              "high": 300000,
+              "year": 1800,
+              "note": "Deuxième ville de l'Empire, ancienne capitale.",
+              "source": {
+                "label": "Wikipédia : Moscou",
+                "url": "https://fr.wikipedia.org/wiki/Moscou"
+              }
+            }
+          },
+          {
+            "name": "Saint-Pétersbourg",
+            "population": {
+              "value": 220000,
+              "low": 200000,
+              "high": 250000,
+              "year": 1800,
+              "note": "Capitale, port ouvert sur la Baltique.",
+              "source": {
+                "label": "Wikipédia : Saint-Pétersbourg",
+                "url": "https://fr.wikipedia.org/wiki/Saint-Pétersbourg"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 5.4,
+          "low": 4.8,
+          "high": 6,
+          "year": 1820,
+          "note": "Estimation reconstruite de Maddison pour la Russie, avec les conquêtes.",
+          "source": {
+            "label": "Wikipédia : Angus Maddison",
+            "url": "https://fr.wikipedia.org/wiki/Angus_Maddison"
+          }
+        },
+        "resources": [
+          "Blé de la Nouvelle-Russie",
+          "Fer et cuivre de l'Oural",
+          "Lin et chanvre",
+          "Fourrures et poissons",
+          "Bois"
+        ],
+        "currency": "Rouble d'argent et de cuivre ; premiers assignats de papier-monnaie (1769).",
+        "taxation": "Capitation, redevances sur les paysans de la Couronne, droits de douane ; la noblesse exemptée du service depuis 1762.",
+        "trade": "Exportations de céréales par Odessa (fondée en 1794), de fer, de chanvre et de lin vers l'Angleterre ; commerce avec la Chine à Kiakhta."
+      },
+      "army": {
+        "size": {
+          "value": 450000,
+          "low": 350000,
+          "high": 550000,
+          "year": 1796,
+          "note": "Armée régulière à la mort de Catherine II ; ordre de grandeur, troupes irrégulières à part.",
+          "source": {
+            "label": "Wikipédia : Armée impériale russe",
+            "url": "https://fr.wikipedia.org/wiki/Armée_impériale_russe"
+          }
+        },
+        "composition": "Infanterie en colonnes, cavalerie légère (cosaques, hussards), artillerie, flotte de la Baltique et de la mer Noire.",
+        "recruitment": "Conscription des paysans par tirage (25 ans de service) ; officiers nobles, quelques étrangers.",
+        "famousUnits": [
+          "Garde impériale (Preobrajenski)",
+          "Cosaques du Don",
+          "Armée de Souvorov"
+        ],
+        "innovations": [
+          "Tactique offensive de Souvorov (baïonnette)",
+          "Artillerie légère mobile",
+          "Flotte de la mer Noire (Sébastopol)"
+        ]
+      },
+      "politics": {
+        "regime": "Autocratie « éclairée », appuyée sur la noblesse, qui reçoit sa Charte en 1785.",
+        "head": "Impératrice ou empereur (Catherine II, Paul Ier, Alexandre Ier).",
+        "succession": "Loi de succession de Paul Ier (1797) fixant l'ordre par primogéniture mâle.",
+        "institutions": "Sénat, ministères (1802), Conseil d'État (1810) ; pas d'assemblée représentative.",
+        "administration": "Réforme de 1775 : une cinquantaine de gouvernements dirigés par des gouverneurs-généraux.",
+        "law": "Charte de la noblesse (1785), Instruction de Catherine II (1767), peu de droits pour les serfs."
+      },
+      "society": {
+        "religions": [
+          "Orthodoxie",
+          "Catholiques et uniates de Pologne-Lituanie",
+          "Judaïsme (zone de résidence)",
+          "Islam, protestantisme, bouddhisme"
+        ],
+        "languages": [
+          "Russe",
+          "Polonais et biélorusse",
+          "Ukrainien",
+          "Yiddish, tatar, géorgien et autres"
+        ],
+        "structure": "Noblesse puissante, clergé, marchands, serfs privés (majorité des paysans), paysans de la Couronne, cosaques.",
+        "women": "Une impératrice règne trente-quatre ans ; les femmes nobles sont éduquées (institut Smolny, 1764), les paysannes restent sous l'autorité du seigneur et du mari."
+      },
+      "culture": {
+        "inventions": [
+          "Université de Moscou (1755)",
+          "Ermitage (collections de Catherine II)",
+          "Machine à vapeur de Polzounov (1766)"
+        ],
+        "works": [
+          "Cavalier de bronze de Falconet (1782)",
+          "Voyage de Saint-Pétersbourg à Moscou (Radichtchev, 1790)",
+          "Odes de Derjavine (Félitsa, 1782)"
+        ],
+        "scholars": [
+          "Mikhaïl Lomonossov",
+          "Ivan Polzounov",
+          "Alexandre Radichtchev",
+          "Nikolaï Karamzine"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Villes nouvelles de Nouvelle-Russie (Odessa, Kherson, Sébastopol), routes de poste, canaux de la Volga à la Baltique ; Saint-Pétersbourg monumental."
+      },
+      "legacy": "Catherine porte l'Empire sur la mer Noire, en Pologne et en Alaska, et crée l'image d'une Russie européenne ; sous son règne, l'asservissement des paysans atteint son maximum."
+    },
+    {
+      "id": "fin-empire",
+      "name": "De la Crimée à la révolution",
+      "start": 1825,
+      "end": 1917,
+      "population": {
+        "total": {
+          "value": 125600000,
+          "low": 125000000,
+          "high": 129000000,
+          "year": 1897,
+          "note": "Premier recensement général (1897), sans la Finlande, Boukhara et Khiva ; la population totale approche 175 millions en 1914.",
+          "source": {
+            "label": "Wikipédia : Démographie de la Russie",
+            "url": "https://fr.wikipedia.org/wiki/Démographie_de_la_Russie"
+          }
+        },
+        "cities": [
+          {
+            "name": "Saint-Pétersbourg",
+            "population": {
+              "value": 1265000,
+              "low": 1250000,
+              "high": 1270000,
+              "year": 1897,
+              "note": "Recensement de 1897 ; capitale de l'Empire.",
+              "source": {
+                "label": "Wikipédia : Saint-Pétersbourg",
+                "url": "https://fr.wikipedia.org/wiki/Saint-Pétersbourg"
+              }
+            }
+          },
+          {
+            "name": "Moscou",
+            "population": {
+              "value": 1039000,
+              "low": 1030000,
+              "high": 1045000,
+              "year": 1897,
+              "note": "Recensement de 1897.",
+              "source": {
+                "label": "Wikipédia : Moscou",
+                "url": "https://fr.wikipedia.org/wiki/Moscou"
+              }
+            }
+          },
+          {
+            "name": "Varsovie",
+            "population": {
+              "value": 638000,
+              "low": 630000,
+              "high": 645000,
+              "year": 1897,
+              "note": "Recensement de 1897 ; capitale du royaume de Pologne du Congrès.",
+              "source": {
+                "label": "Wikipédia : Varsovie",
+                "url": "https://fr.wikipedia.org/wiki/Varsovie"
+              }
+            }
+          },
+          {
+            "name": "Odessa",
+            "population": {
+              "value": 404000,
+              "low": 400000,
+              "high": 410000,
+              "year": 1897,
+              "note": "Recensement de 1897 ; grand port de la mer Noire.",
+              "source": {
+                "label": "Wikipédia : Odessa",
+                "url": "https://fr.wikipedia.org/wiki/Odessa"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 8.5,
+          "low": 7.5,
+          "high": 9.5,
+          "year": 1913,
+          "note": "Estimation reconstruite de Maddison pour l'Empire russe ; industrialisation rapide, mais revenu par habitant faible.",
+          "source": {
+            "label": "Wikipédia : Angus Maddison",
+            "url": "https://fr.wikipedia.org/wiki/Angus_Maddison"
+          }
+        },
+        "resources": [
+          "Blé (premier exportateur mondial)",
+          "Pétrole de Bakou",
+          "Charbon du Donbass et fer de l'Oural",
+          "Coton du Turkestan",
+          "Lin, bois, fourrures"
+        ],
+        "currency": "Rouble d'argent puis, depuis la réforme de Witte (1897), rouble d'or.",
+        "taxation": "Impôts indirects (alcool, sucre), droits de douane, redevances de rachat des terres (jusqu'en 1907), impôt sur le revenu en 1916.",
+        "trade": "Exportation de blé par Odessa et la Baltique, importation de machines ; capitaux français et belges dans les mines et chemins de fer."
+      },
+      "army": {
+        "size": {
+          "value": 5000000,
+          "low": 4500000,
+          "high": 5500000,
+          "year": 1914,
+          "note": "Armée mobilisée en août 1914, après une armée de temps de paix d'environ 1,4 million d'hommes.",
+          "source": {
+            "label": "Wikipédia : Armée impériale russe",
+            "url": "https://fr.wikipedia.org/wiki/Armée_impériale_russe"
+          }
+        },
+        "composition": "Infanterie, cavalerie (cosaques), artillerie, flotte de la Baltique et de la mer Noire, quelques avions et automobiles.",
+        "recruitment": "Conscription générale à partir de 1874 (Milioutine), service court ; mobilisation par districts.",
+        "famousUnits": [
+          "Garde impériale",
+          "Cosaques du Don et du Kouban",
+          "Armée du Caucase",
+          "Flotte de la mer Noire"
+        ],
+        "innovations": [
+          "Conscription universelle (1874)",
+          "Offensive Broussilov (1916)",
+          "Avions Ilia Mouromets (1914)"
+        ]
+      },
+      "politics": {
+        "regime": "Autocratie jusqu'en 1905 ; ensuite monarchie dotée d'une Douma (assemblée), qui reste faible ; en 1917, gouvernement provisoire.",
+        "head": "Empereur (Nicolas Ier, Alexandre II, Alexandre III, Nicolas II).",
+        "succession": "Primogéniture mâle (loi de 1797) ; en mars 1917, Nicolas II abdique.",
+        "institutions": "Conseil d'État, comité des ministres, zemstvos (1864), Douma d'État (1906), police politique (Okhrana).",
+        "administration": "Environ 80 gouvernements et régions, gouverneurs-généraux (Turkestan, Pologne, Caucase) ; Finlande autonome ; vassaux de Boukhara et de Khiva.",
+        "law": "Code de lois de 1832, réformes judiciaires de 1864 (jurés), lois fondamentales de 1906."
+      },
+      "society": {
+        "religions": [
+          "Orthodoxie",
+          "Islam (Caucase, Asie centrale, Volga)",
+          "Catholicisme (Pologne)",
+          "Judaïsme (zone de résidence)",
+          "Luthéranisme (Baltique, Finlande)"
+        ],
+        "languages": [
+          "Russe",
+          "Ukrainien et biélorusse",
+          "Polonais",
+          "Langues turciques (tatar, ouzbek, kazakh)",
+          "Yiddish, géorgien, arménien, finnois"
+        ],
+        "structure": "Noblesse, clergé, bourgeoisie naissante, ouvriers (3 millions en 1914), paysans (80 % de la population), minorités persécutées.",
+        "women": "Accès limité à l'université (cours Bestoujev, 1878) ; participation importante aux mouvements révolutionnaires ; droit de vote en 1917."
+      },
+      "culture": {
+        "inventions": [
+          "Tableau périodique (Mendeleïev, 1869)",
+          "Radio (Popov, 1895)",
+          "Réflexe conditionné (Pavlov, 1903)"
+        ],
+        "works": [
+          "Guerre et Paix (Tolstoï)",
+          "Les Frères Karamazov (Dostoïevski)",
+          "Lac des cygnes (Tchaïkovski)"
+        ],
+        "scholars": [
+          "Dmitri Mendeleïev",
+          "Ivan Pavlov",
+          "Nikolaï Lobatchevski",
+          "Léon Tolstoï"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Chemins de fer : Saint-Pétersbourg-Moscou (1851), Transsibérien (1891-1916), environ 70 000 km de lignes en 1914 ; ports de Vladivostok, de Batoum et de Bakou."
+      },
+      "legacy": "L'Empire atteint son extension maximale vers 1866 et s'industrialise, mais sa société reste inégalitaire ; défaites (Crimée, Japon) puis la Grande Guerre précipitent sa chute en 1917."
+    }
+  ]
+}

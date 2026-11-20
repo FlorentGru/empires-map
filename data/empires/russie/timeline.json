@@ -1,0 +1,2662 @@
+{
+  "id": "russie",
+  "name": "Empire russe",
+  "color": "#5a3d7a",
+  "start": 1547,
+  "end": 1917,
+  "description": "Né de la Moscovie d'Ivan IV, couronné premier tsar en 1547, l'Empire russe s'étend en quelques décennies de la Volga à la Sibérie, puis jusqu'au Pacifique ; Pierre le Grand l'ouvre sur la Baltique et l'Europe, Catherine II sur la mer Noire. Avec la conquête du Caucase et de l'Asie centrale, et l'Alaska qu'il vend en 1867, il devient le plus vaste État d'un seul tenant de son temps, sur plus de 22 millions de km². Gouverné par des tsars autocrates et une noblesse maîtresse des serfs, il vacille après les défaites de 1905 et de 1914-1917, et disparaît dans la révolution de 1917.",
+  "view": {
+    "center": [
+      70,
+      58
+    ],
+    "zoom": 2.6
+  },
+  "bounds": [
+    [
+      20,
+      35
+    ],
+    [
+      180,
+      75
+    ]
+  ],
+  "apogee": {
+    "stepId": "tachkent-1865",
+    "note": "L'extension maximale se situe vers 1866 : avec l'Alaska, avant sa vente en 1867, l'Empire couvre environ 22,8 millions de km². Ensuite il perd l'Alaska mais gagne en Asie centrale (Samarcande 1868, Khiva 1873, Kokand 1876), si bien que la surface en Eurasie continue de croître."
+  },
+  "periods": [
+    {
+      "id": "tsarat-moscou",
+      "name": "Le tsarat de Moscou",
+      "start": 1547,
+      "end": 1613,
+      "color": "#b9a0d4",
+      "summary": "Ivan IV se fait couronner tsar, prend Kazan et Astrakhan et ouvre la route de la Sibérie. À sa mort, le pays sombre dans le Temps des troubles, famine, faux tsars et invasion polonaise, avant que la milice de Minine et Pojarski ne délivre Moscou."
+    },
+    {
+      "id": "premiers-romanov",
+      "name": "Les premiers Romanov",
+      "start": 1613,
+      "end": 1689,
+      "color": "#8fb8de",
+      "summary": "Élue en 1613, la dynastie des Romanov rétablit l'ordre. Les cosaques atteignent le Pacifique, la rive gauche de l'Ukraine se rattache à Moscou, le servage se fige et le Raskol (schisme de l'Église) comme la révolte de Stenka Razine secouent le pays."
+    },
+    {
+      "id": "pierre-le-grand",
+      "name": "Pierre le Grand et l'Empire",
+      "start": 1689,
+      "end": 1762,
+      "color": "#9ccfa0",
+      "summary": "Pierre le Grand modernise l'armée, fonde Saint-Pétersbourg, bat la Suède et se proclame empereur en 1721. Après lui, des impératrices et des coups d'État de palais gouvernent un empire désormais lancé sur la scène européenne."
+    },
+    {
+      "id": "catherine",
+      "name": "Catherine II et les grandes conquêtes",
+      "start": 1762,
+      "end": 1825,
+      "color": "#e8c27a",
+      "summary": "Catherine II agrandit l'Empire aux dépens des Ottomans (Crimée, mer Noire) et de la Pologne, dont elle partage le territoire. Son petit-fils Alexandre Ier résiste à Napoléon en 1812 et défile à Paris en 1814."
+    },
+    {
+      "id": "fin-empire",
+      "name": "De la Crimée à la révolution",
+      "start": 1825,
+      "end": 1917,
+      "color": "#e39a8f",
+      "summary": "Après la guerre de Crimée, Alexandre II abolit le servage et conquiert le Caucase et l'Asie centrale ; le Transsibérien relie l'Empire. Défaite contre le Japon, révolution de 1905, guerre de 1914 : le régime s'effondre en 1917."
+    }
+  ],
+  "steps": [
+    {
+      "id": "couronnement-1547",
+      "year": 1547,
+      "title": "Ivan IV est couronné premier tsar de Russie",
+      "type": "politique",
+      "location": [
+        37.62,
+        55.75
+      ],
+      "zoom": 5,
+      "summary": "Le 16 janvier 1547, le grand-prince de Moscou Ivan IV, 16 ans, se fait couronner « tsar » (du latin Caesar) au Kremlin : la Moscovie se pose en héritière de Byzance et en rivale des khans tatars.",
+      "details": "Depuis la fin du XVᵉ siècle, les grands-princes de **Moscou** ont « rassemblé les terres russes » : Novgorod (1478), Tver (1485), Pskov (1510), Smolensk (1514) sont tombées sous leur autorité, et l'on a cessé de payer tribut à la **Horde d'Or**, l'empire mongol de la steppe, dont les héritiers sont les khanats tatars. Ivan, né en 1530, devient grand-prince à trois ans ; sa jeunesse est dominée par les querelles des **boyards**, les grands seigneurs terriens du pays.\n\nLe **16 janvier 1547**, dans la cathédrale de la Dormition du Kremlin, le métropolite Macaire le couronne **tsar** de toute la Russie. Le titre vient de « César » : Ivan se réclame de l'empereur byzantin, dont Constantinople est tombée en 1453 aux Ottomans. Moscou serait la « Troisième Rome », idée avancée par le moine Philothée de Pskov vers 1510. Le mariage avec Anastasia Romanova suit en février ; les Romanov monteront un jour sur le trône.\n\nLe règne commence par des réformes : première assemblée des états (le *zemski sobor*, 1549), nouveau code de lois (1550), création des **streltsy** (« tireurs »), fantassins armés de mousquets, premiers soldats permanents de Moscovie. Mais en juin 1547 un grand incendie de Moscou provoque une émeute contre la famille de sa mère, et le jeune tsar en garde une méfiance durable envers les grands.",
+      "consequences": [
+        "La Moscovie devient le « tsarat de Russie » : un souverain qui se dit égal des empereurs et non plus d'un simple prince.",
+        "La noblesse, les boyards et le clergé voient leur place redéfinie autour d'un pouvoir qui se veut sacré.",
+        "Les streltsy, premiers fantassins permanents à mousquet, donnent à Ivan les moyens d'une politique de conquête.",
+        "Le titre de « Troisième Rome » nourrit pour des siècles l'idée d'une mission de Moscou."
+      ],
+      "territory": "couronnement-1547",
+      "sources": [
+        {
+          "label": "Wikipédia — Ivan le Terrible",
+          "url": "https://fr.wikipedia.org/wiki/Ivan_le_Terrible"
+        },
+        {
+          "label": "Wikipédia — Tsarat de Russie",
+          "url": "https://fr.wikipedia.org/wiki/Tsarat_de_Russie"
+        },
+        {
+          "label": "Henri Troyat, Ivan le Terrible (Flammarion)"
+        }
+      ],
+      "territoryNote": "Grand-duché de Moscou en 1547 : de Pskov et Novgorod (annexés 1478-1510) à l'ouest jusqu'à l'Oural du Nord à l'est (Grande Perm, Viatka), de la mer Blanche et la Dvina du Nord (Kola, Arkhangelsk non fondée) au nord jusqu'à la ligne de défense de l'Oka et de Riazan (Tula) au sud ; Smolensk et Briansk-Seversk (pris à la Lituanie 1503-1514) inclus. Pas d'accès à la mer hors la mer Blanche et Ivangorod sur la Narva. Voisins : khanat de Kazan (moyenne Volga, tributaire/rival), khanat d'Astrakhan (basse Volga), Horde Nogaï (steppe de la Volga à l'Oural), khanat de Crimée (vassal ottoman, raids sur l'Oka), Pologne-Lituanie (Vitebsk, Tchernigov, Kiev, Polotsk), Ordre de Livonie (Narva, Dorpat, Riga), Suède (Finlande), khanat de Sibir au-delà de l'Oural.",
+      "figures": [
+        {
+          "name": "Ivan IV le Terrible",
+          "role": "Premier tsar de Russie",
+          "faction": "streltsy",
+          "archetype": "tsar",
+          "quote": "(formule libre) Je suis le tsar de toute la Russie, et nul n'est au-dessus de moi",
+          "person": "ivan-iv"
+        },
+        {
+          "name": "Macaire",
+          "role": "Métropolite de Moscou, il sacre le tsar",
+          "faction": "streltsy",
+          "archetype": "prelat",
+          "position": [
+            37.61,
+            55.752
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kazan-1552",
+      "year": 1552,
+      "title": "Kazan : la Volga devient russe",
+      "type": "bataille",
+      "location": [
+        49.11,
+        55.79
+      ],
+      "zoom": 5,
+      "summary": "Le 2 octobre 1552, l'armée d'Ivan IV emporte Kazan d'assaut après avoir fait sauter ses murailles ; le khanat tatar disparaît et la Volga moyenne passe à la Russie.",
+      "details": "Le **khanat de Kazan**, héritier de la Horde d'Or, tenait la Volga moyenne : ses **Tatars** (peuple turcophone et musulman) faisaient des raids sur les terres russes et vendaient des prisonniers comme esclaves. Après trois campagnes ratées, Ivan IV prépare un grand siège. En 1551 on construit à Sviiajsk, en amont de la ville, une forteresse de bois préfabriquée, flottée sur le fleuve pour servir de base.\n\nEn été 1552, le tsar quitte Moscou avec une armée nombreuse (chiffres incertains : de 60 000 à 150 000 hommes selon les chroniques), de l'artillerie et des *streltsy*. Kazan est entourée de remparts de bois et de terre ; le khan **Yadigar Muhammad** est défendu par quelques dizaines de milliers de guerriers. Les ingénieurs russes creusent des galeries sous les murs, y entassent de la poudre et la font exploser.\n\nLe **2 octobre 1552**, après l'explosion, l'assaut général est lancé. La ville est mise à sac, une partie de la population massacrée, le khan capturé : il sera baptisé et finira au service du tsar. Pour célébrer la victoire, Ivan fera bâtir sur la place Rouge la cathédrale de **Basile-le-Bienheureux** (1555-1561), reconnaissable à ses coupoles colorées.\n\nPour la première fois, la Russie annexe un État non russe et musulman : l'Empire multiethnique est né.",
+      "consequences": [
+        "Le khanat de Kazan est annexé : la Volga moyenne, la Tchouvachie, le Mari El et le Tatarstan actuels deviennent russes.",
+        "Astrakhan tombe à son tour en 1556 : toute la Volga est russe jusqu'à la mer Caspienne, et les Bachkirs se soumettent.",
+        "Le chemin de l'Oural est ouvert : le futur élan vers la Sibérie part de cette frontière.",
+        "La Russie compte désormais des millions de sujets musulmans, tatars, tchouvaches ou finno-ougriens, qu'elle gouverne en les laissant garder leur religion."
+      ],
+      "territory": "kazan-1552",
+      "sources": [
+        {
+          "label": "Wikipédia — Siège de Kazan (1552)",
+          "url": "https://fr.wikipedia.org/wiki/Prise_de_Kazan"
+        },
+        {
+          "label": "Wikipédia — Khanat de Kazan",
+          "url": "https://fr.wikipedia.org/wiki/Khanat_de_Kazan"
+        },
+        {
+          "label": "Michel Heller, Histoire de la Russie et de son empire (Plon)"
+        }
+      ],
+      "territoryNote": "Moscovie + ancien khanat de Kazan annexé en 1552 : moyenne Volga de Nijni Novgorod à la Kama (Tatarstan, Tchouvachie, Mari El, Oudmourtie occidentale) ; Bachkirs se soumettant 1552-1557 entre Volga et Oural. Astrakhan encore indépendant (basse Volga, tombera en 1556), Nogaïs au sud et à l'est. Ouest et nord comme en 1547 (Pskov, Novgorod, mer Blanche, Smolensk). Voisins : khanat de Crimée, Pologne-Lituanie, Ordre de Livonie, Suède, khanat de Sibir, khanat d'Astrakhan, Horde Nogaï, principautés du Caucase du Nord (Kabarda, alliée de Moscou).",
+      "battle": {
+        "belligerents": [
+          "Tsarat de Russie",
+          "Khanat de Kazan"
+        ],
+        "commanders": [
+          "Ivan IV",
+          "Mikhaïl Vorotynski",
+          "Yadigar Muhammad"
+        ],
+        "outcome": "Victoire russe ; Kazan prise d'assaut, le khanat est annexé",
+        "forces": "Russes : de 60 000 à 150 000 hommes selon les chroniques (très incertain) ; Tatars : quelques dizaines de milliers",
+        "losses": "Lourdes chez les défenseurs, population de Kazan en grande partie massacrée ou réduite en esclavage"
+      },
+      "armies": [
+        {
+          "side": "Armée moscovite",
+          "from": "Moscou",
+          "faction": "streltsy",
+          "path": [
+            [
+              37.62,
+              55.75
+            ],
+            [
+              40.4,
+              56.13
+            ],
+            [
+              44,
+              56.33
+            ],
+            [
+              48.65,
+              55.7
+            ],
+            [
+              49.11,
+              55.79
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Défenseurs de Kazan",
+          "from": "Kazan",
+          "faction": "tatars",
+          "path": [
+            [
+              50.1,
+              56.2
+            ],
+            [
+              49.11,
+              55.79
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Ivan IV le Terrible",
+          "role": "Tsar, chef de la campagne",
+          "faction": "streltsy",
+          "archetype": "tsar",
+          "position": [
+            48.9,
+            55.78
+          ],
+          "person": "ivan-iv"
+        },
+        {
+          "name": "Yadigar Muhammad",
+          "role": "Dernier khan de Kazan",
+          "faction": "tatars",
+          "archetype": "khan",
+          "position": [
+            49.15,
+            55.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "molodi-1572",
+      "year": 1572,
+      "title": "Molodi : la Moscovie arrête les Tatars de Crimée",
+      "type": "bataille",
+      "location": [
+        37.55,
+        55.3
+      ],
+      "zoom": 5,
+      "summary": "En août 1572, les troupes moscovites du prince Vorotynski écrasent près de Molodi l'armée du khan de Crimée Devlet Ier Giray, qui avait incendié Moscou un an plus tôt.",
+      "details": "Au sud de Moscou, la steppe appartient au **khanat de Crimée**, un État tatar vassal du sultan ottoman. Chaque été, ses cavaliers traversent l'Oka pour piller et enlever des captifs vendus sur les marchés d'esclaves de Caffa. En mai 1571, le khan **Devlet Ier Giray** surprend l'armée moscovite, atteint Moscou et incendie la ville, hors le Kremlin ; la tradition parle de dizaines de milliers de morts. Ivan IV, qui avait fui, lui écrit alors des lettres humiliantes.\n\nEn 1572, le khan revient avec une armée très nombreuse (les chiffres vont de 40 000 à plus de 100 000 hommes selon les sources) et des **janissaires** ottomans. Le prince **Mikhaïl Vorotynski** est chargé de la défense : il dispose de 20 000 à 25 000 hommes, de *streltsy*, de **cosaques** (cavaliers libres des frontières) et de mercenaires allemands. Il fait dresser un « gouliaï-gorod », un fort mobile fait de panneaux de bois, près du village de **Molodi**, à une cinquantaine de kilomètres au sud de Moscou.\n\nDu 30 juillet au 2 août, les Tatars lancent des assauts répétés. Le dernier jour, le voïvode Khvorostinine les prend à revers avec la cavalerie et leur inflige de lourdes pertes. Le khan se retire.\n\nVorotynski, héros de la bataille, sera pourtant arrêté et mourra sous la torture en 1573, accusé de sorcellerie : Ivan IV ne supportait pas sa popularité.",
+      "consequences": [
+        "La menace d'une prise de Moscou par les Tatars de Crimée disparaît ; la frontière sud tient sur l'Oka et la « ligne » de forteresses.",
+        "Les raids tatars continuent, mais avec moins de force, jusqu'à la fin du XVIIᵉ siècle ; la Russie finit par en faire un argument pour avancer vers la steppe.",
+        "La Moscovie est libre de se tourner vers l'ouest, dans la guerre de Livonie (1558-1583), qui tournera mal.",
+        "Les chefs militaires les plus brillants restent à la merci des soupçons du tsar."
+      ],
+      "territory": "molodi-1572",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Molodi",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Molodi"
+        },
+        {
+          "label": "Wikipédia — Khanat de Crimée",
+          "url": "https://fr.wikipedia.org/wiki/Khanat_de_Crimée"
+        },
+        {
+          "label": "Henri Troyat, Ivan le Terrible (Flammarion)"
+        }
+      ],
+      "territoryNote": "Tsarat de Russie en 1572 : Moscovie de 1547 + Volga entière (Kazan 1552, Astrakhan 1556) jusqu'à la Caspienne et à l'Oural (Bachkirie soumise), Terek (fort à l'embouchure) ; à l'ouest, conquêtes de la guerre de Livonie : Narva (1558), Dorpat (Tartu) et sud-est de l'Estonie, Polotsk (1563) ; pas encore la Sibérie (khanat de Sibir indépendant). Voisins : khanat de Crimée (Perekop, steppe jusqu'à l'Oka), Nogaïs, Pologne-Lituanie (Union de Lublin 1569 ; Kiev, Vitebsk, Smolensk-ligne), Ordre de Livonie dissous (Riga polono-lituanienne, Reval suédois, Courlande), Suède (Finlande), khanat de Sibir, Empire ottoman (Azov, Caffa).",
+      "battle": {
+        "belligerents": [
+          "Tsarat de Russie",
+          "Khanat de Crimée (avec appui ottoman)"
+        ],
+        "commanders": [
+          "Mikhaïl Vorotynski",
+          "Dmitri Khvorostinine",
+          "Devlet Ier Giray"
+        ],
+        "outcome": "Victoire russe ; l'armée du khan se retire après de lourdes pertes",
+        "forces": "Russes : environ 20 000 à 25 000 ; Tatars et Ottomans : 40 000 à plus de 100 000 selon les sources (très incertain)",
+        "losses": "Très lourdes chez les Tatars, dont plusieurs chefs de premier plan"
+      },
+      "armies": [
+        {
+          "side": "Moscovites de Vorotynski",
+          "from": "Serpoukhov",
+          "faction": "streltsy",
+          "path": [
+            [
+              37.4,
+              54.9
+            ],
+            [
+              37.5,
+              55.3
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Tatars de Crimée",
+          "from": "Perekop",
+          "faction": "tatars",
+          "path": [
+            [
+              33.7,
+              46.2
+            ],
+            [
+              36.2,
+              50.5
+            ],
+            [
+              37.3,
+              53.5
+            ],
+            [
+              37.55,
+              55.3
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Mikhaïl Vorotynski",
+          "role": "Voïvode, vainqueur de Molodi",
+          "faction": "streltsy",
+          "archetype": "general",
+          "position": [
+            37.45,
+            55.28
+          ]
+        },
+        {
+          "name": "Devlet Ier Giray",
+          "role": "Khan de Crimée",
+          "faction": "tatars",
+          "archetype": "khan",
+          "position": [
+            37.62,
+            55.32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sibir-1582",
+      "year": 1582,
+      "title": "Ermak et les cosaques passent l'Oural : la Sibérie",
+      "type": "bataille",
+      "location": [
+        68.3,
+        58.2
+      ],
+      "zoom": 4.6,
+      "summary": "En 1582, le cosaque Ermak, payé par la famille de marchands Stroganov, franchit l'Oural avec quelques centaines d'hommes et bat le khan Koutchoum : c'est le début de la conquête de la Sibérie.",
+      "details": "À l'est de l'Oural s'étend le **khanat de Sibir**, un État tatar musulman tenu depuis 1563 par le khan **Koutchoum**. Les **Stroganov**, riches marchands qui exploitent le sel et les fourrures sur la Kama, sont harcelés par ses raids. Ils engagent des **cosaques** : ces hommes libres de la steppe, mi-guerriers mi-bandits, sont conduits par **Ermak Timofeïevitch**, ancien chef cosaque de la Volga ou du Don (ses origines restent discutées).\n\nAvec 540 à 840 hommes selon les sources, des arquebuses et un petit canon, Ermak quitte la région de Perm en 1581 ou 1582 (la date est discutée), remonte les rivières, franchit l'Oural et descend vers la Tobol puis l'Irtych. En octobre 1582, près de **Kachlyk** (Isker), la capitale de Koutchoum, quelques milliers de guerriers tatars chargent avec arcs et flèches ; les armes à feu russes décident de la bataille. Le khan s'enfuit, la ville est prise.\n\nErmak envoie à Moscou une ambassade, de précieuses fourrures de zibeline, et demande l'aide du tsar, qui le gracie de ses crimes passés. Mais les Tatars reviennent : en août 1585, Ermak se noie dans l'Irtych, surpris de nuit, entraîné par sa cotte de mailles. L'avancée russe ne s'arrête pas : Tobolsk est fondée en 1587 ; la Sibérie, avec ses fourrures, devient pour des siècles une colonie vitale.",
+      "consequences": [
+        "Le khanat de Sibir est détruit : l'ouest de la plaine sibérienne, autour de Tobolsk, passe sous contrôle russe.",
+        "La fourrure (zibeline) devient une ressource clé du Trésor : le tribut en fourrures (yasak) est levé sur les peuples sibériens.",
+        "Les forts se succèdent vers l'est : Tobolsk (1587), Tomsk (1604), puis le Pacifique en 1639.",
+        "Ermak devient un héros fondateur dans la mémoire russe, malgré un passé de pillard."
+      ],
+      "territory": "sibir-1582",
+      "sources": [
+        {
+          "label": "Wikipédia — Ermak Timofeïevitch",
+          "url": "https://fr.wikipedia.org/wiki/Ermak_Timofeïévitch"
+        },
+        {
+          "label": "Wikipédia — Khanat de Sibir",
+          "url": "https://fr.wikipedia.org/wiki/Khanat_de_Sibir"
+        },
+        {
+          "label": "Michel Heller, Histoire de la Russie et de son empire (Plon)"
+        }
+      ],
+      "territoryNote": "Tsarat en 1582 : Volga entière (Kazan, Astrakhan), Bachkirie, domaines des Stroganov en Grande Perm sur la Kama et la Tchoussovaïa ; Sibérie occidentale seulement autour de Tobolsk-Kachlyk (confluent Tobol-Irtych), tenue par une poignée de cosaques, le reste du khanat de Sibir (haut Irtych, Ob) encore tatar ; pas de Sibérie orientale. À l'ouest : Livonie et Polotsk perdues par les trêves de Iam-Zapolski (1582) et de Plioussa (1583 : Ivangorod, Iam, Koporié cédés à la Suède) ; plus d'accès à la Baltique ; Novgorod, Pskov, Smolensk, Seversk restent russes. Voisins : Pologne-Lituanie d'Étienne Bathory, Suède de Jean III, khanat de Crimée, Nogaïs, khanat de Sibir de Koutchoum, Kazakhs.",
+      "battle": {
+        "belligerents": [
+          "Cosaques d'Ermak (au service des Stroganov)",
+          "Khanat de Sibir"
+        ],
+        "commanders": [
+          "Ermak Timofeïevitch",
+          "Koutchoum"
+        ],
+        "outcome": "Victoire cosaque ; Kachlyk (Isker) est prise, le khan s'enfuit",
+        "forces": "Cosaques : 540 à 840 hommes selon les sources ; Tatars : plusieurs milliers (estimation incertaine)",
+        "losses": "Lourdes chez les Tatars ; une partie des cosaques d'Ermak meurent de faim ou de froid l'hiver suivant"
+      },
+      "armies": [
+        {
+          "side": "Cosaques d'Ermak",
+          "from": "Perm des Stroganov",
+          "faction": "cosaques",
+          "path": [
+            [
+              56.8,
+              59.4
+            ],
+            [
+              59,
+              58.5
+            ],
+            [
+              63,
+              57.4
+            ],
+            [
+              66.5,
+              57.9
+            ],
+            [
+              68.37,
+              58.17
+            ]
+          ],
+          "strength": 1,
+          "winner": true
+        },
+        {
+          "side": "Tatars de Koutchoum",
+          "from": "Kachlyk",
+          "faction": "tatars",
+          "path": [
+            [
+              70,
+              58.6
+            ],
+            [
+              68.37,
+              58.17
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Ermak Timofeïevitch",
+          "role": "Ataman cosaque, conquérant de la Sibérie",
+          "faction": "cosaques",
+          "archetype": "capitaine",
+          "position": [
+            68.2,
+            58.15
+          ],
+          "person": "ermak"
+        },
+        {
+          "name": "Koutchoum",
+          "role": "Khan de Sibir",
+          "faction": "tatars",
+          "archetype": "khan",
+          "position": [
+            68.45,
+            58.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "moscou-1612",
+      "year": 1612,
+      "title": "Minine et Pojarski délivrent Moscou",
+      "type": "bataille",
+      "location": [
+        37.62,
+        55.75
+      ],
+      "zoom": 5,
+      "summary": "Après la mort sans héritier du dernier Riourikide, la Russie sombre dans le Temps des troubles ; en octobre 1612, une milice populaire, menée par Minine et Pojarski, chasse les Polonais du Kremlin.",
+      "details": "En 1598, le fils d'Ivan IV, Fiodor, meurt sans enfant : la lignée des Riourikides, qui régnait depuis des siècles, s'éteint. Commence le **Temps des troubles** : tsar élu Boris Godounov, famine de 1601-1603, faux Dimitri qui se disent fils d'Ivan, guerres civiles, intervention de la Pologne et de la Suède. En juillet 1610, à **Klouchino**, une armée russo-suédoise est écrasée par la cavalerie polonaise (les « hussards ailés ») de Żółkiewski. Le tsar Chouïski est renversé ; les boyards (les « Sept Boyards ») invitent Ladislas, fils du roi de Pologne, à régner, et en septembre 1610 une **garnison polonaise entre au Kremlin**. Smolensk tombe en 1611, Novgorod est prise par les Suédois.\n\nLe patriarche Hermogène refuse cet arrangement et meurt de faim en prison (1612). Un boucher et marchand de Nijni Novgorod, **Kouzma Minine**, lance une collecte pour lever une armée ; il offre le commandement au prince **Dmitri Pojarski**. Cette seconde milice (*opoltchénié*), partie de Nijni, passe par Iaroslavl, arrive à Moscou en août et repousse l'armée polonaise de secours de Chodkiewicz. Fin octobre 1612 (calendrier julien ; 4 novembre selon le nôtre), la garnison affamée capitule. Aujourd'hui encore, la Russie célèbre cette date comme « fête de l'unité nationale ».",
+      "consequences": [
+        "Moscou est libérée des Polonais en 1612 ; la Russie échappe à la partition, mais Smolensk et Novgorod restent aux mains des Polonais et des Suédois.",
+        "Une assemblée de la terre peut élire un nouveau tsar en 1613 : la dynastie des Romanov.",
+        "Minine et Pojarski deviennent les héros d'un patriotisme populaire, avec leur monument sur la place Rouge (1818).",
+        "Le souvenir du chaos renforce l'idée qu'un pouvoir fort est le seul rempart contre le désordre."
+      ],
+      "territory": "moscou-1612",
+      "sources": [
+        {
+          "label": "Wikipédia — Temps des troubles",
+          "url": "https://fr.wikipedia.org/wiki/Temps_des_troubles_(Russie)"
+        },
+        {
+          "label": "Wikipédia — Kouzma Minine",
+          "url": "https://fr.wikipedia.org/wiki/Kouzma_Minine"
+        },
+        {
+          "label": "Michel Heller, Histoire de la Russie et de son empire (Plon)"
+        }
+      ],
+      "territoryNote": "État en morcellement en 1612 : Moscou (Kremlin tenu par les Polonais jusqu'à fin octobre), Nijni Novgorod, Iaroslavl, Vologda et le Nord (Pomorie), Volga jusqu'à Astrakhan, Sibérie occidentale (Tobolsk 1587, Tioumen 1586, Tomsk 1604) et Sibérie centrale restées russes ; Smolensk tenue par les Polonais depuis 1611, Novgorod tenue par les Suédois depuis 1611 (Ladoga, Ingrie), Pskov en dissidence ; bandes cosaques au sud (Tula, Kalouga). Voisins : Pologne-Lituanie de Sigismond III, Suède de Gustave-Adolphe, khanat de Crimée, Nogaïs, Kazakhs.",
+      "battle": {
+        "belligerents": [
+          "Milice russe (opoltchénié)",
+          "Garnison et armée de secours polonaises"
+        ],
+        "commanders": [
+          "Kouzma Minine",
+          "Dmitri Pojarski",
+          "Jan Karol Chodkiewicz"
+        ],
+        "outcome": "Victoire russe ; le Kremlin capitule fin octobre 1612",
+        "forces": "Milice : environ 10 000 hommes ; armée polonaise de secours : environ 12 000 (estimations discutées)",
+        "losses": "Faibles pertes russes en combat ; garnison polonaise réduite à la famine"
+      },
+      "armies": [
+        {
+          "side": "Milice de Minine et Pojarski",
+          "from": "Nijni Novgorod",
+          "faction": "streltsy",
+          "path": [
+            [
+              44,
+              56.33
+            ],
+            [
+              39.89,
+              57.63
+            ],
+            [
+              38.13,
+              56.31
+            ],
+            [
+              37.62,
+              55.75
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée polonaise de Chodkiewicz",
+          "from": "Smolensk",
+          "faction": "polonais",
+          "path": [
+            [
+              32.05,
+              54.78
+            ],
+            [
+              35.3,
+              55.2
+            ],
+            [
+              37.5,
+              55.7
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Kouzma Minine",
+          "role": "Marchand de Nijni Novgorod, organisateur de la milice",
+          "faction": "streltsy",
+          "archetype": "capitaine",
+          "quote": "(formule libre) Pour sauver la Russie, il faudra donner nos biens, et même nos enfants",
+          "position": [
+            37.66,
+            55.74
+          ]
+        },
+        {
+          "name": "Dmitri Pojarski",
+          "role": "Prince, chef militaire de la milice",
+          "faction": "streltsy",
+          "archetype": "general",
+          "position": [
+            37.58,
+            55.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "romanov-1613",
+      "year": 1613,
+      "title": "Michel Romanov, premier tsar de la dynastie",
+      "type": "politique",
+      "location": [
+        37.62,
+        55.75
+      ],
+      "zoom": 5,
+      "summary": "En février 1613, une grande assemblée de la terre élit tsar Michel Romanov, 16 ans : la dynastie qui régnera jusqu'en 1917 commence, dans un pays ruiné.",
+      "details": "Une fois les Polonais chassés de Moscou, il faut un tsar. Au début de 1613, un *zemski sobor*, assemblée élargie de nobles, de clergé, de marchands et de délégués des villes, se réunit au Kremlin. Les candidatures étrangères (le prince polonais Ladislas, un prince suédois) sont écartées. Les cosaques, très influents, soutiennent **Michel Fiodorovitch Romanov**, 16 ans, jeune homme sans expérience, mais neveu à la mode de Bretagne du dernier tsar Fiodor et sans lien avec les factions du Temps des troubles. Son père, **Philarète**, grand seigneur devenu moine puis métropolite, est alors prisonnier des Polonais.\n\nMichel est couronné le **11 juillet 1613**. Le pays est dévasté : villes brûlées, paysans en fuite, caisses vides, bandes armées partout. Les traités rétablissent peu à peu la paix : en **1617**, la paix de Stolbovo avec la Suède rend Novgorod mais prive la Russie de la côte de la Baltique (Ingrie, Carélie) ; en **1618**, la trêve de Deoulino avec la Pologne lui coûte Smolensk et Tchernigov.\n\nQuand Philarète revient de captivité en 1619, il devient patriarche de Moscou et, avec le titre de « grand souverain », gouverne de fait aux côtés de son fils jusqu'à sa mort en 1633. La dynastie Romanov durera trois siècles, jusqu'à Nicolas II.",
+      "consequences": [
+        "La Russie retrouve un souverain légitime ; l'anarchie du Temps des troubles prend fin.",
+        "Elle perd l'accès à la Baltique (Stolbovo, 1617) et Smolensk (Deoulino, 1618), mais garde son cœur et la Sibérie.",
+        "Le patriarche Philarète, père du tsar, dirige l'Église et l'État ; la double autorité du « grand souverain » montre la place du clergé.",
+        "La dynastie Romanov règne sans interruption jusqu'à l'abdication de 1917."
+      ],
+      "territory": "romanov-1613",
+      "sources": [
+        {
+          "label": "Wikipédia — Michel Ier de Russie",
+          "url": "https://fr.wikipedia.org/wiki/Michel_Ier_de_Russie"
+        },
+        {
+          "label": "Wikipédia — Dynastie des Romanov",
+          "url": "https://fr.wikipedia.org/wiki/Maison_Romanov"
+        },
+        {
+          "label": "Hélène Carrère d'Encausse, Les Romanov (Fayard)"
+        }
+      ],
+      "territoryNote": "Tsarat en 1613 (avant Stolbovo et Deoulino) : cœur moscovite (Moscou, Vladimir, Nijni Novgorod, Iaroslavl, Vologda), Pomorie jusqu'à la mer Blanche, Volga entière jusqu'à Astrakhan, Bachkirie, Sibérie occidentale (Tobolsk, Tioumen, Tomsk) et moyenne Sibérie (Ob, haut Ienisseï) ; hors du tsarat à cette date : Smolensk (Polonais depuis 1611), Novgorod et Ladoga (Suédois, rendus en 1617 mais Ingrie et Carélie perdues), Seversk (Tchernigov, Novgorod-Seversky) tenus par la Pologne. Voisins : Pologne-Lituanie de Sigismond III, Suède de Gustave-Adolphe, khanat de Crimée, Nogaïs, Kalmouks arrivant sur la basse Volga, Kazakhs, khanat de Boukhara.",
+      "figures": [
+        {
+          "name": "Michel Ier Romanov",
+          "role": "Tsar à 16 ans, fondateur de la dynastie",
+          "faction": "streltsy",
+          "archetype": "tsar",
+          "person": "michel-romanov",
+          "position": [
+            37.62,
+            55.755
+          ]
+        },
+        {
+          "name": "Philarète",
+          "role": "Patriarche de Moscou, père du tsar",
+          "faction": "streltsy",
+          "archetype": "prelat",
+          "position": [
+            37.6,
+            55.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "okhotsk-1639",
+      "year": 1639,
+      "title": "Les cosaques atteignent le Pacifique",
+      "type": "politique",
+      "location": [
+        143.2,
+        59.36
+      ],
+      "zoom": 4,
+      "summary": "En 1639, le cosaque Ivan Moskvitine arrive sur les rives de la mer d'Okhotsk : en moins de soixante ans, les Russes ont traversé toute la Sibérie, de l'Oural au Pacifique.",
+      "details": "Après Ermak, les Russes avancent vers l'est en suivant les fleuves : on y bâtit des **ostrogs**, petits forts de bois, tous les quelques centaines de kilomètres. Tomsk date de 1604, Ienisseïsk de 1618, Krasnoïarsk de 1628, **Iakoutsk** (sur la Lena) de 1632. Le moteur est la **fourrure** : zibelines, renards et hermines que l'on collecte sous forme d'impôt (le *yasak*) auprès des peuples locaux (Évenks, Iakoutes, Bouriates), qui représentent à certains moments environ le dixième des recettes de l'État.\n\nEn 1639, une petite troupe de cosaques menée par **Ivan Moskvitine**, partie de Iakoutsk, traverse les chaînes de montagnes jusqu'à la rivière Oulia et atteint la **mer d'Okhotsk**, l'un des bords du Pacifique : ils n'ont mis que quelques décennies pour franchir plus de 6 000 km. Ils y construisent des bateaux et explorent la côte ; un fort sera installé à **Okhotsk** en 1647, premier port russe du Pacifique. En 1648, un autre cosaque, Semion Dejnev, contourne le cap de l'extrême nord-est et passe le détroit qu'on appellera plus tard détroit de Béring.\n\nLes peuples de Sibérie, peu nombreux, résistent parfois (les Iakoutes se soulèvent en 1630-1640) mais subissent contraintes, maladies et captures d'otages.",
+      "consequences": [
+        "La Russie s'étend, en un demi-siècle, sur toute la Sibérie jusqu'à la côte du Pacifique à Okhotsk.",
+        "La fourrure alimente le Trésor et fait des fonctionnaires et des marchands de Sibérie des acteurs essentiels de l'État.",
+        "Les peuples locaux (Évenks, Iakoutes, Bouriates) doivent le tribut en fourrures et subissent de lourdes pertes.",
+        "La Russie devient voisine de la Chine : la frontière de l'Amour sera bientôt disputée (Nertchinsk, 1689)."
+      ],
+      "territory": "okhotsk-1639",
+      "sources": [
+        {
+          "label": "Wikipédia — Conquête russe de la Sibérie",
+          "url": "https://fr.wikipedia.org/wiki/Conquête_russe_de_la_Sibérie"
+        },
+        {
+          "label": "Wikipédia — Okhotsk",
+          "url": "https://fr.wikipedia.org/wiki/Okhotsk"
+        },
+        {
+          "label": "Michel Heller, Histoire de la Russie et de son empire (Plon)"
+        }
+      ],
+      "territoryNote": "Tsarat en 1639 : Russie d'Europe (Moscou, Volga jusqu'à Astrakhan, Oural, Bachkirie) ; Sibérie occidentale (Tobolsk, Tioumen, Tomsk), Sibérie centrale (Ienisseï : Ienisseïsk 1618, Krasnoïarsk 1628), Lena avec Iakoutsk (1632) et côte du Pacifique à Okhotsk (mer d'Okhotsk) : chaîne de forts le long des fleuves, pas encore de contrôle sur le Baïkal (Irkoutsk 1661), l'Amour ni le Kamtchatka (1697-1700). Ouest : sans Smolensk, Tchernigov, Seversk (Pologne depuis Deoulino 1618) ni Ingrie et Carélie (Suède depuis Stolbovo 1617). Voisins : Pologne-Lituanie de Ladislas IV, Suède de Christine, khanat de Crimée, Kalmouks, Kazakhs, khanat de Boukhara, Mongols Khalkhas, Mandchous naissants.",
+      "armies": [
+        {
+          "side": "Cosaques de Moskvitine",
+          "from": "Iakoutsk",
+          "faction": "cosaques",
+          "path": [
+            [
+              129.73,
+              62.03
+            ],
+            [
+              135,
+              60.3
+            ],
+            [
+              139.5,
+              59.7
+            ],
+            [
+              143.2,
+              59.36
+            ]
+          ],
+          "strength": 1,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Ivan Moskvitine",
+          "role": "Cosaque, premier Russe sur la côte du Pacifique",
+          "faction": "cosaques",
+          "archetype": "capitaine",
+          "position": [
+            143,
+            59.4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pereiaslav-1654",
+      "year": 1654,
+      "title": "Pereïaslav : les cosaques d'Ukraine se placent sous le tsar",
+      "type": "traité",
+      "location": [
+        31.45,
+        50.07
+      ],
+      "zoom": 5,
+      "summary": "En janvier 1654, le hetman cosaque Khmelnytsky, en guerre contre la Pologne, jure fidélité au tsar Alexis Ier à Pereïaslav : la rive gauche du Dniepr et Kiev passeront à la Russie.",
+      "details": "Au XVIIᵉ siècle, l'Ukraine appartient à la **République des Deux Nations**, union de la Pologne et de la Lituanie. Les **cosaques zaporogues**, communauté de guerriers libres établis près des rapides du Dniepr, y sont mécontents du pouvoir polonais, catholique et nobiliaire, alors qu'eux sont orthodoxes. En 1648, le hetman (chef militaire) **Bohdan Khmelnytsky** lance un immense soulèvement ; il remporte des victoires puis est vaincu à Berestetchko (1651).\n\nPour sortir de l'impasse, il cherche un protecteur. Le sultan ottoman et le roi de Pologne ne pouvant lui convenir, il se tourne vers le tsar **Alexis Ier** (Alexis Mikhaïlovitch), orthodoxe comme lui. À **Pereïaslav**, le 8 janvier 1654 (calendrier julien), une assemblée cosaque (*rada*) prête serment ; l'envoyé du tsar, le boyard Vassili Bouturlin, accepte. Les cosaques conservent leur hetman et leur armée, mais la nature exacte du lien est discutée : alliance militaire pour les uns, soumission pour les autres.\n\nUne guerre russo-polonaise éclate (1654-1667) ; Smolensk est reprise. La **trêve d'Androussovo (1667)** partage l'Ukraine le long du Dniepr : la rive gauche et Kiev reviennent à la Russie, la rive droite à la Pologne. Pereïaslav reste, pour les historiens russes, une « réunification » et, pour les historiens ukrainiens, un pacte inégal.",
+      "consequences": [
+        "La rive gauche du Dniepr, avec Kiev, entre peu à peu dans la sphère russe sous le nom de « Petite Russie » ; l'Hetmanat cosaque devient un protectorat autonome.",
+        "La guerre contre la Pologne (1654-1667) rend Smolensk, Tchernigov et la région de Seversk à la Russie.",
+        "La rive droite reste polonaise et l'Ukraine est coupée en deux pour un siècle.",
+        "L'interprétation de 1654 (réunification ou soumission) reste, encore aujourd'hui, un sujet de controverse."
+      ],
+      "territory": "pereiaslav-1654",
+      "sources": [
+        {
+          "label": "Wikipédia — Traité de Pereïaslav",
+          "url": "https://fr.wikipedia.org/wiki/Traité_de_Pereïaslav_(1654)"
+        },
+        {
+          "label": "Wikipédia — Bohdan Khmelnytsky",
+          "url": "https://fr.wikipedia.org/wiki/Bogdan_Khmelnitski"
+        },
+        {
+          "label": "Michel Heller, Histoire de la Russie et de son empire (Plon)"
+        }
+      ],
+      "territoryNote": "Tsarat en 1654 : Russie moscovite (Moscou, Volga, Oural, Pomorie, Novgorod rendu en 1617), Sibérie jusqu'à Okhotsk et la haute Lena, Baïkal en cours (Nertchinsk fondé 1653) ; sans Smolensk (reprise en 1654, confirmée par Androussovo 1667). Hetmanat cosaque (protectorat russe à partir de 1654) : Ukraine centrale de Kiev et Tchernigov à Poltava et Tchyhyryn (capitale), sur les deux rives du Dniepr Zaporojie aux rapides du Dniepr ; Podolie et Galicie restent polonaises. Voisins : Pologne-Lituanie de Jean-Casimir, Suède, khanat de Crimée (vassal ottoman, allié de Khmelnytsky 1648-54), Empire ottoman (Azov, mer Noire), Kalmouks, Kazakhs, Mandchous (dynastie Qing naissante).",
+      "armies": [
+        {
+          "side": "Cosaques de Khmelnytsky",
+          "from": "Tchyhyryn",
+          "faction": "cosaques",
+          "path": [
+            [
+              32.66,
+              49.08
+            ],
+            [
+              31.9,
+              49.6
+            ],
+            [
+              31.45,
+              50.07
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Ambassade du tsar (Bouturlin)",
+          "from": "Moscou",
+          "faction": "streltsy",
+          "path": [
+            [
+              37.62,
+              55.75
+            ],
+            [
+              36,
+              53.2
+            ],
+            [
+              33.87,
+              51.34
+            ],
+            [
+              31.45,
+              50.07
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Bohdan Khmelnytsky",
+          "role": "Hetman des cosaques zaporogues",
+          "faction": "cosaques",
+          "archetype": "general",
+          "quote": "(formule libre) Nous ne voulons plus que le tsar orthodoxe soit notre protecteur",
+          "position": [
+            31.4,
+            50.07
+          ]
+        },
+        {
+          "name": "Alexis Ier Mikhaïlovitch",
+          "role": "Tsar de Russie",
+          "faction": "streltsy",
+          "archetype": "tsar",
+          "position": [
+            37.6,
+            55.76
+          ]
+        }
+      ]
+    },
+    {
+      "id": "razine-1670",
+      "year": 1670,
+      "title": "Stenka Razine : la grande révolte de la Volga",
+      "type": "bataille",
+      "location": [
+        48.4,
+        54.33
+      ],
+      "zoom": 4.6,
+      "summary": "En 1670, le cosaque Stenka Razine soulève paysans et peuples de la Volga contre les boyards ; il est battu devant Simbirsk, puis écartelé à Moscou en 1671.",
+      "details": "Sous le tsar Alexis, le **Code de 1649** achève l'asservissement des paysans, attachés à vie à la terre de leur seigneur (le **servage**). Beaucoup s'enfuient vers le Don, où vivent les **cosaques** : hommes libres des frontières, qui refusent tout maître. Leur chef **Stenka (Stepan) Razine** se fait connaître par des raids spectaculaires sur la Volga, puis en 1668-1669 sur la mer Caspienne, jusqu'à la Perse, avec butin et captifs.\n\nEn 1670, il lève le drapeau de la révolte : il prétend vouloir châtier les boyards, les marchands et les fonctionnaires « traîtres » et non le tsar, que l'on dit trahi. Tsaritsyne, Astrakhan (où des *streltsy* passent à ses côtés), Saratov, Samara tombent ; paysans russes, Tatars, Tchouvaches, Mordves, Maris se joignent à lui. Plus de 20 000 hommes, selon certains récits, le suivent.\n\nDevant **Simbirsk**, en octobre 1670, les troupes du prince Iouri Bariatinski, mieux armées et organisées, battent les rebelles. Razine, blessé, se replie sur le Don où l'élite cosaque, inquiète de représailles, le livre au tsar en avril 1671. Il est exécuté, écartelé sur la place Rouge, le 6 juin 1671. Sa légende reste immense : chansons populaires, héros romantique, symbole de la soif de liberté.",
+      "consequences": [
+        "La révolte est écrasée ; la répression fait des milliers de morts le long de la Volga.",
+        "Le servage sort renforcé : l'État s'appuie plus que jamais sur la noblesse, qui reçoit en échange la terre et ses paysans.",
+        "Les cosaques du Don, d'abord insoumis, se rapprochent du tsar, qui leur fournit tribut et privilèges.",
+        "Razine devient une figure du folklore et de la littérature russes, avant celle de Pougatchev."
+      ],
+      "territory": "razine-1670",
+      "sources": [
+        {
+          "label": "Wikipédia — Stenka Razine",
+          "url": "https://fr.wikipedia.org/wiki/Stenka_Razine"
+        },
+        {
+          "label": "Wikipédia — Alexis Ier de Russie",
+          "url": "https://fr.wikipedia.org/wiki/Alexis_Ier_de_Russie"
+        },
+        {
+          "label": "Michel Heller, Histoire de la Russie et de son empire (Plon)"
+        }
+      ],
+      "territoryNote": "Tsarat en 1670 : Russie moscovite avec Smolensk, Tchernigov et Seversk (reprises 1654-1667), rive gauche du Dniepr et Kiev (Androussovo 1667) en Hetmanat cosaque sous protection russe (Zaporojie en condominium), Volga à Astrakhan, Oural, Sibérie jusqu'au Pacifique (Okhotsk, Iakoutsk, Irkoutsk fondé 1661, Nertchinsk 1653, fort d'Albazine sur l'Amour 1665). Rive droite du Dniepr (Bratslav, Podolie) polonaise puis ottomane (1672) ; pas de Baltique (Suède : Ingrie, Carélie, Livonie, Estonie), pas de mer Noire (Azov ottoman, steppe tatare de Crimée). Voisins : Pologne-Lituanie, Suède, khanat de Crimée, Empire ottoman, Kalmouks, Kazakhs, Mandchous.",
+      "battle": {
+        "belligerents": [
+          "Insurgés de Stenka Razine",
+          "Armée du tsar Alexis Ier"
+        ],
+        "commanders": [
+          "Stenka Razine",
+          "Iouri Bariatinski"
+        ],
+        "outcome": "Victoire du tsar ; la révolte est brisée devant Simbirsk",
+        "forces": "Rebelles : plusieurs milliers d'hommes mal armés (jusqu'à 20 000 selon certains récits) ; armée du tsar : environ 6 000 à 10 000 hommes d'après les estimations",
+        "losses": "Très lourdes chez les insurgés, des milliers de villageois exécutés ensuite"
+      },
+      "armies": [
+        {
+          "side": "Insurgés de Razine",
+          "from": "Don",
+          "faction": "cosaques",
+          "path": [
+            [
+              42,
+              48.5
+            ],
+            [
+              44.5,
+              48.7
+            ],
+            [
+              46,
+              51.5
+            ],
+            [
+              50.1,
+              53.2
+            ],
+            [
+              48.4,
+              54.33
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Armée du prince Bariatinski",
+          "from": "Kazan",
+          "faction": "streltsy",
+          "path": [
+            [
+              49.11,
+              55.79
+            ],
+            [
+              48.4,
+              54.33
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Stenka Razine",
+          "role": "Ataman cosaque, chef de la révolte",
+          "faction": "cosaques",
+          "archetype": "chef-barbare",
+          "quote": "(formule libre) Je viens vous donner la liberté, et non pour piller",
+          "position": [
+            48.3,
+            54.3
+          ]
+        },
+        {
+          "name": "Iouri Bariatinski",
+          "role": "Prince, voïvode de l'armée du tsar",
+          "faction": "streltsy",
+          "archetype": "general",
+          "position": [
+            48.5,
+            54.35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nertchinsk-1689",
+      "year": 1689,
+      "title": "Nertchinsk : le premier traité entre la Russie et la Chine",
+      "type": "traité",
+      "location": [
+        116.5,
+        51.95
+      ],
+      "zoom": 4.6,
+      "summary": "Le 27 août 1689, la Russie et la Chine des Qing fixent leur frontière à Nertchinsk : les Russes abandonnent l'Amour mais obtiennent des relations commerciales.",
+      "details": "Dès les années 1640-1650, les cosaques russes descendent l'**Amour** (fleuve qui sépare aujourd'hui la Russie et la Chine), bâtissent le fort d'**Albazine** et lèvent tribut sur les peuples locaux, qui payaient déjà tribut aux Mandchous. L'empereur **Kangxi** de la dynastie **Qing** réagit : il assiège Albazine en 1685 et 1686-1687 et propose de négocier.\n\nLes envoyés se retrouvent à **Nertchinsk**, ville russe de Transbaïkalie, en août 1689. Côté russe, le boyard **Fiodor Golovine** ; côté chinois, une ambassade de grands dignitaires conduits par **Songgotu**, escortée de milliers de soldats (le déséquilibre militaire est énorme). Comme personne ne parle la langue de l'autre, on négocie en latin grâce à deux jésuites au service de Pékin, le Français **Jean-François Gerbillon** et le Portugais **Thomas Pereira**.\n\nLe traité, signé le **27 août 1689**, est le premier accord de la Chine avec une puissance européenne. Il trace la frontière sur la rivière Argoun et sur les crêtes des monts Stanovoï ; les Russes abandonnent Albazine et la rive gauche de l'Amour ; les deux pays autorisent le commerce, des caravanes russes (fourrures contre soie et thé) pouvant aller à Pékin. Quelques semaines plus tard, à Moscou, Pierre Ier, 17 ans, renverse sa sœur la régente Sophie. La Russie va se tourner vers l'Ouest.",
+      "consequences": [
+        "La frontière sino-russe est fixée sur l'Argoun et les monts Stanovoï ; la Russie renonce à l'Amour, qu'elle reprendra seulement en 1858-1860.",
+        "Un commerce de caravanes régulier s'ouvre entre Moscou et Pékin (fourrures contre soie, thé et porcelaine).",
+        "Le traité est le premier traité « d'égal à égal » signé par la Chine avec un État européen.",
+        "Délivrée de la question de l'Est, la Russie se concentre sur l'ouest : Pierre le Grand prend le pouvoir à Moscou."
+      ],
+      "territory": "nertchinsk-1689",
+      "sources": [
+        {
+          "label": "Wikipédia — Traité de Nertchinsk",
+          "url": "https://fr.wikipedia.org/wiki/Traité_de_Nertchinsk"
+        },
+        {
+          "label": "Wikipédia — Kangxi",
+          "url": "https://fr.wikipedia.org/wiki/Kangxi"
+        },
+        {
+          "label": "Michel Heller, Histoire de la Russie et de son empire (Plon)"
+        }
+      ],
+      "territoryNote": "Tsarat en 1689 (régence de Sophie, avènement de Pierre) : Russie moscovite avec Smolensk, Seversk, rive gauche de l'Ukraine et Kiev (Paix perpétuelle avec la Pologne 1686), Sibérie jusqu'au Pacifique (Okhotsk) ; Transbaïkalie avec Irkoutsk, Selenginsk, Nertchinsk ; après le traité, frontière avec la Chine sur la rivière Argoun et les monts Stanovoï : renonciation à Albazine et à toute la rive gauche de l'Amour. Pas de Baltique (Suède), pas d'Azov (ottoman), pas de Kamtchatka (1697-1700). Hetmanat cosaque (Mazepa depuis 1687). Voisins : Pologne-Lituanie de Jean III Sobieski, Suède de Charles XI, khanat de Crimée, Empire ottoman, Kalmouks, Kazakhs, Mongols Khalkhas, Chine des Qing de Kangxi.",
+      "armies": [
+        {
+          "side": "Ambassade russe de Golovine",
+          "from": "Selenginsk",
+          "faction": "streltsy",
+          "path": [
+            [
+              106.6,
+              51.1
+            ],
+            [
+              111,
+              51.8
+            ],
+            [
+              116.5,
+              51.95
+            ]
+          ],
+          "strength": 1
+        },
+        {
+          "side": "Ambassade et escorte des Qing",
+          "from": "Pékin",
+          "faction": "mandchous",
+          "path": [
+            [
+              116.4,
+              39.9
+            ],
+            [
+              113.5,
+              43.5
+            ],
+            [
+              115.5,
+              47.5
+            ],
+            [
+              116.5,
+              51.95
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Fiodor Golovine",
+          "role": "Ambassadeur du tsar, il signe pour la Russie",
+          "faction": "streltsy",
+          "archetype": "diplomate",
+          "position": [
+            116.45,
+            51.97
+          ]
+        },
+        {
+          "name": "Songgotu",
+          "role": "Grand dignitaire des Qing, il signe pour la Chine",
+          "faction": "mandchous",
+          "archetype": "diplomate",
+          "position": [
+            116.55,
+            51.95
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saint-petersbourg-1703",
+      "year": 1703,
+      "title": "Saint-Pétersbourg : une capitale dans les marais",
+      "type": "fondation",
+      "location": [
+        30.32,
+        59.94
+      ],
+      "zoom": 5,
+      "summary": "Après la défaite de Narva (1700), Pierre le Grand s'empare de l'embouchure de la Neva et fonde, le 27 mai 1703, la forteresse Pierre-et-Paul : la future capitale, « fenêtre sur l'Europe ».",
+      "details": "**Pierre Ier**, devenu seul maître en 1696, veut une Russie moderne, ouverte sur la mer. Il prend Azov aux Ottomans en 1696, voyage en Europe de l'Ouest en 1697-1698 (la « Grande Ambassade ») pour apprendre la marine et la technique, puis s'allie au Danemark et à la Saxe-Pologne contre la Suède de **Charles XII** : c'est la **Grande Guerre du Nord** (1700-1721).\n\nÀ **Narva**, en novembre 1700, quelque 8 000 à 10 000 Suédois battent une armée russe bien plus nombreuse mais mal préparée. Pierre en tire la leçon : il fond des cloches pour fabriquer des canons, instaure la conscription (une levée d'hommes par villages) et reconstruit son armée. En 1702-1703, ses troupes s'emparent des forts suédois de Noteborg (rebaptisé Schlüsselburg) puis de Nyenschantz, sur la **Neva**.\n\nLe **27 mai 1703** (calendrier julien), Pierre pose la première pierre de la **forteresse Pierre-et-Paul** sur l'île des Lièvres, dans des marais. Des dizaines de milliers de paysans, soldats et prisonniers y travaillent, souvent dans des conditions mortelles (les chiffres des morts, disputés, vont de plusieurs milliers à des dizaines de milliers). La ville nouvelle, **Saint-Pétersbourg**, devient capitale en 1712. Elle sera la « fenêtre sur l'Europe » ; son architecture et sa vie sociale suivent les modèles occidentaux.",
+      "consequences": [
+        "La Russie prend pied sur la Baltique, à l'embouchure de la Neva, et gagne un port ouvert sur l'Europe.",
+        "Saint-Pétersbourg remplace Moscou comme capitale (1712) : le centre de gravité politique se déplace vers l'ouest.",
+        "L'armée est refondée après Narva : conscription, artillerie, officiers formés à l'européenne.",
+        "Les paysans mobilisés pour la construction paient un très lourd tribut humain."
+      ],
+      "territory": "saint-petersbourg-1703",
+      "sources": [
+        {
+          "label": "Wikipédia — Saint-Pétersbourg",
+          "url": "https://fr.wikipedia.org/wiki/Saint-Pétersbourg"
+        },
+        {
+          "label": "Wikipédia — Grande guerre du Nord",
+          "url": "https://fr.wikipedia.org/wiki/Grande_guerre_du_Nord"
+        },
+        {
+          "label": "Henri Troyat, Pierre le Grand (Flammarion)"
+        }
+      ],
+      "territoryNote": "Tsarat en 1703 : Russie moscovite avec Smolensk, Tchernigov, Seversk, rive gauche de l'Ukraine et Kiev (Hetmanat de Mazepa), Azov (pris 1696, reconnu par l'Empire ottoman en 1700), Volga à Astrakhan, Oural, Sibérie jusqu'au Pacifique ; Transbaïkalie jusqu'à l'Argoun et aux monts Stanovoï ; Kamtchatka en cours de conquête (Atlassov, 1697-1700) ; sur la Baltique, uniquement l'Ingrie conquise en 1702-1703 : source de la Neva (Noteborg-Schlüsselburg), Nyenschantz et l'embouchure de la Neva (Saint-Pétersbourg), Lac Ladoga. Voisins : Suède de Charles XII (Estonie, Livonie, Carélie de Vyborg, Finlande), Pologne-Lituanie d'Auguste II (rive droite de l'Ukraine), khanat de Crimée, Empire ottoman, Kalmouks, Kazakhs, Chine des Qing.",
+      "armies": [
+        {
+          "side": "Armée de Pierre",
+          "from": "Novgorod",
+          "faction": "russes",
+          "path": [
+            [
+              31.27,
+              58.52
+            ],
+            [
+              31.03,
+              59.95
+            ],
+            [
+              30.43,
+              59.94
+            ],
+            [
+              30.32,
+              59.95
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Pierre le Grand",
+          "role": "Tsar, fondateur de Saint-Pétersbourg",
+          "faction": "russes",
+          "archetype": "tsar",
+          "quote": "Saint-Pétersbourg est la fenêtre par laquelle la Russie regarde l'Europe (selon Algarotti, 1739)",
+          "person": "pierre-le-grand",
+          "position": [
+            30.31,
+            59.95
+          ]
+        },
+        {
+          "name": "Alexandre Menchikov",
+          "role": "Compagnon de Pierre, premier gouverneur de la ville",
+          "faction": "russes",
+          "archetype": "general",
+          "position": [
+            30.3,
+            59.93
+          ]
+        }
+      ]
+    },
+    {
+      "id": "poltava-1709",
+      "year": 1709,
+      "title": "Poltava : la Russie bat la Suède",
+      "type": "bataille",
+      "location": [
+        34.55,
+        49.59
+      ],
+      "zoom": 5,
+      "summary": "Le 8 juillet 1709, Pierre le Grand écrase l'armée du roi de Suède Charles XII à Poltava, en Ukraine : la Suède cesse d'être une grande puissance, la Russie y entre.",
+      "details": "En 1707, Charles XII envahit la Russie avec près de 40 000 hommes. Il compte renverser Pierre ; mais l'armée russe pratique la terre brûlée, détruit les vivres, harcèle ses lignes. Une partie des renforts suédois du général Lewenhaupt est battue à **Lesnaïa** (septembre 1708). Le roi se tourne alors vers l'Ukraine, où le hetman cosaque **Mazepa** (qui voulait libérer l'Ukraine de Moscou) l'accueille en octobre 1708 avec quelques milliers d'hommes seulement : Menchikov a détruit sa capitale, Baturyn. L'hiver 1708-1709 est terrible, l'un des plus froids du siècle.\n\nLe roi assiège **Poltava**. Il est blessé au pied le 17 juin, et ne peut diriger la bataille que porté sur un brancard. Le **8 juillet 1709** (calendrier grégorien ; 27 juin en julien), environ 20 000 Suédois affamés et à court de poudre, face à 40 000 à 45 000 Russes retranchés derrière des redoutes et armés de plus de 100 canons, attaquent. Les Suédois sont anéantis ; le maréchal Rehnskiöld est capturé. Quelques jours plus tard, à Perevolotchna, ce qui reste de l'armée (environ 14 000 hommes) se rend. Charles et Mazepa fuient chez les Ottomans, à Bender.\n\nPierre écrit à son amiral : « la dernière pierre est posée dans les fondations de Saint-Pétersbourg ». Les Suédois vont perdre en dix ans tous leurs territoires de la Baltique.",
+      "consequences": [
+        "La Suède cesse d'être une puissance militaire majeure ; Charles XII reste cinq ans chez les Ottomans.",
+        "La Russie conquiert dans les mois suivants Riga, Reval (Tallinn), Vyborg : la Baltique devient en partie russe.",
+        "Mazepa échoue, et l'Hetmanat cosaque voit ses libertés réduites ; le mot « mazepiste » désigne ensuite les séparatistes.",
+        "La Russie est reconnue comme grande puissance européenne ; la France, l'Angleterre, la Prusse nouent des relations avec Pierre."
+      ],
+      "territory": "poltava-1709",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Poltava",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Poltava"
+        },
+        {
+          "label": "Wikipédia — Charles XII",
+          "url": "https://fr.wikipedia.org/wiki/Charles_XII"
+        },
+        {
+          "label": "Henri Troyat, Pierre le Grand (Flammarion)"
+        }
+      ],
+      "territoryNote": "Empire en 1709 : Russie moscovite (Moscou, Volga, Oural, Sibérie jusqu'au Pacifique et au Kamtchatka), Ingrie avec Saint-Pétersbourg et le delta de la Neva, Kronstadt ; rive gauche de l'Ukraine (Hetmanat, Poltava incluse), Kiev, Smolensk, Seversk ; Azov (rendu aux Ottomans en 1711 après la campagne du Prout). Suédois : Estonie (Reval), Livonie (Riga, tombées en 1710), Carélie de Vyborg (tombée en 1710), Finlande, Poméranie. Voisins : Pologne-Lituanie (Auguste II restauré en 1709, rival Stanislas Leszczynski), khanat de Crimée, Empire ottoman, Kalmouks, Kazakhs, Chine des Qing.",
+      "battle": {
+        "belligerents": [
+          "Russie de Pierre Ier (avec cosaques fidèles)",
+          "Suède de Charles XII (avec cosaques de Mazepa)"
+        ],
+        "commanders": [
+          "Pierre Ier",
+          "Alexandre Menchikov",
+          "Boris Chérémétiev",
+          "Charles XII",
+          "Carl Gustaf Rehnskiöld"
+        ],
+        "outcome": "Victoire russe décisive ; l'armée suédoise est détruite (reddition à Perevolotchna)",
+        "forces": "Russes : environ 40 000 à 45 000 hommes et plus de 100 canons ; Suédois : environ 20 000 hommes dans la bataille, 4 canons utilisables",
+        "losses": "Suédois : environ 7 000 morts et 3 000 prisonniers dans la bataille, puis 14 000 à Perevolotchna ; Russes : environ 1 300 morts"
+      },
+      "armies": [
+        {
+          "side": "Armée russe de Pierre",
+          "from": "Kharkov",
+          "faction": "russes",
+          "path": [
+            [
+              36.5,
+              50
+            ],
+            [
+              35.3,
+              49.8
+            ],
+            [
+              34.55,
+              49.59
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée suédoise de Charles XII",
+          "from": "Hadiach",
+          "faction": "suedois",
+          "path": [
+            [
+              33,
+              50.2
+            ],
+            [
+              34,
+              49.9
+            ],
+            [
+              34.5,
+              49.6
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Pierre le Grand",
+          "role": "Tsar, vainqueur de Poltava",
+          "faction": "russes",
+          "archetype": "tsar",
+          "quote": "Voilà : la dernière pierre est posée dans les fondations de Saint-Pétersbourg (selon sa lettre à Apraxine, 1709)",
+          "person": "pierre-le-grand",
+          "position": [
+            34.6,
+            49.62
+          ]
+        },
+        {
+          "name": "Charles XII",
+          "role": "Roi de Suède, blessé et vaincu",
+          "faction": "suedois",
+          "archetype": "roi-moderne",
+          "position": [
+            34.4,
+            49.58
+          ]
+        },
+        {
+          "name": "Ivan Mazepa",
+          "role": "Hetman cosaque allié de Charles XII",
+          "faction": "cosaques",
+          "archetype": "general",
+          "position": [
+            34.35,
+            49.62
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nystad-1721",
+      "year": 1721,
+      "title": "Nystad : la Russie devient un empire",
+      "type": "traité",
+      "location": [
+        21.4,
+        60.8
+      ],
+      "zoom": 4.6,
+      "summary": "Le traité de Nystad (10 septembre 1721) met fin à la Grande Guerre du Nord et donne à la Russie la Baltique ; en octobre, Pierre est proclamé empereur et « Père de la patrie ».",
+      "details": "La guerre contre la Suède dure vingt et un ans. Après Poltava (1709), l'armée russe conquiert Riga, Reval, Vyborg (1710), puis la **Finlande** (1713-1714). La marine, créée presque de rien, bat la flotte suédoise à **Gangut** (1714) et à Grengam (1720) ; des raids russes brûlent les côtes de Suède. Charles XII, revenu chez lui, est tué en 1718 en Norvège.\n\nLes négociations aboutissent au **traité de Nystad** (Uusikaupunki), signé en Finlande le **10 septembre 1721** : la Suède cède à la Russie l'**Ingrie**, la **Livonie** (Riga), l'**Estonie** (Reval), l'île d'Ösel (Saaremaa) et la Carélie de Vyborg ; la Russie rend la plus grande partie de la Finlande et paie deux millions de thalers.\n\nLe **2 novembre 1721** (22 octobre julien), le Sénat proclame Pierre **« Père de la patrie, empereur de toutes les Russies, Pierre le Grand »**. Le titre d'*imperator* remplace celui de tsar dans l'usage officiel, et la Moscovie devient l'**Empire russe**. Les autres puissances mettent du temps à le reconnaître ; certaines, des décennies.\n\nPierre poursuit ses réformes : **Table des rangs** (1722), qui fait dépendre le statut de l'ancienneté de service plutôt que de la naissance, Saint-Synode (1721) à la place du patriarcat, **Académie des sciences** (1724). Il meurt en 1725, sans avoir désigné d'héritier.",
+      "consequences": [
+        "La Russie obtient l'Ingrie, la Livonie, l'Estonie et la Carélie de Vyborg : une large façade sur la Baltique.",
+        "La Suède perd son rang de grande puissance ; la Russie devient l'arbitre du Nord.",
+        "Le tsar devient empereur : la Moscovie est désormais l'Empire russe, aux ambitions européennes.",
+        "La Table des rangs et le Saint-Synode soumettent noblesse et Église à l'État."
+      ],
+      "territory": "nystad-1721",
+      "sources": [
+        {
+          "label": "Wikipédia — Traité de Nystad",
+          "url": "https://fr.wikipedia.org/wiki/Traité_de_Nystad"
+        },
+        {
+          "label": "Wikipédia — Empire russe",
+          "url": "https://fr.wikipedia.org/wiki/Empire_russe"
+        },
+        {
+          "label": "Henri Troyat, Pierre le Grand (Flammarion)"
+        }
+      ],
+      "territoryNote": "Empire russe en 1721 : Russie moscovite, Sibérie jusqu'au Pacifique (Okhotsk, Kamtchatka), Transbaïkalie (frontière chinoise Argoun-Stanovoï) ; côte de la Baltique du golfe de Finlande (Saint-Pétersbourg, Kronstadt) à Riga : Ingrie, Carélie de Vyborg, Estonie (Reval), Livonie (Riga, Dorpat), île d'Ösel ; rive gauche de l'Ukraine (Hetmanat sous tutelle du Collège de Petite Russie), Kiev, Smolensk ; pas d'Azov (rendu 1711), pas de Caspienne (conquise en 1722-1723 : Derbent, Bakou, rendues 1732-1735). Voisins : Suède (Finlande, Suède propre), Pologne-Lituanie (rive droite de l'Ukraine, Courlande vassale), Prusse, Empire ottoman, khanat de Crimée, Perse safavide, Kalmouks, Kazakhs, Chine des Qing.",
+      "figures": [
+        {
+          "name": "Pierre le Grand",
+          "role": "Premier empereur de Russie",
+          "faction": "russes",
+          "archetype": "tsar",
+          "person": "pierre-le-grand",
+          "position": [
+            30.32,
+            59.94
+          ]
+        },
+        {
+          "name": "Fiodor Apraxine",
+          "role": "Général-amiral, fondateur de la flotte de la Baltique",
+          "faction": "russes",
+          "archetype": "amiral",
+          "position": [
+            26,
+            59.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pougatchev-1773",
+      "year": 1773,
+      "title": "Pougatchev : le faux tsar soulève l'Oural",
+      "type": "bataille",
+      "location": [
+        55.1,
+        51.77
+      ],
+      "zoom": 4.6,
+      "summary": "En 1773, le cosaque Emelian Pougatchev, qui se fait passer pour Pierre III, soulève cosaques, serfs et peuples de l'Oural, assiège Orenbourg et menace Moscou avant d'être capturé en 1774.",
+      "details": "Pierre III, mari de Catherine II, a été renversé et tué en 1762. Rumeur persistante : il serait encore vivant. En septembre 1773, sur la rivière Iaïk (l'Oural actuel), **Emelian Pougatchev**, cosaque du Don, ancien soldat déserteur, se proclame **Pierre III** et publie des manifestes qui promettent terre, liberté, fin du servage et du recrutement forcé.\n\nLes cosaques du Iaïk, mécontents de la perte de leurs libertés, le rejoignent, puis les **Bachkirs** (peuple turcophone de l'Oural, mené par Salavat Ioulaïev), les Tatars, les Kalmouks, les ouvriers forcés des fonderies de l'Oural et d'innombrables paysans serfs. À l'automne, les rebelles assiègent **Orenbourg**, forteresse clé de la steppe, et prennent de nombreux forts ; l'armée régulière, engagée contre les Ottomans, est dispersée. Au printemps 1774, ils sont battus (Tatichtchevo, mars) mais se reforment ; en juillet, Pougatchev incendie **Kazan**, descend la Volga, et menace Moscou. Il est battu définitivement par le colonel Mikhelson en août, trahi par ses proches, capturé en septembre et exécuté à Moscou en janvier 1775.\n\nCatherine II tire les leçons : elle réorganise l'administration provinciale (1775), fait raser la Sitch des cosaques zaporogues et rebaptise le Iaïk « Oural » pour effacer le souvenir du rebelle.",
+      "consequences": [
+        "Le soulèvement, de loin le plus grave de l'Empire avant 1905, est écrasé ; la répression fait des dizaines de milliers de morts.",
+        "Catherine II réorganise l'administration en 50 gouvernements (1775) avec un pouvoir noble local plus présent.",
+        "Les cosaques perdent une grande partie de leur autonomie : ils deviennent des troupes au service de l'État.",
+        "La noblesse, effrayée par la « jacquerie », se rapproche de la couronne, qui lui concède la Charte de 1785."
+      ],
+      "territory": "pougatchev-1773",
+      "sources": [
+        {
+          "label": "Wikipédia — Emelian Pougatchev",
+          "url": "https://fr.wikipedia.org/wiki/Emelian_Pougatchev"
+        },
+        {
+          "label": "Wikipédia — Catherine II de Russie",
+          "url": "https://fr.wikipedia.org/wiki/Catherine_II_de_Russie"
+        },
+        {
+          "label": "Hélène Carrère d'Encausse, Catherine II (Fayard)"
+        }
+      ],
+      "territoryNote": "Empire russe en 1773 : Russie moscovite, Baltique (Ingrie, Estonie, Livonie, Carélie de Vyborg), rive gauche de l'Ukraine et Kiev (Hetmanat supprimé en 1764), Smolensk, Biélorussie orientale (Vitebsk, Moguilev, Polotsk, Gomel : premier partage de 1772, frontière sur la Dvina et le Dniepr), Nouvelle-Russie (steppe du Dniepr à l'Azov), Zaporojie encore autonome ; Volga, Oural (Orenbourg, Iaïk), Sibérie jusqu'au Pacifique, Kamtchatka, îles Aléoutiennes (explorées). Pas de Crimée (khanat sous influence ottomane). Voisins : Pologne (rive droite du Dniepr, Lituanie), Prusse, Autriche, Empire ottoman, khanat de Crimée, Perse, Kazakhs (Petite et Moyenne Horde), Chine des Qing.",
+      "battle": {
+        "belligerents": [
+          "Insurgés de Pougatchev (cosaques, Bachkirs, serfs)",
+          "Empire russe de Catherine II"
+        ],
+        "commanders": [
+          "Emelian Pougatchev",
+          "Ivan Reinsdorp",
+          "Alexandre Bibikov"
+        ],
+        "outcome": "Siège échoué : Orenbourg tient ; l'insurrection est ensuite écrasée en 1774",
+        "forces": "Insurgés : de 10 000 à 30 000 hommes, très mal armés ; garnison d'Orenbourg : quelques milliers d'hommes",
+        "losses": "Lourdes pour les insurgés ; population civile éprouvée par la famine du siège (octobre 1773 - mars 1774)"
+      },
+      "armies": [
+        {
+          "side": "Insurgés de Pougatchev",
+          "from": "Iaïk",
+          "faction": "cosaques",
+          "path": [
+            [
+              51.37,
+              51.2
+            ],
+            [
+              53,
+              51.5
+            ],
+            [
+              55.1,
+              51.77
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Armée de Catherine II",
+          "from": "Kazan",
+          "faction": "russes",
+          "path": [
+            [
+              49.11,
+              55.79
+            ],
+            [
+              52.5,
+              53.5
+            ],
+            [
+              55.1,
+              51.77
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Emelian Pougatchev",
+          "role": "Cosaque du Don, faux Pierre III",
+          "faction": "cosaques",
+          "archetype": "chef-barbare",
+          "quote": "(formule libre) Je suis votre tsar, et je vous rends la terre et la liberté",
+          "position": [
+            55,
+            51.8
+          ]
+        },
+        {
+          "name": "Catherine II",
+          "role": "Impératrice de Russie",
+          "faction": "russes",
+          "archetype": "imperatrice",
+          "person": "catherine-ii",
+          "position": [
+            37.62,
+            55.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kucuk-kaynarca-1774",
+      "year": 1774,
+      "title": "Küçük Kaynarca : la Russie au bord de la mer Noire",
+      "type": "traité",
+      "location": [
+        27.3,
+        44.05
+      ],
+      "zoom": 5,
+      "summary": "Le 21 juillet 1774, après la victoire de Roumiantsev sur les Ottomans, le traité de Küçük Kaynarca donne à la Russie un accès à la mer Noire et fait de la Crimée un khanat indépendant.",
+      "details": "Depuis 1768, l'Empire russe de Catherine II combat les Ottomans. Sur terre, le feld-maréchal **Piotr Roumiantsev** remporte de grandes victoires à Larga et Kagoul (1770) ; sur mer, la flotte venue de la Baltique brûle la flotte ottomane à **Tchesmé** (1770). En juin 1774, à **Kozloudja**, il écrase le grand vizir, ce qui impose la paix.\n\nLe **traité de Küçük Kaynarca** (Koutchouk-Kaïnardji), signé le **21 juillet 1774** (grégorien) dans un village de l'actuelle Bulgarie, donne à la Russie les villes d'**Azov**, Kertch, Iénikalé et **Kinburn** (à l'embouchure du Dniepr), des terres de la steppe entre le Dniepr et le Boug, et la liberté de navigation sur la mer Noire. Les **Tatars de Crimée**, vassaux des Ottomans depuis 1475, deviennent indépendants, ce qui prépare leur annexion. Le sultan garde son autorité religieuse sur eux, en tant que calife des musulmans.\n\nUn article autorise la Russie à bâtir une église orthodoxe à Constantinople et à intervenir en faveur de ses fidèles ; la Russie en tirera pendant un siècle le droit de se poser en protectrice des **chrétiens orthodoxes** de l'Empire ottoman. Les Ottomans paient 4,5 millions de roubles. Pour eux, c'est un désastre ; ce traité ouvre la « question d'Orient » : que faire d'un Empire ottoman en déclin ?",
+      "consequences": [
+        "La Russie atteint la mer Noire : Azov, Kertch, Kinburn et la steppe entre Dniepr et Boug sont russes.",
+        "Le khanat de Crimée est déclaré indépendant : il tombera en 1783 sous la domination russe.",
+        "La Russie s'arroge un droit de protection sur les chrétiens orthodoxes des Ottomans, source d'interventions futures (guerre de Crimée, 1853).",
+        "L'Empire ottoman, humilié, entre dans un long déclin face à la Russie et à l'Autriche."
+      ],
+      "territory": "kucuk-kaynarca-1774",
+      "sources": [
+        {
+          "label": "Wikipédia — Traité de Koutchouk-Kaïnardji",
+          "url": "https://fr.wikipedia.org/wiki/Traité_de_Koutchouk-Kaïnardji"
+        },
+        {
+          "label": "Wikipédia — Piotr Roumiantsev",
+          "url": "https://fr.wikipedia.org/wiki/Piotr_Roumiantsev"
+        },
+        {
+          "label": "Hélène Carrère d'Encausse, Catherine II (Fayard)"
+        }
+      ],
+      "territoryNote": "Empire russe en 1774 après le traité : Russie moscovite, Baltique (Ingrie, Estonie, Livonie, Carélie de Vyborg), Ukraine de la rive gauche (Hetmanat supprimé en 1764) et Kiev, Biélorussie orientale (premier partage de 1772, Vitebsk et Moguilev), Nouvelle-Russie (steppe entre Dniepr, Don et Azov), Zaporojie (rasé en 1775), côtes d'Azov (Azov, Taganrog) et accès à la mer Noire : Kertch, Iénikalé, Kinburn à l'embouchure du Dniepr ; Kabarda dans la sphère russe (Mozdok) ; Volga, Oural, Sibérie, Kamtchatka, Aléoutiennes. Crimée : khanat indépendant sous influence russe, Ottomans gardant Ochakov, Bessarabie, Moldavie et Valachie (protectorat de fait russe). Voisins : Pologne (rive droite, Podolie), Autriche (Galicie), Empire ottoman, Perse des Zand, Géorgie de Héraclius II.",
+      "figures": [
+        {
+          "name": "Piotr Roumiantsev",
+          "role": "Feld-maréchal, vainqueur des Ottomans",
+          "faction": "russes",
+          "archetype": "general",
+          "position": [
+            27.1,
+            44
+          ]
+        },
+        {
+          "name": "Abdülhamid Ier",
+          "role": "Sultan ottoman",
+          "faction": "janissaires",
+          "archetype": "sultan",
+          "position": [
+            27.4,
+            44.1
+          ]
+        }
+      ],
+      "armies": [
+        {
+          "side": "Armée de Roumiantsev",
+          "from": "Danube",
+          "faction": "russes",
+          "path": [
+            [
+              28.6,
+              45.4
+            ],
+            [
+              27.5,
+              44.4
+            ],
+            [
+              27.3,
+              44.05
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Armée ottomane",
+          "from": "Choumen",
+          "faction": "janissaires",
+          "path": [
+            [
+              26.9,
+              43.3
+            ],
+            [
+              27.3,
+              44.05
+            ]
+          ],
+          "strength": 2
+        }
+      ]
+    },
+    {
+      "id": "crimee-1783",
+      "year": 1783,
+      "title": "Catherine II annexe la Crimée",
+      "type": "politique",
+      "location": [
+        34.1,
+        45
+      ],
+      "zoom": 4.6,
+      "summary": "Le 8 avril 1783, Catherine II annexe le khanat de Crimée, sans guerre ; la Russie fonde Sébastopol, base de sa flotte de la mer Noire.",
+      "details": "Après 1774, la Crimée est nominalement indépendante, en réalité tiraillée entre Russes et Ottomans. Le dernier khan, **Chahin Giray**, installé par Catherine II, qui lui promet appui, est impopulaire : réformes à l'européenne, impôts, hostilité de la noblesse tatare. En 1782-1783, des révoltes éclatent. Le prince **Grigori Potemkine**, favori et conseiller de l'impératrice, pousse à l'annexion pure et simple.\n\nUn manifeste du **8 avril 1783** (julien) proclame l'annexion de la Crimée, de la presqu'île de Taman et du Kouban. Le khan abdique ; les troupes russes, dont celles du général **Souvorov**, occupent le pays presque sans combat. Une partie de la noblesse tatare est confirmée dans ses titres ; des dizaines de milliers de Tatars quittent la Crimée au fil des décennies.\n\nLa Russie se met à coloniser : en 1783, elle fonde **Sébastopol**, port de guerre de la nouvelle flotte de la mer Noire ; Kherson date de 1778, **Odessa** de 1794. La région prend le nom de « Nouvelle-Russie » ; on l'appelle aussi la **Tauride**. Potemkine y organise des visites célèbres, dont le voyage de Catherine en 1787, resté dans la mémoire sous le mot de « villages Potemkine ». L'Empire ottoman, humilié, ne reconnaît l'annexion qu'en 1784.",
+      "consequences": [
+        "La Crimée, le Kouban et Taman deviennent russes : l'Empire domine la rive nord de la mer Noire.",
+        "Sébastopol devient la base de la flotte russe de la mer Noire.",
+        "La Nouvelle-Russie est colonisée (Kherson, puis Odessa en 1794) par des paysans russes, ukrainiens, des Grecs, des Allemands.",
+        "L'Empire ottoman perd son vassal tatar ; une nouvelle guerre éclate en 1787."
+      ],
+      "territory": "crimee-1783",
+      "sources": [
+        {
+          "label": "Wikipédia — Khanat de Crimée",
+          "url": "https://fr.wikipedia.org/wiki/Khanat_de_Crimée"
+        },
+        {
+          "label": "Wikipédia — Grigori Potemkine",
+          "url": "https://fr.wikipedia.org/wiki/Grigori_Potemkine"
+        },
+        {
+          "label": "Hélène Carrère d'Encausse, Catherine II (Fayard)"
+        }
+      ],
+      "territoryNote": "Empire russe après avril 1783 : Russie moscovite, Baltique, rive gauche de l'Ukraine et Kiev, Biélorussie orientale (1772), Nouvelle-Russie (de la steppe du Dniepr à l'Azov, Kherson 1778, Ekaterinoslav), Crimée entière avec Sébastopol, Taman et la steppe du Kouban (ex-Nogaïs) ; protectorat de Géorgie orientale (Kartli-Kakhétie, traité de Géorgievsk, juillet 1783) ; Caucase du Nord : ligne du Terek (Mozdok) et du Kouban ; Volga, Oural, Sibérie, Kamtchatka, Aléoutiennes. Voisins : Empire ottoman (Ochakov, Bessarabie jusqu'au Dniestr, Moldavie, Valachie), Pologne (rive droite du Dniepr, Lituanie), Autriche, Prusse, Perse des Zand, Géorgie.",
+      "armies": [
+        {
+          "side": "Armée de Potemkine et Souvorov",
+          "from": "Kherson",
+          "faction": "russes",
+          "path": [
+            [
+              32.6,
+              46.64
+            ],
+            [
+              33.7,
+              46.2
+            ],
+            [
+              34.1,
+              45
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Grigori Potemkine",
+          "role": "Favori de Catherine, gouverneur de la Nouvelle-Russie",
+          "faction": "russes",
+          "archetype": "general",
+          "quote": "(formule libre) Plus la Crimée sera russe, plus la Russie sera forte",
+          "position": [
+            34.1,
+            45
+          ]
+        },
+        {
+          "name": "Chahin Giray",
+          "role": "Dernier khan de Crimée",
+          "faction": "tatars",
+          "archetype": "khan",
+          "position": [
+            35.4,
+            45.35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "partages-pologne-1795",
+      "year": 1795,
+      "title": "Le dernier partage de la Pologne",
+      "type": "traité",
+      "location": [
+        21.01,
+        52.23
+      ],
+      "zoom": 4.4,
+      "summary": "En trois étapes (1772, 1793, 1795), la Russie, la Prusse et l'Autriche se partagent la Pologne-Lituanie ; la Russie reçoit la plus grande part, jusqu'au Niémen et au Boug.",
+      "details": "La **République des Deux Nations** (Pologne et Lituanie) est un vaste État à la monarchie élective et à la diète paralysée par le « libre veto ». À la mort d'Auguste III (1763), Catherine II fait élire son ancien amant **Stanislas Auguste Poniatowski**, qu'elle espère docile. Le roi tente pourtant des réformes, dont la Constitution du 3 mai 1791, l'une des premières de l'Europe.\n\nLes voisins agissent. Le **premier partage** (1772) enlève à la Pologne près d'un tiers de son territoire : la Russie reçoit la Biélorussie orientale. En 1793, la Russie et la Prusse, aidées par des nobles polonais conservateurs (la confédération de Targowica), annulent la Constitution et prennent de nouvelles terres ; la Russie reçoit la Podolie et une grande partie de la Biélorussie.\n\nEn 1794, **Tadeusz Kościuszko** soulève le pays ; vaincu à Maciejowice en octobre, il laisse le champ à **Souvorov**, qui prend d'assaut Praga, faubourg de Varsovie, le 4 novembre (des milliers de civils tués). Le **troisième partage**, en 1795, fait disparaître la Pologne de la carte : la Russie reçoit la Lituanie (Vilnius), la Volhynie, la Courlande ; la Prusse prend Varsovie, l'Autriche Cracovie. Stanislas Auguste abdique et meurt à Saint-Pétersbourg en 1798.\n\nLa Pologne restera rayée de la carte pendant 123 ans, jusqu'en 1918.",
+      "consequences": [
+        "La Russie gagne la Lituanie, la Biélorussie, la Volhynie, la Podolie et la Courlande : environ 200 000 km² et plusieurs millions de sujets catholiques, juifs et orthodoxes.",
+        "L'Empire compte désormais la plus importante population juive du monde, confinée peu à peu dans une « zone de résidence » à l'ouest.",
+        "La Pologne disparaît comme État pour plus d'un siècle ; la question polonaise empoisonnera l'Europe.",
+        "La Russie est désormais voisine directe de la Prusse et de l'Autriche, avec lesquelles elle dominera l'Europe de l'Est."
+      ],
+      "territory": "partages-pologne-1795",
+      "sources": [
+        {
+          "label": "Wikipédia — Partages de la Pologne",
+          "url": "https://fr.wikipedia.org/wiki/Partages_de_la_Pologne"
+        },
+        {
+          "label": "Wikipédia — Alexandre Souvorov",
+          "url": "https://fr.wikipedia.org/wiki/Alexandre_Souvorov"
+        },
+        {
+          "label": "Hélène Carrère d'Encausse, Catherine II (Fayard)"
+        }
+      ],
+      "territoryNote": "Empire russe en 1795 : Russie moscovite, Baltique (Ingrie, Estonie, Livonie, Carélie de Vyborg, Courlande annexée en 1795), Ukraine de la rive gauche et, depuis 1793, de la rive droite (Podolie, Volhynie, Kiev) jusqu'au Dniestr (Ochakov, entre Boug et Dniestr, Traité de Iassy 1792), Biélorussie entière, Lituanie (Vilnius, Grodno) jusqu'au Niémen et au Boug ; Nouvelle-Russie, Crimée (Sébastopol), Kouban ; protectorat sur la Géorgie orientale ; Volga, Oural, Sibérie, Kamtchatka, Aléoutiennes, premiers postes d'Alaska (Kodiak 1784). Voisins : Prusse (Varsovie, Mazovie, Posnanie), Autriche (Cracovie, Galicie), Empire ottoman (Moldavie, Valachie), Perse des Qajar, Suède (Finlande), Kazakhs.",
+      "armies": [
+        {
+          "side": "Armée de Souvorov",
+          "from": "Brest",
+          "faction": "russes",
+          "path": [
+            [
+              23.7,
+              52.1
+            ],
+            [
+              22.5,
+              52.2
+            ],
+            [
+              21.05,
+              52.25
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Alexandre Souvorov",
+          "role": "Feld-maréchal, il prend Praga",
+          "faction": "russes",
+          "archetype": "general",
+          "quote": "Ce qui est dur à l'exercice est facile au combat (selon Souvorov)",
+          "person": "souvorov",
+          "position": [
+            21.08,
+            52.25
+          ]
+        },
+        {
+          "name": "Stanislas Auguste Poniatowski",
+          "role": "Dernier roi de Pologne",
+          "faction": "polonais",
+          "archetype": "roi-moderne",
+          "position": [
+            21.01,
+            52.23
+          ]
+        },
+        {
+          "name": "Catherine II",
+          "role": "Impératrice de Russie",
+          "faction": "russes",
+          "archetype": "imperatrice",
+          "person": "catherine-ii",
+          "position": [
+            30.32,
+            59.94
+          ]
+        }
+      ]
+    },
+    {
+      "id": "moscou-1812",
+      "year": 1812,
+      "title": "Borodino et l'incendie de Moscou",
+      "type": "bataille",
+      "location": [
+        35.82,
+        55.52
+      ],
+      "zoom": 5,
+      "summary": "Le 7 septembre 1812, Napoléon et Koutouzov s'affrontent à Borodino, bataille indécise ; Moscou, évacuée, brûle, et la Grande Armée doit entamer une retraite désastreuse.",
+      "details": "Le **24 juin 1812**, Napoléon franchit le Niémen avec plus de 400 000 hommes (jusqu'à 600 000 avec les renforts), la Grande Armée. Les Russes, plus faibles, reculent en détruisant les vivres, sans accepter la bataille. **Smolensk** est prise et brûlée en août. L'opinion russe exige alors un chef russe de souche : le vieux prince **Mikhaïl Koutouzov** remplace le général Barclay de Tolly.\n\nLe **7 septembre**, à **Borodino**, près de la Moskova (à 110 km de Moscou), environ 125 000 Français affrontent environ 120 000 Russes, derrière des redoutes. C'est la bataille la plus meurtrière du siècle : en une journée, environ 70 000 morts ou blessés. Napoléon reste maître du terrain, mais ne détruit pas l'armée russe, et refuse d'engager sa Garde. Koutouzov, à Fili, décide d'abandonner Moscou pour sauver son armée.\n\nLe 14 septembre, Napoléon entre dans une **Moscou presque vide**, qui se met à brûler dès la nuit (le gouverneur Rostoptchine est parfois accusé ; la responsabilité reste discutée). Le tsar **Alexandre Ier** refuse de négocier. Au bout de cinq semaines, Napoléon quitte la ville ; l'hiver, la faim et les cosaques détruisent l'armée, malgré le passage de la Bérézina (fin novembre). Environ 100 000 hommes reviennent des 600 000.",
+      "consequences": [
+        "La Grande Armée est détruite ; la campagne de Russie marque le début de la chute de Napoléon.",
+        "La Russie sort grandie : ses armées entrent à Paris en 1814 et Alexandre Ier devient l'arbitre de l'Europe.",
+        "Le Congrès de Vienne (1815) donne à la Russie la plus grande partie de la Pologne (« royaume de Pologne », uni au tsar).",
+        "La guerre est restée dans la mémoire russe comme « Grande Guerre patriotique » de 1812."
+      ],
+      "territory": "moscou-1812",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de la Moskova",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_la_Moskova"
+        },
+        {
+          "label": "Wikipédia — Campagne de Russie (1812)",
+          "url": "https://fr.wikipedia.org/wiki/Campagne_de_Russie"
+        },
+        {
+          "label": "Michel Heller, Histoire de la Russie et de son empire (Plon)"
+        }
+      ],
+      "territoryNote": "Empire russe en 1812 : Russie moscovite, Baltique (Estonie, Livonie, Courlande), Finlande conquise sur la Suède en 1809 (Grand-Duché de Finlande autonome, Helsinki), Lituanie, Biélorussie, Volhynie, Podolie, rive gauche et rive droite de l'Ukraine, Białystok (Tilsit 1807), Bessarabie (Prout-Dniestr, traité de Bucarest du 28 mai 1812), Crimée, Nouvelle-Russie (Odessa), Kouban, Géorgie (annexée 1801 : Kartli-Kakhétie ; Iméréthie 1810 ; Tiflis), Daghestan du nord ; Volga, Oural, Sibérie, Kamtchatka, Alaska (Compagnie russo-américaine, Novo-Arkhangelsk) et fort Ross en Californie (1812). Voisins : Duché de Varsovie (satellite de Napoléon), Prusse et Autriche (alliées de la France), Empire ottoman (Moldavie, Valachie), Perse des Qajar, Suède, Kazakhs.",
+      "battle": {
+        "belligerents": [
+          "Empire russe",
+          "Empire français et alliés (Grande Armée)"
+        ],
+        "commanders": [
+          "Mikhaïl Koutouzov",
+          "Mikhaïl Barclay de Tolly",
+          "Piotr Bagration",
+          "Napoléon Ier",
+          "Joachim Murat",
+          "Michel Ney"
+        ],
+        "outcome": "Indécise tactiquement (Napoléon garde le terrain) ; stratégiquement favorable aux Russes, qui sauvent leur armée",
+        "forces": "Français et alliés : environ 125 000 hommes, 587 canons ; Russes : environ 120 000 hommes (dont cosaques et miliciens), 640 canons",
+        "losses": "Environ 30 000 à 35 000 morts et blessés côté français, 40 000 à 45 000 côté russe (estimations discutées)"
+      },
+      "armies": [
+        {
+          "id": "grande-armee",
+          "side": "Grande Armée de Napoléon",
+          "from": "Kovno",
+          "faction": "francais",
+          "path": [
+            [
+              23.9,
+              54.9
+            ],
+            [
+              25.28,
+              54.68
+            ],
+            [
+              32.05,
+              54.78
+            ],
+            [
+              35.82,
+              55.52
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "id": "armee-russe",
+          "side": "Armée russe de Koutouzov",
+          "from": "Smolensk",
+          "faction": "russes",
+          "path": [
+            [
+              32.05,
+              54.78
+            ],
+            [
+              34.3,
+              55.21
+            ],
+            [
+              35.82,
+              55.52
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Mikhaïl Koutouzov",
+          "role": "Feld-maréchal, commandant en chef russe",
+          "faction": "russes",
+          "archetype": "general",
+          "quote": "(formule libre) Avec la perte de Moscou, la Russie n'est pas perdue",
+          "person": "koutouzov",
+          "position": [
+            35.78,
+            55.53
+          ]
+        },
+        {
+          "name": "Alexandre Ier",
+          "role": "Tsar de Russie",
+          "faction": "russes",
+          "archetype": "tsar",
+          "person": "alexandre-ier",
+          "position": [
+            30.32,
+            59.94
+          ]
+        },
+        {
+          "name": "Napoléon Ier",
+          "role": "Empereur des Français",
+          "faction": "francais",
+          "archetype": "empereur-napoleon",
+          "quote": "Soldats ! Voilà la bataille que vous avez tant désirée (proclamation, 7 septembre 1812)",
+          "position": [
+            35.9,
+            55.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sebastopol-1855",
+      "year": 1855,
+      "title": "Sébastopol : la guerre de Crimée",
+      "type": "bataille",
+      "location": [
+        33.52,
+        44.62
+      ],
+      "zoom": 5,
+      "summary": "Après onze mois de siège, Sébastopol, base navale russe de la mer Noire, tombe devant les armées française, britannique, ottomane et piémontaise le 9 septembre 1855.",
+      "details": "En 1853, la Russie de **Nicolas Ier** attaque l'Empire ottoman pour se poser en protectrice des chrétiens orthodoxes et obtenir l'accès aux Détroits. Elle détruit la flotte ottomane à **Sinope** (novembre 1853). La France de Napoléon III et le Royaume-Uni, inquiets, s'allient aux Ottomans, bientôt rejoints par le Piémont : c'est la **guerre de Crimée**.\n\nLes alliés débarquent en septembre 1854 et assiègent **Sébastopol**, port fortifié où mouille la flotte russe. La défense, menée par les amiraux Kornilov (tué dès octobre 1854) et **Nakhimov** (tué en juillet 1855) et par l'ingénieur **Totleben**, est acharnée. Dans les tranchées, le froid et les maladies (choléra, typhus) tuent plus que les combats ; les batailles de l'Alma, de Balaklava (avec la charge de la cavalerie légère britannique) et d'Inkerman jalonnent le siège.\n\nLe **8 septembre 1855**, les Français de MacMahon enlèvent la tour de **Malakoff**, bastion clé ; les Russes évacuent la partie sud de la ville en la brûlant. Entre-temps, Nicolas Ier est mort (mars 1855) et son fils **Alexandre II** cherche la paix. Le traité de **Paris** (30 mars 1856) neutralise la mer Noire, prive la Russie du sud de la Bessarabie et lui retire sa protection des principautés danubiennes.\n\nL'humiliation révèle le retard de la Russie : armes anciennes, pas de chemins de fer. Elle appelle aux grandes réformes d'Alexandre II.",
+      "consequences": [
+        "La mer Noire est neutralisée par le traité de Paris (1856) : la Russie perd le droit d'y entretenir une flotte.",
+        "Elle perd le sud de la Bessarabie (bouches du Danube) et la protection des principautés roumaines.",
+        "L'État russe comprend que son armée, son économie et son servage sont à la traîne : le tsar Alexandre II lance les Grandes Réformes.",
+        "Le désastre sanitaire du siège donne naissance aux soins modernes : Florence Nightingale en Crimée."
+      ],
+      "territory": "sebastopol-1855",
+      "sources": [
+        {
+          "label": "Wikipédia — Siège de Sébastopol (1854-1855)",
+          "url": "https://fr.wikipedia.org/wiki/Siège_de_Sébastopol_(1854-1855)"
+        },
+        {
+          "label": "Wikipédia — Guerre de Crimée",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_de_Crimée"
+        },
+        {
+          "label": "Hélène Carrère d'Encausse, Alexandre II (Fayard)"
+        }
+      ],
+      "territoryNote": "Empire russe en 1855 : Russie d'Europe jusqu'à l'Oural, Baltique (Estonie, Livonie, Courlande), Grand-Duché de Finlande (Helsinki), royaume de Pologne du Congrès (Varsovie, uni au tsar, constitution supprimée en 1831), Lituanie, Biélorussie, Ukraine des deux rives, Bessarabie (jusqu'à 1856 incluant Izmaïl et le Danube), Crimée (Sébastopol assiégée), Kouban, Caucase : Géorgie, Arménie du Nord (Erevan 1828), Azerbaïdjan (Bakou, Gandja), Daghestan de plaine, Abkhazie ; Kazakhstan occidental et la ligne du Syr-Daria (fort Perovsk 1853) ; Sibérie jusqu'au Pacifique, Kamtchatka, Alaska ; sur l'Amour, Nikolaïevsk (1850). Imamat de Chamil libre dans les montagnes du Daghestan et de Tchétchénie, Circassie indépendante. Voisins : Empire ottoman, Perse des Qajar, khanats de Khiva, de Boukhara et de Kokand, Chine des Qing, Autriche, Prusse.",
+      "battle": {
+        "belligerents": [
+          "Empire russe",
+          "France, Royaume-Uni, Empire ottoman et Piémont-Sardaigne"
+        ],
+        "commanders": [
+          "Pavel Nakhimov",
+          "Edouard Totleben",
+          "Mikhaïl Gortchakov",
+          "François Canrobert",
+          "Aimable Pélissier",
+          "Lord Raglan"
+        ],
+        "outcome": "Victoire des alliés : le sud de Sébastopol est évacué par les Russes le 9 septembre 1855",
+        "forces": "Garnison russe : environ 40 000 à 50 000 hommes ; alliés : jusqu'à 175 000 hommes en 1855 (données variables)",
+        "losses": "Des centaines de milliers de morts ou de blessés au total, dont la majorité par maladie (estimations très variables)"
+      },
+      "armies": [
+        {
+          "side": "Armée française",
+          "from": "Eupatoria",
+          "faction": "francais",
+          "path": [
+            [
+              33.37,
+              45.2
+            ],
+            [
+              33.6,
+              44.85
+            ],
+            [
+              33.52,
+              44.62
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Armée britannique",
+          "from": "Balaklava",
+          "faction": "britanniques",
+          "path": [
+            [
+              33.6,
+              44.5
+            ],
+            [
+              33.55,
+              44.58
+            ],
+            [
+              33.52,
+              44.62
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Défenseurs russes",
+          "from": "Simferopol",
+          "faction": "russes",
+          "path": [
+            [
+              34.1,
+              44.95
+            ],
+            [
+              33.8,
+              44.7
+            ],
+            [
+              33.52,
+              44.62
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Pavel Nakhimov",
+          "role": "Amiral, héros de la défense de Sébastopol",
+          "faction": "russes",
+          "archetype": "amiral",
+          "position": [
+            33.52,
+            44.62
+          ]
+        },
+        {
+          "name": "Edouard Totleben",
+          "role": "Ingénieur militaire, bâtisseur des défenses",
+          "faction": "russes",
+          "archetype": "general",
+          "position": [
+            33.48,
+            44.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chamil-1859",
+      "year": 1859,
+      "title": "Gounib : la reddition de l'imam Chamil",
+      "type": "bataille",
+      "location": [
+        46.95,
+        42.38
+      ],
+      "zoom": 5,
+      "summary": "Le 6 septembre 1859, l'imam Chamil, qui tenait tête aux Russes dans le Caucase depuis vingt-cinq ans, se rend au prince Bariatinski dans la forteresse de Gounib (Daghestan).",
+      "details": "Depuis le début du XIXᵉ siècle, la Russie s'étend vers le **Caucase**, qu'elle aborde par la Géorgie (annexée en 1801) puis par la conquête de l'Arménie et de l'Azerbaïdjan sur la Perse (1813, 1828). Mais les **montagnards** du Caucase du Nord (Tchétchènes, Daghestanais, Circassiens), musulmans, défendent leur liberté dans une guerre qui dure presque cinquante ans.\n\nDès 1834, **Chamil**, né en 1797 au Daghestan, devient le troisième **imam** : à la fois chef religieux, juge et chef de guerre, il bâtit un État organisé, l'**imamat**, avec un impôt, une armée et une justice inspirée de la loi islamique. Pendant vingt-cinq ans, ses cavaliers pratiquent la guérilla dans les gorges, battent à plusieurs reprises les armées russes (1842, 1845), tandis que la Russie, absorbée par la guerre de Crimée, relâche sa pression.\n\nAprès 1856, le prince **Alexandre Bariatinski**, nouveau chef de l'armée du Caucase, coupe les routes, taille les forêts, construit des forteresses. Chamil, isolé, se réfugie avec 400 hommes à **Gounib**, un plateau rocheux. Le 6 septembre 1859 (25 août en julien), il se rend ; le tsar le traite avec égards, le loge à Kalouga puis, en 1870, l'autorise à partir pour La Mecque ; il meurt à Médine en 1871.\n\nÀ l'ouest, la résistance circassienne dure jusqu'en 1864. L'exil forcé de centaines de milliers de Circassiens vers l'Empire ottoman, qui fait des morts en grand nombre, est qualifié de génocide par plusieurs historiens ; le terme est débattu.",
+      "consequences": [
+        "Le Daghestan et la Tchétchénie sont intégrés à l'Empire ; la Russie maîtrise toute la ligne du Caucase.",
+        "La conquête de la Circassie se termine en 1864 par l'exil de centaines de milliers de Circassiens, souvent mortel.",
+        "Chamil et la guerre du Caucase marquent durablement la mémoire locale, jusqu'aux conflits de Tchétchénie des années 1990.",
+        "Les militaires aguerris au Caucase seront employés en Asie centrale, à partir de 1864."
+      ],
+      "territory": "chamil-1859",
+      "sources": [
+        {
+          "label": "Wikipédia — Chamil",
+          "url": "https://fr.wikipedia.org/wiki/Chamil"
+        },
+        {
+          "label": "Wikipédia — Guerre du Caucase",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_du_Caucase"
+        },
+        {
+          "label": "Michel Heller, Histoire de la Russie et de son empire (Plon)"
+        }
+      ],
+      "territoryNote": "Empire russe en 1859 : Russie d'Europe (Baltique, Finlande, royaume de Pologne du Congrès, Lituanie, Biélorussie, Ukraine, Bessarabie du nord, Crimée), Caucase : Géorgie (Tiflis, Iméréthie, Mingrélie, Abkhazie), Arménie du Nord (Erevan), Azerbaïdjan (Bakou, Gandja), Daghestan de plaine, Tchétchénie de plaine, ligne du Terek et du Kouban ; imamat de Chamil réduit au plateau de Gounib avant sa chute, Circassie encore insoumise (chaînes occidentales jusqu'à la mer Noire, tombera en 1864) ; Kazakhstan et ligne du Syr-Daria (Perovsk), Sibérie, Amour (traité d'Aigun 1858 : rive gauche de l'Amour, Khabarovsk), Kamtchatka, Alaska. Voisins : Empire ottoman, Perse des Qajar, khanats de Khiva, de Boukhara et de Kokand, Chine des Qing.",
+      "battle": {
+        "belligerents": [
+          "Empire russe",
+          "Imamat du Daghestan et de Tchétchénie (Chamil)"
+        ],
+        "commanders": [
+          "Alexandre Bariatinski",
+          "Chamil"
+        ],
+        "outcome": "Victoire russe ; reddition de Chamil à Gounib, fin de la guerre au Daghestan",
+        "forces": "Russes : plusieurs milliers d'hommes avec artillerie ; défenseurs : environ 400 combattants autour de Chamil",
+        "losses": "Faibles lors de l'assaut ; la guerre du Caucase a fait des dizaines de milliers de morts des deux côtés"
+      },
+      "armies": [
+        {
+          "side": "Armée russe du Caucase",
+          "from": "Temir-Khan-Choura",
+          "faction": "russes",
+          "path": [
+            [
+              47.12,
+              42.82
+            ],
+            [
+              47,
+              42.6
+            ],
+            [
+              46.95,
+              42.38
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "side": "Murides de Chamil",
+          "from": "Daghestan",
+          "faction": "caucasiens",
+          "path": [
+            [
+              46.7,
+              42.55
+            ],
+            [
+              46.95,
+              42.38
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Chamil",
+          "role": "Imam du Daghestan et de Tchétchénie",
+          "faction": "caucasiens",
+          "archetype": "chef-barbare",
+          "quote": "(formule libre) Tant que Dieu me donnera la vie, je défendrai mon peuple",
+          "person": "chamil",
+          "position": [
+            46.93,
+            42.38
+          ]
+        },
+        {
+          "name": "Alexandre Bariatinski",
+          "role": "Prince, commandant en chef de l'armée du Caucase",
+          "faction": "russes",
+          "archetype": "general",
+          "position": [
+            46.98,
+            42.4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "servage-1861",
+      "year": 1861,
+      "title": "Alexandre II abolit le servage",
+      "type": "réforme",
+      "location": [
+        30.32,
+        59.94
+      ],
+      "zoom": 4.2,
+      "summary": "Le 3 mars 1861 (19 février en julien), le manifeste d'Alexandre II libère les serfs privés, soit une vingtaine de millions de personnes, mais les paysans doivent racheter leurs terres.",
+      "details": "La défaite de Crimée a montré le retard de la Russie. Le tsar **Alexandre II** (1855-1881) fait de l'abolition du **servage** sa priorité : dans ce système, plus d'un tiers de la population, les « serfs », appartient à un seigneur, ne peuvent partir ni se marier sans son accord et lui doivent travail ou redevance. En 1856, le tsar prévient les nobles de Moscou : « mieux vaut abolir le servage par en haut que d'attendre qu'il s'abolisse par en bas ».\n\nDes comités de nobles, puis une commission dirigée par le général Rostovtsev, puis Nikolaï Milioutine, préparent le texte. Le **manifeste du 19 février 1861** (julien) libère les serfs privés, environ 22 millions de personnes. Les paysans obtiennent la liberté personnelle et peuvent posséder une part de terre ; mais ils doivent la **racheter** à leur ancien maître : l'État avance l'argent, et les paysans le remboursent sur quarante-neuf ans. Les terres attribuées sont souvent trop petites et le village (le *mir*, commune rurale) reste responsable collectivement des impôts. Beaucoup de paysans se sentent trompés ; des troubles éclatent.\n\nLes autres **Grandes Réformes** suivent : tribunaux avec jurés (1864), conseils locaux élus, les *zemstvos* (1864), armée par conscription (1874). Le 1ᵉʳ mars 1881, le tsar est tué par un attentat de la **Volonté du peuple**, groupe de révolutionnaires.",
+      "consequences": [
+        "Environ 22 millions de serfs privés deviennent libres ; les paysans d'État suivront en 1866.",
+        "Les paysans doivent racheter leurs terres, ce qui les endette durablement et nourrit leur mécontentement.",
+        "Les Grandes Réformes (zemstvos, justice, armée) transforment l'État sans changer le pouvoir absolu du tsar.",
+        "Les révolutionnaires, jugeant les réformes insuffisantes, passent à la violence : Alexandre II est assassiné en 1881."
+      ],
+      "territory": "servage-1861",
+      "sources": [
+        {
+          "label": "Wikipédia — Alexandre II de Russie",
+          "url": "https://fr.wikipedia.org/wiki/Alexandre_II_de_Russie"
+        },
+        {
+          "label": "Wikipédia — Servage en Russie",
+          "url": "https://fr.wikipedia.org/wiki/Servage_en_Russie"
+        },
+        {
+          "label": "Hélène Carrère d'Encausse, Alexandre II (Fayard)"
+        }
+      ],
+      "territoryNote": "Empire russe en 1861 : Russie d'Europe (Baltique, Grand-Duché de Finlande, royaume de Pologne du Congrès, Lituanie, Biélorussie, Ukraine, Bessarabie du nord, Crimée), Caucase (Géorgie, Arménie du Nord, Azerbaïdjan, Daghestan soumis en 1859 ; Circassie encore insoumise), Kazakhstan jusqu'au Syr-Daria (Perovsk), Sibérie jusqu'au Pacifique, Amour (traité d'Aigun 1858) et Primorié (Oussouri, convention de Pékin 1860 : Vladivostok fondée en 1860), Sakhaline (partagée avec le Japon), Kamtchatka, Alaska. Voisins : Empire ottoman, Perse des Qajar, khanats de Khiva, de Boukhara et de Kokand, Chine des Qing, Japon, Suède, Prusse, Autriche.",
+      "figures": [
+        {
+          "name": "Alexandre II",
+          "role": "Tsar libérateur",
+          "faction": "russes-modernes",
+          "archetype": "tsar",
+          "quote": "Il vaut mieux abolir le servage par en haut que d'attendre qu'il s'abolisse par en bas (selon son discours de 1856)",
+          "person": "alexandre-ii",
+          "position": [
+            30.32,
+            59.94
+          ]
+        },
+        {
+          "name": "Iakov Rostovtsev",
+          "role": "Général, président de la commission de rédaction",
+          "faction": "russes-modernes",
+          "archetype": "general",
+          "position": [
+            30.3,
+            59.93
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tachkent-1865",
+      "year": 1865,
+      "title": "Tachkent : la Russie en Asie centrale",
+      "type": "bataille",
+      "location": [
+        69.24,
+        41.3
+      ],
+      "zoom": 4.4,
+      "summary": "En juin 1865, le général Tchernaïev prend Tachkent au khanat de Kokand avec moins de 2 000 hommes ; la conquête du Turkestan russe commence, tandis que l'Empire atteint, avec l'Alaska, sa plus grande étendue.",
+      "details": "Après la guerre de Crimée, la Russie tourne ses regards vers l'est. Des raisons économiques (le coton), stratégiques (rivaliser avec les Britanniques, qui contrôlent l'Inde, dans le « Grand Jeu ») et militaires (des officiers ambitieux) la poussent vers les **khanats d'Asie centrale**, États musulmans de Boukhara, de Khiva et de Kokand, riches oasis mais divisés.\n\nEn 1864, deux colonnes russes prennent Turkestan et Tchimkent, sur le Syr-Daria. Le général **Mikhaïl Tchernaïev** attaque ensuite **Tachkent**, ville de 100 000 habitants, qui dépend du khanat de Kokand. Début mai 1865, le régent de Kokand, Alimkoul, est tué en défendant la ville ; Tchernaïev l'emporte au bout de deux jours de combats, le 17 juin 1865, avec environ 2 000 hommes face à plusieurs dizaines de milliers de défenseurs (chiffres discutés). Il est surnommé « le Lion de Tachkent ».\n\nL'avance continue : le gouvernement du **Turkestan** est créé en 1867 sous von Kaufmann ; **Samarcande** tombe en mai 1868, l'émirat de **Boukhara** devient vassal ; **Khiva** l'est en 1873, **Kokand** annexé en 1876, puis les Turkmènes sont soumis (Gueok-Tépé, 1881).\n\nÀ la veille de la vente de l'Alaska, en 1866-1867, l'Empire russe couvre environ 22,8 millions de km² (avec ses colonies d'Amérique), soit un sixième des terres émergées : c'est l'**apogée territorial**.",
+      "consequences": [
+        "Tachkent devient la capitale du Turkestan russe ; l'empire s'étend sur les oasis d'Asie centrale.",
+        "Boukhara (1868) et Khiva (1873) deviennent des États vassaux ; Kokand est annexé en 1876.",
+        "La culture du coton, développée sous la domination russe, bouleverse l'économie de la région.",
+        "La rivalité avec la Grande-Bretagne, qui contrôle l'Inde, s'intensifie : c'est le « Grand Jeu »."
+      ],
+      "territory": "tachkent-1865",
+      "sources": [
+        {
+          "label": "Wikipédia — Conquête russe de l'Asie centrale",
+          "url": "https://fr.wikipedia.org/wiki/Conquête_russe_du_Turkestan"
+        },
+        {
+          "label": "Wikipédia — Tachkent",
+          "url": "https://fr.wikipedia.org/wiki/Tachkent"
+        },
+        {
+          "label": "Michel Heller, Histoire de la Russie et de son empire (Plon)"
+        }
+      ],
+      "territoryNote": "Empire russe vers 1865-1866, à son apogée (avec l'Alaska, environ 22,8 millions de km²) : Russie d'Europe (Baltique, Finlande, Pologne du Congrès, Lituanie, Biélorussie, Ukraine, Bessarabie du nord, Crimée, Caucase entier : Circassie soumise en 1864) ; Kazakhstan (Petite, Moyenne et Grande Horde) et Turkestan russe jusqu'au Syr-Daria : Tachkent (juin 1865), Tchimkent, Turkestan ; Sibérie jusqu'au Pacifique, Amour et Primorié (Vladivostok), moitié nord de Sakhaline, Kamtchatka, Alaska (Novo-Arkhangelsk). Encore indépendants : émirat de Boukhara (Samarcande), khanat de Khiva, khanat de Kokand (Khodjent, Ferghana). Voisins : Empire ottoman, Perse des Qajar, Afghanistan, Chine des Qing (Turkestan oriental en révolte, Kachgar), Japon, Prusse, Autriche, Suède.",
+      "battle": {
+        "belligerents": [
+          "Empire russe",
+          "Khanat de Kokand"
+        ],
+        "commanders": [
+          "Mikhaïl Tchernaïev",
+          "Alimkoul"
+        ],
+        "outcome": "Victoire russe ; Tachkent est prise en juin 1865",
+        "forces": "Russes : environ 2 000 hommes ; Kokand : plusieurs dizaines de milliers d'hommes selon les sources",
+        "losses": "Faibles côté russe ; plusieurs centaines à milliers de morts chez les défenseurs, dont le régent Alimkoul"
+      },
+      "armies": [
+        {
+          "side": "Colonne de Tchernaïev",
+          "from": "Tchimkent",
+          "faction": "russes-modernes",
+          "path": [
+            [
+              69.59,
+              42.32
+            ],
+            [
+              69.4,
+              41.8
+            ],
+            [
+              69.24,
+              41.3
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        },
+        {
+          "side": "Armée de Kokand",
+          "from": "Kokand",
+          "faction": "timourides",
+          "path": [
+            [
+              70.94,
+              40.38
+            ],
+            [
+              70.2,
+              40.8
+            ],
+            [
+              69.24,
+              41.3
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Mikhaïl Tchernaïev",
+          "role": "Général, « Lion de Tachkent »",
+          "faction": "russes-modernes",
+          "archetype": "general",
+          "position": [
+            69.26,
+            41.3
+          ]
+        },
+        {
+          "name": "Alimkoul",
+          "role": "Régent du khanat de Kokand, tué à Tachkent",
+          "faction": "timourides",
+          "archetype": "khan",
+          "position": [
+            69.22,
+            41.3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alaska-1867",
+      "year": 1867,
+      "title": "La vente de l'Alaska",
+      "type": "traité",
+      "location": [
+        -135.33,
+        57.05
+      ],
+      "zoom": 4,
+      "summary": "Le 30 mars 1867, la Russie vend l'Alaska aux États-Unis pour 7,2 millions de dollars : faute de moyens pour défendre et exploiter cette colonie, elle se retire d'Amérique.",
+      "details": "Les Russes arrivent en Alaska au XVIIIᵉ siècle, attirés par les fourrures de loutre de mer. Après les expéditions de **Vitus Béring** (1741), des marchands installent des comptoirs aux îles Aléoutiennes et à Kodiak. En 1799, l'empereur Paul Ier concède le monopole de l'Alaska à la **Compagnie russo-américaine** ; **Alexandre Baranov** fonde en 1804 **Novo-Arkhangelsk** (Sitka), capitale de l'« Amérique russe ». La population russe y reste minuscule (quelques centaines à quelques milliers de personnes), de même que le nombre de colons : la colonie dépend de populations autochtones, Aléoutes et Tlingits.\n\nAprès 1860, la colonie a perdu son intérêt : les loutres de mer ont été presque exterminées, la Compagnie est en difficulté et le territoire est impossible à défendre contre le Royaume-Uni, qui voisine au Canada ; la guerre de Crimée l'a montré. Mieux vaut le vendre aux États-Unis, que l'on espère voir faire contrepoids aux Britanniques.\n\nLe **30 mars 1867**, à Washington, le diplomate russe **Édouard de Stoeckl** et le secrétaire d'État américain **William Seward** signent la vente : 7,2 millions de dollars pour environ 1,5 million de km², soit environ deux cents de dollar par acre. Le Sénat approuve ; le transfert a lieu à Sitka le 18 octobre 1867. En Amérique, on parle d'abord de « la bêtise de Seward », avant que l'or ne soit découvert (1896) et le pétrole (1968).",
+      "consequences": [
+        "La Russie quitte l'Amérique : l'Alaska et les îles Aléoutiennes deviennent américains.",
+        "La Russie recentre son expansion sur l'Asie centrale et l'Extrême-Orient.",
+        "Les 7,2 millions de dollars soulagent un budget impérial affaibli après la guerre de Crimée.",
+        "L'Alaska se révélera immensément riche en or (1896) et en pétrole (1968), mais la Russie n'en profitera pas."
+      ],
+      "territory": "alaska-1867",
+      "sources": [
+        {
+          "label": "Wikipédia — Amérique russe",
+          "url": "https://fr.wikipedia.org/wiki/Amérique_russe"
+        },
+        {
+          "label": "Wikipédia — Achat de l'Alaska",
+          "url": "https://fr.wikipedia.org/wiki/Achat_de_l'Alaska"
+        },
+        {
+          "label": "Michel Heller, Histoire de la Russie et de son empire (Plon)"
+        }
+      ],
+      "territoryNote": "Empire russe en 1867 après la vente de l'Alaska (et des Aléoutiennes) : Russie d'Europe (Baltique, Grand-Duché de Finlande, royaume de Pologne du Congrès devenu « pays de la Vistule », Lituanie, Biélorussie, Ukraine, Bessarabie du nord, Crimée), Caucase entier, Kazakhstan, gouvernement général du Turkestan (Tachkent, Syr-Daria, Khodjent, Djizak ; Samarcande en 1868), Sibérie jusqu'au Pacifique, Amour et Primorié (Vladivostok), moitié nord de Sakhaline, Kamtchatka ; ni Alaska ni Fort Ross (vendu en 1841). Encore indépendants : émirat de Boukhara (vassal à partir de 1868), khanat de Khiva (vassal en 1873), khanat de Kokand. Voisins : États-Unis (Alaska), Empire britannique (Canada), Empire ottoman, Perse, Afghanistan, Chine des Qing, Japon, Prusse, Autriche, Suède.",
+      "figures": [
+        {
+          "name": "Édouard de Stoeckl",
+          "role": "Ministre de Russie à Washington, négociateur",
+          "faction": "russes-modernes",
+          "archetype": "diplomate",
+          "position": [
+            -77.04,
+            38.9
+          ]
+        },
+        {
+          "name": "William Seward",
+          "role": "Secrétaire d'État américain",
+          "faction": "americains",
+          "archetype": "diplomate",
+          "position": [
+            -77.03,
+            38.9
+          ]
+        }
+      ]
+    },
+    {
+      "id": "transsiberien-1891",
+      "year": 1891,
+      "title": "Le Transsibérien : un train à travers un continent",
+      "type": "politique",
+      "location": [
+        131.9,
+        43.12
+      ],
+      "zoom": 3.8,
+      "summary": "Le 31 mai 1891, le tsarévitch Nicolas pose à Vladivostok la première pierre du Transsibérien, la ligne de plus de 9 000 km qui reliera Moscou au Pacifique.",
+      "details": "La Sibérie est immense, mais les routes et les fleuves, gelés une partie de l'année, la rendent difficile d'accès : il faut parfois plus de six mois pour aller de Moscou à Irkoutsk en traîneau. Le ministre des Finances **Sergueï Witte** et le tsar **Alexandre III** décident d'une ligne qui traversera tout le pays : pour défendre l'Extrême-Orient (face à la Chine et au Japon), faire venir des colons et exporter les richesses.\n\nLe **31 mai 1891**, à Vladivostok, le tsarévitch **Nicolas** (futur Nicolas II), revenant d'un voyage en Asie, pousse la première brouette de terre. Les chantiers avancent des deux extrémités ; des dizaines de milliers de terrassiers, soldats et forçats travaillent dans le froid, les marais et le permafrost. Le pont sur l'Ob (1897), la gare de Novossibirsk, le contournement du lac Baïkal (d'abord franchi par des ferries brise-glace, 1904-1905) sont des défis. Pour gagner du temps, une branche coupe par la Mandchourie chinoise (« Chemin de fer de l'Est chinois », 1897-1903), via Harbin.\n\nLe Transsibérien relie Moscou à Vladivostok sur environ 9 300 km, la plus longue ligne du monde. En 1914, plus de quatre millions de paysans se sont installés en Sibérie, aidés par l'État. En 1904-1905, il permettra à la Russie de transporter ses troupes contre le Japon, mais trop lentement.",
+      "consequences": [
+        "La Sibérie est ouverte à la colonisation : plusieurs millions de paysans s'y installent d'ici 1914.",
+        "L'Extrême-Orient est plus solidement rattaché au pouvoir central ; la Russie étend son influence en Mandchourie.",
+        "La rivalité avec le Japon se durcit et débouche sur la guerre de 1904-1905.",
+        "La ligne devient un symbole de modernisation : elle fera de Novossibirsk, Irkoutsk ou Vladivostok des grandes villes."
+      ],
+      "territory": "transsiberien-1891",
+      "sources": [
+        {
+          "label": "Wikipédia — Transsibérien",
+          "url": "https://fr.wikipedia.org/wiki/Transsibérien"
+        },
+        {
+          "label": "Wikipédia — Sergueï Witte",
+          "url": "https://fr.wikipedia.org/wiki/Sergueï_Witte"
+        },
+        {
+          "label": "Michel Heller, Histoire de la Russie et de son empire (Plon)"
+        }
+      ],
+      "territoryNote": "Empire russe en 1891 : Russie d'Europe (Baltique, Grand-Duché de Finlande, Pologne du Congrès, Lituanie, Biélorussie, Ukraine, Bessarabie dont le sud rendu en 1878), Caucase entier avec Kars, Ardahan et Batoum (acquis 1878), Kazakhstan, Turkestan russe (Tachkent, Samarcande, Ferghana, Transcaspie jusqu'à Merv 1884, Aschkhabad), Sibérie jusqu'au Pacifique, Amour et Primorié, Sakhaline entière (échange avec le Japon 1875), Kamtchatka ; États vassaux : émirat de Boukhara (depuis 1868) et khanat de Khiva (depuis 1873). Pas d'Alaska. Voisins : Empire ottoman, Perse des Qajar, Afghanistan, Chine des Qing (Mandchourie), Corée, Japon, Allemagne, Autriche-Hongrie, Suède-Norvège, Roumanie.",
+      "figures": [
+        {
+          "name": "Sergueï Witte",
+          "role": "Ministre des Finances, promoteur du Transsibérien",
+          "faction": "russes-modernes",
+          "archetype": "diplomate",
+          "position": [
+            131.85,
+            43.1
+          ]
+        },
+        {
+          "name": "Nicolas, tsarévitch",
+          "role": "Futur Nicolas II, il lance les travaux",
+          "faction": "russes-modernes",
+          "archetype": "tsar",
+          "person": "nicolas-ii",
+          "position": [
+            131.9,
+            43.14
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tsushima-1905",
+      "year": 1905,
+      "title": "Tsushima : la flotte russe anéantie",
+      "type": "bataille",
+      "location": [
+        129.3,
+        34.4
+      ],
+      "zoom": 4.2,
+      "summary": "Les 27 et 28 mai 1905, la flotte japonaise de l'amiral Togo détruit presque toute l'escadre russe de la Baltique dans le détroit de Tsushima : le Japon gagne la guerre.",
+      "details": "En 1904, le **Japon** de l'empereur Meiji attaque par surprise la base russe de Port-Arthur, en Mandchourie, que la Russie a louée à la Chine. La guerre russo-japonaise tourne mal pour les Russes : siège de Port-Arthur (qui capitule en janvier 1905), bataille de Moukden (février-mars 1905), perdue, avec environ 160 000 morts et blessés au total.\n\nLa Russie envoie alors sa flotte de la **Baltique**, rebaptisée 2ᵉ escadre du Pacifique, commandée par l'amiral **Rojestvenski** : elle navigue pendant sept mois, contourne l'Afrique et traverse l'océan Indien, soit plus de 30 000 km, pour rallier Vladivostok. Il lui faut passer par le détroit de **Tsushima**, entre le Japon et la Corée, où l'attend l'amiral **Togo**, avec une flotte plus rapide et plus moderne. Togo hisse un signal célèbre : « Le sort de l'Empire dépend de cette bataille ; que chacun fasse tout son devoir. »\n\nLes **27 et 28 mai 1905**, en moins de deux jours, la flotte russe est détruite : sur 38 navires, 21 sont coulés, 7 capturés et 6 internés dans des ports neutres ; seuls trois atteignent Vladivostok. Environ 4 500 Russes sont tués ; les Japonais perdent 3 torpilleurs et 117 hommes.\n\nLe traité de **Portsmouth** (septembre 1905), négocié par Theodore Roosevelt, donne au Japon la moitié sud de Sakhaline et Port-Arthur. C'est la première fois qu'une puissance asiatique bat une puissance européenne.",
+      "consequences": [
+        "La Russie perd la moitié sud de Sakhaline, Port-Arthur et son influence en Corée et en Mandchourie du sud.",
+        "Le Japon devient une grande puissance ; l'Asie voit qu'un pays non européen peut vaincre l'Occident.",
+        "La défaite, jointe au Dimanche rouge (janvier 1905), précipite la révolution de 1905 et le Manifeste d'octobre qui crée la Douma.",
+        "La Russie réoriente sa politique vers les Balkans et l'Europe, ce qui conduit à 1914."
+      ],
+      "territory": "tsushima-1905",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Tsushima",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Tsushima"
+        },
+        {
+          "label": "Wikipédia — Guerre russo-japonaise",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_russo-japonaise"
+        },
+        {
+          "label": "Marc Ferro, Nicolas II (Payot)"
+        }
+      ],
+      "territoryNote": "Empire russe en 1905 : Russie d'Europe (Baltique, Grand-Duché de Finlande en russification, Pologne du Congrès, Lituanie, Biélorussie, Ukraine, Bessarabie, Crimée), Caucase entier (Géorgie, Arménie du Nord, Azerbaïdjan, Kars, Batoum), Kazakhstan, Turkestan russe, Transcaspie ; États vassaux : émirat de Boukhara et khanat de Khiva ; Sibérie jusqu'au Pacifique, Amour et Primorié (Vladivostok), Sakhaline entière avant Portsmouth (moitié sud cédée au Japon), Kamtchatka ; Mandchourie sous influence russe (zone du Chemin de fer de l'Est chinois, Harbin), Port-Arthur et Liaodong (loués à la Chine 1898, perdus en 1905). Voisins : Japon (Corée en protectorat, Sakhaline du sud), Chine des Qing, Empire ottoman, Perse, Afghanistan, Allemagne, Autriche-Hongrie, Roumanie, Suède-Norvège.",
+      "battle": {
+        "belligerents": [
+          "Empire russe (2ᵉ et 3ᵉ escadres du Pacifique)",
+          "Empire du Japon (flotte combinée)"
+        ],
+        "commanders": [
+          "Zinovi Rojestvenski",
+          "Heihachiro Togo"
+        ],
+        "outcome": "Victoire japonaise écrasante ; la flotte russe de la Baltique est détruite",
+        "forces": "Russes : 38 navires dont 8 cuirassés ; Japonais : 89 navires dont 4 cuirassés, plus rapides et mieux armés",
+        "losses": "Russes : 21 navires coulés, 7 capturés, 6 internés, environ 4 500 morts ; Japonais : 3 torpilleurs, 117 morts"
+      },
+      "armies": [
+        {
+          "side": "Escadre russe de la Baltique",
+          "from": "Cam Ranh",
+          "faction": "russes-modernes",
+          "path": [
+            [
+              109.2,
+              11.9
+            ],
+            [
+              113,
+              17
+            ],
+            [
+              119,
+              23
+            ],
+            [
+              123,
+              28.5
+            ],
+            [
+              129.3,
+              34.4
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Flotte japonaise de Togo",
+          "from": "Chinhae",
+          "faction": "japonais-meiji",
+          "path": [
+            [
+              128.6,
+              35
+            ],
+            [
+              129.3,
+              34.4
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Heihachiro Togo",
+          "role": "Amiral japonais, vainqueur de Tsushima",
+          "faction": "japonais-meiji",
+          "archetype": "amiral",
+          "quote": "Le sort de l'Empire dépend de cette bataille ; que chacun fasse tout son devoir (signal de Togo)",
+          "position": [
+            129.4,
+            34.45
+          ]
+        },
+        {
+          "name": "Zinovi Rojestvenski",
+          "role": "Amiral russe, blessé et capturé",
+          "faction": "russes-modernes",
+          "archetype": "amiral",
+          "position": [
+            129.2,
+            34.35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tannenberg-1914",
+      "year": 1914,
+      "title": "Tannenberg : le désastre de la 2ᵉ armée russe",
+      "type": "bataille",
+      "location": [
+        20.12,
+        53.48
+      ],
+      "zoom": 5,
+      "summary": "Du 26 au 30 août 1914, en Prusse-Orientale, les Allemands de Hindenburg et Ludendorff encerclent et détruisent la 2ᵉ armée russe du général Samsonov.",
+      "details": "En août 1914, la Russie entre en guerre aux côtés de la France et du Royaume-Uni, contre l'Allemagne et l'Autriche-Hongrie. Pour soulager la France, elle lance, plus tôt que prévu, deux armées contre la **Prusse-Orientale** : la 1ʳᵉ armée du général Rennenkampf par l'est, la 2ᵉ du général **Samsonov** par le sud.\n\nLes Allemands n'ont là qu'une 8ᵉ armée, commandée par le général Prittwitz, vite remplacé par **Hindenburg** et son chef d'état-major **Ludendorff**. Ils profitent de la mauvaise coordination russe (communications radio non codées, que l'ennemi intercepte), de la lenteur de Rennenkampf et de leur réseau de chemin de fer. Ils laissent peu de troupes face à Rennenkampf et concentrent leurs forces contre Samsonov.\n\nEntre le **26 et le 30 août 1914**, près de Tannenberg, la 2ᵉ armée est prise dans une double manœuvre d'encerclement. Les Russes perdent environ 50 000 morts et blessés et 90 000 prisonniers (les chiffres varient) ; Samsonov se suicide. Les Allemands donnent à la bataille le nom de Tannenberg pour effacer la défaite subie contre les Polonais et Lituaniens à Grunwald-Tannenberg en 1410. Une deuxième victoire allemande aux lacs de Mazurie, début septembre, achève de chasser les Russes de Prusse.\n\nMais la Russie gagne en Galicie contre les Autrichiens (Lemberg, septembre 1914). En 1915, la « grande retraite » lui fera perdre la Pologne et la Lituanie.",
+      "consequences": [
+        "L'offensive russe en Prusse-Orientale échoue ; l'Allemagne reste maîtresse de son sol, Hindenburg et Ludendorff deviennent des héros.",
+        "La Russie perd en quelques jours une armée entière, avec ses officiers et son matériel.",
+        "En 1915, l'Allemagne lance une grande offensive à l'est : la Russie évacue la Pologne et la Lituanie.",
+        "Le mécontentement des soldats et de l'arrière, aggravé par ces revers, prépare la révolution de 1917."
+      ],
+      "territory": "tannenberg-1914",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Tannenberg (1914)",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Tannenberg_(1914)"
+        },
+        {
+          "label": "Wikipédia — Front de l'Est (Première Guerre mondiale)",
+          "url": "https://fr.wikipedia.org/wiki/Front_de_l'Est_(Première_Guerre_mondiale)"
+        },
+        {
+          "label": "Marc Ferro, Nicolas II (Payot)"
+        }
+      ],
+      "territoryNote": "Empire russe en août 1914 : Russie d'Europe (Baltique : Estonie, Livonie, Courlande ; Grand-Duché de Finlande ; royaume de Pologne du Congrès jusqu'à Varsovie et Lodz ; Lituanie, Biélorussie, Ukraine des deux rives, Bessarabie, Crimée), Caucase entier (Géorgie, Arménie du Nord, Azerbaïdjan, Kars, Batoum), Kazakhstan, Turkestan russe, Transcaspie ; États vassaux : émirat de Boukhara et khanat de Khiva ; Sibérie jusqu'au Pacifique, Amour et Primorié (Vladivostok), Sakhaline du nord, Kamtchatka, protectorat sur la Touva (1914) ; influence sur la Mongolie extérieure et le nord de la Perse. Voisins : Allemagne (Prusse-Orientale, Posnanie, Silésie), Autriche-Hongrie (Galicie), Roumanie, Empire ottoman, Perse, Afghanistan, Chine, Japon (Corée, Sakhaline du sud), Suède.",
+      "battle": {
+        "belligerents": [
+          "Empire russe (2ᵉ armée)",
+          "Empire allemand (8ᵉ armée)"
+        ],
+        "commanders": [
+          "Alexandre Samsonov",
+          "Paul von Hindenburg",
+          "Erich Ludendorff"
+        ],
+        "outcome": "Victoire allemande décisive ; la 2ᵉ armée russe est encerclée et détruite",
+        "forces": "Russes : environ 190 000 hommes ; Allemands : environ 150 000 hommes (estimations)",
+        "losses": "Russes : environ 50 000 morts et blessés, 90 000 prisonniers ; Allemands : environ 12 000 à 15 000 pertes"
+      },
+      "armies": [
+        {
+          "side": "2ᵉ armée russe de Samsonov",
+          "from": "Ostrołęka",
+          "faction": "russes-modernes",
+          "path": [
+            [
+              21.57,
+              53.08
+            ],
+            [
+              20.9,
+              53.2
+            ],
+            [
+              20.43,
+              53.36
+            ],
+            [
+              20.12,
+              53.48
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "8ᵉ armée allemande",
+          "from": "Olsztyn",
+          "faction": "allemands-1914",
+          "path": [
+            [
+              20.48,
+              53.78
+            ],
+            [
+              20.12,
+              53.48
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Paul von Hindenburg",
+          "role": "Général allemand, vainqueur de Tannenberg",
+          "faction": "allemands-1914",
+          "archetype": "militaire-xxe",
+          "position": [
+            20.2,
+            53.55
+          ]
+        },
+        {
+          "name": "Alexandre Samsonov",
+          "role": "Général russe, il se suicide après la défaite",
+          "faction": "russes-modernes",
+          "archetype": "militaire-xxe",
+          "position": [
+            20.05,
+            53.42
+          ]
+        }
+      ]
+    },
+    {
+      "id": "revolution-1917",
+      "year": 1917,
+      "title": "La révolution de 1917 : la fin de l'Empire",
+      "type": "chute",
+      "location": [
+        30.32,
+        59.94
+      ],
+      "zoom": 5,
+      "summary": "En mars 1917, Nicolas II abdique après des émeutes à Petrograd ; en octobre, les bolcheviks de Lénine prennent le pouvoir : l'Empire russe disparaît.",
+      "details": "En 1917, après trois ans de guerre, la Russie est épuisée : environ 1,7 million de soldats morts, villes affamées, inflation, mutineries. Le tsar **Nicolas II** (1894-1917), peu populaire, dirige lui-même l'armée au front et laisse son épouse Alexandra, influencée par Raspoutine, gouverner à Petrograd (nom donné à Saint-Pétersbourg en 1914).\n\nLe 23 février (julien ; 8 mars grégorien), des manifestantes réclamant du pain déclenchent à Petrograd une grève générale. La troupe refuse de tirer. Le tsar abdique le **2 mars** (15 mars) en faveur de son frère Michel, qui refuse la couronne : 304 ans de dynastie Romanov s'achèvent. Un **gouvernement provisoire** (prince Lvov, puis Kerenski) s'installe, mais partage le pouvoir avec le **soviet** (conseil) de Petrograd. Il continue la guerre, ce qui l'use.\n\nEn avril, **Lénine**, chef des bolcheviks, rentre de Suisse via l'Allemagne et lance les « Thèses d'avril ». Les offensives de l'été échouent. Dans la nuit du **25 octobre** (7 novembre), les bolcheviks s'emparent de Petrograd et du Palais d'Hiver ; Lénine proclame un gouvernement soviétique. La paix de Brest-Litovsk (mars 1918) coûtera à la Russie la Pologne, les pays baltes et l'Ukraine. Nicolas II et sa famille seront exécutés à Ekaterinbourg le 17 juillet 1918.\n\nL'Empire laisse place à une guerre civile, puis à l'Union soviétique (1922).",
+      "consequences": [
+        "La monarchie des Romanov, vieille de 304 ans, disparaît ; Nicolas II et sa famille seront exécutés en juillet 1918.",
+        "Les bolcheviks de Lénine prennent le pouvoir en octobre et créent un régime communiste.",
+        "L'empire se disloque : Finlande, pays baltes, Pologne, Ukraine proclament leur indépendance ou leur autonomie en 1917-1918.",
+        "Une guerre civile de plusieurs années (1918-1922) précède la création de l'URSS."
+      ],
+      "territory": "revolution-1917",
+      "sources": [
+        {
+          "label": "Wikipédia — Révolution russe de 1917",
+          "url": "https://fr.wikipedia.org/wiki/Révolution_russe_de_1917"
+        },
+        {
+          "label": "Wikipédia — Révolution de Février",
+          "url": "https://fr.wikipedia.org/wiki/Révolution_de_Février"
+        },
+        {
+          "label": "Marc Ferro, Nicolas II (Payot)"
+        }
+      ],
+      "territoryNote": "Russie en 1917 : empire amputé à l'ouest par l'occupation austro-allemande depuis 1915 : Pologne du Congrès, Lituanie, Courlande, moitié ouest de la Biélorussie (front de Riga et de la Dvina au sud par Dvinsk, marais de Pinsk, Volhynie et Galicie orientale jusqu'à Tarnopol, Tchernivtsi) ; reste Estonie, Livonie du nord, Biélorussie orientale, Ukraine (Kiev, Rada centrale autonome depuis juin), Crimée, Bessarabie ; Grand-Duché de Finlande (autonomie rétablie, indépendance proclamée en décembre), Caucase entier (Géorgie, Arménie du Nord, Azerbaïdjan) et territoires turcs occupés (Erzurum, Trébizonde, Van, Bitlis), nord de la Perse ; Kazakhstan, Turkestan russe, Transcaspie ; États vassaux : émirat de Boukhara, khanat de Khiva ; Sibérie jusqu'au Pacifique, Primorié, Sakhaline du nord, Touva. Voisins : Allemagne et Autriche-Hongrie (occupant), Roumanie, Empire ottoman, Perse, Chine, Japon.",
+      "figures": [
+        {
+          "name": "Nicolas II",
+          "role": "Dernier empereur de Russie",
+          "faction": "russes-modernes",
+          "archetype": "tsar",
+          "person": "nicolas-ii",
+          "position": [
+            30.3,
+            59.93
+          ]
+        },
+        {
+          "name": "Lénine",
+          "role": "Chef des bolcheviks",
+          "faction": "russes-modernes",
+          "archetype": "revolutionnaire",
+          "quote": "Tout le pouvoir aux soviets ! (slogan des Thèses d'avril, 1917)",
+          "person": "lenine",
+          "position": [
+            30.35,
+            59.95
+          ]
+        },
+        {
+          "name": "Alexandre Kerenski",
+          "role": "Chef du gouvernement provisoire",
+          "faction": "russes-modernes",
+          "archetype": "revolutionnaire",
+          "position": [
+            30.33,
+            59.94
+          ]
+        }
+      ]
+    }
+  ]
+}

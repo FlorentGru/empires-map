@@ -1,0 +1,243 @@
+[
+  {
+    "id": "apotre-1564",
+    "name": "Le premier livre imprimé daté de Moscou : L'Apôtre",
+    "year": 1564,
+    "place": "Moscou",
+    "at": [
+      37.62,
+      55.75
+    ],
+    "inventor": "Ivan Fiodorov et Piotr Mstislavets",
+    "category": "ecriture",
+    "description": "Le diacre Ivan Fiodorov et son associé Piotr Mstislavets impriment à Moscou L'Apôtre, recueil de textes religieux, en 1564 : c'est le premier livre russe imprimé portant une date. Ce n'est pas l'invention de l'imprimerie, déjà connue en Europe depuis un siècle, mais son arrivée en Russie, sous la protection d'Ivan IV et de l'Église. Fiodorov, accusé par des copistes, quitte Moscou pour la Lituanie.",
+    "impact": "Les livres religieux peuvent être copiés sans erreurs, ce qui fixe la langue de l'Église. L'imprimerie reste pourtant limitée en Russie jusqu'à Pierre le Grand.",
+    "sources": [
+      {
+        "label": "Ivan Fiodorov",
+        "url": "https://fr.wikipedia.org/wiki/Ivan_Fiodorov_(imprimeur)"
+      },
+      {
+        "label": "Imprimerie",
+        "url": "https://fr.wikipedia.org/wiki/Imprimerie"
+      }
+    ]
+  },
+  {
+    "id": "academie-des-sciences-1724",
+    "name": "Académie des sciences de Saint-Pétersbourg",
+    "year": 1724,
+    "place": "Saint-Pétersbourg",
+    "at": [
+      30.32,
+      59.94
+    ],
+    "inventor": "Pierre le Grand",
+    "category": "science",
+    "description": "Pierre le Grand crée en janvier 1724 par un décret une Académie des sciences, qui ouvre en 1725, après sa mort. Faute de savants russes, il fait venir des spécialistes étrangers : Euler et les frères Bernoulli y travailleront. Elle compte une bibliothèque, un cabinet de curiosités, un observatoire et une imprimerie. Il s'agit d'une institution importée d'Europe de l'Ouest, adaptée à la Russie.",
+    "impact": "La science russe, quasi inexistante, prend racine dans l'État ; elle forme des générations de savants, dont Lomonossov, et devient une des premières académies d'Europe.",
+    "sources": [
+      {
+        "label": "Académie des sciences de Russie",
+        "url": "https://fr.wikipedia.org/wiki/Académie_des_sciences_de_Russie"
+      },
+      {
+        "label": "Pierre Ier de Russie",
+        "url": "https://fr.wikipedia.org/wiki/Pierre_Ier_de_Russie"
+      }
+    ]
+  },
+  {
+    "id": "atmosphere-venus-1761",
+    "name": "L'atmosphère de Vénus",
+    "year": 1761,
+    "place": "Saint-Pétersbourg",
+    "at": [
+      30.32,
+      59.94
+    ],
+    "inventor": "Mikhaïl Lomonossov",
+    "category": "science",
+    "description": "Le 6 juin 1761, Vénus passe devant le Soleil. Mikhaïl Lomonossov l'observe à Saint-Pétersbourg avec une petite lunette. Il remarque autour de la planète un halo lumineux et en conclut que Vénus possède une atmosphère. Il publie ses observations en 1761. D'autres astronomes d'Europe ont aussi vu ce halo ; mais lui seul l'interprète clairement. Les mesures modernes confirmeront une atmosphère très dense.",
+    "impact": "C'est la première preuve qu'une autre planète a une atmosphère, dans une époque où l'astronomie russe démarre à peine.",
+    "sources": [
+      {
+        "label": "Mikhaïl Lomonossov",
+        "url": "https://fr.wikipedia.org/wiki/Mikhaïl_Lomonossov"
+      },
+      {
+        "label": "Passage de Vénus",
+        "url": "https://fr.wikipedia.org/wiki/Passage_de_Vénus"
+      }
+    ]
+  },
+  {
+    "id": "machine-vapeur-polzounov-1766",
+    "name": "La première machine à vapeur à deux cylindres",
+    "year": 1766,
+    "approx": true,
+    "place": "Barnaoul (Altaï)",
+    "at": [
+      83.78,
+      53.35
+    ],
+    "inventor": "Ivan Polzounov",
+    "category": "technique",
+    "description": "Ivan Polzounov, mécanicien des mines de l'Altaï, conçoit en 1763 une machine à vapeur à deux cylindres, destinée à souffler les soufflets des fonderies de Barnaoul. Elle fonctionne en 1766 ; Polzounov, malade, meurt une semaine avant les essais. La machine fonctionne quelques semaines, puis la chaudière fuit. Elle est conçue sans connaître les travaux de Watt, mais elle reste sans suite : on la démonte.",
+    "impact": "Preuve du talent technique russe, mais la machine reste isolée : la Russie ne prend le tournant industriel qu'un siècle plus tard.",
+    "sources": [
+      {
+        "label": "Ivan Polzounov",
+        "url": "https://fr.wikipedia.org/wiki/Ivan_Polzounov"
+      },
+      {
+        "label": "Machine à vapeur",
+        "url": "https://fr.wikipedia.org/wiki/Machine_à_vapeur"
+      }
+    ]
+  },
+  {
+    "id": "tableau-periodique-1869",
+    "name": "Le tableau périodique des éléments",
+    "year": 1869,
+    "place": "Saint-Pétersbourg",
+    "at": [
+      30.32,
+      59.94
+    ],
+    "inventor": "Dmitri Mendeleïev",
+    "category": "science",
+    "description": "En mars 1869, le chimiste Dmitri Mendeleïev présente un tableau où les 63 éléments alors connus sont classés par masse atomique croissante : leurs propriétés chimiques se répètent à intervalles réguliers. Il laisse des cases vides et prédit les propriétés de trois éléments inconnus, découverts ensuite (gallium, scandium, germanium). D'autres chimistes avaient eu l'idée d'un classement, mais Mendeleïev en tire des prédictions testables.",
+    "impact": "La chimie gagne un plan de tout ce qu'elle connaît et de ce qu'elle ignore encore : le tableau, modifié, reste l'outil de base de la discipline.",
+    "sources": [
+      {
+        "label": "Tableau périodique des éléments",
+        "url": "https://fr.wikipedia.org/wiki/Tableau_périodique_des_éléments"
+      },
+      {
+        "label": "Dmitri Mendeleïev",
+        "url": "https://fr.wikipedia.org/wiki/Dmitri_Mendeleïev"
+      }
+    ]
+  },
+  {
+    "id": "bougie-iablotchkov-1876",
+    "name": "La « bougie » d'arc de Iablotchkov",
+    "year": 1876,
+    "place": "Paris",
+    "at": [
+      2.35,
+      48.86
+    ],
+    "inventor": "Pavel Iablotchkov",
+    "category": "technique",
+    "description": "L'ingénieur russe Pavel Iablotchkov, installé à Paris, dépose en 1876 un brevet pour une lampe à arc d'un type simple : deux charbons parallèles, séparés par un isolant, brûlent ensemble sans avoir besoin d'être réglés. Cette « bougie Iablotchkov » éclaire l'avenue de l'Opéra en 1878 et des rues de nombreuses villes. Elle est vite remplacée par l'ampoule à incandescence d'Edison et de Swan.",
+    "impact": "La bougie de Iablotchkov est la première lampe électrique utilisée en grand dans les rues. Elle fait entrer l'éclairage électrique dans la vie urbaine avant l'ampoule à incandescence.",
+    "sources": [
+      {
+        "label": "Pavel Iablotchkov",
+        "url": "https://fr.wikipedia.org/wiki/Pavel_Iablotchkov"
+      },
+      {
+        "label": "Lampe à arc",
+        "url": "https://fr.wikipedia.org/wiki/Lampe_à_arc"
+      }
+    ]
+  },
+  {
+    "id": "radio-popov-1895",
+    "name": "Le récepteur radio de Popov",
+    "year": 1895,
+    "place": "Saint-Pétersbourg",
+    "at": [
+      30.32,
+      59.94
+    ],
+    "inventor": "Alexandre Popov",
+    "category": "technique",
+    "description": "Alexandre Popov, enseignant à Cronstadt, la base navale de Saint-Pétersbourg, construit un récepteur pour détecter les orages à distance, puis il le présente le 7 mai 1895 à la Société russe de physique et de chimie. En 1896, il transmet un message en morse sur 250 mètres. Marconi dépose son brevet britannique en 1896. La priorité de l'invention de la radio est donc discutée ; en Russie, Popov est honoré comme son inventeur.",
+    "impact": "La radio naît à plusieurs endroits à la fois, et la marine russe l'utilise très tôt pour communiquer avec ses navires.",
+    "sources": [
+      {
+        "label": "Alexandre Popov",
+        "url": "https://fr.wikipedia.org/wiki/Alexandre_Popov_(physicien)"
+      },
+      {
+        "label": "Histoire de la radio",
+        "url": "https://fr.wikipedia.org/wiki/Histoire_de_la_radio"
+      }
+    ]
+  },
+  {
+    "id": "brise-glace-ermak-1898",
+    "name": "Le brise-glace polaire Ermak",
+    "year": 1898,
+    "place": "Newcastle et Cronstadt",
+    "at": [
+      29.77,
+      59.99
+    ],
+    "inventor": "Stepan Makarov",
+    "category": "navigation",
+    "description": "L'amiral Stepan Makarov conçoit un navire à étrave inclinée, capable de se hisser sur la glace et de l'écraser sous son poids. L'Ermak, construit à Newcastle (Royaume-Uni) et lancé en octobre 1898, est le premier brise-glace puissant destiné à l'Arctique : près de 8 000 tonnes et plusieurs hélices. Il ouvre la baie de Cronstadt pendant l'hiver. Il a été précédé de brise-glace plus petits.",
+    "impact": "Les ports de la Baltique restent ouverts en hiver ; la voie maritime du Nord devient possible pour des navires de fort tonnage.",
+    "sources": [
+      {
+        "label": "Brise-glace",
+        "url": "https://fr.wikipedia.org/wiki/Brise-glace"
+      },
+      {
+        "label": "Stepan Makarov",
+        "url": "https://fr.wikipedia.org/wiki/Stepan_Makarov"
+      }
+    ]
+  },
+  {
+    "id": "reflexe-conditionne-pavlov-1903",
+    "name": "Le réflexe conditionné de Pavlov",
+    "year": 1903,
+    "place": "Saint-Pétersbourg",
+    "at": [
+      30.32,
+      59.94
+    ],
+    "inventor": "Ivan Pavlov",
+    "category": "medecine",
+    "description": "Ivan Pavlov, physiologiste, étudie la digestion du chien : ce travail lui vaut le prix Nobel de médecine en 1904. En observant que ses chiens salivent à la vue de l'assistant qui les nourrit, il met en évidence le « réflexe conditionné » : un signal neutre (une cloche, un métronome), associé à la nourriture, finit par déclencher la salivation. Il présente ses résultats en 1903 au congrès de Madrid.",
+    "impact": "La notion de conditionnement donne naissance à des pans entiers de la psychologie du comportement et ouvre l'étude scientifique de l'apprentissage.",
+    "sources": [
+      {
+        "label": "Ivan Pavlov",
+        "url": "https://fr.wikipedia.org/wiki/Ivan_Pavlov"
+      },
+      {
+        "label": "Réflexe conditionné",
+        "url": "https://fr.wikipedia.org/wiki/Conditionnement_classique"
+      }
+    ]
+  },
+  {
+    "id": "quadrimoteur-sikorsky-1913",
+    "name": "Le premier avion à quatre moteurs",
+    "year": 1913,
+    "place": "Saint-Pétersbourg",
+    "at": [
+      30.32,
+      59.94
+    ],
+    "inventor": "Igor Sikorsky",
+    "category": "technique",
+    "description": "En 1913, le jeune ingénieur Igor Sikorsky construit à Saint-Pétersbourg, avec les usines Russo-Baltiques, le Russky Vitiaz (« le Chevalier russe »), le premier avion à quatre moteurs du monde, doté d'une cabine fermée pour les passagers, d'une salle de bains et d'un balcon. Il vole en mai 1913. Son successeur, l'Ilia Mouromets, sert comme bombardier pendant la Première Guerre mondiale.",
+    "impact": "Sikorsky montre qu'un grand avion à plusieurs moteurs peut voler de façon fiable. Il émigre après la révolution et construit aux États-Unis le premier hélicoptère de série.",
+    "sources": [
+      {
+        "label": "Igor Sikorsky",
+        "url": "https://fr.wikipedia.org/wiki/Igor_Sikorsky"
+      },
+      {
+        "label": "Sikorsky Ilya Mouromets",
+        "url": "https://fr.wikipedia.org/wiki/Ilia_Mouromets_(avion)"
+      }
+    ]
+  }
+]

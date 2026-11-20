@@ -1,0 +1,299 @@
+[
+  {
+    "id": "ivan-iv",
+    "name": "Ivan IV le Terrible",
+    "archetype": "tsar",
+    "faction": "streltsy",
+    "born": 1530,
+    "died": 1584,
+    "title": "Premier tsar de Russie, conquérant de la Volga",
+    "bio": "Ivan devient grand-prince de Moscou à trois ans, à la mort de son père en 1533. Sa jeunesse, dominée par la rivalité des boyards (les grands seigneurs), lui laisse une méfiance durable. Couronné tsar en 1547, il réforme l'État (code de lois de 1550, assemblée de la terre, armée de streltsy), prend Kazan (1552) et Astrakhan (1556) et ouvre la Volga. Il s'enlise ensuite dans la guerre de Livonie (1558-1583), perdue contre la Pologne et la Suède. Après la mort de sa première épouse Anastasia (1560), il durcit son pouvoir : en 1565, il crée l'opritchnina, un territoire et une garde personnelle (les opritchniki) qui terrorisent les élites. Novgorod est pillée en 1570. En 1581, dans un accès de colère, il tue son fils aîné Ivan ; le cadet Fiodor, faible, lui succède. Le surnom « Terrible » (en russe, grozny) peut aussi se traduire par « redoutable » ; l'image du tyran est débattue entre historiens, qui soulignent aussi ses réformes. Il meurt en 1584.",
+    "keyFacts": [
+      "1547 : couronné premier tsar de Russie",
+      "1552 : prise de Kazan ; 1556 : Astrakhan",
+      "1565-1572 : opritchnina, régime de terreur contre les boyards",
+      "1558-1583 : guerre de Livonie, perdue",
+      "1584 : mort, laissant le trône à Fiodor Ier"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Ivan le Terrible",
+        "url": "https://fr.wikipedia.org/wiki/Ivan_le_Terrible"
+      }
+    ]
+  },
+  {
+    "id": "ermak",
+    "name": "Ermak Timofeïevitch",
+    "archetype": "capitaine",
+    "faction": "cosaques",
+    "died": 1585,
+    "title": "Chef cosaque, premier conquérant de la Sibérie",
+    "bio": "Ermak est un ataman (chef cosaque) dont la naissance et les origines sont inconnues : Don, Volga ou Oural selon les récits. Il est connu comme pillard de la Volga et chef de bande avant d'entrer au service des Stroganov, riches marchands de l'Oural. Vers 1581-1582, à la tête de 540 à 840 hommes armés d'arquebuses, il franchit l'Oural et marche sur le khanat de Sibir. Il bat le khan Koutchoum près de Kachlyk (Isker) et prend sa capitale en octobre 1582. Il envoie ses fourrures au tsar Ivan IV, qui lui pardonne ses crimes passés et lui envoie des renforts. Le 5 août 1585, surpris de nuit sur les bords de l'Irtych, il se noie en tentant de fuir, entraîné par sa cotte de mailles, dit-on. Son nom est devenu mythique : chansons, tableaux, et brise-glace baptisé Ermak (1898). Les sources sont peu nombreuses et tardives : les chroniques sibériennes sont du XVIIᵉ siècle. Les faits précis, comme la date de l'expédition, varient.",
+    "keyFacts": [
+      "Vers 1581-1582 : traverse l'Oural avec quelques centaines de cosaques",
+      "Octobre 1582 : prend Kachlyk, capitale du khan Koutchoum",
+      "1584-1585 : tient la Sibérie occidentale avec des effectifs réduits",
+      "5 août 1585 : meurt noyé dans l'Irtych"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Ermak Timofeïevitch",
+        "url": "https://fr.wikipedia.org/wiki/Ermak_Timofeïévitch"
+      }
+    ]
+  },
+  {
+    "id": "michel-romanov",
+    "name": "Michel Ier Romanov",
+    "archetype": "tsar",
+    "faction": "streltsy",
+    "born": 1596,
+    "died": 1645,
+    "title": "Premier tsar de la dynastie des Romanov",
+    "bio": "Michel Fiodorovitch naît en 1596 dans une grande famille de boyards, les Romanov, apparentée à Ivan IV par sa première épouse Anastasia. Son père Fiodor, devenu moine sous le nom de Philarète, est retenu prisonnier en Pologne à partir de 1612. En février 1613, après la libération de Moscou, une grande assemblée de la terre élit tsar Michel, 16 ans, qui paraît docile et sans lien avec les factions du Temps des troubles. Il est couronné le 11 juillet 1613. Sans expérience, il règne d'abord avec sa mère puis, à partir de 1619, avec son père, devenu patriarche et « grand souverain ». Il signe la paix de Stolbovo avec la Suède (1617) et la trêve de Deoulino avec la Pologne (1618), puis recrée une armée avec des officiers étrangers. Sous son règne, les cosaques atteignent le Pacifique (1639). Il meurt en 1645 ; son fils Alexis lui succède. La dynastie qu'il fonde régnera jusqu'à Nicolas II, en 1917.",
+    "keyFacts": [
+      "1613 : élu tsar par le zemski sobor à 16 ans",
+      "1617-1618 : paix de Stolbovo et trêve de Deoulino",
+      "1619-1633 : gouverne avec son père, le patriarche Philarète",
+      "1639 : les cosaques atteignent le Pacifique",
+      "1645 : mort ; son fils Alexis lui succède"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Michel Ier de Russie",
+        "url": "https://fr.wikipedia.org/wiki/Michel_Ier_de_Russie"
+      }
+    ]
+  },
+  {
+    "id": "pierre-le-grand",
+    "name": "Pierre le Grand",
+    "archetype": "tsar",
+    "faction": "russes",
+    "born": 1672,
+    "died": 1725,
+    "title": "Tsar réformateur, premier empereur de Russie",
+    "bio": "Pierre naît à Moscou en 1672. Il est couronné à dix ans avec son demi-frère Ivan V sous la régence de sa sœur Sophie, puis règne seul à partir de 1696. Passionné de bateaux, de techniques et d'armes, il voyage en Hollande et en Angleterre (1697-1698) pour apprendre les métiers. De retour, il impose des réformes brutales : habits occidentaux, barbes coupées, armée et flotte nouvelles, Table des rangs, soumission de l'Église au Saint-Synode. Il mène la Grande Guerre du Nord (1700-1721) contre la Suède de Charles XII : battu à Narva (1700), il gagne à Poltava (1709) et obtient la Baltique au traité de Nystad (1721). Il fonde Saint-Pétersbourg en 1703 et la proclame capitale en 1712. En 1718, il fait condamner à mort son fils Alexis, qui complotait contre lui. Proclamé empereur en 1721, il meurt en 1725 sans désigner d'héritier. Son règne a coûté très cher aux paysans, mobilisés en masse pour l'armée et les chantiers. Les historiens le jugent à la fois génial et despotique.",
+    "keyFacts": [
+      "1696 : prise d'Azov ; 1697-1698 : Grande Ambassade en Europe",
+      "1703 : fondation de Saint-Pétersbourg",
+      "1709 : victoire de Poltava sur Charles XII",
+      "1721 : paix de Nystad et titre d'empereur",
+      "1725 : mort sans héritier désigné"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Pierre Ier de Russie",
+        "url": "https://fr.wikipedia.org/wiki/Pierre_Ier_de_Russie"
+      }
+    ]
+  },
+  {
+    "id": "catherine-ii",
+    "name": "Catherine II la Grande",
+    "archetype": "imperatrice",
+    "faction": "russes",
+    "born": 1729,
+    "died": 1796,
+    "title": "Impératrice de Russie, conquérante et mécène",
+    "bio": "Sophie d'Anhalt-Zerbst, petite princesse allemande née en 1729, arrive en Russie à 14 ans pour épouser le futur Pierre III. Elle apprend le russe, se convertit à l'orthodoxie et prend le nom de Catherine. En juin 1762, soutenue par la garde et son amant Grigori Orlov, elle renverse son mari, qui est tué peu après. Grande lectrice des philosophes des Lumières (elle correspond avec Voltaire et Diderot), elle réorganise l'administration, favorise les arts (l'Ermitage) et la noblesse. Elle écrase la révolte de Pougatchev (1773-1775), annexe la Crimée (1783) après deux guerres contre les Ottomans, et participe aux trois partages de la Pologne (1772, 1793, 1795). Le servage s'aggrave sous son règne. Parmi ses favoris, Grigori Potemkine joue un rôle politique central. Elle meurt en novembre 1796. Les nombreuses légendes sur sa vie privée sont en grande partie fausses ; l'impératrice a été à la fois la figure du despotisme éclairé et celle d'une noblesse toute-puissante.",
+    "keyFacts": [
+      "1762 : coup d'État contre Pierre III",
+      "1773-1775 : répression de la révolte de Pougatchev",
+      "1774 : traité de Küçük Kaynarca ; 1783 : annexion de la Crimée",
+      "1772-1795 : trois partages de la Pologne",
+      "1796 : mort ; son fils Paul Ier lui succède"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Catherine II de Russie",
+        "url": "https://fr.wikipedia.org/wiki/Catherine_II_de_Russie"
+      }
+    ]
+  },
+  {
+    "id": "souvorov",
+    "name": "Alexandre Souvorov",
+    "archetype": "general",
+    "faction": "russes",
+    "born": 1730,
+    "died": 1800,
+    "title": "Feld-maréchal, jamais battu",
+    "bio": "Fils d'un général, Alexandre Souvorov est petit, maigre, de santé fragile, mais se forge par l'exercice. Il entre à l'armée en 1748 et passe cinquante ans à la guerre. Contre les Ottomans, il se distingue à Kozloudja (1774), à Kinburn (1787), à Fokchani et Rymnik (1789) et prend la forteresse d'Izmaïl (décembre 1790). Il prend aussi Praga, faubourg de Varsovie, en novembre 1794, dont le massacre de civils lui est souvent reproché. Réputé pour sa discipline, son souci des soldats et son humour, il est l'auteur de la « Science de la victoire », manuel qui insiste sur la rapidité, la baïonnette et la valeur morale du soldat. En 1799, Paul Ier l'envoie en Italie et en Suisse contre les armées de la Révolution française : il bat les Français à la Trebbia et à Novi, puis franchit les Alpes en conduisant son armée du Saint-Gothard à la vallée du Rhin dans des conditions épiques. Il meurt en 1800 et n'a jamais perdu une bataille.",
+    "keyFacts": [
+      "1774 : se distingue à Kozloudja contre les Ottomans",
+      "1790 : prise d'Izmaïl",
+      "1794 : prise de Praga, près de Varsovie",
+      "1799 : campagne d'Italie, puis passage des Alpes",
+      "1800 : mort sans avoir perdu une bataille"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Alexandre Souvorov",
+        "url": "https://fr.wikipedia.org/wiki/Alexandre_Souvorov"
+      }
+    ]
+  },
+  {
+    "id": "koutouzov",
+    "name": "Mikhaïl Koutouzov",
+    "archetype": "general",
+    "faction": "russes",
+    "born": 1745,
+    "died": 1813,
+    "title": "Feld-maréchal, vainqueur de la campagne de 1812",
+    "bio": "Mikhaïl Koutouzov est un officier de carrière, formé à l'école de Souvorov. Blessé à la tête lors des guerres contre les Ottomans, il perd en partie la vue d'un œil. Il est ambassadeur en Turquie, puis gouverneur de Saint-Pétersbourg. Battu à Austerlitz en 1805 aux côtés du tsar Alexandre Ier, il bat les Ottomans en 1811-1812, ce qui conduit à la paix de Bucarest. En août 1812, quand la Grande Armée de Napoléon avance en Russie, l'opinion exige qu'il remplace Barclay de Tolly. Il livre la bataille de Borodino le 7 septembre, puis décide d'abandonner Moscou pour sauver son armée. Il harcèle ensuite la retraite française à Maloiaroslavets (octobre) et refuse les batailles décisives, laissant l'hiver ruiner l'ennemi. Alexandre Ier et certains généraux lui reprochent sa prudence. Il meurt en avril 1813 à Bunzlau, en Silésie, en poursuivant les Français. Il est devenu un héros national, présenté par Tolstoï dans Guerre et Paix comme le sage de la guerre.",
+    "keyFacts": [
+      "1805 : défaite à Austerlitz avec le tsar",
+      "1811-1812 : vainqueur des Ottomans, paix de Bucarest",
+      "7 septembre 1812 : bataille de Borodino",
+      "Automne 1812 : abandonne Moscou, harcèle la retraite française",
+      "1813 : meurt à Bunzlau, en Silésie"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Mikhaïl Koutouzov",
+        "url": "https://fr.wikipedia.org/wiki/Mikhaïl_Koutouzov"
+      }
+    ]
+  },
+  {
+    "id": "alexandre-ier",
+    "name": "Alexandre Ier",
+    "archetype": "tsar",
+    "faction": "russes",
+    "born": 1777,
+    "died": 1825,
+    "title": "Tsar qui a vaincu Napoléon",
+    "bio": "Petit-fils de Catherine II, qui supervise son éducation avec des précepteurs suisses (Laharpe), Alexandre monte sur le trône en 1801 après l'assassinat de son père Paul Ier, auquel il n'est pas étranger. Il rêve de réformes libérales, mais les guerres contre Napoléon l'occupent : défaite d'Austerlitz (1805), traité de Tilsit (1807), alliance avec la France puis rupture. En 1812, il refuse toute négociation après la perte de Moscou. Ses armées entrent à Paris en 1814. Au congrès de Vienne (1815), il obtient la plus grande partie de la Pologne, qu'il dote d'une constitution. Fervent mystique, il fonde la Sainte-Alliance avec l'Autriche et la Prusse, pour défendre les monarchies contre les révolutions. À la fin de son règne, il se tourne vers la réaction, avec les colonies militaires du général Araktcheïev. Il meurt en décembre 1825 à Taganrog, sans enfants ; la question de sa succession provoque la révolte des décembristes, jeunes officiers libéraux, contre son frère Nicolas Ier. Une légende voulait qu'il ait en réalité disparu pour se faire ermite.",
+    "keyFacts": [
+      "1801 : monte sur le trône après la mort de Paul Ier",
+      "1807 : traité de Tilsit avec Napoléon",
+      "1812 : refuse de négocier, la Grande Armée est détruite",
+      "1814-1815 : entre à Paris, congrès de Vienne, royaume de Pologne",
+      "1825 : meurt à Taganrog ; révolte des décembristes"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Alexandre Ier de Russie",
+        "url": "https://fr.wikipedia.org/wiki/Alexandre_Ier_de_Russie"
+      }
+    ]
+  },
+  {
+    "id": "chamil",
+    "name": "Chamil",
+    "archetype": "chef-barbare",
+    "faction": "caucasiens",
+    "born": 1797,
+    "died": 1871,
+    "title": "Imam du Daghestan et de Tchétchénie",
+    "bio": "Chamil naît vers 1797 dans un village du Daghestan, dans le Caucase du Nord. Étudiant des sciences religieuses, il rejoint le mouvement du « muridisme », une voie soufie qui prône la guerre sainte contre les Russes. Après la mort de ses deux prédécesseurs, il devient en 1834 le troisième imam, à la fois chef religieux, juge et chef militaire. Il bâtit un État, l'imamat, avec des gouverneurs, un système d'impôts, une armée régulière, des armureries, des forts, qui tient plus de vingt ans. Ses combattants pratiquent la guérilla dans les montagnes, et en 1842 comme en 1845 infligent de lourdes pertes aux colonnes russes. Après la guerre de Crimée, les Russes engagent des moyens considérables sous le général Bariatinski. En 1859, Chamil, assiégé à Gounib, se rend. Le tsar Alexandre II le traite avec honneur ; Chamil vit à Kalouga puis, en 1870, part en pèlerinage à La Mecque. Il meurt à Médine en 1871, héros de la résistance du Caucase pour les uns, chef autoritaire pour d'autres.",
+    "keyFacts": [
+      "1834 : devient le troisième imam du Daghestan et de Tchétchénie",
+      "1845 : lourdes pertes russes dans la campagne de Dargo",
+      "Années 1840-1850 : bâtit l'État de l'imamat",
+      "6 septembre 1859 : se rend à Gounib",
+      "1871 : meurt à Médine"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Chamil",
+        "url": "https://fr.wikipedia.org/wiki/Chamil"
+      }
+    ]
+  },
+  {
+    "id": "alexandre-ii",
+    "name": "Alexandre II",
+    "archetype": "tsar",
+    "faction": "russes-modernes",
+    "born": 1818,
+    "died": 1881,
+    "title": "Tsar libérateur, abolisseur du servage",
+    "bio": "Alexandre II naît en 1818 et monte sur le trône en 1855, au milieu de la guerre de Crimée. Il comprend que la défaite vient d'une Russie en retard et entame les « Grandes Réformes ». Le servage est aboli en 1861, libérant environ 22 millions de paysans, qui doivent toutefois racheter leurs terres. Suivent les conseils locaux élus (zemstvos), la justice avec jurés, la presse moins censurée (1865), la conscription pour tous (1874). Mais il refuse toute constitution et fait écraser le soulèvement polonais de 1863. Sa politique extérieure est celle de l'expansion : le Caucase (1864), l'Asie centrale (Tachkent 1865, Samarcande 1868), l'Amour (1858-1860), la guerre contre les Ottomans (1877-1878) qui libère la Bulgarie, et la vente de l'Alaska (1867). Plusieurs attentats de révolutionnaires menacent le tsar ; le 1ᵉʳ mars 1881, une bombe de la Volonté du peuple le tue à Saint-Pétersbourg, le jour même où il s'apprêtait à signer un projet de réforme. Son fils Alexandre III renforce alors le pouvoir autocratique.",
+    "keyFacts": [
+      "1855 : monte sur le trône pendant la guerre de Crimée",
+      "1861 : abolition du servage",
+      "1864 : réformes de la justice et des zemstvos",
+      "1867 : vente de l'Alaska ; 1865-1868 : conquête de l'Asie centrale",
+      "1881 : assassiné par la Volonté du peuple"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Alexandre II de Russie",
+        "url": "https://fr.wikipedia.org/wiki/Alexandre_II_de_Russie"
+      }
+    ]
+  },
+  {
+    "id": "mendeleiev",
+    "name": "Dmitri Mendeleïev",
+    "archetype": "sage",
+    "faction": "russes-modernes",
+    "born": 1834,
+    "died": 1907,
+    "title": "Chimiste, auteur du tableau périodique des éléments",
+    "bio": "Dmitri Mendeleïev naît en 1834 à Tobolsk, en Sibérie, dernier d'une très grande fratrie. Sa mère l'emmène à Saint-Pétersbourg pour qu'il puisse étudier. Après des études de chimie, il enseigne à l'université de Saint-Pétersbourg et publie en 1868-1871 son manuel Principes de chimie. En mars 1869, il présente un tableau où les éléments chimiques sont rangés par masse atomique croissante : les propriétés se répètent périodiquement. Il laisse des cases vides, dans lesquelles il prédit l'existence d'éléments encore inconnus (le gallium, le scandium, le germanium), découverts ensuite avec les propriétés qu'il avait annoncées. D'autres chimistes (Lothar Meyer, Newlands) avaient entrevu l'idée, mais c'est lui qui en tire des prédictions. Il s'intéresse aussi au pétrole, à l'industrie russe, aux droits de douane, et fonde en 1893 la Chambre des poids et mesures. Il ne reçoit jamais le prix Nobel, malgré plusieurs nominations. Il meurt en 1907 ; l'élément 101 porte son nom, le mendélévium.",
+    "keyFacts": [
+      "1834 : naît à Tobolsk, en Sibérie",
+      "1869 : présente son tableau périodique des éléments",
+      "Années 1870 : prédit le gallium, le scandium et le germanium",
+      "1893 : dirige la Chambre des poids et mesures",
+      "1907 : mort ; élément 101 baptisé mendélévium"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Dmitri Mendeleïev",
+        "url": "https://fr.wikipedia.org/wiki/Dmitri_Mendeleïev"
+      }
+    ]
+  },
+  {
+    "id": "nicolas-ii",
+    "name": "Nicolas II",
+    "archetype": "tsar",
+    "faction": "russes-modernes",
+    "born": 1868,
+    "died": 1918,
+    "title": "Dernier empereur de Russie",
+    "bio": "Nicolas II monte sur le trône en 1894, à la mort de son père Alexandre III, avec une conviction : l'autocratie est un devoir sacré. Épris de sa femme Alexandra, il est assez effacé dans la décision. Son règne commence mal : la bousculade de Khodynka, au couronnement (1896), fait plus de 1 300 morts. Il subit la défaite de la guerre russo-japonaise (1904-1905), puis le Dimanche rouge (janvier 1905), dont la répression déclenche une révolution. Il doit concéder en octobre un manifeste et une assemblée, la Douma, sans abandonner son pouvoir. Le Premier ministre Stolypine lance des réformes agraires, mais est assassiné en 1911. En 1914, Nicolas entre en guerre ; il prend en 1915 le commandement de l'armée, laissant Alexandra, influencée par le guérisseur Raspoutine, gouverner. Le 15 mars 1917 (2 mars en julien), il abdique. Prisonnier des bolcheviks, il est fusillé avec sa famille à Ekaterinbourg, dans la nuit du 16 au 17 juillet 1918. L'Église orthodoxe russe l'a canonisé en 2000.",
+    "keyFacts": [
+      "1894 : monte sur le trône",
+      "1905 : défaite contre le Japon, Dimanche rouge, Manifeste d'octobre",
+      "1914 : entre dans la Grande Guerre ; 1915 : prend le commandement en chef",
+      "15 mars 1917 : abdique",
+      "17 juillet 1918 : fusillé à Ekaterinbourg"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Nicolas II",
+        "url": "https://fr.wikipedia.org/wiki/Nicolas_II"
+      }
+    ]
+  },
+  {
+    "id": "lenine",
+    "name": "Vladimir Lénine",
+    "archetype": "revolutionnaire",
+    "faction": "russes-modernes",
+    "born": 1870,
+    "died": 1924,
+    "title": "Chef des bolcheviks, fondateur de l'URSS",
+    "bio": "Vladimir Oulianov, dit Lénine, naît en 1870 à Simbirsk, dans une famille de fonctionnaires ; son frère aîné est pendu en 1887 pour avoir préparé un attentat contre le tsar. Juriste, il se tourne vers le marxisme, est exilé en Sibérie, puis à l'étranger. En 1903, il scinde le parti social-démocrate russe : ses partisans, les bolcheviks (« majoritaires »), défendent un parti de révolutionnaires professionnels. Il passe la guerre en Suisse. En avril 1917, après la chute du tsar, il rentre en Russie dans un wagon plombé qui traverse l'Allemagne, et rédige les Thèses d'avril : « Tout le pouvoir aux soviets ». Dans la nuit du 25 octobre 1917 (7 novembre), les bolcheviks prennent le pouvoir. Lénine dirige le nouveau gouvernement, signe la paix de Brest-Litovsk (1918), mène la guerre civile et la Terreur rouge, instaure en 1921 la Nouvelle Politique économique. Victime de plusieurs attaques, il meurt en janvier 1924. Son corps est embaumé et exposé sur la place Rouge.",
+    "keyFacts": [
+      "1903 : scission entre bolcheviks et mencheviks",
+      "Avril 1917 : retour à Petrograd, Thèses d'avril",
+      "7 novembre 1917 (25 octobre en julien) : prise du pouvoir",
+      "1918 : paix de Brest-Litovsk, début de la guerre civile",
+      "1924 : mort ; son corps est embaumé"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Lénine",
+        "url": "https://fr.wikipedia.org/wiki/Lénine"
+      }
+    ]
+  }
+]

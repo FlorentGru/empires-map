@@ -1098,7 +1098,19 @@
       55.756
     ],
     "founded": 1147,
-    "rank": 1
+    "rank": 1,
+    "capitalOf": [
+      {
+        "empire": "russie",
+        "from": 1547,
+        "to": 1712
+      },
+      {
+        "empire": "russie",
+        "from": 1728,
+        "to": 1732
+      }
+    ]
   },
   {
     "id": "madrid",
@@ -1221,7 +1233,19 @@
       59.939
     ],
     "founded": 1703,
-    "rank": 2
+    "rank": 2,
+    "capitalOf": [
+      {
+        "empire": "russie",
+        "from": 1712,
+        "to": 1728
+      },
+      {
+        "empire": "russie",
+        "from": 1732,
+        "to": 1917
+      }
+    ]
   },
   {
     "id": "austerlitz",
@@ -1298,7 +1322,8 @@
     "founded": 1500,
     "rank": 3,
     "empires": [
-      "napoleon"
+      "napoleon",
+      "russie"
     ]
   },
   {
@@ -2407,7 +2432,8 @@
       "alexandre",
       "perse-achemenide",
       "omeyyades",
-      "abbassides"
+      "abbassides",
+      "russie"
     ]
   },
   {
@@ -2557,7 +2583,8 @@
     "founded": 1653,
     "rank": 3,
     "empires": [
-      "china"
+      "china",
+      "russie"
     ]
   },
   {
@@ -2836,7 +2863,8 @@
     "empires": [
       "mongols",
       "omeyyades",
-      "abbassides"
+      "abbassides",
+      "russie"
     ]
   },
   {
@@ -2995,7 +3023,8 @@
     "founded": 859,
     "rank": 2,
     "empires": [
-      "mongols"
+      "mongols",
+      "russie"
     ]
   },
   {
@@ -3013,7 +3042,8 @@
     "founded": 482,
     "rank": 2,
     "empires": [
-      "mongols"
+      "mongols",
+      "russie"
     ]
   },
   {
@@ -5560,7 +5590,8 @@
     "founded": 1783,
     "rank": 3,
     "empires": [
-      "ottomans"
+      "ottomans",
+      "russie"
     ]
   },
   {
@@ -5745,7 +5776,8 @@
     "founded": 1000,
     "rank": 3,
     "empires": [
-      "ottomans"
+      "ottomans",
+      "russie"
     ]
   },
   {
@@ -8468,5 +8500,380 @@
     ],
     "founded": 1577,
     "rank": 3
+  },
+  {
+    "id": "kazan",
+    "modern": "Kazan, Russie",
+    "names": [
+      {
+        "name": "Kazan"
+      }
+    ],
+    "coords": [
+      49.11,
+      55.79
+    ],
+    "founded": 1005,
+    "rank": 2,
+    "empires": [
+      "russie"
+    ]
+  },
+  {
+    "id": "astrakhan",
+    "modern": "Astrakhan, Russie",
+    "names": [
+      {
+        "name": "Astrakhan"
+      }
+    ],
+    "coords": [
+      48.04,
+      46.35
+    ],
+    "founded": 1459,
+    "rank": 2,
+    "empires": [
+      "russie"
+    ]
+  },
+  {
+    "id": "tobolsk",
+    "modern": "Tobolsk, Russie",
+    "names": [
+      {
+        "name": "Tobolsk"
+      }
+    ],
+    "coords": [
+      68.27,
+      58.2
+    ],
+    "founded": 1587,
+    "rank": 2,
+    "empires": [
+      "russie"
+    ]
+  },
+  {
+    "id": "iakoutsk",
+    "modern": "Iakoutsk, Russie",
+    "names": [
+      {
+        "name": "Iakoutsk"
+      }
+    ],
+    "coords": [
+      129.73,
+      62.03
+    ],
+    "founded": 1632,
+    "rank": 3,
+    "empires": [
+      "russie"
+    ]
+  },
+  {
+    "id": "okhotsk",
+    "modern": "Okhotsk, Russie",
+    "names": [
+      {
+        "name": "Okhotsk"
+      }
+    ],
+    "coords": [
+      143.2,
+      59.36
+    ],
+    "founded": 1647,
+    "rank": 3,
+    "empires": [
+      "russie"
+    ]
+  },
+  {
+    "id": "irkoutsk",
+    "modern": "Irkoutsk, Russie",
+    "names": [
+      {
+        "name": "Irkoutsk"
+      }
+    ],
+    "coords": [
+      104.28,
+      52.29
+    ],
+    "founded": 1661,
+    "rank": 2,
+    "empires": [
+      "russie"
+    ]
+  },
+  {
+    "id": "smolensk",
+    "modern": "Smolensk, Russie",
+    "names": [
+      {
+        "name": "Smolensk"
+      }
+    ],
+    "coords": [
+      32.05,
+      54.78
+    ],
+    "founded": 863,
+    "rank": 2,
+    "empires": [
+      "russie"
+    ]
+  },
+  {
+    "id": "riga",
+    "modern": "Riga, Lettonie",
+    "names": [
+      {
+        "name": "Riga"
+      }
+    ],
+    "coords": [
+      24.1,
+      56.95
+    ],
+    "founded": 1201,
+    "rank": 2,
+    "empires": [
+      "russie"
+    ]
+  },
+  {
+    "id": "tiflis",
+    "modern": "Tbilissi, Géorgie",
+    "names": [
+      {
+        "name": "Tiflis",
+        "to": 1936
+      },
+      {
+        "name": "Tbilissi",
+        "from": 1937
+      }
+    ],
+    "coords": [
+      44.79,
+      41.72
+    ],
+    "founded": 479,
+    "rank": 2,
+    "empires": [
+      "russie"
+    ]
+  },
+  {
+    "id": "tachkent",
+    "modern": "Tachkent, Ouzbékistan",
+    "names": [
+      {
+        "name": "Tachkent"
+      }
+    ],
+    "coords": [
+      69.24,
+      41.3
+    ],
+    "founded": 100,
+    "rank": 2,
+    "empires": [
+      "russie"
+    ]
+  },
+  {
+    "id": "vladivostok",
+    "modern": "Vladivostok, Russie",
+    "names": [
+      {
+        "name": "Vladivostok"
+      }
+    ],
+    "coords": [
+      131.9,
+      43.12
+    ],
+    "founded": 1860,
+    "rank": 2,
+    "empires": [
+      "russie"
+    ]
+  },
+  {
+    "id": "odessa",
+    "modern": "Odessa, Ukraine",
+    "names": [
+      {
+        "name": "Odessa"
+      }
+    ],
+    "coords": [
+      30.73,
+      46.48
+    ],
+    "founded": 1794,
+    "rank": 2,
+    "empires": [
+      "russie"
+    ]
+  },
+  {
+    "id": "novo-arkhangelsk",
+    "modern": "Sitka, Alaska",
+    "names": [
+      {
+        "name": "Novo-Arkhangelsk",
+        "to": 1867
+      },
+      {
+        "name": "Sitka",
+        "from": 1868
+      }
+    ],
+    "coords": [
+      -135.33,
+      57.05
+    ],
+    "founded": 1804,
+    "rank": 3,
+    "empires": [
+      "russie"
+    ]
+  },
+  {
+    "id": "molodi",
+    "modern": "Molodi, Russie",
+    "names": [
+      {
+        "name": "Molodi"
+      }
+    ],
+    "coords": [
+      37.55,
+      55.3
+    ],
+    "founded": 1500,
+    "rank": 3,
+    "empires": [
+      "russie"
+    ]
+  },
+  {
+    "id": "poltava",
+    "modern": "Poltava, Ukraine",
+    "names": [
+      {
+        "name": "Poltava"
+      }
+    ],
+    "coords": [
+      34.55,
+      49.59
+    ],
+    "founded": 1174,
+    "rank": 3,
+    "empires": [
+      "russie"
+    ]
+  },
+  {
+    "id": "gounib",
+    "modern": "Gounib, Daghestan",
+    "names": [
+      {
+        "name": "Gounib"
+      }
+    ],
+    "coords": [
+      46.95,
+      42.38
+    ],
+    "founded": 1500,
+    "rank": 3,
+    "empires": [
+      "russie"
+    ]
+  },
+  {
+    "id": "tannenberg",
+    "modern": "Stębark, Pologne",
+    "names": [
+      {
+        "name": "Tannenberg"
+      }
+    ],
+    "coords": [
+      20.12,
+      53.48
+    ],
+    "founded": 1400,
+    "rank": 3,
+    "empires": [
+      "russie"
+    ]
+  },
+  {
+    "id": "orenbourg",
+    "modern": "Orenbourg, Russie",
+    "names": [
+      {
+        "name": "Orenbourg"
+      }
+    ],
+    "coords": [
+      55.1,
+      51.77
+    ],
+    "founded": 1743,
+    "rank": 3,
+    "empires": [
+      "russie"
+    ]
+  },
+  {
+    "id": "simbirsk",
+    "modern": "Oulianovsk, Russie",
+    "names": [
+      {
+        "name": "Simbirsk",
+        "to": 1923
+      },
+      {
+        "name": "Oulianovsk",
+        "from": 1924
+      }
+    ],
+    "coords": [
+      48.4,
+      54.33
+    ],
+    "founded": 1648,
+    "rank": 3,
+    "empires": [
+      "russie"
+    ]
+  },
+  {
+    "id": "pereiaslav",
+    "modern": "Pereïaslav, Ukraine",
+    "names": [
+      {
+        "name": "Pereïaslav"
+      }
+    ],
+    "coords": [
+      31.45,
+      50.07
+    ],
+    "founded": 907,
+    "rank": 3,
+    "empires": [
+      "russie"
+    ]
   }
 ]
