@@ -267,7 +267,15 @@ export type Faction =
   | 'moghols'
   | 'rajputs'
   | 'marathes'
-  | 'afghans';
+  | 'afghans'
+  // Empire russe
+  | 'streltsy'
+  | 'tatars'
+  | 'cosaques'
+  | 'caucasiens'
+  | 'russes-modernes'
+  | 'japonais-meiji'
+  | 'allemands-1914';
 
 export const FACTIONS: Faction[] = [
   'romains',
@@ -359,6 +367,13 @@ export const FACTIONS: Faction[] = [
   'rajputs',
   'marathes',
   'afghans',
+  'streltsy',
+  'tatars',
+  'cosaques',
+  'caucasiens',
+  'russes-modernes',
+  'japonais-meiji',
+  'allemands-1914',
 ];
 
 export type Archetype =
@@ -417,6 +432,8 @@ export type Archetype =
   | 'askia'
   // Perse achéménide
   | 'grand-roi'
+  // Empire russe
+  | 'revolutionnaire'
   // Tous empires : savant, philosophe (et figure du guide de l'Atlas)
   | 'sage';
 
@@ -467,6 +484,7 @@ export const ARCHETYPES: Archetype[] = [
   'mansa',
   'askia',
   'grand-roi',
+  'revolutionnaire',
 ];
 
 export interface ArmyMove {

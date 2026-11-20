@@ -40,6 +40,7 @@ const EMPIRE_SPRITES: Record<string, { faction: Faction; archetype: Archetype }>
   omeyyades: { faction: 'arabes', archetype: 'calife' },
   abbassides: { faction: 'arabes', archetype: 'calife' },
   moghols: { faction: 'moghols', archetype: 'shah' },
+  russie: { faction: 'russes', archetype: 'tsar' },
 };
 
 /** Au-delà, la légende des entités est tronquée (périodes de division). */

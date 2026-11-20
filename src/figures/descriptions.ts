@@ -114,6 +114,41 @@ export const FACTION_INFO: Record<Faction, FigureInfo> = {
     era: 'XVIIIe – XIXe s.',
     text: "L'infanterie russe, en uniforme vert foncé, est recrutée par une conscription de longue durée parmi les serfs. Elle est réputée endurante, solide à la baïonnette et appuyée par une forte artillerie, et la cavalerie cosaque harcèle les arrières. Battue à Austerlitz et à Friedland, elle résiste à Borodino (1812). La retraite de la Grande Armée, le froid et la guerre d'usure décident de la campagne de Russie.",
   },
+  streltsy: {
+    label: 'Streltsy',
+    era: 'XVIe – XVIIe s.',
+    text: "Premiers fantassins permanents de Moscovie, armés d'arquebuses, créés par Ivan IV vers 1550 avec la hache berdiche comme appui. Ils tiennent la garnison de Moscou et se révoltent contre Pierre le Grand, qui les dissout après 1698.",
+  },
+  tatars: {
+    label: 'Tatars',
+    era: 'XVe – XVIIIe s.',
+    text: "Héritiers de la Horde d'or, organisés en khanats de Kazan, Astrakhan, Sibir et Crimée, ce sont des cavaliers archers rapides. Kazan tombe aux mains d'Ivan IV en 1552, et les raids de Crimée atteignent Moscou en 1571. La Crimée est annexée par la Russie en 1783.",
+  },
+  cosaques: {
+    label: 'Cosaques',
+    era: 'XVIe – XXe s.',
+    text: "Communautés libres de cavaliers installées sur le Don et le Dniepr, qui élisent leur ataman. Ermak ouvre la Sibérie à la Russie vers 1582. Les grandes révoltes de Razine puis de Pougatchev les secouent, avant qu'ils ne deviennent une cavalerie d'élite de l'empire.",
+  },
+  caucasiens: {
+    label: 'Montagnards du Caucase',
+    era: 'XVIIIe – XIXe s.',
+    text: "Tchétchènes, Daghestanais et Circassiens, peuples de montagne vêtus de la tcherkeska, avec des cartouchières sur la poitrine. La guerre du Caucase est menée par l'imam Chamil, qui se rend en 1859. En 1864, une grande partie des Circassiens est exilée vers l'Empire ottoman.",
+  },
+  'russes-modernes': {
+    label: 'Russes (1860-1917)',
+    era: '1860 – 1917',
+    text: "Armée de conscription installée par les réformes de Milioutine (1874), avec un service plus court et des unités plus mobiles. Elle adopte l'uniforme kaki après 1904. Elle est battue en Mandchourie (1904-1905), puis subit de lourdes pertes à Tannenberg (1914). L'effondrement de 1917 met fin à l'empire des tsars.",
+  },
+  'japonais-meiji': {
+    label: 'Japonais (ère Meiji)',
+    era: '1873 – 1905',
+    text: 'Armée de conscription moderne créée à partir de 1873 sur le modèle français puis allemand. Elle est entraînée et équipée de fusils modernes. En 1905, elle remporte les victoires de Moukden et de Tsushima sur la Russie, ce qui fait du Japon une grande puissance.',
+  },
+  'allemands-1914': {
+    label: 'Allemands (1914-1918)',
+    era: '1914 – 1918',
+    text: "Armée impériale allemande, reconnaissable à son casque à pointe et à son uniforme feldgrau. En août 1914, elle écrase l'armée russe à Tannenberg, sous les ordres d'Hindenburg et Ludendorff. La guerre s'installe ensuite sur le front de l'Ouest.",
+  },
   espagnols: {
     label: 'Espagnols',
     era: '1808 – 1814',
@@ -531,6 +566,11 @@ export const ARCHETYPE_INFO: Record<Archetype, FigureInfo> = {
     label: 'Diplomate',
     era: 'XVIIIe – XIXe s.',
     text: "Ministres et ambassadeurs en habit sombre brodé ou en frac, portant parfois un portefeuille de dépêches. Talleyrand, Metternich, Castlereagh ou Nesselrode négocient les traités et alliances qui font et défont les coalitions. Au congrès de Vienne (1814-1815), ils redessinent la carte de l'Europe selon l'équilibre des puissances.",
+  },
+  revolutionnaire: {
+    label: 'Révolutionnaire',
+    era: 'XIXe – XXe s.',
+    text: "Militants socialistes et bolcheviks, comme Lénine et Trotski, orateurs dans les usines et les soviets. En casquette d'ouvrier et drapeau rouge à la main, ils haranguent les foules. Ils renversent le gouvernement provisoire en octobre 1917.",
   },
   amiral: {
     label: 'Amiral',

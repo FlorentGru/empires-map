@@ -290,6 +290,17 @@ export const CHARACTER_SPECS = {
       circ(26.2, 37.6, 1, RED, NS) +
       circ(24.5, 34, 1.9, SKIN),
   },
+  revolutionnaire: {
+    robe: '#2b2a33',
+    deco: path('M16.2 17.6H19.8L19.2 23.2L18 25L16.8 23.2Z', RED, NS),
+    head:
+      path('M11.6 9.6Q11.4 4.6 18 4.4Q24.6 4.6 24.4 9.6Z', '#2b2a33') +
+      rect(10.6, 9, 11, 1.4, '#1f1e25', 0.4) +
+      ell(12.4, 11.6, 1.5, 2, SKIN) +
+      ell(23.6, 11.6, 1.5, 2, SKIN) +
+      beard('#2b2a33'),
+    front: line('M24.5 34V22', '#6e5a3a', 0.8) + rect(24.5, 22, 5, 3.6, RED, 0, NS) + circ(24.5, 34, 1.9, SKIN),
+  },
   amiral: {
     robe: '#1f2f5a',
     deco:

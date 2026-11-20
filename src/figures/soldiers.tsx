@@ -220,6 +220,60 @@ export const NAPO_SOLDIER_SPECS = {
       path('M15 2.2Q16 -1 17 2.2Z', '#efe6cc'),
     weapon: musket(),
   },
+  streltsy: {
+    tunic: '#b0302a',
+    skirt: '#b0302a',
+    legs: 'pants',
+    legColor: '#4a3a2a',
+    boots: '#c8a040',
+    deco: stroke('M16 15V25', '#c8a040', 0.8) + stroke('M13.5 18.5H18.5M13.5 22H18.5', '#c8a040', 0.9),
+    head: ell(16, 6.8, 6.4, 1.8, '#5a3a22') + path('M12.2 6.8Q11.8 2.6 16 2.2Q20.2 2.6 19.8 6.8Z', '#b0302a'),
+    weapon: musket(),
+  },
+  'russes-modernes': {
+    tunic: '#8a8a5a',
+    legs: 'pants',
+    legColor: '#6a6a44',
+    boots: '#1f1a14',
+    deco: path('M10.6 14.2L13.2 14L21.8 25.6L19.2 26.2Z', '#6e6a58', 'stroke="none"'),
+    head: path('M11.8 7.4Q11.6 3.4 16 3.2Q20.4 3.4 20.2 7.4Z', '#8a8a5a') + rect(10.8, 6.6, 10.4, 1.3, '#1f1a14', 0.4),
+    weapon: musket(),
+  },
+  'japonais-meiji': {
+    tunic: '#25304a',
+    legs: 'pants',
+    legColor: '#d8d2c0',
+    boots: '#c8c0a8',
+    deco:
+      stroke('M16 14.5V25', GOLD, 0.6) +
+      circ(16, 17.5, 0.8, GOLD, 'stroke="none"') +
+      circ(16, 21, 0.8, GOLD, 'stroke="none"') +
+      circ(16, 24.5, 0.8, GOLD, 'stroke="none"'),
+    head: path('M11.8 7.4Q11.6 3.4 16 3.2Q20.4 3.4 20.2 7.4Z', '#25304a') + rect(11.5, 6.2, 9, 1.4, '#d8b030', 0.3),
+    weapon: musket(),
+  },
+  'allemands-1914': {
+    tunic: '#6e7468',
+    legs: 'pants',
+    legColor: '#6e7468',
+    boots: '#1f1a14',
+    deco: rect(10.2, 23.8, 11.6, 1.6, '#1f1a14', 0, 'stroke="none"'),
+    head: dome('#b8ae8a') + rect(11, 7.4, 10, 1.4, '#b8ae8a', 0.4) + path('M14.8 4.2L17.2 4.2L16.4 0.2Q16 -0.8 15.6 0.2Z', '#b8ae8a'),
+    weapon: musket(),
+  },
+  caucasiens: {
+    tunic: '#5a4a3a',
+    skirt: '#5a4a3a',
+    legs: 'pants',
+    legColor: '#2b2219',
+    boots: '#2b2219',
+    deco:
+      stroke('M11.8 15.4H20.2M11.8 18.2H20.2M11.8 21H20.2', WHITE, 1.4, 'stroke-dasharray="1 0.8"') +
+      rect(10.2, 23.8, 11.6, 1.6, '#2b2219', 0, 'stroke="none"') +
+      path('M20.2 24L22.2 29L21.2 29.4L19.4 24.4Z', STEEL, 'stroke="none"'),
+    head: path('M10.8 9.4Q10.4 0.6 16 0.4Q21.6 0.6 21.2 9.4Z', '#1f1a14'),
+    weapon: musket(),
+  },
   espagnols: {
     skin: '#d2a070',
     tunic: '#7a5230',
@@ -338,6 +392,16 @@ export const ASIA_SOLDIER_SPECS = {
       ell(16, 7, 6.6, 1.6, '#2b2219') +
       braid('#2d2018') +
       stubble('#2d2018'),
+    weapon: bow('#8a3a1e'),
+  },
+  tatars: {
+    tunic: '#8a3a2a',
+    legs: 'pants',
+    legColor: '#4a3a2a',
+    boots: '#2b2219',
+    deco: rect(10.2, 22.8, 11.6, 1.8, '#c9a02a', 0, 'stroke="none"'),
+    back: quiver('#4a2f1a'),
+    head: path('M12.2 7.4Q12.4 1.6 16 0.4Q19.6 1.6 19.8 7.4Z', '#8a3a2a') + fur('#5a3a22', 6.8) + moustache('#2d2018'),
     weapon: bow('#8a3a1e'),
   },
   jurchens: {
@@ -552,6 +616,20 @@ const MONGOL_ADV_SOLDIER_SPECS = {
     back: path('M12 9L11.6 14L20.4 14L20 9Z', '#8e949a'),
     head: path('M11.8 8.6Q12 3.6 16 -0.4Q20 3.6 20.2 8.6L19.4 8.6L19.4 7.2L12.6 7.2L12.6 8.6Z', STEEL) + rect(15.4, 7.6, 1.2, 3.6, STEEL) + stubble('#8a5a2b'),
     shield: path('M8.5 13Q14 15 14 23Q14 30 8.5 35Q3 30 3 23Q3 15 8.5 13Z', RED) + stroke('M8.5 15V33M5.2 22H11.8', GOLD, 0.8) + circ(8.5, 23, 1.5, GOLD),
+    weapon: spear(),
+  },
+  cosaques: {
+    tunic: '#2a3a6a',
+    skirt: '#2a3a6a',
+    legs: 'pants',
+    legColor: '#b02a22',
+    boots: '#2b2219',
+    deco: rect(10.2, 23.8, 11.6, 1.6, '#1f1a14', 0, 'stroke="none"'),
+    head:
+      path('M10.8 9.4Q10.4 0.6 16 0.4Q21.6 0.6 21.2 9.4Z', '#1f1a14') +
+      path('M12.6 3.2Q16 1.6 19.4 3.2Q19.8 4.4 16 4.6Q12.2 4.4 12.6 3.2Z', RED) +
+      moustache('#2d2018'),
+    shield: '',
     weapon: spear(),
   },
   'chevaliers-europeens': {

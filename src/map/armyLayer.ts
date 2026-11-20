@@ -114,6 +114,13 @@ const PEOPLE: Record<Faction, string> = {
   rajputs: 'Rajputs et Indiens',
   marathes: 'Marathes',
   afghans: 'Afghans',
+  streltsy: 'Moscovites',
+  tatars: 'Tatars',
+  cosaques: 'Cosaques',
+  caucasiens: 'Montagnards du Caucase',
+  'russes-modernes': 'Russes',
+  'japonais-meiji': 'Japonais',
+  'allemands-1914': 'Allemands',
 };
 const esc = (v: string) => v.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const plain = (v: string) =>

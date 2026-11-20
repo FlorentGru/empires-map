@@ -92,4 +92,11 @@ export const FACTION_COLORS = {
   rajputs: '#e08a1f',
   marathes: '#d4602a',
   afghans: '#4a6a3a',
+  streltsy: '#b0302a',
+  tatars: '#8a3a2a',
+  cosaques: '#2a3a6a',
+  caucasiens: '#5a4a3a',
+  'russes-modernes': '#8a8a5a',
+  'japonais-meiji': '#25304a',
+  'allemands-1914': '#6e7468',
 } satisfies Record<Faction, string>;
