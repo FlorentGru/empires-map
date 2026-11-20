@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Empire russe",
+    "summary": "L'État des tsars, né de la principauté de Moscou. Ivan IV s'y fait couronner tsar en 1547 ; ses successeurs l'étendent de la Baltique au Pacifique et jusqu'en Asie centrale. Le tsar y gouverne en autocrate, depuis Moscou puis Saint-Pétersbourg, appuyé sur une noblesse qui possède les serfs jusqu'en 1861.",
+    "years": [1547, 1917]
+  },
+  {
+    "name": "Hetmanat cosaque",
+    "summary": "L'État des cosaques d'Ukraine, né de la révolte de Bogdan Khmelnitski contre la Pologne en 1648. En 1654, à Pereïaslav, il se place sous la protection du tsar tout en gardant son chef élu, le hetman. Après le ralliement de Mazepa à la Suède (1708), Moscou rogne son autonomie, que Catherine II supprime en 1764.",
+    "years": [1654, 1721]
+  },
+  {
+    "name": "Géorgie orientale (Kartli-Kakhétie)",
+    "summary": "Le royaume chrétien du roi Héraclius II, pris entre la Perse et l'Empire ottoman. Par le traité de Gueorguievsk (1783), il se place sous protectorat russe. Laissé sans secours quand les Perses saccagent Tiflis en 1795, il est annexé par la Russie en 1801.",
+    "years": [1783, 1795]
+  },
+  {
+    "name": "Grand-Duché de Finlande",
+    "summary": "Conquise sur la Suède en 1809, la Finlande devient un grand-duché dont le tsar est le grand-duc. Elle garde sa diète, ses lois et, à partir de 1860, sa propre monnaie. La russification lancée en 1899 l'exaspère, et elle proclame son indépendance en décembre 1917.",
+    "years": [1812, 1917]
+  },
+  {
+    "name": "Émirat de Boukhara",
+    "summary": "Un vieil État musulman d'Asie centrale, dans l'actuel Ouzbékistan, dont la ville sainte est Boukhara. Battu par les Russes en 1868, l'émir leur cède Samarcande et devient leur protégé : il garde son trône et sa cour, mais sa politique étrangère est dictée par le gouverneur du Turkestan, jusqu'en 1920.",
+    "years": [1891, 1917]
+  },
+  {
+    "name": "Khanat de Khiva",
+    "summary": "Une oasis du Khorezm, sur le cours inférieur de l'Amou-Daria, entre les déserts du Karakoum et du Kyzylkoum. Conquis par une expédition russe en 1873, le khanat devient un protectorat : le khan reste en place mais paie une indemnité et abolit l'esclavage, jusqu'en 1920.",
+    "years": [1891, 1917]
+  },
+  {
+    "name": "Zone d’influence russe en Mandchourie",
+    "summary": "Le nord-est de la Chine, où la Russie construit le chemin de fer de l'Est chinois, fonde Harbin et loue Port-Arthur (1898). Elle occupe la région en 1900, ce qui provoque la guerre contre le Japon. Battue en 1905, elle cède Port-Arthur et le sud de la Mandchourie aux Japonais.",
+    "years": [1905, 1905]
+  },
+  {
+    "name": "Touva (protectorat)",
+    "summary": "La haute vallée de l'Ienisseï, peuplée d'éleveurs turcophones et bouddhistes, longtemps province de la Chine des Qing. Profitant de la chute de l'empire chinois, la Russie y établit son protectorat en 1914. Touva devient ensuite une république populaire, annexée par l'URSS en 1944.",
+    "years": [1914, 1917]
+  },
+  {
+    "name": "Territoires turcs occupés",
+    "summary": "Le nord-est de l'Anatolie, conquis sur l'Empire ottoman par l'armée russe du Caucase pendant la Première Guerre mondiale, avec Erzurum et Trébizonde en 1916. Après la révolution, les soldats russes rentrent chez eux et la région est rendue aux Ottomans en 1918.",
+    "years": [1917, 1917]
+  }
+]
