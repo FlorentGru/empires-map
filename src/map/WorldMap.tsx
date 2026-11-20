@@ -682,9 +682,12 @@ export function WorldMap({
     <div ref={containerRef} className="world-map" role="region" aria-label="Carte du territoire de l'empire">
       {mapError && (
         <p className="world-map__error" role="alert">
-          Votre navigateur n’a pas pu démarrer la carte (WebGL désactivé ?).
+          La carte a besoin de WebGL 2, que votre navigateur a désactivé ou bloqué.
           <br />
-          Activez l’accélération matérielle dans les réglages du navigateur (Brave, Chrome : Système), puis rechargez la page.
+          Chrome, Brave, Edge : activez l’accélération matérielle (réglages, Système). Firefox, Zen : dans about:config, passez <code>
+            webgl.force-enabled
+          </code>{' '}
+          à true. Puis rechargez la page.
         </p>
       )}
     </div>
