@@ -86,7 +86,13 @@ describe('capitals.json', () => {
     // Un même nom peut avoir plusieurs polygones (ex. Royaume-Uni = métropole + Belize) : on garde le plus proche.
     // Les grands empires sont tronqués par l'emprise de la carte, d'où une tolérance plus large (4500 km au lieu de 2500).
     // Anomalies connues du fond de carte (étiquette placée au Cap alors que le nom est « Indes néerlandaises »).
-    const anomalies = new Set(['espagne/ayacucho-1824|Indes néerlandaises', 'espagne/mexique-1821|Indes néerlandaises']);
+    const anomalies = new Set([
+      'espagne/ayacucho-1824|Indes néerlandaises',
+      'espagne/mexique-1821|Indes néerlandaises',
+      // Russie 1914-1917 : seul Chypre (britannique) tombe dans le cadre, l'étiquette y est placée, loin de Londres.
+      'russie/tannenberg-1914|Royaume-Uni',
+      'russie/revolution-1917|Royaume-Uni',
+    ]);
     const best = new Map<string, { d: number; max: number; msg: string }>();
     for (const l of labels) {
       const c = capitals[l.name] && validAt(capitals[l.name]!, l.year);

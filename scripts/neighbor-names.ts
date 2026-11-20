@@ -2,6 +2,11 @@
 // (scripts/build-neighbors.ts échoue tant qu'un NAME rencontré n'y figure pas).
 export const NEIGHBOR_NAMES: Record<string, string> = {
   '?': 'Territoires inconnus',
+  Enets: 'Enets',
+  Finnmark: 'Finnmark',
+  'Grand Duchy of Finland': 'Grand-duché de Finlande',
+  Nganasan: 'Nganassanes',
+  Yukagir: 'Youkaguirs',
   'Abbasid Caliphate': 'Califat abbasside',
   Abdelouadides: 'Zianides',
   Aceh: 'Aceh',

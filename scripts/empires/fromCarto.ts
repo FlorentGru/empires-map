@@ -8,6 +8,7 @@
 // Utilisé par l'Empire espagnol et le Saint-Empire.
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import type { Checkpoint, ComposedEntity, EmpireConfig, EmpireStep, GeoCtx, Poly, Status } from './types.ts';
 
 interface Src {
@@ -32,7 +33,7 @@ interface CartoCheckpoint {
   to?: string;
 }
 
-const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '../..');
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 
 function evalSrc(id: string, s: Src, c: GeoCtx): Poly | null {
   if (s.union) return c.union(...s.union.map((x) => evalSrc(id, x, c)));

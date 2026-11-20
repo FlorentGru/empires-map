@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"kind":"gained"},"geometry":{"type":"Polygon","coordinates":[[[30.5,57.8],[33,57.8],[33,59.05],[30.5,59.05],[30.5,57.8]]]}},{"type":"Feature","properties":{"kind":"gained"},"geometry":{"type":"Polygon","coordinates":[[[37,55.4],[38.2,55.4],[38.2,56.1],[37,56.1],[37,55.4]]]}}]}

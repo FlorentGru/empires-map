@@ -22,6 +22,7 @@ import { perseAchemenide } from './perse-achemenide.ts';
 import { omeyyades } from './omeyyades.ts';
 import { abbassides } from './abbassides.ts';
 import { moghols } from './moghols.ts';
+import { russie } from './russie.ts';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 
@@ -44,6 +45,7 @@ export const EMPIRES: EmpireConfig[] = [
   omeyyades,
   abbassides,
   moghols,
+  russie,
 ];
 
 export function getEmpire(id: string): EmpireConfig {

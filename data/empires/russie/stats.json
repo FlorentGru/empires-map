@@ -1,0 +1,32 @@
+{
+ "areas": {
+  "couronnement-1547": 2512549,
+  "kazan-1552": 3018477,
+  "molodi-1572": 3400554,
+  "sibir-1582": 3754834,
+  "moscou-1612": 8316584,
+  "romanov-1613": 8342661,
+  "okhotsk-1639": 12485291,
+  "pereiaslav-1654": 13062676,
+  "razine-1670": 13610592,
+  "nertchinsk-1689": 13610592,
+  "saint-petersbourg-1703": 14968584,
+  "poltava-1709": 14968584,
+  "nystad-1721": 15135410,
+  "pougatchev-1773": 15549962,
+  "kucuk-kaynarca-1774": 15633751,
+  "crimee-1783": 15684021,
+  "partages-pologne-1795": 16326159,
+  "moscou-1812": 17735300,
+  "sebastopol-1855": 20149215,
+  "chamil-1859": 20917276,
+  "servage-1861": 21194702,
+  "tachkent-1865": 21858922,
+  "alaska-1867": 20402246,
+  "transsiberien-1891": 21257600,
+  "tsushima-1905": 21257600,
+  "tannenberg-1914": 21223189,
+  "revolution-1917": 20821907
+ },
+ "apogee": "tachkent-1865"
+}
