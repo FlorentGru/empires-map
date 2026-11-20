@@ -8,6 +8,9 @@ test('accueil : la carte se charge derrière, Démarrer puis choix d’un empire
   await expect(landing).toBeVisible();
   // La carte est déjà montée sous le voile.
   await expect(page.locator('.maplibregl-canvas')).toBeAttached();
+  // …mais l'onglet et l'adresse restent ceux de l'accueil, pas ceux de l'étape de Rome chargée dessous.
+  await expect(page).toHaveTitle(/^Atlas des Empires : cartes interactives/);
+  await expect(page).toHaveURL(/:\d+\/$/);
   await landing.getByRole('button', { name: 'Démarrer' }).click();
   await landing.getByRole('button', { name: /napoléonien/i }).click();
   await expect(landing).toBeHidden();
@@ -27,6 +30,8 @@ test('accueil : « Tous les empires » s’ouvre sans empire présélectionné, 
   // Démarrer déjà cliqué : retour directement sur la liste des empires.
   await expect(landing.getByRole('heading', { name: 'Choisissez un empire' })).toBeVisible();
   await expect(landing.getByRole('button', { name: 'Démarrer' })).toHaveCount(0);
+  await expect(page).toHaveURL(/:\d+\/$/);
+  await expect(page).toHaveTitle(/^Atlas des Empires : cartes interactives/);
 });
 
 test('accueil : un lien partagé arrive directement sur la carte', async ({ page }) => {

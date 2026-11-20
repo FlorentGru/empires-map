@@ -64,9 +64,17 @@ function replacePath(route: Route) {
   if (url.href !== window.location.href) window.history.replaceState(null, '', url);
 }
 
+/** Accueil ouvert sur « / » : l'Atlas chargé dessous n'écrit ni l'adresse ni le titre (comme sous une page de synthèse). */
+let home = false;
+
+function showHome() {
+  replacePath({ kind: 'home' });
+  applyHead({ kind: 'home' });
+}
+
 export function writeUrlState(empire: Empire, step: TimelineStep | undefined): void {
   last = { empire, step };
-  if (hub) return;
+  if (hub || home) return;
   const route: Route = step ? { kind: 'step', empire: empire.id, step: step.id } : { kind: 'empire', empire: empire.id };
   replacePath(route);
   applyHead(route, empire, step);
@@ -85,5 +93,15 @@ export function enterHub(h: Hub): void {
 export function leaveHub(): void {
   if (!hub) return;
   hub = null;
-  if (last) writeUrlState(last.empire, last.step);
+  if (home) showHome();
+  else if (last) writeUrlState(last.empire, last.step);
+}
+
+/** Accueil affiché ou fermé ; à la fermeture, l'adresse de l'étape affichée est rétablie. */
+export function setHome(on: boolean): void {
+  if (on === home) return;
+  home = on;
+  if (hub) return;
+  if (on) showHome();
+  else if (last) writeUrlState(last.empire, last.step);
 }

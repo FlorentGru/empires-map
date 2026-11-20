@@ -11,7 +11,7 @@ import { ViewControls } from './panels/ViewControls';
 import { readBool, writeBool } from './lib/settings';
 import { OPEN_BATTLE_EVENT } from './battle/event';
 import { EventPanel } from './panels/EventPanel';
-import { currentHub, enterHub, leaveHub, readUrlState, writeUrlState } from './player/urlState';
+import { currentHub, enterHub, leaveHub, readUrlState, setHome, writeUrlState } from './player/urlState';
 import type { Hub } from './lib/seo';
 import { BASE_STEP_MS, usePlayer } from './player/usePlayer';
 import { battleStepMs } from './lib/march';
@@ -80,6 +80,8 @@ export function App() {
     const u = readUrlState();
     return !u.empire && !u.hub && window.location.search === '' && 'intro';
   });
+  // Tant que l'accueil est ouvert, onglet et adresse restent ceux de l'accueil (pas l'étape de Rome chargée dessous).
+  useEffect(() => setHome(landing !== false), [landing]);
   // Comparaison de deux empires (?compare=a,b) à la place de l'Atlas.
   const [compare, setCompareState] = useState(readCompare);
   const setCompare = useCallback((c: { a: string; b: string } | null) => {
