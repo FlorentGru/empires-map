@@ -25,11 +25,11 @@
 
 ## At a glance
 
-| 20 empires on every continent | 477 key moments | 35 playable battles | 282 historical figures | 455 cities |
+| 21 empires on every continent | 493 key moments | 35 playable battles | 295 historical figures | 464 cities |
 |:-:|:-:|:-:|:-:|:-:|
 | from Alexander the Great to the Incas | battles, treaties, reforms, falls | 21 with a historical battle plan | biographies and quotes | with their period and modern names |
 
-**Empires:** Alexander the Great · Rome (509 BC – 1453) · China (1600 BC – 1912) · the Mongol Empire · the Carolingians · the Holy Roman Empire · the Spanish Empire · the Ottoman Empire · the Inca Empire (1438 – 1533) · the Mali Empire (1235 – 1670) · the Songhai Empire (1430 – 1591) · the Aztec Empire (1428 – 1521) · Carthage (650 – 146 BC) · Achaemenid Persia (550 – 330 BC) · the Umayyad Caliphate (661 – 750) · the Abbasid Caliphate (750 – 1258) · the Fatimid Caliphate (909 – 1171) · the Mughal Empire (1526 – 1857) · the Russian Empire (1547 – 1917) · Napoleon's Empire.
+**Empires:** Alexander the Great · Rome (509 BC – 1453) · China (1600 BC – 1912) · the Mongol Empire · the Carolingians · the Holy Roman Empire · the Spanish Empire · the Ottoman Empire · the Inca Empire (1438 – 1533) · the Mali Empire (1235 – 1670) · the Songhai Empire (1430 – 1591) · the Aztec Empire (1428 – 1521) · Carthage (650 – 146 BC) · Achaemenid Persia (550 – 330 BC) · the Umayyad Caliphate (661 – 750) · the Abbasid Caliphate (750 – 1258) · the Fatimid Caliphate (909 – 1171) · the Mughal Empire (1526 – 1857) · the Russian Empire (1547 – 1917) · Napoleon's Empire · the Empire of Japan (1868 – 1947).
 
 ## Features
 
@@ -77,7 +77,7 @@
 | Geo pipeline | Node + TypeScript scripts, Turf.js, signed distance fields baked into PNGs |
 | AI agent | Python, Google ADK, FastAPI; Gemini, Claude (via LiteLLM) or a local Ollama model |
 | Quality | Vitest, Playwright, oxlint, Prettier, pytest, GitHub Actions |
-| Hosting | GitHub Pages (static build, deployed on every push to `main`), 502 prerendered pages; optional copy on a VPS ([docs/DEPLOIEMENT-VPS.md](docs/DEPLOIEMENT-VPS.md)) |
+| Hosting | GitHub Pages (static build, deployed on every push to `main`), 519 prerendered pages; optional copy on a VPS ([docs/DEPLOIEMENT-VPS.md](docs/DEPLOIEMENT-VPS.md)) |
 
 ## How it works
 
@@ -157,7 +157,7 @@ npm run agent                      # agent server on port 8000, next to npm run 
 npm run fetch:data            # downloads historical-basemaps and Natural Earth into .cache/
 npm run build:data            # every empire: territories, diffs, distance fields, neighbors
 npm run build:data:ottomans   # a single empire: rome, napoleon, china, mongols, espagne,
-                              # saint-empire, carolingiens, alexandre, ottomans, inca, mali, songhai, azteques, carthage, perse-achemenide, omeyyades, abbassides, moghols, russie, fatimides
+                              # saint-empire, carolingiens, alexandre, ottomans, inca, mali, songhai, azteques, carthage, perse-achemenide, omeyyades, abbassides, moghols, russie, fatimides, japon
 ```
 
 Restart the dev server after regenerating `public/data`.

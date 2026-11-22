@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Empire du Japon",
+    "summary": "L'archipel japonais, de Kyūshū à Hokkaidō. En 1868, la restauration Meiji rend le pouvoir à l'empereur, qui s'installe à Edo, rebaptisée Tokyo. En une génération, le pays abolit les domaines féodaux, lève une armée de conscrits et s'industrialise. Après la capitulation de 1945, il perd toutes ses colonies et passe sous occupation américaine.",
+    "years": [1868, 1945]
+  },
+  {
+    "name": "Taïwan",
+    "summary": "Grande île au large de la Chine du Sud, cédée par les Qing au traité de Shimonoseki (1895) après la guerre sino-japonaise. C'est la première colonie du Japon : il y bâtit routes, ports et plantations de canne à sucre, et y réprime les révoltes des aborigènes. L'île revient à la Chine en 1945.",
+    "years": [1894, 1942]
+  },
+  {
+    "name": "Sakhaline du Sud",
+    "summary": "La moitié sud de l'île de Sakhaline, au nord d'Hokkaidō. Le Japon l'obtient de la Russie au traité de Portsmouth (1905), après sa victoire de Tsushima, et en fait la préfecture de Karafuto, peuplée de colons, de pêcheurs et de forestiers. L'Armée rouge la reprend en août 1945.",
+    "years": [1905, 1942]
+  },
+  {
+    "name": "Guandong (Port-Arthur et Dalian)",
+    "summary": "La pointe de la péninsule du Liaodong, en Mandchourie du Sud, avec la base navale de Port-Arthur et le port de Dalian. La Russie la cède au Japon en 1905, avec le chemin de fer de Mandchourie du Sud. L'armée qui la garde, l'armée du Guandong, déclenche en 1931 l'invasion de la Mandchourie.",
+    "years": [1905, 1942]
+  },
+  {
+    "name": "Corée (protectorat)",
+    "summary": "Le royaume de Corée après la guerre russo-japonaise : par le traité de 1905, il perd le droit de mener sa propre politique étrangère et un résident général japonais, Itō Hirobumi, s'installe à Séoul. Le roi reste en place, mais c'est une étape vers l'annexion de 1910.",
+    "years": [1905, 1905]
+  },
+  {
+    "name": "Corée (Chōsen)",
+    "summary": "La péninsule coréenne, annexée en 1910 et rebaptisée Chōsen ; Séoul devient Keijō. Un gouverneur général militaire y impose la langue japonaise, prend des terres aux paysans et fait de la Corée une base vers la Mandchourie. Le soulèvement du 1er mars 1919 est durement réprimé. Le pays est libéré en 1945, puis coupé en deux.",
+    "years": [1910, 1942]
+  },
+  {
+    "name": "Tsingtao (occupé)",
+    "summary": "Le port de Tsingtao et la baie de Jiaozhou, sur la côte chinoise du Shandong, que l'Allemagne louait à la Chine. Entré en guerre aux côtés des Alliés en 1914, le Japon les assiège et les prend en novembre. Il les garde jusqu'en 1922, avant de les rendre à la Chine.",
+    "years": [1914, 1914]
+  },
+  {
+    "name": "Mandats du Pacifique (occupés)",
+    "summary": "Les îles allemandes du Pacifique Nord : Mariannes, Carolines, Palaos et Marshall. La marine japonaise les occupe sans combat dès octobre 1914, pendant que l'Allemagne se bat en Europe. Le Japon les gardera après la guerre.",
+    "years": [1914, 1914]
+  },
+  {
+    "name": "Mandats du Pacifique",
+    "summary": "Les anciennes îles allemandes du Pacifique Nord (Mariannes, Carolines, Palaos, Marshall), confiées au Japon par la Société des Nations après Versailles. Des colons japonais y cultivent la canne à sucre ; la marine en fait ensuite des bases avancées. Les Américains les reprennent île par île à partir de 1944.",
+    "years": [1919, 1942]
+  },
+  {
+    "name": "Mandchoukouo",
+    "summary": "La Mandchourie, au nord-est de la Chine, envahie par l'armée du Guandong après l'incident de Mukden (1931). Le Japon y fonde en 1932 un État fantoche, le Mandchoukouo, avec à sa tête Puyi, le dernier empereur Qing. Ses mines et ses usines nourrissent l'industrie de guerre japonaise. L'Armée rouge l'envahit en août 1945.",
+    "years": [1931, 1942]
+  },
+  {
+    "name": "Chine du Nord occupée",
+    "summary": "La plaine de Chine du Nord, avec Pékin et Tianjin, conquise après l'incident du pont Marco-Polo en juillet 1937. Le Japon y tient les villes et les voies ferrées et y installe des gouvernements chinois collaborateurs, tandis que les guérillas communistes contrôlent une grande partie des campagnes.",
+    "years": [1937, 1942]
+  },
+  {
+    "name": "Chine côtière occupée",
+    "summary": "La Chine du bas Yangzi et des côtes, avec Shanghai, Nankin et Canton. Shanghai tombe après trois mois de combats en 1937, puis Nankin, où l'armée japonaise massacre civils et prisonniers. Le gouvernement chinois se replie à Chongqing, dans l'intérieur, et refuse de capituler.",
+    "years": [1937, 1942]
+  },
+  {
+    "name": "Mengjiang",
+    "summary": "La Mongolie-Intérieure, entre la Mandchourie et la Chine du Nord. L'armée japonaise y soutient le prince mongol Demchugdongrub et en fait un gouvernement autonome sous sa tutelle, appelé Mengjiang, qui sert de glacis face à l'Union soviétique et à la Mongolie.",
+    "years": [1937, 1942]
+  },
+  {
+    "name": "Indochine",
+    "summary": "La colonie française d'Indochine (Vietnam, Laos, Cambodge). Après la défaite de la France en 1940, le Japon obtient d'y stationner des troupes, au nord puis au sud en 1941 : les États-Unis répondent par un embargo sur le pétrole, l'une des causes de Pearl Harbor. L'administration française reste en place jusqu'au coup de force japonais de mars 1945.",
+    "years": [1941, 1942]
+  },
+  {
+    "name": "Thaïlande (alliée)",
+    "summary": "Le royaume de Siam, devenu Thaïlande en 1939, seul pays d'Asie du Sud-Est jamais colonisé. Envahi le 8 décembre 1941, il cède en quelques heures et signe une alliance avec le Japon, qui y fait passer ses troupes vers la Malaisie et la Birmanie.",
+    "years": [1941, 1942]
+  },
+  {
+    "name": "Birmanie",
+    "summary": "La colonie britannique de Birmanie, entre l'Inde et la Chine. Le Japon la conquiert au printemps 1942 pour couper la route de Birmanie, qui ravitaillait la Chine, et y installe un gouvernement birman sous sa tutelle. Les Britanniques la reprennent en 1945.",
+    "years": [1942, 1942]
+  },
+  {
+    "name": "Malaisie",
+    "summary": "La péninsule malaise, colonie britannique riche en caoutchouc et en étain. Les troupes japonaises y débarquent le 8 décembre 1941 et la descendent en deux mois, souvent à bicyclette, jusqu'à Singapour.",
+    "years": [1942, 1942]
+  },
+  {
+    "name": "Singapour",
+    "summary": "L'île à la pointe de la Malaisie, grande base navale britannique réputée imprenable. Elle capitule le 15 février 1942 : environ 80 000 soldats britanniques, australiens et indiens sont faits prisonniers, la pire défaite de l'histoire britannique selon Churchill. Le Japon la rebaptise Shōnan.",
+    "years": [1942, 1942]
+  },
+  {
+    "name": "Brunei",
+    "summary": "Le petit sultanat de Bornéo, protectorat britannique, avec les territoires voisins de Sarawak et de Bornéo du Nord. Le Japon l'occupe dès décembre 1941 pour ses puits de pétrole, l'une des raisons de sa guerre en Asie du Sud-Est.",
+    "years": [1942, 1942]
+  },
+  {
+    "name": "Indes néerlandaises",
+    "summary": "L'archipel de l'actuelle Indonésie, colonie des Pays-Bas, avec Java, Sumatra et Bornéo. Sa conquête, achevée en mars 1942, donne au Japon le pétrole que l'embargo américain lui refusait. L'occupant s'appuie sur les nationalistes indonésiens, qui proclament l'indépendance en 1945.",
+    "years": [1942, 1942]
+  },
+  {
+    "name": "Philippines",
+    "summary": "L'archipel des Philippines, sous tutelle américaine. Attaqué le lendemain de Pearl Harbor, il tombe au printemps 1942 après la résistance de Bataan et de Corregidor ; les prisonniers subissent la « marche de la mort ». Le général MacArthur, qui avait promis de revenir, y débarque en 1944.",
+    "years": [1942, 1942]
+  }
+]
