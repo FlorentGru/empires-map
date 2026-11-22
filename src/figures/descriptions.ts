@@ -149,6 +149,21 @@ export const FACTION_INFO: Record<Faction, FigureInfo> = {
     era: '1914 – 1918',
     text: "Armée impériale allemande, reconnaissable à son casque à pointe et à son uniforme feldgrau. En août 1914, elle écrase l'armée russe à Tannenberg, sous les ordres d'Hindenburg et Ludendorff. La guerre s'installe ensuite sur le front de l'Ouest.",
   },
+  'japonais-xxe': {
+    label: 'Japonais (1931-1945)',
+    era: '1931 – 1945',
+    text: "Armée impériale japonaise, du Mandchoukouo à la guerre du Pacifique, avec son uniforme kaki, son casque d'acier type 90 et le fusil Arisaka. Victorieuse en Mandchourie et sur la côte chinoise, elle conquiert l'Asie du Sud-Est en 1942 avant d'être écrasée par les États-Unis. Les attaques kamikazes marquent les années 1944-1945.",
+  },
+  'chinois-xxe': {
+    label: 'Chinois (1894-1945)',
+    era: '1894 – 1945',
+    text: "Armée de Beiyang modernisée après 1895, puis armée nationale révolutionnaire de Chiang Kai-shek, avec sa casquette à visière, son uniforme gris-vert et des fusils importés. Battue par le Japon en 1894-1895, elle résiste à l'invasion de 1937-1945 en s'appuyant sur l'immensité du pays et l'aide alliée.",
+  },
+  'americains-xxe': {
+    label: 'Américains (1941-1945)',
+    era: '1941 – 1945',
+    text: "US Army et US Navy de la guerre du Pacifique : casque M1, uniforme olive, artillerie et aviation massives, matériel mécanisé. La marine, avec ses porte-avions, renverse la guerre à Midway en juin 1942 et conduit l'offensive de saut d'île en île jusqu'à Okinawa.",
+  },
   espagnols: {
     label: 'Espagnols',
     era: '1808 – 1814',

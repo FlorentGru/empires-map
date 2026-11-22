@@ -1,0 +1,584 @@
+{
+  "empire": "japon",
+  "periods": [
+    {
+      "id": "meiji",
+      "name": "L’ère Meiji : construire un État moderne",
+      "start": 1868,
+      "end": 1912,
+      "population": {
+        "total": {
+          "value": 48000000,
+          "low": 45000000,
+          "high": 51000000,
+          "year": 1910,
+          "note": "Recensements de 1908-1913 ; 49,6 millions d’habitants en 1910, hors colonies.",
+          "source": {
+            "label": "Wikipédia — Démographie du Japon",
+            "url": "https://fr.wikipedia.org/wiki/Démographie_du_Japon"
+          }
+        },
+        "cities": [
+          {
+            "name": "Tokyo",
+            "population": {
+              "value": 2200000,
+              "low": 2000000,
+              "high": 2400000,
+              "year": 1910,
+              "note": "Ancienne Edo, capitale depuis 1868.",
+              "source": {
+                "label": "Wikipédia — Tokyo",
+                "url": "https://fr.wikipedia.org/wiki/Tokyo"
+              }
+            }
+          },
+          {
+            "name": "Osaka",
+            "population": {
+              "value": 1200000,
+              "low": 1100000,
+              "high": 1300000,
+              "year": 1910,
+              "note": "Premier port et centre cotonnier du pays.",
+              "source": {
+                "label": "Wikipédia — Osaka",
+                "url": "https://fr.wikipedia.org/wiki/Osaka"
+              }
+            }
+          },
+          {
+            "name": "Kyoto",
+            "population": {
+              "value": 450000,
+              "low": 420000,
+              "high": 480000,
+              "year": 1910,
+              "note": "Ancienne capitale impériale, ville artisanale.",
+              "source": {
+                "label": "Wikipédia — Kyoto",
+                "url": "https://fr.wikipedia.org/wiki/Kyoto"
+              }
+            }
+          },
+          {
+            "name": "Nagoya",
+            "population": {
+              "value": 380000,
+              "low": 350000,
+              "high": 400000,
+              "year": 1910,
+              "note": "Centre industriel du Tōkai.",
+              "source": {
+                "label": "Wikipédia — Nagoya",
+                "url": "https://fr.wikipedia.org/wiki/Nagoya"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 2.3,
+          "low": 2,
+          "high": 2.6,
+          "year": 1913,
+          "note": "Reconstruction de type Maddison, Japon seul, hors colonies.",
+          "source": {
+            "label": "Wikipédia — Économie du Japon",
+            "url": "https://fr.wikipedia.org/wiki/Économie_du_Japon"
+          }
+        },
+        "resources": [
+          "Soie grège",
+          "Thé",
+          "Charbon de Kyūshū et d’Hokkaidō",
+          "Cuivre",
+          "Riz"
+        ],
+        "currency": "Yen décimal créé en 1871 ; la Banque du Japon émet des billets convertibles à partir de 1885.",
+        "taxation": "Impôt foncier en argent (1873), taxes sur le saké et le tabac, monopoles progressifs, emprunts.",
+        "trade": "Soie et thé payent les machines et le coton importés ; les maisons de commerce deviennent des zaibatsu."
+      },
+      "army": {
+        "size": {
+          "value": 250000,
+          "low": 200000,
+          "high": 300000,
+          "year": 1912,
+          "note": "Effectif de paix ; mobilisation de plus d’un million d’hommes en 1904.",
+          "source": {
+            "label": "Wikipédia — Armée impériale japonaise",
+            "url": "https://fr.wikipedia.org/wiki/Armée_impériale_japonaise"
+          }
+        },
+        "composition": "Division d’infanterie de conscrits, artillerie de campagne, cavalerie ; marine financée séparément, avec cuirassés britanniques puis nationaux.",
+        "recruitment": "Conscription universelle masculine à 20 ans (1873), trois ans d’active puis deux de réserve ; exemptions nombreuses.",
+        "famousUnits": [
+          "Division de la Garde impériale",
+          "3e armée du siège de Port-Arthur",
+          "Flotte combinée"
+        ],
+        "innovations": [
+          "Fusil Murata puis Arisaka",
+          "Artillerie de campagne modernisée",
+          "Torpilles et contre-torpilleurs",
+          "Aviation militaire naissante (1910)"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie constitutionnelle naissante : l’empereur règne, une oligarchie de samouraïs gouverne, la Diète vote le budget à partir de 1890.",
+        "head": "Empereur Meiji (Mutsuhito), entouré des oligarques de la Restauration : Ōkubo, Itō, Yamagata, Matsukata.",
+        "succession": "Héréditaire dans la maison impériale, selon la loi de la maison impériale de 1889 ; les femmes en sont exclues.",
+        "institutions": "Diète (pairs et représentants), Conseil privé, cabinet, état-major autonome, Cour de cassation.",
+        "administration": "Préfectures dirigées par des gouverneurs nommés, police nationale, écoles normales, service militaire.",
+        "provinces": {
+          "value": 47,
+          "low": 47,
+          "high": 47,
+          "year": 1890,
+          "note": "Préfectures (ken) et villes-préfectures (fu), après les fusions de 1888.",
+          "source": {
+            "label": "Wikipédia — Ère Meiji",
+            "url": "https://fr.wikipedia.org/wiki/Ère_Meiji"
+          }
+        },
+        "law": "Constitution de 1889, code pénal de 1880 révisé en 1907, code civil de 1898 ; tribunaux à trois degrés."
+      },
+      "society": {
+        "religions": [
+          "Shinto",
+          "Bouddhisme",
+          "Christianisme (minoritaire)",
+          "Religions populaires"
+        ],
+        "languages": [
+          "Japonais standard",
+          "Dialectes régionaux",
+          "Anglais savant",
+          "Aïnou (Hokkaidō)"
+        ],
+        "structure": "Noblesse (kazoku), anciens samouraïs salariés, paysans propriétaires ou métayers, marchands, ouvrières des filatures ; villes et campagnes très inégales.",
+        "women": "Soumises à l’autorité du mari et exclues du vote ; elles travaillent massivement dans les filatures et les mines, quelques-unes enseignent ou écrivent."
+      },
+      "culture": {
+        "inventions": [
+          "Télégraphe et chemins de fer",
+          "Filatures de soie modernes",
+          "Presse quotidienne",
+          "Université impériale (1877)"
+        ],
+        "works": [
+          "« Encouragement à l’étude » de Fukuzawa (1872)",
+          "« Midaregami » de Yosano Akiko (1901)",
+          "Kabuki réformé et shinpa"
+        ],
+        "scholars": [
+          "Fukuzawa Yukichi",
+          "Kitasato Shibasaburō",
+          "Takaki Kanehiro",
+          "Natsume Sōseki"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Chemin de fer de Tokyo à Yokohama (1872) puis réseau national, télégraphe, ports de Yokohama et Kobe, phares et barrages."
+      },
+      "legacy": "En quarante-quatre ans, un archipel féodal devient une puissance industrielle capable de battre la Chine et la Russie, sans révolution ni changement de dynastie."
+    },
+    {
+      "id": "taisho",
+      "name": "L’ère Taishō : démocratie et expansion coloniale",
+      "start": 1912,
+      "end": 1926,
+      "population": {
+        "total": {
+          "value": 58000000,
+          "low": 55000000,
+          "high": 60000000,
+          "year": 1925,
+          "note": "Recensement de 1925 : 59,7 millions d’habitants au Japon propre.",
+          "source": {
+            "label": "Wikipédia — Démographie du Japon",
+            "url": "https://fr.wikipedia.org/wiki/Démographie_du_Japon"
+          }
+        },
+        "cities": [
+          {
+            "name": "Tokyo",
+            "population": {
+              "value": 2200000,
+              "low": 2000000,
+              "high": 2400000,
+              "year": 1920,
+              "note": "Avant le séisme de 1923.",
+              "source": {
+                "label": "Wikipédia — Tokyo",
+                "url": "https://fr.wikipedia.org/wiki/Tokyo"
+              }
+            }
+          },
+          {
+            "name": "Osaka",
+            "population": {
+              "value": 1250000,
+              "low": 1150000,
+              "high": 1350000,
+              "year": 1920,
+              "note": "« Manchester du Japon ».",
+              "source": {
+                "label": "Wikipédia — Osaka",
+                "url": "https://fr.wikipedia.org/wiki/Osaka"
+              }
+            }
+          },
+          {
+            "name": "Kobe",
+            "population": {
+              "value": 610000,
+              "low": 570000,
+              "high": 650000,
+              "year": 1920,
+              "note": "Grand port d’import-export.",
+              "source": {
+                "label": "Wikipédia — Kobe",
+                "url": "https://fr.wikipedia.org/wiki/Kobe"
+              }
+            }
+          },
+          {
+            "name": "Kyoto",
+            "population": {
+              "value": 590000,
+              "low": 550000,
+              "high": 620000,
+              "year": 1920,
+              "note": "Industrie de soie et artisanat.",
+              "source": {
+                "label": "Wikipédia — Kyoto",
+                "url": "https://fr.wikipedia.org/wiki/Kyoto"
+              }
+            }
+          },
+          {
+            "name": "Nagoya",
+            "population": {
+              "value": 430000,
+              "low": 400000,
+              "high": 460000,
+              "year": 1920,
+              "note": "Métallurgie et textile.",
+              "source": {
+                "label": "Wikipédia — Nagoya",
+                "url": "https://fr.wikipedia.org/wiki/Nagoya"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 2.8,
+          "low": 2.4,
+          "high": 3.1,
+          "year": 1925,
+          "note": "Reconstruction de type Maddison, hors colonies.",
+          "source": {
+            "label": "Wikipédia — Économie du Japon",
+            "url": "https://fr.wikipedia.org/wiki/Économie_du_Japon"
+          }
+        },
+        "resources": [
+          "Soie grège",
+          "Riz de Corée et de Taïwan",
+          "Charbon",
+          "Cuivre",
+          "Bois"
+        ],
+        "currency": "Yen rattaché à l’étalon-or en 1897 ; convertibilité suspendue en 1917, retour en 1930 seulement.",
+        "taxation": "Impôt foncier, taxes sur le saké, impôt sur le revenu (1887), emprunts pour la guerre et les chemins de fer.",
+        "trade": "Soie et cotonnades ; excédent pendant la Grande Guerre, puis déficit et dépendance aux matières premières."
+      },
+      "army": {
+        "size": {
+          "value": 250000,
+          "low": 210000,
+          "high": 300000,
+          "year": 1920,
+          "note": "Vingt et une divisions ; la marine représente un budget équivalent.",
+          "source": {
+            "label": "Wikipédia — Armée impériale japonaise",
+            "url": "https://fr.wikipedia.org/wiki/Armée_impériale_japonaise"
+          }
+        },
+        "composition": "Divisions de conscrits, artillerie, cavalerie, aviation naissante ; marine de cuirassés et de croiseurs de bataille.",
+        "recruitment": "Conscription universelle à 20 ans, deux ans d’active ; réforme de 1927 qui réduit les exemptions.",
+        "famousUnits": [
+          "Flotte combinée",
+          "Corps expéditionnaire de Tsingtao",
+          "Division de la Garde impériale"
+        ],
+        "innovations": [
+          "Porte-avions Hōshō (1922)",
+          "Aviation embarquée",
+          "Sous-marins océaniques",
+          "Canons de 410 mm"
+        ]
+      },
+      "politics": {
+        "regime": "Démocratie parlementaire imparfaite : les partis alternent au pouvoir, mais l’armée et le Conseil privé gardent un droit de veto.",
+        "head": "Empereur Taishō, puis régence de Hirohito dès 1921 ; Premiers ministres issus des partis (Hara, Takahashi, Katō).",
+        "succession": "Héréditaire ; une régence est prévue en cas d’incapacité du souverain.",
+        "institutions": "Diète, cabinets de parti, genrō vieillissants, état-major, Conseil privé.",
+        "administration": "Préfectures, police, administrations coloniales de Séoul et de Taipei.",
+        "provinces": {
+          "value": 47,
+          "low": 47,
+          "high": 47,
+          "year": 1925,
+          "note": "Préfectures, plus les colonies administrées à part.",
+          "source": {
+            "label": "Wikipédia — Ère Taishō",
+            "url": "https://fr.wikipedia.org/wiki/Ère_Taishō"
+          }
+        },
+        "law": "Constitution de 1889 ; loi sur le suffrage masculin (1925) et loi de préservation de l’ordre public (1925)."
+      },
+      "society": {
+        "religions": [
+          "Shinto",
+          "Bouddhisme",
+          "Christianisme",
+          "Nouveaux mouvements (Ōmoto)"
+        ],
+        "languages": [
+          "Japonais standard",
+          "Dialectes",
+          "Coréen et taïwanais dans les colonies"
+        ],
+        "structure": "Une classe moyenne urbaine apparaît (employés, enseignants, journalistes), face à une paysannerie endettée et à un prolétariat de filatures.",
+        "women": "Le mouvement pour les droits des femmes s’organise ; le vote reste masculin et le travail féminin, massif, mal payé."
+      },
+      "culture": {
+        "inventions": [
+          "Radiodiffusion (1925)",
+          "Cinéma japonais",
+          "Grands magasins urbains",
+          "Aviation civile"
+        ],
+        "works": [
+          "« Kokoro » de Natsume Sōseki (1914)",
+          "« Rashōmon » d’Akutagawa (1915)",
+          "« Le Fils unique » d’Ozu (1936)"
+        ],
+        "scholars": [
+          "Kitasato Shibasaburō",
+          "Hantarō Nagaoka",
+          "Yagi Hidetsugu",
+          "Noguchi Hideyo"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Électricité et tramways dans les villes, réseau ferré national, ports modernisés ; le séisme de 1923 détruit Tokyo et Yokohama."
+      },
+      "legacy": "Quinze ans d’ouverture politique et de prospérité de guerre, qui laissent un pays plus urbain, plus instruit et plus divisé."
+    },
+    {
+      "id": "showa",
+      "name": "L’ère Shōwa : militarisme, guerre totale et défaite",
+      "start": 1926,
+      "end": 1947,
+      "population": {
+        "total": {
+          "value": 73000000,
+          "low": 71000000,
+          "high": 74000000,
+          "year": 1940,
+          "note": "Recensement de 1940 : 73,1 millions au Japon propre, hors colonies.",
+          "source": {
+            "label": "Wikipédia — Démographie du Japon",
+            "url": "https://fr.wikipedia.org/wiki/Démographie_du_Japon"
+          }
+        },
+        "cities": [
+          {
+            "name": "Tokyo",
+            "population": {
+              "value": 6700000,
+              "low": 6300000,
+              "high": 7000000,
+              "year": 1940,
+              "note": "Fusion des villes de la baie en 1932 ; 3,5 millions en 1945.",
+              "source": {
+                "label": "Wikipédia — Tokyo",
+                "url": "https://fr.wikipedia.org/wiki/Tokyo"
+              }
+            }
+          },
+          {
+            "name": "Osaka",
+            "population": {
+              "value": 3250000,
+              "low": 3000000,
+              "high": 3400000,
+              "year": 1940,
+              "note": "Deuxième pôle industriel.",
+              "source": {
+                "label": "Wikipédia — Osaka",
+                "url": "https://fr.wikipedia.org/wiki/Osaka"
+              }
+            }
+          },
+          {
+            "name": "Nagoya",
+            "population": {
+              "value": 1300000,
+              "low": 1200000,
+              "high": 1400000,
+              "year": 1940,
+              "note": "Aéronautique et machines-outils.",
+              "source": {
+                "label": "Wikipédia — Nagoya",
+                "url": "https://fr.wikipedia.org/wiki/Nagoya"
+              }
+            }
+          },
+          {
+            "name": "Kyoto",
+            "population": {
+              "value": 1100000,
+              "low": 1000000,
+              "high": 1150000,
+              "year": 1940,
+              "note": "Textile et artisanat.",
+              "source": {
+                "label": "Wikipédia — Kyoto",
+                "url": "https://fr.wikipedia.org/wiki/Kyoto"
+              }
+            }
+          },
+          {
+            "name": "Kobe",
+            "population": {
+              "value": 1000000,
+              "low": 950000,
+              "high": 1050000,
+              "year": 1940,
+              "note": "Chantiers navals et port.",
+              "source": {
+                "label": "Wikipédia — Kobe",
+                "url": "https://fr.wikipedia.org/wiki/Kobe"
+              }
+            }
+          }
+        ]
+      },
+      "economy": {
+        "worldGdpShare": {
+          "value": 4.6,
+          "low": 4,
+          "high": 5,
+          "year": 1938,
+          "note": "Reconstruction de type Maddison, Japon seul, hors colonies.",
+          "source": {
+            "label": "Wikipédia — Histoire économique du Japon",
+            "url": "https://fr.wikipedia.org/wiki/Histoire_économique_du_Japon"
+          }
+        },
+        "resources": [
+          "Charbon de Mandchourie",
+          "Fer",
+          "Pétrole des Indes néerlandaises (1942)",
+          "Soie",
+          "Riz de Corée"
+        ],
+        "currency": "Yen sous contrôle des changes et économie de guerre à partir de 1937 ; inflation forte jusqu’en 1945.",
+        "taxation": "Impôts directs accrus, emprunts de guerre, contrôle des prix et rationnement.",
+        "trade": "Autarcie recherchée dans la « sphère de coprospérité » ; l’embargo américain de 1941 coupe le pétrole."
+      },
+      "army": {
+        "size": {
+          "value": 2400000,
+          "low": 2000000,
+          "high": 5500000,
+          "year": 1941,
+          "note": "2,4 millions en 1941 ; plus de 5 millions en 1945, dont de nombreux appelés.",
+          "source": {
+            "label": "Wikipédia — Armée impériale japonaise",
+            "url": "https://fr.wikipedia.org/wiki/Armée_impériale_japonaise"
+          }
+        },
+        "composition": "Infanterie de conscrits, aviation de l’armée et de la marine, divisions blindées légères, marine la plus puissante du monde en 1941.",
+        "recruitment": "Conscription universelle à 20 ans, deux ans d’active ; les étudiants sont mobilisés à partir de 1943.",
+        "famousUnits": [
+          "Flotte combinée",
+          "Armée du Guandong",
+          "Kamikazes",
+          "Division de la Garde impériale"
+        ],
+        "innovations": [
+          "Porte-avions de la classe Shōkaku",
+          "Chasseur A6M Zero",
+          "Torpille Type 93",
+          "Radar embarqué (retardataire)"
+        ]
+      },
+      "politics": {
+        "regime": "Monarchie militarisée : cabinets dirigés par des généraux, Diète affaiblie, état d’urgence permanent à partir de 1937.",
+        "head": "Empereur Shōwa (Hirohito) ; Premiers ministres militaires, dont Tōjō Hideki de 1941 à 1944.",
+        "succession": "Héréditaire ; la maison impériale est sacralisée par la Constitution de 1889.",
+        "institutions": "Cabinet, Diète, état-major impérial, Conseil privé, police politique (Tokkō).",
+        "administration": "Préfectures, gouvernements généraux de Corée et de Taïwan, administrations militaires en Chine et en Asie du Sud-Est.",
+        "provinces": {
+          "value": 47,
+          "low": 47,
+          "high": 47,
+          "year": 1940,
+          "note": "Préfectures du Japon propre, plus les territoires coloniaux.",
+          "source": {
+            "label": "Wikipédia — Ère Shōwa (1926-1989)",
+            "url": "https://fr.wikipedia.org/wiki/Ère_Shōwa_(1926-1989)"
+          }
+        },
+        "law": "Constitution de 1889 vidée de son sens ; loi de mobilisation nationale (1938), tribunaux militaires."
+      },
+      "society": {
+        "religions": [
+          "Shinto d’État",
+          "Bouddhisme",
+          "Christianisme persécuté",
+          "Nouveaux mouvements"
+        ],
+        "languages": [
+          "Japonais",
+          "Coréen (interdit à l’école)",
+          "Taïwanais",
+          "Langues des territoires occupés"
+        ],
+        "structure": "Société mobilisée : paysans, ouvriers des usines d’armement, femmes remplaçant les hommes, minorités coréenne et taïwanaise soumises au travail forcé.",
+        "women": "Mobilisées dans les usines et les associations de quartier ; l’État encadre la natalité et la sexualité, y compris par les « femmes de réconfort »."
+      },
+      "culture": {
+        "inventions": [
+          "Radio nationale (NHK)",
+          "Cinéma de propagande",
+          "Aviation de série (Zero)",
+          "Mangas et magazines populaires"
+        ],
+        "works": [
+          "« La Danseuse d’Izu » de Kawabata (1926)",
+          "« Éloge de l’ombre » de Tanizaki (1933)",
+          "« Le Fils unique » d’Ozu (1936)"
+        ],
+        "scholars": [
+          "Yukawa Hideki",
+          "Shiga Kiyoshi",
+          "Hantarō Nagaoka"
+        ]
+      },
+      "infrastructure": {
+        "summary": "Réseau ferré dense, électricité, métro de Tokyo (1927), grands trusts ; les bombardements de 1945 détruisent la moitié des villes."
+      },
+      "legacy": "La guerre laisse trois millions de morts, des villes en ruine et un pays occupé, mais aussi une Constitution pacifiste et les bases de la croissance."
+    }
+  ]
+}

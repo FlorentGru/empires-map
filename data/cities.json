@@ -1778,7 +1778,8 @@
       }
     ],
     "empires": [
-      "china"
+      "china",
+      "japon"
     ]
   },
   {
@@ -2097,7 +2098,8 @@
       }
     ],
     "empires": [
-      "china"
+      "china",
+      "japon"
     ]
   },
   {
@@ -2198,7 +2200,8 @@
     "founded": 1291,
     "rank": 2,
     "empires": [
-      "china"
+      "china",
+      "japon"
     ]
   },
   {
@@ -2247,7 +2250,17 @@
       },
       {
         "name": "Taipei",
-        "from": 1875
+        "from": 1875,
+        "to": 1895
+      },
+      {
+        "name": "Taihoku",
+        "from": 1895,
+        "to": 1945
+      },
+      {
+        "name": "Taipei",
+        "from": 1946
       }
     ],
     "coords": [
@@ -2257,7 +2270,8 @@
     "founded": 1709,
     "rank": 2,
     "empires": [
-      "china"
+      "china",
+      "japon"
     ]
   },
   {
@@ -2298,7 +2312,17 @@
       },
       {
         "name": "Hanseong",
-        "from": 1394
+        "from": 1394,
+        "to": 1910
+      },
+      {
+        "name": "Keijō",
+        "from": 1910,
+        "to": 1945
+      },
+      {
+        "name": "Séoul",
+        "from": 1945
       }
     ],
     "coords": [
@@ -2306,9 +2330,10 @@
       37.57
     ],
     "founded": -18,
-    "rank": 2,
+    "rank": 1,
     "empires": [
-      "china"
+      "china",
+      "japon"
     ]
   },
   {
@@ -2326,7 +2351,8 @@
     "founded": -108,
     "rank": 2,
     "empires": [
-      "china"
+      "china",
+      "japon"
     ]
   },
   {
@@ -2348,9 +2374,10 @@
       35.01
     ],
     "founded": 794,
-    "rank": 2,
+    "rank": 1,
     "empires": [
-      "china"
+      "china",
+      "japon"
     ]
   },
   {
@@ -8998,6 +9025,201 @@
     "rank": 2,
     "empires": [
       "fatimides"
+    ]
+  },
+  {
+    "id": "tokyo",
+    "modern": "Tokyo, Japon",
+    "names": [
+      {
+        "name": "Edo",
+        "to": 1868
+      },
+      {
+        "name": "Tokyo",
+        "from": 1869
+      }
+    ],
+    "coords": [
+      139.69,
+      35.68
+    ],
+    "founded": 1457,
+    "rank": 1,
+    "capitalOf": [
+      {
+        "empire": "japon",
+        "from": 1868,
+        "to": 1947
+      }
+    ]
+  },
+  {
+    "id": "osaka",
+    "modern": "Osaka, Japon",
+    "names": [
+      {
+        "name": "Naniwa",
+        "to": 1868
+      },
+      {
+        "name": "Osaka",
+        "from": 1869
+      }
+    ],
+    "coords": [
+      135.5,
+      34.69
+    ],
+    "founded": 645,
+    "rank": 1
+  },
+  {
+    "id": "nagoya",
+    "modern": "Nagoya, Japon",
+    "names": [
+      {
+        "name": "Nagoya"
+      }
+    ],
+    "coords": [
+      136.9,
+      35.18
+    ],
+    "founded": 1610,
+    "rank": 2
+  },
+  {
+    "id": "hiroshima",
+    "modern": "Hiroshima, Japon",
+    "names": [
+      {
+        "name": "Hiroshima"
+      }
+    ],
+    "coords": [
+      132.46,
+      34.39
+    ],
+    "founded": 1589,
+    "rank": 2,
+    "empires": [
+      "japon"
+    ]
+  },
+  {
+    "id": "nagasaki",
+    "modern": "Nagasaki, Japon",
+    "names": [
+      {
+        "name": "Nagasaki"
+      }
+    ],
+    "coords": [
+      129.87,
+      32.75
+    ],
+    "founded": 1571,
+    "rank": 2,
+    "empires": [
+      "japon"
+    ]
+  },
+  {
+    "id": "sapporo",
+    "modern": "Sapporo, Japon",
+    "names": [
+      {
+        "name": "Sapporo"
+      }
+    ],
+    "coords": [
+      141.35,
+      43.06
+    ],
+    "founded": 1869,
+    "rank": 2,
+    "empires": [
+      "japon"
+    ]
+  },
+  {
+    "id": "lushun",
+    "modern": "Lüshunkou (Port-Arthur), Chine",
+    "names": [
+      {
+        "name": "Lüshun",
+        "to": 1897
+      },
+      {
+        "name": "Port-Arthur",
+        "from": 1898,
+        "to": 1945
+      },
+      {
+        "name": "Lüshun",
+        "from": 1946
+      }
+    ],
+    "coords": [
+      121.26,
+      38.81
+    ],
+    "founded": 1880,
+    "rank": 3,
+    "empires": [
+      "japon"
+    ]
+  },
+  {
+    "id": "singapour",
+    "modern": "Singapour",
+    "names": [
+      {
+        "name": "Temasek",
+        "to": 1818
+      },
+      {
+        "name": "Singapour",
+        "from": 1819,
+        "to": 1941
+      },
+      {
+        "name": "Shōnan-tō",
+        "from": 1942,
+        "to": 1945
+      },
+      {
+        "name": "Singapour",
+        "from": 1946
+      }
+    ],
+    "coords": [
+      103.85,
+      1.29
+    ],
+    "founded": 1819,
+    "rank": 2,
+    "empires": [
+      "japon"
+    ]
+  },
+  {
+    "id": "saipan",
+    "modern": "Saipan, îles Mariannes du Nord",
+    "names": [
+      {
+        "name": "Saipan"
+      }
+    ],
+    "coords": [
+      145.75,
+      15.19
+    ],
+    "founded": 1521,
+    "rank": 3,
+    "empires": [
+      "japon"
     ]
   }
 ]

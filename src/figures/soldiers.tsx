@@ -261,6 +261,53 @@ export const NAPO_SOLDIER_SPECS = {
     head: dome('#b8ae8a') + rect(11, 7.4, 10, 1.4, '#b8ae8a', 0.4) + path('M14.8 4.2L17.2 4.2L16.4 0.2Q16 -0.8 15.6 0.2Z', '#b8ae8a'),
     weapon: musket(),
   },
+  'japonais-xxe': {
+    tunic: '#8a8250',
+    legs: 'pants',
+    legColor: '#8a8250',
+    boots: '#3a3122',
+    deco:
+      rect(11.6, 14.4, 2.2, 1.4, '#5a4a2e', 0.2, 'stroke="none"') +
+      rect(18.2, 14.4, 2.2, 1.4, '#5a4a2e', 0.2, 'stroke="none"') +
+      rect(13.3, 18.4, 2.6, 2.2, '#756c44', 0.3) +
+      rect(16.1, 18.4, 2.6, 2.2, '#756c44', 0.3) +
+      rect(10.6, 21.2, 10.8, 1.6, '#5a4a2e', 0, 'stroke="none"'),
+    head:
+      dome('#6f7048') +
+      rect(10.9, 7.3, 10.2, 1.5, '#6f7048', 0.4) +
+      path('M16 4.3L16.3 5L17.1 5L16.5 5.5L16.7 6.3L16 5.9L15.3 6.3L15.5 5.5L14.9 5L15.7 5Z', '#e6c022', 'stroke="none"'),
+    weapon: musket(),
+  },
+  'chinois-xxe': {
+    tunic: '#6e7a6a',
+    legs: 'pants',
+    legColor: '#5a6455',
+    boots: '#2b2219',
+    deco:
+      stroke('M16 15.2V20.6', '#57624f', 0.8) +
+      rect(10.4, 20.6, 11.2, 1.5, '#cfc3a2', 0, 'stroke="none"') +
+      rect(11.2, 22.1, 2.6, 2.2, '#4a4436', 0.3) +
+      rect(18.2, 22.1, 2.6, 2.2, '#4a4436', 0.3),
+    head:
+      path('M11.9 6.8Q11.7 2.8 16 2.6Q20.3 2.8 20.1 6.8Z', '#6e7a6a') +
+      rect(11.7, 6.5, 8.6, 1.2, '#5f6a60', 0.3) +
+      path('M10.6 7.6L21.4 7.6L22.2 8.6L9.8 8.6Z', '#57624f') +
+      circ(16, 4.9, 0.75, '#a8281e', 'stroke="none"'),
+    weapon: musket(),
+  },
+  'americains-xxe': {
+    tunic: '#4f5f3a',
+    legs: 'pants',
+    legColor: '#4f5f3a',
+    boots: '#4a2f1a',
+    deco:
+      path('M12.6 14.4L16 16.4L19.4 14.4Z', '#3d4a2e', 'stroke="none"') +
+      rect(10.5, 20.8, 11, 1.6, '#3d4a2e', 0, 'stroke="none"') +
+      rect(11.3, 22.4, 2.8, 2.4, '#3d4a2e', 0.3) +
+      rect(17.9, 22.4, 2.8, 2.4, '#3d4a2e', 0.3),
+    head: dome('#4a5a3a') + rect(10.8, 7.2, 10.4, 1.6, '#4a5a3a', 0.4) + stroke('M12.7 8.8Q16 14.2 19.3 8.8', '#3a3226', 0.7),
+    weapon: musket(),
+  },
   caucasiens: {
     tunic: '#5a4a3a',
     skirt: '#5a4a3a',

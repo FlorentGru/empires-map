@@ -1,0 +1,244 @@
+[
+  {
+    "id": "telegraphe-1869",
+    "name": "Le télégraphe électrique",
+    "year": 1869,
+    "approx": true,
+    "place": "Tokyo (Shinbashi) et Yokohama",
+    "at": [
+      139.75,
+      35.66
+    ],
+    "inventor": "Ingénieurs britanniques et équipes japonaises",
+    "category": "technique",
+    "description": "Une ligne télégraphique relie Tokyo à Yokohama dès 1869, construite avec l’aide d’ingénieurs britanniques et ouverte au public l’année suivante. Le Japon n’invente pas le télégraphe : il l’achète, l’installe et le diffuse très vite. Les fils suivent les routes et les futures voies ferrées, relient les préfectures et permettent pour la première fois de transmettre un ordre du gouvernement à un gouverneur en quelques minutes. C’est un outil de centralisation autant que de commerce.",
+    "impact": "Un pays sans routes rapides se dote d’un système nerveux : ordres, prix et nouvelles circulent en minutes, ce qui rend l’État centralisateur réellement opérationnel.",
+    "sources": [
+      {
+        "label": "Wikipédia — Télégraphe",
+        "url": "https://fr.wikipedia.org/wiki/Télégraphe"
+      },
+      {
+        "label": "Wikipédia — Ère Meiji",
+        "url": "https://fr.wikipedia.org/wiki/Ère_Meiji"
+      }
+    ]
+  },
+  {
+    "id": "chemin-de-fer-1872",
+    "name": "Le premier chemin de fer Tokyo-Yokohama",
+    "year": 1872,
+    "place": "Tokyo (Shimbashi) et Yokohama",
+    "at": [
+      139.76,
+      35.665
+    ],
+    "inventor": "Edmund Morel, ingénieur britannique, pour le compte de l’État",
+    "category": "technique",
+    "description": "Le 14 octobre 1872, la première ligne ferroviaire japonaise, longue de 29 kilomètres, est ouverte au public entre Shimbashi et Yokohama. Matériel, locomotives et ingénieurs viennent de Grande-Bretagne, mais la ligne est financée et voulue par l’État. Les Japonais apprennent vite à conduire, entretenir et fabriquer eux-mêmes. Le chemin de fer devient le symbole de la modernisation et le modèle du réseau national, construit dans les décennies suivantes.",
+    "impact": "Il unifie un pays de montagnes et de côtes : marchandises, conscrits et fonctionnaires circulent en heures là où il fallait des jours.",
+    "sources": [
+      {
+        "label": "Wikipédia — Ligne principale Tōkaidō",
+        "url": "https://fr.wikipedia.org/wiki/Ligne_principale_Tōkaidō"
+      },
+      {
+        "label": "Wikipédia — Ère Meiji",
+        "url": "https://fr.wikipedia.org/wiki/Ère_Meiji"
+      }
+    ]
+  },
+  {
+    "id": "banque-du-japon-1882",
+    "name": "La Banque du Japon et le yen convertible",
+    "year": 1882,
+    "place": "Tokyo",
+    "at": [
+      139.77,
+      35.686
+    ],
+    "inventor": "Matsukata Masayoshi, ministre des Finances",
+    "category": "monnaie",
+    "description": "Créée en octobre 1882 sur le modèle des banques centrales européennes, la Banque du Japon reçoit en 1885 le monopole de l’émission des billets. Elle remplace le désordre des papiers-monnaies de la Restauration, provoqué par les émissions massives de 1877. Matsukata Masayoshi impose une politique de rigueur, puis rattache le yen à l’or en 1897, avec l’indemnité chinoise. Le pays dispose enfin d’une monnaie stable, condition de l’investissement étranger.",
+    "impact": "Une monnaie unique et convertible finance l’industrialisation et intègre le Japon au marché mondial, tout en donnant à l’État un instrument de contrôle.",
+    "sources": [
+      {
+        "label": "Wikipédia — Banque du Japon",
+        "url": "https://fr.wikipedia.org/wiki/Banque_du_Japon"
+      },
+      {
+        "label": "Wikipédia — Histoire économique du Japon",
+        "url": "https://fr.wikipedia.org/wiki/Histoire_économique_du_Japon"
+      }
+    ]
+  },
+  {
+    "id": "metier-toyoda-1896",
+    "name": "Le métier à tisser automatique Toyoda",
+    "year": 1896,
+    "approx": true,
+    "place": "Toyohashi, préfecture d’Aichi",
+    "at": [
+      137.39,
+      34.77
+    ],
+    "inventor": "Sakichi Toyoda",
+    "category": "technique",
+    "description": "Sakichi Toyoda, fils de charpentier, met au point à partir de 1896 des métiers à tisser mécaniques, puis le type G automatique en 1924 : la machine s’arrête d’elle-même quand un fil casse, ce qui permet à une ouvrière de surveiller plusieurs métiers. Le procédé, vendu à une firme britannique en 1929, finance les premières recherches automobiles de la famille. C’est une diffusion industrialisée plutôt qu’une invention isolée.",
+    "impact": "La mécanisation du tissage fait du Japon un grand exportateur de cotonnades et jette les bases de son industrie mécanique.",
+    "sources": [
+      {
+        "label": "Wikipédia — Sakichi Toyoda",
+        "url": "https://fr.wikipedia.org/wiki/Sakichi_Toyoda"
+      },
+      {
+        "label": "Wikipédia — Histoire économique du Japon",
+        "url": "https://fr.wikipedia.org/wiki/Histoire_économique_du_Japon"
+      }
+    ]
+  },
+  {
+    "id": "beri-beri-1884",
+    "name": "La cause du béribéri identifiée dans la marine",
+    "year": 1884,
+    "place": "Yokosuka, école de médecine navale",
+    "at": [
+      139.67,
+      35.28
+    ],
+    "inventor": "Takaki Kanehiro, médecin de la marine impériale",
+    "category": "medecine",
+    "description": "Le béribéri, maladie nerveuse qui paralyse et tue, décime les équipages japonais nourris de riz blanc poli. Le médecin de marine Takaki Kanehiro compare, lors d’un voyage d’essai en 1882-1884, un équipage au riz blanc à un autre nourri d’orge, de viande et de légumes : le second est épargné. Il attribue le mal à un manque d’azote et non à un microbe, et ignore les vitamines, découvertes plus tard. Mais le régime corrige la maladie.",
+    "impact": "Comprendre qu’une maladie mortelle vient du régime alimentaire sauve des dizaines de milliers de vies et ouvre la voie à la notion de vitamine.",
+    "sources": [
+      {
+        "label": "Wikipédia — Takaki Kanehiro",
+        "url": "https://fr.wikipedia.org/wiki/Takaki_Kanehiro"
+      },
+      {
+        "label": "Wikipédia — Béribéri",
+        "url": "https://fr.wikipedia.org/wiki/Béribéri"
+      }
+    ]
+  },
+  {
+    "id": "hosho-1922",
+    "name": "Le Hōshō, premier porte-avions conçu comme tel",
+    "year": 1922,
+    "place": "Yokosuka",
+    "at": [
+      139.67,
+      35.28
+    ],
+    "inventor": "Marine impériale japonaise (arsenal de Yokosuka)",
+    "category": "militaire",
+    "description": "Mis en service le 27 décembre 1922, le Hōshō est le premier bâtiment de guerre au monde conçu dès l’origine comme porte-avions, et non converti à partir d’un autre navire. Il emporte une quinzaine d’appareils, dispose d’un pont plat et d’une cheminée basculante. Les Britanniques avaient lancé le projet du Hermes avant lui, mais le Hōshō fut terminé le premier. Il sert surtout à mettre au point les techniques d’appontage et les tactiques aéronavales.",
+    "impact": "Le Japon déplace le centre de la guerre navale du cuirassé vers l’avion : la doctrine testée sur le Hōshō mènera à Pearl Harbor.",
+    "sources": [
+      {
+        "label": "Wikipédia — Hōshō",
+        "url": "https://fr.wikipedia.org/wiki/Hōshō"
+      },
+      {
+        "label": "Wikipédia — Marine impériale japonaise",
+        "url": "https://fr.wikipedia.org/wiki/Marine_impériale_japonaise"
+      }
+    ]
+  },
+  {
+    "id": "radio-1925",
+    "name": "La radiodiffusion publique",
+    "year": 1925,
+    "place": "Tokyo (colline d’Atago)",
+    "at": [
+      139.745,
+      35.665
+    ],
+    "inventor": "Tokyo Broadcasting Station, future NHK",
+    "category": "technique",
+    "description": "Le 22 mars 1925, une première émission de radio est diffusée depuis Tokyo ; Osaka et Nagoya suivent la même année. Les trois stations fusionnent en 1926 pour former la NHK, financée par une redevance. Les postes récepteurs se multiplient dans les villes, puis dans les campagnes : informations, cours de langue, musique et, à partir des années 1930, émissions de propagande. La radio devient le premier média de masse capable de toucher tout le pays en même temps.",
+    "impact": "Un même discours atteint des millions d’auditeurs simultanément : la radio sert l’éducation, la culture de masse et la mobilisation nationale.",
+    "sources": [
+      {
+        "label": "Wikipédia — NHK",
+        "url": "https://fr.wikipedia.org/wiki/NHK"
+      },
+      {
+        "label": "Wikipédia — Ère Taishō",
+        "url": "https://fr.wikipedia.org/wiki/Ère_Taishō"
+      }
+    ]
+  },
+  {
+    "id": "antenne-yagi-1926",
+    "name": "L’antenne directionnelle Yagi-Uda",
+    "year": 1926,
+    "place": "Sendai, université du Tōhoku",
+    "at": [
+      140.87,
+      38.26
+    ],
+    "inventor": "Yagi Hidetsugu et Uda Shintarō",
+    "category": "technique",
+    "description": "En 1926, les physiciens Yagi Hidetsugu et Uda Shintarō décrivent une antenne formée d’un dipôle et d’éléments parasites parallèles, qui concentre les ondes dans une direction. Le principe passe presque inaperçu au Japon ; ce sont les Alliés qui l’utilisent pendant la guerre pour leurs radars et leurs liaisons. Après 1945, l’antenne Yagi devient l’antenne de télévision la plus répandue au monde, reconnaissable à ses tiges parallèles.",
+    "impact": "Une invention japonaise de physique appliquée, ignorée chez elle, devient l’équipement universel de la télévision et des radiocommunications.",
+    "sources": [
+      {
+        "label": "Wikipédia — Antenne Yagi",
+        "url": "https://fr.wikipedia.org/wiki/Antenne_Yagi"
+      },
+      {
+        "label": "Wikipédia — Hantarō Nagaoka",
+        "url": "https://fr.wikipedia.org/wiki/Hantarō_Nagaoka"
+      }
+    ]
+  },
+  {
+    "id": "torpille-type-93-1933",
+    "name": "La torpille Type 93",
+    "year": 1933,
+    "place": "Kure, arsenal de la marine",
+    "at": [
+      132.57,
+      34.25
+    ],
+    "inventor": "Ingénieurs de l’arsenal de Kure",
+    "category": "militaire",
+    "description": "Adoptée en 1933, la torpille Type 93 est propulsée à l’oxygène pur, ce qui lui donne un sillage presque invisible et une portée exceptionnelle : jusqu’à quarante kilomètres à vitesse réduite. Sa charge et sa vitesse en font l’arme secrète des destroyers et croiseurs japonais, redoutable dans les combats nocturnes. Gardée secrète, elle surprend les Alliés à Savo Island en 1942. Mais l’oxygène est dangereux : les explosions à bord sont fréquentes.",
+    "impact": "Elle donne à la marine japonaise une supériorité nocturne réelle en 1942, avant que le radar américain ne rende cette arme obsolète.",
+    "sources": [
+      {
+        "label": "Wikipédia — Torpille Type 93",
+        "url": "https://fr.wikipedia.org/wiki/Torpille_Type_93"
+      },
+      {
+        "label": "Wikipédia — Marine impériale japonaise",
+        "url": "https://fr.wikipedia.org/wiki/Marine_impériale_japonaise"
+      }
+    ]
+  },
+  {
+    "id": "chasseur-zero-1939",
+    "name": "Le chasseur Mitsubishi A6M Zero",
+    "year": 1939,
+    "place": "Nagoya",
+    "at": [
+      136.9,
+      35.18
+    ],
+    "inventor": "Jirō Horikoshi, Mitsubishi",
+    "category": "militaire",
+    "description": "Le prototype du Zero vole en avril 1939. Dessiné par Jirō Horikoshi, il est léger, très maniable et doté d’une autonomie remarquable, obtenue en supprimant blindage, réservoirs protégés et parachute. Ces choix en font le meilleur chasseur embarqué du monde en 1941-1942, mais une fois touché, il s’enflamme. Les pilotes japonais, formés très durement, sont irremplaçables. À partir de 1943, les chasseurs américains plus lourds et plus puissants le surclassent.",
+    "impact": "Le Zero symbolise la supériorité japonaise de 1942 et sa fragilité industrielle : une machine d’élite, impossible à produire en masse face aux États-Unis.",
+    "sources": [
+      {
+        "label": "Wikipédia — Mitsubishi A6M",
+        "url": "https://fr.wikipedia.org/wiki/Mitsubishi_A6M"
+      },
+      {
+        "label": "Wikipédia — Marine impériale japonaise",
+        "url": "https://fr.wikipedia.org/wiki/Marine_impériale_japonaise"
+      }
+    ]
+  }
+]

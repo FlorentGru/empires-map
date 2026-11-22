@@ -1,0 +1,352 @@
+[
+  {
+    "id": "meiji",
+    "name": "Mutsuhito (empereur Meiji)",
+    "archetype": "roi-moderne",
+    "faction": "japonais",
+    "born": 1852,
+    "died": 1912,
+    "title": "Empereur du Japon, visage de la modernisation",
+    "bio": "Mutsuhito naît en 1852, fils de l’empereur Kōmei. Il monte sur le trône en 1867, à quinze ans, au moment où les domaines du sud-ouest renversent le shogunat. Son nom de règne, Meiji (« gouvernement éclairé »), devient le nom de l’ère et, par usage, le sien en Occident. Il n’a guère gouverné lui-même : le pouvoir appartient aux oligarques de la Restauration, Ōkubo, Itō, Yamagata. Mais il prête sa légitimité à toutes les réformes — abolition des domaines, conscription, Constitution de 1889 — et il incarne l’unité d’un pays qui n’en avait jamais eu. Il s’habille en uniforme, pose pour des photographies officielles, voyage en train. En 1889, il accorde la Constitution comme un cadeau fait au peuple, et le texte fait de lui un souverain sacré. Il meurt en 1912, après avoir vu le Japon battre la Chine et la Russie. Son règne laisse une monarchie forte et un pays transformé, mais aussi une bureaucratie et une armée devenues autonomes.",
+    "keyFacts": [
+      "1852 : naissance à Kyōto, fils de l’empereur Kōmei",
+      "1867 : monte sur le trône à quinze ans",
+      "1869 : s’installe à Tokyo, l’ancienne Edo",
+      "1889 : promulgue la Constitution Meiji",
+      "1912 : mort, après les victoires sur la Chine et la Russie"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Meiji (empereur)",
+        "url": "https://fr.wikipedia.org/wiki/Meiji_(empereur)"
+      },
+      {
+        "label": "Wikipédia — Restauration de Meiji",
+        "url": "https://fr.wikipedia.org/wiki/Restauration_de_Meiji"
+      }
+    ]
+  },
+  {
+    "id": "ito-hirobumi",
+    "name": "Itō Hirobumi",
+    "archetype": "reformateur",
+    "faction": "japonais-meiji",
+    "born": 1841,
+    "died": 1909,
+    "title": "Premier ministre et rédacteur de la Constitution",
+    "bio": "Né dans une famille de samouraïs de rang modeste à Hagi, dans le domaine de Chōshū, Itō Hirobumi est l’un des artisans de la Restauration. Il participe en 1863 à l’incendie de la légation britannique d’Edo, puis apprend l’anglais et part étudier à Londres, d’où il revient convaincu qu’il faut moderniser le pays plutôt que le fermer. Après 1868, il gravit les échelons : il négocie avec les Occidentaux, réorganise l’administration et devient le principal rédacteur de la Constitution de 1889, après un an passé à Berlin et à Vienne. Il préside le premier cabinet moderne en 1885 et occupe quatre fois le poste de Premier ministre. Il signe le traité de Shimonoseki en 1895, puis devient résident général en Corée en 1905, où il applique une politique d’assimilation. Il est assassiné à Harbin en 1909 par l’indépendantiste coréen An Jung-geun. Sa ligne : un État fort, guidé par l’empereur, avec un parlement encadré.",
+    "keyFacts": [
+      "1841 : naissance à Hagi, dans le domaine de Chōshū",
+      "1885 : premier président du Conseil du Japon moderne",
+      "1889 : principal rédacteur de la Constitution Meiji",
+      "1895 : signe le traité de Shimonoseki avec la Chine",
+      "1909 : assassiné à Harbin par An Jung-geun"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Itō Hirobumi",
+        "url": "https://fr.wikipedia.org/wiki/Itō_Hirobumi"
+      },
+      {
+        "label": "Wikipédia — Constitution de l'empire du Japon",
+        "url": "https://fr.wikipedia.org/wiki/Constitution_de_l'empire_du_Japon"
+      }
+    ]
+  },
+  {
+    "id": "okubo-toshimichi",
+    "name": "Ōkubo Toshimichi",
+    "archetype": "reformateur",
+    "faction": "japonais-meiji",
+    "born": 1830,
+    "died": 1878,
+    "title": "L’homme fort de la centralisation",
+    "bio": "Samouraï de Satsuma, Ōkubo Toshimichi est, avec Saigō Takamori, l’un des organisateurs du renversement du shogunat. Pragmatique et autoritaire, il devient le véritable chef du gouvernement au début des années 1870 : il pousse l’abolition des domaines en 1871, la réforme fiscale, l’interdiction du sabre, et il réprime sans hésiter ses anciens amis. En 1873, il obtient le départ de Saigō du gouvernement dans la querelle sur la Corée, puis il écrase la rébellion de Satsuma en 1877. Il a voyagé en Europe en 1871-1873 avec la mission Iwakura. Sa poigne lui vaut des haines : en 1878, il est assassiné près de Tokyo par des samouraïs de Satsuma qui lui reprochent la disparition de leur monde. Sa mort laisse le champ libre à Itō et à Yamagata. Il incarne la face dure de la modernisation : un État centralisé, fiscalement solide, capable de mater les oppositions.",
+    "keyFacts": [
+      "1830 : naissance à Kagoshima, dans une famille de samouraïs",
+      "1871 : fait adopter l’abolition des domaines",
+      "1873 : impose le départ de Saigō du gouvernement",
+      "1877 : organise la répression de la rébellion de Satsuma",
+      "1878 : assassiné par des samouraïs de Satsuma"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Ōkubo Toshimichi",
+        "url": "https://fr.wikipedia.org/wiki/Ōkubo_Toshimichi"
+      },
+      {
+        "label": "Wikipédia — Restauration de Meiji",
+        "url": "https://fr.wikipedia.org/wiki/Restauration_de_Meiji"
+      }
+    ]
+  },
+  {
+    "id": "saigo-takamori",
+    "name": "Saigō Takamori",
+    "archetype": "general",
+    "faction": "japonais",
+    "born": 1828,
+    "died": 1877,
+    "title": "Le dernier samouraï, héros de la Restauration",
+    "bio": "Né à Kagoshima dans une famille de samouraïs pauvres, Saigō Takamori est un géant, buveur, aimé de ses hommes. Il joue un rôle décisif en 1868 : c’est lui qui négocie la reddition sans combat d’Edo avec Katsu Kaishū, épargnant la ville. Il devient ensuite conseiller d’État, défend une expédition en Corée en 1873 et, mis en minorité, quitte le gouvernement. Retiré à Kagoshima, il ouvre une école qui devient un foyer de mécontentement contre les réformes. En 1877, ses élèves déclenchent la rébellion de Satsuma ; il accepte de la conduire et assiège Kumamoto sans succès. Vaincu à Shiroyama en septembre 1877, il meurt sur la colline. Réhabilité en 1889, il devient la figure romantique du Japon moderne : le guerrier fidèle à un monde qui disparaît, chanté par les romans et le cinéma. Sa statue, en tenue simple, veille sur le parc d’Ueno, à Tokyo.",
+    "keyFacts": [
+      "1828 : naissance à Kagoshima",
+      "1868 : négocie la reddition pacifique d’Edo",
+      "1873 : quitte le gouvernement après l’échec du débat sur la Corée",
+      "1877 : conduit la rébellion de Satsuma, meurt à Shiroyama",
+      "1889 : réhabilité à titre posthume par l’empereur"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Saigō Takamori",
+        "url": "https://fr.wikipedia.org/wiki/Saigō_Takamori"
+      },
+      {
+        "label": "Wikipédia — Rébellion de Satsuma",
+        "url": "https://fr.wikipedia.org/wiki/Rébellion_de_Satsuma"
+      }
+    ]
+  },
+  {
+    "id": "fukuzawa-yukichi",
+    "name": "Fukuzawa Yukichi",
+    "archetype": "sage",
+    "faction": "japonais-meiji",
+    "born": 1835,
+    "died": 1901,
+    "title": "L’éducateur de la nation",
+    "bio": "Fukuzawa Yukichi apprend le néerlandais puis l’anglais à Osaka et à Edo, et participe à trois missions officielles en Europe et aux États-Unis. Il en rapporte des notes qui deviennent des best-sellers et fonde en 1858 une école de langues, future université Keiō. Dans « Encouragement à l’étude » (1872-1876), vendu à des centaines de milliers d’exemplaires, il explique que le savoir et l’indépendance personnelle font la force d’un pays, et que le Japon doit cesser d’attendre tout de l’État. Il fonde un journal, critique la politique de puissance, défend l’éducation des filles et la réforme des mœurs. Nationaliste libéral, il soutient la modernisation et, dans les années 1880, se rallie à l’expansion en Asie, ce qui le rend ambigu aux yeux de ses successeurs. Il refuse les postes officiels pour garder sa liberté de parole. Son portrait figure sur les billets de 10 000 yens depuis 1984 : un intellectuel, et non un homme d’État.",
+    "keyFacts": [
+      "1835 : naissance à Osaka, dans une famille de samouraïs de bas rang",
+      "1860-1867 : trois voyages officiels en Europe et aux États-Unis",
+      "1872-1876 : publie « Encouragement à l’étude »",
+      "1882 : fonde le journal Jiji shimpō",
+      "1901 : mort ; son portrait orne les billets de 10 000 yens"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Fukuzawa Yukichi",
+        "url": "https://fr.wikipedia.org/wiki/Fukuzawa_Yukichi"
+      },
+      {
+        "label": "Wikipédia — Université Keiō",
+        "url": "https://fr.wikipedia.org/wiki/Université_Keiō"
+      }
+    ]
+  },
+  {
+    "id": "yamagata-aritomo",
+    "name": "Yamagata Aritomo",
+    "archetype": "general",
+    "faction": "japonais-meiji",
+    "born": 1838,
+    "died": 1922,
+    "title": "Fondateur de l’armée moderne et homme de l’ombre",
+    "bio": "Yamagata Aritomo, samouraï de Chōshū, est le père de l’armée impériale. Envoyé en Europe en 1869-1870, il en revient avec le modèle prussien et fait adopter la conscription en 1873. Il commande l’armée qui écrase la rébellion de Satsuma en 1877, puis devient chef d’état-major, ministre de l’Intérieur et l’un des principaux oligarques du régime. Il organise la police et l’administration locale, et fait de l’armée un pouvoir autonome, directement rattaché à l’empereur. Deux fois Premier ministre (1889-1891, 1898-1900), il définit une politique étrangère fondée sur la « ligne d’intérêt » : la Corée d’abord, puis la Mandchourie. Maréchal en 1898, il est anobli. Jusqu’à sa mort en 1922, il tire les fils de la vie politique, imposant ou écartant les cabinets. Il laisse un État solide et une armée difficile à contrôler, ce qui pèsera lourd dans les années 1930.",
+    "keyFacts": [
+      "1838 : naissance à Hagi, dans le domaine de Chōshū",
+      "1873 : fait adopter la conscription obligatoire",
+      "1877 : commande l’armée impériale contre Satsuma",
+      "1889-1891 et 1898-1900 : deux fois Premier ministre",
+      "1922 : mort, après avoir dominé la vie politique japonaise"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Yamagata Aritomo",
+        "url": "https://fr.wikipedia.org/wiki/Yamagata_Aritomo"
+      },
+      {
+        "label": "Wikipédia — Armée impériale japonaise",
+        "url": "https://fr.wikipedia.org/wiki/Armée_impériale_japonaise"
+      }
+    ]
+  },
+  {
+    "id": "togo-heihachiro",
+    "name": "Tōgō Heihachirō",
+    "archetype": "amiral",
+    "faction": "japonais-meiji",
+    "born": 1848,
+    "died": 1934,
+    "title": "Le vainqueur de Tsushima",
+    "bio": "Né à Kagoshima, Tōgō Heihachirō combat adolescent pendant la guerre de Boshin, puis part étudier la marine en Angleterre, où il passe six ans. Il commande le croiseur Naniwa pendant la guerre de 1894, puis devient commandant en chef de la flotte combinée en 1904. Sa stratégie est simple et efficace : attendre la flotte russe, la frapper en travers de sa route et la détruire. À Tsushima, en mai 1905, il anéantit l’escadre de la Baltique en moins de deux jours. Son signal, « le sort de l’Empire dépend de cette bataille », et son calme sous le feu en font une icône. Il est fêté comme l’égal de Nelson, et ses funérailles, en 1934, sont nationales. Il était superstitieux, silencieux, obsédé par l’entraînement au tir. Sa victoire a prouvé qu’une flotte asiatique pouvait battre une flotte européenne, argument qui nourrira à la fois la fierté japonaise et l’illusion d’une invincibilité navale.",
+    "keyFacts": [
+      "1848 : naissance à Kagoshima",
+      "1871-1878 : études de marine en Angleterre",
+      "1894 : commande le croiseur Naniwa à la bataille du Yalu",
+      "1905 : détruit la flotte russe à Tsushima",
+      "1934 : funérailles d’État à Tokyo"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Tōgō Heihachirō",
+        "url": "https://fr.wikipedia.org/wiki/Tōgō_Heihachirō"
+      },
+      {
+        "label": "Wikipédia — Bataille de Tsushima",
+        "url": "https://fr.wikipedia.org/wiki/Bataille_de_Tsushima"
+      }
+    ]
+  },
+  {
+    "id": "nogi-maresuke",
+    "name": "Nogi Maresuke",
+    "archetype": "militaire-xxe",
+    "faction": "japonais-meiji",
+    "born": 1849,
+    "died": 1912,
+    "title": "Le général du siège de Port-Arthur",
+    "bio": "Nogi Maresuke commande la 3e armée au siège de Port-Arthur, en 1904-1905, l’opération la plus meurtrière de la guerre russo-japonaise : des dizaines de milliers de soldats japonais meurent dans des assauts frontaux contre les forts. Il finit par prendre la place, mais le coût est immense et lui vaut des critiques. Il avait été gouverneur général de Taïwan de 1896 à 1898. Nogi était un homme austère, obsédé par le bushido et le devoir : il avait perdu deux fils à la guerre et considérait leur mort comme une punition de ses propres fautes. Le jour des funérailles de l’empereur Meiji, en septembre 1912, il se suicide avec sa femme selon le rituel du junshi, pour suivre son souverain. Ce geste, très commenté, illustre la survivance de l’éthique samouraï dans l’armée moderne : le général le plus moderne du Japon est mort comme un vassal du Moyen Âge.",
+    "keyFacts": [
+      "1849 : naissance à Edo, dans une famille de samouraïs",
+      "1896-1898 : gouverneur général de Taïwan",
+      "1904-1905 : commande la 3e armée au siège de Port-Arthur",
+      "1912 : se suicide le jour des funérailles de l’empereur Meiji"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Nogi Maresuke",
+        "url": "https://fr.wikipedia.org/wiki/Nogi_Maresuke"
+      },
+      {
+        "label": "Wikipédia — Siège de Port-Arthur",
+        "url": "https://fr.wikipedia.org/wiki/Siège_de_Port-Arthur"
+      }
+    ]
+  },
+  {
+    "id": "taisho",
+    "name": "Yoshihito (empereur Taishō)",
+    "archetype": "roi-moderne",
+    "faction": "japonais-meiji",
+    "born": 1879,
+    "died": 1926,
+    "title": "Un empereur effacé, une ère de partis",
+    "bio": "Yoshihito, fils de l’empereur Meiji, naît en 1879 et monte sur le trône en 1912. De santé fragile — il souffre très tôt d’une méningite, puis de troubles neurologiques —, il est incapable d’exercer réellement le pouvoir. Il apparaît peu, parle mal en public, et ses gestes maladroits font l’objet de railleries. Son règne, l’ère Taishō, est pourtant une période d’ouverture politique : les partis se succèdent au gouvernement, le suffrage s’élargit en 1925, la presse et les syndicats se développent. C’est l’époque dite de la « démocratie Taishō ». En 1921, son fils Hirohito devient régent ; Yoshihito se retire. Il meurt en 1926. Son effacement a renforcé une idée durable : le pouvoir ne vient pas de l’empereur, mais de ses ministres et de l’armée, qui parlent en son nom. Sa faiblesse personnelle a paradoxalement permis l’expérience parlementaire la plus libre que le Japon ait connue avant 1945.",
+    "keyFacts": [
+      "1879 : naissance à Tokyo",
+      "1912 : monte sur le trône à la mort de Meiji",
+      "1921 : son fils Hirohito devient régent",
+      "1925 : le suffrage masculin universel est adopté",
+      "1926 : mort, après une longue maladie"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Taishō (empereur)",
+        "url": "https://fr.wikipedia.org/wiki/Taishō_(empereur)"
+      },
+      {
+        "label": "Wikipédia — Ère Taishō",
+        "url": "https://fr.wikipedia.org/wiki/Ère_Taishō"
+      }
+    ]
+  },
+  {
+    "id": "hirohito",
+    "name": "Hirohito (empereur Shōwa)",
+    "archetype": "militaire-xxe",
+    "faction": "japonais-xxe",
+    "born": 1901,
+    "died": 1989,
+    "title": "Empereur de la guerre et de l’après-guerre",
+    "bio": "Hirohito naît en 1901, devient régent en 1921, puis empereur en 1926. Il est le premier empereur japonais à voyager en Europe, et il s’intéresse à la biologie marine. Son rôle dans la guerre fait débat : il valide les décisions d’expansion, il est informé des opérations, mais il gouverne dans un système où l’armée agit souvent seule. En août 1945, il impose la reddition contre une partie de son état-major, et son message radio est le premier discours d’un empereur entendu par son peuple. Sous l’occupation américaine, il conserve son trône mais renonce à sa nature divine, en janvier 1946, et devient un symbole constitutionnel. Certains historiens le jugent complice, d’autres prisonnier de son armée ; les documents montrent un homme informé et parfois interventionniste. Il meurt en 1989, après avoir vu le Japon devenir la deuxième économie mondiale.",
+    "keyFacts": [
+      "1901 : naissance à Tokyo",
+      "1921 : devient régent de son père malade",
+      "1926 : monte sur le trône, début de l’ère Shōwa",
+      "1945 : impose la capitulation dans son message du 15 août",
+      "1946 : renonce publiquement à sa nature divine"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Hirohito",
+        "url": "https://fr.wikipedia.org/wiki/Hirohito"
+      },
+      {
+        "label": "Wikipédia — Actes de capitulation du Japon",
+        "url": "https://fr.wikipedia.org/wiki/Actes_de_capitulation_du_Japon"
+      }
+    ]
+  },
+  {
+    "id": "hideki-tojo",
+    "name": "Hideki Tōjō",
+    "archetype": "militaire-xxe",
+    "faction": "japonais-xxe",
+    "born": 1884,
+    "died": 1948,
+    "title": "Le général qui a mené le Japon à la guerre",
+    "bio": "Issu d’une famille de militaires, Tōjō Hideki gravit les échelons de l’armée, sert en Mandchourie et devient chef d’état-major de l’armée du Guandong. Ministre de la Guerre en 1940, il devient Premier ministre en octobre 1941 et cumule les portefeuilles. Il est l’un des artisans de la décision d’attaquer les États-Unis, tout en restant soumis à l’empereur et aux chefs d’état-major. Autoritaire, méticuleux, mal aimé, il dirige un cabinet de guerre qui ne contrôle pas vraiment l’armée. Après la défaite, il tente de se suicider en septembre 1945, échoue, et est jugé par le tribunal militaire international pour l’Extrême-Orient. Condamné à mort pour crimes de guerre, il est pendu à Tokyo en décembre 1948. Sa responsabilité exacte, comme celle de l’empereur, reste discutée : il symbolise moins un dictateur tout-puissant qu’un système où personne ne décidait seul.",
+    "keyFacts": [
+      "1884 : naissance à Tokyo, dans une famille de militaires",
+      "1937 : chef d’état-major de l’armée du Guandong",
+      "1941 : Premier ministre, décision d’attaquer les États-Unis",
+      "1945 : tentative de suicide manquée",
+      "1948 : pendu à Tokyo après le procès de Tokyo"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Hideki Tōjō",
+        "url": "https://fr.wikipedia.org/wiki/Hideki_Tōjō"
+      },
+      {
+        "label": "Wikipédia — Attaque de Pearl Harbor",
+        "url": "https://fr.wikipedia.org/wiki/Attaque_de_Pearl_Harbor"
+      }
+    ]
+  },
+  {
+    "id": "isoroku-yamamoto",
+    "name": "Isoroku Yamamoto",
+    "archetype": "amiral",
+    "faction": "japonais-xxe",
+    "born": 1884,
+    "died": 1943,
+    "title": "L’amiral de Pearl Harbor",
+    "bio": "Yamamoto Isoroku, officier de marine, perd deux doigts à Tsushima en 1905. Attaché naval à Washington, il étudie à Harvard et voyage aux États-Unis : il en revient convaincu que le Japon ne peut pas gagner une guerre longue contre l’industrie américaine. Il s’oppose à l’alliance avec l’Allemagne et à la guerre contre les États-Unis, mais, une fois la décision prise, il conçoit l’attaque de Pearl Harbor et dirige la flotte combinée. Son plan audacieux réussit, puis il échoue à Midway en juin 1942. Il meurt en avril 1943, tué en avion au-dessus de Bougainville, quand les Américains, qui ont cassé les codes, interceptent son itinéraire. Sa mort n’est annoncée qu’un mois plus tard. Il reste l’image de l’officier lucide et fataliste, conscient d’avoir lancé son pays dans une guerre qu’il jugeait perdue d’avance : sa phrase sur les six premiers mois de guerre est authentique.",
+    "keyFacts": [
+      "1884 : naissance à Nagaoka, dans une famille de samouraïs",
+      "1905 : blessé à Tsushima, perd deux doigts",
+      "1926-1928 : attaché naval à Washington",
+      "1941 : conçoit l’attaque de Pearl Harbor",
+      "1943 : tué en avion au-dessus de Bougainville"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Isoroku Yamamoto",
+        "url": "https://fr.wikipedia.org/wiki/Isoroku_Yamamoto"
+      },
+      {
+        "label": "Wikipédia — Bataille de Midway",
+        "url": "https://fr.wikipedia.org/wiki/Bataille_de_Midway"
+      }
+    ]
+  },
+  {
+    "id": "shigeru-yoshida",
+    "name": "Shigeru Yoshida",
+    "archetype": "diplomate",
+    "faction": "japonais-xxe",
+    "born": 1878,
+    "died": 1967,
+    "title": "Le diplomate de la reconstruction",
+    "bio": "Shigeru Yoshida, diplomate de carrière, sert dans les ambassades de Chine, d’Italie et de Grande-Bretagne avant de devenir ambassadeur à Londres. Opposé à la guerre, il reste en marge pendant le conflit. En 1945, il est nommé ministre des Affaires étrangères, puis Premier ministre en 1946, et conduit la reconstruction du pays sous l’occupation américaine. Il négocie le traité de paix de San Francisco en 1951 et le traité de sécurité avec les États-Unis, qui placent le Japon sous protection américaine pour des décennies. Anticommuniste, pragmatique, surnommé « le pape » pour son autorité, il choisit la croissance économique plutôt que le réarmement et pose les bases du « miracle japonais ». Il quitte le pouvoir en 1954. Il incarne la transition entre l’empire défait et le Japon d’après-guerre : un homme de l’ancien régime qui a compris qu’il fallait tout reconstruire.",
+    "keyFacts": [
+      "1878 : naissance à Tokyo, dans une famille de hauts fonctionnaires",
+      "1936-1939 : ambassadeur du Japon à Londres",
+      "1946 : devient Premier ministre",
+      "1951 : signe le traité de paix de San Francisco",
+      "1954 : quitte la vie politique"
+    ],
+    "sources": [
+      {
+        "label": "Wikipédia — Shigeru Yoshida",
+        "url": "https://fr.wikipedia.org/wiki/Shigeru_Yoshida"
+      },
+      {
+        "label": "Wikipédia — Occupation du Japon",
+        "url": "https://fr.wikipedia.org/wiki/Occupation_du_Japon"
+      }
+    ]
+  }
+]

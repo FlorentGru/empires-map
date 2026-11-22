@@ -275,7 +275,11 @@ export type Faction =
   | 'caucasiens'
   | 'russes-modernes'
   | 'japonais-meiji'
-  | 'allemands-1914';
+  | 'allemands-1914'
+  // Empire du Japon
+  | 'japonais-xxe'
+  | 'chinois-xxe'
+  | 'americains-xxe';
 
 export const FACTIONS: Faction[] = [
   'romains',
@@ -374,6 +378,9 @@ export const FACTIONS: Faction[] = [
   'russes-modernes',
   'japonais-meiji',
   'allemands-1914',
+  'japonais-xxe',
+  'chinois-xxe',
+  'americains-xxe',
 ];
 
 export type Archetype =

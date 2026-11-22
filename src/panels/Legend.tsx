@@ -42,6 +42,7 @@ const EMPIRE_SPRITES: Record<string, { faction: Faction; archetype: Archetype }>
   fatimides: { faction: 'arabes', archetype: 'calife' },
   moghols: { faction: 'moghols', archetype: 'shah' },
   russie: { faction: 'russes', archetype: 'tsar' },
+  japon: { faction: 'japonais-meiji', archetype: 'roi-moderne' },
 };
 
 /** Au-delà, la légende des entités est tronquée (périodes de division). */

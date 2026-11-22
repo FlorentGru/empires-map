@@ -121,6 +121,9 @@ const PEOPLE: Record<Faction, string> = {
   'russes-modernes': 'Russes',
   'japonais-meiji': 'Japonais',
   'allemands-1914': 'Allemands',
+  'japonais-xxe': 'Japonais (1937-1945)',
+  'chinois-xxe': 'Chinois (1894-1945)',
+  'americains-xxe': 'Américains (1941-1945)',
 };
 const esc = (v: string) => v.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const plain = (v: string) =>

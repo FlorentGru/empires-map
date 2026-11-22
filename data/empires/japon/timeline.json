@@ -1,0 +1,1519 @@
+{
+  "id": "japon",
+  "name": "Empire du Japon",
+  "color": "#a0244a",
+  "start": 1868,
+  "end": 1947,
+  "description": "Né en 1868 d'une guerre civile qui renverse le shogunat, l'Empire du Japon se construit en une génération : conscription, industrie, écoles et conquêtes imitent les puissances européennes jusqu'à les égaler. Vainqueur de la Chine en 1895 puis de la Russie en 1905, allié de la Grande-Bretagne, il colonise la Corée et Taïwan et s'étend en Chine à partir de 1931. Son apogée, en 1942, couvre la moitié de l'Asie orientale et du Pacifique ; trois ans plus tard, la défaite et l'occupation américaine mettent fin à l'empire, remplacé par une démocratie pacifiste.",
+  "view": {
+    "center": [
+      136,
+      36
+    ],
+    "zoom": 3.6
+  },
+  "bounds": [
+    [
+      90,
+      -12
+    ],
+    [
+      180,
+      55
+    ]
+  ],
+  "apogee": {
+    "stepId": "apogee-1942",
+    "note": "1942 est l'apogée réel : les conquêtes de décembre 1941-août 1942 (Philippines, Malaisie, Singapour, Indes néerlandaises, Birmanie) portent l'empire à son maximum. Aucune étape postérieure n'est plus vaste ; la « sphère de coprospérité » revendiquée par la propagande va plus loin, mais n'a jamais été administrée. Midway (juin 1942) marque la bascule : la surface mesurée ne bougera plus qu'à la baisse."
+  },
+  "periods": [
+    {
+      "id": "meiji",
+      "name": "L'ère Meiji : construire un État moderne",
+      "start": 1868,
+      "end": 1912,
+      "color": "#e0a6b4",
+      "summary": "Quarante-quatre ans pour passer d'un archipel féodal à une puissance industrielle. Les samouraïs réformateurs abolissent les domaines, créent une armée de conscrits, une Constitution et des écoles, puis battent la Chine et la Russie. À la mort de l'empereur Meiji, en 1912, le Japon est la première puissance non occidentale."
+    },
+    {
+      "id": "taisho",
+      "name": "L'ère Taishō : démocratie et expansion coloniale",
+      "start": 1912,
+      "end": 1926,
+      "color": "#e8cf9a",
+      "summary": "Quinze ans de stabilité relative : la Corée est annexée, le Japon entre dans la Grande Guerre et obtient des mandats dans le Pacifique. Le pays connaît une vie politique plus ouverte, des partis et un suffrage élargi, avant que le tremblement de terre de 1923 et les tensions sociales ne fragilisent ce libéralisme."
+    },
+    {
+      "id": "showa",
+      "name": "L'ère Shōwa : militarisme, guerre totale et défaite",
+      "start": 1926,
+      "end": 1947,
+      "color": "#9fb8cf",
+      "summary": "La crise économique et l'armée radicalisée poussent le pays dans une guerre d'expansion continue, de la Mandchourie en 1931 à Pearl Harbor en 1941. Après Midway, la défaite devient inéluctable : bombardements, Okinawa, bombes atomiques, capitulation et occupation américaine qui abolit l'empire."
+    }
+  ],
+  "steps": [
+    {
+      "id": "boshin-1868",
+      "year": 1868,
+      "title": "Boshin : la guerre qui renverse le shogunat",
+      "type": "bataille",
+      "location": [
+        135.77,
+        34.97
+      ],
+      "zoom": 4.6,
+      "summary": "De janvier 1868 à juin 1869, les domaines du sud-ouest, ralliés à l’empereur Meiji, écrasent les armées du shogun Tokugawa : le Japon passe en dix-huit mois d’un régime féodal à un État impérial.",
+      "details": "Le Japon de 1868 est un archipel dirigé depuis 1603 par les **Tokugawa**, une famille de shoguns : le shogun est le vrai chef militaire et politique, l’empereur, à Kyōto, n’a qu’un rôle religieux et symbolique. Le pays est divisé en quelque 260 domaines (han), gouvernés par des seigneurs (daimyo) dont les guerriers, les **samouraïs**, forment l’élite armée. Depuis l’arrivée de l’escadre américaine du commodore Perry en 1853, le Japon signe des traités inégaux, et l’humiliation nourrit la colère des jeunes samouraïs des domaines du sud-ouest, Satsuma et Chōshū.\n\nLe 3 janvier 1868, leurs troupes occupent le palais impérial de Kyōto et proclament la restauration du pouvoir de l’empereur, un jeune homme de quinze ans, Mutsuhito. Le shogun Tokugawa Yoshinobu, qui a déjà remis ses pouvoirs en novembre 1867, envoie ses armées : elles sont battues à **Toba-Fushimi**, du 27 au 30 janvier. La guerre remonte vers le nord. Edo, la capitale du shogun, capitule sans combat en mai, grâce à la négociation de Saigō Takamori et de Katsu Kaishū ; la ville devient **Tokyo** en septembre.\n\nLes derniers fidèles des Tokugawa résistent à Aizu, puis le long de la mer du Japon. Une flotte commandée par Enomoto Takeaki se réfugie à Hakodate, où elle proclame une « République d’Ezo » ; elle capitule en juin 1869. Le Japon a changé de régime en dix-huit mois, sans révolution sociale : les mêmes samouraïs qui ont renversé le shogun prennent l’État.",
+      "consequences": [
+        "Le Japon est réunifié sous l’autorité de l’empereur ; le nord d’Ezo (Hokkaidō) est conquis en juin 1869 et la souveraineté atteint les Kouriles.",
+        "Le shogunat Tokugawa disparaît après 265 ans ; le pouvoir revient à l’empereur, installé à Tokyo (ex-Edo) en novembre 1868.",
+        "Les domaines de Satsuma, Chōshū, Tosa et Hizen, vainqueurs, monopolisent les postes de l’État nouveau.",
+        "Les traités inégaux restent en vigueur : les réformer devient le programme du nouveau régime."
+      ],
+      "territory": "boshin-1868",
+      "sources": [
+        {
+          "label": "Wikipédia — Guerre de Boshin",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_de_Boshin"
+        },
+        {
+          "label": "Wikipédia — Restauration de Meiji",
+          "url": "https://fr.wikipedia.org/wiki/Restauration_de_Meiji"
+        },
+        {
+          "label": "Paul Akamatsu, Meiji 1868 : révolution et contre-révolution au Japon (Calmann-Lévy)"
+        }
+      ],
+      "territoryNote": "Archipel japonais : Honshū, Kyūshū, Shikoku, plus le sud d’Ezo (Hokkaidō méridional, colonisé à partir de 1869 ; le nord reste à la République d’Ezo jusqu’en juin 1869). Îles : Sado, Oki, Izu, Awaji, Tsushima, Amami. Le royaume du Ryūkyū (Okinawa) est tributaire du Japon depuis 1609, mais aussi vassal nominal de la Chine. Aucune possession continentale. Voisins : Chine des Qing (suzeraine nominale du Ryūkyū), Russie impériale (Sakhaline et Kouriles disputées), Corée de Chosŏn (indépendante, sous influence chinoise), États-Unis, Royaume-Uni, France et Pays-Bas (traités inégaux, ports ouverts).",
+      "figures": [
+        {
+          "name": "Tokugawa Yoshinobu",
+          "role": "Dernier shogun, qui rend ses pouvoirs en 1867",
+          "faction": "japonais",
+          "archetype": "shogun",
+          "quote": "(formule libre) Je préfère remettre le pouvoir que le perdre dans une guerre civile",
+          "position": [
+            135.76,
+            34.99
+          ]
+        },
+        {
+          "name": "Mutsuhito (empereur Meiji)",
+          "role": "Empereur du Japon de 1867 à 1912",
+          "faction": "japonais",
+          "archetype": "roi-moderne",
+          "quote": "Selon le serment des cinq articles (1868) : « Le savoir sera cherché dans le monde entier »",
+          "position": [
+            135.8,
+            34.99
+          ],
+          "person": "meiji"
+        },
+        {
+          "name": "Saigō Takamori",
+          "role": "Samouraï de Satsuma, négociateur de la reddition d’Edo",
+          "faction": "japonais",
+          "archetype": "general",
+          "position": [
+            135.75,
+            34.95
+          ],
+          "person": "saigo-takamori"
+        }
+      ]
+    },
+    {
+      "id": "abolition-han-1871",
+      "year": 1871,
+      "title": "L’abolition des domaines : 261 han deviennent des préfectures",
+      "type": "réforme",
+      "location": [
+        139.69,
+        35.68
+      ],
+      "zoom": 4.4,
+      "summary": "Le 29 août 1871, un décret supprime les domaines féodaux et les remplace par des préfectures dirigées par des gouverneurs nommés : l’État central contrôle enfin le territoire.",
+      "details": "Le nouveau gouvernement doit transformer des seigneuries en État. En 1869, les daimyos de Satsuma, Chōshū, Tosa et Hizen rendent spontanément leurs domaines à l’empereur (hanseki hōkan), mais le reste du pays traîne. Le 29 août 1871, un décret tranche : les **261 domaines** sont supprimés et remplacés par des **préfectures** (ken), à la tête desquelles sont nommés des gouverneurs, souvent d’anciens samouraïs réformateurs. Les anciens seigneurs reçoivent un titre de noblesse (kazoku) et l’État reprend leurs dettes.\n\nLa mesure s’accompagne d’une réforme fiscale décisive : en 1873, l’impôt foncier est calculé sur la valeur de la terre et payé en argent, non plus en riz. Pour la première fois, le gouvernement sait à l’avance ce qu’il va encaisser et peut financer une armée, des écoles et des usines. Les samouraïs, eux, voient leurs rentes réduites puis rachetées en obligations, en 1876 : beaucoup s’appauvrissent.\n\nLa même année, la **mission Iwakura** emmène la moitié du gouvernement visiter les États-Unis et l’Europe pendant près de deux ans. Officiellement pour renégocier les traités inégaux — elle échoue —, en réalité pour observer les banques, les usines, les écoles et les prisons. Au retour, les réformateurs savent ce qu’ils veulent copier, et l’abolition des domaines rend la chose possible : il n’existe plus de seigneur capable de s’opposer à une loi votée à Tokyo.",
+      "consequences": [
+        "Les 261 domaines disparaissent : le pays est découpé en préfectures (ken) et en trois villes-préfectures (fu : Tokyo, Kyōto, Osaka).",
+        "Les anciens daimyos deviennent nobles (kazoku) et reçoivent des obligations ; leurs samouraïs perdent la rente en riz en 1876.",
+        "La réforme fiscale de 1873 (chiso kaisei) fixe l’impôt foncier en argent, base du budget de l’État.",
+        "La mission Iwakura (1871-1873) envoie la moitié du gouvernement observer l’Occident pendant deux ans."
+      ],
+      "territory": "abolition-han-1871",
+      "sources": [
+        {
+          "label": "Wikipédia — Ère Meiji",
+          "url": "https://fr.wikipedia.org/wiki/Ère_Meiji"
+        },
+        {
+          "label": "Wikipédia — Restauration de Meiji",
+          "url": "https://fr.wikipedia.org/wiki/Restauration_de_Meiji"
+        },
+        {
+          "label": "Paul Akamatsu, Meiji 1868 : révolution et contre-révolution au Japon (Calmann-Lévy)"
+        }
+      ],
+      "territoryNote": "Trois grandes îles (Honshū, Kyūshū, Shikoku) et Hokkaidō (Ezo), dont la colonisation systématique commence en 1869 : Sapporo est fondée, des garnisons s’installent à Hakodate et Nemuro, les Aïnous sont repoussés vers le nord. Kouriles du sud (Kunashiri, Etorofu, Shikotan, Habomai) reconnues au Japon par le traité de 1875, en échange de la renonciation à Sakhaline. Le Ryūkyū est encore un royaume tributaire, annexé en 1879 comme préfecture d’Okinawa. Les îles Ogasawara (Bonin) sont colonisées à partir de 1876. Voisins : Chine des Qing (Taïwan, Corée), Russie (Sakhaline, Extrême-Orient), puissances occidentales dans les ports ouverts.",
+      "figures": [
+        {
+          "name": "Ōkubo Toshimichi",
+          "role": "Ministre des Finances puis de l’Intérieur, artisan de la centralisation",
+          "faction": "japonais-meiji",
+          "archetype": "reformateur",
+          "quote": "(formule libre) Un pays sans administration n’est qu’un nom sur une carte",
+          "person": "okubo-toshimichi"
+        },
+        {
+          "name": "Mutsuhito (empereur Meiji)",
+          "role": "Empereur, qui préside au démantèlement des domaines",
+          "faction": "japonais-meiji",
+          "archetype": "roi-moderne",
+          "position": [
+            139.75,
+            35.69
+          ],
+          "person": "meiji"
+        }
+      ]
+    },
+    {
+      "id": "conscription-1873",
+      "year": 1873,
+      "title": "L’« impôt du sang » : une armée nationale de conscrits",
+      "type": "réforme",
+      "location": [
+        139.7,
+        35.69
+      ],
+      "zoom": 4.3,
+      "summary": "En janvier 1873, un décret rend le service militaire obligatoire pour tous les hommes de vingt ans : le Japon se dote d’une armée nationale qui remplace les guerriers héréditaires.",
+      "details": "Jusqu’en 1873, seuls les samouraïs portent les armes, et chaque domaine entretient ses propres troupes. **Yamagata Aritomo**, revenu d’Europe convaincu par le modèle prussien, fait adopter le 10 janvier 1873 une ordonnance qui crée une **armée nationale de conscription** : tout homme de vingt ans doit servir trois ans sous les drapeaux, puis deux ans dans la réserve.\n\nLe principe est universel, l’application beaucoup moins : les soutiens de famille, les étudiants, les fonctionnaires et ceux qui paient une forte somme en sont dispensés, si bien que moins de 5 % des appelés partent réellement dans les premières années. Les paysans comprennent vite que leurs fils serviront là où les fils de samouraïs ne servaient pas : des révoltes éclatent en 1873 contre l’« impôt du sang » (chi no zei), durement réprimées.\n\nL’armée devient pourtant une école de la nation : on y apprend à lire, à obéir, à porter l’uniforme et à parler le japonais standard. Les samouraïs perdent le monopole de la violence, et c’est précisément le but. En 1877, ce sont ces conscrits, encadrés par d’anciens samouraïs, qui écrasent la rébellion de Satsuma. Une police nationale (1874) et un réseau d’écoles (1872) complètent l’édifice : le Japon s’invente des citoyens.",
+      "consequences": [
+        "Aucun changement de frontière : la réforme ne touche que les quatre grandes îles, où vivent les futurs appelés.",
+        "Les samouraïs perdent le monopole militaire ; l’armée devient l’école de la nation et l’un des piliers du régime.",
+        "Des révoltes paysannes contre l’« impôt du sang » éclatent en 1873 et sont réprimées en quelques semaines.",
+        "Conscription, école obligatoire (1872) et impôt foncier (1873) construisent ensemble l’État-nation.",
+        "L’armée de conscription écrasera la rébellion de Satsuma quatre ans plus tard."
+      ],
+      "territory": "conscription-1873",
+      "sources": [
+        {
+          "label": "Wikipédia — Armée impériale japonaise",
+          "url": "https://fr.wikipedia.org/wiki/Armée_impériale_japonaise"
+        },
+        {
+          "label": "Wikipédia — Ère Meiji",
+          "url": "https://fr.wikipedia.org/wiki/Ère_Meiji"
+        },
+        {
+          "label": "Edwin O. Reischauer, Histoire du Japon et des Japonais (Seuil)"
+        }
+      ],
+      "territoryNote": "Le territoire est celui des quatre grandes îles, désormais divisé en préfectures : aucune acquisition extérieure à cette date. Hokkaidō reste une frontière coloniale (Sapporo, Hakodate, Nemuro, mines d’Ishikari). Le Ryūkyū est toujours un royaume tributaire, Okinawa ne devient japonaise qu’en 1879. C’est sur ce territoire, et lui seul, que s’applique la conscription. Voisins : Chine des Qing, Russie impériale, Corée de Chosŏn ; concessions étrangères à Yokohama et Nagasaki.",
+      "figures": [
+        {
+          "name": "Yamagata Aritomo",
+          "role": "Fondateur de l’armée de conscription, futur maréchal",
+          "faction": "japonais-meiji",
+          "archetype": "general",
+          "quote": "(formule libre) Une armée de paysans vaut mieux qu’une caste de guerriers",
+          "person": "yamagata-aritomo"
+        },
+        {
+          "name": "Mutsuhito (empereur Meiji)",
+          "role": "Empereur, chef des armées selon la future Constitution",
+          "faction": "japonais-meiji",
+          "archetype": "roi-moderne",
+          "position": [
+            139.76,
+            35.7
+          ],
+          "person": "meiji"
+        }
+      ]
+    },
+    {
+      "id": "satsuma-1877",
+      "year": 1877,
+      "title": "Shiroyama : la dernière charge des samouraïs",
+      "type": "bataille",
+      "location": [
+        130.55,
+        31.6
+      ],
+      "zoom": 5.2,
+      "summary": "De février à septembre 1877, Saigō Takamori et les samouraïs de Satsuma se révoltent contre l’État Meiji ; écrasés à Shiroyama, ils emportent avec eux le monde des guerriers.",
+      "details": "**Saigō Takamori** est le héros de la Restauration, celui qui a négocié la reddition d’Edo. En 1873, il quitte le gouvernement après avoir perdu le débat sur une expédition en Corée, et se retire à Kagoshima, où il ouvre une école de samouraïs. Les réformes s’accélèrent : suppression des rentes (1876), interdiction du sabre, armée de conscrits. Les samouraïs de Satsuma, les plus nombreux et les plus pauvres, s’estiment trahis.\n\nEn janvier 1877, ses élèves attaquent l’arsenal de Kagoshima ; Saigō, presque malgré lui, prend la tête de 12 000 à 20 000 hommes et marche vers le nord. Les rebelles assiègent le **château de Kumamoto** du 19 février au 12 avril, sans le prendre : la garnison résiste et l’armée impériale arrive. À Tabaruzaka, pendant des semaines, conscrits et samouraïs s’entretuent dans la boue.\n\nRepoussés, les insurgés refluent vers Kagoshima. Le 24 septembre 1877, à **Shiroyama**, quelques centaines d’hommes épuisés chargent une armée impériale dix fois plus nombreuse. Saigō, blessé, meurt sur la colline — suicide rituel ou coup de grâce d’un compagnon, les récits diffèrent. Ses partisans sont tués ou capturés, et les pertes se comptent en milliers de morts de chaque côté. Réhabilité en 1889, Saigō devient la figure romantique du Japon moderne : la révolte qui tue un monde.",
+      "consequences": [
+        "Aucun changement de frontière : la révolte est intérieure, limitée à Kyūshū.",
+        "La caste des samouraïs cesse d’exister comme force armée ; leurs privilèges sont définitivement abolis.",
+        "L’armée de conscription prouve son efficacité et devient l’instrument central du régime.",
+        "Saigō, réhabilité en 1889, entre dans la légende nationale ; sa révolte nourrit le romantisme militariste."
+      ],
+      "territory": "satsuma-1877",
+      "sources": [
+        {
+          "label": "Wikipédia — Rébellion de Satsuma",
+          "url": "https://fr.wikipedia.org/wiki/Rébellion_de_Satsuma"
+        },
+        {
+          "label": "Wikipédia — Saigō Takamori",
+          "url": "https://fr.wikipedia.org/wiki/Saigō_Takamori"
+        },
+        {
+          "label": "Ivan Morris, La Noblesse de l’échec (Gallimard)"
+        }
+      ],
+      "territoryNote": "Aucun changement territorial : le Japon reste les quatre grandes îles, Okinawa (1879), les Kouriles du sud, les Ogasawara. Le théâtre est Kyūshū : Kagoshima, le château de Kumamoto, Tabaruzaka, la route de la côte ouest. La révolte ne déborde pas de l’île ; quelques sympathisants s’agitent à Tosa et dans le nord de Kyūshū, sans suite. Voisins inchangés : Chine des Qing, Russie, Corée ; les traités inégaux avec l’Occident ne sont pas encore révisés.",
+      "battle": {
+        "belligerents": [
+          "Armée impériale japonaise",
+          "Samouraïs de Satsuma"
+        ],
+        "commanders": [
+          "Yamagata Aritomo",
+          "Kuroda Kiyotaka",
+          "Saigō Takamori"
+        ],
+        "outcome": "Victoire impériale ; mort de Saigō Takamori à Shiroyama",
+        "forces": "Impériaux : environ 60 000 hommes mobilisés au total ; Satsuma : 12 000 à 20 000",
+        "losses": "Plusieurs milliers de morts de chaque côté ; les samouraïs de Satsuma sont anéantis"
+      },
+      "armies": [
+        {
+          "id": "armee-imperiale-satsuma",
+          "side": "Armée impériale",
+          "from": "Kumamoto",
+          "faction": "japonais-meiji",
+          "path": [
+            [
+              130.7,
+              32.8
+            ],
+            [
+              130.62,
+              32.35
+            ],
+            [
+              130.55,
+              31.95
+            ],
+            [
+              130.55,
+              31.6
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "id": "armee-satsuma",
+          "side": "Samouraïs de Satsuma",
+          "from": "Kagoshima",
+          "faction": "japonais",
+          "path": [
+            [
+              130.55,
+              31.6
+            ],
+            [
+              130.6,
+              32.2
+            ],
+            [
+              130.68,
+              32.75
+            ],
+            [
+              130.72,
+              32.55
+            ],
+            [
+              130.62,
+              32
+            ],
+            [
+              130.55,
+              31.6
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Saigō Takamori",
+          "role": "Chef de la rébellion de Satsuma",
+          "faction": "japonais",
+          "archetype": "general",
+          "quote": "(formule libre) On ne réforme pas un pays en oubliant ceux qui l’ont fait",
+          "position": [
+            130.56,
+            31.61
+          ],
+          "person": "saigo-takamori"
+        },
+        {
+          "name": "Yamagata Aritomo",
+          "role": "Commandant de l’armée impériale à Shiroyama",
+          "faction": "japonais-meiji",
+          "archetype": "general",
+          "position": [
+            130.53,
+            31.59
+          ],
+          "person": "yamagata-aritomo"
+        }
+      ]
+    },
+    {
+      "id": "constitution-meiji-1889",
+      "year": 1889,
+      "title": "La Constitution Meiji : un empereur sacré, une Diète élue",
+      "type": "politique",
+      "location": [
+        139.7,
+        35.68
+      ],
+      "zoom": 4.3,
+      "summary": "Promulguée le 11 février 1889, la Constitution donne au Japon une Diète, des tribunaux et un État de droit — tout en plaçant l’empereur au-dessus de la loi.",
+      "details": "**Itō Hirobumi** a passé un an en Europe, surtout à Berlin et à Vienne, pour étudier les constitutions. Il en revient avec un modèle : la Prusse, où le souverain garde l’essentiel du pouvoir et où le parlement discute le budget sans gouverner. Le texte est rédigé dans le plus grand secret, puis promulgué le **11 février 1889** en grande pompe, devant l’empereur en uniforme.\n\nLa Constitution crée une **Diète** à deux chambres : une Chambre des pairs, noblesse et notables nommés, et une Chambre des représentants élue. Elle garantit les libertés — parole, presse, réunion, religion — mais « dans les limites de la loi », ce qui laisse au gouvernement les mains libres pour les restreindre. Surtout, l’article 1 fait de l’empereur un souverain « sacré et inviolable », et l’article 11 lui donne le commandement direct de l’armée et de la marine : les militaires ne répondent plus au cabinet.\n\nLes élections de juillet 1890 n’accordent le vote qu’aux hommes payant quinze yens d’impôt, soit environ 1 % de la population. Le suffrage s’élargit en 1925 au suffrage masculin universel. Cette constitution, taillée pour un pays encore agraire, tiendra jusqu’en 1947 — et servira aussi, dans les années 1930, à légitimer l’armée contre le gouvernement.",
+      "consequences": [
+        "Aucun changement territorial : le texte s’applique au Japon, à Okinawa et aux Kouriles, pas encore à des colonies.",
+        "Le Japon se dote d’un Parlement, d’une hiérarchie judiciaire et, en 1898, d’un code civil.",
+        "L’empereur reste chef direct de l’armée : les militaires échappent au cabinet, faille exploitée dans les années 1930.",
+        "Le droit de vote, réservé aux hommes les plus imposés, ne concerne que 1 % de la population ; il s’élargit en 1925.",
+        "La Constitution de 1889 reste en vigueur jusqu’à celle de 1947, qui abolit l’empire."
+      ],
+      "territory": "constitution-meiji-1889",
+      "sources": [
+        {
+          "label": "Wikipédia — Constitution de l'empire du Japon",
+          "url": "https://fr.wikipedia.org/wiki/Constitution_de_l'empire_du_Japon"
+        },
+        {
+          "label": "Wikipédia — Itō Hirobumi",
+          "url": "https://fr.wikipedia.org/wiki/Itō_Hirobumi"
+        },
+        {
+          "label": "Edwin O. Reischauer, Histoire du Japon et des Japonais (Seuil)"
+        }
+      ],
+      "territoryNote": "Rien de nouveau sur la carte : Japon, Hokkaidō, Kouriles du sud, Okinawa (préfecture depuis 1879), Ogasawara et îles Izu administrées depuis Tokyo. Les traités inégaux restent en vigueur jusqu’en 1894-1899, et les étrangers gardent leurs tribunaux consulaires dans les ports ouverts. Voisins : Chine des Qing (qui conteste toujours l’annexion du Ryūkyū), Russie impériale (chemins de fer de Mandchourie en construction), Corée de Chosŏn, puissances occidentales.",
+      "figures": [
+        {
+          "name": "Itō Hirobumi",
+          "role": "Rédacteur de la Constitution, premier président du Conseil",
+          "faction": "japonais-meiji",
+          "archetype": "reformateur",
+          "quote": "(formule libre) Une constitution n’est pas un cadeau, c’est une armature",
+          "person": "ito-hirobumi"
+        },
+        {
+          "name": "Mutsuhito (empereur Meiji)",
+          "role": "Empereur, promulguant la charte le 11 février 1889",
+          "faction": "japonais-meiji",
+          "archetype": "roi-moderne",
+          "position": [
+            139.75,
+            35.685
+          ],
+          "person": "meiji"
+        }
+      ]
+    },
+    {
+      "id": "sino-japonaise-1894",
+      "year": 1894,
+      "title": "Le Yalu : la Chine battue sur mer et sur terre",
+      "type": "bataille",
+      "location": [
+        124.35,
+        39.85
+      ],
+      "zoom": 4.7,
+      "summary": "En 1894, la guerre éclate avec la Chine des Qing pour le contrôle de la Corée ; à l’embouchure du Yalu, la flotte japonaise impose sa vitesse et ses canons à la flotte de Beiyang.",
+      "details": "Depuis 1876, le Japon impose à la Corée, royaume vassal de la Chine, un traité qui ouvre trois ports : la rivalité avec Pékin devient frontale. En 1894, une révolte paysanne (donghak) embrase la péninsule ; la Chine et le Japon y envoient des troupes et se retrouvent face à face. Le 25 juillet, sans déclaration de guerre, la marine japonaise coule un transporteur chinois à Pungdo. Le 1er août, la guerre est officielle.\n\nL’armée japonaise, entraînée à l’européenne et équipée de fusils à répétition, bat les troupes chinoises à Seonghwan, puis prend **Pyongyang** le 16 septembre. Le lendemain, à l’embouchure du **Yalu**, la flotte de l’amiral Itō Sukeyuki affronte la flotte de Beiyang de l’amiral Ding Ruchang : les Japonais, plus rapides, coulent plusieurs navires et mettent en fuite les deux cuirassés achetés à l’Allemagne. Le prestige de l’empire Qing s’effondre.\n\nLa suite est une promenade militaire : Port-Arthur pris en novembre, Weihaiwei assiégé et la flotte de Beiyang détruite en février 1895. Le **traité de Shimonoseki**, signé le 17 avril 1895, donne au Japon Taïwan, les Pescadores et le Liaodong, avec une indemnité de 200 millions de taels. Mais la Russie, l’Allemagne et la France imposent la restitution du Liaodong : le Japon garde la leçon, et la rancune.",
+      "consequences": [
+        "La Chine cède Taïwan et les Pescadores ; le Liaodong, d’abord cédé, est restitué sous pression de la Russie, de l’Allemagne et de la France.",
+        "La Corée passe de la suzeraineté chinoise à l’orbite japonaise (traité de Shimonoseki, 1895).",
+        "L’indemnité de 200 millions de taels finance la marine, les chemins de fer et l’industrie lourde.",
+        "L’humiliation chinoise nourrit le nationalisme et prépare, à terme, la révolution de 1911."
+      ],
+      "territory": "sino-japonaise-1894",
+      "sources": [
+        {
+          "label": "Wikipédia — Première guerre sino-japonaise",
+          "url": "https://fr.wikipedia.org/wiki/Première_guerre_sino-japonaise"
+        },
+        {
+          "label": "Wikipédia — Traité de Shimonoseki",
+          "url": "https://fr.wikipedia.org/wiki/Traité_de_Shimonoseki"
+        },
+        {
+          "label": "Jean-François Huchet, Une histoire de la Chine contemporaine (La Découverte)"
+        }
+      ],
+      "territoryNote": "Après Shimonoseki (1895) : Taïwan et les Pescadores annexés, conquête achevée en octobre 1895 ; le Liaodong (Port-Arthur) est cédé puis restitué à la Chine. La Corée, indépendante en droit, passe sous influence japonaise. Le Japon garde Okinawa, les Kouriles, Hokkaidō et les Ogasawara. Voisins : Russie (qui loue le Liaodong en 1898), Chine des Qing, Allemagne (Qingdao), France (Indochine), Royaume-Uni (Hong Kong, Weihaiwei).",
+      "battle": {
+        "belligerents": [
+          "Empire du Japon (flotte combinée)",
+          "Empire Qing (flotte de Beiyang)"
+        ],
+        "commanders": [
+          "Itō Sukeyuki",
+          "Tsuboi Kōzō",
+          "Ding Ruchang"
+        ],
+        "outcome": "Victoire japonaise ; la flotte de Beiyang se replie sur Weihaiwei",
+        "forces": "Japonais : 12 navires, dont un cuirassé et des croiseurs rapides ; Qing : 14 navires, dont 2 cuirassés",
+        "losses": "Chine : 5 navires coulés, plusieurs centaines de morts ; Japon : 4 navires endommagés, une centaine de morts"
+      },
+      "armies": [
+        {
+          "id": "flotte-combinee-1894",
+          "side": "Flotte combinée japonaise",
+          "from": "Sasebo",
+          "faction": "japonais-meiji",
+          "path": [
+            [
+              129.72,
+              33.18
+            ],
+            [
+              126.5,
+              34.6
+            ],
+            [
+              125.2,
+              37.5
+            ],
+            [
+              124.35,
+              39.85
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "id": "flotte-beiyang",
+          "side": "Flotte de Beiyang",
+          "from": "Weihaiwei",
+          "faction": "chinois-xxe",
+          "path": [
+            [
+              122.12,
+              37.5
+            ],
+            [
+              123.6,
+              38.4
+            ],
+            [
+              124.35,
+              39.85
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Ōyama Iwao",
+          "role": "Général, commandant de la 2e armée devant Port-Arthur",
+          "faction": "japonais-meiji",
+          "archetype": "general",
+          "position": [
+            124.3,
+            39.83
+          ]
+        },
+        {
+          "name": "Li Hongzhang",
+          "role": "Vice-roi du Zhili, négociateur du traité de Shimonoseki",
+          "faction": "chinois-xxe",
+          "archetype": "diplomate",
+          "position": [
+            124.4,
+            39.87
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alliance-anglaise-1902",
+      "year": 1902,
+      "title": "L’alliance anglaise : entrer dans le club des grandes puissances",
+      "type": "traité",
+      "location": [
+        -0.13,
+        51.51
+      ],
+      "zoom": 4.2,
+      "summary": "Signée à Londres le 30 janvier 1902, l’alliance avec la Grande-Bretagne reconnaît le Japon comme une puissance de premier rang et le protège de la Russie.",
+      "details": "En 1900, la révolte des Boxers montre la faiblesse de la Chine, et la Russie profite de l’occasion pour occuper toute la Mandchourie. Le Japon, qui voit dans la Corée sa zone d’influence naturelle, cherche un appui : ce sera la Grande-Bretagne, première marine du monde, inquiète de l’avancée russe vers l’Inde et la Chine.\n\nLes négociations sont menées à Londres par **Hayashi Tadasu** et le ministre des Affaires étrangères britannique, Lord Lansdowne. Le **30 janvier 1902**, les deux pays signent une alliance défensive : si l’un est attaqué par une seule puissance, l’autre reste neutre ; si un allié de l’agresseur entre en guerre, le partenaire intervient militairement. Chacun se voit reconnaître des intérêts « particuliers » : la Corée pour le Japon, la Chine pour la Grande-Bretagne.\n\nPour Tokyo, c’est une promotion diplomatique : pour la première fois, une puissance asiatique traite d’égal à égal avec une grande puissance européenne, sans clause d’extériorité. L’alliance est renouvelée en 1905, après la victoire sur la Russie, puis en 1911. Elle se délite après 1918 et s’éteint en 1923. Le Japon, qui s’était appuyé sur la Royal Navy, se retrouve alors seul face aux États-Unis.",
+      "consequences": [
+        "Aucun gain territorial immédiat, mais la Corée entre dans la sphère d’influence reconnue du Japon.",
+        "Le Japon n’a plus à craindre une coalition européenne s’il affronte seul la Russie.",
+        "Renouvelée en 1905 et 1911, l’alliance fait du Japon l’allié de la première marine du monde.",
+        "Elle s’éteint en 1923 : le Japon se retrouve isolé, prélude au rapprochement avec l’Allemagne."
+      ],
+      "territory": "alliance-anglaise-1902",
+      "sources": [
+        {
+          "label": "Wikipédia — Alliance anglo-japonaise",
+          "url": "https://fr.wikipedia.org/wiki/Alliance_anglo-japonaise"
+        },
+        {
+          "label": "Wikipédia — Guerre russo-japonaise",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_russo-japonaise"
+        },
+        {
+          "label": "Ian Nish, The Anglo-Japanese Alliance (Athlone Press)"
+        }
+      ],
+      "territoryNote": "Statut inchangé sur le terrain : Japon, Okinawa, Taïwan et Pescadores, Kouriles, Hokkaidō, Ogasawara. La Corée reste un empire nominalement indépendant, mais les conseillers japonais contrôlent ses finances et sa police. La Mandchourie est disputée entre la Russie (chemin de fer de l’Est chinois, Port-Arthur) et le Japon (concessions ferroviaires). Allié : Royaume-Uni. Rivaux : Russie (Mandchourie, Corée), Chine des Qing, France et Allemagne (partenaires de la Russie).",
+      "figures": [
+        {
+          "name": "Hayashi Tadasu",
+          "role": "Ministre du Japon à Londres, signataire de l’alliance",
+          "faction": "japonais-meiji",
+          "archetype": "diplomate",
+          "quote": "(formule libre) Le Japon ne demande qu’une chose : qu’on le traite en égal",
+          "position": [
+            -0.12,
+            51.5
+          ]
+        },
+        {
+          "name": "Lord Lansdowne",
+          "role": "Ministre des Affaires étrangères britannique",
+          "faction": "britanniques",
+          "archetype": "diplomate",
+          "position": [
+            -0.14,
+            51.52
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tsushima-1905",
+      "year": 1905,
+      "title": "Tsushima : la flotte russe anéantie",
+      "type": "bataille",
+      "location": [
+        129.3,
+        34.4
+      ],
+      "zoom": 4.2,
+      "summary": "Les 27 et 28 mai 1905, la flotte japonaise de l’amiral Tōgō détruit presque toute l’escadre russe de la Baltique dans le détroit de Tsushima : le Japon gagne la guerre.",
+      "details": "En février 1904, sans déclaration de guerre, la flotte japonaise attaque par surprise les navires russes à **Port-Arthur**, la base que la Russie loue à la Chine depuis 1898. La guerre russo-japonaise oppose deux empires qui se disputent la Mandchourie et la Corée. Les Japonais assiègent Port-Arthur pendant près d’un an : la forteresse capitule en janvier 1905, après des assauts meurtriers.\n\nLa Russie envoie alors sa flotte de la **Baltique**, rebaptisée deuxième escadre du Pacifique, sous les ordres de l’amiral Rojestvenski. Elle met sept mois à contourner l’Afrique et à traverser l’océan Indien, soit plus de 30 000 kilomètres, pour rejoindre Vladivostok. Il lui faut passer par le détroit de **Tsushima**, entre le Japon et la Corée, où l’attend l’amiral **Tōgō Heihachirō**, avec des navires plus rapides et des équipages mieux entraînés.\n\nLes 27 et 28 mai 1905, la flotte russe est anéantie : sur 38 navires, 21 sont coulés et 7 capturés ; seuls trois atteignent Vladivostok. Tōgō hisse le signal resté célèbre : « Le sort de l’Empire dépend de cette bataille. » Le traité de **Portsmouth**, négocié par Theodore Roosevelt en septembre 1905, donne au Japon le sud de Sakhaline et le Liaodong. C’est la première fois qu’une puissance asiatique bat une puissance européenne.",
+      "consequences": [
+        "Le Japon obtient le sud de Sakhaline, le Liaodong et la zone du chemin de fer de Mandchourie du Sud.",
+        "La Corée devient protectorat japonais en novembre 1905, sa diplomatie supprimée.",
+        "Le Japon entre dans le rang des grandes puissances ; l’Asie découvre qu’un pays non européen peut vaincre l’Occident.",
+        "En Russie, la défaite aggravée par le Dimanche rouge précipite la révolution de 1905 et la Douma."
+      ],
+      "territory": "tsushima-1905",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Tsushima",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Tsushima"
+        },
+        {
+          "label": "Wikipédia — Guerre russo-japonaise",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_russo-japonaise"
+        },
+        {
+          "label": "Marc Ferro, Nicolas II (Payot)"
+        }
+      ],
+      "territoryNote": "Après Portsmouth : sud de Sakhaline (au sud du 50e parallèle), Kouriles entières, Taïwan et Pescadores, Okinawa, Ogasawara. Sur le continent : concession du Guandong (Port-Arthur, Dalian) louée à la Chine et zone du chemin de fer de Mandchourie du Sud, gardée par l’armée du Guandong. La Corée devient protectorat (novembre 1905) : résident général à Séoul. Rivaux : Russie (nord de Sakhaline, Mandchourie du Nord), Chine des Qing, puissances qui refusent l’annexion de la Corée.",
+      "battle": {
+        "belligerents": [
+          "Empire russe (2ᵉ et 3ᵉ escadres du Pacifique)",
+          "Empire du Japon (flotte combinée)"
+        ],
+        "commanders": [
+          "Zinovi Rojestvenski",
+          "Heihachiro Togo"
+        ],
+        "outcome": "Victoire japonaise écrasante ; la flotte russe de la Baltique est détruite",
+        "forces": "Russes : 38 navires dont 8 cuirassés ; Japonais : 89 navires dont 4 cuirassés, plus rapides et mieux armés",
+        "losses": "Russes : 21 navires coulés, 7 capturés, 6 internés, environ 4 500 morts ; Japonais : 3 torpilleurs, 117 morts"
+      },
+      "armies": [
+        {
+          "side": "Escadre russe de la Baltique",
+          "from": "Cam Ranh",
+          "faction": "russes-modernes",
+          "path": [
+            [
+              109.2,
+              11.9
+            ],
+            [
+              113,
+              17
+            ],
+            [
+              119,
+              23
+            ],
+            [
+              123,
+              28.5
+            ],
+            [
+              129.3,
+              34.4
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "side": "Flotte japonaise de Togo",
+          "from": "Chinhae",
+          "faction": "japonais-meiji",
+          "path": [
+            [
+              128.6,
+              35
+            ],
+            [
+              129.3,
+              34.4
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Tōgō Heihachirō",
+          "role": "Amiral, vainqueur de Tsushima",
+          "faction": "japonais-meiji",
+          "archetype": "amiral",
+          "quote": "(formule libre) Le sort de l’Empire dépend de cette bataille",
+          "position": [
+            129.4,
+            34.45
+          ],
+          "person": "togo-heihachiro"
+        },
+        {
+          "name": "Zinovi Rojestvenski",
+          "role": "Amiral russe, blessé et capturé",
+          "faction": "russes-modernes",
+          "archetype": "amiral",
+          "position": [
+            129.2,
+            34.35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "annexion-coree-1910",
+      "year": 1910,
+      "title": "L’annexion de la Corée : une colonie de plus",
+      "type": "traité",
+      "location": [
+        126.98,
+        37.57
+      ],
+      "zoom": 4.4,
+      "summary": "Le 22 août 1910, le traité d’annexion supprime l’Empire coréen ; le Japon gouverne la péninsule pendant trente-cinq ans.",
+      "details": "La Corée, royaume de Chosŏn devenu empire en 1897, est depuis 1876 sous influence japonaise croissante. Après la victoire de 1905, le Japon y installe un résident général, Itō Hirobumi, et lui retire sa diplomatie. En 1907, l’empereur Kojong envoie en secret une délégation à La Haye pour dénoncer le protectorat : humilié, le Japon le force à abdiquer et dissout l’armée coréenne.\n\nLe 22 août 1910, le **traité d’annexion** est signé à Séoul par le général Terauchi Masatake et le ministre coréen Yi Wan-yong ; il entre en vigueur le 29 août. L’Empire coréen disparaît, la péninsule devient la colonie de **Chōsen**, gouvernée par un gouverneur général militaire qui rend compte directement à l’empereur, pas au parlement japonais.\n\nLa colonisation est brutale : cadastre foncier qui exproprie une partie des paysans, langue et histoire coréennes interdites à l’école, répression policière. Le 1er mars 1919, des centaines de milliers de Coréens manifestent pour l’indépendance ; la répression fait des milliers de morts et des dizaines de milliers d’arrestations. Tokyo assouplit ensuite un peu sa politique, sans renoncer à la colonie. Trente-cinq ans de domination laisseront des traces durables entre les deux pays.",
+      "consequences": [
+        "L’Empire coréen disparaît : la péninsule devient la colonie de Chōsen, dirigée par un gouverneur général militaire.",
+        "Le Japon contrôle la porte du continent et y installe une administration coloniale, des colons et des garnisons.",
+        "Le mouvement du 1er mars 1919, écrasé, devient le mythe fondateur du nationalisme coréen.",
+        "Le Japon est désormais voisin immédiat de la Chine et de la Russie sur le continent."
+      ],
+      "territory": "annexion-coree-1910",
+      "sources": [
+        {
+          "label": "Wikipédia — Corée pendant la colonisation japonaise",
+          "url": "https://fr.wikipedia.org/wiki/Corée_pendant_la_colonisation_japonaise"
+        },
+        {
+          "label": "Wikipédia — Empire du Japon",
+          "url": "https://fr.wikipedia.org/wiki/Empire_du_Japon"
+        },
+        {
+          "label": "Pascal Dayez-Burgeon, Histoire de la Corée (Tallandier)"
+        }
+      ],
+      "territoryNote": "Corée annexée (Chōsen), gouvernée par un gouverneur général militaire ; Taïwan, Pescadores, Okinawa, Kouriles, Sakhaline du Sud, Hokkaidō, archipel principal. Concession du Guandong (Port-Arthur, Dalian) et chemin de fer de Mandchourie du Sud, avec garnison. Rivaux : Chine des Qing puis république (1912), Russie impériale, mouvement indépendantiste coréen en exil (Shanghai, 1919).",
+      "figures": [
+        {
+          "name": "Terauchi Masatake",
+          "role": "Premier gouverneur général de Corée",
+          "faction": "japonais-meiji",
+          "archetype": "militaire-xxe",
+          "quote": "(formule libre) La péninsule sera gouvernée par la loi japonaise, sans exception",
+          "position": [
+            126.97,
+            37.56
+          ]
+        },
+        {
+          "name": "Mutsuhito (empereur Meiji)",
+          "role": "Empereur au moment de l’annexion",
+          "faction": "japonais-meiji",
+          "archetype": "roi-moderne",
+          "position": [
+            126.99,
+            37.58
+          ],
+          "person": "meiji"
+        }
+      ]
+    },
+    {
+      "id": "tsingtao-1914",
+      "year": 1914,
+      "title": "Tsingtao : le Japon entre dans la Grande Guerre",
+      "type": "bataille",
+      "location": [
+        120.38,
+        36.07
+      ],
+      "zoom": 4.6,
+      "summary": "En août 1914, le Japon déclare la guerre à l’Allemagne et assiège sa concession de Tsingtao, en Chine, avec l’aide des Britanniques ; il en tire les « 21 demandes ».",
+      "details": "Le 15 août 1914, le Japon adresse un ultimatum à l’Allemagne : lui livrer sa concession de **Tsingtao**, sur la côte chinoise du Shandong, et ses îles du Pacifique. La réponse se fait attendre ; la guerre est déclarée le 23 août. Tokyo invoque l’alliance anglaise, mais Londres se méfie d’un allié trop empressé : le Japon veut sa part du gâteau colonial.\n\nLe **siège de Tsingtao** dure de la fin septembre au 7 novembre 1914. Environ 23 000 soldats japonais, appuyés par 1 500 Britanniques, attaquent une garnison allemande de 3 600 hommes retranchée derrière des forts modernes. Les Japonais débarquent des canons lourds, bombardent la ville, utilisent des hydravions embarqués — l’une des premières missions aéronavales de l’histoire — et prennent les forts un à un. La capitulation livre au Japon la concession et son port.\n\nEn janvier 1915, Tokyo présente à la Chine les **21 demandes**, dont l’extension de son influence en Mandchourie et en Mongolie intérieure. Pékin cède en mai, sous ultimatum, ce qui déclenche une vague de protestations nationalistes. À la fin de la guerre, le Japon siège parmi les vainqueurs et administre les îles allemandes du Pacifique : il est devenu, aux yeux de la Chine, une puissance impérialiste comme les autres.",
+      "consequences": [
+        "Le Japon occupe le Shandong allemand et les îles allemandes du Pacifique (Mariannes, Carolines, Marshall).",
+        "Les « 21 demandes » de 1915 humilient la Chine et nourrissent le mouvement du 4 mai 1919.",
+        "Le Japon siège parmi les vainqueurs à Versailles et obtient un siège permanent au Conseil de la SDN.",
+        "La propagande présente la guerre comme une aide aux Alliés ; la Chine y voit un nouvel impérialisme."
+      ],
+      "territory": "tsingtao-1914",
+      "sources": [
+        {
+          "label": "Wikipédia — Siège de Tsingtao",
+          "url": "https://fr.wikipedia.org/wiki/Siège_de_Tsingtao"
+        },
+        {
+          "label": "Wikipédia — Première Guerre mondiale",
+          "url": "https://fr.wikipedia.org/wiki/Première_Guerre_mondiale"
+        },
+        {
+          "label": "Jean-Jacques Becker, La Grande Guerre (PUF)"
+        }
+      ],
+      "territoryNote": "S’ajoutent, occupés mais non annexés : le Shandong allemand (Tsingtao, chemin de fer de Qingdao à Jinan) et les îles allemandes du Pacifique au nord de l’équateur (Mariannes, Carolines, Marshall), prises en octobre 1914. Le reste : Japon, Corée, Taïwan, Sakhaline du Sud, Kouriles, Guandong, Ogasawara. Rivaux : Chine (qui réclame le Shandong), Allemagne (vaincue en Asie), Royaume-Uni (allié méfiant), États-Unis.",
+      "battle": {
+        "belligerents": [
+          "Empire du Japon (avec un contingent britannique)",
+          "Empire allemand (garnison de Kiautschou)"
+        ],
+        "commanders": [
+          "Kamio Mitsuomi",
+          "Alfred Meyer-Waldeck"
+        ],
+        "outcome": "Capitulation allemande le 7 novembre 1914",
+        "forces": "Japonais : environ 23 000 hommes et une flotte ; Allemands : environ 3 600 hommes, plus quelques Austro-Hongrois",
+        "losses": "Environ 700 morts japonais, 200 allemands ; les défenseurs capitulent et sont internés"
+      },
+      "armies": [
+        {
+          "id": "corps-tsingtao",
+          "side": "Corps expéditionnaire japonais",
+          "from": "Ujina (Hiroshima)",
+          "faction": "japonais-meiji",
+          "path": [
+            [
+              132.5,
+              34.35
+            ],
+            [
+              126,
+              34.2
+            ],
+            [
+              122.6,
+              35.4
+            ],
+            [
+              120.38,
+              36.07
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "id": "garnison-kiautschou",
+          "side": "Garnison de Kiautschou",
+          "from": "Tsingtao",
+          "faction": "allemands-1914",
+          "path": [
+            [
+              120.47,
+              36.12
+            ],
+            [
+              120.43,
+              36.1
+            ],
+            [
+              120.38,
+              36.07
+            ]
+          ],
+          "strength": 1
+        }
+      ],
+      "figures": [
+        {
+          "name": "Kamio Mitsuomi",
+          "role": "Général commandant le corps expéditionnaire de Tsingtao",
+          "faction": "japonais-meiji",
+          "archetype": "militaire-xxe",
+          "position": [
+            120.39,
+            36.08
+          ]
+        },
+        {
+          "name": "Alfred Meyer-Waldeck",
+          "role": "Gouverneur allemand de Kiautschou, capitulé en 1914",
+          "faction": "allemands-1914",
+          "archetype": "militaire-xxe",
+          "position": [
+            120.37,
+            36.06
+          ]
+        }
+      ]
+    },
+    {
+      "id": "versailles-1919",
+      "year": 1919,
+      "title": "Versailles : le Japon parmi les cinq grands",
+      "type": "traité",
+      "location": [
+        2.13,
+        48.8
+      ],
+      "zoom": 4.4,
+      "summary": "En 1919, le Japon siège à Versailles avec les vainqueurs ; il obtient les mandats du Pacifique mais échoue à faire inscrire l’égalité des races.",
+      "details": "En 1919, le Japon est l’un des cinq vainqueurs invités à négocier le traité de **Versailles**, avec les États-Unis, la Grande-Bretagne, la France et l’Italie. Sa délégation, conduite par Saionji Kinmochi et Makino Nobuaki, arrive avec deux objectifs : faire reconnaître ses conquêtes de 1914 et obtenir l’égalité des races.\n\nSur le premier point, elle gagne à moitié : le Japon hérite des droits allemands au Shandong, ce qui provoque en Chine le mouvement du 4 mai. Les anciennes îles allemandes du Pacifique — Mariannes, Carolines, Marshall — lui sont confiées comme **mandats de classe C**, c’est-à-dire administrées comme des colonies. Le Shandong, lui, devra être rendu à la Chine en 1922, sous la pression américaine.\n\nSur le second point, elle échoue. La clause d’égalité des races, proposée en février, est repoussée par l’Australie, la Californie et Woodrow Wilson, qui invoque l’unanimité. L’humiliation est vivement ressentie au Japon et servira longtemps la propagande anti-occidentale.\n\nLe Japon entre à la **Société des Nations** avec un siège permanent au Conseil. Mais la conférence navale de Washington (1922) le contraint à un tonnage inférieur à celui des États-Unis et de la Grande-Bretagne : sa puissance militaire est désormais encadrée.",
+      "consequences": [
+        "Le Japon administre les Mariannes, les Carolines et les Marshall sous mandat de la SDN (classe C).",
+        "Le Shandong, occupé depuis 1914, doit être rendu à la Chine en 1922.",
+        "Le refus de la clause d’égalité des races blesse l’opinion japonaise et nourrit le discours anti-occidental.",
+        "Le traité naval de Washington (1922) limite la marine japonaise à 60 % du tonnage américain."
+      ],
+      "territory": "versailles-1919",
+      "sources": [
+        {
+          "label": "Wikipédia — Traité de Versailles",
+          "url": "https://fr.wikipedia.org/wiki/Traité_de_Versailles"
+        },
+        {
+          "label": "Wikipédia — Société des Nations",
+          "url": "https://fr.wikipedia.org/wiki/Société_des_Nations"
+        },
+        {
+          "label": "Margaret MacMillan, Les Artisans de la paix (Les Belles Lettres)"
+        }
+      ],
+      "territoryNote": "Mandats de classe C sur les Mariannes, les Carolines et les Marshall, administrées par la marine japonaise depuis Truk ; le Shandong occupé doit être rendu en 1922 ; la concession du Guandong et le chemin de fer de Mandchourie du Sud restent japonais ; Corée, Taïwan, Sakhaline du Sud, Kouriles. Le Japon intervient en Sibérie (1918-1922) sans annexer. Membre de la SDN. Rivaux : Chine, URSS (1922), États-Unis (question navale), mouvement coréen du 1er mars.",
+      "figures": [
+        {
+          "name": "Saionji Kinmochi",
+          "role": "Chef de la délégation japonaise à la conférence de la paix",
+          "faction": "japonais-meiji",
+          "archetype": "diplomate",
+          "quote": "(formule libre) Nous ne demandons pas la primauté, seulement l’égalité",
+          "position": [
+            2.12,
+            48.81
+          ]
+        },
+        {
+          "name": "Makino Nobuaki",
+          "role": "Diplomate, porte-parole de la clause d’égalité des races",
+          "faction": "japonais-meiji",
+          "archetype": "diplomate",
+          "position": [
+            2.14,
+            48.79
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mandchourie-1931",
+      "year": 1931,
+      "title": "Mukden : l’armée japonaise fabrique un prétexte",
+      "type": "politique",
+      "location": [
+        123.43,
+        41.8
+      ],
+      "zoom": 4.5,
+      "summary": "Le 18 septembre 1931, des officiers de l’armée du Guandong font sauter la voie ferrée près de Mukden et accusent les Chinois ; en quelques mois, ils occupent toute la Mandchourie.",
+      "details": "Le 18 septembre 1931, vers 22 heures, une charge explose sur la voie du chemin de fer de Mandchourie du Sud, près du lac Liutiao, au nord de **Mukden** (aujourd’hui Shenyang). Les dégâts sont minimes et aucun train n’est touché, mais l’armée du Guandong — la garnison japonaise qui garde la voie — accuse des soldats chinois et attaque aussitôt. L’attentat a été organisé par des officiers de l’état-major, notamment Ishiwara Kanji et Itagaki Seishirō, sans ordre de Tokyo.\n\nEn quelques mois, l’armée occupe toute la Mandchourie, malgré les instructions prudentes du gouvernement civil, dépassé. Le 1er mars 1932, elle proclame l’État du **Mandchoukouo**, avec à sa tête Puyi, le dernier empereur Qing, détrôné en 1912 : un État vassal, dont le Japon contrôle l’armée, la police et l’économie.\n\nLa Société des Nations envoie une commission, dirigée par Lord Lytton, qui conclut à une agression et refuse de reconnaître le nouvel État. Le Japon quitte l’organisation en mars 1933. Le premier ministre Inukai Tsuyoshi est assassiné en mai 1932 par de jeunes officiers de marine : à partir de là, les gouvernements japonais n’osent plus contrôler l’armée. La guerre avec la Chine devient une question de temps.",
+      "consequences": [
+        "La Mandchourie est occupée, puis transformée en État vassal, le Mandchoukouo, en mars 1932 ; le Jehol est pris en 1933.",
+        "Le Japon quitte la Société des Nations en 1933 : première rupture ouverte avec l’ordre international.",
+        "L’armée du Guandong échappe au contrôle du gouvernement civil ; la politique étrangère passe aux militaires.",
+        "La Chine porte plainte à Genève sans obtenir de sanctions ; la guerre totale devient inévitable."
+      ],
+      "territory": "mandchourie-1931",
+      "sources": [
+        {
+          "label": "Wikipédia — Incident de Mukden",
+          "url": "https://fr.wikipedia.org/wiki/Incident_de_Mukden"
+        },
+        {
+          "label": "Wikipédia — Mandchoukouo",
+          "url": "https://fr.wikipedia.org/wiki/Mandchoukouo"
+        },
+        {
+          "label": "Saburō Ienaga, The Pacific War, 1931-1945 (Pantheon)"
+        }
+      ],
+      "territoryNote": "Mandchourie occupée à partir de septembre 1931, puis État vassal du Mandchoukouo (mars 1932) couvrant les provinces du Nord-Est chinois ; Jehol occupé en 1933. Le reste : Corée, Taïwan, Guandong, Mandchourie du Sud, Kouriles, Sakhaline du Sud, mandats du Pacifique. Rivaux : Chine de Nankin (Chiang Kai-shek), URSS (frontière de Mandchourie), États-Unis et SDN (non-reconnaissance, refus de reconnaître le Mandchoukouo).",
+      "figures": [
+        {
+          "name": "Ishiwara Kanji",
+          "role": "Officier de l’armée du Guandong, organisateur de l’incident",
+          "faction": "japonais-xxe",
+          "archetype": "militaire-xxe",
+          "quote": "(formule libre) La Mandchourie est le poumon du Japon",
+          "position": [
+            123.44,
+            41.81
+          ]
+        },
+        {
+          "name": "Puyi",
+          "role": "Dernier empereur Qing, placé à la tête du Mandchoukouo",
+          "faction": "chinois-xxe",
+          "archetype": "empereur-chinois",
+          "position": [
+            123.42,
+            41.79
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chine-1937",
+      "year": 1937,
+      "title": "Shanghai et Nankin : la guerre totale",
+      "type": "bataille",
+      "location": [
+        121.47,
+        31.23
+      ],
+      "zoom": 4.5,
+      "summary": "En juillet 1937, un incident près de Pékin déclenche la guerre totale ; après trois mois de bataille à Shanghai, l’armée japonaise prend Nankin et y commet un massacre.",
+      "details": "Le 7 juillet 1937, une fusillade éclate près du **pont Marco-Polo**, à l’ouest de Pékin, entre soldats chinois et Japonais. L’incident est limité, mais Tokyo décide d’en finir avec le régime de Chiang Kai-shek. En août, les combats s’étendent à **Shanghai** : Chiang y engage ses meilleures divisions, formées par des instructeurs allemands, pour forcer les Occidentaux à intervenir. La bataille dure trois mois, du 13 août au 12 novembre 1937, et coûte des centaines de milliers d’hommes.\n\nLes Japonais débarquent à Hangzhou, tournent les défenses et prennent la ville. Le 13 décembre, ils entrent dans **Nankin**, alors capitale de la Chine. Pendant six semaines, l’armée se livre au pillage, aux viols et aux exécutions de masse : c’est le **massacre de Nankin**. Les bilans varient considérablement selon les historiens : le tribunal de Tokyo a retenu « plus de 200 000 » victimes, le gouvernement chinois parle de 300 000, des chercheurs japonais de 40 000 à 100 000. Le chiffre exact reste un sujet de conflit.\n\nLa guerre s’installe pour huit ans. Le gouvernement chinois se replie à Chongqing, que les Japonais bombardent sans relâche, et mène une guerre d’usure. Le Japon occupe les grandes villes et les voies ferrées, mais ne contrôle pas les campagnes. En 1940-1941, l’embargo américain sur le pétrole étrangle son économie et le pousse vers une guerre plus large.",
+      "consequences": [
+        "La Chine du Nord et la côte (Pékin, Tianjin, Shanghai, Nankin, Wuhan, Canton) passent sous contrôle japonais.",
+        "Le massacre de Nankin (décembre 1937) devient le symbole des crimes de guerre japonais, avec des bilans très disputés.",
+        "Le gouvernement nationaliste se replie à Chongqing ; la guerre dure huit ans et épuise le Japon.",
+        "Les États-Unis répondent par un embargo progressif sur le fer puis le pétrole (1939-1941), qui pousse Tokyo vers le sud."
+      ],
+      "territory": "chine-1937",
+      "sources": [
+        {
+          "label": "Wikipédia — Seconde guerre sino-japonaise",
+          "url": "https://fr.wikipedia.org/wiki/Seconde_guerre_sino-japonaise"
+        },
+        {
+          "label": "Wikipédia — Massacre de Nankin",
+          "url": "https://fr.wikipedia.org/wiki/Massacre_de_Nankin"
+        },
+        {
+          "label": "Rana Mitter, La Guerre de la Chine, 1937-1945 (Fayard)"
+        }
+      ],
+      "territoryNote": "Chine du Nord occupée (Pékin, Tianjin, Taiyuan, chemins de fer), côte (Shanghai, Nankin, Qingdao, Canton) et vallée du Yangzi jusqu’à Wuhan (1938) ; Mongolie intérieure avec le Mengjiang vassal ; Mandchoukouo ; Corée ; Taïwan ; mandats. Le gouvernement chinois tient le Sud-Ouest (Chongqing, Kunming) avec l’aide américaine et soviétique. Rivaux : Chine nationaliste, guérillas communistes, URSS, États-Unis et Royaume-Uni (sanctions).",
+      "battle": {
+        "belligerents": [
+          "Armée impériale japonaise (armée de Shanghai)",
+          "Armée nationale révolutionnaire chinoise"
+        ],
+        "commanders": [
+          "Matsui Iwane",
+          "Yanagawa Heisuke",
+          "Chiang Kai-shek",
+          "Zhang Zhizhong"
+        ],
+        "outcome": "Victoire japonaise après trois mois de combats ; Shanghai tombe le 12 novembre 1937",
+        "forces": "Japonais : environ 300 000 hommes engagés ; Chinois : 600 000 à 700 000, dont les divisions instruites par l’Allemagne",
+        "losses": "Environ 70 000 morts japonais et plus de 200 000 côté chinois pour la seule bataille de Shanghai"
+      },
+      "armies": [
+        {
+          "id": "armee-expeditionnaire-chine",
+          "side": "Armée expéditionnaire de Shanghai",
+          "from": "Nagasaki",
+          "faction": "japonais-xxe",
+          "path": [
+            [
+              129.87,
+              32.75
+            ],
+            [
+              125.5,
+              31.2
+            ],
+            [
+              122.6,
+              31.4
+            ],
+            [
+              121.47,
+              31.23
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "id": "armee-nationale-chine",
+          "side": "Armée nationale chinoise",
+          "from": "Nankin",
+          "faction": "chinois-xxe",
+          "path": [
+            [
+              118.78,
+              32.06
+            ],
+            [
+              120.3,
+              31.7
+            ],
+            [
+              121.2,
+              31.4
+            ],
+            [
+              121.47,
+              31.23
+            ]
+          ],
+          "strength": 3
+        }
+      ],
+      "figures": [
+        {
+          "name": "Matsui Iwane",
+          "role": "Général, commandant de l’armée de Shanghai puis de Nankin",
+          "faction": "japonais-xxe",
+          "archetype": "militaire-xxe",
+          "position": [
+            121.48,
+            31.24
+          ]
+        },
+        {
+          "name": "Chiang Kai-shek",
+          "role": "Chef du gouvernement nationaliste chinois",
+          "faction": "chinois-xxe",
+          "archetype": "militaire-xxe",
+          "quote": "(formule libre) C’est ici que la Chine montrera qu’elle ne se rendra pas",
+          "position": [
+            121.46,
+            31.22
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pearl-harbor-1941",
+      "year": 1941,
+      "title": "Pearl Harbor : réveiller un géant",
+      "type": "bataille",
+      "location": [
+        -157.95,
+        21.35
+      ],
+      "zoom": 3.9,
+      "summary": "Le 7 décembre 1941, six porte-avions japonais attaquent par surprise la flotte américaine à Pearl Harbor ; en deux heures, le Japon entre dans la guerre mondiale.",
+      "details": "Depuis l’invasion de la Chine, les États-Unis ont réagi par étapes : dénonciation de l’accord commercial de 1911 (1939), embargo sur la ferraille et l’acier (1940), puis sur le pétrole (août 1941). Le Japon, qui importe l’essentiel de son pétrole, doit choisir entre reculer et attaquer. Le 5 novembre, l’état-major approuve le plan de l’amiral **Yamamoto Isoroku** : frapper la flotte américaine du Pacifique à **Pearl Harbor**, à Hawaï, pour gagner six mois et conquérir l’Asie du Sud-Est.\n\nLe 26 novembre, la force de frappe de l’amiral Nagumo Chūichi quitte les Kouriles et navigue en silence. Le dimanche **7 décembre 1941**, à 7 h 48, 183 avions attaquent la base ; une deuxième vague suit. En deux heures, huit cuirassés sont coulés ou endommagés, dont l’Arizona qui explose avec un millier d’hommes, et 188 avions sont détruits. Les pertes américaines atteignent 2 403 morts. Mais les porte-avions américains sont en mer : ils échappent au désastre.\n\nLa déclaration de guerre japonaise est remise à Washington après l’attaque, ce qui la fait passer pour une trahison. Roosevelt parle du « jour d’infamie ». Les États-Unis déclarent la guerre le 8 décembre, l’Allemagne et l’Italie le 11. La phrase « nous n’avons réveillé qu’un géant endormi », attribuée à Yamamoto, est probablement apocryphe — mais elle résume la suite.",
+      "consequences": [
+        "Le Japon conquiert en six mois les Philippines, la Malaisie, Singapour, les Indes néerlandaises et la Birmanie.",
+        "Les États-Unis entrent en guerre : leur industrie devient l’atout décisif du conflit.",
+        "L’attaque sans déclaration préalable soude l’opinion américaine et fait du Japon un ennemi à abattre.",
+        "Les porte-avions américains, absents ce jour-là, changeront la guerre à Midway."
+      ],
+      "territory": "pearl-harbor-1941",
+      "sources": [
+        {
+          "label": "Wikipédia — Attaque de Pearl Harbor",
+          "url": "https://fr.wikipedia.org/wiki/Attaque_de_Pearl_Harbor"
+        },
+        {
+          "label": "Wikipédia — Guerre du Pacifique",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_du_Pacifique"
+        },
+        {
+          "label": "Ian Toll, Pacific Crucible (W. W. Norton)"
+        }
+      ],
+      "territoryNote": "Ajoute l’Indochine française (bases au Tonkin en 1940, sud en 1941, avec l’accord de Vichy), la Thaïlande alliée, et prépare la conquête du Sud-Est asiatique. Le reste : Chine occupée, Mandchoukouo, Corée, Taïwan, mandats du Pacifique. Rivaux : États-Unis (embargo pétrolier), Royaume-Uni, Pays-Bas (Indes néerlandaises), Chine, URSS (pacte de neutralité d’avril 1941).",
+      "battle": {
+        "belligerents": [
+          "Empire du Japon (force de frappe aéronavale)",
+          "États-Unis (flotte du Pacifique)"
+        ],
+        "commanders": [
+          "Chūichi Nagumo",
+          "Isoroku Yamamoto",
+          "Husband Kimmel"
+        ],
+        "outcome": "Victoire tactique japonaise ; les porte-avions américains sont épargnés",
+        "forces": "Japonais : 6 porte-avions, 353 avions, 2 cuirassés et des croiseurs ; Américains : 8 cuirassés, une centaine de navires, 390 avions",
+        "losses": "Américains : 2 403 morts, 8 cuirassés coulés ou endommagés, 188 avions ; Japonais : 29 avions, 64 morts"
+      },
+      "armies": [
+        {
+          "id": "kido-butai",
+          "side": "Force de frappe de Nagumo",
+          "from": "Baie de Hitokappu (Kouriles)",
+          "faction": "japonais-xxe",
+          "path": [
+            [
+              147.6,
+              45
+            ],
+            [
+              160,
+              41
+            ],
+            [
+              175,
+              33
+            ],
+            [
+              -170,
+              26
+            ],
+            [
+              -157.95,
+              21.35
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        },
+        {
+          "id": "flotte-pacifique",
+          "side": "Flotte américaine du Pacifique",
+          "from": "Pearl Harbor",
+          "faction": "americains-xxe",
+          "path": [
+            [
+              -158.25,
+              21.42
+            ],
+            [
+              -158.1,
+              21.38
+            ],
+            [
+              -157.95,
+              21.35
+            ]
+          ],
+          "strength": 2
+        }
+      ],
+      "figures": [
+        {
+          "name": "Yamamoto Isoroku",
+          "role": "Amiral, commandant en chef de la flotte combinée",
+          "faction": "japonais-xxe",
+          "archetype": "amiral",
+          "quote": "(formule libre) Six mois durant, je pourrai agir à ma guise ; ensuite, je ne garantis rien",
+          "position": [
+            -157.94,
+            21.36
+          ],
+          "person": "isoroku-yamamoto"
+        },
+        {
+          "name": "Chūichi Nagumo",
+          "role": "Amiral, commandant de la force de frappe aéronavale",
+          "faction": "japonais-xxe",
+          "archetype": "amiral",
+          "position": [
+            -157.96,
+            21.34
+          ]
+        },
+        {
+          "name": "Husband Kimmel",
+          "role": "Amiral américain, commandant de la flotte du Pacifique",
+          "faction": "americains-xxe",
+          "archetype": "amiral",
+          "position": [
+            -157.93,
+            21.33
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apogee-1942",
+      "year": 1942,
+      "title": "Midway : le tournant de la guerre du Pacifique",
+      "type": "bataille",
+      "location": [
+        -177.37,
+        28.21
+      ],
+      "zoom": 3.6,
+      "summary": "En juin 1942, au large de Midway, la marine américaine coule quatre porte-avions japonais ; six mois après Pearl Harbor, l’expansion japonaise s’arrête.",
+      "details": "À l’été 1942, le Japon est au sommet. En six mois, il a pris les Philippines, la Malaisie, **Singapour** (15 février), les Indes néerlandaises et la Birmanie, et menace l’Inde et l’Australie. Les Aléoutiennes sont occupées, la Nouvelle-Guinée attaquée. C’est le moment où l’empire est le plus vaste — et déjà le plus fragile : l’armée est dispersée, les convois de pétrole vulnérables, l’industrie américaine en pleine conversion.\n\nPour détruire les porte-avions américains, Yamamoto lance l’opération MI contre l’atoll de **Midway**. Mais les Américains ont cassé le code de la marine japonaise et savent où l’attaque aura lieu. Le 4 juin, l’amiral Nagumo hésite entre armer ses avions pour Midway ou pour les navires américains aperçus ; ses ponts sont pleins de bombes et de torpilles quand les bombardiers en piqué arrivent.\n\nEn quelques minutes, l’**Akagi**, le **Kaga** et le **Sōryū** brûlent ; le **Hiryū** est coulé le lendemain. Le Japon perd quatre porte-avions et l’élite de ses pilotes ; les États-Unis perdent le Yorktown. L’industrie japonaise ne peut remplacer ni les navires ni les équipages. Guadalcanal, engagée en août 1942, confirme la bascule : le Japon ne choisira plus où et quand il combat.",
+      "consequences": [
+        "L’empire atteint son extension maximale à l’été 1942, du nord de la Birmanie aux Aléoutiennes et de la Nouvelle-Guinée à la Mandchourie.",
+        "Quatre porte-avions et l’élite de l’aéronavale japonaise disparaissent : la marine ne s’en remettra jamais.",
+        "Les Alliés passent à l’offensive ; Guadalcanal (août 1942-février 1943) marque le début du recul.",
+        "Le Japon perd l’initiative stratégique et ne pourra plus choisir le lieu de ses batailles."
+      ],
+      "territory": "apogee-1942",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille de Midway",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_de_Midway"
+        },
+        {
+          "label": "Wikipédia — Guerre du Pacifique",
+          "url": "https://fr.wikipedia.org/wiki/Guerre_du_Pacifique"
+        },
+        {
+          "label": "Ian Toll, Pacific Crucible (W. W. Norton)"
+        }
+      ],
+      "territoryNote": "Extension maximale : Japon, Corée, Taïwan, Sakhaline du Sud, Kouriles ; Mandchoukouo et Chine du Nord et côtière ; Philippines, Malaisie, Singapour, Birmanie, Indes néerlandaises, Indochine, Thaïlande alliée ; mandats (Mariannes, Carolines, Marshall), plus les Aléoutiennes occidentales (Attu, Kiska), le nord de la Nouvelle-Guinée et Guadalcanal. État vassal : Mandchoukouo ; allié : Thaïlande ; régimes amis en Birmanie et aux Philippines (1943). Rivaux : États-Unis, Royaume-Uni, Australie, Chine, Pays-Bas, URSS neutre.",
+      "battle": {
+        "belligerents": [
+          "Empire du Japon (flotte combinée)",
+          "États-Unis (flotte du Pacifique)"
+        ],
+        "commanders": [
+          "Isoroku Yamamoto",
+          "Chūichi Nagumo",
+          "Chester Nimitz",
+          "Raymond Spruance"
+        ],
+        "outcome": "Victoire américaine décisive ; quatre porte-avions japonais perdus",
+        "forces": "Japonais : 4 porte-avions, 2 cuirassés, environ 250 avions ; Américains : 3 porte-avions, environ 230 avions",
+        "losses": "Japonais : 4 porte-avions, 1 croiseur, environ 3 000 morts dont 250 pilotes ; Américains : 1 porte-avions, 1 destroyer, 362 morts"
+      },
+      "armies": [
+        {
+          "id": "flotte-combinee-1942",
+          "side": "Flotte combinée",
+          "from": "Hashirajima",
+          "faction": "japonais-xxe",
+          "path": [
+            [
+              132.4,
+              34
+            ],
+            [
+              145,
+              33.5
+            ],
+            [
+              163,
+              31
+            ],
+            [
+              -177.37,
+              28.21
+            ]
+          ],
+          "strength": 3
+        },
+        {
+          "id": "flotte-pacifique-1942",
+          "side": "Task Force 16 et 17",
+          "from": "Pearl Harbor",
+          "faction": "americains-xxe",
+          "path": [
+            [
+              -157.95,
+              21.35
+            ],
+            [
+              -166,
+              25.5
+            ],
+            [
+              -177.37,
+              28.21
+            ]
+          ],
+          "strength": 2,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Isoroku Yamamoto",
+          "role": "Amiral, concepteur de l’opération contre Midway",
+          "faction": "japonais-xxe",
+          "archetype": "amiral",
+          "position": [
+            -177.36,
+            28.22
+          ],
+          "person": "isoroku-yamamoto"
+        },
+        {
+          "name": "Chester Nimitz",
+          "role": "Amiral, commandant en chef de la flotte américaine du Pacifique",
+          "faction": "americains-xxe",
+          "archetype": "amiral",
+          "quote": "(formule libre) À Midway, nous avons rendu au Japon la monnaie de Pearl Harbor",
+          "position": [
+            -177.38,
+            28.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capitulation-1945",
+      "year": 1945,
+      "title": "Okinawa, Hiroshima, Nagasaki : la capitulation",
+      "type": "chute",
+      "location": [
+        127.8,
+        26.45
+      ],
+      "zoom": 4.2,
+      "summary": "En 1945, les bombardements incendiaires, Okinawa, les bombes atomiques et l’invasion soviétique brisent le Japon, qui capitule le 15 août et signe le 2 septembre.",
+      "details": "En 1945, le Japon est bombardé sans relâche. Le 9-10 mars, un raid incendiaire sur **Tokyo** tue environ 100 000 personnes en une nuit. Iwo Jima tombe en mars, puis vient **Okinawa** : du 1er avril au 22 juin, la bataille tue plus de 12 000 Américains et environ 100 000 soldats japonais, auxquels s’ajoutent des dizaines de milliers de civils. Les kamikazes ne changent rien.\n\nLe 6 août, un B-29 largue une bombe à l’uranium sur **Hiroshima** ; le 9, une bombe au plutonium frappe **Nagasaki**. Les bilans varient fortement : 70 000 à 140 000 morts à Hiroshima, 60 000 à 80 000 à Nagasaki, à la fin de 1945. Le même jour, l’Union soviétique attaque la Mandchourie ; en quelques jours, elle envahit le sud de Sakhaline et les Kouriles. Le conseil suprême reste divisé ; l’empereur **Hirohito** tranche, et son message radiophonique est diffusé le 15 août. La capitulation est signée le **2 septembre** sur le cuirassé Missouri.\n\nLe pays est occupé par les Américains, qui imposent une nouvelle Constitution (1946, en vigueur en 1947) : l’empereur devient un symbole, le Japon renonce à la guerre. Le bilan humain est immense, environ trois millions de morts japonais, et les historiens discutent encore de ce qui a décidé la reddition : les bombes, l’URSS ou l’épuisement.",
+      "consequences": [
+        "Le Japon perd toutes ses conquêtes : Corée, Taïwan, Mandchourie, Chine, Asie du Sud-Est, mandats du Pacifique.",
+        "L’URSS occupe les Kouriles et le sud de Sakhaline ; le différend territorial dure encore.",
+        "Le pays est occupé jusqu’en 1952 et doté en 1947 d’une Constitution pacifiste qui abolit l’empire.",
+        "Les bombes atomiques font du Japon le seul pays à avoir subi un bombardement nucléaire ; les bilans varient fortement."
+      ],
+      "territory": "capitulation-1945",
+      "sources": [
+        {
+          "label": "Wikipédia — Bataille d'Okinawa",
+          "url": "https://fr.wikipedia.org/wiki/Bataille_d'Okinawa"
+        },
+        {
+          "label": "Wikipédia — Bombardements atomiques d’Hiroshima et de Nagasaki",
+          "url": "https://fr.wikipedia.org/wiki/Bombardements_atomiques_d%27Hiroshima_et_de_Nagasaki"
+        },
+        {
+          "label": "John W. Dower, Embracing Defeat: Japan in the Wake of World War II (W. W. Norton)"
+        }
+      ],
+      "territoryNote": "Retour au Japon seul : Honshū, Kyūshū, Shikoku, Hokkaidō ; Okinawa perdu en juin 1945 ; Corée, Taïwan, Mandchourie, Chine, Asie du Sud-Est et mandats perdus ; l’URSS occupe le sud de Sakhaline et les Kouriles. Le pays est occupé par les États-Unis (SCAP), qui administrent aussi les anciennes colonies jusqu’à leur indépendance.",
+      "battle": {
+        "belligerents": [
+          "Empire du Japon (32e armée)",
+          "États-Unis (10e armée, avec la marine et les Marines)"
+        ],
+        "commanders": [
+          "Mitsuru Ushijima",
+          "Simon Bolivar Buckner Jr.",
+          "Chester Nimitz"
+        ],
+        "outcome": "Victoire américaine après 82 jours ; Okinawa sert de base pour l’invasion prévue du Japon",
+        "forces": "Japonais : environ 100 000 hommes ; Américains : plus de 180 000 soldats et Marines, avec la Task Force 51",
+        "losses": "Japonais : environ 100 000 morts, plus des dizaines de milliers de civils ; Américains : plus de 12 000 morts"
+      },
+      "armies": [
+        {
+          "id": "armee-32e-okinawa",
+          "side": "32e armée japonaise",
+          "from": "Kagoshima",
+          "faction": "japonais-xxe",
+          "path": [
+            [
+              130.55,
+              31.6
+            ],
+            [
+              128.6,
+              28.6
+            ],
+            [
+              127.9,
+              26.9
+            ],
+            [
+              127.8,
+              26.45
+            ]
+          ],
+          "strength": 2
+        },
+        {
+          "id": "dixieme-armee",
+          "side": "10e armée américaine",
+          "from": "Saipan",
+          "faction": "americains-xxe",
+          "path": [
+            [
+              145.75,
+              15.19
+            ],
+            [
+              138,
+              20
+            ],
+            [
+              130.5,
+              24.5
+            ],
+            [
+              127.8,
+              26.45
+            ]
+          ],
+          "strength": 3,
+          "winner": true
+        }
+      ],
+      "figures": [
+        {
+          "name": "Hirohito (empereur Shōwa)",
+          "role": "Empereur, qui annonce la reddition le 15 août 1945",
+          "faction": "japonais-xxe",
+          "archetype": "militaire-xxe",
+          "quote": "Selon le rescrit du 15 août 1945 : « supporter l’insupportable et endurer l’intenable »",
+          "position": [
+            127.81,
+            26.46
+          ],
+          "person": "hirohito"
+        },
+        {
+          "name": "Mitsuru Ushijima",
+          "role": "Général, commandant de la 32e armée à Okinawa",
+          "faction": "japonais-xxe",
+          "archetype": "militaire-xxe",
+          "position": [
+            127.79,
+            26.44
+          ]
+        }
+      ]
+    }
+  ]
+}

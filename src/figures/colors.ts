@@ -99,4 +99,7 @@ export const FACTION_COLORS = {
   'russes-modernes': '#8a8a5a',
   'japonais-meiji': '#25304a',
   'allemands-1914': '#6e7468',
+  'japonais-xxe': '#8c6b2f',
+  'chinois-xxe': '#4f7a8a',
+  'americains-xxe': '#3f5f3a',
 } satisfies Record<Faction, string>;

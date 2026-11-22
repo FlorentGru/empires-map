@@ -29,6 +29,9 @@ const FUSIL = new Set<Faction>([
   'russes-modernes',
   'japonais-meiji',
   'allemands-1914',
+  'japonais-xxe',
+  'chinois-xxe',
+  'americains-xxe',
 ]);
 /** Peuples dont le soldat porte une arquebuse à mèche (`arquebus()`). */
 const ARQUEBUSE = new Set<Faction>(['tercios', 'neerlandais', 'janissaires', 'marocains', 'moghols']);
