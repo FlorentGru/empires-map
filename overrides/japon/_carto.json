@@ -1,0 +1,681 @@
+{
+  "empire": "japon",
+  "basemapNote": "Empire composé (fromCarto) : Japon, Corée et Taïwan par les pays Natural Earth 1:50m (ADMIN « Japan », « South Korea » + « North Korea », « Taiwan »), complétés par des régions nommées (_regions.geojson) pour les conquêtes continentales et insulaires : Mandchourie, Chine du Nord et côtière, Mengjiang, Guandong, Tsingtao, Sakhaline du Sud, Kouriles, Okinawa. Les instantanés historical-basemaps ne sont pas utilisés : celui de 1938 attribue à tort au Japon le Cambodge et la Cochinchine, celui de 1945 (Japan (USA), Korea (USA/USSR)) ne sépare plus les souverainetés. Les mers intérieures et les côtes du 1:50m expliquent les écarts de quelques kilomètres sur les petits détroits.",
+  "steps": [
+    {
+      "id": "boshin-1868",
+      "year": 1868,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Empire du Japon",
+          "status": "core",
+          "source": { "diff": [{ "country": "Japan" }, { "region": "okinawa" }] }
+        }
+      ],
+      "notes": "Honshū, Kyūshū, Shikoku et Hokkaidō (le nord d'Ezo, encore tenu par la République d'Ezo jusqu'en juin 1869, est compté avec l'archipel : approximation). Le royaume du Ryūkyū (Okinawa) est retiré : tributaire, pas annexé."
+    },
+    {
+      "id": "abolition-han-1871",
+      "year": 1871,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Empire du Japon",
+          "status": "core",
+          "source": { "diff": [{ "country": "Japan" }, { "region": "okinawa" }] }
+        }
+      ],
+      "notes": "Quatre grandes îles, Hokkaidō colonisé (Sapporo, Hakodate, Nemuro). Toujours sans Okinawa, annexée en 1879."
+    },
+    {
+      "id": "conscription-1873",
+      "year": 1873,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Empire du Japon",
+          "status": "core",
+          "source": { "diff": [{ "country": "Japan" }, { "region": "okinawa" }] }
+        }
+      ],
+      "notes": "Territoire métropolitain seul, sans acquisition extérieure."
+    },
+    {
+      "id": "satsuma-1877",
+      "year": 1877,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Empire du Japon",
+          "status": "core",
+          "source": {
+            "union": [
+              { "diff": [{ "country": "Japan" }, { "region": "okinawa" }] },
+              { "country": "Russia", "region": "kouriles" }
+            ]
+          }
+        }
+      ],
+      "notes": "Kouriles rattachées (traité de 1875 avec la Russie, en échange de la renonciation à Sakhaline) ; Okinawa toujours indépendante."
+    },
+    {
+      "id": "constitution-meiji-1889",
+      "year": 1889,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Empire du Japon",
+          "status": "core",
+          "source": {
+            "union": [{ "country": "Japan" }, { "country": "Russia", "region": "kouriles" }]
+          }
+        }
+      ],
+      "notes": "Japon complet : Okinawa (préfecture depuis 1879), Kouriles, Ogasawara et îles Izu."
+    },
+    {
+      "id": "sino-japonaise-1894",
+      "year": 1894,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Empire du Japon",
+          "status": "core",
+          "source": {
+            "union": [{ "country": "Japan" }, { "country": "Russia", "region": "kouriles" }]
+          }
+        },
+        { "name": "Taïwan", "status": "core", "source": { "country": "Taiwan" } }
+      ],
+      "notes": "Shimonoseki (1895) : Taïwan et les Pescadores annexés. Le Liaodong, cédé puis restitué, n'est pas compté. La Corée reste indépendante."
+    },
+    {
+      "id": "alliance-anglaise-1902",
+      "year": 1902,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Empire du Japon",
+          "status": "core",
+          "source": {
+            "union": [{ "country": "Japan" }, { "country": "Russia", "region": "kouriles" }]
+          }
+        },
+        { "name": "Taïwan", "status": "core", "source": { "country": "Taiwan" } }
+      ],
+      "notes": "Statut inchangé : la Corée, empire nominalement indépendant, n'est pas encore un protectorat."
+    },
+    {
+      "id": "tsushima-1905",
+      "year": 1905,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Empire du Japon",
+          "status": "core",
+          "source": {
+            "union": [{ "country": "Japan" }, { "country": "Russia", "region": "kouriles" }]
+          }
+        },
+        { "name": "Taïwan", "status": "core", "source": { "country": "Taiwan" } },
+        {
+          "name": "Sakhaline du Sud",
+          "status": "core",
+          "source": { "country": "Russia", "region": "sakhaline-sud" }
+        },
+        {
+          "name": "Guandong (Port-Arthur et Dalian)",
+          "status": "core",
+          "source": { "country": "China", "region": "guandong" }
+        },
+        {
+          "name": "Corée (protectorat)",
+          "status": "vassal",
+          "source": { "union": [{ "country": "South Korea" }, { "country": "North Korea" }] }
+        }
+      ],
+      "notes": "Portsmouth : Sakhaline au sud du 50e parallèle, concession du Guandong (Port-Arthur, Dalian) et chemin de fer de Mandchourie du Sud. La Corée devient protectorat en novembre 1905 (résident général à Séoul)."
+    },
+    {
+      "id": "annexion-coree-1910",
+      "year": 1910,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Empire du Japon",
+          "status": "core",
+          "source": {
+            "union": [{ "country": "Japan" }, { "country": "Russia", "region": "kouriles" }]
+          }
+        },
+        { "name": "Taïwan", "status": "core", "source": { "country": "Taiwan" } },
+        {
+          "name": "Sakhaline du Sud",
+          "status": "core",
+          "source": { "country": "Russia", "region": "sakhaline-sud" }
+        },
+        {
+          "name": "Guandong (Port-Arthur et Dalian)",
+          "status": "core",
+          "source": { "country": "China", "region": "guandong" }
+        },
+        {
+          "name": "Corée (Chōsen)",
+          "status": "core",
+          "source": { "union": [{ "country": "South Korea" }, { "country": "North Korea" }] }
+        }
+      ],
+      "notes": "Annexion de la Corée (traité de 1910), gouvernée par un gouverneur général militaire."
+    },
+    {
+      "id": "tsingtao-1914",
+      "year": 1914,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Empire du Japon",
+          "status": "core",
+          "source": {
+            "union": [{ "country": "Japan" }, { "country": "Russia", "region": "kouriles" }]
+          }
+        },
+        { "name": "Taïwan", "status": "core", "source": { "country": "Taiwan" } },
+        {
+          "name": "Sakhaline du Sud",
+          "status": "core",
+          "source": { "country": "Russia", "region": "sakhaline-sud" }
+        },
+        {
+          "name": "Guandong (Port-Arthur et Dalian)",
+          "status": "core",
+          "source": { "country": "China", "region": "guandong" }
+        },
+        {
+          "name": "Corée (Chōsen)",
+          "status": "core",
+          "source": { "union": [{ "country": "South Korea" }, { "country": "North Korea" }] }
+        },
+        {
+          "name": "Tsingtao (occupé)",
+          "status": "vassal",
+          "source": { "country": "China", "region": "tsingtao" }
+        },
+        {
+          "name": "Mandats du Pacifique (occupés)",
+          "status": "vassal",
+          "source": {
+            "union": [
+              { "country": "Palau" },
+              { "country": "Federated States of Micronesia" },
+              { "country": "Marshall Islands" },
+              { "country": "Northern Mariana Islands" }
+            ]
+          }
+        }
+      ],
+      "notes": "Octobre 1914 : le Shandong allemand (Tsingtao et chemin de fer de Qingdao à Jinan) et les îles allemandes du Pacifique au nord de l'équateur sont occupés, non annexés."
+    },
+    {
+      "id": "versailles-1919",
+      "year": 1919,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Empire du Japon",
+          "status": "core",
+          "source": {
+            "union": [{ "country": "Japan" }, { "country": "Russia", "region": "kouriles" }]
+          }
+        },
+        { "name": "Taïwan", "status": "core", "source": { "country": "Taiwan" } },
+        {
+          "name": "Sakhaline du Sud",
+          "status": "core",
+          "source": { "country": "Russia", "region": "sakhaline-sud" }
+        },
+        {
+          "name": "Guandong (Port-Arthur et Dalian)",
+          "status": "core",
+          "source": { "country": "China", "region": "guandong" }
+        },
+        {
+          "name": "Corée (Chōsen)",
+          "status": "core",
+          "source": { "union": [{ "country": "South Korea" }, { "country": "North Korea" }] }
+        },
+        {
+          "name": "Mandats du Pacifique",
+          "status": "core",
+          "source": {
+            "union": [
+              { "country": "Palau" },
+              { "country": "Federated States of Micronesia" },
+              { "country": "Marshall Islands" },
+              { "country": "Northern Mariana Islands" }
+            ]
+          }
+        }
+      ],
+      "notes": "Mandats de classe C (Mariannes, Carolines, Marshall) administrés par la marine japonaise depuis Truk. Tsingtao retiré : rendu à la Chine en 1922."
+    },
+    {
+      "id": "mandchourie-1931",
+      "year": 1931,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Empire du Japon",
+          "status": "core",
+          "source": {
+            "union": [{ "country": "Japan" }, { "country": "Russia", "region": "kouriles" }]
+          }
+        },
+        { "name": "Taïwan", "status": "core", "source": { "country": "Taiwan" } },
+        {
+          "name": "Sakhaline du Sud",
+          "status": "core",
+          "source": { "country": "Russia", "region": "sakhaline-sud" }
+        },
+        {
+          "name": "Guandong (Port-Arthur et Dalian)",
+          "status": "core",
+          "source": { "country": "China", "region": "guandong" }
+        },
+        {
+          "name": "Corée (Chōsen)",
+          "status": "core",
+          "source": { "union": [{ "country": "South Korea" }, { "country": "North Korea" }] }
+        },
+        {
+          "name": "Mandats du Pacifique",
+          "status": "core",
+          "source": {
+            "union": [
+              { "country": "Palau" },
+              { "country": "Federated States of Micronesia" },
+              { "country": "Marshall Islands" },
+              { "country": "Northern Mariana Islands" }
+            ]
+          }
+        },
+        {
+          "name": "Mandchoukouo",
+          "status": "vassal",
+          "source": { "country": "China", "region": "manchourie" }
+        }
+      ],
+      "notes": "Mandchourie occupée en septembre 1931, État vassal du Mandchoukouo proclamé en mars 1932 (Jehol occupé en 1933). Le Guandong reste une concession japonaise, distincte du Mandchoukouo."
+    },
+    {
+      "id": "chine-1937",
+      "year": 1937,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Empire du Japon",
+          "status": "core",
+          "source": {
+            "union": [{ "country": "Japan" }, { "country": "Russia", "region": "kouriles" }]
+          }
+        },
+        { "name": "Taïwan", "status": "core", "source": { "country": "Taiwan" } },
+        {
+          "name": "Sakhaline du Sud",
+          "status": "core",
+          "source": { "country": "Russia", "region": "sakhaline-sud" }
+        },
+        {
+          "name": "Guandong (Port-Arthur et Dalian)",
+          "status": "core",
+          "source": { "country": "China", "region": "guandong" }
+        },
+        {
+          "name": "Corée (Chōsen)",
+          "status": "core",
+          "source": { "union": [{ "country": "South Korea" }, { "country": "North Korea" }] }
+        },
+        {
+          "name": "Mandats du Pacifique",
+          "status": "core",
+          "source": {
+            "union": [
+              { "country": "Palau" },
+              { "country": "Federated States of Micronesia" },
+              { "country": "Marshall Islands" },
+              { "country": "Northern Mariana Islands" }
+            ]
+          }
+        },
+        {
+          "name": "Mandchoukouo",
+          "status": "vassal",
+          "source": { "country": "China", "region": "manchourie" }
+        },
+        {
+          "name": "Chine du Nord occupée",
+          "status": "core",
+          "source": { "country": "China", "region": "chine-du-nord" }
+        },
+        {
+          "name": "Chine côtière occupée",
+          "status": "core",
+          "source": { "country": "China", "region": "chine-cotiere" }
+        },
+        {
+          "name": "Mengjiang",
+          "status": "vassal",
+          "source": { "country": "China", "region": "mengjiang" }
+        }
+      ],
+      "notes": "Guerre totale : Chine du Nord (Pékin, Tianjin, Taiyuan), côte (Shanghai, Nankin, Qingdao, Canton) et vallée du Yangzi jusqu'à Wuhan (1938). Le Sud-Ouest (Chongqing, Kunming) reste à la Chine. Mongolie-Intérieure centrale : Mengjiang, vassal depuis 1937."
+    },
+    {
+      "id": "pearl-harbor-1941",
+      "year": 1941,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Empire du Japon",
+          "status": "core",
+          "source": {
+            "union": [{ "country": "Japan" }, { "country": "Russia", "region": "kouriles" }]
+          }
+        },
+        { "name": "Taïwan", "status": "core", "source": { "country": "Taiwan" } },
+        {
+          "name": "Sakhaline du Sud",
+          "status": "core",
+          "source": { "country": "Russia", "region": "sakhaline-sud" }
+        },
+        {
+          "name": "Guandong (Port-Arthur et Dalian)",
+          "status": "core",
+          "source": { "country": "China", "region": "guandong" }
+        },
+        {
+          "name": "Corée (Chōsen)",
+          "status": "core",
+          "source": { "union": [{ "country": "South Korea" }, { "country": "North Korea" }] }
+        },
+        {
+          "name": "Mandats du Pacifique",
+          "status": "core",
+          "source": {
+            "union": [
+              { "country": "Palau" },
+              { "country": "Federated States of Micronesia" },
+              { "country": "Marshall Islands" },
+              { "country": "Northern Mariana Islands" }
+            ]
+          }
+        },
+        {
+          "name": "Mandchoukouo",
+          "status": "vassal",
+          "source": { "country": "China", "region": "manchourie" }
+        },
+        {
+          "name": "Chine du Nord occupée",
+          "status": "core",
+          "source": { "country": "China", "region": "chine-du-nord" }
+        },
+        {
+          "name": "Chine côtière occupée",
+          "status": "core",
+          "source": { "country": "China", "region": "chine-cotiere" }
+        },
+        {
+          "name": "Mengjiang",
+          "status": "vassal",
+          "source": { "country": "China", "region": "mengjiang" }
+        },
+        {
+          "name": "Indochine",
+          "status": "core",
+          "source": {
+            "union": [{ "country": "Vietnam" }, { "country": "Laos" }, { "country": "Cambodia" }]
+          }
+        },
+        { "name": "Thaïlande (alliée)", "status": "allied", "source": { "country": "Thailand" } }
+      ],
+      "notes": "Indochine française occupée avec l'accord de Vichy (bases au Tonkin en 1940, sud en 1941) ; Thaïlande alliée (traité de décembre 1941)."
+    },
+    {
+      "id": "apogee-1942",
+      "year": 1942,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Empire du Japon",
+          "status": "core",
+          "source": {
+            "union": [{ "country": "Japan" }, { "country": "Russia", "region": "kouriles" }]
+          }
+        },
+        { "name": "Taïwan", "status": "core", "source": { "country": "Taiwan" } },
+        {
+          "name": "Sakhaline du Sud",
+          "status": "core",
+          "source": { "country": "Russia", "region": "sakhaline-sud" }
+        },
+        {
+          "name": "Guandong (Port-Arthur et Dalian)",
+          "status": "core",
+          "source": { "country": "China", "region": "guandong" }
+        },
+        {
+          "name": "Corée (Chōsen)",
+          "status": "core",
+          "source": { "union": [{ "country": "South Korea" }, { "country": "North Korea" }] }
+        },
+        {
+          "name": "Mandats du Pacifique",
+          "status": "core",
+          "source": {
+            "union": [
+              { "country": "Palau" },
+              { "country": "Federated States of Micronesia" },
+              { "country": "Marshall Islands" },
+              { "country": "Northern Mariana Islands" }
+            ]
+          }
+        },
+        {
+          "name": "Mandchoukouo",
+          "status": "vassal",
+          "source": { "country": "China", "region": "manchourie" }
+        },
+        {
+          "name": "Chine du Nord occupée",
+          "status": "core",
+          "source": { "country": "China", "region": "chine-du-nord" }
+        },
+        {
+          "name": "Chine côtière occupée",
+          "status": "core",
+          "source": { "country": "China", "region": "chine-cotiere" }
+        },
+        {
+          "name": "Mengjiang",
+          "status": "vassal",
+          "source": { "country": "China", "region": "mengjiang" }
+        },
+        {
+          "name": "Indochine",
+          "status": "core",
+          "source": {
+            "union": [{ "country": "Vietnam" }, { "country": "Laos" }, { "country": "Cambodia" }]
+          }
+        },
+        { "name": "Thaïlande (alliée)", "status": "allied", "source": { "country": "Thailand" } },
+        { "name": "Birmanie", "status": "core", "source": { "country": "Myanmar" } },
+        { "name": "Malaisie", "status": "core", "source": { "country": "Malaysia" } },
+        { "name": "Singapour", "status": "core", "source": { "country": "Singapore" } },
+        { "name": "Brunei", "status": "core", "source": { "country": "Brunei" } },
+        { "name": "Indes néerlandaises", "status": "core", "source": { "country": "Indonesia" } },
+        { "name": "Philippines", "status": "core", "source": { "country": "Philippines" } }
+      ],
+      "notes": "Extension maximale : Philippines, Malaisie, Singapour, Brunei, Indes néerlandaises, Birmanie (décembre 1941-mai 1942). Le Mandchoukouo reste vassal (surface non comptée en core). Les Aléoutiennes occidentales (Attu, Kiska) et le nord de la Nouvelle-Guinée, tenus en 1942-1943, ne sont pas cartographiés."
+    },
+    {
+      "id": "capitulation-1945",
+      "year": 1945,
+      "mode": "compose",
+      "entities": [
+        {
+          "name": "Empire du Japon",
+          "status": "core",
+          "source": { "diff": [{ "country": "Japan" }, { "region": "okinawa" }] }
+        }
+      ],
+      "notes": "Japon seul : Honshū, Kyūshū, Shikoku, Hokkaidō. Okinawa perdue en juin 1945 ; Corée, Taïwan, Sakhaline du Sud, Kouriles, Mandchourie, Chine, Asie du Sud-Est et mandats perdus ; occupation américaine (SCAP)."
+    }
+  ],
+  "checkpoints": [
+    { "name": "Tokyo", "pt": [139.69, 35.68], "where": "core" },
+    { "name": "Osaka", "pt": [135.5, 34.69], "where": "core" },
+    { "name": "Sapporo", "pt": [141.35, 43.06], "where": "core", "from": "abolition-han-1871" },
+    { "name": "Naha", "pt": [127.68, 26.21], "where": "not-core", "to": "satsuma-1877" },
+    {
+      "name": "Naha",
+      "pt": [127.68, 26.21],
+      "where": "core",
+      "from": "constitution-meiji-1889",
+      "to": "apogee-1942"
+    },
+    {
+      "name": "Naha",
+      "pt": [127.68, 26.21],
+      "where": "not-core",
+      "from": "capitulation-1945",
+      "to": "capitulation-1945"
+    },
+    { "name": "Séoul", "pt": [126.98, 37.57], "where": "not-core", "to": "alliance-anglaise-1902" },
+    { "name": "Séoul", "pt": [126.98, 37.57], "where": "vassal", "from": "tsushima-1905", "to": "tsushima-1905" },
+    {
+      "name": "Séoul",
+      "pt": [126.98, 37.57],
+      "where": "core",
+      "from": "annexion-coree-1910",
+      "to": "apogee-1942"
+    },
+    {
+      "name": "Séoul",
+      "pt": [126.98, 37.57],
+      "where": "not-core",
+      "from": "capitulation-1945",
+      "to": "capitulation-1945"
+    },
+    {
+      "name": "Pyongyang",
+      "pt": [125.75, 39.02],
+      "where": "not-core",
+      "to": "alliance-anglaise-1902"
+    },
+    {
+      "name": "Pyongyang",
+      "pt": [125.75, 39.02],
+      "where": "vassal",
+      "from": "tsushima-1905",
+      "to": "tsushima-1905"
+    },
+    {
+      "name": "Pyongyang",
+      "pt": [125.75, 39.02],
+      "where": "core",
+      "from": "annexion-coree-1910",
+      "to": "apogee-1942"
+    },
+    {
+      "name": "Pyongyang",
+      "pt": [125.75, 39.02],
+      "where": "not-core",
+      "from": "capitulation-1945",
+      "to": "capitulation-1945"
+    },
+    { "name": "Taipei", "pt": [121.56, 25.03], "where": "not-core", "to": "constitution-meiji-1889" },
+    {
+      "name": "Taipei",
+      "pt": [121.56, 25.03],
+      "where": "core",
+      "from": "sino-japonaise-1894",
+      "to": "apogee-1942"
+    },
+    {
+      "name": "Taipei",
+      "pt": [121.56, 25.03],
+      "where": "not-core",
+      "from": "capitulation-1945",
+      "to": "capitulation-1945"
+    },
+    { "name": "Lüshun", "pt": [121.26, 38.81], "where": "not-core", "to": "alliance-anglaise-1902" },
+    {
+      "name": "Lüshun",
+      "pt": [121.26, 38.81],
+      "where": "core",
+      "from": "tsushima-1905",
+      "to": "apogee-1942"
+    },
+    {
+      "name": "Lüshun",
+      "pt": [121.26, 38.81],
+      "where": "not-core",
+      "from": "capitulation-1945",
+      "to": "capitulation-1945"
+    },
+    { "name": "Shenyang", "pt": [123.43, 41.8], "where": "not-core", "to": "versailles-1919" },
+    {
+      "name": "Shenyang",
+      "pt": [123.43, 41.8],
+      "where": "vassal",
+      "from": "mandchourie-1931",
+      "to": "apogee-1942"
+    },
+    {
+      "name": "Shenyang",
+      "pt": [123.43, 41.8],
+      "where": "not-core",
+      "from": "capitulation-1945",
+      "to": "capitulation-1945"
+    },
+    { "name": "Harbin", "pt": [126.53, 45.8], "where": "not-core", "to": "versailles-1919" },
+    { "name": "Harbin", "pt": [126.53, 45.8], "where": "vassal", "from": "mandchourie-1931", "to": "apogee-1942" },
+    {
+      "name": "Harbin",
+      "pt": [126.53, 45.8],
+      "where": "not-core",
+      "from": "capitulation-1945",
+      "to": "capitulation-1945"
+    },
+    { "name": "Pékin", "pt": [116.4, 39.9], "where": "not-core", "to": "mandchourie-1931" },
+    { "name": "Pékin", "pt": [116.4, 39.9], "where": "core", "from": "chine-1937", "to": "apogee-1942" },
+    {
+      "name": "Pékin",
+      "pt": [116.4, 39.9],
+      "where": "not-core",
+      "from": "capitulation-1945",
+      "to": "capitulation-1945"
+    },
+    { "name": "Shanghai", "pt": [121.47, 31.23], "where": "core", "from": "chine-1937", "to": "apogee-1942" },
+    {
+      "name": "Nankin",
+      "pt": [118.78, 32.06],
+      "where": "core",
+      "from": "chine-1937",
+      "to": "apogee-1942"
+    },
+    { "name": "Wuhan", "pt": [114.3, 30.6], "where": "core", "from": "chine-1937", "to": "apogee-1942" },
+    { "name": "Canton", "pt": [113.26, 23.13], "where": "core", "from": "chine-1937", "to": "apogee-1942" },
+    { "name": "Chongqing", "pt": [106.55, 29.56], "where": "not-core" },
+    { "name": "Hanoï", "pt": [105.85, 21.03], "where": "core", "from": "pearl-harbor-1941", "to": "apogee-1942" },
+    { "name": "Hanoï", "pt": [105.85, 21.03], "where": "not-core", "to": "mandchourie-1931" },
+    { "name": "Singapour", "pt": [103.85, 1.29], "where": "core", "from": "apogee-1942", "to": "apogee-1942" },
+    { "name": "Manille", "pt": [120.98, 14.6], "where": "core", "from": "apogee-1942", "to": "apogee-1942" },
+    { "name": "Batavia", "pt": [106.85, -6.2], "where": "core", "from": "apogee-1942", "to": "apogee-1942" },
+    { "name": "Rangoon", "pt": [96.16, 16.8], "where": "core", "from": "apogee-1942", "to": "apogee-1942" },
+    { "name": "Saipan", "pt": [145.75, 15.19], "where": "core", "from": "versailles-1919", "to": "apogee-1942" },
+    { "name": "Guam", "pt": [144.79, 13.44], "where": "not-core" },
+    { "name": "Vladivostok", "pt": [131.89, 43.12], "where": "not-core" }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+ "areas": {
+  "boshin-1868": 368546,
+  "abolition-han-1871": 368546,
+  "conscription-1873": 368546,
+  "satsuma-1877": 377716,
+  "constitution-meiji-1889": 379685,
+  "sino-japonaise-1894": 415369,
+  "alliance-anglaise-1902": 415369,
+  "tsushima-1905": 451991,
+  "annexion-coree-1910": 671439,
+  "tsingtao-1914": 671439,
+  "versailles-1919": 672532,
+  "mandchourie-1931": 672532,
+  "chine-1937": 1503869,
+  "pearl-harbor-1941": 2243345,
+  "apogee-1942": 5397483,
+  "capitulation-1945": 368546
+ },
+ "apogee": "apogee-1942"
+}

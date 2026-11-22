@@ -24,6 +24,7 @@ import { abbassides } from './abbassides.ts';
 import { moghols } from './moghols.ts';
 import { russie } from './russie.ts';
 import { fatimides } from './fatimides.ts';
+import { japon } from './japon.ts';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 
@@ -48,6 +49,7 @@ export const EMPIRES: EmpireConfig[] = [
   moghols,
   russie,
   fatimides,
+  japon,
 ];
 
 export function getEmpire(id: string): EmpireConfig {

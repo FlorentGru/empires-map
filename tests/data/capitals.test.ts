@@ -92,6 +92,17 @@ describe('capitals.json', () => {
       // Russie 1914-1917 : seul Chypre (britannique) tombe dans le cadre, l'étiquette y est placée, loin de Londres.
       'russie/tannenberg-1914|Royaume-Uni',
       'russie/revolution-1917|Royaume-Uni',
+      // Japon 1868-1914 : fenêtre Pacifique (90-180° E), l'étiquette de la Russie tombe sur l'Amour (132° E), à 5 800 km de Saint-Pétersbourg.
+      'japon/boshin-1868|Empire russe',
+      'japon/abolition-han-1871|Empire russe',
+      'japon/conscription-1873|Empire russe',
+      'japon/satsuma-1877|Empire russe',
+      'japon/constitution-meiji-1889|Empire russe',
+      'japon/sino-japonaise-1894|Empire russe',
+      'japon/alliance-anglaise-1902|Empire russe',
+      'japon/tsushima-1905|Empire russe',
+      'japon/annexion-coree-1910|Empire russe',
+      'japon/tsingtao-1914|Empire russe',
     ]);
     const best = new Map<string, { d: number; max: number; msg: string }>();
     for (const l of labels) {
