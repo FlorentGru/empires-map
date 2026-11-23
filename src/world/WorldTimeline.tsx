@@ -31,10 +31,11 @@ export function WorldTimeline({ year, onYear, onStep, playing, onTogglePlay, spe
     onYear(clampYear(posToYear((clientX - r.left) / r.width)));
   };
 
-  const ticks = useMemo(() => EMPIRES.map((e) => e.steps.map((s) => s.year)), []);
+  // Ordre chronologique (date de début) : les bandes forment un escalier qui se lit de gauche à droite.
+  const rows = useMemo(() => [...EMPIRES].sort((a, b) => a.start - b.start), []);
 
   return (
-    <section className="world-tl" aria-label="Frise du monde" style={{ ['--world-rows' as string]: EMPIRES.length }}>
+    <section className="world-tl" aria-label="Frise du monde">
       <div className="world-tl__controls">
         <button type="button" className="world-tl__btn" onClick={() => onStep(-1)} aria-label="Étape précédente (tous empires)" title="Étape précédente (←)">
           ⏮
@@ -67,8 +68,8 @@ export function WorldTimeline({ year, onYear, onStep, playing, onTogglePlay, spe
       <div className="world-tl__body">
         <div className="world-tl__names" aria-hidden="true">
           <span className="world-tl__ruler-pad" />
-          {EMPIRES.map((e) => (
-            <span key={e.id} className="world-tl__name">
+          {rows.map((e) => (
+            <span key={e.id} className="world-tl__name" title={e.name}>
               <i style={{ background: e.color }} />
               {e.name}
             </span>
@@ -94,15 +95,15 @@ export function WorldTimeline({ year, onYear, onStep, playing, onTogglePlay, spe
               </span>
             ))}
           </div>
-          {EMPIRES.map((e, i) => (
+          {rows.map((e) => (
             <div key={e.id} className="world-tl__row" aria-hidden="true">
               <div
                 className="world-tl__band"
                 style={{ left: pct(e.start), width: `${((yearToPos(e.end) - yearToPos(e.start)) * 100).toFixed(3)}%`, background: e.color }}
                 title={e.name}
               />
-              {ticks[i]!.map((y, k) => (
-                <span key={k} className="world-tl__tick" style={{ left: pct(y) }} />
+              {e.steps.map((s) => (
+                <span key={s.id} className="world-tl__tick" style={{ left: pct(s.year) }} />
               ))}
             </div>
           ))}

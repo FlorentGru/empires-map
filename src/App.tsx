@@ -218,8 +218,9 @@ export function App() {
     );
   }
   if (world) {
+    // .world-shell (display: contents) porte le nombre de lignes de la frise : la vue ET les boutons du sage en dépendent.
     return (
-      <>
+      <div className="world-shell" style={{ ['--world-rows' as string]: EMPIRE_INDEX.length }}>
         <Suspense fallback={<p className="loading-view">Chargement…</p>}>
           <WorldYearView initialYear={world.year} backName={empire.name} onBack={leaveWorld} />
         </Suspense>
@@ -234,7 +235,7 @@ export function App() {
             <Gallery onClose={closeGallery} onNavigate={goToStep} initialPerson={personRef} initialFilter={galleryFilter} onFilterChange={onGalleryFilter} />
           </Suspense>
         )}
-      </>
+      </div>
     );
   }
   // `key` : changer d'empire réinitialise le lecteur et la carte.

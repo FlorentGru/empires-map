@@ -1,6 +1,10 @@
 /* Vue « Le monde en l'an X » — charte parchemin. */
-.world-view {
-  --world-tl-h: calc(88px + var(--world-rows, 5) * 17px);
+.world-shell {
+  display: contents;
+  /* Une ligne de 12 px par empire ; au-delà de 45 % de l'écran, la liste défile (règle collée en haut). */
+  --world-tl-h: min(calc(88px + var(--world-rows, 5) * 12px), 45vh);
+  /* Les boutons du sage et du quiz se posent au-dessus de la frise. */
+  --timeline-h: var(--world-tl-h);
 }
 
 .world-back {
@@ -103,20 +107,25 @@
   min-height: 0;
   display: flex;
   gap: 8px;
+  overflow: hidden auto;
+  overscroll-behavior: contain;
 }
 .world-tl__names {
   width: 130px;
   flex: none;
   display: flex;
   flex-direction: column;
-  font-size: 12px;
+  font-size: 11px;
 }
 .world-tl__ruler-pad {
+  position: sticky;
+  top: 0;
   height: 16px;
   flex: none;
 }
 .world-tl__name {
-  height: 17px;
+  height: 12px;
+  line-height: 12px;
   flex: none;
   display: flex;
   align-items: center;
@@ -141,7 +150,10 @@
   user-select: none;
 }
 .world-tl__ruler {
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--parchment);
   height: 16px;
   font-size: 10.5px;
   color: var(--ink-soft);
@@ -159,21 +171,21 @@
 }
 .world-tl__row {
   position: relative;
-  height: 17px;
+  height: 12px;
   border-top: 1px dotted rgba(201, 180, 138, 0.7);
 }
 .world-tl__band {
   position: absolute;
-  top: 4px;
-  height: 9px;
+  top: 3px;
+  height: 6px;
   border-radius: 4px;
   opacity: 0.8;
 }
 .world-tl__tick {
   position: absolute;
-  top: 2px;
+  top: 1px;
   width: 2px;
-  height: 13px;
+  height: 10px;
   margin-left: -1px;
   background: var(--ink);
   opacity: 0.55;
@@ -181,6 +193,7 @@
 }
 .world-tl__cursor {
   position: absolute;
+  z-index: 2;
   top: 0;
   bottom: 0;
   width: 2px;
@@ -192,6 +205,7 @@
 /* Curseur accessible : zone de saisie sur la règle, pouce = repère fin. */
 .world-tl__range {
   position: absolute;
+  z-index: 3;
   left: 0;
   top: 0;
   width: 100%;
@@ -346,8 +360,8 @@
 }
 
 @media (max-width: 767px) {
-  .world-view {
-    --world-tl-h: calc(118px + var(--world-rows, 5) * 17px);
+  .world-shell {
+    --world-tl-h: min(calc(118px + var(--world-rows, 5) * 12px), 40vh);
   }
   .world-tl {
     padding: 6px 10px 8px;
