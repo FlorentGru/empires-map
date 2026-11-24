@@ -1,0 +1,729 @@
+[
+  {
+    "id": "roma",
+    "summary": "Fondée selon la légende en 753 av. J.-C. sur les bords du Tibre, Rome devient la capitale d'une république puis d'un empire qui domine toute la Méditerranée. À partir du IIIe siècle, les empereurs la quittent pour Milan, Ravenne puis Constantinople, mais elle reste le siège des papes et le symbole de l'Empire.",
+    "facts": [
+      "-509 : chute du dernier roi, naissance de la République",
+      "-27 : Auguste devient le premier empereur",
+      "410 : sac de Rome par les Wisigoths d'Alaric"
+    ],
+    "population": "environ 1 million d'habitants vers l'an 100",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Rome"
+  },
+  {
+    "id": "constantinople",
+    "summary": "Byzance, colonie grecque fondée vers -660, est reconstruite en 330 par Constantin qui en fait Constantinople, capitale de l'Empire romain d'Orient. Elle dépasse bientôt Rome en richesse. Les croisés la prennent en 1204, les Byzantins la reprennent en 1261, puis les Ottomans la conquièrent en 1453. Elle devient Istanbul.",
+    "facts": [
+      "330 : inauguration de Constantinople par Constantin",
+      "1204 : prise de la ville par les croisés",
+      "1453 : conquête par Mehmed II"
+    ],
+    "population": "environ 400 000 habitants vers 540, estimation courante",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Istanbul"
+  },
+  {
+    "id": "alexandria",
+    "summary": "Alexandrie est fondée en -331 par Alexandre le Grand sur la côte égyptienne. Capitale des Ptolémées, elle est célèbre pour son phare et sa bibliothèque, qui attirent savants et philosophes. Conquise par Rome en -30, elle reste le grand port du blé égyptien. Les Arabes la prennent en 641.",
+    "facts": [
+      "-331 : fondation par Alexandre le Grand",
+      "-30 : Cléopâtre se suicide, l'Égypte devient romaine",
+      "641 : conquête arabe"
+    ],
+    "population": "environ 500 000 habitants vers -30, estimation incertaine",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Alexandrie"
+  },
+  {
+    "id": "antiochia",
+    "summary": "Antioche, aujourd'hui Antakya dans le sud de la Turquie, est fondée vers -300 par Séleucos Ier. Capitale des Séleucides, elle devient l'une des plus grandes villes de l'Empire romain d'Orient. C'est à Antioche que les disciples de Jésus sont appelés chrétiens pour la première fois. Elle est ruinée au VIe siècle par un grand séisme (526) et par le sac des Perses (540).",
+    "facts": [
+      "-300 : fondation par Séleucos Ier",
+      "115 : un séisme dévaste la ville",
+      "1098 : prise par les croisés"
+    ],
+    "population": "environ 250 000 habitants vers l'an 100, estimation incertaine",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Antioche"
+  },
+  {
+    "id": "carthago",
+    "summary": "Carthage est fondée vers -814 par des Phéniciens venus de Tyr, sur la côte de l'actuelle Tunisie. Grande puissance maritime de la Méditerranée occidentale, elle affronte Rome dans les guerres puniques. Rome la détruit en -146, puis la reconstruit comme colonie et elle redevient une grande ville de l'Empire romain.",
+    "facts": [
+      "-814 : fondation, selon la tradition, par la reine Didon",
+      "-218 : Hannibal traverse les Alpes",
+      "-146 : destruction de Carthage par les Romains"
+    ],
+    "population": "environ 400 000 habitants vers -150, estimation incertaine",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Carthage"
+  },
+  {
+    "id": "athenae",
+    "summary": "Athènes est une cité-État de Grèce, habitée depuis des millénaires. Elle invente la démocratie au Ve siècle av. J.-C. et construit le Parthénon. Elle domine alors la mer Égée, avant d'être battue par Sparte, puis soumise aux Macédoniens et aux Romains. Elle reste un centre de la philosophie et redevient capitale de la Grèce en 1834.",
+    "facts": [
+      "-508 : réformes de Clisthène, naissance de la démocratie",
+      "-480 : les Perses saccagent la ville, puis sont battus à Salamine",
+      "-404 : victoire de Sparte dans la guerre du Péloponnèse"
+    ],
+    "population": "environ 250 000 habitants vers -430, estimation incertaine",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Athènes"
+  },
+  {
+    "id": "mediolanum",
+    "summary": "Mediolanum est une ville du nord de l'Italie, fondée par des Gaulois puis conquise par Rome. Sous Dioclétien, elle devient en 286 la résidence de l'empereur chargé de l'Occident. En 313, l'édit de Milan y accorde la liberté de culte aux chrétiens. Elle perd son rôle en 402, quand Honorius s'installe à Ravenne.",
+    "facts": [
+      "286 : Maximien y installe sa résidence impériale",
+      "313 : édit de Milan, liberté de culte pour les chrétiens",
+      "374 : Ambroise devient évêque de Milan"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Milan"
+  },
+  {
+    "id": "lugdunum",
+    "summary": "Lugdunum est fondée par les Romains en -43, à la jonction du Rhône et de la Saône. Capitale des trois Gaules sous Auguste, c'est la plus grande ville de Gaule romaine et le point de départ du réseau routier. Elle devient Lyon et prospère au Moyen Âge grâce aux foires et à la soie.",
+    "facts": [
+      "-43 : fondation de la colonie romaine de Lugdunum",
+      "-12 : Auguste y crée l'autel des Trois Gaules",
+      "177 : martyrs chrétiens de Lyon"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Lyon"
+  },
+  {
+    "id": "ctesiphon",
+    "summary": "Ctésiphon est une ville de Mésopotamie, sur le Tigre, face à Séleucie. Elle devient la capitale des Parthes puis des Sassanides, grands rivaux de Rome. Les Romains l'ont plusieurs fois prise, notamment sous Trajan. Les armées arabes s'en emparent vers 637. Il reste de la ville l'immense voûte du palais, le Taq-e Kisra.",
+    "facts": [
+      "-120 : vers cette date, les rois parthes en font leur résidence d'hiver",
+      "226 : les Sassanides y installent leur capitale",
+      "637 : prise de la ville par les armées arabes musulmanes"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Ctésiphon"
+  },
+  {
+    "id": "jerusalem",
+    "summary": "Jérusalem est une ville sainte pour les juifs, les chrétiens et les musulmans. Elle est la capitale du royaume de David, puis les Romains la détruisent en 70 et la refondent sous le nom d'Aelia Capitolina en 135. Les Arabes la prennent en 638 et les croisés en 1099. Elle est revendiquée par plusieurs États aujourd'hui.",
+    "facts": [
+      "-587 : destruction du premier Temple",
+      "70 : destruction du second Temple par Titus",
+      "638 : conquête par le calife Omar"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Jérusalem"
+  },
+  {
+    "id": "ravenna",
+    "summary": "Ravenne est un port italien sur l'Adriatique, entouré de marais, ce qui la rend facile à défendre. En 402, l'empereur Honorius y installe la capitale de l'Empire romain d'Occident. Odoacre y dépose le dernier empereur en 476. Théodoric puis Justinien la font décorer de mosaïques byzantines célèbres.",
+    "facts": [
+      "402 : Honorius y transfère la capitale",
+      "476 : fin de l'Empire romain d'Occident",
+      "540 : Bélisaire la prend pour le compte de Justinien"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Ravenne"
+  },
+  {
+    "id": "nicomedia",
+    "summary": "Nicomédie, aujourd'hui İzmit, est fondée en -264 par le roi Nicomède Ier de Bithynie, au fond d'un golfe de la mer de Marmara. Dioclétien la choisit en 286 comme résidence impériale pour la partie orientale de l'empire, car elle est proche des frontières. Il y reste jusqu'en 305. Constantin y meurt en 337, peu après avoir fondé Constantinople.",
+    "facts": [
+      "-264 : le roi Nicomède Ier lui donne son nom",
+      "286 : Dioclétien y établit la capitale de l'Orient",
+      "337 : mort de l'empereur Constantin"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Izmit"
+  },
+  {
+    "id": "nicaea",
+    "summary": "Nicée, aujourd'hui İznik, est une ville du nord-ouest de la Turquie. Les évêques chrétiens s'y réunissent en 325 pour le premier concile œcuménique. Après la prise de Constantinople par les croisés en 1204, l'Empire de Nicée y poursuit la tradition byzantine. Il reprend Constantinople en 1261.",
+    "facts": [
+      "325 : premier concile de Nicée, convoqué par Constantin",
+      "1204 : Théodore Laskaris fonde l'empire de Nicée",
+      "1331 : prise de la ville par les Ottomans d'Orhan"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/İznik"
+  },
+  {
+    "id": "lutetia",
+    "summary": "Lutèce est une petite ville gauloise puis romaine sur l'île de la Cité, sur la Seine. Elle devient Paris au Ve siècle et capitale des rois francs sous Clovis vers 508. Après la Révolution, c'est le centre du pouvoir de Napoléon, qui y est sacré empereur en 1804. Elle est aujourd'hui la capitale de la France.",
+    "facts": [
+      "-52 : les Romains battent les Parisii et prennent Lutèce",
+      "508 : Clovis y établit sa capitale",
+      "1804 : sacre de Napoléon Ier à Notre-Dame"
+    ],
+    "population": "environ 550 000 habitants vers 1800",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Paris"
+  },
+  {
+    "id": "damascus",
+    "summary": "Damas est l'une des plus anciennes villes habitées du monde. Elle devient en 661 la capitale du califat des Omeyyades, qui s'étend alors de l'Espagne à l'Inde. Mu'awiya y établit sa cour et le calife al-Walid y bâtit la grande mosquée. Les Abbassides déplacent la capitale à Bagdad en 750.",
+    "facts": [
+      "661 : Mu'awiya fonde le califat omeyyade à Damas",
+      "715 : achèvement de la grande mosquée",
+      "750 : chute des Omeyyades, capitale transférée à Bagdad"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Damas"
+  },
+  {
+    "id": "pella",
+    "summary": "Pella est la capitale du royaume de Macédoine à partir de la fin du Ve siècle av. J.-C. Philippe II y établit sa cour et Alexandre le Grand y naît en -356. Il part en -334 conquérir l'Empire perse et ne revient jamais. Après la chute de la monarchie en -168, la ville décline et le site se couvre de ruines.",
+    "facts": [
+      "-356 : naissance d'Alexandre le Grand",
+      "-336 : Alexandre devient roi après l'assassinat de Philippe II",
+      "-168 : défaite macédonienne face aux Romains à Pydna"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Pella_(cité_antique)"
+  },
+  {
+    "id": "vindobona",
+    "summary": "Vindobona est un camp romain sur le Danube, qui devient Vienne au Moyen Âge. Les Habsbourg en font leur résidence et la capitale du Saint-Empire de 1558 à 1582, puis de 1612 à 1806. Les Ottomans l'assiègent en 1529 et en 1683 sans réussir à la prendre. Elle est aujourd'hui la capitale de l'Autriche.",
+    "facts": [
+      "1278 : les Habsbourg s'installent en Autriche",
+      "1529 : premier siège de Vienne par les Ottomans",
+      "1683 : second siège, levé par l'armée de Jean III Sobieski"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Vienne_(Autriche)"
+  },
+  {
+    "id": "moscou",
+    "summary": "Moscou est mentionnée en 1147 et devient un puissant duché au XIVe siècle. Ivan IV s'y fait couronner premier tsar en 1547 et elle reste la capitale russe jusqu'en 1712, puis en 1728-1732. Les Russes y mettent le feu en 1812, quand Napoléon y entre. Elle redevient capitale en 1918.",
+    "facts": [
+      "1147 : première mention écrite",
+      "1547 : couronnement d'Ivan le Terrible",
+      "1812 : incendie de Moscou lors de l'occupation française"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Moscou"
+  },
+  {
+    "id": "madrid",
+    "summary": "Madrid est un bourg fortifié créé par les Arabes au IXe siècle. En 1561, Philippe II y installe la Cour, et elle reste la capitale de l'Espagne presque sans interruption, hormis les années 1601 à 1606 passées à Valladolid. Les rois d'Espagne y dirigent un empire qui s'étend de l'Amérique aux Philippines.",
+    "facts": [
+      "865 : fondation d'un fortin arabe nommé Mayrit",
+      "1561 : Philippe II y fixe la capitale",
+      "1808 : soulèvement du 2 mai contre les troupes de Napoléon"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Madrid"
+  },
+  {
+    "id": "saint-petersbourg",
+    "summary": "Saint-Pétersbourg est fondée en 1703 par Pierre le Grand sur les marais de la Neva, pour ouvrir la Russie sur la mer Baltique. Elle est capitale de l'Empire russe de 1712 à 1728, puis de 1732 à 1917. Elle devient Petrograd en 1914, puis Leningrad en 1924, et retrouve son nom en 1991.",
+    "facts": [
+      "1703 : fondation de la forteresse Pierre-et-Paul",
+      "1712 : Pierre le Grand y transfère la capitale",
+      "1917 : révolutions de février et d'octobre"
+    ],
+    "population": "environ 2 millions d'habitants vers 1914",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Saint-Pétersbourg"
+  },
+  {
+    "id": "anyang",
+    "summary": "Anyang est une ville de Chine du Nord, près de laquelle se trouvent les ruines de Yin, dernière capitale des Shang. On y a retrouvé des tombes royales, des bronzes et des milliers d'os divinatoires gravés, les plus anciens écrits chinois. La date précise de l'arrivée des Shang à Yin est discutée. La dynastie tombe vers -1046 devant les Zhou.",
+    "facts": [
+      "-1300 : date traditionnelle de l'installation à Yin",
+      "-1046 : les Zhou renversent les Shang",
+      "1899 : découverte des premiers os oraculaires"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Anyang"
+  },
+  {
+    "id": "haojing",
+    "summary": "Haojing, aussi appelée Hao, est la capitale des Zhou occidentaux, fondée vers 1046 av. J.-C. près de l'actuelle Xi'an. Elle forme une paire avec Feng, sur l'autre rive de la rivière. Les archéologues l'étudient mais le site reste mal connu. Elle est abandonnée en 771 av. J.-C. quand des envahisseurs tuent le roi You et que la cour fuit vers l'est.",
+    "facts": [
+      "-1046 : les Zhou renversent les Shang et fondent leur capitale",
+      "-771 : mort du roi You, la cour se déplace à Luoyi"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Fenghao"
+  },
+  {
+    "id": "xianyang",
+    "summary": "Xianyang est la capitale de l'État de Qin à partir de 350 av. J.-C. Elle devient en 221 av. J.-C. celle de l'empire unifié du premier empereur Qin Shi Huangdi, qui y fait construire de grands palais. Xiang Yu la brûle en 206 av. J.-C. à la chute des Qin. Les Han fondent Chang'an non loin de là.",
+    "facts": [
+      "-350 : le duc Xiao de Qin y transfère la capitale",
+      "-221 : Qin Shi Huangdi unifie la Chine",
+      "-206 : la ville est incendiée par Xiang Yu"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Xianyang"
+  },
+  {
+    "id": "xian",
+    "summary": "Xi'an, appelée Chang'an sous les Han et les Tang, est l'une des plus anciennes capitales de Chine. Elle est la capitale des Han occidentaux puis, sous les Sui et les Tang, la plus grande ville du monde, point de départ de la route de la soie. Après 904, elle perd son rôle politique mais reste grande. L'armée de terre cuite de Qin Shi Huangdi se trouve à proximité.",
+    "facts": [
+      "-202 : Liu Bang, premier empereur Han, y établit sa capitale",
+      "582 : les Sui fondent la ville nouvelle de Daxing",
+      "904 : le dernier empereur Tang quitte la ville"
+    ],
+    "population": "environ 1 million d'habitants vers 750, selon des estimations",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Xi'an"
+  },
+  {
+    "id": "luoyang",
+    "summary": "Luoyang, dans la plaine centrale, est l'une des plus anciennes capitales de Chine, utilisée par plus de dix dynasties. Elle est la capitale des Zhou orientaux, des Han orientaux, des Wei, des Jin occidentaux, des Wei du Nord et plus tard des Sui et des Tang. Elle est célèbre pour ses grottes bouddhiques de Longmen et le monastère du Cheval blanc.",
+    "facts": [
+      "-770 : les Zhou y déplacent leur capitale",
+      "25 : Guangwu, fondateur des Han orientaux, s'y installe",
+      "494 : l'empereur Xiaowen des Wei du Nord y transfère sa cour"
+    ],
+    "population": "environ 500 000 habitants vers 500, selon des estimations",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Luoyang"
+  },
+  {
+    "id": "kaifeng",
+    "summary": "Kaifeng est une ville de la plaine du fleuve Jaune, au carrefour du Grand Canal. Elle est la capitale de plusieurs courtes dynasties du Xe siècle, puis des Song du Nord jusqu'en 1127, sous le nom de Bianjing. Elle est alors l'une des plus grandes villes du monde. Les Jin la prennent en 1127. Le fleuve la détruit plusieurs fois par ses crues.",
+    "facts": [
+      "960 : Zhao Kuangyin fonde la dynastie Song à Kaifeng",
+      "1127 : prise de la ville par les Jin, les Song fuient vers le sud",
+      "1642 : une crue du fleuve Jaune ravage la ville"
+    ],
+    "population": "environ 1 million d'habitants vers 1100, selon des estimations",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Kaifeng"
+  },
+  {
+    "id": "hangzhou",
+    "summary": "Hangzhou est une ville du sud-est de la Chine, au bord du lac de l'Ouest. Après la perte du Nord en 1127, les Song du Sud y installent leur capitale provisoire, appelée Lin'an, de 1138 à 1276. Marco Polo la décrit avec admiration. Les Mongols la prennent en 1276. Elle reste célèbre pour son lac, ses soieries et son thé.",
+    "facts": [
+      "589 : la ville est fondée sous les Sui",
+      "1138 : les Song du Sud la choisissent comme capitale",
+      "1276 : prise de la ville par les Mongols"
+    ],
+    "population": "environ 1 million d'habitants vers 1250, selon des estimations",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Hangzhou"
+  },
+  {
+    "id": "nankin",
+    "summary": "Nankin, ou Nanjing, est une ville du bas Yangzi dont le nom veut dire « capitale du Sud ». Elle est la capitale de plusieurs dynasties du Sud, dont les Wu et les Jin orientaux. Zhu Yuanzhang, fondateur des Ming, en fait sa capitale en 1368. Son fils Yongle la quitte pour Pékin en 1421. Elle reste ensuite une ville importante.",
+    "facts": [
+      "229 : Sun Quan, roi de Wu, y fixe sa capitale",
+      "1368 : Zhu Yuanzhang proclame la dynastie Ming à Nankin",
+      "1853 : les Taiping en font leur capitale"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Nankin"
+  },
+  {
+    "id": "pekin",
+    "summary": "Pékin, ou Beijing, est la capitale de la Chine depuis le XVe siècle. Les Mongols de Khubilaï y fixent leur capitale, Dadu, en 1272, puis les Ming y déplacent leur capitale en 1421 et construisent la Cité interdite. Les Qing y restent jusqu'en 1912. La République populaire en fait sa capitale en 1949. Elle est l'une des plus grandes villes du monde.",
+    "facts": [
+      "1272 : Khubilaï en fait la capitale de l'empire des Yuan",
+      "1421 : l'empereur Yongle y installe officiellement la capitale Ming",
+      "1644 : les Mandchous s'en emparent et fondent la dynastie Qing"
+    ],
+    "population": "environ 1 million d'habitants vers 1500, selon des estimations",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Pékin"
+  },
+  {
+    "id": "chengdu",
+    "summary": "Chengdu est une grande ville de l'ouest de la Chine, dans le bassin du Sichuan. Fondée vers 316 av. J.-C., elle devient en 221 la capitale de Shu Han, l'un des Trois Royaumes, avec Liu Bei. Elle est connue pour son agriculture riche, grâce au système d'irrigation de Dujiangyan, et aujourd'hui pour ses pandas.",
+    "facts": [
+      "-316 : le royaume de Qin conquiert la région de Shu",
+      "221 : Liu Bei fonde Shu Han et en fait sa capitale",
+      "263 : Shu Han est conquis par le royaume de Wei"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Chengdu"
+  },
+  {
+    "id": "karakorum",
+    "summary": "Karakorum est la capitale de l'Empire mongol, fondée vers 1220 par Gengis Khan dans les steppes d'Orkhon, puis bâtie par son fils Ögödeï à partir de 1235. Des artisans et des marchands de toute l'Eurasie y vivent. Khubilaï la quitte en 1260 pour la Chine. Les Chinois la détruisent en 1388 ; il reste surtout un monastère, Erdene Zuu.",
+    "facts": [
+      "1235 : Ögödeï fait bâtir un palais et des murailles",
+      "1260 : Khubilaï déplace le centre de l'empire vers la Chine",
+      "1388 : destruction de la ville par l'armée Ming"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Karakorum"
+  },
+  {
+    "id": "shangdu",
+    "summary": "Shangdu, ou Xanadu, est une ville du nord de la Chine, dans l'actuelle Mongolie-Intérieure. Khubilaï Khan la fait bâtir à partir de 1256 et en fait sa résidence d'été, tandis que la capitale d'hiver est Dadu, l'actuelle Pékin. Marco Polo l'a, dit-on, visitée. Les Ming la détruisent en 1369 ; il en reste des ruines, classées au patrimoine mondial.",
+    "facts": [
+      "1256 : Khubilaï fonde Kaiping, qui devient Shangdu",
+      "1264 : Khubilaï la renomme officiellement Shangdu",
+      "1369 : prise et incendie par l'armée Ming"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Shangdu_(Yuan)"
+  },
+  {
+    "id": "datong",
+    "summary": "Datong est une ville du nord de la Chine, près de la frontière avec les steppes. Sous le nom de Pingcheng, elle est de 398 à 494 la capitale des Wei du Nord, une dynastie fondée par les Tuoba. Ces souverains y font creuser les grottes bouddhiques de Yungang. L'empereur Xiaowen déplace ensuite la capitale à Luoyang. La ville reste une place forte.",
+    "facts": [
+      "398 : Pingcheng devient capitale des Wei du Nord",
+      "460 : début du creusement des grottes de Yungang",
+      "494 : transfert de la capitale à Luoyang"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Datong"
+  },
+  {
+    "id": "shenyang",
+    "summary": "Shenyang, anciennement appelée Moukden, est la grande ville de Mandchourie. Nurhaci y installe en 1625 la capitale des Mandchous, qui fondent peu après la dynastie Qing. En 1644 ils s'emparent de Pékin et y déplacent la cour, mais Moukden garde le rang de capitale secondaire et son palais impérial. Elle est aujourd'hui une grande ville industrielle.",
+    "facts": [
+      "1625 : Nurhaci en fait sa capitale",
+      "1636 : Hong Taiji y proclame la dynastie Qing",
+      "1931 : l'incident de Moukden, début de l'invasion japonaise"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Shenyang"
+  },
+  {
+    "id": "seoul",
+    "summary": "Séoul est la capitale de la Corée. Elle est fondée, selon la tradition, en -18 comme capitale du royaume de Baekje. En 1394, la dynastie Joseon en fait sa capitale, sous le nom de Hanseong, et y bâtit palais et remparts. Occupée par le Japon de 1910 à 1945, elle redevient capitale de la Corée du Sud. Elle compte aujourd'hui environ 10 millions d'habitants.",
+    "facts": [
+      "-18 : fondation de la ville par le royaume de Baekje, selon la tradition",
+      "1394 : Taejo, fondateur des Joseon, y transfère sa capitale",
+      "1910 : début de la domination japonaise"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Séoul"
+  },
+  {
+    "id": "kyoto",
+    "summary": "Kyoto, anciennement Heian-kyō, est la capitale du Japon de 794 à 1868. L'empereur y réside, même quand le vrai pouvoir est entre les mains des shoguns à Kamakura puis à Edo. La ville garde plus de mille temples et sanctuaires. En 1868, l'empereur Meiji quitte Kyoto pour Tokyo. Kyoto reste la grande ville du patrimoine japonais.",
+    "facts": [
+      "794 : l'empereur Kanmu fonde Heian-kyō",
+      "1467 : la guerre d'Ōnin ravage la ville",
+      "1868 : l'empereur Meiji s'installe à Edo, rebaptisée Tokyo"
+    ],
+    "population": "environ 400 000 habitants vers 1700, selon des estimations",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Kyoto"
+  },
+  {
+    "id": "sarai",
+    "summary": "Sarai est la capitale de la Horde d'or, l'État mongol fondé par Batu, petit-fils de Gengis Khan, sur la Volga. Sa localisation exacte reste discutée : on la place près de l'actuelle Selitrennoïe, mais le site est mal connu. La ville est un grand marché sur les routes commerciales. Timur Lang la détruit en 1395, et elle ne s'en relève pas.",
+    "facts": [
+      "1242 : Batu fonde Sarai sur la Volga",
+      "1395 : destruction de la ville par Timur Lang"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Saraï"
+  },
+  {
+    "id": "baghdad",
+    "summary": "Fondée en 762 par le calife abbasside al-Mansour, Bagdad est dite la « Ville ronde » à cause de son plan circulaire. Capitale du califat pendant plus de cinq siècles, hors la parenthèse de Samarra, elle devient un grand centre de savoir avec la Maison de la sagesse. Les Mongols de Houlagou la prennent et la pillent en 1258, mettant fin au califat abbasside.",
+    "facts": [
+      "762 : al-Mansour fonde la Ville ronde sur le Tigre",
+      "830 : la Maison de la sagesse prend son essor sous al-Mamoun",
+      "1258 : prise de la ville par les Mongols de Houlagou"
+    ],
+    "population": "environ 1 million d'habitants au IXe siècle, selon des estimations",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Bagdad"
+  },
+  {
+    "id": "maragha",
+    "summary": "Maragha, en Iran, est la capitale d'Houlagou et de ses premiers successeurs, les Ilkhans mongols de Perse, de 1256 à 1265. Houlagou y fait construire un grand observatoire astronomique, dirigé par le savant Nasir al-Din al-Tusi. Les Ilkhans déplacent ensuite leur capitale à Tabriz. Du site mongol, on connaît peu de vestiges, hormis l'observatoire.",
+    "facts": [
+      "1259 : début de la construction de l'observatoire",
+      "1265 : mort d'Houlagou, la capitale passe à Tabriz"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Maragha"
+  },
+  {
+    "id": "tabriz",
+    "summary": "Tabriz est une ville du nord-ouest de l'Iran, au carrefour des routes entre l'Asie centrale, la Méditerranée et le Caucase. Les Ilkhans mongols en font leur capitale à partir de 1265 et y bâtissent des quartiers entiers. Elle est ensuite capitale des Safavides de 1501 à 1555. Elle reste une grande ville commerçante, réputée pour son bazar.",
+    "facts": [
+      "1265 : devient la capitale des Ilkhans mongols",
+      "1295 : Ghazan, converti à l'islam, devient khan et règne depuis Tabriz",
+      "1501 : Ismaïl Ier y est couronné shah de Perse"
+    ],
+    "population": "environ 150 000 habitants vers 1300, selon des estimations",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Tabriz"
+  },
+  {
+    "id": "soltaniyeh",
+    "summary": "Soltaniyeh est une ville fondée en 1305 par le khan mongol Oldjaïtou, dans le nord-ouest de l'Iran, pour servir de capitale aux Ilkhans. Elle est connue pour son mausolée, dont le dôme de brique émaillée est l'un des plus grands du monde. La capitale perd son rôle après la mort d'Abu Saïd en 1335 et décline.",
+    "facts": [
+      "1305 : début de la construction de la ville",
+      "1313 : le mausolée d'Oldjaïtou est achevé",
+      "1335 : mort d'Abu Saïd, fin de la dynastie ilkhanide"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Soltaniyeh"
+  },
+  {
+    "id": "almaliq",
+    "summary": "Almaliq était une ville de la vallée de l'Ili, dans le Xinjiang actuel, sur la route de la soie. Elle fut la capitale du khanat de Djaghataï, l'un des États nés de l'Empire mongol, et abritait des marchands de plusieurs religions. Elle déclina au XIVe siècle ; son site exact et son histoire sont mal connus.",
+    "facts": [
+      "1260 : Alghu, khan de Djaghataï, y établit sa capitale",
+      "1339 : des missionnaires franciscains y sont tués lors d'une persécution des chrétiens"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Almaliq"
+  },
+  {
+    "id": "mexico",
+    "summary": "Mexico est bâtie sur une île du lac Texcoco, où les Mexicas fondent Tenochtitlan en 1325. Capitale de l'Empire aztèque, elle est reliée à la terre par des chaussées et compte parmi les plus grandes villes du monde. Cortés la détruit en 1521 et les Espagnols élèvent Mexico sur ses ruines, capitale de la Nouvelle-Espagne puis du Mexique.",
+    "facts": [
+      "1325 : fondation de Tenochtitlan",
+      "1521 : chute de la ville aux mains de Cortés et de ses alliés indigènes",
+      "1535 : Mexico devient capitale de la vice-royauté de Nouvelle-Espagne"
+    ],
+    "population": "environ 200 000 habitants vers 1500",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Mexico"
+  },
+  {
+    "id": "lima",
+    "summary": "Lima est fondée par Francisco Pizarro en 1535, peu après la conquête de l'Empire inca, sur la côte du Pacifique. Elle devient la capitale de la vice-royauté espagnole du Pérou et le grand centre du pouvoir espagnol en Amérique du Sud. L'argent extrait des mines des Andes y transite vers l'Europe. Elle est aujourd'hui la capitale du Pérou.",
+    "facts": [
+      "1535 : fondation de la « Ciudad de los Reyes » par Pizarro",
+      "1551 : création de l'université de San Marcos, l'une des plus anciennes d'Amérique",
+      "1821 : proclamation de l'indépendance du Pérou"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Lima"
+  },
+  {
+    "id": "la-havane",
+    "summary": "La Havane est un port de l'île de Cuba, fondé par les Espagnols en 1519. Sa baie profonde en fait l'escale où les flottes chargées d'or et d'argent d'Amérique se rassemblent avant la traversée vers l'Espagne. De grandes forteresses la protègent des pirates. Elle reste la capitale de Cuba aujourd'hui.",
+    "facts": [
+      "1519 : fondation sur la côte nord de Cuba",
+      "1561 : les flottes des Indes y font escale avant le retour vers l'Espagne",
+      "1762 : les Britanniques occupent la ville pendant onze mois"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/La_Havane"
+  },
+  {
+    "id": "buenos-aires",
+    "summary": "Buenos Aires est fondée une première fois en 1536 sur l'estuaire du Rio de la Plata, puis définitivement en 1580. Longtemps petit port isolé de l'Empire espagnol, elle prend de l'importance en 1776 avec la création de la vice-royauté du Rio de la Plata. Après l'indépendance, elle devient la capitale de l'Argentine.",
+    "facts": [
+      "1536 : première fondation par Pedro de Mendoza",
+      "1580 : refondation par Juan de Garay",
+      "1776 : capitale de la vice-royauté du Rio de la Plata"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Buenos_Aires"
+  },
+  {
+    "id": "manille",
+    "summary": "Manille est le port principal des Philippines, sur la baie de Manille. Les Espagnols s'y installent en 1571 et en font la capitale de leur colonie. Les galions de Manille relient chaque année les Philippines au Mexique et font le commerce de l'argent américain contre la soie et la porcelaine chinoises. Elle reste la capitale du pays, après 1898 et l'indépendance.",
+    "facts": [
+      "1565 : début de la route des galions Manille-Acapulco",
+      "1571 : Miguel López de Legazpi fonde la ville espagnole",
+      "1898 : l'Espagne cède les Philippines aux États-Unis"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Manille"
+  },
+  {
+    "id": "cuzco",
+    "summary": "Cuzco, dans les Andes à plus de 3 400 mètres d'altitude, est la capitale de l'Empire inca. Selon la tradition, l'Inca Pachacutec la reconstruit après 1438 et en fait le centre du Tahuantinsuyu, relié par un réseau de routes. Francisco Pizarro la prend en 1533 ; les Espagnols bâtissent leurs églises sur les murs incas, dont certains tiennent encore.",
+    "facts": [
+      "1438 : début des conquêtes de Pachacutec, qui fait de Cuzco le cœur de l'empire",
+      "1533 : prise de la ville par Pizarro",
+      "1950 : un séisme détruit une partie de la ville coloniale mais épargne les murs incas"
+    ],
+    "population": "environ 100 000 habitants vers 1530, estimation incertaine",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Cuzco"
+  },
+  {
+    "id": "valladolid",
+    "summary": "Valladolid est une ville de Castille, sur le Douro. Les rois d'Espagne y installent la Cour de façon provisoire en 1601 : Philippe III s'y établit quatre ans, avant de revenir à Madrid en 1606. Christophe Colomb y meurt en 1506 et Cervantès y écrit une partie de Don Quichotte.",
+    "facts": [
+      "1469 : mariage d'Isabelle de Castille et de Ferdinand d'Aragon, célébré à Valladolid",
+      "1506 : mort de Christophe Colomb",
+      "1601 : Philippe III y transfère la Cour, qui rentre à Madrid en 1606"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Valladolid"
+  },
+  {
+    "id": "prague",
+    "summary": "Prague est la capitale du royaume de Bohême, sur la Vltava. Charles IV, empereur du Saint-Empire, y installe sa cour en 1355, la fait agrandir et y fonde une université. Rodolphe II la choisit à son tour de 1583 à 1611. Elle accueille alors savants et artistes. Elle est aujourd'hui la capitale de la Tchéquie.",
+    "facts": [
+      "1348 : Charles IV fonde l'université Charles",
+      "1355 : Charles IV est couronné empereur à Rome et fait de Prague sa capitale",
+      "1618 : défenestration de Prague, début de la guerre de Trente Ans"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Prague"
+  },
+  {
+    "id": "aquisgranum",
+    "summary": "Aix-la-Chapelle est connue des Romains pour ses sources chaudes. Charlemagne y construit un palais et une chapelle à partir de 794 et en fait sa résidence principale. Il y meurt en 814. Après le partage de Verdun en 843, la ville reste le lieu de couronnement des rois germaniques jusqu'en 1531.",
+    "facts": [
+      "794 : Charlemagne s'y installe durablement",
+      "814 : mort de Charlemagne, enterré dans la chapelle",
+      "936 : Otton Ier y est couronné roi de Germanie"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Aix-la-Chapelle"
+  },
+  {
+    "id": "babylone",
+    "summary": "Babylone est une très ancienne ville de Mésopotamie, sur l'Euphrate, célèbre pour ses murailles, ses temples et sa grande ziggourat. Alexandre le Grand y entre en 331 av. J.-C. après sa victoire sur les Perses et en fait l'une de ses résidences. Il y meurt en 323 av. J.-C. La ville perd ensuite son importance, puis est peu à peu abandonnée.",
+    "facts": [
+      "-539 : Cyrus II la prend et l'intègre à l'Empire perse",
+      "-331 : Alexandre entre dans la ville sans combat",
+      "-323 : mort d'Alexandre à Babylone"
+    ],
+    "population": "environ 200 000 habitants vers -500, selon des estimations",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Babylone"
+  },
+  {
+    "id": "suse",
+    "summary": "Suse est l'une des plus anciennes villes du monde, au sud-ouest de l'Iran, capitale de l'Élam. Darius Ier en fait l'une des grandes capitales de l'Empire perse achéménide, avec Persépolis, et y bâtit un immense palais. Alexandre la prend en 331 av. J.-C. Les ruines, fouillées depuis le XIXe siècle, couvrent plusieurs collines.",
+    "facts": [
+      "-4000 : les premiers habitants installent la ville",
+      "-521 : Darius Ier y construit son palais",
+      "-331 : Alexandre le Grand s'en empare"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Suse_(Iran)"
+  },
+  {
+    "id": "sogut",
+    "summary": "Söğüt est un petit bourg d'Anatolie. Vers 1299, le chef turc Osman y fonde la principauté qui devient l'Empire ottoman. Elle reste sa première capitale jusqu'en 1326, quand Bursa est prise. On sait peu de choses sur ses débuts, car peu de sources écrites de l'époque nous sont parvenues.",
+    "facts": [
+      "1299 : date traditionnelle de la fondation de l'État ottoman",
+      "1326 : mort d'Osman, prise de Bursa par son fils Orhan"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Söğüt_(Bilecik)"
+  },
+  {
+    "id": "bursa",
+    "summary": "Bursa est une ville du nord-ouest de l'actuelle Turquie, au pied du mont Uludağ. Les Ottomans la prennent en 1326, après un long siège, et elle devient leur première grande capitale jusque vers 1365. Les premiers sultans y sont enterrés. Célèbre pour sa soie, elle reste une ville importante.",
+    "facts": [
+      "1326 : prise par Orhan, fils d'Osman",
+      "1365 : Murad Ier transfère la capitale à Andrinople",
+      "1855 : un séisme détruit une partie de la ville"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Bursa"
+  },
+  {
+    "id": "edirne",
+    "summary": "Edirne, ancienne Hadrianopolis, est une ville fondée par l'empereur Hadrien vers 125, aux portes de l'Europe. Les Ottomans la prennent vers 1361 et la nomment Andrinople. Elle devient leur capitale en 1365, d'où ils conquièrent les Balkans, jusqu'à la prise de Constantinople en 1453. Elle reste une ville impériale.",
+    "facts": [
+      "125 : fondation de Hadrianopolis par Hadrien",
+      "378 : les Wisigoths y écrasent l'armée romaine de Valens",
+      "1365 : Murad Ier y installe la capitale ottomane"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Edirne"
+  },
+  {
+    "id": "cairo",
+    "summary": "Le Caire est fondé en 969 par le général fatimide Jawhar, près de l'ancienne capitale Fustat. En 973, le calife al-Muizz s'y installe : c'est la capitale des Fatimides jusqu'en 1171. Il y fonde la mosquée al-Azhar, qui devient un centre d'étude. Avec les siècles, Le Caire devient la plus grande ville du monde arabe.",
+    "facts": [
+      "641 : fondation de Fustat par les Arabes",
+      "969 : fondation d'al-Qahira par Jawhar",
+      "972 : fondation de l'université d'al-Azhar"
+    ],
+    "population": "environ 200 000 habitants vers l'an 1000, estimation incertaine",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Le_Caire"
+  },
+  {
+    "id": "niani",
+    "summary": "Niani est la capitale de l'Empire du Mali, que Soundiata Keïta fonde vers 1235. On la place en général dans l'actuelle Guinée, près de la frontière avec le Mali, mais les historiens discutent encore de son emplacement exact. Au XIVe siècle, elle accueille des savants et des marchands. Elle décline ensuite avec l'empire.",
+    "facts": [
+      "1235 : victoire de Soundiata à Kirina, naissance de l'empire",
+      "1324 : Mansa Moussa part pour La Mecque depuis le Mali",
+      "1670 : selon la tradition, les Bambaras de Ségou pillent Niani"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Niani"
+  },
+  {
+    "id": "gao",
+    "summary": "Gao, sur le fleuve Niger, est un grand carrefour du commerce de l'or et du sel à travers le Sahara. Intégrée à l'Empire du Mali, elle devient la capitale de l'Empire songhaï avec Sonni Ali Ber puis les Askia. Un sultan marocain détruit cet empire en 1591, et Gao perd alors sa puissance.",
+    "facts": [
+      "1325 : Gao est soumise par le Mali de Mansa Moussa",
+      "1464 : Sonni Ali Ber devient souverain songhaï",
+      "1591 : bataille de Tondibi, victoire des Marocains"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Gao_(Mali)"
+  },
+  {
+    "id": "pasargades",
+    "summary": "Pasargades est la première capitale de l'Empire perse achéménide, fondée par Cyrus II le Grand vers 550 av. J.-C. dans le sud de l'Iran, après sa victoire sur les Mèdes. On y voit encore son tombeau et les restes de palais entourés de jardins. Darius Ier déplace ensuite le centre du pouvoir vers Suse et Persépolis.",
+    "facts": [
+      "-550 : Cyrus II fonde la ville après sa victoire sur les Mèdes",
+      "-529 : Cyrus est enterré dans son tombeau à Pasargades",
+      "2004 : classement des ruines au patrimoine mondial"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Pasargades"
+  },
+  {
+    "id": "kufa",
+    "summary": "Koufa est une ville de garnison fondée par les Arabes musulmans vers 638 en Irak, près de l'Euphrate. Elle devient un foyer important de la vie religieuse et politique, notamment pour les partisans d'Ali. En 750, les Abbassides y sont proclamés califes et y installent brièvement leur capitale, avant de fonder Bagdad en 762. La ville décline ensuite.",
+    "facts": [
+      "638 : fondation de la ville de garnison",
+      "656 : Ali, quatrième calife, y établit sa capitale",
+      "750 : proclamation du premier calife abbasside, as-Saffah"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Koufa"
+  },
+  {
+    "id": "samarra",
+    "summary": "Samarra est une ville du Tigre fondée en 836 par le calife abbasside al-Mutasim, qui voulait y installer son armée turque loin des habitants de Bagdad. Elle sert de capitale au califat pendant environ cinquante ans avant que la cour ne retourne à Bagdad. Ses ruines, avec le grand minaret en spirale de la mosquée al-Malwiya, sont aujourd'hui classées au patrimoine mondial.",
+    "facts": [
+      "836 : al-Mutasim fonde la ville et y transfère sa cour",
+      "851 : construction de la Grande Mosquée et de son minaret en spirale",
+      "892 : le calife al-Mutadid ramène la capitale à Bagdad"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Samarra"
+  },
+  {
+    "id": "agra",
+    "summary": "Agra est une ville du nord de l'Inde, sur la rivière Yamuna. Babur la prend en 1526 et elle devient une capitale des empereurs moghols, notamment sous Akbar, qui y construit un grand fort, puis sous Shah Jahan. C'est lui qui fait élever le Taj Mahal, tombeau de son épouse. En 1648, la cour passe à Delhi.",
+    "facts": [
+      "1526 : Babur s'installe à Agra après sa victoire de Panipat",
+      "1565 : Akbar commence la construction du fort d'Agra",
+      "1653 : achèvement du Taj Mahal"
+    ],
+    "population": "environ 500 000 habitants vers 1600, selon des estimations",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Agra"
+  },
+  {
+    "id": "fatehpur-sikri",
+    "summary": "Fatehpur Sikri est une ville nouvelle, construite par l'empereur Akbar à partir de 1571 près d'un village où vivait un saint soufi. Elle sert de capitale moghole pendant une quinzaine d'années, puis est abandonnée vers 1585, peut-être faute d'eau. Ses palais de grès rouge, restés presque intacts, sont classés au patrimoine mondial.",
+    "facts": [
+      "1571 : Akbar décide de bâtir la ville",
+      "1585 : la cour quitte Fatehpur Sikri pour Lahore",
+      "1986 : classement au patrimoine mondial"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Fatehpur-Sikri"
+  },
+  {
+    "id": "lahore",
+    "summary": "Lahore est une grande ville du Pendjab, aujourd'hui au Pakistan. L'empereur moghol Akbar y installe sa cour de 1585 à 1598 pour surveiller la frontière du nord-ouest. Ses successeurs y bâtissent le fort, la mosquée Badshahi et les jardins de Shalimar. Elle reste une capitale culturelle importante après la chute des Moghols.",
+    "facts": [
+      "1585 : Akbar y installe sa capitale",
+      "1641 : les jardins de Shalimar sont créés sous Shah Jahan",
+      "1673 : achèvement de la mosquée Badshahi sous Aurangzeb"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Lahore"
+  },
+  {
+    "id": "delhi",
+    "summary": "Delhi est une grande ville du nord de l'Inde, capitale de plusieurs royaumes et sultanats. En 1648, l'empereur moghol Shah Jahan y achève Shahjahanabad, avec le Fort rouge, et en fait la capitale de l'empire. La ville reste le centre moghol jusqu'à la révolte de 1857, puis les Britanniques la reprennent. Elle est aujourd'hui capitale de l'Inde.",
+    "facts": [
+      "1206 : début du sultanat de Delhi",
+      "1648 : Shah Jahan inaugure Shahjahanabad, nouvelle capitale",
+      "1857 : fin de l'Empire moghol après la grande révolte"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Delhi"
+  },
+  {
+    "id": "mahdia",
+    "summary": "Mahdia est une ville portuaire de Tunisie, fondée en 916 par le calife fatimide Abdallah al-Mahdi sur une presqu'île fortifiée. Il s'y installe en 921 et en fait la capitale du califat. De là, les Fatimides préparent leurs expéditions vers l'Égypte. La capitale passe à al-Mansouriya en 947.",
+    "facts": [
+      "916 : début de la construction",
+      "921 : installation de la capitale fatimide",
+      "1148 : les Normands de Sicile prennent la ville"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Mahdia"
+  },
+  {
+    "id": "raqqada",
+    "summary": "Raqqada est une ville construite près de Kairouan par les émirs aghlabides en 876. En 909, le chef fatimide Abdallah al-Mahdi y arrive et s'y installe : elle sert de première capitale au califat des Fatimides. Il la quitte en 921 pour Mahdia. Il ne reste aujourd'hui que peu de vestiges de la ville.",
+    "facts": [
+      "876 : fondation de la ville par l'émir aghlabide Ibrahim II",
+      "909 : arrivée d'Abdallah al-Mahdi, premier calife fatimide",
+      "921 : le calife s'installe à Mahdia, sa nouvelle capitale"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Raqqada"
+  },
+  {
+    "id": "al-mansuriya",
+    "summary": "Al-Mansouriya est une ville royale construite en 947 par le calife fatimide al-Mansur près de Kairouan, en Tunisie. Elle sert de capitale au califat jusqu'en 973, date à laquelle al-Muizz part pour l'Égypte et fonde Le Caire. Il en reste peu de traces et le site demeure mal connu.",
+    "facts": [
+      "947 : fondation d'al-Mansouriya par le calife al-Mansur",
+      "969 : conquête de l'Égypte par le général Jawhar",
+      "973 : al-Muizz quitte la ville pour Le Caire"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Mansouria"
+  },
+  {
+    "id": "tokyo",
+    "summary": "Tokyo s'appelait Edo avant 1868. Tokugawa Ieyasu y installe son gouvernement en 1603 et la ville devient le centre du shogunat jusqu'en 1868. Cette année-là, l'empereur Meiji s'y installe et la rebaptise Tokyo, capitale de l'Empire du Japon. Elle est détruite par un séisme en 1923, puis en partie par les bombardements de 1945.",
+    "facts": [
+      "1457 : Ōta Dōkan y bâtit le château d'Edo",
+      "1603 : Tokugawa Ieyasu devient shogun et gouverne depuis Edo",
+      "1923 : le grand séisme du Kantō détruit une grande partie de la ville"
+    ],
+    "population": "environ 1 million d'habitants vers 1720, selon des estimations",
+    "wikipedia": "https://fr.wikipedia.org/wiki/Tokyo"
+  },
+  {
+    "id": "osaka",
+    "summary": "Osaka est un grand port du Japon, sur la baie d'Osaka. Sous le nom de Naniwa, elle fut brièvement capitale impériale au VIIe siècle. Toyotomi Hideyoshi y bâtit son château à la fin du XVIe siècle. Elle devient au XVIIe siècle le grand centre du commerce du riz, surnommée la « cuisine de la nation ». Elle est aujourd'hui la deuxième agglomération du pays.",
+    "facts": [
+      "645 : l'empereur Kōtoku fait de Naniwa sa capitale",
+      "1583 : Hideyoshi commence le château d'Osaka",
+      "1615 : le siège d'Osaka met fin au clan Toyotomi"
+    ],
+    "wikipedia": "https://fr.wikipedia.org/wiki/Osaka"
+  }
+]

@@ -13,8 +13,9 @@ import Markdown from 'react-markdown';
 import { DEFAULT_SITE_URL, HOME_TEXT, HUB_TEXT, HUBS, pageDescription, pageTitle, pathOf, SITE_NAME, type Hub, type Route } from '../src/lib/seo.ts';
 import { formatYear, toAstronomical } from '../src/lib/years.ts';
 import { apogeeStepId } from '../src/lib/apogee.ts';
-import { ERA_LABELS, eraOf, stepsShowing, type Era } from '../src/lib/monumentInfo.ts';
-import type { Empire, EmpireCatalogEntry, EmpireStats, Person, TimelineStep } from '../src/types.ts';
+import { ERA_LABELS, continentOf, eraOf, stepsShowing, type Era } from '../src/lib/monumentInfo.ts';
+import type { City, Empire, EmpireCatalogEntry, EmpireStats, Person, TimelineStep } from '../src/types.ts';
+import type { CityInfo } from '../src/types-city.ts';
 import type { Invention } from '../src/types-invention.ts';
 import type { Monument } from '../src/types-monument.ts';
 import type { RegionInfo } from '../src/types-region.ts';
@@ -48,6 +49,8 @@ const people = Object.fromEntries(empires.map((e) => [e.id, extra<Person>(e.id, 
 const inventions = Object.fromEntries(empires.map((e) => [e.id, extra<Invention>(e.id, 'inventions.json')]));
 const regions = Object.fromEntries(empires.map((e) => [e.id, extra<RegionInfo>(e.id, 'regions.json')]));
 const monuments = readJson<Monument[]>(path.join(DATA, 'monuments.json')).sort((a, b) => a.built - b.built);
+const cityInfos = readJson<CityInfo[]>(path.join(DATA, 'city-info.json'));
+const citiesById = new Map(readJson<City[]>(path.join(DATA, 'cities.json')).map((c) => [c.id, c]));
 const catalog = readJson<EmpireCatalogEntry[]>(path.join(DATA, 'empires-catalog.json')).sort((a, b) => a.start - b.start);
 
 /* ---------- HTML ---------- */
@@ -347,6 +350,31 @@ const hubPage = (hub: Hub, body: string, items: { name: string; url?: string }[]
         })
         .join('')}`,
       monuments.map((m) => ({ name: m.name })),
+    ),
+  );
+
+  const cityRows = cityInfos.flatMap((info) => {
+    const city = citiesById.get(info.id);
+    return city ? [{ city, info }] : [];
+  });
+  const continents = [...new Set(cityRows.map((x) => continentOf(x.city.coords)))].sort();
+  pages.push(
+    hubPage(
+      'villes',
+      continents
+        .map(
+          (c) =>
+            `<h2>${esc(c)}</h2>${cityRows
+              .filter((x) => continentOf(x.city.coords) === c)
+              .sort((a, b) => a.city.founded - b.city.founded)
+              .map(
+                ({ city, info }) =>
+                  `<h3 id="${city.id}">${esc(city.modern)}</h3><p class="seo-meta">${esc(city.names.map((n) => n.name).join(' → '))} · fondée en ${formatYear(city.founded)}</p><p>${esc(info.summary)}</p>`,
+              )
+              .join('')}`,
+        )
+        .join(''),
+      cityRows.map((x) => ({ name: x.city.modern })),
     ),
   );
 

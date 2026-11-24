@@ -26,7 +26,7 @@ export function continentOf([lon, lat]: [number, number]): string {
  * Étapes de l'Atlas où le monument est debout ET proche du lieu de l'étape (≤ maxKm), donc visible
  * dans le cadrage : au plus `limit` étapes, triées par date, une seule par empire et par siècle.
  */
-export function stepsShowing(m: Monument, empires: Empire[], maxKm = 2500, limit = 8) {
+export function stepsShowing(m: Pick<Monument, 'location' | 'built' | 'until'>, empires: Empire[], maxKm = 2500, limit = 8) {
   const out: { empireId: string; empireName: string; stepId: string; title: string; year: number }[] = [];
   const seen = new Set<string>();
   for (const e of empires) {

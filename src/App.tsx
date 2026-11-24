@@ -49,8 +49,13 @@ import type { Empire, TimelineStep } from './types';
 // Galerie des figurines : chargée à la demande.
 // Vues chargées à la demande (hors du JS initial) ; celles qui parcourent tous les empires attendent leurs timelines.
 /** Onglet de la galerie de chaque page de synthèse, et inversement. */
-const HUB_FILTER: Partial<Record<Hub, 'monuments' | 'people' | 'inventions'>> = { monuments: 'monuments', personnages: 'people', inventions: 'inventions' };
-const FILTER_HUB: Record<string, Hub> = { monuments: 'monuments', people: 'personnages', inventions: 'inventions' };
+const HUB_FILTER: Partial<Record<Hub, 'monuments' | 'cities' | 'people' | 'inventions'>> = {
+  monuments: 'monuments',
+  villes: 'cities',
+  personnages: 'people',
+  inventions: 'inventions',
+};
+const FILTER_HUB: Record<string, Hub> = { monuments: 'monuments', cities: 'villes', people: 'personnages', inventions: 'inventions' };
 
 const Gallery = lazy(withAllEmpires(() => import('./figures/Gallery').then((m) => ({ default: m.Gallery }))));
 const CompareView = lazy(withAllEmpires(() => import('./compare/CompareView').then((m) => ({ default: m.CompareView }))));
@@ -109,7 +114,7 @@ export function App() {
     enterHub('empires');
     setAllEmpires(true);
   }, []);
-  // Galerie : ?figures=gallery, ou page de synthèse /monuments/, /personnages/, /inventions/ (onglet correspondant).
+  // Galerie : ?figures=gallery, ou page de synthèse /monuments/, /villes/, /personnages/, /inventions/ (onglet correspondant).
   const [galleryFilter] = useState(() => {
     const h = currentHub();
     return h ? HUB_FILTER[h] : undefined;

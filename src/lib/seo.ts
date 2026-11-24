@@ -8,8 +8,8 @@ export const SITE_NAME = 'Atlas des Empires';
 export const DEFAULT_SITE_URL = 'https://florentgru.github.io/empires-map/';
 
 /** Pages de synthèse : la page « Tous les empires » et les onglets de la galerie. */
-export type Hub = 'empires' | 'monuments' | 'personnages' | 'inventions';
-export const HUBS: Hub[] = ['empires', 'monuments', 'personnages', 'inventions'];
+export type Hub = 'empires' | 'monuments' | 'villes' | 'personnages' | 'inventions';
+export const HUBS: Hub[] = ['empires', 'monuments', 'villes', 'personnages', 'inventions'];
 
 export type Route = { kind: 'home' } | { kind: 'empire'; empire: string } | { kind: 'step'; empire: string; step: string } | { kind: 'hub'; hub: Hub };
 
@@ -95,6 +95,12 @@ export const HUB_TEXT: Record<Hub, { title: string; heading: string; description
     title: 'Grands monuments et sept merveilles du monde',
     heading: 'Monuments du monde',
     description: 'Les grands monuments de l’histoire et les sept merveilles du monde antique : dates, civilisation, histoire et emplacement sur la carte.',
+  },
+  villes: {
+    title: 'Grandes villes de l’histoire : noms, capitales, fondation',
+    heading: 'Villes de l’histoire',
+    description:
+      'Rome, Constantinople, Bagdad, Tenochtitlan… les grandes villes des empires : noms successifs, fondation, empires dont elles furent la capitale et repères.',
   },
   personnages: {
     title: 'Personnages illustres des grands empires',

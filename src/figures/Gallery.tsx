@@ -7,6 +7,7 @@ import { characterSvg, FACTION_COLORS, soldierSvg } from './registry';
 import { ARCHETYPE_INFO, FACTION_INFO, type FigureInfo } from './descriptions';
 import { norm, scaled, Svg } from './svgUtils';
 import { PeopleView, type PersonRef } from './People';
+import { CitiesView } from './Cities';
 import { MonumentsView } from './Monuments';
 import { DisastersView } from './Disasters';
 import { InventionsView } from './Inventions';
@@ -26,7 +27,7 @@ interface Props {
 }
 
 type Kind = 'faction' | 'archetype';
-export type Filter = 'all' | 'soldiers' | 'characters' | 'units' | 'people' | 'monuments' | 'disasters' | 'inventions';
+export type Filter = 'all' | 'soldiers' | 'characters' | 'units' | 'people' | 'monuments' | 'cities' | 'disasters' | 'inventions';
 
 interface Item {
   uid: string;
@@ -301,6 +302,7 @@ export function Gallery({ onClose, onNavigate, initialPerson = null, initialFilt
                 ['units', 'Unités de bataille'],
                 ['people', 'Personnages illustres'],
                 ['monuments', 'Monuments'],
+                ['cities', 'Villes'],
                 ['disasters', 'Catastrophes et guerres'],
                 ['inventions', 'Inventions'],
               ] as const
@@ -339,6 +341,8 @@ export function Gallery({ onClose, onNavigate, initialPerson = null, initialFilt
           <PeopleView query={query} initial={initialPerson} onNavigate={onNavigate} />
         ) : filter === 'monuments' ? (
           <MonumentsView query={query} onNavigate={onNavigate} />
+        ) : filter === 'cities' ? (
+          <CitiesView query={query} onNavigate={onNavigate} />
         ) : filter === 'disasters' ? (
           <DisastersView query={query} onNavigate={onNavigate} />
         ) : filter === 'inventions' ? (

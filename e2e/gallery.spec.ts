@@ -90,3 +90,13 @@ test('galerie : bouton « Tous » des inventions et des personnages illustres', 
   await expect(dialog.getByRole('heading', { name: /Charlemagne/ }).first()).toBeVisible();
   expect(errors).toEqual([]);
 });
+
+test('galerie : la fiche de Rome indique ses capitales et le lien Wikipédia', async ({ page }) => {
+  await page.goto('/?empire=rome&step=zama-202');
+  await page.getByRole('button', { name: 'Galerie', exact: true }).click();
+  const dialog = page.locator('dialog.gallery');
+  await page.getByRole('button', { name: 'Villes', exact: true }).click();
+  await dialog.getByRole('button', { name: /^Rome/ }).first().click();
+  await expect(dialog.getByText('Capitale de :')).toBeVisible();
+  await expect(dialog.getByRole('link', { name: /Wikipédia/ })).toHaveAttribute('href', /fr\.wikipedia\.org/);
+});

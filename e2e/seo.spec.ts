@@ -53,5 +53,9 @@ test('SEO : pages statiques lisibles sans JavaScript, puis la carte au même end
   await expect(page.locator('dialog.gallery')).toHaveAttribute('open', '');
   await expect(page.getByRole('heading', { name: 'Monuments', exact: true })).toBeVisible();
   await expect(page).toHaveTitle(/monuments/i);
+
+  await page.goto('/villes/');
+  await expect(page.locator('dialog.gallery')).toHaveAttribute('open', '');
+  await expect(page.getByRole('heading', { name: 'Villes', exact: true })).toBeVisible();
   expect(errors).toEqual([]);
 });

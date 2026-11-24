@@ -52,7 +52,7 @@
 **Explore and compare**
 - **The world in year X**: every empire of the atlas at the same date.
 - **Compare two empires** side by side: maps, population, economy, army, culture.
-- Galleries of historical figures, monuments, inventions and battle units.
+- Galleries of historical figures, monuments, inventions, battle units and 71 great cities (names through the ages, capital of which empire, key dates).
 - Readable, shareable URLs (`/rome/zama-202/`), mobile layout with a bottom sheet.
 
 **An AI historian: the Sage**
@@ -77,7 +77,7 @@
 | Geo pipeline | Node + TypeScript scripts, Turf.js, signed distance fields baked into PNGs |
 | AI agent | Python, Google ADK, FastAPI; Gemini, Claude (via LiteLLM) or a local Ollama model |
 | Quality | Vitest, Playwright, oxlint, Prettier, pytest, GitHub Actions |
-| Hosting | GitHub Pages (static build, deployed on every push to `main`), 519 prerendered pages; optional copy on a VPS ([docs/DEPLOIEMENT-VPS.md](docs/DEPLOIEMENT-VPS.md)) |
+| Hosting | GitHub Pages (static build, deployed on every push to `main`), 520 prerendered pages; optional copy on a VPS ([docs/DEPLOIEMENT-VPS.md](docs/DEPLOIEMENT-VPS.md)) |
 
 ## How it works
 
@@ -99,7 +99,7 @@ Some engineering choices worth a look:
 - **Gliding borders with distance fields.** For each transition, a build script rasterizes the old and new borders into a signed distance field (SDF) and computes when each pixel is reached. In the browser, a fragment shader only receives one number per frame, the progress `p`, so the front advances pixel by pixel at 60 fps. The shader runs as a **MapLibre custom layer** draped onto the 3D terrain.
 - **Heavy geometry at build time, never in the browser.** Clipping, simplification, diffs and SDFs are precomputed. Empires are discovered from their data folder: adding one needs no code change.
 - **Performance budget.** Empires, sprites and the battle engine are loaded on demand; the initial JavaScript is checked in CI to stay under **460 KB gzipped**. Animations never touch React state or rebuild map data per frame.
-- **Static first, SEO included.** The build prerenders 502 HTML pages (empires, steps, galleries) with Open Graph, JSON-LD, a sitemap and `llms.txt`, so the atlas is readable without JavaScript.
+- **Static first, SEO included.** The build prerenders 520 HTML pages (empires, steps, galleries) with Open Graph, JSON-LD, a sitemap and `llms.txt`, so the atlas is readable without JavaScript.
 
 Full write-up (in French): [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
@@ -169,7 +169,7 @@ Restart the dev server after regenerating `public/data`.
 | `src/` | React + MapLibre app: map layers, timeline, player, panels, battles, quiz, Sage chat |
 | `src/types.ts` | Data contract (empire, step, city, army, figure…) |
 | `data/empires/<id>/` | One folder per empire: `timeline.json`, `people.json`, `profile.json`, `inventions.json`, `regions.json` |
-| `data/` | Cities, monuments, trade routes, disasters, battles, neighbor capitals |
+| `data/` | Cities and their fact sheets (`city-info.json`), monuments, trade routes, disasters, battles, neighbor capitals |
 | `scripts/` | Geo pipeline (extraction, overrides, diffs, distance fields), prerendering, checks |
 | `overrides/` | Hand-made border corrections, step by step |
 | `public/data/` | Generated data served to the browser |

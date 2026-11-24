@@ -10,6 +10,7 @@ describe('chemins des pages', () => {
     { kind: 'step', empire: 'saint-empire', step: 'otton-962' },
     { kind: 'hub', hub: 'monuments' },
     { kind: 'hub', hub: 'empires' },
+    { kind: 'hub', hub: 'villes' },
   ];
 
   it('aller-retour route → chemin → route', () => {
