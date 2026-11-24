@@ -239,13 +239,19 @@
   border-radius: 2px;
 }
 
+/* Quiz et sage : collés à droite, sous le panneau, qu'il soit ouvert ou replié. */
+.world-shell .chat-fabs {
+  right: 12px;
+}
+
 /* ---------- Panneau ---------- */
 .world-panel {
   position: absolute;
   z-index: 2;
   top: 64px;
   right: 12px;
-  bottom: calc(var(--world-tl-h) + 12px);
+  /* Laisse sous le panneau la place des boutons Quiz et sage (~41 px, plus le sage qui dépasse). */
+  bottom: calc(var(--world-tl-h) + 84px);
   width: 340px;
   max-width: calc(100vw - 24px);
   display: flex;
