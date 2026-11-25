@@ -11,6 +11,7 @@ import * as turf from '@turf/turf';
 import polylabel from 'polylabel';
 import type { Feature, FeatureCollection, MultiPolygon, Polygon, Position } from 'geojson';
 import { ROOT, selectedEmpires, paths } from './empires/index.ts';
+import { pickSnapshot, loadSnap } from './snapshots.ts';
 import { NEIGHBOR_NAMES } from './neighbor-names.ts';
 import CAPITALS from '../data/capitals.json' with { type: 'json' };
 
@@ -24,7 +25,6 @@ function capitalAt(name: string, year: number): Capital | undefined {
 }
 
 type Poly = Feature<Polygon | MultiPolygon>;
-const HB_DIR = path.join(ROOT, '.cache/historical-basemaps');
 const DEFAULT_BOUNDS: [Position, Position] = [
   [-30, 5],
   [75, 66],
@@ -42,39 +42,6 @@ const NEIGHBOR_BOUNDS: Record<string, [Position, Position]> = {
 };
 const MIN_AREA_KM2 = 30000;
 const MAX_BYTES = 60 * 1024;
-
-function snapYear(name: string): number {
-  const m = /^world_(bc)?(\d+)$/.exec(name)!;
-  return m[1] ? -Number(m[2]) : Number(m[2]);
-}
-const SNAPSHOTS = fs
-  .readdirSync(HB_DIR)
-  .filter((f) => /^world_(bc)?\d+\.geojson$/.test(f))
-  .map((f) => f.replace('.geojson', ''))
-  .sort((a, b) => snapYear(a) - snapYear(b));
-
-/** Même règle que build-territories : le plus proche, antérieur préféré s'il n'est pas beaucoup plus loin. */
-function pickSnapshot(year: number): string {
-  let before: string | undefined;
-  let after: string | undefined;
-  for (const s of SNAPSHOTS) {
-    if (snapYear(s) <= year) before = s;
-    else if (!after) after = s;
-  }
-  if (!before) return after!;
-  if (!after) return before;
-  return year - snapYear(before) <= (snapYear(after) - year) * 1.25 ? before : after;
-}
-
-const snapCache = new Map<string, FeatureCollection>();
-function loadSnap(name: string): FeatureCollection {
-  let s = snapCache.get(name);
-  if (!s) {
-    s = JSON.parse(fs.readFileSync(path.join(HB_DIR, `${name}.geojson`), 'utf8')) as FeatureCollection;
-    snapCache.set(name, s);
-  }
-  return s;
-}
 
 const r3 = (n: number) => Math.round(n * 1000) / 1000;
 function roundCoords(c: unknown): unknown {

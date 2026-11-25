@@ -1,0 +1,3355 @@
+{
+  "abbassides": {
+    "Califat abbasside": [
+      {
+        "from": 750,
+        "religion": "islam-sunnite",
+        "minorities": [
+          "christianismes-orientaux",
+          "judaisme"
+        ]
+      }
+    ],
+    "Ifriqiya (gouverneur local)": [
+      {
+        "from": 750,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Ifriqiya (demi-autonomie)": [
+      {
+        "from": 751,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Émirat aghlabide": [
+      {
+        "from": 800,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Camp d'al-Amin": [
+      {
+        "from": 813,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Azerbaïdjan de Babak (khurramites)": [
+      {
+        "from": 813,
+        "religion": "islam",
+        "note": "Mouvement khurramite, aux croyances islamiques et iraniennes mêlées."
+      }
+    ],
+    "Camp d'al-Ma'mun": [
+      {
+        "from": 813,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Émirat tahiride (Khorassan)": [
+      {
+        "from": 830,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Émirat samanide (Transoxiane)": [
+      {
+        "from": 830,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Califat abbasside (anarchie de Samarra)": [
+      {
+        "from": 861,
+        "religion": "islam-sunnite",
+        "minorities": [
+          "christianismes-orientaux",
+          "judaisme"
+        ]
+      }
+    ],
+    "Émirat ziyadide (Yémen)": [
+      {
+        "from": 861,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Califat abbasside (Syrie aux officiers turcs)": [
+      {
+        "from": 868,
+        "religion": "islam-sunnite",
+        "minorities": [
+          "christianismes-orientaux",
+          "judaisme"
+        ]
+      }
+    ],
+    "Émirat tulunide (Égypte)": [
+      {
+        "from": 868,
+        "religion": "islam-sunnite",
+        "minorities": [
+          "christianismes-orientaux"
+        ]
+      }
+    ],
+    "Zanj (Bassora et Ahwaz)": [
+      {
+        "from": 869,
+        "religion": "islam",
+        "note": "Révolte d’esclaves aux idées kharijites."
+      }
+    ],
+    "Émirat tulunide (Égypte et Syrie)": [
+      {
+        "from": 869,
+        "religion": "islam-sunnite",
+        "minorities": [
+          "christianismes-orientaux"
+        ]
+      }
+    ],
+    "Califat abbasside (al-Muqtadir)": [
+      {
+        "from": 909,
+        "religion": "islam-sunnite",
+        "minorities": [
+          "christianismes-orientaux",
+          "judaisme"
+        ]
+      }
+    ],
+    "Émirat samanide (Khorassan et Transoxiane)": [
+      {
+        "from": 909,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Émirat sajide (Azerbaïdjan)": [
+      {
+        "from": 909,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Califat abbasside (tutelle bouyide)": [
+      {
+        "from": 945,
+        "religion": "islam-sunnite",
+        "minorities": [
+          "christianismes-orientaux"
+        ],
+        "note": "Le calife reste sunnite sous la tutelle des émirs bouyides, chiites."
+      }
+    ],
+    "Émirat bouyide (Fars, Jibal, Khuzestan)": [
+      {
+        "from": 945,
+        "religion": "islam-chiite",
+        "note": "Dynastie duodécimaine ; la population reste en majorité sunnite."
+      }
+    ],
+    "Émirat hamdanide (Mossoul et Alep)": [
+      {
+        "from": 945,
+        "religion": "islam-chiite"
+      }
+    ],
+    "Émirat ikhshidide (Égypte, Syrie du sud, Hedjaz)": [
+      {
+        "from": 945,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Califat abbasside (tutelle seldjoukide)": [
+      {
+        "from": 1055,
+        "religion": "islam-sunnite",
+        "minorities": [
+          "christianismes-orientaux",
+          "judaisme"
+        ]
+      }
+    ],
+    "Sultanat seldjoukide": [
+      {
+        "from": 1055,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Émirat uqaylide (Mossoul)": [
+      {
+        "from": 1055,
+        "religion": "islam-chiite"
+      }
+    ],
+    "Émirat mirdaside (Alep)": [
+      {
+        "from": 1055,
+        "religion": "islam-chiite"
+      }
+    ],
+    "Émirats turcs de Syrie (Alep, Damas)": [
+      {
+        "from": 1099,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Califat abbasside (al-Nasir)": [
+      {
+        "from": 1180,
+        "religion": "islam-sunnite",
+        "minorities": [
+          "christianismes-orientaux",
+          "judaisme"
+        ]
+      }
+    ],
+    "Sultanat ayyoubide": [
+      {
+        "from": 1180,
+        "religion": "islam-sunnite",
+        "minorities": [
+          "christianismes-orientaux"
+        ]
+      }
+    ],
+    "Atabeg zengide de Mossoul": [
+      {
+        "from": 1180,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Sultanat seldjoukide de Roum": [
+      {
+        "from": 1180,
+        "religion": "islam-sunnite",
+        "minorities": [
+          "orthodoxie"
+        ],
+        "note": "Anatolie encore très largement chrétienne."
+      }
+    ],
+    "Sultanat ghouride": [
+      {
+        "from": 1180,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Califat abbasside (Bagdad et Sawad)": [
+      {
+        "from": 1258,
+        "religion": "islam-sunnite",
+        "minorities": [
+          "christianismes-orientaux",
+          "judaisme"
+        ]
+      }
+    ],
+    "Sultanat ayyoubide de Syrie (Alep, Damas)": [
+      {
+        "from": 1258,
+        "religion": "islam-sunnite",
+        "minorities": [
+          "christianismes-orientaux"
+        ]
+      }
+    ],
+    "Sultanat mamelouk": [
+      {
+        "from": 1258,
+        "religion": "islam-sunnite"
+      }
+    ]
+  },
+  "alexandre": {
+    "Royaume de Macédoine": [
+      {
+        "from": -336,
+        "religion": "polytheisme"
+      }
+    ],
+    "Ligue de Corinthe": [
+      {
+        "from": -336,
+        "religion": "polytheisme"
+      }
+    ],
+    "Thessalie et Épire": [
+      {
+        "from": -336,
+        "religion": "polytheisme"
+      }
+    ],
+    "Thrace du Nord et Illyrie du Sud": [
+      {
+        "from": -335,
+        "religion": "polytheisme"
+      }
+    ],
+    "Empire d'Alexandre": [
+      {
+        "from": -334,
+        "religion": "polytheisme"
+      }
+    ],
+    "Cyrénaïque": [
+      {
+        "from": -331,
+        "religion": "polytheisme"
+      }
+    ],
+    "Royaume de Taxile": [
+      {
+        "from": -326,
+        "religion": "hindouisme",
+        "note": "Religion védique et brahmanique du Pendjab."
+      }
+    ],
+    "Royaume de Pôros": [
+      {
+        "from": -326,
+        "religion": "hindouisme",
+        "note": "Religion védique et brahmanique du Pendjab."
+      }
+    ]
+  },
+  "azteques": {
+    "Empire aztèque": [
+      {
+        "from": 1428,
+        "religion": "polytheisme"
+      }
+    ],
+    "Isthme de Tehuantepec": [
+      {
+        "from": 1500,
+        "religion": "polytheisme"
+      }
+    ]
+  },
+  "carolingiens": {
+    "Royaume des Francs": [
+      {
+        "from": 751,
+        "religion": "christianisme"
+      }
+    ],
+    "Gascogne (Vasconie)": [
+      {
+        "from": 751,
+        "religion": "christianisme"
+      }
+    ],
+    "Frise": [
+      {
+        "from": 751,
+        "religion": "polytheisme",
+        "note": "Frisons encore largement païens, mission de saint Boniface."
+      },
+      {
+        "from": 785,
+        "religion": "christianisme",
+        "note": "Christianisation après la soumission des Frisons."
+      }
+    ],
+    "États pontificaux": [
+      {
+        "from": 756,
+        "religion": "christianisme"
+      }
+    ],
+    "Septimanie": [
+      {
+        "from": 768,
+        "religion": "christianisme",
+        "minorities": [
+          "judaisme"
+        ]
+      }
+    ],
+    "Royaume lombard (Charlemagne)": [
+      {
+        "from": 774,
+        "religion": "christianisme"
+      }
+    ],
+    "Saxe (en cours de soumission)": [
+      {
+        "from": 782,
+        "religion": "polytheisme",
+        "note": "Saxons encore païens, convertis de force par Charlemagne."
+      }
+    ],
+    "Bavière orientale et Salzbourg": [
+      {
+        "from": 788,
+        "religion": "christianisme"
+      }
+    ],
+    "Marche d'Espagne (Gérone)": [
+      {
+        "from": 788,
+        "religion": "christianisme"
+      }
+    ],
+    "Saxe": [
+      {
+        "from": 788,
+        "religion": "polytheisme",
+        "note": "Saxons païens, soumis puis christianisés de force."
+      },
+      {
+        "from": 804,
+        "religion": "christianisme",
+        "note": "Christianisation achevée après la fin des guerres de Saxe."
+      }
+    ],
+    "Duché de Bénévent": [
+      {
+        "from": 788,
+        "religion": "christianisme"
+      }
+    ],
+    "Marche d'Avarie": [
+      {
+        "from": 796,
+        "religion": "polytheisme",
+        "note": "Slaves et Avars encore païens."
+      },
+      {
+        "from": 830,
+        "religion": "christianisme",
+        "note": "Évangélisation depuis Salzbourg."
+      }
+    ],
+    "Empire carolingien": [
+      {
+        "from": 800,
+        "religion": "christianisme"
+      }
+    ],
+    "Bretagne": [
+      {
+        "from": 800,
+        "religion": "christianisme"
+      }
+    ],
+    "Francie occidentale (Charles le Chauve)": [
+      {
+        "from": 843,
+        "religion": "christianisme"
+      }
+    ],
+    "Francie orientale (Louis le Germanique)": [
+      {
+        "from": 843,
+        "religion": "christianisme"
+      }
+    ],
+    "Francie médiane (Lothaire Ier)": [
+      {
+        "from": 843,
+        "religion": "christianisme"
+      }
+    ],
+    "Lotharingie (Lothaire II)": [
+      {
+        "from": 855,
+        "religion": "christianisme"
+      }
+    ],
+    "Provence et Bourgogne (Charles de Provence)": [
+      {
+        "from": 855,
+        "religion": "christianisme"
+      }
+    ],
+    "Royaume d'Italie (Louis II, empereur)": [
+      {
+        "from": 855,
+        "religion": "christianisme"
+      }
+    ],
+    "Royaume d'Italie et Provence (Louis II, empereur)": [
+      {
+        "from": 870,
+        "religion": "christianisme"
+      }
+    ],
+    "Empire carolingien réunifié (Charles le Gros)": [
+      {
+        "from": 884,
+        "religion": "christianisme"
+      }
+    ],
+    "Francie occidentale (Eudes)": [
+      {
+        "from": 887,
+        "religion": "christianisme"
+      }
+    ],
+    "Francie orientale (Arnulf de Carinthie)": [
+      {
+        "from": 887,
+        "religion": "christianisme"
+      }
+    ],
+    "Haute-Bourgogne et Provence (Rodolphe, Louis l'Aveugle)": [
+      {
+        "from": 887,
+        "religion": "christianisme"
+      }
+    ],
+    "Royaume d'Italie (Bérenger de Frioul)": [
+      {
+        "from": 887,
+        "religion": "christianisme"
+      }
+    ]
+  },
+  "carthage": {
+    "Empire carthaginois": [
+      {
+        "from": -650,
+        "religion": "polytheisme",
+        "note": "Panthéon punique : Baal Hammon, Tanit, Melqart."
+      }
+    ],
+    "Alliés italiens d'Hannibal": [
+      {
+        "from": -216,
+        "religion": "polytheisme",
+        "note": "Panthéon punique : Baal Hammon, Tanit, Melqart."
+      }
+    ]
+  },
+  "china": {
+    "Domaine royal des Shang": [
+      {
+        "from": -1250,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Zhou (vassaux puis rivaux)": [
+      {
+        "from": -1250,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Seigneurs vassaux des Shang": [
+      {
+        "from": -1250,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Domaine royal des Zhou": [
+      {
+        "from": -1046,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Fief de Jin": [
+      {
+        "from": -1046,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Fiefs de Qi et de Lu": [
+      {
+        "from": -1046,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Fief de Yan": [
+      {
+        "from": -1046,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Fiefs de Wei et de Song": [
+      {
+        "from": -1046,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Domaine royal des Zhou (Luoyang)": [
+      {
+        "from": -770,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Qin": [
+      {
+        "from": -770,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Jin": [
+      {
+        "from": -770,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Qi": [
+      {
+        "from": -770,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Lu et Song": [
+      {
+        "from": -770,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Zheng et Wei": [
+      {
+        "from": -770,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Yan": [
+      {
+        "from": -770,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Chu": [
+      {
+        "from": -770,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Wu et Yue": [
+      {
+        "from": -770,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Lu": [
+      {
+        "from": -551,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Song, Zheng et Wei": [
+      {
+        "from": -551,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Wu": [
+      {
+        "from": -551,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Yue": [
+      {
+        "from": -551,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Zhou (roi symbolique)": [
+      {
+        "from": -403,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Han": [
+      {
+        "from": -403,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Wei": [
+      {
+        "from": -403,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Zhao": [
+      {
+        "from": -403,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Empire Qin": [
+      {
+        "from": -221,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Empire Han (commanderies)": [
+      {
+        "from": -202,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Royaumes vassaux des Han": [
+      {
+        "from": -202,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Empire Han": [
+      {
+        "from": -138,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Nanyue (vassal)": [
+      {
+        "from": -138,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Empire Xin (Wang Mang)": [
+      {
+        "from": 9,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Han orientaux": [
+      {
+        "from": 97,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Xiongnu du Sud (vassaux)": [
+      {
+        "from": 97,
+        "religion": "traditionnelles"
+      }
+    ],
+    "Protectorat des Régions d'Occident": [
+      {
+        "from": 97,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Turbans jaunes (Hebei, en révolte)": [
+      {
+        "from": 184,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Cao Cao (futur Wei)": [
+      {
+        "from": 208,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Liu Bei (futur Shu)": [
+      {
+        "from": 208,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Sun Quan (futur Wu)": [
+      {
+        "from": 208,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Shu-Han": [
+      {
+        "from": 220,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Jin occidentaux": [
+      {
+        "from": 280,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Han-Zhao (Xiongnu)": [
+      {
+        "from": 311,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Zhao postérieur": [
+      {
+        "from": 311,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Dai (Tuoba)": [
+      {
+        "from": 311,
+        "religion": "traditionnelles"
+      }
+    ],
+    "Yan (Murong)": [
+      {
+        "from": 311,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Liang antérieur": [
+      {
+        "from": 311,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Cheng-Han": [
+      {
+        "from": 311,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Jin orientaux": [
+      {
+        "from": 311,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Qin antérieur": [
+      {
+        "from": 383,
+        "religion": "religions-chinoises",
+        "minorities": [
+          "bouddhisme"
+        ]
+      }
+    ],
+    "Bassin du Tarim (Qin antérieur)": [
+      {
+        "from": 383,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Wei du Nord": [
+      {
+        "from": 439,
+        "religion": "religions-chinoises",
+        "minorities": [
+          "bouddhisme"
+        ],
+        "note": "Le bouddhisme devient influent sous les Wei du Nord."
+      }
+    ],
+    "Liu Song (Song du Sud)": [
+      {
+        "from": 439,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Qi du Sud": [
+      {
+        "from": 494,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Empire Sui": [
+      {
+        "from": 589,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Turcs orientaux (tributaires)": [
+      {
+        "from": 605,
+        "religion": "traditionnelles"
+      }
+    ],
+    "Tang": [
+      {
+        "from": 618,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Zheng (Wang Shichong)": [
+      {
+        "from": 618,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Xia (Dou Jiande)": [
+      {
+        "from": 618,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Liang (Liang Shidu)": [
+      {
+        "from": 618,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Qin occidental": [
+      {
+        "from": 618,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Chu (Yangzi)": [
+      {
+        "from": 618,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Turcs orientaux (protectorat d'Anyang)": [
+      {
+        "from": 630,
+        "religion": "traditionnelles"
+      }
+    ],
+    "Tuyuhun (vassal)": [
+      {
+        "from": 630,
+        "religion": "traditionnelles",
+        "minorities": [
+          "bouddhisme"
+        ]
+      }
+    ],
+    "Protectorat d'Annan": [
+      {
+        "from": 630,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Turcs orientaux (soumis)": [
+      {
+        "from": 645,
+        "religion": "traditionnelles"
+      }
+    ],
+    "Protectorat d'Anxi": [
+      {
+        "from": 645,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Silla (vassal des Tang)": [
+      {
+        "from": 645,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Zhou (Wu Zetian)": [
+      {
+        "from": 690,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Protectorat de Beiting": [
+      {
+        "from": 751,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Nanzhao (vassal)": [
+      {
+        "from": 751,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Silla (vassal)": [
+      {
+        "from": 751,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Yan (An Lushan)": [
+      {
+        "from": 755,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Liang postérieurs": [
+      {
+        "from": 907,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Jin (Li Keyong)": [
+      {
+        "from": 907,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Qi (Fengxiang)": [
+      {
+        "from": 907,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Shu antérieur": [
+      {
+        "from": 907,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Jingnan": [
+      {
+        "from": 907,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Chu (Ma)": [
+      {
+        "from": 907,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Wuyue": [
+      {
+        "from": 907,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Wu (Yangzhou)": [
+      {
+        "from": 907,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Min": [
+      {
+        "from": 907,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Nanhan (Canton)": [
+      {
+        "from": 907,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Tanguts": [
+      {
+        "from": 936,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Jin postérieurs": [
+      {
+        "from": 936,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Liao (Khitans)": [
+      {
+        "from": 936,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Tang du Sud": [
+      {
+        "from": 936,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Shu postérieur": [
+      {
+        "from": 936,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Han du Sud (Canton)": [
+      {
+        "from": 936,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Song": [
+      {
+        "from": 960,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Han du Nord": [
+      {
+        "from": 960,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Chu (Zhou Xing)": [
+      {
+        "from": 960,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Song du Nord": [
+      {
+        "from": 1005,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Tanguts (futurs Xia occidentaux)": [
+      {
+        "from": 1005,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Xia occidentaux (Tanguts)": [
+      {
+        "from": 1038,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Jin (Jurchens)": [
+      {
+        "from": 1127,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Song du Sud": [
+      {
+        "from": 1127,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Xia occidentaux (vassaux des Mongols)": [
+      {
+        "from": 1215,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Empire mongol": [
+      {
+        "from": 1215,
+        "religion": "traditionnelles"
+      }
+    ],
+    "Empire mongol (Yuan)": [
+      {
+        "from": 1268,
+        "religion": "religions-chinoises",
+        "minorities": [
+          "bouddhisme"
+        ],
+        "note": "Le bouddhisme tibétain est protégé par les Mongols."
+      }
+    ],
+    "Tibet (vassal)": [
+      {
+        "from": 1268,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Corée (Goryeo, vassale)": [
+      {
+        "from": 1268,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Empire Yuan": [
+      {
+        "from": 1279,
+        "religion": "religions-chinoises",
+        "minorities": [
+          "bouddhisme"
+        ],
+        "note": "Le bouddhisme tibétain est protégé par les Mongols."
+      }
+    ],
+    "Empire Ming": [
+      {
+        "from": 1368,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Tibet (nominalement vassal)": [
+      {
+        "from": 1368,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Jurchens de Mandchourie (protectorat)": [
+      {
+        "from": 1421,
+        "religion": "traditionnelles"
+      }
+    ],
+    "Tibet (influence ming)": [
+      {
+        "from": 1421,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Jin postérieurs (Nurhaci)": [
+      {
+        "from": 1619,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Qing (Mandchous)": [
+      {
+        "from": 1644,
+        "religion": "religions-chinoises",
+        "minorities": [
+          "bouddhisme"
+        ]
+      }
+    ],
+    "Shun (Li Zicheng)": [
+      {
+        "from": 1644,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Xi (Zhang Xianzhong)": [
+      {
+        "from": 1644,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Ming du Sud": [
+      {
+        "from": 1644,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Mongols du Sud (soumis ou alliés)": [
+      {
+        "from": 1644,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Joseon (Corée, vassal des Qing)": [
+      {
+        "from": 1644,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Empire Qing": [
+      {
+        "from": 1683,
+        "religion": "religions-chinoises",
+        "minorities": [
+          "bouddhisme"
+        ]
+      }
+    ],
+    "Joseon (Corée, vassal)": [
+      {
+        "from": 1759,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Tibet (protégé)": [
+      {
+        "from": 1793,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Royaume céleste des Taiping": [
+      {
+        "from": 1853,
+        "religion": "religions-chinoises",
+        "minorities": [
+          "christianisme"
+        ],
+        "note": "Doctrine chrétienne hétérodoxe du régime ; la population reste attachée aux cultes chinois."
+      }
+    ],
+    "Mongolie (nominalement qing)": [
+      {
+        "from": 1900,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Tibet (nominalement qing)": [
+      {
+        "from": 1900,
+        "religion": "bouddhisme"
+      }
+    ],
+    "République de Chine": [
+      {
+        "from": 1912,
+        "religion": "religions-chinoises"
+      }
+    ]
+  },
+  "espagne": {
+    "Couronnes de Castille et d'Aragon": [
+      {
+        "from": 1492,
+        "religion": "catholicisme",
+        "minorities": [
+          "islam",
+          "judaisme"
+        ],
+        "note": "Mudéjars et morisques ; les Juifs sont expulsés en 1492."
+      },
+      {
+        "from": 1610,
+        "religion": "catholicisme",
+        "note": "Expulsion des morisques en 1609-1614."
+      }
+    ],
+    "Royaume de Sicile": [
+      {
+        "from": 1492,
+        "religion": "catholicisme"
+      }
+    ],
+    "Royaume de Sardaigne": [
+      {
+        "from": 1492,
+        "religion": "catholicisme"
+      }
+    ],
+    "Hispaniola (La Isabela)": [
+      {
+        "from": 1494,
+        "religion": "traditionnelles",
+        "note": "Indiens taïnos, en déclin rapide."
+      },
+      {
+        "from": 1530,
+        "religion": "catholicisme",
+        "note": "Les Taïnos ont presque disparu ; colons et esclaves christianisés."
+      }
+    ],
+    "Royaume de Naples": [
+      {
+        "from": 1504,
+        "religion": "catholicisme"
+      }
+    ],
+    "Antilles espagnoles": [
+      {
+        "from": 1494,
+        "religion": "traditionnelles",
+        "note": "Indiens taïnos, en déclin rapide."
+      },
+      {
+        "from": 1530,
+        "religion": "catholicisme",
+        "note": "Les Taïnos ont presque disparu ; colons et esclaves christianisés."
+      }
+    ],
+    "Pays-Bas bourguignons": [
+      {
+        "from": 1516,
+        "religion": "catholicisme",
+        "minorities": [
+          "protestantisme"
+        ]
+      }
+    ],
+    "Franche-Comté": [
+      {
+        "from": 1516,
+        "religion": "catholicisme"
+      }
+    ],
+    "Oran": [
+      {
+        "from": 1516,
+        "religion": "catholicisme"
+      }
+    ],
+    "Panama (Darién)": [
+      {
+        "from": 1516,
+        "religion": "traditionnelles",
+        "note": "Peuples indigènes du Darién."
+      },
+      {
+        "from": 1530,
+        "religion": "catholicisme"
+      }
+    ],
+    "Nouvelle-Espagne (Mexique central)": [
+      {
+        "from": 1521,
+        "religion": "polytheisme",
+        "note": "Religion aztèque, détruite par la conquête."
+      },
+      {
+        "from": 1530,
+        "religion": "catholicisme",
+        "note": "Évangélisation massive par les franciscains."
+      }
+    ],
+    "Duché de Milan (occupé par les impériaux)": [
+      {
+        "from": 1525,
+        "religion": "catholicisme"
+      }
+    ],
+    "Nouvelle-Espagne": [
+      {
+        "from": 1532,
+        "religion": "catholicisme"
+      }
+    ],
+    "Duché de Milan (fief impérial)": [
+      {
+        "from": 1532,
+        "religion": "catholicisme"
+      }
+    ],
+    "Duché de Milan": [
+      {
+        "from": 1556,
+        "religion": "catholicisme"
+      }
+    ],
+    "Vice-royauté du Pérou": [
+      {
+        "from": 1556,
+        "religion": "catholicisme"
+      }
+    ],
+    "Floride": [
+      {
+        "from": 1571,
+        "religion": "traditionnelles",
+        "note": "Peuples indigènes ; présence espagnole réduite."
+      },
+      {
+        "from": 1650,
+        "religion": "catholicisme",
+        "note": "Missions franciscaines."
+      }
+    ],
+    "Philippines": [
+      {
+        "from": 1571,
+        "religion": "traditionnelles",
+        "minorities": [
+          "islam"
+        ],
+        "note": "Animisme ; islam au sud."
+      },
+      {
+        "from": 1600,
+        "religion": "catholicisme",
+        "minorities": [
+          "islam"
+        ],
+        "note": "Christianisation de Luçon et des Visayas ; islam à Mindanao."
+      }
+    ],
+    "Pays-Bas espagnols (provinces du Sud)": [
+      {
+        "from": 1580,
+        "religion": "catholicisme",
+        "minorities": [
+          "protestantisme"
+        ]
+      }
+    ],
+    "Royaume de Portugal": [
+      {
+        "from": 1580,
+        "religion": "catholicisme"
+      }
+    ],
+    "Brésil portugais": [
+      {
+        "from": 1580,
+        "religion": "catholicisme"
+      }
+    ],
+    "Empire portugais d'Afrique et d'Asie": [
+      {
+        "from": 1580,
+        "religion": "catholicisme",
+        "note": "Religion des colons ; la majorité des habitants n’est pas chrétienne."
+      }
+    ],
+    "Pays-Bas espagnols": [
+      {
+        "from": 1643,
+        "religion": "catholicisme",
+        "minorities": [
+          "protestantisme"
+        ]
+      }
+    ],
+    "Mariannes": [
+      {
+        "from": 1700,
+        "religion": "catholicisme"
+      }
+    ],
+    "Royaume d'Espagne": [
+      {
+        "from": 1713,
+        "religion": "catholicisme"
+      }
+    ],
+    "Cuba, Porto Rico et Santo Domingo": [
+      {
+        "from": 1763,
+        "religion": "catholicisme"
+      }
+    ],
+    "Nouvelle-Grenade": [
+      {
+        "from": 1763,
+        "religion": "catholicisme"
+      }
+    ],
+    "Río de la Plata": [
+      {
+        "from": 1763,
+        "religion": "catholicisme"
+      }
+    ],
+    "Paraguay": [
+      {
+        "from": 1763,
+        "religion": "catholicisme"
+      }
+    ],
+    "Louisiane espagnole": [
+      {
+        "from": 1763,
+        "religion": "catholicisme"
+      }
+    ],
+    "Cuba et Porto Rico": [
+      {
+        "from": 1805,
+        "religion": "catholicisme"
+      }
+    ],
+    "Pérou royaliste (Pérou, Haut-Pérou, Équateur)": [
+      {
+        "from": 1821,
+        "religion": "catholicisme"
+      }
+    ],
+    "Mariannes du Nord": [
+      {
+        "from": 1898,
+        "religion": "catholicisme"
+      }
+    ],
+    "Carolines et Palau": [
+      {
+        "from": 1898,
+        "religion": "catholicisme",
+        "minorities": [
+          "protestantisme"
+        ]
+      }
+    ],
+    "Guinée espagnole": [
+      {
+        "from": 1898,
+        "religion": "traditionnelles",
+        "minorities": [
+          "catholicisme"
+        ],
+        "note": "Religions traditionnelles, missions catholiques."
+      },
+      {
+        "from": 1950,
+        "religion": "catholicisme"
+      }
+    ],
+    "Sahara espagnol": [
+      {
+        "from": 1898,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Ifni": [
+      {
+        "from": 1912,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Protectorat espagnol du Maroc (zone nord)": [
+      {
+        "from": 1912,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Protectorat espagnol du Maroc (zone sud, Tarfaya)": [
+      {
+        "from": 1912,
+        "religion": "islam-sunnite"
+      }
+    ]
+  },
+  "fatimides": {
+    "Califat fatimide": [
+      {
+        "from": 909,
+        "religion": "islam-chiite",
+        "minorities": [
+          "islam-sunnite",
+          "christianismes-orientaux"
+        ],
+        "note": "Dynastie ismaélienne ; la population reste surtout sunnite et copte."
+      }
+    ],
+    "Émirat kalbide de Sicile": [
+      {
+        "from": 919,
+        "religion": "islam-sunnite",
+        "minorities": [
+          "orthodoxie"
+        ],
+        "note": "Population sicilienne musulmane, avec des chrétiens grecs."
+      }
+    ],
+    "Tribus berbères tributaires": [
+      {
+        "from": 930,
+        "religion": "islam",
+        "note": "Berbères sunnites ou kharijites."
+      }
+    ],
+    "Zirides d'Ifriqiya": [
+      {
+        "from": 973,
+        "religion": "islam-sunnite",
+        "note": "Alliés des Fatimides, puis sunnites à partir de 1048."
+      }
+    ],
+    "Hedjaz (chérifat hasanide)": [
+      {
+        "from": 973,
+        "religion": "islam-sunnite"
+      }
+    ]
+  },
+  "inca": {
+    "Empire inca": [
+      {
+        "from": 1438,
+        "religion": "polytheisme"
+      }
+    ],
+    "Royaume de Chincha": [
+      {
+        "from": 1470,
+        "religion": "polytheisme"
+      }
+    ],
+    "Côte de Tumbes": [
+      {
+        "from": 1480,
+        "religion": "polytheisme"
+      }
+    ]
+  },
+  "japon": {
+    "Empire du Japon": [
+      {
+        "from": 1868,
+        "religion": "shinto"
+      }
+    ],
+    "Taïwan": [
+      {
+        "from": 1894,
+        "religion": "religions-chinoises",
+        "minorities": [
+          "traditionnelles"
+        ]
+      }
+    ],
+    "Sakhaline du Sud": [
+      {
+        "from": 1905,
+        "religion": "traditionnelles",
+        "note": "Aïnous et colons japonais."
+      },
+      {
+        "from": 1920,
+        "religion": "shinto",
+        "note": "Colons japonais devenus majoritaires."
+      }
+    ],
+    "Guandong (Port-Arthur et Dalian)": [
+      {
+        "from": 1905,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Corée (protectorat)": [
+      {
+        "from": 1905,
+        "religion": "religions-chinoises",
+        "minorities": [
+          "bouddhisme"
+        ],
+        "note": "Confucianisme, bouddhisme et chamanisme."
+      }
+    ],
+    "Corée (Chōsen)": [
+      {
+        "from": 1910,
+        "religion": "religions-chinoises",
+        "minorities": [
+          "bouddhisme"
+        ],
+        "note": "Confucianisme, bouddhisme et chamanisme."
+      }
+    ],
+    "Tsingtao (occupé)": [
+      {
+        "from": 1914,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Mandats du Pacifique (occupés)": [
+      {
+        "from": 1914,
+        "religion": "catholicisme",
+        "minorities": [
+          "protestantisme"
+        ]
+      }
+    ],
+    "Mandats du Pacifique": [
+      {
+        "from": 1919,
+        "religion": "catholicisme",
+        "minorities": [
+          "protestantisme"
+        ]
+      }
+    ],
+    "Mandchoukouo": [
+      {
+        "from": 1931,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Chine du Nord occupée": [
+      {
+        "from": 1937,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Chine côtière occupée": [
+      {
+        "from": 1937,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Mengjiang": [
+      {
+        "from": 1937,
+        "religion": "bouddhisme",
+        "note": "Mongols bouddhistes tibétains."
+      }
+    ],
+    "Indochine": [
+      {
+        "from": 1941,
+        "religion": "bouddhisme",
+        "minorities": [
+          "catholicisme"
+        ]
+      }
+    ],
+    "Thaïlande (alliée)": [
+      {
+        "from": 1941,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Birmanie": [
+      {
+        "from": 1942,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Malaisie": [
+      {
+        "from": 1942,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Singapour": [
+      {
+        "from": 1942,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Brunei": [
+      {
+        "from": 1942,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Indes néerlandaises": [
+      {
+        "from": 1942,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Philippines": [
+      {
+        "from": 1942,
+        "religion": "catholicisme"
+      }
+    ]
+  },
+  "mali": {
+    "Empire du Mali": [
+      {
+        "from": 1235,
+        "religion": "islam-sunnite",
+        "minorities": [
+          "traditionnelles"
+        ],
+        "note": "Islam des élites et des commerçants ; cultes traditionnels dans les campagnes."
+      }
+    ],
+    "Mema": [
+      {
+        "from": 1235,
+        "religion": "traditionnelles",
+        "minorities": [
+          "islam"
+        ]
+      }
+    ],
+    "Tekrour": [
+      {
+        "from": 1290,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Takedda": [
+      {
+        "from": 1290,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Jolof": [
+      {
+        "from": 1324,
+        "religion": "traditionnelles",
+        "minorities": [
+          "islam"
+        ]
+      }
+    ]
+  },
+  "moghols": {
+    "Empire moghol": [
+      {
+        "from": 1526,
+        "religion": "hindouisme",
+        "minorities": [
+          "islam"
+        ],
+        "note": "Majorité hindoue gouvernée par une dynastie musulmane."
+      }
+    ],
+    "Empire des Sur": [
+      {
+        "from": 1540,
+        "religion": "hindouisme",
+        "minorities": [
+          "islam"
+        ],
+        "note": "Majorité hindoue ; dynastie afghane musulmane."
+      }
+    ],
+    "Badakhchan (Mirza Sulayman)": [
+      {
+        "from": 1555,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Kaboul (Mirza Hakim)": [
+      {
+        "from": 1573,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Royaume du Mewar (Udaipur)": [
+      {
+        "from": 1622,
+        "religion": "hindouisme",
+        "minorities": [
+          "islam"
+        ]
+      }
+    ],
+    "Sultanat de Bijapur": [
+      {
+        "from": 1658,
+        "religion": "hindouisme",
+        "minorities": [
+          "islam-chiite"
+        ],
+        "note": "Majorité hindoue ; dynastie musulmane chiite."
+      }
+    ],
+    "Sultanat de Golconde": [
+      {
+        "from": 1658,
+        "religion": "hindouisme",
+        "minorities": [
+          "islam-chiite"
+        ],
+        "note": "Majorité hindoue ; dynastie musulmane chiite."
+      }
+    ],
+    "Nawabat d'Awadh": [
+      {
+        "from": 1739,
+        "religion": "hindouisme",
+        "minorities": [
+          "islam-chiite"
+        ],
+        "note": "Majorité hindoue ; nawabs chiites."
+      }
+    ],
+    "Nawabat du Bengale": [
+      {
+        "from": 1739,
+        "religion": "islam-sunnite",
+        "minorities": [
+          "hindouisme"
+        ],
+        "note": "Majorité musulmane surtout à l’est ; hindous nombreux à l’ouest."
+      }
+    ],
+    "Nizam d'Hyderabad": [
+      {
+        "from": 1739,
+        "religion": "hindouisme",
+        "minorities": [
+          "islam"
+        ],
+        "note": "Majorité hindoue ; dynastie musulmane."
+      }
+    ],
+    "Nawabat d'Arcot (Carnatic)": [
+      {
+        "from": 1739,
+        "religion": "hindouisme",
+        "minorities": [
+          "islam"
+        ],
+        "note": "Majorité hindoue ; dynastie musulmane."
+      }
+    ],
+    "Royaume de Jaipur (Amber)": [
+      {
+        "from": 1739,
+        "religion": "hindouisme",
+        "minorities": [
+          "islam"
+        ]
+      }
+    ],
+    "Royaume du Marwar (Jodhpur)": [
+      {
+        "from": 1739,
+        "religion": "hindouisme",
+        "minorities": [
+          "islam"
+        ]
+      }
+    ],
+    "Royaume de Bikaner et Jaisalmer": [
+      {
+        "from": 1739,
+        "religion": "hindouisme",
+        "minorities": [
+          "islam"
+        ]
+      }
+    ],
+    "Rohilkhand (Najib ud-Daula)": [
+      {
+        "from": 1761,
+        "religion": "hindouisme",
+        "minorities": [
+          "islam"
+        ],
+        "note": "Majorité hindoue ; dynastie musulmane."
+      }
+    ],
+    "Awadh (révolte)": [
+      {
+        "from": 1857,
+        "religion": "hindouisme",
+        "minorities": [
+          "islam-chiite"
+        ],
+        "note": "Majorité hindoue ; nawabs chiites."
+      }
+    ],
+    "Rohilkhand (révolte)": [
+      {
+        "from": 1857,
+        "religion": "hindouisme",
+        "minorities": [
+          "islam"
+        ],
+        "note": "Majorité hindoue ; dynastie musulmane."
+      }
+    ],
+    "Jhansi (révolte)": [
+      {
+        "from": 1857,
+        "religion": "hindouisme",
+        "minorities": [
+          "islam"
+        ]
+      }
+    ],
+    "Kanpur (révolte)": [
+      {
+        "from": 1857,
+        "religion": "hindouisme",
+        "minorities": [
+          "islam"
+        ]
+      }
+    ],
+    "Gwalior (révolte)": [
+      {
+        "from": 1857,
+        "religion": "hindouisme",
+        "minorities": [
+          "islam"
+        ]
+      }
+    ],
+    "Bihar (Jagdishpur)": [
+      {
+        "from": 1857,
+        "religion": "hindouisme",
+        "minorities": [
+          "islam"
+        ]
+      }
+    ]
+  },
+  "mongols": {
+    "Empire mongol": [
+      {
+        "from": 1206,
+        "religion": "traditionnelles",
+        "note": "Tengrisme et chamanisme."
+      }
+    ],
+    "Xia occidentaux (Tangoutes)": [
+      {
+        "from": 1209,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Ouïghours de Qocho": [
+      {
+        "from": 1209,
+        "religion": "bouddhisme",
+        "minorities": [
+          "christianismes-orientaux",
+          "islam"
+        ]
+      }
+    ],
+    "Karlouks d’Almaliq": [
+      {
+        "from": 1211,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Xia orientaux (Puxian Wannu)": [
+      {
+        "from": 1215,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Goryeo (Corée)": [
+      {
+        "from": 1219,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Principautés russes (Riazan)": [
+      {
+        "from": 1237,
+        "religion": "orthodoxie"
+      }
+    ],
+    "Horde d’or": [
+      {
+        "from": 1237,
+        "religion": "traditionnelles",
+        "minorities": [
+          "orthodoxie"
+        ],
+        "note": "Kiptchaks encore païens."
+      },
+      {
+        "from": 1313,
+        "religion": "islam-sunnite",
+        "minorities": [
+          "orthodoxie"
+        ],
+        "note": "Özbeg Khan impose l’islam."
+      }
+    ],
+    "Principautés russes (tributaires)": [
+      {
+        "from": 1240,
+        "religion": "orthodoxie"
+      }
+    ],
+    "Géorgie": [
+      {
+        "from": 1240,
+        "religion": "orthodoxie"
+      }
+    ],
+    "Empire de Trébizonde": [
+      {
+        "from": 1243,
+        "religion": "orthodoxie"
+      }
+    ],
+    "Seldjoukides de Roum": [
+      {
+        "from": 1243,
+        "religion": "islam-sunnite",
+        "minorities": [
+          "orthodoxie"
+        ]
+      }
+    ],
+    "Mossoul": [
+      {
+        "from": 1243,
+        "religion": "islam-sunnite",
+        "minorities": [
+          "christianismes-orientaux"
+        ]
+      }
+    ],
+    "Petite-Arménie (Cilicie)": [
+      {
+        "from": 1246,
+        "religion": "christianismes-orientaux"
+      }
+    ],
+    "Tibet": [
+      {
+        "from": 1251,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Dai Viet (tributaire)": [
+      {
+        "from": 1258,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Mongolie d’Ariq Böke": [
+      {
+        "from": 1260,
+        "religion": "traditionnelles",
+        "note": "Tengrisme et chamanisme."
+      }
+    ],
+    "Empire Yuan": [
+      {
+        "from": 1260,
+        "religion": "religions-chinoises",
+        "minorities": [
+          "bouddhisme"
+        ],
+        "note": "Les Mongols au pouvoir adoptent le bouddhisme tibétain."
+      }
+    ],
+    "Ilkhanat": [
+      {
+        "from": 1260,
+        "religion": "islam-sunnite",
+        "minorities": [
+          "christianismes-orientaux"
+        ],
+        "note": "Majorité musulmane ; les premiers ilkhans sont bouddhistes ou chamanistes, Ghazan se convertit en 1295."
+      }
+    ],
+    "Khanat de Djaghataï": [
+      {
+        "from": 1260,
+        "religion": "traditionnelles",
+        "minorities": [
+          "islam"
+        ],
+        "note": "Nomades encore chamanistes ; villes musulmanes de Transoxiane."
+      },
+      {
+        "from": 1326,
+        "religion": "islam-sunnite",
+        "note": "Conversion du khan Tarmashirin."
+      }
+    ],
+    "Khanat de Qaïdu (Ögödeïdes)": [
+      {
+        "from": 1260,
+        "religion": "traditionnelles",
+        "note": "Tengrisme et chamanisme."
+      }
+    ],
+    "Novgorod (tributaire)": [
+      {
+        "from": 1262,
+        "religion": "orthodoxie"
+      }
+    ],
+    "Haute-Birmanie (tributaire)": [
+      {
+        "from": 1288,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Anatolie (Roum et émirats turcs)": [
+      {
+        "from": 1295,
+        "religion": "islam-sunnite",
+        "minorities": [
+          "orthodoxie"
+        ]
+      }
+    ],
+    "Khanat de Djaghataï (Transoxiane)": [
+      {
+        "from": 1346,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Mogholistan": [
+      {
+        "from": 1346,
+        "religion": "traditionnelles",
+        "note": "Nomades chamanistes."
+      },
+      {
+        "from": 1354,
+        "religion": "islam-sunnite",
+        "note": "Conversion de Tughluq Temür."
+      }
+    ],
+    "Yuan du Nord": [
+      {
+        "from": 1368,
+        "religion": "traditionnelles",
+        "note": "Tengrisme et chamanisme."
+      }
+    ]
+  },
+  "napoleon": {
+    "République française": [
+      {
+        "from": 1799,
+        "religion": "catholicisme"
+      }
+    ],
+    "République ligurienne": [
+      {
+        "from": 1799,
+        "religion": "catholicisme"
+      }
+    ],
+    "République batave": [
+      {
+        "from": 1799,
+        "religion": "protestantisme",
+        "minorities": [
+          "catholicisme"
+        ]
+      }
+    ],
+    "République helvétique": [
+      {
+        "from": 1799,
+        "religion": "protestantisme",
+        "minorities": [
+          "catholicisme"
+        ],
+        "note": "Pays confessionnellement partagé."
+      }
+    ],
+    "Piémont (administration française)": [
+      {
+        "from": 1800,
+        "religion": "catholicisme"
+      }
+    ],
+    "République cisalpine": [
+      {
+        "from": 1800,
+        "religion": "catholicisme"
+      }
+    ],
+    "Royaume d'Étrurie": [
+      {
+        "from": 1801,
+        "religion": "catholicisme"
+      }
+    ],
+    "République italienne": [
+      {
+        "from": 1802,
+        "religion": "catholicisme"
+      }
+    ],
+    "République du Valais": [
+      {
+        "from": 1802,
+        "religion": "catholicisme"
+      }
+    ],
+    "Empire français": [
+      {
+        "from": 1804,
+        "religion": "catholicisme"
+      }
+    ],
+    "Confédération suisse": [
+      {
+        "from": 1804,
+        "religion": "protestantisme",
+        "minorities": [
+          "catholicisme"
+        ],
+        "note": "Pays confessionnellement partagé."
+      }
+    ],
+    "Espagne": [
+      {
+        "from": 1804,
+        "religion": "catholicisme"
+      }
+    ],
+    "Royaume d'Italie": [
+      {
+        "from": 1805,
+        "religion": "catholicisme"
+      }
+    ],
+    "Principauté de Lucques et Piombino": [
+      {
+        "from": 1805,
+        "religion": "catholicisme"
+      }
+    ],
+    "Bavière": [
+      {
+        "from": 1805,
+        "religion": "catholicisme"
+      }
+    ],
+    "Wurtemberg": [
+      {
+        "from": 1805,
+        "religion": "protestantisme",
+        "minorities": [
+          "catholicisme"
+        ]
+      }
+    ],
+    "Bade": [
+      {
+        "from": 1805,
+        "religion": "catholicisme",
+        "minorities": [
+          "protestantisme"
+        ],
+        "note": "Territoires confessionnellement mêlés."
+      }
+    ],
+    "Royaume de Naples": [
+      {
+        "from": 1806,
+        "religion": "catholicisme"
+      }
+    ],
+    "Royaume de Hollande": [
+      {
+        "from": 1806,
+        "religion": "protestantisme",
+        "minorities": [
+          "catholicisme"
+        ]
+      }
+    ],
+    "Confédération du Rhin": [
+      {
+        "from": 1806,
+        "religion": "catholicisme",
+        "minorities": [
+          "protestantisme"
+        ],
+        "note": "Territoires confessionnellement mêlés."
+      }
+    ],
+    "Royaume de Westphalie": [
+      {
+        "from": 1807,
+        "religion": "protestantisme",
+        "minorities": [
+          "catholicisme"
+        ]
+      }
+    ],
+    "Duché de Varsovie": [
+      {
+        "from": 1807,
+        "religion": "catholicisme",
+        "minorities": [
+          "judaisme"
+        ]
+      }
+    ],
+    "Ville libre de Dantzig": [
+      {
+        "from": 1807,
+        "religion": "protestantisme",
+        "minorities": [
+          "catholicisme"
+        ]
+      }
+    ],
+    "Russie": [
+      {
+        "from": 1807,
+        "religion": "orthodoxie"
+      }
+    ],
+    "Espagne (Joseph)": [
+      {
+        "from": 1808,
+        "religion": "catholicisme"
+      }
+    ],
+    "Danemark-Norvège": [
+      {
+        "from": 1811,
+        "religion": "protestantisme",
+        "minorities": [
+          "catholicisme"
+        ]
+      }
+    ],
+    "Autriche": [
+      {
+        "from": 1811,
+        "religion": "catholicisme"
+      }
+    ],
+    "Prusse": [
+      {
+        "from": 1811,
+        "religion": "protestantisme",
+        "minorities": [
+          "catholicisme"
+        ]
+      }
+    ],
+    "France (frontières de 1792)": [
+      {
+        "from": 1814,
+        "religion": "catholicisme"
+      }
+    ],
+    "Île d'Elbe (principauté de Napoléon)": [
+      {
+        "from": 1814,
+        "religion": "catholicisme"
+      }
+    ],
+    "France (frontières de 1814)": [
+      {
+        "from": 1815,
+        "religion": "catholicisme"
+      }
+    ],
+    "France (frontières de 1790)": [
+      {
+        "from": 1815,
+        "religion": "catholicisme"
+      }
+    ]
+  },
+  "omeyyades": {
+    "Califat omeyyade": [
+      {
+        "from": 661,
+        "religion": "islam",
+        "minorities": [
+          "christianismes-orientaux",
+          "zoroastrisme"
+        ],
+        "note": "Les non-musulmans restent nombreux, l’islamisation est progressive."
+      }
+    ],
+    "Nubie de Makurie": [
+      {
+        "from": 661,
+        "religion": "christianismes-orientaux"
+      }
+    ],
+    "Arménie": [
+      {
+        "from": 661,
+        "religion": "christianismes-orientaux"
+      }
+    ],
+    "Géorgie (Karthli)": [
+      {
+        "from": 661,
+        "religion": "orthodoxie"
+      }
+    ],
+    "Zubayrides": [
+      {
+        "from": 684,
+        "religion": "islam",
+        "minorities": [
+          "christianismes-orientaux",
+          "zoroastrisme"
+        ],
+        "note": "Les non-musulmans restent nombreux, l’islamisation est progressive."
+      }
+    ],
+    "Albanie caucasienne": [
+      {
+        "from": 717,
+        "religion": "christianismes-orientaux"
+      }
+    ],
+    "Ifriqiya autonome": [
+      {
+        "from": 747,
+        "religion": "islam",
+        "minorities": [
+          "christianismes-orientaux",
+          "zoroastrisme"
+        ],
+        "note": "Les non-musulmans restent nombreux, l’islamisation est progressive."
+      }
+    ],
+    "al-Andalus autonome": [
+      {
+        "from": 747,
+        "religion": "islam",
+        "minorities": [
+          "christianisme",
+          "judaisme"
+        ]
+      }
+    ],
+    "Abbassides": [
+      {
+        "from": 747,
+        "religion": "islam",
+        "minorities": [
+          "christianismes-orientaux",
+          "zoroastrisme"
+        ],
+        "note": "Les non-musulmans restent nombreux, l’islamisation est progressive."
+      }
+    ],
+    "Insurgés kharijites": [
+      {
+        "from": 747,
+        "religion": "islam",
+        "minorities": [
+          "christianismes-orientaux",
+          "zoroastrisme"
+        ],
+        "note": "Les non-musulmans restent nombreux, l’islamisation est progressive."
+      }
+    ]
+  },
+  "ottomans": {
+    "Empire ottoman": [
+      {
+        "from": 1299,
+        "religion": "islam-sunnite",
+        "minorities": [
+          "orthodoxie",
+          "judaisme"
+        ],
+        "note": "Chrétiens et Juifs nombreux, organisés en millets."
+      }
+    ],
+    "Empire byzantin": [
+      {
+        "from": 1389,
+        "religion": "orthodoxie"
+      }
+    ],
+    "Tsarat de Tarnovo": [
+      {
+        "from": 1389,
+        "religion": "orthodoxie"
+      }
+    ],
+    "Despotat de Serbie": [
+      {
+        "from": 1396,
+        "religion": "orthodoxie"
+      }
+    ],
+    "Valachie": [
+      {
+        "from": 1396,
+        "religion": "orthodoxie"
+      }
+    ],
+    "Despotat de Morée": [
+      {
+        "from": 1444,
+        "religion": "orthodoxie"
+      }
+    ],
+    "Beylik de Karaman": [
+      {
+        "from": 1444,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Khanat de Crimée": [
+      {
+        "from": 1514,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Moldavie": [
+      {
+        "from": 1514,
+        "religion": "orthodoxie"
+      }
+    ],
+    "Hongrie de Zápolya": [
+      {
+        "from": 1529,
+        "religion": "catholicisme",
+        "minorities": [
+          "protestantisme"
+        ]
+      }
+    ],
+    "Régence d'Alger": [
+      {
+        "from": 1538,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Transylvanie": [
+      {
+        "from": 1566,
+        "religion": "orthodoxie",
+        "minorities": [
+          "protestantisme"
+        ],
+        "note": "Les États reconnaissent catholiques, luthériens, calvinistes et unitariens ; les Roumains orthodoxes sont majoritaires."
+      }
+    ],
+    "Régence de Tripoli": [
+      {
+        "from": 1571,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Régence de Tunis": [
+      {
+        "from": 1669,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Égypte de Méhémet Ali": [
+      {
+        "from": 1827,
+        "religion": "islam-sunnite",
+        "minorities": [
+          "christianismes-orientaux"
+        ]
+      }
+    ],
+    "Principauté de Serbie": [
+      {
+        "from": 1827,
+        "religion": "orthodoxie"
+      }
+    ],
+    "Principauté de Bulgarie": [
+      {
+        "from": 1878,
+        "religion": "orthodoxie",
+        "minorities": [
+          "islam-sunnite"
+        ]
+      }
+    ],
+    "Roumélie orientale": [
+      {
+        "from": 1878,
+        "religion": "orthodoxie",
+        "minorities": [
+          "islam-sunnite"
+        ]
+      }
+    ]
+  },
+  "perse-achemenide": {
+    "Empire perse": [
+      {
+        "from": -550,
+        "religion": "zoroastrisme",
+        "minorities": [
+          "polytheisme"
+        ],
+        "note": "Religion de la cour ; peuples soumis polythéistes."
+      }
+    ],
+    "Cyrénaïque": [
+      {
+        "from": -525,
+        "religion": "polytheisme"
+      }
+    ],
+    "Macédoine": [
+      {
+        "from": -513,
+        "religion": "polytheisme"
+      }
+    ]
+  },
+  "rome": {
+    "République romaine": [
+      {
+        "from": -509,
+        "religion": "polytheisme"
+      }
+    ],
+    "Empire romain": [
+      {
+        "from": -27,
+        "religion": "polytheisme",
+        "minorities": [
+          "judaisme"
+        ]
+      },
+      {
+        "from": 380,
+        "religion": "christianisme",
+        "note": "Théodose fait du christianisme la religion d’État en 380."
+      }
+    ],
+    "Empire romain — part de Dioclétien": [
+      {
+        "from": 285,
+        "religion": "polytheisme",
+        "minorities": [
+          "christianisme"
+        ]
+      }
+    ],
+    "Empire romain — part de Galère": [
+      {
+        "from": 285,
+        "religion": "polytheisme",
+        "minorities": [
+          "christianisme"
+        ]
+      }
+    ],
+    "Empire romain — part de Maximien": [
+      {
+        "from": 285,
+        "religion": "polytheisme",
+        "minorities": [
+          "christianisme"
+        ]
+      }
+    ],
+    "Empire romain — part de Constance Chlore": [
+      {
+        "from": 285,
+        "religion": "polytheisme",
+        "minorities": [
+          "christianisme"
+        ]
+      }
+    ],
+    "Empire romain d'Occident": [
+      {
+        "from": 395,
+        "religion": "christianisme",
+        "note": "Christianisme d’État depuis 380."
+      }
+    ],
+    "Empire romain d'Orient": [
+      {
+        "from": 395,
+        "religion": "christianisme",
+        "note": "Christianisme d’État depuis 380."
+      }
+    ],
+    "Empire byzantin": [
+      {
+        "from": 554,
+        "religion": "christianisme",
+        "note": "Christianisme indivis."
+      },
+      {
+        "from": 1054,
+        "religion": "orthodoxie",
+        "note": "Schisme de 1054 : l’Église grecque devient orthodoxe."
+      }
+    ],
+    "Empire de Nicée": [
+      {
+        "from": 1204,
+        "religion": "orthodoxie"
+      }
+    ],
+    "Despotat d'Épire": [
+      {
+        "from": 1204,
+        "religion": "orthodoxie"
+      }
+    ],
+    "Empire de Trébizonde": [
+      {
+        "from": 1204,
+        "religion": "orthodoxie"
+      }
+    ]
+  },
+  "russie": {
+    "Empire russe": [
+      {
+        "from": 1547,
+        "religion": "orthodoxie",
+        "minorities": [
+          "islam-sunnite",
+          "catholicisme"
+        ]
+      }
+    ],
+    "Hetmanat cosaque": [
+      {
+        "from": 1654,
+        "religion": "orthodoxie"
+      }
+    ],
+    "Géorgie orientale (Kartli-Kakhétie)": [
+      {
+        "from": 1783,
+        "religion": "orthodoxie"
+      }
+    ],
+    "Grand-Duché de Finlande": [
+      {
+        "from": 1812,
+        "religion": "protestantisme"
+      }
+    ],
+    "Émirat de Boukhara": [
+      {
+        "from": 1891,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Khanat de Khiva": [
+      {
+        "from": 1891,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Zone d’influence russe en Mandchourie": [
+      {
+        "from": 1905,
+        "religion": "religions-chinoises"
+      }
+    ],
+    "Touva (protectorat)": [
+      {
+        "from": 1914,
+        "religion": "bouddhisme"
+      }
+    ],
+    "Territoires turcs occupés": [
+      {
+        "from": 1917,
+        "religion": "islam-sunnite",
+        "minorities": [
+          "christianismes-orientaux"
+        ]
+      }
+    ]
+  },
+  "saint-empire": {
+    "Royaume de Bourgogne-Arles (sous protection)": [
+      {
+        "from": 962,
+        "religion": "christianisme"
+      }
+    ],
+    "Duché de Bohême (tributaire)": [
+      {
+        "from": 962,
+        "religion": "christianisme"
+      }
+    ],
+    "Peuples slaves tributaires (Obodrites, Wilzes)": [
+      {
+        "from": 962,
+        "religion": "polytheisme"
+      }
+    ],
+    "Royaume de Germanie": [
+      {
+        "from": 962,
+        "religion": "christianisme"
+      },
+      {
+        "from": 1054,
+        "religion": "catholicisme",
+        "note": "Schisme de 1054 : l’Église latine devient catholique."
+      }
+    ],
+    "Suisse alémanique": [
+      {
+        "from": 962,
+        "religion": "christianisme"
+      }
+    ],
+    "Lotharingie (Pays-Bas, Belgique, Lorraine, Alsace)": [
+      {
+        "from": 962,
+        "religion": "christianisme"
+      },
+      {
+        "from": 1054,
+        "religion": "catholicisme",
+        "note": "Schisme de 1054 : l’Église latine devient catholique."
+      }
+    ],
+    "Royaume d'Italie et Rome": [
+      {
+        "from": 962,
+        "religion": "christianisme"
+      },
+      {
+        "from": 1054,
+        "religion": "catholicisme",
+        "note": "Schisme de 1054 : l’Église latine devient catholique."
+      }
+    ],
+    "Littoral autrichien (Trieste, Gorizia)": [
+      {
+        "from": 1033,
+        "religion": "christianisme"
+      },
+      {
+        "from": 1054,
+        "religion": "catholicisme",
+        "note": "Schisme de 1054 : l’Église latine devient catholique."
+      }
+    ],
+    "Duché de Bohême": [
+      {
+        "from": 1033,
+        "religion": "christianisme"
+      },
+      {
+        "from": 1054,
+        "religion": "catholicisme",
+        "note": "Schisme de 1054 : l’Église latine devient catholique."
+      }
+    ],
+    "Royaume de Bourgogne-Arles": [
+      {
+        "from": 1033,
+        "religion": "christianisme"
+      },
+      {
+        "from": 1054,
+        "religion": "catholicisme",
+        "note": "Schisme de 1054 : l’Église latine devient catholique."
+      }
+    ],
+    "Suisse": [
+      {
+        "from": 1033,
+        "religion": "christianisme"
+      },
+      {
+        "from": 1054,
+        "religion": "catholicisme",
+        "note": "Schisme de 1054 : l’Église latine devient catholique."
+      }
+    ],
+    "Royaume d'Italie": [
+      {
+        "from": 1122,
+        "religion": "catholicisme"
+      }
+    ],
+    "Royaume de Bohême": [
+      {
+        "from": 1176,
+        "religion": "catholicisme"
+      }
+    ],
+    "Duché de Poméranie": [
+      {
+        "from": 1214,
+        "religion": "catholicisme"
+      }
+    ],
+    "Allemagne impériale, Autriche et Slovénie": [
+      {
+        "from": 1214,
+        "religion": "catholicisme"
+      },
+      {
+        "from": 1530,
+        "religion": "catholicisme",
+        "minorities": [
+          "protestantisme"
+        ],
+        "note": "Réforme luthérienne ; paix d’Augsbourg en 1555."
+      }
+    ],
+    "Haute-Bourgogne (Franche-Comté, Savoie) et Suisse": [
+      {
+        "from": 1214,
+        "religion": "catholicisme"
+      }
+    ],
+    "Royaume de Sicile (union personnelle)": [
+      {
+        "from": 1220,
+        "religion": "catholicisme",
+        "minorities": [
+          "islam",
+          "orthodoxie"
+        ]
+      }
+    ],
+    "Royaume d'Italie (autorité impériale nominale)": [
+      {
+        "from": 1268,
+        "religion": "catholicisme"
+      }
+    ],
+    "Pays-Bas et Lorraine": [
+      {
+        "from": 1273,
+        "religion": "catholicisme"
+      }
+    ],
+    "Italie impériale (autorité nominale)": [
+      {
+        "from": 1273,
+        "religion": "catholicisme"
+      }
+    ],
+    "Silésie (couronne de Bohême)": [
+      {
+        "from": 1356,
+        "religion": "catholicisme"
+      }
+    ],
+    "Royaume de Bohême (insurgé hussite)": [
+      {
+        "from": 1419,
+        "religion": "protestantisme",
+        "note": "Hussites ; révolte protestante de 1618."
+      }
+    ],
+    "Royaume de Hongrie (union personnelle d'Albert)": [
+      {
+        "from": 1438,
+        "religion": "catholicisme"
+      }
+    ],
+    "Bohême et Silésie": [
+      {
+        "from": 1519,
+        "religion": "protestantisme",
+        "note": "Utraquistes, frères moraves puis luthériens."
+      },
+      {
+        "from": 1627,
+        "religion": "catholicisme",
+        "note": "Recatholicisation forcée après la Montagne Blanche."
+      }
+    ],
+    "Royaume d'Espagne (Charles Quint)": [
+      {
+        "from": 1519,
+        "religion": "catholicisme"
+      }
+    ],
+    "Naples, Sicile et Sardaigne (Charles Quint)": [
+      {
+        "from": 1519,
+        "religion": "catholicisme"
+      }
+    ],
+    "Haute-Bourgogne et Suisse": [
+      {
+        "from": 1519,
+        "religion": "catholicisme",
+        "minorities": [
+          "protestantisme"
+        ]
+      }
+    ],
+    "Italie impériale": [
+      {
+        "from": 1519,
+        "religion": "catholicisme"
+      }
+    ],
+    "Hongrie royale (Habsbourg)": [
+      {
+        "from": 1526,
+        "religion": "catholicisme"
+      },
+      {
+        "from": 1550,
+        "religion": "protestantisme",
+        "minorities": [
+          "catholicisme"
+        ],
+        "note": "Réforme luthérienne et calviniste."
+      },
+      {
+        "from": 1670,
+        "religion": "catholicisme",
+        "minorities": [
+          "protestantisme"
+        ],
+        "note": "Contre-Réforme."
+      }
+    ],
+    "Bohême": [
+      {
+        "from": 1555,
+        "religion": "protestantisme",
+        "note": "Utraquistes et luthériens."
+      },
+      {
+        "from": 1627,
+        "religion": "catholicisme",
+        "note": "Recatholicisation forcée après la Montagne Blanche."
+      }
+    ],
+    "Silésie": [
+      {
+        "from": 1555,
+        "religion": "protestantisme",
+        "minorities": [
+          "catholicisme"
+        ],
+        "note": "Silésie luthérienne, contre-réforme habsbourgeoise partielle."
+      }
+    ],
+    "Pays-Bas (Dix-Sept Provinces) et Alsace-Lorraine": [
+      {
+        "from": 1555,
+        "religion": "catholicisme",
+        "minorities": [
+          "protestantisme"
+        ]
+      }
+    ],
+    "Bohême (insurgée)": [
+      {
+        "from": 1618,
+        "religion": "protestantisme",
+        "note": "Hussites ; révolte protestante de 1618."
+      }
+    ],
+    "Franche-Comté et Savoie": [
+      {
+        "from": 1648,
+        "religion": "catholicisme"
+      }
+    ],
+    "Pays-Bas espagnols, Luxembourg, Lorraine, Strasbourg": [
+      {
+        "from": 1648,
+        "religion": "catholicisme"
+      }
+    ],
+    "Savoie": [
+      {
+        "from": 1683,
+        "religion": "catholicisme"
+      }
+    ],
+    "Pays-Bas espagnols, Luxembourg et Lorraine": [
+      {
+        "from": 1683,
+        "religion": "catholicisme"
+      }
+    ],
+    "Bohême et Moravie": [
+      {
+        "from": 1714,
+        "religion": "catholicisme"
+      }
+    ],
+    "Royaume de Hongrie, Croatie et Transylvanie (Habsbourg)": [
+      {
+        "from": 1714,
+        "religion": "catholicisme",
+        "minorities": [
+          "protestantisme",
+          "orthodoxie"
+        ]
+      }
+    ],
+    "Naples et Sardaigne (Habsbourg, hors Empire)": [
+      {
+        "from": 1714,
+        "religion": "catholicisme"
+      }
+    ],
+    "Pays-Bas autrichiens, Luxembourg et Lorraine": [
+      {
+        "from": 1714,
+        "religion": "catholicisme"
+      }
+    ],
+    "Italie impériale (Milan, Toscane, Parme, Modène…)": [
+      {
+        "from": 1714,
+        "religion": "catholicisme"
+      }
+    ],
+    "Royaume de Hongrie, Croatie, Transylvanie et Banat (Habsbourg)": [
+      {
+        "from": 1740,
+        "religion": "catholicisme",
+        "minorities": [
+          "protestantisme",
+          "orthodoxie"
+        ]
+      }
+    ],
+    "Galicie et Bucovine (Habsbourg)": [
+      {
+        "from": 1801,
+        "religion": "catholicisme",
+        "minorities": [
+          "judaisme",
+          "orthodoxie"
+        ],
+        "note": "Gréco-catholiques (uniates) et Juifs nombreux."
+      }
+    ],
+    "Vénétie autrichienne (hors Empire)": [
+      {
+        "from": 1801,
+        "religion": "catholicisme"
+      }
+    ],
+    "Allemagne impériale (rive droite du Rhin), Autriche et Slovénie": [
+      {
+        "from": 1801,
+        "religion": "catholicisme",
+        "minorities": [
+          "protestantisme"
+        ]
+      }
+    ],
+    "Poméranie et Neumark (Brandebourg, Suède)": [
+      {
+        "from": 1801,
+        "religion": "protestantisme"
+      }
+    ],
+    "Littoral autrichien et Tyrol méridional": [
+      {
+        "from": 1801,
+        "religion": "catholicisme"
+      }
+    ],
+    "États de la Confédération du Rhin (sortis de l'Empire)": [
+      {
+        "from": 1806,
+        "religion": "catholicisme",
+        "minorities": [
+          "protestantisme"
+        ]
+      }
+    ],
+    "Derniers territoires de l'Empire (Autriche, Prusse, Saxe, Hanovre, Nord)": [
+      {
+        "from": 1806,
+        "religion": "protestantisme",
+        "minorities": [
+          "catholicisme"
+        ],
+        "note": "Autriche catholique, Prusse et Nord protestants."
+      }
+    ]
+  },
+  "songhai": {
+    "Empire songhaï": [
+      {
+        "from": 1430,
+        "religion": "traditionnelles",
+        "minorities": [
+          "islam"
+        ],
+        "note": "Sonni Ali, musulman de façade, domine un pays surtout animiste."
+      },
+      {
+        "from": 1493,
+        "religion": "islam-sunnite",
+        "minorities": [
+          "traditionnelles"
+        ],
+        "note": "Askia Muhammad impose l’islam."
+      }
+    ],
+    "Aïr et Agadez": [
+      {
+        "from": 1501,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Diara": [
+      {
+        "from": 1513,
+        "religion": "islam-sunnite"
+      }
+    ],
+    "Galam": [
+      {
+        "from": 1513,
+        "religion": "traditionnelles",
+        "minorities": [
+          "islam"
+        ]
+      }
+    ],
+    "Katsina et Kano": [
+      {
+        "from": 1513,
+        "religion": "islam-sunnite"
+      }
+    ]
+  }
+}

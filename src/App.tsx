@@ -365,6 +365,7 @@ function Atlas({
   const [relief, setRelief] = useState(() => readBool('atlas.relief', true));
   const [figures, setFigures] = useState(() => readBool('atlas.figures', true));
   const [countries2026, setCountries2026] = useState(() => readBool('atlas.countries2026', false));
+  const [religions, setReligions] = useState(() => readBool('atlas.religions', false));
   const [stateNames, setStateNames] = useState(() => readBool('atlas.stateNames', true));
   const [neighbors, setNeighbors] = useState(() => readBool('atlas.neighbors', true));
   const [contemporaries, setContemporaries] = useState(() => readBool('atlas.contemporaries', true));
@@ -471,6 +472,14 @@ function Atlas({
       }),
     [],
   );
+  const toggleReligions = useCallback(
+    () =>
+      setReligions((v) => {
+        writeBool('atlas.religions', !v);
+        return !v;
+      }),
+    [],
+  );
   const toggleInventions = useCallback(
     () =>
       setInventions((v) => {
@@ -500,6 +509,7 @@ function Atlas({
         relief={relief}
         figures={figures}
         countries2026={countries2026}
+        religions={religions}
         stateNames={stateNames}
         neighbors={neighbors}
         contemporaries={contemporaries}
@@ -556,6 +566,7 @@ function Atlas({
                   relief={relief}
                   figures={figures}
                   countries2026={countries2026}
+                  religions={religions}
                   stateNames={stateNames}
                   neighbors={neighbors}
                   contemporaries={contemporaries}
@@ -567,6 +578,7 @@ function Atlas({
                   onToggleRelief={toggleRelief}
                   onToggleFigures={toggleFigures}
                   onToggleCountries2026={toggleCountries2026}
+                  onToggleReligions={toggleReligions}
                   onToggleStateNames={toggleStateNames}
                   onToggleNeighbors={toggleNeighbors}
                   onToggleContemporaries={toggleContemporaries}
@@ -585,6 +597,7 @@ function Atlas({
               relief={relief}
               figures={figures}
               countries2026={countries2026}
+              religions={religions}
               stateNames={stateNames}
               neighbors={neighbors}
               contemporaries={contemporaries}
@@ -596,6 +609,7 @@ function Atlas({
               onToggleRelief={toggleRelief}
               onToggleFigures={toggleFigures}
               onToggleCountries2026={toggleCountries2026}
+              onToggleReligions={toggleReligions}
               onToggleStateNames={toggleStateNames}
               onToggleNeighbors={toggleNeighbors}
               onToggleContemporaries={toggleContemporaries}
@@ -653,6 +667,7 @@ function Atlas({
         empire={empire}
         step={step}
         countries2026={countries2026}
+        religions={religions}
         neighbors={neighbors}
         contemporaries={contemporaries}
         onToggleContemporaries={toggleContemporaries}

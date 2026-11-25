@@ -9,12 +9,14 @@ import { isMobileNow } from '../lib/useIsMobile';
 import { DIFF_COLORS } from '../map/diff';
 import { variantFill, variantLine, variantVassal } from '../map/color';
 import { characterSvg, soldierSvg, useSprites } from '../map/sprites';
+import { ReligionRows } from './ReligionLegend';
 import type { Archetype, Empire, EventType, Faction, TerritoryProperties, TimelineStep } from '../types';
 
 interface Props {
   empire: Empire;
   step: TimelineStep | undefined;
   countries2026?: boolean;
+  religions?: boolean;
   neighbors?: boolean;
   contemporaries?: boolean;
   /** Réaffiche les empires contemporains (bouton d'indice quand ils sont masqués). */
@@ -131,6 +133,7 @@ export const Legend = memo(function Legend({
   empire,
   step,
   countries2026 = false,
+  religions = false,
   neighbors = true,
   contemporaries = true,
   onToggleContemporaries,
@@ -323,6 +326,12 @@ export const Legend = memo(function Legend({
                 hint="halo doré : apparue à cette étape"
               />
             )}
+          </Group>
+        )}
+
+        {religions && (
+          <Group title={countries2026 ? 'Religions en 2026' : 'Religions'}>
+            <ReligionRows />
           </Group>
         )}
 

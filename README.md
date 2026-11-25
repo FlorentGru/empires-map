@@ -38,6 +38,7 @@
 - Armies march from their home city to the battlefield; historical figures appear with their famous quotes.
 - Hoverable regions (vassal kingdoms, provinces, rival dynasties), neighbors of the period, contemporary empires and their capitals.
 - Period layers: 87 monuments (including the Seven Wonders of the Ancient World), 92 inventions, 24 trade routes, 48 epidemics, disasters and wars.
+- Religions layer: the dominant religion of every empire entity (452, with its transitions: Rome Christian from 380, the Reformation…), of ~950 historical neighbors and of today's 235 countries, with minorities in the region card.
 
 **Storytelling**
 - A clickable timeline with autoplay (×0.5 to ×2) and keyboard shortcuts.
@@ -155,7 +156,8 @@ npm run agent                      # agent server on port 8000, next to npm run 
 
 ```bash
 npm run fetch:data            # downloads historical-basemaps and Natural Earth into .cache/
-npm run build:data            # every empire: territories, diffs, distance fields, neighbors
+npm run build:data            # every empire: territories, diffs, distance fields, neighbors, religions
+npm run build:religions       # religion polygons only (data/religions/ → public/data/religions/)
 npm run build:data:ottomans   # a single empire: rome, napoleon, china, mongols, espagne,
                               # saint-empire, carolingiens, alexandre, ottomans, inca, mali, songhai, azteques, carthage, perse-achemenide, omeyyades, abbassides, moghols, russie, fatimides, japon
 ```
@@ -169,7 +171,7 @@ Restart the dev server after regenerating `public/data`.
 | `src/` | React + MapLibre app: map layers, timeline, player, panels, battles, quiz, Sage chat |
 | `src/types.ts` | Data contract (empire, step, city, army, figure…) |
 | `data/empires/<id>/` | One folder per empire: `timeline.json`, `people.json`, `profile.json`, `inventions.json`, `regions.json` |
-| `data/` | Cities and their fact sheets (`city-info.json`), monuments, trade routes, disasters, battles, neighbor capitals |
+| `data/` | Cities and their fact sheets (`city-info.json`), religions (`religions/`), monuments, trade routes, disasters, battles, neighbor capitals |
 | `scripts/` | Geo pipeline (extraction, overrides, diffs, distance fields), prerendering, checks |
 | `overrides/` | Hand-made border corrections, step by step |
 | `public/data/` | Generated data served to the browser |

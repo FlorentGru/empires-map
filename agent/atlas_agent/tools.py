@@ -422,6 +422,85 @@ def profil_empire(empire: str, annee: int | None = None) -> dict:
     return {"empire": empire, "periode": periode}
 
 
+# Libellés français des religions (ids de src/types-religion.ts, RELIGIONS) : à garder synchrones.
+RELIGIONS_LABELS = {
+    "christianisme": "Christianisme",
+    "catholicisme": "Catholicisme",
+    "orthodoxie": "Orthodoxie",
+    "protestantisme": "Protestantisme",
+    "christianismes-orientaux": "Christianismes orientaux",
+    "islam": "Islam",
+    "islam-sunnite": "Islam sunnite",
+    "islam-chiite": "Islam chiite",
+    "judaisme": "Judaïsme",
+    "zoroastrisme": "Zoroastrisme",
+    "hindouisme": "Hindouisme",
+    "bouddhisme": "Bouddhisme",
+    "sikhisme": "Sikhisme",
+    "religions-chinoises": "Religions chinoises",
+    "shinto": "Shintō et bouddhisme",
+    "polytheisme": "Polythéismes",
+    "traditionnelles": "Religions traditionnelles",
+    "sans-religion": "Sans religion majoritaire",
+}
+
+
+@lru_cache(maxsize=1)
+def _religions() -> dict[str, dict]:
+    """data/religions/territories.json : empireId → entité → périodes (vide si le fichier n'existe pas encore)."""
+    fichier = RACINE / "data" / "religions" / "territories.json"
+    return json.loads(fichier.read_text(encoding="utf-8")) if fichier.exists() else {}
+
+
+@lru_cache(maxsize=1)
+def _entites_par_etape() -> dict[str, dict]:
+    """public/data/religions/territories.json (npm run build:religions) : empire → étape → entités présentes. Vide si absent."""
+    fichier = RACINE / "public" / "data" / "religions" / "territories.json"
+    return json.loads(fichier.read_text(encoding="utf-8")) if fichier.exists() else {}
+
+
+def religions_empire(empire: str, annee: int) -> dict:
+    """Donne la religion dominante de chaque entité (royaume, république, dynastie…) d'un empire à une année.
+
+    À utiliser pour les questions sur les religions (quelle religion à telle époque, christianisation, islamisation,
+    cultes d'un empire). Attention : « religion dominante » simplifie ; une même entité peut avoir des minorités
+    importantes et changer de religion au fil du temps (note d'une transition).
+
+    Args:
+        empire: identifiant de l'empire (ex. « rome ») ; voir lister_empires.
+        annee: année (négative avant J.-C.), ex. 100 ou 400.
+
+    Returns:
+        L'empire, l'année, et pour chaque entité valable cette année : nom, religion dominante, minorités
+        importantes et note éventuelle.
+    """
+    annee = _entier(annee)
+    if annee is None:
+        return {"erreur": "Année illisible : donne une année en chiffres (ex. 400, ou -27 pour 27 av. J.-C.)."}
+    if empire not in _empires():
+        return {"erreur": f"Empire inconnu : « {empire} ». Empires valides : {', '.join(_empires())}."}
+    # Seules les entités présentes à la dernière étape ≤ année (sinon Rome en 1400 citerait la République romaine).
+    etapes = [e for e in _empires()[empire].get("steps", []) if e["year"] <= annee]
+    par_etape = _entites_par_etape().get(empire)
+    presentes = set(par_etape.get(etapes[-1]["id"], {}).get("entities", {})) if par_etape and etapes else None
+    entites = []
+    for nom, periodes in _religions().get(empire, {}).items():
+        if presentes is not None and nom not in presentes:
+            continue
+        valables = [p for p in periodes if p["from"] <= annee]
+        if valables:
+            p = valables[-1]
+            entites.append(
+                {
+                    "nom": nom,
+                    "religion": RELIGIONS_LABELS.get(p["religion"], p["religion"]),
+                    "minorites": [RELIGIONS_LABELS.get(m, m) for m in p.get("minorities", [])],
+                    "note": p.get("note"),
+                }
+            )
+    return {"empire": empire, "annee": _annee(annee), "entites": entites}
+
+
 def naviguer_vers_etape(empire: str, etape_id: str, tool_context: ToolContext) -> dict:
     """Déplace la carte de l'utilisateur sur une étape précise de la frise.
 
@@ -444,4 +523,4 @@ def naviguer_vers_etape(empire: str, etape_id: str, tool_context: ToolContext) -
     return {"statut": "ok", "message": f"La carte va s'ouvrir sur « {etape['title']} » ({_annee(etape['year'])})."}
 
 
-OUTILS = [lister_empires, resume_empire, chercher_etapes, lire_etape, chercher_ville, chercher_personnage, chercher_evenement_mondial, profil_empire, chercher_invention, naviguer_vers_etape]
+OUTILS = [lister_empires, resume_empire, chercher_etapes, lire_etape, chercher_ville, chercher_personnage, chercher_evenement_mondial, profil_empire, chercher_invention, religions_empire, naviguer_vers_etape]

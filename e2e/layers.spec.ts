@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { collectErrors } from './helpers';
 
 const mapReady = (page: import('@playwright/test').Page, layer: string) =>
   page.waitForFunction((l) => (window as any).__map?.getLayer(l), layer, { timeout: 60_000 });
@@ -128,4 +129,22 @@ test('sept merveilles : icône dorée hors des piles et nom affiché dès le zoo
     );
   await expect.poll(rendered, { timeout: 30_000 }).toContain('colosse-de-rhodes');
   expect(await page.evaluate(() => (window as any).__map.hasImage('monument-statue-wonder'))).toBe(true);
+});
+
+test('religions : calque activé sur Rome, légende des religions présentes, fiche de région', async ({ page }) => {
+  test.setTimeout(90_000);
+  const errors = collectErrors(page);
+  await page.goto('/?empire=rome&step=tetrarchie-285&e2e');
+  await mapReady(page, 'territory-a-fill');
+  const toggle = page.getByRole('button', { name: /Affichage/ });
+  if ((await toggle.getAttribute('aria-expanded')) === 'false') await toggle.click();
+  await page.getByRole('button', { name: /Religions : non/ }).click();
+  await expect(
+    page
+      .locator('.legend')
+      .getByText(/Polythéismes|Christianisme/)
+      .first(),
+  ).toBeVisible({ timeout: 30_000 });
+  await expect.poll(() => page.evaluate(() => (window as any).__map.getLayoutProperty('religion-entities-fill', 'visibility'))).toBe('visible');
+  expect(errors).toEqual([]);
 });

@@ -2,6 +2,9 @@ import { Map as MapLibreMap, type MapMouseEvent } from 'maplibre-gl';
 import '../map/maplibreWorker';
 import { useEffect, useRef, useState } from 'react';
 import { loadCities } from '../data/loadCities';
+import { loadReligionSnapshots, loadStepReligions } from '../data/loadReligions';
+import { pickSnapshot, withReligions } from '../lib/religions';
+import type { ReligionLayers } from '../map/religionLayers';
 import { EMPIRES, loadTerritory } from '../data/loadEmpire';
 import { empiresAt } from '../lib/worldYear';
 import { formatYear } from '../lib/years';
@@ -12,7 +15,7 @@ import { DisasterLayers } from '../map/disasterLayers';
 import { closeMapCard, openMapCard } from '../map/mapCard';
 import { MonumentLayers } from '../map/monumentLayers';
 import { RouteLayers } from '../map/routeLayers';
-import { WorldEmpireLayers } from './worldEmpireLayers';
+import { fillLayerId, WorldEmpireLayers } from './worldEmpireLayers';
 
 interface Layers {
   empires: WorldEmpireLayers;
@@ -24,7 +27,7 @@ interface Layers {
 const UPDATE_DELAY_MS = 60;
 
 /** Carte du monde entier à l'année donnée : territoires de tous les empires présents + calques d'époque. */
-export function WorldYearMap({ year }: { year: number }) {
+export function WorldYearMap({ year, religions = false }: { year: number; religions?: boolean }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const [layers, setLayers] = useState<Layers | null>(null);
@@ -149,6 +152,50 @@ export function WorldYearMap({ year }: { year: number }) {
     }, UPDATE_DELAY_MS);
     return () => clearTimeout(t);
   }, [layers, cities, year]);
+
+  // Calque « Religions » : module chargé au premier affichage ; fond de l'instantané le plus proche + entités des empires présents.
+  const religionRef = useRef<Promise<ReligionLayers | null> | null>(null);
+  const withReligion = (fn: (r: ReligionLayers) => void) => void religionRef.current?.then((r) => r && fn(r));
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!layers || !map) return;
+    if (religions && !religionRef.current) {
+      religionRef.current = import('../map/religionLayers').then(({ ReligionLayers }) => {
+        if (mapRef.current !== map || !map.getStyle()) return null;
+        // Au-dessus de tous les remplissages d'empire, sous leurs traits et étiquettes (remontés) et sous routes, catastrophes, monuments.
+        const ids = map.getStyle().layers.map((l) => l.id);
+        const world = ids.filter((id) => id.startsWith('world-'));
+        return new ReligionLayers(map, {
+          bgBefore: fillLayerId(EMPIRES[0]!.id),
+          entityBefore: ids[ids.lastIndexOf(world[world.length - 1]!) + 1],
+          raise: world.filter((id) => !id.endsWith('-fill')),
+        });
+      });
+    }
+    withReligion((r) => r.setEnabled(religions));
+  }, [layers, religions]);
+  useEffect(() => {
+    if (!layers || !religions) return;
+    let stale = false;
+    const t = setTimeout(() => {
+      void loadReligionSnapshots().then((names) => !stale && withReligion((r) => r.setSnapshot(pickSnapshot(year, names))));
+      const present = new Map(empiresAt(year).map((p) => [p.empire.id, p]));
+      for (const e of EMPIRES) {
+        const p = present.get(e.id);
+        if (!p) {
+          withReligion((r) => r.setEntities(e.id, null));
+          continue;
+        }
+        void Promise.all([loadStepReligions(e.id, p.step.id), loadTerritory(e.id, p.step.territory)]).then(([sr, fc]) => {
+          if (!stale) withReligion((r) => r.setEntities(e.id, withReligions(fc.features, sr?.entities)));
+        });
+      }
+    }, UPDATE_DELAY_MS);
+    return () => {
+      stale = true;
+      clearTimeout(t);
+    };
+  }, [layers, year, religions]);
 
   return <div ref={containerRef} className="world-map" role="region" aria-label="Carte du monde à l'année choisie" />;
 }

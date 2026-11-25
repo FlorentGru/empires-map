@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { GOTO_EVENT, type GotoDetail } from '../map/contemporaryLayers';
 import { formatYear } from '../lib/years';
 import { allStepYears, clampYear, empiresAt, MAX_YEAR, MIN_YEAR, nextStepYear } from '../lib/worldYear';
+import { readBool, writeBool } from '../lib/settings';
 import { writeWorldUrl } from './worldUrl';
 import { WorldPanel } from './WorldPanel';
 import { SPEEDS, WorldTimeline } from './WorldTimeline';
@@ -22,6 +23,15 @@ export function WorldYearView({ initialYear, backName, onBack }: Props) {
   const [playing, setPlaying] = useState(false);
   const [speed, setSpeed] = useState<number>(SPEEDS[0]);
   const [panelOpen, setPanelOpen] = useState(() => window.innerWidth >= 768);
+  const [religions, setReligions] = useState(() => readBool('atlas.religions', false));
+  const toggleReligions = useCallback(
+    () =>
+      setReligions((v) => {
+        writeBool('atlas.religions', !v);
+        return !v;
+      }),
+    [],
+  );
   const steps = useMemo(() => allStepYears(), []);
   const present = useMemo(() => empiresAt(year), [year]);
   const yearRef = useRef(year);
@@ -84,7 +94,7 @@ export function WorldYearView({ initialYear, backName, onBack }: Props) {
   return (
     <div className="app world-view">
       <h1 className="visually-hidden">Atlas des Empires — Le monde en l'an {year}</h1>
-      <WorldYearMap year={year} />
+      <WorldYearMap year={year} religions={religions} />
       {/* L'année affichée, en grand au centre en haut : c'est le repère principal de cette vue. */}
       <div className="world-year" aria-live="polite">
         <span className="world-year__label">Le monde en</span>
@@ -99,8 +109,17 @@ export function WorldYearView({ initialYear, backName, onBack }: Props) {
         <button type="button" className="btn world-back" onClick={onBack}>
           ← Retour à l'empire<span className="world-back__name"> · {backName}</span>
         </button>
+        <button
+          type="button"
+          className="btn btn--ghost"
+          aria-pressed={religions}
+          onClick={toggleReligions}
+          title="Colorer la carte selon la religion dominante de l'époque"
+        >
+          Religions : {religions ? 'oui' : 'non'}
+        </button>
       </div>
-      <WorldPanel year={year} present={present} open={panelOpen} onToggle={() => setPanelOpen((o) => !o)} onGoto={goto} />
+      <WorldPanel year={year} present={present} religions={religions} open={panelOpen} onToggle={() => setPanelOpen((o) => !o)} onGoto={goto} />
       <WorldTimeline year={year} onYear={setYearManual} onStep={step} playing={playing} onTogglePlay={togglePlay} speed={speed} onSpeed={setSpeed} />
     </div>
   );

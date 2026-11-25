@@ -51,7 +51,7 @@ def test_agent_se_construit():
     from atlas_agent.agent import root_agent
 
     assert root_agent.name == "guide_atlas"
-    assert len(root_agent.tools) == 10
+    assert len(root_agent.tools) == 11
 
 
 def test_chercher_personnage_trouve_cesar_et_ses_etapes():
@@ -96,6 +96,14 @@ def test_annee_en_texte_acceptee():
     assert tools.chercher_evenement_mondial("", "1453") == tools.chercher_evenement_mondial("", 1453)
     assert tools.profil_empire("ottomans", "1566") == tools.profil_empire("ottomans", 1566)
     assert tools.chercher_evenement_mondial("peste", "") == tools.chercher_evenement_mondial("peste")
+
+
+def test_religions_rome_annee_100_et_400():
+    polytheiste = tools.religions_empire("rome", 100)["entites"]
+    assert {"nom": "Empire romain", "religion": "Polythéismes", "minorites": ["Judaïsme"], "note": None} in polytheiste
+    chretien = tools.religions_empire("rome", 400)["entites"]
+    assert any(e["religion"] == "Christianisme" for e in chretien)
+    assert "erreur" in tools.religions_empire("atlantide", 100)
 
 
 def test_resume_empire():

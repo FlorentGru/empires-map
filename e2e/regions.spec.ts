@@ -31,6 +31,8 @@ test('régions : à l’arrêt, survol = surbrillance, clic = fiche d’explicat
   await expect(card).toContainText('Constance Chlore');
   await expect(card).toContainText('Augusta Treverorum');
   await expect(card).toContainText("Cœur de l'empire");
+  // Religion de l'entité à cette étape (data/religions/territories.json), même sans le calque Religions.
+  await expect(card).toContainText('Polythéismes');
 
   // En lecture, plus de survol ni de fiche.
   await page.keyboard.press('Escape');

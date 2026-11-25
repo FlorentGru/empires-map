@@ -23,6 +23,9 @@ import { ArmyLayer, continuedArmies } from './armyLayer';
 import { LONG_MARCH_KM, longestMarchKm, marchMs } from '../lib/march';
 import { CityLayer } from './cityLayer';
 import { CountriesLayer } from './countriesLayer';
+import type { ReligionLayers } from './religionLayers';
+import { loadStepReligions } from '../data/loadReligions';
+import { withReligions } from '../lib/religions';
 import { DiffHighlight } from './diff';
 import { EventMarker } from './eventMarker';
 import { FigureLayer } from './figureLayer';
@@ -56,6 +59,8 @@ interface Props {
   figures?: boolean;
   /** Calque « Pays 2026 » : frontières et noms actuels. */
   countries2026?: boolean;
+  /** Calque « Religions » (chargé à la première activation). */
+  religions?: boolean;
   /** Noms des États sur la carte. */
   stateNames?: boolean;
   /** Voisins de l'époque (contours et noms). */
@@ -147,6 +152,7 @@ export function WorldMap({
   speed = 1,
   figures: figuresOn = true,
   countries2026 = false,
+  religions: religionsOn = false,
   stateNames = true,
   neighbors: neighborsOn = true,
   contemporaries: contemporariesOn = true,
@@ -209,6 +215,8 @@ export function WorldMap({
   empireRef.current = empire;
   const yearRef = useRef(empire.steps[index]?.year ?? 0);
   yearRef.current = empire.steps[index]?.year ?? 0;
+  const stepIdRef = useRef(empire.steps[index]?.id);
+  stepIdRef.current = empire.steps[index]?.id;
 
   // Création de la carte (une seule fois).
   useEffect(() => {
@@ -285,7 +293,7 @@ export function WorldMap({
       created.disasters.setEnabled(disastersRef.current);
       created.inventions.setEnabled(inventionsRef.current);
       created.countries.setVisible(countriesRef.current);
-      created.territories.onPick = (f, x, y) => openRegionCard(map, f, x, y, empireRef.current.id, yearRef.current, citiesRef.current);
+      created.territories.onPick = (f, x, y) => openRegionCard(map, f, x, y, empireRef.current.id, yearRef.current, citiesRef.current, stepIdRef.current);
       created.territories.setInteractive(regionsRef.current);
       if (import.meta.env.DEV) (window as unknown as { __glide: GlideLayer }).__glide = created.glide;
       setLayers(created);
@@ -650,6 +658,46 @@ export function WorldMap({
   useEffect(() => {
     layers?.countries.setVisible(countries2026);
   }, [layers, countries2026]);
+
+  // Calque « Religions » : module chargé au premier affichage ; les appels suivants passent par la même promesse.
+  const religionRef = useRef<Promise<ReligionLayers | null> | null>(null);
+  const withReligion = (fn: (r: ReligionLayers) => void) => void religionRef.current?.then((r) => r && fn(r));
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!layers || !map || compact) return;
+    if (religionsOn && !religionRef.current) {
+      religionRef.current = import('./religionLayers').then(({ ReligionLayers }) =>
+        mapRef.current === map && map.getStyle()
+          ? new ReligionLayers(map, {
+              bgBefore: 'neighbors-border',
+              entityBefore: 'territory-hover-fill',
+              raise: ['territory-a-line', 'territory-a-dash', 'territory-b-line', 'territory-b-dash'],
+            })
+          : null,
+      );
+    }
+    withReligion((r) => r.setEnabled(religionsOn));
+  }, [layers, religionsOn, compact]);
+  useEffect(() => {
+    withReligion((r) => r.setCountries(countries2026));
+  }, [layers, religionsOn, countries2026]);
+  // Fond historique de l'étape et religion de chaque entité de l'empire, à chaque changement d'étape.
+  useEffect(() => {
+    const st = empire.steps[index];
+    if (!layers || !st || !religionsOn || compact) return;
+    let stale = false;
+    void Promise.all([loadStepReligions(empire.id, st.id), loadTerritory(empire.id, st.territory)]).then(([sr, fc]) => {
+      if (stale) return;
+      withReligion((r) => {
+        r.setSnapshot(sr?.snapshot ?? null);
+        r.setEntities(empire.id, withReligions(fc.features, sr?.entities));
+      });
+    });
+    return () => {
+      stale = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [layers, empire, index, religionsOn, compact]);
 
   // Figurines : armées et personnages de l'étape, lancés avec la caméra (le flyTo dure 2 s).
   useEffect(() => {

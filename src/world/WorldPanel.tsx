@@ -6,6 +6,7 @@ import { activeDisasters, activeRoutes, formatDeaths, OPEN_DISASTER_EVENT } from
 import { formatYear } from '../lib/years';
 import type { PresentEmpire } from '../lib/worldYear';
 import { standingAt } from '../map/monumentLayers';
+import { ReligionRows } from '../panels/ReligionLegend';
 import type { Disaster } from '../types-disaster';
 import type { Monument } from '../types-monument';
 import type { TradeRoute } from '../types-route';
@@ -14,6 +15,7 @@ import './world.css';
 interface Props {
   year: number;
   present: PresentEmpire[];
+  religions?: boolean;
   open: boolean;
   onToggle: () => void;
   onGoto: (empireId: string, stepId: string) => void;
@@ -22,7 +24,7 @@ interface Props {
 const MONUMENT_NAMES = 8;
 
 /** Panneau « En l'an X » : empires présents, monuments debout, routes actives, catastrophes en cours. */
-export function WorldPanel({ year, present, open, onToggle, onGoto }: Props) {
+export function WorldPanel({ year, present, religions = false, open, onToggle, onGoto }: Props) {
   const standing = useMemo(() => standingAt(monuments as Monument[], year), [year]);
   const liveRoutes = useMemo(() => activeRoutes(routes as TradeRoute[], year), [year]);
   const live = useMemo(() => activeDisasters(disasters as Disaster[], year), [year]);
@@ -58,6 +60,15 @@ export function WorldPanel({ year, present, open, onToggle, onGoto }: Props) {
               ))}
             </ul>
           </section>
+
+          {religions && (
+            <section aria-label="Religions">
+              <h3>Religions</h3>
+              <ul className="legend__rows">
+                <ReligionRows />
+              </ul>
+            </section>
+          )}
 
           <section aria-label="Monuments debout">
             <h3>

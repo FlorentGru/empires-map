@@ -6,6 +6,7 @@ interface Props {
   relief: boolean;
   figures: boolean;
   countries2026: boolean;
+  religions: boolean;
   stateNames: boolean;
   neighbors: boolean;
   contemporaries: boolean;
@@ -17,6 +18,7 @@ interface Props {
   onToggleRelief: () => void;
   onToggleFigures: () => void;
   onToggleCountries2026: () => void;
+  onToggleReligions: () => void;
   onToggleStateNames: () => void;
   onToggleNeighbors: () => void;
   onToggleContemporaries: () => void;
@@ -33,6 +35,7 @@ export function ViewControls({
   relief,
   figures,
   countries2026,
+  religions,
   stateNames,
   neighbors,
   contemporaries,
@@ -44,6 +47,7 @@ export function ViewControls({
   onToggleRelief,
   onToggleFigures,
   onToggleCountries2026,
+  onToggleReligions,
   onToggleStateNames,
   onToggleNeighbors,
   onToggleContemporaries,
@@ -107,6 +111,15 @@ export function ViewControls({
           title="Superposer les frontières et les noms des pays actuels"
         >
           Pays 2026 : {countries2026 ? 'oui' : 'non'}
+        </button>
+        <button
+          type="button"
+          className="btn btn--ghost"
+          aria-pressed={religions}
+          onClick={onToggleReligions}
+          title="Colorer la carte selon la religion dominante de l'époque (avec Pays 2026 : celle des pays actuels)"
+        >
+          Religions : {religions ? 'oui' : 'non'}
         </button>
         <button
           type="button"

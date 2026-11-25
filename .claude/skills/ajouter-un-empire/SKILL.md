@@ -59,6 +59,8 @@ Corrige les petits écarts directement dans `_carto.json`, relance `npm run buil
 ### 4. Régions (Haiku)
 `npx tsx scripts/list-regions.ts <id>` liste chaque entité nommée ; l'agent Haiku rédige `data/empires/<id>/regions.json` puis lance `--sync`. Relis les textes (justesse historique) avant de commiter.
 
+**Religions** (même liste d'entités) : ajoute l'empire dans `data/religions/territories.json` (nom exact de chaque entité → périodes `{ from, religion, minorities?, note? }`, contrat `src/types-religion.ts`). Religion de la MAJORITÉ de la population, la note dit quand la dynastie en a une autre ; une période seulement par vraie transition (conversion, schisme de 1054, Réforme). Sonnet si l'empire a des transitions, sinon toi. Puis `npm run build:religions` et `npx vitest run tests/data/religions.test.ts` (chaque entité doit avoir une religion dès sa première année). Si les voisins de l'empire viennent de noms historical-basemaps absents de `data/religions/historical.json`, ajoute les plus grands.
+
 ### 5. Vérifications finales (toi)
 - `npm run build:og` → commite `public/og/<id>.png` ; `npm run build` annonce les nouvelles pages (`prerender : N pages`) ; `npm run check:bundle`.
 - **Le monde en l'an X** : `npx vitest run tests/unit/worldYear.test.ts` et une capture headless de `/?world=1&year=<apogée>` : l'empire est listé et dessiné.

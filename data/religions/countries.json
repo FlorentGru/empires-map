@@ -1,0 +1,1074 @@
+{
+  "ZWE": {
+    "religion": "protestantisme"
+  },
+  "ZMB": {
+    "religion": "protestantisme"
+  },
+  "YEM": {
+    "religion": "islam-sunnite",
+    "minorities": [
+      "islam-chiite"
+    ]
+  },
+  "VNM": {
+    "religion": "sans-religion",
+    "minorities": [
+      "bouddhisme"
+    ]
+  },
+  "VEN": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "VAT": {
+    "religion": "catholicisme"
+  },
+  "VUT": {
+    "religion": "protestantisme",
+    "minorities": [
+      "catholicisme"
+    ]
+  },
+  "UZB": {
+    "religion": "islam-sunnite"
+  },
+  "URY": {
+    "religion": "catholicisme",
+    "minorities": [
+      "sans-religion"
+    ]
+  },
+  "FSM": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "MHL": {
+    "religion": "protestantisme",
+    "minorities": [
+      "catholicisme"
+    ]
+  },
+  "MNP": {
+    "religion": "catholicisme"
+  },
+  "VIR": {
+    "religion": "protestantisme",
+    "minorities": [
+      "catholicisme"
+    ]
+  },
+  "GUM": {
+    "religion": "catholicisme"
+  },
+  "ASM": {
+    "religion": "protestantisme",
+    "minorities": [
+      "catholicisme"
+    ]
+  },
+  "PRI": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "USA": {
+    "religion": "protestantisme",
+    "minorities": [
+      "catholicisme"
+    ]
+  },
+  "SHN": {
+    "religion": "protestantisme"
+  },
+  "PCN": {
+    "religion": "protestantisme"
+  },
+  "AIA": {
+    "religion": "protestantisme"
+  },
+  "FLK": {
+    "religion": "protestantisme"
+  },
+  "CYM": {
+    "religion": "protestantisme"
+  },
+  "BMU": {
+    "religion": "protestantisme"
+  },
+  "VGB": {
+    "religion": "protestantisme"
+  },
+  "TCA": {
+    "religion": "protestantisme"
+  },
+  "MSR": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "JEY": {
+    "religion": "protestantisme"
+  },
+  "GGY": {
+    "religion": "protestantisme"
+  },
+  "IMN": {
+    "religion": "protestantisme"
+  },
+  "GBR": {
+    "religion": "protestantisme",
+    "minorities": [
+      "sans-religion"
+    ]
+  },
+  "ARE": {
+    "religion": "islam-sunnite"
+  },
+  "UKR": {
+    "religion": "orthodoxie",
+    "minorities": [
+      "sans-religion"
+    ]
+  },
+  "UGA": {
+    "religion": "christianisme",
+    "minorities": [
+      "islam-sunnite"
+    ]
+  },
+  "TKM": {
+    "religion": "islam-sunnite"
+  },
+  "TUR": {
+    "religion": "islam-sunnite"
+  },
+  "TUN": {
+    "religion": "islam-sunnite"
+  },
+  "TTO": {
+    "religion": "christianisme",
+    "minorities": [
+      "hindouisme"
+    ]
+  },
+  "TON": {
+    "religion": "protestantisme"
+  },
+  "TGO": {
+    "religion": "christianisme",
+    "minorities": [
+      "islam-sunnite"
+    ]
+  },
+  "TLS": {
+    "religion": "catholicisme"
+  },
+  "THA": {
+    "religion": "bouddhisme"
+  },
+  "TZA": {
+    "religion": "christianisme",
+    "minorities": [
+      "islam-sunnite"
+    ]
+  },
+  "TJK": {
+    "religion": "islam-sunnite"
+  },
+  "TWN": {
+    "religion": "religions-chinoises"
+  },
+  "SYR": {
+    "religion": "islam-sunnite",
+    "minorities": [
+      "islam-chiite"
+    ]
+  },
+  "CHE": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "SWE": {
+    "religion": "protestantisme",
+    "minorities": [
+      "sans-religion"
+    ]
+  },
+  "SWZ": {
+    "religion": "protestantisme"
+  },
+  "SUR": {
+    "religion": "christianisme",
+    "minorities": [
+      "hindouisme",
+      "islam-sunnite"
+    ]
+  },
+  "SDS": {
+    "religion": "christianisme",
+    "minorities": [
+      "traditionnelles"
+    ]
+  },
+  "SDN": {
+    "religion": "islam-sunnite"
+  },
+  "LKA": {
+    "religion": "bouddhisme",
+    "minorities": [
+      "hindouisme"
+    ]
+  },
+  "ESP": {
+    "religion": "catholicisme",
+    "minorities": [
+      "sans-religion"
+    ]
+  },
+  "KOR": {
+    "religion": "sans-religion",
+    "minorities": [
+      "protestantisme",
+      "bouddhisme"
+    ]
+  },
+  "ZAF": {
+    "religion": "christianisme"
+  },
+  "SOM": {
+    "religion": "islam-sunnite"
+  },
+  "SOL": {
+    "religion": "islam-sunnite"
+  },
+  "SLB": {
+    "religion": "protestantisme",
+    "minorities": [
+      "catholicisme"
+    ]
+  },
+  "SVK": {
+    "religion": "catholicisme",
+    "minorities": [
+      "sans-religion"
+    ]
+  },
+  "SVN": {
+    "religion": "catholicisme",
+    "minorities": [
+      "sans-religion"
+    ]
+  },
+  "SGP": {
+    "religion": "bouddhisme",
+    "minorities": [
+      "islam-sunnite"
+    ]
+  },
+  "SLE": {
+    "religion": "islam-sunnite"
+  },
+  "SYC": {
+    "religion": "catholicisme"
+  },
+  "SRB": {
+    "religion": "orthodoxie"
+  },
+  "SEN": {
+    "religion": "islam-sunnite"
+  },
+  "SAU": {
+    "religion": "islam-sunnite"
+  },
+  "STP": {
+    "religion": "catholicisme"
+  },
+  "SMR": {
+    "religion": "catholicisme"
+  },
+  "WSM": {
+    "religion": "protestantisme",
+    "minorities": [
+      "catholicisme"
+    ]
+  },
+  "VCT": {
+    "religion": "protestantisme"
+  },
+  "LCA": {
+    "religion": "catholicisme"
+  },
+  "KNA": {
+    "religion": "protestantisme"
+  },
+  "RWA": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "RUS": {
+    "religion": "orthodoxie",
+    "minorities": [
+      "sans-religion"
+    ]
+  },
+  "ROU": {
+    "religion": "orthodoxie"
+  },
+  "QAT": {
+    "religion": "islam-sunnite"
+  },
+  "PRT": {
+    "religion": "catholicisme"
+  },
+  "POL": {
+    "religion": "catholicisme"
+  },
+  "PHL": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "PER": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "PRY": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "PNG": {
+    "religion": "christianisme"
+  },
+  "PAN": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "PLW": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "PAK": {
+    "religion": "islam-sunnite",
+    "minorities": [
+      "islam-chiite"
+    ]
+  },
+  "OMN": {
+    "religion": "islam"
+  },
+  "NOR": {
+    "religion": "protestantisme",
+    "minorities": [
+      "sans-religion"
+    ]
+  },
+  "PRK": {
+    "religion": "sans-religion"
+  },
+  "NGA": {
+    "religion": "christianisme",
+    "minorities": [
+      "islam-sunnite"
+    ]
+  },
+  "NER": {
+    "religion": "islam-sunnite"
+  },
+  "NIC": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "NZL": {
+    "religion": "sans-religion",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "NIU": {
+    "religion": "protestantisme"
+  },
+  "COK": {
+    "religion": "protestantisme"
+  },
+  "NLD": {
+    "religion": "sans-religion",
+    "minorities": [
+      "catholicisme"
+    ]
+  },
+  "ABW": {
+    "religion": "catholicisme"
+  },
+  "CUW": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "NPL": {
+    "religion": "hindouisme"
+  },
+  "NRU": {
+    "religion": "protestantisme",
+    "minorities": [
+      "catholicisme"
+    ]
+  },
+  "NAM": {
+    "religion": "protestantisme",
+    "minorities": [
+      "catholicisme"
+    ]
+  },
+  "MOZ": {
+    "religion": "christianisme",
+    "minorities": [
+      "islam-sunnite"
+    ]
+  },
+  "MAR": {
+    "religion": "islam-sunnite"
+  },
+  "SAH": {
+    "religion": "islam-sunnite"
+  },
+  "MNE": {
+    "religion": "orthodoxie",
+    "minorities": [
+      "islam-sunnite"
+    ]
+  },
+  "MNG": {
+    "religion": "bouddhisme"
+  },
+  "MDA": {
+    "religion": "orthodoxie"
+  },
+  "MCO": {
+    "religion": "catholicisme"
+  },
+  "MEX": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "MUS": {
+    "religion": "hindouisme",
+    "minorities": [
+      "christianisme",
+      "islam-sunnite"
+    ]
+  },
+  "MRT": {
+    "religion": "islam-sunnite"
+  },
+  "MLT": {
+    "religion": "catholicisme"
+  },
+  "MLI": {
+    "religion": "islam-sunnite"
+  },
+  "MDV": {
+    "religion": "islam-sunnite"
+  },
+  "MYS": {
+    "religion": "islam-sunnite",
+    "minorities": [
+      "bouddhisme"
+    ]
+  },
+  "MWI": {
+    "religion": "christianisme",
+    "minorities": [
+      "islam-sunnite"
+    ]
+  },
+  "MDG": {
+    "religion": "christianisme",
+    "minorities": [
+      "traditionnelles"
+    ]
+  },
+  "MKD": {
+    "religion": "orthodoxie",
+    "minorities": [
+      "islam-sunnite"
+    ]
+  },
+  "LUX": {
+    "religion": "catholicisme",
+    "minorities": [
+      "sans-religion"
+    ]
+  },
+  "LTU": {
+    "religion": "catholicisme",
+    "minorities": [
+      "sans-religion"
+    ]
+  },
+  "LIE": {
+    "religion": "catholicisme"
+  },
+  "LBY": {
+    "religion": "islam-sunnite"
+  },
+  "LBR": {
+    "religion": "christianisme",
+    "minorities": [
+      "islam-sunnite"
+    ]
+  },
+  "LSO": {
+    "religion": "christianisme"
+  },
+  "LBN": {
+    "religion": "islam",
+    "minorities": [
+      "christianisme"
+    ]
+  },
+  "LVA": {
+    "religion": "christianisme",
+    "minorities": [
+      "sans-religion"
+    ]
+  },
+  "LAO": {
+    "religion": "bouddhisme"
+  },
+  "KGZ": {
+    "religion": "islam-sunnite"
+  },
+  "KWT": {
+    "religion": "islam-sunnite",
+    "minorities": [
+      "islam-chiite"
+    ]
+  },
+  "KOS": {
+    "religion": "islam-sunnite"
+  },
+  "KIR": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "KEN": {
+    "religion": "christianisme",
+    "minorities": [
+      "islam-sunnite"
+    ]
+  },
+  "KAZ": {
+    "religion": "islam-sunnite",
+    "minorities": [
+      "orthodoxie"
+    ]
+  },
+  "JOR": {
+    "religion": "islam-sunnite"
+  },
+  "JPN": {
+    "religion": "shinto"
+  },
+  "JAM": {
+    "religion": "protestantisme"
+  },
+  "ITA": {
+    "religion": "catholicisme"
+  },
+  "ISR": {
+    "religion": "judaisme",
+    "minorities": [
+      "islam-sunnite"
+    ]
+  },
+  "PSX": {
+    "religion": "islam-sunnite"
+  },
+  "IRL": {
+    "religion": "catholicisme",
+    "minorities": [
+      "sans-religion"
+    ]
+  },
+  "IRQ": {
+    "religion": "islam-chiite",
+    "minorities": [
+      "islam-sunnite"
+    ]
+  },
+  "IRN": {
+    "religion": "islam-chiite"
+  },
+  "IDN": {
+    "religion": "islam-sunnite",
+    "minorities": [
+      "christianisme"
+    ]
+  },
+  "IND": {
+    "religion": "hindouisme",
+    "minorities": [
+      "islam-sunnite"
+    ]
+  },
+  "ISL": {
+    "religion": "protestantisme",
+    "minorities": [
+      "sans-religion"
+    ]
+  },
+  "HUN": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "HND": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "HTI": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "GUY": {
+    "religion": "christianisme",
+    "minorities": [
+      "hindouisme"
+    ]
+  },
+  "GNB": {
+    "religion": "islam-sunnite"
+  },
+  "GIN": {
+    "religion": "islam-sunnite"
+  },
+  "GTM": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "GRD": {
+    "religion": "catholicisme"
+  },
+  "GRC": {
+    "religion": "orthodoxie"
+  },
+  "GHA": {
+    "religion": "christianisme",
+    "minorities": [
+      "islam-sunnite"
+    ]
+  },
+  "DEU": {
+    "religion": "christianisme",
+    "minorities": [
+      "sans-religion"
+    ]
+  },
+  "GEO": {
+    "religion": "orthodoxie"
+  },
+  "GMB": {
+    "religion": "islam-sunnite"
+  },
+  "GAB": {
+    "religion": "christianisme"
+  },
+  "FRA": {
+    "religion": "catholicisme",
+    "minorities": [
+      "sans-religion",
+      "islam-sunnite"
+    ]
+  },
+  "SPM": {
+    "religion": "catholicisme"
+  },
+  "WLF": {
+    "religion": "catholicisme"
+  },
+  "MAF": {
+    "religion": "catholicisme"
+  },
+  "BLM": {
+    "religion": "catholicisme"
+  },
+  "PYF": {
+    "religion": "protestantisme",
+    "minorities": [
+      "catholicisme"
+    ]
+  },
+  "NCL": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "ALD": {
+    "religion": "protestantisme"
+  },
+  "FIN": {
+    "religion": "protestantisme",
+    "minorities": [
+      "sans-religion"
+    ]
+  },
+  "FJI": {
+    "religion": "christianisme",
+    "minorities": [
+      "hindouisme"
+    ]
+  },
+  "ETH": {
+    "religion": "christianismes-orientaux",
+    "minorities": [
+      "islam-sunnite"
+    ]
+  },
+  "EST": {
+    "religion": "sans-religion"
+  },
+  "ERI": {
+    "religion": "christianismes-orientaux",
+    "minorities": [
+      "islam-sunnite"
+    ]
+  },
+  "GNQ": {
+    "religion": "catholicisme"
+  },
+  "SLV": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "EGY": {
+    "religion": "islam-sunnite",
+    "minorities": [
+      "christianismes-orientaux"
+    ]
+  },
+  "ECU": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "DOM": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "DMA": {
+    "religion": "catholicisme"
+  },
+  "DJI": {
+    "religion": "islam-sunnite"
+  },
+  "GRL": {
+    "religion": "protestantisme"
+  },
+  "FRO": {
+    "religion": "protestantisme"
+  },
+  "DNK": {
+    "religion": "protestantisme",
+    "minorities": [
+      "sans-religion"
+    ]
+  },
+  "CZE": {
+    "religion": "sans-religion"
+  },
+  "CYN": {
+    "religion": "islam-sunnite"
+  },
+  "CYP": {
+    "religion": "orthodoxie"
+  },
+  "CUB": {
+    "religion": "catholicisme",
+    "minorities": [
+      "sans-religion"
+    ]
+  },
+  "HRV": {
+    "religion": "catholicisme"
+  },
+  "CIV": {
+    "religion": "islam-sunnite",
+    "minorities": [
+      "christianisme"
+    ]
+  },
+  "CRI": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "COD": {
+    "religion": "christianisme"
+  },
+  "COG": {
+    "religion": "christianisme"
+  },
+  "COM": {
+    "religion": "islam-sunnite"
+  },
+  "COL": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "CHN": {
+    "religion": "sans-religion"
+  },
+  "MAC": {
+    "religion": "religions-chinoises"
+  },
+  "HKG": {
+    "religion": "religions-chinoises"
+  },
+  "CHL": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "TCD": {
+    "religion": "islam-sunnite",
+    "minorities": [
+      "christianisme"
+    ]
+  },
+  "CAF": {
+    "religion": "christianisme",
+    "minorities": [
+      "islam-sunnite"
+    ]
+  },
+  "CPV": {
+    "religion": "catholicisme"
+  },
+  "CAN": {
+    "religion": "catholicisme",
+    "minorities": [
+      "sans-religion"
+    ]
+  },
+  "CMR": {
+    "religion": "christianisme",
+    "minorities": [
+      "islam-sunnite"
+    ]
+  },
+  "KHM": {
+    "religion": "bouddhisme"
+  },
+  "MMR": {
+    "religion": "bouddhisme",
+    "minorities": [
+      "christianisme"
+    ]
+  },
+  "BDI": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "BFA": {
+    "religion": "islam-sunnite",
+    "minorities": [
+      "christianisme"
+    ]
+  },
+  "BGR": {
+    "religion": "orthodoxie",
+    "minorities": [
+      "islam-sunnite"
+    ]
+  },
+  "BRN": {
+    "religion": "islam-sunnite"
+  },
+  "BRA": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "BWA": {
+    "religion": "christianisme"
+  },
+  "BIH": {
+    "religion": "islam-sunnite",
+    "minorities": [
+      "orthodoxie"
+    ]
+  },
+  "BOL": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "BTN": {
+    "religion": "bouddhisme",
+    "minorities": [
+      "hindouisme"
+    ]
+  },
+  "BEN": {
+    "religion": "christianisme",
+    "minorities": [
+      "islam-sunnite"
+    ]
+  },
+  "BLZ": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "BEL": {
+    "religion": "catholicisme",
+    "minorities": [
+      "sans-religion"
+    ]
+  },
+  "BLR": {
+    "religion": "orthodoxie",
+    "minorities": [
+      "sans-religion"
+    ]
+  },
+  "BRB": {
+    "religion": "protestantisme",
+    "minorities": [
+      "catholicisme"
+    ]
+  },
+  "BGD": {
+    "religion": "islam-sunnite",
+    "minorities": [
+      "hindouisme"
+    ]
+  },
+  "BHR": {
+    "religion": "islam-chiite",
+    "minorities": [
+      "islam-sunnite"
+    ]
+  },
+  "BHS": {
+    "religion": "protestantisme",
+    "minorities": [
+      "catholicisme"
+    ]
+  },
+  "AZE": {
+    "religion": "islam-chiite"
+  },
+  "AUT": {
+    "religion": "catholicisme",
+    "minorities": [
+      "sans-religion"
+    ]
+  },
+  "AUS": {
+    "religion": "christianisme",
+    "minorities": [
+      "sans-religion"
+    ]
+  },
+  "IOA": {
+    "religion": "bouddhisme",
+    "minorities": [
+      "christianisme"
+    ]
+  },
+  "NFK": {
+    "religion": "protestantisme"
+  },
+  "ARM": {
+    "religion": "christianismes-orientaux"
+  },
+  "ARG": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "ATG": {
+    "religion": "protestantisme",
+    "minorities": [
+      "catholicisme"
+    ]
+  },
+  "AGO": {
+    "religion": "christianisme"
+  },
+  "AND": {
+    "religion": "catholicisme"
+  },
+  "DZA": {
+    "religion": "islam-sunnite"
+  },
+  "ALB": {
+    "religion": "islam-sunnite"
+  },
+  "AFG": {
+    "religion": "islam-sunnite",
+    "minorities": [
+      "islam-chiite"
+    ]
+  },
+  "SXM": {
+    "religion": "catholicisme",
+    "minorities": [
+      "protestantisme"
+    ]
+  },
+  "TUV": {
+    "religion": "protestantisme"
+  }
+}

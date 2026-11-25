@@ -1,0 +1,6077 @@
+{
+  "Abbasid Caliphate": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Abdelouadides": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Abenaki / Abénaquis": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Abyssinia": [
+    {
+      "from": 0,
+      "religion": "christianismes-orientaux"
+    }
+  ],
+  "Achaemenid Empire": [
+    {
+      "from": -1000,
+      "religion": "zoroastrisme"
+    }
+  ],
+  "Adal": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Adena": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Adena Culture": [
+    {
+      "from": -500,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Afghanistan": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Aghlabid Emirate": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Ahmadnagar": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Ahtna Nenn’": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Ainu": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Ainus": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Air": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Akaitcho": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Alans": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 900,
+      "religion": "orthodoxie"
+    }
+  ],
+  "Algeria": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Algeria (FR)": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Algeria (France)": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Algiers": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Algonquin": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Almohad Caliphate": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Almoravid dynasty": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Alwa": [
+    {
+      "from": 0,
+      "religion": "christianismes-orientaux"
+    }
+  ],
+  "Amazon hunter-gatherers": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Anasazi": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Andean hunter-gatherers": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Andean states and chiefdoms": [
+    {
+      "from": 0,
+      "religion": "polytheisme"
+    }
+  ],
+  "Angevin Empire": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Anglo-Egyptian Sudan": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Angola": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 1900,
+      "religion": "catholicisme"
+    }
+  ],
+  "Angola (Portugal)": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Anishinabewaki ᐊᓂᔑᓈᐯᐗᑭ": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Annam": [
+    {
+      "from": 0,
+      "religion": "religions-chinoises"
+    }
+  ],
+  "Apache": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Apsaalooké (Crow)": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Arabia": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Arabia (Nejd)": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Arabian pastoral nomads": [
+    {
+      "from": -1000,
+      "religion": "polytheisme"
+    }
+  ],
+  "Arabs": [
+    {
+      "from": -200,
+      "religion": "polytheisme"
+    },
+    {
+      "from": 632,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Arameans": [
+    {
+      "from": -1000,
+      "religion": "polytheisme"
+    }
+  ],
+  "Arapaho": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Arctic marine mammal hunters": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Argentina": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Armenia": [
+    {
+      "from": -323,
+      "religion": "polytheisme"
+    },
+    {
+      "from": 301,
+      "religion": "christianismes-orientaux"
+    }
+  ],
+  "Arrernte": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Asante": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Ashaninka": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Assam": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "Assiniboin": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Assiniboine": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Assyria": [
+    {
+      "from": -1000,
+      "religion": "polytheisme"
+    }
+  ],
+  "Astrakhan Khanate": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Athabascan": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Athabaskan": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Atropatene": [
+    {
+      "from": -1000,
+      "religion": "zoroastrisme"
+    }
+  ],
+  "Australia": [
+    {
+      "from": 0,
+      "religion": "protestantisme"
+    }
+  ],
+  "Australian aboriginal hunter-gatherers": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Austria Hungary": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Austrian Empire": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Austro-Asiatic rice cultures": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Austro-Hungarian Empire": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Austronesians": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Ava": [
+    {
+      "from": 0,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Avars": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Awsa": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Axum": [
+    {
+      "from": -1,
+      "religion": "polytheisme"
+    },
+    {
+      "from": 330,
+      "religion": "christianismes-orientaux"
+    }
+  ],
+  "Aymara": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Aymara kingdoms": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Ayoreo": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Ayutthaya": [
+    {
+      "from": 0,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Azandes": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Azerbaijan": [
+    {
+      "from": 0,
+      "religion": "islam-chiite"
+    }
+  ],
+  "Aztec Empire": [
+    {
+      "from": 0,
+      "religion": "polytheisme"
+    }
+  ],
+  "Aónikenk (Tehuelche)": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Babylonia": [
+    {
+      "from": -1000,
+      "religion": "polytheisme"
+    }
+  ],
+  "Bactria": [
+    {
+      "from": -200,
+      "religion": "polytheisme"
+    }
+  ],
+  "Bagan": [
+    {
+      "from": 0,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Bagirmi": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Balhae": [
+    {
+      "from": 0,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Baltic tribes": [
+    {
+      "from": 0,
+      "religion": "polytheisme"
+    }
+  ],
+  "Balts": [
+    {
+      "from": 0,
+      "religion": "polytheisme"
+    }
+  ],
+  "Banas": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "Bangladesh": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Bantu peoples": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Bashkirs": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Beaver": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Bedouins": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Bega": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Beja people": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Belgian Congo": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 1938,
+      "religion": "catholicisme"
+    }
+  ],
+  "Bell-shaped burials culture": [
+    {
+      "from": -500,
+      "religion": "polytheisme"
+    }
+  ],
+  "Bengal": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Benin": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Beothuk": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Berar": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Berber Tribes": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Berbers": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 700,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Bidjara": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Blackfoot": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Blemmyes": [
+    {
+      "from": -500,
+      "religion": "polytheisme"
+    }
+  ],
+  "Blue Horde": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Bodéwadmiakiwen (Potawatomi)": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Boe": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Boethuk": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Bokhara Khanate": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Bolivia": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Borgu States": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Botswana": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 1945,
+      "religion": "protestantisme"
+    }
+  ],
+  "Brazil": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "British American colonies": [
+    {
+      "from": 0,
+      "religion": "protestantisme"
+    }
+  ],
+  "British East Africa": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "British East India Company": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "British Guiana": [
+    {
+      "from": 0,
+      "religion": "protestantisme"
+    }
+  ],
+  "British Raj": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "British Somaliland": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Brushed Pottery culture": [
+    {
+      "from": -500,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Bukara Khanate": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Bulgar Khanate": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Bulgaria": [
+    {
+      "from": 0,
+      "religion": "orthodoxie"
+    }
+  ],
+  "Bundelkhand": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "Bunyoro": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Burgundians": [
+    {
+      "from": 0,
+      "religion": "christianisme"
+    }
+  ],
+  "Burkina Faso": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Burma": [
+    {
+      "from": 0,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Burmese": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Burmese kingdoms": [
+    {
+      "from": 0,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Burundi": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 1930,
+      "religion": "catholicisme"
+    }
+  ],
+  "Buwayhid Emirates": [
+    {
+      "from": 0,
+      "religion": "islam-chiite"
+    }
+  ],
+  "Buyid Emirate": [
+    {
+      "from": 0,
+      "religion": "islam-chiite"
+    }
+  ],
+  "Buyid dynasty": [
+    {
+      "from": 0,
+      "religion": "islam-chiite"
+    }
+  ],
+  "Byelarus": [
+    {
+      "from": 0,
+      "religion": "orthodoxie"
+    }
+  ],
+  "Byzantine Empire": [
+    {
+      "from": 0,
+      "religion": "christianisme"
+    },
+    {
+      "from": 1054,
+      "religion": "orthodoxie"
+    }
+  ],
+  "Caddo": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Caliphate of Córdoba": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Calusa": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Cambodia": [
+    {
+      "from": 0,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Cameroon": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 1945,
+      "religion": "christianisme"
+    }
+  ],
+  "Canada": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Cape Colony": [
+    {
+      "from": 0,
+      "religion": "protestantisme"
+    }
+  ],
+  "Cappadocia": [
+    {
+      "from": -323,
+      "religion": "polytheisme"
+    }
+  ],
+  "Carolingian Empire": [
+    {
+      "from": 0,
+      "religion": "christianisme"
+    }
+  ],
+  "Carthaginian Empire": [
+    {
+      "from": -500,
+      "religion": "polytheisme"
+    }
+  ],
+  "Castile": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Castille": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Catawba": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Caucasian Alans": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Celtiberians": [
+    {
+      "from": -1000,
+      "religion": "polytheisme"
+    }
+  ],
+  "Celtic kingdoms": [
+    {
+      "from": 0,
+      "religion": "christianisme"
+    }
+  ],
+  "Celts": [
+    {
+      "from": -400,
+      "religion": "polytheisme"
+    }
+  ],
+  "Central African Republic": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 1945,
+      "religion": "christianisme"
+    }
+  ],
+  "Chad": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Chagatai Khanate": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Chalukya Empire": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "Chalukyas": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "Champa": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    },
+    {
+      "from": 1450,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Champa City States": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "Chandellas": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "Chango": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Charrúa": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Chauhans": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "Chen-La": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "Cherokee": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Chichas": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Chile": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Chimú": [
+    {
+      "from": 0,
+      "religion": "polytheisme"
+    }
+  ],
+  "China": [
+    {
+      "from": 0,
+      "religion": "religions-chinoises"
+    },
+    {
+      "from": 1949,
+      "religion": "sans-religion"
+    }
+  ],
+  "Chinese Warlords": [
+    {
+      "from": 0,
+      "religion": "religions-chinoises"
+    }
+  ],
+  "Chinese warlords": [
+    {
+      "from": 0,
+      "religion": "religions-chinoises"
+    }
+  ],
+  "Chiquitano": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Chiricahua Apache": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Chola": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "Chola Empire": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "Cholas": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "Chorrera": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Chukchi": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Ciboney": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Cimerians": [
+    {
+      "from": -1000,
+      "religion": "polytheisme"
+    }
+  ],
+  "Circars": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "Coahuiltec": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Coahuiltecan": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Colombia": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Comanche": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Confederated Tribes of Siletz Indians": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Coqs": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Cree": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Crimean Khanate": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Crow": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Cuba": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Cuba (Spain)": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Cuman Khanates": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Cuman-Kipchak confederation": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Cyraneica (UK Lybia)": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Czechoslovakia": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    },
+    {
+      "from": 1950,
+      "religion": "sans-religion"
+    }
+  ],
+  "Dacia": [
+    {
+      "from": -1,
+      "religion": "polytheisme"
+    }
+  ],
+  "Dacians": [
+    {
+      "from": -100,
+      "religion": "polytheisme"
+    }
+  ],
+  "Dakeł Keyoh (ᑕᗸᒡ ᗲᘏᑋ)": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Danes": [
+    {
+      "from": 0,
+      "religion": "polytheisme"
+    },
+    {
+      "from": 965,
+      "religion": "christianisme"
+    }
+  ],
+  "Danube Bulgars": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Darfur": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Dehcho Dene": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Delaware": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Dena'ina Ełnena": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Dendi Kingdom": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Dene Tha'": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Denendeh (Dënësųłinë́ Nëné)": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Denmark": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    },
+    {
+      "from": 1536,
+      "religion": "protestantisme"
+    }
+  ],
+  "Denmark-Norway": [
+    {
+      "from": 0,
+      "religion": "christianisme"
+    },
+    {
+      "from": 1054,
+      "religion": "catholicisme"
+    },
+    {
+      "from": 1536,
+      "religion": "protestantisme"
+    }
+  ],
+  "Desert hunter-gatherers": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Diaguita": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Diné Bikéyah": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Dominion of Newfoundland": [
+    {
+      "from": 0,
+      "religion": "protestantisme"
+    }
+  ],
+  "Donghu tribes": [
+    {
+      "from": -400,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Dorset": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Dravidians": [
+    {
+      "from": -1000,
+      "religion": "hindouisme"
+    }
+  ],
+  "Dutch Brazil": [
+    {
+      "from": 0,
+      "religion": "protestantisme"
+    }
+  ],
+  "Dutch East Indies": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Dutch Guiana": [
+    {
+      "from": 0,
+      "religion": "protestantisme"
+    }
+  ],
+  "Dutch Guinea": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Dutch settlements": [
+    {
+      "from": 0,
+      "religion": "protestantisme"
+    }
+  ],
+  "Dvaravati": [
+    {
+      "from": 0,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Dënéndeh": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "East Francia": [
+    {
+      "from": 0,
+      "religion": "christianisme"
+    }
+  ],
+  "East Germany": [
+    {
+      "from": 0,
+      "religion": "sans-religion"
+    }
+  ],
+  "East Java": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "Eastern North American hunter-gatherers": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Eastern Roman Empire": [
+    {
+      "from": 0,
+      "religion": "christianisme"
+    }
+  ],
+  "Eastern Shoshone": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Ecuador": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Eeyou Istchee": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Egypt": [
+    {
+      "from": -3000,
+      "religion": "polytheisme"
+    },
+    {
+      "from": 380,
+      "religion": "christianismes-orientaux"
+    },
+    {
+      "from": 1000,
+      "religion": "islam-sunnite",
+      "minorities": [
+        "christianismes-orientaux"
+      ]
+    }
+  ],
+  "El Paraiso": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Elam": [
+    {
+      "from": -1000,
+      "religion": "polytheisme"
+    }
+  ],
+  "Emberá Katío/Eyabida": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Emberá/Eperara/Épera": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Emirate of Bin Shal'an": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Emirate of Córdoba": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Emirate of the White Sheep Turks": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Empire of Alexander": [
+    {
+      "from": -323,
+      "religion": "polytheisme"
+    }
+  ],
+  "Empire of Ghana": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Empire of Japan": [
+    {
+      "from": 0,
+      "religion": "shinto"
+    }
+  ],
+  "Enets": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "England": [
+    {
+      "from": 0,
+      "religion": "christianisme"
+    },
+    {
+      "from": 1054,
+      "religion": "catholicisme"
+    },
+    {
+      "from": 1534,
+      "religion": "protestantisme"
+    }
+  ],
+  "England and Ireland": [
+    {
+      "from": 0,
+      "religion": "protestantisme"
+    }
+  ],
+  "English territory": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Erie": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Ethiopia": [
+    {
+      "from": 0,
+      "religion": "christianismes-orientaux"
+    }
+  ],
+  "Ethiopia (Italy)": [
+    {
+      "from": 0,
+      "religion": "christianismes-orientaux"
+    }
+  ],
+  "Ethiopian Highland Peoples": [
+    {
+      "from": 0,
+      "religion": "christianismes-orientaux"
+    }
+  ],
+  "Ethiopian highland farmers": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Eyaq": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Far Eastern SSR": [
+    {
+      "from": 0,
+      "religion": "orthodoxie"
+    },
+    {
+      "from": 1930,
+      "religion": "sans-religion"
+    }
+  ],
+  "Fatimid Caliphate": [
+    {
+      "from": 0,
+      "religion": "islam-chiite"
+    }
+  ],
+  "Fezzan (Frech Lybia)": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Finland": [
+    {
+      "from": 0,
+      "religion": "protestantisme"
+    }
+  ],
+  "Finno-Ugric taiga hunter-gatherers": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Finns": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "First Samori Empire": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Florida": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Florida (Spain)": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "France": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Frankish Kingdom": [
+    {
+      "from": 0,
+      "religion": "christianisme"
+    }
+  ],
+  "Franks": [
+    {
+      "from": 0,
+      "religion": "polytheisme"
+    },
+    {
+      "from": 496,
+      "religion": "christianisme"
+    }
+  ],
+  "French Cameroons": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "French Equatorial Africa": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Fulani Empire": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Funan": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "Funj": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Gabon": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 1945,
+      "religion": "catholicisme"
+    }
+  ],
+  "Gandhara grave culture": [
+    {
+      "from": -1000,
+      "religion": "hindouisme"
+    }
+  ],
+  "German E. Africa (Tanganyika)": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "German Empire": [
+    {
+      "from": 0,
+      "religion": "protestantisme"
+    }
+  ],
+  "German South-West Africa": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Germanic tribes": [
+    {
+      "from": -400,
+      "religion": "polytheisme"
+    }
+  ],
+  "Germany": [
+    {
+      "from": 0,
+      "religion": "protestantisme"
+    }
+  ],
+  "Germany (Soviet)": [
+    {
+      "from": 0,
+      "religion": "protestantisme"
+    }
+  ],
+  "Germany (USA)": [
+    {
+      "from": 0,
+      "religion": "protestantisme"
+    }
+  ],
+  "Ghana": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 1900,
+      "religion": "christianisme"
+    }
+  ],
+  "Ghaznavid Emirate": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Gojoseon": [
+    {
+      "from": -400,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Golconda": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Gold Coast": [
+    {
+      "from": 0,
+      "religion": "christianisme"
+    }
+  ],
+  "Golden Horde": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Golkonda": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Gondwana": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Goryeo": [
+    {
+      "from": 0,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Grand Duchy of Finland": [
+    {
+      "from": 0,
+      "religion": "protestantisme"
+    }
+  ],
+  "Grand Duchy of Moscow": [
+    {
+      "from": 0,
+      "religion": "orthodoxie"
+    }
+  ],
+  "Great Khanate": [
+    {
+      "from": 0,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Great Moravia": [
+    {
+      "from": 0,
+      "religion": "christianisme"
+    }
+  ],
+  "Greece": [
+    {
+      "from": 0,
+      "religion": "orthodoxie"
+    }
+  ],
+  "Greek city-states": [
+    {
+      "from": -1000,
+      "religion": "polytheisme"
+    }
+  ],
+  "Greenland": [
+    {
+      "from": 0,
+      "religion": "protestantisme"
+    }
+  ],
+  "Guachichil": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Guahibo/Hiwi": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Guatemala": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Guenoa-Muinanes": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Guinea": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Gujarat": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Gupta Empire": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "Gurjara Pratihara": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "Guyana": [
+    {
+      "from": 0,
+      "religion": "protestantisme"
+    }
+  ],
+  "Guyana (Netherlands)": [
+    {
+      "from": 0,
+      "religion": "protestantisme"
+    }
+  ],
+  "Gwich'in Nành": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Göktürks": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Günün a atük (Günün a küna)": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Hadramaut": [
+    {
+      "from": -323,
+      "religion": "polytheisme"
+    },
+    {
+      "from": 630,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Hafsid Caliphate": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Hail": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Hallstatt culture": [
+    {
+      "from": -400,
+      "religion": "polytheisme"
+    }
+  ],
+  "Han": [
+    {
+      "from": -1,
+      "religion": "religions-chinoises"
+    }
+  ],
+  "Han Empire": [
+    {
+      "from": -200,
+      "religion": "religions-chinoises"
+    }
+  ],
+  "Han Zhao": [
+    {
+      "from": 0,
+      "religion": "religions-chinoises"
+    }
+  ],
+  "Harapunchai": [
+    {
+      "from": 0,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Harer (Egypt)": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Haripunjaya": [
+    {
+      "from": 0,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Hausa States": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Hejaz": [
+    {
+      "from": 0,
+      "religion": "polytheisme"
+    },
+    {
+      "from": 632,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Henîa-Kamiare": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Himyarite Kingdom": [
+    {
+      "from": -1,
+      "religion": "polytheisme"
+    },
+    {
+      "from": 380,
+      "religion": "judaisme"
+    }
+  ],
+  "Hindu Shahis": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "Hindu kingdoms": [
+    {
+      "from": -500,
+      "religion": "hindouisme"
+    }
+  ],
+  "Hindu kingdoms and republics": [
+    {
+      "from": -323,
+      "religion": "hindouisme"
+    }
+  ],
+  "Hindu states": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "Hittites": [
+    {
+      "from": -1000,
+      "religion": "polytheisme"
+    }
+  ],
+  "Ho-de-no-sau-nee-ga (Haudenosaunee)": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Holy Roman Empire": [
+    {
+      "from": 0,
+      "religion": "christianisme"
+    },
+    {
+      "from": 1054,
+      "religion": "catholicisme"
+    }
+  ],
+  "Honduras": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Hopewell": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Hopewell Culture": [
+    {
+      "from": -100,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Hopi": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Huari Empire": [
+    {
+      "from": 0,
+      "religion": "polytheisme"
+    }
+  ],
+  "Huarpe": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Hungary": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Hunnic Empire": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Huron": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Ibadites": [
+    {
+      "from": 0,
+      "religion": "islam"
+    }
+  ],
+  "Iceland": [
+    {
+      "from": 0,
+      "religion": "protestantisme"
+    }
+  ],
+  "Icelandic Commonwealth": [
+    {
+      "from": 0,
+      "religion": "christianisme"
+    },
+    {
+      "from": 1054,
+      "religion": "catholicisme"
+    }
+  ],
+  "Idrisid Caliphate": [
+    {
+      "from": 700,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Ifat": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Ilkhanate": [
+    {
+      "from": 1000,
+      "religion": "islam-sunnite",
+      "note": "Les khans mongols, chamanistes ou bouddhistes, se convertissent à l'islam avec Ghazan en 1295."
+    }
+  ],
+  "Illinois": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Illyrians": [
+    {
+      "from": -1000,
+      "religion": "polytheisme"
+    }
+  ],
+  "Imerina": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Imperial Hungary": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Imperial Japan": [
+    {
+      "from": 0,
+      "religion": "shinto"
+    }
+  ],
+  "Imperial Japan (Fujiwara)": [
+    {
+      "from": 0,
+      "religion": "shinto"
+    }
+  ],
+  "Inca Empire": [
+    {
+      "from": 0,
+      "religion": "polytheisme"
+    }
+  ],
+  "India": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "Indonesia": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Inikana/Kukama Kukamiria/Kokama": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Innu": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Inuit": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Inupiaq": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Inupiat": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Inuvialuit": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Iran": [
+    {
+      "from": 0,
+      "religion": "islam-chiite"
+    }
+  ],
+  "Iranian pastoralists": [
+    {
+      "from": -1000,
+      "religion": "polytheisme"
+    }
+  ],
+  "Iraq": [
+    {
+      "from": 0,
+      "religion": "islam-chiite"
+    }
+  ],
+  "Iron Age chieftainships": [
+    {
+      "from": -200,
+      "religion": "polytheisme"
+    }
+  ],
+  "Iron Age megalith cultures": [
+    {
+      "from": -500,
+      "religion": "polytheisme"
+    }
+  ],
+  "Iroquois": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Islamic and Hindu states": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Islamic city-states": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Islamic states": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Italian Somaliland": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Italy": [
+    {
+      "from": -300,
+      "religion": "polytheisme"
+    },
+    {
+      "from": 380,
+      "religion": "christianisme"
+    },
+    {
+      "from": 1054,
+      "religion": "catholicisme"
+    }
+  ],
+  "Itelmen": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Japan": [
+    {
+      "from": 0,
+      "religion": "shinto"
+    }
+  ],
+  "Japan (USA)": [
+    {
+      "from": 0,
+      "religion": "shinto"
+    }
+  ],
+  "Japan (Warring States)": [
+    {
+      "from": 0,
+      "religion": "shinto"
+    }
+  ],
+  "Jicarilla Apache": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Jin": [
+    {
+      "from": 0,
+      "religion": "religions-chinoises"
+    }
+  ],
+  "Jin Empire": [
+    {
+      "from": 0,
+      "religion": "religions-chinoises"
+    }
+  ],
+  "Jumanos": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Kaarta": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Kaiabi": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Kaingang": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Kalaamaya": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Kalina/Kariña": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Kalinga": [
+    {
+      "from": -1,
+      "religion": "hindouisme"
+    }
+  ],
+  "Kalmar Union": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Kamarupa": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "Kamerun": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Kamilaroi": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Kanauj": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "Kanem": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 1068,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Kanem-Bornu": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Kara Khitai Khaganate": [
+    {
+      "from": 0,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Karasuk culture": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Karelians": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Karluks": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 960,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Kaska Dena Kayeh": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Kaskaskia": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Kazakhstan": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Kazan Khanate": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Kazembe": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Kediri": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "Kenya": [
+    {
+      "from": 0,
+      "religion": "christianisme"
+    }
+  ],
+  "Khanate of Sibir": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Khanate of the Golden Horde": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 1313,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Khanty": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Khazars": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 740,
+      "religion": "judaisme"
+    }
+  ],
+  "Khitans": [
+    {
+      "from": 0,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Khiva Khanate": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Khmer Empire": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    },
+    {
+      "from": 1200,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Khoisan": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Khwarazmian dynasty": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Kievan Rus": [
+    {
+      "from": -1000,
+      "religion": "polytheisme"
+    },
+    {
+      "from": 988,
+      "religion": "christianisme"
+    },
+    {
+      "from": 1054,
+      "religion": "orthodoxie"
+    }
+  ],
+  "Kiikaapoi (Kickapoo)": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Kimek-Kipchak khaganate": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Kingdom of Antigonus": [
+    {
+      "from": -300,
+      "religion": "polytheisme"
+    }
+  ],
+  "Kingdom of Brazil": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Kingdom of David and Solomon": [
+    {
+      "from": -1000,
+      "religion": "judaisme"
+    }
+  ],
+  "Kingdom of France": [
+    {
+      "from": 0,
+      "religion": "christianisme"
+    },
+    {
+      "from": 1054,
+      "religion": "catholicisme"
+    }
+  ],
+  "Kingdom of Hungary": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Kingdom of Italy": [
+    {
+      "from": 0,
+      "religion": "catholicisme"
+    }
+  ],
+  "Kingdom of Kapisa": [
+    {
+      "from": 0,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Kingdom of Kashmir": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "Kingdom of Kassander": [
+    {
+      "from": -300,
+      "religion": "polytheisme"
+    }
+  ],
+  "Kingdom of Lysimachus": [
+    {
+      "from": -300,
+      "religion": "polytheisme"
+    }
+  ],
+  "Kingdom of Norway": [
+    {
+      "from": -1000,
+      "religion": "polytheisme"
+    },
+    {
+      "from": 1000,
+      "religion": "christianisme"
+    },
+    {
+      "from": 1054,
+      "religion": "catholicisme"
+    },
+    {
+      "from": 1537,
+      "religion": "protestantisme"
+    }
+  ],
+  "Kingdom of Pagan": [
+    {
+      "from": 0,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Kingdom of Sind": [
+    {
+      "from": 0,
+      "religion": "hindouisme"
+    }
+  ],
+  "Kingdom of Sukhotai": [
+    {
+      "from": 0,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Kingdom of Syphax": [
+    {
+      "from": -200,
+      "religion": "polytheisme"
+    }
+  ],
+  "Kiowa": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Koguryo": [
+    {
+      "from": -1,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 372,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Kokatha": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Kolla": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Kolla-Atacameño": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Komi": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Kong Empire": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Korea": [
+    {
+      "from": 0,
+      "religion": "bouddhisme"
+    },
+    {
+      "from": 1392,
+      "religion": "religions-chinoises"
+    }
+  ],
+  "Korea (USSR)": [
+    {
+      "from": 1900,
+      "religion": "sans-religion"
+    }
+  ],
+  "Korea, Democratic People's Republic of": [
+    {
+      "from": 0,
+      "religion": "sans-religion"
+    }
+  ],
+  "Koryaks": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Koyukon": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Kryvichs": [
+    {
+      "from": 0,
+      "religion": "polytheisme"
+    }
+  ],
+  "Ktunaxa ɁamakɁis": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Kurykans": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Kush": [
+    {
+      "from": -1000,
+      "religion": "polytheisme"
+    }
+  ],
+  "Kushan Empire": [
+    {
+      "from": -100,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Kushites": [
+    {
+      "from": -3000,
+      "religion": "polytheisme"
+    },
+    {
+      "from": 550,
+      "religion": "christianismes-orientaux"
+    }
+  ],
+  "Kyivan Rus": [
+    {
+      "from": 0,
+      "religion": "polytheisme"
+    },
+    {
+      "from": 988,
+      "religion": "christianisme"
+    },
+    {
+      "from": 1054,
+      "religion": "orthodoxie"
+    }
+  ],
+  "Kyrgyzstan": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Lahore": [
+    {
+      "from": 0,
+      "religion": "sikhisme"
+    }
+  ],
+  "Lan Na": [
+    {
+      "from": 0,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Laos": [
+    {
+      "from": 0,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Laotian states": [
+    {
+      "from": 0,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Late Jomon culture": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Laurel complex": [
+    {
+      "from": -100,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Lavo": [
+    {
+      "from": 0,
+      "religion": "bouddhisme"
+    }
+  ],
+  "León": [
+    {
+      "from": 0,
+      "religion": "christianisme"
+    },
+    {
+      "from": 1054,
+      "religion": "catholicisme"
+    }
+  ],
+  "Liao": [
+    {
+      "from": 0,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Libya": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Libya (IT)": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Lithuania": [
+    {
+      "from": 0,
+      "religion": "polytheisme"
+    },
+    {
+      "from": 1387,
+      "religion": "catholicisme"
+    }
+  ],
+  "Lokono (Arawak)": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Lombard principalities": [
+    {
+      "from": 0,
+      "religion": "christianisme"
+    }
+  ],
+  "Lozi": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Luba": [
+    {
+      "from": 1530,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Luisiana": [
+    {
+      "from": 1783,
+      "religion": "catholicisme"
+    }
+  ],
+  "Lumbee": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Lunda": [
+    {
+      "from": 1530,
+      "religion": "traditionnelles"
+    }
+  ],
+  "M?ori": [
+    {
+      "from": 1878,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Maan": [
+    {
+      "from": -200,
+      "religion": "polytheisme"
+    }
+  ],
+  "Macedon and Hellenic League": [
+    {
+      "from": -200,
+      "religion": "polytheisme"
+    }
+  ],
+  "Madagascar": [
+    {
+      "from": 1000,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 1960,
+      "religion": "christianisme"
+    }
+  ],
+  "Madagascar (France)": [
+    {
+      "from": 1914,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Magadha": [
+    {
+      "from": -500,
+      "religion": "hindouisme",
+      "minorities": [
+        "bouddhisme"
+      ]
+    }
+  ],
+  "Magyars": [
+    {
+      "from": 700,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 1000,
+      "religion": "catholicisme"
+    }
+  ],
+  "Mahra": [
+    {
+      "from": 1530,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Mahratta states": [
+    {
+      "from": 1783,
+      "religion": "hindouisme"
+    }
+  ],
+  "Maitraka Kingdom": [
+    {
+      "from": 700,
+      "religion": "hindouisme"
+    }
+  ],
+  "Maize farmers": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Makkura": [
+    {
+      "from": 500,
+      "religion": "christianismes-orientaux"
+    }
+  ],
+  "Malacca": [
+    {
+      "from": 1492,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Malagasy": [
+    {
+      "from": 800,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Malawi": [
+    {
+      "from": 1914,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 1960,
+      "religion": "christianisme"
+    }
+  ],
+  "Malaya": [
+    {
+      "from": 1650,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Malaysia": [
+    {
+      "from": 1920,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Malaysian Islamic states": [
+    {
+      "from": 1492,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Mali": [
+    {
+      "from": 1000,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 1076,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Mamluke Sultanate": [
+    {
+      "from": 1279,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Manchu Empire": [
+    {
+      "from": 1650,
+      "religion": "religions-chinoises",
+      "minorities": [
+        "bouddhisme"
+      ]
+    }
+  ],
+  "Manchuria": [
+    {
+      "from": 1920,
+      "religion": "religions-chinoises"
+    }
+  ],
+  "Mandes": [
+    {
+      "from": 900,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Manioc farmers": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Maori": [
+    {
+      "from": 1279,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Maoris": [
+    {
+      "from": 1530,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Maratha Confederacy": [
+    {
+      "from": 1783,
+      "religion": "hindouisme"
+    }
+  ],
+  "Mardu": [
+    {
+      "from": 1600,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Marksville Culture": [
+    {
+      "from": -100,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Mascat": [
+    {
+      "from": -1,
+      "religion": "islam"
+    }
+  ],
+  "Mataram": [
+    {
+      "from": 600,
+      "religion": "hindouisme",
+      "minorities": [
+        "bouddhisme"
+      ]
+    }
+  ],
+  "Mauretania": [
+    {
+      "from": -200,
+      "religion": "polytheisme"
+    }
+  ],
+  "Mauritania": [
+    {
+      "from": 1945,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Mauryan Empire": [
+    {
+      "from": -300,
+      "religion": "hindouisme"
+    },
+    {
+      "from": -260,
+      "religion": "bouddhisme",
+      "minorities": [
+        "hindouisme"
+      ]
+    }
+  ],
+  "Maya Yucateco": [
+    {
+      "from": 1492,
+      "religion": "polytheisme"
+    }
+  ],
+  "Maya chiefdoms and states": [
+    {
+      "from": -323,
+      "religion": "polytheisme"
+    }
+  ],
+  "Maya city-states": [
+    {
+      "from": 800,
+      "religion": "polytheisme"
+    }
+  ],
+  "Maya states": [
+    {
+      "from": 500,
+      "religion": "polytheisme"
+    }
+  ],
+  "Mbya": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Mebêngôkre (Kayapó)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Merina Kingdom": [
+    {
+      "from": 1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Merinides": [
+    {
+      "from": 1279,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Meroe": [
+    {
+      "from": -500,
+      "religion": "polytheisme"
+    }
+  ],
+  "Mescalero": [
+    {
+      "from": 1530,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Mescalero Apache": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Mesoamerican city-states and chiefdoms": [
+    {
+      "from": 800,
+      "religion": "polytheisme"
+    }
+  ],
+  "Mesopotamia (GB)": [
+    {
+      "from": 1920,
+      "religion": "islam"
+    }
+  ],
+  "Mexico": [
+    {
+      "from": 1878,
+      "religion": "catholicisme"
+    }
+  ],
+  "Mexihcah (Triple Alliance)": [
+    {
+      "from": 1492,
+      "religion": "polytheisme"
+    }
+  ],
+  "Mi'kma'ki": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Michif Piyii (Métis)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Min-Yue": [
+    {
+      "from": -200,
+      "religion": "religions-chinoises"
+    }
+  ],
+  "Ming Chinese Empire": [
+    {
+      "from": 1500,
+      "religion": "religions-chinoises",
+      "minorities": [
+        "bouddhisme"
+      ]
+    }
+  ],
+  "Ming Empire": [
+    {
+      "from": 1492,
+      "religion": "religions-chinoises",
+      "minorities": [
+        "bouddhisme"
+      ]
+    }
+  ],
+  "Mirambo Unyanyembe Ukimbu": [
+    {
+      "from": 1878,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Mirning": [
+    {
+      "from": 1600,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Mississauga": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Mogollon": [
+    {
+      "from": 800,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Mon-Khmer": [
+    {
+      "from": -200,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Mongol Empire": [
+    {
+      "from": 1200,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Mongolia": [
+    {
+      "from": 1914,
+      "religion": "bouddhisme"
+    },
+    {
+      "from": 1924,
+      "religion": "sans-religion"
+    },
+    {
+      "from": 1990,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Mongols": [
+    {
+      "from": 1100,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Montagnais Innu": [
+    {
+      "from": 1530,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Moqoit": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Mordvinians": [
+    {
+      "from": 800,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Morocco": [
+    {
+      "from": 1300,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Morocco (France)": [
+    {
+      "from": 1938,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Mossi States": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Mountain Métis": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Mozambique": [
+    {
+      "from": 1878,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 1960,
+      "religion": "christianisme"
+    }
+  ],
+  "Mozambique (Portugal)": [
+    {
+      "from": 1938,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Mughal Empire": [
+    {
+      "from": 1000,
+      "religion": "hindouisme",
+      "minorities": [
+        "islam-sunnite"
+      ],
+      "note": "Dynastie musulmane régnant sur une majorité hindoue."
+    }
+  ],
+  "Multan": [
+    {
+      "from": 900,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Muscat": [
+    {
+      "from": 1000,
+      "religion": "islam"
+    }
+  ],
+  "Muscat and Oman": [
+    {
+      "from": 1920,
+      "religion": "islam"
+    }
+  ],
+  "Muskogee": [
+    {
+      "from": 1530,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Mvskoke (Muscogee / Creek)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Mwenemutapa": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Myaamia": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Mysore": [
+    {
+      "from": 1783,
+      "religion": "hindouisme",
+      "minorities": [
+        "islam-sunnite"
+      ]
+    }
+  ],
+  "Māori": [
+    {
+      "from": 1783,
+      "religion": "traditionnelles"
+    }
+  ],
+  "N. European Bronze Age cultures": [
+    {
+      "from": -1000,
+      "religion": "polytheisme"
+    }
+  ],
+  "NWT Métis Nation": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Na-cho Nyak Dun": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Nabatean Kingdom": [
+    {
+      "from": -300,
+      "religion": "polytheisme"
+    }
+  ],
+  "Nahua ( Morelos, Puebla, Tlaxcala, Veracruz, Hidalgo, San Luis Potosi)": [
+    {
+      "from": 1492,
+      "religion": "polytheisme"
+    }
+  ],
+  "Namibia": [
+    {
+      "from": 1945,
+      "religion": "protestantisme"
+    }
+  ],
+  "Nan Chao": [
+    {
+      "from": 800,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Nan-Yue": [
+    {
+      "from": -200,
+      "religion": "religions-chinoises"
+    }
+  ],
+  "Nan-Zhao": [
+    {
+      "from": 700,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Naskapi Innu": [
+    {
+      "from": 1530,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Natchez": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Navajo": [
+    {
+      "from": 1500,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Ndé Kónitsąąíí Gokíyaa (Lipan Apache)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Nejd": [
+    {
+      "from": 1783,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Nenets": [
+    {
+      "from": 1530,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Nepal": [
+    {
+      "from": 1200,
+      "religion": "hindouisme"
+    }
+  ],
+  "Netherlands Indies": [
+    {
+      "from": 1878,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Neustria": [
+    {
+      "from": 600,
+      "religion": "christianisme"
+    }
+  ],
+  "New South Wales": [
+    {
+      "from": 1815,
+      "religion": "protestantisme"
+    }
+  ],
+  "New South Wales (UK)": [
+    {
+      "from": 1878,
+      "religion": "protestantisme"
+    }
+  ],
+  "New Zealand": [
+    {
+      "from": 1914,
+      "religion": "protestantisme"
+    }
+  ],
+  "Newe (Western Shoshone)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Nganasan": [
+    {
+      "from": 1530,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Nicaragua": [
+    {
+      "from": 1878,
+      "religion": "catholicisme"
+    }
+  ],
+  "Niger": [
+    {
+      "from": 1945,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Nigeria": [
+    {
+      "from": 1914,
+      "religion": "islam-sunnite",
+      "minorities": [
+        "christianisme"
+      ]
+    }
+  ],
+  "Niitsítpiis-stahkoii ᖹᐟᒧᐧᐨᑯᐧ ᓴᐦᖾᐟ (Blackfoot / Niitsítapi ᖹᐟᒧᐧᒣᑯ)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Nitassinan (Innu)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Nizam's Dominions": [
+    {
+      "from": 1800,
+      "religion": "hindouisme",
+      "minorities": [
+        "islam-sunnite"
+      ]
+    }
+  ],
+  "Nobatia": [
+    {
+      "from": 600,
+      "religion": "christianismes-orientaux"
+    }
+  ],
+  "Nogai Horde": [
+    {
+      "from": 1530,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Norsemen": [
+    {
+      "from": -200,
+      "religion": "polytheisme"
+    }
+  ],
+  "North American Pacific foraging, hunting and fishing peoples": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Northern Liang": [
+    {
+      "from": 400,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Northern Paiute": [
+    {
+      "from": 1530,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Northern Rhodesia": [
+    {
+      "from": 1938,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Northern Territory (UK)": [
+    {
+      "from": 1878,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Northmen": [
+    {
+      "from": 800,
+      "religion": "polytheisme"
+    }
+  ],
+  "Norway": [
+    {
+      "from": 1100,
+      "religion": "catholicisme"
+    },
+    {
+      "from": 1537,
+      "religion": "protestantisme"
+    }
+  ],
+  "Novgorod": [
+    {
+      "from": 1279,
+      "religion": "orthodoxie"
+    }
+  ],
+  "Numidia": [
+    {
+      "from": -100,
+      "religion": "polytheisme"
+    }
+  ],
+  "Numu (Northern Paiute)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "NunatuKavut": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Nunavik": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Nuwuvi (Southern Paiute)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Nyanganyatjara": [
+    {
+      "from": 1600,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Nyangumarda": [
+    {
+      "from": 1600,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Nyasaland": [
+    {
+      "from": 1945,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Núu-agha-tʉvʉ-pʉ̱ (Ute)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Nʉmʉnʉʉ (Comanche)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "O'odham Jeweḍ": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "O-ga-xpa Ma-zhoⁿ (O-ga-xpa)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Obiwa": [
+    {
+      "from": 1530,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Oghuz": [
+    {
+      "from": 1100,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Oghuz Turks": [
+    {
+      "from": 900,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Oirat Confederation": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Oman": [
+    {
+      "from": 1530,
+      "religion": "islam"
+    }
+  ],
+  "Oman (British Raj)": [
+    {
+      "from": 1938,
+      "religion": "islam"
+    }
+  ],
+  "Omàmìwininìwag (Algonquin)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Orange Free State": [
+    {
+      "from": 1878,
+      "religion": "protestantisme"
+    }
+  ],
+  "Orissa": [
+    {
+      "from": 1000,
+      "religion": "hindouisme"
+    }
+  ],
+  "Oromo": [
+    {
+      "from": 1530,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Osage": [
+    {
+      "from": 1530,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Ostrogoths": [
+    {
+      "from": 400,
+      "religion": "christianisme"
+    }
+  ],
+  "Other Rus Principalities": [
+    {
+      "from": 1200,
+      "religion": "orthodoxie"
+    }
+  ],
+  "Ottoman Empire": [
+    {
+      "from": 1400,
+      "religion": "islam-sunnite",
+      "minorities": [
+        "orthodoxie"
+      ]
+    }
+  ],
+  "Ottoman Sultanate": [
+    {
+      "from": 1920,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Oyo": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Očhéthi Šakówiŋ": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Pagan": [
+    {
+      "from": 900,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Pakistan": [
+    {
+      "from": 1945,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Palas": [
+    {
+      "from": 700,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Paleo-Inuit": [
+    {
+      "from": -500,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Paleo-Koreans": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Paleo-Siberian hunter-gatherers": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Pallava": [
+    {
+      "from": 900,
+      "religion": "hindouisme"
+    }
+  ],
+  "Pallava state": [
+    {
+      "from": 800,
+      "religion": "hindouisme"
+    }
+  ],
+  "Pallavas": [
+    {
+      "from": 500,
+      "religion": "hindouisme"
+    }
+  ],
+  "Pampas cultures": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Papua New Guinea": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 1914,
+      "religion": "christianisme"
+    }
+  ],
+  "Papuan": [
+    {
+      "from": -200,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Papuan neolithic farmers": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Papuans": [
+    {
+      "from": 800,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Paraguay": [
+    {
+      "from": 1783,
+      "religion": "catholicisme"
+    }
+  ],
+  "Paramas": [
+    {
+      "from": 1100,
+      "religion": "hindouisme"
+    }
+  ],
+  "Parhae": [
+    {
+      "from": 800,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Parthia": [
+    {
+      "from": -200,
+      "religion": "zoroastrisme"
+    }
+  ],
+  "Parthian Empire": [
+    {
+      "from": -1,
+      "religion": "zoroastrisme"
+    }
+  ],
+  "Patagonian shellfish and marine mammal hunters": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Pawnee": [
+    {
+      "from": 1530,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Pegu": [
+    {
+      "from": 1492,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Pemón": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Peoria": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Permians": [
+    {
+      "from": 800,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Persia": [
+    {
+      "from": -1000,
+      "religion": "zoroastrisme"
+    },
+    {
+      "from": 700,
+      "religion": "islam-sunnite"
+    },
+    {
+      "from": 1501,
+      "religion": "islam-chiite"
+    }
+  ],
+  "Peru": [
+    {
+      "from": 1878,
+      "religion": "catholicisme"
+    }
+  ],
+  "Peshemegs": [
+    {
+      "from": 1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Philippines": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 1650,
+      "religion": "catholicisme"
+    }
+  ],
+  "Phrygians": [
+    {
+      "from": -1000,
+      "religion": "polytheisme"
+    }
+  ],
+  "Pintupi": [
+    {
+      "from": 1600,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Plain bison hunters": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Plain-Pottery culture": [
+    {
+      "from": -500,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Plateau fichers and hunter gatherers": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Point Peninsula": [
+    {
+      "from": -100,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Poland": [
+    {
+      "from": 1000,
+      "religion": "catholicisme"
+    }
+  ],
+  "Poland-Lithuania": [
+    {
+      "from": 1400,
+      "religion": "catholicisme",
+      "minorities": [
+        "orthodoxie"
+      ]
+    }
+  ],
+  "Polish–Lithuanian Commonwealth": [
+    {
+      "from": 1650,
+      "religion": "catholicisme",
+      "minorities": [
+        "orthodoxie"
+      ]
+    }
+  ],
+  "Pomo": [
+    {
+      "from": 1500,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Portuguese Brazil": [
+    {
+      "from": 1650,
+      "religion": "catholicisme"
+    }
+  ],
+  "Portuguese East Africa": [
+    {
+      "from": 1650,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Post-Ming Warlords": [
+    {
+      "from": 1650,
+      "religion": "religions-chinoises"
+    }
+  ],
+  "Pratiharas": [
+    {
+      "from": 1000,
+      "religion": "hindouisme"
+    }
+  ],
+  "Principality of Galicia-Volhynia": [
+    {
+      "from": 1200,
+      "religion": "orthodoxie"
+    }
+  ],
+  "Principality of Kyiv": [
+    {
+      "from": 1200,
+      "religion": "orthodoxie"
+    }
+  ],
+  "Principality of Novgorod": [
+    {
+      "from": 1200,
+      "religion": "orthodoxie"
+    }
+  ],
+  "Principality of Vladimir-Suzdal": [
+    {
+      "from": 1200,
+      "religion": "orthodoxie"
+    }
+  ],
+  "Proto-Altaic pastoralists": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Proto-Slavs": [
+    {
+      "from": 700,
+      "religion": "polytheisme"
+    }
+  ],
+  "Proto-Thai cultures": [
+    {
+      "from": -400,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Proto-Tibetan cultures": [
+    {
+      "from": -400,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Prussia": [
+    {
+      "from": 1530,
+      "religion": "protestantisme"
+    }
+  ],
+  "Prussians": [
+    {
+      "from": 1000,
+      "religion": "polytheisme"
+    }
+  ],
+  "Ptolemaic Kingdom": [
+    {
+      "from": -300,
+      "religion": "polytheisme"
+    }
+  ],
+  "Pueblos": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Puinave": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Puri": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Pyu state": [
+    {
+      "from": 800,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Pâri (Pawnee)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "P’urhépecha": [
+    {
+      "from": 1492,
+      "religion": "polytheisme"
+    }
+  ],
+  "Qataban": [
+    {
+      "from": -323,
+      "religion": "polytheisme"
+    }
+  ],
+  "Qin": [
+    {
+      "from": -323,
+      "religion": "religions-chinoises"
+    }
+  ],
+  "Qing Empire": [
+    {
+      "from": 1783,
+      "religion": "religions-chinoises",
+      "minorities": [
+        "bouddhisme"
+      ]
+    }
+  ],
+  "Qom": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Quazaq Khanate": [
+    {
+      "from": 1530,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Quebec": [
+    {
+      "from": 1783,
+      "religion": "catholicisme"
+    }
+  ],
+  "Quechua": [
+    {
+      "from": 1492,
+      "religion": "polytheisme"
+    }
+  ],
+  "Queensland (UK)": [
+    {
+      "from": 1878,
+      "religion": "protestantisme"
+    }
+  ],
+  "Rabih az-Zubayr": [
+    {
+      "from": 1878,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Rajastan": [
+    {
+      "from": 1492,
+      "religion": "hindouisme"
+    }
+  ],
+  "Rajput Clans and Small States": [
+    {
+      "from": 800,
+      "religion": "hindouisme"
+    }
+  ],
+  "Rajput kingdoms": [
+    {
+      "from": 1000,
+      "religion": "hindouisme"
+    }
+  ],
+  "Rajputana": [
+    {
+      "from": 1530,
+      "religion": "hindouisme"
+    }
+  ],
+  "Rajputs": [
+    {
+      "from": 1800,
+      "religion": "hindouisme"
+    }
+  ],
+  "Rankülche": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Rashtrakuta": [
+    {
+      "from": 900,
+      "religion": "hindouisme"
+    }
+  ],
+  "Rashtrakuta state": [
+    {
+      "from": 800,
+      "religion": "hindouisme"
+    }
+  ],
+  "Rattanakosin Kingdom": [
+    {
+      "from": 1783,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Republic of Turkey": [
+    {
+      "from": 1930,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Rhodesia": [
+    {
+      "from": 1914,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Rift Valley States": [
+    {
+      "from": 1783,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Rio De Oro": [
+    {
+      "from": 1914,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Roman Empire": [
+    {
+      "from": -1000,
+      "religion": "polytheisme"
+    },
+    {
+      "from": 380,
+      "religion": "christianisme"
+    }
+  ],
+  "Roman Republic": [
+    {
+      "from": -400,
+      "religion": "polytheisme"
+    }
+  ],
+  "Romania": [
+    {
+      "from": 1878,
+      "religion": "orthodoxie"
+    }
+  ],
+  "Rome": [
+    {
+      "from": -500,
+      "religion": "polytheisme"
+    }
+  ],
+  "Rome (Constantinus)": [
+    {
+      "from": 300,
+      "religion": "polytheisme"
+    },
+    {
+      "from": 312,
+      "religion": "christianisme"
+    }
+  ],
+  "Rome (Diocletianus)": [
+    {
+      "from": 300,
+      "religion": "polytheisme"
+    }
+  ],
+  "Rome (Galerius)": [
+    {
+      "from": 300,
+      "religion": "polytheisme"
+    }
+  ],
+  "Rome (Maximian)": [
+    {
+      "from": 300,
+      "religion": "polytheisme"
+    }
+  ],
+  "Rozwi": [
+    {
+      "from": 1650,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Ruanruan": [
+    {
+      "from": 400,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Rupert's Land": [
+    {
+      "from": 1715,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Rus' Khaganate": [
+    {
+      "from": 800,
+      "religion": "polytheisme"
+    }
+  ],
+  "Russia": [
+    {
+      "from": 1994,
+      "religion": "orthodoxie"
+    }
+  ],
+  "Russian Empire": [
+    {
+      "from": 1783,
+      "religion": "orthodoxie"
+    }
+  ],
+  "Rwanda": [
+    {
+      "from": 1815,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 1945,
+      "religion": "catholicisme"
+    }
+  ],
+  "Ryazan": [
+    {
+      "from": 1279,
+      "religion": "orthodoxie"
+    }
+  ],
+  "Saami": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Saba": [
+    {
+      "from": -1000,
+      "religion": "polytheisme"
+    }
+  ],
+  "Saces": [
+    {
+      "from": -100,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Safavid Empire": [
+    {
+      "from": 1530,
+      "religion": "islam-chiite"
+    }
+  ],
+  "Saffarids": [
+    {
+      "from": 900,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Saharan Nomadic Tribes": [
+    {
+      "from": 700,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Saharan pastoral nomads": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Sahtu": [
+    {
+      "from": 1700,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Sahtu Dene and Metis": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Sahtú Got’ine": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Samanid Empire": [
+    {
+      "from": 900,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Sami": [
+    {
+      "from": 900,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Samis": [
+    {
+      "from": 1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Samoyèdes": [
+    {
+      "from": 700,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Santee": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Sarmates": [
+    {
+      "from": -100,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Sasanian Empire": [
+    {
+      "from": 500,
+      "religion": "zoroastrisme",
+      "minorities": [
+        "christianismes-orientaux"
+      ]
+    }
+  ],
+  "Sasanian dependencies": [
+    {
+      "from": 600,
+      "religion": "zoroastrisme"
+    }
+  ],
+  "Sataré-Mawé": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Satavahanihara": [
+    {
+      "from": -1,
+      "religion": "hindouisme",
+      "minorities": [
+        "bouddhisme"
+      ]
+    }
+  ],
+  "Saudi Arabia": [
+    {
+      "from": 1938,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Sauk and Meskwaki": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Savanna hunter-gatherers": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Saxons": [
+    {
+      "from": 500,
+      "religion": "polytheisme"
+    }
+  ],
+  "Scythians": [
+    {
+      "from": -400,
+      "religion": "polytheisme"
+    }
+  ],
+  "Secwepemcúl'ecw (Secwépemc)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Segu": [
+    {
+      "from": 1715,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Seleucid Kingdom": [
+    {
+      "from": -300,
+      "religion": "polytheisme"
+    }
+  ],
+  "Seljuk Caliphate": [
+    {
+      "from": 1279,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Seljuk Empire": [
+    {
+      "from": 1100,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Seminole": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Senas": [
+    {
+      "from": 1000,
+      "religion": "hindouisme"
+    }
+  ],
+  "Senegal": [
+    {
+      "from": 1530,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 1815,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Senegal (FR)": [
+    {
+      "from": 1878,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Shan states": [
+    {
+      "from": 1530,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Shaskanka": [
+    {
+      "from": 600,
+      "religion": "hindouisme"
+    }
+  ],
+  "Shawandasse Tula (Shawanwaki/Shawnee)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Shawnee": [
+    {
+      "from": 1530,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Shellfish gatherers": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Shita Got’ine": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Shogun Japan (Kamakura)": [
+    {
+      "from": 1279,
+      "religion": "shinto"
+    }
+  ],
+  "Shona": [
+    {
+      "from": 1878,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Shoshone-Bannock": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Shoshoni": [
+    {
+      "from": 1530,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Siam": [
+    {
+      "from": 1800,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Siberians": [
+    {
+      "from": 1279,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Sikhs": [
+    {
+      "from": 1800,
+      "religion": "sikhisme"
+    }
+  ],
+  "Silia": [
+    {
+      "from": 800,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Silla": [
+    {
+      "from": -1,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 528,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Sind": [
+    {
+      "from": 1492,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Sindh": [
+    {
+      "from": 900,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Sinic": [
+    {
+      "from": -1000,
+      "religion": "religions-chinoises"
+    }
+  ],
+  "Sixteen Kingdoms": [
+    {
+      "from": 400,
+      "religion": "religions-chinoises",
+      "minorities": [
+        "bouddhisme"
+      ]
+    }
+  ],
+  "Slavic tribes": [
+    {
+      "from": 900,
+      "religion": "polytheisme"
+    }
+  ],
+  "Slavonic tribes": [
+    {
+      "from": 800,
+      "religion": "polytheisme"
+    }
+  ],
+  "So'to (Yekuana)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Sokoto Caliphate": [
+    {
+      "from": 1878,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Solankis": [
+    {
+      "from": 1100,
+      "religion": "hindouisme"
+    }
+  ],
+  "Somalia": [
+    {
+      "from": 1815,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Song Empire": [
+    {
+      "from": 1000,
+      "religion": "religions-chinoises",
+      "minorities": [
+        "bouddhisme"
+      ]
+    }
+  ],
+  "Songhai": [
+    {
+      "from": 1492,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Soomra Emirate": [
+    {
+      "from": 1100,
+      "religion": "islam"
+    }
+  ],
+  "South Africa": [
+    {
+      "from": 1914,
+      "religion": "protestantisme"
+    }
+  ],
+  "South Australia (UK)": [
+    {
+      "from": 1878,
+      "religion": "protestantisme"
+    }
+  ],
+  "Southern Paiute": [
+    {
+      "from": 1530,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Southern Rhodesia": [
+    {
+      "from": 1938,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Southern Xiongnu": [
+    {
+      "from": 100,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Spain": [
+    {
+      "from": 1530,
+      "religion": "catholicisme"
+    }
+  ],
+  "Spanish Sahara": [
+    {
+      "from": 1914,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Srivijaya Empire": [
+    {
+      "from": 800,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Subarctic forest hunter-gatherers": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Sudan": [
+    {
+      "from": 1920,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Suebi": [
+    {
+      "from": 500,
+      "religion": "christianisme"
+    }
+  ],
+  "Sui Empire": [
+    {
+      "from": 600,
+      "religion": "religions-chinoises",
+      "minorities": [
+        "bouddhisme"
+      ]
+    }
+  ],
+  "Sukhothai": [
+    {
+      "from": 1279,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Sultanate of Delhi": [
+    {
+      "from": 1000,
+      "religion": "hindouisme",
+      "minorities": [
+        "islam-sunnite"
+      ],
+      "note": "Sultans musulmans régnant sur une majorité hindoue."
+    }
+  ],
+  "Sultanate of Utetera": [
+    {
+      "from": 1878,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Sultanate of Zanzibar": [
+    {
+      "from": 1880,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Sultinate of Zanzibar": [
+    {
+      "from": 1878,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Suriname": [
+    {
+      "from": 1914,
+      "religion": "christianisme"
+    }
+  ],
+  "Sweden": [
+    {
+      "from": 1000,
+      "religion": "polytheisme"
+    },
+    {
+      "from": 1100,
+      "religion": "catholicisme"
+    },
+    {
+      "from": 1527,
+      "religion": "protestantisme"
+    }
+  ],
+  "Sweden–Norway": [
+    {
+      "from": 1815,
+      "religion": "protestantisme"
+    }
+  ],
+  "Swedes": [
+    {
+      "from": 400,
+      "religion": "polytheisme"
+    }
+  ],
+  "Swift Creek Culture": [
+    {
+      "from": -100,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Syilx tmixʷ (Okanagan)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Syria": [
+    {
+      "from": 1945,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Syria (France)": [
+    {
+      "from": 1920,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Sámi": [
+    {
+      "from": 200,
+      "religion": "traditionnelles"
+    }
+  ],
+  "S’atsoyaha (Yuchi)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "T'atsaot'ine": [
+    {
+      "from": 1530,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Taino": [
+    {
+      "from": 1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Tajikistan": [
+    {
+      "from": 1994,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Tang Empire": [
+    {
+      "from": 800,
+      "religion": "religions-chinoises",
+      "minorities": [
+        "bouddhisme"
+      ]
+    }
+  ],
+  "Tekohá (Guarani)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Tekohá (Ñandeva - Avá Guaraní)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Tepehuán": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Teton": [
+    {
+      "from": 1530,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Teutonic Knights": [
+    {
+      "from": 1279,
+      "religion": "catholicisme"
+    }
+  ],
+  "Thai": [
+    {
+      "from": -200,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Thai Kingdoms": [
+    {
+      "from": 600,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Thailand": [
+    {
+      "from": 1945,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Thrace": [
+    {
+      "from": -1000,
+      "religion": "polytheisme"
+    }
+  ],
+  "Thule": [
+    {
+      "from": 800,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Tiahuanaco Empire": [
+    {
+      "from": 600,
+      "religion": "polytheisme"
+    }
+  ],
+  "Tibet": [
+    {
+      "from": 1000,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Tibetan Empire": [
+    {
+      "from": 800,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Tibetans": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Timurid Emirates": [
+    {
+      "from": 1492,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Timurid Empire": [
+    {
+      "from": 1400,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Tlinoit": [
+    {
+      "from": 1500,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Toba Wei": [
+    {
+      "from": 500,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Togoland": [
+    {
+      "from": 1914,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Tokugawa shogunate": [
+    {
+      "from": 1650,
+      "religion": "shinto"
+    }
+  ],
+  "Tonkin": [
+    {
+      "from": 1945,
+      "religion": "religions-chinoises"
+    }
+  ],
+  "Touareg": [
+    {
+      "from": 1279,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Transvaal": [
+    {
+      "from": 1878,
+      "religion": "protestantisme"
+    }
+  ],
+  "Tripolitana (UK Lybia)": [
+    {
+      "from": 1945,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Trucial Oman": [
+    {
+      "from": 1878,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Tsardom of Muscovy": [
+    {
+      "from": 1530,
+      "religion": "orthodoxie"
+    }
+  ],
+  "Tsuu T'ina": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Tuareg Nomadic Tribes": [
+    {
+      "from": 1200,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Tuaregs": [
+    {
+      "from": 900,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Tufan Empire": [
+    {
+      "from": 700,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Tukular Caliphate": [
+    {
+      "from": 1878,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Tungus": [
+    {
+      "from": -200,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Tungusic Tribes": [
+    {
+      "from": 1200,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Tunisia": [
+    {
+      "from": 1900,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Tupis": [
+    {
+      "from": 800,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Turan": [
+    {
+      "from": 1815,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Turcik tribes": [
+    {
+      "from": -200,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Turkey": [
+    {
+      "from": 1930,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Turkmenistan": [
+    {
+      "from": 1994,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Tłı̨chǫ Ndè": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "USSR": [
+    {
+      "from": 1920,
+      "religion": "sans-religion"
+    }
+  ],
+  "Uganda": [
+    {
+      "from": 1914,
+      "religion": "christianisme"
+    }
+  ],
+  "Ukraine": [
+    {
+      "from": 1920,
+      "religion": "orthodoxie"
+    }
+  ],
+  "Umayyad Caliphate": [
+    {
+      "from": 700,
+      "religion": "islam"
+    }
+  ],
+  "Union of South Africa": [
+    {
+      "from": 1920,
+      "religion": "protestantisme"
+    }
+  ],
+  "United Arab Emirates": [
+    {
+      "from": 1945,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "United Kingdom": [
+    {
+      "from": 1715,
+      "religion": "protestantisme"
+    }
+  ],
+  "United Kingdom of Great Britain and Ireland": [
+    {
+      "from": 1815,
+      "religion": "protestantisme",
+      "minorities": [
+        "catholicisme"
+      ]
+    }
+  ],
+  "United Provinces of the Río de la Plata": [
+    {
+      "from": 1815,
+      "religion": "catholicisme"
+    }
+  ],
+  "United States": [
+    {
+      "from": 1815,
+      "religion": "protestantisme"
+    }
+  ],
+  "United States of America": [
+    {
+      "from": 1783,
+      "religion": "protestantisme"
+    }
+  ],
+  "Urartu": [
+    {
+      "from": -1000,
+      "religion": "polytheisme"
+    }
+  ],
+  "Urnfield cultures": [
+    {
+      "from": -1000,
+      "religion": "polytheisme"
+    }
+  ],
+  "Uru": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Uruguay": [
+    {
+      "from": 1878,
+      "religion": "catholicisme"
+    }
+  ],
+  "Ute": [
+    {
+      "from": 1530,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Uzbekistan": [
+    {
+      "from": 1994,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Vakataka": [
+    {
+      "from": 500,
+      "religion": "hindouisme"
+    }
+  ],
+  "Vandals": [
+    {
+      "from": 500,
+      "religion": "christianisme"
+    }
+  ],
+  "Vazimba": [
+    {
+      "from": 600,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Vedic Aryans": [
+    {
+      "from": -1000,
+      "religion": "hindouisme"
+    }
+  ],
+  "Venezuela": [
+    {
+      "from": 1878,
+      "religion": "catholicisme"
+    }
+  ],
+  "Veps": [
+    {
+      "from": 800,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Veracruz civilization": [
+    {
+      "from": 500,
+      "religion": "polytheisme"
+    }
+  ],
+  "Viceroyalty of Brazil": [
+    {
+      "from": 1715,
+      "religion": "catholicisme"
+    }
+  ],
+  "Viceroyalty of New Granada": [
+    {
+      "from": 1783,
+      "religion": "catholicisme"
+    }
+  ],
+  "Viceroyalty of New Spain": [
+    {
+      "from": 1530,
+      "religion": "catholicisme"
+    }
+  ],
+  "Viceroyalty of Peru": [
+    {
+      "from": 1650,
+      "religion": "catholicisme"
+    }
+  ],
+  "Viceroyalty of the Río de la Plata": [
+    {
+      "from": 1783,
+      "religion": "catholicisme"
+    }
+  ],
+  "Victoria (UK)": [
+    {
+      "from": 1878,
+      "religion": "protestantisme"
+    }
+  ],
+  "Vietnam": [
+    {
+      "from": 1960,
+      "religion": "religions-chinoises"
+    }
+  ],
+  "Vijayanagara": [
+    {
+      "from": 1492,
+      "religion": "hindouisme"
+    }
+  ],
+  "Visigothic Kingdom": [
+    {
+      "from": 600,
+      "religion": "catholicisme"
+    }
+  ],
+  "Visigoths": [
+    {
+      "from": 400,
+      "religion": "christianisme"
+    }
+  ],
+  "Volga Bulgars": [
+    {
+      "from": 800,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 922,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Wabanaki (Dawnland Confederacy)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Wadai": [
+    {
+      "from": 1530,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 1650,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Wadai Empire": [
+    {
+      "from": 1878,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Walimanai (Baniwa)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Wallmapu (Mapuche)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Wari": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Warlpiri": [
+    {
+      "from": 1600,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Washtáge Moⁿzháⁿ (Kaw / Kansa)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Watassid Morocco": [
+    {
+      "from": 1530,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Watjarri": [
+    {
+      "from": 1600,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Wattasid Caliphate": [
+    {
+      "from": 1492,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Weenhayek/Wichí": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Wendake-Nionwentsïo": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "West African cereal farmers": [
+    {
+      "from": -1000,
+      "religion": "traditionnelles"
+    }
+  ],
+  "West Francia": [
+    {
+      "from": 800,
+      "religion": "christianisme"
+    },
+    {
+      "from": 1054,
+      "religion": "catholicisme"
+    }
+  ],
+  "West Germany": [
+    {
+      "from": 1960,
+      "religion": "protestantisme",
+      "minorities": [
+        "catholicisme"
+      ]
+    }
+  ],
+  "Western Australia (UK)": [
+    {
+      "from": 1878,
+      "religion": "protestantisme"
+    }
+  ],
+  "Western Chalukyas": [
+    {
+      "from": 1100,
+      "religion": "hindouisme"
+    }
+  ],
+  "Western Gokturk Khaganate": [
+    {
+      "from": 700,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Western Roman Empire": [
+    {
+      "from": 400,
+      "religion": "christianisme"
+    }
+  ],
+  "Western Sahara": [
+    {
+      "from": 1945,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "White Horde": [
+    {
+      "from": 1400,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Wichita": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Wiradjuri": [
+    {
+      "from": 1600,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Wu": [
+    {
+      "from": -1000,
+      "religion": "religions-chinoises"
+    }
+  ],
+  "Xinjiang": [
+    {
+      "from": 1914,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Xiongnu": [
+    {
+      "from": -400,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Xixia": [
+    {
+      "from": 1000,
+      "religion": "bouddhisme"
+    }
+  ],
+  "Yamato": [
+    {
+      "from": 500,
+      "religion": "shinto"
+    }
+  ],
+  "Yaminawá": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Yanktonai": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Yanomami": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Yayoi": [
+    {
+      "from": -400,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Yeke": [
+    {
+      "from": 1878,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Yemen": [
+    {
+      "from": 1000,
+      "religion": "islam-sunnite",
+      "minorities": [
+        "islam-chiite"
+      ]
+    }
+  ],
+  "Yemen (UK)": [
+    {
+      "from": 1938,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Yine": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Yoli (Concho)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Yuezhi": [
+    {
+      "from": -200,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Yup'ik & Cup'ik": [
+    {
+      "from": 1530,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Yup’ik/Cup’ik": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Zaire": [
+    {
+      "from": 1945,
+      "religion": "christianisme"
+    }
+  ],
+  "Zaire (Belgium)": [
+    {
+      "from": 1920,
+      "religion": "christianisme"
+    }
+  ],
+  "Zambia": [
+    {
+      "from": 1920,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 1960,
+      "religion": "christianisme"
+    }
+  ],
+  "Zanzibar": [
+    {
+      "from": 1715,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Zayyanid Caliphate": [
+    {
+      "from": 1492,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "Zhangzhung Kingdom": [
+    {
+      "from": -400,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Zhoa": [
+    {
+      "from": -1000,
+      "religion": "religions-chinoises"
+    }
+  ],
+  "Zhou states": [
+    {
+      "from": -500,
+      "religion": "religions-chinoises"
+    }
+  ],
+  "Zimbabwe": [
+    {
+      "from": 1920,
+      "religion": "traditionnelles"
+    },
+    {
+      "from": 1960,
+      "religion": "christianisme"
+    }
+  ],
+  "Zulu": [
+    {
+      "from": 1783,
+      "religion": "traditionnelles"
+    }
+  ],
+  "[Gáuigú (Kiowa)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "central Asian khanates": [
+    {
+      "from": 0,
+      "religion": "islam-sunnite"
+    }
+  ],
+  "minor Hindu and Buddhist kingdoms": [
+    {
+      "from": 1300,
+      "religion": "hindouisme",
+      "minorities": [
+        "bouddhisme"
+      ]
+    }
+  ],
+  "minor Hindu and Buddhist states": [
+    {
+      "from": 800,
+      "religion": "hindouisme",
+      "minorities": [
+        "bouddhisme"
+      ]
+    }
+  ],
+  "minor Hindu kingdoms": [
+    {
+      "from": 1279,
+      "religion": "hindouisme"
+    }
+  ],
+  "minor states under Indian influence": [
+    {
+      "from": 600,
+      "religion": "hindouisme",
+      "minorities": [
+        "bouddhisme"
+      ]
+    }
+  ],
+  "state societies and Aramaean kingdoms": [
+    {
+      "from": -1000,
+      "religion": "polytheisme"
+    }
+  ],
+  "Ãwa": [
+    {
+      "from": 0,
+      "religion": "traditionnelles"
+    }
+  ],
+  "Đại Việt": [
+    {
+      "from": 0,
+      "religion": "bouddhisme"
+    },
+    {
+      "from": 1400,
+      "religion": "religions-chinoises"
+    }
+  ],
+  "ᏣᎳᎫᏪᏘᏱ Tsalaguwetiyi (Cherokee, East)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "ᒋᑦ ᐊᔅᒋᓄᐤ St'aschinuw (Naskapi)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ],
+  "𐓏𐒰𐓓𐒰𐓓𐒷  𐒼𐓂𐓊𐒻  𐓆𐒻𐒿𐒷  𐓀𐒰^𐓓𐒰^(Osage)": [
+    {
+      "from": 1492,
+      "religion": "traditionnelles"
+    }
+  ]
+}

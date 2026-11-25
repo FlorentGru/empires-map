@@ -3192,3 +3192,8 @@ kbd {
     align-self: stretch;
   }
 }
+
+.legend__none {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}

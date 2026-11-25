@@ -78,6 +78,8 @@ Bonnes pratiques appliquées dans `tools.py` :
 - **Résultats courts** : au plus 5 étapes, avec un résumé. Le modèle lit chaque token renvoyé, et on les paie.
 - **Données chargées une seule fois**, au premier appel, puis gardées en mémoire.
 
+Liste des outils du sage (`OUTILS` dans `tools.py`) : `lister_empires`, `resume_empire`, `chercher_etapes`, `lire_etape`, `chercher_ville`, `chercher_personnage`, `chercher_evenement_mondial`, `profil_empire`, `chercher_invention`, `religions_empire` (religion dominante des entités d'un empire à une année, données `data/religions/territories.json`), `naviguer_vers_etape`.
+
 ### 2.3 Le Runner et les événements
 ```python
 async for event in runner.run_async(user_id=…, session_id=…, new_message=message,
