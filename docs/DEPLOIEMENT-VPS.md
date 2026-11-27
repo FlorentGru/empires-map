@@ -1,6 +1,6 @@
 # Héberger l'Atlas sur le VPS (à côté d'un autre projet)
 
-L'Atlas est un **site statique**. `vite build` avec `VITE_STATIC=1`, puis `scripts/prerender.ts`, produisent `dist/`. Ce dossier contient les pages HTML pré-rendues, le JS, les polices et les données géographiques. Il n'y a aucun programme à faire tourner sur le serveur : un serveur web existant sert ce dossier. La version en ligne n'a pas de **sage**, comme sur GitHub Pages ; le quiz hors ligne est inclus.
+L'Atlas est un **site statique**. `vite build` avec `VITE_STATIC=1`, puis `scripts/prerender.ts`, produisent `dist/`. Ce dossier contient les pages HTML pré-rendues, le JS, les polices et les données géographiques. Il n'y a aucun programme à faire tourner sur le serveur : un serveur web existant sert ce dossier. GitHub Pages n'a pas de **sage** (quiz hors ligne inclus) ; sur le VPS, il peut tourner dans un conteneur à côté (section « Le sage en ligne »).
 
 Principe : **ne pas toucher à l'autre projet**. L'Atlas a son dossier (`/var/www/atlas`), son port (**8081**) et son propre bloc de configuration. Tant qu'il n'y a pas de nom de domaine, l'adresse est `http://<IP du VPS>:8081/`. GitHub Pages reste l'adresse principale : les balises canonical et le sitemap pointent vers elle, ce qui évite le contenu en double.
 
@@ -85,6 +85,39 @@ cd /srv/atlas && sudo docker compose up -d
   ```
 - Ouvrez `http://<IP>:8081/` dans le navigateur : la carte doit s'afficher.
 - Vérifiez que l'autre projet répond toujours comme avant.
+
+## Le sage en ligne (conteneur `agent`)
+Le sage est un deuxième conteneur dans `/srv/atlas`, à côté de Caddy, sans toucher à `/srv/gaming`. Caddy relaie `/api/*` vers `agent:8000` sur le réseau interne de Docker : le port 8000 n'est jamais ouvert sur Internet. Fichiers : `agent/Dockerfile`, `.dockerignore`, `deploy/docker-compose.atlas.yml`, `deploy/Caddyfile.atlas`.
+
+**Coût** : `/api/chat` et `/api/quiz` sont publics. `agent/server.py` limite à `ATLAS_LIMITE_HEURE` requêtes par visiteur et par heure (30 par défaut) et à `ATLAS_LIMITE_JOUR` pour tout le serveur et par jour (500 par défaut). Au-delà : réponse 429, message « le sage se repose » dans le chat et quiz hors ligne. Fixez **aussi** un plafond de dépense chez le fournisseur du modèle (Google AI Studio ou console Anthropic) : c'est la seule vraie garantie.
+
+Installation (une fois), sur le VPS :
+```bash
+free -h && sudo docker stats --no-stream    # l'agent prend jusqu'à 768 Mo (mem_limit)
+sudo git clone https://github.com/FlorentGru/empires-map.git /srv/atlas/repo
+sudo nano /srv/atlas/agent.env              # la clé, voir ci-dessous
+sudo chmod 600 /srv/atlas/agent.env
+```
+Contenu de `agent.env`, écrit par vous (même format que `agent/.env`, voir `agent/README.md`) :
+```
+ATLAS_MODEL=...
+GOOGLE_API_KEY=...            # ou ANTHROPIC_API_KEY selon le modèle
+ATLAS_LIMITE_HEURE=30
+ATLAS_LIMITE_JOUR=500
+```
+Puis, depuis le PC, envoyez les deux fichiers de `deploy/` (`scp deploy/docker-compose.atlas.yml deploy/Caddyfile.atlas <utilisateur>@185.183.53.60:/tmp/`) et sur le VPS :
+```bash
+sudo cp /tmp/docker-compose.atlas.yml /srv/atlas/docker-compose.yml && sudo cp /tmp/Caddyfile.atlas /srv/atlas/Caddyfile
+cd /srv/atlas && sudo docker compose up -d --build
+curl -s http://localhost:8080/api/health     # {"ok":true,"modele":"..."}
+```
+Enfin, dans GitHub, **Settings → Secrets and variables → Actions → Variables**, créez `VPS_SAGE` = `1` et relancez **Actions → VPS → Run workflow** : le site du VPS est alors construit avec le sage. Sans cette variable, il reste statique (GitHub Pages l'est toujours).
+
+**Mettre l'agent à jour** (la clé `deploy` de la CI ne peut écrire que dans `site/`, c'est donc à la main) :
+```bash
+cd /srv/atlas/repo && sudo git pull && cd .. && sudo docker compose up -d --build agent
+```
+Journaux : `sudo docker compose logs -f agent`. Couper le sage : `sudo docker compose stop agent` et supprimer `VPS_SAGE`.
 
 ## Plus tard : un nom de domaine
 Avec un domaine, l'Atlas passe sur un sous-domaine (`atlas.<domaine>`) en HTTPS :

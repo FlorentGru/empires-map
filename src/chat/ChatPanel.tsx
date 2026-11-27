@@ -77,6 +77,10 @@ export function ChatPanel({ context, goToStep, onOpenQuiz }: Props) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message, session_id: sessionId.current, contexte: context }),
       });
+      if (res.status === 429) {
+        setMsgs((m) => [...m, { role: 'error', text: 'Le sage se repose : trop de questions, réessaie plus tard.' }]);
+        return;
+      }
       if (!res.ok) throw new Error(String(res.status));
       const data = (await res.json()) as { reponse: string; actions: Action[]; session_id: string; outils_appeles: string[] };
       sessionId.current = data.session_id;

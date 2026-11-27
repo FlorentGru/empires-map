@@ -12,7 +12,8 @@ from dotenv import load_dotenv
 
 load_dotenv(Path(__file__).parent / ".env")  # avant l'import de l'agent (lit ATLAS_MODEL)
 
-from fastapi import FastAPI, HTTPException  # noqa: E402
+from fastapi import FastAPI, HTTPException, Request  # noqa: E402
+from fastapi.responses import JSONResponse  # noqa: E402
 from fastapi.middleware.cors import CORSMiddleware  # noqa: E402
 from google.adk.runners import Runner  # noqa: E402
 from google.adk.sessions import InMemorySessionService  # noqa: E402
@@ -21,6 +22,7 @@ from pydantic import BaseModel, Field  # noqa: E402
 
 from agent.atlas_agent import tools  # noqa: E402
 from agent.atlas_agent.agent import root_agent  # noqa: E402
+from agent.atlas_agent.limite import depuis_env, ip_visiteur  # noqa: E402
 from agent.atlas_agent.quiz import generer_quiz  # noqa: E402
 
 APP_NAME = "atlas"
@@ -33,6 +35,19 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+limite = depuis_env()
+
+
+@app.middleware("http")
+async def limiter(request: Request, call_next):
+    """Plafonne les appels au modèle (ATLAS_LIMITE_HEURE par visiteur, ATLAS_LIMITE_JOUR en tout ; 0 = sans limite)."""
+    if request.method == "POST" and request.url.path in ("/api/chat", "/api/quiz"):
+        ip = ip_visiteur(request.headers.get("x-forwarded-for"), request.client.host if request.client else "")
+        if not limite.accepter(ip):
+            return JSONResponse(status_code=429, content={"detail": "Le sage se repose : trop de questions, réessaie plus tard."})
+    return await call_next(request)
+
 
 # Sessions en mémoire : perdues au redémarrage du serveur (suffisant pour apprendre).
 session_service = InMemorySessionService()

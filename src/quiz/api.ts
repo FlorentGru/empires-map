@@ -54,8 +54,8 @@ export async function fetchQuiz(p: QuizParams): Promise<QuizResponse> {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ empire: p.empire ?? null, difficulte: p.difficulte, n: p.n }),
   });
-  // 503 : le serveur répond mais le sage n'a pas pu rédiger (clé, quota, réponse invalide) → quiz hors ligne.
-  if (res.status === 503) return fetchQuizHorsLigne(p);
+  // 503 : le serveur répond mais le sage n'a pas pu rédiger (clé, quota, réponse invalide) ; 429 : limite de requêtes → quiz hors ligne.
+  if (res.status === 503 || res.status === 429) return fetchQuizHorsLigne(p);
   if (!res.ok) throw new Error(String(res.status));
   return parse(await res.json());
 }

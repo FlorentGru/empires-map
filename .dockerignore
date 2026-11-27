@@ -1,0 +1,9 @@
+# Contexte de agent/Dockerfile : seulement ce que lit l'agent (pas node_modules ni la clé).
+*
+!agent
+!data
+!public/data/religions/territories.json
+agent/.venv
+agent/.env
+**/__pycache__
+**/.pytest_cache

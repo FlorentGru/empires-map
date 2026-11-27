@@ -1,5 +1,6 @@
 # Copie de /srv/atlas/docker-compose.yml sur le VPS (docs/DEPLOIEMENT-VPS.md).
 # Atlas des Empires sur http://<IP>:8080 (le port 80 est au projet /srv/gaming).
+# Le sage (service agent) est construit depuis le clone du dépôt /srv/atlas/repo ; sa clé est dans /srv/atlas/agent.env.
 services:
   caddy:
     image: caddy:2
@@ -10,3 +11,13 @@ services:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
       - ./site:/srv/site:ro
       - ./data:/data
+    depends_on:
+      - agent
+  agent:
+    build:
+      context: ./repo
+      dockerfile: agent/Dockerfile
+    restart: unless-stopped
+    env_file: ./agent.env
+    # Aucun « ports: » : l'agent n'est joignable que par Caddy (http://agent:8000).
+    mem_limit: 768m

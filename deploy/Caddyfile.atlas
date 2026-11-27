@@ -1,6 +1,8 @@
 # Copie de /srv/atlas/Caddyfile sur le VPS (docs/DEPLOIEMENT-VPS.md).
-# Atlas des Empires : site statique (build VITE_STATIC, copié par .github/workflows/vps.yml).
+# Atlas des Empires : site copié par .github/workflows/vps.yml, et le sage (conteneur agent) derrière /api/.
 :80 {
+	# Le sage : Caddy ajoute l'IP du visiteur à X-Forwarded-For, lue par la limite de requêtes (agent/server.py).
+	reverse_proxy /api/* agent:8000
 	root * /srv/site
 	# Liste explicite : les glyphes de la carte (.pbf, ~350 Ko) n'étaient pas compressés.
 	encode zstd gzip {
